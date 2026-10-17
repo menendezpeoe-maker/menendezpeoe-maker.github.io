@@ -1,0 +1,1441 @@
+{
+ "version": "2.0.0",
+ "updated": "2026-10-17",
+ "order": [
+  "psoe",
+  "pp",
+  "vox",
+  "fa",
+  "pod",
+  "salf",
+  "pacma",
+  "d21",
+  "erc",
+  "junts",
+  "pnv",
+  "bildu",
+  "upn",
+  "gbai",
+  "bng",
+  "ccpc",
+  "upc",
+  "drago",
+  "comp",
+  "cha",
+  "existe",
+  "mes",
+  "adel",
+  "jmm",
+  "upl",
+  "soria",
+  "pav"
+ ],
+ "parties": [
+  {
+   "id": "psoe",
+   "name": "PSOE",
+   "ab": "PSOE",
+   "color": "#E30613",
+   "tag": "Socialdemocracia · centroizquierda",
+   "lead": "Pedro Sánchez",
+   "scope": {
+    "all": true
+   },
+   "local": {
+    "cat": "PSC-PSOE",
+    "pv": "PSE-EE (PSOE)",
+    "gal": "PSdeG-PSOE",
+    "nav": "PSN-PSOE"
+   },
+   "desc": "Partido socialdemócrata, en el Gobierno desde 2018. Defiende ampliar el Estado del bienestar, intervenir el mercado de la vivienda y una España plural apoyada en acuerdos con fuerzas nacionalistas.",
+   "props": [
+    {
+     "t": "Reducir por ley la jornada máxima a 37,5 horas semanales sin rebaja de sueldo.",
+     "q": "A01"
+    },
+    {
+     "t": "Mantener los topes al alquiler de la Ley de Vivienda en las zonas tensionadas.",
+     "q": "B01"
+    },
+    {
+     "t": "Ampliar el parque público de alquiler con la empresa estatal Casa 47.",
+     "q": "B08"
+    },
+    {
+     "t": "Gravar la compra de vivienda por no residentes de fuera de la UE.",
+     "q": "B07"
+    },
+    {
+     "t": "Mantener un impuesto estatal sobre las grandes fortunas.",
+     "q": "A03"
+    },
+    {
+     "t": "Seguir subiendo el salario mínimo hacia el 60 % del salario medio.",
+     "q": "A08"
+    },
+    {
+     "t": "Incluir el derecho al aborto en la Constitución.",
+     "q": "L01"
+    },
+    {
+     "t": "Regularizar a los inmigrantes que ya viven y trabajan en España.",
+     "q": "F01"
+    },
+    {
+     "t": "Reparto obligatorio de los menores migrantes entre comunidades.",
+     "q": "F05"
+    },
+    {
+     "t": "Cierre escalonado de las centrales nucleares entre 2027 y 2035.",
+     "q": "G01"
+    },
+    {
+     "t": "Mantener el gasto en defensa en torno al 2 % del PIB.",
+     "q": "H01"
+    },
+    {
+     "t": "Limitar la acusación popular para evitar su uso partidista.",
+     "q": "E07"
+    },
+    {
+     "t": "Mantener el embargo de armas a Israel.",
+     "q": "H04"
+    }
+   ]
+  },
+  {
+   "id": "pp",
+   "name": "Partido Popular",
+   "ab": "PP",
+   "color": "#1D6FC4",
+   "tag": "Liberal-conservador · centroderecha",
+   "lead": "Alberto Núñez Feijóo",
+   "scope": {
+    "all": true,
+    "except": [
+     "nav"
+    ]
+   },
+   "desc": "Principal partido de centroderecha. Propone bajar impuestos, construir más vivienda liberando suelo y endurecer la respuesta a la ocupación ilegal, y rechaza la amnistía y la financiación singular de Cataluña.",
+   "props": [
+    {
+     "t": "Bajar el IRPF a rentas medias y bajas y deflactarlo con la inflación.",
+     "q": "A02"
+    },
+    {
+     "t": "Suprimir el impuesto estatal sobre las grandes fortunas.",
+     "q": "A03"
+    },
+    {
+     "t": "Liberar suelo y agilizar licencias para construir más vivienda, con la meta de 250.000 al año.",
+     "q": "B02"
+    },
+    {
+     "t": "Rebajar el impuesto de transmisiones al 4 % a los menores de 40 años que compren vivienda."
+    },
+    {
+     "t": "Ley antiokupación con desalojos en 24 horas.",
+     "q": "B03"
+    },
+    {
+     "t": "Que los jueces elijan a la mayoría del CGPJ.",
+     "q": "D03"
+    },
+    {
+     "t": "Mantener la prisión permanente revisable y endurecer las penas a multirreincidentes.",
+     "q": "E02"
+    },
+    {
+     "t": "Alargar la vida de las centrales nucleares.",
+     "q": "G01"
+    },
+    {
+     "t": "Rechazar la amnistía y la financiación singular de Cataluña.",
+     "q": "C01"
+    },
+    {
+     "t": "Inmigración ligada a contratos en origen, sin regularizaciones masivas.",
+     "q": "F01"
+    },
+    {
+     "t": "Cumplir los compromisos de gasto en defensa de la OTAN.",
+     "q": "H01"
+    },
+    {
+     "t": "Libertad de elección educativa y apoyo a la escuela concertada.",
+     "q": "I01"
+    },
+    {
+     "t": "Hacer de Ceuta una prioridad de Gobierno y llevar su protección a la UE."
+    }
+   ]
+  },
+  {
+   "id": "vox",
+   "name": "Vox",
+   "ab": "VOX",
+   "color": "#4FAE32",
+   "tag": "Derecha nacional-conservadora",
+   "lead": "Santiago Abascal",
+   "scope": {
+    "all": true
+   },
+   "desc": "Derecha nacional-conservadora. Su programa gira en torno a la «prioridad nacional», la expulsión de inmigrantes en situación irregular, la recentralización del Estado y el rechazo a la Agenda 2030.",
+   "props": [
+    {
+     "t": "«Prioridad nacional» en ayudas sociales y vivienda pública.",
+     "q": "F03"
+    },
+    {
+     "t": "Deportar a los inmigrantes ilegales y a los extranjeros que delincan («remigración»).",
+     "q": "F02"
+    },
+    {
+     "t": "Recentralizar la educación y otras competencias autonómicas.",
+     "q": "C03"
+    },
+    {
+     "t": "Sustituir la Ley de Violencia de Género por una ley de violencia intrafamiliar.",
+     "q": "E08"
+    },
+    {
+     "t": "Bajada general de impuestos y recorte del gasto político.",
+     "q": "A02"
+    },
+    {
+     "t": "Alargar la vida de las centrales nucleares.",
+     "q": "G01"
+    },
+    {
+     "t": "Rechazar el fin de los coches de combustión en 2035.",
+     "q": "G03"
+    },
+    {
+     "t": "Más trasvases de agua para el regadío.",
+     "q": "G04"
+    },
+    {
+     "t": "Proteger la tauromaquia y la caza.",
+     "q": "I08"
+    },
+    {
+     "t": "Rechazar el acuerdo UE-Mercosur en defensa del campo.",
+     "q": "K01"
+    }
+   ]
+  },
+  {
+   "id": "fa",
+   "name": "Frente Amplio",
+   "ab": "FA",
+   "color": "#D81E72",
+   "tag": "Izquierda · ecologismo",
+   "lead": "Ada Colau",
+   "scope": {
+    "all": true,
+    "except": [
+     "ara",
+     "bal",
+     "can",
+     "val"
+    ]
+   },
+   "local": {
+    "and": "Frente Amplio por Andalucía"
+   },
+   "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, que sucede al espacio de Sumar sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
+   "props": [
+    {
+     "t": "Jornada de 37,5 horas y avanzar hacia la de 32.",
+     "q": "A01"
+    },
+    {
+     "t": "Topes estatales al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "Impuesto permanente sobre las grandes fortunas.",
+     "q": "A03"
+    },
+    {
+     "t": "Crear una empresa pública de energía.",
+     "q": "G05"
+    },
+    {
+     "t": "Prestación universal por crianza para todas las familias.",
+     "q": "F06"
+    },
+    {
+     "t": "Sanidad 100 % pública, sin gestión privada.",
+     "q": "J01"
+    },
+    {
+     "t": "Mantener el embargo de armas a Israel.",
+     "q": "H04"
+    },
+    {
+     "t": "Mantener el fin de los coches de combustión en 2035.",
+     "q": "G03"
+    },
+    {
+     "t": "Rechazar el aumento del gasto militar.",
+     "q": "H01"
+    }
+   ]
+  },
+  {
+   "id": "pod",
+   "name": "Podemos",
+   "ab": "POD",
+   "color": "#6B2E83",
+   "tag": "Izquierda",
+   "lead": "Irene Montero",
+   "scope": {
+    "all": true,
+    "except": [
+     "cat",
+     "val",
+     "can"
+    ]
+   },
+   "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC, y en la Comunitat Valenciana y Canarias va dentro de coaliciones.",
+   "props": [
+    {
+     "t": "Bajar por ley los alquileres e impedir la compra de vivienda por fondos.",
+     "q": "B01"
+    },
+    {
+     "t": "Empresa pública de energía y banca pública.",
+     "q": "G05"
+    },
+    {
+     "t": "Impuestos a las grandes fortunas.",
+     "q": "A03"
+    },
+    {
+     "t": "Regularización extraordinaria de inmigrantes.",
+     "q": "F01"
+    },
+    {
+     "t": "Ruptura de relaciones con Israel.",
+     "q": "H04"
+    },
+    {
+     "t": "No al aumento del gasto militar.",
+     "q": "H01"
+    },
+    {
+     "t": "Derogar la «ley mordaza».",
+     "q": "E03"
+    },
+    {
+     "t": "Referéndum sobre monarquía o república.",
+     "q": "D07"
+    }
+   ]
+  },
+  {
+   "id": "salf",
+   "name": "Se Acabó La Fiesta",
+   "ab": "SALF",
+   "color": "#475263",
+   "tag": "Derecha populista · antisistema",
+   "lead": "Alvise Pérez",
+   "scope": {
+    "all": true
+   },
+   "desc": "Formación de Alvise Pérez, con eurodiputados desde 2024, que busca entrar en el Congreso. Discurso contra la clase política, mano dura con la delincuencia y la inmigración irregular y fuertes bajadas de impuestos.",
+   "props": [
+    {
+     "t": "Mano dura con la delincuencia: más plazas de prisión y penas más duras para multirreincidentes.",
+     "q": "E01"
+    },
+    {
+     "t": "Fuerte bajada de impuestos y cierre de organismos que considera innecesarios.",
+     "q": "A02"
+    },
+    {
+     "t": "Expulsión de inmigrantes ilegales y delincuentes extranjeros.",
+     "q": "F02"
+    },
+    {
+     "t": "Acabar con las subvenciones a partidos, sindicatos y patronal."
+    },
+    {
+     "t": "Rechazo a la Agenda 2030 y al Pacto Verde.",
+     "q": "G03"
+    }
+   ]
+  },
+  {
+   "id": "pacma",
+   "name": "PACMA",
+   "ab": "PACMA",
+   "color": "#2E9E48",
+   "tag": "Animalismo",
+   "scope": {
+    "all": true
+   },
+   "desc": "Partido animalista. Centra su programa en el bienestar animal, el fin de la tauromaquia y la caza, el medio ambiente y una ley electoral proporcional; en muchos otros temas no fija postura.",
+   "props": [
+    {
+     "t": "Abolir la tauromaquia y retirar las ayudas públicas a los toros.",
+     "q": "I08"
+    },
+    {
+     "t": "Prohibir las macrogranjas.",
+     "q": "K05"
+    },
+    {
+     "t": "Prohibir la caza.",
+     "q": "K07"
+    },
+    {
+     "t": "Una ley electoral proporcional en la que no se pierdan votos por provincias.",
+     "q": "D01"
+    },
+    {
+     "t": "Cerrar las nucleares y apostar por las renovables.",
+     "q": "G01"
+    }
+   ]
+  },
+  {
+   "id": "d21",
+   "name": "Democracia para el Siglo 21",
+   "ab": "D21",
+   "color": "#EE7B1E",
+   "tag": "Liberal · centro",
+   "tbd": true,
+   "scope": {
+    "provinces": [
+     "madrid",
+     "barcelona"
+    ]
+   },
+   "desc": "Coalición registrada por Democracia21, Ciudadanos y UCIN, con listas previstas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
+   "props": [
+    {
+     "t": "Igualdad territorial: no a la amnistía ni a la financiación singular.",
+     "q": "C01"
+    },
+    {
+     "t": "Listas desbloqueadas y una ley electoral más proporcional.",
+     "q": "D02"
+    },
+    {
+     "t": "Suprimir el impuesto de sucesiones entre padres e hijos.",
+     "q": "A10"
+    },
+    {
+     "t": "Despolitizar la justicia: que los jueces elijan el CGPJ.",
+     "q": "D03"
+    },
+    {
+     "t": "Mantener la energía nuclear.",
+     "q": "G01"
+    },
+    {
+     "t": "Suprimir las diputaciones provinciales.",
+     "q": "C06"
+    },
+    {
+     "t": "Más integración europea.",
+     "q": "H02"
+    }
+   ]
+  },
+  {
+   "id": "erc",
+   "name": "Esquerra Republicana",
+   "ab": "ERC",
+   "color": "#F2A900",
+   "tag": "Izquierda independentista catalana",
+   "lead": "Gabriel Rufián",
+   "scope": {
+    "regions": [
+     "cat"
+    ]
+   },
+   "desc": "Izquierda independentista catalana. Concurre con el apoyo de Podemos, que no presenta lista propia en Cataluña e incorpora candidatos a las de ERC. Reclama financiación singular, referéndum pactado y políticas sociales de izquierda.",
+   "props": [
+    {
+     "t": "Financiación singular: que Cataluña recaude todos sus impuestos.",
+     "q": "C01"
+    },
+    {
+     "t": "Referéndum de autodeterminación pactado.",
+     "q": "C05"
+    },
+    {
+     "t": "Topes al alquiler y límites a los pisos turísticos.",
+     "q": "B05"
+    },
+    {
+     "t": "Impuestos a las grandes fortunas.",
+     "q": "A03"
+    },
+    {
+     "t": "Jornada laboral de 37,5 horas.",
+     "q": "A01"
+    },
+    {
+     "t": "Derogar la «ley mordaza».",
+     "q": "E03"
+    },
+    {
+     "t": "Prioridad a Rodalies y al tren de cercanías.",
+     "q": "G06"
+    }
+   ]
+  },
+  {
+   "id": "junts",
+   "name": "Junts per Catalunya",
+   "ab": "JUNTS",
+   "color": "#14B8A6",
+   "tag": "Centroderecha independentista catalana",
+   "lead": "Míriam Nogueras",
+   "scope": {
+    "regions": [
+     "cat"
+    ]
+   },
+   "desc": "Independentismo catalán de centroderecha, presidido por Carles Puigdemont. Su voto contribuyó a tumbar los decretos de vivienda que precedieron a estas elecciones. Prioriza la soberanía fiscal, el catalán y menos impuestos a las empresas.",
+   "props": [
+    {
+     "t": "Concierto económico: que Cataluña recaude todos sus impuestos.",
+     "q": "C01"
+    },
+    {
+     "t": "Independencia y referéndum de autodeterminación.",
+     "q": "C05"
+    },
+    {
+     "t": "El catalán como requisito y competencias de inmigración para la Generalitat.",
+     "q": "I09"
+    },
+    {
+     "t": "Penas más duras para la multirreincidencia.",
+     "q": "E01"
+    },
+    {
+     "t": "Desalojo rápido de viviendas ocupadas.",
+     "q": "B03"
+    },
+    {
+     "t": "Que la jornada de 37,5 horas no se imponga por ley.",
+     "q": "A01"
+    },
+    {
+     "t": "Alargar la vida de las nucleares de Ascó y Vandellòs.",
+     "q": "G01"
+    }
+   ]
+  },
+  {
+   "id": "pnv",
+   "name": "EAJ-PNV",
+   "ab": "PNV",
+   "color": "#2B8A3E",
+   "tag": "Nacionalismo vasco de centro",
+   "scope": {
+    "regions": [
+     "pv"
+    ]
+   },
+   "desc": "Nacionalismo vasco de centro y democristiano, de perfil pragmático y proempresa. Defiende el Concierto Económico, completar las transferencias del Estatuto y un nuevo estatus para Euskadi.",
+   "props": [
+    {
+     "t": "Completar las transferencias del Estatuto de Gernika, sin recentralizar competencias.",
+     "q": "C03"
+    },
+    {
+     "t": "Un nuevo estatus que reconozca a Euskadi como nación."
+    },
+    {
+     "t": "Blindar el Concierto Económico vasco.",
+     "q": "C09"
+    },
+    {
+     "t": "Apoyo a la industria y a la colaboración público-privada.",
+     "q": "A06"
+    },
+    {
+     "t": "El euskera como requisito en la administración vasca y oficial en la UE.",
+     "q": "I09"
+    },
+    {
+     "t": "Más integración europea.",
+     "q": "H02"
+    }
+   ]
+  },
+  {
+   "id": "bildu",
+   "name": "EH Bildu",
+   "ab": "BILDU",
+   "color": "#8FB10E",
+   "tag": "Izquierda independentista vasca",
+   "scope": {
+    "regions": [
+     "pv",
+     "nav"
+    ]
+   },
+   "desc": "Izquierda abertzale con candidatura propia en Euskadi y Navarra. Defiende el derecho a decidir de Euskal Herria, políticas sociales de izquierda, el euskera y un marco vasco de relaciones laborales.",
+   "props": [
+    {
+     "t": "Derecho a decidir para Euskal Herria.",
+     "q": "C05"
+    },
+    {
+     "t": "Topes al alquiler e intervención pública en la vivienda.",
+     "q": "B01"
+    },
+    {
+     "t": "Fiscalidad progresiva.",
+     "q": "A03"
+    },
+    {
+     "t": "Marco vasco de relaciones laborales y salario mínimo propio."
+    },
+    {
+     "t": "Derogar la «ley mordaza».",
+     "q": "E03"
+    },
+    {
+     "t": "Salir de la OTAN.",
+     "q": "H06"
+    }
+   ]
+  },
+  {
+   "id": "upn",
+   "name": "UPN – Partido Popular",
+   "ab": "UPN-PP",
+   "color": "#2A52BE",
+   "tag": "Centroderecha foralista navarra",
+   "scope": {
+    "regions": [
+     "nav"
+    ]
+   },
+   "desc": "Coalición de Unión del Pueblo Navarro y el PP, que en Navarra sustituye a la lista del PP. Defiende el régimen foral propio frente a una integración en Euskadi, bajadas de impuestos y la unidad de España.",
+   "props": [
+    {
+     "t": "Defender el régimen foral y derogar la vía de integración de Navarra en Euskadi."
+    },
+    {
+     "t": "Mantener el Convenio Económico navarro.",
+     "q": "C09"
+    },
+    {
+     "t": "Bajadas de impuestos.",
+     "q": "A02"
+    },
+    {
+     "t": "Rechazo a la amnistía.",
+     "q": "D04"
+    },
+    {
+     "t": "Que el euskera no sea requisito en toda la administración navarra.",
+     "q": "I09"
+    },
+    {
+     "t": "Desalojo rápido de viviendas ocupadas.",
+     "q": "B03"
+    }
+   ]
+  },
+  {
+   "id": "gbai",
+   "name": "Geroa Bai",
+   "ab": "GBAI",
+   "color": "#C93C50",
+   "tag": "Centroizquierda vasquista navarra",
+   "scope": {
+    "regions": [
+     "nav"
+    ]
+   },
+   "desc": "Coalición navarra progresista y vasquista, con el PNV entre sus socios. Defiende el autogobierno foral, el euskera y políticas sociales.",
+   "props": [
+    {
+     "t": "Desarrollar el autogobierno navarro, sin recentralizar competencias.",
+     "q": "C03"
+    },
+    {
+     "t": "Impulsar el euskera en la administración.",
+     "q": "I09"
+    },
+    {
+     "t": "Más vivienda pública de alquiler.",
+     "q": "B08"
+    },
+    {
+     "t": "Transición ecológica y fin de los coches de combustión en 2035.",
+     "q": "G03"
+    }
+   ]
+  },
+  {
+   "id": "bng",
+   "name": "BNG",
+   "ab": "BNG",
+   "color": "#4A9BD9",
+   "tag": "Izquierda nacionalista gallega",
+   "scope": {
+    "regions": [
+     "gal"
+    ]
+   },
+   "desc": "Nacionalismo gallego de izquierdas, con candidatura propia en las cuatro provincias. Reclama más soberanía y financiación propia para Galicia, el traspaso de la AP-9 y una tarifa eléctrica gallega.",
+   "props": [
+    {
+     "t": "Galicia como nación con derecho a decidir.",
+     "q": "C05"
+    },
+    {
+     "t": "Financiación propia: que Galicia recaude y gestione sus impuestos."
+    },
+    {
+     "t": "Traspaso de la AP-9 y fin de sus peajes."
+    },
+    {
+     "t": "Tarifa eléctrica gallega y control público de la energía.",
+     "q": "G05"
+    },
+    {
+     "t": "Topes al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "El gallego como requisito en la administración.",
+     "q": "I09"
+    },
+    {
+     "t": "Salir de la OTAN.",
+     "q": "H06"
+    }
+   ]
+  },
+  {
+   "id": "ccpc",
+   "name": "Coalición Canaria – Primero Canarias",
+   "ab": "CC-PC",
+   "color": "#E8B800",
+   "tag": "Nacionalismo canario de centro",
+   "scope": {
+    "regions": [
+     "can"
+    ]
+   },
+   "desc": "Alianza de Coalición Canaria y Primero Canarias. Nacionalismo de centro que prioriza la Agenda Canaria, el Régimen Económico y Fiscal de las islas y la respuesta a la llegada de migrantes.",
+   "props": [
+    {
+     "t": "Cumplir la Agenda Canaria y el Régimen Económico y Fiscal."
+    },
+    {
+     "t": "Reparto obligatorio de los menores migrantes.",
+     "q": "F05"
+    },
+    {
+     "t": "Limitar la vivienda vacacional.",
+     "q": "B05"
+    },
+    {
+     "t": "Más implicación de la UE en la frontera canaria."
+    },
+    {
+     "t": "Bonificar el impuesto de sucesiones, como ya hace Canarias.",
+     "q": "A10"
+    }
+   ]
+  },
+  {
+   "id": "upc",
+   "name": "Unidad del Pueblo Canario",
+   "ab": "UPC",
+   "color": "#5B2A86",
+   "tag": "Izquierda canarista",
+   "scope": {
+    "regions": [
+     "can"
+    ]
+   },
+   "desc": "Coalición de Podemos, Nueva Canarias-Bloque Canarista, Izquierda Unida y Movimiento Sumar. En Canarias sustituye a las listas de Podemos y del Frente Amplio.",
+   "props": [
+    {
+     "t": "Ecotasa y límites al crecimiento turístico."
+    },
+    {
+     "t": "Impuesto a la compra de vivienda por no residentes.",
+     "q": "B07"
+    },
+    {
+     "t": "Topes al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "Reparto obligatorio de los menores migrantes.",
+     "q": "F05"
+    },
+    {
+     "t": "Defensa de la sanidad pública sin gestión privada.",
+     "q": "J01"
+    }
+   ]
+  },
+  {
+   "id": "drago",
+   "name": "Drago Canarias",
+   "ab": "DRAGO",
+   "color": "#2E7D6B",
+   "tag": "Izquierda ecosocialista canaria",
+   "lead": "Alberto Rodríguez",
+   "scope": {
+    "regions": [
+     "can"
+    ]
+   },
+   "desc": "Partido ecosocialista canario de Alberto Rodríguez, con lista propia. Defiende frenar la especulación turística e inmobiliaria y la soberanía energética y alimentaria de Canarias.",
+   "props": [
+    {
+     "t": "Impuesto a la compra de vivienda por no residentes.",
+     "q": "B07"
+    },
+    {
+     "t": "Ecotasa y moratoria turística."
+    },
+    {
+     "t": "Energía renovable y pública para Canarias.",
+     "q": "G05"
+    },
+    {
+     "t": "Prohibir las macrogranjas y proteger el territorio.",
+     "q": "K05"
+    }
+   ]
+  },
+  {
+   "id": "comp",
+   "name": "Compromís – Front Valencià",
+   "ab": "COMP",
+   "color": "#F08A00",
+   "tag": "Izquierda valencianista",
+   "lead": "Àgueda Micó (Valencia)",
+   "scope": {
+    "regions": [
+     "val"
+    ]
+   },
+   "desc": "Coalición de Compromís, Podemos, EUPV y Esquerra Republicana del País Valencià; Podemos encabeza la lista de Alicante. En la Comunitat Valenciana sustituye a Podemos y al Frente Amplio.",
+   "props": [
+    {
+     "t": "Más financiación para la Comunitat Valenciana, hoy de las peor financiadas.",
+     "q": "C02"
+    },
+    {
+     "t": "Corredor Mediterráneo y más Cercanías.",
+     "q": "G06"
+    },
+    {
+     "t": "Limitar los pisos turísticos.",
+     "q": "B05"
+    },
+    {
+     "t": "Topes al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "El valenciano como requisito en la administración.",
+     "q": "I09"
+    },
+    {
+     "t": "No construir en zonas inundables tras la dana.",
+     "q": "G07"
+    }
+   ]
+  },
+  {
+   "id": "cha",
+   "name": "CHA – Frente Amplio Aragón",
+   "ab": "CHA-FA",
+   "color": "#B81D2C",
+   "tag": "Izquierda aragonesista",
+   "scope": {
+    "regions": [
+     "ara"
+    ]
+   },
+   "desc": "Coalición de Chunta Aragonesista, IU, Movimiento Sumar, Partido Verde y Recortes Cero. En Aragón sustituye a la lista del Frente Amplio; Podemos va por separado.",
+   "props": [
+    {
+     "t": "No a los trasvases del Ebro.",
+     "q": "G04"
+    },
+    {
+     "t": "Más tren en Aragón y reapertura del Canfranc.",
+     "q": "G06"
+    },
+    {
+     "t": "Una financiación autonómica que tenga en cuenta la despoblación."
+    },
+    {
+     "t": "Jornada laboral de 37,5 horas.",
+     "q": "A01"
+    },
+    {
+     "t": "PAC para profesionales y explotaciones familiares.",
+     "q": "K03"
+    }
+   ]
+  },
+  {
+   "id": "existe",
+   "name": "Coalición Existe",
+   "ab": "EXISTE",
+   "color": "#3D8B37",
+   "tag": "España Vaciada · transversal",
+   "scope": {
+    "regions": [
+     "ara"
+    ]
+   },
+   "desc": "Coalición de Teruel Existe y Aragón Existe. Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
+   "props": [
+    {
+     "t": "Fiscalidad diferenciada en las zonas despobladas.",
+     "q": "F07"
+    },
+    {
+     "t": "Infraestructuras pendientes: autovías y tren Zaragoza-Teruel-Valencia."
+    },
+    {
+     "t": "Limitar las macroplantas renovables en el territorio.",
+     "q": "G02"
+    },
+    {
+     "t": "No a los trasvases del Ebro.",
+     "q": "G04"
+    },
+    {
+     "t": "Servicios públicos garantizados en el medio rural.",
+     "q": "J01"
+    }
+   ]
+  },
+  {
+   "id": "mes",
+   "name": "Ara MÉS – Front Ampli",
+   "ab": "MÉS",
+   "color": "#E4572E",
+   "tag": "Izquierda ecosoberanista balear",
+   "scope": {
+    "regions": [
+     "bal"
+    ]
+   },
+   "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En Baleares sustituye a la lista del Frente Amplio; Podemos va por separado.",
+   "props": [
+    {
+     "t": "Limitar las plazas turísticas y el alquiler turístico.",
+     "q": "B05"
+    },
+    {
+     "t": "Impuesto a la compra de vivienda por no residentes.",
+     "q": "B07"
+    },
+    {
+     "t": "Topes al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "El catalán como requisito en la administración.",
+     "q": "I09"
+    },
+    {
+     "t": "Un régimen especial y financiación justa para las Illes Balears."
+    }
+   ]
+  },
+  {
+   "id": "adel",
+   "name": "Adelante Andalucía",
+   "ab": "ADEL",
+   "color": "#0A8F3C",
+   "tag": "Izquierda andalucista",
+   "scope": {
+    "regions": [
+     "and"
+    ]
+   },
+   "desc": "Andalucismo de izquierdas con candidatura propia en las ocho provincias andaluzas. Defiende la sanidad pública andaluza, el derecho a la vivienda frente a la turistificación y más peso político para Andalucía.",
+   "props": [
+    {
+     "t": "Defensa de la sanidad pública andaluza frente a la gestión privada.",
+     "q": "J01"
+    },
+    {
+     "t": "Más financiación para Andalucía.",
+     "q": "C02"
+    },
+    {
+     "t": "Limitar los pisos turísticos.",
+     "q": "B05"
+    },
+    {
+     "t": "Topes al alquiler.",
+     "q": "B01"
+    },
+    {
+     "t": "Fiscalidad progresiva.",
+     "q": "A03"
+    }
+   ]
+  },
+  {
+   "id": "jmm",
+   "name": "Jaén Merece Más",
+   "ab": "JMM",
+   "color": "#7A1F5C",
+   "tag": "Localista · transversal",
+   "tbd": true,
+   "scope": {
+    "provinces": [
+     "jaen"
+    ]
+   },
+   "desc": "Plataforma provincial de Jaén surgida de la España Vaciada. Reclama infraestructuras pendientes, defensa del olivar y servicios públicos para la provincia.",
+   "props": [
+    {
+     "t": "Infraestructuras pendientes para Jaén."
+    },
+    {
+     "t": "Defensa del olivar y precios justos para el aceite.",
+     "q": "K02"
+    },
+    {
+     "t": "Fiscalidad diferenciada contra la despoblación.",
+     "q": "F07"
+    },
+    {
+     "t": "Sanidad pública y especialistas en la provincia.",
+     "q": "J01"
+    }
+   ]
+  },
+  {
+   "id": "upl",
+   "name": "Unión del Pueblo Leonés",
+   "ab": "UPL",
+   "color": "#8B1C2C",
+   "tag": "Regionalismo leonés",
+   "tbd": true,
+   "scope": {
+    "provinces": [
+     "leon",
+     "zamora",
+     "salamanca"
+    ]
+   },
+   "desc": "Leonesismo: defiende una comunidad autónoma propia para León, Zamora y Salamanca, separada de Castilla, y planes contra la despoblación y la desindustrialización.",
+   "props": [
+    {
+     "t": "Una comunidad autónoma propia para León, Zamora y Salamanca."
+    },
+    {
+     "t": "Fiscalidad diferenciada contra la despoblación.",
+     "q": "F07"
+    },
+    {
+     "t": "Control del lobo para proteger la ganadería.",
+     "q": "K04"
+    }
+   ]
+  },
+  {
+   "id": "soria",
+   "name": "Soria ¡Ya!",
+   "ab": "SORIA",
+   "color": "#6D4C9F",
+   "tag": "España Vaciada · transversal",
+   "tbd": true,
+   "scope": {
+    "provinces": [
+     "soria"
+    ]
+   },
+   "desc": "Agrupación de la España Vaciada en Soria. Pide fiscalidad diferenciada, infraestructuras como la A-11 y el tren, y se opone a las macrogranjas.",
+   "props": [
+    {
+     "t": "Fiscalidad diferenciada para las zonas despobladas.",
+     "q": "F07"
+    },
+    {
+     "t": "No a las macrogranjas.",
+     "q": "K05"
+    },
+    {
+     "t": "Limitar las macroplantas renovables.",
+     "q": "G02"
+    },
+    {
+     "t": "Autovías A-11 y A-15 y tren para Soria."
+    }
+   ]
+  },
+  {
+   "id": "pav",
+   "name": "Por Ávila",
+   "ab": "XAV",
+   "color": "#7F8C3A",
+   "tag": "Localista · centroderecha",
+   "tbd": true,
+   "scope": {
+    "provinces": [
+     "avila"
+    ]
+   },
+   "desc": "Partido provincial de Ávila, fundado en 2019 por antiguos cargos del PP. Reclama inversiones, un mejor tren con Madrid y medidas contra la despoblación.",
+   "props": [
+    {
+     "t": "Mejor tren entre Ávila y Madrid."
+    },
+    {
+     "t": "Fiscalidad diferenciada contra la despoblación.",
+     "q": "F07"
+    },
+    {
+     "t": "Defensa de los servicios públicos en la provincia.",
+     "q": "J01"
+    }
+   ]
+  }
+ ],
+ "regions": [
+  {
+   "id": "and",
+   "name": "Andalucía",
+   "provs": [
+    {
+     "id": "almeria",
+     "name": "Almería"
+    },
+    {
+     "id": "cadiz",
+     "name": "Cádiz"
+    },
+    {
+     "id": "cordoba",
+     "name": "Córdoba"
+    },
+    {
+     "id": "granada",
+     "name": "Granada"
+    },
+    {
+     "id": "huelva",
+     "name": "Huelva"
+    },
+    {
+     "id": "jaen",
+     "name": "Jaén"
+    },
+    {
+     "id": "malaga",
+     "name": "Málaga"
+    },
+    {
+     "id": "sevilla",
+     "name": "Sevilla"
+    }
+   ]
+  },
+  {
+   "id": "ara",
+   "name": "Aragón",
+   "provs": [
+    {
+     "id": "huesca",
+     "name": "Huesca"
+    },
+    {
+     "id": "teruel",
+     "name": "Teruel"
+    },
+    {
+     "id": "zaragoza",
+     "name": "Zaragoza"
+    }
+   ]
+  },
+  {
+   "id": "ast",
+   "name": "Principado de Asturias",
+   "provs": [
+    {
+     "id": "asturias",
+     "name": "Asturias"
+    }
+   ]
+  },
+  {
+   "id": "bal",
+   "name": "Illes Balears",
+   "provs": [
+    {
+     "id": "baleares",
+     "name": "Illes Balears"
+    }
+   ]
+  },
+  {
+   "id": "can",
+   "name": "Canarias",
+   "provs": [
+    {
+     "id": "laspalmas",
+     "name": "Las Palmas"
+    },
+    {
+     "id": "tenerife",
+     "name": "Santa Cruz de Tenerife"
+    }
+   ]
+  },
+  {
+   "id": "cnt",
+   "name": "Cantabria",
+   "provs": [
+    {
+     "id": "cantabria",
+     "name": "Cantabria"
+    }
+   ]
+  },
+  {
+   "id": "cyl",
+   "name": "Castilla y León",
+   "provs": [
+    {
+     "id": "avila",
+     "name": "Ávila"
+    },
+    {
+     "id": "burgos",
+     "name": "Burgos"
+    },
+    {
+     "id": "leon",
+     "name": "León"
+    },
+    {
+     "id": "palencia",
+     "name": "Palencia"
+    },
+    {
+     "id": "salamanca",
+     "name": "Salamanca"
+    },
+    {
+     "id": "segovia",
+     "name": "Segovia"
+    },
+    {
+     "id": "soria",
+     "name": "Soria"
+    },
+    {
+     "id": "valladolid",
+     "name": "Valladolid"
+    },
+    {
+     "id": "zamora",
+     "name": "Zamora"
+    }
+   ]
+  },
+  {
+   "id": "clm",
+   "name": "Castilla-La Mancha",
+   "provs": [
+    {
+     "id": "albacete",
+     "name": "Albacete"
+    },
+    {
+     "id": "ciudadreal",
+     "name": "Ciudad Real"
+    },
+    {
+     "id": "cuenca",
+     "name": "Cuenca"
+    },
+    {
+     "id": "guadalajara",
+     "name": "Guadalajara"
+    },
+    {
+     "id": "toledo",
+     "name": "Toledo"
+    }
+   ]
+  },
+  {
+   "id": "cat",
+   "name": "Cataluña",
+   "provs": [
+    {
+     "id": "barcelona",
+     "name": "Barcelona"
+    },
+    {
+     "id": "girona",
+     "name": "Girona"
+    },
+    {
+     "id": "lleida",
+     "name": "Lleida"
+    },
+    {
+     "id": "tarragona",
+     "name": "Tarragona"
+    }
+   ]
+  },
+  {
+   "id": "val",
+   "name": "Comunitat Valenciana",
+   "provs": [
+    {
+     "id": "alicante",
+     "name": "Alicante"
+    },
+    {
+     "id": "castellon",
+     "name": "Castellón"
+    },
+    {
+     "id": "valencia",
+     "name": "Valencia"
+    }
+   ]
+  },
+  {
+   "id": "ext",
+   "name": "Extremadura",
+   "provs": [
+    {
+     "id": "badajoz",
+     "name": "Badajoz"
+    },
+    {
+     "id": "caceres",
+     "name": "Cáceres"
+    }
+   ]
+  },
+  {
+   "id": "gal",
+   "name": "Galicia",
+   "provs": [
+    {
+     "id": "coruna",
+     "name": "A Coruña"
+    },
+    {
+     "id": "lugo",
+     "name": "Lugo"
+    },
+    {
+     "id": "ourense",
+     "name": "Ourense"
+    },
+    {
+     "id": "pontevedra",
+     "name": "Pontevedra"
+    }
+   ]
+  },
+  {
+   "id": "mad",
+   "name": "Comunidad de Madrid",
+   "provs": [
+    {
+     "id": "madrid",
+     "name": "Madrid"
+    }
+   ]
+  },
+  {
+   "id": "mur",
+   "name": "Región de Murcia",
+   "provs": [
+    {
+     "id": "murcia",
+     "name": "Murcia"
+    }
+   ]
+  },
+  {
+   "id": "nav",
+   "name": "Navarra",
+   "provs": [
+    {
+     "id": "navarra",
+     "name": "Navarra"
+    }
+   ]
+  },
+  {
+   "id": "pv",
+   "name": "País Vasco",
+   "provs": [
+    {
+     "id": "alava",
+     "name": "Álava"
+    },
+    {
+     "id": "bizkaia",
+     "name": "Bizkaia"
+    },
+    {
+     "id": "gipuzkoa",
+     "name": "Gipuzkoa"
+    }
+   ]
+  },
+  {
+   "id": "rio",
+   "name": "La Rioja",
+   "provs": [
+    {
+     "id": "rioja",
+     "name": "La Rioja"
+    }
+   ]
+  },
+  {
+   "id": "ceu",
+   "name": "Ceuta",
+   "provs": [
+    {
+     "id": "ceuta",
+     "name": "Ceuta"
+    }
+   ]
+  },
+  {
+   "id": "mel",
+   "name": "Melilla",
+   "provs": [
+    {
+     "id": "melilla",
+     "name": "Melilla"
+    }
+   ]
+  }
+ ]
+}
