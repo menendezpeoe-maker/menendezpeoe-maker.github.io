@@ -736,3 +736,28 @@ pre.embed { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; pad
 .friend-top { display: grid; gap: 6px 22px; align-items: center; }
 @media (min-width: 760px) { .friend-top { grid-template-columns: auto minmax(0, 1fr); } }
 .friend-top .tm-pct { line-height: 1; }
+
+/* ── Banner de portada e imagen de marca: la papeleta en tinta con el fosforito de «lo tuyo».
+   Colores fijos (no dependen del tema): es una pieza de marca, igual en claro y en oscuro. */
+.banner { --bn-ink: #111318; --bn-paper: #F2F3EE; --bn-mute: #AEB3BD; --bn-line: rgba(242, 243, 238, .2); --bn-mark: #F6DD2F;
+  position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; align-items: center;
+  background: var(--bn-ink); color: var(--bn-paper); border: 1px solid var(--bn-line); border-radius: 16px; padding: 22px 20px; margin-bottom: 10px;
+  background-image: radial-gradient(circle at 100% 0, rgba(246, 221, 47, .13), transparent 46%); }
+@media (min-width: 820px) { .banner { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; padding: 32px 38px; } }
+.bn-main { display: grid; gap: 12px; min-width: 0; }
+.bn-brand { display: flex; align-items: center; gap: 12px; font-family: var(--f-ui); font-stretch: 85%; font-weight: 700; font-size: 12.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--bn-mute); }
+.bn-avatar { width: 46px; height: 46px; flex: none; border-radius: 11px; box-shadow: 0 0 0 1px var(--bn-line); }
+.bn-h { font-family: var(--f-disp); font-stretch: 118%; font-weight: 880; font-size: clamp(30px, 5vw, 54px); line-height: 1.02; letter-spacing: -.015em; text-wrap: balance; }
+.bn-h span { color: var(--bn-ink); background: var(--bn-mark); padding: 0 .14em; border-radius: 6px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.bn-sub { font-family: var(--f-read); font-size: clamp(16.5px, 2vw, 19px); line-height: 1.45; color: #D3D6DC; max-width: 46ch; }
+.bn-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.bn-tags span { font-size: 12.5px; font-weight: 700; padding: 4px 10px; border: 1px solid var(--bn-line); border-radius: 999px; color: var(--bn-paper); }
+.bn-grid { display: grid; gap: 7px; min-width: 0; }
+.bn-row { display: grid; grid-template-columns: minmax(64px, 96px) repeat(5, minmax(0, 1fr)); gap: 6px; align-items: center; }
+.bn-t { font-size: 12.5px; font-weight: 650; color: var(--bn-mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bn-head b { font-family: var(--f-disp); font-weight: 850; font-size: 12px; text-align: center; color: var(--bn-mute); }
+.bn-c { display: block; height: 26px; border: 1.5px solid var(--bn-line); border-radius: 6px; }
+.bn-c.on { background: var(--bn-mark); border-color: var(--bn-mark); box-shadow: 0 0 0 3px rgba(246, 221, 47, .18); }
+@media (min-width: 820px) { .bn-c { height: 32px; } .bn-grid { gap: 9px; } }
+@media (max-width: 480px) { .bn-row:nth-child(n+5) { display: none; } .bn-tags span:last-child { display: none; } .bn-c { height: 22px; } .banner { gap: 16px; padding: 18px 16px; } }
+@media (forced-colors: active) { .bn-c.on { forced-color-adjust: none; } }
