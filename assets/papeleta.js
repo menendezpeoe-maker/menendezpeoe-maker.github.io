@@ -7,7 +7,7 @@
 // ───────────────────────────── Configuración
 const ARTIFACT_URL = "https://claude.ai/artifact/AwTtH6GM3GMWjFxDVVb6yV";
 // Dirección pública que se comparte cuando la web no se está usando desde ella misma
-const PUBLIC_URL = "https://menendezpeoe-maker.github.io/";
+const PUBLIC_URL = "https://test29n.es/";
 // Aportaciones voluntarias: solo enlaces públicos de pago. Una opción vacía no se muestra.
 // Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
 const DONATE = {
