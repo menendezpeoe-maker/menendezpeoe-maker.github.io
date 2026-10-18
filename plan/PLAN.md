@@ -1,6 +1,6 @@
 # Plan automático de Test 29N hasta el 29N
 
-Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las tandas se reparten a lo largo de 3 semanas, con 3 o 4 por semana, para dejar margen del límite semanal al titular. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
+Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las tandas van una por noche, del 24 de octubre al 4 de noviembre: el titular dedica a esto su límite de uso esas semanas. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
 
 ## Reglas para cada tanda (además de las de PROMPT-ORIGINAL.md, que se aplican siempre)
 
@@ -40,19 +40,21 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | Tanda | Fecha (hora de Madrid) | Contenido |
 |---|---|---|
 | T1 | sáb 24 oct | Fase 1a: entrada |
+| T9 | dom 25 oct | Fase 4: buscadores y datos abiertos (adelantada para que Google tenga más tiempo) |
 | T2 | lun 26 oct | Fase 1b: test rápido y resultados |
-| T3 | mié 28 oct | Fase 3a: guía para votar y calendario |
-| T4 | sáb 31 oct | Fase 3b: provincias, simulador y glosario |
-| T5 | lun 2 nov | Fase 2: fuentes de PSOE y PP |
-| T6 | mar 3 nov | Fase 2: fuentes de Vox y Frente Amplio |
-| T7 | mié 4 nov | Fase 2: fuentes de Podemos y ERC |
-| T8 | sáb 7 nov | Fase 2: justificaciones visibles y confianza |
-| T9 | lun 9 nov | Fase 4: buscadores y datos abiertos |
-| T10 | mar 10 nov | Fase 5: difusión y tests por tema |
-| T11 | jue 12 nov | Fase 6 y repaso final antes de la campaña |
-| S1 | lun 16 nov | Seguimiento de campaña |
+| T3 | mar 27 oct | Fase 3a: guía para votar y calendario |
+| T4 | mié 28 oct | Fase 3b: provincias, simulador y glosario |
+| T10 | jue 29 oct | Fase 5: difusión y tests por tema |
+| T5 | sáb 31 oct | Fase 2: fuentes de PSOE y PP |
+| T6 | dom 1 nov | Fase 2: fuentes de Vox y Frente Amplio |
+| T7 | lun 2 nov | Fase 2: fuentes de Podemos y ERC |
+| T8 | mar 3 nov | Fase 2: justificaciones visibles y confianza |
+| T11 | mié 4 nov | Fase 6 y repaso final |
+| S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
 | S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
 | P1 | lun 30 nov | Después de las elecciones |
+
+Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así que recogen solas las fuentes y justificaciones que añadan T5–T8. Cada tanda posterior a T9 debe ampliar las pruebas y el sitemap si crea páginas nuevas.
 
 ### T1 · Fase 1a: entrada en un toque
 - **Quitar sexo y edad.** Elimínalos del formulario, del resumen («who»), del estado guardado y de los textos de privacidad.
