@@ -16,7 +16,7 @@ const DONATE = {
 };
 // Contador de visitas con GoatCounter (sin cookies ni datos personales): código de la cuenta, por ejemplo
 // "test29n" para test29n.goatcounter.com. Vacío = no se cuenta nada. Solo cuenta en la dirección pública.
-const STATS = { goatcounter: "" };
+const STATS = { goatcounter: "test29n" };
 // Titular de la web para el aviso legal. Vacío = no se muestra.
 const OWNER = { name: "Dery", email: "menendezpeoe@gmail.com" };
 const KEY = "papeleta29n.v2";
