@@ -24,6 +24,11 @@ for (const [k, re] of Object.entries(DONATE_RULES)) {
   if (v && !re.test(v)) throw new Error(`DONATE.${k} no es un enlace válido: ${v}`);
   console.log(`Aportaciones · ${k}: ${v || "sin configurar (no se muestra)"}`);
 }
+// Contador de visitas: solo un código de GoatCounter válido; la CSP permite únicamente ese dominio
+const STATS_CODE = /\bgoatcounter: "([^"]*)"/.exec(js)?.[1];
+if (STATS_CODE === undefined) throw new Error("Falta STATS.goatcounter en papeleta.js");
+if (STATS_CODE && !/^[a-z0-9][a-z0-9-]{1,48}$/.test(STATS_CODE)) throw new Error(`STATS.goatcounter no es un código válido: ${STATS_CODE}`);
+console.log(`Contador de visitas: ${STATS_CODE ? `https://${STATS_CODE}.goatcounter.com` : "desactivado"}`);
 writeFileSync(`${OUT}/assets/papeleta.js`, js);
 copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
 for (const f of ["preguntas.json", "partidos.json", "politicos.json"]) copyFileSync(`data/${f}`, `${OUT}/data/${f}`);
@@ -49,7 +54,7 @@ const body = page.slice(page.indexOf('<a class="skip"'))
   .trim();
 const csp = [
   "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline'",
-  "font-src 'self'", "img-src 'self' data: blob:", "connect-src 'self'",
+  "font-src 'self'", `img-src 'self' data: blob:${STATS_CODE ? ` https://${STATS_CODE}.goatcounter.com` : ""}`, "connect-src 'self'",
   "base-uri 'self'", "form-action 'none'", "object-src 'none'"
 ].join("; ");
 // index usa rutas relativas (funciona en cualquier carpeta); el 404 usa la URL completa porque se sirve en rutas arbitrarias
