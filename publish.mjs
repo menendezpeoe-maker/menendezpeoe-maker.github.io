@@ -35,7 +35,12 @@ for (const f of readdirSync("assets/politicos").filter((f) => f.endsWith(".jpg")
 // Ningún dato bancario puede acabar en la web pública
 for (const f of [`${OUT}/assets/papeleta.js`, "papeleta-29n.html", ...["preguntas", "partidos", "politicos"].map((n) => `data/${n}.json`)])
   if (/\b[A-Z]{2}\d{2}(?:[ -]?[A-Z0-9]{4}){3,7}\b/.test(readFileSync(f, "utf8"))) throw new Error(`${f} contiene algo con formato de IBAN`);
-const v = { css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`) };
+// Tipografías propias (qa/fonts.py): sin peticiones a Google
+mkdirSync(`${OUT}/assets/fonts`, { recursive: true });
+copyFileSync("assets/fonts.css", `${OUT}/assets/fonts.css`);
+for (const f of readdirSync("assets/fonts")) copyFileSync(`assets/fonts/${f}`, `${OUT}/assets/fonts/${f}`);
+const FONT_MAIN = readdirSync("assets/fonts").find((f) => f.startsWith("Archivo-normal-latin-") && !f.includes("ext"));
+const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`) };
 
 // El cuerpo es el mismo que el del artefacto; se quitan sus etiquetas de cabecera
 const page = readFileSync("papeleta-29n.html", "utf8");
@@ -43,8 +48,8 @@ const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
   .trim();
 const csp = [
-  "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src https://fonts.gstatic.com", "img-src 'self' data: blob:", "connect-src 'self'",
+  "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline'",
+  "font-src 'self'", "img-src 'self' data: blob:", "connect-src 'self'",
   "base-uri 'self'", "form-action 'none'", "object-src 'none'"
 ].join("; ");
 // index usa rutas relativas (funciona en cualquier carpeta); el 404 usa la URL completa porque se sirve en rutas arbitrarias
@@ -63,9 +68,8 @@ const head = (title, desc, extra = "", B = "") => `<!doctype html>
 <link rel="icon" href="${B}favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="${B}apple-touch-icon.png">
 <link rel="manifest" href="${B}site.webmanifest">
-${extra}<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
+${extra}<link rel="preload" href="${B}assets/fonts/${FONT_MAIN}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="${B}assets/fonts.css?v=${v.fonts}">
 <link rel="stylesheet" href="${B}assets/papeleta.css?v=${v.css}">
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>`;

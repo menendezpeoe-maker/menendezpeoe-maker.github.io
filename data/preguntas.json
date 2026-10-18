@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "dims": [
   {
    "id": "eco",
@@ -862,6 +862,12 @@
    "notes": {
     "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
     "fa": "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general."
+   },
+   "src": {
+    "psoe": [
+     "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/",
+     "Legal Today, febrero de 2026"
+    ]
    }
   },
   {
@@ -1185,6 +1191,12 @@
    ],
    "notes": {
     "psoe": "El acuerdo PSC-ERC de 2024 prevé que la Agencia Tributaria de Cataluña recaude todos los impuestos, pero la dirección federal del PSOE niega que sea un concierto y Hacienda solo ha concretado la cesión del IRPF."
+   },
+   "src": {
+    "psoe": [
+     "https://maldita.es/malditahemeroteca/20240731/ceder-tributos-cataluna-psoe/",
+     "Maldita, julio de 2024"
+    ]
    }
   },
   {
@@ -1395,7 +1407,13 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "src": {
+    "fa": [
+     "https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html",
+     "Ara, programa de Sumar de 2023"
+    ]
+   }
   },
   {
    "id": "C06",
@@ -2111,7 +2129,17 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html",
+     "El Debate, votación del 12 de febrero de 2026"
+    ],
+    "fa": [
+     "https://www.diaridetarragona.com/espana/252011/congreso-aprueba-amplio-apoyo-ley-junts-multirreincidencia.html",
+     "Diari de Tarragona, votación del 12 de febrero de 2026"
+    ]
+   }
   },
   {
    "id": "E02",
@@ -2365,7 +2393,13 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html",
+     "Ara, junio de 2026"
+    ]
+   }
   },
   {
    "id": "E07",
@@ -2562,7 +2596,13 @@
     "cha",
     "existe",
     "mes"
-   ]
+   ],
+   "src": {
+    "pod": [
+     "https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/",
+     "El Independiente, enero de 2026"
+    ]
+   }
   },
   {
    "id": "F02",
@@ -2662,6 +2702,12 @@
    ],
    "notes": {
     "pp": "En el Congreso votó contra la «prioridad nacional» que propone Vox, pero sus pactos de gobierno de 2026 con Vox en Extremadura y Aragón dan prioridad en vivienda y ayudas según los años de empadronamiento."
+   },
+   "src": {
+    "pp": [
+     "https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html",
+     "Menorca.info, abril de 2026"
+    ]
    }
   },
   {
@@ -3038,6 +3084,12 @@
    ],
    "notes": {
     "psoe": "El Gobierno prorrogó en 2026 la central de Almaraz hasta 2030, pero mantiene el cierre de todo el parque nuclear en 2035."
+   },
+   "src": {
+    "psoe": [
+     "https://es.euronews.com/my-europe/2026/08/14/el-gobierno-de-espana-prorroga-la-central-nuclear-de-almaraz-hasta-2030-y-aplaza-su-cierre",
+     "Euronews, agosto de 2026"
+    ]
    }
   },
   {
@@ -3684,7 +3736,13 @@
     "upn",
     "gbai",
     "ccpc"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+     "RTVC, votación del 8 de octubre de 2025"
+    ]
+   }
   },
   {
    "id": "H05",
@@ -3779,7 +3837,13 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "pod": [
+     "https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html",
+     "El Debate, abril de 2026"
+    ]
+   }
   },
   {
    "id": "H07",
@@ -4755,6 +4819,12 @@
    ],
    "notes": {
     "pp": "Sus eurodiputados han votado a favor de seguir adelante con el acuerdo y de sus salvaguardas agrícolas, mientras algunos presidentes autonómicos del PP lo rechazan."
+   },
+   "src": {
+    "pp": [
+     "https://www.newtral.es/acuerdo-mercosur-maria-guardiola-pp-europeo-sanchez-factcheck/20260129/",
+     "Newtral, enero de 2026"
+    ]
    }
   },
   {
@@ -5194,7 +5264,13 @@
     "drago",
     "cha",
     "mes"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://www.elsaltodiario.com/derechos-reproductivos/congreso-rechaza-enmiendas-totalidad-pp-vox-incluir-aborto-constitucion",
+     "El Salto, abril de 2026"
+    ]
+   }
   },
   {
    "id": "L02",
@@ -5590,6 +5666,12 @@
    ],
    "notes": {
     "psoe": "Votó en contra de la ley de Vox, aunque se mostró dispuesto a negociar la prohibición que propone Junts."
+   },
+   "src": {
+    "pp": [
+     "https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/",
+     "Orain, febrero de 2026"
+    ]
    }
   }
  ]

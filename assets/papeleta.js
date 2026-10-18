@@ -168,7 +168,7 @@ let S = null;          // test propio
 let SHARED = null;     // resultado abierto desde un enlace compartido (solo lectura)
 let PREFS = store.get(PREFS_KEY) || { ctx: false };
 let CURRENT = "home";
-const UI = { cmp: null, scope: "prov", reviewFilter: "all" };
+const UI = { cmp: null, scope: "prov", reviewFilter: "all", extra: null };
 const savePrefs = () => store.set(PREFS_KEY, PREFS);
 const save = () => { if (S) { S.t = Date.now(); store.set(KEY, S); } };
 const ST = () => SHARED || S;
@@ -353,8 +353,11 @@ function next() {
     const first = $('#q-main input[name=ans]'); if (first) first.focus();
     return;
   }
-  if (S.idx >= S.order.length - 1) { finishQuiz(); return; }
-  S.idx++; save();
+  // Al ampliar a una versión más larga solo se recorren las preguntas nuevas
+  const pending = (from) => S.order.findIndex((id, i) => i > from && S.ans[id] === undefined);
+  const nxt = S.fill ? (pending(S.idx) >= 0 ? pending(S.idx) : pending(-1)) : S.idx + 1;
+  if (nxt < 0 || nxt >= S.order.length) { delete S.fill; finishQuiz(); return; }
+  S.idx = nxt; save();
   renderQuestion(1);
   focusStatement();
   if (isSheet() && PREFS.ctx) $("#ctx-body").scrollTop = 0;
@@ -587,7 +590,7 @@ let MODEL = null;
 function openResults() {
   MODEL = computeModel(ST());
   UI.cmp = MODEL.prov[0]?.pid || null;
-  UI.scope = "prov";
+  UI.scope = "prov"; UI.extra = null;
   renderResults();
   go("results");
 }
@@ -619,7 +622,7 @@ function renderResults() {
           ${!SHARED ? `<a class="btn btn-ghost" href="#r-share">Compartir mi resultado</a><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>` : `<button type="button" class="btn btn-primary" data-act="own-test">Hacer mi propio test</button>`}
           <button type="button" class="link-btn" data-go="method">Cómo se calcula</button>
         </div>
-        ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: las ya contestadas aparecen marcadas y solo tienes que responder las nuevas.</p>' : ""}
+        ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
     </div>`;
   invalidateCards(); renderSummary(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
@@ -659,6 +662,7 @@ function renderSummary() {
           ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
           <p class="tm-pct">${top.pct}<small>%</small></p>
           <p class="small">${top.close != null ? `Cercanía ideológica: <b>${Math.round(top.close * 100)} %</b> · ` : ""}comparado en ${top.n} de ${nAns} respuestas</p>
+          ${top.pct < 60 ? `<p class="small">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}
           <p class="small muted">Siguientes: ${M.prov.slice(1, 3).map((m) => `${esc(pName(m.pid, st.prov))} (${m.pct} %)`).join(" · ") || "—"}</p>` : "<p>No hay candidaturas comparables.</p>"}
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
           <div class="res-actions"><a class="btn btn-primary btn-sm" href="#r-parties">Ver partidos en detalle</a>${!SHARED ? '<a class="btn btn-ghost btn-sm" href="#r-share">Compartir</a>' : ""}</div>
@@ -877,7 +881,11 @@ function whyText(m, rank) {
   const st = ST(), nm = pName(m.pid, st.prov), pr = PROV[st.prov].name;
   const agree = m.items.filter((i) => i.d <= 1).length;
   const aa = areaAff(m).filter((x) => x.n >= 1).sort((a, b) => b.v - a.v);
-  const opener = rank === 0 ? `<b>${esc(nm)}</b> es la candidatura de ${esc(pr)} que más coincide con tus respuestas.` : `<b>${esc(nm)}</b> es la ${rank === 1 ? "segunda" : "tercera"} candidatura de ${esc(pr)} con más coincidencia.`;
+  const here = MODEL.avail.includes(m.pid);
+  const opener = !here ? `<b>${esc(nm)}</b> no se presenta en ${esc(pr)}; en toda España ocupa el puesto ${MODEL.all.indexOf(m) + 1} en coincidencia contigo.`
+    : rank === 0 ? `<b>${esc(nm)}</b> es la candidatura de ${esc(pr)} que más coincide con tus respuestas.`
+    : rank <= 2 ? `<b>${esc(nm)}</b> es la ${rank === 1 ? "segunda" : "tercera"} candidatura de ${esc(pr)} con más coincidencia.`
+    : `<b>${esc(nm)}</b> ocupa el puesto ${rank + 1} de ${MODEL.prov.length} en coincidencia entre las candidaturas de ${esc(pr)}.`;
   let t = `${opener} Coincidís en ${agree} de las ${m.n} afirmaciones en las que tiene una postura conocida.`;
   if (aa.length >= 2) t += ` Vuestra mayor sintonía está en ${esc(aa[0].a.name.toLowerCase())} (${Math.round(aa[0].v * 100)} %) y ${esc(aa[1].a.name.toLowerCase())} (${Math.round(aa[1].v * 100)} %).`;
   if (aa.length >= 3) { const w = aa[aa.length - 1]; if (w.v < aa[1].v) t += ` Donde más os separáis es en ${esc(w.a.name.toLowerCase())} (${Math.round(w.v * 100)} %).`; }
@@ -899,6 +907,23 @@ function cmpList(items, ab, empty) {
   return `<ul class="cmp">${items.slice(0, 3).map(row).join("")}</ul>${items.length > 3 ? `<details class="more"><summary>Ver ${items.length - 3} más</summary><ul class="cmp" style="margin-top:8px">${items.slice(3).map(row).join("")}</ul></details>` : ""}`;
 }
 const propList = (items) => `<ul class="props">${items.map((x) => `<li>${ICON[x.s.k]}<div><p class="pt">${esc(x.t)}</p><p class="ps"><span class="${x.s.k === "ok" ? "st-ok" : x.s.k === "ko" ? "st-ko" : ""}">${esc(x.s.txt)}</span>${x.q ? `<span>${esc(qCode(Q[x.q]))} · ${esc(AREA[Q[x.q].area].name)}</span>` : ""}</p></div></li>`).join("")}</ul>`;
+// Preguntas que inclinan la balanza entre la candidatura con más coincidencia y otra
+function versusTop(m) {
+  const st = ST(), top = MODEL.prov[0];
+  if (!top || top.pid === m.pid) return "";
+  const mine = Object.fromEntries(m.items.map((i) => [i.q.id, i]));
+  const rows = top.items.filter((i) => mine[i.q.id]).map((t) => { const o = mine[t.q.id]; return { q: t.q, u: t.u, vt: t.v, vo: o.v, adv: weightOf(t.q, st) * (o.d - t.d) / 4 }; });
+  const forTop = rows.filter((r) => r.adv > 0).sort((a, b) => b.adv - a.adv).slice(0, 3);
+  const forThis = rows.filter((r) => r.adv < 0).sort((a, b) => a.adv - b.adv).slice(0, 3);
+  if (!forTop.length && !forThis.length) return "";
+  const tAb = P[top.pid].ab, oAb = P[m.pid].ab, gap = top.pct - m.pct;
+  const li = (r) => `<li><b>${esc(r.q.short)}</b><span>Tú: ${esc(answerText(r.q, r.u, true))} · ${esc(tAb)}: ${esc(answerText(r.q, r.vt, true))} · ${esc(oAb)}: ${esc(answerText(r.q, r.vo, true))}</span></li>`;
+  return `<details class="more"${gap <= 5 ? " open" : ""}><summary>Frente a ${esc(tAb)}, tu primera candidatura: qué os diferencia (${gap} ${gap === 1 ? "punto" : "puntos"})</summary>
+    <div class="two" style="margin-top:10px">
+      <div><p class="subh">Te acercan más a ${esc(tAb)}</p>${forTop.length ? `<ul class="cmp">${forTop.map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">Ninguna pregunta en particular.</li></ul>'}</div>
+      <div><p class="subh">Te acercan más a ${esc(oAb)}</p>${forThis.length ? `<ul class="cmp">${forThis.map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">Ninguna pregunta en particular.</li></ul>'}</div>
+    </div></details>`;
+}
 function partyCard(m, rank) {
   const st = ST(), p = P[m.pid], nm = pName(m.pid, st.prov);
   const strength2 = (i) => Math.abs(i.u - 3) + Math.abs(i.v - 3);
@@ -911,7 +936,7 @@ function partyCard(m, rank) {
     ? `<div class="affrow"><span>${esc(a.name)}</span><span class="bar"><i style="width:${Math.round(x.v * 100)}%"></i></span><span class="v">${Math.round(x.v * 100)}</span></div>`
     : `<div class="affrow na"><span>${esc(a.name)}</span><span class="bar"></span><span class="v">–</span></div>`; }).join("");
   return `<article class="pcard${rank === 0 ? " first" : ""}" id="card-${m.pid}" aria-labelledby="ph-${m.pid}">
-    <div class="phead">${logo(m.pid)}<div style="display:grid;gap:3px;min-width:0"><h3 id="ph-${m.pid}"><span class="rk">${rank + 1}.º</span>${esc(nm)}</h3><span class="tag">${esc(p.tag)}</span>${p.lead ? `<span class="lead">Cabeza de cartel: ${esc(p.lead)}</span>` : ""}${p.tbd ? '<span><span class="tbd">Candidatura por confirmar</span></span>' : ""}</div>
+    <div class="phead">${logo(m.pid)}<div style="display:grid;gap:3px;min-width:0"><h3 id="ph-${m.pid}">${rank < 90 ? `<span class="rk">${rank + 1}.º</span>` : ""}${esc(nm)}</h3><span class="tag">${esc(p.tag)}</span>${p.lead ? `<span class="lead">Cabeza de cartel: ${esc(p.lead)}</span>` : ""}${p.tbd ? '<span><span class="tbd">Candidatura por confirmar</span></span>' : ""}</div>
       <div class="pc"><b>${m.pct}<small style="font-size:.45em">%</small></b><span>coincidencia</span></div></div>
     <div class="metrics">
       <div class="metric"><b>${m.close != null ? Math.round(m.close * 100) + " %" : "–"}</b><span>Cercanía ideológica</span></div>
@@ -927,6 +952,7 @@ function partyCard(m, rank) {
       <div><p class="subh" style="color:var(--ok)">En qué coincidís (${yes.length})</p>${cmpList(yes, p.ab, "Ninguna coincidencia clara.")}</div>
       <div><p class="subh" style="color:var(--ko)">En qué discrepáis (${no.length})</p>${cmpList(no, p.ab, "No hay discrepancias fuertes.")}</div>
     </div>
+    ${versusTop(m)}
     <details class="more"><summary>Coincidencia por área</summary><div class="aff" style="margin-top:10px">${affRows}</div></details>
   </article>`;
 }
@@ -935,8 +961,9 @@ function renderParties() {
   const list = (UI.scope === "prov" ? M.prov : M.all).slice(0, 10);
   const rows = list.map((m, i) => {
     const p = P[m.pid], here = M.avail.includes(m.pid);
-    const meta = [!here ? "No se presenta en tu provincia" : "", p.tbd ? "Por confirmar" : "", m.padded ? `Solo se pronuncia en ${m.n} de tus respuestas: en ellas coincidís un ${m.raw} %` : "", m.n && m.nEst / m.n > 0.5 ? `Comparada sobre todo con posturas estimadas (${Math.round(m.nEst / m.n * 100)} %)` : "", m.close != null ? `Cercanía ideológica ${Math.round(m.close * 100)} %` : ""].filter(Boolean).join(" · ");
-    return `<li class="${here ? "" : "out"}${i === 0 && here ? " me-top" : ""}"><span class="rn">${i + 1}</span>${logo(m.pid, "sm")}<div class="nm"><b>${esc(here ? pName(m.pid, st.prov) : p.name)}</b><span class="bar"><i style="width:${m.pct}%"></i></span><span class="meta">${esc(meta)}</span></div><span class="pv"><b>${m.pct} %</b><span>${m.n} comparadas</span></span></li>`;
+    const tie = i > 0 && list[0].pct - m.pct <= 3;
+    const meta = [!here ? "No se presenta en tu provincia" : "", tie ? `Empate técnico con ${P[list[0].pid].ab}` : "", p.tbd ? "Por confirmar" : "", m.padded ? `Solo se pronuncia en ${m.n} de tus respuestas: en ellas coincidís un ${m.raw} %` : "", m.n && m.nEst / m.n > 0.5 ? `Comparada sobre todo con posturas estimadas (${Math.round(m.nEst / m.n * 100)} %)` : "", m.close != null ? `Cercanía ideológica ${Math.round(m.close * 100)} %` : ""].filter(Boolean).join(" · ");
+    return `<li class="${here ? "" : "out"}${i === 0 && here ? " me-top" : ""}"><span class="rn">${i + 1}</span>${logo(m.pid, "sm")}<div class="nm"><b>${esc(here ? pName(m.pid, st.prov) : p.name)}</b><span class="bar"><i style="width:${m.pct}%"></i></span><span class="meta">${esc(meta)}</span><button type="button" class="link-btn rk-card" data-card="${m.pid}">Ver su ficha</button></div><span class="pv"><b>${m.pct} %</b><span>${m.n} comparadas</span></span></li>`;
   }).join("");
   $("#r-parties").innerHTML = `
     <div class="sec-head"><p class="label">Partidos</p><h2 id="parties-h" class="h2">Coincidencia con las candidaturas</h2>
@@ -945,7 +972,24 @@ function renderParties() {
     <p class="small muted">${UI.scope === "prov" ? (M.prov.length < 10 ? `En ${esc(pr.name)} se presentan ${M.prov.length} candidaturas. Cambia a «Toda España» para ver tu top 10 con partidos de otros territorios.` : `Las 10 candidaturas de ${esc(pr.name)} con más coincidencia.`) : "Las candidaturas que no se presentan en tu provincia aparecen atenuadas."}</p>
     <ol class="rank">${rows}</ol>
     <div class="sec-head" style="padding-top:20px"><h3 class="h2" style="font-size:clamp(21px,3vw,27px)">Tu top 3 en ${esc(pr.name)}, en detalle</h3><p class="sub">Por qué coincides, sus propuestas comparadas con tus respuestas y dónde chocáis.</p></div>
-    <div class="pcards">${M.prov.slice(0, 3).map((m, i) => partyCard(m, i)).join("")}</div>`;
+    <div class="pcards">${M.prov.slice(0, 3).map((m, i) => partyCard(m, i)).join("")}</div>
+    <div id="pc-extra" class="pcards" style="margin-top:22px"></div>`;
+  if (UI.extra) showExtraCard(UI.extra, false);
+}
+// Ficha detallada de una candidatura fuera del top 3 (desde el ranking)
+function showExtraCard(pid, scroll = true) {
+  const M = MODEL, m = M.all.find((x) => x.pid === pid), box = $("#pc-extra");
+  if (!m || !box) return;
+  if (M.prov.slice(0, 3).some((x) => x.pid === pid)) { UI.extra = null; box.innerHTML = ""; if (scroll) focusCard(pid); return; }
+  UI.extra = pid;
+  const rank = M.prov.indexOf(m);
+  box.innerHTML = `<div class="extra-head"><p class="label">Ficha que has abierto</p><button type="button" class="link-btn" data-act="close-card">Cerrar ficha</button></div>${partyCard(m, rank < 0 ? 99 : rank)}`;
+  if (scroll) focusCard(pid);
+}
+function focusCard(pid) {
+  const c = $(`#card-${pid}`); if (!c) return;
+  c.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+  const h = c.querySelector("h3"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
 }
 
 function renderSolid() {
@@ -959,16 +1003,9 @@ function renderSolid() {
     </div>`;
 }
 
-function renderReview() {
-  const st = ST(), ro = !!SHARED;
-  const ids = st.order && st.order.length ? st.order : BANK.questions.filter((q) => st.ans[q.id] !== undefined).map((q) => q.id);
-  const avail = partiesIn(st.prov);
-  const f = UI.reviewFilter;
-  const keep = (id) => f === "all" || (f === "doubt" && (st.ans[id] === 0 || st.ans[id] === 3)) || (f === "imp" && st.imp[id]) || (f === "firm" && (st.ans[id] === 1 || st.ans[id] === 5));
-  const groups = BANK.areas.map((a) => ({ a, ids: ids.filter((id) => Q[id].area === a.id && keep(id)) })).filter((g) => g.ids.length);
-  const opt = (q, v) => [1, 2, 3, 4, 5].map((n) => `<option value="${n}"${v === n ? " selected" : ""}>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</option>`).join("")
-    + `<option value="0"${v === 0 ? " selected" : ""}>No lo sé</option>${v === undefined ? '<option value="" selected>Sin responder</option>' : ""}`;
-  const positions = (q) => {
+// Contexto y posturas de una pregunta de «Tus respuestas»: se construye al desplegarla
+function reviewPositions(q) {
+  const st = ST(), avail = partiesIn(st.prov);
     const cols = [1, 2, 3, 4, 5].map((n) => {
       const ps = avail.filter((pid) => q.pos[pid] === n);
       const you = st.ans[q.id] === n;
@@ -976,7 +1013,16 @@ function renderReview() {
     }).join("");
     const unk = avail.filter((pid) => !q.pos[pid]);
     return `<div class="pos5">${cols}</div>${posNotes(q, avail)}${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}<p class="unk">Las etiquetas con borde discontinuo y en cursiva son posturas estimadas.</p>`;
-  };
+  }
+function renderReview() {
+  const st = ST(), ro = !!SHARED;
+  const ids = st.order && st.order.length ? st.order : BANK.questions.filter((q) => st.ans[q.id] !== undefined).map((q) => q.id);
+  const f = UI.reviewFilter;
+  const keep = (id) => f === "all" || (f === "doubt" && (st.ans[id] === 0 || st.ans[id] === 3)) || (f === "imp" && st.imp[id]) || (f === "firm" && (st.ans[id] === 1 || st.ans[id] === 5));
+  const groups = BANK.areas.map((a) => ({ a, ids: ids.filter((id) => Q[id].area === a.id && keep(id)) })).filter((g) => g.ids.length);
+  const opt = (q, v) => [1, 2, 3, 4, 5].map((n) => `<option value="${n}"${v === n ? " selected" : ""}>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</option>`).join("")
+    + `<option value="0"${v === 0 ? " selected" : ""}>No lo sé</option>${v === undefined ? '<option value="" selected>Sin responder</option>' : ""}`;
+
   $("#r-review").innerHTML = `
     <div class="sec-head"><p class="label">Tus respuestas</p><h2 id="review-h" class="h2">Revisa y cambia lo que quieras</h2>
     <p class="sub">${ro ? "Respuestas del resultado compartido, agrupadas por área. Abre un área y despliega cada pregunta para ver la postura de cada partido." : "Abre un área para revisar tus respuestas. Si cambias una respuesta o su importancia, el resultado se recalcula al momento, y en cada pregunta puedes ver la postura de cada partido de tu provincia."}</p></div>
@@ -991,7 +1037,7 @@ function renderReview() {
         <div class="rv-text"><b>${esc(q.text)}</b>${q.type === "dilema" ? `<p>A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}</div>
         <div class="rv-ctl"><label class="sr" for="rv-${id}">Tu respuesta a ${esc(q.short)}</label><select id="rv-${id}" data-ctl="ans" data-q="${id}"${ro ? " disabled" : ""}>${opt(q, v)}</select></div>
         <div class="rv-ctl"><button type="button" class="imp" data-ctl="imp" data-q="${id}" aria-pressed="${!!st.imp[id]}"${ro ? " disabled" : ""}>${ICON.starO}${ICON.starF}<span>Importante</span></button></div>
-        <div class="rv-more"><details class="more"><summary>Contexto y posturas de los partidos</summary><p class="dinfo" style="margin:8px 0">${esc(q.ctx)}</p>${positions(q)}</details></div>
+        <div class="rv-more"><details class="more"><summary>Contexto y posturas de los partidos</summary><div data-lazy="${id}"></div></details></div>
       </div>`; }).join("")}</details>`).join("") || '<p class="muted">No hay preguntas con este filtro.</p>'}`;
 }
 
@@ -1169,10 +1215,16 @@ function renderSupport() {
 // Notas sobre discrepancias entre programa, declaraciones y votos (data/preguntas.json → notes)
 function posNotes(q, pids) {
   const n = Object.entries(q.notes || {}).filter(([pid]) => pids.includes(pid));
-  return n.length ? `<ul class="pos-notes">${n.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : "";
+  const src = Object.entries(q.src || {}).filter(([pid]) => pids.includes(pid));
+  return (n.length ? `<ul class="pos-notes">${n.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : "")
+    + (src.length ? `<p class="unk">Fuentes: ${src.map(([pid, [url, label]]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(P[pid].ab)} · ${esc(label)}</a>`).join(" · ")}.</p>` : "");
 }
 function bindResults() {
   const root = $("#v-results");
+  root.addEventListener("toggle", (e) => {
+    const box = e.target.open && e.target.querySelector(":scope > [data-lazy]:empty");
+    if (box) box.innerHTML = `<p class="dinfo" style="margin:8px 0">${esc(Q[box.dataset.lazy].ctx)}</p>${reviewPositions(Q[box.dataset.lazy])}`;
+  }, true);
   root.addEventListener("change", (e) => {
     const el = e.target, c = el.dataset.ctl; if (!c) return;
     if (c === "cmp") { UI.cmp = el.value || null; renderDims(); renderAreas(); $("#cmp-sel").focus(); }
@@ -1190,6 +1242,8 @@ function bindResults() {
     if (a) { e.preventDefault(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
+    if (b.dataset.card) { showExtraCard(b.dataset.card); return; }
+    if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
       const id = b.dataset.q; S.imp[id] = !S.imp[id]; if (!S.imp[id]) delete S.imp[id];
       b.setAttribute("aria-pressed", String(!!S.imp[id])); save(); rerenderAfterEdit(); toast("Resultado recalculado"); return;
@@ -1197,7 +1251,7 @@ function bindResults() {
     const act = b.dataset.act;
     if (act === "more") {
       const next = S.mode === "expres" ? "media" : "completa";
-      S.mode = next; S.order = buildOrder(next, S.seed);
+      S.mode = next; S.order = buildOrder(next, S.seed); S.fill = true;
       const first = S.order.findIndex((id) => S.ans[id] === undefined);
       S.idx = first < 0 ? S.order.length - 1 : first; S.stage = "quiz"; save();
       renderQuestion(0); go("quiz", { focus: false }); focusStatement();
@@ -1585,7 +1639,7 @@ function renderMethod() {
             <p><b>Versiones y selección.</b> Cada área tiene una pregunta núcleo, varias importantes y otras complementarias. La versión exprés usa la núcleo y una importante por área; la media, la núcleo, dos importantes y una complementaria; la completa, todas. Las preguntas que completan cada área se eligen con una semilla aleatoria, compensando el sesgo izquierda-derecha de las ya elegidas, así que dos personas pueden recibir cuestionarios algo distintos pero siempre equilibrados y con todas las áreas.</p>
           </section>
           <section class="msec" id="m-pos"><h2 class="h2">Posturas de los partidos</h2>
-            <p>Para cada pregunta asignamos a cada candidatura una postura de 1 a 5 a partir de sus <b>programas electorales de 2023</b>, sus <b>votaciones en el Congreso</b> y sus <b>declaraciones públicas</b> hasta el 17 de octubre de 2026. Los programas para el 29N aún no se han publicado completos. Cuando un partido vota o gobierna en sentido distinto a lo que propone, usamos lo que ha hecho más recientemente y lo explicamos con una nota junto a su postura. Revisamos con fuentes las posturas de los principales partidos estatales en octubre de 2026.</p>
+            <p>Para cada pregunta asignamos a cada candidatura una postura de 1 a 5 a partir de sus <b>programas electorales de 2023</b>, sus <b>votaciones en el Congreso</b> y sus <b>declaraciones públicas</b> hasta el 17 de octubre de 2026. Los programas para el 29N aún no se han publicado completos. Cuando un partido vota o gobierna en sentido distinto a lo que propone, usamos lo que ha hecho más recientemente y lo explicamos con una nota junto a su postura. Revisamos con fuentes las posturas de los principales partidos estatales en octubre de 2026: ${BANK.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0)} de ellas enlazan ya su fuente junto a la pregunta, y el resto se basa en los programas y declaraciones citados, todavía sin enlace individual.</p>
             <ul class="dots">
               <li><b>Documentada</b>: hay programa, voto o declaración explícita. Pesa 1.</li>
               <li><b>Estimada</b>: se deduce de la línea general del partido o de su posición en temas cercanos. Pesa 0,6 y se marca siempre como estimada.</li>
@@ -1617,7 +1671,7 @@ function renderMethod() {
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
-            <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se descargan de Google Fonts, por lo que tu navegador se conecta a servidores de Google; ninguno de los dos recibe tus respuestas.</p>
+            <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
             ${OWNER.name || OWNER.email ? `<p>${[OWNER.name && `<b>Responsable</b>: ${esc(OWNER.name)}`, OWNER.email && `<b>Contacto</b>: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>`].filter(Boolean).join(" · ")}.</p>` : ""}

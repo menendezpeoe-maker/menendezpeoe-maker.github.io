@@ -1,12 +1,12 @@
 // Valida las fuentes y genera los datos publicados en data/.
 // Uso: node build.mjs   (sale con código 1 si encuentra errores)
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
-import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES } from "./src/preguntas.src.mjs";
+import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES, SOURCES } from "./src/preguntas.src.mjs";
 import { PARTY_ORDER, PARTIES, REGIONS } from "./src/partidos.src.mjs";
 import { POLITICIANS } from "./src/politicos.src.mjs";
 
 const VERSION = "2.0.0";
-const UPDATED = "2026-10-17";
+const UPDATED = "2026-10-18";
 const errors = [];
 const warns = [];
 const err = (m) => errors.push(m);
@@ -51,6 +51,14 @@ const questions = QUESTIONS.map((q) => {
   if (NOTES[q.id]) {
     for (const pid of Object.keys(NOTES[q.id])) if (!pos[pid]) err(`${q.id}: nota para ${pid}, que no tiene postura`);
     out.notes = NOTES[q.id];
+  }
+  if (SOURCES[q.id]) {
+    for (const [pid, [url, label]] of Object.entries(SOURCES[q.id])) {
+      if (!pos[pid]) err(`${q.id}: fuente para ${pid}, que no tiene postura`);
+      if (!/^https:\/\/[^\s"<>]+$/.test(url) || !label) err(`${q.id}/${pid}: fuente no válida`);
+      if (est.includes(pid)) warn(`${q.id}/${pid}: tiene fuente pero sigue marcada como estimada`);
+    }
+    out.src = SOURCES[q.id];
   }
   return out;
 });
@@ -143,4 +151,9 @@ for (const id of PARTY_ORDER) {
   console.log(`  ${id.padEnd(7)} ${String(known - est).padStart(3)} + ${String(est).padStart(3)} = ${String(known).padStart(3)} / ${questions.length}`);
 }
 console.log(`\nPolíticos: ${politicians.length}, con foto ${politicians.filter((x) => x.photo).length}, posturas ${politicians.reduce((a, x) => a + Object.keys(x.pos).length, 0)}`);
+// Datos que caducan: posturas sin revisar en más de 3 semanas y candidaturas aún por confirmar
+const age = Math.floor((Date.now() - Date.parse(UPDATED)) / 86400000);
+if (age > 21) warn(`Las posturas se revisaron hace ${age} días (${UPDATED}): conviene actualizarlas, sobre todo en campaña`);
+const pending = PARTIES.filter((p) => p.tbd && !p.out).map((p) => p.ab);
+if (pending.length) warn(`Candidaturas por confirmar: ${pending.join(", ")} (comprobar las listas proclamadas por la Junta Electoral)`);
 if (warns.length) console.log("\nAvisos:\n - " + warns.join("\n - "));
