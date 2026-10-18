@@ -595,3 +595,8 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-varian
 .pol-role { font-size: 13.5px; color: var(--ink-2); line-height: 1.35; }
 .pol-credit { font-size: 11.5px; line-height: 1.4; color: var(--ink-3); overflow-wrap: anywhere; }
 .pol-credit a { color: inherit; }
+
+/* Apoyo voluntario */
+.support { display: grid; gap: 20px; padding: 24px 20px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); }
+@media (min-width: 900px) { .support { grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); gap: 40px; align-items: center; padding: 30px 28px; } }
+.support-act { display: grid; gap: 10px; justify-items: start; }

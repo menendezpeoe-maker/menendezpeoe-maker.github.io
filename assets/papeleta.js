@@ -8,6 +8,10 @@
 const ARTIFACT_URL = "https://claude.ai/artifact/AwTtH6GM3GMWjFxDVVb6yV";
 // Dirección pública que se comparte cuando la web no se está usando desde ella misma
 const PUBLIC_URL = "https://menendezpeoe-maker.github.io/";
+// Aportaciones voluntarias: enlace público de Ko-fi o PayPal del titular. Vacío = botón desactivado.
+const DONATE_URL = "";
+// Titular de la web para el aviso legal. Vacío = no se muestra.
+const OWNER = { name: "", email: "" };
 const KEY = "papeleta29n.v2";
 const PREFS_KEY = "papeleta29n.prefs";
 const W_IMPORTANT = 2;      // pregunta marcada como importante
@@ -579,6 +583,7 @@ function renderResults() {
       <section id="r-review" class="res-sec" aria-labelledby="review-h"></section>
       <section id="r-least" class="res-sec" aria-labelledby="least-h"></section>
       <section id="r-pols" class="res-sec" aria-labelledby="pols-h"></section>
+      <section id="r-support" class="res-sec" aria-labelledby="support-h"></section>
       <section class="res-sec" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
@@ -588,7 +593,7 @@ function renderResults() {
         ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
     </div>`;
-  invalidateCards(); renderSummary(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians();
+  invalidateCards(); renderSummary(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
 }
 
 function rerenderAfterEdit() {
@@ -1039,6 +1044,24 @@ function renderPoliticians() {
   });
 }
 
+// ───────────────────────────── APOYO
+// Solo un enlace externo: no se carga ningún script de la plataforma ni se le envía nada del test.
+const donatePlatform = () => /ko-fi\.com$/.test(new URL(DONATE_URL).hostname) ? "Ko-fi" : "PayPal";
+function renderSupport() {
+  const act = DONATE_URL
+    ? `<a class="btn btn-primary" href="${esc(DONATE_URL)}" target="_blank" rel="noopener noreferrer">Apoyar el proyecto<span class="sr"> (se abre ${donatePlatform()} en una pestaña nueva)</span></a>
+       <p class="small muted">Se abre ${donatePlatform()}, donde eliges si quieres aportar y cuánto. Tus respuestas no se envían.</p>`
+    : `<button type="button" class="btn btn-primary" disabled aria-describedby="support-off">Apoyar el proyecto</button>
+       <p id="support-off" class="small muted">Las aportaciones todavía no están activadas.</p>`;
+  $("#r-support").innerHTML = `
+    <div class="support">
+      <div class="sec-head"><h2 id="support-h" class="h2">¿Te ha resultado útil el test?</h2>
+        <p class="sub">Este proyecto busca ayudarte a comprender mejor las distintas posiciones políticas de una forma clara, independiente y accesible. Si te ha resultado útil y quieres contribuir a que siga mejorando, puedes apoyarlo con una pequeña aportación voluntaria.</p>
+        <p class="small muted">El test es y seguirá siendo gratuito. Aportar es opcional y no cambia ningún resultado.</p></div>
+      <div class="support-act">${act}</div>
+    </div>`;
+}
+
 function bindResults() {
   const root = $("#v-results");
   root.addEventListener("change", (e) => {
@@ -1432,7 +1455,7 @@ function renderMethod() {
       <h1 id="method-h" class="h1">Cómo funciona el Test 29N</h1>
       <p class="lede">Qué medimos, de dónde salen las posturas de los partidos, cómo se calcula tu resultado y qué límites tiene. Todo lo que ves aquí se calcula en directo a partir de los mismos datos que usa el test.</p>
       <div class="mgrid">
-        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-calc">El cálculo</a><a href="#m-sol">Solidez y límites</a><a href="#m-priv">Privacidad</a><a href="#m-ver">Versión y cambios</a></nav>
+        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-calc">El cálculo</a><a href="#m-sol">Solidez y límites</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
         <div class="mbody">
           <section class="msec" id="m-que"><h2 class="h2">Qué mide</h2>
             <p>El test no te asigna una etiqueta. Mide tu posición en <b>siete dimensiones</b> independientes y la compara, pregunta a pregunta, con las posturas de las candidaturas que se presentan en tu provincia.</p>
@@ -1480,16 +1503,12 @@ function renderMethod() {
             </ul>
             <p>Límites: los partidos pueden cambiar de posición, actuar de forma distinta a lo que proponen o no pronunciarse; las candidaturas locales tienen pocas posturas conocidas; y un test no recoge la confianza en los líderes, la gestión o el voto útil. <b>No es una recomendación de voto ni un diagnóstico científico.</b></p>
           </section>
-          <section class="msec" id="m-priv"><h2 class="h2">Privacidad</h2>
+          <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas empezando un test nuevo. Sexo y edad solo se muestran en tu resultado. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
-          </section>
-          <section class="msec" id="m-ver"><h2 class="h2">Versión y cambios</h2>
-            <ul class="dots">
-              <li><b>17 de octubre de 2026.</b> Nuevo nombre, Test 29N. Nuevas secciones de resultados: los tres partidos con los que menos coincides y los políticos con los que más coincides.</li>
-              <li><b>v${esc(BANK.version)} · 17 de octubre de 2026.</b> Banco ampliado a ${qs.length} preguntas en ${BANK.areas.length} áreas, contexto neutral en todas, dilemas, «No lo sé», importancia y prioridades, siete dimensiones, posturas con nivel de confianza, comprobación de solidez y candidaturas actualizadas tras el registro de coaliciones del 16 de octubre.</li>
-              <li><b>v1.0 · 17 de octubre de 2026.</b> Primera versión: 60 afirmaciones, 10 bloques y comparación con candidaturas por provincia.</li>
-            </ul>
-            <p>Las preguntas y las posturas se guardan como datos separados del código (<code>data/preguntas.json</code>, <code>data/partidos.json</code> y <code>data/politicos.json</code>), con un código estable para cada pregunta, de modo que se pueden actualizar cuando cambien los programas sin tocar la aplicación.</p>
+            <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se descargan de Google Fonts, por lo que tu navegador se conecta a servidores de Google; ninguno de los dos recibe tus respuestas.</p>
+            <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. El botón «Apoyar el proyecto» solo abre ${DONATE_URL ? donatePlatform() : "la plataforma de pago (Ko-fi o PayPal)"} en una pestaña nueva: no le enviamos tus respuestas ni tu resultado. Si decides aportar, esa plataforma trata tus datos de pago según su propia política de privacidad. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
+            <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
+            ${OWNER.name ? `<p><b>Titular</b>: ${esc(OWNER.name)}${OWNER.email ? ` · contacto: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>` : ""}.</p>` : ""}
           </section>
         </div>
       </div>
@@ -1565,7 +1584,7 @@ function bindGlobal() {
       const v = g.dataset.go;
       if (CURRENT === "quiz" && S) save();
       if (v === "home") { fillSetup(); go("home"); }
-      else if (v === "method") { renderMethod(); go("method"); }
+      else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && $(`#${g.dataset.anchor}`); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
       else if (v === "explorer") { renderExplorer(); go("explorer"); }
       return;
     }
