@@ -1,6 +1,6 @@
 # Plan automático de Test 29N hasta el 29N
 
-Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
+Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las tandas se reparten a lo largo de 3 semanas, con 3 o 4 por semana, para dejar margen del límite semanal al titular. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
 
 ## Reglas para cada tanda (además de las de PROMPT-ORIGINAL.md, que se aplican siempre)
 
@@ -46,10 +46,10 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Cada
 | T5 | lun 2 nov | Fase 2: fuentes de PSOE y PP |
 | T6 | mar 3 nov | Fase 2: fuentes de Vox y Frente Amplio |
 | T7 | mié 4 nov | Fase 2: fuentes de Podemos y ERC |
-| T8 | jue 5 nov | Fase 2: justificaciones visibles y confianza |
-| T9 | sáb 7 nov | Fase 4: buscadores y datos abiertos |
-| T10 | lun 9 nov | Fase 5: difusión y tests por tema |
-| T11 | mié 11 nov | Fase 6 y repaso final antes de la campaña |
+| T8 | sáb 7 nov | Fase 2: justificaciones visibles y confianza |
+| T9 | lun 9 nov | Fase 4: buscadores y datos abiertos |
+| T10 | mar 10 nov | Fase 5: difusión y tests por tema |
+| T11 | jue 12 nov | Fase 6 y repaso final antes de la campaña |
 | S1 | lun 16 nov | Seguimiento de campaña |
 | S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
 | P1 | lun 30 nov | Después de las elecciones |
