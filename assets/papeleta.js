@@ -8,8 +8,13 @@
 const ARTIFACT_URL = "https://claude.ai/artifact/AwTtH6GM3GMWjFxDVVb6yV";
 // Dirección pública que se comparte cuando la web no se está usando desde ella misma
 const PUBLIC_URL = "https://menendezpeoe-maker.github.io/";
-// Aportaciones voluntarias: enlace público de Ko-fi o PayPal del titular. Vacío = botón desactivado.
-const DONATE_URL = "";
+// Aportaciones voluntarias: solo enlaces públicos de pago. Una opción vacía no se muestra.
+// Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
+const DONATE = {
+  paypal: "https://www.paypal.me/DavidReyMenendez",
+  applePay: "",   // enlace de pago de Stripe (https://buy.stripe.com/…) con Apple Pay activado
+  bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
+};
 // Titular de la web para el aviso legal. Vacío = no se muestra.
 const OWNER = { name: "", email: "" };
 const KEY = "papeleta29n.v2";
@@ -1045,20 +1050,27 @@ function renderPoliticians() {
 }
 
 // ───────────────────────────── APOYO
-// Solo un enlace externo: no se carga ningún script de la plataforma ni se le envía nada del test.
-const donatePlatform = () => /ko-fi\.com$/.test(new URL(DONATE_URL).hostname) ? "Ko-fi" : "PayPal";
+// Solo enlaces externos: no se carga ningún script de pago ni se envía nada del test. La web nunca da
+// un pago por hecho: lo confirma la propia plataforma en su página y por correo.
+function applePayReady() {
+  try { return !!window.ApplePaySession && window.ApplePaySession.canMakePayments(); } catch { return false; }
+}
+function donateOptions() {
+  return [
+    DONATE.paypal && { href: DONATE.paypal, label: "Donar con PayPal", note: "En la web de PayPal, donde eliges la cantidad." },
+    DONATE.applePay && applePayReady() && { href: DONATE.applePay, label: "Donar con Apple Pay", note: "En la página de pago segura de Stripe." },
+    DONATE.bank && { href: DONATE.bank, label: "Donar mediante tu banco", note: "Con Bizum: lo confirmas en la app de tu banco, en la página segura de Stripe." }
+  ].filter(Boolean);
+}
 function renderSupport() {
-  const act = DONATE_URL
-    ? `<a class="btn btn-primary" href="${esc(DONATE_URL)}" target="_blank" rel="noopener noreferrer">Apoyar el proyecto<span class="sr"> (se abre ${donatePlatform()} en una pestaña nueva)</span></a>
-       <p class="small muted">Se abre ${donatePlatform()}, donde eliges si quieres aportar y cuánto. Tus respuestas no se envían.</p>`
-    : `<button type="button" class="btn btn-primary" disabled aria-describedby="support-off">Apoyar el proyecto</button>
-       <p id="support-off" class="small muted">Las aportaciones todavía no están activadas.</p>`;
-  $("#r-support").innerHTML = `
+  const opts = donateOptions(), sec = $("#r-support");
+  sec.hidden = !opts.length;
+  sec.innerHTML = !opts.length ? "" : `
     <div class="support">
       <div class="sec-head"><h2 id="support-h" class="h2">¿Te ha resultado útil el test?</h2>
-        <p class="sub">Este proyecto busca ayudarte a comprender mejor las distintas posiciones políticas de una forma clara, independiente y accesible. Si te ha resultado útil y quieres contribuir a que siga mejorando, puedes apoyarlo con una pequeña aportación voluntaria.</p>
-        <p class="small muted">El test es y seguirá siendo gratuito. Aportar es opcional y no cambia ningún resultado.</p></div>
-      <div class="support-act">${act}</div>
+        <p class="sub">Si este proyecto te ha ayudado a comprender mejor las distintas posiciones políticas y quieres contribuir a que siga mejorando, puedes apoyarlo con una aportación voluntaria.</p>
+        <p class="small muted">El test es y seguirá siendo gratuito. Aportar es opcional, no cambia ningún resultado y tus respuestas no se envían.</p></div>
+      <ul class="support-opts">${opts.map((o) => `<li><a class="btn btn-primary" href="${esc(o.href)}" target="_blank" rel="noopener noreferrer">${esc(o.label)}<span class="sr"> (se abre en una pestaña nueva)</span></a><span class="small muted">${esc(o.note)}</span></li>`).join("")}</ul>
     </div>`;
 }
 
@@ -1506,7 +1518,7 @@ function renderMethod() {
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas empezando un test nuevo. Sexo y edad solo se muestran en tu resultado. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
             <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se descargan de Google Fonts, por lo que tu navegador se conecta a servidores de Google; ninguno de los dos recibe tus respuestas.</p>
-            <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. El botón «Apoyar el proyecto» solo abre ${DONATE_URL ? donatePlatform() : "la plataforma de pago (Ko-fi o PayPal)"} en una pestaña nueva: no le enviamos tus respuestas ni tu resultado. Si decides aportar, esa plataforma trata tus datos de pago según su propia política de privacidad. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
+            <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && "Stripe (Apple Pay y Bizum)"].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
             ${OWNER.name ? `<p><b>Titular</b>: ${esc(OWNER.name)}${OWNER.email ? ` · contacto: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>` : ""}.</p>` : ""}
           </section>
