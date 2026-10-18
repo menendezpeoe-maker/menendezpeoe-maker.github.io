@@ -86,7 +86,7 @@
      "q": "F05"
     },
     {
-     "t": "Cierre escalonado de las centrales nucleares entre 2027 y 2035.",
+     "t": "Cierre escalonado de las centrales nucleares hasta 2035, aunque en 2026 prorrogó Almaraz hasta 2030.",
      "q": "G01"
     },
     {
@@ -187,7 +187,7 @@
      "q": "F03"
     },
     {
-     "t": "Deportar a los inmigrantes ilegales y a los extranjeros que delincan («remigración»).",
+     "t": "Deportar a los inmigrantes en situación irregular y a los extranjeros que delincan («remigración»).",
      "q": "F02"
     },
     {
@@ -243,7 +243,7 @@
    "local": {
     "and": "Frente Amplio por Andalucía"
    },
-   "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, que sucede al espacio de Sumar sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
+   "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, heredera del espacio de Sumar, esta vez sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
    "props": [
     {
      "t": "Jornada de 37,5 horas y avanzar hacia la de 32.",
@@ -298,7 +298,7 @@
      "can"
     ]
    },
-   "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC, y en la Comunitat Valenciana y Canarias va dentro de coaliciones.",
+   "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC y en la Comunitat Valenciana y Canarias se integra en las coaliciones Compromís – Front Valencià y Unidad del Pueblo Canario.",
    "props": [
     {
      "t": "Bajar por ley los alquileres e impedir la compra de vivienda por fondos.",
@@ -339,7 +339,7 @@
    "name": "Se Acabó La Fiesta",
    "ab": "SALF",
    "color": "#475263",
-   "tag": "Derecha populista · antisistema",
+   "tag": "Derecha · contra la clase política",
    "lead": "Alvise Pérez",
    "scope": {
     "all": true
@@ -355,7 +355,7 @@
      "q": "A02"
     },
     {
-     "t": "Expulsión de inmigrantes ilegales y delincuentes extranjeros.",
+     "t": "Expulsión de los inmigrantes en situación irregular y de los extranjeros que delincan.",
      "q": "F02"
     },
     {
@@ -402,7 +402,7 @@
   },
   {
    "id": "d21",
-   "name": "Democracia para el Siglo 21",
+   "name": "Democracia 21",
    "ab": "D21",
    "color": "#EE7B1E",
    "tag": "Liberal · centro",
@@ -413,7 +413,7 @@
      "barcelona"
     ]
    },
-   "desc": "Coalición registrada por Democracia21, Ciudadanos y UCIN, con listas previstas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
+   "desc": "Candidatura de Democracia 21, el partido de Miriam González, con Ciudadanos y UCIN, y listas previstas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
    "props": [
     {
      "t": "Igualdad territorial: no a la amnistía ni a la financiación singular.",
@@ -484,7 +484,7 @@
      "q": "E03"
     },
     {
-     "t": "Prioridad a Rodalies y al tren de cercanías.",
+     "t": "Prioridad a la inversión en Rodalies, la red de cercanías de Cataluña.",
      "q": "G06"
     }
    ]
@@ -501,7 +501,7 @@
      "cat"
     ]
    },
-   "desc": "Independentismo catalán de centroderecha, presidido por Carles Puigdemont. Su voto contribuyó a tumbar los decretos de vivienda que precedieron a estas elecciones. Prioriza la soberanía fiscal, el catalán y menos impuestos a las empresas.",
+   "desc": "Independentismo catalán de centroderecha, presidido por Carles Puigdemont. Rompió con el PSOE en 2025 y votó, como PP y Vox, contra los decretos de vivienda que el Congreso rechazó antes de la convocatoria. Prioriza la soberanía fiscal, el catalán y menos impuestos a las empresas.",
    "props": [
     {
      "t": "Concierto económico: que Cataluña recaude todos sus impuestos.",
@@ -537,14 +537,14 @@
    "id": "pnv",
    "name": "EAJ-PNV",
    "ab": "PNV",
-   "color": "#2B8A3E",
+   "color": "#28833A",
    "tag": "Nacionalismo vasco de centro",
    "scope": {
     "regions": [
      "pv"
     ]
    },
-   "desc": "Nacionalismo vasco de centro y democristiano, de perfil pragmático y proempresa. Defiende el Concierto Económico, completar las transferencias del Estatuto y un nuevo estatus para Euskadi.",
+   "desc": "Nacionalismo vasco de centro, de tradición democristiana y cercano al mundo empresarial. Defiende el Concierto Económico, completar las transferencias del Estatuto y un nuevo estatus para Euskadi.",
    "props": [
     {
      "t": "Completar las transferencias del Estatuto de Gernika, sin recentralizar competencias.",
@@ -562,7 +562,7 @@
      "q": "A06"
     },
     {
-     "t": "El euskera como requisito en la administración vasca y oficial en la UE.",
+     "t": "El euskera como requisito en la administración vasca y como lengua oficial en la UE.",
      "q": "I09"
     },
     {
@@ -624,7 +624,7 @@
    "desc": "Coalición de Unión del Pueblo Navarro y el PP, que en Navarra sustituye a la lista del PP. Defiende el régimen foral propio frente a una integración en Euskadi, bajadas de impuestos y la unidad de España.",
    "props": [
     {
-     "t": "Defender el régimen foral y derogar la vía de integración de Navarra en Euskadi."
+     "t": "Defender el régimen foral y suprimir la disposición transitoria cuarta de la Constitución, que permite la integración de Navarra en Euskadi."
     },
     {
      "t": "Mantener el Convenio Económico navarro.",
@@ -659,7 +659,7 @@
      "nav"
     ]
    },
-   "desc": "Coalición navarra progresista y vasquista, con el PNV entre sus socios. Defiende el autogobierno foral, el euskera y políticas sociales.",
+   "desc": "Coalición navarra de centroizquierda y vasquista, con el PNV entre sus socios. Defiende el autogobierno foral, el euskera y políticas sociales.",
    "props": [
     {
      "t": "Desarrollar el autogobierno navarro, sin recentralizar competencias.",
@@ -833,7 +833,7 @@
    "desc": "Coalición de Compromís, Podemos, EUPV y Esquerra Republicana del País Valencià; Podemos encabeza la lista de Alicante. En la Comunitat Valenciana sustituye a Podemos y al Frente Amplio.",
    "props": [
     {
-     "t": "Más financiación para la Comunitat Valenciana, hoy de las peor financiadas.",
+     "t": "Más financiación para la Comunitat Valenciana, hoy una de las peor financiadas.",
      "q": "C02"
     },
     {
@@ -853,7 +853,7 @@
      "q": "I09"
     },
     {
-     "t": "No construir en zonas inundables tras la dana.",
+     "t": "No construir en zonas inundables tras la dana de 2024.",
      "q": "G07"
     }
    ]
@@ -876,7 +876,7 @@
      "q": "G04"
     },
     {
-     "t": "Más tren en Aragón y reapertura del Canfranc.",
+     "t": "Más tren en Aragón y reapertura de la línea internacional del Canfranc.",
      "q": "G06"
     },
     {
@@ -896,7 +896,7 @@
    "id": "existe",
    "name": "Coalición Existe",
    "ab": "EXISTE",
-   "color": "#3D8B37",
+   "color": "#3A8434",
    "tag": "España Vaciada · transversal",
    "scope": {
     "regions": [
@@ -937,7 +937,7 @@
      "bal"
     ]
    },
-   "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En Baleares sustituye a la lista del Frente Amplio; Podemos va por separado.",
+   "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En las Illes Balears sustituye a la lista del Frente Amplio; Podemos va por separado.",
    "props": [
     {
      "t": "Limitar las plazas turísticas y el alquiler turístico.",
@@ -964,7 +964,7 @@
    "id": "adel",
    "name": "Adelante Andalucía",
    "ab": "ADEL",
-   "color": "#0A8F3C",
+   "color": "#098737",
    "tag": "Izquierda andalucista",
    "scope": {
     "regions": [
@@ -1033,6 +1033,7 @@
    "color": "#8B1C2C",
    "tag": "Regionalismo leonés",
    "tbd": true,
+   "out": "Anunció el 13 de octubre de 2026 que no se presenta al 29N.",
    "scope": {
     "provinces": [
      "leon",
@@ -1093,6 +1094,7 @@
    "color": "#7F8C3A",
    "tag": "Localista · centroderecha",
    "tbd": true,
+   "out": "Anunció el 10 de octubre de 2026 que no se presenta al 29N.",
    "scope": {
     "provinces": [
      "avila"

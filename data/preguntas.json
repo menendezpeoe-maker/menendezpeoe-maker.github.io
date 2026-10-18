@@ -126,6 +126,28 @@
    "intro": "Aborto, eutanasia, igualdad, laicidad y derechos digitales."
   }
  ],
+ "families": [
+  [
+   "B01",
+   "B02"
+  ],
+  [
+   "F01",
+   "F02"
+  ],
+  [
+   "G01",
+   "G09"
+  ],
+  [
+   "H02",
+   "H03"
+  ],
+  [
+   "J01",
+   "J02"
+  ]
+ ],
  "questions": [
   {
    "id": "A01",
@@ -180,7 +202,7 @@
    "type": "dilema",
    "text": "Si hubiera que elegir, ¿qué debería priorizar el Estado?",
    "A": "Bajar impuestos, aunque haya que reducir gasto público",
-   "B": "Mantener o ampliar los servicios públicos, aunque no bajen los impuestos",
+   "B": "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
    "short": "Bajar impuestos o mantener servicios",
    "ctx": "España recauda en impuestos y cotizaciones en torno al 37 % del PIB, algo menos que la media de la zona euro, y mantiene déficit público desde hace años. Bajar impuestos deja más renta a familias y empresas y puede estimular la actividad, pero exige recortar gasto o endeudarse. Mantener la recaudación sostiene sanidad, educación o pensiones con una presión fiscal mayor.",
    "dim": "eco",
@@ -231,7 +253,7 @@
    "type": "likert",
    "text": "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
    "short": "Impuesto estatal a las grandes fortunas",
-   "ctx": "El impuesto de patrimonio está cedido a las comunidades, y algunas, como Madrid, lo bonifican casi por completo. En 2022 el Estado creó un impuesto de solidaridad para patrimonios de más de 3 millones de euros, de modo que se pague en todo el territorio. Sus defensores invocan la equidad y frenar la competencia fiscal entre comunidades; sus críticos, la deslocalización de patrimonios y la invasión de competencias autonómicas.",
+   "ctx": "El impuesto de patrimonio está cedido a las comunidades, y algunas, como Madrid, lo bonifican al 100 %. En 2022 el Estado creó un impuesto de solidaridad para patrimonios de más de 3 millones de euros, de modo que se pague en todo el territorio. Sus defensores invocan la equidad y frenar la competencia fiscal entre comunidades; sus críticos, la deslocalización de patrimonios y la invasión de competencias autonómicas.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -481,13 +503,13 @@
    "type": "likert",
    "text": "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
    "short": "Frenar las subidas del salario mínimo",
-   "ctx": "El salario mínimo ha subido más de un 60 % desde 2018, hasta 1.184 euros en 14 pagas en 2025, y el Gobierno lo vincula al 60 % del salario medio que recomienda la Carta Social Europea. Sus defensores destacan la reducción de la pobreza entre quienes trabajan; sus críticos, el efecto sobre el empleo en el campo, el pequeño comercio o las regiones con salarios más bajos.",
+   "ctx": "El salario mínimo ha subido más de un 65 % desde 2018, hasta 1.221 euros en 14 pagas en 2026, y el Gobierno lo vincula al 60 % del salario medio que recomienda la Carta Social Europea. Sus defensores destacan la reducción de la pobreza entre quienes trabajan; sus críticos, el efecto sobre el empleo en el campo, el pequeño comercio o las regiones con salarios más bajos.",
    "dim": "eco",
    "dir": 1,
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 4,
+    "pp": 3,
     "vox": 4,
     "fa": 1,
     "pod": 1,
@@ -592,7 +614,7 @@
    "prio": 3,
    "type": "likert",
    "text": "El impuesto de sucesiones debería eliminarse en las herencias entre padres e hijos.",
-   "short": "Eliminar sucesiones entre padres e hijos",
+   "short": "Sin impuesto de sucesiones entre padres e hijos",
    "ctx": "El impuesto de sucesiones es estatal, pero lo gestionan las comunidades, que fijan bonificaciones: en Madrid, Andalucía o Canarias las herencias entre padres e hijos apenas tributan, y en otras sí a partir de ciertos importes. Quienes piden eliminarlo alegan que ese patrimonio ya pagó impuestos al generarse; quienes lo defienden lo ven como una herramienta para reducir la desigualdad entre quienes heredan y quienes no.",
    "dim": "eco",
    "dir": 1,
@@ -673,6 +695,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "d21",
     "gbai",
     "ccpc",
@@ -720,6 +743,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "d21",
     "erc",
     "junts",
@@ -744,7 +768,7 @@
    "type": "likert",
    "text": "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
    "short": "Desalojo en 48 horas de viviendas ocupadas",
-   "ctx": "Entrar en una vivienda habitada es allanamiento de morada y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías o segundas residencias, que se resuelve por vía judicial; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
+   "ctx": "Entrar en una vivienda que es morada de alguien, incluidas, según la Fiscalía, las segundas residencias, es allanamiento, y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías, que se resuelve por vía judicial como usurpación; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
    "dim": "lib",
    "dir": 1,
    "lr": 1,
@@ -790,16 +814,16 @@
    "prio": 3,
    "type": "likert",
    "text": "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
-   "short": "Fin de la suspensión de desahucios",
-   "ctx": "Desde 2020, un «escudo social» prorrogado varias veces permite suspender el desahucio de familias vulnerables sin alternativa de vivienda, con compensaciones al propietario. Sus defensores lo consideran una protección básica mientras falte vivienda social; sus críticos, que traslada a propietarios particulares una obligación que corresponde a la Administración y que facilita impagos prolongados.",
+   "short": "Fin de la suspensión de desahucios si el dueño es particular",
+   "ctx": "Desde 2020, un «escudo social» prorrogado varias veces permite suspender el desahucio de familias vulnerables sin alternativa de vivienda, con compensaciones al propietario. En 2026 el Congreso rechazó tres decretos que lo prorrogaban, y en octubre el Gobierno lo volvió a aprobar, pendiente de convalidación. Sus defensores lo consideran una protección básica mientras falte vivienda social; sus críticos, que traslada a propietarios particulares una obligación que corresponde a la Administración y que facilita impagos prolongados.",
    "dim": "eco",
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 1,
+    "psoe": 4,
     "pp": 5,
     "vox": 5,
-    "fa": 1,
+    "fa": 2,
     "pod": 1,
     "salf": 5,
     "d21": 5,
@@ -819,6 +843,8 @@
     "adel": 1
    },
    "est": [
+    "fa",
+    "salf",
     "d21",
     "erc",
     "pnv",
@@ -832,7 +858,11 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
+    "fa": "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general."
+   }
   },
   {
    "id": "B05",
@@ -841,7 +871,7 @@
    "type": "likert",
    "text": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
    "short": "Prohibir nuevos pisos turísticos",
-   "ctx": "España tiene más de 350.000 viviendas de uso turístico. Desde 2025 abrir uno en un edificio exige el permiso de la comunidad de vecinos, y Barcelona ha anunciado que eliminará todas sus licencias en 2028. Los defensores de prohibirlos buscan devolver viviendas al alquiler residencial; sus críticos alertan de la pérdida de ingresos de pequeños propietarios y de un efecto limitado sobre los precios.",
+   "ctx": "España tiene más de 350.000 viviendas de uso turístico. Desde 2025 abrir un piso turístico en un edificio exige el permiso de la comunidad de propietarios, y Barcelona ha anunciado que eliminará todas sus licencias en 2028. Los defensores de prohibirlos buscan devolver viviendas al alquiler residencial; sus críticos alertan de la pérdida de ingresos de pequeños propietarios y de un efecto limitado sobre los precios.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -889,7 +919,7 @@
    "type": "likert",
    "text": "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
    "short": "Recargo fiscal a las viviendas vacías",
-   "ctx": "El censo de 2021 contó unos 3,8 millones de viviendas vacías, aunque muchas están en zonas rurales o necesitan reformas. La Ley de Vivienda permite a los ayuntamientos subir hasta un 150 % el IBI de los pisos vacíos más de dos años. Los defensores buscan que salgan al mercado; sus críticos recuerdan que muchas no son habitables ni están donde hay demanda, y que penaliza a pequeños propietarios.",
+   "ctx": "El censo de 2021 contó unos 3,8 millones de viviendas vacías, aunque muchas están en zonas rurales o necesitan reformas. La Ley de Vivienda permite a los ayuntamientos subir hasta un 150 % el IBI de los pisos vacíos más de dos años. Los defensores buscan que salgan al mercado; sus críticos recuerdan que muchas no son habitables ni están donde hay demanda, y que el recargo penaliza a pequeños propietarios.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -1109,7 +1139,7 @@
    "dir": -1,
    "lr": -1,
    "pos": {
-    "psoe": 3,
+    "psoe": 2,
     "pp": 1,
     "vox": 1,
     "fa": 3,
@@ -1137,6 +1167,8 @@
     "pav": 1
    },
    "est": [
+    "pod",
+    "salf",
     "upn",
     "gbai",
     "ccpc",
@@ -1150,7 +1182,10 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "notes": {
+    "psoe": "El acuerdo PSC-ERC de 2024 prevé que la Agencia Tributaria de Cataluña recaude todos los impuestos, pero la dirección federal del PSOE niega que sea un concierto y Hacienda solo ha concretado la cesión del IRPF."
+   }
   },
   {
    "id": "C02",
@@ -1159,7 +1194,7 @@
    "type": "likert",
    "text": "La reforma de la financiación autonómica debería dar más recursos a las comunidades que hoy reciben menos por habitante.",
    "short": "Más fondos a las comunidades peor financiadas",
-   "ctx": "El sistema actual se aprobó en 2009 y debía revisarse en 2014. Entre las comunidades de régimen común, la financiación por habitante ajustado varía en torno a un 30 %: Cantabria o La Rioja reciben más, y la Comunitat Valenciana, Murcia o Andalucía, menos. Igualarla exige más dinero del Estado o quitar a otras, y cada comunidad defiende criterios (población, envejecimiento, dispersión) que la favorecen.",
+   "ctx": "El sistema actual se aprobó en 2009 y debía revisarse en 2014; en enero de 2026 el Gobierno propuso un nuevo modelo con unos 21.000 millones más. Entre las comunidades de régimen común, la financiación por habitante ajustado varía en torno a un 30 %: Cantabria o La Rioja reciben más, y la Comunitat Valenciana, Murcia o Andalucía, menos. Igualarla exige más dinero del Estado o quitar a otras, y cada comunidad defiende criterios (población, envejecimiento, dispersión) que la favorecen.",
    "dim": null,
    "dir": 0,
    "lr": 0,
@@ -1259,7 +1294,7 @@
    "type": "likert",
    "text": "España debería reformar la Constitución para convertirse en un Estado federal.",
    "short": "Estado federal",
-   "ctx": "La Constitución creó un Estado autonómico con amplias competencias para las comunidades, pero sin una cámara que represente de verdad a los territorios ni mecanismos estables de cooperación. Un modelo federal fijaría en la Constitución el reparto de competencias y daría voz a las comunidades en las decisiones del Estado. Sus críticos temen que abra la puerta a más diferencias entre territorios; algunos nacionalistas lo consideran insuficiente.",
+   "ctx": "La Constitución creó un Estado autonómico con amplias competencias para las comunidades, pero sin una cámara que represente realmente a los territorios ni mecanismos estables de cooperación. Un modelo federal fijaría en la Constitución el reparto de competencias y daría voz a las comunidades en las decisiones del Estado. Sus críticos temen que abra la puerta a más diferencias entre territorios; algunos nacionalistas lo consideran insuficiente.",
    "ley": "Constitución, título VIII",
    "dim": "ter",
    "dir": -1,
@@ -1320,7 +1355,7 @@
     "psoe": 1,
     "pp": 1,
     "vox": 1,
-    "fa": 4,
+    "fa": 3,
     "pod": 5,
     "salf": 1,
     "d21": 1,
@@ -1345,6 +1380,8 @@
     "pav": 1
    },
    "est": [
+    "fa",
+    "salf",
     "gbai",
     "ccpc",
     "upc",
@@ -1686,7 +1723,7 @@
    "type": "likert",
    "text": "Los propios jueces deberían elegir a la mayoría de los miembros del Consejo General del Poder Judicial.",
    "short": "Que los jueces elijan el CGPJ",
-   "ctx": "El CGPJ nombra a los altos cargos judiciales. Desde 1985 sus vocales los eligen el Congreso y el Senado por mayoría de tres quintos, y su bloqueo entre 2018 y 2024 se cerró con la mediación de la Comisión Europea. Las instituciones europeas recomiendan que al menos la mitad los elijan los jueces. Los partidarios del sistema actual sostienen que aporta legitimidad democrática y evita el corporativismo judicial.",
+   "ctx": "El CGPJ nombra a los altos cargos judiciales. Desde 1985 sus vocales los eligen el Congreso y el Senado por mayoría de tres quintos, y su bloqueo entre 2018 y 2024 se cerró con la mediación de la Comisión Europea. Las instituciones europeas recomiendan que al menos la mitad de los vocales sean elegidos por los propios jueces. Los partidarios del sistema actual sostienen que aporta legitimidad democrática y evita el corporativismo judicial.",
    "ley": "Constitución, art. 122.3",
    "dim": null,
    "dir": 0,
@@ -1810,6 +1847,7 @@
     "pp",
     "vox",
     "fa",
+    "salf",
     "pacma",
     "d21",
     "erc",
@@ -1885,7 +1923,7 @@
    "type": "likert",
    "text": "España debería celebrar un referéndum para elegir entre monarquía y república.",
    "short": "Referéndum entre monarquía y república",
-   "ctx": "La Constitución de 1978 establece la monarquía parlamentaria: el Rey es jefe del Estado, con funciones sobre todo simbólicas y de arbitraje. Cambiar la forma de Estado exige una reforma agravada, con disolución de las Cortes y referéndum. Los partidarios de votarlo sostienen que la monarquía no se sometió a votación por separado; los contrarios, que la Constitución ya se aprobó en referéndum y aporta estabilidad.",
+   "ctx": "La Constitución de 1978 establece la monarquía parlamentaria: el Rey es jefe del Estado, con funciones sobre todo simbólicas y de arbitraje. Cambiar la forma de Estado exige una reforma agravada, con disolución de las Cortes y referéndum. Los partidarios de votarlo sostienen que la monarquía no se sometió a votación por separado; los contrarios, que la Constitución ya se aprobó en referéndum y que la monarquía aporta estabilidad.",
    "ley": "Constitución, art. 1.3 y 168",
    "dim": "soc",
    "dir": -1,
@@ -1894,7 +1932,7 @@
     "psoe": 2,
     "pp": 1,
     "vox": 1,
-    "fa": 5,
+    "fa": 4,
     "pod": 5,
     "salf": 2,
     "d21": 1,
@@ -1914,6 +1952,7 @@
     "adel": 5
    },
    "est": [
+    "fa",
     "salf",
     "gbai",
     "ccpc",
@@ -1928,7 +1967,7 @@
    "area": "ins",
    "prio": 3,
    "type": "likert",
-   "text": "El Gobierno debería tener más limitado el uso de decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
+   "text": "Debería limitarse más la capacidad del Gobierno de aprobar decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
    "short": "Limitar los decretos-ley",
    "ctx": "El decreto-ley permite al Gobierno aprobar normas con rango de ley en casos de «extraordinaria y urgente necesidad», y el Congreso solo puede convalidarlas o derogarlas en 30 días. Todos los gobiernos recientes lo han usado a menudo; en octubre de 2026, la derrota de dos decretos de vivienda precipitó estas elecciones. Limitarlo refuerza el control parlamentario; usarlo permite actuar rápido con parlamentos fragmentados.",
    "ley": "Constitución, art. 86",
@@ -1975,7 +2014,7 @@
    "area": "ins",
    "prio": 3,
    "type": "likert",
-   "text": "Debería gobernar el partido más votado cuando ningún otro reúna una mayoría alternativa clara.",
+   "text": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
    "short": "Que gobierne la lista más votada",
    "ctx": "En España el presidente necesita la confianza del Congreso: mayoría absoluta en una primera votación o simple en la segunda, y puede gobernar quien sume más apoyos aunque no haya ganado las elecciones. Que gobierne la lista más votada favorecería la estabilidad y la claridad para el votante; sus críticos sostienen que contradice el sistema parlamentario, en el que gobierna quien reúne una mayoría.",
    "ley": "Constitución, art. 99",
@@ -2031,7 +2070,7 @@
    "type": "likert",
    "text": "Las penas para los delincuentes multirreincidentes deberían endurecerse.",
    "short": "Penas más duras a multirreincidentes",
-   "ctx": "Muchos hurtos leves se castigan con multas, lo que permite a algunas personas acumular decenas de detenciones sin entrar en prisión, una queja frecuente de comercios y vecinos de grandes ciudades. Junts impulsó en el Congreso una reforma para agravar las penas a quien acumula varios hurtos. Sus defensores buscan disuadir; sus críticos señalan que el problema es la lentitud de los juicios y que más cárcel no reduce por sí sola la reincidencia.",
+   "ctx": "Los hurtos leves se castigaban con multas, lo que permitía a algunas personas acumular decenas de detenciones sin entrar en prisión, una queja frecuente de comercios y vecinos de grandes ciudades. En 2026 las Cortes aprobaron, a propuesta de Junts, una reforma que castiga con prisión a quien acumula varios hurtos. Los partidarios de penas más duras buscan disuadir; sus críticos señalan que el problema es la lentitud de los juicios y que más cárcel no reduce por sí sola la reincidencia.",
    "dim": "lib",
    "dir": 1,
    "lr": 1,
@@ -2039,7 +2078,7 @@
     "psoe": 4,
     "pp": 5,
     "vox": 5,
-    "fa": 2,
+    "fa": 1,
     "pod": 1,
     "salf": 5,
     "d21": 5,
@@ -2059,8 +2098,6 @@
     "adel": 1
    },
    "est": [
-    "psoe",
-    "fa",
     "d21",
     "erc",
     "pnv",
@@ -2113,6 +2150,7 @@
    },
    "est": [
     "psoe",
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -2232,7 +2270,7 @@
    "type": "likert",
    "text": "El uso policial del reconocimiento facial en espacios públicos debería prohibirse.",
    "short": "Prohibir el reconocimiento facial policial",
-   "ctx": "El Reglamento europeo de Inteligencia Artificial prohíbe con carácter general la identificación biométrica en tiempo real en espacios públicos, con excepciones bajo autorización judicial, como buscar a víctimas de secuestro o prevenir un atentado. Sus partidarios lo ven como una herramienta eficaz contra el crimen; sus críticos alertan del riesgo de vigilancia masiva, de errores de identificación y de la pérdida de privacidad.",
+   "ctx": "El Reglamento europeo de Inteligencia Artificial prohíbe con carácter general la identificación biométrica en tiempo real en espacios públicos, con excepciones sujetas a autorización previa, como buscar a víctimas de secuestro o prevenir un atentado. Sus partidarios lo ven como una herramienta eficaz contra el crimen; sus críticos alertan del riesgo de vigilancia masiva, de errores de identificación y de la pérdida de privacidad.",
    "ley": "Reglamento (UE) 2024/1689 de Inteligencia Artificial, art. 5",
    "dim": "lib",
    "dir": -1,
@@ -2293,7 +2331,7 @@
    "dir": -1,
    "lr": -1,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 1,
     "vox": 1,
     "fa": 5,
@@ -2316,7 +2354,6 @@
     "adel": 5
    },
    "est": [
-    "psoe",
     "salf",
     "d21",
     "pnv",
@@ -2335,7 +2372,7 @@
    "area": "jus",
    "prio": 3,
    "type": "likert",
-   "text": "La acusación popular, que permite a partidos y asociaciones impulsar causas penales, debería limitarse.",
+   "text": "La acusación popular, que permite a quien no es víctima ejercer la acusación en un proceso penal, debería limitarse.",
    "short": "Limitar la acusación popular",
    "ctx": "La Constitución permite ejercer la acusación popular en un proceso penal sin ser víctima. La usan asociaciones, sindicatos y partidos, y ha impulsado causas contra políticos y familiares de distinto signo. En 2025 el PSOE propuso restringirla para evitar su uso partidista; sus críticos sostienen que debilitaría el control ciudadano de la corrupción y del poder, sobre todo cuando la Fiscalía no actúa.",
    "ley": "Constitución, art. 125",
@@ -2368,6 +2405,7 @@
    "est": [
     "fa",
     "pod",
+    "salf",
     "d21",
     "erc",
     "junts",
@@ -2390,7 +2428,7 @@
    "area": "jus",
    "prio": 2,
    "type": "likert",
-   "text": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que proteja por igual a todas las víctimas del hogar.",
+   "text": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
    "short": "Sustituir la Ley de Violencia de Género",
    "ctx": "La Ley Integral de 2004 trata la violencia de hombres contra sus parejas o exparejas mujeres como un fenómeno específico, con juzgados especializados, medidas de protección y penas agravadas; el Constitucional la avaló en 2008. Quienes proponen sustituirla sostienen que vulnera la igualdad ante la ley; quienes la defienden, que la violencia machista tiene causas propias y que la ley ha mejorado la protección de las víctimas.",
    "ley": "Ley Orgánica 1/2004, de violencia de género",
@@ -2422,6 +2460,7 @@
     "adel": 1
    },
    "est": [
+    "salf",
     "pacma",
     "d21",
     "upn",
@@ -2486,7 +2525,7 @@
    "type": "likert",
    "text": "España debería regularizar a los inmigrantes en situación irregular que ya viven y trabajan aquí.",
    "short": "Regularización de inmigrantes",
-   "ctx": "Se estima que en España viven entre 400.000 y 500.000 personas sin permiso de residencia, muchas trabajando en la economía sumergida. En 2024 el Congreso admitió a trámite una iniciativa popular para una regularización extraordinaria, respaldada por más de 600.000 firmas. Sus defensores destacan la integración, los derechos y las cotizaciones; sus críticos temen un «efecto llamada» y prefieren vías individuales como el arraigo.",
+   "ctx": "Funcas estimaba en unas 840.000 las personas sin permiso de residencia a comienzos de 2025, muchas trabajando en la economía sumergida. En abril de 2026 el Gobierno aprobó por real decreto una regularización extraordinaria, que recogía una iniciativa popular respaldada por más de 600.000 firmas y recibió más de 1,1 millones de solicitudes. Sus defensores destacan la integración, los derechos y las cotizaciones; sus críticos temen un «efecto llamada» y prefieren vías individuales como el arraigo.",
    "dim": "inm",
    "dir": -1,
    "lr": -1,
@@ -2580,7 +2619,7 @@
    "type": "likert",
    "text": "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
    "short": "«Prioridad nacional» en ayudas",
-   "ctx": "Los extranjeros con residencia legal acceden hoy a las prestaciones en las mismas condiciones que los españoles, aunque muchas ayudas exigen años de empadronamiento. Vox propone la «prioridad nacional», y varios gobiernos autonómicos han endurecido los requisitos de residencia previa. Sus críticos sostienen que discrimina por nacionalidad, choca con la Constitución y el derecho europeo y afecta a personas que trabajan y cotizan aquí.",
+   "ctx": "Los extranjeros con residencia legal acceden hoy a las prestaciones en las mismas condiciones que los españoles, aunque muchas ayudas exigen años de empadronamiento. Vox propone la «prioridad nacional», y varios gobiernos autonómicos han endurecido los requisitos de residencia previa. Sus defensores sostienen que los recursos son limitados y deben atender primero a los nacionales; sus críticos, que discrimina por nacionalidad, choca con la Constitución y el derecho europeo y afecta a personas que trabajan y cotizan aquí.",
    "dim": "inm",
    "dir": 1,
    "lr": 1,
@@ -2609,6 +2648,7 @@
     "adel": 1
    },
    "est": [
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -2619,14 +2659,17 @@
     "cha",
     "existe",
     "mes"
-   ]
+   ],
+   "notes": {
+    "pp": "En el Congreso votó contra la «prioridad nacional» que propone Vox, pero sus pactos de gobierno de 2026 con Vox en Extremadura y Aragón dan prioridad en vivienda y ayudas según los años de empadronamiento."
+   }
   },
   {
    "id": "F04",
    "area": "dem",
    "prio": 3,
    "type": "likert",
-   "text": "España debería facilitar la llegada legal de trabajadores extranjeros para cubrir los empleos que no se cubren.",
+   "text": "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
    "short": "Facilitar la inmigración laboral legal",
    "ctx": "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
    "dim": "inm",
@@ -2660,6 +2703,7 @@
     "soria": 4
    },
    "est": [
+    "salf",
     "d21",
     "erc",
     "junts",
@@ -2717,6 +2761,7 @@
     "adel": 4
    },
    "est": [
+    "salf",
     "d21",
     "erc",
     "pnv",
@@ -2738,7 +2783,7 @@
    "type": "likert",
    "text": "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
    "short": "Ayuda universal por hijo",
-   "ctx": "España tiene una de las natalidades más bajas del mundo, con unos 1,1 hijos por mujer. Hoy las ayudas por hijo dependen sobre todo de la renta, como el complemento de ayuda a la infancia, o de deducciones para madres trabajadoras. Una prestación universal, como las de Alemania o Francia, llegaría a todas las familias y sería más sencilla de gestionar; sus críticos alegan su alto coste y que beneficia también a quien no la necesita.",
+   "ctx": "España tiene una de las natalidades más bajas del mundo, con unos 1,1 hijos por mujer. Hoy las ayudas por hijo dependen sobre todo de la renta, como el complemento de ayuda a la infancia, o de deducciones para madres trabajadoras. Una prestación universal, como las de Alemania o Irlanda, llegaría a todas las familias y sería más sencilla de gestionar; sus críticos alegan su alto coste y que beneficia también a quien no la necesita.",
    "dim": "eco",
    "dir": -1,
    "lr": 0,
@@ -2788,7 +2833,7 @@
    "area": "dem",
    "prio": 2,
    "type": "likert",
-   "text": "Quienes viven y emprenden en zonas rurales despobladas deberían pagar menos impuestos que en las ciudades.",
+   "text": "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
    "short": "Menos impuestos en zonas despobladas",
    "ctx": "Más de la mitad de los municipios españoles pierde población, y provincias como Soria, Teruel o Cuenca tienen densidades muy bajas. Desde 2022 sus empresas tienen rebajas en las cotizaciones sociales, que la UE permite en zonas muy despobladas. Extender la fiscalidad diferenciada atraería población y empleo, según sus defensores; sus críticos dudan de su eficacia frente a la falta de servicios y advierten de agravios con otros territorios.",
    "dim": null,
@@ -2835,7 +2880,7 @@
    "type": "likert",
    "text": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
    "short": "Dependencia como servicio público universal",
-   "ctx": "Más de 250.000 personas con una ayuda de dependencia reconocida esperan a recibirla, y muchas fallecen antes. El sistema se financia entre el Estado y las comunidades y descansa en gran medida en cuidadoras familiares. Convertirlo en un servicio universal reduciría esperas y profesionalizaría los cuidados, con un fuerte aumento del gasto. La alternativa es combinar ayudas públicas con seguros y servicios privados.",
+   "ctx": "Más de 250.000 personas esperan la valoración de su dependencia o la ayuda que ya tienen reconocida, y muchas fallecen antes. El sistema se financia entre el Estado y las comunidades y descansa en gran medida en cuidadoras familiares. Convertirlo en un servicio universal reduciría esperas y profesionalizaría los cuidados, con un fuerte aumento del gasto. La alternativa es combinar ayudas públicas con seguros y servicios privados.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -2890,7 +2935,7 @@
    "type": "likert",
    "text": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
    "short": "Más condiciones al Ingreso Mínimo Vital",
-   "ctx": "El Ingreso Mínimo Vital, creado en 2020, garantiza unos ingresos mínimos a hogares en pobreza y llega a más de 700.000 hogares; se puede compatibilizar en parte con un salario. Exigir búsqueda activa de empleo busca evitar que desincentive trabajar; sus críticos recuerdan que buena parte de los beneficiarios son menores o personas que no pueden trabajar y que muchos hogares con derecho ni siquiera lo solicitan.",
+   "ctx": "El Ingreso Mínimo Vital, creado en 2020, garantiza unos ingresos mínimos a hogares en pobreza y llega a más de 700.000 hogares; se puede compatibilizar en parte con un salario. Exigir búsqueda activa de empleo pretende evitar que desincentive trabajar; sus críticos recuerdan que buena parte de los beneficiarios son menores o personas que no pueden trabajar y que muchos hogares con derecho ni siquiera lo solicitan.",
    "dim": "eco",
    "dir": 1,
    "lr": 1,
@@ -2942,9 +2987,9 @@
    "area": "ene",
    "prio": 1,
    "type": "likert",
-   "text": "España debería alargar la vida de sus centrales nucleares más allá del cierre previsto entre 2027 y 2035.",
+   "text": "España debería alargar la vida de sus centrales nucleares más allá del calendario de cierre previsto, que termina en 2035.",
    "short": "Alargar la vida de las nucleares",
-   "ctx": "Los siete reactores españoles producen alrededor del 20 % de la electricidad. El plan vigente, pactado con las eléctricas en 2019, prevé cerrarlos entre 2027, empezando por Almaraz, y 2035. El apagón de abril de 2025 reabrió el debate. Sus defensores destacan que es una fuente estable y sin emisiones de CO₂; sus detractores, los residuos, el coste de prolongarlas y que las renovables con almacenamiento pueden sustituirlas.",
+   "ctx": "Los siete reactores españoles producen alrededor del 20 % de la electricidad. El plan pactado con las eléctricas en 2019 prevé cerrarlos de forma escalonada hasta 2035, aunque en 2026 el Gobierno prorrogó Almaraz, el primero de la lista, hasta 2030. El apagón de abril de 2025 reabrió el debate. Sus defensores destacan que es una fuente estable y sin emisiones de CO₂; sus detractores, los residuos, el coste de prolongarlas y que las renovables con almacenamiento pueden sustituirlas.",
    "dim": "amb",
    "dir": 1,
    "lr": 1,
@@ -2976,6 +3021,7 @@
     "pav": 3
    },
    "est": [
+    "salf",
     "erc",
     "pnv",
     "upn",
@@ -2989,7 +3035,10 @@
     "adel",
     "upl",
     "pav"
-   ]
+   ],
+   "notes": {
+    "psoe": "El Gobierno prorrogó en 2026 la central de Almaraz hasta 2030, pero mantiene el cierre de todo el parque nuclear en 2035."
+   }
   },
   {
    "id": "G02",
@@ -2998,7 +3047,7 @@
    "type": "likert",
    "text": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
    "short": "Limitar las macroplantas renovables",
-   "ctx": "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Limitarlos protege el territorio; sus defensores recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
+   "ctx": "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Quienes piden limitarlos buscan proteger el territorio; los defensores de estas plantas recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
    "dim": null,
    "dir": 0,
    "lr": 0,
@@ -3063,7 +3112,7 @@
    "type": "likert",
    "text": "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
    "short": "Fin de los coches de combustión en 2035",
-   "ctx": "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
+   "ctx": "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico; en diciembre de 2025 la Comisión propuso rebajar la exigencia a un 90 % menos de emisiones. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
    "dim": "amb",
    "dir": -1,
    "lr": -1,
@@ -3290,7 +3339,7 @@
    "type": "likert",
    "text": "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
    "short": "Prohibir construir en zonas inundables",
-   "ctx": "La dana de octubre de 2024 causó más de 220 muertos en la provincia de Valencia y puso el foco en viviendas y polígonos construidos en zonas inundables. La normativa ya limita edificar en ellas, pero hay suelos aprobados antes y excepciones. Prohibirlo del todo reduce los riesgos futuros; obliga a desclasificar suelo e indemnizar, con costes para propietarios y ayuntamientos.",
+   "ctx": "La dana de octubre de 2024 causó más de 220 muertos en la provincia de Valencia y puso el foco en viviendas y polígonos construidos en zonas inundables. La normativa ya limita edificar en ellas, pero hay suelos aprobados antes y excepciones. Prohibirlo del todo reduciría los riesgos futuros, pero obligaría a desclasificar suelo e indemnizar, con costes para propietarios y ayuntamientos.",
    "dim": "amb",
    "dir": -1,
    "lr": 0,
@@ -3379,9 +3428,9 @@
    "prio": 2,
    "type": "dilema",
    "text": "Tras el apagón de 2025, ¿qué debería priorizar el sistema eléctrico?",
-   "A": "Más centrales estables (gas, nuclear, hidráulica), aunque se frenen las renovables",
+   "A": "Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "B": "Acelerar las renovables invirtiendo en redes y almacenamiento",
-   "short": "Estabilidad o más renovables",
+   "short": "Producción a demanda o más renovables",
    "ctx": "El 28 de abril de 2025 un apagón dejó sin electricidad a la España peninsular durante horas. Los informes oficiales apuntaron a un fallo en el control de la tensión, en un momento de mucha producción solar. Desde entonces se discute si hacen falta más centrales que aporten estabilidad o acelerar redes, baterías y tecnologías que permitan a las renovables cumplir esa función.",
    "dim": "amb",
    "dir": -1,
@@ -3412,6 +3461,7 @@
     "adel": 4
    },
    "est": [
+    "salf",
     "pacma",
     "d21",
     "erc",
@@ -3468,6 +3518,7 @@
     "adel": 1
    },
    "est": [
+    "pp",
     "vox",
     "salf",
     "pacma",
@@ -3516,6 +3567,8 @@
    },
    "est": [
     "fa",
+    "pod",
+    "salf",
     "pacma",
     "erc",
     "junts",
@@ -3597,13 +3650,13 @@
    "type": "likert",
    "text": "España debería mantener el embargo de armas a Israel.",
    "short": "Embargo de armas a Israel",
-   "ctx": "En 2025 España aprobó por ley un embargo de compraventa de armas con Israel por la guerra de Gaza, que causó decenas de miles de muertos tras el ataque de Hamás del 7 de octubre de 2023. Sus defensores lo ven como coherencia con el derecho internacional humanitario; sus críticos, como una medida que daña la relación con un aliado tecnológico y a la industria de defensa, y más simbólica que eficaz.",
+   "ctx": "En 2025 España aprobó por decreto-ley un embargo de compraventa de armas con Israel por la guerra de Gaza, que causó decenas de miles de muertos tras el ataque de Hamás del 7 de octubre de 2023. Sus defensores lo ven como coherencia con el derecho internacional humanitario; sus críticos, como una medida que daña la relación con un aliado tecnológico y a la industria de defensa, y más simbólica que eficaz.",
    "dim": null,
    "dir": 0,
    "lr": -1,
    "pos": {
     "psoe": 5,
-    "pp": 2,
+    "pp": 1,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -3640,7 +3693,7 @@
    "type": "likert",
    "text": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
    "short": "Retirar el apoyo al plan marroquí para el Sáhara",
-   "ctx": "En 2022 el Gobierno pasó a considerar la autonomía bajo soberanía de Marruecos como «la base más seria, realista y creíble» para resolver el conflicto del Sáhara Occidental, antigua colonia española. El giro mejoró la cooperación con Marruecos en migración y comercio; sus críticos sostienen que abandona el derecho de autodeterminación del pueblo saharaui y que no ha evitado crisis como las de Ceuta.",
+   "ctx": "En 2022 el Gobierno pasó a considerar la autonomía bajo soberanía de Marruecos como «la base más seria, realista y creíble» para resolver el conflicto del Sáhara Occidental, antigua colonia española, y en 2025 el Consejo de Seguridad de la ONU pidió negociar sobre esa base. El giro mejoró la cooperación con Marruecos en migración y comercio; sus críticos sostienen que abandona el derecho de autodeterminación del pueblo saharaui y que no ha evitado crisis como las de Ceuta.",
    "dim": null,
    "dir": 0,
    "lr": 0,
@@ -3685,7 +3738,7 @@
    "type": "likert",
    "text": "España debería seguir en la OTAN.",
    "short": "Seguir en la OTAN",
-   "ctx": "España es miembro de la OTAN desde 1982 y lo ratificó en el referéndum de 1986. La Alianza garantiza la defensa colectiva de sus miembros, con el respaldo militar de EE. UU., aunque su artículo 5 no cubre expresamente Ceuta y Melilla. Una parte de la izquierda propone salir o reducir su papel y apostar por una defensa europea propia o por la neutralidad.",
+   "ctx": "España es miembro de la OTAN desde 1982 y lo ratificó en el referéndum de 1986. La Alianza garantiza la defensa colectiva de sus miembros, con el respaldo militar de EE. UU., aunque el ámbito geográfico del tratado no incluye expresamente Ceuta y Melilla. Una parte de la izquierda propone salir o reducir su papel y apostar por una defensa europea propia o por la neutralidad.",
    "dim": null,
    "dir": 0,
    "lr": 1,
@@ -3694,7 +3747,7 @@
     "pp": 5,
     "vox": 5,
     "fa": 3,
-    "pod": 2,
+    "pod": 1,
     "salf": 5,
     "d21": 5,
     "erc": 3,
@@ -3714,7 +3767,6 @@
    },
    "est": [
     "fa",
-    "pod",
     "salf",
     "erc",
     "junts",
@@ -3766,6 +3818,7 @@
    },
    "est": [
     "pp",
+    "salf",
     "d21",
     "erc",
     "junts",
@@ -3859,6 +3912,7 @@
    },
    "est": [
     "pp",
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -3872,7 +3926,7 @@
    "area": "edu",
    "prio": 1,
    "type": "likert",
-   "text": "La escuela concertada debería mantener o ampliar su financiación pública para que las familias puedan elegir colegio.",
+   "text": "La escuela concertada debería mantener o ampliar su financiación pública.",
    "short": "Financiación de la escuela concertada",
    "ctx": "Una cuarta parte del alumnado estudia en centros concertados: privados, a menudo religiosos, financiados con dinero público a cambio de ser gratuitos en la enseñanza obligatoria, aunque muchos cobran cuotas «voluntarias». Sus defensores apelan a la libertad de elección de las familias; sus críticos señalan que escolarizan a menos alumnado vulnerable y prefieren priorizar la red pública.",
    "ley": "Constitución, art. 27",
@@ -4162,6 +4216,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -4216,6 +4271,7 @@
    },
    "est": [
     "psoe",
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -4235,9 +4291,9 @@
    "area": "edu",
    "prio": 3,
    "type": "likert",
-   "text": "Conocer la lengua cooficial debería ser requisito para trabajar en la administración de esa comunidad.",
+   "text": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
    "short": "Lengua cooficial como requisito",
-   "ctx": "En Cataluña, Euskadi, Galicia, Baleares o la Comunitat Valenciana, las administraciones exigen o valoran el conocimiento de la lengua propia, con distinta intensidad según la comunidad y el gobierno de turno. Sus defensores sostienen que garantiza que la ciudadanía sea atendida en cualquiera de las lenguas oficiales; sus críticos, que limita el acceso al empleo público, por ejemplo de médicos de otras comunidades.",
+   "ctx": "En Cataluña, el País Vasco, Galicia, Baleares o la Comunitat Valenciana, las administraciones exigen o valoran el conocimiento de la lengua propia, con distinta intensidad según la comunidad y el gobierno de turno. Sus defensores sostienen que garantiza que la ciudadanía sea atendida en cualquiera de las lenguas oficiales; sus críticos, que limita el acceso al empleo público, por ejemplo de médicos de otras comunidades.",
    "dim": "ter",
    "dir": -1,
    "lr": -1,
@@ -4261,6 +4317,7 @@
     "mes": 5
    },
    "est": [
+    "salf",
     "cha"
    ]
   },
@@ -4271,7 +4328,7 @@
    "type": "likert",
    "text": "La sanidad pública debería dejar de encargar operaciones y la gestión de hospitales a empresas privadas.",
    "short": "Sanidad sin gestión privada",
-   "ctx": "Las comunidades conciertan con clínicas privadas pruebas y operaciones para reducir las listas de espera, y algunas han cedido la gestión de hospitales públicos a empresas, como Madrid o la Comunitat Valenciana. En 2025 el Gobierno aprobó un proyecto de ley para limitar esa gestión privada. Sus defensores ven en la colaboración más capacidad y eficiencia; sus críticos, desvío de fondos y menos control público.",
+   "ctx": "Las comunidades conciertan con clínicas privadas pruebas y operaciones para reducir las listas de espera, y algunas han cedido la gestión de hospitales públicos a empresas, como Madrid o la Comunitat Valenciana. En 2026 el Gobierno llevó al Congreso un proyecto de ley para limitar esa gestión privada. Los defensores de la colaboración con la privada ven en ella más capacidad y eficiencia; sus críticos, desvío de fondos y menos control público.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -4383,7 +4440,7 @@
    "type": "likert",
    "text": "Los médicos de la sanidad pública no deberían poder trabajar a la vez en la privada.",
    "short": "Exclusividad de los médicos públicos",
-   "ctx": "Muchos médicos combinan su plaza pública con consulta privada. El nuevo Estatuto Marco que negocia el Ministerio de Sanidad propone exigir dedicación exclusiva a los nuevos jefes de servicio, uno de los motivos de las huelgas médicas de 2025. Sus defensores buscan evitar conflictos de interés y reforzar lo público; sus críticos temen que más médicos abandonen la sanidad pública, donde ya faltan en muchas especialidades.",
+   "ctx": "Muchos médicos combinan su plaza pública con consulta privada. El nuevo Estatuto Marco que negocia el Ministerio de Sanidad propone exigir dedicación exclusiva a los nuevos jefes de servicio, uno de los motivos de las huelgas médicas de 2025 y 2026. Sus defensores buscan evitar conflictos de interés y reforzar lo público; sus críticos temen que más médicos abandonen la sanidad pública, donde ya faltan en muchas especialidades.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -4550,7 +4607,7 @@
    "type": "likert",
    "text": "Los funcionarios deberían dejar de poder elegir sanidad privada a través de MUFACE y pasar a la sanidad pública.",
    "short": "Integrar MUFACE en la sanidad pública",
-   "ctx": "Los funcionarios del Estado pueden elegir, a través de MUFACE, ser atendidos por aseguradoras privadas concertadas en lugar de por la sanidad pública, y la mayoría lo hace. En 2024 las aseguradoras se negaron a renovar el concierto por considerarlo deficitario, y el Gobierno acabó subiendo la prima. Integrarlos acabaría con un sistema diferenciado; sus defensores destacan que es más barato por persona y descarga los centros públicos.",
+   "ctx": "Los funcionarios del Estado pueden elegir, a través de MUFACE, ser atendidos por aseguradoras privadas concertadas en lugar de por la sanidad pública, y la mayoría lo hace. En 2024 las aseguradoras se negaron a renovar el concierto por considerarlo deficitario, y el Gobierno acabó subiendo la prima. Integrarlos acabaría con un sistema diferenciado; los defensores de MUFACE destacan que es más barato por persona y descarga los centros públicos.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -4591,7 +4648,7 @@
    "type": "likert",
    "text": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
    "short": "Estándares sanitarios comunes",
-   "ctx": "La sanidad está transferida a las comunidades desde 2002, y el Estado coordina a través del Consejo Interterritorial, donde las decisiones suelen requerir acuerdo. Eso explica diferencias en listas de espera, vacunas o prestaciones entre territorios. Dar más poder al Ministerio favorecería la igualdad entre ciudadanos; sus críticos defienden la autonomía de gestión y la cercanía, y temen una uniformización desde Madrid.",
+   "ctx": "La sanidad está transferida a las comunidades desde 2002, y el Estado coordina a través del Consejo Interterritorial, donde las decisiones suelen requerir acuerdo. Eso explica diferencias en listas de espera, vacunas o prestaciones entre territorios. Dar más poder al Ministerio favorecería la igualdad entre ciudadanos; sus críticos defienden la autonomía de gestión y la cercanía, y temen una uniformización impuesta por el Gobierno central.",
    "dim": "ter",
    "dir": 1,
    "lr": 0,
@@ -4643,15 +4700,15 @@
    "area": "rur",
    "prio": 1,
    "type": "likert",
-   "text": "El acuerdo comercial entre la UE y Mercosur es positivo para España, aunque aumente la competencia para los agricultores.",
+   "text": "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
    "short": "Acuerdo comercial UE-Mercosur",
-   "ctx": "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute.",
+   "ctx": "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute. Se aplica provisionalmente desde mayo de 2026, mientras el Tribunal de Justicia de la UE examina su legalidad.",
    "dim": "eur",
    "dir": -1,
    "lr": 0,
    "pos": {
     "psoe": 5,
-    "pp": 3,
+    "pp": 4,
     "vox": 1,
     "fa": 1,
     "pod": 1,
@@ -4678,6 +4735,7 @@
     "soria": 1
    },
    "est": [
+    "salf",
     "erc",
     "junts",
     "pnv",
@@ -4694,14 +4752,17 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "notes": {
+    "pp": "Sus eurodiputados han votado a favor de seguir adelante con el acuerdo y de sus salvaguardas agrícolas, mientras algunos presidentes autonómicos del PP lo rechazan."
+   }
   },
   {
    "id": "K02",
    "area": "rur",
    "prio": 3,
    "type": "likert",
-   "text": "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos cobren precios justos.",
+   "text": "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
    "short": "Controlar los márgenes de la distribución",
    "ctx": "La Ley de la Cadena Alimentaria prohíbe desde 2021 comprar a los productores por debajo de sus costes, pero las organizaciones agrarias denuncian incumplimientos y grandes diferencias entre el precio en origen y el del supermercado. Reforzar el control protegería al eslabón más débil; sus críticos advierten de que intervenir márgenes puede encarecer la cesta de la compra o reducir la competencia.",
    "ley": "Ley 12/2013, de la cadena alimentaria",
@@ -4767,7 +4828,7 @@
    "type": "likert",
    "text": "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
    "short": "PAC para profesionales y pequeñas explotaciones",
-   "ctx": "España recibe unos 5.000 millones de euros al año de la Política Agraria Común. Una parte importante se reparte en función de las hectáreas y de derechos históricos, de modo que los mayores perceptores son grandes propietarios. Vincularla a quienes viven del campo y a explotaciones pequeñas y medianas reforzaría el medio rural; sus críticos advierten de que la agricultura competitiva necesita escala.",
+   "ctx": "España recibe cada año unos 5.000 millones de euros en ayudas directas de la Política Agraria Común. Una parte importante se reparte en función de las hectáreas y de derechos históricos, de modo que los mayores perceptores son grandes propietarios. Vincularla a quienes viven del campo y a explotaciones pequeñas y medianas reforzaría el medio rural; sus críticos advierten de que la agricultura competitiva necesita escala.",
    "dim": "eco",
    "dir": -1,
    "lr": -1,
@@ -4936,7 +4997,7 @@
    "prio": 3,
    "type": "likert",
    "text": "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
-   "short": "Relajar los límites a la pesca",
+   "short": "Relajar los límites a la pesca en el Mediterráneo",
    "ctx": "Para recuperar especies sobreexplotadas, la UE ha recortado con fuerza los días de pesca de arrastre en el Mediterráneo occidental desde 2020, y muchos barcos pasan buena parte del año amarrados. El sector y varias comunidades piden flexibilizar los límites para sobrevivir; los científicos y las organizaciones ecologistas advierten de que, sin esas restricciones, no habrá peces que pescar en el futuro.",
    "dim": "amb",
    "dir": 1,
@@ -5101,7 +5162,7 @@
    "lr": -1,
    "pos": {
     "psoe": 5,
-    "pp": 2,
+    "pp": 1,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -5193,9 +5254,9 @@
    "area": "der",
    "prio": 2,
    "type": "likert",
-   "text": "Las personas mayores de 16 años deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
+   "text": "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
    "short": "Cambio de sexo registral sin informes",
-   "ctx": "La «ley trans» de 2023 permite desde los 16 años cambiar el sexo registral por simple declaración, ratificada a los tres meses; entre los 14 y los 16 años se necesita a los padres, y por debajo de 14, a un juez. Sus defensores la ven como reconocimiento de la identidad de las personas trans; sus críticos, incluida parte del feminismo, temen fraudes, efectos en el deporte o en espacios de mujeres y decisiones precipitadas.",
+   "ctx": "La «ley trans» de 2023 permite desde los 16 años cambiar el sexo registral por simple declaración, ratificada a los tres meses; entre los 14 y los 16 años se necesita la asistencia de los padres, y entre los 12 y los 14, autorización judicial. Sus defensores la ven como reconocimiento de la identidad de las personas trans; sus críticos, incluida parte del feminismo, temen fraudes, efectos en el deporte o en espacios de mujeres y decisiones precipitadas.",
    "ley": "Ley 4/2023, para la igualdad de las personas trans",
    "dim": "soc",
    "dir": -1,
@@ -5224,6 +5285,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "d21",
     "junts",
     "pnv",
@@ -5286,7 +5348,7 @@
    "area": "der",
    "prio": 3,
    "type": "likert",
-   "text": "Los acuerdos de 1979 con la Santa Sede deberían revisarse para reducir los privilegios de la Iglesia católica.",
+   "text": "Los acuerdos de 1979 con la Santa Sede deberían revisarse para reducir las ventajas que reconocen a la Iglesia católica.",
    "short": "Revisar los acuerdos con la Santa Sede",
    "ctx": "Los acuerdos con el Vaticano regulan la enseñanza de la Religión, la asistencia religiosa, exenciones fiscales y la financiación de la Iglesia, que recibe el 0,7 % del IRPF de quienes marcan su casilla. Sus críticos sostienen que otorgan privilegios impropios de un Estado aconfesional; sus defensores, que reconocen la labor social de la Iglesia y la libertad religiosa, y que otras confesiones también tienen acuerdos.",
    "ley": "Constitución, art. 16.3",
@@ -5366,6 +5428,7 @@
     "pp",
     "fa",
     "pod",
+    "salf",
     "d21",
     "erc",
     "junts",
@@ -5383,7 +5446,7 @@
    "type": "likert",
    "text": "Debería prohibirse el acceso a las redes sociales a los menores de 16 años.",
    "short": "Redes sociales solo desde los 16 años",
-   "ctx": "España tramita una ley de protección de los menores en entornos digitales que eleva a 16 años la edad para consentir el uso de sus datos, y Australia prohibió en 2025 las redes a menores de 16. Sus defensores citan los efectos en la salud mental y el acoso; sus críticos dudan de que pueda aplicarse sin sistemas de verificación de edad invasivos y prefieren la educación digital y el control parental.",
+   "ctx": "España tramita una ley de protección de los menores en entornos digitales que eleva a 16 años la edad para consentir el uso de sus datos, y en 2026 el Gobierno anunció que prohibiría las redes por debajo de esa edad, como hace Australia desde diciembre de 2025. Sus defensores citan los efectos en la salud mental y el acoso; sus críticos dudan de que pueda aplicarse sin sistemas de verificación de edad invasivos y prefieren la educación digital y el control parental.",
    "dim": "lib",
    "dir": 1,
    "lr": 0,
@@ -5424,7 +5487,7 @@
    "area": "der",
    "prio": 3,
    "type": "likert",
-   "text": "Las cuotas obligatorias de mujeres en listas electorales y consejos de administración deberían eliminarse.",
+   "text": "Las cuotas obligatorias de paridad entre sexos en listas electorales y consejos de administración deberían eliminarse.",
    "short": "Eliminar las cuotas de paridad",
    "ctx": "La Ley de Paridad de 2024 obliga a que las listas electorales, el Gobierno y los consejos de las grandes empresas cotizadas tengan al menos un 40 % de cada sexo. Quienes piden eliminar las cuotas sostienen que debe primar el mérito individual y que la ley invade decisiones de partidos y empresas; quienes las defienden, que corrigen barreras que frenan a las mujeres en los puestos de poder.",
    "ley": "Ley Orgánica 2/2024, de representación paritaria",
@@ -5489,7 +5552,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 3,
+    "pp": 5,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -5510,7 +5573,6 @@
    },
    "est": [
     "psoe",
-    "pp",
     "salf",
     "d21",
     "erc",
@@ -5525,7 +5587,10 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Votó en contra de la ley de Vox, aunque se mostró dispuesto a negociar la prohibición que propone Junts."
+   }
   }
  ]
 }
