@@ -161,7 +161,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   ok(/Junts/i.test(top), `respondiendo como Junts, Junts sale primero (${top})`);
   ok(!(await overflow(page)), "resultados sin scroll horizontal (1280px)");
   await page.screenshot({ path: OUT + "d-results.png", fullPage: true });
-  ok((await page.locator("#r-map select").count()) === 0 && (await page.locator("#r-map .me-o").count()) === 1, "mapa automático, sin selectores, con tu posición");
+  ok((await page.locator("#r-map select:not(#map-dim)").count()) === 0 && (await page.locator("#r-map .me-o").count()) === 1, "mapa automático, sin selectores, con tu posición");
   await page.click('[data-act="more"]');
   await page.waitForSelector("#v-quiz:not([hidden])");
   ok((await page.textContent("#q-count")).includes("/ 107"), "afinar pasa a la completa conservando respuestas");

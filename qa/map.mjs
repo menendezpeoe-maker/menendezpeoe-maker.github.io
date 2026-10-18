@@ -46,7 +46,7 @@ let base;
 {
   const { ctx, page } = await open(state(asParty("psoe")), 1100, "psoe");
   const txt = await page.innerText("#r-map");
-  ok((await page.locator("#r-map select").count()) === 0 && !/Elige dos dimensiones|Eje horizontal|Eje vertical/.test(txt), "sin selectores de ejes ni instrucciones para elegirlos");
+  ok((await page.locator("#r-map select:not(#map-dim)").count()) === 0 && !/Elige dos dimensiones|Eje horizontal|Eje vertical/.test(txt), "sin selectores de ejes ni instrucciones para elegirlos");
   ok(/7 dimensiones/.test(txt) && /Eje 1 · \d+ %/.test(await page.textContent("#r-map svg")), "explica que usa las 7 dimensiones y cuánto recoge cada eje");
   ok(!/izquierda-derecha|eje (izquierda|derecha)/i.test(await page.textContent("#r-map svg")), "los ejes no se etiquetan como izquierda o derecha");
   base = await coords(page);

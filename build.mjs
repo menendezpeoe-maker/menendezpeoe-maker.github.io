@@ -7,6 +7,7 @@ import { POLITICIANS } from "./src/politicos.src.mjs";
 
 const VERSION = "2.0.0";
 const UPDATED = "2026-10-18";
+const SRC_TYPES = ["programa", "parlamento", "gobierno", "declaracion", "prensa"];
 const errors = [];
 const warns = [];
 const err = (m) => errors.push(m);
@@ -53,9 +54,11 @@ const questions = QUESTIONS.map((q) => {
     out.notes = NOTES[q.id];
   }
   if (SOURCES[q.id]) {
-    for (const [pid, [url, label]] of Object.entries(SOURCES[q.id])) {
+    for (const [pid, [url, label, type, date]] of Object.entries(SOURCES[q.id])) {
       if (!pos[pid]) err(`${q.id}: fuente para ${pid}, que no tiene postura`);
       if (!/^https:\/\/[^\s"<>]+$/.test(url) || !label) err(`${q.id}/${pid}: fuente no válida`);
+      if (!SRC_TYPES.includes(type)) err(`${q.id}/${pid}: tipo de fuente «${type}» no válido (${SRC_TYPES.join(", ")})`);
+      if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(date || "") || date > UPDATED) err(`${q.id}/${pid}: fecha de la fuente no válida (${date})`);
       if (est.includes(pid)) warn(`${q.id}/${pid}: tiene fuente pero sigue marcada como estimada`);
     }
     out.src = SOURCES[q.id];

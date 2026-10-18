@@ -125,7 +125,7 @@ export const PARTIES = [
      ["Penas más duras para la multirreincidencia.","E01"],
      ["Desalojo rápido de viviendas ocupadas.","B03"],
      ["Que la jornada de 37,5 horas no se imponga por ley.","A01"],
-     ["Alargar la vida de las nucleares de Ascó y Vandellòs.","G01"]] },
+     ["Una bajada generalizada de impuestos, empezando por sucesiones.","A02"]] },
  { id: "pnv", name: "EAJ-PNV", ab: "PNV", color: "#28833A", tag: "Nacionalismo vasco de centro",
    scope: { regions: ["pv"] },
    desc: "Nacionalismo vasco de centro, de tradición democristiana y cercano al mundo empresarial. Defiende el Concierto Económico, completar las transferencias del Estatuto y un nuevo estatus para Euskadi.",
