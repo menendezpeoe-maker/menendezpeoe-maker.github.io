@@ -1,4 +1,4 @@
-# Papeleta 29N
+# Test 29N
 
 Test político sobre los debates reales de España para las elecciones generales del 29 de noviembre de 2026.
 
