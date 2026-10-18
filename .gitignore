@@ -1,0 +1,7 @@
+dist/
+_local.html
+wrapped.html
+qa/shots/
+*.png
+!qa/brand/*.png
+node_modules/
