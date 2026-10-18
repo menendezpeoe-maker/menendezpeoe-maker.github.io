@@ -14,6 +14,9 @@ const DONATE = {
   applePay: "https://buy.stripe.com/7sYaEYcq8bwS6lL1Kiew800",   // enlace de pago de Stripe con Apple Pay (y tarjeta, que Apple Pay necesita)
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };
+// Contador de visitas con GoatCounter (sin cookies ni datos personales): código de la cuenta, por ejemplo
+// "test29n" para test29n.goatcounter.com. Vacío = no se cuenta nada. Solo cuenta en la dirección pública.
+const STATS = { goatcounter: "" };
 // Titular de la web para el aviso legal. Vacío = no se muestra.
 const OWNER = { name: "Dery", email: "menendezpeoe@gmail.com" };
 const KEY = "papeleta29n.v2";
@@ -274,6 +277,7 @@ function startTest(e) {
   SHARED = null; SH.edited = false;
   save();
   renderQuestion(0);
+  count("test-empezado", "Test empezado", true);
   go("quiz", { focus: false });
   focusStatement();
 }
@@ -454,7 +458,7 @@ function bindPrios() {
     save(); renderPrios();
     $(`.prio-b[data-a="${id}"]`).focus();
   });
-  const finish = (skip) => { if (skip) S.prios = []; S.stage = "done"; save(); openResults(); };
+  const finish = (skip) => { if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults(); };
   $("#prio-go").addEventListener("click", () => finish(false));
   $("#prio-skip").addEventListener("click", () => finish(true));
   $("#prio-back").addEventListener("click", () => { S.stage = "quiz"; S.idx = S.order.length - 1; save(); renderQuestion(0); go("quiz", { focus: false }); focusStatement(); });
@@ -1607,6 +1611,20 @@ function showCopyFallback(text, el) {
 // URL que se comparte: la de la propia web cuando se usa desde su dirección pública;
 // desde la vista previa en Claude o en local, la dirección pública configurada.
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch { return true; } })();
+// Cuenta una visita o un paso del test. Solo se envía el nombre del paso, la web de procedencia y el tamaño
+// de pantalla: nunca respuestas, provincia, sexo, edad, resultado ni el enlace compartido (#r2…).
+const COUNTED = new Set();
+function count(path, title, event = false) {
+  const code = STATS.goatcounter;
+  if (!code || IN_FRAME || navigator.webdriver || location.hostname !== new URL(PUBLIC_URL).hostname || COUNTED.has(path)) return;
+  COUNTED.add(path);
+  try {
+    const q = new URLSearchParams({ p: path, t: title, s: `${screen.width},${screen.height},${devicePixelRatio || 1}`, rnd: Math.random().toString(36).slice(2, 8) });
+    if (event) q.set("e", "true");
+    else if (document.referrer && !document.referrer.startsWith(location.origin)) q.set("r", document.referrer.split(/[?#]/)[0]);
+    const img = new Image(); img.referrerPolicy = "origin"; img.src = `https://${code}.goatcounter.com/count?${q}`;
+  } catch { /* el contador nunca debe afectar al test */ }
+}
 function siteUrl() {
   const local = /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname);
   if (!IN_FRAME && /^https:$/.test(location.protocol) && !local) return location.origin + location.pathname;
@@ -2021,7 +2039,8 @@ function renderMethod() {
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
-            <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>
+            ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, provincia, sexo, edad ni resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
+              : `<p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>`}
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
             ${OWNER.name || OWNER.email ? `<p>${[OWNER.name && `<b>Responsable</b>: ${esc(OWNER.name)}`, OWNER.email && `<b>Contacto</b>: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>`].filter(Boolean).join(" · ")}.</p>` : ""}
@@ -2096,6 +2115,8 @@ function bindTips() {
 // ───────────────────────────── Arranque
 function bindGlobal() {
   document.addEventListener("click", (e) => {
+    const don = e.target.closest("#r-support a.btn");
+    if (don) count(`donar-${/paypal/.test(don.href) ? "paypal" : don.textContent.includes("Apple") ? "apple-pay" : "banco"}`, "Clic en donar", true);
     const g = e.target.closest("[data-go]");
     if (g) {
       const v = g.dataset.go;
@@ -2137,6 +2158,7 @@ async function boot() {
   S = loadState();
   initHome();
   const shared = decodeShare(location.hash);
+  count(shared ? "/compartido" : "/", shared ? "Resultado compartido" : "Inicio");
   if (shared) { SHARED = shared; openResults(); return; }
   if (S && S.stage === "done" && answered(S).length) { openResults(); return; }
   go("home", { focus: false });
