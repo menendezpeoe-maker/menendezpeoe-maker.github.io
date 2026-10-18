@@ -55,6 +55,9 @@ const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matche
 const isSheet = () => matchMedia("(max-width: 1039.98px)").matches;
 const signed = (v) => { const r = Math.round(v); return r > 0 ? `+${r}` : r < 0 ? `−${Math.abs(r)}` : "0"; };
 const lcFirst = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+const ucFirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const joinY = (arr) => arr.length <= 1 ? arr.join("") : `${arr.slice(0, -1).join(", ")} y ${arr[arr.length - 1]}`;
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 const pctPos = (v) => ((v + 100) / 2).toFixed(2);
 function mulberry(seed) {
   let a = seed >>> 0;
@@ -576,13 +579,56 @@ function dimLabel(d, v) {
 function profileSentence(M) {
   const strong = Object.entries(M.user.dims).filter(([, o]) => Math.abs(o.v) >= 25).sort((a, b) => Math.abs(b[1].v) - Math.abs(a[1].v));
   const mixed = BANK.dims.filter((d) => M.user.dims[d.id] && Math.abs(M.user.dims[d.id].v) < 25);
-  const list = (arr) => arr.length <= 1 ? arr.join("") : `${arr.slice(0, -1).join(", ")} y ${arr[arr.length - 1]}`;
   const head = strong.length
-    ? `Te inclinas por ${list(strong.slice(0, 3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.`
+    ? `Te inclinas por ${joinY(strong.slice(0, 3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.`
     : "Tus respuestas no se inclinan con claridad hacia ningún polo.";
-  const tail = mixed.length ? `En ${list(mixed.map((d) => DIM_SHORT[d.id]))} mantienes posiciones intermedias o combinas ideas de ambos lados.` : "";
-  const more = strong.length > 3 ? `También te inclinas por ${list(strong.slice(3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.` : "";
+  const tail = mixed.length ? `En ${joinY(mixed.map((d) => DIM_SHORT[d.id]))} mantienes posiciones intermedias o combinas ideas de ambos lados.` : "";
+  const more = strong.length > 3 ? `También te inclinas por ${joinY(strong.slice(3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.` : "";
   return { head, sub: [more, tail].filter(Boolean).join(" ") };
+}
+
+// ── Explicación del perfil (funciones puras sobre tus respuestas)
+// Aportación de cada respuesta a tu posición en una dimensión: la suma de las aportaciones es tu posición.
+function dimContrib(st, dimId) {
+  const rows = answered(st).filter((q) => q.dim === dimId).map((q) => { const u = st.ans[q.id]; return { q, u, s: (u - 3) / 2 * 100 * q.dir, w: u === 3 ? W_NEUTRAL : 1 }; });
+  const W = rows.reduce((a, r) => a + r.w, 0);
+  rows.forEach((r) => { r.c = W ? r.s * r.w / W : 0; });
+  return rows;
+}
+// Tu posición en una dimensión, tema a tema (por ejemplo, «más Estado» en vivienda pero no en educación)
+function dimByArea(rows) {
+  const acc = {};
+  for (const r of rows) { const o = (acc[r.q.area] ||= { s: 0, w: 0, n: 0 }); o.s += r.s * r.w; o.w += r.w; o.n++; }
+  return BANK.areas.filter((a) => acc[a.id]).map((a) => ({ a, v: acc[a.id].s / acc[a.id].w, n: acc[a.id].n }));
+}
+// Una posición cercana a cero puede deberse a respuestas intermedias (moderada) o a respuestas firmes en
+// sentidos opuestos que se compensan (mixta). Se distingue por cuánto empuja cada lado.
+function dimKind(rows) {
+  const pos = rows.filter((r) => r.c > 0).reduce((a, r) => a + r.c, 0), neg = -rows.filter((r) => r.c < 0).reduce((a, r) => a + r.c, 0);
+  return Math.min(pos, neg) >= 20 ? "mixta" : "moderada";
+}
+// Preguntas en las que tienes una opinión clara y ninguna candidatura de tu provincia con postura conocida está de tu lado
+function unrepresented(M) {
+  const st = M.st;
+  return M.qs.filter((q) => sideOf(st.ans[q.id])).map((q) => {
+    const withPos = M.avail.filter((pid) => q.pos[pid]);
+    const same = withPos.filter((pid) => sideOf(q.pos[pid]) === sideOf(st.ans[q.id]));
+    return { q, u: st.ans[q.id], n: withPos.length, same };
+  }).filter((x) => x.n >= 2 && !x.same.length)
+    .sort((a, b) => (Math.abs(b.u - 3) - Math.abs(a.u - 3)) || ((st.imp[b.q.id] ? 1 : 0) - (st.imp[a.q.id] ? 1 : 0)) || (a.q.prio - b.q.prio));
+}
+// Combinaciones de dimensiones poco habituales: entre los partidos, dos dimensiones suelen ir juntas
+// (correlación ≥ 0,6); tú las combinas al revés. Solo con posiciones claras (≥ 25) en ambas.
+function unusualCombos(M) {
+  const G = MAPM, out = [];
+  for (let i = 0; i < G.ids.length; i++) for (let j = i + 1; j < G.ids.length; j++) {
+    const r = G.corr[i][j], a = G.ids[i], b = G.ids[j], ua = M.user.dims[a], ub = M.user.dims[b];
+    if (Math.abs(r) < 0.6 || !ua || !ub || Math.abs(ua.v) < 25 || Math.abs(ub.v) < 25) continue;
+    if (Math.sign(ua.v) * Math.sign(ub.v) === Math.sign(r)) continue;
+    const like = M.avail.filter((pid) => { const pa = PARTY_DIM[pid][a], pb = PARTY_DIM[pid][b]; return pa !== undefined && pb !== undefined && Math.abs(pa) >= 15 && Math.abs(pb) >= 15 && Math.sign(pa) === Math.sign(ua.v) && Math.sign(pb) === Math.sign(ub.v); });
+    out.push({ a, b, r, ua: ua.v, ub: ub.v, like, k: Math.abs(r) * Math.min(Math.abs(ua.v), Math.abs(ub.v)) });
+  }
+  return out.sort((x, y) => y.k - x.k).slice(0, 2);
 }
 
 // ───────────────────────────── RESULTADOS
@@ -590,7 +636,7 @@ let MODEL = null;
 function openResults() {
   MODEL = computeModel(ST());
   UI.cmp = MODEL.prov[0]?.pid || null;
-  UI.scope = "prov"; UI.extra = null;
+  UI.scope = "prov"; UI.extra = null; UI.vsA = UI.vsB = null; UI.mapSel = null; UI.mapDim = "";
   renderResults();
   go("results");
 }
@@ -601,15 +647,17 @@ function renderResults() {
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> No incluye el sexo ni la edad de quien lo comparte y no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
-      <a href="#r-summary">Resumen</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
+      <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
     </div></nav>
     <div class="wrap">
       <section id="r-summary" class="summary res-sec" style="padding-top:34px"></section>
+      <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
       <section id="r-map" class="res-sec" aria-labelledby="map-h"></section>
       <section id="r-areas" class="res-sec" aria-labelledby="areas-h2"></section>
       <section id="r-traits" class="res-sec" aria-labelledby="traits-h"></section>
       <section id="r-parties" class="res-sec" aria-labelledby="parties-h"></section>
+      <section id="r-versus" class="res-sec" aria-labelledby="versus-h"></section>
       <section id="r-solid" class="res-sec" aria-labelledby="solid-h"></section>
       <section id="r-share" class="res-sec share" aria-labelledby="share-h"></section>
       <section id="r-review" class="res-sec" aria-labelledby="review-h"></section>
@@ -625,14 +673,216 @@ function renderResults() {
         ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
     </div>`;
-  invalidateCards(); renderSummary(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  invalidateCards(); renderSummary(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
 }
 
 function rerenderAfterEdit() {
   MODEL = computeModel(ST());
   if (!MODEL.prov.some((m) => m.pid === UI.cmp)) UI.cmp = MODEL.prov[0]?.pid || null;
   invalidateCards();
-  renderSummary(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
+  renderSummary(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
+}
+
+// ── Piezas comunes de los resultados
+const MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+const fmtDate = (iso) => { const [y, m, d] = String(iso).split("-").map(Number); return d ? `${d} de ${MONTHS[m - 1]} de ${y}` : m ? `${MONTHS[m - 1]} de ${y}` : String(y); };
+const SRC_TYPE = { programa: "programa o documento del partido", parlamento: "actuación parlamentaria", gobierno: "acción de gobierno", declaracion: "declaración pública", prensa: "información periodística" };
+// Respuesta en pocas palabras, también para los dilemas (con la opción elegida)
+function ansBrief(q, u) {
+  if (u === 0) return "no lo sé";
+  if (u === undefined) return "sin responder";
+  if (q.type !== "dilema") return LIK_LOW[u - 1];
+  if (u === 3) return "las dos por igual";
+  return `${u === 1 || u === 5 ? "claramente" : "más bien"} «${lcFirst((u < 3 ? q.A : q.B).split(",")[0])}»`;
+}
+const TICKS = '<span class="tk" style="left:0"></span><span class="tk" style="left:25%"></span><span class="tk" style="left:75%"></span><span class="tk" style="left:100%"></span><span class="ctr"></span>';
+// Pista de −100 a +100: tu posición (círculo y banda hasta el centro) y marcas de partidos
+function trackHTML(me, marks = [], meTip = "") {
+  let t = TICKS;
+  if (me != null) {
+    const x = Number(pctPos(me));
+    t += me < 0 ? `<span class="hb l" style="left:${x}%;width:${(50 - x).toFixed(2)}%"></span>` : me > 0 ? `<span class="hb r" style="left:50%;width:${(x - 50).toFixed(2)}%"></span>` : "";
+    t += `<span class="me" style="left:${x}%"${meTip ? ` data-tip="${esc(meTip)}"` : ""}></span>`;
+  }
+  for (const m of marks) t += `<span class="${m.cls || "pm"}" style="left:${pctPos(m.v)}%;background:${P[m.pid].color}" data-tip="${esc(m.tip)}"></span>`;
+  return t;
+}
+const miniHTML = (v) => { const x = pctPos(v); return `<span class="mini"><span class="c"></span>${v < 0 ? `<span class="b l" style="left:${x}%;width:${(50 - x).toFixed(2)}%"></span>` : v > 0 ? `<span class="b r" style="left:50%;width:${(x - 50).toFixed(2)}%"></span>` : ""}<span class="d" style="left:${x}%"></span></span>`; };
+// Todas las candidaturas (y tú) en una sola dimensión
+function dimStrip(d, M, pids) {
+  const st = M.st, o = M.user.dims[d.id];
+  const pts = pids.filter((pid) => PARTY_DIM[pid][d.id] !== undefined).map((pid) => { const v = PARTY_DIM[pid][d.id]; return { pid, v, cls: "pd", tip: `${pName(pid, st.prov)}: ${dimLabel(d, v)} (${signed(v)})` }; });
+  const order = [...pts, ...(o ? [{ pid: null, v: o.v }] : [])].sort((a, b) => a.v - b.v);
+  const miss = pids.filter((pid) => PARTY_DIM[pid][d.id] === undefined);
+  const aria = `${d.name}, de −100 (${d.a}) a +100 (${d.b}): ${order.map((x) => `${x.pid ? P[x.pid].ab : "tú"} ${signed(x.v)}`).join(", ")}`;
+  return `<div class="dstrip"><div class="track" role="img" aria-label="${esc(aria)}">${trackHTML(o?.v, pts, o ? `Tú: ${dimLabel(d, o.v)} (${signed(o.v)})` : "")}</div>
+    <div class="poles"><span>← ${esc(d.a)}</span><span>${esc(d.b)} →</span></div>
+    <p class="chips dchips" aria-hidden="true">${order.map((x) => x.pid ? `<span class="chip"><i class="sw" style="background:${P[x.pid].color}"></i>${esc(P[x.pid].ab)} <span class="muted">${signed(x.v)}</span></span>` : `<span class="chip you">Tú <span>${signed(x.v)}</span></span>`).join("")}</p>
+    ${miss.length ? `<p class="unk">Sin posturas en esta dimensión: ${miss.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</div>`;
+}
+// Datos de un partido: cuántas posturas son documentadas, estimadas o desconocidas, y cuántas tienen fuente
+function partyData(pid) {
+  const qs = BANK.questions, k = qs.filter((q) => q.pos[pid]).length, e = qs.filter((q) => q.est.includes(pid)).length, s = qs.filter((q) => q.src?.[pid]).length;
+  return { doc: k - e, est: e, unk: qs.length - k, src: s, total: qs.length };
+}
+function dataLine(pid) {
+  const x = partyData(pid);
+  return `<p class="small muted data-line">${ICON.info}<span>Datos de ${esc(P[pid].ab)}: ${x.doc} posturas documentadas, ${x.est} estimadas y ${x.unk} sin postura conocida, de ${x.total} preguntas${x.src ? `; ${x.src} con fuente enlazada` : ""}. Actualizados el ${fmtDate(BANK.updated)}. <button type="button" class="link-btn" data-go="explorer" data-party="${pid}">Ver todas sus posturas</button></span></p>`;
+}
+const srcLink = (q, pid) => { const s = q.src?.[pid]; return s ? ` · <a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer" title="${esc(s[1])}">Fuente${s[2] ? `: ${esc(SRC_TYPE[s[2]])}` : ""}</a>` : ""; };
+
+// ── Tu perfil, explicado
+function renderPortrait() {
+  const M = MODEL, st = M.st, pr = PROV[st.prov];
+  const have = BANK.dims.filter((d) => M.user.dims[d.id]);
+  const strong = have.filter((d) => Math.abs(M.user.dims[d.id].v) >= 25).sort((a, b) => Math.abs(M.user.dims[b.id].v) - Math.abs(M.user.dims[a.id].v));
+  const soft = have.filter((d) => Math.abs(M.user.dims[d.id].v) < 25);
+  const ex = (d, v) => dimContrib(st, d.id).filter((r) => Math.sign(r.c) === Math.sign(v) && Math.abs(r.c) >= 1).sort((a, b) => Math.abs(b.c) - Math.abs(a.c)).slice(0, 2).map((r) => `«${esc(r.q.short)}» (${esc(ansBrief(r.q, r.u))})`);
+  const defines = strong.map((d) => { const o = M.user.dims[d.id], e = ex(d, o.v);
+    return `<li><b>${esc(ucFirst(DIM_PHRASE[d.id][o.v < 0 ? 0 : 1]))} <span class="muted">· ${strength(o.v)} (${signed(o.v)})</span></b><span>${e.length ? `Pesan sobre todo ${joinY(e)}.` : ""}${o.n < 3 ? ` Con ${plural(o.n, "respuesta", "respuestas")} en esta dimensión, es orientativo.` : ""}</span></li>`; }).join("")
+    || '<li class="empty">Ninguna dimensión se inclina con claridad (más de 25 puntos) hacia un polo.</li>';
+  const softs = soft.map((d) => {
+    const rows = dimContrib(st, d.id), o = M.user.dims[d.id];
+    if (dimKind(rows) === "mixta") {
+      const a = rows.filter((r) => r.c < 0).sort((x, y) => x.c - y.c)[0], b = rows.filter((r) => r.c > 0).sort((x, y) => y.c - x.c)[0];
+      return `<li><b>${esc(d.name)}: posición mixta <span class="muted">(${signed(o.v)})</span></b><span>Tienes respuestas firmes en los dos sentidos que se compensan: tu respuesta a «${esc(a.q.short)}» (${esc(ansBrief(a.q, a.u))}) te acerca a ${esc(lcFirst(d.a))}, y la de «${esc(b.q.short)}» (${esc(ansBrief(b.q, b.u))}), a ${esc(lcFirst(d.b))}.</span></li>`;
+    }
+    const neu = rows.filter((r) => r.u === 3).length;
+    return `<li><b>${esc(d.name)}: posición moderada <span class="muted">(${signed(o.v)})</span></b><span>${plural(rows.length, "respuesta", "respuestas")}${neu ? `, ${neu} de ellas neutrales` : ""}; ninguna empuja con fuerza hacia un polo.</span></li>`;
+  }).join("") || '<li class="empty">Tienes una inclinación clara en todas las dimensiones que has respondido.</li>';
+  const combos = unusualCombos(M).map((c) => {
+    const ph = (dim, v) => DIM_PHRASE[dim][v < 0 ? 0 : 1], typ = Math.sign(c.r) * Math.sign(c.ua);
+    return `<li><b>${esc(ucFirst(ph(c.a, c.ua)))} con ${esc(ph(c.b, c.ub))}</b><span>Entre los partidos, quien defiende ${esc(ph(c.a, c.ua))} suele defender también ${esc(ph(c.b, typ))}. ${c.like.length ? `En ${esc(pr.name)} combinan como tú: ${esc(joinY(c.like.map((pid) => P[pid].ab)))}.` : `Ninguna candidatura de ${esc(pr.name)} combina así estas dos dimensiones.`}</span></li>`;
+  }).join("") || '<li class="empty">Tus posiciones se combinan como suelen hacerlo entre los partidos: no hay ninguna combinación claramente inusual.</li>';
+  const un = unrepresented(M);
+  const unl = un.slice(0, 4).map((x) => `<li><b>${esc(x.q.short)}</b><span>Tú: ${esc(ansBrief(x.q, x.u))}. Ninguna de las ${x.n} candidaturas de ${esc(pr.name)} con postura conocida está de tu lado.</span></li>`).join("")
+    || `<li class="empty">En todas las preguntas en las que tomas partido hay al menos una candidatura de ${esc(pr.name)} de tu lado.</li>`;
+  const top = M.prov[0], byClose = M.prov.filter((m) => m.close != null).sort((a, b) => b.close - a.close)[0];
+  const closeTxt = !top || !byClose ? "" : byClose.pid === top.pid
+    ? `${esc(pName(top.pid, st.prov))} es a la vez la candidatura con más coincidencia pregunta a pregunta y la más cercana en el conjunto de las dimensiones (cercanía ${Math.round(byClose.close * 100)} %).`
+    : `La candidatura más cercana en el conjunto de las dimensiones es ${esc(pName(byClose.pid, st.prov))} (cercanía ${Math.round(byClose.close * 100)} %), aunque la de más coincidencia pregunta a pregunta es ${esc(pName(top.pid, st.prov))}. Pasa cuando un partido se parece a ti en el conjunto pero no en temas concretos.`;
+  $("#r-portrait").innerHTML = `
+    <div class="sec-head"><p class="label">Tu perfil, explicado</p><h2 id="portrait-h" class="h2">Qué dicen de ti tus ${M.qs.length} respuestas</h2>
+    <p class="sub">Todo lo que aparece aquí sale de tus respuestas, no de etiquetas previas. Cuando hay pocos datos para afirmar algo, lo decimos. ${closeTxt}</p></div>
+    <div class="portrait">
+      <div class="trait"><h3 class="h3">Lo que define tus respuestas</h3><ul class="tlist">${defines}</ul></div>
+      <div class="trait"><h3 class="h3">Donde eres moderado o mixto</h3><ul class="tlist">${softs}</ul></div>
+      <div class="trait"><h3 class="h3">Combinaciones poco habituales</h3><ul class="tlist">${combos}</ul></div>
+      <div class="trait"><h3 class="h3">Opiniones sin candidatura en ${esc(pr.name)} <span class="muted small">(${un.length})</span></h3><ul class="tlist">${unl}</ul>${un.length > 4 ? `<p class="small muted">Y ${un.length - 4} más. Las ves pregunta a pregunta en «Tus respuestas».</p>` : ""}</div>
+    </div>
+    <p class="small muted">Abre cada dimensión en <a href="#r-dims" class="link-btn" style="padding:0">«Siete dimensiones»</a> para ver qué respuestas te sitúan ahí y dónde está cada partido.</p>`;
+}
+
+// Detalle de una dimensión: qué respuestas te sitúan, tu posición tema a tema y las candidaturas
+function dimDetail(id) {
+  const M = MODEL, st = M.st, d = DIM[id], o = M.user.dims[id], rows = dimContrib(st, id);
+  const what = `<p class="dinfo"><b>Qué mide.</b> ${esc(d.desc)}</p>`;
+  const strip = `<div><p class="subh">Las candidaturas de ${esc(PROV[st.prov].name)} en esta dimensión</p>${dimStrip(d, M, M.avail)}</div>`;
+  if (!rows.length) return `<div class="ddetail">${what}${strip}</div>`;
+  const fmt = (c) => Math.abs(c) < 0.5 ? "±0" : signed(c);
+  const li = (r) => `<li><b>${esc(r.q.short)}</b><span>${esc(ucFirst(ansBrief(r.q, r.u)))}${st.imp[r.q.id] ? " · ★" : ""} · aporta <b class="num">${fmt(r.c)}</b></span></li>`;
+  const toA = rows.filter((r) => r.c <= -0.5).sort((a, b) => a.c - b.c), toB = rows.filter((r) => r.c >= 0.5).sort((a, b) => b.c - a.c), mid = rows.length - toA.length - toB.length;
+  const col = (arr, title) => `<div><p class="subh">${title} (${arr.length})</p>${arr.length ? `<ul class="cmp">${arr.slice(0, 4).map(li).join("")}</ul>${arr.length > 4 ? `<details class="more"><summary>Ver ${arr.length - 4} más</summary><ul class="cmp" style="margin-top:8px">${arr.slice(4).map(li).join("")}</ul></details>` : ""}` : '<ul class="cmp"><li class="empty">Ninguna respuesta.</li></ul>'}</div>`;
+  const by = dimByArea(rows);
+  const kind = Math.abs(o.v) < 25 ? (dimKind(rows) === "mixta" ? " Tu posición es <b>mixta</b>: respuestas firmes en los dos sentidos se compensan." : " Tu posición es <b>moderada</b>: tus respuestas son intermedias o poco marcadas.") : "";
+  return `<div class="ddetail">
+    <p class="small">Tu posición (${signed(o.v)}) es la media de tus ${plural(rows.length, "respuesta", "respuestas")} en esta dimensión: cada una «aporta» los puntos que suma o resta, y las neutrales pesan la mitad.${kind}${rows.length < 3 ? " Con tan pocas respuestas, es orientativa." : ""}</p>
+    <div class="two">${col(toA, `Te acercan a «${esc(d.a)}»`)}${col(toB, `Te acercan a «${esc(d.b)}»`)}</div>
+    ${mid ? `<p class="small muted">${plural(mid, "respuesta neutral no te mueve", "respuestas neutrales no te mueven")} hacia ningún lado.</p>` : ""}
+    ${by.length >= 2 ? `<div><p class="subh">Tu posición tema a tema</p><div class="subdims">${by.map((x) => `<div class="sub-row"><span>${esc(x.a.name)}</span>${miniHTML(x.v)}<span class="small muted">${signed(x.v)} <span class="sr">con </span>(${x.n})<span class="sr"> respuestas</span></span></div>`).join("")}</div><p class="small muted" style="margin-top:6px">Entre paréntesis, cuántas de tus respuestas de cada tema miden esta dimensión.</p></div>` : ""}
+    ${strip}${what}</div>`;
+}
+
+// Detalle de un tema: tus respuestas y las candidaturas que más y menos coinciden contigo en él
+function areaDetail(id) {
+  const M = MODEL, st = M.st, a = AREA[id];
+  const qs = M.qs.filter((q) => q.area === id).sort((x, y) => Math.abs(st.ans[y.id] - 3) - Math.abs(st.ans[x.id] - 3)), ns = M.ns.filter((q) => q.area === id);
+  const li = (q) => `<li><b>${esc(q.short)}</b><span>${esc(ucFirst(ansBrief(q, st.ans[q.id])))}${st.imp[q.id] ? " · ★ importante" : ""}</span></li>`;
+  const aff = M.prov.map((m) => ({ m, x: areaAff(m).find((y) => y.a.id === id) })).filter((o) => o.x && o.x.n >= 2).sort((p, q) => q.x.v - p.x.v || q.x.n - p.x.n);
+  const row = (o) => `<div class="affrow"><span><i class="sw" style="background:${P[o.m.pid].color}"></i> ${esc(pName(o.m.pid, st.prov))} <span class="muted">(${o.x.n})</span></span><span class="bar"><i style="width:${Math.round(o.x.v * 100)}%"></i></span><span class="v">${Math.round(o.x.v * 100)}</span></div>`;
+  const parties = aff.length ? `${aff.slice(0, 3).map(row).join("")}${aff.length > 3 ? `<p class="small muted" style="margin:6px 0 0">La que menos:</p>${row(aff[aff.length - 1])}` : ""}` : '<ul class="cmp"><li class="empty">Ninguna candidatura tiene postura conocida en al menos dos de tus respuestas de este tema.</li></ul>';
+  return `<div class="ddetail two">
+    <div><p class="subh">Tus respuestas (${qs.length}${ns.length ? ` y ${ns.length} «No lo sé»` : ""})</p>${qs.length ? `<ul class="cmp">${qs.slice(0, 5).map(li).join("")}</ul>${qs.length > 5 ? `<details class="more"><summary>Ver ${qs.length - 5} más</summary><ul class="cmp" style="margin-top:8px">${qs.slice(5).map(li).join("")}</ul></details>` : ""}` : '<ul class="cmp"><li class="empty">No has dado tu opinión en ninguna pregunta de este tema.</li></ul>'}</div>
+    <div><p class="subh">Coincidencia en ${esc(lcFirst(a.name))}</p><div class="aff" style="grid-template-columns:1fr">${parties}</div>
+      <p class="small muted" style="margin-top:8px">Acuerdo medio en las preguntas de este tema que has respondido y en las que cada candidatura tiene postura (entre paréntesis). Solo con al menos dos.</p></div>
+  </div>`;
+}
+
+// Cómo se calcula la coincidencia con un partido, paso a paso, y qué respuestas la mueven más
+function calcDetail(pid) {
+  const M = MODEL, st = M.st, m = M.all.find((x) => x.pid === pid);
+  if (!m) return "";
+  const ab = P[pid].ab, n = m.items.length;
+  if (!n) return `<p class="small">${esc(ab)} no tiene postura conocida en ninguna de tus respuestas: su coincidencia es el valor neutro del 50 %.</p>`;
+  const simple = Math.round(m.items.reduce((a, i) => a + 1 - i.d / 4, 0) / n * 100);
+  const nImp = m.items.filter((i) => st.imp[i.q.id]).length, nPri = m.items.filter((i) => st.prios.includes(i.q.area)).length, nNeu = m.items.filter((i) => i.u === 3).length, nFam = m.items.filter((i) => famFactor(i.q, st) < 1).length;
+  const eff = m.items.map((i) => ({ i, d: m.score - matchParty(pid, st, M.qs.filter((q) => q.id !== i.q.id), M.user).score }));
+  const pts = (x) => `${(Math.abs(x) * 100).toFixed(1).replace(".", ",")} ${Math.abs(x) * 100 >= 0.95 && Math.abs(x) * 100 < 1.05 ? "punto" : "puntos"}`;
+  const plus = eff.filter((e) => e.d > 0.0005).sort((a, b) => b.d - a.d).slice(0, 3), minus = eff.filter((e) => e.d < -0.0005).sort((a, b) => a.d - b.d).slice(0, 3);
+  const li = (e) => `<li><b>${esc(e.i.q.short)}</b><span>Tú: ${esc(ansBrief(e.i.q, e.i.u))} · ${esc(ab)}: ${esc(ansBrief(e.i.q, e.i.v))}${e.i.est ? " (estimada)" : ""} · sin ella, ${e.d > 0 ? "bajaría" : "subiría"} ${pts(e.d)}</span></li>`;
+  const w = [nImp && `${nImp} marcadas como importantes (×${W_IMPORTANT})`, nPri && `${nPri} de tus áreas prioritarias (×${String(W_PRIORITY).replace(".", ",")})`, nNeu && `${nNeu} neutrales (×${String(W_NEUTRAL).replace(".", ",")})`, m.nEst && `${m.nEst} con su postura estimada (×${String(W_ESTIMATED).replace(".", ",")})`, nFam && `${nFam} de familias de preguntas parecidas (peso repartido)`].filter(Boolean);
+  return `<div class="ddetail">
+    <ol class="calc-steps">
+      <li><b>Preguntas comparadas: ${n} de tus ${M.qs.length} respuestas con opinión.</b> En el resto, ${esc(ab)} no tiene postura conocida y no cuenta.</li>
+      <li><b>Acuerdo medio simple: ${simple} %.</b> Cada pregunta vale 1 − |tu respuesta − su postura| ÷ 4: 100 % si coincidís, 0 % si estáis en extremos opuestos.</li>
+      <li><b>Con los pesos: ${m.raw} %.</b> ${w.length ? `Pesan distinto ${joinY(w)}.` : "Todas tus respuestas pesan lo mismo."}</li>
+      ${m.padded ? `<li><b>Relleno neutro: ${m.pct} %.</b> Como solo tiene postura en una parte pequeña de tus respuestas, se añade un 50 % neutro hasta completar la mitad del peso.</li>` : `<li><b>Resultado: ${m.pct} %.</b> Tiene postura en suficientes respuestas, sin relleno neutro.</li>`}
+      <li><b>Comprobación: ${Math.round(m.alt * 100)} %</b> con el método alternativo, que solo mira si estáis del mismo lado.</li>
+    </ol>
+    <div class="two">
+      <div><p class="subh" style="color:var(--ok)">Lo que más le suma</p>${plus.length ? `<ul class="cmp">${plus.map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">Ninguna respuesta le suma por encima de su media.</li></ul>'}</div>
+      <div><p class="subh" style="color:var(--ko)">Lo que más le resta</p>${minus.length ? `<ul class="cmp">${minus.map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">Ninguna respuesta le resta por debajo de su media.</li></ul>'}</div>
+    </div></div>`;
+}
+
+// Un partido frente a ti en cada dimensión
+function partyDims(pid) {
+  const M = MODEL, st = M.st, pd = PARTY_DIM[pid], ab = P[pid].ab;
+  const rows = BANK.dims.map((d) => {
+    const o = M.user.dims[d.id], pv = pd[d.id];
+    const txt = o && pv !== undefined ? `Tú ${signed(o.v)} · ${esc(ab)} ${signed(pv)} · a ${plural(Math.round(Math.abs(o.v - pv)), "punto", "puntos")}` : pv !== undefined ? `${esc(ab)} ${signed(pv)} · no has respondido` : o ? `Tú ${signed(o.v)} · ${esc(ab)} sin posturas` : "Sin datos";
+    return `<div class="pdrow"><div><b>${esc(d.name)}</b><span class="small muted">${txt}</span></div><div class="track sm" role="img" aria-label="${esc(d.name)}: ${esc(txt)}, de ${esc(d.a)} a ${esc(d.b)}">${trackHTML(o?.v, pv !== undefined ? [{ pid, v: pv, tip: `${pName(pid, st.prov)}: ${dimLabel(d, pv)} (${signed(pv)})` }] : [], o ? `Tú: ${dimLabel(d, o.v)}` : "")}</div></div>`;
+  }).join("");
+  return `<div class="ddetail"><div class="pdims">${rows}</div><p class="small muted">Círculo con banda amarilla: tú. Rombo: ${esc(ab)}, con todas sus posturas del banco. La distancia media en estas dimensiones es su cercanía ideológica.</p></div>`;
+}
+
+// ── Comparar dos candidaturas
+function renderVersus() {
+  const M = MODEL, st = M.st, pr = PROV[st.prov], sec = $("#r-versus");
+  const others = M.all.filter((m) => !M.avail.includes(m.pid));
+  const valid = (pid) => M.all.some((m) => m.pid === pid);
+  if (!valid(UI.vsA)) UI.vsA = M.prov[0]?.pid || M.all[0]?.pid;
+  if (!valid(UI.vsB) || UI.vsB === UI.vsA) UI.vsB = (M.prov.find((m) => m.pid !== UI.vsA) || M.all.find((m) => m.pid !== UI.vsA))?.pid;
+  const head = `<div class="sec-head"><p class="label">Comparar</p><h2 id="versus-h" class="h2">Dos candidaturas, frente a frente</h2>
+    <p class="sub">Elige dos candidaturas para ver en qué se diferencian de verdad, pregunta a pregunta y dimensión a dimensión, y de cuál estás más cerca en cada caso.</p></div>`;
+  if (!UI.vsA || !UI.vsB) { sec.innerHTML = `${head}<ul class="cmp"><li class="empty">No hay suficientes candidaturas para comparar.</li></ul>`; return; }
+  const opts = (sel) => `<optgroup label="En ${esc(pr.name)}">${M.prov.map((m) => `<option value="${m.pid}"${m.pid === sel ? " selected" : ""}>${esc(pName(m.pid, st.prov))}</option>`).join("")}</optgroup>${others.length ? `<optgroup label="En otros territorios">${others.map((m) => `<option value="${m.pid}"${m.pid === sel ? " selected" : ""}>${esc(P[m.pid].name)}</option>`).join("")}</optgroup>` : ""}`;
+  const A = M.all.find((m) => m.pid === UI.vsA), B = M.all.find((m) => m.pid === UI.vsB), a = A.pid, b = B.pid, abA = P[a].ab, abB = P[b].ab;
+  const both = BANK.questions.filter((q) => q.pos[a] && q.pos[b]);
+  const same = both.filter((q) => sideOf(q.pos[a]) && sideOf(q.pos[a]) === sideOf(q.pos[b])), opp = both.filter((q) => sideOf(q.pos[a]) && sideOf(q.pos[b]) && sideOf(q.pos[a]) !== sideOf(q.pos[b]));
+  const gap = (q) => Math.abs(q.pos[a] - q.pos[b]), ans = (q) => (st.ans[q.id] >= 1 ? 1 : 0);
+  const diffs = both.filter((q) => gap(q) >= 2).sort((x, y) => gap(y) - gap(x) || ans(y) - ans(x) || x.prio - y.prio);
+  const est = (q, pid) => (q.est.includes(pid) ? ' <i class="est">(estimada)</i>' : "");
+  const li = (q) => { const u = st.ans[q.id], du = u >= 1 ? Math.abs(u - q.pos[a]) - Math.abs(u - q.pos[b]) : null;
+    return `<li><b>${esc(q.short)}</b><span>${esc(abA)}: ${esc(ansBrief(q, q.pos[a]))}${est(q, a)} · ${esc(abB)}: ${esc(ansBrief(q, q.pos[b]))}${est(q, b)}</span><span>Tú: ${esc(ansBrief(q, u))}${du == null ? "" : du < 0 ? ` · <b>más cerca de ${esc(abA)}</b>` : du > 0 ? ` · <b>más cerca de ${esc(abB)}</b>` : " · a igual distancia"}</span></li>`; };
+  const dgap = BANK.dims.filter((d) => PARTY_DIM[a][d.id] !== undefined && PARTY_DIM[b][d.id] !== undefined).map((d) => ({ d, g: Math.abs(PARTY_DIM[a][d.id] - PARTY_DIM[b][d.id]) })).sort((x, y) => y.g - x.g);
+  const dimRows = BANK.dims.map((d) => {
+    const o = M.user.dims[d.id], va = PARTY_DIM[a][d.id], vb = PARTY_DIM[b][d.id];
+    const marks = [va !== undefined && { pid: a, v: va, tip: `${abA}: ${signed(va)}` }, vb !== undefined && { pid: b, v: vb, tip: `${abB}: ${signed(vb)}` }].filter(Boolean);
+    const txt = [o && `Tú ${signed(o.v)}`, `${abA} ${va !== undefined ? signed(va) : "sin datos"}`, `${abB} ${vb !== undefined ? signed(vb) : "sin datos"}`].filter(Boolean).join(" · ");
+    return `<div class="pdrow"><div><b>${esc(d.name)}</b><span class="small muted">${esc(txt)}</span></div><div class="track sm" role="img" aria-label="${esc(d.name)}: ${esc(txt)}">${trackHTML(o?.v, marks, o ? `Tú: ${signed(o.v)}` : "")}</div></div>`;
+  }).join("");
+  const card = (m) => `<div class="vs-card">${logo(m.pid)}<div style="display:grid;gap:2px;min-width:0"><b>${esc(M.avail.includes(m.pid) ? pName(m.pid, st.prov) : P[m.pid].name)}</b><span class="small muted">Coincidencia contigo ${m.pct} %${m.close != null ? ` · cercanía ${Math.round(m.close * 100)} %` : ""}${M.avail.includes(m.pid) ? "" : " · no se presenta en tu provincia"}</span></div></div>`;
+  sec.innerHTML = `${head}
+    <div class="vs-pick"><div class="field"><label class="label" for="vs-a">Candidatura A</label><select id="vs-a" data-ctl="vsA">${opts(a)}</select></div>
+      <div class="field"><label class="label" for="vs-b">Candidatura B</label><select id="vs-b" data-ctl="vsB">${opts(b)}</select></div></div>
+    <div class="vs-head">${card(A)}${card(B)}</div>
+    <p class="why">${esc(P[a].name)} y ${esc(P[b].name)} tienen postura conocida en ${both.length} preguntas comunes: están del mismo lado en ${same.length}, en lados opuestos en ${opp.length}${both.length - same.length - opp.length ? ` y en ${both.length - same.length - opp.length} alguna de las dos es neutral` : ""}.${dgap.length && dgap[0].g >= 15 ? ` Donde más se separan de fondo es en ${esc(joinY(dgap.filter((x) => x.g >= 15).slice(0, 2).map((x) => DIM_SHORT[x.d.id])))}.` : " En el conjunto de las dimensiones están muy cerca."}</p>
+    <div class="two">
+      <div><p class="subh">Dónde más se diferencian (${diffs.length})</p>${diffs.length ? `<ul class="cmp">${diffs.slice(0, 5).map(li).join("")}</ul>${diffs.length > 5 ? `<details class="more"><summary>Ver ${diffs.length - 5} diferencias más</summary><ul class="cmp" style="margin-top:8px">${diffs.slice(5).map(li).join("")}</ul></details>` : ""}` : '<ul class="cmp"><li class="empty">No hay preguntas en las que sus posturas se separen dos puntos o más.</li></ul>'}</div>
+      <div><p class="subh">Las siete dimensiones</p><div class="pdims">${dimRows}</div><p class="small muted">Círculo con banda amarilla: tú. Rombos: cada candidatura, con su color.</p></div>
+    </div>
+    <p class="small muted">Las posturas estimadas aparecen en cursiva. Comparar dos partidos no cambia tu resultado.</p>`;
 }
 
 function renderSummary() {
@@ -661,11 +911,12 @@ function renderSummary() {
           <p class="label">Tu mayor coincidencia en ${esc(pr.name)}</p>
           ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
           <p class="tm-pct">${top.pct}<small>%</small></p>
+          <p class="small muted">de coincidencia con sus posturas, pregunta a pregunta. No es una probabilidad de voto.</p>
           <p class="small">${top.close != null ? `Cercanía ideológica: <b>${Math.round(top.close * 100)} %</b> · ` : ""}comparado en ${top.n} de ${nAns} respuestas</p>
           ${top.pct < 60 ? `<p class="small">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}
           <p class="small muted">Siguientes: ${M.prov.slice(1, 3).map((m) => `${esc(pName(m.pid, st.prov))} (${m.pct} %)`).join(" · ") || "—"}</p>` : "<p>No hay candidaturas comparables.</p>"}
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
-          <div class="res-actions"><a class="btn btn-primary btn-sm" href="#r-parties">Ver partidos en detalle</a>${!SHARED ? '<a class="btn btn-ghost btn-sm" href="#r-share">Compartir</a>' : ""}</div>
+          <div class="res-actions"><a class="btn btn-primary btn-sm" href="#r-parties">Ver partidos en detalle</a><a class="btn btn-ghost btn-sm" href="#r-portrait">Tu perfil, explicado</a>${!SHARED ? '<a class="btn btn-ghost btn-sm" href="#r-share">Compartir</a>' : ""}</div>
         </div>
       </div>
     </div>`;
@@ -693,7 +944,7 @@ function renderDims() {
       <div class="dplot">
         <div class="track" role="img" aria-label="${esc(d.name)}: tú ${o ? signed(o.v) : "sin datos"}${pv !== undefined ? `, ${esc(pName(cmp, st.prov))} ${signed(pv)}` : ""}, en una escala de −100 (${esc(d.a)}) a +100 (${esc(d.b)})">${track}</div>
         <div class="poles"><span>← ${esc(d.a)}</span><span>${esc(d.b)} →</span></div>
-        <details class="more"><summary>Qué mide</summary><p class="dinfo">${esc(d.desc)}</p></details>
+        <details class="more"><summary>${o ? "Por qué estás aquí y dónde están los partidos" : "Qué mide y dónde están los partidos"}</summary><div data-lazy="dim:${d.id}"></div></details>
       </div>
     </div>`;
   }).join("");
@@ -739,24 +990,24 @@ function renderMap() {
     const px = sx(pt.x), py = sy(pt.y), name = pName(m.pid, st.prov), t = P[m.pid].ab;
     const at = lab(px, py, t.length * 7.4 + 4, 14);
     const note = pt.missing.length ? ` · posición aproximada: sin datos de ${pt.missing.map((d) => DIM_SHORT[d]).join(", ")}` : "";
-    return `<g class="map-pt" data-pid="${m.pid}" tabindex="0" role="img" aria-label="${esc(name)}: coincidencia contigo ${m.pct} %${esc(note)}" data-tip="${esc(name)} · coincidencia contigo ${m.pct} %${esc(note)}">
+    return `<g class="map-pt${UI.mapSel === m.pid ? " sel" : ""}" data-pid="${m.pid}" tabindex="0" role="button" aria-pressed="${UI.mapSel === m.pid}" aria-label="${esc(name)}: coincidencia contigo ${m.pct} %${esc(note)}. Ver por qué está ahí" data-tip="${esc(name)} · coincidencia contigo ${m.pct} %${esc(note)}">
       <circle class="hit" cx="${px}" cy="${py}" r="14" fill="transparent"/>
-      <circle cx="${px}" cy="${py}" r="8" style="fill:${P[m.pid].color};stroke:var(--sheet);stroke-width:2.5"/>
+      <circle class="dot" cx="${px}" cy="${py}" r="8" style="fill:${P[m.pid].color};stroke:var(--sheet);stroke-width:2.5"/>
       ${pt.missing.length ? `<circle cx="${px}" cy="${py}" r="11.5" fill="none" style="stroke:${P[m.pid].color};stroke-width:1.4;stroke-dasharray:2.5 2.5"/>` : ""}
       ${at ? `<text x="${at[0]}" y="${at[1]}" class="ml">${esc(t)}</text>` : ""}</g>`;
   }).join("");
-  const me = u.ok ? `<g role="img" aria-label="Tu posición en el mapa"><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="15" class="me-o"/><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="11" class="me-i"/><text x="${sx(u.x)}" y="${sy(u.y) + 3.6}" text-anchor="middle" class="me-t">TÚ</text></g>` : "";
+  const me = u.ok ? `<g class="map-me${UI.mapSel === "me" ? " sel" : ""}" data-pid="me" tabindex="0" role="button" aria-pressed="${UI.mapSel === "me"}" aria-label="Tu posición en el mapa. Ver qué la explica"><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="15" class="me-o"/><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="11" class="me-i"/><text x="${sx(u.x)}" y="${sy(u.y) + 3.6}" text-anchor="middle" class="me-t">TÚ</text></g>` : "";
   const pct = (r) => `${Math.round(r * 100)} %`;
   const cap = (arr) => { const t = arr.join(", "); return t.charAt(0).toUpperCase() + t.slice(1) + "."; };
   const near = M.prov.slice(0, 3);
-  const row = (m, i) => `<li${i < 3 ? ' class="near"' : ""}><b><span class="sw" style="background:${P[m.pid].color}"></span> ${i + 1}. ${esc(pName(m.pid, st.prov))}</b><span>Coincidencia ${m.pct} %${m.close != null ? ` · cercanía ideológica ${Math.round(m.close * 100)} %` : ""}${G.pts[m.pid].ok ? "" : " · sin datos suficientes para situarla en el mapa"}</span></li>`;
+  const row = (m, i) => `<li${i < 3 ? ' class="near"' : ""}><button type="button" class="ml-btn" data-mapsel="${m.pid}" aria-pressed="${UI.mapSel === m.pid}"><b><span class="sw" style="background:${P[m.pid].color}"></span> ${i + 1}. ${esc(pName(m.pid, st.prov))}</b><span>Coincidencia ${m.pct} %${m.close != null ? ` · cercanía ideológica ${Math.round(m.close * 100)} %` : ""}${G.pts[m.pid].ok ? "" : " · sin datos suficientes para situarla en el mapa"}</span></button></li>`;
   $("#r-map").innerHTML = `
     <div class="sec-head"><p class="label">Mapa</p><h2 id="map-h" class="h2">Dónde te sitúas frente a las candidaturas de ${esc(PROV[st.prov].name)}</h2>
     <p class="sub">El mapa se calcula automáticamente con las ${BANK.dims.length} dimensiones del test a la vez: tus respuestas y las posturas de cada partido. Los perfiles parecidos quedan cerca y los muy distintos, lejos.</p></div>
     <div class="map-wrap">
       <div class="map-box">
         <svg class="map-svg" viewBox="0 0 ${W} ${H}" role="group" aria-label="Mapa político con las ${BANK.dims.length} dimensiones del test">
-          <style>.mg{stroke:var(--rule-2);stroke-width:1}.mg.z{stroke:var(--rule);stroke-width:1.6}.ax{fill:var(--ink-2);font-size:12px;font-weight:650}.ml{fill:var(--ink);font-size:12px;font-weight:750}.me-o{fill:var(--mark);stroke:var(--mark-ink);stroke-width:2}.me-i{fill:var(--ink)}.me-t{fill:var(--paper);font-size:9.5px;font-weight:900;letter-spacing:.04em}.frame{fill:none;stroke:var(--rule);stroke-width:1}</style>
+          <style>.mg{stroke:var(--rule-2);stroke-width:1}.mg.z{stroke:var(--rule);stroke-width:1.6}.ax{fill:var(--ink-2);font-size:12px;font-weight:650}.ml{fill:var(--ink);font-size:12px;font-weight:750}.me-o{fill:var(--mark);stroke:var(--mark-ink);stroke-width:2}.me-i{fill:var(--ink)}.me-t{fill:var(--paper);font-size:9.5px;font-weight:900;letter-spacing:.04em}.frame{fill:none;stroke:var(--rule);stroke-width:1}.map-pt,.map-me{cursor:pointer}.map-pt.sel .dot{stroke:var(--ink)!important;stroke-width:3.5!important}.map-me.sel .me-o{stroke-width:4}.map-me:focus{outline:none}.map-me:focus-visible .me-o{stroke:var(--ink);stroke-width:4}</style>
           <rect class="frame" x="${pad}" y="${pad}" width="${inner}" height="${ih}"/>
           ${grid}
           <text class="ax" x="${pad + inner / 2}" y="${pad + ih + 24}" text-anchor="middle" style="font-weight:800;fill:var(--ink)">← Eje 1 · ${pct(G.ratio[0])} de las diferencias →</text>
@@ -769,12 +1020,15 @@ function renderMap() {
           <div><dt>↑ Hacia arriba</dt><dd>${esc(cap(G.axes[1].pos))}</dd></div>
           <div><dt>↓ Hacia abajo</dt><dd>${esc(cap(G.axes[1].neg))}</dd></div>
         </dl>
+        ${UI.mapDim ? `<div class="map-dim"><p class="subh">${esc(DIM[UI.mapDim].name)}, por separado</p>${dimStrip(DIM[UI.mapDim], M, M.avail)}<p class="small muted">Solo esta dimensión, en la misma escala de −100 a +100 que «Siete dimensiones». El mapa de arriba sigue resumiendo las ${BANK.dims.length}.</p></div>` : ""}
       </div>
       <div class="map-ctrl">
+        <div class="cmp-bar"><label class="label" for="map-dim">Ver una dimensión</label><select id="map-dim" data-ctl="mapdim"><option value="">Ninguna: solo el mapa global</option>${BANK.dims.map((d) => `<option value="${d.id}"${UI.mapDim === d.id ? " selected" : ""}>${esc(d.name)}</option>`).join("")}</select></div>
+        <div id="map-sel" class="map-sel" aria-live="polite">${mapSelHTML()}</div>
         ${u.ok ? "" : `<p class="small" style="color:var(--warn)">${ICON.warn} No podemos situarte en el mapa: te faltan respuestas con opinión en ${esc(u.missing.map((d) => DIM_SHORT[d]).join(", "))}, que pesan mucho en sus ejes. Tu coincidencia con cada partido sí está calculada.</p>`}
         <div><p class="subh">Candidaturas por orden de coincidencia</p>
           <ul class="tlist map-list">${M.prov.map(row).join("")}</ul></div>
-        <p class="small muted">La coincidencia se calcula pregunta a pregunta con todas tus respuestas, no midiendo distancias en el dibujo. Por eso el orden de la lista es el más fiable.</p>
+        <p class="small muted">La coincidencia se calcula pregunta a pregunta con todas tus respuestas, no midiendo distancias en el dibujo: dos puntos cercanos pueden tener coincidencias algo distintas. El orden de la lista es el más fiable.</p>
         <details class="more"><summary>Cómo leer el mapa</summary><div class="small" style="display:grid;gap:8px;margin-top:10px">
           <p>Los ejes no son «izquierda» y «derecha»: son las dos combinaciones de dimensiones que más diferencian a los partidos españoles, calculadas con un análisis de componentes principales. Juntas recogen el ${pct(G.ratio[0] + G.ratio[1])} de esas diferencias.</p>
           <p>Cada partido se sitúa con sus posturas en todas las dimensiones; tú, con tus respuestas. Dos puntos cercanos son perfiles de respuesta parecidos según este modelo, pero el dibujo pierde el ${pct(1 - G.ratio[0] - G.ratio[1])} restante de las diferencias.</p>
@@ -782,6 +1036,33 @@ function renderMap() {
         </div></details>
       </div>
     </div>`;
+}
+
+// Panel del punto seleccionado en el mapa: por qué está donde está, respecto a ti
+function mapSelHTML() {
+  const M = MODEL, st = M.st, pid = UI.mapSel;
+  if (!pid) return `<p class="small muted">Toca un punto del mapa o un nombre de la lista para ver por qué está ahí.</p>`;
+  if (pid === "me") {
+    const ds = BANK.dims.filter((d) => M.user.dims[d.id]).sort((a, b) => Math.abs(M.user.dims[b.id].v) - Math.abs(M.user.dims[a.id].v));
+    return `<p class="subh">Tu posición</p><p class="small">Te sitúan sobre todo ${ds.slice(0, 3).map((d) => `${esc(DIM_PHRASE[d.id][M.user.dims[d.id].v < 0 ? 0 : 1])} (${signed(M.user.dims[d.id].v)})`).join(", ") || "tus respuestas"}.</p><p class="small muted">Abre cada dimensión en «Siete dimensiones» para ver qué respuestas pesan más.</p>`;
+  }
+  const m = M.all.find((x) => x.pid === pid); if (!m) return "";
+  const pd = PARTY_DIM[pid], ab = P[pid].ab;
+  const gaps = Object.entries(M.user.dims).filter(([k]) => pd[k] !== undefined).map(([k, o]) => ({ k, u: o.v, p: pd[k], g: Math.abs(o.v - pd[k]) })).sort((a, b) => b.g - a.g);
+  const fmt = (x) => `${DIM_SHORT[x.k]} (tú ${signed(x.u)}, ${esc(ab)} ${signed(x.p)})`;
+  const far = gaps.filter((x) => x.g >= 30).slice(0, 2), near = gaps.filter((x) => x.g < 20).sort((a, b) => a.g - b.g).slice(0, 2);
+  const pt = MAPM.pts[pid];
+  return `<div class="tm-row">${logo(pid, "sm")}<b>${esc(pName(pid, st.prov))}</b></div>
+    <p class="small">Coincidencia contigo <b>${m.pct} %</b>${m.close != null ? ` · cercanía ideológica <b>${Math.round(m.close * 100)} %</b>` : ""}.</p>
+    ${far.length ? `<p class="small">Más lejos de ti en ${joinY(far.map(fmt))}.</p>` : ""}${near.length ? `<p class="small">Más cerca en ${joinY(near.map(fmt))}.</p>` : ""}
+    ${!pt.ok ? `<p class="small muted">No aparece en el mapa: le faltan posturas en las dimensiones que más pesan en sus ejes.</p>` : pt.missing.length ? `<p class="small muted">Posición aproximada: sin posturas en ${esc(pt.missing.map((d) => DIM_SHORT[d]).join(", "))}.</p>` : ""}
+    <div class="res-actions"><button type="button" class="btn btn-ghost btn-sm" data-card="${pid}">Ver su ficha</button>${M.prov[0] && M.prov[0].pid !== pid ? `<button type="button" class="btn btn-ghost btn-sm" data-vs="${pid}">Comparar con ${esc(P[M.prov[0].pid].ab)}</button>` : ""}</div>`;
+}
+function selectMap(pid) {
+  UI.mapSel = UI.mapSel === pid ? null : pid;
+  const box = $("#map-sel"); if (box) box.innerHTML = mapSelHTML();
+  $$("#r-map .map-pt, #r-map .map-me").forEach((g) => { const on = g.dataset.pid === UI.mapSel; g.classList.toggle("sel", on); g.setAttribute("aria-pressed", String(on)); });
+  $$("#r-map [data-mapsel]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mapsel === UI.mapSel)));
 }
 
 // ───────────────────────────── MAPA (análisis de componentes principales)
@@ -799,7 +1080,9 @@ function fitMap() {
     const strong = ids.map((d, i) => ({ d, w: l[i] })).filter((x) => Math.abs(x.w) >= 0.3).sort((a, b) => Math.abs(b.w) - Math.abs(a.w));
     return { pos: strong.map((x) => DIM_PHRASE[x.d][x.w > 0 ? 1 : 0]), neg: strong.map((x) => DIM_PHRASE[x.d][x.w > 0 ? 0 : 1]) };
   });
-  MAPM = { ids, mean, L, axes, ratio: E.slice(0, 2).map((e) => e.val / total), fit: full.length, pts: {} };
+  // Correlación entre dimensiones según las posturas de los partidos (para detectar combinaciones poco habituales)
+  const corr = ids.map((_, i) => ids.map((__, j) => C[i][j] / Math.sqrt(C[i][i] * C[j][j] || 1)));
+  MAPM = { ids, mean, L, axes, corr, ratio: E.slice(0, 2).map((e) => e.val / total), fit: full.length, pts: {} };
   for (const pid of PIDS) MAPM.pts[pid] = mapProject(PARTY_DIM[pid]);
 }
 // Proyección por mínimos cuadrados con las dimensiones disponibles. Solo se sitúa un punto si esas
@@ -845,11 +1128,12 @@ function renderAreas() {
     if (pv !== undefined) track += `<span class="pm" style="left:${pctPos(pv)}%;background:${P[cmp].color}" data-tip="${esc(P[cmp].ab)}: ${signed(pv)}"></span>`;
     const label = !o ? "Sin respuestas con lectura izquierda-derecha" : Math.abs(o.v) < 15 ? "Equilibrio" : `${Math.abs(o.v) >= 60 ? "Muy " : ""}${o.v < 0 ? (Math.abs(o.v) >= 60 ? "progresista" : "Progresista") : (Math.abs(o.v) >= 60 ? "conservadora" : "Conservadora")} (${signed(o.v)})`;
     return `<div class="arow"><div class="an"><span class="al">${a.letter}</span><span>${esc(a.name)}</span>${st.prios.includes(a.id) ? '<span class="pri-tag">Prioridad</span>' : ""}</div>
-      <div class="track" role="img" aria-label="${esc(a.name)}: ${esc(label)}">${track}</div><div class="av">${esc(label)}</div></div>`;
+      <div class="track" role="img" aria-label="${esc(a.name)}: ${esc(label)}">${track}</div><div class="av">${esc(label)}</div>
+      <details class="more arow-more"><summary>Tus respuestas y quién coincide más contigo en este tema</summary><div data-lazy="area:${a.id}"></div></details></div>`;
   }).join("");
   $("#r-areas").innerHTML = `
     <div class="sec-head"><p class="label">Por temas</p><h2 id="areas-h2" class="h2">¿Posiciones más progresistas o más conservadoras en cada área?</h2>
-    <p class="sub">Lectura simplificada: sigue cómo se suelen alinear los partidos españoles en cada tema. Las preguntas transversales, que no dividen así, no cuentan aquí. Para un perfil más fino, mira las dimensiones.</p></div>
+    <p class="sub">Lectura simplificada: sigue cómo se suelen alinear los partidos españoles en cada tema. Las preguntas transversales, que no dividen así, no cuentan en la barra, pero sí en el detalle de cada tema, donde ves tus respuestas y qué candidaturas coinciden más contigo en él.</p></div>
     <div class="legend"><span><i class="lg-me"></i>Tú</span>${cmp ? `<span><i class="lg-dia" style="background:${P[cmp].color}"></i>${esc(pName(cmp, st.prov))}</span>` : ""}<span>← Progresista · Conservadora →</span></div>
     <div class="areas-chart">${rows}</div>`;
 }
@@ -901,8 +1185,8 @@ function propStatus(pid, qid, st) {
   if (!su) return { k: "neu", txt: "Respondiste en el punto intermedio" };
   return su === sp ? { k: "ok", txt: "Coincide con lo que respondiste" } : { k: "ko", txt: "Choca con lo que respondiste" };
 }
-function cmpList(items, ab, empty) {
-  const row = (i) => `<li><b>${esc(i.q.short)}</b><span>Tú: ${esc(answerText(i.q, i.u, true))} · ${esc(ab)}: <span${i.est ? ' class="est" title="Postura estimada"' : ""}>${esc(answerText(i.q, i.v, true))}${i.est ? " (estimada)" : ""}</span></span></li>`;
+function cmpList(items, ab, empty, pid = null) {
+  const row = (i) => `<li><b>${esc(i.q.short)}</b><span>Tú: ${esc(ansBrief(i.q, i.u))} · ${esc(ab)}: <span${i.est ? ' class="est" title="Postura estimada"' : ""}>${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span>${pid ? srcLink(i.q, pid) : ""}</span></li>`;
   if (!items.length) return `<ul class="cmp"><li class="empty">${empty}</li></ul>`;
   return `<ul class="cmp">${items.slice(0, 3).map(row).join("")}</ul>${items.length > 3 ? `<details class="more"><summary>Ver ${items.length - 3} más</summary><ul class="cmp" style="margin-top:8px">${items.slice(3).map(row).join("")}</ul></details>` : ""}`;
 }
@@ -949,11 +1233,17 @@ function partyCard(m, rank) {
     <div><p class="subh">Sus propuestas · ${cnt.ok || 0} coinciden y ${cnt.ko || 0} chocan con tus respuestas</p>
       ${propList(props.slice(0, 4))}${props.length > 4 ? `<details class="more"><summary>Ver ${props.length - 4} propuestas más</summary>${propList(props.slice(4))}</details>` : ""}</div>
     <div class="two">
-      <div><p class="subh" style="color:var(--ok)">En qué coincidís (${yes.length})</p>${cmpList(yes, p.ab, "Ninguna coincidencia clara.")}</div>
-      <div><p class="subh" style="color:var(--ko)">En qué discrepáis (${no.length})</p>${cmpList(no, p.ab, "No hay discrepancias fuertes.")}</div>
+      <div><p class="subh" style="color:var(--ok)">En qué coincidís (${yes.length})</p>${cmpList(yes, p.ab, "Ninguna coincidencia clara.", m.pid)}</div>
+      <div><p class="subh" style="color:var(--ko)">En qué discrepáis (${no.length})</p>${cmpList(no, p.ab, "No hay discrepancias fuertes.", m.pid)}</div>
     </div>
     ${versusTop(m)}
-    <details class="more"><summary>Coincidencia por área</summary><div class="aff" style="margin-top:10px">${affRows}</div></details>
+    <div class="pc-more">
+      <details class="more"><summary>Cómo se calcula su ${m.pct} % y qué respuestas lo mueven</summary><div data-lazy="calc:${m.pid}"></div></details>
+      <details class="more"><summary>Coincidencia por área</summary><div class="aff" style="margin-top:10px">${affRows}</div></details>
+      <details class="more"><summary>Su posición en las siete dimensiones, frente a la tuya</summary><div data-lazy="pdim:${m.pid}"></div></details>
+    </div>
+    ${dataLine(m.pid)}
+    <div class="res-actions"><button type="button" class="btn btn-ghost btn-sm" data-vs="${m.pid}">Comparar con otra candidatura</button></div>
   </article>`;
 }
 function renderParties() {
@@ -967,7 +1257,11 @@ function renderParties() {
   }).join("");
   $("#r-parties").innerHTML = `
     <div class="sec-head"><p class="label">Partidos</p><h2 id="parties-h" class="h2">Coincidencia con las candidaturas</h2>
-    <p class="sub"><b>Coincidencia</b>: cuánto se parecen tus respuestas a las posturas del partido, pregunta a pregunta. <b>Cercanía ideológica</b>: proximidad media en las dimensiones que has respondido. Pueden no coincidir: un partido puede estar cerca en el conjunto y lejos en temas concretos.</p></div>
+    <dl class="concepts">
+      <div><dt>Coincidencia</dt><dd>Cuánto se parecen tus respuestas a sus posturas, pregunta a pregunta. Es la cifra principal y la que ordena la lista.</dd></div>
+      <div><dt>Cercanía ideológica</dt><dd>Lo cerca que estáis en el conjunto de las siete dimensiones. Un partido puede estar cerca en el conjunto y lejos en temas concretos.</dd></div>
+      <div><dt>Lo que no mide</dt><dd>La intención ni la probabilidad de voto: no tiene en cuenta liderazgo, gestión, confianza en los candidatos ni voto útil.</dd></div>
+    </dl></div>
     <div class="rank-tabs" role="group" aria-label="Ámbito del ranking"><button type="button" data-scope="prov" aria-pressed="${UI.scope === "prov"}">${esc(pr.name)} (${M.prov.length})</button><button type="button" data-scope="all" aria-pressed="${UI.scope === "all"}">Toda España (${M.all.length})</button></div>
     <p class="small muted">${UI.scope === "prov" ? (M.prov.length < 10 ? `En ${esc(pr.name)} se presentan ${M.prov.length} candidaturas. Cambia a «Toda España» para ver tu top 10 con partidos de otros territorios.` : `Las 10 candidaturas de ${esc(pr.name)} con más coincidencia.`) : "Las candidaturas que no se presentan en tu provincia aparecen atenuadas."}</p>
     <ol class="rank">${rows}</ol>
@@ -1070,10 +1364,9 @@ function leastModel(M) {
 }
 function leastText(x, rank) {
   const st = ST(), m = x.m, nm = pName(m.pid, st.prov), ab = P[m.pid].ab;
-  const list = (arr) => arr.length <= 1 ? arr.join("") : `${arr.slice(0, -1).join(", ")} y ${arr[arr.length - 1]}`;
   let t = rank === 0 ? `<b>${esc(nm)}</b> es la candidatura de ${esc(PROV[st.prov].name)} más alejada de tus respuestas: coincidís un ${m.pct} % en las ${m.n} preguntas en las que tiene postura conocida.`
     : `Con <b>${esc(nm)}</b> coincides un ${m.pct} % en las ${m.n} preguntas en las que tiene postura conocida.`;
-  t += x.clash.length ? ` Estáis en lados opuestos en ${x.clash.length} de ellas${x.areas.length ? `, sobre todo en ${esc(list(x.areas.map((a) => a.a.name.toLowerCase())))}` : ""}.` : " No llegáis a estar en lados opuestos en ninguna: la distancia viene de diferencias de grado.";
+  t += x.clash.length ? ` Estáis en lados opuestos en ${x.clash.length} de ellas${x.areas.length ? `, sobre todo en ${esc(joinY(x.areas.map((a) => a.a.name.toLowerCase())))}` : ""}.` : " No llegáis a estar en lados opuestos en ninguna: la distancia viene de diferencias de grado.";
   if (x.dim) {
     const side = (v) => Math.abs(v) < 15 ? "una posición intermedia" : DIM_PHRASE[x.dim.d.id][v < 0 ? 0 : 1];
     t += Math.sign(x.dim.u) !== Math.sign(x.dim.p) && Math.abs(x.dim.u) >= 15 && Math.abs(x.dim.p) >= 15
@@ -1158,8 +1451,7 @@ function renderPoliticians() {
   const best = (r) => [...r.agree].sort((a, b) => (Math.abs(b.u - 3) + Math.abs(b.v - 3) - b.d) - (Math.abs(a.u - 3) + Math.abs(a.v - 3) - a.d) || b.w - a.w);
   const cards = top.map((r) => {
     const x = r.x, p = P[x.party], ex = best(r).slice(0, 2), diff = [...r.clash].sort((a, b) => b.d - a.d)[0];
-    const list = (arr) => arr.length <= 1 ? arr.join("") : `${arr.slice(0, -1).join(", ")} y ${arr[arr.length - 1]}`;
-    const why = `Coincidís en ${r.agree.length} de las ${r.n} cuestiones en las que conocemos su postura personal y que has respondido${r.clash.length ? `, y discrepáis en ${r.clash.length}` : ""}. Pensáis parecido sobre ${esc(list(best(r).slice(0, 3).map((i) => `«${i.q.short}»`)))}.`
+    const why = `Coincidís en ${r.agree.length} de las ${r.n} cuestiones en las que conocemos su postura personal y que has respondido${r.clash.length ? `, y discrepáis en ${r.clash.length}` : ""}. Pensáis parecido sobre ${esc(joinY(best(r).slice(0, 3).map((i) => `«${i.q.short}»`)))}.`
       + (x.party !== M.prov[0]?.pid ? ` Su partido no es la candidatura con la que más coincides: aquí solo cuentan sus posturas personales.` : "");
     const photo = x.photo
       ? `<img src="${esc(x.photo.src)}" alt="Retrato de ${esc(x.name)}" width="88" height="88" loading="lazy" decoding="async">`
@@ -1217,18 +1509,23 @@ function posNotes(q, pids) {
   const n = Object.entries(q.notes || {}).filter(([pid]) => pids.includes(pid));
   const src = Object.entries(q.src || {}).filter(([pid]) => pids.includes(pid));
   return (n.length ? `<ul class="pos-notes">${n.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : "")
-    + (src.length ? `<p class="unk">Fuentes: ${src.map(([pid, [url, label]]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(P[pid].ab)} · ${esc(label)}</a>`).join(" · ")}.</p>` : "");
+    + (src.length ? `<p class="unk">Fuentes: ${src.map(([pid, [url, label, type]]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(P[pid].ab)} · ${esc(label)}</a>${type ? ` <span class="src-t">(${esc(SRC_TYPE[type])})</span>` : ""}`).join(" · ")}.</p>` : "");
 }
 function bindResults() {
   const root = $("#v-results");
   root.addEventListener("toggle", (e) => {
     const box = e.target.open && e.target.querySelector(":scope > [data-lazy]:empty");
-    if (box) box.innerHTML = `<p class="dinfo" style="margin:8px 0">${esc(Q[box.dataset.lazy].ctx)}</p>${reviewPositions(Q[box.dataset.lazy])}`;
+    if (!box) return;
+    const [kind, id] = box.dataset.lazy.includes(":") ? box.dataset.lazy.split(":") : ["q", box.dataset.lazy];
+    box.innerHTML = kind === "dim" ? dimDetail(id) : kind === "area" ? areaDetail(id) : kind === "calc" ? calcDetail(id) : kind === "pdim" ? partyDims(id)
+      : `<p class="dinfo" style="margin:8px 0">${esc(Q[id].ctx)}</p>${reviewPositions(Q[id])}`;
   }, true);
   root.addEventListener("change", (e) => {
     const el = e.target, c = el.dataset.ctl; if (!c) return;
     if (c === "cmp") { UI.cmp = el.value || null; renderDims(); renderAreas(); $("#cmp-sel").focus(); }
     else if (c === "rv") { UI.reviewFilter = el.value; renderReview(); $("#rv-filter").focus(); }
+    else if (c === "vsA" || c === "vsB") { UI[c] = el.value; if (UI.vsA === UI.vsB) UI[c === "vsA" ? "vsB" : "vsA"] = null; renderVersus(); $(c === "vsA" ? "#vs-a" : "#vs-b").focus(); }
+    else if (c === "mapdim") { UI.mapDim = el.value; renderMap(); $("#map-dim").focus(); }
     else if (c === "ans" && !SHARED) {
       const id = el.dataset.q, v = el.value === "" ? undefined : Number(el.value);
       if (v === undefined) delete S.ans[id]; else S.ans[id] = v;
@@ -1237,12 +1534,19 @@ function bindResults() {
       toast("Resultado recalculado");
     }
   });
+  root.addEventListener("keydown", (e) => {
+    const g = (e.key === "Enter" || e.key === " ") && e.target.closest?.(".map-pt, .map-me");
+    if (g) { e.preventDefault(); selectMap(g.dataset.pid); }
+  });
   root.addEventListener("click", (e) => {
+    const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
     const a = e.target.closest('a[href^="#r-"]');
     if (a) { e.preventDefault(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
     if (b.dataset.card) { showExtraCard(b.dataset.card); return; }
+    if (b.dataset.vs) { const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
+    if (b.dataset.mapsel) { selectMap(b.dataset.mapsel); return; }
     if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
       const id = b.dataset.q; S.imp[id] = !S.imp[id]; if (!S.imp[id]) delete S.imp[id];
@@ -1610,8 +1914,13 @@ function renderMethod() {
   const qs = BANK.questions;
   const balance = BANK.dims.map((d) => { const l = qs.filter((q) => q.dim === d.id); const lk = l.filter((q) => q.type === "likert");
     return `<tr><td>${esc(d.name)}</td><td class="num">${l.length}</td><td class="num">${lk.filter((q) => q.dir < 0).length}</td><td class="num">${lk.filter((q) => q.dir > 0).length}</td><td class="num">${l.length - lk.length}</td><td>${esc(d.a)} ↔ ${esc(d.b)}</td></tr>`; }).join("");
-  const cover = PIDS.map((pid) => { const k = qs.filter((q) => q.pos[pid]).length, e = qs.filter((q) => q.est.includes(pid)).length, d = k - e;
-    return `<tr><td><span class="sw" style="background:${P[pid].color}"></span> ${esc(P[pid].name)}</td><td class="num">${d}</td><td class="num">${e}</td><td class="num">${qs.length - k}</td><td><span class="cov" style="width:${d * 1.1}px"></span><span class="cov e" style="width:${e * 1.1}px;margin-left:2px"></span></td></tr>`; }).join("");
+  const cover = PIDS.map((pid) => { const x = partyData(pid);
+    return `<tr><td><span class="sw" style="background:${P[pid].color}"></span> ${esc(P[pid].name)}${P[pid].tbd ? ' <span class="tbd">Por confirmar</span>' : ""}</td><td class="num">${x.doc}</td><td class="num">${x.est}</td><td class="num">${x.unk}</td><td class="num">${x.src}</td><td><span class="cov" style="width:${x.doc * 1.1}px"></span><span class="cov e" style="width:${x.est * 1.1}px;margin-left:2px"></span></td></tr>`; }).join("");
+  const srcAll = qs.flatMap((q) => Object.values(q.src || {}));
+  const srcBy = Object.keys(SRC_TYPE).map((t) => [t, srcAll.filter((x) => x[2] === t).length]).filter(([, n]) => n);
+  const areaCov = BANK.areas.map((a) => { const l = qs.filter((q) => q.area === a.id), ds = [...new Set(l.filter((q) => q.dim).map((q) => DIM_SHORT[q.dim]))];
+    return `<tr><td>${a.letter} · ${esc(a.name)}</td><td class="num">${l.length}</td><td class="num">${l.filter((q) => !q.dim).length}</td><td>${esc(ds.join(", ")) || "—"}</td></tr>`; }).join("");
+  const pendingTbd = PD.parties.filter((p) => p.tbd && !p.out).map((p) => p.name), outP = PD.parties.filter((p) => p.out).map((p) => p.name);
   const lik = qs.filter((q) => q.type === "likert");
   $("#v-method").innerHTML = `
     <div class="wrap method">
@@ -1619,7 +1928,7 @@ function renderMethod() {
       <h1 id="method-h" class="h1">Cómo funciona el Test 29N</h1>
       <p class="lede">Qué medimos, de dónde salen las posturas de los partidos, cómo se calcula tu resultado y qué límites tiene. Las cifras y tablas de esta página se calculan en directo a partir de los mismos datos que usa el test.</p>
       <div class="mgrid">
-        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-calc">El cálculo</a><a href="#m-sol">Solidez y límites</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
+        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
         <div class="mbody">
           <section class="msec" id="m-que"><h2 class="h2">Qué mide</h2>
             <p>El test no te asigna una etiqueta. Mide tu posición en <b>siete dimensiones</b> distintas y la compara, pregunta a pregunta, con las posturas de las candidaturas que se presentan en tu provincia.</p>
@@ -1635,6 +1944,9 @@ function renderMethod() {
               <li><b>«No lo sé»</b> es distinto de «Ni de acuerdo ni en desacuerdo»: el primero no cuenta en el cálculo; el segundo cuenta como posición intermedia, pero con la mitad de peso, porque puede reflejar equilibrio, ambivalencia o poco interés por el tema.</li>
             </ul>
             <div class="tbl-wrap" tabindex="0" role="region" aria-label="Equilibrio de formulación por dimensión"><table class="tbl"><caption class="sr">Equilibrio de formulación por dimensión</caption><thead><tr><th>Dimensión</th><th class="num">Preguntas</th><th class="num">Acuerdo → polo A</th><th class="num">Acuerdo → polo B</th><th class="num">Dilemas</th><th>Polos</th></tr></thead><tbody>${balance}</tbody></table></div>
+            <p><b>Cobertura temática.</b> Las ${qs.length} preguntas cubren economía y fiscalidad, empleo, pensiones, vivienda, sanidad, educación, inmigración, seguridad y justicia, derechos civiles, igualdad, medioambiente y energía, mundo rural, modelo territorial, lenguas, instituciones, Unión Europea, defensa y política exterior, y regulación de las redes sociales.</p>
+            <div class="tbl-wrap" tabindex="0" role="region" aria-label="Cobertura por área temática"><table class="tbl"><caption class="sr">Cobertura por área temática</caption><thead><tr><th>Área</th><th class="num">Preguntas</th><th class="num">Transversales</th><th>Dimensiones que mide</th></tr></thead><tbody>${areaCov}</tbody></table></div>
+            <p>Hay temas con poca presencia: la inteligencia artificial y la economía digital (solo dos preguntas, sobre redes sociales), la cultura y el patrimonio, o las pensiones (un dilema). No añadimos preguntas nuevas mientras no podamos asignar posturas documentadas a la mayoría de las candidaturas: una pregunta con casi todas las posturas estimadas alargaría el test sin mejorar el resultado. Tampoco creamos una dimensión de «calidad democrática»: sus preguntas no dividen a los partidos en un solo eje (por ejemplo, la reforma electoral beneficia a unos u otros según su tamaño, no según su ideología), así que cuentan pregunta a pregunta, pero no en el perfil.</p>
             <p>En la lectura clásica izquierda-derecha, ${lik.filter((q) => q.lr < 0).length} afirmaciones apuntan a la izquierda, ${lik.filter((q) => q.lr > 0).length} a la derecha y ${lik.filter((q) => !q.lr).length} son transversales.</p>
             <p><b>Versiones y selección.</b> Cada área tiene una pregunta núcleo, varias importantes y otras complementarias. La versión exprés usa la núcleo y una importante por área; la media, la núcleo, dos importantes y una complementaria; la completa, todas. Las preguntas que completan cada área se eligen con una semilla aleatoria, compensando el sesgo izquierda-derecha de las ya elegidas, así que dos personas pueden recibir cuestionarios algo distintos pero siempre equilibrados y con todas las áreas.</p>
           </section>
@@ -1646,7 +1958,19 @@ function renderMethod() {
               <li><b>Sin postura conocida</b>: no se inventa. Esa pregunta no cuenta para ese partido.</li>
             </ul>
             <p>Las coaliciones nuevas (Frente Amplio, Democracia 21, Unidad del Pueblo Canario…) heredan las posturas de sus integrantes, por lo que tienen más posturas estimadas. Puedes revisar todas en <button type="button" class="link-btn" data-go="explorer" style="padding:0">Posturas de los partidos</button>.</p>
-            <div class="tbl-wrap" tabindex="0" role="region" aria-label="Cobertura de posturas por candidatura"><table class="tbl"><caption class="sr">Cobertura de posturas por candidatura</caption><thead><tr><th>Candidatura</th><th class="num">Documentadas</th><th class="num">Estimadas</th><th class="num">Sin postura</th><th>Cobertura</th></tr></thead><tbody>${cover}</tbody></table></div>
+            <p>El estado de los datos de cada candidatura está en <a href="#m-datos">Estado de los datos</a>.</p>
+          </section>
+          <section class="msec" id="m-datos"><h2 class="h2">Estado de los datos</h2>
+            <p>Datos actualizados el ${esc(fmtDate(BANK.updated))}. Cada postura se clasifica según la evidencia en la que se apoya:</p>
+            <ul class="dots">
+              <li><b>Documentada con fuente enlazada</b>: puedes abrir la fuente desde la propia pregunta. Indicamos de qué tipo es: ${esc(Object.values(SRC_TYPE).join(", "))}, con su fecha.</li>
+              <li><b>Documentada</b>: basada en el programa de 2023, votaciones o declaraciones públicas, todavía sin enlace individual.</li>
+              <li><b>Estimada</b>: una interpretación nuestra a partir de la línea general del partido o de temas cercanos. Siempre se marca y pesa menos.</li>
+              <li><b>Sin postura conocida</b>: no se rellena ni se toma como neutral; esa pregunta no cuenta para ese partido.</li>
+            </ul>
+            <p>Hoy hay ${srcAll.length} posturas con fuente enlazada${srcBy.length ? ` (${esc(srcBy.map(([t, n]) => `${n} de ${SRC_TYPE[t]}`).join(", "))})` : ""}. Es una parte pequeña del total: ampliarla es la prioridad de mantenimiento del proyecto, empezando por las preguntas núcleo y los partidos con más apoyo.</p>
+            ${pendingTbd.length || outP.length ? `<p><b>Pendiente de verificar.</b> ${pendingTbd.length ? `Candidaturas aún sin confirmar con las listas proclamadas por la Junta Electoral: ${esc(joinY(pendingTbd))}. ` : ""}${outP.length ? `Han anunciado que no se presentan, y por eso no se comparan: ${esc(joinY(outP))}.` : ""} Los programas para el 29N aún no se han publicado completos: cuando salgan, revisaremos las posturas.</p>` : ""}
+            <div class="tbl-wrap" tabindex="0" role="region" aria-label="Estado de los datos por candidatura"><table class="tbl"><caption class="sr">Estado de los datos por candidatura</caption><thead><tr><th>Candidatura</th><th class="num">Documentadas</th><th class="num">Estimadas</th><th class="num">Sin postura</th><th class="num">Con fuente</th><th>Cobertura</th></tr></thead><tbody>${cover}</tbody></table></div>
           </section>
           <section class="msec" id="m-calc"><h2 class="h2">El cálculo</h2>
             <p><b>Coincidencia con un partido.</b> Para cada pregunta que has respondido y en la que el partido tiene postura:</p>
@@ -1659,6 +1983,18 @@ function renderMethod() {
             <p><b>Partidos con los que menos coincides.</b> Son las tres candidaturas de tu provincia con menor coincidencia, con el mismo cálculo, dejando fuera tu top 3 y las candidaturas con pocas posturas conocidas. Solo cuenta como discrepancia estar en lados opuestos de una pregunta: tus respuestas neutrales y «No lo sé» nunca lo son. Comprobamos además si el resultado depende de una sola pregunta quitando la que más os separa, y te avisamos si es así. Si menos de ${LEAST_MIN_ANS} de tus respuestas toman partido, no hacemos esta comparación.</p>
             <p><b>Políticos con los que más coincides.</b> Comparamos tus respuestas con ${POLS.length} perfiles de políticos con posturas propias documentadas (propuestas, decisiones de gobierno, votaciones que han liderado o declaraciones), sin atribuirles por defecto las de su partido. Cada persona tiene pocas posturas conocidas, así que el acuerdo se suaviza hacia el 50 %, se exigen al menos ${POL_MIN} posturas claras en común y se muestra un nivel orientativo en lugar de un porcentaje. Las fotos proceden de Wikimedia Commons, con licencia libre o reutilización autorizada con cita de la fuente; la autoría figura en cada ficha.</p>
           </section>
+          <section class="msec" id="m-expl"><h2 class="h2">Las explicaciones de tu resultado</h2>
+            <p>Todas se calculan con tus respuestas y los mismos datos que el resto del test. No usamos textos predefinidos por perfil.</p>
+            <ul class="dots">
+              <li><b>Qué respuestas te sitúan en cada dimensión.</b> Tu posición es una media; cada respuesta «aporta» lo que suma o resta a esa media (su valor de −100 a +100 por su peso, dividido por el peso total). La suma de las aportaciones es tu posición.</li>
+              <li><b>Tu posición tema a tema.</b> La misma media, solo con las preguntas de cada área que miden esa dimensión. Sirve para ver, por ejemplo, si defiendes más Estado en vivienda pero no en educación.</li>
+              <li><b>Moderada o mixta.</b> Una posición entre −25 y +25 es «mixta» si tus respuestas empujan con fuerza hacia los dos polos (al menos 20 puntos de aportaciones en cada sentido) y «moderada» si no.</li>
+              <li><b>Combinaciones poco habituales.</b> Calculamos cómo se relacionan las dimensiones entre los partidos que tienen datos en todas. Si dos van muy juntas (correlación de 0,6 o más) y tú las combinas al revés con posiciones claras (más de 25 puntos en ambas), lo señalamos y decimos qué candidaturas combinan como tú.</li>
+              <li><b>Opiniones sin candidatura.</b> Preguntas en las que tomas partido y ninguna candidatura de tu provincia con postura conocida (al menos dos) está de tu lado.</li>
+              <li><b>Qué respuestas mueven la coincidencia con un partido.</b> Recalculamos su coincidencia quitando cada respuesta, una a una, y mostramos las que más la suben o la bajan.</li>
+              <li><b>Comparar dos candidaturas</b> usa solo sus posturas (incluidas las estimadas, marcadas como tales) y tus respuestas: no cambia tu resultado.</li>
+            </ul>
+          </section>
           <section class="msec" id="m-sol"><h2 class="h2">Solidez y límites</h2>
             <p>La investigación sobre estas herramientas, conocidas como «aplicaciones de ayuda al voto», muestra que el resultado puede cambiar según el método de cálculo, que las respuestas neutrales tienden a acercar a todos los partidos y que estimar las posturas de los partidos es la parte más delicada. Por eso:</p>
             <ul class="dots">
@@ -1668,6 +2004,20 @@ function renderMethod() {
               <li>Publicamos todas las posturas para que puedas contrastarlas.</li>
             </ul>
             <p>Límites: los partidos pueden cambiar de posición, actuar de forma distinta a lo que proponen o no pronunciarse; las candidaturas locales tienen pocas posturas conocidas; y un test no recoge la confianza en los líderes, la gestión o el voto útil. La coincidencia mide cuánto se parecen tus respuestas a las posturas de cada partido; no es una probabilidad de voto ni el porcentaje de ideología que compartís. No disponemos de datos de validación con encuestas reales, así que no atribuimos al test una precisión concreta. <b>No es una recomendación de voto ni un diagnóstico científico.</b></p>
+          </section>
+          <section class="msec" id="m-glos"><h2 class="h2">Glosario</h2>
+            <dl class="glossary">
+              <dt>Coincidencia</dt><dd>Cuánto se parecen tus respuestas a las posturas de un partido, pregunta a pregunta, de 0 a 100 %. No es una probabilidad de voto.</dd>
+              <dt>Cercanía ideológica</dt><dd>Lo cerca que estáis en el conjunto de las siete dimensiones, de 0 a 100 %.</dd>
+              <dt>Dimensión</dt><dd>Un eje de opinión con dos polos, como «más Estado» frente a «más mercado». Tu posición va de −100 (primer polo) a +100 (segundo).</dd>
+              <dt>Postura documentada o estimada</dt><dd>Documentada: hay programa, voto o declaración. Estimada: se deduce de su línea general; pesa menos y siempre se marca.</dd>
+              <dt>Pregunta transversal</dt><dd>La que no divide a la gente de forma ideológica clara. Cuenta para comparar con los partidos, no para tu perfil.</dd>
+              <dt>Familia de preguntas</dt><dd>Preguntas que miden casi la misma opinión. Si respondes varias, pesan juntas menos que por separado.</dd>
+              <dt>Relleno neutro</dt><dd>Cuando un partido tiene postura en menos de la mitad (en peso) de tus respuestas, se completa con un 50 % para no exagerar su coincidencia.</dd>
+              <dt>Empate técnico</dt><dd>Dos candidaturas a 3 puntos o menos: la diferencia es demasiado pequeña para ordenarlas con seguridad.</dd>
+              <dt>Solidez</dt><dd>Cuánto fiarte del resultado según el número de respuestas, las neutrales, los empates y un segundo método de cálculo.</dd>
+              <dt>Componentes principales</dt><dd>Técnica estadística que resume muchas dimensiones en pocas, conservando la mayor parte de las diferencias. El mapa usa las dos primeras.</dd>
+            </dl>
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
@@ -1707,6 +2057,7 @@ function renderExplorer() {
     let t = 0;
     $("#ex-q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { EX.text = e.target.value.trim().toLowerCase(); drawExplorer(); }, 160); });
   }
+  $("#ex-party").value = EX.party;
   drawExplorer();
 }
 function drawExplorer() {
@@ -1720,7 +2071,7 @@ function drawExplorer() {
       return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<span class="chip${q.est.includes(pid) ? " est" : ""}"${EX.party === pid ? ' style="outline:2.5px solid var(--ink);background:var(--mark-2)"' : ""} title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</span>`).join("")}</span></div>`;
     }).join("");
     const unk = PIDS.filter((pid) => !q.pos[pid]);
-    const focus = EX.party ? (q.pos[EX.party] ? `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> ${esc(answerText(q, q.pos[EX.party]))}${q.est.includes(EX.party) ? " (estimada)" : " (documentada)"}</p>` : `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> sin postura conocida</p>`) : "";
+    const focus = EX.party ? (q.pos[EX.party] ? `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> ${esc(answerText(q, q.pos[EX.party]))}${q.est.includes(EX.party) ? " (estimada)" : " (documentada)"}${srcLink(q, EX.party)}</p>` : `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> sin postura conocida</p>`) : "";
     const d = q.dim ? `${DIM[q.dim].name}: de acuerdo → ${q.dir > 0 ? DIM[q.dim].b : DIM[q.dim].a}` : "Transversal: no mide ninguna dimensión";
     return `<article class="exq"><p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(AREA[q.area].name)}</span><span class="tagd">${esc(d)}</span></p>
       <h3>${esc(q.text)}</h3>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}${focus}
@@ -1751,7 +2102,7 @@ function bindGlobal() {
       if (CURRENT === "quiz" && S) save();
       if (v === "home") { fillSetup(); go("home"); }
       else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && $(`#${g.dataset.anchor}`); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
-      else if (v === "explorer") { renderExplorer(); go("explorer"); }
+      else if (v === "explorer") { if (g.dataset.party) EX.party = g.dataset.party; renderExplorer(); go("explorer"); }
       return;
     }
     const a = e.target.closest("[data-act]");
