@@ -16,7 +16,7 @@ const DONATE = {
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };
 // Titular de la web para el aviso legal. Vacío = no se muestra.
-const OWNER = { name: "", email: "" };
+const OWNER = { name: "Dery", email: "menendezpeoe@gmail.com" };
 const KEY = "papeleta29n.v2";
 const PREFS_KEY = "papeleta29n.prefs";
 const W_IMPORTANT = 2;      // pregunta marcada como importante
@@ -1518,9 +1518,9 @@ function renderMethod() {
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas empezando un test nuevo. Sexo y edad solo se muestran en tu resultado. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
             <p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se descargan de Google Fonts, por lo que tu navegador se conecta a servidores de Google; ninguno de los dos recibe tus respuestas.</p>
-            <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && "Stripe (Apple Pay y Bizum)"].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
+            <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
-            ${OWNER.name ? `<p><b>Titular</b>: ${esc(OWNER.name)}${OWNER.email ? ` · contacto: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>` : ""}.</p>` : ""}
+            ${OWNER.name || OWNER.email ? `<p>${[OWNER.name && `<b>Responsable</b>: ${esc(OWNER.name)}`, OWNER.email && `<b>Contacto</b>: <a href="mailto:${esc(OWNER.email)}">${esc(OWNER.email)}</a>`].filter(Boolean).join(" · ")}.</p>` : ""}
           </section>
         </div>
       </div>
