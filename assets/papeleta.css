@@ -618,3 +618,5 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-varian
 .map-axes dd { margin: 2px 0 0; color: var(--ink-2); line-height: 1.4; }
 .pos-notes { display: grid; gap: 6px; margin-top: 10px; padding: 10px 12px; border-left: 3px solid var(--rule); background: var(--sheet-2); border-radius: 0 var(--r2) var(--r2) 0; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
 .pos-notes b { color: var(--ink); }
+.rank .rk-card { justify-self: start; padding: 2px 0; font-size: 13px; }
+.extra-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
