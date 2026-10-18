@@ -12,7 +12,7 @@ const PUBLIC_URL = "https://menendezpeoe-maker.github.io/";
 // Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
 const DONATE = {
   paypal: "https://www.paypal.me/DavidReyMenendez",
-  applePay: "",   // enlace de pago de Stripe (https://buy.stripe.com/…) con Apple Pay activado
+  applePay: "https://buy.stripe.com/7sYaEYcq8bwS6lL1Kiew800",   // enlace de pago de Stripe con Apple Pay (y tarjeta, que Apple Pay necesita)
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };
 // Titular de la web para el aviso legal. Vacío = no se muestra.
