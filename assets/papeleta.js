@@ -82,6 +82,7 @@ let BANK = null, PD = null, POLS = [];
 const Q = {}, AREA = {}, DIM = {}, P = {}, PROV = {};
 let PIDS = [], PROV_LIST = [];
 const PARTY_DIM = {}, PARTY_AREA = {};
+let MAPM = null;
 
 async function loadData() {
   const get = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
@@ -108,6 +109,7 @@ async function loadData() {
     PARTY_DIM[pid] = Object.fromEntries(Object.entries(dAcc).map(([k, [s, w]]) => [k, s / w]));
     PARTY_AREA[pid] = Object.fromEntries(Object.entries(aAcc).map(([k, [s, w]]) => [k, s / w]));
   }
+  fitMap();
 }
 
 function runsIn(pid, provId) {
@@ -160,7 +162,7 @@ let S = null;          // test propio
 let SHARED = null;     // resultado abierto desde un enlace compartido (solo lectura)
 let PREFS = store.get(PREFS_KEY) || { ctx: false };
 let CURRENT = "home";
-const UI = { cmp: null, mx: "eco", my: "soc", scope: "prov", reviewFilter: "all" };
+const UI = { cmp: null, scope: "prov", reviewFilter: "all" };
 const savePrefs = () => store.set(PREFS_KEY, PREFS);
 const save = () => { if (S) { S.t = Date.now(); store.set(KEY, S); } };
 const ST = () => SHARED || S;
@@ -677,12 +679,23 @@ function renderDims() {
     <div class="dims">${rows}</div>`;
 }
 
+const NARROW = matchMedia("(max-width: 600px)");
+NARROW.addEventListener?.("change", () => { if (MODEL && CURRENT === "results") renderMap(); });
 function renderMap() {
-  const st = ST(), M = MODEL, X = DIM[UI.mx], Y = DIM[UI.my];
-  const W = 520, H = 520, pad = 58, inner = W - pad * 2;
-  const sx = (v) => pad + (v + 100) / 200 * inner, sy = (v) => H - pad - (v + 100) / 200 * inner;
-  const pts = M.prov.map((m) => ({ pid: m.pid, x: PARTY_DIM[m.pid][X.id], y: PARTY_DIM[m.pid][Y.id] })).filter((p) => p.x !== undefined && p.y !== undefined);
-  const u = { x: M.user.dims[X.id]?.v, y: M.user.dims[Y.id]?.v };
+  const st = ST(), M = MODEL, G = MAPM;
+  const u = mapProject(Object.fromEntries(Object.entries(M.user.dims).map(([k, o]) => [k, o.v])));
+  const ranked = M.prov.map((m) => ({ m, pt: G.pts[m.pid] }));
+  const shown = ranked.filter((r) => r.pt.ok);
+  const hidden = ranked.filter((r) => !r.pt.ok);
+  // Misma escala en los dos ejes: la distancia en pantalla respeta la del modelo
+  const xs = [...Object.values(G.pts).filter((p) => p.ok).map((p) => p.x), ...(u.ok ? [u.x] : [])];
+  const ys = [...Object.values(G.pts).filter((p) => p.ok).map((p) => p.y), ...(u.ok ? [u.y] : [])];
+  const span = Math.max(Math.max(...xs) - Math.min(...xs), (Math.max(...ys) - Math.min(...ys)) * 1.6) * 1.12;
+  const cx = (Math.max(...xs) + Math.min(...xs)) / 2, cy = (Math.max(...ys) + Math.min(...ys)) / 2;
+  // En móvil, un lienzo más estrecho y alto para que puntos y etiquetas se lean bien
+  const narrow = NARROW.matches, W = narrow ? 380 : 560, pad = narrow ? 34 : 44, inner = W - pad * 2, k = inner / span;
+  const ih = Math.max(inner * (narrow ? 0.72 : 0.5), Math.min(inner, (Math.max(...ys) - Math.min(...ys)) * 1.25 * k + 40)), H = ih + pad * 2;
+  const sx = (v) => pad + inner / 2 + (v - cx) * k, sy = (v) => pad + ih / 2 - (v - cy) * k;
   const placed = [];
   const lab = (px, py, w, h) => {
     const cands = [[12, 4], [-12 - w, 4], [-w / 2, -14], [-w / 2, 22], [12, 18], [12, -10], [-12 - w, 18], [-12 - w, -10]];
@@ -693,48 +706,104 @@ function renderMap() {
     }
     return null;
   };
-  const grid = [-100, -50, 0, 50, 100].map((v) => `<line class="mg${v === 0 ? " z" : ""}" x1="${sx(v)}" y1="${pad}" x2="${sx(v)}" y2="${H - pad}"/><line class="mg${v === 0 ? " z" : ""}" x1="${pad}" y1="${sy(v)}" x2="${W - pad}" y2="${sy(v)}"/>`).join("");
-  const hasU = u.x !== undefined && u.y !== undefined;
-  if (hasU) placed.push({ x: sx(u.x) - 16, y: sy(u.y) - 16, w: 32, h: 32 });
-  pts.forEach((p) => placed.push({ x: sx(p.x) - 8, y: sy(p.y) - 8, w: 16, h: 16 }));
-  const dots = pts.map((p) => {
-    const px = sx(p.x), py = sy(p.y), name = pName(p.pid, st.prov), t = P[p.pid].ab;
+  const grid = [0.25, 0.5, 0.75].map((f) => `<line class="mg${f === 0.5 ? " z" : ""}" x1="${pad + inner * f}" y1="${pad}" x2="${pad + inner * f}" y2="${pad + ih}"/><line class="mg${f === 0.5 ? " z" : ""}" x1="${pad}" y1="${pad + ih * f}" x2="${pad + inner}" y2="${pad + ih * f}"/>`).join("");
+  if (u.ok) placed.push({ x: sx(u.x) - 16, y: sy(u.y) - 16, w: 32, h: 32 });
+  shown.forEach((r) => placed.push({ x: sx(r.pt.x) - 8, y: sy(r.pt.y) - 8, w: 16, h: 16 }));
+  const dots = shown.map(({ m, pt }) => {
+    const px = sx(pt.x), py = sy(pt.y), name = pName(m.pid, st.prov), t = P[m.pid].ab;
     const at = lab(px, py, t.length * 7.4 + 4, 14);
-    return `<g class="map-pt" tabindex="0" role="img" aria-label="${esc(name)}: ${esc(X.name)} ${signed(p.x)}, ${esc(Y.name)} ${signed(p.y)}" data-tip="${esc(name)} · ${esc(X.name)} ${signed(p.x)} · ${esc(Y.name)} ${signed(p.y)}">
+    const note = pt.missing.length ? ` · posición aproximada: sin datos de ${pt.missing.map((d) => DIM_SHORT[d]).join(", ")}` : "";
+    return `<g class="map-pt" data-pid="${m.pid}" tabindex="0" role="img" aria-label="${esc(name)}: coincidencia contigo ${m.pct} %${esc(note)}" data-tip="${esc(name)} · coincidencia contigo ${m.pct} %${esc(note)}">
       <circle class="hit" cx="${px}" cy="${py}" r="14" fill="transparent"/>
-      <circle cx="${px}" cy="${py}" r="8" style="fill:${P[p.pid].color};stroke:var(--sheet);stroke-width:2.5"/>
+      <circle cx="${px}" cy="${py}" r="8" style="fill:${P[m.pid].color};stroke:var(--sheet);stroke-width:2.5"/>
+      ${pt.missing.length ? `<circle cx="${px}" cy="${py}" r="11.5" fill="none" style="stroke:${P[m.pid].color};stroke-width:1.4;stroke-dasharray:2.5 2.5"/>` : ""}
       ${at ? `<text x="${at[0]}" y="${at[1]}" class="ml">${esc(t)}</text>` : ""}</g>`;
   }).join("");
-  const me = hasU ? `<g role="img" aria-label="Tu posición: ${esc(X.name)} ${signed(u.x)}, ${esc(Y.name)} ${signed(u.y)}"><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="15" class="me-o"/><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="11" class="me-i"/><text x="${sx(u.x)}" y="${sy(u.y) + 3.6}" text-anchor="middle" class="me-t">TÚ</text></g>` : "";
-  const opts = (sel, other) => BANK.dims.map((d) => `<option value="${d.id}"${d.id === sel ? " selected" : ""}${d.id === other ? " disabled" : ""}>${esc(d.name)}</option>`).join("");
+  const me = u.ok ? `<g role="img" aria-label="Tu posición en el mapa"><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="15" class="me-o"/><circle cx="${sx(u.x)}" cy="${sy(u.y)}" r="11" class="me-i"/><text x="${sx(u.x)}" y="${sy(u.y) + 3.6}" text-anchor="middle" class="me-t">TÚ</text></g>` : "";
+  const pct = (r) => `${Math.round(r * 100)} %`;
+  const cap = (arr) => { const t = arr.join(", "); return t.charAt(0).toUpperCase() + t.slice(1) + "."; };
+  const near = M.prov.slice(0, 3);
+  const row = (m, i) => `<li${i < 3 ? ' class="near"' : ""}><b><span class="sw" style="background:${P[m.pid].color}"></span> ${i + 1}. ${esc(pName(m.pid, st.prov))}</b><span>Coincidencia ${m.pct} %${m.close != null ? ` · cercanía en las dimensiones ${Math.round(m.close * 100)} %` : ""}${G.pts[m.pid].ok ? "" : " · sin datos suficientes para situarla en el mapa"}</span></li>`;
   $("#r-map").innerHTML = `
     <div class="sec-head"><p class="label">Mapa</p><h2 id="map-h" class="h2">Dónde te sitúas frente a las candidaturas de ${esc(PROV[st.prov].name)}</h2>
-    <p class="sub">Elige dos dimensiones. Los partidos se colocan con todas sus posturas del banco; tú, con tus respuestas.</p></div>
+    <p class="sub">El mapa se calcula automáticamente con las ${BANK.dims.length} dimensiones del test a la vez: tus respuestas y las posturas de cada partido. Los perfiles parecidos quedan cerca y los muy distintos, lejos.</p></div>
     <div class="map-wrap">
       <div class="map-box">
-        <svg class="map-svg" viewBox="0 0 ${W} ${H}" role="group" aria-label="Mapa de ${esc(X.name)} frente a ${esc(Y.name)}">
-          <style>.mg{stroke:var(--rule-2);stroke-width:1}.mg.z{stroke:var(--rule);stroke-width:1.6}.ax{fill:var(--ink-2);font-size:12.5px;font-weight:650}.ml{fill:var(--ink);font-size:12px;font-weight:750}.me-o{fill:var(--mark);stroke:var(--mark-ink);stroke-width:2}.me-i{fill:var(--ink)}.me-t{fill:var(--paper);font-size:9.5px;font-weight:900;letter-spacing:.04em}.frame{fill:none;stroke:var(--rule);stroke-width:1}</style>
-          <rect class="frame" x="${pad}" y="${pad}" width="${inner}" height="${inner}"/>
+        <svg class="map-svg" viewBox="0 0 ${W} ${H}" role="group" aria-label="Mapa político con las ${BANK.dims.length} dimensiones del test">
+          <style>.mg{stroke:var(--rule-2);stroke-width:1}.mg.z{stroke:var(--rule);stroke-width:1.6}.ax{fill:var(--ink-2);font-size:12px;font-weight:650}.ml{fill:var(--ink);font-size:12px;font-weight:750}.me-o{fill:var(--mark);stroke:var(--mark-ink);stroke-width:2}.me-i{fill:var(--ink)}.me-t{fill:var(--paper);font-size:9.5px;font-weight:900;letter-spacing:.04em}.frame{fill:none;stroke:var(--rule);stroke-width:1}</style>
+          <rect class="frame" x="${pad}" y="${pad}" width="${inner}" height="${ih}"/>
           ${grid}
-          <text class="ax" x="${pad}" y="${H - pad + 22}">← ${esc(X.a)}</text>
-          <text class="ax" x="${W - pad}" y="${H - pad + 22}" text-anchor="end">${esc(X.b)} →</text>
-          <text class="ax" x="${pad - 10}" y="${pad + 4}" text-anchor="end" transform="rotate(-90 ${pad - 10} ${pad + 4})">${esc(Y.b)} →</text>
-          <text class="ax" x="${pad - 10}" y="${H - pad}" text-anchor="start" transform="rotate(-90 ${pad - 10} ${H - pad})">← ${esc(Y.a)}</text>
-          <text class="ax" x="${W / 2}" y="${H - 14}" text-anchor="middle" style="font-weight:800;fill:var(--ink)">${esc(X.name)}</text>
-          <text class="ax" x="20" y="${H / 2}" text-anchor="middle" transform="rotate(-90 20 ${H / 2})" style="font-weight:800;fill:var(--ink)">${esc(Y.name)}</text>
+          <text class="ax" x="${pad + inner / 2}" y="${pad + ih + 24}" text-anchor="middle" style="font-weight:800;fill:var(--ink)">← Eje 1 · ${pct(G.ratio[0])} de las diferencias →</text>
+          <text class="ax" x="${pad - 14}" y="${pad + ih / 2}" text-anchor="middle" transform="rotate(-90 ${pad - 14} ${pad + ih / 2})" style="font-weight:800;fill:var(--ink)">← Eje 2 · ${pct(G.ratio[1])} →</text>
           ${dots}${me}
         </svg>
+        <dl class="map-axes">
+          <div><dt>→ Hacia la derecha</dt><dd>${esc(cap(G.axes[0].pos))}</dd></div>
+          <div><dt>← Hacia la izquierda</dt><dd>${esc(cap(G.axes[0].neg))}</dd></div>
+          <div><dt>↑ Hacia arriba</dt><dd>${esc(cap(G.axes[1].pos))}</dd></div>
+          <div><dt>↓ Hacia abajo</dt><dd>${esc(cap(G.axes[1].neg))}</dd></div>
+        </dl>
       </div>
       <div class="map-ctrl">
-        <div class="field-row">
-          <div class="field"><label class="label" for="map-x">Eje horizontal</label><select id="map-x" data-ctl="mx">${opts(UI.mx, UI.my)}</select></div>
-          <div class="field"><label class="label" for="map-y">Eje vertical</label><select id="map-y" data-ctl="my">${opts(UI.my, UI.mx)}</select></div>
-        </div>
-        ${hasU ? "" : `<p class="small" style="color:var(--warn)">${ICON.warn} No has respondido preguntas de alguna de estas dimensiones en tu versión, así que tu posición no aparece.</p>`}
-        <ul class="tlist">${pts.slice().sort((a, b) => a.x - b.x).map((p) => `<li><b><span class="sw" style="background:${P[p.pid].color}"></span> ${esc(pName(p.pid, st.prov))}</b><span>${esc(X.name)} ${signed(p.x)} · ${esc(Y.name)} ${signed(p.y)}</span></li>`).join("")}</ul>
-        <p class="small muted">Las posiciones de los partidos son una estimación a partir de sus posturas en este test; no son una medición oficial.</p>
+        ${u.ok ? "" : `<p class="small" style="color:var(--warn)">${ICON.warn} No podemos situarte en el mapa: te faltan respuestas con opinión en ${esc(u.missing.map((d) => DIM_SHORT[d]).join(", "))}, que pesan mucho en sus ejes. Tu coincidencia con cada partido sí está calculada.</p>`}
+        <div><p class="subh">Las candidaturas más próximas a ti</p>
+          <ul class="tlist map-list">${M.prov.map(row).join("")}</ul></div>
+        <p class="small muted">La coincidencia se calcula pregunta a pregunta con todas tus respuestas, no midiendo distancias en el dibujo. Por eso el orden de la lista es el más fiable.</p>
+        <details class="more"><summary>Cómo leer el mapa</summary><div class="small" style="display:grid;gap:8px;margin-top:10px">
+          <p>Los ejes no son «izquierda» y «derecha»: son las dos combinaciones de dimensiones que más diferencian a los partidos españoles, calculadas con un análisis de componentes principales. Juntas recogen el ${pct(G.ratio[0] + G.ratio[1])} de esas diferencias.</p>
+          <p>Cada partido se sitúa con sus posturas en todas las dimensiones; tú, con tus respuestas. Dos puntos cercanos son perfiles de respuesta parecidos según este modelo, pero el dibujo pierde el ${pct(1 - G.ratio[0] - G.ratio[1])} restante de las diferencias.</p>
+          <p>Cada dimensión cuenta lo mismo, tenga más o menos preguntas. Las posturas desconocidas no se rellenan: un partido con datos incompletos aparece con un círculo discontinuo, y si le faltan dimensiones clave no se dibuja.${hidden.length ? ` En tu provincia no se dibuja: ${esc(hidden.map((r) => pName(r.m.pid, st.prov)).join(", "))}.` : ""}</p>
+        </div></details>
       </div>
     </div>`;
+}
+
+// ───────────────────────────── MAPA (análisis de componentes principales)
+// Se ajusta una vez con los partidos que tienen postura en todas las dimensiones (escala común −100…+100,
+// ya corregida por la dirección de cada pregunta). Así los ejes no dependen de quién haga el test.
+function fitMap() {
+  const ids = BANK.dims.map((d) => d.id);
+  const full = PIDS.filter((pid) => ids.every((d) => PARTY_DIM[pid][d] !== undefined));
+  const n = full.length, mean = ids.map((d) => full.reduce((a, p) => a + PARTY_DIM[p][d], 0) / n);
+  const C = ids.map((_, i) => ids.map((_, j) => full.reduce((a, p) => a + (PARTY_DIM[p][ids[i]] - mean[i]) * (PARTY_DIM[p][ids[j]] - mean[j]), 0) / (n - 1)));
+  const E = eigenSym(C), total = E.reduce((a, e) => a + e.val, 0);
+  // Signo estable: la dimensión que más pesa en cada eje apunta hacia la derecha o hacia arriba
+  const L = E.slice(0, 2).map((e) => { const top = e.vec.reduce((b, v, i) => (Math.abs(v) > Math.abs(e.vec[b]) ? i : b), 0); return e.vec.map((v) => v * Math.sign(e.vec[top])); });
+  const axes = L.map((l) => {
+    const strong = ids.map((d, i) => ({ d, w: l[i] })).filter((x) => Math.abs(x.w) >= 0.3).sort((a, b) => Math.abs(b.w) - Math.abs(a.w));
+    return { pos: strong.map((x) => DIM_PHRASE[x.d][x.w > 0 ? 1 : 0]), neg: strong.map((x) => DIM_PHRASE[x.d][x.w > 0 ? 0 : 1]) };
+  });
+  MAPM = { ids, mean, L, axes, ratio: E.slice(0, 2).map((e) => e.val / total), fit: full.length, pts: {} };
+  for (const pid of PIDS) MAPM.pts[pid] = mapProject(PARTY_DIM[pid]);
+}
+// Proyección por mínimos cuadrados con las dimensiones disponibles. Solo se sitúa un punto si esas
+// dimensiones explican al menos la mitad del peso de cada eje: lo que falta no se toma como neutral.
+function mapProject(vec) {
+  const G = MAPM, av = G.ids.map((d, i) => [i, vec[d]]).filter(([, v]) => v !== undefined && v !== null);
+  const missing = G.ids.filter((d) => vec[d] === undefined || vec[d] === null);
+  let a = 0, b = 0, c = 0, r1 = 0, r2 = 0;
+  for (const [i, v] of av) { const x = v - G.mean[i], l1 = G.L[0][i], l2 = G.L[1][i]; a += l1 * l1; b += l1 * l2; c += l2 * l2; r1 += l1 * x; r2 += l2 * x; }
+  const det = a * c - b * b;
+  const ok = a >= 0.5 && c >= 0.5 && det > 1e-6;
+  return ok ? { ok, missing, x: (c * r1 - b * r2) / det, y: (a * r2 - b * r1) / det } : { ok, missing };
+}
+// Autovalores y autovectores de una matriz simétrica pequeña (método de Jacobi)
+function eigenSym(A) {
+  const m = A.length, a = A.map((r) => [...r]), V = a.map((_, i) => a.map((__, j) => +(i === j)));
+  for (let sweep = 0; sweep < 100; sweep++) {
+    let off = 0;
+    for (let i = 0; i < m; i++) for (let j = i + 1; j < m; j++) off += a[i][j] ** 2;
+    if (off < 1e-12) break;
+    for (let p = 0; p < m; p++) for (let q = p + 1; q < m; q++) {
+      if (Math.abs(a[p][q]) < 1e-15) continue;
+      const th = (a[q][q] - a[p][p]) / (2 * a[p][q]), t = Math.sign(th || 1) / (Math.abs(th) + Math.sqrt(th * th + 1));
+      const cs = 1 / Math.sqrt(t * t + 1), sn = t * cs;
+      for (let r = 0; r < m; r++) { const x = a[r][p], y = a[r][q]; a[r][p] = cs * x - sn * y; a[r][q] = sn * x + cs * y; }
+      for (let r = 0; r < m; r++) { const x = a[p][r], y = a[q][r]; a[p][r] = cs * x - sn * y; a[q][r] = sn * x + cs * y; }
+      for (let r = 0; r < m; r++) { const x = V[r][p], y = V[r][q]; V[r][p] = cs * x - sn * y; V[r][q] = sn * x + cs * y; }
+    }
+  }
+  return a.map((_, i) => ({ val: a[i][i], vec: V.map((r) => r[i]) })).sort((x, y) => y.val - x.val);
 }
 
 function renderAreas() {
@@ -1079,7 +1148,6 @@ function bindResults() {
   root.addEventListener("change", (e) => {
     const el = e.target, c = el.dataset.ctl; if (!c) return;
     if (c === "cmp") { UI.cmp = el.value || null; renderDims(); renderAreas(); $("#cmp-sel").focus(); }
-    else if (c === "mx" || c === "my") { UI[c] = el.value; renderMap(); $(c === "mx" ? "#map-x" : "#map-y").focus(); }
     else if (c === "rv") { UI.reviewFilter = el.value; renderReview(); $("#rv-filter").focus(); }
     else if (c === "ans" && !SHARED) {
       const id = el.dataset.q, v = el.value === "" ? undefined : Number(el.value);
@@ -1502,6 +1570,7 @@ function renderMethod() {
             <p>Responder lo mismo vale 100 %; estar en extremos opuestos (1 frente a 5), 0 %. La coincidencia es la media ponderada de esos acuerdos. Pesos: pregunta marcada como importante ×${W_IMPORTANT}; área prioritaria ×${String(W_PRIORITY).replace(".", ",")}; respuesta neutral ×${String(W_NEUTRAL).replace(".", ",")}; postura estimada ×${String(W_ESTIMATED).replace(".", ",")}. Si un partido tiene postura en menos de la mitad (en peso) de tus respuestas, añadimos el peso que falta con un valor neutro del 50 %, para que un partido con pocas posturas conocidas no aparezca artificialmente arriba o abajo.</p>
             <p><b>Tu posición en cada dimensión.</b> Cada respuesta se convierte en un valor de −100 a +100 (1 → −100, 3 → 0, 5 → +100) con el signo de la dirección de la pregunta, y se promedia. Las respuestas neutrales pesan la mitad; la importancia y las prioridades no cambian tu posición. La de cada partido se calcula igual con todas sus posturas del banco, ponderando las estimadas.</p>
             <p><b>Cercanía ideológica.</b> 100 % menos la distancia media entre tu posición y la del partido en las dimensiones que has respondido. Complementa a la coincidencia, que compara pregunta a pregunta.</p>
+            <p><b>El mapa.</b> Resume las ${BANK.dims.length} dimensiones en dos ejes con un análisis de componentes principales hecho sobre las posturas de los ${MAPM.fit} partidos que tienen datos en todas ellas. Todas las dimensiones usan la misma escala y cuentan lo mismo, tengan más o menos preguntas. Los ejes son las dos combinaciones que más diferencian a los partidos (juntas recogen el ${Math.round((MAPM.ratio[0] + MAPM.ratio[1]) * 100)} % de sus diferencias), no una escala de izquierda y derecha. Cada punto se sitúa con las dimensiones de las que hay datos; si faltan las que más pesan en un eje, no se dibuja, en lugar de suponer una posición neutral. Los ejes son fijos: no cambian según quién haga el test.</p>
             <p><b>Lectura por temas.</b> Usa la dirección izquierda-derecha habitual de cada pregunta en la política española, sin las preguntas transversales. Es una simplificación y se presenta como tal.</p>
             <p><b>Partidos con los que menos coincides.</b> Son las tres candidaturas de tu provincia con menor coincidencia, con el mismo cálculo, dejando fuera tu top 3 y las candidaturas con pocas posturas conocidas. Solo cuenta como discrepancia estar en lados opuestos de una pregunta: tus respuestas neutrales y «No lo sé» nunca lo son. Comprobamos además si el resultado depende de una sola pregunta quitando la que más os separa, y te avisamos si es así. Si menos de ${LEAST_MIN_ANS} de tus respuestas toman partido, no mostramos esta sección.</p>
             <p><b>Políticos con los que más coincides.</b> Comparamos tus respuestas con ${POLS.length} perfiles de políticos con posturas propias documentadas (propuestas, decisiones de gobierno, votaciones que han liderado o declaraciones), nunca con las de su partido por defecto. Cada persona tiene pocas posturas conocidas, así que el acuerdo se suaviza hacia el 50 %, se exigen al menos ${POL_MIN} posturas claras en común y se muestra un nivel orientativo en lugar de un porcentaje. Las fotos proceden de Wikimedia Commons, con licencia libre o reutilización autorizada citando la fuente, y su autoría en cada ficha.</p>

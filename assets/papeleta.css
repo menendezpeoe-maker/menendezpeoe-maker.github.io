@@ -371,8 +371,8 @@ details.more > summary:hover { color: var(--ink); }
 .map-svg { width: 100%; height: auto; display: block; max-width: 100%; }
 .map-svg text { font-family: var(--f-ui); }
 .map-ctrl { display: grid; gap: 14px; align-content: start; }
-.map-ctrl .field-row { grid-template-columns: 1fr 1fr; gap: 12px; }
-.map-ctrl select { min-height: 44px; font-size: 15px; }
+.map-list li.near b { font-weight: 850; }
+.map-list li:not(.near) { opacity: .8; }
 .map-pt { cursor: default; }
 .map-pt:focus { outline: none; }
 .map-pt:focus-visible circle.hit { stroke: var(--ink); stroke-width: 3; }
@@ -602,3 +602,7 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-varian
 .support-opts { display: grid; gap: 14px; }
 .support-opts li { display: grid; gap: 6px; justify-items: start; }
 .support-opts .btn { width: 100%; }
+.map-axes { display: grid; gap: 8px 18px; grid-template-columns: 1fr; padding: 12px 8px 4px; margin: 0; font-size: 13px; }
+@media (min-width: 560px) { .map-axes { grid-template-columns: 1fr 1fr; } }
+.map-axes dt { font-weight: 800; color: var(--ink); }
+.map-axes dd { margin: 2px 0 0; color: var(--ink-2); line-height: 1.4; }
