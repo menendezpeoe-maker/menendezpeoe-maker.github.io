@@ -206,6 +206,17 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
   - Código para copiar en /prensa/.
 - Títulos y descripciones únicos, datos estructurados válidos, sitemap e IndexNow.
 - **No publiques traducciones** sin revisión nativa.
+- **Encargo del titular (19 oct), con prioridad dentro de T9:**
+  1. **Título de la portada:** exactamente «Test político 2026: ¿con qué partido coincides? · Elecciones 29N». **Descripción** con «test político», «elecciones generales 2026» y «a quién votar», sin recomendar voto (por ejemplo, dejando claro que el test no dice a quién votar: muestra coincidencias). Cambia `<title>`, `meta description`, Open Graph y Twitter de forma coherente (`papeleta-29n.html` y `publish.mjs`).
+  2. **Un único H1 en la portada:** el aviso `<noscript>` de `publish.mjs` no puede llevar H1 (usa un párrafo destacado o un H2). Añade una prueba que cuente los H1 del HTML servido, incluido el `<noscript>`.
+  3. **Preguntas frecuentes en la portada,** en HTML estático y visible (no generado por JavaScript), con datos estructurados `FAQPage` que repitan exactamente el texto visible:
+     - ¿Cuándo son las elecciones? Fecha comprobada en el real decreto de convocatoria del BOE, con enlace (regla 7).
+     - ¿Cómo funciona el test?
+     - ¿Es neutral?
+     - ¿Me dice a quién votar? No: muestra coincidencias.
+     - ¿Guarda mis datos? Coherente con el aviso de privacidad actual (sin sexo ni edad, provincia y respuestas solo en el navegador, contador sin cookies).
+     Pásalas por la revisión de la regla 9 (neutralidad y RAE) y valida el JSON-LD.
+  4. **Títulos y descripciones únicos en todas las páginas:** script en `qa/` que recorra `dist/` y falle si dos páginas repiten `<title>` o `meta description`, o si alguna falta. Añádelo a las baterías.
 
 ### T10 · Fase 5: difusión y tests por tema
 - **Tests por tema de 6–8 preguntas** (vivienda, inmigración, impuestos y economía, sanidad, energía, territorio):
