@@ -1,6 +1,6 @@
 # Plan automático de Test 29N hasta el 29N
 
-Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las tandas van una por noche, del 24 de octubre al 4 de noviembre: el titular dedica a esto su límite de uso esas semanas. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
+Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las tandas van una por noche, del 19 al 29 de octubre, con dos tandas de recuperación (R1 y R2) el 31 de octubre y el 1 de noviembre: el titular dedica a esto su límite de uso esas semanas. Cada tanda empieza sin memoria de las anteriores, así que **todo lo necesario está aquí y en `plan/ESTADO.md`**. El encargo completo del titular, con el contexto y las reglas, está en `plan/PROMPT-ORIGINAL.md`; este archivo lo concreta en tandas.
 
 ## Reglas para cada tanda (además de las de PROMPT-ORIGINAL.md, que se aplican siempre)
 
@@ -35,6 +35,35 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
    - No cambies ninguna postura de PSOE, PP, Vox, Frente Amplio, Podemos, ERC o Junts sin una fuente que lo justifique claramente.
    - Si la evidencia es discutible, no la cambies: anótala en `ESTADO.md` como «pendiente de decisión del titular».
 
+9. **Revisión con ojos nuevos antes de publicar.** Nadie revisa en directo, así que la revisión la haces tú:
+   - **Capturas:** haz capturas a 390 × 844 y a 1280 × 800, en modo claro y oscuro, de cada pantalla o página que hayas cambiado, y míralas tú (abre la imagen). Las pruebas automáticas no bastan: busca textos cortados, solapados, desalineados, con poco contraste o botones sin texto.
+   - **Revisor independiente:** lanza un subagente que no sepa cómo lo has hecho. Pásale las capturas y todos los textos visibles nuevos o cambiados. Debe buscar:
+     - Erratas y faltas de ortografía: tildes, «¿» y «¡», concordancias, mayúsculas, comillas «».
+     - Frases confusas o poco naturales.
+     - Datos que no cuadran con `data/*.json`.
+     - Cualquier tono no neutral o cualquier cosa que parezca una recomendación de voto.
+   - Corrige todo lo que encuentre y vuelve a pasar las pruebas antes de publicar.
+   - **Enlaces nuevos:** comprueba que responden con 200, o anota por qué no (por ejemplo, un bloqueo a robots).
+   - **Al empezar cada tanda:** revisa en la web real lo que publicó la anterior. Haz capturas a 390 px de la portada, el test, los resultados y una de sus páginas nuevas, y corrige cualquier errata o fallo visual antes de seguir con lo tuyo.
+10. **Trabajo por bloques, nunca a medias en público.**
+    - Antes de empezar, divide tu tanda en bloques ordenados de más a menos valor.
+    - Termina, prueba, revisa (regla 9) y publica bloque a bloque. Lo que se ve en la web siempre está completo.
+    - Hacia las 2 horas no empieces bloques nuevos: dedica el resto a revisar y publicar.
+    - Lo que no dé tiempo, anótalo en `ESTADO.md` con pasos concretos (archivos, qué falta, qué pruebas añadir), para que otra tanda lo retome sin volver a analizar.
+11. **Si una tanda anterior no llegó a ejecutarse** (no tiene entrada en `ESTADO.md`; por ejemplo, porque se agotó el límite de uso):
+    - No la hagas entera además de la tuya: no daría tiempo y saldrían las dos a medias.
+    - Haz la tuya y anota la que falta como pendiente para R1 y R2.
+    - Gasta con cabeza: busca con grep en vez de leer archivos enteros, y usa subagentes solo para investigar fuentes y para la revisión de la regla 9.
+12. **Fuentes de posturas (T5–T7, S1 y R1–R2):**
+    - **Orden de búsqueda:**
+      1. Programa electoral más reciente del partido (el de 2026 si ya está publicado; si no, el de 2023).
+      2. Votaciones nominales e iniciativas en el Congreso (congreso.es y sus datos abiertos).
+      3. Acuerdos de gobierno o leyes que el partido haya impulsado.
+      4. Declaraciones de sus portavoces en medios de referencia, con fecha.
+    - **Abre y lee cada fuente.** Comprueba que el texto respalda de verdad esa postura en esa pregunta; el titular de una noticia no basta.
+    - **Antes de dejar una postura como «estimada»,** prueba al menos dos búsquedas distintas.
+    - **Si sigue sin fuente clara,** déjala «estimada» con una nota de una línea que diga en qué se basa la estimación. Añádela a una lista «estimadas sin fuente» en `ESTADO.md` para que el titular lo sepa.
+
 ## Tandas
 
 | Tanda | Fecha (hora de Madrid) | Contenido |
@@ -50,6 +79,8 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T7 | mar 27 oct | Fase 2: fuentes de Podemos y ERC |
 | T8 | mié 28 oct | Fase 2: justificaciones visibles y confianza |
 | T11 | jue 29 oct | Fase 6 y repaso final |
+| R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
+| R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
 | S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
 | P1 | lun 30 nov | Después de las elecciones |
