@@ -21,6 +21,7 @@ const STATS = { goatcounter: "test29n" };
 const OWNER = { name: "Dery", email: "menendezpeoe@gmail.com" };
 const KEY = "papeleta29n.v2";
 const PREFS_KEY = "papeleta29n.prefs";
+const FRIEND_KEY = "papeleta29n.amigo";  // último resultado compartido que has abierto, para compararte (solo en tu navegador)
 const W_IMPORTANT = 2;      // pregunta marcada como importante
 const W_PRIORITY = 1.5;     // área elegida como prioritaria
 const W_ESTIMATED = 0.6;    // postura de partido estimada (no documentada)
@@ -649,12 +650,13 @@ function renderResults() {
   const st = ST();
   const next = st.mode === "expres" ? "media" : st.mode === "media" ? "completa" : null;
   $("#v-results").innerHTML = `
-    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> No incluye el sexo ni la edad de quien lo comparte y no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
+    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} No incluye el sexo ni la edad de quien lo comparte y no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
       <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
     </div></nav>
     <div class="wrap">
       <section id="r-summary" class="summary res-sec" style="padding-top:34px"></section>
+      <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
       <section id="r-map" class="res-sec" aria-labelledby="map-h"></section>
@@ -677,14 +679,14 @@ function renderResults() {
         ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
     </div>`;
-  invalidateCards(); renderSummary(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  invalidateCards(); renderSummary(); renderFriend(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
 }
 
 function rerenderAfterEdit() {
   MODEL = computeModel(ST());
   if (!MODEL.prov.some((m) => m.pid === UI.cmp)) UI.cmp = MODEL.prov[0]?.pid || null;
   invalidateCards();
-  renderSummary(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
+  renderSummary(); renderFriend(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
 }
 
 // ── Piezas comunes de los resultados
@@ -848,6 +850,42 @@ function partyDims(pid) {
     return `<div class="pdrow"><div><b>${esc(d.name)}</b><span class="small muted">${txt}</span></div><div class="track sm" role="img" aria-label="${esc(d.name)}: ${esc(txt)}, de ${esc(d.a)} a ${esc(d.b)}">${trackHTML(o?.v, pv !== undefined ? [{ pid, v: pv, tip: `${pName(pid, st.prov)}: ${dimLabel(d, pv)} (${signed(pv)})` }] : [], o ? `Tú: ${dimLabel(d, o.v)}` : "")}</div></div>`;
   }).join("");
   return `<div class="ddetail"><div class="pdims">${rows}</div><p class="small muted">Círculo con banda amarilla: tú. Rombo: ${esc(ab)}, con todas sus posturas del banco. La distancia media en estas dimensiones es su cercanía ideológica.</p></div>`;
+}
+
+// ── Tú y otra persona: al abrir un resultado compartido (o después, con el último que abriste)
+function friendPair() {
+  if (!S || answered(S).length < 5) return null;
+  if (SHARED) return { me: S, them: SHARED, live: true };
+  const them = decodeShare(store.get(FRIEND_KEY));
+  if (!them || BANK.questions.every((q) => them.ans[q.id] === S.ans[q.id])) return null;
+  return { me: S, them, live: false };
+}
+function renderFriend() {
+  const sec = $("#r-friend"), F = friendPair();
+  sec.hidden = !F;
+  if (!F) { sec.innerHTML = ""; return; }
+  const a = F.me, b = F.them, who = F.live ? "esta persona" : "quien te compartió su resultado";
+  const common = BANK.questions.filter((q) => a.ans[q.id] >= 1 && b.ans[q.id] >= 1);
+  const head = `<div class="sec-head"><p class="label">Tú y ${who}</p><h2 id="friend-h" class="h2">¿Cuánto coincidís?</h2></div>`;
+  const forget = F.live ? "" : '<p><button type="button" class="link-btn" data-act="forget-friend" style="padding:0">Olvidar este resultado compartido</button></p>';
+  if (common.length < 5) { sec.innerHTML = `${head}<p class="small muted">Habéis respondido muy pocas preguntas en común (${common.length}) para compararos. Una versión más larga del test lo permite.</p>${forget}`; return; }
+  const agree = Math.round(common.reduce((x, q) => x + 1 - Math.abs(a.ans[q.id] - b.ans[q.id]) / 4, 0) / common.length * 100);
+  const same = common.filter((q) => sideOf(a.ans[q.id]) && sideOf(a.ans[q.id]) === sideOf(b.ans[q.id])).sort((x, y) => (Math.abs(b.ans[y.id] - 3) + Math.abs(a.ans[y.id] - 3)) - (Math.abs(b.ans[x.id] - 3) + Math.abs(a.ans[x.id] - 3)));
+  const opp = common.filter((q) => sideOf(a.ans[q.id]) && sideOf(b.ans[q.id]) && sideOf(a.ans[q.id]) !== sideOf(b.ans[q.id])).sort((x, y) => Math.abs(a.ans[y.id] - b.ans[y.id]) - Math.abs(a.ans[x.id] - b.ans[x.id]));
+  const li = (q) => `<li><b>${esc(q.short)}</b><span>Tú: ${esc(ansBrief(q, a.ans[q.id]))} · ${F.live ? "Esta persona" : "La otra persona"}: ${esc(ansBrief(q, b.ans[q.id]))}</span></li>`;
+  const ua = userProfile(a).dims, ub = userProfile(b).dims;
+  const rows = BANK.dims.map((d) => { const x = ua[d.id], y = ub[d.id];
+    const txt = [x ? `Tú ${signed(x.v)}` : "Tú sin datos", y ? `${F.live ? "Esta persona" : "La otra persona"} ${signed(y.v)}` : "la otra persona sin datos"].join(" · ");
+    return `<div class="pdrow"><div><b>${esc(d.name)}</b><span class="small muted">${esc(txt)}</span></div><div class="track sm" role="img" aria-label="${esc(d.name)}: ${esc(txt)}">${trackHTML(x?.v, [], x ? `Tú: ${signed(x.v)}` : "")}${y ? `<span class="fm" style="left:${pctPos(y.v)}%" data-tip="${F.live ? "Esta persona" : "La otra persona"}: ${signed(y.v)}"></span>` : ""}</div></div>`; }).join("");
+  const ta = computeModel(a).prov[0], tb = computeModel(b).prov[0];
+  sec.innerHTML = `${head}
+    <div class="friend-top"><p class="tm-pct">${agree}<small>%</small></p><p class="why">Coincidís en un ${agree} % en las ${common.length} preguntas que habéis respondido los dos: estáis del mismo lado en ${same.length} y en lados opuestos en ${opp.length}.${ta && tb ? ` Tu mayor coincidencia es ${esc(pName(ta.pid, a.prov))} (${ta.pct} %); la de ${F.live ? "esta persona" : "la otra persona"}, ${esc(pName(tb.pid, b.prov))} (${tb.pct} %).` : ""}</p></div>
+    <div class="two">
+      <div><p class="subh" style="color:var(--ok)">En qué estáis de acuerdo (${same.length})</p>${same.length ? `<ul class="cmp">${same.slice(0, 3).map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">En ninguna pregunta estáis claramente del mismo lado.</li></ul>'}</div>
+      <div><p class="subh" style="color:var(--ko)">Dónde chocáis (${opp.length})</p>${opp.length ? `<ul class="cmp">${opp.slice(0, 3).map(li).join("")}</ul>` : '<ul class="cmp"><li class="empty">No estáis en lados opuestos en ninguna pregunta.</li></ul>'}</div>
+    </div>
+    <details class="more"><summary>Vuestras posiciones en las siete dimensiones</summary><div class="ddetail"><div class="pdims">${rows}</div><p class="small muted">Círculo con banda amarilla: tú. Círculo hueco: ${F.live ? "esta persona" : "la otra persona"}.</p></div></details>
+    <p class="small muted">La comparación se hace en tu navegador: nadie recibe tus respuestas.</p>${forget}`;
 }
 
 // ── Comparar dos candidaturas
@@ -1566,6 +1604,7 @@ function bindResults() {
     } else if (act === "new") {
       if (!confirm("¿Empezar de nuevo? Se borrarán tus respuestas guardadas en este navegador.")) return;
       const keep = { prov: S.prov, sex: S.sex, age: S.age, mode: S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#f-prov").focus(); }
+    else if (act === "forget-friend") { store.del(FRIEND_KEY); renderFriend(); toast("Resultado compartido olvidado"); }
     else if (act === "own-test") { SHARED = null; try { history.replaceState(null, "", location.pathname + location.search); } catch { /* sin historial */ } S = loadState(); fillSetup(); go("home"); }
   });
 }
@@ -1695,8 +1734,8 @@ function renderShare() {
           <button type="button" class="btn btn-ghost btn-sm" id="sh-dl">${SVG.dl}Descargar imagen PNG</button>
           <button type="button" class="btn btn-ghost btn-sm" id="sh-invite">${SVG.link}Invitar sin compartir mi resultado</button>
         </div>
-        <details class="more"><summary>Enlace a mi resultado completo</summary>
-          <p class="dinfo" style="margin:8px 0">Este enlace permite a quien lo abra ver tu resultado completo, <b>incluidas tus respuestas a cada pregunta</b> y las que marcaste como importantes, tu provincia y tus prioridades (no tu sexo ni tu edad). Todo va codificado en el propio enlace: no se guarda en ningún servidor. Compártelo solo si quieres que se vean tus respuestas.</p>
+        <details class="more"><summary>Enlace a mi resultado completo, para compararos</summary>
+          <p class="dinfo" style="margin:8px 0">Este enlace permite a quien lo abra ver tu resultado completo, <b>incluidas tus respuestas a cada pregunta</b> y las que marcaste como importantes, tu provincia y tus prioridades (no tu sexo ni tu edad). Todo va codificado en el propio enlace: no se guarda en ningún servidor. Compártelo solo si quieres que se vean tus respuestas. Si quien lo abre ha hecho el test, verá cuánto coincidís y en qué chocáis.</p>
           <button type="button" class="btn btn-ghost btn-sm" id="sh-full">${SVG.link}Copiar enlace con mis respuestas</button>
         </details>
       </div>
@@ -2038,7 +2077,7 @@ function renderMethod() {
             </dl>
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
-            <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad.</p>
+            <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
             ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, provincia, sexo, edad ni resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
               : `<p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>`}
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
@@ -2153,13 +2192,15 @@ async function boot() {
   bindGlobal(); bindQuiz(); bindPrios(); bindResults(); bindShare(); bindTips();
   try { history.scrollRestoration = "manual"; } catch { /* idem */ }
   window.addEventListener("popstate", (e) => { if (BANK && e.state?.view) restoreView(e.state.view); });
+  // Un enlace compartido abierto con la web ya cargada (solo cambia el fragmento #r2…)
+  window.addEventListener("hashchange", () => { const sh = BANK && decodeShare(location.hash); if (sh) { SHARED = sh; store.set(FRIEND_KEY, location.hash); openResults(); } });
   try { await loadData(); }
   catch (e) { console.error(e); go("error"); return; }
   S = loadState();
   initHome();
   const shared = decodeShare(location.hash);
   count(shared ? "/compartido" : "/", shared ? "Resultado compartido" : "Inicio");
-  if (shared) { SHARED = shared; openResults(); return; }
+  if (shared) { SHARED = shared; store.set(FRIEND_KEY, location.hash); openResults(); return; }
   if (S && S.stage === "done" && answered(S).length) { openResults(); return; }
   go("home", { focus: false });
 }
