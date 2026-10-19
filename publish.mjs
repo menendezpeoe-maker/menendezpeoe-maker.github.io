@@ -3,6 +3,7 @@
 // Requiere haber ejecutado antes `node build.mjs` (datos) y `node qa/assets.mjs` (imágenes).
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { buildPages } from "./pages.mjs";
 
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
@@ -32,7 +33,7 @@ console.log(`Contador de visitas: ${STATS_CODE ? `https://${STATS_CODE}.goatcoun
 writeFileSync(`${OUT}/assets/papeleta.js`, js);
 copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
 for (const f of ["preguntas.json", "partidos.json", "politicos.json"]) copyFileSync(`data/${f}`, `${OUT}/data/${f}`);
-for (const f of ["og.png", "favicon.svg", "favicon-32.png", "apple-touch-icon.png", "icon-512.png"]) {
+for (const f of ["og.png", "favicon.svg", "favicon-32.png", "favicon-48.png", "favicon-96.png", "favicon.ico", "apple-touch-icon.png", "icon-512.png", "boton-test29n.png", "perfil-test29n.png", "banner-test29n.png"]) {
   if (!existsSync(`qa/brand/${f}`)) throw new Error(`Falta qa/brand/${f}: ejecuta node qa/assets.mjs`);
   copyFileSync(`qa/brand/${f}`, `${OUT}/${f}`);
 }
@@ -45,13 +46,18 @@ mkdirSync(`${OUT}/assets/fonts`, { recursive: true });
 copyFileSync("assets/fonts.css", `${OUT}/assets/fonts.css`);
 for (const f of readdirSync("assets/fonts")) copyFileSync(`assets/fonts/${f}`, `${OUT}/assets/fonts/${f}`);
 const FONT_MAIN = readdirSync("assets/fonts").find((f) => f.startsWith("Archivo-normal-latin-") && !f.includes("ext"));
-const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`) };
+// Contador para las páginas estáticas (partidos, temas, prensa): mismo criterio que el test, solo la ruta visitada
+if (STATS_CODE) writeFileSync(`${OUT}/assets/stats.js`, `(()=>{try{if(navigator.webdriver||window.self!==window.top||location.hostname!==${JSON.stringify(new URL(SITE).hostname)})return;var q=new URLSearchParams({p:location.pathname,t:document.title,s:screen.width+","+screen.height+","+(window.devicePixelRatio||1),rnd:Math.random().toString(36).slice(2,8)});if(document.referrer&&document.referrer.indexOf(location.origin)!==0)q.set("r",document.referrer.split(/[?#]/)[0]);var i=new Image();i.referrerPolicy="origin";i.src="https://${STATS_CODE}.goatcounter.com/count?"+q}catch(e){}})();\n`);
+const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`), stats: STATS_CODE ? hash(`${OUT}/assets/stats.js`) : "" };
+const OWNER_M = /const OWNER = \{ name: "([^"]*)", email: "([^"]*)" \}/.exec(js);
 
 // El cuerpo es el mismo que el del artefacto; se quitan sus etiquetas de cabecera
 const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
+  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
   .trim();
+if (!body.includes('href="prensa/"')) throw new Error("No se pudieron añadir los enlaces del pie");
 const csp = [
   "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline'",
   "font-src 'self'", `img-src 'self' data: blob:${STATS_CODE ? ` https://${STATS_CODE}.goatcounter.com` : ""}`, "connect-src 'self'",
@@ -71,6 +77,8 @@ const head = (title, desc, extra = "", B = "") => `<!doctype html>
 <meta name="theme-color" content="#0E1014" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="${B}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="${B}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="${B}favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="${B}favicon-96.png" sizes="96x96" type="image/png">
 <link rel="apple-touch-icon" href="${B}apple-touch-icon.png">
 <link rel="manifest" href="${B}site.webmanifest">
 ${extra}<link rel="preload" href="${B}assets/fonts/${FONT_MAIN}" as="font" type="font/woff2" crossorigin>
@@ -123,8 +131,15 @@ writeFileSync(`${OUT}/404.html`, `${head("Página no encontrada · Test 29N", "L
 
 writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: "Test 29N", short_name: "Test 29N", lang: "es", start_url: SITE, scope: SITE, display: "standalone", background_color: "#F2F3EE", theme_color: "#111318", icons: [{ src: `${SITE}icon-512.png`, sizes: "512x512", type: "image/png" }, { src: `${SITE}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 1));
 writeFileSync(`${OUT}/robots.txt`, `User-agent: *\nAllow: /\nSitemap: ${SITE}sitemap.xml\n`);
-writeFileSync(`${OUT}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${SITE}</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq></url></urlset>\n`);
+// Páginas estáticas por candidatura, por tema y de prensa (pages.mjs), con los mismos datos que el test
+const pages = buildPages({ OUT, SITE, head, statsJs: v.stats, owner: OWNER_M ? { name: OWNER_M[1], email: OWNER_M[2] } : null });
+const lastmod = JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated;
+writeFileSync(`${OUT}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[SITE, ...pages].map((u) => `<url><loc>${u}</loc><lastmod>${lastmod}</lastmod></url>`).join("")}</urlset>\n`);
+console.log(`Páginas estáticas: ${pages.length}`);
 writeFileSync(`${OUT}/.nojekyll`, "");
+// IndexNow (Bing y otros buscadores): clave pública que demuestra que el sitio es nuestro. No es un secreto.
+export const INDEXNOW_KEY = "1f3e3806022d0e0bc3462765cf958475";
+writeFileSync(`${OUT}/${INDEXNOW_KEY}.txt`, INDEXNOW_KEY);
 // Dominio propio: GitHub Pages lo lee de CNAME y redirige la dirección github.io a él
 const host = new URL(SITE).hostname;
 if (!host.endsWith(".github.io")) writeFileSync(`${OUT}/CNAME`, `${host}\n`);
