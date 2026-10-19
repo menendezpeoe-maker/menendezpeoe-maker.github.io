@@ -64,6 +64,28 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
     - **Antes de dejar una postura como «estimada»,** prueba al menos dos búsquedas distintas.
     - **Si sigue sin fuente clara,** déjala «estimada» con una nota de una línea que diga en qué se basa la estimación. Añádela a una lista «estimadas sin fuente» en `ESTADO.md` para que el titular lo sepa.
 
+13. **Una sola fuente de verdad, para que nunca se pierda nada entre sesiones.**
+    - **El único código válido es la rama `fuente` de GitHub.** No existen copias locales «buenas». Cada tanda, y cualquier otra conversación que toque la web, incluida la del titular con Claude, empieza con `git fetch` y trabaja sobre `origin/fuente`.
+    - **Comprobación de partida, antes de cambiar nada:**
+      1. Genera `dist/` desde `origin/fuente` sin modificar, con `node build.mjs` y `SITE_URL=https://test29n.es/ node publish.mjs`.
+      2. Compáralo con la rama `main` publicada (`diff -r`, sin `.git`).
+      3. Si hay cualquier diferencia, PARA. Significa que la web tiene algo que el código no tiene, y publicar lo borraría. No publiques nada: anótalo en `ESTADO.md` y avisa al titular.
+    - **Orden al publicar, siempre:** primero commit y push a `fuente`; después copia `dist/` a `main` y push. Nunca se publica en `main` nada cuyo código no esté ya en `origin/fuente`.
+    - **Si un push se rechaza porque `fuente` avanzó:** haz `git pull --rebase`, vuelve a pasar las pruebas y reintenta. Nunca fuerces.
+    - **Al terminar:** `git status` limpio, `git log origin/fuente..HEAD` vacío y la web real sirviendo la versión nueva. Si algo de esto falla, la tanda no ha terminado.
+    - **Datos privados:** ningún archivo del repositorio puede contener los términos de `PRIVATE_TERMS`, tampoco en pruebas. Se leen siempre de la variable.
+14. **Trabaja como un equipo profesional completo.** Antes de dar por bueno un bloque, revísalo con estos ojos (puedes repartirlos con el revisor de la regla 9):
+    - **Diseño y experiencia de uso:** el móvil primero, claridad y cero fricción.
+    - **Accesibilidad (WCAG 2.2 AA):** contraste, uso con teclado y lectores de pantalla.
+    - **Ciencia política y neutralidad:** preguntas equilibradas, sin sesgo, sin recomendar voto.
+    - **Periodismo y verificación:** fuentes primarias con fecha; nada inventado.
+    - **Corrección lingüística:** ortografía y estilo según la RAE.
+    - **Legal y privacidad (LOREG, RGPD, LSSI):** nada parecido a una encuesta del 24 al 28 de noviembre, ninguna promoción el 28 y los datos mínimos.
+    - **SEO y rendimiento:** títulos, metadatos, datos estructurados y velocidad en un móvil lento.
+    - **Seguridad:** CSP estricta, sin secretos y sin datos privados.
+
+    Si una mejora no supera esta revisión, no se publica: se corrige o se anota en `ESTADO.md`.
+
 ## Tandas
 
 | Tanda | Fecha (hora de Madrid) | Contenido |
