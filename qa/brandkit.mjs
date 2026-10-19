@@ -31,8 +31,7 @@ let icoOff = icoHead.length;
 icoImgs.forEach(([n, d], i) => { const o = 6 + 16 * i; icoHead[o] = n; icoHead[o + 1] = n; icoHead.writeUInt16LE(1, o + 4); icoHead.writeUInt16LE(32, o + 6); icoHead.writeUInt32LE(d.length, o + 8); icoHead.writeUInt32LE(icoOff, o + 12); icoOff += d.length; });
 fs.writeFileSync(OUT + "favicon.ico", Buffer.concat([icoHead, ...icoImgs.map(([, d]) => d)]));
 // Banner para cabeceras de redes (1500 × 500), con el mismo componente que la portada
-const html = fs.readFileSync(ROOT + "papeleta-29n.html", "utf8");
-const banner = html.slice(html.indexOf('<div class="banner"'), html.indexOf('<p class="label">Test político y electoral'));
+const banner = fs.readFileSync(OUT + "banner.html", "utf8");
 await shot(page(banner, 1500, 500, ".banner{width:1500px;height:500px;margin:0;border-radius:0;border:0;padding:56px 90px;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:70px}.bn-h{font-size:64px}.bn-sub{font-size:22px}.bn-c{height:40px}.bn-t{font-size:15px}.bn-row{grid-template-columns:120px repeat(5,minmax(0,1fr));gap:8px}.bn-avatar{width:56px;height:56px}"), 1500, 500, "banner-test29n.png");
 await b.close();
 console.log("qa/brand: perfil-test29n.png, icon-512.png, apple-touch-icon.png, favicon-32/48/96.png, favicon.ico, favicon.svg, banner-test29n.png");

@@ -187,7 +187,9 @@ function loadState() {
   for (const k of Object.keys(s.ans)) if (!Q[k] || ![0, 1, 2, 3, 4, 5].includes(s.ans[k])) delete s.ans[k];
   s.imp = s.imp && typeof s.imp === "object" ? s.imp : {};
   s.prios = Array.isArray(s.prios) ? s.prios.filter((a) => AREA[a]).slice(0, 3) : [];
-  if (!PROV[s.prov] || !s.order.length) return null;
+  delete s.sex; delete s.age;  // versiones anteriores pedían sexo y edad: se ignoran
+  if (!s.order.length) return null;
+  if (!PROV[s.prov]) { delete s.prov; if (s.stage === "done") s.stage = "prios"; }
   s.idx = Math.min(Math.max(0, s.idx | 0), s.order.length - 1);
   return s;
 }
@@ -215,8 +217,9 @@ function initHome() {
   const sel = $("#f-prov");
   sel.innerHTML = '<option value="">Elige tu provincia…</option>' + PD.regions.map((r) =>
     `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("");
-  sel.disabled = false;
-  sel.addEventListener("change", renderProvChips);
+  sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
+  $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
+  $(".ex-scale").addEventListener("click", (e) => { const b = e.target.closest("[data-ex]"); if (b) startFromExample(Number(b.dataset.ex)); });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
   $("#areas-list").innerHTML = BANK.areas.map((a) => {
     const n = BANK.questions.filter((q) => q.area === a.id).length;
@@ -226,20 +229,28 @@ function initHome() {
   if (ex) { $("#ex-code").textContent = qCode(ex); $("#ex-area").textContent = AREA[ex.area].name; $("#ex-text").textContent = ex.text; $("#ex-ctx").textContent = ex.ctx; }
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el 18 de octubre de 2026`;
   $("#setup").addEventListener("submit", startTest);
+  $("#start-btn").disabled = false;
   fillSetup();
 }
 function fillSetup(s = S) {
-  if (s) {
-    $("#f-prov").value = s.prov || "";
-    $$('input[name=sex]').forEach((i) => { i.checked = i.value === s.sex; });
-    $("#f-age").value = s.age || "";
-    $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
-  }
-  renderProvChips(); renderResume();
+  if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
+  renderStartNote(); renderResume();
+}
+const MODE_NOTE = { expres: "unos 5 minutos", media: "unos 10 minutos", completa: "unos 20 minutos" };
+function renderStartNote() {
+  const mode = ($('input[name=mode]:checked') || {}).value || "expres";
+  $("#start-note").innerHTML = `Versión ${MODES[mode].label.toLowerCase()}: ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}. <a href="#setup">${mode === "expres" ? "Otras versiones" : "Cambiar de versión"}</a>`;
+}
+// La provincia se pide al final y se recuerda la última elegida (solo en este navegador)
+function setProv(v) {
+  if (!PROV[v]) return;
+  if (S) { S.prov = v; save(); }
+  PREFS.prov = v; savePrefs();
+  $("#prov-err").textContent = "";
 }
 function renderProvChips() {
   const v = $("#f-prov").value, box = $("#prov-chips");
-  if (!v) { box.innerHTML = '<span class="muted small">Al elegirla verás qué candidaturas se presentan allí.</span>'; return; }
+  if (!v) { box.innerHTML = ""; return; }
   const list = partiesIn(v);
   box.innerHTML = list.map((pid) => `<span class="chip${P[pid].tbd ? " tbd" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(pName(pid, v))}${P[pid].tbd ? " · por confirmar" : ""}</span>`).join("")
     + `<span class="small muted" style="align-self:center">${list.length} candidaturas en ${esc(PROV[v].name)}</span>`;
@@ -255,30 +266,37 @@ function renderResume() {
   } else { box.hidden = true; return; }
   box.hidden = false;
 }
+function newTest() {
+  const mode = ($('input[name=mode]:checked') || {}).value || "expres";
+  const seed = newSeed();
+  S = { v: 2, bank: BANK.version, mode, seed, order: buildOrder(mode, seed), idx: 0, ans: {}, imp: {}, prios: [], stage: "quiz", t: Date.now() };
+  if (PROV[PREFS.prov]) S.prov = PREFS.prov;
+  SHARED = null; SH.edited = false;
+}
 function startTest(e) {
   e.preventDefault();
-  const prov = $("#f-prov").value;
-  const sex = ($('input[name=sex]:checked') || {}).value;
-  const ageRaw = $("#f-age").value.trim();
-  const age = Number(ageRaw);
-  const mode = ($('input[name=mode]:checked') || {}).value || "expres";
-  const missing = [];
-  if (!prov) missing.push("elige tu provincia");
-  if (!sex) missing.push("indica tu sexo o «Prefiero no responder»");
-  if (!ageRaw || !Number.isInteger(age) || age < 16 || age > 110) missing.push("escribe tu edad, entre 16 y 110 años");
-  const err = $("#setup-err");
-  if (missing.length) {
-    err.textContent = `Para empezar, ${missing.join("; ")}.`;
-    (!prov ? $("#f-prov") : !sex ? $("#f-sex-m") : $("#f-age")).focus();
-    return;
-  }
-  err.textContent = "";
-  const seed = newSeed();
-  S = { v: 2, bank: BANK.version, prov, sex, age, mode, seed, order: buildOrder(mode, seed), idx: 0, ans: {}, imp: {}, prios: [], stage: "quiz", t: Date.now() };
-  SHARED = null; SH.edited = false;
+  newTest();
   save();
+  launchQuiz(true);
+}
+// La pregunta de ejemplo de la portada es real: responderla empieza el test con esa respuesta guardada
+function startFromExample(v) {
+  const ex = Q.C01; if (!ex) return;
+  const inProgress = S && S.stage !== "done" && S.order.includes(ex.id);
+  if (!inProgress) {
+    newTest();
+    S.order = [ex.id, ...S.order.filter((id) => id !== ex.id)];
+  }
+  S.ans[ex.id] = v;
+  const nxt = S.order.findIndex((id) => S.ans[id] === undefined);
+  S.idx = nxt < 0 ? S.order.length - 1 : nxt;
+  save();
+  toast("Respuesta guardada");
+  launchQuiz(!inProgress);
+}
+function launchQuiz(isNew) {
   renderQuestion(0);
-  count("test-empezado", "Test empezado", true);
+  if (isNew) count("test-empezado", "Test empezado", true);
   go("quiz", { focus: false });
   focusStatement();
 }
@@ -439,8 +457,15 @@ function bindQuiz() {
   });
 }
 
-// ───────────────────────────── PRIORIDADES
+// ───────────────────────────── PRIORIDADES (y provincia, que se pide aquí)
+function renderProvField() {
+  if (!PROV[S.prov] && PROV[PREFS.prov]) { S.prov = PREFS.prov; save(); }
+  $("#f-prov").value = S.prov || "";
+  $("#prov-err").textContent = "";
+  renderProvChips();
+}
 function renderPrios() {
+  renderProvField();
   const grid = $("#prio-grid");
   const full = S.prios.length >= 3;
   grid.innerHTML = BANK.areas.map((a) => {
@@ -459,7 +484,10 @@ function bindPrios() {
     save(); renderPrios();
     $(`.prio-b[data-a="${id}"]`).focus();
   });
-  const finish = (skip) => { if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults(); };
+  const finish = (skip) => {
+    if (!PROV[S.prov]) { $("#prov-err").textContent = "Elige tu provincia para ver con qué candidaturas de allí coincides."; $("#f-prov").focus(); return; }
+    if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults();
+  };
   $("#prio-go").addEventListener("click", () => finish(false));
   $("#prio-skip").addEventListener("click", () => finish(true));
   $("#prio-back").addEventListener("click", () => { S.stage = "quiz"; S.idx = S.order.length - 1; save(); renderQuestion(0); go("quiz", { focus: false }); focusStatement(); });
@@ -639,6 +667,8 @@ function unusualCombos(M) {
 // ───────────────────────────── RESULTADOS
 let MODEL = null;
 function openResults() {
+  // Sin provincia no hay resultados: se pide en el último paso
+  if (!SHARED && S && !PROV[S.prov]) { S.stage = "prios"; save(); renderPrios(); go("prios"); return; }
   MODEL = computeModel(ST());
   UI.cmp = MODEL.prov[0]?.pid || null;
   UI.scope = "prov"; UI.extra = null; UI.vsA = UI.vsB = null; UI.mapSel = null; UI.mapDim = "";
@@ -650,7 +680,7 @@ function renderResults() {
   const st = ST();
   const next = st.mode === "expres" ? "media" : st.mode === "media" ? "completa" : null;
   $("#v-results").innerHTML = `
-    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} No incluye el sexo ni la edad de quien lo comparte y no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
+    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} No modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
       <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
     </div></nav>
@@ -943,7 +973,7 @@ function renderSummary() {
       <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${MODES[st.mode]?.label || ""}</span><span>Congreso · ${esc(pr.name)}</span></div>
       <div class="ballot-body">
         <div style="display:grid;gap:16px;align-content:start">
-          <p class="who">${SHARED ? "Resultado compartido" : `${st.sex && st.sex !== "Prefiero no responder" ? `${esc(st.sex)} · ` : ""}${esc(st.age)} años`} · ${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
+          <p class="who">${SHARED ? "Resultado compartido · " : ""}${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
           <h1 id="res-h" class="profile-h">${esc(ps.head)}</h1>
           ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
           <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
@@ -1603,7 +1633,7 @@ function bindResults() {
       renderQuestion(0); go("quiz", { focus: false }); focusStatement();
     } else if (act === "new") {
       if (!confirm("¿Empezar de nuevo? Se borrarán tus respuestas guardadas en este navegador.")) return;
-      const keep = { prov: S.prov, sex: S.sex, age: S.age, mode: S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#f-prov").focus(); }
+      const keep = { mode: S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#start-btn").focus(); }
     else if (act === "forget-friend") { store.del(FRIEND_KEY); renderFriend(); toast("Resultado compartido olvidado"); }
     else if (act === "own-test") { SHARED = null; try { history.replaceState(null, "", location.pathname + location.search); } catch { /* sin historial */ } S = loadState(); fillSetup(); go("home"); }
   });
@@ -1611,7 +1641,7 @@ function bindResults() {
 
 // ───────────────────────────── Compartir
 // Enlace con fragmento (#r2…): solo letras y números. Incluye provincia, versión, prioridades y
-// respuestas (con su importancia) en el orden del banco. No incluye sexo ni edad.
+// respuestas (con su importancia) en el orden del banco.
 function encodeShare(st) {
   const prov = PROV_LIST.indexOf(st.prov).toString(36).padStart(2, "0");
   const mode = { expres: "e", media: "m", completa: "c" }[st.mode] || "e";
@@ -1651,7 +1681,7 @@ function showCopyFallback(text, el) {
 // desde la vista previa en Claude o en local, la dirección pública configurada.
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch { return true; } })();
 // Cuenta una visita o un paso del test. Solo se envía el nombre del paso, la web de procedencia y el tamaño
-// de pantalla: nunca respuestas, provincia, sexo, edad, resultado ni el enlace compartido (#r2…).
+// de pantalla: nunca respuestas, provincia, resultado ni el enlace compartido (#r2…).
 const COUNTED = new Set();
 function count(path, title, event = false) {
   const code = STATS.goatcounter;
@@ -1735,7 +1765,7 @@ function renderShare() {
           <button type="button" class="btn btn-ghost btn-sm" id="sh-invite">${SVG.link}Invitar sin compartir mi resultado</button>
         </div>
         <details class="more"><summary>Enlace a mi resultado completo, para compararos</summary>
-          <p class="dinfo" style="margin:8px 0">Este enlace permite a quien lo abra ver tu resultado completo, <b>incluidas tus respuestas a cada pregunta</b> y las que marcaste como importantes, tu provincia y tus prioridades (no tu sexo ni tu edad). Todo va codificado en el propio enlace: no se guarda en ningún servidor. Compártelo solo si quieres que se vean tus respuestas. Si quien lo abre ha hecho el test, verá cuánto coincidís y en qué chocáis.</p>
+          <p class="dinfo" style="margin:8px 0">Este enlace permite a quien lo abra ver tu resultado completo, <b>incluidas tus respuestas a cada pregunta</b> y las que marcaste como importantes, tu provincia y tus prioridades. Todo va codificado en el propio enlace: no se guarda en ningún servidor. Compártelo solo si quieres que se vean tus respuestas. Si quien lo abre ha hecho el test, verá cuánto coincidís y en qué chocáis.</p>
           <button type="button" class="btn btn-ghost btn-sm" id="sh-full">${SVG.link}Copiar enlace con mis respuestas</button>
         </details>
       </div>
@@ -2077,8 +2107,8 @@ function renderMethod() {
             </dl>
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
-            <p>No hay registro ni servidor de respuestas: tu provincia, sexo, edad y respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. Sexo y edad solo se muestran en tu resultado y no intervienen en ningún cálculo. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades, pero no tu sexo ni tu edad. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
-            ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, provincia, sexo, edad ni resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
+            <p>No hay registro ni servidor de respuestas: tu provincia y tus respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. El test no pide sexo, edad ni ningún otro dato personal. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
+            ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, tu provincia ni tu resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
               : `<p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>`}
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>
@@ -2179,7 +2209,7 @@ function bindGlobal() {
 
 // «Atrás» y «Adelante»: se vuelve a pintar la pantalla con el estado actual, sin añadir otra entrada
 function restoreView(v) {
-  if (v === "results" && (SHARED || (S && answered(S).length))) { MODEL = computeModel(ST()); if (!MODEL.prov.some((m) => m.pid === UI.cmp)) UI.cmp = MODEL.prov[0]?.pid || null; renderResults(); go("results", { push: false }); return; }
+  if (v === "results" && (SHARED || (S && answered(S).length && PROV[S.prov]))) { MODEL = computeModel(ST()); if (!MODEL.prov.some((m) => m.pid === UI.cmp)) UI.cmp = MODEL.prov[0]?.pid || null; renderResults(); go("results", { push: false }); return; }
   if (v === "quiz" && S && S.order) { renderQuestion(0); go("quiz", { push: false, focus: false }); focusStatement(); return; }
   if (v === "prios" && S && S.order) { renderPrios(); go("prios", { push: false }); return; }
   if (v === "method") { renderMethod(); go("method", { push: false }); return; }

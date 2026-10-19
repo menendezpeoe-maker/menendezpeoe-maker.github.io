@@ -23,17 +23,20 @@
   <!-- INICIO -->
   <section id="v-home" class="view" aria-labelledby="home-h">
     <div class="wrap hero">
-      <div class="banner" role="img" aria-label="Test 29N. ¿Con quién coincides el 29N? Responde pregunta a pregunta y compara tus ideas con las candidaturas de tu provincia. Gratis y sin registro.">
-        <div class="bn-main" aria-hidden="true">
-          <div class="bn-brand"><svg class="bn-avatar" viewBox="0 0 120 120"><rect width="120" height="120" rx="26" fill="#111318"/><path d="M29 16h45l18 18v70H29z" fill="#FFFFFF"/><path d="M74 16v18h18" fill="#D2D5CC"/><rect x="34" y="55" width="53" height="23" rx="3" fill="#F6DD2F"/><text x="60.5" y="72.6" text-anchor="middle" font-family="Archivo, Arial Narrow, sans-serif" font-weight="900" font-size="18.5" font-stretch="112%" fill="#111318">29N</text><rect x="37" y="86" width="36" height="5" rx="2.5" fill="#111318"/></svg><span>Test 29N · Elecciones generales</span></div>
-          <p class="bn-h">¿Con quién coincides el <span>29N</span>?</p>
-          <p class="bn-sub">Responde pregunta a pregunta y compara tus ideas con las candidaturas de tu provincia.</p>
+      <div class="banner">
+        <div class="bn-main">
+          <p class="bn-brand"><svg class="bn-avatar" aria-hidden="true" viewBox="0 0 120 120"><rect width="120" height="120" rx="26" fill="#111318"/><path d="M29 16h45l18 18v70H29z" fill="#FFFFFF"/><path d="M74 16v18h18" fill="#D2D5CC"/><rect x="34" y="55" width="53" height="23" rx="3" fill="#F6DD2F"/><text x="60.5" y="72.6" text-anchor="middle" font-family="Archivo, Arial Narrow, sans-serif" font-weight="900" font-size="18.5" font-stretch="112%" fill="#111318">29N</text><rect x="37" y="86" width="36" height="5" rx="2.5" fill="#111318"/></svg><span>Test 29N · Elecciones generales del 29 de noviembre de 2026</span></p>
+          <h1 id="home-h" class="bn-h">Lo que piensas, <span>tema a tema</span>.</h1>
+          <p class="bn-sub">¿Con quién coincides el 29N? Responde pregunta a pregunta y compara tus ideas con las candidaturas de tu provincia.</p>
+          <div class="bn-cta">
+            <button class="btn bn-btn" type="submit" form="setup" id="start-btn" disabled>Empezar el test</button>
+            <p class="bn-note" id="start-note">Versión exprés: <span data-count="expres">24</span> preguntas, unos 5 minutos. <a href="#setup">Otras versiones</a></p>
+          </div>
           <p class="bn-tags"><span>Gratis</span><span>Sin registro</span><span>Contexto neutral en cada pregunta</span></p>
         </div>
         <div class="bn-grid" aria-hidden="true"><div class="bn-row bn-head"><span class="bn-t"></span><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b></div><div class="bn-row"><span class="bn-t">Vivienda</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Impuestos</span><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Inmigración</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i></div><div class="bn-row"><span class="bn-t">Sanidad</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Energía</span><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Europa</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i></div></div>
       </div>
-      <p class="label">Test político y electoral · Elecciones generales del 29 de noviembre de 2026</p>
-      <h1 id="home-h" class="hero-h">Lo que piensas, <span class="hl">tema a tema</span>.</h1>
+      <div id="resume" class="resume" hidden></div>
       <p class="lede">Responde a afirmaciones sobre los debates reales de España, de la financiación autonómica a la ley electoral, y descubre tu posición en siete dimensiones políticas y tu grado de coincidencia con las candidaturas de tu provincia. Cada pregunta trae un contexto neutral para responder con criterio.</p>
       <ul class="facts" aria-label="El test en cifras">
         <li><b>107</b> preguntas</li><li><b>12</b> áreas temáticas</li><li><b>7</b> dimensiones</li><li><b>25</b> candidaturas</li><li><b>52</b> circunscripciones</li>
@@ -42,27 +45,7 @@
 
     <div class="wrap home-grid">
       <form id="setup" class="sheet setup" novalidate aria-labelledby="setup-h">
-        <div class="sheet-head"><h2 id="setup-h" class="h3">Prepara tu test</h2><span class="label muted">Sin registro</span></div>
-        <div id="resume" class="resume" hidden></div>
-        <div class="field">
-          <label class="label" for="f-prov">Provincia en la que votas</label>
-          <select id="f-prov" required disabled><option value="">Cargando provincias…</option></select>
-          <p id="prov-chips" class="chips" aria-live="polite"><span class="muted small">Al elegirla verás qué candidaturas se presentan allí.</span></p>
-        </div>
-        <div class="field-row">
-          <fieldset class="field">
-            <legend class="label">Sexo</legend>
-            <div class="seg">
-              <label><input type="radio" name="sex" id="f-sex-m" value="Mujer"><span>Mujer</span></label>
-              <label><input type="radio" name="sex" id="f-sex-h" value="Hombre"><span>Hombre</span></label>
-              <label><input type="radio" name="sex" id="f-sex-n" value="Prefiero no responder"><span>Prefiero no responder</span></label>
-            </div>
-          </fieldset>
-          <div class="field field-age">
-            <label class="label" for="f-age">Edad</label>
-            <input id="f-age" type="number" inputmode="numeric" min="16" max="110" placeholder="Ej. 34" autocomplete="off">
-          </div>
-        </div>
+        <div class="sheet-head"><h2 id="setup-h" class="h3">Elige la versión</h2><span class="label muted">Sin registro</span></div>
         <fieldset class="field">
           <legend class="label">Versión</legend>
           <div class="modes" id="f-modes">
@@ -71,25 +54,25 @@
             <label><input type="radio" name="mode" id="f-mode-completa" value="completa"><span><b>Completa</b><em><span data-count="completa">107</span> preguntas · 20 min</em><small>Todo el banco</small></span></label>
           </div>
         </fieldset>
-        <p id="setup-err" class="err" role="alert"></p>
         <div class="actions">
-          <button class="btn btn-primary" type="submit" id="start-btn">Empezar el test</button>
-          <p class="small muted">Tus datos y respuestas se guardan solo en este navegador.</p>
+          <button class="btn btn-primary" type="submit" id="start-btn-2">Empezar con esta versión</button>
+          <p class="small muted">Tus respuestas se guardan solo en este navegador. La provincia se pide al final, antes de ver los resultados.</p>
         </div>
       </form>
 
       <aside class="example" aria-labelledby="ex-h">
-        <p class="label" id="ex-h">Así es cada pregunta</p>
+        <p class="label" id="ex-h">Empieza por esta pregunta</p>
         <div class="ex-card">
           <p class="q-meta"><span class="q-code" id="ex-code">C·01</span><span id="ex-area">Organización territorial</span></p>
           <p class="ex-stmt" id="ex-text">Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.</p>
-          <div class="ex-scale" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span class="on">4</span><span>5</span></div>
+          <div class="ex-scale" role="group" aria-labelledby="ex-text" aria-describedby="ex-hint"><button type="button" data-ex="1" aria-label="1, totalmente en desacuerdo" title="Totalmente en desacuerdo">1</button><button type="button" data-ex="2" aria-label="2, en desacuerdo" title="En desacuerdo">2</button><button type="button" data-ex="3" aria-label="3, ni de acuerdo ni en desacuerdo" title="Ni de acuerdo ni en desacuerdo">3</button><button type="button" data-ex="4" aria-label="4, de acuerdo" title="De acuerdo">4</button><button type="button" data-ex="5" aria-label="5, totalmente de acuerdo" title="Totalmente de acuerdo">5</button></div>
+          <p class="ex-ends" aria-hidden="true"><span>Totalmente en desacuerdo</span><span>Totalmente de acuerdo</span></p>
           <div class="ex-ctx">
             <p class="ctx-kicker"><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="6.2" r="1.1" fill="currentColor"/></svg>Más contexto</p>
             <p id="ex-ctx">El País Vasco y Navarra recaudan casi todos sus impuestos y pagan al Estado un cupo por los servicios comunes, por derechos históricos reconocidos en la Constitución. Las demás comunidades se financian con un sistema común…</p>
           </div>
         </div>
-        <p class="small muted">El contexto explica la medida y los argumentos de ambos lados, sin sugerir qué responder.</p>
+        <p class="small muted" id="ex-hint">Si la respondes, empiezas el test con tu respuesta ya guardada. El contexto explica la medida y los argumentos de ambos lados, sin sugerir qué responder.</p>
       </aside>
     </div>
 
@@ -150,14 +133,22 @@
   <!-- PRIORIDADES -->
   <section id="v-prios" class="view" hidden aria-labelledby="prios-h">
     <div class="wrap narrow prios">
-      <p class="label">Último paso · opcional</p>
-      <h1 id="prios-h" class="h1" tabindex="-1">¿Qué temas pesan más en tu voto?</h1>
-      <p class="lede">Elige hasta tres áreas. Contarán un 50 % más al calcular tu coincidencia con los partidos. Tu perfil ideológico no cambia.</p>
+      <p class="label">Último paso</p>
+      <h1 id="prios-h" class="h1" tabindex="-1">Antes de ver tus resultados</h1>
+      <div class="field prov-field">
+        <label class="label" for="f-prov">Provincia en la que votas</label>
+        <select id="f-prov" required aria-describedby="prov-hint prov-err"><option value="">Elige tu provincia…</option></select>
+        <p id="prov-hint" class="small muted">Al elegirla verás qué candidaturas se presentan allí. Se guarda solo en este navegador.</p>
+        <p id="prov-chips" class="chips" aria-live="polite"></p>
+        <p id="prov-err" class="err" role="alert"></p>
+      </div>
+      <h2 class="h3 prio-h">¿Qué temas pesan más en tu voto? <span class="label muted">Opcional</span></h2>
+      <p class="small muted prio-lede">Elige hasta tres áreas. Contarán un 50 % más al calcular tu coincidencia con los partidos. Tu perfil ideológico no cambia.</p>
       <div class="prio-grid" id="prio-grid" role="group" aria-label="Áreas prioritarias"></div>
       <p class="small muted" id="prio-count" aria-live="polite"></p>
       <div class="actions">
         <button class="btn btn-primary" type="button" id="prio-go">Ver mis resultados</button>
-        <button class="btn btn-ghost" type="button" id="prio-skip">Saltar este paso</button>
+        <button class="btn btn-ghost" type="button" id="prio-skip">Ver resultados sin prioridades</button>
         <button class="link-btn" type="button" id="prio-back">Volver a las preguntas</button>
       </div>
     </div>

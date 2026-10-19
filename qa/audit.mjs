@@ -9,7 +9,7 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const errors = [], fails = [], notes = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const done = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const done = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 const browser = await chromium.launch();
 async function ctxPage(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: opts.w || 1100, height: 900 }, colorScheme: opts.dark ? "dark" : "light", bypassCSP: !!opts.axe });
@@ -23,13 +23,12 @@ const view = (page) => page.evaluate(() => ["home", "quiz", "prios", "results", 
 console.log("Historial del navegador");
 {
   const { ctx, page } = await ctxPage({ tag: "hist" });
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.click(".head-nav [data-go='method']"); ok((await view(page)) === "method", "ir a «Cómo funciona»");
   await page.goBack(); ok((await view(page)) === "home", "Atrás vuelve al inicio (antes salía de la web)");
   await page.goForward(); ok((await view(page)) === "method", "Adelante vuelve a «Cómo funciona»");
   await page.click(".head-nav [data-go='explorer']"); await page.goBack(); ok((await view(page)) === "method", "Atrás desde «Posturas» vuelve a «Cómo funciona»");
   await page.goBack();
-  await page.selectOption("#f-prov", "madrid"); await page.check("#f-sex-n", { force: true }); await page.fill("#f-age", "30");
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   for (let i = 0; i < 3; i++) { await page.click(".scale label:nth-child(4)", { force: true }).catch(() => page.keyboard.press("4")); await page.waitForTimeout(450); }
   await page.goBack(); ok((await view(page)) === "home" && await page.isVisible("#resume"), "Atrás desde el test vuelve al inicio y ofrece continuar");
@@ -52,7 +51,7 @@ console.log("Estados de carga y error");
 {
   const { ctx, page } = await ctxPage({ tag: "pols-fail", allowErr: true });
   await ctx.route("**/data/politicos.json*", (r) => r.abort());
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id) => [id, 2]))));
   await page.reload(); await page.waitForSelector("#v-results:not([hidden])");
   ok((await page.locator("#r-parties .rank li").count()) > 0 && /No se han podido cargar los perfiles/.test(await page.innerText("#r-pols")), "si fallan los políticos, el resto del resultado funciona y se avisa");
@@ -60,7 +59,7 @@ console.log("Estados de carga y error");
 }
 {
   const { ctx, page } = await ctxPage({ tag: "corrupt" });
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate(() => localStorage.setItem("papeleta29n.v2", "{roto"));
   await page.reload(); await page.waitForTimeout(1200);
   ok((await view(page)) === "home", "un progreso guardado corrupto no rompe la web");
@@ -75,10 +74,9 @@ console.log("Estados de carga y error");
 console.log("Teclado");
 {
   const { ctx, page } = await ctxPage({ tag: "kbd" });
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.keyboard.press("Tab");
   ok(await page.evaluate(() => document.activeElement.classList.contains("skip")), "el primer Tab muestra «Saltar al contenido»");
-  await page.selectOption("#f-prov", "madrid"); await page.check("#f-sex-m", { force: true }); await page.fill("#f-age", "41");
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   const c0 = await page.textContent("#q-count");
   await page.keyboard.press("4"); await page.waitForTimeout(700);
@@ -91,7 +89,7 @@ if (process.env.AXE !== "0") {
   const axe = await (await fetch("https://cdn.jsdelivr.net/npm/axe-core@4.10.2/axe.min.js")).text();
   for (const [tag, dark, w] of [["claro", false, 1100], ["oscuro", true, 390]]) {
     const { ctx, page } = await ctxPage({ tag: `axe-${tag}`, dark, w, axe: true });
-    await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
     const run = async (name) => {
       await page.waitForTimeout(700); // que termine la animación de entrada antes de medir contraste
       await page.addScriptTag({ content: axe });
@@ -103,7 +101,7 @@ if (process.env.AXE !== "0") {
     const res = {};
     res.home = await run("inicio");
     await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]])), { stage: "quiz", idx: 3 }));
-    await page.reload(); await page.waitForSelector("#f-prov:not([disabled])");
+    await page.reload(); await page.waitForSelector("#start-btn:not([disabled])");
     await page.click("[data-act='resume']"); await page.waitForSelector("#v-quiz:not([hidden])");
     res.quiz = await run("pregunta");
     await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]]))));
@@ -121,7 +119,7 @@ console.log("Rendimiento");
 {
   const { ctx, page } = await ctxPage({ tag: "perf" });
   let bytes = 0; page.on("response", async (r) => { try { bytes += (await r.body()).length; } catch { /* redirecciones */ } });
-  const t0 = Date.now(); await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])"); const t = Date.now() - t0;
+  const t0 = Date.now(); await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])"); const t = Date.now() - t0;
   const nav = await page.evaluate(() => { const n = performance.getEntriesByType("navigation")[0]; return { dcl: Math.round(n.domContentLoadedEventEnd), load: Math.round(n.loadEventEnd) }; });
   console.log(`  listo para usar en ${t} ms · DOMContentLoaded ${nav.dcl} ms · carga ${nav.load} ms · ${(bytes / 1024).toFixed(0)} KB descargados`);
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id) => [id, 4]))));

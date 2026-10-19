@@ -13,7 +13,7 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const done = { v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans: Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]])), imp: {}, prios: [], stage: "done", t: 1 };
+const done = { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans: Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]])), imp: {}, prios: [], stage: "done", t: 1 };
 const browser = await chromium.launch();
 
 async function open({ code = CODE, real = false } = {}) {
@@ -40,15 +40,14 @@ const clean = (hits) => hits.every((u) => [...u.searchParams.keys()].every((k) =
 console.log("Visitas y pasos del test");
 {
   const { ctx, page, hits } = await open();
-  await page.goto(PUBLIC + "/"); await page.waitForSelector("#f-prov:not([disabled])"); await page.waitForTimeout(400);
+  await page.goto(PUBLIC + "/"); await page.waitForSelector("#start-btn:not([disabled])"); await page.waitForTimeout(400);
   ok(JSON.stringify(paths(hits)) === '["/"]' && hits[0].host === `${CODE}.goatcounter.com`, "abrir la web cuenta una visita al inicio");
-  await page.selectOption("#f-prov", "madrid"); await page.check("#f-sex-n", { force: true }); await page.fill("#f-age", "35");
   await page.check("input[name=mode][value=expres]", { force: true }).catch(() => {});
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])"); await page.waitForTimeout(300);
   ok(paths(hits).includes("test-empezado") && hits.find((u) => u.searchParams.get("p") === "test-empezado").searchParams.get("e") === "true", "empezar el test cuenta «test empezado»");
   const total = parseInt((await page.textContent("#q-count")).split("/")[1]);
   for (let i = 0; i < total; i++) { await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(350); }
-  await page.waitForSelector("#v-prios:not([hidden])"); await page.click("#prio-skip"); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
+  await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
   ok(paths(hits).filter((p) => p === "test-terminado").length === 1, "terminarlo cuenta «test terminado» una vez");
   await page.reload(); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
   ok(paths(hits).filter((p) => p === "test-terminado").length === 1, "volver a abrir los resultados no lo cuenta otra vez");
@@ -61,7 +60,7 @@ console.log("Visitas y pasos del test");
 }
 {
   const { ctx, page, hits } = await open();
-  await page.goto(PUBLIC + "/"); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(PUBLIC + "/"); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done);
   await page.reload(); await page.waitForSelector("#r-share");
   await ctx.grantPermissions(["clipboard-read", "clipboard-write"]);
@@ -75,7 +74,7 @@ console.log("Visitas y pasos del test");
 console.log("Sin código, no se cuenta nada");
 {
   const { ctx, page, hits } = await open({ code: "" });
-  await page.goto(PUBLIC + "/"); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(PUBLIC + "/"); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done);
   await page.reload(); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
   ok(hits.length === 0 && /Sin cookies, analítica ni publicidad/.test(await page.evaluate(() => { document.querySelector("[data-go='method']").click(); return document.querySelector("#m-priv").innerText; })), "sin código: ninguna petición y el aviso dice «sin analítica»");
@@ -85,7 +84,7 @@ console.log("Sin código, no se cuenta nada");
 if (process.env.STATS_CODE) {
   console.log("Web publicada");
   const { ctx, page, hits } = await open({ real: true });
-  await page.goto(PUBLIC + "/"); await page.waitForSelector("#f-prov:not([disabled])"); await page.waitForTimeout(500);
+  await page.goto(PUBLIC + "/"); await page.waitForSelector("#start-btn:not([disabled])"); await page.waitForTimeout(500);
   const csp = await page.getAttribute('meta[http-equiv="Content-Security-Policy"]', "content");
   ok(csp.includes(`img-src 'self' data: blob: https://${CODE}.goatcounter.com;`) && !/script-src[^;]*goatcounter/.test(csp), "la CSP solo permite la imagen del contador, ningún script externo");
   ok(JSON.stringify(paths(hits)) === '["/"]', "la web publicada cuenta la visita (interceptada, no llega al contador)");

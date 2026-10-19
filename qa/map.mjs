@@ -12,7 +12,7 @@ const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.me
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 const asParty = (pid) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || 3]));
 const ab = Object.fromEntries(pd.parties.map((p) => [p.id, p.ab]));
 
@@ -23,7 +23,7 @@ async function open(st, w = 1100, tag = "") {
   page.on("console", (m) => { if (m.type() === "error") errors.push(`[${tag}] ${m.text()}`); });
   page.on("pageerror", (e) => errors.push(`[${tag}] ${e}`));
   await page.goto(BASE);
-  await page.waitForSelector("#f-prov:not([disabled])");
+  await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st);
   await page.reload();
   await page.waitForSelector("#r-map svg");
@@ -101,7 +101,7 @@ for (const [w, dark] of [[390, true], [390, false], [1280, true]]) {
   const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, colorScheme: dark ? "dark" : "light" });
   const page = await ctx.newPage();
   page.on("pageerror", (e) => errors.push(`[${w}] ${e}`));
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), state(asParty("erc"), { prov: "barcelona" }));
   await page.reload(); await page.waitForSelector("#r-map svg");
   ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)), `${w}px ${dark ? "oscuro" : "claro"}: sin scroll horizontal`);

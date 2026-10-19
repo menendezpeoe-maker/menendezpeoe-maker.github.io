@@ -10,7 +10,7 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 const asParty = (pid) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || 3]));
 const browser = await chromium.launch();
 const host = new URL(BASE).host, external = new Set();
@@ -20,7 +20,7 @@ async function open(st, w = 1100) {
   page.on("request", (r) => { const u = new URL(r.url()); if (u.host && u.host !== host && /^https?:$/.test(u.protocol)) external.add(u.host); });
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
   page.on("pageerror", (e) => errors.push(String(e)));
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   if (st) { await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st); await page.reload(); await page.waitForSelector(st.stage === "done" ? "#r-pols" : "#v-home:not([hidden])"); }
   return { ctx, page };
 }
@@ -30,12 +30,11 @@ console.log("Ampliar a una versión más larga");
   // Exprés terminada con su orden real: al ampliar, solo se recorren las preguntas nuevas
   const { ctx, page } = await open(null);
   const order = await page.evaluate(() => { const s = { mode: "expres" }; return null; });
-  await page.selectOption("#f-prov", "madrid"); await page.check("#f-sex-n", { force: true }); await page.fill("#f-age", "35");
   await page.check("input[name=mode][value=expres]", { force: true }).catch(() => {});
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   const total = parseInt((await page.textContent("#q-count")).split("/")[1]);
   for (let i = 0; i < total; i++) { await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(380); }
-  await page.waitForSelector("#v-prios:not([hidden])"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
+  await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
   await page.click('[data-act="more"]'); await page.waitForSelector("#v-quiz:not([hidden])");
   const seen = [];
   for (let i = 0; i < 4; i++) {

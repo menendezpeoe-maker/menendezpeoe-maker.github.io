@@ -16,7 +16,7 @@ const FAKE_BANK = "https://buy.stripe.com/prueba_banco";
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const ans = Object.fromEntries(bank.questions.map((q) => [q.id, q.pos.psoe || 3]));
-const st = { v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: bank.questions.map((q) => q.id), idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1 };
+const st = { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: bank.questions.map((q) => q.id), idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1 };
 
 const browser = await chromium.launch();
 async function open({ w = 1100, cfg = null, apple = false, tag = "" } = {}) {
@@ -33,7 +33,7 @@ async function open({ w = 1100, cfg = null, apple = false, tag = "" } = {}) {
   });
   await ctx.route("https://buy.stripe.com/**", (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<title>Stripe (simulado)</title>" }));
   await page.goto(BASE);
-  await page.waitForSelector("#f-prov:not([disabled])");
+  await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st);
   await page.reload();
   await page.waitForSelector("#v-results:not([hidden])");

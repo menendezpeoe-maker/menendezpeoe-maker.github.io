@@ -11,7 +11,7 @@ const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.me
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 const asParty = (pid) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || 3]));
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -24,7 +24,7 @@ console.log("¿Cuánto coincidís? (comparar con otra persona)");
   // La otra persona responde como el PP; tú, como el PSOE
   const { ctx, page } = await newPage();
   await ctx.grantPermissions(["clipboard-read", "clipboard-write"]);
-  await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), state(asParty("pp")));
   await page.reload(); await page.waitForSelector("#r-share");
   ok(await page.isHidden("#r-friend"), "sin resultado compartido, no aparece la comparación");
@@ -95,7 +95,7 @@ console.log("Páginas por candidatura y por tema");
   ok(t.includes('<a href="https://test29n.es/"') && t.includes("boton-test29n.png") && (await (await fetch(SITE + "boton-test29n.png")).status) === 200, "prensa: código para enlazar el test y botón descargable");
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
   ok(!priv.some((x) => t.toLowerCase().includes(x)) && t.includes("menendezpeoe@gmail.com"), `prensa: contacto público, sin datos privados${priv.length ? "" : " (sin PRIVATE_TERMS: solo se comprueba el contacto)"}`);
-  await page.goto(SITE); await page.waitForSelector("#f-prov:not([disabled])");
+  await page.goto(SITE); await page.waitForSelector("#start-btn:not([disabled])");
   ok((await page.locator('footer a[href="partidos/"]').count()) === 1 && (await page.locator('footer a[href="prensa/"]').count()) === 1, "el pie del test enlaza las páginas nuevas (para que Google las encuentre)");
   await ctx.close();
 }

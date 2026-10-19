@@ -17,12 +17,9 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   page.on("console", (m) => { if (m.type() === "error") errors.push(`[${vp.tag}] ${m.text()}`); });
   page.on("pageerror", (e) => errors.push(`[${vp.tag}] ${e}`));
   await page.goto(BASE);
-  await page.waitForSelector("#f-prov:not([disabled])");
+  await page.waitForSelector("#start-btn:not([disabled])");
   ok((await page.title()).startsWith("Test 29N"), "título de la página");
   ok(await page.$eval('meta[property="og:image"]', (m) => m.content.endsWith("og.png")), "metadatos Open Graph");
-  await page.selectOption("#f-prov", process.env.PROVX || "sevilla");
-  await page.check("#f-sex-n", { force: true });
-  await page.fill("#f-age", "29");
   await page.click("#start-btn");
   await page.waitForSelector("#v-quiz:not([hidden])");
   const n = Number((await page.textContent("#q-count")).split("/")[1]);
@@ -32,6 +29,8 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
     await page.click(`#q-main .opt:nth-child(${q.pos[process.env.PID || "adel"] || 3})`);
     await page.waitForTimeout(400);
   }
+  await page.waitForSelector("#v-prios:not([hidden])");
+  await page.selectOption("#f-prov", process.env.PROVX || "sevilla");
   await page.click("#prio-skip");
   await page.waitForSelector("#r-share .sbtn");
   ok(/Adelante Andalucía/.test(await page.textContent(".tm-name")), "resultado correcto (Adelante Andalucía)");
@@ -106,7 +105,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   page.once("dialog", (d) => d.accept());
   await page.click('[data-act="new"]');
   await page.waitForSelector("#v-home:not([hidden])");
-  ok((await page.inputValue("#f-prov")) === process.env.PROVX || "sevilla" && (await page.isHidden("#resume")), "repetir el test vuelve al inicio con el perfil y sin resultado guardado");
+  ok((await page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.prefs")).prov)) === (process.env.PROVX || "sevilla") && (await page.isHidden("#resume")), "repetir el test vuelve al inicio, recuerda la provincia y no deja resultado guardado");
   await ctx.close();
 }
 // 404

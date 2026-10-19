@@ -9,7 +9,7 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Prefiero no responder", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 // Respuestas desde preferencias por dimensión: −1 = polo A, +1 = polo B, 0 = sin preferencia (neutral).
 // Cada afirmación se responde según su dirección; las transversales, neutrales.
 const fromPrefs = (pref, strength = 2) => Object.fromEntries(bank.questions.map((q) => {
@@ -28,7 +28,7 @@ const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } })
 const page = await ctx.newPage();
 page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
 page.on("pageerror", (e) => errors.push(String(e)));
-await page.goto(BASE); await page.waitForSelector("#f-prov:not([disabled])");
+await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
 async function load(st) {
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st);
   await page.reload(); await page.waitForSelector("#r-pols");

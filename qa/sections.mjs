@@ -13,7 +13,7 @@ const pols = JSON.parse(fs.readFileSync(new URL("../data/politicos.json", import
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", sex: "Mujer", age: 40, mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
+const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
 const asParty = (pid, fill = 3) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || fill]));
 
 const browser = await chromium.launch();
@@ -23,7 +23,7 @@ async function open(st, w = 1100, tag = "") {
   page.on("console", (m) => { if (m.type() === "error") errors.push(`[${tag}] ${m.text()}`); });
   page.on("pageerror", (e) => errors.push(`[${tag}] ${e}`));
   await page.goto(BASE);
-  await page.waitForSelector("#f-prov:not([disabled])");
+  await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st);
   await page.reload();
   await page.waitForSelector("#v-results:not([hidden])");
