@@ -18,6 +18,7 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
    - `share` solo pasa del todo en el dominio real.
    - No publiques nada roto. Si no puedes dejarlo bien, no lo publiques y explícalo.
 5. **Publicación (siempre igual):**
+   - **Permiso del titular (19 oct 2026):** publicar en `main` (test29n.es) al final de cada tanda no necesita preguntarle, siempre que se cumplan todas las reglas del plan y pasen todas las pruebas. Si algo falla, no se publica.
    - Ejecuta `node build.mjs` y `node publish.mjs`.
    - Comprueba que `dist/` no contiene datos privados (los términos de `PRIVATE_TERMS`) ni nada con formato de IBAN.
    - Copia `dist/` a la rama `main` (otro worktree) y haz commit y push.
