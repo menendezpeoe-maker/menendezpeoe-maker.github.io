@@ -4,7 +4,8 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 
 ## Reglas para cada tanda (además de las de PROMPT-ORIGINAL.md, que se aplican siempre)
 
-1. **Lee primero** `plan/PROMPT-ORIGINAL.md` (secciones 2 a 4 y 6), este archivo y `plan/ESTADO.md`.
+1. **Lee primero** `plan/MISION.md` (la misión del titular, completa y obligatoria), `plan/PROMPT-ORIGINAL.md` (secciones 2 a 4 y 6), este archivo y `plan/ESTADO.md`.
+   - Cada tanda cumple también los puntos de su fecha en `MISION.md`, aunque aquí no estén detallados. Ejemplos: en /votar/, diferenciar lo oficial, lo explicativo y lo que depende de cada convocatoria; en T5–T7, la fecha de consulta y si la postura es compromiso explícito, inferida o sin información suficiente; en el 30 de noviembre, aclarar que el test y el voto miden cosas distintas.
 2. **Si la tanda anterior quedó a medias**, termínala antes de empezar la tuya. Si no da tiempo a las dos, prioriza terminar lo pendiente y deja la tuya anotada.
 3. **Gasta poco: el titular necesita su límite semanal para otras cosas.**
    - Haz solo lo de tu tanda, con unas 2–3 horas de trabajo como máximo.
@@ -85,6 +86,13 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
     - **Seguridad:** CSP estricta, sin secretos y sin datos privados.
 
     Si una mejora no supera esta revisión, no se publica: se corrige o se anota en `ESTADO.md`.
+
+15. **Ficha de continuidad.** Al principio de `plan/ESTADO.md`, y antes de las entradas por fecha, mantén una sección «Ficha de continuidad» breve. Actualízala en cada tanda solo si cambia algo, con:
+    - El estado de cada bloque del calendario, con uno de estos cinco valores: completada y verificada / implementada, pendiente de verificación / en curso / pendiente / bloqueada por dependencia externa (di cuál).
+    - Archivos clave modificados y decisiones técnicas relevantes.
+    - Pruebas ejecutadas y su resultado. Nunca pongas como hecha una prueba que no se ha ejecutado.
+    - Errores pendientes.
+    - Próxima tarea prioritaria y sus dependencias.
 
 ## Tandas
 
