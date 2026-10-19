@@ -782,3 +782,7 @@ h1.bn-h { font-size: clamp(36px, 6.4vw, 64px); line-height: .98; }
 .prov-field { display: grid; gap: 8px; padding: 18px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); }
 .prio-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-top: 8px; }
 .prov-field .chips:empty { display: none; }
+.chip.tbd { display: inline-flex; font-size: 13px; font-weight: inherit; padding: 4px 10px 4px 7px; color: inherit; border: 1px dashed var(--ink-2); }
+.foot-row a { color: var(--ink); text-underline-offset: 3px; text-decoration-color: var(--rule); }
+.foot-row a:hover { text-decoration-color: var(--ink); }
+body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0px)); }

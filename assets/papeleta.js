@@ -332,7 +332,7 @@ function renderQuestion(dir) {
   const open = !!PREFS.ctx;
   const main = $("#q-main");
   main.innerHTML = `
-    <p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(a.name)}</span>${q.type === "dilema" ? '<span class="muted">· Dilema: elige entre dos opciones</span>' : ""}</p>
+    <p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(a.name)}</span>${q.type === "dilema" ? '<span class="muted">Dilema: elige entre dos opciones</span>' : ""}</p>
     ${firstOfArea ? `<p class="q-intro"><b>Área ${areasInOrder.findIndex((x) => x.id === a.id) + 1} de ${areasInOrder.length}.</b> ${esc(a.intro)}</p>` : ""}
     <h2 class="q-stmt" id="q-stmt" tabindex="-1">${esc(q.text)}</h2>
     ${q.type === "dilema" ? `<div class="dil"><p class="dil-o"><b>A</b><span>${esc(q.A)}</span></p><p class="dil-o"><b>B</b><span>${esc(q.B)}</span></p></div>` : ""}
@@ -485,7 +485,7 @@ function bindPrios() {
     $(`.prio-b[data-a="${id}"]`).focus();
   });
   const finish = (skip) => {
-    if (!PROV[S.prov]) { $("#prov-err").textContent = "Elige tu provincia para ver con qué candidaturas de allí coincides."; $("#f-prov").focus(); return; }
+    if (!PROV[S.prov]) { $("#prov-err").textContent = "Elige tu provincia para ver tu coincidencia con las candidaturas que se presentan allí."; $("#f-prov").focus(); return; }
     if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults();
   };
   $("#prio-go").addEventListener("click", () => finish(false));
@@ -680,7 +680,7 @@ function renderResults() {
   const st = ST();
   const next = st.mode === "expres" ? "media" : st.mode === "media" ? "completa" : null;
   $("#v-results").innerHTML = `
-    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} No modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
+    ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
       <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
     </div></nav>
@@ -2107,7 +2107,7 @@ function renderMethod() {
             </dl>
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
-            <p>No hay registro ni servidor de respuestas: tu provincia y tus respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. El test no pide sexo, edad ni ningún otro dato personal. El enlace para compartir lleva en el propio enlace tus respuestas, provincia y prioridades. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
+            <p>No hay registro ni servidor de respuestas: tu provincia y tus respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. El test no pide ningún dato personal aparte de la provincia. El enlace para compartir incluye tus respuestas, tu provincia y tus prioridades. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
             ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, tu provincia ni tu resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
               : `<p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>`}
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>

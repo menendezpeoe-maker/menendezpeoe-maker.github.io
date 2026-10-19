@@ -156,7 +156,7 @@ console.log("Privacidad");
   const { ctx, page } = await open({ w: 1100, h: 900 });
   await page.click('.head-nav [data-go="method"]'); await page.waitForSelector("#m-priv");
   const t = await page.textContent("#m-priv");
-  ok(/no pide sexo, edad/.test(t) && !/Sexo y edad solo se muestran/.test(t), "el aviso de privacidad dice que no se piden sexo ni edad");
+  ok(/no pide ningún dato personal aparte de la provincia/.test(t) && !/sexo|edad/i.test(t), "el aviso de privacidad ya no habla de sexo ni edad y dice que solo se pide la provincia");
   await ctx.close();
 }
 
