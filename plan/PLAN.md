@@ -39,17 +39,17 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 
 | Tanda | Fecha (hora de Madrid) | Contenido |
 |---|---|---|
-| T1 | sáb 24 oct | Fase 1a: entrada |
-| T9 | dom 25 oct | Fase 4: buscadores y datos abiertos (adelantada para que Google tenga más tiempo) |
-| T2 | lun 26 oct | Fase 1b: test rápido y resultados |
-| T3 | mar 27 oct | Fase 3a: guía para votar y calendario |
-| T4 | mié 28 oct | Fase 3b: provincias, simulador y glosario |
-| T10 | jue 29 oct | Fase 5: difusión y tests por tema |
-| T5 | sáb 31 oct | Fase 2: fuentes de PSOE y PP |
-| T6 | dom 1 nov | Fase 2: fuentes de Vox y Frente Amplio |
-| T7 | lun 2 nov | Fase 2: fuentes de Podemos y ERC |
-| T8 | mar 3 nov | Fase 2: justificaciones visibles y confianza |
-| T11 | mié 4 nov | Fase 6 y repaso final |
+| T1 | lun 19 oct (mediodía) | Fase 1a: entrada |
+| T9 | mar 20 oct | Fase 4: buscadores y datos abiertos (adelantada para que Google tenga más tiempo) |
+| T2 | mié 21 oct | Fase 1b: test rápido y resultados |
+| T3 | jue 22 oct | Fase 3a: guía para votar y calendario |
+| T4 | vie 23 oct | Fase 3b: provincias, simulador y glosario |
+| T10 | sáb 24 oct | Fase 5: difusión y tests por tema |
+| T5 | dom 25 oct | Fase 2: fuentes de PSOE y PP |
+| T6 | lun 26 oct | Fase 2: fuentes de Vox y Frente Amplio |
+| T7 | mar 27 oct | Fase 2: fuentes de Podemos y ERC |
+| T8 | mié 28 oct | Fase 2: justificaciones visibles y confianza |
+| T11 | jue 29 oct | Fase 6 y repaso final |
 | S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
 | S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
 | P1 | lun 30 nov | Después de las elecciones |
