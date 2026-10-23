@@ -2,6 +2,7 @@
 // página de prensa. Se generan con los mismos datos que el test (data/*.json): nada se escribe a mano, las
 // posturas estimadas se marcan como tales y las desconocidas no se rellenan.
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { VOTAR } from "./src/votar.src.mjs";
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -54,10 +55,10 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
-  const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
+  const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
   const method = `<p class="small muted">Las posturas se asignan de 1 a 5 a partir de programas electorales, votaciones en las Cortes, decisiones de gobierno y declaraciones públicas. <b>Documentada</b>: hay evidencia explícita. <b>Estimada</b>: se deduce de su línea general y se marca siempre. Si no conocemos la postura de un partido, no se le asigna ninguna. Datos actualizados el ${esc(updated)}.</p>`;
   const page = ({ path, title, desc, crumbs, body, ld }) => {
     const url = SITE + path.replace(/^\//, "");
@@ -194,7 +195,8 @@ ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="p
     const same = both.filter((q) => q.pos[a] === q.pos[b]);
     const opp = both.filter((q) => sideOf(q.pos[a]) && sideOf(q.pos[b]) && sideOf(q.pos[a]) !== sideOf(q.pos[b])).sort((x, y) => Math.abs(y.pos[a] - y.pos[b]) - Math.abs(x.pos[a] - x.pos[b]));
     const estN = both.filter((q) => q.est.includes(a) || q.est.includes(b)).length;
-    const qrow = (q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/"><b>${esc(q.short)}</b></a><span class="small">${esc(A.ab)}: ${esc(posText(q, q.pos[a]))}${q.est.includes(a) ? " (estimada)" : ""} · ${esc(Bp.ab)}: ${esc(posText(q, q.pos[b]))}${q.est.includes(b) ? " (estimada)" : ""}</span></li>`;
+    const posShort = (q, v) => (q.type === "dilema" ? (v === 3 ? "las dos por igual" : `${DIL[v - 1].toLowerCase()} («${v < 3 ? q.A : q.B}»)`) : LIK[v - 1].toLowerCase());
+    const qrow = (q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/"><b>${esc(q.short)}</b></a><span class="small">${esc(A.ab)}: ${esc(posShort(q, q.pos[a]))}${q.est.includes(a) ? " (estimada)" : ""}</span><span class="small">${esc(Bp.ab)}: ${esc(posShort(q, q.pos[b]))}${q.est.includes(b) ? " (estimada)" : ""}</span></li>`;
     const dimRows = B.dims.map((d) => { const x = da[d.id], y = db[d.id]; if (x === undefined || y === undefined) return "";
       const px = ((x + 100) / 2).toFixed(2), py = ((y + 100) / 2).toFixed(2);
       return `<div class="sp-dim"><span><b>${esc(d.name)}</b> <span class="muted">· ${esc(A.ab)} ${signed(x)} · ${esc(Bp.ab)} ${signed(y)}</span></span><span class="mini" role="img" aria-label="${esc(d.name)}: ${esc(A.ab)} ${signed(x)}, ${esc(Bp.ab)} ${signed(y)}, en una escala de −100 (${esc(d.a)}) a +100 (${esc(d.b)})"><span class="c"></span><span class="d" style="left:${px}%;background:${A.color}"></span><span class="d" style="left:${py}%;background:${Bp.color}"></span></span><span class="poles small muted"><span>${esc(d.a)}</span><span>${esc(d.b)}</span></span></div>`; }).join("");
@@ -252,7 +254,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
 <section aria-labelledby="h-cont"><h2 class="h2" id="h-cont">Qué contiene</h2>
 <ul class="dots"><li>Una fila por cada postura conocida: pregunta, área, candidatura y postura de 1 a 5 (en los dilemas, de «claramente A» a «claramente B»).</li>
 <li>Si la postura es <b>estimada</b> (${nEstOpen} de ${rowsOpen.length}) o documentada, y su nota cuando la hay.</li>
-<li>La fuente enlazada, con título, tipo y fecha, cuando existe (${nSrcOpen} posturas por ahora).</li>
+<li>La fuente enlazada, con título, tipo y fecha, cuando existe. Por ahora la tienen ${nSrcOpen} posturas: el resto de las documentadas se basa en programas, votaciones y declaraciones que se irán enlazando una a una.</li>
 <li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
 <section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
 <p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (test29n.es)», y no des a entender que el Test 29N respalda tu uso.</p>
@@ -283,8 +285,8 @@ function q() {
   el.querySelector("h2").focus({ preventScroll: true });
 }
 function res() {
-  const rows = D.parties.map((p) => { const ids = D.qs.map((x) => x.id).filter((id) => ans[id] > 0 && p.pos[id]); const pct = ids.length ? Math.round(ids.reduce((s, id) => s + 1 - Math.abs(ans[id] - p.pos[id]) / 4, 0) / ids.length * 100) : null; return { p, pct }; }).filter((r) => r.pct !== null).sort((a, b) => b.pct - a.pct);
-  el.innerHTML = '<h2 class="mini-q" tabindex="-1">Tu coincidencia con las candidaturas de ámbito estatal</h2>' + (rows.length ? '<ol class="mini-res">' + rows.map((r) => '<li><span><i style="background:' + r.p.color + '"></i>' + esc(r.p.name) + '</span><b>' + r.pct + ' %</b></li>').join("") + '</ol>' : '<p>Has respondido «No lo sé» a todo: no hay con qué comparar.</p>') + '<p class="mini-note">Orientativo, con solo 5 preguntas. No es una recomendación de voto. El test completo compara tus respuestas con las candidaturas de tu provincia.</p><p><a class="mini-cta" href="' + D.site + '" target="_blank" rel="noopener">Haz el test completo en test29n.es</a> <button type="button" class="mini-again">Volver a empezar</button></p>';
+  const rows = D.parties.map((p) => { const ids = D.qs.map((x) => x.id).filter((id) => ans[id] > 0 && p.pos[id]); const pct = ids.length ? Math.round(ids.reduce((s, id) => s + 1 - Math.abs(ans[id] - p.pos[id]) / 4, 0) / ids.length * 100) : null; return { p, pct }; }).filter((r) => r.pct !== null).sort((a, b) => b.pct - a.pct || a.p.name.localeCompare(b.p.name, "es"));
+  el.innerHTML = '<h2 class="mini-q" tabindex="-1">Tu coincidencia con las candidaturas de ámbito estatal</h2>' + (rows.length ? '<ol class="mini-res">' + rows.map((r) => '<li><span><i style="background:' + r.p.color + '"></i>' + esc(r.p.name) + '</span><b>' + r.pct + ' %</b></li>').join("") + '</ol>' : '<p>Has respondido «No lo sé» a todo: no hay con qué comparar.</p>') + '<p class="mini-note">Orientativo, con solo 5 preguntas. No es una recomendación de voto. Los empates se ordenan alfabéticamente. El test completo compara tus respuestas con las candidaturas de tu provincia.</p><p><a class="mini-cta" href="' + D.site + '" target="_blank" rel="noopener">Haz el test completo en test29n.es</a> <button type="button" class="mini-again">Volver a empezar</button></p>';
   el.querySelector("h2").focus({ preventScroll: true });
 }
 el.addEventListener("click", (e) => {
@@ -331,6 +333,35 @@ ${cta("Responde tú y compara")}
 <ul class="sp-cards">${B.areas.map((a) => `<li><a href="/temas/${slug(a.name)}/"><span class="al">${esc(a.letter)}</span><span><b>${esc(a.name)}</b><span class="small muted">${B.questions.filter((q) => q.area === a.id).length} preguntas: ${esc(B.questions.filter((q) => q.area === a.id).slice(0, 3).map((q) => q.short.toLowerCase()).join(", "))}…</span></span></a></li>`).join("")}</ul>`
   });
 
+  // ── Guía para votar y calendario oficial: solo datos de fuentes oficiales, con su enlace (src/votar.src.mjs)
+  const srcA = (f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer">${esc(f.label)}</a>`;
+  const reviewed = fmtDate(VOTAR.revisado);
+  const officialNote = `<p class="small muted">Información de fuentes oficiales, revisada el ${esc(reviewed)}. Ante cualquier duda, prevalece lo que digan la Junta Electoral Central y el Ministerio del Interior. Esta información no sustituye a sus comunicaciones.</p>`;
+  page({
+    path: "/votar/",
+    title: "Cómo votar el 29N: documentos, dónde votar y voto por correo · Test 29N",
+    desc: "Guía práctica para votar en las elecciones generales del 29 de noviembre de 2026: quién puede votar, qué llevar, dónde te toca, voto por correo, desde el extranjero y accesible. Con enlaces oficiales.",
+    crumbs: [{ name: "Cómo votar", url: `${SITE}votar/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Cómo votar el 29N</h1>
+  <p class="lede">Lo esencial para votar, explicado de forma sencilla y con el enlace a la fuente oficial de cada dato. Las fechas completas están en el <a href="/calendario/">calendario electoral</a>.</p></header>
+${officialNote}
+<nav class="sp-toc small" aria-label="En esta página">${VOTAR.secciones.map((x) => `<a href="#${x.id}">${esc(x.titulo)}</a>`).join(" · ")}</nav>
+${VOTAR.secciones.map((x) => `<section id="${x.id}" aria-labelledby="h-${x.id}"><h2 class="h2" id="h-${x.id}">${esc(x.titulo)}</h2>${x.pasos.map((t) => `<p>${esc(t)}</p>`).join("")}${x.fuentes.length ? `<p class="small muted">Fuente oficial: ${x.fuentes.map(srcA).join(" · ")}</p>` : ""}</section>`).join("")}
+${cta("¿Aún no sabes con quién coincides?")}`
+  });
+  page({
+    path: "/calendario/",
+    title: "Calendario electoral del 29N: fechas oficiales · Test 29N",
+    desc: "Fechas oficiales de las elecciones generales del 29 de noviembre de 2026: voto por correo, candidaturas, campaña, jornada de reflexión, votación y constitución de las Cortes, con su fuente.",
+    crumbs: [{ name: "Calendario electoral", url: `${SITE}calendario/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Calendario electoral del 29N</h1>
+  <p class="lede">Las fechas del proceso, tal y como las fijan el real decreto de convocatoria y la normativa electoral. Cada una enlaza a su fuente oficial.</p></header>
+${officialNote}
+<ol class="cal">${VOTAR.calendario.map((c) => `<li${c.fecha < VOTAR.revisado ? ' class="past"' : ""}><time datetime="${esc(c.fecha)}">${esc(c.cuando)}</time><div><b>${esc(c.hito)}</b>${c.nota ? `<span class="small">${esc(c.nota)}</span>` : ""}<span class="small muted">Fuente: ${srcA(c.fuente)}${c.fuente2 ? ` · ${srcA(c.fuente2)}` : ""}</span></div></li>`).join("")}</ol>
+<p class="small muted">Más detalles prácticos en <a href="/votar/">Cómo votar el 29N</a>.</p>
+${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
+  });
+
   // ── Prensa y difusión
   const nSrc = B.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
   const embed = `<a href="${SITE}" title="Test 29N: test político para las elecciones del 29N"><img src="${SITE}boton-test29n.png" alt="Haz el Test 29N: ¿con qué partido coincides el 29N?" width="320" height="100"></a>`;
@@ -352,6 +383,8 @@ ${cta("Responde tú y compara")}
   <li><b>Privado</b>: sin registro ni cookies. Las respuestas no salen del navegador de cada persona.</li>
   <li><b>Independiente</b>: sin vínculo con ningún partido ni institución. No es una recomendación de voto.</li>
 </ul></section>
+<section aria-labelledby="h-guia"><h2 class="h2" id="h-guia">Guía para votar y calendario</h2>
+<p>Para acompañar una noticia o un vídeo sobre las elecciones: <a href="/votar/">Cómo votar el 29N</a> (documentos, dónde votar, voto por correo, desde el extranjero y accesible) y el <a href="/calendario/">calendario electoral</a>, con enlaces a las fuentes oficiales.</p></section>
 <section aria-labelledby="h-desc"><h2 class="h2" id="h-desc">Descripción para citarlo</h2>
 <p class="dinfo"><b>Corta:</b> Test 29N, un test político gratuito para las elecciones generales del 29N que compara tus respuestas con las candidaturas de tu provincia, tema a tema.</p>
 <p class="dinfo"><b>Larga:</b> El Test 29N plantea ${B.questions.length} cuestiones de la actualidad política española con contexto neutral y calcula, pregunta a pregunta, cuánto coinciden tus respuestas con las posturas de las candidaturas de tu provincia. Muestra tu perfil en siete dimensiones, explica qué respuestas pesan más y enlaza las fuentes de las posturas. Es gratuito, no pide registro y no guarda las respuestas fuera del navegador.</p></section>
