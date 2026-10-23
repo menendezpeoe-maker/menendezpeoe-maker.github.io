@@ -5,17 +5,18 @@
 **Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:
 1. ~~Cerrar T9, parte 1~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 2. ~~T2~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
-3. **T3** (guía para votar y calendario; fecha ya verificada: Real Decreto 806/2026, BOE del 6 oct, elecciones el 29 nov, campaña del 13 al 27 nov).
+3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
-5. **T4** y el resto de T9 (`/comparar/`, `/datos/`, `/insertar/`) pasan a R1 y R2.
+5. **T4** (provincias, simulador y glosario). El resto de T9 (`/comparar/`, `/datos/`, `/insertar/`) ya está hecho y publicado.
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
 **Estado de los bloques**
 - T1 · Portada y entrada: completada y verificada (web real, 19 oct).
-- T9 · Buscadores y datos abiertos: parte 1 completada y verificada (web real, 23 oct). Pendiente: `/comparar/`, `/datos/` e `/insertar/` (pasan a R1).
+- T9 · Buscadores y datos abiertos: completada y verificada (web real, 23 oct).
 - T2 · Test rápido y resultados: completada y verificada (web real, 23 oct).
-- T3, T4: pendientes (no se ejecutaron por el límite de uso). T10, T5–T8, T11: pendientes.
+- T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
+- T4: pendiente. T10, T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -33,6 +34,26 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 23 oct 2026 · T3 y T9 (parte 2)
+- **T3, `/votar/` y `/calendario/`:** datos en `src/votar.src.mjs`, solo de fuentes oficiales abiertas y comprobadas: Real Decreto 806/2026, calendario electoral de la JEC para el 29N, Oficina del Censo Electoral (INE), Correos, Exteriores, LOREG y RD 1612/2007. Cubre quién vota y qué llevar, dónde votar, voto por correo, voto desde el extranjero (CERA y ERTA) y voto accesible. El calendario tiene 20 fechas, cada una con su fuente. Enlaces en el pie de todas las páginas, en `/prensa/` y en el sitemap. Prueba: `qa/votar.mjs`.
+  - Un revisor independiente comprobó cada fecha contra la JEC, el INE, el BOE, Correos y Exteriores; aplicadas sus correcciones.
+  - Sin dato oficial por ahora: el canal concreto para pedir el voto en braille (Interior no respondía) y el horario de los colegios en una fuente propia del 29N (se usa el art. 84.1 de la LOREG).
+  - `sede.ine.gob.es` (consulta de mesa) devolvía 503 desde aquí el 23 oct. Es el servicio oficial, enlazado desde la web del INE, que sí responde.
+  - Revisar tras el 3 nov, cuando se publiquen las candidaturas proclamadas (S1).
+- **T9, parte 2:**
+  - 10 comparativas `/comparar/<a>-<b>/` y su índice, con los mismos datos que el comparador.
+  - `/datos/`, con `posturas.csv` y `posturas.json` (2191 posturas, CC BY 4.0, con fuentes, estimadas marcadas).
+  - Mini test insertable `/insertar/`: 5 preguntas, sin cookies ni almacenamiento ni peticiones a terceros, dentro de un iframe, con el código en `/prensa/`. No cuenta visitas dentro del marco, porque `stats.js` excluye los iframes.
+  - Prueba: `qa/opendata.mjs`.
+- **Pruebas:** las 17 baterías pasan en local y en https://test29n.es. IndexNow: 200 OK, 165 URL.
+- **Pendiente de decisión del titular (posturas, regla 8):** el revisor señaló como discutibles, en la comparativa PSOE–PP:
+  - PSOE «totalmente en desacuerdo» con «Más gasto en defensa» (documentada); el Gobierno subió el gasto al 2 % en 2025 y rechazó el 5 % de la OTAN;
+  - PSOE «de acuerdo» con despenalizar las injurias a la Corona;
+  - valores muy extremos del PSOE en «Europa y mundo» (−100) e «Inmigración» (−95).
+
+  No se han cambiado: se revisarán con fuentes en T5.
+- **Para el titular:** puede borrar en GitHub la rama de respaldo `wip-t3`, que ya no hace falta; el sistema no me deja borrarla.
 
 ## 23 oct 2026 · T2 · Test rápido y resultados
 - **Versión rápida (15 preguntas, unos 3 minutos), ahora la de por defecto:** una pregunta núcleo de cada una de las 12 áreas más 3 elegidas por cuánto distinguen entre partidos. Cubre las 7 dimensiones, con 6 afirmaciones en un sentido y 7 en el otro. Es fija (`quickOrder()` en `assets/papeleta.js`). «Afinar» lleva a la exprés conservando las respuestas. Código `r` en los enlaces compartidos; los antiguos siguen funcionando.
