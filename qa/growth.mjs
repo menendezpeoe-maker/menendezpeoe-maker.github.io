@@ -61,7 +61,7 @@ console.log("Páginas por candidatura y por tema");
   const { ctx, page } = await newPage();
   const sitemap = await (await fetch(SITE + "sitemap.xml")).text();
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
+  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1 + 10 + 1 + 1, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
   const paths = locs.map((u) => new URL(u).pathname);
   let bad = [], estOk = true, srcOk = true, canon = true;
   for (const pid of pd.order) {

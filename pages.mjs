@@ -183,6 +183,131 @@ ${cta("Responde tú y compara")}
 ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="pa-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h2><ul class="dots">${B.questions.filter((q) => q.area === a.id).map((q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/">${esc(q.short)}</a></li>`).join("")}</ul></section>`).join("")}`
   });
 
+  // ── Comparar dos candidaturas: los mismos datos que el comparador del test, solo con posturas conocidas de ambas
+  const PAIRS = [["psoe", "pp"], ["pp", "vox"], ["psoe", "fa"], ["fa", "pod"], ["psoe", "pod"], ["vox", "salf"], ["pp", "salf"], ["erc", "junts"], ["pnv", "bildu"], ["erc", "bildu"]].filter(([a, b]) => P[a] && P[b]);
+  const sideOf = (v) => (v < 3 ? -1 : v > 3 ? 1 : 0);
+  const pairPath = (a, b) => `/comparar/${a}-${b}/`;
+  for (const [a, b] of PAIRS) {
+    const A = P[a], Bp = P[b], da = pdim(a), db = pdim(b);
+    const both = B.questions.filter((q) => q.pos[a] && q.pos[b]);
+    const agree = Math.round(both.reduce((x, q) => x + 1 - Math.abs(q.pos[a] - q.pos[b]) / 4, 0) / (both.length || 1) * 100);
+    const same = both.filter((q) => q.pos[a] === q.pos[b]);
+    const opp = both.filter((q) => sideOf(q.pos[a]) && sideOf(q.pos[b]) && sideOf(q.pos[a]) !== sideOf(q.pos[b])).sort((x, y) => Math.abs(y.pos[a] - y.pos[b]) - Math.abs(x.pos[a] - x.pos[b]));
+    const estN = both.filter((q) => q.est.includes(a) || q.est.includes(b)).length;
+    const qrow = (q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/"><b>${esc(q.short)}</b></a><span class="small">${esc(A.ab)}: ${esc(posText(q, q.pos[a]))}${q.est.includes(a) ? " (estimada)" : ""} · ${esc(Bp.ab)}: ${esc(posText(q, q.pos[b]))}${q.est.includes(b) ? " (estimada)" : ""}</span></li>`;
+    const dimRows = B.dims.map((d) => { const x = da[d.id], y = db[d.id]; if (x === undefined || y === undefined) return "";
+      const px = ((x + 100) / 2).toFixed(2), py = ((y + 100) / 2).toFixed(2);
+      return `<div class="sp-dim"><span><b>${esc(d.name)}</b> <span class="muted">· ${esc(A.ab)} ${signed(x)} · ${esc(Bp.ab)} ${signed(y)}</span></span><span class="mini" role="img" aria-label="${esc(d.name)}: ${esc(A.ab)} ${signed(x)}, ${esc(Bp.ab)} ${signed(y)}, en una escala de −100 (${esc(d.a)}) a +100 (${esc(d.b)})"><span class="c"></span><span class="d" style="left:${px}%;background:${A.color}"></span><span class="d" style="left:${py}%;background:${Bp.color}"></span></span><span class="poles small muted"><span>${esc(d.a)}</span><span>${esc(d.b)}</span></span></div>`; }).join("");
+    const others = PAIRS.filter((x) => x[0] !== a || x[1] !== b).map(([x, y]) => `<a href="${pairPath(x, y)}">${esc(P[x].ab)} y ${esc(P[y].ab)}</a>`).join(" · ");
+    page({
+      path: pairPath(a, b),
+      title: `${A.ab} y ${Bp.ab}: en qué coinciden y en qué se diferencian · Test 29N`,
+      desc: `Comparativa neutral de ${A.name} y ${Bp.name} en ${both.length} cuestiones de las elecciones generales del 29N: dónde coinciden, dónde chocan y su posición en siete dimensiones.`,
+      crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }, { name: `${A.ab} y ${Bp.ab}`, url: `${SITE}comparar/${a}-${b}/` }],
+      body: `<header class="sp-head"><div class="phead"><span class="pair">${logo(a)}${logo(b)}</span><div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(A.ab)} y ${esc(Bp.ab)}: en qué coinciden y en qué se diferencian</h1></div></div>
+  <p class="lede">Con los mismos datos que usa el test: ${both.length} cuestiones en las que conocemos la postura de las dos candidaturas${estN ? ` (en ${estN}, al menos una es estimada)` : ""}. Su grado de coincidencia es del ${agree} %.</p></header>
+<section aria-labelledby="h-diff"><h2 class="h2" id="h-diff">Donde chocan (${opp.length})</h2>${opp.length ? `<ul class="cmp-list">${opp.map(qrow).join("")}</ul>` : '<p class="small muted">No hay cuestiones en las que estén en lados opuestos.</p>'}</section>
+<section aria-labelledby="h-same"><h2 class="h2" id="h-same">Donde coinciden del todo (${same.length})</h2>${same.length ? `<ul class="cmp-list">${same.map(qrow).join("")}</ul>` : '<p class="small muted">No hay cuestiones con la misma postura exacta.</p>'}</section>
+<section aria-labelledby="h-dims2"><h2 class="h2" id="h-dims2">En siete dimensiones</h2><p class="small muted">Media de sus posturas en cada dimensión, de −100 a +100. Las estimadas pesan menos.</p><div class="sp-dims">${dimRows}</div></section>
+${method}
+${cta(`¿Estás más cerca de ${esc(A.ab)} o de ${esc(Bp.ab)}?`)}
+<p class="small muted">Ver todas sus posturas: <a href="/partidos/${a}/">${esc(A.name)}</a> · <a href="/partidos/${b}/">${esc(Bp.name)}</a></p>
+<p class="small muted">Otras comparativas: ${others}</p>`
+    });
+  }
+  page({
+    path: "/comparar/",
+    title: "Comparar partidos del 29N, dos a dos · Test 29N",
+    desc: "En qué coinciden y en qué se diferencian las principales candidaturas de las elecciones generales del 29N, con los mismos datos y fuentes que el test.",
+    crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Comparar partidos, dos a dos</h1>
+  <p class="lede">Comparativas neutrales entre candidaturas cercanas o rivales, con las posturas que usa el Test 29N. En el test puedes comparar cualquier pareja con tus propias respuestas.</p></header>
+<ul class="sp-cards">${PAIRS.map(([a, b]) => `<li><a href="${pairPath(a, b)}">${logo(a)}${logo(b)}<span><b>${esc(P[a].ab)} y ${esc(P[b].ab)}</b><span class="small muted">${esc(P[a].name)} · ${esc(P[b].name)}</span></span></a></li>`).join("")}</ul>
+${cta("Compárate tú con cualquier candidatura")}`
+  });
+
+  // ── Datos abiertos: todas las posturas en CSV y JSON, con licencia CC BY 4.0
+  const csvCell = (v) => { const t = String(v ?? ""); return /[",\n;]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
+  const rowsOpen = [];
+  for (const q of B.questions) for (const pid of PD.order) {
+    const v = q.pos[pid]; if (!v) continue;
+    const src = q.src?.[pid];
+    rowsOpen.push({ pregunta_id: q.id, area: AREA[q.area].name, pregunta: q.text, tipo: q.type === "dilema" ? "dilema" : "afirmacion", opcion_a: q.A || "", opcion_b: q.B || "", partido_id: pid, partido: P[pid].name, postura: v, postura_texto: posText(q, v), estimada: q.est.includes(pid), nota: q.notes?.[pid] || "", fuente_url: src?.[0] || "", fuente_titulo: src?.[1] || "", fuente_tipo: src?.[2] || "", fuente_fecha: src?.[3] || "" });
+  }
+  const cols = Object.keys(rowsOpen[0]);
+  mkdirSync(`${OUT}/datos`, { recursive: true });
+  writeFileSync(`${OUT}/datos/posturas.csv`, "\ufeff" + [cols.join(","), ...rowsOpen.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\r\n") + "\r\n");
+  writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: "Posturas de las candidaturas del Test 29N", licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: "Test 29N (https://test29n.es)", actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
+  const nSrcOpen = rowsOpen.filter((r) => r.fuente_url).length, nEstOpen = rowsOpen.filter((r) => r.estimada).length;
+  page({
+    path: "/datos/",
+    title: "Datos abiertos: posturas de los partidos del 29N en CSV y JSON · Test 29N",
+    desc: `Descarga gratis las ${rowsOpen.length} posturas de las candidaturas del Test 29N en CSV y JSON, con fuentes y licencia CC BY 4.0, para periodistas, docentes e investigadores.`,
+    crumbs: [{ name: "Datos abiertos", url: `${SITE}datos/` }],
+    body: `<header class="sp-head"><p class="label">Para periodistas, docentes e investigadores</p><h1 class="h1">Datos abiertos</h1>
+  <p class="lede">Todas las posturas que usa el Test 29N, listas para descargar y reutilizar: ${rowsOpen.length} posturas de ${PD.order.length} candidaturas${PD.order.some((pid) => P[pid].out) ? ` (incluidas ${PD.order.filter((pid) => P[pid].out).length} que han anunciado que no se presentan)` : ""} en ${B.questions.length} cuestiones.</p></header>
+<section aria-labelledby="h-dl"><h2 class="h2" id="h-dl">Descargas</h2>
+<p><a class="btn btn-primary" href="/datos/posturas.csv" download>Descargar CSV</a> <a class="btn btn-ghost" href="/datos/posturas.json" download>Descargar JSON</a></p>
+<p class="small muted">Datos actualizados el ${esc(updated)}. El CSV usa comas como separador y codificación UTF-8, y se abre en Excel, LibreOffice o Google Sheets.</p></section>
+<section aria-labelledby="h-cont"><h2 class="h2" id="h-cont">Qué contiene</h2>
+<ul class="dots"><li>Una fila por cada postura conocida: pregunta, área, candidatura y postura de 1 a 5 (en los dilemas, de «claramente A» a «claramente B»).</li>
+<li>Si la postura es <b>estimada</b> (${nEstOpen} de ${rowsOpen.length}) o documentada, y su nota cuando la hay.</li>
+<li>La fuente enlazada, con título, tipo y fecha, cuando existe (${nSrcOpen} posturas por ahora).</li>
+<li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
+<section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
+<p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (test29n.es)», y no des a entender que el Test 29N respalda tu uso.</p>
+<p class="small muted">Las posturas son una interpretación documentada de programas, votaciones y declaraciones, no un dato oficial de los partidos. Si ves un error, escribe a <a href="mailto:menendezpeoe@gmail.com">menendezpeoe@gmail.com</a>.</p></section>
+${method}`
+  });
+
+  // ── Mini test insertable (5 preguntas) para otras webs: sin cookies, sin almacenamiento y sin contador dentro del marco
+  const STATEWIDE = PD.order.filter((pid) => !P[pid].out && P[pid].scope?.all && B.questions.filter((q) => q.pos[pid]).length > 60);
+  const discQ = (q) => { const v = STATEWIDE.map((pid) => q.pos[pid]).filter(Boolean); const m = v.reduce((x, y) => x + y, 0) / v.length; return v.reduce((x, y) => x + (y - m) ** 2, 0) / v.length; };
+  const miniQs = [];
+  for (const q of [...B.questions].filter((q) => q.prio === 1 && STATEWIDE.every((pid) => q.pos[pid])).sort((x, y) => discQ(y) - discQ(x))) {
+    if (miniQs.length < 5 && !miniQs.some((m) => m.area === q.area || (q.dim && m.dim === q.dim))) miniQs.push(q);
+  }
+  const miniData = { site: SITE, qs: miniQs.map((q) => ({ id: q.id, text: q.text, type: q.type, A: q.A || "", B: q.B || "" })), parties: STATEWIDE.map((pid) => ({ ab: P[pid].ab, name: P[pid].name, color: P[pid].color, pos: Object.fromEntries(miniQs.map((q) => [q.id, q.pos[pid]])) })) };
+  mkdirSync(`${OUT}/insertar`, { recursive: true });
+  writeFileSync(`${OUT}/insertar/mini.js`, `// Mini test del Test 29N: todo se calcula aquí, sin cookies, sin guardar nada y sin enviar respuestas.
+(() => {
+const D = ${JSON.stringify(miniData)};
+const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
+const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
+const el = document.getElementById("mini"), ans = {};
+let i = 0;
+const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function q() {
+  const x = D.qs[i], L = x.type === "dilema" ? DIL : LIK;
+  el.innerHTML = '<p class="mini-prog">Pregunta ' + (i + 1) + ' de ' + D.qs.length + '</p><h2 class="mini-q" tabindex="-1">' + esc(x.text) + '</h2>' + (x.type === "dilema" ? '<p class="mini-ab">A: ' + esc(x.A) + '<br>B: ' + esc(x.B) + '</p>' : '') + '<div class="mini-opts">' + L.map((t, k) => '<button type="button" data-v="' + (k + 1) + '"><b>' + (k + 1) + '</b> ' + esc(t) + '</button>').join("") + '<button type="button" data-v="0" class="ns">No lo sé</button></div>';
+  el.querySelector("h2").focus({ preventScroll: true });
+}
+function res() {
+  const rows = D.parties.map((p) => { const ids = D.qs.map((x) => x.id).filter((id) => ans[id] > 0 && p.pos[id]); const pct = ids.length ? Math.round(ids.reduce((s, id) => s + 1 - Math.abs(ans[id] - p.pos[id]) / 4, 0) / ids.length * 100) : null; return { p, pct }; }).filter((r) => r.pct !== null).sort((a, b) => b.pct - a.pct);
+  el.innerHTML = '<h2 class="mini-q" tabindex="-1">Tu coincidencia con las candidaturas de ámbito estatal</h2>' + (rows.length ? '<ol class="mini-res">' + rows.map((r) => '<li><span><i style="background:' + r.p.color + '"></i>' + esc(r.p.name) + '</span><b>' + r.pct + ' %</b></li>').join("") + '</ol>' : '<p>Has respondido «No lo sé» a todo: no hay con qué comparar.</p>') + '<p class="mini-note">Orientativo, con solo 5 preguntas. No es una recomendación de voto. El test completo compara tus respuestas con las candidaturas de tu provincia.</p><p><a class="mini-cta" href="' + D.site + '" target="_blank" rel="noopener">Haz el test completo en test29n.es</a> <button type="button" class="mini-again">Volver a empezar</button></p>';
+  el.querySelector("h2").focus({ preventScroll: true });
+}
+el.addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.classList.contains("mini-again")) { i = 0; for (const k in ans) delete ans[k]; q(); return; }
+  if (b.dataset.v === undefined) return;
+  ans[D.qs[i].id] = Number(b.dataset.v); i++;
+  if (i < D.qs.length) q(); else res();
+});
+q();
+})();
+`);
+  writeFileSync(`${OUT}/insertar/index.html`, `${head("Mini test de 5 preguntas · Test 29N", "Mini test político de 5 preguntas del Test 29N para insertar en otras webs, sin cookies ni rastreo.", '<meta name="robots" content="noindex">\n', "/")}
+<body class="mini-body">
+<main class="mini-wrap"><h1 class="mini-brand"><a href="${SITE}" target="_blank" rel="noopener"><b>Test</b> 29N</a> · Mini test político · Elecciones generales del 29N</h1>
+<div id="mini" aria-live="polite"><noscript><p>El mini test necesita JavaScript. <a href="${SITE}" target="_blank" rel="noopener">Haz el test completo en test29n.es</a>.</p></noscript></div>
+</main>
+<script src="/insertar/mini.js" defer></script>
+</body>
+</html>
+`);
+  const iframeCode = `<iframe src="${SITE}insertar/" title="Mini test político del Test 29N" width="100%" height="560" style="border:1px solid #D2D5CC;border-radius:12px;max-width:640px" loading="lazy"></iframe>`;
+
   // ── Índices
   page({
     path: "/partidos/",
@@ -236,6 +361,8 @@ ${cta("Responde tú y compara")}
 <section aria-labelledby="h-embed"><h2 class="h2" id="h-embed">Enlázalo desde tu web o blog</h2>
 <p>Copia este código y pégalo en tu web. Solo es un enlace con imagen: no carga ningún script ni recoge datos de tus lectores.</p>
 <pre class="embed" tabindex="0"><code>${esc(embed)}</code></pre>
+<p>O inserta el <b>mini test de 5 preguntas</b>, que funciona dentro de tu página sin cookies, sin guardar nada y sin enviar las respuestas a ningún sitio (<a href="/insertar/">ver cómo queda</a>):</p>
+<pre class="embed" tabindex="0"><code>${esc(iframeCode)}</code></pre>
 <p>O, si prefieres un enlace de texto:</p>
 <pre class="embed" tabindex="0"><code>${esc(embedText)}</code></pre></section>
 <section aria-labelledby="h-met"><h2 class="h2" id="h-met">Metodología y límites</h2>
