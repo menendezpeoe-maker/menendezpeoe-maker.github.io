@@ -1,11 +1,20 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 19 oct 2026, tras T1)
+## Ficha de continuidad (actualizada el 23 oct 2026)
+
+**Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:
+1. **Cerrar T9, parte 1** (ya en `fuente`, commit `e627088`, sin publicar): título y descripción, H1 único, preguntas frecuentes con fecha del BOE, 107 páginas `/preguntas/` y `qa/seo.mjs`. Falta solo ajustar en `qa/growth.mjs` la cuenta del sitemap (espera 42 páginas; ahora hay 150), pasar las baterías, hacer la revisión de la regla 9 de las páginas de pregunta y publicar.
+2. **T2** (test rápido y resumen de resultados).
+3. **T3** (guía para votar y calendario; fecha ya verificada: Real Decreto 806/2026, BOE del 6 oct, elecciones el 29 nov, campaña del 13 al 27 nov).
+4. La tanda del día.
+5. **T4** y el resto de T9 (`/comparar/`, `/datos/`, `/insertar/`) pasan a R1 y R2.
+Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
+
 
 **Estado de los bloques**
 - T1 · Portada y entrada: completada y verificada (web real, 19 oct).
-- T9 · Buscadores y datos abiertos (20 oct): pendiente.
-- T2, T3, T4, T10, T5–T8, T11: pendientes.
+- T9 · Buscadores y datos abiertos: en curso (parte 1 hecha y guardada; sin publicar).
+- T2, T3, T4: pendientes (no se ejecutaron por el límite de uso). T10, T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
