@@ -28,6 +28,7 @@ const W_ESTIMATED = 0.6;    // postura de partido estimada (no documentada)
 const W_NEUTRAL = 0.5;      // respuesta «ni de acuerdo ni en desacuerdo»: cuenta, pero informa menos
 const MIN_COVERAGE = 0.5;   // por debajo, la coincidencia se acerca al 50 %
 const MODES = {
+  rapida: { label: "Rápida", mins: 3 },
   expres: { label: "Exprés", mins: 5 },
   media: { label: "Media", mins: 10 },
   completa: { label: "Completa", mins: 20 }
@@ -152,7 +153,23 @@ function pickBalanced(cands, chosen, n) {
   }
   return res;
 }
+// Versión rápida (unas 15 preguntas): una pregunta núcleo por área y tres más, elegidas para
+// distinguir bien entre partidos, cubrir las siete dimensiones y equilibrar el sentido de las afirmaciones.
+// Es fija (no depende de la semilla), para que el resultado sea comparable entre personas.
+let QUICK = null;
+function quickOrder() {
+  if (QUICK) return QUICK;
+  const disc = (q) => { const v = PIDS.map((p) => q.pos[p]).filter(Boolean); if (!v.length) return 0; const m = v.reduce((a, b) => a + b, 0) / v.length; return v.reduce((a, b) => a + (b - m) ** 2, 0) / v.length * (v.length / PIDS.length); };
+  const pick = [], dims = {};
+  let lr = 0, dsum = 0;
+  const score = (q) => disc(q) + (dims[q.dim] ? 0 : 1.2) + (lr !== 0 && Math.sign(q.lr) === -Math.sign(lr) ? 0.6 : 0) + (dsum !== 0 && q.dir && Math.sign(q.dir) === -Math.sign(dsum) ? 0.5 : 0);
+  const add = (q) => { pick.push(q); dims[q.dim] = (dims[q.dim] || 0) + 1; lr += q.lr; dsum += q.dir; };
+  for (const a of BANK.areas) { const c = BANK.questions.filter((q) => q.area === a.id && q.prio === 1); if (c.length) add([...c].sort((x, y) => score(y) - score(x))[0]); }
+  while (pick.length < 15) { const c = BANK.questions.filter((q) => !pick.includes(q) && q.prio <= 2); if (!c.length) break; add([...c].sort((x, y) => score(y) - score(x))[0]); }
+  return (QUICK = BANK.questions.filter((q) => pick.includes(q)).map((q) => q.id));
+}
 function buildOrder(mode, seed) {
+  if (mode === "rapida") return quickOrder().slice();
   const out = [];
   for (const a of BANK.areas) {
     const qs = BANK.questions.filter((q) => q.area === a.id);
@@ -236,10 +253,11 @@ function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
   renderStartNote(); renderResume();
 }
-const MODE_NOTE = { expres: "unos 5 minutos", media: "unos 10 minutos", completa: "unos 20 minutos" };
+const NEXT_MODE = { rapida: "expres", expres: "media", media: "completa" };  // «Afinar» lleva a la siguiente versión
+const MODE_NOTE = { rapida: "unos 3 minutos", expres: "unos 5 minutos", media: "unos 10 minutos", completa: "unos 20 minutos" };
 function renderStartNote() {
-  const mode = ($('input[name=mode]:checked') || {}).value || "expres";
-  $("#start-note").innerHTML = `Versión ${MODES[mode].label.toLowerCase()}: ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}. <a href="#setup">${mode === "expres" ? "Otras versiones" : "Cambiar de versión"}</a>`;
+  const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
+  $("#start-note").innerHTML = `Versión ${MODES[mode].label.toLowerCase()}: ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}. <a href="#setup">${mode === "rapida" ? "Otras versiones" : "Cambiar de versión"}</a>`;
 }
 // La provincia se pide al final y se recuerda la última elegida (solo en este navegador)
 function setProv(v) {
@@ -267,7 +285,7 @@ function renderResume() {
   box.hidden = false;
 }
 function newTest() {
-  const mode = ($('input[name=mode]:checked') || {}).value || "expres";
+  const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
   const seed = newSeed();
   S = { v: 2, bank: BANK.version, mode, seed, order: buildOrder(mode, seed), idx: 0, ans: {}, imp: {}, prios: [], stage: "quiz", t: Date.now() };
   if (PROV[PREFS.prov]) S.prov = PREFS.prov;
@@ -678,7 +696,7 @@ function openResults() {
 
 function renderResults() {
   const st = ST();
-  const next = st.mode === "expres" ? "media" : st.mode === "media" ? "completa" : null;
+  const next = NEXT_MODE[st.mode] || null;
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
@@ -1626,7 +1644,7 @@ function bindResults() {
     }
     const act = b.dataset.act;
     if (act === "more") {
-      const next = S.mode === "expres" ? "media" : "completa";
+      const next = NEXT_MODE[S.mode] || "completa";
       S.mode = next; S.order = buildOrder(next, S.seed); S.fill = true;
       const first = S.order.findIndex((id) => S.ans[id] === undefined);
       S.idx = first < 0 ? S.order.length - 1 : first; S.stage = "quiz"; save();
@@ -1644,13 +1662,13 @@ function bindResults() {
 // respuestas (con su importancia) en el orden del banco.
 function encodeShare(st) {
   const prov = PROV_LIST.indexOf(st.prov).toString(36).padStart(2, "0");
-  const mode = { expres: "e", media: "m", completa: "c" }[st.mode] || "e";
+  const mode = { rapida: "r", expres: "e", media: "m", completa: "c" }[st.mode] || "e";
   const mask = BANK.areas.reduce((m, a, i) => m | (st.prios.includes(a.id) ? 1 << i : 0), 0).toString(36).padStart(3, "0");
   const ans = BANK.questions.map((q) => { const v = st.ans[q.id]; if (v === undefined) return "0"; if (v === 0) return "n"; return st.imp[q.id] ? "abcde"[v - 1] : String(v); }).join("");
   return `r2${prov}${mode}${mask}${ans}`;
 }
 function decodeShare(hash) {
-  const m = /^#r2([0-9a-z]{2})([emc])([0-9a-z]{3})([0-5na-e]+)$/.exec(hash || "");
+  const m = /^#r2([0-9a-z]{2})([remc])([0-9a-z]{3})([0-5na-e]+)$/.exec(hash || "");
   if (!m || m[4].length !== BANK.questions.length) return null;
   const prov = PROV_LIST[parseInt(m[1], 36)]; if (!prov) return null;
   const mask = parseInt(m[3], 36), ans = {}, imp = {};
@@ -1662,7 +1680,7 @@ function decodeShare(hash) {
     else ans[q.id] = Number(c);
   });
   if (!Object.keys(ans).length) return null;
-  return { v: 2, prov, mode: { e: "expres", m: "media", c: "completa" }[m[2]], ans, imp, prios: BANK.areas.filter((a, i) => mask & (1 << i)).map((a) => a.id), order: null, stage: "done", seed: 0 };
+  return { v: 2, prov, mode: { r: "rapida", e: "expres", m: "media", c: "completa" }[m[2]], ans, imp, prios: BANK.areas.filter((a, i) => mask & (1 << i)).map((a) => a.id), order: null, stage: "done", seed: 0 };
 }
 async function copyText(text, okMsg, fallbackEl) {
   try { await navigator.clipboard.writeText(text); toast(okMsg); return true; }

@@ -156,7 +156,7 @@ fieldset.field > legend { margin-bottom: 8px; }
 .seg input:checked + span, .modes input:checked + span { background: var(--mark); color: var(--mark-ink); border-color: var(--mark-ink); }
 .seg input:focus-visible + span, .modes input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 2px; }
 .modes { display: grid; gap: 8px; grid-template-columns: 1fr; }
-@media (min-width: 560px) { .modes { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 560px) { .modes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .modes label > span { display: grid; gap: 1px; padding: 12px 14px; border: 1.5px solid var(--rule); border-radius: var(--r2); background: var(--sheet-2); cursor: pointer; height: 100%; }
 .modes b { font-family: var(--f-disp); font-stretch: 115%; font-weight: 850; font-size: 18px; }
 .modes em { font-style: normal; font-size: 13.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
