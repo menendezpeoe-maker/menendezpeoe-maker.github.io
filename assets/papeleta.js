@@ -700,24 +700,27 @@ function renderResults() {
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
-      <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-map">Mapa</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
+      <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-map">Mapa</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
     </div></nav>
     <div class="wrap">
       <section id="r-summary" class="summary res-sec" style="padding-top:34px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
+      <div class="unfold-row"${PREFS.full ? " hidden" : ""}><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">Ver el análisis completo</button><span class="small muted">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
+      <div id="r-full"${PREFS.full ? "" : " hidden"}>
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
-      <section id="r-map" class="res-sec" aria-labelledby="map-h"></section>
       <section id="r-areas" class="res-sec" aria-labelledby="areas-h2"></section>
       <section id="r-traits" class="res-sec" aria-labelledby="traits-h"></section>
       <section id="r-parties" class="res-sec" aria-labelledby="parties-h"></section>
       <section id="r-versus" class="res-sec" aria-labelledby="versus-h"></section>
+      <section id="r-map" class="res-sec" aria-labelledby="map-h"></section>
       <section id="r-solid" class="res-sec" aria-labelledby="solid-h"></section>
       <section id="r-share" class="res-sec share" aria-labelledby="share-h"></section>
       <section id="r-review" class="res-sec" aria-labelledby="review-h"></section>
       <section id="r-least" class="res-sec" aria-labelledby="least-h"></section>
       <section id="r-pols" class="res-sec" aria-labelledby="pols-h"></section>
       <section id="r-support" class="res-sec" aria-labelledby="support-h"></section>
+      </div>
       <section class="res-sec" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
@@ -986,27 +989,36 @@ function renderSummary() {
     return `<div class="sig-row" title="${esc(d.name)}: ${esc(dimLabel(d, o.v))} (${signed(o.v)})"><span>${esc(d.name)}</span><span class="mini"><span class="c"></span>${band}<span class="d" style="left:${x}%"></span></span></div>`;
   }).join("");
   const nAns = M.qs.length, nTotal = st.order ? st.order.length : nAns + M.ns.length;
+  const strength2 = (i) => Math.abs(i.u - 3) + Math.abs(i.v - 3);
+  const yes = top ? top.items.filter((i) => i.d <= 1 && (i.u !== 3 || i.v !== 3)).sort((x, y) => (strength2(y) - y.d * 2) - (strength2(x) - x.d * 2)).slice(0, 3) : [];
+  const no = top ? top.items.filter((i) => i.d >= 2).sort((x, y) => y.d - x.d || strength2(y) - strength2(x)).slice(0, 3) : [];
+  const li = (i) => `<li><b>${esc(i.q.short)}</b><span>${SHARED ? "Esta persona" : "Tú"}: ${esc(ansBrief(i.q, i.u))} · ${esc(P[top.pid].ab)}: ${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span></li>`;
   $("#r-summary").innerHTML = `
     <div class="ballot">
       <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${MODES[st.mode]?.label || ""}</span><span>Congreso · ${esc(pr.name)}</span></div>
-      <div class="ballot-body">
-        <div style="display:grid;gap:16px;align-content:start">
-          <p class="who">${SHARED ? "Resultado compartido · " : ""}${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
-          <h1 id="res-h" class="profile-h">${esc(ps.head)}</h1>
-          ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
-          <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
-          <p class="small muted">Cada barra va del primer polo de su dimensión (a la izquierda) al segundo (a la derecha); no es el eje izquierda-derecha. <a href="#r-dims" class="link-btn" style="padding:0">Ver el detalle</a></p>
-        </div>
+      <div class="ballot-body sum-body">
         <div class="top-match">
-          <p class="label">Tu mayor coincidencia en ${esc(pr.name)}</p>
+          <p class="label">${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}</p>
           ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
-          <p class="tm-pct">${top.pct}<small>%</small></p>
-          <p class="small muted">de coincidencia con sus posturas, pregunta a pregunta. No es una probabilidad de voto.</p>
-          <p class="small">${top.close != null ? `Cercanía ideológica: <b>${Math.round(top.close * 100)} %</b> · ` : ""}comparado en ${top.n} de ${nAns} respuestas</p>
+          <p class="tm-line"><span class="tm-pct">${top.pct}<small>%</small></span><span class="small muted">de coincidencia, pregunta a pregunta. No es una probabilidad de voto.</span></p>
           ${top.pct < 60 ? `<p class="small">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}
           <p class="small muted">Siguientes: ${M.prov.slice(1, 3).map((m) => `${esc(pName(m.pid, st.prov))} (${m.pct} %)`).join(" · ") || "—"}</p>` : "<p>No hay candidaturas comparables.</p>"}
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
-          <div class="res-actions"><a class="btn btn-primary btn-sm" href="#r-parties">Ver partidos en detalle</a><a class="btn btn-ghost btn-sm" href="#r-portrait">Tu perfil, explicado</a>${!SHARED ? '<a class="btn btn-ghost btn-sm" href="#r-share">Compartir</a>' : ""}</div>
+        </div>
+        <div class="sum-main">
+          <p class="who">${SHARED ? "Resultado compartido · " : ""}${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
+          <h1 id="res-h" class="profile-h">${esc(ps.head)}</h1>
+          ${top ? `<div class="sum-two">
+            <div><p class="subh" style="color:var(--ok)">En qué coincidís</p>${yes.length ? `<ul class="sum-l">${yes.map(li).join("")}</ul>` : '<p class="small muted">Ninguna coincidencia clara.</p>'}</div>
+            <div><p class="subh" style="color:var(--ko)">En qué chocáis</p>${no.length ? `<ul class="sum-l">${no.map(li).join("")}</ul>` : '<p class="small muted">No hay discrepancias fuertes.</p>'}</div>
+          </div>` : ""}
+          ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button></div>
+          <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
+          <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
+            ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
+            <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
+            <p class="small muted">Cada barra va del primer polo de su dimensión (a la izquierda) al segundo (a la derecha); no es el eje izquierda-derecha. <a href="#r-dims" class="link-btn" style="padding:0">Ver el detalle</a></p>
+          </details>
         </div>
       </div>
     </div>`;
@@ -1370,7 +1382,14 @@ function showExtraCard(pid, scroll = true) {
   box.innerHTML = `<div class="extra-head"><p class="label">Ficha que has abierto</p><button type="button" class="link-btn" data-act="close-card">Cerrar ficha</button></div>${partyCard(m, rank < 0 ? 99 : rank)}`;
   if (scroll) focusCard(pid);
 }
+// «Ver el análisis completo»: se despliega al pulsarlo o al ir a cualquier sección plegada, y se recuerda
+function unfold() {
+  const f = $("#r-full"); if (!f || !f.hidden) return;
+  f.hidden = false; const b = $("#r-unfold"); if (b) { b.setAttribute("aria-expanded", "true"); b.closest(".unfold-row").hidden = true; }
+  PREFS.full = true; savePrefs();
+}
 function focusCard(pid) {
+  unfold();
   const c = $(`#card-${pid}`); if (!c) return;
   c.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
   const h = c.querySelector("h3"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
@@ -1630,12 +1649,14 @@ function bindResults() {
   });
   root.addEventListener("click", (e) => {
     const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
+    if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
+    if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
     const a = e.target.closest('a[href^="#r-"]');
-    if (a) { e.preventDefault(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
+    if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
     if (b.dataset.card) { showExtraCard(b.dataset.card); return; }
-    if (b.dataset.vs) { const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
+    if (b.dataset.vs) { unfold(); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
     if (b.dataset.mapsel) { selectMap(b.dataset.mapsel); return; }
     if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
@@ -1855,6 +1876,15 @@ async function shareInstagram() {
   refreshCard();
   await downloadCard("story");
   shareStatus(`${$("#sh-status").textContent} En Instagram: pulsa «Tu historia» y elige la imagen de tu galería. Instagram no permite publicar directamente desde una web.`, "ok");
+}
+async function challengeFriend() {
+  const url = `${siteUrl()}#${encodeShare(S)}`;
+  const text = "¿Cuánto coincidimos en política? Haz el Test 29N y compárate conmigo:";
+  if (!IN_FRAME && navigator.share) {
+    try { await navigator.share({ title: "Test 29N", text, url }); toast("Reto compartido"); return; }
+    catch (e) { if (e.name === "AbortError") return; }
+  }
+  await copyText(`${text} ${url}`, "Enlace del reto copiado. Pégalo en el chat que quieras.");
 }
 async function inviteOnly() {
   const url = siteUrl();

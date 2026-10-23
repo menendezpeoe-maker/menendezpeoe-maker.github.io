@@ -791,3 +791,38 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .faq-item { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
 .faq-item p { color: var(--ink-2); line-height: 1.55; text-wrap: pretty; }
 .faq-item a { color: var(--ink); text-underline-offset: 3px; }
+/* Resumen de resultados en una pantalla: coincidencia, 3 coincidencias y 3 choques, perfil, solidez y botones */
+.sum-body { gap: 18px; }
+.sum-main { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.sum-body .top-match { border-top: 0; padding-top: 0; gap: 8px; }
+@media (min-width: 900px) { .sum-body .top-match { order: 2; border-left: 1px solid var(--rule); padding: 0 0 0 28px; } }
+@media (max-width: 899px) { .sum-body .top-match { border-bottom: 1px solid var(--rule); padding-bottom: 16px; } }
+.tm-line { display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.tm-line .small { max-width: 26ch; padding-bottom: 6px; }
+.sum-body .tm-pct { font-size: clamp(52px, 9vw, 80px); }
+.sum-body .profile-h { font-size: clamp(21px, 3vw, 30px); }
+.sum-two { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 560px) { .sum-two { grid-template-columns: 1fr 1fr; } }
+.sum-l { display: grid; gap: 6px; margin-top: 4px; }
+.sum-l li { display: grid; gap: 1px; font-size: 14px; line-height: 1.3; }
+.sum-l li span { color: var(--ink-3); font-size: 12.5px; }
+.sig-more summary { font-weight: 700; }
+.sig-more[open] { display: grid; gap: 10px; }
+.unfold-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 6px 0 26px; }
+@media (max-width: 559px) {
+  .sum-body { padding: 16px 16px 18px; gap: 12px; }
+  .sum-body .top-match { padding-bottom: 12px; gap: 6px; }
+  .sum-body .tm-row .logo { width: 40px; height: 40px; font-size: 11px; }
+  .sum-body .tm-name { font-size: 20px; }
+  .sum-body .tm-pct { font-size: 46px; }
+  .sum-body .tm-line .small { padding-bottom: 3px; font-size: 12.5px; }
+  .sum-body .rel { padding: 4px 10px; font-size: 13px; }
+  .sum-main { gap: 10px; }
+  .sum-main .who { display: none; }
+  .sum-body .profile-h { font-size: 20px; }
+  .sum-two { gap: 8px; }
+  .sum-l { gap: 3px; }
+  .sum-l li span { display: none; }
+  .sum-l li b { font-weight: 600; font-size: 14px; }
+  .sum-main .res-actions .btn { min-height: 46px; padding: 0 18px; }
+}
