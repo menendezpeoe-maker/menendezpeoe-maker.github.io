@@ -18,7 +18,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   page.on("pageerror", (e) => errors.push(`[${vp.tag}] ${e}`));
   await page.goto(BASE);
   await page.waitForSelector("#start-btn:not([disabled])");
-  ok((await page.title()).startsWith("Test 29N"), "título de la página");
+  ok(/^Test político 2026: ¿con qué partido coincides\? · Elecciones 29N$/.test(await page.title()), "título de la página");
   ok(await page.$eval('meta[property="og:image"]', (m) => m.content.endsWith("og.png")), "metadatos Open Graph");
   await page.click("#start-btn");
   await page.waitForSelector("#v-quiz:not([hidden])");

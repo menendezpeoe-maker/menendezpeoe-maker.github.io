@@ -54,7 +54,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -119,22 +119,25 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
     });
   }
 
-  // ── Una página por tema
-  for (const a of B.areas) {
-    const qs = B.questions.filter((q) => q.area === a.id);
-    const items = qs.map((q) => {
+  // Posturas de una pregunta agrupadas de 1 a 5, con notas, fuentes y partidos sin postura (temas y páginas de pregunta)
+  const qBlock = (q, h = "h2", link = true) => {
       const cols = [1, 2, 3, 4, 5].map((n) => { const ps = live.filter((pid) => q.pos[pid] === n);
         return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<a class="chip${q.est.includes(pid) ? " est" : ""}" href="/partidos/${pid}/" title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</a>`).join("")}</span></div>`; }).join("");
       const unk = live.filter((pid) => !q.pos[pid]);
       const notes = Object.entries(q.notes || {}).filter(([pid]) => live.includes(pid));
       const srcs = Object.entries(q.src || {}).filter(([pid]) => live.includes(pid));
-      return `<article class="exq" id="${q.id}"><p class="q-meta"><span class="q-code">${qCode(q)}</span></p><h2 class="sp-qh">${esc(q.text)}</h2>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}
+      return `<article class="exq" id="${q.id}"><p class="q-meta"><span class="q-code">${qCode(q)}</span>${link ? `<a href="/preguntas/${q.id.toLowerCase()}/">Qué piensa cada partido</a>` : ""}</p><${h} class="sp-qh">${esc(q.text)}</${h}>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}
         <p class="dinfo">${esc(q.ctx)}${q.ley ? ` <b>Marco legal:</b> ${esc(q.ley)}.` : ""}</p>
         <div class="pos5">${cols}</div>
         ${notes.length ? `<ul class="pos-notes">${notes.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : ""}
         ${srcs.length ? `<p class="unk">Fuentes: ${srcs.map(([pid]) => `${esc(P[pid].ab)} · ${srcHTML(q, pid)}`).join(" · ")}.</p>` : ""}
         ${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
-    }).join("");
+  };
+
+  // ── Una página por tema
+  for (const a of B.areas) {
+    const qs = B.questions.filter((q) => q.area === a.id);
+    const items = qs.map((q) => qBlock(q)).join("");
     page({
       path: `/temas/${slug(a.name)}/`,
       title: `${a.name}: qué piensa cada partido en las elecciones del 29N · Test 29N`,
@@ -149,6 +152,36 @@ ${cta("Descubre con qué candidatura coincides más")}
 <p class="small muted">Otros temas: ${B.areas.filter((x) => x.id !== a.id).map((x) => `<a href="/temas/${slug(x.name)}/">${esc(x.name)}</a>`).join(" · ")}</p>`
     });
   }
+
+  // ── Una página por pregunta: «¿Qué piensa cada partido sobre…?»
+  B.questions.forEach((q, i) => {
+    const a = AREA[q.area], known = live.filter((pid) => q.pos[pid]), nSrc = known.filter((pid) => q.src?.[pid]).length;
+    const prev = B.questions[i - 1], next = B.questions[i + 1];
+    const qLink = (x) => `<a href="/preguntas/${x.id.toLowerCase()}/">${esc(x.short)}</a>`;
+    page({
+      path: `/preguntas/${q.id.toLowerCase()}/`,
+      title: `${q.short}: qué piensa cada partido · Test 29N`,
+      desc: `${q.short}: la postura de ${known.length} candidaturas en las elecciones generales del 29N, con contexto neutral${nSrc ? ` y ${nSrc} ${nSrc === 1 ? "fuente enlazada" : "fuentes enlazadas"}` : ""}. Compara con tu opinión en el Test 29N.`,
+      crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }, { name: q.short, url: `${SITE}preguntas/${q.id.toLowerCase()}/` }],
+      body: `<header class="sp-head"><p class="label">${esc(a.letter)} · ${esc(a.name)} · Elecciones generales del 29N</p><h1 class="h1">${esc(q.short)}: qué piensa cada partido</h1>
+  <p class="lede">La postura de cada candidatura sobre esta cuestión, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo)${q.type === "dilema" ? ", o entre las opciones A y B" : ""}, con el contexto neutral que muestra el test.</p></header>
+${qBlock(q, "h2", false)}
+${method}<p class="small muted">Las etiquetas con borde discontinuo y en cursiva son posturas estimadas. Toca un partido para ver todas sus posturas.</p>
+${cta("¿Y tú qué opinas? Responde el test")}
+<nav class="small muted" aria-label="Otras preguntas">${prev ? `← ${qLink(prev)}` : ""}${prev && next ? " · " : ""}${next ? `${qLink(next)} →` : ""} · <a href="/temas/${slug(a.name)}/">Todas las preguntas sobre ${esc(a.name.toLowerCase())}</a></nav>`
+    });
+  });
+
+  page({
+    path: "/preguntas/",
+    title: `Las ${B.questions.length} preguntas del test, partido a partido · Test 29N`,
+    desc: `Todas las cuestiones del Test 29N para las elecciones generales del 29N, cada una con su contexto neutral y la postura de cada candidatura.`,
+    crumbs: [{ name: "Preguntas", url: `${SITE}preguntas/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Qué piensa cada partido, pregunta a pregunta</h1>
+  <p class="lede">Las ${B.questions.length} cuestiones del Test 29N, agrupadas en ${B.areas.length} áreas. Cada una tiene su página con el contexto neutral y la postura de cada candidatura.</p></header>
+${cta("Responde tú y compara")}
+${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="pa-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h2><ul class="dots">${B.questions.filter((q) => q.area === a.id).map((q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/">${esc(q.short)}</a></li>`).join("")}</ul></section>`).join("")}`
+  });
 
   // ── Índices
   page({

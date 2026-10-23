@@ -7,8 +7,8 @@ import { buildPages } from "./pages.mjs";
 
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
-const TITLE = "Test 29N · Test político y electoral para las elecciones generales del 29N";
-const DESC = "¿Con qué partido coincides el 29N? Test electoral gratuito para las elecciones generales del 29 de noviembre de 2026: 107 preguntas con contexto neutral y tu coincidencia con los partidos de tu provincia. Sin registro.";
+const TITLE = "Test político 2026: ¿con qué partido coincides? · Elecciones 29N";
+const DESC = "Test político gratuito para las elecciones generales 2026 (29N). No te dice a quién votar: compara tus ideas con las candidaturas de tu provincia.";
 
 rmSync(OUT, { recursive: true, force: true });
 for (const d of ["", "assets", "assets/politicos", "data"]) mkdirSync(`${OUT}/${d}`, { recursive: true });
@@ -91,22 +91,27 @@ const social = `<link rel="canonical" href="${SITE}">
 <meta property="og:site_name" content="Test 29N">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="${SITE}">
-<meta property="og:title" content="Test 29N · ¿Con qué partido coincides en las elecciones del 29N?">
-<meta property="og:description" content="Test político con 107 preguntas y contexto neutral. Tu perfil en siete dimensiones y tu coincidencia con las candidaturas de tu provincia para el 29N.">
+<meta property="og:title" content="${TITLE}">
+<meta property="og:description" content="${DESC}">
 <meta property="og:image" content="${SITE}og.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Test 29N: Lo que piensas, tema a tema. Test político para las elecciones del 29 de noviembre de 2026.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Test 29N · ¿Con qué partido coincides en las elecciones del 29N?">
-<meta name="twitter:description" content="107 preguntas con contexto neutral, tu perfil en siete dimensiones y tu coincidencia con las candidaturas de tu provincia.">
+<meta name="twitter:title" content="${TITLE}">
+<meta name="twitter:description" content="${DESC}">
 <meta name="twitter:image" content="${SITE}og.png">
 <meta name="twitter:image:alt" content="Test 29N: Lo que piensas, tema a tema.">
 <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", name: "Test 29N", alternateName: "Test electoral 29N", url: SITE, inLanguage: "es", applicationCategory: "EducationalApplication", operatingSystem: "Web", description: DESC, isAccessibleForFree: true, offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" } })}</script>
 `;
-const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><h1>Test 29N necesita JavaScript</h1><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
-writeFileSync(`${OUT}/index.html`, `${head(TITLE, DESC, social)}
+// Preguntas frecuentes de la portada: los datos estructurados se sacan del HTML visible, para que digan exactamente lo mismo
+const stripTags = (h) => h.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+const FAQ = [...body.matchAll(/<div class="faq-item"><h3 class="h3">([\s\S]*?)<\/h3><p>([\s\S]*?)<\/p><\/div>/g)].map((m) => ({ q: stripTags(m[1]), a: stripTags(m[2]) }));
+if (FAQ.length < 5) throw new Error("No se han encontrado las preguntas frecuentes de la portada");
+const faqLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }).replace(/</g, "\\u003c")}</script>\n`;
+const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><p style="font-size:1.25em;font-weight:700;margin:0 0 .5em">Test 29N necesita JavaScript</p><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
+writeFileSync(`${OUT}/index.html`, `${head(TITLE, DESC, social + faqLd)}
 <body>
 ${noscript}
 ${body}
