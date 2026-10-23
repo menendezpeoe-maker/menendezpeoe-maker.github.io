@@ -3,7 +3,7 @@
 ## Ficha de continuidad (actualizada el 23 oct 2026)
 
 **Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:
-1. **Cerrar T9, parte 1** (ya en `fuente`, commit `e627088`, sin publicar): título y descripción, H1 único, preguntas frecuentes con fecha del BOE, 107 páginas `/preguntas/` y `qa/seo.mjs`. Falta solo ajustar en `qa/growth.mjs` la cuenta del sitemap (espera 42 páginas; ahora hay 150), pasar las baterías, hacer la revisión de la regla 9 de las páginas de pregunta y publicar.
+1. ~~Cerrar T9, parte 1~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 2. **T2** (test rápido y resumen de resultados).
 3. **T3** (guía para votar y calendario; fecha ya verificada: Real Decreto 806/2026, BOE del 6 oct, elecciones el 29 nov, campaña del 13 al 27 nov).
 4. La tanda del día.
@@ -13,7 +13,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 
 **Estado de los bloques**
 - T1 · Portada y entrada: completada y verificada (web real, 19 oct).
-- T9 · Buscadores y datos abiertos: en curso (parte 1 hecha y guardada; sin publicar).
+- T9 · Buscadores y datos abiertos: parte 1 completada y verificada (web real, 23 oct). Pendiente: `/comparar/`, `/datos/` e `/insertar/` (pasan a R1).
 - T2, T3, T4: pendientes (no se ejecutaron por el límite de uso). T10, T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
@@ -32,6 +32,18 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 23 oct 2026 · T9 (parte 1) · Buscadores
+- **Hecho y verificado en la web real:**
+  - Título «Test político 2026: ¿con qué partido coincides? · Elecciones 29N» y descripción con «test político», «elecciones generales 2026» y «a quién votar» (sin recomendar voto). Open Graph y Twitter, coherentes.
+  - Un único H1 en la portada. El aviso sin JavaScript ya no es un H1, y las pantallas ocultas usan H2.
+  - Preguntas frecuentes en HTML estático y visible, con datos estructurados `FAQPage` generados desde el propio HTML. La fecha está comprobada en el Real Decreto 806/2026 (BOE del 6 oct): elecciones el 29 nov y campaña del 13 al 27 nov.
+  - 107 páginas `/preguntas/<id>/` («qué piensa cada partido»), índice `/preguntas/` y enlaces desde los temas y el pie.
+  - `qa/seo.mjs`: título y descripción de la portada, H1 único por página, preguntas frecuentes iguales a los datos estructurados, títulos y descripciones únicos en las 151 páginas, y sitemap completo.
+  - Pruebas: las 13 baterías OK en local y en https://test29n.es. IndexNow: 200 OK, 151 URL.
+- **Revisión (reglas 9 y 14):** capturas a 390 y 1280 px, en claro y oscuro, de las preguntas frecuentes y de las páginas de pregunta. Un revisor independiente comprobó la fecha en el BOE y la coherencia con el aviso de privacidad; aplicadas sus 3 mejoras: descripción más corta, frase de «¿Es neutral?» y mención de GoatCounter con enlace a la privacidad.
+- **Pendiente de T9:** `/comparar/`, `/datos/` e `/insertar/` (pasan a R1).
+- **Además:** `CLAUDE.md` en la raíz, con el orden de lectura, las reglas clave y los comandos.
 
 ## 19 oct 2026 · T1 · Fase 1a: entrada en un toque
 - **Hecho y verificado en la web real:**
