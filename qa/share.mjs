@@ -20,6 +20,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   await page.waitForSelector("#start-btn:not([disabled])");
   ok(/^Test político 2026: ¿con qué partido coincides\? · Elecciones 29N$/.test(await page.title()), "título de la página");
   ok(await page.$eval('meta[property="og:image"]', (m) => m.content.endsWith("og.png")), "metadatos Open Graph");
+  await page.check("#f-mode-expres", { force: true });
   await page.click("#start-btn");
   await page.waitForSelector("#v-quiz:not([hidden])");
   const n = Number((await page.textContent("#q-count")).split("/")[1]);

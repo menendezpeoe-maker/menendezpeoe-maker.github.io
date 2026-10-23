@@ -51,8 +51,8 @@ console.log("Empezar en un toque");
   const { ctx, page } = await open();
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   const s = await saved(page);
-  ok(s && s.stage === "quiz" && s.mode === "expres" && !("sex" in s) && !("age" in s) && !s.prov, "un toque empieza la exprés sin pedir datos (ni sexo, edad o provincia)");
-  ok(/\/ 24/.test(await page.textContent("#q-count")), "la exprés tiene 24 preguntas");
+  ok(s && s.stage === "quiz" && s.mode === "rapida" && !("sex" in s) && !("age" in s) && !s.prov, "un toque empieza la versión rápida sin pedir datos (ni sexo, edad o provincia)");
+  ok(/\/ 15/.test(await page.textContent("#q-count")), "la versión rápida tiene 15 preguntas");
   await ctx.close();
 }
 {
@@ -71,7 +71,7 @@ console.log("La pregunta de ejemplo es real");
   await page.click('.ex-scale [data-ex="2"]'); await page.waitForSelector("#v-quiz:not([hidden])");
   const s = await saved(page);
   ok(s.ans.C01 === 2 && s.order[0] === "C01" && s.idx === 1, "responderla guarda la respuesta y empieza el test en la siguiente");
-  ok((await page.textContent("#q-count")).startsWith("02") && s.order.length === 24, "el test sigue en la pregunta 2 de 24");
+  ok((await page.textContent("#q-count")).startsWith("02") && s.order.length === 15, "el test sigue en la pregunta 2 de 15");
   await page.click("#q-prev");
   ok(await page.isChecked('#q-main input[value="2"]'), "al volver atrás se ve la respuesta de la portada");
   // Con un test a medias, la respuesta se añade a ese test en lugar de borrarlo

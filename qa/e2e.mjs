@@ -32,6 +32,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.waitForSelector("#start-btn:not([disabled])");
   ok(!(await overflow(page)), "inicio sin scroll horizontal (390px)");
   await page.screenshot({ path: OUT + "m-home.png", fullPage: true });
+  await page.check("#f-mode-expres", { force: true });
   await page.click("#start-btn");
   await page.waitForSelector("#v-quiz:not([hidden])");
   const n = Number((await page.textContent("#q-count")).split("/")[1]);
