@@ -23,7 +23,8 @@ const PROFILES = {
   "Liberal en lo personal e intervencionista en economía": { eco: -1, soc: -1, lib: -1 },
   "Moderado / mixto": { eco: 0.5, soc: -0.5, lib: 0.5, ter: 0, inm: -0.5, eur: -0.5, amb: 0.5 }
 };
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
 const page = await ctx.newPage();
 page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });

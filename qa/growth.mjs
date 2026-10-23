@@ -15,7 +15,8 @@ const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode
 const asParty = (pid) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || 3]));
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 const newPage = async (w = 1100) => { const ctx = await browser.newContext({ viewport: { width: w, height: 900 } }); const page = await ctx.newPage();
   page.on("pageerror", (e) => errors.push(String(e))); page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); }); return { ctx, page }; };
 

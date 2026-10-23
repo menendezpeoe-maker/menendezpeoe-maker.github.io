@@ -13,7 +13,8 @@ const errors = [];
 const fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 async function newPage(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: opts.w || 390, height: opts.h || 860 }, colorScheme: opts.dark ? "dark" : "light", reducedMotion: opts.rm ? "reduce" : "no-preference", hasTouch: !!opts.touch });
   const page = await ctx.newPage();

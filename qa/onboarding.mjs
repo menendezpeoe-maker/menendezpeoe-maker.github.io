@@ -11,7 +11,8 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) { fails.push(msg); console.log("  ✗", msg); } else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 const view = (page) => page.evaluate(() => ["home", "quiz", "prios", "results"].find((v) => !document.querySelector(`#v-${v}`).hidden));
 const saved = (page) => page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.v2")));
 async function open({ w = 390, h = 844, dark = false, st = null } = {}) {

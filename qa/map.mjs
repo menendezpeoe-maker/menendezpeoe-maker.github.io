@@ -16,7 +16,8 @@ const state = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode
 const asParty = (pid) => Object.fromEntries(bank.questions.map((q) => [q.id, q.pos[pid] || 3]));
 const ab = Object.fromEntries(pd.parties.map((p) => [p.id, p.ab]));
 
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 async function open(st, w = 1100, tag = "") {
   const ctx = await browser.newContext({ viewport: { width: w, height: 900 } });
   const page = await ctx.newPage();

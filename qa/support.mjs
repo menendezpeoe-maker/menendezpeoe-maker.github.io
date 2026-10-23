@@ -18,7 +18,8 @@ const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓"
 const ans = Object.fromEntries(bank.questions.map((q) => [q.id, q.pos.psoe || 3]));
 const st = { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: bank.questions.map((q) => q.id), idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1 };
 
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 async function open({ w = 1100, cfg = null, apple = false, tag = "" } = {}) {
   const ctx = await browser.newContext({ viewport: { width: w, height: 900 } });
   if (apple) await ctx.addInitScript(() => { window.ApplePaySession = { canMakePayments: () => true }; });

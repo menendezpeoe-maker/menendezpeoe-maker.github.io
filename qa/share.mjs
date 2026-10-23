@@ -8,7 +8,8 @@ const OUT = new URL("./shots/", import.meta.url).pathname;
 const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import.meta.url)));
 const fails = [], errors = [];
 const ok = (c, m) => (c ? console.log("  ✓", m) : fails.push(m));
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 
 for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 900, tag: "escritorio" }]) {
   console.log(vp.tag);

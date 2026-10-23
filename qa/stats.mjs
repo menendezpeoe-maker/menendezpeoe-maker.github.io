@@ -14,7 +14,8 @@ const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
 const done = { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans: Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]])), imp: {}, prios: [], stage: "done", t: 1 };
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 
 async function open({ code = CODE, real = false } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 }, bypassCSP: !real });

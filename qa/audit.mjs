@@ -10,7 +10,8 @@ const errors = [], fails = [], notes = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
 const done = (ans, o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1, ...o });
-const browser = await chromium.launch();
+import { withFullAnalysis } from "./_full.mjs";
+const browser = withFullAnalysis(await chromium.launch());
 async function ctxPage(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: opts.w || 1100, height: 900 }, colorScheme: opts.dark ? "dark" : "light", bypassCSP: !!opts.axe });
   const page = await ctx.newPage();
