@@ -2,6 +2,7 @@
 // página de prensa. Se generan con los mismos datos que el test (data/*.json): nada se escribe a mano, las
 // posturas estimadas se marcan como tales y las desconocidas no se rellenan.
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { VOTAR } from "./src/votar.src.mjs";
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -54,7 +55,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -206,6 +207,35 @@ ${cta("Responde tú y compara")}
 <ul class="sp-cards">${B.areas.map((a) => `<li><a href="/temas/${slug(a.name)}/"><span class="al">${esc(a.letter)}</span><span><b>${esc(a.name)}</b><span class="small muted">${B.questions.filter((q) => q.area === a.id).length} preguntas: ${esc(B.questions.filter((q) => q.area === a.id).slice(0, 3).map((q) => q.short.toLowerCase()).join(", "))}…</span></span></a></li>`).join("")}</ul>`
   });
 
+  // ── Guía para votar y calendario oficial: solo datos de fuentes oficiales, con su enlace (src/votar.src.mjs)
+  const srcA = (f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer">${esc(f.label)}</a>`;
+  const reviewed = fmtDate(VOTAR.revisado);
+  const officialNote = `<p class="small muted">Información de fuentes oficiales, revisada el ${esc(reviewed)}. Ante cualquier duda, manda lo que digan la Junta Electoral Central y el Ministerio del Interior. Esta guía no sustituye a sus comunicaciones.</p>`;
+  page({
+    path: "/votar/",
+    title: "Cómo votar el 29N: documentos, dónde votar y voto por correo · Test 29N",
+    desc: "Guía práctica para votar en las elecciones generales del 29 de noviembre de 2026: quién puede votar, qué llevar, dónde te toca, voto por correo, desde el extranjero y accesible. Con enlaces oficiales.",
+    crumbs: [{ name: "Cómo votar", url: `${SITE}votar/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Cómo votar el 29N</h1>
+  <p class="lede">Lo esencial para votar, explicado de forma sencilla y con el enlace a la fuente oficial de cada dato. Las fechas completas están en el <a href="/calendario/">calendario electoral</a>.</p></header>
+${officialNote}
+<nav class="sp-toc small" aria-label="En esta página">${VOTAR.secciones.map((x) => `<a href="#${x.id}">${esc(x.titulo)}</a>`).join(" · ")}</nav>
+${VOTAR.secciones.map((x) => `<section id="${x.id}" aria-labelledby="h-${x.id}"><h2 class="h2" id="h-${x.id}">${esc(x.titulo)}</h2>${x.pasos.map((t) => `<p>${esc(t)}</p>`).join("")}${x.fuentes.length ? `<p class="small muted">Fuente oficial: ${x.fuentes.map(srcA).join(" · ")}</p>` : ""}</section>`).join("")}
+${cta("¿Aún no sabes con quién coincides?")}`
+  });
+  page({
+    path: "/calendario/",
+    title: "Calendario electoral del 29N: fechas oficiales · Test 29N",
+    desc: "Fechas oficiales de las elecciones generales del 29 de noviembre de 2026: voto por correo, candidaturas, campaña, jornada de reflexión, votación y constitución de las Cortes, con su fuente.",
+    crumbs: [{ name: "Calendario electoral", url: `${SITE}calendario/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Calendario electoral del 29N</h1>
+  <p class="lede">Las fechas del proceso, tal y como las fijan el real decreto de convocatoria y la normativa electoral. Cada una enlaza a su fuente oficial.</p></header>
+${officialNote}
+<ol class="cal">${VOTAR.calendario.map((c) => `<li${c.fecha < VOTAR.revisado ? ' class="past"' : ""}><time datetime="${esc(c.fecha)}">${esc(c.cuando)}</time><div><b>${esc(c.hito)}</b>${c.nota ? `<span class="small">${esc(c.nota)}</span>` : ""}<span class="small muted">Fuente: ${srcA(c.fuente)}</span></div></li>`).join("")}</ol>
+<p class="small muted">Más detalles prácticos en <a href="/votar/">Cómo votar el 29N</a>.</p>
+${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
+  });
+
   // ── Prensa y difusión
   const nSrc = B.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
   const embed = `<a href="${SITE}" title="Test 29N: test político para las elecciones del 29N"><img src="${SITE}boton-test29n.png" alt="Haz el Test 29N: ¿con qué partido coincides el 29N?" width="320" height="100"></a>`;
@@ -227,6 +257,8 @@ ${cta("Responde tú y compara")}
   <li><b>Privado</b>: sin registro ni cookies. Las respuestas no salen del navegador de cada persona.</li>
   <li><b>Independiente</b>: sin vínculo con ningún partido ni institución. No es una recomendación de voto.</li>
 </ul></section>
+<section aria-labelledby="h-guia"><h2 class="h2" id="h-guia">Guía para votar y calendario</h2>
+<p>Para acompañar una noticia o un vídeo sobre las elecciones: <a href="/votar/">Cómo votar el 29N</a> (documentos, dónde votar, voto por correo, desde el extranjero y accesible) y el <a href="/calendario/">calendario electoral</a>, con enlaces a las fuentes oficiales.</p></section>
 <section aria-labelledby="h-desc"><h2 class="h2" id="h-desc">Descripción para citarlo</h2>
 <p class="dinfo"><b>Corta:</b> Test 29N, un test político gratuito para las elecciones generales del 29N que compara tus respuestas con las candidaturas de tu provincia, tema a tema.</p>
 <p class="dinfo"><b>Larga:</b> El Test 29N plantea ${B.questions.length} cuestiones de la actualidad política española con contexto neutral y calcula, pregunta a pregunta, cuánto coinciden tus respuestas con las posturas de las candidaturas de tu provincia. Muestra tu perfil en siete dimensiones, explica qué respuestas pesan más y enlaza las fuentes de las posturas. Es gratuito, no pide registro y no guarda las respuestas fuera del navegador.</p></section>
