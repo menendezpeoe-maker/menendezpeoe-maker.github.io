@@ -4,7 +4,7 @@
 
 **Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:
 1. ~~Cerrar T9, parte 1~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
-2. **T2** (test rápido y resumen de resultados).
+2. ~~T2~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 3. **T3** (guía para votar y calendario; fecha ya verificada: Real Decreto 806/2026, BOE del 6 oct, elecciones el 29 nov, campaña del 13 al 27 nov).
 4. La tanda del día.
 5. **T4** y el resto de T9 (`/comparar/`, `/datos/`, `/insertar/`) pasan a R1 y R2.
@@ -14,7 +14,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 **Estado de los bloques**
 - T1 · Portada y entrada: completada y verificada (web real, 19 oct).
 - T9 · Buscadores y datos abiertos: parte 1 completada y verificada (web real, 23 oct). Pendiente: `/comparar/`, `/datos/` e `/insertar/` (pasan a R1).
-- T2, T3, T4: pendientes (no se ejecutaron por el límite de uso). T10, T5–T8, T11: pendientes.
+- T2 · Test rápido y resultados: completada y verificada (web real, 23 oct).
+- T3, T4: pendientes (no se ejecutaron por el límite de uso). T10, T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -32,6 +33,15 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 23 oct 2026 · T2 · Test rápido y resultados
+- **Versión rápida (15 preguntas, unos 3 minutos), ahora la de por defecto:** una pregunta núcleo de cada una de las 12 áreas más 3 elegidas por cuánto distinguen entre partidos. Cubre las 7 dimensiones, con 6 afirmaciones en un sentido y 7 en el otro. Es fija (`quickOrder()` en `assets/papeleta.js`). «Afinar» lleva a la exprés conservando las respuestas. Código `r` en los enlaces compartidos; los antiguos siguen funcionando.
+- **Perfiles simulados (`qa/quick.mjs`):** respondiendo exactamente como cada partido, sale primero en 25 de 25 casos. Con ruido (3 de las 15 respuestas movidas un punto, 12 partidos × 3 variantes), en 34 de 36. Los 2 fallos son Podemos, que sale detrás de Frente Amplio, porque son posturas muy parecidas.
+- **Resumen en una pantalla:** mayor coincidencia y porcentaje, 3 coincidencias y 3 choques, perfil en una frase, solidez, «Compartir» y «Reta a un amigo» (enlace con las respuestas, con aviso). Todo cabe en la primera pantalla a 390 × 844 y a 1280 × 800. El resto queda plegado tras «Ver el análisis completo»: se despliega al pulsarlo o desde la navegación interna, y se recuerda (`papeleta29n.prefs.full`). El mapa pasa a la parte avanzada, detrás del comparador.
+- **Tarjeta para compartir:** revisada en formato historia; no muestra respuestas.
+- **Pruebas:** nuevas `qa/quick.mjs` y `qa/summary.mjs`. `qa/_full.mjs` hace que las baterías que revisan el análisis completo lo abran desplegado. Las 15 baterías pasan en local y en https://test29n.es.
+- **Revisión:** revisor independiente; aplicados el aviso de privacidad de «Reta a un amigo», los textos de un resultado compartido, el mensaje duplicado y las descripciones de las versiones.
+- **Pendiente menor:** en el móvil, las listas del resumen muestran solo el tema, sin «Tú: … · Partido: …», para caber en una pantalla. La barra de secciones no indica que se puede desplazar.
 
 ## 23 oct 2026 · T9 (parte 1) · Buscadores
 - **Hecho y verificado en la web real:**
