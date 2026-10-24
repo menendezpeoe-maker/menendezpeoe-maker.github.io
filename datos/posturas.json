@@ -90,10 +90,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-11"
   },
   {
    "pregunta_id": "A01",
@@ -144,10 +144,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-11"
   },
   {
    "pregunta_id": "A01",
@@ -864,10 +864,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://valenciaplaza.com/valenciaplaza/unidas-podemos-defiende-en-el-congreso-un-nuevo-impuesto-sobre-fortunas-de-mas-de-10-millones",
+   "fuente_titulo": "Valencia Plaza (Europa Press), proposición de ley de Unidas Podemos sobre grandes fortunas, 05/06/2022",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-06-05"
   },
   {
    "pregunta_id": "A03",
@@ -918,10 +918,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A03",
@@ -1242,10 +1242,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "A04",
@@ -1638,10 +1638,10 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elsaltodiario.com/pensiones/gobierno-pp-sacaran-adelante-una-reforma-incentivar-trabajo-72-anos",
+   "fuente_titulo": "El Salto, votación de la reforma de jubilación flexible, 22/01/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-01-22"
   },
   {
    "pregunta_id": "A05",
@@ -1690,12 +1690,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "A05",
@@ -2574,10 +2574,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias/economia/economia--podemos-exige-subir-ya-el-salario-minimo-a-1800-euros-al-mes-y-montero-promete-que-seguira-creciendo--21739276.html",
+   "fuente_titulo": "Bolsamanía (Europa Press), Belarra en la sesión de control, 18/02/2026",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-02-18"
   },
   {
    "pregunta_id": "A08",
@@ -2626,12 +2626,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A08",
@@ -2948,14 +2948,14 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
+   "nota": "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones.",
+   "fuente_url": "https://forbes.es/ultima-hora/332101/economia-belarra-urge-a-elevar-el-control-publico-de-telefonica-y-plantea-que-sepi-se-haga-con-una-participacion-del-10/",
+   "fuente_titulo": "Forbes España (Europa Press), declaraciones de Ione Belarra, 06/09/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-09-06"
   },
   {
    "pregunta_id": "A09",
@@ -3348,10 +3348,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.que.es/2021/03/23/congreso-rechaza-eliminar-impuesto-sucesiones/",
+   "fuente_titulo": "Qué!, Comisión de Hacienda del Congreso, 23/03/2021",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-03-23"
   },
   {
    "pregunta_id": "A10",
@@ -3400,12 +3400,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "A10",
@@ -4122,10 +4122,10 @@
    "postura_texto": "Claramente B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2025/01/15/podemos-arremete-contra-la-ministra-rentista-y-exige-bajar-los-alquileres-para-apoyar-los-presupuestos/",
+   "fuente_titulo": "El Independiente, exigencias de Podemos en vivienda, 15/01/2025",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-01-15"
   },
   {
    "pregunta_id": "B02",
@@ -4174,12 +4174,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "Más bien B: Regular los precios y ampliar la vivienda pública",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B02",
@@ -4518,10 +4518,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/",
+   "fuente_titulo": "El Independiente, votación de la ley antiokupas del PP, 29/11/2022",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-11-29"
   },
   {
    "pregunta_id": "B03",
@@ -4570,7 +4570,7 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -4914,10 +4914,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias_amp/empresas/economia--podemos-exige-al-gobierno-pagar-el-alquiler-de-los-desahuciados-por-la-caida-del-escudo-social--21590323.html",
+   "fuente_titulo": "Bolsamanía (Europa Press), rueda de prensa de Pablo Fernández, 02/02/2026",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-02-02"
   },
   {
    "pregunta_id": "B04",
@@ -4966,12 +4966,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B04",
@@ -5292,10 +5292,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/",
+   "fuente_titulo": "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-16"
   },
   {
    "pregunta_id": "B05",
@@ -5346,10 +5346,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B05",
@@ -5688,10 +5688,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias/empresas/economia--podemos-tilda-de-regalo-el-paquete-fiscal-de-vivienda-del-psoe-y-rodriguez-defiende-la-regulacion--19828926.html",
+   "fuente_titulo": "Bolsamanía (Europa Press), Belarra en el Congreso, 28/05/2025",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-05-28"
   },
   {
    "pregunta_id": "B06",
@@ -5740,12 +5740,12 @@
    "partido": "Esquerra Republicana",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B06",
@@ -6084,10 +6084,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/",
+   "fuente_titulo": "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-16"
   },
   {
    "pregunta_id": "B07",
@@ -6136,12 +6136,12 @@
    "partido": "Esquerra Republicana",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B07",
@@ -6462,10 +6462,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "B08",
@@ -6512,14 +6512,14 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada.",
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "B08",
@@ -6910,12 +6910,12 @@
    "partido": "Podemos",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2023-05-09/podemos-psoe-electoralismo-dialogo-avanes/",
+   "fuente_titulo": "The Objective, declaraciones de Pablo Echenique, 09/05/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-05-09"
   },
   {
    "pregunta_id": "B09",
@@ -7754,8 +7754,8 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -8190,10 +8190,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C03",
@@ -8546,14 +8546,14 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
+   "fuente_url": "https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/",
+   "fuente_titulo": "Onda Vasca, declaraciones de Ione Belarra en Hernani, 23/06/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-06-24"
   },
   {
    "pregunta_id": "C04",
@@ -8946,10 +8946,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/",
+   "fuente_titulo": "Onda Vasca, declaraciones de Ione Belarra en Hernani, 23/06/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-06-24"
   },
   {
    "pregunta_id": "C05",
@@ -9000,10 +9000,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C05",
@@ -9466,12 +9466,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C06",
@@ -9862,12 +9862,12 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C07",
@@ -10168,12 +10168,12 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C08",
@@ -11372,8 +11372,8 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -11444,14 +11444,14 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "La ponencia contempla listas desbloqueadas para que el votante ordene a los candidatos.",
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "D02",
@@ -11646,10 +11646,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/",
+   "fuente_titulo": "El Independiente, reacción al pacto del CGPJ, 25/06/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-06-25"
   },
   {
    "pregunta_id": "D03",
@@ -11698,7 +11698,7 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -12024,10 +12024,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
+   "fuente_titulo": "Deia, aprobación definitiva de la ley de amnistía, 30/05/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-05-30"
   },
   {
    "pregunta_id": "D04",
@@ -12078,10 +12078,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D04",
@@ -12472,12 +12472,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D05",
@@ -13068,10 +13068,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.noticiasdenavarra.com/politica/2024/06/16/miles-personas-piden-abolir-monarquia-8365299.html",
+   "fuente_titulo": "Noticias de Navarra (Europa Press), marcha republicana en Madrid, 16/06/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-06-16"
   },
   {
    "pregunta_id": "D07",
@@ -13122,10 +13122,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D07",
@@ -13716,10 +13716,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2023-01-23/podemos-iu-feijoo-analfabeto/",
+   "fuente_titulo": "The Objective (Europa Press), reacción a la propuesta de Feijóo, 23/01/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-01-23"
   },
   {
    "pregunta_id": "D09",
@@ -13786,7 +13786,7 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -14508,10 +14508,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.ondavasca.com/podemos-rectifica-y-votara-en-contra-de-ampliar-la-prision-permanente-revisable/",
+   "fuente_titulo": "Onda Vasca, votación sobre ampliar la prisión permanente revisable, 29/03/2022",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-03-29"
   },
   {
    "pregunta_id": "E02",
@@ -14562,10 +14562,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E02",
@@ -14886,10 +14886,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elsaltodiario.com/leyes-mordaza/diaz-anuncia-un-acuerdo-psoe-derogar-ley-mordaza",
+   "fuente_titulo": "El Salto, reacción al anuncio de reforma de la ley mordaza, 16/07/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-07-16"
   },
   {
    "pregunta_id": "E03",
@@ -14940,10 +14940,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E03",
@@ -15316,7 +15316,7 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -15984,10 +15984,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.noticiasdenavarra.com/politica/2021/06/16/congreso-da-luz-verde-derogacion-2133997.html",
+   "fuente_titulo": "Noticias de Navarra, toma en consideración en el Congreso, 15/06/2021",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-06-16"
   },
   {
    "pregunta_id": "E06",
@@ -16038,10 +16038,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E06",
@@ -16740,10 +16740,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2022/11/02/tension-entre-vox-e-irene-montero-en-el-congreso-si-una-victima-no-tiene-el-asesino-adecuado-la-ignoran/amp/",
+   "fuente_titulo": "El Independiente, comparecencia de Irene Montero, 02/11/2022",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2022-11-02"
   },
   {
    "pregunta_id": "E08",
@@ -16812,10 +16812,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E08",
@@ -17136,10 +17136,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "E09",
@@ -17190,10 +17190,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/",
+   "fuente_titulo": "The Objective, votación de la regulación del cannabis, 22/02/2023",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-02-22"
   },
   {
    "pregunta_id": "E09",
@@ -17910,10 +17910,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/",
+   "fuente_titulo": "El Independiente, pacto Gobierno-Podemos de regularización, 26/01/2026",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2026-01-26"
   },
   {
    "pregunta_id": "F02",
@@ -17964,10 +17964,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F02",
@@ -18358,7 +18358,7 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -18754,12 +18754,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F04",
@@ -19600,12 +19600,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F06",
@@ -21958,12 +21958,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G03",
@@ -22716,10 +22716,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/",
+   "fuente_titulo": "Forbes España (Europa Press), moción de Podemos en el Congreso, 13/05/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-05-13"
   },
   {
    "pregunta_id": "G05",
@@ -23184,10 +23184,10 @@
    "postura_texto": "Claramente B: Mejorar las Cercanías y los trenes regionales",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G06",
@@ -23576,8 +23576,8 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -24030,10 +24030,10 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "G09",
@@ -24100,12 +24100,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "Más bien B: Acelerar las renovables invirtiendo en redes y almacenamiento",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "G09",
@@ -24854,8 +24854,8 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -24928,12 +24928,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H02",
@@ -25268,8 +25268,8 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -25650,10 +25650,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elsaltodiario.com/congreso-de-los-diputados/podemos-aprobacion-embargo-armas-israel",
+   "fuente_titulo": "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "H04",
@@ -25704,10 +25704,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H04",
@@ -26028,10 +26028,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2025/11/12/sumar-podemos-y-bildu-exigen-a-sanchez-que-rectifique-en-el-sahara-deje-de-estar-plegado-a-la-dictadura-marroqui/amp/",
+   "fuente_titulo": "El Independiente, sesión de control en el Congreso, 12/11/2025",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-11-12"
   },
   {
    "pregunta_id": "H05",
@@ -26082,10 +26082,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H05",
@@ -26456,14 +26456,14 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
+   "nota": "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN.",
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "H06",
@@ -26836,12 +26836,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H07",
@@ -27158,8 +27158,8 @@
    "opcion_b": "",
    "partido_id": "pod",
    "partido": "Podemos",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -27450,10 +27450,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "H09",
@@ -28152,10 +28152,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "I02",
@@ -28204,12 +28204,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I02",
@@ -29106,10 +29106,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I05",
@@ -29664,10 +29664,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I07",
@@ -29988,10 +29988,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2026/07/14/ione-belarra-tauromaquia-uci/",
+   "fuente_titulo": "El Independiente, rueda de prensa de Ione Belarra, 14/07/2026",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-07-14"
   },
   {
    "pregunta_id": "I08",
@@ -30060,10 +30060,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I08",
@@ -30528,10 +30528,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I09",
@@ -31248,10 +31248,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html",
+   "fuente_titulo": "Redacción Médica, proposición de ley de Podemos, 01/04/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-04-01"
   },
   {
    "pregunta_id": "J02",
@@ -31300,12 +31300,12 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "J02",
@@ -31966,12 +31966,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J04",
@@ -32580,10 +32580,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html",
+   "fuente_titulo": "Redacción Médica, proposición de ley de Podemos, 01/04/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-04-01"
   },
   {
    "pregunta_id": "J07",
@@ -32632,12 +32632,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "J07",
@@ -32886,10 +32886,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J08",
@@ -33298,12 +33298,12 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "K01",
@@ -33748,12 +33748,12 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K02",
@@ -34488,10 +34488,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+   "fuente_titulo": "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-03"
   },
   {
    "pregunta_id": "K04",
@@ -34920,10 +34920,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "K05",
@@ -36176,14 +36176,14 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
+   "nota": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua.",
+   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
+   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2025-03"
   },
   {
    "pregunta_id": "K08",
@@ -36828,10 +36828,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
+   "fuente_titulo": "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-06-02"
   },
   {
    "pregunta_id": "L02",
@@ -36900,10 +36900,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
+   "fuente_titulo": "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-03-18"
   },
   {
    "pregunta_id": "L02",
@@ -37224,10 +37224,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
+   "fuente_titulo": "BOE, Ley 4/2023, de 28 de febrero (ley trans)",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2023-02-28"
   },
   {
    "pregunta_id": "L03",
@@ -37278,10 +37278,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L03",
@@ -37602,10 +37602,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldebate.com/sociedad/20230329/psoe-podemos-contra-vientres-alquiler-mientras-pp-no-define-posicion_104319.html",
+   "fuente_titulo": "El Debate, declaraciones de Irene Montero, 29/03/2023",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-03-29"
   },
   {
    "pregunta_id": "L04",
@@ -37908,10 +37908,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://diariodeavisos.elespanol.com/2021/10/podemos-pide-eliminar-los-privilegios-de-la-iglesia/",
+   "fuente_titulo": "Diario de Avisos (El Español), proposición no de ley de Unidas Podemos, 15/10/2021",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-10-15"
   },
   {
    "pregunta_id": "L05",
@@ -37960,12 +37960,12 @@
    "partido": "Esquerra Republicana",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L05",
@@ -38790,10 +38790,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2024/06/27/el-congreso-aprueba-la-ley-de-paridad-que-no-limita-la-presencia-institucional-de-mujeres-y-que-cuela-el-techo-de-gasto/amp/",
+   "fuente_titulo": "El Independiente, aprobación de la ley de paridad en el Congreso, 27/06/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-27"
   },
   {
    "pregunta_id": "L08",
@@ -38860,12 +38860,12 @@
    "partido": "Esquerra Republicana",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
+   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L08",
@@ -39238,12 +39238,12 @@
    "partido": "Esquerra Republicana",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html",
+   "fuente_titulo": "El Español, votación de la ley de Vox sobre el burka, 17/02/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-02-17"
   },
   {
    "pregunta_id": "L09",
