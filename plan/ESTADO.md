@@ -9,7 +9,7 @@
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
 6. ~~T10~~ **Hecho y publicado el 24 oct.**
-7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Siguiente: T6–T8 y T11 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
+7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida). Siguiente: T6–T8 y T11 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -38,6 +38,19 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T5 (ampliación) · Todas las posturas de PSOE y PP revisadas
+- **Petición del titular:** buscar fuente para todas las posturas de PSOE y PP que no la tenían (137, casi todas de prioridad 3). Cuatro subagentes, de dos en dos, con revisión una a una.
+- **Criterio aplicado (uniforme):** se aceptan programas de 2023 a 2026, la ponencia política del PP de 2025, leyes en vigor y votaciones desde 2021. Se descartan declaraciones anteriores a 2021, fuentes indirectas y evidencias solo autonómicas. Una votación en las Cortes es «parlamento» aunque se cite a través de la prensa.
+- **Resultado:** 96 fuentes nuevas (50 del PSOE, 46 del PP). Total de la web: 131 → 228. Los 55 enlaces únicos nuevos responden con 200.
+  - **PSOE:** 92 de 107 posturas con fuente; 12 estimadas.
+  - **PP:** 81 de 107 posturas con fuente; 21 estimadas.
+- **23 posturas ajustadas** (casi todas en un punto), por una fuente oficial reciente; cada una con su nota en `NOTES`:
+  - **PSOE:** F06 3→4, G02 1→2, G08 3→4, H08 5→4, I09 3→4, J05 3→4, J06 2→3, J07 3→2, K06 3→4, K08 4→3.
+  - **PP:** A09 3→4, C08 2→4, F04 3→4, G02 3→2, G06 2→3, H05 3→4, H07 3→4, H09 4→3, I03 5→4, K08 2→3, L04 2→3, L06 2→4. A07 4→3 sigue estimada (solo hay una fuente de 2012, que apunta en contra).
+- **Sin cambios por ser evidencia antigua o indirecta**, aunque los subagentes proponían cambiarlas: PSOE C06, D02, D05, J02 (fuentes de 2016–2018) y F05; PP A05, D05, F02 y K02.
+- **Propuestas destacadas del PP actualizadas** al «Mi contrato con España» (19/10/2026) y al argumentario de vivienda (octubre de 2026): un millón de viviendas con nueva ley del suelo; un 60 % menos de IVA e ITP para jóvenes compradores; desalojos en 48 horas (no 24); vías legales de entrada y prohibición por ley de las regularizaciones colectivas; planes de seguridad y económico para Ceuta y Melilla.
+- **Arreglo del test rápido:** con las nuevas posturas, la selección de 15 preguntas quedaba desequilibrada (5 afirmaciones en un sentido y 8 en el otro). `quickOrder()` impone ahora el equilibrio. Se llegó a publicar unos minutos con ese desequilibrio porque el comando de publicación no comprobaba el resultado de las pruebas; ahora sí lo hace.
 
 ## 24 oct 2026 · T5 · Fuentes de las posturas de PSOE y PP
 - **Alcance:** las 71 posturas de prioridad 1 y 2 sin fuente de PSOE (37) y PP (34), más las dos discutidas del PSOE (E06 y H01). Investigadas por dos subagentes y revisadas una a una. La prioridad 3 queda para R1/R2.
