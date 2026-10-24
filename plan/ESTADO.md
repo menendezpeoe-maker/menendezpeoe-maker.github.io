@@ -7,7 +7,7 @@
 2. ~~T2~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
-5. **T4** (provincias, simulador y glosario). El resto de T9 (`/comparar/`, `/datos/`, `/insertar/`) ya está hecho y publicado.
+5. ~~T4~~ **Hecho y publicado el 24 oct.** Siguiente: la tanda del día (T10) y después T5–T8 y T11 según el calendario.
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -16,7 +16,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T9 · Buscadores y datos abiertos: completada y verificada (web real, 23 oct).
 - T2 · Test rápido y resultados: completada y verificada (web real, 23 oct).
 - T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
-- T4: pendiente. T10, T5–T8, T11: pendientes.
+- T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct). T10, T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -34,6 +34,14 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T4 · Provincias, simulador y glosario
+- **52 páginas `/provincias/<id>/` y su índice:** diputados según el anexo del Real Decreto 806/2026 (suman 350, en `src/escanos.src.mjs`), senadores según el art. 3.2 del real decreto y la LOREG (con la Ley Orgánica 2/2026, Ibiza y Formentera eligen 1 senador cada una), las candidaturas que se presentan según los datos del test y un enlace al simulador.
+  - Revisar cuando el BOE publique las candidaturas proclamadas (3 nov): D21, JMM y Soria ¡Ya! siguen «por confirmar». Tarea de S1.
+- **Simulador `/escanos/`:** D'Hondt con barrera del 3 % de los votos válidos (incluido el voto en blanco). Desempate por más votos y, si también empatan en votos, aviso de que la ley lo resuelve por sorteo (art. 163.1.d). Sin encuestas ni estimaciones; botón con el ejemplo del art. 163 de la LOREG.
+- **Glosario `/glosario/`:** 19 términos con su artículo de la LOREG o de la Constitución (`src/glosario.src.mjs`).
+- **Revisión legal independiente** contra la LOREG consolidada, la Constitución y el real decreto. Corregido: senadores de las islas, artículo del desempate, definiciones de escaño, mesa, jornada de reflexión, voto nulo y voto por correo, y la frase sobre el reparto por población.
+- **Pruebas:** nueva `qa/territorio.mjs`. Las 18 baterías pasan en local y en https://test29n.es. IndexNow: 200 OK, 220 URL.
 
 ## 23 oct 2026 · T3 y T9 (parte 2)
 - **T3, `/votar/` y `/calendario/`:** datos en `src/votar.src.mjs`, solo de fuentes oficiales abiertas y comprobadas: Real Decreto 806/2026, calendario electoral de la JEC para el 29N, Oficina del Censo Electoral (INE), Correos, Exteriores, LOREG y RD 1612/2007. Cubre quién vota y qué llevar, dónde votar, voto por correo, voto desde el extranjero (CERA y ERTA) y voto accesible. El calendario tiene 20 fechas, cada una con su fuente. Enlaces en el pie de todas las páginas, en `/prensa/` y en el sitemap. Prueba: `qa/votar.mjs`.
