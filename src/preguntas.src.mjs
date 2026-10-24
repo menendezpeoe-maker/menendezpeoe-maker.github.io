@@ -164,7 +164,7 @@ export const QUESTIONS = [
   text: "La reforma de la financiación autonómica debería dar más recursos a las comunidades que hoy reciben menos por habitante.",
   short: "Más fondos a las comunidades peor financiadas",
   ctx: "El sistema actual se aprobó en 2009 y debía revisarse en 2014; en enero de 2026 el Gobierno propuso un nuevo modelo con unos 21.000 millones más. Entre las comunidades de régimen común, la financiación por habitante ajustado varía en torno a un 30 %: Cantabria o La Rioja reciben más, y la Comunitat Valenciana, Murcia o Andalucía, menos. Igualarla exige más dinero del Estado o quitar a otras, y cada comunidad defiende criterios (población, envejecimiento, dispersión) que la favorecen.",
-  pos: "4 4~ 3~ 4 4~ 3~ 0 4~ 2~ 2~ 0 0 0 0 2~ 2~ 2~ 2~ 5 2~ 2~ 4~ 5~ 4~ 2~ 2~ 0" },
+  pos: "4 4~ 3~ 4 3~ 3~ 0 4~ 2~ 2~ 0 0 0 0 2~ 2~ 2~ 2~ 5 2~ 2~ 4~ 5~ 4~ 2~ 2~ 0" },
 { id: "C03", area: "ter", prio: 2, type: "likert", dim: "ter", dir: 1, lr: 1,
   text: "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
   short: "Recentralizar la educación",
@@ -218,7 +218,7 @@ export const QUESTIONS = [
   text: "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
   short: "Listas desbloqueadas",
   ctx: "Para el Congreso se vota a listas cerradas y bloqueadas: el partido decide el orden y el elector no puede cambiarlo. Con listas desbloqueadas, el votante podría marcar preferencias, como ya ocurre en el Senado, donde se elige a personas concretas. A favor: más vínculo entre representantes y representados; en contra: campañas más personalistas y caras y más luchas internas en los partidos.",
-  pos: "2~ 2~ 3~ 4~ 4~ 5~ 4~ 5 4 2~ 2~ 2~ 2~ 0 2~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
+  pos: "2~ 2~ 3~ 4~ 3~ 5~ 4~ 5 4 2~ 2~ 2~ 2~ 0 2~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
 { id: "D03", area: "ins", prio: 2, type: "likert", dim: null, dir: 0, lr: 1,
   text: "Los propios jueces deberían elegir a la mayoría de los miembros del Consejo General del Poder Judicial.",
   short: "Que los jueces elijan el CGPJ",
@@ -400,7 +400,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
   short: "Prohibir construir en zonas inundables",
   ctx: "La dana de octubre de 2024 causó más de 220 muertos en la provincia de Valencia y puso el foco en viviendas y polígonos construidos en zonas inundables. La normativa ya limita edificar en ellas, pero hay suelos aprobados antes y excepciones. Prohibirlo del todo reduciría los riesgos futuros, pero obligaría a desclasificar suelo e indemnizar, con costes para propietarios y ayuntamientos.",
-  pos: "4 3~ 2~ 4~ 5~ 2~ 4~ 3~ 4~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
+  pos: "4 3~ 2~ 4~ 5~ 2~ 4~ 3~ 3~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
 { id: "G08", area: "ene", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
   short: "Más aprovechamiento del monte contra incendios",
@@ -424,12 +424,12 @@ export const QUESTIONS = [
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
   ctx: "La UE decide sobre comercio, competencia, moneda en la zona euro y buena parte de la agricultura y la regulación económica; impuestos, defensa o sanidad siguen siendo sobre todo nacionales, y muchas decisiones exigen unanimidad. Darle más competencias permitiría a Europa actuar con más peso en el mundo; sus críticos defienden la soberanía nacional y un control democrático más cercano.",
-  pos: "5 4 1 4 2~ 1~ 3~ 5 4 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0" },
+  pos: "5 4 1 4 3~ 1~ 3~ 5 4 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0" },
 { id: "H03", area: "ext", prio: 3, type: "likert", dim: "eur", dir: 1, lr: 0,
   text: "Las decisiones importantes de la UE deberían seguir exigiendo unanimidad, para que cada país conserve su derecho de veto.",
   short: "Mantener el veto de cada país en la UE",
   ctx: "En política exterior, defensa, impuestos o ampliación, la UE decide por unanimidad, de modo que un solo país puede bloquear una decisión, como ha hecho Hungría con la ayuda a Ucrania. Pasar a la mayoría cualificada agilizaría las decisiones; sus críticos temen que los países grandes impongan su criterio y que se pierda soberanía en asuntos sensibles.",
-  pos: "1 2~ 5 2 4~ 5~ 0 1~ 2~ 3~ 1~ 3~ 2~ 2~ 4~ 2~ 3~ 4~ 2~ 3~ 0 3~ 4~ 0 0 0 0" },
+  pos: "1 2~ 5 2 3~ 5~ 0 1~ 2~ 3~ 1~ 3~ 2~ 2~ 4~ 2~ 3~ 4~ 2~ 3~ 0 3~ 4~ 0 0 0 0" },
 { id: "H04", area: "ext", prio: 2, type: "likert", dim: null, dir: 0, lr: -1,
   text: "España debería mantener el embargo de armas a Israel.",
   short: "Embargo de armas a Israel",
@@ -455,7 +455,7 @@ export const QUESTIONS = [
   text: "España debería estrechar sus relaciones comerciales con China, aunque genere tensiones con Estados Unidos.",
   short: "Más comercio con China",
   ctx: "China es el principal proveedor de España fuera de la UE, con un gran déficit comercial, y el presidente del Gobierno la ha visitado varias veces para atraer inversiones como fábricas de baterías y coches eléctricos. Con los aranceles de EE. UU., unos ven una oportunidad para diversificar; otros advierten de la dependencia tecnológica, la competencia con la industria europea y las tensiones con Washington.",
-  pos: "4 2 1 3 4~ 1~ 0 2~ 3~ 3~ 3~ 3~ 2~ 0 3~ 0 0 0 0 0 0 0 0 0 0 0 0" },
+  pos: "4 2 1 3 3~ 1~ 0 2~ 3~ 3~ 3~ 3~ 2~ 0 3~ 0 0 0 0 0 0 0 0 0 0 0 0" },
 { id: "H09", area: "ext", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
   short: "Centros de asilo fuera de la UE",
@@ -839,7 +839,7 @@ export const SOURCES = {
     vox: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Veto de PP, Vox y Junts a la reducción de jornada (10-9-2025)", "parlamento", "2025-09-10"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7", "Programa electoral de Sumar de 2023, p. 7", "programa", "2023-07"],
     pod: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025", "parlamento", "2025-09-11"],
-    erc: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "El Congreso tumba la reducción de jornada laboral al prosperar el veto de PP, Vox y Junts", "parlamento", "2025-09-10"]
+    erc: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025", "parlamento", "2025-09-11"]
   },
   A02: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -863,7 +863,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74", "Programa electoral de Vox de 2023, medida 146", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"]
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"]
   },
   A05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -956,7 +956,7 @@ export const SOURCES = {
     pp: ["https://www.vozpopuli.com/economia/juan-bravo-titular-de-vivienda-del-pp-planeamos-un-fondo-publico-privado-de-15000-millones.html", "Vozpópuli, entrevista a Juan Bravo, 02/11/2025", "declaracion", "2025-11-02"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41", "Programa electoral de Vox de 2023, medida 69", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B09: {
@@ -989,14 +989,14 @@ export const SOURCES = {
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8", "Programa electoral de Vox de 2023, medida 1", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120", "Programa electoral de Sumar de 2023, p. 120", "programa", "2023-07"],
-    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 24/06/2023", "declaracion", "2023-06-24"]
+    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 23/06/2023", "declaracion", "2023-06-24"]
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
     pp: ["https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf", "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)", "declaracion", "2023-07-19"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16", "Programa electoral de Vox de 2023, medida 18", "programa", "2023-07"],
     fa: ["https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html", "Ara, programa de Sumar de 2023", "programa", "2023"],
-    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 24/06/2023", "declaracion", "2023-06-24"],
+    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 23/06/2023", "declaracion", "2023-06-24"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C06: {
@@ -1097,7 +1097,7 @@ export const SOURCES = {
     pp: ["https://www.eldebate.com/espana/20260714/pp-vox-buscan-frenar-intento-socios-sanchez-despenalizar-ofensas-sentimientos-religiosos-injurias-corona_439144.html", "El Debate, enmiendas de totalidad del PP a la ley de Sumar sobre injurias a la Corona, 14/07/2026", "parlamento", "2026-07-14"],
     vox: ["https://theobjective.com/espana/2022-09-29/el-psoe-apoya-a-erc-y-bildu-para-que-la-despenalizacion-del-delito-de-injurias-a-la-corona-siga-adelante-en-el-congreso/", "El PSOE apoya a ERC y Bildu para que la despenalización del delito de injurias a la Corona siga adelante en el Congreso (The Objective)", "parlamento", "2022-09-29"],
     fa: ["https://www.eldiario.es/politica/psoe-sumar-reactivan-despenalizacion-ofensas-sentimientos-religiosos-corona_1_13303774.html", "PSOE y Sumar reactivan la despenalización de las ofensas a los sentimientos religiosos y a la Corona (elDiario.es)", "parlamento", "2026-06-15"],
-    pod: ["https://www.noticiasdenavarra.com/politica/2021/06/16/congreso-da-luz-verde-derogacion-2133997.html", "Noticias de Navarra, toma en consideración en el Congreso, 16/06/2021", "parlamento", "2021-06-16"],
+    pod: ["https://www.noticiasdenavarra.com/politica/2021/06/16/congreso-da-luz-verde-derogacion-2133997.html", "Noticias de Navarra, toma en consideración en el Congreso, 15/06/2021", "parlamento", "2021-06-16"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   E07: {
@@ -1118,8 +1118,8 @@ export const SOURCES = {
     pp: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "The Objective, rechazo en el Congreso de la regulación del cannabis de ERC, 22/02/2023", "parlamento", "2023-02-22"],
     vox: ["https://www.elindependiente.com/espana/2021/10/19/la-ley-del-cannabis-de-errejon-divide-a-la-izquierda-y-enerva-a-vox-quieren-a-los-jovenes-drogados-y-atolondrados/", "La ley del cannabis de Errejón divide a la izquierda y enerva a Vox (El Independiente)", "parlamento", "2021-10-19"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
-    erc: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "PSOE, PP y Vox vuelven a rechazar la regulación del cannabis", "parlamento", "2023-02-22"]
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
+    erc: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "The Objective, votación de la regulación del cannabis, 22/02/2023", "parlamento", "2023-02-22"]
   },
   F01: {
     psoe: ["https://www.diaridetarragona.com/espana/250726/saiz-sobre-regularizacion-migrantes-conscientes-administracion-dar-respuesta.html", "Diari de Tarragona (EFE), declaraciones de la ministra Elma Saiz, 27/01/2026", "gobierno", "2026-01-27"],
@@ -1228,7 +1228,7 @@ export const SOURCES = {
     psoe: ["https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857", "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico", "gobierno", "2025-06"],
     pp: ["https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf", "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)", "declaracion", "2026-04-27"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48", "Programa electoral de Sumar de 2023, p. 48", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   H01: {
@@ -1307,7 +1307,7 @@ export const SOURCES = {
   I02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=160", "Programa electoral de Sumar de 2023, p. 160", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I03: {
@@ -1420,7 +1420,7 @@ export const SOURCES = {
   K05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     fa: ["https://www.eldiario.es/aragon/politica/cha-verdes-equo-piden-eliminar-50-macrogranjas-2030-proteger-salud-clima_1_12678029.html", "elDiario.es, PNL de CHA y Verdes Equo en el grupo Sumar, 12/10/2025", "parlamento", "2025-10-12"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"]
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"]
   },
   K06: {
     psoe: ["https://www.menorca.info/actualidad/nacional/2025/12/13/2530867/acuerda-posibilidades-pesca-para-2026-143-dias-capturas-mediterraneo.html", "Declaraciones de Luis Planas tras el Consejo de Pesca de la UE (13 de diciembre de 2025)", "declaracion", "2025-12-13"],
@@ -1454,8 +1454,8 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172", "Programa electoral de Vox de 2023, medida 369", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99", "Programa electoral de Sumar de 2023, p. 99", "programa", "2023-07"],
-    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
-    erc: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "El Congreso de los Diputados aprueba con mayoría absoluta la ley de eutanasia", "parlamento", "2021-03-18"]
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
+    erc: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021", "parlamento", "2021-03-18"]
   },
   L03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
@@ -1502,7 +1502,7 @@ export const SOURCES = {
     pp: ["https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/", "Orain, febrero de 2026", "parlamento", "2026-02"],
     vox: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "Proposición de ley de Vox contra el burka y el niqab (17-2-2026)", "parlamento", "2026-02-17"],
     fa: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
-    erc: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "El PSOE se abre a negociar con Junts la prohibición del burka tras tumbar una iniciativa similar de Vox", "parlamento", "2026-02-17"]
+    erc: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "El Español, votación de la ley de Vox sobre el burka, 17/02/2026", "parlamento", "2026-02-17"]
   }
 };
 
@@ -1515,7 +1515,7 @@ export const JUSTIF = {
     pp: "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social.",
     vox: "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
     fa: "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32.",
-    pod: "Votó contra las enmiendas que tumbaron la ley de 37,5 horas; su campaña de 2026 pide una jornada de 30 horas.",
+    pod: "Votó contra las enmiendas que tumbaron la ley de 37,5 horas.",
     erc: "ERC votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
   },
   A03: {
@@ -1707,7 +1707,7 @@ export const JUSTIF = {
     pp: "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ.",
     vox: "Vox propone que todos los vocales del CGPJ sean designados o propuestos por los propios jueces.",
     fa: "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
-    pod: "Amenazó con romper con el PSOE si el pacto del CGPJ dejaba que los jueces eligieran a los jueces.",
+    pod: "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
     erc: "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan."
   },
   D04: {
@@ -1868,7 +1868,7 @@ export const JUSTIF = {
     pp: "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo.",
     vox: "El programa de Vox propone proteger el suelo agrario y el paisaje frente a los macroproyectos renovables.",
     fa: "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
-    pod: "Estimación: matizada: apoya renovables con doble uso agrario del suelo, sin frenar la transición.",
+    pod: "Estimación: postura matizada; apoya las renovables con doble uso agrario del suelo, sin frenar la transición.",
     erc: "Estimación: ERC apoya las renovables con planificación territorial."
   },
   G03: {

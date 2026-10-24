@@ -50,6 +50,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - **6 posturas ajustadas** (nota en `NOTES`): Podemos A09 2→1 y C04 5→4; ERC B08 5→4, D02 2→4, H06 3→2 y K08 4→2 (ponencia política del 30.º congreso de ERC, de marzo de 2025).
 - **Pasan a «estimadas» (mismo valor), porque no hay ninguna fuente:** ERC B03, D03, D09, E04 y F03.
 - **Pendiente para T12b o R1:** la web de Podemos (podemos.info) bloquea a los robots con Cloudflare y no se pudo leer su programa. 22 posturas documentadas de Podemos siguen sin enlace: C03, C06, D01, D05, D06, E04, F03, F04, F05, F08, F09, G03, G04, H07, H09, I05, I06, I07, I09, K07, K08 y L09. No se marcan como estimadas, porque el problema es de acceso, no de falta de fuente. Reintentar con otra copia del programa o con hemerotecas.
+- **Revisión independiente:** corregida una frase que no estaba en su fuente (A01 de Podemos) y una exageración (D03 de Podemos); 6 estimaciones sin base pasan a 3 (Podemos C02, D02, H02, H03 y H08; ERC G07); los resúmenes de prensa del programa europeo de Podemos pasan a tipo «prensa»; etiquetas y fechas unificadas.
 - **Propuesta destacada de Podemos corregida:** «Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir».
 
 ## 24 oct 2026 · T6 · Fuentes de las posturas de Vox y Frente Amplio
