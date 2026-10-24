@@ -80,7 +80,7 @@ console.log("Enlace ?tema= desde las páginas");
   ok(!/tema=/.test(page.url()), "la dirección se limpia para no repetir el test al recargar");
   // Con un test guardado no se sustituye sin preguntar
   await page.evaluate(() => { const s = JSON.parse(localStorage.getItem("papeleta29n.v2")); s.ans = { B01: 4 }; localStorage.setItem("papeleta29n.v2", JSON.stringify(s)); });
-  await page.goto(appUrl("?tema=energia")); await page.waitForSelector("#v-home:not([hidden])");
+  await page.goto(appUrl("?tema=energia")); await page.waitForSelector("#topic-list .is-target");
   ok((await state(page)).topic === "sanidad" && await page.evaluate(() => document.activeElement?.dataset?.tema === "energia"), "con un test guardado muestra la portada con el tema señalado, sin borrar nada");
   await ctx.close();
 }

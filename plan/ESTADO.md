@@ -46,7 +46,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - **Imágenes para redes** (`qa/redes.mjs` → `qa/redes/` → `dist/redes/`): 29 «preguntas del día» del 26 oct al 23 nov (ninguna del 24 al 28) y una tarjeta por tema, 1080 × 1350. Sin casillas de respuesta, para que no parezcan una encuesta.
 - **`plan/KIT.md`:** textos y guiones (tests por tema, reta a un amigo, guía para votar, simulador, pregunta del día), calendario día a día hasta el 27 nov (pausa del 24 al 28) con fechas comprobadas contra `src/votar.src.mjs`, y 43 contactos con canal público verificado el 24 oct, por prioridad.
 - **Revisión independiente:** nada bloqueante. Corregido: viñetas en `/tests/<tema>/`, imágenes con aspecto de encuesta, guion sin partido visible, «okupación», textos de la portada y del reto, frase de territorio, versión marcada tras «Empezar de nuevo», separación en la tarjeta cuadrada.
-- **Pruebas:** nueva `qa/temas.mjs`; las 19 baterías pasan en local y en https://test29n.es.
+- **Pruebas:** nueva `qa/temas.mjs`; las 19 baterías pasan en local y en https://test29n.es (en la web real, `temas` esperaba antes de que arrancara la app; corregida la espera). IndexNow: 200 OK, 227 URL.
 
 ## 24 oct 2026 · T4 · Provincias, simulador y glosario
 - **52 páginas `/provincias/<id>/` y su índice:** diputados según el anexo del Real Decreto 806/2026 (suman 350, en `src/escanos.src.mjs`), senadores según el art. 3.2 del real decreto y la LOREG (con la Ley Orgánica 2/2026, Ibiza y Formentera eligen 1 senador cada una), las candidaturas que se presentan según los datos del test y un enlace al simulador.
