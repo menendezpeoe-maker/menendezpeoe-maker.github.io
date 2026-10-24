@@ -9,7 +9,8 @@
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
 6. ~~T10~~ **Hecho y publicado el 24 oct.**
-7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida). Siguiente: T6–T8 y T11 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
+7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida).
+8. **Calendario adelantado un día (24 oct):** T6 el 25 oct, T7 el 26, T8 el 27, T11 el 28 y una nueva T12 (fuentes del resto de candidaturas) el 29. Tareas programadas actualizadas. Nueva instrucción permanente del titular: incorporar los programas electorales de 2026 en cuanto se publiquen (PLAN.md, regla 5). Siguiente: T6–T8 y T11 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -20,7 +21,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
 - T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct).
 - T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
-- T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct). T6–T8, T11: pendientes.
+- T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct). T6–T8, T11 y T12: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
