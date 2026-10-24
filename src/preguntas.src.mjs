@@ -76,7 +76,7 @@ export const QUESTIONS = [
   B: "Contener el gasto: retrasar la jubilación o ligar más la pensión a lo cotizado",
   short: "Cómo sostener las pensiones",
   ctx: "El gasto en pensiones supera el 12 % del PIB y crecerá con la jubilación de la generación del baby boom. Las reformas de 2021 y 2023 garantizaron la revalorización con el IPC y la financiaron con más cotizaciones, como el Mecanismo de Equidad Intergeneracional. Unos economistas lo consideran suficiente; otros, como la AIReF, advierten de tensiones a largo plazo si no se modera el gasto.",
-  pos: "1 3~ 2~ 1 1 3~ 0 4~ 1~ 3~ 2~ 1 3~ 2~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0 0 0 0" },
+  pos: "1 3~ 2~ 1 1 3~ 0 4~ 1 3~ 2~ 1 3~ 2~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0 0 0 0" },
 { id: "A06", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Habría que suavizar las obligaciones que se activan cuando una empresa supera los 50 trabajadores, para que las pymes crezcan.",
   short: "Menos trabas al crecimiento de las pymes",
@@ -91,17 +91,17 @@ export const QUESTIONS = [
   text: "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
   short: "Frenar las subidas del salario mínimo",
   ctx: "El salario mínimo ha subido más de un 65 % desde 2018, hasta 1.221 euros en 14 pagas en 2026, y el Gobierno lo vincula al 60 % del salario medio que recomienda la Carta Social Europea. Sus defensores destacan la reducción de la pobreza entre quienes trabajan; sus críticos, el efecto sobre el empleo en el campo, el pequeño comercio o las regiones con salarios más bajos.",
-  pos: "1 3 4 1 1 5~ 0 4~ 1~ 4~ 3~ 1 4~ 2~ 1 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 4 1 1 5~ 0 4~ 1 4~ 3~ 1 4~ 2~ 1 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "A09", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El Estado debería vender sus participaciones en empresas como Telefónica o Indra.",
   short: "Vender las participaciones públicas en empresas",
   ctx: "En 2024 la SEPI, el holding empresarial del Estado, compró un 10 % de Telefónica tras la entrada de un fondo saudí, y es el primer accionista de Indra. El Gobierno lo justifica para proteger sectores estratégicos como las telecomunicaciones o la defensa; sus críticos ven riesgo de injerencia política y gasto público. La alternativa es controlar las inversiones extranjeras con autorizaciones, sin entrar en el capital.",
-  pos: "1 4 3~ 1 2~ 5~ 0 5~ 3~ 4~ 3~ 2~ 4~ 3~ 2~ 3~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
+  pos: "1 4 3~ 1 1 5~ 0 5~ 3~ 4~ 3~ 2~ 4~ 3~ 2~ 3~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
 { id: "A10", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El impuesto de sucesiones debería eliminarse en las herencias entre padres e hijos.",
   short: "Sin impuesto de sucesiones entre padres e hijos",
   ctx: "El impuesto de sucesiones es estatal, pero lo gestionan las comunidades, que fijan bonificaciones: en Madrid, Andalucía o Canarias las herencias entre padres e hijos apenas tributan, y en otras sí a partir de ciertos importes. Quienes piden eliminarlo alegan que ese patrimonio ya pagó impuestos al generarse; quienes lo defienden lo ven como una herramienta para reducir la desigualdad entre quienes heredan y quienes no.",
-  pos: "2 5 5 1 1 5~ 0 5 1~ 3~ 2~ 1 4~ 2~ 1~ 4 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 0 5 1 3~ 2~ 1 4~ 2~ 1~ 4 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 
 // ───────────── B · Vivienda y urbanismo
 { id: "B01", area: "viv", prio: 1, type: "likert", dim: "eco", dir: -1, lr: -1,
@@ -116,17 +116,17 @@ export const QUESTIONS = [
   B: "Regular los precios y ampliar la vivienda pública",
   short: "Construir más o regular precios",
   ctx: "España termina unas 100.000 viviendas al año, por debajo de los nuevos hogares que se forman, y el Banco de España estima un déficit de varios cientos de miles. Quienes priorizan construir sostienen que el precio solo baja si aumenta la oferta; quienes priorizan regular y la vivienda pública argumentan que el mercado no produce vivienda asequible por sí solo y que construir tarda años en notarse.",
-  pos: "4 1 1 5 5 1~ 0 1~ 4~ 2~ 3~ 5 1~ 4~ 5~ 2~ 5~ 5~ 4~ 4~ 3~ 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 1~ 0 1~ 4 2~ 3~ 5 1~ 4~ 5~ 2~ 5~ 5~ 4~ 4~ 3~ 5~ 5~ 0 0 0 0" },
 { id: "B03", area: "viv", prio: 2, type: "likert", dim: "lib", dir: 1, lr: 1,
   text: "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
   short: "Desalojo en 48 horas de viviendas ocupadas",
   ctx: "Entrar en una vivienda que es morada de alguien, incluidas, según la Fiscalía, las segundas residencias, es allanamiento, y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías, que se resuelve por vía judicial como usurpación; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
-  pos: "3 5 5 1 1 5 0 5 2 5 4 1 5 2~ 1 4~ 1~ 1~ 2~ 1~ 3~ 1~ 1~ 0 0 0 0" },
+  pos: "3 5 5 1 1 5 0 5 2~ 5 4 1 5 2~ 1 4~ 1~ 1~ 2~ 1~ 3~ 1~ 1~ 0 0 0 0" },
 { id: "B04", area: "viv", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
   short: "Fin de la suspensión de desahucios si el dueño es particular",
   ctx: "Desde 2020, un «escudo social» prorrogado varias veces permite suspender el desahucio de familias vulnerables sin alternativa de vivienda, con compensaciones al propietario. En 2026 el Congreso rechazó tres decretos que lo prorrogaban, y en octubre el Gobierno lo volvió a aprobar, pendiente de convalidación. Sus defensores lo consideran una protección básica mientras falte vivienda social; sus críticos, que traslada a propietarios particulares una obligación que corresponde a la Administración y que facilita impagos prolongados.",
-  pos: "4 5 5 2 1 5~ 0 5~ 1~ 4 3~ 1 5~ 2~ 1~ 4~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "4 5 5 2 1 5~ 0 5~ 1 4 3~ 1 5~ 2~ 1~ 4~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "B05", area: "viv", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
   short: "Prohibir nuevos pisos turísticos",
@@ -136,22 +136,22 @@ export const QUESTIONS = [
   text: "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
   short: "Recargo fiscal a las viviendas vacías",
   ctx: "El censo de 2021 contó unos 3,8 millones de viviendas vacías, aunque muchas están en zonas rurales o necesitan reformas. La Ley de Vivienda permite a los ayuntamientos subir hasta un 150 % el IBI de los pisos vacíos más de dos años. Los defensores buscan que salgan al mercado; sus críticos recuerdan que muchas no son habitables ni están donde hay demanda, y que el recargo penaliza a pequeños propietarios.",
-  pos: "4 1 1 5 5 1~ 0 2~ 5~ 2~ 3~ 5~ 1~ 4~ 5~ 2~ 5~ 5~ 5~ 5~ 2~ 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 1~ 0 2~ 5 2~ 3~ 5~ 1~ 4~ 5~ 2~ 5~ 5~ 5~ 5~ 2~ 5~ 5~ 0 0 0 0" },
 { id: "B07", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
   short: "Impuesto a compradores no residentes",
   ctx: "En 2025 el Gobierno propuso un recargo de hasta el 100 % para estas compras: según sus datos, unas 27.000 viviendas al año, concentradas en la costa, Baleares, Canarias y grandes ciudades. Sus defensores buscan frenar la demanda especulativa en las zonas tensionadas; sus críticos dudan de su eficacia y de su encaje con las normas europeas, y temen perder inversión.",
-  pos: "5 2 4 5 5 2~ 0 1~ 5~ 3~ 3~ 5~ 2~ 4~ 5~ 3~ 5 5 5~ 5~ 0 5 5~ 0 0 0 0" },
+  pos: "5 2 4 5 5 2~ 0 1~ 5 3~ 3~ 5~ 2~ 4~ 5~ 3~ 5 5 5~ 5~ 0 5 5~ 0 0 0 0" },
 { id: "B08", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
   short: "Gran parque público de alquiler",
   ctx: "La vivienda social supone en torno al 2,5 % del total en España, frente a cerca del 9 % de media en la UE. En 2025 el Gobierno creó la empresa pública Casa 47 para promover y gestionar alquiler asequible. Otros partidos prefieren la colaboración público-privada: ceder suelo público a promotores a cambio de precios limitados durante años, para movilizar más inversión con menos gasto público.",
-  pos: "5 2 2 5 5 2~ 0 2~ 5 3~ 4~ 5 2~ 5~ 5 3~ 5 5 5 5 4~ 5 5 4~ 4~ 4~ 0" },
+  pos: "5 2 2 5 5 2~ 0 2~ 4 3~ 4~ 5 2~ 5~ 5 3~ 5 5 5 5 4~ 5 5 4~ 4~ 4~ 0" },
 { id: "B09", area: "viv", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "El Estado debería avalar parte de la hipoteca de los jóvenes para que puedan comprar su primera vivienda.",
   short: "Avales públicos a hipotecas de jóvenes",
   ctx: "Desde 2023 el ICO avala hasta el 20 % de la hipoteca a menores de 35 años y familias con hijos con ingresos limitados, para cubrir la entrada que los bancos no financian. Facilita el acceso a la propiedad; sus críticos advierten de que, sin más oferta, estas ayudas pueden empujar los precios al alza y de que el riesgo de impago recae en el Estado.",
-  pos: "5 5 4 2 1~ 3~ 0 4~ 3~ 4~ 3~ 2~ 4~ 3~ 2~ 4~ 2~ 2~ 3~ 2~ 0 2~ 2~ 0 0 0 0" },
+  pos: "5 5 4 2 1 3~ 0 4~ 3~ 4~ 3~ 2~ 4~ 3~ 2~ 4~ 2~ 2~ 3~ 2~ 0 2~ 2~ 0 0 0 0" },
 
 // ───────────── C · Organización territorial
 { id: "C01", area: "ter", prio: 1, type: "likert", dim: "ter", dir: -1, lr: -1,
@@ -176,7 +176,7 @@ export const QUESTIONS = [
   short: "Estado federal",
   ctx: "La Constitución creó un Estado autonómico con amplias competencias para las comunidades, pero sin una cámara que represente realmente a los territorios ni mecanismos estables de cooperación. Un modelo federal fijaría en la Constitución el reparto de competencias y daría voz a las comunidades en las decisiones del Estado. Sus críticos temen que abra la puerta a más diferencias entre territorios; algunos nacionalistas lo consideran insuficiente.",
   ley: "Constitución, título VIII",
-  pos: "4 1 1 4 5 1~ 0 1 2~ 2~ 3~ 2~ 1 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0" },
+  pos: "4 1 1 4 4 1~ 0 1 2~ 2~ 3~ 2~ 1 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0" },
 { id: "C05", area: "ter", prio: 2, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "Debería poder celebrarse un referéndum de independencia pactado si lo pide una mayoría clara de una comunidad.",
   short: "Referéndum de independencia pactado",
@@ -188,18 +188,18 @@ export const QUESTIONS = [
   short: "Suprimir las diputaciones",
   ctx: "Las diputaciones gobiernan cada provincia y apoyan con dinero y técnicos a los municipios pequeños. Sus miembros no se eligen en las urnas, sino entre los concejales. Sus críticos las ven como una capa administrativa redundante y poco transparente; sus defensores, como imprescindibles para que los pueblos pequeños tengan servicios. En el País Vasco las diputaciones forales recaudan los impuestos, y en las islas existen cabildos y consejos insulares.",
   ley: "Constitución, art. 141",
-  pos: "2 1 2~ 4~ 5 4~ 0 5 4~ 3~ 1 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
+  pos: "2 1 2~ 4~ 5 4~ 0 5 4 3~ 1 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
 { id: "C07", area: "ter", prio: 3, type: "likert", dim: "ter", dir: 1, lr: 0,
   text: "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
   short: "Fusionar municipios pequeños",
   ctx: "España tiene más de 8.100 municipios y casi la mitad no llega a 500 habitantes. Muchos no pueden prestar por sí solos servicios básicos ni tener personal técnico. Fusionarlos o agruparlos podría ahorrar costes y profesionalizar la gestión, como hicieron otros países europeos; sus críticos temen perder identidad, representación y cercanía, sobre todo en la España rural.",
-  pos: "2 2~ 3~ 2~ 1~ 4~ 0 5 2~ 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1 0 0 0 1~ 1 1~" },
+  pos: "2 2~ 3~ 2~ 1~ 4~ 0 5 2 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1 0 0 0 1~ 1 1~" },
 { id: "C08", area: "ter", prio: 3, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "El Senado debería convertirse en una cámara de representación de las comunidades autónomas.",
   short: "Un Senado territorial",
   ctx: "Hoy la mayoría de los senadores se eligen por provincias, cuatro por provincia sea cual sea su población, y el Senado tiene poco peso: el Congreso puede levantar sus vetos. Convertirlo en una cámara territorial, como el Bundesrat alemán, daría voz a los gobiernos autonómicos en las leyes del Estado. Otros proponen suprimirlo o mantenerlo como está.",
   ley: "Constitución, art. 69",
-  pos: "4 4 1~ 4~ 3~ 1~ 0 2~ 2~ 2~ 3~ 2~ 2~ 3~ 2~ 4~ 3~ 0 4~ 4~ 2~ 3~ 3~ 2~ 2~ 1~ 2~" },
+  pos: "4 4 1~ 4~ 3~ 1~ 0 2~ 2 2~ 3~ 2~ 2~ 3~ 2~ 4~ 3~ 0 4~ 4~ 2~ 3~ 3~ 2~ 2~ 1~ 2~" },
 { id: "C09", area: "ter", prio: 3, type: "likert", dim: "ter", dir: 1, lr: 1,
   text: "El concierto vasco y el convenio navarro deberían reformarse para que esas comunidades aporten más a la caja común.",
   short: "Reformar el concierto vasco y el convenio navarro",
@@ -218,13 +218,13 @@ export const QUESTIONS = [
   text: "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
   short: "Listas desbloqueadas",
   ctx: "Para el Congreso se vota a listas cerradas y bloqueadas: el partido decide el orden y el elector no puede cambiarlo. Con listas desbloqueadas, el votante podría marcar preferencias, como ya ocurre en el Senado, donde se elige a personas concretas. A favor: más vínculo entre representantes y representados; en contra: campañas más personalistas y caras y más luchas internas en los partidos.",
-  pos: "2~ 2~ 3~ 4~ 4~ 5~ 4~ 5 2~ 2~ 2~ 2~ 2~ 0 2~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
+  pos: "2~ 2~ 3~ 4~ 4~ 5~ 4~ 5 4 2~ 2~ 2~ 2~ 0 2~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
 { id: "D03", area: "ins", prio: 2, type: "likert", dim: null, dir: 0, lr: 1,
   text: "Los propios jueces deberían elegir a la mayoría de los miembros del Consejo General del Poder Judicial.",
   short: "Que los jueces elijan el CGPJ",
   ctx: "El CGPJ nombra a los altos cargos judiciales. Desde 1985 sus vocales los eligen el Congreso y el Senado por mayoría de tres quintos, y su bloqueo entre 2018 y 2024 se cerró con la mediación de la Comisión Europea. Las instituciones europeas recomiendan que al menos la mitad de los vocales sean elegidos por los propios jueces. Los partidarios del sistema actual sostienen que aporta legitimidad democrática y evita el corporativismo judicial.",
   ley: "Constitución, art. 122.3",
-  pos: "2 5 5 1 1 5~ 0 5 1 2~ 2~ 1 5 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 0 5 1~ 2~ 2~ 1 5 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "D04", area: "ins", prio: 2, type: "likert", dim: null, dir: 0, lr: -1,
   text: "Las Cortes deberían poder aprobar amnistías para cerrar conflictos políticos.",
   short: "Amnistías por conflictos políticos",
@@ -236,7 +236,7 @@ export const QUESTIONS = [
   short: "Cinco años contra las puertas giratorias",
   ctx: "Hoy los altos cargos del Gobierno no pueden trabajar durante dos años en empresas relacionadas con las decisiones que tomaron, y varios expresidentes y exministros han acabado en consejos de grandes empresas. Ampliar el plazo dificultaría las «puertas giratorias» y los conflictos de interés; sus críticos advierten de que disuade a profesionales del sector privado de entrar en la Administración.",
   ley: "Ley 3/2015, reguladora del ejercicio del alto cargo",
-  pos: "3~ 3~ 4~ 5~ 5 5~ 4~ 5~ 4~ 3~ 2~ 4~ 3~ 0 4~ 0 4~ 4~ 4~ 0 0 0 4~ 0 0 0 0" },
+  pos: "3~ 3~ 4~ 5~ 5 5~ 4~ 5~ 4 3~ 2~ 4~ 3~ 0 4~ 0 4~ 4~ 4~ 0 0 0 4~ 0 0 0 0" },
 { id: "D06", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
   short: "Votación obligatoria de las iniciativas populares",
@@ -260,7 +260,7 @@ export const QUESTIONS = [
   short: "Que gobierne la lista más votada",
   ctx: "En España el presidente necesita la confianza del Congreso: mayoría absoluta en una primera votación o simple en la segunda, y puede gobernar quien sume más apoyos aunque no haya ganado las elecciones. Que gobierne la lista más votada favorecería la estabilidad y la claridad para el votante; sus críticos sostienen que contradice el sistema parlamentario, en el que gobierna quien reúne una mayoría.",
   ley: "Constitución, art. 99",
-  pos: "2 4 2 1~ 1 2~ 1~ 2~ 1 1 1 1 4~ 1~ 1 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 0 0 0 0" },
+  pos: "2 4 2 1~ 1 2~ 1~ 2~ 1~ 1 1 1 4~ 1~ 1 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 0 0 0 0" },
 
 // ───────────── E · Justicia, seguridad y libertades
 { id: "E01", area: "jus", prio: 1, type: "likert", dim: "lib", dir: 1, lr: 1,
@@ -285,7 +285,7 @@ export const QUESTIONS = [
   short: "Rebajar la edad penal",
   ctx: "Los menores de 14 años no responden penalmente, y los de 14 a 17 se rigen por la Ley del Menor, que prioriza la reeducación, con internamientos de hasta ocho años en los casos más graves. Tras varios delitos graves cometidos por niños, algunos partidos piden rebajar la edad; muchos especialistas en justicia juvenil sostienen que no reduciría la delincuencia y prefieren reforzar la intervención educativa.",
   ley: "Ley Orgánica 5/2000, de responsabilidad penal de los menores",
-  pos: "1 3 5 2~ 1 5~ 0 3~ 1 3~ 1~ 1 3~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 2~ 1 5~ 0 3~ 1~ 3~ 1~ 1 3~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "E05", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "El uso policial del reconocimiento facial en espacios públicos debería prohibirse.",
   short: "Prohibir el reconocimiento facial policial",
@@ -331,12 +331,12 @@ export const QUESTIONS = [
   text: "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
   short: "«Prioridad nacional» en ayudas",
   ctx: "Los extranjeros con residencia legal acceden hoy a las prestaciones en las mismas condiciones que los españoles, aunque muchas ayudas exigen años de empadronamiento. Vox propone la «prioridad nacional», y varios gobiernos autonómicos han endurecido los requisitos de residencia previa. Sus defensores sostienen que los recursos son limitados y deben atender primero a los nacionales; sus críticos, que discrimina por nacionalidad, choca con la Constitución y el derecho europeo y afecta a personas que trabajan y cotizan aquí.",
-  pos: "1 2 5 1 1 5~ 0 1~ 1 2~ 2~ 1 2~ 1~ 1 2~ 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
+  pos: "1 2 5 1 1 5~ 0 1~ 1~ 2~ 2~ 1 2~ 1~ 1 2~ 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
 { id: "F04", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
   ctx: "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
-  pos: "5 4 1 5 5 1~ 0 4~ 4~ 3~ 4~ 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
+  pos: "5 4 1 5 5 1~ 0 4~ 4 3~ 4~ 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
 { id: "F05", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
@@ -346,7 +346,7 @@ export const QUESTIONS = [
   text: "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
   short: "Ayuda universal por hijo",
   ctx: "España tiene una de las natalidades más bajas del mundo, con unos 1,1 hijos por mujer. Hoy las ayudas por hijo dependen sobre todo de la renta, como el complemento de ayuda a la infancia, o de deducciones para madres trabajadoras. Una prestación universal, como las de Alemania o Irlanda, llegaría a todas las familias y sería más sencilla de gestionar; sus críticos alegan su alto coste y que beneficia también a quien no la necesita.",
-  pos: "4 3 4 5 5 3~ 0 2~ 4~ 3~ 3~ 4~ 3~ 0 4~ 0 5~ 4~ 4~ 4~ 0 4~ 4~ 0 0 0 0" },
+  pos: "4 3 4 5 5 3~ 0 2~ 4 3~ 3~ 4~ 3~ 0 4~ 0 5~ 4~ 4~ 4~ 0 4~ 4~ 0 0 0 0" },
 { id: "F07", area: "dem", prio: 2, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
   short: "Menos impuestos en zonas despobladas",
@@ -378,7 +378,7 @@ export const QUESTIONS = [
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
   ctx: "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico; en diciembre de 2025 la Comisión propuso rebajar la exigencia a un 90 % menos de emisiones. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
-  pos: "5 2 1 5 5 1 5~ 3~ 4~ 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0" },
+  pos: "5 2 1 5 5 1 5~ 3~ 4 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0" },
 { id: "G04", area: "ene", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
   short: "Ampliar los trasvases de agua",
@@ -412,7 +412,7 @@ export const QUESTIONS = [
   B: "Acelerar las renovables invirtiendo en redes y almacenamiento",
   short: "Producción a demanda o más renovables",
   ctx: "El 28 de abril de 2025 un apagón dejó sin electricidad a la España peninsular durante horas. Los informes oficiales apuntaron a un fallo en el control de la tensión, en un momento de mucha producción solar. Desde entonces se discute si hacen falta más centrales que aporten estabilidad o acelerar redes, baterías y tecnologías que permitan a las renovables cumplir esa función.",
-  pos: "5 2 1 5 5 1~ 5~ 3~ 4~ 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 3~ 5~ 4~ 0 0 0 0" },
+  pos: "5 2 1 5 5 1~ 5~ 3~ 4 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 3~ 5~ 4~ 0 0 0 0" },
 
 // ───────────── H · Política exterior y defensa
 { id: "H01", area: "ext", prio: 1, type: "likert", dim: null, dir: 0, lr: 1,
@@ -424,7 +424,7 @@ export const QUESTIONS = [
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
   ctx: "La UE decide sobre comercio, competencia, moneda en la zona euro y buena parte de la agricultura y la regulación económica; impuestos, defensa o sanidad siguen siendo sobre todo nacionales, y muchas decisiones exigen unanimidad. Darle más competencias permitiría a Europa actuar con más peso en el mundo; sus críticos defienden la soberanía nacional y un control democrático más cercano.",
-  pos: "5 4 1 4 2~ 1~ 3~ 5 4~ 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0" },
+  pos: "5 4 1 4 2~ 1~ 3~ 5 4 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0" },
 { id: "H03", area: "ext", prio: 3, type: "likert", dim: "eur", dir: 1, lr: 0,
   text: "Las decisiones importantes de la UE deberían seguir exigiendo unanimidad, para que cada país conserve su derecho de veto.",
   short: "Mantener el veto de cada país en la UE",
@@ -444,13 +444,13 @@ export const QUESTIONS = [
   text: "España debería seguir en la OTAN.",
   short: "Seguir en la OTAN",
   ctx: "España es miembro de la OTAN desde 1982 y lo ratificó en el referéndum de 1986. La Alianza garantiza la defensa colectiva de sus miembros, con el respaldo militar de EE. UU., aunque el ámbito geográfico del tratado no incluye expresamente Ceuta y Melilla. Una parte de la izquierda propone salir o reducir su papel y apostar por una defensa europea propia o por la neutralidad.",
-  pos: "5 5 5 3 1 5~ 0 5 3~ 4~ 5~ 1 5 3~ 1 4~ 2~ 2~ 2~ 2~ 0 2~ 2~ 0 0 0 0" },
+  pos: "5 5 5 3 1 5~ 0 5 2 4~ 5~ 1 5 3~ 1 4~ 2~ 2~ 2~ 2~ 0 2~ 2~ 0 0 0 0" },
 { id: "H07", area: "ext", prio: 3, type: "likert", dim: "eur", dir: 1, lr: 1,
   text: "La ayuda al desarrollo debería recortarse para dedicar ese dinero a necesidades dentro de España.",
   short: "Recortar la ayuda al desarrollo",
   ctx: "La ONU fijó hace décadas el objetivo de dedicar el 0,7 % de la renta nacional a la ayuda oficial al desarrollo; España destina en torno al 0,25 %, y la ley de cooperación de 2023 se compromete a llegar al 0,7 % en 2030. Sus defensores la ven como responsabilidad global y una forma de reducir la migración forzada; sus críticos priorizan las necesidades internas o dudan de su eficacia.",
   ley: "Ley 1/2023, de cooperación para el desarrollo sostenible",
-  pos: "1 4 5 1 1 5~ 0 3~ 1~ 2~ 2~ 1~ 3~ 2~ 2~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 4 5 1 1 5~ 0 3~ 1 2~ 2~ 1~ 3~ 2~ 2~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "H08", area: "ext", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "España debería estrechar sus relaciones comerciales con China, aunque genere tensiones con Estados Unidos.",
   short: "Más comercio con China",
@@ -473,7 +473,7 @@ export const QUESTIONS = [
   text: "La universidad pública debería ser gratuita para todos los estudiantes.",
   short: "Universidad pública gratuita",
   ctx: "Las tasas de la universidad pública las fijan las comunidades y van de unos 700 a más de 2.000 euros por curso; algunas bonifican las asignaturas aprobadas. Hacerla gratuita eliminaría una barrera económica; sus críticos sostienen que beneficiaría sobre todo a familias con más renta, que están sobrerrepresentadas en la universidad, y prefieren reforzar las becas para quienes tienen menos ingresos.",
-  pos: "3 2~ 2~ 5 5 1~ 0 2~ 4~ 2~ 3~ 5~ 2~ 4~ 5 3~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 2~ 2~ 5 5 1~ 0 2~ 4 2~ 3~ 5~ 2~ 4~ 5 3~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "I03", area: "edu", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería ser más fácil crear universidades privadas.",
   short: "Facilitar nuevas universidades privadas",
@@ -521,7 +521,7 @@ export const QUESTIONS = [
   text: "Si la sanidad pública supera un plazo máximo de espera, el paciente debería poder operarse en una clínica privada pagada por el sistema público.",
   short: "Clínica privada si se supera la espera",
   ctx: "Más de 800.000 personas esperan una operación en la sanidad pública, con una media de más de cuatro meses. Algunas comunidades fijan plazos máximos y, si se superan, ofrecen operarse en un centro concertado. Sus defensores priorizan el derecho del paciente a ser atendido a tiempo; sus críticos sostienen que desvía recursos a la privada en lugar de ampliar la capacidad pública.",
-  pos: "2~ 4~ 5 1 1 5~ 0 5~ 2~ 4~ 3~ 1 4~ 2~ 1 3~ 1~ 1~ 1~ 1~ 3~ 1~ 1~ 0 0 0 0" },
+  pos: "2~ 4~ 5 1 1 5~ 0 5~ 2 4~ 3~ 1 4~ 2~ 1 3~ 1~ 1~ 1~ 1~ 3~ 1~ 1~ 0 0 0 0" },
 { id: "J03", area: "san", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Los médicos de la sanidad pública no deberían poder trabajar a la vez en la privada.",
   short: "Exclusividad de los médicos públicos",
@@ -531,7 +531,7 @@ export const QUESTIONS = [
   text: "Habría que subir los impuestos sobre el tabaco, el alcohol y las bebidas azucaradas para reducir su consumo.",
   short: "Impuestos saludables",
   ctx: "El Ministerio de Sanidad ha propuesto subir los impuestos del tabaco y extenderlos a productos como los vapeadores, y en Europa se debate gravar más las bebidas azucaradas. Según la experiencia de otros países, estos impuestos reducen el consumo y recaudan para la sanidad; sus críticos señalan que pesan más sobre las rentas bajas y que limitan la libertad de cada persona para decidir qué consume.",
-  pos: "4~ 2~ 2~ 5 4~ 1~ 0 2~ 4~ 2~ 3~ 4~ 2~ 0 4~ 2~ 0 0 4~ 0 0 0 0 0 0 0 0" },
+  pos: "4~ 2~ 2~ 5 4~ 1~ 0 2~ 4 2~ 3~ 4~ 2~ 0 4~ 2~ 0 0 4~ 0 0 0 0 0 0 0 0" },
 { id: "J05", area: "san", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
   short: "Evaluar y suprimir políticas ineficaces",
@@ -546,7 +546,7 @@ export const QUESTIONS = [
   text: "Los funcionarios deberían dejar de poder elegir sanidad privada a través de MUFACE y pasar a la sanidad pública.",
   short: "Integrar MUFACE en la sanidad pública",
   ctx: "Los funcionarios del Estado pueden elegir, a través de MUFACE, ser atendidos por aseguradoras privadas concertadas en lugar de por la sanidad pública, y la mayoría lo hace. En 2024 las aseguradoras se negaron a renovar el concierto por considerarlo deficitario, y el Gobierno acabó subiendo la prima. Integrarlos acabaría con un sistema diferenciado; los defensores de MUFACE destacan que es más barato por persona y descarga los centros públicos.",
-  pos: "2 1 1 5 5 1~ 0 2~ 4~ 2~ 0 4~ 2~ 0 4~ 0 0 0 4~ 0 0 0 4~ 0 0 0 0" },
+  pos: "2 1 1 5 5 1~ 0 2~ 4 2~ 0 4~ 2~ 0 4~ 0 0 0 4~ 0 0 0 4~ 0 0 0 0" },
 { id: "J08", area: "san", prio: 2, type: "likert", dim: "ter", dir: 1, lr: 0,
   text: "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
   short: "Estándares sanitarios comunes",
@@ -558,13 +558,13 @@ export const QUESTIONS = [
   text: "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
   short: "Acuerdo comercial UE-Mercosur",
   ctx: "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute. Se aplica provisionalmente desde mayo de 2026, mientras el Tribunal de Justicia de la UE examina su legalidad.",
-  pos: "5 4 1 1 1 1~ 1 5 2~ 3~ 4~ 1 3~ 2~ 1 3~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
+  pos: "5 4 1 1 1 1~ 1 5 2 3~ 4~ 1 3~ 2~ 1 3~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
 { id: "K02", area: "rur", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
   short: "Controlar los márgenes de la distribución",
   ctx: "La Ley de la Cadena Alimentaria prohíbe desde 2021 comprar a los productores por debajo de sus costes, pero las organizaciones agrarias denuncian incumplimientos y grandes diferencias entre el precio en origen y el del supermercado. Reforzar el control protegería al eslabón más débil; sus críticos advierten de que intervenir márgenes puede encarecer la cesta de la compra o reducir la competencia.",
   ley: "Ley 12/2013, de la cadena alimentaria",
-  pos: "4 3~ 4 5 5~ 3~ 0 2~ 4~ 3~ 3~ 5~ 3~ 0 5~ 3~ 5~ 5~ 5~ 5~ 5~ 4~ 5~ 5~ 5~ 5~ 0" },
+  pos: "4 3~ 4 5 5~ 3~ 0 2~ 4 3~ 3~ 5~ 3~ 0 5~ 3~ 5~ 5~ 5~ 5~ 5~ 4~ 5~ 5~ 5~ 5~ 0" },
 { id: "K03", area: "rur", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
   short: "PAC para profesionales y pequeñas explotaciones",
@@ -594,7 +594,7 @@ export const QUESTIONS = [
   text: "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
   short: "Limitar los nuevos regadíos",
   ctx: "La agricultura de regadío consume en torno al 80 % del agua en España. En el entorno de Doñana, la extracción para cultivos como la fresa ha contribuido a secar lagunas del parque nacional, y el Tribunal de Justicia de la UE condenó a España en 2021. Limitar nuevos regadíos protege acuíferos y ecosistemas; sus críticos defienden la riqueza y el empleo agrícola y piden más infraestructuras y desaladoras.",
-  pos: "3 3 1 5 5 2~ 5~ 3~ 4~ 3~ 3~ 4~ 2~ 0 4~ 0 0 0 3~ 3~ 0 0 4~ 2~ 1~ 0 0" },
+  pos: "3 3 1 5 5 2~ 5~ 3~ 2 3~ 3~ 4~ 2~ 0 4~ 0 0 0 3~ 3~ 0 0 4~ 2~ 1~ 0 0" },
 
 // ───────────── L · Derechos y cuestiones éticas
 { id: "L01", area: "der", prio: 1, type: "likert", dim: "soc", dir: -1, lr: -1,
@@ -625,7 +625,7 @@ export const QUESTIONS = [
   short: "Revisar los acuerdos con la Santa Sede",
   ctx: "Los acuerdos con el Vaticano regulan la enseñanza de la Religión, la asistencia religiosa, exenciones fiscales y la financiación de la Iglesia, que recibe el 0,7 % del IRPF de quienes marcan su casilla. Sus críticos sostienen que otorgan privilegios impropios de un Estado aconfesional; sus defensores, que reconocen la labor social de la Iglesia y la libertad religiosa, y que otras confesiones también tienen acuerdos.",
   ley: "Constitución, art. 16.3",
-  pos: "3 1 2~ 5 5 2~ 0 3~ 5~ 3~ 2~ 5~ 1 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 1 2~ 5 5 2~ 0 3~ 5 3~ 2~ 5~ 1 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L06", area: "der", prio: 3, type: "likert", dim: "lib", dir: 1, lr: 0,
   text: "Las redes sociales deberían estar obligadas a verificar la identidad real de cada usuario.",
   short: "Fin del anonimato en redes",
@@ -641,12 +641,12 @@ export const QUESTIONS = [
   short: "Eliminar las cuotas de paridad",
   ctx: "La Ley de Paridad de 2024 obliga a que las listas electorales, el Gobierno y los consejos de las grandes empresas cotizadas tengan al menos un 40 % de cada sexo. Quienes piden eliminar las cuotas sostienen que debe primar el mérito individual y que la ley invade decisiones de partidos y empresas; quienes las defienden, que corrigen barreras que frenan a las mujeres en los puestos de poder.",
   ley: "Ley Orgánica 2/2024, de representación paritaria",
-  pos: "1 3 5 1 1 5~ 2~ 4~ 1~ 2~ 2~ 1~ 4~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 1 1 5~ 2~ 4~ 1 2~ 2~ 1~ 4~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "L09", area: "der", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
   ctx: "Francia, Bélgica o Dinamarca prohíben cubrirse el rostro en la calle. En España no existe una prohibición general, y el Tribunal Supremo anuló en 2013 una ordenanza municipal que lo vetaba por invadir competencias del Estado. Sus defensores invocan la seguridad y la igualdad de las mujeres; sus críticos, la libertad religiosa y el riesgo de excluir aún más a las pocas mujeres que lo llevan.",
-  pos: "1 5 5 1 1 5~ 0 4~ 2~ 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
+  pos: "1 5 5 1 1 5~ 0 4~ 2 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
 ];
 
 // Familias de preguntas que miden casi la misma opinión. En la coincidencia con los partidos, si
@@ -665,7 +665,8 @@ export const NOTES = {
     vox: "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros."
   },
   A09: {
-    pp: "Su ponencia política de 2025 pide reducir el tamaño del sector empresarial público, sin citar empresas concretas."
+    pp: "Su ponencia política de 2025 pide reducir el tamaño del sector empresarial público, sin citar empresas concretas.",
+    pod: "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones."
   },
   B04: {
     psoe: "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
@@ -674,17 +675,24 @@ export const NOTES = {
   B07: {
     vox: "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen."
   },
+  B08: {
+    erc: "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada."
+  },
   C01: {
     psoe: "El acuerdo PSC-ERC de 2024 prevé que la Agencia Tributaria de Cataluña recaude todos los impuestos, pero la dirección federal del PSOE niega que sea un concierto y Hacienda solo ha concretado la cesión del IRPF."
   },
   C04: {
-    fa: "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal."
+    fa: "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
+    pod: "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal."
   },
   C08: {
     pp: "Su ponencia política de 2025 pide convertir el Senado en una «verdadera Cámara de representación territorial»."
   },
   D01: {
     fa: "Su programa de 2023 solo se compromete a «valorar» actualizar la ley electoral o ampliar el número de diputados."
+  },
+  D02: {
+    erc: "La ponencia contempla listas desbloqueadas para que el votante ordene a los candidatos."
   },
   D06: {
     fa: "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo."
@@ -741,6 +749,9 @@ export const NOTES = {
   H05: {
     pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
   },
+  H06: {
+    erc: "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN."
+  },
   H07: {
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
   },
@@ -791,7 +802,8 @@ export const NOTES = {
   },
   K08: {
     psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
-    pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
+    pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
+    erc: "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
   },
   L01: {
     erc: "Defiende el derecho al aborto y permitió tramitar la reforma constitucional, pero comparte objeciones jurídicas y no se ha comprometido a votarla.",
@@ -825,7 +837,9 @@ export const SOURCES = {
     psoe: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "parlamento", "2025-09-11"],
     pp: ["https://theobjective.com/espana/politica/2025-09-10/congreso-reduccion-jornada-laboral-pp-vox-junts/", "The Objective, votación en el Congreso del 10/09/2025", "parlamento", "2025-09-10"],
     vox: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Veto de PP, Vox y Junts a la reducción de jornada (10-9-2025)", "parlamento", "2025-09-10"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7", "Programa electoral de Sumar de 2023, p. 7", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7", "Programa electoral de Sumar de 2023, p. 7", "programa", "2023-07"],
+    pod: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025", "parlamento", "2025-09-11"],
+    erc: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "El Congreso tumba la reducción de jornada laboral al prosperar el veto de PP, Vox y Junts", "parlamento", "2025-09-10"]
   },
   A02: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -840,17 +854,22 @@ export const SOURCES = {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452", "BOE, Real Decreto-ley 8/2023, de 27 de diciembre", "gobierno", "2023-12"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"],
+    pod: ["https://valenciaplaza.com/valenciaplaza/unidas-podemos-defiende-en-el-congreso-un-nuevo-impuesto-sobre-fortunas-de-mas-de-10-millones", "Valencia Plaza (Europa Press), proposición de ley de Unidas Podemos sobre grandes fortunas, 05/06/2022", "parlamento", "2022-06-05"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   A04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=24", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74", "Programa electoral de Vox de 2023, medida 146", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"]
   },
   A05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15", "Programa electoral de Sumar de 2023, p. 15", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15", "Programa electoral de Sumar de 2023, p. 15", "programa", "2023-07"],
+    pod: ["https://www.elsaltodiario.com/pensiones/gobierno-pp-sacaran-adelante-una-reforma-incentivar-trabajo-72-anos", "El Salto, votación de la reforma de jubilación flexible, 22/01/2025", "parlamento", "2025-01-22"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   A06: {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
@@ -864,17 +883,22 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://www.merca2.es/2022/08/26/vox-rechaza-salario-minimo-empresario-bajar-impuestos-cotizaciones-1058475/", "Espinosa de los Monteros sobre el SMI (26-8-2022)", "declaracion", "2022-08-26"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7", "Programa electoral de Sumar de 2023, p. 7", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7", "Programa electoral de Sumar de 2023, p. 7", "programa", "2023-07"],
+    pod: ["https://www.bolsamania.com/noticias/economia/economia--podemos-exige-subir-ya-el-salario-minimo-a-1800-euros-al-mes-y-montero-promete-que-seguira-creciendo--21739276.html", "Bolsamanía (Europa Press), Belarra en la sesión de control, 18/02/2026", "declaracion", "2026-02-18"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   A09: {
     psoe: ["https://www.hacienda.gob.es/Documentacion/Publico/GabineteMinistro/Notas%20Prensa/2023/CONSEJO-DE-MINISTROS/19-12-23-NP-CM-SEPI-Telefonica.pdf", "Acuerdo del Consejo de Ministros sobre la compra de acciones de Telefónica (19 de diciembre de 2023)", "gobierno", "2023-12-19"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=12", "Programa electoral de Sumar de 2023, p. 12", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=12", "Programa electoral de Sumar de 2023, p. 12", "programa", "2023-07"],
+    pod: ["https://forbes.es/ultima-hora/332101/economia-belarra-urge-a-elevar-el-control-publico-de-telefonica-y-plantea-que-sepi-se-haga-con-una-participacion-del-10/", "Forbes España (Europa Press), declaraciones de Ione Belarra, 06/09/2023", "declaracion", "2023-09-06"]
   },
   A10: {
     psoe: ["https://es.ara.cat/economia/cruzada-montero-dumping-fiscal-madrid_1_5613605.html", "Declaraciones de María Jesús Montero sobre la armonización fiscal (9 de enero de 2026)", "declaracion", "2026-01-09"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"],
+    pod: ["https://www.que.es/2021/03/23/congreso-rechaza-eliminar-impuesto-sucesiones/", "Qué!, Comisión de Hacienda del Congreso, 23/03/2021", "parlamento", "2021-03-23"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B01: {
     psoe: ["https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13411162_1124105.html", "eldiario.es, rueda de prensa de balance de Pedro Sánchez, 28/07/2026", "declaracion", "2026-07-28"],
@@ -889,44 +913,58 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)", "declaracion", "2026-10-22"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40", "Programa electoral de Vox de 2023, medida 65", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2025/01/15/podemos-arremete-contra-la-ministra-rentista-y-exige-bajar-los-alquileres-para-apoyar-los-presupuestos/", "El Independiente, exigencias de Podemos en vivienda, 15/01/2025", "declaracion", "2025-01-15"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B03: {
     psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"],
-    vox: ["https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html", "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)", "prensa", "2025-01-29"]
+    vox: ["https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html", "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)", "prensa", "2025-01-29"],
+    pod: ["https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/", "El Independiente, votación de la ley antiokupas del PP, 29/11/2022", "parlamento", "2022-11-29"]
   },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"],
     pp: ["https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/", "Forbes España, votación del decreto del escudo social, 26/02/2026", "parlamento", "2026-02-26"],
     vox: ["https://www.ultimahora.es/noticias/nacional/2026/01/30/2559903/vivienda-carga-contra-vox-junts-por-embarrancar-moratoria-desahucios.html", "Vox vota contra la prórroga de la moratoria de desahucios (enero 2026)", "parlamento", "2026-01-30"],
-    fa: ["https://theobjective.com/espana/politica/2026-02-04/sumar-insiste-llevar-escudo-social-congreso/", "The Objective, Lara Hernández sobre la moratoria de desahucios, 04/02/2026", "declaracion", "2026-02-04"]
+    fa: ["https://theobjective.com/espana/politica/2026-02-04/sumar-insiste-llevar-escudo-social-congreso/", "The Objective, Lara Hernández sobre la moratoria de desahucios, 04/02/2026", "declaracion", "2026-02-04"],
+    pod: ["https://www.bolsamania.com/noticias_amp/empresas/economia--podemos-exige-al-gobierno-pagar-el-alquiler-de-los-desahuciados-por-la-caida-del-escudo-social--21590323.html", "Bolsamanía (Europa Press), rueda de prensa de Pablo Fernández, 02/02/2026", "declaracion", "2026-02-02"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B05: {
-    psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"]
+    psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"],
+    pod: ["https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/", "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024", "parlamento", "2024-06-16"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=21", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    fa: ["https://www.elsaltodiario.com/vivienda/madrid-propone-un-ibi-progresivo-paguen-empresas-pisos-vacios-menos-familias", "El Salto, propuesta de Más Madrid en el Congreso (grupo Sumar), 21/04/2026", "parlamento", "2026-04-21"]
+    fa: ["https://www.elsaltodiario.com/vivienda/madrid-propone-un-ibi-progresivo-paguen-empresas-pisos-vacios-menos-familias", "El Salto, propuesta de Más Madrid en el Congreso (grupo Sumar), 21/04/2026", "parlamento", "2026-04-21"],
+    pod: ["https://www.bolsamania.com/noticias/empresas/economia--podemos-tilda-de-regalo-el-paquete-fiscal-de-vivienda-del-psoe-y-rodriguez-defiende-la-regulacion--19828926.html", "Bolsamanía (Europa Press), Belarra en el Congreso, 28/05/2025", "declaracion", "2025-05-28"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B07: {
     psoe: ["https://theobjective.com/espana/politica/2025-05-23/psoe-impuesto-extranjeros-vivienda/", "Proposición de ley del Grupo Socialista sobre alquiler asequible (23 de mayo de 2025)", "parlamento", "2025-05-23"],
     pp: ["https://www.bolsamania.com/noticias/empresas/economia-el-pp-cree-que-las-medidas-en-vivienda-anunciadas-por-sanchez-son-intervencionistas-y-generaran-menos-oferta--18524064.html", "Bolsamanía (Europa Press), declaraciones de Borja Sémper, 13/01/2025", "declaracion", "2025-01-13"],
     vox: ["https://forbes.es/economia/821981/vox-propone-costear-las-ayudas-a-espanoles-para-vivienda-con-mas-impuestos-a-los-compradores-extranjeros/", "PNL de Vox sobre impuestos a compradores extranjeros (3-11-2025)", "parlamento", "2025-11-03"],
-    fa: ["https://theobjective.com/espana/politica/2025-04-10/congreso-compra-viviendas-extranjeros-apoyo-psoe/", "The Objective, votación en la Comisión de Vivienda del Congreso, 10/04/2025", "parlamento", "2025-04-10"]
+    fa: ["https://theobjective.com/espana/politica/2025-04-10/congreso-compra-viviendas-extranjeros-apoyo-psoe/", "The Objective, votación en la Comisión de Vivienda del Congreso, 10/04/2025", "parlamento", "2025-04-10"],
+    pod: ["https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/", "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024", "parlamento", "2024-06-16"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.vozpopuli.com/economia/juan-bravo-titular-de-vivienda-del-pp-planeamos-un-fondo-publico-privado-de-15000-millones.html", "Vozpópuli, entrevista a Juan Bravo, 02/11/2025", "declaracion", "2025-11-02"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41", "Programa electoral de Vox de 2023, medida 69", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   B09: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Una nueva generación de propietarios» (octubre de 2026)", "programa", "2026-10"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=162", "Programa electoral de Vox de 2023, medida 346", "programa", "2023-07"],
-    fa: ["https://www.menorca.info/actualidad/nacional/2024/02/13/2105407/yolanda-diaz-critica-avales-del-ico-por-fomentar-compra-avisa-subira-precio-vivienda.html", "Menorca.info (Europa Press), Yolanda Díaz sobre los avales del ICO, 13/02/2024", "declaracion", "2024-02-13"]
+    fa: ["https://www.menorca.info/actualidad/nacional/2024/02/13/2105407/yolanda-diaz-critica-avales-del-ico-por-fomentar-compra-avisa-subira-precio-vivienda.html", "Menorca.info (Europa Press), Yolanda Díaz sobre los avales del ICO, 13/02/2024", "declaracion", "2024-02-13"],
+    pod: ["https://theobjective.com/espana/politica/2023-05-09/podemos-psoe-electoralismo-dialogo-avanes/", "The Objective, declaraciones de Pablo Echenique, 09/05/2023", "declaracion", "2023-05-09"]
   },
   C01: {
     psoe: ["https://maldita.es/malditahemeroteca/20240731/ceder-tributos-cataluna-psoe/", "Maldita, julio de 2024", "declaracion", "2024-07"],
@@ -944,28 +982,35 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=231", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32", "Programa electoral de Vox de 2023, medida 47", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=121", "Programa electoral de Sumar de 2023, p. 121", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=121", "Programa electoral de Sumar de 2023, p. 121", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C04: {
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8", "Programa electoral de Vox de 2023, medida 1", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120", "Programa electoral de Sumar de 2023, p. 120", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120", "Programa electoral de Sumar de 2023, p. 120", "programa", "2023-07"],
+    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 24/06/2023", "declaracion", "2023-06-24"]
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
     pp: ["https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf", "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)", "declaracion", "2023-07-19"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16", "Programa electoral de Vox de 2023, medida 18", "programa", "2023-07"],
-    fa: ["https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html", "Ara, programa de Sumar de 2023", "programa", "2023"]
+    fa: ["https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html", "Ara, programa de Sumar de 2023", "programa", "2023"],
+    pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 24/06/2023", "declaracion", "2023-06-24"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C06: {
-    pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"]
+    pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C07: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"]
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=15", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"]
+    pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=15", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   C09: {
     psoe: ["https://www.ondavasca.com/el-congreso-apoya-tramitar-el-concierto-y-el-cupo-sin-cambios/", "Tramitación en lectura única del Concierto, el Convenio y el Cupo (21 de febrero de 2023)", "parlamento", "2023-02-21"],
@@ -976,24 +1021,35 @@ export const SOURCES = {
     pp: ["https://es.ara.cat/politica/feijoo-plantea-reforma-partido-gane-elecciones-tenga-plus-diputados_1_5783437.html", "Ara, entrevista de Feijóo en esRadio, 29/06/2026", "declaracion", "2026-06-29"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"]
   },
+  D02: {
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
+  },
   D03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127", "Programa electoral de Vox de 2023, medida 271", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/", "El Independiente, reacción al pacto del CGPJ, 25/06/2024", "declaracion", "2024-06-25"]
   },
   D04: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776", "BOE, Ley Orgánica 1/2024, de amnistía", "gobierno", "2024-06-11"],
     pp: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024", "parlamento", "2024-05-30"],
     vox: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Aprobación definitiva de la ley de amnistía (30-5-2024)", "parlamento", "2024-05-30"],
-    fa: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, aprobación de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"]
+    fa: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, aprobación de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"],
+    pod: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía, 30/05/2024", "parlamento", "2024-05-30"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
+  },
+  D05: {
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   D06: {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=117", "Programa electoral de Sumar de 2023, p. 117", "programa", "2023-07"]
   },
   D07: {
     psoe: ["https://es.ara.cat/politica/relacion-psoe-monarquia_1_5823620.html", "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026", "prensa", "2026-08-13"],
-    pp: ["https://www.moncloa.com/2022/04/06/feijoo-defiende-monarquia-1351763/", "Moncloa.com, declaraciones de Feijóo, 06/04/2022", "declaracion", "2022-04-06"]
+    pp: ["https://www.moncloa.com/2022/04/06/feijoo-defiende-monarquia-1351763/", "Moncloa.com, declaraciones de Feijóo, 06/04/2022", "declaracion", "2022-04-06"],
+    pod: ["https://www.noticiasdenavarra.com/politica/2024/06/16/miles-personas-piden-abolir-monarquia-8365299.html", "Noticias de Navarra (Europa Press), marcha republicana en Madrid, 16/06/2024", "declaracion", "2024-06-16"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   D08: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1002,7 +1058,8 @@ export const SOURCES = {
   D09: {
     psoe: ["https://www.menorca.info/actualidad/elecciones-23j/2023/09/26/2019575/debate-investidura-oscar-puente-representa-psoe.html", "Intervención de Óscar Puente en el debate de investidura (26 de septiembre de 2023)", "declaracion", "2023-09-26"],
     pp: ["https://www.elespanol.com/espana/politica/20260629/feijoo-responde-ingenieria-fiscal-sanchez-propone-dar-estabilidad-plus-escanos-votado/1003744304214_0.html", "El Español, propuesta de Feijóo, 29/06/2026", "declaracion", "2026-06-29"],
-    vox: ["https://www.elindependiente.com/espana/2023/01/23/vox-rechaza-que-gobierne-la-lista-mas-votada-como-sugiere-el-pp-para-no-dar-opciones-a-sanchez/", "Vox rechaza que gobierne la lista más votada como sugiere el PP para no dar opciones a Sánchez (El Independiente)", "declaracion", "2023-01-23"]
+    vox: ["https://www.elindependiente.com/espana/2023/01/23/vox-rechaza-que-gobierne-la-lista-mas-votada-como-sugiere-el-pp-para-no-dar-opciones-a-sanchez/", "Vox rechaza que gobierne la lista más votada como sugiere el PP para no dar opciones a Sánchez (El Independiente)", "declaracion", "2023-01-23"],
+    pod: ["https://theobjective.com/espana/politica/2023-01-23/podemos-iu-feijoo-analfabeto/", "The Objective (Europa Press), reacción a la propuesta de Feijóo, 23/01/2023", "declaracion", "2023-01-23"]
   },
   E01: {
     psoe: ["https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html", "El Debate, votación del 12 de febrero de 2026", "parlamento", "2026-02-12"],
@@ -1015,13 +1072,17 @@ export const SOURCES = {
   },
   E02: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023, medida 376", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023, medida 376", "programa", "2023-07"],
+    pod: ["https://www.ondavasca.com/podemos-rectifica-y-votara-en-contra-de-ampliar-la-prision-permanente-revisable/", "Onda Vasca, votación sobre ampliar la prisión permanente revisable, 29/03/2022", "parlamento", "2022-03-29"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   E03: {
     psoe: ["https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza", "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)", "prensa", "2024-10-03"],
     pp: ["https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/", "Onda Vasca, enmienda a la totalidad del PP en el Congreso, 12/12/2024", "parlamento", "2024-12-12"],
     vox: ["https://theobjective.com/espana/politica/2024-10-29/reforma-ley-mordaza-congreso/", "Toma en consideración de la reforma de la «ley mordaza» (29-10-2024)", "parlamento", "2024-10-29"],
-    fa: ["https://www.lamarea.com/2024/07/16/sumar-anuncia-un-acuerdo-para-derogar-la-ley-mordaza", "La Marea, Yolanda Díaz anuncia un acuerdo para derogar la «ley mordaza», 16/07/2024", "declaracion", "2024-07-16"]
+    fa: ["https://www.lamarea.com/2024/07/16/sumar-anuncia-un-acuerdo-para-derogar-la-ley-mordaza", "La Marea, Yolanda Díaz anuncia un acuerdo para derogar la «ley mordaza», 16/07/2024", "declaracion", "2024-07-16"],
+    pod: ["https://www.elsaltodiario.com/leyes-mordaza/diaz-anuncia-un-acuerdo-psoe-derogar-ley-mordaza", "El Salto, reacción al anuncio de reforma de la ley mordaza, 16/07/2024", "declaracion", "2024-07-16"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   E04: {
     psoe: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Debate de la proposición de Vox para rebajar la edad penal (18 de noviembre de 2025)", "parlamento", "2025-11-18"],
@@ -1035,7 +1096,9 @@ export const SOURCES = {
     psoe: ["https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html", "Ara, pacto PSOE-Sumar para reformar el Código Penal, 15/06/2026", "prensa", "2026-06-15"],
     pp: ["https://www.eldebate.com/espana/20260714/pp-vox-buscan-frenar-intento-socios-sanchez-despenalizar-ofensas-sentimientos-religiosos-injurias-corona_439144.html", "El Debate, enmiendas de totalidad del PP a la ley de Sumar sobre injurias a la Corona, 14/07/2026", "parlamento", "2026-07-14"],
     vox: ["https://theobjective.com/espana/2022-09-29/el-psoe-apoya-a-erc-y-bildu-para-que-la-despenalizacion-del-delito-de-injurias-a-la-corona-siga-adelante-en-el-congreso/", "El PSOE apoya a ERC y Bildu para que la despenalización del delito de injurias a la Corona siga adelante en el Congreso (The Objective)", "parlamento", "2022-09-29"],
-    fa: ["https://www.eldiario.es/politica/psoe-sumar-reactivan-despenalizacion-ofensas-sentimientos-religiosos-corona_1_13303774.html", "PSOE y Sumar reactivan la despenalización de las ofensas a los sentimientos religiosos y a la Corona (elDiario.es)", "parlamento", "2026-06-15"]
+    fa: ["https://www.eldiario.es/politica/psoe-sumar-reactivan-despenalizacion-ofensas-sentimientos-religiosos-corona_1_13303774.html", "PSOE y Sumar reactivan la despenalización de las ofensas a los sentimientos religiosos y a la Corona (elDiario.es)", "parlamento", "2026-06-15"],
+    pod: ["https://www.noticiasdenavarra.com/politica/2021/06/16/congreso-da-luz-verde-derogacion-2133997.html", "Noticias de Navarra, toma en consideración en el Congreso, 16/06/2021", "parlamento", "2021-06-16"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   E07: {
     psoe: ["https://orain.eus/es/politica/2025/01/10/el-psoe-impulsa-en-congreso-ley-para-limitar-acciones-judiciales-abusivas/", "Proposición de ley del PSOE sobre la acusación popular (10 de enero de 2025)", "parlamento", "2025-01-10"],
@@ -1046,13 +1109,17 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10", "Programa electoral de Vox de 2023, medida 10", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=111", "Programa electoral de Sumar de 2023, p. 111", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=111", "Programa electoral de Sumar de 2023, p. 111", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2022/11/02/tension-entre-vox-e-irene-montero-en-el-congreso-si-una-victima-no-tiene-el-asesino-adecuado-la-ignoran/amp/", "El Independiente, comparecencia de Irene Montero, 02/11/2022", "declaracion", "2022-11-02"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   E09: {
     psoe: ["https://www.publico.es/sociedad/psoe-vota-no-ley-mas-pais-cannabis.html", "Votación de la ley del cannabis de Más País (19 de octubre de 2021)", "parlamento", "2021-10-19"],
     pp: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "The Objective, rechazo en el Congreso de la regulación del cannabis de ERC, 22/02/2023", "parlamento", "2023-02-22"],
     vox: ["https://www.elindependiente.com/espana/2021/10/19/la-ley-del-cannabis-de-errejon-divide-a-la-izquierda-y-enerva-a-vox-quieren-a-los-jovenes-drogados-y-atolondrados/", "La ley del cannabis de Errejón divide a la izquierda y enerva a Vox (El Independiente)", "parlamento", "2021-10-19"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    erc: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "PSOE, PP y Vox vuelven a rechazar la regulación del cannabis", "parlamento", "2023-02-22"]
   },
   F01: {
     psoe: ["https://www.diaridetarragona.com/espana/250726/saiz-sobre-regularizacion-migrantes-conscientes-administracion-dar-respuesta.html", "Diari de Tarragona (EFE), declaraciones de la ministra Elma Saiz, 27/01/2026", "gobierno", "2026-01-27"],
@@ -1066,7 +1133,9 @@ export const SOURCES = {
   F02: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx", "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria", "gobierno", "2026-04-14"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103", "Programa electoral de Vox de 2023, medida 218", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/", "El Independiente, pacto Gobierno-Podemos de regularización, 26/01/2026", "prensa", "2026-01-26"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   F03: {
     psoe: ["https://www.menorca.info/actualidad/nacional/2026/05/03/2621747/ofensiva-del-psoe-toda-espana-europa-contra-prioridad-nacional-vox.html", "Menorca – Es Diari (EFE), comunicado del PSOE contra la «prioridad nacional», 03/05/2026", "prensa", "2026-05-03"],
@@ -1077,7 +1146,8 @@ export const SOURCES = {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx", "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)", "gobierno", "2024-11-19"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=18", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://forbes.es/economia/841921/vox-culpa-a-la-inmigracion-del-estancamiento-de-los-salarios-y-pide-cesar-la-llegada-masiva-de-extranjeros/", "Vox culpa a la inmigración del estancamiento de los salarios y pide cesar la llegada «masiva» de extranjeros (Forbes)", "parlamento", "2025-12-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   F05: {
     psoe: ["https://www.boe.es/eli/es/rdl/2025/03/18/2", "Real Decreto-ley 2/2025 sobre menores migrantes (18 de marzo de 2025)", "gobierno", "2025-03-18"],
@@ -1089,7 +1159,8 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.menorca.info/actualidad/nacional/2024/09/27/2249715/feijoo-propone-elevar-hasta-1800-euros-deducciones-por-hijo.html", "Menorca (Europa Press), Feijóo propone elevar las deducciones por hijo, 27/09/2024", "declaracion", "2024-09-27"],
     vox: ["https://theobjective.com/espana/2022-08-19/vox-propone-ayudas-a-las-familias-numerosas-frente-a-la-caida-de-la-natalidad-en-espana/", "Vox propone ayudas a las familias numerosas frente a la caída de la natalidad en España (The Objective)", "declaracion", "2022-08-19"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=93", "Programa electoral de Sumar de 2023, p. 93", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=93", "Programa electoral de Sumar de 2023, p. 93", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   F07: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1122,7 +1193,8 @@ export const SOURCES = {
     psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
     pp: ["https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/", "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024", "declaracion", "2024-05-24"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50", "Programa electoral de Vox de 2023, medida 92", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=11", "Programa electoral de Sumar de 2023, p. 11", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=11", "Programa electoral de Sumar de 2023, p. 11", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   G04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1133,13 +1205,15 @@ export const SOURCES = {
     psoe: ["https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/", "Debate de la moción de Podemos en el Congreso (13 de mayo de 2025)", "parlamento", "2025-05-13"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://www.esdiario.com/nacional/240918/143217/nueva-ruptura-seno-gobierno-psoe-vota-pp-vox-sumar-congreso.html", "Nueva ruptura en el seno del Gobierno: el PSOE vota con PP y Vox en contra de Sumar en el Congreso (ESdiario)", "parlamento", "2024-09-18"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=13", "Programa electoral de Sumar de 2023, p. 13", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=13", "Programa electoral de Sumar de 2023, p. 13", "programa", "2023-07"],
+    pod: ["https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/", "Forbes España (Europa Press), moción de Podemos en el Congreso, 13/05/2025", "parlamento", "2025-05-13"]
   },
   G06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=79", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=33", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120", "Programa electoral de Vox de 2023", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81", "Programa electoral de Sumar de 2023, p. 81", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81", "Programa electoral de Sumar de 2023, p. 81", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   G07: {
     psoe: ["https://es.ara.cat/sociedad/vivienda/gobierno-espanol-endurecera-restricciones-zonas-inundables-nuevos-edificios-no-podran-garaje_1_5799917.html", "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)", "gobierno", "2026-07-15"]
@@ -1153,7 +1227,9 @@ export const SOURCES = {
   G09: {
     psoe: ["https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857", "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico", "gobierno", "2025-06"],
     pp: ["https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf", "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)", "declaracion", "2026-04-27"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48", "Programa electoral de Sumar de 2023, p. 48", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48", "Programa electoral de Sumar de 2023, p. 48", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   H01: {
     psoe: ["https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html", "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025", "declaracion", "2025-06-19"],
@@ -1168,7 +1244,8 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=35", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134", "Programa electoral de Vox de 2023, medida 283", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=145", "Programa electoral de Sumar de 2023, p. 145", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=145", "Programa electoral de Sumar de 2023, p. 145", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   H03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1179,25 +1256,31 @@ export const SOURCES = {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831", "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)", "gobierno", "2025-09-24"],
     pp: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, votación del 8 de octubre de 2025", "parlamento", "2025-10-08"],
     vox: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "Convalidación del embargo de armas a Israel (8-10-2025)", "parlamento", "2025-10-08"],
-    fa: ["https://www.elsaltodiario.com/congreso-de-los-diputados/congreso-convalida-decreto-embargo-armas-votos-podemos-junts", "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025", "parlamento", "2025-10-08"]
+    fa: ["https://www.elsaltodiario.com/congreso-de-los-diputados/congreso-convalida-decreto-embargo-armas-votos-podemos-junts", "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025", "parlamento", "2025-10-08"],
+    pod: ["https://www.elsaltodiario.com/congreso-de-los-diputados/podemos-aprobacion-embargo-armas-israel", "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025", "parlamento", "2025-10-08"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   H05: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf", "Declaración conjunta España-Marruecos (4 de diciembre de 2025)", "gobierno", "2025-12-04"],
     pp: ["https://www.elindependiente.com/espana/2025/11/20/pp-frente-polisario-canarias/", "El Independiente, el PP y las proposiciones sobre el Sáhara aprobadas en el Congreso, 20/11/2025", "parlamento", "2025-11-20"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=141", "Programa electoral de Sumar de 2023, p. 141", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=141", "Programa electoral de Sumar de 2023, p. 141", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2025/11/12/sumar-podemos-y-bildu-exigen-a-sanchez-que-rectifique-en-el-sahara-deje-de-estar-plegado-a-la-dictadura-marroqui/amp/", "El Independiente, sesión de control en el Congreso, 12/11/2025", "declaracion", "2025-11-12"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   H06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=264", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=36", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=92", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=139", "Programa electoral de Sumar de 2023, p. 139", "programa", "2023-07"],
-    pod: ["https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html", "El Debate, abril de 2026", "parlamento", "2026-04"]
+    pod: ["https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html", "El Debate, abril de 2026", "parlamento", "2026-04"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   H07: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=261", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=39", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/espana/politica/2023-02-09/congreso-aprueba-ley-cooperacion-ayuda-desarrollo/", "El Congreso aprueba la Ley de Cooperación que busca aumentar la ayuda al desarrollo (The Objective)", "parlamento", "2023-02-09"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=148", "Programa electoral de Sumar de 2023, p. 148", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=148", "Programa electoral de Sumar de 2023, p. 148", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   H08: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/intervenciones/Documents/2026/260414-rdp-viaje-a-china.pdf", "Rueda de prensa de Pedro Sánchez en Pekín (14 de abril de 2026)", "declaracion", "2026-04-14"],
@@ -1209,7 +1292,8 @@ export const SOURCES = {
     psoe: ["https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html", "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024", "prensa", "2024-10-15"],
     pp: ["https://www.eldiario.es/politica/feijoo-evita-respaldar-centros-deportacion-refugiados-meloni-avalado-partido-popular-europeo_1_11740606.html", "eldiario.es, Feijóo en la cumbre del PPE, 17/10/2024", "declaracion", "2024-10-17"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102", "Programa electoral de Vox de 2023, medida 211", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149", "Programa electoral de Sumar de 2023, p. 149", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149", "Programa electoral de Sumar de 2023, p. 149", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   I01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -1222,7 +1306,9 @@ export const SOURCES = {
   },
   I02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=160", "Programa electoral de Sumar de 2023, p. 160", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=160", "Programa electoral de Sumar de 2023, p. 160", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I03: {
     psoe: ["https://www.boe.es/eli/es/rd/2025/10/07/905", "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)", "gobierno", "2025-10-07"],
@@ -1233,25 +1319,30 @@ export const SOURCES = {
   },
   I05: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 49", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 49", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=115", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     fa: ["https://www.aprendemas.com/es/blog/becas/proponen-que-los-estudiantes-no-devuelvan-las-becas-por-no-conseguir-unos-minimos-academicos-176533", "Proponen que los estudiantes no devuelvan las becas por no conseguir unos mínimos académicos (Aprendemas)", "parlamento", "2024-12-13"]
   },
   I07: {
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I08: {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=13", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151", "Programa electoral de Vox de 2023", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=56", "Programa electoral de Sumar de 2023, p. 56", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=56", "Programa electoral de Sumar de 2023, p. 56", "programa", "2023-07"],
+    pod: ["https://www.elindependiente.com/espana/2026/07/14/ione-belarra-tauromaquia-uci/", "El Independiente, rueda de prensa de Ione Belarra, 14/07/2026", "declaracion", "2026-07-14"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I09: {
     psoe: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "Recurso ante el TC por el catalán en la sanidad balear (29 de noviembre de 2023)", "parlamento", "2023-11-29"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox de 2023", "programa", "2023-07"],
-    fa: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "El PSOE y Sumar recurren ante el TC la supresión de la exigencia del catalán en la sanidad de Baleares (El Debate)", "parlamento", "2023-11-29"]
+    fa: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "El PSOE y Sumar recurren ante el TC la supresión de la exigencia del catalán en la sanidad de Baleares (El Debate)", "parlamento", "2023-11-29"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   J01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -1264,14 +1355,17 @@ export const SOURCES = {
   },
   J02: {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox de 2023, medida 109", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"],
+    pod: ["https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html", "Redacción Médica, proposición de ley de Podemos, 01/04/2024", "parlamento", "2024-04-01"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   J03: {
     pp: ["https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html", "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025", "prensa", "2025-05-24"],
     fa: ["https://www.menorca.info/actualidad/nacional/2025/01/15/2306195/sanidad-quiere-jefes-servicio-directivos-del-sns-puedan-trabajar-privada.html", "Menorca.info (EFE), propuesta de Estatuto Marco de Mónica García, 15/01/2025", "gobierno", "2025-01-15"]
   },
   J04: {
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17", "Programa electoral de Sumar de 2023, p. 17", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17", "Programa electoral de Sumar de 2023, p. 17", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   J05: {
     psoe: ["https://www.boe.es/eli/es/l/2022/12/20/27", "Ley 27/2022 de evaluación de políticas públicas (20 de diciembre de 2022)", "gobierno", "2022-12-20"],
@@ -1285,25 +1379,30 @@ export const SOURCES = {
     psoe: ["https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/04/2025-04-30-2/NPConciertoMUFACE.pdf", "Firma del concierto de MUFACE 2025-2027 (30 de abril de 2025)", "gobierno", "2025-04-30"],
     pp: ["https://www.redaccionmedica.com/politica/20241214/el-pp-reclama-un-modelo-futuro-para-muface-sostenible-solvente/236954_0.html", "Redacción Médica, proposición no de ley del PP sobre Muface, 14/12/2024", "parlamento", "2024-12-14"],
     vox: ["https://www.redaccionmedica.com/politica/20241120/el-congreso-calienta-motores-por-un-aumento-de-demanda-del-sns-muface/236573_0.html", "El Congreso calienta motores por un «aumento de demanda» del SNS por Muface (Redacción Médica)", "parlamento", "2024-11-20"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"],
+    pod: ["https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html", "Redacción Médica, proposición de ley de Podemos, 01/04/2024", "parlamento", "2024-04-01"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   J08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.redaccionmedica.com/politica/20261023/sanidad-hara-publico-el-decreto-fallido-de-las-listas-espera-queremos-que-los-ciudadanos-puedan-verlo/363279_0.html", "Redacción Médica, Consejo Interterritorial del 23/10/2026", "gobierno", "2026-10-23"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56", "Programa electoral de Vox de 2023, medida 102", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   K01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     pp: ["https://www.newtral.es/acuerdo-mercosur-maria-guardiola-pp-europeo-sanchez-factcheck/20260129/", "Newtral, enero de 2026", "prensa", "2026-01"],
     vox: ["https://www.eldebate.com/campo-y-caza/20260121/parlamento-europeo-bloquea-entrada-vigor-trato-mercosur-menos-ano_376697.html", "El Debate, votación en el Parlamento Europeo sobre remitir el acuerdo UE-Mercosur al TJUE, 21/01/2026", "parlamento", "2026-01-21"],
     fa: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
-    pod: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"]
+    pod: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   K02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=67", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=51", "Programa electoral de Vox de 2023", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=61", "Programa electoral de Sumar de 2023, p. 61", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=61", "Programa electoral de Sumar de 2023, p. 61", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   K03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1315,11 +1414,13 @@ export const SOURCES = {
     psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025", "parlamento", "2025-04-03"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023, medida 323.1", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52", "Programa electoral de Sumar de 2023, p. 52", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52", "Programa electoral de Sumar de 2023, p. 52", "programa", "2023-07"],
+    pod: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"]
   },
   K05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    fa: ["https://www.eldiario.es/aragon/politica/cha-verdes-equo-piden-eliminar-50-macrogranjas-2030-proteger-salud-clima_1_12678029.html", "elDiario.es, PNL de CHA y Verdes Equo en el grupo Sumar, 12/10/2025", "parlamento", "2025-10-12"]
+    fa: ["https://www.eldiario.es/aragon/politica/cha-verdes-equo-piden-eliminar-50-macrogranjas-2030-proteger-salud-clima_1_12678029.html", "elDiario.es, PNL de CHA y Verdes Equo en el grupo Sumar, 12/10/2025", "parlamento", "2025-10-12"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"]
   },
   K06: {
     psoe: ["https://www.menorca.info/actualidad/nacional/2025/12/13/2530867/acuerda-posibilidades-pesca-para-2026-143-dias-capturas-mediterraneo.html", "Declaraciones de Luis Planas tras el Consejo de Pesca de la UE (13 de diciembre de 2025)", "declaracion", "2025-12-13"],
@@ -1336,7 +1437,8 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=63", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=30", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110", "Programa electoral de Vox de 2023", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"],
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
   },
   L01: {
     psoe: ["https://www.diaridetarragona.com/espana/256561/gobierno-aprueba-proyecto-reforma-constitucional-proteger-aborto.html", "Diari de Tarragona (ACN), Consejo de Ministros del 07/04/2026", "gobierno", "2026-04-07"],
@@ -1351,23 +1453,30 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172", "Programa electoral de Vox de 2023, medida 369", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99", "Programa electoral de Sumar de 2023, p. 99", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99", "Programa electoral de Sumar de 2023, p. 99", "programa", "2023-07"],
+    pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "programa", "2024-06-02"],
+    erc: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "El Congreso de los Diputados aprueba con mayoría absoluta la ley de eutanasia", "parlamento", "2021-03-18"]
   },
   L03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
     pp: ["https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/", "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025", "prensa", "2025-04-27"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173", "Programa electoral de Vox de 2023, medida 375", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=114", "Programa electoral de Sumar de 2023, p. 114", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=114", "Programa electoral de Sumar de 2023, p. 114", "programa", "2023-07"],
+    pod: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023, de 28 de febrero (ley trans)", "gobierno", "2023-02-28"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   L04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html", "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023", "prensa", "2023-03-29"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"],
+    pod: ["https://www.eldebate.com/sociedad/20230329/psoe-podemos-contra-vientres-alquiler-mientras-pp-no-define-posicion_104319.html", "El Debate, declaraciones de Irene Montero, 29/03/2023", "declaracion", "2023-03-29"]
   },
   L05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=72", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    fa: ["https://www.noticiasdenavarra.com/sociedad/2024/07/19/sumar-insta-gobierno-suprimir-privilegios-8502884.html", "Sumar insta al Gobierno a suprimir los «privilegios existentes» para la Iglesia Católica (Noticias de Navarra)", "parlamento", "2024-07-19"]
+    fa: ["https://www.noticiasdenavarra.com/sociedad/2024/07/19/sumar-insta-gobierno-suprimir-privilegios-8502884.html", "Sumar insta al Gobierno a suprimir los «privilegios existentes» para la Iglesia Católica (Noticias de Navarra)", "parlamento", "2024-07-19"],
+    pod: ["https://diariodeavisos.elespanol.com/2021/10/podemos-pide-eliminar-los-privilegios-de-la-iglesia/", "Diario de Avisos (El Español), proposición no de ley de Unidas Podemos, 15/10/2021", "parlamento", "2021-10-15"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   L06: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/Paginas/2025/220125-sanchez-foro-economico-mundial-davos.aspx", "Intervención de Pedro Sánchez en Davos (22 de enero de 2025)", "declaracion", "2025-01-22"],
@@ -1384,13 +1493,16 @@ export const SOURCES = {
     psoe: ["https://www.boe.es/eli/es/lo/2024/08/01/2", "Ley Orgánica 2/2024 de representación paritaria (1 de agosto de 2024)", "gobierno", "2024-08-01"],
     pp: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "The Objective, aprobación de la ley de paridad en el Congreso, 27/06/2024", "parlamento", "2024-06-27"],
     vox: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)", "parlamento", "2024-06-27"],
-    fa: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)", "parlamento", "2024-06-27"]
+    fa: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)", "parlamento", "2024-06-27"],
+    pod: ["https://www.elindependiente.com/espana/2024/06/27/el-congreso-aprueba-la-ley-de-paridad-que-no-limita-la-presencia-institucional-de-mujeres-y-que-cuela-el-techo-de-gasto/amp/", "El Independiente, aprobación de la ley de paridad en el Congreso, 27/06/2024", "parlamento", "2024-06-27"],
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   L09: {
     psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
     pp: ["https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/", "Orain, febrero de 2026", "parlamento", "2026-02"],
     vox: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "Proposición de ley de Vox contra el burka y el niqab (17-2-2026)", "parlamento", "2026-02-17"],
-    fa: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"]
+    fa: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
+    erc: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "El PSOE se abre a negociar con Junts la prohibición del burka tras tumbar una iniciativa similar de Vox", "parlamento", "2026-02-17"]
   }
 };
 
@@ -1402,312 +1514,414 @@ export const JUSTIF = {
     psoe: "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
     pp: "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social.",
     vox: "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
-    fa: "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32."
+    fa: "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32.",
+    pod: "Votó contra las enmiendas que tumbaron la ley de 37,5 horas; su campaña de 2026 pide una jornada de 30 horas.",
+    erc: "ERC votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
   },
   A03: {
     psoe: "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
     pp: "El PP promete suprimir el impuesto estatal de solidaridad sobre las grandes fortunas, que ve como una invasión de la autonomía fiscal.",
     vox: "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
-    fa: "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %."
+    fa: "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
+    pod: "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
+    erc: "El programa propone crear impuestos sobre las grandes fortunas."
   },
   A04: {
     psoe: "Su programa de 2023 defiende la consolidación fiscal, pero con más ingresos y reglas europeas compatibles con la inversión.",
     pp: "Rechaza el aumento de la deuda pública y promete medidas para recortar el gasto superfluo.",
     vox: "Vox se fija como objetivo eliminar progresivamente el déficit y la deuda, con presupuestos de base cero.",
-    fa: "Rechaza que los límites de déficit y deuda condicionen la inversión pública y el gasto social."
+    fa: "Rechaza que los límites de déficit y deuda condicionen la inversión pública y el gasto social.",
+    pod: "Su programa europeo de 2024 pide reformar las reglas fiscales y no fijar límites de déficit iguales para todos.",
+    erc: "Estimación: ERC prioriza el gasto social y critica la deuda por gasto militar, no la contención del gasto."
   },
   A05: {
     psoe: "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos.",
-    fa: "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones."
+    fa: "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones.",
+    pod: "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
+    erc: "La ponencia de 2025 pide rebajar la edad real de jubilación, lo contrario de retrasarla."
   },
   A06: {
     psoe: "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
     pp: "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250.",
-    vox: "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas."
+    vox: "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas.",
+    pod: "Estimación: contraria a suavizar obligaciones laborales de las empresas, en línea con su defensa de los derechos laborales.",
+    erc: "Estimación: ERC defiende reforzar los derechos laborales y no rebajar obligaciones de las empresas."
   },
   A07: {
     psoe: "Su Gobierno impulsó la ley que rebajó el límite de pagos en efectivo de 2.500 a 1.000 euros contra el fraude fiscal.",
     pp: "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite.",
-    vox: "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros."
+    vox: "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
+    pod: "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
+    erc: "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite."
   },
   A08: {
     psoe: "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
     pp: "Pone el foco en subir el salario medio y la productividad, sin rechazar las subidas del salario mínimo.",
     vox: "Vox rechaza subir el salario mínimo si encarece a las empresas y prefiere bajar cotizaciones e impuestos.",
-    fa: "Propone seguir subiendo el salario mínimo por encima del IPC, como hizo el Ministerio de Trabajo."
+    fa: "Propone seguir subiendo el salario mínimo por encima del IPC, como hizo el Ministerio de Trabajo.",
+    pod: "Belarra exigió en el Congreso subir ya el salario mínimo a 1.800 euros, lejos de frenarlo.",
+    erc: "El programa propone subir el salario mínimo a 1.250 euros, no frenarlo."
   },
   A09: {
     psoe: "Su Gobierno ordenó a la SEPI comprar hasta el 10 % de Telefónica por considerarla una empresa estratégica.",
     pp: "Propone reducir el tamaño del sector empresarial público y critica la influencia del Gobierno en empresas del IBEX 35.",
-    fa: "Quiere reforzar el sector público empresarial y convertir la SEPI en una agencia industrial pública."
+    fa: "Quiere reforzar el sector público empresarial y convertir la SEPI en una agencia industrial pública.",
+    pod: "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones.",
+    erc: "Estimación: sin postura conocida de ERC sobre vender participaciones públicas."
   },
   A10: {
     psoe: "La dirección del PSOE plantea fijar un mínimo en sucesiones para frenar las bonificaciones casi totales de algunas comunidades.",
     vox: "Vox propone suprimir el impuesto de sucesiones y donaciones en todo el territorio nacional.",
-    fa: "Propone un mínimo estatal en el impuesto de sucesiones que las comunidades no puedan rebajar."
+    fa: "Propone un mínimo estatal en el impuesto de sucesiones que las comunidades no puedan rebajar.",
+    pod: "Unidas Podemos votó contra la propuesta de Vox de eliminar el impuesto de sucesiones.",
+    erc: "La ponencia de 2025 propone aumentar la tributación de las herencias."
   },
   B02: {
     psoe: "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
     pp: "El PP apuesta por aumentar la oferta (un millón de viviendas, suelo y licencias rápidas) y rechaza la regulación de precios de la ley de vivienda.",
     vox: "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
-    fa: "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas."
+    fa: "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
+    pod: "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
+    erc: "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta."
   },
   B03: {
     psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
     pp: "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
-    vox: "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas."
+    vox: "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
+    pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
+    erc: "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha."
   },
   B04: {
     pp: "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal.",
     vox: "Vox votó contra el decreto que prorrogaba la suspensión de desahucios de familias vulnerables.",
-    fa: "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general."
+    fa: "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
+    pod: "Apoyó el decreto que prohibía desahuciar a personas vulnerables y criticó su caída en el Congreso.",
+    erc: "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables."
   },
   B05: {
-    psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona."
+    psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
+    pod: "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
+    erc: "La ponencia defiende intervenir los usos turísticos de las viviendas."
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
     pp: "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
-    fa: "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios."
+    fa: "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
+    pod: "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
+    erc: "La ponencia defiende el recargo del IBI a las viviendas desocupadas."
   },
   B07: {
     psoe: "El Grupo Socialista registró en 2025 un impuesto de hasta el 100 % sobre compras de vivienda de no residentes fuera de la UE.",
     pp: "El portavoz del PP calificó de intervencionista gravar la compra de vivienda por no residentes de fuera de la UE.",
     vox: "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda.",
-    fa: "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto."
+    fa: "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto.",
+    pod: "Propuso en el Congreso una reforma legal para limitar la compra de viviendas por no residentes.",
+    erc: "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes."
   },
   B08: {
     psoe: "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
     pp: "Prefiere un fondo público-privado y cerraría la empresa estatal de vivienda en lugar de construir directamente.",
     vox: "Vox prefiere vivienda social en propiedad o alquiler con opción a compra y la colaboración público-privada.",
-    fa: "Propone un parque público de alquiler de dos millones de viviendas con el 1 % del PIB anual."
+    fa: "Propone un parque público de alquiler de dos millones de viviendas con el 1 % del PIB anual.",
+    pod: "Su programa europeo de 2024 propone consolidar un gran parque público de vivienda y alquiler social.",
+    erc: "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada."
   },
   B09: {
     psoe: "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
     pp: "Promete avales públicos de hasta el 100 % para que los jóvenes compren vivienda.",
     vox: "Vox propone préstamos sin intereses o avales bancarios para parejas jóvenes con hijos.",
-    fa: "Criticó los avales públicos para la compra de primera vivienda por encarecer los precios."
+    fa: "Criticó los avales públicos para la compra de primera vivienda por encarecer los precios.",
+    pod: "Unidas Podemos pidió rectificar el «error» de los avales del ICO al 20 % de la hipoteca de la primera vivienda.",
+    erc: "Estimación: ERC prioriza el alquiler protegido sobre los avales a la compra."
+  },
+  C01: {
+    pod: "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán."
   },
   C02: {
     psoe: "Su Gobierno propuso en 2026 un modelo que da más recursos a las comunidades por debajo de la media por habitante.",
     vox: "Estimación: Vox propone un Estado unitario y recentralizar competencias, sin postura clara sobre más recursos para las comunidades peor financiadas.",
-    fa: "Registró una iniciativa para corregir la infrafinanciación de las comunidades por debajo de la media."
+    fa: "Registró una iniciativa para corregir la infrafinanciación de las comunidades por debajo de la media.",
+    pod: "Estimación: sin postura nacional publicada sobre el reparto de la financiación autonómica.",
+    erc: "Estimación: ERC pide ordinalidad y un modelo singular para Cataluña, no criterios por habitante."
   },
   C03: {
     psoe: "Su programa de 2023 propone llevar a la Constitución la descentralización ya alcanzada, no devolver competencias al Estado.",
     pp: "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades.",
     vox: "Vox propone devolver al Estado las competencias de educación.",
-    fa: "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación."
+    fa: "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación.",
+    erc: "El programa defiende las competencias educativas autonómicas frente a la recentralización."
   },
   C04: {
     psoe: "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada.",
     vox: "Vox propone un Estado unitario, no federal, y limitar la capacidad legislativa autonómica.",
-    fa: "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal."
+    fa: "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
+    pod: "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
+    erc: "Estimación: ERC busca la independencia por referéndum, no un Estado federal."
   },
   C05: {
     psoe: "Rechaza el referéndum de autodeterminación: frente a la propuesta de Junts, ofrece desarrollar el Estatut de 2006.",
     pp: "El PP sostiene que un referéndum de autodeterminación no cabe en la Constitución y propone tipificar como delito convocarlo.",
-    vox: "Vox propone reintroducir el delito de referéndum ilegal e ilegalizar a los partidos separatistas."
+    vox: "Vox propone reintroducir el delito de referéndum ilegal e ilegalizar a los partidos separatistas.",
+    pod: "Belarra afirma que Podemos siempre ha defendido garantizar el derecho a decidir.",
+    erc: "El programa se compromete a negociar un referéndum de autodeterminación."
   },
   C06: {
     pp: "Propone potenciar las diputaciones provinciales como herramienta al servicio de los pequeños municipios.",
     vox: "Estimación: no consta una postura de Vox sobre las diputaciones; su programa propone un Estado unitario.",
-    fa: "Estimación: no consta una postura nacional verificada de Sumar sobre suprimir las diputaciones provinciales."
+    fa: "Estimación: no consta una postura nacional verificada de Sumar sobre suprimir las diputaciones provinciales.",
+    erc: "El programa propone suprimir las diputaciones y traspasar sus recursos."
   },
   C07: {
     psoe: "Su programa de 2023 propone un estatuto propio para los municipios pequeños y reforzar su autonomía, no fusionarlos.",
-    fa: "Estimación: no consta una postura verificada de Sumar sobre fusionar o mancomunar por ley los municipios pequeños."
+    fa: "Estimación: no consta una postura verificada de Sumar sobre fusionar o mancomunar por ley los municipios pequeños.",
+    pod: "Estimación: contraria a fusiones obligatorias que alejen servicios de la España rural.",
+    erc: "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria."
   },
   C08: {
     psoe: "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
     pp: "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos.",
-    fa: "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial."
+    fa: "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
+    pod: "Estimación: sin postura reciente publicada sobre la reforma del Senado.",
+    erc: "ERC propone suprimir el Senado en lugar de reconvertirlo."
   },
   C09: {
     psoe: "El PSOE apoyó en 2023 tramitar sin cambios las reformas del Concierto vasco, el Convenio navarro y el Cupo.",
     vox: "Vox votó en el Congreso contra tramitar sin cambios el Concierto, el Convenio navarro y el cálculo del Cupo 2022-2026.",
-    fa: "Sus partidos están divididos: su portavoz económico criticó el cupo vasco, pero esa posición es minoritaria en Movimiento Sumar."
+    fa: "Sus partidos están divididos: su portavoz económico criticó el cupo vasco, pero esa posición es minoritaria en Movimiento Sumar.",
+    pod: "Estimación: sin postura reciente publicada sobre el concierto y el convenio."
   },
   D01: {
     psoe: "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
-    pp: "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional."
+    pp: "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional.",
+    erc: "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias."
   },
   D02: {
     pp: "Estimación: el PP no ha propuesto desbloquear las listas; sus propuestas electorales se centran en premiar a la lista más votada.",
     vox: "Estimación: no consta una postura de Vox sobre desbloquear las listas electorales.",
-    fa: "Estimación: su programa plantea actualizar la LOREG, pero no concreta listas desbloqueadas o abiertas."
+    fa: "Estimación: su programa plantea actualizar la LOREG, pero no concreta listas desbloqueadas o abiertas.",
+    pod: "Estimación: sin postura reciente publicada sobre listas desbloqueadas.",
+    erc: "La ponencia contempla listas desbloqueadas para que el votante ordene a los candidatos."
   },
   D03: {
     psoe: "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
     pp: "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ.",
     vox: "Vox propone que todos los vocales del CGPJ sean designados o propuestos por los propios jueces.",
-    fa: "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces."
+    fa: "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
+    pod: "Amenazó con romper con el PSOE si el pacto del CGPJ dejaba que los jueces eligieran a los jueces.",
+    erc: "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan."
   },
   D04: {
     psoe: "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
     pp: "El PP votó contra la Ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley.",
     vox: "Vox votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso.",
-    fa: "Votó a favor de la ley de amnistía de 2024 aprobada por las Cortes."
+    fa: "Votó a favor de la ley de amnistía de 2024 aprobada por las Cortes.",
+    pod: "Sus diputados votaron a favor de la ley de amnistía en su aprobación definitiva.",
+    erc: "El programa propone una ley de amnistía, que ERC luego apoyó en el Congreso."
   },
   D05: {
-    vox: "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años."
+    vox: "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
+    erc: "El programa califica las puertas giratorias de corrupción institucionalizada."
   },
   D06: {
     psoe: "Estimación: el PSOE no ha propuesto fijar un plazo obligatorio para votar las ILP; en 2016 solo planteó rebajar las firmas exigidas.",
     pp: "Estimación: no consta postura del PP sobre plazos obligatorios para votar las iniciativas legislativas populares.",
     vox: "Estimación: no consta una postura de Vox sobre votar las ILP en un plazo fijo.",
-    fa: "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo."
+    fa: "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo.",
+    erc: "Estimación: ERC apoya la participación ciudadana y las ILP, sin propuesta concreta de plazo."
   },
   D07: {
     psoe: "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
     pp: "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición.",
     vox: "Estimación: Vox defiende la Corona y no se le conoce apoyo a una consulta sobre la forma de Estado.",
-    fa: "Estimación: sus partidos (IU, Comuns) defienden la república, pero no consta una petición reciente de referéndum."
+    fa: "Estimación: sus partidos (IU, Comuns) defienden la república, pero no consta una petición reciente de referéndum.",
+    pod: "Belarra encabezó una marcha por la república y dijo que no habrá democracia plena sin ella.",
+    erc: "El programa apoya convocar un referéndum sobre monarquía o república."
   },
   D08: {
     pp: "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
     vox: "El programa de Vox critica el abuso del real decreto-ley por los últimos gobiernos y promete corregirlo.",
-    fa: "Estimación: como socio de Gobierno ha apoyado decretos-ley y no consta propuesta suya para limitarlos."
+    fa: "Estimación: como socio de Gobierno ha apoyado decretos-ley y no consta propuesta suya para limitarlos.",
+    pod: "Estimación: sin postura publicada sobre limitar los decretos-ley.",
+    erc: "Estimación: sin postura conocida de ERC sobre limitar los decretos-ley."
   },
   D09: {
     psoe: "El PSOE rechaza que la lista más votada tenga derecho a gobernar y defiende que gobierna quien suma mayoría.",
     pp: "Feijóo propone dar un plus de escaños al partido más votado para facilitar que gobierne.",
     vox: "Jorge Buxadé, vicepresidente de Vox, rechazó la propuesta del PP de que gobierne la lista más votada.",
-    fa: "Estimación: ha apoyado mayorías parlamentarias alternativas; no consta una declaración específica sobre la lista más votada."
+    fa: "Estimación: ha apoyado mayorías parlamentarias alternativas; no consta una declaración específica sobre la lista más votada.",
+    pod: "Criticó la propuesta de que gobierne la lista más votada por «subvertir la Constitución por la puerta de atrás».",
+    erc: "Estimación: ERC rechaza que gobierne la lista más votada y apoya mayorías parlamentarias."
   },
   E02: {
     pp: "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla.",
     vox: "Vox propone ampliar la prisión permanente a los violadores, no derogarla.",
-    fa: "Estimación: se opone a la prisión permanente revisable; no consta una iniciativa propia reciente para derogarla."
+    fa: "Estimación: se opone a la prisión permanente revisable; no consta una iniciativa propia reciente para derogarla.",
+    pod: "Unidas Podemos votó contra ampliar la prisión permanente revisable, fiel a su rechazo tradicional a esta pena.",
+    erc: "El programa propone derogar la prisión permanente revisable."
   },
   E03: {
     psoe: "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
     pp: "El PP aprobó la ley en 2015, votó contra su reforma y defiende el texto vigente como protección de las fuerzas de seguridad.",
     vox: "Vox votó incluso contra tramitar la reforma de la Ley de Seguridad Ciudadana, que no la derogaba.",
-    fa: "Defiende derogar la «ley mordaza»; su programa promete derogar sus aspectos que limitan reunión y expresión."
+    fa: "Defiende derogar la «ley mordaza»; su programa promete derogar sus aspectos que limitan reunión y expresión.",
+    pod: "Exige una derogación ambiciosa de la ley mordaza, incluidas las devoluciones en caliente y las pelotas de goma.",
+    erc: "El programa propone derogar la «ley mordaza»."
   },
   E04: {
     psoe: "El PSOE rechazó en 2025 la proposición de Vox para rebajar la edad penal de 14 a 12 años.",
     pp: "Se abstuvo ante la ley que rebajaba la edad penal a 12 años y pidió escuchar a expertos antes de reformar.",
     vox: "El programa de Vox promete bajar la edad penal y endurecer la ley del menor para delitos sexuales graves.",
-    fa: "Estimación: no consta una votación o declaración verificada de Sumar sobre rebajar la edad penal de 14 años."
+    fa: "Estimación: no consta una votación o declaración verificada de Sumar sobre rebajar la edad penal de 14 años.",
+    erc: "Estimación: ERC defiende un enfoque garantista y rechazaría rebajar la edad penal."
   },
   E05: {
     psoe: "Su Gobierno defendió en la UE limitar el reconocimiento facial en tiempo real, pero con excepciones de seguridad.",
     pp: "Estimación: el programa de 2023 apuesta por la videovigilancia y el patrullaje inteligente, sin citar el reconocimiento facial.",
     vox: "Estimación: Vox defiende más medios policiales; no consta una postura sobre el reconocimiento facial.",
-    fa: "Estimación: su programa solo limita el reconocimiento facial en el teletrabajo; no consta postura sobre uso policial."
+    fa: "Estimación: su programa solo limita el reconocimiento facial en el teletrabajo; no consta postura sobre uso policial.",
+    pod: "Estimación: favorable a prohibirlo por su defensa del control democrático de la policía.",
+    erc: "Estimación: ERC prioriza libertades civiles frente a la vigilancia masiva."
   },
   E06: {
     psoe: "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona.",
     pp: "Presentó una enmienda de totalidad contra la ley de Sumar que suprimía las injurias a la Corona.",
     vox: "Vox presentó una enmienda a la totalidad contra la ley de ERC y EH Bildu para despenalizar las injurias a la Corona.",
-    fa: "Acordó con el PSOE reactivar en el Congreso su proposición de ley para eliminar del Código Penal las injurias a la Corona."
+    fa: "Acordó con el PSOE reactivar en el Congreso su proposición de ley para eliminar del Código Penal las injurias a la Corona.",
+    pod: "El Congreso admitió a trámite la ley de Unidas Podemos para derogar los delitos de injurias a la Corona.",
+    erc: "El programa propone despenalizar las injurias a la Corona."
   },
   E07: {
     psoe: "El PSOE registró en 2025 una proposición de ley para restringir quién puede ejercer la acusación popular.",
     pp: "Rechaza la proposición del PSOE para limitar la acusación popular, que considera un ataque al Poder Judicial.",
     vox: "Estimación: Vox ejerce la acusación popular en varias causas; no consta una postura pública sobre limitarla.",
-    fa: "Su portavoz Ernest Urtasun rechazó limitar la acusación popular, que considera un instrumento fundamental en democracia."
+    fa: "Su portavoz Ernest Urtasun rechazó limitar la acusación popular, que considera un instrumento fundamental en democracia.",
+    pod: "Estimación: sin postura publicada sobre limitar la acusación popular.",
+    erc: "Estimación: ERC ha criticado el uso político de la justicia, sin postura localizada sobre esta reforma."
   },
   E08: {
     psoe: "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
     pp: "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás».",
     vox: "Vox propone derogar la Ley Integral de Violencia de Género y aprobar una ley para todas las víctimas de violencia doméstica.",
-    fa: "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos."
+    fa: "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos.",
+    pod: "Irene Montero criticó a quienes sostienen que la violencia no tiene género, frente a la ley específica.",
+    erc: "El programa refuerza la jurisdicción específica de violencia machista."
   },
   E09: {
     psoe: "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
     pp: "Votó contra la toma en consideración de la ley de ERC para regular el cannabis terapéutico y recreativo.",
     vox: "Vox votó en el Congreso contra tramitar la ley de Más País para regular el cannabis.",
-    fa: "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial."
+    fa: "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial.",
+    pod: "Su programa europeo de 2024 propone despenalizar y legalizar el cannabis también para uso recreativo.",
+    erc: "ERC presentó en el Congreso una ley de regulación integral del cannabis, también recreativo."
   },
   F02: {
     psoe: "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular.",
     vox: "Vox propone la expulsión de quienes entren ilegalmente y suprimir el arraigo como vía de regularización.",
-    fa: "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular."
+    fa: "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
+    pod: "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
+    erc: "El programa propone regularizar a las personas en situación irregular."
   },
   F03: {
     psoe: "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
-    vox: "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas."
+    vox: "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
+    erc: "Estimación: ERC defiende la igualdad de derechos con independencia del origen."
   },
   F04: {
     psoe: "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
     pp: "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos.",
     vox: "Una proposición no de ley de Vox pide frenar la llegada de extranjeros y cubrir los empleos vacantes con trabajadores españoles.",
-    fa: "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente."
+    fa: "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
+    erc: "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras."
   },
   F05: {
     psoe: "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
     pp: "Votó contra el decreto ley que fija un reparto obligatorio y permanente de menores migrantes entre comunidades.",
     vox: "Vox votó contra el decreto ley que reparte entre comunidades a los menores migrantes no acompañados.",
-    fa: "Registró con PSOE y CC la reforma para repartir menores migrantes no acompañados, convalidada después como decreto-ley."
+    fa: "Registró con PSOE y CC la reforma para repartir menores migrantes no acompañados, convalidada después como decreto-ley.",
+    erc: "Estimación: posición intermedia por la defensa de las competencias autonómicas."
   },
   F06: {
     psoe: "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
     pp: "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
     vox: "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
-    fa: "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta."
+    fa: "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
+    erc: "El programa propone una prestación universal por crianza de hijos."
   },
   F07: {
     psoe: "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
     pp: "El PP propone una fiscalidad específica y bonificaciones para las zonas rurales despobladas, además de menores costes laborales en Soria, Cuenca y Teruel.",
-    fa: "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos."
+    fa: "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos.",
+    pod: "Estimación: sin postura nacional reciente sobre una fiscalidad rural diferenciada."
   },
   F08: {
     psoe: "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios.",
-    fa: "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema."
+    fa: "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
+    erc: "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos."
   },
   F09: {
     psoe: "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
-    pp: "Propone condicionar el Ingreso Mínimo Vital a la participación en itinerarios de inserción laboral."
+    pp: "Propone condicionar el Ingreso Mínimo Vital a la participación en itinerarios de inserción laboral.",
+    erc: "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad."
   },
   G02: {
     psoe: "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
     pp: "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo.",
     vox: "El programa de Vox propone proteger el suelo agrario y el paisaje frente a los macroproyectos renovables.",
-    fa: "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición."
+    fa: "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
+    pod: "Estimación: matizada: apoya renovables con doble uso agrario del suelo, sin frenar la transición.",
+    erc: "Estimación: ERC apoya las renovables con planificación territorial."
   },
   G03: {
     psoe: "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
     pp: "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil.",
     vox: "Vox pide suspender la prohibición europea de los motores de combustión prevista para 2035.",
-    fa: "Defiende electrificar el parque móvil para que en 2040 no circulen coches de combustión."
+    fa: "Defiende electrificar el parque móvil para que en 2040 no circulen coches de combustión.",
+    erc: "El programa asume la prohibición de vender motores de combustión y pide infraestructura."
   },
   G04: {
     psoe: "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases.",
     pp: "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     vox: "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
-    fa: "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización."
+    fa: "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
+    erc: "Estimación: ERC se opone históricamente a los trasvases del Ebro."
   },
   G05: {
     psoe: "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
     pp: "Defiende reducir el sector empresarial público y limitar el intervencionismo, contra una empresa pública de energía.",
     vox: "Vox votó contra la propuesta de Sumar de crear una entidad pública que gestione las centrales hidroeléctricas.",
-    fa: "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas al vencer sus concesiones."
+    fa: "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas al vencer sus concesiones.",
+    pod: "Defendió en el Congreso una moción para crear una empresa pública de energía que abarate los precios.",
+    erc: "Estimación: ERC impulsa una energética pública catalana, no estatal."
   },
   G06: {
     psoe: "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
     pp: "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno.",
     vox: "El programa de Vox pone el énfasis en la alta velocidad, aunque también menciona las Cercanías.",
-    fa: "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional."
+    fa: "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional.",
+    pod: "Estimación: favorable a priorizar Cercanías y trenes regionales.",
+    erc: "El programa critica la alta velocidad a costa de Rodalies y prioriza las cercanías."
   },
   G07: {
     psoe: "Su Gobierno propone prohibir nuevas viviendas en las zonas de flujo preferente y endurecer la construcción en el resto de zonas inundables.",
     pp: "Estimación: no consta postura nacional del PP sobre prohibir construir en zonas inundables ya clasificadas.",
     vox: "Estimación: no consta una postura de Vox sobre prohibir construir en zonas inundables.",
-    fa: "Estimación: no consta una propuesta verificada de Sumar para prohibir construir en suelos inundables ya aprobados."
+    fa: "Estimación: no consta una propuesta verificada de Sumar para prohibir construir en suelos inundables ya aprobados.",
+    pod: "Estimación: favorable a prohibirlo por su enfoque de adaptación climática.",
+    erc: "Estimación: sin postura conocida de ERC sobre suelos inundables."
   },
   G08: {
     psoe: "Su Gobierno propone impulsar pastoreo, desbroce y aprovechamiento forestal contra los incendios, compatibles con la conservación.",
     pp: "Feijóo critica las leyes que dificultan el desbroce y reivindica la ganadería extensiva para prevenir incendios.",
     vox: "Una proposición de Vox en el Congreso pide limpieza de montes, desbroce, pastoreo y menos trabas ambientales para prevenir incendios.",
-    fa: "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección."
+    fa: "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección.",
+    pod: "Estimación: contraria a flexibilizar la protección de espacios naturales."
   },
   G09: {
     psoe: "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
     pp: "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
-    fa: "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear."
+    fa: "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
+    pod: "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
+    erc: "La ponencia apuesta por un sistema energético basado en renovables."
   },
   H01: {
     psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España."
@@ -1716,148 +1930,198 @@ export const JUSTIF = {
     psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
     pp: "Considera que reforzar la integración europea fortalece la soberanía y no la reduce.",
     vox: "Vox rechaza cualquier tendencia federalista de la UE y pide devolver protagonismo a los Estados.",
-    fa: "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior."
+    fa: "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior.",
+    pod: "Estimación: sin postura reciente publicada sobre ceder más competencias a la UE.",
+    erc: "El programa apuesta por una Europa federal con instituciones más ambiciosas."
   },
   H03: {
     psoe: "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
     pp: "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad.",
     vox: "El programa de Vox exige recuperar la unanimidad en el Consejo de la UE para proteger la soberanía nacional.",
-    fa: "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo."
+    fa: "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo.",
+    pod: "Estimación: sin postura reciente publicada sobre la unanimidad en la UE."
   },
   H04: {
     psoe: "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025.",
     vox: "Vox votó en contra de convalidar el decreto de embargo de armas a Israel.",
-    fa: "Apoyó el embargo de armas a Israel y pidió endurecerlo por considerarlo insuficiente."
+    fa: "Apoyó el embargo de armas a Israel y pidió endurecerlo por considerarlo insuficiente.",
+    pod: "Votó a favor del embargo de armas a Israel, aunque lo calificó de «embargo fake» por quedarse corto.",
+    erc: "El programa pide detener el comercio de armas con Israel, entre otros países."
   },
   H05: {
     psoe: "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
     pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum.",
-    fa: "Propone revertir el cambio de posición de 2022 sobre el Sáhara Occidental y apoyar la libre determinación."
+    fa: "Propone revertir el cambio de posición de 2022 sobre el Sáhara Occidental y apoyar la libre determinación.",
+    pod: "Belarra pidió a Sánchez rectificar su apoyo al plan marroquí y defender la autodeterminación saharaui.",
+    erc: "El programa pide rectificar el apoyo al plan de autonomía marroquí."
   },
   H06: {
     psoe: "Su programa de 2023 se compromete a seguir trabajando dentro de la OTAN por la paz y la seguridad.",
     pp: "Considera indispensable el vínculo transatlántico y defiende cumplir los compromisos de inversión en la OTAN.",
     vox: "El programa de Vox da por hecha la permanencia en la OTAN y pide que proteja expresamente a Ceuta y Melilla.",
-    fa: "No propone salir de la OTAN, pero sí desplazar progresivamente sus garantías hacia una autonomía estratégica europea."
+    fa: "No propone salir de la OTAN, pero sí desplazar progresivamente sus garantías hacia una autonomía estratégica europea.",
+    erc: "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN."
   },
   H07: {
     psoe: "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
     vox: "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
-    fa: "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo."
+    fa: "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo.",
+    erc: "El programa pide alcanzar el 0,7 % en ayuda al desarrollo."
   },
   H08: {
     psoe: "Sánchez defiende una relación económica más estrecha con China, aunque insiste en corregir el desequilibrio comercial.",
     pp: "Describe a China como socio, competidor y rival sistémico y pide actuar con la UE y los aliados de la OTAN.",
     vox: "La portavoz Pepa Millán rechazó el viaje de Sánchez a China y pidió cuidar la relación con Estados Unidos.",
-    fa: "Plantea una relación autónoma y crítica con China, evitando la confrontación entre grandes potencias."
+    fa: "Plantea una relación autónoma y crítica con China, evitando la confrontación entre grandes potencias.",
+    pod: "Estimación: sin postura reciente publicada sobre la relación comercial con China.",
+    erc: "Estimación: ERC busca autonomía europea frente a EE. UU. y China."
   },
   H09: {
     psoe: "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
     pp: "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
     vox: "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
-    fa: "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios."
+    fa: "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
+    erc: "La ponencia critica externalizar fronteras con centros en terceros países."
   },
   I02: {
     psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
     pp: "Estimación: el programa de 2023 apuesta por ampliar las becas universitarias, no por la gratuidad general de la matrícula.",
-    fa: "Propone que la matrícula universitaria avance de forma progresiva hacia la gratuidad."
+    fa: "Propone que la matrícula universitaria avance de forma progresiva hacia la gratuidad.",
+    pod: "Su programa europeo de 2024 defiende una educación pública gratuita desde el nacimiento hasta la universidad.",
+    erc: "El programa propone avanzar hacia la gratuidad universitaria."
   },
   I03: {
     psoe: "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
-    fa: "Su portavoz Verónica Barbero defendió la moratoria de 10 años a nuevas universidades privadas que Sumar propuso en 2025."
+    fa: "Su portavoz Verónica Barbero defendió la moratoria de 10 años a nuevas universidades privadas que Sumar propuso en 2025.",
+    pod: "Estimación: contraria a facilitar universidades privadas por su defensa de la universidad pública.",
+    erc: "Estimación: ERC prioriza la universidad pública."
   },
   I04: {
     psoe: "La LOMLOE de su Gobierno prohíbe usar los resultados de las evaluaciones para clasificar centros.",
     vox: "Estimación: Vox defiende evaluaciones externas nacionales; no consta que pida publicar los resultados por colegio.",
-    fa: "Estimación: no consta una postura verificada de Sumar sobre publicar los resultados de cada colegio."
+    fa: "Estimación: no consta una postura verificada de Sumar sobre publicar los resultados de cada colegio.",
+    pod: "Estimación: contraria a publicar resultados por centro por el riesgo de segregación.",
+    erc: "Estimación: ERC evita la clasificación de centros y prioriza la equidad."
   },
   I05: {
     pp: "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua.",
-    vox: "Vox defiende el derecho a ser educado en español en todo el territorio nacional."
+    vox: "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
+    erc: "El programa defiende la inmersión con el catalán como lengua vehicular."
   },
   I06: {
     psoe: "Su programa de 2023 vincula la beca a la situación socioeconómica y critica que el PP endureciera los requisitos.",
     vox: "Estimación: Vox vincula las becas al mérito y al esfuerzo, sin concretar exigencias de nota.",
-    fa: "Pidió en una proposición no de ley eliminar los mínimos académicos exigidos para no devolver las becas."
+    fa: "Pidió en una proposición no de ley eliminar los mínimos académicos exigidos para no devolver las becas.",
+    erc: "Estimación: ERC defiende becas ambiciosas sin barreras de acceso."
   },
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
-    vox: "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual."
+    vox: "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual.",
+    erc: "El programa propone reconocer el derecho a la educación sexual."
   },
   I08: {
     pp: "Defiende la tauromaquia como expresión cultural con profundas raíces históricas.",
     vox: "El programa de Vox promete apoyo fiscal y crediticio a la tauromaquia y la protección de los festejos taurinos.",
-    fa: "Propone derogar la ley que protege la tauromaquia como patrimonio y suprimir la financiación pública de corridas con muerte."
+    fa: "Propone derogar la ley que protege la tauromaquia como patrimonio y suprimir la financiación pública de corridas con muerte.",
+    pod: "Belarra pidió retirar a la tauromaquia la condición de bien cultural para poder suspender sus subvenciones.",
+    erc: "El programa pide derogar la ley de la tauromaquia y no financiarla."
   },
   I09: {
     psoe: "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear.",
     pp: "Considera que la lengua cooficial debe ser un mérito y no un requisito para acceder a la función pública.",
     vox: "Vox rechaza exigir la lengua cooficial para acceder al empleo público; el único requisito sería el español.",
-    fa: "Sus diputados recurrieron ante el Constitucional la supresión del requisito del catalán en la sanidad balear."
+    fa: "Sus diputados recurrieron ante el Constitucional la supresión del requisito del catalán en la sanidad balear.",
+    erc: "El programa exige el catalán al personal de la Administración del Estado en Cataluña."
   },
   J02: {
     vox: "Vox propone reducir las listas de espera reforzando los conciertos con la sanidad privada.",
-    fa: "Propone blindar la sanidad pública y una ley de listas de espera, no derivar pacientes a la privada."
+    fa: "Propone blindar la sanidad pública y una ley de listas de espera, no derivar pacientes a la privada.",
+    pod: "Su proposición de ley de 2024 impide renovar los conciertos con hospitales privados vinculados al SNS.",
+    erc: "La ponencia propone dejar de concertar con centros privados con ánimo de lucro."
   },
   J03: {
     psoe: "Estimación: el Gobierno de coalición propuso exclusividad para jefes de servicio en el borrador del Estatuto Marco, pero el PSOE no ha fijado postura propia.",
     pp: "Las comunidades del PP rechazan imponer la exclusividad del Estatuto Marco porque temen la fuga de médicos y defienden poder compatibilizar.",
-    fa: "Su ministra de Sanidad propuso exigir exclusividad a jefes de servicio y directivos, no a todos los médicos."
+    fa: "Su ministra de Sanidad propuso exigir exclusividad a jefes de servicio y directivos, no a todos los médicos.",
+    pod: "Estimación: favorable a la dedicación exclusiva en la sanidad pública.",
+    erc: "Estimación: sin postura conocida de ERC sobre la exclusividad médica."
   },
   J04: {
     vox: "Estimación: Vox defiende bajar impuestos en general; no consta una postura sobre los impuestos al tabaco, el alcohol o el azúcar.",
-    fa: "Propone una fiscalidad saludable con un impuesto a las bebidas azucaradas y revisar los impuestos al alcohol y el tabaco."
+    fa: "Propone una fiscalidad saludable con un impuesto a las bebidas azucaradas y revisar los impuestos al alcohol y el tabaco.",
+    pod: "Estimación: probablemente favorable a impuestos saludables, sin postura reciente propia.",
+    erc: "El programa propone una fiscalidad que penalice productos como las bebidas azucaradas."
   },
   J05: {
     psoe: "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas.",
     pp: "Propone reformar la ley de evaluación de políticas públicas y reforzar la AIReF como evaluador independiente.",
-    fa: "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas."
+    fa: "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
+    pod: "Estimación: sin postura publicada sobre evaluar y suprimir programas."
   },
   J06: {
     psoe: "Su Gobierno hizo obligatoria la evaluación del desempeño con efectos en carrera, sueldo y continuidad en el puesto, sin despido.",
     pp: "Estimación: no consta postura nacional del PP sobre evaluar el desempeño de los funcionarios con posible despido.",
     vox: "Estimación: no consta una postura de Vox sobre evaluar el desempeño de los empleados públicos con posibilidad de despido.",
-    fa: "Estimación: no consta una postura verificada de Sumar sobre despedir empleados públicos por bajo rendimiento."
+    fa: "Estimación: no consta una postura verificada de Sumar sobre despedir empleados públicos por bajo rendimiento.",
+    pod: "Estimación: contraria al despido por bajo rendimiento en el empleo público.",
+    erc: "Estimación: ERC defiende la función pública y rechazaría despidos por rendimiento."
   },
   J07: {
     psoe: "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada.",
     pp: "Presentó una proposición para consolidar el mutualismo administrativo frente a la integración en la sanidad pública.",
     vox: "Una proposición no de ley de Vox pide mantener el mutualismo administrativo y asegurar la viabilidad de Muface.",
-    fa: "Propone integrar de forma paulatina en la sanidad pública a quienes hoy reciben asistencia a través de MUFACE, MUGEJU e ISFAS."
+    fa: "Propone integrar de forma paulatina en la sanidad pública a quienes hoy reciben asistencia a través de MUFACE, MUGEJU e ISFAS.",
+    pod: "Registró en el Congreso una proposición de ley para extinguir el modelo de mutualidades como Muface.",
+    erc: "La ponencia propone extinguir las mutualidades de funcionarios pagadas con fondos públicos."
   },
   J08: {
     psoe: "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud.",
     pp: "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera.",
     vox: "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
-    fa: "Su programa propone una ley estatal con tiempos máximos de espera para todo el país."
+    fa: "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
+    pod: "Estimación: favorable a estándares estatales como tiempos máximos de espera.",
+    erc: "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica."
+  },
+  K01: {
+    erc: "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola."
   },
   K02: {
     psoe: "Su programa de 2023 promete reforzar el control de la Ley de la Cadena Alimentaria y vigilar costes y márgenes.",
     vox: "El programa de Vox promete corregir los desequilibrios de la cadena alimentaria que perjudican al productor.",
-    fa: "Propone controlar la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores."
+    fa: "Propone controlar la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
+    pod: "Estimación: favorable a intervenir los márgenes de la gran distribución.",
+    erc: "El programa propone reformar la ley de la cadena para mejorar precios a productores."
   },
   K03: {
     psoe: "Quiere priorizar la agricultura familiar y profesional y las pequeñas y medianas explotaciones.",
     pp: "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas.",
     vox: "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
-    fa: "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos."
+    fa: "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
+    pod: "Estimación: favorable a orientar la PAC a pequeñas explotaciones.",
+    erc: "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar."
   },
   K04: {
     psoe: "Votó en 2025 contra sacar al lobo del listado de protección; su ministra lo calificó de decisión «en contra de la ciencia».",
     pp: "El PP quiere sacar al lobo del LESPRE al norte del Duero y permitir su control para proteger la ganadería.",
     vox: "Vox propone sacar al lobo del régimen de protección especial y controlar su población.",
-    fa: "Propone incluir el lobo en el Catálogo de Especies Amenazadas, lo que impide su caza."
+    fa: "Propone incluir el lobo en el Catálogo de Especies Amenazadas, lo que impide su caza.",
+    pod: "Votó contra la enmienda que retiró la protección especial al lobo al norte del Duero y permitió su caza.",
+    erc: "Estimación: posición crítica con la caza del lobo."
   },
   K05: {
     psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
-    fa: "Su grupo registró en el Congreso una iniciativa para una moratoria a nuevas macrogranjas."
+    fa: "Su grupo registró en el Congreso una iniciativa para una moratoria a nuevas macrogranjas.",
+    pod: "Su programa europeo de 2024 pide una moratoria indefinida a la apertura de nuevas macroexplotaciones.",
+    erc: "Estimación: ERC es crítica con la ganadería intensiva."
   },
   K06: {
     psoe: "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
     pp: "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE.",
     vox: "La portavoz Pepa Millán rechazó en el Congreso el recorte de días de pesca de arrastre propuesto por Bruselas.",
-    fa: "Propone cumplir la política pesquera de la UE para acabar con la sobrepesca, sobre todo en el Mediterráneo."
+    fa: "Propone cumplir la política pesquera de la UE para acabar con la sobrepesca, sobre todo en el Mediterráneo.",
+    pod: "Estimación: contraria a relajar las restricciones de pesca.",
+    erc: "Estimación: posición intermedia entre pesca y sostenibilidad."
   },
   K07: {
     psoe: "Su programa de 2023 vincula la caza a la sostenibilidad del mundo rural, pero no propone protegerla por ley.",
@@ -1869,52 +2133,68 @@ export const JUSTIF = {
     psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
     vox: "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
-    fa: "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables."
+    fa: "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
+    erc: "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
   },
   L02: {
     psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
     pp: "El PP votó contra la ley de eutanasia, pero en 2023 promete revisarla, priorizando los cuidados paliativos, no derogarla.",
     vox: "Vox propone derogar la ley de eutanasia.",
-    fa: "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener."
+    fa: "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
+    pod: "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
+    erc: "ERC votó a favor de aprobar la ley de eutanasia en 2021."
   },
   L03: {
     psoe: "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
     pp: "El PP recurrió ante el Tribunal Constitucional el cambio registral desde los 16 años sin informes médicos que permite la Ley trans.",
     vox: "Vox propone derogar la ley trans, que permite el cambio registral sin informes médicos.",
-    fa: "Toma como base la ley trans de 2023, que permite el cambio registral desde los 16 sin informes médicos."
+    fa: "Toma como base la ley trans de 2023, que permite el cambio registral desde los 16 sin informes médicos.",
+    pod: "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
+    erc: "El programa defiende la autodeterminación de género sin patologizar."
   },
   L04: {
     psoe: "Su programa de 2023 rechaza los «vientres de alquiler» y niega que ser padre o madre sea un derecho.",
     pp: "Se abrió a regular la gestación subrogada solo en su forma altruista, sin ningún pago a la gestante.",
-    vox: "El programa de Vox rechaza la gestación subrogada."
+    vox: "El programa de Vox rechaza la gestación subrogada.",
+    pod: "Irene Montero recordó que la ley reconoce la gestación subrogada como una forma de violencia contra las mujeres.",
+    erc: "Estimación: ERC no ha propuesto legalizar la gestación subrogada."
   },
   L05: {
     psoe: "Su programa busca reducir ventajas de la Iglesia (autofinanciación, fiscalidad) dentro de los acuerdos vigentes, sin revisarlos.",
     pp: "Propone mantener la cooperación con las confesiones mediante los instrumentos jurídicos vigentes.",
     vox: "Estimación: no consta una postura reciente de Vox sobre revisar los acuerdos con la Santa Sede.",
-    fa: "Registró una proposición no de ley para actualizar los acuerdos con la Santa Sede y suprimir privilegios de la Iglesia."
+    fa: "Registró una proposición no de ley para actualizar los acuerdos con la Santa Sede y suprimir privilegios de la Iglesia.",
+    pod: "Registró en el Congreso una iniciativa para eliminar los privilegios de la Iglesia y anular el Concordato.",
+    erc: "El programa propone anular los acuerdos de 1979 con la Santa Sede."
   },
   L06: {
     psoe: "Sánchez propuso obligar a las redes a vincular cada cuenta a una identidad digital europea, aunque se usen seudónimos.",
     pp: "Su portavoz adjunto en el Congreso defendió acabar con el anonimato en redes y registrarse con identidad real.",
     vox: "Vox rechaza obligar a identificarse en las redes porque lo considera una restricción de la libertad de expresión.",
-    fa: "Estimación: no consta una postura verificada de Sumar sobre obligar a verificar la identidad real en redes."
+    fa: "Estimación: no consta una postura verificada de Sumar sobre obligar a verificar la identidad real en redes.",
+    pod: "Estimación: sin postura publicada sobre la verificación de identidad en redes.",
+    erc: "Estimación: posición intermedia sin propuesta conocida."
   },
   L07: {
     psoe: "Sánchez anunció en 2026 que España prohibirá el acceso a las redes sociales a los menores de 16 años.",
     pp: "Propuso por enmienda prohibir las redes sociales a menores de 16 años, salvo de 14 a 16 con permiso paterno.",
     vox: "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
-    fa: "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia."
+    fa: "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia.",
+    pod: "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
+    erc: "Estimación: posición intermedia sin propuesta conocida."
   },
   L08: {
     psoe: "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
     pp: "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí.",
     vox: "Vox votó contra la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
-    fa: "Votó a favor de la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas."
+    fa: "Votó a favor de la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
+    pod: "Apoyó la ley de paridad y pactó con el PSOE que las mujeres puedan superar el 60 % en los órganos afectados.",
+    erc: "El programa defiende la paridad en todos los ámbitos de representación."
   },
   L09: {
     psoe: "Votó contra las leyes de Vox y Junts (febrero y abril de 2026) para prohibir el burka, por considerarlas discriminatorias.",
     vox: "Vox presentó en el Congreso una proposición de ley para prohibir el burka y el niqab en el espacio público.",
-    fa: "Votó contra las leyes de Vox y Junts para prohibir el burka por considerarlas discriminatorias."
+    fa: "Votó contra las leyes de Vox y Junts para prohibir el burka por considerarlas discriminatorias.",
+    erc: "ERC rechazó la ley de Vox para prohibir el burka, aunque dijo oponerse a la prenda."
   }
 };

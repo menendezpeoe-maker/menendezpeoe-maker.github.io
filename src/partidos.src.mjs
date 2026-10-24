@@ -72,7 +72,7 @@ export const PARTIES = [
  { id: "pod", name: "Podemos", ab: "POD", color: "#6B2E83", tag: "Izquierda", lead: "Irene Montero",
    scope: { all: true, except: ["cat","val","can"] },
    desc: "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC y en la Comunitat Valenciana y Canarias se integra en las coaliciones Compromís – Front Valencià y Unidad del Pueblo Canario.",
-   props: [["Bajar por ley los alquileres e impedir la compra de vivienda por fondos.","B01"],
+   props: [["Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir.","B01"],
      ["Empresa pública de energía y banca pública.","G05"],
      ["Impuestos a las grandes fortunas.","A03"],
      ["Regularización extraordinaria de inmigrantes.","F01"],

@@ -22,7 +22,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct).
 - T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
 - T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct).
-- T6 · Fuentes de Vox y Frente Amplio: completada y verificada (web real, 24 oct). T7, T8, T11 y T12: pendientes.
+- T6 · Fuentes de Vox y Frente Amplio: completada y verificada (web real, 24 oct).
+- T7 · Fuentes de Podemos y ERC: completada (24 oct). T8, T11, T12 y T12b: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -40,6 +41,16 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T7 · Fuentes de las posturas de Podemos y ERC
+- **Adelantada a petición del titular, en modo de bajo consumo:** un subagente por partido (190 posturas sin fuente: 96 de Podemos, 94 de ERC), un revisor y una sola pasada de pruebas. Mismo criterio que T5 y T6.
+- **Resultado:** 96 fuentes nuevas (42 de Podemos, 54 de ERC). Total de la web: 361 → 457. Los 38 enlaces únicos nuevos responden con 200.
+  - **Podemos:** 53 de 107 posturas con fuente; 31 estimadas.
+  - **ERC:** 64 de 104 posturas con fuente; 40 estimadas.
+- **6 posturas ajustadas** (nota en `NOTES`): Podemos A09 2→1 y C04 5→4; ERC B08 5→4, D02 2→4, H06 3→2 y K08 4→2 (ponencia política del 30.º congreso de ERC, de marzo de 2025).
+- **Pasan a «estimadas» (mismo valor), porque no hay ninguna fuente:** ERC B03, D03, D09, E04 y F03.
+- **Pendiente para T12b o R1:** la web de Podemos (podemos.info) bloquea a los robots con Cloudflare y no se pudo leer su programa. 22 posturas documentadas de Podemos siguen sin enlace: C03, C06, D01, D05, D06, E04, F03, F04, F05, F08, F09, G03, G04, H07, H09, I05, I06, I07, I09, K07, K08 y L09. No se marcan como estimadas, porque el problema es de acceso, no de falta de fuente. Reintentar con otra copia del programa o con hemerotecas.
+- **Propuesta destacada de Podemos corregida:** «Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir».
 
 ## 24 oct 2026 · T6 · Fuentes de las posturas de Vox y Frente Amplio
 - **Adelantada a petición del titular.** Mismo método y criterio que T5: todas las posturas sin fuente (190: 96 de Vox, 94 de Frente Amplio), cuatro subagentes de dos en dos y revisión una a una. Se aceptan programas de 2023 a 2026, leyes en vigor y votaciones desde 2021; se descartan declaraciones anteriores a 2021, fuentes indirectas y evidencias solo autonómicas. Ni Vox ni Frente Amplio han publicado aún programa para 2026: se usan el programa de Vox de 2023 y el de Sumar de 2023, más votaciones, decretos y declaraciones de 2021 a 2026.
