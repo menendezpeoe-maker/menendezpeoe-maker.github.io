@@ -21,7 +21,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
 - T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct).
 - T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
-- T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct). T6–T8, T11 y T12: pendientes.
+- T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct).
+- T6 · Fuentes de Vox y Frente Amplio: completada y verificada (web real, 24 oct). T7, T8, T11 y T12: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -39,6 +40,20 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T6 · Fuentes de las posturas de Vox y Frente Amplio
+- **Adelantada a petición del titular.** Mismo método y criterio que T5: todas las posturas sin fuente (190: 96 de Vox, 94 de Frente Amplio), cuatro subagentes de dos en dos y revisión una a una. Se aceptan programas de 2023 a 2026, leyes en vigor y votaciones desde 2021; se descartan declaraciones anteriores a 2021, fuentes indirectas y evidencias solo autonómicas. Ni Vox ni Frente Amplio han publicado aún programa para 2026: se usan el programa de Vox de 2023 y el de Sumar de 2023, más votaciones, decretos y declaraciones de 2021 a 2026.
+- **Resultado:** 135 fuentes nuevas (66 de Vox, 69 de Frente Amplio). Total de la web: 227 → 362. Los 48 enlaces únicos nuevos responden con 200.
+  - **Vox:** 77 de 107 posturas con fuente; 26 estimadas.
+  - **Frente Amplio:** 82 de 107 posturas con fuente; 19 estimadas.
+- **17 posturas ajustadas** (casi todas en un punto), por una fuente oficial reciente; cada una con su nota en `NOTES`:
+  - **Vox:** A07 5→4, B07 3→4, D09 3→2, H05 4→3, K03 3→4, L07 2→1.
+  - **Frente Amplio:** C04 5→4, D06 5→4, E07 4→2, E09 5→4, G02 2→3, G08 2→3, H02 3→4, H03 3→2, J03 5→4, J05 3→4, J08 4→5.
+- **Pasan a «estimadas» (mismo valor), porque no hay ninguna fuente reciente:** Vox D07, E07 y L05; Frente Amplio D09, E02 y E04.
+- **Sin cambios por ser evidencia antigua, indirecta o autonómica**, aunque los subagentes proponían cambiarlas: Vox A05, C07, D01, F08 e I03; Frente Amplio F09.
+- **Propuestas destacadas actualizadas:**
+  - **Vox:** competencias que quiere devolver al Estado (Educación, Sanidad, Seguridad y Justicia); Plan Nacional del Agua con interconexión de cuencas, porque su programa no habla de «trasvases».
+  - **Frente Amplio:** congelar el alquiler y prorrogar tres años los contratos (propuesta de octubre de 2025); prestación de 200 euros al mes por hijo; embargo de armas a Israel sin excepciones; electrificar el parque móvil para que en 2040 no circulen coches de combustión.
 
 ## 24 oct 2026 · T5 (ampliación) · Todas las posturas de PSOE y PP revisadas
 - **Petición del titular:** buscar fuente para todas las posturas de PSOE y PP que no la tenían (137, casi todas de prioridad 3). Cuatro subagentes, de dos en dos, con revisión una a una.
