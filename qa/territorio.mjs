@@ -43,6 +43,8 @@ ok(JSON.stringify(r3) === "[1,0]", "en circunscripciones de un escaño gana la m
 const r4 = await page.evaluate(() => window.TEST29N_DHONDT([300, 200, 100], 0, 4).res.map((x) => x.seats));
 // 4.º escaño: empate a 100 entre A (300/3), B (200/2) y C (100/1) → lo gana A, la de más votos
 ok(JSON.stringify(r4) === "[3,1,0]", `en un empate de cocientes gana la candidatura con más votos (${r4.join(", ")})`);
+const r5 = await page.evaluate(() => window.TEST29N_DHONDT([5000, 5000], 0, 1).tie);
+ok(r5 === true, "si el empate es también en votos, el simulador avisa de que la ley lo resuelve por sorteo (art. 163.1.d)");
 await page.selectOption("#sim-prov", "madrid"); await page.waitForTimeout(200);
 const n = await page.locator("#sim-rows input").count();
 ok(n >= 3, `al elegir Madrid aparecen sus candidaturas (${n - 1} y «Otras»)`);

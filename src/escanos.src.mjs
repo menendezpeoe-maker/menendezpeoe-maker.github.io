@@ -1,6 +1,6 @@
 // Diputados por circunscripción en las elecciones generales del 29 de noviembre de 2026 (anexo del Real Decreto 806/2026)
 // y reglas del reparto (Ley Orgánica del Régimen Electoral General). Revisado el 23 oct 2026.
-export const SEATS_SOURCE = { url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742", label: "Real Decreto 806/2026, anexo (BOE, 6 oct 2026)" };
+export const SEATS_SOURCE = { url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742", label: "Real Decreto 806/2026, anexo (BOE del 6 de octubre de 2026)" };
 export const LOREG_URL = "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672";
 export const SEATS = {
   albacete: 4, alicante: 12, almeria: 6, alava: 4, asturias: 7, avila: 3, badajoz: 5, baleares: 8, barcelona: 32, bizkaia: 8,
@@ -12,9 +12,9 @@ export const SEATS = {
 };
 // Senado (art. 3.2 del real decreto): 4 por provincia; en las islas y en Ceuta y Melilla, reglas propias
 export const SENATE = {
-  baleares: "En las Illes Balears se eligen 3 senadores en Mallorca y 1 en cada una de estas circunscripciones: Menorca e Ibiza-Formentera.",
-  laspalmas: "En la provincia de Las Palmas se eligen 3 senadores en Gran Canaria y 1 en Fuerteventura y en Lanzarote.",
-  tenerife: "En la provincia de Santa Cruz de Tenerife se eligen 3 senadores en Tenerife y 1 en La Gomera, en El Hierro y en La Palma.",
+  baleares: "En las Illes Balears se eligen 3 senadores en Mallorca y 1 en cada una de estas islas: Menorca, Ibiza y Formentera.",
+  laspalmas: "En la provincia de Las Palmas se eligen 3 senadores en Gran Canaria y 1 en cada una de estas islas: Fuerteventura y Lanzarote.",
+  tenerife: "En la provincia de Santa Cruz de Tenerife se eligen 3 senadores en Tenerife y 1 en cada una de estas islas: La Gomera, El Hierro y La Palma.",
   ceuta: "Ceuta elige 2 senadores.",
   melilla: "Melilla elige 2 senadores.",
 };
