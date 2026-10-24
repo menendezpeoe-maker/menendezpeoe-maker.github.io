@@ -112,11 +112,12 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T4 | vie 23 oct | Fase 3b: provincias, simulador y glosario |
 | T10 | sáb 24 oct | Fase 5: difusión y tests por tema |
 | T5 | sáb 24 oct | Fase 2: fuentes de PSOE y PP (hecha y ampliada a todas sus posturas) |
-| T6 | dom 25 oct | Fase 2: fuentes de Vox y Frente Amplio |
-| T7 | lun 26 oct | Fase 2: fuentes de Podemos y ERC |
-| T8 | mar 27 oct | Fase 2: justificaciones visibles y confianza |
-| T11 | mié 28 oct | Fase 6 y repaso final |
-| T12 | jue 29 oct | Fase 2: fuentes del resto de candidaturas (Junts, PNV, EH Bildu, SALF y demás) |
+| T6 | sáb 24 oct | Fase 2: fuentes de Vox y Frente Amplio (hecha, todas sus posturas) |
+| T7 | dom 25 oct | Fase 2: fuentes de Podemos y ERC |
+| T8 | lun 26 oct | Fase 2: justificaciones visibles y confianza |
+| T11 | mar 27 oct | Fase 6 y repaso final |
+| T12 | mié 28 oct | Fase 2: fuentes del resto de candidaturas (Junts, PNV, EH Bildu, SALF y demás) |
+| T12b | jue 29 oct | Continuación de T12 con lo que quede, y programas de 2026 que se hayan publicado |
 | R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
@@ -192,6 +193,7 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
 - Igual que T5–T7 (mismo método, reglas 8 y 12 y formato `JUSTIF`), para las candidaturas que no tienen tanda propia, por orden de votos en 2023: Junts, EH Bildu, PNV, BNG, Coalición Canaria y UPN; después SALF y el resto.
 - Primero `prio` 1 y 2 sin fuente; con el tiempo que sobre, `prio` 3.
 - Anota en `ESTADO.md` cuántas posturas tienen ya fuente por partido.
+- **T12b (29 oct):** termina lo que T12 deje pendiente, en el mismo orden, e incorpora los programas de 2026 que se hayan publicado (regla 5).
 
 ### T8 · Fase 2: justificaciones visibles y confianza
 - **Muestra la justificación** junto a cada postura: en «Tus respuestas», en el explorador, en las páginas de partido y de tema, y en las fichas.
