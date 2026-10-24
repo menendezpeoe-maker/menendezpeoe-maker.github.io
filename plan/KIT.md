@@ -162,3 +162,22 @@ Comprobados el 24 de octubre de 2026: cada canal aparece en la página indicada 
 | El Grand Continent, en español (solo redes) | Revista de debate político europeo | https://twitter.com/Grand_Continent | https://legrandcontinent.eu/es/ |
 
 Se dejaron fuera, a propósito: buzones solo para privacidad o filtraciones (Maldita, pistas@eldiario.es), correos con nombre de persona, y medios cuyo canal no se pudo comprobar (RTVE general, El Confidencial, Cadena SER, Facultad de Políticas de la UCM). La búsqueda semanal de creadores (tarea programada) amplía esta lista.
+
+## 4. Reels (24 oct 2026)
+
+Ocho reels verticales (1080 × 1920, 15–18 s), con música original y efectos generados por código (libres de derechos) y los textos dentro del vídeo para verlos sin sonido. Usan pantallas reales de la web. Por neutralidad, ningún reel muestra a un partido como resultado: el nombre aparece difuminado. Los archivos se entregaron al titular por la conversación; no están en el repositorio.
+
+Consejos: los 2 primeros segundos son el gancho, no lo tapes con texto propio. Publica el mismo reel en Facebook, Instagram y X con un texto adaptado. Ningún reel del 24 al 28 de noviembre.
+
+| Reel | Orden recomendado y fecha límite | Texto para publicar |
+|---|---|---|
+| `votar` · «29N: ¿votas por correo?» | 1.º, antes del 19 nov | ¿Votas por correo el 29N? 📬 Pídelo hasta el 19 de noviembre y envíalo como muy tarde el 25. Todas las fechas y pasos, con fuentes oficiales 👉 test29n.es/votar · #29N #EleccionesGenerales #VotoPorCorreo #Elecciones2026 |
+| `coincides` · «¿Con qué partido coincides de verdad?» | 2.º | ¿Con qué partido coincides de verdad? 🗳️ 15 preguntas, unos 3 minutos, y lo comparas con las candidaturas de tu provincia. Gratis, sin registro y sin que nadie vea tus respuestas. No te dice a quién votar 👉 test29n.es · #29N #TestPolítico #EleccionesGenerales #Elecciones2026 |
+| `reto` · «Apuesto a que tu amigo no piensa como tú» | 3.º | Apuesto a que tu amigo no piensa como tú 👀 Haz el test, pulsa «Reta a un amigo» y mirad en qué coincidís y en qué chocáis. Sin registro: nadie más ve vuestras respuestas 👉 test29n.es · Etiqueta a quien quieras retar 👇 #29N #TestPolítico #RetaAUnAmigo |
+| `temas` · «¿Solo te importa la vivienda?» | 4.º | ¿Solo te importa un tema? 🏠 Hay tests de 2 minutos sobre vivienda, inmigración, impuestos, sanidad, energía y territorio. Mira con qué candidaturas coincides en lo que te importa 👉 test29n.es/tests · #29N #Vivienda #EleccionesGenerales |
+| `sabias` · «3 cosas que no sabías del 29N» | 5.º | 3 cosas que no sabías del 29N ✅ El voto en blanco es voto válido ✅ Vale el DNI caducado si lleva tu foto ✅ Si pides el voto por correo, ya no puedes votar en tu mesa. Más, con su ley 👉 test29n.es/glosario · #29N #Elecciones2026 #SabíasQue |
+| `escanos` · «¿Cuántos diputados elige tu provincia?» | 6.º | ¿Cuántos diputados elige tu provincia? 🗺️ Madrid 38, Barcelona 32… y Soria, 2. Mira la tuya entre las 52 👉 test29n.es/provincias · ¿Sabías el de la tuya? Cuéntalo en comentarios 👇 #29N #Congreso #EleccionesGenerales |
+| `dhondt` · «La ley D'Hondt en 15 segundos» | 7.º | La ley D'Hondt en 15 segundos ⚖️ Barrera del 3 %, se divide entre 1, 2, 3… y ganan los cocientes más altos. Pruébalo con tus números en el simulador (no es una encuesta) 👉 test29n.es/escanos · #29N #LeyDHondt #EleccionesGenerales |
+| `alquiler` · «¿Qué piensa cada partido del alquiler?» | 8.º | ¿Qué piensa cada partido sobre limitar el alquiler? 🏘️ Todas las candidaturas en una pantalla, de 1 a 5 y con sus fuentes. ¿Y tú? 👉 test29n.es · #29N #Vivienda #Alquiler #EleccionesGenerales |
+
+Para X, acorta: deja la primera frase, el enlace y 2 hashtags (#29N y uno temático).
