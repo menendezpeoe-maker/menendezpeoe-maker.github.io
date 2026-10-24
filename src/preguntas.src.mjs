@@ -351,7 +351,7 @@ export const QUESTIONS = [
   text: "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
   short: "Menos impuestos en zonas despobladas",
   ctx: "Más de la mitad de los municipios españoles pierde población, y provincias como Soria, Teruel o Cuenca tienen densidades muy bajas. Desde 2022 sus empresas tienen rebajas en las cotizaciones sociales, que la UE permite en zonas muy despobladas. Extender la fiscalidad diferenciada atraería población y empleo, según sus defensores; sus críticos dudan de su eficacia frente a la falta de servicios y advierten de agravios con otros territorios.",
-  pos: "4~ 4~ 4~ 3~ 3~ 3~ 0 3~ 0 0 0 0 3~ 0 3~ 0 0 0 3~ 4~ 5 0 3~ 5 5 5 5" },
+  pos: "4~ 4 4~ 3~ 3~ 3~ 0 3~ 0 0 0 0 3~ 0 3~ 0 0 0 3~ 4~ 5 0 3~ 5 5 5 5" },
 { id: "F08", area: "dem", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
   short: "Dependencia como servicio público universal",
@@ -473,7 +473,7 @@ export const QUESTIONS = [
   text: "La universidad pública debería ser gratuita para todos los estudiantes.",
   short: "Universidad pública gratuita",
   ctx: "Las tasas de la universidad pública las fijan las comunidades y van de unos 700 a más de 2.000 euros por curso; algunas bonifican las asignaturas aprobadas. Hacerla gratuita eliminaría una barrera económica; sus críticos sostienen que beneficiaría sobre todo a familias con más renta, que están sobrerrepresentadas en la universidad, y prefieren reforzar las becas para quienes tienen menos ingresos.",
-  pos: "3~ 2~ 2~ 5 5 1~ 0 2~ 4~ 2~ 3~ 5~ 2~ 4~ 5 3~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 2~ 2~ 5 5 1~ 0 2~ 4~ 2~ 3~ 5~ 2~ 4~ 5 3~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "I03", area: "edu", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería ser más fácil crear universidades privadas.",
   short: "Facilitar nuevas universidades privadas",
@@ -526,7 +526,7 @@ export const QUESTIONS = [
   text: "Los médicos de la sanidad pública no deberían poder trabajar a la vez en la privada.",
   short: "Exclusividad de los médicos públicos",
   ctx: "Muchos médicos combinan su plaza pública con consulta privada. El nuevo Estatuto Marco que negocia el Ministerio de Sanidad propone exigir dedicación exclusiva a los nuevos jefes de servicio, uno de los motivos de las huelgas médicas de 2025 y 2026. Sus defensores buscan evitar conflictos de interés y reforzar lo público; sus críticos temen que más médicos abandonen la sanidad pública, donde ya faltan en muchas especialidades.",
-  pos: "4~ 1~ 1~ 5 5~ 1~ 0 1~ 3~ 2~ 2~ 4~ 2~ 0 4~ 0 0 0 4~ 0 0 0 4~ 0 0 0 0" },
+  pos: "4~ 1 1~ 5 5~ 1~ 0 1~ 3~ 2~ 2~ 4~ 2~ 0 4~ 0 0 0 4~ 0 0 0 4~ 0 0 0 0" },
 { id: "J04", area: "san", prio: 3, type: "likert", dim: "lib", dir: 1, lr: -1,
   text: "Habría que subir los impuestos sobre el tabaco, el alcohol y las bebidas azucaradas para reducir su consumo.",
   short: "Impuestos saludables",
@@ -551,7 +551,7 @@ export const QUESTIONS = [
   text: "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
   short: "Estándares sanitarios comunes",
   ctx: "La sanidad está transferida a las comunidades desde 2002, y el Estado coordina a través del Consejo Interterritorial, donde las decisiones suelen requerir acuerdo. Eso explica diferencias en listas de espera, vacunas o prestaciones entre territorios. Dar más poder al Ministerio favorecería la igualdad entre ciudadanos; sus críticos defienden la autonomía de gestión y la cercanía, y temen una uniformización impuesta por el Gobierno central.",
-  pos: "4~ 2~ 5 4~ 4~ 5~ 0 5~ 1 1 1 1 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
+  pos: "5 2~ 5 4~ 4~ 5~ 0 5~ 1 1 1 1 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
 
 // ───────────── K · Agricultura, pesca y mundo rural
 { id: "K01", area: "rur", prio: 1, type: "likert", dim: "eur", dir: -1, lr: 0,
@@ -569,7 +569,7 @@ export const QUESTIONS = [
   text: "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
   short: "PAC para profesionales y pequeñas explotaciones",
   ctx: "España recibe cada año unos 5.000 millones de euros en ayudas directas de la Política Agraria Común. Una parte importante se reparte en función de las hectáreas y de derechos históricos, de modo que los mayores perceptores son grandes propietarios. Vincularla a quienes viven del campo y a explotaciones pequeñas y medianas reforzaría el medio rural; sus críticos advierten de que la agricultura competitiva necesita escala.",
-  pos: "4~ 2~ 3~ 5~ 5~ 3~ 0 2~ 4~ 2~ 3~ 5~ 2~ 0 5~ 0 0 0 4~ 5~ 4~ 0 5~ 4~ 4~ 4~ 0" },
+  pos: "4 2 3~ 5~ 5~ 3~ 0 2~ 4~ 2~ 3~ 5~ 2~ 0 5~ 0 0 0 4~ 5~ 4~ 0 5~ 4~ 4~ 4~ 0" },
 { id: "K04", area: "rur", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
   short: "Control del lobo",
@@ -608,7 +608,7 @@ export const QUESTIONS = [
   short: "Derogar la ley de eutanasia",
   ctx: "Desde 2021 España permite la eutanasia a personas con una enfermedad grave e incurable o un padecimiento crónico e imposibilitante, tras varios controles médicos y de una comisión; se realizan varios cientos al año. Quienes piden derogarla temen presiones sobre personas vulnerables y prefieren reforzar los cuidados paliativos, que no llegan a todos; quienes la defienden la ven como el derecho a una muerte digna.",
   ley: "Ley Orgánica 3/2021, de regulación de la eutanasia",
-  pos: "1 3~ 5 1 1 4~ 2~ 1~ 1 2~ 2 1 5~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 1 1 4~ 2~ 1~ 1 2~ 2 1 5~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "L03", area: "der", prio: 2, type: "likert", dim: "soc", dir: -1, lr: -1,
   text: "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
   short: "Cambio de sexo registral sin informes",
@@ -646,7 +646,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
   ctx: "Francia, Bélgica o Dinamarca prohíben cubrirse el rostro en la calle. En España no existe una prohibición general, y el Tribunal Supremo anuló en 2013 una ordenanza municipal que lo vetaba por invadir competencias del Estado. Sus defensores invocan la seguridad y la igualdad de las mujeres; sus críticos, la libertad religiosa y el riesgo de excluir aún más a las pocas mujeres que lo llevan.",
-  pos: "2~ 5 5 1 1 5~ 0 4~ 2~ 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
+  pos: "2 5 5 1 1 5~ 0 4~ 2~ 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
 ];
 
 // Familias de preguntas que miden casi la misma opinión. En la coincidencia con los partidos, si
@@ -691,6 +691,9 @@ export const NOTES = {
     vox: "Defiende abiertamente la colaboración público-privada en la sanidad pública; su programa de 2023 prometía reforzar los conciertos con la privada.",
     erc: "En el Parlament votó pedir la retirada de la ley estatal que limita la gestión privada, en defensa del modelo sanitario catalán con hospitales concertados."
   },
+  J08: {
+    psoe: "Su programa de 2023 promete fijar por ley tiempos máximos de espera comunes en todo el Sistema Nacional de Salud (120 días para operaciones y 60 para consultas)."
+  },
   K01: {
     pp: "Sus eurodiputados han votado a favor de seguir adelante con el acuerdo y de sus salvaguardas agrícolas, mientras algunos presidentes autonómicos del PP lo rechazan."
   },
@@ -710,6 +713,10 @@ export const NOTES = {
 // Gobierno), declaracion (declaración pública de sus dirigentes) o prensa (información periodística sobre su postura).
 // Fecha: AAAA, AAAA-MM o AAAA-MM-DD de la evidencia, no de la consulta.
 export const SOURCES = {
+  A01: {
+    psoe: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "prensa", "2025-09-11"],
+    pp: ["https://theobjective.com/espana/politica/2025-09-10/congreso-reduccion-jornada-laboral-pp-vox-junts/", "The Objective, votación en el Congreso del 10/09/2025", "parlamento", "2025-09-10"]
+  },
   A02: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     pp: ["https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf", "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -718,6 +725,13 @@ export const SOURCES = {
     pod: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
     erc: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
     junts: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"]
+  },
+  A03: {
+    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452", "BOE, Real Decreto-ley 8/2023, de 27 de diciembre", "gobierno", "2023-12"],
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  A05: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
   },
   B01: {
     psoe: ["https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13411162_1124105.html", "eldiario.es, rueda de prensa de balance de Pedro Sánchez, 28/07/2026", "declaracion", "2026-07-28"],
@@ -728,8 +742,19 @@ export const SOURCES = {
     erc: ["https://www.merca2.es/2023/04/27/ley-de-vivienda-mayoria-absoluta-1292494/", "Merca2, votación de la Ley de Vivienda del 27/04/2023", "parlamento", "2023-04-27"],
     junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"]
   },
+  B02: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (22/10/2026)", "declaracion", "2026-10-22"]
+  },
+  B03: {
+    psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "prensa", "2025-03-18"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"]
+  },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"]
+  },
+  B05: {
+    psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"]
   },
   C01: {
     psoe: ["https://maldita.es/malditahemeroteca/20240731/ceder-tributos-cataluna-psoe/", "Maldita, julio de 2024", "declaracion", "2024-07"],
@@ -739,11 +764,31 @@ export const SOURCES = {
     erc: ["https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/", "El Independiente, 03/09/2025", "declaracion", "2025-09-03"],
     junts: ["https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html", "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026", "declaracion", "2026-01-07"]
   },
+  C03: {
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  C04: {
+    psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"]
+  },
   C05: {
+    psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
+    pp: ["https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf", "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)", "declaracion", "2023-07-19"],
     fa: ["https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html", "Ara, programa de Sumar de 2023", "programa", "2023"]
   },
   D01: {
+    pp: ["https://es.ara.cat/politica/feijoo-plantea-reforma-partido-gane-elecciones-tenga-plus-diputados_1_5783437.html", "Ara, entrevista de Feijóo en esRadio, 29/06/2026", "declaracion", "2026-06-29"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"]
+  },
+  D03: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"]
+  },
+  D04: {
+    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776", "BOE, Ley Orgánica 1/2024, de amnistía", "gobierno", "2024-06-11"],
+    pp: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, votación final de la ley de amnistía en el Congreso del 30/05/2024", "parlamento", "2024-05-30"]
+  },
+  D07: {
+    psoe: ["https://es.ara.cat/politica/relacion-psoe-monarquia_1_5823620.html", "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026", "prensa", "2026-08-13"]
   },
   E01: {
     psoe: ["https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html", "El Debate, votación del 12 de febrero de 2026", "parlamento", "2026-02-12"],
@@ -754,8 +799,19 @@ export const SOURCES = {
     erc: ["https://www.diarimes.com/es/actualidad/260212/congreso-aprueba-ley-multirreincidencia-votos-psoe-pp-vox_208972.html", "Diari Més, votación en el Congreso del 12/02/2026", "parlamento", "2026-02-12"],
     junts: ["https://es.ara.cat/politica/congreso-aprueba-jueves-ley-multirreincidencia-junts_1_5646210.html", "Ara, votación en el Congreso del 12/02/2026", "parlamento", "2026-02-12"]
   },
+  E02: {
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  E03: {
+    psoe: ["https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza", "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)", "prensa", "2024-10-03"],
+    pp: ["https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/", "Onda Vasca, enmienda a la totalidad del PP en el Congreso, 12/12/2024", "parlamento", "2024-12-12"]
+  },
   E06: {
-    psoe: ["https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html", "Ara, junio de 2026", "parlamento", "2026-06"]
+    psoe: ["https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html", "Ara, pacto PSOE-Sumar para reformar el Código Penal, 15/06/2026", "prensa", "2026-06-15"]
+  },
+  E08: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
   },
   F01: {
     psoe: ["https://www.diaridetarragona.com/espana/250726/saiz-sobre-regularizacion-migrantes-conscientes-administracion-dar-respuesta.html", "Diari de Tarragona (EFE), declaraciones de la ministra Elma Saiz, 27/01/2026", "gobierno", "2026-01-27"],
@@ -766,8 +822,15 @@ export const SOURCES = {
     erc: ["https://www.elsaltodiario.com/migracion/socios-del-gobierno-presionan-desatascar-regularizacion-migrantes", "El Salto, debate de una PNL en el Congreso, 26/02/2025", "parlamento", "2025-02-26"],
     junts: ["https://en.ara.cat/politics/together-they-will-denounce-in-europe-the-marginalization-of-catalan-in-the-regularization-of-migrants_1_5709974.html", "Ara (edición en inglés), comunicado de Junts, 17/04/2026", "declaracion", "2026-04-17"]
   },
+  F02: {
+    psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx", "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria", "gobierno", "2026-04-14"]
+  },
   F03: {
+    psoe: ["https://www.menorca.info/actualidad/nacional/2026/05/03/2621747/ofensiva-del-psoe-toda-espana-europa-contra-prioridad-nacional-vox.html", "Menorca – Es Diari (EFE), comunicado del PSOE contra la «prioridad nacional», 03/05/2026", "prensa", "2026-05-03"],
     pp: ["https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html", "Menorca.info, abril de 2026", "prensa", "2026-04"]
+  },
+  F07: {
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
   },
   G01: {
     psoe: ["https://es.euronews.com/my-europe/2026/08/14/el-gobierno-de-espana-prorroga-la-central-nuclear-de-almaraz-hasta-2030-y-aplaza-su-cierre", "Euronews, agosto de 2026", "gobierno", "2026-08"],
@@ -778,8 +841,19 @@ export const SOURCES = {
     erc: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     junts: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"]
   },
+  G03: {
+    psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
+    pp: ["https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/", "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024", "declaracion", "2024-05-24"]
+  },
+  G04: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
+  },
+  G09: {
+    psoe: ["https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857", "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico", "gobierno", "2025-06"],
+    pp: ["https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf", "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)", "declaracion", "2026-04-27"]
+  },
   H01: {
-    psoe: ["https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html", "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025", "gobierno", "2025-06-19"],
+    psoe: ["https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html", "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025", "declaracion", "2025-06-19"],
     pp: ["https://www.publico.es/politica/pp-compromete-llegar-5-pib-defensa-pide-trump.html", "Público, postura del PP sobre el gasto en defensa, 15/10/2025", "declaracion", "2025-10-15"],
     vox: ["https://theobjective.com/espana/politica/2025-03-26/abascal-gasto-defensa-ceuta-melilla/", "The Objective, intervención de Abascal en el Congreso, 26/03/2025", "declaracion", "2025-03-26"],
     fa: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
@@ -787,11 +861,18 @@ export const SOURCES = {
     erc: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
     junts: ["https://www.galiciapress.es/articulo/politica/2026-06-11/5915942-congreso-rechaza-mocion-bng-pedia-salir-otan-reducir-gasto-militar-gobierno-dividido", "Galiciapress (Europa Press), votación en el Congreso del 11/06/2026", "parlamento", "2026-06-11"]
   },
+  H02: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
+  },
   H04: {
+    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831", "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)", "gobierno", "2025-09-24"],
     pp: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, votación del 8 de octubre de 2025", "parlamento", "2025-10-08"]
   },
   H06: {
     pod: ["https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html", "El Debate, abril de 2026", "parlamento", "2026-04"]
+  },
+  H09: {
+    psoe: ["https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html", "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024", "prensa", "2024-10-15"]
   },
   I01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -802,6 +883,9 @@ export const SOURCES = {
     erc: ["https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html", "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023", "gobierno", "2023-04-27"],
     junts: ["https://naciodigital.cat/politica/pp-vox-i-cs-se-sumen-a-jxcat-en-defensa-de-lescola-concertada.html", "NacióDigital, enmienda a la LOMLOE, 18/11/2020", "parlamento", "2020-11-18"]
   },
+  I02: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
+  },
   J01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     pp: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.html", "Redacción Médica, posición del PP ante la Ley de Gestión Pública del SNS, 18/03/2026", "declaracion", "2026-03-18"],
@@ -811,12 +895,29 @@ export const SOURCES = {
     erc: ["https://www.redaccionmedica.com/autonomias/cataluna/el-parlament-catalan-pide-la-retirada-de-la-ley-de-gestion-publica-del-sns-3607", "Redacción Médica, votación en el Parlament del 12/03/2026", "parlamento", "2026-03-12"],
     junts: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.amp.html", "Redacción Médica, 18/03/2026", "declaracion", "2026-03-18"]
   },
+  J03: {
+    pp: ["https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html", "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025", "gobierno", "2025-05-24"]
+  },
+  J08: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
+  },
   K01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     pp: ["https://www.newtral.es/acuerdo-mercosur-maria-guardiola-pp-europeo-sanchez-factcheck/20260129/", "Newtral, enero de 2026", "prensa", "2026-01"],
     vox: ["https://www.eldebate.com/campo-y-caza/20260121/parlamento-europeo-bloquea-entrada-vigor-trato-mercosur-menos-ano_376697.html", "El Debate, votación en el Parlamento Europeo sobre remitir el acuerdo UE-Mercosur al TJUE, 21/01/2026", "parlamento", "2026-01-21"],
     fa: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
     pod: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"]
+  },
+  K03: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  K04: {
+    psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario", "prensa", "2025-04-03"],
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  K05: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
   },
   L01: {
     psoe: ["https://www.diaridetarragona.com/espana/256561/gobierno-aprueba-proyecto-reforma-constitucional-proteger-aborto.html", "Diari de Tarragona (ACN), Consejo de Ministros del 07/04/2026", "gobierno", "2026-04-07"],
@@ -827,7 +928,16 @@ export const SOURCES = {
     erc: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
     junts: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"]
   },
+  L02: {
+    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
+  L03: {
+    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
+    pp: ["https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/", "The Objective, recurso del PP contra la Ley Trans ante el TC, 27/04/2025", "parlamento", "2025-04-27"]
+  },
   L09: {
+    psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "prensa", "2026-04-14"],
     pp: ["https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/", "Orain, febrero de 2026", "parlamento", "2026-02"]
   }
 };
@@ -836,4 +946,134 @@ export const SOURCES = {
 // lenguaje neutral y sin adjetivos. Se publica en data/preguntas.json (`why`) y la mostrará T8.
 // Formato: { pregunta: { partido: "frase de hasta 200 caracteres" } }. Cada partido citado debe tener postura.
 export const JUSTIF = {
+  A01: {
+    psoe: "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
+    pp: "El PP presentó enmienda a la totalidad y tumbó la ley: prefiere que la jornada se negocie en el diálogo social y no se imponga por ley."
+  },
+  A03: {
+    psoe: "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
+    pp: "El PP promete suprimir el impuesto estatal de solidaridad sobre las grandes fortunas, que ve como una invasión de la autonomía fiscal."
+  },
+  A05: {
+    psoe: "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos."
+  },
+  B02: {
+    psoe: "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
+    pp: "El PP apuesta por aumentar la oferta (un millón de viviendas, suelo y licencias rápidas) y rechaza la regulación de precios de la ley de vivienda."
+  },
+  B03: {
+    psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
+    pp: "El PP promete una ley antiokupación con desalojo en 48 horas (24 h en el programa de 2023) para proteger la propiedad."
+  },
+  B05: {
+    psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como hizo Barcelona."
+  },
+  C03: {
+    pp: "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades."
+  },
+  C04: {
+    psoe: "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada."
+  },
+  C05: {
+    psoe: "Rechaza el referéndum de autodeterminación: frente a la propuesta de Junts, ofrece desarrollar el Estatut de 2006.",
+    pp: "El PP sostiene que un referéndum de autodeterminación no cabe en la Constitución y propone tipificar como delito convocarlo."
+  },
+  D01: {
+    psoe: "Sin postura reciente documentada: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
+    pp: "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional."
+  },
+  D03: {
+    psoe: "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
+    pp: "El PP quiere que jueces y magistrados elijan a los 12 vocales judiciales del CGPJ (medida 237 del programa de 2023)."
+  },
+  D04: {
+    psoe: "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
+    pp: "El PP votó contra la ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley."
+  },
+  D07: {
+    psoe: "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
+    pp: "Defensa constante de la monarquía parlamentaria; votó contra los referendos sobre la forma de Estado en 2014. No hay fuente de 2023–2026."
+  },
+  E02: {
+    pp: "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla."
+  },
+  E03: {
+    psoe: "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
+    pp: "El PP aprobó la ley en 2015, votó contra su reforma y defiende el texto vigente como protección de las fuerzas de seguridad."
+  },
+  E06: {
+    psoe: "En junio de 2026 pactó con Sumar una reforma del Código Penal que deroga las injurias y calumnias a la Corona."
+  },
+  E08: {
+    psoe: "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que la niegan.",
+    pp: "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás»."
+  },
+  F02: {
+    psoe: "Su Gobierno aprobó en 2026 la regularización extraordinaria de unos 500.000 inmigrantes en situación irregular."
+  },
+  F03: {
+    psoe: "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra."
+  },
+  F07: {
+    psoe: "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
+    pp: "El PP propone una fiscalidad específica y bonificaciones para las zonas rurales despobladas, además de menores costes laborales en Soria, Cuenca y Teruel."
+  },
+  G03: {
+    psoe: "Sánchez pidió por carta a la Comisión Europea mantener el veto a la venta de coches de combustión a partir de 2035.",
+    pp: "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil."
+  },
+  G04: {
+    psoe: "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases."
+  },
+  G09: {
+    psoe: "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
+    pp: "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables."
+  },
+  H01: {
+    psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España."
+  },
+  H02: {
+    psoe: "Europeísta: propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
+  },
+  H04: {
+    psoe: "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025."
+  },
+  H09: {
+    psoe: "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos."
+  },
+  I02: {
+    psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes."
+  },
+  I07: {
+    pp: "El PP-Vox de Murcia exigió en 2019 permiso paterno para las charlas impartidas por personas ajenas al centro; la dirección nacional no se ha pronunciado."
+  },
+  J03: {
+    psoe: "Estimación: el borrador de Estatuto Marco del Ministerio de Sanidad (Sumar) prevé exclusividad parcial; no consta una postura propia del PSOE.",
+    pp: "Las comunidades del PP rechazan imponer la exclusividad del Estatuto Marco porque temen la fuga de médicos y defienden poder compatibilizar."
+  },
+  J08: {
+    psoe: "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud."
+  },
+  K03: {
+    psoe: "Quiere priorizar la agricultura familiar y profesional y las pequeñas y medianas explotaciones.",
+    pp: "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas."
+  },
+  K04: {
+    psoe: "Votó en 2025 contra sacar al lobo del listado de protección; su ministra lo calificó de decisión «en contra de la ciencia».",
+    pp: "El PP quiere sacar al lobo del LESPRE al norte del Duero y permitir su control para proteger la ganadería."
+  },
+  K05: {
+    psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas."
+  },
+  L02: {
+    psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
+    pp: "El PP votó contra la ley de eutanasia, pero en 2023 promete revisarla, priorizando los cuidados paliativos, no derogarla."
+  },
+  L03: {
+    psoe: "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
+    pp: "El PP recurrió ante el TC el cambio registral desde los 16 años sin informes médicos, y promete otra ley trans «con la máxima prudencia»."
+  },
+  L09: {
+    psoe: "Votó contra las leyes de Vox (febrero) y Junts (abril de 2026) para prohibir el burka, por considerarlas discriminatorias."
+  }
 };

@@ -6,7 +6,7 @@ import { PARTY_ORDER, PARTIES, REGIONS } from "./src/partidos.src.mjs";
 import { POLITICIANS } from "./src/politicos.src.mjs";
 
 const VERSION = "2.0.0";
-const UPDATED = "2026-10-18";
+const UPDATED = "2026-10-24";
 const SRC_TYPES = ["programa", "parlamento", "gobierno", "declaracion", "prensa"];
 const errors = [];
 const warns = [];
