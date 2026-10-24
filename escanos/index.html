@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulador de escaños del 29N: reparto con la ley D&#39;Hondt · Test 29N</title>
+<meta name="description" content="Calcula cómo se reparten los diputados de cada provincia con la ley D&#39;Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://test29n.goatcounter.com; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#F2F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1014" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://test29n.es/escanos/">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Test 29N"><meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://test29n.es/escanos/"><meta property="og:title" content="Simulador de escaños del 29N: reparto con la ley D&#39;Hondt · Test 29N"><meta property="og:description" content="Calcula cómo se reparten los diputados de cada provincia con la ley D&#39;Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones.">
+<meta property="og:image" content="https://test29n.es/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Simulador de escaños del 29N: reparto con la ley D&#39;Hondt · Test 29N"><meta name="twitter:description" content="Calcula cómo se reparten los diputados de cada provincia con la ley D&#39;Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones."><meta name="twitter:image" content="https://test29n.es/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Test 29N","item":"https://test29n.es/"},{"@type":"ListItem","position":2,"name":"Simulador de escaños","item":"https://test29n.es/escanos/"}]}</script>
+<link rel="preload" href="/assets/fonts/Archivo-normal-latin-258a93fe.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css?v=5bb6fc279a">
+<link rel="stylesheet" href="/assets/papeleta.css?v=10512a1a8d">
+<style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-head"><div class="wrap head-row">
+  <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
+  <nav class="head-nav sp-nav" aria-label="Secciones"><a href="/partidos/">Partidos</a><a href="/temas/">Temas</a><a class="btn btn-primary btn-sm" href="/">Hacer el test</a></nav>
+</div></header>
+<main id="main" class="wrap sp" tabindex="-1">
+<nav class="crumbs" aria-label="Ruta"><a href="/">Test 29N</a> › <span aria-current="page">Simulador de escaños</span></nav>
+<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Simulador de escaños</h1>
+  <p class="lede">Elige una provincia, escribe los votos que quieras para cada candidatura y mira cómo se repartirían sus diputados. No usa encuestas ni estimaciones: solo los números que introduces.</p></header>
+<form id="sim-form" class="sheet sim" novalidate>
+  <div class="field"><label class="label" for="sim-prov">Provincia (diputados que elige)</label><select id="sim-prov"></select></div>
+  <div id="sim-rows" class="sim-rows"></div>
+  <div class="sim-row sim-extra"><label for="v-blanco">Votos en blanco</label><input id="v-blanco" type="number" inputmode="numeric" min="0" step="1" placeholder="0"></div>
+  <div class="actions"><button class="btn btn-primary" type="submit">Calcular el reparto</button><button class="btn btn-ghost" type="button" id="sim-example">Ver el ejemplo de la ley</button></div>
+  <noscript><p>El simulador necesita JavaScript.</p></noscript>
+</form>
+<div id="sim-out" class="sim-out" aria-live="polite"></div>
+<section aria-labelledby="h-reglas"><h2 class="h2" id="h-reglas">Cómo funciona el reparto</h2>
+<ul class="dots"><li>Cada provincia elige los diputados que fija el real decreto de convocatoria (Madrid, 38; Soria, 2; Ceuta y Melilla, 1 cada una).</li>
+<li>Solo entran en el reparto las candidaturas que obtienen al menos el <b>3 % de los votos válidos</b> de la provincia. Los votos válidos incluyen los votos en blanco, por eso el voto en blanco hace un poco más alta esa barrera.</li>
+<li>Los votos de cada candidatura se dividen entre 1, 2, 3… hasta el número de escaños, y los escaños se asignan a los cocientes más altos (<b>ley D'Hondt</b>).</li>
+<li>Si dos cocientes empatan, el escaño va a la candidatura con más votos en total; si también empatan en votos, el primer empate se resuelve por sorteo y los siguientes, de forma alternativa. El simulador te avisa si ocurre.</li>
+<li>En las circunscripciones de un solo escaño, gana la candidatura más votada.</li></ul>
+<p class="small muted">Reglas: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672" target="_blank" rel="noopener noreferrer">Ley Orgánica del Régimen Electoral General, arts. 162 y 163</a>. Escaños: <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742" target="_blank" rel="noopener noreferrer">Real Decreto 806/2026, anexo (BOE del 6 de octubre de 2026)</a>. Es una simulación matemática: no reproduce un resultado oficial.</p></section>
+<script src="/escanos/escanos.js" defer></script>
+</main>
+<footer class="site-foot"><div class="wrap foot-row">
+  <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el 18 de octubre de 2026</p>
+</div></footer>
+<script src="/assets/stats.js?v=1e8e464686" defer></script>
+</body>
+</html>
