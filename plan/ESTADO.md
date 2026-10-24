@@ -43,13 +43,15 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 
 ## 24 oct 2026 · T6 · Fuentes de las posturas de Vox y Frente Amplio
 - **Adelantada a petición del titular.** Mismo método y criterio que T5: todas las posturas sin fuente (190: 96 de Vox, 94 de Frente Amplio), cuatro subagentes de dos en dos y revisión una a una. Se aceptan programas de 2023 a 2026, leyes en vigor y votaciones desde 2021; se descartan declaraciones anteriores a 2021, fuentes indirectas y evidencias solo autonómicas. Ni Vox ni Frente Amplio han publicado aún programa para 2026: se usan el programa de Vox de 2023 y el de Sumar de 2023, más votaciones, decretos y declaraciones de 2021 a 2026.
-- **Resultado:** 135 fuentes nuevas (66 de Vox, 69 de Frente Amplio). Total de la web: 227 → 362. Los 48 enlaces únicos nuevos responden con 200.
-  - **Vox:** 77 de 107 posturas con fuente; 26 estimadas.
+- **Resultado:** 134 fuentes nuevas (65 de Vox, 69 de Frente Amplio). Total de la web: 227 → 361. Los 48 enlaces únicos nuevos responden con 200.
+  - **Vox:** 76 de 107 posturas con fuente; 26 estimadas.
   - **Frente Amplio:** 82 de 107 posturas con fuente; 19 estimadas.
-- **17 posturas ajustadas** (casi todas en un punto), por una fuente oficial reciente; cada una con su nota en `NOTES`:
-  - **Vox:** A07 5→4, B07 3→4, D09 3→2, H05 4→3, K03 3→4, L07 2→1.
+- **16 posturas ajustadas** (casi todas en un punto), por una fuente oficial reciente; cada una con su nota en `NOTES`:
+  - **Vox:** A07 5→4, B07 3→4, D09 3→2, K03 3→4, L07 2→1. H05 se cambió a 3 y se deshizo en la revisión, porque la fuente no lo sostenía.
   - **Frente Amplio:** C04 5→4, D06 5→4, E07 4→2, E09 5→4, G02 2→3, G08 2→3, H02 3→4, H03 3→2, J03 5→4, J05 3→4, J08 4→5.
 - **Pasan a «estimadas» (mismo valor), porque no hay ninguna fuente reciente:** Vox D07, E07 y L05; Frente Amplio D09, E02 y E04.
+- **Estimaciones extremas sin base, moderadas un punto hacia el centro** (revisión independiente): Frente Amplio E04 1→2, E05 5→4, G07 5→4, I04 1→2, J06 1→2, K07 1→2; Vox E05 1→2, E07 1→2, J04 1→2, L05 1→2.
+- **Revisión independiente:** además, corregidas atribuciones (L07 Vox: cita literal de Abascal; I03 FA), una nota (B07 Vox: la propuesta no distingue residentes ni origen), un tipo de fuente (B03 Vox, prensa) y las etiquetas del programa de Vox, unificadas.
 - **Sin cambios por ser evidencia antigua, indirecta o autonómica**, aunque los subagentes proponían cambiarlas: Vox A05, C07, D01, F08 e I03; Frente Amplio F09.
 - **Propuestas destacadas actualizadas:**
   - **Vox:** competencias que quiere devolver al Estado (Educación, Sanidad, Seguridad y Justicia); Plan Nacional del Agua con interconexión de cuencas, porque su programa no habla de «trasvases».

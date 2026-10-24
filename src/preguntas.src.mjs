@@ -285,13 +285,13 @@ export const QUESTIONS = [
   short: "Rebajar la edad penal",
   ctx: "Los menores de 14 años no responden penalmente, y los de 14 a 17 se rigen por la Ley del Menor, que prioriza la reeducación, con internamientos de hasta ocho años en los casos más graves. Tras varios delitos graves cometidos por niños, algunos partidos piden rebajar la edad; muchos especialistas en justicia juvenil sostienen que no reduciría la delincuencia y prefieren reforzar la intervención educativa.",
   ley: "Ley Orgánica 5/2000, de responsabilidad penal de los menores",
-  pos: "1 3 5 1~ 1 5~ 0 3~ 1 3~ 1~ 1 3~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 2~ 1 5~ 0 3~ 1 3~ 1~ 1 3~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "E05", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "El uso policial del reconocimiento facial en espacios públicos debería prohibirse.",
   short: "Prohibir el reconocimiento facial policial",
   ctx: "El Reglamento europeo de Inteligencia Artificial prohíbe con carácter general la identificación biométrica en tiempo real en espacios públicos, con excepciones sujetas a autorización previa, como buscar a víctimas de secuestro o prevenir un atentado. Sus partidarios lo ven como una herramienta eficaz contra el crimen; sus críticos alertan del riesgo de vigilancia masiva, de errores de identificación y de la pérdida de privacidad.",
   ley: "Reglamento (UE) 2024/1689 de Inteligencia Artificial, art. 5",
-  pos: "3 2~ 1~ 5~ 5~ 1~ 0 3~ 5~ 3~ 4~ 5~ 2~ 0 5~ 0 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 2~ 2~ 4~ 5~ 1~ 0 3~ 5~ 3~ 4~ 5~ 2~ 0 5~ 0 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "E06", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "Las injurias a la Corona deberían dejar de ser delito.",
   short: "Despenalizar las injurias a la Corona",
@@ -303,7 +303,7 @@ export const QUESTIONS = [
   short: "Limitar la acusación popular",
   ctx: "La Constitución permite ejercer la acusación popular en un proceso penal sin ser víctima. La usan asociaciones, sindicatos y partidos, y ha impulsado causas contra políticos y familiares de distinto signo. En 2025 el PSOE propuso restringirla para evitar su uso partidista; sus críticos sostienen que debilitaría el control ciudadano de la corrupción y del poder, sobre todo cuando la Fiscalía no actúa.",
   ley: "Constitución, art. 125",
-  pos: "5 1 1~ 2 3~ 1~ 0 1~ 4~ 2~ 3~ 4~ 1~ 3~ 3~ 2~ 3~ 3~ 4~ 3~ 0 3~ 3~ 0 0 0 0" },
+  pos: "5 1 2~ 2 3~ 1~ 0 1~ 4~ 2~ 3~ 4~ 1~ 3~ 3~ 2~ 3~ 3~ 4~ 3~ 0 3~ 3~ 0 0 0 0" },
 { id: "E08", area: "jus", prio: 2, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
   short: "Sustituir la Ley de Violencia de Género",
@@ -400,7 +400,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
   short: "Prohibir construir en zonas inundables",
   ctx: "La dana de octubre de 2024 causó más de 220 muertos en la provincia de Valencia y puso el foco en viviendas y polígonos construidos en zonas inundables. La normativa ya limita edificar en ellas, pero hay suelos aprobados antes y excepciones. Prohibirlo del todo reduciría los riesgos futuros, pero obligaría a desclasificar suelo e indemnizar, con costes para propietarios y ayuntamientos.",
-  pos: "4 3~ 2~ 5~ 5~ 2~ 4~ 3~ 4~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
+  pos: "4 3~ 2~ 4~ 5~ 2~ 4~ 3~ 4~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
 { id: "G08", area: "ene", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
   short: "Más aprovechamiento del monte contra incendios",
@@ -439,7 +439,7 @@ export const QUESTIONS = [
   text: "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
   short: "Retirar el apoyo al plan marroquí para el Sáhara",
   ctx: "En 2022 el Gobierno pasó a considerar la autonomía bajo soberanía de Marruecos como «la base más seria, realista y creíble» para resolver el conflicto del Sáhara Occidental, antigua colonia española, y en 2025 el Consejo de Seguridad de la ONU pidió negociar sobre esa base. El giro mejoró la cooperación con Marruecos en migración y comercio; sus críticos sostienen que abandona el derecho de autodeterminación del pueblo saharaui y que no ha evitado crisis como las de Ceuta.",
-  pos: "1 4 3 5 5 3~ 0 3~ 5 3~ 4~ 5 3~ 4~ 5 4 5 5 5 5 0 5~ 5 0 0 0 0" },
+  pos: "1 4 4 5 5 3~ 0 3~ 5 3~ 4~ 5 3~ 4~ 5 4 5 5 5 5 0 5~ 5 0 0 0 0" },
 { id: "H06", area: "ext", prio: 3, type: "likert", dim: null, dir: 0, lr: 1,
   text: "España debería seguir en la OTAN.",
   short: "Seguir en la OTAN",
@@ -483,7 +483,7 @@ export const QUESTIONS = [
   text: "Los resultados de cada colegio en las evaluaciones externas deberían hacerse públicos.",
   short: "Publicar los resultados de cada colegio",
   ctx: "Las comunidades hacen pruebas de evaluación externas y España participa en PISA, pero en general no se publican los resultados de cada centro. Publicarlos daría información a las familias y presionaría para mejorar; sus críticos advierten de clasificaciones que estigmatizan a los centros con alumnado más vulnerable y de que se acabe enseñando para el examen.",
-  pos: "2 4~ 4~ 1~ 1~ 4~ 0 5~ 2~ 3~ 2~ 1~ 4~ 0 1~ 0 0 0 1~ 0 0 0 0 0 0 0 0" },
+  pos: "2 4~ 4~ 2~ 1~ 4~ 0 5~ 2~ 3~ 2~ 1~ 4~ 0 1~ 0 0 0 1~ 0 0 0 0 0 0 0 0" },
 { id: "I05", area: "edu", prio: 2, type: "likert", dim: "ter", dir: 1, lr: 1,
   text: "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
   short: "Elegir el castellano como lengua de estudio",
@@ -531,7 +531,7 @@ export const QUESTIONS = [
   text: "Habría que subir los impuestos sobre el tabaco, el alcohol y las bebidas azucaradas para reducir su consumo.",
   short: "Impuestos saludables",
   ctx: "El Ministerio de Sanidad ha propuesto subir los impuestos del tabaco y extenderlos a productos como los vapeadores, y en Europa se debate gravar más las bebidas azucaradas. Según la experiencia de otros países, estos impuestos reducen el consumo y recaudan para la sanidad; sus críticos señalan que pesan más sobre las rentas bajas y que limitan la libertad de cada persona para decidir qué consume.",
-  pos: "4~ 2~ 1~ 5 4~ 1~ 0 2~ 4~ 2~ 3~ 4~ 2~ 0 4~ 2~ 0 0 4~ 0 0 0 0 0 0 0 0" },
+  pos: "4~ 2~ 2~ 5 4~ 1~ 0 2~ 4~ 2~ 3~ 4~ 2~ 0 4~ 2~ 0 0 4~ 0 0 0 0 0 0 0 0" },
 { id: "J05", area: "san", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
   short: "Evaluar y suprimir políticas ineficaces",
@@ -541,7 +541,7 @@ export const QUESTIONS = [
   text: "El empleo público debería incluir una evaluación del desempeño con consecuencias, incluido el despido por bajo rendimiento.",
   short: "Evaluar a los empleados públicos",
   ctx: "España tiene unos 3,5 millones de empleados públicos; la mayoría tiene plaza fija tras aprobar una oposición, una garantía pensada para proteger su imparcialidad frente a los cambios de gobierno. La ley ya prevé evaluar el desempeño, pero apenas se aplica. Sus defensores creen que mejoraría la eficiencia de la Administración; sus críticos temen arbitrariedad y presiones políticas sobre los empleados.",
-  pos: "3 3~ 4~ 1~ 1~ 5~ 0 5~ 2~ 3~ 3~ 1~ 3~ 0 1~ 0 0 0 1~ 0 0 0 1~ 0 0 0 0" },
+  pos: "3 3~ 4~ 2~ 1~ 5~ 0 5~ 2~ 3~ 3~ 1~ 3~ 0 1~ 0 0 0 1~ 0 0 0 1~ 0 0 0 0" },
 { id: "J07", area: "san", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Los funcionarios deberían dejar de poder elegir sanidad privada a través de MUFACE y pasar a la sanidad pública.",
   short: "Integrar MUFACE en la sanidad pública",
@@ -589,7 +589,7 @@ export const QUESTIONS = [
   text: "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
   short: "Proteger la caza por ley",
   ctx: "En España hay unas 750.000 licencias de caza. Sus defensores la consideran clave para controlar especies como el jabalí o el conejo, que causan daños en cultivos y accidentes de tráfico, y para la economía de muchos pueblos. Sus críticos denuncian el sufrimiento animal y proponen otros métodos de control de fauna; la Ley de Bienestar Animal de 2023 dejó fuera a los perros de caza.",
-  pos: "3 5 5 1~ 1 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 2~ 2~ 4~ 1~ 2~ 4~ 5~ 4~ 5~" },
+  pos: "3 5 5 2~ 1 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 2~ 2~ 4~ 1~ 2~ 4~ 5~ 4~ 5~" },
 { id: "K08", area: "rur", prio: 3, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
   short: "Limitar los nuevos regadíos",
@@ -625,7 +625,7 @@ export const QUESTIONS = [
   short: "Revisar los acuerdos con la Santa Sede",
   ctx: "Los acuerdos con el Vaticano regulan la enseñanza de la Religión, la asistencia religiosa, exenciones fiscales y la financiación de la Iglesia, que recibe el 0,7 % del IRPF de quienes marcan su casilla. Sus críticos sostienen que otorgan privilegios impropios de un Estado aconfesional; sus defensores, que reconocen la labor social de la Iglesia y la libertad religiosa, y que otras confesiones también tienen acuerdos.",
   ley: "Constitución, art. 16.3",
-  pos: "3 1 1~ 5 5 2~ 0 3~ 5~ 3~ 2~ 5~ 1 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 1 2~ 5 5 2~ 0 3~ 5~ 3~ 2~ 5~ 1 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L06", area: "der", prio: 3, type: "likert", dim: "lib", dir: 1, lr: 0,
   text: "Las redes sociales deberían estar obligadas a verificar la identidad real de cada usuario.",
   short: "Fin del anonimato en redes",
@@ -672,7 +672,7 @@ export const NOTES = {
     fa: "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general."
   },
   B07: {
-    vox: "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda."
+    vox: "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen."
   },
   C01: {
     psoe: "El acuerdo PSC-ERC de 2024 prevé que la Agencia Tributaria de Cataluña recaude todos los impuestos, pero la dirección federal del PSOE niega que sea un concierto y Hacienda solo ha concretado la cesión del IRPF."
@@ -739,8 +739,7 @@ export const NOTES = {
     fa: "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo."
   },
   H05: {
-    pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum.",
-    vox: "Vox critica la política del Gobierno hacia Marruecos, pero no firmó la declaración que pedía rectificar sobre el Sáhara."
+    pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
   },
   H07: {
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
@@ -808,7 +807,7 @@ export const NOTES = {
     pp: "Su portavoz adjunto en el Congreso defendió acabar con el anonimato en redes y registrarse con identidad real."
   },
   L07: {
-    vox: "Abascal rechazó prohibir las redes a los menores de 16 años porque, según él, invade el ámbito familiar."
+    vox: "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir»."
   },
   L09: {
     psoe: "Votó contra las dos proposiciones de 2026 para prohibir el velo integral (Vox en febrero y Junts en abril) por considerarlas discriminatorias."
@@ -840,13 +839,13 @@ export const SOURCES = {
   A03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452", "BOE, Real Decreto-ley 8/2023, de 27 de diciembre", "gobierno", "2023-12"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox 23J (2023), medida 151", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"]
   },
   A04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=24", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74", "Programa electoral de Vox 23J (2023), medida 146", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74", "Programa electoral de Vox de 2023, medida 146", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"]
   },
   A05: {
@@ -855,11 +854,11 @@ export const SOURCES = {
   },
   A06: {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=22", "Programa electoral de Vox 23J (2023), medida 30", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=22", "Programa electoral de Vox de 2023, medida 30", "programa", "2023-07"]
   },
   A07: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2021-11473", "Ley 11/2021 de medidas de prevención y lucha contra el fraude fiscal (9 de julio de 2021)", "gobierno", "2021-07-09"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85", "Programa electoral de Vox 23J (2023), medida 178", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85", "Programa electoral de Vox de 2023, medida 178", "programa", "2023-07"]
   },
   A08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -874,7 +873,7 @@ export const SOURCES = {
   },
   A10: {
     psoe: ["https://es.ara.cat/economia/cruzada-montero-dumping-fiscal-madrid_1_5613605.html", "Declaraciones de María Jesús Montero sobre la armonización fiscal (9 de enero de 2026)", "declaracion", "2026-01-09"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox 23J (2023), medida 151", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"]
   },
   B01: {
@@ -889,13 +888,13 @@ export const SOURCES = {
   B02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)", "declaracion", "2026-10-22"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40", "Programa electoral de Vox 23J (2023), medida 65", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40", "Programa electoral de Vox de 2023, medida 65", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"]
   },
   B03: {
     psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"],
-    vox: ["https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html", "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)", "parlamento", "2025-01-29"]
+    vox: ["https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html", "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)", "prensa", "2025-01-29"]
   },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"],
@@ -920,13 +919,13 @@ export const SOURCES = {
   B08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.vozpopuli.com/economia/juan-bravo-titular-de-vivienda-del-pp-planeamos-un-fondo-publico-privado-de-15000-millones.html", "Vozpópuli, entrevista a Juan Bravo, 02/11/2025", "declaracion", "2025-11-02"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41", "Programa electoral de Vox 23J (2023), medida 69", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41", "Programa electoral de Vox de 2023, medida 69", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"]
   },
   B09: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Una nueva generación de propietarios» (octubre de 2026)", "programa", "2026-10"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=162", "Programa electoral de Vox 23J (2023), medida 346", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=162", "Programa electoral de Vox de 2023, medida 346", "programa", "2023-07"],
     fa: ["https://www.menorca.info/actualidad/nacional/2024/02/13/2105407/yolanda-diaz-critica-avales-del-ico-por-fomentar-compra-avisa-subira-precio-vivienda.html", "Menorca.info (Europa Press), Yolanda Díaz sobre los avales del ICO, 13/02/2024", "declaracion", "2024-02-13"]
   },
   C01: {
@@ -944,18 +943,18 @@ export const SOURCES = {
   C03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=231", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32", "Programa electoral de Vox 23J (2023), medida 47", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32", "Programa electoral de Vox de 2023, medida 47", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=121", "Programa electoral de Sumar de 2023, p. 121", "programa", "2023-07"]
   },
   C04: {
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8", "Programa electoral de Vox 23J (2023), medida 1", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8", "Programa electoral de Vox de 2023, medida 1", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120", "Programa electoral de Sumar de 2023, p. 120", "programa", "2023-07"]
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
     pp: ["https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf", "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)", "declaracion", "2023-07-19"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16", "Programa electoral de Vox 23J (2023), medida 18", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16", "Programa electoral de Vox de 2023, medida 18", "programa", "2023-07"],
     fa: ["https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html", "Ara, programa de Sumar de 2023", "programa", "2023"]
   },
   C06: {
@@ -980,7 +979,7 @@ export const SOURCES = {
   D03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127", "Programa electoral de Vox 23J (2023), medida 271", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127", "Programa electoral de Vox de 2023, medida 271", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"]
   },
   D04: {
@@ -998,7 +997,7 @@ export const SOURCES = {
   },
   D08: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127", "Programa electoral de Vox de 2023", "programa", "2023-07"]
   },
   D09: {
     psoe: ["https://www.menorca.info/actualidad/elecciones-23j/2023/09/26/2019575/debate-investidura-oscar-puente-representa-psoe.html", "Intervención de Óscar Puente en el debate de investidura (26 de septiembre de 2023)", "declaracion", "2023-09-26"],
@@ -1016,7 +1015,7 @@ export const SOURCES = {
   },
   E02: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox 23J (2023), medida 376", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023, medida 376", "programa", "2023-07"]
   },
   E03: {
     psoe: ["https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza", "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)", "prensa", "2024-10-03"],
@@ -1027,7 +1026,7 @@ export const SOURCES = {
   E04: {
     psoe: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Debate de la proposición de Vox para rebajar la edad penal (18 de noviembre de 2025)", "parlamento", "2025-11-18"],
     pp: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025", "parlamento", "2025-11-18"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"]
   },
   E05: {
     psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "declaracion", "2023-07-18"]
@@ -1046,7 +1045,7 @@ export const SOURCES = {
   E08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10", "Programa electoral de Vox 23J (2023), medida 10", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10", "Programa electoral de Vox de 2023, medida 10", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=111", "Programa electoral de Sumar de 2023, p. 111", "programa", "2023-07"]
   },
   E09: {
@@ -1066,7 +1065,7 @@ export const SOURCES = {
   },
   F02: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx", "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria", "gobierno", "2026-04-14"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103", "Programa electoral de Vox 23J (2023), medida 218", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103", "Programa electoral de Vox de 2023, medida 218", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"]
   },
   F03: {
@@ -1116,18 +1115,18 @@ export const SOURCES = {
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=38", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=111", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=111", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=62", "Programa electoral de Sumar de 2023, p. 62", "programa", "2023-07"]
   },
   G03: {
     psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
     pp: ["https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/", "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024", "declaracion", "2024-05-24"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50", "Programa electoral de Vox 23J (2023), medida 92", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50", "Programa electoral de Vox de 2023, medida 92", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=11", "Programa electoral de Sumar de 2023, p. 11", "programa", "2023-07"]
   },
   G04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=148", "Programa electoral de Vox 23J (2023), medida 312", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=148", "Programa electoral de Vox de 2023, medida 312", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"]
   },
   G05: {
@@ -1139,7 +1138,7 @@ export const SOURCES = {
   G06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=79", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=33", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81", "Programa electoral de Sumar de 2023, p. 81", "programa", "2023-07"]
   },
   G07: {
@@ -1168,12 +1167,12 @@ export const SOURCES = {
   H02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=35", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134", "Programa electoral de Vox 23J (2023), medida 283", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134", "Programa electoral de Vox de 2023, medida 283", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=145", "Programa electoral de Sumar de 2023, p. 145", "programa", "2023-07"]
   },
   H03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=137", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=137", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=146", "Programa electoral de Sumar de 2023, p. 146", "programa", "2023-07"]
   },
   H04: {
@@ -1185,13 +1184,12 @@ export const SOURCES = {
   H05: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf", "Declaración conjunta España-Marruecos (4 de diciembre de 2025)", "gobierno", "2025-12-04"],
     pp: ["https://www.elindependiente.com/espana/2025/11/20/pp-frente-polisario-canarias/", "El Independiente, el PP y las proposiciones sobre el Sáhara aprobadas en el Congreso, 20/11/2025", "parlamento", "2025-11-20"],
-    vox: ["https://www.elindependiente.com/espana/2025/03/20/psoe-vox-autoexcluyen-declaracion-congreso-improcedente-carta-sanchez-mohamed-vi/", "PSOE y Vox se autoexcluyen de la declaración del Congreso que tilda de «improcedente» la carta de Sánchez a Mohamed VI (El Independiente)", "parlamento", "2025-03-20"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=141", "Programa electoral de Sumar de 2023, p. 141", "programa", "2023-07"]
   },
   H06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=264", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=36", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=92", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=92", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=139", "Programa electoral de Sumar de 2023, p. 139", "programa", "2023-07"],
     pod: ["https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html", "El Debate, abril de 2026", "parlamento", "2026-04"]
   },
@@ -1210,7 +1208,7 @@ export const SOURCES = {
   H09: {
     psoe: ["https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html", "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024", "prensa", "2024-10-15"],
     pp: ["https://www.eldiario.es/politica/feijoo-evita-respaldar-centros-deportacion-refugiados-meloni-avalado-partido-popular-europeo_1_11740606.html", "eldiario.es, Feijóo en la cumbre del PPE, 17/10/2024", "declaracion", "2024-10-17"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102", "Programa electoral de Vox 23J (2023), medida 211", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102", "Programa electoral de Vox de 2023, medida 211", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149", "Programa electoral de Sumar de 2023, p. 149", "programa", "2023-07"]
   },
   I01: {
@@ -1235,24 +1233,24 @@ export const SOURCES = {
   },
   I05: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox 23J (2023), medida 49", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 49", "programa", "2023-07"]
   },
   I06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=115", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     fa: ["https://www.aprendemas.com/es/blog/becas/proponen-que-los-estudiantes-no-devuelvan-las-becas-por-no-conseguir-unos-minimos-academicos-176533", "Proponen que los estudiantes no devuelvan las becas por no conseguir unos mínimos académicos (Aprendemas)", "parlamento", "2024-12-13"]
   },
   I07: {
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox 23J (2023), medida 51", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"]
   },
   I08: {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=13", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=56", "Programa electoral de Sumar de 2023, p. 56", "programa", "2023-07"]
   },
   I09: {
     psoe: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "Recurso ante el TC por el catalán en la sanidad balear (29 de noviembre de 2023)", "parlamento", "2023-11-29"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "El PSOE y Sumar recurren ante el TC la supresión de la exigencia del catalán en la sanidad de Baleares (El Debate)", "parlamento", "2023-11-29"]
   },
   J01: {
@@ -1265,7 +1263,7 @@ export const SOURCES = {
     junts: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.amp.html", "Redacción Médica, 18/03/2026", "declaracion", "2026-03-18"]
   },
   J02: {
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox 23J (2023), medida 109", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox de 2023, medida 109", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"]
   },
   J03: {
@@ -1292,7 +1290,7 @@ export const SOURCES = {
   J08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.redaccionmedica.com/politica/20261023/sanidad-hara-publico-el-decreto-fallido-de-las-listas-espera-queremos-que-los-ciudadanos-puedan-verlo/363279_0.html", "Redacción Médica, Consejo Interterritorial del 23/10/2026", "gobierno", "2026-10-23"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56", "Programa electoral de Vox 23J (2023), medida 102", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56", "Programa electoral de Vox de 2023, medida 102", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"]
   },
   K01: {
@@ -1304,19 +1302,19 @@ export const SOURCES = {
   },
   K02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=67", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=51", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=51", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=61", "Programa electoral de Sumar de 2023, p. 61", "programa", "2023-07"]
   },
   K03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=136", "Programa electoral de Vox 23J (2023), medida 291", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=136", "Programa electoral de Vox de 2023, medida 291", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=60", "Programa electoral de Sumar de 2023, p. 60", "programa", "2023-07"]
   },
   K04: {
     psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025", "parlamento", "2025-04-03"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox 23J (2023), medida 323.1", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023, medida 323.1", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52", "Programa electoral de Sumar de 2023, p. 52", "programa", "2023-07"]
   },
   K05: {
@@ -1332,12 +1330,12 @@ export const SOURCES = {
   K07: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=70", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023", "programa", "2023-07"]
   },
   K08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=63", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=30", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"]
   },
   L01: {
@@ -1352,19 +1350,19 @@ export const SOURCES = {
   L02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172", "Programa electoral de Vox 23J (2023), medida 369", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172", "Programa electoral de Vox de 2023, medida 369", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99", "Programa electoral de Sumar de 2023, p. 99", "programa", "2023-07"]
   },
   L03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
     pp: ["https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/", "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025", "prensa", "2025-04-27"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173", "Programa electoral de Vox 23J (2023), medida 375", "programa", "2023-07"],
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173", "Programa electoral de Vox de 2023, medida 375", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=114", "Programa electoral de Sumar de 2023, p. 114", "programa", "2023-07"]
   },
   L04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html", "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023", "prensa", "2023-03-29"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox para las elecciones generales del 23J de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"]
   },
   L05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1513,7 +1511,7 @@ export const JUSTIF = {
   },
   C06: {
     pp: "Propone potenciar las diputaciones provinciales como herramienta al servicio de los pequeños municipios.",
-    vox: "Estimación: Vox no se ha pronunciado sobre las diputaciones; su programa se centra en suprimir el Estado autonómico, no las diputaciones.",
+    vox: "Estimación: no consta una postura de Vox sobre las diputaciones; su programa propone un Estado unitario.",
     fa: "Estimación: no consta una postura nacional verificada de Sumar sobre suprimir las diputaciones provinciales."
   },
   C07: {
@@ -1734,7 +1732,6 @@ export const JUSTIF = {
   H05: {
     psoe: "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
     pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum.",
-    vox: "Vox critica la política del Gobierno hacia Marruecos, pero no firmó la declaración que pedía rectificar sobre el Sáhara.",
     fa: "Propone revertir el cambio de posición de 2022 sobre el Sáhara Occidental y apoyar la libre determinación."
   },
   H06: {
@@ -1746,7 +1743,7 @@ export const JUSTIF = {
   H07: {
     psoe: "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
-    vox: "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7% a la ayuda al desarrollo.",
+    vox: "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
     fa: "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo."
   },
   H08: {
@@ -1768,7 +1765,7 @@ export const JUSTIF = {
   },
   I03: {
     psoe: "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
-    fa: "Su portavoz Verónica Barbero recordó que Sumar propuso una moratoria de 10 años a nuevas universidades privadas."
+    fa: "Su portavoz Verónica Barbero defendió la moratoria de 10 años a nuevas universidades privadas que Sumar propuso en 2025."
   },
   I04: {
     psoe: "La LOMLOE de su Gobierno prohíbe usar los resultados de las evaluaciones para clasificar centros.",
@@ -1906,7 +1903,7 @@ export const JUSTIF = {
   L07: {
     psoe: "Sánchez anunció en 2026 que España prohibirá el acceso a las redes sociales a los menores de 16 años.",
     pp: "Propuso por enmienda prohibir las redes sociales a menores de 16 años, salvo de 14 a 16 con permiso paterno.",
-    vox: "Abascal rechazó prohibir las redes a los menores de 16 años porque, según él, invade el ámbito familiar.",
+    vox: "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
     fa: "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia."
   },
   L08: {
