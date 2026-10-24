@@ -54,10 +54,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Veto de PP, Vox y Junts a la reducción de jornada (10-9-2025)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-10"
   },
   {
    "pregunta_id": "A01",
@@ -72,10 +72,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A01",
@@ -828,10 +828,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 151",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A03",
@@ -846,10 +846,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A03",
@@ -1206,10 +1206,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 146",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A04",
@@ -1224,10 +1224,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A04",
@@ -1620,10 +1620,10 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A05",
@@ -1996,12 +1996,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=22",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A06",
@@ -2282,14 +2282,14 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 178",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A07",
@@ -2536,12 +2536,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.merca2.es/2022/08/26/vox-rechaza-salario-minimo-empresario-bajar-impuestos-cotizaciones-1058475/",
+   "fuente_titulo": "Espinosa de los Monteros sobre el SMI (26-8-2022)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2022-08-26"
   },
   {
    "pregunta_id": "A08",
@@ -2556,10 +2556,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A08",
@@ -2932,12 +2932,12 @@
    "partido": "Frente Amplio",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A09",
@@ -3312,10 +3312,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 151",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A10",
@@ -3330,10 +3330,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A10",
@@ -4086,10 +4086,10 @@
    "postura_texto": "Claramente A: Construir mucho más, liberando suelo y agilizando licencias",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 65",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B02",
@@ -4104,10 +4104,10 @@
    "postura_texto": "Claramente B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 79",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B02",
@@ -4482,10 +4482,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html",
+   "fuente_titulo": "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-01-29"
   },
   {
    "pregunta_id": "B03",
@@ -4878,10 +4878,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.ultimahora.es/noticias/nacional/2026/01/30/2559903/vivienda-carga-contra-vox-junts-por-embarrancar-moratoria-desahucios.html",
+   "fuente_titulo": "Vox vota contra la prórroga de la moratoria de desahucios (enero 2026)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-01-30"
   },
   {
    "pregunta_id": "B04",
@@ -4894,12 +4894,12 @@
    "partido": "Frente Amplio",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2026-02-04/sumar-insiste-llevar-escudo-social-congreso/",
+   "fuente_titulo": "The Objective, Lara Hernández sobre la moratoria de desahucios, 04/02/2026",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-02-04"
   },
   {
    "pregunta_id": "B04",
@@ -5670,10 +5670,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elsaltodiario.com/vivienda/madrid-propone-un-ibi-progresivo-paguen-empresas-pisos-vacios-menos-familias",
+   "fuente_titulo": "El Salto, propuesta de Más Madrid en el Congreso (grupo Sumar), 21/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-21"
   },
   {
    "pregunta_id": "B06",
@@ -6044,14 +6044,14 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen.",
+   "fuente_url": "https://forbes.es/economia/821981/vox-propone-costear-las-ayudas-a-espanoles-para-vivienda-con-mas-impuestos-a-los-compradores-extranjeros/",
+   "fuente_titulo": "PNL de Vox sobre impuestos a compradores extranjeros (3-11-2025)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-11-03"
   },
   {
    "pregunta_id": "B07",
@@ -6066,10 +6066,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2025-04-10/congreso-compra-viviendas-extranjeros-apoyo-psoe/",
+   "fuente_titulo": "The Objective, votación en la Comisión de Vivienda del Congreso, 10/04/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-10"
   },
   {
    "pregunta_id": "B07",
@@ -6426,10 +6426,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 69",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B08",
@@ -6444,10 +6444,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 79",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B08",
@@ -6874,12 +6874,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=162",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 346",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B09",
@@ -6892,12 +6892,12 @@
    "partido": "Frente Amplio",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.menorca.info/actualidad/nacional/2024/02/13/2105407/yolanda-diaz-critica-avales-del-ico-por-fomentar-compra-avisa-subira-precio-vivienda.html",
+   "fuente_titulo": "Menorca.info (Europa Press), Yolanda Díaz sobre los avales del ICO, 13/02/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-02-13"
   },
   {
    "pregunta_id": "B09",
@@ -7738,12 +7738,12 @@
    "partido": "Frente Amplio",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.redaccionmedica.com/politica/20231201/sumar-remodela-la-financiacion-regional-contra-las-desigualdades-en-sanidad/221956_0.html",
+   "fuente_titulo": "Redacción Médica, proposición no de ley de Sumar sobre financiación autonómica, 01/12/2023",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-12-01"
   },
   {
    "pregunta_id": "C02",
@@ -8100,10 +8100,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 47",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C03",
@@ -8118,10 +8118,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=121",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 121",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C03",
@@ -8514,10 +8514,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C04",
@@ -8528,14 +8528,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 120",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C04",
@@ -8910,10 +8910,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 18",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C05",
@@ -10530,10 +10530,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.ondavasca.com/el-congreso-apoya-tramitar-el-concierto-y-el-cupo-sin-cambios/",
+   "fuente_titulo": "El Congreso apoya tramitar el Concierto y el Cupo sin cambios (Onda Vasca)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-02-21"
   },
   {
    "pregunta_id": "C09",
@@ -10546,12 +10546,12 @@
    "partido": "Frente Amplio",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldiario.es/politica/concierto-catalunya-abre-brecha-partidos-sumar_1_11575951.html",
+   "fuente_titulo": "El concierto para Catalunya abre una brecha entre los partidos de Sumar (elDiario.es)",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-08-07"
   },
   {
    "pregunta_id": "C09",
@@ -11610,10 +11610,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 271",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D03",
@@ -11628,10 +11628,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 129",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D03",
@@ -11988,10 +11988,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
+   "fuente_titulo": "Aprobación definitiva de la ley de amnistía (30-5-2024)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-05-30"
   },
   {
    "pregunta_id": "D04",
@@ -12006,10 +12006,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html",
+   "fuente_titulo": "Ara, aprobación de la ley de amnistía en el Congreso, 30/05/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-05-30"
   },
   {
    "pregunta_id": "D04",
@@ -12704,14 +12704,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=117",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 117",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D06",
@@ -13030,7 +13030,7 @@
    "partido": "Vox",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -13408,12 +13408,12 @@
    "partido": "Vox",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "D08",
@@ -13676,14 +13676,14 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
+   "nota": "Jorge Buxadé, vicepresidente de Vox, rechazó la propuesta del PP de que gobierne la lista más votada.",
+   "fuente_url": "https://www.elindependiente.com/espana/2023/01/23/vox-rechaza-que-gobierne-la-lista-mas-votada-como-sugiere-el-pp-para-no-dar-opciones-a-sanchez/",
+   "fuente_titulo": "Vox rechaza que gobierne la lista más votada como sugiere el PP para no dar opciones a Sánchez (El Independiente)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-01-23"
   },
   {
    "pregunta_id": "D09",
@@ -13696,7 +13696,7 @@
    "partido": "Frente Amplio",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -14472,10 +14472,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 376",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E02",
@@ -14488,7 +14488,7 @@
    "partido": "Frente Amplio",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -14850,10 +14850,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2024-10-29/reforma-ley-mordaza-congreso/",
+   "fuente_titulo": "Toma en consideración de la reforma de la «ley mordaza» (29-10-2024)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-10-29"
   },
   {
    "pregunta_id": "E03",
@@ -14868,10 +14868,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.lamarea.com/2024/07/16/sumar-anuncia-un-acuerdo-para-derogar-la-ley-mordaza",
+   "fuente_titulo": "La Marea, Yolanda Díaz anuncia un acuerdo para derogar la «ley mordaza», 16/07/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-07-16"
   },
   {
    "pregunta_id": "E03",
@@ -15228,10 +15228,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E04",
@@ -15242,9 +15242,9 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -15602,8 +15602,8 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -15620,8 +15620,8 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -15948,10 +15948,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/2022-09-29/el-psoe-apoya-a-erc-y-bildu-para-que-la-despenalizacion-del-delito-de-injurias-a-la-corona-siga-adelante-en-el-congreso/",
+   "fuente_titulo": "El PSOE apoya a ERC y Bildu para que la despenalización del delito de injurias a la Corona siga adelante en el Congreso (The Objective)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-09-29"
   },
   {
    "pregunta_id": "E06",
@@ -15966,10 +15966,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldiario.es/politica/psoe-sumar-reactivan-despenalizacion-ofensas-sentimientos-religiosos-corona_1_13303774.html",
+   "fuente_titulo": "PSOE y Sumar reactivan la despenalización de las ofensas a los sentimientos religiosos y a la Corona (elDiario.es)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-15"
   },
   {
    "pregunta_id": "E06",
@@ -16322,9 +16322,9 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -16340,14 +16340,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
+   "nota": "Su portavoz Ernest Urtasun rechazó limitar la acusación popular, que considera un instrumento fundamental en democracia.",
+   "fuente_url": "https://theobjective.com/espana/politica/2025-01-15/ernest-urtasun-ley-psoe-acusacion-popular/",
+   "fuente_titulo": "Ernest Urtasun critica la ley del PSOE para limitar la acusación popular: «No procede» (The Objective)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-01-15"
   },
   {
    "pregunta_id": "E07",
@@ -16704,10 +16704,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E08",
@@ -16722,10 +16722,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=111",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 111",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E08",
@@ -17100,10 +17100,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/espana/2021/10/19/la-ley-del-cannabis-de-errejon-divide-a-la-izquierda-y-enerva-a-vox-quieren-a-los-jovenes-drogados-y-atolondrados/",
+   "fuente_titulo": "La ley del cannabis de Errejón divide a la izquierda y enerva a Vox (El Independiente)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-10-19"
   },
   {
    "pregunta_id": "E09",
@@ -17114,14 +17114,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 92",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E09",
@@ -17874,10 +17874,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 218",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F02",
@@ -17892,10 +17892,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 104",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F02",
@@ -18270,10 +18270,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias/empresas/economia--el-pp-rechaza-en-el-congreso-la-propuesta-de-vox-de-exigir-la-prioridad-nacional-en-ayudas-para-vivienda--22776272.html",
+   "fuente_titulo": "Moción de Vox sobre «prioridad nacional» en vivienda (18-6-2026)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-18"
   },
   {
    "pregunta_id": "F03",
@@ -18666,10 +18666,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/economia/841921/vox-culpa-a-la-inmigracion-del-estancamiento-de-los-salarios-y-pide-cesar-la-llegada-masiva-de-extranjeros/",
+   "fuente_titulo": "Vox culpa a la inmigración del estancamiento de los salarios y pide cesar la llegada «masiva» de extranjeros (Forbes)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-12-07"
   },
   {
    "pregunta_id": "F04",
@@ -18684,10 +18684,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 104",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F04",
@@ -19116,10 +19116,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
+   "fuente_titulo": "El Congreso convalida el decreto ley para distribuir a menores migrantes sin los apoyos de PP ni Vox (RTVC)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-10"
   },
   {
    "pregunta_id": "F05",
@@ -19134,10 +19134,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
+   "fuente_titulo": "El Congreso convalida el decreto ley para distribuir a menores migrantes sin los apoyos de PP ni Vox (RTVC)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-10"
   },
   {
    "pregunta_id": "F05",
@@ -19510,12 +19510,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/2022-08-19/vox-propone-ayudas-a-las-familias-numerosas-frente-a-la-caida-de-la-natalidad-en-espana/",
+   "fuente_titulo": "Vox propone ayudas a las familias numerosas frente a la caída de la natalidad en España (The Objective)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2022-08-19"
   },
   {
    "pregunta_id": "F06",
@@ -19530,10 +19530,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=93",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 93",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F06",
@@ -19870,12 +19870,12 @@
    "partido": "Frente Amplio",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=58",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 58",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F07",
@@ -20178,10 +20178,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F08",
@@ -21382,12 +21382,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=111",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G02",
@@ -21398,14 +21398,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "estimada": false,
+   "nota": "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=62",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 62",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G02",
@@ -21852,10 +21852,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 92",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G03",
@@ -21870,10 +21870,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=11",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 11",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G03",
@@ -22320,10 +22320,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=148",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 312",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G04",
@@ -22338,10 +22338,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 49",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G04",
@@ -22678,12 +22678,12 @@
    "partido": "Vox",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.esdiario.com/nacional/240918/143217/nueva-ruptura-seno-gobierno-psoe-vota-pp-vox-sumar-congreso.html",
+   "fuente_titulo": "Nueva ruptura en el seno del Gobierno: el PSOE vota con PP y Vox en contra de Sumar en el Congreso (ESdiario)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-09-18"
   },
   {
    "pregunta_id": "G05",
@@ -22698,10 +22698,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=13",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 13",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G05",
@@ -23074,12 +23074,12 @@
    "partido": "Vox",
    "postura": 2,
    "postura_texto": "Más bien A: Completar y mejorar la red de alta velocidad",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G06",
@@ -23092,12 +23092,12 @@
    "partido": "Frente Amplio",
    "postura": 5,
    "postura_texto": "Claramente B: Mejorar las Cercanías y los trenes regionales",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 81",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G06",
@@ -23486,8 +23486,8 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -23740,12 +23740,12 @@
    "partido": "Vox",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.esdiario.com/nacional/260729/194373/fuego-retrata-sanchez-ignoro-medidas-prevencion-vox-llevo-congreso.html",
+   "fuente_titulo": "El fuego retrata a Sánchez: ignoró las medidas de prevención que VOX llevó al Congreso (ESdiario)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-07-29"
   },
   {
    "pregunta_id": "G08",
@@ -23756,14 +23756,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "estimada": false,
+   "nota": "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=63",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 63",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G08",
@@ -24012,10 +24012,10 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 48",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G09",
@@ -24822,10 +24822,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 283",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H02",
@@ -24836,14 +24836,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=145",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 145",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H02",
@@ -25236,10 +25236,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=137",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H03",
@@ -25250,14 +25250,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
+   "nota": "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=146",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 146",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H03",
@@ -25614,10 +25614,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+   "fuente_titulo": "Convalidación del embargo de armas a Israel (8-10-2025)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "H04",
@@ -25632,10 +25632,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elsaltodiario.com/congreso-de-los-diputados/congreso-convalida-decreto-embargo-armas-votos-podemos-junts",
+   "fuente_titulo": "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "H04",
@@ -26010,10 +26010,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=141",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 141",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H05",
@@ -26370,10 +26370,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=92",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H06",
@@ -26386,12 +26386,12 @@
    "partido": "Frente Amplio",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=139",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 139",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H06",
@@ -26748,10 +26748,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2023-02-09/congreso-aprueba-ley-cooperacion-ayuda-desarrollo/",
+   "fuente_titulo": "El Congreso aprueba la Ley de Cooperación que busca aumentar la ayuda al desarrollo (The Objective)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-02-09"
   },
   {
    "pregunta_id": "H07",
@@ -26766,10 +26766,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=148",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 148",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H07",
@@ -27126,10 +27126,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.bolsamania.com/noticias/economia/economia--vox-rechaza-los-aranceles-de-trump-pero-tambien-el-viaje-de-sanchez-a-china-y-la-incoherencia-de-feijoo--19321776.html",
+   "fuente_titulo": "Vox rechaza los aranceles de Trump, pero también el viaje de Sánchez a China (Europa Press / Bolsamanía)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-04-08"
   },
   {
    "pregunta_id": "H08",
@@ -27142,12 +27142,12 @@
    "partido": "Frente Amplio",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=140",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 140",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H08",
@@ -27360,10 +27360,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 211",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H09",
@@ -27378,10 +27378,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 149",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H09",
@@ -28134,10 +28134,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=160",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 160",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I02",
@@ -28510,12 +28510,12 @@
    "partido": "Frente Amplio",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elobservador.com.uy/espana/actualidad/ataque-pedro-sanchez-las-universidades-privadas-nunez-feijoo-defiende-la-libertad-elegir-donde-formarse-n5992295",
+   "fuente_titulo": "Sumar pide frenar las universidades privadas por 10 años (El Observador)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-04-01"
   },
   {
    "pregunta_id": "I03",
@@ -28778,8 +28778,8 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -29016,10 +29016,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 49",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I05",
@@ -29340,10 +29340,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.aprendemas.com/es/blog/becas/proponen-que-los-estudiantes-no-devuelvan-las-becas-por-no-conseguir-unos-minimos-academicos-176533",
+   "fuente_titulo": "Proponen que los estudiantes no devuelvan las becas por no conseguir unos mínimos académicos (Aprendemas)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-12-13"
   },
   {
    "pregunta_id": "I06",
@@ -29574,10 +29574,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 51",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I07",
@@ -29952,10 +29952,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I08",
@@ -29970,10 +29970,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=56",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 56",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I08",
@@ -30438,10 +30438,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I09",
@@ -30456,10 +30456,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html",
+   "fuente_titulo": "El PSOE y Sumar recurren ante el TC la supresión de la exigencia del catalán en la sanidad de Baleares (El Debate)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-11-29"
   },
   {
    "pregunta_id": "I09",
@@ -31210,12 +31210,12 @@
    "partido": "Vox",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 109",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J02",
@@ -31230,10 +31230,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 89",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J02",
@@ -31622,14 +31622,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "nota": "Su ministra de Sanidad propuso exigir exclusividad a jefes de servicio y directivos, no a todos los médicos.",
+   "fuente_url": "https://www.menorca.info/actualidad/nacional/2025/01/15/2306195/sanidad-quiere-jefes-servicio-directivos-del-sns-puedan-trabajar-privada.html",
+   "fuente_titulo": "Menorca.info (EFE), propuesta de Estatuto Marco de Mónica García, 15/01/2025",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2025-01-15"
   },
   {
    "pregunta_id": "J03",
@@ -31874,8 +31874,8 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -31894,12 +31894,12 @@
    "partido": "Frente Amplio",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 17",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J04",
@@ -32162,14 +32162,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J05",
@@ -32288,8 +32288,8 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -32542,12 +32542,12 @@
    "partido": "Vox",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.redaccionmedica.com/politica/20241120/el-congreso-calienta-motores-por-un-aumento-de-demanda-del-sns-muface/236573_0.html",
+   "fuente_titulo": "El Congreso calienta motores por un «aumento de demanda» del SNS por Muface (Redacción Médica)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-11-20"
   },
   {
    "pregunta_id": "J07",
@@ -32562,10 +32562,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 92",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J07",
@@ -32796,10 +32796,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 102",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J08",
@@ -32810,14 +32810,14 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
+   "nota": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 89",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J08",
@@ -33658,12 +33658,12 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=51",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K02",
@@ -33676,12 +33676,12 @@
    "partido": "Frente Amplio",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=61",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 61",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K02",
@@ -34088,14 +34088,14 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
+   "nota": "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=136",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 291",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K03",
@@ -34108,12 +34108,12 @@
    "partido": "Frente Amplio",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K03",
@@ -34452,10 +34452,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 323.1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K04",
@@ -34470,10 +34470,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 52",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K04",
@@ -34902,10 +34902,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.eldiario.es/aragon/politica/cha-verdes-equo-piden-eliminar-50-macrogranjas-2030-proteger-salud-clima_1_12678029.html",
+   "fuente_titulo": "elDiario.es, PNL de CHA y Verdes Equo en el grupo Sumar, 12/10/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-12"
   },
   {
    "pregunta_id": "K05",
@@ -35350,12 +35350,12 @@
    "partido": "Vox",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2024-12-10/vox-denuncia-cuotas-pesqueras-mediterraneo/",
+   "fuente_titulo": "Vox denuncia la reducción de cuotas pesqueras del Mediterráneo propuesta por Bruselas (The Objective)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-12-10"
   },
   {
    "pregunta_id": "K06",
@@ -35368,12 +35368,12 @@
    "partido": "Frente Amplio",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 64",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K06",
@@ -35604,10 +35604,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K07",
@@ -35618,8 +35618,8 @@
    "opcion_b": "",
    "partido_id": "fa",
    "partido": "Frente Amplio",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
    "fuente_url": "",
@@ -36072,10 +36072,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K08",
@@ -36090,10 +36090,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 49",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "K08",
@@ -36792,10 +36792,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 369",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L02",
@@ -36810,10 +36810,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 99",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L02",
@@ -37188,10 +37188,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173",
+   "fuente_titulo": "Programa electoral de Vox de 2023, medida 375",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L03",
@@ -37206,10 +37206,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=114",
+   "fuente_titulo": "Programa electoral de Sumar de 2023, p. 114",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L03",
@@ -37566,10 +37566,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
+   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "L04",
@@ -37868,9 +37868,9 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -37890,10 +37890,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.noticiasdenavarra.com/sociedad/2024/07/19/sumar-insta-gobierno-suprimir-privilegios-8502884.html",
+   "fuente_titulo": "Sumar insta al Gobierno a suprimir los «privilegios existentes» para la Iglesia Católica (Noticias de Navarra)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-07-19"
   },
   {
    "pregunta_id": "L05",
@@ -38250,10 +38250,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/politica/el-viraje-de-vox-con-el-anonimato-en-redes-de-votar-a-favor-a-considerarlo-una-aberracion-dictatorial.html",
+   "fuente_titulo": "El viraje de Vox con el anonimato en redes (Vozpópuli)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-08-23"
   },
   {
    "pregunta_id": "L06",
@@ -38498,14 +38498,14 @@
    "opcion_b": "",
    "partido_id": "vox",
    "partido": "Vox",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
+   "nota": "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
+   "fuente_url": "https://theobjective.com/espana/politica/2026-02-03/abascal-redes-sociales-menores-censurar/",
+   "fuente_titulo": "Abascal rechaza prohibir las redes sociales a menores de 16 años: «Intentan censurar» (The Objective)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-02-03"
   },
   {
    "pregunta_id": "L07",
@@ -38518,12 +38518,12 @@
    "partido": "Frente Amplio",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://alicanteplaza.es/alicanteplaza/espana/la-ley-que-prohibiria-las-redes-sociales-a-menores-de-16-anos-avanza-esta-semana-en-el-congreso",
+   "fuente_titulo": "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-09-26"
   },
   {
    "pregunta_id": "L07",
@@ -38754,10 +38754,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/",
+   "fuente_titulo": "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-27"
   },
   {
    "pregunta_id": "L08",
@@ -38772,10 +38772,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/",
+   "fuente_titulo": "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-27"
   },
   {
    "pregunta_id": "L08",
@@ -39150,10 +39150,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html",
+   "fuente_titulo": "Proposición de ley de Vox contra el burka y el niqab (17-2-2026)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-02-17"
   },
   {
    "pregunta_id": "L09",
@@ -39168,10 +39168,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html",
+   "fuente_titulo": "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-14"
   },
   {
    "pregunta_id": "L09",
