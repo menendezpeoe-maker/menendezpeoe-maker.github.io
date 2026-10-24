@@ -38,8 +38,8 @@ const css = `*{margin:0;box-sizing:border-box}html,body{width:1080px;height:1350
 .q{font-weight:850;font-stretch:105%;line-height:1.08;letter-spacing:-.01em}
 .scale{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:auto}
 .scale span{border:3px solid #111318;border-radius:12px;padding:16px 8px;font-weight:700;font-size:21px;line-height:1.15;text-align:center;display:grid;place-items:center;min-height:110px}
-.ab{display:grid;gap:14px;margin-top:auto}.ab div{border:3px solid #111318;border-radius:14px;padding:20px 24px;font-size:30px;font-weight:650;line-height:1.2;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:center}
-.ab b{display:grid;place-items:center;width:52px;height:52px;border-radius:10px;background:#F6DD2F;border:3px solid #111318;font-weight:900;font-size:28px}
+.ab{display:grid;gap:12px;margin-bottom:auto}.ab p{font-size:32px;font-weight:600;line-height:1.25;color:#434955}.ab b{color:#111318;font-weight:900}
+.q{margin-top:auto}.body>.q:last-child{margin-bottom:auto}
 .foot{padding:30px 56px 38px;display:grid;gap:10px}
 .cta{background:#F6DD2F;border:4px solid #111318;border-radius:16px;padding:22px 28px;display:grid;gap:4px}
 .cta p{font-size:28px;font-weight:650}.cta strong{font-size:40px;font-weight:900;font-stretch:105%}
@@ -49,17 +49,17 @@ const css = `*{margin:0;box-sizing:border-box}html,body{width:1080px;height:1350
 .meta{font-size:34px;font-weight:700;color:#434955}`;
 const top = (kick) => `<div class="top"><div class="brand">${mark}<span class="bw">Test</span><span class="be">29N</span></div><p class="kick">${kick}</p></div>`;
 const html = (body) => `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="assets/fonts.css"><style>${css}</style></head><body><div class="card">${body}</div></body></html>`;
-const qSize = (t) => (t.length > 150 ? 58 : t.length > 115 ? 66 : t.length > 85 ? 76 : 88);
+const qSize = (t) => (t.length > 150 ? 64 : t.length > 115 ? 72 : t.length > 85 ? 84 : 96);
 
 function dailyHtml({ day, q }) {
   const a = AREA[q.area];
   const answers = q.type === "dilema"
-    ? `<div class="ab"><div><b>A</b><span>${esc(q.A)}</span></div><div><b>B</b><span>${esc(q.B)}</span></div></div>`
-    : `<div class="scale">${["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"].map((t) => `<span>${t}</span>`).join("")}</div>`;
+    ? `<div class="ab"><p><b>A.</b> ${esc(q.A)}</p><p><b>B.</b> ${esc(q.B)}</p></div>`
+    : "";
   const text = q.type === "dilema" ? q.text : q.text;
   return html(`${top(`Pregunta del día<br>${esc(day)}`)}
   <div class="body"><span class="tag">${esc(a.letter)} · ${esc(a.name)}</span><p class="q" style="font-size:${qSize(text)}px">${esc(text)}</p>${answers}</div>
-  <div class="foot"><div class="cta"><p>¿Y tú qué opinas? Mira qué piensa cada partido en</p><strong>test29n.es/preguntas/${q.id.toLowerCase()}</strong></div>
+  <div class="foot"><div class="cta"><p>Mira qué piensa cada partido, con fuentes, en</p><strong>test29n.es/preguntas/${q.id.toLowerCase()}</strong></div>
   <p class="note">Test 29N · Test político independiente para las elecciones del 29N. No es una encuesta ni una recomendación de voto.</p></div>`);
 }
 function topicHtml(k, t) {

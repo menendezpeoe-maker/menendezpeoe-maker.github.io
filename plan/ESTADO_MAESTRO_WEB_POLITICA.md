@@ -39,7 +39,7 @@ Revisado el 23 oct 2026 (tras publicar T9, parte 1). Resume y enlaza; no repite 
 - T1: sin sexo ni edad, titular único con «Empezar», provincia al final y pregunta de ejemplo real.
 - T9, parte 1: título y descripción para buscadores, un único H1, 5 preguntas frecuentes con datos estructurados y fecha del BOE, y `qa/seo.mjs`. Las 13 baterías pasan en la web real.
 
-**Pendientes [?]:** resto de T9 (`/comparar/`, `/datos/`, `/insertar/`); T2, T3 y T4 (no se ejecutaron por el límite de uso); T5 a T8, T10 y T11, según `PLAN.md`. 82 posturas tienen fuente.
+**Pendientes [?]:** T5 a T8 y T11, según `PLAN.md` (T9, T2, T3, T4 y T10 ya están publicadas: ver `ESTADO.md`). 82 posturas tienen fuente.
 
 ## 6. Decisiones confirmadas (no cambiar sin autorización)
 - **[D]** Reglas de `PROMPT-ORIGINAL.md` (sección 3) y de `PLAN.md` (reglas 1–15): neutralidad, nada de encuestas ni de promoción del 24 al 28 de noviembre, nada de datos inventados, privacidad, responsable público «Dery», ningún dato bancario y los textos fijados.

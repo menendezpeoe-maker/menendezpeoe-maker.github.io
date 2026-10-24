@@ -1,13 +1,14 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 23 oct 2026)
+## Ficha de continuidad (actualizada el 24 oct 2026)
 
 **Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:
 1. ~~Cerrar T9, parte 1~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 2. ~~T2~~ **Hecho y publicado el 23 oct** (ver la entrada de abajo).
 3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
-5. ~~T4~~ **Hecho y publicado el 24 oct.** Siguiente: la tanda del día (T10) y después T5–T8 y T11 según el calendario.
+5. ~~T4~~ **Hecho y publicado el 24 oct.**
+6. ~~T10~~ **Hecho y publicado el 24 oct.** Siguiente: T5–T8 y T11 según el calendario.
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -16,7 +17,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T9 · Buscadores y datos abiertos: completada y verificada (web real, 23 oct).
 - T2 · Test rápido y resultados: completada y verificada (web real, 23 oct).
 - T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
-- T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct). T10, T5–T8, T11: pendientes.
+- T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct).
+- T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct). T5–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -34,6 +36,17 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T10 · Tests por tema, imágenes para redes y kit de difusión
+- **Tests por tema** (vivienda, inmigración, impuestos y economía, sanidad, energía y medioambiente, territorio; 6 o 7 preguntas, lista en `src/temas.src.mjs` y copiada en `assets/papeleta.js`, una prueba comprueba que coinciden):
+  - Se empiezan desde la portada (`#temas`) o con `/?tema=<id>`. Si ya hay un test guardado, se pide confirmación (portada) o se señala el tema sin borrar nada (`?tema=`).
+  - El último paso solo pide la provincia; el resultado se titula «Test de …» y el perfil se limita a la dimensión que mide el tema. «Afinar» pasa a la exprés conservando las respuestas.
+  - Compartir: texto con el tema y enlace `?tema=`; código propio por tema en los enlaces `#r2` (v, i, k, s, g, x; los antiguos r, e, m, c siguen valiendo); tarjetas con la etiqueta del tema, su dimensión y las siguientes coincidencias.
+  - Páginas `/tests/` y `/tests/<tema>/` (7 nuevas, en el sitemap y en los pies).
+- **Imágenes para redes** (`qa/redes.mjs` → `qa/redes/` → `dist/redes/`): 29 «preguntas del día» del 26 oct al 23 nov (ninguna del 24 al 28) y una tarjeta por tema, 1080 × 1350. Sin casillas de respuesta, para que no parezcan una encuesta.
+- **`plan/KIT.md`:** textos y guiones (tests por tema, reta a un amigo, guía para votar, simulador, pregunta del día), calendario día a día hasta el 27 nov (pausa del 24 al 28) con fechas comprobadas contra `src/votar.src.mjs`, y 43 contactos con canal público verificado el 24 oct, por prioridad.
+- **Revisión independiente:** nada bloqueante. Corregido: viñetas en `/tests/<tema>/`, imágenes con aspecto de encuesta, guion sin partido visible, «okupación», textos de la portada y del reto, frase de territorio, versión marcada tras «Empezar de nuevo», separación en la tarjeta cuadrada.
+- **Pruebas:** nueva `qa/temas.mjs`; las 19 baterías pasan en local y en https://test29n.es.
 
 ## 24 oct 2026 · T4 · Provincias, simulador y glosario
 - **52 páginas `/provincias/<id>/` y su índice:** diputados según el anexo del Real Decreto 806/2026 (suman 350, en `src/escanos.src.mjs`), senadores según el art. 3.2 del real decreto y la LOREG (con la Ley Orgánica 2/2026, Ibiza y Formentera eligen 1 senador cada una), las candidaturas que se presentan según los datos del test y un enlace al simulador.

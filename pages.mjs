@@ -448,7 +448,7 @@ rows(prov().parties);
   <p class="lede">${qs.length} preguntas sobre ${esc(lc)} para ver con qué candidaturas de tu provincia coincides en este tema. Tardas unos 2 minutos y después puedes seguir con el test completo sin perder tus respuestas.</p>
   <p><a class="btn btn-primary" href="/?tema=${k}">Empezar el test de ${esc(lc)}</a></p></header>
 <section aria-labelledby="h-qs"><h2 class="h2" id="h-qs">Las preguntas</h2>
-<ol class="dots">${qs.map((q) => `<li>${esc(q.text)}${q.type === "dilema" ? ` <span class="small muted">(A: ${esc(q.A)} · B: ${esc(q.B)})</span>` : ""} <a class="small" href="/preguntas/${q.id.toLowerCase()}/">Qué piensa cada partido</a></li>`).join("")}</ol>
+<ul class="dots">${qs.map((q) => `<li>${esc(q.text)}${q.type === "dilema" ? ` <span class="small muted">(A: ${esc(q.A)} · B: ${esc(q.B)})</span>` : ""} <a class="small" href="/preguntas/${q.id.toLowerCase()}/">Qué piensa cada partido</a></li>`).join("")}</ul>
 <p class="small muted">El resultado de un test por tema solo tiene en cuenta estas preguntas: es orientativo y no es una recomendación de voto. Para una visión de conjunto, haz el test completo.</p></section>
 <p class="small muted">Otros tests por tema: ${topicEntries.filter(([x]) => x !== k).map(([x, o]) => `<a href="/tests/${x}/">${esc(o.label)}</a>`).join(" · ")}</p>
 ${cta("¿Prefieres el test completo?")}`

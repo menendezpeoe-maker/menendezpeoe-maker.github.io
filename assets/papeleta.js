@@ -653,7 +653,7 @@ function topicDims(st) {
   return Object.keys(n).filter((d) => n[d] >= 2);
 }
 function profileSentence(M) {
-  const st = ST(), td = topicDims(st), tl = topicOf(st)?.label.toLowerCase();
+  const st = ST(), td = topicDims(st), tl = st?.topic === "territorio" ? "organización territorial" : topicOf(st)?.label.toLowerCase();
   const dims = Object.entries(M.user.dims).filter(([k]) => !td || td.includes(k));
   const strong = dims.filter(([, o]) => Math.abs(o.v) >= 25).sort((a, b) => Math.abs(b[1].v) - Math.abs(a[1].v));
   const mixed = BANK.dims.filter((d) => M.user.dims[d.id] && (!td || td.includes(d.id)) && Math.abs(M.user.dims[d.id].v) < 25);
@@ -1702,7 +1702,7 @@ function bindResults() {
       renderQuestion(0); go("quiz", { focus: false }); focusStatement();
     } else if (act === "new") {
       if (!confirm("¿Empezar de nuevo? Se borrarán tus respuestas guardadas en este navegador.")) return;
-      const keep = { mode: S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#start-btn").focus(); }
+      const keep = { mode: S.mode === "tema" ? "rapida" : S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#start-btn").focus(); }
     else if (act === "forget-friend") { store.del(FRIEND_KEY); renderFriend(); toast("Resultado compartido olvidado"); }
     else if (act === "own-test") { SHARED = null; try { history.replaceState(null, "", location.pathname + location.search); } catch { /* sin historial */ } S = loadState(); fillSetup(); go("home"); }
   });
@@ -2085,7 +2085,7 @@ async function drawCard(fmt) {
     if (withParty) { drawParty(g, L, y, CW, 168, M, st, 66); y += 168 + 30; }
     if (td && withParty) {
       drawDims(g, L, y, CW, 70, M, { nameW: 330, fs: 27, bar: 10, poles: true, dims: dl });
-      const ny = y + 70 * nd + 6, nh = (H - m - 120 - ny) / 3;
+      const ny = y + 70 * nd + 22, nh = (H - m - 120 - ny) / 3;
       drawNext(g, L, ny, CW, Math.min(64, nh), M, st, 24, 3);
     } else {
       const sq = dimsAt(y, H - m - 120 - y, td ? 90 : 62);

@@ -17,19 +17,19 @@ Preparado el 24 de octubre de 2026 (tanda T10). Lo ejecuta el titular: Claude no
 > https://test29n.es/tests/
 
 **Por tema** (cambia el tema y el enlace; imagen `test-<tema>.png`)
-> Test de vivienda para el 29N: 7 preguntas sobre alquiler, desahucios, okupación, pisos turísticos y viviendas vacías. Compara tus respuestas con las de los partidos que se presentan en tu provincia. No te dice a quién votar. https://test29n.es/tests/vivienda/
+> Test de vivienda para el 29N: 7 preguntas sobre alquiler, desahucios, viviendas ocupadas sin permiso, pisos turísticos y viviendas vacías. Compara tus respuestas con las de los partidos que se presentan en tu provincia. No te dice a quién votar. https://test29n.es/tests/vivienda/
 
 Enlaces: `/tests/vivienda/`, `/tests/inmigracion/`, `/tests/economia/`, `/tests/sanidad/`, `/tests/energia/`, `/tests/territorio/`.
 
 **Guion de vídeo corto (20–30 s, vertical)**
 1. (0–3 s) Texto en pantalla: «¿Con qué partido coincides en vivienda?»
 2. (3–12 s) Grabación de pantalla respondiendo 3 preguntas del test de vivienda.
-3. (12–20 s) Resultado: «Tu mayor coincidencia en tu provincia» (difumina el partido si quieres evitar cualquier lectura partidista) y el botón «Afinar con la versión exprés».
+3. (12–20 s) Resultado **sin ningún partido visible** (desmarca la opción de incluir el partido al compartir o difumínalo siempre) y el botón «Afinar con la versión exprés».
 4. (20–25 s) Cierre: «6 temas, 2 minutos cada uno. test29n.es/tests. No te dice a quién votar.»
 
 ### Reta a un amigo
 **Corto**
-> ¿Cuánto coincides en política con tus amigos? Haz el Test 29N y pulsa «Reta a un amigo»: le llega un enlace para comparar vuestros resultados. Sin registro y sin que tus respuestas salgan de tu móvil (solo las ve quien abre tu enlace). https://test29n.es
+> ¿Cuánto coincides en política con tus amigos? Haz el Test 29N y pulsa «Reta a un amigo»: le llega un enlace para comparar vuestros resultados. Sin registro: tus respuestas viajan dentro del enlace y no se guardan en ningún servidor. https://test29n.es
 
 **Guion de vídeo corto (15–20 s)**
 1. Dos personas, cada una con su móvil: «¿Apostamos a que no pensamos igual?»
@@ -94,4 +94,71 @@ Imagen diaria: `https://test29n.es/redes/pregunta-AAAA-MM-DD.png`. Fechas oficia
 
 ## 3. Contactos con canal público
 
-CONTACTOS
+Comprobados el 24 de octubre de 2026: cada canal aparece en la página indicada en «Visto en». No se ha contactado con nadie. «(solo redes)»: sin correo ni formulario verificado, solo su perfil oficial. **Orden de prioridad:** primero los docentes y las asociaciones (usan el test en clase y con jóvenes, sin coste de imagen partidista), después los medios de verificación y datos, y por último los creadores. Dentro de cada sección, de más a menos prioritario.
+
+**Cómo escribir:** un mensaje corto y personal, sin adjuntos pesados, con el enlace a https://test29n.es/prensa/ (imágenes, botón y mini test insertable). Nunca después del 23 de noviembre.
+
+### 3.1 Docentes y educación
+
+| Nombre | Por qué | Contacto público | Visto en |
+|---|---|---|---|
+| Red Española de Filosofía (REF) | Red del profesorado y de las asociaciones de filosofía | info@redfilosofia.es | https://redfilosofia.es/contacto-2/ |
+| Educación 3.0 | Portal y revista para docentes | redaccion@educaciontrespuntocero.com | https://www.educaciontrespuntocero.com/contacto/ |
+| El Diario de la Educación | Medio especializado en educación | redaccion@eldiariodelaeducacion.com | https://eldiariodelaeducacion.com/ |
+| Asociación Andaluza de Filosofía (AAFi) | Profesorado de filosofía de secundaria | Formulario: https://aafi.es/contacto-con-la-aafi/ | https://aafi.es/contacto-con-la-aafi/ |
+| Magisnet / Magisterio | Periódico para docentes | Formulario: https://www.magisnet.com/contacto/ | https://www.magisnet.com/contacto/ |
+| AECPA, Asociación Española de Ciencia Política y de la Administración | Red académica de ciencia política | info@aecpa.es | https://www.aecpa.es/ |
+| CREUP | Representación estudiantil universitaria | prensa@creup.es · info@creup.es | https://creup.es/contacto/ |
+| ANPE | Sindicato independiente del profesorado | anpe@anpe.es (o formulario) | https://www.anpe.es/contacto |
+| Departamento de Ciencia Política y Sociología, Universidade de Santiago de Compostela | Departamento universitario | departamento.politicaesocioloxia@usc.es (publicado con «[at]») | https://www.usc.gal/es/departamento/ciencia-politica-sociologia |
+| Facultad de Derecho de la UAM (Ciencia Política) | Grado de Ciencia Política | derecho.informacion@uam.es | https://www.uam.es/Derecho/CienciaPolitica/ |
+
+### 3.2 Asociaciones
+
+| Nombre | Por qué | Contacto público | Visto en |
+|---|---|---|---|
+| Consejo de la Juventud de España (CJE) | Plataforma estatal de entidades juveniles | info@cje.org (o formulario) | https://www.cje.org/contacto/ |
+| CANAE | Estudiantes de secundaria; participación juvenil | info@canae.org | https://canae.org/ |
+| Fundación Ciudadana Civio | Periodismo de datos y transparencia | contacto@civio.es | https://civio.es/nosotros/contacto/ |
+| Political Watch | Seguimiento parlamentario y de políticas públicas | info@politicalwatch.es | https://politicalwatch.es/ (pie de página) |
+| Consell Nacional de la Joventut de Catalunya (CNJC) | Plataforma juvenil catalana | Formulario: https://cnjc.cat/es/contacto | https://cnjc.cat/es/contacto |
+| Consejo de la Juventud de Castilla y León | Consejo juvenil autonómico | cjcyl@cjcyl.es | https://www.cjcyl.es/ |
+| Consejo de la Juventud de Extremadura (CJEx) | Consejo juvenil autonómico | info@cjex.org | https://www.cjex.org/contacto/ |
+| Access Info Europe | Acceso a la información pública | info@access-info.org | https://www.access-info.org/es/contact/ |
+| Transparencia Internacional España | Transparencia y lucha contra la corrupción | comunicacion@transparencia.org.es | https://transparencia.org.es/contacto/ |
+| Fundación Hay Derecho | Estado de derecho y calidad institucional | info@hayderecho.com (o formulario) | https://www.hayderecho.com/contacta-con-nosotros/ |
+
+### 3.3 Medios
+
+| Nombre | Por qué | Contacto público | Visto en |
+|---|---|---|---|
+| Newtral | Verificación de datos y explicación de política | info@newtral.es | https://www.newtral.es/contacto/ |
+| EFE Verifica | Verificación de la Agencia EFE | verifica@efe.com | https://verifica.efe.com/contacto/ |
+| VerificaRTVE | Verificación de la radiotelevisión pública | verificartve@rtve.es | https://www.rtve.es/noticias/verificartve/ |
+| Maldita.es (solo redes) | Verificación y periodismo de datos | https://twitter.com/maldita · https://www.instagram.com/maldita.es/ | https://maldita.es/ (pie de página) |
+| Verificat | Verificación de datos en Cataluña | hola@verificat.cat | https://www.verificat.cat/ |
+| elDiario.es | Diario nacional, política y datos | contacto@eldiario.es | https://www.eldiario.es/contacto/ |
+| El País | Diario nacional; cobertura electoral y datos | redaccion@elpais.es | https://elpais.com/info/contacto/ |
+| La Vanguardia (Política) | Diario de referencia en Cataluña | politica@lavanguardia.es | https://www.lavanguardia.com/contacto |
+| La Voz de Galicia (España) | Principal diario gallego | espana@lavoz.es | https://www.lavozdegalicia.es/contacto/ |
+| infoLibre | Diario digital de política | contacta@infolibre.es | https://www.infolibre.es/contacto/ |
+| Diario de Sevilla | Diario regional andaluz | redaccion@diariodesevilla.es | https://www.diariodesevilla.es/contacto/ |
+| CTXT | Revista de análisis político | info@ctxt.es | https://www.ctxt.es/es/contacto |
+
+### 3.4 Creadores y divulgadores
+
+| Nombre | Por qué | Contacto público | Visto en |
+|---|---|---|---|
+| Kiko Llaneras, boletín «Piensa claro» (solo redes) | Periodista de datos y de elecciones | https://twitter.com/kikollan · https://instagram.com/kikollan · https://kikollaneras.substack.com/ | https://substack.com/@kikollan |
+| Pablo Simón (solo redes) | Politólogo, divulga sobre sistemas electorales | https://twitter.com/kanciller | https://www.eldiario.es/autores/pablo_simon/ |
+| Politikon | Politólogos y economistas que divulgan con datos | contacto@politikon.es | https://politikon.es/contacto/ |
+| El Orden Mundial (EOM) | Divulgación política: web, boletín y redes | contacto@elordenmundial.com | https://elordenmundial.com/ (pie de página) |
+| Ac2ality (solo redes) | Noticias para jóvenes en TikTok e Instagram | https://www.tiktok.com/@ac2ality · https://www.instagram.com/ac2ality/ | https://www.ac2ality.com/ |
+| Agenda Pública | Análisis político escrito por académicos | info@agendapublica.es | https://agendapublica.es/contacto/ |
+| Piedras de Papel (solo redes) | Blog de politólogos en elDiario.es | https://twitter.com/Piedras_Papel | https://www.eldiario.es/piedrasdepapel/ |
+| VisualPolitik (solo redes) | Canal de YouTube de divulgación política | https://www.youtube.com/@VisualPolitik | https://www.visualpolitik.com/ |
+| The Political Room (solo redes) | Análisis político divulgativo | https://twitter.com/Political_Room · https://www.instagram.com/thepoliticalroom.tpr/ | https://thepoliticalroom.com/ |
+| Nada es Gratis | Blog de economía pública con fines didácticos | info@nadaesgratis.es | https://nadaesgratis.es/ |
+| El Grand Continent, en español (solo redes) | Revista de debate político europeo | https://twitter.com/Grand_Continent | https://legrandcontinent.eu/es/ |
+
+Se dejaron fuera, a propósito: buzones solo para privacidad o filtraciones (Maldita, pistas@eldiario.es), correos con nombre de persona, y medios cuyo canal no se pudo comprobar (RTVE general, El Confidencial, Cadena SER, Facultad de Políticas de la UCM). La búsqueda semanal de creadores (tarea programada) amplía esta lista.
