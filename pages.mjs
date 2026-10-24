@@ -3,6 +3,8 @@
 // posturas estimadas se marcan como tales y las desconocidas no se rellenan.
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { VOTAR } from "./src/votar.src.mjs";
+import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
+import { GLOSARIO } from "./src/glosario.src.mjs";
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -55,7 +57,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -309,6 +311,134 @@ q();
 </html>
 `);
   const iframeCode = `<iframe src="${SITE}insertar/" title="Mini test político del Test 29N" width="100%" height="560" style="border:1px solid #D2D5CC;border-radius:12px;max-width:640px" loading="lazy"></iframe>`;
+
+  // ── Provincias: escaños del real decreto y candidaturas que se presentan según los datos del test
+  const provRegion = Object.fromEntries(PD.regions.flatMap((r) => r.provs.map((x) => [x.id, r.id])));
+  const runsIn = (pid, prov) => { const sc = P[pid].scope, r = provRegion[prov]; if (sc.all) return !(sc.except || []).includes(r); if (sc.regions) return sc.regions.includes(r); if (sc.provinces) return sc.provinces.includes(prov); return false; };
+  const localName = (pid, prov) => P[pid].local?.[provRegion[prov]] || P[pid].name;
+  const provList = PD.regions.flatMap((r) => r.provs.map((x) => ({ ...x, region: r })));
+  const missingSeats = provList.filter((x) => !SEATS[x.id]).map((x) => x.id);
+  if (missingSeats.length) throw new Error(`Faltan escaños para: ${missingSeats.join(", ")}`);
+  for (const pr of provList) {
+    const cands = live.filter((pid) => runsIn(pid, pr.id)), tbd = cands.filter((pid) => P[pid].tbd), n = SEATS[pr.id];
+    page({
+      path: `/provincias/${pr.id}/`,
+      title: `Elecciones del 29N en ${pr.name}: escaños y candidaturas · Test 29N`,
+      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29 de noviembre de 2026. Las ${cands.length} candidaturas que se presentan según el Test 29N, con sus posturas, y un simulador del reparto de escaños.`,
+      crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }, { name: pr.name, url: `${SITE}provincias/${pr.id}/` }],
+      body: `<header class="sp-head"><p class="label">${esc(pr.region.name)} · Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Elecciones del 29N en ${esc(pr.name)}</h1>
+  <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
+  <p class="small muted">Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>.</p></header>
+${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`)}
+<section aria-labelledby="h-cand"><h2 class="h2" id="h-cand">Candidaturas que se presentan</h2>
+<p class="small muted">Según los datos del test. Las candidaturas proclamadas oficialmente se publican en el BOE el 3 de noviembre de 2026${tbd.length ? `; las marcadas «por confirmar» aún no han confirmado que se presentan` : ""}.</p>
+<ul class="sp-cards">${cands.map((pid) => `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(localName(pid, pr.id))}</b><span class="small muted">${esc(P[pid].tag)}${P[pid].tbd ? " · por confirmar" : ""}</span></span></a></li>`).join("")}</ul></section>
+<section aria-labelledby="h-sim"><h2 class="h2" id="h-sim">¿Cómo se reparten sus ${n} ${n === 1 ? "escaño" : "escaños"}?</h2>
+<p>${n === 1 ? `En ${esc(pr.name)} se elige un solo diputado: lo gana la candidatura más votada.` : `Con la ley D'Hondt, entre las candidaturas que superan el 3 % de los votos válidos de ${esc(pr.name)}.`} Puedes probarlo con los votos que tú quieras en el <a href="/escanos/?p=${pr.id}">simulador de escaños</a>. No usa encuestas ni estimaciones.</p></section>
+<p class="small muted">${pr.region.provs.length > 1 ? `Otras provincias de ${esc(pr.region.name)}: ${pr.region.provs.filter((x) => x.id !== pr.id).map((x) => `<a href="/provincias/${x.id}/">${esc(x.name)}</a>`).join(" · ")} · ` : ""}<a href="/provincias/">Todas las provincias</a></p>`
+    });
+  }
+  page({
+    path: "/provincias/",
+    title: "Las 52 circunscripciones del 29N: escaños y candidaturas · Test 29N",
+    desc: "Cuántos diputados elige cada provincia en las elecciones generales del 29 de noviembre de 2026 y qué candidaturas se presentan en cada una.",
+    crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Las 52 circunscripciones</h1>
+  <p class="lede">Cada provincia, más Ceuta y Melilla, elige un número de diputados según su población. En total, 350.</p>
+  <p class="small muted">Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>.</p></header>
+${PD.regions.map((r) => `<section aria-labelledby="pr-${r.id}"><h2 class="h3" id="pr-${r.id}">${esc(r.name)}</h2><ul class="prov-list">${r.provs.map((x) => `<li><a href="/provincias/${x.id}/">${esc(x.name)}</a><span class="small muted">${SEATS[x.id]} ${SEATS[x.id] === 1 ? "diputado" : "diputados"}</span></li>`).join("")}</ul></section>`).join("")}
+${cta("Compara tus ideas con las candidaturas de tu provincia")}`
+  });
+
+  // ── Simulador del reparto de escaños (ley D'Hondt), con los votos que introduce cada persona
+  const simData = { provs: provList.map((x) => ({ id: x.id, name: x.name, seats: SEATS[x.id], parties: live.filter((pid) => runsIn(pid, x.id)).map((pid) => ({ ab: P[pid].ab, name: localName(pid, x.id), color: P[pid].color })) })) };
+  mkdirSync(`${OUT}/escanos`, { recursive: true });
+  writeFileSync(`${OUT}/escanos/escanos.js`, `// Simulador del reparto de escaños (art. 163 LOREG). Todo se calcula en el navegador; no guarda ni envía nada.
+(() => {
+const D = ${JSON.stringify(simData)};
+const $ = (s) => document.querySelector(s), esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (n) => n.toLocaleString("es-ES");
+// Reparto D'Hondt con barrera del 3 % de los votos válidos (votos a candidaturas + votos en blanco).
+// Empates de cociente: se resuelven a favor de la candidatura con más votos (art. 163.1.c; si persistiera, sorteo).
+function dhondt(votes, blank, seats) {
+  const valid = votes.reduce((a, v) => a + v, 0) + blank, min = valid * 0.03;
+  const res = votes.map((v) => ({ v, in: v > 0 && v >= min, seats: 0 }));
+  for (let k = 0; k < seats; k++) {
+    let best = -1, bq = -1;
+    res.forEach((r, i) => { if (!r.in) return; const q = r.v / (r.seats + 1); if (q > bq || (q === bq && r.v > res[best].v)) { bq = q; best = i; } });
+    if (best < 0) break; res[best].seats++;
+  }
+  return { res, valid, min };
+}
+window.TEST29N_DHONDT = dhondt;
+const sel = $("#sim-prov"), form = $("#sim-form"), out = $("#sim-out");
+sel.innerHTML = D.provs.map((p) => '<option value="' + p.id + '">' + esc(p.name) + " (" + p.seats + ")</option>").join("");
+const qp = new URLSearchParams(location.search).get("p"); if (qp && D.provs.some((p) => p.id === qp)) sel.value = qp; else sel.value = "madrid";
+function rows(list) {
+  $("#sim-rows").innerHTML = list.map((p, i) => '<div class="sim-row"><label for="v' + i + '"><i style="background:' + p.color + '"></i>' + esc(p.name) + '</label><input id="v' + i + '" type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-name="' + esc(p.name) + '" data-color="' + p.color + '"></div>').join("") +
+    '<div class="sim-row sim-extra"><label for="v-otros">Otras candidaturas</label><input id="v-otros" type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-name="Otras candidaturas" data-color="#9AA0A6"></div>';
+  out.innerHTML = ""; 
+}
+function prov() { return D.provs.find((p) => p.id === sel.value); }
+function render(over) {
+  const p = over || prov(), ins = [...$("#sim-rows").querySelectorAll("input")];
+  const votes = ins.map((i) => Math.max(0, Math.floor(Number(i.value) || 0))), blank = Math.max(0, Math.floor(Number($("#v-blanco").value) || 0));
+  if (!votes.some((v) => v > 0)) { out.innerHTML = '<p class="small muted">Escribe los votos de al menos una candidatura.</p>'; return; }
+  const r = dhondt(votes, blank, p.seats);
+  const list = ins.map((i, k) => ({ name: i.dataset.name, color: i.dataset.color, ...r.res[k] })).filter((x) => x.v > 0).sort((a, b) => b.seats - a.seats || b.v - a.v);
+  out.innerHTML = '<h3 class="h3">Reparto de los ' + p.seats + ' escaños de ' + esc(p.name) + '</h3><p class="small muted">Votos válidos: ' + fmt(r.valid) + ' (incluidos ' + fmt(blank) + ' en blanco). Barrera del 3 %: ' + fmt(Math.ceil(r.min)) + ' votos.</p><table class="sim-table"><thead><tr><th scope="col">Candidatura</th><th scope="col">Votos</th><th scope="col">%</th><th scope="col">Escaños</th></tr></thead><tbody>' +
+    list.map((x) => '<tr' + (x.in ? "" : ' class="out"') + '><td><i style="background:' + x.color + '"></i>' + esc(x.name) + (x.in ? "" : " <span class='small'>(no llega al 3 %)</span>") + '</td><td>' + fmt(x.v) + '</td><td>' + (x.v / r.valid * 100).toFixed(1).replace(".", ",") + '</td><td><b>' + x.seats + '</b></td></tr>').join("") + '</tbody></table><p class="small muted">Simulación matemática con tus datos: no es una estimación ni un resultado oficial.</p>';
+}
+sel.addEventListener("change", () => { rows(prov().parties); });
+form.addEventListener("submit", (e) => { e.preventDefault(); render(); out.querySelector("h3")?.setAttribute("tabindex", "-1"); out.querySelector("h3")?.focus(); });
+$("#sim-example").addEventListener("click", () => {
+  // Ejemplo del propio art. 163 de la LOREG: 480.000 votos válidos y 8 escaños
+  const ex = [["A", 168000], ["B", 104000], ["C", 72000], ["D", 64000], ["E", 40000], ["F", 32000]];
+  $("#sim-rows").innerHTML = ex.map(([n, v], i) => '<div class="sim-row"><label for="v' + i + '">Candidatura ' + n + '</label><input id="v' + i + '" type="number" min="0" value="' + v + '" data-name="Candidatura ' + n + '" data-color="#676D79"></div>').join("");
+  $("#v-blanco").value = 0;
+  render({ name: "el ejemplo", seats: 8 });
+  out.insertAdjacentHTML("afterbegin", '<p class="small"><b>Ejemplo de la ley electoral</b> (art. 163): 480.000 votos válidos y 8 escaños. Resultado: A, 4; B, 2; C y D, 1 cada una.</p>');
+});
+rows(prov().parties);
+})();
+`);
+  page({
+    path: "/escanos/",
+    title: "Simulador de escaños del 29N: reparto con la ley D'Hondt · Test 29N",
+    desc: "Calcula cómo se reparten los diputados de cada provincia con la ley D'Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones.",
+    crumbs: [{ name: "Simulador de escaños", url: `${SITE}escanos/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Simulador de escaños</h1>
+  <p class="lede">Elige una provincia, escribe los votos que quieras para cada candidatura y mira cómo se repartirían sus diputados. No usa encuestas ni estimaciones: solo los números que introduces.</p></header>
+<form id="sim-form" class="sheet sim" novalidate>
+  <div class="field"><label class="label" for="sim-prov">Provincia (diputados que elige)</label><select id="sim-prov"></select></div>
+  <div id="sim-rows" class="sim-rows"></div>
+  <div class="sim-row sim-extra"><label for="v-blanco">Votos en blanco</label><input id="v-blanco" type="number" inputmode="numeric" min="0" step="1" placeholder="0"></div>
+  <div class="actions"><button class="btn btn-primary" type="submit">Calcular el reparto</button><button class="btn btn-ghost" type="button" id="sim-example">Ver el ejemplo de la ley</button></div>
+  <noscript><p>El simulador necesita JavaScript.</p></noscript>
+</form>
+<div id="sim-out" class="sim-out" aria-live="polite"></div>
+<section aria-labelledby="h-reglas"><h2 class="h2" id="h-reglas">Cómo funciona el reparto</h2>
+<ul class="dots"><li>Cada provincia elige los diputados que fija el real decreto de convocatoria (Madrid, 38; Soria, 2; Ceuta y Melilla, 1 cada una).</li>
+<li>Solo entran en el reparto las candidaturas que obtienen al menos el <b>3 % de los votos válidos</b> de la provincia. Los votos válidos incluyen los votos en blanco, por eso el voto en blanco hace un poco más alta esa barrera.</li>
+<li>Los votos de cada candidatura se dividen entre 1, 2, 3… hasta el número de escaños, y los escaños se asignan a los cocientes más altos (<b>ley D'Hondt</b>).</li>
+<li>Si dos cocientes empatan, el escaño va a la candidatura con más votos en total; si también empatan en votos, se sortea.</li>
+<li>En las circunscripciones de un solo escaño, gana la candidatura más votada.</li></ul>
+<p class="small muted">Reglas: <a href="${LOREG_URL}" target="_blank" rel="noopener noreferrer">Ley Orgánica del Régimen Electoral General, art. 163</a>. Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>. Es una simulación matemática: no reproduce un resultado oficial.</p></section>
+<script src="/escanos/escanos.js" defer></script>`
+  });
+
+  // ── Glosario electoral
+  page({
+    path: "/glosario/",
+    title: "Glosario electoral del 29N: términos explicados · Test 29N",
+    desc: "Qué es la ley D'Hondt, la barrera del 3 %, el voto en blanco, la jornada de reflexión o la investidura: los términos de las elecciones generales explicados de forma sencilla y con su base legal.",
+    crumbs: [{ name: "Glosario", url: `${SITE}glosario/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Glosario electoral</h1>
+  <p class="lede">Los términos que más se oyen en campaña, explicados en pocas palabras y con el artículo de la ley que los regula.</p></header>
+<dl class="gloss">${GLOSARIO.map((g) => `<div id="${slug(g.t)}"><dt>${esc(g.t)}</dt><dd>${esc(g.d)} <span class="small muted">(<a href="${g.f[0]}" target="_blank" rel="noopener noreferrer">${esc(g.f[1])}</a>)</span></dd></div>`).join("")}</dl>
+<p class="small muted">Más información práctica en <a href="/votar/">Cómo votar el 29N</a>, el <a href="/calendario/">calendario electoral</a> y el <a href="/escanos/">simulador de escaños</a>.</p>
+${cta("Pon a prueba tus ideas")}`
+  });
 
   // ── Índices
   page({
