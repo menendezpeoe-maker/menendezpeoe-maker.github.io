@@ -42,8 +42,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 ## 24 oct 2026 · T5 · Fuentes de las posturas de PSOE y PP
 - **Alcance:** las 71 posturas de prioridad 1 y 2 sin fuente de PSOE (37) y PP (34), más las dos discutidas del PSOE (E06 y H01). Investigadas por dos subagentes y revisadas una a una. La prioridad 3 queda para R1/R2.
 - **Resultado:** 49 fuentes nuevas o mejoradas (31 del PSOE, 20 del PP; dos sustituyen a las anteriores de E06 y H01). Total de la web: 82 → 131. Los 33 enlaces únicos responden con 200.
-  - **PSOE:** 42 de 107 posturas con fuente; 28 estimadas.
-  - **PP:** 34 de 107 posturas con fuente; 42 estimadas.
+  - **PSOE:** 42 de 107 posturas con fuente; 29 estimadas.
+  - **PP:** 34 de 107 posturas con fuente; 43 estimadas.
   - Se descartaron por indirectas o antiguas: PSOE C03, E02, I05, I07 y J02; PP A05, C04, G04, H02, H09 y J02.
 - **Postura cambiada (evidencia literal, nota en `NOTES`):** PSOE J08 (estándares sanitarios comunes), 4 estimada → 5 documentada: su programa de 2023 promete tiempos máximos de espera por ley en todo el SNS.
 - **Posturas discutidas del PSOE (pendientes desde T9):** quedan respaldadas. H01 trata del 3,5 % de la OTAN, que Sánchez rechazó por carta (19/06/2025). E06: pacto PSOE-Sumar de junio de 2026 para derogar las injurias a la Corona. Los valores extremos en «Europa y mundo» e «Inmigración» descansan ahora en posturas documentadas (H01, F02, F03, H09).
@@ -58,7 +58,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
   - PP L03 (cambio registral a los 16) 2 → 1: recurrió exactamente esto ante el TC.
   - PP G04 (trasvases) 4 → 3: el PP está dividido por territorios.
   - PSOE L09 (burka) 2 → 1: votó contra las dos leyes de prohibición de 2026.
-- **Estimadas sin fuente (regla 12; justificación de la estimación en `JUSTIF`):** PSOE E02, F07, J02, J03; PP A05, B05, G04, H09, I02, J02, J08. **Documentadas sin enlace propio:** PSOE C03, D01, I05, I07; PP C04, D07, F02, H02, I05, I07, K05.
+- **Estimadas sin fuente (regla 12; justificación de la estimación en `JUSTIF`):** PSOE D01, E02, F07, J02, J03; PP A05, B05, G04, H09, I02, I07, J02, J08. PSOE D01 y PP I07 pasan a «estimadas» porque no hay ninguna fuente reciente (sin cambiar su valor). **Documentadas sin enlace propio:** PSOE C03, I05, I07; PP C04, D07, F02, H02, I05, K05.
+- **Revisión independiente:** corregidas una cifra y una cita que no estaban en sus fuentes (PSOE F02, PP L03), tipos de fuente iguales para todos (una votación en las Cortes es «parlamento» aunque se cite por la prensa), términos cargados y redacción de varias justificaciones.
 - **Justificaciones:** nuevo `JUSTIF` en `src/preguntas.src.mjs` (de 20 a 200 caracteres, terminadas en punto, validadas en `build.mjs`), publicado como `why` en `data/preguntas.json`. 56 ya escritas; T8 las mostrará.
 - **Fecha de los datos:** `UPDATED` pasa al 24 de octubre de 2026.
 

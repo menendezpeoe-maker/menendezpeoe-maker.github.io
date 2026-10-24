@@ -198,7 +198,7 @@
     "psoe": [
      "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
      "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025",
-     "prensa",
+     "parlamento",
      "2025-09-11"
     ],
     "pp": [
@@ -210,7 +210,7 @@
    },
    "why": {
     "psoe": "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
-    "pp": "El PP presentó enmienda a la totalidad y tumbó la ley: prefiere que la jornada se negocie en el diálogo social y no se imponga por ley."
+    "pp": "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social."
    }
   },
   {
@@ -903,7 +903,7 @@
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
-     "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (22/10/2026)",
+     "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)",
      "declaracion",
      "2026-10-22"
     ]
@@ -963,7 +963,7 @@
     "psoe": [
      "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
      "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025",
-     "prensa",
+     "parlamento",
      "2025-03-18"
     ],
     "pp": [
@@ -975,7 +975,7 @@
    },
    "why": {
     "psoe": "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
-    "pp": "El PP promete una ley antiokupación con desalojo en 48 horas (24 h en el programa de 2023) para proteger la propiedad."
+    "pp": "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad."
    }
   },
   {
@@ -1098,7 +1098,7 @@
     ]
    },
    "why": {
-    "psoe": "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como hizo Barcelona."
+    "psoe": "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona."
    }
   },
   {
@@ -1926,6 +1926,7 @@
     "pav": 1
    },
    "est": [
+    "psoe",
     "vox",
     "salf",
     "erc",
@@ -1961,7 +1962,7 @@
     ]
    },
    "why": {
-    "psoe": "Sin postura reciente documentada: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
+    "psoe": "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
     "pp": "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional."
    }
   },
@@ -2075,7 +2076,7 @@
    },
    "why": {
     "psoe": "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
-    "pp": "El PP quiere que jueces y magistrados elijan a los 12 vocales judiciales del CGPJ (medida 237 del programa de 2023)."
+    "pp": "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ."
    }
   },
   {
@@ -2130,14 +2131,14 @@
     ],
     "pp": [
      "https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html",
-     "Ara, votación final de la ley de amnistía en el Congreso del 30/05/2024",
+     "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024",
      "parlamento",
      "2024-05-30"
     ]
    },
    "why": {
     "psoe": "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
-    "pp": "El PP votó contra la ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley."
+    "pp": "El PP votó contra la Ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley."
    }
   },
   {
@@ -2301,7 +2302,7 @@
    },
    "why": {
     "psoe": "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    "pp": "Defensa constante de la monarquía parlamentaria; votó contra los referendos sobre la forma de Estado en 2014. No hay fuente de 2023–2026."
+    "pp": "Defiende la monarquía parlamentaria de 1978 y votó en 2014 contra los referendos sobre la forma de Estado."
    }
   },
   {
@@ -2792,7 +2793,7 @@
     ]
    },
    "why": {
-    "psoe": "En junio de 2026 pactó con Sumar una reforma del Código Penal que deroga las injurias y calumnias a la Corona."
+    "psoe": "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona."
    }
   },
   {
@@ -2912,7 +2913,7 @@
     ]
    },
    "why": {
-    "psoe": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que la niegan.",
+    "psoe": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
     "pp": "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás»."
    }
   },
@@ -3110,7 +3111,7 @@
     ]
    },
    "why": {
-    "psoe": "Su Gobierno aprobó en 2026 la regularización extraordinaria de unos 500.000 inmigrantes en situación irregular."
+    "psoe": "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular."
    }
   },
   {
@@ -3754,7 +3755,7 @@
     ]
    },
    "why": {
-    "psoe": "Sánchez pidió por carta a la Comisión Europea mantener el veto a la venta de coches de combustión a partir de 2035.",
+    "psoe": "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
     "pp": "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil."
    }
   },
@@ -4264,7 +4265,7 @@
     ]
    },
    "why": {
-    "psoe": "Europeísta: propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
+    "psoe": "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
    }
   },
   {
@@ -4990,6 +4991,7 @@
     "adel": 5
    },
    "est": [
+    "pp",
     "salf",
     "d21",
     "junts",
@@ -5002,7 +5004,7 @@
     "mes"
    ],
    "why": {
-    "pp": "El PP-Vox de Murcia exigió en 2019 permiso paterno para las charlas impartidas por personas ajenas al centro; la dirección nacional no se ha pronunciado."
+    "pp": "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado."
    }
   },
   {
@@ -5304,7 +5306,7 @@
     "pp": [
      "https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html",
      "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025",
-     "gobierno",
+     "prensa",
      "2025-05-24"
     ]
    },
@@ -5829,8 +5831,8 @@
    "src": {
     "psoe": [
      "https://forbes.es/?p=672070",
-     "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario",
-     "prensa",
+     "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025",
+     "parlamento",
      "2025-04-03"
     ],
     "pp": [
@@ -6295,14 +6297,14 @@
     ],
     "pp": [
      "https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/",
-     "The Objective, recurso del PP contra la Ley Trans ante el TC, 27/04/2025",
-     "parlamento",
+     "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025",
+     "prensa",
      "2025-04-27"
     ]
    },
    "why": {
     "psoe": "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
-    "pp": "El PP recurrió ante el TC el cambio registral desde los 16 años sin informes médicos, y promete otra ley trans «con la máxima prudencia»."
+    "pp": "El PP recurrió ante el Tribunal Constitucional el cambio registral desde los 16 años sin informes médicos que permite la Ley trans."
    }
   },
   {
@@ -6601,7 +6603,7 @@
     "psoe": [
      "https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html",
      "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
-     "prensa",
+     "parlamento",
      "2026-04-14"
     ],
     "pp": [
@@ -6612,7 +6614,7 @@
     ]
    },
    "why": {
-    "psoe": "Votó contra las leyes de Vox (febrero) y Junts (abril de 2026) para prohibir el burka, por considerarlas discriminatorias."
+    "psoe": "Votó contra las leyes de Vox y Junts (febrero y abril de 2026) para prohibir el burka, por considerarlas discriminatorias."
    }
   }
  ]

@@ -213,7 +213,7 @@ export const QUESTIONS = [
   short: "Ley electoral más proporcional",
   ctx: "El Congreso se elige por provincias, con un mínimo de dos diputados cada una. Por eso un escaño cuesta muchos menos votos en Soria o Teruel que en Madrid, y el sistema favorece a los partidos grandes y a los concentrados en un territorio. Una ley más proporcional reflejaría mejor el voto nacional; sus críticos defienden la voz de las provincias despobladas y la estabilidad de los gobiernos.",
   ley: "Constitución, art. 68; Ley Orgánica del Régimen Electoral General",
-  pos: "2 1 3~ 4 5 4~ 5 5 2~ 1~ 1~ 2~ 1~ 2~ 2~ 1~ 3~ 3~ 3~ 2~ 1 3~ 3~ 1 1 1 1" },
+  pos: "2~ 1 3~ 4 5 4~ 5 5 2~ 1~ 1~ 2~ 1~ 2~ 2~ 1~ 3~ 3~ 3~ 2~ 1 3~ 3~ 1 1 1 1" },
 { id: "D02", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
   short: "Listas desbloqueadas",
@@ -498,7 +498,7 @@ export const QUESTIONS = [
   text: "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
   short: "Educación sexual sin «pin parental»",
   ctx: "La ley educativa incluye la educación afectivo-sexual en el currículo. Vox impulsó el «pin parental», un permiso expreso de los padres para que sus hijos asistan a actividades complementarias sobre sexualidad o identidad de género, y llegó a aplicarse en Murcia. Sus defensores apelan al derecho de los padres a decidir la educación moral de sus hijos; sus críticos, al derecho de los menores a una formación completa.",
-  pos: "5 2 1 5 5 1~ 0 4~ 5 4~ 4~ 5 2~ 5~ 5 4~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 2~ 1 5 5 1~ 0 4~ 5 4~ 4~ 5 2~ 5~ 5 4~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
 { id: "I08", area: "edu", prio: 3, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
   short: "Dinero público para la tauromaquia",
@@ -714,7 +714,7 @@ export const NOTES = {
 // Fecha: AAAA, AAAA-MM o AAAA-MM-DD de la evidencia, no de la consulta.
 export const SOURCES = {
   A01: {
-    psoe: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "prensa", "2025-09-11"],
+    psoe: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "parlamento", "2025-09-11"],
     pp: ["https://theobjective.com/espana/politica/2025-09-10/congreso-reduccion-jornada-laboral-pp-vox-junts/", "The Objective, votación en el Congreso del 10/09/2025", "parlamento", "2025-09-10"]
   },
   A02: {
@@ -744,10 +744,10 @@ export const SOURCES = {
   },
   B02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (22/10/2026)", "declaracion", "2026-10-22"]
+    pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)", "declaracion", "2026-10-22"]
   },
   B03: {
-    psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "prensa", "2025-03-18"],
+    psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"]
   },
   B04: {
@@ -785,7 +785,7 @@ export const SOURCES = {
   },
   D04: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776", "BOE, Ley Orgánica 1/2024, de amnistía", "gobierno", "2024-06-11"],
-    pp: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, votación final de la ley de amnistía en el Congreso del 30/05/2024", "parlamento", "2024-05-30"]
+    pp: ["https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html", "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024", "parlamento", "2024-05-30"]
   },
   D07: {
     psoe: ["https://es.ara.cat/politica/relacion-psoe-monarquia_1_5823620.html", "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026", "prensa", "2026-08-13"]
@@ -896,7 +896,7 @@ export const SOURCES = {
     junts: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.amp.html", "Redacción Médica, 18/03/2026", "declaracion", "2026-03-18"]
   },
   J03: {
-    pp: ["https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html", "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025", "gobierno", "2025-05-24"]
+    pp: ["https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html", "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025", "prensa", "2025-05-24"]
   },
   J08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
@@ -913,7 +913,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
   },
   K04: {
-    psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario", "prensa", "2025-04-03"],
+    psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025", "parlamento", "2025-04-03"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
   },
   K05: {
@@ -934,10 +934,10 @@ export const SOURCES = {
   },
   L03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
-    pp: ["https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/", "The Objective, recurso del PP contra la Ley Trans ante el TC, 27/04/2025", "parlamento", "2025-04-27"]
+    pp: ["https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/", "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025", "prensa", "2025-04-27"]
   },
   L09: {
-    psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "prensa", "2026-04-14"],
+    psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
     pp: ["https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/", "Orain, febrero de 2026", "parlamento", "2026-02"]
   }
 };
@@ -948,7 +948,7 @@ export const SOURCES = {
 export const JUSTIF = {
   A01: {
     psoe: "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
-    pp: "El PP presentó enmienda a la totalidad y tumbó la ley: prefiere que la jornada se negocie en el diálogo social y no se imponga por ley."
+    pp: "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social."
   },
   A03: {
     psoe: "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
@@ -963,10 +963,10 @@ export const JUSTIF = {
   },
   B03: {
     psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
-    pp: "El PP promete una ley antiokupación con desalojo en 48 horas (24 h en el programa de 2023) para proteger la propiedad."
+    pp: "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad."
   },
   B05: {
-    psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como hizo Barcelona."
+    psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona."
   },
   C03: {
     pp: "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades."
@@ -979,20 +979,20 @@ export const JUSTIF = {
     pp: "El PP sostiene que un referéndum de autodeterminación no cabe en la Constitución y propone tipificar como delito convocarlo."
   },
   D01: {
-    psoe: "Sin postura reciente documentada: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
+    psoe: "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
     pp: "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional."
   },
   D03: {
     psoe: "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
-    pp: "El PP quiere que jueces y magistrados elijan a los 12 vocales judiciales del CGPJ (medida 237 del programa de 2023)."
+    pp: "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ."
   },
   D04: {
     psoe: "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
-    pp: "El PP votó contra la ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley."
+    pp: "El PP votó contra la Ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley."
   },
   D07: {
     psoe: "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    pp: "Defensa constante de la monarquía parlamentaria; votó contra los referendos sobre la forma de Estado en 2014. No hay fuente de 2023–2026."
+    pp: "Defiende la monarquía parlamentaria de 1978 y votó en 2014 contra los referendos sobre la forma de Estado."
   },
   E02: {
     pp: "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla."
@@ -1002,14 +1002,14 @@ export const JUSTIF = {
     pp: "El PP aprobó la ley en 2015, votó contra su reforma y defiende el texto vigente como protección de las fuerzas de seguridad."
   },
   E06: {
-    psoe: "En junio de 2026 pactó con Sumar una reforma del Código Penal que deroga las injurias y calumnias a la Corona."
+    psoe: "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona."
   },
   E08: {
-    psoe: "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que la niegan.",
+    psoe: "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
     pp: "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás»."
   },
   F02: {
-    psoe: "Su Gobierno aprobó en 2026 la regularización extraordinaria de unos 500.000 inmigrantes en situación irregular."
+    psoe: "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular."
   },
   F03: {
     psoe: "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra."
@@ -1019,7 +1019,7 @@ export const JUSTIF = {
     pp: "El PP propone una fiscalidad específica y bonificaciones para las zonas rurales despobladas, además de menores costes laborales en Soria, Cuenca y Teruel."
   },
   G03: {
-    psoe: "Sánchez pidió por carta a la Comisión Europea mantener el veto a la venta de coches de combustión a partir de 2035.",
+    psoe: "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
     pp: "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil."
   },
   G04: {
@@ -1033,7 +1033,7 @@ export const JUSTIF = {
     psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España."
   },
   H02: {
-    psoe: "Europeísta: propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
+    psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
   },
   H04: {
     psoe: "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025."
@@ -1045,7 +1045,7 @@ export const JUSTIF = {
     psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes."
   },
   I07: {
-    pp: "El PP-Vox de Murcia exigió en 2019 permiso paterno para las charlas impartidas por personas ajenas al centro; la dirección nacional no se ha pronunciado."
+    pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado."
   },
   J03: {
     psoe: "Estimación: el borrador de Estatuto Marco del Ministerio de Sanidad (Sumar) prevé exclusividad parcial; no consta una postura propia del PSOE.",
@@ -1071,9 +1071,9 @@ export const JUSTIF = {
   },
   L03: {
     psoe: "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
-    pp: "El PP recurrió ante el TC el cambio registral desde los 16 años sin informes médicos, y promete otra ley trans «con la máxima prudencia»."
+    pp: "El PP recurrió ante el Tribunal Constitucional el cambio registral desde los 16 años sin informes médicos que permite la Ley trans."
   },
   L09: {
-    psoe: "Votó contra las leyes de Vox (febrero) y Junts (abril de 2026) para prohibir el burka, por considerarlas discriminatorias."
+    psoe: "Votó contra las leyes de Vox y Junts (febrero y abril de 2026) para prohibir el burka, por considerarlas discriminatorias."
   }
 };
