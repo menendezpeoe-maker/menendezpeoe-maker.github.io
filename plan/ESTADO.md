@@ -8,7 +8,8 @@
 3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
-6. ~~T10~~ **Hecho y publicado el 24 oct.** Siguiente: T5–T8 y T11 según el calendario.
+6. ~~T10~~ **Hecho y publicado el 24 oct.**
+7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Siguiente: T6–T8 y T11 según el calendario. **Hay posturas pendientes de decisión del titular** (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -18,7 +19,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T2 · Test rápido y resultados: completada y verificada (web real, 23 oct).
 - T3 · Guía para votar y calendario: completada y verificada (web real, 23 oct).
 - T4 · Provincias, simulador y glosario: completada y verificada (web real, 24 oct).
-- T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct). T5–T8, T11: pendientes.
+- T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
+- T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct). T6–T8, T11: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -36,6 +38,29 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 24 oct 2026 · T5 · Fuentes de las posturas de PSOE y PP
+- **Alcance:** las 71 posturas de prioridad 1 y 2 sin fuente de PSOE (37) y PP (34), más las dos discutidas del PSOE (E06 y H01). Investigadas por dos subagentes y revisadas una a una. La prioridad 3 queda para R1/R2.
+- **Resultado:** 49 fuentes nuevas o mejoradas (31 del PSOE, 20 del PP; dos sustituyen a las anteriores de E06 y H01). Total de la web: 82 → 131. Los 33 enlaces únicos responden con 200.
+  - **PSOE:** 42 de 107 posturas con fuente; 28 estimadas.
+  - **PP:** 34 de 107 posturas con fuente; 42 estimadas.
+  - Se descartaron por indirectas o antiguas: PSOE C03, E02, I05, I07 y J02; PP A05, C04, G04, H02, H09 y J02.
+- **Postura cambiada (evidencia literal, nota en `NOTES`):** PSOE J08 (estándares sanitarios comunes), 4 estimada → 5 documentada: su programa de 2023 promete tiempos máximos de espera por ley en todo el SNS.
+- **Posturas discutidas del PSOE (pendientes desde T9):** quedan respaldadas. H01 trata del 3,5 % de la OTAN, que Sánchez rechazó por carta (19/06/2025). E06: pacto PSOE-Sumar de junio de 2026 para derogar las injurias a la Corona. Los valores extremos en «Europa y mundo» e «Inmigración» descansan ahora en posturas documentadas (H01, F02, F03, H09).
+- **Pendiente de decisión del titular (regla 8; no se ha cambiado nada):**
+  - PP B05 (pisos turísticos) 3 → 4: limitan Madrid y Andalucía, pero votó contra la moratoria estatal.
+  - PP E08 (ley intrafamiliar) 2 → 1: su programa promete cumplir el Pacto de Estado «sin pasos atrás».
+  - PP F02 (expulsar a irregulares) 2 → 3: el contrato de 2026 prohíbe las regularizaciones colectivas.
+  - PP I02 (universidad gratuita) 2 → 3: Galicia y Castilla y León la dan solo a quien aprueba.
+  - PP I05 (elegir el castellano) 5 → 4: su programa habla de «equilibrio» entre lenguas vehiculares.
+  - PP J08 (estándares sanitarios) 2 → 3: su programa homogeneiza algunos estándares.
+  - PP K05 (macrogranjas) 1 → 2: fuente de 2022, ambigua.
+  - PP L03 (cambio registral a los 16) 2 → 1: recurrió exactamente esto ante el TC.
+  - PP G04 (trasvases) 4 → 3: el PP está dividido por territorios.
+  - PSOE L09 (burka) 2 → 1: votó contra las dos leyes de prohibición de 2026.
+- **Estimadas sin fuente (regla 12; justificación de la estimación en `JUSTIF`):** PSOE E02, F07, J02, J03; PP A05, B05, G04, H09, I02, J02, J08. **Documentadas sin enlace propio:** PSOE C03, D01, I05, I07; PP C04, D07, F02, H02, I05, I07, K05.
+- **Justificaciones:** nuevo `JUSTIF` en `src/preguntas.src.mjs` (de 20 a 200 caracteres, terminadas en punto, validadas en `build.mjs`), publicado como `why` en `data/preguntas.json`. 56 ya escritas; T8 las mostrará.
+- **Fecha de los datos:** `UPDATED` pasa al 24 de octubre de 2026.
 
 ## 24 oct 2026 · T10 · Tests por tema, imágenes para redes y kit de difusión
 - **Tests por tema** (vivienda, inmigración, impuestos y economía, sanidad, energía y medioambiente, territorio; 6 o 7 preguntas, lista en `src/temas.src.mjs` y copiada en `assets/papeleta.js`, una prueba comprueba que coinciden):
