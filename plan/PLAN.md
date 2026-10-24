@@ -113,11 +113,12 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T10 | sáb 24 oct | Fase 5: difusión y tests por tema |
 | T5 | sáb 24 oct | Fase 2: fuentes de PSOE y PP (hecha y ampliada a todas sus posturas) |
 | T6 | sáb 24 oct | Fase 2: fuentes de Vox y Frente Amplio (hecha, todas sus posturas) |
-| T7 | dom 25 oct | Fase 2: fuentes de Podemos y ERC |
-| T8 | lun 26 oct | Fase 2: justificaciones visibles y confianza |
-| T11 | mar 27 oct | Fase 6 y repaso final |
-| T12 | mié 28 oct | Fase 2: fuentes del resto de candidaturas (Junts, PNV, EH Bildu, SALF y demás) |
-| T12b | jue 29 oct | Continuación de T12 con lo que quede, y programas de 2026 que se hayan publicado |
+| T7 | sáb 24 oct | Fase 2: fuentes de Podemos y ERC (hecha, todas sus posturas) |
+| T8 | dom 25 oct | Fase 2: justificaciones visibles y confianza |
+| T11 | lun 26 oct | Fase 6 y repaso final |
+| T12 | mar 27 oct | Fase 2: fuentes del resto de candidaturas (Junts, PNV, EH Bildu, SALF y demás) |
+| T12b | mié 28 oct | Continuación de T12 con lo que quede, y programas de 2026 que se hayan publicado |
+| R0 | jue 29 oct | Repaso y recuperación: lo pendiente en `ESTADO.md` (entre otras cosas, las 22 posturas de Podemos sin enlace) |
 | R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |

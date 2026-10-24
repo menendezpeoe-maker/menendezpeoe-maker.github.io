@@ -10,7 +10,7 @@
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
 6. ~~T10~~ **Hecho y publicado el 24 oct.** ~~T6~~ también, el 24 oct (adelantada a petición del titular, todas las posturas de Vox y Frente Amplio).
 7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida).
-8. **Calendario adelantado (24 oct), dos veces porque T5 y T6 se hicieron el 24:** T7 el 25 oct, T8 el 26, T11 el 27, T12 (fuentes del resto de candidaturas) el 28 y T12b (continuación y programas de 2026) el 29. Tareas programadas actualizadas. Nueva instrucción permanente del titular: incorporar los programas electorales de 2026 en cuanto se publiquen (PLAN.md, regla 5). Siguiente: T7, T8, T11, T12 y T12b según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
+8. **Calendario adelantado (24 oct), porque T5, T6 y T7 se hicieron el 24:** T8 el 25 oct, T11 el 26, T12 (fuentes del resto de candidaturas) el 27, T12b (continuación y programas de 2026) el 28 y R0 (repaso y recuperación) el 29. Tareas programadas actualizadas. Nueva instrucción permanente del titular: incorporar los programas electorales de 2026 en cuanto se publiquen (PLAN.md, regla 5). Siguiente: T8, T11, T12, T12b y R0 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
