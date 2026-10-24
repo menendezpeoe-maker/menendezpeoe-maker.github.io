@@ -569,7 +569,7 @@
    },
    "why": {
     "psoe": "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
-    "pp": "Propone eliminar los umbrales regulatorios por tamaño para que las obligaciones de 50 empleados pasen a 250."
+    "pp": "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250."
    }
   },
   {
@@ -585,7 +585,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 3,
+    "pp": 2,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -623,7 +623,7 @@
    },
    "why": {
     "psoe": "Su Gobierno impulsó la ley que rebajó el límite de pagos en efectivo de 2.500 a 1.000 euros contra el fraude fiscal.",
-    "pp": "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo a 2.500 euros y no consta que proponga suprimir el límite."
+    "pp": "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite."
    }
   },
   {
@@ -1474,14 +1474,14 @@
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
-     "PP, argumentario «Una nueva generación de propietarios» (22/10/2026)",
+     "PP, argumentario «Una nueva generación de propietarios» (octubre de 2026)",
      "programa",
-     "2026-10-22"
+     "2026-10"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
-    "pp": "Promete avales públicos de hasta el 100% para que los jóvenes compren vivienda."
+    "pp": "Promete avales públicos de hasta el 100 % para que los jóvenes compren vivienda."
    }
   },
   {
@@ -2448,7 +2448,7 @@
    "lr": 0,
    "pos": {
     "psoe": 3,
-    "pp": 2,
+    "pp": 3,
     "vox": 3,
     "fa": 5,
     "pod": 5,
@@ -2553,7 +2553,7 @@
    },
    "why": {
     "psoe": "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    "pp": "Feijóo se declara absoluto defensor de la monarquía parlamentaria como gran pacto de la Transición."
+    "pp": "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición."
    }
   },
   {
@@ -3034,7 +3034,7 @@
     "psoe": [
      "https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/",
      "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)",
-     "gobierno",
+     "declaracion",
      "2023-07-18"
     ]
    },
@@ -3597,7 +3597,7 @@
     "soria"
    ],
    "notes": {
-    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, con prioridad cultural."
+    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
    },
    "src": {
     "psoe": [
@@ -3615,7 +3615,7 @@
    },
    "why": {
     "psoe": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
-    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, con prioridad cultural."
+    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
    }
   },
   {
@@ -4867,7 +4867,7 @@
    },
    "why": {
     "psoe": "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
-    "pp": "Estimación: no consta postura del PP sobre mantener o suprimir la unanimidad en la UE."
+    "pp": "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad."
    }
   },
   {
@@ -4974,7 +4974,7 @@
     "mes"
    ],
    "notes": {
-    "pp": "Impulsó proposiciones que critican el giro de Sánchez sobre el Sáhara y apoyó otra a favor del referéndum."
+    "pp": "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
    },
    "src": {
     "psoe": [
@@ -4992,7 +4992,7 @@
    },
    "why": {
     "psoe": "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
-    "pp": "Impulsó proposiciones que critican el giro de Sánchez sobre el Sáhara y apoyó otra a favor del referéndum."
+    "pp": "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
    }
   },
   {
@@ -5140,7 +5140,7 @@
     ]
    },
    "why": {
-    "psoe": "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7% de la RNB en 2030.",
+    "psoe": "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
    }
   },
@@ -5248,7 +5248,7 @@
     "ccpc"
    ],
    "notes": {
-    "pp": "El PPE respaldó los centros fuera de la UE, pero Feijóo evitó apoyarlos en público (octubre de 2024)."
+    "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
    },
    "src": {
     "psoe": [
@@ -5266,7 +5266,7 @@
    },
    "why": {
     "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
-    "pp": "Feijóo avaló la declaración del PPE sobre centros fuera de la UE, pero evitó respaldarlos en público."
+    "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
    }
   },
   {
@@ -5437,7 +5437,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 4,
+    "pp": 5,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -5467,26 +5467,16 @@
     "comp",
     "adel"
    ],
-   "notes": {
-    "pp": "Rechaza el decreto que endurece los requisitos de las universidades privadas, sobre todo por invadir competencias."
-   },
    "src": {
     "psoe": [
      "https://www.boe.es/eli/es/rd/2025/10/07/905",
      "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)",
      "gobierno",
      "2025-10-07"
-    ],
-    "pp": [
-     "https://www.eldiario.es/sociedad/pp-rechaza-decreto-anti-chiringuitos-universitarios-apoyan-rectores-sindicatos-estudiantes_1_12295535.html",
-     "elDiario.es, el PP rechaza el decreto que endurece la creación de universidades, 13/05/2025",
-     "declaracion",
-     "2025-05-13"
     ]
    },
    "why": {
-    "psoe": "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
-    "pp": "Rechaza el decreto que endurece los requisitos de las universidades privadas, sobre todo por invadir competencias."
+    "psoe": "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad."
    }
   },
   {
@@ -6749,7 +6739,7 @@
     "adel"
    ],
    "notes": {
-    "psoe": "Su Gobierno logró en la UE mantener 143 días de pesca en el Mediterráneo frente a los 9,7 propuestos por la Comisión."
+    "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión."
    },
    "src": {
     "psoe": [
@@ -6766,7 +6756,7 @@
     ]
    },
    "why": {
-    "psoe": "Su Gobierno logró en la UE mantener 143 días de pesca en el Mediterráneo frente a los 9,7 propuestos por la Comisión.",
+    "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
     "pp": "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE."
    }
   },
@@ -6900,7 +6890,7 @@
     "upl"
    ],
    "notes": {
-    "psoe": "Su programa de 2023 presume de invertir en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
    },
    "src": {
@@ -6918,7 +6908,7 @@
     ]
    },
    "why": {
-    "psoe": "Su programa de 2023 presume de invertir en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
    }
   },
@@ -7213,7 +7203,7 @@
     "pp": [
      "https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html",
      "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023",
-     "declaracion",
+     "prensa",
      "2023-03-29"
     ]
    },
@@ -7485,7 +7475,7 @@
     ]
    },
    "why": {
-    "psoe": "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40% de cada sexo en los consejos de las cotizadas.",
+    "psoe": "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
     "pp": "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí."
    }
   },

@@ -86,7 +86,7 @@ export const QUESTIONS = [
   text: "Habría que eliminar el límite de 1.000 euros para los pagos en efectivo.",
   short: "Eliminar el límite a los pagos en efectivo",
   ctx: "Desde 2021 los pagos en efectivo en los que interviene una empresa o un profesional están limitados a 1.000 euros. Las estimaciones sitúan la economía sumergida entre el 10 % y el 20 % del PIB, según el método. Los defensores del límite sostienen que dificulta cobrar sin factura y facilita perseguir el fraude; sus críticos defienden la privacidad y a quienes dependen del efectivo, como muchas personas mayores, y dudan de su eficacia.",
-  pos: "2 3~ 5 1~ 1~ 5~ 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0" },
+  pos: "2 2~ 5 1~ 1~ 5~ 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0" },
 { id: "A08", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
   short: "Frenar las subidas del salario mínimo",
@@ -242,7 +242,7 @@ export const QUESTIONS = [
   short: "Votación obligatoria de las iniciativas populares",
   ctx: "Con 500.000 firmas la ciudadanía puede presentar una iniciativa legislativa popular, aunque no sobre impuestos ni leyes orgánicas. Muchas no llegan a debatirse a fondo o quedan bloqueadas años en el Congreso. Obligar a votarlas en plazo reforzaría la participación directa; sus críticos temen que la usen sobre todo grupos muy organizados y prefieren preservar el margen de la democracia representativa.",
   ley: "Constitución, art. 87.3",
-  pos: "3~ 2~ 3~ 5~ 5 5~ 4~ 4~ 4~ 3~ 2~ 4~ 2~ 0 4~ 0 4~ 4~ 4~ 4~ 0 0 4~ 0 0 0 0" },
+  pos: "3~ 3~ 3~ 5~ 5 5~ 4~ 4~ 4~ 3~ 2~ 4~ 2~ 0 4~ 0 4~ 4~ 4~ 4~ 0 0 4~ 0 0 0 0" },
 { id: "D07", area: "ins", prio: 2, type: "likert", dim: "soc", dir: -1, lr: -1,
   text: "España debería celebrar un referéndum para elegir entre monarquía y república.",
   short: "Referéndum entre monarquía y república",
@@ -478,7 +478,7 @@ export const QUESTIONS = [
   text: "Debería ser más fácil crear universidades privadas.",
   short: "Facilitar nuevas universidades privadas",
   ctx: "En España ya hay casi tantas universidades privadas como públicas, aunque estudian en ellas muchos menos alumnos. En 2025 el Gobierno endureció los requisitos para crearlas y mantenerlas: investigación, profesorado doctor y un número mínimo de estudiantes. Sus defensores ven en las privadas más oferta y libertad de enseñanza; sus críticos temen centros con poca investigación y títulos de baja calidad.",
-  pos: "1 4 5~ 1~ 1~ 5~ 0 4~ 2~ 4~ 3~ 2~ 5~ 0 2~ 0 0 0 2~ 0 0 0 2~ 0 0 0 0" },
+  pos: "1 5 5~ 1~ 1~ 5~ 0 4~ 2~ 4~ 3~ 2~ 5~ 0 2~ 0 0 0 2~ 0 0 0 2~ 0 0 0 0" },
 { id: "I04", area: "edu", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Los resultados de cada colegio en las evaluaciones externas deberían hacerse públicos.",
   short: "Publicar los resultados de cada colegio",
@@ -687,7 +687,7 @@ export const NOTES = {
     pp: "En el Congreso votó contra la «prioridad nacional» que propone Vox, pero sus pactos de gobierno de 2026 con Vox en Extremadura y Aragón dan prioridad en vivienda y ayudas según los años de empadronamiento."
   },
   F04: {
-    pp: "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, con prioridad cultural."
+    pp: "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
   },
   F06: {
     psoe: "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF."
@@ -710,7 +710,7 @@ export const NOTES = {
     junts: "Votó en contra de revertir la subida del gasto militar, pero no se ha pronunciado sobre el objetivo del 3,5 %."
   },
   H05: {
-    pp: "Impulsó proposiciones que critican el giro de Sánchez sobre el Sáhara y apoyó otra a favor del referéndum."
+    pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
   },
   H07: {
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
@@ -719,13 +719,10 @@ export const NOTES = {
     psoe: "Sánchez defiende una relación económica más estrecha con China, aunque insiste en corregir el desequilibrio comercial."
   },
   H09: {
-    pp: "El PPE respaldó los centros fuera de la UE, pero Feijóo evitó apoyarlos en público (octubre de 2024)."
+    pp: "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
   },
   I01: {
     psoe: "Su programa de 2023 no propone recortar los conciertos: plantea actualizar su financiación a cambio de que no segreguen al alumnado."
-  },
-  I03: {
-    pp: "Rechaza el decreto que endurece los requisitos de las universidades privadas, sobre todo por invadir competencias."
   },
   I05: {
     pp: "Su programa nacional pide el castellano y la cooficial como lenguas vehiculares «en equilibrio»; algunos gobiernos autonómicos del PP ensayan la libre elección de lengua."
@@ -753,10 +750,10 @@ export const NOTES = {
     pp: "Sus eurodiputados han votado a favor de seguir adelante con el acuerdo y de sus salvaguardas agrícolas, mientras algunos presidentes autonómicos del PP lo rechazan."
   },
   K06: {
-    psoe: "Su Gobierno logró en la UE mantener 143 días de pesca en el Mediterráneo frente a los 9,7 propuestos por la Comisión."
+    psoe: "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión."
   },
   K08: {
-    psoe: "Su programa de 2023 presume de invertir en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
   },
   L01: {
@@ -863,7 +860,7 @@ export const SOURCES = {
   },
   B09: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Una nueva generación de propietarios» (22/10/2026)", "programa", "2026-10-22"]
+    pp: ["https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf", "PP, argumentario «Una nueva generación de propietarios» (octubre de 2026)", "programa", "2026-10"]
   },
   C01: {
     psoe: ["https://maldita.es/malditahemeroteca/20240731/ceder-tributos-cataluna-psoe/", "Maldita, julio de 2024", "declaracion", "2024-07"],
@@ -945,7 +942,7 @@ export const SOURCES = {
     pp: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025", "parlamento", "2025-11-18"]
   },
   E05: {
-    psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "gobierno", "2023-07-18"]
+    psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "declaracion", "2023-07-18"]
   },
   E06: {
     psoe: ["https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html", "Ara, pacto PSOE-Sumar para reformar el Código Penal, 15/06/2026", "prensa", "2026-06-15"],
@@ -1094,8 +1091,7 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
   },
   I03: {
-    psoe: ["https://www.boe.es/eli/es/rd/2025/10/07/905", "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)", "gobierno", "2025-10-07"],
-    pp: ["https://www.eldiario.es/sociedad/pp-rechaza-decreto-anti-chiringuitos-universitarios-apoyan-rectores-sindicatos-estudiantes_1_12295535.html", "elDiario.es, el PP rechaza el decreto que endurece la creación de universidades, 13/05/2025", "declaracion", "2025-05-13"]
+    psoe: ["https://www.boe.es/eli/es/rd/2025/10/07/905", "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)", "gobierno", "2025-10-07"]
   },
   I04: {
     psoe: ["https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-17264", "Ley Orgánica 3/2020 (LOMLOE), 29 de diciembre de 2020", "gobierno", "2020-12-29"]
@@ -1192,7 +1188,7 @@ export const SOURCES = {
   },
   L04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    pp: ["https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html", "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023", "declaracion", "2023-03-29"]
+    pp: ["https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html", "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023", "prensa", "2023-03-29"]
   },
   L05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1237,11 +1233,11 @@ export const JUSTIF = {
   },
   A06: {
     psoe: "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
-    pp: "Propone eliminar los umbrales regulatorios por tamaño para que las obligaciones de 50 empleados pasen a 250."
+    pp: "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250."
   },
   A07: {
     psoe: "Su Gobierno impulsó la ley que rebajó el límite de pagos en efectivo de 2.500 a 1.000 euros contra el fraude fiscal.",
-    pp: "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo a 2.500 euros y no consta que proponga suprimir el límite."
+    pp: "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite."
   },
   A08: {
     psoe: "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
@@ -1282,7 +1278,7 @@ export const JUSTIF = {
   },
   B09: {
     psoe: "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
-    pp: "Promete avales públicos de hasta el 100% para que los jóvenes compren vivienda."
+    pp: "Promete avales públicos de hasta el 100 % para que los jóvenes compren vivienda."
   },
   C02: {
     psoe: "Su Gobierno propuso en 2026 un modelo que da más recursos a las comunidades por debajo de la media por habitante."
@@ -1332,7 +1328,7 @@ export const JUSTIF = {
   },
   D07: {
     psoe: "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    pp: "Feijóo se declara absoluto defensor de la monarquía parlamentaria como gran pacto de la Transición."
+    pp: "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición."
   },
   D08: {
     pp: "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia."
@@ -1380,7 +1376,7 @@ export const JUSTIF = {
   },
   F04: {
     psoe: "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
-    pp: "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, con prioridad cultural."
+    pp: "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
   },
   F05: {
     psoe: "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
@@ -1442,21 +1438,21 @@ export const JUSTIF = {
   },
   H03: {
     psoe: "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
-    pp: "Estimación: no consta postura del PP sobre mantener o suprimir la unanimidad en la UE."
+    pp: "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad."
   },
   H04: {
     psoe: "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025."
   },
   H05: {
     psoe: "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
-    pp: "Impulsó proposiciones que critican el giro de Sánchez sobre el Sáhara y apoyó otra a favor del referéndum."
+    pp: "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
   },
   H06: {
     psoe: "Su programa de 2023 se compromete a seguir trabajando dentro de la OTAN por la paz y la seguridad.",
     pp: "Considera indispensable el vínculo transatlántico y defiende cumplir los compromisos de inversión en la OTAN."
   },
   H07: {
-    psoe: "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7% de la RNB en 2030.",
+    psoe: "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
   },
   H08: {
@@ -1465,15 +1461,14 @@ export const JUSTIF = {
   },
   H09: {
     psoe: "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
-    pp: "Feijóo avaló la declaración del PPE sobre centros fuera de la UE, pero evitó respaldarlos en público."
+    pp: "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
   },
   I02: {
     psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
     pp: "Estimación: el programa de 2023 apuesta por ampliar las becas universitarias, no por la gratuidad general de la matrícula."
   },
   I03: {
-    psoe: "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
-    pp: "Rechaza el decreto que endurece los requisitos de las universidades privadas, sobre todo por invadir competencias."
+    psoe: "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad."
   },
   I04: {
     psoe: "La LOMLOE de su Gobierno prohíbe usar los resultados de las evaluaciones para clasificar centros."
@@ -1529,7 +1524,7 @@ export const JUSTIF = {
     psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas."
   },
   K06: {
-    psoe: "Su Gobierno logró en la UE mantener 143 días de pesca en el Mediterráneo frente a los 9,7 propuestos por la Comisión.",
+    psoe: "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
     pp: "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE."
   },
   K07: {
@@ -1537,7 +1532,7 @@ export const JUSTIF = {
     pp: "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural."
   },
   K08: {
-    psoe: "Su programa de 2023 presume de invertir en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
   },
   L02: {
@@ -1565,7 +1560,7 @@ export const JUSTIF = {
     pp: "Propuso por enmienda prohibir las redes sociales a menores de 16 años, salvo de 14 a 16 con permiso paterno."
   },
   L08: {
-    psoe: "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40% de cada sexo en los consejos de las cotizadas.",
+    psoe: "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
     pp: "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí."
   },
   L09: {
