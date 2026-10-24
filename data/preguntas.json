@@ -2866,7 +2866,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 2,
+    "pp": 1,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -2898,6 +2898,9 @@
     "cha",
     "mes"
    ],
+   "notes": {
+    "pp": "Su programa de 2023 promete cumplir el Pacto de Estado contra la violencia de género «sin pasos atrás»; algunos acuerdos autonómicos con Vox hablaron de «violencia intrafamiliar», pero no son la línea nacional."
+   },
    "src": {
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
@@ -4894,7 +4897,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 5,
+    "pp": 4,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -4914,7 +4917,21 @@
    "est": [
     "salf",
     "cha"
-   ]
+   ],
+   "notes": {
+    "pp": "Su programa nacional pide el castellano y la cooficial como lenguas vehiculares «en equilibrio»; algunos gobiernos autonómicos del PP ensayan la libre elección de lengua."
+   },
+   "src": {
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "pp": "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua."
+   }
   },
   {
    "id": "I06",
@@ -6254,7 +6271,7 @@
    "lr": -1,
    "pos": {
     "psoe": 4,
-    "pp": 2,
+    "pp": 1,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -6288,6 +6305,9 @@
     "mes",
     "adel"
    ],
+   "notes": {
+    "pp": "Recurrió ante el Tribunal Constitucional los artículos de la Ley trans que permiten el cambio registral desde los 16 años sin informes médicos."
+   },
    "src": {
     "psoe": [
      "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
@@ -6560,7 +6580,7 @@
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 2,
+    "psoe": 1,
     "pp": 5,
     "vox": 5,
     "fa": 1,
@@ -6597,7 +6617,7 @@
     "adel"
    ],
    "notes": {
-    "psoe": "Votó en contra de la ley de Vox, aunque se mostró dispuesto a negociar la prohibición que propone Junts."
+    "psoe": "Votó contra las dos proposiciones de 2026 para prohibir el velo integral (Vox en febrero y Junts en abril) por considerarlas discriminatorias."
    },
    "src": {
     "psoe": [
