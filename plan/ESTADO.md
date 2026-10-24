@@ -9,7 +9,7 @@
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
 6. ~~T10~~ **Hecho y publicado el 24 oct.**
-7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Siguiente: T6–T8 y T11 según el calendario. **Hay posturas pendientes de decisión del titular** (ver la entrada de T5).
+7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Siguiente: T6–T8 y T11 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
 
 
@@ -45,20 +45,12 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
   - **PSOE:** 42 de 107 posturas con fuente; 29 estimadas.
   - **PP:** 34 de 107 posturas con fuente; 43 estimadas.
   - Se descartaron por indirectas o antiguas: PSOE C03, E02, I05, I07 y J02; PP A05, C04, G04, H02, H09 y J02.
-- **Postura cambiada (evidencia literal, nota en `NOTES`):** PSOE J08 (estándares sanitarios comunes), 4 estimada → 5 documentada: su programa de 2023 promete tiempos máximos de espera por ley en todo el SNS.
+- **Postura cambiada en la revisión (evidencia literal, nota en `NOTES`):** PSOE J08 (estándares sanitarios comunes), 4 estimada → 5 documentada: su programa de 2023 promete tiempos máximos de espera por ley en todo el SNS.
 - **Posturas discutidas del PSOE (pendientes desde T9):** quedan respaldadas. H01 trata del 3,5 % de la OTAN, que Sánchez rechazó por carta (19/06/2025). E06: pacto PSOE-Sumar de junio de 2026 para derogar las injurias a la Corona. Los valores extremos en «Europa y mundo» e «Inmigración» descansan ahora en posturas documentadas (H01, F02, F03, H09).
-- **Pendiente de decisión del titular (regla 8; no se ha cambiado nada):**
-  - PP B05 (pisos turísticos) 3 → 4: limitan Madrid y Andalucía, pero votó contra la moratoria estatal.
-  - PP E08 (ley intrafamiliar) 2 → 1: su programa promete cumplir el Pacto de Estado «sin pasos atrás».
-  - PP F02 (expulsar a irregulares) 2 → 3: el contrato de 2026 prohíbe las regularizaciones colectivas.
-  - PP I02 (universidad gratuita) 2 → 3: Galicia y Castilla y León la dan solo a quien aprueba.
-  - PP I05 (elegir el castellano) 5 → 4: su programa habla de «equilibrio» entre lenguas vehiculares.
-  - PP J08 (estándares sanitarios) 2 → 3: su programa homogeneiza algunos estándares.
-  - PP K05 (macrogranjas) 1 → 2: fuente de 2022, ambigua.
-  - PP L03 (cambio registral a los 16) 2 → 1: recurrió exactamente esto ante el TC.
-  - PP G04 (trasvases) 4 → 3: el PP está dividido por territorios.
-  - PSOE L09 (burka) 2 → 1: votó contra las dos leyes de prohibición de 2026.
-- **Estimadas sin fuente (regla 12; justificación de la estimación en `JUSTIF`):** PSOE D01, E02, F07, J02, J03; PP A05, B05, G04, H09, I02, I07, J02, J08. PSOE D01 y PP I07 pasan a «estimadas» porque no hay ninguna fuente reciente (sin cambiar su valor). **Documentadas sin enlace propio:** PSOE C03, I05, I07; PP C04, D07, F02, H02, I05, K05.
+- **Posturas discutibles: decididas el 24 oct.** El titular delegó la decisión con un criterio: lo más coherente y la fuente más fiable. Mandan las fuentes nacionales y oficiales del partido (programa, votaciones en el Congreso, recursos ante el TC) sobre las autonómicas o antiguas. Cada cambio lleva su nota en `NOTES`.
+  - **Cambiadas:** PP E08 (ley intrafamiliar) 2 → 1, por su programa («sin pasos atrás» en el Pacto de Estado). PP I05 (elegir el castellano) 5 → 4, porque su programa pide lenguas vehiculares «en equilibrio»; fuente añadida. PP L03 (cambio registral a los 16) 2 → 1, porque recurrió exactamente esos artículos ante el TC. PSOE L09 (burka) 2 → 1, porque votó contra las dos leyes de prohibición de 2026.
+  - **Sin cambios:** PP B05 (3), porque la evidencia es autonómica y en el Congreso votó contra la moratoria estatal. PP F02 (2), por el «ni regularizarlos a todos ni echarlos a todos» de Feijóo. PP I02 (2) y PP J08 (2), porque la evidencia es autonómica o no trata la pregunta. PP K05 (1), porque la única fuente es de 2022 y es ambigua. PP G04 (4, estimada), porque el partido está dividido por territorios y su programa nacional no habla de trasvases.
+- **Estimadas sin fuente (regla 12; justificación de la estimación en `JUSTIF`):** PSOE D01, E02, F07, J02, J03; PP A05, B05, G04, H09, I02, I07, J02, J08. PSOE D01 y PP I07 pasan a «estimadas» porque no hay ninguna fuente reciente (sin cambiar su valor). **Documentadas sin enlace propio:** PSOE C03, I05, I07; PP C04, D07, F02, H02, K05.
 - **Revisión independiente:** corregidas una cifra y una cita que no estaban en sus fuentes (PSOE F02, PP L03), tipos de fuente iguales para todos (una votación en las Cortes es «parlamento» aunque se cite por la prensa), términos cargados y redacción de varias justificaciones.
 - **Justificaciones:** nuevo `JUSTIF` en `src/preguntas.src.mjs` (de 20 a 200 caracteres, terminadas en punto, validadas en `build.mjs`), publicado como `why` en `data/preguntas.json`. 56 ya escritas; T8 las mostrará.
 - **Fecha de los datos:** `UPDATED` pasa al 24 de octubre de 2026.

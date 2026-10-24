@@ -309,7 +309,7 @@ export const QUESTIONS = [
   short: "Sustituir la Ley de Violencia de Género",
   ctx: "La Ley Integral de 2004 trata la violencia de hombres contra sus parejas o exparejas mujeres como un fenómeno específico, con juzgados especializados, medidas de protección y penas agravadas; el Constitucional la avaló en 2008. Quienes proponen sustituirla sostienen que vulnera la igualdad ante la ley; quienes la defienden, que la violencia machista tiene causas propias y que la ley ha mejorado la protección de las víctimas.",
   ley: "Ley Orgánica 1/2004, de violencia de género",
-  pos: "1 2 5 1 1 5~ 1~ 2~ 1 1 1 1 2~ 1 1 1~ 1 1~ 1 1~ 0 1~ 1 0 0 0 0" },
+  pos: "1 1 5 1 1 5~ 1~ 2~ 1 1 1 1 2~ 1 1 1~ 1 1~ 1 1~ 0 1~ 1 0 0 0 0" },
 { id: "E09", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
   short: "Legalizar el cannabis",
@@ -488,7 +488,7 @@ export const QUESTIONS = [
   text: "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
   short: "Elegir el castellano como lengua de estudio",
   ctx: "En Cataluña la inmersión hace del catalán la lengua vehicular, y los tribunales fijaron un mínimo del 25 % de clases en castellano; en otras comunidades conviven modelos con distintos porcentajes. Quienes defienden la elección invocan los derechos de las familias castellanohablantes; quienes defienden la inmersión, garantizar que todo el alumnado domine ambas lenguas y la cohesión social.",
-  pos: "2 5 5 1 1 5~ 0 5 1 1 1 1 5 1 1 0 0 0 1 1~ 0 1 0 0 0 0 0" },
+  pos: "2 4 5 1 1 5~ 0 5 1 1 1 1 5 1 1 0 0 0 1 1~ 0 1 0 0 0 0 0" },
 { id: "I06", area: "edu", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Las becas deberían exigir mejores notas que el simple aprobado.",
   short: "Becas con más exigencia académica",
@@ -614,7 +614,7 @@ export const QUESTIONS = [
   short: "Cambio de sexo registral sin informes",
   ctx: "La «ley trans» de 2023 permite desde los 16 años cambiar el sexo registral por simple declaración, ratificada a los tres meses; entre los 14 y los 16 años se necesita la asistencia de los padres, y entre los 12 y los 14, autorización judicial. Sus defensores la ven como reconocimiento de la identidad de las personas trans; sus críticos, incluida parte del feminismo, temen fraudes, efectos en el deporte o en espacios de mujeres y decisiones precipitadas.",
   ley: "Ley 4/2023, para la igualdad de las personas trans",
-  pos: "4 2 1 5 5 1~ 0 3~ 5 4~ 4~ 5 1~ 4~ 5 3~ 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 1~ 0 3~ 5 4~ 4~ 5 1~ 4~ 5 3~ 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L04", area: "der", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "La gestación subrogada debería legalizarse con garantías para la mujer gestante.",
   short: "Legalizar la gestación subrogada",
@@ -646,7 +646,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
   ctx: "Francia, Bélgica o Dinamarca prohíben cubrirse el rostro en la calle. En España no existe una prohibición general, y el Tribunal Supremo anuló en 2013 una ordenanza municipal que lo vetaba por invadir competencias del Estado. Sus defensores invocan la seguridad y la igualdad de las mujeres; sus críticos, la libertad religiosa y el riesgo de excluir aún más a las pocas mujeres que lo llevan.",
-  pos: "2 5 5 1 1 5~ 0 4~ 2~ 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
+  pos: "1 5 5 1 1 5~ 0 4~ 2~ 4~ 2~ 1~ 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
 ];
 
 // Familias de preguntas que miden casi la misma opinión. En la coincidencia con los partidos, si
@@ -674,6 +674,9 @@ export const NOTES = {
   E01: {
     erc: "Se abstuvo en la ley contra la multirreincidencia (febrero de 2026) y rechaza endurecer las penas «a golpe de Código Penal»."
   },
+  E08: {
+    pp: "Su programa de 2023 promete cumplir el Pacto de Estado contra la violencia de género «sin pasos atrás»; algunos acuerdos autonómicos con Vox hablaron de «violencia intrafamiliar», pero no son la línea nacional."
+  },
   F03: {
     pp: "En el Congreso votó contra la «prioridad nacional» que propone Vox, pero sus pactos de gobierno de 2026 con Vox en Extremadura y Aragón dan prioridad en vivienda y ayudas según los años de empadronamiento."
   },
@@ -686,6 +689,9 @@ export const NOTES = {
   },
   I01: {
     psoe: "Su programa de 2023 no propone recortar los conciertos: plantea actualizar su financiación a cambio de que no segreguen al alumnado."
+  },
+  I05: {
+    pp: "Su programa nacional pide el castellano y la cooficial como lenguas vehiculares «en equilibrio»; algunos gobiernos autonómicos del PP ensayan la libre elección de lengua."
   },
   J01: {
     vox: "Defiende abiertamente la colaboración público-privada en la sanidad pública; su programa de 2023 prometía reforzar los conciertos con la privada.",
@@ -701,8 +707,11 @@ export const NOTES = {
     erc: "Defiende el derecho al aborto y permitió tramitar la reforma constitucional, pero comparte objeciones jurídicas y no se ha comprometido a votarla.",
     junts: "Permitió tramitar la reforma constitucional, pero la calificó de «espectáculo» y no se ha comprometido a apoyarla."
   },
+  L03: {
+    pp: "Recurrió ante el Tribunal Constitucional los artículos de la Ley trans que permiten el cambio registral desde los 16 años sin informes médicos."
+  },
   L09: {
-    psoe: "Votó en contra de la ley de Vox, aunque se mostró dispuesto a negociar la prohibición que propone Junts."
+    psoe: "Votó contra las dos proposiciones de 2026 para prohibir el velo integral (Vox en febrero y Junts en abril) por considerarlas discriminatorias."
   }
 };
 
@@ -886,6 +895,9 @@ export const SOURCES = {
   I02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"]
   },
+  I05: {
+    pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51", "Programa electoral del PP de 2023", "programa", "2023-07-04"]
+  },
   J01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     pp: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.html", "Redacción Médica, posición del PP ante la Ley de Gestión Pública del SNS, 18/03/2026", "declaracion", "2026-03-18"],
@@ -1043,6 +1055,9 @@ export const JUSTIF = {
   },
   I02: {
     psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes."
+  },
+  I05: {
+    pp: "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua."
   },
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado."
