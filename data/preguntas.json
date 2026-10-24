@@ -424,7 +424,25 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=24",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 defiende la consolidación fiscal, pero con más ingresos y reglas europeas compatibles con la inversión.",
+    "pp": "Rechaza el aumento de la deuda pública y promete medidas para recortar el gasto superfluo."
+   }
   },
   {
    "id": "A05",
@@ -526,7 +544,6 @@
    },
    "est": [
     "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -541,7 +558,19 @@
     "ccpc",
     "upc",
     "comp"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
+    "pp": "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250."
+   }
   },
   {
    "id": "A07",
@@ -556,7 +585,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 4,
+    "pp": 2,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -571,7 +600,6 @@
     "comp": 2
    },
    "est": [
-    "psoe",
     "pp",
     "fa",
     "pod",
@@ -584,7 +612,19 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11473",
+     "Ley 11/2021 de medidas de prevención y lucha contra el fraude fiscal (9 de julio de 2021)",
+     "gobierno",
+     "2021-07-09"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno impulsó la ley que rebajó el límite de pagos en efectivo de 2.500 a 1.000 euros contra el fraude fiscal.",
+    "pp": "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite."
+   }
   },
   {
    "id": "A08",
@@ -621,7 +661,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "vox",
     "salf",
     "d21",
@@ -637,7 +676,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
+    "pp": "Pone el foco en subir el salario medio y la productividad, sin rechazar las subidas del salario mínimo."
+   }
   },
   {
    "id": "A09",
@@ -652,7 +709,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 3,
+    "pp": 4,
     "vox": 3,
     "fa": 1,
     "pod": 2,
@@ -675,7 +732,6 @@
     "adel": 2
    },
    "est": [
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -696,7 +752,28 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "pp": "Su ponencia política de 2025 pide reducir el tamaño del sector empresarial público, sin citar empresas concretas."
+   },
+   "src": {
+    "psoe": [
+     "https://www.hacienda.gob.es/Documentacion/Publico/GabineteMinistro/Notas%20Prensa/2023/CONSEJO-DE-MINISTROS/19-12-23-NP-CM-SEPI-Telefonica.pdf",
+     "Acuerdo del Consejo de Ministros sobre la compra de acciones de Telefónica (19 de diciembre de 2023)",
+     "gobierno",
+     "2023-12-19"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno ordenó a la SEPI comprar hasta el 10 % de Telefónica por considerarla una empresa estratégica.",
+    "pp": "Propone reducir el tamaño del sector empresarial público y critica la influencia del Gobierno en empresas del IBEX 35."
+   }
   },
   {
    "id": "A10",
@@ -746,7 +823,18 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://es.ara.cat/economia/cruzada-montero-dumping-fiscal-madrid_1_5613605.html",
+     "Declaraciones de María Jesús Montero sobre la armonización fiscal (9 de enero de 2026)",
+     "declaracion",
+     "2026-01-09"
+    ]
+   },
+   "why": {
+    "psoe": "La dirección del PSOE plantea fijar un mínimo en sucesiones para frenar las bonificaciones casi totales de algunas comunidades."
+   }
   },
   {
    "id": "B01",
@@ -1039,7 +1127,16 @@
      "Legal Today, febrero de 2026",
      "gobierno",
      "2026-02"
+    ],
+    "pp": [
+     "https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/",
+     "Forbes España, votación del decreto del escudo social, 26/02/2026",
+     "parlamento",
+     "2026-02-26"
     ]
+   },
+   "why": {
+    "pp": "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal."
    }
   },
   {
@@ -1154,7 +1251,25 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+     "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)",
+     "gobierno",
+     "2023-05-24"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=21",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
+    "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler."
+   }
   },
   {
    "id": "B07",
@@ -1205,7 +1320,25 @@
     "comp",
     "cha",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://theobjective.com/espana/politica/2025-05-23/psoe-impuesto-extranjeros-vivienda/",
+     "Proposición de ley del Grupo Socialista sobre alquiler asequible (23 de mayo de 2025)",
+     "parlamento",
+     "2025-05-23"
+    ],
+    "pp": [
+     "https://www.bolsamania.com/noticias/empresas/economia-el-pp-cree-que-las-medidas-en-vivienda-anunciadas-por-sanchez-son-intervencionistas-y-generaran-menos-oferta--18524064.html",
+     "Bolsamanía (Europa Press), declaraciones de Borja Sémper, 13/01/2025",
+     "declaracion",
+     "2025-01-13"
+    ]
+   },
+   "why": {
+    "psoe": "El Grupo Socialista registró en 2025 un impuesto de hasta el 100 % sobre compras de vivienda de no residentes fuera de la UE.",
+    "pp": "El portavoz del PP calificó de intervencionista gravar la compra de vivienda por no residentes de fuera de la UE."
+   }
   },
   {
    "id": "B08",
@@ -1257,7 +1390,25 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.vozpopuli.com/economia/juan-bravo-titular-de-vivienda-del-pp-planeamos-un-fondo-publico-privado-de-15000-millones.html",
+     "Vozpópuli, entrevista a Juan Bravo, 02/11/2025",
+     "declaracion",
+     "2025-11-02"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
+    "pp": "Prefiere un fondo público-privado y cerraría la empresa estatal de vivienda en lugar de construir directamente."
+   }
   },
   {
    "id": "B09",
@@ -1313,7 +1464,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
+     "PP, argumentario «Una nueva generación de propietarios» (octubre de 2026)",
+     "programa",
+     "2026-10"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
+    "pp": "Promete avales públicos de hasta el 100 % para que los jóvenes compren vivienda."
+   }
   },
   {
    "id": "C01",
@@ -1449,7 +1618,6 @@
     "soria": 2
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -1469,7 +1637,18 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2026/140126-montero-financiacion-autonomica.aspx",
+     "Propuesta del Gobierno de nuevo modelo de financiación autonómica (14 de enero de 2026)",
+     "gobierno",
+     "2026-01-14"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno propuso en 2026 un modelo que da más recursos a las comunidades por debajo de la media por habitante."
+   }
   },
   {
    "id": "C03",
@@ -1514,6 +1693,12 @@
     "upl"
    ],
    "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=231",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
     "pp": [
      "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50",
      "Programa electoral del PP de 2023",
@@ -1522,6 +1707,7 @@
     ]
    },
    "why": {
+    "psoe": "Su programa de 2023 propone llevar a la Constitución la descentralización ya alcanzada, no devolver competencias al Estado.",
     "pp": "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades."
    }
   },
@@ -1724,7 +1910,18 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "pp": "Propone potenciar las diputaciones provinciales como herramienta al servicio de los pequeños municipios."
+   }
   },
   {
    "id": "C07",
@@ -1757,7 +1954,6 @@
     "pav": 1
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -1771,7 +1967,18 @@
     "cha",
     "upl",
     "pav"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 propone un estatuto propio para los municipios pequeños y reforzar su autonomía, no fusionarlos."
+   }
   },
   {
    "id": "C08",
@@ -1787,7 +1994,7 @@
    "lr": -1,
    "pos": {
     "psoe": 4,
-    "pp": 2,
+    "pp": 4,
     "vox": 1,
     "fa": 4,
     "pod": 3,
@@ -1813,7 +2020,6 @@
     "pav": 2
    },
    "est": [
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -1837,7 +2043,28 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "notes": {
+    "pp": "Su ponencia política de 2025 pide convertir el Senado en una «verdadera Cámara de representación territorial»."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=15",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
+    "pp": "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos."
+   }
   },
   {
    "id": "C09",
@@ -1882,7 +2109,18 @@
     "comp",
     "existe",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.ondavasca.com/el-congreso-apoya-tramitar-el-concierto-y-el-cupo-sin-cambios/",
+     "Tramitación en lectura única del Concierto, el Convenio y el Cupo (21 de febrero de 2023)",
+     "parlamento",
+     "2023-02-21"
+    ]
+   },
+   "why": {
+    "psoe": "El PSOE apoyó en 2023 tramitar sin cambios las reformas del Concierto vasco, el Convenio navarro y el Cupo."
+   }
   },
   {
    "id": "D01",
@@ -2009,7 +2247,10 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "why": {
+    "pp": "Estimación: el PP no ha propuesto desbloquear las listas; sus propuestas electorales se centran en premiar a la lista más votada."
+   }
   },
   {
    "id": "D03",
@@ -2207,7 +2448,7 @@
    "lr": 0,
    "pos": {
     "psoe": 3,
-    "pp": 2,
+    "pp": 3,
     "vox": 3,
     "fa": 5,
     "pod": 5,
@@ -2245,7 +2486,11 @@
     "comp",
     "cha",
     "adel"
-   ]
+   ],
+   "why": {
+    "psoe": "Estimación: el PSOE no ha propuesto fijar un plazo obligatorio para votar las ILP; en 2016 solo planteó rebajar las firmas exigidas.",
+    "pp": "Estimación: no consta postura del PP sobre plazos obligatorios para votar las iniciativas legislativas populares."
+   }
   },
   {
    "id": "D07",
@@ -2298,11 +2543,17 @@
      "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026",
      "prensa",
      "2026-08-13"
+    ],
+    "pp": [
+     "https://www.moncloa.com/2022/04/06/feijoo-defiende-monarquia-1351763/",
+     "Moncloa.com, declaraciones de Feijóo, 06/04/2022",
+     "declaracion",
+     "2022-04-06"
     ]
    },
    "why": {
     "psoe": "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    "pp": "Defiende la monarquía parlamentaria de 1978 y votó en 2014 contra los referendos sobre la forma de Estado."
+    "pp": "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición."
    }
   },
   {
@@ -2336,7 +2587,6 @@
    },
    "est": [
     "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -2350,7 +2600,18 @@
     "bng",
     "ccpc",
     "comp"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "pp": "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia."
+   }
   },
   {
    "id": "D09",
@@ -2404,7 +2665,25 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.menorca.info/actualidad/elecciones-23j/2023/09/26/2019575/debate-investidura-oscar-puente-representa-psoe.html",
+     "Intervención de Óscar Puente en el debate de investidura (26 de septiembre de 2023)",
+     "declaracion",
+     "2023-09-26"
+    ],
+    "pp": [
+     "https://www.elespanol.com/espana/politica/20260629/feijoo-responde-ingenieria-fiscal-sanchez-propone-dar-estabilidad-plus-escanos-votado/1003744304214_0.html",
+     "El Español, propuesta de Feijóo, 29/06/2026",
+     "declaracion",
+     "2026-06-29"
+    ]
+   },
+   "why": {
+    "psoe": "El PSOE rechaza que la lista más votada tenga derecho a gobernar y defiende que gobierna quien suma mayoría.",
+    "pp": "Feijóo propone dar un plus de escaños al partido más votado para facilitar que gobierne."
+   }
   },
   {
    "id": "E01",
@@ -2665,7 +2944,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
@@ -2679,7 +2957,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF",
+     "Debate de la proposición de Vox para rebajar la edad penal (18 de noviembre de 2025)",
+     "parlamento",
+     "2025-11-18"
+    ],
+    "pp": [
+     "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF",
+     "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025",
+     "parlamento",
+     "2025-11-18"
+    ]
+   },
+   "why": {
+    "psoe": "El PSOE rechazó en 2025 la proposición de Vox para rebajar la edad penal de 14 a 12 años.",
+    "pp": "Se abstuvo ante la ley que rebajaba la edad penal a 12 años y pidió escuchar a expertos antes de reformar."
+   }
   },
   {
    "id": "E05",
@@ -2715,7 +3011,6 @@
     "adel": 5
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -2734,7 +3029,19 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/",
+     "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)",
+     "declaracion",
+     "2023-07-18"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno defendió en la UE limitar el reconocimiento facial en tiempo real, pero con excepciones de seguridad.",
+    "pp": "Estimación: el programa de 2023 apuesta por la videovigilancia y el patrullaje inteligente, sin citar el reconocimiento facial."
+   }
   },
   {
    "id": "E06",
@@ -2790,10 +3097,17 @@
      "Ara, pacto PSOE-Sumar para reformar el Código Penal, 15/06/2026",
      "prensa",
      "2026-06-15"
+    ],
+    "pp": [
+     "https://www.eldebate.com/espana/20260714/pp-vox-buscan-frenar-intento-socios-sanchez-despenalizar-ofensas-sentimientos-religiosos-injurias-corona_439144.html",
+     "El Debate, enmiendas de totalidad del PP a la ley de Sumar sobre injurias a la Corona, 14/07/2026",
+     "parlamento",
+     "2026-07-14"
     ]
    },
    "why": {
-    "psoe": "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona."
+    "psoe": "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona.",
+    "pp": "Presentó una enmienda de totalidad contra la ley de Sumar que suprimía las injurias a la Corona."
    }
   },
   {
@@ -2850,7 +3164,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://orain.eus/es/politica/2025/01/10/el-psoe-impulsa-en-congreso-ley-para-limitar-acciones-judiciales-abusivas/",
+     "Proposición de ley del PSOE sobre la acusación popular (10 de enero de 2025)",
+     "parlamento",
+     "2025-01-10"
+    ],
+    "pp": [
+     "https://www.deia.eus/politica/2025/01/10/pp-dice-ley-psoe-limitar-9142368.html",
+     "Deia (Europa Press), el PP sobre la ley del PSOE que limita la acusación popular, 10/01/2025",
+     "declaracion",
+     "2025-01-10"
+    ]
+   },
+   "why": {
+    "psoe": "El PSOE registró en 2025 una proposición de ley para restringir quién puede ejercer la acusación popular.",
+    "pp": "Rechaza la proposición del PSOE para limitar la acusación popular, que considera un ataque al Poder Judicial."
+   }
   },
   {
    "id": "E08",
@@ -2966,7 +3298,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.publico.es/sociedad/psoe-vota-no-ley-mas-pais-cannabis.html",
+     "Votación de la ley del cannabis de Más País (19 de octubre de 2021)",
+     "parlamento",
+     "2021-10-19"
+    ],
+    "pp": [
+     "https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/",
+     "The Objective, rechazo en el Congreso de la regulación del cannabis de ERC, 22/02/2023",
+     "parlamento",
+     "2023-02-22"
+    ]
+   },
+   "why": {
+    "psoe": "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
+    "pp": "Votó contra la toma en consideración de la ley de ERC para regular el cannabis terapéutico y recreativo."
+   }
   },
   {
    "id": "F01",
@@ -3199,7 +3549,7 @@
    "lr": -1,
    "pos": {
     "psoe": 5,
-    "pp": 3,
+    "pp": 4,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -3245,7 +3595,28 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "notes": {
+    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
+   },
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx",
+     "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)",
+     "gobierno",
+     "2024-11-19"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=18",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
+    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
+   }
   },
   {
    "id": "F05",
@@ -3296,7 +3667,25 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/eli/es/rdl/2025/03/18/2",
+     "Real Decreto-ley 2/2025 sobre menores migrantes (18 de marzo de 2025)",
+     "gobierno",
+     "2025-03-18"
+    ],
+    "pp": [
+     "https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/",
+     "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025",
+     "parlamento",
+     "2025-04-10"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
+    "pp": "Votó contra el decreto ley que fija un reparto obligatorio y permanente de menores migrantes entre comunidades."
+   }
   },
   {
    "id": "F06",
@@ -3310,7 +3699,7 @@
    "dir": -1,
    "lr": 0,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 3,
     "vox": 4,
     "fa": 5,
@@ -3331,8 +3720,6 @@
     "adel": 4
    },
    "est": [
-    "psoe",
-    "pp",
     "vox",
     "salf",
     "d21",
@@ -3348,7 +3735,28 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.menorca.info/actualidad/nacional/2024/09/27/2249715/feijoo-propone-elevar-hasta-1800-euros-deducciones-por-hijo.html",
+     "Menorca (Europa Press), Feijóo propone elevar las deducciones por hijo, 27/09/2024",
+     "declaracion",
+     "2024-09-27"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
+    "pp": "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal."
+   }
   },
   {
    "id": "F07",
@@ -3459,7 +3867,18 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=176",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios."
+   }
   },
   {
    "id": "F09",
@@ -3496,8 +3915,6 @@
     "adel": 1
    },
    "est": [
-    "psoe",
-    "pp",
     "salf",
     "d21",
     "erc",
@@ -3513,7 +3930,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4972",
+     "Real Decreto-ley 6/2022 (29 de marzo de 2022)",
+     "gobierno",
+     "2022-03-29"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=19",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
+    "pp": "Propone condicionar el Ingreso Mínimo Vital a la participación en itinerarios de inserción laboral."
+   }
   },
   {
    "id": "G01",
@@ -3629,8 +4064,8 @@
    "dir": 0,
    "lr": 0,
    "pos": {
-    "psoe": 1,
-    "pp": 3,
+    "psoe": 2,
+    "pp": 2,
     "vox": 4,
     "fa": 2,
     "pod": 3,
@@ -3657,7 +4092,6 @@
     "pav": 4
    },
    "est": [
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -3680,7 +4114,29 @@
     "jmm",
     "upl",
     "pav"
-   ]
+   ],
+   "notes": {
+    "psoe": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
+    "pp": "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=38",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
+    "pp": "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo."
+   }
   },
   {
    "id": "G03",
@@ -3820,7 +4276,8 @@
     ]
    },
    "why": {
-    "psoe": "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases."
+    "psoe": "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases.",
+    "pp": "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases."
    }
   },
   {
@@ -3875,7 +4332,25 @@
     "existe",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/",
+     "Debate de la moción de Podemos en el Congreso (13 de mayo de 2025)",
+     "parlamento",
+     "2025-05-13"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
+    "pp": "Defiende reducir el sector empresarial público y limitar el intervencionismo, contra una empresa pública de energía."
+   }
   },
   {
    "id": "G06",
@@ -3892,7 +4367,7 @@
    "lr": 0,
    "pos": {
     "psoe": 3,
-    "pp": 2,
+    "pp": 3,
     "vox": 2,
     "fa": 5,
     "pod": 5,
@@ -3915,8 +4390,6 @@
     "soria": 3
    },
    "est": [
-    "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -3936,7 +4409,28 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "notes": {
+    "pp": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=79",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=33",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
+    "pp": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno."
+   }
   },
   {
    "id": "G07",
@@ -3967,7 +4461,6 @@
     "comp": 5
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -3982,7 +4475,19 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://es.ara.cat/sociedad/vivienda/gobierno-espanol-endurecera-restricciones-zonas-inundables-nuevos-edificios-no-podran-garaje_1_5799917.html",
+     "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)",
+     "gobierno",
+     "2026-07-15"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno propone prohibir nuevas viviendas en las zonas de flujo preferente y endurecer la construcción en el resto de zonas inundables.",
+    "pp": "Estimación: no consta postura nacional del PP sobre prohibir construir en zonas inundables ya clasificadas."
+   }
   },
   {
    "id": "G08",
@@ -3996,7 +4501,7 @@
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 4,
     "vox": 5,
     "fa": 2,
@@ -4012,8 +4517,6 @@
     "pav": 4
    },
    "est": [
-    "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -4026,7 +4529,28 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su Gobierno propone impulsar pastoreo, desbroce y aprovechamiento forestal contra los incendios, compatibles con la conservación."
+   },
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Documents/2025/020925_Pacto-de-Estado-frente-a-la-emergencia-climatica.pdf#page=3",
+     "Propuesta de Pacto de Estado frente a la Emergencia Climática (2 de septiembre de 2025)",
+     "gobierno",
+     "2025-09-02"
+    ],
+    "pp": [
+     "https://www.moncloa.com/2026/07/14/feijoo-plan-nacional-incendios-3399315/",
+     "Moncloa.com, Feijóo anuncia un plan nacional de prevención de incendios, 14/07/2026",
+     "declaracion",
+     "2026-07-14"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno propone impulsar pastoreo, desbroce y aprovechamiento forestal contra los incendios, compatibles con la conservación.",
+    "pp": "Feijóo critica las leyes que dificultan el desbroce y reivindica la ganadería extensiva para prevenir incendios."
+   }
   },
   {
    "id": "G09",
@@ -4265,10 +4789,17 @@
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
      "programa",
      "2023-07-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=35",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
     ]
    },
    "why": {
-    "psoe": "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional."
+    "psoe": "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
+    "pp": "Considera que reforzar la integración europea fortalece la soberanía y no la reduce."
    }
   },
   {
@@ -4306,7 +4837,6 @@
     "adel": 4
    },
    "est": [
-    "psoe",
     "pp",
     "fa",
     "pod",
@@ -4326,7 +4856,19 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
+    "pp": "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad."
+   }
   },
   {
    "id": "H04",
@@ -4401,7 +4943,7 @@
    "lr": 0,
    "pos": {
     "psoe": 1,
-    "pp": 3,
+    "pp": 4,
     "vox": 4,
     "fa": 5,
     "pod": 5,
@@ -4423,7 +4965,6 @@
     "adel": 5
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
@@ -4431,7 +4972,28 @@
     "upn",
     "gbai",
     "mes"
-   ]
+   ],
+   "notes": {
+    "pp": "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
+   },
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf",
+     "Declaración conjunta España-Marruecos (4 de diciembre de 2025)",
+     "gobierno",
+     "2025-12-04"
+    ],
+    "pp": [
+     "https://www.elindependiente.com/espana/2025/11/20/pp-frente-polisario-canarias/",
+     "El Independiente, el PP y las proposiciones sobre el Sáhara aprobadas en el Congreso, 20/11/2025",
+     "parlamento",
+     "2025-11-20"
+    ]
+   },
+   "why": {
+    "psoe": "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
+    "pp": "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum."
+   }
   },
   {
    "id": "H06",
@@ -4483,12 +5045,28 @@
     "adel"
    ],
    "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=264",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=36",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ],
     "pod": [
      "https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html",
      "El Debate, abril de 2026",
      "parlamento",
      "2026-04"
     ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 se compromete a seguir trabajando dentro de la OTAN por la paz y la seguridad.",
+    "pp": "Considera indispensable el vínculo transatlántico y defiende cumplir los compromisos de inversión en la OTAN."
    }
   },
   {
@@ -4505,7 +5083,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 3,
+    "pp": 4,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -4527,7 +5105,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "erc",
@@ -4544,7 +5121,28 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=261",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=39",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
+    "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
+   }
   },
   {
    "id": "H08",
@@ -4558,7 +5156,7 @@
    "dir": 0,
    "lr": 0,
    "pos": {
-    "psoe": 5,
+    "psoe": 4,
     "pp": 2,
     "vox": 1,
     "fa": 3,
@@ -4573,7 +5171,6 @@
     "bng": 3
    },
    "est": [
-    "pp",
     "fa",
     "pod",
     "salf",
@@ -4584,7 +5181,28 @@
     "bildu",
     "upn",
     "bng"
-   ]
+   ],
+   "notes": {
+    "psoe": "Sánchez defiende una relación económica más estrecha con China, aunque insiste en corregir el desequilibrio comercial."
+   },
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/presidente/intervenciones/Documents/2026/260414-rdp-viaje-a-china.pdf",
+     "Rueda de prensa de Pedro Sánchez en Pekín (14 de abril de 2026)",
+     "declaracion",
+     "2026-04-14"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=38",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Sánchez defiende una relación económica más estrecha con China, aunque insiste en corregir el desequilibrio comercial.",
+    "pp": "Describe a China como socio, competidor y rival sistémico y pide actuar con la UE y los aliados de la OTAN."
+   }
   },
   {
    "id": "H09",
@@ -4599,7 +5217,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 4,
+    "pp": 3,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -4621,7 +5239,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
@@ -4630,16 +5247,26 @@
     "gbai",
     "ccpc"
    ],
+   "notes": {
+    "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
+   },
    "src": {
     "psoe": [
      "https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html",
      "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024",
      "prensa",
      "2024-10-15"
+    ],
+    "pp": [
+     "https://www.eldiario.es/politica/feijoo-evita-respaldar-centros-deportacion-refugiados-meloni-avalado-partido-popular-europeo_1_11740606.html",
+     "eldiario.es, Feijóo en la cumbre del PPE, 17/10/2024",
+     "declaracion",
+     "2024-10-17"
     ]
    },
    "why": {
-    "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos."
+    "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
+    "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
    }
   },
   {
@@ -4793,7 +5420,8 @@
     ]
    },
    "why": {
-    "psoe": "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes."
+    "psoe": "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
+    "pp": "Estimación: el programa de 2023 apuesta por ampliar las becas universitarias, no por la gratuidad general de la matrícula."
    }
   },
   {
@@ -4838,7 +5466,18 @@
     "bng",
     "comp",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/eli/es/rd/2025/10/07/905",
+     "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)",
+     "gobierno",
+     "2025-10-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad."
+   }
   },
   {
    "id": "I04",
@@ -4868,7 +5507,6 @@
     "comp": 1
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -4882,7 +5520,18 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-17264",
+     "Ley Orgánica 3/2020 (LOMLOE), 29 de diciembre de 2020",
+     "gobierno",
+     "2020-12-29"
+    ]
+   },
+   "why": {
+    "psoe": "La LOMLOE de su Gobierno prohíbe usar los resultados de las evaluaciones para clasificar centros."
+   }
   },
   {
    "id": "I05",
@@ -4971,7 +5620,18 @@
     "bng",
     "comp",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=115",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 vincula la beca a la situación socioeconómica y critica que el PP endureciera los requisitos."
+   }
   },
   {
    "id": "I07",
@@ -5080,7 +5740,18 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "src": {
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=13",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "pp": "Defiende la tauromaquia como expresión cultural con profundas raíces históricas."
+   }
   },
   {
    "id": "I09",
@@ -5094,7 +5765,7 @@
    "dir": -1,
    "lr": -1,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 2,
     "vox": 1,
     "fa": 4,
@@ -5115,7 +5786,28 @@
    "est": [
     "salf",
     "cha"
-   ]
+   ],
+   "notes": {
+    "psoe": "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear."
+   },
+   "src": {
+    "psoe": [
+     "https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html",
+     "Recurso ante el TC por el catalán en la sanidad balear (29 de noviembre de 2023)",
+     "parlamento",
+     "2023-11-29"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
+     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "programa",
+     "2025-06"
+    ]
+   },
+   "why": {
+    "psoe": "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear.",
+    "pp": "Considera que la lengua cooficial debe ser un mérito y no un requisito para acceder a la función pública."
+   }
   },
   {
    "id": "J01",
@@ -5328,7 +6020,7 @@
     ]
    },
    "why": {
-    "psoe": "Estimación: el borrador de Estatuto Marco del Ministerio de Sanidad (Sumar) prevé exclusividad parcial; no consta una postura propia del PSOE.",
+    "psoe": "Estimación: el Gobierno de coalición propuso exclusividad para jefes de servicio en el borrador del Estatuto Marco, pero el PSOE no ha fijado postura propia.",
     "pp": "Las comunidades del PP rechazan imponer la exclusividad del Estatuto Marco porque temen la fuga de médicos y defienden poder compatibilizar."
    }
   },
@@ -5390,7 +6082,7 @@
    "dir": 0,
    "lr": 0,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 4,
     "vox": 4,
     "fa": 3,
@@ -5399,14 +6091,33 @@
     "d21": 5
    },
    "est": [
-    "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
     "salf",
     "d21"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas."
+   },
+   "src": {
+    "psoe": [
+     "https://www.boe.es/eli/es/l/2022/12/20/27",
+     "Ley 27/2022 de evaluación de políticas públicas (20 de diciembre de 2022)",
+     "gobierno",
+     "2022-12-20"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas.",
+    "pp": "Propone reformar la ley de evaluación de políticas públicas y reforzar la AIReF como evaluador independiente."
+   }
   },
   {
    "id": "J06",
@@ -5420,7 +6131,7 @@
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 2,
+    "psoe": 3,
     "pp": 3,
     "vox": 4,
     "fa": 1,
@@ -5437,7 +6148,6 @@
     "adel": 1
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
     "fa",
@@ -5452,7 +6162,22 @@
     "bng",
     "comp",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su Gobierno hizo obligatoria la evaluación del desempeño con efectos en carrera, sueldo y continuidad en el puesto, sin despido."
+   },
+   "src": {
+    "psoe": [
+     "https://www.boe.es/eli/es/rdl/2023/12/19/6",
+     "Real Decreto-ley 6/2023 de función pública (19 de diciembre de 2023)",
+     "gobierno",
+     "2023-12-19"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno hizo obligatoria la evaluación del desempeño con efectos en carrera, sueldo y continuidad en el puesto, sin despido.",
+    "pp": "Estimación: no consta postura nacional del PP sobre evaluar el desempeño de los funcionarios con posible despido."
+   }
   },
   {
    "id": "J07",
@@ -5466,7 +6191,7 @@
    "dir": -1,
    "lr": -1,
    "pos": {
-    "psoe": 3,
+    "psoe": 2,
     "pp": 1,
     "vox": 1,
     "fa": 5,
@@ -5482,7 +6207,6 @@
     "adel": 4
    },
    "est": [
-    "psoe",
     "vox",
     "salf",
     "d21",
@@ -5493,7 +6217,28 @@
     "bng",
     "comp",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada."
+   },
+   "src": {
+    "psoe": [
+     "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/04/2025-04-30-2/NPConciertoMUFACE.pdf",
+     "Firma del concierto de MUFACE 2025-2027 (30 de abril de 2025)",
+     "gobierno",
+     "2025-04-30"
+    ],
+    "pp": [
+     "https://www.redaccionmedica.com/politica/20241214/el-pp-reclama-un-modelo-futuro-para-muface-sostenible-solvente/236954_0.html",
+     "Redacción Médica, proposición no de ley del PP sobre Muface, 14/12/2024",
+     "parlamento",
+     "2024-12-14"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada.",
+    "pp": "Presentó una proposición para consolidar el mutualismo administrativo frente a la integración en la sanidad pública."
+   }
   },
   {
    "id": "J08",
@@ -5531,7 +6276,6 @@
     "adel": 2
    },
    "est": [
-    "pp",
     "fa",
     "pod",
     "salf",
@@ -5556,10 +6300,17 @@
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
      "programa",
      "2023-07-07"
+    ],
+    "pp": [
+     "https://www.redaccionmedica.com/politica/20261023/sanidad-hara-publico-el-decreto-fallido-de-las-listas-espera-queremos-que-los-ciudadanos-puedan-verlo/363279_0.html",
+     "Redacción Médica, Consejo Interterritorial del 23/10/2026",
+     "gobierno",
+     "2026-10-23"
     ]
    },
    "why": {
-    "psoe": "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud."
+    "psoe": "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud.",
+    "pp": "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera."
    }
   },
   {
@@ -5718,7 +6469,18 @@
     "jmm",
     "upl",
     "soria"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=67",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 promete reforzar el control de la Ley de la Cadena Alimentaria y vigilar costes y márgenes."
+   }
   },
   {
    "id": "K03",
@@ -5947,7 +6709,7 @@
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 4,
     "vox": 5,
     "fa": 2,
@@ -5963,8 +6725,6 @@
     "adel": 3
    },
    "est": [
-    "psoe",
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -5977,7 +6737,28 @@
     "comp",
     "mes",
     "adel"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión."
+   },
+   "src": {
+    "psoe": [
+     "https://www.menorca.info/actualidad/nacional/2025/12/13/2530867/acuerda-posibilidades-pesca-para-2026-143-dias-capturas-mediterraneo.html",
+     "Declaraciones de Luis Planas tras el Consejo de Pesca de la UE (13 de diciembre de 2025)",
+     "declaracion",
+     "2025-12-13"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2024/12/241217-Carmen-Belen-Lopez-pregunta-a-Planas-por-negociacion-UE-pesca-1.pdf",
+     "PP en el Senado, Carmen Belén López pregunta a Planas por la pesca en el Mediterráneo, 17/12/2024",
+     "declaracion",
+     "2024-12-17"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
+    "pp": "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE."
+   }
   },
   {
    "id": "K07",
@@ -6019,7 +6800,6 @@
     "pav": 5
    },
    "est": [
-    "psoe",
     "fa",
     "salf",
     "d21",
@@ -6041,7 +6821,25 @@
     "upl",
     "soria",
     "pav"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=70",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 vincula la caza a la sostenibilidad del mundo rural, pero no propone protegerla por ley.",
+    "pp": "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural."
+   }
   },
   {
    "id": "K08",
@@ -6055,8 +6853,8 @@
    "dir": -1,
    "lr": -1,
    "pos": {
-    "psoe": 4,
-    "pp": 2,
+    "psoe": 3,
+    "pp": 3,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -6090,7 +6888,29 @@
     "adel",
     "jmm",
     "upl"
-   ]
+   ],
+   "notes": {
+    "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=63",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=30",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos."
+   }
   },
   {
    "id": "L01",
@@ -6340,7 +7160,7 @@
    "lr": 0,
    "pos": {
     "psoe": 1,
-    "pp": 2,
+    "pp": 3,
     "vox": 1,
     "fa": 1,
     "pod": 1,
@@ -6358,7 +7178,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "salf",
     "erc",
     "junts",
@@ -6370,7 +7189,28 @@
     "drago",
     "comp",
     "adel"
-   ]
+   ],
+   "notes": {
+    "pp": "Se abrió a regular la gestación subrogada solo en su forma altruista, sin ningún pago a la gestante."
+   },
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html",
+     "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023",
+     "prensa",
+     "2023-03-29"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa de 2023 rechaza los «vientres de alquiler» y niega que ser padre o madre sea un derecho.",
+    "pp": "Se abrió a regular la gestación subrogada solo en su forma altruista, sin ningún pago a la gestante."
+   }
   },
   {
    "id": "L05",
@@ -6408,7 +7248,6 @@
     "adel": 5
    },
    "est": [
-    "psoe",
     "salf",
     "d21",
     "erc",
@@ -6424,7 +7263,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254",
+     "Programa electoral del PSOE de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=72",
+     "Programa electoral del PP de 2023",
+     "programa",
+     "2023-07-04"
+    ]
+   },
+   "why": {
+    "psoe": "Su programa busca reducir ventajas de la Iglesia (autofinanciación, fiscalidad) dentro de los acuerdos vigentes, sin revisarlos.",
+    "pp": "Propone mantener la cooperación con las confesiones mediante los instrumentos jurídicos vigentes."
+   }
   },
   {
    "id": "L06",
@@ -6439,7 +7296,7 @@
    "lr": 0,
    "pos": {
     "psoe": 5,
-    "pp": 2,
+    "pp": 4,
     "vox": 1,
     "fa": 3,
     "pod": 3,
@@ -6454,7 +7311,6 @@
     "comp": 3
    },
    "est": [
-    "pp",
     "fa",
     "pod",
     "salf",
@@ -6466,7 +7322,28 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "notes": {
+    "pp": "Su portavoz adjunto en el Congreso defendió acabar con el anonimato en redes y registrarse con identidad real."
+   },
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/presidente/actividades/Paginas/2025/220125-sanchez-foro-economico-mundial-davos.aspx",
+     "Intervención de Pedro Sánchez en Davos (22 de enero de 2025)",
+     "declaracion",
+     "2025-01-22"
+    ],
+    "pp": [
+     "https://www.ultimahora.es/noticias/nacional/2024/08/22/2227249/delitos-odio-apoya-identificar-usuarios-redes-sociales.html",
+     "Última Hora (Europa Press), el PP apoya identificar a los usuarios de redes sociales, 22/08/2024",
+     "declaracion",
+     "2024-08-22"
+    ]
+   },
+   "why": {
+    "psoe": "Sánchez propuso obligar a las redes a vincular cada cuenta a una identidad digital europea, aunque se usen seudónimos.",
+    "pp": "Su portavoz adjunto en el Congreso defendió acabar con el anonimato en redes y registrarse con identidad real."
+   }
   },
   {
    "id": "L07",
@@ -6496,7 +7373,6 @@
     "comp": 4
    },
    "est": [
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -6509,7 +7385,25 @@
     "upn",
     "bng",
     "comp"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/030226-sanchez-cumbre-gobiernos-dubai.aspx",
+     "Anuncio de Pedro Sánchez en Dubái (3 de febrero de 2026)",
+     "declaracion",
+     "2026-02-03"
+    ],
+    "pp": [
+     "https://www.menorca.info/actualidad/nacional/2025/12/13/2530889/propone-prohibir-acceso-redes-sociales-menores-anos.html",
+     "Menorca (Europa Press), enmiendas del PP a la ley de menores en entornos digitales, 13/12/2025",
+     "parlamento",
+     "2025-12-13"
+    ]
+   },
+   "why": {
+    "psoe": "Sánchez anunció en 2026 que España prohibirá el acceso a las redes sociales a los menores de 16 años.",
+    "pp": "Propuso por enmienda prohibir las redes sociales a menores de 16 años, salvo de 14 a 16 con permiso paterno."
+   }
   },
   {
    "id": "L08",
@@ -6548,7 +7442,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "salf",
     "pacma",
     "d21",
@@ -6566,7 +7459,25 @@
     "cha",
     "mes",
     "adel"
-   ]
+   ],
+   "src": {
+    "psoe": [
+     "https://www.boe.es/eli/es/lo/2024/08/01/2",
+     "Ley Orgánica 2/2024 de representación paritaria (1 de agosto de 2024)",
+     "gobierno",
+     "2024-08-01"
+    ],
+    "pp": [
+     "https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/",
+     "The Objective, aprobación de la ley de paridad en el Congreso, 27/06/2024",
+     "parlamento",
+     "2024-06-27"
+    ]
+   },
+   "why": {
+    "psoe": "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
+    "pp": "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí."
+   }
   },
   {
    "id": "L09",
