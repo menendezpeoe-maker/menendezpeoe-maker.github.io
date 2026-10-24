@@ -8,7 +8,7 @@
 3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
-6. ~~T10~~ **Hecho y publicado el 24 oct.**
+6. ~~T10~~ **Hecho y publicado el 24 oct.** ~~T6~~ también, el 24 oct (adelantada a petición del titular, todas las posturas de Vox y Frente Amplio).
 7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida).
 8. **Calendario adelantado (24 oct), dos veces porque T5 y T6 se hicieron el 24:** T7 el 25 oct, T8 el 26, T11 el 27, T12 (fuentes del resto de candidaturas) el 28 y T12b (continuación y programas de 2026) el 29. Tareas programadas actualizadas. Nueva instrucción permanente del titular: incorporar los programas electorales de 2026 en cuanto se publiquen (PLAN.md, regla 5). Siguiente: T7, T8, T11, T12 y T12b según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
@@ -53,6 +53,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - **Estimaciones extremas sin base, moderadas un punto hacia el centro** (revisión independiente): Frente Amplio E04 1→2, E05 5→4, G07 5→4, I04 1→2, J06 1→2, K07 1→2; Vox E05 1→2, E07 1→2, J04 1→2, L05 1→2.
 - **Revisión independiente:** además, corregidas atribuciones (L07 Vox: cita literal de Abascal; I03 FA), una nota (B07 Vox: la propuesta no distingue residentes ni origen), un tipo de fuente (B03 Vox, prensa) y las etiquetas del programa de Vox, unificadas.
 - **Sin cambios por ser evidencia antigua, indirecta o autonómica**, aunque los subagentes proponían cambiarlas: Vox A05, C07, D01, F08 e I03; Frente Amplio F09.
+- **Pruebas:** las 19 baterías pasan en local y en https://test29n.es. IndexNow: 200 OK, 227 URL.
 - **Propuestas destacadas actualizadas:**
   - **Vox:** competencias que quiere devolver al Estado (Educación, Sanidad, Seguridad y Justicia); Plan Nacional del Agua con interconexión de cuencas, porque su programa no habla de «trasvases».
   - **Frente Amplio:** congelar el alquiler y prorrogar tres años los contratos (propuesta de octubre de 2025); prestación de 200 euros al mes por hijo; embargo de armas a Israel sin excepciones; electrificar el parque móvil para que en 2040 no circulen coches de combustión.
