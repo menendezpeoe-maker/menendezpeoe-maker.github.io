@@ -170,7 +170,13 @@ function quickOrder() {
   const score = (q) => disc(q) + (dims[q.dim] ? 0 : 1.2) + (lr !== 0 && Math.sign(q.lr) === -Math.sign(lr) ? 0.6 : 0) + (dsum !== 0 && q.dir && Math.sign(q.dir) === -Math.sign(dsum) ? 0.5 : 0);
   const add = (q) => { pick.push(q); dims[q.dim] = (dims[q.dim] || 0) + 1; lr += q.lr; dsum += q.dir; };
   for (const a of BANK.areas) { const c = BANK.questions.filter((q) => q.area === a.id && q.prio === 1); if (c.length) add([...c].sort((x, y) => score(y) - score(x))[0]); }
-  while (pick.length < 15) { const c = BANK.questions.filter((q) => !pick.includes(q) && q.prio <= 2); if (!c.length) break; add([...c].sort((x, y) => score(y) - score(x))[0]); }
+  while (pick.length < 15) {
+    let c = BANK.questions.filter((q) => !pick.includes(q) && q.prio <= 2); if (!c.length) break;
+    // Si las afirmaciones ya se inclinan hacia un sentido, la siguiente debe ir en el contrario (si la hay)
+    const opp = c.filter((q) => q.dir && Math.sign(q.dir) === -Math.sign(dsum));
+    if (Math.abs(dsum) >= 2 && opp.length) c = opp;
+    add([...c].sort((x, y) => score(y) - score(x))[0]);
+  }
   return (QUICK = BANK.questions.filter((q) => pick.includes(q)).map((q) => q.id));
 }
 function buildOrder(mode, seed, topic) {
