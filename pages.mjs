@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
+import { TOPICS } from "./src/temas.src.mjs";
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -57,7 +58,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -429,6 +430,39 @@ rows(prov().parties);
 <li>En las circunscripciones de un solo escaño, gana la candidatura más votada.</li></ul>
 <p class="small muted">Reglas: <a href="${LOREG_URL}" target="_blank" rel="noopener noreferrer">Ley Orgánica del Régimen Electoral General, arts. 162 y 163</a>. Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>. Es una simulación matemática: no reproduce un resultado oficial.</p></section>
 <script src="/escanos/escanos.js" defer></script>`
+  });
+
+  // ── Tests por tema: 6 o 7 preguntas de un asunto; el test se hace en la portada (/?tema=<id>)
+  const Q = Object.fromEntries(B.questions.map((q) => [q.id, q]));
+  for (const [k, t] of Object.entries(TOPICS)) { const miss = t.ids.filter((id) => !Q[id]); if (miss.length) throw new Error(`Test de ${t.label}: no existen ${miss.join(", ")}`); }
+  const topicEntries = Object.entries(TOPICS);
+  for (const [k, t] of topicEntries) {
+    const qs = t.ids.map((id) => Q[id]);
+    const lc = t.label.toLowerCase();
+    page({
+      path: `/tests/${k}/`,
+      title: `Test de ${lc} para el 29N: ¿con qué partido coincides? · Test 29N`,
+      desc: `${qs.length} preguntas sobre ${lc} para comparar tus ideas con las candidaturas de las elecciones generales del 29 de noviembre de 2026. Gratis, en 2 minutos y sin registro.`,
+      crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }, { name: t.label, url: `${SITE}tests/${k}/` }],
+      body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Test de ${esc(lc)}</h1>
+  <p class="lede">${qs.length} preguntas sobre ${esc(lc)} para ver con qué candidaturas de tu provincia coincides en este tema. Tardas unos 2 minutos y después puedes seguir con el test completo sin perder tus respuestas.</p>
+  <p><a class="btn btn-primary" href="/?tema=${k}">Empezar el test de ${esc(lc)}</a></p></header>
+<section aria-labelledby="h-qs"><h2 class="h2" id="h-qs">Las preguntas</h2>
+<ol class="dots">${qs.map((q) => `<li>${esc(q.text)}${q.type === "dilema" ? ` <span class="small muted">(A: ${esc(q.A)} · B: ${esc(q.B)})</span>` : ""} <a class="small" href="/preguntas/${q.id.toLowerCase()}/">Qué piensa cada partido</a></li>`).join("")}</ol>
+<p class="small muted">El resultado de un test por tema solo tiene en cuenta estas preguntas: es orientativo y no es una recomendación de voto. Para una visión de conjunto, haz el test completo.</p></section>
+<p class="small muted">Otros tests por tema: ${topicEntries.filter(([x]) => x !== k).map(([x, o]) => `<a href="/tests/${x}/">${esc(o.label)}</a>`).join(" · ")}</p>
+${cta("¿Prefieres el test completo?")}`
+    });
+  }
+  page({
+    path: "/tests/",
+    title: "Tests por tema para el 29N: vivienda, inmigración, impuestos y más · Test 29N",
+    desc: "Tests cortos de 6 o 7 preguntas sobre vivienda, inmigración, impuestos y economía, sanidad, energía o territorio para comparar tus ideas con las candidaturas del 29N.",
+    crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Tests por tema</h1>
+  <p class="lede">¿Solo te interesa un asunto? Responde unas pocas preguntas sobre él y mira con qué candidaturas de tu provincia coincides. Después puedes seguir con el test completo sin perder tus respuestas.</p></header>
+<ul class="sp-cards">${topicEntries.map(([k, t]) => `<li><a href="/tests/${k}/"><span><b>Test de ${esc(t.label.toLowerCase())}</b><span class="small muted">${t.ids.length} preguntas · 2 minutos</span></span></a></li>`).join("")}</ul>
+${cta("O responde el test completo")}`
   });
 
   // ── Glosario electoral

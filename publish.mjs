@@ -37,6 +37,10 @@ for (const f of ["og.png", "favicon.svg", "favicon-32.png", "favicon-48.png", "f
   if (!existsSync(`qa/brand/${f}`)) throw new Error(`Falta qa/brand/${f}: ejecuta node qa/assets.mjs`);
   copyFileSync(`qa/brand/${f}`, `${OUT}/${f}`);
 }
+// Imágenes para redes (qa/redes.mjs): pregunta del día y tarjetas de los tests por tema
+if (!existsSync("qa/redes") || !readdirSync("qa/redes").some((f) => f.endsWith(".png"))) throw new Error("Faltan las imágenes de qa/redes: ejecuta node qa/redes.mjs");
+mkdirSync(`${OUT}/redes`, { recursive: true });
+for (const f of readdirSync("qa/redes").filter((f) => f.endsWith(".png"))) copyFileSync(`qa/redes/${f}`, `${OUT}/redes/${f}`);
 for (const f of readdirSync("assets/politicos").filter((f) => f.endsWith(".jpg"))) copyFileSync(`assets/politicos/${f}`, `${OUT}/assets/politicos/${f}`);
 // Ningún dato bancario puede acabar en la web pública
 for (const f of [`${OUT}/assets/papeleta.js`, "papeleta-29n.html", ...["preguntas", "partidos", "politicos"].map((n) => `data/${n}.json`)])
@@ -55,7 +59,7 @@ const OWNER_M = /const OWNER = \{ name: "([^"]*)", email: "([^"]*)" \}/.exec(js)
 const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
-  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
+  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
   .trim();
 if (!body.includes('href="prensa/"')) throw new Error("No se pudieron añadir los enlaces del pie");
 const csp = [

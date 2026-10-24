@@ -880,3 +880,11 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .gloss > div { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
 .gloss dt { font-family: var(--f-disp); font-stretch: 112%; font-weight: 850; font-size: 17px; }
 .gloss dd { margin: 0; line-height: 1.55; color: var(--ink-2); }
+/* Tests por tema en la portada */
+.topic-list { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); margin-top: 6px; }
+.topic-btn { display: grid; gap: 2px; padding: 14px 16px; border: 1.5px solid var(--rule); border-radius: var(--r2); background: var(--sheet); color: var(--ink); text-decoration: none; min-height: 44px; }
+.topic-btn:hover { border-color: var(--ink-3); }
+.topic-btn.is-target { border-color: var(--ink); box-shadow: 0 0 0 2px var(--mark); }
+.topic-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.topic-btn b { font-family: var(--f-disp); font-stretch: 112%; font-weight: 850; font-size: 17px; }
+.topic-btn span { font-size: 13px; color: var(--ink-3); }
