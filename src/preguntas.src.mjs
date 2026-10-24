@@ -831,3 +831,9 @@ export const SOURCES = {
     pp: ["https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/", "Orain, febrero de 2026", "parlamento", "2026-02"]
   }
 };
+
+// Justificación de una línea por postura (tanda T5 en adelante): por qué ese partido tiene esa postura, en
+// lenguaje neutral y sin adjetivos. Se publica en data/preguntas.json (`why`) y la mostrará T8.
+// Formato: { pregunta: { partido: "frase de hasta 200 caracteres" } }. Cada partido citado debe tener postura.
+export const JUSTIF = {
+};

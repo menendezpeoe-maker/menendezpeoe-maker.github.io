@@ -1,7 +1,7 @@
 // Valida las fuentes y genera los datos publicados en data/.
 // Uso: node build.mjs   (sale con código 1 si encuentra errores)
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
-import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES, SOURCES } from "./src/preguntas.src.mjs";
+import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES, SOURCES, JUSTIF } from "./src/preguntas.src.mjs";
 import { PARTY_ORDER, PARTIES, REGIONS } from "./src/partidos.src.mjs";
 import { POLITICIANS } from "./src/politicos.src.mjs";
 
@@ -62,6 +62,14 @@ const questions = QUESTIONS.map((q) => {
       if (est.includes(pid)) warn(`${q.id}/${pid}: tiene fuente pero sigue marcada como estimada`);
     }
     out.src = SOURCES[q.id];
+  }
+  if (JUSTIF[q.id]) {
+    for (const [pid, t] of Object.entries(JUSTIF[q.id])) {
+      if (!pos[pid]) err(`${q.id}: justificación para ${pid}, que no tiene postura`);
+      if (typeof t !== "string" || t.trim().length < 20 || t.length > 200) err(`${q.id}/${pid}: la justificación debe tener entre 20 y 200 caracteres`);
+      else if (!/[.)»]$/.test(t.trim())) err(`${q.id}/${pid}: la justificación debe terminar en punto`);
+    }
+    out.why = JUSTIF[q.id];
   }
   return out;
 });
