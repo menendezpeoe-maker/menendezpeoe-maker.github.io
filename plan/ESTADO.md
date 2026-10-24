@@ -8,7 +8,7 @@
 3. ~~T3~~ **Hecho y publicado el 23 oct.**
 4. La tanda del día.
 5. ~~T4~~ **Hecho y publicado el 24 oct.**
-6. ~~T10~~ **Hecho y publicado el 24 oct.** ~~T6~~ también, el 24 oct (adelantada a petición del titular, todas las posturas de Vox y Frente Amplio).
+6. ~~T10~~ **Hecho y publicado el 24 oct.** ~~T7~~ también, el 24 oct (modo de bajo consumo). ~~T6~~ también, el 24 oct (adelantada a petición del titular, todas las posturas de Vox y Frente Amplio).
 7. ~~T5~~ **Hecho y publicado el 24 oct** (adelantada a petición del titular). Ampliada el mismo día a todas las posturas de PSOE y PP (prioridad 3 incluida).
 8. **Calendario adelantado (24 oct), porque T5, T6 y T7 se hicieron el 24:** T8 el 25 oct, T11 el 26, T12 (fuentes del resto de candidaturas) el 27, T12b (continuación y programas de 2026) el 28 y R0 (repaso y recuperación) el 29. Tareas programadas actualizadas. Nueva instrucción permanente del titular: incorporar los programas electorales de 2026 en cuanto se publiquen (PLAN.md, regla 5). Siguiente: T8, T11, T12, T12b y R0 según el calendario. Posturas discutibles de PSOE y PP ya decididas (ver la entrada de T5).
 Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. Referencia completa: `plan/ESTADO_MAESTRO_WEB_POLITICA.md`.
@@ -23,7 +23,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
 - T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct).
 - T6 · Fuentes de Vox y Frente Amplio: completada y verificada (web real, 24 oct).
-- T7 · Fuentes de Podemos y ERC: completada (24 oct). T8, T11, T12 y T12b: pendientes.
+- T7 · Fuentes de Podemos y ERC: completada y verificada (web real, 24 oct). T8, T11, T12 y T12b: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -51,6 +51,7 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - **Pasan a «estimadas» (mismo valor), porque no hay ninguna fuente:** ERC B03, D03, D09, E04 y F03.
 - **Pendiente para T12b o R1:** la web de Podemos (podemos.info) bloquea a los robots con Cloudflare y no se pudo leer su programa. 22 posturas documentadas de Podemos siguen sin enlace: C03, C06, D01, D05, D06, E04, F03, F04, F05, F08, F09, G03, G04, H07, H09, I05, I06, I07, I09, K07, K08 y L09. No se marcan como estimadas, porque el problema es de acceso, no de falta de fuente. Reintentar con otra copia del programa o con hemerotecas.
 - **Revisión independiente:** corregida una frase que no estaba en su fuente (A01 de Podemos) y una exageración (D03 de Podemos); 6 estimaciones sin base pasan a 3 (Podemos C02, D02, H02, H03 y H08; ERC G07); los resúmenes de prensa del programa europeo de Podemos pasan a tipo «prensa»; etiquetas y fechas unificadas.
+- **Pruebas:** las 19 baterías pasan en local y en https://test29n.es. IndexNow: 200 OK, 227 URL.
 - **Propuesta destacada de Podemos corregida:** «Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir».
 
 ## 24 oct 2026 · T6 · Fuentes de las posturas de Vox y Frente Amplio
