@@ -27,11 +27,16 @@ const W_PRIORITY = 1.5;     // área elegida como prioritaria
 const W_ESTIMATED = 0.6;    // postura de partido estimada (no documentada)
 const W_NEUTRAL = 0.5;      // respuesta «ni de acuerdo ni en desacuerdo»: cuenta, pero informa menos
 const MIN_COVERAGE = 0.5;   // por debajo, la coincidencia se acerca al 50 %
+// Tests por tema (misma lista que src/temas.src.mjs)
+const TOPICS = {"vivienda":{"label":"Vivienda","code":"v","ids":["B01","B02","B03","B04","B05","B06","B07"]},"inmigracion":{"label":"Inmigración","code":"i","ids":["F01","F02","F03","F04","F05","H09","L09"]},"economia":{"label":"Impuestos y economía","code":"k","ids":["A01","A02","A03","A04","A05","A08","A10"]},"sanidad":{"label":"Sanidad","code":"s","ids":["J01","J02","J03","J04","J07","J08"]},"energia":{"label":"Energía y medioambiente","code":"g","ids":["G01","G02","G03","G04","G05","G08","G09"]},"territorio":{"label":"Territorio","code":"x","ids":["C01","C02","C03","C04","C05","C07"]}};
+const topicOf = (st) => (st && st.mode === "tema" && TOPICS[st.topic]) || null;
+const modeLabel = (st) => { const t = topicOf(st); return t ? `Test de ${t.label.toLowerCase()}` : (MODES[st?.mode]?.label || ""); };
 const MODES = {
   rapida: { label: "Rápida", mins: 3 },
   expres: { label: "Exprés", mins: 5 },
   media: { label: "Media", mins: 10 },
-  completa: { label: "Completa", mins: 20 }
+  completa: { label: "Completa", mins: 20 },
+  tema: { label: "Por tema", mins: 2 }
 };
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const LIK_LOW = ["totalmente en desacuerdo", "en desacuerdo", "neutral", "de acuerdo", "totalmente de acuerdo"];
@@ -168,8 +173,9 @@ function quickOrder() {
   while (pick.length < 15) { const c = BANK.questions.filter((q) => !pick.includes(q) && q.prio <= 2); if (!c.length) break; add([...c].sort((x, y) => score(y) - score(x))[0]); }
   return (QUICK = BANK.questions.filter((q) => pick.includes(q)).map((q) => q.id));
 }
-function buildOrder(mode, seed) {
+function buildOrder(mode, seed, topic) {
   if (mode === "rapida") return quickOrder().slice();
+  if (mode === "tema") return (TOPICS[topic]?.ids || []).filter((id) => Q[id]);
   const out = [];
   for (const a of BANK.areas) {
     const qs = BANK.questions.filter((q) => q.area === a.id);
@@ -237,6 +243,8 @@ function initHome() {
   sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
   $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
   $(".ex-scale").addEventListener("click", (e) => { const b = e.target.closest("[data-ex]"); if (b) startFromExample(Number(b.dataset.ex)); });
+  $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="?tema=${k}" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
+  $("#topic-list").addEventListener("click", (e) => { const a = e.target.closest("[data-tema]"); if (a) { e.preventDefault(); startTopic(a.dataset.tema); } });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
   $("#areas-list").innerHTML = BANK.areas.map((a) => {
     const n = BANK.questions.filter((q) => q.area === a.id).length;
@@ -253,7 +261,7 @@ function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
   renderStartNote(); renderResume();
 }
-const NEXT_MODE = { rapida: "expres", expres: "media", media: "completa" };  // «Afinar» lleva a la siguiente versión
+const NEXT_MODE = { tema: "expres", rapida: "expres", expres: "media", media: "completa" };  // «Afinar» lleva a la siguiente versión
 const MODE_NOTE = { rapida: "unos 3 minutos", expres: "unos 5 minutos", media: "unos 10 minutos", completa: "unos 20 minutos" };
 function renderStartNote() {
   const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
@@ -278,16 +286,17 @@ function renderResume() {
   if (!S) { box.hidden = true; return; }
   const done = S.order.filter((id) => S.ans[id] !== undefined).length;
   if (S.stage === "done") {
-    box.innerHTML = `<p><b>Tienes un resultado guardado.</b> Versión ${MODES[S.mode].label.toLowerCase()}, ${esc(PROV[S.prov].name)}.</p><button type="button" class="btn btn-primary btn-sm" data-act="see-results">Ver mis resultados</button>`;
+    box.innerHTML = `<p><b>Tienes un resultado guardado.</b> ${topicOf(S) ? esc(modeLabel(S)) : `Versión ${MODES[S.mode].label.toLowerCase()}`}, ${esc(PROV[S.prov].name)}.</p><button type="button" class="btn btn-primary btn-sm" data-act="see-results">Ver mis resultados</button>`;
   } else if (done > 0) {
     box.innerHTML = `<p><b>Tienes un test a medias:</b> ${done} de ${S.order.length} respondidas. Si empiezas uno nuevo, se sustituirá.</p><button type="button" class="btn btn-primary btn-sm" data-act="resume">Continuar</button>`;
   } else { box.hidden = true; return; }
   box.hidden = false;
 }
-function newTest() {
-  const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
+function newTest(topic) {
+  const mode = topic && TOPICS[topic] ? "tema" : ($('input[name=mode]:checked') || {}).value || "rapida";
   const seed = newSeed();
-  S = { v: 2, bank: BANK.version, mode, seed, order: buildOrder(mode, seed), idx: 0, ans: {}, imp: {}, prios: [], stage: "quiz", t: Date.now() };
+  S = { v: 2, bank: BANK.version, mode, seed, order: buildOrder(mode, seed, topic), idx: 0, ans: {}, imp: {}, prios: [], stage: "quiz", t: Date.now() };
+  if (mode === "tema") S.topic = topic;
   if (PROV[PREFS.prov]) S.prov = PREFS.prov;
   SHARED = null; SH.edited = false;
 }
@@ -296,6 +305,14 @@ function startTest(e) {
   newTest();
   save();
   launchQuiz(true);
+}
+// Test por tema: desde la portada o desde /tests/<tema>/ (enlace ?tema=…)
+// Si ya hay respuestas guardadas, se pide confirmación antes de sustituirlas.
+const hasSaved = () => !!(S && Object.keys(S.ans || {}).length);
+function startTopic(topic, ask = true) {
+  if (!TOPICS[topic]) return;
+  if (ask && hasSaved() && !confirm(`¿Empezar el test de ${TOPICS[topic].label.toLowerCase()}? Sustituirá el test que tienes guardado en este navegador.`)) return;
+  newTest(topic); save(); count(`tema-${topic}`, `Test de ${TOPICS[topic].label.toLowerCase()}`, true); launchQuiz(true);
 }
 // La pregunta de ejemplo de la portada es real: responderla empieza el test con esa respuesta guardada
 function startFromExample(v) {
@@ -337,7 +354,7 @@ function renderProgress() {
   bar.setAttribute("aria-valuenow", answered);
   bar.setAttribute("aria-valuetext", `${answered} de ${order.length} respondidas`);
   const ai = areas.findIndex((a) => a.id === cur.area);
-  $("#q-prog-label").textContent = `Área ${ai + 1} de ${areas.length} · ${AREA[cur.area].name}`;
+  $("#q-prog-label").textContent = topicOf(S) ? modeLabel(S) : `Área ${ai + 1} de ${areas.length} · ${AREA[cur.area].name}`;
   $("#q-count").textContent = `${String(S.idx + 1).padStart(2, "0")} / ${order.length}`;
 }
 
@@ -351,7 +368,7 @@ function renderQuestion(dir) {
   const main = $("#q-main");
   main.innerHTML = `
     <p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(a.name)}</span>${q.type === "dilema" ? '<span class="muted">Dilema: elige entre dos opciones</span>' : ""}</p>
-    ${firstOfArea ? `<p class="q-intro"><b>Área ${areasInOrder.findIndex((x) => x.id === a.id) + 1} de ${areasInOrder.length}.</b> ${esc(a.intro)}</p>` : ""}
+    ${firstOfArea && !topicOf(S) ? `<p class="q-intro"><b>Área ${areasInOrder.findIndex((x) => x.id === a.id) + 1} de ${areasInOrder.length}.</b> ${esc(a.intro)}</p>` : ""}
     <h2 class="q-stmt" id="q-stmt" tabindex="-1">${esc(q.text)}</h2>
     ${q.type === "dilema" ? `<div class="dil"><p class="dil-o"><b>A</b><span>${esc(q.A)}</span></p><p class="dil-o"><b>B</b><span>${esc(q.B)}</span></p></div>` : ""}
     <div class="q-tools">
@@ -484,6 +501,8 @@ function renderProvField() {
 }
 function renderPrios() {
   renderProvField();
+  const tema = !!topicOf(S);
+  for (const sel of [".prio-h", ".prio-lede", "#prio-grid", "#prio-count", "#prio-skip"]) { const el = $(sel); if (el) el.hidden = tema; }
   const grid = $("#prio-grid");
   const full = S.prios.length >= 3;
   grid.innerHTML = BANK.areas.map((a) => {
@@ -627,12 +646,23 @@ function dimLabel(d, v) {
   if (Math.abs(v) < 15) return "Equilibrio entre ambos polos";
   return `${v < 0 ? d.a : d.b} · ${strength(v)}`;
 }
+// En un test por tema solo cuentan las dimensiones que ese tema mide de verdad (al menos dos preguntas)
+function topicDims(st) {
+  const t = topicOf(st); if (!t) return null;
+  const n = {}; t.ids.forEach((id) => { const d = Q[id]?.dim; if (d) n[d] = (n[d] || 0) + 1; });
+  return Object.keys(n).filter((d) => n[d] >= 2);
+}
 function profileSentence(M) {
-  const strong = Object.entries(M.user.dims).filter(([, o]) => Math.abs(o.v) >= 25).sort((a, b) => Math.abs(b[1].v) - Math.abs(a[1].v));
-  const mixed = BANK.dims.filter((d) => M.user.dims[d.id] && Math.abs(M.user.dims[d.id].v) < 25);
-  const head = strong.length
+  const st = ST(), td = topicDims(st), tl = st?.topic === "territorio" ? "organización territorial" : topicOf(st)?.label.toLowerCase();
+  const dims = Object.entries(M.user.dims).filter(([k]) => !td || td.includes(k));
+  const strong = dims.filter(([, o]) => Math.abs(o.v) >= 25).sort((a, b) => Math.abs(b[1].v) - Math.abs(a[1].v));
+  const mixed = BANK.dims.filter((d) => M.user.dims[d.id] && (!td || td.includes(d.id)) && Math.abs(M.user.dims[d.id].v) < 25);
+  const head = td
+    ? (strong.length ? `En ${tl}, te inclinas por ${joinY(strong.map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.` : `En ${tl}, tus respuestas no se inclinan con claridad hacia ningún polo.`)
+    : strong.length
     ? `Te inclinas por ${joinY(strong.slice(0, 3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.`
     : "Tus respuestas no se inclinan con claridad hacia ningún polo.";
+  if (td) return { head, sub: "Es el resultado de un test corto sobre un solo tema: para un perfil completo, sigue con la versión exprés." };
   const tail = mixed.length ? `En ${joinY(mixed.map((d) => DIM_SHORT[d.id]))} mantienes posiciones intermedias o combinas ideas de ambos lados.` : "";
   const more = strong.length > 3 ? `También te inclinas por ${joinY(strong.slice(3).map(([k, o]) => DIM_PHRASE[k][o.v < 0 ? 0 : 1]))}.` : "";
   return { head, sub: [more, tail].filter(Boolean).join(" ") };
@@ -995,7 +1025,7 @@ function renderSummary() {
   const li = (i) => `<li><b>${esc(i.q.short)}</b><span>${SHARED ? "Esta persona" : "Tú"}: ${esc(ansBrief(i.q, i.u))} · ${esc(P[top.pid].ab)}: ${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span></li>`;
   $("#r-summary").innerHTML = `
     <div class="ballot">
-      <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${MODES[st.mode]?.label || ""}</span><span>Congreso · ${esc(pr.name)}</span></div>
+      <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${esc(modeLabel(st))}</span><span>Congreso · ${esc(pr.name)}</span></div>
       <div class="ballot-body sum-body">
         <div class="top-match">
           <p class="label">${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}</p>
@@ -1672,7 +1702,7 @@ function bindResults() {
       renderQuestion(0); go("quiz", { focus: false }); focusStatement();
     } else if (act === "new") {
       if (!confirm("¿Empezar de nuevo? Se borrarán tus respuestas guardadas en este navegador.")) return;
-      const keep = { mode: S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#start-btn").focus(); }
+      const keep = { mode: S.mode === "tema" ? "rapida" : S.mode }; S = null; store.del(KEY); fillSetup(keep); go("home"); $("#start-btn").focus(); }
     else if (act === "forget-friend") { store.del(FRIEND_KEY); renderFriend(); toast("Resultado compartido olvidado"); }
     else if (act === "own-test") { SHARED = null; try { history.replaceState(null, "", location.pathname + location.search); } catch { /* sin historial */ } S = loadState(); fillSetup(); go("home"); }
   });
@@ -1683,13 +1713,13 @@ function bindResults() {
 // respuestas (con su importancia) en el orden del banco.
 function encodeShare(st) {
   const prov = PROV_LIST.indexOf(st.prov).toString(36).padStart(2, "0");
-  const mode = { rapida: "r", expres: "e", media: "m", completa: "c" }[st.mode] || "e";
+  const mode = topicOf(st)?.code || { rapida: "r", expres: "e", media: "m", completa: "c" }[st.mode] || "e";
   const mask = BANK.areas.reduce((m, a, i) => m | (st.prios.includes(a.id) ? 1 << i : 0), 0).toString(36).padStart(3, "0");
   const ans = BANK.questions.map((q) => { const v = st.ans[q.id]; if (v === undefined) return "0"; if (v === 0) return "n"; return st.imp[q.id] ? "abcde"[v - 1] : String(v); }).join("");
   return `r2${prov}${mode}${mask}${ans}`;
 }
 function decodeShare(hash) {
-  const m = /^#r2([0-9a-z]{2})([remc])([0-9a-z]{3})([0-5na-e]+)$/.exec(hash || "");
+  const m = /^#r2([0-9a-z]{2})([remcvikgsx])([0-9a-z]{3})([0-5na-e]+)$/.exec(hash || "");
   if (!m || m[4].length !== BANK.questions.length) return null;
   const prov = PROV_LIST[parseInt(m[1], 36)]; if (!prov) return null;
   const mask = parseInt(m[3], 36), ans = {}, imp = {};
@@ -1701,7 +1731,7 @@ function decodeShare(hash) {
     else ans[q.id] = Number(c);
   });
   if (!Object.keys(ans).length) return null;
-  return { v: 2, prov, mode: { r: "rapida", e: "expres", m: "media", c: "completa" }[m[2]], ans, imp, prios: BANK.areas.filter((a, i) => mask & (1 << i)).map((a) => a.id), order: null, stage: "done", seed: 0 };
+  return { v: 2, prov, ...(Object.entries(TOPICS).find(([, t]) => t.code === m[2]) ? { mode: "tema", topic: Object.entries(TOPICS).find(([, t]) => t.code === m[2])[0] } : { mode: { r: "rapida", e: "expres", m: "media", c: "completa" }[m[2]] }), ans, imp, prios: BANK.areas.filter((a, i) => mask & (1 << i)).map((a) => a.id), order: null, stage: "done", seed: 0 };
 }
 async function copyText(text, okMsg, fallbackEl) {
   try { await navigator.clipboard.writeText(text); toast(okMsg); return true; }
@@ -1747,14 +1777,15 @@ const FMT = {
   wide: { label: "Horizontal", hint: "1,91:1 · 1200 × 630", w: 1200, h: 630, file: "horizontal" }
 };
 function profileFirst(M) {
-  return profileSentence(M).head.replace(/^Te inclinas por/, "Me inclino por").replace(/^Tus respuestas no se inclinan/, "Mis respuestas no se inclinan");
+  return profileSentence(M).head.replace(/^(En [^,]+, )?te inclinas por/i, (m, p) => p ? `${p}me inclino por` : "Me inclino por").replace(/^(En [^,]+, )?tus respuestas no se inclinan/i, (m, p) => p ? `${p}mis respuestas no se inclinan` : "Mis respuestas no se inclinan");
 }
 function buildShareText() {
   const st = S, M = MODEL, top = M.prov[0];
-  const lines = ["He hecho el Test 29N, un test político para las elecciones generales del 29N."];
-  if (SH.party && top) lines.push(`Mi mayor coincidencia en ${PROV[st.prov].name}: ${pName(top.pid, st.prov)} (${top.pct} %).`);
-  lines.push(`Mi perfil: ${lcFirst(profileFirst(M))}`);
-  lines.push("", `¿Y tú? Haz el test aquí: ${siteUrl()}`);
+  const t = topicOf(st), tk = t && Object.keys(TOPICS).find((k) => TOPICS[k] === t);
+  const lines = [t ? `He hecho el test de ${t.label.toLowerCase()} del Test 29N, para las elecciones generales del 29N.` : "He hecho el Test 29N, un test político para las elecciones generales del 29N."];
+  if (SH.party && top) lines.push(`Mi mayor coincidencia${t ? " en este tema" : ""} en ${PROV[st.prov].name}: ${pName(top.pid, st.prov)} (${top.pct} %).`);
+  if (!t) lines.push(`Mi perfil: ${lcFirst(profileFirst(M))}`);
+  lines.push("", `¿Y tú? Haz el test aquí: ${t ? `${siteUrl().replace(/[^/]*$/, "")}?tema=${tk}` : siteUrl()}`);
   return lines.join("\n");
 }
 // X cuenta cada enlace como 23 caracteres
@@ -1963,7 +1994,7 @@ function drawBrand(g, x, y, size) {
 }
 function drawDims(g, x, y, w, rowH, M, opts) {
   const nameW = opts.nameW, trackX = x + nameW, trackW = w - nameW;
-  BANK.dims.forEach((d, i) => {
+  (opts.dims || BANK.dims).forEach((d, i) => {
     const cy = y + i * rowH + rowH / 2, o = M.user.dims[d.id];
     g.fillStyle = CC.ink; g.font = cf(700, opts.fs); g.textBaseline = "middle"; g.fillText(d.name, x, cy - (opts.poles ? opts.fs * 0.15 : 0));
     if (opts.poles) { g.font = cf(500, opts.fs * 0.62); g.fillStyle = CC.ink3; g.fillText(o ? (Math.abs(o.v) < 15 ? "Equilibrio" : o.v < 0 ? d.a : d.b) : "Sin datos", x, cy + opts.fs * 0.78); }
@@ -1993,6 +2024,24 @@ function drawParty(g, x, y, w, h, M, st, big) {
   g.font = cf(900, fl.size); g.fillStyle = CC.ink;
   fl.lines.forEach((l, i) => g.fillText(l, x + pad * 1.4 + sw, sy + sw / 2 + fl.size * 0.35 + (i - (fl.lines.length - 1) / 2) * fl.size * 1.05));
 }
+// Siguientes coincidencias (tarjetas de los tests por tema): color, nombre, barra y porcentaje
+function drawNext(g, x, y, w, rowH, M, st, fs, n) {
+  M.prov.slice(1, 1 + n).forEach((r, i) => {
+    const cy = y + i * rowH, sw = fs * 1.5;
+    g.fillStyle = P[r.pid].color; rrect(g, x, cy + (rowH - sw) / 2 - fs * 0.25, sw, sw, 6); g.fill();
+    g.fillStyle = textOn(P[r.pid].color); g.font = cf(900, sw * 0.26); g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(P[r.pid].ab, x + sw / 2, cy + rowH / 2 - fs * 0.25); g.textAlign = "left";
+    const pct = `${r.pct}%`; g.font = cf(850, fs * 1.1); const pw = g.measureText(pct).width;
+    g.fillStyle = CC.ink; g.fillText(pct, x + w - pw, cy + rowH / 2 - fs * 0.25);
+    const nx = x + sw + fs * 0.7, nw = w - (nx - x) - pw - fs;
+    g.font = cf(700, fs); let name = pName(r.pid, st.prov);
+    while (g.measureText(name).width > nw && name.length > 4) name = name.slice(0, -2) + "…";
+    g.fillText(name, nx, cy + rowH / 2 - fs * 0.35);
+    const by = cy + rowH / 2 + fs * 0.55, bh = Math.max(6, fs * 0.28);
+    g.fillStyle = CC.rule2; rrect(g, nx, by, nw, bh, bh / 2); g.fill();
+    g.fillStyle = CC.ink; rrect(g, nx, by, Math.max(bh, nw * r.pct / 100), bh, bh / 2); g.fill();
+    g.textBaseline = "alphabetic";
+  });
+}
 async function drawCard(fmt) {
   await fontsReady();
   const st = S, M = MODEL, f = FMT[fmt], W = f.w, H = f.h;
@@ -2005,40 +2054,59 @@ async function drawCard(fmt) {
   const L = m + (fmt === "wide" ? 36 : 56), R = W - L, CW = R - L;
   const line = (y) => { g.strokeStyle = CC.ink; g.lineWidth = 4; g.beginPath(); g.moveTo(m, y); g.lineTo(W - m, y); g.stroke(); };
   const label = (t, x, y, s) => { stretch(g, "semi-condensed"); g.font = cf(700, s); g.fillStyle = CC.ink2; g.fillText(t, x, y); stretch(g, "normal"); };
+  const labelR = (t, y, s) => { stretch(g, "semi-condensed"); g.font = cf(700, s); const w = g.measureText(t).width; stretch(g, "normal"); label(t, R - w, y, s); };
+  // Test por tema: solo las dimensiones que mide ese tema, centradas en el hueco disponible
+  const td = topicDims(st), dl = td ? BANK.dims.filter((d) => td.includes(d.id)) : BANK.dims, nd = dl.length || 1;
+  const dimsAt = (y, avail, maxRow) => { const rowH = Math.min(maxRow, avail / nd); return { rowH, y: td ? y + (avail - rowH * nd) / 2 : y }; };
+  const kind = topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · 29N";
   const footer = (y, s) => {
     g.setLineDash([10, 10]); g.strokeStyle = CC.rule; g.lineWidth = 3; g.beginPath(); g.moveTo(L, y - s * 1.6); g.lineTo(R, y - s * 1.6); g.stroke(); g.setLineDash([]);
     g.font = cf(850, s); g.fillStyle = CC.ink; g.fillText("¿Y tú? Haz el test", L, y);
     g.font = cf(600, s * 0.78); g.fillStyle = CC.ink2; const u = siteHost(); g.fillText(u, R - g.measureText(u).width, y);
   };
   if (fmt === "story") {
-    drawBrand(g, L, m + 104, 54); label("TEST POLÍTICO · ELECCIONES DEL 29N", L, m + 176, 26); line(m + 214);
+    drawBrand(g, L, m + 104, 54); label(topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · ELECCIONES DEL 29N", L, m + 176, 26); line(m + 214);
     let y = m + 300; label("MI RESULTADO", L, y, 28); y += 30;
     const fl = fitLines(g, head, CW, 5, [74, 66, 60, 54, 50]); g.fillStyle = CC.ink;
     fl.lines.forEach((l, i) => { g.font = cf(850, fl.size); g.fillText(l, L, y + fl.size * (i + 1) * 1.06); });
     y += fl.size * fl.lines.length * 1.06 + 50;
     if (withParty) { drawParty(g, L, y, CW, 230, M, st, 88); y += 230 + 58; }
-    label("MIS SIETE DIMENSIONES", L, y, 26); y += 18;
-    const rowH = Math.min(110, (H - m - 170 - y) / 7);
-    drawDims(g, L, y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 84 });
+    label(td ? "MI POSICIÓN EN ESTE TEMA" : "MIS SIETE DIMENSIONES", L, y, 26); y += 18;
+    const sd = td ? { rowH: 110, y } : dimsAt(y, H - m - 170 - y, 110), rowH = sd.rowH;
+    drawDims(g, L, sd.y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 84, dims: dl });
+    if (td && withParty) { y += rowH * nd + 60; label("OTRAS COINCIDENCIAS EN ESTE TEMA", L, y, 26); drawNext(g, L, y + 24, CW, 110, M, st, 34, 3); }
     footer(H - m - 64, 40);
   } else if (fmt === "square") {
-    drawBrand(g, L, m + 92, 44); label("TEST POLÍTICO · 29N", R - 300, m + 86, 22); line(m + 136);
+    drawBrand(g, L, m + 92, 44); labelR(kind, m + 86, 22); line(m + 136);
     let y = m + 170;
     const fl = fitLines(g, head, CW, withParty ? 3 : 4, [56, 50, 44, 40, 36]); g.fillStyle = CC.ink;
     fl.lines.forEach((l, i) => { g.font = cf(850, fl.size); g.fillText(l, L, y + fl.size * (i + 1) * 1.06); });
     y += fl.size * fl.lines.length * 1.06 + 34;
     if (withParty) { drawParty(g, L, y, CW, 168, M, st, 66); y += 168 + 30; }
-    const rowH = Math.min(62, (H - m - 120 - y) / 7);
-    drawDims(g, L, y, CW, rowH, M, { nameW: 330, fs: 27, bar: 10, poles: false });
+    if (td && withParty) {
+      drawDims(g, L, y, CW, 70, M, { nameW: 330, fs: 27, bar: 10, poles: true, dims: dl });
+      const ny = y + 70 * nd + 22, nh = (H - m - 120 - ny) / 3;
+      drawNext(g, L, ny, CW, Math.min(64, nh), M, st, 24, 3);
+    } else {
+      const sq = dimsAt(y, H - m - 120 - y, td ? 90 : 62);
+      drawDims(g, L, sq.y, CW, sq.rowH, M, { nameW: 330, fs: 27, bar: 10, poles: !!td, dims: dl });
+    }
     footer(H - m - 40, 32);
   } else {
-    drawBrand(g, L, m + 70, 36); label("TEST POLÍTICO · 29N", R - 236, m + 64, 18); line(m + 100);
+    drawBrand(g, L, m + 70, 36); labelR(kind, m + 64, 18); line(m + 100);
     const colW = CW * 0.47, rx = L + colW + 40, rw = R - rx;
     let y = m + 122;
     const fl = fitLines(g, head, colW, withParty ? 4 : 6, [38, 34, 30, 27, 24]); g.fillStyle = CC.ink;
     fl.lines.forEach((l, i) => { g.font = cf(850, fl.size); g.fillText(l, L, y + fl.size * (i + 1) * 1.08); });
     if (withParty) drawParty(g, L, H - m - 210, colW, 128, M, st, 50);
-    drawDims(g, rx, m + 120, rw, 50, M, { nameW: 220, fs: 21, bar: 8, poles: false });
+    if (td && withParty) {
+      drawDims(g, rx, m + 120, rw, 64, M, { nameW: 220, fs: 21, bar: 8, poles: true, dims: dl });
+      const ny = m + 120 + 64 * nd + 40; label("OTRAS COINCIDENCIAS", rx, ny, 16);
+      drawNext(g, rx, ny + 12, rw, 62, M, st, 20, 3);
+    } else {
+      const wd = dimsAt(m + 120, 350, td ? 80 : 50);
+      drawDims(g, rx, wd.y, rw, wd.rowH, M, { nameW: 220, fs: 21, bar: 8, poles: !!td, dims: dl });
+    }
     footer(H - m - 26, 24);
   }
   return c;
@@ -2279,6 +2347,15 @@ async function boot() {
   const shared = decodeShare(location.hash);
   count(shared ? "/compartido" : "/", shared ? "Resultado compartido" : "Inicio");
   if (shared) { SHARED = shared; store.set(FRIEND_KEY, location.hash); openResults(); return; }
+  const tema = new URLSearchParams(location.search).get("tema");
+  if (tema && TOPICS[tema]) {
+    try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
+    if (!hasSaved()) { startTopic(tema, false); return; }
+    // Con un test guardado no se sustituye sin preguntar: se muestra la portada con el tema señalado
+    go("home", { focus: false }); const b = $(`#topic-list [data-tema="${tema}"]`);
+    if (b) { b.classList.add("is-target"); b.scrollIntoView({ block: "center" }); b.focus({ preventScroll: true }); }
+    return;
+  }
   if (S && S.stage === "done" && answered(S).length) { openResults(); return; }
   go("home", { focus: false });
 }

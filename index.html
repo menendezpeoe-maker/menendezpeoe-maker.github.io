@@ -36,7 +36,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuándo son las elecciones generales?","acceptedAnswer":{"@type":"Answer","text":"El domingo 29 de noviembre de 2026. Las convoca el Real Decreto 806/2026, publicado en el BOE el 6 de octubre. La campaña electoral va del 13 al 27 de noviembre."}},{"@type":"Question","name":"¿Cómo funciona el test?","acceptedAnswer":{"@type":"Answer","text":"Respondes a afirmaciones sobre los debates reales de España, del 1 al 5 o «No lo sé», con un contexto neutral en cada pregunta. Al final eliges tu provincia y el test compara tus respuestas, una a una, con las posturas de las candidaturas que se presentan allí. Hay versiones de 15, 24, 48 y 107 preguntas."}},{"@type":"Question","name":"¿Es neutral?","acceptedAnswer":{"@type":"Answer","text":"Es independiente y no tiene vínculo con ningún partido. Cada pregunta explica los argumentos de ambos lados, las afirmaciones se formulan en los dos sentidos y el test publica todas las posturas de los partidos e indica si están documentadas o estimadas."}},{"@type":"Question","name":"¿Me dice a quién votar?","acceptedAnswer":{"@type":"Answer","text":"No. Te muestra cuánto coincides con cada candidatura y en qué estáis de acuerdo o no. No es una recomendación de voto ni una encuesta: la decisión es tuya."}},{"@type":"Question","name":"¿Guarda mis datos?","acceptedAnswer":{"@type":"Answer","text":"No hay registro ni cookies, y no se pide ningún dato personal aparte de la provincia. Tus respuestas y tu provincia se guardan solo en tu navegador y no se envían a ningún servidor. Para saber cuánta gente usa el test se cuentan las visitas con GoatCounter, sin cookies y nunca las respuestas. Más detalles en Privacidad y aviso legal."}}]}</script>
 <link rel="preload" href="assets/fonts/Archivo-normal-latin-258a93fe.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=5bb6fc279a">
-<link rel="stylesheet" href="assets/papeleta.css?v=10512a1a8d">
+<link rel="stylesheet" href="assets/papeleta.css?v=3965693306">
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>
 <body>
@@ -136,6 +136,12 @@
       </ul>
     </section>
 
+    <section class="wrap band" id="temas" aria-labelledby="temas-h">
+      <h2 id="temas-h" class="h2">Tests por tema</h2>
+      <p class="small muted">¿Solo te interesa un asunto? Responde 6 o 7 preguntas sobre ese tema y mira con qué candidaturas coincides en él. Después puedes seguir con el test completo sin perder tus respuestas.</p>
+      <ul class="topic-list" id="topic-list"></ul>
+    </section>
+
     <section class="wrap band" id="faq" aria-labelledby="faq-h">
       <h2 id="faq-h" class="h2">Preguntas frecuentes</h2>
       <div class="faq">
@@ -225,11 +231,11 @@
 <footer class="site-foot">
   <div class="wrap foot-row">
     <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-    <p class="muted"><button type="button" class="link-btn" data-go="method" data-anchor="m-priv" style="padding:0">Privacidad y aviso legal</button> · <a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">Preguntas y posturas actualizadas el 17 de octubre de 2026</span></p>
+    <p class="muted"><button type="button" class="link-btn" data-go="method" data-anchor="m-priv" style="padding:0">Privacidad y aviso legal</button> · <a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">Preguntas y posturas actualizadas el 17 de octubre de 2026</span></p>
   </div>
 </footer>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <div id="tip" class="tip" role="tooltip" hidden></div>
-<script src="assets/papeleta.js?v=2572a9715e" defer></script>
+<script src="assets/papeleta.js?v=b379f449b5" defer></script>
 </body>
 </html>
