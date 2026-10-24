@@ -2,7 +2,7 @@
  "titulo": "Posturas de las candidaturas del Test 29N",
  "licencia": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)",
  "atribucion": "Test 29N (https://test29n.es)",
- "actualizado": "2026-10-18",
+ "actualizado": "2026-10-24",
  "escala": "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B",
  "posturas": [
   {
@@ -18,10 +18,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-11"
   },
   {
    "pregunta_id": "A01",
@@ -36,10 +36,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2025-09-10/congreso-reduccion-jornada-laboral-pp-vox-junts/",
+   "fuente_titulo": "The Objective, votación en el Congreso del 10/09/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-10"
   },
   {
    "pregunta_id": "A01",
@@ -792,10 +792,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
+   "fuente_titulo": "BOE, Real Decreto-ley 8/2023, de 27 de diciembre",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2023-12"
   },
   {
    "pregunta_id": "A03",
@@ -810,10 +810,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "A03",
@@ -1566,10 +1566,10 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "A05",
@@ -4050,10 +4050,10 @@
    "postura_texto": "Más bien B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "B02",
@@ -4068,10 +4068,10 @@
    "postura_texto": "Claramente A: Construir mucho más, liberando suelo y agilizando licencias",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
+   "fuente_titulo": "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-10-22"
   },
   {
    "pregunta_id": "B02",
@@ -4446,10 +4446,10 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
+   "fuente_titulo": "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-18"
   },
   {
    "pregunta_id": "B03",
@@ -4464,10 +4464,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
+   "fuente_titulo": "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-10-19"
   },
   {
    "pregunta_id": "B03",
@@ -5220,10 +5220,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/?p=625995",
+   "fuente_titulo": "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-02-20"
   },
   {
    "pregunta_id": "B05",
@@ -8082,10 +8082,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "C03",
@@ -8478,10 +8478,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/",
+   "fuente_titulo": "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-11-05"
   },
   {
    "pregunta_id": "C04",
@@ -8874,10 +8874,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/",
+   "fuente_titulo": "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2023-11-09"
   },
   {
    "pregunta_id": "C05",
@@ -8892,10 +8892,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf",
+   "fuente_titulo": "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2023-07-19"
   },
   {
    "pregunta_id": "C05",
@@ -10816,7 +10816,7 @@
    "partido": "PSOE",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -10836,10 +10836,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://es.ara.cat/politica/feijoo-plantea-reforma-partido-gane-elecciones-tenga-plus-diputados_1_5783437.html",
+   "fuente_titulo": "Ara, entrevista de Feijóo en esRadio, 29/06/2026",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-06-29"
   },
   {
    "pregunta_id": "D01",
@@ -11574,10 +11574,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "D03",
@@ -11592,10 +11592,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
+   "fuente_titulo": "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-10-19"
   },
   {
    "pregunta_id": "D03",
@@ -11952,10 +11952,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776",
+   "fuente_titulo": "BOE, Ley Orgánica 1/2024, de amnistía",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2024-06-11"
   },
   {
    "pregunta_id": "D04",
@@ -11970,10 +11970,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html",
+   "fuente_titulo": "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-05-30"
   },
   {
    "pregunta_id": "D04",
@@ -12996,10 +12996,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://es.ara.cat/politica/relacion-psoe-monarquia_1_5823620.html",
+   "fuente_titulo": "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2026-08-13"
   },
   {
    "pregunta_id": "D07",
@@ -14454,10 +14454,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "E02",
@@ -14814,10 +14814,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza",
+   "fuente_titulo": "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-10-03"
   },
   {
    "pregunta_id": "E03",
@@ -14832,10 +14832,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/",
+   "fuente_titulo": "Onda Vasca, enmienda a la totalidad del PP en el Congreso, 12/12/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-12-12"
   },
   {
    "pregunta_id": "E03",
@@ -15913,9 +15913,9 @@
    "estimada": false,
    "nota": "",
    "fuente_url": "https://es.ara.cat/politica/psoe-sumar-pactan-despenalizar-injurias-corona-ofensas-sentimientos-religiosos_1_5769460.html",
-   "fuente_titulo": "Ara, junio de 2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-06"
+   "fuente_titulo": "Ara, pacto PSOE-Sumar para reformar el Código Penal, 15/06/2026",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2026-06-15"
   },
   {
    "pregunta_id": "E06",
@@ -16668,10 +16668,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "E08",
@@ -16686,10 +16686,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "E08",
@@ -17838,10 +17838,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx",
+   "fuente_titulo": "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2026-04-14"
   },
   {
    "pregunta_id": "F02",
@@ -18234,10 +18234,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.menorca.info/actualidad/nacional/2026/05/03/2621747/ofensiva-del-psoe-toda-espana-europa-contra-prioridad-nacional-vox.html",
+   "fuente_titulo": "Menorca – Es Diari (EFE), comunicado del PSOE contra la «prioridad nacional», 03/05/2026",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2026-05-03"
   },
   {
    "pregunta_id": "F03",
@@ -19834,12 +19834,12 @@
    "partido": "Partido Popular",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "F07",
@@ -21816,10 +21816,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html",
+   "fuente_titulo": "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2025-12-12"
   },
   {
    "pregunta_id": "G03",
@@ -21834,10 +21834,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/",
+   "fuente_titulo": "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-05-24"
   },
   {
    "pregunta_id": "G03",
@@ -22284,10 +22284,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "G04",
@@ -23958,10 +23958,10 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857",
+   "fuente_titulo": "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2025-06"
   },
   {
    "pregunta_id": "G09",
@@ -23976,10 +23976,10 @@
    "postura_texto": "Más bien A: Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf",
+   "fuente_titulo": "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2026-04-27"
   },
   {
    "pregunta_id": "G09",
@@ -24374,7 +24374,7 @@
    "nota": "",
    "fuente_url": "https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html",
    "fuente_titulo": "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025",
-   "fuente_tipo": "gobierno",
+   "fuente_tipo": "declaracion",
    "fuente_fecha": "2025-06-19"
   },
   {
@@ -24786,10 +24786,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "H02",
@@ -25578,10 +25578,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831",
+   "fuente_titulo": "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2025-09-24"
   },
   {
    "pregunta_id": "H04",
@@ -27324,10 +27324,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html",
+   "fuente_titulo": "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-10-15"
   },
   {
    "pregunta_id": "H09",
@@ -28078,12 +28078,12 @@
    "partido": "PSOE",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "I02",
@@ -29554,7 +29554,7 @@
    "partido": "Partido Popular",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "fuente_url": "",
    "fuente_titulo": "",
@@ -31588,12 +31588,12 @@
    "partido": "Partido Popular",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html",
+   "fuente_titulo": "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-05-24"
   },
   {
    "pregunta_id": "J03",
@@ -32756,14 +32756,14 @@
    "opcion_b": "",
    "partido_id": "psoe",
    "partido": "PSOE",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
-   "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
+   "nota": "Su programa de 2023 promete fijar por ley tiempos máximos de espera comunes en todo el Sistema Nacional de Salud (120 días para operaciones y 60 para consultas).",
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "J08",
@@ -34054,12 +34054,12 @@
    "partido": "PSOE",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "K03",
@@ -34072,12 +34072,12 @@
    "partido": "Partido Popular",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "K03",
@@ -34416,10 +34416,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://forbes.es/?p=672070",
+   "fuente_titulo": "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-03"
   },
   {
    "pregunta_id": "K04",
@@ -34434,10 +34434,10 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "K04",
@@ -34848,10 +34848,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "K05",
@@ -36756,10 +36756,10 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
+   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-07"
   },
   {
    "pregunta_id": "L02",
@@ -36772,12 +36772,12 @@
    "partido": "Partido Popular",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48",
+   "fuente_titulo": "Programa electoral del PP de 2023",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07-04"
   },
   {
    "pregunta_id": "L02",
@@ -37152,10 +37152,10 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
+   "fuente_titulo": "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2023-03-01"
   },
   {
    "pregunta_id": "L03",
@@ -37170,10 +37170,10 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/",
+   "fuente_titulo": "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-04-27"
   },
   {
    "pregunta_id": "L03",
@@ -39112,12 +39112,12 @@
    "partido": "PSOE",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "Votó en contra de la ley de Vox, aunque se mostró dispuesto a negociar la prohibición que propone Junts.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "fuente_url": "https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html",
+   "fuente_titulo": "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-14"
   },
   {
    "pregunta_id": "L09",
