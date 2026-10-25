@@ -1324,7 +1324,7 @@ function propStatus(pid, qid, st) {
   return su === sp ? { k: "ok", txt: "Coincide con lo que respondiste" } : { k: "ko", txt: "Choca con lo que respondiste" };
 }
 function cmpList(items, ab, empty, pid = null) {
-  const row = (i) => `<li><b>${esc(i.q.short)}</b><span>Tú: ${esc(ansBrief(i.q, i.u))} · ${esc(ab)}: <span${i.est ? ' class="est" title="Postura estimada"' : ""}>${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span>${pid ? srcLink(i.q, pid) : ""}</span></li>`;
+  const row = (i) => `<li><b>${esc(i.q.short)}</b><span>Tú: ${esc(ansBrief(i.q, i.u))} · ${esc(ab)}: <span${i.est ? ' class="est" title="Postura estimada"' : ""}>${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span>${pid ? srcLink(i.q, pid) : ""}</span>${pid && posWhy(i.q, pid) ? `<span class="why-line">${esc(posWhy(i.q, pid))} ${errLink(i.q, pid)}</span>` : ""}</li>`;
   if (!items.length) return `<ul class="cmp"><li class="empty">${empty}</li></ul>`;
   return `<ul class="cmp">${items.slice(0, 3).map(row).join("")}</ul>${items.length > 3 ? `<details class="more"><summary>Ver ${items.length - 3} más</summary><ul class="cmp" style="margin-top:8px">${items.slice(3).map(row).join("")}</ul></details>` : ""}`;
 }
@@ -1649,12 +1649,15 @@ function renderSupport() {
     </div>`;
 }
 
-// Notas sobre discrepancias entre programa, declaraciones y votos (data/preguntas.json → notes)
+// Por qué tiene cada partido su postura: justificación (why), nota de discrepancia (notes), fuente (src) y aviso de error
+const ERR_MAIL = "menendezpeoe@gmail.com";
+const errLink = (q, pid) => `<a class="err-link" href="mailto:${ERR_MAIL}?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}&body=${encodeURIComponent(`Pregunta: ${q.text}\nPartido: ${P[pid].name}\n\n¿Qué está mal y qué fuente lo muestra?\n`)}">¿Ves un error?</a>`;
+const posWhy = (q, pid) => [q.why?.[pid], q.notes?.[pid]].filter(Boolean).join(" ");
 function posNotes(q, pids) {
-  const n = Object.entries(q.notes || {}).filter(([pid]) => pids.includes(pid));
-  const src = Object.entries(q.src || {}).filter(([pid]) => pids.includes(pid));
-  return (n.length ? `<ul class="pos-notes">${n.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : "")
-    + (src.length ? `<p class="unk">Fuentes: ${src.map(([pid, [url, label, type]]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(P[pid].ab)} · ${esc(label)}</a>${type ? ` <span class="src-t">(${esc(SRC_TYPE[type])})</span>` : ""}`).join(" · ")}.</p>` : "");
+  const rows = pids.filter((pid) => q.pos[pid] && (q.why?.[pid] || q.notes?.[pid] || q.src?.[pid]));
+  if (!rows.length) return "";
+  return `<details class="why-box"><summary>Por qué piensa así cada partido (${rows.length})</summary><ul class="pos-notes">${rows.map((pid) => { const s = q.src?.[pid];
+    return `<li><b>${esc(P[pid].ab)}${q.est.includes(pid) ? " · estimada" : ""}:</b> ${esc(posWhy(q, pid) || "Postura documentada.")}<span class="why-meta">${s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a>${s[2] ? ` <span class="src-t">(${esc(SRC_TYPE[s[2]])})</span>` : ""} · ` : ""}${errLink(q, pid)}</span></li>`; }).join("")}</ul></details>`;
 }
 function bindResults() {
   const root = $("#v-results");
@@ -2281,7 +2284,7 @@ function drawExplorer() {
       return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<span class="chip${q.est.includes(pid) ? " est" : ""}"${EX.party === pid ? ' style="outline:2.5px solid var(--ink);background:var(--mark-2)"' : ""} title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</span>`).join("")}</span></div>`;
     }).join("");
     const unk = PIDS.filter((pid) => !q.pos[pid]);
-    const focus = EX.party ? (q.pos[EX.party] ? `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> ${esc(answerText(q, q.pos[EX.party]))}${q.est.includes(EX.party) ? " (estimada)" : " (documentada)"}${srcLink(q, EX.party)}</p>` : `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> sin postura conocida</p>`) : "";
+    const focus = EX.party ? (q.pos[EX.party] ? `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> ${esc(answerText(q, q.pos[EX.party]))}${q.est.includes(EX.party) ? " (estimada)" : " (documentada)"}${srcLink(q, EX.party)}${posWhy(q, EX.party) ? `<span class="why-line">${esc(posWhy(q, EX.party))}</span>` : ""} ${errLink(q, EX.party)}</p>` : `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> sin postura conocida</p>`) : "";
     const d = q.dim ? `${DIM[q.dim].name}: de acuerdo → ${q.dir > 0 ? DIM[q.dim].b : DIM[q.dim].a}` : "Transversal: no mide ninguna dimensión";
     return `<article class="exq"><p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(AREA[q.area].name)}</span><span class="tagd">${esc(d)}</span></p>
       <h3>${esc(q.text)}</h3>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}${focus}
