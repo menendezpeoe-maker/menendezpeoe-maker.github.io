@@ -43,6 +43,11 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
 
+## 25 oct 2026 · Aportación externa para T12 (no publicada)
+- En otra conversación con el titular se buscaron 58 fuentes de Junts, PNV y EH Bildu (programas de 2023 y votaciones del Congreso). Están en `plan/APORTACION-T12.md`, **sin aplicar a `src/` ni publicar**: la web y `dist/` no cambian.
+- **T12:** empieza por revisar y aplicar ese archivo (reglas 8 y 12) y no repitas esas posturas. Hay 11 que cambian de valor (marcadas con ⚠).
+- Fallo menor detectado: 40 notas repiten la justificación y se muestran dos veces (detalle en el mismo archivo).
+
 ## 25 oct 2026 · Cambio pedido · Repetir y donar al terminar
 - El resumen de resultados muestra, junto a «Compartir» y «Reta a un amigo», «Repetir el test» y «Donar» (lleva a las opciones de aportación). Test nuevo en qa/summary.mjs. 20 baterías en verde, publicado y comprobado en la web real; IndexNow 200.
 
