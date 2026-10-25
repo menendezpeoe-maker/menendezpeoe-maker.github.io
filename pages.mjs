@@ -6,6 +6,8 @@ import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
+const CORR = JSON.parse(readFileSync("src/correcciones.json", "utf8"));
+const METH = JSON.parse(readFileSync("src/metodologia.json", "utf8"));
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -50,6 +52,8 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
     return "—";
   };
   const logo = (pid) => { const p = P[pid]; return `<span class="logo${p.ab.length >= 5 ? " long" : ""}" style="background:${p.color};color:${textOn(p.color)}" aria-hidden="true">${esc(p.ab)}</span>`; };
+  const errA = (q, pid) => `<a class="err-link" href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
+  const whyOf = (q, pid) => [q.why?.[pid], q.notes?.[pid]].filter(Boolean).join(" ");
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
@@ -58,7 +62,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/correcciones/">Correcciones</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -100,9 +104,9 @@ ${footer}
     const areas = B.areas.map((a) => {
       const qs = B.questions.filter((q) => q.area === a.id);
       return `<section class="sp-area" aria-labelledby="a-${a.id}"><h3 class="h3" id="a-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h3><ul class="sp-q">${qs.map((q) => {
-        const v = q.pos[pid], est = q.est.includes(pid), note = q.notes?.[pid];
+        const v = q.pos[pid], est = q.est.includes(pid);
         return `<li><span class="q-code">${qCode(q)}</span><div><b>${esc(q.text)}</b>${q.type === "dilema" ? `<span class="small muted">A: ${esc(q.A)} · B: ${esc(q.B)}</span>` : ""}
-          <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}</span>${note ? `<span class="small">${esc(note)}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}</div></li>`;
+          <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}</span>${v && whyOf(q, pid) ? `<span class="small">${esc(whyOf(q, pid))}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}${v ? `<span class="small">${errA(q, pid)}</span>` : ""}</div></li>`;
       }).join("")}</ul></section>`;
     }).join("");
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
@@ -128,12 +132,12 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
       const cols = [1, 2, 3, 4, 5].map((n) => { const ps = live.filter((pid) => q.pos[pid] === n);
         return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<a class="chip${q.est.includes(pid) ? " est" : ""}" href="/partidos/${pid}/" title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</a>`).join("")}</span></div>`; }).join("");
       const unk = live.filter((pid) => !q.pos[pid]);
-      const notes = Object.entries(q.notes || {}).filter(([pid]) => live.includes(pid));
+      const whyRows = live.filter((pid) => q.pos[pid] && whyOf(q, pid));
       const srcs = Object.entries(q.src || {}).filter(([pid]) => live.includes(pid));
       return `<article class="exq" id="${q.id}"><p class="q-meta"><span class="q-code">${qCode(q)}</span>${link ? `<a href="/preguntas/${q.id.toLowerCase()}/">Qué piensa cada partido</a>` : ""}</p><${h} class="sp-qh">${esc(q.text)}</${h}>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}
         <p class="dinfo">${esc(q.ctx)}${q.ley ? ` <b>Marco legal:</b> ${esc(q.ley)}.` : ""}</p>
         <div class="pos5">${cols}</div>
-        ${notes.length ? `<ul class="pos-notes">${notes.map(([pid, t]) => `<li><b>${esc(P[pid].ab)}:</b> ${esc(t)}</li>`).join("")}</ul>` : ""}
+        ${whyRows.length ? `<details class="why-box"><summary>Por qué piensa así cada partido (${whyRows.length})</summary><ul class="pos-notes">${whyRows.map((pid) => `<li><b>${esc(P[pid].ab)}${q.est.includes(pid) ? " · estimada" : ""}:</b> ${esc(whyOf(q, pid))} <span class="small">${errA(q, pid)}</span></li>`).join("")}</ul></details>` : ""}
         ${srcs.length ? `<p class="unk">Fuentes: ${srcs.map(([pid]) => `${esc(P[pid].ab)} · ${srcHTML(q, pid)}`).join(" · ")}.</p>` : ""}
         ${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
   };
@@ -237,7 +241,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
   for (const q of B.questions) for (const pid of PD.order) {
     const v = q.pos[pid]; if (!v) continue;
     const src = q.src?.[pid];
-    rowsOpen.push({ pregunta_id: q.id, area: AREA[q.area].name, pregunta: q.text, tipo: q.type === "dilema" ? "dilema" : "afirmacion", opcion_a: q.A || "", opcion_b: q.B || "", partido_id: pid, partido: P[pid].name, postura: v, postura_texto: posText(q, v), estimada: q.est.includes(pid), nota: q.notes?.[pid] || "", fuente_url: src?.[0] || "", fuente_titulo: src?.[1] || "", fuente_tipo: src?.[2] || "", fuente_fecha: src?.[3] || "" });
+    rowsOpen.push({ pregunta_id: q.id, area: AREA[q.area].name, pregunta: q.text, tipo: q.type === "dilema" ? "dilema" : "afirmacion", opcion_a: q.A || "", opcion_b: q.B || "", partido_id: pid, partido: P[pid].name, postura: v, postura_texto: posText(q, v), estimada: q.est.includes(pid), nota: q.notes?.[pid] || "", justificacion: q.why?.[pid] || "", fuente_url: src?.[0] || "", fuente_titulo: src?.[1] || "", fuente_tipo: src?.[2] || "", fuente_fecha: src?.[3] || "" });
   }
   const cols = Object.keys(rowsOpen[0]);
   mkdirSync(`${OUT}/datos`, { recursive: true });
@@ -463,6 +467,58 @@ ${cta("¿Prefieres el test completo?")}`
   <p class="lede">¿Solo te interesa un asunto? Responde unas pocas preguntas sobre él y mira con qué candidaturas de tu provincia coincides. Después puedes seguir con el test completo sin perder tus respuestas.</p></header>
 <ul class="sp-cards">${topicEntries.map(([k, t]) => `<li><a href="/tests/${k}/"><span><b>Test de ${esc(t.label.toLowerCase())}</b><span class="small muted">${t.ids.length} preguntas · 2 minutos</span></span></a></li>`).join("")}</ul>
 ${cta("O responde el test completo")}`
+  });
+
+  // ── Confianza (T8): correcciones, sobre el proyecto y metodología
+  const posN = (q, v) => (v ? `${v} · ${posText(q, v)}` : "sin postura");
+  const BQ = Object.fromEntries(B.questions.map((q) => [q.id, q]));
+  const corrRows = CORR.filter((c) => BQ[c.id] && P[c.partido]);
+  page({
+    path: "/correcciones/",
+    title: "Correcciones: cambios en las posturas de los partidos · Test 29N",
+    desc: "Registro público de cada cambio en las posturas de las candidaturas del Test 29N, con su fecha, el motivo y la fuente. Generado automáticamente desde el historial de los datos.",
+    crumbs: [{ name: "Correcciones", url: `${SITE}correcciones/` }],
+    body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Correcciones</h1>
+  <p class="lede">Cada vez que cambiamos la postura de una candidatura, queda aquí con su fecha, el motivo y la fuente. La lista se genera automáticamente comparando las versiones publicadas de los datos.</p></header>
+<p class="small muted">${corrRows.length} cambios registrados. Si ves un error en alguna postura, cada una tiene un enlace «¿Ves un error?» o puedes escribir a <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N · corrección")}">menendezpeoe@gmail.com</a>.</p>
+<ol class="corr">${corrRows.map((c) => { const q = BQ[c.id]; return `<li><time datetime="${c.fecha}">${esc(fmtDate(c.fecha))}</time><div><span><b>${esc(P[c.partido].name)}</b> · <a href="/preguntas/${c.id.toLowerCase()}/">${esc(q.short)}</a></span>
+  <span class="small">${c.de === c.a ? `Pasa a postura ${c.estimada ? "estimada" : "documentada"} (sin cambiar el valor: ${esc(posN(q, c.a))}).` : `De «${esc(posN(q, c.de))}»${c.estimadaAntes ? " (estimada)" : ""} a «${esc(posN(q, c.a))}»${c.estimada ? " (estimada)" : ""}.`}</span>
+  ${c.motivo ? `<span class="small muted">${esc(c.motivo)}</span>` : ""}${c.fuente ? `<span class="small muted">Fuente: <a href="${esc(c.fuente[0])}" target="_blank" rel="noopener noreferrer">${esc(c.fuente[1])}</a></span>` : ""}</div></li>`; }).join("")}</ol>
+${cta("Compara tus ideas con las posturas actuales")}`
+  });
+  page({
+    path: "/sobre/",
+    title: "Sobre el Test 29N: quién lo hace, cómo se financia y cómo se corrige",
+    desc: "Quién está detrás del Test 29N, por qué existe, cómo se financia, por qué es independiente y cómo se corrigen los errores.",
+    crumbs: [{ name: "Sobre el proyecto", url: `${SITE}sobre/` }],
+    body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Sobre el proyecto</h1>
+  <p class="lede">El Test 29N es un test político gratuito para las elecciones generales del 29 de noviembre de 2026. Ayuda a comparar tus ideas con las de las candidaturas de tu provincia, tema a tema. No te dice a quién votar.</p></header>
+<section aria-labelledby="h-quien"><h2 class="h2" id="h-quien">Quién lo hace</h2><p>Lo hace una persona a título particular que firma como <b>«Dery»</b>, sin vínculo con ningún partido, medio, empresa ni institución. Se apoya en herramientas de inteligencia artificial para buscar y revisar fuentes, y cada dato publicado se comprueba antes de salir.</p></section>
+<section aria-labelledby="h-porque"><h2 class="h2" id="h-porque">Por qué existe</h2><p>Porque es difícil saber qué propone cada partido en cada tema. El test reúne las posturas de las candidaturas, explica el contexto de cada pregunta de forma neutral y enlaza las fuentes para que cualquiera pueda comprobarlas.</p></section>
+<section aria-labelledby="h-dinero"><h2 class="h2" id="h-dinero">Cómo se financia</h2><p>Es gratuito y no tiene publicidad. Los gastos los cubre quien lo hace, con la ayuda de las aportaciones voluntarias de quien quiera apoyarlo. Aportar es opcional y no cambia ningún resultado. No recibimos dinero de partidos ni de instituciones.</p></section>
+<section aria-labelledby="h-indep"><h2 class="h2" id="h-indep">Independencia y privacidad</h2><ul class="dots"><li>Las mismas reglas para todas las candidaturas: posturas de 1 a 5 basadas en programas, votaciones, leyes y declaraciones, marcadas como «estimadas» cuando no hay una fuente directa.</li><li>Sin registro ni cookies. Tus respuestas se quedan en tu navegador; el contador de visitas no registra lo que respondes.</li><li>No es una encuesta ni una recomendación de voto.</li></ul></section>
+<section aria-labelledby="h-corr"><h2 class="h2" id="h-corr">Cómo se corrigen los errores</h2><p>Cada postura tiene un enlace «¿Ves un error?» que abre un correo con la pregunta y el partido. Revisamos cada aviso con fuentes y, si hay que cambiar algo, el cambio queda en el <a href="/correcciones/">registro de correcciones</a> con su fecha y su motivo. Contacto: <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N")}">menendezpeoe@gmail.com</a>.</p>
+<p class="small muted">Más detalles en la <a href="/metodologia/">metodología</a> y en la página de <a href="/prensa/">prensa</a>.</p></section>`
+  });
+  const M = METH, pN = (pid) => esc(P[pid]?.name || pid);
+  const pctN = (a, b) => Math.round((a / b) * 100);
+  page({
+    path: "/metodologia/",
+    title: "Metodología del Test 29N: cómo se calcula y qué límites tiene",
+    desc: "Cómo calcula el Test 29N tu coincidencia con cada candidatura, con pruebas reproducibles: perfiles que imitan a cada partido, perfiles aleatorios, sesgo hacia el centro y posturas con fuente por partido.",
+    crumbs: [{ name: "Metodología", url: `${SITE}metodologia/` }],
+    body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Metodología</h1>
+  <p class="lede">Cómo se calcula tu coincidencia, cómo lo comprobamos y qué límites tiene. Las cifras de esta página las genera un programa con el mismo cálculo que usa el test (datos del ${esc(fmtDate(M.datos))}).</p></header>
+<section aria-labelledby="h-calc"><h2 class="h2" id="h-calc">Cómo se calcula</h2><ul class="dots"><li>Cada candidatura tiene una postura de 1 a 5 en cada una de las ${M.preguntas} preguntas. Las estimadas pesan menos que las documentadas, y si no conocemos una postura no se inventa.</li><li>Tu coincidencia con cada candidatura compara tus respuestas con sus posturas, pregunta a pregunta. Las preguntas que marcas como importantes y las áreas que eliges como prioritarias pesan más; «ni de acuerdo ni en desacuerdo» pesa menos.</li><li>Solo se comparan las candidaturas que se presentan en tu provincia.</li></ul></section>
+<section aria-labelledby="h-imit"><h2 class="h2" id="h-imit">Prueba 1: responder como cada partido</h2><p>Si alguien responde exactamente como una candidatura (y «ni de acuerdo ni en desacuerdo» donde no conocemos su postura), esa candidatura sale primera en <b>${M.imitacion.primero} de ${M.imitacion.total}</b> casos, cada una en una provincia donde se presenta.</p></section>
+<section aria-labelledby="h-rand"><h2 class="h2" id="h-rand">Prueba 2: perfiles aleatorios y sesgo hacia el centro</h2><p>Con ${M.aleatorios.n} perfiles de respuestas al azar en la provincia de Madrid, la coincidencia media con la primera candidatura es del ${M.aleatorios.mediaPrimero} % y la distancia media con la segunda, de ${String(M.aleatorios.mediaDistancia).replace(".", ",")} puntos. Las que más veces salen primeras son:</p>
+<ol class="dots">${M.aleatorios.ganadores.slice(0, 5).map((g) => `<li>${pN(g.pid)}: ${g.n} de ${M.aleatorios.n} (${pctN(g.n, M.aleatorios.n)} %)</li>`).join("")}</ol>
+<p>Un perfil que responde «ni de acuerdo ni en desacuerdo» a todo coincide sobre todo con ${M.neutral.slice(0, 3).map((x) => `${pN(x.pid)} (${x.pct} %)`).join(", ")}.</p>
+<p><b>Qué significa:</b> las respuestas al azar se compensan y quedan cerca del centro, así que tienden a coincidir más con las candidaturas de posturas más moderadas. No es una preferencia del test, sino un efecto de cualquier cálculo de distancias. Por eso mostramos la solidez del resultado y las coincidencias y discrepancias concretas, no solo un porcentaje.</p></section>
+<section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Posturas con fuente, por candidatura</h2><div class="sim-table-wrap"><table class="sim-table"><thead><tr><th>Candidatura</th><th>Conocidas</th><th>Estimadas</th><th>Con fuente enlazada</th></tr></thead><tbody>${M.posturas.map((r) => `<tr><td>${pN(r.pid)}</td><td>${r.conocidas}</td><td>${r.estimadas}</td><td>${r.conFuente}</td></tr>`).join("")}</tbody></table></div></section>
+<section aria-labelledby="h-lim"><h2 class="h2" id="h-lim">Límites</h2><ul class="dots"><li>Las posturas resumen en una cifra de 1 a 5 posiciones que a veces tienen matices; por eso cada una lleva su justificación y su fuente cuando la hay.</li><li>La mayoría de los partidos aún no ha publicado su programa para el 29N: usamos sus programas de 2023, votaciones, leyes y declaraciones, y los actualizaremos cuando salgan.</li><li>Los partidos pequeños tienen más posturas estimadas.</li><li>El test no mide la confianza en los candidatos, la gestión ni el voto útil: solo la coincidencia de ideas.</li></ul>
+<p class="small muted">Las cifras se generan con <code>qa/metodologia.mjs</code> y los cambios de posturas con <code>qa/correcciones.mjs</code>, ambos en el repositorio público del proyecto. Datos abiertos en <a href="/datos/">/datos/</a>.</p></section>
+${cta("Haz el test")}`
   });
 
   // ── Glosario electoral

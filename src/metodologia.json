@@ -1,0 +1,376 @@
+{
+ "generado": "2026-10-25",
+ "datos": "2026-10-24",
+ "preguntas": 107,
+ "imitacion": {
+  "total": 25,
+  "primero": 25,
+  "detalle": [
+   {
+    "pid": "psoe",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "pp",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "vox",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "fa",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "pod",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "salf",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "pacma",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 77
+   },
+   {
+    "pid": "d21",
+    "prov": "barcelona",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "erc",
+    "prov": "barcelona",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "junts",
+    "prov": "barcelona",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "pnv",
+    "prov": "alava",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "bildu",
+    "prov": "navarra",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "upn",
+    "prov": "navarra",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "gbai",
+    "prov": "navarra",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "bng",
+    "prov": "coruna",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "ccpc",
+    "prov": "laspalmas",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "upc",
+    "prov": "laspalmas",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "drago",
+    "prov": "laspalmas",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "comp",
+    "prov": "alicante",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "cha",
+    "prov": "huesca",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "existe",
+    "prov": "huesca",
+    "primero": true,
+    "pct": 87
+   },
+   {
+    "pid": "mes",
+    "prov": "baleares",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "adel",
+    "prov": "almeria",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "jmm",
+    "prov": "jaen",
+    "primero": true,
+    "pct": 71
+   },
+   {
+    "pid": "soria",
+    "prov": "soria",
+    "primero": true,
+    "pct": 74
+   }
+  ]
+ },
+ "aleatorios": {
+  "n": 300,
+  "semilla": 29,
+  "provincia": "madrid",
+  "ganadores": [
+   {
+    "pid": "psoe",
+    "n": 117
+   },
+   {
+    "pid": "pp",
+    "n": 86
+   },
+   {
+    "pid": "d21",
+    "n": 53
+   },
+   {
+    "pid": "fa",
+    "n": 23
+   },
+   {
+    "pid": "salf",
+    "n": 11
+   },
+   {
+    "pid": "vox",
+    "n": 9
+   },
+   {
+    "pid": "pod",
+    "n": 1
+   }
+  ],
+  "mediaPrimero": 61,
+  "mediaDistancia": 2.1
+ },
+ "neutral": [
+  {
+   "pid": "pp",
+   "pct": 68
+  },
+  {
+   "pid": "psoe",
+   "pct": 68
+  },
+  {
+   "pid": "d21",
+   "pct": 67
+  },
+  {
+   "pid": "salf",
+   "pct": 60
+  },
+  {
+   "pid": "fa",
+   "pct": 60
+  },
+  {
+   "pid": "vox",
+   "pct": 59
+  }
+ ],
+ "posturas": [
+  {
+   "pid": "psoe",
+   "conocidas": 107,
+   "estimadas": 12,
+   "conFuente": 92
+  },
+  {
+   "pid": "pp",
+   "conocidas": 107,
+   "estimadas": 21,
+   "conFuente": 80
+  },
+  {
+   "pid": "vox",
+   "conocidas": 107,
+   "estimadas": 26,
+   "conFuente": 76
+  },
+  {
+   "pid": "fa",
+   "conocidas": 107,
+   "estimadas": 19,
+   "conFuente": 82
+  },
+  {
+   "pid": "pod",
+   "conocidas": 107,
+   "estimadas": 31,
+   "conFuente": 53
+  },
+  {
+   "pid": "salf",
+   "conocidas": 106,
+   "estimadas": 96,
+   "conFuente": 0
+  },
+  {
+   "pid": "pacma",
+   "conocidas": 26,
+   "estimadas": 19,
+   "conFuente": 0
+  },
+  {
+   "pid": "d21",
+   "conocidas": 107,
+   "estimadas": 80,
+   "conFuente": 0
+  },
+  {
+   "pid": "erc",
+   "conocidas": 104,
+   "estimadas": 40,
+   "conFuente": 64
+  },
+  {
+   "pid": "junts",
+   "conocidas": 104,
+   "estimadas": 79,
+   "conFuente": 10
+  },
+  {
+   "pid": "pnv",
+   "conocidas": 99,
+   "estimadas": 78,
+   "conFuente": 0
+  },
+  {
+   "pid": "bildu",
+   "conocidas": 102,
+   "estimadas": 52,
+   "conFuente": 0
+  },
+  {
+   "pid": "upn",
+   "conocidas": 104,
+   "estimadas": 80,
+   "conFuente": 0
+  },
+  {
+   "pid": "gbai",
+   "conocidas": 72,
+   "estimadas": 67,
+   "conFuente": 0
+  },
+  {
+   "pid": "bng",
+   "conocidas": 105,
+   "estimadas": 64,
+   "conFuente": 0
+  },
+  {
+   "pid": "ccpc",
+   "conocidas": 78,
+   "estimadas": 71,
+   "conFuente": 0
+  },
+  {
+   "pid": "upc",
+   "conocidas": 80,
+   "estimadas": 59,
+   "conFuente": 0
+  },
+  {
+   "pid": "drago",
+   "conocidas": 78,
+   "estimadas": 67,
+   "conFuente": 0
+  },
+  {
+   "pid": "comp",
+   "conocidas": 103,
+   "estimadas": 74,
+   "conFuente": 0
+  },
+  {
+   "pid": "cha",
+   "conocidas": 86,
+   "estimadas": 76,
+   "conFuente": 0
+  },
+  {
+   "pid": "existe",
+   "conocidas": 48,
+   "estimadas": 43,
+   "conFuente": 0
+  },
+  {
+   "pid": "mes",
+   "conocidas": 79,
+   "estimadas": 68,
+   "conFuente": 0
+  },
+  {
+   "pid": "adel",
+   "conocidas": 91,
+   "estimadas": 75,
+   "conFuente": 0
+  },
+  {
+   "pid": "jmm",
+   "conocidas": 21,
+   "estimadas": 19,
+   "conFuente": 0
+  },
+  {
+   "pid": "soria",
+   "conocidas": 23,
+   "estimadas": 18,
+   "conFuente": 0
+  }
+ ]
+}
