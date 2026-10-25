@@ -23,7 +23,8 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - T10 · Tests por tema, imágenes para redes y kit: completada y verificada (web real, 24 oct).
 - T5 · Fuentes de PSOE y PP: completada y verificada (web real, 24 oct).
 - T6 · Fuentes de Vox y Frente Amplio: completada y verificada (web real, 24 oct).
-- T7 · Fuentes de Podemos y ERC: completada y verificada (web real, 24 oct). T8, T11, T12 y T12b: pendientes.
+- T7 · Fuentes de Podemos y ERC: completada y verificada (web real, 24 oct).
+- T8 · Justificaciones visibles y confianza: completada (25 oct). T11, T12, T12b y R0: pendientes.
 - R1, R2, S1, S2, P1: pendientes.
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe; la comprueba otra tarea).
 
@@ -41,6 +42,14 @@ Cada tanda hace lo que le dé tiempo en este orden y anota aquí lo que quede. R
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
 
 **Próxima tarea prioritaria:** T9 (20 oct), buscadores y datos abiertos. No depende de nada externo.
+
+## 25 oct 2026 · T8 · Justificaciones visibles y confianza
+- **Justificaciones visibles:** bloque plegable «Por qué piensa así cada partido» en el repaso de tus respuestas, el explorador y las páginas de tema y de pregunta, con la justificación (`why`), la nota (`notes`), la fuente y un enlace «¿Ves un error?». En las fichas de partido de la app y en las páginas de partido, la justificación aparece bajo cada postura. También va en los datos abiertos (columna `justificacion`).
+- **«¿Ves un error?»:** enlace `mailto:` a menendezpeoe@gmail.com con asunto prellenado (pregunta y partido).
+- **/correcciones/:** registro público de cambios de posturas, generado desde el historial de git de `data/preguntas.json` por `qa/correcciones.mjs` → `src/correcciones.json` (84 cambios). Agrupa por día, así que no aparecen los pasos intermedios de una revisión. **Hay que volver a ejecutarlo tras cambiar posturas** (antes de `publish.mjs`).
+- **/sobre/:** quién lo hace (solo «Dery»), por qué existe, cómo se financia (aportaciones voluntarias, sin cifras), independencia, privacidad y política de correcciones.
+- **/metodologia/:** cifras reproducibles de `qa/metodologia.mjs` → `src/metodologia.json`, calculadas con la propia app: imitación (25 de 25 candidaturas salen primeras), 300 perfiles aleatorios (semilla 29) y perfil neutral, con la explicación del sesgo hacia el centro, posturas con fuente por partido y límites. **Hay que volver a ejecutarlo tras cambiar posturas.**
+- **Pruebas:** nueva batería `qa/confianza.mjs` (20 en total).
 
 ## 24 oct 2026 · T7 · Fuentes de las posturas de Podemos y ERC
 - **Adelantada a petición del titular, en modo de bajo consumo:** un subagente por partido (190 posturas sin fuente: 96 de Podemos, 94 de ERC), un revisor y una sola pasada de pruebas. Mismo criterio que T5 y T6.
