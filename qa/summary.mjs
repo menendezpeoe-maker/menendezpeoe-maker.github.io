@@ -58,6 +58,14 @@ console.log("Análisis completo y navegación interna");
   await ctx.close();
 }
 
+console.log("Repetir y donar desde el resumen");
+{
+  const { ctx, page } = await open(390, 844);
+  ok(await page.isVisible('#r-summary [data-act="new"]') && await page.isVisible('#r-summary a[href="#r-support"]'), "el resumen ofrece «Repetir el test» y «Donar» junto a compartir");
+  await page.click('#r-summary a[href="#r-support"]'); await page.waitForTimeout(700);
+  ok(!(await page.isHidden("#r-full")) && await page.isVisible("#r-support a.btn"), "«Donar» despliega y lleva a las opciones de aportación");
+  await ctx.close();
+}
 console.log("Reta a un amigo");
 {
   const { ctx, page } = await open(1100, 900);

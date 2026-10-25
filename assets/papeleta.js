@@ -1048,7 +1048,7 @@ function renderSummary() {
             <div><p class="subh" style="color:var(--ok)">En qué coincidís</p>${yes.length ? `<ul class="sum-l">${yes.map(li).join("")}</ul>` : '<p class="small muted">Ninguna coincidencia clara.</p>'}</div>
             <div><p class="subh" style="color:var(--ko)">En qué chocáis</p>${no.length ? `<ul class="sum-l">${no.map(li).join("")}</ul>` : '<p class="small muted">No hay discrepancias fuertes.</p>'}</div>
           </div>` : ""}
-          ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button></div>
+          ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
           <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
             ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
