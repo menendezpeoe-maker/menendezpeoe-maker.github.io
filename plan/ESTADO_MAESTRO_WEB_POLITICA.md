@@ -57,6 +57,7 @@ Revisado el 23 oct 2026 (tras publicar T9, parte 1). Resume y enlaza; no repite 
 - Publicación: copiar `dist/` a `main` y hacer push; esperar a que aparezca el nuevo `papeleta.js?v=` y ejecutar `node indexnow.mjs`.
 
 ## 8. Tareas programadas (consultadas el 23 oct)
+Calendario vigente: `plan/PLAN.md` y la ficha de `plan/ESTADO.md` (las fechas de aquí son las originales).
 - **Ya disparadas, de una sola vez:** T1 (hecha); T9 (parte 1 hecha y publicada el 23 oct); T2, T3 y T4 (entregadas tarde y sin ejecutar; su contenido se absorbe según el orden de la ficha de `ESTADO.md`).
 - **Activas, en la sesión de las tandas:** T10 (24 oct), T5 (25), T6 (26), T7 (27), T8 (28), T11 (29), R1 (31), R2 (1 nov), S1 (10 nov), S2 (21 nov) y P1 (30 nov). No se han modificado.
 - **[D] Otras activas según el titular:** «Seguimiento Test 29N» y «Comprobar aprobación de Bizum en Stripe». No aparecen en el listado consultado; no duplicarlas.

@@ -25,7 +25,22 @@ SITE_URL=https://test29n.es/ node publish.mjs   # genera dist/
 sh qa/mklocal.sh                                # _local.html para probar
 python3 -m http.server 8765 &                   # raíz (qa con _local.html)
 (cd dist && python3 -m http.server 8766 &)      # dist/
-NODE_PATH=$(npm root -g) node qa/<batería>.mjs  # BASE=https://test29n.es/ para la web real
+node qa/run.mjs <grupo|batería…|todas>         # salida compacta; BASE=https://test29n.es/ para la web real
 node indexnow.mjs                               # tras publicar
 ```
-Baterías: `confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats`. Tras cambiar posturas: `node qa/correcciones.mjs` y `NODE_PATH=$(npm root -g) node qa/metodologia.mjs` (servidor :8765) antes de publicar. La batería `share` solo pasa del todo en el dominio real.
+Baterías (también se pueden lanzar sueltas con `NODE_PATH=$(npm root -g) node qa/<batería>.mjs`): `confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats`. Tras cambiar posturas: `node qa/correcciones.mjs` y `NODE_PATH=$(npm root -g) node qa/metodologia.mjs` (servidor :8765) antes de publicar. La batería `share` solo pasa del todo en el dominio real.
+
+## Mapa del código
+- `assets/papeleta.js`: lógica del test y cálculo de afinidad · `assets/papeleta.css`: estilos.
+- `pages.mjs`: páginas estáticas · `src/*.src.mjs` (contenido) → `build.mjs` → `data/*.json` · `publish.mjs` → `dist/`.
+- Ver secciones sin leer el archivo: `grep -n "// ──" assets/papeleta.js pages.mjs` y `grep -n "^/\* " assets/papeleta.css`.
+
+## Qué pruebas pasar
+Pasa las pruebas con `node qa/run.mjs` (solo detalla lo que falla), no con baterías sueltas. Pasada completa (`todas`) solo antes de publicar.
+
+| Cambio | Grupo |
+|---|---|
+| Posturas o preguntas (`src/`) | `posturas` (incluye `correcciones` y `metodologia`, que reescriben `src/*.json`) |
+| Páginas estáticas (`pages.mjs`) | `paginas` (necesita `dist/` servido en :8766) |
+| Test, cálculo o resultado (`assets/`) | `test` |
+| Compartir, contador o apoyo | `difusion` (`share` solo pasa del todo en el dominio real) |

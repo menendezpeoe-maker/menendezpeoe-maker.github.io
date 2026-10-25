@@ -36,6 +36,7 @@ Para ello:
 Importante: optimizar el consumo no significa recortar la calidad, saltarse verificaciones importantes ni eliminar funcionalidades. Significa evitar trabajo redundante y concentrar los recursos en aquello que realmente mejora la web.
 
 ## 2. Respeta y ejecuta el calendario de trabajo
+Calendario vigente: `plan/PLAN.md` y la ficha de `plan/ESTADO.md` (las fechas de aquí son las originales).
 
 Utiliza el calendario que te he facilitado como hoja de ruta del proyecto, conservando sus fechas, tareas y prioridades.
 
