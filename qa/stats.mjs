@@ -69,6 +69,14 @@ console.log("Visitas y pasos del test");
   const link = (await page.evaluate(() => navigator.clipboard.readText())).match(/#r2[0-9a-z]+/)[0];
   const p2 = await ctx.newPage(); await p2.goto(PUBLIC + "/" + link); await p2.waitForSelector("#r-pols"); await p2.waitForTimeout(300);
   ok(paths(hits).includes("/compartido") && clean(hits), "abrir un resultado compartido se cuenta como «/compartido», sin su contenido");
+  ok(paths(hits).filter((p) => p === "compartir").length === 1, "usar un botón de compartir cuenta «compartir» una vez");
+  await page.click('#r-summary [data-act="challenge"]'); await page.waitForTimeout(200);
+  ok(paths(hits).includes("reto"), "«Reta a un amigo» cuenta «reto»");
+  ok(await p2.locator("#r-useful").count() === 0, "en un resultado compartido no se pregunta si ha sido útil");
+  await page.click('#r-useful [data-useful="si"]'); await page.waitForTimeout(200);
+  ok(paths(hits).includes("util-si") && /Gracias/.test(await page.textContent("#r-useful")) && clean(hits), "«¿Te ha resultado útil?» cuenta «util-si», da las gracias y no envía datos del test");
+  await page.reload(); await page.waitForSelector("#r-share");
+  ok(await page.locator("#r-useful").count() === 0, "una vez respondida, no se vuelve a preguntar");
   await ctx.close();
 }
 

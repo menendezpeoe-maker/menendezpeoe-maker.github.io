@@ -1055,6 +1055,7 @@ function renderSummary() {
             <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
             <p class="small muted">Cada barra va del primer polo de su dimensión (a la izquierda) al segundo (a la derecha); no es el eje izquierda-derecha. <a href="#r-dims" class="link-btn" style="padding:0">Ver el detalle</a></p>
           </details>
+          ${!SHARED && !PREFS.util ? usefulHTML() : ""}
         </div>
       </div>
     </div>`;
@@ -1690,6 +1691,7 @@ function bindResults() {
     const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
     if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
     if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
+    const u = e.target.closest("[data-useful]"); if (u) { answerUseful(u.dataset.useful); return; }
     const a = e.target.closest('a[href^="#r-"]');
     if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
     const b = e.target.closest("button"); if (!b) return;
@@ -1917,7 +1919,19 @@ async function shareInstagram() {
   await downloadCard("story");
   shareStatus(`${$("#sh-status").textContent} En Instagram: pulsa «Tu historia» y elige la imagen de tu galería. Instagram no permite publicar directamente desde una web.`, "ok");
 }
+// Pregunta opcional «¿Te ha resultado útil?»: solo se cuenta el total de síes y noes (sin respuestas ni resultado)
+function usefulHTML() {
+  return `<div class="useful" id="r-useful" role="group" aria-labelledby="useful-q"><p id="useful-q" class="small"><b>¿Te ha resultado útil el test?</b></p><button type="button" class="btn btn-ghost btn-sm" data-useful="si">Sí</button><button type="button" class="btn btn-ghost btn-sm" data-useful="no">No</button></div>`;
+}
+function answerUseful(v) {
+  PREFS.util = v; savePrefs();
+  count(`util-${v}`, v === "si" ? "Útil: sí" : "Útil: no", true);
+  const box = $("#r-useful"); if (!box) return;
+  box.innerHTML = '<p class="small muted" role="status" tabindex="-1">Gracias. Solo se cuenta cuántas personas responden «Sí» o «No», sin ningún dato tuyo.</p>';
+  box.querySelector("p").focus();
+}
 async function challengeFriend() {
+  count("reto", "Reta a un amigo", true);
   const url = `${siteUrl()}#${encodeShare(S)}`;
   const text = "¿Cuánto coincidimos en política? Haz el Test 29N y compárate conmigo:";
   if (!IN_FRAME && navigator.share) {
@@ -1951,6 +1965,7 @@ function bindShare() {
   });
   root.addEventListener("click", (e) => {
     const el = e.target.closest("#sh-x, #sh-wa, #sh-ig, #sh-copy, #sh-dl, #sh-invite, #sh-full"); if (!el) return;
+    count("compartir", "Compartir", true);
     if (el.id === "sh-x") shareStatus("Se ha abierto X en otra pestaña con tu mensaje. Revísalo y publícalo si quieres.", "ok");
     else if (el.id === "sh-wa") shareStatus("Se ha abierto WhatsApp con tu mensaje. Elige el chat o grupo y envíalo.", "ok");
     else if (el.id === "sh-ig") shareInstagram();
@@ -2233,7 +2248,7 @@ function renderMethod() {
           </section>
           <section class="msec" id="m-priv"><h2 class="h2">Privacidad y aviso legal</h2>
             <p>No hay registro ni servidor de respuestas: tu provincia y tus respuestas se guardan solo en el almacenamiento local de tu navegador, y puedes borrarlas con «Repetir el test» en tus resultados o borrando los datos del sitio en tu navegador. El test no pide ningún dato personal aparte de la provincia. El enlace para compartir incluye tus respuestas, tu provincia y tus prioridades. Si abres un resultado que te comparten, se guarda en tu navegador para que puedas compararte con esa persona después de hacer tu test; puedes olvidarlo desde tus resultados.</p>
-            ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test contamos las visitas con GoatCounter, un servicio sin cookies que no guarda datos personales: registra solo qué paso se visita (inicio, test empezado, test terminado, clic en donar), la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, tu provincia ni tu resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
+            ${STATS.goatcounter ? `<p><b>Sin cookies ni publicidad.</b> La web no usa cookies. Para saber cuánta gente usa el test usamos GoatCounter, un servicio sin cookies que no guarda datos personales. Solo cuenta estos pasos: inicio, test empezado, test terminado, compartir, reta a un amigo, clic en donar y la respuesta «Sí» o «No» a «¿Te ha resultado útil?». También recibe la web desde la que llegas, el tamaño de pantalla y datos técnicos del navegador. Nunca se le envían tus respuestas, tu provincia ni tu resultado. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web. Ni GitHub ni GoatCounter reciben tus respuestas.</p>`
               : `<p><b>Sin cookies, analítica ni publicidad.</b> La web no usa cookies ni herramientas de medición de audiencia. Está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de conexión, como la dirección IP, por motivos de seguridad. Las tipografías se sirven desde la propia web: no se hace ninguna petición a terceros mientras usas el test. GitHub no recibe tus respuestas.</p>`}
             <p><b>Aportaciones voluntarias.</b> El test es gratuito y lo seguirá siendo. Los botones de aportación solo abren, en una pestaña nueva, la página de pago de ${esc([DONATE.paypal && "PayPal", (DONATE.applePay || DONATE.bank) && `Stripe (${[DONATE.applePay && "Apple Pay", DONATE.bank && "Bizum"].filter(Boolean).join(" y ")})`].filter(Boolean).join(" o ") || "la plataforma de pago")}: no les enviamos tus respuestas ni tu resultado. Esta web no recibe ni guarda datos de pago; si decides aportar, la plataforma trata tus datos según su propia política de privacidad, y es ella la que confirma el pago. Aportar o no hacerlo no cambia ningún resultado, coincidencia ni postura.</p>
             <p><b>Independencia.</b> El test no tiene vínculo con ningún partido, candidatura ni institución, y no acepta aportaciones a cambio de modificar preguntas, posturas o resultados.</p>

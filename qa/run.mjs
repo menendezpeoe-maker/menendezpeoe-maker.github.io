@@ -3,7 +3,7 @@
 import { spawnSync, execSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
-const TODAS = "confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats".split(" ");
+const TODAS = "confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats rendimiento".split(" ");
 const GRUPOS = {
   todas: TODAS,
   posturas: "correcciones metodologia quick profiles confianza".split(" "), // tras cambiar posturas (escriben src/*.json)

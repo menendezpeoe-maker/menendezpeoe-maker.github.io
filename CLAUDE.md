@@ -28,7 +28,7 @@ python3 -m http.server 8765 &                   # raíz (qa con _local.html)
 node qa/run.mjs <grupo|batería…|todas>         # salida compacta; BASE=https://test29n.es/ para la web real
 node indexnow.mjs                               # tras publicar
 ```
-Baterías (también se pueden lanzar sueltas con `NODE_PATH=$(npm root -g) node qa/<batería>.mjs`): `confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats`. Tras cambiar posturas: `node qa/correcciones.mjs` y `NODE_PATH=$(npm root -g) node qa/metodologia.mjs` (servidor :8765) antes de publicar. La batería `share` solo pasa del todo en el dominio real.
+Baterías (también se pueden lanzar sueltas con `NODE_PATH=$(npm root -g) node qa/<batería>.mjs`): `confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats rendimiento`. Tras cambiar posturas: `node qa/correcciones.mjs` y `NODE_PATH=$(npm root -g) node qa/metodologia.mjs` (servidor :8765) antes de publicar. La batería `share` solo pasa del todo en el dominio real.
 
 ## Mapa del código
 - `assets/papeleta.js`: lógica del test y cálculo de afinidad · `assets/papeleta.css`: estilos.
