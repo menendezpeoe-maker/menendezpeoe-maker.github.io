@@ -12,6 +12,14 @@ const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) { fails.push(msg); console.log("  ✗", msg); } else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
 import { withFullAnalysis } from "./_full.mjs";
+// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+async function startHome(page, mode) {
+  if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
+    mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
+    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+  } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
+}
+
 const browser = withFullAnalysis(await chromium.launch());
 const view = (page) => page.evaluate(() => ["home", "quiz", "prios", "results"].find((v) => !document.querySelector(`#v-${v}`).hidden));
 const saved = (page) => page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.v2")));
@@ -50,18 +58,29 @@ for (const [w, h, dark] of [[390, 844, false], [390, 844, true], [1280, 800, fal
 console.log("Empezar en un toque");
 {
   const { ctx, page } = await open();
-  await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
+  await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
   const s = await saved(page);
-  ok(s && s.stage === "quiz" && s.mode === "rapida" && !("sex" in s) && !("age" in s) && !s.prov, "un toque empieza la versión rápida sin pedir datos (ni sexo, edad o provincia)");
+  ok(s && s.stage === "quiz" && s.mode === "rapida" && !("sex" in s) && !("age" in s) && !s.prov, "empezar (en el móvil: Empezar y Rápida) inicia la versión rápida sin pedir datos (ni sexo, edad o provincia)");
   ok(/\/ 15/.test(await page.textContent("#q-count")), "la versión rápida tiene 15 preguntas");
   await ctx.close();
 }
 {
-  const { ctx, page } = await open();
+  const { ctx, page } = await open({ w: 1100, h: 900 });
   await page.check("#f-mode-media", { force: true });
-  ok(/Versión media: 48 preguntas/.test(await page.textContent("#start-note")), "la nota del botón sigue a la versión elegida");
-  await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
+  ok(/Versión media: 48 preguntas/.test(await page.textContent("#start-note")), "la nota del botón sigue a la versión elegida (escritorio)");
+  await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
   ok(/\/ 48/.test(await page.textContent("#q-count")), "el botón de la portada respeta la versión elegida");
+  await ctx.close();
+}
+{
+  const { ctx, page } = await open();
+  ok(await page.isHidden("#setup") && await page.isHidden("#bn-modes"), "en el móvil, la elección de versión va dentro del banner (sin bloque aparte)");
+  await page.click("#start-btn"); await page.waitForTimeout(150);
+  ok(await page.isVisible("#bn-modes") && (await page.locator("#bn-modes [data-mode]").count()) === 4 && /Ocultar versiones/.test(await page.textContent("#start-btn")) && view(page).then((v) => v === "home"), "«Empezar el test» despliega las 4 versiones en el banner");
+  await page.click("#start-btn"); await page.waitForTimeout(150);
+  ok(await page.isHidden("#bn-modes") && /Empezar el test/.test(await page.textContent("#start-btn")), "pulsarlo otra vez las oculta");
+  await page.click("#start-btn"); await page.click('#bn-modes [data-mode="media"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+  ok(/\/ 48/.test(await page.textContent("#q-count")) && (await saved(page)).mode === "media", "tocar una versión empieza el test con esa versión");
   await ctx.close();
 }
 
@@ -87,7 +106,7 @@ console.log("La pregunta de ejemplo es real");
 console.log("La provincia se pide al final y se recuerda");
 {
   const { ctx, page } = await open();
-  await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
+  await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
   await answerAll(page);
   ok((await page.inputValue("#f-prov")) === "" && await page.isVisible("#f-prov"), "el último paso pide la provincia");
   await page.click("#prio-skip");
@@ -101,7 +120,7 @@ console.log("La provincia se pide al final y se recuerda");
   // Repetir: la provincia se recuerda
   page.once("dialog", (d) => d.accept());
   await page.click('[data-act="new"]'); await page.waitForSelector("#v-home:not([hidden])");
-  await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
+  await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
   await answerAll(page);
   ok((await page.inputValue("#f-prov")) === "valencia", "en el siguiente test recuerda la última provincia elegida");
   await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");

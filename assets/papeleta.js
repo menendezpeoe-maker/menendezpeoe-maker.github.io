@@ -260,6 +260,7 @@ function initHome() {
   if (ex) { $("#ex-code").textContent = qCode(ex); $("#ex-area").textContent = AREA[ex.area].name; $("#ex-text").textContent = ex.text; $("#ex-ctx").textContent = ex.ctx; }
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
+  bindHeroModes();
   $("#start-btn").disabled = false;
   fillSetup();
 }
@@ -271,7 +272,17 @@ const NEXT_MODE = { tema: "expres", rapida: "expres", expres: "media", media: "c
 const MODE_NOTE = { rapida: "unos 3 minutos", expres: "unos 5 minutos", media: "unos 10 minutos", completa: "unos 20 minutos" };
 function renderStartNote() {
   const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
-  $("#start-note").innerHTML = `Versión ${MODES[mode].label.toLowerCase()}: ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}. <a href="#setup">${mode === "rapida" ? "Otras versiones" : "Cambiar de versión"}</a>`;
+  $("#start-note").innerHTML = `<svg class="sn-ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 6v4.3l2.8 1.8"/></svg><span class="sn-txt"><b>Versión ${MODES[mode].label.toLowerCase()}:</b> ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}.</span> <a href="#setup">${mode === "rapida" ? "Otras versiones" : "Cambiar de versión"}</a>`;
+}
+// Móvil: «Empezar el test» despliega las versiones dentro del banner (las mismas del formulario) y cada una empieza el test
+const HERO_MQ = matchMedia("(max-width: 759px)");
+function bindHeroModes() {
+  const box = $("#bn-modes"), grid = $("#bn-mode-grid"), btn = $("#start-btn");
+  grid.innerHTML = $$("#f-modes label").map((l) => { const i = l.querySelector("input"); return `<button type="button" class="bn-mode" data-mode="${i.value}"><b>${esc(l.querySelector("b").textContent)}</b><em>${esc(l.querySelector("em").textContent)}</em><small>${esc(l.querySelector("small").textContent)}</small></button>`; }).join("");
+  const setOpen = (open) => { box.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "Ocultar versiones" : "Empezar el test"; $("#v-home .banner").classList.toggle("modes-open", open); };
+  btn.addEventListener("click", (e) => { if (!HERO_MQ.matches) return; e.preventDefault(); setOpen(box.hidden); if (!box.hidden) { const cur = grid.querySelector(`[data-mode="${($('input[name=mode]:checked') || {}).value || "rapida"}"]`); cur?.focus({ preventScroll: true }); box.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "nearest" }); } });
+  grid.addEventListener("click", (e) => { const b = e.target.closest("[data-mode]"); if (!b) return; const r = $(`#f-mode-${b.dataset.mode}`); if (r) { r.checked = true; renderStartNote(); } setOpen(false); $("#setup").requestSubmit(); });
+  HERO_MQ.addEventListener("change", () => { if (!HERO_MQ.matches) setOpen(false); });
 }
 // La provincia se pide al final y se recuerda la última elegida (solo en este navegador)
 function setProv(v) {

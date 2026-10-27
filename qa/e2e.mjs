@@ -14,6 +14,14 @@ const fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 
 import { withFullAnalysis } from "./_full.mjs";
+// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+async function startHome(page, mode) {
+  if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
+    mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
+    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+  } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
+}
+
 const browser = withFullAnalysis(await chromium.launch());
 async function newPage(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: opts.w || 390, height: opts.h || 860 }, colorScheme: opts.dark ? "dark" : "light", reducedMotion: opts.rm ? "reduce" : "no-preference", hasTouch: !!opts.touch });
@@ -33,8 +41,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.waitForSelector("#start-btn:not([disabled])");
   ok(!(await overflow(page)), "inicio sin scroll horizontal (390px)");
   await page.screenshot({ path: OUT + "m-home.png", fullPage: true });
-  await page.check("#f-mode-expres", { force: true });
-  await page.click("#start-btn");
+  await startHome(page, "expres");
   await page.waitForSelector("#v-quiz:not([hidden])");
   const n = Number((await page.textContent("#q-count")).split("/")[1]);
   ok(n === 24, `exprés tiene 24 preguntas (${n})`);
@@ -135,8 +142,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.goto(BASE);
   await page.waitForSelector("#start-btn:not([disabled])");
   await page.screenshot({ path: OUT + "d-home.png", fullPage: true });
-  await page.check("#f-mode-media", { force: true });
-  await page.click("#start-btn");
+  await startHome(page, "media");
   await page.waitForSelector("#v-quiz:not([hidden])");
   await page.keyboard.press("c");
   ok(await page.isVisible("#ctx"), "tecla C abre el contexto");
@@ -173,7 +179,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.goto(BASE);
   await page.waitForSelector("#start-btn:not([disabled])");
   ok(!(await overflow(page)), "inicio sin scroll horizontal (820px)");
-  await page.click("#start-btn");
+  await startHome(page);
   await page.click("#ctx-toggle");
   const box = await page.locator("#ctx").boundingBox();
   ok(box && box.y + box.height >= 1170, "en tableta el contexto es una hoja inferior");

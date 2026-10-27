@@ -9,6 +9,14 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const fails = [], errors = [];
 const ok = (c, m) => (c ? console.log("  ✓", m) : fails.push(m));
 import { withFullAnalysis } from "./_full.mjs";
+// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+async function startHome(page, mode) {
+  if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
+    mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
+    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+  } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
+}
+
 const browser = withFullAnalysis(await chromium.launch());
 
 for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 900, tag: "escritorio" }]) {
@@ -21,8 +29,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   await page.waitForSelector("#start-btn:not([disabled])");
   ok(/^Test político 2026: ¿con qué partido coincides\? · Elecciones 29N$/.test(await page.title()), "título de la página");
   ok(await page.$eval('meta[property="og:image"]', (m) => m.content.endsWith("og.png")), "metadatos Open Graph");
-  await page.check("#f-mode-expres", { force: true });
-  await page.click("#start-btn");
+  await startHome(page, "expres");
   await page.waitForSelector("#v-quiz:not([hidden])");
   const n = Number((await page.textContent("#q-count")).split("/")[1]);
   for (let i = 0; i < n; i++) {
