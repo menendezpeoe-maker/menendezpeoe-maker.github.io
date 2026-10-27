@@ -29,6 +29,14 @@
 
 Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 
+## 28 oct 2026 · Cambio pedido · Rediseño visual aprobado por el titular
+- Preparado en la rama `propuesta-ui`, revisado por el titular con capturas y vídeos, y publicado con su visto bueno. Sin cambios de contenido ni de datos.
+- **Resultado:** secciones agrupadas en un botón fijo arriba a la derecha (sección actual con icono y anillo de progreso) que abre un menú en 3 grupos con «Estás aquí»; se cierra con el botón, la ✕, Escape o pulsando fuera (`bindResNav`, `navLinks`).
+- **Pulsar otra vez para ocultar:** «Ver/Ocultar el análisis completo» (`setFull`), «Ver/Ocultar su ficha» (`syncCardBtns`) y notas emergentes en táctil (`bindTips`).
+- **Portada:** banner más grande con textura de papeleta, titular a 900, cuadrícula también en el móvil, cifras como marcador, marca amarilla sobre cada título, pasos numerados, ✓ en «Qué lo hace distinto», tests por tema en 2 columnas, letras de las áreas en casillas. Bloque CSS al final de `assets/papeleta.css`.
+- **Móvil:** «Empezar el test» despliega las 4 versiones en el banner (`bindHeroModes`, `#bn-modes`) y el bloque «Elige la versión» se oculta; nota de versión en píldora con reloj; «Gratis · Sin registro · Contexto neutral» en una franja con iconos bajo el banner (`.trust`).
+- **Pruebas:** nuevas en `qa/summary.mjs` y `qa/onboarding.mjs`; `qa/e2e.mjs` y `qa/share.mjs` usan `startHome()`; presupuesto local de `qa/rendimiento.mjs` 960 kB (los datos crecen con las fuentes).
+
 ## 28 oct 2026 · Cambio pedido · Correcciones fuera de la web
 - El registro público de correcciones deja de mostrarse (instrucción permanente en PLAN.md, regla 5). `/correcciones/` es un aviso sin indexar que redirige a `/sobre/`; quitado del pie, de /sobre/, de /metodologia/ y del sitemap (229 URL). Pruebas actualizadas en `qa/confianza.mjs` y `qa/growth.mjs`.
 
