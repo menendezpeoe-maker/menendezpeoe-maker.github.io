@@ -49,6 +49,22 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "B01",
+  "partido": "ccpc",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
+  "fuente": [
+   "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
+   "Público, votación en el Congreso del 28/04/2026",
+   "parlamento",
+   "2026-04-28"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "D01",
   "partido": "bng",
   "de": 2,
@@ -62,6 +78,17 @@
    "programa",
    "2023-07"
   ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "D07",
+  "partido": "pnv",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: no consta ninguna postura del PNV sobre un referéndum entre monarquía y república, así que se deja en el punto medio.",
+  "fuente": null
  },
  {
   "fecha": "2026-10-27",
@@ -156,6 +183,22 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "I01",
+  "partido": "bildu",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
+  "fuente": [
+   "https://orain.eus/es/actualidad/sociedad/2023/11/21/eh-bildu-denuncia-que-pnv-acepta-modelos-linguisticos-y-a-cambio-pseee-concertacion-universal/",
+   "Orain (EITB), EH Bildu ante la ley vasca de educación, 21/11/2023",
+   "prensa",
+   "2023-11-21"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "K04",
   "partido": "bildu",
   "de": 1,
@@ -184,6 +227,22 @@
    "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
    "parlamento",
    "2025-04-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "L01",
+  "partido": "pnv",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
+  "fuente": [
+   "https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html",
+   "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026",
+   "parlamento",
+   "2026-04-30"
   ]
  },
  {

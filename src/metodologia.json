@@ -286,13 +286,13 @@
    "pid": "pnv",
    "conocidas": 99,
    "estimadas": 62,
-   "conFuente": 29
+   "conFuente": 30
   },
   {
    "pid": "bildu",
    "conocidas": 102,
    "estimadas": 44,
-   "conFuente": 34
+   "conFuente": 36
   },
   {
    "pid": "upn",
@@ -310,13 +310,13 @@
    "pid": "bng",
    "conocidas": 105,
    "estimadas": 60,
-   "conFuente": 26
+   "conFuente": 27
   },
   {
    "pid": "ccpc",
    "conocidas": 78,
-   "estimadas": 71,
-   "conFuente": 0
+   "estimadas": 70,
+   "conFuente": 1
   },
   {
    "pid": "upc",
@@ -334,7 +334,7 @@
    "pid": "comp",
    "conocidas": 103,
    "estimadas": 74,
-   "conFuente": 0
+   "conFuente": 1
   },
   {
    "pid": "cha",
