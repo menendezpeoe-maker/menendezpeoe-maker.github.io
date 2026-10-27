@@ -730,18 +730,61 @@ function openResults() {
   go("results");
 }
 
+// Barra de secciones del resultado: iconos, grupos, sección activa y progreso de lectura
+const NAV_ICON = {
+  summary: '<path d="M10 2.5l2.1 4.4 4.8.6-3.5 3.3.9 4.8L10 13.3l-4.3 2.3.9-4.8L3.1 7.5l4.8-.6z"/>',
+  portrait: '<circle cx="10" cy="6.6" r="3.3"/><path d="M3.6 17c.8-3.3 3.4-5.2 6.4-5.2s5.6 1.9 6.4 5.2"/>',
+  dims: '<path d="M3 5.5h14M3 10h14M3 14.5h14"/><circle cx="7" cy="5.5" r="1.7" class="f"/><circle cx="13" cy="10" r="1.7" class="f"/><circle cx="9" cy="14.5" r="1.7" class="f"/>',
+  areas: '<rect x="3" y="3" width="5.8" height="5.8" rx="1.2"/><rect x="11.2" y="3" width="5.8" height="5.8" rx="1.2"/><rect x="3" y="11.2" width="5.8" height="5.8" rx="1.2"/><rect x="11.2" y="11.2" width="5.8" height="5.8" rx="1.2"/>',
+  traits: '<path d="M10 3v14M5 17h10M3.5 7.5h13"/><path d="M3.5 7.5l-2 4.5a2.3 2.3 0 0 0 4 0zM16.5 7.5l-2 4.5a2.3 2.3 0 0 0 4 0z"/>',
+  parties: '<path d="M4.5 17V3.5M4.5 4h9.5l-2 3 2 3H4.5"/>',
+  versus: '<path d="M3 7h11M11 4l3 3-3 3M17 13H6M9 10l-3 3 3 3"/>',
+  map: '<path d="M3 3v14h14"/><circle cx="8" cy="11" r="1.5" class="f"/><circle cx="12" cy="7" r="1.5" class="f"/><circle cx="14.5" cy="12" r="1.5" class="f"/>',
+  solid: '<path d="M10 2.8l6 2.4v4.2c0 3.8-2.6 6.6-6 7.8-3.4-1.2-6-4-6-7.8V5.2z"/><path d="M7.2 10l2 2 3.8-4"/>',
+  share: '<circle cx="15" cy="4.8" r="2.2"/><circle cx="5" cy="10" r="2.2"/><circle cx="15" cy="15.2" r="2.2"/><path d="M7 9l6-3M7 11l6 3"/>',
+  review: '<path d="M7.5 5.5H17M7.5 10H17M7.5 14.5H17"/><path d="M2.8 5.5l1.2 1.2 2-2.2M2.8 10l1.2 1.2 2-2.2M2.8 14.5l1.2 1.2 2-2.2"/>',
+  least: '<circle cx="10" cy="10" r="7"/><path d="M7.2 7.2l5.6 5.6M12.8 7.2l-5.6 5.6"/>',
+  pols: '<circle cx="7" cy="7" r="2.6"/><circle cx="14" cy="8" r="2.1"/><path d="M2.5 16c.6-2.8 2.4-4.2 4.5-4.2s3.9 1.4 4.5 4.2M12 12.4c2.2-.4 4.4.8 5.3 3.6"/>'
+};
+function navLinks() {
+  const groups = [
+    [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]],
+    [["parties", "Partidos"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]],
+    [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]
+  ];
+  return groups.map((g) => g.map(([id, t]) => `<a href="#r-${id}" data-sec="r-${id}"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg><span>${t}</span></a>`).join("")).join('<span class="nav-sep" aria-hidden="true"></span>');
+}
+let NAV_OBS = null, NAV_RAF = 0;
+function bindResNav() {
+  const nav = $("#v-results .res-nav"); if (!nav) return;
+  const track = nav.querySelector(".nav-track"), links = [...track.querySelectorAll("a")], prog = nav.querySelector(".nav-prog");
+  const edges = () => { const max = track.scrollWidth - track.clientWidth; nav.classList.toggle("can-l", track.scrollLeft > 4); nav.classList.toggle("can-r", track.scrollLeft < max - 4); };
+  const setActive = (id) => { for (const a of links) { const on = a.dataset.sec === id; if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    if (on) { const l = a.offsetLeft - track.offsetLeft, r = l + a.offsetWidth; if (l < track.scrollLeft + 24 || r > track.scrollLeft + track.clientWidth - 24) track.scrollTo({ left: l - 24, behavior: reduceMotion() ? "auto" : "smooth" }); } } };
+  const progress = () => { NAV_RAF = 0; const root = $("#v-results"), top = root.offsetTop, h = root.offsetHeight - innerHeight; prog.style.transform = `scaleX(${Math.min(1, Math.max(0, (scrollY - top) / (h || 1)))})`; };
+  track.addEventListener("scroll", edges, { passive: true });
+  nav.addEventListener("click", (e) => { const b = e.target.closest("[data-nav]"); if (b) track.scrollBy({ left: Number(b.dataset.nav) * track.clientWidth * 0.7, behavior: reduceMotion() ? "auto" : "smooth" }); });
+  if (!bindResNav.bound) { bindResNav.bound = true; addEventListener("scroll", () => { if (!NAV_RAF && CURRENT === "results") NAV_RAF = requestAnimationFrame(progress); }, { passive: true }); addEventListener("resize", () => { const n = $("#v-results .res-nav"); if (n) n.querySelector(".nav-track").dispatchEvent(new Event("scroll")); }); }
+  NAV_OBS?.disconnect();
+  NAV_OBS = new IntersectionObserver((ents) => { const vis = ents.filter((x) => x.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]; if (vis) setActive(vis.target.id); }, { rootMargin: "-30% 0px -60% 0px" });
+  for (const a of links) { const sec = document.getElementById(a.dataset.sec); if (sec) NAV_OBS.observe(sec); }
+  setActive("r-summary"); edges(); progress();
+}
+
 function renderResults() {
   const st = ST();
   const next = NEXT_MODE[st.mode] || null;
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
-    <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap">
-      <a href="#r-summary">Resumen</a><a href="#r-portrait">Tu perfil</a><a href="#r-dims">Dimensiones</a><a href="#r-areas">Por temas</a><a href="#r-traits">Firmes y dudas</a><a href="#r-parties">Partidos</a><a href="#r-versus">Comparar</a><a href="#r-map">Mapa</a><a href="#r-solid">Solidez</a>${SHARED ? "" : '<a href="#r-share">Compartir</a>'}<a href="#r-review">Tus respuestas</a><a href="#r-least">Menor coincidencia</a><a href="#r-pols">Políticos</a>
-    </div></nav>
+    <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap nav-wrap">
+      <button type="button" class="nav-arrow nav-l" data-nav="-1" aria-hidden="true" tabindex="-1">‹</button>
+      <div class="nav-track">${navLinks()}</div>
+      <button type="button" class="nav-arrow nav-r" data-nav="1" aria-hidden="true" tabindex="-1">›</button>
+    </div><span class="nav-prog" aria-hidden="true"></span></nav>
     <div class="wrap">
       <section id="r-summary" class="summary res-sec" style="padding-top:34px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
-      <div class="unfold-row"${PREFS.full ? " hidden" : ""}><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">Ver el análisis completo</button><span class="small muted">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
+      <div class="unfold-row${PREFS.full ? " is-open" : ""}"><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">${PREFS.full ? "Ocultar el análisis completo" : "Ver el análisis completo"}</button><span class="small muted unfold-note">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
       <div id="r-full"${PREFS.full ? "" : " hidden"}>
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
@@ -766,6 +809,7 @@ function renderResults() {
         ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
     </div>`;
+  setTimeout(bindResNav, 0);
   invalidateCards(); renderSummary(); renderFriend(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
 }
 
@@ -1195,7 +1239,7 @@ function mapSelHTML() {
     <p class="small">Coincidencia contigo <b>${m.pct} %</b>${m.close != null ? ` · cercanía ideológica <b>${Math.round(m.close * 100)} %</b>` : ""}.</p>
     ${far.length ? `<p class="small">Más lejos de ti en ${joinY(far.map(fmt))}.</p>` : ""}${near.length ? `<p class="small">Más cerca en ${joinY(near.map(fmt))}.</p>` : ""}
     ${!pt.ok ? `<p class="small muted">No aparece en el mapa: le faltan posturas en las dimensiones que más pesan en sus ejes.</p>` : pt.missing.length ? `<p class="small muted">Posición aproximada: sin posturas en ${esc(pt.missing.map((d) => DIM_SHORT[d]).join(", "))}.</p>` : ""}
-    <div class="res-actions"><button type="button" class="btn btn-ghost btn-sm" data-card="${pid}">Ver su ficha</button>${M.prov[0] && M.prov[0].pid !== pid ? `<button type="button" class="btn btn-ghost btn-sm" data-vs="${pid}">Comparar con ${esc(P[M.prov[0].pid].ab)}</button>` : ""}</div>`;
+    <div class="res-actions"><button type="button" class="btn btn-ghost btn-sm" data-card="${pid}" aria-expanded="${UI.extra === pid}">${UI.extra === pid ? "Ocultar su ficha" : "Ver su ficha"}</button>${M.prov[0] && M.prov[0].pid !== pid ? `<button type="button" class="btn btn-ghost btn-sm" data-vs="${pid}">Comparar con ${esc(P[M.prov[0].pid].ab)}</button>` : ""}</div>`;
 }
 function selectMap(pid) {
   UI.mapSel = UI.mapSel === pid ? null : pid;
@@ -1392,7 +1436,7 @@ function renderParties() {
     const p = P[m.pid], here = M.avail.includes(m.pid);
     const tie = i > 0 && list[0].pct - m.pct <= 3;
     const meta = [!here ? "No se presenta en tu provincia" : "", tie ? `Empate técnico con ${P[list[0].pid].ab}` : "", p.tbd ? "Por confirmar" : "", m.padded ? `Solo se pronuncia en ${m.n} de tus respuestas: en ellas coincidís un ${m.raw} %` : "", m.n && m.nEst / m.n > 0.5 ? `Comparada sobre todo con posturas estimadas (${Math.round(m.nEst / m.n * 100)} %)` : "", m.close != null ? `Cercanía ideológica ${Math.round(m.close * 100)} %` : ""].filter(Boolean).join(" · ");
-    return `<li class="${here ? "" : "out"}${i === 0 && here ? " me-top" : ""}"><span class="rn">${i + 1}</span>${logo(m.pid, "sm")}<div class="nm"><b>${esc(here ? pName(m.pid, st.prov) : p.name)}</b><span class="bar"><i style="width:${m.pct}%"></i></span><span class="meta">${esc(meta)}</span><button type="button" class="link-btn rk-card" data-card="${m.pid}">Ver su ficha</button></div><span class="pv"><b>${m.pct} %</b><span>${m.n} comparadas</span></span></li>`;
+    return `<li class="${here ? "" : "out"}${i === 0 && here ? " me-top" : ""}"><span class="rn">${i + 1}</span>${logo(m.pid, "sm")}<div class="nm"><b>${esc(here ? pName(m.pid, st.prov) : p.name)}</b><span class="bar"><i style="width:${m.pct}%"></i></span><span class="meta">${esc(meta)}</span><button type="button" class="link-btn rk-card" data-card="${m.pid}" aria-expanded="${UI.extra === m.pid}">${UI.extra === m.pid ? "Ocultar su ficha" : "Ver su ficha"}</button></div><span class="pv"><b>${m.pct} %</b><span>${m.n} comparadas</span></span></li>`;
   }).join("");
   $("#r-parties").innerHTML = `
     <div class="sec-head"><p class="label">Partidos</p><h2 id="parties-h" class="h2">Coincidencia con las candidaturas</h2>
@@ -1420,11 +1464,15 @@ function showExtraCard(pid, scroll = true) {
   if (scroll) focusCard(pid);
 }
 // «Ver el análisis completo»: se despliega al pulsarlo o al ir a cualquier sección plegada, y se recuerda
-function unfold() {
-  const f = $("#r-full"); if (!f || !f.hidden) return;
-  f.hidden = false; const b = $("#r-unfold"); if (b) { b.setAttribute("aria-expanded", "true"); b.closest(".unfold-row").hidden = true; }
-  PREFS.full = true; savePrefs();
+// Los botones «Ver su ficha» pasan a «Ocultar su ficha» mientras esa ficha está abierta
+function syncCardBtns() { $$("#v-results [data-card]").forEach((x) => { const on = UI.extra === x.dataset.card; x.textContent = on ? "Ocultar su ficha" : "Ver su ficha"; x.setAttribute("aria-expanded", String(on)); }); }
+function setFull(open) {
+  const f = $("#r-full"); if (!f) return;
+  f.hidden = !open; const b = $("#r-unfold");
+  if (b) { b.setAttribute("aria-expanded", String(open)); b.textContent = open ? "Ocultar el análisis completo" : "Ver el análisis completo"; b.closest(".unfold-row").classList.toggle("is-open", open); }
+  PREFS.full = open; savePrefs();
 }
+function unfold() { const f = $("#r-full"); if (f && f.hidden) setFull(true); }
 function focusCard(pid) {
   unfold();
   const c = $(`#card-${pid}`); if (!c) return;
@@ -1689,6 +1737,7 @@ function bindResults() {
   });
   root.addEventListener("click", (e) => {
     const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
+    if (e.target.closest("#r-unfold") && !$("#r-full").hidden) { setFull(false); const r = $("#r-unfold"); r.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); r.focus({ preventScroll: true }); return; }
     if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
     if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
     const u = e.target.closest("[data-useful]"); if (u) { answerUseful(u.dataset.useful); return; }
@@ -1696,10 +1745,10 @@ function bindResults() {
     if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
-    if (b.dataset.card) { showExtraCard(b.dataset.card); return; }
+    if (b.dataset.card) { if (UI.extra === b.dataset.card) { UI.extra = null; $("#pc-extra").innerHTML = ""; } else showExtraCard(b.dataset.card); syncCardBtns(); return; }
     if (b.dataset.vs) { unfold(); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
     if (b.dataset.mapsel) { selectMap(b.dataset.mapsel); return; }
-    if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
+    if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; syncCardBtns(); const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
       const id = b.dataset.q; S.imp[id] = !S.imp[id]; if (!S.imp[id]) delete S.imp[id];
       b.setAttribute("aria-pressed", String(!!S.imp[id])); save(); rerenderAfterEdit(); toast("Resultado recalculado"); return;
@@ -2314,10 +2363,15 @@ function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = fal
 function bindTips() {
   const tip = $("#tip");
   const show = (el, x, y) => { tip.textContent = el.dataset.tip; tip.hidden = false; const r = tip.getBoundingClientRect(); tip.style.left = `${Math.min(window.innerWidth - r.width - 8, Math.max(8, x - r.width / 2))}px`; tip.style.top = `${Math.max(8, y - r.height - 12)}px`; };
-  const hide = () => { tip.hidden = true; };
-  document.addEventListener("pointerover", (e) => { const el = e.target.closest("[data-tip]"); if (el) { const r = el.getBoundingClientRect(); show(el, r.left + r.width / 2, r.top); } });
+  let tipEl = null, tipAt = 0;
+  const hide = () => { tip.hidden = true; tipEl = null; };
+  const open = (el) => { const r = el.getBoundingClientRect(); show(el, r.left + r.width / 2, r.top); tipEl = el; tipAt = Date.now(); };
+  document.addEventListener("pointerover", (e) => { if (e.pointerType === "touch") return; const el = e.target.closest("[data-tip]"); if (el) open(el); });
+  // Al tocar (móvil): el primer toque la muestra y el siguiente la oculta; tocar fuera también la oculta
+  document.addEventListener("click", (e) => { const el = e.target.closest("[data-tip]"); if (!el) { if (!tip.hidden) hide(); return; } if (tipEl === el && !tip.hidden && Date.now() - tipAt > 350) hide(); else if (tipEl !== el || tip.hidden) open(el); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !tip.hidden) hide(); });
   document.addEventListener("pointerout", (e) => { if (e.target.closest("[data-tip]")) hide(); });
-  document.addEventListener("focusin", (e) => { const el = e.target.closest("[data-tip]"); if (el) { const r = el.getBoundingClientRect(); show(el, r.left + r.width / 2, r.top); } else hide(); });
+  document.addEventListener("focusin", (e) => { const el = e.target.closest("[data-tip]"); if (el) open(el); else hide(); });
   addEventListener("scroll", hide, { passive: true });
 }
 

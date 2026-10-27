@@ -48,16 +48,40 @@ console.log("Análisis completo y navegación interna");
   ok(await page.isVisible("#r-parties .pcard"), "un enlace de la navegación interna despliega el análisis y lleva a la sección");
   ok(await page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.prefs")).full === true), "se recuerda que lo has desplegado");
   await page.reload(); await page.waitForSelector("#r-summary .tm-name");
-  ok(await page.isVisible("#r-full") && await page.isHidden("#r-unfold"), "al volver sigue desplegado");
+  ok(await page.isVisible("#r-full") && /Ocultar el análisis completo/.test(await page.textContent("#r-unfold")), "al volver sigue desplegado (y el botón ofrece ocultarlo)");
   await ctx.close();
 }
 {
   const { ctx, page } = await open(390, 844);
   await page.click("#r-unfold"); await page.waitForTimeout(400);
   ok(await page.isVisible("#r-portrait") && await page.evaluate(() => document.activeElement?.closest("#r-portrait") !== null), "«Ver el análisis completo» despliega y lleva el foco a «Tu perfil»");
+  ok((await page.getAttribute("#r-unfold", "aria-expanded")) === "true" && /Ocultar/.test(await page.textContent("#r-unfold")), "el mismo botón pasa a «Ocultar el análisis completo»");
+  await page.click("#r-unfold"); await page.waitForTimeout(400);
+  ok(await page.isHidden("#r-full") && (await page.getAttribute("#r-unfold", "aria-expanded")) === "false" && await page.evaluate(() => !JSON.parse(localStorage.getItem("papeleta29n.prefs")).full), "pulsarlo otra vez lo vuelve a plegar (y se recuerda)");
   await ctx.close();
 }
 
+console.log("Pulsar otra vez para ocultar");
+{
+  const { ctx, page } = await open(1100, 900);
+  await page.click("#r-unfold"); await page.waitForTimeout(300);
+  const btn = page.locator('#r-parties li:not(:nth-child(-n+3)) [data-card]').first();
+  const pid = await btn.getAttribute("data-card");
+  await btn.click(); await page.waitForTimeout(300);
+  const b2 = page.locator(`#r-parties [data-card="${pid}"]`).first();
+  ok((await page.locator("#pc-extra .pcard, #pc-extra *").count()) > 0 && /Ocultar su ficha/.test(await b2.textContent()), "«Ver su ficha» abre la ficha y pasa a «Ocultar su ficha»");
+  await b2.click(); await page.waitForTimeout(300);
+  ok((await page.locator("#pc-extra *").count()) === 0 && /Ver su ficha/.test(await b2.textContent()), "pulsarlo otra vez cierra la ficha");
+  const tip = page.locator("#v-results [data-tip]").first();
+  if (await tip.count()) { await tip.scrollIntoViewIfNeeded(); await tip.focus(); await tip.click(); await page.waitForTimeout(450); const shown = await page.isVisible("#tip");
+    await tip.click(); await page.waitForTimeout(100); ok(shown && await page.isHidden("#tip"), "una nota emergente se muestra y se oculta al pulsarla otra vez"); }
+  console.log("Barra de secciones");
+  ok((await page.locator(".res-nav a svg").count()) === (await page.locator(".res-nav a").count()) && (await page.locator(".res-nav .nav-sep").count()) === 2, "cada sección tiene su icono y hay separadores entre grupos");
+  await page.evaluate(() => document.querySelector("#r-map").scrollIntoView()); await page.waitForTimeout(500);
+  ok((await page.getAttribute('.res-nav a[href="#r-map"]', "aria-current")) === "true", "la sección que estás leyendo se marca en la barra");
+  ok(await page.evaluate(() => /scaleX\(0\.[1-9]|scaleX\(1\)/.test(document.querySelector(".res-nav .nav-prog").style.transform)), "la barra muestra cuánto llevas leído");
+  await ctx.close();
+}
 console.log("Repetir y donar desde el resumen");
 {
   const { ctx, page } = await open(390, 844);
