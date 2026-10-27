@@ -49,6 +49,22 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "D01",
+  "partido": "bng",
+  "de": 2,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=29",
+   "Programa do BNG para as eleccións xerais de 2023",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "E02",
   "partido": "junts",
   "de": 3,
@@ -129,6 +145,17 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "H06",
+  "partido": "junts",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "K04",
   "partido": "bildu",
   "de": 1,
@@ -141,6 +168,38 @@
    "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
    "parlamento",
    "2025-04-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "K04",
+  "partido": "bng",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó en contra de desproteger al lobo al norte del Duero.",
+  "fuente": [
+   "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+   "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
+   "parlamento",
+   "2025-04-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "L02",
+  "partido": "junts",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Junts votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
+  "fuente": [
+   "https://www.menorca.info/actualidad/nacional/2026/06/11/2648213/congreso-aprueba-tramitar-ley-blinda-eutanasia-ante-dilaciones-judiciales.html",
+   "Menorca.info, el Congreso aprueba tramitar la ley que blinda la eutanasia, 11-06-2026",
+   "parlamento",
+   "2026-06-11"
   ]
  },
  {
