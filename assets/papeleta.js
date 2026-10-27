@@ -258,7 +258,7 @@ function initHome() {
   }).join("");
   const ex = Q.C01;
   if (ex) { $("#ex-code").textContent = qCode(ex); $("#ex-area").textContent = AREA[ex.area].name; $("#ex-text").textContent = ex.text; $("#ex-ctx").textContent = ex.ctx; }
-  $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el 18 de octubre de 2026`;
+  $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
   $("#start-btn").disabled = false;
   fillSetup();
