@@ -20,7 +20,7 @@
 - Tras cambiar posturas: `node qa/run.mjs posturas` (regenera /correcciones/ y /metodologia/).
 
 **Pruebas (27 oct)**
-- Ver la entrada de T12.
+- Local y web real (https://test29n.es): 21/21 baterías OK. IndexNow 200.
 
 **Errores pendientes (menores)**
 - En la barra del test a 390 px, «Área 1 de 12 · Economía y…» se corta con puntos suspensivos.
@@ -42,7 +42,8 @@ Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
   - PNV D07 (referéndum monarquía o república, 4~): no se ha encontrado ninguna postura del PNV. Mantener 4 o bajar a 3.
 - **Notas que repetían la justificación:** ya no se muestran dos veces (40 casos; `posWhy` en la app y `whyOf` en las páginas). Prueba nueva en `qa/confianza.mjs`.
 - **Programas del 29N:** ninguno publicado a 27 oct.
-- **Pruebas:** 21/21 baterías en local; capturas de una página de partido y una de pregunta a 390 px, en claro y oscuro.
+- **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK. Capturas de una página de partido y una de pregunta a 390 px, en claro y oscuro.
+- **Ojo al publicar posturas:** `qa/correcciones.mjs` lee el historial de git, así que hay que ejecutarlo después de hacer commit de `data/preguntas.json` (y volver a hacer commit de `src/correcciones.json`).
 
 ## 26 oct 2026 · T11 · Embudo, rendimiento, preguntas legales y repaso
 - **Embudo en GoatCounter:** entra (inicio) → empieza → termina → comparte (`compartir`, una vez por visita, con cualquier botón de compartir) → reta a un amigo (`reto`). Nueva pregunta opcional al final del resumen, «¿Te ha resultado útil el test?» (Sí / No): cuenta `util-si` o `util-no`, da las gracias y no vuelve a preguntar (se recuerda en el navegador). No aparece en resultados compartidos. Aviso de privacidad actualizado (frase partida en dos tras la revisión). Pruebas nuevas en `qa/stats.mjs`. En GoatCounter, el embudo se lee comparando los totales de esos pasos.
