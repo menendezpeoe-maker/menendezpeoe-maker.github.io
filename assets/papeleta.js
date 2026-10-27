@@ -748,27 +748,33 @@ const NAV_ICON = {
 };
 function navLinks() {
   const groups = [
-    [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]],
-    [["parties", "Partidos"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]],
-    [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]
+    ["Tu perfil", [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]]],
+    ["Las candidaturas", [["parties", "Partidos"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]]],
+    ["Tus respuestas", [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]]
   ];
-  return groups.map((g) => g.map(([id, t]) => `<a href="#r-${id}" data-sec="r-${id}"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg><span>${t}</span></a>`).join("")).join('<span class="nav-sep" aria-hidden="true"></span>');
+  return groups.map(([t, g]) => `<p class="np-g">${t}</p><ul class="np-list">${g.map(([id, l]) => `<li><a href="#r-${id}" data-sec="r-${id}" data-ico="${id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg></span><span>${l}</span></a></li>`).join("")}</ul>`).join("");
 }
 let NAV_OBS = null, NAV_RAF = 0;
 function bindResNav() {
   const nav = $("#v-results .res-nav"); if (!nav) return;
-  const track = nav.querySelector(".nav-track"), links = [...track.querySelectorAll("a")], prog = nav.querySelector(".nav-prog");
-  const edges = () => { const max = track.scrollWidth - track.clientWidth; nav.classList.toggle("can-l", track.scrollLeft > 4); nav.classList.toggle("can-r", track.scrollLeft < max - 4); };
-  const setActive = (id) => { for (const a of links) { const on = a.dataset.sec === id; if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
-    if (on) { const l = a.offsetLeft - track.offsetLeft, r = l + a.offsetWidth; if (l < track.scrollLeft + 24 || r > track.scrollLeft + track.clientWidth - 24) track.scrollTo({ left: l - 24, behavior: reduceMotion() ? "auto" : "smooth" }); } } };
-  const progress = () => { NAV_RAF = 0; const root = $("#v-results"), top = root.offsetTop, h = root.offsetHeight - innerHeight; prog.style.transform = `scaleX(${Math.min(1, Math.max(0, (scrollY - top) / (h || 1)))})`; };
-  track.addEventListener("scroll", edges, { passive: true });
-  nav.addEventListener("click", (e) => { const b = e.target.closest("[data-nav]"); if (b) track.scrollBy({ left: Number(b.dataset.nav) * track.clientWidth * 0.7, behavior: reduceMotion() ? "auto" : "smooth" }); });
-  if (!bindResNav.bound) { bindResNav.bound = true; addEventListener("scroll", () => { if (!NAV_RAF && CURRENT === "results") NAV_RAF = requestAnimationFrame(progress); }, { passive: true }); addEventListener("resize", () => { const n = $("#v-results .res-nav"); if (n) n.querySelector(".nav-track").dispatchEvent(new Event("scroll")); }); }
+  const btn = nav.querySelector("#nav-btn"), panel = nav.querySelector("#nav-panel"), links = [...panel.querySelectorAll("a")];
+  const setOpen = (open, focus) => { panel.hidden = !open; btn.setAttribute("aria-expanded", String(open)); nav.classList.toggle("open", open);
+    if (open) (panel.querySelector('a[aria-current="true"]') || links[0]).focus({ preventScroll: true }); else if (focus) btn.focus({ preventScroll: true }); };
+  btn.addEventListener("click", () => setOpen(panel.hidden));
+  panel.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("[data-nav-close]")) setOpen(false, !!e.target.closest("[data-nav-close]")); });
+  panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.stopPropagation(); setOpen(false, true); }
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); const i = links.indexOf(document.activeElement); links[(i + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length].focus(); } });
+  const setActive = (id) => { for (const a of links) { if (a.dataset.sec === id) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); } };
+  const progress = () => { NAV_RAF = 0; const root = $("#v-results"); if (!root || !$("#nav-bar")) return; const h = root.offsetHeight - innerHeight, p = Math.min(1, Math.max(0, (scrollY - root.offsetTop) / (h || 1)));
+    $("#nav-bar").style.transform = `scaleX(${p})`; $("#nav-pct").textContent = Math.round(p * 100); nav.querySelector(".rg-fg").style.strokeDasharray = `${(p * 100).toFixed(1)} 100`; };
+  if (!bindResNav.bound) { bindResNav.bound = true;
+    addEventListener("scroll", () => { if (!NAV_RAF && CURRENT === "results") NAV_RAF = requestAnimationFrame(progress); }, { passive: true });
+    document.addEventListener("click", (e) => { const n = $("#v-results .res-nav.open"); if (n && !n.contains(e.target)) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); n.querySelector("#nav-btn").setAttribute("aria-expanded", "false"); } });
+    document.addEventListener("keydown", (e) => { const n = $("#v-results .res-nav.open"); if (e.key === "Escape" && n) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); const b = n.querySelector("#nav-btn"); b.setAttribute("aria-expanded", "false"); b.focus(); } }); }
   NAV_OBS?.disconnect();
   NAV_OBS = new IntersectionObserver((ents) => { const vis = ents.filter((x) => x.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]; if (vis) setActive(vis.target.id); }, { rootMargin: "-30% 0px -60% 0px" });
   for (const a of links) { const sec = document.getElementById(a.dataset.sec); if (sec) NAV_OBS.observe(sec); }
-  setActive("r-summary"); edges(); progress();
+  setActive("r-summary"); progress();
 }
 
 function renderResults() {
@@ -776,13 +782,20 @@ function renderResults() {
   const next = NEXT_MODE[st.mode] || null;
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
-    <nav class="res-nav" aria-label="Secciones del resultado"><div class="wrap nav-wrap">
-      <button type="button" class="nav-arrow nav-l" data-nav="-1" aria-hidden="true" tabindex="-1">‹</button>
-      <div class="nav-track">${navLinks()}</div>
-      <button type="button" class="nav-arrow nav-r" data-nav="1" aria-hidden="true" tabindex="-1">›</button>
-    </div><span class="nav-prog" aria-hidden="true"></span></nav>
     <div class="wrap">
-      <section id="r-summary" class="summary res-sec" style="padding-top:34px"></section>
+      <nav class="res-nav" aria-label="Secciones del resultado">
+        <button type="button" class="nav-btn" id="nav-btn" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true">
+          <span class="nav-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle class="rg-bg" cx="18" cy="18" r="16"/><circle class="rg-fg" cx="18" cy="18" r="16" pathLength="100"/></svg><svg class="nav-ico" viewBox="0 0 20 20">${NAV_ICON.summary}</svg></span>
+          <span class="nav-txt"><small>Secciones</small><b id="nav-cur">Resumen</b></span>
+          <svg class="nav-chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 8l4.5 4.5L14.5 8"/></svg>
+        </button>
+        <div class="nav-panel" id="nav-panel" hidden>
+          <div class="np-head"><div><p class="np-t">Tu resultado</p><p class="np-s"><span id="nav-pct">0</span> % leído</p></div><button type="button" class="np-x" data-nav-close aria-label="Cerrar el menú de secciones"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+          <div class="np-bar" aria-hidden="true"><i id="nav-bar"></i></div>
+          ${navLinks()}
+        </div>
+      </nav>
+      <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
       <div class="unfold-row${PREFS.full ? " is-open" : ""}"><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">${PREFS.full ? "Ocultar el análisis completo" : "Ver el análisis completo"}</button><span class="small muted unfold-note">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
       <div id="r-full"${PREFS.full ? "" : " hidden"}>
