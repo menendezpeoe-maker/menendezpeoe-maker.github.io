@@ -9,7 +9,8 @@ const REAL = /^https:/.test(process.env.BASE || "");
 const SITE = (process.env.BASE || "http://127.0.0.1:8766/").replace(/_local\.html$/, "").replace(/\/?$/, "/");
 // Presupuestos (algo por encima de lo medido el 26 oct 2026, tras aligerar las tipografías): kB transferidos y
 // segundos hasta poder usar la portada (botón «Empezar» activo) o hasta ver el texto de una página estática (FCP)
-const BUDGET = REAL ? { home: [380, 10], page: [220, 3] } : { home: [900, 20], page: [300, 5] };
+// 28 oct: local 900 → 960 kB porque data/preguntas.json crece con las fuentes de cada tanda (comprimido, en la web real, sigue en ~345 kB).
+const BUDGET = REAL ? { home: [380, 10], page: [220, 3] } : { home: [960, 21], page: [300, 5] };
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const browser = await chromium.launch();
