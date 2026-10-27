@@ -52,7 +52,7 @@ export const QUESTIONS = [
   short: "Jornada de 37,5 horas por ley",
   ctx: "La jornada máxima legal es de 40 horas semanales de promedio anual, aunque muchos convenios ya fijan menos. En 2025 el Congreso rechazó el proyecto del Gobierno para bajarla a 37,5 horas. A favor se citan la conciliación y repartir las ganancias de productividad; en contra, el coste para pymes y sectores con poco margen, y la preferencia por pactarlo en la negociación colectiva.",
   ley: "Estatuto de los Trabajadores, art. 34",
-  pos: "5 2 1 5 5 1 0 2~ 4 1 4 5 2 4~ 5 3~ 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "5 2 1 5 5 1 0 2~ 4 1 4 5 1 4~ 5 4 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "A02", area: "eco", prio: 1, type: "dilema", dim: "eco", dir: -1, lr: -1,
   text: "Si hubiera que elegir, ¿qué debería priorizar el Estado?",
   A: "Bajar impuestos, aunque haya que reducir gasto público",
@@ -116,7 +116,7 @@ export const QUESTIONS = [
   B: "Regular los precios y ampliar la vivienda pública",
   short: "Construir más o regular precios",
   ctx: "España termina unas 100.000 viviendas al año, por debajo de los nuevos hogares que se forman, y el Banco de España estima un déficit de varios cientos de miles. Quienes priorizan construir sostienen que el precio solo baja si aumenta la oferta; quienes priorizan regular y la vivienda pública argumentan que el mercado no produce vivienda asequible por sí solo y que construir tarda años en notarse.",
-  pos: "4 1 1 5 5 1~ 0 1~ 4 2~ 3~ 5 1~ 4~ 5~ 2~ 5~ 5~ 4~ 4~ 3~ 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 1~ 0 1~ 4 2 3 5 1~ 4~ 5 2 5~ 5~ 4~ 4~ 3~ 5~ 5~ 0 0 0 0" },
 { id: "B03", area: "viv", prio: 2, type: "likert", dim: "lib", dir: 1, lr: 1,
   text: "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
   short: "Desalojo en 48 horas de viviendas ocupadas",
@@ -224,13 +224,13 @@ export const QUESTIONS = [
   short: "Que los jueces elijan el CGPJ",
   ctx: "El CGPJ nombra a los altos cargos judiciales. Desde 1985 sus vocales los eligen el Congreso y el Senado por mayoría de tres quintos, y su bloqueo entre 2018 y 2024 se cerró con la mediación de la Comisión Europea. Las instituciones europeas recomiendan que al menos la mitad de los vocales sean elegidos por los propios jueces. Los partidarios del sistema actual sostienen que aporta legitimidad democrática y evita el corporativismo judicial.",
   ley: "Constitución, art. 122.3",
-  pos: "2 5 5 1 1 5~ 0 5 1~ 2 2~ 1 5 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 0 5 1~ 2 2~ 1 5 2~ 1 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "D04", area: "ins", prio: 2, type: "likert", dim: null, dir: 0, lr: -1,
   text: "Las Cortes deberían poder aprobar amnistías para cerrar conflictos políticos.",
   short: "Amnistías por conflictos políticos",
   ctx: "La Constitución prohíbe los indultos generales, pero no menciona la amnistía. En 2024 las Cortes aprobaron una amnistía para los delitos ligados al proceso independentista catalán, avalada en lo esencial por el Tribunal Constitucional en 2025. Sus defensores la ven como una herramienta para cerrar conflictos y facilitar la convivencia; sus críticos, como una ruptura de la igualdad ante la ley negociada a cambio de apoyos parlamentarios.",
   ley: "Constitución, art. 62.i",
-  pos: "4 1 1 5 4 1 0 1 5 5 4 5 1 4~ 4 2 4~ 4~ 5 4~ 0 5~ 4~ 0 0 0 0" },
+  pos: "4 1 1 5 4 1 0 1 5 5 4 5 1 4~ 4 1 4~ 4~ 5 4~ 0 5~ 4~ 0 0 0 0" },
 { id: "D05", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Los altos cargos deberían esperar al menos cinco años antes de trabajar en empresas del sector que regulaban.",
   short: "Cinco años contra las puertas giratorias",
@@ -309,7 +309,7 @@ export const QUESTIONS = [
   short: "Sustituir la Ley de Violencia de Género",
   ctx: "La Ley Integral de 2004 trata la violencia de hombres contra sus parejas o exparejas mujeres como un fenómeno específico, con juzgados especializados, medidas de protección y penas agravadas; el Constitucional la avaló en 2008. Quienes proponen sustituirla sostienen que vulnera la igualdad ante la ley; quienes la defienden, que la violencia machista tiene causas propias y que la ley ha mejorado la protección de las víctimas.",
   ley: "Ley Orgánica 1/2004, de violencia de género",
-  pos: "1 1 5 1 1 5~ 1~ 2~ 1 1 1 1 2~ 1 1 1~ 1 1~ 1 1~ 0 1~ 1 0 0 0 0" },
+  pos: "1 1 5 1 1 5~ 1~ 2~ 1 1 1 1 2~ 1 1 1 1 1~ 1 1~ 0 1~ 1 0 0 0 0" },
 { id: "E09", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
   short: "Legalizar el cannabis",
@@ -321,7 +321,7 @@ export const QUESTIONS = [
   text: "España debería regularizar a los inmigrantes en situación irregular que ya viven y trabajan aquí.",
   short: "Regularización de inmigrantes",
   ctx: "Funcas estimaba en unas 840.000 las personas sin permiso de residencia a comienzos de 2025, muchas trabajando en la economía sumergida. En abril de 2026 el Gobierno aprobó por real decreto una regularización extraordinaria, que recogía una iniciativa popular respaldada por más de 600.000 firmas y recibió más de 1,1 millones de solicitudes. Sus defensores destacan la integración, los derechos y las cotizaciones; sus críticos temen un «efecto llamada» y prefieren vías individuales como el arraigo.",
-  pos: "5 2 1 5 5 1 0 2~ 4 2 4 5 2~ 5~ 5 3~ 5 5~ 5 5~ 3~ 5~ 5 0 0 0 0" },
+  pos: "5 2 1 5 5 1 0 2~ 4 2 4 5 1 5~ 5 3~ 5 5~ 5 5~ 3~ 5~ 5 0 0 0 0" },
 { id: "F02", area: "dem", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "Los inmigrantes en situación irregular deberían ser expulsados, aunque lleven años viviendo y trabajando en España.",
   short: "Expulsar a los inmigrantes irregulares",
@@ -368,7 +368,7 @@ export const QUESTIONS = [
   text: "España debería alargar la vida de sus centrales nucleares más allá del calendario de cierre previsto, que termina en 2035.",
   short: "Alargar la vida de las nucleares",
   ctx: "Los siete reactores españoles producen alrededor del 20 % de la electricidad. El plan pactado con las eléctricas en 2019 prevé cerrarlos de forma escalonada hasta 2035, aunque en 2026 el Gobierno prorrogó Almaraz, el primero de la lista, hasta 2030. El apagón de abril de 2025 reabrió el debate. Sus defensores destacan que es una fuente estable y sin emisiones de CO₂; sus detractores, los residuos, el coste de prolongarlas y que las renovables con almacenamiento pueden sustituirlas.",
-  pos: "2 5 5 1 1 5~ 1 5 2 3 2 1 4~ 1~ 1 3~ 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
+  pos: "2 5 5 1 1 5~ 1 5 2 3 2 1 4 1~ 1 3~ 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
 { id: "G02", area: "ene", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
@@ -383,7 +383,7 @@ export const QUESTIONS = [
   text: "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
   short: "Ampliar los trasvases de agua",
   ctx: "El trasvase Tajo-Segura lleva agua desde 1979 al sureste, donde sostiene buena parte de la agricultura de Murcia, Alicante y Almería. La reducción de los envíos para garantizar caudales ecológicos en el Tajo ha enfrentado a comunidades. Los partidarios de más trasvases hablan de solidaridad hídrica; los contrarios defienden los ríos de origen y proponen desalación, reutilización y modernizar regadíos.",
-  pos: "2 4~ 5 1 1 4~ 1~ 3~ 1~ 1~ 0 1~ 2~ 0 1~ 0 0 0 3~ 1 1 0 2~ 3~ 3~ 1~ 0" },
+  pos: "2 4~ 5 1 1 4~ 1~ 3~ 1~ 1~ 0 1~ 3 0 1 0 0 0 3~ 1 1 0 2~ 3~ 3~ 1~ 0" },
 { id: "G05", area: "ene", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "El Estado debería crear una empresa pública de energía para abaratar la factura de la luz.",
   short: "Empresa pública de energía",
@@ -419,7 +419,7 @@ export const QUESTIONS = [
   text: "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
   short: "Más gasto en defensa",
   ctx: "En la cumbre de La Haya de 2025, los aliados de la OTAN acordaron llegar en 2035 al 5 % del PIB en defensa y seguridad, del que un 3,5 % sería gasto militar directo. España obtuvo una excepción y sostiene que con alrededor del 2,1 % cumple los objetivos de capacidades. Sus defensores invocan la amenaza rusa y la dependencia de EE. UU.; sus críticos, el coste frente a otras prioridades.",
-  pos: "1 4~ 4~ 1 1 4~ 1~ 5 1 3~ 3~ 1 4 2~ 1 2~ 1 1 1 1 2~ 1 1 0 0 0 0" },
+  pos: "1 4~ 4~ 1 1 4~ 1~ 5 1 3~ 3 1 4 2~ 1 2~ 1 1 1 1 2~ 1 1 0 0 0 0" },
 { id: "H02", area: "ext", prio: 2, type: "likert", dim: "eur", dir: -1, lr: 0,
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
@@ -434,7 +434,7 @@ export const QUESTIONS = [
   text: "España debería mantener el embargo de armas a Israel.",
   short: "Embargo de armas a Israel",
   ctx: "En 2025 España aprobó por decreto-ley un embargo de compraventa de armas con Israel por la guerra de Gaza, que causó decenas de miles de muertos tras el ataque de Hamás del 7 de octubre de 2023. Sus defensores lo ven como coherencia con el derecho internacional humanitario; sus críticos, como una medida que daña la relación con un aliado tecnológico y a la industria de defensa, y más simbólica que eficaz.",
-  pos: "5 1 1 5 5 2~ 0 2~ 5 4 4 5 2~ 5~ 5 3~ 5 5 5 5 0 5 5 0 0 0 0" },
+  pos: "5 1 1 5 5 2~ 0 2~ 5 4 4 5 3 5~ 5 4 5 5 5 5 0 5 5 0 0 0 0" },
 { id: "H05", area: "ext", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
   short: "Retirar el apoyo al plan marroquí para el Sáhara",
@@ -558,7 +558,7 @@ export const QUESTIONS = [
   text: "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
   short: "Acuerdo comercial UE-Mercosur",
   ctx: "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute. Se aplica provisionalmente desde mayo de 2026, mientras el Tribunal de Justicia de la UE examina su legalidad.",
-  pos: "5 4 1 1 1 1~ 1 5 2 3~ 4~ 1 3~ 2~ 1 3~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
+  pos: "5 4 1 1 1 1~ 1 5 2 3~ 4~ 1 3 2~ 1 1 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
 { id: "K02", area: "rur", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
   short: "Controlar los márgenes de la distribución",
@@ -574,7 +574,7 @@ export const QUESTIONS = [
   text: "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
   short: "Control del lobo",
   ctx: "El lobo estuvo protegido en toda España entre 2021 y 2025, cuando el Congreso aprobó volver a permitir su control al norte del Duero, después de que la UE rebajara su nivel de protección. Los ganaderos denuncian miles de ataques al año; los conservacionistas sostienen que la especie aún no está en buen estado y que hay alternativas como mastines, vallados e indemnizaciones rápidas.",
-  pos: "2 5 5 1 1 5~ 1 4~ 2~ 4 4 3 4~ 0 1 4 1~ 1~ 1~ 1~ 4~ 1~ 0 0 5 4~ 5~" },
+  pos: "2 5 5 1 1 5~ 1 4~ 2~ 4 4 3 4 0 1 3 1~ 1~ 1~ 1~ 4~ 1~ 0 0 5 4~ 5~" },
 { id: "K05", area: "rur", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "Debería prohibirse abrir nuevas macrogranjas.",
   short: "Prohibir nuevas macrogranjas",
@@ -602,13 +602,13 @@ export const QUESTIONS = [
   short: "El aborto en la Constitución",
   ctx: "La ley de 2010 permite el aborto libre hasta la semana 14 y hasta la 22 por riesgos graves, y el Tribunal Constitucional la avaló en 2023. En 2025 el Gobierno propuso reformar la Constitución para incluirlo, como hizo Francia en 2024. Sus defensores quieren protegerlo frente a futuros cambios de mayoría; sus críticos defienden la vida del no nacido o consideran innecesaria la reforma, que exige tres quintos de las Cámaras.",
   ley: "Ley Orgánica 2/2010; Constitución, art. 167",
-  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1~ 5~ 5 3~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1 5~ 5 3~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
 { id: "L02", area: "der", prio: 2, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La ley de eutanasia debería derogarse.",
   short: "Derogar la ley de eutanasia",
   ctx: "Desde 2021 España permite la eutanasia a personas con una enfermedad grave e incurable o un padecimiento crónico e imposibilitante, tras varios controles médicos y de una comisión; se realizan varios cientos al año. Quienes piden derogarla temen presiones sobre personas vulnerables y prefieren reforzar los cuidados paliativos, que no llegan a todos; quienes la defienden la ven como el derecho a una muerte digna.",
   ley: "Ley Orgánica 3/2021, de regulación de la eutanasia",
-  pos: "1 3 5 1 1 4~ 2~ 1~ 1 1 2 1 5~ 1~ 1 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 1 1 4~ 2~ 1~ 1 1 2 1 5 1~ 1 2 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "L03", area: "der", prio: 2, type: "likert", dim: "soc", dir: -1, lr: -1,
   text: "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
   short: "Cambio de sexo registral sin informes",
@@ -646,7 +646,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
   ctx: "Francia, Bélgica o Dinamarca prohíben cubrirse el rostro en la calle. En España no existe una prohibición general, y el Tribunal Supremo anuló en 2013 una ordenanza municipal que lo vetaba por invadir competencias del Estado. Sus defensores invocan la seguridad y la igualdad de las mujeres; sus críticos, la libertad religiosa y el riesgo de excluir aún más a las pocas mujeres que lo llevan.",
-  pos: "1 5 5 1 1 5~ 0 4~ 2 5 2 1 3~ 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
+  pos: "1 5 5 1 1 5~ 0 4~ 2 5 2 1 4 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" }
 ];
 
 // Familias de preguntas que miden casi la misma opinión. En la coincidencia con los partidos, si
@@ -843,7 +843,9 @@ export const SOURCES = {
     junts: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "parlamento", "2025-09-11"],
     pnv: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025", "parlamento", "2025-09-11"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=3", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
-    bng: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025", "parlamento", "2025-09-10"]
+    upn: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), El Congreso tumba la reducción de jornada con el veto de PP, Vox y Junts, 11-09-2025", "parlamento", "2025-09-10"],
+    bng: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025", "parlamento", "2025-09-10"],
+    ccpc: ["https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html", "Periódico de Ibiza (Europa Press), veto a la reducción de jornada, 11/09/2025", "parlamento", "2025-09-10"]
   },
   A02: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -925,6 +927,7 @@ export const SOURCES = {
     junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     pnv: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=2", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
+    upn: ["https://www.publico.es/economia/vivienda/factura-tumbar-decretos-vivienda-626-millones-gastos-alquiler-8-4-millones-inquilinos-escudo.html", "Público, La factura de tumbar los decretos de vivienda, 02-10-2026", "parlamento", "2026-10-02"],
     bng: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     ccpc: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     comp: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"]
@@ -936,7 +939,11 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2025/01/15/podemos-arremete-contra-la-ministra-rentista-y-exige-bajar-los-alquileres-para-apoyar-los-presupuestos/", "El Independiente, exigencias de Podemos en vivienda, 15/01/2025", "declaracion", "2025-01-15"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
-    bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=4", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"]
+    junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, Las derechas tumban la prórroga de alquileres, 28/04/2026", "parlamento", "2026-04-28"],
+    pnv: ["https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/", "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026", "parlamento", "2026-10-02"],
+    bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=4", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
+    bng: ["https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/", "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026", "parlamento", "2026-10-02"],
+    ccpc: ["https://rtvc.es/cc-apoyara-el-primer-decreto-de-vivienda-y-rechazara-el-segundo-01-octubre-2026/", "RTVC, CC apoyará el primer decreto de vivienda y rechazará el segundo, 01/10/2026", "declaracion", "2026-10-01"]
   },
   B03: {
     psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
@@ -946,6 +953,7 @@ export const SOURCES = {
     junts: ["https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html", "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025", "parlamento", "2025-03-18"],
     pnv: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
     bildu: ["https://www.elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, votación en el Congreso de la reforma para agilizar desahucios, 14/11/2024", "parlamento", "2024-11-14"],
+    upn: ["https://diariosocialista.net/2026/05/20/el-congreso-admite-a-tramite-la-ley-antiokupas-del-pp-con-la-abstencion-de-pnv-y-junts/", "Diario Socialista, El Congreso admite a trámite la ley antiokupas del PP, 20-05-2026", "parlamento", "2026-05-19"],
     bng: ["https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024", "parlamento", "2024-11-14"]
   },
   B04: {
@@ -961,7 +969,8 @@ export const SOURCES = {
     psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"],
     pod: ["https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/", "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024", "parlamento", "2024-06-16"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
-    pnv: ["https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/", "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023", "declaracion", "2023-04-24"]
+    pnv: ["https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/", "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023", "declaracion", "2023-04-24"],
+    ccpc: ["https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/", "RTVC, Parlamento de Canarias aprueba la ley del alquiler vacacional, 12/11/2025", "gobierno", "2025-11-12"]
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
@@ -1070,7 +1079,8 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/", "El Independiente, reacción al pacto del CGPJ, 25/06/2024", "declaracion", "2024-06-25"],
     junts: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"],
-    bildu: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"]
+    bildu: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"],
+    bng: ["https://www.eldebate.com/espana/20260910/congreso-rechaza-reforma-pp-vocales-cgpj-sean-elegidos-jueces_457567.html", "El Debate (EFE), El Congreso rechaza la reforma del PP para que los vocales del CGPJ sean elegidos por jueces, 10-09-2026", "parlamento", "2026-09-10"]
   },
   D04: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776", "BOE, Ley Orgánica 1/2024, de amnistía", "gobierno", "2024-06-11"],
@@ -1082,7 +1092,9 @@ export const SOURCES = {
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=24", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     pnv: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"],
     bildu: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"],
-    bng: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"]
+    upn: ["https://www.eitb.eus/es/noticias/politica/detalle/9447600/el-congreso-aprueba-ley-de-amnistia-hoy-14-de-marzo-de-2024/", "EITB, El Congreso aprueba la Ley de Amnistía, 14-03-2024", "parlamento", "2024-03-14"],
+    bng: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"],
+    ccpc: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, El Congreso aprueba de forma definitiva la ley de Amnistía, 30/05/2024", "parlamento", "2024-05-30"]
   },
   D05: {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
@@ -1115,7 +1127,8 @@ export const SOURCES = {
     erc: ["https://www.diarimes.com/es/actualidad/260212/congreso-aprueba-ley-multirreincidencia-votos-psoe-pp-vox_208972.html", "Diari Més, votación en el Congreso del 12/02/2026", "parlamento", "2026-02-12"],
     junts: ["https://es.ara.cat/politica/congreso-aprueba-jueves-ley-multirreincidencia-junts_1_5646210.html", "Ara, votación en el Congreso del 12/02/2026", "parlamento", "2026-02-12"],
     pnv: ["https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html", "El Debate, votación del 12 de febrero de 2026", "parlamento", "2026-02-12"],
-    bildu: ["https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html", "El Debate, votación del 12 de febrero de 2026", "parlamento", "2026-02-12"]
+    bildu: ["https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html", "El Debate, votación del 12 de febrero de 2026", "parlamento", "2026-02-12"],
+    upn: ["https://www.naiz.eus/en/info/noticia/amp/20260212/el-congreso-aprueba-la-ley-de-multirreincidencia-de-junts-con-apoyo-de-psoe-pp-vox-y-pnv", "Naiz (Europa Press), El Congreso aprueba la ley de multirreincidencia de Junts, 12-02-2026", "parlamento", "2026-02-12"]
   },
   E02: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1124,6 +1137,7 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=126", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
+    upn: ["https://www.newtral.es/prision-permanente-revisable-pp/20260317/", "Newtral, El Congreso tumba la propuesta del PP de ampliar la prisión permanente revisable, 17-03-2026", "parlamento", "2026-03-17"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
   E03: {
@@ -1136,6 +1150,7 @@ export const SOURCES = {
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=24", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=7", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=12", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
+    upn: ["https://www.eldiario.es/politica/congreso-da-primer-paso-retomar-reforma-ley-mordaza-unico-rechazo-pp-vox-upn_1_11774916.html", "elDiario.es, El Congreso da el primer paso para retomar la reforma de la ley mordaza, 29-10-2024", "parlamento", "2024-10-29"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
   E04: {
@@ -1170,7 +1185,8 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 8", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=10", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://www.elindependiente.com/wp-content/uploads/2023/11/Acuerdo-PSOE-CC.pdf#page=6", "Acuerdo de legislatura PSOE-Coalición Canaria, compromisos para el conjunto del Estado, nov. 2023", "gobierno", "2023-11"]
   },
   E09: {
     psoe: ["https://www.publico.es/sociedad/psoe-vota-no-ley-mas-pais-cannabis.html", "Votación de la ley del cannabis de Más País (19 de octubre de 2021)", "parlamento", "2021-10-19"],
@@ -1191,6 +1207,7 @@ export const SOURCES = {
     junts: ["https://en.ara.cat/politics/together-they-will-denounce-in-europe-the-marginalization-of-catalan-in-the-regularization-of-migrants_1_5709974.html", "Ara (edición en inglés), comunicado de Junts, 17/04/2026", "declaracion", "2026-04-17"],
     pnv: ["https://es.ara.cat/sociedad/inmigracion/congreso-debate-regularizacion-500-000-extranjeros-viven-espana-papeles_1_4992457.html", "Ara, El Congreso debate la regularización de 500.000 extranjeros, 09-04-2024", "parlamento", "2024-04-09"],
     bildu: ["https://orain.eus/es/politica/2024/04/09/el-congreso-tramitara-iniciativa-de-regularizacion-extraordinaria-de-personas-extranjeras/", "Orain, el Congreso tramitará la iniciativa de regularización extraordinaria, 09-04-2024", "parlamento", "2024-04-09"],
+    upn: ["https://www.infobae.com/america/agencias/2026/03/18/el-congreso-insta-al-gobierno-a-renunciar-ya-a-la-regularizacion-de-migrantes-con-apoyo-de-pp-vox-junts-y-upn/", "Infobae (Europa Press), El Congreso insta al Gobierno a renunciar ya a la regularización de migrantes, 18-03-2026", "parlamento", "2026-03-18"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
   F02: {
@@ -1252,7 +1269,8 @@ export const SOURCES = {
     pod: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), debate en el Congreso, 13/11/2025", "declaracion", "2025-11-13"],
     erc: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     junts: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
-    pnv: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-13"]
+    pnv: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
+    upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra, Junts salva la prórroga de las nucleares, 13-11-2025", "parlamento", "2025-11-11"]
   },
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1270,7 +1288,9 @@ export const SOURCES = {
   G04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=148", "Programa electoral de Vox de 2023, medida 312", "programa", "2023-07"],
-    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"]
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49", "Programa electoral de Sumar de 2023, p. 49", "programa", "2023-07"],
+    upn: ["https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html", "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025", "parlamento", "2025-05-13"],
+    bng: ["https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html", "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025", "parlamento", "2025-05-13"]
   },
   G05: {
     psoe: ["https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/", "Debate de la moción de Podemos en el Congreso (13 de mayo de 2025)", "parlamento", "2025-05-13"],
@@ -1315,7 +1335,9 @@ export const SOURCES = {
     pod: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
     erc: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
     junts: ["https://www.galiciapress.es/articulo/politica/2026-06-11/5915942-congreso-rechaza-mocion-bng-pedia-salir-otan-reducir-gasto-militar-gobierno-dividido", "Galiciapress (Europa Press), votación en el Congreso del 11/06/2026", "parlamento", "2026-06-11"],
+    pnv: ["https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts", "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025", "parlamento", "2025-03-26"],
     bildu: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
+    upn: ["https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts", "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025", "parlamento", "2025-03-26"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
   H02: {
@@ -1341,7 +1363,9 @@ export const SOURCES = {
     junts: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, votación del 8 de octubre de 2025", "parlamento", "2025-10-08"],
     pnv: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, votación del 8 de octubre de 2025", "parlamento", "2025-10-08"],
     bildu: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, votación del 8 de octubre de 2025", "parlamento", "2025-10-08"],
-    bng: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, El Congreso aprueba el embargo de armas a Israel, 08-10-2025", "parlamento", "2025-10-08"]
+    upn: ["https://www.infobae.com/espana/agencias/2025/10/08/el-congreso-convalida-el-decreto-de-embargo-de-armas-a-israel-con-el-apoyo-decisivo-de-podemos-y-lo-tramitara-como-ley/", "Infobae (Europa Press), El Congreso convalida el decreto de embargo de armas a Israel, 08-10-2025", "parlamento", "2025-10-08"],
+    bng: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, El Congreso aprueba el embargo de armas a Israel, 08-10-2025", "parlamento", "2025-10-08"],
+    ccpc: ["https://www.democrata.es/politica/junts-apoyara-decreto-embargo-armas-israel-facilitando-aprobacion-congreso/", "Demócrata, Junts apoyará el decreto de embargo de armas a Israel, octubre 2025", "declaracion", "2025-10"]
   },
   H05: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf", "Declaración conjunta España-Marruecos (4 de diciembre de 2025)", "gobierno", "2025-12-04"],
@@ -1492,7 +1516,9 @@ export const SOURCES = {
     fa: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
     pod: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    upn: ["https://www.infobae.com/america/agencias/2026/02/18/el-pp-se-abstiene-en-una-propuesta-de-vox-que-incluia-el-rechazo-al-acuerdo-ue-mercosur-y-de-marruecos/", "Infobae, El PP se abstiene en una propuesta de Vox que incluía el rechazo al acuerdo UE-Mercosur, 18-02-2026", "parlamento", "2026-02-17"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/", "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026", "declaracion", "2026-01-27"]
   },
   K02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=67", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1516,7 +1542,9 @@ export const SOURCES = {
     junts: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     pnv: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     bildu: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
-    bng: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"]
+    upn: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España, La desprotección del lobo al norte del Duero será efectiva desde hoy, 03-04-2025", "parlamento", "2025-03-20"],
+    bng: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
+    ccpc: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España, desprotección del lobo al norte del Duero, 2025", "parlamento", "2025-03-20"]
   },
   K05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1549,7 +1577,8 @@ export const SOURCES = {
     pod: ["https://www.elespanol.com/espana/politica/20251017/carmen-calvo-suma-irene-montero-cuestiona-reforma-constitucion-propone-gobierno-aborto/1003743974273_0.amp.html", "El Español, declaraciones de Irene Montero, 17/10/2025", "declaracion", "2025-10-17"],
     erc: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
     junts: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
-    pnv: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026", "parlamento", "2026-04-30"]
+    pnv: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026", "parlamento", "2026-04-30"],
+    upn: ["https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/", "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026", "parlamento", "2026-04-30"]
   },
   L02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1561,7 +1590,9 @@ export const SOURCES = {
     junts: ["https://www.menorca.info/actualidad/nacional/2026/06/11/2648213/congreso-aprueba-tramitar-ley-blinda-eutanasia-ante-dilaciones-judiciales.html", "Menorca.info, el Congreso aprueba tramitar la ley que blinda la eutanasia, 11-06-2026", "parlamento", "2026-06-11"],
     pnv: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021", "parlamento", "2021-03-18"],
     bildu: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
-    bng: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"]
+    upn: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía (Europa Press), El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
+    bng: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
+    ccpc: ["https://www.eldebate.com/sociedad/20251007/pp-une-psoe-aliados-tumbar-propuesta-vox-derogar-leyes-aborto-eutanasia_342121.html", "El Debate, PP se une a PSOE y aliados para tumbar la propuesta de Vox, 07/10/2025", "parlamento", "2025-10-07"]
   },
   L03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
@@ -1614,7 +1645,8 @@ export const SOURCES = {
     erc: ["https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html", "El Español, votación de la ley de Vox sobre el burka, 17/02/2026", "parlamento", "2026-02-17"],
     junts: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
     pnv: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
-    bildu: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"]
+    bildu: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
+    upn: ["https://www.infobae.com/america/agencias/2026/02/17/el-congreso-tumba-la-ley-de-vox-para-prohibir-el-burka-solo-apoyada-por-el-pp-y-upn/", "Infobae, El Congreso tumba la ley de Vox para prohibir el burka, solo apoyada por el PP y UPN, 17-02-2026", "parlamento", "2026-02-17"]
   }
 };
 
@@ -1632,7 +1664,9 @@ export const JUSTIF = {
     junts: "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     pnv: "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     bildu: "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
-    bng: "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025."
+    upn: "Votó a favor de las enmiendas de totalidad que devolvieron al Gobierno el proyecto de reducción de la jornada a 37,5 horas.",
+    bng: "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025.",
+    ccpc: "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
   },
   A02: {
     pnv: "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
@@ -1708,6 +1742,7 @@ export const JUSTIF = {
   B01: {
     pnv: "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     bildu: "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
+    upn: "Votó en contra de los decretos de vivienda que congelaban o limitaban las subidas del alquiler, y contribuyó a derogarlos.",
     bng: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     ccpc: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     comp: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026."
@@ -1719,7 +1754,11 @@ export const JUSTIF = {
     fa: "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     pod: "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
     erc: "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
-    bildu: "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias."
+    junts: "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
+    pnv: "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
+    bildu: "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
+    bng: "Votó a favor del primer decreto de vivienda, que limitaba las subidas del alquiler y prorrogaba contratos, derogado por el Congreso.",
+    ccpc: "Defiende aumentar la oferta de viviendas y rechazó el segundo decreto de vivienda de octubre de 2026, que consideró un riesgo para la oferta de alquiler."
   },
   B03: {
     psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
@@ -1727,9 +1766,10 @@ export const JUSTIF = {
     vox: "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     erc: "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
-    junts: "Junts presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
+    junts: "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     pnv: "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
     bildu: "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
+    upn: "Respaldó en el Congreso la toma en consideración de la ley del PP contra la ocupación, que prevé desalojos en un máximo de 24 horas.",
     bng: "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
   },
   B04: {
@@ -1744,7 +1784,8 @@ export const JUSTIF = {
     psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
     pod: "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
     erc: "La ponencia defiende intervenir los usos turísticos de las viviendas.",
-    pnv: "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas."
+    pnv: "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
+    ccpc: "El Parlamento de Canarias aprobó en noviembre de 2025 la ley del alquiler vacacional con el apoyo de CC, que da a los ayuntamientos capacidad de planificar y limita el uso vacacional."
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
@@ -1865,7 +1906,8 @@ export const JUSTIF = {
     pod: "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
     erc: "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan.",
     junts: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
-    bildu: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial."
+    bildu: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
+    bng: "En el debate de la reforma del PP sobre el CGPJ, su portavoz defendió que la justicia no debe quedar al margen del control democrático."
   },
   D04: {
     psoe: "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
@@ -1877,7 +1919,9 @@ export const JUSTIF = {
     junts: "Su programa exige una ley de amnistía para resolver el conflicto con España.",
     pnv: "Votó a favor de la ley de amnistía y defendió su encaje en la Constitución.",
     bildu: "Votó a favor de la ley de amnistía en su aprobación definitiva.",
-    bng: "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso."
+    upn: "Votó en contra de la ley de amnistía en la votación final del Pleno del Congreso, junto con PP, Vox y Coalición Canaria.",
+    bng: "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
+    ccpc: "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso."
   },
   D05: {
     vox: "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
@@ -1916,7 +1960,8 @@ export const JUSTIF = {
   },
   E01: {
     pnv: "Votó a favor de la ley de multirreincidencia de Junts.",
-    bildu: "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos."
+    bildu: "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
+    upn: "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026."
   },
   E02: {
     pp: "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla.",
@@ -1926,6 +1971,7 @@ export const JUSTIF = {
     erc: "El programa propone derogar la prisión permanente revisable.",
     junts: "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
     pnv: "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    upn: "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
     bng: "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua."
   },
   E03: {
@@ -1938,6 +1984,7 @@ export const JUSTIF = {
     junts: "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
     pnv: "Se opone a la ley mordaza y promovió su reforma.",
     bildu: "Su programa vuelve a plantear la derogación de la ley mordaza.",
+    upn: "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     bng: "Su programa propone derogar íntegramente la ley mordaza."
   },
   E04: {
@@ -1982,7 +2029,8 @@ export const JUSTIF = {
     erc: "El programa refuerza la jurisdicción específica de violencia machista.",
     pnv: "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
     bildu: "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
-    bng: "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia."
+    bng: "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
+    ccpc: "Firmó en 2023 con el PSOE reforzar la lucha contra la violencia de género y el Pacto de Estado, sin proponer sustituir la ley por una de violencia intrafamiliar."
   },
   E09: {
     psoe: "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
@@ -1995,7 +2043,8 @@ export const JUSTIF = {
   },
   F01: {
     pnv: "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
-    bildu: "EH Bildu expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    bildu: "Expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    upn: "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
     bng: "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa."
   },
   F02: {
@@ -2055,7 +2104,8 @@ export const JUSTIF = {
     erc: "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad."
   },
   G01: {
-    pnv: "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares."
+    pnv: "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
+    upn: "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó."
   },
   G02: {
     psoe: "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
@@ -2077,7 +2127,9 @@ export const JUSTIF = {
     pp: "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     vox: "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
     fa: "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
-    erc: "Estimación: ERC se opone históricamente a los trasvases del Ebro."
+    erc: "Estimación: ERC se opone históricamente a los trasvases del Ebro.",
+    upn: "Votó a favor de la proposición de ley de Murcia para blindar por ley el trasvase Tajo-Segura, que no prosperó en el Congreso en mayo de 2025.",
+    bng: "Votó en contra de la proposición de ley de Murcia para blindar el trasvase Tajo-Segura, rechazada por el Congreso en mayo de 2025."
   },
   G05: {
     psoe: "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
@@ -2124,7 +2176,9 @@ export const JUSTIF = {
   },
   H01: {
     psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
+    pnv: "Se abstuvo en la moción del PP para aprovechar la cláusula de escape y subir el gasto en defensa, y votó en contra de exigir votar el plan.",
     bildu: "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
+    upn: "Votó a favor de la moción del PP que pide aprovechar la cláusula de escape fiscal de la UE para subir el gasto en defensa.",
     bng: "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
   },
   H02: {
@@ -2152,7 +2206,9 @@ export const JUSTIF = {
     junts: "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     pnv: "Votó a favor del decreto de embargo de armas a Israel.",
     bildu: "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
-    bng: "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto."
+    upn: "Se abstuvo en la convalidación del decreto ley de embargo de armas a Israel, aprobado por el Congreso en octubre de 2025.",
+    bng: "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
+    ccpc: "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso."
   },
   H05: {
     psoe: "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
@@ -2307,7 +2363,9 @@ export const JUSTIF = {
   },
   K01: {
     erc: "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
-    bng: "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales."
+    upn: "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
+    bng: "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
+    ccpc: "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur."
   },
   K02: {
     psoe: "Su programa de 2023 promete reforzar el control de la Ley de la Cadena Alimentaria y vigilar costes y márgenes.",
@@ -2335,7 +2393,9 @@ export const JUSTIF = {
     junts: "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     pnv: "Votó a favor de desproteger al lobo al norte del Duero.",
     bildu: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
-    bng: "Votó en contra de desproteger al lobo al norte del Duero."
+    upn: "Votó a favor de las enmiendas del Senado que desprotegieron al lobo al norte del Duero y abrieron la puerta a hacerlo en el resto de España.",
+    bng: "Votó en contra de desproteger al lobo al norte del Duero.",
+    ccpc: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
   },
   K05: {
     psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
@@ -2365,7 +2425,8 @@ export const JUSTIF = {
     erc: "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
   },
   L01: {
-    pnv: "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado."
+    pnv: "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
+    upn: "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó."
   },
   L02: {
     psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
@@ -2374,10 +2435,12 @@ export const JUSTIF = {
     fa: "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
     pod: "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
     erc: "ERC votó a favor de aprobar la ley de eutanasia en 2021.",
-    junts: "Junts votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
+    junts: "Votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
     pnv: "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación».",
     bildu: "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
-    bng: "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021."
+    upn: "Votó en contra de la ley orgánica de regulación de la eutanasia en el Congreso y anunció un recurso ante el Tribunal Constitucional.",
+    bng: "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
+    ccpc: "Votó en contra de la propuesta de Vox para derogar las leyes de eutanasia y aborto, que solo apoyó Vox."
   },
   L03: {
     psoe: "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
@@ -2436,6 +2499,7 @@ export const JUSTIF = {
     erc: "ERC rechazó la ley de Vox para prohibir el burka, aunque dijo oponerse a la prenda.",
     junts: "Presentó una ley para prohibir el burka y el niqab, que solo apoyó su grupo.",
     pnv: "Rechazó la ley de Junts para prohibir el burka y el niqab.",
-    bildu: "Rechazó la ley de Junts para prohibir el burka y el niqab."
+    bildu: "Rechazó la ley de Junts para prohibir el burka y el niqab.",
+    upn: "Votó, junto con el PP, a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público."
   }
 };

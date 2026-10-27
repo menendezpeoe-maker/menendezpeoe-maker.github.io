@@ -173,10 +173,10 @@
     "junts": 1,
     "pnv": 4,
     "bildu": 5,
-    "upn": 2,
+    "upn": 1,
     "gbai": 4,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -187,7 +187,6 @@
    "est": [
     "d21",
     "gbai",
-    "ccpc",
     "drago",
     "cha",
     "mes",
@@ -248,9 +247,21 @@
      "programa",
      "2023-07"
     ],
+    "upn": [
+     "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+     "Periódico de Ibiza (Europa Press), El Congreso tumba la reducción de jornada con el veto de PP, Vox y Junts, 11-09-2025",
+     "parlamento",
+     "2025-09-10"
+    ],
     "bng": [
      "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
      "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025",
+     "parlamento",
+     "2025-09-10"
+    ],
+    "ccpc": [
+     "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+     "Periódico de Ibiza (Europa Press), veto a la reducción de jornada, 11/09/2025",
      "parlamento",
      "2025-09-10"
     ]
@@ -265,7 +276,9 @@
     "junts": "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     "pnv": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "bildu": "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
-    "bng": "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025."
+    "upn": "Votó a favor de las enmiendas de totalidad que devolvieron al Gobierno el proyecto de reducción de la jornada a 37,5 horas.",
+    "bng": "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025.",
+    "ccpc": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
    }
   },
   {
@@ -1221,6 +1234,12 @@
      "programa",
      "2023-07"
     ],
+    "upn": [
+     "https://www.publico.es/economia/vivienda/factura-tumbar-decretos-vivienda-626-millones-gastos-alquiler-8-4-millones-inquilinos-escudo.html",
+     "Público, La factura de tumbar los decretos de vivienda, 02-10-2026",
+     "parlamento",
+     "2026-10-02"
+    ],
     "bng": [
      "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
      "Público, votación en el Congreso del 28/04/2026",
@@ -1243,6 +1262,7 @@
    "why": {
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
+    "upn": "Votó en contra de los decretos de vivienda que congelaban o limitaban las subidas del alquiler, y contribuyó a derogarlos.",
     "bng": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "ccpc": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "comp": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026."
@@ -1288,12 +1308,8 @@
    "est": [
     "salf",
     "d21",
-    "junts",
-    "pnv",
     "upn",
     "gbai",
-    "bng",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -1339,11 +1355,35 @@
      "programa",
      "2025-03"
     ],
+    "junts": [
+     "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
+     "Público, Las derechas tumban la prórroga de alquileres, 28/04/2026",
+     "parlamento",
+     "2026-04-28"
+    ],
+    "pnv": [
+     "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
+     "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
+     "parlamento",
+     "2026-10-02"
+    ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=4",
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
+     "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
+     "parlamento",
+     "2026-10-02"
+    ],
+    "ccpc": [
+     "https://rtvc.es/cc-apoyara-el-primer-decreto-de-vivienda-y-rechazara-el-segundo-01-octubre-2026/",
+     "RTVC, CC apoyará el primer decreto de vivienda y rechazará el segundo, 01/10/2026",
+     "declaracion",
+     "2026-10-01"
     ]
    },
    "why": {
@@ -1353,7 +1393,11 @@
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
     "erc": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
-    "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias."
+    "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
+    "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
+    "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
+    "bng": "Votó a favor del primer decreto de vivienda, que limitaba las subidas del alquiler y prorrogaba contratos, derogado por el Congreso.",
+    "ccpc": "Defiende aumentar la oferta de viviendas y rechazó el segundo decreto de vivienda de octubre de 2026, que consideró un riesgo para la oferta de alquiler."
    }
   },
   {
@@ -1446,6 +1490,12 @@
      "parlamento",
      "2024-11-14"
     ],
+    "upn": [
+     "https://diariosocialista.net/2026/05/20/el-congreso-admite-a-tramite-la-ley-antiokupas-del-pp-con-la-abstencion-de-pnv-y-junts/",
+     "Diario Socialista, El Congreso admite a trámite la ley antiokupas del PP, 20-05-2026",
+     "parlamento",
+     "2026-05-19"
+    ],
     "bng": [
      "https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html",
      "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024",
@@ -1459,9 +1509,10 @@
     "vox": "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
-    "junts": "Junts presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
+    "junts": "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
     "bildu": "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
+    "upn": "Respaldó en el Congreso la toma en consideración de la ley del PP contra la ocupación, que prevé desalojos en un máximo de 24 horas.",
     "bng": "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
    }
   },
@@ -1641,13 +1692,20 @@
      "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023",
      "declaracion",
      "2023-04-24"
+    ],
+    "ccpc": [
+     "https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/",
+     "RTVC, Parlamento de Canarias aprueba la ley del alquiler vacacional, 12/11/2025",
+     "gobierno",
+     "2025-11-12"
     ]
    },
    "why": {
     "psoe": "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
     "pod": "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
     "erc": "La ponencia defiende intervenir los usos turísticos de las viviendas.",
-    "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas."
+    "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
+    "ccpc": "El Parlamento de Canarias aprobó en noviembre de 2025 la ley del alquiler vacacional con el apoyo de CC, que da a los ayuntamientos capacidad de planificar y limita el uso vacacional."
    }
   },
   {
@@ -3059,7 +3117,6 @@
     "erc",
     "pnv",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -3110,6 +3167,12 @@
      "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021",
      "parlamento",
      "2021-09-21"
+    ],
+    "bng": [
+     "https://www.eldebate.com/espana/20260910/congreso-rechaza-reforma-pp-vocales-cgpj-sean-elegidos-jueces_457567.html",
+     "El Debate (EFE), El Congreso rechaza la reforma del PP para que los vocales del CGPJ sean elegidos por jueces, 10-09-2026",
+     "parlamento",
+     "2026-09-10"
     ]
    },
    "why": {
@@ -3120,7 +3183,8 @@
     "pod": "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
     "erc": "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan.",
     "junts": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
-    "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial."
+    "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
+    "bng": "En el debate de la reforma del PP sobre el CGPJ, su portavoz defendió que la justicia no debe quedar al margen del control democrático."
    }
   },
   {
@@ -3150,7 +3214,7 @@
     "upn": 1,
     "gbai": 4,
     "bng": 4,
-    "ccpc": 2,
+    "ccpc": 1,
     "upc": 4,
     "drago": 4,
     "comp": 5,
@@ -3221,9 +3285,21 @@
      "parlamento",
      "2024-05-30"
     ],
+    "upn": [
+     "https://www.eitb.eus/es/noticias/politica/detalle/9447600/el-congreso-aprueba-ley-de-amnistia-hoy-14-de-marzo-de-2024/",
+     "EITB, El Congreso aprueba la Ley de Amnistía, 14-03-2024",
+     "parlamento",
+     "2024-03-14"
+    ],
     "bng": [
      "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
      "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024",
+     "parlamento",
+     "2024-05-30"
+    ],
+    "ccpc": [
+     "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
+     "Deia, El Congreso aprueba de forma definitiva la ley de Amnistía, 30/05/2024",
      "parlamento",
      "2024-05-30"
     ]
@@ -3238,7 +3314,9 @@
     "junts": "Su programa exige una ley de amnistía para resolver el conflicto con España.",
     "pnv": "Votó a favor de la ley de amnistía y defendió su encaje en la Constitución.",
     "bildu": "Votó a favor de la ley de amnistía en su aprobación definitiva.",
-    "bng": "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso."
+    "upn": "Votó en contra de la ley de amnistía en la votación final del Pleno del Congreso, junto con PP, Vox y Coalición Canaria.",
+    "bng": "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
+    "ccpc": "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso."
    }
   },
   {
@@ -3719,11 +3797,18 @@
      "El Debate, votación del 12 de febrero de 2026",
      "parlamento",
      "2026-02-12"
+    ],
+    "upn": [
+     "https://www.naiz.eus/en/info/noticia/amp/20260212/el-congreso-aprueba-la-ley-de-multirreincidencia-de-junts-con-apoyo-de-psoe-pp-vox-y-pnv",
+     "Naiz (Europa Press), El Congreso aprueba la ley de multirreincidencia de Junts, 12-02-2026",
+     "parlamento",
+     "2026-02-12"
     ]
    },
    "why": {
     "pnv": "Votó a favor de la ley de multirreincidencia de Junts.",
-    "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos."
+    "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
+    "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026."
    }
   },
   {
@@ -3812,6 +3897,12 @@
      "programa",
      "2023-07"
     ],
+    "upn": [
+     "https://www.newtral.es/prision-permanente-revisable-pp/20260317/",
+     "Newtral, El Congreso tumba la propuesta del PP de ampliar la prisión permanente revisable, 17-03-2026",
+     "parlamento",
+     "2026-03-17"
+    ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
      "Programa do BNG para as eleccións xerais de 2023",
@@ -3827,6 +3918,7 @@
     "erc": "El programa propone derogar la prisión permanente revisable.",
     "junts": "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
     "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
     "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua."
    }
   },
@@ -3931,6 +4023,12 @@
      "programa",
      "2023-07"
     ],
+    "upn": [
+     "https://www.eldiario.es/politica/congreso-da-primer-paso-retomar-reforma-ley-mordaza-unico-rechazo-pp-vox-upn_1_11774916.html",
+     "elDiario.es, El Congreso da el primer paso para retomar la reforma de la ley mordaza, 29-10-2024",
+     "parlamento",
+     "2024-10-29"
+    ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
      "Programa do BNG para as eleccións xerais de 2023",
@@ -3948,6 +4046,7 @@
     "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
     "pnv": "Se opone a la ley mordaza y promovió su reforma.",
     "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
+    "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     "bng": "Su programa propone derogar íntegramente la ley mordaza."
    }
   },
@@ -4337,7 +4436,6 @@
     "pacma",
     "d21",
     "upn",
-    "ccpc",
     "drago",
     "cha",
     "mes"
@@ -4399,6 +4497,12 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://www.elindependiente.com/wp-content/uploads/2023/11/Acuerdo-PSOE-CC.pdf#page=6",
+     "Acuerdo de legislatura PSOE-Coalición Canaria, compromisos para el conjunto del Estado, nov. 2023",
+     "gobierno",
+     "2023-11"
     ]
    },
    "why": {
@@ -4410,7 +4514,8 @@
     "erc": "El programa refuerza la jurisdicción específica de violencia machista.",
     "pnv": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
     "bildu": "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
-    "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia."
+    "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
+    "ccpc": "Firmó en 2023 con el PSOE reforzar la lucha contra la violencia de género y el Pacto de Estado, sin proponer sustituir la ley por una de violencia intrafamiliar."
    }
   },
   {
@@ -4539,7 +4644,7 @@
     "junts": 2,
     "pnv": 4,
     "bildu": 5,
-    "upn": 2,
+    "upn": 1,
     "gbai": 5,
     "bng": 5,
     "ccpc": 3,
@@ -4553,7 +4658,6 @@
    },
    "est": [
     "d21",
-    "upn",
     "gbai",
     "ccpc",
     "drago",
@@ -4616,6 +4720,12 @@
      "parlamento",
      "2024-04-09"
     ],
+    "upn": [
+     "https://www.infobae.com/america/agencias/2026/03/18/el-congreso-insta-al-gobierno-a-renunciar-ya-a-la-regularizacion-de-migrantes-con-apoyo-de-pp-vox-junts-y-upn/",
+     "Infobae (Europa Press), El Congreso insta al Gobierno a renunciar ya a la regularización de migrantes, 18-03-2026",
+     "parlamento",
+     "2026-03-18"
+    ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
      "Programa do BNG para as eleccións xerais de 2023",
@@ -4625,7 +4735,8 @@
    },
    "why": {
     "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
-    "bildu": "EH Bildu expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    "bildu": "Expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
     "bng": "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa."
    }
   },
@@ -5364,7 +5475,6 @@
    },
    "est": [
     "salf",
-    "upn",
     "gbai",
     "ccpc",
     "upc",
@@ -5428,10 +5538,17 @@
      "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025",
      "parlamento",
      "2025-11-13"
+    ],
+    "upn": [
+     "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
+     "Noticias de Navarra, Junts salva la prórroga de las nucleares, 13-11-2025",
+     "parlamento",
+     "2025-11-11"
     ]
    },
    "why": {
-    "pnv": "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares."
+    "pnv": "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
+    "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó."
    }
   },
   {
@@ -5658,7 +5775,7 @@
     "erc": 1,
     "junts": 1,
     "bildu": 1,
-    "upn": 2,
+    "upn": 3,
     "bng": 1,
     "comp": 3,
     "cha": 1,
@@ -5676,8 +5793,6 @@
     "erc",
     "junts",
     "bildu",
-    "upn",
-    "bng",
     "comp",
     "adel",
     "jmm",
@@ -5702,6 +5817,18 @@
      "Programa electoral de Sumar de 2023, p. 49",
      "programa",
      "2023-07"
+    ],
+    "upn": [
+     "https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html",
+     "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025",
+     "parlamento",
+     "2025-05-13"
+    ],
+    "bng": [
+     "https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html",
+     "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025",
+     "parlamento",
+     "2025-05-13"
     ]
    },
    "why": {
@@ -5709,7 +5836,9 @@
     "pp": "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     "vox": "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
     "fa": "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
-    "erc": "Estimación: ERC se opone históricamente a los trasvases del Ebro."
+    "erc": "Estimación: ERC se opone históricamente a los trasvases del Ebro.",
+    "upn": "Votó a favor de la proposición de ley de Murcia para blindar por ley el trasvase Tajo-Segura, que no prosperó en el Congreso en mayo de 2025.",
+    "bng": "Votó en contra de la proposición de ley de Murcia para blindar el trasvase Tajo-Segura, rechazada por el Congreso en mayo de 2025."
    }
   },
   {
@@ -6213,7 +6342,6 @@
     "salf",
     "pacma",
     "junts",
-    "pnv",
     "gbai",
     "ccpc",
     "existe"
@@ -6264,11 +6392,23 @@
      "parlamento",
      "2026-06-11"
     ],
+    "pnv": [
+     "https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts",
+     "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025",
+     "parlamento",
+     "2025-03-26"
+    ],
     "bildu": [
      "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
      "ElNacional.cat, votación en el Congreso del 20/03/2025",
      "parlamento",
      "2025-03-20"
+    ],
+    "upn": [
+     "https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts",
+     "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025",
+     "parlamento",
+     "2025-03-26"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
@@ -6279,7 +6419,9 @@
    },
    "why": {
     "psoe": "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
+    "pnv": "Se abstuvo en la moción del PP para aprovechar la cláusula de escape y subir el gasto en defensa, y votó en contra de exigir votar el plan.",
     "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
+    "upn": "Votó a favor de la moción del PP que pide aprovechar la cláusula de escape fiscal de la UE para subir el gasto en defensa.",
     "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
    }
   },
@@ -6496,10 +6638,10 @@
     "junts": 4,
     "pnv": 4,
     "bildu": 5,
-    "upn": 2,
+    "upn": 3,
     "gbai": 5,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -6510,9 +6652,7 @@
    "est": [
     "salf",
     "d21",
-    "upn",
-    "gbai",
-    "ccpc"
+    "gbai"
    ],
    "src": {
     "psoe": [
@@ -6569,11 +6709,23 @@
      "parlamento",
      "2025-10-08"
     ],
+    "upn": [
+     "https://www.infobae.com/espana/agencias/2025/10/08/el-congreso-convalida-el-decreto-de-embargo-de-armas-a-israel-con-el-apoyo-decisivo-de-podemos-y-lo-tramitara-como-ley/",
+     "Infobae (Europa Press), El Congreso convalida el decreto de embargo de armas a Israel, 08-10-2025",
+     "parlamento",
+     "2025-10-08"
+    ],
     "bng": [
      "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
      "RTVC, El Congreso aprueba el embargo de armas a Israel, 08-10-2025",
      "parlamento",
      "2025-10-08"
+    ],
+    "ccpc": [
+     "https://www.democrata.es/politica/junts-apoyara-decreto-embargo-armas-israel-facilitando-aprobacion-congreso/",
+     "Demócrata, Junts apoyará el decreto de embargo de armas a Israel, octubre 2025",
+     "declaracion",
+     "2025-10"
     ]
    },
    "why": {
@@ -6585,7 +6737,9 @@
     "junts": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "pnv": "Votó a favor del decreto de embargo de armas a Israel.",
     "bildu": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
-    "bng": "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto."
+    "upn": "Se abstuvo en la convalidación del decreto ley de embargo de armas a Israel, aprobado por el Congreso en octubre de 2025.",
+    "bng": "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
+    "ccpc": "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso."
    }
   },
   {
@@ -8423,7 +8577,7 @@
     "upn": 3,
     "gbai": 2,
     "bng": 1,
-    "ccpc": 3,
+    "ccpc": 1,
     "upc": 1,
     "drago": 1,
     "comp": 2,
@@ -8439,9 +8593,7 @@
     "salf",
     "junts",
     "pnv",
-    "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -8493,16 +8645,30 @@
      "programa",
      "2025-03"
     ],
+    "upn": [
+     "https://www.infobae.com/america/agencias/2026/02/18/el-pp-se-abstiene-en-una-propuesta-de-vox-que-incluia-el-rechazo-al-acuerdo-ue-mercosur-y-de-marruecos/",
+     "Infobae, El PP se abstiene en una propuesta de Vox que incluía el rechazo al acuerdo UE-Mercosur, 18-02-2026",
+     "parlamento",
+     "2026-02-17"
+    ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/",
+     "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026",
+     "declaracion",
+     "2026-01-27"
     ]
    },
    "why": {
     "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
-    "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales."
+    "upn": "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
+    "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
+    "ccpc": "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur."
    }
   },
   {
@@ -8720,7 +8886,7 @@
     "bildu": 3,
     "upn": 4,
     "bng": 1,
-    "ccpc": 4,
+    "ccpc": 3,
     "upc": 1,
     "drago": 1,
     "comp": 1,
@@ -8735,7 +8901,6 @@
     "salf",
     "d21",
     "erc",
-    "upn",
     "upc",
     "drago",
     "comp",
@@ -8794,11 +8959,23 @@
      "parlamento",
      "2025-04-03"
     ],
+    "upn": [
+     "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+     "Forbes España, La desprotección del lobo al norte del Duero será efectiva desde hoy, 03-04-2025",
+     "parlamento",
+     "2025-03-20"
+    ],
     "bng": [
      "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
      "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
      "parlamento",
      "2025-04-03"
+    ],
+    "ccpc": [
+     "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+     "Forbes España, desprotección del lobo al norte del Duero, 2025",
+     "parlamento",
+     "2025-03-20"
     ]
    },
    "why": {
@@ -8811,7 +8988,9 @@
     "junts": "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     "pnv": "Votó a favor de desproteger al lobo al norte del Duero.",
     "bildu": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
-    "bng": "Votó en contra de desproteger al lobo al norte del Duero."
+    "upn": "Votó a favor de las enmiendas del Senado que desprotegieron al lobo al norte del Duero y abrieron la puerta a hacerlo en el resto de España.",
+    "bng": "Votó en contra de desproteger al lobo al norte del Duero.",
+    "ccpc": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
    }
   },
   {
@@ -9196,7 +9375,6 @@
    "est": [
     "pacma",
     "d21",
-    "upn",
     "gbai",
     "ccpc",
     "drago",
@@ -9255,10 +9433,17 @@
      "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026",
      "parlamento",
      "2026-04-30"
+    ],
+    "upn": [
+     "https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/",
+     "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026",
+     "parlamento",
+     "2026-04-30"
     ]
    },
    "why": {
-    "pnv": "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado."
+    "pnv": "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
+    "upn": "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó."
    }
   },
   {
@@ -9301,9 +9486,7 @@
     "salf",
     "pacma",
     "d21",
-    "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -9366,11 +9549,23 @@
      "parlamento",
      "2021-03-18"
     ],
+    "upn": [
+     "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
+     "Bolsamanía (Europa Press), El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021",
+     "parlamento",
+     "2021-03-18"
+    ],
     "bng": [
      "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
      "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021",
      "parlamento",
      "2021-03-18"
+    ],
+    "ccpc": [
+     "https://www.eldebate.com/sociedad/20251007/pp-une-psoe-aliados-tumbar-propuesta-vox-derogar-leyes-aborto-eutanasia_342121.html",
+     "El Debate, PP se une a PSOE y aliados para tumbar la propuesta de Vox, 07/10/2025",
+     "parlamento",
+     "2025-10-07"
     ]
    },
    "why": {
@@ -9380,10 +9575,12 @@
     "fa": "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
     "pod": "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
     "erc": "ERC votó a favor de aprobar la ley de eutanasia en 2021.",
-    "junts": "Junts votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
+    "junts": "Votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
     "pnv": "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación».",
     "bildu": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
-    "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021."
+    "upn": "Votó en contra de la ley orgánica de regulación de la eutanasia en el Congreso y anunció un recurso ante el Tribunal Constitucional.",
+    "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
+    "ccpc": "Votó en contra de la propuesta de Vox para derogar las leyes de eutanasia y aborto, que solo apoyó Vox."
    }
   },
   {
@@ -9949,7 +10146,7 @@
     "junts": 5,
     "pnv": 2,
     "bildu": 1,
-    "upn": 3,
+    "upn": 4,
     "bng": 1,
     "upc": 1,
     "drago": 1,
@@ -9961,7 +10158,6 @@
    "est": [
     "salf",
     "d21",
-    "upn",
     "bng",
     "upc",
     "drago",
@@ -10021,6 +10217,12 @@
      "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
      "parlamento",
      "2026-04-14"
+    ],
+    "upn": [
+     "https://www.infobae.com/america/agencias/2026/02/17/el-congreso-tumba-la-ley-de-vox-para-prohibir-el-burka-solo-apoyada-por-el-pp-y-upn/",
+     "Infobae, El Congreso tumba la ley de Vox para prohibir el burka, solo apoyada por el PP y UPN, 17-02-2026",
+     "parlamento",
+     "2026-02-17"
     ]
    },
    "why": {
@@ -10030,7 +10232,8 @@
     "erc": "ERC rechazó la ley de Vox para prohibir el burka, aunque dijo oponerse a la prenda.",
     "junts": "Presentó una ley para prohibir el burka y el niqab, que solo apoyó su grupo.",
     "pnv": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
-    "bildu": "Rechazó la ley de Junts para prohibir el burka y el niqab."
+    "bildu": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
+    "upn": "Votó, junto con el PP, a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público."
    }
   }
  ]
