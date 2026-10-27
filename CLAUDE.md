@@ -21,7 +21,7 @@ No vuelvas a analizar lo que ya funciona. Busca con `grep` en vez de leer archiv
 ## Comandos
 ```sh
 node build.mjs                                  # valida src/ y genera data/*.json
-SITE_URL=https://test29n.es/ node publish.mjs   # genera dist/
+SITE_URL=https://test29n.es/ node publish.mjs   # genera dist/ y actualiza src/lastmod.json (haz commit de ese archivo)
 sh qa/mklocal.sh                                # _local.html para probar
 python3 -m http.server 8765 &                   # raíz (qa con _local.html)
 (cd dist && python3 -m http.server 8766 &)      # dist/

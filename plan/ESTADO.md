@@ -18,6 +18,7 @@
 - Contador (GoatCounter, `count()` en `assets/papeleta.js`): pasos inicio, test-empezado, test-terminado, compartir, reto, donar-*, util-si/util-no. Nunca respuestas, provincia ni resultado (`qa/stats.mjs`).
 - Tipografías recortadas con `qa/fonts.py` (necesita fonttools y brotli) y tipografías de reserva con medidas ajustadas al principio de `assets/papeleta.css`.
 - Tras cambiar posturas: `node qa/run.mjs posturas` (regenera /correcciones/ y /metodologia/).
+- Sitemap con fecha real por página: `src/lastmod.json`, que actualiza `publish.mjs` (hacer commit tras publicar).
 
 **Pruebas (27 oct)**
 - Local y web real (https://test29n.es): 21/21 baterías OK. IndexNow 200.
@@ -27,6 +28,15 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta: lo que más pesa tras las tipografías son `papeleta.js` (66 kB comprimido) y `data/preguntas.json` (69 kB), que se cargan enteros antes de activar «Empezar». Mejora posible (no urgente): activar el botón antes de tener todas las justificaciones.
 
 Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
+
+## 27 oct 2026 · Revisión de indexación (petición del titular)
+- **Motivo:** Google Search Console mostraba 172 páginas sin indexar; el titular pidió la validación. Revisión completa desde fuera (`curl` y rastreo de las 230 URL del sitemap): todas responden 200 sin redirecciones, `canonical` correcta, sin `noindex` salvo `/insertar/` (a propósito), 404 real para lo que no existe, sin títulos ni descripciones repetidos y sin URL antiguas desaparecidas.
+- **Corregido:**
+  - 11 páginas huérfanas (`/comparar/` y sus 10 comparativas solo estaban en el sitemap): ahora se enlazan desde el pie de todas las páginas y de la portada.
+  - `lastmod` del sitemap: antes era la misma fecha (24 oct) para todas las páginas aunque cambiaran; ahora es la fecha real de cada página, calculada con una huella de su contenido en `publish.mjs` y guardada en `src/lastmod.json` (**hay que hacer commit de ese archivo tras publicar**).
+  - Fechas desfasadas escritas a mano en el pie de la portada (17 y 18 oct): ahora salen de los datos. `UPDATED` = 27 oct.
+- **Pruebas nuevas** en `qa/seo.mjs`: ninguna página a más de 3 clics de la portada, fecha real por página y fecha del pie.
+- **Normal, no es un error:** Search Console cuenta como «no indexadas» también las variantes que redirigen (`www`, `http`, sin barra final, el dominio github.io) y los enlaces con parámetros (`/?tema=…`, `/escanos/?p=…`), que llevan `canonical` a la página buena. Una web nueva tarda semanas en indexarse entera.
 
 ## 27 oct 2026 · T12b · Fuentes de Coalición Canaria y UPN (adelantada a petición del titular)
 - **Nuevas:** 33 aceptadas de 34 propuestas; tras el revisor se retiraron 2 (CC B05, BNG D03). Coalición Canaria 0 → 9 posturas con fuente; UPN 0 → 17; restos: Junts +1, PNV +2, BNG +2.

@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { buildPages } from "./pages.mjs";
+const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]; const [y, m, d] = String(iso).split("-").map(Number); return `${d} de ${M[m - 1]} de ${y}`; };
 
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
@@ -59,7 +60,8 @@ const OWNER_M = /const OWNER = \{ name: "([^"]*)", email: "([^"]*)" \}/.exec(js)
 const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
-  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="metodologia/">Metodología</a> · <a href="sobre/">Sobre el proyecto</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
+  .replace(/<span id="foot-version">[^<]*<\/span>/, `<span id="foot-version">Preguntas y posturas actualizadas el ${fmtDateEs(JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated)}</span>`)
+  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="comparar/">Comparar partidos</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="metodologia/">Metodología</a> · <a href="sobre/">Sobre el proyecto</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
   .trim();
 if (!body.includes('href="prensa/"')) throw new Error("No se pudieron añadir los enlaces del pie");
 const csp = [
@@ -142,8 +144,19 @@ writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: "Test 29N", shor
 writeFileSync(`${OUT}/robots.txt`, `User-agent: *\nAllow: /\nSitemap: ${SITE}sitemap.xml\n`);
 // Páginas estáticas por candidatura, por tema y de prensa (pages.mjs), con los mismos datos que el test
 const pages = buildPages({ OUT, SITE, head, statsJs: v.stats, owner: OWNER_M ? { name: OWNER_M[1], email: OWNER_M[2] } : null });
-const lastmod = JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated;
-writeFileSync(`${OUT}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[SITE, ...pages].map((u) => `<url><loc>${u}</loc><lastmod>${lastmod}</lastmod></url>`).join("")}</urlset>\n`);
+// Fecha de última modificación real de cada página (sitemap): solo cambia cuando cambia su contenido.
+// Se guarda en src/lastmod.json (ruta → [huella, fecha]); hay que hacer commit de ese archivo tras publicar.
+const LM_FILE = "src/lastmod.json", today = new Date().toISOString().slice(0, 10);
+const lm = existsSync(LM_FILE) ? JSON.parse(readFileSync(LM_FILE, "utf8")) : {};
+const normPage = (h) => h.replace(/\?v=[0-9a-f]+/g, "").replace(/actualizad[oa]s el \d+ de [a-záéíóú]+ de \d{4}/g, "");
+const lmNext = {};
+for (const u of [SITE, ...pages]) {
+  const rel = u.slice(SITE.length), html = readFileSync(`${OUT}/${rel}index.html`, "utf8");
+  const h = createHash("sha1").update(normPage(html)).digest("hex").slice(0, 12);
+  lmNext["/" + rel] = lm["/" + rel]?.[0] === h ? lm["/" + rel] : [h, today];
+}
+writeFileSync(LM_FILE, "{\n" + Object.entries(lmNext).map(([k, x]) => `  ${JSON.stringify(k)}: ${JSON.stringify(x)}`).join(",\n") + "\n}\n");
+writeFileSync(`${OUT}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[SITE, ...pages].map((u) => `<url><loc>${u}</loc><lastmod>${lmNext["/" + u.slice(SITE.length)][1]}</lastmod></url>`).join("")}</urlset>\n`);
 console.log(`Páginas estáticas: ${pages.length}`);
 writeFileSync(`${OUT}/.nojekyll`, "");
 // IndexNow (Bing y otros buscadores): clave pública que demuestra que el sitio es nuestro. No es un secreto.

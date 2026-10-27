@@ -70,6 +70,21 @@ ok(ldOk, "todos los datos estructurados son JSON válido");
 const sitemap = fs.readFileSync(DIST + "sitemap.xml", "utf8");
 const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
 ok(indexable.every((x) => locs.includes(x.rel)) && locs.length === indexable.length, `el sitemap recoge todas las páginas indexables (${locs.length})`);
+// Indexación: ninguna página huérfana y fechas reales de modificación
+{
+  const depth = new Map([["/", 0]]), queue = ["/"];
+  while (queue.length) { const r = queue.shift(); const f = DIST + r.slice(1) + "index.html"; if (!fs.existsSync(f)) continue;
+    for (const m of fs.readFileSync(f, "utf8").matchAll(/href="([^"#?]+)"/g)) { let u; try { u = new URL(m[1], "https://x.test" + r).pathname; } catch { continue; }
+      if (!u.endsWith("/") || depth.has(u)) continue; depth.set(u, depth.get(r) + 1); queue.push(u); } }
+  const far = locs.filter((l) => !(depth.get(l) <= 3));
+  ok(!far.length, `todas las páginas del sitemap se alcanzan desde la portada en 3 clics o menos${far.length ? `: no ${far.slice(0, 5).join(" ")}` : ""}`);
+  const lms = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]), today = new Date().toISOString().slice(0, 10);
+  const lmf = JSON.parse(fs.readFileSync(ROOT + "src/lastmod.json", "utf8"));
+  ok(lms.length === locs.length && lms.every((d) => /^\d{4}-\d{2}-\d{2}$/.test(d) && d <= today) && locs.every((l) => lmf[l]), "cada página del sitemap lleva su fecha real de modificación (src/lastmod.json)");
+  const bank = JSON.parse(fs.readFileSync(ROOT + "data/preguntas.json", "utf8")), [y, mo, d] = bank.updated.split("-").map(Number);
+  const M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+  ok(fs.readFileSync(DIST + "index.html", "utf8").includes(`actualizadas el ${d} de ${M[mo - 1]} de ${y}`), "el pie de la portada muestra la fecha real de los datos");
+}
 
 if (process.env.SKIP_BROWSER !== "1") {
   console.log("Portada servida");
