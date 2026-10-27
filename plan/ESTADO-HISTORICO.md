@@ -1,5 +1,23 @@
 # Estado del plan · histórico (entradas movidas desde ESTADO.md, sin cambios; lo más reciente arriba)
 
+## 25 oct 2026 · Aportación externa para T12 (no publicada)
+- En otra conversación con el titular se buscaron 58 fuentes de Junts, PNV y EH Bildu (programas de 2023 y votaciones del Congreso). Están en `plan/APORTACION-T12.md`, **sin aplicar a `src/` ni publicar**: la web y `dist/` no cambian.
+- **T12:** empieza por revisar y aplicar ese archivo (reglas 8 y 12) y no repitas esas posturas. Hay 11 que cambian de valor (marcadas con ⚠).
+- Fallo menor detectado: 40 notas repiten la justificación y se muestran dos veces (detalle en el mismo archivo).
+
+## 25 oct 2026 · Cambio pedido · Repetir y donar al terminar
+- El resumen de resultados muestra, junto a «Compartir» y «Reta a un amigo», «Repetir el test» y «Donar» (lleva a las opciones de aportación). Test nuevo en qa/summary.mjs. 20 baterías en verde, publicado y comprobado en la web real; IndexNow 200.
+
+## 25 oct 2026 · T8 · Justificaciones visibles y confianza
+- **Justificaciones visibles:** bloque plegable «Por qué piensa así cada partido» en el repaso de tus respuestas, el explorador y las páginas de tema y de pregunta, con la justificación (`why`), la nota (`notes`), la fuente y un enlace «¿Ves un error?». En las fichas de partido de la app y en las páginas de partido, la justificación aparece bajo cada postura. También va en los datos abiertos (columna `justificacion`).
+- **«¿Ves un error?»:** enlace `mailto:` a menendezpeoe@gmail.com con asunto prellenado (pregunta y partido).
+- **/correcciones/:** registro público de cambios de posturas, generado desde el historial de git de `data/preguntas.json` por `qa/correcciones.mjs` → `src/correcciones.json` (84 cambios). Agrupa por día, así que no aparecen los pasos intermedios de una revisión. **Hay que volver a ejecutarlo tras cambiar posturas** (antes de `publish.mjs`).
+- **/sobre/:** quién lo hace (solo «Dery»), por qué existe, cómo se financia (aportaciones voluntarias, sin cifras), independencia, privacidad y política de correcciones.
+- **/metodologia/:** cifras reproducibles de `qa/metodologia.mjs` → `src/metodologia.json`, calculadas con la propia app: imitación (25 de 25 candidaturas salen primeras), 300 perfiles aleatorios (semilla 29) y perfil neutral, con la explicación del sesgo hacia el centro, posturas con fuente por partido y límites. **Hay que volver a ejecutarlo tras cambiar posturas.**
+- **Revisión independiente:** aviso de que los porcentajes de perfiles aleatorios no son una encuesta; explicación del sesgo hacia el centro sin etiquetas ideológicas; /sobre/ en tercera persona; el correo de contacto se muestra como enlace («escribe un correo»), no como texto.
+- **Pendiente de decisión del titular:** el correo menendezpeoe@gmail.com va en los enlaces `mailto:` (como pide el plan) y deja ver un apellido. Si prefiere un alias sin nombre real, basta con cambiar `ERR_MAIL` en `assets/papeleta.js` y las direcciones de `pages.mjs`.
+- **Pruebas:** nueva batería `qa/confianza.mjs` (20 en total). Las 20 pasan en local y en https://test29n.es. IndexNow: 200 OK, 230 URL.
+
 ## Ficha de continuidad anterior (sustituida el 26 oct 2026)
 
 **Aviso para la próxima tanda (leer primero).** El 20 oct se agotó el límite de uso y las tandas T9 (a medias), T2, T3 y T4 no llegaron a hacerse. Las tareas perdidas no se recuperan solas. Orden de trabajo acordado, por valor:

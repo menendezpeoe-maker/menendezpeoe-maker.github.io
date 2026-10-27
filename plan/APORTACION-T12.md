@@ -1,5 +1,7 @@
 # Aportación para T12: fuentes de Junts, PNV y EH Bildu (25 oct 2026)
 
+**Aplicada en T12 (27 oct 2026):** ver la entrada de T12 en `ESTADO.md` (PNV E09 se quedó en 3). Texto original:
+
 No está aplicada a `src/` ni publicada. La tanda T12 debe revisarla, pasarla a `SOURCES`, `JUSTIF` y las posturas de `src/preguntas.src.mjs` (reglas 8 y 12) y no repetir estas posturas.
 
 - 58 posturas con fuente abierta y leída: programas de 2023 enlazados con `#page=` y votaciones del Congreso.

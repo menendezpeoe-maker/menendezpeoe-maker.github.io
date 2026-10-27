@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-25",
+ "generado": "2026-10-27",
  "datos": "2026-10-24",
  "preguntas": 107,
  "imitacion": {
@@ -279,20 +279,20 @@
   {
    "pid": "junts",
    "conocidas": 104,
-   "estimadas": 79,
-   "conFuente": 10
+   "estimadas": 71,
+   "conFuente": 27
   },
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 78,
-   "conFuente": 0
+   "estimadas": 62,
+   "conFuente": 29
   },
   {
    "pid": "bildu",
    "conocidas": 102,
-   "estimadas": 52,
-   "conFuente": 0
+   "estimadas": 44,
+   "conFuente": 34
   },
   {
    "pid": "upn",
@@ -309,8 +309,8 @@
   {
    "pid": "bng",
    "conocidas": 105,
-   "estimadas": 64,
-   "conFuente": 0
+   "estimadas": 60,
+   "conFuente": 26
   },
   {
    "pid": "ccpc",

@@ -247,6 +247,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+     "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025",
+     "parlamento",
+     "2025-09-10"
     ]
    },
    "why": {
@@ -256,9 +262,10 @@
     "fa": "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32 horas.",
     "pod": "Votó contra las enmiendas que tumbaron la ley de 37,5 horas.",
     "erc": "ERC votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
-    "junts": "Mantuvo su enmienda a la totalidad, decisiva para tumbar la ley de reducción de jornada.",
+    "junts": "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     "pnv": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
-    "bildu": "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial."
+    "bildu": "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
+    "bng": "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025."
    }
   },
   {
@@ -357,10 +364,24 @@
      "The Objective, votación en el Congreso del 26/06/2025",
      "parlamento",
      "2025-06-26"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
-    "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso."
+    "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
+    "bildu": "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
+    "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas."
    }
   },
   {
@@ -400,9 +421,7 @@
    "est": [
     "d21",
     "junts",
-    "pnv",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -447,9 +466,21 @@
      "programa",
      "2023-07"
     ],
+    "pnv": [
+     "https://www.noticiasdenavarra.com/politica/2022/11/24/pleno-congreso-aprueba-impuestos-banca-6255443.html",
+     "Noticias de Navarra, El pleno del Congreso aprueba los impuestos a la banca, las energéticas y las grandes fortunas, 24-11-2022",
+     "parlamento",
+     "2022-11-24"
+    ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8",
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=41",
+     "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
     ]
@@ -461,7 +492,9 @@
     "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     "pod": "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
     "erc": "El programa propone crear impuestos sobre las grandes fortunas.",
-    "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales."
+    "pnv": "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
+    "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
+    "bng": "El programa propone un impuesto a las grandes fortunas con límites de exención menores, más progresividad y gestión traspasada a Galicia."
    }
   },
   {
@@ -1191,8 +1224,8 @@
     ]
    },
    "why": {
-    "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los alquileres.",
-    "bildu": "Presenta como logro propio la Ley de Vivienda que limita los alquileres en las zonas tensionadas."
+    "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
+    "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas."
    }
   },
   {
@@ -1285,6 +1318,12 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=4",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1293,7 +1332,8 @@
     "vox": "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
-    "erc": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta."
+    "erc": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
+    "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias."
    }
   },
   {
@@ -1368,11 +1408,23 @@
      "parlamento",
      "2022-11-29"
     ],
+    "junts": [
+     "https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html",
+     "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025",
+     "parlamento",
+     "2025-03-18"
+    ],
     "pnv": [
      "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
      "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025",
      "parlamento",
      "2025-03-18"
+    ],
+    "bng": [
+     "https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html",
+     "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024",
+     "parlamento",
+     "2024-11-14"
     ]
    },
    "why": {
@@ -1381,7 +1433,9 @@
     "vox": "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
-    "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios."
+    "junts": "Junts presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
+    "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
+    "bng": "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
    }
   },
   {
@@ -1530,7 +1584,6 @@
     "salf",
     "d21",
     "junts",
-    "pnv",
     "upn",
     "gbai",
     "bng",
@@ -1555,12 +1608,19 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "pnv": [
+     "https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/",
+     "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023",
+     "declaracion",
+     "2023-04-24"
     ]
    },
    "why": {
     "psoe": "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
     "pod": "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
-    "erc": "La ponencia defiende intervenir los usos turísticos de las viviendas."
+    "erc": "La ponencia defiende intervenir los usos turísticos de las viviendas.",
+    "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas."
    }
   },
   {
@@ -2044,10 +2104,17 @@
      "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026",
      "declaracion",
      "2026-01-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
-    "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán."
+    "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
+    "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
    }
   },
   {
@@ -2198,6 +2265,30 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "junts": [
+     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113",
+     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "programa",
+     "2023-07"
+    ],
+    "pnv": [
+     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=48",
+     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 48",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=32",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -2205,7 +2296,11 @@
     "pp": "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades.",
     "vox": "Vox propone devolver al Estado las competencias de educación.",
     "fa": "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación.",
-    "erc": "El programa defiende las competencias educativas autonómicas frente a la recentralización."
+    "erc": "El programa defiende las competencias educativas autonómicas frente a la recentralización.",
+    "junts": "El programa defiende el modelo educativo propio de Cataluña y pide traspasar a la Generalitat competencias y fondos en materia educativa.",
+    "pnv": "El programa pide respetar el reparto competencial en educación y seguir desarrollando un modelo educativo propio en Euskadi.",
+    "bildu": "El programa exige blindar los modelos educativos vascos y rechaza cualquier intromisión o cambio impuesto en ellos.",
+    "bng": "El programa pide transferir a Galicia todas las competencias en educación para diseñar un modelo educativo propio."
    }
   },
   {
@@ -2408,6 +2503,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=28",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -2418,7 +2519,8 @@
     "erc": "El programa se compromete a negociar un referéndum de autodeterminación.",
     "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
-    "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político."
+    "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
+    "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación."
    }
   },
   {
@@ -2766,7 +2868,7 @@
     "bildu": 2,
     "upn": 1,
     "gbai": 2,
-    "bng": 2,
+    "bng": 5,
     "ccpc": 1,
     "upc": 3,
     "drago": 3,
@@ -2790,7 +2892,6 @@
     "bildu",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -2814,12 +2915,19 @@
      "Programa electoral de Sumar de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=29",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "psoe": "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
     "pp": "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional.",
-    "erc": "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias."
+    "erc": "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias.",
+    "bng": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %."
    }
   },
   {
@@ -2922,7 +3030,6 @@
    "est": [
     "salf",
     "erc",
-    "junts",
     "pnv",
     "gbai",
     "bng",
@@ -2964,6 +3071,18 @@
      "El Independiente, reacción al pacto del CGPJ, 25/06/2024",
      "declaracion",
      "2024-06-25"
+    ],
+    "junts": [
+     "https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/",
+     "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021",
+     "parlamento",
+     "2021-09-21"
+    ],
+    "bildu": [
+     "https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/",
+     "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021",
+     "parlamento",
+     "2021-09-21"
     ]
    },
    "why": {
@@ -2972,7 +3091,9 @@
     "vox": "Vox propone que todos los vocales del CGPJ sean designados o propuestos por los propios jueces.",
     "fa": "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
     "pod": "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
-    "erc": "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan."
+    "erc": "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan.",
+    "junts": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
+    "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial."
    }
   },
   {
@@ -3072,6 +3193,12 @@
      "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024",
      "parlamento",
      "2024-05-30"
+    ],
+    "bng": [
+     "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
+     "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024",
+     "parlamento",
+     "2024-05-30"
     ]
    },
    "why": {
@@ -3083,7 +3210,8 @@
     "erc": "El programa propone una ley de amnistía, que ERC luego apoyó en el Congreso.",
     "junts": "Su programa exige una ley de amnistía para resolver el conflicto con España.",
     "pnv": "Votó a favor de la ley de amnistía y defendió su encaje en la Constitución.",
-    "bildu": "Votó a favor de la ley de amnistía en su aprobación definitiva."
+    "bildu": "Votó a favor de la ley de amnistía en su aprobación definitiva.",
+    "bng": "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso."
    }
   },
   {
@@ -3654,6 +3782,12 @@
      "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3662,8 +3796,9 @@
     "fa": "Estimación: se opone a la prisión permanente revisable; no consta una iniciativa propia reciente para derogarla.",
     "pod": "Unidas Podemos votó contra ampliar la prisión permanente revisable, fiel a su rechazo tradicional a esta pena.",
     "erc": "El programa propone derogar la prisión permanente revisable.",
-    "junts": "Su programa sostiene que la prisión permanente revisable sustituye a la cadena perpetua y vulnera la reinserción.",
-    "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua."
+    "junts": "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
+    "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua."
    }
   },
   {
@@ -3766,6 +3901,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3776,8 +3917,9 @@
     "pod": "Exige una derogación ambiciosa de la ley mordaza, incluidas las devoluciones en caliente y las pelotas de goma.",
     "erc": "El programa propone derogar la «ley mordaza».",
     "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
-    "pnv": "Se opone frontalmente a la ley mordaza y promovió su reforma.",
-    "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza."
+    "pnv": "Se opone a la ley mordaza y promovió su reforma.",
+    "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
+    "bng": "Su programa propone derogar íntegramente la ley mordaza."
    }
   },
   {
@@ -4210,6 +4352,24 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pnv": [
+     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
+     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 8",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=10",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4218,7 +4378,10 @@
     "vox": "Vox propone derogar la Ley Integral de Violencia de Género y aprobar una ley para todas las víctimas de violencia doméstica.",
     "fa": "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos.",
     "pod": "Irene Montero criticó a quienes sostienen que la violencia no tiene género, frente a la ley específica.",
-    "erc": "El programa refuerza la jurisdicción específica de violencia machista."
+    "erc": "El programa refuerza la jurisdicción específica de violencia machista.",
+    "pnv": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
+    "bildu": "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
+    "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia."
    }
   },
   {
@@ -4308,10 +4471,10 @@
      "2023-02-22"
     ],
     "pnv": [
-     "https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/",
-     "The Objective, rechazo en el Congreso de la regulación del cannabis de ERC, 22/02/2023",
-     "parlamento",
-     "2023-02-22"
+     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=46",
+     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4321,7 +4484,7 @@
     "fa": "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial.",
     "pod": "Su programa europeo de 2024 propone despenalizar y legalizar el cannabis también para uso recreativo.",
     "erc": "ERC presentó en el Congreso una ley de regulación integral del cannabis, también recreativo.",
-    "pnv": "Apoyó tramitar la ley de ERC para regular el cannabis terapéutico y recreativo; su programa solo pide regular el uso medicinal."
+    "pnv": "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto."
    }
   },
   {
@@ -4411,7 +4574,30 @@
      "Ara (edición en inglés), comunicado de Junts, 17/04/2026",
      "declaracion",
      "2026-04-17"
+    ],
+    "pnv": [
+     "https://es.ara.cat/sociedad/inmigracion/congreso-debate-regularizacion-500-000-extranjeros-viven-espana-papeles_1_4992457.html",
+     "Ara, El Congreso debate la regularización de 500.000 extranjeros, 09-04-2024",
+     "parlamento",
+     "2024-04-09"
+    ],
+    "bildu": [
+     "https://orain.eus/es/politica/2024/04/09/el-congreso-tramitara-iniciativa-de-regularizacion-extraordinaria-de-personas-extranjeras/",
+     "Orain, el Congreso tramitará la iniciativa de regularización extraordinaria, 09-04-2024",
+     "parlamento",
+     "2024-04-09"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
+   },
+   "why": {
+    "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
+    "bildu": "EH Bildu expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    "bng": "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa."
    }
   },
   {
@@ -4491,6 +4677,18 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4498,7 +4696,9 @@
     "vox": "Vox propone la expulsión de quienes entren ilegalmente y suprimir el arraigo como vía de regularización.",
     "fa": "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
     "pod": "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
-    "erc": "El programa propone regularizar a las personas en situación irregular."
+    "erc": "El programa propone regularizar a las personas en situación irregular.",
+    "bildu": "El programa exige derogar la Ley de Extranjería y sustituirla por una legislación que garantice los derechos de todas las personas migrantes.",
+    "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante."
    }
   },
   {
@@ -4571,12 +4771,26 @@
      "Moción de Vox sobre «prioridad nacional» en vivienda (18-6-2026)",
      "parlamento",
      "2026-06-18"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "psoe": "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
     "vox": "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
-    "erc": "Estimación: ERC defiende la igualdad de derechos con independencia del origen."
+    "erc": "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
+    "bildu": "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
+    "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación."
    }
   },
   {
@@ -5856,11 +6070,8 @@
     "pacma",
     "d21",
     "junts",
-    "pnv",
-    "bildu",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -5900,6 +6111,24 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "pnv": [
+     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=20",
+     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 20",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=50",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -5907,7 +6136,10 @@
     "pp": "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
-    "erc": "La ponencia apuesta por un sistema energético basado en renovables."
+    "erc": "La ponencia apuesta por un sistema energético basado en renovables.",
+    "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
+    "bildu": "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
+    "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado."
    }
   },
   {
@@ -6008,11 +6240,18 @@
      "ElNacional.cat, votación en el Congreso del 20/03/2025",
      "parlamento",
      "2025-03-20"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "psoe": "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
-    "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar."
+    "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
+    "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
    }
   },
   {
@@ -6102,6 +6341,12 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pnv": [
+     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10",
+     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 10",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6110,7 +6355,8 @@
     "vox": "Vox rechaza cualquier tendencia federalista de la UE y pide devolver protagonismo a los Estados.",
     "fa": "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior.",
     "pod": "Estimación: sin postura reciente publicada sobre ceder más competencias a la UE.",
-    "erc": "El programa apuesta por una Europa federal con instituciones más ambiciosas."
+    "erc": "El programa apuesta por una Europa federal con instituciones más ambiciosas.",
+    "pnv": "El programa pide una política europea de inmigración y asilo con tratamiento comunitario, y completar la Unión Bancaria."
    }
   },
   {
@@ -6293,6 +6539,12 @@
      "RTVC, votación del 8 de octubre de 2025",
      "parlamento",
      "2025-10-08"
+    ],
+    "bng": [
+     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+     "RTVC, El Congreso aprueba el embargo de armas a Israel, 08-10-2025",
+     "parlamento",
+     "2025-10-08"
     ]
    },
    "why": {
@@ -6303,7 +6555,8 @@
     "erc": "El programa pide detener el comercio de armas con Israel, entre otros países.",
     "junts": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "pnv": "Votó a favor del decreto de embargo de armas a Israel.",
-    "bildu": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto."
+    "bildu": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
+    "bng": "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto."
    }
   },
   {
@@ -6434,6 +6687,7 @@
    },
    "est": [
     "salf",
+    "junts",
     "gbai",
     "ccpc",
     "upc",
@@ -6483,12 +6737,6 @@
      "programa",
      "2025-03"
     ],
-    "junts": [
-     "https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html",
-     "El Debate, abril de 2026",
-     "parlamento",
-     "2026-04"
-    ],
     "pnv": [
      "https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html",
      "El Debate, abril de 2026",
@@ -6508,7 +6756,6 @@
     "vox": "El programa de Vox da por hecha la permanencia en la OTAN y pide que proteja expresamente a Ceuta y Melilla.",
     "fa": "No propone salir de la OTAN, pero sí desplazar progresivamente sus garantías hacia una autonomía estratégica europea.",
     "erc": "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN.",
-    "junts": "Votó contra la moción de Podemos para un referéndum sobre la OTAN.",
     "pnv": "Votó contra la moción de Podemos para un referéndum sobre la OTAN y defiende seguir en la Alianza.",
     "bildu": "Considera «un sinsentido» seguir defendiendo la OTAN, aunque no apoyó la moción de Podemos por estar escrita «muy desde Madrid»."
    }
@@ -6855,7 +7102,16 @@
      "NacióDigital, enmienda a la LOMLOE, 18/11/2020",
      "parlamento",
      "2020-11-18"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=33",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
+   },
+   "why": {
+    "bng": "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles."
    }
   },
   {
@@ -7126,13 +7382,27 @@
      "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "pp": "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua.",
     "vox": "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
     "erc": "El programa defiende la inmersión con el catalán como lengua vehicular.",
-    "junts": "Su programa defiende la inmersión lingüística de la escuela catalana."
+    "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
+    "bildu": "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
+    "bng": "El programa propone una escuela pública gallega orientada a la normalización lingüística."
    }
   },
   {
@@ -7549,10 +7819,17 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
-    "bildu": "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios."
+    "bildu": "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios.",
+    "bng": "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas."
    }
   },
   {
@@ -8065,6 +8342,12 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8073,7 +8356,8 @@
     "vox": "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
     "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
     "pod": "Estimación: favorable a estándares estatales como tiempos máximos de espera.",
-    "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica."
+    "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
+    "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias."
    }
   },
   {
@@ -8172,10 +8456,17 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
+     "Programa do BNG para as eleccións xerais de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
-    "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola."
+    "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
+    "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales."
    }
   },
   {
@@ -8392,7 +8683,7 @@
     "pnv": 4,
     "bildu": 3,
     "upn": 4,
-    "bng": 2,
+    "bng": 1,
     "ccpc": 4,
     "upc": 1,
     "drago": 1,
@@ -8409,7 +8700,6 @@
     "d21",
     "erc",
     "upn",
-    "bng",
     "upc",
     "drago",
     "comp",
@@ -8467,6 +8757,12 @@
      "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
      "parlamento",
      "2025-04-03"
+    ],
+    "bng": [
+     "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+     "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
+     "parlamento",
+     "2025-04-03"
     ]
    },
    "why": {
@@ -8478,7 +8774,8 @@
     "erc": "Estimación: posición crítica con la caza del lobo.",
     "junts": "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     "pnv": "Votó a favor de desproteger al lobo al norte del Duero.",
-    "bildu": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
+    "bildu": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
+    "bng": "Votó en contra de desproteger al lobo al norte del Duero."
    }
   },
   {
@@ -8942,7 +9239,7 @@
     "pacma": 2,
     "d21": 1,
     "erc": 1,
-    "junts": 2,
+    "junts": 1,
     "pnv": 2,
     "bildu": 1,
     "upn": 5,
@@ -8960,7 +9257,6 @@
     "salf",
     "pacma",
     "d21",
-    "junts",
     "upn",
     "gbai",
     "ccpc",
@@ -9008,9 +9304,27 @@
      "parlamento",
      "2021-03-18"
     ],
+    "junts": [
+     "https://www.menorca.info/actualidad/nacional/2026/06/11/2648213/congreso-aprueba-tramitar-ley-blinda-eutanasia-ante-dilaciones-judiciales.html",
+     "Menorca.info, el Congreso aprueba tramitar la ley que blinda la eutanasia, 11-06-2026",
+     "parlamento",
+     "2026-06-11"
+    ],
     "pnv": [
      "https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
      "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021",
+     "parlamento",
+     "2021-03-18"
+    ],
+    "bildu": [
+     "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
+     "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021",
+     "parlamento",
+     "2021-03-18"
+    ],
+    "bng": [
+     "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
+     "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021",
      "parlamento",
      "2021-03-18"
     ]
@@ -9022,7 +9336,10 @@
     "fa": "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
     "pod": "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
     "erc": "ERC votó a favor de aprobar la ley de eutanasia en 2021.",
-    "pnv": "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación»."
+    "junts": "Junts votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
+    "pnv": "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación».",
+    "bildu": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
+    "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021."
    }
   },
   {
@@ -9064,7 +9381,6 @@
     "salf",
     "d21",
     "junts",
-    "pnv",
     "upn",
     "gbai",
     "ccpc",
@@ -9112,6 +9428,18 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pnv": [
+     "https://www.noticiasdenavarra.com/sociedad/2023/02/16/congreso-aprueba-definitivamente-ley-trans-6453535.html",
+     "Noticias de Navarra, El Congreso aprueba definitivamente la ley trans, 16-02-2023",
+     "parlamento",
+     "2023-02-16"
+    ],
+    "bng": [
+     "https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html",
+     "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022",
+     "parlamento",
+     "2022-12-22"
     ]
    },
    "why": {
@@ -9120,7 +9448,9 @@
     "vox": "Vox propone derogar la ley trans, que permite el cambio registral sin informes médicos.",
     "fa": "Toma como base la ley trans de 2023, que permite el cambio registral desde los 16 sin informes médicos.",
     "pod": "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
-    "erc": "El programa defiende la autodeterminación de género sin patologizar."
+    "erc": "El programa defiende la autodeterminación de género sin patologizar.",
+    "pnv": "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
+    "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans."
    }
   },
   {
