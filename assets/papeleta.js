@@ -1653,7 +1653,7 @@ function renderSupport() {
 // Por qué tiene cada partido su postura: justificación (why), nota de discrepancia (notes), fuente (src) y aviso de error
 const ERR_MAIL = "menendezpeoe@gmail.com";
 const errLink = (q, pid) => `<a class="err-link" href="mailto:${ERR_MAIL}?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}&body=${encodeURIComponent(`Pregunta: ${q.text}\nPartido: ${P[pid].name}\n\n¿Qué está mal y qué fuente lo muestra?\n`)}">¿Ves un error?</a>`;
-const posWhy = (q, pid) => [q.why?.[pid], q.notes?.[pid]].filter(Boolean).join(" ");
+const posWhy = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
 function posNotes(q, pids) {
   const rows = pids.filter((pid) => q.pos[pid] && (q.why?.[pid] || q.notes?.[pid] || q.src?.[pid]));
   if (!rows.length) return "";

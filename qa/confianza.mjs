@@ -14,6 +14,10 @@ const qp = await get(`preguntas/${q.id.toLowerCase()}/`);
 ok(qp.status === 200 && qp.text.includes("Por qué piensa así cada partido") && qp.text.includes("mailto:menendezpeoe@gmail.com?subject="), `la página de ${q.id} muestra las justificaciones y el enlace «¿Ves un error?»`);
 const pid = Object.keys(q.why)[0], party = await get(`partidos/${pid}/`);
 ok(party.text.includes(q.why[pid].replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]))) && party.text.includes("¿Ves un error?"), `la página del partido (${pid}) muestra su justificación y el aviso de error`);
+const norm = (t) => t.replace(/[.\s]+$/, "").toLowerCase();
+const dup = bank.questions.flatMap((x) => Object.keys(x.why || {}).filter((p) => x.notes?.[p] && norm(x.why[p]) === norm(x.notes[p])).map((p) => [x, p]))[0];
+if (dup) { const [dq, dp] = dup; const page = await get(`preguntas/${dq.id.toLowerCase()}/`); const t = dq.why[dp].replace(/[.\s]+$/, "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  ok(page.text.split(t).length - 1 === 1, `si la nota repite la justificación, se muestra una sola vez (${dq.id}/${dp})`); }
 const csv = await get("datos/posturas.csv");
 ok(csv.text.split(/\r?\n/)[0].includes("justificacion"), "los datos abiertos incluyen la justificación");
 console.log("Páginas de confianza");

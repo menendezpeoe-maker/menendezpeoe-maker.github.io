@@ -53,7 +53,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   };
   const logo = (pid) => { const p = P[pid]; return `<span class="logo${p.ab.length >= 5 ? " long" : ""}" style="background:${p.color};color:${textOn(p.color)}" aria-hidden="true">${esc(p.ab)}</span>`; };
   const errA = (q, pid) => `<a class="err-link" href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
-  const whyOf = (q, pid) => [q.why?.[pid], q.notes?.[pid]].filter(Boolean).join(" ");
+  const whyOf = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
