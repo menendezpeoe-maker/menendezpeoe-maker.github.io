@@ -11,7 +11,7 @@
 1. **T12b:** sigue el orden de T12 con las posturas de prioridad 1 y 2 aún sin fuente: Junts 23, EH Bildu 23, PNV 24, BNG 22; después Coalición Canaria y UPN (ninguna fuente aún) y SALF. Programas de 2023 ya en texto: método en la entrada de T12. Método general: el de T7 y T5 (`plan/ESTADO-HISTORICO.md`).
 2. **Programas del 29N:** a 27 oct ningún partido ha publicado el suyo (comprobado en prensa y agregadores; suelen salir unas dos semanas antes). Cada tanda lo vuelve a comprobar (regla 5).
 3. **Pendiente de tandas anteriores:** 22 posturas documentadas de Podemos sin enlace (podemos.info bloquea a los robots; lista en la entrada de T7 del histórico) → T12b, R0 o R1. 
-4. **Pendiente de decisión del titular:** 5 posturas con evidencia discutible (lista en la entrada de T12); correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
+4. **Pendiente de decisión del titular:** correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
 
 **Archivos clave y decisiones técnicas**
 - Mapa del código y grupos de pruebas: `CLAUDE.md`. Pruebas con `node qa/run.mjs <grupo|todas>` (21 baterías, incluida `rendimiento` desde T11).
@@ -34,12 +34,12 @@ Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 - **Cambios de valor (todos con fuente y nota en la justificación):** PNV A01 3→4, F05 3→4, G01 3→2 (votación del Congreso), H05 4→5; Junts A05 3→4, A08 4→2, E02 3→5, H04 3→4, L09 4→5, L02 2→1; EH Bildu K04 1→3; BNG D01 2→5, K04 2→1.
 - **Posturas con fuente por partido (de las que tienen postura):** Junts 27 de 104 (antes 10), EH Bildu 34 de 102 (antes 0), PNV 29 de 99 (antes 0), BNG 26 de 105 (antes 0). Sin fuente con prioridad 1–2: Junts 23, EH Bildu 23, PNV 24, BNG 22.
 - **Método reutilizable:** programas de 2023 de Junts (copia de Betevé), PNV, EH Bildu y BNG (`https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf`) se pasan a texto con `pdftotext -layout` y se trocean por página (`#page=N` = número de página del PDF). deia.eus, ondavasca.com y similares responden a `curl` con User-Agent de navegador.
-- **Pendiente de decisión del titular (evidencia discutible, sin cambiar):**
-  - EH Bildu I01 (concertada, 1): en Euskadi pactó financiar al 100 % la red concertada (evidencia autonómica, 2021). Podría ser 3–4.
-  - EH Bildu B03 (desalojo rápido, 1): el 14/11/2024 votó con PP, Junts y PNV un cambio legal para agilizar desahucios por ocupación (El Español). Podría ser más alto.
-  - BNG B01 (topes al alquiler, 5): se abstuvo en la Ley de Vivienda (27/04/2023) y su programa no propone topes.
-  - PNV L01 (aborto en la Constitución, 4~): según la prensa (El Español, 30/04/2026), su portavoz dijo que la reforma no hacía falta; no se pudo leer el artículo. Podría ser 2.
-  - PNV D07 (referéndum monarquía o república, 4~): no se ha encontrado ninguna postura del PNV. Mantener 4 o bajar a 3.
+- **Posturas discutibles: decididas el 27 oct** (el titular delegó la decisión; criterio: lo más coherente y la fuente más fiable, como en T5):
+  - EH Bildu I01 (concertada) 1 → 2: criticó la «concertación universal» de la ley vasca de educación de 2023 (Orain/EITB); en 2021 había propuesto financiar al 100 % la concertada integrándola. Evidencia autonómica: se modera un punto.
+  - EH Bildu B03 (desalojo en 48 h) sigue en 1, ahora con fuente: votó en 2024 una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error», y criticó la ley de Junts de 48 horas (El Español).
+  - BNG B01 (limitar alquileres) sigue en 5, ahora con fuente: votó a favor del decreto de congelación de alquileres (28/04/2026, Público). Con la misma votación: Compromís B01 5 con fuente y Coalición Canaria B01 2 estimada → 4.
+  - PNV L01 (aborto en la Constitución) 4 estimada → 3: votó por seguir tramitando la reforma, pero la llamó oportunista y cuestionó su utilidad (Vozpópuli, 30/04/2026).
+  - PNV D07 (referéndum monarquía o república) 4 → 3 estimada: no consta ninguna postura suya; estimación sin base, al punto medio.
 - **Notas que repetían la justificación:** ya no se muestran dos veces (40 casos; `posWhy` en la app y `whyOf` en las páginas). Prueba nueva en `qa/confianza.mjs`.
 - **Programas del 29N:** ninguno publicado a 27 oct.
 - **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK. Capturas de una página de partido y una de pregunta a 390 px, en claro y oscuro.

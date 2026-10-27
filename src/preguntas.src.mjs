@@ -109,7 +109,7 @@ export const QUESTIONS = [
   short: "Topes al alquiler en zonas tensionadas",
   ctx: "La Ley de Vivienda de 2023 permite a las comunidades declarar «zonas de mercado tensionado» y limitar allí las rentas; Cataluña fue la primera en aplicarla. Sus defensores señalan bajadas de precio en los contratos afectados; sus críticos, que se reduce la oferta de alquiler habitual y crece el de temporada. El debate es si limitar precios ayuda más que construir o dar incentivos fiscales.",
   ley: "Ley 12/2023, por el derecho a la vivienda",
-  pos: "5 1 1 5 5 1~ 0 1~ 5 2 3 5 1 4~ 5 2~ 5 5~ 5 5~ 3~ 5~ 5 0 0 0 0" },
+  pos: "5 1 1 5 5 1~ 0 1~ 5 2 3 5 1 4~ 5 4 5 5~ 5 5~ 3~ 5~ 5 0 0 0 0" },
 { id: "B02", area: "viv", prio: 2, type: "dilema", dim: "eco", dir: -1, lr: -1,
   text: "¿Qué debería priorizarse para abaratar la vivienda?",
   A: "Construir mucho más, liberando suelo y agilizando licencias",
@@ -248,7 +248,7 @@ export const QUESTIONS = [
   short: "Referéndum entre monarquía y república",
   ctx: "La Constitución de 1978 establece la monarquía parlamentaria: el Rey es jefe del Estado, con funciones sobre todo simbólicas y de arbitraje. Cambiar la forma de Estado exige una reforma agravada, con disolución de las Cortes y referéndum. Los partidarios de votarlo sostienen que la monarquía no se sometió a votación por separado; los contrarios, que la Constitución ya se aprobó en referéndum y que la monarquía aporta estabilidad.",
   ley: "Constitución, art. 1.3 y 168",
-  pos: "2 1 1~ 4~ 5 2~ 0 1 5 5 4 5 1 4~ 5 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0" },
+  pos: "2 1 1~ 4~ 5 2~ 0 1 5 5 3~ 5 1 4~ 5 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0" },
 { id: "D08", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Debería limitarse más la capacidad del Gobierno de aprobar decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
   short: "Limitar los decretos-ley",
@@ -468,7 +468,7 @@ export const QUESTIONS = [
   short: "Financiación de la escuela concertada",
   ctx: "Una cuarta parte del alumnado estudia en centros concertados: privados, a menudo religiosos, financiados con dinero público a cambio de ser gratuitos en la enseñanza obligatoria, aunque muchos cobran cuotas «voluntarias». Sus defensores apelan a la libertad de elección de las familias; sus críticos señalan que escolarizan a menos alumnado vulnerable y prefieren priorizar la red pública.",
   ley: "Constitución, art. 27",
-  pos: "3 5 5 1 1 5~ 0 4 2 4 4 1 5 2~ 1 3~ 1 1~ 1 1 0 1 1 0 0 0 0" },
+  pos: "3 5 5 1 1 5~ 0 4 2 4 4 2 5 2~ 1 3~ 1 1~ 1 1 0 1 1 0 0 0 0" },
 { id: "I02", area: "edu", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "La universidad pública debería ser gratuita para todos los estudiantes.",
   short: "Universidad pública gratuita",
@@ -602,7 +602,7 @@ export const QUESTIONS = [
   short: "El aborto en la Constitución",
   ctx: "La ley de 2010 permite el aborto libre hasta la semana 14 y hasta la 22 por riesgos graves, y el Tribunal Constitucional la avaló en 2023. En 2025 el Gobierno propuso reformar la Constitución para incluirlo, como hizo Francia en 2024. Sus defensores quieren protegerlo frente a futuros cambios de mayoría; sus críticos defienden la vida del no nacido o consideran innecesaria la reforma, que exige tres quintos de las Cámaras.",
   ley: "Ley Orgánica 2/2010; Constitución, art. 167",
-  pos: "5 1 1 5 5 0 5~ 3~ 4 3 4~ 5 1~ 5~ 5 3~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1~ 5~ 5 3~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
 { id: "L02", area: "der", prio: 2, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La ley de eutanasia debería derogarse.",
   short: "Derogar la ley de eutanasia",
@@ -924,7 +924,10 @@ export const SOURCES = {
     erc: ["https://www.merca2.es/2023/04/27/ley-de-vivienda-mayoria-absoluta-1292494/", "Merca2, votación de la Ley de Vivienda del 27/04/2023", "parlamento", "2023-04-27"],
     junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     pnv: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
-    bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=2", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"]
+    bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=2", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
+    bng: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
+    ccpc: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
+    comp: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"]
   },
   B02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -942,6 +945,7 @@ export const SOURCES = {
     pod: ["https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/", "El Independiente, votación de la ley antiokupas del PP, 29/11/2022", "parlamento", "2022-11-29"],
     junts: ["https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html", "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025", "parlamento", "2025-03-18"],
     pnv: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
+    bildu: ["https://www.elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, votación en el Congreso de la reforma para agilizar desahucios, 14/11/2024", "parlamento", "2024-11-14"],
     bng: ["https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024", "parlamento", "2024-11-14"]
   },
   B04: {
@@ -1385,6 +1389,7 @@ export const SOURCES = {
     pod: ["https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-240-1.PDF", "BOCG, Proposición de Ley de Unidas Podemos, 29/04/2022", "programa", "2022-04-29"],
     erc: ["https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html", "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023", "gobierno", "2023-04-27"],
     junts: ["https://naciodigital.cat/politica/pp-vox-i-cs-se-sumen-a-jxcat-en-defensa-de-lescola-concertada.html", "NacióDigital, enmienda a la LOMLOE, 18/11/2020", "parlamento", "2020-11-18"],
+    bildu: ["https://orain.eus/es/actualidad/sociedad/2023/11/21/eh-bildu-denuncia-que-pnv-acepta-modelos-linguisticos-y-a-cambio-pseee-concertacion-universal/", "Orain (EITB), EH Bildu ante la ley vasca de educación, 21/11/2023", "prensa", "2023-11-21"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=33", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
   I02: {
@@ -1543,7 +1548,8 @@ export const SOURCES = {
     fa: ["https://www.publico.es/politica/congreso/sumar-propone-reforma-articulo-43-constitucion-blindar-derecho-aborto.html", "Público, propuesta de reforma constitucional de Sumar, 27/02/2025", "declaracion", "2025-02-27"],
     pod: ["https://www.elespanol.com/espana/politica/20251017/carmen-calvo-suma-irene-montero-cuestiona-reforma-constitucion-propone-gobierno-aborto/1003743974273_0.amp.html", "El Español, declaraciones de Irene Montero, 17/10/2025", "declaracion", "2025-10-17"],
     erc: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
-    junts: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"]
+    junts: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
+    pnv: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026", "parlamento", "2026-04-30"]
   },
   L02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1701,7 +1707,10 @@ export const JUSTIF = {
   },
   B01: {
     pnv: "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
-    bildu: "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas."
+    bildu: "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
+    bng: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
+    ccpc: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
+    comp: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026."
   },
   B02: {
     psoe: "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
@@ -1720,6 +1729,7 @@ export const JUSTIF = {
     erc: "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     junts: "Junts presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     pnv: "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
+    bildu: "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
     bng: "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
   },
   B04: {
@@ -1886,7 +1896,8 @@ export const JUSTIF = {
     vox: "Estimación: Vox defiende la Corona y no se le conoce apoyo a una consulta sobre la forma de Estado.",
     fa: "Estimación: sus partidos (IU, Comuns) defienden la república, pero no consta una petición reciente de referéndum.",
     pod: "Belarra encabezó una marcha por la república y dijo que no habrá democracia plena sin ella.",
-    erc: "El programa apoya convocar un referéndum sobre monarquía o república."
+    erc: "El programa apoya convocar un referéndum sobre monarquía o república.",
+    pnv: "Estimación: no consta ninguna postura del PNV sobre un referéndum entre monarquía y república, así que se deja en el punto medio."
   },
   D08: {
     pp: "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
@@ -2183,6 +2194,7 @@ export const JUSTIF = {
     erc: "La ponencia critica externalizar fronteras con centros en terceros países."
   },
   I01: {
+    bildu: "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
     bng: "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles."
   },
   I02: {
@@ -2351,6 +2363,9 @@ export const JUSTIF = {
     vox: "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
     fa: "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
     erc: "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
+  },
+  L01: {
+    pnv: "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado."
   },
   L02: {
     psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
