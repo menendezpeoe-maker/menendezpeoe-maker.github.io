@@ -1,14 +1,14 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 27 oct 2026, T12)
+## Ficha de continuidad (actualizada el 27 oct 2026, T12b)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1, T9, T2, T3, T4 (19–24 oct), T10, T5, T6, T7 (24 oct), T8 (25 oct), T11 (26 oct), T12 (27 oct).
-- Pendientes, con tarea programada: T12b (28 oct), R0 (29), R1 (31), R2 (1 nov), S1 (10 nov), S2 (21 nov), P1 (30 nov).
+- Completadas y verificadas en la web real: T1, T9, T2, T3, T4 (19–24 oct), T10, T5, T6, T7 (24 oct), T8 (25 oct), T11 (26 oct), T12 y T12b (27 oct).
+- Pendientes, con tarea programada: T12c (28 oct, continuación de fuentes), R0 (29), R1 (31), R2 (1 nov), S1 (10 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
 **Orden de trabajo para la próxima tanda**
-1. **T12b:** sigue el orden de T12 con las posturas de prioridad 1 y 2 aún sin fuente: Junts 23, EH Bildu 23, PNV 24, BNG 22; después Coalición Canaria y UPN (ninguna fuente aún) y SALF. Programas de 2023 ya en texto: método en la entrada de T12. Método general: el de T7 y T5 (`plan/ESTADO-HISTORICO.md`).
+1. **T12c:** posturas de prioridad 1 y 2 aún sin fuente: Junts 22, EH Bildu 21, PNV 21, BNG 19, Coalición Canaria 33, UPN 31; después SALF y el resto. Muchas ya se buscaron sin éxito (T12 y T12b): mejor buscar votaciones del Congreso que cubran varios partidos a la vez. Método: entrada de T12.
 2. **Programas del 29N:** a 27 oct ningún partido ha publicado el suyo (comprobado en prensa y agregadores; suelen salir unas dos semanas antes). Cada tanda lo vuelve a comprobar (regla 5).
 3. **Pendiente de tandas anteriores:** 22 posturas documentadas de Podemos sin enlace (podemos.info bloquea a los robots; lista en la entrada de T7 del histórico) → T12b, R0 o R1. 
 4. **Pendiente de decisión del titular:** correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
@@ -28,6 +28,15 @@
 
 Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 
+## 27 oct 2026 · T12b · Fuentes de Coalición Canaria y UPN (adelantada a petición del titular)
+- **Nuevas:** 33 aceptadas de 34 propuestas; tras el revisor se retiraron 2 (CC B05, BNG D03). Coalición Canaria 0 → 9 posturas con fuente; UPN 0 → 17; restos: Junts +1, PNV +2, BNG +2.
+  - CC no publicó programa de generales en 2023: se usan el acuerdo PSOE-CC de noviembre de 2023 y votaciones del Congreso. UPN tampoco (su PDF de 2023 es foral y municipal): solo votaciones del Congreso.
+- **Cambios de valor (con fuente):** CC A01 3→4, D04 2→1, H04 3→4, K01 3→1 (contra el acuerdo con Mercosur), K04 4→3; UPN A01 2→1, F01 2→1, G04 2→3, H04 2→3, L09 3→4. Criterio igual para todos en una misma votación (jornada, lobo, embargo).
+- **Revisión independiente:** textos unificados para las votaciones compartidas (jornada, decretos de vivienda, trasvase Tajo-Segura, defensa, lobo), fechas de la amnistía precisadas (marzo y mayo de 2024) y Junts L02 con la fuente de 2021, que nombra su voto.
+- **Dato útil:** el 02/10/2026 el Congreso tumbó dos decretos de vivienda (Demócrata y Público): el primero con 172 apoyos (PSOE, Sumar, ERC, Bildu, PNV, Podemos, BNG, CC y Compromís) y 178 en contra (PP, Vox, Junts y UPN). La congelación de alquileres del 28/04/2026 es otra votación distinta.
+- **Programas del 29N:** ninguno publicado a 27 oct.
+- **Calendario:** la tarea programada del 28 oct pasa a ser T12c (continuación de fuentes).
+
 ## 27 oct 2026 · T12 · Fuentes de Junts, EH Bildu, PNV y BNG
 - **Aportación externa aplicada** (`plan/APORTACION-T12.md`): 58 fuentes revisadas; abiertas y comprobadas las 11 que cambiaban de valor. Aplicadas 10; PNV E09 (cannabis) se queda en 3, porque su programa solo pide el uso medicinal.
 - **Nuevas (dos subagentes y revisión una a una):** aceptadas 55 de 79 propuestas (quedan 48 tras la revisión); se descartan las autonómicas, las deducidas y las que no responden a la pregunta. Tras el revisor independiente se quitaron 7 más que no respaldaban la pregunta (Bildu B03, J02 y H09; BNG J02 y H09; Junts H06; PNV F02) y se unificaron textos y fuentes repetidas (amnistía, lobo, eutanasia, ley mordaza).
@@ -44,15 +53,4 @@ Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 - **Programas del 29N:** ninguno publicado a 27 oct.
 - **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK. Capturas de una página de partido y una de pregunta a 390 px, en claro y oscuro.
 - **Ojo al publicar posturas:** `qa/correcciones.mjs` lee el historial de git, así que hay que ejecutarlo después de hacer commit de `data/preguntas.json` (y volver a hacer commit de `src/correcciones.json`).
-
-## 26 oct 2026 · T11 · Embudo, rendimiento, preguntas legales y repaso
-- **Embudo en GoatCounter:** entra (inicio) → empieza → termina → comparte (`compartir`, una vez por visita, con cualquier botón de compartir) → reta a un amigo (`reto`). Nueva pregunta opcional al final del resumen, «¿Te ha resultado útil el test?» (Sí / No): cuenta `util-si` o `util-no`, da las gracias y no vuelve a preguntar (se recuerda en el navegador). No aparece en resultados compartidos. Aviso de privacidad actualizado (frase partida en dos tras la revisión). Pruebas nuevas en `qa/stats.mjs`. En GoatCounter, el embudo se lee comparando los totales de esos pasos.
-- **Rendimiento (nueva batería `qa/rendimiento.mjs`, 3G lenta y CPU ×4, con presupuesto):**
-  - La página «saltaba» al llegar las tipografías (CLS 0,21 en portada y páginas estáticas). Con tipografías de reserva de medidas ajustadas: 0,00.
-  - Newsreader recortada a los pesos y tamaños que usa la web (128 → 81 kB, sin cambio visible en las capturas). Portada en la web real: 391 → 340 kB, usable en 9,3 → 8,3 s, primer texto en 3,0 → 2,1 s; página de pregunta 241 → 190 kB.
-- **`plan/LEGAL.md`:** 16 preguntas para un asesor (LSSI, aportaciones y fiscalidad, RGPD, LOREG, contenido). No decide nada.
-- **Programas del 29N:** ninguno publicado a 26 oct.
-- **Revisión (regla 9):** capturas a 390 px (claro y oscuro) y 1280 px de portada, resultados, pregunta nueva y una página de pregunta; revisor independiente: solo la frase larga de privacidad, corregida.
-- **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK.
-- **ESTADO.md aligerado:** ficha reescrita; entradas del 24 oct y anteriores, sin cambios, en `plan/ESTADO-HISTORICO.md`.
 

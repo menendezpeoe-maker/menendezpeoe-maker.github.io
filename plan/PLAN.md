@@ -117,7 +117,8 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T8 | dom 25 oct | Fase 2: justificaciones visibles y confianza |
 | T11 | lun 26 oct | Fase 6 y repaso final |
 | T12 | mar 27 oct | Fase 2: fuentes del resto de candidaturas (Junts, PNV, EH Bildu, SALF y demás) |
-| T12b | mié 28 oct | Continuación de T12 con lo que quede, y programas de 2026 que se hayan publicado |
+| T12b | mar 27 oct | Continuación de T12 (hecha el 27, adelantada a petición del titular) |
+| T12c | mié 28 oct | Lo que quede de fuentes en el mismo orden (Junts, EH Bildu, PNV, BNG, CC, UPN; después SALF y el resto), y programas de 2026 que se hayan publicado |
 | R0 | jue 29 oct | Repaso y recuperación: lo pendiente en `ESTADO.md` (entre otras cosas, las 22 posturas de Podemos sin enlace) |
 | R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
@@ -194,7 +195,7 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
 - Igual que T5–T7 (mismo método, reglas 8 y 12 y formato `JUSTIF`), para las candidaturas que no tienen tanda propia, por orden de votos en 2023: Junts, EH Bildu, PNV, BNG, Coalición Canaria y UPN; después SALF y el resto.
 - Primero `prio` 1 y 2 sin fuente; con el tiempo que sobre, `prio` 3.
 - Anota en `ESTADO.md` cuántas posturas tienen ya fuente por partido.
-- **T12b (29 oct):** termina lo que T12 deje pendiente, en el mismo orden, e incorpora los programas de 2026 que se hayan publicado (regla 5).
+- **T12b (hecha el 27 oct) y T12c (28 oct):** terminan lo que T12 deje pendiente, en el mismo orden, e incorpora los programas de 2026 que se hayan publicado (regla 5).
 
 ### T8 · Fase 2: justificaciones visibles y confianza
 - **Muestra la justificación** junto a cada postura: en «Tus respuestas», en el explorador, en las páginas de partido y de tema, y en las fichas.

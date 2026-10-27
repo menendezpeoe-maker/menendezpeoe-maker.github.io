@@ -224,7 +224,7 @@ export const QUESTIONS = [
   short: "Que los jueces elijan el CGPJ",
   ctx: "El CGPJ nombra a los altos cargos judiciales. Desde 1985 sus vocales los eligen el Congreso y el Senado por mayoría de tres quintos, y su bloqueo entre 2018 y 2024 se cerró con la mediación de la Comisión Europea. Las instituciones europeas recomiendan que al menos la mitad de los vocales sean elegidos por los propios jueces. Los partidarios del sistema actual sostienen que aporta legitimidad democrática y evita el corporativismo judicial.",
   ley: "Constitución, art. 122.3",
-  pos: "2 5 5 1 1 5~ 0 5 1~ 2 2~ 1 5 2~ 1 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 0 5 1~ 2 2~ 1 5 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "D04", area: "ins", prio: 2, type: "likert", dim: null, dir: 0, lr: -1,
   text: "Las Cortes deberían poder aprobar amnistías para cerrar conflictos políticos.",
   short: "Amnistías por conflictos políticos",
@@ -969,8 +969,7 @@ export const SOURCES = {
     psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"],
     pod: ["https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/", "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024", "parlamento", "2024-06-16"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
-    pnv: ["https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/", "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023", "declaracion", "2023-04-24"],
-    ccpc: ["https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/", "RTVC, Parlamento de Canarias aprueba la ley del alquiler vacacional, 12/11/2025", "gobierno", "2025-11-12"]
+    pnv: ["https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/", "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023", "declaracion", "2023-04-24"]
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
@@ -1079,8 +1078,7 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/", "El Independiente, reacción al pacto del CGPJ, 25/06/2024", "declaracion", "2024-06-25"],
     junts: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"],
-    bildu: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"],
-    bng: ["https://www.eldebate.com/espana/20260910/congreso-rechaza-reforma-pp-vocales-cgpj-sean-elegidos-jueces_457567.html", "El Debate (EFE), El Congreso rechaza la reforma del PP para que los vocales del CGPJ sean elegidos por jueces, 10-09-2026", "parlamento", "2026-09-10"]
+    bildu: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, PSOE, Podemos y sus socios tumban la reforma del CGPJ planteada por el PP, 21-09-2021", "parlamento", "2021-09-21"]
   },
   D04: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776", "BOE, Ley Orgánica 1/2024, de amnistía", "gobierno", "2024-06-11"],
@@ -1270,7 +1268,7 @@ export const SOURCES = {
     erc: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     junts: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     pnv: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
-    upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra, Junts salva la prórroga de las nucleares, 13-11-2025", "parlamento", "2025-11-11"]
+    upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-11"]
   },
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1544,7 +1542,7 @@ export const SOURCES = {
     bildu: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     upn: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España, La desprotección del lobo al norte del Duero será efectiva desde hoy, 03-04-2025", "parlamento", "2025-03-20"],
     bng: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
-    ccpc: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España, desprotección del lobo al norte del Duero, 2025", "parlamento", "2025-03-20"]
+    ccpc: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"]
   },
   K05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1587,7 +1585,7 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99", "Programa electoral de Sumar de 2023, p. 99", "programa", "2023-07"],
     pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     erc: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021", "parlamento", "2021-03-18"],
-    junts: ["https://www.menorca.info/actualidad/nacional/2026/06/11/2648213/congreso-aprueba-tramitar-ley-blinda-eutanasia-ante-dilaciones-judiciales.html", "Menorca.info, el Congreso aprueba tramitar la ley que blinda la eutanasia, 11-06-2026", "parlamento", "2026-06-11"],
+    junts: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
     pnv: ["https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, aprobación de la ley de eutanasia en el Congreso, 18/03/2021", "parlamento", "2021-03-18"],
     bildu: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
     upn: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía (Europa Press), El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021", "parlamento", "2021-03-18"],
@@ -1664,7 +1662,7 @@ export const JUSTIF = {
     junts: "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     pnv: "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     bildu: "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
-    upn: "Votó a favor de las enmiendas de totalidad que devolvieron al Gobierno el proyecto de reducción de la jornada a 37,5 horas.",
+    upn: "Votó a favor de los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     bng: "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025.",
     ccpc: "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
   },
@@ -1742,7 +1740,7 @@ export const JUSTIF = {
   B01: {
     pnv: "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     bildu: "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
-    upn: "Votó en contra de los decretos de vivienda que congelaban o limitaban las subidas del alquiler, y contribuyó a derogarlos.",
+    upn: "Votó en contra de los dos decretos de vivienda de octubre de 2026, que congelaban o limitaban las subidas del alquiler.",
     bng: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     ccpc: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     comp: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026."
@@ -1758,7 +1756,7 @@ export const JUSTIF = {
     pnv: "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
     bildu: "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
     bng: "Votó a favor del primer decreto de vivienda, que limitaba las subidas del alquiler y prorrogaba contratos, derogado por el Congreso.",
-    ccpc: "Defiende aumentar la oferta de viviendas y rechazó el segundo decreto de vivienda de octubre de 2026, que consideró un riesgo para la oferta de alquiler."
+    ccpc: "Pidió más oferta de vivienda y anunció su rechazo al segundo decreto de vivienda de octubre de 2026 por reducir, según dijo, la oferta de alquiler."
   },
   B03: {
     psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
@@ -1784,8 +1782,7 @@ export const JUSTIF = {
     psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
     pod: "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
     erc: "La ponencia defiende intervenir los usos turísticos de las viviendas.",
-    pnv: "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
-    ccpc: "El Parlamento de Canarias aprobó en noviembre de 2025 la ley del alquiler vacacional con el apoyo de CC, que da a los ayuntamientos capacidad de planificar y limita el uso vacacional."
+    pnv: "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas."
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
@@ -1906,8 +1903,7 @@ export const JUSTIF = {
     pod: "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
     erc: "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan.",
     junts: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
-    bildu: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
-    bng: "En el debate de la reforma del PP sobre el CGPJ, su portavoz defendió que la justicia no debe quedar al margen del control democrático."
+    bildu: "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial."
   },
   D04: {
     psoe: "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
@@ -1919,9 +1915,9 @@ export const JUSTIF = {
     junts: "Su programa exige una ley de amnistía para resolver el conflicto con España.",
     pnv: "Votó a favor de la ley de amnistía y defendió su encaje en la Constitución.",
     bildu: "Votó a favor de la ley de amnistía en su aprobación definitiva.",
-    upn: "Votó en contra de la ley de amnistía en la votación final del Pleno del Congreso, junto con PP, Vox y Coalición Canaria.",
+    upn: "Votó en contra de la ley de amnistía en la votación del Congreso de marzo de 2024.",
     bng: "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
-    ccpc: "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso."
+    ccpc: "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso, en mayo de 2024."
   },
   D05: {
     vox: "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
@@ -2030,7 +2026,7 @@ export const JUSTIF = {
     pnv: "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
     bildu: "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
     bng: "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
-    ccpc: "Firmó en 2023 con el PSOE reforzar la lucha contra la violencia de género y el Pacto de Estado, sin proponer sustituir la ley por una de violencia intrafamiliar."
+    ccpc: "Firmó con el PSOE el compromiso de reforzar la lucha contra la violencia de género y el Pacto de Estado."
   },
   E09: {
     psoe: "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
@@ -2043,7 +2039,7 @@ export const JUSTIF = {
   },
   F01: {
     pnv: "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
-    bildu: "Expresó apoyo al fondo de la iniciativa legislativa popular para la regularización extraordinaria de personas extranjeras, tramitada en el Congreso en abril de 2024.",
+    bildu: "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
     upn: "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
     bng: "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa."
   },
@@ -2128,8 +2124,8 @@ export const JUSTIF = {
     vox: "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
     fa: "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
     erc: "Estimación: ERC se opone históricamente a los trasvases del Ebro.",
-    upn: "Votó a favor de la proposición de ley de Murcia para blindar por ley el trasvase Tajo-Segura, que no prosperó en el Congreso en mayo de 2025.",
-    bng: "Votó en contra de la proposición de ley de Murcia para blindar el trasvase Tajo-Segura, rechazada por el Congreso en mayo de 2025."
+    upn: "Votó a favor de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
+    bng: "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025."
   },
   G05: {
     psoe: "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
@@ -2176,9 +2172,9 @@ export const JUSTIF = {
   },
   H01: {
     psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
-    pnv: "Se abstuvo en la moción del PP para aprovechar la cláusula de escape y subir el gasto en defensa, y votó en contra de exigir votar el plan.",
+    pnv: "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     bildu: "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
-    upn: "Votó a favor de la moción del PP que pide aprovechar la cláusula de escape fiscal de la UE para subir el gasto en defensa.",
+    upn: "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     bng: "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
   },
   H02: {
@@ -2393,7 +2389,7 @@ export const JUSTIF = {
     junts: "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     pnv: "Votó a favor de desproteger al lobo al norte del Duero.",
     bildu: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
-    upn: "Votó a favor de las enmiendas del Senado que desprotegieron al lobo al norte del Duero y abrieron la puerta a hacerlo en el resto de España.",
+    upn: "Votó a favor de desproteger al lobo al norte del Duero y en el resto de España.",
     bng: "Votó en contra de desproteger al lobo al norte del Duero.",
     ccpc: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
   },
@@ -2435,7 +2431,7 @@ export const JUSTIF = {
     fa: "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
     pod: "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
     erc: "ERC votó a favor de aprobar la ley de eutanasia en 2021.",
-    junts: "Votó a favor de la ley de eutanasia en 2021 y en 2026 apoyó en el Congreso una proposición para reforzar su aplicación.",
+    junts: "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     pnv: "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación».",
     bildu: "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     upn: "Votó en contra de la ley orgánica de regulación de la eutanasia en el Congreso y anunció un recurso ante el Tribunal Constitucional.",
@@ -2500,6 +2496,6 @@ export const JUSTIF = {
     junts: "Presentó una ley para prohibir el burka y el niqab, que solo apoyó su grupo.",
     pnv: "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     bildu: "Rechazó la ley de Junts para prohibir el burka y el niqab.",
-    upn: "Votó, junto con el PP, a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público."
+    upn: "Votó a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público, que no prosperó."
   }
 };

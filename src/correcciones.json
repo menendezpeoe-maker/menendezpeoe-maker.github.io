@@ -2,6 +2,22 @@
  {
   "fecha": "2026-10-27",
   "id": "A01",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
+  "fuente": [
+   "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "Periódico de Ibiza (Europa Press), veto a la reducción de jornada, 11/09/2025",
+   "parlamento",
+   "2025-09-10"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "A01",
   "partido": "pnv",
   "de": 3,
   "a": 4,
@@ -13,6 +29,22 @@
    "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025",
    "parlamento",
    "2025-09-11"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "A01",
+  "partido": "upn",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Votó a favor de las enmiendas de totalidad que devolvieron al Gobierno el proyecto de reducción de la jornada a 37,5 horas.",
+  "fuente": [
+   "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "Periódico de Ibiza (Europa Press), El Congreso tumba la reducción de jornada con el veto de PP, Vox y Junts, 11-09-2025",
+   "parlamento",
+   "2025-09-10"
   ]
  },
  {
@@ -81,6 +113,22 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "D04",
+  "partido": "ccpc",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso.",
+  "fuente": [
+   "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
+   "Deia, El Congreso aprueba de forma definitiva la ley de Amnistía, 30/05/2024",
+   "parlamento",
+   "2024-05-30"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "D07",
   "partido": "pnv",
   "de": 4,
@@ -104,6 +152,22 @@
    "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "F01",
+  "partido": "upn",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
+  "fuente": [
+   "https://www.infobae.com/america/agencias/2026/03/18/el-congreso-insta-al-gobierno-a-renunciar-ya-a-la-regularizacion-de-migrantes-con-apoyo-de-pp-vox-junts-y-upn/",
+   "Infobae (Europa Press), El Congreso insta al Gobierno a renunciar ya a la regularización de migrantes, 18-03-2026",
+   "parlamento",
+   "2026-03-18"
   ]
  },
  {
@@ -140,6 +204,38 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "G04",
+  "partido": "upn",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó a favor de la proposición de ley de Murcia para blindar por ley el trasvase Tajo-Segura, que no prosperó en el Congreso en mayo de 2025.",
+  "fuente": [
+   "https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html",
+   "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025",
+   "parlamento",
+   "2025-05-13"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "H04",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso.",
+  "fuente": [
+   "https://www.democrata.es/politica/junts-apoyara-decreto-embargo-armas-israel-facilitando-aprobacion-congreso/",
+   "Demócrata, Junts apoyará el decreto de embargo de armas a Israel, octubre 2025",
+   "declaracion",
+   "2025-10"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "H04",
   "partido": "junts",
   "de": 3,
@@ -150,6 +246,22 @@
   "fuente": [
    "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
    "RTVC, votación del 8 de octubre de 2025",
+   "parlamento",
+   "2025-10-08"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "H04",
+  "partido": "upn",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Se abstuvo en la convalidación del decreto ley de embargo de armas a Israel, aprobado por el Congreso en octubre de 2025.",
+  "fuente": [
+   "https://www.infobae.com/espana/agencias/2025/10/08/el-congreso-convalida-el-decreto-de-embargo-de-armas-a-israel-con-el-apoyo-decisivo-de-podemos-y-lo-tramitara-como-ley/",
+   "Infobae (Europa Press), El Congreso convalida el decreto de embargo de armas a Israel, 08-10-2025",
    "parlamento",
    "2025-10-08"
   ]
@@ -199,6 +311,22 @@
  },
  {
   "fecha": "2026-10-27",
+  "id": "K01",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur.",
+  "fuente": [
+   "https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/",
+   "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026",
+   "declaracion",
+   "2026-01-27"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
   "id": "K04",
   "partido": "bildu",
   "de": 1,
@@ -227,6 +355,22 @@
    "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
    "parlamento",
    "2025-04-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "K04",
+  "partido": "ccpc",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
+  "fuente": [
+   "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
+   "Forbes España, desprotección del lobo al norte del Duero, 2025",
+   "parlamento",
+   "2025-03-20"
   ]
  },
  {
@@ -275,6 +419,22 @@
    "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
    "parlamento",
    "2026-04-14"
+  ]
+ },
+ {
+  "fecha": "2026-10-27",
+  "id": "L09",
+  "partido": "upn",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó, junto con el PP, a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público.",
+  "fuente": [
+   "https://www.infobae.com/america/agencias/2026/02/17/el-congreso-tumba-la-ley-de-vox-para-prohibir-el-burka-solo-apoyada-por-el-pp-y-upn/",
+   "Infobae, El Congreso tumba la ley de Vox para prohibir el burka, solo apoyada por el PP y UPN, 17-02-2026",
+   "parlamento",
+   "2026-02-17"
   ]
  },
  {

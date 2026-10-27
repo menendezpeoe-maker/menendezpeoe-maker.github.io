@@ -279,14 +279,14 @@
   {
    "pid": "junts",
    "conocidas": 104,
-   "estimadas": 71,
-   "conFuente": 27
+   "estimadas": 70,
+   "conFuente": 28
   },
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 62,
-   "conFuente": 30
+   "estimadas": 60,
+   "conFuente": 32
   },
   {
    "pid": "bildu",
@@ -297,8 +297,8 @@
   {
    "pid": "upn",
    "conocidas": 104,
-   "estimadas": 80,
-   "conFuente": 0
+   "estimadas": 71,
+   "conFuente": 17
   },
   {
    "pid": "gbai",
@@ -309,14 +309,14 @@
   {
    "pid": "bng",
    "conocidas": 105,
-   "estimadas": 60,
-   "conFuente": 27
+   "estimadas": 57,
+   "conFuente": 30
   },
   {
    "pid": "ccpc",
    "conocidas": 78,
-   "estimadas": 70,
-   "conFuente": 1
+   "estimadas": 64,
+   "conFuente": 10
   },
   {
    "pid": "upc",

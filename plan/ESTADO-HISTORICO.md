@@ -1,5 +1,16 @@
 # Estado del plan · histórico (entradas movidas desde ESTADO.md, sin cambios; lo más reciente arriba)
 
+## 26 oct 2026 · T11 · Embudo, rendimiento, preguntas legales y repaso
+- **Embudo en GoatCounter:** entra (inicio) → empieza → termina → comparte (`compartir`, una vez por visita, con cualquier botón de compartir) → reta a un amigo (`reto`). Nueva pregunta opcional al final del resumen, «¿Te ha resultado útil el test?» (Sí / No): cuenta `util-si` o `util-no`, da las gracias y no vuelve a preguntar (se recuerda en el navegador). No aparece en resultados compartidos. Aviso de privacidad actualizado (frase partida en dos tras la revisión). Pruebas nuevas en `qa/stats.mjs`. En GoatCounter, el embudo se lee comparando los totales de esos pasos.
+- **Rendimiento (nueva batería `qa/rendimiento.mjs`, 3G lenta y CPU ×4, con presupuesto):**
+  - La página «saltaba» al llegar las tipografías (CLS 0,21 en portada y páginas estáticas). Con tipografías de reserva de medidas ajustadas: 0,00.
+  - Newsreader recortada a los pesos y tamaños que usa la web (128 → 81 kB, sin cambio visible en las capturas). Portada en la web real: 391 → 340 kB, usable en 9,3 → 8,3 s, primer texto en 3,0 → 2,1 s; página de pregunta 241 → 190 kB.
+- **`plan/LEGAL.md`:** 16 preguntas para un asesor (LSSI, aportaciones y fiscalidad, RGPD, LOREG, contenido). No decide nada.
+- **Programas del 29N:** ninguno publicado a 26 oct.
+- **Revisión (regla 9):** capturas a 390 px (claro y oscuro) y 1280 px de portada, resultados, pregunta nueva y una página de pregunta; revisor independiente: solo la frase larga de privacidad, corregida.
+- **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK.
+- **ESTADO.md aligerado:** ficha reescrita; entradas del 24 oct y anteriores, sin cambios, en `plan/ESTADO-HISTORICO.md`.
+
 ## 25 oct 2026 · Aportación externa para T12 (no publicada)
 - En otra conversación con el titular se buscaron 58 fuentes de Junts, PNV y EH Bildu (programas de 2023 y votaciones del Congreso). Están en `plan/APORTACION-T12.md`, **sin aplicar a `src/` ni publicar**: la web y `dist/` no cambian.
 - **T12:** empieza por revisar y aplicar ese archivo (reglas 8 y 12) y no repitas esas posturas. Hay 11 que cambian de valor (marcadas con ⚠).
