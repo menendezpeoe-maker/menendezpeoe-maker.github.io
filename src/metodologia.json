@@ -309,14 +309,14 @@
   {
    "pid": "bng",
    "conocidas": 105,
-   "estimadas": 57,
-   "conFuente": 30
+   "estimadas": 58,
+   "conFuente": 29
   },
   {
    "pid": "ccpc",
    "conocidas": 78,
    "estimadas": 64,
-   "conFuente": 10
+   "conFuente": 9
   },
   {
    "pid": "upc",
