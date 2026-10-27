@@ -29,6 +29,9 @@
 
 Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 
+## 28 oct 2026 · Cambio pedido · Correcciones fuera de la web
+- El registro público de correcciones deja de mostrarse (instrucción permanente en PLAN.md, regla 5). `/correcciones/` es un aviso sin indexar que redirige a `/sobre/`; quitado del pie, de /sobre/, de /metodologia/ y del sitemap (229 URL). Pruebas actualizadas en `qa/confianza.mjs` y `qa/growth.mjs`.
+
 ## 27 oct 2026 · Revisión de indexación (petición del titular)
 - **Motivo:** Google Search Console mostraba 172 páginas sin indexar; el titular pidió la validación. Revisión completa desde fuera (`curl` y rastreo de las 230 URL del sitemap): todas responden 200 sin redirecciones, `canonical` correcta, sin `noindex` salvo `/insertar/` (a propósito), 404 real para lo que no existe, sin títulos ni descripciones repetidos y sin URL antiguas desaparecidas.
 - **Corregido:**

@@ -1,9 +1,8 @@
-// Tanda T8: justificaciones visibles, aviso de errores, /correcciones/, /sobre/ y /metodologia/.
+// Tanda T8: justificaciones visibles, aviso de errores, /sobre/ y /metodologia/. /correcciones/ ya no es pública (28 oct 2026).
 // Uso: node qa/confianza.mjs   (lee de :8766 o de SITE/BASE=https://test29n.es/)
 import fs from "fs";
 const SITE = (process.env.SITE || (/^https:/.test(process.env.BASE || "") ? process.env.BASE : "http://127.0.0.1:8766/")).replace(/\/?$/, "/");
 const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import.meta.url)));
-const corr = JSON.parse(fs.readFileSync(new URL("../src/correcciones.json", import.meta.url)));
 const meth = JSON.parse(fs.readFileSync(new URL("../src/metodologia.json", import.meta.url)));
 const fails = []; const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const get = async (p) => { const r = await fetch(SITE + p); return { status: r.status, text: await r.text() }; };
@@ -22,14 +21,14 @@ const csv = await get("datos/posturas.csv");
 ok(csv.text.split(/\r?\n/)[0].includes("justificacion"), "los datos abiertos incluyen la justificación");
 console.log("Páginas de confianza");
 const c = await get("correcciones/");
-ok(c.status === 200 && h1(c.text) && (c.text.match(/<time /g) || []).length === corr.length, `/correcciones/ lista los ${corr.length} cambios del historial`);
+ok(/<meta name="robots" content="noindex">/.test(c.text) && /url=\/sobre\//.test(c.text) && !/<time /.test(c.text), "/correcciones/ ya no muestra el registro: aviso sin indexar que lleva a /sobre/");
 const s = await get("sobre/");
-ok(s.status === 200 && h1(s.text) && /«Dery»/.test(s.text) && /aportaciones voluntarias/.test(s.text) && /correcciones/.test(s.text), "/sobre/ explica quién lo hace (Dery), cómo se financia y cómo se corrige");
+ok(s.status === 200 && h1(s.text) && /«Dery»/.test(s.text) && /aportaciones voluntarias/.test(s.text) && !/href="\/correcciones\/"/.test(s.text), "/sobre/ explica quién lo hace (Dery), cómo se financia y cómo se corrige");
 const priv = (process.env.PRIVATE_TERMS || "").split(",").filter(Boolean);
 ok(!priv.some((t) => (s.text + c.text).toLowerCase().includes(t.toLowerCase())), "ningún término privado en /sobre/ ni en /correcciones/");
 const m = await get("metodologia/");
 ok(m.status === 200 && h1(m.text) && m.text.includes(`<b>${meth.imitacion.primero} de ${meth.imitacion.total}</b>`) && m.text.includes(`${meth.aleatorios.n} perfiles`), "/metodologia/ muestra las cifras generadas por qa/metodologia.mjs");
 const home = await get(""), sm = await get("sitemap.xml");
-ok(/href="metodologia\/"/.test(home.text) && /href="sobre\/"/.test(home.text) && ["correcciones/", "sobre/", "metodologia/"].every((p) => sm.text.includes(p + "</loc>")), "enlazadas desde el pie y en el sitemap");
+ok(/href="metodologia\/"/.test(home.text) && /href="sobre\/"/.test(home.text) && ["sobre/", "metodologia/"].every((p) => sm.text.includes(p + "</loc>")) && !sm.text.includes("correcciones/") && !/href="\/?correcciones\/"/.test(home.text), "enlazadas desde el pie y en el sitemap");
 if (fails.length) { console.log(`\n${fails.length} FALLOS`); process.exit(1); }
 console.log("\nTODO OK");

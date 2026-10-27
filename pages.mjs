@@ -6,7 +6,6 @@ import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
-const CORR = JSON.parse(readFileSync("src/correcciones.json", "utf8"));
 const METH = JSON.parse(readFileSync("src/metodologia.json", "utf8"));
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
@@ -62,7 +61,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/correcciones/">Correcciones</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -469,23 +468,10 @@ ${cta("¿Prefieres el test completo?")}`
 ${cta("O responde el test completo")}`
   });
 
-  // ── Confianza (T8): correcciones, sobre el proyecto y metodología
-  const posN = (q, v) => (v ? `${v} · ${posText(q, v)}` : "sin postura");
-  const BQ = Object.fromEntries(B.questions.map((q) => [q.id, q]));
-  const corrRows = CORR.filter((c) => BQ[c.id] && P[c.partido]);
-  page({
-    path: "/correcciones/",
-    title: "Correcciones: cambios en las posturas de los partidos · Test 29N",
-    desc: "Registro público de cada cambio en las posturas de las candidaturas del Test 29N, con su fecha, el motivo y la fuente. Generado automáticamente desde el historial de los datos.",
-    crumbs: [{ name: "Correcciones", url: `${SITE}correcciones/` }],
-    body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Correcciones</h1>
-  <p class="lede">Cada vez que cambiamos la postura de una candidatura, queda aquí con su fecha, el motivo y la fuente. La lista se genera automáticamente comparando las versiones publicadas de los datos.</p></header>
-<p class="small muted">${corrRows.length} cambios registrados. Si ves un error en alguna postura, cada una tiene un enlace «¿Ves un error?» o puedes <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N · corrección")}">escribir un correo</a>.</p>
-<ol class="corr">${corrRows.map((c) => { const q = BQ[c.id]; return `<li><time datetime="${c.fecha}">${esc(fmtDate(c.fecha))}</time><div><span><b>${esc(P[c.partido].name)}</b> · <a href="/preguntas/${c.id.toLowerCase()}/">${esc(q.short)}</a></span>
-  <span class="small">${c.de === c.a ? `Pasa a postura ${c.estimada ? "estimada" : "documentada"} (sin cambiar el valor: ${esc(posN(q, c.a))}).` : `De «${esc(posN(q, c.de))}»${c.estimadaAntes ? " (estimada)" : ""} a «${esc(posN(q, c.a))}»${c.estimada ? " (estimada)" : ""}.`}</span>
-  ${c.motivo ? `<span class="small muted">${esc(c.motivo)}</span>` : ""}${c.fuente ? `<span class="small muted">Fuente: <a href="${esc(c.fuente[0])}" target="_blank" rel="noopener noreferrer">${esc(c.fuente[1])}</a></span>` : ""}</div></li>`; }).join("")}</ol>
-${cta("Compara tus ideas con las posturas actuales")}`
-  });
+  // ── Confianza (T8): sobre el proyecto y metodología
+  // /correcciones/ ya no es pública (decisión del titular, 28 oct 2026): aviso sin indexar que lleva a /sobre/
+  mkdirSync(`${OUT}/correcciones`, { recursive: true });
+  writeFileSync(`${OUT}/correcciones/index.html`, `${head("Página trasladada · Test 29N", "Esta página se ha trasladado a «Sobre el proyecto» del Test 29N.", `<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/sobre/">\n`, "/")}<body><main class="wrap"><h1>Página trasladada</h1><p><a href="/sobre/">Ir a «Sobre el proyecto»</a></p></main></body></html>\n`);
   page({
     path: "/sobre/",
     title: "Sobre el Test 29N: quién lo hace, cómo se financia y cómo se corrige",
@@ -497,7 +483,7 @@ ${cta("Compara tus ideas con las posturas actuales")}`
 <section aria-labelledby="h-porque"><h2 class="h2" id="h-porque">Por qué existe</h2><p>Porque es difícil saber qué propone cada partido en cada tema. El test reúne las posturas de las candidaturas, explica el contexto de cada pregunta de forma neutral y enlaza las fuentes para que cualquiera pueda comprobarlas.</p></section>
 <section aria-labelledby="h-dinero"><h2 class="h2" id="h-dinero">Cómo se financia</h2><p>Es gratuito y no tiene publicidad. Los gastos los cubre quien lo hace, con la ayuda de las aportaciones voluntarias de quien quiera apoyarlo. Aportar es opcional y no cambia ningún resultado. No recibe dinero de partidos ni de instituciones.</p></section>
 <section aria-labelledby="h-indep"><h2 class="h2" id="h-indep">Independencia y privacidad</h2><ul class="dots"><li>Las mismas reglas para todas las candidaturas: posturas de 1 a 5 basadas en programas, votaciones, leyes y declaraciones, marcadas como «estimadas» cuando no hay una fuente directa.</li><li>Sin registro ni cookies. Tus respuestas se quedan en tu navegador; el contador de visitas no registra lo que respondes.</li><li>No es una encuesta ni una recomendación de voto.</li></ul></section>
-<section aria-labelledby="h-corr"><h2 class="h2" id="h-corr">Cómo se corrigen los errores</h2><p>Cada postura tiene un enlace «¿Ves un error?» que abre un correo con la pregunta y el partido. Cada aviso se revisa con fuentes y, si hay que cambiar algo, el cambio queda en el <a href="/correcciones/">registro de correcciones</a> con su fecha y su motivo. Contacto: <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N")}">escribe un correo</a>.</p>
+<section aria-labelledby="h-corr"><h2 class="h2" id="h-corr">Cómo se corrigen los errores</h2><p>Cada postura tiene un enlace «¿Ves un error?» que abre un correo con la pregunta y el partido. Cada aviso se revisa con fuentes y, si hay que cambiar algo, se corrige la postura y su fuente. Contacto: <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N")}">escribe un correo</a>.</p>
 <p class="small muted">Más detalles en la <a href="/metodologia/">metodología</a> y en la página de <a href="/prensa/">prensa</a>.</p></section>`
   });
   const M = METH, pN = (pid) => esc(P[pid]?.name || pid);
@@ -518,7 +504,7 @@ ${cta("Compara tus ideas con las posturas actuales")}`
 <p><b>Qué significa:</b> las respuestas al azar se compensan y quedan cerca del punto medio de la escala (3), así que tienden a coincidir más con las candidaturas cuyas posturas están más cerca de ese punto medio. No es una preferencia del test: es un efecto habitual de los cálculos por distancias. Por eso mostramos la solidez del resultado y las coincidencias y discrepancias concretas, no solo un porcentaje.</p></section>
 <section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Posturas con fuente, por candidatura</h2><div class="sim-table-wrap"><table class="sim-table"><thead><tr><th>Candidatura</th><th>Conocidas</th><th>Estimadas</th><th>Con fuente enlazada</th></tr></thead><tbody>${M.posturas.map((r) => `<tr><td>${pN(r.pid)}</td><td>${r.conocidas}</td><td>${r.estimadas}</td><td>${r.conFuente}</td></tr>`).join("")}</tbody></table></div></section>
 <section aria-labelledby="h-lim"><h2 class="h2" id="h-lim">Límites</h2><ul class="dots"><li>Las posturas resumen en una cifra de 1 a 5 posiciones que a veces tienen matices; por eso cada una lleva su justificación y su fuente cuando la hay.</li><li>La mayoría de los partidos aún no ha publicado su programa para el 29N: usamos sus programas de 2023, votaciones, leyes y declaraciones, y los actualizaremos cuando salgan.</li><li>Los partidos pequeños tienen más posturas estimadas.</li><li>«Documentada» sin enlace significa que la postura se basa en programas, votaciones o declaraciones conocidos, pero aún sin una fuente enlazada pregunta a pregunta; seguimos enlazándolas, empezando por los partidos con más votos.</li><li>El test no mide la confianza en los candidatos, la gestión ni el voto útil: solo la coincidencia de ideas.</li></ul>
-<p class="small muted">Las cifras se generan con <code>qa/metodologia.mjs</code> y los cambios de posturas con <code>qa/correcciones.mjs</code>, ambos en el repositorio público del proyecto. Datos abiertos en <a href="/datos/">/datos/</a>.</p></section>
+<p class="small muted">Las cifras se generan con <code>qa/metodologia.mjs</code>, en el repositorio público del proyecto. Datos abiertos en <a href="/datos/">/datos/</a>.</p></section>
 ${cta("Haz el test")}`
   });
 
