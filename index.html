@@ -36,7 +36,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuándo son las elecciones generales?","acceptedAnswer":{"@type":"Answer","text":"El domingo 29 de noviembre de 2026. Las convoca el Real Decreto 806/2026, publicado en el BOE el 6 de octubre. La campaña electoral va del 13 al 27 de noviembre."}},{"@type":"Question","name":"¿Cómo funciona el test?","acceptedAnswer":{"@type":"Answer","text":"Respondes a afirmaciones sobre los debates reales de España, del 1 al 5 o «No lo sé», con un contexto neutral en cada pregunta. Al final eliges tu provincia y el test compara tus respuestas, una a una, con las posturas de las candidaturas que se presentan allí. Hay versiones de 15, 24, 48 y 107 preguntas."}},{"@type":"Question","name":"¿Es neutral?","acceptedAnswer":{"@type":"Answer","text":"Es independiente y no tiene vínculo con ningún partido. Cada pregunta explica los argumentos de ambos lados, las afirmaciones se formulan en los dos sentidos y el test publica todas las posturas de los partidos e indica si están documentadas o estimadas."}},{"@type":"Question","name":"¿Me dice a quién votar?","acceptedAnswer":{"@type":"Answer","text":"No. Te muestra cuánto coincides con cada candidatura y en qué estáis de acuerdo o no. No es una recomendación de voto ni una encuesta: la decisión es tuya."}},{"@type":"Question","name":"¿Guarda mis datos?","acceptedAnswer":{"@type":"Answer","text":"No hay registro ni cookies, y no se pide ningún dato personal aparte de la provincia. Tus respuestas y tu provincia se guardan solo en tu navegador y no se envían a ningún servidor. Para saber cuánta gente usa el test se cuentan las visitas con GoatCounter, sin cookies y nunca las respuestas. Más detalles en Privacidad y aviso legal."}}]}</script>
 <link rel="preload" href="assets/fonts/Archivo-normal-latin-9a16d142.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=e51985d162">
-<link rel="stylesheet" href="assets/papeleta.css?v=ae6e68b8ee">
+<link rel="stylesheet" href="assets/papeleta.css?v=351c895fa8">
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>
 <body>
@@ -66,13 +66,18 @@
           <h1 id="home-h" class="bn-h">Lo que piensas, <span>tema a tema</span>.</h1>
           <p class="bn-sub">¿Con quién coincides el 29N? Responde pregunta a pregunta y compara tus ideas con las candidaturas de tu provincia.</p>
           <div class="bn-cta">
-            <button class="btn bn-btn" type="submit" form="setup" id="start-btn" disabled>Empezar el test</button>
+            <button class="btn bn-btn" type="submit" form="setup" id="start-btn" aria-controls="bn-modes" disabled>Empezar el test</button>
             <p class="bn-note" id="start-note">Versión rápida: <span data-count="rapida">15</span> preguntas, unos 3 minutos. <a href="#setup">Otras versiones</a></p>
           </div>
-          <p class="bn-tags"><span>Gratis</span><span>Sin registro</span><span>Contexto neutral en cada pregunta</span></p>
+          <div class="bn-modes" id="bn-modes" role="group" aria-labelledby="bn-modes-h" hidden>
+            <p class="bn-modes-h" id="bn-modes-h">Elige la versión</p>
+            <div class="bn-mode-grid" id="bn-mode-grid"></div>
+            <p class="bn-modes-note">Tus respuestas se guardan solo en este navegador. La provincia se pide al final, antes de ver los resultados.</p>
+          </div>
         </div>
         <div class="bn-grid" aria-hidden="true"><div class="bn-row bn-head"><span class="bn-t"></span><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b></div><div class="bn-row"><span class="bn-t">Vivienda</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Impuestos</span><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Inmigración</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i></div><div class="bn-row"><span class="bn-t">Sanidad</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Energía</span><i class="bn-c on"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i></div><div class="bn-row"><span class="bn-t">Europa</span><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c"></i><i class="bn-c on"></i><i class="bn-c"></i></div></div>
       </div>
+      <ul class="trust" aria-label="Así es el test"><li><span class="tr-i"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="7.4" width="14" height="3.8" rx="1"/><path d="M4.4 11.2V17h11.2v-5.8M10 7.4V17M10 7.4C8.6 4 5.2 4 5.6 6c.3 1.4 2.6 1.4 4.4 1.4zM10 7.4c1.4-3.4 4.8-3.4 4.4-1.4-.3 1.4-2.6 1.4-4.4 1.4z"/></svg></span><span>Gratis</span></li><li><span class="tr-i"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="8.6" width="12" height="8.6" rx="2"/><path d="M6.8 8.6V6.4a3.2 3.2 0 0 1 6.4 0v2.2"/></svg></span><span>Sin registro</span></li><li><span class="tr-i"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M5 17h10M3.5 7.5h13"/><path d="M3.5 7.5l-2 4.5a2.3 2.3 0 0 0 4 0zM16.5 7.5l-2 4.5a2.3 2.3 0 0 0 4 0z"/></svg></span><span>Contexto neutral en cada pregunta</span></li></ul>
       <div id="resume" class="resume" hidden></div>
       <p class="lede">Responde a afirmaciones sobre los debates reales de España, de la financiación autonómica a la ley electoral, y descubre tu posición en siete dimensiones políticas y tu grado de coincidencia con las candidaturas de tu provincia. Cada pregunta trae un contexto neutral para responder con criterio.</p>
       <ul class="facts" aria-label="El test en cifras">
@@ -236,6 +241,6 @@
 </footer>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <div id="tip" class="tip" role="tooltip" hidden></div>
-<script src="assets/papeleta.js?v=402306be92" defer></script>
+<script src="assets/papeleta.js?v=debfd6c2af" defer></script>
 </body>
 </html>
