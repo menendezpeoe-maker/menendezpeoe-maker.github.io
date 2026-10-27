@@ -1052,7 +1052,18 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
   #v-home #setup { display: none; }
   #v-home .home-grid { gap: 0; }
   #v-home .bn-note a { display: none; }
-  #v-home .banner.modes-open .bn-note, #v-home .banner.modes-open .bn-tags, #v-home .banner.modes-open .bn-grid { display: none; }
+  #v-home .banner.modes-open .bn-note, #v-home .banner.modes-open .bn-grid { display: none; }
   #v-home .banner.modes-open .bn-btn { min-height: 46px; background: transparent; color: var(--bn-paper); border-color: var(--bn-line); box-shadow: none; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) { .bn-modes { animation: none; } .bn-mode { transition: none; } }
+
+/* Franja de confianza bajo el banner (antes eran etiquetas dentro de él): tres rasgos con icono */
+.trust { list-style: none; margin: -4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: var(--r3); background: var(--sheet); box-shadow: var(--lift, none); overflow: hidden; }
+.trust li { display: flex; align-items: center; gap: 10px; padding: 14px 16px; font-size: 14px; font-weight: 700; line-height: 1.25; color: var(--ink); min-width: 0; }
+.trust li + li { border-left: 1px solid var(--rule-2); }
+.tr-i { width: 32px; height: 32px; flex: none; display: grid; place-items: center; border-radius: 9px; background: var(--mark); box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 22%, transparent); color: var(--mark-ink); }
+.tr-i svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 600px) {
+  .trust li { flex-direction: column; align-items: center; text-align: center; gap: 7px; padding: 13px 6px 12px; font-size: 12.5px; }
+  .tr-i { width: 30px; height: 30px; }
+}
