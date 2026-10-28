@@ -123,7 +123,7 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T12c | mié 28 oct | Lo que quede de fuentes en el mismo orden (Junts, EH Bildu, PNV, BNG, CC, UPN; después SALF y el resto), y programas de 2026 que se hayan publicado |
 | R0 | jue 29 oct | Repaso y recuperación: lo pendiente en `ESTADO.md` (entre otras cosas, las 22 posturas de Podemos sin enlace) |
 | R1 | sáb 31 oct | **Primero, la página /programas/** (sección «Campaña», S1), creada ya para que Google la descubra cuanto antes; después, lo pendiente de `ESTADO.md` por orden de valor |
-| R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
+| R2 | dom 1 nov | **Primero, la página /debates/** (sección «Campaña»); después, recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | C1 | mar 3 nov (tarde) | Candidaturas definitivas (BOE del 3 de noviembre), programas electorales y revisión de fuentes de todas las posturas, en todas las comunidades autónomas. Encargada por el titular el 28 oct. |
 | S1 | vie 6 nov (madrugada) | Programas publicados; /programas/ al día (si R1 no la creó, créala) |
 | S1b | mar 10 nov (madrugada) | Web lista para la campaña: repaso completo, buscadores y kit de difusión para el titular |
@@ -262,14 +262,15 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
 
 ### C1 · Candidaturas definitivas, programas y fuentes (martes 3 de noviembre)
 Encargada por el titular el 28 de octubre. Solo cuentan los partidos que se presentan al Congreso el 29N según la proclamación definitiva (BOE del 3 de noviembre).
-1. **Candidaturas por circunscripción, en todas las comunidades autónomas:** descarga el BOE del día (API `https://www.boe.es/datosabiertos/api/boe/sumario/20261103`; si no está, el del 4) y repite la comparación con `qa/herramientas/boe-candidaturas.py` y `qa/herramientas/boe-comparar.mjs`, partiendo de `plan/AUDITORIA-CANDIDATURAS.md`.
+1. **Cabezas de lista:** de la misma proclamación del BOE, añade a cada página de provincia quién encabeza cada candidatura al Congreso (nombre tal como figura en el BOE, con enlace al BOE). Solo el primer nombre de cada lista; nada de fotos ni biografías. Actualiza título y descripción de esas páginas («Candidaturas y cabezas de lista en [provincia] · 29N») y su lastmod.
+2. **Candidaturas por circunscripción, en todas las comunidades autónomas:** descarga el BOE del día (API `https://www.boe.es/datosabiertos/api/boe/sumario/20261103`; si no está, el del 4) y repite la comparación con `qa/herramientas/boe-candidaturas.py` y `qa/herramientas/boe-comparar.mjs`, partiendo de `plan/AUDITORIA-CANDIDATURAS.md`.
    - Quita de cada provincia los partidos que no se presentan allí (por ejemplo UPL, Por Ávila, Jaén Merece Más, Frente Amplio en Ceuta, Melilla y Teruel, PACMA y SALF donde no hay lista). Si un partido no se presenta en ninguna, sácalo del test y de sus páginas, con redirección a /partidos/.
    - Añade las candidaturas regionales con presencia relevante que sí se presentan y tengan programa o posturas documentables (Alhora, NEX, JUEX, PREPAL, Convergents, Valencia Unida…). Cada postura, con fuente; lo que no se pueda documentar queda «sin postura conocida», nunca inventado. Si el código no admite huecos, anótalo y no añadas el partido a medias.
    - En cada página de provincia, una línea con el número total de candidaturas y el enlace al BOE oficial, para las que no están en el test.
-2. **Programas electorales del 29N de todos los partidos que se presentan:** comprueba cuáles se han publicado (web oficial del partido). Para cada uno publicado, revisa sus 107 posturas contra el programa: confirma, corrige (justificación y fuente nuevas) o quita la «~» de estimada. Guarda el enlace al PDF como fuente de tipo `programa`, fecha 2026.
-3. **Fuentes de todas las posturas de todos los partidos:** revisa enlaces rotos (HEAD/GET), fuentes que no responden a la pregunta, y añade fuente a las posturas que no la tengan (entre ellas las de Podemos pendientes en `ESTADO.md`).
-4. Después de cambiar posturas: `node qa/correcciones.mjs` y `qa/metodologia.mjs`, todas las baterías y las pruebas de la web real. Actualiza `plan/AUDITORIA-CANDIDATURAS.md` con el resultado definitivo.
-Método: hasta 2 subagentes a la vez, con revisor; máximo 4 horas. Si no da tiempo a todo, prioriza 1 → 2 → 3 y deja lo que falte anotado para S1.
+3. **Programas electorales del 29N de todos los partidos que se presentan:** comprueba cuáles se han publicado (web oficial del partido). Para cada uno publicado, revisa sus 107 posturas contra el programa: confirma, corrige (justificación y fuente nuevas) o quita la «~» de estimada. Guarda el enlace al PDF como fuente de tipo `programa`, fecha 2026.
+4. **Fuentes de todas las posturas de todos los partidos:** revisa enlaces rotos (HEAD/GET), fuentes que no responden a la pregunta, y añade fuente a las posturas que no la tengan (entre ellas las de Podemos pendientes en `ESTADO.md`).
+5. Después de cambiar posturas: `node qa/correcciones.mjs` y `qa/metodologia.mjs`, todas las baterías y las pruebas de la web real. Actualiza `plan/AUDITORIA-CANDIDATURAS.md` con el resultado definitivo.
+Método: hasta 2 subagentes a la vez, con revisor; máximo 4 horas. Si no da tiempo a todo, prioriza 2 → 1 → 3 → 4 y deja lo que falte anotado para S1.
 
 ### Campaña: S1, S1b, S1c, S1d y S2 (calendario del titular, 28 oct)
 Objetivo del titular: que Test 29N sea la web más completa y la primera en estar al día, sin salir de lo realista. Una revisión cada 3–4 días entre el 3 y el 21 de noviembre, de madrugada para que lo publicado esté listo por la mañana. Cada una dura como mucho 2 horas, con 2 subagentes a la vez como máximo. Si no hay novedades, termina pronto sin publicar.
@@ -283,6 +284,13 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
 **Página /programas/ (la crea R1 el 31 oct; si no, S1) y S1 (vie 6 nov):**
 - Página nueva **/programas/**: una fila por candidatura que se presenta, con el estado (publicado, con enlace oficial y fecha; o «aún no publicado»), cuántas posturas se han revisado con él y enlace a su página de partido. En el sitemap, enlazada desde el pie, desde /partidos/ y desde cada página de partido, con datos estructurados y lastmod real. Pensada para búsquedas como «programa electoral [partido] 2026».
 - Pruebas: amplía `seo` y `growth` para la página nueva.
+
+**Página /debates/ (la crea R2 el 1 nov; se actualiza en S1, S1b, S1c, S1d y S2):**
+- Una fila por debate electoral del 29N: fecha, hora, cadena, dónde verlo (directo y diferido) y participantes, cada dato con la fuente del anuncio oficial (RTVE, la cadena organizadora, la Junta Electoral si hay recursos). Lo que no esté anunciado, «por confirmar»; si aún no hay ninguno, la página lo dice y enlaza a las fuentes oficiales.
+- Debajo de cada debate, un botón al test: «Compara tus ideas con las de los partidos del debate».
+- Nada de quién ganó, resúmenes valorativos ni encuestas. Tras cada debate solo se añade el enlace al vídeo oficial.
+- Sitemap, enlace desde el pie, /calendario/ y portada (discreto), datos estructurados (`Event` solo si los datos son oficiales) y lastmod real. Amplía `seo` y `growth`.
+- En el aviso al titular de R1 y R2: pedir a mano la indexación de /programas/ y /debates/ en Search Console (Inspección de URLs → Solicitar indexación). Las páginas de provincia ya están indexadas: tras C1 basta con el sitemap y IndexNow.
 
 **S1b (mar 10 nov) · Lista para la campaña:**
 - Repaso completo de la web real: todas las baterías, axe en claro y oscuro, 320/390 px y escritorio, y rendimiento con red móvil lenta.
