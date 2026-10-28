@@ -16111,11 +16111,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la proposición de Vox para rebajar la edad penal de los menores.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json",
+   "fuente_titulo": "Congreso, votación nominal PL VOX de reforma de la LO 5/2000 (edad penal), 18-11-2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-11-18"
   },
   {
    "pregunta_id": "E04",
@@ -19322,11 +19322,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la proposición de Vox sobre la prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso, votación nominal PNL VOX sobre prioridad nacional en prestaciones públicas, 25-06-2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -20215,11 +20215,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la proposición de Vox que rechazaba el reparto territorial de menores migrantes no acompañados.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json",
+   "fuente_titulo": "Congreso, votación nominal PNL VOX sobre menores no acompañados y su reparto, 16-09-2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-09-16"
   },
   {
    "pregunta_id": "F05",
@@ -28271,11 +28271,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la enmienda de Vox para devolver al Gobierno la ley de cooperación para el desarrollo.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json",
+   "fuente_titulo": "Congreso, votación nominal enmienda de totalidad VOX a la Ley de Cooperación para el Desarrollo, 15-09-2022",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-09-15"
   },
   {
    "pregunta_id": "H07",
