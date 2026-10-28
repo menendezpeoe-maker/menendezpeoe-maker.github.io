@@ -510,13 +510,13 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 1,
    "postura_texto": "Claramente A: Bajar impuestos, aunque haya que reducir gasto público",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "A02",
@@ -3951,11 +3951,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "B01",
@@ -4369,11 +4369,11 @@
    "postura_texto": "Claramente A: Construir mucho más, liberando suelo y agilizando licencias",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) plantea simplificar licencias y liberar suelo para construir más vivienda en lugar de regular precios.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "B02",
@@ -4787,11 +4787,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "B03",
@@ -4956,13 +4956,13 @@
    "partido": "Coalición Canaria – Primero Canarias",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-18"
   },
   {
    "pregunta_id": "B03",
@@ -5013,13 +5013,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-18"
   },
   {
    "pregunta_id": "B03",
@@ -15427,11 +15427,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-03-17"
   },
   {
    "pregunta_id": "E02",
@@ -15499,15 +15499,15 @@
    "opcion_b": "",
    "partido_id": "ccpc",
    "partido": "Coalición Canaria – Primero Canarias",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-03-17"
   },
   {
    "pregunta_id": "E02",
@@ -15560,11 +15560,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-03-17"
   },
   {
    "pregunta_id": "E02",
@@ -15900,13 +15900,13 @@
    "partido": "Coalición Canaria – Primero Canarias",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-10-29"
   },
   {
    "pregunta_id": "E03",
@@ -15959,11 +15959,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-10-29"
   },
   {
    "pregunta_id": "E03",
@@ -18505,11 +18505,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "F01",
@@ -18923,11 +18923,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "F02",
@@ -19341,11 +19341,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "F03",
@@ -19396,13 +19396,13 @@
    "partido": "Junts per Catalunya",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -19415,13 +19415,13 @@
    "partido": "EAJ-PNV",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -19453,13 +19453,13 @@
    "partido": "UPN – Partido Popular",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -19510,13 +19510,13 @@
    "partido": "Coalición Canaria – Primero Canarias",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -19569,11 +19569,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-25"
   },
   {
    "pregunta_id": "F03",
@@ -22151,13 +22151,13 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) pide al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "G01",
@@ -22267,11 +22267,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-02-12"
   },
   {
    "pregunta_id": "G01",
@@ -22324,11 +22324,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-02-12"
   },
   {
    "pregunta_id": "G01",
@@ -22339,15 +22339,15 @@
    "opcion_b": "",
    "partido_id": "ccpc",
    "partido": "Coalición Canaria – Primero Canarias",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-02-12"
   },
   {
    "pregunta_id": "G01",
@@ -22400,11 +22400,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-02-12"
   },
   {
    "pregunta_id": "G01",
@@ -25383,11 +25383,11 @@
    "postura_texto": "Claramente A: Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "G09",
@@ -26006,15 +26006,15 @@
    "opcion_b": "",
    "partido_id": "ccpc",
    "partido": "Coalición Canaria – Primero Canarias",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-11"
   },
   {
    "pregunta_id": "H01",
@@ -26067,11 +26067,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de la moción que pedía revertir el aumento del gasto militar.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-06-11"
   },
   {
    "pregunta_id": "H01",
@@ -29335,11 +29335,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=17",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "I01",
@@ -30760,11 +30760,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion186/20220609/Votacion053/VOT_20230302184525.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el castellano como lengua vehicular en Cataluña, 09/06/2022",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-06-09"
   },
   {
    "pregunta_id": "I05",
@@ -31273,11 +31273,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone el PIN parental para que las familias supervisen las actividades extraescolares que considera ideológicas.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=16",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "I07",
@@ -35090,13 +35090,13 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "K01",
@@ -36422,11 +36422,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En su programa para Castilla y León (2026) propone planes de control de especies como el lobo que causan daños a la ganadería.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
+   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "K04",
@@ -38588,11 +38588,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-30"
   },
   {
    "pregunta_id": "L01",
@@ -38645,11 +38645,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-30"
   },
   {
    "pregunta_id": "L01",
@@ -38662,13 +38662,13 @@
    "partido": "Coalición Canaria – Primero Canarias",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-30"
   },
   {
    "pregunta_id": "L01",
@@ -38721,11 +38721,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-30"
   },
   {
    "pregunta_id": "L01",
