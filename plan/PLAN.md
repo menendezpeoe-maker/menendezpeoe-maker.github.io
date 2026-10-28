@@ -124,6 +124,7 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | R0 | jue 29 oct | Repaso y recuperación: lo pendiente en `ESTADO.md` (entre otras cosas, las 22 posturas de Podemos sin enlace) |
 | R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
+| C1 | mar 3 nov (tarde) | Candidaturas definitivas (BOE del 3 de noviembre), programas electorales y revisión de fuentes de todas las posturas, en todas las comunidades autónomas. Encargada por el titular el 28 oct. |
 | S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
 | S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
 | P1 | lun 30 nov | Después de las elecciones |
@@ -255,6 +256,17 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
 - **`plan/LEGAL.md`:** preguntas para un asesor sobre la normativa de servicios web (LSSI) y las donaciones. No decidas lo jurídico.
 - **Repaso completo de la web real:** todas las baterías, axe en claro y oscuro, 390 px y escritorio.
 - **Programas del 29N:** comprueba si se han publicado. Si es así, anota qué partidos y deja preparada la revisión.
+
+### C1 · Candidaturas definitivas, programas y fuentes (martes 3 de noviembre)
+Encargada por el titular el 28 de octubre. Solo cuentan los partidos que se presentan al Congreso el 29N según la proclamación definitiva (BOE del 3 de noviembre).
+1. **Candidaturas por circunscripción, en todas las comunidades autónomas:** descarga el BOE del día (API `https://www.boe.es/datosabiertos/api/boe/sumario/20261103`; si no está, el del 4) y repite la comparación con `qa/herramientas/boe-candidaturas.py` y `qa/herramientas/boe-comparar.mjs`, partiendo de `plan/AUDITORIA-CANDIDATURAS.md`.
+   - Quita de cada provincia los partidos que no se presentan allí (por ejemplo UPL, Por Ávila, Jaén Merece Más, Frente Amplio en Ceuta, Melilla y Teruel, PACMA y SALF donde no hay lista). Si un partido no se presenta en ninguna, sácalo del test y de sus páginas, con redirección a /partidos/.
+   - Añade las candidaturas regionales con presencia relevante que sí se presentan y tengan programa o posturas documentables (Alhora, NEX, JUEX, PREPAL, Convergents, Valencia Unida…). Cada postura, con fuente; lo que no se pueda documentar queda «sin postura conocida», nunca inventado. Si el código no admite huecos, anótalo y no añadas el partido a medias.
+   - En cada página de provincia, una línea con el número total de candidaturas y el enlace al BOE oficial, para las que no están en el test.
+2. **Programas electorales del 29N de todos los partidos que se presentan:** comprueba cuáles se han publicado (web oficial del partido). Para cada uno publicado, revisa sus 107 posturas contra el programa: confirma, corrige (justificación y fuente nuevas) o quita la «~» de estimada. Guarda el enlace al PDF como fuente de tipo `programa`, fecha 2026.
+3. **Fuentes de todas las posturas de todos los partidos:** revisa enlaces rotos (HEAD/GET), fuentes que no responden a la pregunta, y añade fuente a las posturas que no la tengan (entre ellas las de Podemos pendientes en `ESTADO.md`).
+4. Después de cambiar posturas: `node qa/correcciones.mjs` y `qa/metodologia.mjs`, todas las baterías y las pruebas de la web real. Actualiza `plan/AUDITORIA-CANDIDATURAS.md` con el resultado definitivo.
+Método: hasta 2 subagentes a la vez, con revisor; máximo 4 horas. Si no da tiempo a todo, prioriza 1 → 2 → 3 y deja lo que falte anotado para S1.
 
 ### S1 y S2 · Seguimiento de campaña
 - Comprueba en Google y Bing qué páginas aparecen y para qué búsquedas.
