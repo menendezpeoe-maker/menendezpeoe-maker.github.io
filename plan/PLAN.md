@@ -125,8 +125,11 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | C1 | mar 3 nov (tarde) | Candidaturas definitivas (BOE del 3 de noviembre), programas electorales y revisión de fuentes de todas las posturas, en todas las comunidades autónomas. Encargada por el titular el 28 oct. |
-| S1 | mar 10 nov | Seguimiento antes de la campaña: candidaturas proclamadas y programas |
-| S2 | sáb 21 nov | Seguimiento de campaña (último antes del 24) |
+| S1 | vie 6 nov (madrugada) | Programas publicados y página nueva /programas/ (estado del programa de cada candidatura) |
+| S1b | mar 10 nov (madrugada) | Web lista para la campaña: repaso completo, buscadores y kit de difusión para el titular |
+| S1c | vie 13 nov (madrugada) | Inicio de campaña: programas que salgan al arrancar y posturas que cambien |
+| S1d | mar 17 nov (madrugada) | Mitad de campaña: programas tardíos, cambios de postura con fuente y enlaces rotos |
+| S2 | sáb 21 nov (madrugada) | Último cambio antes del 24: congelación y comprobación del periodo 24–28 |
 | P1 | lun 30 nov | Después de las elecciones |
 
 Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así que recogen solas las fuentes y justificaciones que añadan T5–T8. Cada tanda posterior a T9 debe ampliar las pruebas y el sitemap si crea páginas nuevas.
@@ -268,11 +271,38 @@ Encargada por el titular el 28 de octubre. Solo cuentan los partidos que se pres
 4. Después de cambiar posturas: `node qa/correcciones.mjs` y `qa/metodologia.mjs`, todas las baterías y las pruebas de la web real. Actualiza `plan/AUDITORIA-CANDIDATURAS.md` con el resultado definitivo.
 Método: hasta 2 subagentes a la vez, con revisor; máximo 4 horas. Si no da tiempo a todo, prioriza 1 → 2 → 3 y deja lo que falte anotado para S1.
 
-### S1 y S2 · Seguimiento de campaña
-- Comprueba en Google y Bing qué páginas aparecen y para qué búsquedas.
-- Comprueba si ya hay programas o candidaturas proclamadas y actualiza lo que sea seguro y documentado.
-- Busca oportunidades gratuitas: artículos que recopilen tests, hilos o creadores que cubran la campaña. Prepara textos y enlaces para el titular.
-- **S2 es el último cambio antes del periodo del 24 al 28 de noviembre:** después, nada que pueda parecer un sondeo, y ninguna publicación el 28.
+### Campaña: S1, S1b, S1c, S1d y S2 (calendario del titular, 28 oct)
+Objetivo del titular: que Test 29N sea la web más completa y la primera en estar al día, sin salir de lo realista. Una revisión cada 3–4 días entre el 3 y el 21 de noviembre, de madrugada para que lo publicado esté listo por la mañana. Cada una dura como mucho 2 horas, con 2 subagentes a la vez como máximo. Si no hay novedades, termina pronto sin publicar.
+
+**En todas (antes que lo específico):**
+- **Programas del 29N** de cada candidatura que se presenta, en su web oficial. Cuando salga uno nuevo, revisa con él sus 107 posturas: confirma, corrige o quita la «~», con el PDF como fuente de tipo `programa`. Ese es el dato que más rápido diferencia la web de otros tests.
+- **Estado del programa** de cada partido al día en /programas/ (desde S1), con la fecha en que se comprobó.
+- Fecha de «Datos actualizados» al día (`UPDATED` de `build.mjs`) solo si han cambiado datos.
+- Ninguna postura sale de declaraciones de campaña sin fuente primaria (vídeo, nota del partido o diario de sesiones). Nada inventado, nada de rumores.
+
+**S1 (vie 6 nov) · Programas y página /programas/:**
+- Página nueva **/programas/**: una fila por candidatura que se presenta, con el estado (publicado, con enlace oficial y fecha; o «aún no publicado»), cuántas posturas se han revisado con él y enlace a su página de partido. En el sitemap, enlazada desde el pie, desde /partidos/ y desde cada página de partido, con datos estructurados y lastmod real. Pensada para búsquedas como «programa electoral [partido] 2026».
+- Pruebas: amplía `seo` y `growth` para la página nueva.
+
+**S1b (mar 10 nov) · Lista para la campaña:**
+- Repaso completo de la web real: todas las baterías, axe en claro y oscuro, 320/390 px y escritorio, y rendimiento con red móvil lenta.
+- Buscadores: comprueba en Google y Bing qué páginas aparecen para «test político 2026», «test elecciones 29N», «a quién votar 2026» y «programa electoral [partido] 2026». Mejora títulos y descripciones de las páginas que no aparezcan, sin trucos.
+- Imágenes para compartir (`og`) al día con el número real de candidaturas y preguntas.
+- **Kit de difusión** en `plan/DIFUSION-CAMPANA.md`: lista de medios, blogs y creadores que recopilan tests o guías de voto (con su contacto público), un texto corto de presentación neutral para enviarles y 5 textos de «pregunta del día» del 13 al 23 de noviembre. El titular decide qué enviar; tú no envías nada.
+
+**S1c (vie 13 nov) · Inicio de campaña:**
+- Programas que se publiquen al empezar la campaña (es cuando más salen) y revisión de sus posturas.
+- Aviso discreto en la portada: «Posturas revisadas con los programas del 29N publicados hasta el [fecha]».
+
+**S1d (mar 17 nov) · Mitad de campaña:**
+- Programas tardíos y cambios de postura con fuente primaria.
+- Enlaces rotos de todas las fuentes (comprobación automática) y corrección.
+- Prepara los textos de «pregunta del día» que falten hasta el 23.
+
+**S2 (sáb 21 nov) · Último cambio antes del 24:**
+- Lo último de programas y fuentes. Después, la web se congela hasta el 30.
+- Comprueba que nada de la web pueda parecer un sondeo del 24 al 28 (regla de neutralidad) y que ninguna tarea programada publique esos días; P1 es el 30.
+- Deja 22 y 23 como margen: si algo falla, el titular puede pedir un arreglo esos días.
 
 ### P1 · Después de las elecciones (lunes 30 de noviembre)
 - Enlace a los resultados oficiales (Ministerio del Interior).
