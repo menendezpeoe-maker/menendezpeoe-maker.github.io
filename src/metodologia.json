@@ -169,7 +169,7 @@
    },
    {
     "pid": "pp",
-    "n": 86
+    "n": 85
    },
    {
     "pid": "d21",
@@ -181,7 +181,7 @@
    },
    {
     "pid": "salf",
-    "n": 11
+    "n": 12
    },
    {
     "pid": "vox",
@@ -255,8 +255,8 @@
   {
    "pid": "salf",
    "conocidas": 106,
-   "estimadas": 96,
-   "conFuente": 15
+   "estimadas": 95,
+   "conFuente": 13
   },
   {
    "pid": "pacma",
