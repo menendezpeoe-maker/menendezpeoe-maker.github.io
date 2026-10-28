@@ -59,12 +59,12 @@ export const QUESTIONS = [
   B: "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
   short: "Bajar impuestos o mantener servicios",
   ctx: "España recauda en impuestos y cotizaciones en torno al 37 % del PIB, algo menos que la media de la zona euro, y mantiene déficit público desde hace años. Bajar impuestos deja más renta a familias y empresas y puede estimular la actividad, pero exige recortar gasto o endeudarse. Mantener la recaudación sostiene sanidad, educación o pensiones con una presión fiscal mayor.",
-  pos: "4 2 1 5 5 1 0 2 4 2 3 5 2 4~ 5 3~ 5~ 5~ 5~ 5~ 3~ 5~ 5~ 0 0 0 0" },
+  pos: "4 2 1 5 5 1~ 0 2 4 2 3 5 2 4~ 5 3~ 5~ 5~ 5~ 5~ 3~ 5~ 5~ 0 0 0 0" },
 { id: "A03", area: "eco", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
   ctx: "El impuesto de patrimonio está cedido a las comunidades, y algunas, como Madrid, lo bonifican al 100 %. En 2022 el Estado creó un impuesto de solidaridad para patrimonios de más de 3 millones de euros, de modo que se pague en todo el territorio. Sus defensores invocan la equidad y frenar la competencia fiscal entre comunidades; sus críticos, la deslocalización de patrimonios y la invasión de competencias autonómicas.",
-  pos: "5 1 1 5 5 1 0 1~ 4 2~ 2 5 1 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "5 1 1 5 5 1~ 0 1~ 4 2~ 2 5 1 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "A04", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Reducir la deuda pública debería ser prioritario, aunque obligue a contener el gasto durante varios años.",
   short: "Prioridad a reducir la deuda",
@@ -121,7 +121,7 @@ export const QUESTIONS = [
   text: "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
   short: "Desalojo en 48 horas de viviendas ocupadas",
   ctx: "Entrar en una vivienda que es morada de alguien, incluidas, según la Fiscalía, las segundas residencias, es allanamiento, y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías, que se resuelve por vía judicial como usurpación; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
-  pos: "3 5 5 1 1 5 0 5 2~ 5 4 1 5 2~ 1 4~ 1~ 1~ 2~ 1~ 3~ 1~ 1~ 0 0 0 0" },
+  pos: "3 5 5 1 1 5 0 5 2~ 5 4 1 5 2~ 1 4 1~ 1~ 2 1~ 3~ 1~ 1~ 0 0 0 0" },
 { id: "B04", area: "viv", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
   short: "Fin de la suspensión de desahucios si el dueño es particular",
@@ -273,13 +273,13 @@ export const QUESTIONS = [
   short: "Derogar la prisión permanente revisable",
   ctx: "Desde 2015 el Código Penal permite condenas de prisión indefinida para delitos muy graves, como asesinatos de menores o atentados terroristas, revisables tras 25 a 35 años. El Tribunal Constitucional la avaló en 2021. Sus críticos la consideran contraria a la reinserción que exige la Constitución e innecesaria con las penas máximas existentes; sus defensores, proporcionada a la gravedad de esos crímenes.",
   ley: "Constitución, art. 25.2; Código Penal, art. 36",
-  pos: "3~ 1 1 5~ 5 1~ 0 1~ 5 5 5 5 1 5~ 5 3~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3~ 1 1 5~ 5 1~ 0 1~ 5 5 5 5 1 5~ 5 2 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "E03", area: "jus", prio: 2, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "La Ley de Seguridad Ciudadana, conocida como «ley mordaza», debería derogarse.",
   short: "Derogar la «ley mordaza»",
   ctx: "La ley de 2015 permite multas administrativas, sin juicio previo, por conductas como desobedecer a los agentes, difundir imágenes de policías que pongan en riesgo su seguridad o protestar ante el Congreso, y regula las devoluciones inmediatas en Ceuta y Melilla. Sus críticos la consideran restrictiva de derechos; sus defensores, útil para el orden público. Su reforma ha fracasado en dos legislaturas.",
   ley: "Ley Orgánica 4/2015, de protección de la seguridad ciudadana",
-  pos: "4 1 1 5 5 2~ 0 2~ 5 4 4 5 1 5~ 5 3~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 2~ 0 2~ 5 4 4 5 1 5~ 5 3 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "E04", area: "jus", prio: 3, type: "likert", dim: "lib", dir: 1, lr: 1,
   text: "La edad mínima de responsabilidad penal, hoy de 14 años, debería rebajarse para los delitos graves.",
   short: "Rebajar la edad penal",
@@ -331,7 +331,7 @@ export const QUESTIONS = [
   text: "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
   short: "«Prioridad nacional» en ayudas",
   ctx: "Los extranjeros con residencia legal acceden hoy a las prestaciones en las mismas condiciones que los españoles, aunque muchas ayudas exigen años de empadronamiento. Vox propone la «prioridad nacional», y varios gobiernos autonómicos han endurecido los requisitos de residencia previa. Sus defensores sostienen que los recursos son limitados y deben atender primero a los nacionales; sus críticos, que discrimina por nacionalidad, choca con la Constitución y el derecho europeo y afecta a personas que trabajan y cotizan aquí.",
-  pos: "1 2 5 1 1 5~ 0 1~ 1~ 2~ 2~ 1 2~ 1~ 1 2~ 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
+  pos: "1 2 5 1 1 5~ 0 1~ 1~ 2 2 1 2 1~ 1 2 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
 { id: "F04", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
@@ -368,7 +368,7 @@ export const QUESTIONS = [
   text: "España debería alargar la vida de sus centrales nucleares más allá del calendario de cierre previsto, que termina en 2035.",
   short: "Alargar la vida de las nucleares",
   ctx: "Los siete reactores españoles producen alrededor del 20 % de la electricidad. El plan pactado con las eléctricas en 2019 prevé cerrarlos de forma escalonada hasta 2035, aunque en 2026 el Gobierno prorrogó Almaraz, el primero de la lista, hasta 2030. El apagón de abril de 2025 reabrió el debate. Sus defensores destacan que es una fuente estable y sin emisiones de CO₂; sus detractores, los residuos, el coste de prolongarlas y que las renovables con almacenamiento pueden sustituirlas.",
-  pos: "2 5 5 1 1 5~ 1 5 2 3 2 1 4 1~ 1 3~ 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
+  pos: "2 5 5 1 1 5 1 5 2 3 2 1 4 1~ 1 2 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
 { id: "G02", area: "ene", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
@@ -419,7 +419,7 @@ export const QUESTIONS = [
   text: "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
   short: "Más gasto en defensa",
   ctx: "En la cumbre de La Haya de 2025, los aliados de la OTAN acordaron llegar en 2035 al 5 % del PIB en defensa y seguridad, del que un 3,5 % sería gasto militar directo. España obtuvo una excepción y sostiene que con alrededor del 2,1 % cumple los objetivos de capacidades. Sus defensores invocan la amenaza rusa y la dependencia de EE. UU.; sus críticos, el coste frente a otras prioridades.",
-  pos: "1 4~ 4~ 1 1 4~ 1~ 5 1 3~ 3 1 4 2~ 1 2~ 1 1 1 1 2~ 1 1 0 0 0 0" },
+  pos: "1 4~ 4~ 1 1 4~ 1~ 5 1 3~ 3 1 4 2~ 1 3 1 1 1 1 2~ 1 1 0 0 0 0" },
 { id: "H02", area: "ext", prio: 2, type: "likert", dim: "eur", dir: -1, lr: 0,
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
@@ -558,7 +558,7 @@ export const QUESTIONS = [
   text: "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
   short: "Acuerdo comercial UE-Mercosur",
   ctx: "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute. Se aplica provisionalmente desde mayo de 2026, mientras el Tribunal de Justicia de la UE examina su legalidad.",
-  pos: "5 4 1 1 1 1~ 1 5 2 3~ 4~ 1 3 2~ 1 1 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
+  pos: "5 4 1 1 1 1 1 5 2 3~ 4~ 1 3 2~ 1 1 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
 { id: "K02", area: "rur", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
   short: "Controlar los márgenes de la distribución",
@@ -602,7 +602,7 @@ export const QUESTIONS = [
   short: "El aborto en la Constitución",
   ctx: "La ley de 2010 permite el aborto libre hasta la semana 14 y hasta la 22 por riesgos graves, y el Tribunal Constitucional la avaló en 2023. En 2025 el Gobierno propuso reformar la Constitución para incluirlo, como hizo Francia en 2024. Sus defensores quieren protegerlo frente a futuros cambios de mayoría; sus críticos defienden la vida del no nacido o consideran innecesaria la reforma, que exige tres quintos de las Cámaras.",
   ley: "Ley Orgánica 2/2010; Constitución, art. 167",
-  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1 5~ 5 3~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1 5~ 5 3 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
 { id: "L02", area: "der", prio: 2, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La ley de eutanasia debería derogarse.",
   short: "Derogar la ley de eutanasia",
@@ -853,6 +853,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"],
     pod: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
     junts: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
     pnv: ["https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/", "The Objective, votación en el Congreso del 26/06/2025", "parlamento", "2025-06-26"],
@@ -865,6 +866,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"],
     pod: ["https://valenciaplaza.com/valenciaplaza/unidas-podemos-defiende-en-el-congreso-un-nuevo-impuesto-sobre-fortunas-de-mas-de-10-millones", "Valencia Plaza (Europa Press), proposición de ley de Unidas Podemos sobre grandes fortunas, 05/06/2022", "parlamento", "2022-06-05"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     pnv: ["https://www.noticiasdenavarra.com/politica/2022/11/24/pleno-congreso-aprueba-impuestos-banca-6255443.html", "Noticias de Navarra, El pleno del Congreso aprueba los impuestos a la banca, las energéticas y las grandes fortunas, 24-11-2022", "parlamento", "2022-11-24"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
@@ -923,6 +925,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"],
     pod: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.merca2.es/2023/04/27/ley-de-vivienda-mayoria-absoluta-1292494/", "Merca2, votación de la Ley de Vivienda del 27/04/2023", "parlamento", "2023-04-27"],
     junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     pnv: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
@@ -938,6 +941,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40", "Programa electoral de Vox de 2023, medida 65", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79", "Programa electoral de Sumar de 2023, p. 79", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2025/01/15/podemos-arremete-contra-la-ministra-rentista-y-exige-bajar-los-alquileres-para-apoyar-los-presupuestos/", "El Independiente, exigencias de Podemos en vivienda, 15/01/2025", "declaracion", "2025-01-15"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     junts: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, Las derechas tumban la prórroga de alquileres, 28/04/2026", "parlamento", "2026-04-28"],
     pnv: ["https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/", "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026", "parlamento", "2026-10-02"],
@@ -950,11 +954,14 @@ export const SOURCES = {
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)", "programa", "2026-10-19"],
     vox: ["https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html", "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)", "prensa", "2025-01-29"],
     pod: ["https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/", "El Independiente, votación de la ley antiokupas del PP, 29/11/2022", "parlamento", "2022-11-29"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     junts: ["https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html", "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025", "parlamento", "2025-03-18"],
     pnv: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
     bildu: ["https://www.elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, votación en el Congreso de la reforma para agilizar desahucios, 14/11/2024", "parlamento", "2024-11-14"],
     upn: ["https://diariosocialista.net/2026/05/20/el-congreso-admite-a-tramite-la-ley-antiokupas-del-pp-con-la-abstencion-de-pnv-y-junts/", "Diario Socialista, El Congreso admite a trámite la ley antiokupas del PP, 20-05-2026", "parlamento", "2026-05-19"],
-    bng: ["https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024", "parlamento", "2024-11-14"]
+    bng: ["https://elespanol.com/espana/politica/20241114/bildu-erc-votan-congreso-junto-pp-junts-pnv-cambio-legal-agilizar-desahucios/901160469_0.html", "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024", "parlamento", "2024-11-14"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025", "parlamento", "2025-03-18"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025", "parlamento", "2025-03-18"]
   },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"],
@@ -1006,6 +1013,7 @@ export const SOURCES = {
     pp: ["https://valenciaplaza.com/presidentes-pp-firman-manifiesto-posicion-comun-contra-cupo-catalan", "Valencia Plaza (EFE), manifiesto de los presidentes autonómicos del PP, 26/08/2024", "declaracion", "2024-08-26"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://es.ara.cat/politica/parlamento-tumba-concierto-economico-voto-psc_1_5432030.html", "Ara, votación en el Parlament del 03/07/2025", "parlamento", "2025-07-03"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=5", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/", "El Independiente, 03/09/2025", "declaracion", "2025-09-03"],
     junts: ["https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html", "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026", "declaracion", "2026-01-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
@@ -1135,8 +1143,11 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=126", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026", "parlamento", "2026-03-17"],
     upn: ["https://www.newtral.es/prision-permanente-revisable-pp/20260317/", "Newtral, El Congreso tumba la propuesta del PP de ampliar la prisión permanente revisable, 17-03-2026", "parlamento", "2026-03-17"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026", "parlamento", "2026-03-17"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026", "parlamento", "2026-03-17"]
   },
   E03: {
     psoe: ["https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza", "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)", "prensa", "2024-10-03"],
@@ -1149,7 +1160,9 @@ export const SOURCES = {
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=7", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=12", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
     upn: ["https://www.eldiario.es/politica/congreso-da-primer-paso-retomar-reforma-ley-mordaza-unico-rechazo-pp-vox-upn_1_11774916.html", "elDiario.es, El Congreso da el primer paso para retomar la reforma de la ley mordaza, 29-10-2024", "parlamento", "2024-10-29"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024", "parlamento", "2024-10-29"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024", "parlamento", "2024-10-29"]
   },
   E04: {
     psoe: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Debate de la proposición de Vox para rebajar la edad penal (18 de noviembre de 2025)", "parlamento", "2025-11-18"],
@@ -1201,6 +1214,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/", "El Independiente, enero de 2026", "prensa", "2026-01"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.elsaltodiario.com/migracion/socios-del-gobierno-presionan-desatascar-regularizacion-migrantes", "El Salto, debate de una PNL en el Congreso, 26/02/2025", "parlamento", "2025-02-26"],
     junts: ["https://en.ara.cat/politics/together-they-will-denounce-in-europe-the-marginalization-of-catalan-in-the-regularization-of-migrants_1_5709974.html", "Ara (edición en inglés), comunicado de Junts, 17/04/2026", "declaracion", "2026-04-17"],
     pnv: ["https://es.ara.cat/sociedad/inmigracion/congreso-debate-regularizacion-500-000-extranjeros-viven-espana-papeles_1_4992457.html", "Ara, El Congreso debate la regularización de 500.000 extranjeros, 09-04-2024", "parlamento", "2024-04-09"],
@@ -1213,6 +1227,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103", "Programa electoral de Vox de 2023, medida 218", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/", "El Independiente, pacto Gobierno-Podemos de regularización, 26/01/2026", "prensa", "2026-01-26"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
@@ -1221,8 +1236,14 @@ export const SOURCES = {
     psoe: ["https://www.menorca.info/actualidad/nacional/2026/05/03/2621747/ofensiva-del-psoe-toda-espana-europa-contra-prioridad-nacional-vox.html", "Menorca – Es Diari (EFE), comunicado del PSOE contra la «prioridad nacional», 03/05/2026", "prensa", "2026-05-03"],
     pp: ["https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html", "Menorca.info, abril de 2026", "prensa", "2026-04"],
     vox: ["https://www.bolsamania.com/noticias/empresas/economia--el-pp-rechaza-en-el-congreso-la-propuesta-de-vox-de-exigir-la-prioridad-nacional-en-ayudas-para-vivienda--22776272.html", "Moción de Vox sobre «prioridad nacional» en vivienda (18-6-2026)", "parlamento", "2026-06-18"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
+    junts: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
+    pnv: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    upn: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"]
   },
   F04: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx", "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)", "gobierno", "2024-11-19"],
@@ -1265,10 +1286,15 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"],
     pod: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), debate en el Congreso, 13/11/2025", "declaracion", "2025-11-13"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     junts: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
     pnv: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-13"],
-    upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-11"]
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
+    upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-11"],
+    bng: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"]
   },
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1320,6 +1346,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf", "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)", "declaracion", "2026-04-27"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48", "Programa electoral de Sumar de 2023, p. 48", "programa", "2023-07"],
     pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=20", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 20", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
@@ -1336,7 +1363,9 @@ export const SOURCES = {
     pnv: ["https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts", "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025", "parlamento", "2025-03-26"],
     bildu: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
     upn: ["https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts", "Diario Siglo XXI (Europa Press), El Congreso respalda la moción del PP para subir el gasto en defensa, 26-03-2025", "parlamento", "2025-03-26"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json", "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026", "parlamento", "2026-06-11"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json", "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026", "parlamento", "2026-06-11"]
   },
   H02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1409,6 +1438,7 @@ export const SOURCES = {
     vox: ["https://elfarodeceuta.es/vox-pregunta-infrafinancion-escuela-concertada/", "El Faro de Ceuta, interpelación de Vox en el Congreso, 02/04/2021", "declaracion", "2021-04-02"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf", "Programa electoral de Sumar de 2023", "programa", "2023-07"],
     pod: ["https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-240-1.PDF", "BOCG, Proposición de Ley de Unidas Podemos, 29/04/2022", "programa", "2022-04-29"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=17", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html", "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023", "gobierno", "2023-04-27"],
     junts: ["https://naciodigital.cat/politica/pp-vox-i-cs-se-sumen-a-jxcat-en-defensa-de-lescola-concertada.html", "NacióDigital, enmienda a la LOMLOE, 18/11/2020", "parlamento", "2020-11-18"],
     bildu: ["https://orain.eus/es/actualidad/sociedad/2023/11/21/eh-bildu-denuncia-que-pnv-acepta-modelos-linguisticos-y-a-cambio-pseee-concertacion-universal/", "Orain (EITB), EH Bildu ante la ley vasca de educación, 21/11/2023", "prensa", "2023-11-21"],
@@ -1432,6 +1462,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 49", "programa", "2023-07"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
+    pnv: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion186/20220609/Votacion053/VOT_20230302184525.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el castellano como lengua vehicular en Cataluña, 09/06/2022", "parlamento", "2022-06-09"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
   },
@@ -1441,6 +1472,7 @@ export const SOURCES = {
   },
   I07: {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=16", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   I08: {
@@ -1513,6 +1545,7 @@ export const SOURCES = {
     vox: ["https://www.eldebate.com/campo-y-caza/20260121/parlamento-europeo-bloquea-entrada-vigor-trato-mercosur-menos-ano_376697.html", "El Debate, votación en el Parlamento Europeo sobre remitir el acuerdo UE-Mercosur al TJUE, 21/01/2026", "parlamento", "2026-01-21"],
     fa: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
     pod: ["https://fashionunited.es/noticias/empresas/el-parlamento-europeo-frena-la-entrada-en-vigor-del-acuerdo-de-libre-comercio-ue-mercosur/2026012248173", "FashionUnited, votación en el Parlamento Europeo del 21/01/2026", "parlamento", "2026-01-21"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     upn: ["https://www.infobae.com/america/agencias/2026/02/18/el-pp-se-abstiene-en-una-propuesta-de-vox-que-incluia-el-rechazo-al-acuerdo-ue-mercosur-y-de-marruecos/", "Infobae, El PP se abstiene en una propuesta de Vox que incluía el rechazo al acuerdo UE-Mercosur, 18-02-2026", "parlamento", "2026-02-17"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
@@ -1537,6 +1570,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023, medida 323.1", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52", "Programa electoral de Sumar de 2023, p. 52", "programa", "2023-07"],
     pod: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
+    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     junts: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     pnv: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     bildu: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
@@ -1576,7 +1610,11 @@ export const SOURCES = {
     erc: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
     junts: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad en el Congreso del 30/04/2026", "parlamento", "2026-04-30"],
     pnv: ["https://www.vozpopuli.com/espana/politica/la-reforma-del-aborto-supera-su-primer-examen-en-el-congreso-pero-se-encamina-al-fracaso.html", "Vozpópuli, debate de totalidad de la reforma constitucional del aborto, 30/04/2026", "parlamento", "2026-04-30"],
-    upn: ["https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/", "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026", "parlamento", "2026-04-30"]
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
+    upn: ["https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/", "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026", "parlamento", "2026-04-30"],
+    bng: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
+    ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"]
   },
   L02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1667,6 +1705,7 @@ export const JUSTIF = {
     ccpc: "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas."
   },
   A02: {
+    salf: "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
     pnv: "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     bildu: "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
     bng: "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas."
@@ -1677,6 +1716,7 @@ export const JUSTIF = {
     vox: "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     fa: "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     pod: "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
+    salf: "En su programa para Castilla y León (2026) propone suprimir el Impuesto sobre el Patrimonio en su ámbito de gobierno autonómico.",
     erc: "El programa propone crear impuestos sobre las grandes fortunas.",
     pnv: "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
     bildu: "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
@@ -1738,6 +1778,7 @@ export const JUSTIF = {
     erc: "La ponencia de 2025 propone aumentar la tributación de las herencias."
   },
   B01: {
+    salf: "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
     pnv: "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     bildu: "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
     upn: "Votó en contra de los dos decretos de vivienda de octubre de 2026, que congelaban o limitaban las subidas del alquiler.",
@@ -1751,6 +1792,7 @@ export const JUSTIF = {
     vox: "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
     fa: "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     pod: "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
+    salf: "En su programa para Castilla y León (2026) plantea simplificar licencias y liberar suelo para construir más vivienda en lugar de regular precios.",
     erc: "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
     junts: "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
     pnv: "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
@@ -1763,12 +1805,15 @@ export const JUSTIF = {
     pp: "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
     vox: "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
+    salf: "En su programa para Castilla y León (2026) propone que las viviendas ocupadas ilegalmente se desalojen policialmente en un máximo de 24 horas.",
     erc: "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     junts: "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     pnv: "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
     bildu: "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
     upn: "Respaldó en el Congreso la toma en consideración de la ley del PP contra la ocupación, que prevé desalojos en un máximo de 24 horas.",
-    bng: "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
+    bng: "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024.",
+    ccpc: "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
+    comp: "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles."
   },
   B04: {
     pp: "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal.",
@@ -1817,6 +1862,7 @@ export const JUSTIF = {
   },
   C01: {
     pod: "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
+    salf: "En su programa para Castilla y León (2026) critica los modelos de financiación a medida pactados con partidos separatistas y defiende criterios objetivos.",
     bng: "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
   },
   C02: {
@@ -1967,8 +2013,11 @@ export const JUSTIF = {
     erc: "El programa propone derogar la prisión permanente revisable.",
     junts: "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
     pnv: "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    bildu: "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     upn: "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
-    bng: "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua."
+    bng: "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
+    ccpc: "Votó a favor de ampliar los supuestos de prisión permanente revisable, en la proposición de ley del PP.",
+    comp: "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable."
   },
   E03: {
     psoe: "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
@@ -1981,7 +2030,9 @@ export const JUSTIF = {
     pnv: "Se opone a la ley mordaza y promovió su reforma.",
     bildu: "Su programa vuelve a plantear la derogación de la ley mordaza.",
     upn: "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
-    bng: "Su programa propone derogar íntegramente la ley mordaza."
+    bng: "Su programa propone derogar íntegramente la ley mordaza.",
+    ccpc: "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana.",
+    comp: "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana."
   },
   E04: {
     psoe: "El PSOE rechazó en 2025 la proposición de Vox para rebajar la edad penal de 14 a 12 años.",
@@ -2038,6 +2089,7 @@ export const JUSTIF = {
     pnv: "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto."
   },
   F01: {
+    salf: "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
     pnv: "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
     bildu: "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
     upn: "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
@@ -2048,6 +2100,7 @@ export const JUSTIF = {
     vox: "Vox propone la expulsión de quienes entren ilegalmente y suprimir el arraigo como vía de regularización.",
     fa: "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
     pod: "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
+    salf: "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
     erc: "El programa propone regularizar a las personas en situación irregular.",
     bildu: "El programa exige derogar la Ley de Extranjería y sustituirla por una legislación que garantice los derechos de todas las personas migrantes.",
     bng: "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante."
@@ -2055,9 +2108,15 @@ export const JUSTIF = {
   F03: {
     psoe: "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
     vox: "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
+    salf: "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
     erc: "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
+    junts: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    pnv: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     bildu: "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
-    bng: "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación."
+    upn: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    bng: "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación.",
+    ccpc: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    comp: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas."
   },
   F04: {
     psoe: "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
@@ -2100,8 +2159,13 @@ export const JUSTIF = {
     erc: "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad."
   },
   G01: {
+    salf: "En su programa para Castilla y León (2026) exige al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
     pnv: "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
-    upn: "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó."
+    bildu: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    upn: "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
+    bng: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    ccpc: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    comp: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares."
   },
   G02: {
     psoe: "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
@@ -2165,6 +2229,7 @@ export const JUSTIF = {
     pp: "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
     fa: "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     pod: "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
+    salf: "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
     erc: "La ponencia apuesta por un sistema energético basado en renovables.",
     pnv: "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
     bildu: "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
@@ -2175,7 +2240,9 @@ export const JUSTIF = {
     pnv: "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     bildu: "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
     upn: "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
-    bng: "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
+    bng: "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
+    ccpc: "Votó en contra de la moción que pedía revertir el aumento del gasto militar, aunque ha criticado ese gasto frente a otras prioridades.",
+    comp: "Votó a favor de la moción que pedía revertir el aumento del gasto militar."
   },
   H02: {
     psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
@@ -2246,6 +2313,7 @@ export const JUSTIF = {
     erc: "La ponencia critica externalizar fronteras con centros en terceros países."
   },
   I01: {
+    salf: "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
     bildu: "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
     bng: "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles."
   },
@@ -2274,6 +2342,7 @@ export const JUSTIF = {
     vox: "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
     erc: "El programa defiende la inmersión con el catalán como lengua vehicular.",
     junts: "Su programa defiende la inmersión lingüística de la escuela catalana.",
+    pnv: "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     bildu: "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
     bng: "El programa propone una escuela pública gallega orientada a la normalización lingüística."
   },
@@ -2286,6 +2355,7 @@ export const JUSTIF = {
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
     vox: "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual.",
+    salf: "En su programa para Castilla y León (2026) propone implantar el PIN parental para que los padres controlen las actividades extraescolares con posible sesgo ideológico.",
     erc: "El programa propone reconocer el derecho a la educación sexual."
   },
   I08: {
@@ -2358,6 +2428,7 @@ export const JUSTIF = {
     bng: "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias."
   },
   K01: {
+    salf: "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
     erc: "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
     upn: "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
     bng: "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
@@ -2385,6 +2456,7 @@ export const JUSTIF = {
     vox: "Vox propone sacar al lobo del régimen de protección especial y controlar su población.",
     fa: "Propone incluir el lobo en el Catálogo de Especies Amenazadas, lo que impide su caza.",
     pod: "Votó contra la enmienda que retiró la protección especial al lobo al norte del Duero y permitió su caza.",
+    salf: "En su programa para Castilla y León (2026) propone planes de control de especies como el lobo que causan daños a la ganadería.",
     erc: "Estimación: posición crítica con la caza del lobo.",
     junts: "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     pnv: "Votó a favor de desproteger al lobo al norte del Duero.",
@@ -2422,7 +2494,11 @@ export const JUSTIF = {
   },
   L01: {
     pnv: "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
-    upn: "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó."
+    bildu: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    upn: "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó.",
+    bng: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    ccpc: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    comp: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto."
   },
   L02: {
     psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",

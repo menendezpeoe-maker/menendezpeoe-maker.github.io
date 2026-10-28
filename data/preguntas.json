@@ -319,6 +319,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "gbai",
     "ccpc",
     "upc",
@@ -360,6 +361,12 @@
      "parlamento",
      "2025-06-26"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
      "The Objective, votación en el Congreso del 26/06/2025",
@@ -392,6 +399,7 @@
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     "bildu": "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
     "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas."
@@ -432,6 +440,7 @@
     "adel": 5
    },
    "est": [
+    "salf",
     "d21",
     "junts",
     "gbai",
@@ -473,6 +482,12 @@
      "parlamento",
      "2022-06-05"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
@@ -504,6 +519,7 @@
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     "pod": "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
+    "salf": "En su programa para Castilla y León (2026) propone suprimir el Impuesto sobre el Patrimonio en su ámbito de gobierno autonómico.",
     "erc": "El programa propone crear impuestos sobre las grandes fortunas.",
     "pnv": "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
     "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
@@ -1210,6 +1226,12 @@
      "parlamento",
      "2026-04-28"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://www.merca2.es/2023/04/27/ley-de-vivienda-mayoria-absoluta-1292494/",
      "Merca2, votación de la Ley de Vivienda del 27/04/2023",
@@ -1260,6 +1282,7 @@
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
     "upn": "Votó en contra de los dos decretos de vivienda de octubre de 2026, que congelaban o limitaban las subidas del alquiler.",
@@ -1349,6 +1372,12 @@
      "declaracion",
      "2025-01-15"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
@@ -1392,6 +1421,7 @@
     "vox": "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
+    "salf": "En su programa para Castilla y León (2026) plantea simplificar licencias y liberar suelo para construir más vivienda en lugar de regular precios.",
     "erc": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
     "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
     "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
@@ -1438,10 +1468,8 @@
    "est": [
     "erc",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
-    "comp",
     "cha",
     "existe",
     "mes",
@@ -1472,6 +1500,12 @@
      "parlamento",
      "2022-11-29"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "junts": [
      "https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html",
      "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025",
@@ -1501,6 +1535,18 @@
      "El Español, Bildu y ERC votan con PP, Junts y PNV un cambio legal para agilizar desahucios, 14-11-2024",
      "parlamento",
      "2024-11-14"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025",
+     "parlamento",
+     "2025-03-18"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025",
+     "parlamento",
+     "2025-03-18"
     ]
    },
    "why": {
@@ -1508,12 +1554,15 @@
     "pp": "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
     "vox": "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
+    "salf": "En su programa para Castilla y León (2026) propone que las viviendas ocupadas ilegalmente se desalojen policialmente en un máximo de 24 horas.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     "junts": "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
     "bildu": "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
     "upn": "Respaldó en el Congreso la toma en consideración de la ley del PP contra la ocupación, que prevé desalojos en un máximo de 24 horas.",
-    "bng": "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024."
+    "bng": "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024.",
+    "ccpc": "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
+    "comp": "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles."
    }
   },
   {
@@ -2171,6 +2220,12 @@
      "parlamento",
      "2025-07-03"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=5",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/",
      "El Independiente, 03/09/2025",
@@ -2192,6 +2247,7 @@
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
+    "salf": "En su programa para Castilla y León (2026) critica los modelos de financiación a medida pactados con partidos separatistas y defiende criterios objetivos.",
     "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
    }
   },
@@ -3825,7 +3881,7 @@
     "upn": 1,
     "gbai": 5,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 2,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -3839,7 +3895,6 @@
     "salf",
     "d21",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -3884,6 +3939,12 @@
      "programa",
      "2023-07"
     ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+     "parlamento",
+     "2026-03-17"
+    ],
     "upn": [
      "https://www.newtral.es/prision-permanente-revisable-pp/20260317/",
      "Newtral, El Congreso tumba la propuesta del PP de ampliar la prisión permanente revisable, 17-03-2026",
@@ -3895,6 +3956,18 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+     "parlamento",
+     "2026-03-17"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+     "parlamento",
+     "2026-03-17"
     ]
    },
    "why": {
@@ -3905,8 +3978,11 @@
     "erc": "El programa propone derogar la prisión permanente revisable.",
     "junts": "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
     "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    "bildu": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
-    "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua."
+    "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
+    "ccpc": "Votó a favor de ampliar los supuestos de prisión permanente revisable, en la proposición de ley del PP.",
+    "comp": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable."
    }
   },
   {
@@ -3948,7 +4024,6 @@
     "salf",
     "d21",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "cha",
@@ -4021,6 +4096,18 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024",
+     "parlamento",
+     "2024-10-29"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024",
+     "parlamento",
+     "2024-10-29"
     ]
    },
    "why": {
@@ -4034,7 +4121,9 @@
     "pnv": "Se opone a la ley mordaza y promovió su reforma.",
     "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
-    "bng": "Su programa propone derogar íntegramente la ley mordaza."
+    "bng": "Su programa propone derogar íntegramente la ley mordaza.",
+    "ccpc": "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana.",
+    "comp": "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana."
    }
   },
   {
@@ -4683,6 +4772,12 @@
      "prensa",
      "2026-01"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://www.elsaltodiario.com/migracion/socios-del-gobierno-presionan-desatascar-regularizacion-migrantes",
      "El Salto, debate de una PNL en el Congreso, 26/02/2025",
@@ -4721,6 +4816,7 @@
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
     "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
     "bildu": "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
     "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
@@ -4799,6 +4895,12 @@
      "prensa",
      "2026-01-26"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
@@ -4823,6 +4925,7 @@
     "vox": "Vox propone la expulsión de quienes entren ilegalmente y suprimir el arraigo como vía de regularización.",
     "fa": "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
     "pod": "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
+    "salf": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
     "erc": "El programa propone regularizar a las personas en situación irregular.",
     "bildu": "El programa exige derogar la Ley de Extranjería y sustituirla por una legislación que garantice los derechos de todas las personas migrantes.",
     "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante."
@@ -4867,11 +4970,7 @@
     "salf",
     "d21",
     "erc",
-    "junts",
-    "pnv",
-    "upn",
     "gbai",
-    "ccpc",
     "drago",
     "cha",
     "existe",
@@ -4899,25 +4998,67 @@
      "parlamento",
      "2026-06-18"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
+    "junts": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
+    ],
+    "pnv": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
+    ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
     ],
+    "upn": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
+    ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
     ]
    },
    "why": {
     "psoe": "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
     "vox": "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
+    "salf": "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
     "erc": "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
+    "junts": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    "pnv": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "bildu": "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
-    "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación."
+    "upn": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación.",
+    "ccpc": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    "comp": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas."
    }
   },
   {
@@ -5449,7 +5590,7 @@
     "upn": 4,
     "gbai": 1,
     "bng": 1,
-    "ccpc": 3,
+    "ccpc": 2,
     "upc": 1,
     "drago": 1,
     "comp": 1,
@@ -5461,9 +5602,7 @@
     "pav": 3
    },
    "est": [
-    "salf",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "cha",
@@ -5508,6 +5647,12 @@
      "declaracion",
      "2025-11-13"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
      "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025",
@@ -5526,16 +5671,45 @@
      "parlamento",
      "2025-11-13"
     ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+     "parlamento",
+     "2025-02-12"
+    ],
     "upn": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
      "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025",
      "parlamento",
      "2025-11-11"
+    ],
+    "bng": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+     "parlamento",
+     "2025-02-12"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+     "parlamento",
+     "2025-02-12"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+     "parlamento",
+     "2025-02-12"
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) exige al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
     "pnv": "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
-    "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó."
+    "bildu": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
+    "bng": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    "ccpc": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    "comp": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares."
    }
   },
   {
@@ -6251,6 +6425,12 @@
      "prensa",
      "2024-06-02"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
@@ -6281,6 +6461,7 @@
     "pp": "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
+    "salf": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
     "erc": "La ponencia apuesta por un sistema energético basado en renovables.",
     "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
     "bildu": "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
@@ -6314,7 +6495,7 @@
     "upn": 4,
     "gbai": 2,
     "bng": 1,
-    "ccpc": 2,
+    "ccpc": 3,
     "upc": 1,
     "drago": 1,
     "comp": 1,
@@ -6330,7 +6511,6 @@
     "pacma",
     "junts",
     "gbai",
-    "ccpc",
     "existe"
    ],
    "notes": {
@@ -6402,6 +6582,18 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026",
+     "parlamento",
+     "2026-06-11"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026",
+     "parlamento",
+     "2026-06-11"
     ]
    },
    "why": {
@@ -6409,7 +6601,9 @@
     "pnv": "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
     "upn": "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
-    "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar."
+    "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
+    "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar, aunque ha criticado ese gasto frente a otras prioridades.",
+    "comp": "Votó a favor de la moción que pedía revertir el aumento del gasto militar."
    }
   },
   {
@@ -7261,6 +7455,12 @@
      "programa",
      "2022-04-29"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=17",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html",
      "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023",
@@ -7287,6 +7487,7 @@
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
     "bildu": "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
     "bng": "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles."
    }
@@ -7560,6 +7761,12 @@
      "programa",
      "2023-07"
     ],
+    "pnv": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion186/20220609/Votacion053/VOT_20230302184525.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el castellano como lengua vehicular en Cataluña, 09/06/2022",
+     "parlamento",
+     "2022-06-09"
+    ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
@@ -7578,6 +7785,7 @@
     "vox": "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
     "erc": "El programa defiende la inmersión con el catalán como lengua vehicular.",
     "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
+    "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     "bildu": "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
     "bng": "El programa propone una escuela pública gallega orientada a la normalización lingüística."
    }
@@ -7696,6 +7904,12 @@
      "programa",
      "2023-07"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=16",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
@@ -7706,6 +7920,7 @@
    "why": {
     "pp": "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
     "vox": "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual.",
+    "salf": "En su programa para Castilla y León (2026) propone implantar el PIN parental para que los padres controlen las actividades extraescolares con posible sesgo ideológico.",
     "erc": "El programa propone reconocer el derecho a la educación sexual."
    }
   },
@@ -8577,7 +8792,6 @@
     "soria": 1
    },
    "est": [
-    "salf",
     "junts",
     "pnv",
     "gbai",
@@ -8626,6 +8840,12 @@
      "parlamento",
      "2026-01-21"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "erc": [
      "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
@@ -8652,6 +8872,7 @@
     ]
    },
    "why": {
+    "salf": "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
     "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
     "upn": "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
     "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
@@ -8928,6 +9149,12 @@
      "parlamento",
      "2025-04-03"
     ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
+     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "programa",
+     "2026-03"
+    ],
     "junts": [
      "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
      "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
@@ -8971,6 +9198,7 @@
     "vox": "Vox propone sacar al lobo del régimen de protección especial y controlar su población.",
     "fa": "Propone incluir el lobo en el Catálogo de Especies Amenazadas, lo que impide su caza.",
     "pod": "Votó contra la enmienda que retiró la protección especial al lobo al norte del Duero y permitió su caza.",
+    "salf": "En su programa para Castilla y León (2026) propone planes de control de especies como el lobo que causan daños a la ganadería.",
     "erc": "Estimación: posición crítica con la caza del lobo.",
     "junts": "Apoyó las enmiendas que abren la puerta a desproteger al lobo en el resto de España.",
     "pnv": "Votó a favor de desproteger al lobo al norte del Duero.",
@@ -9363,7 +9591,6 @@
     "pacma",
     "d21",
     "gbai",
-    "ccpc",
     "drago",
     "cha",
     "mes"
@@ -9421,16 +9648,44 @@
      "parlamento",
      "2026-04-30"
     ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+     "parlamento",
+     "2026-04-30"
+    ],
     "upn": [
      "https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/",
      "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026",
+     "parlamento",
+     "2026-04-30"
+    ],
+    "bng": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+     "parlamento",
+     "2026-04-30"
+    ],
+    "ccpc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
+     "parlamento",
+     "2026-04-30"
+    ],
+    "comp": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
      "parlamento",
      "2026-04-30"
     ]
    },
    "why": {
     "pnv": "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
-    "upn": "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó."
+    "bildu": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    "upn": "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó.",
+    "bng": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    "ccpc": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    "comp": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto."
    }
   },
   {
