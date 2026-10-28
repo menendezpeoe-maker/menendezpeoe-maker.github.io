@@ -1,5 +1,85 @@
 [
  {
+  "fecha": "2026-10-28",
+  "id": "A02",
+  "partido": "salf",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
+  "fuente": [
+   "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+   "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "programa",
+   "2026-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-28",
+  "id": "A03",
+  "partido": "salf",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "En su programa para Castilla y León (2026) propone suprimir el Impuesto sobre el Patrimonio en su ámbito de gobierno autonómico.",
+  "fuente": [
+   "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+   "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "programa",
+   "2026-03"
+  ]
+ },
+ {
+  "fecha": "2026-10-28",
+  "id": "E02",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó a favor de ampliar los supuestos de prisión permanente revisable, en la proposición de ley del PP.",
+  "fuente": [
+   "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
+   "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
+   "parlamento",
+   "2026-03-17"
+  ]
+ },
+ {
+  "fecha": "2026-10-28",
+  "id": "G01",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+  "fuente": [
+   "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
+   "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
+   "parlamento",
+   "2025-02-12"
+  ]
+ },
+ {
+  "fecha": "2026-10-28",
+  "id": "H01",
+  "partido": "ccpc",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó en contra de la moción que pedía revertir el aumento del gasto militar, aunque ha criticado ese gasto frente a otras prioridades.",
+  "fuente": [
+   "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
+   "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026",
+   "parlamento",
+   "2026-06-11"
+  ]
+ },
+ {
   "fecha": "2026-10-27",
   "id": "A01",
   "partido": "ccpc",

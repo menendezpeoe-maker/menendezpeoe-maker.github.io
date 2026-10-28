@@ -440,7 +440,6 @@
     "adel": 5
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "gbai",
@@ -482,12 +481,6 @@
      "parlamento",
      "2022-06-05"
     ],
-    "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
-     "programa",
-     "2026-03"
-    ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
@@ -519,7 +512,6 @@
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     "pod": "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
-    "salf": "En su programa para Castilla y León (2026) propone suprimir el Impuesto sobre el Patrimonio en su ámbito de gobierno autonómico.",
     "erc": "El programa propone crear impuestos sobre las grandes fortunas.",
     "pnv": "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
     "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
@@ -1554,7 +1546,7 @@
     "pp": "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
     "vox": "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
-    "salf": "En su programa para Castilla y León (2026) propone que las viviendas ocupadas ilegalmente se desalojen policialmente en un máximo de 24 horas.",
+    "salf": "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     "junts": "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
@@ -2220,12 +2212,6 @@
      "parlamento",
      "2025-07-03"
     ],
-    "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=5",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
-     "programa",
-     "2026-03"
-    ],
     "erc": [
      "https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/",
      "El Independiente, 03/09/2025",
@@ -2247,7 +2233,6 @@
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
-    "salf": "En su programa para Castilla y León (2026) critica los modelos de financiación a medida pactados con partidos separatistas y defiende criterios objetivos.",
     "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
    }
   },
@@ -3981,7 +3966,7 @@
     "bildu": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
     "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
-    "ccpc": "Votó a favor de ampliar los supuestos de prisión permanente revisable, en la proposición de ley del PP.",
+    "ccpc": "Votó a favor de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "comp": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable."
    }
   },
@@ -4122,8 +4107,8 @@
     "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     "bng": "Su programa propone derogar íntegramente la ley mordaza.",
-    "ccpc": "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana.",
-    "comp": "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana."
+    "ccpc": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
+    "comp": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana."
    }
   },
   {
@@ -5703,7 +5688,7 @@
     ]
    },
    "why": {
-    "salf": "En su programa para Castilla y León (2026) exige al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
+    "salf": "En su programa para Castilla y León (2026) pide al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
     "pnv": "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
     "bildu": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
@@ -6602,7 +6587,7 @@
     "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
     "upn": "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
-    "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar, aunque ha criticado ese gasto frente a otras prioridades.",
+    "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
     "comp": "Votó a favor de la moción que pedía revertir el aumento del gasto militar."
    }
   },
@@ -7920,7 +7905,7 @@
    "why": {
     "pp": "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
     "vox": "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual.",
-    "salf": "En su programa para Castilla y León (2026) propone implantar el PIN parental para que los padres controlen las actividades extraescolares con posible sesgo ideológico.",
+    "salf": "En su programa para Castilla y León (2026) propone el PIN parental para que las familias supervisen las actividades extraescolares que considera ideológicas.",
     "erc": "El programa propone reconocer el derecho a la educación sexual."
    }
   },

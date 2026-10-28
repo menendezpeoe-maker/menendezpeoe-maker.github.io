@@ -64,7 +64,7 @@ export const QUESTIONS = [
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
   ctx: "El impuesto de patrimonio está cedido a las comunidades, y algunas, como Madrid, lo bonifican al 100 %. En 2022 el Estado creó un impuesto de solidaridad para patrimonios de más de 3 millones de euros, de modo que se pague en todo el territorio. Sus defensores invocan la equidad y frenar la competencia fiscal entre comunidades; sus críticos, la deslocalización de patrimonios y la invasión de competencias autonómicas.",
-  pos: "5 1 1 5 5 1~ 0 1~ 4 2~ 2 5 1 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "5 1 1 5 5 1 0 1~ 4 2~ 2 5 1 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "A04", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Reducir la deuda pública debería ser prioritario, aunque obligue a contener el gasto durante varios años.",
   short: "Prioridad a reducir la deuda",
@@ -866,7 +866,6 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=77", "Programa electoral de Vox de 2023, medida 151", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16", "Programa electoral de Sumar de 2023, p. 16", "programa", "2023-07"],
     pod: ["https://valenciaplaza.com/valenciaplaza/unidas-podemos-defiende-en-el-congreso-un-nuevo-impuesto-sobre-fortunas-de-mas-de-10-millones", "Valencia Plaza (Europa Press), proposición de ley de Unidas Podemos sobre grandes fortunas, 05/06/2022", "parlamento", "2022-06-05"],
-    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     pnv: ["https://www.noticiasdenavarra.com/politica/2022/11/24/pleno-congreso-aprueba-impuestos-banca-6255443.html", "Noticias de Navarra, El pleno del Congreso aprueba los impuestos a la banca, las energéticas y las grandes fortunas, 24-11-2022", "parlamento", "2022-11-24"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
@@ -1013,7 +1012,6 @@ export const SOURCES = {
     pp: ["https://valenciaplaza.com/presidentes-pp-firman-manifiesto-posicion-comun-contra-cupo-catalan", "Valencia Plaza (EFE), manifiesto de los presidentes autonómicos del PP, 26/08/2024", "declaracion", "2024-08-26"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf", "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
     fa: ["https://es.ara.cat/politica/parlamento-tumba-concierto-economico-voto-psc_1_5432030.html", "Ara, votación en el Parlament del 03/07/2025", "parlamento", "2025-07-03"],
-    salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=5", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     erc: ["https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/", "El Independiente, 03/09/2025", "declaracion", "2025-09-03"],
     junts: ["https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html", "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026", "declaracion", "2026-01-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
@@ -1716,7 +1714,6 @@ export const JUSTIF = {
     vox: "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     fa: "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     pod: "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
-    salf: "En su programa para Castilla y León (2026) propone suprimir el Impuesto sobre el Patrimonio en su ámbito de gobierno autonómico.",
     erc: "El programa propone crear impuestos sobre las grandes fortunas.",
     pnv: "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
     bildu: "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
@@ -1805,7 +1802,7 @@ export const JUSTIF = {
     pp: "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
     vox: "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
     pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
-    salf: "En su programa para Castilla y León (2026) propone que las viviendas ocupadas ilegalmente se desalojen policialmente en un máximo de 24 horas.",
+    salf: "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
     erc: "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     junts: "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     pnv: "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
@@ -1862,7 +1859,6 @@ export const JUSTIF = {
   },
   C01: {
     pod: "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
-    salf: "En su programa para Castilla y León (2026) critica los modelos de financiación a medida pactados con partidos separatistas y defiende criterios objetivos.",
     bng: "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
   },
   C02: {
@@ -2016,7 +2012,7 @@ export const JUSTIF = {
     bildu: "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     upn: "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
     bng: "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
-    ccpc: "Votó a favor de ampliar los supuestos de prisión permanente revisable, en la proposición de ley del PP.",
+    ccpc: "Votó a favor de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     comp: "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable."
   },
   E03: {
@@ -2031,8 +2027,8 @@ export const JUSTIF = {
     bildu: "Su programa vuelve a plantear la derogación de la ley mordaza.",
     upn: "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     bng: "Su programa propone derogar íntegramente la ley mordaza.",
-    ccpc: "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana.",
-    comp: "Votó a favor de tramitar la proposición de ley de reforma de la Ley de Seguridad Ciudadana."
+    ccpc: "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
+    comp: "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana."
   },
   E04: {
     psoe: "El PSOE rechazó en 2025 la proposición de Vox para rebajar la edad penal de 14 a 12 años.",
@@ -2159,7 +2155,7 @@ export const JUSTIF = {
     erc: "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad."
   },
   G01: {
-    salf: "En su programa para Castilla y León (2026) exige al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
+    salf: "En su programa para Castilla y León (2026) pide al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
     pnv: "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
     bildu: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     upn: "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
@@ -2241,7 +2237,7 @@ export const JUSTIF = {
     bildu: "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
     upn: "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     bng: "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
-    ccpc: "Votó en contra de la moción que pedía revertir el aumento del gasto militar, aunque ha criticado ese gasto frente a otras prioridades.",
+    ccpc: "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
     comp: "Votó a favor de la moción que pedía revertir el aumento del gasto militar."
   },
   H02: {
@@ -2355,7 +2351,7 @@ export const JUSTIF = {
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
     vox: "Vox exige el conocimiento y la aceptación previa de los padres para cualquier contenido afectivo-sexual.",
-    salf: "En su programa para Castilla y León (2026) propone implantar el PIN parental para que los padres controlen las actividades extraescolares con posible sesgo ideológico.",
+    salf: "En su programa para Castilla y León (2026) propone el PIN parental para que las familias supervisen las actividades extraescolares que considera ideológicas.",
     erc: "El programa propone reconocer el derecho a la educación sexual."
   },
   I08: {

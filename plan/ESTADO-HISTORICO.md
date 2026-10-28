@@ -1,5 +1,22 @@
 # Estado del plan · histórico (entradas movidas desde ESTADO.md, sin cambios; lo más reciente arriba)
 
+## 27 oct 2026 · T12 · Fuentes de Junts, EH Bildu, PNV y BNG
+- **Aportación externa aplicada** (`plan/APORTACION-T12.md`): 58 fuentes revisadas; abiertas y comprobadas las 11 que cambiaban de valor. Aplicadas 10; PNV E09 (cannabis) se queda en 3, porque su programa solo pide el uso medicinal.
+- **Nuevas (dos subagentes y revisión una a una):** aceptadas 55 de 79 propuestas (quedan 48 tras la revisión); se descartan las autonómicas, las deducidas y las que no responden a la pregunta. Tras el revisor independiente se quitaron 7 más que no respaldaban la pregunta (Bildu B03, J02 y H09; BNG J02 y H09; Junts H06; PNV F02) y se unificaron textos y fuentes repetidas (amnistía, lobo, eutanasia, ley mordaza).
+- **Cambios de valor (todos con fuente y nota en la justificación):** PNV A01 3→4, F05 3→4, G01 3→2 (votación del Congreso), H05 4→5; Junts A05 3→4, A08 4→2, E02 3→5, H04 3→4, L09 4→5, L02 2→1; EH Bildu K04 1→3; BNG D01 2→5, K04 2→1.
+- **Posturas con fuente por partido (de las que tienen postura):** Junts 27 de 104 (antes 10), EH Bildu 34 de 102 (antes 0), PNV 29 de 99 (antes 0), BNG 26 de 105 (antes 0). Sin fuente con prioridad 1–2: Junts 23, EH Bildu 23, PNV 24, BNG 22.
+- **Método reutilizable:** programas de 2023 de Junts (copia de Betevé), PNV, EH Bildu y BNG (`https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf`) se pasan a texto con `pdftotext -layout` y se trocean por página (`#page=N` = número de página del PDF). deia.eus, ondavasca.com y similares responden a `curl` con User-Agent de navegador.
+- **Posturas discutibles: decididas el 27 oct** (el titular delegó la decisión; criterio: lo más coherente y la fuente más fiable, como en T5):
+  - EH Bildu I01 (concertada) 1 → 2: criticó la «concertación universal» de la ley vasca de educación de 2023 (Orain/EITB); en 2021 había propuesto financiar al 100 % la concertada integrándola. Evidencia autonómica: se modera un punto.
+  - EH Bildu B03 (desalojo en 48 h) sigue en 1, ahora con fuente: votó en 2024 una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error», y criticó la ley de Junts de 48 horas (El Español).
+  - BNG B01 (limitar alquileres) sigue en 5, ahora con fuente: votó a favor del decreto de congelación de alquileres (28/04/2026, Público). Con la misma votación: Compromís B01 5 con fuente y Coalición Canaria B01 2 estimada → 4.
+  - PNV L01 (aborto en la Constitución) 4 estimada → 3: votó por seguir tramitando la reforma, pero la llamó oportunista y cuestionó su utilidad (Vozpópuli, 30/04/2026).
+  - PNV D07 (referéndum monarquía o república) 4 → 3 estimada: no consta ninguna postura suya; estimación sin base, al punto medio.
+- **Notas que repetían la justificación:** ya no se muestran dos veces (40 casos; `posWhy` en la app y `whyOf` en las páginas). Prueba nueva en `qa/confianza.mjs`.
+- **Programas del 29N:** ninguno publicado a 27 oct.
+- **Pruebas:** 21/21 baterías en local y en la web real; IndexNow 200 OK. Capturas de una página de partido y una de pregunta a 390 px, en claro y oscuro.
+- **Ojo al publicar posturas:** `qa/correcciones.mjs` lee el historial de git, así que hay que ejecutarlo después de hacer commit de `data/preguntas.json` (y volver a hacer commit de `src/correcciones.json`).
+
 ## 26 oct 2026 · T11 · Embudo, rendimiento, preguntas legales y repaso
 - **Embudo en GoatCounter:** entra (inicio) → empieza → termina → comparte (`compartir`, una vez por visita, con cualquier botón de compartir) → reta a un amigo (`reto`). Nueva pregunta opcional al final del resumen, «¿Te ha resultado útil el test?» (Sí / No): cuenta `util-si` o `util-no`, da las gracias y no vuelve a preguntar (se recuerda en el navegador). No aparece en resultados compartidos. Aviso de privacidad actualizado (frase partida en dos tras la revisión). Pruebas nuevas en `qa/stats.mjs`. En GoatCounter, el embudo se lee comparando los totales de esos pasos.
 - **Rendimiento (nueva batería `qa/rendimiento.mjs`, 3G lenta y CPU ×4, con presupuesto):**
