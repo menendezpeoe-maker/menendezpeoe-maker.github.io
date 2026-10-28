@@ -9,9 +9,10 @@
 
 **Orden de trabajo para la próxima tanda**
 1. **R0 (29 oct):** repaso de lo pendiente. Fuentes que siguen sin enlace (prioridad 1–2): Junts 21, EH Bildu 18, PNV 19, BNG 17, CC 26, UPN 30, Compromís 40, SALF 34; ya se buscaron en T12–T12c, así que solo merece la pena si aparecen programas de 2026 o votaciones nuevas. Método de fuentes y votaciones nominales del Congreso: entradas de T12 (en `plan/ESTADO-HISTORICO.md`) y T12c.
-2. **Programas del 29N:** a 28 oct ningún partido ha publicado el suyo (comprobado en prensa y agregadores; suelen salir unas dos semanas antes). Cada tanda lo vuelve a comprobar (regla 5).
-3. **Pendiente de tandas anteriores:** 22 posturas documentadas de Podemos sin enlace (podemos.info bloquea a los robots; lista en la entrada de T7 del histórico) → T12b, R0 o R1. 
-4. **Pendiente de decisión del titular:** correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
+2. **Candidaturas (audit del 28 oct, `plan/AUDITORIA-CANDIDATURAS.md`):** al salir las listas definitivas en el BOE del 3 nov, volver a pasar `qa/herramientas/boe-candidaturas.py` y `boe-comparar.mjs`, y corregir en la web las candidaturas que no se presentan (UPL, Por Ávila, Jaén Merece Más, FA en Teruel/Ceuta/Melilla, Existe fuera de Teruel, Podemos en Baleares y Melilla, PACMA en 15 circunscripciones, SALF en 6) y decidir con el titular qué hacer con las candidaturas que la web no recoge (S1 del 10 nov es tarde: hacerlo el 3 o 4 nov).
+3. **Programas del 29N:** a 28 oct ningún partido ha publicado el suyo (comprobado en prensa y agregadores; suelen salir unas dos semanas antes). Cada tanda lo vuelve a comprobar (regla 5).
+4. **Pendiente de tandas anteriores:** 22 posturas documentadas de Podemos sin enlace (podemos.info bloquea a los robots; lista en la entrada de T7 del histórico) → T12b, R0 o R1. 
+5. **Pendiente de decisión del titular:** correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
 
 **Archivos clave y decisiones técnicas**
 - Mapa del código y grupos de pruebas: `CLAUDE.md`. Pruebas con `node qa/run.mjs <grupo|todas>` (21 baterías, incluida `rendimiento` desde T11).
@@ -28,6 +29,10 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta: lo que más pesa tras las tipografías son `papeleta.js` (66 kB comprimido) y `data/preguntas.json` (69 kB), que se cargan enteros antes de activar «Empezar». Mejora posible (no urgente): activar el botón antes de tener todas las justificaciones.
 
 Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
+
+## 28 oct 2026 · Auditoría de candidaturas por circunscripción (petición del titular)
+- Comparadas las 27 candidaturas de la web con las listas provisionales del BOE del 28 oct (BOE-A-2026-22607). Resultado y propuestas en `plan/AUDITORIA-CANDIDATURAS.md`: 9 grupos de diferencias en la web (UPL, Por Ávila, JMM, Frente Amplio, CHA, Existe, Podemos, PACMA y SALF) y unas 40 candidaturas del BOE que la web no recoge (Alhora, NEX, JUEX, PREPAL, Valencia Unida, Frente Obrero, PCTE…).
+- **No se ha cambiado la web:** las listas son provisionales hasta la proclamación del 2 nov.
 
 ## 28 oct 2026 · T12c · Fuentes de SALF y votaciones nominales del Congreso (adelantada a petición del titular)
 - **SALF** (0 → 13 posturas con fuente): no tiene programa nacional ni europeo; se usa su programa de Castilla y León de 2026 (copia de The Objective). Las que hablan en clave nacional (desalojo en 24 h, deportaciones, cierre nuclear, Mercosur) quedan documentadas; las de enfoque autonómico, con fuente pero **siguen estimadas** (pesan menos). Descartadas: sanidad (el documento repite texto de Aragón), pensiones (frase genérica), rearme y referéndum UE (cita no localizada), financiación catalana y patrimonio (no responden a la pregunta).
