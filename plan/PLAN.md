@@ -122,10 +122,10 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 | T12b | mar 27 oct | Continuación de T12 (hecha el 27, adelantada a petición del titular) |
 | T12c | mié 28 oct | Lo que quede de fuentes en el mismo orden (Junts, EH Bildu, PNV, BNG, CC, UPN; después SALF y el resto), y programas de 2026 que se hayan publicado |
 | R0 | jue 29 oct | Repaso y recuperación: lo pendiente en `ESTADO.md` (entre otras cosas, las 22 posturas de Podemos sin enlace) |
-| R1 | sáb 31 oct | Recuperación: termina lo pendiente de `ESTADO.md` por orden de valor (incluidas tandas que no llegaran a ejecutarse) |
+| R1 | sáb 31 oct | **Primero, la página /programas/** (sección «Campaña», S1), creada ya para que Google la descubra cuanto antes; después, lo pendiente de `ESTADO.md` por orden de valor |
 | R2 | dom 1 nov | Recuperación y revisión total: lo que siga pendiente; después, revisión de erratas, coherencia y aspecto (regla 9) de todas las páginas de la web, no solo de las nuevas. Si no queda nada que corregir, termina pronto. |
 | C1 | mar 3 nov (tarde) | Candidaturas definitivas (BOE del 3 de noviembre), programas electorales y revisión de fuentes de todas las posturas, en todas las comunidades autónomas. Encargada por el titular el 28 oct. |
-| S1 | vie 6 nov (madrugada) | Programas publicados y página nueva /programas/ (estado del programa de cada candidatura) |
+| S1 | vie 6 nov (madrugada) | Programas publicados; /programas/ al día (si R1 no la creó, créala) |
 | S1b | mar 10 nov (madrugada) | Web lista para la campaña: repaso completo, buscadores y kit de difusión para el titular |
 | S1c | vie 13 nov (madrugada) | Inicio de campaña: programas que salgan al arrancar y posturas que cambien |
 | S1d | mar 17 nov (madrugada) | Mitad de campaña: programas tardíos, cambios de postura con fuente y enlaces rotos |
@@ -280,7 +280,7 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
 - Fecha de «Datos actualizados» al día (`UPDATED` de `build.mjs`) solo si han cambiado datos.
 - Ninguna postura sale de declaraciones de campaña sin fuente primaria (vídeo, nota del partido o diario de sesiones). Nada inventado, nada de rumores.
 
-**S1 (vie 6 nov) · Programas y página /programas/:**
+**Página /programas/ (la crea R1 el 31 oct; si no, S1) y S1 (vie 6 nov):**
 - Página nueva **/programas/**: una fila por candidatura que se presenta, con el estado (publicado, con enlace oficial y fecha; o «aún no publicado»), cuántas posturas se han revisado con él y enlace a su página de partido. En el sitemap, enlazada desde el pie, desde /partidos/ y desde cada página de partido, con datos estructurados y lastmod real. Pensada para búsquedas como «programa electoral [partido] 2026».
 - Pruebas: amplía `seo` y `growth` para la página nueva.
 
@@ -288,7 +288,7 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
 - Repaso completo de la web real: todas las baterías, axe en claro y oscuro, 320/390 px y escritorio, y rendimiento con red móvil lenta.
 - Buscadores: comprueba en Google y Bing qué páginas aparecen para «test político 2026», «test elecciones 29N», «a quién votar 2026» y «programa electoral [partido] 2026». Mejora títulos y descripciones de las páginas que no aparezcan, sin trucos.
 - Imágenes para compartir (`og`) al día con el número real de candidaturas y preguntas.
-- **Kit de difusión** en `plan/DIFUSION-CAMPANA.md`: lista de medios, blogs y creadores que recopilan tests o guías de voto (con su contacto público), un texto corto de presentación neutral para enviarles y 5 textos de «pregunta del día» del 13 al 23 de noviembre. El titular decide qué enviar; tú no envías nada.
+- **Kit de difusión** en `plan/DIFUSION-CAMPANA.md` (primera versión hecha el 28 oct; complétala): lista de medios, blogs y creadores que recopilan tests o guías de voto (con su contacto público), un texto corto de presentación neutral para enviarles y 5 textos de «pregunta del día» del 13 al 23 de noviembre. El titular decide qué enviar; tú no envías nada.
 
 **S1c (vie 13 nov) · Inicio de campaña:**
 - Programas que se publiquen al empezar la campaña (es cuando más salen) y revisión de sus posturas.
