@@ -1165,7 +1165,8 @@ export const SOURCES = {
   E04: {
     psoe: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Debate de la proposición de Vox para rebajar la edad penal (18 de noviembre de 2025)", "parlamento", "2025-11-18"],
     pp: ["https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF", "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025", "parlamento", "2025-11-18"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"],
+    pod: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json", "Congreso, votación nominal PL VOX de reforma de la LO 5/2000 (edad penal), 18-11-2025", "parlamento", "2025-11-18"]
   },
   E05: {
     psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "declaracion", "2023-07-18"]
@@ -1234,6 +1235,7 @@ export const SOURCES = {
     psoe: ["https://www.menorca.info/actualidad/nacional/2026/05/03/2621747/ofensiva-del-psoe-toda-espana-europa-contra-prioridad-nacional-vox.html", "Menorca – Es Diari (EFE), comunicado del PSOE contra la «prioridad nacional», 03/05/2026", "prensa", "2026-05-03"],
     pp: ["https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html", "Menorca.info, abril de 2026", "prensa", "2026-04"],
     vox: ["https://www.bolsamania.com/noticias/empresas/economia--el-pp-rechaza-en-el-congreso-la-propuesta-de-vox-de-exigir-la-prioridad-nacional-en-ayudas-para-vivienda--22776272.html", "Moción de Vox sobre «prioridad nacional» en vivienda (18-6-2026)", "parlamento", "2026-06-18"],
+    pod: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso, votación nominal PNL VOX sobre prioridad nacional en prestaciones públicas, 25-06-2026", "parlamento", "2026-06-25"],
     salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
     junts: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
     pnv: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
@@ -1256,6 +1258,7 @@ export const SOURCES = {
     pp: ["https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/", "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025", "parlamento", "2025-04-10"],
     vox: ["https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/", "El Congreso convalida el decreto ley para distribuir a menores migrantes sin los apoyos de PP ni Vox (RTVC)", "parlamento", "2025-04-10"],
     fa: ["https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/", "El Congreso convalida el decreto ley para distribuir a menores migrantes sin los apoyos de PP ni Vox (RTVC)", "parlamento", "2025-04-10"],
+    pod: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json", "Congreso, votación nominal PNL VOX sobre menores no acompañados y su reparto, 16-09-2026", "parlamento", "2026-09-16"],
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
     bildu: ["https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/", "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025", "parlamento", "2025-04-10"]
   },
@@ -1415,6 +1418,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=39", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://theobjective.com/espana/politica/2023-02-09/congreso-aprueba-ley-cooperacion-ayuda-desarrollo/", "El Congreso aprueba la Ley de Cooperación que busca aumentar la ayuda al desarrollo (The Objective)", "parlamento", "2023-02-09"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=148", "Programa electoral de Sumar de 2023, p. 148", "programa", "2023-07"],
+    pod: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json", "Congreso, votación nominal enmienda de totalidad VOX a la Ley de Cooperación para el Desarrollo, 15-09-2022", "parlamento", "2022-09-15"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
   },
   H08: {
@@ -2035,6 +2039,7 @@ export const JUSTIF = {
     pp: "Se abstuvo ante la ley que rebajaba la edad penal a 12 años y pidió escuchar a expertos antes de reformar.",
     vox: "El programa de Vox promete bajar la edad penal y endurecer la ley del menor para delitos sexuales graves.",
     fa: "Estimación: no consta una votación o declaración verificada de Sumar sobre rebajar la edad penal de 14 años.",
+    pod: "Votó en contra de la proposición de Vox para rebajar la edad penal de los menores.",
     erc: "Estimación: ERC defiende un enfoque garantista y rechazaría rebajar la edad penal."
   },
   E05: {
@@ -2104,6 +2109,7 @@ export const JUSTIF = {
   F03: {
     psoe: "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
     vox: "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
+    pod: "Votó en contra de la proposición de Vox sobre la prioridad nacional en las prestaciones públicas.",
     salf: "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
     erc: "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
     junts: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
@@ -2127,6 +2133,7 @@ export const JUSTIF = {
     pp: "Votó contra el decreto ley que fija un reparto obligatorio y permanente de menores migrantes entre comunidades.",
     vox: "Vox votó contra el decreto ley que reparte entre comunidades a los menores migrantes no acompañados.",
     fa: "Registró con PSOE y CC la reforma para repartir menores migrantes no acompañados, convalidada después como decreto-ley.",
+    pod: "Votó en contra de la proposición de Vox que rechazaba el reparto territorial de menores migrantes no acompañados.",
     erc: "Estimación: posición intermedia por la defensa de las competencias autonómicas.",
     pnv: "Pide una distribución equitativa de los menores migrantes no acompañados entre las comunidades autónomas.",
     bildu: "Apoyó el decreto para repartir a los menores migrantes entre comunidades."
@@ -2291,6 +2298,7 @@ export const JUSTIF = {
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
     vox: "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
     fa: "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo.",
+    pod: "Votó en contra de la enmienda de Vox para devolver al Gobierno la ley de cooperación para el desarrollo.",
     erc: "El programa pide alcanzar el 0,7 % en ayuda al desarrollo."
   },
   H08: {

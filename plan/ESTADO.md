@@ -1,17 +1,17 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 28 oct 2026, T12c)
+## Ficha de continuidad (actualizada el 29 oct 2026, R0)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1, T9, T2, T3, T4 (19–24 oct), T10, T5, T6, T7 (24 oct), T8 (25 oct), T11 (26 oct), T12 y T12b (27 oct), T12c (28 oct, adelantada a petición del titular).
-- Pendientes, con tarea programada: R0 (29), R1 (31), R2 (1 nov), S1 (10 nov), S2 (21 nov), P1 (30 nov).
+- Completadas y verificadas en la web real: T1, T9, T2, T3, T4 (19–24 oct), T10, T5, T6, T7 (24 oct), T8 (25 oct), T11 (26 oct), T12 y T12b (27 oct), T12c (28 oct) y R0 (29 oct, ambas adelantadas a petición del titular).
+- Pendientes, con tarea programada: R1 (31), R2 (1 nov), S1 (10 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
 **Orden de trabajo para la próxima tanda**
-1. **R0 (29 oct):** repaso de lo pendiente. Fuentes que siguen sin enlace (prioridad 1–2): Junts 21, EH Bildu 18, PNV 19, BNG 17, CC 26, UPN 30, Compromís 40, SALF 34; ya se buscaron en T12–T12c, así que solo merece la pena si aparecen programas de 2026 o votaciones nuevas. Método de fuentes y votaciones nominales del Congreso: entradas de T12 (en `plan/ESTADO-HISTORICO.md`) y T12c.
+1. **R1 (31 oct):** lo poco que queda de fuentes (Junts 21, EH Bildu 18, PNV 19, BNG 17, CC 26, UPN 30, Compromís 40, SALF 34 y Podemos 14 de prioridad 1–2 sin enlace) solo merece la pena si aparecen programas de 2026 o votaciones nuevas; antes, comprobar si hay programas publicados.
 2. **Candidaturas (audit del 28 oct, `plan/AUDITORIA-CANDIDATURAS.md`):** al salir las listas definitivas en el BOE del 3 nov, volver a pasar `qa/herramientas/boe-candidaturas.py` y `boe-comparar.mjs`, y corregir en la web las candidaturas que no se presentan (UPL, Por Ávila, Jaén Merece Más, FA en Teruel/Ceuta/Melilla, Existe fuera de Teruel, Podemos en Baleares y Melilla, PACMA en 15 circunscripciones, SALF en 6) y decidir con el titular qué hacer con las candidaturas que la web no recoge (S1 del 10 nov es tarde: hacerlo el 3 o 4 nov).
 3. **Programas del 29N:** a 28 oct ningún partido ha publicado el suyo (comprobado en prensa y agregadores; suelen salir unas dos semanas antes). Cada tanda lo vuelve a comprobar (regla 5).
-4. **Pendiente de tandas anteriores:** 22 posturas documentadas de Podemos sin enlace (podemos.info bloquea a los robots; lista en la entrada de T7 del histórico) → T12b, R0 o R1. 
+4. **Podemos:** 19 posturas documentadas siguen sin enlace (podemos.info da 403 a los robots y web.archive.org está bloqueado desde aquí): C03, C06, D01, D05, D06, F06, F08, F09, G03, G04, H09, I05, I06, I07, I09, K07, K08, L09 y F04; el valor no se cambia sin fuente. Si el titular puede bajar el programa de Podemos en PDF y subirlo, se cierran de golpe. 
 5. **Pendiente de decisión del titular:** correo público de contacto (hoy el de la cuenta, en los enlaces `mailto:`); preguntas para un asesor en `plan/LEGAL.md`.
 
 **Archivos clave y decisiones técnicas**
@@ -32,7 +32,13 @@ Entradas anteriores al 25 oct: `plan/ESTADO-HISTORICO.md`.
 
 ## 28 oct 2026 · Auditoría de candidaturas por circunscripción (petición del titular)
 - Comparadas las 27 candidaturas de la web con las listas provisionales del BOE del 28 oct (BOE-A-2026-22607). Resultado y propuestas en `plan/AUDITORIA-CANDIDATURAS.md`: 9 grupos de diferencias en la web (UPL, Por Ávila, JMM, Frente Amplio, CHA, Existe, Podemos, PACMA y SALF) y unas 40 candidaturas del BOE que la web no recoge (Alhora, NEX, JUEX, PREPAL, Valencia Unida, Frente Obrero, PCTE…).
-- **No se ha cambiado la web:** las listas son provisionales hasta la proclamación del 2 nov.
+- **No se## 29 oct 2026 · R0 · Repaso y pendientes (adelantada a petición del titular)
+- **Podemos:** 4 posturas más con fuente (edad penal E04, prioridad nacional F03, reparto de menores F05 y ley de cooperación H07), todas de votaciones nominales del Congreso contra iniciativas de Vox, sin cambiar valores. Descartadas por no tratar la misma cuestión o por voto partido: velo integral (L09), regularización (F04) y educación en español (I05). Podemos pasa de 53 a 57 posturas con fuente.
+- **Barra del test en móvil:** la etiqueta «Área 2 de 12 · Vivienda y urbanismo» ya no se corta con puntos suspensivos (hasta 3 líneas a 320 px).
+- **Programas del 29N:** ninguno publicado a 29 oct.
+- **Calendario:** la tarea programada de R0 (29 oct, 2:13) se desactivó para no repetirla.
+
+ ha cambiado la web:** las listas son provisionales hasta la proclamación del 2 nov.
 
 ## 28 oct 2026 · T12c · Fuentes de SALF y votaciones nominales del Congreso (adelantada a petición del titular)
 - **SALF** (0 → 13 posturas con fuente): no tiene programa nacional ni europeo; se usa su programa de Castilla y León de 2026 (copia de The Objective). Las que hablan en clave nacional (desalojo en 24 h, deportaciones, cierre nuclear, Mercosur) quedan documentadas; las de enfoque autonómico, con fuente pero **siguen estimadas** (pesan menos). Descartadas: sanidad (el documento repite texto de Aragón), pensiones (frase genérica), rearme y referéndum UE (cita no localizada), financiación catalana y patrimonio (no responden a la pregunta).
