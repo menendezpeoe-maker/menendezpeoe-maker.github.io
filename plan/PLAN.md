@@ -316,4 +316,11 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
 - Enlace a los resultados oficiales (Ministerio del Interior).
 - Opción de comparar tu resultado con el voto oficial de tu provincia, solo con datos oficiales ya publicados.
 - Un aviso en la portada indicando que las elecciones ya se han celebrado.
+- **Siguiente fase (aprobada por el titular el 29 oct):** escribe en este archivo una sección «Después del 29N» con el plan para el titular, sin ejecutarlo ni programar tareas. Incluye las visitas de la campaña (GoatCounter) para que decida con datos:
+  1. Diciembre: «¿Qué partidos coinciden más?» con las 107 posturas, y simulador de mayorías con los escaños oficiales.
+  2. De enero a marzo: «¿Votan lo que prometieron?», con las posturas comparadas con las votaciones del nuevo Congreso (datos abiertos), en revisiones mensuales cortas.
+  3. Primavera de 2027: tests autonómicos para las elecciones de mayo de 2027, empezando a prepararlos en enero.
+  4. Todo el año: test general al día y un «modo aula» para profesores.
+  5. Decisión pendiente del titular: un dominio más general con redirección desde test29n.es.
+  Nunca convertir la web en un medio de noticias u opinión.
 - Desactiva cualquier tarea programada de este plan que siga activa.
