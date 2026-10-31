@@ -1,9 +1,9 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 31 oct 2026, R1)
+## Ficha de continuidad (actualizada el 31 oct 2026, R1 y mejoras de accesibilidad)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct) y R1 (31 oct).
+- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct) y mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`).
 - Pendientes, con tarea programada (calendario de campaña del titular, 28 oct; ver `PLAN.md`): R2 (1 nov, /debates/), C1 (3 nov, 16:47, candidaturas definitivas, cabezas de lista, programas y fuentes), S1 (6 nov), S1b (10 nov), S1c (13 nov), S1d (17 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
@@ -29,6 +29,11 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 31 oct 2026 · Mejoras de accesibilidad y uso (petición del titular, publicadas)
+- Versión mejorada en cuatro iteraciones (sistema de diseño y cabecera; pregunta, respuestas y «Más contexto»; progreso, avance automático y provincia; resultados y repaso final) más ajustes pedidos por el titular («Volver arriba» en todas las vistas salvo el test, «Posturas» sin retraso, botones del resumen en cuadrícula). Ningún texto existente cambia; textos nuevos aprobados: «Respuesta guardada», «Pasar de pregunta automáticamente», «Buscar provincia», «1 provincia coincide / N provincias coinciden», «Ninguna provincia coincide con la búsqueda» y «Volver arriba».
+- Integración: `assets/mejora.css` y `assets/mejora.js` solo en la página del test; 21/21 baterías sin cambiar ninguna prueba. Para que «Compartir» siga en la primera pantalla del móvil (batería `summary`), el resumen se compactó sin reducir la letra.
+- Pruebas propias y documentación: rama `version-mejorada`, carpeta `version-mejorada/` (`qa-iteracion.mjs`, `CHANGELOG.md`, `contraste.md`, `textos-nuevos-ui.md`).
 
 ## 31 oct 2026 · R1 · Página /programas/ y repaso
 - **Página nueva /programas/** (para buscadores en campaña): una fila por candidatura con el estado de su programa del 29N (publicado, con enlace oficial, fecha y posturas revisadas con él; o «aún no publicado»), fecha de comprobación, datos estructurados `ItemList` y aviso para UPL, Por Ávila y JMM («no figuran en las listas provisionales del BOE»). Datos en `src/programas.src.mjs` (solo enlaces oficiales del partido). Enlazada desde el pie de todas las páginas, el pie del test, /partidos/ y cada página de partido (nueva fila «Programa del 29N»). Sitemap: 230 URL. Pruebas nuevas en `growth`.
