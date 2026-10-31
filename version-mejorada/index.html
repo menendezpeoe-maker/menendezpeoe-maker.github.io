@@ -4238,10 +4238,27 @@ boot();
      papeleta.js reescribe #q-main en cada pregunta (innerHTML) y después busca #ctx por su id: por eso, justo
      antes de reescribirlo, el panel vuelve a su sitio original y, justo después, se coloca bajo el botón. */
   const qMain = $("#q-main"), ctxBox = $("#ctx"), qGrid = $("#quiz-grid");
+  /* MEJORA (pedida por el titular): al empezar el test y al pasar de pregunta, papeleta.js lleva la página arriba del
+     todo; con la letra más grande, en el móvil las respuestas quedaban cortadas por abajo. Ahora la pregunta y sus
+     respuestas (del enunciado a «No lo sé») quedan centradas en la pantalla; si no caben enteras, el enunciado se coloca
+     arriba, bajo la barra de progreso cuando está fija (el código y el área de la pregunta quedan justo encima). Sin animación: el salto es tan inmediato como antes. WCAG 2.4.3, 1.4.10. */
+  const centerQuestion = () => {
+    const main = $("#q-main"); if (!main || $("#v-quiz").hidden) return;
+    const first = $("#q-stmt", main), last = $(".q-aux", main) || $(".scale", main); if (!first || !last) return;
+    const bar = $(".quiz-bar"), fixed = bar && getComputedStyle(bar).position === "sticky" ? bar.getBoundingClientRect().height : 0;
+    const top = first.getBoundingClientRect().top + scrollY, bottom = last.getBoundingClientRect().bottom + scrollY;
+    const room = innerHeight - fixed, h = bottom - top;
+    let y = h <= room - 24 ? top - fixed - (room - h) / 2 : top - fixed - 12;
+    y = Math.max(0, Math.min(y, document.documentElement.scrollHeight - innerHeight));
+    window.scrollTo({ top: y, behavior: "auto" });
+  };
+  // papeleta.js reescribe la pregunta y justo después sube la página: se centra en el fotograma siguiente
+  const centerSoon = () => requestAnimationFrame(() => setTimeout(centerQuestion, 0));
+
   if (qMain && ctxBox && qGrid) {
     const desc = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
     const place = () => { const tools = $(".q-tools", qMain); if (tools && tools.nextElementSibling !== ctxBox) tools.after(ctxBox); };
-    Object.defineProperty(qMain, "innerHTML", { configurable: true, get() { return desc.get.call(this); }, set(v) { qGrid.append(ctxBox); desc.set.call(this, v); place(); } });
+    Object.defineProperty(qMain, "innerHTML", { configurable: true, get() { return desc.get.call(this); }, set(v) { qGrid.append(ctxBox); desc.set.call(this, v); place(); centerSoon(); } });
     place();
     // MEJORA: el panel es una región con nombre (su título «Contexto»). WCAG 1.3.1, 4.1.2.
     ctxBox.setAttribute("role", "region");
