@@ -79,6 +79,79 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
   const [o, n] = res;
   ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
 }
+
+// ═══ ITERACIÓN 2 · Pregunta, respuestas y «Más contexto»
+const startQuiz = async (p) => { await p.evaluate(() => document.querySelector("#setup").requestSubmit()); await p.waitForSelector("#v-quiz:not([hidden]) #q-stmt"); await p.waitForTimeout(350); };
+// Textos del test: la secuencia fuera del panel de contexto es idéntica, y el panel conserva exactamente sus textos (solo cambia de sitio)
+const quizTexts = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
+  return { rest: get(document.querySelector("#v-quiz"), true), ctx: get(document.querySelector("#ctx"), false) }; });
+console.log("Iteración 2 · P2 en el test: textos idénticos (pregunta normal, con el contexto cerrado y abierto, y un dilema)");
+for (const [w, dark] of [[375, false], [1280, true]]) {
+  const A = await open(ORIG, w, dark), B = await open(NEW, w, dark);
+  for (const x of [A, B]) await startQuiz(x.p);
+  for (const step of ["cerrado", "abierto", "siguiente pregunta con el contexto abierto"]) {
+    if (step === "abierto") for (const x of [A, B]) { await x.p.click("#ctx-toggle"); await x.p.waitForTimeout(250); }
+    if (step.startsWith("siguiente")) for (const x of [A, B]) { await x.p.click(".opt >> nth=3"); await x.p.waitForTimeout(700); }
+    const [ta, tb] = [await quizTexts(A.p), await quizTexts(B.p)];
+    ok(JSON.stringify(ta.rest) === JSON.stringify(tb.rest) && JSON.stringify(ta.ctx) === JSON.stringify(tb.ctx), `${w} px ${dark ? "oscuro" : "claro"}, contexto ${step}: ${ta.rest.length + ta.ctx.length} nodos idénticos`);
+  }
+  // Un dilema (opciones A y B), en la versión completa: se avanza respondiendo «3» con el teclado hasta encontrar uno
+  const C = await open(ORIG, w, dark), D = await open(NEW, w, dark), dil = [false, false];
+  for (const [k, x] of [C, D].entries()) { await x.p.evaluate(() => { document.querySelector("#f-mode-completa").checked = true; }); await startQuiz(x.p);
+    for (let i = 0; i < 40 && !(dil[k] = await x.p.isVisible("#q-main .dil")); i++) { await x.p.focus("#q-stmt"); await x.p.keyboard.press("3"); await x.p.waitForTimeout(400); } }
+  const [da, db] = [await quizTexts(C.p), await quizTexts(D.p)];
+  ok(dil[0] && dil[1] && JSON.stringify(da) === JSON.stringify(db), `${w} px: dilema ${await D.p.textContent("#q-main .q-code")} (opciones A y B): ${da.rest.length + da.ctx.length} nodos idénticos`);
+  await C.p.close(); await D.p.close();
+  ok(!B.errs.length, `${w} px: sin errores de JavaScript en el test${B.errs.length ? ": " + B.errs[0] : ""}`);
+  await A.p.close(); await B.p.close();
+}
+
+console.log("Iteración 2 · Anchuras: objetivos ≥ 48 px (respuestas ≥ 56 px), texto ≥ 16 px, sin scroll horizontal, con el contexto abierto");
+for (const w of WIDTHS) {
+  const { p, errs } = await open(NEW, w);
+  await startQuiz(p); await p.click("#ctx-toggle"); await p.waitForTimeout(250);
+  const r = await p.evaluate((w) => {
+    const vis = (e) => e.checkVisibility() && e.getBoundingClientRect().width > 0;
+    const h = (sel, min) => [...document.querySelectorAll(sel)].filter(vis).filter((e) => e.getBoundingClientRect().height < min - .5).map((e) => sel);
+    const small = [...h(".opt span.box", w >= 640 ? 56 : 48), ...h(".opt-ns span, .imp, .ctx-toggle, #q-prev, #q-next, #ctx-close", 48)];
+    const tiny = [...document.querySelectorAll(".q-meta, .q-intro, .opt .t, .opt-ns span, .imp span, .ctx-toggle span, .kbd, .ctx-body p, .err, .dil-o")].filter(vis).filter((e) => parseFloat(getComputedStyle(e).fontSize) < 15.99).map((e) => e.className);
+    const ctx = document.querySelector("#ctx"), tools = document.querySelector(".q-tools");
+    return { hs: document.documentElement.scrollWidth > innerWidth + 1, small, tiny, placed: tools.nextElementSibling === ctx && !ctx.hidden && ctx.getAttribute("role") === "region",
+      covers: getComputedStyle(ctx).position === "fixed", ring: getComputedStyle(document.querySelector(".opt .tick")).boxShadow !== "none" };
+  }, w);
+  ok(!r.hs && !r.small.length && !r.tiny.length && r.placed && !r.covers && r.ring && !errs.length, `${w} px: sin scroll horizontal · objetivos${r.small.length ? " (fallan: " + [...new Set(r.small)].join(", ") + ")" : " OK"} · texto ≥ 16 px${r.tiny.length ? " (fallan: " + [...new Set(r.tiny)].join(", ") + ")" : " OK"} · contexto bajo su botón, como región, sin tapar respuestas · círculo de selección visible`);
+  if (SHOTS && [375, 1280].includes(w)) await p.screenshot({ path: `${SHOTS}/nueva-test-${w}.png`, fullPage: true });
+  await p.close();
+}
+if (SHOTS) for (const w of [375, 1280]) { const { p } = await open(ORIG, w); await startQuiz(p); await p.click("#ctx-toggle"); await p.waitForTimeout(300); await p.screenshot({ path: `${SHOTS}/original-test-${w}.png`, fullPage: true }); await p.close(); }
+
+console.log("Iteración 2 · Teclado y acordeón");
+for (const w of [375, 1280]) {
+  const { p } = await open(NEW, w);
+  await startQuiz(p);
+  await p.focus("#ctx-toggle"); await p.keyboard.press("Enter"); await p.waitForTimeout(250);
+  ok(await p.evaluate(() => document.activeElement.id === "ctx-toggle" && document.activeElement.getAttribute("aria-expanded") === "true" && !document.querySelector("#ctx").hidden), `${w} px: Intro en «Más contexto» abre el panel y el foco se queda en el botón (aria-expanded=true)`);
+  await p.keyboard.press("Tab");
+  ok(await p.evaluate(() => document.activeElement.id === "ctx-close"), `${w} px: el siguiente Tab entra en el panel (orden de foco = orden visual)`);
+  await p.keyboard.press("Enter"); await p.waitForTimeout(150);
+  ok(await p.evaluate(() => document.activeElement.id === "ctx-toggle" && document.querySelector("#ctx").hidden), `${w} px: cerrar el panel devuelve el foco al botón`);
+  await p.keyboard.press("c"); await p.waitForTimeout(250);
+  ok(await p.evaluate(() => document.activeElement.id === "ctx-toggle" && !document.querySelector("#ctx").hidden), `${w} px: la tecla C abre el contexto con el foco en el botón`);
+  await p.keyboard.press("Escape"); await p.waitForTimeout(150);
+  await p.focus('#q-main input[name=ans][value="1"]'); await p.keyboard.press("ArrowDown");
+  ok(await p.evaluate(() => document.querySelector('#q-main input[name=ans][value="2"]').checked && document.activeElement.value === "2"), `${w} px: las flechas cambian la respuesta (radios nativos) sin pasar de pregunta`);
+  ok(await p.evaluate(() => getComputedStyle(document.querySelector('#q-main input[value="2"] + span .tick')).color !== "rgba(0, 0, 0, 0)"), `${w} px: la respuesta elegida muestra ✓ (no solo color)`);
+  await p.close();
+}
+
+console.log("Iteración 2 · axe-core en el test con el contexto abierto");
+for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]) {
+  const res = [];
+  for (const u of [ORIG, NEW]) { const { p } = await open(u, w, dark); await startQuiz(p); await p.click("#ctx-toggle"); await p.waitForTimeout(300);
+    await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
+  const [o, n] = res;
+  ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
+}
 await b.close();
 console.log(fails ? `\n${fails} comprobaciones fallan` : "\nTodo OK");
 process.exit(fails ? 1 : 0);

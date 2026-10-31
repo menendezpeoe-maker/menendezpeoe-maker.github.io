@@ -1174,7 +1174,8 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .pg-tag.ok { background: var(--mark); border-color: var(--mark); color: var(--mark-ink); }
 </style><style id="mejora-css">/* Test 29N · versión mejorada (accesibilidad y uso para todas las edades)
    Se carga DESPUÉS de assets/papeleta.css y solo añade o ajusta estilos: no oculta ni cambia ningún texto.
-   Iteración 1: sistema de diseño + cabecera + selector de versión (móvil y escritorio). */
+   Iteración 1: sistema de diseño + cabecera + selector de versión (móvil y escritorio).
+   Iteración 2: pregunta + respuestas + «Más contexto» como acordeón (móvil y escritorio). */
 
 /* ─── 1. Sistema de diseño ─────────────────────────────────────────────────────────────── */
 /* MEJORA: tokens comunes de tamaño, espacio, foco y movimiento. Se mantiene la paleta aprobada
@@ -1190,7 +1191,7 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
   --space-unit: 8px;
   --radius: 12px;
   --touch-min: 48px;
-  --focus-ring: 3px solid var(--ink);          /* tinta sobre papel: 17,4:1 en claro y 16,0:1 en oscuro */
+  --focus-ring: 3px solid var(--ink);          /* tinta sobre papel: 16,7:1 en claro y 16,4:1 en oscuro */
   --focus-halo: 0 0 0 6px var(--mark);         /* halo del fosforito: refuerzo, no sustituye al contorno */
   --transition: 200ms ease;
 }
@@ -1265,6 +1266,87 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 @media (max-width: 759px) { #v-home .banner.modes-open .bn-btn { font-size: var(--font-small); min-height: var(--touch-min); } }
 /* MEJORA: la leyenda «Versión» del grupo de radios, a 16 px (antes, la etiqueta general de 12 px). WCAG 1.4.4. */
 #setup legend.label { font-size: var(--font-small); letter-spacing: .06em; }
+
+/* ═══ ITERACIÓN 2 · Pregunta, respuestas y «Más contexto» ═══════════════════════════════ */
+
+/* ─── 4. Bloque de la pregunta ─────────────────────────────────────────────────────────── */
+/* MEJORA: código y área de la pregunta, introducción del área, error y ayuda de teclado a 16 px. WCAG 1.4.4. */
+.q-meta { font-size: var(--font-small); }
+.q-intro { font-size: var(--font-small); line-height: 1.5; padding: 12px 16px; border-radius: var(--radius); }
+.err { font-size: var(--font-small); }
+.kbd { font-size: var(--font-small); line-height: 1.35; text-align: center; }
+/* MEJORA: opciones del dilema (A/B) a 17 px, con la letra en círculo de 32 px. WCAG 1.4.4. */
+.dil-o { font-size: 17px; line-height: 1.45; border-radius: var(--radius); padding: 14px 16px; }
+.dil-o b { width: 32px; height: 32px; }
+
+/* ─── 5. Respuestas 1–5 (radios nativos con aspecto de tarjeta) ────────────────────────── */
+/* MEJORA: tarjetas más grandes y con texto de 16 px; borde de 2 px. Móvil: filas de 56 px a lo ancho;
+   escritorio (≥ 640 px): cinco columnas de 120 px de alto. WCAG 2.5.8, 1.4.4, 1.4.11. */
+.scale { gap: 10px; }
+.opt span.box { min-height: 56px; padding: 12px 16px; border-width: 2px; border-radius: var(--radius); font-size: 17px; transition: border-color var(--transition), background-color var(--transition), transform 120ms ease; }
+@media (min-width: 640px) { .opt span.box { min-height: 120px; padding: 34px 8px 14px; font-size: var(--font-small); line-height: 1.3; } }
+/* MEJORA: estado elegido sin depender del color: un círculo vacío en todas las opciones que pasa a
+   círculo relleno con ✓ en la elegida (además del fondo amarillo y el borde en tinta). WCAG 1.4.1. */
+.opt .tick { width: 24px; height: 24px; padding: 3px; border-radius: 50%; opacity: 1; color: transparent; box-shadow: inset 0 0 0 2px var(--ink-3); background: var(--sheet); transition: background-color var(--transition); }
+.opt input:checked + span.box .tick { color: var(--mark); background: var(--mark-ink); box-shadow: none; }
+@media (min-width: 640px) { .opt .tick { top: 10px; right: 10px; } }
+.opt input:checked + span.box { border-color: var(--mark-ink); box-shadow: inset 0 0 0 1px var(--mark-ink); }
+/* MEJORA: estados diferenciados: encima (borde en tinta y fondo suave), foco (contorno + halo),
+   pulsado (ligera escala; sin ella con «reducir movimiento»). WCAG 2.4.7, 1.4.11. */
+.opt:hover span.box { background: var(--sheet-2); }
+.opt:hover input:checked + span.box { background: var(--mark); }
+.opt input:focus-visible + span.box { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+.opt input:active + span.box { transform: scale(.98); }
+
+/* «No lo sé» y «Me importa especialmente»: 48 px y 16 px */
+/* MEJORA: objetivos de 48 px; «No lo sé» elegido cambia de borde discontinuo a relleno (no solo color);
+   la estrella cambia de contorno a rellena. WCAG 2.5.8, 1.4.1, 1.4.4. */
+.q-aux { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.opt-ns span { min-height: var(--touch-min); padding: 0 18px; font-size: var(--font-small); line-height: 1.25; border-width: 2px; }
+.opt-ns input:focus-visible + span { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+.imp { min-height: var(--touch-min); padding: 0 16px 0 12px; font-size: var(--font-small); border-width: 2px; }
+.imp:focus-visible { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+@media (max-width: 420px) { .opt-ns, .opt-ns span, .imp { width: 100%; justify-content: center; text-align: center; } }
+
+/* Anterior / Siguiente */
+/* MEJORA: botones de navegación de 48 px y 16 px. WCAG 2.5.8, 1.4.4. */
+.q-nav { padding-top: 14px; }
+.q-nav .btn-sm { min-height: var(--touch-min); padding: 0 20px; font-size: var(--font-small); }
+
+/* ─── 6. «Más contexto» como acordeón (WAI-ARIA: botón con aria-expanded + región justo debajo) ─ */
+/* MEJORA: el botón deja de parecer un enlace subrayado: objetivo de 48 px, 16 px, borde y una flecha que
+   gira al abrir (forma, no solo color). WCAG 2.5.8, 1.4.1, 4.1.2. */
+.ctx-toggle { min-height: var(--touch-min); padding: 0 16px 0 12px; gap: 8px; font-size: var(--font-small); border: 2px solid var(--rule); border-radius: 999px; transition: background-color var(--transition), border-color var(--transition); }
+.ctx-toggle:hover { border-color: var(--ink); }
+.ctx-toggle[aria-expanded="true"] { border-color: var(--ink); }
+.ctx-toggle::after { content: ""; width: 8px; height: 8px; margin-left: 2px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform var(--transition); }
+.ctx-toggle[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+.ctx-toggle:focus-visible { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+/* MEJORA: el panel va justo debajo de su botón, dentro del flujo de la pregunta, en móvil y en escritorio
+   (antes: hoja fija sobre las respuestas en móvil y columna lateral en escritorio). No tapa las respuestas
+   y el orden de lectura coincide con el visual. WCAG 1.3.2 (secuencia significativa), 2.4.3 (orden del foco),
+   1.4.10 (reflujo). Mismos textos: solo cambia su posición en el documento (ver ITERACION-2.md). */
+.quiz-main > .ctx { position: static; z-index: auto; max-height: none; margin: 0; padding: 0; border: 2px solid var(--ink); border-radius: var(--radius); box-shadow: none; animation: none; }
+.quiz-main > .ctx .ctx-head { padding: 6px 6px 6px 16px; }
+.quiz-main > .ctx .ctx-body { padding: 14px 16px 18px; overflow: visible; }
+.quiz-grid.with-ctx { max-width: 800px; }
+@media (min-width: 1040px) { .quiz-grid.with-ctx { grid-template-columns: minmax(0, 1fr); } }
+.quiz-stage { padding-bottom: 40px; }
+/* MEJORA: apertura con un deslizamiento de 200 ms (≤ 250 ms); nada con «reducir movimiento». WCAG 2.3.3. */
+.ctx.ctx-anim { animation: ctx-open 200ms ease-out; }
+@keyframes ctx-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+/* MEJORA: texto del contexto a 18 px (--font-base) y ≤ 68 caracteres por línea; nota y marco legal a 16 px;
+   botón de cerrar de 48 px. WCAG 1.4.4, 1.4.8 (presentación visual), 2.5.8. */
+.ctx-body .cq { font-size: var(--font-small); }
+.ctx-body .ct { font-size: var(--font-base); line-height: var(--line-height); max-width: var(--max-width-texto); }
+.ctx-body .cl, .ctx-body .cn { font-size: var(--font-small); line-height: 1.5; max-width: var(--max-width-texto); }
+.ctx-head .icon-btn { width: var(--touch-min); height: var(--touch-min); }
+.ctx-head .icon-btn:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+/* MEJORA: los botones Anterior/Siguiente nunca se parten en varias líneas; si no cabe todo en una fila, la
+   ayuda de teclado baja a su propia línea (solo se ve con ratón; en pantallas táctiles ya estaba oculta). WCAG 1.4.10. */
+.q-nav { flex-wrap: wrap; }
+.q-nav .btn-sm { white-space: nowrap; }
+@media (max-width: 639.98px) { .q-nav .kbd { order: 3; flex-basis: 100%; } }
 </style>
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>
@@ -3937,6 +4019,7 @@ boot();
 })();
 </script><script id="mejora-js">// Test 29N · versión mejorada: comportamiento añadido. Se carga después de papeleta.js y no cambia ningún texto.
 // Iteración 1: barra decorativa de duración en cada versión (formulario y banner móvil).
+// Iteración 2: «Más contexto» como acordeón (panel bajo su botón, foco en el botón).
 (() => {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -3956,6 +4039,37 @@ boot();
   const start = $("#start-btn");
   const ready = () => start && !start.disabled && addMeters();
   if (!ready() && start) { const mo = new MutationObserver(() => { if (ready()) mo.disconnect(); }); mo.observe(start, { attributes: true, attributeFilter: ["disabled"] }); }
+  /* ═══ ITERACIÓN 2 · «Más contexto» como acordeón ═══════════════════════════════════════
+     MEJORA: el panel de contexto (#ctx, el mismo nodo con sus mismos textos) se coloca justo después de la fila
+     de su botón «Más contexto», dentro de la pregunta, como pide el patrón de acordeón de WAI-ARIA. El foco se
+     queda en el botón al abrir y al cerrar. WCAG 1.3.2, 2.4.3, 4.1.2.
+     papeleta.js reescribe #q-main en cada pregunta (innerHTML) y después busca #ctx por su id: por eso, justo
+     antes de reescribirlo, el panel vuelve a su sitio original y, justo después, se coloca bajo el botón. */
+  const qMain = $("#q-main"), ctxBox = $("#ctx"), qGrid = $("#quiz-grid");
+  if (qMain && ctxBox && qGrid) {
+    const desc = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
+    const place = () => { const tools = $(".q-tools", qMain); if (tools && tools.nextElementSibling !== ctxBox) tools.after(ctxBox); };
+    Object.defineProperty(qMain, "innerHTML", { configurable: true, get() { return desc.get.call(this); }, set(v) { qGrid.append(ctxBox); desc.set.call(this, v); place(); } });
+    place();
+    // MEJORA: el panel es una región con nombre (su título «Contexto»). WCAG 1.3.1, 4.1.2.
+    ctxBox.setAttribute("role", "region");
+    // MEJORA: el foco se queda en «Más contexto» / «Ocultar contexto» (botón o tecla C), y la apertura se anima
+    // solo cuando la pide la persona (no al pasar de pregunta con el panel ya abierto).
+    const keepFocus = () => { const t = $("#ctx-toggle"); if (!t) return; if (!ctxBox.hidden) { ctxBox.classList.remove("ctx-anim"); void ctxBox.offsetWidth; ctxBox.classList.add("ctx-anim"); } t.focus({ preventScroll: true }); };
+    ctxBox.addEventListener("animationend", () => ctxBox.classList.remove("ctx-anim"));
+    qMain.addEventListener("click", (e) => { if (e.target.closest("#ctx-toggle")) keepFocus(); });
+    document.addEventListener("keydown", (e) => { if (e.metaKey || e.ctrlKey || e.altKey || $("#v-quiz").hidden) return; const tag = e.target.tagName; if (tag === "SELECT" || tag === "TEXTAREA" || (tag === "INPUT" && e.target.type !== "radio")) return; if (/^[cCiI]$/.test(e.key)) keepFocus(); });
+  }
+
+  /* MEJORA (pendiente de aprobar el texto): al elegir una respuesta, una región aria-live="polite" anunciaría
+     «Respuesta guardada». No se inserta ningún texto hasta que el titular lo apruebe (textos-nuevos-ui.md).
+     WCAG 4.1.3 (mensajes de estado). */
+  const TEXTOS_APROBADOS = { respuestaGuardada: "" };   // "" = sin aprobar: no se anuncia nada
+  if (TEXTOS_APROBADOS.respuestaGuardada && qMain) {
+    const live = document.createElement("p"); live.className = "sr"; live.setAttribute("aria-live", "polite"); live.id = "ans-live";
+    $("#v-quiz").append(live);
+    qMain.addEventListener("change", (e) => { if (e.target.name !== "ans") return; live.textContent = ""; setTimeout(() => { live.textContent = TEXTOS_APROBADOS.respuestaGuardada; }, 50); });
+  }
 })();
 </script>
 </body>
