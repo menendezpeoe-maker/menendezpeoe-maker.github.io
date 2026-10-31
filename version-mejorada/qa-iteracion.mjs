@@ -16,7 +16,7 @@ const open = async (url, w, dark = false) => {
 };
 // Todos los nodos de texto fuera de <script>/<style>, tal cual (sin normalizar espacios), y si se ven
 const texts = (p) => p.evaluate(() => { const out = [], w = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT); let n;
-  while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript")) continue; out.push([n.data, el.checkVisibility ? el.checkVisibility({ visibilityProperty: true, opacityProperty: false }) : true]); } return out; });
+  while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora]")) continue; out.push([n.data, el.checkVisibility ? el.checkVisibility({ visibilityProperty: true, opacityProperty: false }) : true]); } return out; });
 const attrsOf = (p) => p.evaluate(() => [...document.querySelectorAll("[alt],[title],[placeholder],[aria-label],[value]")].map((e) => ["alt", "title", "placeholder", "aria-label", "value"].map((a) => e.getAttribute(a)).join("|")));
 
 console.log("P2 · textos idénticos nodo a nodo (móvil y escritorio, claro y oscuro, con el selector del banner abierto en móvil)");
@@ -83,7 +83,7 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
 // ═══ ITERACIÓN 2 · Pregunta, respuestas y «Más contexto»
 const startQuiz = async (p) => { await p.evaluate(() => document.querySelector("#setup").requestSubmit()); await p.waitForSelector("#v-quiz:not([hidden]) #q-stmt"); await p.waitForTimeout(350); };
 // Textos del test: la secuencia fuera del panel de contexto es idéntica, y el panel conserva exactamente sus textos (solo cambia de sitio)
-const quizTexts = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
+const quizTexts = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,[data-mejora]") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
   return { rest: get(document.querySelector("#v-quiz"), true), ctx: get(document.querySelector("#ctx"), false) }; });
 console.log("Iteración 2 · P2 en el test: textos idénticos (pregunta normal, con el contexto cerrado y abierto, y un dilema)");
 for (const [w, dark] of [[375, false], [1280, true]]) {
@@ -151,6 +151,91 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
     await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
   const [o, n] = res;
   ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
+}
+
+// ═══ ITERACIÓN 3 · Barra de progreso, avance automático, provincia y avisos
+const APROBADOS = ["Respuesta guardada", "Pasar de pregunta automáticamente"];
+const newTexts = (p) => p.evaluate(() => [...document.querySelectorAll("[data-mejora]")].map((e) => e.textContent.trim()).filter(Boolean));
+const answerAll = async (p) => { for (let i = 0; i < 40 && !(await p.isVisible("#v-prios")); i++) { await p.focus("#q-stmt").catch(() => {}); await p.keyboard.press("4"); await p.waitForTimeout(260); } await p.waitForSelector("#v-prios:not([hidden])"); };
+console.log("Iteración 3 · P2 en la barra del test y en «Antes de ver tus resultados» (los textos nuevos aprobados van aparte)");
+for (const [w, dark] of [[375, false], [1280, true]]) {
+  const A = await open(ORIG, w, dark), B = await open(NEW, w, dark);
+  for (const x of [A, B]) { await startQuiz(x.p); await answerAll(x.p); }
+  const all = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora]") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
+    return { rest: get(document.documentElement, true), ctx: get(document.querySelector("#ctx"), false) }; });
+  const [ta, tb] = [await all(A.p), await all(B.p)];
+  ok(JSON.stringify(ta) === JSON.stringify(tb), `${w} px ${dark ? "oscuro" : "claro"}, último paso: ${ta.rest.length + ta.ctx.length} nodos de texto originales idénticos (el panel de contexto, aparte por su nueva posición)`);
+  const extra = await newTexts(B.p);
+  ok(extra.every((t) => APROBADOS.includes(t)), `${w} px: solo aparecen textos nuevos aprobados (${[...new Set(extra)].join(" · ") || "ninguno visible aquí"})`);
+  ok(!(await B.p.$("#prov-q")), `${w} px: el buscador de provincia NO aparece hasta que se aprueben sus textos`);
+  await A.p.close(); await B.p.close();
+}
+
+console.log("Iteración 3 · Barra del test en todas las anchuras");
+for (const w of WIDTHS) {
+  const { p, errs } = await open(NEW, w); await startQuiz(p);
+  const r = await p.evaluate((w) => { const lab = document.querySelector("#q-prog-label"), ex = document.querySelector("#q-exit"), bar = document.querySelector(".quiz-bar"), sw = document.querySelector(".auto-adv label");
+    return { hs: document.documentElement.scrollWidth > innerWidth + 1, fs: parseFloat(getComputedStyle(lab).fontSize), cut: lab.scrollHeight > lab.clientHeight + 1, exitH: ex.getBoundingClientRect().height, sticky: getComputedStyle(bar).position, swH: sw ? sw.getBoundingClientRect().height : 0, live: lab.getAttribute("aria-live"), sw: !!document.querySelector('#auto-adv[role="switch"]:checked') }; }, w);
+  ok(!r.hs && r.fs >= 16 && !r.cut && r.exitH >= 47.5 && r.swH >= 47.5 && r.live === "polite" && r.sw && (w <= 560 ? r.sticky === "static" : r.sticky === "sticky") && !errs.length,
+    `${w} px: sin scroll horizontal · área a ${r.fs} px sin recortar · «Guardar y salir» ${Math.round(r.exitH)} px · interruptor ${Math.round(r.swH)} px y activado · barra ${r.sticky === "sticky" ? "fija arriba" : "sin fijar (móvil)"}`);
+  if (SHOTS && [375, 1280].includes(w)) await p.screenshot({ path: `${SHOTS}/nueva-barra-${w}.png` });
+  await p.close();
+}
+
+console.log("Iteración 3 · Avance automático, avisos y provincia (móvil y escritorio)");
+for (const w of [375, 1280]) {
+  const { p } = await open(NEW, w); await startQuiz(p);
+  const id0 = await p.textContent("#q-main .q-code");
+  await p.click(".opt >> nth=1"); await p.waitForTimeout(700);
+  ok((await p.textContent("#q-main .q-code")) !== id0 && (await p.textContent("#ans-live")) === "Respuesta guardada", `${w} px: con el interruptor activado, elegir pasa de pregunta (como la original) y se anuncia «Respuesta guardada»`);
+  // Reescribir el área con el mismo texto no la cambia (no se repite el aviso); con otro texto, sí
+  const same = await p.evaluate(() => { const l = document.querySelector("#q-prog-label"), n = l.firstChild; l.textContent = l.textContent; const keep = l.firstChild === n; return keep; });
+  ok(same, `${w} px: el área solo se reescribe (y se anuncia) cuando cambia`);
+  await p.click(".auto-adv label"); await p.waitForTimeout(100);
+  const id1 = await p.textContent("#q-main .q-code");
+  await p.click(".opt >> nth=2"); await p.waitForTimeout(800);
+  ok((await p.textContent("#q-main .q-code")) === id1 && (await p.isChecked('#q-main input[name=ans][value="3"]')), `${w} px: con el interruptor desactivado, tocar una respuesta la elige sin pasar de pregunta`);
+  await p.focus("#q-stmt"); await p.keyboard.press("5"); await p.waitForTimeout(600);
+  ok((await p.textContent("#q-main .q-code")) === id1 && (await p.isChecked('#q-main input[name=ans][value="5"]')), `${w} px: …y la tecla 5 también elige sin avanzar`);
+  await p.click("#q-next"); await p.waitForTimeout(300);
+  ok((await p.textContent("#q-main .q-code")) !== id1 && !(await p.isChecked("#auto-adv")), `${w} px: «Siguiente» avanza y el interruptor sigue desactivado en la pregunta nueva`);
+  await p.click(".auto-adv label"); await answerAll(p);
+  await p.click("#prio-go"); await p.waitForTimeout(200);
+  ok((await p.getAttribute("#f-prov", "aria-invalid")) === "true" && (await p.textContent("#prov-err")).length > 0, `${w} px: sin provincia, el desplegable queda marcado con aria-invalid y el error enlazado`);
+  await p.selectOption("#f-prov", "sevilla"); await p.waitForTimeout(150);
+  ok(!(await p.getAttribute("#f-prov", "aria-invalid")), `${w} px: al elegir provincia, aria-invalid desaparece`);
+  const r = await p.evaluate(() => { const vis = (e) => e.checkVisibility() && e.getBoundingClientRect().width > 0;
+    return { hs: document.documentElement.scrollWidth > innerWidth + 1, small: [...document.querySelectorAll("#f-prov, .prio-b, #prio-go, #prio-skip, #prio-back")].filter(vis).filter((e) => e.getBoundingClientRect().height < 47.5).length,
+      tiny: [...document.querySelectorAll("#v-prios .label, #v-prios .small, .prov-field .chip, .prio-b span")].filter(vis).filter((e) => parseFloat(getComputedStyle(e).fontSize) < 15.99).map((e) => e.className) }; });
+  ok(!r.hs && !r.small && !r.tiny.length, `${w} px: último paso sin scroll horizontal, controles ≥ 48 px y textos ≥ 16 px${r.tiny.length ? " (fallan: " + r.tiny.join(", ") + ")" : ""}`);
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/nueva-prov-${w}.png`, fullPage: true });
+  await p.close();
+}
+
+console.log("Iteración 3 · Propuesta del buscador de provincia (solo para capturas: textos sin aprobar)");
+for (const w of [375, 1280]) {
+  const p = await b.newPage({ viewport: { width: w, height: 900 }, reducedMotion: "reduce" });
+  await p.addInitScript(() => { window.__MEJORA_PROPUESTA = true; });
+  await p.goto(NEW); await p.waitForSelector("#start-btn:not([disabled])"); await startQuiz(p); await answerAll(p);
+  await p.fill("#prov-q", "sevi"); await p.waitForTimeout(100);
+  ok((await p.inputValue("#f-prov")) === "sevilla" && (await p.textContent("#prov-q-st")) === "1 provincia coincide", `${w} px: «sevi» → elige Sevilla y lo anuncia`);
+  await p.fill("#prov-q", "ávila"); await p.waitForTimeout(100);
+  const n = await p.evaluate(() => [...document.querySelectorAll("#f-prov option")].filter((o) => !o.hidden && o.value).map((o) => o.textContent));
+  ok(n.length === 1 && n[0] === "Ávila", `${w} px: la búsqueda ignora tildes y no cambia ni reordena las opciones (${n.join(", ")})`);
+  await p.fill("#prov-q", "zzz"); await p.waitForTimeout(100);
+  ok((await p.textContent("#prov-q-st")).startsWith("Ninguna"), `${w} px: sin coincidencias, lo dice`);
+  await p.fill("#prov-q", "le"); await p.waitForTimeout(100);
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/propuesta-buscador-${w}.png`, fullPage: true });
+  await p.close();
+}
+
+console.log("Iteración 3 · axe-core en el test (con el interruptor) y en el último paso");
+for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]) {
+  const res = [];
+  for (const u of [ORIG, NEW]) { const { p } = await open(u, w, dark); await startQuiz(p); await answerAll(p); await p.click("#prio-go"); await p.waitForTimeout(200);
+    await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
+  const [o, n] = res;
+  ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}, último paso con error: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
 }
 await b.close();
 console.log(fails ? `\n${fails} comprobaciones fallan` : "\nTodo OK");

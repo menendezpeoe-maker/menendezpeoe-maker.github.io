@@ -55,3 +55,22 @@ Calculado con la fórmula de luminancia relativa de WCAG. Texto normal: mínimo 
 | Oscuro | «No lo sé»: borde (--ink-3) / papel | `#8E94A1` | `#0E1014` | 6.26:1 | 3.0:1 | ✅ |
 | Oscuro | Nota del contexto (--ink-3) / tarjeta | `#8E94A1` | `#171A20` | 5.73:1 | 4.5:1 | ✅ |
 | Oscuro | Error (--ko) / papel | `#F07B6E` | `#0E1014` | 7.04:1 | 4.5:1 | ✅ |
+
+## Iteración 3 · Barra de progreso, interruptor y provincia
+
+| Modo | Par | Primer plano | Fondo | Ratio | Mínimo | Resultado |
+|---|---|---|---|---|---|---|
+| Claro | Área del test (--ink-2) / papel | `#434955` | `#F2F3EE` | 8.11:1 | 4.5:1 | ✅ |
+| Claro | Progreso hecho (--ink) / pendiente (--rule-2) | `#111318` | `#E4E6DF` | 14.76:1 | 3.0:1 | ✅ |
+| Claro | Contorno del área actual (--ink) / papel | `#111318` | `#F2F3EE` | 16.66:1 | 3.0:1 | ✅ |
+| Claro | Interruptor apagado: borde y bolita (--ink-3) / tarjeta | `#676D79` | `#FFFFFF` | 5.20:1 | 3.0:1 | ✅ |
+| Claro | Interruptor encendido: bolita (--paper) / fondo (--ink) | `#F2F3EE` | `#111318` | 16.66:1 | 3.0:1 | ✅ |
+| Claro | Interruptor encendido: fondo (--ink) / papel | `#111318` | `#F2F3EE` | 16.66:1 | 3.0:1 | ✅ |
+| Claro | Texto del interruptor (--ink-2) / papel | `#434955` | `#F2F3EE` | 8.11:1 | 4.5:1 | ✅ |
+| Claro | Provincia con error: borde (--ko) / campo (--sheet-2) | `#B3261E` | `#F7F8F4` | 6.13:1 | 3.0:1 | ✅ |
+| Claro | Ayuda y recuento (--ink-2 en .muted) / tarjeta | `#434955` | `#FFFFFF` | 9.04:1 | 4.5:1 | ✅ |
+| Oscuro | Área del test (--ink-2) / papel | `#B8BDC7` | `#0E1014` | 10.10:1 | 4.5:1 | ✅ |
+| Oscuro | Interruptor apagado (--ink-3) / tarjeta | `#8E94A1` | `#171A20` | 5.73:1 | 3.0:1 | ✅ |
+| Oscuro | Interruptor encendido: bolita (--paper) / fondo (--ink) | `#0E1014` | `#EDEEF0` | 16.40:1 | 3.0:1 | ✅ (corregido: con --mark daba 1,27:1) |
+| Oscuro | Interruptor encendido: fondo (--ink) / papel | `#EDEEF0` | `#0E1014` | 16.40:1 | 3.0:1 | ✅ |
+| Oscuro | Provincia con error: borde (--ko) / campo | `#F07B6E` | `#1C2027` | 6.04:1 | 3.0:1 | ✅ |

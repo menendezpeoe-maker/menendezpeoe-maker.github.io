@@ -1175,7 +1175,8 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 </style><style id="mejora-css">/* Test 29N · versión mejorada (accesibilidad y uso para todas las edades)
    Se carga DESPUÉS de assets/papeleta.css y solo añade o ajusta estilos: no oculta ni cambia ningún texto.
    Iteración 1: sistema de diseño + cabecera + selector de versión (móvil y escritorio).
-   Iteración 2: pregunta + respuestas + «Más contexto» como acordeón (móvil y escritorio). */
+   Iteración 2: pregunta + respuestas + «Más contexto» como acordeón (móvil y escritorio).
+   Iteración 3: barra de progreso, avance automático opcional, provincia con buscador y avisos aria-live. */
 
 /* ─── 1. Sistema de diseño ─────────────────────────────────────────────────────────────── */
 /* MEJORA: tokens comunes de tamaño, espacio, foco y movimiento. Se mantiene la paleta aprobada
@@ -1347,6 +1348,72 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .q-nav { flex-wrap: wrap; }
 .q-nav .btn-sm { white-space: nowrap; }
 @media (max-width: 639.98px) { .q-nav .kbd { order: 3; flex-basis: 100%; } }
+
+/* ═══ ITERACIÓN 3 · Barra de progreso, provincia y avisos ═══════════════════════════════ */
+
+/* ─── 7. Barra del test (progreso) ─────────────────────────────────────────────────────── */
+/* MEJORA: «Guardar y salir» de 48 px y 16 px; etiqueta del área a 16 px y SIN recorte de líneas (la original
+   recortaba a 3 líneas: a 16 px se perdería texto); contador a 16 px. WCAG 2.5.8, 1.4.4, 1.4.10. */
+#q-exit { min-height: var(--touch-min); padding: 0 6px 0 2px; font-size: var(--font-small); }
+#q-exit:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+.qprog-label { font-size: var(--font-small); line-height: 1.35; color: var(--ink-2); display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible; }
+.qcount { font-size: 17px; }
+/* MEJORA: barra de 10 px; el área actual se marca con un contorno de 2 px (forma, no solo color). WCAG 1.4.1, 1.4.11. */
+.qprog { height: 10px; gap: 4px; }
+.qprog .seg-a { border-radius: 3px; }
+.qprog .seg-a.cur { box-shadow: 0 0 0 2px var(--ink); }
+/* MEJORA (escritorio, ≥ 561 px): la barra sigue fija arriba; al moverse con el teclado, lo enfocado nunca queda
+   escondido debajo de ella. WCAG 2.4.11 (foco no tapado). */
+html:has(body.in-quiz) { scroll-padding-top: 96px; }
+/* MEJORA (móvil, ≤ 560 px): la barra deja de ser fija (no tapa la pregunta al desplazarse) y se ordena en dos
+   filas: «Guardar y salir» y el contador arriba; la barra y el área a todo el ancho debajo. WCAG 1.4.10, 2.4.11. */
+@media (max-width: 560px) {
+  .quiz-bar { position: static; }
+  .quiz-bar-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "exit count" "prog prog"; gap: 4px 12px; padding-block: 6px 12px; }
+  #q-exit { grid-area: exit; justify-self: start; }
+  .qprog-wrap { grid-area: prog; gap: 8px; }
+  #q-count { grid-area: count; }
+  html:has(body.in-quiz) { scroll-padding-top: 16px; }
+}
+
+/* ─── 8. Avance automático opcional (texto aprobado el 31 oct) ─────────────────────────── */
+/* MEJORA: interruptor «Pasar de pregunta automáticamente» (activado por defecto, como la original). Quien lo
+   desactiva elige y luego pulsa «Siguiente». Interruptor de 48 px con estado por forma (bolita a la izquierda o
+   a la derecha) y por color. WCAG 3.2.2 (al recibir entrada), 2.2.1, 2.5.8, 1.4.1. */
+.auto-adv { margin-top: -2px; }
+.auto-adv label { display: inline-flex; align-items: center; gap: 12px; min-height: var(--touch-min); cursor: pointer; font-size: var(--font-small); color: var(--ink-2); }
+.auto-adv input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.auto-adv .sw { position: relative; flex: none; width: 46px; height: 28px; border-radius: 999px; border: 2px solid var(--ink-3); background: var(--sheet); transition: background-color var(--transition), border-color var(--transition); }
+.auto-adv .sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--ink-3); transition: transform var(--transition), background-color var(--transition); }
+.auto-adv input:checked + .sw { background: var(--ink); border-color: var(--ink); }
+.auto-adv input:checked + .sw::after { transform: translateX(18px); background: var(--mark); }
+.auto-adv input:focus-visible + .sw { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+
+/* ─── 9. Último paso: provincia y prioridades ──────────────────────────────────────────── */
+/* MEJORA: textos de la vista a 16 px (etiquetas, ayuda, candidaturas de la provincia, recuento de prioridades)
+   y controles de 48 px. WCAG 1.4.4, 2.5.8. */
+#v-prios .label { font-size: var(--font-small); letter-spacing: .05em; }
+#v-prios .small { font-size: var(--font-small); line-height: 1.5; }
+.prov-field { gap: 10px; padding: 20px; border-radius: var(--radius); }
+.prov-field .chip { font-size: var(--font-small); padding: 6px 12px 6px 9px; }
+#f-prov { min-height: 52px; font-size: 17px; border-width: 2px; }
+#f-prov:focus-visible, #prov-q:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+/* MEJORA: provincia sin elegir al pulsar «Ver mis resultados»: además del mensaje (ya existía), el campo se marca
+   con borde rojo grueso y aria-invalid. WCAG 3.3.1 (identificación de errores), 1.4.1. */
+#f-prov[aria-invalid="true"] { border-color: var(--ko); box-shadow: inset 0 0 0 1px var(--ko); }
+.prov-field .err { font-size: var(--font-small); }
+.prio-b { min-height: 56px; font-size: var(--font-small); border-width: 2px; border-radius: var(--radius); }
+.prio-b:focus-visible { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+#v-prios .actions .btn { min-height: 52px; }
+#v-prios .link-btn { min-height: var(--touch-min); font-size: var(--font-small); }
+#v-prios .link-btn:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+/* Buscador de provincia (pendiente de aprobar sus textos: no aparece hasta entonces) */
+/* MEJORA: campo de búsqueda que filtra las provincias del desplegable sin cambiarlas ni reordenarlas; con una sola
+   coincidencia, la elige. Va encima del desplegable para que el teclado del móvil no lo tape. WCAG 2.4.6, 3.3.2. */
+.prov-search { display: grid; gap: 6px; }
+#prov-q { min-height: 52px; font-size: 17px; border-width: 2px; }
+.prov-q-st:empty { display: none; }
+.prov-search { padding-bottom: 12px; margin-bottom: 2px; border-bottom: 1px dashed var(--rule); }
 </style>
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>
@@ -4020,6 +4087,7 @@ boot();
 </script><script id="mejora-js">// Test 29N · versión mejorada: comportamiento añadido. Se carga después de papeleta.js y no cambia ningún texto.
 // Iteración 1: barra decorativa de duración en cada versión (formulario y banner móvil).
 // Iteración 2: «Más contexto» como acordeón (panel bajo su botón, foco en el botón).
+// Iteración 3: avisos aria-live, avance automático opcional, barra de progreso y provincia con buscador.
 (() => {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -4061,14 +4129,97 @@ boot();
     document.addEventListener("keydown", (e) => { if (e.metaKey || e.ctrlKey || e.altKey || $("#v-quiz").hidden) return; const tag = e.target.tagName; if (tag === "SELECT" || tag === "TEXTAREA" || (tag === "INPUT" && e.target.type !== "radio")) return; if (/^[cCiI]$/.test(e.key)) keepFocus(); });
   }
 
-  /* MEJORA (pendiente de aprobar el texto): al elegir una respuesta, una región aria-live="polite" anunciaría
-     «Respuesta guardada». No se inserta ningún texto hasta que el titular lo apruebe (textos-nuevos-ui.md).
-     WCAG 4.1.3 (mensajes de estado). */
-  const TEXTOS_APROBADOS = { respuestaGuardada: "" };   // "" = sin aprobar: no se anuncia nada
-  if (TEXTOS_APROBADOS.respuestaGuardada && qMain) {
-    const live = document.createElement("p"); live.className = "sr"; live.setAttribute("aria-live", "polite"); live.id = "ans-live";
-    $("#v-quiz").append(live);
-    qMain.addEventListener("change", (e) => { if (e.target.name !== "ans") return; live.textContent = ""; setTimeout(() => { live.textContent = TEXTOS_APROBADOS.respuestaGuardada; }, 50); });
+  /* ═══ ITERACIÓN 3 ═══════════════════════════════════════════════════════════════════════
+     Textos nuevos de interfaz: solo se muestran los aprobados por el titular (textos-nuevos-ui.md).
+     Un texto vacío ("") significa «pendiente»: la función que lo necesita no aparece. Los elementos añadidos llevan
+     data-mejora="texto-nuevo" para distinguirlos de los textos originales en las pruebas. */
+  const PROPUESTA = window.__MEJORA_PROPUESTA === true;   // solo para capturas de la propuesta (pruebas), nunca en la entrega
+  const T = {
+    respuestaGuardada: "Respuesta guardada",                   // aprobado el 31 oct
+    autoAvance: "Pasar de pregunta automáticamente",           // aprobado el 31 oct
+    buscarProvincia: PROPUESTA ? "Buscar provincia" : "",      // pendiente
+    nCoinciden: PROPUESTA ? (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`) : null,          // pendiente
+    ningunaCoincide: PROPUESTA ? "Ninguna provincia coincide con la búsqueda" : "",  // pendiente
+  };
+  const store = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } } };
+  const quizView = $("#v-quiz");
+
+  /* MEJORA: «Respuesta guardada» anunciado al lector de pantalla al elegir (región invisible). WCAG 4.1.3. */
+  if (quizView && qMain) {
+    const live = document.createElement("p"); live.className = "sr"; live.id = "ans-live"; live.setAttribute("aria-live", "polite"); live.dataset.mejora = "texto-nuevo";
+    quizView.append(live);
+    let tm = 0;
+    qMain.addEventListener("change", (e) => { if (e.target.name !== "ans") return; live.textContent = ""; clearTimeout(tm); tm = setTimeout(() => { live.textContent = T.respuestaGuardada; }, 60); });
+  }
+
+  /* MEJORA: interruptor de avance automático (activado por defecto, como la original). Si se desactiva, ni el
+     toque/clic ni las teclas 0–5 pasan de pregunta: se elige y se pulsa «Siguiente» (o Intro). WCAG 3.2.2, 2.2.1. */
+  let auto = store.get("t29n-mejora-auto", true);
+  const switchHTML = () => { const d = document.createElement("div"); d.className = "auto-adv"; d.dataset.mejora = "texto-nuevo";
+    d.innerHTML = `<label><input type="checkbox" role="switch" id="auto-adv"${auto ? " checked" : ""}><span class="sw" aria-hidden="true"></span><span></span></label>`;
+    d.querySelector("label > span:last-child").textContent = T.autoAvance; return d; };
+  const placeSwitch = () => { const nav = qMain && $(".q-nav", qMain); if (nav && !$(".auto-adv", qMain)) nav.after(switchHTML()); };
+  if (qMain) {
+    new MutationObserver(placeSwitch).observe(qMain, { childList: true });
+    placeSwitch();
+    qMain.addEventListener("change", (e) => { if (e.target.id !== "auto-adv") return; auto = e.target.checked; store.set("t29n-mejora-auto", auto); });
+    // papeleta.js pasa de pregunta si la respuesta llega menos de 1,2 s después de un toque o de una tecla 1–5.
+    // Con el avance desactivado: (1) el toque no llega a registrarse como tal; (2) las teclas 0–5 eligen sin
+    // avanzar; (3) si se elige justo después de un toque o tecla hecho con el avance activado (menos de 1,25 s),
+    // la respuesta se entrega a papeleta.js en cuanto pasa ese margen, para que no avance.
+    let lastReal = 0;
+    quizView.addEventListener("pointerdown", (e) => { if (!e.target.closest(".opt, .opt-ns")) return; if (auto) lastReal = Date.now(); else e.stopPropagation(); }, true);
+    window.addEventListener("keydown", (e) => {
+      if (quizView.hidden || e.metaKey || e.ctrlKey || e.altKey || !/^[0-5]$/.test(e.key)) return;
+      const tag = e.target.tagName; if (tag === "SELECT" || tag === "TEXTAREA" || (tag === "INPUT" && e.target.type !== "radio")) return;
+      if (auto) { if (e.key !== "0") lastReal = Date.now(); return; }
+      const r = $(`input[name=ans][value="${e.key}"]`, qMain); if (!r) return;
+      e.preventDefault(); e.stopImmediatePropagation();
+      r.checked = true; r.dispatchEvent(new Event("change", { bubbles: true }));
+    }, true);
+    quizView.addEventListener("change", (e) => {
+      if (auto || e.target.name !== "ans" || e.mejoraDiferido) return;
+      const wait = lastReal + 1250 - Date.now(); if (wait <= 0) return;
+      e.stopPropagation();
+      const target = e.target;
+      setTimeout(() => { if (!target.isConnected) return; const ev = new Event("change", { bubbles: true }); ev.mejoraDiferido = true; target.dispatchEvent(ev); }, wait);
+    }, true);
+  }
+
+  /* MEJORA: el área actual («Área 2 de 12 · Vivienda y urbanismo») se anuncia al lector de pantalla cuando cambia,
+     y solo entonces (papeleta.js la reescribe en cada pregunta con el mismo texto). WCAG 4.1.3. */
+  const progLabel = $("#q-prog-label");
+  if (progLabel) {
+    const d = Object.getOwnPropertyDescriptor(Node.prototype, "textContent");
+    Object.defineProperty(progLabel, "textContent", { configurable: true, get() { return d.get.call(this); }, set(v) { if (d.get.call(this) !== String(v)) d.set.call(this, v); } });
+    progLabel.setAttribute("aria-live", "polite"); progLabel.setAttribute("aria-atomic", "true");
+  }
+
+  /* MEJORA: provincia sin elegir → el desplegable se marca con aria-invalid mientras se muestra el error
+     (ya enlazado con aria-describedby). WCAG 3.3.1, 4.1.2. */
+  const provSel = $("#f-prov"), provErr = $("#prov-err");
+  if (provSel && provErr) {
+    const sync = () => { if (provErr.textContent.trim()) provSel.setAttribute("aria-invalid", "true"); else provSel.removeAttribute("aria-invalid"); };
+    new MutationObserver(sync).observe(provErr, { childList: true, characterData: true, subtree: true });
+    provSel.addEventListener("change", sync);
+  }
+
+  /* MEJORA (pendiente de aprobar sus textos): buscador de provincia encima del desplegable. Filtra las opciones
+     ocultándolas (no se cambian ni se reordenan); con una sola coincidencia, la elige. WCAG 2.4.6, 3.3.2, 4.1.3. */
+  if (provSel && T.buscarProvincia) {
+    const box = document.createElement("div"); box.className = "prov-search"; box.dataset.mejora = "texto-nuevo";
+    box.innerHTML = `<label class="label" for="prov-q"></label><input type="search" id="prov-q" autocomplete="off" spellcheck="false" aria-controls="f-prov" aria-describedby="prov-q-st"><p id="prov-q-st" class="small muted prov-q-st" aria-live="polite"></p>`;
+    $("label", box).textContent = T.buscarProvincia;
+    provSel.closest(".prov-field").querySelector("label[for=f-prov]").before(box);
+    const norm = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+    const q = $("#prov-q", box), st = $("#prov-q-st", box);
+    q.addEventListener("input", () => {
+      const t = norm(q.value); let hits = [];
+      for (const o of provSel.querySelectorAll("option[value]:not([value=''])")) { const ok = !t || norm(o.textContent).includes(t); o.hidden = !ok; o.disabled = !ok; if (ok) hits.push(o); }
+      for (const g of provSel.querySelectorAll("optgroup")) g.hidden = ![...g.children].some((o) => !o.hidden);
+      st.textContent = !t ? "" : hits.length ? T.nCoinciden(hits.length) : T.ningunaCoincide;
+      if (t && hits.length === 1 && provSel.value !== hits[0].value) { provSel.value = hits[0].value; provSel.dispatchEvent(new Event("change", { bubbles: true })); }
+    });
   }
 })();
 </script>

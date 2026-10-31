@@ -1,7 +1,8 @@
 /* Test 29N · versión mejorada (accesibilidad y uso para todas las edades)
    Se carga DESPUÉS de assets/papeleta.css y solo añade o ajusta estilos: no oculta ni cambia ningún texto.
    Iteración 1: sistema de diseño + cabecera + selector de versión (móvil y escritorio).
-   Iteración 2: pregunta + respuestas + «Más contexto» como acordeón (móvil y escritorio). */
+   Iteración 2: pregunta + respuestas + «Más contexto» como acordeón (móvil y escritorio).
+   Iteración 3: barra de progreso, avance automático opcional, provincia con buscador y avisos aria-live. */
 
 /* ─── 1. Sistema de diseño ─────────────────────────────────────────────────────────────── */
 /* MEJORA: tokens comunes de tamaño, espacio, foco y movimiento. Se mantiene la paleta aprobada
@@ -173,3 +174,69 @@
 .q-nav { flex-wrap: wrap; }
 .q-nav .btn-sm { white-space: nowrap; }
 @media (max-width: 639.98px) { .q-nav .kbd { order: 3; flex-basis: 100%; } }
+
+/* ═══ ITERACIÓN 3 · Barra de progreso, provincia y avisos ═══════════════════════════════ */
+
+/* ─── 7. Barra del test (progreso) ─────────────────────────────────────────────────────── */
+/* MEJORA: «Guardar y salir» de 48 px y 16 px; etiqueta del área a 16 px y SIN recorte de líneas (la original
+   recortaba a 3 líneas: a 16 px se perdería texto); contador a 16 px. WCAG 2.5.8, 1.4.4, 1.4.10. */
+#q-exit { min-height: var(--touch-min); padding: 0 6px 0 2px; font-size: var(--font-small); }
+#q-exit:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+.qprog-label { font-size: var(--font-small); line-height: 1.35; color: var(--ink-2); display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible; }
+.qcount { font-size: 17px; }
+/* MEJORA: barra de 10 px; el área actual se marca con un contorno de 2 px (forma, no solo color). WCAG 1.4.1, 1.4.11. */
+.qprog { height: 10px; gap: 4px; }
+.qprog .seg-a { border-radius: 3px; }
+.qprog .seg-a.cur { box-shadow: 0 0 0 2px var(--ink); }
+/* MEJORA (escritorio, ≥ 561 px): la barra sigue fija arriba; al moverse con el teclado, lo enfocado nunca queda
+   escondido debajo de ella. WCAG 2.4.11 (foco no tapado). */
+html:has(body.in-quiz) { scroll-padding-top: 96px; }
+/* MEJORA (móvil, ≤ 560 px): la barra deja de ser fija (no tapa la pregunta al desplazarse) y se ordena en dos
+   filas: «Guardar y salir» y el contador arriba; la barra y el área a todo el ancho debajo. WCAG 1.4.10, 2.4.11. */
+@media (max-width: 560px) {
+  .quiz-bar { position: static; }
+  .quiz-bar-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "exit count" "prog prog"; gap: 4px 12px; padding-block: 6px 12px; }
+  #q-exit { grid-area: exit; justify-self: start; }
+  .qprog-wrap { grid-area: prog; gap: 8px; }
+  #q-count { grid-area: count; }
+  html:has(body.in-quiz) { scroll-padding-top: 16px; }
+}
+
+/* ─── 8. Avance automático opcional (texto aprobado el 31 oct) ─────────────────────────── */
+/* MEJORA: interruptor «Pasar de pregunta automáticamente» (activado por defecto, como la original). Quien lo
+   desactiva elige y luego pulsa «Siguiente». Interruptor de 48 px con estado por forma (bolita a la izquierda o
+   a la derecha) y por color. WCAG 3.2.2 (al recibir entrada), 2.2.1, 2.5.8, 1.4.1. */
+.auto-adv { margin-top: -2px; }
+.auto-adv label { display: inline-flex; align-items: center; gap: 12px; min-height: var(--touch-min); cursor: pointer; font-size: var(--font-small); color: var(--ink-2); }
+.auto-adv input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.auto-adv .sw { position: relative; flex: none; width: 46px; height: 28px; border-radius: 999px; border: 2px solid var(--ink-3); background: var(--sheet); transition: background-color var(--transition), border-color var(--transition); }
+.auto-adv .sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--ink-3); transition: transform var(--transition), background-color var(--transition); }
+.auto-adv input:checked + .sw { background: var(--ink); border-color: var(--ink); }
+.auto-adv input:checked + .sw::after { transform: translateX(18px); background: var(--paper); }
+.auto-adv input:focus-visible + .sw { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+
+/* ─── 9. Último paso: provincia y prioridades ──────────────────────────────────────────── */
+/* MEJORA: textos de la vista a 16 px (etiquetas, ayuda, candidaturas de la provincia, recuento de prioridades)
+   y controles de 48 px. WCAG 1.4.4, 2.5.8. */
+#v-prios .label { font-size: var(--font-small); letter-spacing: .05em; }
+#v-prios .small { font-size: var(--font-small); line-height: 1.5; }
+.prov-field { gap: 10px; padding: 20px; border-radius: var(--radius); }
+.prov-field .chip { font-size: var(--font-small); padding: 6px 12px 6px 9px; }
+#f-prov { min-height: 52px; font-size: 17px; border-width: 2px; }
+#f-prov:focus-visible, #prov-q:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+/* MEJORA: provincia sin elegir al pulsar «Ver mis resultados»: además del mensaje (ya existía), el campo se marca
+   con borde rojo grueso y aria-invalid. WCAG 3.3.1 (identificación de errores), 1.4.1. */
+#f-prov[aria-invalid="true"] { border-color: var(--ko); box-shadow: inset 0 0 0 1px var(--ko); }
+.prov-field .err { font-size: var(--font-small); }
+.prio-b { min-height: 56px; font-size: var(--font-small); border-width: 2px; border-radius: var(--radius); }
+.prio-b:focus-visible { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
+#v-prios .actions .btn { min-height: 52px; }
+#v-prios .link-btn { min-height: var(--touch-min); font-size: var(--font-small); }
+#v-prios .link-btn:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
+/* Buscador de provincia (pendiente de aprobar sus textos: no aparece hasta entonces) */
+/* MEJORA: campo de búsqueda que filtra las provincias del desplegable sin cambiarlas ni reordenarlas; con una sola
+   coincidencia, la elige. Va encima del desplegable para que el teclado del móvil no lo tape. WCAG 2.4.6, 3.3.2. */
+.prov-search { display: grid; gap: 6px; }
+#prov-q { min-height: 52px; font-size: 17px; border-width: 2px; }
+.prov-q-st:empty { display: none; }
+.prov-search { padding-bottom: 12px; margin-bottom: 2px; border-bottom: 1px dashed var(--rule); }
