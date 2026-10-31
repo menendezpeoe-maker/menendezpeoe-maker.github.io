@@ -34,6 +34,12 @@ Versión independiente para probar en local (rama `version-mejorada`). **No modi
 - «Volver arriba» también en «Cómo funciona», «Posturas de los partidos» y resultados; aparece al bajar media pantalla.
 - «Posturas de los partidos» sin retraso: con un procesador de móvil simulado, abrir esa vista pasa de ~1 s (original) y ~3,7 s (versión mejorada anterior) a ~0,35–0,4 s. Cómo: el listado no se vuelve a dibujar si no ha cambiado; el mínimo de 16 px de esa vista va en CSS fijo; el navegador solo dibuja las preguntas cercanas a la pantalla; y al salir, la vista se oculta conservando lo calculado (sigue sin verse, sin ocupar sitio, sin foco y fuera del árbol de accesibilidad).
 
+- Resumen de resultados compacto en el móvil (≤ 560 px): con la letra de 16 px, «Compartir» y «Reta a un amigo» salían de la primera pantalla (911 px frente a 844 px). Se recupera la altura sin reducir la letra ni ocultar nada: porcentaje y explicación lado a lado, etiquetas de la papeleta en minúscula, listas «coincidís/chocáis» en dos columnas (desde 360 px) y márgenes más ajustados. Vuelven a quedar a la misma altura que en la original.
+
+## Integración en la web (rama `integracion-mejora`)
+- `assets/mejora.css` y `assets/mejora.js` se enlazan solo en la página del test (no en las páginas estáticas), con versión en la URL. `publish.mjs` los publica sin comentarios (49 kB → 29 kB).
+- Baterías de la web: 21/21 en local sin cambiar ninguna prueba existente; e2e, onboarding, summary, audit, quick y sections también contra la versión publicable.
+
 ## Propuestas para el futuro (no hechas, a tu criterio)
 - Llevar estas mejoras a la web real: copiar `assets/mejora.css` y `assets/mejora.js` y enlazarlos tras los originales en `papeleta-29n.html`, pasar todas las baterías (`node qa/run.mjs todas`) y publicar. Recomendado **después del 29N** o antes del 21 nov como muy tarde, para no cambiar la web en plena campaña sin margen.
 - Aplicar el mismo mínimo de 16 px y 48 px a las 230 páginas estáticas (partidos, temas, provincias…).

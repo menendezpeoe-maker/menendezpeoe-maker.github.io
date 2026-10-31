@@ -1486,6 +1486,35 @@ html:has(body.in-quiz) { scroll-padding-top: 96px; }
    en lugar de descartarlo (display: none); al volver, aparece al instante. Sigue sin verse, sin ocupar sitio, sin
    recibir el foco y fuera del árbol de accesibilidad, igual que antes. */
 #v-explorer[hidden] { display: block !important; visibility: hidden; content-visibility: hidden; contain-intrinsic-size: 0 0; position: absolute; inset: 0 auto auto 0; width: 100%; height: 0; overflow: hidden; pointer-events: none; }
+
+/* ─── 14. Resumen de resultados compacto en el móvil (≤ 560 px) ────────────────────────── */
+/* MEJORA: con la letra de 16 px el resumen crecía ~230 px y «Compartir» y «Reta a un amigo» salían de la primera
+   pantalla. Se recupera altura solo con espacios y colocación (la letra sigue a 16 px y no se oculta nada):
+   el porcentaje y su explicación vuelven a ir lado a lado, y se ajustan márgenes y rellenos. */
+@media (max-width: 560px) {
+  .ballot-top { padding: 6px 16px; gap: 0 12px; letter-spacing: .02em; }
+  .ballot-top .m16 { line-height: 1.35 !important; }
+  .ballot-body { padding: 12px 16px 18px; gap: 16px; }
+  .sum-body .top-match { gap: 6px; padding-bottom: 12px; }
+  .tm-line { flex-wrap: nowrap; align-items: center; gap: 10px; }
+  .tm-line .tm-pct { flex: none; }
+  .tm-line .small { flex: 1 1 auto; min-width: 0; max-width: none; padding-bottom: 0; line-height: 1.3 !important; }
+  .top-match p.small.m16 { line-height: 1.35 !important; }
+  .top-match .rel { padding-block: 2px; }
+  .sum-main { gap: 8px; }
+  .sum-two { gap: 8px; }
+  .sum-l li.m16, .sum-l .m16 { line-height: 1.3 !important; }
+  .res-nav { margin-bottom: 46px; }
+  .site-head .head-row { padding-block: 4px; gap: 4px; }
+}
+@media (max-width: 560px) {
+  /* Etiquetas de la papeleta («Tu resultado · Rápida», «Congreso · Madrid») en minúscula: caben en una fila */
+  .ballot-top { text-transform: none; letter-spacing: 0; }
+}
+@media (min-width: 360px) and (max-width: 560px) {
+  /* «En qué coincidís» y «En qué chocáis», una al lado de la otra */
+  .sum-two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 14px; }
+}
 </style>
 <style>[hidden]{display:none!important}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 </head>
