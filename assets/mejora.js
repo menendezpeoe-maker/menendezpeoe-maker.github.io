@@ -15,10 +15,21 @@
   const ready = () => start && !start.disabled && addMeters();
   if (!ready() && start) { const mo = new MutationObserver(() => { if (ready()) mo.disconnect(); }); mo.observe(start, { attributes: true, attributeFilter: ["disabled"] }); }
   const qMain = $("#q-main"), ctxBox = $("#ctx"), qGrid = $("#quiz-grid");
+  const centerQuestion = () => {
+    const main = $("#q-main"); if (!main || $("#v-quiz").hidden) return;
+    const first = $("#q-stmt", main), last = $(".q-aux", main) || $(".scale", main); if (!first || !last) return;
+    const bar = $(".quiz-bar"), fixed = bar && getComputedStyle(bar).position === "sticky" ? bar.getBoundingClientRect().height : 0;
+    const top = first.getBoundingClientRect().top + scrollY, bottom = last.getBoundingClientRect().bottom + scrollY;
+    const room = innerHeight - fixed, h = bottom - top;
+    let y = h <= room - 24 ? top - fixed - (room - h) / 2 : top - fixed - 12;
+    y = Math.max(0, Math.min(y, document.documentElement.scrollHeight - innerHeight));
+    window.scrollTo({ top: y, behavior: "auto" });
+  };
+  const centerSoon = () => requestAnimationFrame(() => setTimeout(centerQuestion, 0));
   if (qMain && ctxBox && qGrid) {
     const desc = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
     const place = () => { const tools = $(".q-tools", qMain); if (tools && tools.nextElementSibling !== ctxBox) tools.after(ctxBox); };
-    Object.defineProperty(qMain, "innerHTML", { configurable: true, get() { return desc.get.call(this); }, set(v) { qGrid.append(ctxBox); desc.set.call(this, v); place(); } });
+    Object.defineProperty(qMain, "innerHTML", { configurable: true, get() { return desc.get.call(this); }, set(v) { qGrid.append(ctxBox); desc.set.call(this, v); place(); centerSoon(); } });
     place();
     ctxBox.setAttribute("role", "region");
     const keepFocus = () => { const t = $("#ctx-toggle"); if (!t) return; if (!ctxBox.hidden) { ctxBox.classList.remove("ctx-anim"); void ctxBox.offsetWidth; ctxBox.classList.add("ctx-anim"); } t.focus({ preventScroll: true }); };
