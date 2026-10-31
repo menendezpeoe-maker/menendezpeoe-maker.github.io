@@ -165,14 +165,17 @@
   const lvl1 = () => { for (const h of [$("#q-stmt"), $("#prios-h")]) if (h && h.getAttribute("aria-level") !== "1") h.setAttribute("aria-level", "1"); };
   lvl1(); if (qMain) new MutationObserver(lvl1).observe(qMain, { childList: true });
 
-  /* MEJORA (pendiente de aprobar su texto): «Volver arriba», flotante, tras una pantalla de desplazamiento, solo en
-     la portada y en resultados. Lleva arriba y deja el foco en el título de la vista (o en el contenido). WCAG 2.4.1, 2.5.8. */
+  /* MEJORA: «Volver arriba» (texto aprobado), flotante, al bajar media pantalla, en la portada, «Cómo funciona»,
+     «Posturas de los partidos» y resultados. Lleva arriba y deja el foco en el título de la vista (o en el contenido). WCAG 2.4.1, 2.5.8. */
   if (T.volverArriba) {
     const btn = document.createElement("button"); btn.type = "button"; btn.className = "to-top"; btn.dataset.mejora = "texto-nuevo"; btn.setAttribute("aria-label", T.volverArriba); btn.tabIndex = -1;
     btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     document.body.append(btn);
     const where = () => { const v = $$(".view").find((x) => !x.hidden); return v ? v.id : ""; };
-    const upd = () => { const on = scrollY > innerHeight && ["v-home", "v-results"].includes(where()); btn.classList.toggle("on", on); btn.tabIndex = on ? 0 : -1; btn.setAttribute("aria-hidden", String(!on)); };
+    // Todas las vistas salvo el test y el último paso (ahí taparía «Siguiente» o el teclado del móvil). Aparece al bajar
+    // media pantalla. Se recalcula también al cambiar de vista (papeleta.js muestra y oculta las vistas con «hidden»).
+    const upd = () => { const on = scrollY > innerHeight * 0.5 && !["v-quiz", "v-prios", ""].includes(where()); btn.classList.toggle("on", on); btn.tabIndex = on ? 0 : -1; btn.setAttribute("aria-hidden", String(!on)); };
+    for (const v of $$(".view")) new MutationObserver(upd).observe(v, { attributes: true, attributeFilter: ["hidden"] });
     addEventListener("scroll", upd, { passive: true }); addEventListener("resize", upd); upd();
     btn.addEventListener("click", () => {
       const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;

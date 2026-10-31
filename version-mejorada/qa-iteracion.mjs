@@ -296,17 +296,29 @@ console.log("Iteración 4 · «Volver arriba»");
   await p.close();
   for (const w of [375, 1280]) {
     const q = await b.newPage({ viewport: { width: w, height: 800 }, reducedMotion: "reduce" });
-    await q.addInitScript(() => { window.__MEJORA_PROPUESTA = true; });
     await q.goto(NEW); await q.waitForSelector("#start-btn:not([disabled])");
-    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px : arriba del todo no se ve`);
-    await q.evaluate(() => scrollTo(0, innerHeight * 1.5)); await q.waitForTimeout(150);
-    const bx = await q.$eval(".to-top", (e) => { const r = e.getBoundingClientRect(); return { on: e.classList.contains("on"), w: r.width, h: r.height, inView: r.bottom <= innerHeight && r.right <= innerWidth }; });
-    ok(bx.on && bx.w >= 48 && bx.h >= 48 && bx.inView, `${w} px : tras una pantalla aparece, ${Math.round(bx.w)}×${Math.round(bx.h)} px, dentro de la pantalla`);
-    await q.click(".to-top"); await q.waitForTimeout(150);
-    ok((await q.evaluate(() => scrollY)) === 0 && (await q.evaluate(() => document.activeElement.id === "home-h")), `${w} px : lleva arriba y deja el foco en el título`);
+    const check = async (nombre, titulo) => {
+      await q.evaluate(() => scrollTo(0, 0)); await q.waitForTimeout(120);
+      const off = await q.$eval(".to-top", (e) => !e.classList.contains("on"));
+      await q.evaluate(() => scrollTo(0, Math.min(document.documentElement.scrollHeight - innerHeight, innerHeight * 0.8))); await q.waitForTimeout(150);
+      const bx = await q.$eval(".to-top", (e) => { const r = e.getBoundingClientRect(), top = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2); return { on: e.classList.contains("on"), w: r.width, h: r.height, inView: r.bottom <= innerHeight && r.right <= innerWidth, free: e.contains(top) }; });
+      await q.click(".to-top"); await q.waitForTimeout(150);
+      const back = await q.evaluate(() => ({ y: scrollY, f: document.activeElement.tagName + " " + document.activeElement.textContent.trim().slice(0, 30) }));
+      ok(off && bx.on && bx.w >= 48 && bx.h >= 48 && bx.inView && bx.free && back.y === 0, `${w} px · ${nombre}: oculto arriba; al bajar aparece (${Math.round(bx.w)}×${Math.round(bx.h)} px, sin nada encima); lleva arriba y enfoca «${back.f.replace(/^\S+ /, "")}…»`);
+    };
+    await check("portada");
+    await q.click('.navlink[data-go="method"]'); await q.waitForSelector("#v-method:not([hidden])"); await q.waitForTimeout(300); await check("Cómo funciona");
+    await q.click('.navlink[data-go="explorer"]'); await q.waitForSelector("#v-explorer:not([hidden])"); await q.waitForTimeout(300); await check("Posturas de los partidos");
+    await q.click('.navlink[data-go="home"]'); await q.waitForSelector("#v-home:not([hidden])");
     await startQuiz(q); await q.evaluate(() => scrollTo(0, 2000)); await q.waitForTimeout(150);
-    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px : no aparece durante el test (no tapa «Siguiente»)`);
-    if (SHOTS) { await toResults(q).catch(() => {}); }
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px · test: no aparece (no tapa «Siguiente»)`);
+    await answerAll(q); await q.evaluate(() => scrollTo(0, 2000)); await q.waitForTimeout(150);
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px · último paso: no aparece (no tapa el teclado ni los botones)`);
+    await q.selectOption("#f-prov", "madrid"); await q.click("#prio-skip"); await q.waitForSelector("#v-results:not([hidden])"); await q.waitForTimeout(500);
+    await check("resultados (resumen)");
+    const full = await q.$("text=Ver el análisis completo"); if (full) { await full.click(); await q.waitForTimeout(800); }
+    await check("resultados (análisis completo)");
+    if (SHOTS) { await q.evaluate(() => scrollTo(0, innerHeight * 2)); await q.waitForTimeout(200); await q.screenshot({ path: `${SHOTS}/volver-arriba-resultados-${w}.png` }); }
     await q.close();
   }
 }
