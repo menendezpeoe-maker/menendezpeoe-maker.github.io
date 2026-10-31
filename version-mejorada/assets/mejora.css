@@ -298,3 +298,17 @@ html:has(body.in-quiz) { scroll-padding-top: 96px; }
 .to-top:focus-visible { outline: var(--focus-ring); outline-offset: 3px; box-shadow: var(--focus-halo); }
 /* Rótulo superior del banner a 16 px: menos espaciado entre letras para que ocupe menos */
 .bn-brand .m16 { letter-spacing: .05em; }
+/* MEJORA (rendimiento): en «Posturas de los partidos» el navegador solo dibuja las preguntas que están cerca de la
+   pantalla; el resto se dibuja al llegar a ellas. Mismo contenido, mismo orden, también para lectores de pantalla
+   y para «Buscar en la página». */
+.ex-list .exq { content-visibility: auto; contain-intrinsic-block-size: auto 520px; }
+/* MEJORA (rendimiento): mínimo de 16 px en «Posturas de los partidos» con reglas fijas (en vez de revisar sus
+   ~12 000 elementos con JavaScript cada vez que se dibujan). Mismos elementos que se quedaban por debajo de 16 px. */
+#v-explorer :is(.label, .small, select, input, .q-code, .q-meta > span, .focus-line, .focus-line *, .why-line, details.more > summary, .dinfo, .dinfo b, .pc5 > span, .chip, .why-box > summary, .pos-notes li, .pos-notes li *, .why-meta, .why-meta *, .unk, .err-link) { font-size: var(--font-small); }
+#v-explorer .label { letter-spacing: .04em; }
+#v-explorer :is(.chip, .pos-notes li, .why-meta, .pc5 > span) { line-height: 1.4; }
+#v-explorer :is(select, input) { min-height: var(--touch-min); }
+/* MEJORA (rendimiento): al salir de «Posturas», la vista se oculta conservando lo ya calculado (content-visibility)
+   en lugar de descartarlo (display: none); al volver, aparece al instante. Sigue sin verse, sin ocupar sitio, sin
+   recibir el foco y fuera del árbol de accesibilidad, igual que antes. */
+#v-explorer[hidden] { display: block !important; visibility: hidden; content-visibility: hidden; contain-intrinsic-size: 0 0; position: absolute; inset: 0 auto auto 0; width: 100%; height: 0; overflow: hidden; pointer-events: none; }

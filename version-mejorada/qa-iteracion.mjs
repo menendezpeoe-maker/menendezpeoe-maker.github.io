@@ -242,14 +242,17 @@ const toResults = async (p) => { await startQuiz(p); await answerAll(p); await p
   const full = await p.$("text=Ver el análisis completo"); if (full) { await full.click(); await p.waitForTimeout(900); }
   await p.evaluate(() => document.querySelectorAll("#v-results details").forEach((d) => { d.open = true; })); await p.waitForTimeout(300); };
 console.log("Iteración 4 · P2 en resultados completos (todos los desplegables abiertos)");
+// «N % leído» (#nav-pct) no es un texto fijo: lo calcula papeleta.js según la altura de la página y el desplazamiento,
+// y con letra de 16 px la página es más larga. Se compara todo lo demás.
 for (const [w, dark] of [[375, false], [1280, true]]) {
   const A = await open(ORIG, w, dark), B = await open(NEW, w, dark);
   for (const x of [A, B]) await toResults(x.p);
-  const all = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora]") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
+  const all = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora],#nav-pct") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
     return { rest: get(document.documentElement, true), ctx: get(document.querySelector("#ctx"), false) }; });
   const [ta, tb] = [await all(A.p), await all(B.p)];
   const same = JSON.stringify(ta) === JSON.stringify(tb);
-  if (!same) { const i = ta.rest.findIndex((t, k) => t !== tb.rest[k]); console.log("    primera diferencia:", JSON.stringify(ta.rest[i]), "→", JSON.stringify(tb.rest[i])); }
+  if (!same) { const i = ta.rest.findIndex((t, k) => t !== tb.rest[k]); console.log("    primera diferencia:", JSON.stringify(ta.rest.slice(i - 8, i + 3)), "→", JSON.stringify(tb.rest.slice(i - 8, i + 3)));
+    const st = (p) => p.evaluate(() => Object.entries(localStorage).map(([k, v]) => k + "=" + v.slice(0, 400)).join(" || ")); console.log("    estado A:", await st(A.p)); console.log("    estado B:", await st(B.p)); }
   ok(same, `${w} px ${dark ? "oscuro" : "claro"}: ${ta.rest.length + ta.ctx.length} nodos de texto idénticos en resultados`);
   // Ningún texto queda recortado (puntos suspensivos o líneas limitadas) que no lo estuviera en la original
   const cut = (p) => p.evaluate(() => [...document.querySelectorAll("#v-results *")].filter((e) => { const cs = getComputedStyle(e); return e.checkVisibility() && (cs.textOverflow === "ellipsis" || cs.webkitLineClamp !== "none") && (e.scrollWidth > e.clientWidth + 1 || e.scrollHeight > e.clientHeight + 1); }).map((e) => e.textContent.trim().slice(0, 30)));
@@ -330,6 +333,50 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
     await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
   const [o, n] = res;
   ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
+}
+
+// ═══ Ajuste pedido por el titular: «Posturas de los partidos» sin retraso
+console.log("Rendimiento · «Cómo funciona» → «Posturas de los partidos» (procesador de móvil simulado, 4× más lento)");
+{
+  const t = {};
+  for (const [nombre, u] of [["original", ORIG], ["mejorada", NEW]]) {
+    const p = await b.newPage({ viewport: { width: 375, height: 800 } });
+    const cdp = await p.context().newCDPSession(p); await cdp.send("Emulation.setCPUThrottlingRate", { rate: 4 });
+    await p.goto(u); await p.waitForSelector("#start-btn:not([disabled])");
+    const ms = async () => { await p.click('.navlink[data-go="method"]'); await p.waitForTimeout(400); return p.evaluate(() => new Promise((r) => { const t0 = performance.now(); document.querySelector('.navlink[data-go="explorer"]').click(); requestAnimationFrame(() => requestAnimationFrame(() => r(Math.round(performance.now() - t0)))); })); };
+    t[nombre] = [await ms(), await ms()];
+    await p.close();
+  }
+  ok(t.mejorada[0] <= t.original[0] * 0.6 && t.mejorada[1] <= t.original[1] * 0.6, `primera vez: original ${t.original[0]} ms → mejorada ${t.mejorada[0]} ms · siguientes: ${t.original[1]} ms → ${t.mejorada[1]} ms`);
+}
+for (const w of [375, 1280]) {
+  const { p, errs } = await open(NEW, w);
+  const h0 = await p.evaluate(() => document.documentElement.scrollHeight);
+  await p.click('.navlink[data-go="explorer"]'); await p.waitForSelector("#v-explorer:not([hidden])"); await p.waitForTimeout(400);
+  await p.selectOption("#ex-party", { index: 2 }); await p.waitForTimeout(300);
+  await p.evaluate(() => document.querySelectorAll("#v-explorer details").forEach((d) => { d.open = true; }));
+  const r = await p.evaluate(() => { const own = (e) => [...e.childNodes].some((n) => n.nodeType === 3 && n.data.trim());
+    const tiny = [...document.querySelectorAll("#v-explorer *")].filter((e) => own(e) && e.checkVisibility({ contentVisibilityAuto: false }) && !e.closest('[aria-hidden="true"], svg, .logo, option') && parseFloat(getComputedStyle(e).fontSize) < 15.99).map((e) => e.tagName + "." + String(e.className).split(" ")[0]);
+    return { tiny: [...new Set(tiny)], n: tiny.length, hs: document.documentElement.scrollWidth > innerWidth + 1 }; });
+  ok(!r.n && !r.hs, `${w} px: «Posturas» con todo el texto ≥ 16 px y sin scroll horizontal${r.n ? ` (fallan ${r.n}: ${r.tiny.slice(0, 4).join(", ")})` : ""}`);
+  await p.click('.navlink[data-go="home"]'); await p.waitForSelector("#v-home:not([hidden])"); await p.waitForTimeout(300);
+  const hid = await p.evaluate(() => { const ex = document.querySelector("#v-explorer"); const anyVis = [...ex.querySelectorAll("h1, h3, .chip")].some((e) => e.checkVisibility()); return { anyVis, h: document.documentElement.scrollHeight, hidden: ex.hidden }; });
+  let inside = false; await p.evaluate(() => document.activeElement.blur()); for (let i = 0; i < 60; i++) { await p.keyboard.press("Tab"); if (await p.evaluate(() => !!document.activeElement.closest("#v-explorer"))) { inside = true; break; } }
+  ok(hid.hidden && !hid.anyVis && Math.abs(hid.h - h0) < 2 && !inside && !errs.length, `${w} px: al salir de «Posturas» no se ve, no alarga la página (${h0} → ${hid.h} px) y el tabulador nunca entra en ella`);
+  await p.close();
+}
+for (const w of [375, 1280]) {
+  const A = await open(ORIG, w), B = await open(NEW, w);
+  for (const x of [A, B]) { await x.p.click('.navlink[data-go="explorer"]'); await x.p.waitForSelector("#v-explorer:not([hidden])"); await x.p.waitForTimeout(400); await x.p.click('.navlink[data-go="method"]'); await x.p.waitForTimeout(200); await x.p.click('.navlink[data-go="explorer"]'); await x.p.waitForTimeout(400); }
+  const tx = (p) => p.evaluate(() => [...document.querySelectorAll("#v-explorer *")].flatMap((e) => [...e.childNodes].filter((n) => n.nodeType === 3).map((n) => n.data)));
+  ok(JSON.stringify(await tx(A.p)) === JSON.stringify(await tx(B.p)), `${w} px: «Posturas» con los mismos textos que la original tras entrar dos veces`);
+  await A.p.close(); await B.p.close();
+}
+for (const [w, dark] of [[375, false], [1280, true]]) {
+  const res = [];
+  for (const u of [ORIG, NEW]) { const { p } = await open(u, w, dark); await p.click('.navlink[data-go="explorer"]'); await p.waitForTimeout(600); await p.click('.navlink[data-go="home"]'); await p.waitForTimeout(300);
+    await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
+  ok(!res[1].some((v) => v.startsWith("critical")) && res[1].length <= res[0].length, `${w} px ${dark ? "oscuro" : "claro"}: axe en la portada tras visitar «Posturas»: original ${res[0].length ? res[0].join(", ") : "0"} · mejorada ${res[1].length ? res[1].join(", ") : "0"}`);
 }
 await b.close();
 console.log(fails ? `\n${fails} comprobaciones fallan` : "\nTodo OK");

@@ -145,20 +145,28 @@
      lectores de pantalla por ser decorativo. Solo agranda. WCAG 1.4.4, 1.4.12. */
   const SKIP16 = '[aria-hidden="true"], svg, canvas, .logo, .brand, script, style, noscript, .sr';
   const ownText = (el) => { for (const n of el.childNodes) if (n.nodeType === 3 && n.data.trim()) return true; return false; };
+  // Rendimiento: el tamaño se mide una sola vez por «tipo» de elemento (etiqueta y clases del elemento, de su padre y
+  // de su abuelo, dentro de la misma vista) y se reutiliza: elementos del mismo tipo en el mismo sitio tienen el mismo
+  // tamaño. Así, «Posturas de los partidos» (~12 000 elementos) hace unas decenas de medidas en vez de miles.
+  // Primero se mide y después se escribe, para no obligar al navegador a recalcular estilos a cada paso.
+  const sizeCache = new Map();
+  const sig = (el) => { const v = el.closest(".view"); let k = v ? v.id : "-"; for (let e = el, i = 0; e && i < 3; e = e.parentElement, i++) k += "|" + e.tagName + "." + e.className; return k; };
   const floor16 = (root) => {
     const els = root.nodeType === 1 ? [root, ...root.querySelectorAll("*")] : [];
+    const add = [];
     for (const el of els) {
       if (el.classList.contains("m16") || !ownText(el) || el.closest(SKIP16)) continue;
-      const cs = getComputedStyle(el), fs = parseFloat(cs.fontSize);
-      if (fs >= 15.99 || !fs) continue;
-      el.classList.add("m16");
-      const lh = parseFloat(cs.lineHeight); if (lh && lh < 20) el.classList.add("m16lh");
+      const k = sig(el); let r = sizeCache.get(k);
+      if (r === undefined) { const cs = getComputedStyle(el), fs = parseFloat(cs.fontSize), lh = parseFloat(cs.lineHeight); r = fs && fs < 15.99 ? (lh && lh < 20 ? 2 : 1) : 0; if (!el.style.fontSize) sizeCache.set(k, r); }
+      if (r) add.push([el, r === 2]);
     }
+    for (const [el, lh] of add) { el.classList.add("m16"); if (lh) el.classList.add("m16lh"); }
   };
   const roots = [$("#main"), $(".site-foot")].filter(Boolean);
   let pending = new Set(), raf = 0;
-  const flush = () => { raf = 0; const list = [...pending]; pending = new Set(); for (const n of list) if (n.isConnected) floor16(n); };
-  for (const r of roots) { floor16(r); new MutationObserver((ms) => { for (const m of ms) for (const n of m.addedNodes) if (n.nodeType === 1) pending.add(n); else if (n.nodeType === 3 && n.parentElement) pending.add(n.parentElement); if (pending.size && !raf) raf = requestAnimationFrame(flush); }).observe(r, { childList: true, subtree: true }); }
+  // «Posturas de los partidos» (#v-explorer) tiene sus tamaños en mejora.css (reglas fijas): aquí se salta entera.
+  const flush = () => { raf = 0; const list = [...pending]; pending = new Set(); for (const n of list) if (n.isConnected && !n.closest("#v-explorer")) floor16(n); };
+  for (const r of roots) { for (const c of r.children) if (c.id !== "v-explorer") floor16(c); new MutationObserver((ms) => { for (const m of ms) for (const n of m.addedNodes) if (n.nodeType === 1) pending.add(n); else if (n.nodeType === 3 && n.parentElement) pending.add(n.parentElement); if (pending.size && !raf) raf = requestAnimationFrame(flush); }).observe(r, { childList: true, subtree: true }); }
 
   /* MEJORA: un único nivel 1 por vista. En el test y en el último paso el título visible es un <h2>; se marca como
      nivel 1 (aria-level) sin cambiar la etiqueta ni el texto. WCAG 1.3.1, 2.4.6. */
@@ -184,5 +192,21 @@
       const target = h || $("#main"); if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
       target.focus({ preventScroll: true });
     });
+  }
+  /* MEJORA (rendimiento, pedido por el titular): «Posturas de los partidos» se abría con 1–2 s de retraso en el móvil
+     porque papeleta.js vuelve a dibujar las 107 preguntas (≈ 12 000 elementos) cada vez que se entra, aunque nada
+     haya cambiado. Si el listado nuevo es idéntico al que ya está en pantalla, no se vuelve a dibujar; si cambia
+     (filtro de área, partido o búsqueda), se dibuja como siempre. WCAG 2.2.1 (sin esperas innecesarias). */
+  const exRoot = $("#v-explorer");
+  if (exRoot) {
+    const hook = () => {
+      const list = $("#ex-list", exRoot); if (!list || list.dataset.mejoraHook) return;
+      list.dataset.mejoraHook = "1";
+      const d = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
+      let last = null;
+      Object.defineProperty(list, "innerHTML", { configurable: true, get() { return d.get.call(this); }, set(v) { v = String(v); if (v === last) return; last = v; d.set.call(this, v); } });
+    };
+    new MutationObserver(hook).observe(exRoot, { childList: true });
+    hook();
   }
 })();

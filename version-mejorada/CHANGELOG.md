@@ -30,6 +30,10 @@ Versión independiente para probar en local (rama `version-mejorada`). **No modi
 - Microinteracciones discretas, desactivadas con «reducir movimiento». WCAG 2.3.3.
 - «Volver arriba» (texto aprobado el 31 oct). WCAG 2.4.1.
 
+## Ajustes tras las iteraciones (pedidos por el titular, 31 oct)
+- «Volver arriba» también en «Cómo funciona», «Posturas de los partidos» y resultados; aparece al bajar media pantalla.
+- «Posturas de los partidos» sin retraso: con un procesador de móvil simulado, abrir esa vista pasa de ~1 s (original) y ~3,7 s (versión mejorada anterior) a ~0,35–0,4 s. Cómo: el listado no se vuelve a dibujar si no ha cambiado; el mínimo de 16 px de esa vista va en CSS fijo; el navegador solo dibuja las preguntas cercanas a la pantalla; y al salir, la vista se oculta conservando lo calculado (sigue sin verse, sin ocupar sitio, sin foco y fuera del árbol de accesibilidad).
+
 ## Propuestas para el futuro (no hechas, a tu criterio)
 - Llevar estas mejoras a la web real: copiar `assets/mejora.css` y `assets/mejora.js` y enlazarlos tras los originales en `papeleta-29n.html`, pasar todas las baterías (`node qa/run.mjs todas`) y publicar. Recomendado **después del 29N** o antes del 21 nov como muy tarde, para no cambiar la web en plena campaña sin margen.
 - Aplicar el mismo mínimo de 16 px y 48 px a las 230 páginas estáticas (partidos, temas, provincias…).
