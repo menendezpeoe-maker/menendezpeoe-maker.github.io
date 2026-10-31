@@ -61,7 +61,7 @@ console.log("Páginas por candidatura y por tema");
   const { ctx, page } = await newPage();
   const sitemap = await (await fetch(SITE + "sitemap.xml")).text();
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1 + 10 + 1 + 1 + 2 + 53 + 1 + 1 + 7 + 2, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
+  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1 + 10 + 1 + 1 + 2 + 53 + 1 + 1 + 7 + 2 + 1, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
   const paths = locs.map((u) => new URL(u).pathname);
   let bad = [], estOk = true, srcOk = true, canon = true;
   for (const pid of pd.order) {
@@ -81,7 +81,7 @@ console.log("Páginas por candidatura y por tema");
   ok(!bad.length && estOk, `las ${pd.order.length} páginas de partido muestran cada postura tal como está en los datos, con «estimada» o «documentada»${bad.length ? ": " + bad.slice(0, 5).join(", ") : ""}`);
   ok(srcOk, "y enlazan todas sus fuentes");
   ok(canon, "cada página tiene su dirección canónica");
-  for (const [w, path] of [[390, "partidos/vox/"], [390, "temas/justicia-seguridad-y-libertades/"], [1280, "prensa/"], [390, "partidos/"], [390, "temas/"]]) {
+  for (const [w, path] of [[390, "partidos/vox/"], [390, "temas/justicia-seguridad-y-libertades/"], [1280, "prensa/"], [390, "partidos/"], [390, "temas/"], [320, "programas/"], [1280, "programas/"]]) {
     await page.setViewportSize({ width: w, height: 900 });
     await page.goto(SITE + path); await page.waitForSelector("main h1");
     ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) && (await page.locator('a.btn[href="/"]').count()) >= 1, `${path} a ${w} px: sin scroll horizontal y con botón al test`);
@@ -96,7 +96,15 @@ console.log("Páginas por candidatura y por tema");
   ok(t.includes('<a href="https://test29n.es/"') && t.includes("boton-test29n.png") && (await (await fetch(SITE + "boton-test29n.png")).status) === 200, "prensa: código para enlazar el test y botón descargable");
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
   ok(!priv.some((x) => t.toLowerCase().includes(x)) && t.includes("menendezpeoe@gmail.com"), `prensa: contacto público, sin datos privados${priv.length ? "" : " (sin PRIVATE_TERMS: solo se comprueba el contacto)"}`);
+  // Programas electorales: una fila por candidatura que se presenta, con su estado, y enlazada desde cada partido
+  await page.goto(SITE + "programas/");
+  const live = pd.order.filter((pid) => !pd.parties.find((p) => p.id === pid).out);
+  const rows = await page.locator(".pg-list > li").count(), tags = await page.locator(".pg-list .pg-tag").count();
+  ok(rows === live.length && tags === live.length && /comprobado el \d+ de [a-z]+ de 2026/.test(await page.innerText(".pg-sum")), `programas: ${rows} candidaturas, cada una con su estado y la fecha de comprobación`);
+  const pp = await (await fetch(SITE + "partidos/pp/")).text();
+  ok(pp.includes("<dt>Programa del 29N</dt>") && pp.includes('href="/programas/"'), "cada página de partido indica el estado de su programa y enlaza /programas/");
   await page.goto(SITE); await page.waitForSelector("#start-btn:not([disabled])");
+  ok((await page.locator('footer a[href="programas/"]').count()) === 1, "el pie del test enlaza /programas/");
   ok((await page.locator('footer a[href="partidos/"]').count()) === 1 && (await page.locator('footer a[href="prensa/"]').count()) === 1, "el pie del test enlaza las páginas nuevas (para que Google las encuentre)");
   await ctx.close();
 }

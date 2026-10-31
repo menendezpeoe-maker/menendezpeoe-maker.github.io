@@ -6,6 +6,7 @@ import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
+import { PROGRAMAS } from "./src/programas.src.mjs";
 const METH = JSON.parse(readFileSync("src/metodologia.json", "utf8"));
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
@@ -54,6 +55,10 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const errA = (q, pid) => `<a class="err-link" href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
   const whyOf = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
+  // Programa del 29N de cada candidatura (src/programas.src.mjs): enlace oficial o «aún no publicado»
+  const PROG = PROGRAMAS.publicados, progChecked = fmtDate(PROGRAMAS.comprobado);
+  const progReviewed = (pid) => PROG[pid] ? B.questions.filter((q) => q.src?.[pid]?.[0] === PROG[pid].url).length : 0;
+  const progDD = (pid) => PROG[pid] ? `<a href="${esc(PROG[pid].url)}" target="_blank" rel="noopener noreferrer">${esc(PROG[pid].titulo)}</a> (${esc(fmtDate(PROG[pid].fecha))})` : `Aún no publicado (comprobado el ${esc(progChecked)}). <a href="/programas/">Estado de todos los programas</a>`;
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
   <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
@@ -61,7 +66,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -116,7 +121,7 @@ ${footer}
       crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }, { name: p.name, url: `${SITE}partidos/${pid}/` }],
       body: `<header class="sp-head"><div class="phead">${logo(pid)}<div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(p.name)}: qué propone, tema a tema</h1></div></div>
   <p class="lede">${esc(p.desc)}</p>
-  <dl class="sp-facts"><div><dt>Espacio político</dt><dd>${esc(p.tag)}</dd></div>${p.lead ? `<div><dt>Cabeza de cartel</dt><dd>${esc(p.lead)}</dd></div>` : ""}<div><dt>Dónde se presenta</dt><dd>${esc(scopeText(p))}</dd></div>${p.out ? `<div><dt>Estado</dt><dd>${esc(p.out)}</dd></div>` : p.tbd ? '<div><dt>Estado</dt><dd>Candidatura por confirmar en las listas proclamadas</dd></div>' : ""}<div><dt>Posturas en el test</dt><dd>${known.length - nEst} documentadas, ${nEst} estimadas y ${B.questions.length - known.length} sin postura conocida${nSrc ? `; ${nSrc} con fuente enlazada` : ""}</dd></div></dl></header>
+  <dl class="sp-facts"><div><dt>Espacio político</dt><dd>${esc(p.tag)}</dd></div>${p.lead ? `<div><dt>Cabeza de cartel</dt><dd>${esc(p.lead)}</dd></div>` : ""}<div><dt>Dónde se presenta</dt><dd>${esc(scopeText(p))}</dd></div>${p.out ? `<div><dt>Estado</dt><dd>${esc(p.out)}</dd></div>` : p.tbd ? '<div><dt>Estado</dt><dd>Candidatura por confirmar en las listas proclamadas</dd></div>' : ""}<div><dt>Programa del 29N</dt><dd>${progDD(pid)}</dd></div><div><dt>Posturas en el test</dt><dd>${known.length - nEst} documentadas, ${nEst} estimadas y ${B.questions.length - known.length} sin postura conocida${nSrc ? `; ${nSrc} con fuente enlazada` : ""}</dd></div></dl></header>
 ${p.out ? "" : cta(`¿Cuánto coincides con ${esc(p.ab)}?`)}
 <section aria-labelledby="h-props"><h2 class="h2" id="h-props">Propuestas destacadas</h2><ul class="dots">${p.props.map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></section>
 <section aria-labelledby="h-dims"><h2 class="h2" id="h-dims">Su posición en siete dimensiones</h2><p class="small muted">Media de sus posturas en las preguntas de cada dimensión, de −100 a +100. Las estimadas pesan menos.</p><div class="sp-dims">${dimRows}</div></section>
@@ -528,10 +533,29 @@ ${cta("Pon a prueba tus ideas")}`
     desc: `Qué proponen las ${live.length} candidaturas de las elecciones generales del 29 de noviembre de 2026 en vivienda, impuestos, inmigración, sanidad y otros temas, con fuentes.`,
     crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Las candidaturas y sus posturas</h1>
-  <p class="lede">Qué piensa cada candidatura sobre las ${B.questions.length} cuestiones del Test 29N, con sus propuestas destacadas y las fuentes de sus posturas.</p></header>
+  <p class="lede">Qué piensa cada candidatura sobre las ${B.questions.length} cuestiones del Test 29N, con sus propuestas destacadas y las fuentes de sus posturas. ¿Han publicado ya su programa? Consulta los <a href="/programas/">programas electorales del 29N</a>.</p></header>
 ${cta("¿Con cuál coincides más?")}
 <ul class="sp-cards">${live.map((pid) => { const p = P[pid]; return `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(p.tag)} · ${esc(scopeText(p))}</span></span></a></li>`; }).join("")}</ul>
 ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que no se presentan: ${PD.order.filter((pid) => P[pid].out).map((pid) => `<a href="/partidos/${pid}/">${esc(P[pid].name)}</a>`).join(", ")}.</p>` : ""}`
+  });
+  // ── Programas electorales del 29N: estado de cada candidatura, con enlace oficial cuando existe
+  const nPub = live.filter((pid) => PROG[pid]).length;
+  const progRow = (pid) => { const p = P[pid], pub = PROG[pid], noList = PROGRAMAS.sinLista.includes(pid);
+    return `<li><a class="pg-party" href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(scopeText(p))}</span></span></a><div class="pg-st">${pub
+      ? `<span class="pg-tag ok">Publicado</span><span class="small"><a href="${esc(pub.url)}" target="_blank" rel="noopener noreferrer">${esc(pub.titulo)}</a>, ${esc(fmtDate(pub.fecha))}. ${progReviewed(pid)} posturas del test revisadas con él.</span>`
+      : `<span class="pg-tag">Aún no publicado</span>${noList ? `<span class="small">No figura en las listas provisionales del Congreso (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">BOE del 28 de octubre</a>).</span>` : `<span class="small"><a href="/partidos/${pid}/">Ver sus posturas actuales</a></span>`}`}</div></li>`; };
+  page({
+    path: "/programas/",
+    title: "Programas electorales del 29N: cuáles se han publicado · Test 29N",
+    desc: `Estado del programa electoral de cada candidatura a las elecciones generales del 29 de noviembre de 2026: ${nPub ? `${nPub} publicados` : "ninguno publicado aún"}, con el enlace oficial y las posturas revisadas con él. Comprobado el ${progChecked}.`,
+    crumbs: [{ name: "Programas electorales", url: `${SITE}programas/` }],
+    ld: { "@context": "https://schema.org", "@type": "ItemList", name: "Programas electorales del 29N", itemListElement: live.map((pid, i) => ({ "@type": "ListItem", position: i + 1, name: `Programa electoral de ${P[pid].name}`, url: PROG[pid]?.url || `${SITE}partidos/${pid}/` })) },
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Programas electorales del 29N</h1>
+  <p class="lede">Qué candidaturas han publicado ya su programa para el 29N, con el enlace oficial. Cuando sale uno, revisamos con él las posturas de ese partido en el test. Hasta entonces, sus posturas salen de sus votaciones, declaraciones y documentos anteriores, con la fuente enlazada cuando la hay.</p></header>
+<p class="pg-sum"><b>${nPub} de ${live.length}</b> candidaturas han publicado su programa · comprobado el ${esc(progChecked)}</p>
+<ul class="pg-list">${[...live.filter((pid) => PROG[pid]), ...live.filter((pid) => !PROG[pid])].map(progRow).join("")}</ul>
+<p class="small muted">Solo enlazamos el programa publicado por el propio partido, en su web o en PDF. Los partidos suelen publicarlo en las semanas previas a la campaña (del 13 al 27 de noviembre). Esta página se revisa varias veces por semana hasta el 21 de noviembre.</p>
+${cta("Compara tus ideas con las de cada candidatura")}`
   });
   page({
     path: "/temas/",

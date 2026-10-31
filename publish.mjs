@@ -61,7 +61,7 @@ const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
   .replace(/<span id="foot-version">[^<]*<\/span>/, `<span id="foot-version">Preguntas y posturas actualizadas el ${fmtDateEs(JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated)}</span>`)
-  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="comparar/">Comparar partidos</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="metodologia/">Metodología</a> · <a href="sobre/">Sobre el proyecto</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
+  .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="programas/">Programas</a> · <a href="comparar/">Comparar partidos</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="metodologia/">Metodología</a> · <a href="sobre/">Sobre el proyecto</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
   .trim();
 if (!body.includes('href="prensa/"')) throw new Error("No se pudieron añadir los enlaces del pie");
 const csp = [
