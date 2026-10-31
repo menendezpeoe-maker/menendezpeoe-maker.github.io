@@ -36,6 +36,8 @@ Versión independiente para probar en local (rama `version-mejorada`). **No modi
 
 - Resumen de resultados compacto en el móvil (≤ 560 px): con la letra de 16 px, «Compartir» y «Reta a un amigo» salían de la primera pantalla (911 px frente a 844 px). Se recupera la altura sin reducir la letra ni ocultar nada: porcentaje y explicación lado a lado, etiquetas de la papeleta en minúscula, listas «coincidís/chocáis» en dos columnas (desde 360 px) y márgenes más ajustados. Vuelven a quedar a la misma altura que en la original.
 
+- Botones del resumen («Compartir», «Reta a un amigo», «Repetir el test», «Donar») en una cuadrícula de 2 × 2 con baldosas iguales (54 px, icono decorativo encima del texto): arriba las acciones principales; abajo las secundarias, más discretas. Mismos textos.
+
 ## Integración en la web (rama `integracion-mejora`)
 - `assets/mejora.css` y `assets/mejora.js` se enlazan solo en la página del test (no en las páginas estáticas), con versión en la URL. `publish.mjs` los publica sin comentarios (49 kB → 29 kB).
 - Baterías de la web: 21/21 en local sin cambiar ninguna prueba existente; e2e, onboarding, summary, audit, quick y sections también contra la versión publicable.
