@@ -154,7 +154,7 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
 }
 
 // ═══ ITERACIÓN 3 · Barra de progreso, avance automático, provincia y avisos
-const APROBADOS = ["Respuesta guardada", "Pasar de pregunta automáticamente"];
+const APROBADOS = ["Respuesta guardada", "Pasar de pregunta automáticamente", "Buscar provincia"];
 const newTexts = (p) => p.evaluate(() => [...document.querySelectorAll("[data-mejora]")].map((e) => e.textContent.trim()).filter(Boolean));
 const answerAll = async (p) => { for (let i = 0; i < 40 && !(await p.isVisible("#v-prios")); i++) { await p.focus("#q-stmt").catch(() => {}); await p.keyboard.press("4"); await p.waitForTimeout(260); } await p.waitForSelector("#v-prios:not([hidden])"); };
 console.log("Iteración 3 · P2 en la barra del test y en «Antes de ver tus resultados» (los textos nuevos aprobados van aparte)");
@@ -167,7 +167,7 @@ for (const [w, dark] of [[375, false], [1280, true]]) {
   ok(JSON.stringify(ta) === JSON.stringify(tb), `${w} px ${dark ? "oscuro" : "claro"}, último paso: ${ta.rest.length + ta.ctx.length} nodos de texto originales idénticos (el panel de contexto, aparte por su nueva posición)`);
   const extra = await newTexts(B.p);
   ok(extra.every((t) => APROBADOS.includes(t)), `${w} px: solo aparecen textos nuevos aprobados (${[...new Set(extra)].join(" · ") || "ninguno visible aquí"})`);
-  ok(!(await B.p.$("#prov-q")), `${w} px: el buscador de provincia NO aparece hasta que se aprueben sus textos`);
+  ok(!!(await B.p.$("#prov-q")), `${w} px: el buscador de provincia aparece (textos aprobados el 31 oct)`);
   await A.p.close(); await B.p.close();
 }
 
@@ -212,10 +212,9 @@ for (const w of [375, 1280]) {
   await p.close();
 }
 
-console.log("Iteración 3 · Propuesta del buscador de provincia (solo para capturas: textos sin aprobar)");
+console.log("Iteración 3 · Buscador de provincia (textos aprobados)");
 for (const w of [375, 1280]) {
   const p = await b.newPage({ viewport: { width: w, height: 900 }, reducedMotion: "reduce" });
-  await p.addInitScript(() => { window.__MEJORA_PROPUESTA = true; });
   await p.goto(NEW); await p.waitForSelector("#start-btn:not([disabled])"); await startQuiz(p); await answerAll(p);
   await p.fill("#prov-q", "sevi"); await p.waitForTimeout(100);
   ok((await p.inputValue("#f-prov")) === "sevilla" && (await p.textContent("#prov-q-st")) === "1 provincia coincide", `${w} px: «sevi» → elige Sevilla y lo anuncia`);
@@ -225,7 +224,7 @@ for (const w of [375, 1280]) {
   await p.fill("#prov-q", "zzz"); await p.waitForTimeout(100);
   ok((await p.textContent("#prov-q-st")).startsWith("Ninguna"), `${w} px: sin coincidencias, lo dice`);
   await p.fill("#prov-q", "le"); await p.waitForTimeout(100);
-  if (SHOTS) await p.screenshot({ path: `${SHOTS}/propuesta-buscador-${w}.png`, fullPage: true });
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/nueva-buscador-${w}.png`, fullPage: true });
   await p.close();
 }
 
@@ -236,6 +235,89 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
     await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
   const [o, n] = res;
   ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}, último paso con error: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
+}
+
+// ═══ ITERACIÓN 4 · Resultados, encabezados, «Volver arriba» y repaso final
+const toResults = async (p) => { await startQuiz(p); await answerAll(p); await p.selectOption("#f-prov", "madrid"); await p.click("#prio-skip"); await p.waitForSelector("#v-results:not([hidden])"); await p.waitForTimeout(500);
+  const full = await p.$("text=Ver el análisis completo"); if (full) { await full.click(); await p.waitForTimeout(900); }
+  await p.evaluate(() => document.querySelectorAll("#v-results details").forEach((d) => { d.open = true; })); await p.waitForTimeout(300); };
+console.log("Iteración 4 · P2 en resultados completos (todos los desplegables abiertos)");
+for (const [w, dark] of [[375, false], [1280, true]]) {
+  const A = await open(ORIG, w, dark), B = await open(NEW, w, dark);
+  for (const x of [A, B]) await toResults(x.p);
+  const all = (p) => p.evaluate(() => { const get = (root, skip) => { const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora]") || (skip && el.closest("#ctx"))) continue; out.push(n.data); } return out; };
+    return { rest: get(document.documentElement, true), ctx: get(document.querySelector("#ctx"), false) }; });
+  const [ta, tb] = [await all(A.p), await all(B.p)];
+  const same = JSON.stringify(ta) === JSON.stringify(tb);
+  if (!same) { const i = ta.rest.findIndex((t, k) => t !== tb.rest[k]); console.log("    primera diferencia:", JSON.stringify(ta.rest[i]), "→", JSON.stringify(tb.rest[i])); }
+  ok(same, `${w} px ${dark ? "oscuro" : "claro"}: ${ta.rest.length + ta.ctx.length} nodos de texto idénticos en resultados`);
+  // Ningún texto queda recortado (puntos suspensivos o líneas limitadas) que no lo estuviera en la original
+  const cut = (p) => p.evaluate(() => [...document.querySelectorAll("#v-results *")].filter((e) => { const cs = getComputedStyle(e); return e.checkVisibility() && (cs.textOverflow === "ellipsis" || cs.webkitLineClamp !== "none") && (e.scrollWidth > e.clientWidth + 1 || e.scrollHeight > e.clientHeight + 1); }).map((e) => e.textContent.trim().slice(0, 30)));
+  const [ca, cb] = [await cut(A.p), await cut(B.p)];
+  const newly = cb.filter((t) => !ca.includes(t));
+  ok(!newly.length, `${w} px: ningún texto queda recortado por el tamaño mayor${newly.length ? ": " + newly.slice(0, 3).join(" | ") : ""}`);
+  await A.p.close(); await B.p.close();
+}
+
+console.log("Iteración 4 · Resultados completos en todas las anchuras: sin scroll horizontal, texto ≥ 16 px, controles ≥ 48 px");
+for (const w of WIDTHS) {
+  const { p, errs } = await open(NEW, w); await toResults(p);
+  const r = await p.evaluate(() => {
+    const vis = (e) => e.checkVisibility() && e.getBoundingClientRect().width > 0;
+    const own = (e) => [...e.childNodes].some((n) => n.nodeType === 3 && n.data.trim());
+    const tiny = [...document.querySelectorAll("#v-results *, .site-foot *")].filter((e) => vis(e) && own(e) && !e.closest('[aria-hidden="true"], svg, canvas, .logo, .sr') && parseFloat(getComputedStyle(e).fontSize) < 15.99).map((e) => e.tagName + "." + String(e.className).split(" ")[0]);
+    const small = [...document.querySelectorAll("#v-results :is(button, summary, select, .btn, .link-btn)")].filter((e) => vis(e) && e.getBoundingClientRect().width > 2 && getComputedStyle(e).display !== "inline" && e.getBoundingClientRect().height < 47.5).map((e) => e.tagName + "." + String(e.className).split(" ")[0]);
+    return { hs: document.documentElement.scrollWidth > innerWidth + 1, tiny: [...new Set(tiny)], ntiny: tiny.length, small: [...new Set(small)], nsmall: small.length };
+  });
+  ok(!r.hs && !r.ntiny && !r.nsmall && !errs.length, `${w} px: sin scroll horizontal · texto ≥ 16 px${r.ntiny ? ` (fallan ${r.ntiny}: ${r.tiny.slice(0, 4).join(", ")})` : ""} · controles ≥ 48 px${r.nsmall ? ` (fallan ${r.nsmall}: ${r.small.slice(0, 4).join(", ")})` : ""}${errs.length ? " · error JS: " + errs[0] : ""}`);
+  if (SHOTS && [375, 1280].includes(w)) await p.screenshot({ path: `${SHOTS}/nueva-resultados-${w}.png`, fullPage: true });
+  await p.close();
+}
+if (SHOTS) for (const w of [375, 1280]) { const { p } = await open(ORIG, w); await toResults(p); await p.screenshot({ path: `${SHOTS}/original-resultados-${w}.png`, fullPage: true }); await p.close(); }
+
+console.log("Iteración 4 · Encabezados: un solo nivel 1 por vista y sin saltos");
+for (const w of [375, 1280]) {
+  const { p } = await open(NEW, w);
+  const lv = () => p.evaluate(() => { const hs = [...document.querySelectorAll("h1,h2,h3,h4,h5,h6,[role=heading]")].filter((h) => h.checkVisibility()).map((h) => Number(h.getAttribute("aria-level")) || Number(h.tagName[1]));
+    let jump = false; for (let i = 1; i < hs.length; i++) if (hs[i] > hs[i - 1] + 1) jump = true; return { ones: hs.filter((x) => x === 1).length, first: hs[0], jump }; });
+  const res = {};
+  res.portada = await lv(); await startQuiz(p); res.test = await lv(); await answerAll(p); res["último paso"] = await lv();
+  await p.selectOption("#f-prov", "madrid"); await p.click("#prio-skip"); await p.waitForSelector("#v-results:not([hidden])"); await p.waitForTimeout(400);
+  const full = await p.$("text=Ver el análisis completo"); if (full) { await full.click(); await p.waitForTimeout(700); }
+  res.resultados = await lv();
+  ok(Object.values(res).every((x) => x.ones === 1 && x.first === 1 && !x.jump), `${w} px: ${Object.entries(res).map(([k, x]) => `${k}: ${x.ones} de nivel 1${x.jump ? ", con salto" : ""}`).join(" · ")}`);
+  await p.close();
+}
+
+console.log("Iteración 4 · «Volver arriba»");
+{
+  const { p } = await open(NEW, 375); await toResults(p);
+  ok(!(await p.$(".to-top")), "sin aprobar su texto, el botón no existe en la entrega");
+  await p.close();
+  for (const w of [375, 1280]) {
+    const q = await b.newPage({ viewport: { width: w, height: 800 }, reducedMotion: "reduce" });
+    await q.addInitScript(() => { window.__MEJORA_PROPUESTA = true; });
+    await q.goto(NEW); await q.waitForSelector("#start-btn:not([disabled])");
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px (propuesta): arriba del todo no se ve`);
+    await q.evaluate(() => scrollTo(0, innerHeight * 1.5)); await q.waitForTimeout(150);
+    const bx = await q.$eval(".to-top", (e) => { const r = e.getBoundingClientRect(); return { on: e.classList.contains("on"), w: r.width, h: r.height, inView: r.bottom <= innerHeight && r.right <= innerWidth }; });
+    ok(bx.on && bx.w >= 48 && bx.h >= 48 && bx.inView, `${w} px (propuesta): tras una pantalla aparece, ${Math.round(bx.w)}×${Math.round(bx.h)} px, dentro de la pantalla`);
+    await q.click(".to-top"); await q.waitForTimeout(150);
+    ok((await q.evaluate(() => scrollY)) === 0 && (await q.evaluate(() => document.activeElement.id === "home-h")), `${w} px (propuesta): lleva arriba y deja el foco en el título`);
+    await startQuiz(q); await q.evaluate(() => scrollTo(0, 2000)); await q.waitForTimeout(150);
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px (propuesta): no aparece durante el test (no tapa «Siguiente»)`);
+    if (SHOTS) { await toResults(q).catch(() => {}); }
+    await q.close();
+  }
+}
+
+console.log("Iteración 4 · axe-core en resultados completos");
+for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]) {
+  const res = [];
+  for (const u of [ORIG, NEW]) { const { p } = await open(u, w, dark); await toResults(p);
+    await p.addScriptTag({ content: axe }); res.push(await p.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"] })).violations.map((v) => `${v.impact}:${v.id}(${v.nodes.length})`))); await p.close(); }
+  const [o, n] = res;
+  ok(!n.some((v) => v.startsWith("critical")) && n.length <= o.length, `${w} px ${dark ? "oscuro" : "claro"}: original ${o.length ? o.join(", ") : "0"} · mejorada ${n.length ? n.join(", ") : "0"}`);
 }
 await b.close();
 console.log(fails ? `\n${fails} comprobaciones fallan` : "\nTodo OK");

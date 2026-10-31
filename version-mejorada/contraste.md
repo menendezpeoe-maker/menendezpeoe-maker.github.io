@@ -74,3 +74,21 @@ Calculado con la fórmula de luminancia relativa de WCAG. Texto normal: mínimo 
 | Oscuro | Interruptor encendido: bolita (--paper) / fondo (--ink) | `#0E1014` | `#EDEEF0` | 16.40:1 | 3.0:1 | ✅ (corregido: con --mark daba 1,27:1) |
 | Oscuro | Interruptor encendido: fondo (--ink) / papel | `#EDEEF0` | `#0E1014` | 16.40:1 | 3.0:1 | ✅ |
 | Oscuro | Provincia con error: borde (--ko) / campo | `#F07B6E` | `#1C2027` | 6.04:1 | 3.0:1 | ✅ |
+
+## Iteración 4 · Resultados, «Volver arriba» y repaso final
+
+| Modo | Par | Primer plano | Fondo | Ratio | Mínimo | Resultado |
+|---|---|---|---|---|---|---|
+| Claro | «Volver arriba»: flecha (--paper) / botón (--ink) | `#F2F3EE` | `#111318` | 16.66:1 | 3.0:1 | ✅ |
+| Claro | «Volver arriba»: botón (--ink) / papel | `#111318` | `#F2F3EE` | 16.66:1 | 3.0:1 | ✅ |
+| Claro | «Volver arriba»: foco (--ink) / papel (antes --mark: 1,10:1, corregido) | `#111318` | `#F2F3EE` | 16.66:1 | 3.0:1 | ✅ |
+| Oscuro | «Volver arriba»: flecha (--paper) / botón (--ink) | `#0E1014` | `#EDEEF0` | 16.40:1 | 3.0:1 | ✅ |
+| Oscuro | «Volver arriba»: botón (--ink) / papel | `#EDEEF0` | `#0E1014` | 16.40:1 | 3.0:1 | ✅ |
+| Claro | Rótulo «Secciones» (--ink-2) / botón (--sheet) | `#434955` | `#FFFFFF` | 9.04:1 | 4.5:1 | ✅ |
+| Claro | Textos secundarios de resultados (--ink-3) / papel | `#676D79` | `#F2F3EE` | 4.66:1 | 4.5:1 | ✅ |
+| Claro | Textos secundarios de resultados (--ink-3) / tarjeta | `#676D79` | `#FFFFFF` | 5.20:1 | 4.5:1 | ✅ |
+| Claro | «Coincidís» (--ok) / tarjeta | `#1D7A3A` | `#FFFFFF` | 5.39:1 | 4.5:1 | ✅ |
+| Claro | «Chocáis» (--ko) / tarjeta | `#B3261E` | `#FFFFFF` | 6.54:1 | 4.5:1 | ✅ |
+| Oscuro | Textos secundarios de resultados (--ink-3) / tarjeta | `#8E94A1` | `#171A20` | 5.73:1 | 4.5:1 | ✅ |
+| Oscuro | «Coincidís» (--ok) / tarjeta | `#5CC27A` | `#171A20` | 7.84:1 | 4.5:1 | ✅ |
+| Oscuro | «Chocáis» (--ko) / tarjeta | `#F07B6E` | `#171A20` | 6.44:1 | 4.5:1 | ✅ |

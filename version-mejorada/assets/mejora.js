@@ -2,6 +2,7 @@
 // Iteración 1: barra decorativa de duración en cada versión (formulario y banner móvil).
 // Iteración 2: «Más contexto» como acordeón (panel bajo su botón, foco en el botón).
 // Iteración 3: avisos aria-live, avance automático opcional, barra de progreso y provincia con buscador.
+// Iteración 4: mínimo de 16 px, jerarquía de encabezados, «Volver arriba».
 (() => {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -51,9 +52,10 @@
   const T = {
     respuestaGuardada: "Respuesta guardada",                   // aprobado el 31 oct
     autoAvance: "Pasar de pregunta automáticamente",           // aprobado el 31 oct
-    buscarProvincia: PROPUESTA ? "Buscar provincia" : "",      // pendiente
-    nCoinciden: PROPUESTA ? (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`) : null,          // pendiente
-    ningunaCoincide: PROPUESTA ? "Ninguna provincia coincide con la búsqueda" : "",  // pendiente
+    buscarProvincia: "Buscar provincia",                        // aprobado el 31 oct
+    nCoinciden: (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`),   // aprobado el 31 oct
+    ningunaCoincide: "Ninguna provincia coincide con la búsqueda",  // aprobado el 31 oct
+    volverArriba: PROPUESTA ? "Volver arriba" : "",             // pendiente
   };
   const store = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } } };
   const quizView = $("#v-quiz");
@@ -133,6 +135,51 @@
       for (const g of provSel.querySelectorAll("optgroup")) g.hidden = ![...g.children].some((o) => !o.hidden);
       st.textContent = !t ? "" : hits.length ? T.nCoinciden(hits.length) : T.ningunaCoincide;
       if (t && hits.length === 1 && provSel.value !== hits[0].value) { provSel.value = hits[0].value; provSel.dispatchEvent(new Event("change", { bubbles: true })); }
+    });
+  }
+  /* ═══ ITERACIÓN 4 ═══════════════════════════════════════════════════════════════════════ */
+
+  /* MEJORA: suelo de 16 px. Cada elemento con texto propio y tamaño calculado < 16 px recibe .m16 (y .m16lh si su
+     interlineado fijo quedaría estrecho). Se aplica al cargar y a todo lo que papeleta.js pinte después
+     (resultados, comparador, revisar…). Excluidos: logotipos de partido, gráficos SVG/canvas y lo oculto a
+     lectores de pantalla por ser decorativo. Solo agranda. WCAG 1.4.4, 1.4.12. */
+  const SKIP16 = '[aria-hidden="true"], svg, canvas, .logo, .brand, script, style, noscript, .sr';
+  const ownText = (el) => { for (const n of el.childNodes) if (n.nodeType === 3 && n.data.trim()) return true; return false; };
+  const floor16 = (root) => {
+    const els = root.nodeType === 1 ? [root, ...root.querySelectorAll("*")] : [];
+    for (const el of els) {
+      if (el.classList.contains("m16") || !ownText(el) || el.closest(SKIP16)) continue;
+      const cs = getComputedStyle(el), fs = parseFloat(cs.fontSize);
+      if (fs >= 15.99 || !fs) continue;
+      el.classList.add("m16");
+      const lh = parseFloat(cs.lineHeight); if (lh && lh < 20) el.classList.add("m16lh");
+    }
+  };
+  const roots = [$("#main"), $(".site-foot")].filter(Boolean);
+  let pending = new Set(), raf = 0;
+  const flush = () => { raf = 0; const list = [...pending]; pending = new Set(); for (const n of list) if (n.isConnected) floor16(n); };
+  for (const r of roots) { floor16(r); new MutationObserver((ms) => { for (const m of ms) for (const n of m.addedNodes) if (n.nodeType === 1) pending.add(n); else if (n.nodeType === 3 && n.parentElement) pending.add(n.parentElement); if (pending.size && !raf) raf = requestAnimationFrame(flush); }).observe(r, { childList: true, subtree: true }); }
+
+  /* MEJORA: un único nivel 1 por vista. En el test y en el último paso el título visible es un <h2>; se marca como
+     nivel 1 (aria-level) sin cambiar la etiqueta ni el texto. WCAG 1.3.1, 2.4.6. */
+  const lvl1 = () => { for (const h of [$("#q-stmt"), $("#prios-h")]) if (h && h.getAttribute("aria-level") !== "1") h.setAttribute("aria-level", "1"); };
+  lvl1(); if (qMain) new MutationObserver(lvl1).observe(qMain, { childList: true });
+
+  /* MEJORA (pendiente de aprobar su texto): «Volver arriba», flotante, tras una pantalla de desplazamiento, solo en
+     la portada y en resultados. Lleva arriba y deja el foco en el título de la vista (o en el contenido). WCAG 2.4.1, 2.5.8. */
+  if (T.volverArriba) {
+    const btn = document.createElement("button"); btn.type = "button"; btn.className = "to-top"; btn.dataset.mejora = "texto-nuevo"; btn.setAttribute("aria-label", T.volverArriba); btn.tabIndex = -1;
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    document.body.append(btn);
+    const where = () => { const v = $$(".view").find((x) => !x.hidden); return v ? v.id : ""; };
+    const upd = () => { const on = scrollY > innerHeight && ["v-home", "v-results"].includes(where()); btn.classList.toggle("on", on); btn.tabIndex = on ? 0 : -1; btn.setAttribute("aria-hidden", String(!on)); };
+    addEventListener("scroll", upd, { passive: true }); addEventListener("resize", upd); upd();
+    btn.addEventListener("click", () => {
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      const v = $(`#${where()}`), h = v && (v.querySelector("h1") || v.querySelector("h2"));
+      const target = h || $("#main"); if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
     });
   }
 })();
