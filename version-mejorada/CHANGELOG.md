@@ -4,7 +4,7 @@ Versión independiente para probar en local (rama `version-mejorada`). **No modi
 
 ## Confirmación de contenido
 **Ningún texto, dato, pregunta, opción, área, provincia, resultado ni mensaje existente ha sido modificado, ni en móvil ni en escritorio.** Comprobado automáticamente, nodo a nodo y carácter a carácter, en portada, test (preguntas normales, dilemas, contexto abierto), último paso y resultados completos (4 161 nodos), en claro y oscuro, a 375 y 1280 px.
-- Textos nuevos: solo los aprobados por el titular (5) y uno pendiente («Volver arriba»), ver `textos-nuevos-ui.md`.
+- Textos nuevos: solo los 6 aprobados por el titular, ver `textos-nuevos-ui.md`.
 - Único cambio estructural, aprobado: el panel de «Más contexto» (mismo nodo, mismos textos) se coloca justo debajo de su botón.
 - Solo presentación (sin cambiar el texto): mayor tamaño de letra, el rótulo «Secciones» en minúscula y menos espaciado entre letras en etiquetas en mayúsculas.
 
@@ -28,7 +28,7 @@ Versión independiente para probar en local (rama `version-mejorada`). **No modi
 - Mínimo de 16 px en toda la página; controles de resultados a 48 px; barras de dimensiones sin «…»; menú «Secciones» a 16 px. WCAG 1.4.4, 1.4.12, 2.5.8.
 - Un nivel 1 por vista sin saltos (`aria-level`). WCAG 1.3.1.
 - Microinteracciones discretas, desactivadas con «reducir movimiento». WCAG 2.3.3.
-- «Volver arriba» (hecho y probado, pendiente de aprobar su texto). WCAG 2.4.1.
+- «Volver arriba» (texto aprobado el 31 oct). WCAG 2.4.1.
 
 ## Propuestas para el futuro (no hechas, a tu criterio)
 - Llevar estas mejoras a la web real: copiar `assets/mejora.css` y `assets/mejora.js` y enlazarlos tras los originales en `papeleta-29n.html`, pasar todas las baterías (`node qa/run.mjs todas`) y publicar. Recomendado **después del 29N** o antes del 21 nov como muy tarde, para no cambiar la web en plena campaña sin margen.

@@ -26,4 +26,4 @@ Móvil: 320, 375 y 414 px. Escritorio: 1024, 1280, 1440 y 1920 px (y 640/768 com
 | 20 | Controles de resultados a 48 px | 4 | ✅ | ✅ |
 | 21 | Un nivel 1 por vista, sin saltos | 4 | ✅ | ✅ |
 | 22 | Microinteracciones | 4 | ✅ (sin «encima» en táctil) | ✅ |
-| 23 | «Volver arriba» | 4 | ⚠️ espera aprobación de su texto | ⚠️ ídem |
+| 23 | «Volver arriba» | 4 | ✅ | ✅ |

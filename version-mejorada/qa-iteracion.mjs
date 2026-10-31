@@ -17,7 +17,7 @@ const open = async (url, w, dark = false) => {
 // Todos los nodos de texto fuera de <script>/<style>, tal cual (sin normalizar espacios), y si se ven
 const texts = (p) => p.evaluate(() => { const out = [], w = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT); let n;
   while ((n = w.nextNode())) { const el = n.parentElement; if (!el || el.closest("script,style,noscript,[data-mejora]")) continue; out.push([n.data, el.checkVisibility ? el.checkVisibility({ visibilityProperty: true, opacityProperty: false }) : true]); } return out; });
-const attrsOf = (p) => p.evaluate(() => [...document.querySelectorAll("[alt],[title],[placeholder],[aria-label],[value]")].map((e) => ["alt", "title", "placeholder", "aria-label", "value"].map((a) => e.getAttribute(a)).join("|")));
+const attrsOf = (p) => p.evaluate(() => [...document.querySelectorAll("[alt],[title],[placeholder],[aria-label],[value]")].filter((e) => !e.closest("[data-mejora]")).map((e) => ["alt", "title", "placeholder", "aria-label", "value"].map((a) => e.getAttribute(a)).join("|")));
 
 console.log("P2 · textos idénticos nodo a nodo (móvil y escritorio, claro y oscuro, con el selector del banner abierto en móvil)");
 for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]) {
@@ -154,7 +154,7 @@ for (const [w, dark] of [[375, false], [375, true], [1280, false], [1280, true]]
 }
 
 // ═══ ITERACIÓN 3 · Barra de progreso, avance automático, provincia y avisos
-const APROBADOS = ["Respuesta guardada", "Pasar de pregunta automáticamente", "Buscar provincia"];
+const APROBADOS = ["Respuesta guardada", "Pasar de pregunta automáticamente", "Buscar provincia"];  // «Volver arriba» es aria-label, sin texto visible
 const newTexts = (p) => p.evaluate(() => [...document.querySelectorAll("[data-mejora]")].map((e) => e.textContent.trim()).filter(Boolean));
 const answerAll = async (p) => { for (let i = 0; i < 40 && !(await p.isVisible("#v-prios")); i++) { await p.focus("#q-stmt").catch(() => {}); await p.keyboard.press("4"); await p.waitForTimeout(260); } await p.waitForSelector("#v-prios:not([hidden])"); };
 console.log("Iteración 3 · P2 en la barra del test y en «Antes de ver tus resultados» (los textos nuevos aprobados van aparte)");
@@ -292,20 +292,20 @@ for (const w of [375, 1280]) {
 console.log("Iteración 4 · «Volver arriba»");
 {
   const { p } = await open(NEW, 375); await toResults(p);
-  ok(!(await p.$(".to-top")), "sin aprobar su texto, el botón no existe en la entrega");
+  ok((await p.getAttribute(".to-top", "aria-label")) === "Volver arriba", "el botón está en la entrega, con su nombre aprobado");
   await p.close();
   for (const w of [375, 1280]) {
     const q = await b.newPage({ viewport: { width: w, height: 800 }, reducedMotion: "reduce" });
     await q.addInitScript(() => { window.__MEJORA_PROPUESTA = true; });
     await q.goto(NEW); await q.waitForSelector("#start-btn:not([disabled])");
-    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px (propuesta): arriba del todo no se ve`);
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px : arriba del todo no se ve`);
     await q.evaluate(() => scrollTo(0, innerHeight * 1.5)); await q.waitForTimeout(150);
     const bx = await q.$eval(".to-top", (e) => { const r = e.getBoundingClientRect(); return { on: e.classList.contains("on"), w: r.width, h: r.height, inView: r.bottom <= innerHeight && r.right <= innerWidth }; });
-    ok(bx.on && bx.w >= 48 && bx.h >= 48 && bx.inView, `${w} px (propuesta): tras una pantalla aparece, ${Math.round(bx.w)}×${Math.round(bx.h)} px, dentro de la pantalla`);
+    ok(bx.on && bx.w >= 48 && bx.h >= 48 && bx.inView, `${w} px : tras una pantalla aparece, ${Math.round(bx.w)}×${Math.round(bx.h)} px, dentro de la pantalla`);
     await q.click(".to-top"); await q.waitForTimeout(150);
-    ok((await q.evaluate(() => scrollY)) === 0 && (await q.evaluate(() => document.activeElement.id === "home-h")), `${w} px (propuesta): lleva arriba y deja el foco en el título`);
+    ok((await q.evaluate(() => scrollY)) === 0 && (await q.evaluate(() => document.activeElement.id === "home-h")), `${w} px : lleva arriba y deja el foco en el título`);
     await startQuiz(q); await q.evaluate(() => scrollTo(0, 2000)); await q.waitForTimeout(150);
-    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px (propuesta): no aparece durante el test (no tapa «Siguiente»)`);
+    ok(!(await q.$eval(".to-top", (e) => e.classList.contains("on"))), `${w} px : no aparece durante el test (no tapa «Siguiente»)`);
     if (SHOTS) { await toResults(q).catch(() => {}); }
     await q.close();
   }

@@ -4198,7 +4198,7 @@ boot();
     buscarProvincia: "Buscar provincia",                        // aprobado el 31 oct
     nCoinciden: (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`),   // aprobado el 31 oct
     ningunaCoincide: "Ninguna provincia coincide con la búsqueda",  // aprobado el 31 oct
-    volverArriba: PROPUESTA ? "Volver arriba" : "",             // pendiente
+    volverArriba: "Volver arriba",                              // aprobado el 31 oct
   };
   const store = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } } };
   const quizView = $("#v-quiz");
