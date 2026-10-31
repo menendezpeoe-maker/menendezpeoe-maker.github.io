@@ -23,7 +23,7 @@
 - Diseño aprobado por el titular (no revertir sin preguntar): ver regla 5 de `PLAN.md`.
 
 **Pruebas (31 oct)**
-- Local: 21/21 baterías OK. Web real: ver entrada de R1.
+- Local y web real (https://test29n.es): 21/21 baterías OK. IndexNow 200 (230 URL).
 
 **Errores pendientes (menores)**
 - La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
