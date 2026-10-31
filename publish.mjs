@@ -33,6 +33,10 @@ if (STATS_CODE && !/^[a-z0-9][a-z0-9-]{1,48}$/.test(STATS_CODE)) throw new Error
 console.log(`Contador de visitas: ${STATS_CODE ? `https://${STATS_CODE}.goatcounter.com` : "desactivado"}`);
 writeFileSync(`${OUT}/assets/papeleta.js`, js);
 copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
+// Mejoras de accesibilidad y uso (rama version-mejorada, aprobadas el 31 oct): solo en la página del test
+// Se publican sin los comentarios (cada mejora explica su motivo y su criterio WCAG en el archivo fuente): pesan casi la mitad
+writeFileSync(`${OUT}/assets/mejora.css`, readFileSync("assets/mejora.css", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\n\s*\n+/g, "\n"));
+writeFileSync(`${OUT}/assets/mejora.js`, readFileSync("assets/mejora.js", "utf8").replace(/^\s*\/\*[\s\S]*?\*\/\s*$/gm, "").replace(/^\s*\/\/.*$/gm, "").replace(/\n\s*\n+/g, "\n"));
 for (const f of ["preguntas.json", "partidos.json", "politicos.json"]) copyFileSync(`data/${f}`, `${OUT}/data/${f}`);
 for (const f of ["og.png", "favicon.svg", "favicon-32.png", "favicon-48.png", "favicon-96.png", "favicon.ico", "apple-touch-icon.png", "icon-512.png", "boton-test29n.png", "perfil-test29n.png", "banner-test29n.png"]) {
   if (!existsSync(`qa/brand/${f}`)) throw new Error(`Falta qa/brand/${f}: ejecuta node qa/assets.mjs`);
@@ -53,13 +57,14 @@ for (const f of readdirSync("assets/fonts")) copyFileSync(`assets/fonts/${f}`, `
 const FONT_MAIN = readdirSync("assets/fonts").find((f) => f.startsWith("Archivo-normal-latin-") && !f.includes("ext"));
 // Contador para las páginas estáticas (partidos, temas, prensa): mismo criterio que el test, solo la ruta visitada
 if (STATS_CODE) writeFileSync(`${OUT}/assets/stats.js`, `(()=>{try{if(navigator.webdriver||window.self!==window.top||location.hostname!==${JSON.stringify(new URL(SITE).hostname)})return;var q=new URLSearchParams({p:location.pathname,t:document.title,s:screen.width+","+screen.height+","+(window.devicePixelRatio||1),rnd:Math.random().toString(36).slice(2,8)});if(document.referrer&&document.referrer.indexOf(location.origin)!==0)q.set("r",document.referrer.split(/[?#]/)[0]);var i=new Image();i.referrerPolicy="origin";i.src="https://${STATS_CODE}.goatcounter.com/count?"+q}catch(e){}})();\n`);
-const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`), stats: STATS_CODE ? hash(`${OUT}/assets/stats.js`) : "" };
+const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`), stats: STATS_CODE ? hash(`${OUT}/assets/stats.js`) : "", mcss: hash(`${OUT}/assets/mejora.css`), mjs: hash(`${OUT}/assets/mejora.js`) };
 const OWNER_M = /const OWNER = \{ name: "([^"]*)", email: "([^"]*)" \}/.exec(js);
 
 // El cuerpo es el mismo que el del artefacto; se quitan sus etiquetas de cabecera
 const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
+  .replace('<script src="assets/mejora.js" defer></script>', "")
   .replace(/<span id="foot-version">[^<]*<\/span>/, `<span id="foot-version">Preguntas y posturas actualizadas el ${fmtDateEs(JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated)}</span>`)
   .replace('<span id="foot-version">', '<a href="partidos/">Posturas por partido</a> · <a href="programas/">Programas</a> · <a href="comparar/">Comparar partidos</a> · <a href="temas/">Por temas</a> · <a href="tests/">Tests por tema</a> · <a href="votar/">Cómo votar</a> · <a href="calendario/">Calendario</a> · <a href="provincias/">Provincias</a> · <a href="glosario/">Glosario</a> · <a href="metodologia/">Metodología</a> · <a href="sobre/">Sobre el proyecto</a> · <a href="prensa/">Prensa</a> · <span id="foot-version">')
   .trim();
@@ -117,11 +122,12 @@ const FAQ = [...body.matchAll(/<div class="faq-item"><h3 class="h3">([\s\S]*?)<\
 if (FAQ.length < 5) throw new Error("No se han encontrado las preguntas frecuentes de la portada");
 const faqLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }).replace(/</g, "\\u003c")}</script>\n`;
 const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><p style="font-size:1.25em;font-weight:700;margin:0 0 .5em">Test 29N necesita JavaScript</p><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
-writeFileSync(`${OUT}/index.html`, `${head(TITLE, DESC, social + faqLd)}
+writeFileSync(`${OUT}/index.html`, `${head(TITLE, DESC, social + faqLd).replace("</head>", `<link rel="stylesheet" href="assets/mejora.css?v=${v.mcss}">\n</head>`)}
 <body>
 ${noscript}
 ${body}
 <script src="assets/papeleta.js?v=${v.js}" defer></script>
+<script src="assets/mejora.js?v=${v.mjs}" defer></script>
 </body>
 </html>
 `);
