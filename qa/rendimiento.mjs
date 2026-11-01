@@ -12,7 +12,8 @@ const SITE = (process.env.BASE || "http://127.0.0.1:8766/").replace(/_local\.htm
 // 28 oct: local 900 → 960 kB porque data/preguntas.json crece con las fuentes de cada tanda (comprimido, en la web real, sigue en ~345 kB).
 // 1 nov (bloque B): local 960 kB/21 s → 1000 kB/22 s: mejora.css/js (31 oct y bloque B) y fuentes nuevas suman sin comprimir, y C1 añadirá más.
 // En local los archivos van sin comprimir; el presupuesto de la web real (comprimido: 380 kB, usable en 10 s) no cambia y es el que cuenta.
-const BUDGET = REAL ? { home: [380, 10], page: [220, 3] } : { home: [1000, 22], page: [300, 5] };
+// 1 nov (velocidad en móvil): web real usable en 10 → 8,5 s, tras precargar los datos y no precargar la fuente en la portada (medido: 8,8 → ~7,2 s).
+const BUDGET = REAL ? { home: [380, 8.5], page: [220, 3] } : { home: [1000, 22], page: [300, 5] };
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const browser = await chromium.launch();
@@ -24,7 +25,8 @@ async function measure(path, ready) {
   await cdp.send("Network.enable");
   await cdp.send("Network.emulateNetworkConditions", { offline: false, latency: 400, downloadThroughput: 400 * 1024 / 8, uploadThroughput: 400 * 1024 / 8 });
   await cdp.send("Emulation.setCPUThrottlingRate", { rate: 4 });
-  let bytes = 0, reqs = 0;
+  let bytes = 0, reqs = 0; const urls = {};
+  cdp.on("Network.requestWillBeSent", (e) => { const u = e.request.url.split("?")[0].replace(/^.*\/\/[^/]+\//, ""); urls[u] = (urls[u] || 0) + 1; });
   cdp.on("Network.loadingFinished", (e) => { bytes += e.encodedDataLength; reqs++; });
   const t0 = Date.now();
   await page.goto(SITE + path, { waitUntil: "commit" });
@@ -40,7 +42,7 @@ async function measure(path, ready) {
     setTimeout(() => res(out), 300);
   }));
   await ctx.close();
-  return { kb: Math.round(bytes / 1024), reqs, ready: tReady, fcp: v.fcp / 1000, lcp: v.lcp / 1000, cls: v.cls };
+  return { urls, kb: Math.round(bytes / 1024), reqs, ready: tReady, fcp: v.fcp / 1000, lcp: v.lcp / 1000, cls: v.cls };
 }
 const fmt = (r) => `${r.kb} kB en ${r.reqs} peticiones · usable en ${r.ready.toFixed(1)} s · FCP ${r.fcp.toFixed(1)} s · LCP ${r.lcp.toFixed(1)} s · CLS ${r.cls.toFixed(3)}`;
 
@@ -49,6 +51,9 @@ const home = await measure("", "#start-btn:not([disabled])");
 console.log("  · Portada:", fmt(home));
 ok(home.kb <= BUDGET.home[0] && home.ready <= BUDGET.home[1], `la portada cabe en el presupuesto (${BUDGET.home[0]} kB, ${BUDGET.home[1]} s)`);
 ok(home.cls < 0.1, "la portada no salta al cargar (CLS < 0,1)");
+// Precarga de los datos (1 nov): si la petición del programa dejara de coincidir con la precarga, se descargarían dos veces
+const dup = ["data/preguntas.json", "data/partidos.json", "data/politicos.json"].filter((u) => home.urls[u] !== 1);
+ok(!dup.length, `la portada descarga cada archivo de datos una sola vez${dup.length ? ": " + dup.map((u) => `${u} ×${home.urls[u] || 0}`).join(", ") : ""}`);
 const pg = await measure("preguntas/a02/", "h1");
 console.log("  · Página de pregunta:", fmt(pg));
 ok(pg.kb <= BUDGET.page[0] && pg.fcp <= BUDGET.page[1], `una página estática cabe en el presupuesto (${BUDGET.page[0]} kB, texto visible en ${BUDGET.page[1]} s)`);

@@ -122,11 +122,18 @@ const FAQ = [...body.matchAll(/<div class="faq-item"><h3 class="h3">([\s\S]*?)<\
 if (FAQ.length < 5) throw new Error("No se han encontrado las preguntas frecuentes de la portada");
 const faqLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }).replace(/</g, "\\u003c")}</script>\n`;
 const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><p style="font-size:1.25em;font-weight:700;margin:0 0 .5em">Test 29N necesita JavaScript</p><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
-writeFileSync(`${OUT}/index.html`, `${head(TITLE, DESC, social + faqLd).replace("</head>", `<link rel="stylesheet" href="assets/mejora.css?v=${v.mcss}">\n</head>`)}
+// Velocidad en móvil (1 nov): «Empezar» necesita papeleta.js y los datos, no la tipografía. Los datos se piden a la vez que
+// el programa (antes, después de ejecutarlo) y la portada no precarga la fuente, que compartía la conexión con ellos.
+// El texto se ve desde el principio con la fuente del sistema (font-display: swap), como antes en conexiones lentas.
+// 3G lenta simulada: 8,6 → 7,2 s; 3G rápida: 2,3 → 1,8 s. Cada archivo se descarga una sola vez.
+const PRELOAD = [["preguntas", true], ["partidos", true], ["politicos", false]].map(([n, hi]) => `<link rel="preload" href="data/${n}.json" as="fetch" crossorigin${hi ? ' fetchpriority="high"' : ""}>`).join("\n");
+const headIndex = head(TITLE, DESC, social + faqLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
+if (headIndex.includes('as="font"')) throw new Error("La portada no debe precargar la tipografía (ver comentario de PRELOAD)");
+writeFileSync(`${OUT}/index.html`, `${headIndex.replace("</head>", `${PRELOAD}\n<link rel="stylesheet" href="assets/mejora.css?v=${v.mcss}">\n</head>`)}
 <body>
 ${noscript}
 ${body}
-<script src="assets/papeleta.js?v=${v.js}" defer></script>
+<script src="assets/papeleta.js?v=${v.js}" defer fetchpriority="high"></script>
 <script src="assets/mejora.js?v=${v.mjs}" defer></script>
 </body>
 </html>

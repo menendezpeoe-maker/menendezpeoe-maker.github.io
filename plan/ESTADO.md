@@ -27,9 +27,15 @@
 - Local y web real (https://test29n.es): 21/21 baterías OK. IndexNow 200 (230 URL).
 
 **Errores pendientes (menores)**
-- La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
+- Ninguno conocido. (La lentitud de la portada en 3G se mejoró el 1 nov: ver la entrada «Velocidad de la portada».)
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 1 nov 2026 · Velocidad de la portada en móvil (petición del titular)
+- **Problema (pendiente desde el 31 oct):** con 3G lenta, «Empezar» tardaba ~8,8 s: los datos se pedían solo después de descargar y ejecutar `papeleta.js`, y la fuente precargada (85 kB) compartía la conexión con ellos.
+- **Cambio (solo en `publish.mjs`, solo la portada):** precarga de `data/preguntas.json`, `partidos.json` y `politicos.json`; `fetchpriority="high"` en `papeleta.js` y en los dos datos principales; la portada ya no precarga la tipografía (las demás páginas sí). Sin cambios en el motor, el cálculo ni el aspecto: el texto sale desde el principio con la fuente del sistema y cambia a la propia al llegar (`font-display: swap`), como ya pasaba en conexiones lentas.
+- **Medido (simulación local con compresión, mediana):** 3G lenta 8,6 → ~7 s; 3G rápida 2,3 → 1,8 s; primer pintado igual o mejor. Descartado recortar glifos de las fuentes: solo ahorraba ~20 kB y arriesgaba nombres con letras poco comunes.
+- **Prueba permanente:** `qa/rendimiento.mjs` comprueba que cada archivo de datos se descarga una sola vez (si la precarga dejara de coincidir, se bajaría dos veces) y el presupuesto de la web real baja de 10 a 8,5 s.
 
 ## 1 nov 2026 · Bloque E · Accesibilidad (5a, petición del titular)
 - **Barrido completo** con axe-core (WCAG 2.2 AA y buenas prácticas) en inicio, pregunta con contexto abierto, resultado completo con todo desplegado y comparando, «Cómo funciona», posturas y 22 páginas estáticas, en claro 1280, oscuro 390 y 320 px; y recorrido con Tab (unas 1.400 paradas) comprobando foco visible.
