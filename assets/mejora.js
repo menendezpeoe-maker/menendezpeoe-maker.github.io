@@ -45,6 +45,7 @@
     nCoinciden: (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`),   // aprobado el 31 oct
     ningunaCoincide: "Ninguna provincia coincide con la búsqueda",  // aprobado el 31 oct
     volverArriba: "Volver arriba",                              // aprobado el 31 oct
+    puedesVolver: "Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.",  // bloque B, 1 nov
   };
   const store = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } } };
   const quizView = $("#v-quiz");
@@ -52,7 +53,33 @@
     const live = document.createElement("p"); live.className = "sr"; live.id = "ans-live"; live.setAttribute("aria-live", "polite"); live.dataset.mejora = "texto-nuevo";
     quizView.append(live);
     let tm = 0;
-    qMain.addEventListener("change", (e) => { if (e.target.name !== "ans") return; live.textContent = ""; clearTimeout(tm); tm = setTimeout(() => { live.textContent = T.respuestaGuardada; }, 60); });
+    const announce = () => { live.textContent = ""; clearTimeout(tm); tm = setTimeout(() => { live.textContent = T.respuestaGuardada; }, 60); };
+    qMain.addEventListener("change", (e) => { if (e.target.name === "ans") announce(); });
+    document.addEventListener("ans-saved", announce);
+  }
+  window.addEventListener("keydown", (e) => {
+    if (!quizView || quizView.hidden || e.metaKey || e.ctrlKey || e.altKey || !/^[0-5]$/.test(e.key)) return;
+    const tag = e.target.tagName; if (tag === "SELECT" || tag === "TEXTAREA" || (tag === "INPUT" && e.target.type !== "radio")) return;
+    if (!$(`input[name=ans][value="${e.key}"]`, qMain)) return;
+    setTimeout(() => document.dispatchEvent(new Event("ans-saved")), 0);
+  }, true);
+  const progWrap = $(".qprog-wrap");
+  if (progWrap && T.puedesVolver) {
+    const note = document.createElement("p"); note.className = "q-save"; note.dataset.mejora = "texto-nuevo";
+    note.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h9.5L16.5 6.5V16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z"/><path d="M6.5 3.5v4h6v-4M6.5 16.5v-5h7v5"/></svg><span></span>';
+    note.querySelector("span").textContent = T.puedesVolver;
+    progWrap.append(note);
+  }
+  if (quizView && qMain) {
+    const chip = document.createElement("div"); chip.className = "ans-ok"; chip.dataset.mejora = "texto-nuevo"; chip.setAttribute("aria-hidden", "true");
+    chip.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.6 3.6L15.5 6.5"/></svg><span></span>';
+    chip.querySelector("span").textContent = T.respuestaGuardada;
+    document.body.append(chip);
+    let ht = 0;
+    const showChip = () => { chip.classList.remove("on"); void chip.offsetWidth; chip.classList.add("on"); clearTimeout(ht); ht = setTimeout(() => chip.classList.remove("on"), 1200); };
+    quizView.addEventListener("change", (e) => { if (e.target.name === "ans") showChip(); });
+    document.addEventListener("ans-saved", showChip);
+    new MutationObserver(() => { if (quizView.hidden) { clearTimeout(ht); chip.classList.remove("on"); } }).observe(quizView, { attributes: true, attributeFilter: ["hidden"] });
   }
   let auto = store.get("t29n-mejora-auto", true);
   const switchHTML = () => { const d = document.createElement("div"); d.className = "auto-adv"; d.dataset.mejora = "texto-nuevo";

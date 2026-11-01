@@ -372,7 +372,7 @@ function renderProgress() {
   bar.setAttribute("aria-valuetext", `${answered} de ${order.length} respondidas`);
   const ai = areas.findIndex((a) => a.id === cur.area);
   $("#q-prog-label").textContent = topicOf(S) ? modeLabel(S) : `Área ${ai + 1} de ${areas.length} · ${AREA[cur.area].name}`;
-  $("#q-count").textContent = `${String(S.idx + 1).padStart(2, "0")} / ${order.length}`;
+  $("#q-count").textContent = `Pregunta ${S.idx + 1} de ${order.length}`;
 }
 
 function renderQuestion(dir) {
