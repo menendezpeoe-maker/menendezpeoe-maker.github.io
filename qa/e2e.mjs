@@ -262,6 +262,47 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await ctx.close();
 }
 
+// 6 · Bloque A (1 nov): «¿Cómo se calcula?» en resultados, con pesos reales y la fuente real de cada postura
+{
+  console.log("Bloque A · transparencia");
+  for (const [w, dark] of [[320, false], [390, true], [1280, false]]) {
+    const { ctx, page } = await newPage({ w, h: 900, tag: `a-${w}`, dark, rm: true });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "expres"); await page.waitForSelector("#v-quiz:not([hidden])");
+    const n = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
+    for (let i = 0; i < n; i++) { await page.focus("#q-stmt"); await page.keyboard.press(String(1 + ((i * 3) % 5))); await page.waitForTimeout(260); }
+    await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "sevilla"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
+    ok(await page.evaluate(() => { const d = document.querySelector("#r-how details"); return d && !d.open && d.closest("#r-full") === null; }), `${w} px: el panel está en los resultados sin abrir el análisis completo, cerrado al principio`);
+    await page.focus("#r-how summary"); await page.keyboard.press("Enter");
+    ok(await page.evaluate(() => document.querySelector("#r-how details").open), `${w} px: se abre con el teclado`);
+    // Fuentes: cada postura del panel enlaza exactamente la fuente de los datos (o dice que no la tiene)
+    const check = async () => page.evaluate((bankQs) => {
+      const pid = document.querySelector("#how-sel").value, bad = []; let links = 0;
+      for (const li of document.querySelectorAll("#how-party .how-list li")) {
+        const short = li.querySelector(".how-it b").textContent, q = bankQs.find((x) => x.short === short);
+        const a = li.querySelector(".how-src a"), est = li.querySelector(".how-tag").classList.contains("est");
+        if (!q) { bad.push("sin pregunta: " + short); continue; }
+        if (q.src?.[pid]) { if (!a || a.getAttribute("href") !== q.src[pid][0]) bad.push(short); else links++; } else if (a) bad.push("enlace sin fuente: " + short);
+        if (est !== q.est.includes(pid)) bad.push("estimada mal marcada: " + short);
+      }
+      return { pid, bad, links, rows: document.querySelectorAll("#how-party .how-list li").length };
+    }, bank.questions.map((q) => ({ short: q.short, src: q.src, est: q.est })));
+    const r1 = await check();
+    ok(r1.rows > 0 && r1.links > 0 && !r1.bad.length, `${w} px: ${r1.pid}: ${r1.rows} posturas, ${r1.links} con su fuente real enlazada${r1.bad.length ? " · FALLA: " + r1.bad.slice(0, 3).join(" | ") : ""}`);
+    const pctRank = await page.evaluate(() => { const pid = document.querySelector("#how-sel").value; return document.querySelector("#how-sel option:checked").textContent.match(/(\d+) %/)[1]; });
+    ok((await page.textContent("#how-party > p")).includes(`Coincidencia: ${pctRank} %`), `${w} px: la coincidencia del panel es la misma que la del resultado (${pctRank} %)`);
+    const sum = await page.evaluate(() => { const v = [...document.querySelectorAll(".how-dims .how-dv")].map((e) => parseInt(e.textContent)); const t = /El (\d+) % restante/.exec(document.querySelector("#r-how .how-body").textContent); return v.reduce((a, b) => a + b, 0) + (t ? Number(t[1]) : 0); });
+    ok(Math.abs(sum - 100) <= 4, `${w} px: los pesos de las dimensiones y las transversales suman el 100 % (${sum} %, por redondeo)`);
+    // Otro partido: cambia la lista y sus fuentes también son las reales
+    const second = await page.evaluate(() => document.querySelectorAll("#how-sel option")[1]?.value);
+    if (second) { await page.selectOption("#how-sel", second); await page.waitForTimeout(100); const r2 = await check();
+      ok(r2.pid === second && r2.rows > 0 && !r2.bad.length && (await page.evaluate(() => document.activeElement.id === "how-sel")), `${w} px: al elegir ${second}, sus ${r2.rows} posturas con sus fuentes reales (${r2.links} enlaces), y el foco sigue en el selector`); }
+    const ov = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1 ? [...document.querySelectorAll("body *")].filter((e) => e.getBoundingClientRect().right > innerWidth + 1).slice(0, 4).map((e) => `${e.tagName}.${String(e.className).slice(0, 24)} en #${e.closest("section,[id]")?.id} (${Math.round(e.getBoundingClientRect().right)} px, visible: ${e.checkVisibility()})`).join(", ") : "");
+    ok(!ov, `${w} px: sin scroll horizontal con el panel abierto${ov ? ": " + ov : ""}`);
+    await ctx.close();
+  }
+}
+
 await browser.close();
 console.log("\nErrores de consola:", errors.length ? errors : "ninguno");
 console.log(fails.length ? `\nFALLOS (${fails.length}):\n - ${fails.join("\n - ")}` : "\nTODO OK");

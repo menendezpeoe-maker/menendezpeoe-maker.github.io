@@ -204,7 +204,7 @@ let S = null;          // test propio
 let SHARED = null;     // resultado abierto desde un enlace compartido (solo lectura)
 let PREFS = store.get(PREFS_KEY) || { ctx: false };
 let CURRENT = "home";
-const UI = { cmp: null, scope: "prov", reviewFilter: "all", extra: null };
+const UI = { cmp: null, scope: "prov", reviewFilter: "all", extra: null, how: null };
 const savePrefs = () => store.set(PREFS_KEY, PREFS);
 const save = () => { if (S) { S.t = Date.now(); store.set(KEY, S); } };
 const ST = () => SHARED || S;
@@ -752,6 +752,7 @@ const NAV_ICON = {
   versus: '<path d="M3 7h11M11 4l3 3-3 3M17 13H6M9 10l-3 3 3 3"/>',
   map: '<path d="M3 3v14h14"/><circle cx="8" cy="11" r="1.5" class="f"/><circle cx="12" cy="7" r="1.5" class="f"/><circle cx="14.5" cy="12" r="1.5" class="f"/>',
   solid: '<path d="M10 2.8l6 2.4v4.2c0 3.8-2.6 6.6-6 7.8-3.4-1.2-6-4-6-7.8V5.2z"/><path d="M7.2 10l2 2 3.8-4"/>',
+  how: '<circle cx="10" cy="10" r="7"/><path d="M8 7.8a2.1 2.1 0 1 1 2.7 2c-.5.2-.7.6-.7 1.1v.6"/><circle cx="10" cy="14.3" r=".9" class="f"/>',
   share: '<circle cx="15" cy="4.8" r="2.2"/><circle cx="5" cy="10" r="2.2"/><circle cx="15" cy="15.2" r="2.2"/><path d="M7 9l6-3M7 11l6 3"/>',
   review: '<path d="M7.5 5.5H17M7.5 10H17M7.5 14.5H17"/><path d="M2.8 5.5l1.2 1.2 2-2.2M2.8 10l1.2 1.2 2-2.2M2.8 14.5l1.2 1.2 2-2.2"/>',
   least: '<circle cx="10" cy="10" r="7"/><path d="M7.2 7.2l5.6 5.6M12.8 7.2l-5.6 5.6"/>',
@@ -760,7 +761,7 @@ const NAV_ICON = {
 function navLinks() {
   const groups = [
     ["Tu perfil", [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]]],
-    ["Las candidaturas", [["parties", "Partidos"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]]],
+    ["Las candidaturas", [["parties", "Partidos"], ["how", "Cómo se calcula"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]]],
     ["Tus respuestas", [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]]
   ];
   return groups.map(([t, g]) => `<p class="np-g">${t}</p><ul class="np-list">${g.map(([id, l]) => `<li><a href="#r-${id}" data-sec="r-${id}" data-ico="${id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg></span><span>${l}</span></a></li>`).join("")}</ul>`).join("");
@@ -808,6 +809,7 @@ function renderResults() {
       </nav>
       <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
+      <section id="r-how" class="res-sec" aria-labelledby="how-h"></section>
       <div class="unfold-row${PREFS.full ? " is-open" : ""}"><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">${PREFS.full ? "Ocultar el análisis completo" : "Ver el análisis completo"}</button><span class="small muted unfold-note">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
       <div id="r-full"${PREFS.full ? "" : " hidden"}>
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
@@ -834,14 +836,14 @@ function renderResults() {
       </section>
     </div>`;
   setTimeout(bindResNav, 0);
-  invalidateCards(); renderSummary(); renderFriend(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  invalidateCards(); renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
 }
 
 function rerenderAfterEdit() {
   MODEL = computeModel(ST());
   if (!MODEL.prov.some((m) => m.pid === UI.cmp)) UI.cmp = MODEL.prov[0]?.pid || null;
   invalidateCards();
-  renderSummary(); renderFriend(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
+  renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderLeast(); renderPoliticians();
 }
 
 // ── Piezas comunes de los resultados
@@ -1161,6 +1163,57 @@ function renderDims() {
     <div class="cmp-bar"><label class="label" for="cmp-sel">Comparar con</label><select id="cmp-sel" data-ctl="cmp">${compareOptions()}</select></div>
     <div class="legend"><span><i class="lg-me"></i>Tú</span><span><i class="lg-band"></i>Distancia al centro</span>${cmp ? `<span><i class="lg-dia" style="background:${P[cmp].color}"></i>${esc(pName(cmp, st.prov))} (con todas sus posturas)</span>` : ""}</div>
     <div class="dims">${rows}</div>`;
+}
+
+// ── ¿Cómo se calcula? (bloque A, 1 nov): los pesos reales del cálculo, el peso de cada dimensión en tu resultado
+// y la postura de cada partido en tus respuestas, documentada o estimada, con su fuente. Solo lee MODEL: no calcula nada distinto.
+const pctTxt = (x) => `${Math.round(x * 100)} %`;
+function renderHow() {
+  const box = $("#r-how"); if (!box || !MODEL) return;
+  const M = MODEL, st = M.st, wq = M.qs.map((q) => [q, weightOf(q, st)]);
+  const wT = wq.reduce((a, [, w]) => a + w, 0) || 1;
+  const dimRows = BANK.dims.map((d) => {
+    const own = wq.filter(([q]) => q.dim === d.id), w = own.reduce((a, [, x]) => a + x, 0);
+    return `<li><span class="how-dn">${esc(d.name)}</span><span class="how-bar" aria-hidden="true"><i style="width:${(w / wT * 100).toFixed(1)}%"></i></span><span class="how-dv">${pctTxt(w / wT)} <span class="muted">· ${own.length} ${own.length === 1 ? "respuesta" : "respuestas"}</span></span></li>`;
+  }).join("");
+  const tr = wq.filter(([q]) => !q.dim), wTr = tr.reduce((a, [, x]) => a + x, 0);
+  const open = box.querySelector("details")?.open;
+  box.innerHTML = `<details class="how"${open ? " open" : ""}><summary><span class="how-q" aria-hidden="true">?</span><span><b id="how-h">¿Cómo se calcula tu resultado?</b><span class="small muted">Pesos, dimensiones y la postura de cada partido, con su fuente</span></span></summary>
+    <div class="how-body">
+      <h3 class="h3">Tu coincidencia con cada candidatura</h3>
+      <ul class="dots small">
+        <li>Se compara tu respuesta con la postura del partido en cada pregunta: la misma respuesta suma el 100 %; a cuatro puntos de distancia (por ejemplo, «totalmente de acuerdo» frente a «totalmente en desacuerdo»), el 0 %. La coincidencia es la media ponderada.</li>
+        <li>Pesos: las posturas <b>estimadas</b> cuentan ×${String(W_ESTIMATED).replace(".", ",")}; las preguntas que marcas con estrella, ×${W_IMPORTANT}; las de tus áreas prioritarias, ×${String(W_PRIORITY).replace(".", ",")}; las respuestas «ni de acuerdo ni en desacuerdo», ×${String(W_NEUTRAL).replace(".", ",")}. «No lo sé» no cuenta.</li>
+        <li>Las preguntas casi equivalentes se reparten el peso, para no contar dos veces lo mismo. Si un partido se pronuncia en menos de la mitad de tus respuestas, su coincidencia se acerca al 50 %.</li>
+      </ul>
+      <h3 class="h3">Cuánto pesa cada dimensión en tu resultado</h3>
+      <p class="small muted">Parte del peso total de tus ${M.qs.length} respuestas con opinión que corresponde a cada dimensión.${wTr ? ` El ${pctTxt(wTr / wT)} restante son preguntas transversales, que no miden ninguna dimensión.` : ""}</p>
+      <ul class="how-dims">${dimRows}</ul>
+      <h3 class="h3">La postura de cada partido en tus respuestas</h3>
+      <div class="cmp-bar"><label class="label" for="how-sel">Partido</label><select id="how-sel" data-ctl="how">${M.prov.map((m) => `<option value="${m.pid}">${esc(pName(m.pid, st.prov))} · ${m.pct} %</option>`).join("")}</select></div>
+      <div id="how-party"></div>
+      <p class="small"><button type="button" class="link-btn" data-go="method">Ver la metodología completa</button></p>
+    </div></details>`;
+  renderHowParty();
+}
+function renderHowParty() {
+  const box = $("#how-party"), M = MODEL; if (!box || !M) return;
+  const st = M.st, pid = M.prov.some((m) => m.pid === UI.how) ? UI.how : M.prov[0]?.pid;
+  if (!pid) { box.innerHTML = ""; return; }
+  const sel = $("#how-sel"); if (sel) sel.value = pid;
+  const m = M.all.find((x) => x.pid === pid);
+  const items = [...m.items].sort((a, b) => weightOf(b.q, st) - weightOf(a.q, st) || AREA[a.q.area].idx - AREA[b.q.area].idx);
+  const nDoc = items.filter((x) => !x.est).length, nSrc = items.filter((x) => x.q.src?.[pid]).length;
+  const rows = items.map(({ q, u, v, d, est }) => {
+    const s = q.src?.[pid];
+    const src = s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="muted">(${esc(SRC_TYPE[s[2]] || s[2])}${s[3] ? `, ${esc(fmtDate(s[3]))}` : ""})</span>` : `<span class="muted">${est ? "Deducida de su línea general" : "Sin enlace todavía"}</span>`;
+    return `<li><p class="how-it"><b>${esc(q.short)}</b><span class="how-tag${est ? " est" : ""}">${est ? "Estimada" : "Documentada"}</span></p>
+      <p class="small">Tú: ${esc(ansBrief(q, u))} · ${esc(P[pid].ab)}: ${esc(ansBrief(q, v))} · coincidencia ${Math.round((1 - d / 4) * 100)} %</p>
+      <p class="small how-src">Fuente: ${src}</p></li>`;
+  }).join("");
+  const nEst = items.length - nDoc, pl = (n, one, many) => `<b>${n}</b> ${n === 1 ? one : many}`;
+  box.innerHTML = `<p class="small">${esc(pName(pid, st.prov))} se pronuncia en <b>${items.length}</b> de tus ${M.qs.length} respuestas con opinión: ${pl(nDoc, "postura documentada", "posturas documentadas")} y ${pl(nEst, "estimada", "estimadas")}; ${pl(nSrc, "tiene", "tienen")} fuente enlazada. Coincidencia: <b>${m.pct} %</b>.</p>
+    ${items.length ? `<ol class="how-list">${rows}</ol>` : `<p class="small muted">No hay posturas conocidas de este partido en tus respuestas.</p>`}`;
 }
 
 const NARROW = matchMedia("(max-width: 600px)");
@@ -1745,6 +1798,7 @@ function bindResults() {
     const el = e.target, c = el.dataset.ctl; if (!c) return;
     if (c === "cmp") { UI.cmp = el.value || null; renderDims(); renderAreas(); $("#cmp-sel").focus(); }
     else if (c === "rv") { UI.reviewFilter = el.value; renderReview(); $("#rv-filter").focus(); }
+    else if (c === "how") { UI.how = el.value || null; renderHowParty(); $("#how-sel").focus(); }
     else if (c === "vsA" || c === "vsB") { UI[c] = el.value; if (UI.vsA === UI.vsB) UI[c === "vsA" ? "vsB" : "vsA"] = null; renderVersus(); $(c === "vsA" ? "#vs-a" : "#vs-b").focus(); }
     else if (c === "mapdim") { UI.mapDim = el.value; renderMap(); $("#map-dim").focus(); }
     else if (c === "ans" && !SHARED) {

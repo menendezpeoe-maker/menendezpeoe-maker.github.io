@@ -3,7 +3,7 @@
 ## Ficha de continuidad (actualizada el 1 nov 2026, R2)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`) y R2 (1 nov).
+- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo) y A (transparencia) (1 nov).
 - Pendientes, con tarea programada (calendario de campaña del titular, 28 oct; ver `PLAN.md`): C1 (3 nov, 16:47, candidaturas definitivas, cabezas de lista, programas y fuentes), S1 (6 nov), S1b (10 nov), S1c (13 nov), S1d (17 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
@@ -29,6 +29,13 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 1 nov 2026 · Bloque A · Transparencia del cálculo (petición del titular)
+- **Panel «¿Cómo se calcula tu resultado?»** en el resultado, cerrado por defecto, justo después del resumen (`#r-how`, `renderHow` y `renderHowParty` en `assets/papeleta.js`; estilos `.how` en `assets/papeleta.css`; enlace «Cómo se calcula» en el menú de candidaturas). Solo lee el cálculo existente (`MODEL`, `weightOf` y las constantes): no cambia ningún resultado.
+- Muestra: las reglas y pesos reales (importante ×2, prioridad ×1,5, estimada ×0,6, neutral ×0,5, cobertura mínima 50 %); el peso de cada dimensión en **tu** resultado; y, para la candidatura elegida, cada pregunta con tu respuesta, la suya, «Documentada» o «Estimada» y su fuente enlazada (o «Deducida de su línea general» / «Sin enlace todavía»).
+- **Puerta superada:** `qa/e2e.mjs` (sección 6) comprueba a 320, 390 (oscuro) y 1280 px que cada enlace es exactamente la fuente del banco, que la marca de estimada coincide, que la coincidencia es la del selector y que los pesos suman ~100 %.
+- **Arreglado de paso:** a 320 px «Repasa tus respuestas» desbordaba 10 px en horizontal (el texto largo de las opciones ensanchaba la rejilla; `assets/mejora.css`).
+- **Verificación:** 21/21 en local y en la versión publicable.
 
 ## 1 nov 2026 · Bloque B · Flujo del test (petición del titular)
 - **Contador** «Pregunta 3 de 15» en lugar de «03 / 15» (`renderProgress` en `assets/papeleta.js`, una línea); el total es el de la versión (15/24/48/107 o tema).
