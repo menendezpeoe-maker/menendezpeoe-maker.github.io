@@ -86,7 +86,7 @@ console.log("Teclado");
 }
 
 if (process.env.AXE !== "0") {
-  console.log("Accesibilidad (axe-core, WCAG 2.1 AA)");
+  console.log("Accesibilidad (axe-core, WCAG 2.2 AA y buenas prácticas; desde el bloque E, 1 nov, falla con cualquier infracción)");
   const axe = await (await fetch("https://cdn.jsdelivr.net/npm/axe-core@4.10.2/axe.min.js")).text();
   for (const [tag, dark, w] of [["claro", false, 1100], ["oscuro", true, 390]]) {
     const { ctx, page } = await ctxPage({ tag: `axe-${tag}`, dark, w, axe: true });
@@ -94,7 +94,7 @@ if (process.env.AXE !== "0") {
     const run = async (name) => {
       await page.waitForTimeout(700); // que termine la animación de entrada antes de medir contraste
       await page.addScriptTag({ content: axe });
-      const r = await page.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21aa"], resultTypes: ["violations"] })).violations.map((v) => ({ id: v.id, impact: v.impact, n: v.nodes.length, ex: v.nodes.slice(0, 3).map((x) => x.target.join(" ")).join(" | "), msg: v.nodes[0]?.failureSummary?.split("\n")[1]?.trim() })));
+      const r = await page.evaluate(async () => (await axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"], resultTypes: ["violations"] })).violations.map((v) => ({ id: v.id, impact: v.impact, n: v.nodes.length, ex: v.nodes.slice(0, 3).map((x) => x.target.join(" ")).join(" | "), msg: v.nodes[0]?.failureSummary?.split("\n")[1]?.trim() })));
       console.log(`  [${tag}] ${name}: ${r.length ? r.map((v) => `${v.id}(${v.impact}, ${v.n})`).join(", ") : "sin infracciones"}`);
       r.forEach((v) => notes.push(`${tag}/${name} ${v.id}: ${v.ex} — ${v.msg}`));
       return r;
@@ -108,10 +108,17 @@ if (process.env.AXE !== "0") {
     await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]]))));
     await page.reload(); await page.waitForSelector("#v-results:not([hidden])");
     res.results = await run("resultados");
+    // Resultado completo, con todos los desplegables abiertos, el panel «¿Cómo se calcula?» y el radar comparando
+    await page.evaluate(() => { if (document.querySelector("#r-full").hidden) document.querySelector("#r-unfold").click(); });
+    const cmp = await page.evaluate(() => document.querySelectorAll("#cmp-sel option")[1]?.value); if (cmp) await page.selectOption("#cmp-sel", cmp);
+    await page.evaluate(() => document.querySelectorAll("#v-results details").forEach((d) => { d.open = true; d.dispatchEvent(new Event("toggle")); }));
+    res.full = await run("resultado completo abierto");
     await page.click(".head-nav [data-go='method']"); res.method = await run("cómo funciona");
     await page.click(".head-nav [data-go='explorer']"); res.explorer = await run("posturas");
-    const serious = Object.values(res).flat().filter((v) => ["critical", "serious"].includes(v.impact));
-    ok(!serious.length, `[${tag}] sin infracciones graves de accesibilidad${serious.length ? ": " + [...new Set(serious.map((v) => v.id))].join(", ") : ""}`);
+    // Páginas estáticas: solo cuando BASE es la raíz de dist/ o la web real
+    if (BASE.endsWith("/")) for (const p of ["calendario/", "partidos/pp/", "debates/", "programas/", "insertar/"]) { await page.goto(BASE + p); res[p] = await run(p); }
+    const any = Object.values(res).flat();
+    ok(!any.length, `[${tag}] sin infracciones de accesibilidad${any.length ? ": " + [...new Set(any.map((v) => `${v.id} (${v.impact})`))].join(", ") : ""}`);
     await ctx.close();
   }
 }

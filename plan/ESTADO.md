@@ -3,7 +3,7 @@
 ## Ficha de continuidad (actualizada el 1 nov 2026, R2)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo), A (transparencia) y C (radar) (1 nov).
+- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo), A (transparencia), C (radar) y E (accesibilidad) (1 nov).
 - Pendientes, con tarea programada (calendario de campaña del titular, 28 oct; ver `PLAN.md`): C1 (3 nov, 16:47, candidaturas definitivas, cabezas de lista, programas y fuentes), S1 (6 nov), S1b (10 nov), S1c (13 nov), S1d (17 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
@@ -29,6 +29,13 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 1 nov 2026 · Bloque E · Accesibilidad (5a, petición del titular)
+- **Barrido completo** con axe-core (WCAG 2.2 AA y buenas prácticas) en inicio, pregunta con contexto abierto, resultado completo con todo desplegado y comparando, «Cómo funciona», posturas y 22 páginas estáticas, en claro 1280, oscuro 390 y 320 px; y recorrido con Tab (unas 1.400 paradas) comprobando foco visible.
+- **Corregido:** orden de títulos en «¿Cómo se calcula?» (h3 → h2, mismo aspecto) y en «Posturas de los partidos» (título oculto para lector); la pregunta de ejemplo de la portada era una región «complementaria» dentro de la principal (ahora `section`); contraste de los hitos pasados del calendario (2,35:1 → sin opacidad); las llamadas «Hacer el test» de las páginas de partido tienen nombre propio; enlace subrayado en el mini test insertable; colores del sistema para el radar en modo de alto contraste.
+- **Sin cambios necesarios:** foco visible en todo, movimiento reducido (regla global), textos alternativos y nombres de botones.
+- **Prueba permanente:** `qa/audit.mjs` ahora falla con cualquier infracción (antes solo con las graves), revisa también el resultado completo abierto y, con `BASE` en dist o la web real, 5 páginas estáticas.
+- **Verificación:** 21/21 en local y en la versión publicable.
 
 ## 1 nov 2026 · Bloque C · Radar de las siete dimensiones (petición del titular)
 - **Radar SVG nativo** (sin librerías) encima de las barras de «Tu perfil» (`radarSVG` en `assets/papeleta.js`, estilos `.radar`/`.rd-*` en `assets/papeleta.css`). Misma escala que las barras: centro = primer polo (−100), borde = segundo polo (+100), círculo discontinuo = equilibrio. Con «Comparar con», añade el polígono discontinuo de esa candidatura. Descripción completa con los valores para lector de pantalla; las barras siguen debajo como alternativa en texto.
