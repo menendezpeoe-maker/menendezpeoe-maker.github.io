@@ -1162,7 +1162,44 @@ function renderDims() {
     <p class="sub">Cada dimensión resume tus respuestas a las preguntas que la miden, de −100 a +100. Cero es equilibrio, o un empate entre respuestas en sentidos opuestos. La importancia y las prioridades no cambian este perfil.</p></div>
     <div class="cmp-bar"><label class="label" for="cmp-sel">Comparar con</label><select id="cmp-sel" data-ctl="cmp">${compareOptions()}</select></div>
     <div class="legend"><span><i class="lg-me"></i>Tú</span><span><i class="lg-band"></i>Distancia al centro</span>${cmp ? `<span><i class="lg-dia" style="background:${P[cmp].color}"></i>${esc(pName(cmp, st.prov))} (con todas sus posturas)</span>` : ""}</div>
+    ${radarSVG(M, cmp)}
     <div class="dims">${rows}</div>`;
+}
+
+// ── Radar de las siete dimensiones (bloque C, 1 nov): la misma escala que las barras, en un solo vistazo.
+// Del centro (primer polo, −100) al borde (segundo polo, +100); el círculo discontinuo es el equilibrio (0). Solo lee MODEL.
+const RADAR_LBL = { eco: "Economía", soc: "Valores", lib: "Libertades", ter: "Territorio", inm: "Inmigración", eur: "Europa", amb: "Medioambiente" };
+function radarSVG(M, cmp) {
+  const st = M.st, ds = BANK.dims, n = ds.length, CX = 230, CY = 200, R = 125;
+  const ang = (i) => -Math.PI / 2 + i * 2 * Math.PI / n;
+  const pt = (i, v) => { const r = R * (v + 100) / 200; return [CX + r * Math.cos(ang(i)), CY + r * Math.sin(ang(i))]; };
+  const f = (x) => x.toFixed(1);
+  const ring = (v, cls) => `<polygon class="${cls}" points="${ds.map((_, i) => pt(i, v).map(f).join(",")).join(" ")}"/>`;
+  const poly = (vals, cls, color) => {
+    const p = vals.map((v, i) => (v == null ? null : pt(i, v))).filter(Boolean);
+    if (p.length < 3) return "";
+    return `<polygon class="${cls}" points="${p.map((q) => q.map(f).join(",")).join(" ")}"${color ? ` style="--pc:${color}"` : ""}/>`;
+  };
+  const me = ds.map((d) => M.user.dims[d.id]?.v ?? null);
+  const pv = cmp ? ds.map((d) => PARTY_DIM[cmp][d.id] ?? null) : null;
+  const axes = ds.map((d, i) => { const [x, y] = pt(i, 100); return `<line class="rd-ax" x1="${CX}" y1="${CY}" x2="${f(x)}" y2="${f(y)}"/>`; }).join("");
+  const labels = ds.map((d, i) => {
+    const a = ang(i), x = CX + (R + 14) * Math.cos(a), y = CY + (R + 14) * Math.sin(a), c = Math.cos(a);
+    const anchor = Math.abs(c) < 0.2 ? "middle" : c > 0 ? "start" : "end";
+    const dy = Math.sin(a) < -0.9 ? -4 : Math.sin(a) > 0.5 ? 14 : 6;
+    return `<text class="rd-l${me[i] == null ? " rd-na" : ""}" x="${f(x)}" y="${f(y + dy)}" text-anchor="${anchor}">${esc(RADAR_LBL[d.id] || d.name)}</text>`;
+  }).join("");
+  const dots = me.map((v, i) => { if (v == null) return ""; const [x, y] = pt(i, v); return `<circle class="rd-me" cx="${f(x)}" cy="${f(y)}" r="5" data-dim="${ds[i].id}" data-v="${Math.round(v)}"/>`; }).join("");
+  const pdots = pv ? pv.map((v, i) => { if (v == null) return ""; const [x, y] = pt(i, v); return `<rect class="rd-pm" x="${f(x - 4.5)}" y="${f(y - 4.5)}" width="9" height="9" transform="rotate(45 ${f(x)} ${f(y)})" style="--pc:${P[cmp].color}" data-dim="${ds[i].id}" data-v="${Math.round(v)}"/>`; }).join("") : "";
+  const say = (vals) => ds.map((d, i) => `${d.name} ${vals[i] == null ? "sin datos" : signed(vals[i])}`).join(", ");
+  const aria = `Radar de tus siete dimensiones, de −100 en el centro a +100 en el borde. Tú: ${say(me)}.${pv ? ` ${pName(cmp, st.prov)}: ${say(pv)}.` : ""}`;
+  return `<figure class="radar">
+    <svg viewBox="-24 34 490 312" role="img" aria-label="${esc(aria)}">
+      ${ring(100, "rd-ring")}${ring(50, "rd-ring")}${ring(0, "rd-mid")}${ring(-50, "rd-ring")}${axes}
+      ${pv ? poly(pv, "rd-pp", P[cmp].color) : ""}${poly(me, "rd-mp")}${pdots}${dots}${labels}
+    </svg>
+    <figcaption class="small muted">Hacia el centro, el primer polo de cada dimensión (más Estado, progresista, más garantías…); hacia el borde, el segundo (más mercado, tradicional, más control…). El círculo discontinuo es el equilibrio. Debajo tienes el detalle de cada una.</figcaption>
+  </figure>`;
 }
 
 // ── ¿Cómo se calcula? (bloque A, 1 nov): los pesos reales del cálculo, el peso de cada dimensión en tu resultado

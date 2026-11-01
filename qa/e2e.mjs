@@ -303,6 +303,47 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   }
 }
 
+// 7 · Bloque C (1 nov): radar de las siete dimensiones. Puerta: dice lo mismo que el texto del resultado en 3 tests distintos
+{
+  console.log("Bloque C · radar");
+  const PHRASE = { eco: ["más Estado en economía", "más mercado en economía"], soc: ["posiciones progresistas en valores", "posiciones tradicionales en valores"], lib: ["más garantías y libertades", "más orden y control"], ter: ["más autogobierno territorial", "más centralización"], inm: ["más apertura en inmigración", "más control migratorio"], eur: ["más integración europea", "más soberanía nacional"], amb: ["prioridad ambiental", "prioridad productiva"] };
+  const patterns = [["mixto", (i) => 1 + ((i * 3) % 5), 320, false], ["de acuerdo", (i) => (i % 4 ? 5 : 4), 390, true], ["en desacuerdo", (i) => (i % 3 ? 1 : 2), 1280, false]];
+  for (const [name, key, w, dark] of patterns) {
+    const { ctx, page } = await newPage({ w, h: 900, tag: `c-${w}`, dark, rm: true });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "expres"); await page.waitForSelector("#v-quiz:not([hidden])");
+    const n = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
+    for (let i = 0; i < n; i++) { await page.focus("#q-stmt"); await page.keyboard.press(String(key(i))); await page.waitForTimeout(260); }
+    await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
+    await page.evaluate(() => { if (document.querySelector("#r-full").hidden) document.querySelector("#r-unfold").click(); });
+    const r = await page.evaluate((PHRASE) => {
+      const txt = document.querySelector("#r-summary").textContent, bad = []; // también la frase del desplegable «Tu perfil en siete dimensiones»
+      const pts = Object.fromEntries([...document.querySelectorAll("#r-dims .rd-me")].map((c) => [c.dataset.dim, { v: Number(c.dataset.v), d: Math.hypot(c.cx.baseVal.value - 230, c.cy.baseVal.value - 200) }]));
+      const bars = Object.fromEntries([...document.querySelectorAll("#r-dims .drow")].map((row, i) => [Object.keys(PHRASE)[i], (/\(([−+]?\d+)\)/.exec(row.querySelector(".dv").textContent) || [])[1]]));
+      for (const [k, [a, b]] of Object.entries(PHRASE)) {
+        const p = pts[k];
+        if (!p) { if (bars[k]) bad.push(`${k}: sin punto pero con barra`); continue; }
+        if (Math.abs(p.d - 125 * (p.v + 100) / 200) > 1) bad.push(`${k}: radio ${p.d.toFixed(1)} no corresponde a ${p.v}`);
+        if (String(p.v).replace("-", "−").replace(/^(\d)/, "+$1").replace(/^\+0$/, "0") !== bars[k]) bad.push(`${k}: radar ${p.v} ≠ barra ${bars[k]}`);
+        if (txt.includes(a) && !(p.v <= -25 && p.d < 62.5)) bad.push(`${k}: el texto dice «${a}» y el radar marca ${p.v}`);
+        if (txt.includes(b) && !(p.v >= 25 && p.d > 62.5)) bad.push(`${k}: el texto dice «${b}» y el radar marca ${p.v}`);
+        // 25 justos puede ser 24,6 redondeado: entonces el texto no tiene por qué decirlo
+        if (Math.abs(p.v) > 25 && !txt.includes(PHRASE[k][p.v < 0 ? 0 : 1])) bad.push(`${k}: el radar marca ${p.v} y el texto no lo dice`);
+      }
+      const svg = document.querySelector("#r-dims .radar svg");
+      return { bad, n: Object.keys(pts).length, head: document.querySelector("#res-h").textContent, aria: svg?.getAttribute("role") === "img" && /Tú: Economía/.test(svg.getAttribute("aria-label")) };
+    }, PHRASE);
+    ok(r.n === 7 && !r.bad.length, `${w} px · ${name}: los 7 puntos del radar coinciden con las barras y con el texto («${r.head}»)${r.bad.length ? " · FALLA: " + r.bad.join(" | ") : ""}`);
+    ok(r.aria, `${w} px: el radar tiene descripción para lector de pantalla con tus valores`);
+    const opt = await page.evaluate(() => document.querySelectorAll("#cmp-sel option")[1]?.value);
+    await page.selectOption("#cmp-sel", opt); await page.waitForTimeout(100);
+    ok(await page.evaluate((pid) => document.querySelectorAll("#r-dims .rd-pm").length > 0 && !!document.querySelector("#r-dims .rd-pp") && document.querySelector("#r-dims .radar svg").getAttribute("aria-label").includes(":"), opt), `${w} px: al comparar con ${opt}, su polígono aparece en el radar`);
+    const ov = await page.evaluate(() => { const s = document.querySelector("#r-dims").getBoundingClientRect(); return document.documentElement.scrollWidth > innerWidth + 1 || [...document.querySelectorAll("#r-dims > *, #r-dims .rd-l")].some((e) => e.getBoundingClientRect().right > s.right + 1 || e.getBoundingClientRect().left < s.left - 1); });
+    ok(!ov, `${w} px: el radar y sus etiquetas caben en la sección, sin scroll horizontal`);
+    await ctx.close();
+  }
+}
+
 await browser.close();
 console.log("\nErrores de consola:", errors.length ? errors : "ninguno");
 console.log(fails.length ? `\nFALLOS (${fails.length}):\n - ${fails.join("\n - ")}` : "\nTODO OK");

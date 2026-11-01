@@ -380,9 +380,9 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .ans-ok { white-space: nowrap; }
 /* Con el aviso, la barra del test es más alta: margen arriba y abajo para que la barra de progreso no toque el borde */
 @media (min-width: 561px) { .quiz-bar-row { padding-block: 10px; } }
-/* MEJORA (bloque A, 1 nov): en «Revisa y cambia», el desplegable de cada respuesta ya no ensancha la página a 320 px
-   (con la letra a 16 px, la opción más larga lo hacía más ancho que la pantalla). WCAG 1.4.10. */
-/* Repaso a 320 px: la pista de la rejilla no crece con el texto de las opciones */
-#r-review, #r-review .rv-area { grid-template-columns: minmax(0, 1fr); }
+/* MEJORA (bloques A y C, 1 nov): a 320 px, los desplegables («Revisa y cambia», «Comparar con») ya no ensanchan
+   las secciones del resultado (con la letra a 16 px, la opción más larga las hacía más anchas que la pantalla). WCAG 1.4.10. */
+.res-sec, #r-review .rv-area { grid-template-columns: minmax(0, 1fr); }
+.cmp-bar select { max-width: 100%; }
 #r-review .rv-area, #r-review .rv-area > summary > span { min-width: 0; }
 #r-review select { min-width: 0; max-width: 100%; }

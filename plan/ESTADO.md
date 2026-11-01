@@ -3,7 +3,7 @@
 ## Ficha de continuidad (actualizada el 1 nov 2026, R2)
 
 **Estado de los bloques**
-- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo) y A (transparencia) (1 nov).
+- Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo), A (transparencia) y C (radar) (1 nov).
 - Pendientes, con tarea programada (calendario de campaña del titular, 28 oct; ver `PLAN.md`): C1 (3 nov, 16:47, candidaturas definitivas, cabezas de lista, programas y fuentes), S1 (6 nov), S1b (10 nov), S1c (13 nov), S1d (17 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
@@ -29,6 +29,12 @@
 - La portada tarda unos 8 s en ser usable con 3G lenta (`papeleta.js` y `data/preguntas.json` se cargan enteros antes de activar «Empezar»). Mejora posible, no urgente.
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 1 nov 2026 · Bloque C · Radar de las siete dimensiones (petición del titular)
+- **Radar SVG nativo** (sin librerías) encima de las barras de «Tu perfil» (`radarSVG` en `assets/papeleta.js`, estilos `.radar`/`.rd-*` en `assets/papeleta.css`). Misma escala que las barras: centro = primer polo (−100), borde = segundo polo (+100), círculo discontinuo = equilibrio. Con «Comparar con», añade el polígono discontinuo de esa candidatura. Descripción completa con los valores para lector de pantalla; las barras siguen debajo como alternativa en texto.
+- **Puerta superada:** `qa/e2e.mjs` (sección 7) responde 3 tests distintos (mixto, de acuerdo, en desacuerdo) y comprueba que cada punto coincide con su barra, que su radio es el del valor y que todo lo que dice el texto del resultado («Te inclinas por…») está en el lado correcto del radar, y al revés.
+- **Arreglado de paso:** a 320 px, «Comparar con» ensanchaba «Tu perfil» 14 px (misma causa que en el repaso; ahora la regla vale para todas las secciones del resultado, `assets/mejora.css`).
+- **Verificación:** 21/21 en local y en la versión publicable.
 
 ## 1 nov 2026 · Bloque A · Transparencia del cálculo (petición del titular)
 - **Panel «¿Cómo se calcula tu resultado?»** en el resultado, cerrado por defecto, justo después del resumen (`#r-how`, `renderHow` y `renderHowParty` en `assets/papeleta.js`; estilos `.how` en `assets/papeleta.css`; enlace «Cómo se calcula» en el menú de candidaturas). Solo lee el cálculo existente (`MODEL`, `weightOf` y las constantes): no cambia ningún resultado.
