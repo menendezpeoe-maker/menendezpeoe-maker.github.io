@@ -35,6 +35,7 @@ Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 - **Aviso fijo** bajo la barra de progreso, en todas las preguntas: «Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.» (`assets/mejora.js`).
 - **Confirmación visible** «✓ Respuesta guardada» 1,2 s al elegir (toque, ratón o teclado), arriba y centrada, sin recibir toques y oculta al lector de pantalla (ya se anunciaba). Arreglado de paso: con el paso automático activado, las teclas 0–5 no anunciaban «Respuesta guardada».
 - **Pruebas:** nueva sección en `qa/e2e.mjs` (contador en las 4 versiones; aviso y confirmación de 320 a 1920 px). **Arreglo importante en las pruebas:** `e2e` y `share` no devolvían código de error, así que sus fallos no se veían en `run.mjs`: desde el 31 oct `e2e` ocultaba 2 fallos (comprobaciones del panel de contexto antiguo, actualizadas al acordeón aprobado) y `share` 4 en local (comparaban con la dirección local en vez de la pública). Ahora ambas fallan de verdad si algo falla. Contador adaptado en `e2e`, `features`, `onboarding`, `share` y `stats`.
+- **Verificación:** 21/21 en local, en la versión publicable y en la web real (con `e2e` y `share` ya devolviendo errores). IndexNow 200.
 - **Rendimiento:** presupuesto local 960 kB/21 s → 1000 kB/22 s (archivos sin comprimir; C1 añadirá fuentes); el de la web real (380 kB comprimidos, 10 s) no cambia. `publish.mjs` compacta también los espacios de `mejora.css`.
 
 ## 1 nov 2026 · R2 · Página /debates/ y revisión
