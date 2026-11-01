@@ -61,7 +61,7 @@ console.log("Páginas por candidatura y por tema");
   const { ctx, page } = await newPage();
   const sitemap = await (await fetch(SITE + "sitemap.xml")).text();
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1 + 10 + 1 + 1 + 2 + 53 + 1 + 1 + 7 + 2 + 1, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
+  ok(locs.length === 1 + pd.parties.length + bank.areas.length + 3 + bank.questions.length + 1 + 10 + 1 + 1 + 2 + 53 + 1 + 1 + 7 + 2 + 1 + 1, `el sitemap incluye la portada y las ${locs.length - 1} páginas nuevas`);
   const paths = locs.map((u) => new URL(u).pathname);
   let bad = [], estOk = true, srcOk = true, canon = true;
   for (const pid of pd.order) {
@@ -81,7 +81,7 @@ console.log("Páginas por candidatura y por tema");
   ok(!bad.length && estOk, `las ${pd.order.length} páginas de partido muestran cada postura tal como está en los datos, con «estimada» o «documentada»${bad.length ? ": " + bad.slice(0, 5).join(", ") : ""}`);
   ok(srcOk, "y enlazan todas sus fuentes");
   ok(canon, "cada página tiene su dirección canónica");
-  for (const [w, path] of [[390, "partidos/vox/"], [390, "temas/justicia-seguridad-y-libertades/"], [1280, "prensa/"], [390, "partidos/"], [390, "temas/"], [320, "programas/"], [1280, "programas/"]]) {
+  for (const [w, path] of [[390, "partidos/vox/"], [390, "temas/justicia-seguridad-y-libertades/"], [1280, "prensa/"], [390, "partidos/"], [390, "temas/"], [320, "programas/"], [1280, "programas/"], [320, "debates/"], [1280, "debates/"]]) {
     await page.setViewportSize({ width: w, height: 900 });
     await page.goto(SITE + path); await page.waitForSelector("main h1");
     ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) && (await page.locator('a.btn[href="/"]').count()) >= 1, `${path} a ${w} px: sin scroll horizontal y con botón al test`);
@@ -103,8 +103,14 @@ console.log("Páginas por candidatura y por tema");
   ok(rows === live.length && tags === live.length && /comprobado el \d+ de [a-z]+ de 2026/.test(await page.innerText(".pg-sum")), `programas: ${rows} candidaturas, cada una con su estado y la fecha de comprobación`);
   const pp = await (await fetch(SITE + "partidos/pp/")).text();
   ok(pp.includes("<dt>Programa del 29N</dt>") && pp.includes('href="/programas/"'), "cada página de partido indica el estado de su programa y enlaza /programas/");
+  // Debates: cada uno con su estado, sus datos («por confirmar» si no se han anunciado), su fuente y el botón al test
+  await page.goto(SITE + "debates/");
+  const dbs = await page.locator(".db-item").count(), dbSrc = await page.locator(".db-item .small a[href^='http']").count(), dbBtn = await page.locator('.db-item a.btn[href="/"]').count();
+  ok(dbs >= 1 && dbSrc >= dbs && dbBtn === dbs && !/ganador|ganó|gana el debate/i.test(await page.innerText("main")), `debates: ${dbs} debates, cada uno con fuente y botón al test, sin valoraciones`);
+  const cal = await (await fetch(SITE + "calendario/")).text();
+  ok(cal.includes('href="/debates/"'), "el calendario enlaza /debates/");
   await page.goto(SITE); await page.waitForSelector("#start-btn:not([disabled])");
-  ok((await page.locator('footer a[href="programas/"]').count()) === 1, "el pie del test enlaza /programas/");
+  ok((await page.locator('footer a[href="programas/"]').count()) === 1 && (await page.locator('footer a[href="debates/"]').count()) === 1, "el pie del test enlaza /programas/ y /debates/");
   ok((await page.locator('footer a[href="partidos/"]').count()) === 1 && (await page.locator('footer a[href="prensa/"]').count()) === 1, "el pie del test enlaza las páginas nuevas (para que Google las encuentre)");
   await ctx.close();
 }

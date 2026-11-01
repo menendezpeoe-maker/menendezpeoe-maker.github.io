@@ -1,5 +1,11 @@
 # Estado del plan · histórico (entradas movidas desde ESTADO.md, sin cambios; lo más reciente arriba)
 
+## 29 oct 2026 · R0 · Repaso y pendientes (adelantada a petición del titular)
+- **Podemos:** 4 posturas más con fuente (edad penal E04, prioridad nacional F03, reparto de menores F05 y ley de cooperación H07), todas de votaciones nominales del Congreso contra iniciativas de Vox, sin cambiar valores. Descartadas por no tratar la misma cuestión o por voto partido: velo integral (L09), regularización (F04) y educación en español (I05). Podemos pasa de 53 a 57 posturas con fuente.
+- **Barra del test en móvil:** la etiqueta «Área 2 de 12 · Vivienda y urbanismo» ya no se corta con puntos suspensivos (hasta 3 líneas a 320 px).
+- **Programas del 29N:** ninguno publicado a 29 oct.
+- **Calendario:** la tarea programada de R0 (29 oct, 2:13) se desactivó para no repetirla.
+
 ## 28 oct 2026 · Auditoría de candidaturas por circunscripción (petición del titular)
 - Comparadas las 27 candidaturas de la web con las listas provisionales del BOE del 28 oct (BOE-A-2026-22607). Resultado y propuestas en `plan/AUDITORIA-CANDIDATURAS.md`: 9 grupos de diferencias en la web (UPL, Por Ávila, JMM, Frente Amplio, CHA, Existe, Podemos, PACMA y SALF) y unas 40 candidaturas del BOE que la web no recoge (Alhora, NEX, JUEX, PREPAL, Valencia Unida, Frente Obrero, PCTE…).
 - **No se ha cambiado la web:** las listas son provisionales hasta la proclamación del 2 nov.

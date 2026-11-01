@@ -7,6 +7,7 @@ import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
+import { DEBATES } from "./src/debates.src.mjs";
 const METH = JSON.parse(readFileSync("src/metodologia.json", "utf8"));
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
@@ -66,7 +67,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/debates/">Debates</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
@@ -538,6 +539,28 @@ ${cta("¿Con cuál coincides más?")}
 <ul class="sp-cards">${live.map((pid) => { const p = P[pid]; return `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(p.tag)} · ${esc(scopeText(p))}</span></span></a></li>`; }).join("")}</ul>
 ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que no se presentan: ${PD.order.filter((pid) => P[pid].out).map((pid) => `<a href="/partidos/${pid}/">${esc(P[pid].name)}</a>`).join(", ")}.</p>` : ""}`
   });
+  // ── Debates electorales del 29N: solo lo publicado, con su fuente; lo no anunciado, «por confirmar» (src/debates.src.mjs)
+  const dbRev = fmtDate(DEBATES.revisado), ESTADO = { propuesta: "Propuesta, sin confirmar", confirmado: "Confirmado", celebrado: "Celebrado" };
+  const pc = (x) => x ? esc(x) : '<span class="muted">Por confirmar</span>';
+  const dbRow = (d) => `<li class="db-item" id="${esc(d.id)}"><div class="db-head"><span class="pg-tag${d.estado === "propuesta" ? "" : " ok"}">${esc(ESTADO[d.estado])}</span><h2 class="h3">${esc(d.formato)}</h2></div>
+    <dl class="db-facts"><div><dt>Organiza</dt><dd>${esc(d.organiza)}</dd></div><div><dt>Fecha</dt><dd>${d.fechaTexto ? esc(d.fechaTexto) : pc("")}</dd></div><div><dt>Hora</dt><dd>${pc(d.hora)}</dd></div><div><dt>Dónde verlo</dt><dd>${pc(d.canal)}</dd></div><div><dt>Participantes</dt><dd>${esc(d.participantes)}</dd></div>${d.video ? `<div><dt>Vídeo oficial</dt><dd><a href="${esc(d.video)}" target="_blank" rel="noopener noreferrer">Ver el debate completo</a></dd></div>` : ""}</dl>
+    <p class="small muted">Fuente: ${d.fuentes.map(([u, l]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(l)}</a>`).join(" · ")}</p>
+    <p><a class="btn btn-ghost btn-sm" href="/">Compara tus ideas con las de los partidos del debate</a></p></li>`;
+  const allProp = DEBATES.lista.every((d) => d.estado === "propuesta");
+  page({
+    path: "/debates/",
+    title: "Debates electorales del 29N: fechas, cadenas y participantes · Test 29N",
+    desc: `Los debates de la campaña de las elecciones generales del 29 de noviembre de 2026: fecha, cadena, dónde verlos y participantes, con la fuente de cada dato. Revisado el ${dbRev}.`,
+    crumbs: [{ name: "Debates electorales", url: `${SITE}debates/` }],
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Debates electorales del 29N</h1>
+  <p class="lede">Los debates de la campaña, con la fecha, la cadena y los participantes según lo publicado, y la fuente de cada dato. Lo que aún no se ha anunciado aparece como «por confirmar».</p></header>
+<p class="pg-sum">${allProp ? `<b>A ${esc(dbRev)}, ningún debate está confirmado por todos sus participantes.</b> Estas son las propuestas publicadas; las fechas pueden cambiar.` : `Revisado el ${esc(dbRev)}.`}</p>
+<style>/* Solo en esta página (así no pesa en la portada) */ .db-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; } .db-item { display: grid; gap: 10px; padding: 16px 18px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); min-width: 0; } .db-head { display: grid; gap: 6px; justify-items: start; } .db-head .h3 { margin: 0; } .db-facts { display: grid; gap: 6px 18px; margin: 0; grid-template-columns: 1fr; } @media (min-width: 640px) { .db-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } } .db-facts div { display: grid; gap: 1px; min-width: 0; } .db-facts dt { font-size: 14px; font-weight: 700; color: var(--ink-2); letter-spacing: .02em; } .db-facts dd { margin: 0; } .db-item .btn { white-space: normal; text-align: center; }</style>
+<ul class="db-list">${DEBATES.lista.map(dbRow).join("")}</ul>
+<p class="small muted">Solo recogemos fechas, cadenas y participantes, con su fuente. No valoramos los debates ni decimos quién gana. Cuando se celebre cada uno, añadiremos el enlace al vídeo oficial. Esta página se revisa varias veces por semana hasta el 21 de noviembre.</p>
+${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
+  });
+
   // ── Programas electorales del 29N: estado de cada candidatura, con enlace oficial cuando existe
   const nPub = live.filter((pid) => PROG[pid]).length;
   const progRow = (pid) => { const p = P[pid], pub = PROG[pid], noList = PROGRAMAS.sinLista.includes(pid);
@@ -593,7 +616,7 @@ ${cta("¿Aún no sabes con quién coincides?")}`
   <p class="lede">Las fechas del proceso, tal y como las fijan el real decreto de convocatoria y la normativa electoral. Cada una enlaza a su fuente oficial.</p></header>
 ${officialNote}
 <ol class="cal">${VOTAR.calendario.map((c) => `<li${c.fecha < VOTAR.revisado ? ' class="past"' : ""}><time datetime="${esc(c.fecha)}">${esc(c.cuando)}</time><div><b>${esc(c.hito)}</b>${c.nota ? `<span class="small">${esc(c.nota)}</span>` : ""}<span class="small muted">Fuente: ${srcA(c.fuente)}${c.fuente2 ? ` · ${srcA(c.fuente2)}` : ""}</span></div></li>`).join("")}</ol>
-<p class="small muted">Más detalles prácticos en <a href="/votar/">Cómo votar el 29N</a>.</p>
+<p class="small muted">Más detalles prácticos en <a href="/votar/">Cómo votar el 29N</a>. Fechas de los debates de la campaña en <a href="/debates/">Debates electorales del 29N</a>.</p>
 ${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
   });
 

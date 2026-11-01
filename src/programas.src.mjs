@@ -2,7 +2,7 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-10-31",
+  comprobado: "2026-11-01",
   // id de partido → { url, titulo, fecha }   (vacío: aún no publicado)
   publicados: {},
   // Candidaturas que no figuran en las listas provisionales del BOE (se revisa con la proclamación definitiva)
