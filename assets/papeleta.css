@@ -1110,3 +1110,18 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .how-body > * { min-width: 0; }
 .how .cmp-bar { flex-wrap: wrap; }
 .how .cmp-bar select { min-width: 0; width: 100%; max-width: 420px; flex: 1 1 200px; }
+
+/* Radar de las siete dimensiones (bloque C, 1 nov) */
+.radar { margin: 0; display: grid; gap: 10px; justify-items: center; }
+.radar svg { width: 100%; max-width: 520px; height: auto; overflow: visible; }
+.radar figcaption { max-width: 560px; justify-self: start; }
+@media (min-width: 760px) { .radar figcaption { justify-self: center; text-align: center; } }
+.rd-ring { fill: none; stroke: var(--rule); stroke-width: 1; }
+.rd-mid { fill: none; stroke: var(--ink-3); stroke-width: 1.5; stroke-dasharray: 5 5; }
+.rd-ax { stroke: var(--rule); stroke-width: 1; }
+.rd-mp { fill: var(--mark); fill-opacity: .35; stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round; }
+.rd-pp { fill: var(--pc); fill-opacity: .08; stroke: var(--pc); stroke-width: 2.5; stroke-dasharray: 7 5; stroke-linejoin: round; }
+.rd-me { fill: var(--ink); stroke: var(--sheet); stroke-width: 2.5; }
+.rd-pm { fill: var(--pc); stroke: var(--sheet); stroke-width: 2; }
+.rd-l { font: 600 20px var(--f-ui); fill: var(--ink); }
+.rd-l.rd-na { fill: var(--ink-3); font-weight: 400; }
