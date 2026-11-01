@@ -1,9 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
-## Ficha de continuidad (actualizada el 1 nov 2026, R2)
+## Ficha de continuidad (actualizada el 1 nov 2026, bloques A, B, C y E)
 
 **Estado de los bloques**
 - Completadas y verificadas en la web real: T1–T12c (19–28 oct), R0 (29 oct), R1 (31 oct), mejoras de accesibilidad y uso (31 oct, ver regla 5 de `PLAN.md`), R2 y bloques B (flujo), A (transparencia), C (radar) y E (accesibilidad) (1 nov).
+- Pendientes de las mejoras del titular (esperan fecha o datos): tarjeta compartible y vista previa en X/WhatsApp (S1b), aviso de fecha en portada (S1c), enlaces rotos (S1d), verificación de neutralidad (S2).
 - Pendientes, con tarea programada (calendario de campaña del titular, 28 oct; ver `PLAN.md`): C1 (3 nov, 16:47, candidaturas definitivas, cabezas de lista, programas y fuentes), S1 (6 nov), S1b (10 nov), S1c (13 nov), S1d (17 nov), S2 (21 nov), P1 (30 nov).
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
@@ -35,20 +36,20 @@ Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 - **Corregido:** orden de títulos en «¿Cómo se calcula?» (h3 → h2, mismo aspecto) y en «Posturas de los partidos» (título oculto para lector); la pregunta de ejemplo de la portada era una región «complementaria» dentro de la principal (ahora `section`); contraste de los hitos pasados del calendario (2,35:1 → sin opacidad); las llamadas «Hacer el test» de las páginas de partido tienen nombre propio; enlace subrayado en el mini test insertable; colores del sistema para el radar en modo de alto contraste.
 - **Sin cambios necesarios:** foco visible en todo, movimiento reducido (regla global), textos alternativos y nombres de botones.
 - **Prueba permanente:** `qa/audit.mjs` ahora falla con cualquier infracción (antes solo con las graves), revisa también el resultado completo abierto y, con `BASE` en dist o la web real, 5 páginas estáticas.
-- **Verificación:** 21/21 en local y en la versión publicable.
+- **Verificación:** 21/21 en local, en la versión publicable y en la web real. IndexNow 200 (231 URL).
 
 ## 1 nov 2026 · Bloque C · Radar de las siete dimensiones (petición del titular)
 - **Radar SVG nativo** (sin librerías) encima de las barras de «Tu perfil» (`radarSVG` en `assets/papeleta.js`, estilos `.radar`/`.rd-*` en `assets/papeleta.css`). Misma escala que las barras: centro = primer polo (−100), borde = segundo polo (+100), círculo discontinuo = equilibrio. Con «Comparar con», añade el polígono discontinuo de esa candidatura. Descripción completa con los valores para lector de pantalla; las barras siguen debajo como alternativa en texto.
 - **Puerta superada:** `qa/e2e.mjs` (sección 7) responde 3 tests distintos (mixto, de acuerdo, en desacuerdo) y comprueba que cada punto coincide con su barra, que su radio es el del valor y que todo lo que dice el texto del resultado («Te inclinas por…») está en el lado correcto del radar, y al revés.
 - **Arreglado de paso:** a 320 px, «Comparar con» ensanchaba «Tu perfil» 14 px (misma causa que en el repaso; ahora la regla vale para todas las secciones del resultado, `assets/mejora.css`).
-- **Verificación:** 21/21 en local y en la versión publicable.
+- **Verificación:** 21/21 en local y en la versión publicable; en la web real, 20/21 antes de publicar E (solo fallaba la `audit` ya endurecida, por lo que corrige E) y 21/21 después.
 
 ## 1 nov 2026 · Bloque A · Transparencia del cálculo (petición del titular)
 - **Panel «¿Cómo se calcula tu resultado?»** en el resultado, cerrado por defecto, justo después del resumen (`#r-how`, `renderHow` y `renderHowParty` en `assets/papeleta.js`; estilos `.how` en `assets/papeleta.css`; enlace «Cómo se calcula» en el menú de candidaturas). Solo lee el cálculo existente (`MODEL`, `weightOf` y las constantes): no cambia ningún resultado.
 - Muestra: las reglas y pesos reales (importante ×2, prioridad ×1,5, estimada ×0,6, neutral ×0,5, cobertura mínima 50 %); el peso de cada dimensión en **tu** resultado; y, para la candidatura elegida, cada pregunta con tu respuesta, la suya, «Documentada» o «Estimada» y su fuente enlazada (o «Deducida de su línea general» / «Sin enlace todavía»).
 - **Puerta superada:** `qa/e2e.mjs` (sección 6) comprueba a 320, 390 (oscuro) y 1280 px que cada enlace es exactamente la fuente del banco, que la marca de estimada coincide, que la coincidencia es la del selector y que los pesos suman ~100 %.
 - **Arreglado de paso:** a 320 px «Repasa tus respuestas» desbordaba 10 px en horizontal (el texto largo de las opciones ensanchaba la rejilla; `assets/mejora.css`).
-- **Verificación:** 21/21 en local y en la versión publicable.
+- **Verificación:** 21/21 en local, en la versión publicable y en la web real. IndexNow 200.
 
 ## 1 nov 2026 · Bloque B · Flujo del test (petición del titular)
 - **Contador** «Pregunta 3 de 15» en lugar de «03 / 15» (`renderProgress` en `assets/papeleta.js`, una línea); el total es el de la versión (15/24/48/107 o tema).
