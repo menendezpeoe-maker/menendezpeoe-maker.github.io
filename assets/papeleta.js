@@ -1217,16 +1217,16 @@ function renderHow() {
   const open = box.querySelector("details")?.open;
   box.innerHTML = `<details class="how"${open ? " open" : ""}><summary><span class="how-q" aria-hidden="true">?</span><span><b id="how-h">¿Cómo se calcula tu resultado?</b><span class="small muted">Pesos, dimensiones y la postura de cada partido, con su fuente</span></span></summary>
     <div class="how-body">
-      <h3 class="h3">Tu coincidencia con cada candidatura</h3>
+      <h2 class="h3">Tu coincidencia con cada candidatura</h2>
       <ul class="dots small">
         <li>Se compara tu respuesta con la postura del partido en cada pregunta: la misma respuesta suma el 100 %; a cuatro puntos de distancia (por ejemplo, «totalmente de acuerdo» frente a «totalmente en desacuerdo»), el 0 %. La coincidencia es la media ponderada.</li>
         <li>Pesos: las posturas <b>estimadas</b> cuentan ×${String(W_ESTIMATED).replace(".", ",")}; las preguntas que marcas con estrella, ×${W_IMPORTANT}; las de tus áreas prioritarias, ×${String(W_PRIORITY).replace(".", ",")}; las respuestas «ni de acuerdo ni en desacuerdo», ×${String(W_NEUTRAL).replace(".", ",")}. «No lo sé» no cuenta.</li>
         <li>Las preguntas casi equivalentes se reparten el peso, para no contar dos veces lo mismo. Si un partido se pronuncia en menos de la mitad de tus respuestas, su coincidencia se acerca al 50 %.</li>
       </ul>
-      <h3 class="h3">Cuánto pesa cada dimensión en tu resultado</h3>
+      <h2 class="h3">Cuánto pesa cada dimensión en tu resultado</h2>
       <p class="small muted">Parte del peso total de tus ${M.qs.length} respuestas con opinión que corresponde a cada dimensión.${wTr ? ` El ${pctTxt(wTr / wT)} restante son preguntas transversales, que no miden ninguna dimensión.` : ""}</p>
       <ul class="how-dims">${dimRows}</ul>
-      <h3 class="h3">La postura de cada partido en tus respuestas</h3>
+      <h2 class="h3">La postura de cada partido en tus respuestas</h2>
       <div class="cmp-bar"><label class="label" for="how-sel">Partido</label><select id="how-sel" data-ctl="how">${M.prov.map((m) => `<option value="${m.pid}">${esc(pName(m.pid, st.prov))} · ${m.pct} %</option>`).join("")}</select></div>
       <div id="how-party"></div>
       <p class="small"><button type="button" class="link-btn" data-go="method">Ver la metodología completa</button></p>
@@ -2441,6 +2441,7 @@ function renderExplorer() {
           <div class="field"><label class="label" for="ex-q">Buscar</label><input id="ex-q" type="search" placeholder="Por ejemplo: alquiler, Senado, lobo…" autocomplete="off"></div>
         </div>
         <p class="small muted" id="ex-count" aria-live="polite" style="padding-top:12px"></p>
+        <h2 class="sr">Preguntas y posturas</h2>
         <div class="ex-list" id="ex-list"></div>
       </div>`;
     root.dataset.ready = "1";

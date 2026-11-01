@@ -884,7 +884,7 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .mini-body { background: var(--paper); }
 .mini-wrap { max-width: 640px; margin: 0 auto; padding: 16px; display: grid; gap: 12px; }
 .mini-brand { font-size: 13px; font-weight: 400; color: var(--ink-3); margin: 0; }
-.mini-brand a { color: var(--ink); text-decoration: none; }
+.mini-brand a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 .mini-prog { font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
 .mini-q { font-family: var(--f-read); font-size: 21px; line-height: 1.3; font-weight: 500; margin: 4px 0 10px; }
 .mini-ab { font-size: 14.5px; color: var(--ink-2); margin-bottom: 10px; }
@@ -907,7 +907,7 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .cal li { display: grid; grid-template-columns: minmax(96px, 150px) minmax(0, 1fr); gap: 4px 18px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
 .cal li time { font-family: var(--f-disp); font-stretch: 112%; font-weight: 850; font-size: 15px; }
 .cal li div { display: grid; gap: 3px; }
-.cal li.past { opacity: .62; }
+.cal li.past time, .cal li.past b { color: var(--ink-2); } /* sin opacidad: el texto pequeño no llegaba a 4,5:1 */
 @media (max-width: 480px) { .cal li { grid-template-columns: 1fr; } }
 /* Provincias y simulador de escaños */
 .prov-list { display: grid; gap: 4px 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
@@ -1125,3 +1125,4 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .rd-pm { fill: var(--pc); stroke: var(--sheet); stroke-width: 2; }
 .rd-l { font: 600 20px var(--f-ui); fill: var(--ink); }
 .rd-l.rd-na { fill: var(--ink-3); font-weight: 400; }
+@media (forced-colors: active) { .rd-ring, .rd-ax, .rd-mid { stroke: GrayText; } .rd-mp { fill: none; stroke: CanvasText; } .rd-pp, .rd-pm { stroke: Highlight; } .rd-pm { fill: Highlight; } .rd-me, .rd-l { fill: CanvasText; } }
