@@ -43,13 +43,13 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.screenshot({ path: OUT + "m-home.png", fullPage: true });
   await startHome(page, "expres");
   await page.waitForSelector("#v-quiz:not([hidden])");
-  const n = Number((await page.textContent("#q-count")).split("/")[1]);
+  const n = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   ok(n === 24, `exprés tiene 24 preguntas (${n})`);
   await page.screenshot({ path: OUT + "m-quiz.png" });
   // Contexto: abrir y cerrar sin cambiar respuesta
   await page.click("#q-main .opt:nth-child(4)");
   await page.waitForTimeout(450);
-  ok((await page.textContent("#q-count")).startsWith("02"), "responder con toque avanza solo");
+  ok((await page.textContent("#q-count")).startsWith("Pregunta 2 de"), "responder con toque avanza solo");
   await page.click("#q-prev");
   ok(await page.isChecked('#q-main input[value="4"]'), "al volver atrás se conserva la respuesta");
   await page.click("#ctx-toggle");
@@ -59,9 +59,9 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.screenshot({ path: OUT + "m-ctx.png" });
   await page.keyboard.press("Escape");
   ok(await page.isHidden("#ctx"), "Escape cierra el contexto");
-  ok((await page.textContent("#q-count")).startsWith("01"), "cerrar el contexto no cambia de pregunta");
+  ok((await page.textContent("#q-count")).startsWith("Pregunta 1 de"), "cerrar el contexto no cambia de pregunta");
   await page.click("#q-next");
-  ok((await page.textContent("#q-count")).startsWith("02"), "Siguiente avanza");
+  ok((await page.textContent("#q-count")).startsWith("Pregunta 2 de"), "Siguiente avanza");
   await page.click("#q-next");
   ok((await page.textContent("#q-err")).includes("Elige"), "no deja avanzar sin responder");
   // Responder como el PP, con un «No lo sé» y una importante
@@ -78,7 +78,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
       ok((await page.textContent("#resume")).includes("a medias"), "al recargar ofrece continuar");
       await page.click('#resume [data-act="resume"]');
       await page.waitForSelector("#v-quiz:not([hidden])");
-      ok((await page.textContent("#q-count")).startsWith("12"), "continúa en la misma pregunta");
+      ok((await page.textContent("#q-count")).startsWith("Pregunta 12 de"), "continúa en la misma pregunta");
     }
   }
   await page.waitForSelector("#v-prios:not([hidden])");
@@ -146,10 +146,10 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.waitForSelector("#v-quiz:not([hidden])");
   await page.keyboard.press("c");
   ok(await page.isVisible("#ctx"), "tecla C abre el contexto");
-  const box = await page.locator("#ctx").boundingBox();
-  ok(box && box.x > 700, "en escritorio el contexto va en columna lateral");
+  // Diseño aprobado el 31 oct: el contexto es un acordeón justo debajo de su botón (también en escritorio)
+  ok(await page.evaluate(() => document.querySelector("#q-main .q-tools").nextElementSibling === document.querySelector("#ctx")), "en escritorio el contexto se abre debajo de su botón");
   await page.screenshot({ path: OUT + "d-quiz-ctx.png" });
-  const n = Number((await page.textContent("#q-count")).split("/")[1]);
+  const n = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   ok(n === 48, `media tiene 48 preguntas (${n})`);
   for (let i = 0; i < n; i++) {
     const code = await page.textContent("#q-main .q-code");
@@ -168,7 +168,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   ok((await page.locator("#r-map select:not(#map-dim)").count()) === 0 && (await page.locator("#r-map .me-o").count()) === 1, "mapa automático, sin selectores, con tu posición");
   await page.click('[data-act="more"]');
   await page.waitForSelector("#v-quiz:not([hidden])");
-  ok((await page.textContent("#q-count")).includes("/ 107"), "afinar pasa a la completa conservando respuestas");
+  ok((await page.textContent("#q-count")).includes("de 107"), "afinar pasa a la completa conservando respuestas");
   await ctx.close();
 }
 
@@ -181,8 +181,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   ok(!(await overflow(page)), "inicio sin scroll horizontal (820px)");
   await startHome(page);
   await page.click("#ctx-toggle");
-  const box = await page.locator("#ctx").boundingBox();
-  ok(box && box.y + box.height >= 1170, "en tableta el contexto es una hoja inferior");
+  ok(await page.evaluate(() => document.querySelector("#q-main .q-tools").nextElementSibling === document.querySelector("#ctx") && getComputedStyle(document.querySelector("#ctx")).position !== "fixed"), "en tableta el contexto se abre debajo de su botón, sin tapar las respuestas");
   await page.screenshot({ path: OUT + "t-quiz-ctx.png" });
   await ctx.close();
 }
@@ -222,6 +221,48 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await ctx.close();
 }
 
+// 5 · Bloque B (1 nov): contador «Pregunta X de N», aviso de que se puede volver y confirmación al responder
+{
+  console.log("Bloque B · flujo del test");
+  const AVISO = "Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.";
+  for (const [mode, n] of [["rapida", 15], ["expres", 24], ["media", 48], ["completa", 107]]) {
+    const { ctx, page } = await newPage({ w: 1280, h: 800, tag: `b-${mode}` });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, mode); await page.waitForSelector("#v-quiz:not([hidden])");
+    ok((await page.textContent("#q-count")) === `Pregunta 1 de ${n}`, `versión ${mode}: el contador dice «Pregunta 1 de ${n}»`);
+    await ctx.close();
+  }
+  for (const [w, h] of [[320, 568], [375, 667], [390, 844], [414, 896], [768, 1024], [1024, 768], [1280, 800], [1440, 900], [1920, 1080]]) {
+    const { ctx, page } = await newPage({ w, h, tag: `b-${w}`, touch: w < 760 });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+    const r = await page.evaluate(() => { const n = document.querySelector(".q-save"), c = document.querySelector("#q-count"); const rn = n.getBoundingClientRect();
+      return { text: n.textContent, fs: parseFloat(getComputedStyle(n).fontSize), vis: n.checkVisibility(), inBar: !!n.closest(".quiz-bar"), cnt: c.getBoundingClientRect().height < 40 && getComputedStyle(c).whiteSpace === "nowrap" }; });
+    ok(r.text === AVISO && r.fs >= 16 && r.vis && r.inBar && r.cnt && !(await overflow(page)), `${w} px: aviso visible a 16 px en la barra del test, contador en una línea, sin scroll horizontal`);
+    // Confirmación al elegir: aparece, no tapa nada que se pueda pulsar, no la lee el lector de pantalla y desaparece
+    await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
+    await page.click("#q-main .opt >> nth=1");
+    const on = await page.evaluate(() => { const c = document.querySelector(".ans-ok"); return { on: c.classList.contains("on"), text: c.textContent.trim(), hidden: c.getAttribute("aria-hidden") === "true", pe: getComputedStyle(c).pointerEvents }; });
+    await page.waitForTimeout(1500);
+    const off = await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on"));
+    ok(on.on && on.text === "Respuesta guardada" && on.hidden && on.pe === "none" && off, `${w} px: al elegir aparece «✓ Respuesta guardada» 1,2 s, sin tapar toques y oculto al lector de pantalla`);
+    // Sigue en la misma pregunta (avance automático desactivado) y el aviso sigue igual en la siguiente
+    await page.click("#q-next"); await page.waitForTimeout(300);
+    ok((await page.textContent("#q-count")) === "Pregunta 2 de 15" && (await page.textContent(".q-save")) === AVISO, `${w} px: en la pregunta siguiente el contador avanza y el aviso sigue en su sitio`);
+    await ctx.close();
+  }
+  // Con el teclado también hay confirmación; al salir del test no queda visible
+  const { ctx, page } = await newPage({ w: 1280, h: 800, tag: "b-teclado", rm: true });
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+  await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+  await page.focus("#q-stmt"); await page.keyboard.press("3"); await page.waitForTimeout(150);
+  ok(await page.evaluate(() => document.querySelector(".ans-ok").classList.contains("on") && getComputedStyle(document.querySelector(".ans-ok")).transitionDuration.split(",").every((d) => parseFloat(d) === 0)), "con el teclado también aparece, y sin animación con «reducir movimiento»");
+  await page.click("#q-exit"); await page.waitForSelector("#v-home:not([hidden])");
+  ok(await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on")), "al salir del test la confirmación no se queda en pantalla");
+  await ctx.close();
+}
+
 await browser.close();
 console.log("\nErrores de consola:", errors.length ? errors : "ninguno");
 console.log(fails.length ? `\nFALLOS (${fails.length}):\n - ${fails.join("\n - ")}` : "\nTODO OK");
+process.exit(fails.length || errors.length ? 1 : 0);

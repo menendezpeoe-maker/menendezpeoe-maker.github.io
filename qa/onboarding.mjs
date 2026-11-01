@@ -33,7 +33,7 @@ async function open({ w = 390, h = 844, dark = false, st = null } = {}) {
   return { ctx, page };
 }
 async function answerAll(page) {
-  const total = parseInt((await page.textContent("#q-count")).split("/")[1]);
+  const total = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   for (let i = 0; i < total; i++) {
     if ((await view(page)) !== "quiz") break;
     await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(430);
@@ -61,7 +61,7 @@ console.log("Empezar en un toque");
   await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
   const s = await saved(page);
   ok(s && s.stage === "quiz" && s.mode === "rapida" && !("sex" in s) && !("age" in s) && !s.prov, "empezar (en el móvil: Empezar y Rápida) inicia la versión rápida sin pedir datos (ni sexo, edad o provincia)");
-  ok(/\/ 15/.test(await page.textContent("#q-count")), "la versión rápida tiene 15 preguntas");
+  ok(/de 15$/.test(await page.textContent("#q-count")), "la versión rápida tiene 15 preguntas");
   await ctx.close();
 }
 {
@@ -69,7 +69,7 @@ console.log("Empezar en un toque");
   await page.check("#f-mode-media", { force: true });
   ok(/Versión media: 48 preguntas/.test(await page.textContent("#start-note")), "la nota del botón sigue a la versión elegida (escritorio)");
   await startHome(page); await page.waitForSelector("#v-quiz:not([hidden])");
-  ok(/\/ 48/.test(await page.textContent("#q-count")), "el botón de la portada respeta la versión elegida");
+  ok(/de 48$/.test(await page.textContent("#q-count")), "el botón de la portada respeta la versión elegida");
   await ctx.close();
 }
 {
@@ -80,7 +80,7 @@ console.log("Empezar en un toque");
   await page.click("#start-btn"); await page.waitForTimeout(150);
   ok(await page.isHidden("#bn-modes") && /Empezar el test/.test(await page.textContent("#start-btn")), "pulsarlo otra vez las oculta");
   await page.click("#start-btn"); await page.click('#bn-modes [data-mode="media"]'); await page.waitForSelector("#v-quiz:not([hidden])");
-  ok(/\/ 48/.test(await page.textContent("#q-count")) && (await saved(page)).mode === "media", "tocar una versión empieza el test con esa versión");
+  ok(/de 48$/.test(await page.textContent("#q-count")) && (await saved(page)).mode === "media", "tocar una versión empieza el test con esa versión");
   await ctx.close();
 }
 
@@ -91,7 +91,7 @@ console.log("La pregunta de ejemplo es real");
   await page.click('.ex-scale [data-ex="2"]'); await page.waitForSelector("#v-quiz:not([hidden])");
   const s = await saved(page);
   ok(s.ans.C01 === 2 && s.order[0] === "C01" && s.idx === 1, "responderla guarda la respuesta y empieza el test en la siguiente");
-  ok((await page.textContent("#q-count")).startsWith("02") && s.order.length === 15, "el test sigue en la pregunta 2 de 15");
+  ok((await page.textContent("#q-count")).startsWith("Pregunta 2 de") && s.order.length === 15, "el test sigue en la pregunta 2 de 15");
   await page.click("#q-prev");
   ok(await page.isChecked('#q-main input[value="2"]'), "al volver atrás se ve la respuesta de la portada");
   // Con un test a medias, la respuesta se añade a ese test en lugar de borrarlo
@@ -143,7 +143,7 @@ console.log("Estados guardados antiguos");
   const { ctx, page } = await open({ st: half });
   ok(/a medias/.test(await page.textContent("#resume")), "un test a medias antiguo ofrece continuar");
   await page.click('#resume [data-act="resume"]'); await page.waitForSelector("#v-quiz:not([hidden])");
-  ok((await page.textContent("#q-count")).startsWith("04"), "y continúa donde estaba");
+  ok((await page.textContent("#q-count")).startsWith("Pregunta 4 de"), "y continúa donde estaba");
   await answerAll(page);
   ok((await page.inputValue("#f-prov")) === "sevilla", "la provincia que ya tenía aparece elegida al final");
   const s = await saved(page);

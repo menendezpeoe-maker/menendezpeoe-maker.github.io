@@ -4,6 +4,8 @@ import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const BASE = process.env.BASE || "http://127.0.0.1:8766/";
+// Los mensajes llevan siempre la dirección pública (PUBLIC_URL de papeleta.js), también al probar en local
+const PUBLIC = "https://test29n.es/";
 const OUT = new URL("./shots/", import.meta.url).pathname;
 const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import.meta.url)));
 const fails = [], errors = [];
@@ -31,7 +33,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   ok(await page.$eval('meta[property="og:image"]', (m) => m.content.endsWith("og.png")), "metadatos Open Graph");
   await startHome(page, "expres");
   await page.waitForSelector("#v-quiz:not([hidden])");
-  const n = Number((await page.textContent("#q-count")).split("/")[1]);
+  const n = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   for (let i = 0; i < n; i++) {
     const code = await page.textContent("#q-main .q-code");
     const q = bank.questions.find((x) => `${bank.areas.find((a) => a.id === x.area).letter}·${x.id.slice(1)}` === code);
@@ -45,7 +47,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   ok(/Adelante Andalucía/.test(await page.textContent(".tm-name")), "resultado correcto (Adelante Andalucía)");
   // Texto y enlaces
   const text = await page.inputValue("#sh-text");
-  ok(text.includes("Adelante Andalucía") && /\d+ %/.test(text) && text.includes("Haz el test aquí: " + BASE), "mensaje con resultado real y URL");
+  ok(text.includes("Adelante Andalucía") && /\d+ %/.test(text) && text.includes("Haz el test aquí: " + PUBLIC), "mensaje con resultado real y URL");
   const xh = await page.getAttribute("#sh-x", "href");
   const xt = new URL(xh).searchParams.get("text");
   ok(xh.startsWith("https://x.com/intent/tweet?text=") && xt === text, "X: texto codificado y decodificado sin pérdidas (tildes, %, ¿)");
@@ -88,7 +90,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   await page.click("#sh-invite");
   await page.waitForTimeout(200);
   const inv = await page.evaluate(() => navigator.clipboard.readText()).catch(() => "");
-  ok(inv.includes(BASE) && !inv.includes("%"), "invitar: solo el enlace, sin resultado");
+  ok(inv.includes(PUBLIC) && !inv.includes("%"), "invitar: solo el enlace, sin resultado");
   // Enlace completo con respuestas → se abre en otra pestaña
   await page.click("#r-share details summary");
   await page.click("#sh-full");
@@ -127,3 +129,4 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
 await browser.close();
 console.log("\nErrores de consola:", errors.length ? errors : "ninguno");
 console.log(fails.length ? `FALLOS (${fails.length}):\n - ${fails.join("\n - ")}` : "TODO OK");
+process.exit(fails.length || errors.length ? 1 : 0);

@@ -46,7 +46,7 @@ console.log("Visitas y pasos del test");
   await page.check("input[name=mode][value=expres]", { force: true }).catch(() => {});
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])"); await page.waitForTimeout(300);
   ok(paths(hits).includes("test-empezado") && hits.find((u) => u.searchParams.get("p") === "test-empezado").searchParams.get("e") === "true", "empezar el test cuenta «test empezado»");
-  const total = parseInt((await page.textContent("#q-count")).split("/")[1]);
+  const total = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   for (let i = 0; i < total; i++) { await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(350); }
   await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
   ok(paths(hits).filter((p) => p === "test-terminado").length === 1, "terminarlo cuenta «test terminado» una vez");

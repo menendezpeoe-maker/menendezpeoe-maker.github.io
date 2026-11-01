@@ -33,7 +33,7 @@ console.log("Ampliar a una versión más larga");
   const order = await page.evaluate(() => { const s = { mode: "expres" }; return null; });
   await page.check("input[name=mode][value=expres]", { force: true }).catch(() => {});
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
-  const total = parseInt((await page.textContent("#q-count")).split("/")[1]);
+  const total = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   for (let i = 0; i < total; i++) { await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(380); }
   await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
   await page.click('[data-act="more"]'); await page.waitForSelector("#v-quiz:not([hidden])");

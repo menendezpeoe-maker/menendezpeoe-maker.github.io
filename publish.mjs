@@ -35,7 +35,7 @@ writeFileSync(`${OUT}/assets/papeleta.js`, js);
 copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
 // Mejoras de accesibilidad y uso (rama version-mejorada, aprobadas el 31 oct): solo en la página del test
 // Se publican sin los comentarios (cada mejora explica su motivo y su criterio WCAG en el archivo fuente): pesan casi la mitad
-writeFileSync(`${OUT}/assets/mejora.css`, readFileSync("assets/mejora.css", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\n\s*\n+/g, "\n"));
+writeFileSync(`${OUT}/assets/mejora.css`, readFileSync("assets/mejora.css", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").replace(/\s*([{};])\s*/g, "$1").trim());
 writeFileSync(`${OUT}/assets/mejora.js`, readFileSync("assets/mejora.js", "utf8").replace(/^\s*\/\*[\s\S]*?\*\/\s*$/gm, "").replace(/^\s*\/\/.*$/gm, "").replace(/\n\s*\n+/g, "\n"));
 for (const f of ["preguntas.json", "partidos.json", "politicos.json"]) copyFileSync(`data/${f}`, `${OUT}/data/${f}`);
 for (const f of ["og.png", "favicon.svg", "favicon-32.png", "favicon-48.png", "favicon-96.png", "favicon.ico", "apple-touch-icon.png", "icon-512.png", "boton-test29n.png", "perfil-test29n.png", "banner-test29n.png"]) {

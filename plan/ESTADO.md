@@ -30,6 +30,13 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 1 nov 2026 · Bloque B · Flujo del test (petición del titular)
+- **Contador** «Pregunta 3 de 15» en lugar de «03 / 15» (`renderProgress` en `assets/papeleta.js`, una línea); el total es el de la versión (15/24/48/107 o tema).
+- **Aviso fijo** bajo la barra de progreso, en todas las preguntas: «Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.» (`assets/mejora.js`).
+- **Confirmación visible** «✓ Respuesta guardada» 1,2 s al elegir (toque, ratón o teclado), arriba y centrada, sin recibir toques y oculta al lector de pantalla (ya se anunciaba). Arreglado de paso: con el paso automático activado, las teclas 0–5 no anunciaban «Respuesta guardada».
+- **Pruebas:** nueva sección en `qa/e2e.mjs` (contador en las 4 versiones; aviso y confirmación de 320 a 1920 px). **Arreglo importante en las pruebas:** `e2e` y `share` no devolvían código de error, así que sus fallos no se veían en `run.mjs`: desde el 31 oct `e2e` ocultaba 2 fallos (comprobaciones del panel de contexto antiguo, actualizadas al acordeón aprobado) y `share` 4 en local (comparaban con la dirección local en vez de la pública). Ahora ambas fallan de verdad si algo falla. Contador adaptado en `e2e`, `features`, `onboarding`, `share` y `stats`.
+- **Rendimiento:** presupuesto local 960 kB/21 s → 1000 kB/22 s (archivos sin comprimir; C1 añadirá fuentes); el de la web real (380 kB comprimidos, 10 s) no cambia. `publish.mjs` compacta también los espacios de `mejora.css`.
+
 ## 1 nov 2026 · R2 · Página /debates/ y revisión
 - **Página nueva /debates/:** una tarjeta por debate (estado, organiza, fecha, hora, dónde verlo, participantes, fuente y botón al test). A 1 nov ningún debate está confirmado por todos sus participantes: se publican las tres propuestas contrastadas en RTVC e Infobae (9 oct): cara a cara Sánchez–Feijóo en Mediaset (16 nov), portavoces parlamentarios en RTVE (23 nov) y candidatos de los principales partidos en Atresmedia (fecha por fijar; se ha planteado el 26). Hora y cadena, «por confirmar». No se indica qué partido acepta cada uno. Sin enlace en la portada: sería un texto nuevo en la interfaz del test, que necesita la aprobación del titular (regla 5); está en el pie de todas las páginas, en el del test y en /calendario/. Sus estilos van dentro de la página para no sumar peso a la portada (presupuesto de `rendimiento`). Sitemap: 231 URL; pruebas nuevas en `growth`.
 - **Programas del 29N:** ninguno publicado a 1 nov; fecha de comprobación de /programas/ al día.
