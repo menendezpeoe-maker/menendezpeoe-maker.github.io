@@ -386,3 +386,23 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .cmp-bar select { max-width: 100%; }
 #r-review .rv-area, #r-review .rv-area > summary > span { min-width: 0; }
 #r-review select { min-width: 0; max-width: 100%; }
+
+/* ─── Bloque 2 (2 nov): barra fina fija durante el test, solo en el móvil ─────────────────── */
+.q-mini { display: none; }
+@media (max-width: 560px) {
+  .q-mini { position: fixed; z-index: 55; top: 0; left: 0; right: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 10px; padding: calc(4px + env(safe-area-inset-top, 0px)) 16px 4px 8px; min-height: 52px; background: var(--paper); border-bottom: 1px solid var(--rule); visibility: hidden; opacity: 0; transform: translateY(-100%); transition: transform .18s ease, opacity .18s ease, visibility 0s .18s; }
+  .q-mini.on { visibility: visible; opacity: 1; transform: none; transition: transform .18s ease, opacity .18s ease; }
+  .q-mini-prev { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; min-width: 44px; padding: 0 12px 0 6px; border: 1.5px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); font: 700 15px var(--f-ui); cursor: pointer; }
+  .q-mini-prev[hidden] { display: none; }
+  .q-mini-prev svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .q-mini-prev:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .q-mini-txt { margin: 0; display: grid; min-width: 0; line-height: 1.2; }
+  .q-mini-txt b { font: 800 16px var(--f-ui); white-space: nowrap; }
+  .q-mini-txt span { font-size: 14px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-mini-line { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: transparent; }
+  .q-mini-line i { display: block; height: 100%; background: var(--ink); transition: width .2s ease; }
+  /* El aviso «Respuesta guardada» baja para no tapar la barra fina */
+  .ans-ok { top: calc(62px + env(safe-area-inset-top, 0px)); }
+  html:has(body.in-quiz) { scroll-padding-top: 68px; }
+}
+@media (forced-colors: active) { .q-mini-line i { background: CanvasText; } }
