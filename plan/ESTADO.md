@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 2 nov 2026 · Mejora 3 · Portada más corta en el móvil (aprobada por el titular tras ver la prueba)
+- **Cambio (`assets/mejora.js`, `assets/mejora.css`):** en el móvil (≤ 760 px), «Cómo funciona», «Qué lo hace distinto» y «Las 12 áreas del test» se pliegan (título con botón «+», patrón de acordeón con aria-expanded/aria-controls). Ningún texto cambia ni se quita; en ordenador, igual que antes. Altura de la portada a 390 px: 7.375 → 4.661 px.
+- **«Preguntas frecuentes» sigue abierta** a propósito: `qa/seo.mjs` exige que sus respuestas se vean a 390 px.
+- **Verificación:** 21/21 en local (`support` volvió a fallar una vez en la comprobación externa de PayPal; pasa al repetirla y el enlace responde 200) y en la versión publicable.
+
 ## 2 nov 2026 · Mejora 2 · Barra fina durante el test en el móvil (aprobada por el titular tras ver la prueba)
 - **Problema:** en el móvil (≤ 560 px), al centrar cada pregunta, la barra del test (contador, área, progreso) quedaba fuera de la pantalla y «Anterior» al final de la página.
 - **Cambio (`assets/mejora.js`, `assets/mejora.css`):** barra fina fija arriba (`.q-mini`) mientras la barra original no se ve casi entera: «‹ Anterior» (usa el mismo botón del test: vuelve con la respuesta marcada; no aparece en la primera pregunta), «Pregunta N de M», el área y una línea de progreso. Sin textos nuevos visibles; los textos van ocultos al lector de pantalla (ya están en la barra original). El centrado de la pregunta descuenta la barra y nunca tapa la línea del código y el área; «Respuesta guardada» baja bajo la barra. En ordenador no cambia nada.
