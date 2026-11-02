@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 2 nov 2026 · Mejora 6 · Barra fina también con el móvil en horizontal (aprobada por el titular tras ver la prueba)
+- **Problema:** con el móvil en horizontal (≥ 561 px de ancho y ≤ 500 px de alto) la barra del test era fija y ocupaba ~106 de 390 px; las respuestas quedaban fuera de la pantalla.
+- **Cambio (`assets/mejora.css`):** en pantallas de ≤ 500 px de alto la barra del test deja de ser fija y se usa la barra fina del bloque 2. La pregunta sube ~50 px y las respuestas empiezan a verse. Revisados también iPhone SE (375×667) y Android pequeño (360×640) en vertical: sin problemas.
+- **Verificación:** 21/21 en local y en la versión publicable. Observación: `rendimiento` falló una vez en la página estática (FCP 4,9 s con presupuesto local de 5 s, sin comprimir; no la afecta este cambio) y pasó dos veces al repetir. El margen local es justo; el presupuesto de la web real (3 s) se cumple.
+
 ## 2 nov 2026 · Mejora 5 · Imprimir o guardar en PDF el resultado (aprobada por el titular tras ver la prueba)
 - **Cambio (`assets/papeleta.js`, `assets/papeleta.css`):** enlace «Imprimir o guardar en PDF» bajo los botones del resumen (`window.print()`). Estilo de impresión: cabecera con fecha y test29n.es, resumen con clasificación y perfil, coincidencias y discrepancias, y «¿Cómo se calcula?» con la postura de cada partido y su fuente (las URL se imprimen). Se ocultan menús, botones y el análisis completo. Antes de imprimir se abren los desplegables del resumen y del cálculo; después vuelven a su estado (se guarda su posición, no el nodo, por si la página se redibuja; protección ante «beforeprint» doble).
 - **Arreglado antes de publicar:** en la clasificación, la rejilla hacía que Chrome superpusiera la fila siguiente al partir página; en impresión va en bloque.
