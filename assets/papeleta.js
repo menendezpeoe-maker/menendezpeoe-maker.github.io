@@ -829,8 +829,8 @@ function renderResults() {
       <section class="res-sec" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
-          ${!SHARED ? `<a class="btn btn-ghost" href="#r-share">Compartir mi resultado</a><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>` : `<button type="button" class="btn btn-primary" data-act="own-test">Hacer mi propio test</button>`}
-          <button type="button" class="link-btn" data-go="method">Cómo se calcula</button>
+          ${!SHARED ? `<a class="btn btn-ghost dup" href="#r-share">Compartir mi resultado</a><button type="button" class="btn btn-ghost dup" data-act="new">Repetir el test</button>` : `<button type="button" class="btn btn-primary" data-act="own-test">Hacer mi propio test</button>`}
+          <button type="button" class="link-btn dup" data-go="method">Cómo se calcula</button>
         </div>
         ${!SHARED && next ? '<p class="small muted">Conservas tus respuestas: solo contestarás las preguntas nuevas.</p>' : ""}
       </section>
@@ -1084,6 +1084,13 @@ function renderVersus() {
     <p class="small muted">Las posturas estimadas aparecen en cursiva. Comparar dos partidos no cambia tu resultado.</p>`;
 }
 
+// Mejora 1 (2 nov): las cinco candidaturas más cercanas, con barras en escala real (0–100 %), en lugar de la línea «Siguientes»
+// Se pinta dos veces: en la columna de la derecha (ordenador) y tras los botones (móvil), para que en el móvil
+// «Compartir» y «Reta a un amigo» sigan en la primera pantalla. Solo una de las dos se muestra.
+function rank5(M, st, where) {
+  const rows = M.prov.slice(0, 5).map((m, i) => `<li${i ? "" : ' class="is-top"'}><span class="r5-n" aria-hidden="true">${i + 1}</span>${logo(m.pid, "xs")}<span class="r5-name">${esc(pName(m.pid, st.prov))}</span><span class="r5-bar" aria-hidden="true"><i style="width:${m.pct}%"></i></span><b class="r5-pct">${m.pct} %</b></li>`).join("");
+  return `<div class="rank5 r5-${where}"><p class="subh" id="r5-h-${where}">Coincidencia con cada candidatura</p><ol aria-labelledby="r5-h-${where}">${rows}</ol>${M.prov.length > 5 ? `<a class="link-btn r5-all" href="#r-parties">Ver las ${M.prov.length} candidaturas de ${esc(PROV[st.prov].name)}</a>` : ""}</div>`;
+}
 function renderSummary() {
   const st = ST(), M = MODEL, pr = PROV[st.prov], top = M.prov[0];
   const ps = profileSentence(M);
@@ -1108,7 +1115,7 @@ function renderSummary() {
           ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
           <p class="tm-line"><span class="tm-pct">${top.pct}<small>%</small></span><span class="small muted">de coincidencia, pregunta a pregunta. No es una probabilidad de voto.</span></p>
           ${top.pct < 60 ? `<p class="small">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}
-          <p class="small muted">Siguientes: ${M.prov.slice(1, 3).map((m) => `${esc(pName(m.pid, st.prov))} (${m.pct} %)`).join(" · ") || "—"}</p>` : "<p>No hay candidaturas comparables.</p>"}
+          ${rank5(M, st, "side")}` : "<p>No hay candidaturas comparables.</p>"}
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
         </div>
         <div class="sum-main">
@@ -1120,6 +1127,7 @@ function renderSummary() {
           </div>` : ""}
           ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
+          ${top ? rank5(M, st, "main") : ""}
           <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
             ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
             <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
