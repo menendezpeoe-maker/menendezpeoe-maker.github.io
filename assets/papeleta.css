@@ -1148,3 +1148,11 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 #r-full[hidden] + .res-sec .dup { display: none; }
 /* Mejora 1: «¿Te ha resultado útil?» en su línea y «Sí»/«No» juntos debajo */
 .useful p { flex: 1 1 100%; }
+
+/* Mejora 4 (2 nov): comparar desde la clasificación y qué cambia al editar una respuesta */
+.r5-vs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; }
+.r5-vs > span { color: var(--ink-2); margin-right: 2px; }
+.r5-vs-b { min-height: 36px; min-width: 44px; padding: 4px 12px; border: 1.5px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); font: 700 14px var(--f-ui); cursor: pointer; }
+.r5-vs-b:hover { border-color: var(--ink); }
+.r5-vs-b:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.rv-delta { grid-column: 2 / -1; margin: 6px 0 0; padding: 8px 12px; border-left: 3px solid var(--mark); background: var(--sheet); color: var(--ink); }
