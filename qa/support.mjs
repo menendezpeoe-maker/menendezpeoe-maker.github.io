@@ -62,7 +62,9 @@ let base;
   const [popup] = await Promise.all([page.waitForEvent("popup"), sec.locator("a.btn").click()]);
   await popup.waitForLoadState("domcontentloaded").catch(() => {});
   await popup.waitForURL(/paypal\.com\/donate\?hosted_button_id=R2X5MXLRUM7U4/, { timeout: 30000 }).catch(() => {});
-  await popup.waitForTimeout(4000);
+  // 2 nov: antes esperaba 4 s fijos y fallaba cuando PayPal tardaba en cargar (3 veces ese día); ahora espera
+  // hasta 20 s a que aparezca el nombre de la donación. Lo que se comprueba no cambia.
+  await popup.waitForFunction(() => /EleccionesTest/.test(document.body?.innerText || ""), null, { timeout: 20000 }).catch(() => {});
   const title = await popup.title().catch(() => "");
   ok(/paypal\.com\/donate\?hosted_button_id=R2X5MXLRUM7U4/.test(popup.url()) && /EleccionesTest/.test(await popup.innerText("body").catch(() => "")), `PayPal real abre tu donación (${popup.url()})`);
   const ppHtml = (await popup.content().catch(() => "")).toLowerCase();
