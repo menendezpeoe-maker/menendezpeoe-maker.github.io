@@ -1156,3 +1156,26 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .r5-vs-b:hover { border-color: var(--ink); }
 .r5-vs-b:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .rv-delta { grid-column: 2 / -1; margin: 6px 0 0; padding: 8px 12px; border-left: 3px solid var(--mark); background: var(--sheet); color: var(--ink); }
+
+/* Mejora 5 (2 nov): imprimir o guardar en PDF el resultado. Se imprime el resumen (con la clasificación y el perfil) y
+   «¿Cómo se calcula?» con la postura de cada partido y su fuente; el resto de la página no. */
+.print-btn { display: inline-flex; align-items: center; gap: 6px; justify-self: start; padding: 6px 0; }
+.print-only { display: none; }
+@media print {
+  @page { margin: 14mm; }
+  :root { --paper: #fff; --sheet: #fff; --ink: #000; --ink-2: #333; --ink-3: #555; --rule: #bbb; --rule-2: #ddd; color-scheme: light; }
+  body { background: #fff !important; color: #000; font-size: 11pt; }
+  .site-head, .site-foot, .skip, .res-nav, #toast, .to-top, .q-mini, .unfold-row, #r-full, #r-friend, #v-results > section[aria-label], .res-actions, .print-btn, .useful, .r5-vs, .r5-all, .how .cmp-bar, .how-body .link-btn, .sig-more > summary, .ans-ok { display: none !important; }
+  #v-results .res-actions + p.small.muted { display: none !important; }
+  .print-only { display: block !important; font: 600 10pt var(--f-ui); color: #333; margin: 0 0 8pt; border-bottom: 1px solid #999; padding-bottom: 4pt; }
+  .rank5.r5-side { display: none !important; } .rank5.r5-main, .rank5 ol { display: block !important; }
+  .rank5 li { margin-bottom: 4pt; } /* en bloque, no en rejilla: Chrome superponía la fila siguiente al partir página */
+  .sum-main, .sig-more { display: block !important; }
+  .sig-more .link-btn { display: none !important; }
+  .ballot, .how { box-shadow: none !important; border: 1px solid #999 !important; break-inside: auto; }
+  .res-sec { padding-top: 12pt !important; }
+  .rank5 li, .how-list li, .sum-l li { break-inside: avoid; }
+  .how > summary::after { display: none; }
+  .r5-bar, .r5-bar i, .how-bar, .how-bar i, .logo, .rel i { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8.5pt; color: #444; word-break: break-all; }
+}
