@@ -1130,6 +1130,7 @@ function renderSummary() {
           </div>` : ""}
           ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
+          <button type="button" class="link-btn print-btn" data-act="print"><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5V3.5h9v4M5.5 14.5h-2v-6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v6h-2M5.5 11.5h9v5h-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Imprimir o guardar en PDF</button>
           ${top ? rank5(M, st, "main") : ""}
           <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
             ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
@@ -1874,6 +1875,7 @@ function bindResults() {
     if (e.target.closest("#r-unfold") && !$("#r-full").hidden) { setFull(false); const r = $("#r-unfold"); r.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); r.focus({ preventScroll: true }); return; }
     if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
     if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
+    if (e.target.closest('[data-act="print"]')) { window.print(); return; }
     const u = e.target.closest("[data-useful]"); if (u) { answerUseful(u.dataset.useful); return; }
     const a = e.target.closest('a[href^="#r-"]');
     if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
@@ -2547,6 +2549,21 @@ function restoreView(v) {
   fillSetup(); go("home", { push: false });
 }
 
+// Mejora 5 (2 nov): imprimir o guardar en PDF. Al imprimir se abren los desplegables del resumen y de «¿Cómo se calcula?»
+// (cerrados no se imprimen) y se pone la fecha en la cabecera de la hoja; al terminar, todo vuelve como estaba.
+// Se guarda la posición de cada desplegable (no el nodo), porque la página puede redibujarse mientras se imprime
+const PRINT_SEL = "#r-summary details, #r-how details";
+let PRINT_OPENED = [], PRINTING = false;
+addEventListener("beforeprint", () => {
+  if ($("#v-results")?.hidden || PRINTING) return; // algunos navegadores lanzan «beforeprint» dos veces
+  PRINTING = true;
+  PRINT_OPENED = $$(PRINT_SEL).map((d, i) => (d.open ? -1 : i)).filter((i) => i >= 0);
+  $$(PRINT_SEL).forEach((d) => { d.open = true; });
+  const h = $("#print-head") || Object.assign(document.createElement("p"), { id: "print-head", className: "print-only" });
+  h.textContent = `Test 29N · Resultado del ${new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" })} · test29n.es`;
+  $("#v-results").prepend(h);
+});
+addEventListener("afterprint", () => { const all = $$(PRINT_SEL); PRINT_OPENED.forEach((i) => { if (all[i]) all[i].open = false; }); PRINT_OPENED = []; PRINTING = false; });
 async function boot() {
   bindGlobal(); bindQuiz(); bindPrios(); bindResults(); bindShare(); bindTips();
   try { history.scrollRestoration = "manual"; } catch { /* idem */ }
