@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 2 nov 2026 · Mejora 4 · Resultados interactivos (aprobada por el titular tras ver la prueba)
+- **Comparar desde la clasificación** (`rank5` en `assets/papeleta.js`): «Comparar [primera] con:» y un botón por cada una de las otras cuatro, que abre el comparador «frente a frente» existente (`data-vs`) con esos dos partidos.
+- **Qué cambia al editar una respuesta** en «Revisa y cambia»: bajo la respuesta, «Tu coincidencia cambia: X 45 → 37 %, … y N más» y, si cambia, «Ahora tu mayor coincidencia es …»; o «Este cambio no mueve tu coincidencia con ninguna candidatura». Sustituye al aviso «Resultado recalculado» (los dos avisos se pisaban en el lector de pantalla).
+- **Verificación:** 21/21 en local y en la versión publicable. Nota: `support` falla a veces en la comprobación externa de PayPal (3 veces el 2 nov, siempre pasa al repetir; el enlace responde 200).
+
 ## 2 nov 2026 · Mejora 3 · Portada más corta en el móvil (aprobada por el titular tras ver la prueba)
 - **Cambio (`assets/mejora.js`, `assets/mejora.css`):** en el móvil (≤ 760 px), «Cómo funciona», «Qué lo hace distinto» y «Las 12 áreas del test» se pliegan (título con botón «+», patrón de acordeón con aria-expanded/aria-controls). Ningún texto cambia ni se quita; en ordenador, igual que antes. Altura de la portada a 390 px: 7.375 → 4.661 px.
 - **«Preguntas frecuentes» sigue abierta** a propósito: `qa/seo.mjs` exige que sus respuestas se vean a 390 px.
