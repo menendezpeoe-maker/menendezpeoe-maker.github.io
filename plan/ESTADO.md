@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 2 nov 2026 · Mejora 5 · Imprimir o guardar en PDF el resultado (aprobada por el titular tras ver la prueba)
+- **Cambio (`assets/papeleta.js`, `assets/papeleta.css`):** enlace «Imprimir o guardar en PDF» bajo los botones del resumen (`window.print()`). Estilo de impresión: cabecera con fecha y test29n.es, resumen con clasificación y perfil, coincidencias y discrepancias, y «¿Cómo se calcula?» con la postura de cada partido y su fuente (las URL se imprimen). Se ocultan menús, botones y el análisis completo. Antes de imprimir se abren los desplegables del resumen y del cálculo; después vuelven a su estado (se guarda su posición, no el nodo, por si la página se redibuja; protección ante «beforeprint» doble).
+- **Arreglado antes de publicar:** en la clasificación, la rejilla hacía que Chrome superpusiera la fila siguiente al partir página; en impresión va en bloque.
+- **Verificación:** PDF A4 de 3 páginas revisado; 21/21 en local y en la versión publicable.
+
 ## 2 nov 2026 · Mejora 4 · Resultados interactivos (aprobada por el titular tras ver la prueba)
 - **Comparar desde la clasificación** (`rank5` en `assets/papeleta.js`): «Comparar [primera] con:» y un botón por cada una de las otras cuatro, que abre el comparador «frente a frente» existente (`data-vs`) con esos dos partidos.
 - **Qué cambia al editar una respuesta** en «Revisa y cambia»: bajo la respuesta, «Tu coincidencia cambia: X 45 → 37 %, … y N más» y, si cambia, «Ahora tu mayor coincidencia es …»; o «Este cambio no mueve tu coincidencia con ninguna candidatura». Sustituye al aviso «Resultado recalculado» (los dos avisos se pisaban en el lector de pantalla).
