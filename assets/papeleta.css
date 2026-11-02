@@ -1126,3 +1126,25 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .rd-l { font: 600 20px var(--f-ui); fill: var(--ink); }
 .rd-l.rd-na { fill: var(--ink-3); font-weight: 400; }
 @media (forced-colors: active) { .rd-ring, .rd-ax, .rd-mid { stroke: GrayText; } .rd-mp { fill: none; stroke: CanvasText; } .rd-pp, .rd-pm { stroke: Highlight; } .rd-pm { fill: Highlight; } .rd-me, .rd-l { fill: CanvasText; } }
+
+/* Mejora 1 (2 nov): clasificación de las cinco más cercanas en el resumen */
+.rank5 { display: grid; gap: 8px; margin-top: 6px; }
+.rank5 ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.rank5 li { display: grid; grid-template-columns: 14px 26px minmax(0, 1fr) 54px; grid-template-areas: "n logo name pct" ". . bar bar"; align-items: center; gap: 2px 10px; padding: 6px 0; border-bottom: 1px solid var(--rule-2); }
+.rank5 .r5-n { grid-area: n; font: 700 13px var(--f-ui); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.rank5 .logo { grid-area: logo; }
+.rank5 .r5-name { grid-area: name; font-size: 15px; font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; }
+.rank5 .r5-pct { grid-area: pct; justify-self: end; font: 800 15px var(--f-ui); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rank5 .r5-bar { grid-area: bar; height: 6px; border-radius: 3px; background: var(--rule-2); overflow: hidden; }
+.rank5 .r5-bar i { display: block; height: 100%; border-radius: 3px; background: var(--ink-3); }
+.rank5 li.is-top .r5-bar i { background: var(--ink); }
+.rank5 li.is-top .r5-name { font-weight: 800; }
+.rank5 .r5-all { justify-self: start; padding: 4px 0; }
+.rank5.r5-side { display: none; }
+@media (min-width: 900px) { .rank5.r5-side { display: grid; } .rank5.r5-main { display: none; } }
+@media (forced-colors: active) { .rank5 .r5-bar { border: 1px solid CanvasText; } .rank5 .r5-bar i { background: CanvasText; } }
+/* Mejora 1: con el análisis completo plegado, el final no repite lo que está justo encima («Compartir», «Repetir», «Cómo se calcula») */
+#r-full[hidden] + .res-sec { padding-top: 8px; }
+#r-full[hidden] + .res-sec .dup { display: none; }
+/* Mejora 1: «¿Te ha resultado útil?» en su línea y «Sí»/«No» juntos debajo */
+.useful p { flex: 1 1 100%; }
