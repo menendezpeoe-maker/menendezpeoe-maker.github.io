@@ -18,10 +18,13 @@
   const centerQuestion = () => {
     const main = $("#q-main"); if (!main || $("#v-quiz").hidden) return;
     const first = $("#q-stmt", main), last = $(".q-aux", main) || $(".scale", main); if (!first || !last) return;
-    const bar = $(".quiz-bar"), fixed = bar && getComputedStyle(bar).position === "sticky" ? bar.getBoundingClientRect().height : 0;
+    const bar = $(".quiz-bar"), mini = $(".q-mini");
+    const fixed = bar && getComputedStyle(bar).position === "sticky" ? bar.getBoundingClientRect().height : mini && getComputedStyle(mini).display !== "none" ? mini.offsetHeight : 0;
     const top = first.getBoundingClientRect().top + scrollY, bottom = last.getBoundingClientRect().bottom + scrollY;
     const room = innerHeight - fixed, h = bottom - top;
+    const meta = $(".q-meta", main), metaTop = meta ? meta.getBoundingClientRect().top + scrollY : top;
     let y = h <= room - 24 ? top - fixed - (room - h) / 2 : top - fixed - 12;
+    y = Math.min(y, metaTop - fixed - 8);
     y = Math.max(0, Math.min(y, document.documentElement.scrollHeight - innerHeight));
     window.scrollTo({ top: y, behavior: "auto" });
   };
@@ -183,5 +186,24 @@
     };
     new MutationObserver(hook).observe(exRoot, { childList: true });
     hook();
+  }
+  const qBar = $(".quiz-bar"), qCount = $("#q-count"), qLabel = $("#q-prog-label"), qProg = $("#q-prog");
+  if (quizView && qBar && qCount && qProg) {
+    const mini = document.createElement("div"); mini.className = "q-mini"; mini.dataset.mejora = "bloque-2";
+    mini.innerHTML = '<button type="button" class="q-mini-prev" aria-label="Pregunta anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5"/></svg><span aria-hidden="true">Anterior</span></button><p class="q-mini-txt" aria-hidden="true"><b></b><span></span></p><span class="q-mini-line" aria-hidden="true"><i></i></span>';
+    quizView.append(mini);
+    const btn = $(".q-mini-prev", mini), b = $(".q-mini-txt b", mini), sp = $(".q-mini-txt span", mini), line = $(".q-mini-line i", mini);
+    const sync = () => {
+      b.textContent = qCount.textContent;
+      sp.textContent = (qLabel && qLabel.textContent.replace(/^Área \d+ de \d+ · /, "")) || "";
+      const now = Number(qProg.getAttribute("aria-valuenow")) || 0, max = Number(qProg.getAttribute("aria-valuemax")) || 1;
+      line.style.width = `${Math.round(now / max * 100)}%`;
+      btn.hidden = /^Pregunta 1 de /.test(qCount.textContent);
+    };
+    new MutationObserver(sync).observe(qCount, { childList: true, characterData: true, subtree: true });
+    new MutationObserver(sync).observe(qProg, { attributes: true, attributeFilter: ["aria-valuenow", "aria-valuemax"] });
+    sync();
+    btn.addEventListener("click", () => { const p = $("#q-prev"); if (p) p.click(); });
+    new IntersectionObserver(([e]) => mini.classList.toggle("on", e.intersectionRatio < 0.9), { threshold: [0, 0.9, 1] }).observe(qBar);
   }
 })();
