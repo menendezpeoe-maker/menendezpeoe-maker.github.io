@@ -299,4 +299,30 @@
     // Visible mientras la barra original no se ve casi entera (si solo asoma un trozo, no sirve para orientarse)
     new IntersectionObserver(([e]) => mini.classList.toggle("on", e.intersectionRatio < 0.9), { threshold: [0, 0.9, 1] }).observe(qBar);
   }
+
+  /* BLOQUE 3 (2 nov) · Portada más corta en el móvil
+     MEJORA: en el móvil (≤ 760 px) la portada ocupaba unas 9 pantallas. «Cómo funciona», «Qué lo hace distinto» y
+     «Las 12 áreas del test» se pliegan: su título pasa a ser un botón con «+» que despliega el contenido (patrón de
+     acordeón de WAI-ARIA: el botón va dentro del título y lleva aria-expanded y aria-controls). No cambia ni se quita
+     ningún texto: sigue en la página (lo leen igual los buscadores) y en ordenador todo queda como estaba.
+     «Preguntas frecuentes» se queda abierta a propósito (qa/seo.mjs lo exige). WCAG 1.3.1, 2.4.6, 4.1.2. */
+  const FOLD_MQ = matchMedia("(max-width: 760px)");
+  const folds = [["how-h", ".steps"], ["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+    const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
+    return { h, sec, bodies: $$(body, sec), text: h.textContent };
+  }).filter(Boolean);
+  const buildFolds = () => {
+    for (const f of folds) {
+      const on = FOLD_MQ.matches, btn = $(".m-fold-btn", f.h);
+      if (on && !btn) {
+        const id = `${f.h.id}-body`; f.bodies.forEach((b, i) => { b.classList.add("m-fold-body"); if (!i && !b.id) b.id = id; });
+        const b = document.createElement("button"); b.type = "button"; b.className = "m-fold-btn"; b.setAttribute("aria-expanded", "false");
+        b.setAttribute("aria-controls", f.bodies.map((x) => x.id).filter(Boolean).join(" "));
+        b.textContent = f.text; f.h.textContent = ""; f.h.append(b); f.sec.classList.add("m-fold");
+        b.addEventListener("click", () => { const open = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", String(open)); f.sec.classList.toggle("open", open); });
+      } else if (!on && btn) { f.h.textContent = f.text; f.sec.classList.remove("m-fold", "open"); f.bodies.forEach((b) => b.classList.remove("m-fold-body")); }
+    }
+  };
+  buildFolds();
+  FOLD_MQ.addEventListener("change", buildFolds);
 })();
