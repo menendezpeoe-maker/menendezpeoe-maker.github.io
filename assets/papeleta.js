@@ -1089,7 +1089,10 @@ function renderVersus() {
 // «Compartir» y «Reta a un amigo» sigan en la primera pantalla. Solo una de las dos se muestra.
 function rank5(M, st, where) {
   const rows = M.prov.slice(0, 5).map((m, i) => `<li${i ? "" : ' class="is-top"'}><span class="r5-n" aria-hidden="true">${i + 1}</span>${logo(m.pid, "xs")}<span class="r5-name">${esc(pName(m.pid, st.prov))}</span><span class="r5-bar" aria-hidden="true"><i style="width:${m.pct}%"></i></span><b class="r5-pct">${m.pct} %</b></li>`).join("");
-  return `<div class="rank5 r5-${where}"><p class="subh" id="r5-h-${where}">Coincidencia con cada candidatura</p><ol aria-labelledby="r5-h-${where}">${rows}</ol>${M.prov.length > 5 ? `<a class="link-btn r5-all" href="#r-parties">Ver las ${M.prov.length} candidaturas de ${esc(PROV[st.prov].name)}</a>` : ""}</div>`;
+  // Mejora 4 (2 nov): comparar la primera con cualquiera de las otras cuatro, con el comparador «frente a frente» que ya existía
+  const top = M.prov[0], rest = M.prov.slice(1, 5);
+  const vs = top && rest.length ? `<div class="r5-vs"><span class="small">Comparar ${esc(pName(top.pid, st.prov))} con:</span>${rest.map((m) => `<button type="button" class="r5-vs-b" data-vs="${m.pid}" >${esc(pName(m.pid, st.prov))}</button>`).join("")}</div>` : "";
+  return `<div class="rank5 r5-${where}"><p class="subh" id="r5-h-${where}">Coincidencia con cada candidatura</p><ol aria-labelledby="r5-h-${where}">${rows}</ol>${vs}${M.prov.length > 5 ? `<a class="link-btn r5-all" href="#r-parties">Ver las ${M.prov.length} candidaturas de ${esc(PROV[st.prov].name)}</a>` : ""}</div>`;
 }
 function renderSummary() {
   const st = ST(), M = MODEL, pr = PROV[st.prov], top = M.prov[0];
@@ -1849,9 +1852,17 @@ function bindResults() {
     else if (c === "ans" && !SHARED) {
       const id = el.dataset.q, v = el.value === "" ? undefined : Number(el.value);
       if (v === undefined) delete S.ans[id]; else S.ans[id] = v;
+      const before = Object.fromEntries(MODEL.prov.map((m) => [m.pid, m.pct])), topBefore = MODEL.prov[0]?.pid;
       save(); rerenderAfterEdit();
-      el.closest(".rv").classList.add("changed");
-      toast("Resultado recalculado");
+      const row = el.closest(".rv"); row.classList.add("changed");
+      // Mejora 4 (2 nov): qué ha cambiado, junto a la respuesta (antes solo «Resultado recalculado»)
+      $$(".rv-delta").forEach((x) => x.remove());
+      const ch = MODEL.prov.filter((m) => before[m.pid] !== undefined && before[m.pid] !== m.pct).sort((x, y) => Math.abs(y.pct - before[y.pid]) - Math.abs(x.pct - before[x.pid]));
+      const topNow = MODEL.prov[0]?.pid, ab = (pid) => esc(pName(pid, ST().prov));
+      const msg = ch.length
+        ? `Tu coincidencia cambia: ${ch.slice(0, 3).map((m) => `${ab(m.pid)} ${before[m.pid]}&nbsp;→&nbsp;${m.pct}&nbsp;%`).join(", ")}${ch.length > 3 ? ` y ${ch.length - 3} más` : ""}.${topNow && topNow !== topBefore ? ` Ahora tu mayor coincidencia es ${esc(pName(topNow, ST().prov))}.` : ""}`
+        : "Este cambio no mueve tu coincidencia con ninguna candidatura.";
+      (el.closest(".rv-ctl") || row).insertAdjacentHTML("afterend", `<p class="rv-delta small" role="status">${msg}</p>`); // sustituye al aviso «Resultado recalculado» (dos avisos a la vez se pisaban en el lector de pantalla)
     }
   });
   root.addEventListener("keydown", (e) => {
