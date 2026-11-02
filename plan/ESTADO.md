@@ -35,7 +35,7 @@ Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 - **Clasificación de las 5 candidaturas más cercanas** en el resumen (`rank5` en `assets/papeleta.js`, estilos `.rank5` en `assets/papeleta.css`): logo, nombre, barra en escala real 0–100 % y porcentaje, con enlace «Ver las N candidaturas de [provincia]». Sustituye la línea «Siguientes: …». En ordenador va en la columna derecha; en móvil, tras los botones, para que «Compartir» y «Reta a un amigo» sigan en la primera pantalla (lo exige `qa/summary.mjs`).
 - **Final sin repeticiones:** con el análisis completo plegado ya no se repiten «Compartir mi resultado», «Repetir el test» ni «Cómo se calcula» (clase `.dup`); vuelven al desplegarlo.
 - **«¿Te ha resultado útil?»** en su línea, con «Sí»/«No» juntos debajo.
-- **Verificación:** 21/21 en local (`support` falló una vez por la comprobación externa de PayPal y pasó al repetirla) y en la versión publicable.
+- **Verificación:** 21/21 en local (`support` falló una vez por la comprobación externa de PayPal y pasó al repetirla), en la versión publicable y en la web real. IndexNow 200.
 
 ## 1 nov 2026 · Velocidad de la portada en móvil (petición del titular)
 - **Problema (pendiente desde el 31 oct):** con 3G lenta, «Empezar» tardaba ~8,8 s: los datos se pedían solo después de descargar y ejecutar `papeleta.js`, y la fuente precargada (85 kB) compartía la conexión con ellos.
