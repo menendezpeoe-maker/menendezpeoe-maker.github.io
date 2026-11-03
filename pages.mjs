@@ -330,7 +330,7 @@ q();
   // ── Provincias: escaños del real decreto y candidaturas que se presentan según los datos del test
   const provRegion = Object.fromEntries(PD.regions.flatMap((r) => r.provs.map((x) => [x.id, r.id])));
   const runsIn = (pid, prov) => { const sc = P[pid].scope, r = provRegion[prov]; if ((sc.except || []).includes(prov)) return false; if (sc.all) return !(sc.except || []).includes(r); if (sc.regions) return sc.regions.includes(r); if (sc.provinces) return sc.provinces.includes(prov); return false; };
-  const localName = (pid, prov) => P[pid].local?.[provRegion[prov]] || P[pid].name;
+  const localName = (pid, prov) => P[pid].local?.[prov] || P[pid].local?.[provRegion[prov]] || P[pid].name;
   const provList = PD.regions.flatMap((r) => r.provs.map((x) => ({ ...x, region: r })));
   const missingSeats = provList.filter((x) => !SEATS[x.id]).map((x) => x.id);
   if (missingSeats.length) throw new Error(`Faltan escaños para: ${missingSeats.join(", ")}`);

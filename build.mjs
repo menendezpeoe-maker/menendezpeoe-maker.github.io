@@ -102,6 +102,7 @@ const parties = PARTIES.map((p) => {
   if (p.tbd) out.tbd = true;
   if (p.out) out.out = p.out;
   Object.assign(out, { scope: p.scope });
+  Object.keys(p.local || {}).forEach((k) => regionIds.has(k) || provIds.has(k) || err(`${p.id}: «local» con región o provincia desconocida ${k}`));
   if (p.local) out.local = p.local;
   Object.assign(out, { desc: p.desc, props });
   return out;

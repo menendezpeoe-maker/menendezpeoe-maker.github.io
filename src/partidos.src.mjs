@@ -7,7 +7,8 @@
 //   { all: true, except: [regiones] } · { regions: [...] } · { provinces: [...] }
 //   «except» admite también provincias sueltas (ids de provincia), en cualquier tipo de scope.
 //   3 nov 2026: ajustado a la proclamación definitiva de candidaturas al Congreso (BOE-A-2026-23103).
-// local: nombre que figura en la papeleta de una comunidad concreta.
+// local: nombre que figura en la papeleta de una comunidad o una provincia concreta (la provincia manda).
+//   3 nov 2026: revisado con la proclamación del BOE (BOE-A-2026-23103).
 // props: [propuesta, código de la pregunta relacionada o null].
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
@@ -15,7 +16,7 @@ export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","e
 
 export const PARTIES = [
  { id: "psoe", name: "PSOE", ab: "PSOE", color: "#E30613", tag: "Socialdemocracia · centroizquierda", lead: "Pedro Sánchez",
-   scope: { all: true }, local: { cat: "PSC-PSOE", pv: "PSE-EE (PSOE)", gal: "PSdeG-PSOE", nav: "PSN-PSOE" },
+   scope: { all: true }, local: { cat: "PSC-PSOE", pv: "PSE-EE (PSOE)", gal: "PSdeG-PSOE", nav: "PSN-PSOE", bal: "PSIB-PSOE" },
    desc: "Partido socialdemócrata, en el Gobierno desde 2018. Defiende ampliar el Estado del bienestar, intervenir el mercado de la vivienda y una España plural apoyada en acuerdos con fuerzas nacionalistas.",
    props: [["Reducir por ley la jornada máxima a 37,5 horas semanales sin rebaja de sueldo.","A01"],
      ["Mantener los topes al alquiler de la Ley de Vivienda en las zonas tensionadas.","B01"],
@@ -60,7 +61,7 @@ export const PARTIES = [
      ["Proteger la tauromaquia y la caza.","I08"],
      ["Rechazar el acuerdo UE-Mercosur en defensa del campo.","K01"]] },
  { id: "fa", name: "Frente Amplio", ab: "FA", color: "#D81E72", tag: "Izquierda · ecologismo", lead: "Ada Colau",
-   scope: { all: true, except: ["ara","bal","can","val","ceu","mel"] }, local: { and: "Frente Amplio por Andalucía" },
+   scope: { all: true, except: ["ara","bal","can","val","ceu","mel"] }, local: { cat: "Comuns-Front Ampli", gal: "Frente Amplio-Fronte Ampla", nav: "Frente Amplio-Fronte Zabala", ast: "Frente Ampliu por Asturies", alava: "Frente Amplio-Fronte Zabala", cadiz: "Frente Amplio Andaluz", cordoba: "Frente Amplio Andaluz", granada: "Frente Amplio Andaluz", huelva: "Frente Amplio Andaluz", sevilla: "Frente Amplio Andaluz" },
    desc: "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, heredera del espacio de Sumar, esta vez sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
    props: [["Jornada de 37,5 horas y avanzar hacia la de 32.","A01"],
      ["Congelar el precio del alquiler y prorrogar tres años los contratos vigentes.","B01"],
@@ -138,7 +139,7 @@ export const PARTIES = [
      ["El euskera como requisito en la administración vasca y como lengua oficial en la UE.","I09"],
      ["Más integración europea.","H02"]] },
  { id: "bildu", name: "EH Bildu", ab: "BILDU", color: "#8FB10E", tag: "Izquierda independentista vasca",
-   scope: { regions: ["pv","nav"] },
+   scope: { regions: ["pv","nav"] }, local: { nav: "EH Bildu-ERC" },
    desc: "Izquierda abertzale con candidatura propia en Euskadi y Navarra. Defiende el derecho a decidir de Euskal Herria, políticas sociales de izquierda, el euskera y un marco vasco de relaciones laborales.",
    props: [["Derecho a decidir para Euskal Herria.","C05"],
      ["Topes al alquiler e intervención pública en la vivienda.","B01"],
@@ -213,7 +214,7 @@ export const PARTIES = [
      ["Jornada laboral de 37,5 horas.","A01"],
      ["PAC para profesionales y explotaciones familiares.","K03"]] },
  { id: "existe", name: "Coalición Existe", ab: "EXISTE", color: "#3A8434", tag: "España Vaciada · transversal",
-   scope: { provinces: ["teruel"] },
+   scope: { provinces: ["teruel"] }, local: { ara: "Teruel Existe" },
    desc: "Coalición de Teruel Existe y Aragón Existe. Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
    props: [["Fiscalidad diferenciada en las zonas despobladas.","F07"],
      ["Infraestructuras pendientes: autovías y tren Zaragoza-Teruel-Valencia.",null],

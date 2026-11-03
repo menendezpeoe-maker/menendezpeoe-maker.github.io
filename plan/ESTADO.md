@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 3 nov 2026 · Nombres en la papeleta según el BOE (petición del titular)
+- **Cambio (`src/partidos.src.mjs`, `local`):** cada candidatura del test usa el nombre de su lista en el BOE: Frente Amplio como «Comuns-Front Ampli» (Cataluña), «Frente Amplio-Fronte Ampla» (Galicia), «Frente Amplio-Fronte Zabala» (Navarra y Álava), «Frente Ampliu por Asturies» y «Frente Amplio Andaluz» (Cádiz, Córdoba, Granada, Huelva y Sevilla; en Almería, Jaén y Málaga va como «Frente Amplio»); antes ponía «Frente Amplio por Andalucía», que no figura en el BOE. EH Bildu en Navarra, «EH Bildu-ERC»; PSOE en Baleares, «PSIB-PSOE»; Existe, «Teruel Existe».
+- **`local` admite provincias** (la provincia manda sobre la comunidad): `pName` en `assets/papeleta.js`, `localName` en `pages.mjs`; `build.mjs` valida las claves.
+- **Verificación:** 21/21 en local.
+
 ## 3 nov 2026 · C1 · Candidaturas definitivas y cabezas de lista (adelantada a petición del titular; la tarea de las 16:47 se desactivó)
 - **BOE:** proclamación definitiva BOE-A-2026-23103 (3 nov, 225 págs.): 52 circunscripciones, 533 candidaturas proclamadas, 21 no proclamadas. Detalle en `plan/AUDITORIA-CANDIDATURAS.md`.
 - **Candidaturas (`src/partidos.src.mjs`):** fuera del test UPL, Por Ávila y Jaén Merece Más (`out`); PACMA fuera de 22 circunscripciones, SALF de 6, Podemos de Baleares y Melilla, Frente Amplio de Ceuta y Melilla; CHA solo Huesca y Zaragoza; Existe solo Teruel; D21 y Soria ¡Ya! ya no «por confirmar». `except` admite ahora provincias (cambiado en `papeleta.js`, `pages.mjs`, `build.mjs` y las pruebas `territorio`, `metodologia`, `explain`). Sin diferencias con el BOE tras el cambio. 24 candidaturas en el test.

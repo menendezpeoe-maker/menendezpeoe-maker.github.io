@@ -141,7 +141,7 @@ function runsIn(pid, provId) {
   return false;
 }
 const partiesIn = (provId) => PIDS.filter((pid) => runsIn(pid, provId));
-function pName(pid, provId) { const p = P[pid]; const r = PROV[provId]?.region; return (p.local && r && p.local[r]) || p.name; }
+function pName(pid, provId) { const p = P[pid]; const r = PROV[provId]?.region; return (p.local && (p.local[provId] || (r && p.local[r]))) || p.name; } // «local» admite provincia o comunidad (3 nov)
 function logo(pid, cls = "") { const p = P[pid]; return `<span class="logo ${cls}${p.ab.length >= 5 ? " long" : ""}" style="background:${p.color};color:${textOn(p.color)}" aria-hidden="true">${esc(p.ab)}</span>`; }
 const qCode = (q) => `${AREA[q.area].letter}·${q.id.slice(1)}`;
 
