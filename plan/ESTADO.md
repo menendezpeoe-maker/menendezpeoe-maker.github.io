@@ -9,6 +9,7 @@
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
 **Orden de trabajo para la próxima tanda**
+0. **Fuentes pendientes:** 120 posturas documentadas sin enlace en `plan/fuentes-en-curso/pendiente.json` (método en su `LEEME.md`). Después, revisión de enlaces de todas las fuentes (el titular la pidió el 3 nov tras esto, avisándole).
 1. **Debates (`src/debates.src.mjs`):** a 1 nov, tres propuestas sin confirmar (Mediaset 16 nov, RTVE 23 nov, Atresmedia sin fecha). En cada tanda de campaña: actualizar estado, hora y cadena con fuente; tras cada debate, solo el enlace al vídeo oficial. No indicar qué partido acepta cada uno (neutralidad).
 2. **Partidos regionales (decisión del titular pendiente):** el BOE recoge candidaturas regionales que no están en el test (Alhora, NEX, PREPAL, Convergents, Valencia Unida, Liberación Canaria, FIA…; lista en `plan/AUDITORIA-CANDIDATURAS.md`). El código admite posturas desconocidas («0»), pero cada postura necesita fuente: no añadir ninguno a medias. Ya aparecen, con su cabeza de lista, en la lista del BOE de cada página de provincia.
 3. **Programas del 29N:** a 3 nov, ninguno publicado. Cuando salga uno: `src/programas.src.mjs` (`publicados`, `comprobado`) y revisión de sus 107 posturas con el PDF como fuente `programa`.
@@ -30,6 +31,13 @@
 - Ninguno conocido. (La lentitud de la portada en 3G se mejoró el 1 nov: ver la entrada «Velocidad de la portada».)
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 3 nov 2026 · Fuentes de las posturas documentadas sin enlace (petición del titular, a medias)
+- **Punto de partida:** de 2.130 posturas, 1.246 estimadas, 639 con fuente y **258 marcadas como documentadas pero sin enlace ni justificación**.
+- **Hecho (138 de 258):** dos investigadores buscaron fuente para cada una; `verificar.py` comprobó que cada página responde y contiene la cita (111 de 112; la otra, revisada a mano). Aplicado con `qa/herramientas/aplicar-fuentes.mjs`: **110 fuentes nuevas con su justificación**; **40 posturas pasan a estimadas** (26 sin fuente fiable, B05/vox con fuente ambigua, C07/d21 y 12 de Democracia 21 cuya única fuente es el programa de Ciudadanos de 2019, que se enlaza pero no es de D21); **3 cambios de valor con fuente**: H05/ccpc 4→2 (Clavijo asume en 2024 la posición del Gobierno sobre el Sáhara), A02/d21 2→3 y D09/bildu 1→4 (estimada; propuesta de Otxandiano en 2024). Registro en `src/correcciones.json` (no público, decisión del 28 oct).
+- **Pendiente: 120 posturas** (`plan/fuentes-en-curso/pendiente.json`): los investigadores se pararon al agotarse el límite de uso de 5 horas. Mismo método.
+- **Rendimiento:** `data/preguntas.json` 384 → 426 kB sin comprimir (+9 kB comprimido). Portada en la web real: 389 kB y 8,2–8,4 s con 3G lenta (antes 380 kB y 7,2 s). Presupuestos: web real 380 kB/8,5 s → 410 kB/9 s; local 1000 → 1060 kB. `UPDATED` → 2026-11-03.
+- **Verificación:** 21/21 en local y en la versión publicable; web real 20/21 hasta ajustar el presupuesto de rendimiento, después 21/21. IndexNow 200 (231 URL).
 
 ## 3 nov 2026 · Nombres en la papeleta según el BOE (petición del titular)
 - **Cambio (`src/partidos.src.mjs`, `local`):** cada candidatura del test usa el nombre de su lista en el BOE: Frente Amplio como «Comuns-Front Ampli» (Cataluña), «Frente Amplio-Fronte Ampla» (Galicia), «Frente Amplio-Fronte Zabala» (Navarra y Álava), «Frente Ampliu por Asturies» y «Frente Amplio Andaluz» (Cádiz, Córdoba, Granada, Huelva y Sevilla; en Almería, Jaén y Málaga va como «Frente Amplio»); antes ponía «Frente Amplio por Andalucía», que no figura en el BOE. EH Bildu en Navarra, «EH Bildu-ERC»; PSOE en Baleares, «PSIB-PSOE»; Existe, «Teruel Existe».
