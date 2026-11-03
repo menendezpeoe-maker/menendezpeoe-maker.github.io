@@ -1,0 +1,470 @@
+[
+ {
+  "id": "A03/upn",
+  "q": "A03",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "A10/bildu",
+  "q": "A10",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El impuesto de sucesiones debería eliminarse en las herencias entre padres e hijos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B03/fa",
+  "q": "B03",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B04/bildu",
+  "q": "B04",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B05/bildu",
+  "q": "B05",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/bildu",
+  "q": "B08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/pnv",
+  "q": "C01",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/bildu",
+  "q": "C01",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C03/pod",
+  "q": "C03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/gbai",
+  "q": "C03",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C04/upn",
+  "q": "C04",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "España debería reformar la Constitución para convertirse en un Estado federal.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C05/upn",
+  "q": "C05",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Debería poder celebrarse un referéndum de independencia pactado si lo pide una mayoría clara de una comunidad.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C06/pnv",
+  "q": "C06",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Las diputaciones provinciales deberían suprimirse y sus funciones pasar a comunidades y ayuntamientos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D06/pod",
+  "q": "D06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/junts",
+  "q": "D07",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/upn",
+  "q": "D07",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D07/bng",
+  "q": "D07",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D09/junts",
+  "q": "D09",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D09/bng",
+  "q": "D09",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F04/pod",
+  "q": "F04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F05/junts",
+  "q": "F05",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "2 = En desacuerdo"
+ },
+ {
+  "id": "F06/pod",
+  "q": "F06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F08/pod",
+  "q": "F08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F08/bildu",
+  "q": "F08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F09/fa",
+  "q": "F09",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F09/pod",
+  "q": "F09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F09/bildu",
+  "q": "F09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G03/pod",
+  "q": "G03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "G04/pod",
+  "q": "G04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/pod",
+  "q": "H09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/bildu",
+  "q": "H09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/bng",
+  "q": "H09",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/adel",
+  "q": "H09",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/pnv",
+  "q": "I01",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "4 = De acuerdo"
+ },
+ {
+  "id": "I05/fa",
+  "q": "I05",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I05/pod",
+  "q": "I05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I06/pod",
+  "q": "I06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las becas deberían exigir mejores notas que el simple aprobado.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I07/bng",
+  "q": "I07",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/pod",
+  "q": "I09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "4 = De acuerdo"
+ },
+ {
+  "id": "I09/junts",
+  "q": "I09",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/pnv",
+  "q": "I09",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/upn",
+  "q": "I09",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J02/bildu",
+  "q": "J02",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Si la sanidad pública supera un plazo máximo de espera, el paciente debería poder operarse en una clínica privada pagada por el sistema público.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/junts",
+  "q": "J08",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/pnv",
+  "q": "J08",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/bildu",
+  "q": "J08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K01/bildu",
+  "q": "K01",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K07/pod",
+  "q": "K07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K08/pod",
+  "q": "K08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L01/adel",
+  "q": "L01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "El derecho al aborto debería incluirse en la Constitución.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L04/fa",
+  "q": "L04",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "La gestación subrogada debería legalizarse con garantías para la mujer gestante.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "L05/upn",
+  "q": "L05",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Los acuerdos de 1979 con la Santa Sede deberían revisarse para reducir las ventajas que reconocen a la Iglesia católica.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ }
+]

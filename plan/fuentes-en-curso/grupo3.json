@@ -1,0 +1,614 @@
+[
+ {
+  "id": "B01/upc",
+  "q": "B01",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "El Estado debería poder limitar el precio del alquiler en las zonas donde los precios se han disparado.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/upc",
+  "q": "B05",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/drago",
+  "q": "B05",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/comp",
+  "q": "B05",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/mes",
+  "q": "B05",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B07/upc",
+  "q": "B07",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B07/drago",
+  "q": "B07",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B07/mes",
+  "q": "B07",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/upc",
+  "q": "B08",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/drago",
+  "q": "B08",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/mes",
+  "q": "B08",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/comp",
+  "q": "C01",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "tipo": "likert",
+  "postura": "2 = En desacuerdo"
+ },
+ {
+  "id": "C03/ccpc",
+  "q": "C03",
+  "pid": "ccpc",
+  "partido": "Coalición Canaria – Primero Canarias",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/upc",
+  "q": "C03",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/drago",
+  "q": "C03",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/cha",
+  "q": "C03",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/mes",
+  "q": "C03",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C04/comp",
+  "q": "C04",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "España debería reformar la Constitución para convertirse en un Estado federal.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C07/existe",
+  "q": "C07",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C07/soria",
+  "q": "C07",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D01/pacma",
+  "q": "D01",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D01/existe",
+  "q": "D01",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D01/soria",
+  "q": "D01",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D04/comp",
+  "q": "D04",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "Las Cortes deberían poder aprobar amnistías para cerrar conflictos políticos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "E08/upc",
+  "q": "E08",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E08/comp",
+  "q": "E08",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E09/comp",
+  "q": "E09",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F03/upc",
+  "q": "F03",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F05/upc",
+  "q": "F05",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F05/drago",
+  "q": "F05",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "G01/pacma",
+  "q": "G01",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "España debería alargar la vida de sus centrales nucleares más allá del calendario de cierre previsto, que termina en 2035.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G02/soria",
+  "q": "G02",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H01/upc",
+  "q": "H01",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H01/drago",
+  "q": "H01",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H01/cha",
+  "q": "H01",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H01/mes",
+  "q": "H01",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H04/upc",
+  "q": "H04",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H04/drago",
+  "q": "H04",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H04/comp",
+  "q": "H04",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H04/cha",
+  "q": "H04",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H04/mes",
+  "q": "H04",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/upc",
+  "q": "H05",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/drago",
+  "q": "H05",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H09/upc",
+  "q": "H09",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/drago",
+  "q": "H09",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/comp",
+  "q": "H09",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/cha",
+  "q": "H09",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/mes",
+  "q": "H09",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/upc",
+  "q": "I01",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/cha",
+  "q": "I01",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/mes",
+  "q": "I01",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I05/comp",
+  "q": "I05",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I05/mes",
+  "q": "I05",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I07/upc",
+  "q": "I07",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I08/pacma",
+  "q": "I08",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I08/upc",
+  "q": "I08",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I08/drago",
+  "q": "I08",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I08/mes",
+  "q": "I08",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I09/mes",
+  "q": "I09",
+  "pid": "mes",
+  "partido": "Ara MÉS – Front Ampli",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "J01/upc",
+  "q": "J01",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "La sanidad pública debería dejar de encargar operaciones y la gestión de hospitales a empresas privadas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "K01/pacma",
+  "q": "K01",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K04/pacma",
+  "q": "K04",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K05/pacma",
+  "q": "K05",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "Debería prohibirse abrir nuevas macrogranjas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "K05/drago",
+  "q": "K05",
+  "pid": "drago",
+  "partido": "Drago Canarias",
+  "afirmacion": "Debería prohibirse abrir nuevas macrogranjas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "K07/pacma",
+  "q": "K07",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "afirmacion": "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "L01/upc",
+  "q": "L01",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "El derecho al aborto debería incluirse en la Constitución.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L03/upc",
+  "q": "L03",
+  "pid": "upc",
+  "partido": "Unidad del Pueblo Canario",
+  "afirmacion": "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L03/comp",
+  "q": "L03",
+  "pid": "comp",
+  "partido": "Compromís – Front Valencià",
+  "afirmacion": "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ }
+]
