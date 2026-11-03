@@ -1,10 +1,10 @@
 {
- "generado": "2026-10-28",
+ "generado": "2026-11-03",
  "datos": "2026-10-27",
  "preguntas": 107,
  "imitacion": {
-  "total": 25,
-  "primero": 25,
+  "total": 24,
+  "primero": 24,
   "detalle": [
    {
     "pid": "psoe",
@@ -128,7 +128,7 @@
    },
    {
     "pid": "existe",
-    "prov": "huesca",
+    "prov": "teruel",
     "primero": true,
     "pct": 87
    },
@@ -143,12 +143,6 @@
     "prov": "almeria",
     "primero": true,
     "pct": 100
-   },
-   {
-    "pid": "jmm",
-    "prov": "jaen",
-    "primero": true,
-    "pct": 71
    },
    {
     "pid": "soria",
@@ -358,12 +352,6 @@
    "pid": "adel",
    "conocidas": 91,
    "estimadas": 75,
-   "conFuente": 0
-  },
-  {
-   "pid": "jmm",
-   "conocidas": 21,
-   "estimadas": 19,
    "conFuente": 0
   },
   {

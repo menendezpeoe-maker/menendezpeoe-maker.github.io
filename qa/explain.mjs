@@ -57,7 +57,7 @@ console.log("Tu perfil, explicado");
 }
 {
   // Opiniones sin candidatura: pregunta en la que ninguna candidatura de Madrid está de acuerdo
-  const madrid = pd.parties.filter((p) => !p.out && (p.scope.all ? !(p.scope.except || []).includes("mad") : (p.scope.regions || []).includes("mad") || (p.scope.provinces || []).includes("madrid"))).map((p) => p.id);
+  const madrid = pd.parties.filter((p) => !p.out && !(p.scope.except || []).includes("madrid") && (p.scope.all ? !(p.scope.except || []).includes("mad") : (p.scope.regions || []).includes("mad") || (p.scope.provinces || []).includes("madrid"))).map((p) => p.id);
   const q = bank.questions.find((x) => { const w = madrid.filter((pid) => x.pos[pid]); return w.length >= 2 && w.every((pid) => x.pos[pid] <= 3); });
   const ans = asParty("psoe"); ans[q.id] = 5;
   const { ctx, page } = await open(state(ans));

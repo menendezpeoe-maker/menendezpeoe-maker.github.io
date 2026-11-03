@@ -10,7 +10,7 @@
 //   lr     Lectura clásica izquierda-derecha: +1 si responder 5 es la posición habitual de la derecha,
 //          -1 si es la de la izquierda, 0 si el tema no se alinea así.
 //   ctx    Contexto neutral (40-85 palabras): qué se plantea, conceptos y argumentos de ambos lados.
-//   pos    Posturas de las 27 candidaturas en el orden de PARTY_ORDER (partidos.src.mjs):
+//   pos    Posturas de las candidaturas en el orden de PARTY_ORDER (partidos.src.mjs):
 //          1-5 = postura, 0 = sin postura conocida, sufijo ~ = postura estimada (menos peso).
 
 export const DIMS = [

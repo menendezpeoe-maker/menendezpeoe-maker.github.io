@@ -17,7 +17,7 @@ const provs = pd.regions.flatMap((r) => r.provs.map((p) => ({ ...p, region: r.id
 ok(provs.length === 52 && Object.keys(SEATS).length === 52 && Object.values(SEATS).reduce((a, b) => a + b, 0) === 350, "52 circunscripciones y 350 diputados, como el anexo del real decreto");
 ok(SEATS.madrid === 38 && SEATS.barcelona === 32 && SEATS.soria === 2 && SEATS.ceuta === 1, "Madrid 38, Barcelona 32, Soria 2, Ceuta 1");
 const live = pd.order.filter((pid) => !pd.parties.find((p) => p.id === pid).out);
-const runs = (pid, pr) => { const s = pd.parties.find((p) => p.id === pid).scope; if (s.all) return !(s.except || []).includes(pr.region); if (s.regions) return s.regions.includes(pr.region); if (s.provinces) return s.provinces.includes(pr.id); return false; };
+const runs = (pid, pr) => { const s = pd.parties.find((p) => p.id === pid).scope; if ((s.except || []).includes(pr.id)) return false; if (s.all) return !(s.except || []).includes(pr.region); if (s.regions) return s.regions.includes(pr.region); if (s.provinces) return s.provinces.includes(pr.id); return false; };
 let bad = [];
 for (const pr of provs) {
   const r = await get(`provincias/${pr.id}/`);
@@ -25,6 +25,15 @@ for (const pr of provs) {
   if (r.status !== 200 || !r.text.includes(`<b>${SEATS[pr.id]}</b> de 350`) || !r.text.includes(`<dd>${n}</dd>`) || !r.text.includes(`/escanos/?p=${pr.id}`) || (r.text.match(/<h1[\s>]/g) || []).length !== 1) bad.push(pr.id);
 }
 ok(!bad.length, `las 52 páginas muestran sus escaños, sus candidaturas y el enlace al simulador${bad.length ? `: fallan ${bad.join(", ")}` : ""}`);
+// C1 (3 nov): candidaturas proclamadas y cabezas de lista del BOE en cada provincia
+const CANDS = JSON.parse(fs.readFileSync(new URL("../src/candidaturas.json", import.meta.url)));
+bad = [];
+for (const pr of provs) {
+  const r = await get(`provincias/${pr.id}/`), boe = CANDS.provs[pr.id] || [];
+  const inTest = live.filter((pid) => runs(pid, pr));
+  if (!boe.length || !r.text.includes(`Todas las candidaturas proclamadas (${boe.length})`) || !r.text.includes(CANDS.fuente.url) || inTest.some((pid) => { const c = boe.find((x) => x.pid === pid); return !c || !r.text.includes(`Cabeza de lista: ${c.cab.replace(/&/g, "&amp;")}`); })) bad.push(pr.id);
+}
+ok(!bad.length, `las 52 páginas muestran las candidaturas proclamadas en el BOE y el cabeza de lista de cada candidatura del test${bad.length ? `: fallan ${bad.join(", ")}` : ""}`);
 const idx = await get("provincias/");
 ok(idx.status === 200 && provs.every((p) => idx.text.includes(`href="/provincias/${p.id}/"`)), "el índice /provincias/ enlaza las 52");
 

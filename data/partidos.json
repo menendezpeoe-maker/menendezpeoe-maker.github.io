@@ -237,7 +237,9 @@
      "ara",
      "bal",
      "can",
-     "val"
+     "val",
+     "ceu",
+     "mel"
     ]
    },
    "local": {
@@ -295,7 +297,9 @@
     "except": [
      "cat",
      "val",
-     "can"
+     "can",
+     "bal",
+     "mel"
     ]
    },
    "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC y en la Comunitat Valenciana y Canarias se integra en las coaliciones Compromís – Front Valencià y Unidad del Pueblo Canario.",
@@ -342,7 +346,15 @@
    "tag": "Derecha · contra la clase política",
    "lead": "Alvise Pérez",
    "scope": {
-    "all": true
+    "all": true,
+    "except": [
+     "bizkaia",
+     "gipuzkoa",
+     "girona",
+     "lleida",
+     "cantabria",
+     "ciudadreal"
+    ]
    },
    "desc": "Formación de Alvise Pérez, con eurodiputados desde 2024, que busca entrar en el Congreso. Discurso contra la clase política, mano dura con la delincuencia y la inmigración irregular y fuertes bajadas de impuestos.",
    "props": [
@@ -374,7 +386,31 @@
    "color": "#2E9E48",
    "tag": "Animalismo",
    "scope": {
-    "all": true
+    "all": true,
+    "except": [
+     "avila",
+     "badajoz",
+     "baleares",
+     "barcelona",
+     "burgos",
+     "caceres",
+     "cantabria",
+     "ciudadreal",
+     "coruna",
+     "guadalajara",
+     "lugo",
+     "murcia",
+     "ourense",
+     "palencia",
+     "pontevedra",
+     "salamanca",
+     "soria",
+     "toledo",
+     "zamora",
+     "zaragoza",
+     "ceuta",
+     "melilla"
+    ]
    },
    "desc": "Partido animalista. Centra su programa en el bienestar animal, el fin de la tauromaquia y la caza, el medio ambiente y una ley electoral proporcional; en muchos otros temas no fija postura.",
    "props": [
@@ -406,7 +442,6 @@
    "ab": "D21",
    "color": "#EE7B1E",
    "tag": "Liberal · centro",
-   "tbd": true,
    "scope": {
     "provinces": [
      "madrid",
@@ -865,8 +900,9 @@
    "color": "#B81D2C",
    "tag": "Izquierda aragonesista",
    "scope": {
-    "regions": [
-     "ara"
+    "provinces": [
+     "huesca",
+     "zaragoza"
     ]
    },
    "desc": "Coalición de Chunta Aragonesista, IU, Movimiento Sumar, Partido Verde y Recortes Cero. En Aragón sustituye a la lista del Frente Amplio; Podemos va por separado.",
@@ -899,8 +935,8 @@
    "color": "#3A8434",
    "tag": "España Vaciada · transversal",
    "scope": {
-    "regions": [
-     "ara"
+    "provinces": [
+     "teruel"
     ]
    },
    "desc": "Coalición de Teruel Existe y Aragón Existe. Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
@@ -1002,6 +1038,7 @@
    "color": "#7A1F5C",
    "tag": "Localista · transversal",
    "tbd": true,
+   "out": "No presenta candidatura al Congreso el 29N: no figura en la proclamación definitiva de candidaturas (BOE del 3 de noviembre de 2026).",
    "scope": {
     "provinces": [
      "jaen"
@@ -1033,7 +1070,7 @@
    "color": "#8B1C2C",
    "tag": "Regionalismo leonés",
    "tbd": true,
-   "out": "Anunció el 13 de octubre de 2026 que no se presenta al 29N.",
+   "out": "Anunció el 13 de octubre de 2026 que no se presenta al 29N; confirmado en la proclamación definitiva de candidaturas (BOE del 3 de noviembre de 2026).",
    "scope": {
     "provinces": [
      "leon",
@@ -1062,7 +1099,6 @@
    "ab": "SORIA",
    "color": "#6D4C9F",
    "tag": "España Vaciada · transversal",
-   "tbd": true,
    "scope": {
     "provinces": [
      "soria"
@@ -1094,7 +1130,7 @@
    "color": "#7F8C3A",
    "tag": "Localista · centroderecha",
    "tbd": true,
-   "out": "Anunció el 10 de octubre de 2026 que no se presenta al 29N.",
+   "out": "Anunció el 10 de octubre de 2026 que no se presenta al 29N; confirmado en la proclamación definitiva de candidaturas (BOE del 3 de noviembre de 2026).",
    "scope": {
     "provinces": [
      "avila"

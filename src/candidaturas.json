@@ -1,0 +1,2603 @@
+{
+ "fuente": {
+  "id": "BOE-A-2026-23103",
+  "fecha": "2026-11-03",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103"
+ },
+ "provs": {
+  "albacete": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Amparo Torres Valencoso",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Adrián Moreno Contreras"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Isabel Ferrer de la Cruz",
+    "pid": "salf"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Alberto Martínez Cuartero"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Rubén Herrero de Castro",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Luisa María García Tárraga",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "María de los Llanos Soriano García",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Francisco Navarro Cebrián",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Juan Blanco Castellanos",
+    "pid": "fa"
+   }
+  ],
+  "alicante": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Antonio Alfonso Francés Pérez",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Rodrigo Pastor García"
+   },
+   {
+    "c": "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "cab": "Lydia Cañedo Oliver"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Casimiro Martín Soto",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Pablo Román Muñoz"
+   },
+   {
+    "c": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "cab": "María Teresa Pérez Díaz",
+    "pid": "comp"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "David García Gomis",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Jaime Barceló Ríos",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Macarena Montesinos De Miguel",
+    "pid": "pp"
+   }
+  ],
+  "almeria": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Anabel Mateos Sánchez",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Emilio Gustavo Icasati Weidemüller"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Inmaculada María Jaén Pérez",
+    "pid": "salf"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "Tania Ferre Carrión",
+    "pid": "adel"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Eduardo José Milla Juan",
+    "pid": "pacma"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Rocío de Meer Méndez",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Carmen Crespo Díaz",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "María Mercedes Quero Molina"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Mariana García Hernández"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Mohsin Faiz Douhab"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Jésica Jiménez Gómez",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Zacarías Lucas Lekal Villegas",
+    "pid": "fa"
+   }
+  ],
+  "alava": [
+   {
+    "c": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "cab": "Javier Hurtado Domínguez",
+    "pid": "psoe"
+   },
+   {
+    "c": "EUSKAL HERRIA BILDU (EH BILDU)",
+    "cab": "Mikel Otero Gabirondo",
+    "pid": "bildu"
+   },
+   {
+    "c": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "cab": "Gorka Urtaran Agirre",
+    "pid": "pnv"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Raúl Aperribay Ganzábal"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Jonathan Romero Gámiz",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Saioa Martín Donoso",
+    "pid": "pacma"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Garbiñe Ruiz Noriega",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
+    "cab": "Liher Calleja Montero"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Leire Bengoa Chávarri",
+    "pid": "salf"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Laura Barrenengoa Clemente"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Iñaki Oyarzábal De Miguel",
+    "pid": "pp"
+   },
+   {
+    "c": "FRENTE AMPLIO-FRONTE ZABALA (FRENTE AMPLIO-FRONTE ZABALA)",
+    "cab": "José Damián García-Moreno López",
+    "pid": "fa"
+   },
+   {
+    "c": "FEMINISTAS AL CONGRESO (PFAC)",
+    "cab": "Zuriñe Ojeda Santiago"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Cristina Elcuaz Arana"
+   }
+  ],
+  "asturias": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Juan Sánchez Pérez"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Adriana Lastra Fernández",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Luis Álvarez Pérez",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "José María Figaredo Álvarez-Sala",
+    "pid": "vox"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "José Ramón Bahamonde Nava"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Ástor García Suárez"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Manuel Antonio Pravia Fernández",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO UNIONISTA ESTADO DE ESPAÑA (PUEDE)",
+    "cab": "José Luis Zapico Martínez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Ángela Pumariega Menéndez",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Irene Jiménez López",
+    "pid": "pacma"
+   },
+   {
+    "c": "FRENTE AMPLIU POR ASTURIES (FA)",
+    "cab": "Juan Antonio González Ponte",
+    "pid": "fa"
+   }
+  ],
+  "avila": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Manuel Arribas Maroto",
+    "pid": "psoe"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Julio Blanco Rodríguez"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Pedro Hermosa González",
+    "pid": "salf"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Jorge Moyano García"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Adrián Franco Barata"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Samuel Vázquez Álvarez",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Laura Ruiz Ginés",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Héctor Palencia Rubio",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO DEMÓCRATA SOCIAL JUBILADOS EUROPEOS (P.D.S.J.E.)",
+    "cab": "Carmen Alicia Manchón Villaverde"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Pablo Garcinuño García",
+    "pid": "fa"
+   }
+  ],
+  "badajoz": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María Yolanda García Seco",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Violeta Casado Sarti",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ignacio Hoces Íñiguez",
+    "pid": "vox"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Yago De Francisco González"
+   },
+   {
+    "c": "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)",
+    "cab": "Víctor Ramos Sánchez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Teresa Tortonda Gordillo",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "María del Pilar Ramos Duro",
+    "pid": "fa"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Inmaculada Soria Eugenio"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Amparo Botejara Sanz",
+    "pid": "pod"
+   }
+  ],
+  "baleares": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Selva Lucía Belmaña López"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)",
+    "cab": "Francesca Lluch Armengol Socias",
+    "pid": "psoe"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "María Isabel Cerezo Sánchez",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Joan Luna Mateu"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Daniel Rodríguez Rincón",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "José Vicente Marí Bosó",
+    "pid": "pp"
+   },
+   {
+    "c": "ARAMÉS-FRONT AMPLI (ARAMÉS-EU-MS)",
+    "cab": "Carme Gomila Domínguez",
+    "pid": "mes"
+   }
+  ],
+  "barcelona": [
+   {
+    "c": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "cab": "Jordi Hereu Boher",
+    "pid": "psoe"
+   },
+   {
+    "c": "JUNTS PER CATALUNYA (JxCat)",
+    "cab": "Míriam Nogueras i Camero",
+    "pid": "junts"
+   },
+   {
+    "c": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "cab": "Gabriel Rufián Romero",
+    "pid": "erc"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Daniel Carro Peralta"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Yolanda López Carreño",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "cab": "Maria Rodríguez-Farge Hijano"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Juan José Aizcorbe Torra",
+    "pid": "vox"
+   },
+   {
+    "c": "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "cab": "Ada Colau Ballano",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "cab": "Xavier García Albiol",
+    "pid": "pp"
+   },
+   {
+    "c": "DEMOCRACIA para el siglo 21 (D21)",
+    "cab": "David Andrés Díaz",
+    "pid": "d21"
+   },
+   {
+    "c": "ALHORA (ALHORA)",
+    "cab": "Jordi Graupera i Garcia Milà"
+   }
+  ],
+  "bizkaia": [
+   {
+    "c": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "cab": "Idoia Sagastizabal Unzetabarrenetxea",
+    "pid": "pnv"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "cab": "Patxi López Alvarez",
+    "pid": "psoe"
+   },
+   {
+    "c": "EUSKAL HERRIA BILDU (EH Bildu)",
+    "cab": "Oskar Matute Garcia de Jalón",
+    "pid": "bildu"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
+    "cab": "Sergio Saenz Álvarez"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Marco Antonio Moreno Asla",
+    "pid": "vox"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "Lander Martínez Hierro",
+    "pid": "fa"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Jose Manuel de Pablos Bajo",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Janire Asenjo García",
+    "pid": "pacma"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Oscar García Riesgo"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Esther Martínez Fernández",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Luis Maria Vega Castresana"
+   }
+  ],
+  "burgos": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Gonzalo Herrero Burgos"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Esther Peña Camarero",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Marcos Santamaría Del Olmo",
+    "pid": "salf"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Isabel Lara Benítez",
+    "pid": "pod"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Eugenia Landaluce Miranda",
+    "pid": "vox"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Elsa Colina Arreba"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Rubén Cabezón Milla"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Ángel Mariano Ibáñez Hernando",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Fernando José Saiz Martínez",
+    "pid": "fa"
+   }
+  ],
+  "caceres": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Irene Pozas García",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Emilio José Paniagua Collazos",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Rubén Albalá Manuel"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Marcela Reigía Vales",
+    "pid": "vox"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Mónica Pérez Gaite"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Cristina Elena Teniente Sánchez",
+    "pid": "pp"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Álvaro Jaén Barbado",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Antonio Moreno Pérez",
+    "pid": "fa"
+   },
+   {
+    "c": "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)",
+    "cab": "Ángel Andreo García"
+   }
+  ],
+  "cadiz": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "José Manuel Albares Bueno",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Juan Vicente Parra Piñero"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "María Sánchez Barrada",
+    "pid": "adel"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Francisco Anselmo Mesa González",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Laura María Gálvez Carmona"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Blanca Armario González",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Marcelino Laínez de los Reyes",
+    "pid": "pacma"
+   },
+   {
+    "c": "Frente Amplio Andaluz (FA)",
+    "cab": "Esther Francisca Gil de Reboleño Lastortres",
+    "pid": "fa"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Julio de la Torre Lorenzo",
+    "pid": "pod"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "María Gracia Clavijo Repetto"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María José García-Pelayo Jurado",
+    "pid": "pp"
+   }
+  ],
+  "cantabria": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Susana Herrán Martín",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Raúl Díaz Roces"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Pablo Gómez Ruiz",
+    "pid": "pod"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Emilio Jesús Del Valle Rodríguez",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Pablo Isidro Gómez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Isabel Urrutía de los Mozos",
+    "pid": "pp"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "María Carmen Martín García",
+    "pid": "fa"
+   }
+  ],
+  "castellon": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María Jiménez Román",
+    "pid": "psoe"
+   },
+   {
+    "c": "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "cab": "Carolina Queral Recatalá"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "David Fuentes Pinazo"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Álvaro González Álvaro",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Badr Ait Lamqadem Zahiri"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Alberto Teófilo Asarta Cuevas",
+    "pid": "vox"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
+    "cab": "Andrónico Miguel Agustín Brun"
+   },
+   {
+    "c": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "cab": "Ignasi García Felip",
+    "pid": "comp"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Francisca Hernández Rodríguez",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Elena Albalat Aguilella",
+    "pid": "pp"
+   }
+  ],
+  "ciudadreal": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Isabel Rodríguez García",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Raúl Abengozar Galán"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ricardo Chamorro Delmo",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Isabel Ruiz García",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Del Carmen Fúnez de Gregorio",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Juana Caro Marín",
+    "pid": "fa"
+   }
+  ],
+  "cordoba": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Alberto Mayoral de Lamo",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Angel Molina Ruiz"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "María del Carmen Sánchez Solís",
+    "pid": "adel"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Eladio Barrado Prieto",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "José Ramírez del Río",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Ana Isabel Bastida Burgos"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Patricia María García Carmona",
+    "pid": "pacma"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
+    "cab": "Manuel Chacón Rodríguez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Lorena Guerra Sánchez",
+    "pid": "pp"
+   },
+   {
+    "c": "FRENTE AMPLIO ANDALUZ (FA)",
+    "cab": "Sebastián Pérez Gallardo",
+    "pid": "fa"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Ana Belén Calzada Hombrado",
+    "pid": "pod"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Carmen María Valderrama Crespo"
+   }
+  ],
+  "coruna": [
+   {
+    "c": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "cab": "Obdulia Taboadela Álvarez",
+    "pid": "psoe"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Manuel Fuentes Lamas",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Miguel Ángel Tellado Filgueira",
+    "pid": "pp"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "María José García Hidalgo",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
+    "cab": "Daniel López García"
+   },
+   {
+    "c": "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
+    "cab": "Néstor Rego Candamil",
+    "pid": "bng"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Joel Novoa Arias"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Isabel Faraldo Calvo",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio-Fronte Ampla (FRENTE AMPLIO-FRONTE AMPLA)",
+    "cab": "José Luis Piñeiro García",
+    "pid": "fa"
+   }
+  ],
+  "cuenca": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Adrián Tabasco Bonilla"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Luis Carlos Sahuquillo García",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Rafael García Sáez",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ismael Iván Vélez Cipriano",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Alejandro Fernández Suárez"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "José María Oviedo Oviedo",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Raquel Oliver Chico",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Miguel Ángel Hernández Pedreño"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Pedro José Contreras Racionero",
+    "pid": "pacma"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "Francisco Javier Martínez Huerta",
+    "pid": "fa"
+   }
+  ],
+  "gipuzkoa": [
+   {
+    "c": "EUSKAL HERRIA BILDU (EH BILDU)",
+    "cab": "Oihana Etxebarrieta Legrand",
+    "pid": "bildu"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "cab": "Rafaela Romero Pozo",
+    "pid": "psoe"
+   },
+   {
+    "c": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "cab": "Maribel Vaquero Montero",
+    "pid": "pnv"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "María Pilar Julia Otegui Serranos",
+    "pid": "pacma"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Leire Orbañanos Martínez"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Daniel Lizarralde Aguirre"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Juan Dios Dávila Garijo",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Maite Gartzia Ontiveros",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Jon Echeverría Franco",
+    "pid": "pp"
+   },
+   {
+    "c": "EUSKADIKO LANGILEEN ALDERDI KOMUNISTA/PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI (ELAK/PCTE)",
+    "cab": "Eneko Lanz Llamas"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Rosa Rubio Sánchez",
+    "pid": "fa"
+   }
+  ],
+  "girona": [
+   {
+    "c": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "cab": "Marc Lamuà Estañol",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Ivan Arroyo Laguna"
+   },
+   {
+    "c": "JUNTS PER CATALUNYA (JxCat)",
+    "cab": "Marta Madrenas i Mir",
+    "pid": "junts"
+   },
+   {
+    "c": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "cab": "Teresa Jordà Roura",
+    "pid": "erc"
+   },
+   {
+    "c": "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "cab": "Júlia Boada Danés",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "cab": "Tomás Ferreira Crubellati"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Arseniy Maximov Eudoqumova",
+    "pid": "pacma"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ignasi Mulleras Vinzia",
+    "pid": "vox"
+   },
+   {
+    "c": "ALHORA (ALHORA)",
+    "cab": "Júlia Ojeda Caba"
+   },
+   {
+    "c": "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "cab": "Diana Moya Redondo",
+    "pid": "pp"
+   }
+  ],
+  "granada": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Raúl Domínguez Rincón"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María José Sánchez Sánchez",
+    "pid": "psoe"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "María Alcantud López",
+    "pid": "adel"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Adrián García Barbarroja"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Rosa Alonso Domínguez",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Jacobo González-Robatto Perote",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Débora Godoy Izquierdo",
+    "pid": "pacma"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Alejandra Durán Parra",
+    "pid": "pod"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Augustin Marie Ndour Ndong"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Jorge Saavedra Requena",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio Andaluz (FA)",
+    "cab": "Jesús Fernández Martín",
+    "pid": "fa"
+   }
+  ],
+  "guadalajara": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Carlos Calvo Fernández"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Jorge Miguel Perucha"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "José Carlos Albares Gallego",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ángel López Maraver",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María Jesús Merino Poyo",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "Ernesto Martín Doménech",
+    "pid": "fa"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Mario Javier Gallego Pareja",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Itziar Asenjo Domínguez",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Pedro Alfonso Cabello Albendea"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Juan Francisco Durán Carralero"
+   }
+  ],
+  "huelva": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Rafael Vicente Frías Ranea"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA DE HUELVA (PSOE)",
+    "cab": "Gabriel Cruz Santana",
+    "pid": "psoe"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "Carmen María Martín Carrasco",
+    "pid": "adel"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Tomás Fernández Ríos",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Cristina Reina Esojo"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María del Pilar Miranda Plata",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio Andaluz (FA)",
+    "cab": "Rebeca Martín Sánchez",
+    "pid": "fa"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "José Luis Rubio García",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Juana María Gómez Lorencio",
+    "pid": "pacma"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Hermes Gómez Escobar",
+    "pid": "pod"
+   }
+  ],
+  "huesca": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Begoña Nasarre Oliva",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Abel Escribano Bonacho"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Diego Cajal Orleans"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ester Blanco Sánchez",
+    "pid": "vox"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Rafael Pedraza Garrido",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Maria del Carmen Molero Lacarte",
+    "pid": "pacma"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Manuel Inurria Fernández"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Vicente Oliver Alexandre",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Ana Isabel Alós López",
+    "pid": "pp"
+   },
+   {
+    "c": "CHUNTA ARAGONESISTA-FRENTE AMPLIO ARAGÓN (CHA-IU-MS-FRENTE AMPLIO)",
+    "cab": "José Luis Parra Pascau",
+    "pid": "cha"
+   },
+   {
+    "c": "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (FIA)",
+    "cab": "José María Abad Torres"
+   }
+  ],
+  "jaen": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Erika Villegas Ruiz"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Isabel Uceda Cantero",
+    "pid": "psoe"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "Silvia Cano Contreras",
+    "pid": "adel"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Juan Francisco Salinas Montoro"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Juan Javier Reverte López",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Francisco José Alcaraz Martos",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Noemí Pulido Galán",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Luis Mariano Camacho Nuñez",
+    "pid": "pp"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Dolores Rodríguez López",
+    "pid": "pod"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Francisca Amaro Lombardo"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "Antonio Ortega Ruiz",
+    "pid": "fa"
+   }
+  ],
+  "leon": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Javier Alfonso Cendón",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "José Manuel Estébanez Fernández"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "María Natividad Franco Natal",
+    "pid": "pacma"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Enrique Jesús Pérez Suárez",
+    "pid": "salf"
+   },
+   {
+    "c": "PROYECTO ALANTRE (P. ALANTRE)",
+    "cab": "José Antonio Fernández García"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Pablo Juan Calvo Liste",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "cab": "Manuela Iglesias Carreño"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Estrella Alonso Almazán"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Sixto Martínez Álvarez",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Ester Muñoz de la Iglesia",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Rubén Estévez Miguel",
+    "pid": "fa"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "María López Castellanos"
+   }
+  ],
+  "lleida": [
+   {
+    "c": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "cab": "Cristina Morón Molina",
+    "pid": "psoe"
+   },
+   {
+    "c": "JUNTS PER CATALUNYA (JxCat)",
+    "cab": "Isidre Gavín i Valls",
+    "pid": "junts"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Albert Balasch Roque"
+   },
+   {
+    "c": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "cab": "Inés Granollers i Cunillera",
+    "pid": "erc"
+   },
+   {
+    "c": "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "cab": "Montserrat Cortasa Gras",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "cab": "Guillem Cruz Lezcano"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Rafael Villafranca Merce",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT (PACMA)",
+    "cab": "Iván Guijarro Vila",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Roger Melero Serra",
+    "pid": "pp"
+   },
+   {
+    "c": "ALHORA (ALHORA)",
+    "cab": "Cristina Casol Segués"
+   }
+  ],
+  "lugo": [
+   {
+    "c": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
+    "cab": "Patricia Otero Rodríguez",
+    "pid": "psoe"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Ximena Cheda Tuya",
+    "pid": "pod"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Jesús Primitivo Rodríguez González",
+    "pid": "vox"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Víctor Contreras Céspedes"
+   },
+   {
+    "c": "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "cab": "Olalla Rodil Fernández",
+    "pid": "bng"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Francisco José Conde López",
+    "pid": "pp"
+   },
+   {
+    "c": "FRENTE AMPLIO-FRONTE AMPLA (FRENTE AMPLIO-FRONTE AMPLA)",
+    "cab": "Reyes Rodríguez García",
+    "pid": "fa"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "María Ferreiro Carreiras",
+    "pid": "salf"
+   }
+  ],
+  "madrid": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Roberto Vaquero Arribas"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Pedro Sánchez Pérez-Castejón",
+    "pid": "psoe"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Norberto Pedro Pico Sanabria"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Santiago Abascal Conde",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Eva García de Madariaga Delgado"
+   },
+   {
+    "c": "PARTIDO HUMANISTA (PH)",
+    "cab": "José Luis Álvarez Cedena"
+   },
+   {
+    "c": "DEMOCRACIA PARA EL SIGLO 21 (D21)",
+    "cab": "Miryan Mercedes González Durántez",
+    "pid": "d21"
+   },
+   {
+    "c": "IUSTITIA EUROPA (IE)",
+    "cab": "Luis María Pardo Rodríguez"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "José Manuel Romero Melero"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Luis Alvise Pérez Fernández",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Alberto Núñez Feijóo",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Asier Esparza Billalabeitia",
+    "pid": "pacma"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Emilio Delgado Orgaz",
+    "pid": "fa"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Irene Montero Gil",
+    "pid": "pod"
+   }
+  ],
+  "malaga": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Nicolás Navarro Ramírez"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "José Bernal Gutiérrez",
+    "pid": "psoe"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "Ana María Jiménez Navarro",
+    "pid": "adel"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Eva Ramos Taillefer",
+    "pid": "pacma"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Carlos Hernández Quero",
+    "pid": "vox"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Mercedes Gema Jiménez Martín",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Elías Bendodo Benasayag",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Antonio Jiménez Martínez de Ubago"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Micaela Jiménez Fortes",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Rafael Borrego Peña",
+    "pid": "fa"
+   }
+  ],
+  "murcia": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Luis Pons Burgueros"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María González Veracruz",
+    "pid": "psoe"
+   },
+   {
+    "c": "TERCERA EDAD EN ACCIÓN (3e)",
+    "cab": "Domingo Díaz Carrillo"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Olmo Arquero Peinazo"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Joaquín Robles López",
+    "pid": "vox"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Raquel Cardeñosa Cuesta",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Mirian Guardiola Salmerón",
+    "pid": "pp"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Víctor Manuel Egío García",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Penélope Luna Palazón",
+    "pid": "fa"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Ángel María Rey Albesa"
+   }
+  ],
+  "navarra": [
+   {
+    "c": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA (EH BILDU-ERC)",
+    "cab": "Eneka Maiz Ulaiar",
+    "pid": "bildu"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Nerea León Miranda"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
+    "cab": "Elma Saiz Delgado",
+    "pid": "psoe"
+   },
+   {
+    "c": "EGUZKILORE (EGUZKILORE)",
+    "cab": "Francisco Javier Pérez Cueva"
+   },
+   {
+    "c": "GEROA BAI (GBAI)",
+    "cab": "Pablo Azcona Molinet",
+    "pid": "gbai"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "José Antonio Aparicio Martín"
+   },
+   {
+    "c": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR (UPN-PP)",
+    "cab": "Leticia San Martín Rodríguez",
+    "pid": "upn"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Lidia Martínez Aranguibel",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "María Perpetuo Socorro Sada Ballesteros",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Virginia Alonso Aparicio",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio-Fronte Zabala (FRENTE AMPLIO-FRONTE ZABALA)",
+    "cab": "Javier Ibáñez Orayen",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Manuel Piñar Bautista",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Iker Maguregui Saiz"
+   }
+  ],
+  "ourense": [
+   {
+    "c": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "cab": "María del Carmen Rodríguez Dacosta",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Laia González Gandia"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
+    "cab": "Brais Coello Vences"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Antonio José Naval Calviño",
+    "pid": "pod"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Maria Jesús Morenza Fernández",
+    "pid": "vox"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Abel Estévez González",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Ana Belén Vázquez Blanco",
+    "pid": "pp"
+   },
+   {
+    "c": "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "cab": "Noa Presas Bergantiños",
+    "pid": "bng"
+   },
+   {
+    "c": "POR UN MUNDO MAIS XUSTO (MUNDO+JUSTO)",
+    "cab": "Rafael Manuel Fernández Alonso"
+   },
+   {
+    "c": "Frente Amplio-Fronte Ampla (FRENTE AMPLIO-FRONTE AMPLA)",
+    "cab": "Cristian González Vázquez",
+    "pid": "fa"
+   }
+  ],
+  "palencia": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María Luz Martínez Seijo",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Fernando Martínez Torres",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Matías Recio Juárez",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Alberto Pozo Díez",
+    "pid": "pod"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Luis Miguel Pérez González"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Aitor Vega García"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Yeray Yáñez Ibáñez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Milagros Marcos Ortega",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Miren Josu Moneo Viloria"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Alicia Calzada Bujedo"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Ana Belén Collantes Martín",
+    "pid": "fa"
+   }
+  ],
+  "laspalmas": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "María Dolores Corujo Berriel",
+    "pid": "psoe"
+   },
+   {
+    "c": "LIBERACIÓN CANARIA (LIB)",
+    "cab": "Daniel Falero Mesa"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Sergio Ramos Acosta",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO DRAGO CANARIAS (D.R.G)",
+    "cab": "Héctor Morán Rodríguez",
+    "pid": "drago"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Jorge García Cantarero"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Andrés Alberto Rodríguez Almeida",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Domingo González Perdomo"
+   },
+   {
+    "c": "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA (1.ºCAN-CCa)",
+    "cab": "Teodoro Claret Sosa Monzón",
+    "pid": "ccpc"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Clara María Tejera González",
+    "pid": "salf"
+   },
+   {
+    "c": "POR UN MUNDO MÁS JUSTO (MUNDO+JUSTO)",
+    "cab": "Gara Rodríguez Gutiérrez"
+   },
+   {
+    "c": "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)",
+    "cab": "Luis Alberto Campos Jiménez",
+    "pid": "upc"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Iris Cristina Sánchez Padrón",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DEL PUEBLO CANARIO (PCPC)",
+    "cab": "Sonia María Iruela Padrón"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Valentín Tomás Labrada Ruiz"
+   }
+  ],
+  "pontevedra": [
+   {
+    "c": "Frente Obrero (FO)",
+    "cab": "Xose Luis García Pazos"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Álvaro José Díaz-Mella López",
+    "pid": "vox"
+   },
+   {
+    "c": "Partido Comunista dos Traballadores da Galiza (PCTG)",
+    "cab": "Miguel Riaño Roa"
+   },
+   {
+    "c": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "cab": "Abel Fermín Losada Álvarez",
+    "pid": "psoe"
+   },
+   {
+    "c": "Escanos en Branco para deixar Escanos Baleiros (ESCAÑOS EN BLANCO)",
+    "cab": "Joaquín Francisco Pérez Fernández"
+   },
+   {
+    "c": "Partido Popular (PP)",
+    "cab": "Julio García Comesaña",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio - Fronte Ampla (FRENTE AMPLIO - FRONTE AMPLA)",
+    "cab": "Gloria Alonso Domínguez",
+    "pid": "fa"
+   },
+   {
+    "c": "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "cab": "María Carme da Silva Méndez",
+    "pid": "bng"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "David Díaz Garrido",
+    "pid": "salf"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Lucas Meda Herbojo",
+    "pid": "pod"
+   }
+  ],
+  "rioja": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Elisa Garrido Jiménez",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Francisco Martínez Díaz"
+   },
+   {
+    "c": "SE ACABO LA FIESTA (SALF)",
+    "cab": "Juan Aparici Jerez",
+    "pid": "salf"
+   },
+   {
+    "c": "FRENTE AMPLIO (FA)",
+    "cab": "Alba Díez Arrea",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Alejandro García Cáncer"
+   },
+   {
+    "c": "VOX",
+    "cab": "Ángel Alda Pérez",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS",
+    "cab": "María Aranzazu Carrero Bacigalupe",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Concepción Gamarra Ruiz Clavijo",
+    "pid": "pp"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACIOS (ESCAÑOS EN BLANCO)",
+    "cab": "María Carmen García Pellejero"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Rosalía Cortés Rodríguez",
+    "pid": "pacma"
+   }
+  ],
+  "salamanca": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Marco Pedro Pérez Graña"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "David Serrada Pariente",
+    "pid": "psoe"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Aurora Zarco Blanco",
+    "pid": "pod"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Luis Eduardo Riesco Lorenzo",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Laura Magdalena Miguel",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "cab": "Rafael Diego Núñez"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Mario López Pascua"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María del Carmen Seguín Kattán",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Miriam Ruiz Arias",
+    "pid": "fa"
+   }
+  ],
+  "tenerife": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "José Antonio Valbuena Alonso",
+    "pid": "psoe"
+   },
+   {
+    "c": "Coalición Canaria-Municipalistas Primero Canarias (CCa-1.ºCAN)",
+    "cab": "Cristina Valido García",
+    "pid": "ccpc"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Gustavo González De Vega",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO DRAGO CANARIAS (D.R.G)",
+    "cab": "Alberto Rodríguez Rodríguez",
+    "pid": "drago"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Eduardo Zerolo Álvarez",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Yolanda Morales Pérez",
+    "pid": "pacma"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Antonio Coy García"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Alejandro Santiago Gómez Rodríguez",
+    "pid": "vox"
+   },
+   {
+    "c": "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)",
+    "cab": "María Soledad Collado Mirabal",
+    "pid": "upc"
+   },
+   {
+    "c": "LIBERACIÓN CANARIA (LIB)",
+    "cab": "Angélica María Calero Armas"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Pablo Janai García Canino"
+   },
+   {
+    "c": "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "cab": "José Luis Arias Machuca"
+   }
+  ],
+  "segovia": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Pablo de Mercado Alcalde"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "José Luis Aceves Galindo",
+    "pid": "psoe"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "José Manuel Eizaguirre Fernández-Palacios"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Jesús Angel Gascón Ames",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Gonzalo Babé Romero",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Rosa María Díaz García",
+    "pid": "pacma"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Soledad Alba Monfort",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Carlos Presa Irazábal"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Víctor Javier Borreguero García",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Pablo Pérez Coronado",
+    "pid": "pp"
+   }
+  ],
+  "sevilla": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Alejandro Rodríguez Prieto"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Alfonso Rodríguez Gómez de Celis",
+    "pid": "psoe"
+   },
+   {
+    "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "cab": "Luis María de los Santos Castillo",
+    "pid": "adel"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Juan Antonio Sánchez Murillo González",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "María de los Reyes Romero Vilches",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Nasai Littarru Sampedro"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Clara Isabel Márquez Martínez",
+    "pid": "pacma"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Mar Cambrollé Jurado",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio Andaluz (FA)",
+    "cab": "Enrique Fernando Santiago Romero",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Juan Bravo Baena",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Noemí Reyes Roldán"
+   }
+  ],
+  "soria": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Diego Gallardo de la Fuente"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Ezequiel Blanco López"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Rafael Alfonso Gómez Aguilar"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Luis Alfonso Rey de las Heras",
+    "pid": "psoe"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "José María Lorenzo Córdoba Alós",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Andrea Martínez Ruiz",
+    "pid": "vox"
+   },
+   {
+    "c": "SORIA ¡YA! (SY)",
+    "cab": "Juan Antonio Palomar Sicilia",
+    "pid": "soria"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Ángel Alberto Flores Gaitán",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Tomás Cabezón Casas",
+    "pid": "pp"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Luis García Molina"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Luisa Muñoz González",
+    "pid": "pod"
+   }
+  ],
+  "tarragona": [
+   {
+    "c": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "cab": "Ione Montalvo Aguirrezabala",
+    "pid": "psoe"
+   },
+   {
+    "c": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "cab": "Norma Pujol Farré",
+    "pid": "erc"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Olga Donaire Muñoz"
+   },
+   {
+    "c": "JUNTS PER CATALUNYA (JxCat)",
+    "cab": "Josep Maria Cruset i Domènech",
+    "pid": "junts"
+   },
+   {
+    "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "cab": "Andreu Tomàs Martínez de Villa"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Jorge Sánchez Castro",
+    "pid": "salf"
+   },
+   {
+    "c": "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "cab": "Ester Roca Domodel",
+    "pid": "fa"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Jordi Albert de la Fuente i Miró",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Bárbara Batalla Vargas",
+    "pid": "pacma"
+   },
+   {
+    "c": "CONVERGENTS (CNV)",
+    "cab": "Cristian Orellana Trujillo"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Charles Toja Muiños"
+   },
+   {
+    "c": "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "cab": "Mónica Landete Oliva",
+    "pid": "pp"
+   },
+   {
+    "c": "ALHORA (ALHORA)",
+    "cab": "Miquel Bonet Pinyol"
+   }
+  ],
+  "teruel": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Herminio Rufino Sancho Íniguez",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Alba Waitara Casanova Collado"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Daniel Alda Chercoles",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "José Manuel Carrizosa Miguel"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Carlos Aranda Anquela",
+    "pid": "salf"
+   },
+   {
+    "c": "TERUEL EXISTE (TERUEL EXISTE)",
+    "cab": "Tomás Guitarte Gimeno",
+    "pid": "existe"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Santiago María Núñez Albesa"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Selena Tomasa Sánchez Galindo",
+    "pid": "pacma"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "José Alberto Herrero Bono",
+    "pid": "pp"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Rafael Carlos Esteban Martín",
+    "pid": "pod"
+   }
+  ],
+  "toledo": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Milagros Tolón Jaime",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Cristina Martínez Ortega"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Antonio Cuñarro Alonso",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Manuel Mariscal Zabala",
+    "pid": "vox"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "José Ramón Jarones Martín-Aragón"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Carlos Velázquez Romo",
+    "pid": "pp"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Ángeles Castellanos Valverde",
+    "pid": "pod"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "José Alejandro Ávila Sánchez",
+    "pid": "fa"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Miguel Ángel Alonso García-Largo"
+   }
+  ],
+  "valencia": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Pilar Bernabé García",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Carmen López Manzano"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Gabriel Lorente Juan"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ignacio Gil Lázaro",
+    "pid": "vox"
+   },
+   {
+    "c": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "cab": "Àgueda Micó Micó",
+    "pid": "comp"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Kevin Pérez Hernández",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "Irene Mercedes Mora Pérez",
+    "pid": "pacma"
+   },
+   {
+    "c": "VALENCIA UNIDA (VLC)",
+    "cab": "Vicente González-Lizondo Sánchez"
+   },
+   {
+    "c": "RENACER RENAIXER (RRB)",
+    "cab": "Miguel Ramón Martí Matias"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Alejo Herrero González de Cárdenas"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María José Catalá Verdet",
+    "pid": "pp"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Marta López Calatayud"
+   },
+   {
+    "c": "AGENDA VALENCIANA (AGENDA VALENCIANA)",
+    "cab": "José Ramón Chirivella Vila"
+   }
+  ],
+  "valladolid": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Óscar Puente Santiago",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Alejandro López De Diego"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Onecha López Merino",
+    "pid": "salf"
+   },
+   {
+    "c": "PARTIDO NACIONALISTA DE CASTILLA Y LEÓN - UNION REFORMISTA CIUDADANA (PANCAL-URCI)",
+    "cab": "María Yolanda Pérez López"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Eider Rodríguez Camps"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Pablo Sáez Alonso-Muñumer",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "cab": "María Hernandez García",
+    "pid": "pacma"
+   },
+   {
+    "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "cab": "Francisco Javier Sanz Méndez"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "María Almudena Villarreal Vidal",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Ignacio Javier Díez Arauz"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Pardo Álvarez",
+    "pid": "pp"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Abdul Gadiri Diallo Bah",
+    "pid": "fa"
+   },
+   {
+    "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "cab": "Katia García Casas"
+   }
+  ],
+  "zamora": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Antidio Fagúndez Campo",
+    "pid": "psoe"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Sócrates Fernández López"
+   },
+   {
+    "c": "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "cab": "Francisco Iglesias Carreño"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "María Cynthia Garrote Ballestero",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Miguel Suárez Arca",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Miguel Ángel Guerra Cosme",
+    "pid": "pod"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María Montserrat Chimeno Viñas",
+    "pid": "pp"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Francisco Ramos Orgaz"
+   },
+   {
+    "c": "Frente Amplio (FA)",
+    "cab": "Diego Bernardo Rosas",
+    "pid": "fa"
+   }
+  ],
+  "zaragoza": [
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "Samuel Pelayo Fosch"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Fernando Ángel Beltrán Blázquez",
+    "pid": "psoe"
+   },
+   {
+    "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "cab": "Marina Lapuente Rey"
+   },
+   {
+    "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "cab": "Jesús Miguel Sánchez Felipe"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "María Carmen Rouco Laliena",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PODEMOS)",
+    "cab": "Alicia Arteaga Lahuerta",
+    "pid": "pod"
+   },
+   {
+    "c": "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (F.I.A.)",
+    "cab": "Amadeo Escolán Remartínez"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "María del Rocío Dívar Conde",
+    "pid": "pp"
+   },
+   {
+    "c": "Chunta Aragonesista-Frente Amplio Aragón (CHA-IU-MS-FRENTE AMPLIO)",
+    "cab": "Marina Rodríguez Hernando",
+    "pid": "cha"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "María Cristina Falcón Aldana",
+    "pid": "salf"
+   }
+  ],
+  "ceuta": [
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Rafael Martínez Peñalver Mateos",
+    "pid": "pp"
+   },
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Luis Manuel Tovar Gálvez",
+    "pid": "psoe"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "Ana Belén Cifuentes Cánovas",
+    "pid": "vox"
+   },
+   {
+    "c": "PODEMOS (PAZ,CASA Y TRABAJO)",
+    "cab": "Ramón Rodríguez Casaubón",
+    "pid": "pod"
+   },
+   {
+    "c": "SE ACABO LA FIESTA (SALF)",
+    "cab": "Carlos José Pavón Fumadó",
+    "pid": "salf"
+   },
+   {
+    "c": "FRENTE OBRERO",
+    "cab": "Manuel Marcos Vidal Tejada"
+   }
+  ],
+  "melilla": [
+   {
+    "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "cab": "Riduan Moh Abdelkader",
+    "pid": "psoe"
+   },
+   {
+    "c": "FRENTE OBRERO (FO)",
+    "cab": "David Vidal Mas"
+   },
+   {
+    "c": "SE ACABÓ LA FIESTA (SALF)",
+    "cab": "Susana Morillo Espinosa",
+    "pid": "salf"
+   },
+   {
+    "c": "VOX (VOX)",
+    "cab": "José Miguel Tasende Souto",
+    "pid": "vox"
+   },
+   {
+    "c": "PARTIDO POPULAR (PP)",
+    "cab": "Sofía Acedo Reyes",
+    "pid": "pp"
+   }
+  ]
+ }
+}

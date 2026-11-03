@@ -3,7 +3,7 @@
 Para el titular. Tú decides qué se envía y a quién: aquí no se envía nada automáticamente. S1b (10 nov) lo revisará y completará con contactos nuevos.
 
 ## 1. Qué decir de Test 29N en una frase
-Test político gratuito e independiente para el 29N: 107 preguntas (con versiones de 15, 24 y 48), 27 candidaturas filtradas por provincia (incluidas las autonómicas) y la fuente enlazada de cada postura. Sin registro ni cookies.
+Test político gratuito e independiente para el 29N: 107 preguntas (con versiones de 15, 24 y 48), 24 candidaturas filtradas por provincia (incluidas las autonómicas), con los cabezas de lista de cada provincia según el BOE y la fuente enlazada de cada postura. Sin registro ni cookies.
 
 **Lo que lo diferencia** (hay al menos otros 9 tests para el 29N, así que es lo que hay que destacar):
 - Cada postura lleva su justificación y su fuente enlazada (votaciones del Congreso, programas, declaraciones).

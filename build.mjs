@@ -86,7 +86,8 @@ for (const a of AREAS) {
 const parties = PARTIES.map((p) => {
   if (!PARTY_ORDER.includes(p.id)) err(`Partido ${p.id} no está en PARTY_ORDER`);
   const s = p.scope;
-  (s.except || []).concat(s.regions || []).forEach((r) => regionIds.has(r) || err(`${p.id}: región ${r} desconocida`));
+  (s.regions || []).forEach((r) => regionIds.has(r) || err(`${p.id}: región ${r} desconocida`));
+  (s.except || []).forEach((r) => regionIds.has(r) || provIds.has(r) || err(`${p.id}: región o provincia ${r} desconocida en «except»`));
   (s.provinces || []).forEach((r) => provIds.has(r) || err(`${p.id}: provincia ${r} desconocida`));
   const props = p.props.map(([t, q]) => {
     if (q) {

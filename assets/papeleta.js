@@ -134,6 +134,7 @@ async function loadData() {
 function runsIn(pid, provId) {
   const s = P[pid].scope, r = PROV[provId]?.region;
   if (!r) return false;
+  if ((s.except || []).includes(provId)) return false; // provincias donde no presenta lista (BOE del 3 nov 2026)
   if (s.all) return !(s.except || []).includes(r);
   if (s.regions) return s.regions.includes(r);
   if (s.provinces) return s.provinces.includes(provId);

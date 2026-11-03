@@ -9,6 +9,8 @@ import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
 import { DEBATES } from "./src/debates.src.mjs";
 const METH = JSON.parse(readFileSync("src/metodologia.json", "utf8"));
+// Candidaturas proclamadas y cabezas de lista del BOE (qa/herramientas/boe-cabezas.mjs, 3 nov 2026)
+const CANDS = JSON.parse(readFileSync("src/candidaturas.json", "utf8"));
 
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
 const DIL = ["Claramente A", "Más bien A", "Las dos por igual", "Más bien B", "Claramente B"];
@@ -47,7 +49,10 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   };
   const scopeText = (p) => {
     const s = p.scope;
-    if (s.all) return s.except?.length ? `Toda España salvo ${joinY(s.except.map((r) => regions[r].name))}` : "Toda España";
+    // Desde el 3 nov, «except» admite también provincias sueltas (las de la proclamación del BOE donde no hay lista)
+    const exR = (s.except || []).filter((r) => regions[r]), exP = (s.except || []).filter((x) => !regions[x]);
+    if (s.all && exP.length) return `En ${52 - exR.reduce((a, r) => a + regions[r].provs.length, 0) - exP.length} de las 52 circunscripciones`;
+    if (s.all) return exR.length ? `Toda España salvo ${joinY(exR.map((r) => regions[r].name))}` : "Toda España";
     if (s.regions) return joinY(s.regions.map((r) => regions[r].name));
     if (s.provinces) return joinY(s.provinces.map((x) => provName[x]));
     return "—";
@@ -324,7 +329,7 @@ q();
 
   // ── Provincias: escaños del real decreto y candidaturas que se presentan según los datos del test
   const provRegion = Object.fromEntries(PD.regions.flatMap((r) => r.provs.map((x) => [x.id, r.id])));
-  const runsIn = (pid, prov) => { const sc = P[pid].scope, r = provRegion[prov]; if (sc.all) return !(sc.except || []).includes(r); if (sc.regions) return sc.regions.includes(r); if (sc.provinces) return sc.provinces.includes(prov); return false; };
+  const runsIn = (pid, prov) => { const sc = P[pid].scope, r = provRegion[prov]; if ((sc.except || []).includes(prov)) return false; if (sc.all) return !(sc.except || []).includes(r); if (sc.regions) return sc.regions.includes(r); if (sc.provinces) return sc.provinces.includes(prov); return false; };
   const localName = (pid, prov) => P[pid].local?.[provRegion[prov]] || P[pid].name;
   const provList = PD.regions.flatMap((r) => r.provs.map((x) => ({ ...x, region: r })));
   const missingSeats = provList.filter((x) => !SEATS[x.id]).map((x) => x.id);
@@ -332,18 +337,24 @@ q();
   const inName = (pr) => (pr.id === "baleares" ? "las Illes Balears" : pr.name);
   for (const pr of provList) {
     const cands = live.filter((pid) => runsIn(pid, pr.id)), tbd = cands.filter((pid) => P[pid].tbd), n = SEATS[pr.id];
+    const boe = CANDS.provs[pr.id] || [], cabOf = (pid) => boe.find((c) => c.pid === pid)?.cab;
+    const boeLink = `<a href="${CANDS.fuente.url}" target="_blank" rel="noopener noreferrer">proclamación de candidaturas del BOE del ${fmtDate(CANDS.fuente.fecha)}</a>`;
     page({
       path: `/provincias/${pr.id}/`,
-      title: `Elecciones del 29N en ${inName(pr)}: escaños y candidaturas · Test 29N`,
-      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29 de noviembre de 2026. Las ${cands.length} candidaturas que se presentan según el Test 29N, con sus posturas, y un simulador del reparto de escaños.`,
+      title: `Candidaturas y cabezas de lista en ${pr.name} · 29N · Test 29N`,
+      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29N. Las ${boe.length} candidaturas proclamadas en el BOE con su cabeza de lista, ${cands.length} con sus posturas en el test, y el reparto de escaños.`,
       crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }, { name: pr.name, url: `${SITE}provincias/${pr.id}/` }],
       body: `<header class="sp-head"><p class="label">${esc(pr.region.name)} · Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Elecciones del 29N en ${esc(inName(pr))}</h1>
-  <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
+  <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas proclamadas</dt><dd><b>${boe.length}</b></dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
   <p class="small muted">Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>.</p></header>
 ${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`)}
 <section aria-labelledby="h-cand"><h2 class="h2" id="h-cand">Candidaturas que se presentan</h2>
-<p class="small muted">Según los datos del test. Las candidaturas proclamadas oficialmente se publican en el BOE el 3 de noviembre de 2026${tbd.length ? `; las marcadas «por confirmar» aún no han confirmado que se presentan` : ""}.</p>
-<ul class="sp-cards">${cands.map((pid) => `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(localName(pid, pr.id))}</b><span class="small muted">${esc(P[pid].tag)}${P[pid].tbd ? " · por confirmar" : ""}</span></span></a></li>`).join("")}</ul></section>
+<p class="small muted">Las ${cands.length} que tienen sus posturas en el test, con su cabeza de lista según la ${boeLink}${tbd.length ? `; las marcadas «por confirmar» aún no han confirmado que se presentan` : ""}.</p>
+<ul class="sp-cards">${cands.map((pid) => `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(localName(pid, pr.id))}</b><span class="small muted">${cabOf(pid) ? `Cabeza de lista: ${esc(cabOf(pid))}` : esc(P[pid].tag)}${P[pid].tbd ? " · por confirmar" : ""}</span></span></a></li>`).join("")}</ul></section>
+<section aria-labelledby="h-boe"><h2 class="h2" id="h-boe">Todas las candidaturas proclamadas (${boe.length})</h2>
+<p class="small muted">En el orden y con los nombres de la ${boeLink}. ${boe.length > cands.length ? `Las ${boe.length - cands.length} sin enlace no están en el test.` : ""}</p>
+<style>.boe-list { margin: 0; padding-left: 1.6em; display: grid; gap: 8px; max-width: 820px; } .boe-list li { padding: 6px 0; border-bottom: 1px solid var(--rule); } .boe-list li > span { display: block; overflow-wrap: anywhere; } .boe-list a { color: var(--ink); text-underline-offset: 3px; }</style>
+<ol class="boe-list">${boe.map((c) => `<li><span>${c.pid ? `<a href="/partidos/${c.pid}/">${esc(c.c)}</a>` : esc(c.c)}</span><span class="small muted">Cabeza de lista: ${esc(c.cab)}</span></li>`).join("")}</ol></section>
 <section aria-labelledby="h-sim"><h2 class="h2" id="h-sim">¿Cómo se reparten sus ${n} ${n === 1 ? "escaño" : "escaños"}?</h2>
 <p>${n === 1 ? `En ${esc(pr.name)} se elige un solo diputado: lo gana la candidatura más votada.` : `Con la ley D'Hondt, entre las candidaturas que superan el 3 % de los votos válidos de ${esc(pr.name)}.`} Puedes probarlo con los votos que tú quieras en el <a href="/escanos/?p=${pr.id}">simulador de escaños</a>. No usa encuestas ni estimaciones.</p></section>
 <p class="small muted">${pr.region.provs.length > 1 ? `Otras provincias de ${esc(pr.region.name)}: ${pr.region.provs.filter((x) => x.id !== pr.id).map((x) => `<a href="/provincias/${x.id}/">${esc(x.name)}</a>`).join(" · ")} · ` : ""}<a href="/provincias/">Todas las provincias</a></p>`
@@ -566,7 +577,7 @@ ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
   const progRow = (pid) => { const p = P[pid], pub = PROG[pid], noList = PROGRAMAS.sinLista.includes(pid);
     return `<li><a class="pg-party" href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(scopeText(p))}</span></span></a><div class="pg-st">${pub
       ? `<span class="pg-tag ok">Publicado</span><span class="small"><a href="${esc(pub.url)}" target="_blank" rel="noopener noreferrer">${esc(pub.titulo)}</a>, ${esc(fmtDate(pub.fecha))}. ${progReviewed(pid)} posturas del test revisadas con él.</span>`
-      : `<span class="pg-tag">Aún no publicado</span>${noList ? `<span class="small">No figura en las listas provisionales del Congreso (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">BOE del 28 de octubre</a>).</span>` : `<span class="small"><a href="/partidos/${pid}/">Ver sus posturas actuales</a></span>`}`}</div></li>`; };
+      : `<span class="pg-tag">Aún no publicado</span>${noList ? `<span class="small">No figura en la proclamación de candidaturas al Congreso (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">${esc(PROGRAMAS.boe.label)}</a>).</span>` : `<span class="small"><a href="/partidos/${pid}/">Ver sus posturas actuales</a></span>`}`}</div></li>`; };
   page({
     path: "/programas/",
     title: "Programas electorales del 29N: cuáles se han publicado · Test 29N",

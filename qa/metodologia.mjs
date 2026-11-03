@@ -10,7 +10,7 @@ const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.me
 const P = Object.fromEntries(pd.parties.map((p) => [p.id, p]));
 const live = pd.order.filter((pid) => !P[pid].out);
 const provs = pd.regions.flatMap((r) => r.provs.map((p) => ({ id: p.id, region: r.id })));
-const runs = (pid, pr) => { const s = P[pid].scope; if (s.all) return !(s.except || []).includes(pr.region); if (s.regions) return s.regions.includes(pr.region); if (s.provinces) return s.provinces.includes(pr.id); return false; };
+const runs = (pid, pr) => { const s = P[pid].scope; if ((s.except || []).includes(pr.id)) return false; if (s.all) return !(s.except || []).includes(pr.region); if (s.regions) return s.regions.includes(pr.region); if (s.provinces) return s.provinces.includes(pr.id); return false; };
 const homeProv = (pid) => (P[pid].scope.all ? { id: "madrid", region: "mad" } : provs.find((pr) => runs(pid, pr)));
 const order = bank.questions.map((q) => q.id);
 let seed = 29; const rnd = () => ((seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648);

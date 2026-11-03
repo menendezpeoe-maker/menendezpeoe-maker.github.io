@@ -1,4 +1,28 @@
-# Auditoría de candidaturas por circunscripción (28 oct 2026)
+# Auditoría de candidaturas por circunscripción
+
+## Resultado definitivo (3 nov 2026, C1)
+
+Proclamación definitiva de candidaturas al Congreso: **BOE-A-2026-23103** (BOE nº 273, 3 nov 2026, 225 páginas). 52 circunscripciones, **533 candidaturas proclamadas** y 21 no proclamadas (entre ellas PACMA en 7 provincias más que en las provisionales y Juntos por Extremadura en Badajoz y Cáceres).
+
+**Aplicado en la web** (`src/partidos.src.mjs`; «except» admite ahora provincias sueltas):
+- Fuera del test, con página de aviso: **UPL**, **Por Ávila** y **Jaén Merece Más** (no figuran en la proclamación).
+- **PACMA**: no se presenta en 22 circunscripciones (Ávila, Badajoz, Illes Balears, Barcelona, Burgos, Cáceres, Cantabria, Ciudad Real, A Coruña, Guadalajara, Lugo, Murcia, Ourense, Palencia, Pontevedra, Salamanca, Soria, Toledo, Zamora, Zaragoza, Ceuta y Melilla).
+- **SALF**: no se presenta en Bizkaia, Gipuzkoa, Girona, Lleida, Cantabria y Ciudad Real.
+- **Podemos**: no se presenta en Illes Balears ni Melilla. **Frente Amplio**: no se presenta en Ceuta ni Melilla.
+- **CHA-Frente Amplio**: solo Huesca y Zaragoza. **Existe**: solo Teruel.
+- Democracia 21 y Soria ¡Ya! dejan de estar «por confirmar».
+- En Navarra, EH Bildu concurre en coalición con ERC (EH BILDU-ERC): se mantiene como EH Bildu.
+- Tras los cambios, `boe-comparar.mjs` no encuentra ninguna diferencia entre la web y el BOE.
+
+**Cabezas de lista:** `src/candidaturas.json` (generado con `qa/herramientas/boe-cabezas.mjs`) guarda las 533 candidaturas con su primer nombre tal como figuran en el BOE. Cada página de provincia muestra el cabeza de lista de las candidaturas del test y la lista completa de candidaturas proclamadas, con enlace al BOE.
+
+**Sin hacer (decisión pendiente, ver ESTADO.md):** añadir candidaturas regionales al test (Alhora, NEX, PREPAL, Convergents, Valencia Unida…). El código admite posturas desconocidas, pero cada postura necesita fuente; no se ha añadido ninguna a medias.
+
+Herramientas: `qa/herramientas/boe-candidaturas.py` (reescrito el 3 nov: une los bloques partidos de una provincia, descarta las «No proclamada» y saca el cabeza de lista), `boe-comparar.mjs` y `boe-cabezas.mjs`.
+
+---
+
+## Auditoría previa con las listas provisionales (28 oct 2026)
 
 Comparación de lo que muestra la web (`data/partidos.json`, 27 candidaturas) con las listas **provisionales** del Congreso publicadas en el BOE del 28 de octubre de 2026 (BOE-A-2026-22607, 52 circunscripciones, 556 candidaturas). **Las listas definitivas se proclaman el 2 de noviembre y salen en el BOE el 3.** Hasta entonces, los partidos pueden corregir defectos, así que no se ha cambiado nada en la web.
 
