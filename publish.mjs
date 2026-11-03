@@ -127,7 +127,17 @@ const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding
 // El texto se ve desde el principio con la fuente del sistema (font-display: swap), como antes en conexiones lentas.
 // 3G lenta simulada: 8,6 → 7,2 s; 3G rápida: 2,3 → 1,8 s. Cada archivo se descarga una sola vez.
 const PRELOAD = [["preguntas", true], ["partidos", true], ["politicos", false]].map(([n, hi]) => `<link rel="preload" href="data/${n}.json" as="fetch" crossorigin${hi ? ' fetchpriority="high"' : ""}>`).join("\n");
-const headIndex = head(TITLE, DESC, social + faqLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
+// Conexión lenta (3 nov 2026): con 3G o menos, o con el ahorro de datos activado, la portada no pide las tipografías
+// propias (168 kB, casi la mitad de lo que hay que bajar) y usa la letra del sistema, con las mismas medidas (ver «Fallback» en
+// papeleta.css). Con 4G, 5G, wifi, navegadores sin esa información (Safari, Firefox) o sin JavaScript, todo igual que antes.
+// El script va en línea y su firma se añade a la CSP de esta página (no se abre «script-src» a nada más).
+const FONTS_HREF = `assets/fonts.css?v=${v.fonts}`;
+const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slow-2g|2g|3g)$/.test(c.effectiveType))){document.documentElement.className+=" red-lenta";return}document.write('<link rel="stylesheet" href="${FONTS_HREF}">')})()`;
+const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
+const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
+let headIndex = head(TITLE, DESC, social + faqLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
+if (!headIndex.includes(FONTS_LINK) || !headIndex.includes("script-src 'self'")) throw new Error("No encuentro el enlace de las tipografías o la CSP de la portada");
+headIndex = headIndex.replace(FONTS_LINK, `<script>${NET_JS}</script><noscript>${FONTS_LINK}</noscript>`).replace("script-src 'self'", `script-src 'self' 'sha256-${NET_HASH}'`);
 if (headIndex.includes('as="font"')) throw new Error("La portada no debe precargar la tipografía (ver comentario de PRELOAD)");
 writeFileSync(`${OUT}/index.html`, `${headIndex.replace("</head>", `${PRELOAD}\n<link rel="stylesheet" href="assets/mejora.css?v=${v.mcss}">\n</head>`)}
 <body>
