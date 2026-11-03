@@ -1,5 +1,537 @@
 [
  {
+  "fecha": "2026-11-03",
+  "id": "A01",
+  "partido": "salf",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "A02",
+  "partido": "d21",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone aliviar la presión fiscal y, a la vez, recuperar buenos servicios públicos, sin priorizar claramente una opción.",
+  "fuente": [
+   "https://www.democrata.es/politica/democracia-21-concurrira-en-madrid-y-barcelona-con-la-abogada-miriam-gonzalez-como-cabeza-de-lista/",
+   "Demócrata, presentación de la candidatura de Democracia 21",
+   "prensa",
+   "2026-10-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "A04",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "A10",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía bonificar al 100 % sucesiones entre parientes directos.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=29",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 29",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B03",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B05",
+  "partido": "vox",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B06",
+  "partido": "vox",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C01",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C03",
+  "partido": "adel",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C03",
+  "partido": "d21",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=11",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 11",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C04",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C05",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C06",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía suprimir las diputaciones e integrar sus funciones en las comunidades.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C06",
+  "partido": "psoe",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C07",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C09",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D01",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 42",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D04",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=25",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 25",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D04",
+  "partido": "salf",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D07",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D09",
+  "partido": "bildu",
+  "de": 1,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "EH Bildu propuso en 2024 que en Euskadi liderase el Gobierno la fuerza más votada, entre fuerzas progresistas.",
+  "fuente": [
+   "https://www.vozpopuli.com/espana/politica/bildu-reta-pnv-gobierne-lista-mas-votada-elecciones-vascas.html",
+   "Vozpópuli: Otxandiano (EH Bildu) propone al PNV que gobierne la lista más votada en Euskadi",
+   "prensa",
+   "2024-01-24"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "E01",
+  "partido": "salf",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "E04",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "E04",
+  "partido": "bng",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "E09",
+  "partido": "d21",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F09",
+  "partido": "vox",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "G01",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "G03",
+  "partido": "salf",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H01",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H02",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=48",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 48",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H05",
+  "partido": "ccpc",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "En 2024 su presidente, Fernando Clavijo, asumió la posición del Gobierno favorable al plan de autonomía marroquí, que CC había criticado en 2022-2023.",
+  "fuente": [
+   "https://www.elindependiente.com/espana/2024/10/08/el-presidente-canario-dice-ahora-apoyar-enteramente-el-cambio-de-posicion-de-espana-en-el-sahara-occidental/",
+   "El Independiente, declaraciones de Fernando Clavijo (CC) tras reunirse con el ministro marroquí de Exteriores",
+   "declaracion",
+   "2024-10-08"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H06",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I01",
+  "partido": "d21",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=12",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 12",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I02",
+  "partido": "bng",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I05",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I05",
+  "partido": "gbai",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I05",
+  "partido": "psoe",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I09",
+  "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=46",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 46",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "J01",
+  "partido": "d21",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "K01",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "L03",
+  "partido": "bildu",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "L04",
+  "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
+  "fuente": [
+   "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=6",
+   "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 6",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
   "fecha": "2026-10-28",
   "id": "A02",
   "partido": "salf",
