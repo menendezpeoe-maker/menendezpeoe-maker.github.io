@@ -9,7 +9,6 @@
 - Donación por Bizum: bloqueada por dependencia externa (aprobación de Stripe).
 
 **Orden de trabajo para la próxima tanda**
-0. **Fuentes pendientes:** 120 posturas documentadas sin enlace en `plan/fuentes-en-curso/pendiente.json` (método en su `LEEME.md`). Después, revisión de enlaces de todas las fuentes (el titular la pidió el 3 nov tras esto, avisándole).
 1. **Debates (`src/debates.src.mjs`):** a 1 nov, tres propuestas sin confirmar (Mediaset 16 nov, RTVE 23 nov, Atresmedia sin fecha). En cada tanda de campaña: actualizar estado, hora y cadena con fuente; tras cada debate, solo el enlace al vídeo oficial. No indicar qué partido acepta cada uno (neutralidad).
 2. **Partidos regionales (decisión del titular pendiente):** el BOE recoge candidaturas regionales que no están en el test (Alhora, NEX, PREPAL, Convergents, Valencia Unida, Liberación Canaria, FIA…; lista en `plan/AUDITORIA-CANDIDATURAS.md`). El código admite posturas desconocidas («0»), pero cada postura necesita fuente: no añadir ninguno a medias. Ya aparecen, con su cabeza de lista, en la lista del BOE de cada página de provincia.
 3. **Programas del 29N:** a 3 nov, ninguno publicado. Cuando salga uno: `src/programas.src.mjs` (`publicados`, `comprobado`) y revisión de sus 107 posturas con el PDF como fuente `programa`.
@@ -32,10 +31,16 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
-## 3 nov 2026 · Fuentes de las posturas documentadas sin enlace (petición del titular, a medias)
+## 3 nov 2026 · Comprobación de enlaces de todas las fuentes (petición del titular)
+- **Enlaces** (`qa/herramientas/comprobar-enlaces.py`, solo curl): 330 URL distintas en 823 posturas; 328 responden. Euronews (G01/psoe) da 406 a los robots pero la noticia existe (comprobada aparte). EITB redirige a orain.eus: enlace de D04/upn actualizado a la dirección nueva (misma noticia, «172 votos en contra (PP, Vox, UPN y CC)»).
+- **¿Dice lo que decimos?** Las fuentes antiguas no guardan cita, así que se comprobó que cada página nombre al partido: 53 de 823 no lo hacen, casi todas explicables (documentos del Gobierno para el PSOE, votaciones nominales del Congreso en datos abiertos, programa de Sumar 2023 para sus socios de entonces). Revisadas a mano las dudosas (L02/ccpc, I01/vox): correctas. Sin fuentes rotas.
+- **Verificación:** web real 21/21 tras publicar las fuentes; IndexNow 200.
+
+## 3 nov 2026 · Fuentes de las posturas documentadas sin enlace (petición del titular, terminada)
 - **Punto de partida:** de 2.130 posturas, 1.246 estimadas, 639 con fuente y **258 marcadas como documentadas pero sin enlace ni justificación**.
 - **Hecho (138 de 258):** dos investigadores buscaron fuente para cada una; `verificar.py` comprobó que cada página responde y contiene la cita (111 de 112; la otra, revisada a mano). Aplicado con `qa/herramientas/aplicar-fuentes.mjs`: **110 fuentes nuevas con su justificación**; **40 posturas pasan a estimadas** (26 sin fuente fiable, B05/vox con fuente ambigua, C07/d21 y 12 de Democracia 21 cuya única fuente es el programa de Ciudadanos de 2019, que se enlaza pero no es de D21); **3 cambios de valor con fuente**: H05/ccpc 4→2 (Clavijo asume en 2024 la posición del Gobierno sobre el Sáhara), A02/d21 2→3 y D09/bildu 1→4 (estimada; propuesta de Otxandiano en 2024). Registro en `src/correcciones.json` (no público, decisión del 28 oct).
-- **Pendiente: 120 posturas** (`plan/fuentes-en-curso/pendiente.json`): los investigadores se pararon al agotarse el límite de uso de 5 horas. Mismo método.
+- **Segunda tanda (120 restantes, noche del 3 nov):** 74 fuentes nuevas verificadas; 54 posturas a estimadas (sin fuente fiable, fuente solo indirecta —J08 de Junts/PNV/Bildu, C05/upn, F05/junts…— o intensidad dudosa; 8 de ellas con la fuente enlazada como referencia); B07/mes 5→2 con fuente (Apesteguia rechaza gravar por nacionalidad). Se aceptan programas de coalición de 2023 (Sumar, NC) cuando la etiqueta lo dice.
+- **Resultado total:** ya no queda ninguna postura «documentada» sin enlace. Con fuente: 639 → 823; estimadas: 1.246 → 1.340 (de 2.130). 4 cambios de valor con fuente: H05/ccpc, A02/d21, D09/bildu y B07/mes.
 - **Rendimiento:** `data/preguntas.json` 384 → 426 kB sin comprimir (+9 kB comprimido). Portada en la web real: 389 kB y 8,2–8,4 s con 3G lenta (antes 380 kB y 7,2 s). Presupuestos: web real 380 kB/8,5 s → 410 kB/9 s; local 1000 → 1060 kB. `UPDATED` → 2026-11-03.
 - **Verificación:** 21/21 en local y en la versión publicable; web real 20/21 hasta ajustar el presupuesto de rendimiento, después 21/21. IndexNow 200 (231 URL).
 
