@@ -12,9 +12,9 @@ const SITE = (process.env.BASE || "http://127.0.0.1:8766/").replace(/_local\.htm
 // 28 oct: local 900 → 960 kB porque data/preguntas.json crece con las fuentes de cada tanda (comprimido, en la web real, sigue en ~345 kB).
 // 1 nov (bloque B): local 960 kB/21 s → 1000 kB/22 s: mejora.css/js (31 oct y bloque B) y fuentes nuevas suman sin comprimir, y C1 añadirá más.
 // En local los archivos van sin comprimir; el presupuesto de la web real (comprimido: 380 kB, usable en 10 s) no cambia y es el que cuenta.
-// 3 nov (fuentes): web real 380 kB/8,5 s → 410 kB/9 s (medido 389 kB y 8,2–8,4 s con 110 fuentes nuevas; margen para las 120 pendientes). Local 1000 → 1060 kB: data/preguntas.json pasa de 384 a 426 kB sin comprimir al añadir 110 fuentes con su justificación (+9 kB comprimido).
+// 3 nov (fuentes): web real 380 kB/8,5 s → 410 kB/9 s (medido 389 kB y 8,2–8,4 s con 110 fuentes nuevas; margen para las 120 pendientes). Local 1000 → 1100 kB: data/preguntas.json pasa de 384 a 454 kB sin comprimir al añadir 184 fuentes con su justificación (+15 kB comprimido).
 // 1 nov (velocidad en móvil): web real usable en 10 → 8,5 s, tras precargar los datos y no precargar la fuente en la portada (medido: 8,8 → ~7,2 s).
-const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1060, 22], page: [300, 5] };
+const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1100, 22], page: [300, 5] };
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const browser = await chromium.launch();

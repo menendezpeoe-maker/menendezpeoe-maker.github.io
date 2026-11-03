@@ -130,7 +130,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 87
+    "pct": 86
    },
    {
     "pid": "mes",
@@ -148,7 +148,7 @@
     "pid": "soria",
     "prov": "soria",
     "primero": true,
-    "pct": 74
+    "pct": 72
    }
   ]
  },
@@ -159,7 +159,7 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 113
+    "n": 111
    },
    {
     "pid": "pp",
@@ -167,11 +167,11 @@
    },
    {
     "pid": "d21",
-    "n": 65
+    "n": 66
    },
    {
     "pid": "fa",
-    "n": 22
+    "n": 23
    },
    {
     "pid": "vox",
@@ -187,7 +187,7 @@
    }
   ],
   "mediaPrimero": 61,
-  "mediaDistancia": 1.9
+  "mediaDistancia": 1.8
  },
  "neutral": [
   {
@@ -237,14 +237,14 @@
   {
    "pid": "fa",
    "conocidas": 107,
-   "estimadas": 19,
-   "conFuente": 85
+   "estimadas": 21,
+   "conFuente": 88
   },
   {
    "pid": "pod",
    "conocidas": 107,
-   "estimadas": 31,
-   "conFuente": 62
+   "estimadas": 40,
+   "conFuente": 67
   },
   {
    "pid": "salf",
@@ -255,8 +255,8 @@
   {
    "pid": "pacma",
    "conocidas": 26,
-   "estimadas": 19,
-   "conFuente": 0
+   "estimadas": 20,
+   "conFuente": 7
   },
   {
    "pid": "d21",
@@ -273,91 +273,91 @@
   {
    "pid": "junts",
    "conocidas": 104,
-   "estimadas": 69,
-   "conFuente": 31
+   "estimadas": 73,
+   "conFuente": 32
   },
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 59,
-   "conFuente": 35
+   "estimadas": 62,
+   "conFuente": 37
   },
   {
    "pid": "bildu",
    "conocidas": 102,
-   "estimadas": 47,
-   "conFuente": 45
+   "estimadas": 51,
+   "conFuente": 52
   },
   {
    "pid": "upn",
    "conocidas": 104,
-   "estimadas": 70,
-   "conFuente": 28
+   "estimadas": 75,
+   "conFuente": 30
   },
   {
    "pid": "gbai",
    "conocidas": 72,
    "estimadas": 68,
-   "conFuente": 3
+   "conFuente": 4
   },
   {
    "pid": "bng",
    "conocidas": 105,
-   "estimadas": 60,
-   "conFuente": 41
+   "estimadas": 63,
+   "conFuente": 43
   },
   {
    "pid": "ccpc",
    "conocidas": 78,
    "estimadas": 57,
-   "conFuente": 20
+   "conFuente": 21
   },
   {
    "pid": "upc",
    "conocidas": 80,
-   "estimadas": 59,
-   "conFuente": 3
+   "estimadas": 62,
+   "conFuente": 19
   },
   {
    "pid": "drago",
    "conocidas": 78,
-   "estimadas": 67,
-   "conFuente": 0
+   "estimadas": 74,
+   "conFuente": 5
   },
   {
    "pid": "comp",
    "conocidas": 103,
-   "estimadas": 73,
-   "conFuente": 21
+   "estimadas": 75,
+   "conFuente": 30
   },
   {
    "pid": "cha",
    "conocidas": 86,
-   "estimadas": 76,
-   "conFuente": 5
+   "estimadas": 77,
+   "conFuente": 10
   },
   {
    "pid": "existe",
    "conocidas": 48,
-   "estimadas": 43,
+   "estimadas": 45,
    "conFuente": 3
   },
   {
    "pid": "mes",
    "conocidas": 79,
-   "estimadas": 68,
-   "conFuente": 0
+   "estimadas": 71,
+   "conFuente": 8
   },
   {
    "pid": "adel",
    "conocidas": 91,
-   "estimadas": 76,
+   "estimadas": 78,
    "conFuente": 13
   },
   {
    "pid": "soria",
    "conocidas": 23,
-   "estimadas": 18,
+   "estimadas": 21,
    "conFuente": 2
   }
  ]

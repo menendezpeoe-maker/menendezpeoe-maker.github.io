@@ -28,10 +28,32 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "A03",
+  "partido": "upn",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "A04",
   "partido": "d21",
   "de": 5,
   "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "A10",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
   "estimadaAntes": false,
   "estimada": true,
   "motivo": "",
@@ -93,10 +115,91 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "B07",
+  "partido": "drago",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Drago Canarias propone limitar la venta de viviendas a extranjeros, una medida más restrictiva que un impuesto.",
+  "fuente": [
+   "https://www.dragocanarias.com/programa/",
+   "Programa de Drago Canarias (autonómicas 2023), apartado de turismo",
+   "programa",
+   "2023-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B07",
+  "partido": "mes",
+  "de": 5,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda.",
+  "fuente": [
+   "https://www.ultimahora.es/noticias/local/2025/01/13/2304805/vivienda-baleares-mes-per-mallorca-condiciona-apoyo-medidas-sanchez.html",
+   "Última Hora: MÉS per Mallorca condiciona su apoyo a las medidas de vivienda del Gobierno (13 ene 2025)",
+   "prensa",
+   "2025-01-13"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B07",
+  "partido": "upc",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
+  "fuente": [
+   "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40",
+   "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40",
+   "programa",
+   "2023-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "B08",
+  "partido": "drago",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C01",
+  "partido": "comp",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "C01",
   "partido": "d21",
   "de": 1,
   "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C01",
+  "partido": "pnv",
+  "de": 5,
+  "a": 5,
   "estimadaAntes": false,
   "estimada": true,
   "motivo": "",
@@ -131,6 +234,39 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "C03",
+  "partido": "drago",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C03",
+  "partido": "mes",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C03",
+  "partido": "pod",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "C04",
   "partido": "d21",
   "de": 1,
@@ -142,8 +278,30 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "C04",
+  "partido": "upn",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "C05",
   "partido": "d21",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C05",
+  "partido": "upn",
   "de": 1,
   "a": 1,
   "estimadaAntes": false,
@@ -170,6 +328,17 @@
  {
   "fecha": "2026-11-03",
   "id": "C06",
+  "partido": "pnv",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C06",
   "partido": "psoe",
   "de": 2,
   "a": 2,
@@ -184,6 +353,28 @@
   "partido": "d21",
   "de": 5,
   "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C07",
+  "partido": "existe",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "C07",
+  "partido": "soria",
+  "de": 1,
+  "a": 1,
   "estimadaAntes": false,
   "estimada": true,
   "motivo": "",
@@ -223,6 +414,28 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "D01",
+  "partido": "existe",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D01",
+  "partido": "soria",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "D04",
   "partido": "d21",
   "de": 1,
@@ -250,6 +463,33 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "D06",
+  "partido": "pod",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D07",
+  "partido": "bng",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
+  "fuente": [
+   "https://www.elespanol.com/treintayseis/actualidad/galicia/20220521/decenas-personas-protestan-bng-sanxenxo-monarquia/674182765_0.html",
+   "El Español: protesta del BNG contra la monarquía en Sanxenxo",
+   "prensa",
+   "2022-05-21"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "D07",
   "partido": "d21",
   "de": 1,
@@ -258,6 +498,33 @@
   "estimada": true,
   "motivo": "",
   "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D07",
+  "partido": "junts",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D07",
+  "partido": "upn",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
+  "fuente": [
+   "https://www.vozpopuli.com/espana/senado-aprueba-iniciativa-respaldo-felipe-vi-monarquia-rechazo-socios-gobierno.html",
+   "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN",
+   "parlamento",
+   "2024-07-17"
+  ]
  },
  {
   "fecha": "2026-11-03",
@@ -274,6 +541,28 @@
    "prensa",
    "2024-01-24"
   ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D09",
+  "partido": "bng",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "D09",
+  "partido": "junts",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-03",
@@ -321,6 +610,72 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "F04",
+  "partido": "pod",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F05",
+  "partido": "drago",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F05",
+  "partido": "junts",
+  "de": 2,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F09",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F09",
+  "partido": "fa",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "F09",
+  "partido": "pod",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "F09",
   "partido": "vox",
   "de": 4,
@@ -334,6 +689,44 @@
   "fecha": "2026-11-03",
   "id": "G01",
   "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "G01",
+  "partido": "pacma",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "PACMA considera insostenible un modelo energético basado en los combustibles fósiles y la energía nuclear.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=31",
+   "Programa de PACMA para las generales de 2023, p. 31",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "G02",
+  "partido": "soria",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "G03",
+  "partido": "pod",
   "de": 5,
   "a": 5,
   "estimadaAntes": false,
@@ -365,6 +758,17 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "H01",
+  "partido": "drago",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "H02",
   "partido": "d21",
   "de": 5,
@@ -378,6 +782,60 @@
    "programa",
    "2019-11"
   ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H04",
+  "partido": "cha",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye al diputado de CHA en el grupo Sumar.",
+  "fuente": [
+   "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+   "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
+   "prensa",
+   "2025-10-08"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H04",
+  "partido": "comp",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye a la diputada de Compromís.",
+  "fuente": [
+   "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+   "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
+   "prensa",
+   "2025-10-08"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H04",
+  "partido": "drago",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "H04",
+  "partido": "mes",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-03",
@@ -408,6 +866,17 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "H09",
+  "partido": "adel",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "I01",
   "partido": "d21",
   "de": 4,
@@ -421,6 +890,28 @@
    "programa",
    "2019-11"
   ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I01",
+  "partido": "mes",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I01",
+  "partido": "upc",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-03",
@@ -447,7 +938,34 @@
  {
   "fecha": "2026-11-03",
   "id": "I05",
+  "partido": "fa",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
+  "fuente": [
+   "https://www.eldiario.es/catalunya/justicia-europea-descarta-25-castellano-vulnere-derechos-partidarios-inmersion-catalan_1_13314846.html",
+   "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula",
+   "prensa",
+   "2026-06-18"
+  ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I05",
   "partido": "gbai",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I05",
+  "partido": "pod",
   "de": 1,
   "a": 1,
   "estimadaAntes": false,
@@ -461,6 +979,28 @@
   "partido": "psoe",
   "de": 2,
   "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I07",
+  "partido": "bng",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "I07",
+  "partido": "upc",
+  "de": 5,
+  "a": 5,
   "estimadaAntes": false,
   "estimada": true,
   "motivo": "",
@@ -484,6 +1024,17 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "I09",
+  "partido": "pod",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "J01",
   "partido": "d21",
   "de": 2,
@@ -495,8 +1046,96 @@
  },
  {
   "fecha": "2026-11-03",
+  "id": "J08",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "J08",
+  "partido": "junts",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "J08",
+  "partido": "pnv",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "K01",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
   "id": "K01",
   "partido": "d21",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "K05",
+  "partido": "drago",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "K07",
+  "partido": "pod",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "K08",
+  "partido": "pod",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "L01",
+  "partido": "adel",
   "de": 5,
   "a": 5,
   "estimadaAntes": false,
@@ -530,6 +1169,17 @@
    "programa",
    "2019-11"
   ]
+ },
+ {
+  "fecha": "2026-11-03",
+  "id": "L05",
+  "partido": "upn",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-10-28",
