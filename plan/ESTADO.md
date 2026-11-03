@@ -24,7 +24,7 @@
 - Diseño aprobado por el titular (no revertir sin preguntar): ver regla 5 de `PLAN.md`.
 
 **Pruebas (3 nov)**
-- Local y versión publicable: 21/21 baterías OK (ver la entrada C1).
+- Local, versión publicable y web real: 21/21 baterías OK (ver la entrada C1).
 
 **Errores pendientes (menores)**
 - Ninguno conocido. (La lentitud de la portada en 3G se mejoró el 1 nov: ver la entrada «Velocidad de la portada».)
@@ -39,6 +39,7 @@ Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 - **Programas:** ninguno publicado a 3 nov (`src/programas.src.mjs`, `comprobado`); /programas/ apunta al BOE definitivo.
 - **No hecho:** partidos regionales nuevos (pendiente de decisión del titular); revisión de enlaces de fuentes (es de S1d, regla anti-duplicación del titular); fuentes de Podemos (sin programa aún).
 - **Pruebas:** `e2e` ponía el perfil de CHA en Teruel, donde ya no se presenta: pasa a Zaragoza. Kit de difusión: 27 → 24 candidaturas.
+- **Verificación:** 21/21 en local y en la versión publicable; web real 21/21 (`growth` y `stats` fallaron una vez porque el reinicio del entorno apagó el servidor local de apoyo; pasan al repetir). IndexNow 200 (231 URL).
 
 ## 2 nov 2026 · Mejora 6 · Barra fina también con el móvil en horizontal (aprobada por el titular tras ver la prueba)
 - **Problema:** con el móvil en horizontal (≥ 561 px de ancho y ≤ 500 px de alto) la barra del test era fija y ocupaba ~106 de 390 px; las respuestas quedaban fuera de la pantalla.
