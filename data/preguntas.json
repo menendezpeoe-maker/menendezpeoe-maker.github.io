@@ -471,6 +471,7 @@
    "est": [
     "d21",
     "junts",
+    "upn",
     "gbai",
     "ccpc",
     "upc",
@@ -1151,6 +1152,7 @@
     "d21",
     "junts",
     "pnv",
+    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -1357,6 +1359,12 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40",
+     "programa",
+     "2023-04"
     ]
    },
    "why": {
@@ -1367,7 +1375,8 @@
     "bng": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "ccpc": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "comp": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
-    "adel": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas."
+    "adel": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
+    "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas."
    }
   },
   {
@@ -1633,6 +1642,12 @@
      "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8",
      "programa",
      "2019-11"
+    ],
+    "fa": [
+     "https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular",
+     "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)",
+     "parlamento",
+     "2022-11-29"
     ]
    },
    "why": {
@@ -1649,7 +1664,8 @@
     "bng": "El BNG votó en contra de la enmienda que agilizaba el desalojo en casos de ocupación, aprobada en el Congreso el 14 de noviembre de 2024.",
     "ccpc": "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
     "comp": "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
-    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada."
+    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada.",
+    "fa": "Los partidos del Frente Amplio rechazaron la ley del PP que proponía desalojar a los okupas en 24 horas."
    }
   },
   {
@@ -1747,6 +1763,12 @@
      "Forbes España, votación del decreto del escudo social, 26/02/2026",
      "parlamento",
      "2026-02-26"
+    ],
+    "bildu": [
+     "https://www.deia.eus/politica/2025/12/22/gobierno-pacta-eh-bildu-prorrogar-10501301.html",
+     "Deia: EH Bildu pacta con el Gobierno prorrogar en 2026 la prohibición de desahucios de familias vulnerables",
+     "prensa",
+     "2025-12-22"
     ]
    },
    "why": {
@@ -1755,7 +1777,8 @@
     "fa": "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
     "pod": "Apoyó el decreto que prohibía desahuciar a personas vulnerables y criticó su caída en el Congreso.",
     "erc": "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables.",
-    "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no»."
+    "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
+    "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026."
    }
   },
   {
@@ -1847,6 +1870,36 @@
      "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 45",
      "programa",
      "2023-07"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=75",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 75",
+     "programa",
+     "2023-04"
+    ],
+    "drago": [
+     "https://www.dragocanarias.com/programa/",
+     "Programa de Drago Canarias (autonómicas 2023), apartado de turismo",
+     "programa",
+     "2023-05"
+    ],
+    "comp": [
+     "https://www.eldebate.com/espana/comunidad-valenciana/20260618/congreso-aprueba-propuesta-compromis-celebrar-referendums-sobre-modelo-turistico_429916.html",
+     "El Debate: el Congreso aprueba una propuesta de Compromís sobre el modelo turístico (18 jun 2026)",
+     "prensa",
+     "2026-06-18"
+    ],
+    "mes": [
+     "https://www.eldiario.es/economia/instituciones-baleares-prohibir-alquilar-turistas_1_3256574.html",
+     "elDiario.es/EFE: las instituciones de Baleares podrán prohibir alquilar pisos a turistas (30 jul 2017)",
+     "prensa",
+     "2017-07-30"
+    ],
+    "bildu": [
+     "https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/",
+     "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025",
+     "prensa",
+     "2024-10-16"
     ]
    },
    "why": {
@@ -1856,7 +1909,12 @@
     "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
     "ccpc": "Su Gobierno impulsó y aprobó la ley canaria que congela nuevas viviendas vacacionales hasta que cada ayuntamiento las ordene en su planeamiento.",
     "adel": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
-    "fa": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades."
+    "fa": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",
+    "upc": "El programa de Nueva Canarias, socio de UPC, propone impedir que crezca el alquiler vacacional en las zonas gentrificadas.",
+    "drago": "Drago Canarias propone paralizar las nuevas licencias de vivienda vacacional y fijar cupos por zonas.",
+    "comp": "Una iniciativa de Compromís en el Congreso pide que las administraciones locales puedan limitar los pisos turísticos en zonas sensibles.",
+    "mes": "La ley turística impulsada por el líder de MÉS en el Govern permite a los ayuntamientos ser más restrictivos con el alquiler turístico.",
+    "bildu": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda."
    }
   },
   {
@@ -1984,7 +2042,7 @@
     "drago": 5,
     "comp": 5,
     "cha": 5,
-    "mes": 5,
+    "mes": 2,
     "adel": 5
    },
    "est": [
@@ -1997,6 +2055,8 @@
     "gbai",
     "bng",
     "ccpc",
+    "upc",
+    "drago",
     "comp",
     "cha",
     "adel"
@@ -2040,6 +2100,24 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40",
+     "programa",
+     "2023-04"
+    ],
+    "drago": [
+     "https://www.dragocanarias.com/programa/",
+     "Programa de Drago Canarias (autonómicas 2023), apartado de turismo",
+     "programa",
+     "2023-05"
+    ],
+    "mes": [
+     "https://www.ultimahora.es/noticias/local/2025/01/13/2304805/vivienda-baleares-mes-per-mallorca-condiciona-apoyo-medidas-sanchez.html",
+     "Última Hora: MÉS per Mallorca condiciona su apoyo a las medidas de vivienda del Gobierno (13 ene 2025)",
+     "prensa",
+     "2025-01-13"
     ]
    },
    "why": {
@@ -2048,7 +2126,10 @@
     "vox": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda.",
     "fa": "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto.",
     "pod": "Propuso en el Congreso una reforma legal para limitar la compra de viviendas por no residentes.",
-    "erc": "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes."
+    "erc": "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes.",
+    "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
+    "drago": "Drago Canarias propone limitar la venta de viviendas a extranjeros, una medida más restrictiva que un impuesto.",
+    "mes": "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda."
    }
   },
   {
@@ -2097,6 +2178,7 @@
     "upn",
     "gbai",
     "ccpc",
+    "drago",
     "existe",
     "jmm",
     "upl",
@@ -2165,6 +2247,24 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 7",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81",
+     "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 81",
+     "programa",
+     "2023-07"
+    ],
+    "mes": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81",
+     "Programa de Sumar para el 23J de 2023, coalición (Sumar Més) con la que concurrió MÉS, p. 81",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/",
+     "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025",
+     "prensa",
+     "2024-10-16"
     ]
    },
    "why": {
@@ -2177,7 +2277,10 @@
     "comp": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones.",
     "bng": "El BNG defiende ampliar el parque público de vivienda, gestionado desde Galicia, con suelo y viviendas estatales.",
     "cha": "CHA defiende ampliar el parque público de vivienda en alquiler.",
-    "adel": "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler."
+    "adel": "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler.",
+    "upc": "El programa de Sumar, socio de UPC, propone crear un parque público de dos millones de viviendas sociales en alquiler.",
+    "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone un parque público de dos millones de viviendas sociales en alquiler.",
+    "bildu": "EH Bildu propone dedicar los recursos públicos a crear un parque de vivienda pública en alquiler, gestionado desde Euskadi."
    }
   },
   {
@@ -2317,11 +2420,13 @@
     "pod",
     "salf",
     "d21",
+    "pnv",
     "upn",
     "gbai",
     "ccpc",
     "upc",
     "drago",
+    "comp",
     "cha",
     "existe",
     "mes",
@@ -2376,11 +2481,18 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.que.es/2024/08/26/otegi-insta-al-respaldo-gubernamental/",
+     "Qué!: Otegi (EH Bildu) defiende la financiación singular de Cataluña",
+     "declaracion",
+     "2024-08-26"
     ]
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
-    "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
+    "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
+    "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación."
    }
   },
   {
@@ -2504,9 +2616,12 @@
     "upl": 1
    },
    "est": [
+    "pod",
     "salf",
     "d21",
+    "drago",
     "existe",
+    "mes",
     "adel",
     "upl"
    ],
@@ -2582,6 +2697,30 @@
      "Programa electoral de UPN para las generales de 2023, p. 1",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=2",
+     "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 2",
+     "programa",
+     "2019-10"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=14",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 14",
+     "programa",
+     "2023-04"
+    ],
+    "cha": [
+     "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=11",
+     "Programa de CHA para las autonómicas de Aragón de 2019, p. 11",
+     "programa",
+     "2019-05"
+    ],
+    "gbai": [
+     "https://orain.eus/es/politica/2013/06/27/reforma-educativa--geroa-bai-esta-lomce/",
+     "Orain (EFE): Barkos traslada a Wert la oposición de Geroa Bai a la LOMCE",
+     "prensa",
+     "2013-06-27"
     ]
    },
    "why": {
@@ -2596,7 +2735,11 @@
     "bng": "El programa pide transferir a Galicia todas las competencias en educación para diseñar un modelo educativo propio.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
     "comp": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
-    "upn": "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales."
+    "upn": "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales.",
+    "ccpc": "Coalición Canaria defiende el máximo nivel de autogobierno y competencias para Canarias, no su recentralización.",
+    "upc": "Nueva Canarias, socio de UPC, defiende ampliar el autogobierno con más traspasos, no devolver competencias al Estado.",
+    "cha": "CHA reclama el máximo techo competencial para Aragón y más traspasos del Estado, no su recentralización.",
+    "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación."
    }
   },
   {
@@ -2642,6 +2785,7 @@
     "junts",
     "pnv",
     "bildu",
+    "upn",
     "gbai",
     "bng",
     "ccpc",
@@ -2691,6 +2835,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10",
      "programa",
      "2019-05"
+    ],
+    "comp": [
+     "https://www.periodicodeibiza.es/noticias/nacional/2016/04/26/189554/compromis-propone-rey-acuerdo-extremis-para-evitar-elecciones.html",
+     "Periódico de Ibiza/EFE: propuesta de acuerdo de Compromís presentada al Rey (26 abr 2016)",
+     "prensa",
+     "2016-04-26"
     ]
    },
    "why": {
@@ -2700,7 +2850,8 @@
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
     "erc": "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
     "pp": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
-    "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal."
+    "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
+    "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal."
    }
   },
   {
@@ -2747,6 +2898,7 @@
     "fa",
     "salf",
     "d21",
+    "upn",
     "gbai",
     "ccpc",
     "upc",
@@ -2878,6 +3030,7 @@
     "salf",
     "d21",
     "junts",
+    "pnv",
     "bildu",
     "upn",
     "bng",
@@ -2968,7 +3121,9 @@
     "bildu",
     "upn",
     "cha",
+    "existe",
     "upl",
+    "soria",
     "pav"
    ],
    "src": {
@@ -3256,8 +3411,10 @@
     "drago",
     "comp",
     "cha",
+    "existe",
     "mes",
-    "adel"
+    "adel",
+    "soria"
    ],
    "notes": {
     "fa": "Su programa de 2023 solo se compromete a «valorar» actualizar la ley electoral o ampliar el número de diputados."
@@ -3292,6 +3449,12 @@
      "El Independiente: Podemos y Ciudadanos negocian una reforma electoral más proporcional",
      "prensa",
      "2018-02-08"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=69",
+     "Programa de PACMA para las generales de 2023, p. 69",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3300,7 +3463,8 @@
     "erc": "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias.",
     "bng": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
-    "pod": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë."
+    "pod": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
+    "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor."
    }
   },
   {
@@ -3613,6 +3777,12 @@
      "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 25",
      "programa",
      "2019-11"
+    ],
+    "comp": [
+     "https://www.que.es/2021/03/23/partidos-independentistas-veto-ley-amnistia/",
+     "Qué!: debate sobre la ley de amnistía en el Congreso (23 mar 2021)",
+     "prensa",
+     "2021-03-23"
     ]
    },
    "why": {
@@ -3628,7 +3798,8 @@
     "upn": "Votó en contra de la ley de amnistía en la votación del Congreso de marzo de 2024.",
     "bng": "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
     "ccpc": "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso, en mayo de 2024.",
-    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición."
+    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
+    "comp": "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán."
    }
   },
   {
@@ -3738,6 +3909,7 @@
     "psoe",
     "pp",
     "vox",
+    "pod",
     "salf",
     "pacma",
     "d21",
@@ -3812,8 +3984,11 @@
     "fa",
     "salf",
     "d21",
+    "junts",
     "pnv",
+    "upn",
     "gbai",
+    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -3862,6 +4037,18 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10",
      "programa",
      "2019-05"
+    ],
+    "bng": [
+     "https://www.elespanol.com/treintayseis/actualidad/galicia/20220521/decenas-personas-protestan-bng-sanxenxo-monarquia/674182765_0.html",
+     "El Español: protesta del BNG contra la monarquía en Sanxenxo",
+     "prensa",
+     "2022-05-21"
+    ],
+    "upn": [
+     "https://www.vozpopuli.com/espana/senado-aprueba-iniciativa-respaldo-felipe-vi-monarquia-rechazo-socios-gobierno.html",
+     "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN",
+     "parlamento",
+     "2024-07-17"
     ]
    },
    "why": {
@@ -3874,7 +4061,9 @@
     "pnv": "Estimación: no consta ninguna postura del PNV sobre un referéndum entre monarquía y república, así que se deja en el punto medio.",
     "comp": "Su programa propone una consulta para que la ciudadanía elija entre monarquía y república.",
     "bildu": "EH Bildu ha pedido en el Congreso que se celebre un referéndum sobre la Jefatura del Estado.",
-    "cha": "CHA propone convocar referéndums para avanzar hacia una república federal."
+    "cha": "CHA propone convocar referéndums para avanzar hacia una república federal.",
+    "bng": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
+    "upn": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado."
    }
   },
   {
@@ -3986,9 +4175,11 @@
     "pacma",
     "d21",
     "erc",
+    "junts",
     "bildu",
     "upn",
     "gbai",
+    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -4941,6 +5132,18 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 9",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=112",
+     "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 112",
+     "programa",
+     "2023-07"
+    ],
+    "comp": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=112",
+     "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 112",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4956,7 +5159,9 @@
     "ccpc": "Firmó con el PSOE el compromiso de reforzar la lucha contra la violencia de género y el Pacto de Estado.",
     "junts": "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
     "gbai": "Geroa Bai votó contra sustituir el concepto de violencia sobre la mujer por el de violencia intrafamiliar.",
-    "adel": "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género."
+    "adel": "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
+    "upc": "El programa de Sumar, socio de UPC, propone reforzar y ampliar el marco específico de violencia de género, no sustituirlo.",
+    "comp": "El programa conjunto con el que concurrió Compromís en 2023 propone reforzar el marco de violencia de género, no sustituirlo."
    }
   },
   {
@@ -5063,6 +5268,12 @@
      "Ara: el Congreso rechaza tramitar la ley de Más País para regular el cannabis",
      "parlamento",
      "2021-10-19"
+    ],
+    "comp": [
+     "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=25",
+     "Programa de Compromís de 2019 (Corts y generales), p. 25",
+     "programa",
+     "2019-04"
     ]
    },
    "why": {
@@ -5074,7 +5285,8 @@
     "erc": "ERC presentó en el Congreso una ley de regulación integral del cannabis, también recreativo.",
     "pnv": "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
     "upn": "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
-    "bildu": "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis."
+    "bildu": "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
+    "comp": "Compromís propone una regulación no penal de todas las drogas, que incluye el cannabis."
    }
   },
   {
@@ -5492,6 +5704,12 @@
      "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 104",
      "programa",
      "2023-07"
+    ],
+    "upc": [
+     "https://rtvc.es/pleno-del-parlamento-de-canarias-27-mayo-2026/",
+     "RTVC: el Parlamento de Canarias rechaza la «prioridad nacional» de Vox (27 may 2026)",
+     "prensa",
+     "2026-05-27"
     ]
    },
    "why": {
@@ -5508,7 +5726,8 @@
     "ccpc": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "comp": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "adel": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
-    "fa": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes."
+    "fa": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
+    "upc": "Nueva Canarias, socio de UPC, rechazó en el Parlamento canario la propuesta de Vox de priorizar a los nacionales en ayudas y servicios."
    }
   },
   {
@@ -5550,6 +5769,7 @@
     "soria": 4
    },
    "est": [
+    "pod",
     "salf",
     "d21",
     "junts",
@@ -5658,9 +5878,11 @@
     "salf",
     "d21",
     "erc",
+    "junts",
     "upn",
     "gbai",
     "bng",
+    "drago",
     "comp",
     "cha",
     "existe",
@@ -5715,6 +5937,12 @@
      "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes",
      "parlamento",
      "2025-04-10"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89",
+     "programa",
+     "2023-04"
     ]
    },
    "why": {
@@ -5726,7 +5954,8 @@
     "erc": "Estimación: posición intermedia por la defensa de las competencias autonómicas.",
     "pnv": "Pide una distribución equitativa de los menores migrantes no acompañados entre las comunidades autónomas.",
     "bildu": "Apoyó el decreto para repartir a los menores migrantes entre comunidades.",
-    "ccpc": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes."
+    "ccpc": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes.",
+    "upc": "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes."
    }
   },
   {
@@ -5809,6 +6038,12 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://diariodeavisos.elespanol.com/2019/04/podemos-propone-una-ayuda-de-entre-1-200e-y-2-000e-por-hijo-a-cargo/",
+     "Diario de Avisos (EFE): propuesta de Podemos de prestación universal por hijo a cargo",
+     "prensa",
+     "2019-04-15"
     ]
    },
    "why": {
@@ -5816,7 +6051,8 @@
     "pp": "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
     "vox": "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
-    "erc": "El programa propone una prestación universal por crianza de hijos."
+    "erc": "El programa propone una prestación universal por crianza de hijos.",
+    "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza."
    }
   },
   {
@@ -5968,13 +6204,27 @@
      "Programa electoral del BNG para las generales de 2023, p. 19",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
+     "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024",
+     "prensa",
+     "2024-04-07"
+    ],
+    "pod": [
+     "https://www.menorca.info/actualidad/nacional/2022/11/23/1834329/cualquiera-diga-pueden-garantizar-derechos-sociales-bajando-impuestos-ricos-miente.html",
+     "Menorca.info (Europa Press): Ione Belarra (Podemos) sobre dependencia e impuestos en el Congreso",
+     "declaracion",
+     "2022-11-23"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios.",
     "fa": "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
     "erc": "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos.",
-    "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia."
+    "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
+    "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
+    "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos."
    }
   },
   {
@@ -6013,11 +6263,14 @@
    },
    "est": [
     "vox",
+    "fa",
+    "pod",
     "salf",
     "d21",
     "erc",
     "junts",
     "pnv",
+    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -6088,6 +6341,7 @@
     "pav": 3
    },
    "est": [
+    "pacma",
     "d21",
     "gbai",
     "upc",
@@ -6187,6 +6441,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
      "parlamento",
      "2025-02-12"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=31",
+     "Programa de PACMA para las generales de 2023, p. 31",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6196,7 +6456,8 @@
     "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
     "bng": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "ccpc": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
-    "comp": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares."
+    "comp": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    "pacma": "PACMA considera insostenible un modelo energético basado en los combustibles fósiles y la energía nuclear."
    }
   },
   {
@@ -6258,6 +6519,7 @@
     "adel",
     "jmm",
     "upl",
+    "soria",
     "pav"
    ],
    "notes": {
@@ -6347,6 +6609,7 @@
     "soria": 2
    },
    "est": [
+    "pod",
     "salf",
     "pacma",
     "d21",
@@ -6497,6 +6760,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 71",
      "programa",
      "2019-05"
+    ],
+    "pod": [
+     "https://www.eldiario.es/castilla-la-mancha/castilla-la-mancha-trasvase-tajo-segura-millones_1_1901844.html",
+     "elDiario.es: Podemos Castilla-La Mancha pide el fin de los trasvases",
+     "prensa",
+     "2018-10-09"
     ]
    },
    "why": {
@@ -6508,7 +6777,8 @@
     "upn": "Votó a favor de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "bng": "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "existe": "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
-    "cha": "CHA rechaza los trasvases de agua entre cuencas, en especial el del Ebro."
+    "cha": "CHA rechaza los trasvases de agua entre cuencas, en especial el del Ebro.",
+    "pod": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura."
    }
   },
   {
@@ -7035,6 +7305,7 @@
     "d21",
     "junts",
     "gbai",
+    "drago",
     "existe"
    ],
    "notes": {
@@ -7124,6 +7395,24 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 281",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://www.elindependiente.com/espana/2025/04/22/sumar-podemos-rechazo-gasto-extra-defensas-2025-compra-armamento/amp/",
+     "El Independiente: Sumar y Podemos rechazan el gasto extra en defensa (22 abr 2025)",
+     "prensa",
+     "2025-04-22"
+    ],
+    "cha": [
+     "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=18",
+     "Programa de CHA para las autonómicas de Aragón de 2019, p. 18",
+     "programa",
+     "2019-05"
+    ],
+    "mes": [
+     "https://www.ultimahora.es/noticias/local/2025/09/18/2472505/parlament-rechaza-cierre-base-militar-del-puig-major-transferencia-terrenos-baleares-1.html",
+     "Última Hora: votación en el Parlament balear sobre gasto militar y la OTAN (18 sep 2025)",
+     "prensa",
+     "2025-09-18"
     ]
    },
    "why": {
@@ -7134,7 +7423,10 @@
     "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
     "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
     "comp": "Votó a favor de la moción que pedía revertir el aumento del gasto militar.",
-    "adel": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN."
+    "adel": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
+    "upc": "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
+    "cha": "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
+    "mes": "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar."
    }
   },
   {
@@ -7372,7 +7664,11 @@
    "est": [
     "salf",
     "d21",
-    "gbai"
+    "gbai",
+    "drago",
+    "comp",
+    "cha",
+    "mes"
    ],
    "src": {
     "psoe": [
@@ -7452,6 +7748,24 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+     "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
+     "prensa",
+     "2025-10-08"
+    ],
+    "comp": [
+     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+     "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
+     "prensa",
+     "2025-10-08"
+    ],
+    "cha": [
+     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
+     "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
+     "prensa",
+     "2025-10-08"
     ]
    },
    "why": {
@@ -7466,7 +7780,10 @@
     "upn": "Se abstuvo en la convalidación del decreto ley de embargo de armas a Israel, aprobado por el Congreso en octubre de 2025.",
     "bng": "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "ccpc": "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso.",
-    "adel": "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS."
+    "adel": "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS.",
+    "upc": "Sumar y Podemos, integrantes de UPC, votaron a favor de convalidar el decreto de embargo de armas a Israel.",
+    "comp": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye a la diputada de Compromís.",
+    "cha": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye al diputado de CHA en el grupo Sumar."
    }
   },
   {
@@ -7592,6 +7909,18 @@
      "El Independiente (Efe): Sumar, Podemos y Bildu exigen a Sánchez que rectifique en el Sáhara",
      "prensa",
      "2025-11-12"
+    ],
+    "upc": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=143",
+     "Programa de Sumar para el 23J de 2023 (Sumar e IU integran UPC), p. 143",
+     "programa",
+     "2023-07"
+    ],
+    "drago": [
+     "https://diariodeavisos.elespanol.com/2026/10/drago-canarias-eleccines-29n-alberto-rodriguez/",
+     "Diario de Avisos/Europa Press: Drago Canarias concurrirá en solitario el 29N (10 oct 2026)",
+     "prensa",
+     "2026-10-10"
     ]
    },
    "why": {
@@ -7607,7 +7936,9 @@
     "bng": "El BNG pide anular el giro del Gobierno sobre el Sáhara y apoyar un referéndum de autodeterminación.",
     "cha": "CHA defiende un referéndum de autodeterminación para el pueblo saharaui.",
     "adel": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
-    "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui."
+    "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
+    "upc": "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
+    "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara."
    }
   },
   {
@@ -7952,7 +8283,8 @@
     "pnv",
     "upn",
     "gbai",
-    "ccpc"
+    "ccpc",
+    "adel"
    ],
    "notes": {
     "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
@@ -7987,6 +8319,54 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "upc": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+     "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 150",
+     "programa",
+     "2023-07"
+    ],
+    "drago": [
+     "https://www.dragocanarias.com/programa/",
+     "Programa de Drago Canarias (autonómicas 2023), apartado de migraciones",
+     "programa",
+     "2023-05"
+    ],
+    "comp": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+     "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 150",
+     "programa",
+     "2023-07"
+    ],
+    "cha": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+     "Programa de Sumar para el 23J de 2023, coalición con la que concurrió CHA, p. 150",
+     "programa",
+     "2023-07"
+    ],
+    "mes": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+     "Programa de Sumar para el 23J de 2023, coalición (Sumar Més) con la que concurrió MÉS, p. 150",
+     "programa",
+     "2023-07"
+    ],
+    "pod": [
+     "https://www.bolsamania.com/noticias/sociedad/podemos-aboga-por-cambiar-las-politicas-migratorias-en-la-ue-pagamos-a-otros-para-que-vulneren-los-ddhh-por-nosotros--2657551.html",
+     "Bolsamanía (Europa Press): informe de Podemos «Externalización de fronteras»",
+     "prensa",
+     "2017-05-05"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20",
+     "Programa electoral del BNG para las generales de 2023, p. 20",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
+     "Compromiso electoral de EH Bildu para las generales de 2023, p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -7994,7 +8374,15 @@
     "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
     "vox": "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
     "fa": "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
-    "erc": "La ponencia critica externalizar fronteras con centros en terceros países."
+    "erc": "La ponencia critica externalizar fronteras con centros en terceros países.",
+    "upc": "El programa de Sumar, socio de UPC, propone acabar con los acuerdos de externalización de fronteras con terceros países.",
+    "drago": "Drago Canarias critica el Pacto Europeo de Migración por convertir las fronteras en espacios de procesamiento y contención.",
+    "comp": "El programa conjunto con el que concurrió Compromís en 2023 propone acabar con la externalización de fronteras.",
+    "cha": "El programa conjunto con el que concurrió CHA en 2023 propone acabar con la externalización de fronteras.",
+    "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone acabar con la externalización de fronteras.",
+    "pod": "Podemos rechaza la externalización de la política migratoria y de asilo de la UE a terceros países.",
+    "bng": "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo.",
+    "bildu": "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización."
    }
   },
   {
@@ -8037,7 +8425,9 @@
     "d21",
     "gbai",
     "ccpc",
-    "drago"
+    "upc",
+    "drago",
+    "mes"
    ],
    "notes": {
     "psoe": "Su programa de 2023 no propone recortar los conciertos: plantea actualizar su financiación a cambio de que no segreguen al alumnado."
@@ -8126,6 +8516,18 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 66",
      "programa",
      "2026-04"
+    ],
+    "cha": [
+     "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=40",
+     "Programa de CHA para las autonómicas de Aragón de 2019, p. 40",
+     "programa",
+     "2019-05"
+    ],
+    "pnv": [
+     "https://www.elsaltodiario.com/pais-vasco/ofrece-pp-ciudadanos-mas-financiacion-educacion-concertada-presupuestos",
+     "El Salto: el PNV ofrece más financiación para la concertada en los presupuestos vascos de 2023",
+     "prensa",
+     "2022-11-16"
     ]
    },
    "why": {
@@ -8135,7 +8537,9 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada.",
     "comp": "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan.",
     "upn": "UPN defiende la enseñanza concertada y eliminar límites a los conciertos educativos.",
-    "adel": "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos."
+    "adel": "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos.",
+    "cha": "CHA propone eliminar progresivamente los conciertos educativos con centros privados.",
+    "pnv": "El PNV propuso aumentar la financiación pública de la red concertada en los presupuestos vascos."
    }
   },
   {
@@ -8385,6 +8789,8 @@
    },
    "est": [
     "psoe",
+    "fa",
+    "pod",
     "salf",
     "d21",
     "gbai",
@@ -8441,6 +8847,24 @@
      "Programa electoral de UPN para las generales de 2023, p. 1",
      "programa",
      "2023-07"
+    ],
+    "comp": [
+     "https://es.ara.cat/valencia/ley-educativa-pp-vox-pais-valencia-camino-tribunales_1_5150864.html",
+     "Ara: recurso de inconstitucionalidad contra la ley educativa valenciana de PP y Vox (25 sep 2024)",
+     "prensa",
+     "2024-09-25"
+    ],
+    "mes": [
+     "https://www.moncloa.com/2024/07/05/mes-govern-plan-libre-eleccion-de-lengua-2706028/",
+     "Moncloa.com: MÉS exige destinar a otras necesidades los fondos del plan de libre elección de lengua (5 jul 2024)",
+     "prensa",
+     "2024-07-05"
+    ],
+    "fa": [
+     "https://www.eldiario.es/catalunya/justicia-europea-descarta-25-castellano-vulnere-derechos-partidarios-inmersion-catalan_1_13314846.html",
+     "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula",
+     "prensa",
+     "2026-06-18"
     ]
    },
    "why": {
@@ -8451,7 +8875,10 @@
     "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     "bildu": "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
     "bng": "El programa propone una escuela pública gallega orientada a la normalización lingüística.",
-    "upn": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera."
+    "upn": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
+    "comp": "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
+    "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
+    "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña."
    }
   },
   {
@@ -8511,6 +8938,12 @@
      "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas",
      "gobierno",
      "2013-06-25"
+    ],
+    "pod": [
+     "https://www.moncloa.com/2020/05/20/nuevas-becas-castells-169951/",
+     "Moncloa.com: reforma de becas del ministro Castells (cuota de Unidas Podemos), 2020",
+     "prensa",
+     "2020-05-20"
     ]
    },
    "why": {
@@ -8518,7 +8951,8 @@
     "vox": "Estimación: Vox vincula las becas al mérito y al esfuerzo, sin concretar exigencias de nota.",
     "fa": "Pidió en una proposición no de ley eliminar los mínimos académicos exigidos para no devolver las becas.",
     "erc": "Estimación: ERC defiende becas ambiciosas sin barreras de acceso.",
-    "pp": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas."
+    "pp": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas.",
+    "pod": "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas."
    }
   },
   {
@@ -8563,7 +8997,9 @@
     "pnv",
     "upn",
     "gbai",
+    "bng",
     "ccpc",
+    "upc",
     "drago",
     "cha",
     "mes"
@@ -8742,6 +9178,30 @@
      "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural",
      "parlamento",
      "2025-10-08"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=14",
+     "Programa de PACMA para las generales de 2023, p. 14",
+     "programa",
+     "2023-07"
+    ],
+    "upc": [
+     "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=46",
+     "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 46",
+     "programa",
+     "2023-04"
+    ],
+    "drago": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=56",
+     "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Drago Canarias, p. 56",
+     "programa",
+     "2023-07"
+    ],
+    "mes": [
+     "https://www.periodicodeibiza.es/noticias/baleares/2016/03/18/182582/govern-favor-proposicion-ley-para-prohibir-corridas-toros.html",
+     "Periódico de Ibiza/EFE: proposición de ley para prohibir las corridas de toros en Baleares (18 mar 2016)",
+     "prensa",
+     "2016-03-18"
     ]
    },
    "why": {
@@ -8752,7 +9212,11 @@
     "erc": "El programa pide derogar la ley de la tauromaquia y no financiarla.",
     "bildu": "EH Bildu votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
     "bng": "El BNG votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
-    "upn": "UPN votó en contra de retirar a la tauromaquia su protección legal como patrimonio cultural."
+    "upn": "UPN votó en contra de retirar a la tauromaquia su protección legal como patrimonio cultural.",
+    "pacma": "PACMA promete derogar la ley que protege la tauromaquia como patrimonio cultural y defiende abolir los festejos taurinos.",
+    "upc": "El programa de Nueva Canarias, socio de UPC, expresa su rechazo a la tauromaquia por considerarla cruenta.",
+    "drago": "El programa conjunto con el que concurrió Drago en 2023 propone suprimir la financiación pública de los festejos taurinos.",
+    "mes": "MÉS per Mallorca firmó en 2016 una proposición de ley para prohibir las corridas de toros en Baleares."
    }
   },
   {
@@ -8786,6 +9250,7 @@
     "mes": 5
    },
    "est": [
+    "pod",
     "salf",
     "d21",
     "cha"
@@ -8853,6 +9318,30 @@
      "Diario de Noticias: pleno del Parlamento de Navarra sobre política lingüística (intervención de Mikel Asiain, Geroa Bai)",
      "prensa",
      "2025-05-15"
+    ],
+    "mes": [
+     "https://www.elsaltodiario.com/baleares/catalan-deja-ser-un-requisito-funcionarios-sanidad-balear",
+     "El Salto: el catalán deja de ser requisito en la sanidad balear (26 sep 2023)",
+     "prensa",
+     "2023-09-26"
+    ],
+    "upn": [
+     "https://www.noticiasdenavarra.com/sociedad/2023/12/02/nuevo-varapalo-judicial-euskera-navarra-7594440.html",
+     "Noticias de Navarra (EFE): la justicia estima un recurso de UPN contra la exigencia de euskera en una plaza municipal",
+     "prensa",
+     "2023-12-02"
+    ],
+    "pnv": [
+     "https://orain.eus/es/politica/2026/04/24/estas-son-las-posiciones-los-partidos-sobre-el-euskera-en-las-ope/",
+     "Orain (EITB): propuestas de los partidos sobre el euskera en las OPE",
+     "prensa",
+     "2026-04-24"
+    ],
+    "junts": [
+     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=137",
+     "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8865,7 +9354,11 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público.",
     "comp": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
     "bng": "El BNG defiende que el personal de las administraciones en Galicia conozca el gallego.",
-    "gbai": "Geroa Bai apoya exigir el euskera como requisito en plazas de la Administración foral y ampliar la atención bilingüe."
+    "gbai": "Geroa Bai apoya exigir el euskera como requisito en plazas de la Administración foral y ampliar la atención bilingüe.",
+    "mes": "MÉS per Mallorca se opuso a suprimir el requisito de catalán para el personal de la sanidad pública balear.",
+    "upn": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
+    "pnv": "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
+    "junts": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña."
    }
   },
   {
@@ -8993,13 +9486,20 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 6",
      "programa",
      "2026-04"
+    ],
+    "upc": [
+     "https://www.ultimahora.es/noticias/nacional/2026/05/31/2640797/podemos-por-agotada-legislatura-este-gobierno-esta-enterrado.html",
+     "Última Hora/Europa Press: Irene Montero (Podemos) pide derogar la Ley 15/97 (31 may 2026)",
+     "prensa",
+     "2026-05-31"
     ]
    },
    "why": {
     "bildu": "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios.",
     "bng": "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas.",
     "comp": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
-    "adel": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios."
+    "adel": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
+    "upc": "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública."
    }
   },
   {
@@ -9085,6 +9585,12 @@
      "Programa electoral del BNG para las generales de 2023, p. 35",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
+     "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024",
+     "prensa",
+     "2024-04-07"
     ]
    },
    "why": {
@@ -9092,7 +9598,8 @@
     "fa": "Propone blindar la sanidad pública y una ley de listas de espera, no derivar pacientes a la privada.",
     "pod": "Su proposición de ley de 2024 impide renovar los conciertos con hospitales privados vinculados al SNS.",
     "erc": "La ponencia propone dejar de concertar con centros privados con ánimo de lucro.",
-    "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública."
+    "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
+    "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada."
    }
   },
   {
@@ -9474,6 +9981,9 @@
     "pod",
     "salf",
     "d21",
+    "junts",
+    "pnv",
+    "bildu",
     "upn",
     "gbai",
     "ccpc",
@@ -9580,6 +10090,7 @@
     "d21",
     "junts",
     "pnv",
+    "bildu",
     "gbai",
     "upc",
     "drago",
@@ -9655,6 +10166,12 @@
      "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026",
      "declaracion",
      "2026-01-27"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=57",
+     "Programa de PACMA para las europeas de 2024, p. 57",
+     "programa",
+     "2024-05"
     ]
    },
    "why": {
@@ -9662,7 +10179,8 @@
     "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
     "upn": "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
     "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
-    "ccpc": "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur."
+    "ccpc": "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur.",
+    "pacma": "PACMA se declara en contra de los tratados de libre comercio que debiliten las normas ambientales y sociales."
    }
   },
   {
@@ -9976,6 +10494,12 @@
      "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025",
      "parlamento",
      "2025-04-03"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=16",
+     "Programa de PACMA para las generales de 2023, p. 16",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9991,7 +10515,8 @@
     "bildu": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
     "upn": "Votó a favor de desproteger al lobo al norte del Duero y en el resto de España.",
     "bng": "Votó en contra de desproteger al lobo al norte del Duero.",
-    "ccpc": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
+    "ccpc": "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
+    "pacma": "PACMA pide catalogar al lobo como especie en peligro de extinción y se opone a su caza."
    }
   },
   {
@@ -10045,6 +10570,7 @@
     "bng",
     "ccpc",
     "upc",
+    "drago",
     "comp",
     "cha",
     "existe",
@@ -10089,6 +10615,12 @@
      "El Español (Ical): las Cortes de Castilla y León rechazan una moratoria de seis años a las macrogranjas",
      "parlamento",
      "2025-03-05"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=36",
+     "Programa de PACMA para las generales de 2023, pp. 35-36 («No a las macrogranjas»)",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10098,7 +10630,8 @@
     "erc": "Estimación: ERC es crítica con la ganadería intensiva.",
     "pp": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
     "vox": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
-    "soria": "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León."
+    "soria": "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León.",
+    "pacma": "Bajo el lema «No a las macrogranjas», PACMA propone limitar el tamaño de todas las explotaciones ganaderas."
    }
   },
   {
@@ -10219,6 +10752,7 @@
    },
    "est": [
     "fa",
+    "pod",
     "salf",
     "d21",
     "erc",
@@ -10258,13 +10792,20 @@
      "Programa electoral de Vox de 2023",
      "programa",
      "2023-07"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=14",
+     "Programa de PACMA para las generales de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 vincula la caza a la sostenibilidad del mundo rural, pero no propone protegerla por ley.",
     "pp": "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural.",
     "vox": "El programa de Vox defiende la caza como actividad esencial para el medio rural y propone una licencia única.",
-    "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley."
+    "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley.",
+    "pacma": "PACMA se opone a la caza y niega que sea necesaria para la gestión del medio."
    }
   },
   {
@@ -10300,6 +10841,7 @@
     "upl": 1
    },
    "est": [
+    "pod",
     "salf",
     "pacma",
     "d21",
@@ -10400,7 +10942,8 @@
     "gbai",
     "drago",
     "cha",
-    "mes"
+    "mes",
+    "adel"
    ],
    "notes": {
     "erc": "Defiende el derecho al aborto y permitió tramitar la reforma constitucional, pero comparte objeciones jurídicas y no se ha comprometido a votarla.",
@@ -10484,6 +11027,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026",
      "parlamento",
      "2026-04-30"
+    ],
+    "upc": [
+     "https://www.publico.es/politica/congreso/sumar-propone-reforma-articulo-43-constitucion-blindar-derecho-aborto.html",
+     "Público: Sumar propone reformar el artículo 43 para blindar el aborto (27 feb 2025)",
+     "prensa",
+     "2025-02-27"
     ]
    },
    "why": {
@@ -10492,7 +11041,8 @@
     "upn": "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó.",
     "bng": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
     "ccpc": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
-    "comp": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto."
+    "comp": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    "upc": "Sumar, integrante de UPC, propuso reformar la Constitución para incluir el derecho al aborto."
    }
   },
   {
@@ -10731,6 +11281,18 @@
      "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022",
      "parlamento",
      "2022-12-22"
+    ],
+    "upc": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116",
+     "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 116",
+     "programa",
+     "2023-07"
+    ],
+    "comp": [
+     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116",
+     "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 116",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10741,7 +11303,9 @@
     "pod": "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
     "erc": "El programa defiende la autodeterminación de género sin patologizar.",
     "pnv": "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
-    "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans."
+    "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
+    "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
+    "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos."
    }
   },
   {
@@ -10821,6 +11385,12 @@
      "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 6",
      "programa",
      "2019-11"
+    ],
+    "fa": [
+     "https://www.lamarea.com/2025/04/30/dossier-alquiler-vientres-espana/",
+     "La Marea: dossier sobre gestación subrogada en España (posición de Sumar)",
+     "prensa",
+     "2025-04-30"
     ]
    },
    "why": {
@@ -10829,7 +11399,8 @@
     "vox": "El programa de Vox rechaza la gestación subrogada.",
     "pod": "Irene Montero recordó que la ley reconoce la gestación subrogada como una forma de violencia contra las mujeres.",
     "erc": "Estimación: ERC no ha propuesto legalizar la gestación subrogada.",
-    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista."
+    "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
+    "fa": "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada."
    }
   },
   {
@@ -10874,6 +11445,7 @@
     "junts",
     "pnv",
     "bildu",
+    "upn",
     "gbai",
     "bng",
     "ccpc",
