@@ -2,7 +2,7 @@
  "titulo": "Posturas de las candidaturas del Test 29N",
  "licencia": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)",
  "atribucion": "Test 29N (https://test29n.es)",
- "actualizado": "2026-10-27",
+ "actualizado": "2026-11-03",
  "escala": "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B",
  "posturas": [
   {
@@ -111,7 +111,7 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -303,11 +303,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas.",
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Periódico de Ibiza (agencias), votación de la reducción de jornada; votaron Sumar y Podemos, integrantes de UPC",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-11"
   },
   {
    "pregunta_id": "A01",
@@ -341,11 +341,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial.",
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+   "fuente_titulo": "Periódico de Ibiza (agencias), votación en el Congreso del proyecto de reducción de jornada a 37,5 horas",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-09-11"
   },
   {
    "pregunta_id": "A01",
@@ -527,15 +527,15 @@
    "opcion_b": "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
    "partido_id": "d21",
    "partido": "Democracia 21",
-   "postura": 2,
-   "postura_texto": "Más bien A: Bajar impuestos, aunque haya que reducir gasto público",
+   "postura": 3,
+   "postura_texto": "Las dos por igual",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Propone aliviar la presión fiscal y, a la vez, recuperar buenos servicios públicos, sin priorizar claramente una opción.",
+   "fuente_url": "https://www.democrata.es/politica/democracia-21-concurrira-en-madrid-y-barcelona-con-la-abogada-miriam-gonzalez-como-cabeza-de-lista/",
+   "fuente_titulo": "Demócrata, presentación de la candidatura de Democracia 21",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2026-10-10"
   },
   {
    "pregunta_id": "A02",
@@ -626,11 +626,11 @@
    "postura_texto": "Más bien A: Bajar impuestos, aunque haya que reducir gasto público",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN prioriza reducir impuestos y deflactar el IRPF.",
+   "fuente_url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
+   "fuente_titulo": "Programa electoral de UPN para las generales de 2023, p. 1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A02",
@@ -930,11 +930,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+   "fuente_titulo": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 4",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "A03",
@@ -1158,11 +1158,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa para las generales propone un impuesto a las grandes fortunas.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=207",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 207",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "A03",
@@ -1329,11 +1329,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa autonómico de 2026 propone fijar en el Estatuto límites al endeudamiento y a la presión fiscal.",
+   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=6",
+   "fuente_titulo": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 6",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-03"
   },
   {
    "pregunta_id": "A04",
@@ -1346,7 +1346,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -2887,11 +2887,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG propone seguir subiendo el salario mínimo hasta el 60 % del salario medio.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=16",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "A08",
@@ -3476,11 +3476,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Anunció en 2023 una proposición de ley en el Senado para suprimir en toda España el impuesto de sucesiones y donaciones.",
+   "fuente_url": "https://theobjective.com/economia/2023-10-01/pp-impuesto-sucesiones-donaciones-suprimir/",
+   "fuente_titulo": "The Objective, proposición de ley del PP en el Senado para suprimir Sucesiones",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-10-01"
   },
   {
    "pregunta_id": "A10",
@@ -3569,13 +3569,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía bonificar al 100 % sucesiones entre parientes directos.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=29",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 29",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "A10",
@@ -3723,11 +3723,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El Gobierno canario que preside CC aprobó en 2023 una bonificación del 99,9 % del impuesto de sucesiones entre familiares cercanos.",
+   "fuente_url": "https://www.boe.es/boe/dias/2023/11/20/pdfs/BOE-A-2023-23402.pdf",
+   "fuente_titulo": "Decreto-ley 5/2023 del Gobierno de Canarias (CC-PP) sobre sucesiones y donaciones (BOE)",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2023-09-04"
   },
   {
    "pregunta_id": "A10",
@@ -4255,11 +4255,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "B02",
@@ -4804,13 +4804,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "B03",
@@ -5545,7 +5545,7 @@
    "partido": "Vox",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -5566,11 +5566,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=45",
+   "fuente_titulo": "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 45",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B05",
@@ -5775,11 +5775,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su Gobierno impulsó y aprobó la ley canaria que congela nuevas viviendas vacacionales hasta que cada ayuntamiento las ordene en su planeamiento.",
+   "fuente_url": "https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/",
+   "fuente_titulo": "RTVC, aprobación de la ley canaria de vivienda vacacional (Ley 6/2025)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-11-12"
   },
   {
    "pregunta_id": "B05",
@@ -5908,11 +5908,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "B06",
@@ -5963,7 +5963,7 @@
    "partido": "Vox",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -6991,11 +6991,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG defiende ampliar el parque público de vivienda, gestionado desde Galicia, con suelo y viviendas estatales.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=15",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "B08",
@@ -7067,11 +7067,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=273",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 273",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "B08",
@@ -7086,11 +7086,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "CHA defiende ampliar el parque público de vivienda en alquiler.",
+   "fuente_url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=38",
+   "fuente_titulo": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 38",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-05"
   },
   {
    "pregunta_id": "B08",
@@ -7143,11 +7143,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "B08",
@@ -7730,7 +7730,7 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -8359,11 +8359,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
+   "fuente_url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=7",
+   "fuente_titulo": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-05"
   },
   {
    "pregunta_id": "C02",
@@ -8623,13 +8623,13 @@
    "partido": "Democracia 21",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=11",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 11",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "C03",
@@ -8720,11 +8720,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales.",
+   "fuente_url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
+   "fuente_titulo": "Programa electoral de UPN para las generales de 2023, p. 1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C03",
@@ -8834,11 +8834,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=243",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 243",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "C03",
@@ -8908,7 +8908,7 @@
    "partido": "Adelante Andalucía",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -8967,11 +8967,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
+   "fuente_url": "https://www.periodicodeibiza.es/pitiusas/ibiza/2013/11/11/112215/rechazara-propuesta-para-creacion-estado-federal.html",
+   "fuente_titulo": "Periódico de Ibiza (Efe), el PP en el Parlament balear ante una propuesta federal",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2013-11-11"
   },
   {
    "pregunta_id": "C04",
@@ -9060,7 +9060,7 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -9290,11 +9290,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
+   "fuente_url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10",
+   "fuente_titulo": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-05"
   },
   {
    "pregunta_id": "C04",
@@ -9478,7 +9478,7 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -9858,7 +9858,7 @@
    "partido": "PSOE",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -9936,11 +9936,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Podemos defiende suprimir las diputaciones y traspasar sus competencias a comunidades y ayuntamientos.",
+   "fuente_url": "https://valenciaplaza.com/valenciaplaza/AseslaleyqueplanteaPodemosparavaciaralasdiputacionesdecompetencias",
+   "fuente_titulo": "Valencia Plaza: así es la ley que plantea Podemos para vaciar a las diputaciones de competencias",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2018-09-19"
   },
   {
    "pregunta_id": "C06",
@@ -9972,13 +9972,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía suprimir las diputaciones e integrar sus funciones en las comunidades.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "C06",
@@ -10390,7 +10390,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -11095,11 +11095,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio.",
+   "fuente_url": "https://www.elindependiente.com/espana/2024/08/02/la-defensa-del-cupo-vasco-ante-una-replica-catalana-del-no-se-toca-del-pnv-al-temor-a-perder-dinero-del-pp/",
+   "fuente_titulo": "El Independiente, defensa del Concierto y el Cupo vasco por los partidos vascos, incluido el PP",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-08-02"
   },
   {
    "pregunta_id": "C09",
@@ -11188,13 +11188,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "C09",
@@ -11285,11 +11285,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN defiende el Convenio Económico tal como está y considera que Navarra ya aporta de forma solidaria.",
+   "fuente_url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
+   "fuente_titulo": "Programa electoral de UPN para las generales de 2023, p. 1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "C09",
@@ -11304,11 +11304,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Geroa Bai defiende el Convenio Económico navarro y reclama ampliar la capacidad fiscal de Navarra.",
+   "fuente_url": "https://www.noticiasdenavarra.com/politica/2024/09/04/barkos-reclama-navarra-regule-figuras-8651878.html",
+   "fuente_titulo": "Diario de Noticias: Uxue Barkos (Geroa Bai) defiende en el Senado el Convenio Económico",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-09-04"
   },
   {
    "pregunta_id": "C09",
@@ -11494,11 +11494,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
+   "fuente_url": "https://www.elindependiente.com/politica/2018/02/08/sintonia-total-en-la-reunion-entre-ciudadanos-y-podemos-sobre-la-ley-electoral/amp/",
+   "fuente_titulo": "El Independiente: Podemos y Ciudadanos negocian una reforma electoral más proporcional",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2018-02-08"
   },
   {
    "pregunta_id": "D01",
@@ -11549,13 +11549,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 42",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "D01",
@@ -12064,11 +12064,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su documento programático propone reformar la ley electoral para introducir listas desbloqueadas y abiertas.",
+   "fuente_url": "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=13",
+   "fuente_titulo": "Democracia 21, documento «España Limpia», p. 13",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-10"
   },
   {
    "pregunta_id": "D02",
@@ -12330,11 +12330,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su documento programático propone que los vocales judiciales del CGPJ sean elegidos por los propios jueces.",
+   "fuente_url": "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=8",
+   "fuente_titulo": "Democracia 21, documento «España Limpia», p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-10"
   },
   {
    "pregunta_id": "D03",
@@ -12425,11 +12425,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN apoyó la reforma para que los jueces elijan directamente a la mayoría de los vocales del CGPJ.",
+   "fuente_url": "https://theobjective.com/espana/2021-09-21/la-mayoria-del-congreso-rechaza-reformar-el-sistema-de-eleccion-del-cgpj/",
+   "fuente_titulo": "The Objective: la mayoría del Congreso rechaza reformar el sistema de elección del CGPJ",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-09-21"
   },
   {
    "pregunta_id": "D03",
@@ -12708,7 +12708,7 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -12727,13 +12727,13 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=25",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "D04",
@@ -13090,11 +13090,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
+   "fuente_url": "https://www.congreso.es/public_oficiales/L13/CONG/BOCG/B/BOCG-13-B-72-1.PDF#page=8",
+   "fuente_titulo": "Proposición de Ley Orgánica contra las puertas giratorias de Unidas Podemos (BOCG, Congreso, serie B, 72-1), p. 8",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2019-09"
   },
   {
    "pregunta_id": "D05",
@@ -13829,7 +13829,7 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -13907,11 +13907,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu ha pedido en el Congreso que se celebre un referéndum sobre la Jefatura del Estado.",
+   "fuente_url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-37.PDF#page=12",
+   "fuente_titulo": "Diario de Sesiones del Congreso, Pleno n.º 37, 22 de julio de 2020, p. 12 (pregunta de Jon Iñarritu, EH Bildu)",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2020-07-22"
   },
   {
    "pregunta_id": "D07",
@@ -14040,11 +14040,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone una consulta para que la ciudadanía elija entre monarquía y república.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 253",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "D07",
@@ -14059,11 +14059,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "CHA propone convocar referéndums para avanzar hacia una república federal.",
+   "fuente_url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10",
+   "fuente_titulo": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-05"
   },
   {
    "pregunta_id": "D07",
@@ -14591,11 +14591,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El PNV rechazó la propuesta de que gobierne la lista más votada y defiende las mayorías parlamentarias.",
+   "fuente_url": "https://orain.eus/es/politica/2024/02/02/entrevista-a-imanol-pradales-candidato-a-lehendakari-del-pnv-en-radio-euskadi-2-de-febrero-de-2024/",
+   "fuente_titulo": "Entrevista a Imanol Pradales (EAJ-PNV) en Radio Euskadi, recogida por Orain",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-02-02"
   },
   {
    "pregunta_id": "D09",
@@ -14606,15 +14606,15 @@
    "opcion_b": "",
    "partido_id": "bildu",
    "partido": "EH Bildu",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu propuso en 2024 que en Euskadi liderase el Gobierno la fuerza más votada, entre fuerzas progresistas.",
+   "fuente_url": "https://www.vozpopuli.com/espana/politica/bildu-reta-pnv-gobierne-lista-mas-votada-elecciones-vascas.html",
+   "fuente_titulo": "Vozpópuli: Otxandiano (EH Bildu) propone al PNV que gobierne la lista más votada en Euskadi",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2024-01-24"
   },
   {
    "pregunta_id": "D09",
@@ -14931,7 +14931,7 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -16223,7 +16223,7 @@
    "partido": "EH Bildu",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -16280,7 +16280,7 @@
    "partido": "BNG",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -16947,11 +16947,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Junts votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
+   "fuente_url": "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
+   "fuente_titulo": "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-12-20"
   },
   {
    "pregunta_id": "E06",
@@ -17004,11 +17004,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN votó en contra de tramitar la ley que despenaliza las injurias a la Corona.",
+   "fuente_url": "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
+   "fuente_titulo": "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-12-20"
   },
   {
    "pregunta_id": "E06",
@@ -17042,11 +17042,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
+   "fuente_url": "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
+   "fuente_titulo": "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2023-12-20"
   },
   {
    "pregunta_id": "E06",
@@ -17764,11 +17764,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
+   "fuente_url": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=110",
+   "fuente_titulo": "Programa electoral de Junts per Catalunya para las generales de 2023, p. 110",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "E08",
@@ -17840,11 +17840,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Geroa Bai votó contra sustituir el concepto de violencia sobre la mujer por el de violencia intrafamiliar.",
+   "fuente_url": "https://www.noticiasdenavarra.com/politica/2024/06/27/navarra-aprueba-ley-permitira-cambiar-8413307.html",
+   "fuente_titulo": "Diario de Noticias: el Parlamento de Navarra rechaza la enmienda de Vox para llamar «intrafamiliar» a la violencia sobre la mujer",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-06-27"
   },
   {
    "pregunta_id": "E08",
@@ -17992,11 +17992,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=9",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 9",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "E09",
@@ -18123,7 +18123,7 @@
    "partido": "Democracia 21",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -18201,11 +18201,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
+   "fuente_url": "https://es.ara.cat/sociedad/congreso-rechaza-abrir-debate-regulacion-cultivo-cannabis_1_4154446.html",
+   "fuente_titulo": "Ara: el Congreso rechaza tramitar la ley de Más País para regular el cannabis",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2021-10-19"
   },
   {
    "pregunta_id": "E09",
@@ -18220,11 +18220,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
+   "fuente_url": "https://www.redaccionmedica.com/autonomias/20141127/el-parlamento-aprueba-una-ley-para-regular-los-colectivos-de-usuarios-cannabis/333119_0.html",
+   "fuente_titulo": "Redacción Médica: el Parlamento de Navarra aprueba la ley de colectivos de usuarios de cannabis",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2014-11-27"
   },
   {
    "pregunta_id": "E09",
@@ -18695,11 +18695,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Sumar y Podemos, integrantes de la coalición, apoyaron tramitar la regularización extraordinaria de migrantes.",
+   "fuente_url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+   "fuente_titulo": "RTVC, toma en consideración de la ILP de regularización; apoyo de Sumar y Podemos, integrantes de UPC",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-04-09"
   },
   {
    "pregunta_id": "F01",
@@ -18733,11 +18733,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "F01",
@@ -18809,11 +18809,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía pide facilitar la regularización de las personas migrantes en situación irregular.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "F02",
@@ -18847,11 +18847,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas.",
+   "fuente_url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+   "fuente_titulo": "RTVC, toma en consideración en el Congreso de la ILP de regularización extraordinaria",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-04-09"
   },
   {
    "pregunta_id": "F02",
@@ -19113,11 +19113,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
+   "fuente_url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+   "fuente_titulo": "RTVC, toma en consideración de la ILP de regularización; apoyo de Sumar y Podemos, integrantes de UPC",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2024-04-09"
   },
   {
    "pregunta_id": "F02",
@@ -19151,11 +19151,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "F02",
@@ -19227,11 +19227,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "F03",
@@ -19303,11 +19303,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104",
+   "fuente_titulo": "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 104",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F03",
@@ -19645,11 +19645,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=89",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 89",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "F04",
@@ -20405,11 +20405,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes.",
+   "fuente_url": "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
+   "fuente_titulo": "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-04-10"
   },
   {
    "pregunta_id": "F05",
@@ -21127,11 +21127,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Teruel Existe propone una fiscalidad más favorable en las zonas despobladas para fijar población.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Teruel Existe para las generales de 2023, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F07",
@@ -21203,11 +21203,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Soria ¡Ya! reclama una fiscalidad diferenciada y más favorable para las provincias escasamente pobladas.",
+   "fuente_url": "https://www.que.es/2021/10/21/soria-ya-manifestacion-fiscalidad-diferenciada/",
+   "fuente_titulo": "Qué!: Soria ¡Ya! convoca una manifestación para exigir la fiscalidad diferenciada",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2021-10-21"
   },
   {
    "pregunta_id": "F07",
@@ -21488,11 +21488,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "F08",
@@ -21695,7 +21695,7 @@
    "partido": "Vox",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -22189,7 +22189,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -22894,11 +22894,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/01/Programa-elecciones-autonomicas-8F-2026.-Teruel-Existe.pdf#page=14",
+   "fuente_titulo": "Programa electoral de Teruel Existe para las autonómicas de Aragón de 2026, p. 14",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-01"
   },
   {
    "pregunta_id": "G02",
@@ -23120,7 +23120,7 @@
    "partido": "Se Acabó La Fiesta",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -23787,11 +23787,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "CHA rechaza los trasvases de agua entre cuencas, en especial el del Ebro.",
+   "fuente_url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=71",
+   "fuente_titulo": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 71",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-05"
   },
   {
    "pregunta_id": "G04",
@@ -23806,11 +23806,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=10",
+   "fuente_titulo": "Programa electoral de Teruel Existe para las generales de 2023, p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G04",
@@ -24148,11 +24148,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG propone crear una empresa pública de energía, en su caso gallega, a partir de las concesiones hidroeléctricas.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=50",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 50",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "G05",
@@ -25326,11 +25326,11 @@
    "postura_texto": "Claramente A: Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares.",
+   "fuente_url": "https://roams.es/actualidad/energia/que-consecuencias-tendrian-las-propuestas-de-vox-para-frenar-en-seco-las-renovables/",
+   "fuente_titulo": "Roams, sobre la moción de Vox en el Congreso tras el apagón",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-10-20"
   },
   {
    "pregunta_id": "G09",
@@ -25856,7 +25856,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -26143,11 +26143,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=281",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 281",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "H02",
@@ -26293,13 +26293,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=48",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 48",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "H02",
@@ -27378,11 +27378,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "H05",
@@ -27435,11 +27435,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Rechazó el cambio de postura del Gobierno sobre el Sáhara y anunció que no lo respetaría, aunque se abstuvo en la votación.",
+   "fuente_url": "https://www.elindependiente.com/espana/2022/04/07/el-psoe-se-queda-solo-en-el-congreso-y-vota-contra-un-referendum-en-el-sahara/",
+   "fuente_titulo": "El Independiente, votación en el Congreso sobre el Sáhara Occidental",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2022-04-07"
   },
   {
    "pregunta_id": "H05",
@@ -27587,11 +27587,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
+   "fuente_url": "https://www.elindependiente.com/espana/2025/11/12/sumar-podemos-y-bildu-exigen-a-sanchez-que-rectifique-en-el-sahara-deje-de-estar-plegado-a-la-dictadura-marroqui/amp/",
+   "fuente_titulo": "El Independiente (Efe): Sumar, Podemos y Bildu exigen a Sánchez que rectifique en el Sáhara",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-11-12"
   },
   {
    "pregunta_id": "H05",
@@ -27644,11 +27644,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG pide anular el giro del Gobierno sobre el Sáhara y apoyar un referéndum de autodeterminación.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 67",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H05",
@@ -27659,15 +27659,15 @@
    "opcion_b": "",
    "partido_id": "ccpc",
    "partido": "Coalición Canaria – Primero Canarias",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En 2024 su presidente, Fernando Clavijo, asumió la posición del Gobierno favorable al plan de autonomía marroquí, que CC había criticado en 2022-2023.",
+   "fuente_url": "https://www.elindependiente.com/espana/2024/10/08/el-presidente-canario-dice-ahora-apoyar-enteramente-el-cambio-de-posicion-de-espana-en-el-sahara-occidental/",
+   "fuente_titulo": "El Independiente, declaraciones de Fernando Clavijo (CC) tras reunirse con el ministro marroquí de Exteriores",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2024-10-08"
   },
   {
    "pregunta_id": "H05",
@@ -27720,11 +27720,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa defiende la autodeterminación del pueblo saharaui y el fin de la ocupación marroquí.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=300",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 300",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "H05",
@@ -27739,11 +27739,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "CHA defiende un referéndum de autodeterminación para el pueblo saharaui.",
+   "fuente_url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=19",
+   "fuente_titulo": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-05"
   },
   {
    "pregunta_id": "H05",
@@ -27777,11 +27777,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "H06",
@@ -27908,7 +27908,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -28005,11 +28005,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
+   "fuente_url": "https://orain.eus/es/politica/2026/04/22/el-congreso-rechaza-el-referendum-salir-la-otan-pide-podemos/",
+   "fuente_titulo": "Orain (Europa Press): el Congreso rechaza el referéndum para salir de la OTAN que pide Podemos",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-04-22"
   },
   {
    "pregunta_id": "H06",
@@ -28043,11 +28043,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG defiende la salida de la OTAN y la disolución de la alianza.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 67",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "H06",
@@ -29352,13 +29352,13 @@
    "partido": "Democracia 21",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=12",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "I01",
@@ -29449,11 +29449,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN defiende la enseñanza concertada y eliminar límites a los conciertos educativos.",
+   "fuente_url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=3",
+   "fuente_titulo": "Programa electoral de UPN para las generales de 2023, p. 3",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I01",
@@ -29563,11 +29563,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=38",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 38",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "I01",
@@ -29620,11 +29620,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=66",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 66",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "I02",
@@ -29884,7 +29884,7 @@
    "partido": "BNG",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -30057,11 +30057,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Se opuso al decreto del Gobierno que endurece los requisitos para crear nuevas universidades, incluidas las privadas.",
+   "fuente_url": "https://www.eldiario.es/sociedad/pp-rechaza-decreto-anti-chiringuitos-universitarios-apoyan-rectores-sindicatos-estudiantes_1_12295535.html",
+   "fuente_titulo": "elDiario.es, rechazo del PP al decreto que endurece la creación de universidades",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-05-13"
   },
   {
    "pregunta_id": "I03",
@@ -30587,7 +30587,7 @@
    "partido": "PSOE",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -30701,7 +30701,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -30798,11 +30798,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
+   "fuente_url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
+   "fuente_titulo": "Programa electoral de UPN para las generales de 2023, p. 1",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I05",
@@ -30815,7 +30815,7 @@
    "partido": "Geroa Bai",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -30931,11 +30931,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas.",
+   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2013/06/25/102341/wert-reconsiderar-nota-del-para-optar-becas-universitarias.html",
+   "fuente_titulo": "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2013-06-25"
   },
   {
    "pregunta_id": "I06",
@@ -31178,11 +31178,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El Gobierno presidido por el PSOE exigió a Murcia retirar el «pin parental» que pedía autorización de los padres para estas actividades.",
+   "fuente_url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2020/170120-cministros.aspx",
+   "fuente_titulo": "La Moncloa, Consejo de Ministros del 17 de enero de 2020 (Gobierno del PSOE)",
+   "fuente_tipo": "gobierno",
+   "fuente_fecha": "2020-01-17"
   },
   {
    "pregunta_id": "I07",
@@ -31235,11 +31235,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El espacio de Frente Amplio defiende la educación sexual en todas las etapas como parte del currículo escolar.",
+   "fuente_url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=156",
+   "fuente_titulo": "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 156",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I07",
@@ -31254,11 +31254,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Podemos impulsó en Navarra una declaración de rechazo al «pin parental» que exige permiso de los padres para la educación afectivo-sexual.",
+   "fuente_url": "https://www.noticiasdenavarra.com/sociedad/2020/01/20/pin-parental-veto-ideologico-ninos-2319386.html",
+   "fuente_titulo": "Diario de Noticias: declaración del Parlamento de Navarra contra el «pin parental», presentada por PSN, Geroa Bai, EH Bildu, Podemos e I-E",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2020-01-20"
   },
   {
    "pregunta_id": "I07",
@@ -31368,11 +31368,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu rechaza el «pin parental» que exige permiso de los padres para la educación afectivo-sexual.",
+   "fuente_url": "https://www.noticiasdenavarra.com/sociedad/2020/01/20/pin-parental-veto-ideologico-ninos-2319386.html",
+   "fuente_titulo": "Diario de Noticias: declaración del Parlamento de Navarra contra el «pin parental» (intervención de Bakartxo Ruiz, EH Bildu)",
+   "fuente_tipo": "declaracion",
+   "fuente_fecha": "2020-01-20"
   },
   {
    "pregunta_id": "I07",
@@ -31501,11 +31501,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone incluir la educación afectivo-sexual como contenido transversal del currículo escolar.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=65",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 65",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "I07",
@@ -31558,11 +31558,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía defiende la educación afectivo-sexual integral como parte de la educación en los centros.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=48",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 48",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "I08",
@@ -31786,11 +31786,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "EH Bildu votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
+   "fuente_url": "https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html",
+   "fuente_titulo": "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "I08",
@@ -31805,11 +31805,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "UPN votó en contra de retirar a la tauromaquia su protección legal como patrimonio cultural.",
+   "fuente_url": "https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html",
+   "fuente_titulo": "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "I08",
@@ -31843,11 +31843,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
+   "fuente_url": "https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html",
+   "fuente_titulo": "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-10-08"
   },
   {
    "pregunta_id": "I08",
@@ -32202,13 +32202,13 @@
    "partido": "Democracia 21",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=46",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "I09",
@@ -32318,11 +32318,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Geroa Bai apoya exigir el euskera como requisito en plazas de la Administración foral y ampliar la atención bilingüe.",
+   "fuente_url": "https://www.noticiasdenavarra.com/politica/2025/05/15/ollo-politica-linguistica-9638968.html",
+   "fuente_titulo": "Diario de Noticias: pleno del Parlamento de Navarra sobre política lingüística (intervención de Mikel Asiain, Geroa Bai)",
+   "fuente_tipo": "prensa",
+   "fuente_fecha": "2025-05-15"
   },
   {
    "pregunta_id": "I09",
@@ -32337,11 +32337,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG defiende que el personal de las administraciones en Galicia conozca el gallego.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=61",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 61",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "I09",
@@ -32356,11 +32356,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
+   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=233",
+   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 233",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-04"
   },
   {
    "pregunta_id": "I09",
@@ -32525,7 +32525,7 @@
    "partido": "Democracia 21",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -32736,11 +32736,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
+   "fuente_url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=8",
+   "fuente_titulo": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-05"
   },
   {
    "pregunta_id": "J01",
@@ -32812,11 +32812,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
+   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 6",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-04"
   },
   {
    "pregunta_id": "J01",
@@ -33154,11 +33154,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
+   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2023-07"
   },
   {
    "pregunta_id": "J02",
@@ -35128,7 +35128,7 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -36802,11 +36802,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
+   "fuente_url": "https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html",
+   "fuente_titulo": "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-05"
   },
   {
    "pregunta_id": "K05",
@@ -36821,11 +36821,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
+   "fuente_url": "https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html",
+   "fuente_titulo": "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-05"
   },
   {
    "pregunta_id": "K05",
@@ -37258,11 +37258,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León.",
+   "fuente_url": "https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html",
+   "fuente_titulo": "El Español (Ical): las Cortes de Castilla y León rechazan una moratoria de seis años a las macrogranjas",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2025-03-05"
   },
   {
    "pregunta_id": "K06",
@@ -39403,7 +39403,7 @@
    "partido": "EH Bildu",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
    "justificacion": "",
    "fuente_url": "",
@@ -39726,13 +39726,13 @@
    "partido": "Democracia 21",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": false,
+   "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
+   "fuente_url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=6",
+   "fuente_titulo": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 6",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2019-11"
   },
   {
    "pregunta_id": "L04",
@@ -41362,11 +41362,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate.",
+   "fuente_url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5778131/congreso-tumba-ley-vox-prohibir-burka-solo-apoyada-pp-upn",
+   "fuente_titulo": "Europa Press (vía Diario Estrategia): el Congreso tumba la ley de Vox para prohibir el burka",
+   "fuente_tipo": "parlamento",
+   "fuente_fecha": "2026-02-17"
   },
   {
    "pregunta_id": "L09",
