@@ -1,0 +1,696 @@
+[
+ {
+  "id": "D03/d21",
+  "estado": "fuente",
+  "url": "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=8",
+  "etiqueta": "Democracia 21, documento «España Limpia», p. 8",
+  "tipo": "programa",
+  "fecha": "2026-10",
+  "cita": "los vocales judiciales se elegirán por los jueces, sin intervención alguna de las asociaciones judiciales",
+  "justificacion": "Su documento programático propone que los vocales judiciales del CGPJ sean elegidos por los propios jueces."
+ },
+ {
+  "id": "D02/d21",
+  "estado": "fuente",
+  "url": "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=13",
+  "etiqueta": "Democracia 21, documento «España Limpia», p. 13",
+  "tipo": "programa",
+  "fecha": "2026-10",
+  "cita": "ADIÓS LISTAS CERRADAS, HOLA LISTAS FLEXIBLES",
+  "justificacion": "Su documento programático propone reformar la ley electoral para introducir listas desbloqueadas y abiertas."
+ },
+ {
+  "id": "A10/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=29",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 29",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Suprimiremos el Impuesto de Sucesiones y Donaciones en toda España. Bonificaremos al 100% este impuesto en las herencias y donaciones entre parientes directos",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía bonificar al 100 % sucesiones entre parientes directos."
+ },
+ {
+  "id": "B03/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Los propietarios recuperarán su vivienda okupada en 48 horas con nuestra Ley contra la Okupación Ilegal.",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada."
+ },
+ {
+  "id": "C06/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Suprimiremos las diputaciones provinciales, garantizando unos mejores servicios públicos",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía suprimir las diputaciones e integrar sus funciones en las comunidades."
+ },
+ {
+  "id": "C07/d21",
+  "estado": "intensidad",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Fortaleceremos los municipios promoviendo la prestación conjunta de servicios",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía promover la prestación conjunta de servicios municipales, sin hacerla obligatoria.",
+  "postura_respaldada": 4
+ },
+ {
+  "id": "C09/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Acabaremos con el privilegio que supone el actual cálculo arbitrario e insolidario del cupo vasco.",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad."
+ },
+ {
+  "id": "D01/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 42",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Mejoraremos la proporcionalidad del sistema electoral para asegurar que el reparto de escaños se ajuste a lo votado por los españoles.",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional."
+ },
+ {
+  "id": "I01/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=12",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 12",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Garantizaremos la gratuidad de la educación concertada, evitando el cobro por parte de los centros de cuotas injustificadas.",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada."
+ },
+ {
+  "id": "L04/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=6",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 6",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Impulsaremos una Ley de Gestación Subrogada altruista y garantista",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista."
+ },
+ {
+  "id": "I09/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=46",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 46",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Garantizaremos que el conocimiento de una lengua cooficial autonómica nunca sea una barrera para acceder a un empleo público",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público."
+ },
+ {
+  "id": "C03/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=11",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 11",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Un Sistema Educativo y no 17 para acabar con la desigualdad entre españoles",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado."
+ },
+ {
+  "id": "H02/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=48",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 48",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Apoyaremos los avances en integración europea en fiscalidad, defensa y política exterior",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior."
+ },
+ {
+  "id": "K05/pp",
+  "estado": "fuente",
+  "url": "https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html",
+  "etiqueta": "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas",
+  "tipo": "parlamento",
+  "fecha": "2025-03-05",
+  "cita": "El PP y Vox votan en contra de la propuesta asegurando que \"no existe proliferación\".",
+  "justificacion": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas."
+ },
+ {
+  "id": "K05/vox",
+  "estado": "fuente",
+  "url": "https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html",
+  "etiqueta": "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas",
+  "tipo": "parlamento",
+  "fecha": "2025-03-05",
+  "cita": "El PP y Vox votan en contra de la propuesta asegurando que \"no existe proliferación\".",
+  "justificacion": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas."
+ },
+ {
+  "id": "B05/vox",
+  "estado": "contradice",
+  "url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=42",
+  "etiqueta": "Programa electoral de Vox para las generales de 2023, p. 42",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "pondrá límite al encarecimiento que la proliferación masiva de pisos turísticos causa en el precio de la vivienda",
+  "justificacion": "Su programa de 2023 propone una normativa estatal homogénea que limite la proliferación de pisos turísticos en los barrios.",
+  "postura_respaldada": 4
+ },
+ {
+  "id": "G09/vox",
+  "estado": "fuente",
+  "url": "https://roams.es/actualidad/energia/que-consecuencias-tendrian-las-propuestas-de-vox-para-frenar-en-seco-las-renovables/",
+  "etiqueta": "Roams, sobre la moción de Vox en el Congreso tras el apagón",
+  "tipo": "prensa",
+  "fecha": "2025-10-20",
+  "cita": "una moción que busca poner un freno drástico a la expansión de las plantas de energía renovable en España",
+  "justificacion": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares."
+ },
+ {
+  "id": "B06/vox",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "H05/vox",
+  "estado": "fuente",
+  "url": "https://www.elindependiente.com/espana/2022/04/07/el-psoe-se-queda-solo-en-el-congreso-y-vota-contra-un-referendum-en-el-sahara/",
+  "etiqueta": "El Independiente, votación en el Congreso sobre el Sáhara Occidental",
+  "tipo": "parlamento",
+  "fecha": "2022-04-07",
+  "cita": "Iván Espinosa de los Monteros, rechaza lo que denomina \"volantazo\" de Sánchez, que no considera una posición de estado y que no piensan respetar si llegan a la Moncloa",
+  "justificacion": "Rechazó el cambio de postura del Gobierno sobre el Sáhara y anunció que no lo respetaría, aunque se abstuvo en la votación."
+ },
+ {
+  "id": "F09/vox",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "A10/ccpc",
+  "estado": "fuente",
+  "url": "https://www.boe.es/boe/dias/2023/11/20/pdfs/BOE-A-2023-23402.pdf",
+  "etiqueta": "Decreto-ley 5/2023 del Gobierno de Canarias (CC-PP) sobre sucesiones y donaciones (BOE)",
+  "tipo": "gobierno",
+  "fecha": "2023-09-04",
+  "cita": "generalizando la aplicación de un único porcentaje de bonificación del 99,9 por 100 de la cuota tributaria del Impuesto sobre Sucesiones y Donaciones",
+  "justificacion": "El Gobierno canario que preside CC aprobó en 2023 una bonificación del 99,9 % del impuesto de sucesiones entre familiares cercanos."
+ },
+ {
+  "id": "F05/ccpc",
+  "estado": "fuente",
+  "url": "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
+  "etiqueta": "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes",
+  "tipo": "parlamento",
+  "fecha": "2025-04-10",
+  "cita": "el texto llegó al Congreso en forma de proposición de ley registrada por el PSOE, Sumar y Coalición Canaria",
+  "justificacion": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes."
+ },
+ {
+  "id": "H05/ccpc",
+  "estado": "contradice",
+  "url": "https://www.elindependiente.com/espana/2024/10/08/el-presidente-canario-dice-ahora-apoyar-enteramente-el-cambio-de-posicion-de-espana-en-el-sahara-occidental/",
+  "etiqueta": "El Independiente, declaraciones de Fernando Clavijo (CC) tras reunirse con el ministro marroquí de Exteriores",
+  "tipo": "declaracion",
+  "fecha": "2024-10-08",
+  "cita": "Está perfectamente claro que el Gobierno de Canarias asume enteramente la política del Gobierno de España",
+  "justificacion": "En 2024 su presidente, Fernando Clavijo, asumió la posición del Gobierno favorable al plan de autonomía marroquí, que CC había criticado en 2022-2023.",
+  "postura_respaldada": 2
+ },
+ {
+  "id": "B05/ccpc",
+  "estado": "fuente",
+  "url": "https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/",
+  "etiqueta": "RTVC, aprobación de la ley canaria de vivienda vacacional (Ley 6/2025)",
+  "tipo": "parlamento",
+  "fecha": "2025-11-12",
+  "cita": "Los grupos opositores vetaron 24 enmiendas in voce del cuatripartito, formado por Coalición Canaria, Partido Popular, Agrupación Socialista Gomera y AHI.",
+  "justificacion": "Su Gobierno impulsó y aprobó la ley canaria que congela nuevas viviendas vacacionales hasta que cada ayuntamiento las ordene en su planeamiento."
+ },
+ {
+  "id": "B08/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=273",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 273",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Crearem una xarxa d’habitatge públic i exigirem un 30% d’habitatge protegit en les noves promocions",
+  "justificacion": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones."
+ },
+ {
+  "id": "A03/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=207",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 207",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Impost per a grans fortunes i per a gravar les transaccions financeres especulatives",
+  "justificacion": "Su programa para las generales propone un impuesto a las grandes fortunas."
+ },
+ {
+  "id": "D07/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 253",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "optar entre la monarquia o la república com a model d’Estat",
+  "justificacion": "Su programa propone una consulta para que la ciudadanía elija entre monarquía y república."
+ },
+ {
+  "id": "F01/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "facilitarem la regularització d’aquelles persones migrants",
+  "justificacion": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España."
+ },
+ {
+  "id": "F02/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "facilitarem la regularització d’aquelles persones migrants",
+  "justificacion": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España."
+ },
+ {
+  "id": "H05/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=300",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 300",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Reconeixem el dret a l’autodeterminació del poble sahrauí",
+  "justificacion": "Su programa defiende la autodeterminación del pueblo saharaui y el fin de la ocupación marroquí."
+ },
+ {
+  "id": "I01/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=38",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 38",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Modificarem el Reial Decret de Concerts perquè la xarxa concertada siga realment subsidiària de la pública",
+  "justificacion": "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan."
+ },
+ {
+  "id": "I07/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=65",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 65",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Introduirem l’educació afectivosexual com a contingut transversal en els currículums educatius.",
+  "justificacion": "Su programa propone incluir la educación afectivo-sexual como contenido transversal del currículo escolar."
+ },
+ {
+  "id": "I09/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=233",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 233",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "places que incorporen l’exigència de competència lingüística en les relacions de llocs de treball",
+  "justificacion": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración."
+ },
+ {
+  "id": "C03/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=243",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 243",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "cita": "Dret a l’autogovern - Descentralització definitiva de l’Estat",
+  "justificacion": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias."
+ },
+ {
+  "id": "J01/comp",
+  "estado": "fuente",
+  "url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=8",
+  "etiqueta": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 8",
+  "tipo": "programa",
+  "fecha": "2023-05",
+  "cita": "Queremos que todos los hospitales y servicios sanitarios que ahora son privados sean de gestión pública.",
+  "justificacion": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública."
+ },
+ {
+  "id": "C02/comp",
+  "estado": "fuente",
+  "url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=7",
+  "etiqueta": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 7",
+  "tipo": "programa",
+  "fecha": "2023-05",
+  "cita": "Haremos todo lo necesario para exigir el cambio del modelo de financiación del País Valencià.",
+  "justificacion": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde."
+ },
+ {
+  "id": "A01/comp",
+  "estado": "fuente",
+  "url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+  "etiqueta": "Periódico de Ibiza (agencias), votación en el Congreso del proyecto de reducción de jornada a 37,5 horas",
+  "tipo": "parlamento",
+  "fecha": "2025-09-11",
+  "cita": "la diputada de Compromís integrada en el Grupo Mixto, Águeda Micó; y el exministro socialista también perteneciente a este grupo, José Luis Ábalos, han votado en contra de las enmiendas",
+  "justificacion": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial."
+ },
+ {
+  "id": "A01/upc",
+  "estado": "fuente",
+  "url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
+  "etiqueta": "Periódico de Ibiza (agencias), votación de la reducción de jornada; votaron Sumar y Podemos, integrantes de UPC",
+  "tipo": "parlamento",
+  "fecha": "2025-09-11",
+  "cita": "No ha habido abstenciones y PSOE, Sumar, ERC, PNV, Bildu, Podemos, BNG, Coalición Canaria",
+  "justificacion": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas."
+ },
+ {
+  "id": "A04/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C01/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C04/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C05/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D07/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "E09/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "G01/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "H01/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "H06/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "I05/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "J01/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "K01/d21",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "A02/d21",
+  "estado": "intensidad",
+  "url": "https://www.democrata.es/politica/democracia-21-concurrira-en-madrid-y-barcelona-con-la-abogada-miriam-gonzalez-como-cabeza-de-lista/",
+  "etiqueta": "Demócrata, presentación de la candidatura de Democracia 21",
+  "tipo": "prensa",
+  "fecha": "2026-10-10",
+  "cita": "Democracia 21 propone \"aliviar la presión fiscal\" al tiempo que se \"recuperan unos buenos servicios públicos\"",
+  "justificacion": "Propone aliviar la presión fiscal y, a la vez, recuperar buenos servicios públicos, sin priorizar claramente una opción.",
+  "postura_respaldada": 3
+ },
+ {
+  "id": "D04/d21",
+  "estado": "fuente",
+  "url": "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=25",
+  "etiqueta": "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 25",
+  "tipo": "programa",
+  "fecha": "2019-11",
+  "cita": "Prohibiremos los indultos a políticos condenados por corrupción, rebelión, sedición y terrorismo para que no exista ni un resquicio de impunidad.",
+  "justificacion": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición."
+ },
+ {
+  "id": "A03/salf",
+  "estado": "fuente",
+  "url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+  "etiqueta": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 4",
+  "tipo": "programa",
+  "fecha": "2026-03",
+  "cita": "Suprimiremos el Impuesto sobre el Patrimonio en Castilla y León",
+  "justificacion": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro."
+ },
+ {
+  "id": "A04/salf",
+  "estado": "fuente",
+  "url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=6",
+  "etiqueta": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 6",
+  "tipo": "programa",
+  "fecha": "2026-03",
+  "cita": "se introduzcan límites claramente definidos a la presión fiscal y el endeudamiento de la Comunidad Autónoma",
+  "justificacion": "Su programa autonómico de 2026 propone fijar en el Estatuto límites al endeudamiento y a la presión fiscal."
+ },
+ {
+  "id": "A01/salf",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D04/salf",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "E01/salf",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "G03/salf",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "A10/pp",
+  "estado": "fuente",
+  "url": "https://theobjective.com/economia/2023-10-01/pp-impuesto-sucesiones-donaciones-suprimir/",
+  "etiqueta": "The Objective, proposición de ley del PP en el Senado para suprimir Sucesiones",
+  "tipo": "parlamento",
+  "fecha": "2023-10-01",
+  "cita": "El PP hará valer su mayoría absoluta en el Senado para comenzar a tramitar una proposición de ley que plantea la supresión a nivel nacional del Impuesto de Sucesiones y Donaciones",
+  "justificacion": "Anunció en 2023 una proposición de ley en el Senado para suprimir en toda España el impuesto de sucesiones y donaciones."
+ },
+ {
+  "id": "I07/psoe",
+  "estado": "fuente",
+  "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2020/170120-cministros.aspx",
+  "etiqueta": "La Moncloa, Consejo de Ministros del 17 de enero de 2020 (Gobierno del PSOE)",
+  "tipo": "gobierno",
+  "fecha": "2020-01-17",
+  "cita": "El Gobierno remite un requerimiento al Gobierno de Murcia para que retire el 'pin parental' a los centros educativos",
+  "justificacion": "El Gobierno presidido por el PSOE exigió a Murcia retirar el «pin parental» que pedía autorización de los padres para estas actividades."
+ },
+ {
+  "id": "C06/psoe",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "I05/psoe",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "I03/pp",
+  "estado": "fuente",
+  "url": "https://www.eldiario.es/sociedad/pp-rechaza-decreto-anti-chiringuitos-universitarios-apoyan-rectores-sindicatos-estudiantes_1_12295535.html",
+  "etiqueta": "elDiario.es, rechazo del PP al decreto que endurece la creación de universidades",
+  "tipo": "prensa",
+  "fecha": "2025-05-13",
+  "cita": "el PP, el partido más beligerante con amenaza de recurso incluida de la presidenta madrileña, Isabel Díaz Ayuso, Vox y el PNV son las únicas formaciones que rechazan la propuesta",
+  "justificacion": "Se opuso al decreto del Gobierno que endurece los requisitos para crear nuevas universidades, incluidas las privadas."
+ },
+ {
+  "id": "F02/pp",
+  "estado": "fuente",
+  "url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+  "etiqueta": "RTVC, toma en consideración en el Congreso de la ILP de regularización extraordinaria",
+  "tipo": "parlamento",
+  "fecha": "2024-04-09",
+  "cita": "la diputada del PP, Sofía Acedo, ha planteado grandes reservas sobre la iniciativa. Desde cuestiones técnicas hasta un potencial efecto llamada. Sin embargo, informó de que su grupo «dará salida»",
+  "justificacion": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas."
+ },
+ {
+  "id": "F01/upc",
+  "estado": "fuente",
+  "url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+  "etiqueta": "RTVC, toma en consideración de la ILP de regularización; apoyo de Sumar y Podemos, integrantes de UPC",
+  "tipo": "parlamento",
+  "fecha": "2024-04-09",
+  "cita": "los portavoces de Sumar y Podemos habían confirmado su voto a favor de la toma en consideración de la iniciativa",
+  "justificacion": "Sumar y Podemos, integrantes de la coalición, apoyaron tramitar la regularización extraordinaria de migrantes."
+ },
+ {
+  "id": "F02/upc",
+  "estado": "fuente",
+  "url": "https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/",
+  "etiqueta": "RTVC, toma en consideración de la ILP de regularización; apoyo de Sumar y Podemos, integrantes de UPC",
+  "tipo": "parlamento",
+  "fecha": "2024-04-09",
+  "cita": "los portavoces de Sumar y Podemos habían confirmado su voto a favor de la toma en consideración de la iniciativa",
+  "justificacion": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí."
+ },
+ {
+  "id": "C04/pp",
+  "estado": "fuente",
+  "url": "https://www.periodicodeibiza.es/pitiusas/ibiza/2013/11/11/112215/rechazara-propuesta-para-creacion-estado-federal.html",
+  "etiqueta": "Periódico de Ibiza (Efe), el PP en el Parlament balear ante una propuesta federal",
+  "tipo": "parlamento",
+  "fecha": "2013-11-11",
+  "cita": "El grupo popular ha asegurado hoy que rechazará la propuesta de la oposición para que el Parlament balear se pronuncie en favor de modificar la Constitución para avanzar hacia la creación de un Estado federal.",
+  "justificacion": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal."
+ },
+ {
+  "id": "C09/pp",
+  "estado": "fuente",
+  "url": "https://www.elindependiente.com/espana/2024/08/02/la-defensa-del-cupo-vasco-ante-una-replica-catalana-del-no-se-toca-del-pnv-al-temor-a-perder-dinero-del-pp/",
+  "etiqueta": "El Independiente, defensa del Concierto y el Cupo vasco por los partidos vascos, incluido el PP",
+  "tipo": "prensa",
+  "fecha": "2024-08-02",
+  "cita": "Intentan sofocarlo desde EH Bildu hasta el PP, todos a una. El Concierto Económico, la defensa del sistema de cupo vasco, es una de las pocas cuestiones que aúna a todo el espectro ideológico vasco.",
+  "justificacion": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio."
+ },
+ {
+  "id": "I06/pp",
+  "estado": "fuente",
+  "url": "https://www.periodicodeibiza.es/noticias/nacional/2013/06/25/102341/wert-reconsiderar-nota-del-para-optar-becas-universitarias.html",
+  "etiqueta": "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas",
+  "tipo": "gobierno",
+  "fecha": "2013-06-25",
+  "cita": "«El famoso 6,5 no es una exigencia exagerada»",
+  "justificacion": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas."
+ }
+]

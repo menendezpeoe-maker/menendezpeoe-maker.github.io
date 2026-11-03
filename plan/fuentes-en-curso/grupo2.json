@@ -1,0 +1,1183 @@
+[
+ {
+  "id": "A02/upn",
+  "q": "A02",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Si hubiera que elegir, ¿qué debería priorizar el Estado?",
+  "tipo": "dilema",
+  "A": "Bajar impuestos, aunque haya que reducir gasto público",
+  "B": "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
+  "postura": "2 = Más bien A"
+ },
+ {
+  "id": "A03/upn",
+  "q": "A03",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "A08/bng",
+  "q": "A08",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "A10/bildu",
+  "q": "A10",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El impuesto de sucesiones debería eliminarse en las herencias entre padres e hijos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B01/adel",
+  "q": "B01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "El Estado debería poder limitar el precio del alquiler en las zonas donde los precios se han disparado.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B03/fa",
+  "q": "B03",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B04/bildu",
+  "q": "B04",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "B05/fa",
+  "q": "B05",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/bildu",
+  "q": "B05",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B05/adel",
+  "q": "B05",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/bildu",
+  "q": "B08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/bng",
+  "q": "B08",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/cha",
+  "q": "B08",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "B08/adel",
+  "q": "B08",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/pnv",
+  "q": "C01",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/bildu",
+  "q": "C01",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C03/pod",
+  "q": "C03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/upn",
+  "q": "C03",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/gbai",
+  "q": "C03",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/cha",
+  "q": "C03",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C03/adel",
+  "q": "C03",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C04/upn",
+  "q": "C04",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "España debería reformar la Constitución para convertirse en un Estado federal.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C04/cha",
+  "q": "C04",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería reformar la Constitución para convertirse en un Estado federal.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C05/upn",
+  "q": "C05",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Debería poder celebrarse un referéndum de independencia pactado si lo pide una mayoría clara de una comunidad.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C06/pod",
+  "q": "C06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las diputaciones provinciales deberían suprimirse y sus funciones pasar a comunidades y ayuntamientos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "C06/pnv",
+  "q": "C06",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Las diputaciones provinciales deberían suprimirse y sus funciones pasar a comunidades y ayuntamientos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C07/existe",
+  "q": "C07",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C07/soria",
+  "q": "C07",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C09/upn",
+  "q": "C09",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "El concierto vasco y el convenio navarro deberían reformarse para que esas comunidades aporten más a la caja común.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "C09/gbai",
+  "q": "C09",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "El concierto vasco y el convenio navarro deberían reformarse para que esas comunidades aporten más a la caja común.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D01/pod",
+  "q": "D01",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D01/existe",
+  "q": "D01",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D01/soria",
+  "q": "D01",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "La ley electoral debería ser más proporcional, para que cada voto valga lo mismo en todo el país, aunque las provincias pequeñas pierdan peso.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D03/upn",
+  "q": "D03",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Los propios jueces deberían elegir a la mayoría de los miembros del Consejo General del Poder Judicial.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D05/pod",
+  "q": "D05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Los altos cargos deberían esperar al menos cinco años antes de trabajar en empresas del sector que regulaban.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D06/pod",
+  "q": "D06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/junts",
+  "q": "D07",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/bildu",
+  "q": "D07",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/upn",
+  "q": "D07",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D07/bng",
+  "q": "D07",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D07/cha",
+  "q": "D07",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería celebrar un referéndum para elegir entre monarquía y república.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "D09/junts",
+  "q": "D09",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D09/pnv",
+  "q": "D09",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D09/bildu",
+  "q": "D09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "D09/bng",
+  "q": "D09",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E04/bildu",
+  "q": "E04",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La edad mínima de responsabilidad penal, hoy de 14 años, debería rebajarse para los delitos graves.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E04/bng",
+  "q": "E04",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La edad mínima de responsabilidad penal, hoy de 14 años, debería rebajarse para los delitos graves.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E06/junts",
+  "q": "E06",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Las injurias a la Corona deberían dejar de ser delito.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "E06/upn",
+  "q": "E06",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Las injurias a la Corona deberían dejar de ser delito.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E06/bng",
+  "q": "E06",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Las injurias a la Corona deberían dejar de ser delito.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "E08/junts",
+  "q": "E08",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E08/gbai",
+  "q": "E08",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E08/adel",
+  "q": "E08",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "E09/bildu",
+  "q": "E09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "E09/upn",
+  "q": "E09",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F01/adel",
+  "q": "F01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "España debería regularizar a los inmigrantes en situación irregular que ya viven y trabajan aquí.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F02/adel",
+  "q": "F02",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "Los inmigrantes en situación irregular deberían ser expulsados, aunque lleven años viviendo y trabajando en España.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F03/fa",
+  "q": "F03",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F03/adel",
+  "q": "F03",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F04/pod",
+  "q": "F04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F05/junts",
+  "q": "F05",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
+  "tipo": "likert",
+  "postura": "2 = En desacuerdo"
+ },
+ {
+  "id": "F06/pod",
+  "q": "F06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F07/existe",
+  "q": "F07",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F07/soria",
+  "q": "F07",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F08/pod",
+  "q": "F08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F08/bildu",
+  "q": "F08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F08/bng",
+  "q": "F08",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "F09/fa",
+  "q": "F09",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F09/pod",
+  "q": "F09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "F09/bildu",
+  "q": "F09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G02/existe",
+  "q": "G02",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "G02/soria",
+  "q": "G02",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "G03/pod",
+  "q": "G03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "G04/pod",
+  "q": "G04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G04/cha",
+  "q": "G04",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G04/existe",
+  "q": "G04",
+  "pid": "existe",
+  "partido": "Coalición Existe",
+  "afirmacion": "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "G05/bng",
+  "q": "G05",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "El Estado debería crear una empresa pública de energía para abaratar la factura de la luz.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H01/cha",
+  "q": "H01",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H01/adel",
+  "q": "H01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H04/cha",
+  "q": "H04",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H04/adel",
+  "q": "H04",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "España debería mantener el embargo de armas a Israel.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/bildu",
+  "q": "H05",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/bng",
+  "q": "H05",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/cha",
+  "q": "H05",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H05/adel",
+  "q": "H05",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H06/upn",
+  "q": "H06",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "España debería seguir en la OTAN.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "H06/bng",
+  "q": "H06",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "España debería seguir en la OTAN.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/pod",
+  "q": "H09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/bildu",
+  "q": "H09",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/bng",
+  "q": "H09",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/cha",
+  "q": "H09",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "H09/adel",
+  "q": "H09",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/pnv",
+  "q": "I01",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "4 = De acuerdo"
+ },
+ {
+  "id": "I01/upn",
+  "q": "I01",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I01/cha",
+  "q": "I01",
+  "pid": "cha",
+  "partido": "CHA – Frente Amplio Aragón",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I01/adel",
+  "q": "I01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "La escuela concertada debería mantener o ampliar su financiación pública.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I02/bng",
+  "q": "I02",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La universidad pública debería ser gratuita para todos los estudiantes.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I05/fa",
+  "q": "I05",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I05/pod",
+  "q": "I05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I05/upn",
+  "q": "I05",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I05/gbai",
+  "q": "I05",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I06/pod",
+  "q": "I06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las becas deberían exigir mejores notas que el simple aprobado.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I07/fa",
+  "q": "I07",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I07/pod",
+  "q": "I07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I07/bildu",
+  "q": "I07",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I07/bng",
+  "q": "I07",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I07/adel",
+  "q": "I07",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I08/bildu",
+  "q": "I08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I08/upn",
+  "q": "I08",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I08/bng",
+  "q": "I08",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I09/pod",
+  "q": "I09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "4 = De acuerdo"
+ },
+ {
+  "id": "I09/junts",
+  "q": "I09",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/pnv",
+  "q": "I09",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/upn",
+  "q": "I09",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "I09/gbai",
+  "q": "I09",
+  "pid": "gbai",
+  "partido": "Geroa Bai",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/bng",
+  "q": "I09",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "J01/adel",
+  "q": "J01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "La sanidad pública debería dejar de encargar operaciones y la gestión de hospitales a empresas privadas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "J02/bildu",
+  "q": "J02",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Si la sanidad pública supera un plazo máximo de espera, el paciente debería poder operarse en una clínica privada pagada por el sistema público.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J02/bng",
+  "q": "J02",
+  "pid": "bng",
+  "partido": "BNG",
+  "afirmacion": "Si la sanidad pública supera un plazo máximo de espera, el paciente debería poder operarse en una clínica privada pagada por el sistema público.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/junts",
+  "q": "J08",
+  "pid": "junts",
+  "partido": "Junts per Catalunya",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/pnv",
+  "q": "J08",
+  "pid": "pnv",
+  "partido": "EAJ-PNV",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "J08/bildu",
+  "q": "J08",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K01/bildu",
+  "q": "K01",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K05/soria",
+  "q": "K05",
+  "pid": "soria",
+  "partido": "Soria ¡Ya!",
+  "afirmacion": "Debería prohibirse abrir nuevas macrogranjas.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "K07/pod",
+  "q": "K07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "K08/pod",
+  "q": "K08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L01/adel",
+  "q": "L01",
+  "pid": "adel",
+  "partido": "Adelante Andalucía",
+  "afirmacion": "El derecho al aborto debería incluirse en la Constitución.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L03/bildu",
+  "q": "L03",
+  "pid": "bildu",
+  "partido": "EH Bildu",
+  "afirmacion": "Las personas de 16 años o más deberían poder cambiar su sexo en el Registro Civil sin informes médicos.",
+  "tipo": "likert",
+  "postura": "5 = Totalmente de acuerdo"
+ },
+ {
+  "id": "L04/fa",
+  "q": "L04",
+  "pid": "fa",
+  "partido": "Frente Amplio",
+  "afirmacion": "La gestación subrogada debería legalizarse con garantías para la mujer gestante.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "L05/upn",
+  "q": "L05",
+  "pid": "upn",
+  "partido": "UPN – Partido Popular",
+  "afirmacion": "Los acuerdos de 1979 con la Santa Sede deberían revisarse para reducir las ventajas que reconocen a la Iglesia católica.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ },
+ {
+  "id": "L09/pod",
+  "q": "L09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "afirmacion": "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
+  "tipo": "likert",
+  "postura": "1 = Totalmente en desacuerdo"
+ }
+]
