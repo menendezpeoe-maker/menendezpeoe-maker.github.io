@@ -64,7 +64,7 @@ export const QUESTIONS = [
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
   ctx: "El impuesto de patrimonio está cedido a las comunidades, y algunas, como Madrid, lo bonifican al 100 %. En 2022 el Estado creó un impuesto de solidaridad para patrimonios de más de 3 millones de euros, de modo que se pague en todo el territorio. Sus defensores invocan la equidad y frenar la competencia fiscal entre comunidades; sus críticos, la deslocalización de patrimonios y la invasión de competencias autonómicas.",
-  pos: "5 1 1 5 5 1 0 1~ 4 2~ 2 5 1 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "5 1 1 5 5 1 0 1~ 4 2~ 2 5 1~ 3~ 4 2~ 5~ 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "A04", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Reducir la deuda pública debería ser prioritario, aunque obligue a contener el gasto durante varios años.",
   short: "Prioridad a reducir la deuda",
@@ -101,7 +101,7 @@ export const QUESTIONS = [
   text: "El impuesto de sucesiones debería eliminarse en las herencias entre padres e hijos.",
   short: "Sin impuesto de sucesiones entre padres e hijos",
   ctx: "El impuesto de sucesiones es estatal, pero lo gestionan las comunidades, que fijan bonificaciones: en Madrid, Andalucía o Canarias las herencias entre padres e hijos apenas tributan, y en otras sí a partir de ciertos importes. Quienes piden eliminarlo alegan que ese patrimonio ya pagó impuestos al generarse; quienes lo defienden lo ven como una herramienta para reducir la desigualdad entre quienes heredan y quienes no.",
-  pos: "2 5 5 1 1 5~ 0 5~ 1 3~ 2~ 1 4~ 2~ 1~ 4 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 0 5~ 1 3~ 2~ 1~ 4~ 2~ 1~ 4 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 
 // ───────────── B · Vivienda y urbanismo
 { id: "B01", area: "viv", prio: 1, type: "likert", dim: "eco", dir: -1, lr: -1,
@@ -141,12 +141,12 @@ export const QUESTIONS = [
   text: "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
   short: "Impuesto a compradores no residentes",
   ctx: "En 2025 el Gobierno propuso un recargo de hasta el 100 % para estas compras: según sus datos, unas 27.000 viviendas al año, concentradas en la costa, Baleares, Canarias y grandes ciudades. Sus defensores buscan frenar la demanda especulativa en las zonas tensionadas; sus críticos dudan de su eficacia y de su encaje con las normas europeas, y temen perder inversión.",
-  pos: "5 2 4 5 5 2~ 0 1~ 5 3~ 3~ 5~ 2~ 4~ 5~ 3~ 5 5 5~ 5~ 0 5 5~ 0 0 0 0" },
+  pos: "5 2 4 5 5 2~ 0 1~ 5 3~ 3~ 5~ 2~ 4~ 5~ 3~ 5~ 5~ 5~ 5~ 0 2 5~ 0 0 0 0" },
 { id: "B08", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
   short: "Gran parque público de alquiler",
   ctx: "La vivienda social supone en torno al 2,5 % del total en España, frente a cerca del 9 % de media en la UE. En 2025 el Gobierno creó la empresa pública Casa 47 para promover y gestionar alquiler asequible. Otros partidos prefieren la colaboración público-privada: ceder suelo público a promotores a cambio de precios limitados durante años, para movilizar más inversión con menos gasto público.",
-  pos: "5 2 2 5 5 2~ 0 2~ 4 3~ 4~ 5 2~ 5~ 5 3~ 5 5 5 5 4~ 5 5 4~ 4~ 4~ 0" },
+  pos: "5 2 2 5 5 2~ 0 2~ 4 3~ 4~ 5 2~ 5~ 5 3~ 5 5~ 5 5 4~ 5 5 4~ 4~ 4~ 0" },
 { id: "B09", area: "viv", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "El Estado debería avalar parte de la hipoteca de los jóvenes para que puedan comprar su primera vivienda.",
   short: "Avales públicos a hipotecas de jóvenes",
@@ -159,7 +159,7 @@ export const QUESTIONS = [
   short: "Financiación singular para Cataluña",
   ctx: "El País Vasco y Navarra recaudan casi todos sus impuestos y pagan al Estado un cupo por los servicios comunes, por derechos históricos reconocidos en la Constitución. Las demás comunidades se financian con un sistema común de impuestos cedidos y fondos de nivelación. En 2024 PSC y ERC pactaron una «financiación singular» para Cataluña. A favor se invoca la corresponsabilidad fiscal; en contra, la solidaridad entre territorios.",
   ley: "Constitución, art. 156-158 y disp. adicional 1.ª",
-  pos: "2 1 1 3 3~ 1~ 0 1~ 5 5 5 5 2~ 4~ 5 3~ 3~ 3~ 2 2~ 1~ 4~ 2~ 1~ 1~ 1~ 1~" },
+  pos: "2 1 1 3 3~ 1~ 0 1~ 5 5 5~ 5 2~ 4~ 5 3~ 3~ 3~ 2~ 2~ 1~ 4~ 2~ 1~ 1~ 1~ 1~" },
 { id: "C02", area: "ter", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "La reforma de la financiación autonómica debería dar más recursos a las comunidades que hoy reciben menos por habitante.",
   short: "Más fondos a las comunidades peor financiadas",
@@ -170,30 +170,30 @@ export const QUESTIONS = [
   short: "Recentralizar la educación",
   ctx: "La educación está transferida a todas las comunidades desde el año 2000: el Estado fija las enseñanzas mínimas y los títulos, y las comunidades gestionan centros, profesorado y buena parte del currículo. Quienes piden recentralizarla apuntan a desigualdades entre territorios y a usos políticos del currículo o la lengua; quienes se oponen defienden la gestión cercana y el autogobierno de los estatutos.",
   ley: "Constitución, art. 149.1.30.ª",
-  pos: "1 2 5 1 1 5~ 0 4~ 1 1 1 1 1 1 1 1 1 1 1 1 2~ 1 1~ 0 1~ 0 0" },
+  pos: "1 2 5 1 1~ 5~ 0 4~ 1 1 1 1 1 1 1 1 1 1~ 1 1 2~ 1~ 1~ 0 1~ 0 0" },
 { id: "C04", area: "ter", prio: 2, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "España debería reformar la Constitución para convertirse en un Estado federal.",
   short: "Estado federal",
   ctx: "La Constitución creó un Estado autonómico con amplias competencias para las comunidades, pero sin una cámara que represente realmente a los territorios ni mecanismos estables de cooperación. Un modelo federal fijaría en la Constitución el reparto de competencias y daría voz a las comunidades en las decisiones del Estado. Sus críticos temen que abra la puerta a más diferencias entre territorios; algunos nacionalistas lo consideran insuficiente.",
   ley: "Constitución, título VIII",
-  pos: "4 1 1 4 4 1~ 0 1~ 2~ 2~ 3~ 2~ 1 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0" },
+  pos: "4 1 1 4 4 1~ 0 1~ 2~ 2~ 3~ 2~ 1~ 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0" },
 { id: "C05", area: "ter", prio: 2, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "Debería poder celebrarse un referéndum de independencia pactado si lo pide una mayoría clara de una comunidad.",
   short: "Referéndum de independencia pactado",
   ctx: "La Constitución atribuye la soberanía al conjunto del pueblo español, y el Tribunal Constitucional anuló las consultas unilaterales, como la catalana de 2017. Un referéndum pactado, como el de Escocia en 2014, exigiría según la mayoría de los juristas reformar la Constitución. Sus defensores apelan al principio democrático; sus detractores, a la unidad de la soberanía y a los riesgos de división social.",
   ley: "Constitución, art. 1.2 y 2",
-  pos: "1 1 1 3~ 5 1~ 0 1~ 5 5 4 5 1 4~ 5 2~ 4~ 4~ 4~ 4~ 1~ 4~ 4~ 1~ 2~ 1~ 1~" },
+  pos: "1 1 1 3~ 5 1~ 0 1~ 5 5 4 5 1~ 4~ 5 2~ 4~ 4~ 4~ 4~ 1~ 4~ 4~ 1~ 2~ 1~ 1~" },
 { id: "C06", area: "ter", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las diputaciones provinciales deberían suprimirse y sus funciones pasar a comunidades y ayuntamientos.",
   short: "Suprimir las diputaciones",
   ctx: "Las diputaciones gobiernan cada provincia y apoyan con dinero y técnicos a los municipios pequeños. Sus miembros no se eligen en las urnas, sino entre los concejales. Sus críticos las ven como una capa administrativa redundante y poco transparente; sus defensores, como imprescindibles para que los pueblos pequeños tengan servicios. En el País Vasco las diputaciones forales recaudan los impuestos, y en las islas existen cabildos y consejos insulares.",
   ley: "Constitución, art. 141",
-  pos: "2~ 1 2~ 4~ 5 4~ 0 5~ 4 3~ 1 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
+  pos: "2~ 1 2~ 4~ 5 4~ 0 5~ 4 3~ 1~ 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
 { id: "C07", area: "ter", prio: 3, type: "likert", dim: "ter", dir: 1, lr: 0,
   text: "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
   short: "Fusionar municipios pequeños",
   ctx: "España tiene más de 8.100 municipios y casi la mitad no llega a 500 habitantes. Muchos no pueden prestar por sí solos servicios básicos ni tener personal técnico. Fusionarlos o agruparlos podría ahorrar costes y profesionalizar la gestión, como hicieron otros países europeos; sus críticos temen perder identidad, representación y cercanía, sobre todo en la España rural.",
-  pos: "2 2~ 3~ 2~ 1~ 4~ 0 5~ 2 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1 0 0 0 1~ 1 1~" },
+  pos: "2 2~ 3~ 2~ 1~ 4~ 0 5~ 2 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1~ 0 0 0 1~ 1~ 1~" },
 { id: "C08", area: "ter", prio: 3, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "El Senado debería convertirse en una cámara de representación de las comunidades autónomas.",
   short: "Un Senado territorial",
@@ -213,7 +213,7 @@ export const QUESTIONS = [
   short: "Ley electoral más proporcional",
   ctx: "El Congreso se elige por provincias, con un mínimo de dos diputados cada una. Por eso un escaño cuesta muchos menos votos en Soria o Teruel que en Madrid, y el sistema favorece a los partidos grandes y a los concentrados en un territorio. Una ley más proporcional reflejaría mejor el voto nacional; sus críticos defienden la voz de las provincias despobladas y la estabilidad de los gobiernos.",
   ley: "Constitución, art. 68; Ley Orgánica del Régimen Electoral General",
-  pos: "2~ 1 3~ 4 5 4~ 5 5~ 2~ 1~ 1~ 2~ 1~ 2~ 5 1~ 3~ 3~ 3~ 2~ 1 3~ 3~ 1 1 1 1" },
+  pos: "2~ 1 3~ 4 5 4~ 5 5~ 2~ 1~ 1~ 2~ 1~ 2~ 5 1~ 3~ 3~ 3~ 2~ 1~ 3~ 3~ 1 1 1~ 1" },
 { id: "D02", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
   short: "Listas desbloqueadas",
@@ -242,13 +242,13 @@ export const QUESTIONS = [
   short: "Votación obligatoria de las iniciativas populares",
   ctx: "Con 500.000 firmas la ciudadanía puede presentar una iniciativa legislativa popular, aunque no sobre impuestos ni leyes orgánicas. Muchas no llegan a debatirse a fondo o quedan bloqueadas años en el Congreso. Obligar a votarlas en plazo reforzaría la participación directa; sus críticos temen que la usen sobre todo grupos muy organizados y prefieren preservar el margen de la democracia representativa.",
   ley: "Constitución, art. 87.3",
-  pos: "3~ 3~ 3~ 4 5 5~ 4~ 4~ 4~ 3~ 2~ 4~ 2~ 0 4~ 0 4~ 4~ 4~ 4~ 0 0 4~ 0 0 0 0" },
+  pos: "3~ 3~ 3~ 4 5~ 5~ 4~ 4~ 4~ 3~ 2~ 4~ 2~ 0 4~ 0 4~ 4~ 4~ 4~ 0 0 4~ 0 0 0 0" },
 { id: "D07", area: "ins", prio: 2, type: "likert", dim: "soc", dir: -1, lr: -1,
   text: "España debería celebrar un referéndum para elegir entre monarquía y república.",
   short: "Referéndum entre monarquía y república",
   ctx: "La Constitución de 1978 establece la monarquía parlamentaria: el Rey es jefe del Estado, con funciones sobre todo simbólicas y de arbitraje. Cambiar la forma de Estado exige una reforma agravada, con disolución de las Cortes y referéndum. Los partidarios de votarlo sostienen que la monarquía no se sometió a votación por separado; los contrarios, que la Constitución ya se aprobó en referéndum y que la monarquía aporta estabilidad.",
   ley: "Constitución, art. 1.3 y 168",
-  pos: "2 1 1~ 4~ 5 2~ 0 1~ 5 5 3~ 5 1 4~ 5 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0" },
+  pos: "2 1 1~ 4~ 5 2~ 0 1~ 5 5~ 3~ 5 1~ 4~ 5~ 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0" },
 { id: "D08", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Debería limitarse más la capacidad del Gobierno de aprobar decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
   short: "Limitar los decretos-ley",
@@ -260,7 +260,7 @@ export const QUESTIONS = [
   short: "Que gobierne la lista más votada",
   ctx: "En España el presidente necesita la confianza del Congreso: mayoría absoluta en una primera votación o simple en la segunda, y puede gobernar quien sume más apoyos aunque no haya ganado las elecciones. Que gobierne la lista más votada favorecería la estabilidad y la claridad para el votante; sus críticos sostienen que contradice el sistema parlamentario, en el que gobierna quien reúne una mayoría.",
   ley: "Constitución, art. 99",
-  pos: "2 4 2 1~ 1 2~ 1~ 2~ 1~ 1 1 4~ 4~ 1~ 1 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 0 0 0 0" },
+  pos: "2 4 2 1~ 1 2~ 1~ 2~ 1~ 1~ 1 4~ 4~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 1~ 0 0 0 0" },
 
 // ───────────── E · Justicia, seguridad y libertades
 { id: "E01", area: "jus", prio: 1, type: "likert", dim: "lib", dir: 1, lr: 1,
@@ -336,12 +336,12 @@ export const QUESTIONS = [
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
   ctx: "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
-  pos: "5 4 1 5 5 1~ 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
+  pos: "5 4 1 5 5~ 1~ 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
 { id: "F05", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
   ctx: "La tutela de los menores que llegan solos corresponde a la comunidad donde se encuentran, y Canarias llegó a tener más de 5.000 a su cargo. En 2025 una reforma de la Ley de Extranjería estableció un reparto obligatorio cuando una comunidad supera su capacidad. Sus defensores lo ven como solidaridad entre territorios; varias comunidades lo rechazan por falta de recursos o de acuerdo y lo han recurrido ante el Constitucional.",
-  pos: "5 2 1 5 5 1~ 0 3~ 3~ 2 4 4 2~ 4~ 3~ 5 5 5 4~ 4~ 3~ 3~ 4~ 0 0 0 0" },
+  pos: "5 2 1 5 5 1~ 0 3~ 3~ 2~ 4 4 2~ 4~ 3~ 5 5 5~ 4~ 4~ 3~ 3~ 4~ 0 0 0 0" },
 { id: "F06", area: "dem", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
   short: "Ayuda universal por hijo",
@@ -361,24 +361,24 @@ export const QUESTIONS = [
   text: "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
   short: "Más condiciones al Ingreso Mínimo Vital",
   ctx: "El Ingreso Mínimo Vital, creado en 2020, garantiza unos ingresos mínimos a hogares en pobreza y llega a más de 700.000 hogares; se puede compatibilizar en parte con un salario. Exigir búsqueda activa de empleo pretende evitar que desincentive trabajar; sus críticos recuerdan que buena parte de los beneficiarios son menores o personas que no pueden trabajar y que muchos hogares con derecho ni siquiera lo solicitan.",
-  pos: "2 4 4~ 1 1 5~ 0 4~ 1~ 3~ 3~ 1 4~ 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "2 4 4~ 1~ 1~ 5~ 0 4~ 1~ 3~ 3~ 1~ 4~ 2~ 1~ 3~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 
 // ───────────── G · Energía, medioambiente e infraestructuras
 { id: "G01", area: "ene", prio: 1, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "España debería alargar la vida de sus centrales nucleares más allá del calendario de cierre previsto, que termina en 2035.",
   short: "Alargar la vida de las nucleares",
   ctx: "Los siete reactores españoles producen alrededor del 20 % de la electricidad. El plan pactado con las eléctricas en 2019 prevé cerrarlos de forma escalonada hasta 2035, aunque en 2026 el Gobierno prorrogó Almaraz, el primero de la lista, hasta 2030. El apagón de abril de 2025 reabrió el debate. Sus defensores destacan que es una fuente estable y sin emisiones de CO₂; sus detractores, los residuos, el coste de prolongarlas y que las renovables con almacenamiento pueden sustituirlas.",
-  pos: "2 5 5 1 1 5 1 5~ 2 3 2 1 4 1~ 1 2 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
+  pos: "2 5 5 1 1 5 1~ 5~ 2 3 2 1 4 1~ 1 2 1~ 1~ 1 1~ 2~ 1~ 1~ 0 3~ 0 3~" },
 { id: "G02", area: "ene", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
   ctx: "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Quienes piden limitarlos buscan proteger el territorio; los defensores de estas plantas recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
-  pos: "2 2 4 3 3~ 4~ 3~ 2~ 2~ 3~ 2~ 3~ 3~ 0 3~ 3~ 3~ 4~ 3~ 4~ 5 3~ 3~ 4~ 4~ 5 4~" },
+  pos: "2 2 4 3 3~ 4~ 3~ 2~ 2~ 3~ 2~ 3~ 3~ 0 3~ 3~ 3~ 4~ 3~ 4~ 5 3~ 3~ 4~ 4~ 5~ 4~" },
 { id: "G03", area: "ene", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
   ctx: "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico; en diciembre de 2025 la Comisión propuso rebajar la exigencia a un 90 % menos de emisiones. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
-  pos: "5 2 1 5 5 1~ 5~ 3~ 4 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0" },
+  pos: "5 2 1 5 5~ 1~ 5~ 3~ 4 3~ 3~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0" },
 { id: "G04", area: "ene", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
   short: "Ampliar los trasvases de agua",
@@ -419,7 +419,7 @@ export const QUESTIONS = [
   text: "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
   short: "Más gasto en defensa",
   ctx: "En la cumbre de La Haya de 2025, los aliados de la OTAN acordaron llegar en 2035 al 5 % del PIB en defensa y seguridad, del que un 3,5 % sería gasto militar directo. España obtuvo una excepción y sostiene que con alrededor del 2,1 % cumple los objetivos de capacidades. Sus defensores invocan la amenaza rusa y la dependencia de EE. UU.; sus críticos, el coste frente a otras prioridades.",
-  pos: "1 4~ 4~ 1 1 4~ 1~ 5~ 1 3~ 3 1 4 2~ 1 3 1 1 1 1 2~ 1 1 0 0 0 0" },
+  pos: "1 4~ 4~ 1 1 4~ 1~ 5~ 1 3~ 3 1 4 2~ 1 3 1 1~ 1 1 2~ 1 1 0 0 0 0" },
 { id: "H02", area: "ext", prio: 2, type: "likert", dim: "eur", dir: -1, lr: 0,
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
@@ -434,7 +434,7 @@ export const QUESTIONS = [
   text: "España debería mantener el embargo de armas a Israel.",
   short: "Embargo de armas a Israel",
   ctx: "En 2025 España aprobó por decreto-ley un embargo de compraventa de armas con Israel por la guerra de Gaza, que causó decenas de miles de muertos tras el ataque de Hamás del 7 de octubre de 2023. Sus defensores lo ven como coherencia con el derecho internacional humanitario; sus críticos, como una medida que daña la relación con un aliado tecnológico y a la industria de defensa, y más simbólica que eficaz.",
-  pos: "5 1 1 5 5 2~ 0 2~ 5 4 4 5 3 5~ 5 4 5 5 5 5 0 5 5 0 0 0 0" },
+  pos: "5 1 1 5 5 2~ 0 2~ 5 4 4 5 3 5~ 5 4 5 5~ 5~ 5~ 0 5~ 5 0 0 0 0" },
 { id: "H05", area: "ext", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "España debería retirar su apoyo al plan de autonomía marroquí para el Sáhara Occidental.",
   short: "Retirar el apoyo al plan marroquí para el Sáhara",
@@ -460,7 +460,7 @@ export const QUESTIONS = [
   text: "La UE debería poder trasladar a centros en terceros países a los solicitantes de asilo mientras se estudian sus casos.",
   short: "Centros de asilo fuera de la UE",
   ctx: "El Pacto Europeo de Migración y Asilo, aplicable desde 2026, endurece los controles en frontera y obliga a repartir la responsabilidad entre países. Italia ha ensayado centros en Albania y la UE estudia «centros de retorno» fuera de su territorio. Sus defensores buscan disuadir las llegadas irregulares y a las mafias; sus críticos alertan de vulneraciones de derechos, altos costes y dudas legales.",
-  pos: "1 3 5 1 1 5~ 0 3~ 1 3~ 2~ 1 4~ 1~ 1 3~ 1 1 1 1 0 1 1 0 0 0 0" },
+  pos: "1 3 5 1 1 5~ 0 3~ 1 3~ 2~ 1 4~ 1~ 1 3~ 1 1 1 1 0 1 1~ 0 0 0 0" },
 
 // ───────────── I · Educación, ciencia y cultura
 { id: "I01", area: "edu", prio: 1, type: "likert", dim: "eco", dir: 1, lr: 1,
@@ -468,7 +468,7 @@ export const QUESTIONS = [
   short: "Financiación de la escuela concertada",
   ctx: "Una cuarta parte del alumnado estudia en centros concertados: privados, a menudo religiosos, financiados con dinero público a cambio de ser gratuitos en la enseñanza obligatoria, aunque muchos cobran cuotas «voluntarias». Sus defensores apelan a la libertad de elección de las familias; sus críticos señalan que escolarizan a menos alumnado vulnerable y prefieren priorizar la red pública.",
   ley: "Constitución, art. 27",
-  pos: "3 5 5 1 1 5~ 0 4~ 2 4 4 2 5 2~ 1 3~ 1 1~ 1 1 0 1 1 0 0 0 0" },
+  pos: "3 5 5 1 1 5~ 0 4~ 2 4 4 2 5 2~ 1 3~ 1~ 1~ 1 1 0 1~ 1 0 0 0 0" },
 { id: "I02", area: "edu", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "La universidad pública debería ser gratuita para todos los estudiantes.",
   short: "Universidad pública gratuita",
@@ -488,7 +488,7 @@ export const QUESTIONS = [
   text: "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
   short: "Elegir el castellano como lengua de estudio",
   ctx: "En Cataluña la inmersión hace del catalán la lengua vehicular, y los tribunales fijaron un mínimo del 25 % de clases en castellano; en otras comunidades conviven modelos con distintos porcentajes. Quienes defienden la elección invocan los derechos de las familias castellanohablantes; quienes defienden la inmersión, garantizar que todo el alumnado domine ambas lenguas y la cohesión social.",
-  pos: "2~ 4 5 1 1 5~ 0 5~ 1 1 1 1 5 1~ 1 0 0 0 1 1~ 0 1 0 0 0 0 0" },
+  pos: "2~ 4 5 1~ 1~ 5~ 0 5~ 1 1 1 1 5 1~ 1 0 0 0 1 1~ 0 1 0 0 0 0 0" },
 { id: "I06", area: "edu", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Las becas deberían exigir mejores notas que el simple aprobado.",
   short: "Becas con más exigencia académica",
@@ -498,7 +498,7 @@ export const QUESTIONS = [
   text: "Las actividades de educación afectivo-sexual en los colegios no deberían necesitar permiso previo de los padres.",
   short: "Educación sexual sin «pin parental»",
   ctx: "La ley educativa incluye la educación afectivo-sexual en el currículo. Vox impulsó el «pin parental», un permiso expreso de los padres para que sus hijos asistan a actividades complementarias sobre sexualidad o identidad de género, y llegó a aplicarse en Murcia. Sus defensores apelan al derecho de los padres a decidir la educación moral de sus hijos; sus críticos, al derecho de los menores a una formación completa.",
-  pos: "5 2~ 1 5 5 1~ 0 4~ 5 4~ 4~ 5 2~ 5~ 5 4~ 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 2~ 1 5 5 1~ 0 4~ 5 4~ 4~ 5 2~ 5~ 5~ 4~ 5~ 5~ 5 5~ 0 5~ 5 0 0 0 0" },
 { id: "I08", area: "edu", prio: 3, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La tauromaquia debería seguir recibiendo dinero público como patrimonio cultural.",
   short: "Dinero público para la tauromaquia",
@@ -509,7 +509,7 @@ export const QUESTIONS = [
   text: "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
   short: "Lengua cooficial como requisito",
   ctx: "En Cataluña, el País Vasco, Galicia, Baleares o la Comunitat Valenciana, las administraciones exigen o valoran el conocimiento de la lengua propia, con distinta intensidad según la comunidad y el gobierno de turno. Sus defensores sostienen que garantiza que la ciudadanía sea atendida en cualquiera de las lenguas oficiales; sus críticos, que limita el acceso al empleo público, por ejemplo de médicos de otras comunidades.",
-  pos: "4 2 1 4 4 1~ 0 1~ 5 5 5 5 1 5 5 0 0 0 5 4~ 0 5 0 0 0 0 0" },
+  pos: "4 2 1 4 4~ 1~ 0 1~ 5 5 5 5 1 5 5 0 0 0 5 4~ 0 5 0 0 0 0 0" },
 
 // ───────────── J · Sanidad y gestión pública
 { id: "J01", area: "san", prio: 1, type: "likert", dim: "eco", dir: -1, lr: -1,
@@ -551,14 +551,14 @@ export const QUESTIONS = [
   text: "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
   short: "Estándares sanitarios comunes",
   ctx: "La sanidad está transferida a las comunidades desde 2002, y el Estado coordina a través del Consejo Interterritorial, donde las decisiones suelen requerir acuerdo. Eso explica diferencias en listas de espera, vacunas o prestaciones entre territorios. Dar más poder al Ministerio favorecería la igualdad entre ciudadanos; sus críticos defienden la autonomía de gestión y la cercanía, y temen una uniformización impuesta por el Gobierno central.",
-  pos: "5 2 5 5 4~ 5~ 0 5~ 1 1 1 1 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
+  pos: "5 2 5 5 4~ 5~ 0 5~ 1 1~ 1~ 1~ 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
 
 // ───────────── K · Agricultura, pesca y mundo rural
 { id: "K01", area: "rur", prio: 1, type: "likert", dim: "eur", dir: -1, lr: 0,
   text: "España debería apoyar el acuerdo comercial entre la UE y Mercosur, aunque aumente la competencia para los agricultores.",
   short: "Acuerdo comercial UE-Mercosur",
   ctx: "El acuerdo, cerrado en 2024 tras 25 años de negociación, reduce aranceles entre la UE y Argentina, Brasil, Paraguay y Uruguay. Beneficiaría a exportadores de vino, aceite, maquinaria o automóviles; las organizaciones agrarias temen la competencia de carne, azúcar o cereales producidos con normas ambientales y sanitarias menos exigentes. Incluye cláusulas de salvaguarda cuya eficacia se discute. Se aplica provisionalmente desde mayo de 2026, mientras el Tribunal de Justicia de la UE examina su legalidad.",
-  pos: "5 4 1 1 1 1 1 5~ 2 3~ 4~ 1 3 2~ 1 1 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
+  pos: "5 4 1 1 1 1 1 5~ 2 3~ 4~ 1~ 3 2~ 1 1 1~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0" },
 { id: "K02", area: "rur", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
   short: "Controlar los márgenes de la distribución",
@@ -579,7 +579,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse abrir nuevas macrogranjas.",
   short: "Prohibir nuevas macrogranjas",
   ctx: "Las granjas industriales concentran miles de animales, sobre todo cerdos, y han crecido mucho en Aragón, Cataluña o Castilla-La Mancha. Generan empleo y exportaciones, pero también contaminación de acuíferos por nitratos, olores y la desaparición de ganaderos pequeños; varias comunidades han aprobado moratorias. Sus defensores sostienen que cumplen la normativa y fijan población en el medio rural.",
-  pos: "2 1 1 5 5 1~ 5 2~ 4~ 2~ 2~ 4~ 1~ 3~ 4~ 2~ 4~ 5 4~ 4~ 3~ 4~ 4~ 2~ 3~ 5 0" },
+  pos: "2 1 1 5 5 1~ 5 2~ 4~ 2~ 2~ 4~ 1~ 3~ 4~ 2~ 4~ 5~ 4~ 4~ 3~ 4~ 4~ 2~ 3~ 5 0" },
 { id: "K06", area: "rur", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
   short: "Relajar los límites a la pesca en el Mediterráneo",
@@ -589,12 +589,12 @@ export const QUESTIONS = [
   text: "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
   short: "Proteger la caza por ley",
   ctx: "En España hay unas 750.000 licencias de caza. Sus defensores la consideran clave para controlar especies como el jabalí o el conejo, que causan daños en cultivos y accidentes de tráfico, y para la economía de muchos pueblos. Sus críticos denuncian el sufrimiento animal y proponen otros métodos de control de fauna; la Ley de Bienestar Animal de 2023 dejó fuera a los perros de caza.",
-  pos: "3 5 5 2~ 1 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 2~ 2~ 4~ 1~ 2~ 4~ 5~ 4~ 5~" },
+  pos: "3 5 5 2~ 1~ 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 2~ 2~ 4~ 1~ 2~ 4~ 5~ 4~ 5~" },
 { id: "K08", area: "rur", prio: 3, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
   short: "Limitar los nuevos regadíos",
   ctx: "La agricultura de regadío consume en torno al 80 % del agua en España. En el entorno de Doñana, la extracción para cultivos como la fresa ha contribuido a secar lagunas del parque nacional, y el Tribunal de Justicia de la UE condenó a España en 2021. Limitar nuevos regadíos protege acuíferos y ecosistemas; sus críticos defienden la riqueza y el empleo agrícola y piden más infraestructuras y desaladoras.",
-  pos: "3 3 1 5 5 2~ 5~ 3~ 2 3~ 3~ 4~ 2~ 0 4~ 0 0 0 3~ 3~ 0 0 4~ 2~ 1~ 0 0" },
+  pos: "3 3 1 5 5~ 2~ 5~ 3~ 2 3~ 3~ 4~ 2~ 0 4~ 0 0 0 3~ 3~ 0 0 4~ 2~ 1~ 0 0" },
 
 // ───────────── L · Derechos y cuestiones éticas
 { id: "L01", area: "der", prio: 1, type: "likert", dim: "soc", dir: -1, lr: -1,
@@ -602,7 +602,7 @@ export const QUESTIONS = [
   short: "El aborto en la Constitución",
   ctx: "La ley de 2010 permite el aborto libre hasta la semana 14 y hasta la 22 por riesgos graves, y el Tribunal Constitucional la avaló en 2023. En 2025 el Gobierno propuso reformar la Constitución para incluirlo, como hizo Francia en 2024. Sus defensores quieren protegerlo frente a futuros cambios de mayoría; sus críticos defienden la vida del no nacido o consideran innecesaria la reforma, que exige tres quintos de las Cámaras.",
   ley: "Ley Orgánica 2/2010; Constitución, art. 167",
-  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1 5~ 5 3 5 5~ 5 5~ 0 5~ 5 0 0 0 0" },
+  pos: "5 1 1 5 5 0 5~ 3~ 4 3 3 5 1 5~ 5 3 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L02", area: "der", prio: 2, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "La ley de eutanasia debería derogarse.",
   short: "Derogar la ley de eutanasia",
@@ -625,7 +625,7 @@ export const QUESTIONS = [
   short: "Revisar los acuerdos con la Santa Sede",
   ctx: "Los acuerdos con el Vaticano regulan la enseñanza de la Religión, la asistencia religiosa, exenciones fiscales y la financiación de la Iglesia, que recibe el 0,7 % del IRPF de quienes marcan su casilla. Sus críticos sostienen que otorgan privilegios impropios de un Estado aconfesional; sus defensores, que reconocen la labor social de la Iglesia y la libertad religiosa, y que otras confesiones también tienen acuerdos.",
   ley: "Constitución, art. 16.3",
-  pos: "3 1 2~ 5 5 2~ 0 3~ 5 3~ 2~ 5~ 1 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "3 1 2~ 5 5 2~ 0 3~ 5 3~ 2~ 5~ 1~ 4~ 5~ 2~ 5~ 5~ 5~ 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L06", area: "der", prio: 3, type: "likert", dim: "lib", dir: 1, lr: 0,
   text: "Las redes sociales deberían estar obligadas a verificar la identidad real de cada usuario.",
   short: "Fin del anonimato en redes",
@@ -945,6 +945,7 @@ export const SOURCES = {
     ccpc: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     comp: ["https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html", "Público, votación en el Congreso del 28/04/2026", "parlamento", "2026-04-28"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74", "programa", "2026-04"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40", "programa", "2023-04"],
   },
   B02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -974,6 +975,7 @@ export const SOURCES = {
     ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025", "parlamento", "2025-03-18"],
     comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025", "parlamento", "2025-03-18"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8", "programa", "2019-11"],
+    fa: ["https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular", "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)", "parlamento", "2022-11-29"],
   },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"],
@@ -982,7 +984,8 @@ export const SOURCES = {
     fa: ["https://theobjective.com/espana/politica/2026-02-04/sumar-insiste-llevar-escudo-social-congreso/", "The Objective, Lara Hernández sobre la moratoria de desahucios, 04/02/2026", "declaracion", "2026-02-04"],
     pod: ["https://www.bolsamania.com/noticias_amp/empresas/economia--podemos-exige-al-gobierno-pagar-el-alquiler-de-los-desahuciados-por-la-caida-del-escudo-social--21590323.html", "Bolsamanía (Europa Press), rueda de prensa de Pablo Fernández, 02/02/2026", "declaracion", "2026-02-02"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
-    junts: ["https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/", "Forbes España, votación del decreto del escudo social, 26/02/2026", "parlamento", "2026-02-26"]
+    junts: ["https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/", "Forbes España, votación del decreto del escudo social, 26/02/2026", "parlamento", "2026-02-26"],
+    bildu: ["https://www.deia.eus/politica/2025/12/22/gobierno-pacta-eh-bildu-prorrogar-10501301.html", "Deia: EH Bildu pacta con el Gobierno prorrogar en 2026 la prohibición de desahucios de familias vulnerables", "prensa", "2025-12-22"],
   },
   B05: {
     psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"],
@@ -992,6 +995,11 @@ export const SOURCES = {
     ccpc: ["https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/", "RTVC, aprobación de la ley canaria de vivienda vacacional (Ley 6/2025)", "parlamento", "2025-11-12"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74", "programa", "2026-04"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=45", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 45", "programa", "2023-07"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=75", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 75", "programa", "2023-04"],
+    drago: ["https://www.dragocanarias.com/programa/", "Programa de Drago Canarias (autonómicas 2023), apartado de turismo", "programa", "2023-05"],
+    comp: ["https://www.eldebate.com/espana/comunidad-valenciana/20260618/congreso-aprueba-propuesta-compromis-celebrar-referendums-sobre-modelo-turistico_429916.html", "El Debate: el Congreso aprueba una propuesta de Compromís sobre el modelo turístico (18 jun 2026)", "prensa", "2026-06-18"],
+    mes: ["https://www.eldiario.es/economia/instituciones-baleares-prohibir-alquilar-turistas_1_3256574.html", "elDiario.es/EFE: las instituciones de Baleares podrán prohibir alquilar pisos a turistas (30 jul 2017)", "prensa", "2017-07-30"],
+    bildu: ["https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/", "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025", "prensa", "2024-10-16"],
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
@@ -1006,7 +1014,10 @@ export const SOURCES = {
     vox: ["https://forbes.es/economia/821981/vox-propone-costear-las-ayudas-a-espanoles-para-vivienda-con-mas-impuestos-a-los-compradores-extranjeros/", "PNL de Vox sobre impuestos a compradores extranjeros (3-11-2025)", "parlamento", "2025-11-03"],
     fa: ["https://theobjective.com/espana/politica/2025-04-10/congreso-compra-viviendas-extranjeros-apoyo-psoe/", "The Objective, votación en la Comisión de Vivienda del Congreso, 10/04/2025", "parlamento", "2025-04-10"],
     pod: ["https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/", "Forbes España (Europa Press), moción de Podemos sobre turismo, 16/06/2024", "parlamento", "2024-06-16"],
-    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40", "programa", "2023-04"],
+    drago: ["https://www.dragocanarias.com/programa/", "Programa de Drago Canarias (autonómicas 2023), apartado de turismo", "programa", "2023-05"],
+    mes: ["https://www.ultimahora.es/noticias/local/2025/01/13/2304805/vivienda-baleares-mes-per-mallorca-condiciona-apoyo-medidas-sanchez.html", "Última Hora: MÉS per Mallorca condiciona su apoyo a las medidas de vivienda del Gobierno (13 ene 2025)", "prensa", "2025-01-13"],
   },
   B08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1019,6 +1030,9 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=15", "Programa electoral del BNG para las generales de 2023, p. 15", "programa", "2023-07"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=38", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 38", "programa", "2019-05"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 7", "programa", "2026-04"],
+    upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81", "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 81", "programa", "2023-07"],
+    mes: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81", "Programa de Sumar para el 23J de 2023, coalición (Sumar Més) con la que concurrió MÉS, p. 81", "programa", "2023-07"],
+    bildu: ["https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/", "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025", "prensa", "2024-10-16"],
   },
   B09: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1034,7 +1048,8 @@ export const SOURCES = {
     fa: ["https://es.ara.cat/politica/parlamento-tumba-concierto-economico-voto-psc_1_5432030.html", "Ara, votación en el Parlament del 03/07/2025", "parlamento", "2025-07-03"],
     erc: ["https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/", "El Independiente, 03/09/2025", "declaracion", "2025-09-03"],
     junts: ["https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html", "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026", "declaracion", "2026-01-07"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    bildu: ["https://www.que.es/2024/08/26/otegi-insta-al-respaldo-gubernamental/", "Qué!: Otegi (EH Bildu) defiende la financiación singular de Cataluña", "declaracion", "2024-08-26"],
   },
   C02: {
     psoe: ["https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2026/140126-montero-financiacion-autonomica.aspx", "Propuesta del Gobierno de nuevo modelo de financiación autonómica (14 de enero de 2026)", "gobierno", "2026-01-14"],
@@ -1054,6 +1069,10 @@ export const SOURCES = {
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=11", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 11", "programa", "2019-11"],
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=243", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 243", "programa", "2019-04"],
     upn: ["https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1", "Programa electoral de UPN para las generales de 2023, p. 1", "programa", "2023-07"],
+    ccpc: ["https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=2", "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 2", "programa", "2019-10"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=14", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 14", "programa", "2023-04"],
+    cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=11", "Programa de CHA para las autonómicas de Aragón de 2019, p. 11", "programa", "2019-05"],
+    gbai: ["https://orain.eus/es/politica/2013/06/27/reforma-educativa--geroa-bai-esta-lomce/", "Orain (EFE): Barkos traslada a Wert la oposición de Geroa Bai a la LOMCE", "prensa", "2013-06-27"],
   },
   C04: {
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
@@ -1062,6 +1081,7 @@ export const SOURCES = {
     pod: ["https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/", "Onda Vasca, declaraciones de Ione Belarra en Hernani, 23/06/2023", "declaracion", "2023-06-24"],
     pp: ["https://www.periodicodeibiza.es/pitiusas/ibiza/2013/11/11/112215/rechazara-propuesta-para-creacion-estado-federal.html", "Periódico de Ibiza (Efe), el PP en el Parlament balear ante una propuesta federal", "parlamento", "2013-11-11"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10", "programa", "2019-05"],
+    comp: ["https://www.periodicodeibiza.es/noticias/nacional/2016/04/26/189554/compromis-propone-rey-acuerdo-extremis-para-evitar-elecciones.html", "Periódico de Ibiza/EFE: propuesta de acuerdo de Compromís presentada al Rey (26 abr 2016)", "prensa", "2016-04-26"],
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
@@ -1107,6 +1127,7 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=29", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 42", "programa", "2019-11"],
     pod: ["https://www.elindependiente.com/politica/2018/02/08/sintonia-total-en-la-reunion-entre-ciudadanos-y-podemos-sobre-la-ley-electoral/amp/", "El Independiente: Podemos y Ciudadanos negocian una reforma electoral más proporcional", "prensa", "2018-02-08"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=69", "Programa de PACMA para las generales de 2023, p. 69", "programa", "2023-07"],
   },
   D02: {
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
@@ -1137,6 +1158,7 @@ export const SOURCES = {
     bng: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, aprobación definitiva de la ley de amnistía en el Congreso, 30/05/2024", "parlamento", "2024-05-30"],
     ccpc: ["https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html", "Deia, El Congreso aprueba de forma definitiva la ley de Amnistía, 30/05/2024", "parlamento", "2024-05-30"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=25", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 25", "programa", "2019-11"],
+    comp: ["https://www.que.es/2021/03/23/partidos-independentistas-veto-ley-amnistia/", "Qué!: debate sobre la ley de amnistía en el Congreso (23 mar 2021)", "prensa", "2021-03-23"],
   },
   D05: {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
@@ -1153,6 +1175,8 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 253", "programa", "2019-04"],
     bildu: ["https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-37.PDF#page=12", "Diario de Sesiones del Congreso, Pleno n.º 37, 22 de julio de 2020, p. 12 (pregunta de Jon Iñarritu, EH Bildu)", "parlamento", "2020-07-22"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10", "programa", "2019-05"],
+    bng: ["https://www.elespanol.com/treintayseis/actualidad/galicia/20220521/decenas-personas-protestan-bng-sanxenxo-monarquia/674182765_0.html", "El Español: protesta del BNG contra la monarquía en Sanxenxo", "prensa", "2022-05-21"],
+    upn: ["https://www.vozpopuli.com/espana/senado-aprueba-iniciativa-respaldo-felipe-vi-monarquia-rechazo-socios-gobierno.html", "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN", "parlamento", "2024-07-17"],
   },
   D08: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1247,6 +1271,8 @@ export const SOURCES = {
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=110", "Programa electoral de Junts per Catalunya para las generales de 2023, p. 110", "programa", "2023-07"],
     gbai: ["https://www.noticiasdenavarra.com/politica/2024/06/27/navarra-aprueba-ley-permitira-cambiar-8413307.html", "Diario de Noticias: el Parlamento de Navarra rechaza la enmienda de Vox para llamar «intrafamiliar» a la violencia sobre la mujer", "parlamento", "2024-06-27"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=9", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 9", "programa", "2026-04"],
+    upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=112", "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 112", "programa", "2023-07"],
+    comp: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=112", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 112", "programa", "2023-07"],
   },
   E09: {
     psoe: ["https://www.publico.es/sociedad/psoe-vota-no-ley-mas-pais-cannabis.html", "Votación de la ley del cannabis de Más País (19 de octubre de 2021)", "parlamento", "2021-10-19"],
@@ -1258,6 +1284,7 @@ export const SOURCES = {
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=46", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
     upn: ["https://www.redaccionmedica.com/autonomias/20141127/el-parlamento-aprueba-una-ley-para-regular-los-colectivos-de-usuarios-cannabis/333119_0.html", "Redacción Médica: el Parlamento de Navarra aprueba la ley de colectivos de usuarios de cannabis", "parlamento", "2014-11-27"],
     bildu: ["https://es.ara.cat/sociedad/congreso-rechaza-abrir-debate-regulacion-cultivo-cannabis_1_4154446.html", "Ara: el Congreso rechaza tramitar la ley de Más País para regular el cannabis", "parlamento", "2021-10-19"],
+    comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=25", "Programa de Compromís de 2019 (Corts y generales), p. 25", "programa", "2019-04"],
   },
   F01: {
     psoe: ["https://www.diaridetarragona.com/espana/250726/saiz-sobre-regularizacion-migrantes-conscientes-administracion-dar-respuesta.html", "Diari de Tarragona (EFE), declaraciones de la ministra Elma Saiz, 27/01/2026", "gobierno", "2026-01-27"],
@@ -1305,6 +1332,7 @@ export const SOURCES = {
     comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=89", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 89", "programa", "2026-04"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 104", "programa", "2023-07"],
+    upc: ["https://rtvc.es/pleno-del-parlamento-de-canarias-27-mayo-2026/", "RTVC: el Parlamento de Canarias rechaza la «prioridad nacional» de Vox (27 may 2026)", "prensa", "2026-05-27"],
   },
   F04: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx", "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)", "gobierno", "2024-11-19"],
@@ -1323,13 +1351,15 @@ export const SOURCES = {
     pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
     bildu: ["https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/", "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025", "parlamento", "2025-04-10"],
     ccpc: ["https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/", "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes", "parlamento", "2025-04-10"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89", "programa", "2023-04"],
   },
   F06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.menorca.info/actualidad/nacional/2024/09/27/2249715/feijoo-propone-elevar-hasta-1800-euros-deducciones-por-hijo.html", "Menorca (Europa Press), Feijóo propone elevar las deducciones por hijo, 27/09/2024", "declaracion", "2024-09-27"],
     vox: ["https://theobjective.com/espana/2022-08-19/vox-propone-ayudas-a-las-familias-numerosas-frente-a-la-caida-de-la-natalidad-en-espana/", "Vox propone ayudas a las familias numerosas frente a la caída de la natalidad en España (The Objective)", "declaracion", "2022-08-19"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=93", "Programa electoral de Sumar de 2023, p. 93", "programa", "2023-07"],
-    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
+    pod: ["https://diariodeavisos.elespanol.com/2019/04/podemos-propone-una-ayuda-de-entre-1-200e-y-2-000e-por-hijo-a-cargo/", "Diario de Avisos (EFE): propuesta de Podemos de prestación universal por hijo a cargo", "prensa", "2019-04-15"],
   },
   F07: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1341,6 +1371,8 @@ export const SOURCES = {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=176", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15", "Programa electoral de Sumar de 2023, p. 15", "programa", "2023-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19", "Programa electoral del BNG para las generales de 2023, p. 19", "programa", "2023-07"],
+    bildu: ["https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/", "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024", "prensa", "2024-04-07"],
+    pod: ["https://www.menorca.info/actualidad/nacional/2022/11/23/1834329/cualquiera-diga-pueden-garantizar-derechos-sociales-bajando-impuestos-ricos-miente.html", "Menorca.info (Europa Press): Ione Belarra (Podemos) sobre dependencia e impuestos en el Congreso", "declaracion", "2022-11-23"],
   },
   F09: {
     psoe: ["https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4972", "Real Decreto-ley 6/2022 (29 de marzo de 2022)", "gobierno", "2022-03-29"],
@@ -1360,7 +1392,8 @@ export const SOURCES = {
     upn: ["https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html", "Noticias de Navarra (Europa Press), votación de la enmienda del PP sobre el cierre nuclear en el Congreso, 13/11/2025", "parlamento", "2025-11-11"],
     bng: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
     ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
-    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"]
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025", "parlamento", "2025-02-12"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=31", "Programa de PACMA para las generales de 2023, p. 31", "programa", "2023-07"],
   },
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1384,6 +1417,7 @@ export const SOURCES = {
     bng: ["https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html", "El Español, El PSOE y sus socios tumban la propuesta de Murcia de blindar el trasvase Tajo-Segura, 13-05-2025", "parlamento", "2025-05-13"],
     existe: ["https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=10", "Programa electoral de Teruel Existe para las generales de 2023, p. 10", "programa", "2023-07"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=71", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 71", "programa", "2019-05"],
+    pod: ["https://www.eldiario.es/castilla-la-mancha/castilla-la-mancha-trasvase-tajo-segura-millones_1_1901844.html", "elDiario.es: Podemos Castilla-La Mancha pide el fin de los trasvases", "prensa", "2018-10-09"],
   },
   G05: {
     psoe: ["https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/", "Debate de la moción de Podemos en el Congreso (13 de mayo de 2025)", "parlamento", "2025-05-13"],
@@ -1438,6 +1472,9 @@ export const SOURCES = {
     ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json", "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026", "parlamento", "2026-06-11"],
     comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json", "Congreso de los Diputados, votación nominal (datos abiertos): moción de Rego (BNG) para revertir el aumento del gasto militar, 11/06/2026", "parlamento", "2026-06-11"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=281", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 281", "programa", "2026-04"],
+    upc: ["https://www.elindependiente.com/espana/2025/04/22/sumar-podemos-rechazo-gasto-extra-defensas-2025-compra-armamento/amp/", "El Independiente: Sumar y Podemos rechazan el gasto extra en defensa (22 abr 2025)", "prensa", "2025-04-22"],
+    cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=18", "Programa de CHA para las autonómicas de Aragón de 2019, p. 18", "programa", "2019-05"],
+    mes: ["https://www.ultimahora.es/noticias/local/2025/09/18/2472505/parlament-rechaza-cierre-base-militar-del-puig-major-transferencia-terrenos-baleares-1.html", "Última Hora: votación en el Parlament balear sobre gasto militar y la OTAN (18 sep 2025)", "prensa", "2025-09-18"],
   },
   H02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1467,6 +1504,9 @@ export const SOURCES = {
     bng: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC, El Congreso aprueba el embargo de armas a Israel, 08-10-2025", "parlamento", "2025-10-08"],
     ccpc: ["https://www.democrata.es/politica/junts-apoyara-decreto-embargo-armas-israel-facilitando-aprobacion-congreso/", "Demócrata, Junts apoyará el decreto de embargo de armas a Israel, octubre 2025", "declaracion", "2025-10"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282", "programa", "2026-04"],
+    upc: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)", "prensa", "2025-10-08"],
+    comp: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)", "prensa", "2025-10-08"],
+    cha: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)", "prensa", "2025-10-08"],
   },
   H05: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/Documents/2025/04122025-declaracion-conjunta-espana-marruecos.pdf", "Declaración conjunta España-Marruecos (4 de diciembre de 2025)", "gobierno", "2025-12-04"],
@@ -1482,6 +1522,8 @@ export const SOURCES = {
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=19", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 19", "programa", "2019-05"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282", "programa", "2026-04"],
     bildu: ["https://www.elindependiente.com/espana/2025/11/12/sumar-podemos-y-bildu-exigen-a-sanchez-que-rectifique-en-el-sahara-deje-de-estar-plegado-a-la-dictadura-marroqui/amp/", "El Independiente (Efe): Sumar, Podemos y Bildu exigen a Sánchez que rectifique en el Sáhara", "prensa", "2025-11-12"],
+    upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=143", "Programa de Sumar para el 23J de 2023 (Sumar e IU integran UPC), p. 143", "programa", "2023-07"],
+    drago: ["https://diariodeavisos.elespanol.com/2026/10/drago-canarias-eleccines-29n-alberto-rodriguez/", "Diario de Avisos/Europa Press: Drago Canarias concurrirá en solitario el 29N (10 oct 2026)", "prensa", "2026-10-10"],
   },
   H06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=264", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1514,7 +1556,15 @@ export const SOURCES = {
     pp: ["https://www.eldiario.es/politica/feijoo-evita-respaldar-centros-deportacion-refugiados-meloni-avalado-partido-popular-europeo_1_11740606.html", "eldiario.es, Feijóo en la cumbre del PPE, 17/10/2024", "declaracion", "2024-10-17"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102", "Programa electoral de Vox de 2023, medida 211", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149", "Programa electoral de Sumar de 2023, p. 149", "programa", "2023-07"],
-    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
+    upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150", "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 150", "programa", "2023-07"],
+    drago: ["https://www.dragocanarias.com/programa/", "Programa de Drago Canarias (autonómicas 2023), apartado de migraciones", "programa", "2023-05"],
+    comp: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 150", "programa", "2023-07"],
+    cha: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió CHA, p. 150", "programa", "2023-07"],
+    mes: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150", "Programa de Sumar para el 23J de 2023, coalición (Sumar Més) con la que concurrió MÉS, p. 150", "programa", "2023-07"],
+    pod: ["https://www.bolsamania.com/noticias/sociedad/podemos-aboga-por-cambiar-las-politicas-migratorias-en-la-ue-pagamos-a-otros-para-que-vulneren-los-ddhh-por-nosotros--2657551.html", "Bolsamanía (Europa Press): informe de Podemos «Externalización de fronteras»", "prensa", "2017-05-05"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20", "Programa electoral del BNG para las generales de 2023, p. 20", "programa", "2023-07"],
+    bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11", "Compromiso electoral de EH Bildu para las generales de 2023, p. 11", "programa", "2023-07"],
   },
   I01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -1531,6 +1581,8 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=38", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 38", "programa", "2019-04"],
     upn: ["https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=3", "Programa electoral de UPN para las generales de 2023, p. 3", "programa", "2023-07"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=66", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 66", "programa", "2026-04"],
+    cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=40", "Programa de CHA para las autonómicas de Aragón de 2019, p. 40", "programa", "2019-05"],
+    pnv: ["https://www.elsaltodiario.com/pais-vasco/ofrece-pp-ciudadanos-mas-financiacion-educacion-concertada-presupuestos", "El Salto: el PNV ofrece más financiación para la concertada en los presupuestos vascos de 2023", "prensa", "2022-11-16"],
   },
   I02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1555,11 +1607,15 @@ export const SOURCES = {
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
     upn: ["https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1", "Programa electoral de UPN para las generales de 2023, p. 1", "programa", "2023-07"],
+    comp: ["https://es.ara.cat/valencia/ley-educativa-pp-vox-pais-valencia-camino-tribunales_1_5150864.html", "Ara: recurso de inconstitucionalidad contra la ley educativa valenciana de PP y Vox (25 sep 2024)", "prensa", "2024-09-25"],
+    mes: ["https://www.moncloa.com/2024/07/05/mes-govern-plan-libre-eleccion-de-lengua-2706028/", "Moncloa.com: MÉS exige destinar a otras necesidades los fondos del plan de libre elección de lengua (5 jul 2024)", "prensa", "2024-07-05"],
+    fa: ["https://www.eldiario.es/catalunya/justicia-europea-descarta-25-castellano-vulnere-derechos-partidarios-inmersion-catalan_1_13314846.html", "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula", "prensa", "2026-06-18"],
   },
   I06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=115", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     fa: ["https://www.aprendemas.com/es/blog/becas/proponen-que-los-estudiantes-no-devuelvan-las-becas-por-no-conseguir-unos-minimos-academicos-176533", "Proponen que los estudiantes no devuelvan las becas por no conseguir unos mínimos académicos (Aprendemas)", "parlamento", "2024-12-13"],
     pp: ["https://www.periodicodeibiza.es/noticias/nacional/2013/06/25/102341/wert-reconsiderar-nota-del-para-optar-becas-universitarias.html", "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas", "gobierno", "2013-06-25"],
+    pod: ["https://www.moncloa.com/2020/05/20/nuevas-becas-castells-169951/", "Moncloa.com: reforma de becas del ministro Castells (cuota de Unidas Podemos), 2020", "prensa", "2020-05-20"],
   },
   I07: {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"],
@@ -1581,6 +1637,10 @@ export const SOURCES = {
     bildu: ["https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html", "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural", "parlamento", "2025-10-08"],
     bng: ["https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html", "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural", "parlamento", "2025-10-08"],
     upn: ["https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html", "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural", "parlamento", "2025-10-08"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=14", "Programa de PACMA para las generales de 2023, p. 14", "programa", "2023-07"],
+    upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=46", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 46", "programa", "2023-04"],
+    drago: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=56", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Drago Canarias, p. 56", "programa", "2023-07"],
+    mes: ["https://www.periodicodeibiza.es/noticias/baleares/2016/03/18/182582/govern-favor-proposicion-ley-para-prohibir-corridas-toros.html", "Periódico de Ibiza/EFE: proposición de ley para prohibir las corridas de toros en Baleares (18 mar 2016)", "prensa", "2016-03-18"],
   },
   I09: {
     psoe: ["https://www.eldebate.com/espana/20231129/psoe-sumar-recurren-ante-tc-supresion-exigencia-catalan-sanidad-baleares_157155.html", "Recurso ante el TC por el catalán en la sanidad balear (29 de noviembre de 2023)", "parlamento", "2023-11-29"],
@@ -1593,6 +1653,10 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=233", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 233", "programa", "2019-04"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=61", "Programa electoral del BNG para las generales de 2023, p. 61", "programa", "2023-07"],
     gbai: ["https://www.noticiasdenavarra.com/politica/2025/05/15/ollo-politica-linguistica-9638968.html", "Diario de Noticias: pleno del Parlamento de Navarra sobre política lingüística (intervención de Mikel Asiain, Geroa Bai)", "prensa", "2025-05-15"],
+    mes: ["https://www.elsaltodiario.com/baleares/catalan-deja-ser-un-requisito-funcionarios-sanidad-balear", "El Salto: el catalán deja de ser requisito en la sanidad balear (26 sep 2023)", "prensa", "2023-09-26"],
+    upn: ["https://www.noticiasdenavarra.com/sociedad/2023/12/02/nuevo-varapalo-judicial-euskera-navarra-7594440.html", "Noticias de Navarra (EFE): la justicia estima un recurso de UPN contra la exigencia de euskera en una plaza municipal", "prensa", "2023-12-02"],
+    pnv: ["https://orain.eus/es/politica/2026/04/24/estas-son-las-posiciones-los-partidos-sobre-el-euskera-en-las-ope/", "Orain (EITB): propuestas de los partidos sobre el euskera en las OPE", "prensa", "2026-04-24"],
+    junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=137", "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137", "programa", "2023-07"],
   },
   J01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -1606,6 +1670,7 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
     comp: ["https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=8", "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 8", "programa", "2023-05"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 6", "programa", "2026-04"],
+    upc: ["https://www.ultimahora.es/noticias/nacional/2026/05/31/2640797/podemos-por-agotada-legislatura-este-gobierno-esta-enterrado.html", "Última Hora/Europa Press: Irene Montero (Podemos) pide derogar la Ley 15/97 (31 may 2026)", "prensa", "2026-05-31"],
   },
   J02: {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57", "Programa electoral de Vox de 2023, medida 109", "programa", "2023-07"],
@@ -1613,6 +1678,7 @@ export const SOURCES = {
     pod: ["https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html", "Redacción Médica, proposición de ley de Podemos, 01/04/2024", "parlamento", "2024-04-01"],
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35", "Programa electoral del BNG para las generales de 2023, p. 35", "programa", "2023-07"],
+    bildu: ["https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/", "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024", "prensa", "2024-04-07"],
   },
   J03: {
     pp: ["https://www.redaccionmedica.com/profesionales/20250524/la-exclusividad-de-las-jefaturas-medicas-entra-en-la-politica-bloques/243693_0.amp.html", "Redacción Médica, consejeros de Sanidad del PP sobre la exclusividad, 24/05/2025", "prensa", "2025-05-24"],
@@ -1656,7 +1722,8 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     upn: ["https://www.infobae.com/america/agencias/2026/02/18/el-pp-se-abstiene-en-una-propuesta-de-vox-que-incluia-el-rechazo-al-acuerdo-ue-mercosur-y-de-marruecos/", "Infobae, El PP se abstiene en una propuesta de Vox que incluía el rechazo al acuerdo UE-Mercosur, 18-02-2026", "parlamento", "2026-02-17"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
-    ccpc: ["https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/", "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026", "declaracion", "2026-01-27"]
+    ccpc: ["https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/", "RTVC, CC anuncia una estrategia contra el acuerdo de Mercosur, 27/01/2026", "declaracion", "2026-01-27"],
+    pacma: ["https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=57", "Programa de PACMA para las europeas de 2024, p. 57", "programa", "2024-05"],
   },
   K02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=67", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1683,7 +1750,8 @@ export const SOURCES = {
     bildu: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
     upn: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España, La desprotección del lobo al norte del Duero será efectiva desde hoy, 03-04-2025", "parlamento", "2025-03-20"],
     bng: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
-    ccpc: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"]
+    ccpc: ["https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/", "Forbes España (Europa Press), votación sobre el lobo en el Congreso, 03/04/2025", "parlamento", "2025-04-03"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=16", "Programa de PACMA para las generales de 2023, p. 16", "programa", "2023-07"],
   },
   K05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1692,6 +1760,7 @@ export const SOURCES = {
     pp: ["https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html", "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas", "parlamento", "2025-03-05"],
     vox: ["https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html", "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas", "parlamento", "2025-03-05"],
     soria: ["https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html", "El Español (Ical): las Cortes de Castilla y León rechazan una moratoria de seis años a las macrogranjas", "parlamento", "2025-03-05"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=36", "Programa de PACMA para las generales de 2023, pp. 35-36 («No a las macrogranjas»)", "programa", "2023-07"],
   },
   K06: {
     psoe: ["https://www.menorca.info/actualidad/nacional/2025/12/13/2530867/acuerda-posibilidades-pesca-para-2026-143-dias-capturas-mediterraneo.html", "Declaraciones de Luis Planas tras el Consejo de Pesca de la UE (13 de diciembre de 2025)", "declaracion", "2025-12-13"],
@@ -1702,7 +1771,8 @@ export const SOURCES = {
   K07: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=70", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150", "Programa electoral de Vox de 2023", "programa", "2023-07"],
+    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=14", "Programa de PACMA para las generales de 2023, p. 14", "programa", "2023-07"],
   },
   K08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=63", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1724,7 +1794,8 @@ export const SOURCES = {
     upn: ["https://www.infobae.com/espana/agencias/2026/04/30/el-blindaje-constitucional-del-aborto-sigue-su-tramite-tras-superar-los-vetos-de-pp-y-vox/", "Infobae (Europa Press), El blindaje constitucional del aborto sigue su trámite, 30-04-2026", "parlamento", "2026-04-30"],
     bng: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
     ccpc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
-    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"]
+    comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación conjunta de las enmiendas de totalidad de PP y Vox a la reforma del artículo 43 de la Constitución (aborto), 30/04/2026", "parlamento", "2026-04-30"],
+    upc: ["https://www.publico.es/politica/congreso/sumar-propone-reforma-articulo-43-constitucion-blindar-derecho-aborto.html", "Público: Sumar propone reformar el artículo 43 para blindar el aborto (27 feb 2025)", "prensa", "2025-02-27"],
   },
   L02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1748,7 +1819,9 @@ export const SOURCES = {
     pod: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023, de 28 de febrero (ley trans)", "gobierno", "2023-02-28"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     pnv: ["https://www.noticiasdenavarra.com/sociedad/2023/02/16/congreso-aprueba-definitivamente-ley-trans-6453535.html", "Noticias de Navarra, El Congreso aprueba definitivamente la ley trans, 16-02-2023", "parlamento", "2023-02-16"],
-    bng: ["https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html", "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022", "parlamento", "2022-12-22"]
+    bng: ["https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html", "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022", "parlamento", "2022-12-22"],
+    upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116", "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 116", "programa", "2023-07"],
+    comp: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 116", "programa", "2023-07"],
   },
   L04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1756,6 +1829,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     pod: ["https://www.eldebate.com/sociedad/20230329/psoe-podemos-contra-vientres-alquiler-mientras-pp-no-define-posicion_104319.html", "El Debate, declaraciones de Irene Montero, 29/03/2023", "declaracion", "2023-03-29"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=6", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 6", "programa", "2019-11"],
+    fa: ["https://www.lamarea.com/2025/04/30/dossier-alquiler-vientres-espana/", "La Marea: dossier sobre gestación subrogada en España (posición de Sumar)", "prensa", "2025-04-30"],
   },
   L05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1908,6 +1982,7 @@ export const JUSTIF = {
     ccpc: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     comp: "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     adel: "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
+    upc: "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas.",
   },
   B02: {
     psoe: "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
@@ -1938,6 +2013,7 @@ export const JUSTIF = {
     ccpc: "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
     comp: "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
     d21: "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada.",
+    fa: "Los partidos del Frente Amplio rechazaron la ley del PP que proponía desalojar a los okupas en 24 horas.",
   },
   B04: {
     pp: "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal.",
@@ -1945,7 +2021,8 @@ export const JUSTIF = {
     fa: "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
     pod: "Apoyó el decreto que prohibía desahuciar a personas vulnerables y criticó su caída en el Congreso.",
     erc: "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables.",
-    junts: "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no»."
+    junts: "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
+    bildu: "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
   },
   B05: {
     psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
@@ -1955,6 +2032,11 @@ export const JUSTIF = {
     ccpc: "Su Gobierno impulsó y aprobó la ley canaria que congela nuevas viviendas vacacionales hasta que cada ayuntamiento las ordene en su planeamiento.",
     adel: "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
     fa: "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",
+    upc: "El programa de Nueva Canarias, socio de UPC, propone impedir que crezca el alquiler vacacional en las zonas gentrificadas.",
+    drago: "Drago Canarias propone paralizar las nuevas licencias de vivienda vacacional y fijar cupos por zonas.",
+    comp: "Una iniciativa de Compromís en el Congreso pide que las administraciones locales puedan limitar los pisos turísticos en zonas sensibles.",
+    mes: "La ley turística impulsada por el líder de MÉS en el Govern permite a los ayuntamientos ser más restrictivos con el alquiler turístico.",
+    bildu: "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda.",
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
@@ -1969,7 +2051,10 @@ export const JUSTIF = {
     vox: "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda.",
     fa: "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto.",
     pod: "Propuso en el Congreso una reforma legal para limitar la compra de viviendas por no residentes.",
-    erc: "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes."
+    erc: "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes.",
+    upc: "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
+    drago: "Drago Canarias propone limitar la venta de viviendas a extranjeros, una medida más restrictiva que un impuesto.",
+    mes: "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda.",
   },
   B08: {
     psoe: "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
@@ -1982,6 +2067,9 @@ export const JUSTIF = {
     bng: "El BNG defiende ampliar el parque público de vivienda, gestionado desde Galicia, con suelo y viviendas estatales.",
     cha: "CHA defiende ampliar el parque público de vivienda en alquiler.",
     adel: "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler.",
+    upc: "El programa de Sumar, socio de UPC, propone crear un parque público de dos millones de viviendas sociales en alquiler.",
+    mes: "El programa conjunto con el que concurrió MÉS en 2023 propone un parque público de dos millones de viviendas sociales en alquiler.",
+    bildu: "EH Bildu propone dedicar los recursos públicos a crear un parque de vivienda pública en alquiler, gestionado desde Euskadi.",
   },
   B09: {
     psoe: "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
@@ -1993,7 +2081,8 @@ export const JUSTIF = {
   },
   C01: {
     pod: "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
-    bng: "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado."
+    bng: "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
+    bildu: "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación.",
   },
   C02: {
     psoe: "Su Gobierno propuso en 2026 un modelo que da más recursos a las comunidades por debajo de la media por habitante.",
@@ -2016,6 +2105,10 @@ export const JUSTIF = {
     d21: "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
     comp: "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
     upn: "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales.",
+    ccpc: "Coalición Canaria defiende el máximo nivel de autogobierno y competencias para Canarias, no su recentralización.",
+    upc: "Nueva Canarias, socio de UPC, defiende ampliar el autogobierno con más traspasos, no devolver competencias al Estado.",
+    cha: "CHA reclama el máximo techo competencial para Aragón y más traspasos del Estado, no su recentralización.",
+    gbai: "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
   },
   C04: {
     psoe: "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada.",
@@ -2025,6 +2118,7 @@ export const JUSTIF = {
     erc: "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
     pp: "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
     cha: "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
+    comp: "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
   },
   C05: {
     psoe: "Rechaza el referéndum de autodeterminación: frente a la propuesta de Junts, ofrece desarrollar el Estatut de 2006.",
@@ -2077,6 +2171,7 @@ export const JUSTIF = {
     bng: "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
     d21: "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
     pod: "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
+    pacma: "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
   },
   D02: {
     pp: "Estimación: el PP no ha propuesto desbloquear las listas; sus propuestas electorales se centran en premiar a la lista más votada.",
@@ -2112,6 +2207,7 @@ export const JUSTIF = {
     bng: "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
     ccpc: "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso, en mayo de 2024.",
     d21: "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
+    comp: "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán.",
   },
   D05: {
     vox: "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
@@ -2136,6 +2232,8 @@ export const JUSTIF = {
     comp: "Su programa propone una consulta para que la ciudadanía elija entre monarquía y república.",
     bildu: "EH Bildu ha pedido en el Congreso que se celebre un referéndum sobre la Jefatura del Estado.",
     cha: "CHA propone convocar referéndums para avanzar hacia una república federal.",
+    bng: "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
+    upn: "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
   },
   D08: {
     pp: "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
@@ -2239,6 +2337,8 @@ export const JUSTIF = {
     junts: "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
     gbai: "Geroa Bai votó contra sustituir el concepto de violencia sobre la mujer por el de violencia intrafamiliar.",
     adel: "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
+    upc: "El programa de Sumar, socio de UPC, propone reforzar y ampliar el marco específico de violencia de género, no sustituirlo.",
+    comp: "El programa conjunto con el que concurrió Compromís en 2023 propone reforzar el marco de violencia de género, no sustituirlo.",
   },
   E09: {
     psoe: "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
@@ -2250,6 +2350,7 @@ export const JUSTIF = {
     pnv: "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
     upn: "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
     bildu: "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
+    comp: "Compromís propone una regulación no penal de todas las drogas, que incluye el cannabis.",
   },
   F01: {
     salf: "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
@@ -2290,6 +2391,7 @@ export const JUSTIF = {
     comp: "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     adel: "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
     fa: "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
+    upc: "Nueva Canarias, socio de UPC, rechazó en el Parlamento canario la propuesta de Vox de priorizar a los nacionales en ayudas y servicios.",
   },
   F04: {
     psoe: "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
@@ -2309,13 +2411,15 @@ export const JUSTIF = {
     pnv: "Pide una distribución equitativa de los menores migrantes no acompañados entre las comunidades autónomas.",
     bildu: "Apoyó el decreto para repartir a los menores migrantes entre comunidades.",
     ccpc: "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes.",
+    upc: "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes.",
   },
   F06: {
     psoe: "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
     pp: "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
     vox: "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
     fa: "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
-    erc: "El programa propone una prestación universal por crianza de hijos."
+    erc: "El programa propone una prestación universal por crianza de hijos.",
+    pod: "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza.",
   },
   F07: {
     psoe: "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
@@ -2330,6 +2434,8 @@ export const JUSTIF = {
     fa: "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
     erc: "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos.",
     bng: "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
+    bildu: "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
+    pod: "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
   },
   F09: {
     psoe: "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
@@ -2343,7 +2449,8 @@ export const JUSTIF = {
     upn: "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
     bng: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     ccpc: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
-    comp: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares."
+    comp: "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    pacma: "PACMA considera insostenible un modelo energético basado en los combustibles fósiles y la energía nuclear.",
   },
   G02: {
     psoe: "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
@@ -2371,6 +2478,7 @@ export const JUSTIF = {
     bng: "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     existe: "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
     cha: "CHA rechaza los trasvases de agua entre cuencas, en especial el del Ebro.",
+    pod: "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura.",
   },
   G05: {
     psoe: "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
@@ -2427,6 +2535,9 @@ export const JUSTIF = {
     ccpc: "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
     comp: "Votó a favor de la moción que pedía revertir el aumento del gasto militar.",
     adel: "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
+    upc: "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
+    cha: "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
+    mes: "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar.",
   },
   H02: {
     psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
@@ -2458,6 +2569,9 @@ export const JUSTIF = {
     bng: "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     ccpc: "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso.",
     adel: "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS.",
+    upc: "Sumar y Podemos, integrantes de UPC, votaron a favor de convalidar el decreto de embargo de armas a Israel.",
+    comp: "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye a la diputada de Compromís.",
+    cha: "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye al diputado de CHA en el grupo Sumar.",
   },
   H05: {
     psoe: "En diciembre de 2025 su Gobierno reiteró el apoyo de 2022 al plan de autonomía marroquí como base para resolver el conflicto.",
@@ -2473,6 +2587,8 @@ export const JUSTIF = {
     cha: "CHA defiende un referéndum de autodeterminación para el pueblo saharaui.",
     adel: "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
     bildu: "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
+    upc: "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
+    drago: "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara.",
   },
   H06: {
     psoe: "Su programa de 2023 se compromete a seguir trabajando dentro de la OTAN por la paz y la seguridad.",
@@ -2506,7 +2622,15 @@ export const JUSTIF = {
     pp: "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
     vox: "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
     fa: "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
-    erc: "La ponencia critica externalizar fronteras con centros en terceros países."
+    erc: "La ponencia critica externalizar fronteras con centros en terceros países.",
+    upc: "El programa de Sumar, socio de UPC, propone acabar con los acuerdos de externalización de fronteras con terceros países.",
+    drago: "Drago Canarias critica el Pacto Europeo de Migración por convertir las fronteras en espacios de procesamiento y contención.",
+    comp: "El programa conjunto con el que concurrió Compromís en 2023 propone acabar con la externalización de fronteras.",
+    cha: "El programa conjunto con el que concurrió CHA en 2023 propone acabar con la externalización de fronteras.",
+    mes: "El programa conjunto con el que concurrió MÉS en 2023 propone acabar con la externalización de fronteras.",
+    pod: "Podemos rechaza la externalización de la política migratoria y de asilo de la UE a terceros países.",
+    bng: "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo.",
+    bildu: "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización.",
   },
   I01: {
     salf: "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
@@ -2516,6 +2640,8 @@ export const JUSTIF = {
     comp: "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan.",
     upn: "UPN defiende la enseñanza concertada y eliminar límites a los conciertos educativos.",
     adel: "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos.",
+    cha: "CHA propone eliminar progresivamente los conciertos educativos con centros privados.",
+    pnv: "El PNV propuso aumentar la financiación pública de la red concertada en los presupuestos vascos.",
   },
   I02: {
     psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
@@ -2547,6 +2673,9 @@ export const JUSTIF = {
     bildu: "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
     bng: "El programa propone una escuela pública gallega orientada a la normalización lingüística.",
     upn: "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
+    comp: "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
+    mes: "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
+    fa: "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
   },
   I06: {
     psoe: "Su programa de 2023 vincula la beca a la situación socioeconómica y critica que el PP endureciera los requisitos.",
@@ -2554,6 +2683,7 @@ export const JUSTIF = {
     fa: "Pidió en una proposición no de ley eliminar los mínimos académicos exigidos para no devolver las becas.",
     erc: "Estimación: ERC defiende becas ambiciosas sin barreras de acceso.",
     pp: "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas.",
+    pod: "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas.",
   },
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",
@@ -2576,6 +2706,10 @@ export const JUSTIF = {
     bildu: "EH Bildu votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
     bng: "El BNG votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
     upn: "UPN votó en contra de retirar a la tauromaquia su protección legal como patrimonio cultural.",
+    pacma: "PACMA promete derogar la ley que protege la tauromaquia como patrimonio cultural y defiende abolir los festejos taurinos.",
+    upc: "El programa de Nueva Canarias, socio de UPC, expresa su rechazo a la tauromaquia por considerarla cruenta.",
+    drago: "El programa conjunto con el que concurrió Drago en 2023 propone suprimir la financiación pública de los festejos taurinos.",
+    mes: "MÉS per Mallorca firmó en 2016 una proposición de ley para prohibir las corridas de toros en Baleares.",
   },
   I09: {
     psoe: "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear.",
@@ -2588,12 +2722,17 @@ export const JUSTIF = {
     comp: "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
     bng: "El BNG defiende que el personal de las administraciones en Galicia conozca el gallego.",
     gbai: "Geroa Bai apoya exigir el euskera como requisito en plazas de la Administración foral y ampliar la atención bilingüe.",
+    mes: "MÉS per Mallorca se opuso a suprimir el requisito de catalán para el personal de la sanidad pública balear.",
+    upn: "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
+    pnv: "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
+    junts: "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña.",
   },
   J01: {
     bildu: "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios.",
     bng: "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas.",
     comp: "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
     adel: "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
+    upc: "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública.",
   },
   J02: {
     vox: "Vox propone reducir las listas de espera reforzando los conciertos con la sanidad privada.",
@@ -2601,6 +2740,7 @@ export const JUSTIF = {
     pod: "Su proposición de ley de 2024 impide renovar los conciertos con hospitales privados vinculados al SNS.",
     erc: "La ponencia propone dejar de concertar con centros privados con ánimo de lucro.",
     bng: "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
+    bildu: "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
   },
   J03: {
     psoe: "Estimación: el Gobierno de coalición propuso exclusividad para jefes de servicio en el borrador del Estatuto Marco, pero el PSOE no ha fijado postura propia.",
@@ -2651,7 +2791,8 @@ export const JUSTIF = {
     erc: "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
     upn: "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
     bng: "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
-    ccpc: "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur."
+    ccpc: "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur.",
+    pacma: "PACMA se declara en contra de los tratados de libre comercio que debiliten las normas ambientales y sociales.",
   },
   K02: {
     psoe: "Su programa de 2023 promete reforzar el control de la Ley de la Cadena Alimentaria y vigilar costes y márgenes.",
@@ -2682,7 +2823,8 @@ export const JUSTIF = {
     bildu: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
     upn: "Votó a favor de desproteger al lobo al norte del Duero y en el resto de España.",
     bng: "Votó en contra de desproteger al lobo al norte del Duero.",
-    ccpc: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo."
+    ccpc: "Se abstuvo en las votaciones del Congreso que desprotegieron al lobo.",
+    pacma: "PACMA pide catalogar al lobo como especie en peligro de extinción y se opone a su caza.",
   },
   K05: {
     psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
@@ -2692,6 +2834,7 @@ export const JUSTIF = {
     pp: "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
     vox: "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
     soria: "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León.",
+    pacma: "Bajo el lema «No a las macrogranjas», PACMA propone limitar el tamaño de todas las explotaciones ganaderas.",
   },
   K06: {
     psoe: "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
@@ -2705,7 +2848,8 @@ export const JUSTIF = {
     psoe: "Su programa de 2023 vincula la caza a la sostenibilidad del mundo rural, pero no propone protegerla por ley.",
     pp: "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural.",
     vox: "El programa de Vox defiende la caza como actividad esencial para el medio rural y propone una licencia única.",
-    fa: "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley."
+    fa: "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley.",
+    pacma: "PACMA se opone a la caza y niega que sea necesaria para la gestión del medio.",
   },
   K08: {
     psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
@@ -2720,7 +2864,8 @@ export const JUSTIF = {
     upn: "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó.",
     bng: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
     ccpc: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
-    comp: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto."
+    comp: "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
+    upc: "Sumar, integrante de UPC, propuso reformar la Constitución para incluir el derecho al aborto.",
   },
   L02: {
     psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
@@ -2744,7 +2889,9 @@ export const JUSTIF = {
     pod: "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
     erc: "El programa defiende la autodeterminación de género sin patologizar.",
     pnv: "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
-    bng: "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans."
+    bng: "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
+    upc: "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
+    comp: "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
   },
   L04: {
     psoe: "Su programa de 2023 rechaza los «vientres de alquiler» y niega que ser padre o madre sea un derecho.",
@@ -2753,6 +2900,7 @@ export const JUSTIF = {
     pod: "Irene Montero recordó que la ley reconoce la gestación subrogada como una forma de violencia contra las mujeres.",
     erc: "Estimación: ERC no ha propuesto legalizar la gestación subrogada.",
     d21: "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
+    fa: "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada.",
   },
   L05: {
     psoe: "Su programa busca reducir ventajas de la Iglesia (autofinanciación, fiscalidad) dentro de los acuerdos vigentes, sin revisarlos.",
