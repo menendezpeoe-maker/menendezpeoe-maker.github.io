@@ -1,0 +1,525 @@
+[
+ {
+  "id": "F06/pod",
+  "estado": "fuente",
+  "url": "https://diariodeavisos.elespanol.com/2019/04/podemos-propone-una-ayuda-de-entre-1-200e-y-2-000e-por-hijo-a-cargo/",
+  "etiqueta": "Diario de Avisos (EFE): propuesta de Podemos de prestación universal por hijo a cargo",
+  "tipo": "prensa",
+  "fecha": "2019-04-15",
+  "cita": "se cree una prestación por hijo a cargo de 1.200 euros con carácter universal",
+  "justificacion": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza."
+ },
+ {
+  "id": "H09/pod",
+  "estado": "fuente",
+  "url": "https://www.bolsamania.com/noticias/sociedad/podemos-aboga-por-cambiar-las-politicas-migratorias-en-la-ue-pagamos-a-otros-para-que-vulneren-los-ddhh-por-nosotros--2657551.html",
+  "etiqueta": "Bolsamanía (Europa Press): informe de Podemos «Externalización de fronteras»",
+  "tipo": "prensa",
+  "fecha": "2017-05-05",
+  "cita": "pagar a otros países para que vulneren los derechos humanos",
+  "justificacion": "Podemos rechaza la externalización de la política migratoria y de asilo de la UE a terceros países."
+ },
+ {
+  "id": "K07/pod",
+  "estado": "intensidad",
+  "url": "https://www.vozpopuli.com/espana/podemos-avisa-al-psoe-sacar-al-perro-de-caza-de-la-ley-de-proteccion-es-inaceptable.html",
+  "etiqueta": "Vozpópuli: Podemos rechaza excluir a los perros de caza de la ley de protección animal",
+  "tipo": "prensa",
+  "fecha": "2022-09",
+  "cita": "tan inaceptable como aumentar el gasto militar en 2023",
+  "justificacion": "Podemos se opuso a dar un trato especial a la caza en la ley animal; no consta un rechazo expreso a protegerla por ley.",
+  "postura_respaldada": 2
+ },
+ {
+  "id": "I09/upn",
+  "estado": "fuente",
+  "url": "https://www.noticiasdenavarra.com/sociedad/2023/12/02/nuevo-varapalo-judicial-euskera-navarra-7594440.html",
+  "etiqueta": "Noticias de Navarra (EFE): la justicia estima un recurso de UPN contra la exigencia de euskera en una plaza municipal",
+  "tipo": "prensa",
+  "fecha": "2023-12-02",
+  "cita": "La justicia estima el recurso de UPN contra la exigencia de euskera para un operario de obras en Zizur Mayor",
+  "justificacion": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas."
+ },
+ {
+  "id": "I09/pnv",
+  "estado": "fuente",
+  "url": "https://orain.eus/es/politica/2026/04/24/estas-son-las-posiciones-los-partidos-sobre-el-euskera-en-las-ope/",
+  "etiqueta": "Orain (EITB): propuestas de los partidos sobre el euskera en las OPE",
+  "tipo": "prensa",
+  "fecha": "2026-04-24",
+  "cita": "PNV y EH Bildu han presentado sendas propuestas en el Parlamento Vasco para blindar el euskera en los perfiles lingüísticos.",
+  "justificacion": "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera."
+ },
+ {
+  "id": "I01/pnv",
+  "estado": "fuente",
+  "url": "https://www.elsaltodiario.com/pais-vasco/ofrece-pp-ciudadanos-mas-financiacion-educacion-concertada-presupuestos",
+  "etiqueta": "El Salto: el PNV ofrece más financiación para la concertada en los presupuestos vascos de 2023",
+  "tipo": "prensa",
+  "fecha": "2022-11-16",
+  "cita": "PNV ofrece al PP y Ciudadanos más financiación para la educación concertada en los presupuestos",
+  "justificacion": "El PNV propuso aumentar la financiación pública de la red concertada en los presupuestos vascos."
+ },
+ {
+  "id": "C01/pnv",
+  "estado": "intensidad",
+  "url": "https://eaj-pnv.eus/es/adjuntos-documentos/21449/pdf/2024-10-06_imanol-pradalesi-elkarrizketa-la-vangua",
+  "etiqueta": "Entrevista a Imanol Pradales (EAJ-PNV) en La Vanguardia, publicada por el partido",
+  "tipo": "declaracion",
+  "fecha": "2024-10-06",
+  "cita": "lo observo con absoluto respeto. Respetaré en todo momento los acuerdos que en materia de financiación alcance Catalunya con el Estado español.",
+  "justificacion": "El PNV respeta el debate sobre un concierto catalán, pero no consta un apoyo expreso a esa propuesta.",
+  "postura_respaldada": 3
+ },
+ {
+  "id": "F05/junts",
+  "estado": "fuente",
+  "url": "https://www.deia.eus/politica/2024/07/23/congreso-rechaza-tramitar-reforma-legal-8515257.html",
+  "etiqueta": "Deia (EFE): el Congreso rechaza tramitar la reforma para el reparto de menores migrantes",
+  "tipo": "parlamento",
+  "fecha": "2024-07-23",
+  "cita": "en cuenta sus exigencias, ni de Junts",
+  "justificacion": "Junts votó contra tramitar el reparto obligatorio de menores; en 2025 apoyó un decreto pactado que limita la acogida en Cataluña."
+ },
+ {
+  "id": "I09/junts",
+  "estado": "fuente",
+  "url": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=137",
+  "etiqueta": "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "establir el català com a requisit per treballar en la justícia a Catalunya",
+  "justificacion": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña."
+ },
+ {
+  "id": "J08/junts",
+  "estado": "fuente",
+  "url": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=18",
+  "etiqueta": "Programa electoral de Junts per Catalunya para las generales de 2023, p. 18",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "En aquest afany de laminar l’autogovern català i recentralitzar competències el govern de l’estat",
+  "justificacion": "Junts rechaza que el Estado recentralice competencias autonómicas; el texto no menciona expresamente la sanidad."
+ },
+ {
+  "id": "J08/pnv",
+  "estado": "fuente",
+  "url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=6",
+  "etiqueta": "Programa electoral de EAJ-PNV para las generales de 2023, p. 6",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "EAJ-PNV se seguirá oponiendo frontalmente a la visión y tentación recentralizadora existente que pueda afectar a Euskadi.",
+  "justificacion": "El PNV se opone a las propuestas centralistas en materia social que afecten al autogobierno vasco."
+ },
+ {
+  "id": "J08/bildu",
+  "estado": "fuente",
+  "url": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=16",
+  "etiqueta": "Compromiso electoral de EH Bildu para las generales de 2023, p. 16",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "defenderemos nuestro autogobierno y todas sus capacidades de cualquier invasión o intento de recentralización de nuestros instrumentos propios",
+  "justificacion": "EH Bildu rechaza cualquier recentralización de competencias autonómicas, sin mencionar expresamente la sanidad."
+ },
+ {
+  "id": "D07/bng",
+  "estado": "fuente",
+  "url": "https://www.elespanol.com/treintayseis/actualidad/galicia/20220521/decenas-personas-protestan-bng-sanxenxo-monarquia/674182765_0.html",
+  "etiqueta": "El Español: protesta del BNG contra la monarquía en Sanxenxo",
+  "tipo": "prensa",
+  "fecha": "2022-05-21",
+  "cita": "en vez de ser elegida por el conjunto de los ciudadanos es hereditaria, vitalicia y designada por Franco",
+  "justificacion": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano."
+ },
+ {
+  "id": "H09/bng",
+  "estado": "fuente",
+  "url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20",
+  "etiqueta": "Programa electoral del BNG para las generales de 2023, p. 20",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Peche dos Centros de Internamento para Estranxeiros (CIEs) no Estado español e fin das deportacións",
+  "justificacion": "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo."
+ },
+ {
+  "id": "I07/bng",
+  "estado": "intensidad",
+  "url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=26",
+  "etiqueta": "Programa electoral del BNG para las generales de 2023, p. 26",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "A creación do servizo de igualdade de xénero e diversidade sexual a cargo dunha profesional con formación e dedicación específica en todos os centros de ensino.",
+  "justificacion": "El BNG propone educación en igualdad y diversidad sexual en todos los centros; no menciona el permiso de los padres.",
+  "postura_respaldada": 4
+ },
+ {
+  "id": "D07/junts",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D09/junts",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D09/bng",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "B04/bildu",
+  "estado": "fuente",
+  "url": "https://www.deia.eus/politica/2025/12/22/gobierno-pacta-eh-bildu-prorrogar-10501301.html",
+  "etiqueta": "Deia: EH Bildu pacta con el Gobierno prorrogar en 2026 la prohibición de desahucios de familias vulnerables",
+  "tipo": "prensa",
+  "fecha": "2025-12-22",
+  "cita": "Se prolonga un año más la prohibición de desahucios para personas vulnerables sin alternativa habitacional",
+  "justificacion": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026."
+ },
+ {
+  "id": "C01/bildu",
+  "estado": "fuente",
+  "url": "https://www.que.es/2024/08/26/otegi-insta-al-respaldo-gubernamental/",
+  "etiqueta": "Qué!: Otegi (EH Bildu) defiende la financiación singular de Cataluña",
+  "tipo": "declaracion",
+  "fecha": "2024-08-26",
+  "cita": "Otegi ha afirmado que la financiación singular de Cataluña es \"absolutamente legítima\"",
+  "justificacion": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación."
+ },
+ {
+  "id": "B05/bildu",
+  "estado": "fuente",
+  "url": "https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/",
+  "etiqueta": "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025",
+  "tipo": "prensa",
+  "fecha": "2024-10-16",
+  "cita": "topar los alquileres, movilizar la vivienda vacía, poner tope a los pisos turísticos",
+  "justificacion": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda."
+ },
+ {
+  "id": "B08/bildu",
+  "estado": "fuente",
+  "url": "https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/",
+  "etiqueta": "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025",
+  "tipo": "prensa",
+  "fecha": "2024-10-16",
+  "cita": "destinar todos los recursos públicos a dotarnos de un parque de vivienda público que se disponga al mercado en forma de alquiler",
+  "justificacion": "EH Bildu propone dedicar los recursos públicos a crear un parque de vivienda pública en alquiler, gestionado desde Euskadi."
+ },
+ {
+  "id": "F08/bildu",
+  "estado": "fuente",
+  "url": "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
+  "etiqueta": "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024",
+  "tipo": "prensa",
+  "fecha": "2024-04-07",
+  "cita": "institucionalizar el derecho universal a los cuidados",
+  "justificacion": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones."
+ },
+ {
+  "id": "J02/bildu",
+  "estado": "fuente",
+  "url": "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
+  "etiqueta": "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024",
+  "tipo": "prensa",
+  "fecha": "2024-04-07",
+  "cita": "También publificarán los servicios privatizados en Osakidetza.",
+  "justificacion": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada."
+ },
+ {
+  "id": "H09/bildu",
+  "estado": "fuente",
+  "url": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
+  "etiqueta": "Compromiso electoral de EH Bildu para las generales de 2023, p. 11",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "medidas que garanticen el asilo y la asistencia para todas ellas",
+  "justificacion": "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización."
+ },
+ {
+  "id": "C03/gbai",
+  "estado": "fuente",
+  "url": "https://orain.eus/es/politica/2013/06/27/reforma-educativa--geroa-bai-esta-lomce/",
+  "etiqueta": "Orain (EFE): Barkos traslada a Wert la oposición de Geroa Bai a la LOMCE",
+  "tipo": "prensa",
+  "fecha": "2013-06-27",
+  "cita": "la oposición de Geroa Bai a la reforma educativa recogida en la LOMCE",
+  "justificacion": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación."
+ },
+ {
+  "id": "B03/fa",
+  "estado": "fuente",
+  "url": "https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular",
+  "etiqueta": "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)",
+  "tipo": "parlamento",
+  "fecha": "2022-11-29",
+  "cita": "Desde Unidas Podemos creen que la proposición del Grupo Popular forma parte del “espectáculo” de la derecha política",
+  "justificacion": "Los partidos del Frente Amplio rechazaron la ley del PP que proponía desalojar a los okupas en 24 horas."
+ },
+ {
+  "id": "L04/fa",
+  "estado": "fuente",
+  "url": "https://www.lamarea.com/2025/04/30/dossier-alquiler-vientres-espana/",
+  "etiqueta": "La Marea: dossier sobre gestación subrogada en España (posición de Sumar)",
+  "tipo": "prensa",
+  "fecha": "2025-04-30",
+  "cita": "PSOE y Sumar, ambos contrarios a los vientres de alquiler",
+  "justificacion": "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada."
+ },
+ {
+  "id": "I05/fa",
+  "estado": "fuente",
+  "url": "https://www.eldiario.es/catalunya/justicia-europea-descarta-25-castellano-vulnere-derechos-partidarios-inmersion-catalan_1_13314846.html",
+  "etiqueta": "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula",
+  "tipo": "prensa",
+  "fecha": "2026-06-18",
+  "cita": "del Parlament (PSC, Junts, ERC y Comuns) para una normativa",
+  "justificacion": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña."
+ },
+ {
+  "id": "K01/bildu",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "A10/bildu",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "F09/bildu",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "H09/adel",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "L01/adel",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C06/pnv",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "F08/pod",
+  "estado": "fuente",
+  "url": "https://www.menorca.info/actualidad/nacional/2022/11/23/1834329/cualquiera-diga-pueden-garantizar-derechos-sociales-bajando-impuestos-ricos-miente.html",
+  "etiqueta": "Menorca.info (Europa Press): Ione Belarra (Podemos) sobre dependencia e impuestos en el Congreso",
+  "tipo": "declaracion",
+  "fecha": "2022-11-23",
+  "cita": "consolidar un sistema de cuidados de larga duración a la altura de los grandes pilares del bienestar",
+  "justificacion": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos."
+ },
+ {
+  "id": "G04/pod",
+  "estado": "fuente",
+  "url": "https://www.eldiario.es/castilla-la-mancha/castilla-la-mancha-trasvase-tajo-segura-millones_1_1901844.html",
+  "etiqueta": "elDiario.es: Podemos Castilla-La Mancha pide el fin de los trasvases",
+  "tipo": "prensa",
+  "fecha": "2018-10-09",
+  "cita": "Trasvases ni al Levante ni a las macrogranjas.",
+  "justificacion": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura."
+ },
+ {
+  "id": "I06/pod",
+  "estado": "fuente",
+  "url": "https://www.moncloa.com/2020/05/20/nuevas-becas-castells-169951/",
+  "etiqueta": "Moncloa.com: reforma de becas del ministro Castells (cuota de Unidas Podemos), 2020",
+  "tipo": "prensa",
+  "fecha": "2020-05-20",
+  "cita": "La voluntad de Unidas Podemos siempre ha sido facilitar el acceso a la enseñanza superior a todo aquel que lo desee.",
+  "justificacion": "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas."
+ },
+ {
+  "id": "K08/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D07/upn",
+  "estado": "fuente",
+  "url": "https://www.vozpopuli.com/espana/senado-aprueba-iniciativa-respaldo-felipe-vi-monarquia-rechazo-socios-gobierno.html",
+  "etiqueta": "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN",
+  "tipo": "parlamento",
+  "fecha": "2024-07-17",
+  "cita": "El PP, PSOE, Vox y UPN han aprobado este miércoles en el Pleno del Senado una iniciativa de respaldo a la monarquía parlamentaria",
+  "justificacion": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado."
+ },
+ {
+  "id": "C05/upn",
+  "estado": "fuente",
+  "url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=2",
+  "etiqueta": "Programa electoral de UPN para las generales de 2023, p. 2",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Navarra es permanente, no es transitoria.",
+  "justificacion": "UPN pide suprimir la disposición constitucional que prevé un referéndum para integrar Navarra en Euskadi."
+ },
+ {
+  "id": "A03/upn",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C04/upn",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "L05/upn",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "C03/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "D06/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "F04/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "F09/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "F09/fa",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "G03/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "I05/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ },
+ {
+  "id": "I09/pod",
+  "estado": "no_encontrada",
+  "url": "",
+  "etiqueta": "",
+  "tipo": "",
+  "fecha": "",
+  "cita": "",
+  "justificacion": ""
+ }
+]
