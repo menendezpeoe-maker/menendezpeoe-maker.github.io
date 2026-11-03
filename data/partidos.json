@@ -45,7 +45,8 @@
     "cat": "PSC-PSOE",
     "pv": "PSE-EE (PSOE)",
     "gal": "PSdeG-PSOE",
-    "nav": "PSN-PSOE"
+    "nav": "PSN-PSOE",
+    "bal": "PSIB-PSOE"
    },
    "desc": "Partido socialdemócrata, en el Gobierno desde 2018. Defiende ampliar el Estado del bienestar, intervenir el mercado de la vivienda y una España plural apoyada en acuerdos con fuerzas nacionalistas.",
    "props": [
@@ -243,7 +244,16 @@
     ]
    },
    "local": {
-    "and": "Frente Amplio por Andalucía"
+    "cat": "Comuns-Front Ampli",
+    "gal": "Frente Amplio-Fronte Ampla",
+    "nav": "Frente Amplio-Fronte Zabala",
+    "ast": "Frente Ampliu por Asturies",
+    "alava": "Frente Amplio-Fronte Zabala",
+    "cadiz": "Frente Amplio Andaluz",
+    "cordoba": "Frente Amplio Andaluz",
+    "granada": "Frente Amplio Andaluz",
+    "huelva": "Frente Amplio Andaluz",
+    "sevilla": "Frente Amplio Andaluz"
    },
    "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, heredera del espacio de Sumar, esta vez sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
    "props": [
@@ -618,6 +628,9 @@
      "nav"
     ]
    },
+   "local": {
+    "nav": "EH Bildu-ERC"
+   },
    "desc": "Izquierda abertzale con candidatura propia en Euskadi y Navarra. Defiende el derecho a decidir de Euskal Herria, políticas sociales de izquierda, el euskera y un marco vasco de relaciones laborales.",
    "props": [
     {
@@ -938,6 +951,9 @@
     "provinces": [
      "teruel"
     ]
+   },
+   "local": {
+    "ara": "Teruel Existe"
    },
    "desc": "Coalición de Teruel Existe y Aragón Existe. Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
    "props": [
