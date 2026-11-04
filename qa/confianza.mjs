@@ -23,7 +23,7 @@ console.log("Páginas de confianza");
 const c = await get("correcciones/");
 ok(/<meta name="robots" content="noindex">/.test(c.text) && /url=\/sobre\//.test(c.text) && !/<time /.test(c.text), "/correcciones/ ya no muestra el registro: aviso sin indexar que lleva a /sobre/");
 const s = await get("sobre/");
-ok(s.status === 200 && h1(s.text) && /«Dery»/.test(s.text) && /aportaciones voluntarias/.test(s.text) && !/href="\/correcciones\/"/.test(s.text), "/sobre/ explica quién lo hace (Dery), cómo se financia y cómo se corrige");
+ok(s.status === 200 && h1(s.text) && /«Dery»/.test(s.text) && /es un apodo/.test(s.text) && /propio dinero/.test(s.text) && !/inteligencia artificial/.test(s.text) && !/href="\/correcciones\/"/.test(s.text), "/sobre/ explica quién lo hace (Dery), cómo se financia y cómo se corrige");
 const priv = (process.env.PRIVATE_TERMS || "").split(",").filter(Boolean);
 ok(!priv.some((t) => (s.text + c.text).toLowerCase().includes(t.toLowerCase())), "ningún término privado en /sobre/ ni en /correcciones/");
 const m = await get("metodologia/");
