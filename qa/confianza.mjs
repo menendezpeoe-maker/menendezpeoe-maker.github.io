@@ -10,7 +10,7 @@ const h1 = (t) => (t.match(/<h1[\s>]/g) || []).length === 1;
 console.log("Justificaciones y avisos de error");
 const q = bank.questions.find((x) => Object.keys(x.why || {}).length > 3);
 const qp = await get(`preguntas/${q.id.toLowerCase()}/`);
-ok(qp.status === 200 && qp.text.includes("Por qué piensa así cada partido") && qp.text.includes("mailto:menendezpeoe@gmail.com?subject="), `la página de ${q.id} muestra las justificaciones y el enlace «¿Ves un error?»`);
+ok(qp.status === 200 && qp.text.includes("Por qué piensa así cada partido") && qp.text.includes("mailto:test29n.es@gmail.com?subject="), `la página de ${q.id} muestra las justificaciones y el enlace «¿Ves un error?»`);
 const pid = Object.keys(q.why)[0], party = await get(`partidos/${pid}/`);
 ok(party.text.includes(q.why[pid].replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]))) && party.text.includes("¿Ves un error?"), `la página del partido (${pid}) muestra su justificación y el aviso de error`);
 const norm = (t) => t.replace(/[.\s]+$/, "").toLowerCase();

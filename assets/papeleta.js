@@ -18,7 +18,7 @@ const DONATE = {
 // "test29n" para test29n.goatcounter.com. Vacío = no se cuenta nada. Solo cuenta en la dirección pública.
 const STATS = { goatcounter: "test29n" };
 // Titular de la web para el aviso legal. Vacío = no se muestra.
-const OWNER = { name: "Dery", email: "menendezpeoe@gmail.com" };
+const OWNER = { name: "Dery", email: "test29n.es@gmail.com" };
 const KEY = "papeleta29n.v2";
 const PREFS_KEY = "papeleta29n.prefs";
 const FRIEND_KEY = "papeleta29n.amigo";  // último resultado compartido que has abierto, para compararte (solo en tu navegador)
@@ -1826,7 +1826,7 @@ function renderSupport() {
 }
 
 // Por qué tiene cada partido su postura: justificación (why), nota de discrepancia (notes), fuente (src) y aviso de error
-const ERR_MAIL = "menendezpeoe@gmail.com";
+const ERR_MAIL = "test29n.es@gmail.com";
 const errLink = (q, pid) => `<a class="err-link" href="mailto:${ERR_MAIL}?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}&body=${encodeURIComponent(`Pregunta: ${q.text}\nPartido: ${P[pid].name}\n\n¿Qué está mal y qué fuente lo muestra?\n`)}">¿Ves un error?</a>`;
 const posWhy = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
 function posNotes(q, pids) {

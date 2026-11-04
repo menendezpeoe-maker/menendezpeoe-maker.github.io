@@ -13,7 +13,7 @@
 2. **Partidos regionales (decisión del titular pendiente):** el BOE recoge candidaturas regionales que no están en el test (Alhora, NEX, PREPAL, Convergents, Valencia Unida, Liberación Canaria, FIA…; lista en `plan/AUDITORIA-CANDIDATURAS.md`). El código admite posturas desconocidas («0»), pero cada postura necesita fuente: no añadir ninguno a medias. Ya aparecen, con su cabeza de lista, en la lista del BOE de cada página de provincia.
 3. **Programas del 29N:** a 3 nov, ninguno publicado. Cuando salga uno: `src/programas.src.mjs` (`publicados`, `comprobado`) y revisión de sus 107 posturas con el PDF como fuente `programa`.
 4. **Podemos:** 19 posturas documentadas siguen sin enlace (podemos.info da 403 y web.archive.org está bloqueado desde aquí): C03, C06, D01, D05, D06, F06, F08, F09, G03, G04, H09, I05, I06, I07, I09, K07, K08, L09 y F04. Se cierran con su programa del 29N.
-5. **Pendiente de decisión del titular:** correo público de contacto; preguntas para un asesor en `plan/LEGAL.md`. Kit de difusión listo en `plan/DIFUSION-CAMPANA.md` (lo completa S1b).
+5. **Pendiente de decisión del titular:** preguntas para un asesor en `plan/LEGAL.md`. (Correo público decidido el 4 nov: `test29n.es@gmail.com`.) Kit de difusión listo en `plan/DIFUSION-CAMPANA.md` (lo completa S1b).
 
 **Archivos clave y decisiones técnicas**
 - Mapa del código y grupos de pruebas: `CLAUDE.md`. Pruebas con `node qa/run.mjs <grupo|todas>` (21 baterías).
@@ -30,6 +30,12 @@
 - Ninguno conocido. (La lentitud de la portada en 3G se mejoró el 1 nov: ver la entrada «Velocidad de la portada».)
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
+
+## 4 nov 2026 · Correo público, debates y revisión de provincias (petición del titular)
+- **Correo público de contacto:** `test29n.es@gmail.com` (elegido por el titular el 4 nov). Sustituye al anterior en `pages.mjs`, `assets/papeleta.js` («¿Ves un error?», aviso legal, prensa, metodología, contacto de la ficha de prensa; 150 páginas) y en las pruebas `confianza`, `support` y `growth`. El correo de los commits (`CLAUDE.md`) no cambia.
+- **Debates (`src/debates.src.mjs`, fuente Euronews 22 oct):** cara a cara de Mediaset del 16 nov aceptado por los dos candidatos (hora y confirmación de la cadena por anunciar); debate a cuatro planteado para el 26 nov con la cadena sin acordar (RTVE y Atresmedia lo han planteado), redactado sin atribuir posiciones a ningún partido. La fila «Atresmedia» pasa a «Debate entre los principales candidatos» (`debate-candidatos`). Portavoces de RTVE del 23 nov sin cambios (propuesta).
+- **Programas del 29N:** ninguno publicado a 4 nov (búsqueda de PP, PSOE, Vox y Sumar; solo constan los responsables de elaborarlos). `comprobado` → 2026-11-04.
+- **Provincias:** comprobadas las 52 páginas (título, descripción, número de candidaturas, lista del BOE, migas de pan y sitemap): sin problemas.
 
 ## 4 nov 2026 · Mejora 7 · Letra del sistema con 3G o ahorro de datos (aprobada por el titular; publicada a las 01:30 como pidió)
 - **Cambio (`publish.mjs`, solo la portada):** un script en línea (con su firma en la CSP de esa página, sin abrir `script-src`) comprueba `navigator.connection`: con `saveData` o `effectiveType` slow-2g/2g/3g no se piden las tipografías propias (168 kB) y la web usa la letra del sistema, con las medidas de las letras de reserva de `papeleta.css`; en el resto, o sin JavaScript (`noscript`), todo igual. Safari y Firefox no exponen esa información y siguen cargando las tipografías.

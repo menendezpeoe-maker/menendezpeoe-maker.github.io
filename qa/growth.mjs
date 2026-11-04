@@ -95,7 +95,7 @@ console.log("Páginas por candidatura y por tema");
   const t = await page.innerText("main");
   ok(t.includes('<a href="https://test29n.es/"') && t.includes("boton-test29n.png") && (await (await fetch(SITE + "boton-test29n.png")).status) === 200, "prensa: código para enlazar el test y botón descargable");
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
-  ok(!priv.some((x) => t.toLowerCase().includes(x)) && t.includes("menendezpeoe@gmail.com"), `prensa: contacto público, sin datos privados${priv.length ? "" : " (sin PRIVATE_TERMS: solo se comprueba el contacto)"}`);
+  ok(!priv.some((x) => t.toLowerCase().includes(x)) && t.includes("test29n.es@gmail.com"), `prensa: contacto público, sin datos privados${priv.length ? "" : " (sin PRIVATE_TERMS: solo se comprueba el contacto)"}`);
   // Programas electorales: una fila por candidatura que se presenta, con su estado, y enlazada desde cada partido
   await page.goto(SITE + "programas/");
   const live = pd.order.filter((pid) => !pd.parties.find((p) => p.id === pid).out);

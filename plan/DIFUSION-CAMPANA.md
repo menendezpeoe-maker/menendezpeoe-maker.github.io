@@ -50,9 +50,9 @@ Pendiente para S1b: 20minutos, eldiario.es, El País, El HuffPost, Público, La 
 >
 > Un saludo,
 > Dery
-> [correo de contacto]
+> test29n.es@gmail.com
 
-Antes de enviarlo, pon tu correo de contacto en la última línea.
+El correo de contacto ya está puesto (el público de la web).
 
 ## 4. Pregunta del día (13–23 de noviembre)
 

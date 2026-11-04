@@ -78,7 +78,7 @@ let base;
   ok(m.includes("PayPal") && m.includes("Stripe") && m.includes("no recibe ni guarda datos de pago"), "aviso legal con las plataformas configuradas");
   ok(!(await page.innerText("#v-method")).includes("Versión y cambios"), "sin «Versión y cambios»");
   ok(m.includes("Stripe (Apple Pay)") && !m.includes("Bizum"), "solo nombra los métodos activos");
-  ok(m.includes("Responsable: Dery · Contacto: menendezpeoe@gmail.com"), "responsable y contacto públicos");
+  ok(m.includes("Responsable: Dery · Contacto: test29n.es@gmail.com"), "responsable y contacto públicos");
   const all = await page.content() + await page.evaluate(async () => (await (await fetch(document.querySelector("script[src*='papeleta.js']").src)).text()));
   // Los datos privados que no deben aparecer se pasan fuera del repositorio: PRIVATE_TERMS="término1,término2"
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((t) => t.trim().toLowerCase()).filter(Boolean);

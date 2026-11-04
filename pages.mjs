@@ -58,7 +58,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
     return "—";
   };
   const logo = (pid) => { const p = P[pid]; return `<span class="logo${p.ab.length >= 5 ? " long" : ""}" style="background:${p.color};color:${textOn(p.color)}" aria-hidden="true">${esc(p.ab)}</span>`; };
-  const errA = (q, pid) => `<a class="err-link" href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
+  const errA = (q, pid) => `<a class="err-link" href="mailto:test29n.es@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
   const whyOf = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
   // Programa del 29N de cada candidatura (src/programas.src.mjs): enlace oficial o «aún no publicado»
@@ -275,7 +275,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
 <li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
 <section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
 <p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (test29n.es)», y no des a entender que el Test 29N respalda tu uso.</p>
-<p class="small muted">Las posturas son una interpretación documentada de programas, votaciones y declaraciones, no un dato oficial de los partidos. Si ves un error, escribe a <a href="mailto:menendezpeoe@gmail.com">menendezpeoe@gmail.com</a>.</p></section>
+<p class="small muted">Las posturas son una interpretación documentada de programas, votaciones y declaraciones, no un dato oficial de los partidos. Si ves un error, escribe a <a href="mailto:test29n.es@gmail.com">test29n.es@gmail.com</a>.</p></section>
 ${method}`
   });
 
@@ -500,7 +500,7 @@ ${cta("O responde el test completo")}`
 <section aria-labelledby="h-porque"><h2 class="h2" id="h-porque">Por qué existe</h2><p>Porque es difícil saber qué propone cada partido en cada tema. El test reúne las posturas de las candidaturas, explica el contexto de cada pregunta de forma neutral y enlaza las fuentes para que cualquiera pueda comprobarlas.</p></section>
 <section aria-labelledby="h-dinero"><h2 class="h2" id="h-dinero">Cómo se financia</h2><p>Es gratuito y no tiene publicidad. Los gastos los cubre quien lo hace, con la ayuda de las aportaciones voluntarias de quien quiera apoyarlo. Aportar es opcional y no cambia ningún resultado. No recibe dinero de partidos ni de instituciones.</p></section>
 <section aria-labelledby="h-indep"><h2 class="h2" id="h-indep">Independencia y privacidad</h2><ul class="dots"><li>Las mismas reglas para todas las candidaturas: posturas de 1 a 5 basadas en programas, votaciones, leyes y declaraciones, marcadas como «estimadas» cuando no hay una fuente directa.</li><li>Sin registro ni cookies. Tus respuestas se quedan en tu navegador; el contador de visitas no registra lo que respondes.</li><li>No es una encuesta ni una recomendación de voto.</li></ul></section>
-<section aria-labelledby="h-corr"><h2 class="h2" id="h-corr">Cómo se corrigen los errores</h2><p>Cada postura tiene un enlace «¿Ves un error?» que abre un correo con la pregunta y el partido. Cada aviso se revisa con fuentes y, si hay que cambiar algo, se corrige la postura y su fuente. Contacto: <a href="mailto:menendezpeoe@gmail.com?subject=${encodeURIComponent("Test 29N")}">escribe un correo</a>.</p>
+<section aria-labelledby="h-corr"><h2 class="h2" id="h-corr">Cómo se corrigen los errores</h2><p>Cada postura tiene un enlace «¿Ves un error?» que abre un correo con la pregunta y el partido. Cada aviso se revisa con fuentes y, si hay que cambiar algo, se corrige la postura y su fuente. Contacto: <a href="mailto:test29n.es@gmail.com?subject=${encodeURIComponent("Test 29N")}">escribe un correo</a>.</p>
 <p class="small muted">Más detalles en la <a href="/metodologia/">metodología</a> y en la página de <a href="/prensa/">prensa</a>.</p></section>`
   });
   const M = METH, pN = (pid) => esc(P[pid]?.name || pid);
