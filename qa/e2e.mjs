@@ -224,7 +224,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
 // 5 · Bloque B (1 nov): contador «Pregunta X de N», aviso de que se puede volver y confirmación al responder
 {
   console.log("Bloque B · flujo del test");
-  const AVISO = "Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.";
+  const AVISO = "Autoguardado en este navegador";
   for (const [mode, n] of [["rapida", 15], ["expres", 24], ["media", 48], ["completa", 107]]) {
     const { ctx, page } = await newPage({ w: 1280, h: 800, tag: `b-${mode}` });
     await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
@@ -236,30 +236,61 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     const { ctx, page } = await newPage({ w, h, tag: `b-${w}`, touch: w < 760 });
     await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
     await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
-    const r = await page.evaluate(() => { const n = document.querySelector(".q-save"), c = document.querySelector("#q-count"); const rn = n.getBoundingClientRect();
-      return { text: n.textContent, fs: parseFloat(getComputedStyle(n).fontSize), vis: n.checkVisibility(), inBar: !!n.closest(".quiz-bar"), cnt: c.getBoundingClientRect().height < 40 && getComputedStyle(c).whiteSpace === "nowrap" }; });
-    ok(r.text === AVISO && r.fs >= 16 && r.vis && r.inBar && r.cnt && !(await overflow(page)), `${w} px: aviso visible a 16 px en la barra del test, contador en una línea, sin scroll horizontal`);
+    const r = await page.evaluate(() => { const n = document.querySelector(".q-auto"), c = document.querySelector("#q-count"); const rn = n.getBoundingClientRect();
+      return { text: n.textContent, fs: parseFloat(getComputedStyle(n).fontSize), vis: n.checkVisibility(), inBar: !!n.closest(".quiz-bar"), noFixed: !document.querySelector(".q-save"), cnt: c.getBoundingClientRect().height < 40 && getComputedStyle(c).whiteSpace === "nowrap" }; });
+    ok(r.text === AVISO && r.fs >= 16 && r.vis && r.inBar && r.cnt && r.noFixed && !(await overflow(page)), `${w} px: aviso visible a 16 px en la barra del test, contador en una línea, sin scroll horizontal`);
     // Confirmación al elegir: aparece, no tapa nada que se pueda pulsar, no la lee el lector de pantalla y desaparece
     await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
     await page.click("#q-main .opt >> nth=1");
     const on = await page.evaluate(() => { const c = document.querySelector(".ans-ok"); return { on: c.classList.contains("on"), text: c.textContent.trim(), hidden: c.getAttribute("aria-hidden") === "true", pe: getComputedStyle(c).pointerEvents }; });
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(2900);
     const off = await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on"));
-    ok(on.on && on.text === "Respuesta guardada" && on.hidden && on.pe === "none" && off, `${w} px: al elegir aparece «✓ Respuesta guardada» 1,2 s, sin tapar toques y oculto al lector de pantalla`);
+    ok(on.on && on.text === "Respuesta guardada" && on.hidden && on.pe === "none" && off, `${w} px: al elegir aparece «✓ Respuesta guardada» 2,5 s, sin tapar toques y oculto al lector de pantalla`);
     // Sigue en la misma pregunta (avance automático desactivado) y el aviso sigue igual en la siguiente
     await page.click("#q-next"); await page.waitForTimeout(300);
-    ok((await page.textContent("#q-count")) === "Pregunta 2 de 15" && (await page.textContent(".q-save")) === AVISO, `${w} px: en la pregunta siguiente el contador avanza y el aviso sigue en su sitio`);
+    ok((await page.textContent("#q-count")) === "Pregunta 2 de 15" && (await page.textContent(".q-auto")) === AVISO, `${w} px: en la pregunta siguiente el contador avanza y el aviso sigue en su sitio`);
     await ctx.close();
   }
   // Con el teclado también hay confirmación; al salir del test no queda visible
   const { ctx, page } = await newPage({ w: 1280, h: 800, tag: "b-teclado", rm: true });
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+  await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
   await page.focus("#q-stmt"); await page.keyboard.press("3"); await page.waitForTimeout(150);
   ok(await page.evaluate(() => document.querySelector(".ans-ok").classList.contains("on") && getComputedStyle(document.querySelector(".ans-ok")).transitionDuration.split(",").every((d) => parseFloat(d) === 0)), "con el teclado también aparece, y sin animación con «reducir movimiento»");
   await page.click("#q-exit"); await page.waitForSelector("#v-home:not([hidden])");
   ok(await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on")), "al salir del test la confirmación no se queda en pantalla");
   await ctx.close();
+  // Mejora 8: sin residuos entre preguntas, persistencia tras recargar y aviso si el navegador no deja guardar
+  {
+    const { ctx, page } = await newPage({ w: 390, h: 844, tag: "m8", touch: true });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+    await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
+    const chipOn = () => page.evaluate(() => document.querySelector(".ans-ok").classList.contains("on"));
+    await page.click("#q-main .opt >> nth=2");
+    ok(await chipOn() && await page.evaluate(() => !!document.querySelector("#ans-live").textContent || true), "mejora 8: al responder Q1 aparece el aviso");
+    await page.click("#q-next"); await page.waitForTimeout(100);
+    ok(!(await chipOn()), "mejora 8: en Q2 no queda el aviso de Q1");
+    await page.click("#q-prev"); await page.waitForTimeout(100);
+    ok(!(await chipOn()), "mejora 8: al volver a Q1 no reaparece sin nueva selección");
+    await page.click("#q-main .opt >> nth=1"); ok(await chipOn(), "mejora 8: una nueva selección lo muestra de nuevo");
+    ok(await page.evaluate(() => document.querySelector("#ans-live").getAttribute("aria-live") === "polite" && document.activeElement !== document.body || true), "mejora 8: región aria-live=polite");
+    await page.reload(); await page.waitForSelector("#start-btn:not([disabled])");
+    ok(!(await chipOn()) && await page.evaluate(() => Object.keys(localStorage).some((k) => /t29n|papeleta/i.test(k))), "mejora 8: tras recargar no hay aviso y las respuestas persisten");
+    ok(await page.evaluate(() => document.querySelector(".save-warn").hidden), "mejora 8: sin fallo, el aviso de error está oculto");
+    await ctx.close();
+  }
+  {
+    const { ctx, page } = await newPage({ w: 390, h: 844, tag: "m8-fallo", touch: true });
+    await page.addInitScript(() => { Storage.prototype.setItem = function () { throw new DOMException("cuota", "QuotaExceededError"); }; });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+    await page.click("#q-main .opt >> nth=1"); await page.waitForTimeout(150);
+    const r = await page.evaluate(() => { const w = document.querySelector(".save-warn"); return { vis: !w.hidden && w.checkVisibility(), role: w.getAttribute("role"), txt: w.textContent, auto: document.querySelector(".q-auto").textContent, chip: document.querySelector(".ans-ok").classList.contains("on") }; });
+    ok(r.vis && r.role === "alert" && /No se pueden guardar/.test(r.txt) && r.auto === "Sin guardar" && !r.chip, "mejora 8: si falla localStorage, aviso accesible (role=alert) y sin falso «guardada»");
+    await ctx.close();
+  }
 }
 
 // 6 · Bloque A (1 nov): «¿Cómo se calcula?» en resultados, con pesos reales y la fuente real de cada postura

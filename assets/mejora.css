@@ -367,8 +367,11 @@ html:has(body.in-quiz) { scroll-padding-top: 96px; }
 /* ═══ BLOQUE B (1 nov) · Flujo del test ═════════════════════════════════════════════════ */
 /* MEJORA: aviso fijo bajo la barra de progreso (se puede cerrar y volver). 16 px, con icono de guardado.
    En el móvil la barra no está fija (no tapa la pregunta); en escritorio va dentro de la barra fija. WCAG 3.3.2. */
-.q-save { display: flex; align-items: flex-start; gap: 7px; margin: 2px 0 0; font-size: var(--font-small); line-height: 1.35; color: var(--ink-2); }
-.q-save svg { flex: none; width: 17px; height: 17px; margin-top: 2px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.q-auto { display: flex; align-items: center; gap: 6px; margin: 2px 0 0; font-size: var(--font-small); line-height: 1.35; color: var(--ink-2); }
+.q-auto svg { flex: none; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.q-auto.bad { color: var(--ink); font-weight: 700; }
+.q-auto.bad svg { display: none; }
+.save-warn { position: sticky; top: 124px; z-index: 50; box-shadow: 0 6px 18px -10px rgba(17, 19, 24, .5); margin: 0 0 12px; padding: 10px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font-weight: 700; font-size: var(--font-small); line-height: 1.4; }
 html:has(body.in-quiz) { scroll-padding-top: 124px; }
 @media (max-width: 560px) { html:has(body.in-quiz) { scroll-padding-top: 16px; } }
 /* MEJORA: el contador «Pregunta 3 de 15» en texto normal (antes «03 / 15» en cifras grandes), sin partirse. */
@@ -405,6 +408,7 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .q-mini-line i { display: block; height: 100%; background: var(--ink); transition: width .2s ease; }
   /* El aviso «Respuesta guardada» baja para no tapar la barra fina */
   .ans-ok { top: calc(62px + env(safe-area-inset-top, 0px)); }
+  .save-warn { top: 60px; margin-inline: 12px; }
   html:has(body.in-quiz) { scroll-padding-top: 68px; }
 }
 @media (forced-colors: active) { .q-mini-line i { background: CanvasText; } }
