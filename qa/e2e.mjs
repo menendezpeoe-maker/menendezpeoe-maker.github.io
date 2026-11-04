@@ -279,6 +279,12 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     await page.reload(); await page.waitForSelector("#start-btn:not([disabled])");
     ok(!(await chipOn()) && await page.evaluate(() => Object.keys(localStorage).some((k) => /t29n|papeleta/i.test(k))), "mejora 8: tras recargar no hay aviso y las respuestas persisten");
     ok(await page.evaluate(() => document.querySelector(".save-warn").hidden), "mejora 8: sin fallo, el aviso de error está oculto");
+    // Hitos: en el test de 15 preguntas, tras responder 4 aparece «Llevas un cuarto del test»
+    await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
+    await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+    await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
+    for (let i = 0; i < 4; i++) { await page.click("#q-main .opt >> nth=2"); await page.click("#q-next"); await page.waitForTimeout(80); }
+    ok(await page.evaluate(() => /cuarto del test/.test(document.querySelector(".q-auto").textContent) && document.querySelector(".q-auto").getAttribute("aria-live") === "polite"), "mejora 9: hito de progreso «Llevas un cuarto del test» en región aria-live");
     await ctx.close();
   }
   {

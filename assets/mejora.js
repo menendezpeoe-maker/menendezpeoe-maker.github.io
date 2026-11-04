@@ -113,6 +113,19 @@
   autoNote.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.6 3.6L15.5 6.5"/></svg><span></span>';
   const setAuto = () => { autoNote.classList.toggle("bad", failed); autoNote.querySelector("span").textContent = failed ? T.noGuarda : T.autoguardado; };
   setAuto(); if (progWrap) progWrap.append(autoNote);
+  /* MEJORA: hitos de progreso (cuarto, mitad, tres cuartos) en la misma línea del indicador de autoguardado, durante 4 s.
+     Es una región aria-live="polite" que solo cambia en estos casos. Contra la fatiga en el test largo (107 preguntas). */
+  autoNote.setAttribute("aria-live", "polite");
+  {
+    const qc = $("#q-count"); let prev = 0, ht2 = 0;
+    const HIT = [[.25, "Llevas un cuarto del test"], [.5, "Ya vas por la mitad"], [.75, "Te queda solo un cuarto"]];
+    if (qc) new MutationObserver(() => {
+      const m = /(\d+) de (\d+)/.exec(qc.textContent); if (!m) return; const n = +m[1], t = +m[2];
+      const fwd = n === prev + 1; prev = n; if (!fwd || failed || t < 8) return;
+      const h = HIT.find(([f]) => n - 1 === Math.round(t * f)); if (!h) return;
+      autoNote.querySelector("span").textContent = h[1]; clearTimeout(ht2); ht2 = setTimeout(setAuto, 4000);
+    }).observe(qc, { childList: true, characterData: true, subtree: true });
+  }
   const warn = document.createElement("p"); warn.className = "save-warn"; warn.setAttribute("role", "alert"); warn.hidden = true; warn.dataset.mejora = "texto-nuevo";
   warn.textContent = T.noGuardaAviso; if (quizView) quizView.prepend(warn);
   document.addEventListener("save-failed", () => { if (failed) return; failed = true; setAuto(); warn.hidden = false; });
