@@ -472,7 +472,7 @@ details.more > summary:hover { color: var(--ink); }
 .phead .pc { text-align: right; }
 .phead .pc b { font-family: var(--f-disp); font-weight: 900; font-size: clamp(34px, 6vw, 46px); line-height: .95; font-variant-numeric: tabular-nums; display: block; }
 .phead .pc span { font-size: 12px; color: var(--ink-3); }
-.rk { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--ink); font-size: 12px; font-weight: 900; margin-right: 6px; vertical-align: 2px; }
+.rk { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding-inline: 4px; box-sizing: border-box; white-space: nowrap; border-radius: 999px; border: 2px solid var(--ink); font-size: 12px; font-weight: 900; margin-right: 6px; vertical-align: 2px; } /* 3 nov: el «º» se salía del círculo con «2.º»; ahora el texto no se parte y el círculo se ensancha si hace falta */
 .tbd { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 1px 8px; border: 1px dashed var(--ink-2); border-radius: 999px; color: var(--ink-2); }
 .metrics { display: flex; flex-wrap: wrap; gap: 8px; }
 .metric { display: grid; gap: 1px; padding: 8px 12px; border: 1px solid var(--rule); border-radius: var(--r2); background: var(--sheet-2); min-width: 130px; }
