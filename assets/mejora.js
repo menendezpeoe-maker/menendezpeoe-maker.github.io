@@ -48,7 +48,9 @@
     nCoinciden: (n) => (n === 1 ? "1 provincia coincide" : `${n} provincias coinciden`),   // aprobado el 31 oct
     ningunaCoincide: "Ninguna provincia coincide con la búsqueda",  // aprobado el 31 oct
     volverArriba: "Volver arriba",                              // aprobado el 31 oct
-    puedesVolver: "Puedes cerrar y volver cuando quieras: tus respuestas se guardan en este navegador.",  // bloque B, 1 nov
+    autoguardado: "Autoguardado en este navegador",                // mejora 8
+    noGuarda: "Sin guardar",                                       // mejora 8
+    noGuardaAviso: "No se pueden guardar tus respuestas en este navegador (modo privado o sin espacio). Si cierras la página las perderás.",  // mejora 8
   };
   const store = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } } };
   const quizView = $("#v-quiz");
@@ -67,22 +69,26 @@
     setTimeout(() => document.dispatchEvent(new Event("ans-saved")), 0);
   }, true);
   const progWrap = $(".qprog-wrap");
-  if (progWrap && T.puedesVolver) {
-    const note = document.createElement("p"); note.className = "q-save"; note.dataset.mejora = "texto-nuevo";
-    note.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h9.5L16.5 6.5V16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z"/><path d="M6.5 3.5v4h6v-4M6.5 16.5v-5h7v5"/></svg><span></span>';
-    note.querySelector("span").textContent = T.puedesVolver;
-    progWrap.append(note);
-  }
+  let failed = false;
+  const autoNote = document.createElement("p"); autoNote.className = "q-auto"; autoNote.dataset.mejora = "texto-nuevo";
+  autoNote.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.6 3.6L15.5 6.5"/></svg><span></span>';
+  const setAuto = () => { autoNote.classList.toggle("bad", failed); autoNote.querySelector("span").textContent = failed ? T.noGuarda : T.autoguardado; };
+  setAuto(); if (progWrap) progWrap.append(autoNote);
+  const warn = document.createElement("p"); warn.className = "save-warn"; warn.setAttribute("role", "alert"); warn.hidden = true; warn.dataset.mejora = "texto-nuevo";
+  warn.textContent = T.noGuardaAviso; if (quizView) quizView.prepend(warn);
+  document.addEventListener("save-failed", () => { if (failed) return; failed = true; setAuto(); warn.hidden = false; });
   if (quizView && qMain) {
     const chip = document.createElement("div"); chip.className = "ans-ok"; chip.dataset.mejora = "texto-nuevo"; chip.setAttribute("aria-hidden", "true");
     chip.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.6 3.6L15.5 6.5"/></svg><span></span>';
     chip.querySelector("span").textContent = T.respuestaGuardada;
     document.body.append(chip);
     let ht = 0;
-    const showChip = () => { chip.classList.remove("on"); void chip.offsetWidth; chip.classList.add("on"); clearTimeout(ht); ht = setTimeout(() => chip.classList.remove("on"), 1200); };
+    const hideChip = () => { clearTimeout(ht); chip.classList.remove("on"); };
+    const showChip = () => { if (failed) return; chip.classList.remove("on"); void chip.offsetWidth; chip.classList.add("on"); clearTimeout(ht); ht = setTimeout(hideChip, 2500); };
     quizView.addEventListener("change", (e) => { if (e.target.name === "ans") showChip(); });
     document.addEventListener("ans-saved", showChip);
-    new MutationObserver(() => { if (quizView.hidden) { clearTimeout(ht); chip.classList.remove("on"); } }).observe(quizView, { attributes: true, attributeFilter: ["hidden"] });
+    const qc = $("#q-count"); let last = qc ? qc.textContent : ""; if (qc) new MutationObserver(() => { if (qc.textContent !== last) { last = qc.textContent; hideChip(); } }).observe(qc, { childList: true, characterData: true, subtree: true });
+    new MutationObserver(() => { if (quizView.hidden) hideChip(); }).observe(quizView, { attributes: true, attributeFilter: ["hidden"] });
   }
   let auto = store.get("t29n-mejora-auto", true);
   const switchHTML = () => { const d = document.createElement("div"); d.className = "auto-adv"; d.dataset.mejora = "texto-nuevo";
