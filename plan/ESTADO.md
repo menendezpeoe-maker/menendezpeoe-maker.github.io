@@ -31,6 +31,11 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 4 nov 2026 · Mejora 7 · Letra del sistema con 3G o ahorro de datos (aprobada por el titular; publicada a las 01:30 como pidió)
+- **Cambio (`publish.mjs`, solo la portada):** un script en línea (con su firma en la CSP de esa página, sin abrir `script-src`) comprueba `navigator.connection`: con `saveData` o `effectiveType` slow-2g/2g/3g no se piden las tipografías propias (168 kB) y la web usa la letra del sistema, con las medidas de las letras de reserva de `papeleta.css`; en el resto, o sin JavaScript (`noscript`), todo igual. Safari y Firefox no exponen esa información y siguen cargando las tipografías.
+- **Medido en la web real (3G lenta, mediana de 3):** «Empezar» funciona en 8,0 s → 5,6 s; con ahorro de datos, 1,0 s y 0 archivos de letra; 4G sin cambios (1,0 s, con letra propia). Aspecto con letra del sistema revisado por el titular: títulos algo más finos y estrechos, mismo diseño.
+- **Verificación:** 21/21 en local y 6/6 en la versión publicable antes de publicar; web real 21/21 después. IndexNow 200. Para deshacerlo: `git revert 92251cd`.
+
 ## 3 nov 2026 · Comprobación de enlaces de todas las fuentes (petición del titular)
 - **Enlaces** (`qa/herramientas/comprobar-enlaces.py`, solo curl): 330 URL distintas en 823 posturas; 328 responden. Euronews (G01/psoe) da 406 a los robots pero la noticia existe (comprobada aparte). EITB redirige a orain.eus: enlace de D04/upn actualizado a la dirección nueva (misma noticia, «172 votos en contra (PP, Vox, UPN y CC)»).
 - **¿Dice lo que decimos?** Las fuentes antiguas no guardan cita, así que se comprobó que cada página nombre al partido: 53 de 823 no lo hacen, casi todas explicables (documentos del Gobierno para el PSOE, votaciones nominales del Congreso en datos abiertos, programa de Sumar 2023 para sus socios de entonces). Revisadas a mano las dudosas (L02/ccpc, I01/vox): correctas. Sin fuentes rotas.
