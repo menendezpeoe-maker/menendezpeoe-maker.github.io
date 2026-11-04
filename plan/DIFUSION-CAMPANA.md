@@ -1,16 +1,19 @@
-# Kit de difusión de la campaña (preparado el 28 oct 2026)
+# Kit de difusión de la campaña (preparado el 28 oct 2026; puesto al día el 4 nov)
 
-Para el titular. Tú decides qué se envía y a quién: aquí no se envía nada automáticamente. S1b (10 nov) lo revisará y completará con contactos nuevos.
+Para el titular. Tú decides qué se envía y a quién: aquí no se envía nada automáticamente. S1b (10 nov) lo revisará y completará con contactos nuevos. Las cifras están comprobadas a 4 nov: 107 preguntas, 24 candidaturas, 12 áreas.
 
 ## 1. Qué decir de Test 29N en una frase
-Test político gratuito e independiente para el 29N: 107 preguntas (con versiones de 15, 24 y 48), 24 candidaturas filtradas por provincia (incluidas las autonómicas), con los cabezas de lista de cada provincia según el BOE y la fuente enlazada de cada postura. Sin registro ni cookies.
+Test político gratuito e independiente para el 29N: 107 preguntas (con versiones de 15, 24 y 48), 24 candidaturas filtradas por provincia (incluidas las autonómicas), con los cabezas de lista de cada provincia según el BOE y la fuente enlazada de cada postura documentada. Sin registro ni cookies.
 
 **Lo que lo diferencia** (hay al menos otros 9 tests para el 29N, así que es lo que hay que destacar):
-- Cada postura lleva su justificación y su fuente enlazada (votaciones del Congreso, programas, declaraciones).
+- Cada postura documentada lleva su fuente enlazada (votaciones del Congreso, programas, declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas» y pesan menos en el cálculo: no se disimula lo que no está documentado.
 - Las candidaturas de **tu provincia**, incluidos los partidos autonómicos que otros tests no recogen.
 - Cuatro versiones (de 2 a 15 minutos) y seis tests cortos por tema (vivienda, economía, inmigración, sanidad, energía y territorio).
-- Simulador de escaños, guía para votar y calendario oficial.
-- A partir del 6 nov: página **/programas/** con el estado del programa electoral de cada candidatura.
+- Cada resultado se explica: un panel «¿Cómo se calcula?» con los pesos reales y, partido a partido, cada postura marcada como documentada (con su fuente) o estimada.
+- Tu perfil en siete dimensiones (con gráfico de radar), la clasificación de las cinco candidaturas más cercanas de tu provincia y comparador entre partidos.
+- Puedes imprimir o guardar tu resultado en PDF.
+- En cada provincia: los cabezas de lista y todas las candidaturas proclamadas por el BOE (3 nov).
+- Simulador de escaños, guía para votar, calendario oficial, página **/debates/** y página **/programas/** con el estado del programa electoral de cada candidatura.
 
 No digas «el mejor» ni «el único»: no se puede demostrar y resta credibilidad ante un periodista.
 
@@ -41,9 +44,10 @@ Pendiente para S1b: 20minutos, eldiario.es, El País, El HuffPost, Público, La 
 > Os escribo por si os resulta útil para vuestra cobertura del 29N. He hecho Test 29N (https://test29n.es), un test político gratuito e independiente, sin registro ni cookies.
 >
 > Lo que lo distingue:
-> - Cada postura de cada partido lleva su justificación y su fuente enlazada (votaciones del Congreso, programas y declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas».
+> - Cada postura documentada de cada partido lleva su fuente enlazada (votaciones del Congreso, programas y declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas» y pesan menos en el cálculo.
 > - Muestra las candidaturas que se presentan en tu provincia, incluidos los partidos autonómicos.
 > - Tiene versiones de 15, 24, 48 y 107 preguntas, y tests cortos por tema (vivienda, economía, inmigración, sanidad, energía y territorio).
+> - En cada provincia muestra los cabezas de lista y las candidaturas proclamadas en el BOE.
 > - La metodología es pública: https://test29n.es/metodologia/
 >
 > No es una encuesta ni recomienda voto: solo mide la coincidencia de ideas. Si veis cualquier error en una postura, lo corrijo.
