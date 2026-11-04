@@ -103,3 +103,5 @@ Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 - **Final sin repeticiones:** con el análisis completo plegado ya no se repiten «Compartir mi resultado», «Repetir el test» ni «Cómo se calcula» (clase `.dup`); vuelven al desplegarlo.
 - **«¿Te ha resultado útil?»** en su línea, con «Sí»/«No» juntos debajo.
 - **Verificación:** 21/21 en local (`support` falló una vez por la comprobación externa de PayPal y pasó al repetirla), en la versión publicable y en la web real. IndexNow 200.
+
+- **4 nov (tarde) · Mejora 8 publicada (aviso de guardado):** quitado el párrafo fijo `q-save`; aviso transitorio «Respuesta guardada» (2,5 s, aria-live polite, se apaga al cambiar de pregunta/salir), indicador «Autoguardado» y aviso `role=alert` si falla localStorage (`store.set` emite `save-failed`). Pruebas en `qa/e2e.mjs`. 21 baterías OK, web real OK. Pendiente del encargo de 5 puntos: 2–5 (la mayoría ya existen); decisión del titular sobre quién aparece en «Quién está detrás».
