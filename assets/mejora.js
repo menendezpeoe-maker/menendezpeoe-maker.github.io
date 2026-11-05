@@ -90,7 +90,7 @@
     const live = document.createElement("p"); live.className = "sr"; live.id = "ans-live"; live.setAttribute("aria-live", "polite"); live.dataset.mejora = "texto-nuevo";
     quizView.append(live);
     let tm = 0;
-    const announce = () => { live.textContent = ""; clearTimeout(tm); tm = setTimeout(() => { live.textContent = T.respuestaGuardada; }, 60); };
+    const announce = () => { if (failed) return; live.textContent = ""; clearTimeout(tm); tm = setTimeout(() => { live.textContent = T.respuestaGuardada; }, 60); };
     qMain.addEventListener("change", (e) => { if (e.target.name === "ans") announce(); });
     // Con el paso automático activado, las teclas 0–5 guardan la respuesta sin evento «change»: también se anuncia
     document.addEventListener("ans-saved", announce);
@@ -129,22 +129,8 @@
   const warn = document.createElement("p"); warn.className = "save-warn"; warn.setAttribute("role", "alert"); warn.hidden = true; warn.dataset.mejora = "texto-nuevo";
   warn.textContent = T.noGuardaAviso; if (quizView) quizView.prepend(warn);
   document.addEventListener("save-failed", () => { if (failed) return; failed = true; setAuto(); warn.hidden = false; });
-  /* MEJORA: confirmación visible al elegir: «✓ Respuesta guardada» 2,5 s, arriba y centrada, sin tapar las respuestas
-     ni «Siguiente» (no recibe toques). El lector de pantalla ya la anuncia por la región anterior (aria-hidden aquí).
-     Se apaga al cambiar de pregunta, al salir del test y no vuelve al recargar. Sin animación con «reducir movimiento». */
-  if (quizView && qMain) {
-    const chip = document.createElement("div"); chip.className = "ans-ok"; chip.dataset.mejora = "texto-nuevo"; chip.setAttribute("aria-hidden", "true");
-    chip.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10.5l3.6 3.6L15.5 6.5"/></svg><span></span>';
-    chip.querySelector("span").textContent = T.respuestaGuardada;
-    document.body.append(chip);
-    let ht = 0;
-    const hideChip = () => { clearTimeout(ht); chip.classList.remove("on"); };
-    const showChip = () => { if (failed) return; chip.classList.remove("on"); void chip.offsetWidth; chip.classList.add("on"); clearTimeout(ht); ht = setTimeout(hideChip, 2500); };
-    quizView.addEventListener("change", (e) => { if (e.target.name === "ans") showChip(); });
-    document.addEventListener("ans-saved", showChip);
-    const qc = $("#q-count"); let last = qc ? qc.textContent : ""; if (qc) new MutationObserver(() => { if (qc.textContent !== last) { last = qc.textContent; hideChip(); } }).observe(qc, { childList: true, characterData: true, subtree: true });
-    new MutationObserver(() => { if (quizView.hidden) hideChip(); }).observe(quizView, { attributes: true, attributeFilter: ["hidden"] });
-  }
+  /* 5 nov: se quita el cartel «Respuesta guardada» tras cada respuesta (saturaba, a petición del titular). El guardado sigue
+     igual; se mantienen el indicador discreto, el anuncio invisible para el lector de pantalla y el aviso si falla. */
 
   /* MEJORA: interruptor de avance automático (activado por defecto, como la original). Si se desactiva, ni el
      toque/clic ni las teclas 0–5 pasan de pregunta: se elige y se pulsa «Siguiente» (o Intro). WCAG 3.2.2, 2.2.1. */

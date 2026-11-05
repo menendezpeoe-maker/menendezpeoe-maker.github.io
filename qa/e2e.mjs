@@ -242,10 +242,10 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     // Confirmación al elegir: aparece, no tapa nada que se pueda pulsar, no la lee el lector de pantalla y desaparece
     await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
     await page.click("#q-main .opt >> nth=1");
-    const on = await page.evaluate(() => { const c = document.querySelector(".ans-ok"); return { on: c.classList.contains("on"), text: c.textContent.trim(), hidden: c.getAttribute("aria-hidden") === "true", pe: getComputedStyle(c).pointerEvents }; });
+    const on = await page.evaluate(() => !!document.querySelector(".ans-ok") && document.querySelector(".ans-ok").checkVisibility());
     await page.waitForTimeout(2900);
-    const off = await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on"));
-    ok(on.on && on.text === "Respuesta guardada" && on.hidden && on.pe === "none" && off, `${w} px: al elegir aparece «✓ Respuesta guardada» 2,5 s, sin tapar toques y oculto al lector de pantalla`);
+    const off = true;
+    ok(!on && (await page.evaluate(() => document.querySelector("#ans-live").getAttribute("aria-live") === "polite")), `${w} px: al elegir NO sale ningún cartel (el lector de pantalla sí recibe el anuncio)`);
     // Sigue en la misma pregunta (avance automático desactivado) y el aviso sigue igual en la siguiente
     await page.click("#q-next"); await page.waitForTimeout(300);
     ok((await page.textContent("#q-count")) === "Pregunta 2 de 15" && (await page.textContent(".q-auto")) === AVISO, `${w} px: en la pregunta siguiente el contador avanza y el aviso sigue en su sitio`);
@@ -257,9 +257,8 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
   await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
   await page.focus("#q-stmt"); await page.keyboard.press("3"); await page.waitForTimeout(150);
-  ok(await page.evaluate(() => document.querySelector(".ans-ok").classList.contains("on") && getComputedStyle(document.querySelector(".ans-ok")).transitionDuration.split(",").every((d) => parseFloat(d) === 0)), "con el teclado también aparece, y sin animación con «reducir movimiento»");
+  ok(await page.evaluate(() => !document.querySelector(".ans-ok")), "con el teclado tampoco sale cartel de «guardada»");
   await page.click("#q-exit"); await page.waitForSelector("#v-home:not([hidden])");
-  ok(await page.evaluate(() => !document.querySelector(".ans-ok").classList.contains("on")), "al salir del test la confirmación no se queda en pantalla");
   await ctx.close();
   // Mejora 8: sin residuos entre preguntas, persistencia tras recargar y aviso si el navegador no deja guardar
   {
@@ -267,14 +266,14 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
     await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
     await page.evaluate(() => { const a = document.querySelector("#auto-adv"); if (a && a.checked) a.click(); });
-    const chipOn = () => page.evaluate(() => document.querySelector(".ans-ok").classList.contains("on"));
+    const chipOn = () => page.evaluate(() => !!document.querySelector(".ans-ok"));
     await page.click("#q-main .opt >> nth=2");
-    ok(await chipOn() && await page.evaluate(() => !!document.querySelector("#ans-live").textContent || true), "mejora 8: al responder Q1 aparece el aviso");
+    ok(!(await chipOn()), "mejora 10: al responder Q1 no sale cartel");
     await page.click("#q-next"); await page.waitForTimeout(100);
     ok(!(await chipOn()), "mejora 8: en Q2 no queda el aviso de Q1");
     await page.click("#q-prev"); await page.waitForTimeout(100);
     ok(!(await chipOn()), "mejora 8: al volver a Q1 no reaparece sin nueva selección");
-    await page.click("#q-main .opt >> nth=1"); ok(await chipOn(), "mejora 8: una nueva selección lo muestra de nuevo");
+    await page.click("#q-main .opt >> nth=1");
     ok(await page.evaluate(() => document.querySelector("#ans-live").getAttribute("aria-live") === "polite" && document.activeElement !== document.body || true), "mejora 8: región aria-live=polite");
     await page.reload(); await page.waitForSelector("#start-btn:not([disabled])");
     ok(!(await chipOn()) && await page.evaluate(() => Object.keys(localStorage).some((k) => /t29n|papeleta/i.test(k))), "mejora 8: tras recargar no hay aviso y las respuestas persisten");
@@ -294,7 +293,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
     await page.click("#q-main .opt >> nth=1"); await page.waitForTimeout(150);
     const r = await page.evaluate(() => { const w = document.querySelector(".save-warn"); return { vis: !w.hidden && w.checkVisibility(), role: w.getAttribute("role"), txt: w.textContent, auto: document.querySelector(".q-auto").textContent, chip: document.querySelector(".ans-ok").classList.contains("on") }; });
-    ok(r.vis && r.role === "alert" && /No se pueden guardar/.test(r.txt) && r.auto === "Sin guardar" && !r.chip, "mejora 8: si falla localStorage, aviso accesible (role=alert) y sin falso «guardada»");
+    ok(r.vis && r.role === "alert" && /No se pueden guardar/.test(r.txt) && r.auto === "Sin guardar", "mejora 8: si falla localStorage, aviso accesible (role=alert) y sin falso «guardada»");
     await ctx.close();
   }
 }
