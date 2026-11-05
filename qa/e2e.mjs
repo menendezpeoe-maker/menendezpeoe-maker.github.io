@@ -292,7 +292,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
     await startHome(page, "rapida"); await page.waitForSelector("#v-quiz:not([hidden])");
     await page.click("#q-main .opt >> nth=1"); await page.waitForTimeout(150);
-    const r = await page.evaluate(() => { const w = document.querySelector(".save-warn"); return { vis: !w.hidden && w.checkVisibility(), role: w.getAttribute("role"), txt: w.textContent, auto: document.querySelector(".q-auto").textContent, chip: document.querySelector(".ans-ok").classList.contains("on") }; });
+    const r = await page.evaluate(() => { const w = document.querySelector(".save-warn"); return { vis: !w.hidden && w.checkVisibility(), role: w.getAttribute("role"), txt: w.textContent, auto: document.querySelector(".q-auto").textContent }; });
     ok(r.vis && r.role === "alert" && /No se pueden guardar/.test(r.txt) && r.auto === "Sin guardar", "mejora 8: si falla localStorage, aviso accesible (role=alert) y sin falso «guardada»");
     await ctx.close();
   }
