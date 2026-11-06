@@ -1,0 +1,604 @@
+[
+ {
+  "id": "A06/pod",
+  "q": "A06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Habría que suavizar las obligaciones que se activan cuando una empresa supera los 50 trabajadores, para que las pymes crezcan.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "A07/pod",
+  "q": "A07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Habría que eliminar el límite de 1.000 euros para los pagos en efectivo.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C01/pod",
+  "q": "C01",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Cataluña debería recaudar y gestionar todos sus impuestos, con un sistema propio parecido al del País Vasco.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C02/pod",
+  "q": "C02",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La reforma de la financiación autonómica debería dar más recursos a las comunidades que hoy reciben menos por habitante.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C03/pod",
+  "q": "C03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El Estado debería recuperar la competencia de educación, que hoy gestionan las comunidades autónomas.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C07/pod",
+  "q": "C07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C08/pod",
+  "q": "C08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El Senado debería convertirse en una cámara de representación de las comunidades autónomas.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "C09/pod",
+  "q": "C09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El concierto vasco y el convenio navarro deberían reformarse para que esas comunidades aporten más a la caja común.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D02/pacma",
+  "q": "D02",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D02/pod",
+  "q": "D02",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D05/pacma",
+  "q": "D05",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Los altos cargos deberían esperar al menos cinco años antes de trabajar en empresas del sector que regulaban.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D06/pacma",
+  "q": "D06",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D06/pod",
+  "q": "D06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D08/pod",
+  "q": "D08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Debería limitarse más la capacidad del Gobierno de aprobar decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "D09/pacma",
+  "q": "D09",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Debería gobernar el partido más votado cuando no exista una mayoría alternativa clara.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "E05/pod",
+  "q": "E05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El uso policial del reconocimiento facial en espacios públicos debería prohibirse.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "E07/pod",
+  "q": "E07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La acusación popular, que permite a quien no es víctima ejercer la acusación en un proceso penal, debería limitarse.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "E08/pacma",
+  "q": "E08",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "La Ley de Violencia de Género debería sustituirse por una ley de violencia intrafamiliar que no distinga según el sexo de la víctima y del agresor.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "F04/pod",
+  "q": "F04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "F07/pod",
+  "q": "F07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "F09/pod",
+  "q": "F09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G02/pacma",
+  "q": "G02",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G02/pod",
+  "q": "G02",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G03/pacma",
+  "q": "G03",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G03/pod",
+  "q": "G03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G04/pacma",
+  "q": "G04",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G06/pacma",
+  "q": "G06",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "dilema",
+  "afirmacion": "¿Qué debería priorizar la inversión ferroviaria?",
+  "postura_estimada": 4,
+  "opciones": {
+   "A": "Completar y mejorar la red de alta velocidad",
+   "B": "Mejorar las Cercanías y los trenes regionales"
+  },
+  "escala": "1=claramente A … 3=ambas por igual … 5=claramente B"
+ },
+ {
+  "id": "G06/pod",
+  "q": "G06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "dilema",
+  "afirmacion": "¿Qué debería priorizar la inversión ferroviaria?",
+  "postura_estimada": 5,
+  "opciones": {
+   "A": "Completar y mejorar la red de alta velocidad",
+   "B": "Mejorar las Cercanías y los trenes regionales"
+  },
+  "escala": "1=claramente A … 3=ambas por igual … 5=claramente B"
+ },
+ {
+  "id": "G07/pacma",
+  "q": "G07",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G07/pod",
+  "q": "G07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G08/pacma",
+  "q": "G08",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
+  "postura_estimada": 2,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G08/pod",
+  "q": "G08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
+  "postura_estimada": 2,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "G09/pacma",
+  "q": "G09",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "dilema",
+  "afirmacion": "Tras el apagón de 2025, ¿qué debería priorizar el sistema eléctrico?",
+  "postura_estimada": 5,
+  "opciones": {
+   "A": "Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
+   "B": "Acelerar las renovables invirtiendo en redes y almacenamiento"
+  },
+  "escala": "1=claramente A … 3=ambas por igual … 5=claramente B"
+ },
+ {
+  "id": "H01/pacma",
+  "q": "H01",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "H02/pacma",
+  "q": "H02",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "H02/pod",
+  "q": "H02",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "H03/pod",
+  "q": "H03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las decisiones importantes de la UE deberían seguir exigiendo unanimidad, para que cada país conserve su derecho de veto.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "H08/pod",
+  "q": "H08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "España debería estrechar sus relaciones comerciales con China, aunque genere tensiones con Estados Unidos.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "I03/pod",
+  "q": "I03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Debería ser más fácil crear universidades privadas.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "I04/pod",
+  "q": "I04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Los resultados de cada colegio en las evaluaciones externas deberían hacerse públicos.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "I05/pod",
+  "q": "I05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "En las comunidades con lengua cooficial, las familias deberían poder elegir que sus hijos estudien principalmente en castellano.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "I09/pod",
+  "q": "I09",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "J03/pod",
+  "q": "J03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Los médicos de la sanidad pública no deberían poder trabajar a la vez en la privada.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "J04/pod",
+  "q": "J04",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Habría que subir los impuestos sobre el tabaco, el alcohol y las bebidas azucaradas para reducir su consumo.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "J05/pod",
+  "q": "J05",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "J06/pod",
+  "q": "J06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El empleo público debería incluir una evaluación del desempeño con consecuencias, incluido el despido por bajo rendimiento.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "J08/pod",
+  "q": "J08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
+  "postura_estimada": 4,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K02/pod",
+  "q": "K02",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Habría que reforzar el control de los márgenes de la distribución para que agricultores y ganaderos no tengan que vender por debajo de sus costes de producción.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K03/pod",
+  "q": "K03",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K06/pacma",
+  "q": "K06",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K06/pod",
+  "q": "K06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
+  "postura_estimada": 2,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K07/pod",
+  "q": "K07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
+  "postura_estimada": 1,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K08/pacma",
+  "q": "K08",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "K08/pod",
+  "q": "K08",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "L01/pacma",
+  "q": "L01",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "El derecho al aborto debería incluirse en la Constitución.",
+  "postura_estimada": 5,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "L02/pacma",
+  "q": "L02",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "La ley de eutanasia debería derogarse.",
+  "postura_estimada": 2,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "L06/pod",
+  "q": "L06",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Las redes sociales deberían estar obligadas a verificar la identidad real de cada usuario.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "L07/pod",
+  "q": "L07",
+  "pid": "pod",
+  "partido": "Podemos",
+  "tipo": "likert",
+  "afirmacion": "Debería prohibirse el acceso a las redes sociales a los menores de 16 años.",
+  "postura_estimada": 3,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ },
+ {
+  "id": "L08/pacma",
+  "q": "L08",
+  "pid": "pacma",
+  "partido": "PACMA",
+  "tipo": "likert",
+  "afirmacion": "Las cuotas obligatorias de paridad entre sexos en listas electorales y consejos de administración deberían eliminarse.",
+  "postura_estimada": 2,
+  "escala": "1=Totalmente en desacuerdo … 3=neutral … 5=Totalmente de acuerdo"
+ }
+]
