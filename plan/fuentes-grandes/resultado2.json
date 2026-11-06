@@ -1,0 +1,416 @@
+[
+ {
+  "id": "D06/pacma",
+  "estado": "estimada",
+  "nota": "El programa de generales 2023 (p. 69) pide reformar la ILP (menos firmas, más plazo, sin materias excluidas), pero no habla de votarlas obligatoriamente en un plazo fijo; no se fuerza la fuente."
+ },
+ {
+  "id": "D02/pacma",
+  "estado": "estimada",
+  "nota": "El programa de generales 2023 (p. 69) propone circunscripción única y reparto proporcional, pero no dice nada de listas abiertas o desbloqueadas."
+ },
+ {
+  "id": "D09/pacma",
+  "estado": "estimada",
+  "nota": "No se encuentra pronunciamiento de PACMA sobre que gobierne la lista más votada; su reforma electoral (programa 2023, p. 69) trata de proporcionalidad, no de investidura."
+ },
+ {
+  "id": "E08/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=70",
+  "etiqueta": "Programa de PACMA para las generales de 2023, apartado «Contra la violencia sobre la mujer»",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "La violencia machista, como manifestación más cruel de la desigualdad y las relaciones de poder de los hombres sobre las mujeres, se ha cobrado la vida de más de mil mujeres en España desde 2003",
+  "justificacion": "El programa trata la violencia contra las mujeres como violencia machista específica y propone reforzar medidas propias para sus víctimas, lo que es incompatible con sustituirla por una ley intrafamiliar neutra respecto al sexo.",
+  "valor": 1,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "L08/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=60",
+  "etiqueta": "Programa de PACMA para las generales de 2023, propuesta sobre representación de mujeres en listas",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "desde PACMA proponemos que, en lugar de una Ley de Representación Paritaria, se elabore una Ley de mayor representación de mujeres, que, en el caso de la reforma de la LOREG, exija que las mujeres representen, al menos, el 50% de las listas electorales",
+  "justificacion": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres.",
+  "valor": 2,
+  "nota": "Coincide con la estimación. Matiz: rechaza la paridad tal como está, pero a favor de una cuota mínima de mujeres, no de suprimir las cuotas."
+ },
+ {
+  "id": "G02/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+  "etiqueta": "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético",
+  "tipo": "programa",
+  "fecha": "2026-01",
+  "cita": "Es necesario frenar este despliegue desmedido, absolutamente nocivo para nuestra Comunidad, rechazando la instalación de una industria electrointensiva y, por el contrario, promover un modelo de renovables coherente, sostenible y acorde a los consumos del territorio",
+  "justificacion": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
+  "valor": 4,
+  "nota": "Estimada 3; la fuente muestra acuerdo con limitar las grandes plantas, sin llegar a 5 porque reitera su apoyo a la transición renovable."
+ },
+ {
+  "id": "G09/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+  "etiqueta": "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético tras el apagón",
+  "tipo": "programa",
+  "fecha": "2026-01",
+  "cita": "el gran apagón expuso que la alta introducción de renovables exige sistemas de almacenamiento y tecnologías de control avanzadas",
+  "justificacion": "Tras el apagón, PACMA propone acompañar las renovables de almacenamiento y control de red; en la página anterior califica de insostenible el modelo basado en combustibles fósiles y energía nuclear.",
+  "valor": 5,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "G08/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=43",
+  "etiqueta": "Programa de PACMA para las generales de 2023, apartado de prevención de incendios y conservación del patrimonio natural",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Defendemos una revisión de la normativa para proteger eficazmente nuestro patrimonio natural, la conservación de hábitats y la flora y fauna silvestres",
+  "justificacion": "PACMA acepta el desbroce y la selvicultura preventiva y pide prohibir las quemas para obtener pastos, y quiere reforzar, no flexibilizar, la protección de los espacios naturales.",
+  "valor": 2,
+  "nota": "Coincide con la estimación: apoya el desbroce, pero no el pastoreo ni rebajar la protección."
+ },
+ {
+  "id": "K06/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=9",
+  "etiqueta": "Programa de PACMA para las europeas de 2024, propuestas de medio ambiente",
+  "tipo": "programa",
+  "fecha": "2024-05",
+  "cita": "Detener la sobrepesca, prohibir las granjas de pulpos y prevenir la contaminación marina.",
+  "justificacion": "PACMA pide detener la sobrepesca y en el mismo programa se declara contraria a la pesca, lo que se opone a relajar las restricciones pesqueras.",
+  "valor": 1,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "K08/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/",
+  "etiqueta": "Nota de prensa de PACMA: pide un Plan Andaluz de Lucha contra la Desertificación",
+  "tipo": "declaracion",
+  "fecha": "2024-09-12",
+  "cita": "el mal uso de los recursos naturales, como la expansión de regadíos en áreas de secano, está agotando los acuíferos y destruyendo los ecosistemas locales.",
+  "justificacion": "PACMA señala la expansión de regadíos en zonas secas como causa del agotamiento de acuíferos y de la desertificación, lo que apoya limitar los nuevos regadíos.",
+  "valor": 5,
+  "nota": "Coincide con la estimación. Declaración del coordinador provincial de PACMA en Almería en la web oficial."
+ },
+ {
+  "id": "D05/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=75",
+  "etiqueta": "Programa de PACMA para las europeas de 2024, apartado sobre transparencia del BCE y puertas giratorias",
+  "tipo": "programa",
+  "fecha": "2024-05",
+  "cita": "establecer restricciones previas y posteriores al empleo para reducir los riesgos asociados con la puerta giratoria entre el sector público y el privado",
+  "justificacion": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años.",
+  "valor": 4,
+  "nota": "Coincide con la estimación. La propuesta se formula para el BCE y no concreta el plazo."
+ },
+ {
+  "id": "G03/pacma",
+  "estado": "estimada",
+  "nota": "Los programas de PACMA (generales 2023, europeas 2024 y autonómicos 2026) apoyan los vehículos eléctricos y critican la combustión fósil, pero no mencionan la prohibición de 2035; no se encontró ninguna declaración sobre ella."
+ },
+ {
+  "id": "G04/pacma",
+  "estado": "estimada",
+  "nota": "No se encuentra mención a trasvases en los programas de PACMA (2023, 2024, autonómicos 2025-2026) ni en sus notas de prensa (búsqueda en pacma.es)."
+ },
+ {
+  "id": "G06/pacma",
+  "estado": "estimada",
+  "nota": "Los programas solo hablan de trasladar mercancías al ferrocarril eléctrico; no comparan alta velocidad con Cercanías."
+ },
+ {
+  "id": "G07/pacma",
+  "estado": "estimada",
+  "nota": "No se encuentra ninguna postura de PACMA sobre construir en zonas inundables en sus programas ni en sus notas de prensa."
+ },
+ {
+  "id": "H01/pacma",
+  "estado": "estimada",
+  "nota": "No se encuentra ninguna postura de PACMA sobre el gasto en defensa ni la OTAN en sus programas ni en las notas de pacma.es; es un tema ajeno a su ideario."
+ },
+ {
+  "id": "H02/pacma",
+  "estado": "estimada",
+  "nota": "El programa europeo de 2024 pide más armonización en bienestar animal y reforzar algunas instituciones de la UE, pero no se pronuncia sobre ceder competencias en general."
+ },
+ {
+  "id": "L01/pacma",
+  "estado": "estimada",
+  "nota": "No se encuentra ninguna postura de PACMA sobre el aborto ni sobre la reforma constitucional en sus programas ni en su web."
+ },
+ {
+  "id": "L02/pacma",
+  "estado": "estimada",
+  "nota": "En PACMA, «eutanasia» solo aparece referida a animales; no hay postura sobre la ley de eutanasia de 2021."
+ },
+ {
+  "id": "E07/pod",
+  "estado": "fuente",
+  "url": "https://elespanol.com/espana/politica/20250110/sumar-opone-ley-sanchez-restringe-accion-popular-justicia-junts-hara-enmienda-totalidad/915409022_0.html",
+  "etiqueta": "El Español: Podemos ve «ineficaz» y «cosmética» la ley del PSOE que limita la acusación popular",
+  "tipo": "prensa",
+  "fecha": "2025-01-10",
+  "cita": "Podemos advierte de que impedir que las Administraciones públicas ejerzan la acusación popular \"puede poner en peligro su personación en casos de violencia machista\"",
+  "justificacion": "Podemos pide medidas más duras contra el «lawfare» y considera insuficiente la reforma del PSOE, pero rechaza una de sus limitaciones (que las administraciones no puedan ejercer la acusación popular): una postura ambivalente.",
+  "valor": 3,
+  "nota": "Coincide con la estimación: no apoya ni rechaza en bloque limitar la acusación popular."
+ },
+ {
+  "id": "L07/pod",
+  "estado": "fuente",
+  "url": "https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html",
+  "etiqueta": "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
+  "tipo": "prensa",
+  "fecha": "2026-02-11",
+  "cita": "Belarra considera que el anuncio de Sánchez de prohibir las redes sociales para menores de 16 años «suena muy bien», pero «no va a servir para nada»",
+  "justificacion": "La líder de Podemos rechaza que la prohibición sea útil y propone, en su lugar, educación y una red social pública.",
+  "valor": 2,
+  "nota": "Estimada 3. La declaración es escéptica con la prohibición, pero no la rechaza de plano; por eso 2 y no 1."
+ },
+ {
+  "id": "I03/pod",
+  "estado": "fuente",
+  "url": "https://www.redaccionmedica.com/politica/20260225/podemos-quiere-un-examen-publico-para-validar-titulos-de-medicina-privada/258769_0.html",
+  "etiqueta": "Redacción Médica: enmiendas de Podemos para endurecer los requisitos de las universidades privadas",
+  "tipo": "prensa",
+  "fecha": "2026-02-25",
+  "cita": "“Las administraciones públicas no podrán financiar directa ni indirectamente a centros universitarios privados”",
+  "justificacion": "Podemos registró enmiendas para endurecer los requisitos de las universidades privadas y prohibir que reciban financiación pública, lo contrario de facilitar su creación.",
+  "valor": 1,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "K02/pod",
+  "estado": "fuente",
+  "url": "https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/",
+  "etiqueta": "Forbes España: Sumar y Podemos exigen que se eviten las ventas a pérdidas en el campo",
+  "tipo": "prensa",
+  "fecha": "2024-02-06",
+  "cita": "La líder de Podemos, Ione Belarra, se ha sumado a esta reivindicación sobre la ley de la cadena alimentaria.",
+  "justificacion": "Belarra respalda las protestas agrarias y exige que se cumpla la ley de la cadena alimentaria para que no se vendan productos por debajo de su coste de producción.",
+  "valor": 5,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "K08/pod",
+  "estado": "fuente",
+  "url": "https://www.ultimahora.es/noticias/nacional/2023/04/13/1917115/posturas-enfrentadas-sobre-cambios-regadio-donana.html",
+  "etiqueta": "Última Hora (agencias): Belarra califica de «ecocidio» ampliar el regadío junto a Doñana",
+  "tipo": "prensa",
+  "fecha": "2023-04-13",
+  "cita": "ha calificado este jueves de «absoluto ecocidio» la propuesta de la Junta de Andalucía de ampliar la zona regable en la parte norte del Parque Nacional de Doñana",
+  "justificacion": "La secretaria general de Podemos rechaza ampliar regadíos en una zona con el acuífero sobreexplotado, en línea con limitar los nuevos regadíos donde falta agua.",
+  "valor": 5,
+  "nota": "Coincide con la estimación."
+ },
+ {
+  "id": "G06/pod",
+  "estado": "fuente",
+  "url": "https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607",
+  "etiqueta": "Energías Renovables reproduce el programa de Podemos para las europeas de 2024 (movilidad)",
+  "tipo": "programa",
+  "fecha": "2024-06-07",
+  "cita": "incrementar la frecuencia de los servicios existentes de corta y media distancia (metro, cercanías/rodalies, regionales) y crear el servicio allí donde no exista",
+  "justificacion": "El programa centra la inversión ferroviaria en Cercanías, regionales y media distancia, con prioridad para los territorios peor servidos, y no reivindica la alta velocidad.",
+  "valor": 5,
+  "nota": "Coincide con la estimación. El texto del programa está reproducido literalmente en un medio especializado (podemos.info bloquea a robots)."
+ },
+ {
+  "id": "G02/pod",
+  "estado": "fuente",
+  "url": "https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607",
+  "etiqueta": "Energías Renovables reproduce el programa de Podemos para las europeas de 2024 (energía)",
+  "tipo": "programa",
+  "fecha": "2024-06-07",
+  "cita": "Sobre los grandes parques renovables . A partir de un tamaño determinado, será obligatorio llevar a cabo una consulta ciudadana en los municipios y núcleos urbanos a menos de 10 kilómetros de distancia",
+  "justificacion": "Podemos da prioridad a la generación renovable distribuida y cercana al consumo, y condiciona los grandes parques a consultas vecinales y a participación local; no plantea frenar la transición.",
+  "valor": 3,
+  "nota": "Coincide con la estimación: condiciona las grandes plantas, pero no pide limitarlas a costa de la transición."
+ },
+ {
+  "id": "G07/pod",
+  "estado": "estimada",
+  "nota": "Solo se encuentra a Unidas Podemos de Baleares pidiendo en 2024 una prohibición «real» de construir en zonas inundables (noudiari.es, 11-11-2024): es una coalición regional y no aborda las indemnizaciones a los propietarios. No se encontró postura estatal de Podemos."
+ },
+ {
+  "id": "J03/pod",
+  "estado": "estimada",
+  "nota": "Solo hay una postura de Podemos Navarra (2023) contra eliminar la exclusividad, y no pudo abrirse (noticiasdenavarra.com devuelve 406). No se encontró postura estatal en el debate del Estatuto Marco."
+ },
+ {
+  "id": "L06/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre la propuesta de Sánchez (2025) de vincular las cuentas a una identidad real."
+ },
+ {
+  "id": "K07/pod",
+  "estado": "estimada",
+  "nota": "Hay prensa de 2023 sobre el choque de Belarra con el sector cinegético (perros de caza en la ley animal), pero no sobre proteger por ley la caza como actividad necesaria. No se fuerza la fuente."
+ },
+ {
+  "id": "F09/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna declaración de Podemos sobre exigir búsqueda activa de empleo para cobrar el IMV; la prensa de 2020 describe el diseño del Gobierno, no la postura del partido."
+ },
+ {
+  "id": "J04/pod",
+  "estado": "fuente",
+  "url": "https://valenciaplaza.com/valenciaplaza/la-oposicion-derrota-al-gobierno-en-el-congreso-y-mete-13-enmiendas-de-erc-y-junts-a-los-presupuestos",
+  "etiqueta": "Valencia Plaza (Europa Press): votación en el Congreso de la enmienda que limita el «impuesto al azúcar» en los Presupuestos de 2021",
+  "tipo": "prensa",
+  "fecha": "2020-12",
+  "cita": "El PNV ha votado con el PSOE y Unidas Podemos en todas estas votaciones, salvo para limitar el llamado 'impuesto al azúcar', propuesta ante la cual se ha abstenido",
+  "justificacion": "Unidas Podemos, entonces en el Gobierno, votó contra la enmienda que recortaba la subida del IVA de las bebidas azucaradas, es decir, defendió gravarlas más para reducir su consumo.",
+  "valor": 4,
+  "nota": "Coincide con la estimación. La votación es de Unidas Podemos (2020) y se refiere solo a las bebidas azucaradas, no al tabaco ni al alcohol."
+ },
+ {
+  "id": "I09/pod",
+  "estado": "fuente",
+  "url": "https://www.redaccionmedica.com/politica/20230926/el-parlamento-balear-aprueba-eliminar-el-requisito-del-catalan-en-sanidad/210249_0.html",
+  "etiqueta": "Redacción Médica: el Parlamento balear elimina el requisito de catalán en la sanidad con el voto en contra de Unidas Podemos",
+  "tipo": "prensa",
+  "fecha": "2023-09-26",
+  "cita": "El texto ha sido convalidado con los votos a favor de PP y Vox el diputado de Sa Unió y el voto en contra de PSIB, MÉS per Mallorca, Més per Menorca y Unidas Podemos",
+  "justificacion": "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo.",
+  "valor": 4,
+  "nota": "Coincide con la estimación. Es una votación regional de la coalición Unidas Podemos en Baleares."
+ },
+ {
+  "id": "I05/pod",
+  "estado": "estimada",
+  "nota": "Solo hay posturas regionales (Unidas Podemos de Baleares contra el plan de libre elección de lengua, 2023-2024), en prensa local y de opinión; no se encontró postura estatal ni fuente de referencia clara."
+ },
+ {
+  "id": "E05/pod",
+  "estado": "estimada",
+  "nota": "No se encontró postura explícita de Podemos sobre prohibir el reconocimiento facial policial; las búsquedas solo devuelven a organizaciones civiles y al Parlamento Europeo en general."
+ },
+ {
+  "id": "A06/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna declaración ni votación de Podemos sobre las obligaciones que se activan al superar los 50 trabajadores."
+ },
+ {
+  "id": "A07/pod",
+  "estado": "estimada",
+  "nota": "Unidas Podemos estaba en el Gobierno que aprobó el límite de 1.000 € (Ley 11/2021), pero no se encontró una fuente abrible con su voto ni una declaración posterior; los datos abiertos del Congreso exigen la URL exacta de la votación."
+ },
+ {
+  "id": "C01/pod",
+  "estado": "estimada",
+  "nota": "Sobre la «financiación singular» de Cataluña (2024) Belarra solo dijo que el PSOE había dado «gato por liebre» a ERC (menorca.info, 27-08-2024), sin opinar sobre el fondo; no hay postura sobre un concierto catalán."
+ },
+ {
+  "id": "C02/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre dar más recursos a las comunidades infrafinanciadas en la reforma del modelo."
+ },
+ {
+  "id": "C03/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre que el Estado recupere la competencia de educación."
+ },
+ {
+  "id": "C07/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre fusionar municipios pequeños."
+ },
+ {
+  "id": "C08/pod",
+  "estado": "estimada",
+  "nota": "No se encontró una postura reciente y verificable de Podemos sobre convertir el Senado en cámara territorial; solo referencias académicas sin el texto de la propuesta."
+ },
+ {
+  "id": "C09/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre reformar el concierto vasco ni el convenio navarro."
+ },
+ {
+  "id": "D02/pod",
+  "estado": "estimada",
+  "nota": "No se encontró una fuente reciente y abrible de Podemos sobre listas abiertas o desbloqueadas (podemos.info bloquea a robots)."
+ },
+ {
+  "id": "D06/pod",
+  "estado": "estimada",
+  "nota": "Podemos defendió la ILP de regularización de migrantes, pero no se encontró ninguna propuesta suya de votar las ILP obligatoriamente en un plazo fijo."
+ },
+ {
+  "id": "D08/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre limitar los decretos-ley."
+ },
+ {
+  "id": "F04/pod",
+  "estado": "estimada",
+  "nota": "Las fuentes encontradas (pacto PSOE-Podemos de regularización extraordinaria, enero de 2026) tratan de regularizar a quienes ya residen en España, no de facilitar la llegada legal de trabajadores; no hablan exactamente de lo preguntado."
+ },
+ {
+  "id": "F07/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre rebajar impuestos en las zonas rurales despobladas."
+ },
+ {
+  "id": "G03/pod",
+  "estado": "estimada",
+  "nota": "El programa europeo de 2024, reproducido en energias-renovables.com, fija objetivos de venta de coches eléctricos (25 % en 2025, 70 % en 2030, «100 % en 2040»), pero no menciona la prohibición de 2035; no se encontró su voto ni declaración sobre mantenerla."
+ },
+ {
+  "id": "G08/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre ampliar el pastoreo y el aprovechamiento del monte flexibilizando la protección."
+ },
+ {
+  "id": "H02/pod",
+  "estado": "estimada",
+  "nota": "El programa europeo de 2024 no es accesible (podemos.info bloquea a robots) y no se encontró prensa que recoja su postura sobre ceder competencias a la UE."
+ },
+ {
+  "id": "H03/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura explícita de Podemos sobre mantener la unanimidad en la UE."
+ },
+ {
+  "id": "H08/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura explícita de Podemos sobre estrechar relaciones comerciales con China."
+ },
+ {
+  "id": "I04/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre publicar los resultados de cada colegio."
+ },
+ {
+  "id": "J05/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre la evaluación independiente y la supresión de programas."
+ },
+ {
+  "id": "J06/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre evaluar el desempeño con despido en el empleo público."
+ },
+ {
+  "id": "J08/pod",
+  "estado": "estimada",
+  "nota": "No se encontró ninguna postura de Podemos sobre que Sanidad fije tiempos máximos de espera obligatorios en todas las comunidades."
+ },
+ {
+  "id": "K06/pod",
+  "estado": "estimada",
+  "nota": "El programa europeo reproducido en prensa no trata la pesca; no se encontró ninguna postura de Podemos sobre las restricciones pesqueras en el Mediterráneo."
+ },
+ {
+  "id": "K03/pod",
+  "estado": "estimada",
+  "nota": "Indicio, no fuente: Agronews Castilla y León (13-02-2018) recoge una moción de Podemos aprobada en el Congreso que pide concentrar las ayudas directas de la PAC en las explotaciones «pequeñas y medianas, profesionales y ligadas al territorio», con tope de cuantía; apoyaría el valor 5. Pero la web devuelve 403 a curl y el revisor no puede comprobarla, y es antigua. Falta localizar la moción en el BOCG."
+ }
+]
