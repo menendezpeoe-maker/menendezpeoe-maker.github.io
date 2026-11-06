@@ -8,8 +8,8 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
    - Cada tanda cumple también los puntos de su fecha en `MISION.md`, aunque aquí no estén detallados. Ejemplos: en /votar/, diferenciar lo oficial, lo explicativo y lo que depende de cada convocatoria; en T5–T7, la fecha de consulta y si la postura es compromiso explícito, inferida o sin información suficiente; en el 30 de noviembre, aclarar que el test y el voto miden cosas distintas.
 2. **Si la tanda anterior quedó a medias**, termínala antes de empezar la tuya. Si no da tiempo a las dos, prioriza terminar lo pendiente y deja la tuya anotada.
 3. **Gasta poco: el titular necesita su límite semanal para otras cosas.**
-   - Haz solo lo de tu tanda, con unas 2–3 horas de trabajo como máximo.
-   - Nunca más de 2 subagentes a la vez.
+   - Haz solo lo de tu tanda, sin límite de tiempo fijo (el titular lo quitó el 6 nov).
+   - Nunca más de 3 subagentes a la vez (el titular lo amplió de 2 a 3 el 6 nov).
    - Nada de rehacer o reanalizar lo que ya funciona.
    - Si algo es demasiado grande, haz la parte de más valor y anota el resto en `ESTADO.md`.
 4. **Calidad antes que cantidad.**
@@ -59,7 +59,7 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 10. **Trabajo por bloques, nunca a medias en público.**
     - Antes de empezar, divide tu tanda en bloques ordenados de más a menos valor.
     - Termina, prueba, revisa (regla 9) y publica bloque a bloque. Lo que se ve en la web siempre está completo.
-    - Hacia las 2 horas no empieces bloques nuevos: dedica el resto a revisar y publicar.
+    - Sin límite de tiempo por tanda (el titular lo quitó el 6 nov): prioriza la calidad; deja siempre tiempo para revisar y publicar.
     - Lo que no dé tiempo, anótalo en `ESTADO.md` con pasos concretos (archivos, qué falta, qué pruebas añadir), para que otra tanda lo retome sin volver a analizar.
 11. **Si una tanda anterior no llegó a ejecutarse** (no tiene entrada en `ESTADO.md`; por ejemplo, porque se agotó el límite de uso):
     - No la hagas entera además de la tuya: no daría tiempo y saldrían las dos a medias.
