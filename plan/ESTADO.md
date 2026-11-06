@@ -31,6 +31,13 @@
 
 Entradas anteriores a R0: `plan/ESTADO-HISTORICO.md`.
 
+## 6 nov 2026 · S1 (tanda completa de las 21:00): sin novedades, nada publicado
+- **Programas del 29N:** ninguno publicado con enlace oficial abierto y leído (PP: solo el manifiesto «Contrato con España» del 19 oct; PSOE, Vox, Frente Amplio, Podemos, Junts: nada; ERC: un documento detallado que solo cita la prensa (Demócrata, 403 al abrirlo), no la web oficial: no cuenta). Webs de Vox, Podemos, ERC y Junts bloquean a los robots; un intento de abrirlas con un navegador que se hace pasar por uno normal fue denegado por el sistema y no se repitió. Hallazgos previos en `plan/REVISION-PREVIA-6NOV.md`. Sin cambios en `src/programas.src.mjs` ni en posturas.
+- **Debates:** fuente abierta (Euronews 22 oct): cara a cara 16 nov (Mediaset), portavoces 23 nov (RTVE), cuatro candidatos 26 nov (PSOE acepta RTVE; PP rechaza RTVE y mantiene Atresmedia; sin hora ni cadena acordadas). Es lo que ya recoge `src/debates.src.mjs`: sin cambios. No se atribuyen posiciones por partido en la web (neutralidad).
+- **Publicación:** ninguna (sin datos nuevos). `comprobado` y `revisado` siguen en 2026-11-04; se actualizarán en la próxima tanda con datos nuevos.
+- **Cambio de reglas del titular (6 nov):** sin límite de tiempo por tanda y hasta 3 subagentes a la vez (`PLAN.md`, regla 3; solo S1 lo lleva en su encargo programado).
+- **Para S1b (10 nov):** repetir programas con otro acceso a Vox, Podemos, ERC y Junts, y localizar la web oficial de Frente Amplio.
+
 ## 4 nov 2026 · Correo público, debates y revisión de provincias (petición del titular)
 - **Correo público de contacto:** `test29n.es@gmail.com` (elegido por el titular el 4 nov). Sustituye al anterior en `pages.mjs`, `assets/papeleta.js` («¿Ves un error?», aviso legal, prensa, metodología, contacto de la ficha de prensa; 150 páginas) y en las pruebas `confianza`, `support` y `growth`. El correo de los commits (`CLAUDE.md`) no cambia.
 - **Debates (`src/debates.src.mjs`, fuente Euronews 22 oct):** cara a cara de Mediaset del 16 nov aceptado por los dos candidatos (hora y confirmación de la cadena por anunciar); debate a cuatro planteado para el 26 nov con la cadena sin acordar (RTVE y Atresmedia lo han planteado), redactado sin atribuir posiciones a ningún partido. La fila «Atresmedia» pasa a «Debate entre los principales candidatos» (`debate-candidatos`). Portavoces de RTVE del 23 nov sin cambios (propuesta).
