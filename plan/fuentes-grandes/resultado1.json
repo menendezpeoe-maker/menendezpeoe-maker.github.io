@@ -226,5 +226,17 @@
   "justificacion": "El programa de Sumar no propone suprimir las diputaciones; al contrario, plantea reforzar su capacidad técnica y coordinarse con ellas.",
   "valor": 2,
   "nota": "La estimación era 4 (probablemente por la tradición de IU contraria a las diputaciones). El programa de 2023 del espacio de Frente Amplio habla de reforzarlas, lo que respalda un 2. Revisar si hay un documento de Frente Amplio de 2026 que diga otra cosa."
+ },
+ {
+  "id": "F09/vox",
+  "estado": "fuente",
+  "url": "https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/",
+  "etiqueta": "The Objective: el Congreso convalida el Ingreso Mínimo Vital con la abstención de Vox (10 de junio de 2020)",
+  "tipo": "parlamento",
+  "fecha": "2020-06-10",
+  "cita": "Vox , el único partido que no ha votado a favor de la medida, ha criticado que no sea temporal y no esté condicionada a la búsqueda de empleo.",
+  "justificacion": "Vox se abstuvo en la convalidación del Ingreso Mínimo Vital y criticó que no se condicionara a la búsqueda de empleo.",
+  "valor": 4,
+  "nota": "Coincide con la estimación (4). En la votación Vox se abstuvo; su crítica expresa fue la falta de condicionalidad a la búsqueda de empleo."
  }
 ]
