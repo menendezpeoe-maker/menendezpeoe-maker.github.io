@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="es" class="tno-noticia-view tno-single-view">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Origins fetched late by the Didomi and Marfeel SDKs -->
+	<link rel="preconnect" href="https://api.privacy-center.org" crossorigin="use-credentials">
+	<link rel="preconnect" href="https://experiences.mrf.io">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://theobjective.com/wp-content/themes/to2022/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://theobjective.com/wp-content/themes/to2022/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://theobjective.com/wp-content/themes/to2022/favicon-16x16.png">
+	<script async id="ebx" src="//applets.ebxcdn.com/ebx.js"></script>
+	<meta name="msvalidate.01" content="6EAD2E9D3B6A79323A17E7C2BB4BA740" />
+
+	        <script type="text/javascript">
+            if (!window.didomiConfig) {
+                window.didomiConfig = {};
+            }
+            if (!window.didomiConfig.notice) {
+                window.didomiConfig.notice = {};
+            }
+            if (!window.didomiConfig.app) {
+                window.didomiConfig.app = {};
+            }
+
+            window.didomiConfig.app.deniedConsentDuration = 2592000; // 30 days in seconds
+            window.didomiConfig.notice.enable = false;
+        </script>
+        <script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function n(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var r=document.createElement("iframe");r.style.display="none";r.name=e;r.title=e;t.insertBefore(r,t.firstChild)}else{setTimeout(function(){n(e)},5)}}}function e(r,i,o,c,s){function e(e,t,r,n){if(typeof r!=="function"){return}if(!window[i]){window[i]=[]}var a=false;if(s){a=s(e,n,r)}if(!a){window[i].push({command:e,version:t,callback:r,parameter:n})}}e.stub=true;e.stubVersion=2;function t(n){if(!window[r]||window[r].stub!==true){return}if(!n.data){return}var a=typeof n.data==="string";var e;try{e=a?JSON.parse(n.data):n.data}catch(t){return}if(e[o]){var i=e[o];window[r](i.command,i.version,function(e,t){var r={};r[c]={returnValue:e,success:t,callId:i.callId};n.source.postMessage(a?JSON.stringify(r):r,"*")},i.parameter)}}if(typeof window[r]!=="function"){window[r]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");n("__tcfapiLocator");(function(e){var t=document.createElement("link");t.rel="preconnect";t.as="script";var r=document.createElement("link");r.rel="dns-prefetch";r.as="script";var n=document.createElement("link");n.rel="preload";n.as="script";var a=document.createElement("script");a.id="spcloader";a.type="text/javascript";a["async"]=true;a.charset="utf-8";var i="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.href="https://sdk.privacy-center.org/";r.href="https://sdk.privacy-center.org/";n.href=i;a.src=i;var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(t,o);o.parentNode.insertBefore(r,o);o.parentNode.insertBefore(n,o);o.parentNode.insertBefore(a,o)})("ce314ce3-1950-4f8a-b539-903be931114a")})();</script>
+            <script type="text/javascript">
+            function detectWebView() {
+                var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                if (/iPhone/i.test(userAgent) && !/Safari/i.test(userAgent) && !/CriOS/i.test(userAgent)) {
+                    return 3;
+                }
+                if (/Android/i.test(userAgent) && /wv/i.test(userAgent)) {
+                    return 4;
+                }
+                return 0;
+            }
+
+            function e(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],c=document.createElement("script");c.src=e,t?c.type="module":(c.async=!0,c.type="text/javascript",c.setAttribute("nomodule",""));var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(c,n)}function t(t,c,n){var a,o,r;null!==(a=t.marfeel)&&void 0!==a||(t.marfeel={}),null!==(o=(r=t.marfeel).cmd)&&void 0!==o||(r.cmd=[]),t.marfeel.config=n,t.marfeel.config.accountId=c;var i="https://sdk.mrf.io/statics";e("".concat(i,"/marfeel-sdk.js?id=").concat(c),!0),e("".concat(i,"/marfeel-sdk.es5.js?id=").concat(c),!1)}!function(e,c){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};t(e,c,n)}(window,3100,{
+                pageType: detectWebView()
+            });
+        </script>
+        <script type="module" src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId=3100&#038;url=https%3A%2F%2Ftheobjective.com%2F&#038;experimentType=HeadlineAB&#038;lang=es&#038;version=esnext" async></script>
+        <script type="application/javascript" src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId=3100&#038;url=https%3A%2F%2Ftheobjective.com%2F&#038;experimentType=HeadlineAB&#038;lang=es&#038;version=legacy" nomodule async></script>
+        <meta property="mrf:authors" content="THE OBJECTIVE" /><meta property="mrf:sections" content="Economía;España" /><meta property="mrf:tags" content="keyword:Ingreso mínimo vital" />        <link rel="preload" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" as="script" type="text/javascript" />
+        <script>
+            var optidigitalQueue = optidigitalQueue || {};
+            optidigitalQueue.cmd = optidigitalQueue.cmd || [];
+        </script>
+        <script type='module' id='optidigital-ad-init' async data-config='{"adUnit": "/470376764/od.theobjective.com/economia", "pageTargeting": {"single":"post","categoria":"Econom\u00eda,Espa\u00f1a"}}'
+            src='//scripts.opti-digital.com/modules/?site=theobjective'></script>
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO Premium plugin v27.6 (Yoast SEO v27.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox</title>
+	<meta name="description" content="Todos los partidos políticos, excepto Vox —que se ha abstenido—, han dado el sí en el Congreso al nuevo ingreso mínimo vital (IMV). Esta medida persigue" />
+	<link rel="canonical" href="https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox" />
+	<meta property="og:description" content="Todos los partidos políticos, excepto Vox —que se ha abstenido—, han dado el sí en el Congreso al nuevo ingreso mínimo vital (IMV). Esta medida persigue" />
+	<meta property="og:url" content="https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/" />
+	<meta property="og:site_name" content="The Objective" />
+	<meta property="article:publisher" content="https://www.facebook.com/theobjective.esp" />
+	<meta property="article:published_time" content="2020-06-10T18:06:48+00:00" />
+	<meta property="article:modified_time" content="2020-06-11T14:55:17+00:00" />
+	<meta property="og:image" content="https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox.jpg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="THE OBJECTIVE" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@TheObjective_es" />
+	<meta name="twitter:site" content="@TheObjective_es" />
+	<meta property="og:updated_time" content="2020-06-11T14:55:17+00:00" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="amphtml" href="https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/?amp" /><meta name="generator" content="AMP for WP 1.1.14"/><link rel='dns-prefetch' href='//challenges.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+
+<link rel="alternate" type="application/rss+xml" title="The Objective &raquo; Feed" href="https://theobjective.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Economía RSS Feed" href="https://theobjective.com/economia/feed/" />
+<script>(()=>{"use strict";const e=[400,500,600,700,800,900],t=e=>`wprm-min-${e}`,n=e=>`wprm-max-${e}`,s=new Set,o="ResizeObserver"in window,r=o?new ResizeObserver((e=>{for(const t of e)c(t.target)})):null,i=.5/(window.devicePixelRatio||1);function c(s){const o=s.getBoundingClientRect().width||0;for(let r=0;r<e.length;r++){const c=e[r],a=o<=c+i;o>c+i?s.classList.add(t(c)):s.classList.remove(t(c)),a?s.classList.add(n(c)):s.classList.remove(n(c))}}function a(e){s.has(e)||(s.add(e),r&&r.observe(e),c(e))}!function(e=document){e.querySelectorAll(".wprm-recipe").forEach(a)}();if(new MutationObserver((e=>{for(const t of e)for(const e of t.addedNodes)e instanceof Element&&(e.matches?.(".wprm-recipe")&&a(e),e.querySelectorAll?.(".wprm-recipe").forEach(a))})).observe(document.documentElement,{childList:!0,subtree:!0}),!o){let e=0;addEventListener("resize",(()=>{e&&cancelAnimationFrame(e),e=requestAnimationFrame((()=>s.forEach(c)))}),{passive:!0})}})();</script><style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://theobjective.com/wp-includes/css/dist/block-library/style.min.css?ver=adc76d329fcfe00a55f200aab69de6db' media='all' />
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='follow-author-css-css' href='https://theobjective.com/wp-content/plugins/follow-author-plugin/follow-author.css?ver=1.8.5' media='all' />
+<link rel='stylesheet' id='wp-tts-audio-player-css' href='https://theobjective.com/wp-content/plugins/wp-tts-plugin/assets/css/frontend-player.css?ver=1.10.3' media='all' />
+<link rel='stylesheet' id='ep_general_styles-css' href='https://theobjective.com/wp-content/plugins/elasticpress/dist/css/general-styles.css?ver=66295efe92a630617c00' media='all' />
+<style type="text/css" id="tno-google-css" media="all">@font-face {font-family:'Merriweather';font-style:normal;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:normal;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/italic.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:300;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:400;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/italic.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Merriweather';font-style:italic;font-weight:700;src:url(/cf-fonts/v/merriweather/5.2.11/latin-ext/wght/italic.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<link rel='stylesheet' id='flickity-css' href='https://theobjective.com/wp-content/themes/to2022/assets/plugins/flickity/flickity.css?ver=2.3.0' media='all' />
+<link rel='stylesheet' id='tno-style-css' href='https://theobjective.com/wp-content/themes/to2022/assets/styles/base-1790000365155.min.css?ver=1793477632' media='all' />
+<link rel='stylesheet' id='tno-general-single-css' href='https://theobjective.com/wp-content/themes/to2022/assets/styles/general-single-1790000365155.min.css?ver=1793477632' media='all' />
+        <meta property="fb:pages" content="152984254897718" />
+    <script src="https://theobjective.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<style type="text/css"> .tippy-box[data-theme~="wprm"] { background-color: #333333; color: #FFFFFF; } .tippy-box[data-theme~="wprm"][data-placement^="top"] > .tippy-arrow::before { border-top-color: #333333; } .tippy-box[data-theme~="wprm"][data-placement^="bottom"] > .tippy-arrow::before { border-bottom-color: #333333; } .tippy-box[data-theme~="wprm"][data-placement^="left"] > .tippy-arrow::before { border-left-color: #333333; } .tippy-box[data-theme~="wprm"][data-placement^="right"] > .tippy-arrow::before { border-right-color: #333333; } .tippy-box[data-theme~="wprm"] a { color: #FFFFFF; } .wprm-comment-rating svg { width: 18px !important; height: 18px !important; } img.wprm-comment-rating { width: 90px !important; height: 18px !important; } body { --comment-rating-star-color: #343434; } body { --wprm-popup-font-size: 16px; } body { --wprm-popup-background: #ffffff; } body { --wprm-popup-title: #000000; } body { --wprm-popup-content: #444444; } body { --wprm-popup-button-background: #444444; } body { --wprm-popup-button-text: #ffffff; } body { --wprm-popup-accent: #747B2D; }</style><style type="text/css">.wprm-glossary-term {color: #5A822B;text-decoration: underline;cursor: help;}</style><style type="text/css">.wprm-recipe-template-snippet-basic-buttons {
+    font-family: inherit; /* wprm_font_family type=font */
+    font-size: 0.9em; /* wprm_font_size type=font_size */
+    text-align: center; /* wprm_text_align type=align */
+    margin-top: 0px; /* wprm_margin_top type=size */
+    margin-bottom: 10px; /* wprm_margin_bottom type=size */
+}
+.wprm-recipe-template-snippet-basic-buttons a  {
+    margin: 5px; /* wprm_margin_button type=size */
+    margin: 5px; /* wprm_margin_button type=size */
+}
+
+.wprm-recipe-template-snippet-basic-buttons a:first-child {
+    margin-left: 0;
+}
+.wprm-recipe-template-snippet-basic-buttons a:last-child {
+    margin-right: 0;
+}.wprm-recipe-template-chic {
+    margin: 20px auto;
+    background-color: #fafafa; /* wprm_background type=color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 0.9em; /* wprm_main_font_size type=font_size */
+    line-height: 1.5em; /* wprm_main_line_height type=font_size */
+    color: #333333; /* wprm_main_text type=color */
+    max-width: 650px; /* wprm_max_width type=size */
+}
+.wprm-recipe-template-chic a {
+    color: #3498db; /* wprm_link type=color */
+}
+.wprm-recipe-template-chic p, .wprm-recipe-template-chic li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 1em !important;
+    line-height: 1.5em !important; /* wprm_main_line_height type=font_size */
+}
+.wprm-recipe-template-chic li:not(.wprm-recipe-instruction-tip) {
+    margin: 0 0 0 32px !important;
+}
+.wprm-recipe-template-chic li:not(.wprm-recipe-instruction-tip) {
+    padding: 0 !important;
+}
+.rtl .wprm-recipe-template-chic li:not(.wprm-recipe-instruction-tip) {
+    margin: 0 32px 0 0 !important;
+}
+.wprm-recipe-template-chic ol, .wprm-recipe-template-chic ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-chic br {
+    display: none;
+}
+.wprm-recipe-template-chic .wprm-recipe-name,
+.wprm-recipe-template-chic .wprm-recipe-header {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_header_font_family type=font */
+    color: #000000; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+}
+.wprm-recipe-template-chic .wprm-recipe-header * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+}
+.wprm-recipe-template-chic h1,
+.wprm-recipe-template-chic h2,
+.wprm-recipe-template-chic h3,
+.wprm-recipe-template-chic h4,
+.wprm-recipe-template-chic h5,
+.wprm-recipe-template-chic h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_header_font_family type=font */
+    color: #212121; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-chic .wprm-recipe-header {
+    margin-top: 1.2em !important;
+}
+.wprm-recipe-template-chic h1 {
+    font-size: 2em; /* wprm_h1_size type=font_size */
+}
+.wprm-recipe-template-chic h2 {
+    font-size: 1.8em; /* wprm_h2_size type=font_size */
+}
+.wprm-recipe-template-chic h3 {
+    font-size: 1.2em; /* wprm_h3_size type=font_size */
+}
+.wprm-recipe-template-chic h4 {
+    font-size: 1em; /* wprm_h4_size type=font_size */
+}
+.wprm-recipe-template-chic h5 {
+    font-size: 1em; /* wprm_h5_size type=font_size */
+}
+.wprm-recipe-template-chic h6 {
+    font-size: 1em; /* wprm_h6_size type=font_size */
+}
+.wprm-recipe-template-chic {
+    font-size: 1em; /* wprm_main_font_size type=font_size */
+	border-style: solid; /* wprm_border_style type=border */
+	border-width: 1px; /* wprm_border_width type=size */
+	border-color: #E0E0E0; /* wprm_border type=color */
+    padding: 10px;
+    background-color: #ffffff; /* wprm_background type=color */
+    max-width: 950px; /* wprm_max_width type=size */
+}
+.wprm-recipe-template-chic a {
+    color: #5A822B; /* wprm_link type=color */
+}
+.wprm-recipe-template-chic .wprm-recipe-name {
+    line-height: 1.3em;
+    font-weight: bold;
+}
+.wprm-recipe-template-chic .wprm-template-chic-buttons {
+	clear: both;
+    font-size: 0.9em;
+    text-align: center;
+}
+.wprm-recipe-template-chic .wprm-template-chic-buttons .wprm-recipe-icon {
+    margin-right: 5px;
+}
+.wprm-recipe-template-chic .wprm-recipe-header {
+	margin-bottom: 0.5em !important;
+}
+.wprm-recipe-template-chic .wprm-nutrition-label-container {
+	font-size: 0.9em;
+}
+.wprm-recipe-template-chic .wprm-call-to-action {
+	border-radius: 3px;
+}.wprm-recipe-template-compact-howto {
+    margin: 20px auto;
+    background-color: #fafafa; /* wprm_background type=color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 0.9em; /* wprm_main_font_size type=font_size */
+    line-height: 1.5em; /* wprm_main_line_height type=font_size */
+    color: #333333; /* wprm_main_text type=color */
+    max-width: 650px; /* wprm_max_width type=size */
+}
+.wprm-recipe-template-compact-howto a {
+    color: #3498db; /* wprm_link type=color */
+}
+.wprm-recipe-template-compact-howto p, .wprm-recipe-template-compact-howto li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 1em !important;
+    line-height: 1.5em !important; /* wprm_main_line_height type=font_size */
+}
+.wprm-recipe-template-compact-howto li:not(.wprm-recipe-instruction-tip) {
+    margin: 0 0 0 32px !important;
+}
+.wprm-recipe-template-compact-howto li:not(.wprm-recipe-instruction-tip) {
+    padding: 0 !important;
+}
+.rtl .wprm-recipe-template-compact-howto li:not(.wprm-recipe-instruction-tip) {
+    margin: 0 32px 0 0 !important;
+}
+.wprm-recipe-template-compact-howto ol, .wprm-recipe-template-compact-howto ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-compact-howto br {
+    display: none;
+}
+.wprm-recipe-template-compact-howto .wprm-recipe-name,
+.wprm-recipe-template-compact-howto .wprm-recipe-header {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_header_font_family type=font */
+    color: #000000; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+}
+.wprm-recipe-template-compact-howto .wprm-recipe-header * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_main_font_family type=font */
+}
+.wprm-recipe-template-compact-howto h1,
+.wprm-recipe-template-compact-howto h2,
+.wprm-recipe-template-compact-howto h3,
+.wprm-recipe-template-compact-howto h4,
+.wprm-recipe-template-compact-howto h5,
+.wprm-recipe-template-compact-howto h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* wprm_header_font_family type=font */
+    color: #212121; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wprm-recipe-template-compact-howto .wprm-recipe-header {
+    margin-top: 1.2em !important;
+}
+.wprm-recipe-template-compact-howto h1 {
+    font-size: 2em; /* wprm_h1_size type=font_size */
+}
+.wprm-recipe-template-compact-howto h2 {
+    font-size: 1.8em; /* wprm_h2_size type=font_size */
+}
+.wprm-recipe-template-compact-howto h3 {
+    font-size: 1.2em; /* wprm_h3_size type=font_size */
+}
+.wprm-recipe-template-compact-howto h4 {
+    font-size: 1em; /* wprm_h4_size type=font_size */
+}
+.wprm-recipe-template-compact-howto h5 {
+    font-size: 1em; /* wprm_h5_size type=font_size */
+}
+.wprm-recipe-template-compact-howto h6 {
+    font-size: 1em; /* wprm_h6_size type=font_size */
+}
+.wprm-recipe-template-compact-howto {
+	border-style: solid; /* wprm_border_style type=border */
+	border-width: 1px; /* wprm_border_width type=size */
+	border-color: #777777; /* wprm_border type=color */
+	border-radius: 0px; /* wprm_border_radius type=size */
+	padding: 10px;
+}.wprm-recipe-template-meadow {
+    margin: 20px auto;
+    background-color: #ffffff; /* wprm_background type=color */
+    font-family: "Inter", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 16px; /* wprm_main_font_size type=font_size */
+    line-height: 1.5em; /* wprm_main_line_height type=font_size */
+    color: #000000; /* wprm_main_text type=color */
+    max-width: 1600px; /* wprm_max_width type=size */
+
+    --meadow-accent-color: #747B2D; /* wprm_accent_color type=color */
+    --meadow-main-background-color: #F3F4EC; /* wprm_main_background_color type=color */
+
+    border: 0;
+    border-top: 1px solid var(--meadow-accent-color);
+
+    --meadow-list-border-color: #DEB538; /* wprm_list_border_color type=color */
+}
+.wprm-recipe-template-meadow a {
+    color: #000000; /* wprm_link type=color */
+}
+.wprm-recipe-template-meadow p, .wprm-recipe-template-meadow li {
+    font-family: "Inter", sans-serif; /* wprm_main_font_family type=font */
+    font-size: 1em;
+    line-height: 1.5em; /* wprm_main_line_height type=font_size */
+}
+.wprm-recipe-template-meadow li {
+    margin: 0 0 0 32px;
+    padding: 0;
+}
+.rtl .wprm-recipe-template-meadow li {
+    margin: 0 32px 0 0;
+}
+.wprm-recipe-template-meadow ol, .wprm-recipe-template-meadow ul {
+    margin: 0;
+    padding: 0;
+}
+.wprm-recipe-template-meadow br {
+    display: none;
+}
+.wprm-recipe-template-meadow .wprm-recipe-name,
+.wprm-recipe-template-meadow .wprm-recipe-header {
+    font-family: "Gloock", serif; /* wprm_header_font_family type=font */
+    color: #1e1e1e; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+}
+.wprm-recipe-template-meadow .wprm-recipe-header * {
+    font-family: "Inter", sans-serif; /* wprm_main_font_family type=font */
+}
+.wprm-recipe-template-meadow h1,
+.wprm-recipe-template-meadow h2,
+.wprm-recipe-template-meadow h3,
+.wprm-recipe-template-meadow h4,
+.wprm-recipe-template-meadow h5,
+.wprm-recipe-template-meadow h6 {
+    font-family: "Gloock", serif; /* wprm_header_font_family type=font */
+    color: #1e1e1e; /* wprm_header_text type=color */
+    line-height: 1.3em; /* wprm_header_line_height type=font_size */
+    margin: 0;
+    padding: 0;
+}
+.wprm-recipe-template-meadow .wprm-recipe-header {
+    margin-top: 1.2em;
+}
+.wprm-recipe-template-meadow h1 {
+    font-size: 2.2em; /* wprm_h1_size type=font_size */
+}
+.wprm-recipe-template-meadow h2 {
+    font-size: 2.2em; /* wprm_h2_size type=font_size */
+}
+.wprm-recipe-template-meadow h3 {
+    font-size: 1.8em; /* wprm_h3_size type=font_size */
+}
+.wprm-recipe-template-meadow h4 {
+    font-size: 1em; /* wprm_h4_size type=font_size */
+}
+.wprm-recipe-template-meadow h5 {
+    font-size: 1em; /* wprm_h5_size type=font_size */
+}
+.wprm-recipe-template-meadow h6 {
+    font-size: 1em; /* wprm_h6_size type=font_size */
+}
+.wprm-recipe-template-meadow .meadow-header-meta {
+    max-width: 800px;
+    margin: 0 auto;
+}</style>
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"visitorLoginState":"logged-out","visitorType":"visitor-logged-out","pageTitle":"El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox","pagePostType":"post","pagePostType2":"single-post","pageCategory":["economia","espana"],"pageAttributes":["ingreso-minimo-vital"],"pagePostAuthor":"THE OBJECTIVE","pagePostDate":"10 junio, 2020","pagePostDateYear":2020,"pagePostDateMonth":6,"pagePostDateDay":10,"pagePostDateDayName":"miércoles","pagePostDateHour":20,"pagePostDateMinute":6,"pagePostDateIso":"2020-06-10T20:06:48+02:00","pagePostDateUnix":1591819608};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPR6MJV');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->			<link rel="preload" href="https://use.typekit.net/pjd6xve.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="https://use.typekit.net/pjd6xve.css"></noscript>
+			        <!-- SENSIC tag starts -->
+        <script type="text/javascript">
+            var gfkS2sConf = {
+                media:    "TheobjectiveWeb",
+                url:      "//es-config.sensic.net/s2s-web.js",
+                type:     "WEB",
+            };
+            (function (w, d, c, s, id, v) {
+                if (d.getElementById(id)) {
+                    return;
+                }
+
+                w.gfkS2sConf = c;
+                w[id] = {};
+                w[id].agents = [];
+                var api = ["playStreamLive", "playStreamOnDemand", "stop", "skip", "screen", "volume", "impression"];
+                w.gfks = (function () {
+                    function f(sA, e, cb) {
+                        return function () {
+                            sA.p = cb();
+                            sA.queue.push({f: e, a: arguments});
+                        };
+                    }
+                    function s(c, pId, cb) {
+                        var sA = {queue: [], config: c, cb: cb, pId: pId};
+                        for (var i = 0; i < api.length; i++) {
+                            var e = api[i];
+                            sA[e] = f(sA, e, cb);
+                        }
+                        return sA;
+                    }
+                    return s;
+                }());
+                w[id].getAgent = function (cb, pId) {
+                    var a = {
+                        a: new w.gfks(c, pId || "", cb || function () {
+                            return 0;
+                        })
+                    };
+                    function g(a, e) {
+                        return function () {
+                            return a.a[e].apply(a.a, arguments);
+                        }
+                    }
+                    for (var i = 0; i < api.length; i++) {
+                        var e = api[i];
+                        a[e] = g(a, e);
+                    }
+                    w[id].agents.push(a);
+                    return a;
+                };
+
+                var lJS = function (eId, url) {
+                    var tag = d.createElement(s);
+                    var el = d.getElementsByTagName(s)[0];
+                    tag.id = eId;
+                    tag.async = true;
+                    tag.type = 'text/javascript';
+                    tag.src = url;
+                    el.parentNode.insertBefore(tag, el);
+                };
+
+                if (c.hasOwnProperty(v)) {lJS(id + v, c[v]);}
+                lJS(id, c.url);
+            })(window, document, gfkS2sConf, 'script', 'gfkS2s', 'visUrl');
+        </script>
+        <!-- SENSIC tag ends -->
+                <script async src="https://t.seedtag.com/t/1031-3162-01.js"></script>
+        <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+<!-- Schema & Structured Data For WP v1.60 - -->
+<script type="application/ld+json" class="saswp-schema-markup-output">[{"@context":"https://schema.org/","@type":"NewsArticle","@id":"https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/#newsarticle","url":"https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/","headline":"El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox","mainEntityOfPage":"https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/","datePublished":"2020-06-10T18:06:48+00:00","dateModified":"2020-06-11T14:55:17+00:00","description":"Todos los partidos políticos, excepto Vox —que se ha abstenido—, han dado el sí en el Congreso al nuevo ingreso mínimo vital (IMV). Esta medida persigue frenar la","articleSection":"España","articleBody":"Todos los partidos políticos, excepto Vox —que se ha abstenido—, han dado el sí en el Congreso al nuevo ingreso mínimo vital (IMV). Esta medida persigue frenar la pobreza en las familias e impulsar la inclusión laboral de estos colectivos.    Cómo te afecta: La ayuda irá desde una renta mínima de 461 euros hasta los 1.015 euros mensuales. El Pleno del Congreso ha apoyado la convalidación del Real Decreto-Ley que regula esta medida con 297 votos a favor, 52 abstenciones y ningún voto en contra. El ingreso mínimo vital costará a las arcas unos 3.000 millones de euros.        El vicepresidente segundo del Gobierno y ministro de Derechos Sociales y Agenda 2030, Pablo Iglesias, y el ministro de Inclusión, Seguridad Social y Migraciones, José Luis Escrivá, han coincidido en que se trata de una de las medidas con mayor capacidad de redistribución de rentas y que \"dignifica el país\". Escrivá ha explicado que el ingreso mínimo ha sido calculado con precisión ya que se adaptará a las necesidades de cada solicitante, teniendo en cuenta la modalidad de familia, sus ingresos y su patrimonio.    \"Las políticas públicas no pueden vivir de espaldas a la sociedad\", ha dicho Escrivá tras puntualizar que el IMV no solo luchará contra la pobreza sino que servirá de palanca para la inclusión social y laboral. \"Es un seguro colectivo que rescatará a las personas en cada momento que sufran carencias\", ha señalado tras añadir que su coste es \"perfectamente asumible\".    Por su parte, Iglesias ha defendido que es el momento de hacer políticas expansivas para afrontar la actual crisis generada por la pandemia y ha dicho que también ayudará a la recuperación económica, ya que la renta irá \"directamente al consumo y ayudará a autónomos y empresas a seguir facturando\".    Vox, el único partido que no ha votado a favor de la medida, ha criticado que no sea temporal y no esté condicionada a la búsqueda de empleo. La formación de Santiago Abascal considera que es el \"precio del pacto con el diablo firmado por Sánchez\" para ser investido y ha reiterado que el IMV supone un efecto llamada a los inmigrantes y pone en riesgo el sistema de protección de la Seguridad Social.","keywords":["Ingreso mínimo vital"," "],"name":"El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox","thumbnailUrl":"https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-150x150.jpg","wordCount":"351","timeRequired":"PT1M33S","mainEntity":{"@type":"WebPage","@id":"https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/"},"author":{"@type":"Person","name":"THE OBJECTIVE","url":"https://theobjective.com/autor/the-objective/","image":{"@type":"ImageObject","url":"https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-694x694.jpg","width":694,"height":694},"sameAs":["https://x.com/TheObjective_es"]},"editor":{"@type":"Person","name":"THE OBJECTIVE","url":"https://theobjective.com/autor/the-objective/","image":{"@type":"ImageObject","url":"https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-694x694.jpg","width":694,"height":694},"sameAs":["https://x.com/TheObjective_es"]},"publisher":{"@type":"Organization","name":"The Objective","url":"https://theobjective.com/","logo":{"@type":"ImageObject","url":"https://theobjective.com/wp-content/uploads/2026/04/logo-to-seo_600x60.png","width":600,"height":60}},"image":[{"@type":"ImageObject","@id":"https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/#primaryimage","url":"https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox.jpg","width":"1920","height":"1080","caption":"El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox"}]}]</script>
+
+      <meta name="onesignal" content="wordpress-plugin"/>
+            <script>
+
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+      OneSignalDeferred.push(function(OneSignal) {
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['serviceWorkerParam'] = { scope: '/' };
+oneSignal_options['serviceWorkerPath'] = 'OneSignalSDKWorker.js.php';
+
+        OneSignal.Notifications.setDefaultUrl("https://theobjective.com");
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = 'c1011ebd-295e-441c-b48b-c2e6ee2ddf14';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "Muchas gracias por suscribirte a The Objective";
+oneSignal_options['welcomeNotification']['message'] = "Periodismo &#039;ethos&#039; en abierto";
+oneSignal_options['path'] = "https://theobjective.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.5f2b561a-4bc4-4806-b010-c7853696b689";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['promptOptions']['actionMessage'] = "Nos gustaría enviarte nuestras notificaciones. Puedes cancelarlas en cualquier momento.";
+oneSignal_options['promptOptions']['exampleNotificationTitleDesktop'] = "Este es un ejemplo de nuestras notificaciones";
+oneSignal_options['promptOptions']['exampleNotificationMessageDesktop'] = "Las notificaciones aparecerán en tu escritorio";
+oneSignal_options['promptOptions']['exampleNotificationTitleMobile'] = "Esta es una nueva noticia en The Objective";
+oneSignal_options['promptOptions']['exampleNotificationMessageMobile'] = "Lee la noticia aquí";
+oneSignal_options['promptOptions']['exampleNotificationCaption'] = "Esta es una nueva noticia en The Objective";
+oneSignal_options['promptOptions']['acceptButtonText'] = "Permitir";
+oneSignal_options['promptOptions']['cancelButtonText'] = "No, gracias";
+oneSignal_options['promptOptions']['siteName'] = "https://theobjective.com/";
+oneSignal_options['promptOptions']['autoAcceptTitle'] = "Haz click en Permitir";
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-right';
+oneSignal_options['notifyButton']['theme'] = 'inverse';
+oneSignal_options['notifyButton']['size'] = 'small';
+oneSignal_options['notifyButton']['showCredit'] = false;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Suscríbete a nuestras notificaciones';
+oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Estás suscrito a nuestras notificaciones';
+oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Has bloqueado nuestras notificaciones';
+oneSignal_options['notifyButton']['text']['message.action.subscribed'] = '¡Gracias por suscribirte!';
+oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = '¡Gracias por volver a suscribirte!';
+oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Ya no recibirás más notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Administrar notificaciones de The Objective';
+oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'Suscríbete';
+oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'Cancelar notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.blocked.title'] = 'Desbloquea las notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.blocked.message'] = 'Sigue estas instrucciones para habilitar las notificaciones';
+oneSignal_options['notifyButton']['colors'] = {};
+oneSignal_options['notifyButton']['colors']['circle.background'] = '#FFE400';
+oneSignal_options['notifyButton']['colors']['circle.foreground'] = 'black';
+oneSignal_options['notifyButton']['colors']['badge.background'] = '#FFE400';
+oneSignal_options['notifyButton']['colors']['badge.foreground'] = 'black';
+oneSignal_options['notifyButton']['colors']['badge.bordercolor'] = 'black';
+oneSignal_options['notifyButton']['colors']['pulse.color'] = 'white';
+oneSignal_options['notifyButton']['colors']['dialog.button.background'] = '#FFE400';
+oneSignal_options['notifyButton']['colors']['dialog.button.background.hovering'] = 'black';
+oneSignal_options['notifyButton']['colors']['dialog.button.background.active'] = 'black';
+oneSignal_options['notifyButton']['colors']['dialog.button.foreground'] = 'white';
+oneSignal_options['notifyButton']['offset'] = {};
+              OneSignal.init(window._oneSignalInitOptions);
+              OneSignal.Slidedown.promptPush()      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.Notifications.requestPermission(); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+</head>
+<body class="tno-noticia-view tno-single-view">
+	
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPR6MJV" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<header class="tno-header tno-header--has-bar">
+		<div id="tno-search-bar" class="tno-header__search" aria-hidden="true">
+    <div class="tno-header__search__form">
+    <form role="search" class="tno-form tno-search-form" action="https://theobjective.com/" method="get">
+        <span class="screen-reader-text">Escribe aquí lo que buscas</span>
+        <input class="tno-search-form__input" type="search" name="s" value="" placeholder="Escribe aquí lo que buscas" />
+        <button class="tno-search-form__submit" type="submit">
+            Buscar        </button>
+    </form>
+</div></div><div class="tno-header__topbar">
+    <div class="tno-header__topbar__wrapper">
+        <div class="tno-header__topbar__left">
+            <button class="tno-backbutton">
+	Volver</button>                        <button aria-label="Abrir barra de búsqueda" class="tno-searchtoggler" aria-controls="tno-search-bar" aria-expanded="false">
+    Buscar</button>        </div>
+        
+                <div class="tno-brand tno-brand--theobjective">
+                    <a href="https://theobjective.com">
+                        <span>The Objective</span>
+                    </a>
+                </div>
+                    <ul class="tno-header__links tno-header__links--icons">
+    <li class="tno-header__links__item">
+        <a href="https://theobjective.com/newsletters">Newsletters</a>    </li>
+            <li class="tno-header__links__item tno-header__links__item--club">
+            <a href="https://theobjective.com/hazte-socio-club-to/">Club TO</a>        </li>
+        <li class="tno-header__links__item">
+        <a class="tno-user-signin" href="https://theobjective.com/myto/" aria-label="MyTO">MyTO</a>    </li>
+</ul>    </div>
+</div><div class="tno-header__mainbar">
+    <div class="tno-header__mainbar__top">
+        <div class="tno-today-ticker"><div class="tno-today-ticker__container"><span class="tno-today-ticker__title">Hoy <span>es noticia</span></span><div class="tno-today-ticker__tags">
+            <div class="tno-today-ticker__tags__slider"><a href="https://theobjective.com/espana/2026-11-04/consulado-falsifico-tipex-expedientes-ley-nietos/" class="carousel-cell" aria-label="Consulado mexicano típex">Consulado mexicano típex</a><a href="https://theobjective.com/espana/2026-11-04/anomalia-voto-argentino-censo-correo/" class="carousel-cell" aria-label="Anomalía voto argentino">Anomalía voto argentino</a><a href="https://theobjective.com/economia/transporte/2026-11-04/examen-controlador-adif-preguntas-igualdad-lzb/" class="carousel-cell" aria-label="Examen Adif igualdad">Examen Adif igualdad</a><a href="https://theobjective.com/espana/politica/2026-11-04/alivio-psoe-dimision-puente-campana/" class="carousel-cell" aria-label="Alivio PSOE dimisión">Alivio PSOE dimisión</a><a href="https://theobjective.com/espana/2026-11-04/madame-denuncia-fiscalia-prostituidas-ceuta/" class="carousel-cell" aria-label="Madame denuncia Fiscalía">Madame denuncia Fiscalía</a><a href="https://theobjective.com/lifestyle/2026-11-04/hermann-hesse-premio-nobel-sobre-la-felicidad-no-es-la-suerte-la-que-te-lleva-a-conseguir-el-exito-sino-tus-propias-decisiones-deseos-y-necesidades-en-tu-camino/" class="carousel-cell" aria-label="Hermann Hesse Nobel">Hermann Hesse Nobel</a><a href="https://theobjective.com/lifestyle/2026-11-04/azorin-escritor-espanol-del-98-las-personas-felices-son-aquellas-que-en-lugar-de-sobrepensar-y-condicionar-su-alegria-a-metas-valoran-la-sencillez-y-la-naturaleza/" class="carousel-cell" aria-label="Azorín felices sencillez">Azorín felices sencillez</a><a href="https://theobjective.com/lifestyle/moda/2026-11-04/es-oficial-aterrizan-en-zara-y-primark-los-7-botines-mas-elegantes-y-versatiles-del-otono-invierno-2026-2027-para-ir-a-la-oficina-y-salir-con-amigas-con-estilo/" class="carousel-cell" aria-label="Zara Primark invierno">Zara Primark invierno</a><a href="https://theobjective.com/gastronomia/2026-11-04/samantha-vallejo-nagera-57-anos-chef-la-mejor-crema-para-cenar-y-entrar-en-calor-se-hace-con-calabaza-asada-leche-de-coco-curry-amarillo-y-un-toque-de-jengibre/" class="carousel-cell" aria-label="Samantha Vallejo chef">Samantha Vallejo chef</a><a href="https://theobjective.com/economia/empleo/2026-11-04/es-oficial-en-el-boe-si-un-empleado-deja-su-trabajo-tiene-derecho-a-cobrar-el-paro-segun-el-articulo-50-en-estos-casos/" class="carousel-cell" aria-label="Paula Monreal lentejas">Paula Monreal lentejas</a><a href="https://theobjective.com/motor/2026-11-04/ivan-cabanas-mecanico-para-conservar-los-faros-del-coche-como-nuevos-no-basta-con-pulirlos-hay-que-lijarlos-y-aplicar-un-polimero/" class="carousel-cell" aria-label="Ivan Cabanas mecánico">Ivan Cabanas mecánico</a></div><button class="tno-today-ticker__tags__button">Más</button></div>
+        </div></div>        <div class="tno-header__mainbar__top__wrapper">
+            <div class="tno-header__mainbar__left">
+                <button class="tno-menutoggler" aria-label="Menú principal" aria-controls="tno-side-menu" aria-expanded="false">
+	<div></div>
+</button>                                <button aria-label="Abrir barra de búsqueda" class="tno-searchtoggler" aria-controls="tno-search-bar" aria-expanded="false">
+    Buscar</button>                <a href="https://theobjective.com/hemeroteca/" class="tno-archive-view tno-header__mainbar__link-hemeroteca">Hemeroteca</a>            </div>
+            
+                <div class="tno-brand tno-brand--theobjective">
+                    <a href="https://theobjective.com">
+                        <span>The Objective</span>
+                    </a>
+                </div>
+                        <ul class="tno-header__links">
+    <li class="tno-header__links__item">
+        <a href="https://theobjective.com/newsletters">Newsletters</a>    </li>
+            <li class="tno-header__links__item tno-header__links__item--club">
+            <a href="https://theobjective.com/hazte-socio-club-to/">Club TO</a>        </li>
+        <li class="tno-header__links__item">
+        <a class="tno-user-signin" href="https://theobjective.com/myto/" aria-label="MyTO">MyTO</a>    </li>
+</ul>        </div>
+    </div>
+    <div class="tno-blocks-ultima-hora">
+    <div class="tno-blocks-ultima-hora__wrapper">
+        <div class="tno-blocks-ultima-hora__label tno-blocks-ultima-hora__label--bullet" style="--bullet-color: #cc2936">
+            <span class="tno-blocks-ultima-hora__label__heading">EXCLUSIVA</span>
+        </div>
+        <div class="tno-blocks-ultima-hora__title">
+            <span class="tno-blocks-ultima-hora__title__main">
+                                    <a href="https://theobjective.com/espana/politica/2026-11-03/reacciones-a-la-dimision-de-oscar-puente-en-directo-el-ministro-de-transportes-anuncia-su-renuncia-al-cargo-tras-el-accidente-de-urda/directo/"><strong>El consulado en México falsificó con típex decenas de expedientes de la ‘ley de nietos’</strong>
+</a>
+                            </span>
+        </div>
+    </div>
+</div></div>
+<div id="tno-side-menu" class="tno-header__sidebar" aria-hidden="true">
+    <div class="tno-header__sidebar__overlay" aria-controls="tno-side-menu" aria-expanded="false"></div>
+    <div class="tno-header__sidebar__container">
+        <div class="tno-header__sidebar__menu">
+            <button class="tno-menutoggler" aria-label="Menú principal" aria-controls="tno-side-menu" aria-expanded="false">
+	<div></div>
+</button>
+                <div class="tno-brand tno-brand--theobjective">
+                    <a href="https://theobjective.com">
+                        <span>The Objective</span>
+                    </a>
+                </div>
+            <div class="tno-social"><a href="https://twitter.com/TheObjective_es" class="tno-social__link tno-social__link--x" title="X" target="_blank" rel="nofollow">X</a><a href="https://www.instagram.com/theobjective_Es/" class="tno-social__link tno-social__link--instagram" title="Instagram" target="_blank" rel="nofollow">Instagram</a><a href="https://www.whatsapp.com/channel/0029Va8aIWu8F2p623W1v22g" class="tno-social__link tno-social__link--whatsapp" title="WhatsApp" target="_blank" rel="nofollow">Whatsapp</a><a href="https://www.facebook.com/theobjective.esp" class="tno-social__link tno-social__link--facebook" title="Facebook" target="_blank" rel="nofollow">Facebook</a><a href="https://es.linkedin.com/company/the-objective-media" class="tno-social__link tno-social__link--linkedin" title="LinkedIn" target="_blank" rel="nofollow">Linkedin</a><a href="https://www.youtube.com/c/TheObjective_es" class="tno-social__link tno-social__link--youtube" title="Youtube" target="_blank" rel="nofollow">Youtube</a><a href="https://www.tiktok.com/@theobjective" class="tno-social__link tno-social__link--tiktok" title="TikTok" target="_blank" rel="nofollow">Tiktok</a><a href="https://t.me/elliberal" class="tno-social__link tno-social__link--telegram" title="Telegram" target="_blank" rel="nofollow">Telegram</a><a href="https://bsky.app/profile/theobjective-es.bsky.social" class="tno-social__link tno-social__link--bluesky" title="Bluesky" target="_blank" rel="nofollow">Bluesky</a><a href="https://www.threads.net/@theobjective_es" class="tno-social__link tno-social__link--threads" title="Threads" target="_blank" rel="nofollow">Threads</a></div><div class="tno-header__sidebar__menu__container"><ul class="tno-header__sidebar__menu__top"><li><a href="/">Portada</a></li><li><div class="item-wrapper"><a href="https://theobjective.com/espana/">España</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/espana/politica/">Política</a></li><li><a href="https://theobjective.com/espana/tribunales/">Tribunales</a></li><li><a href="https://theobjective.com/espana/castilla-y-leon/">Castilla y León</a></li><li><a href="https://theobjective.com/espana/andalucia/">Andalucía</a></li><li><a href="https://theobjective.com/espana/comunidad-valenciana/">Comunidad Valenciana</a></li><li><a href="https://theobjective.com/espana/madrid/">Madrid</a></li><li><a href="https://theobjective.com/espana/cataluna/">Cataluña</a></li><li><a href="https://theobjective.com/espana/pais-vasco/">País Vasco</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/economia/">Economía</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/economia/macroeconomia/">Macroeconomía</a></li><li><a href="https://theobjective.com/economia/empleo/">Empleo</a></li><li><a href="https://theobjective.com/economia/energia/">Energía</a></li><li><a href="https://theobjective.com/economia/banca/">Banca</a></li><li><a href="https://theobjective.com/economia/telecomunicaciones/">Telecomunicaciones</a></li><li><a href="https://theobjective.com/economia/distribucion/">Distribución</a></li><li><a href="https://theobjective.com/economia/transporte/">Transporte</a></li><li><a href="https://theobjective.com/economia/consumo/">Consumo</a></li></ul></li><li><a href="/elsubjetivo/">Opinión</a></li><li><div class="item-wrapper"><a href="https://theobjective.com/cultura/">Cultura</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/cultura/literatura/">Literatura</a></li><li><a href="https://theobjective.com/cultura/cine/">Cine</a></li><li><a href="https://theobjective.com/cultura/series/">Series</a></li><li><a href="https://theobjective.com/cultura/musica/">Música</a></li><li><a href="https://theobjective.com/cultura/teatro/">Teatro</a></li><li><a href="https://theobjective.com/cultura/arte/">Arte</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/sociedad/">Sociedad</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/sociedad/ciencia/">Ciencia</a></li><li><a href="https://theobjective.com/sociedad/medioambiente/">Medio Ambiente</a></li><li><a href="https://theobjective.com/etiqueta/educacion/">Educación</a></li><li><a href="https://theobjective.com/sociedad/suceso/">Sucesos</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/sanidad/">Sanidad</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/etiqueta/farmaceuticas/">Farmacéuticas</a></li><li><a href="https://theobjective.com/etiqueta/salud/">Salud</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/lifestyle/">Lifestyle</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/lifestyle/moda/">Moda</a></li><li><a href="https://theobjective.com/lifestyle/belleza/">Belleza</a></li><li><a href="https://theobjective.com/lifestyle/nutricion/">Nutrición</a></li><li><a href="https://theobjective.com/lifestyle/fitness/">Fitness</a></li><li><a href="https://theobjective.com/lifestyle/viajes/">Viajes</a></li><li><a href="https://theobjective.com/lifestyle/sexualidad/">Sexualidad</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/gastronomia/">Gastronomía</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/etiqueta/recetas/">Recetas de cocina</a></li><li><a href="https://theobjective.com/etiqueta/vinos/">Vinos</a></li><li><a href="https://theobjective.com/etiqueta/restaurantes/">Restaurantes</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/gente/">Gente</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/etiqueta/casa-real-espanola/">Casa Real Española</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/internacional/">Internacional</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/etiqueta/conflicto-israel-palestina/">Conflicto Israel-Palestina</a></li><li><a href="https://theobjective.com/etiqueta/guerra-ucrania-rusia/">Guerra Ucrania - Rusia</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/deportes/">Deportes</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/deportes/futbol/">Fútbol</a></li></ul></li><li><a href="/podcasts/">Podcasts</a></li><li><div class="item-wrapper"><a href="https://theobjective.com/motor/">Motor</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/etiqueta/coches/">Coches</a></li><li><a href="https://theobjective.com/etiqueta/dgt/">DGT</a></li></ul></li><li><a href="https://theobjective.com/the-positive/">The Positive</a></li><li><div class="item-wrapper"><a href="https://theobjective.com/tecnologia/">Tecnología</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/tecnologia/videojuegos/">Videojuegos</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/medios/">Medios</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/medios/television/">Televisión</a></li><li><a href="https://theobjective.com/medios/radio/">Radio</a></li></ul></li><li><div class="item-wrapper"><a href="https://theobjective.com/loterias/">Loterías y sorteos</a><button class="open-submenu" aria-label="Ver más">Ver más</button></div><ul class="sub-menu"><li><a href="https://theobjective.com/loterias/once/">Sorteo ONCE</a></li><li><a href="https://theobjective.com/loterias/euromillones/">Euromillones</a></li></ul></li><li><a href="https://theobjective.com/ultimas-noticias/">Últimas noticias</a></li><li><a href="https://theobjective.com/videos/">Vídeos</a></li><li><a href="https://theobjective.com/galerias/">Galerías</a></li></ul></div><div class="tno-header__sidebar__menu__static"><a href="https://theobjective.com/quienes-somos/" class="about">Quiénes somos</a><a href="https://theobjective.com/hemeroteca/" class="hemeroteca tno-archive-view">Hemeroteca</a><a href="https://theobjective.com/app/" class="app">Nuestra app</a><a href="https://theobjective.com/myto/" class="tno-user-signin">MyTO</a></div>        </div>
+    </div>
+</div>	</header>
+	<main class="tno-content">
+		                <div class="tno-takeover tno-takeover--left">
+                    	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="sky_izq">
+				<!-- sky_izq --><div style='display:none;' class="sky_izq"></div>
+				<!--  --><div style='display:none;' class=""></div>
+			</div>
+					</div>
+	</div>
+                </div>
+                <div class="tno-takeover tno-takeover--right">
+                    	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="Sky_der">
+				<!-- Sky_der --><div style='display:none;' class="Sky_der"></div>
+				<!--  --><div style='display:none;' class=""></div>
+			</div>
+					</div>
+	</div>
+                </div>
+            		            <img class="tno-brand-print" src="https://theobjective.com/wp-content/themes/to2022/assets/img/logo_theobjective@2x.png" alt="The Objective" />
+        <section class="tno-single tno-single--liberal tno-general-single tno-general-single--type-article tno-general-single--standard tno-general-single--post">
+    <div class="tno-single__brand">
+        <a class="liberal-brand" href="https://theobjective.com/economia/">
+            El Liberal - Economía        </a>
+    </div>
+            <div class="tno-section__parallax">
+            	<div class="tno-banner">
+		<div class="tno-banner__container tno-banner__container--billboard">
+			<div class="tno-banner__ad" data-position="Billboard_1">
+				<!-- Billboard_1 --><div style='display:none;' class="Billboard_1"></div>
+				<!-- Mobile_Top --><div style='display:none;' class="Mobile_Top"></div>
+			</div>
+					</div>
+	</div>
+        </div>
+        <div class="tno-section__container tno-general-single__container">
+        <article class="tno-general-single__article">
+            <div class="tno-general-single__wrapper">
+                <header class="tno-general-single__article__header">
+                    <div class="tno-general-single__article__header__wrapper">
+                        <div class="tno-general-single__article__header__category" style="--category-color: #0045ff;">
+                        <a href="https://theobjective.com/economia/">
+                            <span>Economía</span>
+                        </a>
+                    </div>                        <h1 class="tno-general-single__article__header__title">
+                            El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox                        </h1>
+                                                                            <div class="tno-general-single__article__header__top">
+                                <figure class="tno-post-image"><div class="tno-post-image__wrapper tno-post-image__wrapper--article"><img width="1200" height="675" src="https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-1200x675.jpg" class="attachment-tno_discover size-tno_discover" alt="El ingreso mínimo sale adelante en el Congreso con todos los grupos a favor salvo el de Vox" decoding="async" fetchpriority="high" srcset="https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-1200x675.jpg 1200w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-1536x864.jpg 1536w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox-960x540.jpg 960w, https://theobjective.com/wp-content/uploads/2020/06/el-ingreso-minimo-sale-adelante-en-el-congreso-con-todos-los-grupos-a-favor-salvo-el-de-vox.jpg 1920w" sizes="(max-width: 1200px) 100vw, 1200px" /></div><figcaption><p>EFE</p></figcaption></figure>                            </div>
+                                            </div>
+                                    </header>
+                <div class="tno-general-single__article__main">
+                    <div class="tno-general-single__article__main__inner">
+                                                    <div class="tno-general-single__article__main__top">
+                                <div class="tno-general-single__article__main__top__postmeta">
+    <div class="postmeta__info">
+        <ul class="postmeta__authors  postmeta__authors--correspondent">
+            
+<li class="postmeta__authors__item">
+    <div class="postmeta__authors__item__avatar">
+        <figure class="author-image"><a href="https://theobjective.com/autor/the-objective/" aria-label="Conoce más sobre THE OBJECTIVE"><img width="150" height="150" src="https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="THE OBJECTIVE" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-150x150.jpg 150w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-300x300.jpg 300w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-1024x1024.jpg 1024w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-768x768.jpg 768w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-500x500.jpg 500w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-694x694.jpg 694w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-197x197.jpg 197w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-415x415.jpg 415w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-275x275.jpg 275w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ.jpg 1080w" sizes="(max-width: 150px) 100vw, 150px" /></a></figure>    </div>
+    <div class="postmeta__authors__item__card">
+        <div class="postmeta__authors__item__card__name"> <a href="https://theobjective.com/autor/the-objective/">THE OBJECTIVE</a></div><a class="postmeta__authors__item__card__twitter" href="https://twitter.com/TheObjective_es">@TheObjective_es</a><p class="correspondent"></p>    </div>
+</li>        </ul>
+        <div class="postmeta__meta">
+            <time class="postmeta__meta__date" datetime="2020-06-10T18:06:48+0000">Publicado: 10/06/2020 &nbsp;•&nbsp; 20:06</time>
+                            <time class="postmeta__meta__date postmeta__meta__date--modified" datetime="2020-06-11T14:55:17+0000">Actualizado: 11/06/2020 &nbsp;•&nbsp; 16:55</time>
+                    </div>
+    </div>
+    <div class="postmeta__bottom">
+        <ul class="tno-share">
+            <li class="tno-share__item tno-share__item--more">
+            <button data-button="press" class="tno-share__more" aria-label="Compartir">
+                Compartir            </button>
+        </li>
+                <li class="tno-share__item tno-share__item--facebook">
+                            <a href="//www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F" title="Compartir vía Facebook" aria-label="Compartir vía Facebook" target="_blank" rel="nofollow">
+                    Facebook                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--twitter">
+                            <a href="//twitter.com/intent/tweet?url=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F&text=El%20ingreso%20m%C3%ADnimo%20sale%20adelante%20en%20el%20Congreso%20con%20todos%20los%20grupos%20a%20favor%20salvo%20el%20de%20Vox&via=TheObjective_es" title="Compartir vía Twitter" aria-label="Compartir vía Twitter" target="_blank" rel="nofollow">
+                    Twitter                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--whatsapp">
+                            <a href="//web.whatsapp.com/send?text=El%20ingreso%20m%C3%ADnimo%20sale%20adelante%20en%20el%20Congreso%20con%20todos%20los%20grupos%20a%20favor%20salvo%20el%20de%20Vox | The Objective%20https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F" title="Compartir vía Whatsapp" aria-label="Compartir vía Whatsapp" target="_blank" rel="nofollow">
+                    Whatsapp                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--linkedin">
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F&title=El%20ingreso%20m%C3%ADnimo%20sale%20adelante%20en%20el%20Congreso%20con%20todos%20los%20grupos%20a%20favor%20salvo%20el%20de%20Vox" title="Compartir vía Linkedin" aria-label="Compartir vía Linkedin" target="_blank" rel="nofollow">
+                    Linkedin                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--telegram">
+                            <a href="//telegram.me/share/url?url=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F&text=El%20ingreso%20m%C3%ADnimo%20sale%20adelante%20en%20el%20Congreso%20con%20todos%20los%20grupos%20a%20favor%20salvo%20el%20de%20Vox%20The Objective" title="Compartir vía Telegram" aria-label="Compartir vía Telegram" target="_blank" rel="nofollow">
+                    Telegram                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--email">
+                            <a href="/cdn-cgi/l/email-protection#06397573646c6365723b526323343676736362632334366f6872637463756774282828206469627f3b436a2334366f6861746375692334366b234535234742686f6b6923343675676a632334366762636a676872632334366368233436636a233436456968617463756923343665696823343672696269752334366a697523343661747376697523343667233436606770697423343675676a7069233436636a233436626323343650697e2334366e72727675233547233440233440726e6369646c6365726f70632865696b233440637576676867233440343634362b36302b37362334406f6861746375692b6b6f686f6b692b75676a632b6762636a676872632b65696861746375692b72696269752b6a69752b6174737669752b60677069742b75676a70692b70697e233440" title="Compartir vía Email" aria-label="Compartir vía Email" target="_blank" rel="nofollow">
+                    Email                </a>
+                    </li>
+            <li class="tno-share__item tno-share__item--url">
+                            <button data-button="press" class="copy-link" data-clipboard-text="https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/" aria-label="Copiar">
+                    <span>¡Copiado!</span>
+                </button>
+                    </li>
+                <li class="tno-share__item tno-share__item--print">
+            <button data-button="press" class="print-link" aria-label="Imprimir">
+                Imprimir            </button>
+        </li>
+    </ul>        <a href="https://news.google.com/publications/CAAqLAgKIiZDQklTRmdnTWFoSUtFSFJvWlc5aWFtVmpkR2wyWlM1amIyMG9BQVAB?hl=es&gl=ES&ceid=ES%3Aes" class="postmeta__google-news" target="_blank" rel="noopener noreferrer" title="Síguenos en Google News">
+            <span class="postmeta__google-news__text">Síguenos en Google News</span>
+        </a>
+                    <div class="meta-item">
+                <a class="tno-bookmark is-login" href="https://theobjective.com/myto/?referer=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F">Favorito</a>                <div class="scroll-to-comments tno-article-comments tno-general-article__comments" title="Comentarios"><span class="count">Comentarios</span></div>            </div>
+            </div>
+</div>                            </div>
+                        
+						
+                        <div class="tno-general-single__article__main__content tno-single-content">
+                            <p>Todos los partidos políticos, excepto Vox —que se ha abstenido—, han dado el sí en el Congreso al nuevo <a href="https://theobjective.com/further/ingreso-minimo-vital-tiene-el-estado-competencia-para-ensanchar-la-proteccion-social/"><strong>ingreso mínimo vital</strong></a> (IMV). Esta medida persigue frenar la pobreza en las familias e impulsar la inclusión laboral de estos colectivos.</p>
+<p><span class="the-key"><strong>Cómo te afecta: </strong>La ayuda irá desde una renta mínima de 461 euros hasta los 1.015 euros mensuales. El Pleno del Congreso ha apoyado la convalidación del Real Decreto-Ley que regula esta medida con 297 votos a favor, 52 abstenciones y <strong>ningún voto en contra</strong>. El ingreso mínimo vital costará a las arcas unos 3.000 millones de euros.</span></p>
+<p><!--more--></p>
+<p>El vicepresidente segundo del Gobierno y ministro de Derechos Sociales y Agenda 2030, <strong>Pablo Iglesias</strong>, y el ministro de Inclusión, Seguridad Social y Migraciones, <strong>José Luis Escrivá</strong>, han coincidido en que se trata de una de las medidas con mayor capacidad de redistribución de rentas y que &#8220;dignifica el país&#8221;. Escrivá ha explicado que el ingreso mínimo ha sido calculado con precisión ya que se adaptará a las necesidades de cada solicitante, teniendo en cuenta la modalidad de familia, sus ingresos y su patrimonio.</p>
+<p>&#8220;Las políticas públicas no pueden vivir de espaldas a la sociedad&#8221;, ha dicho Escrivá tras puntualizar que el IMV no solo luchará contra la pobreza sino que servirá de palanca para <strong>la inclusión social y laboral</strong>. &#8220;Es un seguro colectivo que rescatará a las personas en cada momento que sufran carencias&#8221;, ha señalado tras añadir que su coste es &#8220;perfectamente asumible&#8221;.</p>
+<p>Por su parte, Iglesias ha defendido que es el momento de hacer políticas expansivas para afrontar la actual <a href="https://theobjective.com/further/un-ingreso-minimo-vital-de-caracter-temporal-frente-a-la-covid-19/">crisis generada por la pandemia</a> y ha dicho que también ayudará a la recuperación económica, ya que la renta irá &#8220;directamente al consumo y ayudará a autónomos y empresas a seguir facturando&#8221;.</p>
+<p><strong>Vox<button class="contexto-button-inner-post" data-contexto-button="381728"><img decoding="async" src="https://theobjective.com/wp-content/themes/newobjective/img/contexto-icon.png" /></button></strong>, el único partido que no ha votado a favor de la medida, ha <strong>criticado que no sea temporal</strong> y no esté condicionada a la búsqueda de empleo. La formación de Santiago Abascal considera que es el &#8220;precio del pacto con el diablo firmado por Sánchez&#8221; para ser investido y ha reiterado que el IMV supone un efecto llamada a los inmigrantes y pone en riesgo el sistema de protección de la Seguridad Social.</p>
+                                                    </div>
+                                                <ul class="postmeta-footer">
+            <li class="postmeta-footer__author">
+            <div class="postmeta-footer__author__info">
+                <div class="postmeta-footer__author__avatar">
+                    <figure class="author-image"><a href="https://theobjective.com/autor/the-objective/" aria-label="Conoce más sobre THE OBJECTIVE"><img width="150" height="150" src="https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="THE OBJECTIVE" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-150x150.jpg 150w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-300x300.jpg 300w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-1024x1024.jpg 1024w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-768x768.jpg 768w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-500x500.jpg 500w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-694x694.jpg 694w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-197x197.jpg 197w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-415x415.jpg 415w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ-275x275.jpg 275w, https://theobjective.com/wp-content/uploads/2025/05/TO_LOGO_0905_SVRIZ.jpg 1080w" sizes="(max-width: 150px) 100vw, 150px" /></a></figure>                </div>
+                <div class="postmeta-footer__author__data">
+                    <div class="postmeta-footer__author__data__name"> <a href="https://theobjective.com/autor/the-objective/">THE OBJECTIVE</a></div><a class="postmeta-footer__author__data__twitter" href="https://twitter.com/TheObjective_es">@TheObjective_es</a>                </div>
+            </div>
+                    </li>
+    </ul>
+                        <footer class="tno-general-single__article__footer">
+                                <div class="tno-article-tags">
+        <div class="tno-article-tags__wrapper">
+                <a href="https://theobjective.com/etiqueta/ingreso-minimo-vital/">
+                        <span>Ingreso mínimo vital</span>
+                    </a>        </div>
+    </div>
+                        </footer>
+                    </div>
+                                            <aside class="tno-general-single__article__aside">
+                            <div class="tno-general-single__article__aside__top tno-sidebar-top">
+    	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="HalfpageAd_1">
+				<!-- HalfpageAd_1 --><div style='display:none;' class="HalfpageAd_1"></div>
+				<!-- Mobile_Bottom1 --><div style='display:none;' class="Mobile_Bottom1"></div>
+			</div>
+							<span class="tno-banner__text">Publicidad</span>
+					</div>
+	</div>
+        	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="HalfpageAd_2">
+				<!-- HalfpageAd_2 --><div style='display:none;' class="HalfpageAd_2"></div>
+				<!-- Mobile_Bottom2 --><div style='display:none;' class="Mobile_Bottom2"></div>
+			</div>
+							<span class="tno-banner__text">Publicidad</span>
+					</div>
+	</div>
+</div>                        </aside>
+                                    </div>
+            </div>
+            <div class="tno-general-single__background">
+                <div class="tno-general-single__wrapper">
+                    <div class="tno-general-single__article__main">
+                        <div class="tno-general-single__article__main__inner">
+                            <div id="tno-comments" class="tno-comments-box" data-id="1249811">
+			<a href="https://theobjective.com/myto/?referer=https%3A%2F%2Ftheobjective.com%2Fespana%2F2020-06-10%2Fingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox%2F" class="tno-myto-login">Inicia sesión para comentar</a>
+	</div>
+                                <aside class="tno-donate-block">
+        <p><strong>¿Te ha gustado este artículo? <a href="https://theobjective.com/hazte-socio-club-to/">¡Apóyanos aquí!</a></strong></p>
+    </aside>
+                            <section class="tno-interest tno-widget--interesting">
+    <div class="OUTBRAIN" data-widget-id="AR_5"></div>
+</section>                        </div>
+                                                    <aside class="tno-general-single__article__aside">
+                                                                <div class="tno-general-single__article__aside__bottom tno-sidebar-bottom">
+    <div class="tno-plusmore-sidebar">
+        
+<section class="tno-plus-more">
+    <div class="tno-plus-more__title">
+        <span>Lo Más</span>
+    </div>
+    <div class="tno-plus-more__container">
+                    <div class="tno-plus-more__box">
+                <div class="tno-plus-more__box__title">
+                    <span>Leído</span>
+                </div>
+                <div class="tno-plus-more__box__slider">
+                    <article class="tno-article-general  post-4418915 post type-post status-publish format-standard has-post-thumbnail hentry category-espana tag-amanos tag-elecciones-generales tag-fraude-electoral tag-ley-de-nietos tag-mexico tag-pedro-sanchez tag-psoe">
+    <figure class="tno-article-general__image tno-article-general__image--video"><a href="https://theobjective.com/espana/2026-11-04/consulado-falsifico-tipex-expedientes-ley-nietos/" aria-label="Lee más sobre: El consulado en México falsificó con típex decenas de expedientes de la 'ley de nietos'"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-650x365.jpg" class="attachment-general_medium size-general_medium" alt="El consulado en México falsificó con típex decenas de expedientes de la &#039;ley de nietos&#039;" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/solicitud_1200x675_fondo_ampliado.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/2026-11-04/consulado-falsifico-tipex-expedientes-ley-nietos/">
+                El consulado en México falsificó con típex decenas de expedientes de la 'ley de nietos'            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Teresa Gómez</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/espana/2026-11-04/consulado-falsifico-tipex-expedientes-ley-nietos/" aria-label="9 comentarios"><span class="count">9</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4417971 post type-post status-publish format-standard has-post-thumbnail hentry category-transporte tag-accidente-ferroviario tag-adamuz tag-adif tag-ave tag-igualdad-de-genero tag-ministerio-de-transportes tag-oscar-puente tag-urda">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/economia/transporte/2026-11-04/examen-controlador-adif-preguntas-igualdad-lzb/" aria-label="Lee más sobre: El examen de ingreso a controlador de ADIF: tres preguntas sobre igualdad, ninguna del LZB"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-650x365.jpg" class="attachment-general_medium size-general_medium" alt="El examen de ingreso a controlador de ADIF: tres preguntas sobre igualdad, ninguna del LZB" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/portada-examen-adif.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/economia/transporte/2026-11-04/examen-controlador-adif-preguntas-igualdad-lzb/">
+                El examen de ingreso a controlador de ADIF: tres preguntas sobre igualdad, ninguna del LZB            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Pelayo Barro</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/economia/transporte/2026-11-04/examen-controlador-adif-preguntas-igualdad-lzb/" aria-label="6 comentarios"><span class="count">6</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4417536 post type-post status-publish format-standard has-post-thumbnail hentry category-espana tag-marruecos tag-melilla tag-puertos tag-tanger">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/2026-11-04/marruecos-megapuerto-millones-muelles-andaluces/" aria-label="Lee más sobre: Marruecos estrena un megapuerto de 5.000 millones que amenaza los muelles andaluces"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Marruecos estrena un megapuerto de 5.000 millones que amenaza los muelles andaluces" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/europapress-0456737297-1-1.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/2026-11-04/marruecos-megapuerto-millones-muelles-andaluces/">
+                Marruecos estrena un megapuerto de 5.000 millones que amenaza los muelles andaluces            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Pablo Salvador</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/espana/2026-11-04/marruecos-megapuerto-millones-muelles-andaluces/" aria-label="3 comentarios"><span class="count">3</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4418961 post type-post status-publish format-standard has-post-thumbnail hentry category-opinion tag-ana-belen tag-el-gran-wyoming tag-hastio-y-estio tag-pedro-almodovar tag-ramon-espinar">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/opinion/2026-11-04/poema-ana-belen-articulo-manu-glavez/" aria-label="Lee más sobre: No hay poema de Ana Belén por las tragedias ferroviarias"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-650x365.jpeg" class="attachment-general_medium size-general_medium" alt="No hay poema de Ana Belén por las tragedias ferroviarias" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-650x365.jpeg 650w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-300x169.jpeg 300w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-1024x576.jpeg 1024w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-768x432.jpeg 768w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-654x368.jpeg 654w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-197x111.jpeg 197w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-415x233.jpeg 415w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos-275x155.jpeg 275w, https://theobjective.com/wp-content/uploads/2026/05/ana-belen-75-anos.jpeg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/opinion/2026-11-04/poema-ana-belen-articulo-manu-glavez/">
+                No hay poema de Ana Belén por las tragedias ferroviarias            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Manu Gálvez</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/opinion/2026-11-04/poema-ana-belen-articulo-manu-glavez/" aria-label="7 comentarios"><span class="count">7</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4418403 post type-post status-publish format-standard has-post-thumbnail hentry category-moda tag-estilo tag-look tag-primark tag-zapatos tag-zara">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/lifestyle/moda/2026-11-04/es-oficial-aterrizan-en-zara-y-primark-los-7-botines-mas-elegantes-y-versatiles-del-otono-invierno-2026-2027-para-ir-a-la-oficina-y-salir-con-amigas-con-estilo/" aria-label="Lee más sobre: Es oficial: aterrizan en Zara y Primark los 7 botines más elegantes y versátiles del otoño-invierno 2026-2027 para ir a la oficina y salir con amigas con estilo"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Es oficial: aterrizan en Zara y Primark los 7 botines más elegantes y versátiles del otoño-invierno 2026-2027 para ir a la oficina y salir con amigas con estilo" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/tendenica-botines.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/lifestyle/moda/2026-11-04/es-oficial-aterrizan-en-zara-y-primark-los-7-botines-mas-elegantes-y-versatiles-del-otono-invierno-2026-2027-para-ir-a-la-oficina-y-salir-con-amigas-con-estilo/">
+                Es oficial: aterrizan en Zara y Primark los 7 botines más elegantes y versátiles del otoño-invierno 2026-2027 para ir a la oficina y salir con amigas con estilo            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Sara Duque</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4392858 post type-post status-publish format-standard has-post-thumbnail hentry category-espana tag-argentina tag-consulado tag-correos tag-elecciones tag-elecciones-generales tag-ley-de-nietos tag-voto-por-correo">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/2026-11-04/anomalia-voto-argentino-censo-correo/" aria-label="Lee más sobre: La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-650x365.jpg" class="attachment-general_medium size-general_medium" alt="La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/2026-11-04/anomalia-voto-argentino-censo-correo/">
+                La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Marcos Sierra</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4418071 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-adamuz tag-jean-luc-godard tag-la-sexta tag-marc-giro tag-oscar-puente tag-urda categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/oscar-puente-articulo-arias-maldonado/" aria-label="Lee más sobre: Carta a Óscar Puente"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Carta a Óscar Puente" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/oscar_p_0311.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/oscar-puente-articulo-arias-maldonado/">
+                Carta a Óscar Puente            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Manuel Arias Maldonado</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4418665 post type-post status-publish format-standard has-post-thumbnail hentry category-cataluna category-espana tag-ayuntamientos tag-barcelona tag-cataluna tag-irregularidades tag-justicia">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/2026-11-04/funcionaria-denuncia-antifraude-tres-anos-paro-pese-acreditar-represalias/" aria-label="Lee más sobre: Una funcionaria denuncia que Antifraude la dejó tres años en paro pese a acreditar represalias"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/europapress-1137496236botee-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Una funcionaria denuncia que Antifraude la dejó tres años en paro pese a acreditar represalias" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/europapress-1137496236botee-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1137496236botee-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1137496236botee-1200x675.jpg 1200w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1137496236botee-654x368.jpg 654w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/2026-11-04/funcionaria-denuncia-antifraude-tres-anos-paro-pese-acreditar-represalias/">
+                Una funcionaria denuncia que Antifraude la dejó tres años en paro pese a acreditar represalias            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Jorge Mestre</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4420288 post type-post status-publish format-standard has-post-thumbnail hentry category-internacional tag-camara-de-representantes tag-donald-trump tag-elecciones-eeuu tag-partido-democrata-estados-unidos tag-partido-republicano-estados-unidos tag-senado-de-estados-unidos">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/" aria-label="Lee más sobre: Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-1200x675.jpg 1200w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-654x368.jpg 654w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/">
+                Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Jorge Mestre</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/" aria-label="5 comentarios"><span class="count">5</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4419439 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-ceuta tag-eta tag-pedro-sanchez tag-psoe tag-transicion-espanola tag-tribunal-constitucional tag-urda categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/patrias-pequenas-articulo-nicolas-redondo/" aria-label="Lee más sobre: Las patrias pequeñas"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Las patrias pequeñas" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/leo-n-de-piedra-entre-ruinas-de-papel.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/patrias-pequenas-articulo-nicolas-redondo/">
+                Las patrias pequeñas            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Nicolás Redondo Terreros</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/elsubjetivo/opinion/2026-11-04/patrias-pequenas-articulo-nicolas-redondo/" aria-label="4 comentarios"><span class="count">4</span></button>                </footer>
+                                </div>
+</article>                </div>
+            </div>
+                            <div class="tno-plus-more__box">
+                <div class="tno-plus-more__box__title">
+                    <span>Comentado</span>
+                </div>
+                <div class="tno-plus-more__box__slider">
+                    <article class="tno-article-general  post-4416516 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-alberto-nunez-feijoo tag-elecciones-generales tag-pedro-sanchez categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-03/sanchez-sorpresita-articulo-alvaro-nieto/" aria-label="Lee más sobre: Sánchez prepara una sorpresita"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Sánchez prepara una sorpresita" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/05/sanchez_psoe.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-03/sanchez-sorpresita-articulo-alvaro-nieto/">
+                Sánchez prepara una sorpresita            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Álvaro Nieto</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/elsubjetivo/opinion/2026-11-03/sanchez-sorpresita-articulo-alvaro-nieto/" aria-label="130 comentarios"><span class="count">130</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4417193 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-el-pais tag-pedro-sanchez tag-psoe tag-urda categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-03/necesita-un-enemigo-articulo-jorge-vilches/" aria-label="Lee más sobre: Necesita un enemigo"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Necesita un enemigo" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/ilustracio-n-sa-nchez-necesita-un-enemigo.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-03/necesita-un-enemigo-articulo-jorge-vilches/">
+                Necesita un enemigo            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Jorge Vilches</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/elsubjetivo/opinion/2026-11-03/necesita-un-enemigo-articulo-jorge-vilches/" aria-label="111 comentarios"><span class="count">111</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4408721 post type-post status-publish format-standard has-post-thumbnail hentry category-politica tag-accidente-ferroviario tag-ministerio-de-transportes tag-oscar-puente tag-pedro-sanchez">
+    <figure class="tno-article-general__image tno-article-general__image--video"><a href="https://theobjective.com/espana/politica/2026-11-03/oscar-puente-crisis-ferroviaria/" aria-label="Lee más sobre: Dimite Óscar Puente por el accidente de Urda tras su comparecencia en el Congreso"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Dimite Óscar Puente por el accidente de Urda tras su comparecencia en el Congreso" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/oscar-puente-dimision.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/politica/2026-11-03/oscar-puente-crisis-ferroviaria/">
+                Dimite Óscar Puente por el accidente de Urda tras su comparecencia en el Congreso            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Fran Serrato</div><div class="tno-article-general__content__footer__author">Hugo Gonzalo</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/espana/politica/2026-11-03/oscar-puente-crisis-ferroviaria/" aria-label="58 comentarios"><span class="count">58</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4416642 post type-post status-publish format-standard has-post-thumbnail hentry category-politica tag-accidente-ferroviario tag-accidentes tag-heridos tag-muertos tag-pedro-sanchez tag-psoe tag-urda">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/politica/2026-11-02/sanchez-confianza-alta-velocidad-urda/" aria-label="Lee más sobre: Sánchez promete recuperar la confianza ferroviaria tras Urda: «Nunca debió suceder»"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Sánchez promete recuperar la confianza ferroviaria tras Urda: «Nunca debió suceder»" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/el-presidente-del-gobierno-pedro-sa-nchez.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/politica/2026-11-02/sanchez-confianza-alta-velocidad-urda/">
+                Sánchez promete recuperar la confianza ferroviaria tras Urda: «Nunca debió suceder»            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Hugo Gonzalo</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/espana/politica/2026-11-02/sanchez-confianza-alta-velocidad-urda/" aria-label="47 comentarios"><span class="count">47</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4415696 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-accidente-ferroviario tag-adamuz tag-dana tag-gobierno tag-pedro-sanchez tag-psoe tag-tragedias tag-urda categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-02/hora-infamia-articulo-antonio-cano/" aria-label="Lee más sobre: La hora de la infamia"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-650x365.jpg" class="attachment-general_medium size-general_medium" alt="La hora de la infamia" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/10/sanchez_puente_noticias_tren.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-02/hora-infamia-articulo-antonio-cano/">
+                La hora de la infamia            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Antonio Caño</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/elsubjetivo/opinion/2026-11-02/hora-infamia-articulo-antonio-cano/" aria-label="35 comentarios"><span class="count">35</span></button>                </footer>
+                                </div>
+</article>                </div>
+            </div>
+                            <div class="tno-plus-more__box">
+                <div class="tno-plus-more__box__title">
+                    <a href="https://theobjective.com/ultimas-noticias/" title="Últimas noticias de hoy" aria-label="Últimas noticias de hoy">Reciente</a>
+                </div>
+                <div class="tno-plus-more__box__slider">
+                    <article class="tno-article-general  post-4420375 post type-post status-publish format-standard has-post-thumbnail hentry category-sociedad tag-comunidad-de-madrid tag-huelgas tag-universidad-complutense-de-madrid tag-universidades">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/sociedad/2026-11-04/seis-universidades-publicas-madrid-huelga/" aria-label="Lee más sobre: Las seis universidades públicas de Madrid van a la huelga contra la «asfixia económica»"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Las seis universidades públicas de Madrid van a la huelga contra la «asfixia económica»" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/lee-gratis-5-1.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/sociedad/2026-11-04/seis-universidades-publicas-madrid-huelga/">
+                Las seis universidades públicas de Madrid van a la huelga contra la «asfixia económica»            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">THE OBJECTIVE</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4420338 post type-post status-publish format-standard has-post-thumbnail hentry category-politica tag-alberto-nunez-feijoo tag-oscar-puente tag-pedro-sanchez tag-pp tag-psoe">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/politica/2026-11-04/feijoo-sanchez-pasos-puente-dimita/" aria-label="Lee más sobre: Feijóo pide a Sánchez que siga los pasos de Puente y dimita: «Aplícatelo»"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Feijóo pide a Sánchez que siga los pasos de Puente y dimita: «Aplícatelo»" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/10/presidente-pp-alberto-nunez-feijoo.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/politica/2026-11-04/feijoo-sanchez-pasos-puente-dimita/">
+                Feijóo pide a Sánchez que siga los pasos de Puente y dimita: «Aplícatelo»            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">THE OBJECTIVE</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4420288 post type-post status-publish format-standard has-post-thumbnail hentry category-internacional tag-camara-de-representantes tag-donald-trump tag-elecciones-eeuu tag-partido-democrata-estados-unidos tag-partido-republicano-estados-unidos tag-senado-de-estados-unidos">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/" aria-label="Lee más sobre: Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-1200x675.jpg 1200w, https://theobjective.com/wp-content/uploads/2026/11/europapress-1147366796-1-654x368.jpg 654w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/">
+                Victoria arrolladora de los demócratas en las elecciones de mitad de mandato en EEUU            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Jorge Mestre</div>                        </div>
+                                                            <button class="tno-article-comments tno-article-general__content__footer__comments" data-url="https://theobjective.com/internacional/2026-11-04/victoria-democratas-elecciones-mitad-mandato-eeuu/" aria-label="5 comentarios"><span class="count">5</span></button>                </footer>
+                                </div>
+</article><article class="tno-article-general  post-4419503 tno_podcast type-tno_podcast status-publish has-post-thumbnail hentry tag-emprendedores tag-empresas tno_podcast_show-asi-empece">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/podcasts/asi-empece/podcast-asi-empece-juan-carlos-tous/" aria-label="Lee más sobre: Juan Carlos Tous"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/asi-empece_podcast-1080-x-1080-px-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Juan Carlos Tous" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/asi-empece_podcast-1080-x-1080-px-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/asi-empece_podcast-1080-x-1080-px-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/asi-empece_podcast-1080-x-1080-px-654x368.jpg 654w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/podcasts/asi-empece/podcast-asi-empece-juan-carlos-tous/">
+                Juan Carlos Tous            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">THE OBJECTIVE</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4419419 tno_podcast type-tno_podcast status-publish has-post-thumbnail hentry tag-podcast tag-politica tno_podcast_show-el-tablero-inclinado-podcast">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/podcasts/el-tablero-inclinado-podcast/podcast-tablero-inclinado-politizar-tragedias/" aria-label="Lee más sobre: Podcast | Politizar las tragedias"><img width="356" height="356" src="https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1.jpg" class="attachment-general_medium size-general_medium" alt="Podcast | Politizar las tragedias" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1.jpg 356w, https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1-300x300.jpg 300w, https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1-150x150.jpg 150w, https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1-197x197.jpg 197w, https://theobjective.com/wp-content/uploads/2025/05/TABLEROINCLINADO-356x356-1-275x275.jpg 275w" sizes="auto, (max-width: 356px) 100vw, 356px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/podcasts/el-tablero-inclinado-podcast/podcast-tablero-inclinado-politizar-tragedias/">
+                Podcast | Politizar las tragedias            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">THE OBJECTIVE</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4418020 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-ave tag-barcelona tag-crisis-2008 tag-jose-luis-rodriguez-zapatero tag-oscar-puente tag-populismo categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/realidad-optimista-articulo-daniel-capo/" aria-label="Lee más sobre: Una realidad que ya no puede ser optimista"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Una realidad que ya no puede ser optimista" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/oscar_rn_accidente_0311.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/realidad-optimista-articulo-daniel-capo/">
+                Una realidad que ya no puede ser optimista            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Daniel Capó</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4419159 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-elecciones tag-gobierno tag-pedro-sanchez tag-psoe categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/regeneracion-descomposicion-articulo-francisco-sierra/" aria-label="Lee más sobre: Regeneración o descomposición, no hay otra"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Regeneración o descomposición, no hay otra" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/sanchez-2-collage.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/regeneracion-descomposicion-articulo-francisco-sierra/">
+                Regeneración o descomposición, no hay otra            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Francisco Sierra</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4419256 elsubjetivo type-elsubjetivo status-publish has-post-thumbnail hentry category-opinion tag-accidente-ferroviario tag-accidentes tag-ave tag-oscar-puente categorias-opinion">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/alimentarse-carrona-articulo-santi-gonzalez/" aria-label="Lee más sobre: Alimentarse de carroña"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Alimentarse de carroña" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/puente-sanchez-buitre.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/elsubjetivo/opinion/2026-11-04/alimentarse-carrona-articulo-santi-gonzalez/">
+                Alimentarse de carroña            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Santi González</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4392858 post type-post status-publish format-standard has-post-thumbnail hentry category-espana tag-argentina tag-consulado tag-correos tag-elecciones tag-elecciones-generales tag-ley-de-nietos tag-voto-por-correo">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/espana/2026-11-04/anomalia-voto-argentino-censo-correo/" aria-label="Lee más sobre: La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-650x365.jpg" class="attachment-general_medium size-general_medium" alt="La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/10/voto-correos-20233.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/espana/2026-11-04/anomalia-voto-argentino-censo-correo/">
+                La anomalía del voto CERA en Argentina: el 70% no va al consulado y lo manda por correo            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Marcos Sierra</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article><article class="tno-article-general  post-4416621 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza tag-belleza tag-cosmetica tag-cuidado-de-la-piel tag-piel">
+    <figure class="tno-article-general__image tno-article-general__image--article"><a href="https://theobjective.com/lifestyle/belleza/2026-11-04/raquel-gonzalez-experta-en-cosmetica-si-quieres-que-tus-serums-y-cremas-sean-mas-eficaces-hay-un-paso-que-no-debes-saltarte-en-tu-rutina-facial/" aria-label="Lee más sobre: Raquel González, experta en cosmética: «Si quieres que tus sérums y cremas sean más eficaces, hay un paso que no debes saltarte en tu rutina facial»"><img width="650" height="365" src="https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-650x365.jpg" class="attachment-general_medium size-general_medium" alt="Raquel González, experta en cosmética: «Si quieres que tus sérums y cremas sean más eficaces, hay un paso que no debes saltarte en tu rutina facial»" loading="lazy" decoding="async" srcset="https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-650x365.jpg 650w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-300x169.jpg 300w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-1024x576.jpg 1024w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-768x432.jpg 768w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-480x270.jpg 480w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-654x368.jpg 654w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-197x111.jpg 197w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-415x233.jpg 415w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada-275x155.jpg 275w, https://theobjective.com/wp-content/uploads/2026/11/rutina-belleza-gpointstudio-portada.jpg 1200w" sizes="auto, (max-width: 650px) 100vw, 650px" /></a></figure>    <div class="tno-article-general__content">
+                <div class="tno-article-general__content__title">
+            <a href="https://theobjective.com/lifestyle/belleza/2026-11-04/raquel-gonzalez-experta-en-cosmetica-si-quieres-que-tus-serums-y-cremas-sean-mas-eficaces-hay-un-paso-que-no-debes-saltarte-en-tu-rutina-facial/">
+                Raquel González, experta en cosmética: «Si quieres que tus sérums y cremas sean más eficaces, hay un paso que no debes saltarte en tu rutina facial»            </a>
+        </div>
+                                <footer class="tno-article-general__content__footer">
+                                            <div class="tno-article-general__content__footer__authors">
+                            <div class="tno-article-general__content__footer__author">Tomás Morales</div>                        </div>
+                                                                            </footer>
+                                </div>
+</article>                </div>
+            </div>
+            </div>
+</section>    </div>
+    	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="HalfpageAd_3">
+				<!-- HalfpageAd_3 --><div style='display:none;' class="HalfpageAd_3"></div>
+				<!-- Mobile_Pos3 --><div style='display:none;' class="Mobile_Pos3"></div>
+			</div>
+							<span class="tno-banner__text">Publicidad</span>
+					</div>
+	</div>
+</div>                            </aside>
+                                            </div>
+                </div>
+            </div>
+        </article>
+        	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="Billboard_2">
+				<!-- Billboard_2 --><div style='display:none;' class="Billboard_2"></div>
+				<!-- Mobile_Pos4 --><div style='display:none;' class="Mobile_Pos4"></div>
+			</div>
+							<span class="tno-banner__text">Publicidad</span>
+					</div>
+	</div>
+            </div>
+</section>
+
+</main>
+<footer class="tno-footer">
+    <div class="tno-footer__container">
+                    <div class="tno-footer__top">
+                <ul class="tno-footer__categories"><li><a href="https://theobjective.com/espana/" aria-label="Enlace a: España" rel="">España</a><ul><li><a href="https://theobjective.com/espana/politica/" aria-label="Enlace a: Política" rel="">Política</a></li><li><a href="https://theobjective.com/espana/tribunales/" aria-label="Enlace a: Tribunales" rel="">Tribunales</a></li><li><a href="https://theobjective.com/espana/madrid/" aria-label="Enlace a: Madrid" rel="">Madrid</a></li><li><a href="https://theobjective.com/espana/cataluna/" aria-label="Enlace a: Cataluña" rel="">Cataluña</a></li><li><a href="https://theobjective.com/espana/andalucia/" aria-label="Enlace a: Andalucía" rel="">Andalucía</a></li><li><a href="https://theobjective.com/espana/castilla-y-leon/" aria-label="Enlace a: Castilla y León" rel="">Castilla y León</a></li></ul></li><li><a href="https://theobjective.com/economia/" aria-label="Enlace a: Economía" rel="">Economía</a><ul><li><a href="https://theobjective.com/economia/empleo/" aria-label="Enlace a: Empleo" rel="">Empleo</a></li><li><a href="https://theobjective.com/economia/macroeconomia/" aria-label="Enlace a: Macroeconomía" rel="">Macroeconomía</a></li><li><a href="https://theobjective.com/economia/energia/" aria-label="Enlace a: Energía" rel="">Energía</a></li><li><a href="https://theobjective.com/economia/banca/" aria-label="Enlace a: Banca" rel="">Banca</a></li><li><a href="https://theobjective.com/economia/telecomunicaciones/" aria-label="Enlace a: Telecos" rel="">Telecos</a></li><li><a href="https://theobjective.com/etiqueta/inmobiliario/" aria-label="Enlace a: Inmobiliario" rel="">Inmobiliario</a></li></ul></li><li><a href="/elsubjetivo/" aria-label="Enlace a: Opinión" rel="">Opinión</a><ul><li><a href="https://theobjective.com/elsubjetivo/opinion/" aria-label="Enlace a: Firmas" rel="">Firmas</a></li><li><a href="https://theobjective.com/autor/alvaro-nieto/" aria-label="Enlace a: Álvaro Nieto" rel="">Álvaro Nieto</a></li><li><a href="https://theobjective.com/autor/fernando-savater/" aria-label="Enlace a: Fernando Savater" rel="">Fernando Savater</a></li><li><a href="https://theobjective.com/autor/felix-de-azua/" aria-label="Enlace a: Félix de Azúa" rel="">Félix de Azúa</a></li><li><a href="https://theobjective.com/autor/antonio-cano/" aria-label="Enlace a: Antonio Caño" rel="">Antonio Caño</a></li><li><a href="https://theobjective.com/autor/juan-luis-cebrian/" aria-label="Enlace a: Juan Luis Cebrián" rel="">Juan Luis Cebrián</a></li></ul></li><li><span>Secciones</span><ul><li><a href="https://theobjective.com/sociedad/" aria-label="Enlace a: Sociedad" rel="">Sociedad</a></li><li><a href="https://theobjective.com/cultura/" aria-label="Enlace a: Cultura" rel="">Cultura</a></li><li><a href="https://theobjective.com/deportes/" aria-label="Enlace a: Deportes" rel="">Deportes</a></li><li><a href="https://theobjective.com/internacional/" aria-label="Enlace a: Internacional" rel="">Internacional</a></li><li><a href="https://theobjective.com/sanidad/" aria-label="Enlace a: Sanidad" rel="">Sanidad</a></li><li><a href="https://theobjective.com/gastronomia/" aria-label="Enlace a: Gastronomía" rel="">Gastronomía</a></li></ul></li><li><a href="https://theobjective.com/lifestyle/" aria-label="Enlace a: Lifestyle" rel="">Lifestyle</a><ul><li><a href="https://theobjective.com/etiqueta/moda/" aria-label="Enlace a: Moda" rel="">Moda</a></li><li><a href="https://theobjective.com/lifestyle/belleza/" aria-label="Enlace a: Belleza" rel="">Belleza</a></li><li><a href="https://theobjective.com/lifestyle/fitness/" aria-label="Enlace a: Fitness" rel="">Fitness</a></li><li><a href="https://theobjective.com/lifestyle/nutricion/" aria-label="Enlace a: Nutrición" rel="">Nutrición</a></li><li><a href="https://theobjective.com/lifestyle/sexualidad/" aria-label="Enlace a: Sexualidad" rel="">Sexualidad</a></li><li><a href="https://theobjective.com/gente/" aria-label="Enlace a: Gente" rel="">Gente</a></li></ul></li><li><a href="/podcasts/" aria-label="Enlace a: Podcasts" rel="">Podcasts</a><ul><li><a href="https://theobjective.com/podcasts/el-purgatorio/" aria-label="Enlace a: El purgatorio" rel="">El purgatorio</a></li><li><a href="https://theobjective.com/podcasts/al-tanto-podcast/" aria-label="Enlace a: Al tanto" rel="">Al tanto</a></li><li><a href="https://theobjective.com/podcasts/el-liberal-podcast/" aria-label="Enlace a: El liberal" rel="">El liberal</a></li><li><a href="https://theobjective.com/podcasts/contrapuntos-the-objective/" aria-label="Enlace a: Contrapuntos" rel="">Contrapuntos</a></li><li><a href="https://theobjective.com/podcasts/fuera-de-microfono/" aria-label="Enlace a: Fuera de micrófono" rel="">Fuera de micrófono</a></li><li><a href="https://theobjective.com/podcasts/ilustres-olvidados/" aria-label="Enlace a: Ilustres olvidados" rel="">Ilustres olvidados</a></li></ul></li><li><span>Otros</span><ul><li><a href="https://theobjective.com/ultimas-noticias/" aria-label="Enlace a: Últimas noticias" rel="">Últimas noticias</a></li><li><a href="https://theobjective.com/videos/" aria-label="Enlace a: Vídeos" rel="">Vídeos</a></li><li><a href="https://theobjective.com/the-positive/" aria-label="Enlace a: The Positive" rel="">The Positive</a></li><li><a href="https://theobjective.com/etiqueta/contraluz/" aria-label="Enlace a: Contraluz" rel="">Contraluz</a></li><li><a href="https://theobjective.com/etiqueta/la-mirilla/" aria-label="Enlace a: La mirilla" rel="">La mirilla</a></li><li><a href="https://theobjective.com/etiqueta/historias-de-la-historia/" aria-label="Enlace a: Historia" rel="">Historia</a></li></ul></li><li><span>Varios</span><ul><li><a href="https://theobjective.com/quienes-somos/" aria-label="Enlace a: Quiénes somos" rel="">Quiénes somos</a></li><li><a href="https://theobjective.com/principios-y-valores/" aria-label="Enlace a: Principios y valores" rel="">Principios y valores</a></li><li><a href="https://theobjective.com/equipo/" aria-label="Enlace a: Equipo" rel="">Equipo</a></li><li><a href="https://theobjective.com/apoya-a-the-objective/" aria-label="Enlace a: Apóyanos" rel="">Apóyanos</a></li><li><a href="https://theobjective.com/newsletters/" aria-label="Enlace a: Newsletters" rel="">Newsletters</a></li><li><a href="https://theobjective.com/antologia-semanal/" aria-label="Enlace a: Antología semanal" rel="">Antología semanal</a></li></ul></li></ul>            </div>
+                <div class="tno-footer__bottom">
+            <ul class="tno-footer__pages"><li><a href="https://theobjective.com/quienes-somos/" aria-label="Enlace a: The Objective Media">The Objective Media</a></li><li><a href="https://theobjective.com/equipo/" aria-label="Enlace a: Equipo">Equipo</a></li><li><a href="https://theobjective.com/politica-de-privacidad/" aria-label="Enlace a: Política de privacidad">Política de privacidad</a></li><li><a href="https://theobjective.com/politica-de-cookies/" aria-label="Enlace a: Política de cookies">Política de cookies</a></li><li><a href="javascript:Didomi.preferences.show()" aria-label="Configura tus cookies">Configura tus cookies</a></li><li><a href="https://theobjective.com/aviso-legal/" aria-label="Enlace a: Aviso legal">Aviso legal</a></li><li><a href="https://theobjective.com/contactanos/" aria-label="Enlace a: Contáctanos">Contáctanos</a></li></ul>            <p class="tno-footer__copyright">Copyright The Objective Media, S.L. 2026. Todos los derechos reservados.</p>        </div>
+    </div>
+</footer>
+            <div class="tno-outofpage">
+                	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="patrocinio_1">
+				<!-- patrocinio_1 --><div style='display:none;' class="patrocinio_1"></div>
+				<!-- patrocinio_1 --><div style='display:none;' class="patrocinio_1"></div>
+			</div>
+					</div>
+	</div>
+	<div class="tno-banner">
+		<div class="tno-banner__container ">
+			<div class="tno-banner__ad" data-position="patrocinio_2">
+				<!-- patrocinio_2 --><div style='display:none;' class="patrocinio_2"></div>
+				<!-- patrocinio_2 --><div style='display:none;' class="patrocinio_2"></div>
+			</div>
+					</div>
+	</div>
+            </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/to2022/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <div id="fa-modal-overlay" class="fa-modal-overlay" hidden>
+        <div class="fa-modal" role="dialog" aria-modal="true" aria-labelledby="fa-modal-title">
+
+            <!-- Bloque amarillo: icono + título + subtítulo -->
+            <div class="fa-modal__header">
+                <button class="fa-modal__close" id="fa-modal-close" aria-label="Cerrar">&times;</button>
+                <div class="fa-modal__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+                        <circle cx="18" cy="18" r="18" fill="#000"/>
+                        <circle cx="18" cy="14" r="5" fill="#FBE301"/>
+                        <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="#FBE301"/>
+                        <circle cx="30" cy="30" r="9" fill="#000" stroke="#FBE301" stroke-width="1.5"/>
+                        <line x1="30" y1="25" x2="30" y2="35" stroke="#FBE301" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="25" y1="30" x2="35" y2="30" stroke="#FBE301" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <p class="fa-modal__title" id="fa-modal-title">Seguir a este autor</p>
+                <p class="fa-modal__subtitle">Para continuar necesitas iniciar<br>sesión o crear una cuenta</p>
+            </div>
+
+            <!-- Bloque blanco: tabs + formularios -->
+            <div class="fa-modal__body">
+                <div class="fa-modal__tabs">
+                    <button class="fa-modal__tab fa-modal__tab--active" data-tab="login">Iniciar sesión</button>
+                    <button class="fa-modal__tab" data-tab="register">Crear una cuenta</button>
+                </div>
+
+                <!-- Formulario Login -->
+                <form id="fa-login-form">
+                    <div class="fa-modal__error" hidden></div>
+                    <div class="fa-modal__field">
+                        <label for="fa-login-username">Email o usuario</label>
+                        <input type="text" id="fa-login-username" name="username"
+                               autocomplete="username" placeholder="">
+                    </div>
+                    <div class="fa-modal__field">
+                        <label for="fa-login-password">Contraseña</label>
+                        <input type="password" id="fa-login-password" name="password"
+                               autocomplete="current-password" placeholder="">
+                    </div>
+                    <div class="fa-modal__field fa-modal__field--checkbox">
+                        <label>
+                            <input type="checkbox" name="rememberme">
+                            Recuérdame
+                        </label>
+                        <a href="https://theobjective.com/tobackend/?action=lostpassword"
+                           class="fa-modal__forgot" target="_blank" rel="noopener">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+                    <!-- Turnstile: aparece tras superar el umbral de intentos fallidos -->
+                    <div id="fa-turnstile-login" class="fa-turnstile-wrap" style="display:none"></div>
+                    <button type="submit" class="fa-modal__submit">Iniciar sesión</button>
+                </form>
+
+                <!-- Formulario Registro -->
+                <form id="fa-register-form" hidden>
+                    <div class="fa-modal__error" hidden></div>
+                    <div class="fa-modal__field">
+                        <label for="fa-reg-email">Email</label>
+                        <input type="email" id="fa-reg-email" name="email"
+                               autocomplete="email" placeholder="">
+                    </div>
+                    <div class="fa-modal__field">
+                        <label for="fa-reg-password">Contraseña</label>
+                        <input type="password" id="fa-reg-password" name="password"
+                               autocomplete="new-password" placeholder="">
+                        <span class="fa-modal__hint">Mínimo 8 caracteres</span>
+                    </div>
+                    <div class="fa-modal__field">
+                        <label for="fa-reg-password2">Repite la contraseña</label>
+                        <input type="password" id="fa-reg-password2" name="password2"
+                               autocomplete="new-password" placeholder="">
+                    </div>
+                    <!-- Turnstile: siempre activo en registro (invisible salvo comportamiento sospechoso) -->
+                    <div id="fa-turnstile-register" class="fa-turnstile-wrap"></div>
+                    <button type="submit" class="fa-modal__submit">Crear cuenta</button>
+                    <p class="fa-modal__legal">
+                        Al registrarte aceptas nuestra
+                        <a href="https://theobjective.com/politica-de-privacidad/"
+                           target="_blank" rel="noopener">política de privacidad</a>.
+                    </p>
+                </form>
+            </div><!-- /.fa-modal__body -->
+
+        </div><!-- /.fa-modal -->
+    </div><!-- /.fa-modal-overlay -->
+
+    <!-- Popup confirmación unfollow -->
+    <div id="fa-unfollow-overlay" class="fa-modal-overlay" hidden>
+        <div class="fa-unfollow-card" role="dialog" aria-modal="true" aria-labelledby="fa-unfollow-title">
+            <div class="fa-unfollow-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+                    <circle cx="18" cy="18" r="18" fill="#000"/>
+                    <circle cx="18" cy="14" r="5" fill="#FBE301"/>
+                    <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="#FBE301"/>
+                    <circle cx="30" cy="30" r="9" fill="#000" stroke="#FBE301" stroke-width="1.5"/>
+                    <line x1="30" y1="25" x2="30" y2="35" stroke="#FBE301" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="25" y1="30" x2="35" y2="30" stroke="#FBE301" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <p class="fa-unfollow-card__title" id="fa-unfollow-title">¿Quieres dejar de seguir<br>este autor?</p>
+            <div class="fa-unfollow-card__actions">
+                <button class="fa-unfollow-card__yes">Sí</button>
+                <button class="fa-unfollow-card__cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+                <script id="tno-refresh" type="text/javascript">
+                history.scrollRestoration = "auto";
+                const REFRESH_INTERVAL = 600000;
+                window._tno_refresh = setInterval(() => {
+                    window.location.reload();
+                }, REFRESH_INTERVAL);
+            </script>
+        <script type="text/javascript" id="wprm-public-js-extra">
+/* <![CDATA[ */
+var wprm_public = {"user":"0","endpoints":{"analytics":"https://theobjective.com/wp-json/wp-recipe-maker/v1/analytics","integrations":"https://theobjective.com/wp-json/wp-recipe-maker/v1/integrations","manage":"https://theobjective.com/wp-json/wp-recipe-maker/v1/manage","utilities":"https://theobjective.com/wp-json/wp-recipe-maker/v1/utilities"},"settings":{"jump_output_hash":true,"features_comment_ratings":true,"template_color_comment_rating":"#343434","instruction_media_toggle_default":"on","video_force_ratio":false,"analytics_enabled":true,"google_analytics_enabled":false,"print_access":"everyone","print_access_allowed":true,"print_new_tab":true,"print_recipe_identifier":"slug","pdf_download_enabled":false},"post_id":"1249811","home_url":"https://theobjective.com/","print_slug":"wprm_print","permalinks":"/%category%/%year%-%monthnum%-%day%/%postname%/","ajax_url":"https://theobjective.com/wp-admin/admin-ajax.php","nonce":"4aa2f0bd49","api_nonce":"255926ec7c","translations":[],"version":{"free":"10.6.1"}};
+//# sourceURL=wprm-public-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="follow-author-js-js-extra">
+/* <![CDATA[ */
+var FollowAuthorConfig = {"restUrl":"https://theobjective.com/wp-json/follow-author/v1/","nonce":"255926ec7c","isLoggedIn":"","authors":[{"id":15,"slug":"the-objective","following":false}],"i18n":{"follow":"Seguir al autor","following":"Siguiendo","unfollow":"Dejar de seguir"}};
+var FollowAuthorModal = {"ajaxUrl":"https://theobjective.com/wp-admin/admin-ajax.php","loginNonce":"e28011c706","turnstileSiteKey":"0x4AAAAAADiw4bNW0Sr646CD","loginFailThreshold":"5"};
+//# sourceURL=follow-author-js-js-extra
+/* ]]> */
+</script>
+<script src="https://theobjective.com/wp-content/plugins/follow-author-plugin/follow-author.js?ver=1.8.5" id="follow-author-js-js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" id="cloudflare-turnstile-js"></script>
+<script type="text/javascript" id="wp-tts-audio-player-js-extra">
+/* <![CDATA[ */
+var wpTtsPlayer = {"labelBefore":"Voz generada por IA","labelPlaying":"Escucha el art\u00edculo"};
+//# sourceURL=wp-tts-audio-player-js-extra
+/* ]]> */
+</script>
+<script src="https://theobjective.com/wp-content/plugins/wp-tts-plugin/assets/js/frontend-player.js?ver=1.10.3" id="wp-tts-audio-player-js"></script>
+<script defer src="https://theobjective.com/wp-content/themes/to2022/assets/plugins/flickity/flickity.min.js?ver=2.3.0" id="flickity-js"></script>
+<script type="text/javascript" id="tno-script-js-extra">
+/* <![CDATA[ */
+var tno_base_api = {"root":"https://theobjective.com/wp-json/tno/v1","nonce":"255926ec7c","action":"948c6c248f","especial":"0"};
+//# sourceURL=tno-script-js-extra
+/* ]]> */
+</script>
+<script defer src="https://theobjective.com/wp-content/themes/to2022/assets/scripts/base-1790000365217.min.js?ver=1793477632" id="tno-script-js"></script>
+<script type="text/javascript" id="tno-posts-js-extra">
+/* <![CDATA[ */
+var tno_posts_api = {"root":"https://theobjective.com/wp-json/tno/v1","nonce":"255926ec7c","preview":"","url":"https://theobjective.com","like":"f314a006e1","unlike":"1bf32b974b","comment":"b9f2a7b375","reply":"a5d3b852f5","load":"210cb3a381","fetch":"2f5c1bed3a","add":"9bbed48630","remove":"f8464ffc12","ID":"1249811","public_key":"6Lcp9fUcAAAAAPAWF6t0OBxDmS9F5MIU04ibVRZ9"};
+//# sourceURL=tno-posts-js-extra
+/* ]]> */
+</script>
+<script defer src="https://theobjective.com/wp-content/themes/to2022/assets/scripts/posts-1790000365217.min.js?ver=1793477632" id="tno-posts-js"></script>
+<script defer src="https://www.google.com/recaptcha/api.js?render=6Lcp9fUcAAAAAPAWF6t0OBxDmS9F5MIU04ibVRZ9&amp;ver=3.0.0" id="recaptcha-js-js"></script>
+<script type="text/javascript" id="tno-sensic-js-extra">
+/* <![CDATA[ */
+var tno_sensic_vars = {"c1":"theobjective.com","c2":"espana"};
+//# sourceURL=tno-sensic-js-extra
+/* ]]> */
+</script>
+<script src="https://theobjective.com/wp-content/themes/to2022/assets/scripts/sensic-1790000365217.min.js?ver=1793477632" id="tno-sensic-js"></script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js?ver=1.0.0" id="remote_sdk-js" defer="defer" data-wp-strategy="defer"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://theobjective.com/wp-includes/js/wp-emoji-release.min.js?ver=adc76d329fcfe00a55f200aab69de6db"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://theobjective.com/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+</body>
+
+</html>

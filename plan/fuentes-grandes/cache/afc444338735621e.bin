@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://ibi.gsstatic.es">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//cdns.gigya.com">
+<link rel="dns-prefetch" href="//sdk.privacy-center.org">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//sdk.mrf.io">
+<link rel="dns-prefetch" href="//imasdk.googleapis.com">
+<link rel="dns-prefetch" href="//googleads.github.io.com">
+<link rel="dns-prefetch" href="//a.teads.tv">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<script>
+        if (!window.didomiConfig) window.didomiConfig = {};
+        if (!window.didomiConfig.notice) window.didomiConfig.notice = {};
+        if (!window.didomiConfig.app) window.didomiConfig.app = {};
+        window.didomiConfig.app.deniedConsentDuration = 86400;
+        window.didomiConfig.notice.enable = false;
+        window.gdprAppliesGlobally=true;(function(){function n(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var r=document.createElement("iframe");r.style.display="none";r.name=e;r.title=e;t.insertBefore(r,t.firstChild)}else{setTimeout(function(){n(e)},5)}}}function e(r,a,o,s,c){function e(e,t,r,n){if(typeof r!=="function"){return}if(!window[a]){window[a]=[]}var i=false;if(c){i=c(e,n,r)}if(!i){window[a].push({command:e,version:t,callback:r,parameter:n})}}e.stub=true;e.stubVersion=2;function t(n){if(!window[r]||window[r].stub!==true){return}if(!n.data){return}var i=typeof n.data==="string";var e;try{e=i?JSON.parse(n.data):n.data}catch(t){return}if(e[o]){var a=e[o];window[r](a.command,a.version,function(e,t){var r={};r[s]={returnValue:e,success:t,callId:a.callId};n.source.postMessage(i?JSON.stringify(r):r,"*")},a.parameter)}}if(typeof window[r]!=="function"){window[r]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__uspapi","__uspapiBuffer","__uspapiCall","__uspapiReturn");n("__uspapiLocator");e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");n("__tcfapiLocator");(function(e){var t=document.createElement("link");t.rel="preconnect";t.as="script";var r=document.createElement("link");r.rel="dns-prefetch";r.as="script";var n=document.createElement("link");n.rel="preload";n.as="script";var i=document.createElement("script");i.id="spcloader";i.type="text/javascript";i["async"]=true;i.charset="utf-8";var a="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;if(window.didomiConfig&&window.didomiConfig.user){var o=window.didomiConfig.user;var s=o.country;var c=o.region;if(s){a=a+"&country="+s;if(c){a=a+"&region="+c}}}t.href="https://sdk.privacy-center.org/";r.href="https://sdk.privacy-center.org/";n.href=a;i.src=a;var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(t,d);d.parentNode.insertBefore(r,d);d.parentNode.insertBefore(n,d);d.parentNode.insertBefore(i,d)})("137c2d1b-0c29-4419-99a9-15a7854da8c3")})();
+</script>
+<link as="image" href="https://ibi.gsstatic.es/sfAttachPlugin/getCachedContent/id/722137/width/730/height/500/crop/1" media="(min-width: 445px)" rel="preload" /><link as="image" href="https://ibi.gsstatic.es/sfAttachPlugin/getCachedContent/id/722137/width/425/height/283/crop/1" media="(max-width: 444px)" rel="preload" /><meta name="title" content="El Congreso vota en contra de la prisión permanente revisable" />
+<meta name="description" content="La iniciativa del PNV para derogar la prisión permanente revisable seguirá su curso en el Congreso de los Diputados tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta." />
+<meta name="language" content="es" />
+<meta name="robots" content="index, follow, max-image-preview:large, noai, noimageai" />
+<meta name="keywords" content="Congreso de los Diputados,prisión permanente revisable,Nacional" />
+<meta name="news_keywords" content="Congreso de los Diputados,prisión permanente revisable,Nacional" />
+<meta name="twitter:site" content="@periodicibiza" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://ibi.gsstatic.es/sfAttachPlugin/social/722137.jpg" />
+<meta name="twitter:url" content="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" />
+<meta name="twitter:title" content="El Congreso vota en contra de la prisión permanente revisable" />
+<meta name="twitter:description" content="La iniciativa del PNV para derogar la prisión permanente revisable seguirá su curso en el Congreso de los Diputados tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta." />
+<meta name="dc.date.issued" content="2018-03-15" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#004070" />
+<meta name="tdm-reservation" content="1" />
+<meta name="tdm-policy" content="https://www.periodicodeibiza.es/aviso_legal.html" />
+<title>El Congreso vota en contra de la prisión permanente revisable</title>
+<link href="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" rel="canonical" />
+<meta property="og:site_name" content="Periódico de Ibiza y Formentera" />
+<meta property="fb:pages" content="110593872306584" />
+<meta property="fb:admins" content="1009840697" />
+<meta property="fb:app_id" content="675519009779762" />
+<meta property="article:publisher" content="https://www.facebook.com/PeriodicodeIbiza/" />
+<meta property="og:title" content="El Congreso vota en contra de la prisión permanente revisable" />
+<meta property="og:url" content="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="La iniciativa del PNV para derogar la prisión permanente revisable seguirá su curso en el Congreso de los Diputados tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta." />
+<meta property="article:tag" content="Congreso de los Diputados" />
+<meta property="article:tag" content="prisión permanente revisable" />
+<meta property="article:section" content="Nacional" />
+<meta property="article:published_time" content="2018-03-15T22:47:00+01:00" />
+<meta property="article:modified_time" content="2018-03-18T13:05:13+01:00" />
+<meta property="article:content_tier" content="free" />
+<meta property="og:image" content="https://ibi.gsstatic.es/sfAttachPlugin/social/722137.jpg" />
+<meta property="og:image:secure_url" content="https://ibi.gsstatic.es/sfAttachPlugin/social/722137.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="article:author" content="https://www.periodicodeibiza.es/autor/europa-press.html" />
+<meta property="mrf:sections" content="Noticias" />
+<meta property="mrf:tags" content="sub-section:Nacional" />
+<meta property="mrf:tags" content="membrana:" />
+<meta property="mrf:tags" content="mediatype:imagen" />
+<meta property="mrf:tags" content="thumbnail_image:https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/722137" />
+<meta property="mrf:tags" content="layout:noticia" />
+<meta property="mrf:tags" content="fechapublicacion:20180315" />
+<meta property="mrf:tags" content="seotag:Congreso de los Diputados;seotag:prisión permanente revisable" />
+<meta property="mrf:tags" content="noticia_id:986819" />
+<meta property="mrf:tags" content="branded_content:No" />
+<meta property="mrf:tags" content="amplifycable:Sí" />
+<meta property="mrf:tags" content="ia_generated:0" />
+<meta property="mrf:tags" content="audiencias-um:0" />
+<meta property="mrf:tags" content="firma:Europa Press" />
+<meta property="mrf:tags" content="createdby:cmarch" />
+<meta property="mrf:tags" content="categoria:noticias" />
+<meta property="mrf:tags" content="subcategoria:nacional" />
+<meta property="mrf:tags" content="accesstype:abierto" />
+<link href="https://www.periodicodeibiza.es/feed.rss" title="Noticias en Periódico de Ibiza y Formentera" rel="alternate" type="application/rss+xml" />
+<link href="https://www.periodicodeibiza.es/noticias.rss" title="Noticias en Periódico de Ibiza y Formentera sobre Noticias" rel="alternate" type="application/rss+xml" />
+<link href="https://www.periodicodeibiza.es/noticias/nacional.rss" title="Noticias en Periódico de Ibiza y Formentera sobre Nacional" rel="alternate" type="application/rss+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://ibi.gsstatic.es/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://ibi.gsstatic.es/images/android-icon-192x192.png">
+<link rel="shortcut icon" href="https://ibi.gsstatic.es/images/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/osd.xml" title="Ultima Hora">
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" media="screen" href="//ibi.gsstatic.es/dist/css/post.css" />
+<script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_O9sdnxx_5Gx6XWKc2rgQvV3_AHNt5RqRcjYufw3xjBqz3Ohh6ozW0uNHlTE9o0hF" defer="">{ lang: 'es', sessionExpiration: -2 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//ibi.gsstatic.es/dist/js/post.bundle.js" referrerpolicy="no-referrer"></script>
+
+<script>
+dataLayer=[{"layout":"noticia","categoria":"noticias","subcategoria":"nacional","terciariacategoria":null,"createdby":"cmarch","lastmodify":null,"firma":"Europa Press","fechapublicacion":"20180315","keywords":"Congreso de los Diputados,prisi\u00f3n permanente revisable,Nacional","noticia_id":"986819","mediatype":"imagen","seotag":"Congreso de los Diputados,prisi\u00f3n permanente revisable","platform":"mobile","branded_content":"No","accesstype":"abierto","ia_generated":"0","thalia":null,"audiencias-um":"0","user_logged":"0","fchoices":"1","user_id":null,"membrana":false,"thumbnail_image":"https:\/\/ibi.gsstatic.es\/sfAttachPlugin\/getPreview\/id\/722137","publish_time":"2018-03-15 22:47:00","amplifycable":"S\u00ed"}];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV3JWJ9');</script>
+
+<!-- Begin TeadsAnalytics Tag -->
+<script>
+  window.teads_analytics = window.teads_analytics || {};
+  window.teads_analytics.analytics_tag_id = "PUB_16366";
+ window.teads_analytics.share = window.teads_analytics.share || function() {
+   ;(window.teads_analytics.shared_data = window.teads_analytics.shared_data || []).push(arguments)
+ };
+</script>
+<script async src="https://a.teads.tv/analytics/tag.js"></script>
+
+<!-- Begin comScore Tag -->
+<script>
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(() => {
+      _comscore = window._comscore || [];
+      _comscore.push({ "c1": "2", "c2": "18849942", "options": { "enableFirstPartyCookie": true} });
+      (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src =  "https://sb.scorecardresearch.com/cs/18849942/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    });
+</script>
+<noscript>
+      <img src="https://sb.scorecardresearch.com/p?c1=2&c2=18849942&cv=4.4.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+
+<script>
+<!--
+var gfkS2sConf = {
+	    media:    "PeriodicodeibizayformenteraWeb",
+	    url:      "//es-config.sensic.net/s2s-web.js",
+	    type:     "WEB",
+    };
+
+(function (w, d, c, s, id, v) {
+    if (d.getElementById(id)) {
+        return;
+    }
+  
+    w.gfkS2sConf = c;
+    w[id] = {};
+    w[id].agents = [];
+    var api = ["playStreamLive", "playStreamOnDemand", "stop", "skip", "screen", "volume", "impression"];
+    w.gfks = (function () {
+        function f(sA, e, cb) {
+            return function () {
+                sA.p = cb();
+                sA.queue.push({f: e, a: arguments});
+            };
+        }
+        function s(c, pId, cb) {
+            var sA = {queue: [], config: c, cb: cb, pId: pId};
+            for (var i = 0; i < api.length; i++) {
+                var e = api[i];
+                sA[e] = f(sA, e, cb);
+            }
+            return sA;
+        }
+        return s;
+    }());
+    w[id].getAgent = function (cb, pId) {
+        var a = {
+            a: new w.gfks(c, pId || "", cb || function () {
+                return 0;
+            })
+        };
+        function g(a, e) {
+            return function () {
+                return a.a[e].apply(a.a, arguments);
+            }
+        }
+        for (var i = 0; i < api.length; i++) {
+            var e = api[i];
+            a[e] = g(a, e);
+        }
+        w[id].agents.push(a);
+        return a;
+    };
+  
+    var lJS = function (eId, url) {
+        var tag = d.createElement(s);
+        var el = d.getElementsByTagName(s)[0];
+        tag.id = eId;
+        tag.async = true;
+        tag.type = 'text/javascript';
+        tag.src = url;
+        el.parentNode.insertBefore(tag, el);
+    };
+  
+    if (c.hasOwnProperty(v)) {lJS(id + v, c[v]);}
+    lJS(id, c.url);
+})(window, document, gfkS2sConf, 'script', 'gfkS2s', 'visUrl');
+
+var agent = gfkS2s.getAgent();
+var customParams = {"c1": "periodicodeibiza.es", "c2": "noticias"}
+agent.impression("default", customParams);
+</script>
+
+
+<script>
+	function e(e){var t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],c=document.createElement("script");c.src=e,t?c.type="module":(c.async=!0,c.type="text/javascript",c.setAttribute("nomodule",""));var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(c,n)}function t(t,c,n){var a,o,r;null!==(a=t.marfeel)&&void 0!==a||(t.marfeel={}),null!==(o=(r=t.marfeel).cmd)&&void 0!==o||(r.cmd=[]),t.marfeel.config=n,t.marfeel.config.accountId=c;var i="https://sdk.mrf.io/statics";e("".concat(i,"/marfeel-sdk.js?id=").concat(c),!0),e("".concat(i,"/marfeel-sdk.es5.js?id=").concat(c),!1)}!function(e,c){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};t(e,c,n)}(window,2991,{"multimedia":{"providers":[]}});
+</script>
+</head>
+<body>
+<div class="adk-slot interstitial"> <div id="adk_interstitial0"></div> <div id="adk_interstitial"></div> </div>
+<header class="header-top d-print-none"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "@id": "https://www.periodicodeibiza.es/#organizacion",
+  "name": "Periódico de Ibiza y Formentera",
+  "url": "https://www.periodicodeibiza.es",
+  "contactPoint" : {
+    "@type" : "ContactPoint",
+    "contactType" : "Redacción Digital",
+    "telephone": "+34971190543",
+    "email": "redaccion@periodicodeibiza.es",
+    "areaServed": "ES",
+    "availableLanguage": "es"
+  },
+  "logo": {
+    "@type" : "ImageObject",
+    "url": "https://ibi.gsstatic.es/images/news.png",
+    "width": 1200,
+    "height": 1200
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Eivissa",
+    "addressCountry": "ES",
+    "postalCode": "07800",
+    "streetAddress": "Camí Vell de Sant Mateu, 3. Edif. Grupo Prensa Pitiusa"
+  },
+  "sameAs" : [
+        "https://www.facebook.com/PeriodicodeIbiza",
+        "https://www.youtube.com/channel/UCLIfvO9mTgeN72Ryw0MvAJg",
+        "https://x.com/periodicibiza",
+        "https://bsky.app/profile/periodicodeibiza.es",
+        "https://www.linkedin.com/company/periodico-de-ibiza-y-formentera",
+        "https://www.instagram.com/periodicoibiza/",
+        "https://t.me/periodicodeibiza_bot",
+        "https://www.tiktok.com/@periodicoibiza",
+        "https://news.google.com/publications/CAAiECIamEsmXqJzKbLmtvzOaiIqFAgKIhAiGphLJl6icymy5rb8zmoi",
+        "https://profile.google.com/cp/CgwvZy8xMTl0ZDV3djg"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Grupo Serra",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.gruposerra.com/images/grupserra_amp.png"
+      }
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.periodicodeibiza.es",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.periodicodeibiza.es/search?term={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<div id="top-nav" class="d-print-none">
+<nav class="navbar-top edition-selector-today">
+    <div class="container">
+        <div class="row">
+            
+<div class="col-12 col-lg d-flex order-1 order-lg-0 today-news">
+    <strong><a class="text-brand" href="/googlenews.xml"><span class="d-none d-lg-inline">Hoy es noticia</span><span class="d-lg-none">Es noticia</span></a>:</strong>
+    <div class="scrolling ml-1">
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/ultimas.html">Últimas noticias</a></li>
+        <li class="list-inline-item"><a data-value="2744175" data-model="Noticia" title="Retiradas las dos bombas principales del tanque de tormentas del puerto de Ibiza para revisar qué provocó el último vertido fecal" href="/pitiusas/ibiza/2026/11/06/2744175/indignacion-ayuntamiento-ibiza-ante-fallos-del-tanque-tormentas-del-puerto.html?utm_source=Hoy-es-noticia&amp;utm_medium=internal">Tanque de tormentas</a></li><li class="list-inline-item"><a data-value="2744199" data-model="Noticia" title="Un paciente agrede verbalmente a una doctora del Centro de Salud de Sant Antoni" href="/pitiusas/ibiza/2026/11/06/2744199/paciente-agrede-verbalmente-doctora-del-centro-salud-sant-antoni.html?utm_source=Hoy-es-noticia&amp;utm_medium=internal">Agresión en Centro de Salud</a></li><li class="list-inline-item"><a data-value="2743565" data-model="Noticia" title="6.000 euros de multa a la portavoz de Sargantana Power por tener un refugio de lagartijas en su casa de campo en Ibiza" href="/cronica-negra/local/2026/11/05/2743565/multazo-6000-euros-por-tener-confinar-ejemplares-lagartija-pitiusa-refugio-privado-ibiza.html?utm_source=Hoy-es-noticia&amp;utm_medium=internal">Lagartija pitiusa</a></li>    </ul>
+    </div>
+</div>
+            <div class="col-12 col-lg-auto text-lg-right">
+                <ul class="list-inline edition-selector">
+                    <li class="list-inline-item"><a href="https://www.ultimahora.es/" class="nav-linkd">Mallorca</a></li>
+                    <li class="list-inline-item"><a href="https://www.menorca.info/" class="nav-linkd">Menorca</a></li>
+                    <li class="list-inline-item"><a class="nav-linkd" href="/">Ibiza y Formentera</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-main minibar" data-toggle="minibar-fixed">
+    <div class="container">
+        <div id="hamburger" role="button" data-toggle="collapse" data-target="#hamburger-menu"
+             aria-label="hamburger" aria-controls="hamburger-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="date-today d-none d-lg-block text-center">
+            <span class="today"><strong>Viernes</strong>, 06 de noviembre de 2026</span>
+        </span>
+        <a class="navbar-brand" aria-label="Ibiza" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 337 50" xml:space="preserve"><style>.st0{fill:#00b0d7}.st1{fill:#fff}</style><path class="st0" d="m91.3 6.3 6.2-3.1c.7-.4 1.5-.8 1.6-1.7.1-.4-.2-1.3-1-1.4-.8-.1-1.5.2-2.2.7l-5.7 3.9 1.1 1.6z"/><path class="st1" d="M18.5 20.2c1-.2 3.6-1.3 3.6-4.5 0-2.6-1.9-3.4-3.8-3.4h-2.1v23.6H8.3v-29h10.8c6.5 0 10.5 2.7 10.5 8.4 0 4.9-4 10.2-10.8 10.2h-1.4v-5.1l1.1-.2zM46.8 12.3h-8V18h7.8v5.4h-7.8v7h9.6v5.4H31v-29h15.8v5.5zM50.3 6.8h11.6c6.1 0 9.5 3 9.5 7.7 0 4.4-2 7-4.4 8.4l5.8 12.4-8.4 1-4.1-11.5h-2v11h-7.9v-29zm7.8 12.6h2.2c2.1 0 3.1-2 3.1-3.6 0-2.9-1.6-3.6-3.3-3.6H58v7.2zM73.7 35.8v-29h7.9v29h-7.9zM83.8 21c0-8.1 5.5-14.7 13-14.7s13 6.5 13 14.7c0 8.7-5 15.3-13 15.3s-13-6.6-13-15.3zm17.7 0c0-5.1-1.4-8.6-4.8-8.6S92 15.9 92 21c0 5.5 1.3 9.3 4.8 9.3s4.7-3.8 4.7-9.3zM122.2 6.8c10.4 0 14.5 6.7 14.5 13.7 0 10.6-6.9 15.3-14.8 15.3H112v-29h10.2zm-2.3 23.6h2c4.5 0 6.6-4 6.6-9.9 0-5.3-2.9-8.3-6.4-8.3h-2.3v18.2zM138.9 35.8v-29h7.9v29h-7.9zM171.2 35c-1.5.6-3.9 1.3-6.3 1.3-8.7 0-15.8-5.8-15.8-15.3 0-8.8 6.5-14.7 15.4-14.7 1.7 0 4.8.5 6.7 1.4l-1.9 5.1c-1.3-.4-3.6-.5-4.3-.5-3.8 0-7.6 2.7-7.6 9 0 6.2 3.8 8.9 7.9 8.9 1.7 0 3.2-.3 4.4-.7l1.5 5.5zM172.5 21c0-8.1 5.5-14.7 13-14.7s13 6.5 13 14.7c0 8.7-5 15.3-13 15.3s-13-6.6-13-15.3zm17.8 0c0-5.1-1.4-8.6-4.8-8.6s-4.8 3.5-4.8 8.6c0 5.5 1.3 9.3 4.8 9.3s4.8-3.8 4.8-9.3z"/><g><path class="st0" d="M207 34.2c-.7 1-1.8 2-3.4 2-2.7 0-4.5-2.5-4.5-6.2 0-3 1.9-6 4.7-6 1.3 0 2.6.6 3.2 1.6v-6.8h2.8v17.1H207v-1.7zm-5-4.4c0 2.3.8 4.5 2.4 4.5 1.8 0 2.6-2.2 2.6-4.6 0-2-.8-3.9-2.5-3.9-1.8 0-2.5 1.7-2.5 4zM214.1 30.3c-.1 2.2 1.3 3.8 3 3.8 1 0 2.1-.4 2.8-.9l.8 1.6c-1.4.9-2.9 1.3-4.1 1.3-3.1 0-5.5-2.5-5.5-6.3 0-3.6 2.3-5.9 5.3-5.9 3.2 0 4.6 2.9 4.4 6.4h-6.7zm4.1-1.7c.1-1.8-.5-3-1.8-3-1.6 0-2.3 1.4-2.3 3h4.1z"/></g><g><path class="st1" d="M223.3 35.8v-29h8.6v29h-8.6zM236.9 35.8v-29h12.7c5.7 0 9.5 2.4 9.5 6.6 0 4.5-3.8 5.8-5.6 6.7v.1c3.3.2 7.5 2.8 7.5 6.8 0 5.3-4.1 8.9-12.3 8.9h-11.8zm8.6-17.4h1.5c3.2 0 4.3-1.8 4.3-3.7 0-2.4-2.1-3.1-3.4-3.1h-2.4v6.8zm0 12.8h1.6c3 0 5-1.5 5-4.3 0-2.3-1.1-3.8-4.1-3.8h-2.5v8.1zM262.7 35.8v-29h8.6v29h-8.6zM297.7 9.7l-12.8 20.7h13.5v5.4H274v-2.9l13-20.6h-10V6.8h20.7v2.9zM317.8 6.8l10.9 29h-9.2l-2.3-6.9h-8.9l-2.7 6.9h-6.8l11.7-29h7.3zm-1.9 17.5c-.9-3.4-1.8-6.2-2.8-10.4h-.1c-1.1 4.1-2.1 6.9-3.2 10.4h6.1z"/></g><g><path class="st1" d="M226 49.8v-3.9l-2.8-6 3.1-.3c.5 1.3 1 2.7 1.5 4.4.6-1.8 1.1-3.1 1.7-4.4l2.3.3-2.9 6v3.9H226zM242.9 41.6H240v2.5h2.8V46H240v3.8h-2.8V39.7h5.7v1.9zM244 44.6c0-2.8 2-5.1 4.7-5.1s4.7 2.3 4.7 5.1c0 3-1.8 5.4-4.7 5.4-3 0-4.7-2.3-4.7-5.4zm6.4 0c0-1.8-.5-3-1.7-3s-1.7 1.2-1.7 3c0 1.9.5 3.2 1.7 3.2 1.2.1 1.7-1.2 1.7-3.2zM254.7 39.7h4.2c2.2 0 3.4 1 3.4 2.7 0 1.5-.7 2.5-1.6 2.9l2.1 4.3-3.1.3-1.5-4h-.7v3.8h-2.8v-10zm2.9 4.4h.8c.8 0 1.1-.7 1.1-1.2 0-1-.6-1.2-1.2-1.2h-.8v2.4zM275.2 49.8h-2.8v-7.1c-.7 2.6-1.5 4.9-2.2 7.1h-1.8c-.8-2.2-1.5-4.4-2.3-7.1v7.1h-2.2V39.7h3.9c.6 1.9 1.3 3.9 1.9 6.2.6-2.4 1.2-4.3 1.9-6.2h3.8v10.1zM282.6 41.6h-2.9v2h2.8v1.9h-2.8v2.4h3.5v1.9h-6.3V39.7h5.7v1.9zM292.7 49.8h-1.9c-1.4-1.8-3.3-4.3-4.2-5.9v5.9h-2.2V39.7h2.1c1.4 1.8 3.4 4.4 4.1 5.8v-5.8h2.2v10.1zM296.4 49.8v-8.2h-2.7v-1.9h8.3v1.9h-2.7v8.2h-2.9zM308.6 41.6h-2.9v2h2.8v1.9h-2.8v2.4h3.5v1.9h-6.3V39.7h5.7v1.9zM310.4 39.7h4.2c2.2 0 3.4 1 3.4 2.7 0 1.5-.7 2.5-1.6 2.9l2.1 4.3-3.1.3-1.5-4h-.7v3.8h-2.8v-10zm2.8 4.4h.8c.8 0 1.1-.7 1.1-1.2 0-1-.6-1.2-1.2-1.2h-.8v2.4zM324.9 39.7l3.6 10.1h-3l-.7-2.4h-2.9l-.9 2.4h-2.2l3.8-10.1h2.3zm-.6 6.1c-.3-1.2-.6-2.2-.9-3.6-.4 1.4-.7 2.4-1 3.6h1.9z"/></g></svg>        </a>
+        <div class="collapse navbar-collapse hamburger-menu" id="hamburger-menu">
+    <form role="search" method="post" action="/search.html"><label for="terms" class="sr-only">Buscar</label><input type="text" name="terms" id="terms" value class="search" placeholder="Buscar" autocomplete="search" /><button type="submit" class="search-icon" aria-label="Buscar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M195.55 173.79l-41.22-41.22c9.94-14.34 14.9-30.32 14.9-47.95 0-11.47-2.22-22.42-6.67-32.88-4.45-10.45-10.46-19.47-18.03-27.04s-16.58-13.59-27.04-18.03C107.03 2.22 96.08 0 84.62 0 73.16 0 62.2 2.22 51.74 6.67 41.28 11.11 32.27 17.13 24.7 24.7c-7.58 7.57-13.58 16.59-18.03 27.04C2.22 62.2 0 73.15 0 84.62c0 11.46 2.22 22.42 6.67 32.88 4.45 10.45 10.46 19.47 18.03 27.04 7.57 7.56 16.59 13.58 27.04 18.03 10.46 4.44 21.42 6.67 32.87 6.67 17.63 0 33.62-4.98 47.96-14.91l41.22 41.1c2.89 3.05 6.49 4.58 10.82 4.58 4.25 0 7.87-1.51 10.87-4.51 3.01-3 4.51-6.63 4.51-10.88s-1.47-7.86-4.44-10.83zm-72.89-51.13c-10.54 10.53-23.22 15.8-38.04 15.8s-27.5-5.26-38.04-15.8c-10.54-10.54-15.81-23.22-15.81-38.04s5.27-27.51 15.81-38.04c10.54-10.53 23.21-15.81 38.04-15.81s27.5 5.28 38.04 15.81c10.54 10.53 15.81 23.22 15.81 38.04s-5.28 27.5-15.81 38.04z"/></svg></button></form>    <div id="hamburger-items" class="d-flex flex-column">
+    <div class="nav-item order-first"><a class="btn btn-link collapsed simple" href="/">Portada</a></div><div class="nav-item order-1">
+    <button class="pitiusas btn btn-link collapsed" data-toggle="collapse" data-target="#menu7" aria-expanded="false" aria-controls="menu7">
+        Pitiusas    </button>
+    <div id="menu7" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/pitiusas.html">Todo PITIUSAS</a></li><li><a href="/pitiusas/ibiza.html">Ibiza</a></li><li><a href="/pitiusas/formentera.html">Formentera</a></li><li><a href="/pitiusas/aldia.html">Al día</a></li><li><a href="/pitiusas/gente-ibiza-formentera.html">Gente de Ibiza y Formentera</a></li><li><a href="/pitiusas/bares-siempre.html">Bares de siempre</a></li><li><a href="/pitiusas/ibiza-news.html">Ibiza News</a></li><li><a href="/pitiusas/cadira-des-majors.html">Sa cadira des majors</a></li><li><a href="/pitiusas/promociones.html">Promociones</a></li><li><a href="/pitiusas/que-hacer-en-ibiza.html">Qué hacer en Ibiza</a></li><li><a href="/pitiusas/fotos.html">Fotos</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-2">
+    <button class="noticias btn btn-link collapsed" data-toggle="collapse" data-target="#menu8" aria-expanded="false" aria-controls="menu8">
+        Noticias    </button>
+    <div id="menu8" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/noticias.html">Todo NOTICIAS</a></li><li><a href="/noticias/baleares.html">Baleares</a></li><li><a href="/noticias/nacional.html">Nacional</a></li><li><a href="/noticias/elecciones-29n.html">Elecciones 29N</a></li><li><a href="/noticias/internacional.html">Internacional</a></li><li><a href="/noticias/cultura.html">Cultura</a></li><li><a href="/noticias/sociedad.html">Sociedad</a></li><li><a href="/noticias/economico.html">El Económico</a></li><li><a href="/noticias/te-puede-interesar.html">Te puede interesar</a></li><li><a href="/noticias/escaparate.html">El escaparate</a></li><li><a href="/noticias/saludablemente.html">Saludable(mente)</a></li><li><a href="/noticias/sorteos-loterias.html">Sorteos y Loterías</a></li><li><a href="/noticias/fotos.html">Fotos</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-2">
+    <button class="cronica-negra btn btn-link collapsed" data-toggle="collapse" data-target="#menu37" aria-expanded="false" aria-controls="menu37">
+        Crónica Negra    </button>
+    <div id="menu37" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/cronica-negra.html">Todo CRÓNICA NEGRA</a></li><li><a href="/cronica-negra/local.html">Local</a></li><li><a href="/cronica-negra/nacional.html">Nacional</a></li><li><a href="/cronica-negra/internacional.html">Internacional</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-3">
+    <button class="deportes btn btn-link collapsed" data-toggle="collapse" data-target="#menu9" aria-expanded="false" aria-controls="menu9">
+        Deportes    </button>
+    <div id="menu9" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/deportes.html">Todo DEPORTES</a></li><li><a href="/deportes/deporte-ibiza.html">Deporte Ibiza</a></li><li><a href="/deportes/noticias.html">Noticias</a></li><li><a href="/deportes/resultados.html">Clasificaciones y resultados</a></li><li><a href="/deportes/fotos.html">Fotos</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-4">
+    <button class="opinion btn btn-link collapsed" data-toggle="collapse" data-target="#menu11" aria-expanded="false" aria-controls="menu11">
+        Opinión    </button>
+    <div id="menu11" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/opinion.html">Todo OPINIÓN</a></li><li><a href="/opinion/firmas-del-dia.html">Firmas del día</a></li><li><a href="/opinion/editorial.html">Editorial</a></li><li><a href="/opinion/mirador.html">Es Mirador</a></li><li><a href="/opinion/gritos-susurros.html">Gritos y susurros</a></li><li><a href="/opinion/cartas-director.html">Cartas al Director</a></li><li><a href="/autores.html">Autores</a></li><li><a href="/opinion/tira_comica.html">Tira cómica</a></li>     
+        </ul>
+    </div>
+</div>
+<div class="nav-item order-7">
+    <button class="vips btn btn-link collapsed" data-toggle="collapse" data-target="#menu15" aria-expanded="false" aria-controls="menu15">
+        Vips    </button>
+    <div id="menu15" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+        <li><a href="/vips.html">Todo VIPS</a></li><li><a href="/vips/discreto-encanto.html">El discreto encanto</a></li><li><a href="/vips/television.html">Televisión</a></li><li><a href="/vips/quiosco-rosa.html">Quiosco Rosa</a></li><li><a href="/vips/fotos.html">Fotos</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-6">
+    <button class="participa btn btn-link collapsed" data-toggle="collapse" data-target="#menu4" aria-expanded="false" aria-controls="menu4">
+        Participa
+    </button>
+    <div id="menu4" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+            <li><a href="/participa.html">Todo PARTICIPA</a></li>
+            <li><a href="/participa/denuncias.html">Denuncias</a></li>
+                        <li><a href="/encuestas.html">Encuestas</a></li>
+            <li><a href="/participa/protagonistas.html">Protagonistas</a></li>
+            <li><a href="/sorteos.html">Sorteos</a></li><li><a href="/pasatiempos">Pasatiempos</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-6">
+    <button class="ocio btn btn-link collapsed" data-toggle="collapse" data-target="#menu_ocio" aria-expanded="false" aria-controls="menu_ocio">
+        Ocio    </button>
+    <div id="menu_ocio" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+	<li><a href="/ocio.html">Todo Ocio</a></li><li><a href="/ocio/cartelera.html">Cartelera</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-6">
+    <button class="comer ocio btn btn-link collapsed" data-toggle="collapse" data-target="#menu_comer" aria-expanded="false" aria-controls="menu_comer">
+       Comer y beber 
+    </button>
+    <div id="menu_comer" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+	<li><a href="/comer-beber.html">Todo COMER Y BEBER</a></li><li><a href="/comer-beber/restaurantes.html">Restaurantes</a></li><li><a href="/comer-beber/bares.html">Bares</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-last">
+	<button class="especial btn btn-link collapsed" data-toggle="collapse" data-target="#menu_especial_especiales" aria-expanded="false" aria-controls="menu_especial_especiales">
+		Especiales	</button>
+	<div id="menu_especial_especiales" class="collapse" data-parent="#hamburger-items">
+		<ul class="list-unstyled">
+        <li><a href="/especiales.html">Todos los ESPECIALES</a></li><li><a href="/especiales/especial-gastronomia-otono-2026.html">Especial Gastronomía de Otoño 2026</a></li><li><a href="/especiales/especial-bienestar-salud-belleza-2026.html">Especial Bienestar, Salud y Belleza 2026 </a></li><li><a href="/especiales/especial-top-mejores-restaurantes-junto-mar.html">Especial Top Mejores Restaurantes Junto al Mar </a></li><li><a href="/especiales/especial-gastronomia-verano-2026.html">Especial Gastronomía Verano 2026</a></li><li><a href="/especiales/anuario-economico-2025-illes-balears.html">Anuario Económico 2025 Illes Balears</a></li><li><a href="/especiales/especial-nostra-terra-2026.html">Especial Sa Nostra Terra 2026</a></li><li><a href="/especiales/especial-bodas-celebraciones-2026.html">Especial Bodas y Celebraciones 2026</a></li><li><a href="/especiales/especial-anar-maig-2026.html">Especial Anar a Maig 2026</a></li><li><a href="/especiales/especial-construccion-marzo-2026.html">Especial Construcción Marzo 2026</a></li><li><a href="/especiales/especial-talleres-febrero-2026.html">Especial Talleres de Confianza 2026</a></li><li><a href="/especiales/especial-restaurantes-top-junto-mar.html">Especial Restaurantes TOP Junto al Mar</a></li><li><a href="/especiales/especial-aniversario-periodico-ibiza-formentera.html">Especial 10º Aniversario de Periódico de Ibiza y Formentera</a></li><li><a href="/especiales/todos.html">Especiales anteriores</a></li>		</ul>
+	</div>
+</div>
+<div class="nav-item order-last">
+    <button class="guia btn btn-link collapsed" data-toggle="collapse" data-target="#menu_servicios" aria-expanded="false" aria-controls="menu_servicios">
+        Servicios    </button>
+    <div id="menu_servicios" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+            <li><a href="/el-tiempo.html">El tiempo</a></li>
+            <li><a href="/horoscopo.html">Horóscopo</a></li><li><a href="/webcams.html">Webcams</a></li><li><a href="/gasolineras.html">Gasolineras</a></li><li><a href="/hemeroteca.html">Hemeroteca</a></li><li><a href="/loterias.html">Sorteos y Loterías</a></li><li><a href="/puntos_de_venta.html">Puntos de venta</a></li>        </ul>
+    </div>
+</div>
+<div class="nav-item order-last">
+    <button class="media btn btn-link collapsed" data-toggle="collapse" data-target="#menu_media" aria-expanded="false" aria-controls="menu_media">
+       Multimedia    </button>
+    <div id="menu_media" class="collapse" data-parent="#hamburger-items">
+        <ul class="list-unstyled">
+          <li><a href="/media.html">Multimedia</a></li>
+          <li><a href="/fotogalerias.html">Fotogalerías</a></li>
+          <li><a href="/videos.html">Vídeos</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="nav-item order-last"><a class="btn btn-link collapsed simple" href="https://teftv.com/">TEF TV</a></div><div class="nav-item order-last"><a class="btn btn-link collapsed simple" href="https://club.periodicodeibiza.es/">Club</a></div>    </div>
+    <div class="follow pl-3 pr-3 mt-2">
+        <small>Síguenos</small>
+        <div class="d-flex align-items-center mt-2">
+            <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#facebook-view" class="hide-text facebook lazyload icon" rel="nofollow" href="https://www.facebook.com/PeriodicodeIbiza">facebook</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#youtube-view" class="hide-text youtube lazyload icon" rel="nofollow" href="https://www.youtube.com/channel/UCLIfvO9mTgeN72Ryw0MvAJg">youtube</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#x-view" class="hide-text x lazyload icon" rel="nofollow" href="https://x.com/periodicibiza">x</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#bsky-view" class="hide-text bsky lazyload icon" rel="nofollow" href="https://bsky.app/profile/periodicodeibiza.es">bsky</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#linkedin-view" class="hide-text linkedin lazyload icon" rel="nofollow" href="https://www.linkedin.com/company/periodico-de-ibiza-y-formentera">linkedin</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#instagram-view" class="hide-text instagram lazyload icon" rel="nofollow" href="https://www.instagram.com/periodicoibiza/">instagram</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#telegram-view" class="hide-text telegram lazyload icon" rel="nofollow" href="https://t.me/periodicodeibiza_bot">telegram</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#tiktok-view" class="hide-text tiktok lazyload icon" rel="nofollow" href="https://www.tiktok.com/@periodicoibiza">tiktok</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#rss-view" class="hide-text rss lazyload icon" rel="nofollow" href="/feed.html">rss</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#gnews-view" class="hide-text gnews lazyload icon" rel="nofollow" href="https://news.google.com/publications/CAAiECIamEsmXqJzKbLmtvzOaiIqFAgKIhAiGphLJl6icymy5rb8zmoi">gnews</a> <a data-bg="https://ibi.gsstatic.es/images/shared/svg/icons.svg#discover-view" class="hide-text discover lazyload icon" rel="nofollow" href="https://profile.google.com/cp/CgwvZy8xMTl0ZDV3djg">discover</a>         </div>
+    </div>
+    <div class="bottom-links pl-3 pr-3 mt-3 mb-3">
+    <a href="/contacto/publicidad.html">Contratar publicidad</a><a href="https://club.periodicodeibiza.es">Suscríbete</a><a href="/contacto.html">Contacto</a>    </div>
+</div>
+        <div class="navbar-actions">
+        <a href="/usuario/mi-perfil.html" class="gLogin btn btn-light login navbar-links hidden" aria-label="Iniciar sesión">
+            <span>Iniciar sesión</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.05 6.6L5.99 5.54c3.57-3.46 9.27-3.37 12.73.19s3.37 9.27-.19 12.73-9.27 3.37-12.73-.19c-.1-.1-.2-.21-.3-.32l1.06-1.06c2.7 3.14 7.43 3.51 10.58.81s3.51-7.43.81-10.58-7.43-3.51-10.58-.81c-.11.09-.22.19-.32.29z"/><path d="M5.86 12.29H0v-1.5h5.86M12.5 18c1.01 0 1.99-.26 2.86-.77.86-.47 1.6-1.15 2.14-1.97-.01-.52-.33-.99-.94-1.42-.53-.37-1.21-.66-2.04-.9-.75-.2-1.42-.31-2.03-.31s-1.28.1-2.03.31c-.83.23-1.5.53-2.02.9-.61.43-.93.91-.94 1.42.54.82 1.28 1.5 2.14 1.97.91.51 1.86.77 2.86.77zm0-11c-.44 0-.85.11-1.24.35A2.563 2.563 0 0010 9.54c0 .45.11.87.34 1.26.23.39.53.71.92.94a2.4 2.4 0 002.48 0c.39-.23.69-.54.92-.94.23-.39.34-.81.34-1.26 0-.45-.11-.87-.34-1.26-.22-.39-.54-.71-.92-.93A2.4 2.4 0 0012.5 7z"/><path d="M3.68 8.61v5.87h-1.5V8.61"/></svg>        </a>
+        <a href="#" data-logout-text="Salir" class="gRegister btn subscribe navbar-links hidden">Regístrate</a>
+        </div>
+    </div>
+    <div class="scroller">
+        <div class="scroller-progress"></div>
+    </div>
+</nav>
+</div>
+<nav class="navbar navbar-menu navbar-expand-md">
+    <div class="container-fluid container-md">
+        <ul class="nav-menu nav-fill navbar-nav scrolling-nav">
+            <li class="nav-item order-first">
+                <a class="menu-link" aria-label="home" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4l8 7.77-1.5 1.46-6.5-6.3-6.49 6.3L4 11.77 12 4zM6.29 19v-4.98L12 8.61l5.71 5.4V19h-4.08v-4.53h-3.26V19H6.29z" fill-rule="evenodd" clip-rule="evenodd"/></svg>                </a>
+            </li>
+            <li class="nav-item pitiusas order-1">
+    <a class="jsdown collapsed"
+       data-target="#subnav-pitiusas"
+       data-toggle="collapse"
+       data-slug="pitiusas"
+       data-menu-url="/seccion/navSubmenu/id/7"
+       href="/pitiusas.html"
+       aria-expanded="false">Pitiusas</a>
+    <div class="collapse collapsing subnav-container" id="subnav-pitiusas">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item active noticias order-2">
+    <a class="jsdown collapsed"
+       data-target="#subnav-noticias"
+       data-toggle="collapse"
+       data-slug="noticias"
+       data-menu-url="/seccion/navSubmenu/id/8"
+       href="/noticias.html"
+       aria-expanded="false">Noticias</a>
+    <div class="collapse collapsing subnav-container" id="subnav-noticias">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item cronica-negra order-2">
+    <a class="jsdown collapsed"
+       data-target="#subnav-cronica-negra"
+       data-toggle="collapse"
+       data-slug="cronica-negra"
+       data-menu-url="/seccion/navSubmenu/id/37"
+       href="/cronica-negra.html"
+       aria-expanded="false">Crónica Negra</a>
+    <div class="collapse collapsing subnav-container" id="subnav-cronica-negra">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item deportes order-3">
+    <a class="jsdown collapsed"
+       data-target="#subnav-deportes"
+       data-toggle="collapse"
+       data-slug="deportes"
+       data-menu-url="/seccion/navSubmenu/id/9"
+       href="/deportes.html"
+       aria-expanded="false">Deportes</a>
+    <div class="collapse collapsing subnav-container" id="subnav-deportes">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item opinion order-4">
+    <a class="jsdown collapsed"
+       data-target="#subnav-opinion"
+       data-toggle="collapse"
+       data-slug="opinion"
+       data-menu-url="/opinion/navSubmenu/id/11"
+       href="/opinion.html"
+       aria-expanded="false">Opinión</a>
+    <div class="collapse collapsing subnav-container" id="subnav-opinion">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item vips order-7">
+    <a class="jsdown collapsed"
+       data-target="#subnav-vips"
+       data-toggle="collapse"
+       data-slug="vips"
+       data-menu-url="/seccion/navSubmenu/id/15"
+       href="/vips.html"
+       aria-expanded="false">Vips</a>
+    <div class="collapse collapsing subnav-container" id="subnav-vips">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item participa order-6">
+    <a class="jsdown collapsed"
+       data-target="#subnav-participa"
+       data-toggle="collapse"
+       data-slug="participa"
+       data-menu-url="/participa/navSubmenu"
+       href="/participa.html"
+       aria-expanded="false">Participa</a>
+    <div class="collapse collapsing subnav-container" id="subnav-participa">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item ocio order-6">
+    <a class="jsdown collapsed"
+       data-target="#subnav-ocio"
+       data-toggle="collapse"
+       data-slug="ocio"
+       data-menu-url="/ocio/navSubmenu"
+       href="/ocio.html"
+       aria-expanded="false">Ocio</a>
+    <div class="collapse collapsing subnav-container" id="subnav-ocio">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item especiales order-last">
+    <a class="jsdown collapsed"
+       data-target="#subnav-especiales"
+       data-toggle="collapse"
+       data-slug="especiales"
+       data-menu-url="/especial/navSubmenu/id/1"
+       href="/especiales.html"
+       aria-expanded="false">Especiales</a>
+    <div class="collapse collapsing subnav-container" id="subnav-especiales">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item multimedia order-last">
+    <a class="jsdown collapsed"
+       data-target="#subnav-multimedia"
+       data-toggle="collapse"
+       data-slug="multimedia"
+       data-menu-url="/media/navSubmenu"
+       href="/media.html"
+       aria-expanded="false">Multimedia</a>
+    <div class="collapse collapsing subnav-container" id="subnav-multimedia">
+        <p class="text-center mt-3 font-weight-bold">Cargando...</p>
+    </div>
+</li>
+<li class="nav-item order-last"><a href="/esquelas.html">Esquelas</a></li><li class="nav-item order-last"><a href="https://teftv.com/">TEF TV</a></li><li class="nav-item order-last"><a href="https://club.periodicodeibiza.es/">Club</a></li>            <li class="nav-item actions d-none d-lg-block mr-0 text-right order-last">
+                <a aria-label="search" class="icon search" href="/search.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M195.55 173.79l-41.22-41.22c9.94-14.34 14.9-30.32 14.9-47.95 0-11.47-2.22-22.42-6.67-32.88-4.45-10.45-10.46-19.47-18.03-27.04s-16.58-13.59-27.04-18.03C107.03 2.22 96.08 0 84.62 0 73.16 0 62.2 2.22 51.74 6.67 41.28 11.11 32.27 17.13 24.7 24.7c-7.58 7.57-13.58 16.59-18.03 27.04C2.22 62.2 0 73.15 0 84.62c0 11.46 2.22 22.42 6.67 32.88 4.45 10.45 10.46 19.47 18.03 27.04 7.57 7.56 16.59 13.58 27.04 18.03 10.46 4.44 21.42 6.67 32.87 6.67 17.63 0 33.62-4.98 47.96-14.91l41.22 41.1c2.89 3.05 6.49 4.58 10.82 4.58 4.25 0 7.87-1.51 10.87-4.51 3.01-3 4.51-6.63 4.51-10.88s-1.47-7.86-4.44-10.83zm-72.89-51.13c-10.54 10.53-23.22 15.8-38.04 15.8s-27.5-5.26-38.04-15.8c-10.54-10.54-15.81-23.22-15.81-38.04s5.27-27.51 15.81-38.04c10.54-10.53 23.21-15.81 38.04-15.81s27.5 5.28 38.04 15.81c10.54 10.53 15.81 23.22 15.81 38.04s-5.28 27.5-15.81 38.04z"/></svg>                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+<div class="skys d-none d-print-none d-lg-flex">
+    <div class="ad left sticky-top">
+        <div class="henneoHB ad-content" id="x31">
+                </div>
+    </div>
+    <div class="ad right sticky-top">
+        <div class="henneoHB ad-content" id="x41">
+                </div>
+    </div>
+</div>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html"
+    },
+    "articleBody": "La iniciativa del PNV para derogar la prisión permanente revisable seguirá su curso en el Congreso de los Diputados tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta.\n\nEn la votación, los textos alternativos del PP y de Ciudadanos han sido rechazados por 178 diputados de PSOE, Unidos Podemos, ERC, PNV, PDeCAT, Compromís, Bildu y Nueva Canarias, mientras que la diputada de Coalición Canaria, Ana Oramas, optó por abstenerse.\n\nEl PP y Ciudadanos, que defendían textos diferentes --el Grupo Popular proponía ampliar los supuestos de aplicación de la prisión permanente y Ciudadanos abogaba por limitar el acceso a los beneficios penitenciarios--, se han apoyado entre sí, pero no sólo han sumado a UPN y Foro Asturias, los socios electorales del PP, con lo que han sido derrotados.\n\nEN OCTUBRE CIUDADANOS SE ABSTUVO\n\nLa proposición de ley del PNV supera así su segundo debate de totalidad en el Pleno del Congreso. El primero tuvo lugar en octubre del pasado año, en su toma en consideración, donde doblegó el rechazo del PP con los votos de los mismo partidos que este jueves, más la abstención de Ciudadanos.\n\nEste segundo debate ha sido seguido, en la tribuna de invitados, de los padres de Diana Quer y de la niña Mari Luz Cortés, la tía de Yeremi Vargas, la presidenta de la Asociación Clara Campoamor, Blanca Estrella Ruíz, así como los familiares del cámara José Couso o los padres de Marta del Castillo y Sandra Palo.\n\nEn su reunión del próximo martes, la Mesa del Congreso deberá decidir si se siguen ampliando los plazos de enmiendas al articulado de la iniciativa del PNV. En principio, los principales grupos aseguran ser partidarios de no acelerar la tramitación hasta que se pronuncie el Tribunal Constitucional, donde en 2015 recurrió el PSOE y buena parte de la oposición.",
+    "headline": "El Congreso vota en contra de la prisión permanente revisable",
+    "description": "La iniciativa del PNV para derogar la prisión permanente revisable seguirá su curso en el Congreso de los Diputados tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta.",
+    "articleSection": "Noticias",
+    "inLanguage": "es",
+    "@type": "NewsArticle",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://ibi.gsstatic.es/sfAttachPlugin/social/722137.jpg",
+            "width": 1200,
+            "height": 630,
+            "thumbnailUrl": "https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/722137",
+            "headline": "El Congreso vota en contra de la prisión permanente revisable",
+            "caption": "La ‘Plataforma para la No Derogación de la Prisión Permanente Revisable’ impulsada por las familias de Diana Quer, Mari Luz Cortés, Marta del Castillo, Sandra Palo y Yeremi Vargas, entre otras víctimas, han asegurado tras el debate en el Congreso, que “jamás” serán utilizados por ninguna fuerza política."
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://ibi.gsstatic.es/sfAttachPlugin/722137.jpg",
+            "width": 500,
+            "height": 333,
+            "thumbnailUrl": "https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/722137",
+            "headline": "El Congreso vota en contra de la prisión permanente revisable",
+            "caption": "La ‘Plataforma para la No Derogación de la Prisión Permanente Revisable’ impulsada por las familias de Diana Quer, Mari Luz Cortés, Marta del Castillo, Sandra Palo y Yeremi Vargas, entre otras víctimas, han asegurado tras el debate en el Congreso, que “jamás” serán utilizados por ninguna fuerza política."
+        }
+    ],
+    "datePublished": "2018-03-15T22:47:00+01:00",
+    "dateModified": "2018-03-18T13:05:13+01:00",
+    "locationCreated": {
+        "@type": "Place",
+        "name": "Palma de Mallorca, España"
+    },
+    "isAccessibleForFree": true,
+    "author": [
+        {
+            "@type": "Organization",
+            "name": "Europa Press",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://ibi.gsstatic.es/autor/europa-press/632.webp",
+                "width": 300,
+                "height": 300
+            }
+        }
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "cmarch"
+    },
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "Periódico de Ibiza y Formentera",
+        "@id": "https://www.periodicodeibiza.es/#organizacion",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ibi.gsstatic.es/images/news.png",
+            "width": 1200,
+            "height": 1200
+        }
+    }
+}</script><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.periodicodeibiza.es/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Noticias",
+            "item": "https://www.periodicodeibiza.es/noticias.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Nacional",
+            "item": "https://www.periodicodeibiza.es/noticias/nacional.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "El Congreso vota en contra de la prisión permanente revisable"
+        }
+    ]
+}</script><main class="post nacional noticias actualidad capitals">
+    <div class="container">
+        <div class="ad-top-container d-print-none mb-0 no-cls-mobile">
+    <div class="ads ad-top no-border sticky">
+        <div class="row">
+            <div class="col ad-content">
+                <div class="henneoHB henneoHB-top">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content-wrapper mt-3">
+            <div class="row section-title lower  separator-left">
+    <div class="col"><a href="/noticias.html">Noticias</a> | <span><a href="/noticias/nacional.html">Nacional</a></span></div></div>
+<script>
+<!--
+jQuery(function(){
+  if (typeof gigya == 'object')
+    gigya.accounts.getAccountInfo({
+      callback: function getAccountInfoResponse(response) {
+        if (response.errorCode == 0)
+          jQuery.ajax({type:'POST',dataType:'json',url:'/sfCounter/increment/sf_countable_token/f6e4140bb617fd7de72013f075cdc3f8/class/Noticia/id/986819', data: { "user_id": response['UID']}})
+        else
+          jQuery.ajax({type:'POST',dataType:'json',url:'/sfCounter/increment/sf_countable_token/f6e4140bb617fd7de72013f075cdc3f8/class/Noticia/id/986819'})
+      }
+    });
+  else
+    jQuery.ajax({type:'POST',dataType:'json',url:'/sfCounter/increment/sf_countable_token/f6e4140bb617fd7de72013f075cdc3f8/class/Noticia/id/986819'});
+});
+-->
+</script>
+            <div class="post-wrapper post-content bx">
+                <div class="post-intro">
+    <div class="row">
+        <div class="col">
+                        <h1 class="news-heading">El Congreso vota en contra de la prisión permanente revisable</h1>
+                    </div>
+    </div>
+</div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="post-head">
+                                <div class="post-img full-width-xs ads-top-after">
+        <div class="row no-gutters">
+            <div class="col-sm-12">
+                <meta itemprop="thumbnailUrl" content="https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/722137" /><meta itemprop="url" content="https://ibi.gsstatic.es/sfAttachPlugin/722137.jpg" /><meta itemprop="width" content="500" /><meta itemprop="height" content="333" /><div class="featured-img-container" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <figure class="position-relative mb-0">
+        <picture>
+            <source srcset="https://ibi.gsstatic.es/sfAttachPlugin/getCachedContent/id/722137/width/730/height/500/crop/1" media="(min-width: 445px)" type="image/jpeg" />
+            <img fetchpriority="high" data-full-src="https://ibi.gsstatic.es/sfAttachPlugin/722137.jpg" data-full-dimensions="{&quot;width&quot;:500,&quot;height&quot;:333}" alt="El Congreso vota en contra de la prisión permanente revisable" class="img-fluid d-block m-auto no-lazyload featured-img w-100" src="https://ibi.gsstatic.es/sfAttachPlugin/getCachedContent/id/722137/width/425/height/283/crop/1" />        </picture>
+    </figure>
+</div>
+<p class="img-description">La ‘Plataforma para la No Derogación de la Prisión Permanente Revisable’ impulsada por las familias de Diana Quer, Mari Luz Cortés, Marta del Castillo, Sandra Palo y Yeremi Vargas, entre otras víctimas, han asegurado tras el debate en el Congreso, que “jamás” serán utilizados por ninguna fuerza política. | Foto: E. P.</p>            </div>
+        </div>
+    </div>
+                            <div class="post-info full-width-xs">
+                                <div class="post-info-details row no-gutters">
+                                    <div class="col text-center">
+                                    <span class="authors"><span class="post-author">Europa Press</span></span><span class="post-date">15/03/18 22:47</span>                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-share with-bg full-width-xs d-print-none">
+                                <div class="row no-gutters">
+                                    <div class="col text-center">
+                                    <a rel="nofollow" data-action="share" data-category="facebook" title="Comparte en facebook" data-label="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" class="icon round hide-text facebook" href="https://facebook.com/sharer.php?u=https%3A%2F%2Fwww.periodicodeibiza.es%2Fnoticias%2Fnacional%2F2018%2F03%2F15%2F986819%2Fcongreso-vota-contra-prision-permanente-revisable.html%3Futm_source%3DFacebook%26utm_medium%3Dsocial%26utm_campaign%3Dshare%3Futm_source%3DFacebook%26utm_medium%3Dsocial" onclick="window.open('https://facebook.com/sharer.php?u=https%3A%2F%2Fwww.periodicodeibiza.es%2Fnoticias%2Fnacional%2F2018%2F03%2F15%2F986819%2Fcongreso-vota-contra-prision-permanente-revisable.html%3Futm_source%3DFacebook%26utm_medium%3Dsocial%26utm_campaign%3Dshare%3Futm_source%3DFacebook%26utm_medium%3Dsocial','sharer','toolbar=0,status=0,width=626,height=436');
+    window.marfeel = window.marfeel || { cmd: [] };
+    window.marfeel.cmd.push(['compass', function(compass) {
+       compass.setPageVar('share', 'facebook');
+    }]);
+    return false;">F</a><a rel="nofollow" data-action="share" data-category="X" title="Comparte en X" data-label="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" class="icon round hide-text X" href="https://twitter.com/intent/tweet" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.periodicodeibiza.es%2Fnoticias%2Fnacional%2F2018%2F03%2F15%2F986819%2Fcongreso-vota-contra-prision-permanente-revisable.html%3Futm_source%3DX%26utm_medium%3Dsocial%26utm_campaign%3Dshare%3Futm_source%3DTwitter%26utm_medium%3Dsocial&amp;text=El Congreso vota en contra de la prisión permanente revisable&amp;via=periodicibiza','twitter_tweet','toolbar=0,status=0,width=550,height=750');
+    window.marfeel = window.marfeel || { cmd: [] };
+    window.marfeel.cmd.push(['compass', function(compass) {
+       compass.setPageVar('share', 'twitter');
+    }]);
+    return false;">T</a><a rel="nofollow" data-action="share" data-category="whatsapp" title="Comparte por whatsapp" data-label="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" class="icon round hide-text whatsapp" href="https://api.whatsapp.com/send?text=El%20Congreso%20vota%20en%20contra%20de%20la%20prisi%C3%B3n%20permanente%20revisable%20https%3A%2F%2Fwww.periodicodeibiza.es%2Fnoticias%2Fnacional%2F2018%2F03%2F15%2F986819%2Fcongreso-vota-contra-prision-permanente-revisable.html%3Futm_source%3DWhatsapp%26utm_medium%3Dsocial%26utm_campaign%3Dshare" onclick="window.marfeel = window.marfeel || { cmd: [] };
+    window.marfeel.cmd.push(['compass', function(compass) {
+       compass.setPageVar('share', 'whatsapp');
+    }]);">W</a><a rel="nofollow" data-action="share" data-category="email" title="Comparte por email" data-label="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" class="icon round hide-text email" href="mailto:?subject=El Congreso vota en contra de la prisión permanente revisable&amp;body=Hola.%0AAcabo%20de%20leer%20este%20contenido%20interesante%20en%20Peri%C3%B3dico%20de%20Ibiza%20y%20Formentera%3A%0Ahttps%3A%2F%2Fwww.periodicodeibiza.es%2Fnoticias%2Fnacional%2F2018%2F03%2F15%2F986819%2Fcongreso-vota-contra-prision-permanente-revisable.html%3Futm_source%3DEmail%26utm_medium%3Dsocial%26utm_campaign%3Dshare%3Futm_source%3DMail%26utm_medium%3Dsocial">M</a><div id="readlater_986819" class="readlater" role="button"><i class="fa fa-bookmark"></i></div><script>
+function disableReadLater() {
+  let content = `<div class='text-center'>Esta funcionalidad es sólo para registrados. <a class='gLogin d-block mt-1 mx-auto w-50 btn btn-sm btn-secondary' href='#'>Iniciar sesión</a></div>`;
+  let html = `<i class="fa fa-bookmark disabled" data-html="true" data-toggle="popover" data-placement="bottom" data-content="${content}"></i>`;
+  jQuery("#readlater_986819").html(html);
+  $('[data-toggle="popover"]').popover();
+  $('body').on('click', '.gLogin', () => {$('[data-toggle="popover"]').popover('hide');});
+}
+
+function updateReadLaterStatus() {
+    gigya.accounts.getAccountInfo({
+      callback: function getAccountInfoResponse(response) {
+        if (response.errorCode == 0) {
+          jQuery.ajax({type:'POST',dataType:'html',data:{user: response.UID },url:'/sfReadLater/readLater/model/Noticia/id/986819'}).done(function(data, textStatus){jQuery('#readlater_986819').html(data);});
+        } else {
+          disableReadLater();
+        };
+      }
+    });
+}
+
+
+jQuery(function(){
+  if (typeof gigya == 'object')
+  {
+    updateReadLaterStatus();
+    gigya.accounts.addEventHandlers({
+       onLogin: function() {
+         updateReadLaterStatus();
+         $('[data-toggle="popover"]').popover('hide');
+       },
+       onLogut: disableReadLater()
+    });
+  }
+});
+</script>
+<a href="#sf_comment_list" class="comments text-center">0</a><a rel="nofollow" data-action="follow" data-category="google" title="Seguir" data-label="https://www.periodicodeibiza.es/noticias/nacional/2018/03/15/986819/congreso-vota-contra-prision-permanente-revisable.html" class="icon round google" href="https://profile.google.com/cp/CgwvZy8xMTl0ZDV3djg">Seguir</a>                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://www.google.com/preferences/source?q=https%3A%2F%2Fwww.periodicodeibiza.es%2F" class="google-follow d-print-none mx-lg-3 mb-3" rel="nofollow" target="_blank" title="Añade a Periódico de Ibiza y Formentera en Google">
+    <span class="google-follow__icon" aria-hidden="true"></span>
+    <span class="google-follow__text">Añade a Periódico de Ibiza y Formentera en Google</span>
+</a>
+                        </div>
+                                                <div class="post-text mrf-article-body" id="post-text">
+                                <p>La iniciativa del PNV para derogar la <a href="/etiqueta/prisi%C3%B3n+permanente+revisable.html?utm_source=Inline-tag&amp;utm_medium=internal">prisión permanente revisable</a> seguirá su curso en el <a href="/etiqueta/Congreso+de+los+Diputados.html?utm_source=Inline-tag&amp;utm_medium=internal">Congreso de los Diputados</a> tras rechazarse este jueves en el Pleno las enmiendas de totalidad del PP y de Ciudadanos que pretendían mantener esta máxima pena que instauró el Gobierno de Mariano Rajoy en 2015, cuando tenía mayoría absoluta.</p>
+
+
+
+
+
+<div id="post-text-box" class="unregistered-content"></div>
+<div id="post-text-hidden" class="prometeo-hideable">
+<p>En la votación, los textos alternativos del PP y de Ciudadanos han sido rechazados por 178 diputados de PSOE, Unidos Podemos, ERC, PNV, PDeCAT, Compromís, Bildu y Nueva Canarias, mientras que la diputada de Coalición Canaria, Ana Oramas, optó por abstenerse.</p>
+<div id="intext" class="henneoHB henneoHB-intext">
+        </div>
+<p>El PP y Ciudadanos, que defendían textos diferentes --el Grupo Popular proponía ampliar los supuestos de aplicación de la prisión permanente y Ciudadanos abogaba por limitar el acceso a los beneficios penitenciarios--, se han apoyado entre sí, pero no sólo han sumado a UPN y Foro Asturias, los socios electorales del PP, con lo que han sido derrotados.</p>
+<h4>
+<strong>EN OCTUBRE CIUDADANOS SE ABSTUVO</strong>
+</h4>
+<p>La proposición de ley del PNV supera así su segundo debate de totalidad en el Pleno del Congreso. El primero tuvo lugar en octubre del pasado año, en su toma en consideración, donde doblegó el rechazo del PP con los votos de los mismo partidos que este jueves, más la abstención de Ciudadanos.</p>
+<p>Este segundo debate ha sido seguido, en la tribuna de invitados, de los padres de Diana Quer y de la niña Mari Luz Cortés, la tía de Yeremi Vargas, la presidenta de la Asociación Clara Campoamor, Blanca Estrella Ruíz, así como los familiares del cámara José Couso o los padres de Marta del Castillo y Sandra Palo.</p>
+<div id="entreparrafos" class="entre-parrafos"></div>
+<p>En su reunión del próximo martes, la Mesa del Congreso deberá decidir si se siguen ampliando los plazos de enmiendas al articulado de la iniciativa del PNV. En principio, los principales grupos aseguran ser partidarios de no acelerar la tramitación hasta que se pronuncie el Tribunal Constitucional, donde en 2015 recurrió el PSOE y buena parte de la oposición.</p>
+<div id="inline-more-readed"></div>
+<div id="extra-paragraph"></div>
+</div>                        </div>
+                            <div class="post-tags">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline scrolling-tags">
+                    <li class="list-inline-item"><a class="badge badge-secondary" href="/etiqueta/Congreso+de+los+Diputados.html">Congreso de los Diputados</a></li><li class="list-inline-item"><a class="badge badge-secondary" href="/etiqueta/prisi%C3%B3n+permanente+revisable.html">prisión permanente revisable</a></li>                </ul>
+            </div>
+        </div>
+    </div>
+                        <div class="mt-4 d-print-none">
+                        <div class="addoor_underarticle_wrapper">
+   <div class="addoor_underarticle_container trk-relacionada-bottom-addoor"></div>
+</div>
+                            <div id="recommend-recirculation" class="">
+    <div class="recirculation-skeleton">
+        <div class="row section-title text-center">
+            <div class="col">
+                <h4 class="news-heading skeleton-bar w-50 mx-auto"></h4>
+            </div>
+        </div>
+        <div class="row">
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                        <div class="col-6 col-md-4 mb-2">
+                <img width="270" height="180" class="img-fluid skeleton-bar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" alt="" />                <div class="skeleton-bar skeleton-line skeleton-line-title"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-title skeleton-line-title-2"></div>
+                <div class="skeleton-bar skeleton-line skeleton-line-author"></div>
+            </div>
+                    </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <!--default tercera -->
+<div class="aside d-flex col-lg-4 d-print-none">
+<div class="ads sticky assignable d-print-none henneoHB henneoHB-right no-border" data-class="henneoHB henneoHB-right">
+    <div class="pb-2 row">
+        <div class="col-lg ad-content">
+                </div>
+    </div>
+</div>
+    <div class="also-in border-wrapper mb-3" data-mrf-recirculation="also-in">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">También en <strong>Noticias</strong></h3>
+            </div>
+        </div>
+        <div class="row news-list-wrapper">
+            <div class="col news-list divider always">
+                                    <div class="row news-item content-item mb-4">
+                        <div class="col-5">
+                            <a class="news-media" data-value="2743433" title="¿Cómo hay que resintonizar la televisión este jueves?: llega a la TDT la UHD y 'La Séptima'" href="/noticias/te-puede-interesar/2026/11/05/2743433/como-hay-resintonizar-television-este-jueves-llega-tdt-uhd-septima.html?utm_source=Tambien-en&amp;utm_medium=internal"><img data-src="https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/4836179" alt="¿Cómo hay que resintonizar la televisión este jueves?: llega a la TDT la UHD y 'La Séptima'" width="270" height="180" class="img-fluid w-100 lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" /></a>                        </div>
+                        <div class="col-7 news-content pl-0">
+                            <h4 class="news-heading"><a data-value="2743433" data-model="Noticia" href="/noticias/te-puede-interesar/2026/11/05/2743433/como-hay-resintonizar-television-este-jueves-llega-tdt-uhd-septima.html?utm_source=Tambien-en&amp;utm_medium=internal">¿Cómo hay que resintonizar la televisión este jueves?: llega a la TDT la UHD y 'La Séptima'</a></h4>
+                        </div>
+                    </div>
+                                    <div class="row news-item content-item mb-4">
+                        <div class="col-5">
+                            <a class="news-media" data-value="2743117" title="El Parlament balear aprobará la proposición de ley de Vox para prohibir el burka en espacios públicos" href="/noticias/baleares/2026/11/04/2743117/parlament-balear-aprobara-proposicion-ley-vox-para-prohibir-burka-espacios-publicos.html?utm_source=Tambien-en&amp;utm_medium=internal"><img data-src="https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/4835587" alt="El Parlament balear aprobará la proposición de ley de Vox para prohibir el burka en espacios públicos" width="270" height="180" class="img-fluid w-100 lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" /></a>                        </div>
+                        <div class="col-7 news-content pl-0">
+                            <h4 class="news-heading"><a data-value="2743117" data-model="Noticia" href="/noticias/baleares/2026/11/04/2743117/parlament-balear-aprobara-proposicion-ley-vox-para-prohibir-burka-espacios-publicos.html?utm_source=Tambien-en&amp;utm_medium=internal">El Parlament balear aprobará la proposición de ley de Vox para prohibir el burka en espacios públicos</a></h4>
+                        </div>
+                    </div>
+                                    <div class="row news-item content-item mb-4">
+                        <div class="col-5">
+                            <a class="news-media" data-value="2743963" title="Sigue la oleada de amenazas de bomba a vuelos en el espacio aéreo europeo" href="/noticias/nacional/2026/11/05/2743963/oleada-amenazas-bomba-afecta-mas-diez-vuelos-europa.html?utm_source=Tambien-en&amp;utm_medium=internal"><img data-src="https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/4836993" alt="Una oleada de amenazas de bomba afecta a más de diez vuelos en Europa" width="270" height="180" class="img-fluid w-100 lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" /></a>                        </div>
+                        <div class="col-7 news-content pl-0">
+                            <h4 class="news-heading"><a data-value="2743963" data-model="Noticia" href="/noticias/nacional/2026/11/05/2743963/oleada-amenazas-bomba-afecta-mas-diez-vuelos-europa.html?utm_source=Tambien-en&amp;utm_medium=internal">Sigue la oleada de amenazas de bomba a vuelos en el espacio aéreo europeo</a></h4>
+                        </div>
+                    </div>
+                                    <div class="row news-item content-item mb-4">
+                        <div class="col-5">
+                            <a class="news-media" data-value="2744965" title="ONCE: Comprueba el resultado del Cuponazo del viernes 6 de noviembre de 2026" href="/noticias/sorteos-loterias/2026/11/06/2744965/comprobar-once-sorteo-del-cuponazo-hoy-viernes-noviembre-2026.html?utm_source=Tambien-en&amp;utm_medium=internal"><img data-src="https://ibi.gsstatic.es/sfAttachPlugin/getPreview/id/4839871" alt="ONCE: Comprueba el resultado del Cuponazo del viernes 6 de noviembre de 2026" width="270" height="180" class="img-fluid w-100 lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 180'%3E%3C/svg%3E" /></a>                        </div>
+                        <div class="col-7 news-content pl-0">
+                            <h4 class="news-heading"><a data-value="2744965" data-model="Noticia" href="/noticias/sorteos-loterias/2026/11/06/2744965/comprobar-once-sorteo-del-cuponazo-hoy-viernes-noviembre-2026.html?utm_source=Tambien-en&amp;utm_medium=internal">ONCE: Comprueba el resultado del Cuponazo del viernes 6 de noviembre de 2026</a></h4>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+<div class="ads sticky assignable d-print-none henneoHB henneoHB-right no-border" data-class="henneoHB henneoHB-right">
+    <div class="pb-2 row">
+        <div class="col-lg ad-content">
+                </div>
+    </div>
+</div>
+<div id="sidebar-box" class="mb-2"></div><div class="lo-mas mb-3 border-wrapper w-100">
+    <div class="row mb-3 text-nowrap">
+        <div class="col col-md-6 pl-2 pr-2">
+            <a class="btn w-100 btn-sm btn-primary p-1 mas-leido" href="#" onclick="jQuery.ajax({type:'POST',dataType:'html',url:'/noticia/masLeido'}).done(function(data, textStatus){jQuery('#lomas').html(data);}).always(function (data, textStatus, jqXHR) {$(&quot;.mas-comentado&quot;).removeClass(&quot;btn-danger&quot;).addClass(&quot;btn-light&quot;); $(&quot;.mas-leido&quot;).removeClass(&quot;btn-light&quot;).addClass(&quot;btn-danger&quot;)}); return false;">Más leído</a>        </div>
+        <div class="col col-md-6 pl-2 pr-2"><a class="btn w-100 btn-sm btn-light p-1 mas-comentado" href="#" onclick="jQuery.ajax({type:'POST',dataType:'html',url:'/noticia/masComentado'}).done(function(data, textStatus){jQuery('#lomas').html(data);}).always(function (data, textStatus, jqXHR) {$(&quot;.mas-leido&quot;).removeClass(&quot;btn-danger&quot;).addClass(&quot;btn-light&quot;); $(&quot;.mas-comentado&quot;).removeClass(&quot;btn-light&quot;).addClass(&quot;btn-danger&quot;)}); return false;">Más comentado</a>        </div>
+    </div>
+    <div class="row">
+        <div class="col" id="lomas">
+            <ol data-mrf-recirculation="more-readed">
+    <li><a data-value="2744175" data-model="Noticia" href="/pitiusas/ibiza/2026/11/06/2744175/indignacion-ayuntamiento-ibiza-ante-fallos-del-tanque-tormentas-del-puerto.html">Retiradas las dos bombas principales del tanque de tormentas del puerto de Ibiza para revisar qué provocó el último vertido fecal</a></li><li><a data-value="2744913" data-model="Noticia" href="/pitiusas/ibiza/2026/11/06/2744913/albert-rivera-defiende-ibiza-estado-debe-meterse-todas-partes.html">Albert Rivera, tajante en Ibiza: «el Estado no debe meterse en todas partes»</a></li><li><a data-value="2744231" data-model="Noticia" href="/pitiusas/ibiza/2026/11/06/2744231/aemet-confirma-llegada-borrasca-bruna-como-afectara-ibiza.html">Aemet confirma la llegada de la borrasca Bruna: ¿cómo afectará en Ibiza?</a></li><li><a data-value="2744199" data-model="Noticia" href="/pitiusas/ibiza/2026/11/06/2744199/paciente-agrede-verbalmente-doctora-del-centro-salud-sant-antoni.html">Un paciente agrede verbalmente a una doctora del Centro de Salud de Sant Antoni</a></li><li><a data-value="2744035" data-model="Noticia" href="/vips/quiosco-rosa/2026/11/05/2744035/angel-gaitan-abandona-comision-del-parlamento-europeo-tras-denunciar-dejaban-terminar-intervencion.html">Ángel Gaitán estalla en el Parlamento Europeo: «¡Vergüenza les tendría que dar que no dejan hablar!»</a></li></ol>
+        </div>
+    </div>
+</div>
+<div class="ads sticky assignable d-print-none henneoHB henneoHB-right no-border" data-class="henneoHB henneoHB-right">
+    <div class="pb-2 row">
+        <div class="col-lg ad-content">
+                </div>
+    </div>
+</div>
+<div class="ads sticky assignable d-print-none henneoHB henneoHB-right no-border" data-class="henneoHB henneoHB-right">
+    <div class="pb-2 row">
+        <div class="col-lg ad-content">
+                </div>
+    </div>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="post-comments-wrapper d-print-none bx">
+                <div class="post-comments mb-3" id="sf_comment_list">
+    <div class="row">
+        <div class="col">
+            <h4 class="post-comments-title">Sin comentarios</h4>
+        </div>
+    </div>
+    <div class="row">
+	<div class="col">
+    <div class="post-comments-howto text-center unregistered-content pb-3">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-7 mb-3 mb-lg-0">
+            <p class="w-lg-100 m-auto">Para comentar es necesario <a href="#" class="gRegister">estar registrado</a> en Periódico de Ibiza y Formentera</p>
+        </div>
+        <div class="col-6 col-lg-2"><button class="btn w-100 btn-sm btn-primary gRegister">Regístrate</button>        </div>
+        <div class="col-6 col-lg-2">
+            <button class="btn w-100 btn-sm btn-light gLogin">Iniciar sesión</button>        </div>
+    </div>
+</div>
+    <div class="registered-content">
+        <form action="#" class="post-comments-form pb-3">
+            <div class="row comment-author">
+                <div class="col mt-2">
+                    <label for="send-comment-btn" class="send-comment-label">
+                      <img src="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'&gt;&lt;circle cx='20' cy='20' r='20' fill='%23bfbfbf'/&gt;&lt;/svg&gt;" data-src="/images/shared/svg/usercomment.svg" alt="logged" class="logged-user-img rounded-circle mr-2 lazyload" width="40" height="40" />Hola<span class="logged-user mr-2 ml-1"></span><button id="send-comment-btn" class="btn btn-sm btn-light gLogout">Cerrar sesión</button>                    </label>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col offset-lg-1">
+                    <input type="hidden" name="sf_comment_object_token" id="sf_comment_object_token" value="a680d50a8dfa0866b7f932208bfd7c596aee551f" /><input type="hidden" name="sf_comment_object_model" id="sf_comment_object_model" value="Noticia" /><input type="hidden" name="sf_comment_object_id" id="sf_comment_object_id" value="986819" /><input type="hidden" name="sf_comment_moderated" id="sf_comment_moderated" value /><input type="hidden" name="sf_comment_namespace" id="sf_comment_namespace" value="pdi.es" />                    <input type="hidden" name="sf_comment_parent_id">
+                    <fieldset><legend class="replying-to">Respondiendo a <span></span></legend></fieldset><label for="send-comment" class="sr-only">Comentario</label><textarea name="sf_comment" id="send-comment" class="mb-2" placeholder="Escribir un comentario ..." maxlength="1500" required="required" cols="10" rows="9"></textarea><button class="btn ml-auto d-block send-action btn-sm btn-primary w-50 p-2">Comentar</button>                </div>
+                            </div>
+        </form>
+    </div>
+</div>
+    </div>
+    <div id="object_comments_986819" class="comment-list">
+<p class="text-center mt-2 mb-4 font-weight-bold">De momento no hay comentarios.</p></div>
+</div>
+            </div>
+        </div>
+        <div class="ad-top-container d-print-none mb-3 mb-lg-4">
+    <div class="ads ad-top no-border sticky">
+        <div class="row">
+            <div class="col ad-content">
+                <div class="henneoHB henneoHB-top">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</main>
+<div id="black-overlay" class="black-overlay"></div>
+<footer class="d-print-none">
+    <div class="container-fluid text-center main-links">
+        <div class="row mb-4">
+            <div class="col">
+                <a aria-label="Periódico de Ibiza y Formentera" href="/"><svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 337 50" xml:space="preserve"><style>.st0{fill:#00b0d7}.st1{fill:#fff}</style><path class="st0" d="m91.3 6.3 6.2-3.1c.7-.4 1.5-.8 1.6-1.7.1-.4-.2-1.3-1-1.4-.8-.1-1.5.2-2.2.7l-5.7 3.9 1.1 1.6z"/><path class="st1" d="M18.5 20.2c1-.2 3.6-1.3 3.6-4.5 0-2.6-1.9-3.4-3.8-3.4h-2.1v23.6H8.3v-29h10.8c6.5 0 10.5 2.7 10.5 8.4 0 4.9-4 10.2-10.8 10.2h-1.4v-5.1l1.1-.2zM46.8 12.3h-8V18h7.8v5.4h-7.8v7h9.6v5.4H31v-29h15.8v5.5zM50.3 6.8h11.6c6.1 0 9.5 3 9.5 7.7 0 4.4-2 7-4.4 8.4l5.8 12.4-8.4 1-4.1-11.5h-2v11h-7.9v-29zm7.8 12.6h2.2c2.1 0 3.1-2 3.1-3.6 0-2.9-1.6-3.6-3.3-3.6H58v7.2zM73.7 35.8v-29h7.9v29h-7.9zM83.8 21c0-8.1 5.5-14.7 13-14.7s13 6.5 13 14.7c0 8.7-5 15.3-13 15.3s-13-6.6-13-15.3zm17.7 0c0-5.1-1.4-8.6-4.8-8.6S92 15.9 92 21c0 5.5 1.3 9.3 4.8 9.3s4.7-3.8 4.7-9.3zM122.2 6.8c10.4 0 14.5 6.7 14.5 13.7 0 10.6-6.9 15.3-14.8 15.3H112v-29h10.2zm-2.3 23.6h2c4.5 0 6.6-4 6.6-9.9 0-5.3-2.9-8.3-6.4-8.3h-2.3v18.2zM138.9 35.8v-29h7.9v29h-7.9zM171.2 35c-1.5.6-3.9 1.3-6.3 1.3-8.7 0-15.8-5.8-15.8-15.3 0-8.8 6.5-14.7 15.4-14.7 1.7 0 4.8.5 6.7 1.4l-1.9 5.1c-1.3-.4-3.6-.5-4.3-.5-3.8 0-7.6 2.7-7.6 9 0 6.2 3.8 8.9 7.9 8.9 1.7 0 3.2-.3 4.4-.7l1.5 5.5zM172.5 21c0-8.1 5.5-14.7 13-14.7s13 6.5 13 14.7c0 8.7-5 15.3-13 15.3s-13-6.6-13-15.3zm17.8 0c0-5.1-1.4-8.6-4.8-8.6s-4.8 3.5-4.8 8.6c0 5.5 1.3 9.3 4.8 9.3s4.8-3.8 4.8-9.3z"/><g><path class="st0" d="M207 34.2c-.7 1-1.8 2-3.4 2-2.7 0-4.5-2.5-4.5-6.2 0-3 1.9-6 4.7-6 1.3 0 2.6.6 3.2 1.6v-6.8h2.8v17.1H207v-1.7zm-5-4.4c0 2.3.8 4.5 2.4 4.5 1.8 0 2.6-2.2 2.6-4.6 0-2-.8-3.9-2.5-3.9-1.8 0-2.5 1.7-2.5 4zM214.1 30.3c-.1 2.2 1.3 3.8 3 3.8 1 0 2.1-.4 2.8-.9l.8 1.6c-1.4.9-2.9 1.3-4.1 1.3-3.1 0-5.5-2.5-5.5-6.3 0-3.6 2.3-5.9 5.3-5.9 3.2 0 4.6 2.9 4.4 6.4h-6.7zm4.1-1.7c.1-1.8-.5-3-1.8-3-1.6 0-2.3 1.4-2.3 3h4.1z"/></g><g><path class="st1" d="M223.3 35.8v-29h8.6v29h-8.6zM236.9 35.8v-29h12.7c5.7 0 9.5 2.4 9.5 6.6 0 4.5-3.8 5.8-5.6 6.7v.1c3.3.2 7.5 2.8 7.5 6.8 0 5.3-4.1 8.9-12.3 8.9h-11.8zm8.6-17.4h1.5c3.2 0 4.3-1.8 4.3-3.7 0-2.4-2.1-3.1-3.4-3.1h-2.4v6.8zm0 12.8h1.6c3 0 5-1.5 5-4.3 0-2.3-1.1-3.8-4.1-3.8h-2.5v8.1zM262.7 35.8v-29h8.6v29h-8.6zM297.7 9.7l-12.8 20.7h13.5v5.4H274v-2.9l13-20.6h-10V6.8h20.7v2.9zM317.8 6.8l10.9 29h-9.2l-2.3-6.9h-8.9l-2.7 6.9h-6.8l11.7-29h7.3zm-1.9 17.5c-.9-3.4-1.8-6.2-2.8-10.4h-.1c-1.1 4.1-2.1 6.9-3.2 10.4h6.1z"/></g><g><path class="st1" d="M226 49.8v-3.9l-2.8-6 3.1-.3c.5 1.3 1 2.7 1.5 4.4.6-1.8 1.1-3.1 1.7-4.4l2.3.3-2.9 6v3.9H226zM242.9 41.6H240v2.5h2.8V46H240v3.8h-2.8V39.7h5.7v1.9zM244 44.6c0-2.8 2-5.1 4.7-5.1s4.7 2.3 4.7 5.1c0 3-1.8 5.4-4.7 5.4-3 0-4.7-2.3-4.7-5.4zm6.4 0c0-1.8-.5-3-1.7-3s-1.7 1.2-1.7 3c0 1.9.5 3.2 1.7 3.2 1.2.1 1.7-1.2 1.7-3.2zM254.7 39.7h4.2c2.2 0 3.4 1 3.4 2.7 0 1.5-.7 2.5-1.6 2.9l2.1 4.3-3.1.3-1.5-4h-.7v3.8h-2.8v-10zm2.9 4.4h.8c.8 0 1.1-.7 1.1-1.2 0-1-.6-1.2-1.2-1.2h-.8v2.4zM275.2 49.8h-2.8v-7.1c-.7 2.6-1.5 4.9-2.2 7.1h-1.8c-.8-2.2-1.5-4.4-2.3-7.1v7.1h-2.2V39.7h3.9c.6 1.9 1.3 3.9 1.9 6.2.6-2.4 1.2-4.3 1.9-6.2h3.8v10.1zM282.6 41.6h-2.9v2h2.8v1.9h-2.8v2.4h3.5v1.9h-6.3V39.7h5.7v1.9zM292.7 49.8h-1.9c-1.4-1.8-3.3-4.3-4.2-5.9v5.9h-2.2V39.7h2.1c1.4 1.8 3.4 4.4 4.1 5.8v-5.8h2.2v10.1zM296.4 49.8v-8.2h-2.7v-1.9h8.3v1.9h-2.7v8.2h-2.9zM308.6 41.6h-2.9v2h2.8v1.9h-2.8v2.4h3.5v1.9h-6.3V39.7h5.7v1.9zM310.4 39.7h4.2c2.2 0 3.4 1 3.4 2.7 0 1.5-.7 2.5-1.6 2.9l2.1 4.3-3.1.3-1.5-4h-.7v3.8h-2.8v-10zm2.8 4.4h.8c.8 0 1.1-.7 1.1-1.2 0-1-.6-1.2-1.2-1.2h-.8v2.4zM324.9 39.7l3.6 10.1h-3l-.7-2.4h-2.9l-.9 2.4h-2.2l3.8-10.1h2.3zm-.6 6.1c-.3-1.2-.6-2.2-.9-3.6-.4 1.4-.7 2.4-1 3.6h1.9z"/></g></svg></a>            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="/quienes_somos.html">Quiénes somos</a><a href="/contacto/publicidad.html">Contratar Publicidad</a><a href="/contacto.html">Contacto</a><a href="/puntos_de_venta.html">Puntos de venta</a><a href="/aviso_legal.html">Aviso Legal</a><a href="/politica_de_privacidad.html">Política de privacidad</a><a href="/politica_de_cookies.html">Política de cookies</a>                <a href="javascript:Didomi.preferences.show()">Consentimiento</a>
+                <a href="https://status.periodicodeibiza.es/">Status</a>
+            </div>
+        </div>
+    </div>
+    <div data-bg="https://ibi.gsstatic.es/images/prensapitiusa.png" class="container post-footer lazyload pt-6">
+        <div class="row post-footer-content d-none d-lg-flex">
+            <div class="col">
+                <dl>
+                    <dt>Corporativo</dt>
+                    <dd><a href="http://grupoprensapitiusa.es/">Grupo Prensa Pitiusa</a></dd>
+                    <dd><a href="https://ibizaglobalradio.com/">Ibiza Global Radio</a></dd>
+                    <dd><a href="http://ibizaglobal.tv/">Ibiza Global TV</a></dd>
+                    <dd><a href="https://teftv.com/">Televisió d'Eivissa i Formentera</a></dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt>REDES SOCIALES</dt>
+
+                    <dd><a href="https://www.facebook.com/PeriodicodeIbiza">Facebook</a></dd>
+                    <dd><a href="https://x.com/periodicibiza">X (Twitter)</a></dd>
+                    <dd><a href="https://www.instagram.com/periodicoibiza/">Instagram</a></dd>
+                    <dd><a href="https://www.youtube.com/channel/UCLIfvO9mTgeN72Ryw0MvAJg">Youtube</a></dd>
+                    <dd><a href="https://www.linkedin.com/company/periodico-de-ibiza-y-formentera">LinkedIn</a></dd>
+                    <dd><a href="https://t.me/periodicodeibiza_bot">Telegram</a></dd>
+                    <dd><a href="https://www.tiktok.com/@periodicoibiza">Tik Tok</a></dd>
+                    <dd><a href="/feed.html">RSS</a></dd>
+                </dl>
+            </div>
+            <div class="col-4">
+                <dl>
+                    <dt>Periódico de Ibiza y Formentera</dt>
+                    <dd>
+                        <h6>Redacción, Administración<br /> y Publicidad</h6>
+                        <p>Camí Vell de Sant Mateu, 3.</p>
+                        <p>Edif. Grupo Prensa Pitiusa</p>
+                        <p>07800 - Eivissa - Illes Balears,</p>
+                        <p>Tel.: +34 971 190 543</p>
+                        <p>Email: <a href="mailto:redaccion@periodicodeibiza.es">redaccion@periodicodeibiza.es</a></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt>Ultima Hora</dt>
+                    <dd>
+                        <h6>Redacción, Administración<br /> y Publicidad</h6>
+                        <p>Paseo Mallorca, 9-A 07011 - Palma.</p>
+                        <p>Tel.: Centralita: +34 971 788 300</p>
+                        <p>Email: <a href="mailto:digital@ultimahora.es">digital@ultimahora.es</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="text-center mt-4">
+    Amb el suport: <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 50'%3E%3C/svg%3E" data-src="https://ibi.gsstatic.es/images/amics.png" height="50" width="140" class="lazyload" />
+</div>
+<div class="modal fade" id="base-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-inner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+(function () {
+window.Prometeo_now = Date.now();
+let loaded = false;
+const MEDIA_ID = "603";
+const USER_COOKIE = "gigya_user";
+const dataLayerObject = dataLayer && dataLayer[0] || {};
+window._PROMETEO_MEDIA_CONFIG = window._PROMETEO_MEDIA_CONFIG || {};
+window._PROMETEO_MEDIA_CONFIG.trackEvents = function(){};
+window._PROMETEO_MEDIA_CONFIG.siteId = MEDIA_ID;
+window._PROMETEO_MEDIA_CONFIG.author = dataLayerObject.firma || "" ;
+window._PROMETEO_MEDIA_CONFIG.author_id = dataLayerObject.createdby || "" ;
+window._PROMETEO_MEDIA_CONFIG.publish_time = dataLayerObject.publish_time || "";
+window._PROMETEO_MEDIA_CONFIG.article_id = dataLayerObject.noticia_id || "";
+window._PROMETEO_MEDIA_CONFIG.content_type = dataLayerObject.layout || "";
+window._PROMETEO_MEDIA_CONFIG.section = dataLayerObject.categoria || "";
+window._PROMETEO_MEDIA_CONFIG.category_3 = dataLayerObject.terciariacategoria ||"" ;
+window._PROMETEO_MEDIA_CONFIG.tags = dataLayerObject.seotag ||"" ;
+window._PROMETEO_MEDIA_CONFIG.actual_block = (dataLayerObject.layout == 'noticia')?"post-text" || null : null;
+window._PROMETEO_MEDIA_CONFIG.sub_section = dataLayerObject.subcategoria || "";
+window._PROMETEO_MEDIA_CONFIG.accesstype = dataLayerObject.accesstype ||"";
+window._PROMETEO_MEDIA_CONFIG.userId = cookie.get(USER_COOKIE);
+window._PROMETEO_MEDIA_CONFIG.cuser = USER_COOKIE;
+window._PROMETEO_MEDIA_CONFIG.thumbnail_image = document.querySelector('meta[property="og:image"]')?.content || "";
+window._PROMETEO_MEDIA_CONFIG.url = window.location.href;
+
+function loadPrometeoScript() {
+  if (loaded) return;
+  var env = document.URL.includes("pr_debug") ? "beta" : "pro";
+  var e = document.createElement('script');
+  var n = document.getElementsByTagName('script')[0];
+  e.type = 'text/javascript';
+  e.async = true;
+  e.src = 'https://dkumiip2e9ary.cloudfront.net/js/prometeo-media/'+ env + '/prometeov2.js';
+  n.parentNode.insertBefore(e, n);
+  loaded = true;
+}
+loadPrometeoScript();
+})();
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV3JWJ9&layout=noticia&categoria=noticias&subcategoria=nacional&createdby=cmarch&firma=Europa+Press&fechapublicacion=20180315&keywords=Congreso+de+los+Diputados%2Cprisi%C3%B3n+permanente+revisable%2CNacional&noticia_id=986819&mediatype=imagen&seotag=Congreso+de+los+Diputados%2Cprisi%C3%B3n+permanente+revisable&platform=unclasssified&branded_content=No&accesstype=abierto&ia_generated=0&audiencias-um=0&user_logged=0&fchoices=1&membrana=0&thumbnail_image=https%3A%2F%2Fibi.gsstatic.es%2FsfAttachPlugin%2FgetPreview%2Fid%2F722137&publish_time=2018-03-15+22%3A47%3A00&amplifycable=S%C3%AD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</body>
+</html>

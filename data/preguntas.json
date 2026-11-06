@@ -599,7 +599,6 @@
    },
    "est": [
     "d21",
-    "erc",
     "junts",
     "pnv",
     "upn",
@@ -656,6 +655,12 @@
      "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 6",
      "programa",
      "2026-03"
+    ],
+    "erc": [
+     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=56",
+     "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de gasto militar y deuda",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -707,7 +712,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "vox",
     "salf",
     "d21",
@@ -760,6 +764,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3",
+     "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -768,7 +778,8 @@
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
     "erc": "La ponencia de 2025 pide rebajar la edad real de jubilación, lo contrario de retrasarla.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
-    "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión."
+    "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
+    "pp": "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto."
    }
   },
   {
@@ -1818,7 +1829,6 @@
    },
    "est": [
     "pp",
-    "vox",
     "salf",
     "d21",
     "junts",
@@ -1900,6 +1910,12 @@
      "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025",
      "prensa",
      "2024-10-16"
+    ],
+    "vox": [
+     "https://www.voxespana.es/wp-content/uploads/2025/10/Programa-WEB-021025.pdf#page=45",
+     "VOX, Programa económico y de vivienda (octubre 2025): viviendas de uso turístico",
+     "programa",
+     "2025-10"
     ]
    },
    "why": {
@@ -1914,7 +1930,8 @@
     "drago": "Drago Canarias propone paralizar las nuevas licencias de vivienda vacacional y fijar cupos por zonas.",
     "comp": "Una iniciativa de Compromís en el Congreso pide que las administraciones locales puedan limitar los pisos turísticos en zonas sensibles.",
     "mes": "La ley turística impulsada por el líder de MÉS en el Govern permite a los ayuntamientos ser más restrictivos con el alquiler turístico.",
-    "bildu": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda."
+    "bildu": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda.",
+    "vox": "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos."
    }
   },
   {
@@ -3840,7 +3857,6 @@
     "vox",
     "fa",
     "salf",
-    "pacma",
     "d21",
     "junts",
     "pnv",
@@ -3864,12 +3880,19 @@
      "Proposición de Ley Orgánica contra las puertas giratorias de Unidas Podemos (BOCG, Congreso, serie B, 72-1), p. 8",
      "parlamento",
      "2019-09"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=75",
+     "Programa de PACMA para las europeas de 2024, apartado sobre transparencia del BCE y puertas giratorias",
+     "programa",
+     "2024-05"
     ]
    },
    "why": {
     "vox": "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
     "erc": "El programa califica las puertas giratorias de corrupción institucionalizada.",
-    "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión."
+    "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
+    "pacma": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años."
    }
   },
   {
@@ -4396,7 +4419,6 @@
    },
    "est": [
     "psoe",
-    "fa",
     "salf",
     "d21",
     "gbai",
@@ -4473,6 +4495,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley del PP para ampliar los supuestos de prisión permanente revisable, 17/03/2026",
      "parlamento",
      "2026-03-17"
+    ],
+    "fa": [
+     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=133",
+     "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 133",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4673,7 +4701,6 @@
     "erc",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -4709,6 +4736,12 @@
      "Congreso, votación nominal PL VOX de reforma de la LO 5/2000 (edad penal), 18-11-2025",
      "parlamento",
      "2025-11-18"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025",
+     "parlamento",
+     "2025-11-18"
     ]
    },
    "why": {
@@ -4717,7 +4750,8 @@
     "vox": "El programa de Vox promete bajar la edad penal y endurecer la ley del menor para delitos sexuales graves.",
     "fa": "Estimación: no consta una votación o declaración verificada de Sumar sobre rebajar la edad penal de 14 años.",
     "pod": "Votó en contra de la proposición de Vox para rebajar la edad penal de los menores.",
-    "erc": "Estimación: ERC defiende un enfoque garantista y rechazaría rebajar la edad penal."
+    "erc": "Estimación: ERC defiende un enfoque garantista y rechazaría rebajar la edad penal.",
+    "bildu": "Los seis diputados de EH Bildu votaron en contra de tomar en consideración la ley que rebajaba la edad de responsabilidad penal."
    }
   },
   {
@@ -4956,7 +4990,6 @@
    },
    "est": [
     "vox",
-    "pod",
     "salf",
     "d21",
     "erc",
@@ -4995,6 +5028,12 @@
      "Ernest Urtasun critica la ley del PSOE para limitar la acusación popular: «No procede» (The Objective)",
      "declaracion",
      "2025-01-15"
+    ],
+    "pod": [
+     "https://elespanol.com/espana/politica/20250110/sumar-opone-ley-sanchez-restringe-accion-popular-justicia-junts-hara-enmienda-totalidad/915409022_0.html",
+     "El Español: Podemos ve «ineficaz» y «cosmética» la ley del PSOE que limita la acusación popular",
+     "prensa",
+     "2025-01-10"
     ]
    },
    "why": {
@@ -5044,7 +5083,6 @@
    },
    "est": [
     "salf",
-    "pacma",
     "d21",
     "upn",
     "drago",
@@ -5144,6 +5182,12 @@
      "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 112",
      "programa",
      "2023-07"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=70",
+     "Programa de PACMA para las generales de 2023, apartado «Contra la violencia sobre la mujer»",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -5161,7 +5205,8 @@
     "gbai": "Geroa Bai votó contra sustituir el concepto de violencia sobre la mujer por el de violencia intrafamiliar.",
     "adel": "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
     "upc": "El programa de Sumar, socio de UPC, propone reforzar y ampliar el marco específico de violencia de género, no sustituirlo.",
-    "comp": "El programa conjunto con el que concurrió Compromís en 2023 propone reforzar el marco de violencia de género, no sustituirlo."
+    "comp": "El programa conjunto con el que concurrió Compromís en 2023 propone reforzar el marco de violencia de género, no sustituirlo.",
+    "pacma": "El programa trata la violencia contra las mujeres como violencia machista específica y propone medidas propias para sus víctimas, lo que no encaja con una ley intrafamiliar neutra."
    }
   },
   {
@@ -6086,7 +6131,6 @@
     "pav": 5
    },
    "est": [
-    "psoe",
     "vox",
     "pod",
     "salf",
@@ -6121,6 +6165,12 @@
      "Qué!: Soria ¡Ya! convoca una manifestación para exigir la fiscalidad diferenciada",
      "prensa",
      "2021-10-21"
+    ],
+    "psoe": [
+     "https://miteco.gob.es/content/dam/miteco/es/prensa/221013_ndpayudasfuncionamiento_tcm30-546431.pdf",
+     "Ministerio para la Transición Ecológica y el Reto Demográfico, nota de prensa sobre las ayudas al funcionamiento en Soria, Teruel y Cuenca (13 de octubre de 2022)",
+     "gobierno",
+     "2022-10-13"
     ]
    },
    "why": {
@@ -6262,7 +6312,6 @@
     "adel": 1
    },
    "est": [
-    "vox",
     "fa",
     "pod",
     "salf",
@@ -6294,12 +6343,19 @@
      "Programa electoral del PP de 2023",
      "programa",
      "2023-07-04"
+    ],
+    "vox": [
+     "https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/",
+     "The Objective: el Congreso convalida el Ingreso Mínimo Vital con la abstención de Vox (10 de junio de 2020)",
+     "parlamento",
+     "2020-06-10"
     ]
    },
    "why": {
     "psoe": "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
     "pp": "Propone condicionar el Ingreso Mínimo Vital a la participación en itinerarios de inserción laboral.",
-    "erc": "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad."
+    "erc": "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad.",
+    "vox": "Vox se abstuvo en la convalidación del Ingreso Mínimo Vital y criticó que no se condicionara a la búsqueda de empleo."
    }
   },
   {
@@ -6500,14 +6556,11 @@
     "pav": 4
    },
    "est": [
-    "pod",
     "salf",
     "pacma",
     "d21",
-    "erc",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "bng",
     "ccpc",
@@ -6557,6 +6610,24 @@
      "Programa electoral de Teruel Existe para las autonómicas de Aragón de 2026, p. 14",
      "programa",
      "2026-01"
+    ],
+    "pod": [
+     "https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607",
+     "Energías Renovables reproduce el programa de Podemos para las europeas de 2024 (energía)",
+     "programa",
+     "2024-06-07"
+    ],
+    "erc": [
+     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=102",
+     "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de energía",
+     "programa",
+     "2023-07"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
+     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6566,7 +6637,8 @@
     "fa": "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
     "pod": "Estimación: postura matizada; apoya las renovables con doble uso agrario del suelo, sin frenar la transición.",
     "erc": "Estimación: ERC apoya las renovables con planificación territorial.",
-    "existe": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje."
+    "existe": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
+    "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas."
    }
   },
   {
@@ -6711,7 +6783,6 @@
     "d21",
     "erc",
     "junts",
-    "bildu",
     "comp",
     "adel",
     "jmm",
@@ -6766,6 +6837,12 @@
      "elDiario.es: Podemos Castilla-La Mancha pide el fin de los trasvases",
      "prensa",
      "2018-10-09"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion110/20250513/Votacion001/VOT_20250513201840.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de la Asamblea Regional de Murcia sobre el mantenimiento del trasvase Tajo-Segura, 13/05/2025",
+     "parlamento",
+     "2025-05-13"
     ]
    },
    "why": {
@@ -6778,7 +6855,8 @@
     "bng": "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "existe": "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
     "cha": "CHA rechaza los trasvases de agua entre cuencas, en especial el del Ebro.",
-    "pod": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura."
+    "pod": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura.",
+    "bildu": "EH Bildu votó en contra de tramitar una ley para mantener el trasvase Tajo-Segura, rechazada por 171 votos frente a 170; con más motivo se opone a ampliar trasvases."
    }
   },
   {
@@ -6926,7 +7004,6 @@
     "soria": 3
    },
    "est": [
-    "pod",
     "salf",
     "pacma",
     "d21",
@@ -6982,6 +7059,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607",
+     "Energías Renovables reproduce el programa de Podemos para las europeas de 2024 (movilidad)",
+     "programa",
+     "2024-06-07"
     ]
    },
    "why": {
@@ -7025,7 +7108,6 @@
    "est": [
     "pp",
     "vox",
-    "fa",
     "pod",
     "salf",
     "pacma",
@@ -7044,6 +7126,12 @@
      "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)",
      "gobierno",
      "2026-07-15"
+    ],
+    "fa": [
+     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=43",
+     "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 43",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -7085,7 +7173,6 @@
    "est": [
     "pod",
     "salf",
-    "pacma",
     "d21",
     "upn",
     "bng",
@@ -7122,6 +7209,12 @@
      "Programa electoral de Sumar de 2023, p. 63",
      "programa",
      "2023-07"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=43",
+     "Programa de PACMA para las generales de 2023, apartado de prevención de incendios y conservación del patrimonio natural",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -7129,7 +7222,8 @@
     "pp": "Feijóo critica las leyes que dificultan el desbroce y reivindica la ganadería extensiva para prevenir incendios.",
     "vox": "Una proposición de Vox en el Congreso pide limpieza de montes, desbroce, pastoreo y menos trabas ambientales para prevenir incendios.",
     "fa": "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección.",
-    "pod": "Estimación: contraria a flexibilizar la protección de espacios naturales."
+    "pod": "Estimación: contraria a flexibilizar la protección de espacios naturales.",
+    "pacma": "PACMA acepta el desbroce y la selvicultura preventiva y pide prohibir las quemas para obtener pastos, y quiere reforzar, no flexibilizar, la protección de los espacios naturales."
    }
   },
   {
@@ -7172,7 +7266,6 @@
    },
    "est": [
     "salf",
-    "pacma",
     "d21",
     "junts",
     "upn",
@@ -7246,6 +7339,12 @@
      "Roams, sobre la moción de Vox en el Congreso tras el apagón",
      "prensa",
      "2025-10-20"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+     "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético tras el apagón",
+     "programa",
+     "2026-01"
     ]
    },
    "why": {
@@ -7258,7 +7357,8 @@
     "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
     "bildu": "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
     "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
-    "vox": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares."
+    "vox": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares.",
+    "pacma": "Tras el apagón, PACMA propone acompañar las renovables de almacenamiento y control de red; en la página anterior califica de insostenible el modelo basado en combustibles fósiles y energía nuclear."
    }
   },
   {
@@ -8105,7 +8205,6 @@
     "d21",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -8156,6 +8255,12 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): enmienda a la totalidad de Vox al proyecto de ley de Cooperación para el Desarrollo Sostenible y la Solidaridad Global, 15/09/2022",
+     "parlamento",
+     "2022-09-15"
     ]
    },
    "why": {
@@ -8164,7 +8269,8 @@
     "vox": "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
     "fa": "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo.",
     "pod": "Votó en contra de la enmienda de Vox para devolver al Gobierno la ley de cooperación para el desarrollo.",
-    "erc": "El programa pide alcanzar el 0,7 % en ayuda al desarrollo."
+    "erc": "El programa pide alcanzar el 0,7 % en ayuda al desarrollo.",
+    "bildu": "EH Bildu votó en contra de devolver al Gobierno la ley de cooperación, que fija el objetivo de destinar el 0,7 % de la renta nacional a la ayuda al desarrollo."
    }
   },
   {
@@ -8577,7 +8683,6 @@
     "adel": 5
    },
    "est": [
-    "pp",
     "vox",
     "salf",
     "d21",
@@ -8619,6 +8724,12 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pp": [
+     "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-5337",
+     "BOE, Real Decreto-ley 14/2012 de medidas urgentes de racionalización del gasto público en el ámbito educativo (Gobierno del PP, 20 de abril de 2012)",
+     "gobierno",
+     "2012-04-21"
     ]
    },
    "why": {
@@ -8659,7 +8770,6 @@
    },
    "est": [
     "vox",
-    "pod",
     "salf",
     "d21",
     "erc",
@@ -8689,6 +8799,12 @@
      "elDiario.es, rechazo del PP al decreto que endurece la creación de universidades",
      "prensa",
      "2025-05-13"
+    ],
+    "pod": [
+     "https://www.redaccionmedica.com/politica/20260225/podemos-quiere-un-examen-publico-para-validar-titulos-de-medicina-privada/258769_0.html",
+     "Redacción Médica: enmiendas de Podemos para endurecer los requisitos de las universidades privadas",
+     "prensa",
+     "2026-02-25"
     ]
    },
    "why": {
@@ -8727,9 +8843,7 @@
     "comp": 1
    },
    "est": [
-    "pp",
     "vox",
-    "fa",
     "pod",
     "salf",
     "d21",
@@ -8747,6 +8861,18 @@
      "Ley Orgánica 3/2020 (LOMLOE), 29 de diciembre de 2020",
      "gobierno",
      "2020-12-29"
+    ],
+    "pp": [
+     "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12886",
+     "BOE, Ley Orgánica 8/2013 para la mejora de la calidad educativa (LOMCE), aprobada por el Gobierno del PP (9 de diciembre de 2013)",
+     "gobierno",
+     "2013-12-10"
+    ],
+    "fa": [
+     "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-17264",
+     "BOE, Ley Orgánica 3/2020 (LOMLOE), aprobada por el Gobierno de coalición PSOE-Unidas Podemos (29 de diciembre de 2020)",
+     "gobierno",
+     "2020-12-30"
     ]
    },
    "why": {
@@ -8754,7 +8880,8 @@
     "vox": "Estimación: Vox defiende evaluaciones externas nacionales; no consta que pida publicar los resultados por colegio.",
     "fa": "Estimación: no consta una postura verificada de Sumar sobre publicar los resultados de cada colegio.",
     "pod": "Estimación: contraria a publicar resultados por centro por el riesgo de segregación.",
-    "erc": "Estimación: ERC evita la clasificación de centros y prioriza la equidad."
+    "erc": "Estimación: ERC evita la clasificación de centros y prioriza la equidad.",
+    "pp": "La ley educativa del Gobierno del PP obligaba a publicar los resultados de los centros sostenidos con fondos públicos."
    }
   },
   {
@@ -8788,7 +8915,6 @@
     "mes": 1
    },
    "est": [
-    "psoe",
     "fa",
     "pod",
     "salf",
@@ -8865,6 +8991,12 @@
      "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula",
      "prensa",
      "2026-06-18"
+    ],
+    "psoe": [
+     "https://www.moncloa.com/2020/11/19/psoe-pp-unen-contra-vox-474432/",
+     "Moncloa.com (agencias): el Congreso rechaza la proposición no de ley de Vox para garantizar el derecho a estudiar en castellano (19 de noviembre de 2020)",
+     "parlamento",
+     "2020-11-19"
     ]
    },
    "why": {
@@ -8878,7 +9010,8 @@
     "upn": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
     "comp": "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
     "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
-    "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña."
+    "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
+    "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular."
    }
   },
   {
@@ -8990,7 +9123,6 @@
     "adel": 5
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
@@ -9058,6 +9190,12 @@
      "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 156",
      "programa",
      "2023-07"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2020/01/20.01.19_titulares_pablo_casado_en_murcia.pdf#page=2",
+     "Partido Popular, titulares de la intervención de Pablo Casado en Murcia (19 de enero de 2020), p. 2",
+     "declaracion",
+     "2020-01-19"
     ]
    },
    "why": {
@@ -9115,7 +9253,6 @@
     "pav": 5
    },
    "est": [
-    "psoe",
     "salf",
     "d21",
     "junts",
@@ -9202,6 +9339,12 @@
      "Periódico de Ibiza/EFE: proposición de ley para prohibir las corridas de toros en Baleares (18 mar 2016)",
      "prensa",
      "2016-03-18"
+    ],
+    "psoe": [
+     "https://www.eldebate.com/espana/20251007/cisma-gobierno-toros-abstencion-psoe-impide-tramitar-ley-contra-tauromaquia_342268.html",
+     "El Debate: el Congreso rechaza tramitar la ILP para retirar a la tauromaquia la protección como patrimonio cultural (7 de octubre de 2025)",
+     "parlamento",
+     "2025-10-07"
     ]
    },
    "why": {
@@ -9216,7 +9359,8 @@
     "pacma": "PACMA promete derogar la ley que protege la tauromaquia como patrimonio cultural y defiende abolir los festejos taurinos.",
     "upc": "El programa de Nueva Canarias, socio de UPC, expresa su rechazo a la tauromaquia por considerarla cruenta.",
     "drago": "El programa conjunto con el que concurrió Drago en 2023 propone suprimir la financiación pública de los festejos taurinos.",
-    "mes": "MÉS per Mallorca firmó en 2016 una proposición de ley para prohibir las corridas de toros en Baleares."
+    "mes": "MÉS per Mallorca firmó en 2016 una proposición de ley para prohibir las corridas de toros en Baleares.",
+    "psoe": "El PSOE se abstuvo en la toma en consideración de la ILP que pretendía retirar a la tauromaquia su protección como patrimonio cultural, sin apoyarla ni rechazarla."
    }
   },
   {
@@ -9250,7 +9394,6 @@
     "mes": 5
    },
    "est": [
-    "pod",
     "salf",
     "d21",
     "cha"
@@ -9342,6 +9485,12 @@
      "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://www.redaccionmedica.com/politica/20230926/el-parlamento-balear-aprueba-eliminar-el-requisito-del-catalan-en-sanidad/210249_0.html",
+     "Redacción Médica: el Parlamento balear elimina el requisito de catalán en la sanidad con el voto en contra de Unidas Podemos",
+     "prensa",
+     "2023-09-26"
     ]
    },
    "why": {
@@ -9358,7 +9507,8 @@
     "mes": "MÉS per Mallorca se opuso a suprimir el requisito de catalán para el personal de la sanidad pública balear.",
     "upn": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
     "pnv": "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
-    "junts": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña."
+    "junts": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña.",
+    "pod": "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo."
    }
   },
   {
@@ -9699,10 +9849,8 @@
     "comp": 4
    },
    "est": [
-    "psoe",
     "pp",
     "vox",
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -9725,13 +9873,26 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "psoe": [
+     "https://www.boe.es/buscar/act.php?id=BOE-A-2020-17339",
+     "BOE, Ley 11/2020 de Presupuestos Generales del Estado para 2021 (Gobierno del PSOE), preámbulo",
+     "gobierno",
+     "2020-12-31"
+    ],
+    "pod": [
+     "https://valenciaplaza.com/valenciaplaza/la-oposicion-derrota-al-gobierno-en-el-congreso-y-mete-13-enmiendas-de-erc-y-junts-a-los-presupuestos",
+     "Valencia Plaza (Europa Press): votación en el Congreso de la enmienda que limita el «impuesto al azúcar» en los Presupuestos de 2021",
+     "prensa",
+     "2020-12"
     ]
    },
    "why": {
     "vox": "Estimación: Vox defiende bajar impuestos en general; no consta una postura sobre los impuestos al tabaco, el alcohol o el azúcar.",
     "fa": "Propone una fiscalidad saludable con un impuesto a las bebidas azucaradas y revisar los impuestos al alcohol y el tabaco.",
     "pod": "Estimación: probablemente favorable a impuestos saludables, sin postura reciente propia.",
-    "erc": "El programa propone una fiscalidad que penalice productos como las bebidas azucaradas."
+    "erc": "El programa propone una fiscalidad que penalice productos como las bebidas azucaradas.",
+    "psoe": "El Gobierno presidido por el PSOE subió el IVA de las bebidas azucaradas al 21 % con el fin declarado de reducir su consumo."
    }
   },
   {
@@ -9820,7 +9981,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "vox",
     "fa",
     "pod",
@@ -9844,6 +10004,12 @@
      "Real Decreto-ley 6/2023 de función pública (19 de diciembre de 2023)",
      "gobierno",
      "2023-12-19"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=92",
+     "Programa electoral del PP para las generales de 2023, p. 92",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10223,7 +10389,6 @@
    },
    "est": [
     "pp",
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -10272,6 +10437,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/",
+     "Forbes España: Sumar y Podemos exigen que se eviten las ventas a pérdidas en el campo",
+     "prensa",
+     "2024-02-06"
     ]
    },
    "why": {
@@ -10320,10 +10491,8 @@
     "pod",
     "salf",
     "d21",
-    "erc",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "bng",
     "comp",
@@ -10361,6 +10530,18 @@
      "Programa electoral de Sumar de 2023, p. 60",
      "programa",
      "2023-07"
+    ],
+    "erc": [
+     "https://forbes.es/ultima-hora/409318/erc-propone-parar-los-acuerdos-de-libre-comercio-de-la-ue-y-destinar-las-ayudas-pac-a-agricultores-pequenos/",
+     "Forbes España (Europa Press): ERC registra en el Congreso una proposición no de ley sobre la PAC y los acuerdos de libre comercio",
+     "prensa",
+     "2024-02-09"
+    ],
+    "bildu": [
+     "https://www.ultimahora.es/noticias/comunidades/2024/05/29/2173957/bildu-pide-dar-giro-pac-para-sea-eficaz-proteja-pequenas-explotaciones-agroganaderas.html",
+     "Última Hora (Europa Press): EH Bildu pide dar un giro a la PAC para proteger las pequeñas explotaciones",
+     "prensa",
+     "2024-05-29"
     ]
    },
    "why": {
@@ -10369,7 +10550,8 @@
     "vox": "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
     "fa": "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
     "pod": "Estimación: favorable a orientar la PAC a pequeñas explotaciones.",
-    "erc": "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar."
+    "erc": "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar.",
+    "bildu": "La parlamentaria de EH Bildu Itxaso Etxebarria defendió reorientar la PAC hacia las explotaciones pequeñas y familiares."
    }
   },
   {
@@ -10412,7 +10594,6 @@
    "est": [
     "salf",
     "d21",
-    "erc",
     "upc",
     "drago",
     "comp",
@@ -10500,6 +10681,12 @@
      "Programa de PACMA para las generales de 2023, p. 16",
      "programa",
      "2023-07"
+    ],
+    "erc": [
+     "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-38.PDF#page=28",
+     "Diario de Sesiones del Congreso, núm. 38: intervención de Teresa Jordà (ERC) en la toma en consideración de la ley del PP sobre el lobo, 23/04/2024",
+     "parlamento",
+     "2024-04-23"
     ]
    },
    "why": {
@@ -10664,7 +10851,6 @@
    "est": [
     "pod",
     "salf",
-    "pacma",
     "d21",
     "erc",
     "junts",
@@ -10700,6 +10886,12 @@
      "Programa electoral de Sumar de 2023, p. 64",
      "programa",
      "2023-07"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2024/05/PE_EUROPA_9J24.pdf#page=9",
+     "Programa de PACMA para las europeas de 2024, propuestas de medio ambiente",
+     "programa",
+     "2024-05"
     ]
    },
    "why": {
@@ -10708,7 +10900,8 @@
     "vox": "La portavoz Pepa Millán rechazó en el Congreso el recorte de días de pesca de arrastre propuesto por Bruselas.",
     "fa": "Propone cumplir la política pesquera de la UE para acabar con la sobrepesca, sobre todo en el Mediterráneo.",
     "pod": "Estimación: contraria a relajar las restricciones de pesca.",
-    "erc": "Estimación: posición intermedia entre pesca y sostenibilidad."
+    "erc": "Estimación: posición intermedia entre pesca y sostenibilidad.",
+    "pacma": "PACMA pide detener la sobrepesca y en el mismo programa se declara contraria a la pesca, lo que se opone a relajar las restricciones pesqueras."
    }
   },
   {
@@ -10841,9 +11034,7 @@
     "upl": 1
    },
    "est": [
-    "pod",
     "salf",
-    "pacma",
     "d21",
     "junts",
     "pnv",
@@ -10891,6 +11082,18 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "pacma": [
+     "https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/",
+     "Nota de prensa de PACMA: pide un Plan Andaluz de Lucha contra la Desertificación",
+     "declaracion",
+     "2024-09-12"
+    ],
+    "pod": [
+     "https://www.ultimahora.es/noticias/nacional/2023/04/13/1917115/posturas-enfrentadas-sobre-cambios-regadio-donana.html",
+     "Última Hora (agencias): Belarra califica de «ecocidio» ampliar el regadío junto a Doñana",
+     "prensa",
+     "2023-04-13"
     ]
    },
    "why": {
@@ -10898,7 +11101,9 @@
     "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
     "vox": "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
     "fa": "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
-    "erc": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
+    "erc": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua.",
+    "pacma": "PACMA señala la expansión de regadíos en zonas secas como causa del agotamiento de acuíferos y de la desertificación, lo que apoya limitar los nuevos regadíos.",
+    "pod": "La secretaria general de Podemos rechaza ampliar regadíos en una zona con el acuífero sobreexplotado, en línea con limitar los nuevos regadíos donde falta agua."
    }
   },
   {
@@ -11439,12 +11644,10 @@
     "adel": 5
    },
    "est": [
-    "vox",
     "salf",
     "d21",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -11486,6 +11689,18 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "vox": [
+     "https://www.que.es/2021/03/11/senado-rechaza-revertir-inmatriculaciones-iglesia/",
+     "Qué!: el Senado rechaza la moción de ERC-Bildu para revertir las inmatriculaciones y anular los acuerdos con la Santa Sede (11 de marzo de 2021)",
+     "parlamento",
+     "2021-03-11"
+    ],
+    "bildu": [
+     "https://www.que.es/2021/03/11/senado-rechaza-revertir-inmatriculaciones-iglesia/",
+     "Qué!: el Senado rechaza la moción del grupo ERC-EH Bildu que pedía declarar nulos los acuerdos con la Santa Sede, 11/03/2021",
+     "parlamento",
+     "2021-03-11"
     ]
    },
    "why": {
@@ -11494,7 +11709,8 @@
     "vox": "Estimación: no consta una postura reciente de Vox sobre revisar los acuerdos con la Santa Sede.",
     "fa": "Registró una proposición no de ley para actualizar los acuerdos con la Santa Sede y suprimir privilegios de la Iglesia.",
     "pod": "Registró en el Congreso una iniciativa para eliminar los privilegios de la Iglesia y anular el Concordato.",
-    "erc": "El programa propone anular los acuerdos de 1979 con la Santa Sede."
+    "erc": "El programa propone anular los acuerdos de 1979 con la Santa Sede.",
+    "bildu": "El grupo de ERC y EH Bildu en el Senado presentó y votó una moción que pedía declarar nulos los acuerdos de 1979 con la Santa Sede, lo que va más allá de revisarlos."
    }
   },
   {
@@ -11684,7 +11900,6 @@
    },
    "est": [
     "salf",
-    "pacma",
     "d21",
     "pnv",
     "bildu",
@@ -11741,6 +11956,12 @@
      "The Objective, aprobación de la ley de paridad en el Congreso, 27/06/2024",
      "parlamento",
      "2024-06-27"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=60",
+     "Programa de PACMA para las generales de 2023, propuesta sobre representación de mujeres en listas",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -11750,7 +11971,8 @@
     "fa": "Votó a favor de la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
     "pod": "Apoyó la ley de paridad y pactó con el PSOE que las mujeres puedan superar el 60 % en los órganos afectados.",
     "erc": "El programa defiende la paridad en todos los ámbitos de representación.",
-    "junts": "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí»."
+    "junts": "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí».",
+    "pacma": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres."
    }
   },
   {

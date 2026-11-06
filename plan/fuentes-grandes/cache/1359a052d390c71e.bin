@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://pacma.es/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<script type="text/javascript" data-cookieconsent="ignore">
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag("consent", "default", {
+		ad_personalization: "denied",
+		ad_storage: "denied",
+		ad_user_data: "denied",
+		analytics_storage: "denied",
+		functionality_storage: "denied",
+		personalization_storage: "denied",
+		security_storage: "granted",
+		wait_for_update: 500,
+	});
+	gtag("set", "ads_data_redaction", true);
+	gtag("set", "url_passthrough", true);
+</script>
+<script type="text/javascript"
+		id="Cookiebot"
+		src="https://consent.cookiebot.com/uc.js"
+		data-implementation="wp"
+		data-cbid="bbb036ad-012d-4ddc-a6ac-974761452724"
+						data-culture="ES"
+				data-blockingmode="auto"
+	></script>
+<script id="diviarea-loader">window.DiviPopupData=window.DiviAreaConfig={"zIndex":1000000,"animateSpeed":400,"triggerClassPrefix":"show-popup-","idAttrib":"data-popup","modalIndicatorClass":"is-modal","blockingIndicatorClass":"is-blocking","defaultShowCloseButton":true,"withCloseClass":"with-close","noCloseClass":"no-close","triggerCloseClass":"close","singletonClass":"single","darkModeClass":"dark","noShadowClass":"no-shadow","altCloseClass":"close-alt","popupSelector":".et_pb_section.popup","initializeOnEvent":"et_pb_after_init_modules","popupWrapperClass":"area-outer-wrap","fullHeightClass":"full-height","openPopupClass":"da-overlay-visible","overlayClass":"da-overlay","exitIndicatorClass":"on-exit","hoverTriggerClass":"on-hover","clickTriggerClass":"on-click","onExitDelay":2000,"notMobileClass":"not-mobile","notTabletClass":"not-tablet","notDesktopClass":"not-desktop","baseContext":"body","activePopupClass":"is-open","closeButtonClass":"da-close","withLoaderClass":"with-loader","debug":false,"ajaxUrl":"https:\/\/pacma.es\/wp-admin\/admin-ajax.php","sys":[]};var divimode_loader=function(){"use strict";!function(t){t.DiviArea=t.DiviPopup={loaded:!1};var n=t.DiviArea,i=n.Hooks={},o={};function r(t,n,i){var r,e,c;if("string"==typeof t)if(o[t]){if(n)if((r=o[t])&&i)for(c=r.length;c--;)(e=r[c]).callback===n&&e.context===i&&(r[c]=!1);else for(c=r.length;c--;)r[c].callback===n&&(r[c]=!1)}else o[t]=[]}function e(t,n,i,r){if("string"==typeof t){var e={callback:n,priority:i,context:r},c=o[t];c?(c.push(e),c=function(t){var n,i,o,r,e=t.length;for(r=1;r<e;r++)for(n=t[r],i=r;i>0;i--)(o=t[i-1]).priority>n.priority&&(t[i]=o,t[i-1]=n);return t}(c)):c=[e],o[t]=c}}function c(t,n,i){"string"==typeof n&&(n=[n]);var r,e,c=[];for(r=0;r<n.length;r++)Array.prototype.push.apply(c,o[n[r]]);for(e=0;e<c.length;e++){var a=void 0;c[e]&&"function"==typeof c[e].callback&&("filter"===t?void 0!==(a=c[e].callback.apply(c[e].context,i))&&(i[0]=a):c[e].callback.apply(c[e].context,i))}if("filter"===t)return i[0]}i.silent=function(){return i},n.removeFilter=i.removeFilter=function(t,n){r(t,n)},n.removeAction=i.removeAction=function(t,n){r(t,n)},n.applyFilters=i.applyFilters=function(t){for(var n=[],i=arguments.length-1;i-- >0;)n[i]=arguments[i+1];return c("filter",t,n)},n.doAction=i.doAction=function(t){for(var n=[],i=arguments.length-1;i-- >0;)n[i]=arguments[i+1];c("action",t,n)},n.addFilter=i.addFilter=function(n,i,o,r){e(n,i,parseInt(o||10,10),r||t)},n.addAction=i.addAction=function(n,i,o,r){e(n,i,parseInt(o||10,10),r||t)},n.addActionOnce=i.addActionOnce=function(n,i,o,c){e(n,i,parseInt(o||10,10),c||t),e(n,(function(){r(n,i)}),1+parseInt(o||10,10),c||t)}}(window);return{}}();
+</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>PACMA reclama un Plan Andaluz de Lucha contra la Desertificación - PACMA</title>
+	<meta name="description" content="PACMA solicita un Plan Andaluz de Lucha contra la Desertificación, que aborde la creciente degradación ambiental en la región." />
+	<link rel="canonical" href="https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="PACMA reclama un Plan Andaluz de Lucha contra la Desertificación - PACMA" />
+	<meta property="og:description" content="PACMA solicita un Plan Andaluz de Lucha contra la Desertificación, que aborde la creciente degradación ambiental en la región." />
+	<meta property="og:url" content="https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/" />
+	<meta property="og:site_name" content="PACMA" />
+	<meta property="article:publisher" content="http://www.facebook.com/PartidoAnimalista.PACMA" />
+	<meta property="article:published_time" content="2024-09-12T13:38:00+00:00" />
+	<meta property="article:modified_time" content="2024-12-14T13:37:25+00:00" />
+	<meta property="og:image" content="https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-scaled.jpg" />
+	<meta property="og:image:width" content="2560" />
+	<meta property="og:image:height" content="1707" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="prensa" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@partidoPACMA" />
+	<meta name="twitter:site" content="@partidoPACMA" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="prensa" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="3 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#article","isPartOf":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/"},"author":{"name":"prensa","@id":"https:\/\/pacma.es\/#\/schema\/person\/443a8daf19753ad7f5da77d6d74773d0"},"headline":"PACMA reclama un Plan Andaluz de Lucha contra la Desertificación","datePublished":"2024-09-12T13:38:00+00:00","dateModified":"2024-12-14T13:37:25+00:00","mainEntityOfPage":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/"},"wordCount":455,"commentCount":0,"publisher":{"@id":"https:\/\/pacma.es\/#organization"},"image":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#primaryimage"},"thumbnailUrl":"https:\/\/pacma.es\/wp-content\/uploads\/2024\/11\/plan-andaluz-contra-la-desertificacion-scaled.jpg","keywords":["almeria","andalucia","medio ambiente"],"articleSection":["Notas de Prensa"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#respond"]}]},{"@type":"WebPage","@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/","url":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/","name":"PACMA reclama un Plan Andaluz de Lucha contra la Desertificación - PACMA","isPartOf":{"@id":"https:\/\/pacma.es\/#website"},"primaryImageOfPage":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#primaryimage"},"image":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#primaryimage"},"thumbnailUrl":"https:\/\/pacma.es\/wp-content\/uploads\/2024\/11\/plan-andaluz-contra-la-desertificacion-scaled.jpg","datePublished":"2024-09-12T13:38:00+00:00","dateModified":"2024-12-14T13:37:25+00:00","description":"PACMA solicita un Plan Andaluz de Lucha contra la Desertificación, que aborde la creciente degradación ambiental en la región.","breadcrumb":{"@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#primaryimage","url":"https:\/\/pacma.es\/wp-content\/uploads\/2024\/11\/plan-andaluz-contra-la-desertificacion-scaled.jpg","contentUrl":"https:\/\/pacma.es\/wp-content\/uploads\/2024\/11\/plan-andaluz-contra-la-desertificacion-scaled.jpg","width":2560,"height":1707,"caption":"PACMA reclama un plan andaluz contra la desertificación"},{"@type":"BreadcrumbList","@id":"https:\/\/pacma.es\/notas-de-prensa\/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https:\/\/pacma.es\/"},{"@type":"ListItem","position":2,"name":"PACMA reclama un Plan Andaluz de Lucha contra la Desertificación"}]},{"@type":"WebSite","@id":"https:\/\/pacma.es\/#website","url":"https:\/\/pacma.es\/","name":"PACMA","description":"Partido Animalista Con el Medio Ambiente","publisher":{"@id":"https:\/\/pacma.es\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/pacma.es\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https:\/\/pacma.es\/#organization","name":"PACMA Partido Animalista con el Medio Ambiente","url":"https:\/\/pacma.es\/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/pacma.es\/#\/schema\/logo\/image\/","url":"https:\/\/pacma.es\/wp-content\/uploads\/2023\/02\/Isotipo-PACMA.png","contentUrl":"https:\/\/pacma.es\/wp-content\/uploads\/2023\/02\/Isotipo-PACMA.png","width":295,"height":295,"caption":"PACMA Partido Animalista con el Medio Ambiente"},"image":{"@id":"https:\/\/pacma.es\/#\/schema\/logo\/image\/"},"sameAs":["http:\/\/www.facebook.com\/PartidoAnimalista.PACMA","https:\/\/x.com\/partidoPACMA","http:\/\/www.instagram.com\/partidopacma\/","https:\/\/www.youtube.com\/@partidoanimalista","https:\/\/www.tiktok.com\/@partido.pacma","https:\/\/t.me\/PartidoPACMA"]},{"@type":"Person","@id":"https:\/\/pacma.es\/#\/schema\/person\/443a8daf19753ad7f5da77d6d74773d0","name":"prensa","image":{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/secure.gravatar.com\/avatar\/ccfe3ca514e661c0ab05e0484bd4fa1028da76d309eb7eecdc186a4c8d4f7018?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/ccfe3ca514e661c0ab05e0484bd4fa1028da76d309eb7eecdc186a4c8d4f7018?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/ccfe3ca514e661c0ab05e0484bd4fa1028da76d309eb7eecdc186a4c8d4f7018?s=96&d=mm&r=g","caption":"prensa"},"url":"https:\/\/pacma.es\/author\/prensa\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="PACMA &raquo; Feed" href="https://pacma.es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PACMA &raquo; Feed de los comentarios" href="https://pacma.es/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PACMA &raquo; Comentario PACMA reclama un Plan Andaluz de Lucha contra la Desertificación del feed" href="https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://pacma.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://pacma.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&#038;format=xml" />
+<meta content="Divi v.4.27.9" name="generator"/><style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://pacma.es/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://pacma.es/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-image-theme-inline-css">
+:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
+/*# sourceURL=https://pacma.es/wp-includes/blocks/image/theme.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://pacma.es/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://pacma.es/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://pacma.es/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.2.1' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://pacma.es/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.2.1' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://pacma.es/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.2.1' media='all' />
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link rel='stylesheet' id='wpcomment-tooltip-lib-css' href='https://pacma.es/wp-content/plugins/wp-comment-fields/js/tooltip/tooltip.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='wpcomment-main-css' href='https://pacma.es/wp-content/plugins/wp-comment-fields/css/wpcomment-style.css?ver=5.2' media='all' />
+<link rel='stylesheet' id='wpcomment-sm-popup-css' href='https://pacma.es/wp-content/plugins/wp-comment-fields/css/wpcomment-simple-popup.css?ver=5.2' media='all' />
+<link rel='stylesheet' id='wpcomment-bootstrap-css' href='https://pacma.es/wp-content/plugins/wp-comment-fields/css/bootstrap/bootstrap.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='wpcomment-bootstrap-modal-css' href='https://pacma.es/wp-content/plugins/wp-comment-fields/css/bootstrap/bootstrap.modal.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='css-divi-area-css' href='https://pacma.es/wp-content/plugins/popups-for-divi/styles/front.min.css?ver=3.2.9' media='all' />
+<style id="css-divi-area-inline-css">
+.et_pb_section.popup{display:none}
+/*# sourceURL=css-divi-area-inline-css */
+</style>
+<link rel='stylesheet' id='css-divi-area-popuphidden-css' href='https://pacma.es/wp-content/plugins/popups-for-divi/styles/front-popuphidden.min.css?ver=3.2.9' media='all' />
+<link rel='stylesheet' id='xoo-wsc-fonts-css' href='https://pacma.es/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-fonts.css?ver=2.8.3' media='all' />
+<link rel='stylesheet' id='xoo-wsc-style-css' href='https://pacma.es/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-style.css?ver=2.8.3' media='all' />
+<style id="xoo-wsc-style-inline-css">
+
+		.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn, .xoo-wsc-container .xoo-wsc-btn {
+			background-color: #22d65d;
+			color: #000000;
+			border: 2px solid #000000;
+			padding: 10px 20px;
+		}
+
+		.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn:hover, .xoo-wsc-container .xoo-wsc-btn:hover {
+			background-color: #ffffff;
+			color: #000000;
+			border: 2px solid #000000;
+		}
+
+		.xoo-wsc-btn .amount{
+			color: #000000		}
+
+		.xoo-wsc-btn:hover .amount{
+			color: #000000;
+		}
+
+	
+
+.xoo-wsc-footer{
+	background-color: #ffffff;
+	color: #000000;
+	padding: 10px 20px;
+	box-shadow: 0 -5px 10px #0000001a;
+}
+
+.xoo-wsc-footer, .xoo-wsc-footer a, .xoo-wsc-footer .amount{
+	font-size: 18px;
+}
+
+
+
+.xoo-wsc-ft-buttons-cont{
+	grid-template-columns: auto;
+}
+
+.xoo-wsc-basket{
+	bottom: 12px;
+	right: 0px;
+	background-color: #000000;
+	color: #22d65d;
+	box-shadow: 0 1px 4px 0;
+	border-radius: 50%;
+	display: none;
+	width: 60px;
+	height: 60px;
+}
+
+
+.xoo-wsc-bki{
+	font-size: 30px}
+
+.xoo-wsc-items-count{
+	top: -9px;
+	left: -8px;
+	height: 28px;
+	line-height: 28px;
+	width: 28px;
+}
+
+.xoo-wsc-items-count, .xoo-wsch-items-count{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.xoo-wsc-container, .xoo-wsc-slider{
+	max-width: 320px;
+	right: -320px;
+	max-height: 100vh;
+	bottom: 0;
+	font-family: }
+
+
+.xoo-wsc-cart-active .xoo-wsc-container, .xoo-wsc-slider-active .xoo-wsc-slider{
+	right: 0;
+}
+
+
+.xoo-wsc-cart-active .xoo-wsc-basket{
+	right: 320px;
+}
+
+.xoo-wsc-slider{
+	right: -320px;
+}
+
+span.xoo-wsch-close {
+    font-size: 16px;
+}
+
+	.xoo-wsch-top{
+		justify-content: center;
+	}
+	span.xoo-wsch-close {
+	    right: 10px;
+	}
+
+.xoo-wsch-text{
+	font-size: 20px;
+}
+
+.xoo-wsc-header{
+	color: #000000;
+	background-color: #ffffff;
+	border-bottom: 2px solid #eee;
+	padding: 15px 15px;
+}
+
+
+.xoo-wsc-body{
+	background-color: #ffffff;
+}
+
+.xoo-wsc-products:not(.xoo-wsc-pattern-card), .xoo-wsc-products:not(.xoo-wsc-pattern-card) span.amount, .xoo-wsc-products:not(.xoo-wsc-pattern-card) a{
+	font-size: 16px;
+	color: #000000;
+}
+
+.xoo-wsc-products:not(.xoo-wsc-pattern-card) .xoo-wsc-product{
+	padding: 20px 15px;
+	margin: 0;
+	border-radius: 0px;
+	box-shadow: 0 0;
+	background-color: transparent;
+}
+
+.xoo-wsc-sum-col{
+	justify-content: center;
+}
+
+
+/***** Quantity *****/
+
+.xoo-wsc-qty-box{
+	max-width: 75px;
+}
+
+.xoo-wsc-qty-box.xoo-wsc-qtb-square{
+	border: 1px solid #c9c9c9; border-radius: 0px;}
+
+input[type="number"].xoo-wsc-qty{
+	background-color: #ffffff;
+	color: #000000;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #c9c9c9; border-radius: 0px;}
+
+
+.xoo-wsc-chng{
+	background-color: #ffffff;
+	color: #000000;
+	width: 20px;
+}
+
+.xoo-wsc-qtb-circle .xoo-wsc-chng{
+	height: 20px;
+	line-height: 20px;
+}
+
+
+/** Shortcode **/
+.xoo-wsc-sc-count{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.xoo-wsc-sc-bki{
+	font-size: 28px;
+	color: #000000;
+}
+.xoo-wsc-sc-cont{
+	color: #000000;
+}
+
+
+.xoo-wsc-product dl.variation {
+	display: block;
+}
+
+
+.xoo-wsc-product-cont{
+	padding: 10px 10px;
+}
+
+.xoo-wsc-products:not(.xoo-wsc-pattern-card) .xoo-wsc-img-col{
+	width: 30%;
+}
+
+.xoo-wsc-pattern-card .xoo-wsc-img-col img{
+	max-width: 100%;
+	height: auto;
+}
+
+.xoo-wsc-products:not(.xoo-wsc-pattern-card) .xoo-wsc-sum-col{
+	width: 70%;
+}
+
+.xoo-wsc-pattern-card .xoo-wsc-product-cont{
+	width: 50% 
+}
+
+@media only screen and (max-width: 600px) {
+	.xoo-wsc-pattern-card .xoo-wsc-product-cont  {
+		width: 50%;
+	}
+}
+
+
+.xoo-wsc-pattern-card .xoo-wsc-product{
+	border: 0;
+	box-shadow: 0px 10px 15px -12px #0000001a;
+}
+
+
+.xoo-wsc-sm-front{
+	background-color: #eee;
+}
+.xoo-wsc-pattern-card, .xoo-wsc-sm-front{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.xoo-wsc-pattern-card, .xoo-wsc-img-col img, .xoo-wsc-img-col, .xoo-wsc-sm-back-cont{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.xoo-wsc-sm-back{
+	background-color: #fff;
+}
+.xoo-wsc-pattern-card, .xoo-wsc-pattern-card a, .xoo-wsc-pattern-card .amount{
+	font-size: 16px;
+}
+
+.xoo-wsc-sm-front, .xoo-wsc-sm-front a, .xoo-wsc-sm-front .amount{
+	color: #000;
+}
+
+.xoo-wsc-sm-back, .xoo-wsc-sm-back a, .xoo-wsc-sm-back .amount{
+	color: #000;
+}
+
+
+.magictime {
+    animation-duration: 0.5s;
+}
+
+
+
+span.xoo-wsch-items-count{
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+}
+
+span.xoo-wsch-icon{
+	font-size: 30px
+}
+
+.xoo-wsc-smr-del{
+	font-size: 16px
+}
+
+
+/*# sourceURL=xoo-wsc-style-inline-css */
+</style>
+<link rel='stylesheet' id='et-divi-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin,latin-ext,vietnamese&#038;display=swap' media='all' />
+<link rel='stylesheet' id='dcf-slick-css' href='https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.css?ver=3.3.1' media='all' />
+<link rel='stylesheet' id='dcf-magnific-css' href='https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/magnific-popup.min.css?ver=3.3.1' media='all' />
+<link rel='stylesheet' id='dcf-frontend-styles-css' href='https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/dist/divi4/frontend-styles.css?ver=4cf0ad14f6518730da2a' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css' href='//pacma.es/wp-content/uploads/pum/pum-site-styles.css?generated=1793959311&#038;ver=1.25.0' media='all' />
+<link rel='stylesheet' id='wpforms-choicesjs-css' href='https://pacma.es/wp-content/plugins/wpforms/assets/css/integrations/divi/choices.min.css?ver=10.2.0' media='all' />
+<link rel='stylesheet' id='wpforms-smart-phone-field-css' href='https://pacma.es/wp-content/plugins/wpforms/assets/pro/css/integrations/divi/intl-tel-input.min.css?ver=21.2.8' media='all' />
+<link rel='stylesheet' id='wpforms-richtext-field-css' href='https://pacma.es/wp-content/plugins/wpforms/assets/pro/css/integrations/divi/richtext.min.css?ver=1.9.3.2' media='all' />
+<link rel='stylesheet' id='wpforms-content-field-css' href='https://pacma.es/wp-content/plugins/wpforms/assets/pro/css/integrations/divi/content.min.css?ver=1.9.3.2' media='all' />
+<link rel='stylesheet' id='wpforms-divi-pro-classic-full-css' href='https://pacma.es/wp-content/plugins/wpforms/assets/pro/css/integrations/divi/wpforms-classic-full.min.css?ver=1.9.3.2' media='all' />
+<link rel='stylesheet' id='addtoany-css' href='https://pacma.es/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' media='all' />
+<link rel='stylesheet' id='divi-style-pum-css' href='https://pacma.es/wp-content/themes/Divi/style-static.min.css?ver=4.27.9' media='all' />
+<script id="addtoany-core-js-before">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Compartir",
+	Save: "Guardar",
+	Subscribe: "Suscribir",
+	Email: "Correo electrónico",
+	Bookmark: "Marcador",
+	ShowAll: "Mostrar todo",
+	ShowLess: "Mostrar menos",
+	FindServices: "Encontrar servicio(s)",
+	FindAnyServiceToAddTo: "Encuentra al instante cualquier servicio para añadir a",
+	PoweredBy: "Funciona con",
+	ShareViaEmail: "Compartir por correo electrónico",
+	SubscribeViaEmail: "Suscribirse a través de correo electrónico",
+	BookmarkInYourBrowser: "Añadir a marcadores de tu navegador",
+	BookmarkInstructions: "Presiona «Ctrl+D» o «\u2318+D» para añadir esta página a marcadores",
+	AddToYourFavorites: "Añadir a tus favoritos",
+	SendFromWebOrProgram: "Enviar desde cualquier dirección o programa de correo electrónico ",
+	EmailProgram: "Programa de correo electrónico",
+	More: "Más&#8230;",
+	ThanksForSharing: "¡Gracias por compartir!",
+	ThanksForFollowing: "¡Gracias por seguirnos!"
+};
+
+a2a_config.icon_color="#22d65d,#ffffff";
+
+//# sourceURL=addtoany-core-js-before
+</script>
+<script id="addtoany-core-js" defer src="https://static.addtoany.com/menu/page.js"></script>
+<script id="jquery-core-js" src="https://pacma.es/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://pacma.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery-js-after">
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+//# sourceURL=jquery-js-after
+</script>
+<script id="addtoany-jquery-js" defer src="https://pacma.es/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-jquery-blockui-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.11.2.1"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https://pacma.es/carrito/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wc-add-to-cart-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=11.2.1"></script>
+<script data-wp-strategy="defer" defer id="wc-js-cookie-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.11.2.1"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Mostrar contrase\u00f1a","i18n_password_hide":"Ocultar contrase\u00f1a"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="woocommerce-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=11.2.1"></script>
+<script id="dap-ie-js" src="https://pacma.es/wp-content/plugins/popups-for-divi/scripts/ie-compat.min.js?ver=3.2.9"></script>
+
+<!-- Fragmento de código de la etiqueta de Google (gtag.js) añadida por Site Kit -->
+<!-- Fragmento de código de Google Analytics añadido por Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=G-HG9NMB7NBC" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["pacma.es"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-HG9NMB7NBC");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://pacma.es/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://pacma.es/wp-json/wp/v2/posts/35385" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pacma.es/xmlrpc.php?rsd" />
+<meta name="generator" content="Beonlinesoluciones" />
+<link rel='shortlink' href='https://pacma.es/?p=35385' />
+<meta name="generator" content="Site Kit by Google 1.191.0" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="stylesheet" href="https://use.typekit.net/wko0dyc.css"><link rel="icon" href="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA.png" />
+<meta name="msapplication-TileImage" content="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://pacma.es/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1793982910" /><link rel="stylesheet" id="et-core-unified-tb-31258-tb-31444-tb-31260-35385-cached-inline-styles" href="https://pacma.es/wp-content/et-cache/35385/et-core-unified-tb-31258-tb-31444-tb-31260-35385.min.css?ver=1793995753" /></head>
+<body class="wp-singular post-template-default single single-post postid-35385 single-format-standard wp-theme-Divi theme-Divi et-tb-has-template et-tb-has-header et-tb-has-body et-tb-has-footer woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_divi_theme et-db">
+	<div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_header et_pb_sticky_module et_pb_with_background et_section_regular et_pb_section--with-menu" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_3_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						<div class="et_pb_menu__logo-wrap">
+			  <div class="et_pb_menu__logo">
+				<a href="https://pacma.es/" ><img decoding="async" width="250" height="93" src="https://pacma.es/wp-content/uploads/2022/12/logo-para-web-desktop-C8-LANDINGS.png" alt="" class="wp-image-28" /></a>
+			  </div>
+			</div>
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-manu-principal" class="et-menu nav"><li class="et_pb_menu_page_id-40 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"><a href="#">CONÓCENOS</a>
+<ul class="sub-menu">
+	<li class="et_pb_menu_page_id-32294 menu-item menu-item-type-post_type menu-item-object-page menu-item-32304"><a href="https://pacma.es/presentacion/">Presentación</a></li>
+	<li class="et_pb_menu_page_id-32262 menu-item menu-item-type-post_type menu-item-object-page menu-item-32305"><a href="https://pacma.es/equipo-humano/">Equipo humano</a></li>
+	<li class="et_pb_menu_page_id-32131 menu-item menu-item-type-post_type menu-item-object-page menu-item-32147"><a href="https://pacma.es/transparencia/">Transparencia</a></li>
+</ul>
+</li>
+<li class="et_pb_menu_page_id-352 menu-item menu-item-type-post_type menu-item-object-page menu-item-26646"><a href="https://pacma.es/programa-electoral/">PROGRAMA</a></li>
+<li class="et_pb_menu_page_id-26638 menu-item menu-item-type-post_type menu-item-object-page menu-item-26645"><a href="https://pacma.es/actualidad/">ACTUALIDAD</a></li>
+<li class="et_pb_menu_page_id-32306 menu-item menu-item-type-post_type menu-item-object-page menu-item-32321"><a href="https://pacma.es/acciones/">ACCIONES</a></li>
+<li class="et_pb_menu_page_id-44 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"><a href="#">COLABORA</a>
+<ul class="sub-menu">
+	<li class="et_pb_menu_page_id-206 menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://pacma.es/afiliacion/">Afiliación</a></li>
+	<li class="et_pb_menu_page_id-289 menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="https://pacma.es/donacion/">Donación</a></li>
+	<li class="et_pb_menu_page_id-310 menu-item menu-item-type-post_type menu-item-object-page menu-item-362"><a href="https://pacma.es/voluntariado/">Voluntariado</a></li>
+	<li class="et_pb_menu_page_id-128 menu-item menu-item-type-post_type menu-item-object-page menu-item-30931"><a href="https://pacma.es/tienda/">Tienda</a></li>
+</ul>
+</li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_header de-inline-buttons  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_left et_pb_module ">
+				<a class="et_pb_button et_pb_button_0_tb_header et_pb_bg_layout_light" href="https://pacma.es/donacion/">Dona</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_tb_header_wrapper et_pb_button_alignment_left et_pb_module ">
+				<a class="et_pb_button et_pb_button_1_tb_header et_pb_bg_layout_light" href="https://pacma.es/afiliacion/" target="_blank">AFÍLIATE</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_header et_pb_sticky_module et_pb_with_background et_section_regular et_pb_section--with-menu" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_header et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_1_tb_header et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						<div class="et_pb_menu__logo-wrap">
+			  <div class="et_pb_menu__logo">
+				<a href="https://pacma.es/" ><img decoding="async" width="250" height="93" src="https://pacma.es/wp-content/uploads/2022/12/logo-para-web-desktop-C8-LANDINGS.png" alt="" class="wp-image-28" /></a>
+			  </div>
+			</div>
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-movil" class="et-menu nav"><li id="menu-item-30812" class="cta-menu et_pb_menu_page_id-30812 menu-item menu-item-type-custom menu-item-object-custom menu-item-30812"><a href="https://pacma.es/donacion/">DONA</a></li>
+<li id="menu-item-30842" class="cta-menu et_pb_menu_page_id-30842 menu-item menu-item-type-custom menu-item-object-custom menu-item-30842"><a href="https://pacma.es/afiliacion/">AFILIATE</a></li>
+<li id="menu-item-30843" class="menu-movil-elemento et_pb_menu_page_id-352 menu-item menu-item-type-post_type menu-item-object-page menu-item-30843"><a href="https://pacma.es/programa-electoral/">PROGRAMA</a></li>
+<li id="menu-item-30814" class="menu-movil-elemento et_pb_menu_page_id-26638 menu-item menu-item-type-post_type menu-item-object-page menu-item-30814"><a href="https://pacma.es/actualidad/">ACTUALIDAD</a></li>
+<li id="menu-item-32322" class="menu-movil-elemento et_pb_menu_page_id-32306 menu-item menu-item-type-post_type menu-item-object-page menu-item-32322"><a href="https://pacma.es/acciones/">ACCIONES</a></li>
+<li id="menu-item-30839" class="menu-movil-elemento et_pb_menu_page_id-310 menu-item menu-item-type-post_type menu-item-object-page menu-item-30839"><a href="https://pacma.es/voluntariado/">VOLUNTARIADO</a></li>
+<li id="menu-item-30930" class="menu-movil-elemento et_pb_menu_page_id-128 menu-item menu-item-type-post_type menu-item-object-page menu-item-30930"><a href="https://pacma.es/tienda/">TIENDA</a></li>
+<li id="menu-item-32148" class="menu-movil-elemento et_pb_menu_page_id-32148 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32148"><a href="#">CONOCENOS</a>
+<ul class="sub-menu">
+	<li id="menu-item-32302" class="et_pb_menu_page_id-32294 menu-item menu-item-type-post_type menu-item-object-page menu-item-32302"><a href="https://pacma.es/presentacion/">Presentación</a></li>
+	<li id="menu-item-32303" class="et_pb_menu_page_id-32262 menu-item menu-item-type-post_type menu-item-object-page menu-item-32303"><a href="https://pacma.es/equipo-humano/">Equipo humano</a></li>
+	<li id="menu-item-32149" class="et_pb_menu_page_id-32131 menu-item menu-item-type-post_type menu-item-object-page menu-item-32149"><a href="https://pacma.es/transparencia/">Transparencia</a></li>
+</ul>
+</li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+    <div id="main-content">
+    <div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_body et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_body">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img decoding="async" width="2560" height="1707" src="https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-scaled.jpg" alt="PACMA reclama un plan andaluz contra la desertificación" title="plan-andaluz-contra-la-desertificacion" srcset="https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-scaled.jpg 2560w, https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-1280x854.jpg 1280w, https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-980x653.jpg 980w, https://pacma.es/wp-content/uploads/2024/11/plan-andaluz-contra-la-desertificacion-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 2560px, 100vw" class="wp-image-35389" /></span>
+			</div><div class="et_pb_module et_pb_post_title et_pb_post_title_0_tb_body et_pb_bg_layout_light  et_pb_text_align_left"   >
+				
+				
+				
+				
+				
+				<div class="et_pb_title_container">
+					<h1 class="entry-title">PACMA reclama un Plan Andaluz de Lucha contra la Desertificación</h1><p class="et_pb_title_meta_container"><span class="published">Sep 12, 2024</span></p>
+				</div>
+				
+			</div><div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
+				
+				
+				
+				
+				<div class="addtoany_share_save_container addtoany_content addtoany_content_top"><div class="addtoany_header">Difunde esta información y ayúdanos</div><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/" data-a2a-title="PACMA reclama un Plan Andaluz de Lucha contra la Desertificación"><a class="a2a_button_whatsapp" href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="WhatsApp" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_telegram" href="https://www.addtoany.com/add_to/telegram?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Telegram" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_facebook_messenger" href="https://www.addtoany.com/add_to/facebook_messenger?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Messenger" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_sms" href="https://www.addtoany.com/add_to/sms?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Message" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+<ul class="wp-block-list">
+<li><strong>En la provincia de Almería, las zonas desérticas han crecido un 985% en poco más de una década, mientras que Granada ha registrado 55 kilómetros cuadrados de zonas desérticas por primera vez en su historia.</strong></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Almería, 12 de septiembre de 2024 &#8211; El coordinador provincial del Partido Animalista Con el Medio Ambiente (PACMA) en Almería, <span style="color: #2dc26b"><strong><a style="color: #2dc26b" href="https://www.instagram.com/edu_urci/" target="_blank" rel="noreferrer noopener">Eduardo Milla</a></strong></span>, ha solicitado mediante un comunicado de prensa al gobierno andaluz la creación y desarrollo de un <strong>Plan Andaluz de Lucha contra la Desertificación</strong>, que aborde de manera efectiva la creciente degradación ambiental en la región. Según PACMA, el plan, que fue aprobado en 1986, no se ha implementado adecuadamente, lo que ha resultado en un alarmante aumento de áreas desérticas en la Comunidad Autónoma.</p>
+
+
+
+<p class="wp-block-paragraph">En la provincia de Almería, las zonas desérticas han crecido un 985% en poco más de una década, mientras que Granada ha registrado 55 kilómetros cuadrados de zonas desérticas por primera vez en su historia. Milla señala que «el mal uso de los recursos naturales, como la expansión de regadíos en áreas de secano, está agotando los acuíferos y destruyendo los ecosistemas locales.»</p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="683" src="https://pacma.es/wp-content/uploads/2024/11/desertificacion-1024x683.jpg" alt="" class="wp-image-35391" srcset="https://pacma.es/wp-content/uploads/2024/11/desertificacion-980x653.jpg 980w, https://pacma.es/wp-content/uploads/2024/11/desertificacion-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1024px, 100vw" /></figure>
+
+
+
+<h2 class="wp-block-heading">Cambio climático</h2>
+
+
+
+<p class="wp-block-paragraph">PACMA advierte que, <strong>en un contexto de cambio climático</strong>, donde las precipitaciones disminuyen y las temperaturas aumentan, junto con sequías más prolongadas y olas de calor más frecuentes, <strong>es imprescindible contar con un plan integral que frene el avance de la desertificación</strong>. Entre las propuestas del partido se incluye la restauración de terrenos degradados, mediante la reforestación con especies autóctonas, y la recuperación de áreas afectadas por roturaciones, abandonos de cultivos y la finalización de actividades extractivas.</p>
+
+
+
+<p class="wp-block-paragraph">El Partido Animalista hace hincapié en la necesidad de una<strong> colaboración estrecha entre las administraciones locales y regionales</strong>, así como en la <strong>asignación de los recursos financieros adecuados </strong>para llevar a cabo estas acciones. «La comarca de Los Vélez está perdiendo fuentes y manantiales debido a la conversión de terrenos de secano a regadío. En Tabernas-Sorbas, hemos agotado todo el acuífero por el olivar superintensivo, y zonas del sur de Filabres y el río Nacimiento están sufriendo desertificación por la pérdida continua de suelo», añade el coordinador.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Por ello, PACMA insta a la Administración andaluza a intensificar sus esfuerzos para combatir este problema que, de no ser abordado con urgencia, podría expandirse a toda Andalucía, afectando gravemente su biodiversidad y el bienestar de las personas.</p>
+
+
+
+<p class="wp-block-paragraph">Sigue las redes sociales de <strong>PACMA Andalucía</strong> : <span style="color: #2dc26b"><strong><a style="color: #2dc26b" href="https://www.instagram.com/pacmaandalucia/" target="_blank" rel="noreferrer noopener">instagram</a></strong></span> | <span style="color: #2dc26b"><strong><a style="color: #2dc26b" href="https://www.facebook.com/PartidoPacmaAndalucia/" target="_blank" rel="noreferrer noopener">facebook</a></strong></span> | <span style="color: #2dc26b"><strong><a style="color: #2dc26b" href="https://x.com/PACMAAndalucia" target="_blank" rel="noreferrer noopener">twitter (X)</a></strong></span></p>
+<div class="addtoany_share_save_container addtoany_content addtoany_content_bottom"><div class="addtoany_header">Difunde esta información y ayúdanos</div><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/" data-a2a-title="PACMA reclama un Plan Andaluz de Lucha contra la Desertificación"><a class="a2a_button_whatsapp" href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="WhatsApp" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_telegram" href="https://www.addtoany.com/add_to/telegram?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Telegram" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_facebook_messenger" href="https://www.addtoany.com/add_to/facebook_messenger?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Messenger" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_sms" href="https://www.addtoany.com/add_to/sms?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Message" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fpacma.es%2Fnotas-de-prensa%2Fpacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion%2F&amp;linkname=PACMA%20reclama%20un%20Plan%20Andaluz%20de%20Lucha%20contra%20la%20Desertificaci%C3%B3n" title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_comments_0_tb_body et_pb_comments_module et_pb_bg_layout_light">
+				
+				
+				
+				
+				
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">0 comentarios</h1>
+		   <div id="comment-section" class="nocomments">
+		  
+		  	   </div>
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Enviar un comentario</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://pacma.es/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea autocomplete="new-password"  id="c72ca35e52"  name="c72ca35e52"   cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-label="hp-comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize>document.getElementById("comment").setAttribute( "id", "a2d1981cb650e032a14908e9c5b0281b" );document.getElementById("c72ca35e52").setAttribute( "id", "comment" );</script></p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p>
+
+<div class="wpcomment-wrapper">
+	
+	<!-- Render hidden inputs -->
+	<!-- Manage conditional hidden fields to skip validation -->
+<input type="hidden" name="wpcomment[conditionally_hidden]" id="conditionally_hidden">
+	<div class="form-row wpcomment-rendering-fields align-items-center wpcomment-section-collapse">
+		
+		
+		<div data-data_name=informaci_n_b_sica_en_protecci_n_de_datos  data-type="checkbox" class="wpcomment-field-wrapper wpcomment-col col-md-12 informaci_n_b_sica_en_protecci_n_de_datos wpcomment-wrapper_outer-informaci_n_b_sica_en_protecci_n_de_datos">
+<div class="form-group" >
+
+	<!-- if title of field exist -->
+			<label class="form-control-label" for="informaci_n_b_sica_en_protecci_n_de_datos" >Información básica en protección de datos<span class="show_required"> *</span><span class="show_description wpcomment-input-desc">Información básica en protección de datos.- Conforme al RGPD y la LOPDGDD, PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA) tratará los datos facilitados con la finalidad publicar su comentario, controlar que el mismo no sea ofensivo, discriminatorio, incite al odio y a la violencia o se difunda datos personales, y en su caso, proceder a su supresión de acuerdo a la normativa legal vigente. Para obtener más información acerca del tratamiento de sus datos y ejercer sus derechos, visite nuestra <a href="https://pacma.es/politica-de-privacidad/" target="_blank">política de privacidad</a>. </span></label>
+	
+
+			<div class="form-check-inline">
+			<label class="form-check-label" for="entiendo_y_acepto_el_tratamiento_de_mis_datos_tal_y_como_se_describe_anteriormente_y_se_explica_con_mayor_detalle_en_la_pol_tica_de_privacidad_">
+				
+				<input 
+					type="checkbox" 
+					name="wpcomment[fields][informaci_n_b_sica_en_protecci_n_de_datos][]" 
+					id="entiendo_y_acepto_el_tratamiento_de_mis_datos_tal_y_como_se_describe_anteriormente_y_se_explica_con_mayor_detalle_en_la_pol_tica_de_privacidad_" 
+					class=" checkbox wpcomment-input wpcomment-required wpcomment-check-input wpcomment-option-entiendo_y_acepto_el_tratamiento_de_mis_datos_tal_y_como_se_describe_anteriormente_y_se_explica_con_mayor_detalle_en_la_pol_tica_de_privacidad_" 
+					data-optionid="entiendo_y_acepto_el_tratamiento_de_mis_datos_tal_y_como_se_describe_anteriormente_y_se_explica_con_mayor_detalle_en_la_pol_tica_de_privacidad_" 
+					data-label=""
+					data-title="Información básica en protección de datos"
+					data-data_name="informaci_n_b_sica_en_protecci_n_de_datos" 
+					value="ENTIENDO Y ACEPTO el tratamiento de mis datos tal y como se describe anteriormente y se explica con mayor detalle en la Política de Privacidad." 
+									>
+				<span class="wpcomment-input-option-label wpcomment-label-checkbox">ENTIENDO Y ACEPTO el tratamiento de mis datos tal y como se describe anteriormente y se explica con mayor detalle en la Política de Privacidad.</span>
+			</label>
+		</div>
+
+			<div class="form-check-inline">
+			<label class="form-check-label" for="autorizo_el_env_o_de_comunicaciones_comerciales_">
+				
+				<input 
+					type="checkbox" 
+					name="wpcomment[fields][informaci_n_b_sica_en_protecci_n_de_datos][]" 
+					id="autorizo_el_env_o_de_comunicaciones_comerciales_" 
+					class=" checkbox wpcomment-input wpcomment-required wpcomment-check-input wpcomment-option-autorizo_el_env_o_de_comunicaciones_comerciales_" 
+					data-optionid="autorizo_el_env_o_de_comunicaciones_comerciales_" 
+					data-label=""
+					data-title="Información básica en protección de datos"
+					data-data_name="informaci_n_b_sica_en_protecci_n_de_datos" 
+					value="AUTORIZO el envío de comunicaciones comerciales." 
+									>
+				<span class="wpcomment-input-option-label wpcomment-label-checkbox">AUTORIZO el envío de comunicaciones comerciales.</span>
+			</label>
+		</div>
+
+			<div class="form-check-inline">
+			<label class="form-check-label" for="autorizo_el_env_o_de_newsletter_">
+				
+				<input 
+					type="checkbox" 
+					name="wpcomment[fields][informaci_n_b_sica_en_protecci_n_de_datos][]" 
+					id="autorizo_el_env_o_de_newsletter_" 
+					class=" checkbox wpcomment-input wpcomment-required wpcomment-check-input wpcomment-option-autorizo_el_env_o_de_newsletter_" 
+					data-optionid="autorizo_el_env_o_de_newsletter_" 
+					data-label=""
+					data-title="Información básica en protección de datos"
+					data-data_name="informaci_n_b_sica_en_protecci_n_de_datos" 
+					value="AUTORIZO el envío de Newsletter." 
+									>
+				<span class="wpcomment-input-option-label wpcomment-label-checkbox">AUTORIZO el envío de Newsletter.</span>
+			</label>
+		</div>
+
+	</div></div>		
+		
+	</div> <!-- end form-row -->
+	
+	
+	<div id="wpcomment-error-container" class="woocommerce-notices-wrapper"></div>
+	
+	<div style="clear:both"></div>
+	
+</div>  <!-- end wpcomment-wrapper --><p class="form-submit"><button name="submit" type="submit" id="et_pb_submit" class="submit">Enviar comentario</button> <input type='hidden' name='comment_post_ID' value='35385' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+		</section>
+
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Otras noticias de interés</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_slider et_pb_post_slider_0_tb_body et_pb_slider et_pb_post_slider_image_left et_pb_slider_fullwidth_off et_pb_slider_no_arrows et_slider_auto et_slider_speed_7000 et_pb_slider_with_overlay">
+				
+				
+				
+				
+				<div class="et_pb_slides">
+									<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-26301"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="2415" height="1268" src="https://pacma.es/wp-content/uploads/2022/11/2023-03-Cartela-noticia-elecciones-municipales-03.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2022/11/2023-03-Cartela-noticia-elecciones-municipales-03.png 2415w, https://pacma.es/wp-content/uploads/2022/11/2023-03-Cartela-noticia-elecciones-municipales-03-1280x672.png 1280w, https://pacma.es/wp-content/uploads/2022/11/2023-03-Cartela-noticia-elecciones-municipales-03-980x515.png 980w, https://pacma.es/wp-content/uploads/2022/11/2023-03-Cartela-noticia-elecciones-municipales-03-480x252.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 2415px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/actualidad/pacma-presenta-sus-candidatos-y-candidatas-a-las-proximas-elecciones-municipales-de-2023/">PACMA se presenta a las elecciones municipales y autonómicas del 28 de mayo</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Presentamos a algunos de nuestros candidatos y candidatas para las próximas elecciones autonómicas y municipales.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/actualidad/pacma-presenta-sus-candidatos-y-candidatas-a-las-proximas-elecciones-municipales-de-2023/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+								<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-31569"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="1200" height="630" src="https://pacma.es/wp-content/uploads/2023/03/2023-02-Cartelas-Acto-contra-las-granjas-de-pulpos_Horizontal.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2023/03/2023-02-Cartelas-Acto-contra-las-granjas-de-pulpos_Horizontal.png 1200w, https://pacma.es/wp-content/uploads/2023/03/2023-02-Cartelas-Acto-contra-las-granjas-de-pulpos_Horizontal-980x515.png 980w, https://pacma.es/wp-content/uploads/2023/03/2023-02-Cartelas-Acto-contra-las-granjas-de-pulpos_Horizontal-480x252.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/actualidad/nuevo-acto-internacional-granja-pulpos/">Save The Octopuses: convocamos un nuevo acto internacional contra la granja de pulpos de Las Palmas de Gran Canaria</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Este año volvemos a convocar un gran acto internacional contra la granja de pulpos que se pretende abrir en Las Palmas de Gran Canaria.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/actualidad/nuevo-acto-internacional-granja-pulpos/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+								<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-26669"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="1200" height="674" src="https://pacma.es/wp-content/uploads/2023/01/3ef315da81956225df2fc8ddae2827509cd9bce80be64d9de691eb96906f25d3.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2023/01/3ef315da81956225df2fc8ddae2827509cd9bce80be64d9de691eb96906f25d3.png 1200w, https://pacma.es/wp-content/uploads/2023/01/3ef315da81956225df2fc8ddae2827509cd9bce80be64d9de691eb96906f25d3-980x550.png 980w, https://pacma.es/wp-content/uploads/2023/01/3ef315da81956225df2fc8ddae2827509cd9bce80be64d9de691eb96906f25d3-480x270.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/maltrato-animal/pacma-pide-carcel-para-los-dos-empleados-que-protagonizaron-los-brutales-videos-de-maltrato-animal-en-vivotecnia/">PACMA pide cárcel para los dos empleados que protagonizaron los brutales vídeos de maltrato animal en Vivotecnia</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Presentamos un escrito de acusación contra los dos empleados de Vivotecnia que aparecen en los vídeos publicados por Cruelty Free International en abril de 2021.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/maltrato-animal/pacma-pide-carcel-para-los-dos-empleados-que-protagonizaron-los-brutales-videos-de-maltrato-animal-en-vivotecnia/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+								<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-26627"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="1920" height="1280" src="https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-33-43.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-33-43.jpg 1920w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-33-43-1280x853.jpg 1280w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-33-43-980x653.jpg 980w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-33-43-480x320.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1920px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/maltrato-animal/pacma-considera-el-texto-de-la-reforma-del-codigo-penal-una-chapuza/">PACMA considera el texto de la reforma del Código Penal una «chapuza»</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Analizamos el texto final del proyecto de modificación del Código Penal en materia de maltrato animal.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/maltrato-animal/pacma-considera-el-texto-de-la-reforma-del-codigo-penal-una-chapuza/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+								<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-26620"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="2560" height="1603" src="https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-39-22.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-39-22.jpg 2560w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-39-22-1280x802.jpg 1280w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-39-22-980x614.jpg 980w, https://pacma.es/wp-content/uploads/2023/01/photo_2023-01-19_12-39-22-480x301.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 2560px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/actualidad/pacma-tras-la-publicacion-del-texto-final-de-la-ley-de-proteccion-animal-debe-ser-retirada-por-excluir-a-mas-animales-de-los-que-incluye/">PACMA, tras la publicación del texto final de la Ley de Protección Animal: «Debe ser retirada por excluir a más animales de los que incluye»</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Tras conocer el texto final de la futura ley de protección animal, pedimos su retirada por sus múltiples carencias y por dejar desprotegidos a la gran mayoría de animales.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/actualidad/pacma-tras-la-publicacion-del-texto-final-de-la-ley-de-proteccion-animal-debe-ser-retirada-por-excluir-a-mas-animales-de-los-que-incluye/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+								<div class="et_pb_slide et_pb_slide_with_image et_pb_media_alignment_center et_pb_bg_layout_dark et_pb_post_slide-26605"  >
+													<div class="et_pb_slide_overlay_container"></div>
+								<div class="et_pb_container clearfix">
+					<div class="et_pb_slider_container_inner">
+													<div class="et_pb_slide_image">
+								<img width="1920" height="1080" src="https://pacma.es/wp-content/uploads/2023/01/Luminarias-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://pacma.es/wp-content/uploads/2023/01/Luminarias-2.png 1920w, https://pacma.es/wp-content/uploads/2023/01/Luminarias-2-1280x720.png 1280w, https://pacma.es/wp-content/uploads/2023/01/Luminarias-2-980x551.png 980w, https://pacma.es/wp-content/uploads/2023/01/Luminarias-2-480x270.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1920px, 100vw" />							</div>
+												<div class="et_pb_slide_description">
+															<h2 class="et_pb_slide_title"><a href="https://pacma.es/tradiciones-crueles/pacma-documenta-las-luminarias-caballos-doblegados-a-las-brasas-del-fuego/">PACMA documenta las Luminarias: caballos doblegados a las brasas del fuego</a></h2>
+								<div class="et_pb_slide_content
+																">
+									<div><p>Hemos documentado las Luminarias, una tradición obsoleta y anacrónica en San Bartolomé de Pinares (Ávila) en la que los caballos son sometidos y obligados a atravesar hogueras.</p>
+</div>								</div>
+														<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_more_button" href="https://pacma.es/tradiciones-crueles/pacma-documenta-las-luminarias-caballos-doblegados-a-las-brasas-del-fuego/">Ver este post</a></div>						</div>
+											</div>
+				</div>
+			</div>
+				
+				</div>
+				
+			</div>
+			
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	    </div>
+    
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>ÚNETE A LA</h2>
+<h2>RESISTENCIA</h2></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>¿Quieres estar al día de todas nuestras novedades y acciones?</p>
+<p>Suscríbete a la newsletter</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2_tb_footer et_clickable  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>SUSCRIBIRME</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>ÚNETE</h2>
+<h2>A LA</h2>
+<h2>RESISTENCIA</h2></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>¿Quieres estar al día de todas nuestras novedades y acciones?</p>
+<p>Suscríbete a la newsletter</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_5_tb_footer et_clickable  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>SUSCRIBIRME</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_4_tb_footer">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Síguenos:</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<a href="http://www.facebook.com/PartidoAnimalista.PACMA" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="41" height="40" src="https://pacma.es/wp-content/uploads/2023/01/Maria-Calzada-FB.png" alt="PACMA en FACEBOOK" title="PACMA en FACEBOOK" class="wp-image-97" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+				
+				
+				
+				
+				<a href="http://twitter.com/partidoPACMA" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="179" height="175" src="https://pacma.es/wp-content/uploads/2023/12/Icono-X-c8.png" alt="PACMA en X" title="PACMA en X" class="wp-image-33940" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+				
+				
+				
+				
+				<a href="http://www.instagram.com/partidopacma/" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="41" height="40" src="https://pacma.es/wp-content/uploads/2023/01/Maria-Calzada-IG_1.png" alt="PACMA en INSTAGRAM" title="PACMA en INSTAGRAM" class="wp-image-101" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_3_tb_footer">
+				
+				
+				
+				
+				<a href="https://www.youtube.com/@partidoanimalista" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="41" height="40" src="https://pacma.es/wp-content/uploads/2023/01/Maria-Calzada-Youtube_1.png" alt="PACMA en YOUTUBE" title="PACMA en YOUTUBE" class="wp-image-99" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_4_tb_footer">
+				
+				
+				
+				
+				<a href="https://www.tiktok.com/@partidopacma" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="205" height="200" src="https://pacma.es/wp-content/uploads/2023/07/icono-tik-tok.png" alt="PACMA en TIKTOK" title="PACMA en TIKTOK" class="wp-image-33240" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_5_tb_footer">
+				
+				
+				
+				
+				<a href="https://t.me/PartidoPACMA" target="_blank"><span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="41" height="40" src="https://pacma.es/wp-content/uploads/2023/01/Maria-Calzada-Telegram_1.png" alt="PACMA en Telegram" title="PACMA en Telegram" class="wp-image-100" /></span></a>
+			</div><div class="et_pb_module et_pb_image et_pb_image_6_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="373" height="136" src="https://pacma.es/wp-content/uploads/2023/01/Flecha-PACMA.png" alt="" title="Flecha PACMA" srcset="https://pacma.es/wp-content/uploads/2023/01/Flecha-PACMA.png 373w, https://pacma.es/wp-content/uploads/2023/01/Flecha-PACMA-300x109.png 300w" sizes="(max-width: 373px) 100vw, 373px" class="wp-image-90" /></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_7_tb_footer  et_pb_text_align_left et_pb_text_align_right-tablet et_pb_text_align_center-phone et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://pacma.es/actualidad/" title="Área de Prensa">Área de Prensa</a></p>
+<p><a href="https://pacma.es/tienda/" title="Tienda Online">Tienda Online</a></p>
+<p><a href="https://pacma.es/voluntariado/" title="Únete al voluntariado">Únete al voluntariado</a></p>
+<p><a href="https://pacma.es/resultados-elecciones/" title="Resultados electorales">Resultados electorales</a></p>
+<p><a href="https://yodenuncio.es/" title="Yo Denuncio">Yo Denuncio</a></p>
+<p><a href="https://pacma.es/condiciones-de-venta-2/" target="_blank" rel="noopener" title="Condiciones de venta">Condiciones de venta</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_8_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://pacma.es/presentacion/" title="Conócenos">Conócenos</a></p>
+<p><a href="https://pacma.es/programa-electoral/" title="Programa electoral">Programa electoral</a></p>
+<p><a href="https://pacma.es/politica-de-privacidad/" target="_blank" rel="noopener" title="Política de privacidad">Política de privacidad</a></p>
+<p><a href="https://pacma.es/politica-de-cookies/" target="_blank" rel="noopener" title="Política de cookies">Política de cookies</a></p>
+<p><a href="https://pacma.es/aviso-legal/" target="_blank" rel="noopener" title="Aviso legal">Aviso Legal</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_7_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone  et_pb_blurb_position_left et_pb_bg_layout_light et_pb_blurb_position_left_tablet et_pb_blurb_position_top_phone">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img loading="lazy" decoding="async" width="35" height="35" src="https://pacma.es/wp-content/uploads/2023/01/Icono-Mail.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-91" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>tupartido@pacma.es</span></h4>
+						
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_1_tb_footer  et_pb_text_align_left et_pb_text_align_center-phone  et_pb_blurb_position_left et_pb_bg_layout_light et_pb_blurb_position_left_tablet et_pb_blurb_position_top_phone">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img loading="lazy" decoding="async" width="34" height="34" src="https://pacma.es/wp-content/uploads/2023/01/Icono-PACMA.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-93" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>Horario:</span></h4>
+						<div class="et_pb_blurb_description"><p>Estamos en C/Mayor, 6. 2º-8 (Madrid)</p>
+<ul>
+<li>09:00 - 14:00</li>
+</ul></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_5_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_5_tb_footer">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_8_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_2_tb_footer  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img loading="lazy" decoding="async" width="295" height="295" src="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA.png" alt="" srcset="https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA.png 295w, https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA-150x150.png 150w, https://pacma.es/wp-content/uploads/2023/02/Isotipo-PACMA-100x100.png 100w" sizes="(max-width: 295px) 100vw, 295px" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-31169" /></span></div>
+					<div class="et_pb_blurb_container">
+						<h3 class="et_pb_module_header"><span>2026</span></h3>
+						
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_9_tb_footer  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_10_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_9_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>PACMA</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_7_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_6_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_11_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_7_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="50" src="https://pacma.es/wp-content/uploads/2023/02/piemovilpacma-1.png" alt="PACMA 2023" title="PACMA 2023" class="wp-image-31374" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div id="suscribirseboletin" class="et_pb_section et_pb_section_8_tb_footer popup single et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_7_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_12_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_10_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><span>
+<!-- iframe plugin v.6.0 wordpress.org/plugins/iframe/ -->
+<iframe loading="lazy" src="https://pacma.playoffinformatica.com/preinscripcion/9/Formulario-SUBSCRIPTORES-BOLETIN/" width="100%" height="2000" scrolling="yes" class="iframe-class" frameborder="0"></iframe>
+ </span></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div 
+	id="pum-33965" 
+	role="dialog" 
+	aria-modal="false"
+	class="pum pum-overlay pum-theme-33952 pum-theme-hello-box popmake-overlay pum-overlay-disabled auto_open click_open" 
+	data-popmake="{&quot;id&quot;:33965,&quot;slug&quot;:&quot;suscripcion-newsletter&quot;,&quot;theme_id&quot;:33952,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-33965&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:false,&quot;path&quot;:&quot;1&quot;,&quot;time&quot;:&quot;1 month&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;delay&quot;:2000,&quot;cookie_name&quot;:[&quot;pum-33965&quot;]}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:&quot;1&quot;,&quot;overlay_disabled&quot;:&quot;1&quot;,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;custom&quot;,&quot;responsive_min_width&quot;:&quot;0px&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100px&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;300px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:&quot;1&quot;,&quot;location&quot;:&quot;right bottom&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;10&quot;,&quot;position_right&quot;:&quot;10&quot;,&quot;position_fixed&quot;:&quot;1&quot;,&quot;animation_type&quot;:&quot;slide&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;bottom&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;X&quot;,&quot;button_delay&quot;:&quot;4000&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-33965" class="pum-container popmake theme-33952 size-custom pum-position-fixed">
+
+				
+				
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<p style="text-align: center; font-family: acumin-pro-wide, sans-serif; font-weight: 800;">NO TE PIERDAS NADA</p>
+<p style="text-align: center; font-family: acumin-pro, sans-serif;">¿Quieres estar al día de todas nuestras novedades y acciones?</p>
+<p style="text-align: center; font-family: acumin-pro, sans-serif; font-weight: 600;">Suscríbete a la newsletter y ¡únete a la resistencia!</p>
+<p>&nbsp;</p>
+<p><a href="https://pacma.playoffinformatica.com/preinscripcion/9/Formulario-SUBSCRIPTORES-BOLETIN/"><img decoding="async" class="aligncenter wp-image-33991" src="https://pacma.es/wp-content/uploads/2023/12/SUSCRIBETE-300x73.png" alt="" width="168" height="41" srcset="https://pacma.es/wp-content/uploads/2023/12/SUSCRIBETE-300x73.png 300w, https://pacma.es/wp-content/uploads/2023/12/SUSCRIBETE.png 314w" sizes="(max-width: 168px) 100vw, 168px" /></a></p>
+<p>&nbsp;</p>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Cerrar">
+			X			</button>
+		
+	</div>
+
+</div>
+
+<div class="xoo-wsc-markup-notices">
+	</div>
+<div class="xoo-wsc-markup">
+	<div class="xoo-wsc-modal">
+
+		
+<div class="xoo-wsc-container">
+
+	<div class="xoo-wsc-basket">
+
+					<span class="xoo-wsc-items-count">0</span>
+		
+
+		<span class="xoo-wsc-bki xoo-wsc-icon-basket1"></span>
+
+		
+	</div>
+
+	<div class="xoo-wsc-header">
+
+		
+		
+<div class="xoo-wsch-top">
+
+		
+			<div class="xoo-wsch-basket">
+			<span class="xoo-wscb-icon xoo-wsc-icon-bag2"></span>
+			<span class="xoo-wscb-count">0</span>
+		</div>
+	
+			<span class="xoo-wsch-text">Su cesta</span>
+	
+			<span class="xoo-wsch-close xoo-wsc-icon-cross"></span>
+	
+</div>
+		
+	</div>
+
+
+	<div class="xoo-wsc-body">
+
+		
+		
+<div class="xoo-wsc-empty-cart"><span class="xoo-wsc-emp-txt">El carro esta vacio</span><a class="xoo-wsc-btn" href="https://pacma.es/tienda/">Volver a la tienda</a></div>
+		
+	</div>
+
+	<div class="xoo-wsc-footer">
+
+		<div class="xoo-wsc-info-cont"></div>
+		
+
+
+
+
+<div class="xoo-wsc-ft-buttons-cont">
+
+	<a href="#" class="xoo-wsc-ft-btn xoo-wsc-btn xoo-wsc-cart-close xoo-wsc-ft-btn-continue" >Continuar comprando</a>
+</div>
+
+
+		
+	</div>
+
+	<span class="xoo-wsc-loader"></span>
+	<span class="xoo-wsc-icon-spinner8 xoo-wsc-loader-icon"></span>
+
+</div>
+		<span class="xoo-wsc-opac"></span>
+
+	</div>
+</div>	<script type="text/javascript">
+				var et_link_options_data = [{"class":"et_pb_text_2_tb_footer","url":"#suscribirseboletin","target":"_self"},{"class":"et_pb_text_5_tb_footer","url":"#suscribirseboletin","target":"_self"}];
+			</script>
+		<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script id="wpcomment-tooltip-lib-js" src="https://pacma.es/wp-content/plugins/wp-comment-fields/js/tooltip/tooltip.js?ver=5.2"></script>
+<script id="wpcomment-sm-popup-js-extra">
+var wpcomment_tooltip_vars = {"wpcomment_tooltip_position":"","wpcomment_tooltip_trigger":"","wpcomment_tooltip_interactive":"","wpcomment_tooltip_animation":"","wpcomment_tooltip_maxwidth":"","wpcomment_tooltip_borderclr":"","wpcomment_tooltip_bgclr":"","wpcomment_tooltip_txtclr":""};
+//# sourceURL=wpcomment-sm-popup-js-extra
+</script>
+<script id="wpcomment-sm-popup-js" src="https://pacma.es/wp-content/plugins/wp-comment-fields/js/wpcomment-simple-popup.js?ver=1.0"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://pacma.es/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js" src="https://pacma.es/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Cerrar","currentText":"Hoy","monthNames":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"monthNamesShort":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"nextText":"Siguiente","prevText":"Anterior","dayNames":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"dayNamesShort":["Dom","Lun","Mar","Mi\u00e9","Jue","Vie","S\u00e1b"],"dayNamesMin":["D","L","M","X","J","V","S"],"dateFormat":"d \\dd\\e MM \\dd\\e yy","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+</script>
+<script id="wpcomment-inputs-js-extra">
+var wpcomment_input_vars = {"field_meta":[{"type":"checkbox","title":"Informaci\u00f3n b\u00e1sica en protecci\u00f3n de datos","data_name":"informaci_n_b_sica_en_protecci_n_de_datos","description":"Informaci\u00f3n b\u00e1sica en protecci\u00f3n de datos.- Conforme al RGPD y la LOPDGDD, PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA) tratar\u00e1 los datos facilitados con la finalidad publicar su comentario, controlar que el mismo no sea ofensivo, discriminatorio, incite al odio y a la violencia o se difunda datos personales, y en su caso, proceder a su supresi\u00f3n de acuerdo a la normativa legal vigente. Para obtener m\u00e1s informaci\u00f3n acerca del tratamiento de sus datos y ejercer sus derechos, visite nuestra \u003Ca href=\"https://pacma.es/politica-de-privacidad/\" target=\"_blank\"\u003Epol\u00edtica de privacidad\u003C/a\u003E. ","error_message":"\u00a1Es obligatorio rellenar este campo!","options":[{"option":"ENTIENDO Y ACEPTO el tratamiento de mis datos tal y como se describe anteriormente y se explica con mayor detalle en la Pol\u00edtica de Privacidad.","id":"entiendo_y_acepto_el_tratamiento_de_mis_datos_tal_y_como_se_describe_anteriormente_y_se_explica_con_mayor_detalle_en_la_pol_tica_de_privacidad_"},{"option":"AUTORIZO el env\u00edo de comunicaciones comerciales.","id":"autorizo_el_env_o_de_comunicaciones_comerciales_"},{"option":"AUTORIZO el env\u00edo de Newsletter.","id":"autorizo_el_env_o_de_newsletter_"}],"class":"","width":"12","checked":"","min_checked":"1","max_checked":"3","visibility":"everyone","visibility_role":"","required":"on","conditions":{"visibility":"Show","bound":"All","rules":[{"elements":"","operators":"is","element_values":""}]},"status":"on","field_type":"checkbox"}],"wpcomment_validate_nonce":"db4558d4ef","validate_msg":"is a required field","image_max_msg":"You can only select a maximum of","image_min_msg":"You can only select a minimum of","ajaxurl":"https://pacma.es/wp-admin/admin-ajax.php","plugin_url":"https://pacma.es/wp-content/plugins/wp-comment-fields"};
+//# sourceURL=wpcomment-inputs-js-extra
+</script>
+<script id="wpcomment-inputs-js" src="https://pacma.es/wp-content/plugins/wp-comment-fields/js/wpcomment.inputs.js?ver=5.2"></script>
+<script id="wpcomment-validate-js" src="https://pacma.es/wp-content/plugins/wp-comment-fields/js/validate.js?ver=5.2"></script>
+<script id="js-divi-area-js" src="https://pacma.es/wp-content/plugins/popups-for-divi/scripts/front.min.js?ver=3.2.9"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="https://pacma.es/wp-includes/js/comment-reply.min.js?ver=f5773b7a82bf21926a56280f6822c227"></script>
+<script id="divi-custom-script-js-extra">
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https://pacma.es/wp-admin/admin-ajax.php","images_uri":"https://pacma.es/wp-content/themes/Divi/images","builder_images_uri":"https://pacma.es/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"460bc7a54f","subscription_failed":"Por favor, revise los campos a continuaci\u00f3n para asegurarse de que la informaci\u00f3n introducida es correcta.","et_ab_log_nonce":"30d0b05465","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electr\u00f3nico no v\u00e1lida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un n\u00famero equivocado de captcha.","wrong_checkbox":"Caja","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"35385","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https://pacma.es/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#7EBEC5","waypoints_options":{"context":[".pum-overlay"]}};
+var et_pb_box_shadow_elements = [];
+//# sourceURL=divi-custom-script-js-extra
+</script>
+<script id="divi-custom-script-js" src="https://pacma.es/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.9"></script>
+<script id="fitvids-js" src="https://pacma.es/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.9"></script>
+<script id="sourcebuster-js-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.2.1"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000001e-5,"session":30,"base64":false,"ajaxurl":"https://pacma.es/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script id="wc-order-attribution-js" src="https://pacma.es/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.2.1"></script>
+<script id="dcf-slick-js" src="https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.js?ver=3.3.1"></script>
+<script id="dcf-magnific-js" src="https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/magnific-popup.min.js?ver=3.3.1"></script>
+<script id="dcf-frontend-js" src="https://pacma.es/wp-content/plugins/wow-carousel-for-divi-lite/dist/divi4/frontend.js?ver=0f4f2de9dedf6dd6744d"></script>
+<script id="wp-hooks-js" src="https://pacma.es/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="popup-maker-site-js-extra">
+var pum_vars = {"version":"1.25.0","pm_dir_url":"https://pacma.es/wp-content/plugins/popup-maker/","ajaxurl":"https://pacma.es/wp-admin/admin-ajax.php","restapi":"https://pacma.es/wp-json/pum/v1","rest_nonce":null,"default_theme":"33949","debug_mode":"","disable_tracking":"","disable_url_params":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://pacma.es/wp-json/pum/v1"};
+var pum_sub_vars = {"ajaxurl":"https://pacma.es/wp-admin/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-33965":{"triggers":[{"type":"auto_open","settings":{"delay":2000,"cookie_name":["pum-33965"]}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-33965","key":"","session":false,"path":"1","time":"1 month"}}],"disable_on_mobile":false,"disable_on_tablet":false,"explain":null,"type_section":null,"theme_id":"33952","size":"custom","responsive_min_width":"0px","responsive_max_width":"100px","custom_width":"300px","custom_height_auto":true,"custom_height":"380px","scrollable_content":false,"animation_type":"slide","animation_speed":"350","animation_origin":"bottom","open_sound":"none","custom_sound":"","location":"right bottom","position_top":"100","position_bottom":"10","position_left":"0","position_right":"10","position_from_trigger":false,"position_fixed":true,"overlay_disabled":true,"stackable":true,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"4000","close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"hello-box","id":33965,"slug":"suscripcion-newsletter"}};
+//# sourceURL=popup-maker-site-js-extra
+</script>
+<script id="popup-maker-site-js" src="//pacma.es/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1793959311&#038;ver=1.25.0"></script>
+<script id="xoo-wsc-main-js-js-extra">
+var xoo_wsc_params = {"adminurl":"https://pacma.es/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","qtyUpdateDelay":"500","notificationTime":"5000","html":{"successNotice":"\u003Cul class=\"xoo-wsc-notices\"\u003E\u003Cli class=\"xoo-wsc-notice-success\"\u003E\u003Cspan class=\"xoo-wsc-icon-check_circle\"\u003E\u003C/span\u003E%s%\u003C/li\u003E\u003C/ul\u003E","errorNotice":"\u003Cul class=\"xoo-wsc-notices\"\u003E\u003Cli class=\"xoo-wsc-notice-error\"\u003E\u003Cspan class=\"xoo-wsc-icon-cross\"\u003E\u003C/span\u003E%s%\u003C/li\u003E\u003C/ul\u003E"},"strings":{"maxQtyError":"Solo %s% en existencias","stepQtyError":"Solo se pueden comprar cantidades en m\u00faltiplos de %s%","calculateCheckout":"Por favor, usa el formulario de pago para calcular el env\u00edo","couponEmpty":"Por favor, introduce el c\u00f3digo de promoci\u00f3n"},"isCheckout":"","isCart":"","sliderAutoClose":"1","shippingEnabled":"1","couponsEnabled":"1","autoOpenCart":"yes","addedToCart":"","ajaxAddToCart":"yes","skipAjaxForData":[],"showBasket":"hide_empty","flyToCart":"no","productFlyClass":"","refreshCart":"no","fetchDelay":"200","fetchCart":"page_load","triggerClass":"","productLayout":"rows","cardAnimate":{"enable":"yes","type":"slideUp","event":"back_hover","duration":"0.5"},"menuCartHideOnEmpty":[],"shortcodeEls":{"subtotal":".xoo-wsc-sc-subt","count":".xoo-wsc-sc-count","icon":".xoo-wsc-sc-bki"}};
+//# sourceURL=xoo-wsc-main-js-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="xoo-wsc-main-js-js" src="https://pacma.es/wp-content/plugins/side-cart-woocommerce/assets/js/xoo-wsc-main.js?ver=2.8.3"></script>
+<script id="et-core-common-js" src="https://pacma.es/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.9"></script>
+<script id="jquery-mobile-js" src="https://pacma.es/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.27.9"></script>
+<script id="et-builder-modules-script-sticky-js-extra">
+var et_pb_sticky_elements = {"et_pb_section_0_tb_header":{"id":"et_pb_section_0_tb_header","selector":".et_pb_section_0_tb_header","position":"top","topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}},"et_pb_section_2_tb_header":{"id":"et_pb_section_2_tb_header","selector":".et_pb_section_2_tb_header","position":"top","topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}}};
+//# sourceURL=et-builder-modules-script-sticky-js-extra
+</script>
+<script id="et-builder-modules-script-sticky-js" src="https://pacma.es/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.27.9"></script>
+	
+	</body>
+</html>

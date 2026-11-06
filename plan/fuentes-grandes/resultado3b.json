@@ -1,8 +1,15 @@
 [
  {
   "id": "A04/erc",
-  "estado": "estimada",
-  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+  "estado": "fuente",
+  "url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=56",
+  "etiqueta": "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de gasto militar y deuda",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "a la generació del deute amb què els governs espanyols han justificat les retallades socials i la manca d’inversió en polítiques socials",
+  "justificacion": "El programa denuncia que la deuda se ha usado para justificar recortes sociales; no plantea la reducción de deuda como prioridad frente al gasto social.",
+  "valor": 2,
+  "nota": "Coincide con la estimada (2); inferido del tono crítico con los recortes, no hay frase directa sobre priorizar la deuda."
  },
  {
   "id": "A06/erc",
@@ -186,13 +193,27 @@
  },
  {
   "id": "G02/erc",
-  "estado": "estimada",
-  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+  "estado": "fuente",
+  "url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=102",
+  "etiqueta": "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de energía",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Complicitat amb el territori a l’hora de promoure infrastructures eòliques i fotovoltàiques",
+  "justificacion": "El programa apuesta por un modelo 100% renovable con implicación del territorio en las instalaciones eólicas y fotovoltaicas, sin proponer limitarlas.",
+  "valor": 2,
+  "nota": "Coincide con la estimada (2)."
  },
  {
   "id": "G02/bildu",
-  "estado": "estimada",
-  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+  "estado": "fuente",
+  "url": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
+  "etiqueta": "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Reforzar la apuesta por la generación energética renovable con nuevas inversiones que incluyan y aseguren una planificación justa y respetuosa con las particularidades, condiciones y necesidades diferenciadas de cada territorio.",
+  "justificacion": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
+  "valor": 3,
+  "nota": "Valor 3 por compatibilizar renovables y planificación territorial; coincide con la estimada (3)."
  },
  {
   "id": "G03/bildu",

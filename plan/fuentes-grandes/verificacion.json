@@ -1,0 +1,466 @@
+[
+{
+"id": "I08/psoe",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6877
+},
+{
+"id": "I07/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 3994
+},
+{
+"id": "E02/fa",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 677119
+},
+{
+"id": "E02/psoe",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6237
+},
+{
+"id": "I05/psoe",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6247
+},
+{
+"id": "B05/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 20345
+},
+{
+"id": "J06/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 201139
+},
+{
+"id": "J04/psoe",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 1260462
+},
+{
+"id": "I03/vox",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.87,
+"chars": 21769
+},
+{
+"id": "L05/vox",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6399
+},
+{
+"id": "F07/psoe",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 3076
+},
+{
+"id": "A05/vox",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 8646
+},
+{
+"id": "A05/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 7832
+},
+{
+"id": "I04/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 217233
+},
+{
+"id": "I04/fa",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 308821
+},
+{
+"id": "C07/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 161933
+},
+{
+"id": "I02/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 32296
+},
+{
+"id": "G07/fa",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 677119
+},
+{
+"id": "C06/fa",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 677119
+},
+{
+"id": "F09/vox",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 7493
+},
+{
+"id": "B05/vox",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 47317
+},
+{
+"id": "K02/pp",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 201139
+},
+{
+"id": "E08/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 195610
+},
+{
+"id": "L08/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 195610
+},
+{
+"id": "G02/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 190786
+},
+{
+"id": "G09/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 190786
+},
+{
+"id": "G08/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 195610
+},
+{
+"id": "K06/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 228446
+},
+{
+"id": "K08/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6375
+},
+{
+"id": "D05/pacma",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 228446
+},
+{
+"id": "E07/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 11997
+},
+{
+"id": "L07/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 4789
+},
+{
+"id": "I03/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 8534
+},
+{
+"id": "K02/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 2543
+},
+{
+"id": "K08/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 8905
+},
+{
+"id": "G06/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 23836
+},
+{
+"id": "G02/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 23836
+},
+{
+"id": "J04/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 9189
+},
+{
+"id": "I09/pod",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6816
+},
+{
+"id": "E04/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.83,
+"chars": 26755
+},
+{
+"id": "E04/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 26755
+},
+{
+"id": "F03/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.83,
+"chars": 25605
+},
+{
+"id": "B03/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.83,
+"chars": 26218
+},
+{
+"id": "F05/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.83,
+"chars": 25798
+},
+{
+"id": "K04/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 405672
+},
+{
+"id": "L08/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 1.0,
+"chars": 25784
+},
+{
+"id": "L05/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 6399
+},
+{
+"id": "L04/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 5345
+},
+{
+"id": "G04/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 0.83,
+"chars": 25671
+},
+{
+"id": "G04/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 25671
+},
+{
+"id": "L03/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 1.0,
+"chars": 26237
+},
+{
+"id": "B06/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": false,
+"palabras": 1.0,
+"chars": 25980
+},
+{
+"id": "H07/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 24521
+},
+{
+"id": "A04/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 407317
+},
+{
+"id": "G02/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 407317
+},
+{
+"id": "G02/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 22564
+},
+{
+"id": "K03/erc",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 2959
+},
+{
+"id": "K03/bildu",
+"estado": "fuente",
+"http": "200",
+"exacta": true,
+"palabras": 1.0,
+"chars": 7155
+}
+]

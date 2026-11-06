@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+    <script type="text/javascript" async=true>
+        (function() {
+            var host = window.location.hostname;
+            var element = document.createElement('script');
+            var firstScript = document.getElementsByTagName('script')[0];
+            var url = 'https://cmp.inmobi.com'
+                .concat('/choice/', 'qYwJ23Rkk1yAk', '/', host, '/choice.js?tag_version=V3');
+            var uspTries = 0;
+            var uspTriesLimit = 3;
+            element.async = true;
+            element.type = 'text/javascript';
+            element.src = url;
+
+            firstScript.parentNode.insertBefore(element, firstScript);
+
+            function makeStub() {
+                var TCF_LOCATOR_NAME = '__tcfapiLocator';
+                var queue = [];
+                var win = window;
+                var cmpFrame;
+
+                function addFrame() {
+                    var doc = win.document;
+                    var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                    if (!otherCMP) {
+                        if (doc.body) {
+                            var iframe = doc.createElement('iframe');
+
+                            iframe.style.cssText = 'display:none';
+                            iframe.name = TCF_LOCATOR_NAME;
+                            doc.body.appendChild(iframe);
+                        } else {
+                            setTimeout(addFrame, 5);
+                        }
+                    }
+                    return !otherCMP;
+                }
+
+                function tcfAPIHandler() {
+                    var gdprApplies;
+                    var args = arguments;
+
+                    if (!args.length) {
+                        return queue;
+                    } else if (args[0] === 'setGdprApplies') {
+                        if (
+                            args.length > 3 &&
+                            args[2] === 2 &&
+                            typeof args[3] === 'boolean'
+                        ) {
+                            gdprApplies = args[3];
+                            if (typeof args[2] === 'function') {
+                                args[2]('set', true);
+                            }
+                        }
+                    } else if (args[0] === 'ping') {
+                        var retr = {
+                            gdprApplies: gdprApplies,
+                            cmpLoaded: false,
+                            cmpStatus: 'stub'
+                        };
+
+                        if (typeof args[2] === 'function') {
+                            args[2](retr);
+                        }
+                    } else {
+                        if(args[0] === 'init' && typeof args[3] === 'object') {
+                            args[3] = Object.assign(args[3], { tag_version: 'V3' });
+                        }
+                        queue.push(args);
+                    }
+                }
+
+                function postMessageEventHandler(event) {
+                    var msgIsString = typeof event.data === 'string';
+                    var json = {};
+
+                    try {
+                        if (msgIsString) {
+                            json = JSON.parse(event.data);
+                        } else {
+                            json = event.data;
+                        }
+                    } catch (ignore) {}
+
+                    var payload = json.__tcfapiCall;
+
+                    if (payload) {
+                        window.__tcfapi(
+                            payload.command,
+                            payload.version,
+                            function(retValue, success) {
+                                var returnMsg = {
+                                    __tcfapiReturn: {
+                                        returnValue: retValue,
+                                        success: success,
+                                        callId: payload.callId
+                                    }
+                                };
+                                if (msgIsString) {
+                                    returnMsg = JSON.stringify(returnMsg);
+                                }
+                                if (event && event.source && event.source.postMessage) {
+                                    event.source.postMessage(returnMsg, '*');
+                                }
+                            },
+                            payload.parameter
+                        );
+                    }
+                }
+
+                while (win) {
+                    try {
+                        if (win.frames[TCF_LOCATOR_NAME]) {
+                            cmpFrame = win;
+                            break;
+                        }
+                    } catch (ignore) {}
+
+                    if (win === window.top) {
+                        break;
+                    }
+                    win = win.parent;
+                }
+                if (!cmpFrame) {
+                    addFrame();
+                    win.__tcfapi = tcfAPIHandler;
+                    win.addEventListener('message', postMessageEventHandler, false);
+                }
+            };
+
+            makeStub();
+
+            var uspStubFunction = function() {
+                var arg = arguments;
+                if (typeof window.__uspapi !== uspStubFunction) {
+                    setTimeout(function() {
+                        if (typeof window.__uspapi !== 'undefined') {
+                            window.__uspapi.apply(window.__uspapi, arg);
+                        }
+                    }, 500);
+                }
+            };
+
+            var checkIfUspIsReady = function() {
+                uspTries++;
+                if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                    console.warn('USP is not accessible');
+                } else {
+                    clearInterval(uspInterval);
+                }
+            };
+
+            if (typeof window.__uspapi === 'undefined') {
+                window.__uspapi = uspStubFunction;
+                var uspInterval = setInterval(checkIfUspIsReady, 6000);
+            }
+        })();
+    </script>
+    <!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-FK5J2VWR74" id="google_gtagjs-js" async type="pmdelayedscript" data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1"></script>
+    <script id="google_gtagjs-js-after" type="pmdelayedscript" data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1">
+        window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+		gtag("set","linker",{"domains":["forbes.es"]});
+		gtag("js", new Date());
+		gtag("set", "developer_id.dZTNiMT", true);
+		gtag("config", "G-FK5J2VWR74", {"logged_in":"no","ga_session_id":"1718257679","author":"Newspack","is_reader":"no"});
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NSPH26P');</script>
+    <!-- End Google Tag Manager -->
+	
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+    function isMobileDevice() {
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+            || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) return true;
+    }
+
+    googletag.cmd.push(function () {
+                if (isMobileDevice()) {
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_v1', [[320, 100], [320, 50]], 'div-gpt-ad-1647279218089-1').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_v4', [[320, 100], [320, 50]], 'div-gpt-ad-1647279218089-4').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v1', [300, 600], 'div-gpt-ad-1721650946395-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v2', [300, 600], 'div-gpt-ad-1721651404364-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_sticky', [[320, 100], [320, 50]], 'div-gpt-ad-1647279218089-5').addService(googletag.pubads());
+
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v3', [300, 250], 'div-gpt-ad-1788853009147-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v4', [300, 250], 'div-gpt-ad-1788853029428-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v5', [300, 250], 'div-gpt-ad-1788853040600-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v6', [300, 250], 'div-gpt-ad-1788853130599-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v7', [300, 250], 'div-gpt-ad-1788853144679-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v8', [300, 250], 'div-gpt-ad-1788853162289-0').addService(googletag.pubads());
+
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_dmpu_v2', [[300, 250], [320, 100], [320, 50]], 'div-gpt-ad-1647279218089-6').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_dmpu_v3', [[300, 250], [320, 100], [320, 50]], 'div-gpt-ad-1647279218089-7').addService(googletag.pubads());
+
+        } else {
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_v1', [[980, 250], [980, 90]], 'div-gpt-ad-1647279218089-1').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_v4', [[980, 250], [980, 90]], 'div-gpt-ad-1647279218089-4').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v1', [300, 600], 'div-gpt-ad-1721650946395-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_roba_v2', [300, 600], 'div-gpt-ad-1721651404364-0').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_sticky', [980, 90], 'div-gpt-ad-1647279218089-5').addService(googletag.pubads());
+
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_dmpu_v2', [980, 90], 'div-gpt-ad-1647279218089-6').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_bb_dmpu_v3', [980, 90], 'div-gpt-ad-1647279218089-7').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_lateral_izq',  [[1, 1], [120, 600] , [160, 600]]  , 'div-gpt-ad-lat-izq').addService(googletag.pubads());
+            googletag.defineSlot('/143274330/dfp_forbes/fbs_lateral_der',  [[1, 1], [120, 600] , [160, 600]]  , 'div-gpt-ad-lat-der').addService(googletag.pubads());
+        }
+                var cseg = decodeURIComponent('; ' + document.cookie).split('; ' + 'btrseg' + '=').pop().split(';').shift().split(",");
+        if (cseg instanceof Array) {
+            googletag.pubads().setTargeting('cservi_segments', cseg);
+        }
+        googletag.pubads().setTargeting('cs_url', '407159');
+        googletag.pubads().setTargeting('cs_branded', '0');
+                    googletag.pubads().setTargeting('category', 'ultima-hora');
+        
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableLazyLoad({
+            fetchMarginPercent: 500,
+            renderMarginPercent: 100,
+            mobileScaling: 2.0
+        });
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+
+        const refreshAllFn = () => {
+        setInterval(function(){
+            googletag.cmd.push(() => {
+                googletag.pubads().refresh();
+            });
+        }, 30000);
+    };
+    
+    refreshAllFn();
+</script>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-6759507627500621?ers=1"></script>
+<script>(function () {
+        function signalGooglefcPresent() {
+            if (!window.frames['googlefcPresent']) {
+                if (document.body) {
+                    const iframe = document.createElement('iframe');
+                    iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                    iframe.style.display = 'none';
+                    iframe.name = 'googlefcPresent';
+                    document.body.appendChild(iframe);
+                } else {
+                    setTimeout(signalGooglefcPresent, 0);
+                }
+            }
+        }
+
+        signalGooglefcPresent();
+    })();</script>
+    <script defer id="videoo-library" data-cfasync="false" data-id="da57446e1762c887e8a35e6e222c98a35a37c5261728760bd40c4f9cd1e9b10c" src="https://static.videoo.tv/da57446e1762c887e8a35e6e222c98a35a37c5261728760bd40c4f9cd1e9b10c.js"></script>
+    	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector - Forbes España</title>
+<link data-rocket-prefetch href="https://tag.oniad.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://static.ads-twitter.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://connect.facebook.net" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.googletagmanager.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://cmp.inmobi.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.googletagservices.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://fundingchoicesmessages.google.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://static.videoo.tv" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://securepubads.g.doubleclick.net" rel="dns-prefetch">
+<link crossorigin data-rocket-preload as="font" href="https://forbes.es/wp-content/themes/tapasmagazine23/fonts/librebaskerville-regular-webfont.woff2" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-bold-webfont.woff2" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-regular-webfont.woff2" rel="preload">
+<style id="wpr-usedcss">img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}:root{--wp--preset--aspect-ratio--square:1;--wp--preset--aspect-ratio--4-3:4/3;--wp--preset--aspect-ratio--3-4:3/4;--wp--preset--aspect-ratio--3-2:3/2;--wp--preset--aspect-ratio--2-3:2/3;--wp--preset--aspect-ratio--16-9:16/9;--wp--preset--aspect-ratio--9-16:9/16;--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--color--gris-claro:#F9F9F9;--wp--preset--color--verde:#054060;--wp--preset--color--blanco:#FFFFFF;--wp--preset--color--negro:#111111;--wp--preset--color--naranja:#F9F9F9;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgb(6, 147, 227) 0%,rgb(155, 81, 224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122, 220, 180) 0%,rgb(0, 208, 130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgb(252, 185, 0) 0%,rgb(255, 105, 0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgb(255, 105, 0) 0%,rgb(207, 46, 46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238, 238, 238) 0%,rgb(169, 184, 195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74, 234, 220) 0%,rgb(151, 120, 209) 20%,rgb(207, 42, 186) 40%,rgb(238, 44, 130) 60%,rgb(251, 105, 98) 80%,rgb(254, 248, 76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255, 206, 236) 0%,rgb(152, 150, 240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254, 205, 165) 0%,rgb(254, 45, 45) 50%,rgb(107, 0, 62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255, 203, 112) 0%,rgb(199, 81, 192) 50%,rgb(65, 88, 208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255, 245, 203) 0%,rgb(182, 227, 212) 50%,rgb(51, 167, 181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202, 248, 128) 0%,rgb(113, 206, 126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2, 3, 129) 0%,rgb(40, 116, 252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:25px;--wp--preset--font-size--large:130px;--wp--preset--font-size--x-large:42px;--wp--preset--font-size--normal:16px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, .2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, .4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, .2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgb(255, 255, 255),6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp:6px 6px 0px rgb(0, 0, 0)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}#sticky-ad-lightweight-container-bottom{width:100%;padding:5px;transition:all .1s ease-in;z-index:99999}.sticky-ad-bottom{position:fixed;bottom:2px;background-color:#fefefe;box-shadow:0 -6px 18px 0 rgba(9,32,76,.1);height:100px;overflow:hidden}.sticky-ad-wrap{text-align:center;margin:auto;height:100%;width:100%;position:relative}.sticky-ad-content{display:flex;align-items:center;justify-content:center;text-align:center;height:100%;width:100%;z-index:1;overflow:hidden}.sticky-ad-close{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:12px;position:absolute;right:5px;z-index:10;background:rgba(255,255,255,.8)}.sticky-ad-bottom .sticky-ad-close{top:5px}.sticky-ad-close img,.sticky-ad-close svg,a.sticky-ad-close-btn,a.sticky-ad-close-btn svg{width:30px!important;height:30px!important;display:block;z-index:999999!important}.sticky-ad-close-text{display:block;width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;font-weight:700;color:#000}.cff-wrapper:after{content:"";display:table;clear:both}#cff{float:left;width:100%;margin:0 auto;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#cff .cff-posts-wrap{position:relative;clear:both;height:100%;top:0;bottom:0;width:100%}#cff .cff-item{float:left;width:100%;clear:both;padding:20px 0 15px;margin:0;border-bottom:1px solid #ddd}#cff .cff-item:first-child{padding-top:0}.cff-visual-header{margin-bottom:24px!important}.cff-visual-header .cff-header-hero{width:100%;height:300px;position:relative;overflow:hidden}.cff-visual-header .cff-header-hero img{width:100%;display:none}.cff-visual-header .cff-header-img img{display:block;width:100px;border-radius:3px;padding:0;margin:0}.cff-visual-header .cff-header-img{position:absolute;display:inline-block;line-height:1}.cff-visual-header .cff-header-text{display:inline-block;float:left;padding-top:10px;margin:0}.cff-header-text:after{display:table;clear:both;content:" "}#cff .cff-author-img.cff-no-consent img,#cff .cff-expand,#cff .cff-less{display:none}#cff .cff-post-text-link{display:block}.cff-post-text{width:100%;float:left}#cff .cff-post-desc,#cff p{float:left;width:100%;clear:both;padding:0;margin:5px 0;word-wrap:break-word}#cff .cff-author{float:left;clear:both;margin:0 0 15px;padding:0;line-height:1.2;width:100%}#cff .cff-author a{text-decoration:none;border:none}#cff .cff-author-img{float:left;width:40px;height:40px;margin:0 0 0 -100%!important;font-size:0;background:var(--wpr-bg-69f1a7b3-c176-4c5a-b8c9-e54d5d6b35c9) no-repeat;background-size:100%;border-radius:50%}#cff .cff-shared-link{width:100%;float:left}#cff .cff-author img{float:left;margin:0!important;padding:0!important;border:none!important;font-size:0;border-radius:50%}.cff-no-consent .cff-header-text{margin-left:0!important}.cff-no-consent .cff-header-hero,.cff-no-consent .cff-header-img,.cff-num-diff-hide{display:none!important}#cff .cff-shared-link{clear:both;padding:5px 10px;margin:10px 0 5px;background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.07);box-sizing:border-box}#cff .cff-link{float:left;clear:both;max-width:20%;margin:10px 0 0}#cff .cff-link img{max-width:100%}#cff .cff-post-desc{margin:5px 0 0}#cff .cff-share-tooltip{display:none;position:absolute;z-index:1000;bottom:22px;right:-40px;width:110px;padding:3px 5px 4px;margin:0;background:#333;color:#eee;font-size:12px;line-height:1.3;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#cff .cff-share-tooltip a svg{font-size:16px;margin:0;padding:5px}#cff .cff-share-tooltip a{display:block;float:left;margin:0!important;padding:0!important;color:#eee!important;opacity:0;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}#cff .cff-share-tooltip a:hover{color:#fff!important}#cff .cff-share-tooltip a.cff-show{opacity:1;transition:opacity .2s}.cff-likebox{float:left;width:100%;position:relative;margin:20px 0 0}#cff.cff-masonry,.cff-gdpr-notice{box-sizing:border-box}#cff .cff-credit img{float:left;margin:-2px 5px 0 0}.cff-credit a{display:flex;align-items:center}@media all and (max-width:640px){.cff-wrapper .cff-visual-header .cff-header-img img{width:80px}}#cff img.emoji{float:none;max-width:100%}#cff.cff-masonry .cff-item,#cff.cff-masonry .cff-item:first-child{padding-top:20px;margin-top:0}#cff.cff-masonry .cff-item,#cff.cff-masonry .cff-likebox{float:none;display:inline-block;width:30.3%;margin:0 1.5% 20px}@media (min-width:481px) and (max-width:800px){#cff.cff-masonry .cff-item,#cff.cff-masonry .cff-likebox{width:100%;margin:0}#cff.cff-masonry.masonry-2-tablet .cff-posts-wrap .cff-item,#cff.cff-masonry.masonry-2-tablet .cff-posts-wrap .cff-likebox{width:47%;margin-left:1.5%;margin-right:1.5%}#cff.cff-masonry.masonry-3-tablet .cff-posts-wrap .cff-item,#cff.cff-masonry.masonry-3-tablet .cff-posts-wrap .cff-likebox{width:30.3%;margin-left:1.5%;margin-right:1.5%}#cff.cff-masonry.masonry-4-tablet .cff-item,#cff.cff-masonry.masonry-4-tablet .cff-likebox{width:22%;margin-left:1.5%;margin-right:1.5%}}@media (max-width:480px){#cff.cff-masonry .cff-item,#cff.cff-masonry .cff-likebox{width:100%;margin:0}#cff.cff-masonry.masonry-2-mobile .cff-posts-wrap .cff-item,#cff.cff-masonry.masonry-2-mobile .cff-posts-wrap .cff-likebox{width:47%;margin-left:1.5%;margin-right:1.5%}#cff.cff-masonry.masonry-3-mobile .cff-posts-wrap .cff-item,#cff.cff-masonry.masonry-3-mobile .cff-posts-wrap .cff-likebox{width:30.3%;margin-left:1.5%;margin-right:1.5%}}#cff.cff-masonry.cff-masonry-css{width:100%;overflow:hidden;-webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px;-webkit-column-fill:auto;column-fill:unset;-webkit-column-count:3;-moz-column-count:3;column-count:3;margin:0}#cff.cff-masonry.cff-masonry-css .cff-item,#cff.cff-masonry.cff-masonry-css .cff-likebox{float:none;display:inline-block;width:100%;margin:0 0 12px}#cff.cff-masonry.cff-masonry-css .cff-likebox{width:99.5%}@media only screen and (max-width:780px){#cff.cff-masonry.cff-masonry-css{-webkit-column-count:1;-moz-column-count:1;column-count:1}#cff.cff-masonry.cff-masonry-css.masonry-2-mobile{-webkit-column-count:2;-moz-column-count:2;column-count:2;margin:0}#cff.cff-masonry.cff-masonry-css.masonry-2-mobile,#cff.cff-masonry.cff-masonry-css.masonry-2-mobile .cff-item{width:100%}}#cff.cff-disable-masonry{height:auto!important}#cff.cff-disable-masonry .cff-item,#cff.cff-disable-masonry .cff-likebox{position:relative!important;top:auto!important}.cff-gdpr-notice{max-width:100%;padding:8px 15px;margin:0;font-size:12px;background:#fdf7f7;border-radius:5px;border:1px solid #e4b1b1;line-height:1.3;display:none}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:rgba(0,0,0,0)}code{font-family:monospace,monospace;font-size:1em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}template{display:none}[hidden]{display:none}*,::after,::before{box-sizing:inherit}html{box-sizing:border-box}@font-face{font-family:libre_baskervilleregular;src:url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/librebaskerville-regular-webfont.woff2") format("woff2"),url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/librebaskerville-regular-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:work_sansbold;src:url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-bold-webfont.woff2") format("woff2"),url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-bold-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:work_sansregular;src:url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-regular-webfont.woff2") format("woff2"),url("https://forbes.es/wp-content/themes/tapasmagazine23/fonts/worksans-regular-webfont.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}html{font-size:16px;font-size:1rem;text-rendering:optimizeLegibility;text-rendering:geometricPrecision;font-smooth:always;font-smoothing:antialiased;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;-webkit-font-smoothing:subpixel-antialiased}body,button,input,optgroup,select,textarea{color:#000;font-family:libre_baskervilleregular,georgia,serif;font-size:1rem;line-height:1.5}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1{clear:both;font-family:work_sansbold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;line-height:1.1;font-weight:400}p{margin-bottom:1.5em}cite{font-style:italic}code{font-family:monaco,consolas,"Andale Mono","DejaVu Sans Mono",monospace}body{background:#fff}ul{margin:0 0 1.5em 3em}ul{list-style:disc}li>ul{margin-bottom:0;margin-left:1.5em}iframe,object{max-width:100%}img{height:auto;max-width:100%}figure{margin:1em 0}table{margin:0 0 1.5em;width:100%}a{color:#000;text-decoration:underline}a:visited{color:#000}a:active,a:focus,a:hover{color:#000}a:focus{outline:dotted thin}a:active,a:hover{outline:0}input[type=button],input[type=submit]{border:1px solid;border-color:#000;border-radius:3px;background:#fff;color:rgba(0,0,0,.8);line-height:1;padding:.6em 1em .4em}input[type=button]:hover,input[type=submit]:hover{border-color:#000}input[type=button]:active,input[type=button]:focus,input[type=submit]:active,input[type=submit]:focus{border-color:#000}button{border:0;background:#fff;box-shadow:0 0 0}button[type=submit]{background:#000;border-radius:8px;padding:0;width:50px;color:#fff;cursor:pointer}input[type=color],input[type=datetime],input[type=number],input[type=range],input[type=search],input[type=text],input[type=url],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}input[type=color]:focus,input[type=datetime]:focus,input[type=number]:focus,input[type=range]:focus,input[type=search]:focus,input[type=text]:focus,input[type=url]:focus,textarea:focus{color:#111}select{border:1px solid #ccc}textarea{width:100%}legend{font-size:12px;font-size:.75rem;font-weight:700;margin-bottom:6px;text-transform:uppercase}.main-navigation{display:none;font-family:work_sansbold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}.main-navigation ul{list-style:none;margin:0;padding-left:0}.main-navigation ul ul{background:#fff;box-shadow:0 3px 3px rgba(0,0,0,.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999}.main-navigation ul ul ul{left:-999em;top:0}.main-navigation ul ul li.focus>ul,.main-navigation ul ul li:hover>ul{display:block;left:auto}.main-navigation ul ul a{font-size:14px;font-size:.875rem;padding:10px!important}.main-navigation ul li.focus>ul,.main-navigation ul li:hover>ul{left:auto}.main-navigation li{position:relative}.main-navigation li.focus>a,.main-navigation li:hover>a{color:#000}.main-navigation li.solomovil{display:none}.main-navigation a{text-decoration:none;color:#000;text-transform:uppercase;font-size:16px;font-size:1rem;display:flex;align-items:center;white-space:nowrap}@media screen and (min-width:992px){.main-navigation{display:block;border-top:2px solid #000}.main-navigation a{font-size:14px;font-size:.875rem}.main-navigation ul#primary-menu{display:flex;justify-content:space-between;align-items:center;gap:10px}.main-navigation ul#primary-menu li.focus>ul,.main-navigation ul#primary-menu li:hover>ul{display:block;left:auto}.main-navigation ul#primary-menu li a{padding:20px 0}.main-navigation ul#primary-menu li.primera-logo{margin-left:40px}}.main-navigation a img{filter:brightness(0) saturate(0%)}.menu-toggle{display:block}#nav-icon{position:absolute;background:#fff;left:0;cursor:pointer}#nav-icon.open{position:absolute;top:20px;left:20px;z-index:999999}.sidebar-navigation{height:100%;width:0;position:fixed;z-index:9999;top:0;left:0;background-color:#fff;overflow-x:hidden;padding:60px 0 0;transition:.5s}.sidebar-navigation .closebtn{position:absolute;top:0;right:25px;font-size:46px;margin-left:50px;padding:0;border:0;box-shadow:0 0 0;color:#fff;background:#000;text-decoration:none;cursor:pointer;font-family:libre_baskervilleregular,georgia,serif}.sidebar-navigation.sidebar-open{background:#000;padding:60px 30px;width:100%;height:100vh}@media screen and (min-width:600px){.sidebar-navigation.sidebar-open{padding:60px;width:320px}}.sidebar-navigation .mostrar-redes{border-top:1px solid #979797;padding-top:24px;margin:24px 0 50px}.sidebar-navigation #sidebar-menu{list-style-type:none;padding:0;margin:20px 0 0}.sidebar-navigation #sidebar-menu li{margin-bottom:16px}.sidebar-navigation #sidebar-menu li ul{margin-left:0;padding-left:10px;font-size:12px;font-size:.75rem;margin-top:14px}.sidebar-navigation #sidebar-menu a{color:#fff;font-family:work_sansbold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;text-transform:uppercase;text-decoration:none}.sidebar-navigation .menu-ultima-portada{border-top:1px solid #979797;padding-top:24px}.sidebar-navigation .menu-ultima-portada p{font-weight:700;color:#fff;margin:6px 0}#sidebar-background{display:none}#sidebar-background.sidebar-open{display:block;overflow:hidden;position:absolute;top:0;left:0;right:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:999}.container{margin:0 auto;width:100%;padding-right:15px;padding-left:15px}@media screen and (min-width:756px){.container{max-width:700px}}@media screen and (min-width:768px){.container{max-width:740px}}@media screen and (min-width:992px){.container{max-width:960px}}@media screen and (min-width:1200px){.main-navigation a{font-size:16px;font-size:1rem}.container{max-width:1180px}}@media screen and (min-width:1220px){.container{max-width:1200px;padding:0}}.container::after{content:"";display:block;clear:both}.content-wrapper{display:flex;flex-direction:column}#page{padding-top:220px}@media screen and (min-width:992px){.content-wrapper{flex-direction:row;gap:40px}.single .content-wrapper{gap:100px}.archive .content-wrapper .site-main,.single .content-wrapper .entry-content{flex-basis:calc(100% - 340px);max-width:calc(100% - 340px)}.content-wrapper #secondary{flex-basis:300px;max-width:300px}.content-wrapper #secondary .widget_block:last-of-type{position:sticky;top:100px}#page{padding-top:430px}}.entry-content{margin:1.5em 0 0}.updated:not(.published){display:none}.single .entry-header{margin-top:30px}@media screen and (min-width:768px){.single .entry-header{margin-top:60px;text-align:center}.single .entry-meta{display:flex;gap:20px}}.single h1{margin-top:18px;margin-bottom:14px;font-size:20px;font-size:1.25rem}.single .post-categoria{text-transform:uppercase;text-decoration:none;font-size:12px;font-size:.75rem;font-family:work_sansregular,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-weight:700;color:#000}.single .post-categoria:hover{color:#000}.single .post-thumbnail{text-align:left;margin:0 0 30px}.single .post-thumbnail img{width:100%}.single .entry-content{font-size:16px;font-size:1rem}.single .entry-content{margin-top:0}.single .entry-content>p:first-of-type::first-letter{text-transform:capitalize;font-size:32px;line-height:.5}@media screen and (min-width:992px){.single h1{font-size:40px;font-size:2.5rem;max-width:1081px;margin-left:auto;margin-right:auto}.single .entry-content>p:first-of-type::first-letter{font-size:55px}}.single .entry-content ul{margin-left:0}.single .entry-content .wp-block-image img{height:auto!important}.entry-meta{font-family:work_sansregular,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}.entry-meta .byline{display:block;text-transform:uppercase;margin-bottom:6px;font-size:12px;font-size:.75rem}.entry-meta .byline .author{font-weight:700}.entry-meta .byline .author a{text-decoration:none}.entry-meta .byline .author a:hover{text-decoration:underline}.entry-meta .posted-on{display:block;text-transform:uppercase;font-size:12px;font-size:.75rem}.entry-meta .reading-time{display:block;font-size:12px;font-size:.75rem;margin-bottom:8px}@media screen and (min-width:768px){.page h1{font-size:40px;font-size:2.5rem}.redes-articulo ul{text-align:center}}@media screen and (min-width:1200px){.page h1{font-size:58px;font-size:3.625rem}}.breadcrumb{font-size:12px;font-size:.75rem}.breadcrumb span{color:gray}table{border-collapse:collapse;border-spacing:0;empty-cells:show;max-width:100%;overflow:hidden;width:100%}.redes-articulo{margin-bottom:16px}.redes-articulo ul{list-style-type:none;margin:30px 0 20px;padding:0}.redes-articulo li{display:inline-block;font-size:21px;padding-right:10px}.redes-articulo a{text-decoration:none}.redes-articulo a:hover{text-decoration:none}.redes-articulo a.facebook:hover path{fill:#3b5998}.redes-articulo a.twitter:hover path{fill:#00aced}.redes-articulo a.whatsapp:hover path{fill:#075e54}.redes-articulo a.linkedin:hover path{fill:#0e76a8}.mostrar-redes p{color:#fff;margin:0 0 20px;font-weight:700}.mostrar-redes ul{display:flex;flex-wrap:nowrap;list-style-type:none;margin:0 0 40px;padding:0}.mostrar-redes ul li{margin:0 7px}.mostrar-redes ul li a{display:flex;justify-content:center;align-items:center;text-decoration:none}.mostrar-redes ul li a svg path{fill:#000}@keyframes slide-down{0%{transform:translateY(-100%)}100%{transform:translateY(0)}}.bannerheader{background:#fff;position:absolute;top:0;left:0;width:100%}#masthead.is_stuck{position:fixed!important;top:0!important;left:0;bottom:inherit;z-index:9999;width:100%!important;background:#fff;animation:.7s slide-down;transform:rotate(360deg)}#masthead.is_stuck .site-header__container{padding-bottom:20px}#masthead.is_stuck #site-navigation,#masthead.is_stuck .search-toggle{display:none}#masthead.is_stuck .site-title img{max-width:88px;max-height:23px}.site-header__container{display:flex;flex-wrap:wrap;align-items:center;padding-top:20px}@media screen and (min-width:992px){.site-header__container{flex-wrap:nowrap;padding-bottom:20px}}.site-header__container .site-header--branding{display:flex;flex-wrap:nowrap;align-items:center;width:100%;position:relative}.site-header__container .site-branding a,.site-header__container .site-branding img{display:block}.site-header__container .site-branding img{margin:0 auto}.site-header__container .site-branding .site-title{margin:0;font-size:30px;font-size:1.875rem;line-height:1;font-family:libre_baskervilleregular,georgia,serif}@media screen and (max-width:991px){#div-gpt-ad-lat-der,#div-gpt-ad-lat-izq{display:none!important}.site-header__container .site-branding .site-title{flex-basis:100%;text-align:center}.site-header__container .site-branding .site-title a,.site-header__container .site-branding .site-title img,.site-header__container .site-branding .site-title svg{max-width:200px!important;margin:0 auto}}.site-header--centrado .site-header__container{flex-wrap:wrap;justify-content:center}.site-header--centrado .site-header__container .site-branding{flex-basis:100%;text-align:center}@media screen and (max-width:991px){.site-header--centrado .site-header__container .site-branding{flex-basis:100%;text-align:center}.site-header--centrado .site-header__container .site-branding a,.site-header--centrado .site-header__container .site-branding img,.site-header--centrado .site-header__container .site-branding svg{max-width:100px!important}}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}.site-header--centrado .site-header__container .site-branding a,.site-header--centrado .site-header__container .site-branding img,.site-header--centrado .site-header__container .site-branding svg{max-width:88px!important;margin:0 auto}}.search-toggle.mobile{background:0 0;outline:0;border:0;box-shadow:0 0;text-shadow:0 0 0;cursor:pointer;padding:0;position:absolute;right:0}.search-toggle.mobile svg path{fill:#fff}.search-toggle.mobile:focus,.search-toggle.mobile:hover{background:0 0}.search-toggle.mobile:focus svg path,.search-toggle.mobile:hover svg path{fill:#fff}.search-toggle.mobile.active{background:0 0}.search-toggle.mobile.active .icon-close{display:inline-block}.search-block{display:none;margin-bottom:16px;overflow:hidden}.search-block.active{display:block}.search-block .icon-close{line-height:85px;font-size:30px;font-size:1.875rem;float:right;color:#fff;cursor:pointer}.search-block .search-form{width:90%;margin:0;text-align:left;float:left;padding:25px 0}.search-block .search-form .search-submit{background:#fff;color:#000;border:0;line-height:26px;padding:0 18px;display:none}.search-block .search-form label{display:block}.search-block .search-form input[type=search]{border-radius:0;font-size:15px;color:#000;font-family:libre_baskervilleregular,georgia,serif;border:0;border-bottom:1px solid #000;width:100%;padding:16px;background:#fff}@media screen and (min-width:992px){.search-block .search-form input[type=search]{width:98%;font-size:20px;font-size:1.25rem;line-height:28px;height:28px;margin:0 1%;padding:0 0 5px}}.search-block .search-field{width:120px}@media screen and (min-width:320px){.search-block .search-field{width:185px}}@media screen and (min-width:768px){.search-block .search-field{background-color:rgba(0,0,0,0);border:none;cursor:pointer;height:17px;margin:3px 0;position:relative;font-size:14px}.search-block .search-field:focus{cursor:text;outline:0}}.search-block ::-webkit-input-placeholder{color:#000}.search-block :-moz-placeholder{color:#000}.search-block ::-moz-placeholder{color:#000}.search-block :-ms-input-placeholder{color:#000}.search-block ::-ms-input-placeholder{color:#000}.search-block :placeholder-shown{color:#000}.alerta-cabecera{background:red;color:#fff;display:flex;font-family:work_sansbold,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;flex-wrap:nowrap;justify-content:center;padding:9px;text-transform:uppercase;font-weight:400;margin-bottom:16px;font-size:12px;font-size:.75rem}#colophon{margin-top:40px;background:#000;color:#fff;text-align:center;padding:20px 0}#colophon .logo-spainmedia{display:block;max-width:180px;margin:40px auto 8px}#colophon .logos-enlaces{display:flex;flex-wrap:wrap;justify-content:center;list-style-type:none;margin:0 0 20px;padding:0;align-items:center;gap:20px}#colophon .logos-enlaces a,#colophon .logos-enlaces img{display:block}#colophon .copy{padding:8px 0;overflow:hidden;border-top:1px solid #fff;padding-top:17px}#colophon .copy p{display:inline-block;font-size:12px;font-size:.75rem;margin:0;color:#fff}#colophon .copy #legal-menu{list-style-type:none;margin:0 0 0 3px;padding:0}#colophon .copy #legal-menu li{display:inline-block;vertical-align:top;margin-left:3px}#colophon .copy a{font-size:14px;font-size:.875rem;color:#fff;text-decoration:underline;display:block}#colophon .copy a:hover{color:#fff}.widget{margin:0 0 1.5em}.widget select{max-width:100%}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;clip-path:none;color:#000;display:block;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}.publicidad{text-align:center;margin-top:12px}.publicidad figure{margin-bottom:0}.publicidad--mega .widget{min-height:120px}@media screen and (min-width:768px){.publicidad--mega .widget{min-height:250px}}.publicidad--mega .widget>div{position:sticky;top:40px}.publicidad.publicidad--footer{margin-top:40px}@media screen and (max-width:767px){.roba1,.roba2{text-align:center}}.fslightboxcg{cursor:grabbing!important}.fslightboxx{opacity:0!important;z-index:-1!important}.fslightboxtt{transition:transform .3s!important}.fslightbox-loader{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightboxss{width:0;height:2px;z-index:3;opacity:0;background:#fff}.fslightboxin{font-size:24px;color:#eaebeb;margin:auto}.fslightboxyt{border:0}.fslightboxs{position:relative;z-index:3;display:block;opacity:0;margin:auto;cursor:zoom-in}.fslightboxswc{z-index:1;transition:transform .2s linear}.fslightboxswcp{transition:none!important}.fslightboxtd{position:absolute;top:2px;left:2px;width:calc(100% - 4px);height:calc(100% - 4px);background:rgba(0,0,0,.4);cursor:pointer}.fslightboxta{border:2px solid #fff!important}.fslightboxc{position:absolute;bottom:0;left:50%;width:100%;transform:translateX(-50%);transition:opacity .2s,transform .3s;z-index:2;user-select:text}.fslightboxc:after{content:'';position:absolute;z-index:-1;top:0;left:0;opacity:1;transition:opacity 1s;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0),#1e1e1e 100%)}.fslightboxci{padding:20px 25px 30px;max-width:1200px;color:#eee;text-align:center;font-size:14px}.fslightboxct{transform:translate(-50%,-101px)}.fslightboxct:after{opacity:0;transition:none}@media(min-width:992px){.fslightboxct{transform:translate(-50%,-106px)}}#sb_instagram{width:100%;margin:0 auto;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#sb_instagram #sbi_images,#sb_instagram.sbi_fixed_height{-webkit-box-sizing:border-box;-moz-box-sizing:border-box}#sb_instagram:after,.sbi_lb-commentBox:after,.sbi_lb-data:after,.sbi_lb-dataContainer:after,.sbi_lb-outerContainer:after{content:"";display:table;clear:both}#sb_instagram.sbi_fixed_height{overflow:hidden;overflow-y:auto;box-sizing:border-box}#sb_instagram #sbi_images{box-sizing:border-box;display:grid;width:100%;padding:12px 0}#sb_instagram .sbi_header_link{-webkit-box-shadow:none;box-shadow:none}#sb_instagram .sbi_header_link:hover,.sbi_lightbox a img{border:none}#sb_instagram #sbi_images .sbi_item{display:inline-block;width:100%;vertical-align:top;zoom:1;margin:0!important;text-decoration:none;opacity:1;overflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s;transition:.5s}#sb_instagram #sbi_images .sbi_item.sbi_transition{opacity:0}#sb_instagram.sbi_col_1 #sbi_images,#sb_instagram.sbi_col_1.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(1,1fr)}#sb_instagram.sbi_col_2 #sbi_images,#sb_instagram.sbi_col_2.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(2,1fr)}#sb_instagram.sbi_col_3 #sbi_images,#sb_instagram.sbi_col_3.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(3,1fr)}#sb_instagram.sbi_col_4 #sbi_images,#sb_instagram.sbi_col_4.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(4,1fr)}#sb_instagram.sbi_col_5 #sbi_images,#sb_instagram.sbi_col_5.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(5,1fr)}#sb_instagram.sbi_col_6 #sbi_images,#sb_instagram.sbi_col_6.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(6,1fr)}#sb_instagram.sbi_col_7 #sbi_images,#sb_instagram.sbi_col_7.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(7,1fr)}#sb_instagram.sbi_col_8 #sbi_images,#sb_instagram.sbi_col_8.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(8,1fr)}#sb_instagram.sbi_col_9 #sbi_images,#sb_instagram.sbi_col_9.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(9,1fr)}#sb_instagram.sbi_col_10 #sbi_images,#sb_instagram.sbi_col_10.sbi_disable_mobile #sbi_images{grid-template-columns:repeat(10,1fr)}#sb_instagram #sbi_load .sbi_load_btn,#sb_instagram .sbi_photo_wrap{position:relative}#sb_instagram .sbi_photo{display:block;text-decoration:none}#sb_instagram .sbi_photo img{width:100%;height:inherit;object-fit:cover;scale:1;transition:transform .5s ease-in-out;transition:transform .5s ease-in-out,-webkit-transform .5s ease-in-out;vertical-align:middle}#sb_instagram .sbi_no_js img,#sb_instagram br,#sb_instagram p:empty,#sb_instagram.sbi_no_js .sbi_load_btn,#sb_instagram.sbi_no_js .sbi_photo img{display:none}#sb_instagram a,#sb_instagram a:active,#sb_instagram a:focus,#sb_instagram a:hover,.sbi_lightbox a:active,.sbi_lightbox a:focus,.sbi_lightbox a:hover{outline:0}#sb_instagram img{display:block;padding:0!important;margin:0!important;max-width:100%!important;opacity:1!important}#sb_instagram .sbi_link{display:none;position:absolute;bottom:0;right:0;width:100%;padding:10px 0;background:rgba(0,0,0,.5);text-align:center;color:#fff;font-size:12px;line-height:1.1}#sb_instagram .sbi_link a{padding:0 6px;text-decoration:none;color:#fff;font-size:12px;line-height:1.1;display:inline-block;vertical-align:top;zoom:1}#sb_instagram .sbi_link .sbi_lightbox_link{padding-bottom:5px}#sb_instagram .sbi_link a:focus,#sb_instagram .sbi_link a:hover{text-decoration:underline}#sb_instagram .sbi_photo_wrap:focus .sbi_link,#sb_instagram .sbi_photo_wrap:hover .sbi_link{display:block}#sb_instagram svg:not(:root).svg-inline--fa{height:1em;display:inline-block}#sb_instagram .sbi_type_carousel .sbi_playbtn,#sb_instagram .sbi_type_carousel .svg-inline--fa.fa-play,#sb_instagram .sbi_type_video .sbi_playbtn,#sb_instagram .sbi_type_video .svg-inline--fa.fa-play,.sbi_type_carousel .fa-clone{display:block!important;position:absolute;z-index:1;color:rgba(255,255,255,.9);font-style:normal!important;text-shadow:0 0 8px rgba(0,0,0,.8)}#sb_instagram .sbi_type_carousel .sbi_playbtn,#sb_instagram .sbi_type_video .sbi_playbtn{z-index:2;top:50%;left:50%;margin-top:-24px;margin-left:-19px;padding:0;font-size:48px}#sb_instagram .sbi_type_carousel .fa-clone{right:12px;top:12px;font-size:24px;text-shadow:0 0 8px rgba(0,0,0,.3)}#sb_instagram .sbi_type_carousel .svg-inline--fa.fa-play,#sb_instagram .sbi_type_video .svg-inline--fa.fa-play,.sbi_type_carousel svg.fa-clone{-webkit-filter:drop-shadow(0px 0px 2px rgba(0,0,0,.4));filter:drop-shadow(0px 0px 2px rgba(0, 0, 0, .4))}#sb_instagram .sbi_loader{width:20px;height:20px;position:relative;top:50%;left:50%;margin:-10px 0 0 -10px;background-color:rgba(0,0,0,.5);border-radius:100%;-webkit-animation:1s ease-in-out infinite sbi-sk-scaleout;animation:1s ease-in-out infinite sbi-sk-scaleout}#sbi_load p{display:inline;padding:0;margin:0}#sb_instagram #sbi_load .sbi_loader{position:absolute;margin-top:-11px;background-color:#fff;opacity:1}@-webkit-keyframes sbi-sk-scaleout{0%{-webkit-transform:scale(0)}100%{-webkit-transform:scale(1);opacity:0}}@keyframes sbi-sk-scaleout{0%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0}}#sb_instagram .fa-spin,#sbi_lightbox .fa-spin{-webkit-animation:2s linear infinite fa-spin;animation:2s linear infinite fa-spin}#sb_instagram .fa-pulse,#sbi_lightbox .fa-pulse{-webkit-animation:1s steps(8) infinite fa-spin;animation:1s steps(8) infinite fa-spin}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.sbi-screenreader{text-indent:-9999px!important;display:block!important;width:0!important;height:0!important;line-height:0!important;text-align:left!important;overflow:hidden!important}#sb_instagram .sb_instagram_header,.sb_instagram_header{overflow:hidden;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:12px 0}#sb_instagram .sb_instagram_header a,.sb_instagram_header a{transition:color .5s;text-decoration:none}.sb_instagram_header.sbi_header_outside{float:none;margin-left:auto!important;margin-right:auto!important;display:flex}.sbi_no_avatar .sbi_header_img{background:#333;color:#fff;width:50px;height:50px;position:relative}.sb_instagram_header .sbi_header_hashtag_icon{opacity:0;position:absolute;width:100%;top:0;bottom:0;left:0;text-align:center;color:#fff;background:rgba(0,0,0,.75)}.sbi_no_avatar .sbi_header_hashtag_icon{display:block;color:#fff;opacity:.9;-webkit-transition:background .6s linear,color .6s linear;-moz-transition:background .6s linear,color .6s linear;-o-transition:background .6s linear,color .6s linear;transition:background .6s linear,color .6s linear}.sbi_no_avatar:hover .sbi_header_hashtag_icon{display:block;opacity:1;-webkit-transition:background .2s linear,color .2s linear;-moz-transition:background .2s linear,color .2s linear;-o-transition:background .2s linear,color .2s linear;transition:background .2s linear,color .2s linear}@media all and (min-width:480px){#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_img,#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_img img,.sb_instagram_header.sbi_medium .sbi_header_img,.sb_instagram_header.sbi_medium .sbi_header_img img{width:80px;height:80px;border-radius:50%}#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text h3,.sb_instagram_header.sbi_medium .sbi_header_text h3{font-size:20px}#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio,#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio_info,.sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio,.sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio_info{font-size:14px}#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio,#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio_info,#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_text h3,.sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio,.sb_instagram_header.sbi_medium .sbi_header_text .sbi_bio_info,.sb_instagram_header.sbi_medium .sbi_header_text h3{line-height:1.4}#sb_instagram .sb_instagram_header.sbi_large .sbi_header_img,#sb_instagram .sb_instagram_header.sbi_large .sbi_header_img img,.sb_instagram_header.sbi_large .sbi_header_img,.sb_instagram_header.sbi_large .sbi_header_img img{width:120px;height:120px;border-radius:50%}#sb_instagram .sb_instagram_header.sbi_large .sbi_header_text h3,.sb_instagram_header.sbi_large .sbi_header_text h3{font-size:28px}#sb_instagram .sb_instagram_header.sbi_large .sbi_header_text .sbi_bio,#sb_instagram .sb_instagram_header.sbi_large .sbi_header_text .sbi_bio_info,.sb_instagram_header.sbi_large .sbi_header_text .sbi_bio,.sb_instagram_header.sbi_large .sbi_header_text .sbi_bio_info{font-size:16px}}#sb_instagram .sb_instagram_header .sbi_header_img,.sb_instagram_header .sbi_header_img{position:relative;width:50px;height:50px;overflow:hidden;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:50%}#sb_instagram .sb_instagram_header .sbi_header_img_hover,.sb_instagram_header .sbi_header_img_hover{opacity:0;position:absolute;width:100%;top:0;bottom:0;left:0;text-align:center;color:#fff;background:rgba(0,0,0,.75);z-index:2;transition:opacity .4s ease-in-out}#sb_instagram .sb_instagram_header .sbi_header_hashtag_icon .sbi_new_logo,#sb_instagram .sb_instagram_header .sbi_header_img_hover .sbi_new_logo,.sb_instagram_header .sbi_header_hashtag_icon .sbi_new_logo,.sb_instagram_header .sbi_header_img_hover .sbi_new_logo{position:absolute;top:50%;left:50%;margin-top:-12px;margin-left:-12px;width:24px;height:24px;font-size:24px}#sb_instagram .sb_instagram_header.sbi_medium .sbi_header_hashtag_icon .sbi_new_logo,.sb_instagram_header.sbi_medium .sbi_header_hashtag_icon .sbi_new_logo{margin-top:-18px;margin-left:-18px;width:36px;height:36px;font-size:36px}#sb_instagram .sb_instagram_header.sbi_large .sbi_header_hashtag_icon .sbi_new_logo,.sb_instagram_header.sbi_large .sbi_header_hashtag_icon .sbi_new_logo{margin-top:-24px;margin-left:-24px;width:48px;height:48px;font-size:48px}#sb_instagram .sb_instagram_header .sbi_header_img_hover i{overflow:hidden}#sb_instagram .sb_instagram_header .sbi_fade_in,.sb_instagram_header .sbi_fade_in{opacity:1;transition:opacity .2s ease-in-out}#sb_instagram .sb_instagram_header a:focus .sbi_header_img_hover,#sb_instagram .sb_instagram_header a:hover .sbi_header_img_hover,#sb_instagram.sbi_no_js #sbi_images .sbi_item.sbi_transition,.sb_instagram_header a:focus .sbi_header_img_hover,.sb_instagram_header a:hover .sbi_header_img_hover,.sbi_lb-nav a.sbi_lb-next:hover,.sbi_lb-nav a.sbi_lb-prev:hover{opacity:1}#sb_instagram .sb_instagram_header .sbi_header_text,.sb_instagram_header .sbi_header_text{display:flex;gap:20px;justify-content:flex-start;align-items:center}#sb_instagram .sb_instagram_header.sbi_large .sbi_feedtheme_header_text,.sb_instagram_header.sbi_large .sbi_feedtheme_header_text{gap:8px}.sb_instagram_header.sbi_medium .sbi_feedtheme_header_text{gap:4px}.sbi_feedtheme_header_text{display:flex;justify-content:flex-start;align-items:flex-start;flex:1;flex-direction:column;gap:4px}#sb_instagram .sb_instagram_header h3,.sb_instagram_header h3{font-size:16px;line-height:1.3;margin:0;padding:0}#sb_instagram .sb_instagram_header p,.sb_instagram_header p{font-size:13px;line-height:1.3;margin:0;padding:0}#sb_instagram .sb_instagram_header .sbi_header_text img.emoji,.sb_instagram_header .sbi_header_text img.emoji{margin-right:3px!important}#sb_instagram .sb_instagram_header .sbi_header_text.sbi_no_bio .sbi_bio_info,.sb_instagram_header .sbi_header_text.sbi_no_bio .sbi_bio_info{clear:both}#sb_instagram #sbi_load{float:left;clear:both;width:100%;text-align:center;opacity:1;transition:.5s ease-in}#sb_instagram #sbi_load .fa-spinner{display:none;position:absolute;top:50%;left:50%;margin:-8px 0 0 -7px;font-size:15px}#sb_instagram #sbi_load .sbi_load_btn,#sb_instagram .sbi_follow_btn a,.et-db #et-boc .et-l .et_pb_module .sbi_follow_btn a{display:inline-block;vertical-align:top;zoom:1;padding:7px 14px;margin:5px auto 0;background:#333;text-decoration:none;line-height:1.5}#sb_instagram .sbi_load_btn .sbi_btn_text,#sb_instagram .sbi_load_btn .sbi_loader{opacity:1;transition:.1s ease-in}#sb_instagram .sbi_hidden{opacity:0!important}#sb_instagram #sbi_load .sbi_load_btn,#sb_instagram .sbi_follow_btn a{border:none;color:#fff;font-size:13px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;transition:.1s ease-in}.sbi_lb-nav a.sbi_lb-next,.sbi_lb-nav a.sbi_lb-prev{width:50px;padding-left:10px;padding-right:10px;opacity:.5;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s}#sb_instagram .sbi_follow_btn{display:inline-block;vertical-align:top;zoom:1;text-align:center}#sb_instagram .sbi_follow_btn.sbi_top{display:block;margin-bottom:5px}#sb_instagram .sbi_follow_btn a{background:#408bd1;color:#fff}#sb_instagram #sbi_load .sbi_load_btn:focus,#sb_instagram #sbi_load .sbi_load_btn:hover{outline:0;box-shadow:inset 0 0 20px 20px rgba(255,255,255,.25)}#sb_instagram .sbi_follow_btn a:focus,#sb_instagram .sbi_follow_btn a:hover{outline:0;box-shadow:inset 0 0 10px 20px #359dff}#sb_instagram #sbi_load .sbi_load_btn:active,#sb_instagram .sbi_follow_btn a:active{box-shadow:inset 0 0 10px 20px rgba(0,0,0,.3)}#sb_instagram .sbi_follow_btn .fa,#sb_instagram .sbi_follow_btn svg{margin-bottom:-1px;margin-right:7px;font-size:15px}#sb_instagram .sbi_follow_btn svg{vertical-align:-.125em}#sb_instagram #sbi_load .sbi_follow_btn{margin-left:5px}#sb_instagram .sb_instagram_error{width:100%;text-align:center;line-height:1.4}#sbi_mod_error{display:none;border:1px solid #ddd;background:#eee;color:#333;margin:10px 0 0;padding:10px 15px;font-size:13px;text-align:center;clear:both;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}#sbi_mod_error br{display:initial!important}#sbi_mod_error p{padding:5px 0!important;margin:0!important;line-height:1.3!important}#sbi_mod_error ol,#sbi_mod_error ul{padding:5px 0 5px 20px!important;margin:0!important}#sbi_mod_error li{padding:1px 0!important;margin:0!important}#sbi_mod_error span{font-size:12px}#sb_instagram.sbi_medium .sbi_photo_wrap .svg-inline--fa.fa-play,#sb_instagram.sbi_medium .sbi_playbtn{margin-top:-12px;margin-left:-9px;font-size:23px}#sb_instagram.sbi_medium .sbi_type_carousel .sbi_photo_wrap .fa-clone{right:8px;top:8px;font-size:18px}#sb_instagram.sbi_small .sbi_photo_wrap .svg-inline--fa.fa-play,#sb_instagram.sbi_small .sbi_playbtn{margin-top:-9px;margin-left:-7px;font-size:18px}#sb_instagram.sbi_small .sbi_type_carousel .sbi_photo_wrap .fa-clone{right:5px;top:5px;font-size:12px}@media all and (max-width:640px){#sb_instagram.sbi_col_3 #sbi_images,#sb_instagram.sbi_col_4 #sbi_images,#sb_instagram.sbi_col_5 #sbi_images,#sb_instagram.sbi_col_6 #sbi_images{grid-template-columns:repeat(2,1fr)}#sb_instagram.sbi_col_10 #sbi_images,#sb_instagram.sbi_col_7 #sbi_images,#sb_instagram.sbi_col_8 #sbi_images,#sb_instagram.sbi_col_9 #sbi_images{grid-template-columns:repeat(4,1fr)}#sb_instagram.sbi_width_resp{width:100%!important}}#sb_instagram.sbi_no_js #sbi_images .sbi_item .sbi_photo_wrap{box-sizing:border-box;position:relative;overflow:hidden}#sb_instagram.sbi_no_js #sbi_images .sbi_item .sbi_photo_wrap:before{content:"";display:block;padding-top:100%;z-index:-300}#sb_instagram.sbi_no_js #sbi_images .sbi_item .sbi_photo{position:absolute;top:0;left:0;bottom:0;right:0}#sb_instagram #sbi_images .sbi_js_load_disabled .sbi_imgLiquid_ready.sbi_photo,#sb_instagram #sbi_images .sbi_no_js_customizer .sbi_imgLiquid_ready.sbi_photo{padding-bottom:0!important}#sb_instagram #sbi_mod_error .sb_frontend_btn{display:inline-block;padding:6px 10px;background:rgba(0,0,0,.1);text-decoration:none;border-radius:5px;margin-top:10px;color:#444}#sb_instagram #sbi_mod_error .sb_frontend_btn:hover{background:rgba(0,0,0,.15)}#sb_instagram #sbi_mod_error .sb_frontend_btn .fa{margin-right:2px}#sb_instagram.sbi_palette_dark,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lightbox_tooltip,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_share_close,.sbi_header_outside.sbi_header_palette_dark{background-color:rgba(0,0,0,.85);color:rgba(255,255,255,.75)}#sb_instagram.sbi_palette_dark .sbi_caption,#sb_instagram.sbi_palette_dark .sbi_meta,#sbi_lightbox.sbi_lb-comments-enabled.sbi_palette_dark_lightbox .sbi_lb-commentBox p,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details .sbi_lb-caption,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-number,.sbi_header_palette_dark,.sbi_header_palette_dark .sbi_bio{color:rgba(255,255,255,.75)}#sb_instagram.sbi_palette_dark .sbi_expand a,#sbi_lightbox.sbi_lb-comments-enabled.sbi_palette_dark_lightbox .sbi_lb-commentBox .sbi_lb-commenter,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details a,#sbi_lightbox.sbi_palette_dark_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details a p,.sbi_header_palette_dark a{color:#fff}#sb_instagram.sbi_palette_light,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lightbox_tooltip,#sbi_lightbox.sbi_palette_light_lightbox .sbi_share_close,.sbi_header_outside.sbi_header_palette_light{color:rgba(0,0,0,.85);background-color:rgba(255,255,255,.75)}#sb_instagram.sbi_palette_light .sbi_caption,#sb_instagram.sbi_palette_light .sbi_meta,#sbi_lightbox.sbi_lb-comments-enabled.sbi_palette_light_lightbox .sbi_lb-commentBox p,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details .sbi_lb-caption,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-number,.sbi_header_palette_light,.sbi_header_palette_light .sbi_bio{color:rgba(0,0,0,.85)}#sb_instagram.sbi_palette_light .sbi_expand a,#sbi_lightbox.sbi_lb-comments-enabled.sbi_palette_light_lightbox .sbi_lb-commentBox .sbi_lb-commenter,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details a,#sbi_lightbox.sbi_palette_light_lightbox .sbi_lb-outerContainer .sbi_lb-dataContainer .sbi_lb-details a p,.sbi_header_palette_light a{color:#000}@media all and (max-width:800px){#sb_instagram.sbi_tab_col_10 #sbi_images{grid-template-columns:repeat(10,1fr)}#sb_instagram.sbi_tab_col_9 #sbi_images{grid-template-columns:repeat(9,1fr)}#sb_instagram.sbi_tab_col_8 #sbi_images{grid-template-columns:repeat(8,1fr)}#sb_instagram.sbi_tab_col_7 #sbi_images{grid-template-columns:repeat(7,1fr)}#sb_instagram.sbi_tab_col_6 #sbi_images{grid-template-columns:repeat(6,1fr)}#sb_instagram.sbi_tab_col_5 #sbi_images{grid-template-columns:repeat(5,1fr)}#sb_instagram.sbi_tab_col_4 #sbi_images{grid-template-columns:repeat(4,1fr)}#sb_instagram.sbi_tab_col_3 #sbi_images{grid-template-columns:repeat(3,1fr)}#sb_instagram.sbi_tab_col_2 #sbi_images{grid-template-columns:repeat(2,1fr)}#sb_instagram.sbi_tab_col_1 #sbi_images{grid-template-columns:1fr}}@media all and (max-width:480px){#sb_instagram.sbi_col_10 #sbi_images,#sb_instagram.sbi_col_10.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_3 #sbi_images,#sb_instagram.sbi_col_3.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_4 #sbi_images,#sb_instagram.sbi_col_4.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_5 #sbi_images,#sb_instagram.sbi_col_5.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_6 #sbi_images,#sb_instagram.sbi_col_6.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_7 #sbi_images,#sb_instagram.sbi_col_7.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_8 #sbi_images,#sb_instagram.sbi_col_8.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_col_9 #sbi_images,#sb_instagram.sbi_col_9.sbi_mob_col_auto #sbi_images,#sb_instagram.sbi_mob_col_1 #sbi_images{grid-template-columns:1fr}#sb_instagram.sbi_mob_col_2 #sbi_images{grid-template-columns:repeat(2,1fr)}#sb_instagram.sbi_mob_col_3 #sbi_images{grid-template-columns:repeat(3,1fr)}#sb_instagram.sbi_mob_col_4 #sbi_images{grid-template-columns:repeat(4,1fr)}#sb_instagram.sbi_mob_col_5 #sbi_images{grid-template-columns:repeat(5,1fr)}#sb_instagram.sbi_mob_col_6 #sbi_images{grid-template-columns:repeat(6,1fr)}#sb_instagram.sbi_mob_col_7 #sbi_images{grid-template-columns:repeat(7,1fr)}#sb_instagram.sbi_mob_col_8 #sbi_images{grid-template-columns:repeat(8,1fr)}#sb_instagram.sbi_mob_col_9 #sbi_images{grid-template-columns:repeat(9,1fr)}#sb_instagram.sbi_mob_col_10 #sbi_images{grid-template-columns:repeat(10,1fr)}}#sb_instagram #sbi_images .sbi_item.sbi_num_diff_hide{display:none!important}body:after{content:url(https://forbes.es/wp-content/plugins/instagram-feed/img/sbi-sprite.png);display:none}.sbi_lightboxOverlay{position:absolute;top:0;left:0;z-index:99999;background-color:#000;opacity:.9;display:none}.sbi_lightbox{position:absolute;left:0;width:100%;z-index:100000;text-align:center;line-height:0;font-weight:400}.sbi_lightbox .sbi_lb-image{display:block;height:auto;max-width:inherit;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;object-fit:contain}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-image{-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;-ms-border-radius:3px 0 0 3px;-o-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}.sbi_lb-outerContainer{position:relative;background-color:#000;width:250px;height:250px;margin:0 auto 5px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px}.sbi_lb-container-wrapper{height:100%}.sbi_lb-container{position:relative;top:0;left:0;width:100%;height:100%;bottom:0;right:0}.sbi_lb-loader{position:absolute;width:100%;top:50%;left:0;height:20px;margin-top:-10px;text-align:center;line-height:0}.sbi_lb-loader span{display:block;width:14px;height:14px;margin:0 auto;background:var(--wpr-bg-21138faa-9a98-4f47-93c2-c625116a7abf) no-repeat}.sbi_lb-container>.nav{left:0}.sbi_lb-nav a{position:absolute;z-index:100;top:0;height:90%;outline:0;background-image:url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==')}.sbi_lb-next,.sbi_lb-prev{height:100%;cursor:pointer;display:block}.sbi_lb-nav a.sbi_lb-prev{left:-70px;float:left;transition:opacity .2s}.sbi_lb-nav a.sbi_lb-next{right:-70px;float:right;transition:opacity .2s}.sbi_lb-nav span{display:block;top:55%;position:absolute;left:20px;width:34px;height:45px;margin:-25px 0 0;background:var(--wpr-bg-a3ae68b3-056b-428c-8bd5-1d68d1110de9) no-repeat}.sbi_lb-nav a.sbi_lb-prev span{background-position:-53px 0}.sbi_lb-nav a.sbi_lb-next span{left:auto;right:20px;background-position:-18px 0}.sbi_lb-dataContainer{margin:0 auto;padding-top:10px;width:100%;font-family:"Open Sans",Helvetica,Arial,sans-serif;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-left-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-outerContainer{position:relative;padding-right:300px;background:#fff;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-container-wrapper{position:relative;background:#000}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-dataContainer{width:300px!important;position:absolute;top:0;right:-300px;height:100%;bottom:0;background:#fff;line-height:1.4;overflow:hidden;overflow-y:auto;text-align:left}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-commentBox{display:block!important;width:100%;margin-top:20px;padding:4px}#sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-number{padding-bottom:0}#sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-caption{width:100%;max-width:100%;margin-bottom:20px}#sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-caption .sbi_caption_text{display:inline-block;padding-top:10px}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-comment{display:block!important;width:100%;min-width:100%;float:left;clear:both;font-size:12px;padding:3px 20px 3px 0;margin:0 0 1px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-commenter{font-weight:700;margin-right:5px}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-commentBox p{text-align:left}.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-dataContainer{box-sizing:border-box;padding:15px 20px}.sbi_lb-data{padding:0 4px;color:#ccc}.sbi_lb-data .sbi_lb-details{width:85%;float:left;text-align:left;line-height:1.1}.sbi_lb-data .sbi_lb-caption{float:left;font-size:13px;font-weight:400;line-height:1.3;padding-bottom:3px;color:#ccc;word-wrap:break-word;word-break:break-word;overflow-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto}.sbi_lb-data .sbi_lb-caption a{color:#ccc;font-weight:700;text-decoration:none}.sbi_lb-commenter:hover,.sbi_lb-data .sbi_lb-caption .sbi_lightbox_username:hover p,.sbi_lb-data .sbi_lb-caption a:hover{color:#fff;text-decoration:underline}.sbi_lb-data .sbi_lb-caption .sbi_lightbox_username{float:left;width:100%;color:#ccc;padding-bottom:0;display:block;margin:0 0 5px}#sbi_lightbox.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-number,#sbi_lightbox.sbi_lightbox.sbi_lb-comments-enabled .sbi_lightbox_action a,#sbi_lightbox.sbi_lightbox.sbi_lb-comments-enabled .sbi_lightbox_action a:hover,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-commenter,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-commenter:hover,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data .sbi_lb-caption,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data .sbi_lb-caption .sbi_lightbox_username p,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data .sbi_lb-caption .sbi_lightbox_username:hover p,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data .sbi_lb-caption a,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-data .sbi_lb-caption a:hover,.sbi_lightbox.sbi_lb-comments-enabled .sbi_lightbox_username{color:#333}.sbi_lightbox .sbi_lightbox_username img{float:left;border:none;width:32px;height:32px;margin-right:10px;background:#666;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px}.sbi_lightbox_username p{float:left;margin:0;padding:0;color:#ccc;line-height:32px;font-weight:700;font-size:13px}.sbi_lb-data .sbi_lb-number{display:block;float:left;clear:both;padding:5px 0 15px;font-size:12px;color:#999}.sbi_lb-data .sbi_lb-close{display:block;float:right;width:30px;height:30px;font-size:18px;color:#aaa;text-align:right;outline:0;opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.sbi_lb-data .sbi_lb-close:hover{cursor:pointer;opacity:1;color:#fff}.sbi_lb-nav{top:0;left:0;width:100%;z-index:10;height:auto}.sbi-feed-block-cta,.sbi-feed-block-cta-img-ctn{width:100%!important;position:relative!important}.sbi_lightbox .sbi_owl-item:nth-child(n+2) .sbi_video{position:relative!important}.sbi_lb-container{padding:0}.sbi-feed-block-cta{border:1px solid #e8e8eb!important;border-radius:2px!important;text-align:center!important}.sbi-feed-block-cta-img-ctn{float:left!important;display:flex!important;justify-content:center!important;align-items:center!important;margin-top:50px!important;margin-bottom:35px!important}.sbi-feed-block-cta-img{width:65px!important;height:65px!important;position:relative!important;border:2px solid #dcdde1!important;border-radius:16px!important;-webkit-transform:rotate(-3deg)!important;transform:rotate(-3deg)!important;display:flex!important;justify-content:center!important;align-items:center!important}.sbi-feed-block-cta-img span svg{float:left!important}.sbi-feed-block-cta-img>*{-webkit-transform:rotate(3deg)!important;transform:rotate(3deg)!important}.sbi-feed-block-cta-logo{position:absolute!important;right:-15px!important;bottom:-19px!important;z-index:1!important}.sbi-feed-block-cta-heading{font-size:19px!important;padding:0!important;margin:0 0 30px!important;display:inline-block!important;width:100%!important;font-weight:700!important;line-height:1.4em!important}.sbi-feed-block-cta-btn{background:#0068a0!important;border-radius:2px!important;padding:8px 20px 8px 38px!important;cursor:pointer!important;color:#fff!important;position:relative!important;margin-bottom:30px!important}.sbi-feed-block-cta-btn:after,.sbi-feed-block-cta-btn:before{content:''!important;position:absolute!important;width:2px!important;height:12px!important;background:#fff!important;left:20px!important;top:14px!important}.sbi-feed-block-cta-btn:after{-webkit-transform:rotate(90deg)!important;transform:rotate(90deg)!important}.sbi-feed-block-cta-desc{display:flex!important;justify-content:center!important;align-items:center!important;padding:20px!important;background:#f9f9fa!important;border-top:1px solid #e8e8eb!important;margin-top:35px!important;flex-direction:column!important}.sbi-feed-block-cta-desc strong{color:#141b38!important;font-size:16px!important;font-weight:600!important;margin-bottom:8px!important}.sbi-feed-block-cta-desc span{color:#434960!important;font-size:14px!important;line-height:1.5em!important;padding:0 20%!important}.sbi-feed-block-cta-desc span a,.sbi-feed-block-cta-selector span a{text-transform:capitalize!important;text-decoration:underline!important;font-weight:600!important}.sbi-feed-block-cta-selector{width:100%!important;padding:0 20%!important;display:flex!important;justify-content:center!important;align-items:center!important;flex-direction:column!important;margin-bottom:45px!important}.sbi-feed-block-cta-feedselector{border:1px solid #d0d1d7!important;padding:8px 16px!important;margin-bottom:15px!important;max-width:100%!important;min-width:400px!important}.sbi-feed-block-cta-selector span{color:#2c324c!important}.sbi-feed-block-cta-selector span a:after{color:#2c324c!important;margin-left:2px!important;font-weight:400!important;text-decoration-color:#fff!important}.sbi-feed-block-cta-selector span a:first-of-type:after{content:','!important}.sbi-feed-block-cta-selector span a:nth-of-type(2):after{content:'or'!important;margin-left:5px!important;margin-right:2px!important}.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_facebook_feed::before,.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_instagram_feed::before,.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_twitter_feed::before,.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_youtube_feed::before{content:''!important;height:16px!important;font-variant:normal!important;background-position:center center!important;background-repeat:no-repeat!important}.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_facebook_feed::before{background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9056 18.109H13.4056V17.609H12.9056V18.109ZM9.79722 18.109H9.29722V18.609H9.79722V18.109ZM9.79722 14.5601V14.0601H9.29722V14.5601H9.79722ZM12.9056 14.5601V15.0601H13.4056V14.5601H12.9056ZM20.2604 7.32764H20.7604V6.90407L20.3426 6.83444L20.2604 7.32764ZM20.2604 10.3503V10.8503H20.7604V10.3503H20.2604ZM16.7237 14.5601H16.2237V15.0601H16.7237V14.5601ZM20.1258 14.5601L20.6199 14.6367L20.7094 14.0601H20.1258V14.5601ZM19.5751 18.109V18.609H20.0035L20.0692 18.1857L19.5751 18.109ZM16.7237 18.109V17.609H16.2237V18.109H16.7237ZM27.0523 14.5601H26.5523L26.5523 14.5612L27.0523 14.5601ZM17.0803 26.6136L16.9877 26.1222L17.0803 26.6136ZM12.5489 26.6139L12.6411 26.1225L12.5489 26.6139ZM14.8147 1.79797C7.80749 1.79797 2.07703 7.51685 2.07703 14.5601H3.07703C3.07703 8.06849 8.36042 2.79797 14.8147 2.79797V1.79797ZM2.07703 14.5601C2.07703 20.7981 6.54984 25.9974 12.4567 27.1053L12.6411 26.1225C7.19999 25.1019 3.07703 20.3097 3.07703 14.5601H2.07703ZM13.4056 26.3139V18.109H12.4056V26.3139H13.4056ZM12.9056 17.609H9.79722V18.609H12.9056V17.609ZM10.2972 18.109V14.5601H9.29722V18.109H10.2972ZM9.79722 15.0601H12.9056V14.0601H9.79722V15.0601ZM13.4056 14.5601V11.8556H12.4056V14.5601H13.4056ZM13.4056 11.8556C13.4056 10.4191 13.8299 9.36825 14.5211 8.67703C15.2129 7.98525 16.2305 7.59512 17.5314 7.59512V6.59512C16.0299 6.59512 14.7346 7.04939 13.814 7.96992C12.893 8.891 12.4056 10.2204 12.4056 11.8556H13.4056ZM17.5314 7.59512C18.1724 7.59512 18.8342 7.65119 19.3401 7.70823C19.592 7.73664 19.8029 7.76502 19.9504 7.78622C20.0241 7.79681 20.0818 7.8056 20.1208 7.81167C20.1402 7.81471 20.155 7.81706 20.1647 7.81863C20.1695 7.81941 20.1731 7.82 20.1754 7.82037C20.1765 7.82056 20.1773 7.82069 20.1778 7.82077C20.178 7.82081 20.1782 7.82083 20.1782 7.82084C20.1783 7.82085 20.1783 7.82085 20.1783 7.82085C20.1783 7.82085 20.1783 7.82085 20.1783 7.82085C20.1782 7.82084 20.1782 7.82084 20.2604 7.32764C20.3426 6.83444 20.3426 6.83443 20.3425 6.83443C20.3425 6.83442 20.3424 6.83441 20.3424 6.83441C20.3423 6.83439 20.3422 6.83437 20.342 6.83435C20.3418 6.8343 20.3414 6.83425 20.341 6.83417C20.3401 6.83403 20.3389 6.83383 20.3373 6.83357C20.3342 6.83307 20.3298 6.83234 20.3241 6.83142C20.3127 6.82958 20.2962 6.82695 20.2749 6.82362C20.2323 6.81698 20.1707 6.8076 20.0927 6.7964C19.9369 6.774 19.7157 6.74425 19.4521 6.71453C18.927 6.65532 18.2243 6.59512 17.5314 6.59512V7.59512ZM19.7604 7.32764V10.3503H20.7604V7.32764H19.7604ZM20.2604 9.85033H18.7185V10.8503H20.2604V9.85033ZM18.7185 9.85033C17.851 9.85033 17.1997 10.1241 16.7742 10.6148C16.3604 11.0922 16.2237 11.7025 16.2237 12.2594H17.2237C17.2237 11.8495 17.3257 11.5053 17.5298 11.2699C17.7224 11.0477 18.0684 10.8503 18.7185 10.8503V9.85033ZM16.2237 12.2594V14.5601H17.2237V12.2594H16.2237ZM16.7237 15.0601H20.1258V14.0601H16.7237V15.0601ZM19.6317 14.4834L19.081 18.0323L20.0692 18.1857L20.6199 14.6367L19.6317 14.4834ZM19.5751 17.609H16.7237V18.609H19.5751V17.609ZM16.2237 18.109V26.3135H17.2237V18.109H16.2237ZM17.1728 27.105C20.0281 26.5671 22.618 25.068 24.5079 22.8512L23.7469 22.2025C22.0054 24.2452 19.6188 25.6266 16.9877 26.1222L17.1728 27.105ZM24.5079 22.8512C26.4793 20.5388 27.5591 17.5977 27.5523 14.559L26.5523 14.5612C26.5586 17.3614 25.5636 20.0715 23.7469 22.2025L24.5079 22.8512ZM27.5523 14.5601C27.5523 7.51685 21.8218 1.79797 14.8147 1.79797V2.79797C21.2689 2.79797 26.5523 8.06849 26.5523 14.5601H27.5523ZM16.2237 26.3135C16.2237 26.8064 16.6682 27.2 17.1728 27.105L16.9877 26.1222C17.119 26.0975 17.2237 26.2006 17.2237 26.3135H16.2237ZM12.4567 27.1053C12.9603 27.1998 13.4056 26.8073 13.4056 26.3139H12.4056C12.4056 26.2001 12.5107 26.098 12.6411 26.1225L12.4567 27.1053Z' fill='%232b87da' /%3E%3Cpath d='M12.9056 18.1088H13.4056V17.6088H12.9056V18.1088ZM9.79724 18.1088H9.29724V18.6088H9.79724V18.1088ZM9.79724 14.5599V14.0599H9.29724V14.5599H9.79724ZM12.9056 14.5599V15.0599H13.4056V14.5599H12.9056ZM20.2604 7.32749H20.7604V6.90392L20.3426 6.83429L20.2604 7.32749ZM20.2604 10.3502V10.8502H20.7604V10.3502H20.2604ZM16.7237 14.5599H16.2237V15.0599H16.7237V14.5599ZM20.1258 14.5599L20.6199 14.6366L20.7094 14.0599H20.1258V14.5599ZM19.5751 18.1088V18.6088H20.0035L20.0692 18.1855L19.5751 18.1088ZM16.7237 18.1088V17.6088H16.2237V18.1088H16.7237ZM13.4056 26.366V18.1088H12.4056V26.366H13.4056ZM12.9056 17.6088H9.79724V18.6088H12.9056V17.6088ZM10.2972 18.1088V14.5599H9.29724V18.1088H10.2972ZM9.79724 15.0599H12.9056V14.0599H9.79724V15.0599ZM13.4056 14.5599V11.8554H12.4056V14.5599H13.4056ZM13.4056 11.8554C13.4056 10.4189 13.8299 9.3681 14.5212 8.67688C15.2129 7.9851 16.2305 7.59497 17.5314 7.59497V6.59497C16.0299 6.59497 14.7346 7.04924 13.814 7.96977C12.893 8.89085 12.4056 10.2202 12.4056 11.8554H13.4056ZM17.5314 7.59497C18.1724 7.59497 18.8342 7.65103 19.3401 7.70808C19.592 7.73648 19.803 7.76487 19.9504 7.78607C20.0241 7.79666 20.0819 7.80545 20.1208 7.81152C20.1402 7.81455 20.155 7.81691 20.1647 7.81848C20.1695 7.81926 20.1731 7.81984 20.1754 7.82022C20.1765 7.8204 20.1773 7.82054 20.1778 7.82061C20.178 7.82065 20.1782 7.82068 20.1783 7.82069C20.1783 7.8207 20.1783 7.8207 20.1783 7.8207C20.1783 7.8207 20.1783 7.82069 20.1783 7.82069C20.1782 7.82069 20.1782 7.82068 20.2604 7.32749C20.3426 6.83429 20.3426 6.83428 20.3425 6.83427C20.3425 6.83427 20.3424 6.83426 20.3424 6.83425C20.3423 6.83424 20.3422 6.83422 20.3421 6.8342C20.3418 6.83415 20.3414 6.83409 20.341 6.83402C20.3401 6.83387 20.3389 6.83367 20.3374 6.83342C20.3343 6.83291 20.3298 6.83219 20.3241 6.83127C20.3127 6.82943 20.2962 6.82679 20.2749 6.82347C20.2324 6.81683 20.1707 6.80745 20.0927 6.79624C19.9369 6.77385 19.7158 6.7441 19.4522 6.71438C18.927 6.65516 18.2244 6.59497 17.5314 6.59497V7.59497ZM19.7604 7.32749V10.3502H20.7604V7.32749H19.7604ZM20.2604 9.85018H18.7185V10.8502H20.2604V9.85018ZM18.7185 9.85018C17.8511 9.85018 17.1997 10.1239 16.7743 10.6146C16.3604 11.092 16.2237 11.7024 16.2237 12.2592H17.2237C17.2237 11.8493 17.3257 11.5052 17.5298 11.2697C17.7224 11.0476 18.0684 10.8502 18.7185 10.8502V9.85018ZM16.2237 12.2592V14.5599H17.2237V12.2592H16.2237ZM16.7237 15.0599H20.1258V14.0599H16.7237V15.0599ZM19.6317 14.4833L19.081 18.0322L20.0692 18.1855L20.6199 14.6366L19.6317 14.4833ZM19.5751 17.6088H16.7237V18.6088H19.5751V17.6088ZM16.2237 18.1088V26.366H17.2237V18.1088H16.2237ZM16.4146 26.1752H13.2148V27.1752H16.4146V26.1752ZM16.2237 26.366C16.2237 26.2606 16.3092 26.1752 16.4146 26.1752V27.1752C16.8615 27.1752 17.2237 26.8129 17.2237 26.366H16.2237ZM12.4056 26.366C12.4056 26.8129 12.7679 27.1752 13.2148 27.1752V26.1752C13.3202 26.1752 13.4056 26.2606 13.4056 26.366H12.4056Z' fill='%232b87da'/%3E%3C/svg%3E%0A")}.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_instagram_feed::before{background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='6' stroke='%232b87da' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='12' r='5' stroke='%232b87da' stroke-width='1.5'/%3E%3Ccircle cx='18.5' cy='5.75' r='1.25' fill='%232b87da'/%3E%3C/svg%3E%0A")}.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_twitter_feed::before{background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.8762 6.78846C27.9345 6.7065 27.8465 6.60094 27.7536 6.63936C27.0263 6.93989 26.26 7.15757 25.4698 7.29241C25.3632 7.31061 25.3082 7.16347 25.3956 7.09969C26.2337 6.48801 26.8918 5.63649 27.2636 4.63802C27.2958 4.55162 27.2014 4.47574 27.1212 4.52123C26.1605 5.06618 25.1092 5.45524 24.0054 5.68842C23.971 5.69568 23.9354 5.68407 23.9113 5.65844C22.9264 4.60891 21.5545 4 19.9999 4C17.0624 4 14.6624 6.4 14.6624 9.3625C14.6624 9.74071 14.702 10.109 14.7724 10.4586C14.7855 10.5235 14.7342 10.5842 14.6681 10.5803C10.3227 10.3231 6.45216 8.2421 3.84135 5.09864C3.79681 5.04501 3.71241 5.0515 3.67879 5.11257C3.26061 5.8722 3.02493 6.75115 3.02493 7.675C3.02493 9.41548 3.84362 10.9704 5.13417 11.9317C5.2141 11.9913 5.17327 12.12 5.07385 12.1129C4.32811 12.0597 3.63173 11.835 3.00827 11.5171C2.99303 11.5094 2.97493 11.5204 2.97493 11.5375V11.5375C2.97493 13.9896 4.6205 16.0638 6.86301 16.7007C6.96452 16.7295 6.96588 16.8757 6.86218 16.8953C6.25772 17.0096 5.63724 17.0173 5.0289 16.9176C4.95384 16.9052 4.89095 16.9762 4.91633 17.0479C5.26967 18.0466 5.91213 18.9192 6.7637 19.5537C7.58576 20.1661 8.56481 20.5283 9.58351 20.6001C9.67715 20.6067 9.71634 20.7266 9.64124 20.7829C7.78574 22.1744 5.52424 22.9237 3.19993 22.9125C2.91864 22.9125 2.63736 22.9015 2.35608 22.8796C2.25034 22.8714 2.20189 23.0116 2.29272 23.0664C4.58933 24.4509 7.27959 25.25 10.1499 25.25C19.9999 25.25 25.4124 17.075 25.4124 9.9875C25.4124 9.76833 25.4124 9.5598 25.4026 9.34228C25.4011 9.30815 25.4168 9.27551 25.4445 9.2555C26.3819 8.57814 27.1984 7.74079 27.8762 6.78846Z' stroke='%232b87da' stroke-width='1.25' stroke-linejoin='round'/%3E%3C/svg%3E%0A")}.et-db #et-boc .et-l .et-fb-modules-list ul>li.sb_youtube_feed::before{background-image:url("data:image/svg+xml,%3Csvg width='27' height='20' viewBox='0 0 27 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 13.3267C11 13.4037 11.0834 13.4518 11.15 13.4133L17.3377 9.83658C17.4043 9.79808 17.4043 9.70192 17.3377 9.66342L11.15 6.08673C11.0834 6.0482 11 6.0963 11 6.17331V13.3267ZM25.45 3.7125C25.6125 4.3 25.725 5.0875 25.8 6.0875C25.8875 7.0875 25.925 7.95 25.925 8.7L26 9.75C26 12.4875 25.8 14.5 25.45 15.7875C25.1375 16.9125 24.4125 17.6375 23.2875 17.95C22.7 18.1125 21.625 18.225 19.975 18.3C18.35 18.3875 16.8625 18.425 15.4875 18.425L13.5 18.5C8.2625 18.5 5 18.3 3.7125 17.95C2.5875 17.6375 1.8625 16.9125 1.55 15.7875C1.3875 15.2 1.275 14.4125 1.2 13.4125C1.1125 12.4125 1.075 11.55 1.075 10.8L1 9.75C1 7.0125 1.2 5 1.55 3.7125C1.8625 2.5875 2.5875 1.8625 3.7125 1.55C4.3 1.3875 5.375 1.275 7.025 1.2C8.65 1.1125 10.1375 1.075 11.5125 1.075L13.5 1C18.7375 1 22 1.2 23.2875 1.55C24.4125 1.8625 25.1375 2.5875 25.45 3.7125Z' stroke='%232b87da' stroke-width='1.25' stroke-linejoin='round'/%3E%3C/svg%3E%0A")}.et-db #et-boc .et-l .et_pb_module .sbi_follow_btn a{border:none;color:#fff;font-size:13px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.et-db #et-boc .et-l .et_pb_module .sbi-feed-block-cta-btn:after,.et-db #et-boc .et-l .et_pb_module .sbi-feed-block-cta-btn:before{top:10px!important}</style><link rel="preload" data-rocket-preload as="image" href="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920.jpg" imagesrcset="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920.jpg 1920w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-503x335.jpg 503w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1014x675.jpg 1014w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-768x511.jpg 768w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1536x1022.jpg 1536w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1000x666.jpg 1000w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-400x266.jpg 400w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-600x399.jpg 600w" imagesizes="(max-width: 1920px) 100vw, 1920px" fetchpriority="high">
+	<meta name="description" content="Sumar y Podemos han apoyado las movilizaciones que agricultores y ganaderos organizan estos días en España por la situación del sector, al tiempo que han" />
+	<link rel="canonical" href="https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector - Forbes España" />
+	<meta property="og:description" content="Sumar y Podemos han apoyado las movilizaciones que agricultores y ganaderos organizan estos días en España por la situación del sector, al tiempo que han" />
+	<meta property="og:url" content="https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/" />
+	<meta property="og:site_name" content="Forbes España" />
+	<meta property="article:publisher" content="https://www.facebook.com/Forbesespana" />
+	<meta property="article:published_time" content="2024-02-06T11:30:49+00:00" />
+	<meta property="article:modified_time" content="2024-02-06T11:42:09+00:00" />
+	<meta property="og:image" content="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1200x675.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="675" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Forbes España" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1200x675.jpg" />
+	<meta name="twitter:creator" content="@forbes_es" />
+	<meta name="twitter:site" content="@forbes_es" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Forbes España" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="2 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#article","isPartOf":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/"},"author":{"name":"Forbes España","@id":"https:\/\/forbes.es\/#\/schema\/person\/381b79f644dfebe8b40d699173bd20b2"},"headline":"Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector","datePublished":"2024-02-06T11:30:49+00:00","dateModified":"2024-02-06T11:42:09+00:00","mainEntityOfPage":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/"},"wordCount":371,"publisher":{"@id":"https:\/\/forbes.es\/#organization"},"image":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#primaryimage"},"thumbnailUrl":"https:\/\/forbes.es\/wp-content\/uploads\/2024\/02\/fotonoticia_20240206123049_1920.jpg","articleSection":["Economía","Última hora"],"inLanguage":"es"},{"@type":"WebPage","@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/","url":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/","name":"Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector - Forbes España","isPartOf":{"@id":"https:\/\/forbes.es\/#website"},"primaryImageOfPage":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#primaryimage"},"image":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#primaryimage"},"thumbnailUrl":"https:\/\/forbes.es\/wp-content\/uploads\/2024\/02\/fotonoticia_20240206123049_1920.jpg","datePublished":"2024-02-06T11:30:49+00:00","dateModified":"2024-02-06T11:42:09+00:00","description":"Sumar y Podemos han apoyado las movilizaciones que agricultores y ganaderos organizan estos días en España por la situación del sector, al tiempo que han","breadcrumb":{"@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#primaryimage","url":"https:\/\/forbes.es\/wp-content\/uploads\/2024\/02\/fotonoticia_20240206123049_1920.jpg","contentUrl":"https:\/\/forbes.es\/wp-content\/uploads\/2024\/02\/fotonoticia_20240206123049_1920.jpg","width":1920,"height":1278},{"@type":"BreadcrumbList","@id":"https:\/\/forbes.es\/ultima-hora\/407159\/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/forbes.es\/"},{"@type":"ListItem","position":2,"name":"Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector"}]},{"@type":"WebSite","@id":"https:\/\/forbes.es\/#website","url":"https:\/\/forbes.es\/","name":"Forbes España","description":"Nada personal, sólo negocios","publisher":{"@id":"https:\/\/forbes.es\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/forbes.es\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https:\/\/forbes.es\/#organization","name":"Forbes","url":"https:\/\/forbes.es\/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https:\/\/forbes.es\/#\/schema\/logo\/image\/","url":"https:\/\/forbes.es\/wp-content\/uploads\/2017\/10\/forbes_negro.png","contentUrl":"https:\/\/forbes.es\/wp-content\/uploads\/2017\/10\/forbes_negro.png","width":438,"height":115,"caption":"Forbes"},"image":{"@id":"https:\/\/forbes.es\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/Forbesespana","https:\/\/x.com\/forbes_es","https:\/\/www.instagram.com\/forbes_es\/","https:\/\/www.linkedin.com\/company\/2834944?trk=tyah&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;trkInfo=tarId:1400500319790,tas:forbes es,idx:2-1-6","https:\/\/www.youtube.com\/user\/forbesespana\/"]},{"@type":"Person","@id":"https:\/\/forbes.es\/#\/schema\/person\/381b79f644dfebe8b40d699173bd20b2","name":"Forbes España","url":"https:\/\/forbes.es\/author\/forbesep\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Forbes España &raquo; Feed" href="https://forbes.es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Forbes España &raquo; Feed de los comentarios" href="https://forbes.es/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://forbes.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F&#038;lang=es" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://forbes.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F&#038;format=xml&#038;lang=es" />
+<style id="wp-img-auto-sizes-contain-inline-css"></style>
+
+
+
+<style id="wp-emoji-styles-inline-css"></style>
+<style id="wp-block-library-inline-css"></style>
+<style id="classic-theme-styles-inline-css"></style>
+
+<style id="global-styles-inline-css"></style>
+
+
+
+
+
+<script id="jquery-core-js" src="https://forbes.es/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<link rel="https://api.w.org/" href="https://forbes.es/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://forbes.es/wp-json/wp/v2/posts/407159" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://forbes.es/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://forbes.es/?p=407159' />
+<link rel="icon" href="https://forbes.es/wp-content/uploads/2024/07/cropped-logo-forbes-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://forbes.es/wp-content/uploads/2024/07/cropped-logo-forbes-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://forbes.es/wp-content/uploads/2024/07/cropped-logo-forbes-180x180.png" />
+<meta name="msapplication-TileImage" content="https://forbes.es/wp-content/uploads/2024/07/cropped-logo-forbes-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">#cff .cff-author-img{--wpr-bg-69f1a7b3-c176-4c5a-b8c9-e54d5d6b35c9: url('https://forbes.es/wp-content/plugins/custom-facebook-feed/assets/img/cff-avatar.png');}.sbi_lb-loader span{--wpr-bg-21138faa-9a98-4f47-93c2-c625116a7abf: url('https://forbes.es/wp-content/plugins/instagram-feed/img/sbi-sprite.png');}.sbi_lb-nav span{--wpr-bg-a3ae68b3-056b-428c-8bd5-1d68d1110de9: url('https://forbes.es/wp-content/plugins/instagram-feed/img/sbi-sprite.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":"#cff .cff-author-img","style":"#cff .cff-author-img{--wpr-bg-69f1a7b3-c176-4c5a-b8c9-e54d5d6b35c9: url('https:\/\/forbes.es\/wp-content\/plugins\/custom-facebook-feed\/assets\/img\/cff-avatar.png');}","hash":"69f1a7b3-c176-4c5a-b8c9-e54d5d6b35c9","url":"https:\/\/forbes.es\/wp-content\/plugins\/custom-facebook-feed\/assets\/img\/cff-avatar.png"},{"selector":".sbi_lb-loader span","style":".sbi_lb-loader span{--wpr-bg-21138faa-9a98-4f47-93c2-c625116a7abf: url('https:\/\/forbes.es\/wp-content\/plugins\/instagram-feed\/img\/sbi-sprite.png');}","hash":"21138faa-9a98-4f47-93c2-c625116a7abf","url":"https:\/\/forbes.es\/wp-content\/plugins\/instagram-feed\/img\/sbi-sprite.png"},{"selector":".sbi_lb-nav span","style":".sbi_lb-nav span{--wpr-bg-a3ae68b3-056b-428c-8bd5-1d68d1110de9: url('https:\/\/forbes.es\/wp-content\/plugins\/instagram-feed\/img\/sbi-sprite.png');}","hash":"a3ae68b3-056b-428c-8bd5-1d68d1110de9","url":"https:\/\/forbes.es\/wp-content\/plugins\/instagram-feed\/img\/sbi-sprite.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.24" data-wpr-features="wpr_lazyload_css_bg_img wpr_remove_unused_css wpr_defer_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_automatic_lazy_rendering wpr_oci wpr_cdn wpr_preload_links wpr_desktop" /></head>
+
+<body class="wp-singular post-template post-template-single-feature post-template-single-feature-php single single-post postid-407159 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-tapasmagazine23 cat-32697-id cat-32696-id">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-NSPH26P
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div  id="page" class="site ">
+
+            <span id="sidebar-background"></span>
+        <a class="skip-link screen-reader-text"
+           href="#primary">Saltar al contenido</a>
+        <div  class="bannerheader">
+            <header  id="masthead" class="site-header site-header--centrado">
+                <div class="container site-header__container">
+
+                    <div class="site-header--branding">
+
+    <button id="nav-icon"  class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"
+            onclick="openNav()" aria-label="Desplegar menú">
+        <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                <g id="burguer" transform="translate(1.5, 0.5)" stroke="#000000" stroke-width="2">
+                    <line x1="0" y1="0.5" x2="22" y2="0.5" id="Path"></line>
+                    <line x1="0" y1="8.5" x2="22" y2="8.5" id="Path"></line>
+                    <line x1="0" y1="16.5" x2="22" y2="16.5" id="Path"></line>
+                </g>
+            </g>
+        </svg>
+    </button>
+
+    <div class="site-branding">
+                    <p class="site-title">
+                        <a href="https://forbes.es/" rel="home">
+                    <img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/forbes-logoweb.png" alt="Forbes España" width="131" height="33.63" />
+                </a>
+                    </p>
+            </div><!-- .site-branding -->
+
+    <button class="search-toggle mobile">
+        <svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="search" transform="translate(1.25, 1.3565)" stroke="#000000" stroke-width="2">
+                    <ellipse id="Oval" cx="4.5" cy="4.75" rx="4.5" ry="4.75"></ellipse>
+                    <line x1="11.25" y1="11.87495" x2="7.875" y2="8.31245" id="Path" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </svg>
+    </button>
+</div>
+
+
+                    <div id="sidebar-navigation" class="sidebar-navigation">
+                        <button class="closebtn" onclick="closeNav()" aria-label="Cerrar menú">&times;</button>
+                        <div class="menu-main-menu-container"><ul id="sidebar-menu" class="menu"><li id="menu-item-927905" class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927905"><a href="https://forbes.es/seccion/listas/">Listas</a></li>
+<li id="menu-item-927902" class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-927902"><a href="https://forbes.es/seccion/ultima-hora/economia-ultima-hora/">Economía</a></li>
+<li id="menu-item-927903" class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927903"><a href="https://forbes.es/seccion/empresas/">Empresas</a></li>
+<li id="menu-item-894677" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-894677"><a href="https://forbes.es/seccion/forbes-funds/">Funds</a></li>
+<li id="menu-item-334343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-334343"><a target="_blank" href="https://forbeswomen.es/">Women</a></li>
+<li id="menu-item-399849" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-399849"><a target="_blank" href="https://forbestravel.es/">Travel</a></li>
+<li id="menu-item-906825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-906825"><a target="_blank" href="https://forbeshealth.es/">Health</a></li>
+<li id="menu-item-916047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-916047"><a href="https://forbes.es/forbes-summit/">Summit</a></li>
+<li id="menu-item-910028" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910028"><a target="_blank" href="https://forbesbaleares.es/">Baleares</a></li>
+<li id="menu-item-927904" class="solomovil menu-item menu-item-type-custom menu-item-object-custom menu-item-927904"><a href="https://spainmedia.es/tienda/">Tienda</a></li>
+<li id="menu-item-895668" class="primera-logo menu-item menu-item-type-taxonomy menu-item-object-category menu-item-895668"><a href="https://forbes.es/seccion/best-content-creators/"><img src="https://forbes.es/wp-content/uploads/2026/08/bet-content-creators.png" width="120" height="16.5" alt="Best Content Creators" style="margin-top: -2px"  /></a></li>
+<li id="menu-item-990825" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-990825"><a href="https://forbes.es/seccion/forbes-30-under-30/"><img src="https://forbes.es/wp-content/uploads/2024/06/web-logo-menu-30under30.png" width="120" height="16.5" alt="Forbes 30 under 30" style="margin-top: -2px"  /></a></li>
+<li id="menu-item-881996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-881996"><a href="https://namnamfestival.com/"><img src="https://forbes.es/wp-content/uploads/2026/02/logo-fino.png" alt="ÑanÑam" width="100" height="22" style="margin-top: -6px" /></a></li>
+<li id="menu-item-146266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146266"><a href="https://nautikmagazine.es/"><img src="https://forbes.es/wp-content/uploads/2025/03/Logo-Nuevo_Todo-x4-blanco.png" width="70" height="16" alt="Nautik Magazine" style="margin-top: -5px"  /></a></li>
+<li id="menu-item-107631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107631"><a href="https://www.tapasmagazine.es/" title="Tapas Magazine"><img src="https://forbes.es/wp-content/uploads/2021/07/tapas.png" width="60" height="18" alt="Tapas Magazine" /></a></li>
+</ul></div>
+                                                        <div class="menu-ultima-portada">
+                                    <p>Último número</p>
+                                    <a href="https://spainmedia.es/tienda/" title="Último número" target="_blank" rel="noopener noreferrer">                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201458%201910'%3E%3C/svg%3E"
+                                         width="1458"
+                                         height="1910"
+                                         alt="Último número" data-lazy-src="https://forbes.es/wp-content/uploads/2026/03/03_Tienda_N137-copia.jpg"/><noscript><img src="https://forbes.es/wp-content/uploads/2026/03/03_Tienda_N137-copia.jpg"
+                                         width="1458"
+                                         height="1910"
+                                         alt="Último número"/></noscript>
+                                    </a>                                </div><!-- / .menu-ultima-portada -->
+                                        <div  class="mostrar-redes">
+            <ul style="justify-content: center;">
+                <li>
+                    <a href="https://twitter.com/forbes_es" title="Forbes Twitter" target="_blank" rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2014'%3E%3C/svg%3E"
+                                                                 alt="X Forbes" width="15.49" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-x-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-x-14.svg"
+                                                                 alt="X Forbes" loading="lazy" width="15.49" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/forbes_es/" title="Forbes Instagram" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2013%2014'%3E%3C/svg%3E"
+                             alt="Instagram Forbes" width="13.09" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-instagram-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-instagram-14.svg"
+                             alt="Instagram Forbes" loading="lazy" width="13.09" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Forbesespana" title="Forbes Facebook" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%207%2014'%3E%3C/svg%3E"
+                             alt="Facebook Forbes" width="7" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-facebook-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-facebook-14.svg"
+                             alt="Facebook Forbes" loading="lazy" width="7" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/2834944?trk=tyah&trkInfo=tarId:1400500319790,tas:forbes%20es,idx:2-1-6" title="Forbes Linkedin" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2014%2014'%3E%3C/svg%3E"
+                             alt="Linkedin orbes" width="14" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-linkedin.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-linkedin.svg"
+                             alt="Linkedin orbes" loading="lazy" width="14" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCEyxneAaACuR0lfDagrWjjg" title="Forbes YouTube" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2019%2014'%3E%3C/svg%3E"
+                             alt="YouTube Forbes" width="19.91" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-youtube-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-youtube-14.svg"
+                             alt="YouTube Forbes" loading="lazy" width="19.91" height="14" /></noscript>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	                    </div><!-- / .sidebar-navigation -->
+
+
+                </div><!-- / .container -->
+
+                <nav id="site-navigation" class="main-navigation">
+                    <div  class="container"><ul id="primary-menu" class="menu"><li class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927905"><a href="https://forbes.es/seccion/listas/">Listas</a></li>
+<li class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-927902"><a href="https://forbes.es/seccion/ultima-hora/economia-ultima-hora/">Economía</a></li>
+<li class="solomovil menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927903"><a href="https://forbes.es/seccion/empresas/">Empresas</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-894677"><a href="https://forbes.es/seccion/forbes-funds/">Funds</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-334343"><a target="_blank" href="https://forbeswomen.es/">Women</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-399849"><a target="_blank" href="https://forbestravel.es/">Travel</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-906825"><a target="_blank" href="https://forbeshealth.es/">Health</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-916047"><a href="https://forbes.es/forbes-summit/">Summit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910028"><a target="_blank" href="https://forbesbaleares.es/">Baleares</a></li>
+<li class="solomovil menu-item menu-item-type-custom menu-item-object-custom menu-item-927904"><a href="https://spainmedia.es/tienda/">Tienda</a></li>
+<li class="primera-logo menu-item menu-item-type-taxonomy menu-item-object-category menu-item-895668"><a href="https://forbes.es/seccion/best-content-creators/"><img src="https://forbes.es/wp-content/uploads/2026/08/bet-content-creators.png" width="120" height="16.5" alt="Best Content Creators" style="margin-top: -2px"  /></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-990825"><a href="https://forbes.es/seccion/forbes-30-under-30/"><img src="https://forbes.es/wp-content/uploads/2024/06/web-logo-menu-30under30.png" width="120" height="16.5" alt="Forbes 30 under 30" style="margin-top: -2px"  /></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-881996"><a href="https://namnamfestival.com/"><img src="https://forbes.es/wp-content/uploads/2026/02/logo-fino.png" alt="ÑanÑam" width="100" height="22" style="margin-top: -6px" /></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146266"><a href="https://nautikmagazine.es/"><img src="https://forbes.es/wp-content/uploads/2025/03/Logo-Nuevo_Todo-x4-blanco.png" width="70" height="16" alt="Nautik Magazine" style="margin-top: -5px"  /></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107631"><a href="https://www.tapasmagazine.es/" title="Tapas Magazine"><img src="https://forbes.es/wp-content/uploads/2021/07/tapas.png" width="60" height="18" alt="Tapas Magazine" /></a></li>
+</ul></div>                </nav>
+
+            </header><!-- #masthead -->
+	        
+
+<div  class="publicidad publicidad--mega publicidad--top">
+    <div  class="container">
+	    <section id="block-12" class="widget widget_block"><div id="div-gpt-ad-1647279218089-1" style="min-width: 320px; min-height: 50px;">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1647279218089-1'); });
+  </script>
+</div></section>    </div>
+</div>
+        </div><!-- / .bannerheader -->
+
+        <div  class="search-block">
+            <div class="container">
+                <form role="search" method="get" class="search-form" action="https://forbes.es/">
+				<label>
+					<span class="screen-reader-text">Buscar:</span>
+					<input type="search" class="search-field" placeholder="Buscar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Buscar" />
+			</form>                <span class="icon-close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 640 640">
+                            <path fill="#FFF"
+                                  d="M320 274.752l-226.272-226.272-45.248 45.248 226.272 226.272-226.272 226.272 45.248 45.248 226.272-226.272 226.272 226.272 45.248-45.248-226.272-226.272 226.272-226.272-45.248-45.248-226.272 226.272z"></path>
+                        </svg>
+
+                        </span>
+            </div><!-- / .container -->
+        </div><!-- / .search-block -->
+    
+    <div  class="container" style="position: relative;">
+                    <div id='div-gpt-ad-lat-izq' style="position: absolute;min-width: 300px;min-height: 600px;background-color: #fafafa;right: 100%;top: 0;margin-right: 20px;text-align:right;">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-lat-izq'); });
+                </script>
+            </div>
+                <main  id="primary" class="site-main">
+            <article id="post-407159" class="post-407159 post type-post status-publish format-standard has-post-thumbnail hentry category-economia-ultima-hora category-ultima-hora cat-32697-id cat-32696-id">
+
+    <header class="entry-header" data-url="https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/"
+            data-title="Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector">
+
+		                    <a class="post-categoria"
+                       href="https://forbes.es/seccion/ultima-hora/economia-ultima-hora/"
+                       title="Economía">
+						Economía                    </a>
+				<h1 class="entry-title">Sumar y Podemos apoyan a los agricultores y exigen que se eviten las ventas a pérdidas en el sector</h1>
+		
+		        <div class="redes-articulo">
+            <ul>
+                <li>
+                    <a class="facebook" title="Compartir con Facebook"
+                       href="http://www.facebook.com/sharer.php?t=Sumar+y+Podemos+apoyan+a+los+agricultores+y+exigen+que+se+eviten+las+ventas+a+p%C3%A9rdidas+en+el+sector&u=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F"
+                       target="blank" rel="noopener noreferrer">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                             viewBox="0 0 512 512">
+                            <path d="M304 96h80v-96h-80c-61.757 0-112 50.243-112 112v48h-64v96h64v256h96v-256h80l16-96h-96v-48c0-8.673 7.327-16 16-16z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="twitter" title="Compatir con X"
+                       href="https://x.com/intent/post?text=Sumar+y+Podemos+apoyan+a+los+agricultores+y+exigen+que+se+eviten+las+ventas+a+p%C3%A9rdidas+en+el+sector&url=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F"
+                       target="_blank" rel="noopener noreferrer">
+                        <svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="x" transform="translate(0.254, 0.25)" fill="#000000" fill-rule="nonzero">
+                                    <path d="M13.0692308,0 L15.6138462,0 L10.0546154,6.35384615 L16.5946154,15 L11.4738462,15 L7.46307692,9.75615385 L2.87384615,15 L0.327692308,15 L6.27384615,8.20384615 L0,0 L5.25076923,0 L8.87615385,4.79307692 L13.0692308,0 Z M12.1761538,13.4769231 L13.5861538,13.4769231 L4.48461538,1.44307692 L2.97153846,1.44307692 L12.1761538,13.4769231 Z"
+                                          id="Shape"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="linkedin" title="Compartir con LinkedIn"
+                       href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F"
+                       target="_blank" data-name="Linkedin" aria-label="Compartir en Linkedin" data-action="share"
+                       rel="nofollow noopener noreferrer">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                             viewBox="0 0 512 512">
+                            <path d="M192 192h88.553v45.391h1.266c12.32-22.097 42.479-45.391 87.421-45.391 93.473 0 110.76 58.188 110.76 133.867v154.133h-92.305v-136.639c0-32.592-0.667-74.513-48.014-74.513-48.074 0-55.41 35.493-55.41 72.146v139.006h-92.271v-288z"></path>
+                            <path d="M32 192h96v288h-96v-288z"></path>
+                            <path d="M128 112c0 26.51-21.49 48-48 48s-48-21.49-48-48c0-26.51 21.49-48 48-48s48 21.49 48 48z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="movil">
+                    <a class="whatsapp" title="Compartir en Whatsapp"
+                       href="whatsapp://send?text=https%3A%2F%2Fforbes.es%2Fultima-hora%2F407159%2Fsumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector%2F%3Fssm%3Dwhatsapp"
+                       data-action="share/whatsapp/share">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                             viewBox="0 0 512 512">
+                            <path d="M436.5 74.4c-47.9-48-111.6-74.4-179.5-74.4-139.8 0-253.6 113.8-253.6 253.7 0 44.7 11.7 88.4 33.9 126.8l-36 131.5 134.5-35.3c37.1 20.2 78.8 30.9 121.2 30.9h0.1c0 0 0 0 0 0 139.8 0 253.7-113.8 253.7-253.7 0-67.8-26.4-131.5-74.3-179.5zM257.1 464.8v0c-37.9 0-75-10.2-107.4-29.4l-7.7-4.6-79.8 20.9 21.3-77.8-5-8c-21.2-33.5-32.3-72.3-32.3-112.2 0-116.3 94.6-210.9 211-210.9 56.3 0 109.3 22 149.1 61.8 39.8 39.9 61.7 92.8 61.7 149.2-0.1 116.4-94.7 211-210.9 211zM372.7 306.8c-6.3-3.2-37.5-18.5-43.3-20.6s-10-3.2-14.3 3.2c-4.2 6.3-16.4 20.6-20.1 24.9-3.7 4.2-7.4 4.8-13.7 1.6s-26.8-9.9-51-31.5c-18.8-16.8-31.6-37.6-35.3-43.9s-0.4-9.8 2.8-12.9c2.9-2.8 6.3-7.4 9.5-11.1s4.2-6.3 6.3-10.6c2.1-4.2 1.1-7.9-0.5-11.1s-14.3-34.4-19.5-47.1c-5.1-12.4-10.4-10.7-14.3-10.9-3.7-0.2-7.9-0.2-12.1-0.2s-11.1 1.6-16.9 7.9c-5.8 6.3-22.2 21.7-22.2 52.9s22.7 61.3 25.9 65.6c3.2 4.2 44.7 68.3 108.3 95.7 15.1 6.5 26.9 10.4 36.1 13.4 15.2 4.8 29 4.1 39.9 2.5 12.2-1.8 37.5-15.3 42.8-30.1s5.3-27.5 3.7-30.1c-1.5-2.8-5.7-4.4-12.1-7.6z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	
+    </header><!-- .entry-header -->
+
+	        <div class="post-thumbnail">
+            
+		
+            <figure class="post-thumbnail">
+				<img width="1920" height="1278" src="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920.jpg 1920w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-503x335.jpg 503w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1014x675.jpg 1014w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-768x511.jpg 768w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1536x1022.jpg 1536w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-1000x666.jpg 1000w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-400x266.jpg 400w, https://forbes.es/wp-content/uploads/2024/02/fotonoticia_20240206123049_1920-600x399.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px" />				            </figure><!-- .post-thumbnail -->
+
+				        </div>
+    	        <div class="entry-meta">
+			<span class="byline"> por <span class="author vcard"><a class="url fn n" href="https://forbes.es/author/forbesep/">Forbes España</a></span></span><span class="posted-on"><time class="entry-date published" datetime="2024-02-06T12:30:49+01:00">6 febrero 2024</time><time class="updated" datetime="2024-02-06T12:42:09+01:00">6 febrero 2024</time></span><span class="reading-time">Tiempo de lectura 2 minutos</span>        </div><!-- .entry-meta -->
+	
+	        <div class="publicidad" style="margin: 12px 0 30px; display: flex; justify-content: center;">
+            <div id='div-gpt-ad-1647279218089-6' style='min-width: 300px; min-height: 90px;'>
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1647279218089-6'); });
+                </script>
+            </div>
+        </div>
+		
+    <div class="content-wrapper">
+        <div class="entry-content">
+
+
+            <p>Sumar y Podemos han apoyado las movilizaciones que agricultores y ganaderos organizan estos días en España por la situación del sector, al tiempo que han exigido que se cumpla la ley de cadena alimentaria para que, entre otras cosas, no se vendan productos por debajo de su coste. </p>
+<p>   Tanto la portavoz adjunta de Sumar, Aina Vidal, como la portavoz de Podemos, Ione Belarra, han refrendado las protestas del sector primario este martes en el Congreso. </p>
+<p>   En primera instancia, Vidal cree que el malestar del campo «está plenamente justificado», pues el sector primario «está absolutamente ahogado». «Necesitan intervención pública en forma de ayudas, en forma de garantías y en forma de protección», ha apostillado la también dirigente de En Comú Podem. </p>
+<p>   En esta línea, Aina Vidal ha instado a que al sector agrario no se le deje al «albur» de los mercados de grandes empresas y a que se cumplan las leyes, sobre todo la de la cadena alimentaria, que es la que prohíbe que se vendan productos del campo por debajo de su coste de producción. </p>
+<p>LA LEY DE LA CADENA ALIMENTARIA «NO ESTÁ FUNCIONANDO»</p>
+<p>   Y es que, a juicio de la portavoz adjunta del grupo plurinacional, la ley «no está funcionando». La líder de Podemos, Ione Belarra, se ha sumado a esta reivindicación sobre la ley de la cadena alimentaria.</p>
+<p>   En opinión de Belarra, la norma se tiene que cumplir porque «no tiene mucho sentido» que se exija a la producción local una serie de criterios medioambientales y sanitarios que aunque «correctos» son «muy exigentes», mientras que a través de los acuerdos de libre comercio se abra la puerta a productos de otros países «que no cumplen con esos mismos criterios». </p>
+<p>   «Lo que están planteando es de una enorme sensatez y creo que el Gobierno debería escuchar con atención precisamente porque este problema, el de la soberanía alimentaria, cada vez va a tener un peso mayor en España», ha zanjado Belarra en rueda de prensa en el Congreso.</p>
+
+			
+        </div><!-- .entry-content -->
+
+		
+<aside id="secondary" class="widget-area">
+	<section id="block-11" class="widget widget_block"><div id='div-gpt-ad-1721650946395-0' style='min-width: 300px; min-height: 600px;' class="roba1">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1721650946395-0'); });
+  </script>
+</div></section><section id="block-3" class="widget widget_block"><div id='div-gpt-ad-1721651404364-0' style='min-width: 300px; min-height: 600px;' class="roba2">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1721651404364-0'); });
+  </script>
+</div></section></aside><!-- #secondary -->
+    </div><!-- / .content-wrapper -->
+	        <div class="publicidad" style="margin: 12px 0 30px; display: flex; justify-content: center;">
+            <div id='div-gpt-ad-1647279218089-7' style='min-width: 300px; min-height: 90px;'>
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1647279218089-7'); });
+                </script>
+            </div>
+        </div>
+			</article><!-- #post-407159 -->
+
+        </main><!-- #main -->
+                          <div id='div-gpt-ad-lat-der' style="position: absolute;min-width: 300px;min-height: 600px;background-color: #fafafa;left: 100%;top: 0;margin-left: 20px;">
+                    <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-lat-der'); });
+                    </script>
+                </div>
+                </div><!-- / .container -->
+
+<div class="container">
+    <div  class="publicidad publicidad--mega publicidad--footer">
+	    <section id="block-6" class="widget widget_block"><div id="div-gpt-ad-1647279218089-4" style="min-width: 320px; min-height: 50px;">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1647279218089-4'); });
+  </script>
+</div></section>    </div>
+</div>
+<footer  id="colophon" class="site-footer">
+
+    <!--
+	<div class="footer-formulario" style="max-width: 400px; margin: 40px auto;">
+		<script type="text/javascript" src="https://clientify.net/web-marketing/webforms/script/76150.js"></script>
+	</div>
+	-->
+
+    <a class="logo-spainmedia" title="SpainMedia" href="https://www.spainmedia.es/" target="_blank"
+       rel="noopener noreferrer" style="max-width:inherit;">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20270%2051'%3E%3C/svg%3E" width="270" height="51"
+             alt="SpainMedia logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Spainmedia.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Spainmedia.png" width="270" height="51"
+             loading="lazy" alt="SpainMedia logo"/></noscript>
+    </a>
+
+    <ul class="logos-enlaces">
+        <li>
+            <a class="logo-newsroom" title="The Newsroom" href="https://www.the-newsroom.net/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20240%2020'%3E%3C/svg%3E" width="240"
+                     height="20.25" alt="The Newsroom Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_The_Newsroom.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_The_Newsroom.png" width="240"
+                     height="20.25" loading="lazy" alt="The Newsroom Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-namnam" title="Ñam Ñam" href="https://namnamfestival.com/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2020'%3E%3C/svg%3E" width="140"
+                     height="20.25" alt="Forbes Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_namnam.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_namnam.png" width="140"
+                     height="20.25" loading="lazy" alt="Forbes Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-highxtar" title="Highxtar" href="https://highxtar.com" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20168%2020'%3E%3C/svg%3E" width="168" height="20.25"
+                     alt="Highxtar Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Highxtar.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Highxtar.png" width="168" height="20.25"
+                     loading="lazy" alt="Highxtar Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-nautik" title="Nautik" href="https://nautikmagazine.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2040'%3E%3C/svg%3E" width="100" height="40.35"
+                     alt="Nautikmagazine Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Nautik.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Nautik.png" width="100" height="40.35"
+                     loading="lazy" alt="Nautikmagazine Logo"/></noscript>
+            </a>
+        </li>
+    </ul>
+    <ul class="logos-enlaces">
+        <li>
+            <a class="logo-tapas" title="Tapas Magazine" href="https://www.tapasmagazine.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2066%2020'%3E%3C/svg%3E" width="66" height="20.25" style="margin-top: 7px;"
+                     alt="Tapas Magazine Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Tapas.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/2026_Tapas.png" width="66" height="20.25" style="margin-top: 7px;"
+                     loading="lazy" alt="Tapas Magazine Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-forbes" title="Forbes" href="https://www.forbes.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2080%2020'%3E%3C/svg%3E" width="80"
+                     height="20.25" alt="Forbes Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbes-logofooter.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbes-logofooter.png" width="80"
+                     height="20.25" loading="lazy" alt="Forbes Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-FWomen" title="Forbes Travel" href="https://forbeswomen.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20178%2020'%3E%3C/svg%3E" width="178" height="20.25"
+                     alt="Forbes Women Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbeswomen-logofooter.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbeswomen-logofooter.png" width="178" height="20.25"
+                     loading="lazy" alt="Forbes Women Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-ftravel" title="Forbes Travel" href="https://forbestravel.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20154%2020'%3E%3C/svg%3E" width="154" height="20.25"
+                     alt="Forbes Travel Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbestravel-logofooter.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbestravel-logofooter.png" width="154" height="20.25"
+                     loading="lazy" alt="Forbes Travel Logo"/></noscript>
+            </a>
+        </li>
+    </ul>
+    <ul class="logos-enlaces">
+        <li>
+            <a class="logo-FHouse" title="Forbes House" href="https://forbeshouse.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20164%2020'%3E%3C/svg%3E" width="164" height="20.25"
+                     alt="Forbes House Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbeshouse-logofooter.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbeshouse-logofooter.png" width="164" height="20.25"
+                     loading="lazy" alt="Forbes House Logo"/></noscript>
+            </a>
+        </li>
+        <li>
+            <a class="logo-FBaleares" title="Forbes Baleares" href="https://forbesbaleares.es/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20164%2020'%3E%3C/svg%3E" width="164" height="20.25"
+                     alt="Forbes Baleares Logo" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbesbaleares-logofooter.png"/><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/logos/forbesbaleares-logofooter.png" width="164" height="20.25"
+                     loading="lazy" alt="Forbes Baleares Logo"/></noscript>
+            </a>
+        </li>
+    </ul>
+	        <div class="mostrar-redes">
+            <ul style="justify-content: center;">
+                <li>
+                    <a href="https://twitter.com/forbes_es" title="Forbes Twitter" target="_blank" rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2014'%3E%3C/svg%3E"
+                                                                 alt="X Forbes" width="15.49" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-x-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-x-14.svg"
+                                                                 alt="X Forbes" loading="lazy" width="15.49" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/forbes_es/" title="Forbes Instagram" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2013%2014'%3E%3C/svg%3E"
+                             alt="Instagram Forbes" width="13.09" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-instagram-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-instagram-14.svg"
+                             alt="Instagram Forbes" loading="lazy" width="13.09" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Forbesespana" title="Forbes Facebook" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%207%2014'%3E%3C/svg%3E"
+                             alt="Facebook Forbes" width="7" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-facebook-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-facebook-14.svg"
+                             alt="Facebook Forbes" loading="lazy" width="7" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/2834944?trk=tyah&trkInfo=tarId:1400500319790,tas:forbes%20es,idx:2-1-6" title="Forbes Linkedin" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2014%2014'%3E%3C/svg%3E"
+                             alt="Linkedin orbes" width="14" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-linkedin.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-linkedin.svg"
+                             alt="Linkedin orbes" loading="lazy" width="14" height="14" /></noscript>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCEyxneAaACuR0lfDagrWjjg" title="Forbes YouTube" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2019%2014'%3E%3C/svg%3E"
+                             alt="YouTube Forbes" width="19.91" height="14" data-lazy-src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-youtube-14.svg" /><noscript><img src="https://forbes.es/wp-content/themes/tapasmagazine23/images/redes-youtube-14.svg"
+                             alt="YouTube Forbes" loading="lazy" width="19.91" height="14" /></noscript>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	    <div data-wpr-lazyrender="1" class="copy">
+        <div class="container">
+            <p>&copy; 2026 Forbes España. Todos los derechos reservados. - </p>
+			<div class="menu-footer-menu-container"><ul id="legal-menu" class="menu"><li id="menu-item-97601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97601"><a href="https://forbes.es/aviso-legal/">Aviso legal</a></li>
+<li id="menu-item-97602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-97602"><a rel="privacy-policy" href="https://forbes.es/politica-de-privacidad/">Política de privacidad</a></li>
+<li id="menu-item-584595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584595"><a href="https://forbes.es/terminos-y-condiciones-para-el-registro-y-uso-del-sitio-web/">Términos y condiciones para el registro y uso del sitio web</a></li>
+<li id="menu-item-97603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97603"><a href="https://forbes.es/politica-de-cookies/">Política de cookies</a></li>
+</ul></div>        </div><!-- / .container -->
+    </div><!-- / .copy -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/tapasmagazine23/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Custom Facebook Feed JS -->
+<script type="text/javascript">var cffajaxurl = "https://forbes.es/wp-admin/admin-ajax.php";
+var cfflinkhashtags = "true";
+</script>
+        <div  id="sticky-ad-lightweight-container-bottom-1" data-sticky-ad-key="b6ae400041bb0cea983a5e52f0c24cb7" class="sticky-ad-lightweight-container sticky-ad-bottom" style="--sticky-ad-desktop-height:100px;--sticky-ad-mobile-height:100px;">
+            <div  class="sticky-ad-wrap">
+                                <div  class="sticky-ad-content">
+                    <!-- /143274330/dfp_forbes/fbs_sticky-->
+<div id='div-gpt-ad-1647279218089-5' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1647279218089-5'); });
+  </script>
+</div>                </div>
+                                    <div  class="sticky-ad-close">
+                        <button type="button" class="sticky-ad-close-btn" aria-label="Cerrar anuncio">
+                            <span class="sticky-ad-close-text">Cerrar</span>                        </button>
+                    </div>
+                            </div>
+        </div>
+        <!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://forbes.es/wp-admin/admin-ajax.php";
+</script>
+<script id="sticky-ad-lightweight-script-js-extra">
+var stickyAdOptions = {"autoHideDelay":"0","displayDelay":"0","dismissalDuration":"page","dismissalHours":"24","analyticsEnabled":"","measurementId":"","analyticsAdId":"","impressionEvent":"sticky_ad_impression","closeEvent":"sticky_ad_close"};
+//# sourceURL=sticky-ad-lightweight-script-js-extra
+</script>
+<script id="sticky-ad-lightweight-script-js" src="https://forbes.es/wp-content/plugins/sticky-ad-lightweight/js/sticky-ad-lightweight.js?ver=3.5.1" data-rocket-defer defer></script>
+<script id="cffscripts-js" src="https://forbes.es/wp-content/plugins/custom-facebook-feed/assets/js/cff-scripts.min.js?ver=4.15.1" data-rocket-defer defer></script>
+<script id="pll_cookie_script-js-after">
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=es; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+
+//# sourceURL=pll_cookie_script-js-after
+</script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/suscripcion-a-la-newsletter/|/30-under-30-formulario/|/empresas/499273/forbes-ubs-sustainability-awards-2024/|/forbes-credit-suisse-sustainability-awards/|/30-under-30/|/newsletter-andres-rodriguez/|/quiz-summit/|/my-account/|/mejores-colegios-cuestionario/|/best-ceo-2024/|/ia-revolution-iii-hacia-una-convergencia-humano-ia/|/forbes-startups-2025/|/summit/|/summit/|/mejores-postgrados-cuestionario/|/graduados-y-jovenes-profesionales-2025/|/alta-direccion-2025-cuestionario/|/programas-ejecutivos-2025-cuestionario/|/mba-2025-cuestionario/|/mejores-universidades-cuestionario/|/summit/forbes-healthcare-summit/|/summit/forbes-artificial-intelligence-summit-2025/|/formularo-forbes-summit-ia/|/summit/forbes-catalonia-economic-summit/|/summit/forbes-catalonia-economic-summit-cat/|/summit/forbes-sustainable-summit-2025/|/forbes-summit/forbes-sustainable-summit-2025/|/the-next-episode-omnichannel/|/inscribete-en-los-forbes-ubs-sustainability-awards-2025/|/humanx-liderazgo-exponencial/|/empresas/761680/inscribete-en-los-forbes-ubs-sustainability-awards-2025/|/forbes-summit/forbes-spain-economic-summit-2025/|/forbestravel-newsletter/|/forbes-ai-forward-summit-2025/|/forbes-women-of-influence-spain-2025/|/forbes-illes-balears-tourism-summit-2025/|/forbes-cmo-summit-2025/|/forbes-travel-summit-2025/|/forbes-canary-islands-economic-summit/|/forbes-tenerife-innovation-tourism-summit-2026/|/forbes-healthcare-summit-2026/|/graduados-y-jovenes-profesionales-2026/|/alta-direccion-2026-cuestionario/|/programas-ejecutivos-2026-cuestionario/|/mba-2026-cuestionario/|/ia-revolution-iv/|/forbes-the-50-ai-power-leaders/|/forbes-the-50-ai-marketing-leaders/|/forbes-sustainability-summit-2026/|/forbes-catalonia-economic-summit-2026/|/forbes-ceuta-tech-summit/|/forbes-best-cio-2026/|/inscribete-en-los-forbes-ubs-sustainability-awards-2026/|/forbes-agro-food-summit-2026/|/best-content-creators/991364/forbes-best-content-creators-2026-vota-a-tu-creador-de-contenido-favorito-y-decide-quien-se-lleva-el-peoples-choice-award/|/forbes-economic-summit-2026/|/forbes-wealth-management/|/forbes-women-of-influence-summit-2026/|/cxo-real-talk-consumidor-liquido-innovacion-experiencia-en-la-era-de-la-ia/|/forbes-ai-forward-summit-2026/|/forbes-iberoamerican-summit-2026/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://forbes.es","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,a,c){function l(t,e){if(!a[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=a[t]={exports:{}},n[t][0].call(r.exports,function(e){return l(n[t][1][e]||e)},r,r.exports,o,n,a,c)}return a[t].exports}for(var u="function"==typeof require&&require,e=0;e<c.length;e++)l(c[e]);return l}({1:[function(e,t,r){{let r="undefined"==typeof rocket_pairs?[]:rocket_pairs,o=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var a=rocket_lazyload_css_data.threshold||300;let n=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&r.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:a+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(n.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}c(),(()=>{let r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}})()(document.querySelector("body"),c)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script id="tapasmagazine23-navigation-js" src="https://forbes.es/wp-content/themes/tapasmagazine23/js/navigation.js?ver=2.0.103" data-rocket-defer defer></script>
+<script id="tapasmagazine23-fslightbox-js" src="https://forbes.es/wp-content/themes/tapasmagazine23/js/fslightbox.js?ver=2.0.103" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://forbes.es/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1793996085 -->
