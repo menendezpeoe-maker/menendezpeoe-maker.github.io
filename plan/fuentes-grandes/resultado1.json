@@ -214,5 +214,17 @@
   "justificacion": "El programa de Sumar propone no autorizar nuevas construcciones en zonas con riesgo de inundación.",
   "valor": 4,
   "nota": "Coincide con la estimación (4). El programa no precisa qué ocurre con los suelos ya aprobados ni con las compensaciones a los propietarios, por eso no se sube a 5."
+ },
+ {
+  "id": "C06/fa",
+  "estado": "fuente",
+  "url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75",
+  "etiqueta": "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Se identificarán los obstáculos y se actuará con el fin de reforzar la capacidad administrativa y técnica de los ayuntamientos y de las diputaciones provinciales.",
+  "justificacion": "El programa de Sumar no propone suprimir las diputaciones; al contrario, plantea reforzar su capacidad técnica y coordinarse con ellas.",
+  "valor": 2,
+  "nota": "La estimación era 4 (probablemente por la tradición de IU contraria a las diputaciones). El programa de 2023 del espacio de Frente Amplio habla de reforzarlas, lo que respalda un 2. Revisar si hay un documento de Frente Amplio de 2026 que diga otra cosa."
  }
 ]

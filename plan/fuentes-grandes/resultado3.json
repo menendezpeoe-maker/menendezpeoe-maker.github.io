@@ -130,5 +130,41 @@
   "justificacion": "EH Bildu votó en contra de tramitar una ley para mantener el trasvase Tajo-Segura, rechazada por 171 votos frente a 170; con más motivo se opone a ampliar trasvases.",
   "valor": 1,
   "nota": "Votación: los seis diputados de EH Bildu votaron No. La votación es sobre mantener un trasvase existente, no ampliarlo. Coincide con la estimación."
+ },
+ {
+  "id": "L03/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion229/20221222/Votacion371/VOT_20230302133947.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022",
+  "tipo": "parlamento",
+  "fecha": "2022-12-22",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"Sí\"",
+  "justificacion": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
+  "valor": 5,
+  "nota": "Votación: los cinco diputados de EH Bildu votaron Sí (188 a favor, 150 en contra). Coincide con la estimación."
+ },
+ {
+  "id": "B06/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion256/20230427/Votacion173/VOT_20230427151734.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley por el derecho a la vivienda, 27/04/2023",
+  "tipo": "parlamento",
+  "fecha": "2023-04-27",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"Sí\"",
+  "justificacion": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
+  "valor": 5,
+  "nota": "Votación: los cinco diputados de EH Bildu votaron Sí (176 a favor, 167 en contra). La votación es de la ley completa, que incluye el recargo sobre la vivienda vacía. Coincide con la estimación."
+ },
+ {
+  "id": "H07/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): enmienda a la totalidad de Vox al proyecto de ley de Cooperación para el Desarrollo Sostenible y la Solidaridad Global, 15/09/2022",
+  "tipo": "parlamento",
+  "fecha": "2022-09-15",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"No\"",
+  "justificacion": "EH Bildu votó en contra de devolver al Gobierno la ley de cooperación, que fija el objetivo de destinar el 0,7 % de la renta nacional a la ayuda al desarrollo.",
+  "valor": 1,
+  "nota": "Votación: los cinco diputados de EH Bildu votaron No a la enmienda de Vox (294 en contra). Ojo: el rechazo fue muy amplio (también PP), así que la votación muestra apoyo a la ley más que una posición diferenciada. Coincide con la estimación."
  }
 ]
