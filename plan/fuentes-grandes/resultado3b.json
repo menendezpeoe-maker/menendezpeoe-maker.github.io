@@ -1,0 +1,396 @@
+[
+ {
+  "id": "A04/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A07/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A09/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A09/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "A10/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "B07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "B09/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "B09/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C02/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C04/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C04/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C08/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "C09/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D01/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D01/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D02/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D03/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D05/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D08/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D08/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "D09/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "E05/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "E05/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "E07/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "E07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "F04/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "F06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "F08/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "F09/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "F09/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G02/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G02/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G03/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G05/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G07/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "G07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "H02/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "H03/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "H03/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "H08/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "H08/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I02/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I03/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I03/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I04/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I04/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "I06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J03/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J03/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J04/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "J08/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K01/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K03/erc",
+  "estado": "fuente",
+  "url": "https://forbes.es/ultima-hora/409318/erc-propone-parar-los-acuerdos-de-libre-comercio-de-la-ue-y-destinar-las-ayudas-pac-a-agricultores-pequenos/",
+  "etiqueta": "Forbes España (Europa Press): ERC registra en el Congreso una proposición no de ley sobre la PAC y los acuerdos de libre comercio",
+  "tipo": "prensa",
+  "fecha": "2024-02-09",
+  "cita": "que dichos recursos se destinen en su mayoría a pequeños y medianos agricultores",
+  "justificacion": "ERC pidió en el Congreso que las ayudas de la PAC lleguen mayoritariamente a agricultores pequeños y medianos.",
+  "valor": 4,
+  "nota": "Coincide con la estimada (4)."
+ },
+ {
+  "id": "K03/bildu",
+  "estado": "fuente",
+  "url": "https://www.ultimahora.es/noticias/comunidades/2024/05/29/2173957/bildu-pide-dar-giro-pac-para-sea-eficaz-proteja-pequenas-explotaciones-agroganaderas.html",
+  "etiqueta": "Última Hora (Europa Press): EH Bildu pide dar un giro a la PAC para proteger las pequeñas explotaciones",
+  "tipo": "prensa",
+  "fecha": "2024-05-29",
+  "cita": "Sólo ha beneficiado a las producciones intensivas e industriales y ha dejado de lado a las pequeñas y medianas explotaciones",
+  "justificacion": "La parlamentaria de EH Bildu Itxaso Etxebarria defendió reorientar la PAC hacia las explotaciones pequeñas y familiares.",
+  "valor": 5,
+  "nota": "Coincide con la estimada (5)."
+ },
+ {
+  "id": "K05/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K05/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K07/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "K08/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "L04/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "L06/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "L06/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "L07/erc",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ },
+ {
+  "id": "L07/bildu",
+  "estado": "estimada",
+  "nota": "Sin fuente verificada: no se localizó una votación nominal, programa o declaración que trate de forma explícita el asunto preguntado."
+ }
+]
