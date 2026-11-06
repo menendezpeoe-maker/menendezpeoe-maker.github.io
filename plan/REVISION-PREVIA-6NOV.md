@@ -26,3 +26,22 @@ Fuentes: resultados de búsqueda de prensa de octubre de 2026; **ninguna página
 - **Portavoces RTVE 23 nov:** RTVE propone un debate con los ocho grupos del Congreso; el PP está dispuesto a participar según Diario de León. Fuente: https://www.diariodeleon.es/nacional/261009/2099767/elecciones-generales-leon-2026-feijoo-acepta-un-debate-cara-a-cara-con-sanchez-el-16-de-noviembre.html (no abierta).
 
 Resumen: sin programas nuevos confirmados; en debates, posible dato nuevo (rechazo del PP al debate a cuatro en RTVE) pendiente de verificar con fuente abierta.
+
+## Segunda pasada (6 nov, ~01:20 UTC, a petición del titular)
+
+Se abrieron con navegador las portadas oficiales y se buscaron enlaces a «programa»/«29N»:
+
+| Partido | Resultado |
+|---|---|
+| PP (pp.es) | Abre; sin enlace a programa del 29N. |
+| PSOE (psoe.es) | Abre; sin enlace a programa del 29N. |
+| EAJ-PNV (eaj-pnv.eus) | Abre; sin enlace a programa del 29N. |
+| EH Bildu (ehbildu.eus) | Abre; sin enlace a programa del 29N. |
+| Vox, Podemos, ERC | Bloqueo anti-robot (Cloudflare / «Un momento…»): no comprobable desde aquí. |
+| Junts | 403. |
+| Sumar (sumar.es) | Abre pero es otra web («sumar research»): dirección no válida; localizar la oficial. |
+
+Prensa (sin abrir): el PP **no ha publicado** aún su programa; lo coordina Alma Ezcurra y está «en fase avanzada» (eldiarioalerta.com, 5 nov: https://www.eldiarioalerta.com/articulo/politica/feijoo-prepara-revision-gasto-sanchez-promete-retirar-ayudas-publicas-injustificadas/20261105101755585867.html). Antes firmó un manifiesto de 12 compromisos, el «Contrato con España» (19 oct); no es el programa. Fuente secundaria sin abrir: https://www.politicaelectoral.com/es/espana/generales-2026/nacional/pp
+
+**Conclusión: sigue sin haber ningún programa del 29N con enlace oficial abierto y leído. Nada que añadir a la web.**
+Para las 21:00: repetir con las webs de Vox, Podemos, ERC y Junts (necesitan otro acceso) y buscar la web oficial de Sumar/Frente Amplio.
