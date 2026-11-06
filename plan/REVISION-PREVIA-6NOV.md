@@ -45,3 +45,14 @@ Prensa (sin abrir): el PP **no ha publicado** aún su programa; lo coordina Alma
 
 **Conclusión: sigue sin haber ningún programa del 29N con enlace oficial abierto y leído. Nada que añadir a la web.**
 Para las 21:00: repetir con las webs de Vox, Podemos, ERC y Junts (necesitan otro acceso) y buscar la web oficial de Sumar/Frente Amplio.
+
+## Tercera pasada (6 nov, ~01:40 UTC): solo si algún partido tiene programa del 29N
+
+Búsquedas dirigidas por partido (PP, PSOE, Vox, Frente Amplio/Podemos) y una ficha de seguimiento (politicaelectoral.com, 19 oct).
+**Resultado: ninguno tiene programa del 29N publicado con enlace oficial.**
+- PP: no publicado; lo redacta Alma Ezcurra. Solo existe el manifiesto «Contrato con España» (19 oct, 12 compromisos), que no es el programa.
+- PSOE: nada del 29N (solo resultan programas de 2019 y 2023).
+- Vox: nada del 29N (solo el programa de desregulación económica de junio, orientado a 2027, y programas de 2019/2023). Presentó a sus cabezas de lista en Talavera de la Reina.
+- Frente Amplio: presentó su proyecto con el lema «Es la hora» (prensa), pero sin texto de programa localizado. Podemos: concurre por separado; sin programa localizado.
+- Los demás partidos: no buscados uno a uno.
+Nada que añadir a la web por este motivo. Para las 21:00: repetir con navegador en las webs bloqueadas (Vox, Podemos, ERC, Junts) y la oficial de Frente Amplio.
