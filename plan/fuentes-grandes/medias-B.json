@@ -1,0 +1,2102 @@
+[
+ {
+  "id": "C02/ccpc",
+  "estado": "cambio_valor",
+  "valor_propuesto": 4,
+  "url": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=5",
+  "etiqueta": "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 5",
+  "tipo": "programa",
+  "fecha": "2019-10",
+  "justificacion": "Defiende una financiación autonómica igualitaria por habitante, porque los recursos actuales no cubren el gasto medio por habitante en servicios públicos.",
+  "pagina": 5
+ },
+ {
+  "id": "A05/ccpc",
+  "estado": "fuente",
+  "url": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=6",
+  "etiqueta": "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 6",
+  "tipo": "programa",
+  "fecha": "2019-10",
+  "justificacion": "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
+  "pagina": 6
+ },
+ {
+  "id": "A02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A03/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A06/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C06/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D03/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E06/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G05/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H03/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H06/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H09/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J01/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J04/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K02/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K05/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K07/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L03/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L05/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L08/ccpc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=102",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 102",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
+  "pagina": 102
+ },
+ {
+  "id": "A05/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=247",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 247",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
+  "pagina": 247
+ },
+ {
+  "id": "A10/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=207",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 207",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone recuperar el impuesto de sucesiones y donaciones, elevando los mínimos exentos pero con más progresividad, no eliminarlo.",
+  "pagina": 207
+ },
+ {
+  "id": "A04/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
+  "pagina": 240
+ },
+ {
+  "id": "H07/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=295",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 295",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Se compromete a dedicar el 0,7 % de los presupuestos públicos consolidados a cooperación internacional, no a recortarla.",
+  "pagina": 295
+ },
+ {
+  "id": "J04/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=67",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 67",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone introducir impuestos sobre las bebidas azucaradas para desincentivar su consumo, siguiendo la recomendación de la OMS.",
+  "pagina": 67
+ },
+ {
+  "id": "L05/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 253",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone derogar los acuerdos particulares del Estado con la Santa Sede de 1979 y acabar con la financiación de la Iglesia católica con cargo a los presupuestos.",
+  "pagina": 253
+ },
+ {
+  "id": "G09/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=127",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 127",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo.",
+  "pagina": 127
+ },
+ {
+  "id": "K03/comp",
+  "estado": "fuente",
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=158",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 158",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Quiere centrar las ayudas de la PAC en el profesional agrario, rebajar el mínimo para que más productores las reciban y fijar un máximo de 100.000 euros.",
+  "pagina": 158
+ },
+ {
+  "id": "D01/comp",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto.",
+  "pagina": 240
+ },
+ {
+  "id": "I02/comp",
+  "estado": "cambio_valor",
+  "valor_propuesto": 2,
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=35",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 35",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
+  "pagina": 35
+ },
+ {
+  "id": "L06/comp",
+  "estado": "cambio_valor",
+  "valor_propuesto": 2,
+  "url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=55",
+  "etiqueta": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 55",
+  "tipo": "programa",
+  "fecha": "2019-04",
+  "justificacion": "Incluye entre los derechos digitales básicos el derecho al olvido, a la privacidad y al anonimato, lo que contradice poner fin al anonimato.",
+  "pagina": 55
+ },
+ {
+  "id": "A02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D03/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E01/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H03/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I03/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J03/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K01/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K05/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K06/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L02/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L04/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L07/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L08/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L09/comp",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A01/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=190",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 190",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Pide al Gobierno estatal reducir la jornada a 32 horas semanales sin reducción salarial en todos los ámbitos, en 2 años (grandes empresas) y 4 (pymes).",
+  "pagina": 190
+ },
+ {
+  "id": "A02/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=148",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 148",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Afirma que es más importante fortalecer los servicios públicos que reducir los ingresos fiscales, y propone aumentar tipos en los impuestos directos.",
+  "pagina": 148
+ },
+ {
+  "id": "A03/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=146",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 146",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
+  "pagina": 146
+ },
+ {
+  "id": "A10/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=146",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 146",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone reformar sucesiones sin reducciones, con un mínimo exento de 500.000 euros, en lugar de eliminarlo para herencias entre padres e hijos.",
+  "pagina": 146
+ },
+ {
+  "id": "B02/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 74",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
+  "pagina": 74
+ },
+ {
+  "id": "G06/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=291",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 291",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone moratoria a nuevas infraestructuras de AVE, recuperar líneas convencionales e impulsar cercanías y media distancia en localidades de más de 20.000 habitantes.",
+  "pagina": 291
+ },
+ {
+  "id": "G02/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 4,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 6",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
+  "pagina": 6
+ },
+ {
+  "id": "G04/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 195",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone oposición a nuevos trasvases y a la expansión descontrolada del regadío por la sobreexplotación de las aguas subterráneas.",
+  "pagina": 195
+ },
+ {
+  "id": "I02/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=47",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 47",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública.",
+  "pagina": 47
+ },
+ {
+  "id": "I03/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 7",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas.",
+  "pagina": 7
+ },
+ {
+  "id": "I08/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=253",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 253",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Rechaza la tauromaquia como acto cultural y propone suprimir toda subvención e institución pública ligada a ella en los dos primeros años.",
+  "pagina": 253
+ },
+ {
+  "id": "K07/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=251",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 251",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
+  "pagina": 251
+ },
+ {
+  "id": "K05/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=168",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 168",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones.",
+  "pagina": 168
+ },
+ {
+  "id": "K08/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 195",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone frenar la creación de nuevos regadíos y reducir su superficie actual para alcanzar equilibrio hídrico.",
+  "pagina": 195
+ },
+ {
+  "id": "H06/adel",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=281",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 281",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
+  "pagina": 281
+ },
+ {
+  "id": "L04/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=232",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 232",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal.",
+  "pagina": 232
+ },
+ {
+  "id": "J03/adel",
+  "estado": "fuente",
+  "url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=24",
+  "etiqueta": "Programa electoral de Adelante Andalucía de 2026, p. 24",
+  "tipo": "programa",
+  "fecha": "2026-04",
+  "justificacion": "Quiere aumentar la vigilancia de las incompatibilidades público-privado y obliga a dedicación exclusiva a quien tenga plaza fija a tiempo completo.",
+  "pagina": 24
+ },
+ {
+  "id": "A04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A08/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J07/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K06/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L01/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L02/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L03/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L05/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L08/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L09/adel",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A10/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D01/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H09/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J01/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K02/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L03/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L04/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L05/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L06/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L07/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L08/upn",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A02/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=48",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 48",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone recuperar la presión fiscal perdida para mantener los ingresos públicos que sostienen las políticas públicas y su función redistributiva.",
+  "pagina": 48
+ },
+ {
+  "id": "A03/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=48",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 48",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone recuperar el Impuesto sobre el Patrimonio o sustituirlo por otro que grave la riqueza, además de subir el IRPF a las rentas más altas.",
+  "pagina": 48
+ },
+ {
+  "id": "A04/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=48",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 48",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Pide derogar el Pacto de estabilidad y revisar los objetivos de déficit y deuda pública, en lugar de priorizar su reducción.",
+  "pagina": 48
+ },
+ {
+  "id": "A05/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=32",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 32",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone financiar las pensiones públicas con impuestos a la banca y otros actores, y desechar la desindexación y el factor de sostenibilidad.",
+  "pagina": 32
+ },
+ {
+  "id": "A10/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=48",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 48",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone mantener el impuesto de sucesiones, con exenciones y bonificaciones para la empresa familiar, en lugar de eliminarlo.",
+  "pagina": 48
+ },
+ {
+  "id": "G01/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=68",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 68",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone abandonar progresivamente la energía nuclear y cerrar de inmediato las centrales nucleares peligrosas y obsoletas.",
+  "pagina": 68
+ },
+ {
+  "id": "L05/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=14",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 14",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone derogar de inmediato los Concordatos con la Iglesia católica y suprimir sus privilegios, en particular beneficios y exenciones fiscales.",
+  "pagina": 14
+ },
+ {
+  "id": "K02/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=57",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 57",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
+  "pagina": 57
+ },
+ {
+  "id": "I08/cha",
+  "estado": "cambio_valor",
+  "valor_propuesto": 1,
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=75",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 75",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
+  "pagina": 75
+ },
+ {
+  "id": "H07/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=19",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 19",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Exige cumplir la recomendación de destinar el 0,7 % de los presupuestos a cooperación al desarrollo, como primer paso hacia el 1 %.",
+  "pagina": 19
+ },
+ {
+  "id": "B02/cha",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=76",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 76",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
+  "pagina": 76
+ },
+ {
+  "id": "L08/cha",
+  "estado": "fuente",
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=21",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 21",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone listas electorales desbloqueadas con un sistema que permita respetar la paridad de sexos, es decir, mantener la paridad.",
+  "pagina": 21
+ },
+ {
+  "id": "C06/cha",
+  "estado": "cambio_valor",
+  "valor_propuesto": 5,
+  "url": "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=23",
+  "etiqueta": "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 23",
+  "tipo": "programa",
+  "fecha": "2019-05",
+  "justificacion": "Propone impulsar la desaparición de las diputaciones provinciales, convirtiendo Aragón en comunidad uniprovincial.",
+  "pagina": 23
+ },
+ {
+  "id": "A01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H06/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K04/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K05/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K07/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K08/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L01/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L02/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L03/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L09/cha",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A02/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=15",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 15",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone una profunda reforma fiscal para cerrar la brecha de ingresos con la media europea y que contribuyan más grandes empresas, patrimonios y rentas altas.",
+  "pagina": 15
+ },
+ {
+  "id": "A03/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=16",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 16",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados.",
+  "pagina": 16
+ },
+ {
+  "id": "A04/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=19",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 19",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Pide que las reglas fiscales no impongan reducir deuda y déficit a corto plazo y rechaza los límites del 3 % y el 60 %, sin fundamento económico.",
+  "pagina": 19
+ },
+ {
+  "id": "A05/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=15",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 15",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
+  "pagina": 15
+ },
+ {
+  "id": "A08/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=7",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 7",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Se compromete a subir el salario mínimo interprofesional por encima del IPC anual para mantener el poder adquisitivo.",
+  "pagina": 7
+ },
+ {
+  "id": "A10/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=16",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 16",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar.",
+  "pagina": 16
+ },
+ {
+  "id": "B02/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 81",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler.",
+  "pagina": 81
+ },
+ {
+  "id": "D03/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=131",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 131",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Para el CGPJ propone reforzar el protagonismo del Parlamento y mantiene la elección parlamentaria de los vocales de procedencia judicial.",
+  "pagina": 131
+ },
+ {
+  "id": "E02/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=135",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 135",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Incluye en su programa eliminar la prisión permanente revisable.",
+  "pagina": 135
+ },
+ {
+  "id": "E03/upc",
+  "estado": "cambio_valor",
+  "valor_propuesto": 4,
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=133",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 133",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone reformar y derogar aspectos de la ley mordaza y modificarla, pero en otro pasaje habla de derogarla solo parcialmente.",
+  "pagina": 133
+ },
+ {
+  "id": "E09/upc",
+  "estado": "cambio_valor",
+  "valor_propuesto": 4,
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=94",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 94",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone regular íntegramente el cannabis con asociaciones cannábicas de autoconsumo sin ánimo de lucro, no una venta general a adultos.",
+  "pagina": 94
+ },
+ {
+  "id": "G05/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=13",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 13",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas del Estado según venzan las concesiones.",
+  "pagina": 13
+ },
+ {
+  "id": "H03/upc",
+  "estado": "cambio_valor",
+  "valor_propuesto": 2,
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 147",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
+  "pagina": 147
+ },
+ {
+  "id": "H07/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=149",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 149",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura.",
+  "pagina": 149
+ },
+ {
+  "id": "I01/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=156",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 156",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone revisar los conciertos educativos para que la red concertada sea subsidiaria de la pública y acabar con la cesión de suelo público.",
+  "pagina": 156
+ },
+ {
+  "id": "I07/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=115",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 115",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Plantea la introducción del pin parental como un retroceso en igualdad y propone educación sexual integral en el sistema educativo.",
+  "pagina": 115
+ },
+ {
+  "id": "K01/upc",
+  "estado": "cambio_valor",
+  "valor_propuesto": 2,
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=142",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 142",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone renegociar el acuerdo UE-Mercosur para que prevalezcan los derechos humanos y ambientales sobre el poder de las grandes corporaciones.",
+  "pagina": 142
+ },
+ {
+  "id": "K02/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=62",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 62",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
+  "pagina": 62
+ },
+ {
+  "id": "K04/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=52",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 52",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Propone incluir el lobo ibérico en el Catálogo Español de Especies Amenazadas, lo que choca con su caza controlada.",
+  "pagina": 52
+ },
+ {
+  "id": "L02/upc",
+  "estado": "fuente",
+  "url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=101",
+  "etiqueta": "Programa electoral de Sumar para el 23J de 2023, p. 101",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "justificacion": "Reconoce la necesidad de una muerte digna en coherencia con la Ley de Regulación de la Eutanasia, sin proponer derogarla.",
+  "pagina": 101
+ },
+ {
+  "id": "A06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "A09/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B03/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B07/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "B09/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C01/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C02/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C05/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "C08/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D01/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D05/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D07/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "D09/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E01/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E05/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "E07/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F08/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "F09/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G01/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G02/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G03/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "G09/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H02/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "H06/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "I02/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J02/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "J08/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K05/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "K07/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L04/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L05/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L08/upc",
+  "estado": "sin_cobertura"
+ },
+ {
+  "id": "L09/upc",
+  "estado": "sin_cobertura"
+ }
+]
