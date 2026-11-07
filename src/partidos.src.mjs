@@ -12,7 +12,7 @@
 // props: [propuesta, código de la pregunta relacionada o null].
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
-export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav"];
+export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte"];
 
 export const PARTIES = [
  { id: "psoe", name: "PSOE", ab: "PSOE", color: "#E30613", tag: "Socialdemocracia · centroizquierda", lead: "Pedro Sánchez",
@@ -262,7 +262,14 @@ export const PARTIES = [
    desc: "Partido provincial de Ávila, fundado en 2019 por antiguos cargos del PP. Reclama inversiones, un mejor tren con Madrid y medidas contra la despoblación.",
    props: [["Mejor tren entre Ávila y Madrid.",null],
      ["Fiscalidad diferenciada contra la despoblación.","F07"],
-     ["Defensa de los servicios públicos en la provincia.","J01"]] }
+     ["Defensa de los servicios públicos en la provincia.","J01"]] },
+ { id: "pcte", name: "PCTE", ab: "PCTE", color: "#9E1B32", tag: "Comunista · izquierda radical",
+   scope: { provinces: ["alicante", "almeria", "asturias", "avila", "baleares", "burgos", "caceres", "cadiz", "cantabria", "castellon", "cordoba", "cuenca", "granada", "guadalajara", "huelva", "huesca", "jaen", "leon", "madrid", "malaga", "murcia", "navarra", "palencia", "laspalmas", "rioja", "salamanca", "tenerife", "segovia", "sevilla", "soria", "teruel", "toledo", "valencia", "valladolid", "zamora", "zaragoza"] },
+   desc: "Partido comunista. En su programa de lucha 2023-2027 defiende expulsar a las empresas privadas de la sanidad y la educación, poner el sector energético bajo propiedad estatal y salir de la OTAN y de la UE.",
+   props: [["Jornada máxima de 35 horas semanales.","A01"],
+     ["Salida unilateral de la OTAN y cierre de las bases extranjeras.","H06"],
+     ["Salida de la UE y del euro.","H02"],
+     ["Ruptura del concordato con la Santa Sede.","L05"]] },
 ];
 
 export const REGIONS = [

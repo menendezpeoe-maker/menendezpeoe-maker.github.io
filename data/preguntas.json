@@ -182,7 +182,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -282,6 +283,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 190",
      "programa",
      "2026-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=6",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 6",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -299,7 +306,8 @@
     "ccpc": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "comp": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial.",
     "upc": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas.",
-    "adel": "Pide al Gobierno estatal reducir la jornada a 32 horas semanales sin reducción salarial en todos los ámbitos, en 2 años (grandes empresas) y 4 (pymes)."
+    "adel": "Pide al Gobierno estatal reducir la jornada a 32 horas semanales sin reducción salarial en todos los ámbitos, en 2 años (grandes empresas) y 4 (pymes).",
+    "pcte": "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario."
    }
   },
   {
@@ -337,7 +345,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -444,6 +453,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 15",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -455,7 +470,8 @@
     "upn": "UPN prioriza reducir impuestos y deflactar el IRPF.",
     "adel": "Afirma que es más importante fortalecer los servicios públicos que reducir los ingresos fiscales, y propone aumentar tipos en los impuestos directos.",
     "cha": "Propone recuperar la presión fiscal perdida para mantener los ingresos públicos que sostienen las políticas públicas y su función redistributiva.",
-    "upc": "Propone una profunda reforma fiscal para cerrar la brecha de ingresos con la media europea y que contribuyan más grandes empresas, patrimonios y rentas altas."
+    "upc": "Propone una profunda reforma fiscal para cerrar la brecha de ingresos con la media europea y que contribuyan más grandes empresas, patrimonios y rentas altas.",
+    "pcte": "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos."
    }
   },
   {
@@ -769,7 +785,8 @@
     "cha": 1,
     "existe": 2,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "salf",
@@ -855,6 +872,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 15",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=11",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -869,7 +892,8 @@
     "ccpc": "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
     "comp": "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
     "cha": "Propone financiar las pensiones públicas con impuestos a la banca y otros actores, y desechar la desindexación y el factor de sostenibilidad.",
-    "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización."
+    "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
+    "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos."
    }
   },
   {
@@ -1395,7 +1419,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -1502,6 +1527,12 @@
      "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40",
      "programa",
      "2023-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1513,7 +1544,8 @@
     "ccpc": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "comp": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "adel": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
-    "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas."
+    "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas.",
+    "pcte": "Propone una limitación real y efectiva de los alquileres, en detrimento de la ganancia de los propietarios."
    }
   },
   {
@@ -1551,7 +1583,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -1653,6 +1686,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 81",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1670,7 +1709,8 @@
     "ccpc": "Pidió más oferta de vivienda y anunció su rechazo al segundo decreto de vivienda de octubre de 2026 por reducir, según dijo, la oferta de alquiler.",
     "adel": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
     "cha": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
-    "upc": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler."
+    "upc": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler.",
+    "pcte": "Plantea limitar los alquileres y acceder a vivienda vacía de bancos y fondos; no apuesta por liberar suelo para construir más."
    }
   },
   {
@@ -1860,7 +1900,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "salf",
@@ -1934,6 +1975,12 @@
      "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 102",
      "programa",
      "2019-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1944,7 +1991,8 @@
     "erc": "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables.",
     "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
     "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
-    "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular."
+    "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
+    "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos."
    }
   },
   {
@@ -4793,7 +4841,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -4888,6 +4937,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 133",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
+     "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
+     "programa",
+     "2019-11"
     ]
    },
    "why": {
@@ -4904,7 +4959,8 @@
     "bng": "Su programa propone derogar íntegramente la ley mordaza.",
     "ccpc": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
     "comp": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
-    "upc": "Propone reformar y derogar aspectos de la ley mordaza y modificarla, pero en otro pasaje habla de derogarla solo parcialmente."
+    "upc": "Propone reformar y derogar aspectos de la ley mordaza y modificarla, pero en otro pasaje habla de derogarla solo parcialmente.",
+    "pcte": "Medida 54: derogación de la Ley Mordaza."
    }
   },
   {
@@ -6514,7 +6570,8 @@
     "cha": 5,
     "existe": 4,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "vox",
@@ -6570,6 +6627,12 @@
      "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25",
      "programa",
      "2025-07"
+    ],
+    "pcte": [
+     "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+     "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+     "programa",
+     "2019-11"
     ]
    },
    "why": {
@@ -6579,7 +6642,8 @@
     "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
     "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
-    "pp": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal."
+    "pp": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal.",
+    "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes."
    }
   },
   {
@@ -7232,7 +7296,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -7298,6 +7363,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 13",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=11",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -7309,7 +7380,8 @@
     "erc": "Estimación: ERC impulsa una energética pública catalana, no estatal.",
     "bildu": "Pide facilitar por ley la creación de empresas públicas de comercialización de electricidad.",
     "bng": "El BNG propone crear una empresa pública de energía, en su caso gallega, a partir de las concesiones hidroeléctricas.",
-    "upc": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas del Estado según venzan las concesiones."
+    "upc": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas del Estado según venzan las concesiones.",
+    "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético."
    }
   },
   {
@@ -7932,7 +8004,8 @@
     "cha": 3,
     "existe": 3,
     "mes": 3,
-    "adel": 2
+    "adel": 2,
+    "pcte": 1
    },
    "est": [
     "pod",
@@ -7998,6 +8071,12 @@
      "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 48",
      "programa",
      "2019-11"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8008,7 +8087,8 @@
     "pod": "Estimación: sin postura reciente publicada sobre ceder más competencias a la UE.",
     "erc": "El programa apuesta por una Europa federal con instituciones más ambiciosas.",
     "pnv": "El programa pide una política europea de inmigración y asilo con tratamiento comunitario, y completar la Unión Bancaria.",
-    "d21": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior."
+    "d21": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior.",
+    "pcte": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas."
    }
   },
   {
@@ -8293,7 +8373,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -8396,6 +8477,12 @@
      "Diario de Avisos/Europa Press: Drago Canarias concurrirá en solitario el 29N (10 oct 2026)",
      "prensa",
      "2026-10-10"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8413,7 +8500,8 @@
     "adel": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
     "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
     "upc": "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
-    "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara."
+    "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara.",
+    "pcte": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía."
    }
   },
   {
@@ -8448,7 +8536,8 @@
     "comp": 2,
     "cha": 2,
     "mes": 2,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "salf",
@@ -8536,6 +8625,12 @@
      "Orain, el Congreso rechaza el referéndum para salir de la OTAN, 22/04/2026",
      "parlamento",
      "2026-04-22"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8549,7 +8644,8 @@
     "bng": "El BNG defiende la salida de la OTAN y la disolución de la alianza.",
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
-    "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN."
+    "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN.",
+    "pcte": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras."
    }
   },
   {
@@ -8935,7 +9031,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "salf",
@@ -9050,6 +9147,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 156",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9062,7 +9165,8 @@
     "adel": "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos.",
     "cha": "CHA propone eliminar progresivamente los conciertos educativos con centros privados.",
     "pnv": "El PNV propuso aumentar la financiación pública de la red concertada en los presupuestos vascos.",
-    "upc": "Propone revisar los conciertos educativos para que la red concertada sea subsidiaria de la pública y acabar con la cesión de suelo público."
+    "upc": "Propone revisar los conciertos educativos para que la red concertada sea subsidiaria de la pública y acabar con la cesión de suelo público.",
+    "pcte": "Defiende expulsar a todas las empresas privadas de la educación, lo que incluye la escuela concertada."
    }
   },
   {
@@ -9097,7 +9201,8 @@
     "comp": 2,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "vox",
@@ -9157,6 +9262,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 47",
      "programa",
      "2026-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=7",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 7",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9166,7 +9277,8 @@
     "pod": "Su programa europeo de 2024 defiende una educación pública gratuita desde el nacimiento hasta la universidad.",
     "erc": "El programa propone avanzar hacia la gratuidad universitaria.",
     "comp": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
-    "adel": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública."
+    "adel": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública.",
+    "pcte": "Aspira a un sistema de enseñanza único, público y gratuito."
    }
   },
   {
@@ -9195,7 +9307,8 @@
     "upn": 5,
     "bng": 2,
     "comp": 2,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "vox",
@@ -9239,6 +9352,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 7",
      "programa",
      "2026-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9247,7 +9366,8 @@
     "pod": "Estimación: contraria a facilitar universidades privadas por su defensa de la universidad pública.",
     "erc": "Estimación: ERC prioriza la universidad pública.",
     "pp": "Se opuso al decreto del Gobierno que endurece los requisitos para crear nuevas universidades, incluidas las privadas.",
-    "adel": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas."
+    "adel": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas.",
+    "pcte": "Defiende expulsar a todas las empresas privadas de la educación; denuncia el aumento de universidades privadas."
    }
   },
   {
@@ -10007,7 +10127,8 @@
     "jmm": 4,
     "upl": 4,
     "soria": 4,
-    "pav": 4
+    "pav": 4,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -10106,6 +10227,12 @@
      "Programa de Drago Canarias (autonómicas 2023), apartado de salud pública",
      "programa",
      "2023-05"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10114,7 +10241,8 @@
     "comp": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
     "adel": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
     "upc": "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública.",
-    "drago": "Propone revertir y terminar con los conciertos con la sanidad privada y las externalizaciones de servicios."
+    "drago": "Propone revertir y terminar con los conciertos con la sanidad privada y las externalizaciones de servicios.",
+    "pcte": "Defiende expulsar a las empresas privadas de la sanidad y los servicios sociales."
    }
   },
   {
@@ -10150,7 +10278,8 @@
     "cha": 1,
     "existe": 3,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "psoe",
@@ -10216,6 +10345,12 @@
      "Programa electoral de SALF para Castilla y León, p. 18 (programa autonómico CyL 2026; mismo asunto)",
      "programa",
      "2026-03"
+    ],
+    "pcte": [
+     "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+     "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+     "programa",
+     "2019-11"
     ]
    },
    "why": {
@@ -10226,7 +10361,8 @@
     "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
     "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
     "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos.",
-    "salf": "Propone concertar con clínicas privadas, sin coste para el paciente, cuando la pública no dé abasto y fija tope de 30 y 90 días."
+    "salf": "Propone concertar con clínicas privadas, sin coste para el paciente, cuando la pública no dé abasto y fija tope de 30 y 90 días.",
+    "pcte": "Medida 17: derogar todo tipo de conciertos sanitarios, por un sistema de salud público y único."
    }
   },
   {
@@ -10255,7 +10391,8 @@
     "upn": 2,
     "bng": 4,
     "comp": 4,
-    "adel": 4
+    "adel": 4,
+    "pcte": 5
    },
    "est": [
     "psoe",
@@ -10297,6 +10434,12 @@
      "Onda Vasca, propuesta de EH Bildu sobre Osakidetza, 20/03/2024",
      "declaracion",
      "2024-03-20"
+    ],
+    "pcte": [
+     "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+     "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+     "programa",
+     "2019-11"
     ]
    },
    "why": {
@@ -10306,7 +10449,8 @@
     "pod": "Estimación: favorable a la dedicación exclusiva en la sanidad pública.",
     "erc": "Estimación: sin postura conocida de ERC sobre la exclusividad médica.",
     "adel": "Quiere aumentar la vigilancia de las incompatibilidades público-privado y obliga a dedicación exclusiva a quien tenga plaza fija a tiempo completo.",
-    "bildu": "EH Bildu propone acabar con que los médicos de Osakidetza trabajen a la vez en la sanidad privada: «No nos parece correcto» la doble actividad."
+    "bildu": "EH Bildu propone acabar con que los médicos de Osakidetza trabajen a la vez en la sanidad privada: «No nos parece correcto» la doble actividad.",
+    "pcte": "Medida 20: incompatibilidad del personal sanitario con cualquier relación laboral o mercantil con la sanidad privada."
    }
   },
   {
@@ -10903,7 +11047,8 @@
     "adel": 5,
     "jmm": 5,
     "upl": 5,
-    "soria": 5
+    "soria": 5,
+    "pcte": 5
    },
    "est": [
     "pp",
@@ -10971,6 +11116,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 62",
      "programa",
      "2023-07"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=12",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10981,7 +11132,8 @@
     "erc": "El programa propone reformar la ley de la cadena para mejorar precios a productores.",
     "bildu": "Pide más control sobre la cadena alimentaria para asegurar precios justos a los productores.",
     "cha": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
-    "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores."
+    "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
+    "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución."
    }
   },
   {
@@ -12118,7 +12270,8 @@
     "upc": 1,
     "drago": 1,
     "comp": 1,
-    "adel": 1
+    "adel": 1,
+    "pcte": 1
    },
    "est": [
     "salf",
@@ -12183,6 +12336,12 @@
      "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
      "declaracion",
      "2017-07-04"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=17",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 17",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12194,7 +12353,8 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
     "fa": "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada.",
     "adel": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal.",
-    "bildu": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo."
+    "bildu": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo.",
+    "pcte": "Propone prohibir la prostitución y seguir considerando ilegal la gestación subrogada."
    }
   },
   {
@@ -12230,7 +12390,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "pcte": 5
    },
    "est": [
     "salf",
@@ -12300,6 +12461,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 14",
      "programa",
      "2019-05"
+    ],
+    "pcte": [
+     "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+     "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12311,7 +12478,8 @@
     "erc": "El programa propone anular los acuerdos de 1979 con la Santa Sede.",
     "bildu": "El grupo de ERC y EH Bildu en el Senado presentó y votó una moción que pedía declarar nulos los acuerdos de 1979 con la Santa Sede, lo que va más allá de revisarlos.",
     "comp": "Propone derogar los acuerdos particulares del Estado con la Santa Sede de 1979 y acabar con la financiación de la Iglesia católica con cargo a los presupuestos.",
-    "cha": "Propone derogar de inmediato los Concordatos con la Iglesia católica y suprimir sus privilegios, en particular beneficios y exenciones fiscales."
+    "cha": "Propone derogar de inmediato los Concordatos con la Iglesia católica y suprimir sus privilegios, en particular beneficios y exenciones fiscales.",
+    "pcte": "Defiende la ruptura del concordato con el Vaticano por los privilegios que da a la Iglesia católica."
    }
   },
   {
