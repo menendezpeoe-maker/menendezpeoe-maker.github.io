@@ -106,7 +106,7 @@
     "pid": "falange",
     "prov": "cordoba",
     "primero": true,
-    "pct": 97
+    "pct": 99
    },
    {
     "pid": "d21",
@@ -197,7 +197,7 @@
    },
    {
     "pid": "d21",
-    "n": 59
+    "n": 60
    },
    {
     "pid": "fa",
@@ -209,7 +209,7 @@
    },
    {
     "pid": "vox",
-    "n": 6
+    "n": 5
    },
    {
     "pid": "salf",
@@ -258,7 +258,7 @@
   },
   {
    "pid": "salf",
-   "pct": 60
+   "pct": 61
   },
   {
    "pid": "fa",
@@ -304,7 +304,7 @@
    "pid": "salf",
    "conocidas": 106,
    "estimadas": 91,
-   "conFuente": 23
+   "conFuente": 26
   },
   {
    "pid": "erc",
@@ -368,9 +368,9 @@
   },
   {
    "pid": "falange",
-   "conocidas": 38,
+   "conocidas": 39,
    "estimadas": 6,
-   "conFuente": 38
+   "conFuente": 39
   },
   {
    "pid": "d21",
