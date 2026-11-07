@@ -12,7 +12,7 @@
 // props: [propuesta, código de la pregunta relacionada o null].
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
-export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo"];
+export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo","falange","ie","ph"];
 
 export const PARTIES = [
  { id: "psoe", name: "PSOE", ab: "PSOE", color: "#E30613", tag: "Socialdemocracia · centroizquierda", lead: "Pedro Sánchez",
@@ -277,6 +277,27 @@ export const PARTIES = [
      ["Ampliar el parque nuclear.","G01"],
      ["Expulsión inmediata de quienes estén de forma irregular.","F02"],
      ["Centralizar sanidad, educación y emergencias.","C03"]] },
+ { id: "falange", name: "Falange Española de las JONS", ab: "FE-JONS", color: "#5A1F1F", tag: "Nacionalista · falangista",
+   scope: { provinces: ["castellon", "cordoba", "guadalajara", "madrid", "palencia", "teruel", "toledo", "valencia", "valladolid"] },
+   desc: "Partido falangista. En su programa de 2023 propone disolver las autonomías, nacionalizar la energía, salir de la UE y de la OTAN, un Estado confesional católico y repatriar a los extranjeros sin contrato de trabajo.",
+   props: [["Disolver las comunidades autónomas.","C01"],
+     ["Nacionalizar la energía.","G05"],
+     ["Salida escalonada y pactada de la UE.","H02"],
+     ["Precio máximo de los alquileres.","B01"]] },
+ { id: "ie", name: "Iustitia Europa", ab: "IE", color: "#6B5B95", tag: "Regeneracionista · transversal",
+   scope: { provinces: ["madrid"] },
+   desc: "Partido que se presenta como ajeno a las ideologías tradicionales. En su Contrato Electoral propone un sistema electoral mayoritario, listas abiertas, que los jueces elijan el CGPJ y referéndums para salir de la UE y de la OTAN.",
+   props: [["Sistema mayoritario con distritos uninominales.","D01"],
+     ["Que los jueces elijan el CGPJ.","D03"],
+     ["Referéndum para salir de la UE.","H02"],
+     ["Suprimir las diputaciones provinciales.","C06"]] },
+ { id: "ph", name: "Partido Humanista", ab: "PH", color: "#E07A1F", tag: "Humanista · no violencia",
+   scope: { provinces: ["madrid"] },
+   desc: "Partido humanista. En su programa de 2023 propone la salida de la OTAN, reducir el presupuesto militar, educación pública y gratuita en todos los niveles y alquiler social con renta máxima del 30 % de los ingresos.",
+   props: [["Salida de España de la OTAN.","H06"],
+     ["Reducir drásticamente el presupuesto militar.","H01"],
+     ["Educación pública y gratuita en todos los niveles.","I02"],
+     ["Alquiler social con renta máxima del 30 % de los ingresos.","B01"]] },
 ];
 
 export const REGIONS = [

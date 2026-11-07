@@ -739,7 +739,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
-    "cab": "Andrónico Miguel Agustín Brun"
+    "cab": "Andrónico Miguel Agustín Brun",
+    "pid": "falange"
    },
    {
     "c": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
@@ -827,7 +828,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
-    "cab": "Manuel Chacón Rodríguez"
+    "cab": "Manuel Chacón Rodríguez",
+    "pid": "falange"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -1154,7 +1156,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Juan Francisco Durán Carralero"
+    "cab": "Juan Francisco Durán Carralero",
+    "pid": "falange"
    }
   ],
   "huelva": [
@@ -1484,7 +1487,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Norberto Pedro Pico Sanabria"
+    "cab": "Norberto Pedro Pico Sanabria",
+    "pid": "falange"
    },
    {
     "c": "VOX (VOX)",
@@ -1498,7 +1502,8 @@
    },
    {
     "c": "PARTIDO HUMANISTA (PH)",
-    "cab": "José Luis Álvarez Cedena"
+    "cab": "José Luis Álvarez Cedena",
+    "pid": "ph"
    },
    {
     "c": "DEMOCRACIA PARA EL SIGLO 21 (D21)",
@@ -1507,7 +1512,8 @@
    },
    {
     "c": "IUSTITIA EUROPA (IE)",
-    "cab": "Luis María Pardo Rodríguez"
+    "cab": "Luis María Pardo Rodríguez",
+    "pid": "ie"
    },
    {
     "c": "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
@@ -1779,7 +1785,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Luis Miguel Pérez González"
+    "cab": "Luis Miguel Pérez González",
+    "pid": "falange"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -2343,7 +2350,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Santiago María Núñez Albesa"
+    "cab": "Santiago María Núñez Albesa",
+    "pid": "falange"
    },
    {
     "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
@@ -2384,7 +2392,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "José Ramón Jarones Martín-Aragón"
+    "cab": "José Ramón Jarones Martín-Aragón",
+    "pid": "falange"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -2453,7 +2462,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Alejo Herrero González de Cárdenas"
+    "cab": "Alejo Herrero González de Cárdenas",
+    "pid": "falange"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -2505,7 +2515,8 @@
    },
    {
     "c": "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
-    "cab": "Francisco Javier Sanz Méndez"
+    "cab": "Francisco Javier Sanz Méndez",
+    "pid": "falange"
    },
    {
     "c": "PODEMOS (PODEMOS)",
