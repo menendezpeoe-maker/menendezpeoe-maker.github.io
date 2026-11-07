@@ -1,0 +1,74 @@
+{
+ "meta": {
+  "partido": "Frente Obrero (FO)",
+  "documento": "Programa político del Frente Obrero de 2026 (PDF de 20 páginas; él mismo dice que no es un programa electoral; el índice llega a la p. 62 pero el PDF se corta en el divisor de Educación, p. 20)",
+  "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf",
+  "fecha": "2026-10",
+  "preguntas_con_postura": 7
+ },
+ "posturas": [
+  {
+   "id": "A03",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 19",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar el impuesto de patrimonio y el de sucesiones y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado."
+  },
+  {
+   "id": "A10",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 19",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos."
+  },
+  {
+   "id": "G01",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 16",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión."
+  },
+  {
+   "id": "G09",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 16",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento, sin frenarlas."
+  },
+  {
+   "id": "H02",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional."
+  },
+  {
+   "id": "H05",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación."
+  },
+  {
+   "id": "H06",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026, p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la salida inmediata de España de la OTAN y reforzar el ejército."
+  }
+ ]
+}

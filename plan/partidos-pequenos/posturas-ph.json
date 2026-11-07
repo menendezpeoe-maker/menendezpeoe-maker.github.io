@@ -1,0 +1,182 @@
+{
+ "meta": {
+  "partido": "Partido Humanista (PH)",
+  "documento": "Programa Generales 2023 (elecciones del 23 de julio de 2023; no se halló programa específico para el 29N en partidohumanista.es)",
+  "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf",
+  "fecha": "2023-07",
+  "preguntas_con_postura": 19
+ },
+ "posturas": [
+  {
+   "id": "A01",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=11",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 11",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Defiende reducir la jornada laboral y repartir el empleo manteniendo y aumentando los salarios; no fija 37,5 horas ni habla de ley."
+  },
+  {
+   "id": "A02",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 17",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Prioriza salud y educación como inversión y pide que no se recorten las prestaciones sanitarias por ninguna razón."
+  },
+  {
+   "id": "A05",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=13",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 13",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación."
+  },
+  {
+   "id": "B01",
+   "valor": 4,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 14",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone alquiler social con renta máxima del 30% de los ingresos como forma de regular unos alquileres que juzga abusivos."
+  },
+  {
+   "id": "B02",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 14",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone una bolsa de alquiler con viviendas vacías, parque público en alquiler y alquiler social; no plantea liberar suelo."
+  },
+  {
+   "id": "B04",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 14",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados."
+  },
+  {
+   "id": "C04",
+   "valor": 4,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=20",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 20",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Defiende una organización federativa que devuelva el poder a la base social y a los municipios; no menciona reformar la Constitución."
+  },
+  {
+   "id": "D07",
+   "valor": 4,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=21",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 21",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum."
+  },
+  {
+   "id": "F01",
+   "valor": 4,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 24",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone iguales derechos y oportunidades para todos, no criminalizar al migrante («ningún ser humano es ilegal») y vías de entrada legales."
+  },
+  {
+   "id": "F02",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 24",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado."
+  },
+  {
+   "id": "F03",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 24",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone el reconocimiento de iguales derechos y oportunidades para todos, también para los inmigrantes."
+  },
+  {
+   "id": "F08",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 17",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales."
+  },
+  {
+   "id": "G09",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=7",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 7",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone un plan de inversiones para implantar totalmente fuentes renovables en 2050; no habla de redes ni de almacenamiento."
+  },
+  {
+   "id": "H01",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=8",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 8",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone reducir drásticamente el presupuesto militar y el armamentismo, y desarme progresivo y proporcional."
+  },
+  {
+   "id": "H06",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=3",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 3",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Pide la salida de España de la OTAN, como en todos sus programas electorales."
+  },
+  {
+   "id": "H07",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 24",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Propone cooperación internacional con los países de origen de los migrantes y una política de reparación a países expoliados por Europa."
+  },
+  {
+   "id": "H09",
+   "valor": 1,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 24",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Rechaza la externalización de fronteras y las «plataformas-prisiones» y propone destinar esos fondos a la acogida."
+  },
+  {
+   "id": "I02",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 17",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Defiende una educación pública, gratuita y de calidad en todos los niveles, desde infantil hasta la universidad."
+  },
+  {
+   "id": "J01",
+   "valor": 5,
+   "url": "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
+   "etiqueta": "Programa electoral del Partido Humanista de 2023, p. 19",
+   "tipo": "programa",
+   "fecha": "2023-07",
+   "justificacion": "Sostiene que la solución no es la privatización sino mejorar la gestión pública con transparencia; la salud no puede ser negocio."
+  }
+ ]
+}
