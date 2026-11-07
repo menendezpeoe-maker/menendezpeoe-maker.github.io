@@ -455,3 +455,24 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .qprog-wrap .qprog-label { -webkit-line-clamp: 1; line-clamp: 1; }
   .qprog-wrap .q-auto { margin: 0; white-space: nowrap; }
 }
+
+/* Portada: vista previa neutral del resultado en lugar de la cuadrícula decorativa */
+#v-home .bn-grid { display: none !important; }
+.bn-preview { display: none; }
+@media (min-width: 640px) {
+  .bn-preview { display: grid; gap: 14px; align-content: center; padding: 20px 22px 16px; border: 1px solid var(--bn-line); border-radius: 16px; background: rgba(242, 243, 238, .05); color: var(--bn-paper); min-width: 0; }
+  .bn-pv-h { margin: 0; font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--bn-mute); font-weight: 700; }
+  .bn-pv-body { display: grid; grid-template-columns: minmax(120px, 170px) minmax(0, 1fr); gap: 20px; align-items: center; }
+  .bn-preview svg { width: 100%; height: auto; }
+  .bn-pv-bars { display: grid; gap: 14px; }
+  .bn-pv-bars p { margin: 0; display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
+  .bn-pv-bars i { display: block; height: 10px; border-radius: 5px; background: var(--bn-line); position: relative; overflow: hidden; }
+  .bn-pv-bars i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--bn-mark); border-radius: 5px; }
+  .bn-pv-n { margin: 0; font-size: 12.5px; color: var(--bn-mute); }
+}
+@media (max-width: 560px) {
+  .site-head .head-row { min-height: 0; padding-block: 2px 0; row-gap: 0; }
+  .brand-mark { width: 28px; height: 28px; }
+  .brand-word { font-size: 18px; }
+  .head-nav { border-top: 0; padding-top: 0; padding-bottom: 6px; }
+}
