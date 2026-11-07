@@ -12,8 +12,9 @@ const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); con
 const browser = await chromium.launch();
 const quickIds = ["A02", "B01", "B03", "C01", "D01", "E01", "F01", "G01", "H01", "I01", "I05", "J01", "K01", "K04", "L01"].filter((id) => bank.questions.some((q) => q.id === id));
 const state = (o = {}) => ({ v: 2, bank: bank.version, prov: "madrid", mode: "rapida", seed: 7, order: quickIds, idx: 0, ans: Object.fromEntries(quickIds.map((id, i) => [id, [4, 2, 5, 3, 1][i % 5]])), imp: {}, prios: [], stage: "done", t: 1, ...o });
-async function open(w = 390, h = 844, dark = false) {
+async function open(w = 390, h = 844, dark = false, apple = false) {
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, colorScheme: dark ? "dark" : "light", permissions: ["clipboard-read", "clipboard-write"] });
+  if (apple) await ctx.addInitScript(() => { window.ApplePaySession = { canMakePayments: () => true }; });
   const page = await ctx.newPage();
   page.on("pageerror", (e) => errors.push(String(e)));
   page.on("console", (m) => { if (m.type() === "error" && !/goatcounter|favicon/i.test(m.text())) errors.push(m.text()); });
@@ -90,10 +91,15 @@ console.log("Pulsar otra vez para ocultar");
   ok(await page.evaluate(() => Number(document.querySelector("#nav-pct").textContent) > 0 && /scaleX\(0\.[0-9]*[1-9]|scaleX\(1\)/.test(document.querySelector("#nav-bar").style.transform)), "muestra cuánto llevas leído");
   await ctx.close();
 }
-console.log("Repetir y donar desde el resumen");
+console.log("Repetir y donar desde el resumen (PayPal retirado el 7 nov: «Donar» solo con Apple Pay)");
 {
   const { ctx, page } = await open(390, 844);
-  ok(await page.isVisible('#r-summary [data-act="new"]') && await page.isVisible('#r-summary a[href="#r-support"]'), "el resumen ofrece «Repetir el test» y «Donar» junto a compartir");
+  ok(await page.isVisible('#r-summary [data-act="new"]') && (await page.locator('#r-summary a[href="#r-support"]').count()) === 0, "sin método de pago disponible, el resumen ofrece «Repetir el test» y no «Donar»");
+  await ctx.close();
+}
+{
+  const { ctx, page } = await open(390, 844, false, true);
+  ok(await page.isVisible('#r-summary [data-act="new"]') && await page.isVisible('#r-summary a[href="#r-support"]'), "con Apple Pay, el resumen ofrece «Repetir el test» y «Donar» junto a compartir");
   await page.click('#r-summary a[href="#r-support"]'); await page.waitForTimeout(700);
   ok(!(await page.isHidden("#r-full")) && await page.isVisible("#r-support a.btn"), "«Donar» despliega y lleva a las opciones de aportación");
   await ctx.close();
