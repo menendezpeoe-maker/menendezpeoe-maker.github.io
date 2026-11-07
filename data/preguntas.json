@@ -355,6 +355,7 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
+    "falange": 2,
     "ie": 2,
     "ph": 4
    },
@@ -483,6 +484,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
      "programa",
      "2025-12"
+    ],
+    "falange": [
+     "https://falange.es/nuestras-ideas/",
+     "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -497,7 +504,8 @@
     "upc": "Propone una profunda reforma fiscal para cerrar la brecha de ingresos con la media europea y que contribuyan más grandes empresas, patrimonios y rentas altas.",
     "pcte": "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos.",
     "ph": "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
-    "ie": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios."
+    "ie": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
+    "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos."
    }
   },
   {
@@ -1022,7 +1030,7 @@
     "vox": 4,
     "fa": 1,
     "pod": 1,
-    "salf": 5,
+    "salf": 4,
     "d21": 3,
     "erc": 2,
     "junts": 4,
@@ -1061,6 +1069,12 @@
      "Programa electoral de Vox de 2023, medida 178",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+     "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+     "prensa",
+     "2024-06"
     ]
    },
    "why": {
@@ -1068,7 +1082,8 @@
     "pp": "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite.",
     "vox": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
     "pod": "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
-    "erc": "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite."
+    "erc": "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
+    "salf": "Estimación: Alvise promete estimular el uso del efectivo frente al euro digital; no cita el límite de 1.000 euros, por eso la base es indirecta."
    }
   },
   {
@@ -4675,7 +4690,7 @@
     "vox": 1,
     "fa": 4,
     "pod": 5,
-    "salf": 2,
+    "salf": 4,
     "d21": 1,
     "erc": 5,
     "junts": 5,
@@ -4769,6 +4784,12 @@
      "Programa electoral del Partido Humanista de 2023, p. 21",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+     "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+     "prensa",
+     "2024-06"
     ]
    },
    "why": {
@@ -4784,7 +4805,8 @@
     "cha": "CHA propone convocar referéndums para avanzar hacia una república federal.",
     "bng": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
     "upn": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
-    "ph": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum."
+    "ph": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum.",
+    "salf": "Estimación: según la crónica, Alvise se mostró dispuesto a prescindir de la figura del rey; no cita un referéndum."
    }
   },
   {
@@ -6347,7 +6369,7 @@
     "adel": 1,
     "pcte": 2,
     "fo": 5,
-    "falange": 4,
+    "falange": 5,
     "ie": 5,
     "ph": 1
    },
@@ -6444,10 +6466,10 @@
      "2026-10"
     ],
     "falange": [
-     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
-     "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+     "https://falange.es/nuestras-ideas/",
+     "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
@@ -6482,7 +6504,7 @@
     "upc": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
     "adel": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
     "fo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna.",
-    "falange": "Propone repatriar a los extranjeros, legales o ilegales, sin contrato de trabajo, y expulsar a los que tengan antecedentes.",
+    "falange": "Propone la «remigración»: devolver a sus países a millones de personas que han fracasado en su integración social.",
     "ie": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
     "ph": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
     "pcte": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones."
@@ -8750,7 +8772,7 @@
     "vox": 1,
     "fa": 4,
     "pod": 3,
-    "salf": 1,
+    "salf": 2,
     "pacma": 3,
     "d21": 5,
     "erc": 4,
@@ -8861,6 +8883,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
      "programa",
      "2025-12"
+    ],
+    "salf": [
+     "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+     "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+     "prensa",
+     "2024-06"
     ]
    },
    "why": {
@@ -8875,7 +8903,8 @@
     "pcte": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas.",
     "fo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional.",
     "falange": "Propone una salida escalonada y pactada de la UE, con refundación centrada en la soberanía nacional.",
-    "ie": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE."
+    "ie": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
+    "salf": "Estimación: según la crónica, Alvise propone un referéndum para salir de la UE si no se renegocian las relaciones con Bruselas."
    }
   },
   {
