@@ -20,21 +20,20 @@ No incluidos por no tener correo público verificable (formulario, 403 o bloqueo
 - elDiario.es Illes Balears: illesbalears@eldiario.es
 - elDiario.es Andalucía: andalucia@eldiario.es
 
-## Texto base
+## Texto base (versión final, 7 nov)
 
-Asunto: Test 29N: test político gratuito con la fuente de cada postura y las candidaturas de cada provincia
+Asunto: 29N: un test político que enseña la fuente de cada postura (y marca las que no la tienen)
 
 Hola:
 
-Os escribo por si os resulta útil para vuestra cobertura del 29N. He hecho Test 29N (https://test29n.es), un test político gratuito e independiente, sin registro ni cookies.
+Hay varios tests para el 29N. Este intenta distinguirse por algo concreto: para cada partido, enseña de dónde sale cada postura.
 
-Lo que lo distingue:
-- Cada postura documentada de cada partido lleva su fuente enlazada (votaciones del Congreso, programas y declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas» y pesan menos en el cálculo.
-- Muestra las candidaturas que se presentan en cada provincia, incluidos los partidos autonómicos, con sus cabezas de lista según el BOE.
-- Tiene versiones de 15, 24, 48 y 107 preguntas, y tests cortos por tema.
-- La metodología es pública: https://test29n.es/metodologia/
+Test 29N (https://test29n.es) es gratuito, independiente y sin registro ni cookies:
+- 874 posturas llevan su fuente enlazada (votaciones del Congreso, programas, declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas» y pesan menos en el cálculo: no se disimula.
+- 107 preguntas (también versiones de 15, 24 y 48) y 24 candidaturas filtradas por provincia, incluidos los partidos autonómicos, con sus cabezas de lista según el BOE.
+- Cada resultado se explica con el cálculo y las fuentes a la vista. Metodología pública: https://test29n.es/metodologia/
 
-No es una encuesta ni recomienda voto: solo mide la coincidencia de ideas. Si veis cualquier error en una postura, lo corrijo. Y si preferís no recibir más correos míos, decídmelo y no escribo más.
+No es una encuesta ni recomienda voto: solo mide la coincidencia de ideas. Si veis algún error en una postura, lo corrijo. Y si preferís no recibir más correos míos, decídmelo y no escribo más.
 
 Un saludo,
 Dery
