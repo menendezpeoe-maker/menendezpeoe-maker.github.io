@@ -622,6 +622,9 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-varian
 .sbtn-x { background: var(--ink); color: var(--paper); }
 .sbtn-x small { color: var(--paper); opacity: .75; }
 .sbtn-x:hover { background: var(--ink-2); }
+.sbtn-tg { background: var(--sheet); color: var(--ink); }
+.sbtn-tg small { color: var(--ink-2); }
+.sbtn-tg:hover { background: var(--paper); }
 .sbtn-copy { background: var(--mark); color: var(--mark-ink); border-color: var(--mark-ink); }
 .sbtn-copy small { color: var(--mark-ink); opacity: .75; }
 .sbtn-copy:hover { background: var(--mark); filter: brightness(.97); }

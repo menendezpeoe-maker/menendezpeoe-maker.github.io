@@ -1989,10 +1989,13 @@ function buildShareText() {
 const xLength = (t) => [...t.replace(/https?:\/\/\S+/g, "x".repeat(23))].length;
 const xHref = (t) => `https://x.com/intent/tweet?text=${encodeURIComponent(t)}`;
 const waHref = (t) => `https://wa.me/?text=${encodeURIComponent(t)}`;
+// Telegram pide el enlace aparte: se separa del texto para que no salga repetido
+const tgHref = (t) => `https://t.me/share/url?url=${encodeURIComponent(PUBLIC_URL)}&text=${encodeURIComponent(t.split(PUBLIC_URL).join("").replace(/\s*Haz el test aquí:\s*$/m, "").trim())}`;
 
 const SVG = {
   x: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
   wa: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M4.2 19.8l1.1-3.9A8.6 8.6 0 1 1 8.4 19l-4.2.8z"/><path fill="currentColor" d="M9 7.6c.3-.1.6 0 .7.3l.7 1.6c.1.3 0 .5-.1.7l-.5.6c.6 1.2 1.6 2.2 2.8 2.8l.6-.5c.2-.2.5-.2.7-.1l1.6.7c.3.1.4.4.3.7-.3 1-1.2 1.6-2.2 1.4-2.8-.6-5-2.8-5.6-5.6-.2-1 .4-1.9 1.4-2.2z"/></svg>',
+  tg: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M21 4L3 11.2l5.6 2L10.8 20l3.1-3.8 4.6 3.4z"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M8.6 13.2L21 4"/></svg>',
   ig: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg>',
   copy: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></svg>',
   dl: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -2022,10 +2025,11 @@ function renderShare() {
         <div class="share-btns">
           <a class="sbtn sbtn-x" id="sh-x" href="${xHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.x}<span><b>Publicar en X</b><small>Se abre X con el texto listo</small></span></a>
           <a class="sbtn sbtn-wa" id="sh-wa" href="${waHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.wa}<span><b>Enviar por WhatsApp</b><small>Eliges tú el chat o grupo</small></span></a>
+          <a class="sbtn sbtn-tg" id="sh-tg" href="${tgHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.tg}<span><b>Enviar por Telegram</b><small>Eliges tú el chat o grupo</small></span></a>
           <button type="button" class="sbtn sbtn-ig" id="sh-ig">${SVG.ig}<span><b>Imagen para Instagram</b><small>Historia vertical para subir tú</small></span></button>
           <button type="button" class="sbtn sbtn-copy" id="sh-copy">${SVG.copy}<span><b>Copiar mensaje</b><small>Al portapapeles</small></span></button>
         </div>
-        <p class="share-help">X y WhatsApp se abren con el mensaje preparado para que lo revises: nada se publica ni se envía sin que lo confirmes. Instagram no permite publicar desde una web, así que preparamos la imagen vertical y, si tu móvil lo permite, abrimos el menú de compartir para que elijas Instagram; si no, se descarga para que la subas a tu historia.</p>
+        <p class="share-help">X, WhatsApp y Telegram se abren con el mensaje preparado para que lo revises: nada se publica ni se envía sin que lo confirmes. Instagram no permite publicar desde una web, así que preparamos la imagen vertical y, si tu móvil lo permite, abrimos el menú de compartir para que elijas Instagram; si no, se descarga para que la subas a tu historia.</p>
         <p class="sh-status" id="sh-status" role="status" aria-live="polite"></p>
         <div class="share-more">
           <button type="button" class="btn btn-ghost btn-sm" id="sh-dl">${SVG.dl}Descargar imagen PNG</button>
@@ -2042,8 +2046,8 @@ function renderShare() {
 }
 function updateShareLinks() {
   const t = SH.text;
-  const x = $("#sh-x"), w = $("#sh-wa"); if (!x) return;
-  x.href = xHref(t); w.href = waHref(t);
+  const x = $("#sh-x"), w = $("#sh-wa"), g = $("#sh-tg"); if (!x) return;
+  x.href = xHref(t); w.href = waHref(t); if (g) g.href = tgHref(t);
   const n = xLength(t);
   $("#sh-count").textContent = n > 280 ? `Para X: ${n}/280 caracteres. Acórtalo un poco o X te pedirá recortarlo.` : `Para X: ${n}/280 caracteres.`;
 }
@@ -2150,10 +2154,11 @@ function bindShare() {
     }
   });
   root.addEventListener("click", (e) => {
-    const el = e.target.closest("#sh-x, #sh-wa, #sh-ig, #sh-copy, #sh-dl, #sh-invite, #sh-full"); if (!el) return;
+    const el = e.target.closest("#sh-x, #sh-wa, #sh-tg, #sh-ig, #sh-copy, #sh-dl, #sh-invite, #sh-full"); if (!el) return;
     count("compartir", "Compartir", true);
     if (el.id === "sh-x") shareStatus("Se ha abierto X en otra pestaña con tu mensaje. Revísalo y publícalo si quieres.", "ok");
     else if (el.id === "sh-wa") shareStatus("Se ha abierto WhatsApp con tu mensaje. Elige el chat o grupo y envíalo.", "ok");
+    else if (el.id === "sh-tg") shareStatus("Se ha abierto Telegram con tu mensaje. Elige el chat o grupo y envíalo.", "ok");
     else if (el.id === "sh-ig") shareInstagram();
     else if (el.id === "sh-copy") copyText(SH.text, "Mensaje copiado", $("#sh-text")).then((ok) => ok && shareStatus("Mensaje copiado. Pégalo donde quieras.", "ok"));
     else if (el.id === "sh-dl") downloadCard(SH.fmt);
