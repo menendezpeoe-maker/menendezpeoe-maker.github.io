@@ -1,0 +1,13 @@
+[
+ {"nombre":"Iñigo Aduriz y equipo de Datos","medio":"elDiario.es (boletín 'La carrera del 29N')","via":"Solo el contacto general contacto@eldiario.es indicado en el artículo (dirección genérica, no se usa) y comentarios","url":"https://www.eldiario.es/redaccion/carrera-29n-nuevo-boletin-temporal-entender-campana-electoral-vistazo_132_13607572.html"},
+ {"nombre":"Toni Castillo","medio":"Genbeta (escribió sobre un agregador de encuestas)","via":"Su página de autor solo muestra un gmail personal; no se usa. Redes","url":"https://www.genbeta.com/autor/toni-castillo"},
+ {"nombre":"José Alberto Lizana","medio":"Genbeta (comparador de programas con IA, 23J)","via":"Solo gmail personal en su página de autor; no se usa","url":"https://www.genbeta.com/autor/jose-alberto-lizana"},
+ {"nombre":"Matthew Bennett","medio":"The Spain Report (newsletter, política española)","via":"Sin correo; solo Substack y redes","url":"https://thespainreport.substack.com/about"},
+ {"nombre":"Antonio Papell","medio":"Newsletter en Substack","via":"Sin correo; solo suscripción Substack","url":"https://antoniopapell.substack.com/about"},
+ {"nombre":"Javier Villamor","medio":"Newsletter en Substack (UE/OTAN)","via":"Sin correo en la página; redes y web jvillamor.com","url":"https://javiervillamor.substack.com/p/por-que-existe-esta-newsletter-y"},
+ {"nombre":"Berto Sagrera","medio":"ElNacional.cat (política, encuestas 29N)","via":"Solo redacción general (redaccio@elnacional.cat), no se usa","url":"https://www.elnacional.cat/es/firmas/berto-sagrera"},
+ {"nombre":"Antonio León","medio":"esTenerife (Canarias, encuestas 29N)","via":"Su página de autor no muestra correo, solo formulario /contacto/","url":"https://estenerife.com/author/antonio-leon/"},
+ {"nombre":"Mario Lera","medio":"Gasteiz Hoy (artículo sobre IA y 29N)","via":"Sin correo legible; página Quiénes somos con correos ofuscados","url":"https://www.gasteizhoy.com/inteligencia-artifical-elecciones-generales-29n/"},
+ {"nombre":"Equipo Politikon","medio":"Politikon (análisis político con datos)","via":"Solo contacto@politikon.es genérico, sin nombres verificados","url":"https://politikon.es/contacto/"},
+ {"nombre":"Redacciones Newtral, El País, El Confidencial, Maldita","medio":"Varios","via":"No abren (403 o dominio no permitido): sin correo verificable","url":"https://newtral.es/contacto/"}
+]

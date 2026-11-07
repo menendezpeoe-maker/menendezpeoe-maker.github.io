@@ -1,0 +1,14 @@
+[
+ {"nombre":"Simple Política (Adrián Caballero)","plataforma":"podcast","via":"formulario (sin correo publicado)","url":"https://www.simplepolitica.com/contacta-simple-politica/"},
+ {"nombre":"Politikon (blog colectivo de política y economía)","plataforma":"blog","via":"correo general contacto@politikon.es publicado en https://politikon.es/contacto/, pero la web parece inactiva (última entrada vista: abril de 2022); descartado por inactivo","url":"https://politikon.es/contacto/"},
+ {"nombre":"Notas de campaña (César Calderón)","plataforma":"newsletter","via":"solo formulario en su consultora RedLines; correo oculto en Reletter","url":"https://redlines.es"},
+ {"nombre":"Compol Matters (Marta García Bruno)","plataforma":"newsletter","via":"solo redes (X); correo oculto en Reletter","url":"https://compolmatters.substack.com/about"},
+ {"nombre":"Conversación continua (Martín Sosa Dirié)","plataforma":"newsletter","via":"ninguno visible (correo oculto en Reletter)","url":"https://conversacioncontinua.substack.com"},
+ {"nombre":"Marc Vidal","plataforma":"blog","via":"formulario","url":"https://www.marcvidal.net"},
+ {"nombre":"Comunicación & Política (podcast de ACOP)","plataforma":"podcast","via":"ninguno en iVoox; es de una asociación profesional","url":"https://www.ivoox.com/en/podcast-comunicacion-politica_sq_f11389192_1.html"},
+ {"nombre":"Esto también es política (Mario Girón y Miguel Rodríguez)","plataforma":"podcast","via":"solo Spreaker/Patreon; correo solo ofuscado en directorios","url":"https://www.spreaker.com/podcast/esto-tambien-es-politica--1892630"},
+ {"nombre":"Rubén Gisbert","plataforma":"youtube","via":"solo redes/YouTube; la web rubengisbert.com está en venta y el «Acerca de» de YouTube no abre por WebFetch","url":"https://www.youtube.com/c/LaGuaridaDelZorrovideos"},
+ {"nombre":"VisualPolitik","plataforma":"youtube","via":"no verificable (página de contacto 404; el «Acerca de» de YouTube no abre)","url":"https://www.youtube.com/@VisualPolitikES"},
+ {"nombre":"Juan Ramón Rallo","plataforma":"blog","via":"web con HTTP 503 al abrirla","url":"https://juanramonrallo.com"},
+ {"nombre":"Lawtips (Andrés Millán)","plataforma":"tiktok","via":"web sin correo de colaboraciones (solo correo de protección de datos de otra empresa)","url":"https://www.lawtips.es"}
+]
