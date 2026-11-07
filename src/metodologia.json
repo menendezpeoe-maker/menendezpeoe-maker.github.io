@@ -3,8 +3,8 @@
  "datos": "2026-11-07",
  "preguntas": 107,
  "imitacion": {
-  "total": 26,
-  "primero": 26,
+  "total": 29,
+  "primero": 29,
   "detalle": [
    {
     "pid": "psoe",
@@ -161,6 +161,24 @@
     "prov": "madrid",
     "primero": true,
     "pct": 88
+   },
+   {
+    "pid": "falange",
+    "prov": "cordoba",
+    "primero": true,
+    "pct": 94
+   },
+   {
+    "pid": "ie",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 72
+   },
+   {
+    "pid": "ph",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 72
    }
   ]
  },
@@ -171,11 +189,11 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 109
+    "n": 108
    },
    {
     "pid": "pp",
-    "n": 86
+    "n": 85
    },
    {
     "pid": "d21",
@@ -206,12 +224,16 @@
     "n": 2
    },
    {
+    "pid": "falange",
+    "n": 2
+   },
+   {
     "pid": "pod",
     "n": 1
    }
   ],
   "mediaPrimero": 61,
-  "mediaDistancia": 1.9
+  "mediaDistancia": 1.8
  },
  "neutral": [
   {
@@ -395,6 +417,24 @@
    "conocidas": 26,
    "estimadas": 0,
    "conFuente": 26
+  },
+  {
+   "pid": "falange",
+   "conocidas": 32,
+   "estimadas": 0,
+   "conFuente": 32
+  },
+  {
+   "pid": "ie",
+   "conocidas": 14,
+   "estimadas": 0,
+   "conFuente": 14
+  },
+  {
+   "pid": "ph",
+   "conocidas": 14,
+   "estimadas": 0,
+   "conFuente": 14
   }
  ]
 }

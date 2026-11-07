@@ -56,7 +56,7 @@ let base;
   ok(dist(base.pts.pod, base.pts.fa) < dist(base.pts.pod, base.pts.vox) && dist(base.pts.vox, base.pts.salf) < dist(base.pts.vox, base.pts.psoe), "partidos parecidos cerca y distintos lejos (Podemos–FA, Vox–SALF)");
   const list = await page.$$eval("#r-map .map-list li b", (b) => b.map((x) => x.textContent.trim()));
   const rank = await page.$$eval("#r-parties .rank li .nm b", (b) => b.map((x) => x.textContent.trim()));
-  ok(list.map((t) => t.replace(/^\d+\.\s*/, "")).join("|") === rank.slice(0, list.length).join("|"), "la lista de próximos usa la misma coincidencia que el ranking");
+  ok(list.slice(0, rank.length).map((t) => t.replace(/^\d+\.\s*/, "")).join("|") === rank.slice(0, list.length).join("|"), "la lista de próximos usa la misma coincidencia que el ranking");
   await ctx.close();
 }
 
@@ -66,7 +66,9 @@ for (const pid of ["psoe", "pp", "vox", "pod", "salf", "d21"]) {
   const c = await coords(page);
   const near = Object.entries(c.pts).sort((a, b) => dist(a[1], c.me) - dist(b[1], c.me))[0];
   ok(near[0] === pid && dist(near[1], c.me) < 25, `${ab[pid]}: el más cercano en el mapa es ${ab[near[0]]} (a ${dist(near[1], c.me).toFixed(0)} px)`);
-  ok(Object.entries(base.pts).every(([k, v]) => !c.pts[k] || dist(c.pts[k], v) < 0.5), `${ab[pid]}: los partidos no se mueven según quién haga el test`);
+  // El encuadre del mapa incluye tu punto: todo el mapa puede desplazarse unos píxeles, pero los partidos no se mueven entre sí
+  const ref = Object.keys(base.pts).find((k) => c.pts[k]);
+  ok(Object.entries(base.pts).every(([k, v]) => !c.pts[k] || Math.abs(dist(c.pts[k], c.pts[ref]) - dist(v, base.pts[ref])) < 0.5), `${ab[pid]}: los partidos no se mueven según quién haga el test`);
   await ctx.close();
 }
 

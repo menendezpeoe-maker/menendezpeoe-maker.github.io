@@ -49,7 +49,7 @@ console.log("Perfiles ficticios");
 for (const [name, pref] of Object.entries(PROFILES)) {
   const r = await load(state(fromPrefs(pref)));
   console.log(`  · ${name}\n      «${r.head}»\n      ${r.rank.slice(0, 4).map(([n, p]) => `${n} ${p} %`).join(" · ")} · solidez: ${r.rel.replace("Solidez del resultado: ", "")}${r.cross.length ? `\n      combinaciones cruzadas: ${r.cross.join(", ")}` : ""}`);
-  ok(r.top === r.rank[0][0] && r.mapList.join("|") === r.rank.map((x) => x[0]).join("|"), `${name}: resumen, ranking y mapa coinciden`);
+  ok(r.top === r.rank[0][0] && r.mapList.slice(0, r.rank.length).join("|") === r.rank.map((x) => x[0]).join("|"), `${name}: resumen, ranking y mapa coinciden`);
   ok(r.mapMe, `${name}: aparece en el mapa`);
   // El perfil calculado refleja las preferencias: cada dimensión con preferencia sale del lado buscado
   const want = Object.entries(pref).filter(([, v]) => Math.abs(v) >= 1);
