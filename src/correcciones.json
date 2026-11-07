@@ -353,6 +353,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "I08",
+  "partido": "salf",
+  "de": 5,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal».",
+  "fuente": [
+   "https://www.esdiario.com/nacional/240905/142458/alvise-perez-antitaurino-polemica-votacion-aplausos-izquierda.html",
+   "ESdiario, voto de Alvise Pérez en la comisión de Agricultura del Parlamento Europeo, 05/09/2024",
+   "parlamento",
+   "2024-09-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "K01",
   "partido": "upc",
   "de": 1,
@@ -413,6 +429,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 195",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L04",
+  "partido": "bildu",
+  "de": 1,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo.",
+  "fuente": [
+   "https://orain.eus/es/actualidad/sociedad/2017/07/04/eh-bildu-favor-gestacion-subrogada/",
+   "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
+   "declaracion",
+   "2017-07-04"
   ]
  },
  {
