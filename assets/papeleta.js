@@ -30,6 +30,8 @@ const MIN_COVERAGE = 0.5;   // por debajo, la coincidencia se acerca al 50 %
 // Tests por tema (misma lista que src/temas.src.mjs)
 const TOPICS = {"vivienda":{"label":"Vivienda","code":"v","ids":["B01","B02","B03","B04","B05","B06","B07"]},"inmigracion":{"label":"Inmigración","code":"i","ids":["F01","F02","F03","F04","F05","H09","L09"]},"economia":{"label":"Impuestos y economía","code":"k","ids":["A01","A02","A03","A04","A05","A08","A10"]},"sanidad":{"label":"Sanidad","code":"s","ids":["J01","J02","J03","J04","J07","J08"]},"energia":{"label":"Energía y medioambiente","code":"g","ids":["G01","G02","G03","G04","G05","G08","G09"]},"territorio":{"label":"Territorio","code":"x","ids":["C01","C02","C03","C04","C05","C07"]}};
 const topicOf = (st) => (st && st.mode === "tema" && TOPICS[st.topic]) || null;
+const MODE_M = { rapida: "Rápido", expres: "Exprés", media: "Medio", completa: "Completo" }; // concuerda con «resultado»
+const modeLabelM = (st) => (topicOf(st) ? modeLabel(st) : MODE_M[st?.mode] || modeLabel(st));
 const modeLabel = (st) => { const t = topicOf(st); return t ? `Test de ${t.label.toLowerCase()}` : (MODES[st?.mode]?.label || ""); };
 const MODES = {
   rapida: { label: "Rápida", mins: 3 },
@@ -1112,7 +1114,7 @@ function renderSummary() {
   const li = (i) => `<li><b>${esc(i.q.short)}</b><span>${SHARED ? "Esta persona" : "Tú"}: ${esc(ansBrief(i.q, i.u))} · ${esc(P[top.pid].ab)}: ${esc(ansBrief(i.q, i.v))}${i.est ? " (estimada)" : ""}</span></li>`;
   $("#r-summary").innerHTML = `
     <div class="ballot">
-      <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${esc(modeLabel(st))}</span><span>Congreso · ${esc(pr.name)}</span></div>
+      <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${esc(modeLabelM(st))}</span><span>Congreso · ${esc(pr.name)}</span></div>
       <div class="ballot-body sum-body">
         <div class="top-match">
           <p class="label">${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}</p>
