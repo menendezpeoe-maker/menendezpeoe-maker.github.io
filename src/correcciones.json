@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "A01",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende reducir la jornada laboral y repartir el empleo manteniendo y aumentando los salarios; no fija 37,5 horas ni habla de ley.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=11",
+   "Programa electoral del Partido Humanista de 2023, p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "A02",
   "partido": "pcte",
   "de": 0,
@@ -66,6 +82,22 @@
  {
   "fecha": "2026-11-07",
   "id": "A05",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=13",
+   "Programa electoral del Partido Humanista de 2023, p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A05",
   "partido": "vox",
   "de": 2,
   "a": 3,
@@ -77,6 +109,22 @@
    "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
    "parlamento",
    "2023-03-30"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A09",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone nacionalizar o participar en industrias estratégicas y estatalizar las empresas de I+D de defensa; no plantea vender participaciones.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -98,6 +146,38 @@
  {
   "fecha": "2026-11-07",
   "id": "B01",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la fijación de un precio máximo de alquiler de viviendas.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B01",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone eliminar las políticas de control de alquiler por ineficaces y por haber reducido la oferta.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B01",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -107,6 +187,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B01",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone alquiler social con renta máxima del 30% de los ingresos como forma de regular unos alquileres que juzga abusivos.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "Programa electoral del Partido Humanista de 2023, p. 14",
    "programa",
    "2023-07"
   ]
@@ -130,6 +226,22 @@
  {
   "fecha": "2026-11-07",
   "id": "B02",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone un Instituto Nacional de Vivienda con parque social, construcción de vivienda pública y precio máximo de alquiler.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B02",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -139,6 +251,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B02",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una bolsa de alquiler con viviendas vacías, parque público en alquiler y alquiler social; no plantea liberar suelo.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "Programa electoral del Partido Humanista de 2023, p. 14",
    "programa",
    "2023-07"
   ]
@@ -157,6 +285,22 @@
    "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
    "parlamento",
    "2025-03-18"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B03",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone desalojo inmediato de okupas, en menos de 24 horas desde la denuncia, con penas más duras.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+   "programa",
+   "2025-12"
   ]
  },
  {
@@ -193,6 +337,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "B04",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "Programa electoral del Partido Humanista de 2023, p. 14",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "B05",
   "partido": "pp",
   "de": 3,
@@ -205,6 +365,22 @@
    "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36",
    "programa",
    "2025-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B08",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone restaurar el Instituto Nacional de Vivienda para crear un parque de vivienda social y construir vivienda pública.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -226,6 +402,22 @@
  {
   "fecha": "2026-11-07",
   "id": "C01",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende la unidad nacional y disolver las autonomías, retirándoles antes todas sus competencias.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C01",
   "partido": "fo",
   "de": 0,
   "a": 1,
@@ -242,6 +434,22 @@
  {
   "fecha": "2026-11-07",
   "id": "C03",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una educación unificada para toda España, con currículos y pruebas iguales en todo el territorio.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C03",
   "partido": "fo",
   "de": 0,
   "a": 5,
@@ -253,6 +461,38 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C04",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Rechaza el régimen autonómico de 1978 y propone disolver las comunidades; no plantea un Estado federal.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C05",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -285,6 +525,38 @@
    "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C06",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende conservar la provincia y el municipio como base y disolver las autonomías, no las diputaciones.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C06",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
+   "programa",
+   "2025-12"
   ]
  },
  {
@@ -354,6 +626,22 @@
  {
   "fecha": "2026-11-07",
   "id": "D01",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D01",
   "partido": "vox",
   "de": 3,
   "a": 4,
@@ -365,6 +653,102 @@
    "«100 medidas para la España viva» de Vox (2019), medida 11",
    "programa",
    "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D02",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone listas abiertas y elección directa de diputados y senadores, sin listas cerradas.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D03",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone que el Consejo General del Poder Judicial sea elegido por los jueces y magistrados.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=17",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 17",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D03",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone que el CGPJ lo elijan por sufragio directo y secreto los propios jueces y magistrados en activo.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=10",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 10",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D07",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=21",
+   "Programa electoral del Partido Humanista de 2023, p. 21",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E01",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone aumentar las penas por delitos comunes e incrementarlas por reincidencia.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=20",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 20",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E02",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone introducir la cadena perpetua no revisable para asesinato, violación, pederastia y terrorismo.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=17",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 17",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -401,6 +785,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "E05",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Rechaza el control social mediante el euro digital, el control biométrico y los reconocimientos faciales.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 26",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E07",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone blindar en la Constitución la acción popular y prohibir cualquier restricción a su ejercicio.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=12",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "E09",
   "partido": "upc",
   "de": 5,
@@ -411,6 +827,22 @@
   "fuente": [
    "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=94",
    "Programa electoral de Sumar para el 23J de 2023, p. 94",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F01",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone repatriar a los extranjeros que residan en España sin contrato de trabajo y fronteras cerradas.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
    "programa",
    "2023-07"
   ]
@@ -433,6 +865,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "F01",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Rechaza regularizar: quien entre ilegalmente será expulsado sin derecho a regularización.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F02",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone repatriar a los extranjeros, legales o ilegales, sin contrato de trabajo, y expulsar a los que tengan antecedentes.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "F02",
   "partido": "fo",
   "de": 0,
@@ -449,6 +913,54 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "F02",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F02",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "Programa electoral del Partido Humanista de 2023, p. 24",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F03",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone que solo los españoles accedan a los servicios del Estado del bienestar: educación, sanidad, ayudas y vivienda.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=3",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 3",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "F03",
   "partido": "fo",
   "de": 0,
@@ -461,6 +973,38 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F03",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone el reconocimiento de iguales derechos y oportunidades para todos, también para los inmigrantes.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "Programa electoral del Partido Humanista de 2023, p. 24",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F04",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -493,6 +1037,38 @@
    "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
    "programa",
    "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F08",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "Programa electoral del Partido Humanista de 2023, p. 17",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G01",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone anular el plan de cierre de nucleares y potenciar la energía nuclear como fuente principal.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -546,6 +1122,22 @@
  {
   "fecha": "2026-11-07",
   "id": "G02",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G02",
   "partido": "pacma",
   "de": 3,
   "a": 4,
@@ -573,6 +1165,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 195",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G05",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone nacionalizar la producción, transporte y distribución de la energía, acabando con el oligopolio.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -610,6 +1218,22 @@
  {
   "fecha": "2026-11-07",
   "id": "G09",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone nuclear como fuente principal, ciclo combinado e hidráulica, y frenar la transición energética.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G09",
   "partido": "fo",
   "de": 0,
   "a": 2,
@@ -621,6 +1245,70 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G09",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H01",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone aumentar el presupuesto de defensa; no fija una cifra concreta sobre el PIB.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H01",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone reducir drásticamente el presupuesto militar y el armamentismo, y desarme progresivo y proporcional.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=8",
+   "Programa electoral del Partido Humanista de 2023, p. 8",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H02",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una salida escalonada y pactada de la UE, con refundación centrada en la soberanía nacional.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=7",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 7",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -637,6 +1325,22 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H02",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
+   "programa",
+   "2025-12"
   ]
  },
  {
@@ -722,6 +1426,22 @@
  {
   "fecha": "2026-11-07",
   "id": "H06",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone el abandono inmediato de la OTAN por parte de España.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H06",
   "partido": "fo",
   "de": 0,
   "a": 1,
@@ -738,6 +1458,22 @@
  {
   "fecha": "2026-11-07",
   "id": "H06",
+  "partido": "ie",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone referéndum vinculante para salir de la OTAN y reclama la neutralidad de España.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 14",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H06",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -747,6 +1483,38 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H06",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Pide la salida de España de la OTAN, como en todos sus programas electorales.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=3",
+   "Programa electoral del Partido Humanista de 2023, p. 3",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H09",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Rechaza la externalización de fronteras y las «plataformas-prisiones» y propone destinar esos fondos a la acogida.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "Programa electoral del Partido Humanista de 2023, p. 24",
    "programa",
    "2023-07"
   ]
@@ -802,6 +1570,22 @@
  {
   "fecha": "2026-11-07",
   "id": "I02",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una educación nacional gratuita y de calidad desde las primeras etapas hasta los estudios universitarios.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I02",
   "partido": "fo",
   "de": 0,
   "a": 2,
@@ -827,6 +1611,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=7",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 7",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I02",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende una educación pública, gratuita y de calidad en todos los niveles, desde infantil hasta la universidad.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "Programa electoral del Partido Humanista de 2023, p. 17",
    "programa",
    "2023-07"
   ]
@@ -859,6 +1659,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I05",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone que las asignaturas básicas se impartan en español, con enseñanza de lenguas regionales aparte.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
    "programa",
    "2023-07"
   ]
@@ -914,6 +1730,22 @@
  {
   "fecha": "2026-11-07",
   "id": "I08",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone protección especial a la tauromaquia, facilitando festejos con patrocinio de la Administración Pública.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=16",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 16",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I08",
   "partido": "salf",
   "de": 5,
   "a": 1,
@@ -925,6 +1757,22 @@
    "ESdiario, voto de Alvise Pérez en la comisión de Agricultura del Parlamento Europeo, 05/09/2024",
    "parlamento",
    "2024-09-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J01",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone poner fin a las prácticas de externalización y privatización de la sanidad.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -955,6 +1803,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J01",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Sostiene que la solución no es la privatización sino mejorar la gestión pública con transparencia; la salud no puede ser negocio.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
+   "Programa electoral del Partido Humanista de 2023, p. 19",
    "programa",
    "2023-07"
   ]
@@ -994,6 +1858,22 @@
  {
   "fecha": "2026-11-07",
   "id": "J08",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone unificar el Sistema Nacional de Salud: uno solo para toda España.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J08",
   "partido": "fo",
   "de": 0,
   "a": 5,
@@ -1019,6 +1899,22 @@
   "fuente": [
    "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=142",
    "Programa electoral de Sumar para el 23J de 2023, p. 142",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K02",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 13",
    "programa",
    "2023-07"
   ]
@@ -1105,6 +2001,54 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "L01",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone ilegalizar las leyes del aborto y de la eutanasia: la vida humana no es negociable.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L02",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone ilegalizar las leyes que permiten arrebatar la vida, como la del aborto y la eutanasia.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L03",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone derogar todas las leyes que reconozcan a los colectivos LGTBI.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "L03",
   "partido": "fo",
   "de": 0,
@@ -1163,6 +2107,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=17",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 17",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L05",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende un Estado confesional católico y fomentar el culto católico.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=6",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 6",
    "programa",
    "2023-07"
   ]
