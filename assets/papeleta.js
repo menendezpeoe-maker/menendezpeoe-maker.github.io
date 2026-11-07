@@ -11,7 +11,7 @@ const PUBLIC_URL = "https://test29n.es/";
 // Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
 const DONATE = {
   paypal: "",     // retirado el 7 nov 2026 (decisión del titular); vacío = no se muestra
-  applePay: "",   // retirado el 7 nov 2026 por motivos legales (sin aportaciones no hay actividad económica que identificar); enlace anterior en el historial de git
+  applePay: "https://buy.stripe.com/7sYaEYcq8bwS6lL1Kiew800",   // enlace de pago de Stripe con Apple Pay (y tarjeta, que Apple Pay necesita)
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };
 // Contador de visitas con GoatCounter (sin cookies ni datos personales): código de la cuenta, por ejemplo

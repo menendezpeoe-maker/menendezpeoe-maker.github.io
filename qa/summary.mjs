@@ -99,7 +99,9 @@ console.log("Repetir y donar desde el resumen (PayPal retirado el 7 nov: «Donar
 }
 {
   const { ctx, page } = await open(390, 844, false, true);
-  ok(await page.isVisible('#r-summary [data-act="new"]') && (await page.locator('#r-summary a[href="#r-support"]').count()) === 0, "aunque haya Apple Pay, sin aportaciones configuradas no se ofrece «Donar»");
+  ok(await page.isVisible('#r-summary [data-act="new"]') && await page.isVisible('#r-summary a[href="#r-support"]'), "con Apple Pay, el resumen ofrece «Repetir el test» y «Donar» junto a compartir");
+  await page.click('#r-summary a[href="#r-support"]'); await page.waitForTimeout(700);
+  ok(!(await page.isHidden("#r-full")) && await page.isVisible("#r-support a.btn"), "«Donar» despliega y lleva a las opciones de aportación");
   await ctx.close();
 }
 console.log("Reta a un amigo");
