@@ -76,7 +76,7 @@ export const QUESTIONS = [
   B: "Contener el gasto: retrasar la jubilación o ligar más la pensión a lo cotizado",
   short: "Cómo sostener las pensiones",
   ctx: "El gasto en pensiones supera el 12 % del PIB y crecerá con la jubilación de la generación del baby boom. Las reformas de 2021 y 2023 garantizaron la revalorización con el IPC y la financiaron con más cotizaciones, como el Mecanismo de Equidad Intergeneracional. Unos economistas lo consideran suficiente; otros, como la AIReF, advierten de tensiones a largo plazo si no se modera el gasto.",
-  pos: "1 3 2~ 1 1 3~ 0 4~ 1 4 2~ 1 3~ 2~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0 0 0 0" },
+  pos: "1 3 3 1 1 3~ 0 4~ 1 4 2~ 1 3~ 2~ 1~ 2~ 1~ 1~ 1~ 1~ 2~ 1~ 1~ 0 0 0 0" },
 { id: "A06", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Habría que suavizar las obligaciones que se activan cuando una empresa supera los 50 trabajadores, para que las pymes crezcan.",
   short: "Menos trabas al crecimiento de las pymes",
@@ -121,7 +121,7 @@ export const QUESTIONS = [
   text: "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
   short: "Desalojo en 48 horas de viviendas ocupadas",
   ctx: "Entrar en una vivienda que es morada de alguien, incluidas, según la Fiscalía, las segundas residencias, es allanamiento, y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías, que se resuelve por vía judicial como usurpación; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
-  pos: "3 5 5 1 1 5 0 5~ 2~ 5 4 1 5 2~ 1 4 1~ 1~ 2 1~ 3~ 1~ 1~ 0 0 0 0" },
+  pos: "3 5 5 1 1 5 0 5~ 1 5 4 1 5 2~ 1 4 1~ 1~ 2 1~ 3~ 1~ 1~ 0 0 0 0" },
 { id: "B04", area: "viv", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
   short: "Fin de la suspensión de desahucios si el dueño es particular",
@@ -136,7 +136,7 @@ export const QUESTIONS = [
   text: "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
   short: "Recargo fiscal a las viviendas vacías",
   ctx: "El censo de 2021 contó unos 3,8 millones de viviendas vacías, aunque muchas están en zonas rurales o necesitan reformas. La Ley de Vivienda permite a los ayuntamientos subir hasta un 150 % el IBI de los pisos vacíos más de dos años. Los defensores buscan que salgan al mercado; sus críticos recuerdan que muchas no son habitables ni están donde hay demanda, y que el recargo penaliza a pequeños propietarios.",
-  pos: "4 1 1~ 5 5 1~ 0 2~ 5 2~ 3~ 5~ 1~ 4~ 5~ 2~ 5~ 5~ 5~ 5~ 2~ 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1~ 5 5 1~ 0 2~ 5 2~ 3~ 5 1~ 4~ 5~ 2~ 5~ 5~ 5~ 5~ 2~ 5~ 5~ 0 0 0 0" },
 { id: "B07", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
   short: "Impuesto a compradores no residentes",
@@ -188,7 +188,7 @@ export const QUESTIONS = [
   short: "Suprimir las diputaciones",
   ctx: "Las diputaciones gobiernan cada provincia y apoyan con dinero y técnicos a los municipios pequeños. Sus miembros no se eligen en las urnas, sino entre los concejales. Sus críticos las ven como una capa administrativa redundante y poco transparente; sus defensores, como imprescindibles para que los pueblos pequeños tengan servicios. En el País Vasco las diputaciones forales recaudan los impuestos, y en las islas existen cabildos y consejos insulares.",
   ley: "Constitución, art. 141",
-  pos: "2~ 1 2~ 4~ 5 4~ 0 5~ 4 3~ 1~ 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
+  pos: "2~ 1 2~ 2 5 4~ 0 5~ 4 3~ 1~ 3~ 1~ 0 4~ 1~ 0 0 4~ 3~ 1~ 0 3~ 1~ 1~ 1~ 1~" },
 { id: "C07", area: "ter", prio: 3, type: "likert", dim: "ter", dir: 1, lr: 0,
   text: "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
   short: "Fusionar municipios pequeños",
@@ -285,7 +285,7 @@ export const QUESTIONS = [
   short: "Rebajar la edad penal",
   ctx: "Los menores de 14 años no responden penalmente, y los de 14 a 17 se rigen por la Ley del Menor, que prioriza la reeducación, con internamientos de hasta ocho años en los casos más graves. Tras varios delitos graves cometidos por niños, algunos partidos piden rebajar la edad; muchos especialistas en justicia juvenil sostienen que no reduciría la delincuencia y prefieren reforzar la intervención educativa.",
   ley: "Ley Orgánica 5/2000, de responsabilidad penal de los menores",
-  pos: "1 3 5 2~ 1 5~ 0 3~ 1~ 3~ 1~ 1 3~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 2~ 1 5~ 0 3~ 1 3~ 1~ 1 3~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "E05", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "El uso policial del reconocimiento facial en espacios públicos debería prohibirse.",
   short: "Prohibir el reconocimiento facial policial",
@@ -331,7 +331,7 @@ export const QUESTIONS = [
   text: "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
   short: "«Prioridad nacional» en ayudas",
   ctx: "Los extranjeros con residencia legal acceden hoy a las prestaciones en las mismas condiciones que los españoles, aunque muchas ayudas exigen años de empadronamiento. Vox propone la «prioridad nacional», y varios gobiernos autonómicos han endurecido los requisitos de residencia previa. Sus defensores sostienen que los recursos son limitados y deben atender primero a los nacionales; sus críticos, que discrimina por nacionalidad, choca con la Constitución y el derecho europeo y afecta a personas que trabajan y cotizan aquí.",
-  pos: "1 2 5 1 1 5~ 0 1~ 1~ 2 2 1 2 1~ 1 2 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
+  pos: "1 2 5 1 1 5~ 0 1~ 1 2 2 1 2 1~ 1 2 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0" },
 { id: "F04", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
@@ -341,7 +341,7 @@ export const QUESTIONS = [
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
   ctx: "La tutela de los menores que llegan solos corresponde a la comunidad donde se encuentran, y Canarias llegó a tener más de 5.000 a su cargo. En 2025 una reforma de la Ley de Extranjería estableció un reparto obligatorio cuando una comunidad supera su capacidad. Sus defensores lo ven como solidaridad entre territorios; varias comunidades lo rechazan por falta de recursos o de acuerdo y lo han recurrido ante el Constitucional.",
-  pos: "5 2 1 5 5 1~ 0 3~ 3~ 2~ 4 4 2~ 4~ 3~ 5 5 5~ 4~ 4~ 3~ 3~ 4~ 0 0 0 0" },
+  pos: "5 2 1 5 5 1~ 0 3~ 4 2~ 4 4 2~ 4~ 3~ 5 5 5~ 4~ 4~ 3~ 3~ 4~ 0 0 0 0" },
 { id: "F06", area: "dem", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
   short: "Ayuda universal por hijo",
@@ -373,7 +373,7 @@ export const QUESTIONS = [
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
   ctx: "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Quienes piden limitarlos buscan proteger el territorio; los defensores de estas plantas recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
-  pos: "2 2 4 3 3 4~ 3~ 2~ 2 3~ 2~ 3 3~ 0 3~ 3~ 3~ 4~ 3~ 4~ 5 3~ 3~ 4~ 4~ 5~ 4~" },
+  pos: "2 2 4 3 3 4~ 4 2~ 2 3~ 2~ 3 3~ 0 3~ 3~ 3~ 4~ 3~ 4~ 5 3~ 3~ 4~ 4~ 5~ 4~" },
 { id: "G03", area: "ene", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
@@ -614,7 +614,7 @@ export const QUESTIONS = [
   short: "Cambio de sexo registral sin informes",
   ctx: "La «ley trans» de 2023 permite desde los 16 años cambiar el sexo registral por simple declaración, ratificada a los tres meses; entre los 14 y los 16 años se necesita la asistencia de los padres, y entre los 12 y los 14, autorización judicial. Sus defensores la ven como reconocimiento de la identidad de las personas trans; sus críticos, incluida parte del feminismo, temen fraudes, efectos en el deporte o en espacios de mujeres y decisiones precipitadas.",
   ley: "Ley 4/2023, para la igualdad de las personas trans",
-  pos: "4 1 1 5 5 1~ 0 3~ 5 4~ 4 5~ 1~ 4~ 5 3~ 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
+  pos: "4 1 1 5 5 1~ 0 3~ 5 4~ 4 5 1~ 4~ 5 3~ 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0" },
 { id: "L04", area: "der", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "La gestación subrogada debería legalizarse con garantías para la mujer gestante.",
   short: "Legalizar la gestación subrogada",
@@ -635,13 +635,13 @@ export const QUESTIONS = [
   text: "Debería prohibirse el acceso a las redes sociales a los menores de 16 años.",
   short: "Redes sociales solo desde los 16 años",
   ctx: "España tramita una ley de protección de los menores en entornos digitales que eleva a 16 años la edad para consentir el uso de sus datos, y en 2026 el Gobierno anunció que prohibiría las redes por debajo de esa edad, como hace Australia desde diciembre de 2025. Sus defensores citan los efectos en la salud mental y el acoso; sus críticos dudan de que pueda aplicarse sin sistemas de verificación de edad invasivos y prefieren la educación digital y el control parental.",
-  pos: "5 4 1 4 3~ 1~ 0 3~ 3~ 3~ 4~ 3~ 4~ 0 3~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
+  pos: "5 4 1 4 2 1~ 0 3~ 3~ 3~ 4~ 3~ 4~ 0 3~ 0 0 0 4~ 0 0 0 0 0 0 0 0" },
 { id: "L08", area: "der", prio: 3, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "Las cuotas obligatorias de paridad entre sexos en listas electorales y consejos de administración deberían eliminarse.",
   short: "Eliminar las cuotas de paridad",
   ctx: "La Ley de Paridad de 2024 obliga a que las listas electorales, el Gobierno y los consejos de las grandes empresas cotizadas tengan al menos un 40 % de cada sexo. Quienes piden eliminar las cuotas sostienen que debe primar el mérito individual y que la ley invade decisiones de partidos y empresas; quienes las defienden, que corrigen barreras que frenan a las mujeres en los puestos de poder.",
   ley: "Ley Orgánica 2/2024, de representación paritaria",
-  pos: "1 3 5 1 1 5~ 2 4~ 1 2 2~ 1~ 4~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
+  pos: "1 3 5 1 1 5~ 2 4~ 1 2 2~ 1 4~ 1~ 1~ 2~ 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0" },
 { id: "L09", area: "der", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
@@ -895,6 +895,7 @@ export const SOURCES = {
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=100", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=5", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3", "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3", "programa", "2026-10"],
+    vox: ["https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/", "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)", "parlamento", "2023-03-30"],
   },
   A06: {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
@@ -978,6 +979,7 @@ export const SOURCES = {
     comp: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles, 18/03/2025", "parlamento", "2025-03-18"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8", "programa", "2019-11"],
     fa: ["https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular", "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)", "parlamento", "2022-11-29"],
+    erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025", "parlamento", "2025-03-18"],
   },
   B04: {
     psoe: ["https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/", "Legal Today, febrero de 2026", "gobierno", "2026-02"],
@@ -1009,7 +1011,8 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=21", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     fa: ["https://www.elsaltodiario.com/vivienda/madrid-propone-un-ibi-progresivo-paguen-empresas-pisos-vacios-menos-familias", "El Salto, propuesta de Más Madrid en el Congreso (grupo Sumar), 21/04/2026", "parlamento", "2026-04-21"],
     pod: ["https://www.bolsamania.com/noticias/empresas/economia--podemos-tilda-de-regalo-el-paquete-fiscal-de-vivienda-del-psoe-y-rodriguez-defiende-la-regulacion--19828926.html", "Bolsamanía (Europa Press), Belarra en el Congreso, 28/05/2025", "declaracion", "2025-05-28"],
-    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"]
+    erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion256/20230427/Votacion173/VOT_20230427151734.json", "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley por el derecho a la vivienda, 27/04/2023", "parlamento", "2023-04-27"],
   },
   B07: {
     psoe: ["https://theobjective.com/espana/politica/2025-05-23/psoe-impuesto-extranjeros-vivienda/", "Proposición de ley del Grupo Socialista sobre alquiler asequible (23 de mayo de 2025)", "parlamento", "2025-05-23"],
@@ -1103,6 +1106,7 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 43", "programa", "2019-11"],
     pod: ["https://valenciaplaza.com/valenciaplaza/AseslaleyqueplanteaPodemosparavaciaralasdiputacionesdecompetencias", "Valencia Plaza: así es la ley que plantea Podemos para vaciar a las diputaciones de competencias", "prensa", "2018-09-19"],
+    fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75", "programa", "2023-07"],
   },
   C07: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1241,6 +1245,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     pod: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json", "Congreso, votación nominal PL VOX de reforma de la LO 5/2000 (edad penal), 18-11-2025", "parlamento", "2025-11-18"],
     bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json", "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025", "parlamento", "2025-11-18"],
+    erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json", "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025", "parlamento", "2025-11-18"],
   },
   E05: {
     psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "declaracion", "2023-07-18"]
@@ -1341,6 +1346,7 @@ export const SOURCES = {
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=89", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 89", "programa", "2026-04"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 104", "programa", "2023-07"],
     upc: ["https://rtvc.es/pleno-del-parlamento-de-canarias-27-mayo-2026/", "RTVC: el Parlamento de Canarias rechaza la «prioridad nacional» de Vox (27 may 2026)", "prensa", "2026-05-27"],
+    erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026", "parlamento", "2026-06-25"],
   },
   F04: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx", "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)", "gobierno", "2024-11-19"],
@@ -1360,6 +1366,7 @@ export const SOURCES = {
     bildu: ["https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/", "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025", "parlamento", "2025-04-10"],
     ccpc: ["https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/", "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes", "parlamento", "2025-04-10"],
     upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89", "programa", "2023-04"],
+    erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026", "parlamento", "2026-09-16"],
   },
   F06: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1414,6 +1421,7 @@ export const SOURCES = {
     pod: ["https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607", "Energías Renovables reproduce el programa de Podemos para las europeas de 2024 (energía)", "programa", "2024-06-07"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=102", "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de energía", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
+    pacma: ["https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29", "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético", "programa", "2026-01"],
   },
   G03: {
     psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
@@ -1859,6 +1867,7 @@ export const SOURCES = {
     bng: ["https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html", "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022", "parlamento", "2022-12-22"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116", "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 116", "programa", "2023-07"],
     comp: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116", "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 116", "programa", "2023-07"],
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion229/20221222/Votacion371/VOT_20230302133947.json", "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022", "parlamento", "2022-12-22"],
   },
   L04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1886,7 +1895,8 @@ export const SOURCES = {
     psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/030226-sanchez-cumbre-gobiernos-dubai.aspx", "Anuncio de Pedro Sánchez en Dubái (3 de febrero de 2026)", "declaracion", "2026-02-03"],
     pp: ["https://www.menorca.info/actualidad/nacional/2025/12/13/2530889/propone-prohibir-acceso-redes-sociales-menores-anos.html", "Menorca (Europa Press), enmiendas del PP a la ley de menores en entornos digitales, 13/12/2025", "parlamento", "2025-12-13"],
     vox: ["https://theobjective.com/espana/politica/2026-02-03/abascal-redes-sociales-menores-censurar/", "Abascal rechaza prohibir las redes sociales a menores de 16 años: «Intentan censurar» (The Objective)", "declaracion", "2026-02-03"],
-    fa: ["https://alicanteplaza.es/alicanteplaza/espana/la-ley-que-prohibiria-las-redes-sociales-a-menores-de-16-anos-avanza-esta-semana-en-el-congreso", "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)", "parlamento", "2026-09-26"]
+    fa: ["https://alicanteplaza.es/alicanteplaza/espana/la-ley-que-prohibiria-las-redes-sociales-a-menores-de-16-anos-avanza-esta-semana-en-el-congreso", "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)", "parlamento", "2026-09-26"],
+    pod: ["https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html", "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»", "prensa", "2026-02-11"],
   },
   L08: {
     psoe: ["https://www.boe.es/eli/es/lo/2024/08/01/2", "Ley Orgánica 2/2024 de representación paritaria (1 de agosto de 2024)", "gobierno", "2024-08-01"],
@@ -1897,6 +1907,7 @@ export const SOURCES = {
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
     junts: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "The Objective, aprobación de la ley de paridad en el Congreso, 27/06/2024", "parlamento", "2024-06-27"],
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=60", "Programa de PACMA para las generales de 2023, propuesta sobre representación de mujeres en listas", "programa", "2023-07"],
+    bildu: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion052/20240627/Votacion044/VOT_20240627130417.json", "Congreso de los Diputados, votación nominal (datos abiertos): votación de conjunto de la Ley Orgánica de representación paritaria y presencia equilibrada de mujeres y hombres, 27/06/2024", "parlamento", "2024-06-27"],
   },
   L09: {
     psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
@@ -1971,6 +1982,7 @@ export const JUSTIF = {
     junts: "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     bildu: "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
     pp: "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto.",
+    vox: "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate.",
   },
   A06: {
     psoe: "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
@@ -2085,7 +2097,8 @@ export const JUSTIF = {
     pp: "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
     fa: "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
     pod: "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
-    erc: "La ponencia defiende el recargo del IBI a las viviendas desocupadas."
+    erc: "La ponencia defiende el recargo del IBI a las viviendas desocupadas.",
+    bildu: "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
   },
   B07: {
     psoe: "El Grupo Socialista registró en 2025 un impuesto de hasta el 100 % sobre compras de vivienda de no residentes fuera de la UE.",
@@ -2507,6 +2520,7 @@ export const JUSTIF = {
     erc: "Estimación: ERC apoya las renovables con planificación territorial.",
     existe: "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
     bildu: "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
+    pacma: "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
   },
   G03: {
     psoe: "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
@@ -2952,6 +2966,7 @@ export const JUSTIF = {
     bng: "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
     upc: "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
     comp: "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
+    bildu: "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
   },
   L04: {
     psoe: "Su programa de 2023 rechaza los «vientres de alquiler» y niega que ser padre o madre sea un derecho.",
@@ -2996,6 +3011,7 @@ export const JUSTIF = {
     erc: "El programa defiende la paridad en todos los ámbitos de representación.",
     junts: "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí».",
     pacma: "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres.",
+    bildu: "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas.",
   },
   L09: {
     psoe: "Votó contra las leyes de Vox y Junts (febrero y abril de 2026) para prohibir el burka, por considerarlas discriminatorias.",

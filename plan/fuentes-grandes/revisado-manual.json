@@ -1,0 +1,112 @@
+[
+ {
+  "id": "A05/vox",
+  "estado": "fuente",
+  "url": "https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/",
+  "etiqueta": "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
+  "tipo": "parlamento",
+  "fecha": "2023-03-30",
+  "cita": "El real decreto ha sumado 179 votos a favor, con el apoyo de ERC, PNV, Compromis o MásPaís, entre otros; 61 abstenciones, con Vox y EH Bildu; y 104 rechazos.",
+  "justificacion": "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate."
+ },
+ {
+  "id": "C06/fa",
+  "estado": "fuente",
+  "url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75",
+  "etiqueta": "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "cita": "Se identificarán los obstáculos y se actuará con el fin de reforzar la capacidad administrativa y técnica de los ayuntamientos y de las diputaciones provinciales.",
+  "justificacion": "El programa de Sumar no propone suprimir las diputaciones; al contrario, plantea reforzar su capacidad técnica y coordinarse con ellas."
+ },
+ {
+  "id": "G02/pacma",
+  "estado": "fuente",
+  "url": "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+  "etiqueta": "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético",
+  "tipo": "programa",
+  "fecha": "2026-01",
+  "cita": "Es necesario frenar este despliegue desmedido, absolutamente nocivo para nuestra Comunidad, rechazando la instalación de una industria electrointensiva y, por el contrario, promover un modelo de renovables coherente, sostenible y acorde a los consumos del territorio",
+  "justificacion": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio."
+ },
+ {
+  "id": "L07/pod",
+  "estado": "fuente",
+  "url": "https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html",
+  "etiqueta": "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
+  "tipo": "prensa",
+  "fecha": "2026-02-11",
+  "cita": "Belarra considera que el anuncio de Sánchez de prohibir las redes sociales para menores de 16 años «suena muy bien», pero «no va a servir para nada»",
+  "justificacion": "La líder de Podemos rechaza que la prohibición sea útil y propone, en su lugar, educación y una red social pública."
+ },
+ {
+  "id": "E04/erc",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025",
+  "tipo": "parlamento",
+  "fecha": "2025-11-18",
+  "cita": "\"diputado\":\"Rufián Romero, Gabriel\",\"grupo\":\"GR\",\"voto\":\"No\"",
+  "justificacion": "Los siete diputados del Grupo Republicano votaron en contra de tomar en consideración la ley que rebajaba la edad de responsabilidad penal."
+ },
+ {
+  "id": "F03/erc",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026",
+  "tipo": "parlamento",
+  "fecha": "2026-06-25",
+  "cita": "\"diputado\":\"Rufián Romero, Gabriel\",\"grupo\":\"GR\",\"voto\":\"No\"",
+  "justificacion": "ERC votó en contra de la proposición que pedía establecer la prioridad nacional en las prestaciones públicas."
+ },
+ {
+  "id": "B03/erc",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
+  "tipo": "parlamento",
+  "fecha": "2025-03-18",
+  "cita": "\"diputado\":\"Rufián Romero, Gabriel\",\"grupo\":\"GR\",\"voto\":\"No\"",
+  "justificacion": "ERC votó en contra de tramitar la ley que permitía desalojar en 48 horas a quien ocupa sin título una vivienda, aprobada por 300 votos frente a 44."
+ },
+ {
+  "id": "F05/erc",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026",
+  "tipo": "parlamento",
+  "fecha": "2026-09-16",
+  "cita": "\"diputado\":\"Rufián Romero, Gabriel\",\"grupo\":\"GR\",\"voto\":\"No\"",
+  "justificacion": "ERC votó en contra de la proposición que pedía rechazar el reparto de menores no acompañados entre las comunidades autónomas."
+ },
+ {
+  "id": "L08/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion052/20240627/Votacion044/VOT_20240627130417.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): votación de conjunto de la Ley Orgánica de representación paritaria y presencia equilibrada de mujeres y hombres, 27/06/2024",
+  "tipo": "parlamento",
+  "fecha": "2024-06-27",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"Sí\"",
+  "justificacion": "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas."
+ },
+ {
+  "id": "L03/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion229/20221222/Votacion371/VOT_20230302133947.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022",
+  "tipo": "parlamento",
+  "fecha": "2022-12-22",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"Sí\"",
+  "justificacion": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos."
+ },
+ {
+  "id": "B06/bildu",
+  "estado": "fuente",
+  "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion256/20230427/Votacion173/VOT_20230427151734.json",
+  "etiqueta": "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley por el derecho a la vivienda, 27/04/2023",
+  "tipo": "parlamento",
+  "fecha": "2023-04-27",
+  "cita": "\"diputado\":\"Aizpurua Arzallus, Mertxe\",\"grupo\":\"GEH Bildu\",\"voto\":\"Sí\"",
+  "justificacion": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años."
+ }
+]

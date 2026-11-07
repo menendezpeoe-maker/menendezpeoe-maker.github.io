@@ -690,7 +690,7 @@
    "pos": {
     "psoe": 1,
     "pp": 3,
-    "vox": 2,
+    "vox": 3,
     "fa": 1,
     "pod": 1,
     "salf": 3,
@@ -712,7 +712,6 @@
     "adel": 1
    },
    "est": [
-    "vox",
     "salf",
     "d21",
     "pnv",
@@ -770,6 +769,12 @@
      "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3",
      "programa",
      "2026-10"
+    ],
+    "vox": [
+     "https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/",
+     "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
+     "parlamento",
+     "2023-03-30"
     ]
    },
    "why": {
@@ -779,7 +784,8 @@
     "erc": "La ponencia de 2025 pide rebajar la edad real de jubilación, lo contrario de retrasarla.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
-    "pp": "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto."
+    "pp": "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto.",
+    "vox": "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate."
    }
   },
   {
@@ -1548,7 +1554,7 @@
     "pod": 1,
     "salf": 5,
     "d21": 5,
-    "erc": 2,
+    "erc": 1,
     "junts": 5,
     "pnv": 4,
     "bildu": 1,
@@ -1566,7 +1572,6 @@
    },
    "est": [
     "d21",
-    "erc",
     "gbai",
     "upc",
     "drago",
@@ -1659,6 +1664,12 @@
      "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)",
      "parlamento",
      "2022-11-29"
+    ],
+    "erc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
+     "parlamento",
+     "2025-03-18"
     ]
    },
    "why": {
@@ -1975,7 +1986,6 @@
     "d21",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -2018,6 +2028,12 @@
      "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
      "programa",
      "2025-03"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion256/20230427/Votacion173/VOT_20230427151734.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley por el derecho a la vivienda, 27/04/2023",
+     "parlamento",
+     "2023-04-27"
     ]
    },
    "why": {
@@ -2025,7 +2041,8 @@
     "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
     "fa": "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
-    "erc": "La ponencia defiende el recargo del IBI a las viviendas desocupadas."
+    "erc": "La ponencia defiende el recargo del IBI a las viviendas desocupadas.",
+    "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años."
    }
   },
   {
@@ -3020,7 +3037,7 @@
     "psoe": 2,
     "pp": 1,
     "vox": 2,
-    "fa": 4,
+    "fa": 2,
     "pod": 5,
     "salf": 4,
     "d21": 5,
@@ -3043,7 +3060,6 @@
    "est": [
     "psoe",
     "vox",
-    "fa",
     "salf",
     "d21",
     "junts",
@@ -3085,6 +3101,12 @@
      "Valencia Plaza: así es la ley que plantea Podemos para vaciar a las diputaciones de competencias",
      "prensa",
      "2018-09-19"
+    ],
+    "fa": [
+     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75",
+     "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4698,7 +4720,6 @@
     "fa",
     "salf",
     "d21",
-    "erc",
     "junts",
     "pnv",
     "upn",
@@ -4738,6 +4759,12 @@
      "2025-11-18"
     ],
     "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025",
+     "parlamento",
+     "2025-11-18"
+    ],
+    "erc": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion147/20251118/Votacion001/VOT_20251118204739.json",
      "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Vox para rebajar la edad penal (reforma de la LO 5/2000), 18/11/2025",
      "parlamento",
@@ -5655,7 +5682,6 @@
    "est": [
     "salf",
     "d21",
-    "erc",
     "gbai",
     "drago",
     "cha",
@@ -5755,6 +5781,12 @@
      "RTVC: el Parlamento de Canarias rechaza la «prioridad nacional» de Vox (27 may 2026)",
      "prensa",
      "2026-05-27"
+    ],
+    "erc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026",
+     "parlamento",
+     "2026-06-25"
     ]
    },
    "why": {
@@ -5903,7 +5935,7 @@
     "pod": 5,
     "salf": 1,
     "d21": 3,
-    "erc": 3,
+    "erc": 4,
     "junts": 2,
     "pnv": 4,
     "bildu": 4,
@@ -5922,7 +5954,6 @@
    "est": [
     "salf",
     "d21",
-    "erc",
     "junts",
     "upn",
     "gbai",
@@ -5988,6 +6019,12 @@
      "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89",
      "programa",
      "2023-04"
+    ],
+    "erc": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026",
+     "parlamento",
+     "2026-09-16"
     ]
    },
    "why": {
@@ -6534,7 +6571,7 @@
     "fa": 3,
     "pod": 3,
     "salf": 4,
-    "pacma": 3,
+    "pacma": 4,
     "d21": 2,
     "erc": 2,
     "junts": 3,
@@ -6557,7 +6594,6 @@
    },
    "est": [
     "salf",
-    "pacma",
     "d21",
     "junts",
     "pnv",
@@ -6628,6 +6664,12 @@
      "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "pacma": [
+     "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+     "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético",
+     "programa",
+     "2026-01"
     ]
    },
    "why": {
@@ -6638,7 +6680,8 @@
     "pod": "Estimación: postura matizada; apoya las renovables con doble uso agrario del suelo, sin frenar la transición.",
     "erc": "Estimación: ERC apoya las renovables con planificación territorial.",
     "existe": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
-    "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas."
+    "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
+    "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio."
    }
   },
   {
@@ -11426,7 +11469,6 @@
     "salf",
     "d21",
     "junts",
-    "bildu",
     "upn",
     "gbai",
     "ccpc",
@@ -11498,6 +11540,12 @@
      "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 116",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion229/20221222/Votacion371/VOT_20230302133947.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022",
+     "parlamento",
+     "2022-12-22"
     ]
    },
    "why": {
@@ -11510,7 +11558,8 @@
     "pnv": "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
     "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
     "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
-    "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos."
+    "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
+    "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos."
    }
   },
   {
@@ -11801,7 +11850,7 @@
     "pp": 4,
     "vox": 1,
     "fa": 4,
-    "pod": 3,
+    "pod": 2,
     "salf": 1,
     "d21": 3,
     "erc": 3,
@@ -11813,7 +11862,6 @@
     "comp": 4
    },
    "est": [
-    "pod",
     "salf",
     "d21",
     "erc",
@@ -11851,6 +11899,12 @@
      "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)",
      "parlamento",
      "2026-09-26"
+    ],
+    "pod": [
+     "https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html",
+     "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
+     "prensa",
+     "2026-02-11"
     ]
    },
    "why": {
@@ -11902,7 +11956,6 @@
     "salf",
     "d21",
     "pnv",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -11962,6 +12015,12 @@
      "Programa de PACMA para las generales de 2023, propuesta sobre representación de mujeres en listas",
      "programa",
      "2023-07"
+    ],
+    "bildu": [
+     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion052/20240627/Votacion044/VOT_20240627130417.json",
+     "Congreso de los Diputados, votación nominal (datos abiertos): votación de conjunto de la Ley Orgánica de representación paritaria y presencia equilibrada de mujeres y hombres, 27/06/2024",
+     "parlamento",
+     "2024-06-27"
     ]
    },
    "why": {
@@ -11972,7 +12031,8 @@
     "pod": "Apoyó la ley de paridad y pactó con el PSOE que las mujeres puedan superar el 60 % en los órganos afectados.",
     "erc": "El programa defiende la paridad en todos los ámbitos de representación.",
     "junts": "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí».",
-    "pacma": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres."
+    "pacma": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres.",
+    "bildu": "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas."
    }
   },
   {

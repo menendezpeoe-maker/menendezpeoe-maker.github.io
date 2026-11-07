@@ -54,10 +54,14 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   const wh = await page.getAttribute("#sh-wa", "href");
   ok(wh.startsWith("https://wa.me/?text=") && new URL(wh).searchParams.get("text") === text && !/wa\.me\/\d/.test(wh), "WhatsApp: sin destinatario fijo y texto íntegro");
   ok((await page.getAttribute("#sh-x", "target")) === "_blank", "X y WhatsApp abren en otra pestaña");
+  const tg = new URL(await page.getAttribute("#sh-tg", "href"));
+  ok(tg.origin + tg.pathname === "https://t.me/share/url" && tg.searchParams.get("url") === PUBLIC && !tg.searchParams.get("text").includes(PUBLIC) && tg.searchParams.get("text").includes("Adelante Andalucía") && !/t\.me\/\+?\d/.test(tg.href), "Telegram: enlace aparte, texto sin repetir la URL y sin destinatario fijo");
+  ok((await page.getAttribute("#sh-tg", "target")) === "_blank" && (await page.getAttribute("#sh-tg", "rel")).includes("noopener"), "Telegram abre en otra pestaña sin pasar la página de origen");
   // Editar el mensaje actualiza los enlaces
   await page.fill("#sh-text", "Prueba con tildes: ¿Qué tal? Ñ & 100 % #29N");
   ok(new URL(await page.getAttribute("#sh-x", "href")).searchParams.get("text") === "Prueba con tildes: ¿Qué tal? Ñ & 100 % #29N", "editar el mensaje actualiza X");
   ok(new URL(await page.getAttribute("#sh-wa", "href")).searchParams.get("text").includes("Ñ & 100 %"), "editar el mensaje actualiza WhatsApp");
+  ok(new URL(await page.getAttribute("#sh-tg", "href")).searchParams.get("text").includes("Ñ & 100 %"), "editar el mensaje actualiza Telegram");
   // Quitar el partido regenera
   await page.uncheck("#sh-party");
   ok(!(await page.inputValue("#sh-text")).includes("coincidencia"), "sin partido: el mensaje no lo incluye");
