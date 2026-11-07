@@ -9,7 +9,7 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.meta.url)));
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
-const provFor = { psoe: "madrid", pp: "madrid", vox: "madrid", fa: "madrid", pod: "madrid", salf: "madrid", pacma: "madrid", d21: "madrid", erc: "barcelona", junts: "barcelona", pnv: "bizkaia", bildu: "bizkaia", upn: "navarra", gbai: "navarra", bng: "coruna", ccpc: "tenerife", upc: "tenerife", drago: "tenerife", comp: "valencia", cha: "teruel", existe: "teruel", mes: "baleares", adel: "sevilla", jmm: "jaen", upl: "leon", soria: "soria", pav: "avila" };
+const provFor = { psoe: "madrid", pp: "madrid", vox: "madrid", fa: "madrid", pod: "madrid", salf: "madrid", pacma: "madrid", d21: "madrid", erc: "barcelona", junts: "barcelona", pnv: "bizkaia", bildu: "bizkaia", upn: "navarra", gbai: "navarra", bng: "coruna", ccpc: "tenerife", upc: "tenerife", drago: "tenerife", comp: "valencia", cha: "teruel", existe: "teruel", mes: "baleares", adel: "sevilla", jmm: "jaen", upl: "leon", soria: "soria", pav: "avila", pcte: "madrid", fo: "madrid" };
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1100, height: 900 } });
 const errors = []; page.on("pageerror", (e) => errors.push(String(e)));
