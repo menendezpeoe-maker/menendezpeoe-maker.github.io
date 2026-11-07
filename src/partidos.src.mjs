@@ -13,6 +13,14 @@
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
 export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo","falange","ie","ph"];
+// DISPLAY_ORDER: orden en que se muestran las candidaturas y sus posturas (listas, fichas, explorador, desempates).
+// Solo afecta a la presentación: PARTY_ORDER sigue fijando el orden de las posturas en preguntas.src.mjs.
+// Criterio (7 nov 2026): primero las estatales con grupo en el Congreso (PSOE, PP, Vox, Frente Amplio, Podemos), luego SALF;
+// después las territoriales con representación en el Congreso, las estatales sin representación, el resto de territoriales
+// y, al final, las candidaturas con pocas posturas conocidas y las que no se presentan.
+export const DISPLAY_ORDER = ["psoe","pp","vox","fa","pod","salf","erc","junts","bildu","pnv","bng","ccpc","upn","pacma","fo","pcte","falange","d21","comp","adel","cha","existe","upc","drago","mes","gbai","soria","ph","ie","jmm","upl","pav"];
+if (DISPLAY_ORDER.length !== PARTY_ORDER.length || PARTY_ORDER.some((id) => !DISPLAY_ORDER.includes(id))) throw new Error("DISPLAY_ORDER debe contener exactamente los mismos partidos que PARTY_ORDER");
+
 
 export const PARTIES = [
  { id: "psoe", name: "PSOE", ab: "PSOE", color: "#E30613", tag: "Socialdemocracia · centroizquierda", lead: "Pedro Sánchez",
