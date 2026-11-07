@@ -28,7 +28,9 @@
   "jmm",
   "upl",
   "soria",
-  "pav"
+  "pav",
+  "pcte",
+  "fo"
  ],
  "parties": [
   {
@@ -1164,6 +1166,101 @@
     {
      "t": "Defensa de los servicios públicos en la provincia.",
      "q": "J01"
+    }
+   ]
+  },
+  {
+   "id": "pcte",
+   "name": "PCTE",
+   "ab": "PCTE",
+   "color": "#9E1B32",
+   "tag": "Comunista · izquierda radical",
+   "scope": {
+    "provinces": [
+     "alicante",
+     "almeria",
+     "asturias",
+     "avila",
+     "baleares",
+     "burgos",
+     "caceres",
+     "cadiz",
+     "cantabria",
+     "castellon",
+     "cordoba",
+     "cuenca",
+     "granada",
+     "guadalajara",
+     "huelva",
+     "huesca",
+     "jaen",
+     "leon",
+     "madrid",
+     "malaga",
+     "murcia",
+     "navarra",
+     "palencia",
+     "laspalmas",
+     "rioja",
+     "salamanca",
+     "tenerife",
+     "segovia",
+     "sevilla",
+     "soria",
+     "teruel",
+     "toledo",
+     "valencia",
+     "valladolid",
+     "zamora",
+     "zaragoza"
+    ]
+   },
+   "desc": "Partido comunista. En su programa de lucha 2023-2027 defiende expulsar a las empresas privadas de la sanidad y la educación, poner el sector energético bajo propiedad estatal y salir de la OTAN y de la UE.",
+   "props": [
+    {
+     "t": "Jornada máxima de 35 horas semanales.",
+     "q": "A01"
+    },
+    {
+     "t": "Salida unilateral de la OTAN y cierre de las bases extranjeras.",
+     "q": "H06"
+    },
+    {
+     "t": "Salida de la UE y del euro.",
+     "q": "H02"
+    },
+    {
+     "t": "Ruptura del concordato con la Santa Sede.",
+     "q": "L05"
+    }
+   ]
+  },
+  {
+   "id": "fo",
+   "name": "Frente Obrero",
+   "ab": "FO",
+   "color": "#3B4A5A",
+   "tag": "Soberanista · obrerista",
+   "scope": {
+    "all": true
+   },
+   "desc": "Movimiento político que se presenta en toda España. En su programa político de 2026 propone salir de la UE y de la OTAN, reforzar el ejército, ampliar el parque nuclear, centralizar competencias y expulsar a quienes estén de forma irregular.",
+   "props": [
+    {
+     "t": "Salida de España de la Unión Europea.",
+     "q": "H02"
+    },
+    {
+     "t": "Ampliar el parque nuclear.",
+     "q": "G01"
+    },
+    {
+     "t": "Expulsión inmediata de quienes estén de forma irregular.",
+     "q": "F02"
+    },
+    {
+     "t": "Centralizar sanidad, educación y emergencias.",
+     "q": "C03"
     }
    ]
   }
