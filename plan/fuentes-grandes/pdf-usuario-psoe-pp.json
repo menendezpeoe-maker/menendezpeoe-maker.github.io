@@ -1,0 +1,166 @@
+[
+ {
+  "id": "C06/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "D01/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "D02/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "D06/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "D08/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "E02/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "J03/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "El programa no trata el tema."
+ },
+ {
+  "id": "A06/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "Solo promete reducir cargas administrativas (p. 30) y extender el Kit Digital a pymes de más de 50 trabajadores; no toca los umbrales de tamaño."
+ },
+ {
+  "id": "J02/psoe",
+  "estado": "sin_cobertura",
+  "justificacion": "Fija por ley tiempos máximos de espera (120 días en cirugía, p. 201) pero no menciona derivar a clínicas privadas al superarlos."
+ },
+ {
+  "id": "D05/psoe",
+  "estado": "fuente",
+  "url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=243",
+  "etiqueta": "Programa electoral del PSOE de 2023, p. 243",
+  "tipo": "programa",
+  "fecha": "2023-07",
+  "pagina": 243,
+  "justificacion": "Promete una ley de incompatibilidades del personal público contra conflictos de intereses y «puertas giratorias»; no fija un plazo de cinco años (respalda un 3 moderado)."
+ },
+ {
+  "id": "B05/pp",
+  "estado": "sin_url",
+  "estado_si_url": "cambio_valor",
+  "url": null,
+  "etiqueta": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36",
+  "tipo": "programa",
+  "fecha": "2025-07",
+  "pagina": 36,
+  "justificacion": "Defiende un turismo «sin necesidad de restringir la actividad turística» y no criminalizar al sector; no apoya prohibir nuevos pisos turísticos.",
+  "nota_url": "No verificada: la copia de pp.es (21_Congreso_Ponencia_Politica.pdf) es la versión de junio, con 39 págs. y texto distinto; no coincide con el documento de julio.",
+  "valor_propuesto": 2
+ },
+ {
+  "id": "D05/pp",
+  "estado": "sin_url",
+  "estado_si_url": "fuente",
+  "url": null,
+  "etiqueta": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 18",
+  "tipo": "programa",
+  "fecha": "2025-07",
+  "pagina": 18,
+  "justificacion": "Propone repensar los requisitos de entrada y salida de cargos y directivos públicos; no fija plazo ni habla expresamente de puertas giratorias (respalda un 3).",
+  "nota_url": "No verificada: la copia de pp.es (21_Congreso_Ponencia_Politica.pdf) es la versión de junio, con 39 págs. y texto distinto; no coincide con el documento de julio."
+ },
+ {
+  "id": "F08/pp",
+  "estado": "sin_url",
+  "estado_si_url": "fuente",
+  "url": null,
+  "etiqueta": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25",
+  "tipo": "programa",
+  "fecha": "2025-07",
+  "pagina": 25,
+  "justificacion": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio; no la plantea como servicio universal y apuesta por aliviar la carga fiscal (p. 41).",
+  "nota_url": "No verificada: la copia de pp.es (21_Congreso_Ponencia_Politica.pdf) es la versión de junio, con 39 págs. y texto distinto; no coincide con el documento de julio."
+ },
+ {
+  "id": "H01/pp",
+  "estado": "sin_url",
+  "estado_si_url": "fuente",
+  "url": null,
+  "etiqueta": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 45",
+  "tipo": "programa",
+  "fecha": "2025-07",
+  "pagina": 45,
+  "justificacion": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, con aval del Congreso; no cita cifra del 3,5 %.",
+  "nota_url": "No verificada: la copia de pp.es (21_Congreso_Ponencia_Politica.pdf) es la versión de junio, con 39 págs. y texto distinto; no coincide con el documento de julio."
+ },
+ {
+  "id": "A07/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No menciona los pagos en efectivo."
+ },
+ {
+  "id": "C02/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Pide una financiación «suficiente, transparente y equitativa» con criterios objetivos (p. 14), sin decir que deba dar más a las peor financiadas."
+ },
+ {
+  "id": "C07/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Propone potenciar diputaciones y cabildos al servicio de pequeños municipios (p. 14); no habla de fusionar ni de compartir servicios obligatoriamente."
+ },
+ {
+  "id": "D02/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No menciona listas desbloqueadas."
+ },
+ {
+  "id": "D06/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No menciona las iniciativas legislativas populares."
+ },
+ {
+  "id": "E05/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No menciona el reconocimiento facial ni la vigilancia biométrica."
+ },
+ {
+  "id": "G04/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Pide un Pacto Nacional del Agua e inversiones en infraestructuras hídricas (p. 40), sin citar trasvases."
+ },
+ {
+  "id": "G07/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No trata la construcción en zonas inundables."
+ },
+ {
+  "id": "H03/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Pide más integración política de la UE (p. 44) pero no se pronuncia sobre unanimidad ni veto."
+ },
+ {
+  "id": "J02/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Defiende la libertad de elección en sanidad (p. 32) sin hablar de plazos máximos ni de derivar a clínicas privadas."
+ },
+ {
+  "id": "J04/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "No menciona impuestos sobre tabaco, alcohol o bebidas azucaradas."
+ },
+ {
+  "id": "K02/pp",
+  "estado": "sin_cobertura",
+  "justificacion": "Solo habla de acabar con la competencia desleal en el sector primario (p. 39); no menciona márgenes ni la cadena alimentaria."
+ }
+]
