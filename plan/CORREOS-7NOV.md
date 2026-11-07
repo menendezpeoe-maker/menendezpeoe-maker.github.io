@@ -108,3 +108,8 @@ Tres textos: A (medios), B (organizaciones cívicas, de transparencia y de estud
 - [C] Facultad de Comunicación (Universidad de Sevilla): fcom@us.es
 - [C] Institut de Ciències Polítiques i Socials (ICPS): con.icps@diba.cat
 - [C] Lucía Medina - línea Político-electoral (ICPS): medinall@diba.cat
+
+
+## Envío (decisión del titular, 7 nov)
+
+Los 77 mensajes están como borradores en Gmail. A partir de las 09:00 (Madrid) se envían de dos en dos por minuto (unos 39 minutos), en el orden de `correos-7nov.json`, para no disparar filtros de spam. Cada envío usa el borrador (`draftId`); antes se comprueba en Enviados que no se haya mandado ya.
