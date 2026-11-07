@@ -1,0 +1,798 @@
+{
+ "erc": {
+  "investigado": "Programa 2023 y ponencia 30 Congreso (grep por todos los temas) + ~16 búsquedas por lotes: ley electoral, macrogranjas, transvases, reconocimiento facial, acusación popular, gestación subrogada, redes 16 años, concierto, federalismo, IMV, efectivo, CGPJ, dependencia, decretos-ley, exclusividad médica, Mercosur/pesca, avales hipotecas. Sin fuente explícita para el resto.",
+  "propuestas": [
+   {
+    "id": "A06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A07/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A09/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B09/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C02/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C04/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C09/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D01/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D03/erc",
+    "estado": "fuente",
+    "url": "https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/",
+    "etiqueta": "Que.es, reforma del CGPJ del PP rechazada, 21/09/2021",
+    "tipo": "parlamento",
+    "fecha": "2021-09-21",
+    "justificacion": "ERC anunció su voto en contra de la proposición del PP para que los jueces elijan a los doce vocales de la carrera judicial del CGPJ."
+   },
+   {
+    "id": "D06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D08/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D09/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E05/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E07/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F08/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F09/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G04/erc",
+    "estado": "fuente",
+    "url": "https://es.ara.cat/politica/elecciones-catalunya/sobra-agua-ebro-trasvasar-barcelona_1_5009807.html",
+    "etiqueta": "Ara, ¿Sobra agua en el Ebro para trasvasar a Barcelona?, 25/04/2024",
+    "tipo": "declaracion",
+    "fecha": "2024-04-25",
+    "justificacion": "El Ara recoge la postura de ERC contra el trasvase del Ebro: su exconsellera afirma «No haremos trasvases»."
+   },
+   {
+    "id": "G05/erc",
+    "estado": "fuente",
+    "url": "https://www.vilaweb.cat/noticies/erc-programa-electoral-eleccions-catalunya-2024/",
+    "etiqueta": "VilaWeb, programa de ERC para las catalanas, 04/05/2024",
+    "tipo": "programa",
+    "fecha": "2024-05-04",
+    "justificacion": "El programa catalán de ERC propone consolidar L'Energètica, la empresa energética pública de la Generalitat; es un ámbito autonómico, no estatal."
+   },
+   {
+    "id": "G07/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H03/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H08/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I03/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I04/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J03/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K05/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K07/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L04/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L06/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L07/erc",
+    "estado": "sin_cobertura",
+    "investigada": true
+   }
+  ]
+ },
+ "junts": {
+  "investigado": "Programa 2023 de Junts (grep en catalán de todos los temas) + ~28 búsquedas: gran fortuna, expulsión/inmigración, referéndum monarquía, defensa/OTAN, menores migrantes, sucesiones, pisos turísticos, cannabis, decretos ómnibus, Mercosur, ley trans, renovables, edad penal, pin parental, acusación popular, ley electoral, Sáhara, no residentes, pymes 50, MUFACE, vacías, toros, ferrocarril, diputaciones, Senado, 2035, estándares sanitarios, SEPI, gestación subrogada.",
+  "propuestas": [
+   {
+    "id": "A03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A10/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B07/junts",
+    "estado": "cambio_valor",
+    "valor_propuesto": 2,
+    "url": "https://www.thelocal.es/20250607/inside-spain-catalonia-backs-ban-on-foreign-residents-buying-homes",
+    "etiqueta": "The Local, Parlament de Cataluña y compra de vivienda por no residentes, 07/06/2025",
+    "tipo": "parlamento",
+    "fecha": "2025-06",
+    "justificacion": "Junts votó en el Parlament contra la moción que restringía la compra de vivienda a extranjeros no residentes, junto a PP, Vox y Aliança."
+   },
+   {
+    "id": "B08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D01/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D08/junts",
+    "estado": "fuente",
+    "url": "https://www.ondavasca.com/junts-insiste-en-que-no-aceptara-el-tragala-del-gobierno-espanol-y-le-insta-a-dejar-de-colar-su-programa-en-cada-decreto/",
+    "etiqueta": "Onda Vasca, Nogueras (Junts) sobre el decreto ómnibus, 24/01/2025",
+    "tipo": "declaracion",
+    "fecha": "2025-01-24",
+    "justificacion": "Junts votó contra el decreto ómnibus y Nogueras reclamó no colar medidas en cada decreto y separar pensiones y transporte en decretos distintos."
+   },
+   {
+    "id": "D09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E09/junts",
+    "estado": "fuente",
+    "url": "https://www.3cat.cat/3catinfo/adeu-a-la-legalitzacio-de-lus-recreatiu-del-cannabis-per-ara-el-congres-ni-ho-debatra/noticia-amp/3124907/",
+    "etiqueta": "3Cat, votación de la ley de cannabis de Más País, 20/10/2021",
+    "tipo": "parlamento",
+    "fecha": "2021-10-20",
+    "justificacion": "Junts apoyó en el Congreso tramitar la proposición de Más País para regular el cannabis de uso recreativo, que PSOE, PP y Vox tumbaron (263-75)."
+   },
+   {
+    "id": "F02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F05/junts",
+    "estado": "fuente",
+    "url": "https://theobjective.com/espana/2024-06-27/junts-librarse-reparto-menores-cataluna-inmigracion/",
+    "etiqueta": "The Objective, Junts pide librar a Cataluña del reparto de menores, 27/06/2024",
+    "tipo": "parlamento",
+    "fecha": "2024-06-27",
+    "justificacion": "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería."
+   },
+   {
+    "id": "F06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H01/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H06/junts",
+    "estado": "fuente",
+    "url": "https://orain.eus/es/politica/2026/04/22/el-congreso-rechaza-el-referendum-salir-la-otan-pide-podemos/",
+    "etiqueta": "Orain, el Congreso rechaza el referéndum para salir de la OTAN, 22/04/2026",
+    "tipo": "parlamento",
+    "fecha": "2026-04-22",
+    "justificacion": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN."
+   },
+   {
+    "id": "H07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H09/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K01/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K02/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K08/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L03/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L04/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L05/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L06/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L07/junts",
+    "estado": "sin_cobertura",
+    "investigada": true
+   }
+  ]
+ },
+ "bildu": {
+  "investigado": "Programa 2023 Compromiso EH Bildu (leído entero, 16 págs) + ~24 búsquedas: Mercosur, gestación subrogada, macrogranjas, diputaciones, redes 16 años, acusación popular, OTAN/defensa, universidad gratuita, resultados colegios, ley electoral, no residentes, reconocimiento facial, puertas giratorias, exclusividad médica, caza, impuestos saludables, ayuda por hijo, federalismo, 2035. K05 (Navarra) y E07 (Bildu ve aspectos positivos) con fuentes que bloquean (403/406): no usadas.",
+  "propuestas": [
+   {
+    "id": "A06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A09/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "A10/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "B09/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C04/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "C08/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D01/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D02/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D05/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D08/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "D09/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E05/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "E07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F04/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "F06/bildu",
+    "estado": "fuente",
+    "url": "https://orain.eus/es/politica/2022/05/13/eh-bildu-propone-crear-prestacion-universal-de-150-euros-mensuales-para-crianza-de-hijos-e-hijas/",
+    "etiqueta": "Orain, EH Bildu propone una prestación universal de 150 euros por crianza, 13/05/2022",
+    "tipo": "parlamento",
+    "fecha": "2022-05-13",
+    "justificacion": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años."
+   },
+   {
+    "id": "F09/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G03/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "G07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H02/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H03/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "H08/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I02/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I03/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I04/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "I06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J03/bildu",
+    "estado": "fuente",
+    "url": "https://www.ondavasca.com/bildu-plantea-un-registro-de-medicos-que-ejercen-tambien-en-la-privada-no-es-correcto/",
+    "etiqueta": "Onda Vasca, propuesta de EH Bildu sobre Osakidetza, 20/03/2024",
+    "tipo": "declaracion",
+    "fecha": "2024-03-20",
+    "justificacion": "EH Bildu propone acabar con que los médicos de Osakidetza trabajen a la vez en la sanidad privada: «No nos parece correcto» la doble actividad."
+   },
+   {
+    "id": "J04/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "J08/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K01/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K05/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "K08/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L04/bildu",
+    "estado": "cambio_valor",
+    "valor_propuesto": 4,
+    "url": "https://orain.eus/es/actualidad/sociedad/2017/07/04/eh-bildu-favor-gestacion-subrogada/",
+    "etiqueta": "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
+    "tipo": "declaracion",
+    "fecha": "2017-07-04",
+    "justificacion": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo."
+   },
+   {
+    "id": "L06/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   },
+   {
+    "id": "L07/bildu",
+    "estado": "sin_cobertura",
+    "investigada": true
+   }
+  ]
+ }
+}
