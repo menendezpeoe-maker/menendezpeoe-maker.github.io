@@ -1,0 +1,130 @@
+[
+ {
+  "nombre": "Consejo de la Juventud de España",
+  "perfil": "asociacion",
+  "email": "info@cje.org",
+  "visto_en": "https://www.cje.org/contacto/",
+  "uso": "contacto general / consultas",
+  "enfoque": "Plataforma de asociaciones juveniles; interesa un test neutral de participación para jóvenes votantes."
+ },
+ {
+  "nombre": "Civio",
+  "perfil": "asociacion",
+  "email": "contacto@civio.es",
+  "visto_en": "https://civio.es/nosotros/contacto/",
+  "uso": "preguntas, comentarios y unirse a la comunidad",
+  "enfoque": "Fundación de transparencia y datos abiertos; le encajan una herramienta con fuentes enlazadas y datos abiertos."
+ },
+ {
+  "nombre": "Nada es Gratis",
+  "perfil": "blog",
+  "email": "info@nadaesgratis.es",
+  "visto_en": "https://nadaesgratis.es",
+  "uso": "enlace mailto «Contacto Nada es Gratis» en la portada",
+  "enfoque": "Blog de economistas; podría interesar un test con fuentes verificables sobre programas económicos."
+ },
+ {
+  "nombre": "Hay Derecho",
+  "perfil": "blog",
+  "email": "info@hayderecho.com",
+  "visto_en": "https://www.hayderecho.com/contacta-con-nosotros/",
+  "uso": "correo general de contacto de la organización",
+  "enfoque": "Blog/fundación de derecho y calidad institucional; interesa la neutralidad y trazabilidad de fuentes."
+ },
+ {
+  "nombre": "Almacén de Derecho (Mirada 360)",
+  "perfil": "blog",
+  "email": "g.masa@mirada360.es",
+  "visto_en": "https://almacendederecho.org/el-proyecto",
+  "uso": "contacto de medios y prensa (Gema Masa, Mirada 360)",
+  "enfoque": "Revista jurídica colectiva; podría reseñar un test electoral con fuentes documentadas."
+ },
+ {
+  "nombre": "Transparency International España",
+  "perfil": "asociacion",
+  "email": "comunicacion@transparencia.org.es",
+  "visto_en": "https://transparencia.org.es/contacto/",
+  "uso": "datos de contacto de TI España (comunicación)",
+  "enfoque": "ONG anticorrupción apartidista; afín a un test con fuentes públicas y sin registro."
+ },
+ {
+  "nombre": "Verificat",
+  "perfil": "comunidad",
+  "email": "hola@verificat.cat",
+  "visto_en": "https://www.verificat.cat/ca/contacte",
+  "uso": "contacto general con el equipo",
+  "enfoque": "Verificador catalán; interesa difundir una herramienta con fuentes y marcado de posturas estimadas."
+ },
+ {
+  "nombre": "Agenda Pública",
+  "perfil": "blog",
+  "email": "info@agendapublica.es",
+  "visto_en": "https://www.agendapublica.es/contacto",
+  "uso": "correo alternativo al formulario de contacto",
+  "enfoque": "Plataforma de análisis de políticas públicas; puede interesarle un recurso electoral neutral."
+ },
+ {
+  "nombre": "Ateneo de Madrid (comunicación)",
+  "perfil": "asociacion",
+  "email": "comunicacion@ateneodemadrid.es",
+  "visto_en": "https://www.ateneodemadrid.com/contacto",
+  "uso": "comunicación y prensa",
+  "enfoque": "Ateneo con programación cívica y cultural; podría incluir el test en su difusión."
+ },
+ {
+  "nombre": "Ateneo de Madrid (actividades)",
+  "perfil": "asociacion",
+  "email": "culturales@ateneodemadrid.es",
+  "visto_en": "https://www.ateneodemadrid.com/contacto",
+  "uso": "actividades",
+  "enfoque": "Para proponer una charla o taller de educación cívica sobre el 29N."
+ },
+ {
+  "nombre": "Access Info Europe",
+  "perfil": "asociacion",
+  "email": "info@access-info.org",
+  "visto_en": "https://www.access-info.org/contact/",
+  "uso": "contacto general (icono de correo en cabecera)",
+  "enfoque": "ONG de derecho de acceso a la información; afín a fuentes enlazadas y transparencia."
+ },
+ {
+  "nombre": "El Orden Mundial",
+  "perfil": "divulgador",
+  "email": "contacto@elordenmundial.com",
+  "visto_en": "https://www.elordenmundial.com",
+  "uso": "enlace «Contáctanos» de la portada",
+  "enfoque": "Divulgación de política y geopolítica; interesa una guía electoral neutral."
+ },
+ {
+  "nombre": "Plataforma del Voluntariado de España",
+  "perfil": "asociacion",
+  "email": "prensa@plataformavoluntariado.org",
+  "visto_en": "https://www.plataformavoluntariado.org/contacto/",
+  "uso": "departamento de comunicación",
+  "enfoque": "Plataforma de entidades de voluntariado; difusión de recursos de participación cívica."
+ },
+ {
+  "nombre": "Fedea",
+  "perfil": "blog",
+  "email": "info@fedea.es",
+  "visto_en": "https://fedea.net/contacto/",
+  "uso": "correo general de contacto",
+  "enfoque": "Think tank económico independiente; podría interesarle un test con posturas económicas documentadas y fuentes enlazadas."
+ },
+ {
+  "nombre": "Política Exterior",
+  "perfil": "blog",
+  "email": "politicaexterior@politicaexterior.com",
+  "visto_en": "https://www.politicaexterior.com/contacto/",
+  "uso": "colaboraciones (propuestas no solicitadas) y permisos de republicación; NOTA: el enlace mailto de la página apunta a revista@politicaexterior.com, confirmar antes de enviar",
+  "enfoque": "Revista de análisis de política internacional; interesa un recurso electoral neutral."
+ },
+ {
+  "nombre": "Fundación Cives (comunicación)",
+  "perfil": "asociacion",
+  "email": "comunicacion@fundacioncives.org",
+  "visto_en": "https://fundacioncives.org/contacto/",
+  "uso": "contacto de comunicación listado en la página de contacto",
+  "enfoque": "Fundación de educación cívica; afín a una herramienta informativa neutral para votantes."
+ }
+]

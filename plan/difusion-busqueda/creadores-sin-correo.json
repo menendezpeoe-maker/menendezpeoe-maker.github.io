@@ -1,0 +1,72 @@
+[
+ {
+  "nombre": "Menéame",
+  "via": "contacto: HTTP 403 en WebFetch; probar su formulario/legal",
+  "url": "https://www.meneame.net"
+ },
+ {
+  "nombre": "Newtral",
+  "via": "web bloquea (403)",
+  "url": "https://newtral.es"
+ },
+ {
+  "nombre": "Maldita.es",
+  "via": "contact URL 404 y portada sin correo visible",
+  "url": "https://maldita.es"
+ },
+ {
+  "nombre": "Datadista",
+  "via": "solo buzón/formulario",
+  "url": "https://buzon.datadista.com/"
+ },
+ {
+  "nombre": "Xnet",
+  "via": "solo enlace a página de contacto, sin correo visible en portada",
+  "url": "https://xnet-x.net/contacto/"
+ },
+ {
+  "nombre": "Politibot",
+  "via": "dominio no permitido/no resuelve",
+  "url": "https://www.politibot.io"
+ },
+ {
+  "nombre": "Ateneu Barcelonès",
+  "via": "dominio no permitido/no resuelve",
+  "url": "https://www.ateneobcn.org"
+ },
+ {
+  "nombre": "Fundación Alternativas",
+  "via": "sin contenido legible",
+  "url": "https://www.fundacionalternativas.org/contacto"
+ },
+ {
+  "nombre": "Wikimedia España",
+  "via": "solo formulario de contacto",
+  "url": "https://www.wikimedia.es/contacto/"
+ },
+ {
+  "nombre": "Ahora Historia",
+  "via": "portada sin correo visible",
+  "url": "https://www.ahorahistoria.com"
+ },
+ {
+  "nombre": "En Disputa / La Review / The Spain Report (Substack)",
+  "via": "páginas «about» sin correo; contacto vía Substack",
+  "url": "https://endisputa.substack.com/about"
+ },
+ {
+  "nombre": "Real Instituto Elcano",
+  "via": "403",
+  "url": "https://www.realinstitutoelcano.org/contacto/"
+ },
+ {
+  "nombre": "Burbuja.info",
+  "via": "403",
+  "url": "https://www.burbuja.info"
+ },
+ {
+  "nombre": "Ethic",
+  "via": "contacto sin correo visible en portada",
+  "url": "https://ethic.es/contacto/"
+ }
+]

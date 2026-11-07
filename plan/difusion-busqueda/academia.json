@@ -1,0 +1,191 @@
+[
+ {
+  "nombre": "AECPA - Asociación Española de Ciencia Política y de la Administración",
+  "perfil": "asociacion",
+  "institucion": "AECPA",
+  "email": "info@aecpa.es",
+  "visto_en": "https://aecpa.es",
+  "uso": "Contacto general de la asociación (sección Contacto de su web)",
+  "enfoque": "Principal asociación académica de politólogos: revisión metodológica del test y difusión entre sus socios"
+ },
+ {
+  "nombre": "Departamento de Ciencia Política y de la Administración (UNED)",
+  "perfil": "departamento",
+  "institucion": "UNED",
+  "email": "dptocpol@adm.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/contacto.html",
+  "uso": "Contacto del departamento (bloque de contacto con dirección postal)",
+  "enfoque": "Revisión metodológica y uso en docencia a distancia de ciencia política"
+ },
+ {
+  "nombre": "Departamento de Sociología I, Teoría, Metodología y Cambio Social (UNED)",
+  "perfil": "departamento",
+  "institucion": "UNED",
+  "email": "departamentos.polisoci@adm.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/sociologia-i-teoria-metodologia-y-cambio-social/contacto.html",
+  "uso": "Email de la dirección administrativa del departamento",
+  "enfoque": "Interés en metodología de encuestas y uso en clase de sociología"
+ },
+ {
+  "nombre": "Departamento de Sociología y Comunicación (Universidad de Salamanca)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Salamanca",
+  "email": "dpto.syc@usal.es",
+  "visto_en": "https://www.usal.es/departamento-de-sociologia-y-comunicacion",
+  "uso": "Contacto del departamento (sección Contacto)",
+  "enfoque": "Sociología y comunicación política: revisión y uso en docencia"
+ },
+ {
+  "nombre": "Departamento de Sociología (Universidad Pablo de Olavide)",
+  "perfil": "departamento",
+  "institucion": "Universidad Pablo de Olavide",
+  "email": "admonsociologia@upo.es",
+  "visto_en": "https://www.upo.es/sociologia/contacto/",
+  "uso": "Oficina administrativa del departamento",
+  "enfoque": "Uso en clase de sociología y opinión pública"
+ },
+ {
+  "nombre": "Departamento de Ciencia Política y Relaciones Internacionales (UAM) - trámites e información",
+  "perfil": "departamento",
+  "institucion": "Universidad Autónoma de Madrid",
+  "email": "cristina.latorre@uam.es",
+  "visto_en": "https://www.uam.es/derecho/facultad/departamentos/cienciapolitica-rrii",
+  "uso": "Contacto de trámites administrativos e información del departamento",
+  "enfoque": "Revisión metodológica y uso en docencia de ciencia política"
+ },
+ {
+  "nombre": "Departamento de Ciencia Política y de la Administración (UCM) - Secretaría administrativa",
+  "perfil": "departamento",
+  "institucion": "Universidad Complutense de Madrid",
+  "email": "dp456@ucm.es",
+  "visto_en": "https://ucm.es/cpa/organizacion",
+  "uso": "Secretaría administrativa del departamento",
+  "enfoque": "Revisión metodológica y uso en clase de ciencia política"
+ },
+ {
+  "nombre": "The Conversation España - línea editorial",
+  "perfil": "plataforma-divulgacion",
+  "institucion": "The Conversation España",
+  "email": "edicion@theconversation.com",
+  "visto_en": "https://theconversation.com/es/contact-us",
+  "uso": "Consultas sobre la línea editorial",
+  "enfoque": "Divulgación académica: posible artículo de expertos sobre el test"
+ },
+ {
+  "nombre": "Departament de Ciència Política i Dret Públic (UAB)",
+  "perfil": "departamento",
+  "institucion": "Universitat Autònoma de Barcelona",
+  "email": "d.c.politica@uab.cat",
+  "visto_en": "https://www.uab.cat/ca/ciencia-politica-dret-public/contacte",
+  "uso": "Asuntos administrativos generales del departamento",
+  "enfoque": "Revisión metodológica y uso en docencia de ciencia política"
+ },
+ {
+  "nombre": "Departamento de Derecho Constitucional, Ciencia Política y de la Administración (Universitat de València)",
+  "perfil": "departamento",
+  "institucion": "Universitat de València",
+  "email": "dep.dret.consticpia@uv.es",
+  "visto_en": "https://www.uv.es/uvweb/departamento-derecho-constitucional-ciencia-politica-administracion/es/departamento/ubicacion-contacto/contacto-1285855472009.html",
+  "uso": "Contacto del departamento (Web/Email)",
+  "enfoque": "Revisión y uso en clase de ciencia política"
+ },
+ {
+  "nombre": "Departamento de Comunicación Pública - dirección (Universidad de Navarra)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Navarra",
+  "email": "mcodina@unav.es",
+  "visto_en": "https://www.unav.edu/web/departamento-de-comunicacion-publica",
+  "uso": "Contacto de la directora del departamento (comunicación política y opinión pública)",
+  "enfoque": "Comunicación política y opinión pública: revisión y uso docente"
+ },
+ {
+  "nombre": "Facultad de Comunicación - secretaría (Universidad de Navarra)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Navarra",
+  "email": "secretariafcom@unav.es",
+  "visto_en": "https://www.unav.edu/web/departamento-de-comunicacion-publica",
+  "uso": "Contacto general de la Facultad de Comunicación (sección Contacto)",
+  "enfoque": "Divulgación y uso en comunicación política"
+ },
+ {
+  "nombre": "Grupo PART-POL: Constitución y formas de participación política en democracias avanzadas (Universidad de Zaragoza)",
+  "perfil": "grupo-investigacion",
+  "institucion": "Universidad de Zaragoza",
+  "email": "cgarrido@unizar.es",
+  "visto_en": "https://grupo-part-pol.unizar.es/contacto/",
+  "uso": "Email de contacto del grupo (con secretaría del Dpto. de Derecho Público)",
+  "enfoque": "Participación política: revisión del test y su uso en docencia"
+ },
+ {
+  "nombre": "Departamento de Ciencias Sociales - secretaría (UC3M)",
+  "perfil": "departamento",
+  "institucion": "Universidad Carlos III de Madrid",
+  "email": "mariajose.gutierrez@uc3m.es",
+  "visto_en": "https://www.uc3m.es/departamento-ciencias-sociales/inicio",
+  "uso": "Email del bloque de contacto del departamento",
+  "enfoque": "Revisión metodológica y uso en docencia de ciencia política y sociología"
+ },
+ {
+  "nombre": "Departamento de Ciencias Sociales - secretaría (UC3M), segundo contacto",
+  "perfil": "departamento",
+  "institucion": "Universidad Carlos III de Madrid",
+  "email": "diana.martin.galvez@uc3m.es",
+  "visto_en": "https://www.uc3m.es/departamento-ciencias-sociales/inicio",
+  "uso": "Email del bloque de contacto del departamento",
+  "enfoque": "Revisión metodológica y uso en docencia de ciencia política y sociología"
+ },
+ {
+  "nombre": "Facultad de Ciencias Políticas y Sociales - decanato (USC)",
+  "perfil": "departamento",
+  "institucion": "Universidade de Santiago de Compostela",
+  "email": "politicas.decanato@usc.gal",
+  "visto_en": "https://pre-www.usc.gal/en/center/faculty-political-and-social-sciences",
+  "uso": "Contacto de la facultad (publicado como 'politicas.decanato [at] usc.gal')",
+  "enfoque": "Uso en grado de Ciencia Política y de la Administración"
+ },
+ {
+  "nombre": "Ignacio Molina Álvarez de Cienfuegos - director Dpto. Ciencia Política y RR.II. (UAM)",
+  "perfil": "profesor",
+  "institucion": "Universidad Autónoma de Madrid",
+  "email": "ignacio.molina@uam.es",
+  "visto_en": "https://www.uam.es/derecho/facultad/departamentos/cienciapolitica-rrii/equipo-direccion",
+  "uso": "Correo institucional publicado en el equipo de dirección del departamento",
+  "enfoque": "Politólogo: revisión de contenido y posible uso docente"
+ },
+ {
+  "nombre": "Luis Ramiro Fernández (UNED)",
+  "perfil": "profesor",
+  "institucion": "UNED - Dpto. de Ciencia Política y de la Administración",
+  "email": "lramiro@poli.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/personal.html",
+  "uso": "Correo institucional publicado en la ficha de personal: catedrático, director del departamento (partidos y política comparada)",
+  "enfoque": "Revisión metodológica y uso en docencia"
+ },
+ {
+  "nombre": "Irene Delgado Sotillos (UNED)",
+  "perfil": "profesor",
+  "institucion": "UNED - Dpto. de Ciencia Política y de la Administración",
+  "email": "idelgado@poli.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/personal.html",
+  "uso": "Correo institucional publicado en la ficha de personal: catedrática de Ciencia Política (opinión pública y comportamiento político)",
+  "enfoque": "Revisión metodológica y uso en docencia"
+ },
+ {
+  "nombre": "Antonio Manuel Jaime Castillo (UNED)",
+  "perfil": "profesor",
+  "institucion": "UNED - Dpto. de Ciencia Política y de la Administración",
+  "email": "amjaime@poli.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/personal.html",
+  "uso": "Correo institucional publicado en la ficha de personal: catedrático, subdirector del departamento (sociología política)",
+  "enfoque": "Revisión metodológica y uso en docencia"
+ },
+ {
+  "nombre": "Rubén Ruiz Ramas (UNED)",
+  "perfil": "profesor",
+  "institucion": "UNED - Dpto. de Ciencia Política y de la Administración",
+  "email": "ruben.ruiz@poli.uned.es",
+  "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/personal.html",
+  "uso": "Correo institucional publicado en la ficha de personal: coordinador del Máster en Ciencia Política",
+  "enfoque": "Revisión metodológica y uso en docencia"
+ }
+]
