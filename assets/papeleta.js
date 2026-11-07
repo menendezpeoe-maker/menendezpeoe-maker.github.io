@@ -10,7 +10,7 @@ const PUBLIC_URL = "https://test29n.es/";
 // Aportaciones voluntarias: solo enlaces públicos de pago. Una opción vacía no se muestra.
 // Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
 const DONATE = {
-  paypal: "https://www.paypal.com/donate?hosted_button_id=R2X5MXLRUM7U4",
+  paypal: "",     // retirado el 7 nov 2026 (decisión del titular); vacío = no se muestra
   applePay: "https://buy.stripe.com/7sYaEYcq8bwS6lL1Kiew800",   // enlace de pago de Stripe con Apple Pay (y tarjeta, que Apple Pay necesita)
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };

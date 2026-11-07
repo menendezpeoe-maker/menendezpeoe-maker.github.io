@@ -20,6 +20,9 @@ const browser = withFullAnalysis(await chromium.launch());
 async function open({ code = CODE, real = false } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 }, bypassCSP: !real });
   await ctx.addInitScript(() => Object.defineProperty(Navigator.prototype, "webdriver", { get: () => false }));
+  // PayPal se retiró el 7 nov: el clic en donar se prueba con Apple Pay simulado y un enlace de Stripe interceptado
+  await ctx.addInitScript(() => { window.ApplePaySession = { canMakePayments: () => true }; });
+  await ctx.route("https://buy.stripe.com/**", (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<title>Stripe (simulado)</title>" }));
   const hits = [];
   // La web pública se sirve desde la copia local; el código del contador se sustituye solo en la prueba
   if (!real) await ctx.route(`${PUBLIC}/**`, async (route) => {
@@ -54,7 +57,7 @@ console.log("Visitas y pasos del test");
   ok(paths(hits).filter((p) => p === "test-terminado").length === 1, "volver a abrir los resultados no lo cuenta otra vez");
   ok(clean(hits), "nunca se envían respuestas, provincia, sexo, partido ni el enlace con respuestas");
   await page.click("#r-support a.btn").catch(() => {}); await page.waitForTimeout(300);
-  ok(paths(hits).includes("donar-paypal"), "un clic en donar se cuenta, sin datos del test");
+  ok(paths(hits).includes("donar-apple-pay"), "un clic en donar se cuenta, sin datos del test");
   await page.click(".head-nav [data-go='method']");
   ok(/GoatCounter/.test(await page.innerText("#m-priv")) && !/Sin cookies, analítica/.test(await page.innerText("#m-priv")), "el aviso de privacidad explica el contador");
   await ctx.close();

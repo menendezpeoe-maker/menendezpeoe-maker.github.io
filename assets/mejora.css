@@ -400,6 +400,8 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .q-mini-txt { margin: 0; display: grid; min-width: 0; line-height: 1.2; }
   .q-mini-txt b { font: 800 16px var(--f-ui); white-space: nowrap; }
   .q-mini-txt span { font-size: 14px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-mini-txt .q-mini-msg { font: 700 14px var(--f-ui); font-style: normal; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-mini-txt .q-mini-msg[hidden] { display: none; }
   .q-mini-line { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: transparent; }
   .q-mini-line i { display: block; height: 100%; background: var(--ink); transition: width .2s ease; }
   /* El aviso «Respuesta guardada» baja para no tapar la barra fina */
