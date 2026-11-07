@@ -20,7 +20,7 @@ console.log("Páginas");
 const v = await get("votar/"), c = await get("calendario/");
 ok(v.status === 200 && (v.text.match(/<h1[\s>]/g) || []).length === 1 && VOTAR.secciones.every((s) => v.text.includes(`id="${s.id}"`)), "/votar/ responde con todas sus secciones");
 ok(c.status === 200 && (c.text.match(/<li[ >]/g) || []).length >= VOTAR.calendario.length && c.text.includes("Jornada de votación"), "/calendario/ responde con todas las fechas");
-ok(/fuentes oficiales, revisada el 23 de octubre de 2026/.test(v.text) && /no sustituye/.test(c.text), "indican la fecha de revisión y que no sustituyen a la información oficial");
+ok(/fuentes oficiales, revisada el 7 de noviembre de 2026/.test(v.text) && /no sustituye/.test(c.text), "indican la fecha de revisión y que no sustituyen a la información oficial");
 const links = [...(v.text + c.text).matchAll(/href="(https?:[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")).filter((u) => !u.startsWith(SITE) && !u.includes("test29n.es"));
 ok(links.length > 0 && links.every(isOfficial), `todos los enlaces externos son oficiales (${links.length})`);
 
