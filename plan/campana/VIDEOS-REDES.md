@@ -1,8 +1,8 @@
 # Cinco vídeos para Facebook y X (7 nov 2026)
 
-Formato: MP4 H.264, 1080×1080 (cuadrado, vale igual en Facebook y en X), 30 fps, sin audio (el texto va dentro del vídeo, porque la mayoría lo ve sin sonido). Duración: 18 a 27 segundos. Todos terminan con 4 segundos de tarjeta final: test29n.es · Gratis · Sin registro · Neutral · «No es una encuesta ni una recomendación de voto».
+Formato: MP4 H.264 con audio AAC, 1080×1080 (cuadrado, vale igual en Facebook y en X), 30 fps. El texto va dentro del vídeo, porque la mayoría lo ve sin sonido. Duración: 18 a 27 segundos. Edición v2: cortes al ritmo con cortina amarilla, titulares palabra a palabra, números con impacto, formas flotantes, barra de progreso y música original sintetizada (120 bpm, sin derechos de autor). Todos terminan con 4 segundos de tarjeta final: test29n.es · Gratis · Sin registro · Neutral · «No es una encuesta ni una recomendación de voto».
 
-Código para regenerarlos: `gen.py` (guiones y estilos) y `render.mjs` (animación y exportación). Se pueden cambiar los textos y volver a exportar.
+Los MP4 finales no se guardan en el repositorio (pesan 6 a 11 MB cada uno); se regeneran con `gen2.py` (guiones, animaciones y eventos), `render2.mjs` (fotogramas y exportación) y `audio.py` (música y efectos), y se mezclan con ffmpeg. `gen.py` es la versión 1, sin música.
 
 ## Reglas que cumplen todos
 - Neutrales: no recomiendan voto, no nombran partidos ni muestran resultados de usuarios.
