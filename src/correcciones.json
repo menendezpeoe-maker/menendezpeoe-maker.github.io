@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "B02",
+  "partido": "cha",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
+  "fuente": [
+   "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=76",
+   "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 76",
+   "programa",
+   "2019-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "B03",
   "partido": "erc",
   "de": 2,
@@ -29,6 +45,22 @@
    "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
    "parlamento",
    "2025-03-18"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B05",
+  "partido": "pp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos.",
+  "fuente": [
+   "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=36",
+   "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36",
+   "programa",
+   "2025-07"
   ]
  },
  {
@@ -65,6 +97,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "C08",
+  "partido": "pod",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
+  "fuente": [
+   "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=118",
+   "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 118",
+   "programa",
+   "2019-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D01",
+  "partido": "comp",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto.",
+  "fuente": [
+   "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240",
+   "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240",
+   "programa",
+   "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "D01",
   "partido": "vox",
   "de": 3,
@@ -77,6 +141,38 @@
    "«100 medidas para la España viva» de Vox (2019), medida 11",
    "programa",
    "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E03",
+  "partido": "upc",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone reformar y derogar aspectos de la ley mordaza y modificarla, pero en otro pasaje habla de derogarla solo parcialmente.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=133",
+   "Programa electoral de Sumar para el 23J de 2023, p. 133",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E09",
+  "partido": "upc",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone regular íntegramente el cannabis con asociaciones cannábicas de autoconsumo sin ánimo de lucro, no una venta general a adultos.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=94",
+   "Programa electoral de Sumar para el 23J de 2023, p. 94",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -98,6 +194,22 @@
  {
   "fecha": "2026-11-07",
   "id": "G02",
+  "partido": "adel",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6",
+   "Programa electoral de Adelante Andalucía de 2026, p. 6",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G02",
   "partido": "pacma",
   "de": 3,
   "a": 4,
@@ -109,6 +221,214 @@
    "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético",
    "programa",
    "2026-01"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G04",
+  "partido": "adel",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone oposición a nuevos trasvases y a la expansión descontrolada del regadío por la sobreexplotación de las aguas subterráneas.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
+   "Programa electoral de Adelante Andalucía de 2026, p. 195",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G06",
+  "partido": "adel",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone moratoria a nuevas infraestructuras de AVE, recuperar líneas convencionales e impulsar cercanías y media distancia en localidades de más de 20.000 habitantes.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=291",
+   "Programa electoral de Adelante Andalucía de 2026, p. 291",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H03",
+  "partido": "upc",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147",
+   "Programa electoral de Sumar para el 23J de 2023, p. 147",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H06",
+  "partido": "adel",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=281",
+   "Programa electoral de Adelante Andalucía de 2026, p. 281",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I02",
+  "partido": "comp",
+  "de": 5,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
+  "fuente": [
+   "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=35",
+   "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 35",
+   "programa",
+   "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I03",
+  "partido": "adel",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7",
+   "Programa electoral de Adelante Andalucía de 2026, p. 7",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I08",
+  "partido": "adel",
+  "de": 3,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Rechaza la tauromaquia como acto cultural y propone suprimir toda subvención e institución pública ligada a ella en los dos primeros años.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=253",
+   "Programa electoral de Adelante Andalucía de 2026, p. 253",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I08",
+  "partido": "cha",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
+  "fuente": [
+   "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=75",
+   "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 75",
+   "programa",
+   "2019-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K01",
+  "partido": "upc",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone renegociar el acuerdo UE-Mercosur para que prevalezcan los derechos humanos y ambientales sobre el poder de las grandes corporaciones.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=142",
+   "Programa electoral de Sumar para el 23J de 2023, p. 142",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K05",
+  "partido": "adel",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=168",
+   "Programa electoral de Adelante Andalucía de 2026, p. 168",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K07",
+  "partido": "adel",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=251",
+   "Programa electoral de Adelante Andalucía de 2026, p. 251",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K08",
+  "partido": "adel",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Propone frenar la creación de nuevos regadíos y reducir su superficie actual para alcanzar equilibrio hídrico.",
+  "fuente": [
+   "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
+   "Programa electoral de Adelante Andalucía de 2026, p. 195",
+   "programa",
+   "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L06",
+  "partido": "comp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Incluye entre los derechos digitales básicos el derecho al olvido, a la privacidad y al anonimato, lo que contradice poner fin al anonimato.",
+  "fuente": [
+   "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=55",
+   "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 55",
+   "programa",
+   "2019-04"
   ]
  },
  {
