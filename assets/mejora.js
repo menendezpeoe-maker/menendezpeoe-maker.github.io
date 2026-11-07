@@ -196,6 +196,9 @@
     const mini = document.createElement("div"); mini.className = "q-mini"; mini.dataset.mejora = "bloque-2";
     mini.innerHTML = '<button type="button" class="q-mini-prev" aria-label="Pregunta anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5"/></svg><span aria-hidden="true">Anterior</span></button><p class="q-mini-txt" aria-hidden="true"><b></b><span></span></p><span class="q-mini-line" aria-hidden="true"><i></i></span>';
     quizView.append(mini);
+    const mmsg = document.createElement("em"); mmsg.className = "q-mini-msg"; mmsg.hidden = true; $(".q-mini-txt", mini).append(mmsg);
+    const syncMsg = () => { const t = autoNote.querySelector("span").textContent; const extra = t !== T.autoguardado; mmsg.hidden = !extra; mmsg.textContent = extra ? t : ""; };
+    new MutationObserver(syncMsg).observe(autoNote, { childList: true, characterData: true, subtree: true }); syncMsg();
     const btn = $(".q-mini-prev", mini), b = $(".q-mini-txt b", mini), sp = $(".q-mini-txt span", mini), line = $(".q-mini-line i", mini);
     const sync = () => {
       b.textContent = qCount.textContent;
