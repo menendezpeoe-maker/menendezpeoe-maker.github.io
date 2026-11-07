@@ -1816,7 +1816,7 @@
    "lr": -1,
    "pos": {
     "psoe": 4,
-    "pp": 3,
+    "pp": 2,
     "vox": 2,
     "fa": 5,
     "pod": 5,
@@ -1839,7 +1839,6 @@
     "adel": 5
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
@@ -1927,6 +1926,12 @@
      "VOX, Programa económico y de vivienda (octubre 2025): viviendas de uso turístico",
      "programa",
      "2025-10"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=36",
+     "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36",
+     "programa",
+     "2025-07"
     ]
    },
    "why": {
@@ -1942,7 +1947,8 @@
     "comp": "Una iniciativa de Compromís en el Congreso pide que las administraciones locales puedan limitar los pisos turísticos en zonas sensibles.",
     "mes": "La ley turística impulsada por el líder de MÉS en el Govern permite a los ayuntamientos ser más restrictivos con el alquiler turístico.",
     "bildu": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda.",
-    "vox": "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos."
+    "vox": "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos.",
+    "pp": "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos."
    }
   },
   {
@@ -3209,7 +3215,7 @@
     "pp": 4,
     "vox": 1,
     "fa": 4,
-    "pod": 3,
+    "pod": 5,
     "salf": 1,
     "d21": 2,
     "erc": 2,
@@ -3234,7 +3240,6 @@
    "est": [
     "vox",
     "fa",
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -3276,13 +3281,19 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=118",
+     "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 118",
+     "programa",
+     "2019-10"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
     "pp": "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos.",
     "fa": "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
-    "pod": "Estimación: sin postura reciente publicada sobre la reforma del Senado.",
+    "pod": "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
     "erc": "ERC propone suprimir el Senado en lugar de reconvertirlo."
    }
   },
@@ -5858,7 +5869,6 @@
     "soria": 4
    },
    "est": [
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -5917,6 +5927,12 @@
      "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=63",
+     "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 63",
+     "programa",
+     "2019-10"
     ]
    },
    "why": {
@@ -5925,7 +5941,8 @@
     "vox": "Una proposición no de ley de Vox pide frenar la llegada de extranjeros y cubrir los empleos vacantes con trabajadores españoles.",
     "fa": "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
     "erc": "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras.",
-    "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral."
+    "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
+    "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo."
    }
   },
   {
@@ -6267,7 +6284,6 @@
     "adel": 5
    },
    "est": [
-    "pp",
     "vox",
     "salf",
     "d21",
@@ -6315,6 +6331,12 @@
      "Menorca.info (Europa Press): Ione Belarra (Podemos) sobre dependencia e impuestos en el Congreso",
      "declaracion",
      "2022-11-23"
+    ],
+    "pp": [
+     "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=25",
+     "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25",
+     "programa",
+     "2025-07"
     ]
    },
    "why": {
@@ -6323,7 +6345,8 @@
     "erc": "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos.",
     "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
     "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
-    "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos."
+    "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
+    "pp": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal."
    }
   },
   {
@@ -7163,7 +7186,6 @@
    "est": [
     "pp",
     "vox",
-    "pod",
     "salf",
     "pacma",
     "d21",
@@ -7187,6 +7209,12 @@
      "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 43",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=11",
+     "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 11",
+     "programa",
+     "2019-10"
     ]
    },
    "why": {
@@ -7194,7 +7222,7 @@
     "pp": "Estimación: no consta postura nacional del PP sobre prohibir construir en zonas inundables ya clasificadas.",
     "vox": "Estimación: no consta una postura de Vox sobre prohibir construir en zonas inundables.",
     "fa": "Estimación: no consta una propuesta verificada de Sumar para prohibir construir en suelos inundables ya aprobados.",
-    "pod": "Estimación: favorable a prohibirlo por su enfoque de adaptación climática.",
+    "pod": "Propone hacer efectiva la prohibición de construir en cauces y zonas inundables y un plan de protección para las familias afectadas.",
     "erc": "Estimación: sin postura conocida de ERC sobre suelos inundables."
    }
   },
@@ -7453,7 +7481,6 @@
     "adel": 1
    },
    "est": [
-    "pp",
     "vox",
     "salf",
     "pacma",
@@ -7474,10 +7501,10 @@
      "2025-06-19"
     ],
     "pp": [
-     "https://www.publico.es/politica/pp-compromete-llegar-5-pib-defensa-pide-trump.html",
-     "Público, postura del PP sobre el gasto en defensa, 15/10/2025",
-     "declaracion",
-     "2025-10-15"
+     "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=45",
+     "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 45",
+     "programa",
+     "2025-07"
     ],
     "vox": [
      "https://theobjective.com/espana/politica/2025-03-26/abascal-gasto-defensa-ceuta-melilla/",
@@ -7581,7 +7608,8 @@
     "adel": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
     "upc": "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
     "cha": "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
-    "mes": "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar."
+    "mes": "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar.",
+    "pp": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta."
    }
   },
   {
@@ -10199,7 +10227,6 @@
     "adel": 2
    },
    "est": [
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -10256,6 +10283,12 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "pod": [
+     "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=94",
+     "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 94",
+     "programa",
+     "2019-10"
     ]
    },
    "why": {
@@ -10263,7 +10296,7 @@
     "pp": "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera.",
     "vox": "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
     "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
-    "pod": "Estimación: favorable a estándares estatales como tiempos máximos de espera.",
+    "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
     "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias."
    }
@@ -10543,7 +10576,6 @@
     "soria": 4
    },
    "est": [
-    "pod",
     "salf",
     "d21",
     "junts",
@@ -10597,6 +10629,12 @@
      "Última Hora (Europa Press): EH Bildu pide dar un giro a la PAC para proteger las pequeñas explotaciones",
      "prensa",
      "2024-05-29"
+    ],
+    "pod": [
+     "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=17",
+     "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 17",
+     "programa",
+     "2019-10"
     ]
    },
    "why": {
@@ -10604,7 +10642,7 @@
     "pp": "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas.",
     "vox": "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
     "fa": "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
-    "pod": "Estimación: favorable a orientar la PAC a pequeñas explotaciones.",
+    "pod": "La medida 36 pide que la PAC deje de basarse en derechos históricos y apoye a quienes desempeñan la actividad, con las explotaciones familiares.",
     "erc": "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar.",
     "bildu": "La parlamentaria de EH Bildu Itxaso Etxebarria defendió reorientar la PAC hacia las explotaciones pequeñas y familiares."
    }

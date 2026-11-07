@@ -131,7 +131,7 @@ export const QUESTIONS = [
   text: "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
   short: "Prohibir nuevos pisos turísticos",
   ctx: "España tiene más de 350.000 viviendas de uso turístico. Desde 2025 abrir un piso turístico en un edificio exige el permiso de la comunidad de propietarios, y Barcelona ha anunciado que eliminará todas sus licencias en 2028. Los defensores de prohibirlos buscan devolver viviendas al alquiler residencial; sus críticos alertan de la pérdida de ingresos de pequeños propietarios y de un efecto limitado sobre los precios.",
-  pos: "4 3~ 2 5 5 2~ 0 3~ 5 3~ 4 5 3~ 4~ 5~ 4 5 5 5 4~ 3~ 5 5 0 0 0 0" },
+  pos: "4 2 2 5 5 2~ 0 3~ 5 3~ 4 5 3~ 4~ 5~ 4 5 5 5 4~ 3~ 5 5 0 0 0 0" },
 { id: "B06", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
   short: "Recargo fiscal a las viviendas vacías",
@@ -199,7 +199,7 @@ export const QUESTIONS = [
   short: "Un Senado territorial",
   ctx: "Hoy la mayoría de los senadores se eligen por provincias, cuatro por provincia sea cual sea su población, y el Senado tiene poco peso: el Congreso puede levantar sus vetos. Convertirlo en una cámara territorial, como el Bundesrat alemán, daría voz a los gobiernos autonómicos en las leyes del Estado. Otros proponen suprimirlo o mantenerlo como está.",
   ley: "Constitución, art. 69",
-  pos: "4 4 1~ 4~ 3~ 1~ 0 2~ 2 2~ 3~ 2~ 2~ 3~ 2~ 4~ 3~ 0 4~ 4~ 2~ 3~ 3~ 2~ 2~ 1~ 2~" },
+  pos: "4 4 1~ 4~ 5 1~ 0 2~ 2 2~ 3~ 2~ 2~ 3~ 2~ 4~ 3~ 0 4~ 4~ 2~ 3~ 3~ 2~ 2~ 1~ 2~" },
 { id: "C09", area: "ter", prio: 3, type: "likert", dim: "ter", dir: 1, lr: 1,
   text: "El concierto vasco y el convenio navarro deberían reformarse para que esas comunidades aporten más a la caja común.",
   short: "Reformar el concierto vasco y el convenio navarro",
@@ -336,7 +336,7 @@ export const QUESTIONS = [
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
   ctx: "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
-  pos: "5 4 1 5 5~ 1~ 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
+  pos: "5 4 1 5 5 1~ 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4~ 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0" },
 { id: "F05", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
@@ -356,7 +356,7 @@ export const QUESTIONS = [
   text: "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
   short: "Dependencia como servicio público universal",
   ctx: "Más de 250.000 personas esperan la valoración de su dependencia o la ayuda que ya tienen reconocida, y muchas fallecen antes. El sistema se financia entre el Estado y las comunidades y descansa en gran medida en cuidadoras familiares. Convertirlo en un servicio universal reduciría esperas y profesionalizaría los cuidados, con un fuerte aumento del gasto. La alternativa es combinar ayudas públicas con seguros y servicios privados.",
-  pos: "4 2~ 2~ 5 5 1~ 0 2~ 4~ 3~ 3~ 5 3~ 4~ 5 3~ 5~ 5~ 5~ 5~ 4~ 5~ 5~ 0 0 0 0" },
+  pos: "4 2 2~ 5 5 1~ 0 2~ 4~ 3~ 3~ 5 3~ 4~ 5 3~ 5~ 5~ 5~ 5~ 4~ 5~ 5~ 0 0 0 0" },
 { id: "F09", area: "dem", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
   short: "Más condiciones al Ingreso Mínimo Vital",
@@ -400,7 +400,7 @@ export const QUESTIONS = [
   text: "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
   short: "Prohibir construir en zonas inundables",
   ctx: "La dana de octubre de 2024 causó más de 220 muertos en la provincia de Valencia y puso el foco en viviendas y polígonos construidos en zonas inundables. La normativa ya limita edificar en ellas, pero hay suelos aprobados antes y excepciones. Prohibirlo del todo reduciría los riesgos futuros, pero obligaría a desclasificar suelo e indemnizar, con costes para propietarios y ayuntamientos.",
-  pos: "4 3~ 2~ 4 5~ 2~ 4~ 3~ 3~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
+  pos: "4 3~ 2~ 4 5 2~ 4~ 3~ 3~ 3~ 3~ 4~ 3~ 0 4~ 0 0 0 5~ 0 0 0 0 0 0 0 0" },
 { id: "G08", area: "ene", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
   short: "Más aprovechamiento del monte contra incendios",
@@ -419,7 +419,7 @@ export const QUESTIONS = [
   text: "España debería subir su gasto en defensa hacia el 3,5 % del PIB acordado en la OTAN, en lugar de quedarse en torno al 2 %.",
   short: "Más gasto en defensa",
   ctx: "En la cumbre de La Haya de 2025, los aliados de la OTAN acordaron llegar en 2035 al 5 % del PIB en defensa y seguridad, del que un 3,5 % sería gasto militar directo. España obtuvo una excepción y sostiene que con alrededor del 2,1 % cumple los objetivos de capacidades. Sus defensores invocan la amenaza rusa y la dependencia de EE. UU.; sus críticos, el coste frente a otras prioridades.",
-  pos: "1 4~ 4~ 1 1 4~ 1~ 5~ 1 3~ 3 1 4 2~ 1 3 1 1~ 1 1 2~ 1 1 0 0 0 0" },
+  pos: "1 4 4~ 1 1 4~ 1~ 5~ 1 3~ 3 1 4 2~ 1 3 1 1~ 1 1 2~ 1 1 0 0 0 0" },
 { id: "H02", area: "ext", prio: 2, type: "likert", dim: "eur", dir: -1, lr: 0,
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
@@ -551,7 +551,7 @@ export const QUESTIONS = [
   text: "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
   short: "Estándares sanitarios comunes",
   ctx: "La sanidad está transferida a las comunidades desde 2002, y el Estado coordina a través del Consejo Interterritorial, donde las decisiones suelen requerir acuerdo. Eso explica diferencias en listas de espera, vacunas o prestaciones entre territorios. Dar más poder al Ministerio favorecería la igualdad entre ciudadanos; sus críticos defienden la autonomía de gestión y la cercanía, y temen una uniformización impuesta por el Gobierno central.",
-  pos: "5 2 5 5 4~ 5~ 0 5~ 1 1~ 1~ 1~ 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
+  pos: "5 2 5 5 4 5~ 0 5~ 1 1~ 1~ 1~ 1~ 1~ 1 1~ 2~ 2~ 2~ 2~ 3~ 2~ 2~ 0 0 0 0" },
 
 // ───────────── K · Agricultura, pesca y mundo rural
 { id: "K01", area: "rur", prio: 1, type: "likert", dim: "eur", dir: -1, lr: 0,
@@ -569,7 +569,7 @@ export const QUESTIONS = [
   text: "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
   short: "PAC para profesionales y pequeñas explotaciones",
   ctx: "España recibe cada año unos 5.000 millones de euros en ayudas directas de la Política Agraria Común. Una parte importante se reparte en función de las hectáreas y de derechos históricos, de modo que los mayores perceptores son grandes propietarios. Vincularla a quienes viven del campo y a explotaciones pequeñas y medianas reforzaría el medio rural; sus críticos advierten de que la agricultura competitiva necesita escala.",
-  pos: "4 2 4 5 5~ 3~ 0 2~ 4 2~ 3~ 5 2~ 0 5~ 0 0 0 4~ 5~ 4~ 0 5~ 4~ 4~ 4~ 0" },
+  pos: "4 2 4 5 5 3~ 0 2~ 4 2~ 3~ 5 2~ 0 5~ 0 0 0 4~ 5~ 4~ 0 5~ 4~ 4~ 4~ 0" },
 { id: "K04", area: "rur", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
   short: "Control del lobo",
@@ -1005,6 +1005,7 @@ export const SOURCES = {
     mes: ["https://www.eldiario.es/economia/instituciones-baleares-prohibir-alquilar-turistas_1_3256574.html", "elDiario.es/EFE: las instituciones de Baleares podrán prohibir alquilar pisos a turistas (30 jul 2017)", "prensa", "2017-07-30"],
     bildu: ["https://orain.eus/es/politica/2024/10/16/vivienda-cuidados-emancipacion-juvenil-y-transicion-ecosocial-ejes-principales-de-propuesta-de-eh-bildu/", "Orain (EITB): propuesta presupuestaria de EH Bildu para 2025", "prensa", "2024-10-16"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2025/10/Programa-WEB-021025.pdf#page=45", "VOX, Programa económico y de vivienda (octubre 2025): viviendas de uso turístico", "programa", "2025-10"],
+    pp: ["https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=36", "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36", "programa", "2025-07"],
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
@@ -1116,7 +1117,8 @@ export const SOURCES = {
   C08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=15", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
-    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
+    pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=118", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 118", "programa", "2019-10"],
   },
   C09: {
     psoe: ["https://www.ondavasca.com/el-congreso-apoya-tramitar-el-concierto-y-el-cupo-sin-cambios/", "Tramitación en lectura única del Concierto, el Convenio y el Cupo (21 de febrero de 2023)", "parlamento", "2023-02-21"],
@@ -1356,7 +1358,8 @@ export const SOURCES = {
     vox: ["https://forbes.es/economia/841921/vox-culpa-a-la-inmigracion-del-estancamiento-de-los-salarios-y-pide-cesar-la-llegada-masiva-de-extranjeros/", "Vox culpa a la inmigración del estancamiento de los salarios y pide cesar la llegada «masiva» de extranjeros (Forbes)", "parlamento", "2025-12-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104", "Programa electoral de Sumar de 2023, p. 104", "programa", "2023-07"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
-    pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=30", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"]
+    pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=30", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
+    pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=63", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 63", "programa", "2019-10"],
   },
   F05: {
     psoe: ["https://www.boe.es/eli/es/rdl/2025/03/18/2", "Real Decreto-ley 2/2025 sobre menores migrantes (18 de marzo de 2025)", "gobierno", "2025-03-18"],
@@ -1391,6 +1394,7 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19", "Programa electoral del BNG para las generales de 2023, p. 19", "programa", "2023-07"],
     bildu: ["https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/", "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024", "prensa", "2024-04-07"],
     pod: ["https://www.menorca.info/actualidad/nacional/2022/11/23/1834329/cualquiera-diga-pueden-garantizar-derechos-sociales-bajando-impuestos-ricos-miente.html", "Menorca.info (Europa Press): Ione Belarra (Podemos) sobre dependencia e impuestos en el Congreso", "declaracion", "2022-11-23"],
+    pp: ["https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=25", "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25", "programa", "2025-07"],
   },
   F09: {
     psoe: ["https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4972", "Real Decreto-ley 6/2022 (29 de marzo de 2022)", "gobierno", "2022-03-29"],
@@ -1464,6 +1468,7 @@ export const SOURCES = {
   G07: {
     psoe: ["https://es.ara.cat/sociedad/vivienda/gobierno-espanol-endurecera-restricciones-zonas-inundables-nuevos-edificios-no-podran-garaje_1_5799917.html", "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)", "gobierno", "2026-07-15"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=43", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 43", "programa", "2023-07"],
+    pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=11", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 11", "programa", "2019-10"],
   },
   G08: {
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/Documents/2025/020925_Pacto-de-Estado-frente-a-la-emergencia-climatica.pdf#page=3", "Propuesta de Pacto de Estado frente a la Emergencia Climática (2 de septiembre de 2025)", "gobierno", "2025-09-02"],
@@ -1487,7 +1492,7 @@ export const SOURCES = {
   },
   H01: {
     psoe: ["https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html", "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025", "declaracion", "2025-06-19"],
-    pp: ["https://www.publico.es/politica/pp-compromete-llegar-5-pib-defensa-pide-trump.html", "Público, postura del PP sobre el gasto en defensa, 15/10/2025", "declaracion", "2025-10-15"],
+    pp: ["https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=45", "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 45", "programa", "2025-07"],
     vox: ["https://theobjective.com/espana/politica/2025-03-26/abascal-gasto-defensa-ceuta-melilla/", "The Objective, intervención de Abascal en el Congreso, 26/03/2025", "declaracion", "2025-03-26"],
     fa: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
     pod: ["https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html", "ElNacional.cat, votación en el Congreso del 20/03/2025", "parlamento", "2025-03-20"],
@@ -1750,7 +1755,8 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56", "Programa electoral de Vox de 2023, medida 102", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89", "Programa electoral de Sumar de 2023, p. 89", "programa", "2023-07"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
-    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"]
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
+    pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=94", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 94", "programa", "2019-10"],
   },
   K01: {
     psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
@@ -1780,6 +1786,7 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=60", "Programa electoral de Sumar de 2023, p. 60", "programa", "2023-07"],
     erc: ["https://forbes.es/ultima-hora/409318/erc-propone-parar-los-acuerdos-de-libre-comercio-de-la-ue-y-destinar-las-ayudas-pac-a-agricultores-pequenos/", "Forbes España (Europa Press): ERC registra en el Congreso una proposición no de ley sobre la PAC y los acuerdos de libre comercio", "prensa", "2024-02-09"],
     bildu: ["https://www.ultimahora.es/noticias/comunidades/2024/05/29/2173957/bildu-pide-dar-giro-pac-para-sea-eficaz-proteja-pequenas-explotaciones-agroganaderas.html", "Última Hora (Europa Press): EH Bildu pide dar un giro a la PAC para proteger las pequeñas explotaciones", "prensa", "2024-05-29"],
+    pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=17", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 17", "programa", "2019-10"],
   },
   K04: {
     psoe: ["https://forbes.es/?p=672070", "Forbes España (Europa Press), votación sobre el lobo en la Ley de Desperdicio Alimentario, 03/04/2025", "parlamento", "2025-04-03"],
@@ -2093,6 +2100,7 @@ export const JUSTIF = {
     mes: "La ley turística impulsada por el líder de MÉS en el Govern permite a los ayuntamientos ser más restrictivos con el alquiler turístico.",
     bildu: "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda.",
     vox: "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos.",
+    pp: "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos.",
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
@@ -2207,7 +2215,7 @@ export const JUSTIF = {
     psoe: "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
     pp: "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos.",
     fa: "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
-    pod: "Estimación: sin postura reciente publicada sobre la reforma del Senado.",
+    pod: "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
     erc: "ERC propone suprimir el Senado en lugar de reconvertirlo."
   },
   C09: {
@@ -2461,7 +2469,8 @@ export const JUSTIF = {
     vox: "Una proposición no de ley de Vox pide frenar la llegada de extranjeros y cubrir los empleos vacantes con trabajadores españoles.",
     fa: "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
     erc: "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras.",
-    pnv: "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral."
+    pnv: "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
+    pod: "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
   },
   F05: {
     psoe: "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
@@ -2498,6 +2507,7 @@ export const JUSTIF = {
     bng: "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
     bildu: "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
     pod: "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
+    pp: "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal.",
   },
   F09: {
     psoe: "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
@@ -2570,7 +2580,7 @@ export const JUSTIF = {
     pp: "Estimación: no consta postura nacional del PP sobre prohibir construir en zonas inundables ya clasificadas.",
     vox: "Estimación: no consta una postura de Vox sobre prohibir construir en zonas inundables.",
     fa: "Estimación: no consta una propuesta verificada de Sumar para prohibir construir en suelos inundables ya aprobados.",
-    pod: "Estimación: favorable a prohibirlo por su enfoque de adaptación climática.",
+    pod: "Propone hacer efectiva la prohibición de construir en cauces y zonas inundables y un plan de protección para las familias afectadas.",
     erc: "Estimación: sin postura conocida de ERC sobre suelos inundables."
   },
   G08: {
@@ -2606,6 +2616,7 @@ export const JUSTIF = {
     upc: "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
     cha: "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
     mes: "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar.",
+    pp: "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta.",
   },
   H02: {
     psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
@@ -2856,7 +2867,7 @@ export const JUSTIF = {
     pp: "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera.",
     vox: "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
     fa: "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
-    pod: "Estimación: favorable a estándares estatales como tiempos máximos de espera.",
+    pod: "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     erc: "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
     bng: "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias."
   },
@@ -2881,7 +2892,7 @@ export const JUSTIF = {
     pp: "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas.",
     vox: "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
     fa: "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
-    pod: "Estimación: favorable a orientar la PAC a pequeñas explotaciones.",
+    pod: "La medida 36 pide que la PAC deje de basarse en derechos históricos y apoye a quienes desempeñan la actividad, con las explotaciones familiares.",
     erc: "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar.",
     bildu: "La parlamentaria de EH Bildu Itxaso Etxebarria defendió reorientar la PAC hacia las explotaciones pequeñas y familiares.",
   },
