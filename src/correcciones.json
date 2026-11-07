@@ -34,6 +34,22 @@
  {
   "fecha": "2026-11-07",
   "id": "A02",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
+  "fuente": [
+   "https://falange.es/nuestras-ideas/",
+   "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A02",
   "partido": "ie",
   "de": 0,
   "a": 2,
@@ -141,6 +157,22 @@
    "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
    "parlamento",
    "2023-03-30"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A07",
+  "partido": "salf",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: Alvise promete estimular el uso del efectivo frente al euro digital; no cita el límite de 1.000 euros, por eso la base es indirecta.",
+  "fuente": [
+   "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+   "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+   "prensa",
+   "2024-06"
   ]
  },
  {
@@ -1041,6 +1073,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "D07",
+  "partido": "salf",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: según la crónica, Alvise se mostró dispuesto a prescindir de la figura del rey; no cita un referéndum.",
+  "fuente": [
+   "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+   "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+   "prensa",
+   "2024-06"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "E01",
   "partido": "falange",
   "de": 0,
@@ -1252,15 +1300,15 @@
   "id": "F02",
   "partido": "falange",
   "de": 0,
-  "a": 4,
+  "a": 5,
   "estimadaAntes": false,
   "estimada": false,
-  "motivo": "Propone repatriar a los extranjeros, legales o ilegales, sin contrato de trabajo, y expulsar a los que tengan antecedentes.",
+  "motivo": "Propone la «remigración»: devolver a sus países a millones de personas que han fracasado en su integración social.",
   "fuente": [
-   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
-   "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+   "https://falange.es/nuestras-ideas/",
+   "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)",
    "programa",
-   "2023-07"
+   "2026-11"
   ]
  },
  {
@@ -1917,6 +1965,22 @@
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H02",
+  "partido": "salf",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: según la crónica, Alvise propone un referéndum para salir de la UE si no se renegocian las relaciones con Bruselas.",
+  "fuente": [
+   "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
+   "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
+   "prensa",
+   "2024-06"
   ]
  },
  {
