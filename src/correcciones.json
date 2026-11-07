@@ -1,5 +1,133 @@
 [
  {
+  "fecha": "2026-11-07",
+  "id": "A05",
+  "partido": "vox",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate.",
+  "fuente": [
+   "https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/",
+   "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
+   "parlamento",
+   "2023-03-30"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B03",
+  "partido": "erc",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
+  "fuente": [
+   "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json",
+   "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
+   "parlamento",
+   "2025-03-18"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C06",
+  "partido": "fa",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Estimación: no consta una postura nacional verificada de Sumar sobre suprimir las diputaciones provinciales.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75",
+   "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C07",
+  "partido": "vox",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales.",
+  "fuente": [
+   "https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=12",
+   "«100 medidas para la España viva» de Vox (2019), medida 36",
+   "programa",
+   "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D01",
+  "partido": "vox",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional.",
+  "fuente": [
+   "https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=5",
+   "«100 medidas para la España viva» de Vox (2019), medida 11",
+   "programa",
+   "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F05",
+  "partido": "erc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Estimación: posición intermedia por la defensa de las competencias autonómicas.",
+  "fuente": [
+   "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json",
+   "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026",
+   "parlamento",
+   "2026-09-16"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G02",
+  "partido": "pacma",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
+   "Programa de PACMA para las autonómicas de Aragón 2026, apartado de modelo energético",
+   "programa",
+   "2026-01"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L07",
+  "partido": "pod",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
+  "fuente": [
+   "https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html",
+   "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
+   "prensa",
+   "2026-02-11"
+  ]
+ },
+ {
   "fecha": "2026-11-03",
   "id": "A01",
   "partido": "salf",
