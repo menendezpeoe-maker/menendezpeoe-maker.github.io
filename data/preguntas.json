@@ -1255,7 +1255,6 @@
     "adel": 1
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -1338,6 +1337,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 16",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
+     "Programa electoral de SALF para Castilla y León, p. 4 (programa autonómico CyL 2026; mismo asunto)",
+     "programa",
+     "2026-03"
     ]
    },
    "why": {
@@ -1352,7 +1357,8 @@
     "comp": "Propone recuperar el impuesto de sucesiones y donaciones, elevando los mínimos exentos pero con más progresividad, no eliminarlo.",
     "adel": "Propone reformar sucesiones sin reducciones, con un mínimo exento de 500.000 euros, en lugar de eliminarlo para herencias entre padres e hijos.",
     "cha": "Propone mantener el impuesto de sucesiones, con exenciones y bonificaciones para la empresa familiar, en lugar de eliminarlo.",
-    "upc": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar."
+    "upc": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar.",
+    "salf": "El programa autonómico bonifica al 99 % Sucesiones y Donaciones; solo es autonómico, pero respalda su rechazo a gravar herencias."
    }
   },
   {
@@ -3400,7 +3406,6 @@
     "bng",
     "ccpc",
     "upc",
-    "comp",
     "cha",
     "existe",
     "mes",
@@ -3437,6 +3442,12 @@
      "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 118",
      "programa",
      "2019-10"
+    ],
+    "comp": [
+     "https://valenciaplaza.com/valenciaplaza/CompromsproponeunareformaurgentedelSenadoparaqueseareceptivoalosproblemasautonmicos",
+     "Valencia Plaza, Compromís propone una reforma urgente del Senado, 21/04/2019",
+     "declaracion",
+     "2019-04-21"
     ]
    },
    "why": {
@@ -3444,7 +3455,8 @@
     "pp": "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos.",
     "fa": "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
     "pod": "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
-    "erc": "ERC propone suprimir el Senado en lugar de reconvertirlo."
+    "erc": "ERC propone suprimir el Senado en lugar de reconvertirlo.",
+    "comp": "Baldoví y los candidatos de Compromís piden reformar el Senado para convertirlo en una verdadera cámara de representación territorial."
    }
   },
   {
@@ -3791,7 +3803,6 @@
    },
    "est": [
     "salf",
-    "erc",
     "pnv",
     "gbai",
     "bng",
@@ -3862,6 +3873,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 131",
      "programa",
      "2023-07"
+    ],
+    "erc": [
+     "https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/",
+     "Que.es, reforma del CGPJ del PP rechazada, 21/09/2021",
+     "parlamento",
+     "2021-09-21"
     ]
    },
    "why": {
@@ -3870,7 +3887,7 @@
     "vox": "Vox propone que todos los vocales del CGPJ sean designados o propuestos por los propios jueces.",
     "fa": "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
     "pod": "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
-    "erc": "Estimación: ERC critica el conservadurismo de la cúpula judicial y no apoya que los jueces elijan.",
+    "erc": "ERC anunció su voto en contra de la proposición del PP para que los jueces elijan a los doce vocales de la carrera judicial del CGPJ.",
     "junts": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
     "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
     "d21": "Su documento programático propone que los vocales judiciales del CGPJ sean elegidos por los propios jueces.",
@@ -3914,7 +3931,6 @@
     "adel": 4
    },
    "est": [
-    "salf",
     "d21",
     "gbai",
     "upc",
@@ -4007,6 +4023,12 @@
      "Qué!: debate sobre la ley de amnistía en el Congreso (23 mar 2021)",
      "prensa",
      "2021-03-23"
+    ],
+    "salf": [
+     "https://www.elmundo.es/espana/2024/06/13/66697b9321efa037638b4582.html",
+     "El Mundo, 13/06/2024, declaraciones de Alvise Pérez y de SALF sobre la ley de amnistía",
+     "declaracion",
+     "2024-06-13"
     ]
    },
    "why": {
@@ -4023,7 +4045,8 @@
     "bng": "Votó a favor de la ley de amnistía en su aprobación definitiva en el Congreso.",
     "ccpc": "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso, en mayo de 2024.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
-    "comp": "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán."
+    "comp": "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán.",
+    "salf": "SALF y Alvise tachan la ley de amnistía de contraria al marco constitucional y critican al Rey por sancionarla."
    }
   },
   {
@@ -4332,7 +4355,6 @@
     "salf",
     "d21",
     "erc",
-    "junts",
     "pnv",
     "bildu",
     "upn",
@@ -4352,6 +4374,12 @@
      "Programa electoral de Vox de 2023",
      "programa",
      "2023-07"
+    ],
+    "junts": [
+     "https://www.ondavasca.com/junts-insiste-en-que-no-aceptara-el-tragala-del-gobierno-espanol-y-le-insta-a-dejar-de-colar-su-programa-en-cada-decreto/",
+     "Onda Vasca, Nogueras (Junts) sobre el decreto ómnibus, 24/01/2025",
+     "declaracion",
+     "2025-01-24"
     ]
    },
    "why": {
@@ -4359,7 +4387,8 @@
     "vox": "El programa de Vox critica el abuso del real decreto-ley por los últimos gobiernos y promete corregirlo.",
     "fa": "Estimación: como socio de Gobierno ha apoyado decretos-ley y no consta propuesta suya para limitarlos.",
     "pod": "Estimación: sin postura publicada sobre limitar los decretos-ley.",
-    "erc": "Estimación: sin postura conocida de ERC sobre limitar los decretos-ley."
+    "erc": "Estimación: sin postura conocida de ERC sobre limitar los decretos-ley.",
+    "junts": "Junts votó contra el decreto ómnibus y Nogueras reclamó no colar medidas en cada decreto y separar pensiones y transporte en decretos distintos."
    }
   },
   {
@@ -5470,7 +5499,6 @@
    "est": [
     "salf",
     "d21",
-    "junts",
     "gbai",
     "bng",
     "ccpc",
@@ -5548,6 +5576,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 94",
      "programa",
      "2023-07"
+    ],
+    "junts": [
+     "https://www.3cat.cat/3catinfo/adeu-a-la-legalitzacio-de-lus-recreatiu-del-cannabis-per-ara-el-congres-ni-ho-debatra/noticia-amp/3124907/",
+     "3Cat, votación de la ley de cannabis de Más País, 20/10/2021",
+     "parlamento",
+     "2021-10-20"
     ]
    },
    "why": {
@@ -5561,7 +5595,8 @@
     "upn": "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
     "bildu": "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
     "comp": "Compromís propone una regulación no penal de todas las drogas, que incluye el cannabis.",
-    "upc": "Propone regular íntegramente el cannabis con asociaciones cannábicas de autoconsumo sin ánimo de lucro, no una venta general a adultos."
+    "upc": "Propone regular íntegramente el cannabis con asociaciones cannábicas de autoconsumo sin ánimo de lucro, no una venta general a adultos.",
+    "junts": "Junts apoyó en el Congreso tramitar la proposición de Más País para regular el cannabis de uso recreativo, que PSOE, PP y Vox tumbaron (263-75)."
    }
   },
   {
@@ -6169,7 +6204,6 @@
    "est": [
     "salf",
     "d21",
-    "junts",
     "upn",
     "gbai",
     "bng",
@@ -6240,6 +6274,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026",
      "parlamento",
      "2026-09-16"
+    ],
+    "junts": [
+     "https://theobjective.com/espana/2024-06-27/junts-librarse-reparto-menores-cataluna-inmigracion/",
+     "The Objective, Junts pide librar a Cataluña del reparto de menores, 27/06/2024",
+     "parlamento",
+     "2024-06-27"
     ]
    },
    "why": {
@@ -6252,7 +6292,8 @@
     "pnv": "Pide una distribución equitativa de los menores migrantes no acompañados entre las comunidades autónomas.",
     "bildu": "Apoyó el decreto para repartir a los menores migrantes entre comunidades.",
     "ccpc": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes.",
-    "upc": "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes."
+    "upc": "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes.",
+    "junts": "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería."
    }
   },
   {
@@ -6292,7 +6333,6 @@
     "d21",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "bng",
     "upc",
@@ -6341,6 +6381,12 @@
      "Diario de Avisos (EFE): propuesta de Podemos de prestación universal por hijo a cargo",
      "prensa",
      "2019-04-15"
+    ],
+    "bildu": [
+     "https://orain.eus/es/politica/2022/05/13/eh-bildu-propone-crear-prestacion-universal-de-150-euros-mensuales-para-crianza-de-hijos-e-hijas/",
+     "Orain, EH Bildu propone una prestación universal de 150 euros por crianza, 13/05/2022",
+     "parlamento",
+     "2022-05-13"
     ]
    },
    "why": {
@@ -6349,7 +6395,8 @@
     "vox": "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
     "erc": "El programa propone una prestación universal por crianza de hijos.",
-    "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza."
+    "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza.",
+    "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años."
    }
   },
   {
@@ -6820,7 +6867,6 @@
     "pav": 4
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -6902,6 +6948,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 6",
      "programa",
      "2026-04"
+    ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+     "Programa electoral de SALF para Castilla y León, p. 21 (programa autonómico CyL 2026; mismo asunto)",
+     "programa",
+     "2026-03"
     ]
    },
    "why": {
@@ -6914,7 +6966,8 @@
     "existe": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
     "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
     "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
-    "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo."
+    "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
+    "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario."
    }
   },
   {
@@ -7057,7 +7110,6 @@
     "salf",
     "pacma",
     "d21",
-    "erc",
     "junts",
     "comp",
     "jmm",
@@ -7124,6 +7176,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 195",
      "programa",
      "2026-04"
+    ],
+    "erc": [
+     "https://es.ara.cat/politica/elecciones-catalunya/sobra-agua-ebro-trasvasar-barcelona_1_5009807.html",
+     "Ara, ¿Sobra agua en el Ebro para trasvasar a Barcelona?, 25/04/2024",
+     "declaracion",
+     "2024-04-25"
     ]
    },
    "why": {
@@ -7131,7 +7189,7 @@
     "pp": "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     "vox": "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
     "fa": "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
-    "erc": "Estimación: ERC se opone históricamente a los trasvases del Ebro.",
+    "erc": "El Ara recoge la postura de ERC contra el trasvase del Ebro: su exconsellera afirma «No haremos trasvases».",
     "upn": "Votó a favor de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "bng": "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "existe": "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
@@ -7471,7 +7529,6 @@
    },
    "est": [
     "pod",
-    "salf",
     "d21",
     "upn",
     "bng",
@@ -7514,6 +7571,12 @@
      "Programa de PACMA para las generales de 2023, apartado de prevención de incendios y conservación del patrimonio natural",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
+     "Programa electoral de SALF para Castilla y León, p. 22 (programa autonómico CyL 2026; mismo asunto)",
+     "programa",
+     "2026-03"
     ]
    },
    "why": {
@@ -7522,7 +7585,8 @@
     "vox": "Una proposición de Vox en el Congreso pide limpieza de montes, desbroce, pastoreo y menos trabas ambientales para prevenir incendios.",
     "fa": "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección.",
     "pod": "Estimación: contraria a flexibilizar la protección de espacios naturales.",
-    "pacma": "PACMA acepta el desbroce y la selvicultura preventiva y pide prohibir las quemas para obtener pastos, y quiere reforzar, no flexibilizar, la protección de los espacios naturales."
+    "pacma": "PACMA acepta el desbroce y la selvicultura preventiva y pide prohibir las quemas para obtener pastos, y quiere reforzar, no flexibilizar, la protección de los espacios naturales.",
+    "salf": "Propone facilitar quemas prescritas y pastoreo en montes, además de planes de control de fauna."
    }
   },
   {
@@ -8389,7 +8453,6 @@
    "est": [
     "salf",
     "d21",
-    "junts",
     "gbai",
     "ccpc",
     "upc",
@@ -8467,6 +8530,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 281",
      "programa",
      "2026-04"
+    ],
+    "junts": [
+     "https://orain.eus/es/politica/2026/04/22/el-congreso-rechaza-el-referendum-salir-la-otan-pide-podemos/",
+     "Orain, el Congreso rechaza el referéndum para salir de la OTAN, 22/04/2026",
+     "parlamento",
+     "2026-04-22"
     ]
    },
    "why": {
@@ -8479,7 +8548,8 @@
     "bildu": "Considera «un sinsentido» seguir defendiendo la OTAN, aunque no apoyó la moción de Podemos por estar escrita «muy desde Madrid».",
     "bng": "El BNG defiende la salida de la OTAN y la disolución de la alianza.",
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
-    "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota."
+    "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
+    "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN."
    }
   },
   {
@@ -8518,7 +8588,6 @@
     "adel": 1
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -8593,6 +8662,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 149",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.elindependiente.com/espana/2025/10/12/alvise-arranca-su-carrera-a-las-generales-apostando-por-deportaciones-masivas-y-un-referendum-de-salida-de-la-ue/",
+     "El Independiente, cobertura del acto de SALF en Vistalegre, 12/10/2025",
+     "declaracion",
+     "2025-10"
     ]
    },
    "why": {
@@ -8605,7 +8680,8 @@
     "bildu": "EH Bildu votó en contra de devolver al Gobierno la ley de cooperación, que fija el objetivo de destinar el 0,7 % de la renta nacional a la ayuda al desarrollo.",
     "comp": "Se compromete a dedicar el 0,7 % de los presupuestos públicos consolidados a cooperación internacional, no a recortarla.",
     "cha": "Exige cumplir la recomendación de destinar el 0,7 % de los presupuestos a cooperación al desarrollo, como primer paso hacia el 1 %.",
-    "upc": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura."
+    "upc": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura.",
+    "salf": "Propone financiar la deportación masiva con los millones de ayuda en cooperación internacional."
    }
   },
   {
@@ -9594,7 +9670,7 @@
     "vox": 5,
     "fa": 1,
     "pod": 1,
-    "salf": 5,
+    "salf": 1,
     "pacma": 1,
     "d21": 4,
     "erc": 1,
@@ -9618,7 +9694,6 @@
     "pav": 5
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -9720,6 +9795,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 75",
      "programa",
      "2019-05"
+    ],
+    "salf": [
+     "https://www.esdiario.com/nacional/240905/142458/alvise-perez-antitaurino-polemica-votacion-aplausos-izquierda.html",
+     "ESdiario, voto de Alvise Pérez en la comisión de Agricultura del Parlamento Europeo, 05/09/2024",
+     "parlamento",
+     "2024-09-05"
     ]
    },
    "why": {
@@ -9737,7 +9818,8 @@
     "mes": "MÉS per Mallorca firmó en 2016 una proposición de ley para prohibir las corridas de toros en Baleares.",
     "psoe": "El PSOE se abstuvo en la toma en consideración de la ILP que pretendía retirar a la tauromaquia su protección como patrimonio cultural, sin apoyarla ni rechazarla.",
     "adel": "Rechaza la tauromaquia como acto cultural y propone suprimir toda subvención e institución pública ligada a ella en los dos primeros años.",
-    "cha": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales."
+    "cha": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
+    "salf": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal»."
    }
   },
   {
@@ -10073,7 +10155,6 @@
    "est": [
     "psoe",
     "pp",
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -10129,6 +10210,12 @@
      "Programa de Drago Canarias (autonómicas 2023), apartado de salud pública",
      "programa",
      "2023-05"
+    ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=18",
+     "Programa electoral de SALF para Castilla y León, p. 18 (programa autonómico CyL 2026; mismo asunto)",
+     "programa",
+     "2026-03"
     ]
    },
    "why": {
@@ -10138,7 +10225,8 @@
     "erc": "La ponencia propone dejar de concertar con centros privados con ánimo de lucro.",
     "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
     "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
-    "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos."
+    "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos.",
+    "salf": "Propone concertar con clínicas privadas, sin coste para el paciente, cuando la pública no dé abasto y fija tope de 30 y 90 días."
    }
   },
   {
@@ -10178,7 +10266,6 @@
     "erc",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "bng",
     "comp"
@@ -10204,6 +10291,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 24",
      "programa",
      "2026-04"
+    ],
+    "bildu": [
+     "https://www.ondavasca.com/bildu-plantea-un-registro-de-medicos-que-ejercen-tambien-en-la-privada-no-es-correcto/",
+     "Onda Vasca, propuesta de EH Bildu sobre Osakidetza, 20/03/2024",
+     "declaracion",
+     "2024-03-20"
     ]
    },
    "why": {
@@ -10212,7 +10305,8 @@
     "fa": "Su ministra de Sanidad propuso exigir exclusividad a jefes de servicio y directivos, no a todos los médicos.",
     "pod": "Estimación: favorable a la dedicación exclusiva en la sanidad pública.",
     "erc": "Estimación: sin postura conocida de ERC sobre la exclusividad médica.",
-    "adel": "Quiere aumentar la vigilancia de las incompatibilidades público-privado y obliga a dedicación exclusiva a quien tenga plaza fija a tiempo completo."
+    "adel": "Quiere aumentar la vigilancia de las incompatibilidades público-privado y obliga a dedicación exclusiva a quien tenga plaza fija a tiempo completo.",
+    "bildu": "EH Bildu propone acabar con que los médicos de Osakidetza trabajen a la vez en la sanidad privada: «No nos parece correcto» la doble actividad."
    }
   },
   {
@@ -10391,7 +10485,6 @@
     "vox",
     "fa",
     "pod",
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -10417,6 +10510,12 @@
      "Programa electoral del PP para las generales de 2023, p. 92",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=12",
+     "Programa electoral de SALF para Castilla y León, p. 12 (programa autonómico CyL 2026; mismo asunto)",
+     "programa",
+     "2026-03"
     ]
    },
    "why": {
@@ -10425,7 +10524,8 @@
     "vox": "Estimación: no consta una postura de Vox sobre evaluar el desempeño de los empleados públicos con posibilidad de despido.",
     "fa": "Estimación: no consta una postura verificada de Sumar sobre despedir empleados públicos por bajo rendimiento.",
     "pod": "Estimación: contraria al despido por bajo rendimiento en el empleo público.",
-    "erc": "Estimación: ERC defiende la función pública y rechazaría despidos por rendimiento."
+    "erc": "Estimación: ERC defiende la función pública y rechazaría despidos por rendimiento.",
+    "salf": "Propone evaluaciones periódicas de desempeño de funcionarios: quien no cumpla deberá reciclarse o afrontar sanciones."
    }
   },
   {
@@ -12012,7 +12112,7 @@
     "erc": 2,
     "junts": 3,
     "pnv": 3,
-    "bildu": 1,
+    "bildu": 4,
     "upn": 2,
     "bng": 1,
     "upc": 1,
@@ -12026,7 +12126,6 @@
     "erc",
     "junts",
     "pnv",
-    "bildu",
     "upn",
     "bng",
     "upc",
@@ -12078,6 +12177,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 232",
      "programa",
      "2026-04"
+    ],
+    "bildu": [
+     "https://orain.eus/es/actualidad/sociedad/2017/07/04/eh-bildu-favor-gestacion-subrogada/",
+     "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
+     "declaracion",
+     "2017-07-04"
     ]
    },
    "why": {
@@ -12088,7 +12193,8 @@
     "erc": "Estimación: ERC no ha propuesto legalizar la gestación subrogada.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía una ley de gestación subrogada altruista.",
     "fa": "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada.",
-    "adel": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal."
+    "adel": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal.",
+    "bildu": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo."
    }
   },
   {
