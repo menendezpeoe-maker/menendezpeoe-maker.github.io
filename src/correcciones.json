@@ -1,6 +1,54 @@
 [
  {
   "fecha": "2026-11-07",
+  "id": "A01",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=6",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 6",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A05",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=11",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "A05",
   "partido": "vox",
   "de": 2,
@@ -13,6 +61,22 @@
    "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
    "parlamento",
    "2023-03-30"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B01",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone una limitación real y efectiva de los alquileres, en detrimento de la ganancia de los propietarios.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -33,6 +97,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "B02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Plantea limitar los alquileres y acceder a vivienda vacía de bancos y fondos; no apuesta por liberar suelo para construir más.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "B03",
   "partido": "erc",
   "de": 2,
@@ -45,6 +125,22 @@
    "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
    "parlamento",
    "2025-03-18"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B04",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -146,6 +242,22 @@
  {
   "fecha": "2026-11-07",
   "id": "E03",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Medida 54: derogación de la Ley Mordaza.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E03",
   "partido": "upc",
   "de": 5,
   "a": 4,
@@ -189,6 +301,22 @@
    "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026",
    "parlamento",
    "2026-09-16"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F08",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+   "programa",
+   "2019-11"
   ]
  },
  {
@@ -241,6 +369,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "G05",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=11",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "G06",
   "partido": "adel",
   "de": 4,
@@ -257,6 +401,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "H02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "H03",
   "partido": "upc",
   "de": 3,
@@ -267,6 +427,22 @@
   "fuente": [
    "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147",
    "Programa electoral de Sumar para el 23J de 2023, p. 147",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H05",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
    "programa",
    "2023-07"
   ]
@@ -289,6 +465,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "H06",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I01",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende expulsar a todas las empresas privadas de la educación, lo que incluye la escuela concertada.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "I02",
   "partido": "comp",
   "de": 5,
@@ -305,6 +513,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "I02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Aspira a un sistema de enseñanza único, público y gratuito.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=7",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 7",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "I03",
   "partido": "adel",
   "de": 2,
@@ -317,6 +541,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 7",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I03",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende expulsar a todas las empresas privadas de la educación; denuncia el aumento de universidades privadas.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -369,6 +609,54 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "J01",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende expulsar a las empresas privadas de la sanidad y los servicios sociales.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Medida 17: derogar todo tipo de conciertos sanitarios, por un sistema de salud público y único.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J03",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Medida 20: incompatibilidad del personal sanitario con cualquier relación laboral o mercantil con la sanidad privada.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "K01",
   "partido": "upc",
   "de": 1,
@@ -379,6 +667,22 @@
   "fuente": [
    "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=142",
    "Programa electoral de Sumar para el 23J de 2023, p. 142",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=12",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12",
    "programa",
    "2023-07"
   ]
@@ -445,6 +749,38 @@
    "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
    "declaracion",
    "2017-07-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L04",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone prohibir la prostitución y seguir considerando ilegal la gestación subrogada.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=17",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 17",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L05",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende la ruptura del concordato con el Vaticano por los privilegios que da a la Iglesia católica.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
+   "programa",
+   "2023-07"
   ]
  },
  {
