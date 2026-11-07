@@ -130,7 +130,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 86
+    "pct": 87
    },
    {
     "pid": "mes",
@@ -163,19 +163,19 @@
    },
    {
     "pid": "pp",
-    "n": 87
+    "n": 86
    },
    {
     "pid": "d21",
-    "n": 67
+    "n": 65
    },
    {
     "pid": "fa",
-    "n": 20
+    "n": 21
    },
    {
     "pid": "vox",
-    "n": 9
+    "n": 10
    },
    {
     "pid": "salf",
@@ -183,7 +183,7 @@
    },
    {
     "pid": "pacma",
-    "n": 1
+    "n": 2
    },
    {
     "pid": "pod",
@@ -265,8 +265,8 @@
   {
    "pid": "d21",
    "conocidas": 107,
-   "estimadas": 104,
-   "conFuente": 14
+   "estimadas": 103,
+   "conFuente": 15
   },
   {
    "pid": "erc",
@@ -313,38 +313,38 @@
   {
    "pid": "ccpc",
    "conocidas": 78,
-   "estimadas": 57,
-   "conFuente": 21
+   "estimadas": 56,
+   "conFuente": 22
   },
   {
    "pid": "upc",
    "conocidas": 80,
-   "estimadas": 62,
-   "conFuente": 19
+   "estimadas": 42,
+   "conFuente": 39
   },
   {
    "pid": "drago",
    "conocidas": 78,
-   "estimadas": 74,
-   "conFuente": 5
+   "estimadas": 71,
+   "conFuente": 8
   },
   {
    "pid": "comp",
    "conocidas": 103,
-   "estimadas": 75,
-   "conFuente": 30
+   "estimadas": 63,
+   "conFuente": 42
   },
   {
    "pid": "cha",
    "conocidas": 86,
-   "estimadas": 77,
-   "conFuente": 10
+   "estimadas": 65,
+   "conFuente": 22
   },
   {
    "pid": "existe",
    "conocidas": 48,
-   "estimadas": 45,
-   "conFuente": 3
+   "estimadas": 43,
+   "conFuente": 5
   },
   {
    "pid": "mes",
@@ -355,8 +355,8 @@
   {
    "pid": "adel",
    "conocidas": 91,
-   "estimadas": 78,
-   "conFuente": 13
+   "estimadas": 61,
+   "conFuente": 30
   },
   {
    "pid": "soria",
