@@ -12,7 +12,7 @@ const LOREG = { url: "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672", la
 const BRAILLE = { url: "https://www.boe.es/eli/es/rd/2007/12/07/1612/con", label: "Real Decreto 1612/2007 (voto accesible)" };
 
 export const VOTAR = {
-  revisado: "2026-10-23",
+  revisado: "2026-11-07",
   calendario: [
     { fecha: "2026-10-06", cuando: "6 de octubre", hito: "Convocatoria y disolución de las Cortes", nota: "Se publica en el BOE el real decreto que disuelve el Congreso y el Senado y convoca las elecciones.", fuente: RD },
     { fecha: "2026-10-06", cuando: "6 oct – 19 nov", hito: "Plazo para pedir el voto por correo", nota: "En cualquier oficina de Correos o por internet con certificado digital.", fuente: JEC },
