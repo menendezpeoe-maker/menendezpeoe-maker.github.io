@@ -421,3 +421,37 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .m-fold-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
   #v-home .two-col.m-fold > div { display: block; }
 }
+
+/* ─── Bloque 13 (7 nov): prueba visual · test más compacto, claro y con progreso más visible ─── */
+.quiz-bar-row { min-height: 64px; }
+.qprog { align-items: center; height: 12px; }
+.qprog .seg-a { height: 6px; border-radius: 3px; }
+.qprog .seg-a.cur { height: 10px; box-shadow: 0 0 0 1.5px var(--ink); }
+.quiz-stage { padding-top: 22px; }
+.quiz-main { gap: 16px; }
+.quiz-main .q-meta { font-size: 12.5px; letter-spacing: .02em; text-transform: uppercase; color: var(--ink-3); }
+.quiz-main .q-meta .q-code { text-transform: none; color: var(--ink); }
+.quiz-main .q-intro { background: none; border: 0; border-left: 3px solid var(--mark); border-radius: 0; padding: 2px 0 2px 14px; }
+.quiz-main .q-stmt { font-size: clamp(25px, 4.6vw, 40px); line-height: 1.18; }
+.quiz-main .dil-o:nth-child(1) b { background: var(--ink); color: var(--paper); }
+.quiz-main .dil-o:nth-child(2) b { background: var(--mark); color: var(--mark-ink); border-color: var(--mark-ink); }
+@media (max-width: 560px) {
+  .quiz-stage { padding-top: 12px; }
+  .quiz-main { gap: 11px; }
+  .quiz-main .q-meta > span:nth-child(2) { display: none; }
+  .quiz-main .q-intro { font-size: 13.5px; line-height: 1.35; }
+  .quiz-main .q-stmt { font-size: 23px; }
+  .quiz-main .dil { gap: 6px; }
+  .quiz-main .dil-o { padding: 8px 12px; font-size: 14.5px; line-height: 1.3; }
+  .quiz-main .scale { gap: 6px; }
+  .quiz-main .opt span.box { min-height: 46px; padding: 7px 14px; font-size: 15px; }
+  .quiz-main .opt .n { font-size: 18px; }
+  .quiz-main .ctx-toggle { padding: 2px; font-size: 14px; }
+  .quiz-main .q-aux { margin-top: 8px !important; }
+}
+@media (min-width: 761px) {
+  .qprog-wrap { grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; row-gap: 6px; align-items: center; }
+  .qprog-wrap .qprog { grid-column: 1 / -1; }
+  .qprog-wrap .qprog-label { -webkit-line-clamp: 1; line-clamp: 1; }
+  .qprog-wrap .q-auto { margin: 0; white-space: nowrap; }
+}
