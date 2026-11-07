@@ -1,12 +1,236 @@
 [
-{"nombre":"infoLibre","perfil":"medio","ambito":"nacional","email":"contacta@infolibre.es","visto_en":"https://www.infolibre.es/contacto","uso":"Contacto general de la redacción","enfoque":"Medio de información política con lectores muy interesados en actualidad electoral."},
-{"nombre":"La Marea","perfil":"medio","ambito":"nacional","email":"redaccion@lamarea.com","visto_en":"https://www.lamarea.com/contacto/","uso":"Redacción: preguntas o sugerencias","enfoque":"Cooperativa periodística con público participativo y sensible a herramientas cívicas."},
-{"nombre":"CTXT","perfil":"medio","ambito":"nacional","email":"info@ctxt.es","visto_en":"https://www.ctxt.es/es/?tpl=1004","uso":"Contacto general: dudas y consultas","enfoque":"Revista de análisis político y cultural con lectores atentos al debate electoral."},
-{"nombre":"Naiz","perfil":"medio","ambito":"autonómico","email":"arreta@naiz.eus","visto_en":"https://www.naiz.eus/es/info/contacto","uso":"Contacto Naiz (apartado «Contacto Naiz»)","enfoque":"Diario digital de Euskal Herria; interesa un test que incluya partidos vascos y navarros."},
-{"nombre":"El Crític","perfil":"medio","ambito":"autonómico","email":"info@elcritic.cat","visto_en":"https://www.elcritic.cat/contacte","uso":"Consultas generales","enfoque":"Medio catalán de periodismo crítico; público interesado en política y territorio."},
-{"nombre":"El Món","perfil":"medio","ambito":"autonómico","email":"info@mon.cat","visto_en":"https://www.elmon.cat/contacte/","uso":"Contacto de la redacción","enfoque":"Digital catalán generalista con alta audiencia política."},
-{"nombre":"NacióDigital","perfil":"medio","ambito":"autonómico","email":"naciodigital@naciodigital.cat","visto_en":"https://www.naciodigital.cat/contacte","uso":"Contacto general alternativo al formulario","enfoque":"Digital catalán de referencia con cobertura electoral."},
-{"nombre":"À Punt Mèdia","perfil":"radio-tv","ambito":"autonómico","email":"contacte@apuntmedia.es","visto_en":"https://www.apuntmedia.es/contacte","uso":"Correo general de contacto (otras vías de contacto)","enfoque":"Radiotelevisión pública valenciana; servicio al público de la Comunitat Valenciana."},
-{"nombre":"Crónica Global","perfil":"medio","ambito":"autonómico","email":"redaccion@cronicaglobal.com","visto_en":"https://cronicaglobal.elespanol.com/contacto","uso":"Redacción","enfoque":"Digital sobre política y economía de Cataluña."},
-{"nombre":"Vozpópuli","perfil":"medio","ambito":"nacional","email":"contacto@vozpopuli.com","visto_en":"https://www.vozpopuli.com/contacto/","uso":"Contacto general","enfoque":"Digital de actualidad política y económica."}
+ {
+  "nombre": "infoLibre",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "contacta@infolibre.es",
+  "visto_en": "https://www.infolibre.es/contacto",
+  "uso": "Contacto general de la redacción",
+  "enfoque": "Medio de información política con lectores muy interesados en actualidad electoral."
+ },
+ {
+  "nombre": "La Marea",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "redaccion@lamarea.com",
+  "visto_en": "https://www.lamarea.com/contacto/",
+  "uso": "Redacción: preguntas o sugerencias",
+  "enfoque": "Cooperativa periodística con público participativo y sensible a herramientas cívicas."
+ },
+ {
+  "nombre": "CTXT",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "info@ctxt.es",
+  "visto_en": "https://www.ctxt.es/es/?tpl=1004",
+  "uso": "Contacto general: dudas y consultas",
+  "enfoque": "Revista de análisis político y cultural con lectores atentos al debate electoral."
+ },
+ {
+  "nombre": "Naiz",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "arreta@naiz.eus",
+  "visto_en": "https://www.naiz.eus/es/info/contacto",
+  "uso": "Contacto Naiz (apartado «Contacto Naiz»)",
+  "enfoque": "Diario digital de Euskal Herria; interesa un test que incluya partidos vascos y navarros."
+ },
+ {
+  "nombre": "El Crític",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "info@elcritic.cat",
+  "visto_en": "https://www.elcritic.cat/contacte",
+  "uso": "Consultas generales",
+  "enfoque": "Medio catalán de periodismo crítico; público interesado en política y territorio."
+ },
+ {
+  "nombre": "El Món",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "info@mon.cat",
+  "visto_en": "https://www.elmon.cat/contacte/",
+  "uso": "Contacto de la redacción",
+  "enfoque": "Digital catalán generalista con alta audiencia política."
+ },
+ {
+  "nombre": "NacióDigital",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "naciodigital@naciodigital.cat",
+  "visto_en": "https://www.naciodigital.cat/contacte",
+  "uso": "Contacto general alternativo al formulario",
+  "enfoque": "Digital catalán de referencia con cobertura electoral."
+ },
+ {
+  "nombre": "À Punt Mèdia",
+  "perfil": "radio-tv",
+  "ambito": "autonómico",
+  "email": "contacte@apuntmedia.es",
+  "visto_en": "https://www.apuntmedia.es/contacte",
+  "uso": "Correo general de contacto (otras vías de contacto)",
+  "enfoque": "Radiotelevisión pública valenciana; servicio al público de la Comunitat Valenciana."
+ },
+ {
+  "nombre": "Crónica Global",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccion@cronicaglobal.com",
+  "visto_en": "https://cronicaglobal.elespanol.com/contacto",
+  "uso": "Redacción",
+  "enfoque": "Digital sobre política y economía de Cataluña."
+ },
+ {
+  "nombre": "Vozpópuli",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "contacto@vozpopuli.com",
+  "visto_en": "https://www.vozpopuli.com/contacto/",
+  "uso": "Contacto general",
+  "enfoque": "Digital de actualidad política y económica."
+ },
+ {
+  "nombre": "Ara",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "politica@ara.cat",
+  "visto_en": "https://www.ara.cat/contacte.html",
+  "uso": "Sección de Política (listada en «Escriu-nos»)",
+  "enfoque": "Diario catalán generalista; el test cubre partidos catalanes y estatales."
+ },
+ {
+  "nombre": "Civio",
+  "perfil": "verificador",
+  "ambito": "nacional",
+  "email": "contacto@civio.es",
+  "visto_en": "https://civio.es/nosotros/contacto/",
+  "uso": "Preguntas, comentarios y consultas generales",
+  "enfoque": "Fundación de periodismo de datos y transparencia; afín a herramientas abiertas y fuentes enlazadas."
+ },
+ {
+  "nombre": "Público",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "buzonpublico@publico.es",
+  "visto_en": "https://www.publico.es/info/contacto.html",
+  "uso": "Contacto general: notas de prensa, sugerencias de temas e información para la redacción",
+  "enfoque": "Diario digital de información política con público muy implicado."
+ },
+ {
+  "nombre": "Nuevatribuna",
+  "perfil": "medio",
+  "ambito": "nacional",
+  "email": "nuevatribuna@nuevatribuna.es",
+  "visto_en": "https://www.nuevatribuna.es/estaticas/contacto.html",
+  "uso": "Envío de notas de prensa y sugerencias",
+  "enfoque": "Digital de actualidad política y opinión."
+ },
+ {
+  "nombre": "Praza.gal",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccion@praza.com",
+  "visto_en": "https://praza.gal/sobre-praza/contacto",
+  "uso": "Contacto general de la redacción",
+  "enfoque": "Medio digital gallego en gallego; interesa la oferta de partidos gallegos."
+ },
+ {
+  "nombre": "Nós Diario",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccion@nosdiario.gal",
+  "visto_en": "https://www.nosdiario.gal/estaticas/contacto.html",
+  "uso": "Contacto con la redacción",
+  "enfoque": "Diario gallego en gallego con cobertura política."
+ },
+ {
+  "nombre": "Canarias7",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redactorweb@canarias7.es",
+  "visto_en": "https://www.canarias7.es/contacta.html",
+  "uso": "Edición web (contacto de la web)",
+  "enfoque": "Diario de Gran Canaria; lectores canarios interesados en partidos regionales."
+ },
+ {
+  "nombre": "Última Hora",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "digital@ultimahora.es",
+  "visto_en": "https://www.ultimahora.es/contacto.html",
+  "uso": "Redacción, administración y publicidad (edición digital)",
+  "enfoque": "Diario de Mallorca; público balear."
+ },
+ {
+  "nombre": "Periódico de Ibiza y Formentera",
+  "perfil": "medio",
+  "ambito": "local",
+  "email": "redaccion@periodicodeibiza.es",
+  "visto_en": "https://www.ultimahora.es/contacto.html",
+  "uso": "Oficina de redacción",
+  "enfoque": "Medio de las Pitiusas; lectores baleares."
+ },
+ {
+  "nombre": "Menorca (Es Diari)",
+  "perfil": "medio",
+  "ambito": "local",
+  "email": "redaccion@menorca.info",
+  "visto_en": "https://www.ultimahora.es/contacto.html",
+  "uso": "Oficina de redacción",
+  "enfoque": "Diario de Menorca; lectores baleares."
+ },
+ {
+  "nombre": "Catalunya Plural",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccio@periodismeplural.cat",
+  "visto_en": "https://www.catalunyaplural.cat/",
+  "uso": "Redacción (pie de página, «Contacta’ns»)",
+  "enfoque": "Digital catalán de información política y opinión."
+ },
+ {
+  "nombre": "Directa",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccio@directa.cat",
+  "visto_en": "https://directa.cat/contacte/",
+  "uso": "Redacción Catalunya",
+  "enfoque": "Cooperativa periodística de movimientos sociales en Cataluña y País Valenciano."
+ },
+ {
+  "nombre": "El Temps",
+  "perfil": "revista",
+  "ambito": "autonómico",
+  "email": "eltemps@eltemps.cat",
+  "visto_en": "https://www.eltemps.cat/contacte",
+  "uso": "Contacto general (oficina de Barcelona; la página no indica el propósito)",
+  "enfoque": "Revista de actualidad en catalán, con lectores en Cataluña y País Valenciano."
+ },
+ {
+  "nombre": "El Faradio",
+  "perfil": "medio",
+  "ambito": "autonómico",
+  "email": "redaccion@elfaradio.com",
+  "visto_en": "https://www.elfaradio.com/contacto",
+  "uso": "Redacción: alternativa al formulario",
+  "enfoque": "Medio independiente de Cantabria; público local interesado en actualidad social."
+ },
+ {
+  "nombre": "TV Canaria (RTVC)",
+  "perfil": "radio-tv",
+  "ambito": "autonómico",
+  "email": "oficinadelespectador@tvcanaria.tv",
+  "visto_en": "https://www.rtvc.es/contacto/",
+  "uso": "Contacto general / Oficina del espectador",
+  "enfoque": "Televisión pública canaria; servicio a la audiencia de las islas."
+ },
+ {
+  "nombre": "Applesfera",
+  "perfil": "revista",
+  "ambito": "temático",
+  "email": "prensa@applesfera.com",
+  "visto_en": "https://www.applesfera.com/contacto",
+  "uso": "Notas de prensa",
+  "enfoque": "Revista de tecnología (Webedia); lectores interesados en herramientas web gratuitas."
+ }
 ]

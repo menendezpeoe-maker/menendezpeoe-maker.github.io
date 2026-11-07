@@ -1,18 +1,127 @@
 [
-{"nombre":"Maldita.es","via":"otro","url":"https://fundacionmaldita.es/es/contact"},
-{"nombre":"Newtral","via":"403","url":"https://www.newtral.es/contacto/"},
-{"nombre":"Civio","via":"404","url":"https://civio.es/contacto/"},
-{"nombre":"EFE Verifica","via":"otro","url":"https://efeverifica.com/"},
-{"nombre":"Público","via":"404","url":"https://www.publico.es/contacto"},
-{"nombre":"El Independiente","via":"otro","url":"https://www.elindependiente.com/contacto/"},
-{"nombre":"El Confidencial Digital","via":"otro","url":"https://www.elconfidencialdigital.com/contacto"},
-{"nombre":"El Plural","via":"otro","url":"https://www.elplural.com/contacto"},
-{"nombre":"Heraldo de Aragón","via":"otro","url":"https://www.heraldo.es/contacto/"},
-{"nombre":"Diario de Navarra","via":"otro","url":"https://www.diariodenavarra.es/contacto/"},
-{"nombre":"Noticias de Navarra","via":"otro","url":"https://www.noticiasdenavarra.com/contacto/"},
-{"nombre":"Deia","via":"otro","url":"https://www.deia.eus/contacto/"},
-{"nombre":"Diario de Mallorca","via":"otro","url":"https://www.diariodemallorca.es/contacto/"},
-{"nombre":"Valencia Plaza","via":"otro","url":"https://www.valenciaplaza.com/contacto"},
-{"nombre":"Andalucía Información","via":"403","url":"https://www.andaluciainformacion.es/contacto/"},
-{"nombre":"20minutos, El Confidencial, La Vanguardia, El Periódico, RTVE, Cadena SER, Europa Press, Onda Cero, laSexta","via":"otro","url":"dominio no permitido por la red de la sesión"}
+ {
+  "nombre": "Maldita.es",
+  "via": "otro",
+  "url": "https://fundacionmaldita.es/es/contact"
+ },
+ {
+  "nombre": "Newtral",
+  "via": "403",
+  "url": "https://www.newtral.es/contacto/"
+ },
+ {
+  "nombre": "EFE Verifica",
+  "via": "otro",
+  "url": "https://efeverifica.com/"
+ },
+ {
+  "nombre": "El Independiente",
+  "via": "otro",
+  "url": "https://www.elindependiente.com/contacto/"
+ },
+ {
+  "nombre": "El Confidencial Digital",
+  "via": "otro",
+  "url": "https://www.elconfidencialdigital.com/contacto"
+ },
+ {
+  "nombre": "Heraldo de Aragón",
+  "via": "otro",
+  "url": "https://www.heraldo.es/contacto/"
+ },
+ {
+  "nombre": "Diario de Navarra",
+  "via": "otro",
+  "url": "https://www.diariodenavarra.es/contacto/"
+ },
+ {
+  "nombre": "Noticias de Navarra",
+  "via": "otro",
+  "url": "https://www.noticiasdenavarra.com/contacto/"
+ },
+ {
+  "nombre": "Deia",
+  "via": "otro",
+  "url": "https://www.deia.eus/contacto/"
+ },
+ {
+  "nombre": "Diario de Mallorca",
+  "via": "otro",
+  "url": "https://www.diariodemallorca.es/contacto/"
+ },
+ {
+  "nombre": "Valencia Plaza",
+  "via": "otro",
+  "url": "https://www.valenciaplaza.com/contacto"
+ },
+ {
+  "nombre": "Andalucía Información",
+  "via": "403",
+  "url": "https://www.andaluciainformacion.es/contacto/"
+ },
+ {
+  "nombre": "20minutos, El Confidencial, La Vanguardia, El Periódico, RTVE, Cadena SER, Europa Press, Onda Cero, laSexta",
+  "via": "otro",
+  "url": "dominio no permitido por la red de la sesión"
+ },
+ {
+  "nombre": "El Plural",
+  "via": "otro",
+  "url": "https://www.elplural.com/contacto"
+ },
+ {
+  "nombre": "Berria",
+  "via": "otro",
+  "url": "https://www.berria.eus/bezero-arreta.html"
+ },
+ {
+  "nombre": "Galicia Confidencial",
+  "via": "otro",
+  "url": "https://www.galiciaconfidencial.com/estatica/contacto"
+ },
+ {
+  "nombre": "Cuarto Poder",
+  "via": "otro",
+  "url": "https://www.cuartopoder.es/contacto/"
+ },
+ {
+  "nombre": "Maldita.es (correos ofuscados)",
+  "via": "otro",
+  "url": "https://fundacionmaldita.es/es/contact"
+ },
+ {
+  "nombre": "IB3",
+  "via": "formulario",
+  "url": "https://ib3.org/formulari-de-contacte"
+ },
+ {
+  "nombre": "EiTB",
+  "via": "formulario",
+  "url": "https://www.eitb.eus/es/contacto/"
+ },
+ {
+  "nombre": "Letras Libres",
+  "via": "otro",
+  "url": "https://www.letraslibres.com/espana-mexico/contacto/"
+ },
+ {
+  "nombre": "El Nacional.cat",
+  "via": "otro",
+  "url": "https://www.elnacional.cat/"
+ },
+ {
+  "nombre": "Agencia SINC, Servimedia, EPData, Yorokobu, El Orden Mundial, Muy Interesante, Computer Hoy, Business Insider",
+  "via": "404",
+  "url": "varias"
+ },
+ {
+  "nombre": "Telemadrid, 3Cat, CRTVG, TV3",
+  "via": "404",
+  "url": "varias"
+ },
+ {
+  "nombre": "Pamplona Actual (solo gmail de agencia)",
+  "via": "otro",
+  "url": "https://www.pamplonaactual.com/contacto/"
+ }
 ]

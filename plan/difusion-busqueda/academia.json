@@ -187,5 +187,104 @@
   "visto_en": "https://www.uned.es/universidad/facultades/departamentos/ciencia-politica-y-de-la-administracion/personal.html",
   "uso": "Correo institucional publicado en la ficha de personal: coordinador del Máster en Ciencia Política",
   "enfoque": "Revisión metodológica y uso en docencia"
+ },
+ {
+  "nombre": "Área de Ciencia Política y de la Administración (Universidad de Salamanca) - grupos de opinión pública y Democracy Research Unit",
+  "perfil": "grupo-investigacion",
+  "institucion": "Universidad de Salamanca",
+  "email": "politica@usal.es",
+  "visto_en": "https://acpa.usal.es/investigacion/grupos-de-investigacion-reconocidos/",
+  "uso": "Contacto del área (sección Contacto); agrupa grupos sobre comportamiento electoral, opinión pública y efectos de redes/desinformación",
+  "enfoque": "Estudios electorales y opinión pública: revisión metodológica"
+ },
+ {
+  "nombre": "Facultad de Ciencias Políticas y Sociología - decanato (UCM)",
+  "perfil": "departamento",
+  "institucion": "Universidad Complutense de Madrid",
+  "email": "decanato@cps.ucm.es",
+  "visto_en": "https://politicasysociologia.ucm.es/decano",
+  "uso": "Contacto del decanato (página de la decana)",
+  "enfoque": "Uso en docencia y divulgación en la facultad"
+ },
+ {
+  "nombre": "Grado en Ciencias Políticas - coordinación (UCM)",
+  "perfil": "departamento",
+  "institucion": "Universidad Complutense de Madrid",
+  "email": "cienciaspoliticas@ucm.es",
+  "visto_en": "https://www.ucm.es/gradocienciaspoliticas/contacto-1",
+  "uso": "Contacto del coordinador del Grado en Ciencias Políticas",
+  "enfoque": "Uso en clase por estudiantes de grado de ciencia política"
+ },
+ {
+  "nombre": "Fundación Civismo",
+  "perfil": "think-tank",
+  "institucion": "Fundación Civismo",
+  "email": "info@civismo.org",
+  "visto_en": "https://civismo.org/",
+  "uso": "Contacto general en el pie de la web (sección Contacto)",
+  "enfoque": "Centro de estudios y divulgación cívica: posible difusión como recurso de educación cívica"
+ },
+ {
+  "nombre": "Departamento de Ciencia Política, Antropología Social y Hacienda Pública (Universidad de Murcia)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Murcia",
+  "email": "mimf@um.es",
+  "visto_en": "https://www.um.es/web/mixto/el-departamento/contacto",
+  "uso": "Correo del departamento (bloque de contacto)",
+  "enfoque": "Uso en docencia de ciencia política y revisión"
+ },
+ {
+  "nombre": "Departamento de Ciencia Política, Derecho Internacional Público y Derecho Procesal (Universidad de Málaga)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Málaga",
+  "email": "secdpto49@uma.es",
+  "visto_en": "https://www.uma.es/departamento-de-ciencia-politica-derecho-internacional-publico-y-derecho-procesal",
+  "uso": "Contacto general del departamento (Vías de contacto)",
+  "enfoque": "Uso en docencia de ciencia política y revisión"
+ },
+ {
+  "nombre": "Institución Futuro",
+  "perfil": "think-tank",
+  "institucion": "Institución Futuro (Navarra)",
+  "email": "info@ifuturo.org",
+  "visto_en": "https://www.ifuturo.org/perfil-de-institucion-futuro/",
+  "uso": "Correo mostrado en la cabecera de la web (contacto general)",
+  "enfoque": "Think tank independiente de estudios: divulgación y posible revisión"
+ },
+ {
+  "nombre": "Departamento de Sociología Aplicada (UCM)",
+  "perfil": "departamento",
+  "institucion": "Universidad Complutense de Madrid",
+  "email": "dp459@ucm.es",
+  "visto_en": "https://ucm.es/sociologia-aplicada/organizacion",
+  "uso": "Contacto principal del departamento (sección Organización)",
+  "enfoque": "Metodología de encuestas y uso en docencia de sociología"
+ },
+ {
+  "nombre": "Biblioteca de la Facultad de Ciencias Políticas y Sociología (UCM)",
+  "perfil": "docentes",
+  "institucion": "Universidad Complutense de Madrid",
+  "email": "buc_cps@ucm.es",
+  "visto_en": "https://biblioteca.ucm.es/cps/contacto",
+  "uso": "Contacto de la biblioteca de la facultad",
+  "enfoque": "Incluir el test como recurso en las guías temáticas de ciencia política"
+ },
+ {
+  "nombre": "CEMPOCOR - Medios y Comunicación Política (URJC)",
+  "perfil": "grupo-investigacion",
+  "institucion": "Universidad Rey Juan Carlos",
+  "email": "gr_inv.cempocor@urjc.es",
+  "visto_en": "https://servicios.urjc.es/pdi/departamento/Y170",
+  "uso": "Correo del grupo de investigación (Dpto. Ciencias de la Comunicación y Sociología)",
+  "enfoque": "Comunicación política: revisión y uso en investigación/docencia"
+ },
+ {
+  "nombre": "Facultad de Comunicación (Universidad de Sevilla)",
+  "perfil": "departamento",
+  "institucion": "Universidad de Sevilla",
+  "email": "fcom@us.es",
+  "visto_en": "https://fcom.us.es/investigacion/departamento-de-comunicacion-audiovisual-publicidad-y-literatura",
+  "uso": "Contacto general de la facultad (sección Contacto)",
+  "enfoque": "Comunicación política y alfabetización mediática en clase"
  }
 ]

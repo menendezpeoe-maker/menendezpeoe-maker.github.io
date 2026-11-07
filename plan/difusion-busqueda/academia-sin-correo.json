@@ -1,1 +1,112 @@
-[]
+[
+ {
+  "nombre": "Real Instituto Elcano",
+  "via": "WebFetch devuelve 403",
+  "url": "https://www.realinstitutoelcano.org/contacto/"
+ },
+ {
+  "nombre": "Fundación Alternativas",
+  "via": "página vacía / 503 al consultar",
+  "url": "https://www.fundacionalternativas.org/contacto"
+ },
+ {
+  "nombre": "Fundación Civismo",
+  "via": "dominio no permitido o no resuelve",
+  "url": "https://www.fundacioncivismo.org/contacto"
+ },
+ {
+  "nombre": "Agenda Pública",
+  "via": "503 al consultar",
+  "url": "https://www.agendapublica.es/contacto"
+ },
+ {
+  "nombre": "Fundación Ortega-Marañón",
+  "via": "dominio no permitido o no resuelve",
+  "url": "https://fundacionortegaymarannon.es/contacto/"
+ },
+ {
+  "nombre": "Dpto. Ciencias Políticas y Sociales (UPF)",
+  "via": "403",
+  "url": "https://www.upf.edu/web/politiques/contacte"
+ },
+ {
+  "nombre": "Dpto. Ciencia Política y de la Administración (UGR)",
+  "via": "emails tras captcha",
+  "url": "https://www.ugr.es/universidad/organizacion/entidades/departamento-ciencia-politica-administracion"
+ },
+ {
+  "nombre": "Dpto. Ciencia Política y de la Administración (EHU)",
+  "via": "web sin email; el listado de facultad muestra dirección discrepante con su enlace",
+  "url": "https://www.ehu.eus/es/web/cpa/contact"
+ },
+ {
+  "nombre": "Observatorio de la Desinformación (UCM)",
+  "via": "sin email (vCard vacía)",
+  "url": "https://www.ucm.es/observatoriodesinformacion/contacto"
+ },
+ {
+  "nombre": "IBERIFIER (Universidad de Navarra y consorcio)",
+  "via": "solo formulario",
+  "url": "https://iberifier.eu/contact/"
+ },
+ {
+  "nombre": "Euskobarómetro (EHU)",
+  "via": "sin email",
+  "url": "https://www.ehu.eus/es/web/euskobarometro/contact"
+ },
+ {
+  "nombre": "Colegio Profesional de Ciencia Política, Sociología, RR.II. y Admón. Pública de Madrid",
+  "via": "503",
+  "url": "http://colpolsocmadrid.org/"
+ },
+ {
+  "nombre": "Federación Española de Sociología",
+  "via": "web sin contenido legible",
+  "url": "https://fes-sociologia.com/"
+ },
+ {
+  "nombre": "Grupo Análisis Político SEJ 618 (UPO)",
+  "via": "solo buzón de formulario",
+  "url": "https://www.upo.es/otri/oferta-cientifico-tecnologica/grupos-de-investigacion/GRUPO-DE-ANALISIS-POLITICO-SEJ-618/"
+ },
+ {
+  "nombre": "Grupo Procesos Electorales y Opinión Pública (Universitat de València)",
+  "via": "solo formulario de buzón",
+  "url": "https://www.uv.es/uvweb/departamento-economia-aplicada/es/investigacion/grupos-investigacion/procesos-electorales-opinion-publica/presentacion-1285890449636.html"
+ },
+ {
+  "nombre": "Revista Española de Ciencia Política (RECP)",
+  "via": "web sin email visible (el email recp@aecpa.es solo visto en buscador, no verificado)",
+  "url": "https://recyt.fecyt.es/index.php/recp/about/contact"
+ },
+ {
+  "nombre": "Dpto. Ciencia Política (Univ. de Zaragoza)",
+  "via": "sin página de contacto localizada",
+  "url": "https://www.unizar.es"
+ },
+ {
+  "nombre": "Depto. Derecho Constitucional, Ciencia Política y Filosofía del Derecho (ULL)",
+  "via": "403",
+  "url": "https://www.ull.es/departamentos/derecho-constitucional-ciencia-politica-y-filosofia-del-derecho/informacion-ubicacion-y-contacto/"
+ },
+ {
+  "nombre": "Depto. Sociología y Antropología (ULL)",
+  "via": "403",
+  "url": "https://www.ull.es/departamentos/sociologia-y-antropologia/informacion-ubicacion-y-contacto/"
+ },
+ {
+  "nombre": "Área de Ciencia Política (Univ. de Burgos)",
+  "via": "página de 2015, posiblemente desactualizada; solo email personal del director",
+  "url": "https://www.ubu.es/facultad-de-derecho/informacion-general/estructura-del-centro/departamentos-y-areas/departamento-de-derecho-privado-director/area-de-ciencia-politica-y-de-la-administracion"
+ },
+ {
+  "nombre": "Dpto. Derecho Público I y Ciencia Política (URJC)",
+  "via": "solo emails personales de dirección/secretaría, sin correo general",
+  "url": "https://servicios.urjc.es/pdi/departamento/Y107"
+ },
+ {
+  "nombre": "Maldita Educa / Newtral Educación",
+  "via": "Newtral 403; Maldita sin email visible",
+  "url": "https://newtral.es/quienes-somos/"
+ }
+]
