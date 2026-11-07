@@ -193,7 +193,7 @@ export const QUESTIONS = [
   text: "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
   short: "Fusionar municipios pequeños",
   ctx: "España tiene más de 8.100 municipios y casi la mitad no llega a 500 habitantes. Muchos no pueden prestar por sí solos servicios básicos ni tener personal técnico. Fusionarlos o agruparlos podría ahorrar costes y profesionalizar la gestión, como hicieron otros países europeos; sus críticos temen perder identidad, representación y cercanía, sobre todo en la España rural.",
-  pos: "2 2~ 3~ 2~ 1~ 4~ 0 5~ 2 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1~ 0 0 0 1~ 1~ 1~" },
+  pos: "2 2~ 5 2~ 1~ 4~ 0 5~ 2 2~ 2~ 1~ 1~ 0 0 0 0 0 0 1~ 1~ 0 0 0 1~ 1~ 1~" },
 { id: "C08", area: "ter", prio: 3, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "El Senado debería convertirse en una cámara de representación de las comunidades autónomas.",
   short: "Un Senado territorial",
@@ -213,7 +213,7 @@ export const QUESTIONS = [
   short: "Ley electoral más proporcional",
   ctx: "El Congreso se elige por provincias, con un mínimo de dos diputados cada una. Por eso un escaño cuesta muchos menos votos en Soria o Teruel que en Madrid, y el sistema favorece a los partidos grandes y a los concentrados en un territorio. Una ley más proporcional reflejaría mejor el voto nacional; sus críticos defienden la voz de las provincias despobladas y la estabilidad de los gobiernos.",
   ley: "Constitución, art. 68; Ley Orgánica del Régimen Electoral General",
-  pos: "2~ 1 3~ 4 5 4~ 5 5~ 2~ 1~ 1~ 2~ 1~ 2~ 5 1~ 3~ 3~ 3~ 2~ 1~ 3~ 3~ 1 1 1~ 1" },
+  pos: "2~ 1 4 4 5 4~ 5 5~ 2~ 1~ 1~ 2~ 1~ 2~ 5 1~ 3~ 3~ 3~ 2~ 1~ 3~ 3~ 1 1 1~ 1" },
 { id: "D02", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Los votantes deberían poder elegir a sus candidatos preferidos dentro de la lista de cada partido.",
   short: "Listas desbloqueadas",
@@ -1110,7 +1110,8 @@ export const SOURCES = {
   },
   C07: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
-    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"]
+    erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
+    vox: ["https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=12", "«100 medidas para la España viva» de Vox (2019), medida 36", "programa", "2019-04"],
   },
   C08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1135,6 +1136,7 @@ export const SOURCES = {
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 42", "programa", "2019-11"],
     pod: ["https://www.elindependiente.com/politica/2018/02/08/sintonia-total-en-la-reunion-entre-ciudadanos-y-podemos-sobre-la-ley-electoral/amp/", "El Independiente: Podemos y Ciudadanos negocian una reforma electoral más proporcional", "prensa", "2018-02-08"],
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=69", "Programa de PACMA para las generales de 2023, p. 69", "programa", "2023-07"],
+    vox: ["https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=5", "«100 medidas para la España viva» de Vox (2019), medida 11", "programa", "2019-04"],
   },
   D02: {
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
@@ -2198,7 +2200,8 @@ export const JUSTIF = {
     psoe: "Su programa de 2023 propone un estatuto propio para los municipios pequeños y reforzar su autonomía, no fusionarlos.",
     fa: "Estimación: no consta una postura verificada de Sumar sobre fusionar o mancomunar por ley los municipios pequeños.",
     pod: "Estimación: contraria a fusiones obligatorias que alejen servicios de la España rural.",
-    erc: "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria."
+    erc: "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria.",
+    vox: "La medida 36 propone fusionar ayuntamientos y reducir representantes locales.",
   },
   C08: {
     psoe: "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
@@ -2227,6 +2230,7 @@ export const JUSTIF = {
     d21: "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
     pod: "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
     pacma: "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
+    vox: "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional.",
   },
   D02: {
     pp: "Estimación: el PP no ha propuesto desbloquear las listas; sus propuestas electorales se centran en premiar a la lista más votada.",

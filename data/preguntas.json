@@ -3132,7 +3132,7 @@
    "pos": {
     "psoe": 2,
     "pp": 2,
-    "vox": 3,
+    "vox": 5,
     "fa": 2,
     "pod": 1,
     "salf": 4,
@@ -3150,7 +3150,6 @@
    },
    "est": [
     "pp",
-    "vox",
     "fa",
     "pod",
     "salf",
@@ -3177,13 +3176,20 @@
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
      "programa",
      "2023-07"
+    ],
+    "vox": [
+     "https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=12",
+     "«100 medidas para la España viva» de Vox (2019), medida 36",
+     "programa",
+     "2019-04"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 propone un estatuto propio para los municipios pequeños y reforzar su autonomía, no fusionarlos.",
     "fa": "Estimación: no consta una postura verificada de Sumar sobre fusionar o mancomunar por ley los municipios pequeños.",
     "pod": "Estimación: contraria a fusiones obligatorias que alejen servicios de la España rural.",
-    "erc": "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria."
+    "erc": "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria.",
+    "vox": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales."
    }
   },
   {
@@ -3408,7 +3414,7 @@
    "pos": {
     "psoe": 2,
     "pp": 1,
-    "vox": 3,
+    "vox": 4,
     "fa": 4,
     "pod": 5,
     "salf": 4,
@@ -3436,7 +3442,6 @@
    },
    "est": [
     "psoe",
-    "vox",
     "salf",
     "d21",
     "erc",
@@ -3494,6 +3499,12 @@
      "Programa de PACMA para las generales de 2023, p. 69",
      "programa",
      "2023-07"
+    ],
+    "vox": [
+     "https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=5",
+     "«100 medidas para la España viva» de Vox (2019), medida 11",
+     "programa",
+     "2019-04"
     ]
    },
    "why": {
@@ -3503,7 +3514,8 @@
     "bng": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
     "pod": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
-    "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor."
+    "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
+    "vox": "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional."
    }
   },
   {
