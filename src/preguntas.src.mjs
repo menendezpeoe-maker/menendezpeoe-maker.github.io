@@ -59,7 +59,7 @@ export const QUESTIONS = [
   B: "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
   short: "Bajar impuestos o mantener servicios",
   ctx: "España recauda en impuestos y cotizaciones en torno al 37 % del PIB, algo menos que la media de la zona euro, y mantiene déficit público desde hace años. Bajar impuestos deja más renta a familias y empresas y puede estimular la actividad, pero exige recortar gasto o endeudarse. Mantener la recaudación sostiene sanidad, educación o pensiones con una presión fiscal mayor.",
-  pos: "4 2 1 5 5 1~ 0 3 4 2 3 5 2 4~ 5 3~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 0 0 2~ 4~" },
+  pos: "4 2 1 5 5 1~ 0 3 4 2 3 5 2 4~ 5 3~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 0 2 2~ 4~" },
 { id: "A03", area: "eco", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
@@ -86,7 +86,7 @@ export const QUESTIONS = [
   text: "Habría que eliminar el límite de 1.000 euros para los pagos en efectivo.",
   short: "Eliminar el límite a los pagos en efectivo",
   ctx: "Desde 2021 los pagos en efectivo en los que interviene una empresa o un profesional están limitados a 1.000 euros. Las estimaciones sitúan la economía sumergida entre el 10 % y el 20 % del PIB, según el método. Los defensores del límite sostienen que dificulta cobrar sin factura y facilita perseguir el fraude; sus críticos defienden la privacidad y a quienes dependen del efectivo, como muchas personas mayores, y dudan de su eficacia.",
-  pos: "2 2~ 4 1~ 1~ 5~ 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0 0 0 0 0 0" },
+  pos: "2 2~ 4 1~ 1~ 4~ 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0 0 0 0 0 0" },
 { id: "A08", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
   short: "Frenar las subidas del salario mínimo",
@@ -248,7 +248,7 @@ export const QUESTIONS = [
   short: "Referéndum entre monarquía y república",
   ctx: "La Constitución de 1978 establece la monarquía parlamentaria: el Rey es jefe del Estado, con funciones sobre todo simbólicas y de arbitraje. Cambiar la forma de Estado exige una reforma agravada, con disolución de las Cortes y referéndum. Los partidarios de votarlo sostienen que la monarquía no se sometió a votación por separado; los contrarios, que la Constitución ya se aprobó en referéndum y que la monarquía aporta estabilidad.",
   ley: "Constitución, art. 1.3 y 168",
-  pos: "2 1 1~ 4~ 5 2~ 0 1~ 5 5~ 3~ 5 1~ 4~ 5~ 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0 0 0 0 0 4" },
+  pos: "2 1 1~ 4~ 5 4~ 0 1~ 5 5~ 3~ 5 1~ 4~ 5~ 3~ 5~ 5~ 5 5 0 5~ 5~ 0 0 0 0 0 0 0 0 4" },
 { id: "D08", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Debería limitarse más la capacidad del Gobierno de aprobar decretos-ley, que entran en vigor antes de pasar por el Parlamento.",
   short: "Limitar los decretos-ley",
@@ -326,7 +326,7 @@ export const QUESTIONS = [
   text: "Los inmigrantes en situación irregular deberían ser expulsados, aunque lleven años viviendo y trabajando en España.",
   short: "Expulsar a los inmigrantes irregulares",
   ctx: "La ley prevé expulsar a quien está en España sin permiso, pero se ejecutan pocas expulsiones: requieren identificar el país de origen y que este acepte el retorno. Tras dos años de estancia, el arraigo permite regularizarse si se cumplen requisitos como un contrato o una formación. Vox defiende expulsiones masivas («remigración»); otros partidos proponen expulsar solo a quienes delinquen y regularizar al resto por vías ordinarias.",
-  pos: "1 2 5 1 1 5 0 2~ 1 3~ 2~ 1 2~ 1~ 1 2~ 1 1~ 1 1~ 2~ 1~ 1 0 0 0 0 2~ 5 4 5 1" },
+  pos: "1 2 5 1 1 5 0 2~ 1 3~ 2~ 1 2~ 1~ 1 2~ 1 1~ 1 1~ 2~ 1~ 1 0 0 0 0 2~ 5 5 5 1" },
 { id: "F03", area: "dem", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "Los españoles deberían tener prioridad sobre los extranjeros residentes en el acceso a ayudas sociales y vivienda pública.",
   short: "«Prioridad nacional» en ayudas",
@@ -424,7 +424,7 @@ export const QUESTIONS = [
   text: "La Unión Europea debería tener más competencias, aunque los Estados pierdan capacidad de decisión.",
   short: "Más competencias para la UE",
   ctx: "La UE decide sobre comercio, competencia, moneda en la zona euro y buena parte de la agricultura y la regulación económica; impuestos, defensa o sanidad siguen siendo sobre todo nacionales, y muchas decisiones exigen unanimidad. Darle más competencias permitiría a Europa actuar con más peso en el mundo; sus críticos defienden la soberanía nacional y un control democrático más cercano.",
-  pos: "5 4 1 4 3~ 1~ 3~ 5~ 4 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0 1 1 1 1 0" },
+  pos: "5 4 1 4 3~ 2~ 3~ 5~ 4 3~ 5 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 3~ 3~ 3~ 2~ 0 0 0 0 1 1 1 1 0" },
 { id: "H03", area: "ext", prio: 3, type: "likert", dim: "eur", dir: 1, lr: 0,
   text: "Las decisiones importantes de la UE deberían seguir exigiendo unanimidad, para que cada país conserve su derecho de veto.",
   short: "Mantener el veto de cada país en la UE",
@@ -872,6 +872,7 @@ export const SOURCES = {
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13", "programa", "2023-07"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17", "programa", "2023-07"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15", "programa", "2025-12"],
+    falange: ["https://falange.es/nuestras-ideas/", "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)", "programa", "2026-11"],
   },
   A03: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452", "BOE, Real Decreto-ley 8/2023, de 27 de diciembre", "gobierno", "2023-12"],
@@ -925,7 +926,8 @@ export const SOURCES = {
   },
   A07: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2021-11473", "Ley 11/2021 de medidas de prevención y lucha contra el fraude fiscal (9 de julio de 2021)", "gobierno", "2021-07-09"],
-    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85", "Programa electoral de Vox de 2023, medida 178", "programa", "2023-07"]
+    vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85", "Programa electoral de Vox de 2023, medida 178", "programa", "2023-07"],
+    salf: ["https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html", "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta", "prensa", "2024-06"],
   },
   A08: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1276,6 +1278,7 @@ export const SOURCES = {
     bng: ["https://www.elespanol.com/treintayseis/actualidad/galicia/20220521/decenas-personas-protestan-bng-sanxenxo-monarquia/674182765_0.html", "El Español: protesta del BNG contra la monarquía en Sanxenxo", "prensa", "2022-05-21"],
     upn: ["https://www.vozpopuli.com/espana/senado-aprueba-iniciativa-respaldo-felipe-vi-monarquia-rechazo-socios-gobierno.html", "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN", "parlamento", "2024-07-17"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=21", "Programa electoral del Partido Humanista de 2023, p. 21", "programa", "2023-07"],
+    salf: ["https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html", "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta", "prensa", "2024-06"],
   },
   D08: {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
@@ -1438,7 +1441,7 @@ export const SOURCES = {
     upc: ["https://rtvc.es/todo-el-congreso-menos-vox-apoya-tramitar-la-regularizacion-de-extranjeros/", "RTVC, toma en consideración de la ILP de regularización; apoyo de Sumar y Podemos, integrantes de UPC", "parlamento", "2024-04-09"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276", "programa", "2026-04"],
     fo: ["https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53", "programa", "2026-10"],
-    falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8", "Programa electoral general de FE de las JONS para las generales de 2023, p. 8", "programa", "2023-07"],
+    falange: ["https://falange.es/nuestras-ideas/", "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)", "programa", "2026-11"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20", "programa", "2025-12"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24", "Programa electoral del Partido Humanista de 2023, p. 24", "programa", "2023-07"],
     pcte: ["https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7", "Programa electoral del PCTE para las generales de 2019 (10N), p. 7", "programa", "2019-11"],
@@ -1669,6 +1672,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=7", "Programa electoral general de FE de las JONS para las generales de 2023, p. 7", "programa", "2023-07"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13", "programa", "2025-12"],
+    salf: ["https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html", "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta", "prensa", "2024-06"],
   },
   H03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -2227,6 +2231,7 @@ export const JUSTIF = {
     pcte: "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos.",
     ph: "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
     ie: "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
+    falange: "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
   },
   A03: {
     psoe: "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
@@ -2286,7 +2291,8 @@ export const JUSTIF = {
     pp: "Estimación: un Gobierno del PP limitó por ley en 2012 los pagos en efectivo y no consta que el partido proponga suprimir ese límite.",
     vox: "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
     pod: "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
-    erc: "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite."
+    erc: "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
+    salf: "Estimación: Alvise promete estimular el uso del efectivo frente al euro digital; no cita el límite de 1.000 euros, por eso la base es indirecta.",
   },
   A08: {
     psoe: "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
@@ -2647,6 +2653,7 @@ export const JUSTIF = {
     bng: "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
     upn: "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
     ph: "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum.",
+    salf: "Estimación: según la crónica, Alvise se mostró dispuesto a prescindir de la figura del rey; no cita un referéndum.",
   },
   D08: {
     pp: "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
@@ -2808,7 +2815,7 @@ export const JUSTIF = {
     upc: "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
     adel: "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
     fo: "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna.",
-    falange: "Propone repatriar a los extranjeros, legales o ilegales, sin contrato de trabajo, y expulsar a los que tengan antecedentes.",
+    falange: "Propone la «remigración»: devolver a sus países a millones de personas que han fracasado en su integración social.",
     ie: "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
     ph: "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
     pcte: "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones.",
@@ -3036,6 +3043,7 @@ export const JUSTIF = {
     fo: "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional.",
     falange: "Propone una salida escalonada y pactada de la UE, con refundación centrada en la soberanía nacional.",
     ie: "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
+    salf: "Estimación: según la crónica, Alvise propone un referéndum para salir de la UE si no se renegocian las relaciones con Bruselas.",
   },
   H03: {
     psoe: "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
