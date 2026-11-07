@@ -118,3 +118,8 @@ Los 77 mensajes están como borradores en Gmail. A partir de las 09:00 (Madrid) 
 ## Orden y ritmo definitivos (7 nov, decisión del titular)
 
 87 correos, UN correo por minuto (unos 87 minutos desde las 09:00, Madrid). Primero los 10 personalizados (`plan/CORREOS-PERSONALIZADOS.md`), después los 77 generales. Si Gmail limita o avisa de spam, se para y no se reintenta.
+
+
+## Fecha de envío movida (7 nov)
+
+El envío pasa del sábado 7 nov 09:00 al **martes 10 nov a las 9:30 (Madrid)**: el sábado las redacciones y universidades están casi vacías; el lunes la bandeja está saturada por el fin de semana; el martes por la mañana es el mejor momento, tras la tanda S1b (que deja listos tarjeta de compartir y buscadores) y antes del inicio de campaña (13 nov) y de los debates (16 nov). Termina hacia las 10:57. Tarea: trig_0197JWodrcTp9J2NvprDXGkX.
