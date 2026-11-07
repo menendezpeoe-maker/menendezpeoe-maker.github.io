@@ -113,3 +113,8 @@ Tres textos: A (medios), B (organizaciones cívicas, de transparencia y de estud
 ## Envío (decisión del titular, 7 nov)
 
 Los 77 mensajes están como borradores en Gmail. A partir de las 09:00 (Madrid) se envían de dos en dos por minuto (unos 39 minutos), en el orden de `correos-7nov.json`, para no disparar filtros de spam. Cada envío usa el borrador (`draftId`); antes se comprueba en Enviados que no se haya mandado ya.
+
+
+## Orden y ritmo definitivos (7 nov, decisión del titular)
+
+87 correos, UN correo por minuto (unos 87 minutos desde las 09:00, Madrid). Primero los 10 personalizados (`plan/CORREOS-PERSONALIZADOS.md`), después los 77 generales. Si Gmail limita o avisa de spam, se para y no se reintenta.

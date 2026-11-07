@@ -1,5 +1,85 @@
 [
  {
+  "to": "yubal.fernandez@webedia-group.com",
+  "subject": "Para tu guía del 29N: un test que enseña de dónde sale cada postura de cada partido",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Yúbal Fernández (Xataka Basics)",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "pablo.simon@uc3m.es",
+  "subject": "Test 29N: ¿puedes echar un ojo a su metodología? (pesos y fuentes públicos)",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Pablo Simón (UC3M)",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "lluis.orriols@uc3m.es",
+  "subject": "Test 29N para tu clase de Análisis Electoral: fuente por postura y datos abiertos",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Lluís Orriols (UC3M)",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "eva.anduiza@uab.cat",
+  "subject": "Test 29N: un test político con fuente por postura, por si os interesa para investigación o docencia",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Eva Anduiza (UAB)",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "pablo.onate@uv.es",
+  "subject": "Test 29N: ¿podría servirle en clase o como material para su trabajo sobre elecciones?",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Pablo Oñate (UV)",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "info@colmenadedatos.com",
+  "subject": "Test 29N: datos abiertos de posturas de partidos, por si os sirven para el boletín",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Colmena de Datos",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "info@electomania.es",
+  "subject": "Test 29N: un complemento a vuestro análisis electoral (fuente por postura y datos abiertos)",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Electomanía",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "contacto@academiaplay.es",
+  "subject": "Un recurso para vuestro canal ante el 29N: test político con la fuente de cada postura",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Academia Play",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "eduardobayon@protonmail.com",
+  "subject": "Para tus oyentes ante el 29N: un test político que muestra la fuente de cada postura",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Eduardo Bayón",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
+  "to": "info@dlacalle.com",
+  "subject": "Para tus lectores ante el 29N: un test político con la fuente de cada postura",
+  "body": "(ver borrador personalizado en Gmail y plan/CORREOS-PERSONALIZADOS.md)",
+  "destino": "Daniel Lacalle",
+  "segmento": "P",
+  "borrador": true
+ },
+ {
   "to": "prensa@xataka.com",
   "subject": "29N: un test político que enseña la fuente de cada postura (y marca las que no la tienen)",
   "body": "Hola:\n\nHay varios tests para el 29N. Este intenta distinguirse por algo concreto: para cada partido, enseña de dónde sale cada postura.\n\nTest 29N (https://test29n.es) es gratuito, independiente y sin registro ni cookies:\n- 874 posturas llevan su fuente enlazada (votaciones del Congreso, programas, declaraciones). Las que se deducen de la línea del partido se marcan como «estimadas» y pesan menos en el cálculo: no se disimula.\n- 107 preguntas (también versiones de 15, 24 y 48) y 24 candidaturas filtradas por provincia, incluidos los partidos autonómicos, con sus cabezas de lista según el BOE.\n- Cada resultado se explica con el cálculo y las fuentes a la vista. Metodología pública: https://test29n.es/metodologia/\n\nNo es una encuesta ni recomienda voto: solo mide la coincidencia de ideas. Si veis algún error en una postura, lo corrijo. Y si preferís no recibir más correos míos, decídmelo y no escribo más.\n\nUn saludo,\nDery\ntest29n.es@gmail.com",
