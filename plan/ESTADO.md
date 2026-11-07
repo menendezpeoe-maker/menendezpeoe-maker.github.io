@@ -1,5 +1,15 @@
 # Estado del plan (lo más reciente arriba)
 
+## Nota del 7 nov 2026 (tarde, trabajo manual con el titular): lee esto antes de la próxima tanda
+
+Publicado y verificado en la web real (21/21 baterías): mejora visual del test y la portada («Completo» en el resultado), aviso de privacidad ampliado, aviso de «otras candidaturas» en el ranking, orden de las candidaturas por importancia (`DISPLAY_ORDER` en `src/partidos.src.mjs`; `PARTY_ORDER` no se toca), unas 160 posturas más con fuente o estimadas con base documentada y cinco partidos nuevos.
+- **Partidos nuevos** (ficha en `partidos.src.mjs`, posturas en `preguntas.src.mjs`, `pid` en `candidaturas.json`): PCTE (36 provincias), Frente Obrero (52), Falange (9), Iustitia Europa y Partido Humanista (solo Madrid). Solo posturas explícitas de sus documentos; el resto es «desconocida» (valor 0). Madrid muestra 13 candidaturas (`qa/e2e.mjs`, `provFor` en e2e y quick).
+- **Donaciones:** PayPal retirado; Apple Pay sigue (decisión del titular, que asume el riesgo de LSSI art. 10: no publica nombre ni domicilio). Análisis en `plan/LEGAL.md`.
+- **Estimadas:** solo con base documentada directa (principio del documento, coalición, declaración o documento territorial); nunca por ideología. Propuestas descartadas y razones en `plan/fuentes-grandes/` y `plan/partidos-pequenos/`.
+- **Sin programa del 29N a 7 nov:** Frente Amplio y SALF (sus estimadas siguen). A partir del 13 nov (campaña) revisar los programas oficiales de todos: se espera el de Vox. Faltan programas estatales de Por un Mundo Más Justo y Feministas al Congreso, y una copia pública de Podemos (la URL de podemos.info da 403 desde aquí).
+- **Ciclo de pruebas que funciona:** `sh /tmp/ciclo.sh`-equivalente: `node qa/run.mjs posturas`, `node build.mjs`, `SITE_URL=https://test29n.es/ node publish.mjs` (conservar `src/lastmod.json`), `node qa/run.mjs todas`; levantar antes `python3 -m http.server` en :8765 (raíz) y :8766 (`dist/`). Esperar a que el proceso termine antes de leer el resultado.
+- **Vídeos para redes:** guion y código en `plan/campana/` (los MP4 no están en el repositorio). Publicar solo del 9 al 23 de noviembre.
+
 ## Ficha de continuidad (actualizada el 3 nov 2026, C1)
 
 **Estado de los bloques**
