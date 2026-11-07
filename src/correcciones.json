@@ -33,6 +33,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "A03",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "A05",
   "partido": "pcte",
   "de": 0,
@@ -61,6 +77,22 @@
    "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)",
    "parlamento",
    "2023-03-30"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A10",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -130,6 +162,22 @@
  {
   "fecha": "2026-11-07",
   "id": "B04",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B04",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -161,6 +209,70 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "B08",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone construir vivienda pública de calidad para aumentar el número de inmuebles existentes y que los trabajadores accedan a una vivienda asequible.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=45",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C01",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C03",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C05",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "C06",
   "partido": "fa",
   "de": 4,
@@ -173,6 +285,22 @@
    "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C07",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -289,6 +417,54 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "F01",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F02",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F03",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "F05",
   "partido": "erc",
   "de": 3,
@@ -321,6 +497,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "G01",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "G02",
   "partido": "adel",
   "de": 3,
@@ -333,6 +525,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 6",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G02",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -401,6 +609,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "G09",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H02",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "H02",
   "partido": "pcte",
   "de": 0,
@@ -429,6 +669,22 @@
    "Programa electoral de Sumar para el 23J de 2023, p. 147",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación; no cita el plan de autonomía marroquí.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -466,6 +722,22 @@
  {
   "fecha": "2026-11-07",
   "id": "H06",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la salida inmediata de España de la OTAN y reforzar el ejército.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H06",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -477,6 +749,22 @@
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I01",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone eliminar las subvenciones a la escuela privada para fortalecer el sistema público de educación.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -509,6 +797,22 @@
    "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 35",
    "programa",
    "2019-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I02",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -557,6 +861,22 @@
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -610,6 +930,22 @@
  {
   "fecha": "2026-11-07",
   "id": "J01",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone acabar con el proceso de externalización y privatización de la sanidad.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J01",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -653,6 +989,22 @@
    "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
    "programa",
    "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J08",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -721,6 +1073,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "K07",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=37",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "K08",
   "partido": "adel",
   "de": 4,
@@ -737,6 +1105,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "L03",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la derogación de la Ley Trans.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "L04",
   "partido": "bildu",
   "de": 1,
@@ -749,6 +1133,22 @@
    "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
    "declaracion",
    "2017-07-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L04",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone la prohibición y persecución de la gestación subrogada (vientres de alquiler) a nivel nacional e internacional.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -813,6 +1213,22 @@
    "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
    "prensa",
    "2026-02-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L08",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "programa",
+   "2026-10"
   ]
  },
  {
