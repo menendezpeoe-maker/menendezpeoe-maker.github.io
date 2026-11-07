@@ -12,15 +12,51 @@
   "url": "https://xavizaguirre.substack.com/about"
  },
  {
-  "nombre": "Marc Guinjoan (UAB)",
-  "institucion": "UAB",
-  "via": "Su web enlaza a una sección Contact (no abierta)",
-  "url": "https://sites.google.com/site/engmarcguinjoan"
- },
- {
   "nombre": "Electocracia (portal de promedios de encuestas)",
   "institucion": "Electocracia",
   "via": "Página de contacto con correo ofuscado por Cloudflare ([email protected]); no se usa",
   "url": "https://electocracia.com/contacto/"
+ },
+ {
+  "nombre": "Pulso Electoral (promedio de encuestas)",
+  "institucion": "pulsoelectoral.es",
+  "via": "Sin autor ni correo en la web; metodología pública",
+  "url": "https://pulsoelectoral.es/"
+ },
+ {
+  "nombre": "Intención de voto (IDV)",
+  "institucion": "intenciondevoto.com",
+  "via": "Solo formulario de contacto",
+  "url": "https://www.intenciondevoto.com/contacto"
+ },
+ {
+  "nombre": "Raúl Lucena (No data, no party)",
+  "institucion": "Substack",
+  "via": "Sin correo; solo Substack",
+  "url": "https://nodatanoparty.substack.com/about"
+ },
+ {
+  "nombre": "Cristina Monge",
+  "institucion": "Universidad de Zaragoza, politóloga y analista",
+  "via": "Formulario en su web",
+  "url": "https://www.cristinamonge.es/contacto/"
+ },
+ {
+  "nombre": "Juan Montabes Pereira",
+  "institucion": "Universidad de Granada",
+  "via": "Directorio UGR oculta el correo tras captcha; no verificable",
+  "url": "https://polisocio.ugr.es/docencia/profesorado"
+ },
+ {
+  "nombre": "Departamento CPA Universidad de Granada (plantilla)",
+  "institucion": "UGR",
+  "via": "Todos los correos tras captcha",
+  "url": "https://cpolitica.ugr.es/informacion/directorio-personal"
+ },
+ {
+  "nombre": "Endika Nuñez (TheElectoralReport / La Review)",
+  "institucion": "Newsletter La Review (Substack)",
+  "via": "Sin correo publicado; su GitHub enlaza a electoralreport.com, que hoy sirve contenido ajeno (spam), no usar",
+  "url": "https://github.com/endikasatu"
  }
 ]
