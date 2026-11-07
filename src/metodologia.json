@@ -43,18 +43,6 @@
     "pct": 100
    },
    {
-    "pid": "pacma",
-    "prov": "madrid",
-    "primero": true,
-    "pct": 82
-   },
-   {
-    "pid": "d21",
-    "prov": "barcelona",
-    "primero": true,
-    "pct": 100
-   },
-   {
     "pid": "erc",
     "prov": "barcelona",
     "primero": true,
@@ -67,28 +55,16 @@
     "pct": 100
    },
    {
-    "pid": "pnv",
-    "prov": "alava",
-    "primero": true,
-    "pct": 100
-   },
-   {
     "pid": "bildu",
     "prov": "navarra",
     "primero": true,
     "pct": 100
    },
    {
-    "pid": "upn",
-    "prov": "navarra",
+    "pid": "pnv",
+    "prov": "alava",
     "primero": true,
     "pct": 100
-   },
-   {
-    "pid": "gbai",
-    "prov": "navarra",
-    "primero": true,
-    "pct": 99
    },
    {
     "pid": "bng",
@@ -103,20 +79,50 @@
     "pct": 100
    },
    {
-    "pid": "upc",
-    "prov": "laspalmas",
+    "pid": "upn",
+    "prov": "navarra",
     "primero": true,
     "pct": 100
    },
    {
-    "pid": "drago",
-    "prov": "laspalmas",
+    "pid": "pacma",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 82
+   },
+   {
+    "pid": "fo",
+    "prov": "madrid",
+    "primero": true,
+    "pct": 88
+   },
+   {
+    "pid": "pcte",
+    "prov": "almeria",
+    "primero": true,
+    "pct": 82
+   },
+   {
+    "pid": "falange",
+    "prov": "cordoba",
+    "primero": true,
+    "pct": 94
+   },
+   {
+    "pid": "d21",
+    "prov": "barcelona",
     "primero": true,
     "pct": 100
    },
    {
     "pid": "comp",
     "prov": "alicante",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "adel",
+    "prov": "almeria",
     "primero": true,
     "pct": 100
    },
@@ -133,16 +139,28 @@
     "pct": 87
    },
    {
+    "pid": "upc",
+    "prov": "laspalmas",
+    "primero": true,
+    "pct": 100
+   },
+   {
+    "pid": "drago",
+    "prov": "laspalmas",
+    "primero": true,
+    "pct": 100
+   },
+   {
     "pid": "mes",
     "prov": "baleares",
     "primero": true,
     "pct": 100
    },
    {
-    "pid": "adel",
-    "prov": "almeria",
+    "pid": "gbai",
+    "prov": "navarra",
     "primero": true,
-    "pct": 100
+    "pct": 99
    },
    {
     "pid": "soria",
@@ -151,31 +169,13 @@
     "pct": 72
    },
    {
-    "pid": "pcte",
-    "prov": "almeria",
-    "primero": true,
-    "pct": 82
-   },
-   {
-    "pid": "fo",
-    "prov": "madrid",
-    "primero": true,
-    "pct": 88
-   },
-   {
-    "pid": "falange",
-    "prov": "cordoba",
-    "primero": true,
-    "pct": 94
-   },
-   {
-    "pid": "ie",
+    "pid": "ph",
     "prov": "madrid",
     "primero": true,
     "pct": 72
    },
    {
-    "pid": "ph",
+    "pid": "ie",
     "prov": "madrid",
     "primero": true,
     "pct": 72
@@ -299,18 +299,6 @@
    "conFuente": 23
   },
   {
-   "pid": "pacma",
-   "conocidas": 26,
-   "estimadas": 12,
-   "conFuente": 15
-  },
-  {
-   "pid": "d21",
-   "conocidas": 107,
-   "estimadas": 103,
-   "conFuente": 15
-  },
-  {
    "pid": "erc",
    "conocidas": 104,
    "estimadas": 30,
@@ -323,28 +311,16 @@
    "conFuente": 36
   },
   {
-   "pid": "pnv",
-   "conocidas": 99,
-   "estimadas": 62,
-   "conFuente": 37
-  },
-  {
    "pid": "bildu",
    "conocidas": 102,
    "estimadas": 39,
    "conFuente": 64
   },
   {
-   "pid": "upn",
-   "conocidas": 104,
-   "estimadas": 75,
-   "conFuente": 30
-  },
-  {
-   "pid": "gbai",
-   "conocidas": 72,
-   "estimadas": 68,
-   "conFuente": 4
+   "pid": "pnv",
+   "conocidas": 99,
+   "estimadas": 62,
+   "conFuente": 37
   },
   {
    "pid": "bng",
@@ -359,22 +335,52 @@
    "conFuente": 22
   },
   {
-   "pid": "upc",
-   "conocidas": 80,
-   "estimadas": 42,
-   "conFuente": 39
+   "pid": "upn",
+   "conocidas": 104,
+   "estimadas": 75,
+   "conFuente": 30
   },
   {
-   "pid": "drago",
-   "conocidas": 78,
-   "estimadas": 71,
-   "conFuente": 8
+   "pid": "pacma",
+   "conocidas": 26,
+   "estimadas": 12,
+   "conFuente": 15
+  },
+  {
+   "pid": "fo",
+   "conocidas": 26,
+   "estimadas": 0,
+   "conFuente": 26
+  },
+  {
+   "pid": "pcte",
+   "conocidas": 21,
+   "estimadas": 0,
+   "conFuente": 21
+  },
+  {
+   "pid": "falange",
+   "conocidas": 32,
+   "estimadas": 0,
+   "conFuente": 32
+  },
+  {
+   "pid": "d21",
+   "conocidas": 107,
+   "estimadas": 103,
+   "conFuente": 15
   },
   {
    "pid": "comp",
    "conocidas": 103,
    "estimadas": 62,
    "conFuente": 43
+  },
+  {
+   "pid": "adel",
+   "conocidas": 91,
+   "estimadas": 61,
+   "conFuente": 30
   },
   {
    "pid": "cha",
@@ -389,16 +395,28 @@
    "conFuente": 5
   },
   {
+   "pid": "upc",
+   "conocidas": 80,
+   "estimadas": 42,
+   "conFuente": 39
+  },
+  {
+   "pid": "drago",
+   "conocidas": 78,
+   "estimadas": 71,
+   "conFuente": 8
+  },
+  {
    "pid": "mes",
    "conocidas": 79,
    "estimadas": 71,
    "conFuente": 8
   },
   {
-   "pid": "adel",
-   "conocidas": 91,
-   "estimadas": 61,
-   "conFuente": 30
+   "pid": "gbai",
+   "conocidas": 72,
+   "estimadas": 68,
+   "conFuente": 4
   },
   {
    "pid": "soria",
@@ -407,31 +425,13 @@
    "conFuente": 2
   },
   {
-   "pid": "pcte",
-   "conocidas": 21,
-   "estimadas": 0,
-   "conFuente": 21
-  },
-  {
-   "pid": "fo",
-   "conocidas": 26,
-   "estimadas": 0,
-   "conFuente": 26
-  },
-  {
-   "pid": "falange",
-   "conocidas": 32,
-   "estimadas": 0,
-   "conFuente": 32
-  },
-  {
-   "pid": "ie",
+   "pid": "ph",
    "conocidas": 14,
    "estimadas": 0,
    "conFuente": 14
   },
   {
-   "pid": "ph",
+   "pid": "ie",
    "conocidas": 14,
    "estimadas": 0,
    "conFuente": 14
