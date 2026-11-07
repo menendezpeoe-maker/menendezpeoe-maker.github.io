@@ -87,7 +87,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.click("#prio-go");
   ok((await page.textContent("#prov-err")).includes("provincia") && !(await page.isHidden("#v-prios")), "sin provincia no muestra resultados y la pide");
   await page.selectOption("#f-prov", "madrid");
-  ok((await page.locator("#prov-chips .chip").count()) === 8, "Madrid muestra 8 candidaturas");
+  ok((await page.locator("#prov-chips .chip").count()) === 10, "Madrid muestra 10 candidaturas");
   await page.screenshot({ path: OUT + "m-prios.png" });
   await page.click("#prio-go");
   await page.waitForSelector("#v-results:not([hidden])");
