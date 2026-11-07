@@ -183,7 +183,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -289,6 +290,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 6",
      "programa",
      "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=11",
+     "Programa electoral del Partido Humanista de 2023, p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -307,7 +314,8 @@
     "comp": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial.",
     "upc": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas.",
     "adel": "Pide al Gobierno estatal reducir la jornada a 32 horas semanales sin reducción salarial en todos los ámbitos, en 2 años (grandes empresas) y 4 (pymes).",
-    "pcte": "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario."
+    "pcte": "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario.",
+    "ph": "Defiende reducir la jornada laboral y repartir el empleo manteniendo y aumentando los salarios; no fija 37,5 horas ni habla de ley."
    }
   },
   {
@@ -794,7 +802,8 @@
     "existe": 2,
     "mes": 1,
     "adel": 1,
-    "pcte": 1
+    "pcte": 1,
+    "ph": 1
    },
    "est": [
     "salf",
@@ -886,6 +895,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
      "programa",
      "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=13",
+     "Programa electoral del Partido Humanista de 2023, p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -901,7 +916,8 @@
     "comp": "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
     "cha": "Propone financiar las pensiones públicas con impuestos a la banca y otros actores, y desechar la desindexación y el factor de sostenibilidad.",
     "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
-    "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos."
+    "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos.",
+    "ph": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación."
    }
   },
   {
@@ -1192,7 +1208,8 @@
     "cha": 2,
     "existe": 3,
     "mes": 2,
-    "adel": 2
+    "adel": 2,
+    "falange": 1
    },
    "est": [
     "vox",
@@ -1242,6 +1259,12 @@
      "Forbes España (Europa Press), declaraciones de Ione Belarra, 06/09/2023",
      "declaracion",
      "2023-09-06"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1249,7 +1272,8 @@
     "pp": "Propone reducir el tamaño del sector empresarial público y critica la influencia del Gobierno en empresas del IBEX 35.",
     "fa": "Quiere reforzar el sector público empresarial y convertir la SEPI en una agencia industrial pública.",
     "pod": "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones.",
-    "erc": "Estimación: sin postura conocida de ERC sobre vender participaciones públicas."
+    "erc": "Estimación: sin postura conocida de ERC sobre vender participaciones públicas.",
+    "falange": "Propone nacionalizar o participar en industrias estratégicas y estatalizar las empresas de I+D de defensa; no plantea vender participaciones."
    }
   },
   {
@@ -1436,7 +1460,10 @@
     "existe": 3,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "falange": 5,
+    "ie": 1,
+    "ph": 4
    },
    "est": [
     "salf",
@@ -1549,6 +1576,24 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+     "programa",
+     "2025-12"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+     "Programa electoral del Partido Humanista de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1561,7 +1606,10 @@
     "comp": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "adel": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
     "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas.",
-    "pcte": "Propone una limitación real y efectiva de los alquileres, en detrimento de la ganancia de los propietarios."
+    "pcte": "Propone una limitación real y efectiva de los alquileres, en detrimento de la ganancia de los propietarios.",
+    "falange": "Propone la fijación de un precio máximo de alquiler de viviendas.",
+    "ie": "Propone eliminar las políticas de control de alquiler por ineficaces y por haber reducido la oferta.",
+    "ph": "Propone alquiler social con renta máxima del 30% de los ingresos como forma de regular unos alquileres que juzga abusivos."
    }
   },
   {
@@ -1600,7 +1648,9 @@
     "existe": 3,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "falange": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -1708,6 +1758,18 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+     "programa",
+     "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+     "Programa electoral del Partido Humanista de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -1726,7 +1788,9 @@
     "adel": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
     "cha": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
     "upc": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler.",
-    "pcte": "Plantea limitar los alquileres y acceder a vivienda vacía de bancos y fondos; no apuesta por liberar suelo para construir más."
+    "pcte": "Plantea limitar los alquileres y acceder a vivienda vacía de bancos y fondos; no apuesta por liberar suelo para construir más.",
+    "falange": "Propone un Instituto Nacional de Vivienda con parque social, construcción de vivienda pública y precio máximo de alquiler.",
+    "ph": "Propone una bolsa de alquiler con viviendas vacías, parque público en alquiler y alquiler social; no plantea liberar suelo."
    }
   },
   {
@@ -1762,7 +1826,8 @@
     "cha": 1,
     "existe": 3,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "ie": 5
    },
    "est": [
     "d21",
@@ -1864,6 +1929,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025",
      "parlamento",
      "2025-03-18"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -1881,7 +1952,8 @@
     "ccpc": "Votó a favor de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
     "comp": "Votó en contra de tramitar la proposición de Junts de medidas urgentes contra la ocupación ilegal de inmuebles.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que los propietarios recuperen en 48 horas una vivienda ocupada.",
-    "fa": "Los partidos del Frente Amplio rechazaron la ley del PP que proponía desalojar a los okupas en 24 horas."
+    "fa": "Los partidos del Frente Amplio rechazaron la ley del PP que proponía desalojar a los okupas en 24 horas.",
+    "ie": "Propone desalojo inmediato de okupas, en menos de 24 horas desde la denuncia, con penas más duras."
    }
   },
   {
@@ -1918,7 +1990,8 @@
     "mes": 1,
     "adel": 1,
     "pcte": 1,
-    "fo": 1
+    "fo": 1,
+    "ph": 1
    },
    "est": [
     "salf",
@@ -2004,6 +2077,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+     "Programa electoral del Partido Humanista de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -2016,7 +2095,8 @@
     "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
     "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
     "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
-    "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional."
+    "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional.",
+    "ph": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados."
    }
   },
   {
@@ -2425,7 +2505,8 @@
     "jmm": 4,
     "upl": 4,
     "soria": 4,
-    "fo": 5
+    "fo": 5,
+    "falange": 5
    },
    "est": [
     "salf",
@@ -2533,6 +2614,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 12",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -2550,7 +2637,8 @@
     "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone un parque público de dos millones de viviendas sociales en alquiler.",
     "bildu": "EH Bildu propone dedicar los recursos públicos a crear un parque de vivienda pública en alquiler, gestionado desde Euskadi.",
     "existe": "Propone una política de vivienda pública apoyada en parques públicos y potenciar la vivienda pública de alquiler.",
-    "fo": "Propone construir vivienda pública de calidad para aumentar el número de inmuebles existentes y que los trabajadores accedan a una vivienda asequible."
+    "fo": "Propone construir vivienda pública de calidad para aumentar el número de inmuebles existentes y que los trabajadores accedan a una vivienda asequible.",
+    "falange": "Propone restaurar el Instituto Nacional de Vivienda para crear un parque de vivienda social y construir vivienda pública."
    }
   },
   {
@@ -2685,7 +2773,8 @@
     "upl": 1,
     "soria": 1,
     "pav": 1,
-    "fo": 1
+    "fo": 1,
+    "falange": 1
    },
    "est": [
     "pod",
@@ -2764,13 +2853,20 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
     "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
     "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación.",
-    "fo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones."
+    "fo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones.",
+    "falange": "Defiende la unidad nacional y disolver las autonomías, retirándoles antes todas sus competencias."
    }
   },
   {
@@ -2892,7 +2988,8 @@
     "mes": 1,
     "adel": 1,
     "upl": 1,
-    "fo": 5
+    "fo": 5,
+    "falange": 5
    },
    "est": [
     "pod",
@@ -3006,6 +3103,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3025,7 +3128,8 @@
     "upc": "Nueva Canarias, socio de UPC, defiende ampliar el autogobierno con más traspasos, no devolver competencias al Estado.",
     "cha": "CHA reclama el máximo techo competencial para Aragón y más traspasos del Estado, no su recentralización.",
     "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
-    "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia."
+    "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
+    "falange": "Propone una educación unificada para toda España, con currículos y pruebas iguales en todo el territorio."
    }
   },
   {
@@ -3062,7 +3166,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 4,
-    "adel": 4
+    "adel": 4,
+    "falange": 1
    },
    "est": [
     "salf",
@@ -3127,6 +3232,12 @@
      "Periódico de Ibiza/EFE: propuesta de acuerdo de Compromís presentada al Rey (26 abr 2016)",
      "prensa",
      "2016-04-26"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3137,7 +3248,8 @@
     "erc": "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
     "pp": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
     "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
-    "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal."
+    "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
+    "falange": "Rechaza el régimen autonómico de 1978 y propone disolver las comunidades; no plantea un Estado federal."
    }
   },
   {
@@ -3179,7 +3291,8 @@
     "upl": 2,
     "soria": 1,
     "pav": 1,
-    "fo": 1
+    "fo": 1,
+    "falange": 1
    },
    "est": [
     "fa",
@@ -3266,6 +3379,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -3278,7 +3397,8 @@
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
     "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
     "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación.",
-    "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes."
+    "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes.",
+    "falange": "Propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España."
    }
   },
   {
@@ -3315,7 +3435,9 @@
     "jmm": 1,
     "upl": 1,
     "soria": 1,
-    "pav": 1
+    "pav": 1,
+    "falange": 1,
+    "ie": 5
    },
    "est": [
     "psoe",
@@ -3372,6 +3494,18 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 6",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -3381,7 +3515,9 @@
     "erc": "El programa propone suprimir las diputaciones y traspasar sus recursos.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía suprimir las diputaciones e integrar sus funciones en las comunidades.",
     "pod": "Podemos defiende suprimir las diputaciones y traspasar sus competencias a comunidades y ayuntamientos.",
-    "existe": "Plantea la elección directa de los representantes en las diputaciones provinciales, lo que implica mantenerlas."
+    "existe": "Plantea la elección directa de los representantes en las diputaciones provinciales, lo que implica mantenerlas.",
+    "falange": "Defiende conservar la provincia y el municipio como base y disolver las autonomías, no las diputaciones.",
+    "ie": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto."
    }
   },
   {
@@ -3723,7 +3859,8 @@
     "jmm": 1,
     "upl": 1,
     "soria": 1,
-    "pav": 1
+    "pav": 1,
+    "ie": 1
    },
    "est": [
     "psoe",
@@ -3795,6 +3932,12 @@
      "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240",
      "programa",
      "2019-04"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -3806,7 +3949,8 @@
     "pod": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
     "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
     "vox": "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional.",
-    "comp": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto."
+    "comp": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto.",
+    "ie": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales."
    }
   },
   {
@@ -3835,7 +3979,8 @@
     "bildu": 2,
     "upn": 2,
     "bng": 2,
-    "comp": 4
+    "comp": 4,
+    "ie": 5
    },
    "est": [
     "psoe",
@@ -3867,6 +4012,12 @@
      "Democracia 21, documento «España Limpia», p. 13",
      "programa",
      "2026-10"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -3875,7 +4026,8 @@
     "fa": "Estimación: su programa plantea actualizar la LOREG, pero no concreta listas desbloqueadas o abiertas.",
     "pod": "Estimación: sin postura reciente publicada sobre listas desbloqueadas.",
     "erc": "La ponencia contempla listas desbloqueadas para que el votante ordene a los candidatos.",
-    "d21": "Su documento programático propone reformar la ley electoral para introducir listas desbloqueadas y abiertas."
+    "d21": "Su documento programático propone reformar la ley electoral para introducir listas desbloqueadas y abiertas.",
+    "ie": "Propone listas abiertas y elección directa de diputados y senadores, sin listas cerradas."
    }
   },
   {
@@ -3911,7 +4063,9 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "falange": 5,
+    "ie": 5
    },
    "est": [
     "salf",
@@ -3991,6 +4145,18 @@
      "Que.es, reforma del CGPJ del PP rechazada, 21/09/2021",
      "parlamento",
      "2021-09-21"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=17",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 17",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=10",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 10",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -4004,7 +4170,9 @@
     "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
     "d21": "Su documento programático propone que los vocales judiciales del CGPJ sean elegidos por los propios jueces.",
     "upn": "UPN apoyó la reforma para que los jueces elijan directamente a la mayoría de los vocales del CGPJ.",
-    "upc": "Para el CGPJ propone reforzar el protagonismo del Parlamento y mantiene la elección parlamentaria de los vocales de procedencia judicial."
+    "upc": "Para el CGPJ propone reforzar el protagonismo del Parlamento y mantiene la elección parlamentaria de los vocales de procedencia judicial.",
+    "falange": "Propone que el Consejo General del Poder Judicial sea elegido por los jueces y magistrados.",
+    "ie": "Propone que el CGPJ lo elijan por sufragio directo y secreto los propios jueces y magistrados en activo."
    }
   },
   {
@@ -4342,7 +4510,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "ph": 4
    },
    "est": [
     "vox",
@@ -4414,6 +4583,12 @@
      "Vozpópuli: el Senado aprueba una moción de respaldo a la monarquía parlamentaria con el voto de UPN",
      "parlamento",
      "2024-07-17"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=21",
+     "Programa electoral del Partido Humanista de 2023, p. 21",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4428,7 +4603,8 @@
     "bildu": "EH Bildu ha pedido en el Congreso que se celebre un referéndum sobre la Jefatura del Estado.",
     "cha": "CHA propone convocar referéndums para avanzar hacia una república federal.",
     "bng": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
-    "upn": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado."
+    "upn": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
+    "ph": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum."
    }
   },
   {
@@ -4644,7 +4820,8 @@
     "comp": 2,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "falange": 5
    },
    "est": [
     "salf",
@@ -4722,12 +4899,19 @@
      "Naiz (Europa Press), El Congreso aprueba la ley de multirreincidencia de Junts, 12-02-2026",
      "parlamento",
      "2026-02-12"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=20",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 20",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
     "pnv": "Votó a favor de la ley de multirreincidencia de Junts.",
     "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
-    "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026."
+    "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026.",
+    "falange": "Propone aumentar las penas por delitos comunes e incrementarlas por reincidencia."
    }
   },
   {
@@ -4763,7 +4947,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "falange": 1
    },
    "est": [
     "psoe",
@@ -4854,6 +5039,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 135",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=17",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 17",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -4869,7 +5060,8 @@
     "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
     "ccpc": "Votó a favor de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "comp": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
-    "upc": "Incluye en su programa eliminar la prisión permanente revisable."
+    "upc": "Incluye en su programa eliminar la prisión permanente revisable.",
+    "falange": "Propone introducir la cadena perpetua no revisable para asesinato, violación, pederastia y terrorismo."
    }
   },
   {
@@ -5158,7 +5350,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "ie": 4
    },
    "est": [
     "pp",
@@ -5186,6 +5379,12 @@
      "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)",
      "declaracion",
      "2023-07-18"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 26",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -5194,7 +5393,8 @@
     "vox": "Estimación: Vox defiende más medios policiales; no consta una postura sobre el reconocimiento facial.",
     "fa": "Estimación: su programa solo limita el reconocimiento facial en el teletrabajo; no consta postura sobre uso policial.",
     "pod": "Estimación: favorable a prohibirlo por su defensa del control democrático de la policía.",
-    "erc": "Estimación: ERC prioriza libertades civiles frente a la vigilancia masiva."
+    "erc": "Estimación: ERC prioriza libertades civiles frente a la vigilancia masiva.",
+    "ie": "Rechaza el control social mediante el euro digital, el control biométrico y los reconocimientos faciales."
    }
   },
   {
@@ -5359,7 +5559,8 @@
     "comp": 4,
     "cha": 3,
     "mes": 3,
-    "adel": 3
+    "adel": 3,
+    "ie": 1
    },
    "est": [
     "vox",
@@ -5407,6 +5608,12 @@
      "El Español: Podemos ve «ineficaz» y «cosmética» la ley del PSOE que limita la acusación popular",
      "prensa",
      "2025-01-10"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=12",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -5415,7 +5622,8 @@
     "vox": "Estimación: Vox ejerce la acusación popular en varias causas; no consta una postura pública sobre limitarla.",
     "fa": "Su portavoz Ernest Urtasun rechazó limitar la acusación popular, que considera un instrumento fundamental en democracia.",
     "pod": "Estimación: sin postura publicada sobre limitar la acusación popular.",
-    "erc": "Estimación: ERC ha criticado el uso político de la justicia, sin postura localizada sobre esta reforma."
+    "erc": "Estimación: ERC ha criticado el uso político de la justicia, sin postura localizada sobre esta reforma.",
+    "ie": "Propone blindar en la Constitución la acción popular y prohibir cualquier restricción a su ejercicio."
    }
   },
   {
@@ -5753,7 +5961,9 @@
     "existe": 3,
     "mes": 5,
     "adel": 5,
-    "fo": 1
+    "fo": 1,
+    "falange": 1,
+    "ie": 1
    },
    "est": [
     "d21",
@@ -5865,6 +6075,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -5877,7 +6099,9 @@
     "upc": "Sumar y Podemos, integrantes de la coalición, apoyaron tramitar la regularización extraordinaria de migrantes.",
     "adel": "Adelante Andalucía pide facilitar la regularización de las personas migrantes en situación irregular.",
     "drago": "Tacha de injusta la ley de extranjería y recoge la ILP estatal que pide una regularización inmediata.",
-    "fo": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal."
+    "fo": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal.",
+    "falange": "Propone repatriar a los extranjeros que residan en España sin contrato de trabajo y fronteras cerradas.",
+    "ie": "Rechaza regularizar: quien entre ilegalmente será expulsado sin derecho a regularización."
    }
   },
   {
@@ -5914,7 +6138,10 @@
     "existe": 2,
     "mes": 1,
     "adel": 1,
-    "fo": 5
+    "fo": 5,
+    "falange": 4,
+    "ie": 5,
+    "ph": 1
    },
    "est": [
     "d21",
@@ -6006,6 +6233,24 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+     "programa",
+     "2025-12"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+     "Programa electoral del Partido Humanista de 2023, p. 24",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6021,7 +6266,10 @@
     "pp": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas.",
     "upc": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
     "adel": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
-    "fo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna."
+    "fo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna.",
+    "falange": "Propone repatriar a los extranjeros, legales o ilegales, sin contrato de trabajo, y expulsar a los que tengan antecedentes.",
+    "ie": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
+    "ph": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado."
    }
   },
   {
@@ -6058,7 +6306,9 @@
     "existe": 1,
     "mes": 1,
     "adel": 1,
-    "fo": 5
+    "fo": 5,
+    "falange": 5,
+    "ph": 1
    },
    "est": [
     "salf",
@@ -6174,6 +6424,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=3",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 3",
+     "programa",
+     "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+     "Programa electoral del Partido Humanista de 2023, p. 24",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6192,7 +6454,9 @@
     "adel": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
     "fa": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
     "upc": "Nueva Canarias, socio de UPC, rechazó en el Parlamento canario la propuesta de Vox de priorizar a los nacionales en ayudas y servicios.",
-    "fo": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero."
+    "fo": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero.",
+    "falange": "Propone que solo los españoles accedan a los servicios del Estado del bienestar: educación, sanidad, ayudas y vivienda.",
+    "ph": "Propone el reconocimiento de iguales derechos y oportunidades para todos, también para los inmigrantes."
    }
   },
   {
@@ -6231,7 +6495,8 @@
     "adel": 4,
     "jmm": 3,
     "upl": 3,
-    "soria": 4
+    "soria": 4,
+    "falange": 1
    },
    "est": [
     "salf",
@@ -6298,6 +6563,12 @@
      "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 63",
      "programa",
      "2019-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6307,7 +6578,8 @@
     "fa": "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
     "erc": "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras.",
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
-    "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo."
+    "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
+    "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes."
    }
   },
   {
@@ -6659,7 +6931,8 @@
     "existe": 4,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "ph": 5
    },
    "est": [
     "vox",
@@ -6721,6 +6994,12 @@
      "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
      "programa",
      "2019-11"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+     "Programa electoral del Partido Humanista de 2023, p. 17",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6731,7 +7010,8 @@
     "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
     "pp": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal.",
-    "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes."
+    "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
+    "ph": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales."
    }
   },
   {
@@ -6852,7 +7132,8 @@
     "adel": 1,
     "upl": 3,
     "pav": 3,
-    "fo": 5
+    "fo": 5,
+    "falange": 5
    },
    "est": [
     "pacma",
@@ -6972,6 +7253,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -6984,7 +7271,8 @@
     "comp": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "pacma": "PACMA considera insostenible un modelo energético basado en los combustibles fósiles y la energía nuclear.",
     "cha": "Propone abandonar progresivamente la energía nuclear y cerrar de inmediato las centrales nucleares peligrosas y obsoletas.",
-    "fo": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión."
+    "fo": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión.",
+    "falange": "Propone anular el plan de cierre de nucleares y potenciar la energía nuclear como fuente principal."
    }
   },
   {
@@ -7025,7 +7313,8 @@
     "upl": 4,
     "soria": 5,
     "pav": 4,
-    "fo": 4
+    "fo": 4,
+    "ie": 4
    },
    "est": [
     "d21",
@@ -7121,6 +7410,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
      "programa",
      "2026-10"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -7135,7 +7430,8 @@
     "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
     "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
     "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
-    "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo."
+    "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
+    "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones."
    }
   },
   {
@@ -7401,7 +7697,8 @@
     "existe": 3,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "falange": 5
    },
    "est": [
     "salf",
@@ -7473,6 +7770,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 11",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -7485,7 +7788,8 @@
     "bildu": "Pide facilitar por ley la creación de empresas públicas de comercialización de electricidad.",
     "bng": "El BNG propone crear una empresa pública de energía, en su caso gallega, a partir de las concesiones hidroeléctricas.",
     "upc": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas del Estado según venzan las concesiones.",
-    "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético."
+    "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético.",
+    "falange": "Propone nacionalizar la producción, transporte y distribución de la energía, acabando con el oligopolio."
    }
   },
   {
@@ -7802,7 +8106,9 @@
     "existe": 3,
     "mes": 5,
     "adel": 4,
-    "fo": 2
+    "fo": 2,
+    "falange": 1,
+    "ie": 1
    },
    "est": [
     "salf",
@@ -7896,6 +8202,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 14",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -7911,7 +8229,9 @@
     "vox": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares.",
     "pacma": "Tras el apagón, PACMA propone acompañar las renovables de almacenamiento y control de red; en la página anterior califica de insostenible el modelo basado en combustibles fósiles y energía nuclear.",
     "comp": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo.",
-    "fo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión."
+    "fo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión.",
+    "falange": "Propone nuclear como fuente principal, ciclo combinado e hidráulica, y frenar la transición energética.",
+    "ie": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables."
    }
   },
   {
@@ -7948,7 +8268,9 @@
     "cha": 1,
     "existe": 2,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "falange": 4,
+    "ph": 1
    },
    "est": [
     "vox",
@@ -8065,6 +8387,18 @@
      "Última Hora: votación en el Parlament balear sobre gasto militar y la OTAN (18 sep 2025)",
      "prensa",
      "2025-09-18"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+     "programa",
+     "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=8",
+     "Programa electoral del Partido Humanista de 2023, p. 8",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8079,7 +8413,9 @@
     "upc": "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
     "cha": "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
     "mes": "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar.",
-    "pp": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta."
+    "pp": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta.",
+    "falange": "Propone aumentar el presupuesto de defensa; no fija una cifra concreta sobre el PIB.",
+    "ph": "Propone reducir drásticamente el presupuesto militar y el armamentismo, y desarme progresivo y proporcional."
    }
   },
   {
@@ -8118,7 +8454,9 @@
     "mes": 3,
     "adel": 2,
     "pcte": 1,
-    "fo": 1
+    "fo": 1,
+    "falange": 1,
+    "ie": 1
    },
    "est": [
     "pod",
@@ -8196,6 +8534,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=7",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 7",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
+     "programa",
+     "2025-12"
     ]
    },
    "why": {
@@ -8208,7 +8558,9 @@
     "pnv": "El programa pide una política europea de inmigración y asilo con tratamiento comunitario, y completar la Unión Bancaria.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior.",
     "pcte": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas.",
-    "fo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional."
+    "fo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional.",
+    "falange": "Propone una salida escalonada y pactada de la UE, con refundación centrada en la soberanía nacional.",
+    "ie": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE."
    }
   },
   {
@@ -8666,7 +9018,10 @@
     "mes": 2,
     "adel": 1,
     "pcte": 1,
-    "fo": 1
+    "fo": 1,
+    "falange": 1,
+    "ie": 1,
+    "ph": 1
    },
    "est": [
     "salf",
@@ -8766,6 +9121,24 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+     "programa",
+     "2023-07"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14",
+     "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 14",
+     "programa",
+     "2025-12"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=3",
+     "Programa electoral del Partido Humanista de 2023, p. 3",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -8781,7 +9154,10 @@
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
     "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN.",
     "pcte": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras.",
-    "fo": "Propone la salida inmediata de España de la OTAN y reforzar el ejército."
+    "fo": "Propone la salida inmediata de España de la OTAN y reforzar el ejército.",
+    "falange": "Propone el abandono inmediato de la OTAN por parte de España.",
+    "ie": "Propone referéndum vinculante para salir de la OTAN y reclama la neutralidad de España.",
+    "ph": "Pide la salida de España de la OTAN, como en todos sus programas electorales."
    }
   },
   {
@@ -9023,7 +9399,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "ph": 1
    },
    "est": [
     "salf",
@@ -9116,6 +9493,12 @@
      "Compromiso electoral de EH Bildu para las generales de 2023, p. 11",
      "programa",
      "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+     "Programa electoral del Partido Humanista de 2023, p. 24",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9131,7 +9514,8 @@
     "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone acabar con la externalización de fronteras.",
     "pod": "Podemos rechaza la externalización de la política migratoria y de asilo de la UE a terceros países.",
     "bng": "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo.",
-    "bildu": "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización."
+    "bildu": "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización.",
+    "ph": "Rechaza la externalización de fronteras y las «plataformas-prisiones» y propone destinar esos fondos a la acogida."
    }
   },
   {
@@ -9347,7 +9731,9 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
-    "fo": 2
+    "fo": 2,
+    "falange": 5,
+    "ph": 5
    },
    "est": [
     "vox",
@@ -9419,6 +9805,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+     "programa",
+     "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+     "Programa electoral del Partido Humanista de 2023, p. 17",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9430,7 +9828,9 @@
     "comp": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
     "adel": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública.",
     "pcte": "Aspira a un sistema de enseñanza único, público y gratuito.",
-    "fo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas."
+    "fo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas.",
+    "falange": "Propone una educación nacional gratuita y de calidad desde las primeras etapas hasta los estudios universitarios.",
+    "ph": "Defiende una educación pública, gratuita y de calidad en todos los niveles, desde infantil hasta la universidad."
    }
   },
   {
@@ -9620,7 +10020,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "fo": 4
+    "fo": 4,
+    "falange": 5
    },
    "est": [
     "fa",
@@ -9711,6 +10112,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -9726,7 +10133,8 @@
     "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
     "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
     "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular.",
-    "fo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales."
+    "fo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales.",
+    "falange": "Propone que las asignaturas básicas se impartan en español, con enseñanza de lenguas regionales aparte."
    }
   },
   {
@@ -9971,7 +10379,8 @@
     "jmm": 5,
     "upl": 5,
     "soria": 4,
-    "pav": 5
+    "pav": 5,
+    "falange": 5
    },
    "est": [
     "d21",
@@ -10081,6 +10490,12 @@
      "ESdiario, voto de Alvise Pérez en la comisión de Agricultura del Parlamento Europeo, 05/09/2024",
      "parlamento",
      "2024-09-05"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=16",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 16",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10099,7 +10514,8 @@
     "psoe": "El PSOE se abstuvo en la toma en consideración de la ILP que pretendía retirar a la tauromaquia su protección como patrimonio cultural, sin apoyarla ni rechazarla.",
     "adel": "Rechaza la tauromaquia como acto cultural y propone suprimir toda subvención e institución pública ligada a ella en los dos primeros años.",
     "cha": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
-    "salf": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal»."
+    "salf": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal».",
+    "falange": "Propone protección especial a la tauromaquia, facilitando festejos con patrocinio de la Administración Pública."
    }
   },
   {
@@ -10289,7 +10705,9 @@
     "soria": 4,
     "pav": 4,
     "pcte": 5,
-    "fo": 5
+    "fo": 5,
+    "falange": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -10400,6 +10818,18 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
+     "programa",
+     "2023-07"
+    ],
+    "ph": [
+     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
+     "Programa electoral del Partido Humanista de 2023, p. 19",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -10410,7 +10840,9 @@
     "upc": "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública.",
     "drago": "Propone revertir y terminar con los conciertos con la sanidad privada y las externalizaciones de servicios.",
     "pcte": "Defiende expulsar a las empresas privadas de la sanidad y los servicios sociales.",
-    "fo": "Propone acabar con el proceso de externalización y privatización de la sanidad."
+    "fo": "Propone acabar con el proceso de externalización y privatización de la sanidad.",
+    "falange": "Propone poner fin a las prácticas de externalización y privatización de la sanidad.",
+    "ph": "Sostiene que la solución no es la privatización sino mejorar la gestión pública con transparencia; la salud no puede ser negocio."
    }
   },
   {
@@ -10961,7 +11393,8 @@
     "existe": 3,
     "mes": 2,
     "adel": 2,
-    "fo": 5
+    "fo": 5,
+    "falange": 5
    },
    "est": [
     "salf",
@@ -11032,6 +11465,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -11042,7 +11481,8 @@
     "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
     "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
-    "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud."
+    "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
+    "falange": "Propone unificar el Sistema Nacional de Salud: uno solo para toda España."
    }
   },
   {
@@ -11224,7 +11664,8 @@
     "jmm": 5,
     "upl": 5,
     "soria": 5,
-    "pcte": 5
+    "pcte": 5,
+    "falange": 4
    },
    "est": [
     "pp",
@@ -11298,6 +11739,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 13",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -11309,7 +11756,8 @@
     "bildu": "Pide más control sobre la cadena alimentaria para asegurar precios justos a los productores.",
     "cha": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
     "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
-    "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución."
+    "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
+    "falange": "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario."
    }
   },
   {
@@ -12040,7 +12488,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "falange": 1
    },
    "est": [
     "pacma",
@@ -12139,6 +12588,12 @@
      "Público: Sumar propone reformar el artículo 43 para blindar el aborto (27 feb 2025)",
      "prensa",
      "2025-02-27"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12148,7 +12603,8 @@
     "bng": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
     "ccpc": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
     "comp": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
-    "upc": "Sumar, integrante de UPC, propuso reformar la Constitución para incluir el derecho al aborto."
+    "upc": "Sumar, integrante de UPC, propuso reformar la Constitución para incluir el derecho al aborto.",
+    "falange": "Propone ilegalizar las leyes del aborto y de la eutanasia: la vida humana no es negociable."
    }
   },
   {
@@ -12185,7 +12641,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "falange": 5
    },
    "est": [
     "salf",
@@ -12276,6 +12733,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 101",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12291,7 +12754,8 @@
     "upn": "Votó en contra de la ley orgánica de regulación de la eutanasia en el Congreso y anunció un recurso ante el Tribunal Constitucional.",
     "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     "ccpc": "Votó en contra de la propuesta de Vox para derogar las leyes de eutanasia y aborto, que solo apoyó Vox.",
-    "upc": "Reconoce la necesidad de una muerte digna en coherencia con la Ley de Regulación de la Eutanasia, sin proponer derogarla."
+    "upc": "Reconoce la necesidad de una muerte digna en coherencia con la Ley de Regulación de la Eutanasia, sin proponer derogarla.",
+    "falange": "Propone ilegalizar las leyes que permiten arrebatar la vida, como la del aborto y la eutanasia."
    }
   },
   {
@@ -12328,7 +12792,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "fo": 1
+    "fo": 1,
+    "falange": 1
    },
    "est": [
     "salf",
@@ -12417,6 +12882,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=9",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 9",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12431,7 +12902,8 @@
     "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
     "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
     "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
-    "fo": "Propone la derogación de la Ley Trans."
+    "fo": "Propone la derogación de la Ley Trans.",
+    "falange": "Propone derogar todas las leyes que reconozcan a los colectivos LGTBI."
    }
   },
   {
@@ -12591,7 +13063,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "falange": 1
    },
    "est": [
     "salf",
@@ -12667,6 +13140,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=6",
+     "Programa electoral general de FE de las JONS para las generales de 2023, p. 6",
+     "programa",
+     "2023-07"
     ]
    },
    "why": {
@@ -12679,7 +13158,8 @@
     "bildu": "El grupo de ERC y EH Bildu en el Senado presentó y votó una moción que pedía declarar nulos los acuerdos de 1979 con la Santa Sede, lo que va más allá de revisarlos.",
     "comp": "Propone derogar los acuerdos particulares del Estado con la Santa Sede de 1979 y acabar con la financiación de la Iglesia católica con cargo a los presupuestos.",
     "cha": "Propone derogar de inmediato los Concordatos con la Iglesia católica y suprimir sus privilegios, en particular beneficios y exenciones fiscales.",
-    "pcte": "Defiende la ruptura del concordato con el Vaticano por los privilegios que da a la Iglesia católica."
+    "pcte": "Defiende la ruptura del concordato con el Vaticano por los privilegios que da a la Iglesia católica.",
+    "falange": "Defiende un Estado confesional católico y fomentar el culto católico."
    }
   },
   {

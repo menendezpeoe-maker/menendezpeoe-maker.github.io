@@ -30,7 +30,10 @@
   "soria",
   "pav",
   "pcte",
-  "fo"
+  "fo",
+  "falange",
+  "ie",
+  "ph"
  ],
  "parties": [
   {
@@ -1261,6 +1264,107 @@
     {
      "t": "Centralizar sanidad, educación y emergencias.",
      "q": "C03"
+    }
+   ]
+  },
+  {
+   "id": "falange",
+   "name": "Falange Española de las JONS",
+   "ab": "FE-JONS",
+   "color": "#5A1F1F",
+   "tag": "Nacionalista · falangista",
+   "scope": {
+    "provinces": [
+     "castellon",
+     "cordoba",
+     "guadalajara",
+     "madrid",
+     "palencia",
+     "teruel",
+     "toledo",
+     "valencia",
+     "valladolid"
+    ]
+   },
+   "desc": "Partido falangista. En su programa de 2023 propone disolver las autonomías, nacionalizar la energía, salir de la UE y de la OTAN, un Estado confesional católico y repatriar a los extranjeros sin contrato de trabajo.",
+   "props": [
+    {
+     "t": "Disolver las comunidades autónomas.",
+     "q": "C01"
+    },
+    {
+     "t": "Nacionalizar la energía.",
+     "q": "G05"
+    },
+    {
+     "t": "Salida escalonada y pactada de la UE.",
+     "q": "H02"
+    },
+    {
+     "t": "Precio máximo de los alquileres.",
+     "q": "B01"
+    }
+   ]
+  },
+  {
+   "id": "ie",
+   "name": "Iustitia Europa",
+   "ab": "IE",
+   "color": "#6B5B95",
+   "tag": "Regeneracionista · transversal",
+   "scope": {
+    "provinces": [
+     "madrid"
+    ]
+   },
+   "desc": "Partido que se presenta como ajeno a las ideologías tradicionales. En su Contrato Electoral propone un sistema electoral mayoritario, listas abiertas, que los jueces elijan el CGPJ y referéndums para salir de la UE y de la OTAN.",
+   "props": [
+    {
+     "t": "Sistema mayoritario con distritos uninominales.",
+     "q": "D01"
+    },
+    {
+     "t": "Que los jueces elijan el CGPJ.",
+     "q": "D03"
+    },
+    {
+     "t": "Referéndum para salir de la UE.",
+     "q": "H02"
+    },
+    {
+     "t": "Suprimir las diputaciones provinciales.",
+     "q": "C06"
+    }
+   ]
+  },
+  {
+   "id": "ph",
+   "name": "Partido Humanista",
+   "ab": "PH",
+   "color": "#E07A1F",
+   "tag": "Humanista · no violencia",
+   "scope": {
+    "provinces": [
+     "madrid"
+    ]
+   },
+   "desc": "Partido humanista. En su programa de 2023 propone la salida de la OTAN, reducir el presupuesto militar, educación pública y gratuita en todos los niveles y alquiler social con renta máxima del 30 % de los ingresos.",
+   "props": [
+    {
+     "t": "Salida de España de la OTAN.",
+     "q": "H06"
+    },
+    {
+     "t": "Reducir drásticamente el presupuesto militar.",
+     "q": "H01"
+    },
+    {
+     "t": "Educación pública y gratuita en todos los niveles.",
+     "q": "I02"
+    },
+    {
+     "t": "Alquiler social con renta máxima del 30 % de los ingresos.",
+     "q": "B01"
     }
    ]
   }
