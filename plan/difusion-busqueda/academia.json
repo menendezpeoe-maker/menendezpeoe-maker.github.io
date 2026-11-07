@@ -286,5 +286,23 @@
   "visto_en": "https://fcom.us.es/investigacion/departamento-de-comunicacion-audiovisual-publicidad-y-literatura",
   "uso": "Contacto general de la facultad (sección Contacto)",
   "enfoque": "Comunicación política y alfabetización mediática en clase"
+ },
+ {
+  "nombre": "Institut de Ciències Polítiques i Socials (ICPS)",
+  "perfil": "think-tank",
+  "institucion": "ICPS (Barcelona)",
+  "email": "con.icps@diba.cat",
+  "visto_en": "http://www.icps.cat/recerca/linies-de-treball/comportament-politic-i-electoral",
+  "uso": "Correo de contacto del instituto (pie de la web)",
+  "enfoque": "Centro de estudios de ciencia política: revisión metodológica y comportamiento electoral"
+ },
+ {
+  "nombre": "Lucía Medina - línea Político-electoral (ICPS)",
+  "perfil": "profesor",
+  "institucion": "ICPS (Barcelona)",
+  "email": "medinall@diba.cat",
+  "visto_en": "http://www.icps.cat/recerca/linies-de-treball/comportament-politic-i-electoral",
+  "uso": "Contacto indicado como responsable de la línea de trabajo político-electoral",
+  "enfoque": "Comportamiento político y electoral: revisión del test"
  }
 ]

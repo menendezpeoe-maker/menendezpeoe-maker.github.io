@@ -38,3 +38,73 @@ No es una encuesta ni recomienda voto: solo mide la coincidencia de ideas. Si ve
 Un saludo,
 Dery
 test29n.es@gmail.com
+
+
+## Ampliación (7 nov, búsqueda exhaustiva): 62 destinatarios más
+
+Tres investigadores abrieron la página de contacto de cada entidad; solo entran direcciones que se vieron publicadas para contacto, prensa o colaboraciones. Excluidos: buzones de otro uso (publicidad, atención al espectador), correos de personal administrativo con nombre y los de procedencia dudosa. Sin correo verificable (formulario, 403, bloqueo de red): ver `plan/difusion-busqueda/*-sin-correo.json`.
+
+Tres textos: A (medios), B (organizaciones cívicas, de transparencia y de estudio) y C (academia: revisión metodológica y uso en clase).
+
+- [A] infoLibre: contacta@infolibre.es
+- [A] La Marea: redaccion@lamarea.com
+- [A] CTXT: info@ctxt.es
+- [A] Naiz: arreta@naiz.eus
+- [A] El Crític: info@elcritic.cat
+- [A] El Món: info@mon.cat
+- [A] NacióDigital: naciodigital@naciodigital.cat
+- [A] À Punt Mèdia: contacte@apuntmedia.es
+- [A] Crónica Global: redaccion@cronicaglobal.com
+- [A] Vozpópuli: contacto@vozpopuli.com
+- [A] Ara: politica@ara.cat
+- [A] Civio: contacto@civio.es
+- [A] Público: buzonpublico@publico.es
+- [A] Nuevatribuna: nuevatribuna@nuevatribuna.es
+- [A] Praza.gal: redaccion@praza.com
+- [A] Nós Diario: redaccion@nosdiario.gal
+- [A] Canarias7: redactorweb@canarias7.es
+- [A] Periódico de Ibiza y Formentera: redaccion@periodicodeibiza.es
+- [A] Menorca (Es Diari): redaccion@menorca.info
+- [A] Catalunya Plural: redaccio@periodismeplural.cat
+- [A] Directa: redaccio@directa.cat
+- [A] El Faradio: redaccion@elfaradio.com
+- [B] Consejo de la Juventud de España: info@cje.org
+- [B] Nada es Gratis: info@nadaesgratis.es
+- [B] Hay Derecho: info@hayderecho.com
+- [B] Transparency International España: comunicacion@transparencia.org.es
+- [A] Agenda Pública: info@agendapublica.es
+- [B] Ateneo de Madrid (comunicación): comunicacion@ateneodemadrid.es
+- [B] Access Info Europe: info@access-info.org
+- [A] El Orden Mundial: contacto@elordenmundial.com
+- [B] Plataforma del Voluntariado de España: prensa@plataformavoluntariado.org
+- [B] Fedea: info@fedea.es
+- [B] Fundación Cives (comunicación): comunicacion@fundacioncives.org
+- [C] AECPA - Asociación Española de Ciencia Política y de la Administración: info@aecpa.es
+- [C] Departamento de Ciencia Política y de la Administración (UNED): dptocpol@adm.uned.es
+- [C] Departamento de Sociología y Comunicación (Universidad de Salamanca): dpto.syc@usal.es
+- [C] Departamento de Sociología (Universidad Pablo de Olavide): admonsociologia@upo.es
+- [C] Departamento de Ciencia Política y de la Administración (UCM) - Secretaría administrativa: dp456@ucm.es
+- [A] The Conversation España - línea editorial: edicion@theconversation.com
+- [C] Departament de Ciència Política i Dret Públic (UAB): d.c.politica@uab.cat
+- [C] Departamento de Derecho Constitucional, Ciencia Política y de la Administración (Universitat de València): dep.dret.consticpia@uv.es
+- [C] Departamento de Comunicación Pública - dirección (Universidad de Navarra): mcodina@unav.es
+- [C] Facultad de Comunicación - secretaría (Universidad de Navarra): secretariafcom@unav.es
+- [C] Grupo PART-POL: Constitución y formas de participación política en democracias avanzadas (Universidad de Zaragoza): cgarrido@unizar.es
+- [C] Facultad de Ciencias Políticas y Sociales - decanato (USC): politicas.decanato@usc.gal
+- [C] Ignacio Molina Álvarez de Cienfuegos - director Dpto. Ciencia Política y RR.II. (UAM): ignacio.molina@uam.es
+- [C] Luis Ramiro Fernández (UNED): lramiro@poli.uned.es
+- [C] Irene Delgado Sotillos (UNED): idelgado@poli.uned.es
+- [C] Antonio Manuel Jaime Castillo (UNED): amjaime@poli.uned.es
+- [C] Rubén Ruiz Ramas (UNED): ruben.ruiz@poli.uned.es
+- [C] Área de Ciencia Política y de la Administración (Universidad de Salamanca) - grupos de opinión pública y Democracy Research Unit: politica@usal.es
+- [C] Facultad de Ciencias Políticas y Sociología - decanato (UCM): decanato@cps.ucm.es
+- [C] Grado en Ciencias Políticas - coordinación (UCM): cienciaspoliticas@ucm.es
+- [B] Fundación Civismo: info@civismo.org
+- [C] Departamento de Ciencia Política, Antropología Social y Hacienda Pública (Universidad de Murcia): mimf@um.es
+- [C] Departamento de Ciencia Política, Derecho Internacional Público y Derecho Procesal (Universidad de Málaga): secdpto49@uma.es
+- [B] Institución Futuro: info@ifuturo.org
+- [C] Departamento de Sociología Aplicada (UCM): dp459@ucm.es
+- [C] CEMPOCOR - Medios y Comunicación Política (URJC): gr_inv.cempocor@urjc.es
+- [C] Facultad de Comunicación (Universidad de Sevilla): fcom@us.es
+- [C] Institut de Ciències Polítiques i Socials (ICPS): con.icps@diba.cat
+- [C] Lucía Medina - línea Político-electoral (ICPS): medinall@diba.cat

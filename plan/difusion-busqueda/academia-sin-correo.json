@@ -108,5 +108,25 @@
   "nombre": "Maldita Educa / Newtral Educación",
   "via": "Newtral 403; Maldita sin email visible",
   "url": "https://newtral.es/quienes-somos/"
+ },
+ {
+  "nombre": "Facultad de CC. Políticas y Sociología (UGR)",
+  "via": "email como marcador vacío en la página de contacto",
+  "url": "https://polisocio.ugr.es/facultad/localizacion-contacto"
+ },
+ {
+  "nombre": "OPCAT (UPF)",
+  "via": "403",
+  "url": "https://www.upf.edu/web/opcat"
+ },
+ {
+  "nombre": "IESA-CSIC",
+  "via": "timeout al consultar",
+  "url": "https://www.iesa.csic.es/"
+ },
+ {
+  "nombre": "SEPFI (Sociedad Española de Profesores de Filosofía)",
+  "via": "sin web oficial localizada con correo",
+  "url": ""
  }
 ]
