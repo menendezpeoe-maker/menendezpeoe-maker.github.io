@@ -29,7 +29,8 @@
   "upl",
   "soria",
   "pav",
-  "pcte"
+  "pcte",
+  "fo"
  ],
  "parties": [
   {
@@ -1231,6 +1232,35 @@
     {
      "t": "Ruptura del concordato con la Santa Sede.",
      "q": "L05"
+    }
+   ]
+  },
+  {
+   "id": "fo",
+   "name": "Frente Obrero",
+   "ab": "FO",
+   "color": "#3B4A5A",
+   "tag": "Soberanista · obrerista",
+   "scope": {
+    "all": true
+   },
+   "desc": "Movimiento político que se presenta en toda España. En su programa político de 2026 propone salir de la UE y de la OTAN, reforzar el ejército, ampliar el parque nuclear, centralizar competencias y expulsar a quienes estén de forma irregular.",
+   "props": [
+    {
+     "t": "Salida de España de la Unión Europea.",
+     "q": "H02"
+    },
+    {
+     "t": "Ampliar el parque nuclear.",
+     "q": "G01"
+    },
+    {
+     "t": "Expulsión inmediata de quienes estén de forma irregular.",
+     "q": "F02"
+    },
+    {
+     "t": "Centralizar sanidad, educación y emergencias.",
+     "q": "C03"
     }
    ]
   }

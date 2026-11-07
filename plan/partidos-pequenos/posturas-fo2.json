@@ -1,0 +1,290 @@
+{
+ "meta": {
+  "partido": "Frente Obrero (FO)",
+  "documento": "Programa político del Frente Obrero de 2026 (PDF completo de 64 páginas; el propio documento dice que no pretende ser un programa electoral, sino el programa político del movimiento)",
+  "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf",
+  "fecha": "2026-10",
+  "preguntas_con_postura": 31
+ },
+ "posturas": [
+  {
+   "id": "A03",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado."
+  },
+  {
+   "id": "A05",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=48",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 48",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone revertir el aumento de la edad de jubilación y subir las pensiones mínimas; no propone subir cotizaciones ni impuestos para financiarlo."
+  },
+  {
+   "id": "A10",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos."
+  },
+  {
+   "id": "B04",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional."
+  },
+  {
+   "id": "B08",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=45",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone construir vivienda pública de calidad para aumentar el número de inmuebles existentes y que los trabajadores accedan a una vivienda asequible."
+  },
+  {
+   "id": "C01",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones."
+  },
+  {
+   "id": "C03",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia."
+  },
+  {
+   "id": "C05",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes."
+  },
+  {
+   "id": "C07",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria."
+  },
+  {
+   "id": "C09",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone igualar las competencias y los regímenes fiscales de todas las autonomías, sin citar expresamente el concierto vasco ni el convenio navarro."
+  },
+  {
+   "id": "D03",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=58",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 58",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone priorizar la membresía por carrera judicial en los órganos superiores y suprimir la elección de miembros por el Gobierno."
+  },
+  {
+   "id": "F01",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal."
+  },
+  {
+   "id": "F02",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna."
+  },
+  {
+   "id": "F03",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero."
+  },
+  {
+   "id": "F04",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=52",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 52",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Solo admitiría la llegada de los inmigrantes que requieran las necesidades del país, de contexto europeo o hispanoamericano, y pide reducir la inmigración."
+  },
+  {
+   "id": "G01",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión."
+  },
+  {
+   "id": "G02",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo."
+  },
+  {
+   "id": "G09",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión."
+  },
+  {
+   "id": "H02",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional."
+  },
+  {
+   "id": "H05",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación; no cita el plan de autonomía marroquí."
+  },
+  {
+   "id": "H06",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la salida inmediata de España de la OTAN y reforzar el ejército."
+  },
+  {
+   "id": "H09",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=54",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 54",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone buscar acuerdos con países cercanos para instalar centros de clasificación y deportación fuera de España para quienes intenten entrar ilegalmente."
+  },
+  {
+   "id": "I01",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone eliminar las subvenciones a la escuela privada para fortalecer el sistema público de educación."
+  },
+  {
+   "id": "I02",
+   "valor": 2,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas."
+  },
+  {
+   "id": "I05",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales."
+  },
+  {
+   "id": "J01",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone acabar con el proceso de externalización y privatización de la sanidad."
+  },
+  {
+   "id": "J08",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud."
+  },
+  {
+   "id": "K07",
+   "valor": 4,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=37",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales."
+  },
+  {
+   "id": "L03",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la derogación de la Ley Trans."
+  },
+  {
+   "id": "L04",
+   "valor": 1,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone la prohibición y persecución de la gestación subrogada (vientres de alquiler) a nivel nacional e internacional."
+  },
+  {
+   "id": "L08",
+   "valor": 5,
+   "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+   "etiqueta": "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+   "tipo": "programa",
+   "fecha": "2026-10",
+   "justificacion": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos."
+  }
+ ]
+}

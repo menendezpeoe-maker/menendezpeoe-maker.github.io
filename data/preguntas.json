@@ -506,7 +506,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "fo": 5
    },
    "est": [
     "d21",
@@ -601,6 +602,12 @@
      "Programa electoral de Sumar para el 23J de 2023, p. 16",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -617,7 +624,8 @@
     "salf": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
     "adel": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
     "cha": "Propone recuperar el Impuesto sobre el Patrimonio o sustituirlo por otro que grave la riqueza, además de subir el IRPF a las rentas más altas.",
-    "upc": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados."
+    "upc": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados.",
+    "fo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado."
    }
   },
   {
@@ -1276,7 +1284,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "fo": 2
    },
    "est": [
     "d21",
@@ -1367,6 +1376,12 @@
      "Programa electoral de SALF para Castilla y León, p. 4 (programa autonómico CyL 2026; mismo asunto)",
      "programa",
      "2026-03"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -1382,7 +1397,8 @@
     "adel": "Propone reformar sucesiones sin reducciones, con un mínimo exento de 500.000 euros, en lugar de eliminarlo para herencias entre padres e hijos.",
     "cha": "Propone mantener el impuesto de sucesiones, con exenciones y bonificaciones para la empresa familiar, en lugar de eliminarlo.",
     "upc": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar.",
-    "salf": "El programa autonómico bonifica al 99 % Sucesiones y Donaciones; solo es autonómico, pero respalda su rechazo a gravar herencias."
+    "salf": "El programa autonómico bonifica al 99 % Sucesiones y Donaciones; solo es autonómico, pero respalda su rechazo a gravar herencias.",
+    "fo": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos."
    }
   },
   {
@@ -1901,7 +1917,8 @@
     "cha": 1,
     "mes": 1,
     "adel": 1,
-    "pcte": 1
+    "pcte": 1,
+    "fo": 1
    },
    "est": [
     "salf",
@@ -1981,6 +1998,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -1992,7 +2015,8 @@
     "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
     "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
     "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
-    "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos."
+    "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
+    "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional."
    }
   },
   {
@@ -2400,7 +2424,8 @@
     "adel": 5,
     "jmm": 4,
     "upl": 4,
-    "soria": 4
+    "soria": 4,
+    "fo": 5
    },
    "est": [
     "salf",
@@ -2502,6 +2527,12 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 17",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=45",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -2518,7 +2549,8 @@
     "upc": "El programa de Sumar, socio de UPC, propone crear un parque público de dos millones de viviendas sociales en alquiler.",
     "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone un parque público de dos millones de viviendas sociales en alquiler.",
     "bildu": "EH Bildu propone dedicar los recursos públicos a crear un parque de vivienda pública en alquiler, gestionado desde Euskadi.",
-    "existe": "Propone una política de vivienda pública apoyada en parques públicos y potenciar la vivienda pública de alquiler."
+    "existe": "Propone una política de vivienda pública apoyada en parques públicos y potenciar la vivienda pública de alquiler.",
+    "fo": "Propone construir vivienda pública de calidad para aumentar el número de inmuebles existentes y que los trabajadores accedan a una vivienda asequible."
    }
   },
   {
@@ -2652,7 +2684,8 @@
     "jmm": 1,
     "upl": 1,
     "soria": 1,
-    "pav": 1
+    "pav": 1,
+    "fo": 1
    },
    "est": [
     "pod",
@@ -2725,12 +2758,19 @@
      "Qué!: Otegi (EH Bildu) defiende la financiación singular de Cataluña",
      "declaracion",
      "2024-08-26"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
     "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
-    "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación."
+    "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación.",
+    "fo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones."
    }
   },
   {
@@ -2851,7 +2891,8 @@
     "existe": 2,
     "mes": 1,
     "adel": 1,
-    "upl": 1
+    "upl": 1,
+    "fo": 5
    },
    "est": [
     "pod",
@@ -2959,6 +3000,12 @@
      "Orain (EFE): Barkos traslada a Wert la oposición de Geroa Bai a la LOMCE",
      "prensa",
      "2013-06-27"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -2977,7 +3024,8 @@
     "ccpc": "Coalición Canaria defiende el máximo nivel de autogobierno y competencias para Canarias, no su recentralización.",
     "upc": "Nueva Canarias, socio de UPC, defiende ampliar el autogobierno con más traspasos, no devolver competencias al Estado.",
     "cha": "CHA reclama el máximo techo competencial para Aragón y más traspasos del Estado, no su recentralización.",
-    "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación."
+    "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
+    "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia."
    }
   },
   {
@@ -3130,7 +3178,8 @@
     "jmm": 1,
     "upl": 2,
     "soria": 1,
-    "pav": 1
+    "pav": 1,
+    "fo": 1
    },
    "est": [
     "fa",
@@ -3211,6 +3260,12 @@
      "Programa do BNG para as eleccións xerais de 2023",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -3222,7 +3277,8 @@
     "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
     "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
-    "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación."
+    "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación.",
+    "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes."
    }
   },
   {
@@ -3356,7 +3412,8 @@
     "existe": 1,
     "upl": 1,
     "soria": 1,
-    "pav": 1
+    "pav": 1,
+    "fo": 4
    },
    "est": [
     "pp",
@@ -3392,6 +3449,12 @@
      "«100 medidas para la España viva» de Vox (2019), medida 36",
      "programa",
      "2019-04"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -3399,7 +3462,8 @@
     "fa": "Estimación: no consta una postura verificada de Sumar sobre fusionar o mancomunar por ley los municipios pequeños.",
     "pod": "Estimación: contraria a fusiones obligatorias que alejen servicios de la España rural.",
     "erc": "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria.",
-    "vox": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales."
+    "vox": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales.",
+    "fo": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria."
    }
   },
   {
@@ -5688,7 +5752,8 @@
     "cha": 5,
     "existe": 3,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "fo": 1
    },
    "est": [
     "d21",
@@ -5794,6 +5859,12 @@
      "Programa de Drago Canarias (autonómicas 2023), apartado de migraciones y derechos humanos",
      "programa",
      "2023-05"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -5805,7 +5876,8 @@
     "comp": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España.",
     "upc": "Sumar y Podemos, integrantes de la coalición, apoyaron tramitar la regularización extraordinaria de migrantes.",
     "adel": "Adelante Andalucía pide facilitar la regularización de las personas migrantes en situación irregular.",
-    "drago": "Tacha de injusta la ley de extranjería y recoge la ILP estatal que pide una regularización inmediata."
+    "drago": "Tacha de injusta la ley de extranjería y recoge la ILP estatal que pide una regularización inmediata.",
+    "fo": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal."
    }
   },
   {
@@ -5841,7 +5913,8 @@
     "cha": 1,
     "existe": 2,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "fo": 5
    },
    "est": [
     "d21",
@@ -5927,6 +6000,12 @@
      "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276",
      "programa",
      "2026-04"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -5941,7 +6020,8 @@
     "comp": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España.",
     "pp": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas.",
     "upc": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
-    "adel": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular."
+    "adel": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
+    "fo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna."
    }
   },
   {
@@ -5977,7 +6057,8 @@
     "cha": 1,
     "existe": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "fo": 5
    },
    "est": [
     "salf",
@@ -6087,6 +6168,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026",
      "parlamento",
      "2026-06-25"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -6104,7 +6191,8 @@
     "comp": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "adel": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
     "fa": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
-    "upc": "Nueva Canarias, socio de UPC, rechazó en el Parlamento canario la propuesta de Vox de priorizar a los nacionales en ayudas y servicios."
+    "upc": "Nueva Canarias, socio de UPC, rechazó en el Parlamento canario la propuesta de Vox de priorizar a los nacionales en ayudas y servicios.",
+    "fo": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero."
    }
   },
   {
@@ -6763,7 +6851,8 @@
     "mes": 1,
     "adel": 1,
     "upl": 3,
-    "pav": 3
+    "pav": 3,
+    "fo": 5
    },
    "est": [
     "pacma",
@@ -6877,6 +6966,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 68",
      "programa",
      "2019-05"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -6888,7 +6983,8 @@
     "ccpc": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "comp": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "pacma": "PACMA considera insostenible un modelo energético basado en los combustibles fósiles y la energía nuclear.",
-    "cha": "Propone abandonar progresivamente la energía nuclear y cerrar de inmediato las centrales nucleares peligrosas y obsoletas."
+    "cha": "Propone abandonar progresivamente la energía nuclear y cerrar de inmediato las centrales nucleares peligrosas y obsoletas.",
+    "fo": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión."
    }
   },
   {
@@ -6928,7 +7024,8 @@
     "jmm": 4,
     "upl": 4,
     "soria": 5,
-    "pav": 4
+    "pav": 4,
+    "fo": 4
    },
    "est": [
     "d21",
@@ -7018,6 +7115,12 @@
      "Programa electoral de SALF para Castilla y León, p. 21 (programa autonómico CyL 2026; mismo asunto)",
      "programa",
      "2026-03"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -7031,7 +7134,8 @@
     "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
     "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
     "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
-    "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario."
+    "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
+    "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo."
    }
   },
   {
@@ -7697,7 +7801,8 @@
     "cha": 4,
     "existe": 3,
     "mes": 5,
-    "adel": 4
+    "adel": 4,
+    "fo": 2
    },
    "est": [
     "salf",
@@ -7785,6 +7890,12 @@
      "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 127",
      "programa",
      "2019-04"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -7799,7 +7910,8 @@
     "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
     "vox": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares.",
     "pacma": "Tras el apagón, PACMA propone acompañar las renovables de almacenamiento y control de red; en la página anterior califica de insostenible el modelo basado en combustibles fósiles y energía nuclear.",
-    "comp": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo."
+    "comp": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo.",
+    "fo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión."
    }
   },
   {
@@ -8005,7 +8117,8 @@
     "existe": 3,
     "mes": 3,
     "adel": 2,
-    "pcte": 1
+    "pcte": 1,
+    "fo": 1
    },
    "est": [
     "pod",
@@ -8077,6 +8190,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -8088,7 +8207,8 @@
     "erc": "El programa apuesta por una Europa federal con instituciones más ambiciosas.",
     "pnv": "El programa pide una política europea de inmigración y asilo con tratamiento comunitario, y completar la Unión Bancaria.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, apoyaba avanzar en la integración europea en fiscalidad, defensa y exterior.",
-    "pcte": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas."
+    "pcte": "Exige la salida unilateral de la UE y del euro, a la que considera herramienta de los grandes capitalistas.",
+    "fo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional."
    }
   },
   {
@@ -8374,7 +8494,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "fo": 4
    },
    "est": [
     "salf",
@@ -8483,6 +8604,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -8501,7 +8628,8 @@
     "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
     "upc": "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
     "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara.",
-    "pcte": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía."
+    "pcte": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía.",
+    "fo": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación; no cita el plan de autonomía marroquí."
    }
   },
   {
@@ -8537,7 +8665,8 @@
     "cha": 2,
     "mes": 2,
     "adel": 1,
-    "pcte": 1
+    "pcte": 1,
+    "fo": 1
    },
    "est": [
     "salf",
@@ -8631,6 +8760,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -8645,7 +8780,8 @@
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
     "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN.",
-    "pcte": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras."
+    "pcte": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras.",
+    "fo": "Propone la salida inmediata de España de la OTAN y reforzar el ejército."
    }
   },
   {
@@ -9032,7 +9168,8 @@
     "cha": 1,
     "mes": 1,
     "adel": 1,
-    "pcte": 1
+    "pcte": 1,
+    "fo": 1
    },
    "est": [
     "salf",
@@ -9153,6 +9290,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -9166,7 +9309,8 @@
     "cha": "CHA propone eliminar progresivamente los conciertos educativos con centros privados.",
     "pnv": "El PNV propuso aumentar la financiación pública de la red concertada en los presupuestos vascos.",
     "upc": "Propone revisar los conciertos educativos para que la red concertada sea subsidiaria de la pública y acabar con la cesión de suelo público.",
-    "pcte": "Defiende expulsar a todas las empresas privadas de la educación, lo que incluye la escuela concertada."
+    "pcte": "Defiende expulsar a todas las empresas privadas de la educación, lo que incluye la escuela concertada.",
+    "fo": "Propone eliminar las subvenciones a la escuela privada para fortalecer el sistema público de educación."
    }
   },
   {
@@ -9202,7 +9346,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "pcte": 5
+    "pcte": 5,
+    "fo": 2
    },
    "est": [
     "vox",
@@ -9268,6 +9413,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 7",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -9278,7 +9429,8 @@
     "erc": "El programa propone avanzar hacia la gratuidad universitaria.",
     "comp": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
     "adel": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública.",
-    "pcte": "Aspira a un sistema de enseñanza único, público y gratuito."
+    "pcte": "Aspira a un sistema de enseñanza único, público y gratuito.",
+    "fo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas."
    }
   },
   {
@@ -9467,7 +9619,8 @@
     "bng": 1,
     "comp": 1,
     "cha": 1,
-    "mes": 1
+    "mes": 1,
+    "fo": 4
    },
    "est": [
     "fa",
@@ -9552,6 +9705,12 @@
      "Moncloa.com (agencias): el Congreso rechaza la proposición no de ley de Vox para garantizar el derecho a estudiar en castellano (19 de noviembre de 2020)",
      "parlamento",
      "2020-11-19"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -9566,7 +9725,8 @@
     "comp": "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
     "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
     "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
-    "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular."
+    "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular.",
+    "fo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales."
    }
   },
   {
@@ -10128,7 +10288,8 @@
     "upl": 4,
     "soria": 4,
     "pav": 4,
-    "pcte": 5
+    "pcte": 5,
+    "fo": 5
    },
    "est": [
     "salf",
@@ -10233,6 +10394,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -10242,7 +10409,8 @@
     "adel": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
     "upc": "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública.",
     "drago": "Propone revertir y terminar con los conciertos con la sanidad privada y las externalizaciones de servicios.",
-    "pcte": "Defiende expulsar a las empresas privadas de la sanidad y los servicios sociales."
+    "pcte": "Defiende expulsar a las empresas privadas de la sanidad y los servicios sociales.",
+    "fo": "Propone acabar con el proceso de externalización y privatización de la sanidad."
    }
   },
   {
@@ -10792,7 +10960,8 @@
     "cha": 2,
     "existe": 3,
     "mes": 2,
-    "adel": 2
+    "adel": 2,
+    "fo": 5
    },
    "est": [
     "salf",
@@ -10857,6 +11026,12 @@
      "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 94",
      "programa",
      "2019-10"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -10866,7 +11041,8 @@
     "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
     "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
-    "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias."
+    "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
+    "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud."
    }
   },
   {
@@ -11646,7 +11822,8 @@
     "jmm": 4,
     "upl": 5,
     "soria": 4,
-    "pav": 5
+    "pav": 5,
+    "fo": 4
    },
    "est": [
     "fa",
@@ -11701,6 +11878,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 251",
      "programa",
      "2026-04"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=37",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -11709,7 +11892,8 @@
     "vox": "El programa de Vox defiende la caza como actividad esencial para el medio rural y propone una licencia única.",
     "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley.",
     "pacma": "PACMA se opone a la caza y niega que sea necesaria para la gestión del medio.",
-    "adel": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética."
+    "adel": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
+    "fo": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales."
    }
   },
   {
@@ -12143,7 +12327,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "fo": 1
    },
    "est": [
     "salf",
@@ -12226,6 +12411,12 @@
      "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022",
      "parlamento",
      "2022-12-22"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -12239,7 +12430,8 @@
     "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
     "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
     "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
-    "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos."
+    "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
+    "fo": "Propone la derogación de la Ley Trans."
    }
   },
   {
@@ -12271,7 +12463,8 @@
     "drago": 1,
     "comp": 1,
     "adel": 1,
-    "pcte": 1
+    "pcte": 1,
+    "fo": 1
    },
    "est": [
     "salf",
@@ -12342,6 +12535,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 17",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -12354,7 +12553,8 @@
     "fa": "Sumar, principal fuerza del Frente Amplio, se opone a la gestación subrogada.",
     "adel": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal.",
     "bildu": "EH Bildu rechaza los «úteros de alquiler» pero defiende regular la gestación por sustitución gratuita y pública, con la mujer decidiendo sobre su cuerpo.",
-    "pcte": "Propone prohibir la prostitución y seguir considerando ilegal la gestación subrogada."
+    "pcte": "Propone prohibir la prostitución y seguir considerando ilegal la gestación subrogada.",
+    "fo": "Propone la prohibición y persecución de la gestación subrogada (vientres de alquiler) a nivel nacional e internacional."
    }
   },
   {
@@ -12676,7 +12876,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "fo": 5
    },
    "est": [
     "salf",
@@ -12752,6 +12953,12 @@
      "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 21",
      "programa",
      "2019-05"
+    ],
+    "fo": [
+     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -12764,7 +12971,8 @@
     "junts": "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí».",
     "pacma": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres.",
     "bildu": "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas.",
-    "cha": "Propone listas electorales desbloqueadas con un sistema que permita respetar la paridad de sexos, es decir, mantener la paridad."
+    "cha": "Propone listas electorales desbloqueadas con un sistema que permita respetar la paridad de sexos, es decir, mantener la paridad.",
+    "fo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos."
    }
   },
   {

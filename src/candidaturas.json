@@ -13,7 +13,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Adrián Moreno Contreras"
+    "cab": "Adrián Moreno Contreras",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -58,7 +59,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Rodrigo Pastor García"
+    "cab": "Rodrigo Pastor García",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
@@ -103,7 +105,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Emilio Gustavo Icasati Weidemüller"
+    "cab": "Emilio Gustavo Icasati Weidemüller",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -200,7 +203,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Laura Barrenengoa Clemente"
+    "cab": "Laura Barrenengoa Clemente",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -224,7 +228,8 @@
   "asturias": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Juan Sánchez Pérez"
+    "cab": "Juan Sánchez Pérez",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -292,7 +297,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Jorge Moyano García"
+    "cab": "Jorge Moyano García",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -342,7 +348,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Yago De Francisco González"
+    "cab": "Yago De Francisco González",
+    "pid": "fo"
    },
    {
     "c": "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)",
@@ -371,7 +378,8 @@
   "baleares": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Selva Lucía Belmaña López"
+    "cab": "Selva Lucía Belmaña López",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)",
@@ -422,7 +430,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Daniel Carro Peralta"
+    "cab": "Daniel Carro Peralta",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -500,7 +509,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Oscar García Riesgo"
+    "cab": "Oscar García Riesgo",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -515,7 +525,8 @@
   "burgos": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Gonzalo Herrero Burgos"
+    "cab": "Gonzalo Herrero Burgos",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -580,7 +591,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Mónica Pérez Gaite"
+    "cab": "Mónica Pérez Gaite",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -610,7 +622,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Juan Vicente Parra Piñero"
+    "cab": "Juan Vicente Parra Piñero",
+    "pid": "fo"
    },
    {
     "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
@@ -665,7 +678,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Raúl Díaz Roces"
+    "cab": "Raúl Díaz Roces",
+    "pid": "fo"
    },
    {
     "c": "PODEMOS (PODEMOS)",
@@ -705,7 +719,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "David Fuentes Pinazo"
+    "cab": "David Fuentes Pinazo",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -750,7 +765,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Raúl Abengozar Galán"
+    "cab": "Raúl Abengozar Galán",
+    "pid": "fo"
    },
    {
     "c": "VOX (VOX)",
@@ -781,7 +797,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Angel Molina Ruiz"
+    "cab": "Angel Molina Ruiz",
+    "pid": "fo"
    },
    {
     "c": "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
@@ -864,7 +881,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Joel Novoa Arias"
+    "cab": "Joel Novoa Arias",
+    "pid": "fo"
    },
    {
     "c": "PODEMOS (PODEMOS)",
@@ -880,7 +898,8 @@
   "cuenca": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Adrián Tabasco Bonilla"
+    "cab": "Adrián Tabasco Bonilla",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -950,7 +969,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Leire Orbañanos Martínez"
+    "cab": "Leire Orbañanos Martínez",
+    "pid": "fo"
    },
    {
     "c": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
@@ -989,7 +1009,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Ivan Arroyo Laguna"
+    "cab": "Ivan Arroyo Laguna",
+    "pid": "fo"
    },
    {
     "c": "JUNTS PER CATALUNYA (JxCat)",
@@ -1033,7 +1054,8 @@
   "granada": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Raúl Domínguez Rincón"
+    "cab": "Raúl Domínguez Rincón",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -1088,7 +1110,8 @@
   "guadalajara": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Carlos Calvo Fernández"
+    "cab": "Carlos Calvo Fernández",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -1137,7 +1160,8 @@
   "huelva": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Rafael Vicente Frías Ranea"
+    "cab": "Rafael Vicente Frías Ranea",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA DE HUELVA (PSOE)",
@@ -1193,7 +1217,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Abel Escribano Bonacho"
+    "cab": "Abel Escribano Bonacho",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -1242,7 +1267,8 @@
   "jaen": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Erika Villegas Ruiz"
+    "cab": "Erika Villegas Ruiz",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -1302,7 +1328,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "José Manuel Estébanez Fernández"
+    "cab": "José Manuel Estébanez Fernández",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
@@ -1365,7 +1392,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Albert Balasch Roque"
+    "cab": "Albert Balasch Roque",
+    "pid": "fo"
    },
    {
     "c": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
@@ -1419,7 +1447,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Víctor Contreras Céspedes"
+    "cab": "Víctor Contreras Céspedes",
+    "pid": "fo"
    },
    {
     "c": "BLOQUE NACIONALISTA GALEGO (BNG)",
@@ -1445,7 +1474,8 @@
   "madrid": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Roberto Vaquero Arribas"
+    "cab": "Roberto Vaquero Arribas",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -1512,7 +1542,8 @@
   "malaga": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Nicolás Navarro Ramírez"
+    "cab": "Nicolás Navarro Ramírez",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -1563,7 +1594,8 @@
   "murcia": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Luis Pons Burgueros"
+    "cab": "Luis Pons Burgueros",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -1617,7 +1649,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Nerea León Miranda"
+    "cab": "Nerea León Miranda",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
@@ -1681,7 +1714,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Laia González Gandia"
+    "cab": "Laia González Gandia",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
@@ -1754,7 +1788,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Yeray Yáñez Ibáñez"
+    "cab": "Yeray Yáñez Ibáñez",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO POPULAR (PP)",
@@ -1797,7 +1832,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Jorge García Cantarero"
+    "cab": "Jorge García Cantarero",
+    "pid": "fo"
    },
    {
     "c": "VOX (VOX)",
@@ -1845,7 +1881,8 @@
   "pontevedra": [
    {
     "c": "Frente Obrero (FO)",
-    "cab": "Xose Luis García Pazos"
+    "cab": "Xose Luis García Pazos",
+    "pid": "fo"
    },
    {
     "c": "VOX (VOX)",
@@ -1899,7 +1936,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Francisco Martínez Díaz"
+    "cab": "Francisco Martínez Díaz",
+    "pid": "fo"
    },
    {
     "c": "SE ACABO LA FIESTA (SALF)",
@@ -1944,7 +1982,8 @@
   "salamanca": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Marco Pedro Pérez Graña"
+    "cab": "Marco Pedro Pérez Graña",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -2019,7 +2058,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Antonio Coy García"
+    "cab": "Antonio Coy García",
+    "pid": "fo"
    },
    {
     "c": "VOX (VOX)",
@@ -2048,7 +2088,8 @@
   "segovia": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Pablo de Mercado Alcalde"
+    "cab": "Pablo de Mercado Alcalde",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -2098,7 +2139,8 @@
   "sevilla": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Alejandro Rodríguez Prieto"
+    "cab": "Alejandro Rodríguez Prieto",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -2153,7 +2195,8 @@
   "soria": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Diego Gallardo de la Fuente"
+    "cab": "Diego Gallardo de la Fuente",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -2217,7 +2260,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Olga Donaire Muñoz"
+    "cab": "Olga Donaire Muñoz",
+    "pid": "fo"
    },
    {
     "c": "JUNTS PER CATALUNYA (JxCat)",
@@ -2274,7 +2318,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Alba Waitara Casanova Collado"
+    "cab": "Alba Waitara Casanova Collado",
+    "pid": "fo"
    },
    {
     "c": "VOX (VOX)",
@@ -2324,7 +2369,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Cristina Martínez Ortega"
+    "cab": "Cristina Martínez Ortega",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -2369,7 +2415,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Carmen López Manzano"
+    "cab": "Carmen López Manzano",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
@@ -2430,7 +2477,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Alejandro López De Diego"
+    "cab": "Alejandro López De Diego",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -2521,7 +2569,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Francisco Ramos Orgaz"
+    "cab": "Francisco Ramos Orgaz",
+    "pid": "fo"
    },
    {
     "c": "Frente Amplio (FA)",
@@ -2532,7 +2581,8 @@
   "zaragoza": [
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "Samuel Pelayo Fosch"
+    "cab": "Samuel Pelayo Fosch",
+    "pid": "fo"
    },
    {
     "c": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
@@ -2606,7 +2656,8 @@
    },
    {
     "c": "FRENTE OBRERO",
-    "cab": "Manuel Marcos Vidal Tejada"
+    "cab": "Manuel Marcos Vidal Tejada",
+    "pid": "fo"
    }
   ],
   "melilla": [
@@ -2617,7 +2668,8 @@
    },
    {
     "c": "FRENTE OBRERO (FO)",
-    "cab": "David Vidal Mas"
+    "cab": "David Vidal Mas",
+    "pid": "fo"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",

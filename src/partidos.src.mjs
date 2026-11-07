@@ -12,7 +12,7 @@
 // props: [propuesta, código de la pregunta relacionada o null].
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
-export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte"];
+export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo"];
 
 export const PARTIES = [
  { id: "psoe", name: "PSOE", ab: "PSOE", color: "#E30613", tag: "Socialdemocracia · centroizquierda", lead: "Pedro Sánchez",
@@ -270,6 +270,13 @@ export const PARTIES = [
      ["Salida unilateral de la OTAN y cierre de las bases extranjeras.","H06"],
      ["Salida de la UE y del euro.","H02"],
      ["Ruptura del concordato con la Santa Sede.","L05"]] },
+ { id: "fo", name: "Frente Obrero", ab: "FO", color: "#3B4A5A", tag: "Soberanista · obrerista",
+   scope: { all: true },
+   desc: "Movimiento político que se presenta en toda España. En su programa político de 2026 propone salir de la UE y de la OTAN, reforzar el ejército, ampliar el parque nuclear, centralizar competencias y expulsar a quienes estén de forma irregular.",
+   props: [["Salida de España de la Unión Europea.","H02"],
+     ["Ampliar el parque nuclear.","G01"],
+     ["Expulsión inmediata de quienes estén de forma irregular.","F02"],
+     ["Centralizar sanidad, educación y emergencias.","C03"]] },
 ];
 
 export const REGIONS = [
