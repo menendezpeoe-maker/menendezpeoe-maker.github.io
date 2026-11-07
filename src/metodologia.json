@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-03",
- "datos": "2026-11-03",
+ "generado": "2026-11-07",
+ "datos": "2026-11-07",
  "preguntas": 107,
  "imitacion": {
   "total": 24,
@@ -46,7 +46,7 @@
     "pid": "pacma",
     "prov": "madrid",
     "primero": true,
-    "pct": 77
+    "pct": 82
    },
    {
     "pid": "d21",
@@ -163,26 +163,30 @@
    },
    {
     "pid": "pp",
-    "n": 83
+    "n": 86
    },
    {
     "pid": "d21",
-    "n": 66
+    "n": 65
    },
    {
     "pid": "fa",
-    "n": 23
+    "n": 19
    },
    {
     "pid": "vox",
-    "n": 9
+    "n": 10
    },
    {
     "pid": "salf",
-    "n": 7
+    "n": 5
    },
    {
     "pid": "pod",
+    "n": 3
+   },
+   {
+    "pid": "pacma",
     "n": 1
    }
   ],
@@ -196,7 +200,7 @@
   },
   {
    "pid": "pp",
-   "pct": 68
+   "pct": 69
   },
   {
    "pid": "psoe",
@@ -219,32 +223,32 @@
   {
    "pid": "psoe",
    "conocidas": 107,
-   "estimadas": 14,
-   "conFuente": 93
+   "estimadas": 10,
+   "conFuente": 97
   },
   {
    "pid": "pp",
    "conocidas": 107,
-   "estimadas": 21,
-   "conFuente": 87
+   "estimadas": 16,
+   "conFuente": 92
   },
   {
    "pid": "vox",
    "conocidas": 107,
-   "estimadas": 29,
-   "conFuente": 79
+   "estimadas": 23,
+   "conFuente": 85
   },
   {
    "pid": "fa",
    "conocidas": 107,
-   "estimadas": 21,
-   "conFuente": 88
+   "estimadas": 17,
+   "conFuente": 92
   },
   {
    "pid": "pod",
    "conocidas": 107,
-   "estimadas": 40,
-   "conFuente": 67
+   "estimadas": 31,
+   "conFuente": 76
   },
   {
    "pid": "salf",
@@ -255,8 +259,8 @@
   {
    "pid": "pacma",
    "conocidas": 26,
-   "estimadas": 20,
-   "conFuente": 7
+   "estimadas": 12,
+   "conFuente": 15
   },
   {
    "pid": "d21",
@@ -267,8 +271,8 @@
   {
    "pid": "erc",
    "conocidas": 104,
-   "estimadas": 40,
-   "conFuente": 64
+   "estimadas": 32,
+   "conFuente": 72
   },
   {
    "pid": "junts",
@@ -285,8 +289,8 @@
   {
    "pid": "bildu",
    "conocidas": 102,
-   "estimadas": 51,
-   "conFuente": 52
+   "estimadas": 42,
+   "conFuente": 61
   },
   {
    "pid": "upn",
