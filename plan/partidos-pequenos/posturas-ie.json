@@ -1,0 +1,136 @@
+{
+ "partido": "Iustitia Europa (IE; proclamado en Madrid)",
+ "documento": "Contrato Electoral de Iustitia Europa (15 bloques, 28 páginas). Es el documento de las generales del 29N de 2026 según la prensa, pero el PDF no imprime año; los metadatos del PDF dan creación en diciembre de 2025. Texto idéntico (29/29 páginas) al PDF aportado por el titular. Firma el prólogo Luis María Pardo.",
+ "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf",
+ "url_verificada": "Descargada el 2026-11-07 desde https://iustitiaeuropa.es/contrato-electoral/ (enlace «descarga aquí tu contrato»); 28 páginas; el texto extraído coincide página a página con el PDF del titular.",
+ "fecha": "2025-12",
+ "preguntas_con_postura": 14,
+ "posturas": [
+  {
+   "id": "B01",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone eliminar las políticas de control de alquiler por ineficaces y por haber reducido la oferta."
+  },
+  {
+   "id": "B03",
+   "valor": 5,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone desalojo inmediato de okupas, en menos de 24 horas desde la denuncia, con penas más duras."
+  },
+  {
+   "id": "C06",
+   "valor": 5,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto."
+  },
+  {
+   "id": "D01",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales."
+  },
+  {
+   "id": "D02",
+   "valor": 5,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone listas abiertas y elección directa de diputados y senadores, sin listas cerradas."
+  },
+  {
+   "id": "D03",
+   "valor": 5,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=10",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 10",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone que el CGPJ lo elijan por sufragio directo y secreto los propios jueces y magistrados en activo."
+  },
+  {
+   "id": "E05",
+   "valor": 4,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 26",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Rechaza el control social mediante el euro digital, el control biométrico y los reconocimientos faciales."
+  },
+  {
+   "id": "E07",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=12",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone blindar en la Constitución la acción popular y prohibir cualquier restricción a su ejercicio."
+  },
+  {
+   "id": "F01",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Rechaza regularizar: quien entre ilegalmente será expulsado sin derecho a regularización."
+  },
+  {
+   "id": "F02",
+   "valor": 5,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos."
+  },
+  {
+   "id": "G02",
+   "valor": 4,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones."
+  },
+  {
+   "id": "G09",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables."
+  },
+  {
+   "id": "H02",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE."
+  },
+  {
+   "id": "H06",
+   "valor": 1,
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14",
+   "etiqueta": "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 14",
+   "tipo": "programa",
+   "fecha": "2025-12",
+   "justificacion": "Propone referéndum vinculante para salir de la OTAN y reclama la neutralidad de España."
+  }
+ ]
+}
