@@ -128,3 +128,8 @@ El envío pasa del sábado 7 nov 09:00 al **martes 10 nov a las 9:30 (Madrid)**:
 ## Fecha de envío movida otra vez (8 nov)
 
 Del martes 10 al **jueves 12 de noviembre a las 9:30 (Madrid)**: el miércoles 11 hay huelga general (CCOO y UGT; el 10 ya hay paros parciales de SEMAF en Renfe) y la prensa estará saturada el martes y el miércoles. El jueves 12 es el día anterior al inicio de campaña (13 nov) y al debate de economía de laSexta (13, 21:30), cuando los medios preparan contenido de campaña. Termina hacia las 10:57. Tarea: trig_0197JWodrcTp9J2NvprDXGkX.
+
+
+## Fecha de envío adelantada (8 nov, decisión del titular)
+
+El titular quiere adelantarse a otros tests. Se envía el **lunes 9 de noviembre a las 8:00 (Madrid)**: lo más temprano útil (fin de semana las redacciones y universidades están vacías) y antes de que abran las oficinas, para que el correo llegue antes de la bandeja del lunes. Termina hacia las 9:27. Tarea: trig_0197JWodrcTp9J2NvprDXGkX.
