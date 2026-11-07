@@ -1576,6 +1576,7 @@ function renderParties() {
     </dl></div>
     <div class="rank-tabs" role="group" aria-label="Ámbito del ranking"><button type="button" data-scope="prov" aria-pressed="${UI.scope === "prov"}">${esc(pr.name)} (${M.prov.length})</button><button type="button" data-scope="all" aria-pressed="${UI.scope === "all"}">Toda España (${M.all.length})</button></div>
     <p class="small muted">${UI.scope === "prov" ? (M.prov.length < 10 ? `En ${esc(pr.name)} se presentan ${M.prov.length} candidaturas. Cambia a «Toda España» para ver tu top 10 con partidos de otros territorios.` : `Las 10 candidaturas de ${esc(pr.name)} con más coincidencia.`) : "Las candidaturas que no se presentan en tu provincia aparecen atenuadas."}</p>
+    <p class="small muted">En ${esc(pr.name)} se han proclamado también otras candidaturas que aún no están en el test porque no tenemos sus posturas con fuente. <a href="/provincias/${esc(st.prov)}/#h-boe">Ver todas las candidaturas proclamadas en ${esc(pr.name)}</a>.</p>
     <ol class="rank">${rows}</ol>
     <div class="sec-head" style="padding-top:20px"><h3 class="h2" style="font-size:clamp(21px,3vw,27px)">Tu top 3 en ${esc(pr.name)}, en detalle</h3><p class="sub">Por qué coincides, sus propuestas comparadas con tus respuestas y dónde chocáis.</p></div>
     <div class="pcards">${M.prov.slice(0, 3).map((m, i) => partyCard(m, i)).join("")}</div>
