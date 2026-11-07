@@ -1,4 +1,5 @@
-// Pruebas de «¿Te ha resultado útil el test?» (Apple Pay, banco) y del aviso legal. PayPal se retiró el 7 nov 2026.
+// Pruebas de «¿Te ha resultado útil el test?» (Apple Pay, banco) y del aviso legal. PayPal y Apple Pay se retiraron el 7 nov 2026
+// (sin aportaciones no hay actividad económica que identificar con nombre y domicilio): la configuración publicada no tiene ninguna opción.
 // Uso: NODE_PATH=$(npm root -g) node qa/support.mjs   (BASE para otra URL)
 // Apple Pay y banco se prueban sustituyendo su configuración solo en esta prueba, con enlaces de Stripe
 // que se interceptan y nunca salen a internet.
@@ -42,7 +43,7 @@ async function open({ w = 1100, cfg = null, apple = false, tag = "" } = {}) {
 const ranking = (page) => page.$$eval("#r-parties .rank li", (els) => els.map((e) => e.innerText).join("|"));
 const buttons = (page) => page.$$eval("#r-support a.btn", (as) => as.map((a) => ({ t: a.firstChild.textContent, href: a.getAttribute("href"), target: a.target, rel: a.rel })));
 
-console.log("Configuración publicada · navegador sin Apple Pay (PayPal retirado el 7 nov)");
+console.log("Configuración publicada · sin aportaciones (retiradas el 7 nov)");
 let base;
 {
   const { ctx, page } = await open({ tag: "sin-apple" });
@@ -54,9 +55,9 @@ let base;
   await page.click("footer [data-anchor='m-priv']");
   await page.waitForSelector("#v-method:not([hidden])");
   const m = await page.innerText("#m-priv");
-  ok(!/PayPal/.test(m) && m.includes("Stripe") && m.includes("no recibe ni guarda datos de pago"), "aviso legal con Stripe y sin PayPal");
+  ok(!/PayPal|Stripe/.test(m), "aviso legal sin PayPal ni Stripe cuando no hay aportaciones");
   ok(!(await page.innerText("#v-method")).includes("Versión y cambios"), "sin «Versión y cambios»");
-  ok(m.includes("Stripe (Apple Pay)") && !m.includes("Bizum"), "solo nombra los métodos activos");
+  ok(!m.includes("Stripe") && m.includes("no acepta aportaciones ni patrocinios") && m.includes("Tus derechos") && m.includes("aepd.es"), "sin aportaciones: lo dice, y el aviso incluye derechos y AEPD");
   ok(m.includes("Responsable: Dery · Contacto: test29n.es@gmail.com"), "responsable y contacto públicos");
   // Los datos privados que no deben aparecer se pasan fuera del repositorio: PRIVATE_TERMS="término1,término2"
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((t) => t.trim().toLowerCase()).filter(Boolean);
@@ -66,9 +67,16 @@ let base;
   await ctx.close();
 }
 
-console.log("Configuración publicada · dispositivo con Apple Pay");
+console.log("Configuración publicada · dispositivo con Apple Pay: no aparece nada");
 {
-  const { ctx, page } = await open({ apple: true, tag: "apple-real" });
+  const { ctx, page } = await open({ apple: true, tag: "apple-publicada" });
+  ok(await page.isHidden("#r-support"), "aunque haya Apple Pay, la web publicada no muestra la sección de apoyo");
+  await ctx.close();
+}
+
+console.log("Con Apple Pay configurado (solo en la prueba)");
+{
+  const { ctx, page } = await open({ apple: true, cfg: { applePay: APPLE }, tag: "apple-real" });
   const sec = page.locator("#r-support");
   ok(await sec.isVisible(), "con Apple Pay, la sección es visible");
   ok((await sec.locator("h2").textContent()) === "¿Te ha resultado útil el test?", "título");
@@ -86,7 +94,7 @@ console.log("Configuración publicada · dispositivo con Apple Pay");
 console.log("Con banco configurado (solo en la prueba)");
 for (const [w, apple] of [[390, true], [1280, true], [1280, false]]) {
   const tag = `${w}px ${apple ? "Apple" : "sin Apple Pay"}`;
-  const { ctx, page } = await open({ w, apple, cfg: { bank: FAKE_BANK }, tag });
+  const { ctx, page } = await open({ w, apple, cfg: { bank: FAKE_BANK, applePay: APPLE }, tag });
   const b = await buttons(page);
   const want = apple ? ["Donar con Apple Pay", "Donar mediante tu banco"] : ["Donar mediante tu banco"];
   ok(JSON.stringify(b.map((x) => x.t)) === JSON.stringify(want), `${tag}: opciones ${want.join(", ")}`);
@@ -102,7 +110,7 @@ for (const [w, apple] of [[390, true], [1280, true], [1280, false]]) {
   ok(await page.isVisible("#r-support") && !(await page.innerText("#v-results")).match(/gracias por tu (aportación|donación)|pago completado/i), `${tag}: la web no da ningún pago por hecho`);
   if (w === 1280 && apple) {
     await page.click("footer [data-anchor='m-priv']");
-    ok((await page.innerText("#m-priv")).includes("Stripe (Apple Pay y Bizum)"), "aviso legal menciona Bizum solo cuando está configurado");
+    ok((await page.innerText("#m-priv")).includes("Stripe (Apple Pay y Bizum)"), "aviso legal menciona Apple Pay y Bizum solo cuando están configurados");
   }
   await ctx.close();
 }

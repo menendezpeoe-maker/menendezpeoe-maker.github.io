@@ -29,7 +29,7 @@ async function open({ code = CODE, real = false } = {}) {
     const u = new URL(route.request().url());
     const r = await fetch(LOCAL + u.pathname + u.search);
     let body = Buffer.from(await r.arrayBuffer());
-    if (u.pathname.endsWith("papeleta.js")) body = Buffer.from(body.toString().replace(/goatcounter: "[^"]*"/, `goatcounter: ${JSON.stringify(code)}`));
+    if (u.pathname.endsWith("papeleta.js")) body = Buffer.from(body.toString().replace(/goatcounter: "[^"]*"/, `goatcounter: ${JSON.stringify(code)}`).replace(/applePay: ""/, 'applePay: "https://buy.stripe.com/prueba_apple"'));
     await route.fulfill({ status: r.status, headers: { "content-type": r.headers.get("content-type") || "text/html" }, body });
   });
   await ctx.route("https://*.goatcounter.com/**", (route) => { hits.push(new URL(route.request().url())); route.fulfill({ status: 200, contentType: "image/gif", body: Buffer.from("R0lGODlhAQABAAAAACw=", "base64") }); });
@@ -56,8 +56,11 @@ console.log("Visitas y pasos del test");
   await page.reload(); await page.waitForSelector("#r-pols"); await page.waitForTimeout(300);
   ok(paths(hits).filter((p) => p === "test-terminado").length === 1, "volver a abrir los resultados no lo cuenta otra vez");
   ok(clean(hits), "nunca se envían respuestas, provincia, sexo, partido ni el enlace con respuestas");
-  await page.click("#r-support a.btn").catch(() => {}); await page.waitForTimeout(300);
-  ok(paths(hits).includes("donar-apple-pay"), "un clic en donar se cuenta, sin datos del test");
+  // Las aportaciones se retiraron el 7 nov: en la web real no hay botón; en local se simula un enlace solo para probar el contador
+  if (await page.locator("#r-support a.btn").count()) {
+    await page.click("#r-support a.btn").catch(() => {}); await page.waitForTimeout(300);
+    ok(paths(hits).includes("donar-apple-pay"), "un clic en donar se cuenta, sin datos del test");
+  } else ok(true, "sin aportaciones publicadas, no hay botón de donar que contar");
   await page.click(".head-nav [data-go='method']");
   ok(/GoatCounter/.test(await page.innerText("#m-priv")) && !/Sin cookies, analítica/.test(await page.innerText("#m-priv")), "el aviso de privacidad explica el contador");
   await ctx.close();
