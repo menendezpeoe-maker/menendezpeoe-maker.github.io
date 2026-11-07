@@ -88,25 +88,25 @@
     "pid": "pacma",
     "prov": "madrid",
     "primero": true,
-    "pct": 82
+    "pct": 85
    },
    {
     "pid": "fo",
     "prov": "madrid",
     "primero": true,
-    "pct": 88
+    "pct": 95
    },
    {
     "pid": "pcte",
     "prov": "almeria",
     "primero": true,
-    "pct": 82
+    "pct": 87
    },
    {
     "pid": "falange",
     "prov": "cordoba",
     "primero": true,
-    "pct": 94
+    "pct": 97
    },
    {
     "pid": "d21",
@@ -136,7 +136,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 87
+    "pct": 88
    },
    {
     "pid": "upc",
@@ -172,13 +172,13 @@
     "pid": "ph",
     "prov": "madrid",
     "primero": true,
-    "pct": 72
+    "pct": 81
    },
    {
     "pid": "ie",
     "prov": "madrid",
     "primero": true,
-    "pct": 72
+    "pct": 79
    }
   ]
  },
@@ -189,31 +189,39 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 108
+    "n": 102
    },
    {
     "pid": "pp",
-    "n": 85
+    "n": 81
    },
    {
     "pid": "d21",
-    "n": 63
+    "n": 59
    },
    {
     "pid": "fa",
-    "n": 19
-   },
-   {
-    "pid": "vox",
-    "n": 7
-   },
-   {
-    "pid": "salf",
-    "n": 7
+    "n": 17
    },
    {
     "pid": "fo",
-    "n": 4
+    "n": 17
+   },
+   {
+    "pid": "vox",
+    "n": 6
+   },
+   {
+    "pid": "salf",
+    "n": 5
+   },
+   {
+    "pid": "falange",
+    "n": 5
+   },
+   {
+    "pid": "ph",
+    "n": 2
    },
    {
     "pid": "pcte",
@@ -224,11 +232,11 @@
     "n": 2
    },
    {
-    "pid": "falange",
-    "n": 2
+    "pid": "pod",
+    "n": 1
    },
    {
-    "pid": "pod",
+    "pid": "ie",
     "n": 1
    }
   ],
@@ -342,27 +350,27 @@
   },
   {
    "pid": "pacma",
-   "conocidas": 26,
-   "estimadas": 12,
-   "conFuente": 15
-  },
-  {
-   "pid": "fo",
-   "conocidas": 26,
-   "estimadas": 0,
-   "conFuente": 26
-  },
-  {
-   "pid": "pcte",
-   "conocidas": 21,
-   "estimadas": 0,
+   "conocidas": 32,
+   "estimadas": 18,
    "conFuente": 21
   },
   {
+   "pid": "fo",
+   "conocidas": 38,
+   "estimadas": 12,
+   "conFuente": 38
+  },
+  {
+   "pid": "pcte",
+   "conocidas": 29,
+   "estimadas": 8,
+   "conFuente": 29
+  },
+  {
    "pid": "falange",
-   "conocidas": 32,
-   "estimadas": 0,
-   "conFuente": 32
+   "conocidas": 38,
+   "estimadas": 6,
+   "conFuente": 38
   },
   {
    "pid": "d21",
@@ -384,15 +392,15 @@
   },
   {
    "pid": "cha",
-   "conocidas": 86,
-   "estimadas": 65,
-   "conFuente": 22
+   "conocidas": 90,
+   "estimadas": 69,
+   "conFuente": 26
   },
   {
    "pid": "existe",
-   "conocidas": 48,
+   "conocidas": 49,
    "estimadas": 43,
-   "conFuente": 5
+   "conFuente": 6
   },
   {
    "pid": "upc",
@@ -408,9 +416,9 @@
   },
   {
    "pid": "mes",
-   "conocidas": 79,
-   "estimadas": 71,
-   "conFuente": 8
+   "conocidas": 84,
+   "estimadas": 76,
+   "conFuente": 13
   },
   {
    "pid": "gbai",
@@ -426,15 +434,15 @@
   },
   {
    "pid": "ph",
-   "conocidas": 14,
-   "estimadas": 0,
-   "conFuente": 14
+   "conocidas": 27,
+   "estimadas": 13,
+   "conFuente": 27
   },
   {
    "pid": "ie",
-   "conocidas": 14,
-   "estimadas": 0,
-   "conFuente": 14
+   "conocidas": 25,
+   "estimadas": 11,
+   "conFuente": 25
   }
  ]
 }

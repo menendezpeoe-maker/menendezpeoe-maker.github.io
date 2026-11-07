@@ -52,7 +52,9 @@ let base;
   ok(!/izquierda-derecha|eje (izquierda|derecha)/i.test(await page.textContent("#r-map svg")), "los ejes no se etiquetan como izquierda o derecha");
   base = await coords(page);
   ok(!!base.me, "aparece tu posición");
-  ok(!base.pts.pacma && /PACMA[\s\S]*sin datos suficientes/.test(txt), "PACMA (datos en 3 de 7 dimensiones) no se dibuja y se avisa en la lista");
+  // Cada candidatura de la lista se dibuja o se avisa de que no tiene datos suficientes (nunca se dibuja con huecos grandes)
+  const items = await page.$$eval("#r-map .map-list li", (li) => li.map((x) => /sin datos suficientes/.test(x.textContent)));
+  ok(items.length > 0 && Object.keys(base.pts).length === items.filter((f) => !f).length, "cada candidatura se dibuja o se avisa en la lista de que no tiene datos suficientes");
   ok(dist(base.pts.pod, base.pts.fa) < dist(base.pts.pod, base.pts.vox) && dist(base.pts.vox, base.pts.salf) < dist(base.pts.vox, base.pts.psoe), "partidos parecidos cerca y distintos lejos (Podemos–FA, Vox–SALF)");
   const list = await page.$$eval("#r-map .map-list li b", (b) => b.map((x) => x.textContent.trim()));
   const rank = await page.$$eval("#r-parties .rank li .nm b", (b) => b.map((x) => x.textContent.trim()));

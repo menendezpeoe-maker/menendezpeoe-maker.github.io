@@ -34,6 +34,22 @@
  {
   "fecha": "2026-11-07",
   "id": "A02",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A02",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -43,6 +59,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A02",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17",
    "programa",
    "2023-07"
   ]
@@ -113,6 +145,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "A08",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=9",
+   "Programa político del Frente Obrero de 2026, p. 9",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A08",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa defiende «mantener y aumentar los salarios»; no trata el salario mínimo, por eso la base es indirecta.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=11",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "A09",
   "partido": "falange",
   "de": 0,
@@ -123,6 +187,70 @@
   "fuente": [
    "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
    "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A09",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone la nacionalización de los sectores estratégicos y critica su privatización, lo que se opone a vender participaciones públicas.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=13",
+   "Programa político del Frente Obrero de 2026, p. 13",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A09",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2019 pide nacionalizar los sectores energético, bancario, de seguros y de transporte; no trata la venta de participaciones públicas.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=5",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 5",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A09",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa afirma que la propiedad de los medios de producción «debe ser social» y propone banca pública; no trata las participaciones públicas.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=12",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 12",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "A10",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone revisar el impuesto de sucesiones con criterios de progresividad según cada contribuyente, no eliminarlo entre padres e hijos.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
    "programa",
    "2023-07"
   ]
@@ -242,6 +370,54 @@
  {
   "fecha": "2026-11-07",
   "id": "B02",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone construir vivienda pública, supervisión estatal del recurso y medidas contra la especulación, más cerca de regular y ampliar vivienda pública.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "Programa político del Frente Obrero de 2026, p. 46",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B02",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato dice que la vivienda no se resolverá con más regulación, propone ley del suelo y suprime el control de alquiler; no habla de vivienda pública.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B02",
+  "partido": "pacma",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa pide frenar la subida del alquiler y una gran dotación de vivienda social para compra y alquiler, más cerca de regular y ampliar la vivienda pública.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=65",
+   "Programa de PACMA para las generales de 2023, p. 65",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B02",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -290,6 +466,38 @@
  {
   "fecha": "2026-11-07",
   "id": "B03",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone perseguir la okupación de propiedades de trabajadores españoles y clausurar centros okupas, sin fijar un plazo de recuperación de 48 horas.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=20",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 20",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B03",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa dice que la ocupación de viviendas de particulares no debe permitirse en ningún caso y que se actuará contra ella e inquiokupas, sin fijar plazo.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "Programa político del Frente Obrero de 2026, p. 46",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B03",
   "partido": "ie",
   "de": 0,
   "a": 5,
@@ -322,6 +530,22 @@
  {
   "fecha": "2026-11-07",
   "id": "B04",
+  "partido": "pacma",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa critica ampliar los plazos de suspensión de lanzamientos porque carga sobre propietarios particulares y reduce la oferta de alquiler.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=65",
+   "Programa de PACMA para las generales de 2023, p. 65",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B04",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -349,6 +573,22 @@
    "Programa electoral del Partido Humanista de 2023, p. 14",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone medidas que detengan el auge de los pisos turísticos y la gentrificación, sin precisar que lo decidan los ayuntamientos.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+   "Programa político del Frente Obrero de 2026, p. 46",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -397,6 +637,54 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B08",
+  "partido": "pacma",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=65",
+   "Programa de PACMA para las generales de 2023, p. 65",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B08",
+  "partido": "pcte",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2019 propone una bolsa de viviendas públicas en alquiler con precios fijos regulados por el Estado.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
+   "programa",
+   "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "B08",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone que las viviendas vacías de los bancos formen un «parque de vivienda pública en alquiler»; no habla de construir directamente.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 14",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -461,6 +749,22 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "C03",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=20",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 20",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -690,6 +994,22 @@
  {
   "fecha": "2026-11-07",
   "id": "D03",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone priorizar la carrera judicial en los órganos judiciales superiores y suprimir la elección de sus miembros por el Gobierno.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=58",
+   "Programa político del Frente Obrero de 2026, p. 58",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "D03",
   "partido": "ie",
   "de": 0,
   "a": 5,
@@ -770,6 +1090,22 @@
  {
   "fecha": "2026-11-07",
   "id": "E03",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa denuncia las «leyes restrictivas» y la «criminalización de la protesta»; no cita la ley mordaza.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=3",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 3",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E03",
   "partido": "upc",
   "de": 5,
   "a": 4,
@@ -813,6 +1149,22 @@
    "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12",
    "programa",
    "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "E09",
+  "partido": "pcte",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2023 propone oponerse a la legalización de nuevas drogas; no cita el cannabis.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=16",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 16",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -881,6 +1233,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "F01",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa afirma «Ningún ser humano es ilegal» y pide no criminalizar al migrante; no cita la regularización.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 24",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "F02",
   "partido": "falange",
   "de": 0,
@@ -925,6 +1293,22 @@
    "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20",
    "programa",
    "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F02",
+  "partido": "pcte",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
+   "programa",
+   "2019-11"
   ]
  },
  {
@@ -978,6 +1362,22 @@
  {
   "fecha": "2026-11-07",
   "id": "F03",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2023 pide confrontar los discursos racistas y xenófobos y la unidad obrera sin distinción de origen; no cita ayudas.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=21",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 21",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F03",
   "partido": "ph",
   "de": 0,
   "a": 1,
@@ -1025,6 +1425,38 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "F05",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone no abrir nuevos centros de menores migrantes no acompañados, clausurar los existentes y expulsarlos, lo contrario de repartirlos entre comunidades.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F05",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato rechaza la «imposición de políticas migratorias contrarias a los intereses nacionales» desde la UE; no cita el reparto entre comunidades.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "F08",
   "partido": "pcte",
   "de": 0,
@@ -1051,6 +1483,38 @@
   "fuente": [
    "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
    "Programa electoral del Partido Humanista de 2023, p. 17",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F09",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato propone transformar los subsidios en incentivos al empleo; no cita el Ingreso Mínimo Vital.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 16",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "F09",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa defiende una renta básica universal «incondicional, sin cumplir ningún requisito»; no cita el Ingreso Mínimo Vital.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=13",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 13",
    "programa",
    "2023-07"
   ]
@@ -1085,6 +1549,22 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G01",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato incluye «apuesta por la energía nuclear»; no habla de alargar la vida de las centrales actuales.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "programa",
+   "2025-12"
   ]
  },
  {
@@ -1153,6 +1633,22 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "G03",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "G04",
   "partido": "adel",
   "de": 2,
@@ -1186,6 +1682,22 @@
  {
   "fecha": "2026-11-07",
   "id": "G05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa califica la energía de sector estratégico, pide un modelo energético planificado y la nacionalización de los sectores estratégicos.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=15",
+   "Programa político del Frente Obrero de 2026, p. 15",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G05",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -1213,6 +1725,38 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 291",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G06",
+  "partido": "mes",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: MÉS concurrió en Sumar en 2023 y su programa redirige la inversión ferroviaria de la alta velocidad a Cercanías y al tren convencional.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81",
+   "Programa electoral de Sumar de 2023, p. 81; MÉS concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "G08",
+  "partido": "pcte",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2019 propone un uso productivo y sostenible de los montes y una política preventiva de limpieza contra el fuego.",
+  "fuente": [
+   "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
+   "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
+   "programa",
+   "2019-11"
   ]
  },
  {
@@ -1275,6 +1819,22 @@
   "fuente": [
    "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18",
    "Programa electoral general de FE de las JONS para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H01",
+  "partido": "pcte",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2023 critica la subida del gasto militar hacia el 2% de la OTAN y pide salir de la OTAN y cerrar las bases extranjeras.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=18",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 18",
    "programa",
    "2023-07"
   ]
@@ -1357,6 +1917,22 @@
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H03",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13",
+   "programa",
+   "2025-12"
   ]
  },
  {
@@ -1505,6 +2081,54 @@
  },
  {
   "fecha": "2026-11-07",
+  "id": "H07",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato propone eliminar las subvenciones a ONG y critica financiar a otros mientras se desatienden necesidades propias; no cita la ayuda oficial.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H07",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa pide cooperación internacional y reparación a los países expoliados por Europa; no cita el presupuesto de ayuda.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 24",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "H09",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone acuerdos con países cercanos para instalar centros de clasificación y deportación desde suelo extranjero y endurecer el asilo.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=54",
+   "Programa político del Frente Obrero de 2026, p. 54",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
   "id": "H09",
   "partido": "ph",
   "de": 0,
@@ -1547,6 +2171,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I01",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa dice que las «cogestiones» ocultan una privatización de la educación y exige educación pública gratuita; no cita la concertada.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=16",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 16",
    "programa",
    "2023-07"
   ]
@@ -1650,6 +2290,22 @@
  {
   "fecha": "2026-11-07",
   "id": "I03",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone expulsar a las empresas privadas de la universidad y reforzar el sistema público, lo que va contra facilitar universidades privadas.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+   "Programa político del Frente Obrero de 2026, p. 22",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I03",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -1659,6 +2315,22 @@
   "fuente": [
    "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I03",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa exige educación pública y gratuita en todos los niveles hasta la universidad y rechaza que sea negocio; no cita las privadas.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17",
    "programa",
    "2023-07"
   ]
@@ -1693,6 +2365,54 @@
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone ajustar el incremento de becas al poder adquisitivo y a los méritos académicos, lo que apunta a exigir rendimiento académico.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I07",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato defiende «libertad educativa para los padres» y rechaza el «adoctrinamiento en género»; no cita el pin parental.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 22",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "I07",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone educación integral que incluya la sexualidad en todos los niveles; no cita el «pin parental».",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 19",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -1794,6 +2514,22 @@
  {
   "fecha": "2026-11-07",
   "id": "J01",
+  "partido": "pacma",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone reintegrar al sistema sanitario público los servicios privatizados y vincula las privatizaciones a la crisis de la sanidad.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=50",
+   "Programa de PACMA para las generales de 2023, p. 50",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J01",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -1826,6 +2562,54 @@
  {
   "fecha": "2026-11-07",
   "id": "J02",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone poner fin a la externalización y privatización de la sanidad, con cobertura asegurada por el Estado, lo que se opone a derivar a clínicas privadas.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=10",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 10",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J02",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone acabar con la externalización y privatización de la sanidad, lo que se opone a derivar pacientes a clínicas privadas pagadas con dinero público.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+   "Programa político del Frente Obrero de 2026, p. 42",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J02",
+  "partido": "pacma",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone reintegrar los servicios privatizados a la sanidad pública y planes de mejora de listas de espera, no derivar pacientes a clínicas privadas.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=50",
+   "Programa de PACMA para las generales de 2023, p. 50",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J02",
   "partido": "pcte",
   "de": 0,
   "a": 1,
@@ -1837,6 +2621,22 @@
    "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
    "programa",
    "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J02",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa dice que la solución a la sanidad «no es la privatización» y que no puede ser negocio; no cita las listas de espera.",
+  "fuente": [
+   "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
+   "Programa electoral del Partido Humanista, elecciones generales 2023, p. 19",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -1853,6 +2653,102 @@
    "Programa electoral del PCTE para las generales de 2019 (10N), p. 6",
    "programa",
    "2019-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J04",
+  "partido": "cha",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: CHA concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17",
+   "Programa electoral de Sumar de 2023, p. 17; CHA concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J04",
+  "partido": "mes",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17",
+   "Programa electoral de Sumar de 2023, p. 17; MÉS concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J05",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato propone una auditoría independiente del gasto, cerrar empresas públicas con pérdidas y evaluar la calidad de las leyes; no fija suprimir lo ineficaz.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 16",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J07",
+  "partido": "cha",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: CHA concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92",
+   "Programa electoral de Sumar de 2023, p. 92; CHA concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J07",
+  "partido": "mes",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92",
+   "Programa electoral de Sumar de 2023, p. 92; MÉS concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J07",
+  "partido": "pcte",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa de 2023 aspira a un sistema sanitario único, público y gratuito; no cita MUFACE.",
+  "fuente": [
+   "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=7",
+   "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 7",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -1883,6 +2779,54 @@
   "fuente": [
    "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
    "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "J08",
+  "partido": "pacma",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa señala que el Estado fija las bases y normas de condiciones mínimas del sistema sanitario, para una igualación básica de los servicios en todo el país.",
+  "fuente": [
+   "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=50",
+   "Programa de PACMA para las generales de 2023, p. 50",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K01",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone defender el producto español frente a Bruselas y fijar políticas arancelarias ante las importaciones, lo que se opone al acuerdo con Mercosur.",
+  "fuente": [
+   "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13",
+   "Programa electoral general de FE de las JONS para las generales de 2023, p. 13",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K01",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone romper con los tratados internacionales que merman la producción agraria y critica los que dejan entrar productos extranjeros.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+   "Programa político del Frente Obrero de 2026, p. 38",
    "programa",
    "2026-10"
   ]
@@ -1922,6 +2866,22 @@
  {
   "fecha": "2026-11-07",
   "id": "K02",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=25",
+   "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 25",
+   "programa",
+   "2025-12"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K02",
   "partido": "pcte",
   "de": 0,
   "a": 5,
@@ -1933,6 +2893,38 @@
    "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12",
    "programa",
    "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K03",
+  "partido": "mes",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: MÉS concurrió en Sumar en 2023 y su programa prioriza las explotaciones familiares y elimina derechos históricos de la PAC.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=60",
+   "Programa electoral de Sumar de 2023, p. 60; MÉS concurrió en esa coalición",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K04",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone el control poblacional de la fauna como competencia del Estado, apoyado en cazadores locales para proteger explotaciones ganaderas.",
+  "fuente": [
+   "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+   "Programa político del Frente Obrero de 2026, p. 38",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -1949,6 +2941,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 168",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K06",
+  "partido": "cha",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=64",
+   "Programa electoral de Sumar de 2023, p. 64; CHA concurrió en esa coalición",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -1997,6 +3005,22 @@
    "Programa electoral de Adelante Andalucía de 2026, p. 195",
    "programa",
    "2026-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "K08",
+  "partido": "mes",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: MÉS concurrió en Sumar en 2023 y su programa plantea una moratoria del regadío intensivo.",
+  "fuente": [
+   "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49",
+   "Programa electoral de Sumar de 2023, p. 49; MÉS concurrió en esa coalición",
+   "programa",
+   "2023-07"
   ]
  },
  {
@@ -2077,6 +3101,38 @@
    "Orain, EH Bildu a favor de regular la gestación subrogada, 04/07/2017",
    "declaracion",
    "2017-07-04"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L04",
+  "partido": "cha",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa propone mantener la situación legal actual de la «maternidad subrogada», es decir, los contratos siguen siendo nulos.",
+  "fuente": [
+   "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=29",
+   "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 29",
+   "programa",
+   "2019-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-07",
+  "id": "L04",
+  "partido": "existe",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2023 expresa «Rechazo a la gestación subrogada».",
+  "fuente": [
+   "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=18",
+   "Programa electoral de Teruel Existe para las generales de 2023, p. 18",
+   "programa",
+   "2023-07"
   ]
  },
  {
