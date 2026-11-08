@@ -35,6 +35,17 @@ for (const w of [390, 1280]) {
     ok(v.length === 1 && v[0] === "r-" + id, `elegir «${id}» deja visible solo esa sección`);
     if (id !== "pols") await page.click("#nav-btn");
   }
+  // Abrir una tarjeta desde abajo: la sección se abre desde arriba (no donde estaba la tarjeta) y se puede cerrar
+  await page.click('#nav-btn'); await page.click('#nav-panel a[data-sec="r-summary"]'); await page.waitForTimeout(300);
+  await page.locator("#r-tiles .rt-tiles a").last().scrollIntoViewIfNeeded();
+  const before = await page.evaluate(() => scrollY);
+  await page.locator("#r-tiles .rt-tiles a").last().click(); await page.waitForTimeout(900);
+  const topY = await page.evaluate(() => ({ y: scrollY, h: document.querySelector("#r-pols h2").getBoundingClientRect().top, vh: innerHeight }));
+  ok(before > 300 && topY.y < before && topY.h >= 0 && topY.h < topY.vh * 0.6, `al abrir una sección desde las tarjetas se ve desde su principio (${w} px)`);
+  ok(await page.isVisible("#rt-top .rt-x") && await page.isVisible("#rt-top .rt-back"), "cada sección tiene «Volver al resultado» y «Cerrar» arriba");
+  await page.click("#rt-top .rt-x"); await page.waitForTimeout(600);
+  const v2 = await visible(page);
+  ok(v2.includes("r-summary") && !v2.includes("r-pols") && await page.isHidden("#rt-top"), "«Cerrar» vuelve al resultado");
   ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), `sin scroll horizontal (${w} px)`);
   if (w === 1280) {
     await page.emulateMedia({ media: "print" });

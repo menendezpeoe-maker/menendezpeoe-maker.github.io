@@ -903,3 +903,17 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
 .rt-foot a { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px; border: 1.5px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); font-weight: 750; font-size: 14.5px; text-decoration: none; transition: background-color .2s, color .2s, border-color .2s; }
 .rt-foot a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 @media (prefers-reduced-motion: reduce) { .rt-tiles a, .rt-foot a { transition: none !important; } .rt .res-sec.on { animation: none !important; } }
+
+/* 14b · Cabecera de cada sección: volver y cerrar */
+.rt-top { display: flex; align-items: center; gap: 12px; padding: 14px 0 0; flex-wrap: wrap; }
+.rt-top[hidden] { display: none; }
+.rt-back, .rt-x { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; border: 1.5px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); font-weight: 750; font-size: 14.5px; text-decoration: none; transition: background-color .2s, color .2s, border-color .2s; }
+.rt-back:hover, .rt-x:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.rt-x { margin-left: auto; min-width: 44px; justify-content: center; }
+.rt-crumb { display: grid; gap: 1px; min-width: 0; } .rt-crumb small { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); } .rt-crumb b { font-family: var(--f-disp); font-weight: 820; font-size: 15.5px; line-height: 1.2; }
+@media (max-width: 560px) { .rt-crumb { order: 3; flex-basis: 100%; } .rt-xt { display: none; } .rt-x { margin-left: 0; } .rt-back { flex: 1; } }
+.rt-foot .rt-c { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.rt-foot .rt-c:hover { background: var(--mark); color: var(--mark-ink); border-color: var(--ink); }
+.rt-top ~ .res-sec.on:not(#r-summary) { padding-top: 22px; }
+@media print { .rt-top { display: none !important; } }
+@media (prefers-reduced-motion: reduce) { .rt-back, .rt-x { transition: none !important; } }

@@ -826,10 +826,16 @@ function rtSyncNav() {
   $("#nav-pct").textContent = pct; $("#nav-idx").textContent = i + 1;
   $("#nav-bar").style.transform = `scaleX(${pct / 100})`; nav.querySelector(".rg-fg").style.strokeDasharray = `${pct} 100`;
 }
+function rtSyncTop() {
+  const t = $("#rt-top"); if (!t) return;
+  const m = rtList().find((x) => x.id === RT_CUR), inSum = RT_CUR === "summary";
+  t.hidden = inSum;
+  if (!inSum) t.innerHTML = `<a href="#r-summary" class="rt-back"><span aria-hidden="true">←</span> Volver al resultado</a><span class="rt-crumb"><small>${esc(RT_GROUPS[m.g])}</small><b>${esc(m.label)}</b></span><a href="#r-summary" class="rt-x" aria-label="Cerrar esta sección y volver al resultado"><span aria-hidden="true">✕</span><span class="rt-xt">Cerrar</span></a>`;
+}
 function rtSyncFoot() {
   const f = $("#rt-foot"); if (!f) return;
   const list = rtList(), i = list.findIndex((m) => m.id === RT_CUR), pv = list[i - 1], nx = list[i + 1];
-  f.innerHTML = `${pv ? `<a href="#r-${pv.id}" class="rt-p"><span aria-hidden="true">←</span> ${esc(pv.label)}</a>` : "<span></span>"}${nx ? `<a href="#r-${nx.id}" class="rt-n">${esc(nx.label)} <span aria-hidden="true">→</span></a>` : ""}`;
+  f.innerHTML = `${pv ? `<a href="#r-${pv.id}" class="rt-p"><span aria-hidden="true">←</span> ${esc(pv.label)}</a>` : "<span></span>"}${RT_CUR !== "summary" ? `<a href="#r-summary" class="rt-c">Volver al resultado</a>` : ""}${nx ? `<a href="#r-${nx.id}" class="rt-n">${esc(nx.label)} <span aria-hidden="true">→</span></a>` : ""}`;
 }
 function showSection(id, opts = {}) {
   id = String(id).replace(/^#?r-/, "");
@@ -841,9 +847,9 @@ function showSection(id, opts = {}) {
   if (!rtList().some((m) => m.id === id)) return null;
   RT_CUR = id;
   $$("#v-results .res-sec[id]").forEach((x) => x.classList.toggle("on", rtOn(x.id.replace(/^r-/, ""), id)));
-  rtSyncNav(); rtSyncFoot();
+  rtSyncNav(); rtSyncFoot(); rtSyncTop();
   const t = $("#r-" + id);
-  if (opts.scroll !== false) { const top = $("#v-results .res-nav") || t; top.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
+  if (opts.scroll !== false) { const root = $("#v-results"); window.scrollTo({ top: Math.max(0, root.getBoundingClientRect().top + scrollY), behavior: reduceMotion() ? "auto" : "smooth" }); }
   if (opts.focus !== false && t) { const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
   return t;
 }
@@ -888,6 +894,7 @@ function renderResults() {
           ${navLinks()}
         </div>
       </nav>
+      <div class="rt-top" id="rt-top" hidden></div>
       <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
       <section id="r-how" class="res-sec" aria-labelledby="how-h"></section>
