@@ -683,7 +683,7 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 /* 7 · CANDIDATURAS: vista de un partido (solo sus posturas), en filas con indicador de posición */
 .pcx-main { display: block; width: 100%; min-height: 46px; margin-top: 2px; border: 1.5px solid var(--ink); border-radius: 12px; background: var(--ink); color: var(--paper); font: inherit; font-weight: 780; font-size: 15px; cursor: pointer; transition: background-color .2s, color .2s, transform .25s var(--ds-ease); }
 .pcx-main:hover { transform: translateY(-1px); }
-#v-explorer.po .pcx, #v-explorer.po .exw { display: none; }
+#v-explorer.po .pcx, #v-explorer.po .exw, #v-explorer.po .qf { display: none; }
 .ppw { padding-block: 8px 40px; }
 .ppw { --pc: var(--ink); }
 .ppan { display: grid; gap: 16px; padding: 20px 16px; border: 1.5px solid var(--rule); border-top: 6px solid var(--pc); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); }
@@ -777,3 +777,23 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .fx #v-home .banner, .fx #v-home .trust, .fx #v-home .lede, .fx #v-home .facts { opacity: 0; transition: none; animation: fx-show 0s 3s forwards; }
 @keyframes fx-show { to { opacity: 1; } } /* red de seguridad: pase lo que pase con el script, a los 3 s la portada se ve */
 @media (prefers-reduced-motion: reduce) { #v-home .banner, #v-home .trust, #v-home .lede, #v-home .facts { transition: none; } }
+
+/* 10 · PARTIDOS: «Posturas pregunta a pregunta» plegado y discreto */
+.qf { padding-block: 8px 48px; }
+.qf-h { margin: 0; font: inherit; }
+.qf-btn { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 16px 18px; min-height: 72px; border: 1.5px solid var(--rule); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); font: inherit; color: var(--ink); cursor: pointer; transition: border-color .2s, box-shadow .25s, background-color .2s; }
+.qf-btn:hover { border-color: var(--ink); box-shadow: var(--ds-sh-2); }
+.qf-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.qf-i { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--mark); color: var(--mark-ink); }
+.qf-i svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.qf-t { display: grid; gap: 3px; min-width: 0; } .qf-t b { font-family: var(--f-disp); font-weight: 820; font-stretch: 108%; font-size: 18px; line-height: 1.2; }
+.qf-t small { font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--ink-2); }
+.qf-c { width: 32px; height: 32px; display: grid; place-items: center; border: 1.5px solid currentColor; border-radius: 50%; }
+.qf-c::before { content: "+"; font-family: var(--f-disp); font-weight: 800; font-size: 20px; line-height: 1; }
+.qf-btn[aria-expanded="true"] .qf-c::before { content: "−"; }
+.qf-btn[aria-expanded="true"] { border-color: var(--ink); background: var(--paper); }
+.qf-body { padding-top: 14px; }
+.qf-body[hidden] { display: none; }
+@media (max-width: 560px) { .qf-btn { grid-template-columns: auto 1fr auto; padding: 14px; gap: 12px; } .qf-i { width: 40px; height: 40px; } .qf-t small { font-size: 13px; } }
+@media (prefers-reduced-motion: no-preference) { @keyframes qf-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } } .qf-body:not([hidden]) { animation: qf-in .35s var(--ds-ease) both; } }
+@media (prefers-reduced-motion: reduce) { .qf-btn { transition: none !important; } .qf-body { animation: none !important; } }

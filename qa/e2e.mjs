@@ -128,6 +128,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   ok(!(await overflow(page)), "metodología sin scroll horizontal");
   await page.screenshot({ path: OUT + "m-method.png", fullPage: true });
   await page.click('.head-nav [data-go="explorer"]');
+  await page.click("#qf-btn"); // la lista pregunta a pregunta viene plegada
   await page.fill("#ex-q", "lobo");
   await page.waitForTimeout(300);
   ok((await page.locator(".exq").count()) === 1, "el buscador filtra (lobo)");

@@ -2492,7 +2492,7 @@ function renderExplorer() {
       <div class="wrap method">
         <p class="label">Transparencia</p>
         <h1 id="explorer-h" class="h1">Posturas de los partidos</h1>
-        <p class="lede">Todas las posturas que usa el test, pregunta a pregunta. Las estimadas aparecen con borde discontinuo y en cursiva; si un partido no tiene postura conocida en un tema, no se le asigna ninguna.</p>
+        <p class="lede">Las candidaturas que se presentan al Congreso y lo que defiende cada una. Pulsa «Ver sus posturas» para ver su perfil y sus posturas por áreas. Las estimadas se marcan como tales, y si un partido no tiene postura conocida en un tema, no se le asigna ninguna.</p>
       </div>
       <div class="wrap ppw" id="ppan" hidden></div>
       <section class="wrap pcx" aria-labelledby="pcx-h">
@@ -2504,9 +2504,13 @@ function renderExplorer() {
         </div>
         <p class="small muted" id="pcx-count" aria-live="polite"></p>
         <div class="pcx-grid" id="pcx-grid"></div>
-        <h2 class="pcx-h3">Posturas, pregunta a pregunta</h2>
       </section>
-      <div class="wrap exw">
+      <div class="wrap exw qf" id="qf">
+        <h2 class="qf-h"><button type="button" class="qf-btn" id="qf-btn" aria-expanded="false" aria-controls="qf-body">
+          <span class="qf-i" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+          <span class="qf-t"><b>Posturas pregunta a pregunta</b><small>Compara a todos los partidos en una misma pregunta, o busca un tema (alquiler, Senado, lobo…). Son las mismas posturas, en otro orden.</small></span>
+          <span class="qf-c" aria-hidden="true"></span></button></h2>
+        <div class="qf-body" id="qf-body" hidden>
         <div class="ex-tools">
           <div class="field"><label class="label" for="ex-area">Área</label><select id="ex-area"><option value="">Todas las áreas</option>${BANK.areas.map((a) => `<option value="${a.id}">${a.letter} · ${esc(a.name)}</option>`).join("")}</select></div>
           <div class="field"><label class="label" for="ex-party">Ver un partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
@@ -2516,9 +2520,11 @@ function renderExplorer() {
         <p class="small muted" id="ex-count" aria-live="polite" style="padding-top:12px"></p>
         <h2 class="sr">Preguntas y posturas</h2>
         <div class="ex-list" id="ex-list"></div>
+        </div>
       </div>`;
     root.dataset.ready = "1";
     bindPartyCards();
+    $("#qf-btn").addEventListener("click", () => { const b = $("#qf-btn"), open = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", String(open)); $("#qf-body").hidden = !open; $("#qf").classList.toggle("open", open); });
     $("#ex-area").addEventListener("change", (e) => { EX.area = e.target.value; drawExplorer(); });
     $("#ex-party").addEventListener("change", (e) => { EX.party = e.target.value; drawExplorer(); });
     $("#ex-focus-x").addEventListener("click", () => { EX.party = ""; $("#ex-party").value = ""; drawExplorer(); $("#pcx-grid").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
