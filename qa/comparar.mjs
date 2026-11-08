@@ -17,7 +17,9 @@ for (const w of [390, 1280]) {
   const ctx = await browser.newContext({ viewport: { width: w, height: 900 } }); const page = await ctx.newPage();
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); }); page.on("pageerror", (e) => errors.push(String(e)));
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
-  ok(await page.isVisible("#cmpx"), `la comparación está a la vista en la portada (${w} px), sin plegar`);
+  ok(await page.isVisible("#cmpx") && (await page.locator("#cmpx .m-fold-btn").count()) === 1 && !(await page.isVisible("#cx-a")), `la comparación está en la portada (${w} px), plegada como los demás apartados`);
+  ok(!/sin hacer el test/i.test(await page.innerText("#cmpx")), "sin el texto «Sin hacer el test»");
+  await page.click("#cmpx .m-fold-btn"); await page.waitForSelector("#cx-a", { state: "visible" });
   const a = await page.inputValue("#cx-a"), b = await page.inputValue("#cx-b");
   ok(a !== b, "empieza con dos candidaturas distintas");
   let e = expected(a, b);

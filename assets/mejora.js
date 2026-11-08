@@ -315,7 +315,7 @@
      ningún texto: sigue en la página (lo leen igual los buscadores) y en ordenador todo queda como estaba.
      «Preguntas frecuentes» se queda abierta a propósito (qa/seo.mjs lo exige). WCAG 1.3.1, 2.4.6, 4.1.2. */
   const FOLD_MQ = matchMedia("all"); // 8 nov: también en ordenador (antes solo ≤ 760 px)
-  const folds = [["how-h", ".hw"], ["diff-h", ".diff, .two-col > div > p.small"], ["temas-h", ".topic-list, :scope > p.small"], ["faq-h", ".faq"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+  const folds = [["cmpx-h", ".cmpx-sub, .cmpx-body"], ["how-h", ".hw"], ["diff-h", ".diff, .two-col > div > p.small"], ["temas-h", ".topic-list, :scope > p.small"], ["faq-h", ".faq"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
     const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
     return { h, sec, bodies: $$(body, sec), text: h.textContent };
   }).filter(Boolean);
