@@ -2586,7 +2586,7 @@ function bindPartyCards() {
   $("#pcx-prov").addEventListener("change", (e) => { PCX.prov = e.target.value; drawPartyCards(); });
   $("#ppan").addEventListener("click", (e) => {
     if (e.target.closest("#pp-x")) { const pid = EX.party; EX.party = ""; $("#ex-party").value = ""; drawExplorer(); const bt = document.querySelector(`#pcx-grid .pcx-main[data-pcx-pos="${pid}"]`); if (bt) { bt.scrollIntoView({ block: "center" }); bt.focus({ preventScroll: true }); } return; }
-    const ch = e.target.closest("[data-pa]"); if (ch) { PP.area = ch.dataset.pa; drawPartyPanel(); const k = document.querySelector(`#ppan [data-pa="${PP.area}"]`); if (k) k.focus(); }
+    const ch = e.target.closest("[data-pa]"); if (ch) { PP.area = ch.dataset.pa; drawPartyPanel(); const k = document.querySelector(`#ppan [data-pa="${PP.area}"]`); if (k) k.focus({ preventScroll: true }); $("#pp-list").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
   });
   $("#ppan").addEventListener("change", (e) => { if (e.target.id === "pp-src") { PP.src = e.target.checked; drawPartyPanel(); $("#pp-src").focus(); } });
   $("#pcx-grid").addEventListener("click", (e) => {
@@ -2606,7 +2606,7 @@ function drawPartyPanel() {
   root.classList.toggle("po", !!EX.party);
   if (!EX.party) { box.hidden = true; box.innerHTML = ""; PP.pid = ""; return; }
   const pid = EX.party, p = P[pid], info = pcxInfo(pid), total = BANK.questions.length;
-  if (PP.pid !== pid) { PP.pid = pid; PP.area = ""; PP.src = false; }
+  if (PP.pid !== pid) { PP.pid = pid; PP.area = BANK.areas[0].id; PP.src = false; }
   const dpc = Math.round(((info.known - info.est) / total) * 100), epc = Math.round((info.est / total) * 100), upc = 100 - dpc - epc;
   const row = (q) => {
     const v = q.pos[pid], est = v && q.est.includes(pid), s = q.src && q.src[pid], why = v ? posWhy(q, pid) : "";
@@ -2616,10 +2616,13 @@ function drawPartyPanel() {
       <span class="pr-g" role="img" aria-label="Posición ${v} de 5: ${esc(answerText(q, v, true))}"><span class="pg"><i style="--p:${(v - 1) * 25}%"></i></span><span class="pr-l">${esc(answerText(q, v, true))}</span></span>${badge}</summary>
       <div class="pr-x"><p class="pr-t">${esc(q.text)}</p>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}<p><b>${esc(answerText(q, v))}</b> · ${est ? "estimada" : "documentada"}${srcLink(q, pid)}</p>${why ? `<p class="small muted">${esc(why)}</p>` : ""}</div></details></li>`;
   };
-  const keep = (q) => (!PP.area || q.area === PP.area) && (!PP.src || (q.pos[pid] && q.src && q.src[pid]));
-  const groups = BANK.areas.map((a) => { const l = BANK.questions.filter((q) => q.area === a.id && keep(q)); if (!l.length) return "";
-    const all = BANK.questions.filter((q) => q.area === a.id), k = all.filter((q) => q.pos[pid]).length;
-    return `<section class="pp-a" aria-labelledby="pa-${a.id}"><h4 id="pa-${a.id}"><span>${a.letter}</span>${esc(a.name)}<em>${k} de ${all.length} con postura</em></h4><ul class="pr-l2">${l.map(row).join("")}</ul></section>`; }).join("");
+  const keep = (q) => q.area === PP.area && (!PP.src || (q.pos[pid] && q.src && q.src[pid]));
+  const cur = BANK.areas.find((x) => x.id === PP.area), curQs = BANK.questions.filter(keep);
+  const cards = BANK.areas.map((a) => { const all = BANK.questions.filter((q) => q.area === a.id), k = all.filter((q) => q.pos[pid]).length;
+    const strip = all.map((q) => `<i class="${!q.pos[pid] ? "u" : q.est.includes(pid) ? "e" : "d"}"></i>`).join("");
+    return `<button type="button" class="pa-card" data-pa="${a.id}" aria-pressed="${PP.area === a.id}"><span class="pa-l">${a.letter}</span><b>${esc(a.name)}</b><span class="pa-n">${k} de ${all.length} con postura</span><span class="pa-s" aria-hidden="true">${strip}</span></button>`; }).join("");
+  const dimRows = BANK.dims.map((d) => { const v = (PARTY_DIM[pid] || {})[d.id];
+    return `<li><span class="dp-n">${esc(d.name)}</span>${v === undefined ? '<span class="dp-none">Sin datos suficientes</span>' : `<span class="dp-t" role="img" aria-label="${esc(d.name)}: ${signed(v)} entre ${esc(d.a)} (−100) y ${esc(d.b)} (+100)"><i style="--p:${(v + 100) / 2}%"></i></span>`}<span class="dp-e"><em>${esc(d.a)}</em><em>${esc(d.b)}</em></span></li>`; }).join("");
   box.hidden = false;
   box.style.setProperty("--pc", p.color);
   box.innerHTML = `<section class="ppan" aria-label="Posturas de ${esc(p.name)}">
@@ -2628,10 +2631,11 @@ function drawPartyPanel() {
     <div class="pp-stats"><div><b>${info.src}</b><span>con fuente enlazada</span></div><div><b>${info.est}</b><span>estimadas</span></div><div><b>${total - info.known}</b><span>sin postura conocida</span></div></div>
     <div class="stack" role="img" aria-label="${dpc} % documentadas, ${epc} % estimadas, ${upc} % sin postura conocida"><span class="sk-d" style="--w:${dpc}%"></span><span class="sk-e" style="--w:${epc}%"></span><span class="sk-u" style="--w:${upc}%"></span></div>
     <p class="pp-about">${esc(p.desc)}</p>
-    <div class="pp-tools"><div class="pp-chips" role="group" aria-label="Filtrar por área"><button type="button" data-pa="" aria-pressed="${!PP.area}">Todas</button>${BANK.areas.map((a) => `<button type="button" data-pa="${a.id}" aria-pressed="${PP.area === a.id}" title="${esc(a.name)}">${a.letter}</button>`).join("")}</div>
-      <label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
-    <p class="pp-key"><span>Posición de 1 (En desacuerdo) a 5 (De acuerdo)</span> · toca una fila para ver el detalle y la fuente</p>
-    ${groups || '<p class="muted">Ninguna postura con ese filtro.</p>'}
+    <section class="pp-sec" aria-labelledby="pp-dh"><h4 id="pp-dh">Su perfil en siete dimensiones</h4><ul class="dprof">${dimRows}</ul><p class="pp-key">Calculado con todas sus posturas del banco; las estimadas pesan menos. Es una lectura del test, no una etiqueta.</p></section>
+    <section class="pp-sec" aria-labelledby="pp-ah"><h4 id="pp-ah">Sus posturas por área</h4><p class="pp-key">Elige un área. Las barras pequeñas muestran qué preguntas tienen postura: <i class="lg d"></i> documentada · <i class="lg e"></i> estimada · <i class="lg u"></i> sin postura.</p><div class="pa-grid" role="group" aria-label="Áreas">${cards}</div></section>
+    <section class="pp-sec pp-list" id="pp-list" aria-labelledby="pp-lh"><div class="pp-lt"><h4 id="pp-lh"><span>${cur.letter}</span>${esc(cur.name)}</h4><label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
+      <p class="pp-key">Posición de 1 (En desacuerdo) a 5 (De acuerdo). Toca una fila para ver el detalle y la fuente.</p>
+      ${curQs.length ? `<ul class="pr-l2">${curQs.map(row).join("")}</ul>` : '<p class="muted">Ninguna postura con ese filtro en esta área.</p>'}</section>
     ${p.props && p.props.length ? `<div class="pp-props"><h4>Algunas de sus propuestas</h4><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></div>` : ""}
     <p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></section>`;
 }
