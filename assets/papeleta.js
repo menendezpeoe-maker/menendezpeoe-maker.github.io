@@ -261,10 +261,59 @@ function initHome() {
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
+  initCmpx();
   $("#start-btn").disabled = false;
   fillSetup();
   // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
   requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.add("is-ready")));
+}
+// ── Comparar dos candidaturas desde la portada (8 nov): sin necesidad de hacer el test
+const CMP = { a: "", b: "" };
+function initCmpx() {
+  const box = $("#cmpx-body"); if (!box) return;
+  const ids = PIDS.slice();
+  if (!CMP.a || !ids.includes(CMP.a)) CMP.a = ids[0];
+  if (!CMP.b || !ids.includes(CMP.b) || CMP.b === CMP.a) CMP.b = ids.find((x) => x !== CMP.a);
+  const opts = (sel, other) => ids.map((pid) => `<option value="${pid}"${pid === sel ? " selected" : ""}${pid === other ? " disabled" : ""}>${esc(P[pid].name)}</option>`).join("");
+  box.innerHTML = `<div class="cx-pick">
+      <div class="field"><label class="label" for="cx-a">Candidatura A</label><select id="cx-a">${opts(CMP.a, CMP.b)}</select></div>
+      <button type="button" class="cx-swap" id="cx-swap" aria-label="Intercambiar A y B"><span aria-hidden="true">⇄</span></button>
+      <div class="field"><label class="label" for="cx-b">Candidatura B</label><select id="cx-b">${opts(CMP.b, CMP.a)}</select></div></div>
+    <div class="cx-out" id="cx-out" aria-live="polite"></div>`;
+  const draw = () => { drawCmpx(); $("#cx-a").innerHTML = opts(CMP.a, CMP.b); $("#cx-b").innerHTML = opts(CMP.b, CMP.a); };
+  $("#cx-a").addEventListener("change", (e) => { CMP.a = e.target.value; draw(); });
+  $("#cx-b").addEventListener("change", (e) => { CMP.b = e.target.value; draw(); });
+  $("#cx-swap").addEventListener("click", () => { [CMP.a, CMP.b] = [CMP.b, CMP.a]; draw(); $("#cx-swap").classList.toggle("flip"); });
+  drawCmpx();
+}
+function drawCmpx() {
+  const a = CMP.a, b = CMP.b, pa = P[a], pb = P[b], out = $("#cx-out"); if (!out) return;
+  const both = BANK.questions.filter((q) => q.pos[a] && q.pos[b]);
+  const gap = (q) => Math.abs(q.pos[a] - q.pos[b]);
+  const agree = both.length ? Math.round((both.reduce((t, q) => t + (1 - gap(q) / 4), 0) / both.length) * 100) : null;
+  const same = both.filter((q) => gap(q) <= 1).length, far = both.filter((q) => gap(q) >= 3).length, mid = both.length - same - far;
+  const estp = (q, pid) => (q.est.includes(pid) ? " (est.)" : "");
+  const item = (q) => `<li><b>${esc(q.short || q.text)}</b><span class="cx-pos"><span class="cx-p" style="--pc:${pa.color}"><i></i>${esc(pa.ab)}: ${esc(answerText(q, q.pos[a], true))}${estp(q, a)}</span><span class="cx-p" style="--pc:${pb.color}"><i></i>${esc(pb.ab)}: ${esc(answerText(q, q.pos[b], true))}${estp(q, b)}</span></span></li>`;
+  const rank = (q) => gap(q) * 10 + (q.est.includes(a) ? 1 : 0) + (q.est.includes(b) ? 1 : 0);
+  const close = both.filter((q) => gap(q) === 0).sort((x, y) => rank(x) - rank(y) || x.prio - y.prio).slice(0, 4);
+  const apart = both.filter((q) => gap(q) >= 2).sort((x, y) => gap(y) - gap(x) || rank(x) - rank(y) || x.prio - y.prio).slice(0, 4);
+  const dims = BANK.dims.map((d) => { const va = PARTY_DIM[a] && PARTY_DIM[a][d.id], vb = PARTY_DIM[b] && PARTY_DIM[b][d.id];
+    const mk = (v, pc, n) => v === undefined ? "" : `<i class="cx-m ${n}" style="left:${(v + 100) / 2}%;--pc:${pc}" title="${esc(n === "ma" ? pa.ab : pb.ab)}: ${signed(v)}"></i>`;
+    const txt = `${pa.ab} ${va === undefined ? "sin datos" : signed(va)} · ${pb.ab} ${vb === undefined ? "sin datos" : signed(vb)}`;
+    return `<li><span class="cx-dn">${esc(d.name)}</span><span class="cx-dt" role="img" aria-label="${esc(d.name)}, de ${esc(d.a)} a ${esc(d.b)}: ${esc(txt)}">${mk(va, pa.color, "ma")}${mk(vb, pb.color, "mb")}</span><span class="cx-de"><em>${esc(d.a)}</em><em>${esc(d.b)}</em></span></li>`; }).join("");
+  const head = (pid) => `<div class="cx-card" style="--pc:${P[pid].color}">${logo(pid)}<div><b>${esc(P[pid].name)}</b><span>${esc(P[pid].tag)}</span></div></div>`;
+  out.innerHTML = `<div class="cx-head">${head(a)}<span class="cx-vs" aria-hidden="true">VS</span>${head(b)}</div>
+    ${agree === null ? `<p class="cx-none">No hay preguntas en las que ambas tengan postura conocida.</p>` : `<div class="cx-agree"><div class="cx-big"><b>${agree} %</b><span>de acuerdo medio en las ${both.length} preguntas en las que ambas tienen postura</span></div>
+      <div class="cx-stack" role="img" aria-label="${same} preguntas con posturas cercanas, ${mid} intermedias y ${far} muy distintas"><span class="s1" style="flex:${same || 0.0001}"></span><span class="s2" style="flex:${mid || 0.0001}"></span><span class="s3" style="flex:${far || 0.0001}"></span></div>
+      <ul class="cx-leg"><li><i class="s1"></i><b>${same}</b> cercanas (0 o 1 punto)</li><li><i class="s2"></i><b>${mid}</b> intermedias</li><li><i class="s3"></i><b>${far}</b> muy distintas (3 o 4 puntos)</li></ul></div>`}
+    <section class="cx-sec" aria-labelledby="cx-dh"><h3 id="cx-dh">Las siete dimensiones</h3>
+      <p class="cx-key"><span class="cx-p" style="--pc:${pa.color}"><i></i>${esc(pa.name)}</span><span class="cx-p" style="--pc:${pb.color}"><i></i>${esc(pb.name)}</span></p>
+      <ul class="cx-dims">${dims}</ul></section>
+    <div class="cx-two">
+      <section class="cx-sec" aria-labelledby="cx-ch"><h3 id="cx-ch">Dónde coinciden</h3>${close.length ? `<ul class="cx-list">${close.map(item).join("")}</ul>` : `<p class="cx-none">Sin preguntas con la misma postura.</p>`}</section>
+      <section class="cx-sec" aria-labelledby="cx-xh"><h3 id="cx-xh">Dónde se diferencian</h3>${apart.length ? `<ul class="cx-list">${apart.map(item).join("")}</ul>` : `<p class="cx-none">Sin diferencias de 2 puntos o más.</p>`}</section>
+    </div>
+    <p class="cx-note">Las posturas estimadas se marcan con «est.» y pesan menos. Comparar no cambia tu resultado ni indica cuál es mejor. <button type="button" class="link-btn" data-go="explorer" data-party="${a}" style="padding:0">Ver todas las posturas de ${esc(pa.ab)}</button> · <button type="button" class="link-btn" data-go="explorer" data-party="${b}" style="padding:0">de ${esc(pb.ab)}</button></p>`;
 }
 function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
@@ -1954,7 +2003,7 @@ function siteUrl() {
 }
 const siteHost = () => siteUrl().replace(/^https?:\/\//, "").replace(/\/$/, "");
 
-const SH = { fmt: "story", party: true, text: "", edited: false, blobs: {}, urls: {}, gen: 0 };
+const SH = { fmt: "story", theme: "light", party: true, text: "", edited: false, blobs: {}, urls: {}, gen: 0 };
 const FMT = {
   story: { label: "Historia", hint: "9:16 · 1080 × 1920", w: 1080, h: 1920, file: "historia" },
   square: { label: "Cuadrada", hint: "1:1 · 1080 × 1080", w: 1080, h: 1080, file: "cuadrada" },
@@ -2001,6 +2050,9 @@ function renderShare() {
       <figure class="card-prev">
         <div class="fmt-tabs" role="radiogroup" aria-label="Formato de la imagen">
           ${Object.entries(FMT).map(([k, f]) => `<label><input type="radio" name="sh-fmt" value="${k}"${SH.fmt === k ? " checked" : ""}><span><b>${f.label}</b><small>${f.hint}</small></span></label>`).join("")}
+        </div>
+        <div class="theme-tabs" role="radiogroup" aria-label="Estilo de la imagen">
+          ${[["light", "Claro"], ["dark", "Oscuro"]].map(([k, l]) => `<label><input type="radio" name="sh-theme" value="${k}"${SH.theme === k ? " checked" : ""}><span><i class="th-${k}" aria-hidden="true"></i>${l}</span></label>`).join("")}
         </div>
         <div class="card-frame" data-fmt="${SH.fmt}"><img id="sh-img" alt="Vista previa de tu tarjeta de resultado" hidden><p class="card-loading" id="sh-loading">Generando la imagen…</p></div>
         <figcaption class="small muted">La imagen se crea en tu dispositivo con tu resultado. Puedes descargarla o, en el móvil, mantenerla pulsada para guardarla.</figcaption>
@@ -2134,6 +2186,7 @@ function bindShare() {
   });
   root.addEventListener("change", (e) => {
     if (e.target.name === "sh-fmt") { SH.fmt = e.target.value; refreshCard(); }
+    else if (e.target.name === "sh-theme") { SH.theme = e.target.value; invalidateCards(); refreshCard(); }
     else if (e.target.id === "sh-party") {
       SH.party = e.target.checked; SH.edited = false; SH.text = buildShareText();
       $("#sh-text").value = SH.text; updateShareLinks(); invalidateCards(); refreshCard();
@@ -2155,7 +2208,12 @@ function bindShare() {
 }
 
 // ── Dibujo de la tarjeta (canvas)
-const CC = { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F" };
+const CC = { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F", onMark: "#111318" };
+// Estilos de la tarjeta de resultado (8 nov): el oscuro destaca más en las redes. «onMark» = texto sobre el amarillo, siempre oscuro.
+const CARD_THEMES = {
+  light: { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F", onMark: "#111318" },
+  dark: { paper: "#07090C", sheet: "#12151B", ink: "#F4F5F0", ink2: "#CBCFD8", ink3: "#9EA4B0", rule: "#343A45", rule2: "#222730", mark: "#F6DD2F", onMark: "#111318" }
+};
 const cf = (w, s, fam = "Archivo") => `${w} ${s}px "${fam}", system-ui, -apple-system, sans-serif`;
 function fontsReady() {
   if (!document.fonts || !document.fonts.load) return Promise.resolve();
@@ -2204,7 +2262,7 @@ function drawDims(g, x, y, w, rowH, M, opts) {
     g.strokeStyle = CC.rule; g.lineWidth = 3; g.beginPath(); g.moveTo(trackX + trackW / 2, cy - opts.bar); g.lineTo(trackX + trackW / 2, cy + opts.bar); g.stroke();
     if (!o) return;
     const px = trackX + (o.v + 100) / 200 * trackW, cx = trackX + trackW / 2, bh = opts.bar * 1.1;
-    if (Math.abs(px - cx) > 1) { g.fillStyle = CC.mark; g.strokeStyle = CC.ink; g.lineWidth = 2.5; rrect(g, Math.min(px, cx), cy - bh / 2, Math.abs(px - cx), bh, bh / 2); g.fill(); g.stroke(); }
+    if (Math.abs(px - cx) > 1) { g.fillStyle = CC.mark; g.strokeStyle = CC.onMark; g.lineWidth = 2.5; rrect(g, Math.min(px, cx), cy - bh / 2, Math.abs(px - cx), bh, bh / 2); g.fill(); g.stroke(); }
     g.fillStyle = CC.ink; g.beginPath(); g.arc(px, cy, opts.bar * 0.95, 0, Math.PI * 2); g.fill();
     g.strokeStyle = CC.sheet; g.lineWidth = 3; g.stroke();
   });
@@ -2212,18 +2270,18 @@ function drawDims(g, x, y, w, rowH, M, opts) {
 }
 function drawParty(g, x, y, w, h, M, st, big) {
   const top = M.prov[0];
-  g.fillStyle = CC.mark; g.strokeStyle = CC.ink; g.lineWidth = 3; rrect(g, x, y, w, h, 14); g.fill(); g.stroke();
+  g.fillStyle = CC.mark; g.strokeStyle = CC.onMark; g.lineWidth = 3; rrect(g, x, y, w, h, 14); g.fill(); g.stroke();
   const pad = big * 0.5;
-  g.fillStyle = CC.ink; g.font = cf(700, big * 0.3); stretch(g, "semi-condensed");
+  g.fillStyle = CC.onMark; g.font = cf(700, big * 0.3); stretch(g, "semi-condensed");
   g.fillText(`MI MAYOR COINCIDENCIA EN ${PROV[st.prov].name.toUpperCase()}`, x + pad, y + pad + big * 0.18); stretch(g, "normal");
   const sw = big * 0.9, sy = y + h - pad - sw;
   g.fillStyle = P[top.pid].color; rrect(g, x + pad, sy, sw, sw, 8); g.fill();
   g.fillStyle = textOn(P[top.pid].color); g.font = cf(900, sw * 0.24); g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(P[top.pid].ab, x + pad + sw / 2, sy + sw / 2); g.textAlign = "left"; g.textBaseline = "alphabetic";
   g.font = cf(900, big * 1.45); const pctTxt = `${top.pct}%`; const pw = g.measureText(pctTxt).width;
-  g.fillStyle = CC.ink; g.fillText(pctTxt, x + w - pad - pw, y + h - pad);
+  g.fillStyle = CC.onMark; g.fillText(pctTxt, x + w - pad - pw, y + h - pad);
   const nameMax = w - pad * 3 - sw - pw;
   const fl = fitLines(g, pName(top.pid, st.prov).toUpperCase(), nameMax, 2, [big * 0.62, big * 0.54, big * 0.46, big * 0.4, big * 0.34], 900);
-  g.font = cf(900, fl.size); g.fillStyle = CC.ink;
+  g.font = cf(900, fl.size); g.fillStyle = CC.onMark;
   fl.lines.forEach((l, i) => g.fillText(l, x + pad * 1.4 + sw, sy + sw / 2 + fl.size * 0.35 + (i - (fl.lines.length - 1) / 2) * fl.size * 1.05));
 }
 // Siguientes coincidencias (tarjetas de los tests por tema): color, nombre, barra y porcentaje
@@ -2246,12 +2304,17 @@ function drawNext(g, x, y, w, rowH, M, st, fs, n) {
 }
 async function drawCard(fmt) {
   await fontsReady();
+  const saved = { ...CC }; Object.assign(CC, CARD_THEMES[SH.theme] || CARD_THEMES.light);
+  try { return drawCardIn(fmt); } finally { Object.assign(CC, saved); }
+}
+function drawCardIn(fmt) {
   const st = S, M = MODEL, f = FMT[fmt], W = f.w, H = f.h;
   const c = document.createElement("canvas"); c.width = W; c.height = H;
   const g = c.getContext("2d");
   g.fillStyle = CC.paper; g.fillRect(0, 0, W, H);
   const m = fmt === "wide" ? 28 : 48;
   g.fillStyle = CC.sheet; g.strokeStyle = CC.ink; g.lineWidth = 4; rrect(g, m, m, W - m * 2, H - m * 2, 18); g.fill(); g.stroke();
+  if (SH.theme === "dark") { g.save(); rrect(g, m, m, W - m * 2, H - m * 2, 18); g.clip(); g.strokeStyle = CC.rule2; g.lineWidth = 1.5; const gs = fmt === "wide" ? 36 : 54; for (let gx = m; gx < W - m; gx += gs) { g.beginPath(); g.moveTo(gx, m); g.lineTo(gx, H - m); g.stroke(); } for (let gy = m; gy < H - m; gy += gs) { g.beginPath(); g.moveTo(m, gy); g.lineTo(W - m, gy); g.stroke(); } g.restore(); }
   const head = profileFirst(M), withParty = SH.party && M.prov[0];
   const L = m + (fmt === "wide" ? 36 : 56), R = W - L, CW = R - L;
   const line = (y) => { g.strokeStyle = CC.ink; g.lineWidth = 4; g.beginPath(); g.moveTo(m, y); g.lineTo(W - m, y); g.stroke(); };
@@ -2267,7 +2330,7 @@ async function drawCard(fmt) {
     g.font = cf(600, s * 0.78); g.fillStyle = CC.ink2; const u = siteHost(); g.fillText(u, R - g.measureText(u).width, y);
   };
   if (fmt === "story") {
-    drawBrand(g, L, m + 104, 54); label(topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · ELECCIONES DEL 29N", L, m + 176, 26); line(m + 214);
+    drawBrand(g, L, m + 104, 54); label(topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · NO RECOMIENDA VOTO", L, m + 176, 26); line(m + 214);
     let y = m + 300; label("MI RESULTADO", L, y, 28); y += 30;
     const fl = fitLines(g, head, CW, 5, [74, 66, 60, 54, 50]); g.fillStyle = CC.ink;
     fl.lines.forEach((l, i) => { g.font = cf(850, fl.size); g.fillText(l, L, y + fl.size * (i + 1) * 1.06); });
@@ -2275,7 +2338,7 @@ async function drawCard(fmt) {
     if (withParty) { drawParty(g, L, y, CW, 230, M, st, 88); y += 230 + 58; }
     label(td ? "MI POSICIÓN EN ESTE TEMA" : "MIS SIETE DIMENSIONES", L, y, 26); y += 18;
     const sd = td ? { rowH: 110, y } : dimsAt(y, H - m - 170 - y, 110), rowH = sd.rowH;
-    drawDims(g, L, sd.y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 84, dims: dl });
+    drawDims(g, L, sd.y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 58, dims: dl });
     if (td && withParty) { y += rowH * nd + 60; label("OTRAS COINCIDENCIAS EN ESTE TEMA", L, y, 26); drawNext(g, L, y + 24, CW, 110, M, st, 34, 3); }
     footer(H - m - 64, 40);
   } else if (fmt === "square") {
@@ -2291,7 +2354,7 @@ async function drawCard(fmt) {
       drawNext(g, L, ny, CW, Math.min(64, nh), M, st, 24, 3);
     } else {
       const sq = dimsAt(y, H - m - 120 - y, td ? 90 : 62);
-      drawDims(g, L, sq.y, CW, sq.rowH, M, { nameW: 330, fs: 27, bar: 10, poles: !!td, dims: dl });
+      drawDims(g, L, sq.y, CW, sq.rowH, M, { nameW: 330, fs: 27, bar: 10, poles: sq.rowH >= 58, dims: dl });
     }
     footer(H - m - 40, 32);
   } else {
