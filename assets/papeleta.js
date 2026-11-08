@@ -2348,6 +2348,13 @@ function renderMethod() {
       <p class="label">Metodología</p>
       <h1 id="method-h" class="h1">Cómo funciona el Test 29N</h1>
       <p class="lede">Qué medimos, de dónde salen las posturas de los partidos, cómo se calcula tu resultado y qué límites tiene. Las cifras y tablas de esta página se calculan en directo a partir de los mismos datos que usa el test.</p>
+      <ol class="mflow" aria-label="Resumen en cinco pasos">
+        <li style="--k:0"><a href="#m-preg"><span class="mf-n">1</span><b>${qs.length}</b><span class="mf-t">preguntas en ${BANK.areas.length} áreas, con contexto neutral</span><span class="mf-go">Cómo son <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:1"><a href="#m-pos"><span class="mf-n">2</span><b>${PIDS.length}</b><span class="mf-t">candidaturas con posturas documentadas, estimadas o sin postura conocida</span><span class="mf-go">De dónde salen <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:2"><a href="#m-calc"><span class="mf-n">3</span><b>${BANK.dims.length}</b><span class="mf-t">dimensiones y una coincidencia calculada pregunta a pregunta</span><span class="mf-go">El cálculo <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:3"><a href="#m-expl"><span class="mf-n">4</span><b>${srcAll.length}</b><span class="mf-t">posturas con fuente enlazada y explicaciones hechas con tus respuestas</span><span class="mf-go">Tu resultado <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:4"><a href="#m-sol"><span class="mf-n">5</span><b>2</b><span class="mf-t">métodos de cálculo para avisarte si el resultado es frágil</span><span class="mf-go">Solidez y límites <i aria-hidden="true">→</i></span></a></li>
+      </ol>
       <div class="mgrid">
         <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
         <div class="mbody">
@@ -2396,6 +2403,14 @@ function renderMethod() {
           <section class="msec" id="m-calc"><h2 class="h2">El cálculo</h2>
             <p><b>Coincidencia con un partido.</b> Para cada pregunta que has respondido y en la que el partido tiene postura:</p>
             <p class="formula">acuerdo = 1 − |tu respuesta − su postura| ÷ 4</p>
+            <div class="mcalc" id="mcalc" aria-label="Calculadora de ejemplo">
+              <p class="mc-h">Pruébalo con un ejemplo</p>
+              <div class="mc-row"><label for="mc-a">Tu respuesta: <b id="mc-av">4</b></label><input type="range" id="mc-a" min="1" max="5" step="1" value="4"></div>
+              <div class="mc-row"><label for="mc-b">Postura del partido: <b id="mc-bv">2</b></label><input type="range" id="mc-b" min="1" max="5" step="1" value="2"></div>
+              <div class="mc-bar" aria-hidden="true"><i id="mc-fill" style="--w:50%"></i></div>
+              <p class="mc-out" id="mc-out" aria-live="polite"><b>50 %</b> de acuerdo en esta pregunta</p>
+              <p class="mc-pesos" aria-label="Pesos">${[["Importante", "×" + W_IMPORTANT], ["Área prioritaria", "×" + String(W_PRIORITY).replace(".", ",")], ["Neutral", "×" + String(W_NEUTRAL).replace(".", ",")], ["Postura estimada", "×" + String(W_ESTIMATED).replace(".", ",")]].map(([l, v]) => `<span><b>${v}</b>${l}</span>`).join("")}</p>
+            </div>
             <p>Responder lo mismo vale 100 %; estar en extremos opuestos (1 frente a 5), 0 %. La coincidencia es la media ponderada de esos acuerdos. Pesos: pregunta marcada como importante ×${W_IMPORTANT}; área prioritaria ×${String(W_PRIORITY).replace(".", ",")}; respuesta neutral ×${String(W_NEUTRAL).replace(".", ",")}; postura estimada ×${String(W_ESTIMATED).replace(".", ",")}. Algunas preguntas miden casi la misma opinión (por ejemplo, limitar el alquiler y elegir entre construir o regular precios): si respondes varias de una misma familia, en conjunto pesan como la raíz cuadrada de cuántas sean (dos pesan como 1,4 en lugar de 2), para no contar dos veces lo mismo. Si un partido tiene postura en menos de la mitad (en peso) de tus respuestas, añadimos el peso que falta con un valor neutro del 50 %, para que un partido con pocas posturas conocidas no aparezca artificialmente arriba o abajo.</p>
             <p><b>Tu posición en cada dimensión.</b> Cada respuesta se convierte en un valor de −100 a +100 (1 → −100, 3 → 0, 5 → +100) con el signo de la dirección de la pregunta, y se promedia. Las respuestas neutrales pesan la mitad; la importancia y las prioridades no cambian tu posición. La de cada partido se calcula igual con todas sus posturas del banco, ponderando las estimadas.</p>
             <p><b>Cercanía ideológica.</b> 100 % menos la distancia media entre tu posición y la del partido en las dimensiones que has respondido. Complementa a la coincidencia, que compara pregunta a pregunta.</p>
@@ -2452,6 +2467,19 @@ function renderMethod() {
         </div>
       </div>
     </div>`;
+  bindMethod();
+}
+function bindMethod() {
+  const a = $("#mc-a"), b = $("#mc-b"); if (!a) return;
+  const upd = () => { const v = 1 - Math.abs(a.value - b.value) / 4, pct = Math.round(v * 100); $("#mc-av").textContent = a.value; $("#mc-bv").textContent = b.value; $("#mc-fill").style.setProperty("--w", pct + "%"); $("#mc-out").innerHTML = `<b>${pct} %</b> de acuerdo en esta pregunta`; };
+  a.addEventListener("input", upd); b.addEventListener("input", upd); upd();
+  // índice que marca la sección que estás leyendo
+  const links = [...document.querySelectorAll("#v-method .toc a")], secs = links.map((l) => document.querySelector(l.getAttribute("href")));
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { const i = secs.indexOf(e.target); links.forEach((l, k) => { l.classList.toggle("cur", k === i); if (k === i) l.removeAttribute("aria-current"), l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); }); } }), { rootMargin: "-20% 0px -70% 0px" });
+    secs.forEach((x) => x && io.observe(x));
+    const fl = document.querySelector("#v-method .mflow"); if (fl && !reduceMotion()) { fl.classList.add("js"); new IntersectionObserver((es, o) => { if (es.some((x) => x.isIntersecting)) { fl.classList.add("in"); o.disconnect(); } }, { threshold: 0.2 }).observe(fl); }
+  }
 }
 
 // ───────────────────────────── EXPLORADOR DE POSTURAS

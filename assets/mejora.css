@@ -610,3 +610,34 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .pcx-h3 { font-family: var(--f-disp); font-stretch: 108%; font-weight: 820; font-size: 22px; padding-top: 18px; }
 @media (prefers-reduced-motion: no-preference) { @keyframes pcx-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } } .pcx-card { animation: pcx-in .5s var(--ds-ease) both; animation-delay: calc(var(--k, 0) * 28ms); } }
 @media (prefers-reduced-motion: reduce) { .pcx-card, .st, .st-d, .pcx-det { transition: none !important; animation: none !important; } }
+
+/* 5 · METODOLOGÍA («Cómo funciona»): resumen visual, calculadora de ejemplo e índice que sigue la lectura */
+.mflow { list-style: none; display: grid; gap: 12px; grid-template-columns: 1fr; padding: 28px 0 4px; margin: 0; }
+@media (min-width: 640px) { .mflow { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .mflow { grid-template-columns: repeat(5, 1fr); } }
+.mflow a { position: relative; display: grid; gap: 6px; align-content: start; height: 100%; padding: 18px 16px 14px; border: 1.5px solid var(--rule); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); text-decoration: none; color: var(--ink); transition: border-color .2s, box-shadow .25s, transform .25s var(--ds-ease); }
+.mflow a:hover { border-color: var(--ink); box-shadow: var(--ds-sh-2); transform: translateY(-3px); }
+.mf-n { position: absolute; top: 12px; right: 14px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--mark); color: var(--mark-ink); font-family: var(--f-disp); font-weight: 900; font-size: 14px; }
+.mflow b { font-family: var(--f-disp); font-weight: 900; font-stretch: 118%; font-size: 40px; line-height: 1; font-variant-numeric: tabular-nums; }
+.mf-t { font-size: 14.5px; line-height: 1.4; color: var(--ink-2); }
+.mf-go { font-weight: 750; font-size: 14px; margin-top: 4px; } .mf-go i { display: inline-block; font-style: normal; transition: transform .25s var(--ds-ease); } .mflow a:hover .mf-go i { transform: translateX(4px); }
+.toc a.cur { color: var(--ink); font-weight: 750; border-left-color: var(--ink); background: var(--mark-2, transparent); }
+@media (max-width: 979px) {
+  .toc { display: flex; gap: 8px; overflow-x: auto; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--paper); padding: 10px 0; margin-inline: -4px; scrollbar-width: none; border-bottom: 1px solid var(--rule); }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc a { flex: none; border: 1.5px solid var(--rule); border-radius: 999px; padding: 9px 14px; min-height: 40px; white-space: nowrap; background: var(--sheet); }
+  .toc a.cur { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+}
+.mcalc { display: grid; gap: 12px; max-width: 520px; padding: 16px; border: 1.5px solid var(--rule); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); }
+.mc-h { font-family: var(--f-disp); font-weight: 820; font-size: 16px; color: var(--ink); }
+.mc-row { display: grid; gap: 6px; font-size: 15px; } .mc-row b { font-variant-numeric: tabular-nums; }
+.mc-row input[type="range"] { width: 100%; min-height: 32px; accent-color: var(--ink); }
+.mc-bar { height: 12px; border-radius: 6px; background: var(--rule-2); overflow: hidden; } .mc-bar i { display: block; height: 100%; width: var(--w); background: var(--ink); transition: width .35s var(--ds-ease); }
+.mc-out { color: var(--ink-2); font-size: 15px; } .mc-out b { color: var(--ink); font-size: 22px; font-family: var(--f-disp); }
+.mc-pesos { display: flex; flex-wrap: wrap; gap: 8px; } .mc-pesos span { display: grid; gap: 2px; padding: 6px 12px; border-radius: 10px; background: var(--paper); border: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-2); } .mc-pesos b { color: var(--ink); font-size: 16px; font-family: var(--f-disp); }
+.msec { scroll-margin-top: 80px; }
+@media (prefers-reduced-motion: no-preference) {
+  .mflow.js li { opacity: 0; transform: translateY(22px); }
+  .mflow.js.in li { opacity: 1; transform: none; transition: opacity .55s var(--ds-ease) calc(var(--k, 0) * 90ms), transform .55s var(--ds-ease) calc(var(--k, 0) * 90ms); }
+}
+@media (prefers-reduced-motion: reduce) { .mflow a, .mc-bar i, .mf-go i { transition: none !important; } }
