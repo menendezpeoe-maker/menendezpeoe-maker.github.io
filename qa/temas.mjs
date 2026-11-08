@@ -52,6 +52,7 @@ console.log("Test por tema desde la portada");
   const { ctx, page } = await open();
   await page.goto(APP); await page.waitForSelector("#start-btn:not([disabled])");
   ok((await page.locator("#topic-list [data-tema]").count()) === 6, "la portada muestra los 6 tests por tema");
+  await page.evaluate(() => { const b = document.querySelector("#temas .m-fold-btn"); if (b && b.getAttribute("aria-expanded") !== "true") b.click(); }); // en el móvil el apartado viene plegado
   await page.click('#topic-list [data-tema="vivienda"]'); await page.waitForSelector("#v-quiz:not([hidden])");
   const st = await state(page);
   ok(st.mode === "tema" && st.topic === "vivienda" && JSON.stringify(st.order) === JSON.stringify(TOPICS.vivienda.ids), `empieza con las ${TOPICS.vivienda.ids.length} preguntas de vivienda`);

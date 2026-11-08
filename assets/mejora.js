@@ -315,7 +315,7 @@
      ningún texto: sigue en la página (lo leen igual los buscadores) y en ordenador todo queda como estaba.
      «Preguntas frecuentes» se queda abierta a propósito (qa/seo.mjs lo exige). WCAG 1.3.1, 2.4.6, 4.1.2. */
   const FOLD_MQ = matchMedia("(max-width: 760px)");
-  const folds = [["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+  const folds = [["how-h", ".hw"], ["diff-h", ".diff, .two-col > div > p.small"], ["temas-h", ".topic-list, :scope > p.small"], ["faq-h", ".faq"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
     const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
     return { h, sec, bodies: $$(body, sec), text: h.textContent };
   }).filter(Boolean);
@@ -333,6 +333,10 @@
   };
   buildFolds();
   FOLD_MQ.addEventListener("change", buildFolds);
+  // 8 nov: si un enlace interno (o ?tema=) apunta a algo que está dentro de un apartado plegado, se despliega antes de ir allí
+  const openFoldFor = (el) => { const sec = el && el.closest && el.closest(".m-fold"); if (!sec || sec.classList.contains("open")) return; const b = $(".m-fold-btn", sec); if (b) { b.setAttribute("aria-expanded", "true"); sec.classList.add("open"); } };
+  window.openFoldFor = openFoldFor;
+  document.addEventListener("click", (e) => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a || a.getAttribute("href").length < 2) return; const t = document.getElementById(a.getAttribute("href").slice(1)); if (t) openFoldFor(t); }, true);
 })();
 
 /* BLOQUE 15 (8 nov) · Cómo funciona: recorrido de cuatro pasos con demostración manejable

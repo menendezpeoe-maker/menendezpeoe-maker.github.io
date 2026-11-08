@@ -94,7 +94,10 @@ if (process.env.SKIP_BROWSER !== "1") {
   await p.goto(BASE); await p.waitForSelector("#start-btn:not([disabled])", { state: "attached" });
   ok((await p.title()) === home.title, "el navegador muestra el título nuevo");
   await p.locator("#faq").scrollIntoViewIfNeeded();
-  ok(await p.isVisible("#faq .faq-item:nth-child(5) p"), "las preguntas frecuentes se ven en la portada (390 px)");
+  // 8 nov: en el móvil el apartado viene plegado (como «Las 12 áreas»); el texto sigue en la página y se despliega con su botón
+  ok(await p.locator("#faq .m-fold-btn").count() === 1 && (await p.locator("#faq .faq-item").count()) === items.length && !(await p.isVisible("#faq .faq-item:nth-child(5) p")), "las preguntas frecuentes vienen plegadas en el móvil y siguen en el HTML");
+  await p.click("#faq .m-fold-btn");
+  ok(await p.isVisible("#faq .faq-item:nth-child(5) p"), "las preguntas frecuentes se ven al desplegarlas (390 px)");
   ok((await p.locator("h1:visible").count()) === 1, "un único H1 visible");
   await b.close();
 }

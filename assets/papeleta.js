@@ -2740,7 +2740,7 @@ async function boot() {
     if (!hasSaved()) { startTopic(tema, false); return; }
     // Con un test guardado no se sustituye sin preguntar: se muestra la portada con el tema señalado
     go("home", { focus: false }); const b = $(`#topic-list [data-tema="${tema}"]`);
-    if (b) { b.classList.add("is-target"); b.scrollIntoView({ block: "center" }); b.focus({ preventScroll: true }); }
+    if (b) { if (window.openFoldFor) window.openFoldFor(b); b.classList.add("is-target"); b.scrollIntoView({ block: "center" }); b.focus({ preventScroll: true }); }
     return;
   }
   if (S && S.stage === "done" && answered(S).length) { openResults(); return; }
