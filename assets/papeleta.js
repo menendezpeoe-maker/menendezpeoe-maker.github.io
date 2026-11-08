@@ -2482,6 +2482,7 @@ function renderExplorer() {
           <div class="field"><label class="label" for="ex-party">Destacar partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
           <div class="field"><label class="label" for="ex-q">Buscar</label><input id="ex-q" type="search" placeholder="Por ejemplo: alquiler, Senado, lobo…" autocomplete="off"></div>
         </div>
+        <div class="ex-focus" id="ex-focus" hidden><span id="ex-focus-t"></span><button type="button" class="btn btn-ghost btn-sm" id="ex-focus-x">Cerrar sus posturas</button></div>
         <p class="small muted" id="ex-count" aria-live="polite" style="padding-top:12px"></p>
         <h2 class="sr">Preguntas y posturas</h2>
         <div class="ex-list" id="ex-list"></div>
@@ -2490,6 +2491,7 @@ function renderExplorer() {
     bindPartyCards();
     $("#ex-area").addEventListener("change", (e) => { EX.area = e.target.value; drawExplorer(); });
     $("#ex-party").addEventListener("change", (e) => { EX.party = e.target.value; drawExplorer(); });
+    $("#ex-focus-x").addEventListener("click", () => { EX.party = ""; $("#ex-party").value = ""; drawExplorer(); $("#pcx-grid").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
     let t = 0;
     $("#ex-q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { EX.text = e.target.value.trim().toLowerCase(); drawExplorer(); }, 160); });
   }
@@ -2529,6 +2531,7 @@ function drawPartyCards() {
         <div class="pcx-act"><button type="button" data-pcx-pos="${x.pid}">Ver sus posturas</button><a href="/partidos/${x.pid}/">Ficha completa</a></div></div></div>
     </article>`;
   }).join("") || '<p class="muted">Ninguna candidatura coincide con ese filtro.</p>';
+  syncPartyFocus();
 }
 function bindPartyCards() {
   drawPartyCards();
@@ -2538,10 +2541,21 @@ function bindPartyCards() {
     const m = e.target.closest(".pcx-more");
     if (m) { const card = m.closest(".pcx-card"), open = !card.classList.contains("open"); card.classList.toggle("open", open); m.setAttribute("aria-expanded", String(open)); m.firstChild.textContent = open ? "Ver menos " : "Ver más "; return; }
     const g = e.target.closest("[data-pcx-pos]");
-    if (g) { EX.party = g.dataset.pcxPos; $("#ex-party").value = EX.party; drawExplorer(); $("#ex-q").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); }
+    if (g) {
+      const same = EX.party === g.dataset.pcxPos;
+      EX.party = same ? "" : g.dataset.pcxPos; $("#ex-party").value = EX.party; drawExplorer();
+      if (!same) $("#ex-focus").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" });
+    }
   });
 }
+function syncPartyFocus() {
+  const f = $("#ex-focus"); if (!f) return;
+  f.hidden = !EX.party;
+  if (EX.party) $("#ex-focus-t").textContent = `Mostrando las posturas de ${P[EX.party].name}`;
+  document.querySelectorAll("#pcx-grid [data-pcx-pos]").forEach((b) => { const on = b.dataset.pcxPos === EX.party; b.textContent = on ? "Cerrar sus posturas" : "Ver sus posturas"; b.setAttribute("aria-pressed", String(on)); });
+}
 function drawExplorer() {
+  syncPartyFocus();
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const needle = norm(EX.text);
   const qs = BANK.questions.filter((q) => (!EX.area || q.area === EX.area) && (!needle || norm(`${q.text} ${q.short} ${q.ctx}`).includes(needle)));

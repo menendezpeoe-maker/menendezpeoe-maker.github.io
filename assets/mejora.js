@@ -335,22 +335,65 @@
   FOLD_MQ.addEventListener("change", buildFolds);
 })();
 
-/* BLOQUE 15 (8 nov) · Cómo funciona: pasos que aparecen al hacer scroll y se despliegan
-   MEJORA: los cuatro pasos aparecen escalonados cuando entran en pantalla y cada uno se despliega con «Ver más»
-   (botón con aria-expanded y aria-controls). Sin JavaScript o con movimiento reducido, todo se ve desde el principio. */
+/* BLOQUE 15 (8 nov) · Cómo funciona: recorrido de cuatro pasos con demostración manejable
+   MEJORA: pestañas accesibles (flechas, Inicio, Fin) y una demostración por paso. Avanza sola cada 6 s mientras
+   está a la vista, se detiene al tocar cualquier cosa y no avanza con movimiento reducido. Sin JavaScript se ven los
+   cuatro pasos uno debajo de otro. */
 (function () {
-  const flow = document.querySelector(".steps.flow"); if (!flow) return;
-  const items = [...flow.querySelectorAll(".st")];
-  items.forEach((li, k) => li.style.setProperty("--k", k));
-  flow.addEventListener("click", (e) => {
-    const b = e.target.closest(".st-more"); if (!b) return;
-    const li = b.closest(".st"), open = !li.classList.contains("open");
-    li.classList.toggle("open", open); b.setAttribute("aria-expanded", String(open));
-    b.firstChild.textContent = open ? "Ver menos " : "Ver más ";
-  });
+  const hw = document.getElementById("hw"); if (!hw) return;
+  const tabs = [...hw.querySelectorAll(".hw-tab")], panels = [...hw.querySelectorAll(".hw-panel")];
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (calm || !("IntersectionObserver" in window)) return;
-  flow.classList.add("js");
-  const io = new IntersectionObserver((es) => { if (es.some((x) => x.isIntersecting)) { items.forEach((li) => li.classList.add("in")); io.disconnect(); } }, { threshold: 0.15 });
-  io.observe(flow);
+  let cur = 0, timer = 0, stopped = calm, visible = false;
+  hw.classList.add("on");
+  const show = (i, focus) => {
+    cur = (i + tabs.length) % tabs.length;
+    tabs.forEach((t, k) => { t.setAttribute("aria-selected", String(k === cur)); t.tabIndex = k === cur ? 0 : -1; });
+    panels.forEach((p, k) => { p.hidden = k !== cur; });
+    if (focus) tabs[cur].focus();
+    schedule();
+  };
+  const schedule = () => {
+    clearTimeout(timer); hw.classList.remove("play");
+    if (stopped || !visible) return;
+    void hw.offsetWidth; hw.classList.add("play");
+    timer = setTimeout(() => show(cur + 1), 6000);
+  };
+  const stop = () => { stopped = true; clearTimeout(timer); hw.classList.remove("play"); };
+  tabs.forEach((t, k) => t.addEventListener("click", () => { stop(); show(k); }));
+  hw.querySelector(".hw-tabs").addEventListener("keydown", (e) => {
+    const m = { ArrowRight: cur + 1, ArrowDown: cur + 1, ArrowLeft: cur - 1, ArrowUp: cur - 1, Home: 0, End: tabs.length - 1 }[e.key];
+    if (m === undefined) return; e.preventDefault(); stop(); show(m, true);
+  });
+  hw.querySelector(".hw-stage").addEventListener("pointerdown", stop);
+  hw.querySelector(".hw-stage").addEventListener("focusin", stop);
+  // Demo 1: versión
+  const modes = hw.querySelector(".hw-modes"), out0 = panels[0].querySelector(".hw-out"), meter = panels[0].querySelector(".hw-meter i");
+  modes.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    modes.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    out0.innerHTML = "<b>" + b.dataset.n + "</b> preguntas · unos <b>" + b.dataset.m + "</b> minutos";
+    meter.style.setProperty("--w", Math.max(8, Math.round(b.dataset.n / 107 * 100)) + "%");
+  });
+  // Demo 2: respuesta
+  const scale = panels[1].querySelector(".hw-scale"), out1 = panels[1].querySelector(".hw-out"), star = panels[1].querySelector(".hw-star"), skip = panels[1].querySelector(".hw-skip");
+  const say = (t) => { out1.textContent = t; };
+  scale.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    skip.setAttribute("aria-pressed", "false");
+    scale.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    say("Has marcado " + b.textContent + ": " + b.dataset.t + (star.getAttribute("aria-pressed") === "true" ? ", y te importa mucho." : "."));
+  });
+  star.addEventListener("click", () => { const on = star.getAttribute("aria-pressed") !== "true"; star.setAttribute("aria-pressed", String(on)); star.textContent = (on ? "★" : "☆") + " Me importa mucho"; say(on ? "Esta pregunta pesará más en tu resultado." : "Vuelve a pesar lo normal."); });
+  skip.addEventListener("click", () => { const on = skip.getAttribute("aria-pressed") !== "true"; skip.setAttribute("aria-pressed", String(on)); scale.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", "false")); say(on ? "«No lo sé»: esta pregunta no cuenta en tu resultado." : "Pulsa una respuesta."); });
+  // Demo 3: áreas (máximo tres)
+  const areas = panels[2].querySelector(".hw-areas"), out2 = panels[2].querySelector(".hw-out");
+  areas.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const on = b.getAttribute("aria-pressed") === "true", n = areas.querySelectorAll('[aria-pressed="true"]').length;
+    if (!on && n >= 3) { out2.innerHTML = "Ya tienes <b>3</b> de 3. Quita una para elegir otra."; return; }
+    b.setAttribute("aria-pressed", String(!on));
+    const m = areas.querySelectorAll('[aria-pressed="true"]').length;
+    out2.innerHTML = "<b>" + m + "</b> de 3 áreas elegidas" + (m ? "" : ". Sin elegir, todas pesan igual.");
+  });
+  if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => { visible = en.isIntersecting; schedule(); }, { threshold: 0.4 }).observe(hw);
 })();

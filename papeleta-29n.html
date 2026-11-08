@@ -86,7 +86,66 @@
 
     <section class="wrap band" aria-labelledby="how-h">
       <h2 id="how-h" class="h2">Cómo funciona</h2>
-      <ol class="steps flow"><li class="st" data-i="0"><span class="st-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></svg></span><span class="st-n" aria-hidden="true">1</span><b>Elige tu versión</b><span class="st-t">Desde 15 preguntas (unos 3 minutos) hasta las 107 de la versión completa.</span><button type="button" class="st-more" aria-expanded="false" aria-controls="st-d0">Ver más <i aria-hidden="true"></i></button><div class="st-d" id="st-d0" role="region" aria-label="Más sobre «Elige tu versión»"><p>Puedes ampliar a una versión más larga sin perder lo ya respondido. Tus respuestas se guardan solo en tu navegador.</p></div></li><li class="st" data-i="1"><span class="st-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg></span><span class="st-n" aria-hidden="true">2</span><b>Responde</b><span class="st-t">Del 1 al 5, o «No lo sé». Marca con una estrella lo que más te importa.</span><button type="button" class="st-more" aria-expanded="false" aria-controls="st-d1">Ver más <i aria-hidden="true"></i></button><div class="st-d" id="st-d1" role="region" aria-label="Más sobre «Responde»"><p>Cada pregunta trae un contexto neutral, con los argumentos de ambos lados, que puedes abrir cuando lo necesites.</p></div></li><li class="st" data-i="2"><span class="st-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9-4.3-4.1 5.9-.8z"/></svg></span><span class="st-n" aria-hidden="true">3</span><b>Prioriza</b><span class="st-t">Al final puedes elegir hasta tres áreas que pesen más en tu resultado. Es opcional.</span><button type="button" class="st-more" aria-expanded="false" aria-controls="st-d2">Ver más <i aria-hidden="true"></i></button><div class="st-d" id="st-d2" role="region" aria-label="Más sobre «Prioriza»"><p>Sirve para que lo que más te importa cuente más. Si no eliges nada, todas las áreas pesan igual.</p></div></li><li class="st" data-i="3"><span class="st-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m5 10V5m5 14v-7m5 7v-4"/></svg></span><span class="st-n" aria-hidden="true">4</span><b>Entiende tu resultado</b><span class="st-t">Tu perfil en siete dimensiones, un mapa y tu coincidencia con cada candidatura.</span><button type="button" class="st-more" aria-expanded="false" aria-controls="st-d3">Ver más <i aria-hidden="true"></i></button><div class="st-d" id="st-d3" role="region" aria-label="Más sobre «Entiende tu resultado»"><p>Cada postura enlaza su fuente y las estimadas se marcan como tales. La coincidencia no es una probabilidad de voto.</p></div></li></ol>
+      <div class="hw" id="hw">
+        <div class="hw-tabs" role="tablist" aria-label="Los cuatro pasos del test">
+          <button type="button" role="tab" class="hw-tab" id="hw-t0" aria-controls="hw-p0" aria-selected="true"><span class="hw-n">1</span><span class="hw-l">Elige tu versión</span></button>
+          <button type="button" role="tab" class="hw-tab" id="hw-t1" aria-controls="hw-p1" aria-selected="false" tabindex="-1"><span class="hw-n">2</span><span class="hw-l">Responde</span></button>
+          <button type="button" role="tab" class="hw-tab" id="hw-t2" aria-controls="hw-p2" aria-selected="false" tabindex="-1"><span class="hw-n">3</span><span class="hw-l">Prioriza</span></button>
+          <button type="button" role="tab" class="hw-tab" id="hw-t3" aria-controls="hw-p3" aria-selected="false" tabindex="-1"><span class="hw-n">4</span><span class="hw-l">Entiende tu resultado</span></button>
+        </div>
+        <div class="hw-prog" aria-hidden="true"><i></i></div>
+        <div class="hw-stage">
+          <div class="hw-panel" role="tabpanel" id="hw-p0" aria-labelledby="hw-t0">
+            <div class="hw-txt"><h3>Elige tu versión</h3><p>Desde 15 preguntas (unos 3 minutos) hasta las 107 de la versión completa. Puedes ampliar sin perder lo ya respondido.</p></div>
+            <div class="hw-demo" aria-label="Demostración: elige una versión">
+              <div class="hw-modes" role="radiogroup" aria-label="Versión de ejemplo">
+                <button type="button" role="radio" aria-checked="true" data-n="15" data-m="3">Rápida<b>15</b></button>
+                <button type="button" role="radio" aria-checked="false" data-n="24" data-m="5">Exprés<b>24</b></button>
+                <button type="button" role="radio" aria-checked="false" data-n="48" data-m="10">Media<b>48</b></button>
+                <button type="button" role="radio" aria-checked="false" data-n="107" data-m="20">Completa<b>107</b></button>
+              </div>
+              <div class="hw-meter" aria-hidden="true"><i style="--w:14%"></i></div>
+              <p class="hw-out" aria-live="polite"><b>15</b> preguntas · unos <b>3</b> minutos</p>
+            </div>
+          </div>
+          <div class="hw-panel" role="tabpanel" id="hw-p1" aria-labelledby="hw-t1" hidden>
+            <div class="hw-txt"><h3>Responde</h3><p>Del 1 al 5, o «No lo sé». Marca con una estrella lo que más te importa. Cada pregunta trae un contexto neutral con los argumentos de ambos lados.</p></div>
+            <div class="hw-demo" aria-label="Demostración: responde a una afirmación">
+              <p class="hw-q"><span>Ejemplo de afirmación</span>«El transporte público debería ser más barato.»</p>
+              <div class="hw-scale" role="radiogroup" aria-label="Respuesta de ejemplo">
+                <button type="button" role="radio" aria-checked="false" data-t="Totalmente en desacuerdo">1</button>
+                <button type="button" role="radio" aria-checked="false" data-t="En desacuerdo">2</button>
+                <button type="button" role="radio" aria-checked="false" data-t="Ni de acuerdo ni en desacuerdo">3</button>
+                <button type="button" role="radio" aria-checked="false" data-t="De acuerdo">4</button>
+                <button type="button" role="radio" aria-checked="false" data-t="Totalmente de acuerdo">5</button>
+              </div>
+              <div class="hw-row"><button type="button" class="hw-star" aria-pressed="false">☆ Me importa mucho</button><button type="button" class="hw-skip" aria-pressed="false">No lo sé</button></div>
+              <p class="hw-out" aria-live="polite">Pulsa una respuesta: es solo un ejemplo y no se guarda.</p>
+            </div>
+          </div>
+          <div class="hw-panel" role="tabpanel" id="hw-p2" aria-labelledby="hw-t2" hidden>
+            <div class="hw-txt"><h3>Prioriza</h3><p>Al final puedes elegir hasta tres áreas que pesen más en tu resultado. Es opcional: si no eliges nada, todas pesan igual.</p></div>
+            <div class="hw-demo" aria-label="Demostración: elige hasta tres áreas">
+              <div class="hw-areas" role="group" aria-label="Áreas de ejemplo">
+                <button type="button" aria-pressed="false">Economía</button><button type="button" aria-pressed="false">Vivienda</button><button type="button" aria-pressed="false">Sanidad</button>
+                <button type="button" aria-pressed="false">Educación</button><button type="button" aria-pressed="false">Medioambiente</button><button type="button" aria-pressed="false">Justicia</button>
+              </div>
+              <p class="hw-out" aria-live="polite"><b>0</b> de 3 áreas elegidas</p>
+            </div>
+          </div>
+          <div class="hw-panel" role="tabpanel" id="hw-p3" aria-labelledby="hw-t3" hidden>
+            <div class="hw-txt"><h3>Entiende tu resultado</h3><p>Tu perfil en siete dimensiones, un mapa y tu coincidencia con cada candidatura. Cada postura enlaza su fuente y las estimadas se marcan como tales. No es una recomendación de voto.</p></div>
+            <div class="hw-demo" aria-label="Ilustración de un resultado">
+              <ul class="hw-bars" aria-label="Ejemplo ilustrativo con candidaturas ficticias">
+                <li><span>Candidatura A</span><i style="--w:72%"></i><b>72 %</b></li>
+                <li><span>Candidatura B</span><i style="--w:55%"></i><b>55 %</b></li>
+                <li><span>Candidatura C</span><i style="--w:38%"></i><b>38 %</b></li>
+              </ul>
+              <p class="hw-out">Ejemplo ilustrativo con candidaturas ficticias. La coincidencia no es una probabilidad de voto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="wrap band two-col" aria-labelledby="diff-h">
