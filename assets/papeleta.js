@@ -794,13 +794,60 @@ const NAV_ICON = {
   least: '<circle cx="10" cy="10" r="7"/><path d="M7.2 7.2l5.6 5.6M12.8 7.2l-5.6 5.6"/>',
   pols: '<circle cx="7" cy="7" r="2.6"/><circle cx="14" cy="8" r="2.1"/><path d="M2.5 16c.6-2.8 2.4-4.2 4.5-4.2s3.9 1.4 4.5 4.2M12 12.4c2.2-.4 4.4.8 5.3 3.6"/>'
 };
+// Secciones del resultado (8 nov): se ven de una en una. Un solo sitio para nombres, grupos y descripciones.
+const RT_GROUPS = ["Sobre ti", "Candidaturas", "Tus respuestas"];
+const RT_META = [
+  { id: "summary", g: 0, label: "Resultado", desc: "Tu mayor coincidencia y lo esencial de tu resultado." },
+  { id: "portrait", g: 0, label: "Tu perfil explicado", desc: "Qué dicen de ti tus respuestas, con sus propias palabras." },
+  { id: "dims", g: 0, label: "Siete dimensiones", desc: "Dónde te sitúas en cada eje y qué respuestas te llevan ahí." },
+  { id: "areas", g: 0, label: "Por áreas", desc: "Tu posición en cada tema: economía, vivienda, sanidad…" },
+  { id: "traits", g: 0, label: "Certezas y dudas", desc: "En qué eres firme, en qué dudas y qué respuestas se contradicen." },
+  { id: "parties", g: 1, label: "Coincidencia por partido", desc: "Cuánto coincides con cada candidatura de tu provincia." },
+  { id: "versus", g: 1, label: "Comparar dos partidos", desc: "Dónde se parecen y dónde se diferencian, respecto a ti." },
+  { id: "map", g: 1, label: "Mapa político", desc: "Tu posición entre las candidaturas, en un mapa." },
+  { id: "how", g: 1, label: "Cómo se calcula", desc: "El método paso a paso, con tus propios datos." },
+  { id: "solid", g: 1, label: "Fiabilidad", desc: "Cuánto fiarte de este resultado y por qué." },
+  { id: "share", g: 2, label: "Compartir", desc: "Una tarjeta para redes, sin tus respuestas." },
+  { id: "review", g: 2, label: "Revisar mis respuestas", desc: "Cambia cualquiera y mira cómo se mueve todo." },
+  { id: "least", g: 2, label: "Con quién menos coincides", desc: "Las candidaturas más lejanas a tus respuestas." },
+  { id: "pols", g: 2, label: "Políticos afines", desc: "Políticos con posturas propias documentadas." }
+];
+const rtList = () => RT_META.filter((m) => !(SHARED && m.id === "share"));
 function navLinks() {
-  const groups = [
-    ["Tu perfil", [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]]],
-    ["Las candidaturas", [["parties", "Partidos"], ["how", "Cómo se calcula"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]]],
-    ["Tus respuestas", [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]]
-  ];
-  return groups.map(([t, g]) => `<p class="np-g">${t}</p><ul class="np-list">${g.map(([id, l]) => `<li><a href="#r-${id}" data-sec="r-${id}" data-ico="${id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg></span><span>${l}</span></a></li>`).join("")}</ul>`).join("");
+  return RT_GROUPS.map((t, gi) => `<p class="np-g">${t}</p><ul class="np-list">${rtList().filter((m) => m.g === gi).map((m) => `<li><a href="#r-${m.id}" data-sec="r-${m.id}" data-ico="${m.id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><span>${m.label}</span></a></li>`).join("")}</ul>`).join("");
+}
+// Una sección cada vez: la elegida (y las que van con ella) se ven; el resto, no
+let RT_CUR = "summary";
+const rtOn = (id, cur) => id === cur || ((id === "friend" || id === "tiles") && cur === "summary") || (id === "support" && (cur === "summary" || cur === "share"));
+function rtSyncNav() {
+  const nav = $("#v-results .res-nav"); if (!nav) return;
+  const list = rtList(), i = Math.max(0, list.findIndex((m) => m.id === RT_CUR)), pct = Math.round(((i + 1) / list.length) * 100);
+  nav.querySelectorAll("#nav-panel a").forEach((a) => { if (a.dataset.sec === "r-" + RT_CUR) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); });
+  $("#nav-pct").textContent = pct; $("#nav-idx").textContent = i + 1;
+  $("#nav-bar").style.transform = `scaleX(${pct / 100})`; nav.querySelector(".rg-fg").style.strokeDasharray = `${pct} 100`;
+}
+function rtSyncFoot() {
+  const f = $("#rt-foot"); if (!f) return;
+  const list = rtList(), i = list.findIndex((m) => m.id === RT_CUR), pv = list[i - 1], nx = list[i + 1];
+  f.innerHTML = `${pv ? `<a href="#r-${pv.id}" class="rt-p"><span aria-hidden="true">←</span> ${esc(pv.label)}</a>` : "<span></span>"}${nx ? `<a href="#r-${nx.id}" class="rt-n">${esc(nx.label)} <span aria-hidden="true">→</span></a>` : ""}`;
+}
+function showSection(id, opts = {}) {
+  id = String(id).replace(/^#?r-/, "");
+  if (!rtList().some((m) => m.id === id)) return null;
+  RT_CUR = id;
+  $$("#v-results .res-sec[id]").forEach((x) => x.classList.toggle("on", rtOn(x.id.replace(/^r-/, ""), id)));
+  rtSyncNav(); rtSyncFoot();
+  const t = $("#r-" + id);
+  if (opts.scroll !== false) { const top = $("#v-results .res-nav") || t; top.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
+  if (opts.focus !== false && t) { const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+  return t;
+}
+// Entrada visual a todas las secciones, bajo el resumen
+function renderTiles() {
+  const box = $("#r-tiles"); if (!box) return;
+  box.innerHTML = `<div class="sec-head"><p class="label">Explora tu resultado</p><h2 id="tiles-h" class="h2">Todo sobre tus respuestas, por secciones</h2>
+    <p class="sub">Toca una sección. También puedes cambiar desde el menú «Secciones», arriba a la derecha.</p></div>
+    <ul class="rt-tiles">${rtList().filter((m) => m.id !== "summary").map((m, k) => `<li style="--k:${k}"><a href="#r-${m.id}" data-sec="r-${m.id}"><span class="rt-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><b>${m.label}</b><span>${m.desc}</span></a></li>`).join("")}</ul>`;
 }
 let NAV_OBS = null, NAV_RAF = 0;
 function bindResNav() {
@@ -812,17 +859,10 @@ function bindResNav() {
   panel.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("[data-nav-close]")) setOpen(false, !!e.target.closest("[data-nav-close]")); });
   panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.stopPropagation(); setOpen(false, true); }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); const i = links.indexOf(document.activeElement); links[(i + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length].focus(); } });
-  const setActive = (id) => { for (const a of links) { if (a.dataset.sec === id) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); } };
-  const progress = () => { NAV_RAF = 0; const root = $("#v-results"); if (!root || !$("#nav-bar")) return; const h = root.offsetHeight - innerHeight, p = Math.min(1, Math.max(0, (scrollY - root.offsetTop) / (h || 1)));
-    $("#nav-bar").style.transform = `scaleX(${p})`; $("#nav-pct").textContent = Math.round(p * 100); nav.querySelector(".rg-fg").style.strokeDasharray = `${(p * 100).toFixed(1)} 100`; };
   if (!bindResNav.bound) { bindResNav.bound = true;
-    addEventListener("scroll", () => { if (!NAV_RAF && CURRENT === "results") NAV_RAF = requestAnimationFrame(progress); }, { passive: true });
     document.addEventListener("click", (e) => { const n = $("#v-results .res-nav.open"); if (n && !n.contains(e.target)) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); n.querySelector("#nav-btn").setAttribute("aria-expanded", "false"); } });
     document.addEventListener("keydown", (e) => { const n = $("#v-results .res-nav.open"); if (e.key === "Escape" && n) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); const b = n.querySelector("#nav-btn"); b.setAttribute("aria-expanded", "false"); b.focus(); } }); }
-  NAV_OBS?.disconnect();
-  NAV_OBS = new IntersectionObserver((ents) => { const vis = ents.filter((x) => x.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]; if (vis) setActive(vis.target.id); }, { rootMargin: "-30% 0px -60% 0px" });
-  for (const a of links) { const sec = document.getElementById(a.dataset.sec); if (sec) NAV_OBS.observe(sec); }
-  setActive("r-summary"); progress();
+  rtSyncNav();
 }
 
 function renderResults() {
@@ -830,7 +870,7 @@ function renderResults() {
   const next = NEXT_MODE[st.mode] || null;
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
-    <div class="wrap">
+    <div class="wrap rt">
       <nav class="res-nav" aria-label="Secciones del resultado">
         <button type="button" class="nav-btn" id="nav-btn" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true">
           <span class="nav-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle class="rg-bg" cx="18" cy="18" r="16"/><circle class="rg-fg" cx="18" cy="18" r="16" pathLength="100"/></svg><svg class="nav-ico" viewBox="0 0 20 20">${NAV_ICON.summary}</svg></span>
@@ -838,7 +878,7 @@ function renderResults() {
           <svg class="nav-chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 8l4.5 4.5L14.5 8"/></svg>
         </button>
         <div class="nav-panel" id="nav-panel" hidden>
-          <div class="np-head"><div><p class="np-t">Tu resultado</p><p class="np-s"><span id="nav-pct">0</span> % leído</p></div><button type="button" class="np-x" data-nav-close aria-label="Cerrar el menú de secciones"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+          <div class="np-head"><div><p class="np-t">Tu resultado</p><p class="np-s">Sección <span id="nav-idx">1</span> de ${rtList().length}<span id="nav-pct" hidden>0</span></p></div><button type="button" class="np-x" data-nav-close aria-label="Cerrar el menú de secciones"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
           <div class="np-bar" aria-hidden="true"><i id="nav-bar"></i></div>
           ${navLinks()}
         </div>
@@ -846,8 +886,8 @@ function renderResults() {
       <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
       <section id="r-how" class="res-sec" aria-labelledby="how-h"></section>
-      <div class="unfold-row${PREFS.full ? " is-open" : ""}"><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">${PREFS.full ? "Ocultar el análisis completo" : "Ver el análisis completo"}</button><span class="small muted unfold-note">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
-      <div id="r-full"${PREFS.full ? "" : " hidden"}>
+      <section id="r-tiles" class="res-sec" aria-labelledby="tiles-h"></section>
+      <div id="r-full">
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
       <section id="r-areas" class="res-sec" aria-labelledby="areas-h2"></section>
@@ -862,7 +902,8 @@ function renderResults() {
       <section id="r-pols" class="res-sec" aria-labelledby="pols-h"></section>
       <section id="r-support" class="res-sec" aria-labelledby="support-h"></section>
       </div>
-      <section class="res-sec" aria-label="Siguientes pasos">
+      <div class="rt-foot" id="rt-foot"></div>
+      <section class="res-sec rt-keep" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
           ${!SHARED ? `<a class="btn btn-ghost dup" href="#r-share">Compartir mi resultado</a><button type="button" class="btn btn-ghost dup" data-act="new">Repetir el test</button>` : `<button type="button" class="btn btn-primary" data-act="own-test">Hacer mi propio test</button>`}
@@ -872,7 +913,8 @@ function renderResults() {
       </section>
     </div>`;
   setTimeout(bindResNav, 0);
-  invalidateCards(); renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  invalidateCards(); renderTiles(); renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  showSection("summary", { scroll: false, focus: false });
 }
 
 function rerenderAfterEdit() {
@@ -1629,15 +1671,10 @@ function showExtraCard(pid, scroll = true) {
 // «Ver el análisis completo»: se despliega al pulsarlo o al ir a cualquier sección plegada, y se recuerda
 // Los botones «Ver su ficha» pasan a «Ocultar su ficha» mientras esa ficha está abierta
 function syncCardBtns() { $$("#v-results [data-card]").forEach((x) => { const on = UI.extra === x.dataset.card; x.textContent = on ? "Ocultar su ficha" : "Ver su ficha"; x.setAttribute("aria-expanded", String(on)); }); }
-function setFull(open) {
-  const f = $("#r-full"); if (!f) return;
-  f.hidden = !open; const b = $("#r-unfold");
-  if (b) { b.setAttribute("aria-expanded", String(open)); b.textContent = open ? "Ocultar el análisis completo" : "Ver el análisis completo"; b.closest(".unfold-row").classList.toggle("is-open", open); }
-  PREFS.full = open; savePrefs();
-}
-function unfold() { const f = $("#r-full"); if (f && f.hidden) setFull(true); }
+function setFull() { /* ya no hay un único «análisis completo» plegado: las secciones se ven de una en una */ }
+function unfold(id) { if (id) showSection(id, { scroll: false, focus: false }); }
 function focusCard(pid) {
-  unfold();
+  unfold("parties");
   const c = $(`#card-${pid}`); if (!c) return;
   c.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
   const h = c.querySelector("h3"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
@@ -1909,17 +1946,15 @@ function bindResults() {
   });
   root.addEventListener("click", (e) => {
     const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
-    if (e.target.closest("#r-unfold") && !$("#r-full").hidden) { setFull(false); const r = $("#r-unfold"); r.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); r.focus({ preventScroll: true }); return; }
-    if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
     if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
     if (e.target.closest('[data-act="print"]')) { window.print(); return; }
     const u = e.target.closest("[data-useful]"); if (u) { answerUseful(u.dataset.useful); return; }
     const a = e.target.closest('a[href^="#r-"]');
-    if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
+    if (a) { e.preventDefault(); showSection(a.getAttribute("href")); return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
     if (b.dataset.card) { if (UI.extra === b.dataset.card) { UI.extra = null; $("#pc-extra").innerHTML = ""; } else showExtraCard(b.dataset.card); syncCardBtns(); return; }
-    if (b.dataset.vs) { unfold(); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
+    if (b.dataset.vs) { unfold("versus"); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
     if (b.dataset.mapsel) { selectMap(b.dataset.mapsel); return; }
     if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; syncCardBtns(); const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
