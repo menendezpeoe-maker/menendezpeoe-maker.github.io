@@ -2510,6 +2510,7 @@ function renderExplorer() {
         <h1 id="explorer-h" class="h1">Posturas de los partidos</h1>
         <p class="lede">Todas las posturas que usa el test, pregunta a pregunta. Las estimadas aparecen con borde discontinuo y en cursiva; si un partido no tiene postura conocida en un tema, no se le asigna ninguna.</p>
       </div>
+      <div class="wrap ppw" id="ppan" hidden></div>
       <section class="wrap pcx" aria-labelledby="pcx-h">
         <h2 id="pcx-h" class="h2">Candidaturas</h2>
         <p class="small muted">Todas las que se presentan al Congreso y están en el test, con el mismo tamaño y el mismo peso visual. Van ordenadas por su peso en el Congreso y su alcance; el orden no es una recomendación.</p>
@@ -2519,13 +2520,12 @@ function renderExplorer() {
         </div>
         <p class="small muted" id="pcx-count" aria-live="polite"></p>
         <div class="pcx-grid" id="pcx-grid"></div>
-        <section class="ppan" id="ppan" aria-label="Posturas de la candidatura" hidden></section>
         <h2 class="pcx-h3">Posturas, pregunta a pregunta</h2>
       </section>
-      <div class="wrap">
+      <div class="wrap exw">
         <div class="ex-tools">
           <div class="field"><label class="label" for="ex-area">Área</label><select id="ex-area"><option value="">Todas las áreas</option>${BANK.areas.map((a) => `<option value="${a.id}">${a.letter} · ${esc(a.name)}</option>`).join("")}</select></div>
-          <div class="field"><label class="label" for="ex-party">Destacar partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
+          <div class="field"><label class="label" for="ex-party">Ver un partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
           <div class="field"><label class="label" for="ex-q">Buscar</label><input id="ex-q" type="search" placeholder="Por ejemplo: alquiler, Senado, lobo…" autocomplete="off"></div>
         </div>
         <div class="ex-focus" id="ex-focus" hidden><span id="ex-focus-t"></span><button type="button" class="btn btn-ghost btn-sm" id="ex-focus-x">Cerrar sus posturas</button></div>
@@ -2585,12 +2585,10 @@ function bindPartyCards() {
   $("#pcx-f").addEventListener("click", (e) => { const b = e.target.closest("[data-pcx-f]"); if (!b) return; PCX.f = b.dataset.pcxF; drawPartyCards(); $(`#pcx-f [data-pcx-f="${PCX.f}"]`).focus(); });
   $("#pcx-prov").addEventListener("change", (e) => { PCX.prov = e.target.value; drawPartyCards(); });
   $("#ppan").addEventListener("click", (e) => {
-    if (e.target.closest("#pp-x")) { const pid = EX.party; EX.party = ""; $("#ex-party").value = ""; drawExplorer(); const b = document.querySelector(`#pcx-grid .pcx-main[data-pcx-pos="${pid}"]`); if (b) b.focus(); return; }
-    const c = e.target.closest(".pp-c[data-q]"); if (!c) return;
-    const q = BANK.questions.find((x) => x.id === c.dataset.q), pid = EX.party, v = q.pos[pid], est = q.est.includes(pid);
-    document.querySelectorAll("#ppan .pp-c.sel").forEach((x) => x.classList.remove("sel")); c.classList.add("sel");
-    $("#pp-det").innerHTML = `<p class="pp-q"><span class="q-code">${qCode(q)}</span> ${esc(q.text)}</p>` + (v ? `<p><b>${esc(answerText(q, v))}</b> · ${est ? "estimada" : "documentada"}${srcLink(q, pid)}</p>${posWhy(q, pid) ? `<p class="small muted">${esc(posWhy(q, pid))}</p>` : ""}` : `<p><b>Sin postura conocida.</b> No se inventa: esta pregunta no cuenta para esta candidatura.</p>`);
+    if (e.target.closest("#pp-x")) { const pid = EX.party; EX.party = ""; $("#ex-party").value = ""; drawExplorer(); const bt = document.querySelector(`#pcx-grid .pcx-main[data-pcx-pos="${pid}"]`); if (bt) { bt.scrollIntoView({ block: "center" }); bt.focus({ preventScroll: true }); } return; }
+    const ch = e.target.closest("[data-pa]"); if (ch) { PP.area = ch.dataset.pa; drawPartyPanel(); const k = document.querySelector(`#ppan [data-pa="${PP.area}"]`); if (k) k.focus(); }
   });
+  $("#ppan").addEventListener("change", (e) => { if (e.target.id === "pp-src") { PP.src = e.target.checked; drawPartyPanel(); $("#pp-src").focus(); } });
   $("#pcx-grid").addEventListener("click", (e) => {
     const m = e.target.closest(".pcx-more");
     if (m) { const card = m.closest(".pcx-card"), open = !card.classList.contains("open"); card.classList.toggle("open", open); m.setAttribute("aria-expanded", String(open)); m.firstChild.textContent = open ? "Ver menos " : "Ver más "; return; }
@@ -2602,23 +2600,40 @@ function bindPartyCards() {
     }
   });
 }
+const PP = { pid: "", area: "", src: false };
 function drawPartyPanel() {
-  const box = $("#ppan"); if (!box) return;
-  if (!EX.party) { box.hidden = true; box.innerHTML = ""; return; }
+  const box = $("#ppan"), root = $("#v-explorer"); if (!box) return;
+  root.classList.toggle("po", !!EX.party);
+  if (!EX.party) { box.hidden = true; box.innerHTML = ""; PP.pid = ""; return; }
   const pid = EX.party, p = P[pid], info = pcxInfo(pid), total = BANK.questions.length;
-  const cell = (q) => { const v = q.pos[pid], est = v && q.est.includes(pid);
-    const lab = v ? `${qCode(q)}: ${answerText(q, v, true)} (${est ? "estimada" : "documentada"})` : `${qCode(q)}: sin postura conocida`;
-    return `<button type="button" class="pp-c v${v || 0}${est ? " est" : ""}" data-q="${q.id}" aria-label="${esc(lab)}" title="${esc(lab)}">${v || ""}</button>`; };
-  const areas = BANK.areas.map((a) => { const l = BANK.questions.filter((q) => q.area === a.id), k = l.filter((q) => q.pos[pid]).length;
-    return `<div class="pp-a"><h4><span>${a.letter}</span> ${esc(a.name)} <em>${k}/${l.length}</em></h4><div class="pp-r">${l.map(cell).join("")}</div></div>`; }).join("");
+  if (PP.pid !== pid) { PP.pid = pid; PP.area = ""; PP.src = false; }
+  const dpc = Math.round(((info.known - info.est) / total) * 100), epc = Math.round((info.est / total) * 100), upc = 100 - dpc - epc;
+  const row = (q) => {
+    const v = q.pos[pid], est = v && q.est.includes(pid), s = q.src && q.src[pid], why = v ? posWhy(q, pid) : "";
+    if (!v) return `<li class="pr none"><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span><span class="pr-b">Sin postura conocida</span></li>`;
+    const badge = est ? '<span class="pr-b est">Estimada</span>' : s ? '<span class="pr-b src">Con fuente</span>' : '<span class="pr-b">Documentada</span>';
+    return `<li class="pr"><details><summary><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span>
+      <span class="pr-g" role="img" aria-label="Posición ${v} de 5: ${esc(answerText(q, v, true))}"><span class="pg"><i style="--p:${(v - 1) * 25}%"></i></span><span class="pr-l">${esc(answerText(q, v, true))}</span></span>${badge}</summary>
+      <div class="pr-x"><p class="pr-t">${esc(q.text)}</p>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}<p><b>${esc(answerText(q, v))}</b> · ${est ? "estimada" : "documentada"}${srcLink(q, pid)}</p>${why ? `<p class="small muted">${esc(why)}</p>` : ""}</div></details></li>`;
+  };
+  const keep = (q) => (!PP.area || q.area === PP.area) && (!PP.src || (q.pos[pid] && q.src && q.src[pid]));
+  const groups = BANK.areas.map((a) => { const l = BANK.questions.filter((q) => q.area === a.id && keep(q)); if (!l.length) return "";
+    const all = BANK.questions.filter((q) => q.area === a.id), k = all.filter((q) => q.pos[pid]).length;
+    return `<section class="pp-a" aria-labelledby="pa-${a.id}"><h4 id="pa-${a.id}"><span>${a.letter}</span>${esc(a.name)}<em>${k} de ${all.length} con postura</em></h4><ul class="pr-l2">${l.map(row).join("")}</ul></section>`; }).join("");
   box.hidden = false;
   box.style.setProperty("--pc", p.color);
-  box.innerHTML = `<div class="pp-head">${logo(pid)}<div><h3>${esc(p.name)}</h3><p>${esc(p.tag)}</p></div><button type="button" class="btn btn-ghost btn-sm" id="pp-x">Cerrar</button></div>
-    <p class="pp-sum"><b>${info.src}</b> con fuente · <b>${info.known - info.src}</b> sin enlace o estimadas · <b>${total - info.known}</b> sin postura conocida. ${esc(info.where)}.</p>
-    <div class="pp-leg" aria-label="Leyenda"><span><i class="pp-c v1"></i>1 En desacuerdo</span><span><i class="pp-c v3"></i>3 Intermedia</span><span><i class="pp-c v5"></i>5 De acuerdo</span><span><i class="pp-c v2 est"></i>Rayas: estimada</span><span><i class="pp-c v0"></i>Vacía: sin postura</span></div>
-    <div class="pp-det" id="pp-det" aria-live="polite"><p class="pp-hint">Toca un cuadrado para leer la pregunta y su postura.</p></div>
-    <div class="pp-grid">${areas}</div>
-    <div class="pp-about"><p>${esc(p.desc)}</p>${p.props && p.props.length ? `<h4>Algunas de sus propuestas</h4><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul>` : ""}<p><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></div>`;
+  box.innerHTML = `<section class="ppan" aria-label="Posturas de ${esc(p.name)}">
+    <button type="button" class="pp-back" id="pp-x"><span aria-hidden="true">←</span> Todas las candidaturas</button>
+    <div class="pp-head">${logo(pid)}<div><h3>${esc(p.name)}</h3><p>${esc(p.tag)}</p><p class="pp-w">${esc(info.where)}</p></div></div>
+    <div class="pp-stats"><div><b>${info.src}</b><span>con fuente enlazada</span></div><div><b>${info.est}</b><span>estimadas</span></div><div><b>${total - info.known}</b><span>sin postura conocida</span></div></div>
+    <div class="stack" role="img" aria-label="${dpc} % documentadas, ${epc} % estimadas, ${upc} % sin postura conocida"><span class="sk-d" style="--w:${dpc}%"></span><span class="sk-e" style="--w:${epc}%"></span><span class="sk-u" style="--w:${upc}%"></span></div>
+    <p class="pp-about">${esc(p.desc)}</p>
+    <div class="pp-tools"><div class="pp-chips" role="group" aria-label="Filtrar por área"><button type="button" data-pa="" aria-pressed="${!PP.area}">Todas</button>${BANK.areas.map((a) => `<button type="button" data-pa="${a.id}" aria-pressed="${PP.area === a.id}" title="${esc(a.name)}">${a.letter}</button>`).join("")}</div>
+      <label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
+    <p class="pp-key"><span>Posición de 1 (En desacuerdo) a 5 (De acuerdo)</span> · toca una fila para ver el detalle y la fuente</p>
+    ${groups || '<p class="muted">Ninguna postura con ese filtro.</p>'}
+    ${p.props && p.props.length ? `<div class="pp-props"><h4>Algunas de sus propuestas</h4><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></div>` : ""}
+    <p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></section>`;
 }
 function syncPartyFocus() {
   drawPartyPanel();

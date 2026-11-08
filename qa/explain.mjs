@@ -121,7 +121,7 @@ console.log("Cómo se calcula la coincidencia con cada partido");
   ok(/Datos de PSOE: \d+ posturas documentadas, \d+ estimadas y \d+ sin postura conocida/.test(await page.innerText("#card-psoe .data-line")), "cada ficha resume el estado de sus datos");
   await page.click('#card-psoe .data-line [data-party="psoe"]');
   await page.waitForSelector("#v-explorer:not([hidden])");
-  ok((await page.inputValue("#ex-party")) === "psoe" && (await page.locator(".focus-line").count()) > 50, "«Ver todas sus posturas» abre el explorador con el partido destacado");
+  ok((await page.inputValue("#ex-party")) === "psoe" && (await page.locator("#ppan .pr").count()) > 50, "«Ver todas sus posturas» abre el explorador con el partido destacado");
   await ctx.close();
 }
 
