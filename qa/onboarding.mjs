@@ -84,22 +84,11 @@ console.log("Empezar en un toque");
   await ctx.close();
 }
 
-console.log("La pregunta de ejemplo es real");
+console.log("La portada ya no incluye pregunta de ejemplo");
 {
   const { ctx, page } = await open();
-  ok((await page.locator(".ex-scale button").count()) === 5, "la pregunta de ejemplo tiene 5 botones");
-  await page.click('.ex-scale [data-ex="2"]'); await page.waitForSelector("#v-quiz:not([hidden])");
-  const s = await saved(page);
-  ok(s.ans.C01 === 2 && s.order[0] === "C01" && s.idx === 1, "responderla guarda la respuesta y empieza el test en la siguiente");
-  ok((await page.textContent("#q-count")).startsWith("Pregunta 2 de") && s.order.length === 15, "el test sigue en la pregunta 2 de 15");
-  await page.click("#q-prev");
-  ok(await page.isChecked('#q-main input[value="2"]'), "al volver atrás se ve la respuesta de la portada");
-  // Con un test a medias, la respuesta se añade a ese test en lugar de borrarlo
-  await page.click("#q-exit"); await page.waitForSelector("#v-home:not([hidden])");
-  const before = await saved(page);
-  await page.click('.ex-scale [data-ex="5"]'); await page.waitForSelector("#v-quiz:not([hidden])");
-  const after = await saved(page);
-  ok(after.seed === before.seed && after.ans.C01 === 5, "con un test a medias, cambia esa respuesta sin empezar otro");
+  ok((await page.locator(".example, .ex-scale").count()) === 0, "la portada no tiene la pregunta de ejemplo");
+  ok((await page.locator(".trust li").count()) === 3, "las tres garantías (gratis, sin registro, contexto neutral) siguen visibles");
   await ctx.close();
 }
 

@@ -251,7 +251,6 @@ function initHome() {
     `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("");
   sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
   $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
-  $(".ex-scale").addEventListener("click", (e) => { const b = e.target.closest("[data-ex]"); if (b) startFromExample(Number(b.dataset.ex)); });
   $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="?tema=${k}" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
   $("#topic-list").addEventListener("click", (e) => { const a = e.target.closest("[data-tema]"); if (a) { e.preventDefault(); startTopic(a.dataset.tema); } });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
@@ -259,8 +258,6 @@ function initHome() {
     const n = BANK.questions.filter((q) => q.area === a.id).length;
     return `<li><span class="al">${a.letter}</span><b>${esc(a.name)}</b><span>${esc(a.intro)} ${n} preguntas.</span></li>`;
   }).join("");
-  const ex = Q.C01;
-  if (ex) { $("#ex-code").textContent = qCode(ex); $("#ex-area").textContent = AREA[ex.area].name; $("#ex-text").textContent = ex.text; $("#ex-ctx").textContent = ex.ctx; }
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
@@ -333,21 +330,6 @@ function startTopic(topic, ask = true) {
   if (!TOPICS[topic]) return;
   if (ask && hasSaved() && !confirm(`¿Empezar el test de ${TOPICS[topic].label.toLowerCase()}? Sustituirá el test que tienes guardado en este navegador.`)) return;
   newTest(topic); save(); count(`tema-${topic}`, `Test de ${TOPICS[topic].label.toLowerCase()}`, true); launchQuiz(true);
-}
-// La pregunta de ejemplo de la portada es real: responderla empieza el test con esa respuesta guardada
-function startFromExample(v) {
-  const ex = Q.C01; if (!ex) return;
-  const inProgress = S && S.stage !== "done" && S.order.includes(ex.id);
-  if (!inProgress) {
-    newTest();
-    S.order = [ex.id, ...S.order.filter((id) => id !== ex.id)];
-  }
-  S.ans[ex.id] = v;
-  const nxt = S.order.findIndex((id) => S.ans[id] === undefined);
-  S.idx = nxt < 0 ? S.order.length - 1 : nxt;
-  save();
-  toast("Respuesta guardada");
-  launchQuiz(!inProgress);
 }
 function launchQuiz(isNew) {
   renderQuestion(0);

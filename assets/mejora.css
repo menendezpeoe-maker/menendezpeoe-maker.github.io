@@ -756,3 +756,24 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .pp-list { scroll-margin-top: 16px; }
 @media (prefers-reduced-motion: reduce) { .pa-card { transition: none !important; } }
 .pr-g { gap: 8px; } .pr-l { padding-left: 2px; }
+
+/* 8 · PORTADA: sin pregunta de ejemplo; tres garantías como tarjetas y el selector de versión a todo el ancho */
+#v-home .home-grid { grid-template-columns: minmax(0, 1fr); }
+#v-home .trust { gap: 12px; border: 0; background: none; box-shadow: none; overflow: visible; margin: 4px 0 0; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#v-home .trust li { display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 4px 14px; padding: 18px 18px 16px; border: 1.5px solid var(--rule); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); transition: border-color .2s, box-shadow .25s, transform .25s var(--ds-ease); }
+#v-home .trust li + li { border-left: 1.5px solid var(--rule); }
+#v-home .trust li:hover { border-color: var(--ink); box-shadow: var(--ds-sh-2); transform: translateY(-3px); }
+#v-home .tr-i { width: 48px; height: 48px; border-radius: 14px; }
+#v-home .tr-i svg { width: 24px; height: 24px; stroke-width: 1.8; }
+.tr-t { display: grid; gap: 4px; min-width: 0; } .tr-t b { font-family: var(--f-disp); font-weight: 820; font-stretch: 108%; font-size: 17px; line-height: 1.2; }
+.tr-t small { font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--ink-2); }
+@media (max-width: 760px) {
+  #v-home .trust { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  #v-home .trust li { flex-direction: row; text-align: left; padding: 14px 16px; }
+  #v-home .tr-i { width: 44px; height: 44px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes tr-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  #v-home .trust li { animation: tr-in .55s var(--ds-ease) both; animation-delay: calc(.35s + var(--k, 0) * 90ms); }
+}
+@media (prefers-reduced-motion: reduce) { #v-home .trust li { transition: none !important; animation: none !important; } }
