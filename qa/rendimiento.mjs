@@ -53,6 +53,16 @@ const home = await measure("", "#start-btn:not([disabled])");
 console.log("  · Portada:", fmt(home));
 ok(home.kb <= BUDGET.home[0] && home.ready <= BUDGET.home[1], `la portada cabe en el presupuesto (${BUDGET.home[0]} kB, ${BUDGET.home[1]} s)`);
 ok(home.cls < 0.1, "la portada no salta al cargar (CLS < 0,1)");
+// 8 nov: la portada nunca puede quedarse oculta esperando a las tipografías (fallo real: la clase «fx» no se quitaba y había que recargar)
+{
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }); const pg = await ctx.newPage();
+  await pg.goto(SITE, { waitUntil: "commit" });
+  await pg.waitForSelector("#start-btn:not([disabled])", { timeout: 30000 });
+  await pg.waitForTimeout(4000);
+  const st = await pg.evaluate(() => ({ fx: document.documentElement.classList.contains("fx"), op: getComputedStyle(document.querySelector("#v-home .banner")).opacity }));
+  ok(!st.fx && st.op === "1", "la portada se ve a los pocos segundos (sin quedar oculta esperando a las tipografías)");
+  await ctx.close();
+}
 // Precarga de los datos (1 nov): si la petición del programa dejara de coincidir con la precarga, se descargarían dos veces
 const dup = ["data/preguntas.json", "data/partidos.json", "data/politicos.json"].filter((u) => home.urls[u] !== 1);
 ok(!dup.length, `la portada descarga cada archivo de datos una sola vez${dup.length ? ": " + dup.map((u) => `${u} ×${home.urls[u] || 0}`).join(", ") : ""}`);
