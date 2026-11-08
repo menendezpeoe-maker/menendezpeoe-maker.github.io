@@ -15,7 +15,8 @@ const SITE = (process.env.BASE || "http://127.0.0.1:8766/").replace(/_local\.htm
 // 3 nov (fuentes): web real 380 kB/8,5 s → 410 kB/9 s (medido 389 kB y 8,2–8,4 s con 110 fuentes nuevas; margen para las 120 pendientes). Local 1000 → 1100 kB: data/preguntas.json pasa de 384 a 454 kB sin comprimir al añadir 184 fuentes con su justificación (+15 kB comprimido).
 // 1 nov (velocidad en móvil): web real usable en 10 → 8,5 s, tras precargar los datos y no precargar la fuente en la portada (medido: 8,8 → ~7,2 s).
 // 8 nov: local 22 → 23 s (medido 21,9–22,2 s con el recorrido interactivo y la calculadora de la metodología, +1,4 kB comprimidos); el presupuesto de la web real no cambia.
-const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1100, 23], page: [300, 5] };
+// 8 nov (comparar): local 1100 → 1160 kB sin comprimir (medido 1106); comprimido solo suma unos 8 kB (270 → ~280 kB en la web real, lejos de los 410 kB del presupuesto real, que no cambia).
+const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1160, 23], page: [300, 5] };
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const browser = await chromium.launch();
