@@ -833,6 +833,11 @@ function rtSyncFoot() {
 }
 function showSection(id, opts = {}) {
   id = String(id).replace(/^#?r-/, "");
+  if (id === "support") { // las aportaciones acompañan al resumen y a «Compartir»: no tienen pestaña propia
+    if (!rtOn("support", RT_CUR)) showSection("summary", { scroll: false, focus: false });
+    const t = $("#r-support"); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+    return t;
+  }
   if (!rtList().some((m) => m.id === id)) return null;
   RT_CUR = id;
   $$("#v-results .res-sec[id]").forEach((x) => x.classList.toggle("on", rtOn(x.id.replace(/^r-/, ""), id)));

@@ -2,6 +2,7 @@
 // perfil en una frase, solidez, «Compartir» y «Reta a un amigo»; el resto plegado tras «Ver el análisis completo».
 // Uso: NODE_PATH=$(npm root -g) node qa/summary.mjs   (con el servidor local en :8765; BASE para otra URL)
 import { createRequire } from "module";
+import { goSection } from "./_nav.mjs";
 import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
@@ -28,7 +29,7 @@ console.log("Resumen en una pantalla");
 for (const [w, h, dark] of [[390, 844, false], [390, 844, true], [1280, 800, false]]) {
   const { ctx, page } = await open(w, h, dark);
   const tag = `${w}×${h}${dark ? " oscuro" : ""}`;
-  ok(await page.isHidden("#r-full") && await page.isVisible("#r-unfold"), `el análisis completo está plegado tras «Ver el análisis completo» (${tag})`);
+  ok(await page.isHidden("#r-portrait") && await page.isHidden("#r-parties") && await page.isVisible("#r-tiles"), `al terminar solo se ve el resumen y las tarjetas de acceso a las demás secciones (${tag})`);
   ok(/\d+%/.test((await page.textContent("#r-summary .tm-pct")).replace(/\s/g, "")) && (await page.textContent("#r-summary .tm-name")).length > 1, `candidatura con más coincidencia y porcentaje (${tag})`);
   const yes = await page.locator("#r-summary .sum-two > div:first-child .sum-l li").count(), no = await page.locator("#r-summary .sum-two > div:last-child .sum-l li").count();
   ok(yes >= 1 && yes <= 3 && no >= 1 && no <= 3, `hasta 3 coincidencias y 3 choques (${yes} y ${no}) (${tag})`);
@@ -47,25 +48,27 @@ console.log("Análisis completo y navegación interna");
   ok(["r-portrait", "r-dims", "r-areas", "r-traits", "r-parties", "r-versus", "r-map", "r-solid", "r-share", "r-review", "r-least", "r-pols", "r-support"].every((id) => order.includes(id)), "todas las secciones siguen ahí");
   await page.click("#nav-btn"); await page.click('.res-nav a[href="#r-parties"]'); await page.waitForTimeout(500);
   ok(await page.isVisible("#r-parties .pcard"), "un enlace de la navegación interna despliega el análisis y lleva a la sección");
-  ok(await page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.prefs")).full === true), "se recuerda que lo has desplegado");
+  ok((await page.getAttribute('.res-nav a[href="#r-parties"]', "aria-current")) === "true" && await page.isHidden("#r-summary"), "la sección elegida sustituye al resumen y el menú marca dónde estás");
   await page.reload(); await page.waitForSelector("#r-summary .tm-name");
-  ok(await page.isVisible("#r-full") && /Ocultar el análisis completo/.test(await page.textContent("#r-unfold")), "al volver sigue desplegado (y el botón ofrece ocultarlo)");
+  ok(await page.isVisible("#r-summary") && /Resultado/.test(await page.textContent("#nav-cur")), "al recargar se vuelve al resumen del resultado");
   await ctx.close();
 }
 {
   const { ctx, page } = await open(390, 844);
-  await page.click("#r-unfold"); await page.waitForTimeout(400);
-  ok(await page.isVisible("#r-portrait") && await page.evaluate(() => document.activeElement?.closest("#r-portrait") !== null), "«Ver el análisis completo» despliega y lleva el foco a «Tu perfil»");
-  ok((await page.getAttribute("#r-unfold", "aria-expanded")) === "true" && /Ocultar/.test(await page.textContent("#r-unfold")), "el mismo botón pasa a «Ocultar el análisis completo»");
-  await page.click("#r-unfold"); await page.waitForTimeout(400);
-  ok(await page.isHidden("#r-full") && (await page.getAttribute("#r-unfold", "aria-expanded")) === "false" && await page.evaluate(() => !JSON.parse(localStorage.getItem("papeleta29n.prefs")).full), "pulsarlo otra vez lo vuelve a plegar (y se recuerda)");
+  await page.click('#r-tiles a[data-sec="r-portrait"]'); await page.waitForTimeout(500);
+  ok(await page.isVisible("#r-portrait") && await page.isHidden("#r-summary") && await page.evaluate(() => document.activeElement?.closest("#r-portrait") !== null), "una tarjeta lleva a su sección, oculta el resumen y pone el foco en ella");
+  ok(await page.isVisible("#rt-foot .rt-n") && await page.isVisible("#rt-foot .rt-p"), "al pie hay «anterior» y «siguiente»");
+  await page.click("#rt-foot .rt-n"); await page.waitForTimeout(400);
+  ok(await page.isVisible("#r-dims") && await page.isHidden("#r-portrait") && /Siete dimensiones/.test(await page.textContent("#nav-cur")), "«siguiente» pasa a la sección contigua y el menú la nombra");
+  await page.click("#rt-foot .rt-p"); await page.click("#rt-foot .rt-p"); await page.waitForTimeout(400);
+  ok(await page.isVisible("#r-summary") && await page.isHidden("#r-dims"), "con «anterior» se vuelve al resumen");
   await ctx.close();
 }
 
 console.log("Pulsar otra vez para ocultar");
 {
   const { ctx, page } = await open(1100, 900);
-  await page.click("#r-unfold"); await page.waitForTimeout(300);
+  await goSection(page, "parties");
   const btn = page.locator('#r-parties li:not(:nth-child(-n+3)) [data-card]').first();
   const pid = await btn.getAttribute("data-card");
   await btn.click(); await page.waitForTimeout(300);
@@ -73,7 +76,7 @@ console.log("Pulsar otra vez para ocultar");
   ok((await page.locator("#pc-extra .pcard, #pc-extra *").count()) > 0 && /Ocultar su ficha/.test(await b2.textContent()), "«Ver su ficha» abre la ficha y pasa a «Ocultar su ficha»");
   await b2.click(); await page.waitForTimeout(300);
   ok((await page.locator("#pc-extra *").count()) === 0 && /Ver su ficha/.test(await b2.textContent()), "pulsarlo otra vez cierra la ficha");
-  const tip = page.locator("#v-results [data-tip]").first();
+  const tip = page.locator("#v-results .res-sec.on [data-tip]").first();
   if (await tip.count()) { await tip.scrollIntoViewIfNeeded(); await tip.focus(); await tip.click(); await page.waitForTimeout(450); const shown = await page.isVisible("#tip");
     await tip.click(); await page.waitForTimeout(100); ok(shown && await page.isHidden("#tip"), "una nota emergente se muestra y se oculta al pulsarla otra vez"); }
   console.log("Menú de secciones");
@@ -88,7 +91,7 @@ console.log("Pulsar otra vez para ocultar");
   ok(await page.isHidden("#nav-panel"), "pulsar fuera lo cierra");
   await page.click("#nav-btn"); await page.click('#nav-panel a[href="#r-map"]'); await page.waitForTimeout(700);
   ok(await page.isHidden("#nav-panel") && (await page.getAttribute('.res-nav a[href="#r-map"]', "aria-current")) === "true" && /Mapa/.test(await page.textContent("#nav-cur")), "elegir una sección lleva a ella, cierra el menú y el botón muestra dónde estás");
-  ok(await page.evaluate(() => Number(document.querySelector("#nav-pct").textContent) > 0 && /scaleX\(0\.[0-9]*[1-9]|scaleX\(1\)/.test(document.querySelector("#nav-bar").style.transform)), "muestra cuánto llevas leído");
+  ok(await page.evaluate(() => Number(document.querySelector("#nav-pct").textContent) > 0 && /scaleX\(0\.[0-9]*[1-9]|scaleX\(1\)/.test(document.querySelector("#nav-bar").style.transform)), "muestra en qué sección vas (n de 14) con una barra de progreso");
   await ctx.close();
 }
 console.log("Repetir y donar desde el resumen (PayPal retirado el 7 nov: «Donar» solo con Apple Pay)");

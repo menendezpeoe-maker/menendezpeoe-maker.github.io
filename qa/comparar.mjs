@@ -1,6 +1,7 @@
 // Comparar dos candidaturas desde la portada (sin hacer el test) y tarjeta de resultado con estilo claro/oscuro.
 // Uso: NODE_PATH=$(npm root -g) node qa/comparar.mjs   (BASE para otra URL)
 import { createRequire } from "module";
+import { goSection } from "./_nav.mjs";
 import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
@@ -45,7 +46,7 @@ console.log("Tarjeta de resultado: estilo claro y oscuro");
   const ans = Object.fromEntries(bank.questions.map((q) => [q.id, q.pos.psoe || 3]));
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1 });
-  await page.reload(); await page.waitForSelector("#r-share");
+  await page.reload(); await goSection(page, "share");
   const img = async () => { await page.waitForFunction(() => { const i = document.querySelector("#sh-img"); return i && !i.hidden && i.complete && i.naturalWidth > 0; }); return page.evaluate(async () => { const r = await fetch(document.querySelector("#sh-img").src); return (await r.blob()).size; }); };
   ok((await page.locator('input[name="sh-theme"]').count()) === 2 && await page.isChecked('input[name="sh-theme"][value="light"]'), "hay selector de estilo, con el claro por defecto");
   const s1 = await img();

@@ -1,5 +1,6 @@
 // Prueba la sección «Compartir» sobre la versión de producción (dist/).
 import { createRequire } from "module";
+import { goSection } from "./_nav.mjs";
 import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
@@ -43,7 +44,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   await page.waitForSelector("#v-prios:not([hidden])");
   await page.selectOption("#f-prov", process.env.PROVX || "sevilla");
   await page.click("#prio-skip");
-  await page.waitForSelector("#r-share .sbtn");
+  await goSection(page, "share");
   ok(/Adelante Andalucía/.test(await page.textContent(".tm-name")), "resultado correcto (Adelante Andalucía)");
   // Texto y enlaces
   const text = await page.inputValue("#sh-text");
@@ -111,7 +112,7 @@ for (const vp of [{ w: 390, h: 860, tag: "móvil", touch: true }, { w: 1280, h: 
   await page.screenshot({ path: `${OUT}share-${vp.tag === "móvil" ? "m" : "d"}.png`, fullPage: false });
   // Recargar mantiene el resultado
   await page.reload();
-  await page.waitForSelector("#r-share .sbtn");
+  await goSection(page, "share");
   ok(/Adelante/.test(await page.textContent(".tm-name")), "recargar conserva el resultado");
   // Repetir el test
   page.once("dialog", (d) => d.dismiss());

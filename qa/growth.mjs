@@ -1,6 +1,7 @@
 // Pruebas de difusión: «¿Cuánto coincidís?» con otra persona y páginas estáticas (partidos, temas, prensa).
 // Uso: NODE_PATH=$(npm root -g) node qa/growth.mjs   (BASE: test; SITE: dist servido, por defecto :8766)
 import { createRequire } from "module";
+import { goSection } from "./_nav.mjs";
 import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
@@ -27,7 +28,7 @@ console.log("¿Cuánto coincidís? (comparar con otra persona)");
   await ctx.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), state(asParty("pp")));
-  await page.reload(); await page.waitForSelector("#r-share");
+  await page.reload(); await goSection(page, "share");
   ok(await page.isHidden("#r-friend"), "sin resultado compartido, no aparece la comparación");
   await page.click("#r-share details summary"); await page.click("#sh-full"); await page.waitForTimeout(200);
   const link = (await page.evaluate(() => navigator.clipboard.readText())).match(/#r2[0-9a-z]+/)[0];
