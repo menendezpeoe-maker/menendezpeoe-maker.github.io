@@ -2465,6 +2465,17 @@ function renderExplorer() {
         <h1 id="explorer-h" class="h1">Posturas de los partidos</h1>
         <p class="lede">Todas las posturas que usa el test, pregunta a pregunta. Las estimadas aparecen con borde discontinuo y en cursiva; si un partido no tiene postura conocida en un tema, no se le asigna ninguna.</p>
       </div>
+      <section class="wrap pcx" aria-labelledby="pcx-h">
+        <h2 id="pcx-h" class="h2">Candidaturas</h2>
+        <p class="small muted">Todas las que se presentan al Congreso y están en el test, con el mismo tamaño y el mismo peso visual. Van ordenadas por su peso en el Congreso y su alcance; el orden no es una recomendación.</p>
+        <div class="pcx-tools">
+          <div class="pcx-f" id="pcx-f" role="group" aria-label="Filtrar candidaturas"></div>
+          <div class="field"><label class="label" for="pcx-prov">Se presentan en</label><select id="pcx-prov"><option value="">Toda España</option>${PD.regions.map((r) => `<optgroup label="${esc(r.name)}">${r.provs.map((x) => `<option value="${x.id}">${esc(x.name)}</option>`).join("")}</optgroup>`).join("")}</select></div>
+        </div>
+        <p class="small muted" id="pcx-count" aria-live="polite"></p>
+        <div class="pcx-grid" id="pcx-grid"></div>
+        <h2 class="pcx-h3">Posturas, pregunta a pregunta</h2>
+      </section>
       <div class="wrap">
         <div class="ex-tools">
           <div class="field"><label class="label" for="ex-area">Área</label><select id="ex-area"><option value="">Todas las áreas</option>${BANK.areas.map((a) => `<option value="${a.id}">${a.letter} · ${esc(a.name)}</option>`).join("")}</select></div>
@@ -2476,6 +2487,7 @@ function renderExplorer() {
         <div class="ex-list" id="ex-list"></div>
       </div>`;
     root.dataset.ready = "1";
+    bindPartyCards();
     $("#ex-area").addEventListener("change", (e) => { EX.area = e.target.value; drawExplorer(); });
     $("#ex-party").addEventListener("change", (e) => { EX.party = e.target.value; drawExplorer(); });
     let t = 0;
@@ -2483,6 +2495,51 @@ function renderExplorer() {
   }
   $("#ex-party").value = EX.party;
   drawExplorer();
+}
+// ── Candidaturas (8 nov): tarjetas iguales para todas, con filtros y detalle
+const PCX = { f: "", prov: "" };
+function pcxInfo(pid) {
+  let known = 0, est = 0;
+  for (const q of BANK.questions) if (q.pos[pid]) { known++; if (q.est.includes(pid)) est++; }
+  const provs = PROV_LIST.filter((id) => runsIn(pid, id)), regs = [...new Set(provs.map((id) => PROV[id].region))];
+  const oneReg = regs.length === 1 ? PD.regions.find((r) => r.id === regs[0]) : null;
+  const where = provs.length >= 50 ? "Se presenta en toda España"
+    : regs.length >= 3 ? `Se presenta en ${provs.length} provincias de ${regs.length} comunidades`
+    : oneReg && provs.length === oneReg.provs.length ? `Se presenta en ${oneReg.name}`
+    : provs.length <= 3 ? `Se presenta en ${provs.map((id) => PROV[id].name).join(", ")}` : `Se presenta en ${provs.length} provincias de ${regs.map((id) => PD.regions.find((r) => r.id === id).name).join(" y ")}`;
+  return { known, est, src: known - est, provs, many: regs.length >= 3, where };
+}
+function drawPartyCards() {
+  const all = PIDS.map((pid) => ({ pid, ...pcxInfo(pid) }));
+  const nMany = all.filter((x) => x.many).length;
+  $("#pcx-f").innerHTML = [["", `Todas (${all.length})`], ["many", `En varias comunidades (${nMany})`], ["one", `En una comunidad (${all.length - nMany})`]]
+    .map(([k, l]) => `<button type="button" data-pcx-f="${k}" aria-pressed="${PCX.f === k}">${l}</button>`).join("");
+  const list = all.filter((x) => (!PCX.f || (PCX.f === "many") === x.many) && (!PCX.prov || runsIn(x.pid, PCX.prov)));
+  const total = BANK.questions.length;
+  $("#pcx-count").textContent = `${list.length} ${list.length === 1 ? "candidatura" : "candidaturas"}${PCX.prov ? ` en ${PROV[PCX.prov].name}` : ""}`;
+  $("#pcx-grid").innerHTML = list.map((x, i) => {
+    const p = P[x.pid], pct = Math.round((x.src / total) * 100);
+    return `<article class="pcx-card" style="--pc:${p.color};--k:${Math.min(i, 14)}" data-pid="${x.pid}">
+      <div class="pcx-head">${logo(x.pid)}<h3>${esc(p.name)}</h3></div>
+      <p class="pcx-tag">${esc(p.tag)}</p>
+      <p class="pcx-meta">${esc(x.where)}</p>
+      <div class="pcx-cov"><span>Posturas con fuente: <b>${x.src}</b> de ${total}</span><span class="pcx-bar" role="img" aria-label="${x.src} de ${total} posturas con fuente"><i style="--w:${pct}%"></i></span><span>Estimadas: ${x.est} · Sin postura conocida: ${total - x.known}</span></div>
+      <button type="button" class="pcx-more" aria-expanded="false" aria-controls="pcx-d-${x.pid}">Ver más <i aria-hidden="true"></i></button>
+      <div class="pcx-det" id="pcx-d-${x.pid}"><div><p>${esc(p.desc)}</p>${p.props && p.props.length ? `<ul>${p.props.slice(0, 4).map((q) => `<li>${esc(q.t)}</li>`).join("")}</ul>` : ""}
+        <div class="pcx-act"><button type="button" data-pcx-pos="${x.pid}">Ver sus posturas</button><a href="/partidos/${x.pid}/">Ficha completa</a></div></div></div>
+    </article>`;
+  }).join("") || '<p class="muted">Ninguna candidatura coincide con ese filtro.</p>';
+}
+function bindPartyCards() {
+  drawPartyCards();
+  $("#pcx-f").addEventListener("click", (e) => { const b = e.target.closest("[data-pcx-f]"); if (!b) return; PCX.f = b.dataset.pcxF; drawPartyCards(); $(`#pcx-f [data-pcx-f="${PCX.f}"]`).focus(); });
+  $("#pcx-prov").addEventListener("change", (e) => { PCX.prov = e.target.value; drawPartyCards(); });
+  $("#pcx-grid").addEventListener("click", (e) => {
+    const m = e.target.closest(".pcx-more");
+    if (m) { const card = m.closest(".pcx-card"), open = !card.classList.contains("open"); card.classList.toggle("open", open); m.setAttribute("aria-expanded", String(open)); m.firstChild.textContent = open ? "Ver menos " : "Ver más "; return; }
+    const g = e.target.closest("[data-pcx-pos]");
+    if (g) { EX.party = g.dataset.pcxPos; $("#ex-party").value = EX.party; drawExplorer(); $("#ex-q").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); }
+  });
 }
 function drawExplorer() {
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");

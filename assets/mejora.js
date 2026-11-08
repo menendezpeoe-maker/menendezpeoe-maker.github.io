@@ -315,7 +315,7 @@
      ningún texto: sigue en la página (lo leen igual los buscadores) y en ordenador todo queda como estaba.
      «Preguntas frecuentes» se queda abierta a propósito (qa/seo.mjs lo exige). WCAG 1.3.1, 2.4.6, 4.1.2. */
   const FOLD_MQ = matchMedia("(max-width: 760px)");
-  const folds = [["how-h", ".steps"], ["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+  const folds = [["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
     const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
     return { h, sec, bodies: $$(body, sec), text: h.textContent };
   }).filter(Boolean);
@@ -333,4 +333,24 @@
   };
   buildFolds();
   FOLD_MQ.addEventListener("change", buildFolds);
+})();
+
+/* BLOQUE 15 (8 nov) · Cómo funciona: pasos que aparecen al hacer scroll y se despliegan
+   MEJORA: los cuatro pasos aparecen escalonados cuando entran en pantalla y cada uno se despliega con «Ver más»
+   (botón con aria-expanded y aria-controls). Sin JavaScript o con movimiento reducido, todo se ve desde el principio. */
+(function () {
+  const flow = document.querySelector(".steps.flow"); if (!flow) return;
+  const items = [...flow.querySelectorAll(".st")];
+  items.forEach((li, k) => li.style.setProperty("--k", k));
+  flow.addEventListener("click", (e) => {
+    const b = e.target.closest(".st-more"); if (!b) return;
+    const li = b.closest(".st"), open = !li.classList.contains("open");
+    li.classList.toggle("open", open); b.setAttribute("aria-expanded", String(open));
+    b.firstChild.textContent = open ? "Ver menos " : "Ver más ";
+  });
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (calm || !("IntersectionObserver" in window)) return;
+  flow.classList.add("js");
+  const io = new IntersectionObserver((es) => { if (es.some((x) => x.isIntersecting)) { items.forEach((li) => li.classList.add("in")); io.disconnect(); } }, { threshold: 0.15 });
+  io.observe(flow);
 })();
