@@ -263,6 +263,8 @@ function initHome() {
   bindHeroModes();
   $("#start-btn").disabled = false;
   fillSetup();
+  // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
+  requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.add("is-ready")));
 }
 function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });

@@ -132,7 +132,9 @@ const PRELOAD = [["preguntas", true], ["partidos", true], ["politicos", false]].
 // papeleta.css). Con 4G, 5G, wifi, navegadores sin esa información (Safari, Firefox) o sin JavaScript, todo igual que antes.
 // El script va en línea y su firma se añade a la CSP de esta página (no se abre «script-src» a nada más).
 const FONTS_HREF = `assets/fonts.css?v=${v.fonts}`;
-const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slow-2g|2g|3g)$/.test(c.effectiveType))){document.documentElement.className+=" red-lenta";return}document.write('<link rel="stylesheet" href="${FONTS_HREF}">')})()`;
+const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slow-2g|2g|3g)$/.test(c.effectiveType))){document.documentElement.className+=" red-lenta";return}document.write('<link rel="stylesheet" href="${FONTS_HREF}">');var d=document.documentElement,f=document.fonts;if(!f||!f.load)return;d.className+=" fx";var ok=function(){d.className=d.className.replace(" fx","")};setTimeout(ok,2500);document.addEventListener("DOMContentLoaded",function(){Promise.all([f.load("800 1em Archivo"),f.load("400 1em Newsreader")]).then(ok,ok)})})()`;
+// 8 nov: entrada sin saltos. Con tipografías propias (4G/wifi) la portada se mantiene oculta, como mucho 2,5 s, hasta que llegan Archivo y
+// Newsreader y entonces aparece de una vez: antes el título y los botones se recolocaban dos veces a la vista al cambiar la letra (CLS 0,02 y tirones).
 const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
 const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
 let headIndex = head(TITLE, DESC, social + faqLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");

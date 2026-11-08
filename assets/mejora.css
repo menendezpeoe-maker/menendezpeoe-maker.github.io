@@ -495,22 +495,19 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .bn-link2:hover span { transform: translateY(3px); }
 @media (max-width: 480px) { .bn-link2 { width: 100%; text-align: center; border: 0; padding: 10px; } }
 .bn-poly { fill: rgba(246, 221, 47, .32); stroke: #F6DD2F; stroke-width: 2.4; stroke-linejoin: round; }
-.bn-pv-bars .b1::after { width: 72%; } .bn-pv-bars .b2::after { width: 56%; } .bn-pv-bars .b3::after { width: 40%; }
+.bn-pv-bars i::after { width: 100% !important; transform-origin: left; will-change: transform; }
+.bn-pv-bars .b1::after { transform: scaleX(.72); } .bn-pv-bars .b2::after { transform: scaleX(.56); } .bn-pv-bars .b3::after { transform: scaleX(.40); }
 #start-btn[disabled] { position: relative; overflow: hidden; }
 @media (prefers-reduced-motion: no-preference) {
   @keyframes bn-rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
   @keyframes bn-slide { from { opacity: 0; transform: translateX(36px) scale(.97); } to { opacity: 1; transform: none; } }
   @keyframes bn-morph{0%,100%{d:path("M90.0 41.0 L116.6 68.8 L133.8 100.0 L114.8 141.5 L76.7 117.6 L43.6 100.6 L59.2 65.4 Z")}33%{d:path("M90.0 61.4 L133.6 55.2 L126.5 98.3 L101.2 113.3 L67.0 137.8 L59.5 97.0 L50.7 58.6 Z")}66%{d:path("M90.0 46.5 L121.9 64.6 L144.4 102.4 L104.8 120.6 L71.7 128.0 L33.0 103.0 L66.6 71.3 Z")}}
-  @keyframes bn-b1 { 0%, 100% { width: 78%; } 33% { width: 41%; } 66% { width: 63%; } }
-  @keyframes bn-b2 { 0%, 100% { width: 52%; } 33% { width: 80%; } 66% { width: 60%; } }
-  @keyframes bn-b3 { 0%, 100% { width: 34%; } 33% { width: 56%; } 66% { width: 82%; } }
+  @keyframes bn-b1 { 0%, 100% { transform: scaleX(.78); } 33% { transform: scaleX(.41); } 66% { transform: scaleX(.63); } }
+  @keyframes bn-b2 { 0%, 100% { transform: scaleX(.52); } 33% { transform: scaleX(.80); } 66% { transform: scaleX(.60); } }
+  @keyframes bn-b3 { 0%, 100% { transform: scaleX(.34); } 33% { transform: scaleX(.56); } 66% { transform: scaleX(.82); } }
   @keyframes bn-shim { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
-  #v-home .banner .bn-brand, #v-home .banner .bn-h, #v-home .banner .bn-sub, #v-home .banner .bn-cta { animation: bn-rise .75s var(--ds-ease) both; }
-  #v-home .banner .bn-brand { animation-delay: .05s; } #v-home .banner .bn-h { animation-delay: .16s; } #v-home .banner .bn-sub { animation-delay: .3s; } #v-home .banner .bn-cta { animation-delay: .44s; }
-  #v-home .banner .bn-preview { animation: bn-slide .9s var(--ds-ease) .4s both; }
-  .bn-poly { animation: bn-morph 12s ease-in-out 1.2s infinite; }
-  .bn-pv-bars .b1::after { animation: bn-b1 12s ease-in-out 1.2s infinite; } .bn-pv-bars .b2::after { animation: bn-b2 12s ease-in-out 1.2s infinite; } .bn-pv-bars .b3::after { animation: bn-b3 12s ease-in-out 1.2s infinite; }
-  #start-btn[disabled]::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .45), transparent); animation: bn-shim 1.2s linear infinite; }
+  .is-ready .bn-poly { animation: bn-morph 12s ease-in-out .6s infinite; }
+  .is-ready .bn-pv-bars .b1::after { animation: bn-b1 12s ease-in-out .6s infinite; } .is-ready .bn-pv-bars .b2::after { animation: bn-b2 12s ease-in-out .6s infinite; } .is-ready .bn-pv-bars .b3::after { animation: bn-b3 12s ease-in-out .6s infinite; }
 }
 
 /* 2 · CÓMO FUNCIONA: recorrido interactivo de cuatro pasos con una demostración en cada uno */
@@ -772,8 +769,9 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   #v-home .trust li { flex-direction: row; text-align: left; padding: 14px 16px; }
   #v-home .tr-i { width: 44px; height: 44px; }
 }
-@media (prefers-reduced-motion: no-preference) {
-  @keyframes tr-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-  #v-home .trust li { animation: tr-in .55s var(--ds-ease) both; animation-delay: calc(.35s + var(--k, 0) * 90ms); }
-}
 @media (prefers-reduced-motion: reduce) { #v-home .trust li { transition: none !important; animation: none !important; } }
+
+/* 9 · ENTRADA SIN SALTOS: la portada espera a las tipografías (máx. 2,5 s) y aparece de una vez, sin que el texto se recoloque a la vista */
+#v-home .banner, #v-home .trust, #v-home .lede, #v-home .facts { transition: opacity .4s ease; }
+.fx #v-home .banner, .fx #v-home .trust, .fx #v-home .lede, .fx #v-home .facts { opacity: 0; transition: none; }
+@media (prefers-reduced-motion: reduce) { #v-home .banner, #v-home .trust, #v-home .lede, #v-home .facts { transition: none; } }
