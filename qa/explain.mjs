@@ -167,7 +167,7 @@ console.log("Metodología y datos");
 {
   const { ctx, page } = await open(state(asParty("psoe")));
   await page.click(".head-nav [data-go='method']");
-  const t = await page.innerText("#v-method");
+  const t = await page.$eval("#v-method", (e) => e.textContent); // las secciones van en pestañas: textContent incluye las no visibles
   const nsrc = bank.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
   const secs = await page.$$eval("#m-datos, #m-expl, #m-glos", (x) => x.length);
   ok(secs === 3 && t.includes(`Hoy hay ${nsrc} posturas con fuente enlazada`), `estado de los datos, explicaciones y glosario (${nsrc} fuentes)`);

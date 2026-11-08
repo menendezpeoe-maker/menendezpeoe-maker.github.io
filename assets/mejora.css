@@ -641,3 +641,43 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .mflow.js.in li { opacity: 1; transform: none; transition: opacity .55s var(--ds-ease) calc(var(--k, 0) * 90ms), transform .55s var(--ds-ease) calc(var(--k, 0) * 90ms); }
 }
 @media (prefers-reduced-motion: reduce) { .mflow a, .mc-bar i, .mf-go i { transition: none !important; } }
+
+/* 6 · METODOLOGÍA en pestañas: una sección cada vez, con gráficos en lugar de listas largas */
+.mtabs .msec { display: none; }
+.mtabs .msec.on { display: grid; }
+.mtabs .mbody { gap: 0; }
+.mtabs .msec.on { padding: 22px 18px; border: 1.5px solid var(--rule); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-1); }
+@media (min-width: 760px) { .mtabs .msec.on { padding: 32px 36px; } }
+.mtabs .msec .h2 { font-size: clamp(26px, 4vw, 34px); }
+@media (min-width: 980px) { .mtabs .toc a { font-weight: 650; } .mtabs .toc a.cur { background: var(--ink); color: var(--paper); border-left-color: var(--mark); } }
+.mres-note { font-size: 14.5px; color: var(--ink-3); }
+.mnav { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 18px; margin-top: 8px; border-top: 1px solid var(--rule); }
+.mnav a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; border: 1.5px solid var(--rule); border-radius: 999px; font-weight: 750; font-size: 14.5px; color: var(--ink); text-decoration: none; background: var(--paper); transition: background-color .2s, color .2s, border-color .2s; }
+.mnav a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.dimv { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: 1fr; max-width: none !important; }
+@media (min-width: 760px) { .dimv { grid-template-columns: repeat(2, 1fr); } }
+.dimv li { display: grid; gap: 8px; padding: 14px 16px; border: 1px solid var(--rule); border-radius: var(--ds-r-1); background: var(--paper); max-width: none !important; }
+.dimv b { font-family: var(--f-disp); font-weight: 820; font-size: 17px; color: var(--ink); }
+.dv-t { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; font-size: 13px; }
+.dv-t em { font-style: normal; font-weight: 700; color: var(--ink); }
+.dv-t i { height: 8px; border-radius: 4px; background: linear-gradient(90deg, var(--mark), var(--ink)); }
+.dv-d { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.evid { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: 1fr; max-width: none !important; }
+@media (min-width: 760px) { .evid { grid-template-columns: repeat(3, 1fr); } }
+.evid li { display: grid; gap: 8px; align-content: start; padding: 16px; border: 1.5px solid var(--rule); border-top: 5px solid var(--ink); border-radius: var(--ds-r-1); background: var(--paper); font-size: 14.5px; line-height: 1.4; max-width: none !important; }
+.evid li.ev-e { border-top-color: var(--mark); } .evid li.ev-u { border-top-color: var(--rule); }
+.evid b { font-family: var(--f-disp); font-weight: 820; font-size: 17px; color: var(--ink); }
+.ev-w { display: block; height: 8px; border-radius: 4px; background: var(--rule-2); overflow: hidden; } .ev-w i { display: block; height: 100%; width: var(--w); background: var(--ink); }
+.ev-p { font-family: var(--f-disp); font-weight: 900; font-size: 22px; color: var(--ink); }
+.stack { display: flex; height: 18px; border-radius: 9px; overflow: hidden; background: var(--rule-2); }
+.stack span { display: block; width: var(--w); min-width: 0; }
+.sk-d { background: var(--ink); } .sk-e { background: var(--mark); } .sk-u { background: var(--rule); }
+.stack-l { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 0; margin: 0; font-size: 14.5px; max-width: none !important; }
+.stack-l li { display: flex; align-items: center; gap: 8px; padding: 0 !important; } .stack-l li::before { content: none !important; }
+.stack-l i { width: 14px; height: 14px; border-radius: 4px; display: inline-block; box-shadow: inset 0 0 0 1px var(--rule); } .stack-l b { font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes ms-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .mtabs .msec.on { animation: ms-in .4s var(--ds-ease) both; }
+  .stack span { animation: hw-grow .9s var(--ds-ease) both; }
+}
+@media (prefers-reduced-motion: reduce) { .mnav a, .mtabs .msec.on { transition: none !important; animation: none !important; } }

@@ -2348,19 +2348,22 @@ function renderMethod() {
       <p class="label">Metodología</p>
       <h1 id="method-h" class="h1">Cómo funciona el Test 29N</h1>
       <p class="lede">Qué medimos, de dónde salen las posturas de los partidos, cómo se calcula tu resultado y qué límites tiene. Las cifras y tablas de esta página se calculan en directo a partir de los mismos datos que usa el test.</p>
-      <ol class="mflow" aria-label="Resumen en cinco pasos">
+      <div class="mgrid">
+        <nav class="toc" aria-label="Índice"><a href="#m-res">Resumen</a><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
+        <div class="mbody">
+          <section class="msec" id="m-res"><h2 class="h2">Resumen en cinco pasos</h2>
+            <ol class="mflow" aria-label="Resumen en cinco pasos">
         <li style="--k:0"><a href="#m-preg"><span class="mf-n">1</span><b>${qs.length}</b><span class="mf-t">preguntas en ${BANK.areas.length} áreas, con contexto neutral</span><span class="mf-go">Cómo son <i aria-hidden="true">→</i></span></a></li>
         <li style="--k:1"><a href="#m-pos"><span class="mf-n">2</span><b>${PIDS.length}</b><span class="mf-t">candidaturas con posturas documentadas, estimadas o sin postura conocida</span><span class="mf-go">De dónde salen <i aria-hidden="true">→</i></span></a></li>
         <li style="--k:2"><a href="#m-calc"><span class="mf-n">3</span><b>${BANK.dims.length}</b><span class="mf-t">dimensiones y una coincidencia calculada pregunta a pregunta</span><span class="mf-go">El cálculo <i aria-hidden="true">→</i></span></a></li>
         <li style="--k:3"><a href="#m-expl"><span class="mf-n">4</span><b>${srcAll.length}</b><span class="mf-t">posturas con fuente enlazada y explicaciones hechas con tus respuestas</span><span class="mf-go">Tu resultado <i aria-hidden="true">→</i></span></a></li>
         <li style="--k:4"><a href="#m-sol"><span class="mf-n">5</span><b>2</b><span class="mf-t">métodos de cálculo para avisarte si el resultado es frágil</span><span class="mf-go">Solidez y límites <i aria-hidden="true">→</i></span></a></li>
       </ol>
-      <div class="mgrid">
-        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
-        <div class="mbody">
+            <p class="mres-note">Toca un paso para leer cómo funciona. Todo lo que ves aquí se calcula con los mismos datos que usa el test.</p>
+          </section>
           <section class="msec" id="m-que"><h2 class="h2">Qué mide</h2>
             <p>El test no te asigna una etiqueta. Mide tu posición en <b>siete dimensiones</b> distintas y la compara, pregunta a pregunta, con las posturas de las candidaturas que se presentan en tu provincia.</p>
-            <ul class="dots">${BANK.dims.map((d) => `<li><b>${esc(d.name)}</b> (${esc(d.a)} ↔ ${esc(d.b)}): ${esc(d.desc)}</li>`).join("")}</ul>
+            <ul class="dimv">${BANK.dims.map((d) => `<li><b>${esc(d.name)}</b><span class="dv-t"><em>${esc(d.a)}</em><i aria-hidden="true"></i><em>${esc(d.b)}</em></span><span class="dv-d">${esc(d.desc)}</span></li>`).join("")}</ul>
             <p>Las ${qs.length} preguntas se reparten en ${BANK.areas.length} áreas temáticas. Algunas no miden ninguna dimensión porque no dividen a la gente de forma ideológica clara (por ejemplo, la ley electoral o las Cercanías frente a la alta velocidad): solo sirven para comparar con los partidos.</p>
           </section>
           <section class="msec" id="m-preg"><h2 class="h2">Las preguntas</h2>
@@ -2380,10 +2383,10 @@ function renderMethod() {
           </section>
           <section class="msec" id="m-pos"><h2 class="h2">Posturas de los partidos</h2>
             <p>Para cada pregunta asignamos a cada candidatura una postura de 1 a 5 a partir de sus <b>programas electorales de 2023</b>, sus <b>votaciones en el Congreso</b> y sus <b>declaraciones públicas</b> hasta el 17 de octubre de 2026. Los programas para el 29N aún no se han publicado completos. Cuando un partido vota o gobierna en sentido distinto a lo que propone, usamos lo que ha hecho más recientemente y lo explicamos con una nota junto a su postura. Revisamos con fuentes las posturas de los principales partidos estatales en octubre de 2026: ${BANK.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0)} de ellas enlazan ya su fuente junto a la pregunta, y el resto se basa en los programas y declaraciones citados, todavía sin enlace individual.</p>
-            <ul class="dots">
-              <li><b>Documentada</b>: hay programa, voto o declaración explícita. Pesa 1.</li>
-              <li><b>Estimada</b>: se deduce de la línea general del partido o de su posición en temas cercanos. Pesa 0,6 y se marca siempre como estimada.</li>
-              <li><b>Sin postura conocida</b>: no se inventa. Esa pregunta no cuenta para ese partido.</li>
+            <ul class="evid">
+              <li class="ev-d"><b>Documentada</b><span class="ev-w" aria-hidden="true"><i style="--w:100%"></i></span><span class="ev-p">Pesa 1</span><span>Hay programa, voto o declaración explícita.</span></li>
+              <li class="ev-e"><b>Estimada</b><span class="ev-w" aria-hidden="true"><i style="--w:60%"></i></span><span class="ev-p">Pesa 0,6</span><span>Se deduce de la línea general del partido o de su posición en temas cercanos. Se marca siempre como estimada.</span></li>
+              <li class="ev-u"><b>Sin postura conocida</b><span class="ev-w" aria-hidden="true"><i style="--w:0%"></i></span><span class="ev-p">No cuenta</span><span>No se inventa. Esa pregunta no cuenta para ese partido.</span></li>
             </ul>
             <p>Las coaliciones nuevas (Frente Amplio, Democracia 21, Unidad del Pueblo Canario…) heredan las posturas de sus integrantes, por lo que tienen más posturas estimadas. Puedes revisar todas en <button type="button" class="link-btn" data-go="explorer" style="padding:0">Posturas de los partidos</button>.</p>
             <p>El estado de los datos de cada candidatura está en <a href="#m-datos">Estado de los datos</a>.</p>
@@ -2398,6 +2401,9 @@ function renderMethod() {
             </ul>
             <p>Hoy hay ${srcAll.length} posturas con fuente enlazada${srcBy.length ? ` (${esc(srcBy.map(([t, n]) => `${n} de ${SRC_TYPE[t]}`).join(", "))})` : ""}. Es una parte pequeña del total: ampliarla es la prioridad de mantenimiento del proyecto, empezando por las preguntas núcleo y los partidos con más apoyo.</p>
             ${pendingTbd.length || outP.length ? `<p><b>Pendiente de verificar.</b> ${pendingTbd.length ? `Candidaturas aún sin confirmar con las listas proclamadas por la Junta Electoral: ${esc(joinY(pendingTbd))}. ` : ""}${outP.length ? `Han anunciado que no se presentan, y por eso no se comparan: ${esc(joinY(outP))}.` : ""} Los programas para el 29N aún no se han publicado completos: cuando salgan, revisaremos las posturas.</p>` : ""}
+            ${(() => { const t = PIDS.map(partyData).reduce((a, x) => ({ d: a.d + x.doc, e: a.e + x.est, u: a.u + x.unk }), { d: 0, e: 0, u: 0 }), n = t.d + t.e + t.u, pc = (v) => Math.round((v / n) * 100);
+              return `<div class="stack" role="img" aria-label="Del total de casillas: ${pc(t.d)} % documentadas, ${pc(t.e)} % estimadas, ${pc(t.u)} % sin postura conocida"><span class="sk-d" style="--w:${pc(t.d)}%"></span><span class="sk-e" style="--w:${pc(t.e)}%"></span><span class="sk-u" style="--w:${pc(t.u)}%"></span></div>
+              <ul class="stack-l"><li><i class="sk-d"></i><b>${pc(t.d)} %</b> documentadas</li><li><i class="sk-e"></i><b>${pc(t.e)} %</b> estimadas</li><li><i class="sk-u"></i><b>${pc(t.u)} %</b> sin postura conocida</li></ul>`; })()}
             <div class="tbl-wrap" tabindex="0" role="region" aria-label="Estado de los datos por candidatura"><table class="tbl"><caption class="sr">Estado de los datos por candidatura</caption><thead><tr><th>Candidatura</th><th class="num">Documentadas</th><th class="num">Estimadas</th><th class="num">Sin postura</th><th class="num">Con fuente</th><th>Cobertura</th></tr></thead><tbody>${cover}</tbody></table></div>
           </section>
           <section class="msec" id="m-calc"><h2 class="h2">El cálculo</h2>
@@ -2469,17 +2475,28 @@ function renderMethod() {
     </div>`;
   bindMethod();
 }
+const M_SECS = ["m-res", "m-que", "m-preg", "m-pos", "m-datos", "m-calc", "m-expl", "m-sol", "m-glos", "m-priv"];
+function showMethodSection(id, focus) {
+  const root = $("#v-method .method"); if (!root || !M_SECS.includes(id)) return null;
+  const i = M_SECS.indexOf(id);
+  root.querySelectorAll(".msec").forEach((x) => x.classList.toggle("on", x.id === id));
+  root.querySelectorAll(".toc a").forEach((l) => { const on = l.getAttribute("href") === "#" + id; l.classList.toggle("cur", on); if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); const cur = root.querySelector(".toc a.cur"); });
+  const act = root.querySelector(".toc a.cur"); if (act && act.scrollIntoView && matchMedia("(max-width: 979px)").matches) { const tc = act.parentElement; tc.scrollTo({ left: act.offsetLeft - 16, behavior: reduceMotion() ? "auto" : "smooth" }); }
+  const sec = $("#" + id), h = sec.querySelector("h2");
+  if (focus) { const top = root.querySelector(".mgrid"); top.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+  return sec;
+}
 function bindMethod() {
+  const root = $("#v-method .method");
+  root.classList.add("mtabs");
+  // «Anterior» y «Siguiente» al final de cada sección
+  root.querySelectorAll(".msec").forEach((sec) => { const i = M_SECS.indexOf(sec.id), nm = (k) => root.querySelector(`.toc a[href="#${M_SECS[k]}"]`).textContent;
+    sec.insertAdjacentHTML("beforeend", `<div class="mnav">${i > 0 ? `<a href="#${M_SECS[i - 1]}" class="mn-p"><span aria-hidden="true">←</span> ${esc(nm(i - 1))}</a>` : "<span></span>"}${i < M_SECS.length - 1 ? `<a href="#${M_SECS[i + 1]}" class="mn-n">${esc(nm(i + 1))} <span aria-hidden="true">→</span></a>` : ""}</div>`); });
+  showMethodSection("m-res");
   const a = $("#mc-a"), b = $("#mc-b"); if (!a) return;
   const upd = () => { const v = 1 - Math.abs(a.value - b.value) / 4, pct = Math.round(v * 100); $("#mc-av").textContent = a.value; $("#mc-bv").textContent = b.value; $("#mc-fill").style.setProperty("--w", pct + "%"); $("#mc-out").innerHTML = `<b>${pct} %</b> de acuerdo en esta pregunta`; };
   a.addEventListener("input", upd); b.addEventListener("input", upd); upd();
-  // índice que marca la sección que estás leyendo
-  const links = [...document.querySelectorAll("#v-method .toc a")], secs = links.map((l) => document.querySelector(l.getAttribute("href")));
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { const i = secs.indexOf(e.target); links.forEach((l, k) => { l.classList.toggle("cur", k === i); if (k === i) l.removeAttribute("aria-current"), l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); }); } }), { rootMargin: "-20% 0px -70% 0px" });
-    secs.forEach((x) => x && io.observe(x));
-    const fl = document.querySelector("#v-method .mflow"); if (fl && !reduceMotion()) { fl.classList.add("js"); new IntersectionObserver((es, o) => { if (es.some((x) => x.isIntersecting)) { fl.classList.add("in"); o.disconnect(); } }, { threshold: 0.2 }).observe(fl); }
-  }
+  const fl = document.querySelector("#v-method .mflow"); if (fl && !reduceMotion() && "IntersectionObserver" in window) { fl.classList.add("js"); new IntersectionObserver((es, o) => { if (es.some((x) => x.isIntersecting)) { fl.classList.add("in"); o.disconnect(); } }, { threshold: 0.2 }).observe(fl); }
 }
 
 // ───────────────────────────── EXPLORADOR DE POSTURAS
@@ -2631,7 +2648,7 @@ function bindGlobal() {
       const v = g.dataset.go;
       if (CURRENT === "quiz" && S) save();
       if (v === "home") { fillSetup(); go("home"); }
-      else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && $(`#${g.dataset.anchor}`); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+      else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && showMethodSection(g.dataset.anchor); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
       else if (v === "explorer") { if (g.dataset.party) EX.party = g.dataset.party; renderExplorer(); go("explorer"); }
       return;
     }
@@ -2642,7 +2659,7 @@ function bindGlobal() {
   });
   $("#v-method").addEventListener("click", (e) => {
     const a = e.target.closest('a[href^="#m-"]'); if (!a) return;
-    e.preventDefault(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+    e.preventDefault(); showMethodSection(a.getAttribute("href").slice(1), true);
   });
   $("#retry-btn").addEventListener("click", () => location.reload());
 }

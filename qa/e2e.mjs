@@ -124,7 +124,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await p2.close();
   // Metodología y explorador
   await page.click('[data-go="method"] >> nth=0');
-  await page.waitForSelector("#v-method:not([hidden]) table");
+  await page.waitForSelector("#v-method:not([hidden]) table", { state: "attached" });
   ok(!(await overflow(page)), "metodología sin scroll horizontal");
   await page.screenshot({ path: OUT + "m-method.png", fullPage: true });
   await page.click('.head-nav [data-go="explorer"]');

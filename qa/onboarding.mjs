@@ -174,7 +174,7 @@ console.log("Enlaces compartidos antiguos (#r2…)");
 console.log("Privacidad");
 {
   const { ctx, page } = await open({ w: 1100, h: 900 });
-  await page.click('.head-nav [data-go="method"]'); await page.waitForSelector("#m-priv");
+  await page.click('.head-nav [data-go="method"]'); await page.waitForSelector("#m-priv", { state: "attached" });
   const t = await page.textContent("#m-priv");
   ok(/no pide ningún dato personal aparte de la provincia/.test(t) && !/sexo|edad/i.test(t), "el aviso de privacidad ya no habla de sexo ni edad y dice que solo se pide la provincia");
   await ctx.close();
