@@ -2484,7 +2484,7 @@ function bindMethod() {
 }
 
 // ───────────────────────────── EXPLORADOR DE POSTURAS
-const EX = { area: "", party: "", text: "" };
+const EX = { area: "", party: "", text: "" }; // area: "" = todas; al abrir la lista se muestra la primera
 function renderExplorer() {
   const root = $("#v-explorer");
   if (!root.dataset.ready) {
@@ -2511,21 +2511,31 @@ function renderExplorer() {
           <span class="qf-t"><b>Posturas pregunta a pregunta</b><small>Compara a todos los partidos en una misma pregunta, o busca un tema (alquiler, Senado, lobo…). Son las mismas posturas, en otro orden.</small></span>
           <span class="qf-c" aria-hidden="true"></span></button></h2>
         <div class="qf-body" id="qf-body" hidden>
-        <div class="ex-tools">
-          <div class="field"><label class="label" for="ex-area">Área</label><select id="ex-area"><option value="">Todas las áreas</option>${BANK.areas.map((a) => `<option value="${a.id}">${a.letter} · ${esc(a.name)}</option>`).join("")}</select></div>
-          <div class="field"><label class="label" for="ex-party">Ver un partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
-          <div class="field"><label class="label" for="ex-q">Buscar</label><input id="ex-q" type="search" placeholder="Por ejemplo: alquiler, Senado, lobo…" autocomplete="off"></div>
+        <div class="qx-bar" id="qx-bar">
+          <div class="qx-tabs" id="qx-tabs" role="group" aria-label="Elegir área"></div>
+          <div class="qx-row">
+            <label class="qx-s"><span class="sr">Buscar en las preguntas</span><input id="ex-q" type="search" placeholder="Buscar un tema…" autocomplete="off"></label>
+            <button type="button" class="qx-b" id="qx-up" aria-label="Subir al principio de esta sección"><span aria-hidden="true">↑</span><span class="qx-bt">Subir</span></button>
+            <button type="button" class="qx-b" id="qx-close" aria-label="Plegar esta sección"><span aria-hidden="true">✕</span><span class="qx-bt">Cerrar</span></button>
+          </div>
+          <div hidden><label for="ex-party">Ver un partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
         </div>
         <div class="ex-focus" id="ex-focus" hidden><span id="ex-focus-t"></span><button type="button" class="btn btn-ghost btn-sm" id="ex-focus-x">Cerrar sus posturas</button></div>
-        <p class="small muted" id="ex-count" aria-live="polite" style="padding-top:12px"></p>
+        <p class="qx-count" id="ex-count" aria-live="polite"></p>
         <h2 class="sr">Preguntas y posturas</h2>
         <div class="ex-list" id="ex-list"></div>
+        <div class="qx-foot" id="qx-foot"></div>
         </div>
       </div>`;
     root.dataset.ready = "1";
+    EX.area = BANK.areas[0].id;
     bindPartyCards();
     $("#qf-btn").addEventListener("click", () => { const b = $("#qf-btn"), open = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", String(open)); $("#qf-body").hidden = !open; $("#qf").classList.toggle("open", open); });
-    $("#ex-area").addEventListener("change", (e) => { EX.area = e.target.value; drawExplorer(); });
+    const qfTop = () => $("#qf").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+    $("#qx-tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-qa]"); if (!b) return; EX.area = b.dataset.qa; EX.text = ""; $("#ex-q").value = ""; drawExplorer(); const k = document.querySelector(`#qx-tabs [data-qa="${EX.area}"]`); if (k) { k.focus({ preventScroll: true }); k.scrollIntoView({ block: "nearest", inline: "center" }); } $("#ex-count").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "nearest" }); });
+    $("#qx-foot").addEventListener("click", (e) => { const b = e.target.closest("[data-qa]"); if (!b) return; EX.area = b.dataset.qa; drawExplorer(); $("#qx-bar").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
+    $("#qx-up").addEventListener("click", () => { $("#qx-bar").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
+    $("#qx-close").addEventListener("click", () => { const b = $("#qf-btn"); b.setAttribute("aria-expanded", "false"); $("#qf-body").hidden = true; $("#qf").classList.remove("open"); qfTop(); b.focus({ preventScroll: true }); });
     $("#ex-party").addEventListener("change", (e) => { EX.party = e.target.value; drawExplorer(); });
     $("#ex-focus-x").addEventListener("click", () => { EX.party = ""; $("#ex-party").value = ""; drawExplorer(); $("#pcx-grid").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
     let t = 0;
@@ -2640,21 +2650,29 @@ function drawExplorer() {
   syncPartyFocus();
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const needle = norm(EX.text);
-  const qs = BANK.questions.filter((q) => (!EX.area || q.area === EX.area) && (!needle || norm(`${q.text} ${q.short} ${q.ctx}`).includes(needle)));
-  $("#ex-count").textContent = `${qs.length} ${qs.length === 1 ? "pregunta" : "preguntas"}`;
+  // al buscar se mira en todas las áreas; si no, solo en la elegida («Todas» las muestra todas)
+  const qs = BANK.questions.filter((q) => needle ? norm(`${q.text} ${q.short} ${q.ctx}`).includes(needle) : (!EX.area || q.area === EX.area));
+  const cur = EX.area && !needle ? BANK.areas.find((a) => a.id === EX.area) : null;
+  $("#qx-tabs").innerHTML = `<button type="button" data-qa="" aria-pressed="${!EX.area && !needle}">Todas</button>` + BANK.areas.map((a) => `<button type="button" data-qa="${a.id}" aria-pressed="${EX.area === a.id && !needle}" title="${esc(a.name)}"><span>${a.letter}</span><em>${esc(a.name)}</em></button>`).join("");
+  $("#ex-count").innerHTML = needle ? `<b>${qs.length}</b> ${qs.length === 1 ? "pregunta" : "preguntas"} con «${esc(EX.text)}» en todas las áreas` : cur ? `<b>${cur.letter} · ${esc(cur.name)}</b> · ${qs.length} ${qs.length === 1 ? "pregunta" : "preguntas"}. Toca una para ver las posturas de cada partido. La barra muestra cómo se reparten, de 1 (izquierda) a 5 (derecha).` : `<b>${qs.length}</b> preguntas de todas las áreas. Toca una para ver las posturas de cada partido. La barra muestra cómo se reparten, de 1 (izquierda) a 5 (derecha).`;
   $("#ex-list").innerHTML = qs.map((q) => {
     const cols = [1, 2, 3, 4, 5].map((n) => {
       const ps = PIDS.filter((pid) => q.pos[pid] === n);
-      return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<span class="chip${q.est.includes(pid) ? " est" : ""}"${EX.party === pid ? ' style="outline:2.5px solid var(--ink);background:var(--mark-2)"' : ""} title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</span>`).join("")}</span></div>`;
+      return `<div class="pc5"><span>${n} · ${esc(q.type === "dilema" ? DIL[n - 1] : LIK[n - 1])}</span><span class="chips">${ps.map((pid) => `<span class="chip${q.est.includes(pid) ? " est" : ""}" title="${esc(P[pid].name)}${q.est.includes(pid) ? " · estimada" : ""}"><i class="sw" style="background:${P[pid].color}"></i>${esc(P[pid].ab)}</span>`).join("")}</span></div>`;
     }).join("");
+    const cnt = [1, 2, 3, 4, 5].map((n) => PIDS.filter((pid) => q.pos[pid] === n).length), tot = cnt.reduce((a, b) => a + b, 0);
+    const dist = `<span class="qd" role="img" aria-label="Reparto de las ${tot} posturas conocidas, de 1 a 5: ${cnt.join(", ")}">${cnt.map((c, k) => c ? `<i class="d${k + 1}" style="flex:${c}">${c >= 3 ? c : ""}</i>` : "").join("")}</span>`;
     const unk = PIDS.filter((pid) => !q.pos[pid]);
-    const focus = EX.party ? (q.pos[EX.party] ? `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> ${esc(answerText(q, q.pos[EX.party]))}${q.est.includes(EX.party) ? " (estimada)" : " (documentada)"}${srcLink(q, EX.party)}${posWhy(q, EX.party) ? `<span class="why-line">${esc(posWhy(q, EX.party))}</span>` : ""} ${errLink(q, EX.party)}</p>` : `<p class="focus-line"><b>${esc(P[EX.party].name)}:</b> sin postura conocida</p>`) : "";
     const d = q.dim ? `${DIM[q.dim].name}: de acuerdo → ${q.dir > 0 ? DIM[q.dim].b : DIM[q.dim].a}` : "Transversal: no mide ninguna dimensión";
-    return `<article class="exq"><p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(AREA[q.area].name)}</span><span class="tagd">${esc(d)}</span></p>
-      <h3>${esc(q.text)}</h3>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}${focus}
+    return `<details class="exq"><summary><span class="q-code">${qCode(q)}</span><span class="qs-t">${esc(q.short || q.text)}</span>${dist}<span class="qs-c" aria-hidden="true"></span></summary>
+      <div class="qx-x"><p class="q-meta"><span>${esc(AREA[q.area].name)}</span><span class="tagd">${esc(d)}</span></p>
+      <h3>${esc(q.text)}</h3>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}
       <details class="more"><summary>Contexto</summary><p class="dinfo" style="margin-top:6px">${esc(q.ctx)}${q.ley ? ` <b>Marco legal:</b> ${esc(q.ley)}.` : ""}</p></details>
-      <div class="pos5">${cols}</div>${posNotes(q, PIDS)}${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
+      <div class="pos5">${cols}</div>${posNotes(q, PIDS)}${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</div></details>`;
   }).join("") || '<p class="muted" style="padding:24px 0">Ninguna pregunta coincide con la búsqueda.</p>';
+  // pie: área anterior y siguiente, y volver arriba
+  const i = cur ? BANK.areas.indexOf(cur) : -1, pv = i > 0 ? BANK.areas[i - 1] : null, nx = i >= 0 && i < BANK.areas.length - 1 ? BANK.areas[i + 1] : null;
+  $("#qx-foot").innerHTML = cur ? `${pv ? `<button type="button" data-qa="${pv.id}"><span aria-hidden="true">←</span> ${esc(pv.name)}</button>` : "<span></span>"}${nx ? `<button type="button" data-qa="${nx.id}">${esc(nx.name)} <span aria-hidden="true">→</span></button>` : ""}` : "";
 }
 
 // ───────────────────────────── Avisos y tooltips
