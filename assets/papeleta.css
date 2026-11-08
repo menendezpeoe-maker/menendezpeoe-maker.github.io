@@ -1182,3 +1182,6 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
   .r5-bar, .r5-bar i, .how-bar, .how-bar i, .logo, .rel i { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8.5pt; color: #444; word-break: break-all; }
 }
+
+.ex-focus { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 14px; padding: 12px 16px; border: 1.5px solid var(--ink); border-radius: 12px; background: var(--mark-2, var(--sheet)); font-weight: 750; }
+.ex-focus[hidden] { display: none; }

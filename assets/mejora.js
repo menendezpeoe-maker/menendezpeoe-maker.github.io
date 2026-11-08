@@ -214,7 +214,7 @@
     new IntersectionObserver(([e]) => mini.classList.toggle("on", e.intersectionRatio < 0.9), { threshold: [0, 0.9, 1] }).observe(qBar);
   }
   const FOLD_MQ = matchMedia("(max-width: 760px)");
-  const folds = [["how-h", ".steps"], ["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+  const folds = [["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
     const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
     return { h, sec, bodies: $$(body, sec), text: h.textContent };
   }).filter(Boolean);
@@ -232,4 +232,59 @@
   };
   buildFolds();
   FOLD_MQ.addEventListener("change", buildFolds);
+})();
+(function () {
+  const hw = document.getElementById("hw"); if (!hw) return;
+  const tabs = [...hw.querySelectorAll(".hw-tab")], panels = [...hw.querySelectorAll(".hw-panel")];
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let cur = 0, timer = 0, stopped = calm, visible = false;
+  hw.classList.add("on");
+  const show = (i, focus) => {
+    cur = (i + tabs.length) % tabs.length;
+    tabs.forEach((t, k) => { t.setAttribute("aria-selected", String(k === cur)); t.tabIndex = k === cur ? 0 : -1; });
+    panels.forEach((p, k) => { p.hidden = k !== cur; });
+    if (focus) tabs[cur].focus();
+    schedule();
+  };
+  const schedule = () => {
+    clearTimeout(timer); hw.classList.remove("play");
+    if (stopped || !visible) return;
+    void hw.offsetWidth; hw.classList.add("play");
+    timer = setTimeout(() => show(cur + 1), 6000);
+  };
+  const stop = () => { stopped = true; clearTimeout(timer); hw.classList.remove("play"); };
+  tabs.forEach((t, k) => t.addEventListener("click", () => { stop(); show(k); }));
+  hw.querySelector(".hw-tabs").addEventListener("keydown", (e) => {
+    const m = { ArrowRight: cur + 1, ArrowDown: cur + 1, ArrowLeft: cur - 1, ArrowUp: cur - 1, Home: 0, End: tabs.length - 1 }[e.key];
+    if (m === undefined) return; e.preventDefault(); stop(); show(m, true);
+  });
+  hw.querySelector(".hw-stage").addEventListener("pointerdown", stop);
+  hw.querySelector(".hw-stage").addEventListener("focusin", stop);
+  const modes = hw.querySelector(".hw-modes"), out0 = panels[0].querySelector(".hw-out"), meter = panels[0].querySelector(".hw-meter i");
+  modes.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    modes.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    out0.innerHTML = "<b>" + b.dataset.n + "</b> preguntas · unos <b>" + b.dataset.m + "</b> minutos";
+    meter.style.setProperty("--w", Math.max(8, Math.round(b.dataset.n / 107 * 100)) + "%");
+  });
+  const scale = panels[1].querySelector(".hw-scale"), out1 = panels[1].querySelector(".hw-out"), star = panels[1].querySelector(".hw-star"), skip = panels[1].querySelector(".hw-skip");
+  const say = (t) => { out1.textContent = t; };
+  scale.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    skip.setAttribute("aria-pressed", "false");
+    scale.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", String(x === b)));
+    say("Has marcado " + b.textContent + ": " + b.dataset.t + (star.getAttribute("aria-pressed") === "true" ? ", y te importa mucho." : "."));
+  });
+  star.addEventListener("click", () => { const on = star.getAttribute("aria-pressed") !== "true"; star.setAttribute("aria-pressed", String(on)); star.textContent = (on ? "★" : "☆") + " Me importa mucho"; say(on ? "Esta pregunta pesará más en tu resultado." : "Vuelve a pesar lo normal."); });
+  skip.addEventListener("click", () => { const on = skip.getAttribute("aria-pressed") !== "true"; skip.setAttribute("aria-pressed", String(on)); scale.querySelectorAll("button").forEach((x) => x.setAttribute("aria-checked", "false")); say(on ? "«No lo sé»: esta pregunta no cuenta en tu resultado." : "Pulsa una respuesta."); });
+  const areas = panels[2].querySelector(".hw-areas"), out2 = panels[2].querySelector(".hw-out");
+  areas.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const on = b.getAttribute("aria-pressed") === "true", n = areas.querySelectorAll('[aria-pressed="true"]').length;
+    if (!on && n >= 3) { out2.innerHTML = "Ya tienes <b>3</b> de 3. Quita una para elegir otra."; return; }
+    b.setAttribute("aria-pressed", String(!on));
+    const m = areas.querySelectorAll('[aria-pressed="true"]').length;
+    out2.innerHTML = "<b>" + m + "</b> de 3 áreas elegidas" + (m ? "" : ". Sin elegir, todas pesan igual.");
+  });
+  if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => { visible = en.isIntersecting; schedule(); }, { threshold: 0.4 }).observe(hw);
 })();

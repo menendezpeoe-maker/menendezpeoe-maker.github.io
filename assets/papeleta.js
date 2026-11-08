@@ -251,7 +251,6 @@ function initHome() {
     `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("");
   sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
   $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
-  $(".ex-scale").addEventListener("click", (e) => { const b = e.target.closest("[data-ex]"); if (b) startFromExample(Number(b.dataset.ex)); });
   $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="?tema=${k}" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
   $("#topic-list").addEventListener("click", (e) => { const a = e.target.closest("[data-tema]"); if (a) { e.preventDefault(); startTopic(a.dataset.tema); } });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
@@ -259,13 +258,13 @@ function initHome() {
     const n = BANK.questions.filter((q) => q.area === a.id).length;
     return `<li><span class="al">${a.letter}</span><b>${esc(a.name)}</b><span>${esc(a.intro)} ${n} preguntas.</span></li>`;
   }).join("");
-  const ex = Q.C01;
-  if (ex) { $("#ex-code").textContent = qCode(ex); $("#ex-area").textContent = AREA[ex.area].name; $("#ex-text").textContent = ex.text; $("#ex-ctx").textContent = ex.ctx; }
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
   $("#start-btn").disabled = false;
   fillSetup();
+  // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
+  requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.add("is-ready")));
 }
 function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
@@ -333,21 +332,6 @@ function startTopic(topic, ask = true) {
   if (!TOPICS[topic]) return;
   if (ask && hasSaved() && !confirm(`¿Empezar el test de ${TOPICS[topic].label.toLowerCase()}? Sustituirá el test que tienes guardado en este navegador.`)) return;
   newTest(topic); save(); count(`tema-${topic}`, `Test de ${TOPICS[topic].label.toLowerCase()}`, true); launchQuiz(true);
-}
-// La pregunta de ejemplo de la portada es real: responderla empieza el test con esa respuesta guardada
-function startFromExample(v) {
-  const ex = Q.C01; if (!ex) return;
-  const inProgress = S && S.stage !== "done" && S.order.includes(ex.id);
-  if (!inProgress) {
-    newTest();
-    S.order = [ex.id, ...S.order.filter((id) => id !== ex.id)];
-  }
-  S.ans[ex.id] = v;
-  const nxt = S.order.findIndex((id) => S.ans[id] === undefined);
-  S.idx = nxt < 0 ? S.order.length - 1 : nxt;
-  save();
-  toast("Respuesta guardada");
-  launchQuiz(!inProgress);
 }
 function launchQuiz(isNew) {
   renderQuestion(0);
@@ -2349,11 +2333,21 @@ function renderMethod() {
       <h1 id="method-h" class="h1">Cómo funciona el Test 29N</h1>
       <p class="lede">Qué medimos, de dónde salen las posturas de los partidos, cómo se calcula tu resultado y qué límites tiene. Las cifras y tablas de esta página se calculan en directo a partir de los mismos datos que usa el test.</p>
       <div class="mgrid">
-        <nav class="toc" aria-label="Índice"><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
+        <nav class="toc" aria-label="Índice"><a href="#m-res">Resumen</a><a href="#m-que">Qué mide</a><a href="#m-preg">Las preguntas</a><a href="#m-pos">Posturas de los partidos</a><a href="#m-datos">Estado de los datos</a><a href="#m-calc">El cálculo</a><a href="#m-expl">Las explicaciones</a><a href="#m-sol">Solidez y límites</a><a href="#m-glos">Glosario</a><a href="#m-priv">Privacidad y aviso legal</a></nav>
         <div class="mbody">
+          <section class="msec" id="m-res"><h2 class="h2">Resumen en cinco pasos</h2>
+            <ol class="mflow" aria-label="Resumen en cinco pasos">
+        <li style="--k:0"><a href="#m-preg"><span class="mf-n">1</span><b>${qs.length}</b><span class="mf-t">preguntas en ${BANK.areas.length} áreas, con contexto neutral</span><span class="mf-go">Cómo son <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:1"><a href="#m-pos"><span class="mf-n">2</span><b>${PIDS.length}</b><span class="mf-t">candidaturas con posturas documentadas, estimadas o sin postura conocida</span><span class="mf-go">De dónde salen <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:2"><a href="#m-calc"><span class="mf-n">3</span><b>${BANK.dims.length}</b><span class="mf-t">dimensiones y una coincidencia calculada pregunta a pregunta</span><span class="mf-go">El cálculo <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:3"><a href="#m-expl"><span class="mf-n">4</span><b>${srcAll.length}</b><span class="mf-t">posturas con fuente enlazada y explicaciones hechas con tus respuestas</span><span class="mf-go">Tu resultado <i aria-hidden="true">→</i></span></a></li>
+        <li style="--k:4"><a href="#m-sol"><span class="mf-n">5</span><b>2</b><span class="mf-t">métodos de cálculo para avisarte si el resultado es frágil</span><span class="mf-go">Solidez y límites <i aria-hidden="true">→</i></span></a></li>
+      </ol>
+            <p class="mres-note">Toca un paso para leer cómo funciona. Todo lo que ves aquí se calcula con los mismos datos que usa el test.</p>
+          </section>
           <section class="msec" id="m-que"><h2 class="h2">Qué mide</h2>
             <p>El test no te asigna una etiqueta. Mide tu posición en <b>siete dimensiones</b> distintas y la compara, pregunta a pregunta, con las posturas de las candidaturas que se presentan en tu provincia.</p>
-            <ul class="dots">${BANK.dims.map((d) => `<li><b>${esc(d.name)}</b> (${esc(d.a)} ↔ ${esc(d.b)}): ${esc(d.desc)}</li>`).join("")}</ul>
+            <ul class="dimv">${BANK.dims.map((d) => `<li><b>${esc(d.name)}</b><span class="dv-t"><em>${esc(d.a)}</em><i aria-hidden="true"></i><em>${esc(d.b)}</em></span><span class="dv-d">${esc(d.desc)}</span></li>`).join("")}</ul>
             <p>Las ${qs.length} preguntas se reparten en ${BANK.areas.length} áreas temáticas. Algunas no miden ninguna dimensión porque no dividen a la gente de forma ideológica clara (por ejemplo, la ley electoral o las Cercanías frente a la alta velocidad): solo sirven para comparar con los partidos.</p>
           </section>
           <section class="msec" id="m-preg"><h2 class="h2">Las preguntas</h2>
@@ -2373,10 +2367,10 @@ function renderMethod() {
           </section>
           <section class="msec" id="m-pos"><h2 class="h2">Posturas de los partidos</h2>
             <p>Para cada pregunta asignamos a cada candidatura una postura de 1 a 5 a partir de sus <b>programas electorales de 2023</b>, sus <b>votaciones en el Congreso</b> y sus <b>declaraciones públicas</b> hasta el 17 de octubre de 2026. Los programas para el 29N aún no se han publicado completos. Cuando un partido vota o gobierna en sentido distinto a lo que propone, usamos lo que ha hecho más recientemente y lo explicamos con una nota junto a su postura. Revisamos con fuentes las posturas de los principales partidos estatales en octubre de 2026: ${BANK.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0)} de ellas enlazan ya su fuente junto a la pregunta, y el resto se basa en los programas y declaraciones citados, todavía sin enlace individual.</p>
-            <ul class="dots">
-              <li><b>Documentada</b>: hay programa, voto o declaración explícita. Pesa 1.</li>
-              <li><b>Estimada</b>: se deduce de la línea general del partido o de su posición en temas cercanos. Pesa 0,6 y se marca siempre como estimada.</li>
-              <li><b>Sin postura conocida</b>: no se inventa. Esa pregunta no cuenta para ese partido.</li>
+            <ul class="evid">
+              <li class="ev-d"><b>Documentada</b><span class="ev-w" aria-hidden="true"><i style="--w:100%"></i></span><span class="ev-p">Pesa 1</span><span>Hay programa, voto o declaración explícita.</span></li>
+              <li class="ev-e"><b>Estimada</b><span class="ev-w" aria-hidden="true"><i style="--w:60%"></i></span><span class="ev-p">Pesa 0,6</span><span>Se deduce de la línea general del partido o de su posición en temas cercanos. Se marca siempre como estimada.</span></li>
+              <li class="ev-u"><b>Sin postura conocida</b><span class="ev-w" aria-hidden="true"><i style="--w:0%"></i></span><span class="ev-p">No cuenta</span><span>No se inventa. Esa pregunta no cuenta para ese partido.</span></li>
             </ul>
             <p>Las coaliciones nuevas (Frente Amplio, Democracia 21, Unidad del Pueblo Canario…) heredan las posturas de sus integrantes, por lo que tienen más posturas estimadas. Puedes revisar todas en <button type="button" class="link-btn" data-go="explorer" style="padding:0">Posturas de los partidos</button>.</p>
             <p>El estado de los datos de cada candidatura está en <a href="#m-datos">Estado de los datos</a>.</p>
@@ -2391,11 +2385,22 @@ function renderMethod() {
             </ul>
             <p>Hoy hay ${srcAll.length} posturas con fuente enlazada${srcBy.length ? ` (${esc(srcBy.map(([t, n]) => `${n} de ${SRC_TYPE[t]}`).join(", "))})` : ""}. Es una parte pequeña del total: ampliarla es la prioridad de mantenimiento del proyecto, empezando por las preguntas núcleo y los partidos con más apoyo.</p>
             ${pendingTbd.length || outP.length ? `<p><b>Pendiente de verificar.</b> ${pendingTbd.length ? `Candidaturas aún sin confirmar con las listas proclamadas por la Junta Electoral: ${esc(joinY(pendingTbd))}. ` : ""}${outP.length ? `Han anunciado que no se presentan, y por eso no se comparan: ${esc(joinY(outP))}.` : ""} Los programas para el 29N aún no se han publicado completos: cuando salgan, revisaremos las posturas.</p>` : ""}
+            ${(() => { const t = PIDS.map(partyData).reduce((a, x) => ({ d: a.d + x.doc, e: a.e + x.est, u: a.u + x.unk }), { d: 0, e: 0, u: 0 }), n = t.d + t.e + t.u, pc = (v) => Math.round((v / n) * 100);
+              return `<div class="stack" role="img" aria-label="Del total de casillas: ${pc(t.d)} % documentadas, ${pc(t.e)} % estimadas, ${pc(t.u)} % sin postura conocida"><span class="sk-d" style="--w:${pc(t.d)}%"></span><span class="sk-e" style="--w:${pc(t.e)}%"></span><span class="sk-u" style="--w:${pc(t.u)}%"></span></div>
+              <ul class="stack-l"><li><i class="sk-d"></i><b>${pc(t.d)} %</b> documentadas</li><li><i class="sk-e"></i><b>${pc(t.e)} %</b> estimadas</li><li><i class="sk-u"></i><b>${pc(t.u)} %</b> sin postura conocida</li></ul>`; })()}
             <div class="tbl-wrap" tabindex="0" role="region" aria-label="Estado de los datos por candidatura"><table class="tbl"><caption class="sr">Estado de los datos por candidatura</caption><thead><tr><th>Candidatura</th><th class="num">Documentadas</th><th class="num">Estimadas</th><th class="num">Sin postura</th><th class="num">Con fuente</th><th>Cobertura</th></tr></thead><tbody>${cover}</tbody></table></div>
           </section>
           <section class="msec" id="m-calc"><h2 class="h2">El cálculo</h2>
             <p><b>Coincidencia con un partido.</b> Para cada pregunta que has respondido y en la que el partido tiene postura:</p>
             <p class="formula">acuerdo = 1 − |tu respuesta − su postura| ÷ 4</p>
+            <div class="mcalc" id="mcalc" aria-label="Calculadora de ejemplo">
+              <p class="mc-h">Pruébalo con un ejemplo</p>
+              <div class="mc-row"><label for="mc-a">Tu respuesta: <b id="mc-av">4</b></label><input type="range" id="mc-a" min="1" max="5" step="1" value="4"></div>
+              <div class="mc-row"><label for="mc-b">Postura del partido: <b id="mc-bv">2</b></label><input type="range" id="mc-b" min="1" max="5" step="1" value="2"></div>
+              <div class="mc-bar" aria-hidden="true"><i id="mc-fill" style="--w:50%"></i></div>
+              <p class="mc-out" id="mc-out" aria-live="polite"><b>50 %</b> de acuerdo en esta pregunta</p>
+              <p class="mc-pesos" aria-label="Pesos">${[["Importante", "×" + W_IMPORTANT], ["Área prioritaria", "×" + String(W_PRIORITY).replace(".", ",")], ["Neutral", "×" + String(W_NEUTRAL).replace(".", ",")], ["Postura estimada", "×" + String(W_ESTIMATED).replace(".", ",")]].map(([l, v]) => `<span><b>${v}</b>${l}</span>`).join("")}</p>
+            </div>
             <p>Responder lo mismo vale 100 %; estar en extremos opuestos (1 frente a 5), 0 %. La coincidencia es la media ponderada de esos acuerdos. Pesos: pregunta marcada como importante ×${W_IMPORTANT}; área prioritaria ×${String(W_PRIORITY).replace(".", ",")}; respuesta neutral ×${String(W_NEUTRAL).replace(".", ",")}; postura estimada ×${String(W_ESTIMATED).replace(".", ",")}. Algunas preguntas miden casi la misma opinión (por ejemplo, limitar el alquiler y elegir entre construir o regular precios): si respondes varias de una misma familia, en conjunto pesan como la raíz cuadrada de cuántas sean (dos pesan como 1,4 en lugar de 2), para no contar dos veces lo mismo. Si un partido tiene postura en menos de la mitad (en peso) de tus respuestas, añadimos el peso que falta con un valor neutro del 50 %, para que un partido con pocas posturas conocidas no aparezca artificialmente arriba o abajo.</p>
             <p><b>Tu posición en cada dimensión.</b> Cada respuesta se convierte en un valor de −100 a +100 (1 → −100, 3 → 0, 5 → +100) con el signo de la dirección de la pregunta, y se promedia. Las respuestas neutrales pesan la mitad; la importancia y las prioridades no cambian tu posición. La de cada partido se calcula igual con todas sus posturas del banco, ponderando las estimadas.</p>
             <p><b>Cercanía ideológica.</b> 100 % menos la distancia media entre tu posición y la del partido en las dimensiones que has respondido. Complementa a la coincidencia, que compara pregunta a pregunta.</p>
@@ -2452,6 +2457,30 @@ function renderMethod() {
         </div>
       </div>
     </div>`;
+  bindMethod();
+}
+const M_SECS = ["m-res", "m-que", "m-preg", "m-pos", "m-datos", "m-calc", "m-expl", "m-sol", "m-glos", "m-priv"];
+function showMethodSection(id, focus) {
+  const root = $("#v-method .method"); if (!root || !M_SECS.includes(id)) return null;
+  const i = M_SECS.indexOf(id);
+  root.querySelectorAll(".msec").forEach((x) => x.classList.toggle("on", x.id === id));
+  root.querySelectorAll(".toc a").forEach((l) => { const on = l.getAttribute("href") === "#" + id; l.classList.toggle("cur", on); if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current"); const cur = root.querySelector(".toc a.cur"); });
+  const act = root.querySelector(".toc a.cur"); if (act && act.scrollIntoView && matchMedia("(max-width: 979px)").matches) { const tc = act.parentElement; tc.scrollTo({ left: act.offsetLeft - 16, behavior: reduceMotion() ? "auto" : "smooth" }); }
+  const sec = $("#" + id), h = sec.querySelector("h2");
+  if (focus) { const top = root.querySelector(".mgrid"); top.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+  return sec;
+}
+function bindMethod() {
+  const root = $("#v-method .method");
+  root.classList.add("mtabs");
+  // «Anterior» y «Siguiente» al final de cada sección
+  root.querySelectorAll(".msec").forEach((sec) => { const i = M_SECS.indexOf(sec.id), nm = (k) => root.querySelector(`.toc a[href="#${M_SECS[k]}"]`).textContent;
+    sec.insertAdjacentHTML("beforeend", `<div class="mnav">${i > 0 ? `<a href="#${M_SECS[i - 1]}" class="mn-p"><span aria-hidden="true">←</span> ${esc(nm(i - 1))}</a>` : "<span></span>"}${i < M_SECS.length - 1 ? `<a href="#${M_SECS[i + 1]}" class="mn-n">${esc(nm(i + 1))} <span aria-hidden="true">→</span></a>` : ""}</div>`); });
+  showMethodSection("m-res");
+  const a = $("#mc-a"), b = $("#mc-b"); if (!a) return;
+  const upd = () => { const v = 1 - Math.abs(a.value - b.value) / 4, pct = Math.round(v * 100); $("#mc-av").textContent = a.value; $("#mc-bv").textContent = b.value; $("#mc-fill").style.setProperty("--w", pct + "%"); $("#mc-out").innerHTML = `<b>${pct} %</b> de acuerdo en esta pregunta`; };
+  a.addEventListener("input", upd); b.addEventListener("input", upd); upd();
+  const fl = document.querySelector("#v-method .mflow"); if (fl && !reduceMotion() && "IntersectionObserver" in window) { fl.classList.add("js"); new IntersectionObserver((es, o) => { if (es.some((x) => x.isIntersecting)) { fl.classList.add("in"); o.disconnect(); } }, { threshold: 0.2 }).observe(fl); }
 }
 
 // ───────────────────────────── EXPLORADOR DE POSTURAS
@@ -2465,26 +2494,144 @@ function renderExplorer() {
         <h1 id="explorer-h" class="h1">Posturas de los partidos</h1>
         <p class="lede">Todas las posturas que usa el test, pregunta a pregunta. Las estimadas aparecen con borde discontinuo y en cursiva; si un partido no tiene postura conocida en un tema, no se le asigna ninguna.</p>
       </div>
-      <div class="wrap">
+      <div class="wrap ppw" id="ppan" hidden></div>
+      <section class="wrap pcx" aria-labelledby="pcx-h">
+        <h2 id="pcx-h" class="h2">Candidaturas</h2>
+        <p class="small muted">Todas las que se presentan al Congreso y están en el test, con el mismo tamaño y el mismo peso visual. Van ordenadas por su peso en el Congreso y su alcance; el orden no es una recomendación.</p>
+        <div class="pcx-tools">
+          <div class="pcx-f" id="pcx-f" role="group" aria-label="Filtrar candidaturas"></div>
+          <div class="field"><label class="label" for="pcx-prov">Se presentan en</label><select id="pcx-prov"><option value="">Toda España</option>${PD.regions.map((r) => `<optgroup label="${esc(r.name)}">${r.provs.map((x) => `<option value="${x.id}">${esc(x.name)}</option>`).join("")}</optgroup>`).join("")}</select></div>
+        </div>
+        <p class="small muted" id="pcx-count" aria-live="polite"></p>
+        <div class="pcx-grid" id="pcx-grid"></div>
+        <h2 class="pcx-h3">Posturas, pregunta a pregunta</h2>
+      </section>
+      <div class="wrap exw">
         <div class="ex-tools">
           <div class="field"><label class="label" for="ex-area">Área</label><select id="ex-area"><option value="">Todas las áreas</option>${BANK.areas.map((a) => `<option value="${a.id}">${a.letter} · ${esc(a.name)}</option>`).join("")}</select></div>
-          <div class="field"><label class="label" for="ex-party">Destacar partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
+          <div class="field"><label class="label" for="ex-party">Ver un partido</label><select id="ex-party"><option value="">Ninguno</option>${PIDS.map((pid) => `<option value="${pid}">${esc(P[pid].name)}</option>`).join("")}</select></div>
           <div class="field"><label class="label" for="ex-q">Buscar</label><input id="ex-q" type="search" placeholder="Por ejemplo: alquiler, Senado, lobo…" autocomplete="off"></div>
         </div>
+        <div class="ex-focus" id="ex-focus" hidden><span id="ex-focus-t"></span><button type="button" class="btn btn-ghost btn-sm" id="ex-focus-x">Cerrar sus posturas</button></div>
         <p class="small muted" id="ex-count" aria-live="polite" style="padding-top:12px"></p>
         <h2 class="sr">Preguntas y posturas</h2>
         <div class="ex-list" id="ex-list"></div>
       </div>`;
     root.dataset.ready = "1";
+    bindPartyCards();
     $("#ex-area").addEventListener("change", (e) => { EX.area = e.target.value; drawExplorer(); });
     $("#ex-party").addEventListener("change", (e) => { EX.party = e.target.value; drawExplorer(); });
+    $("#ex-focus-x").addEventListener("click", () => { EX.party = ""; $("#ex-party").value = ""; drawExplorer(); $("#pcx-grid").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); });
     let t = 0;
     $("#ex-q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { EX.text = e.target.value.trim().toLowerCase(); drawExplorer(); }, 160); });
   }
   $("#ex-party").value = EX.party;
   drawExplorer();
 }
+// ── Candidaturas (8 nov): tarjetas iguales para todas, con filtros y detalle
+const PCX = { f: "", prov: "" };
+function pcxInfo(pid) {
+  let known = 0, est = 0;
+  for (const q of BANK.questions) if (q.pos[pid]) { known++; if (q.est.includes(pid)) est++; }
+  const provs = PROV_LIST.filter((id) => runsIn(pid, id)), regs = [...new Set(provs.map((id) => PROV[id].region))];
+  const oneReg = regs.length === 1 ? PD.regions.find((r) => r.id === regs[0]) : null;
+  const where = provs.length >= 50 ? "Se presenta en toda España"
+    : regs.length >= 3 ? `Se presenta en ${provs.length} provincias de ${regs.length} comunidades`
+    : oneReg && provs.length === oneReg.provs.length ? `Se presenta en ${oneReg.name}`
+    : provs.length <= 3 ? `Se presenta en ${provs.map((id) => PROV[id].name).join(", ")}` : `Se presenta en ${provs.length} provincias de ${regs.map((id) => PD.regions.find((r) => r.id === id).name).join(" y ")}`;
+  return { known, est, src: known - est, provs, many: regs.length >= 3, where };
+}
+function drawPartyCards() {
+  const all = PIDS.map((pid) => ({ pid, ...pcxInfo(pid) }));
+  const nMany = all.filter((x) => x.many).length;
+  $("#pcx-f").innerHTML = [["", `Todas (${all.length})`], ["many", `En varias comunidades (${nMany})`], ["one", `En una comunidad (${all.length - nMany})`]]
+    .map(([k, l]) => `<button type="button" data-pcx-f="${k}" aria-pressed="${PCX.f === k}">${l}</button>`).join("");
+  const list = all.filter((x) => (!PCX.f || (PCX.f === "many") === x.many) && (!PCX.prov || runsIn(x.pid, PCX.prov)));
+  const total = BANK.questions.length;
+  $("#pcx-count").textContent = `${list.length} ${list.length === 1 ? "candidatura" : "candidaturas"}${PCX.prov ? ` en ${PROV[PCX.prov].name}` : ""}`;
+  $("#pcx-grid").innerHTML = list.map((x, i) => {
+    const p = P[x.pid], pct = Math.round((x.src / total) * 100);
+    return `<article class="pcx-card" style="--pc:${p.color};--k:${Math.min(i, 14)}" data-pid="${x.pid}">
+      <div class="pcx-head">${logo(x.pid)}<h3>${esc(p.name)}</h3></div>
+      <p class="pcx-tag">${esc(p.tag)}</p>
+      <p class="pcx-meta">${esc(x.where)}</p>
+      <div class="pcx-cov"><span>Posturas con fuente: <b>${x.src}</b> de ${total}</span><span class="pcx-bar" role="img" aria-label="${x.src} de ${total} posturas con fuente"><i style="--w:${pct}%"></i></span><span>Estimadas: ${x.est} · Sin postura conocida: ${total - x.known}</span></div>
+      <button type="button" class="pcx-main" data-pcx-pos="${x.pid}" aria-pressed="false">Ver sus posturas</button>
+      <button type="button" class="pcx-more" aria-expanded="false" aria-controls="pcx-d-${x.pid}">Ver más <i aria-hidden="true"></i></button>
+      <div class="pcx-det" id="pcx-d-${x.pid}"><div><p>${esc(p.desc)}</p>${p.props && p.props.length ? `<ul>${p.props.slice(0, 4).map((q) => `<li>${esc(q.t)}</li>`).join("")}</ul>` : ""}
+        <div class="pcx-act"></div></div></div>
+    </article>`;
+  }).join("") || '<p class="muted">Ninguna candidatura coincide con ese filtro.</p>';
+  syncPartyFocus();
+}
+function bindPartyCards() {
+  drawPartyCards();
+  $("#pcx-f").addEventListener("click", (e) => { const b = e.target.closest("[data-pcx-f]"); if (!b) return; PCX.f = b.dataset.pcxF; drawPartyCards(); $(`#pcx-f [data-pcx-f="${PCX.f}"]`).focus(); });
+  $("#pcx-prov").addEventListener("change", (e) => { PCX.prov = e.target.value; drawPartyCards(); });
+  $("#ppan").addEventListener("click", (e) => {
+    if (e.target.closest("#pp-x")) { const pid = EX.party; EX.party = ""; $("#ex-party").value = ""; drawExplorer(); const bt = document.querySelector(`#pcx-grid .pcx-main[data-pcx-pos="${pid}"]`); if (bt) { bt.scrollIntoView({ block: "center" }); bt.focus({ preventScroll: true }); } return; }
+    const ch = e.target.closest("[data-pa]"); if (ch) { PP.area = ch.dataset.pa; drawPartyPanel(); const k = document.querySelector(`#ppan [data-pa="${PP.area}"]`); if (k) k.focus({ preventScroll: true }); $("#pp-list").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
+  });
+  $("#ppan").addEventListener("change", (e) => { if (e.target.id === "pp-src") { PP.src = e.target.checked; drawPartyPanel(); $("#pp-src").focus(); } });
+  $("#pcx-grid").addEventListener("click", (e) => {
+    const m = e.target.closest(".pcx-more");
+    if (m) { const card = m.closest(".pcx-card"), open = !card.classList.contains("open"); card.classList.toggle("open", open); m.setAttribute("aria-expanded", String(open)); m.firstChild.textContent = open ? "Ver menos " : "Ver más "; return; }
+    const g = e.target.closest("[data-pcx-pos]");
+    if (g) {
+      const same = EX.party === g.dataset.pcxPos;
+      EX.party = same ? "" : g.dataset.pcxPos; $("#ex-party").value = EX.party; drawExplorer();
+      if (!same) $("#ppan").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+    }
+  });
+}
+const PP = { pid: "", area: "", src: false };
+function drawPartyPanel() {
+  const box = $("#ppan"), root = $("#v-explorer"); if (!box) return;
+  root.classList.toggle("po", !!EX.party);
+  if (!EX.party) { box.hidden = true; box.innerHTML = ""; PP.pid = ""; return; }
+  const pid = EX.party, p = P[pid], info = pcxInfo(pid), total = BANK.questions.length;
+  if (PP.pid !== pid) { PP.pid = pid; PP.area = BANK.areas[0].id; PP.src = false; }
+  const dpc = Math.round(((info.known - info.est) / total) * 100), epc = Math.round((info.est / total) * 100), upc = 100 - dpc - epc;
+  const row = (q) => {
+    const v = q.pos[pid], est = v && q.est.includes(pid), s = q.src && q.src[pid], why = v ? posWhy(q, pid) : "";
+    if (!v) return `<li class="pr none"><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span><span class="pr-b">Sin postura conocida</span></li>`;
+    const badge = est ? '<span class="pr-b est">Estimada</span>' : s ? '<span class="pr-b src">Con fuente</span>' : '<span class="pr-b">Documentada</span>';
+    return `<li class="pr"><details><summary><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span>
+      <span class="pr-g" role="img" aria-label="Posición ${v} de 5: ${esc(answerText(q, v, true))}"><span class="pg"><i style="--p:${(v - 1) * 25}%"></i></span><span class="pr-l">${esc(answerText(q, v, true))}</span></span>${badge}</summary>
+      <div class="pr-x"><p class="pr-t">${esc(q.text)}</p>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}<p><b>${esc(answerText(q, v))}</b> · ${est ? "estimada" : "documentada"}${srcLink(q, pid)}</p>${why ? `<p class="small muted">${esc(why)}</p>` : ""}</div></details></li>`;
+  };
+  const keep = (q) => q.area === PP.area && (!PP.src || (q.pos[pid] && q.src && q.src[pid]));
+  const cur = BANK.areas.find((x) => x.id === PP.area), curQs = BANK.questions.filter(keep);
+  const cards = BANK.areas.map((a) => { const all = BANK.questions.filter((q) => q.area === a.id), k = all.filter((q) => q.pos[pid]).length;
+    const strip = all.map((q) => `<i class="${!q.pos[pid] ? "u" : q.est.includes(pid) ? "e" : "d"}"></i>`).join("");
+    return `<button type="button" class="pa-card" data-pa="${a.id}" aria-pressed="${PP.area === a.id}"><span class="pa-l">${a.letter}</span><b>${esc(a.name)}</b><span class="pa-n">${k} de ${all.length} con postura</span><span class="pa-s" aria-hidden="true">${strip}</span></button>`; }).join("");
+  const dimRows = BANK.dims.map((d) => { const v = (PARTY_DIM[pid] || {})[d.id];
+    return `<li><span class="dp-n">${esc(d.name)}</span>${v === undefined ? '<span class="dp-none">Sin datos suficientes</span>' : `<span class="dp-t" role="img" aria-label="${esc(d.name)}: ${signed(v)} entre ${esc(d.a)} (−100) y ${esc(d.b)} (+100)"><i style="--p:${(v + 100) / 2}%"></i></span>`}<span class="dp-e"><em>${esc(d.a)}</em><em>${esc(d.b)}</em></span></li>`; }).join("");
+  box.hidden = false;
+  box.style.setProperty("--pc", p.color);
+  box.innerHTML = `<section class="ppan" aria-label="Posturas de ${esc(p.name)}">
+    <button type="button" class="pp-back" id="pp-x"><span aria-hidden="true">←</span> Todas las candidaturas</button>
+    <div class="pp-head">${logo(pid)}<div><h3>${esc(p.name)}</h3><p>${esc(p.tag)}</p><p class="pp-w">${esc(info.where)}</p></div></div>
+    <div class="pp-stats"><div><b>${info.src}</b><span>con fuente enlazada</span></div><div><b>${info.est}</b><span>estimadas</span></div><div><b>${total - info.known}</b><span>sin postura conocida</span></div></div>
+    <div class="stack" role="img" aria-label="${dpc} % documentadas, ${epc} % estimadas, ${upc} % sin postura conocida"><span class="sk-d" style="--w:${dpc}%"></span><span class="sk-e" style="--w:${epc}%"></span><span class="sk-u" style="--w:${upc}%"></span></div>
+    <p class="pp-about">${esc(p.desc)}</p>
+    <section class="pp-sec" aria-labelledby="pp-dh"><h4 id="pp-dh">Su perfil en siete dimensiones</h4><ul class="dprof">${dimRows}</ul><p class="pp-key">Calculado con todas sus posturas del banco; las estimadas pesan menos. Es una lectura del test, no una etiqueta.</p></section>
+    <section class="pp-sec" aria-labelledby="pp-ah"><h4 id="pp-ah">Sus posturas por área</h4><p class="pp-key">Elige un área. Las barras pequeñas muestran qué preguntas tienen postura: <i class="lg d"></i> documentada · <i class="lg e"></i> estimada · <i class="lg u"></i> sin postura.</p><div class="pa-grid" role="group" aria-label="Áreas">${cards}</div></section>
+    <section class="pp-sec pp-list" id="pp-list" aria-labelledby="pp-lh"><div class="pp-lt"><h4 id="pp-lh"><span>${cur.letter}</span>${esc(cur.name)}</h4><label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
+      <p class="pp-key">Posición de 1 (En desacuerdo) a 5 (De acuerdo). Toca una fila para ver el detalle y la fuente.</p>
+      ${curQs.length ? `<ul class="pr-l2">${curQs.map(row).join("")}</ul>` : '<p class="muted">Ninguna postura con ese filtro en esta área.</p>'}</section>
+    ${p.props && p.props.length ? `<div class="pp-props"><h4>Algunas de sus propuestas</h4><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></div>` : ""}
+    <p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></section>`;
+}
+function syncPartyFocus() {
+  drawPartyPanel();
+  const f = $("#ex-focus"); if (!f) return;
+  f.hidden = !EX.party;
+  if (EX.party) $("#ex-focus-t").textContent = `Mostrando las posturas de ${P[EX.party].name}`;
+  document.querySelectorAll("#pcx-grid [data-pcx-pos]").forEach((b) => { const on = b.dataset.pcxPos === EX.party; b.textContent = on ? "Cerrar sus posturas" : "Ver sus posturas"; b.setAttribute("aria-pressed", String(on)); });
+}
 function drawExplorer() {
+  syncPartyFocus();
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const needle = norm(EX.text);
   const qs = BANK.questions.filter((q) => (!EX.area || q.area === EX.area) && (!needle || norm(`${q.text} ${q.short} ${q.ctx}`).includes(needle)));
@@ -2532,7 +2679,7 @@ function bindGlobal() {
       const v = g.dataset.go;
       if (CURRENT === "quiz" && S) save();
       if (v === "home") { fillSetup(); go("home"); }
-      else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && $(`#${g.dataset.anchor}`); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+      else if (v === "method") { renderMethod(); go("method", { focus: !g.dataset.anchor }); const t = g.dataset.anchor && showMethodSection(g.dataset.anchor); if (t) { t.scrollIntoView(); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
       else if (v === "explorer") { if (g.dataset.party) EX.party = g.dataset.party; renderExplorer(); go("explorer"); }
       return;
     }
@@ -2543,7 +2690,7 @@ function bindGlobal() {
   });
   $("#v-method").addEventListener("click", (e) => {
     const a = e.target.closest('a[href^="#m-"]'); if (!a) return;
-    e.preventDefault(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+    e.preventDefault(); showMethodSection(a.getAttribute("href").slice(1), true);
   });
   $("#retry-btn").addEventListener("click", () => location.reload());
 }
