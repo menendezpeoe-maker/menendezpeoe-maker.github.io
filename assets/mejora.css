@@ -681,3 +681,32 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
   .stack span { animation: hw-grow .9s var(--ds-ease) both; }
 }
 @media (prefers-reduced-motion: reduce) { .mnav a, .mtabs .msec.on { transition: none !important; animation: none !important; } }
+
+/* 7 · CANDIDATURAS: «Ver sus posturas» como mapa de cuadrados (una casilla por pregunta, coloreada por su postura) */
+.pcx-main { display: block; width: 100%; min-height: 46px; margin-top: 2px; border: 1.5px solid var(--ink); border-radius: 12px; background: var(--ink); color: var(--paper); font: inherit; font-weight: 780; font-size: 15px; cursor: pointer; transition: background-color .2s, color .2s, transform .25s var(--ds-ease); }
+.pcx-main:hover { transform: translateY(-1px); } .pcx-main[aria-pressed="true"] { background: var(--mark); color: var(--mark-ink); border-color: var(--ink); }
+.ppan { --pc: var(--ink); scroll-margin-top: 70px; display: grid; gap: 14px; padding: 20px 16px; border: 1.5px solid var(--ink); border-top: 6px solid var(--pc); border-radius: var(--ds-r-2); background: var(--sheet); box-shadow: var(--ds-sh-2); }
+.ppan[hidden] { display: none; }
+@media (min-width: 760px) { .ppan { padding: 26px 30px; } }
+.pp-head { display: flex; align-items: center; gap: 14px; } .pp-head > div { flex: 1; min-width: 0; }
+.pp-head h3 { font-family: var(--f-disp); font-stretch: 108%; font-weight: 820; font-size: 22px; line-height: 1.15; } .pp-head p { font-size: 14px; color: var(--ink-3); }
+.pp-sum { font-size: 15px; color: var(--ink-2); } .pp-sum b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.pp-leg { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--ink-2); } .pp-leg span { display: inline-flex; align-items: center; gap: 6px; } .pp-leg .pp-c { width: 18px; height: 18px; min-height: 0; pointer-events: none; }
+.pp-det { min-height: 84px; padding: 12px 14px; border-radius: var(--ds-r-1); background: var(--paper); border: 1px solid var(--rule); font-size: 15px; line-height: 1.4; display: grid; gap: 6px; align-content: start; }
+.pp-hint { color: var(--ink-3); } .pp-q { font-family: var(--f-text); font-size: 16px; } .pp-q .q-code { margin-right: 6px; }
+.pp-grid { display: grid; gap: 14px 24px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .pp-grid { grid-template-columns: repeat(2, 1fr); } }
+.pp-a h4 { display: flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 760; margin-bottom: 8px; }
+.pp-a h4 span { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 6px; background: var(--mark); color: var(--mark-ink); font-size: 12px; font-weight: 900; }
+.pp-a h4 em { margin-left: auto; font-style: normal; font-weight: 600; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.pp-r { display: flex; flex-wrap: wrap; gap: 5px; }
+.pp-c { width: 34px; height: 34px; border-radius: 8px; border: 1.5px solid transparent; display: inline-grid; place-items: center; font: inherit; font-weight: 800; font-size: 13px; cursor: pointer; padding: 0; transition: transform .2s var(--ds-ease), box-shadow .2s; }
+button.pp-c:hover { transform: translateY(-2px); box-shadow: var(--ds-sh-1); }
+.pp-c.sel { outline: 3px solid var(--ink); outline-offset: 2px; }
+.pp-c.v1 { background: #b35806; color: #fff; } .pp-c.v2 { background: #f1a340; color: #1b1b1b; } .pp-c.v3 { background: #e3e3df; color: #1b1b1b; } .pp-c.v4 { background: #8dc4e8; color: #1b1b1b; } .pp-c.v5 { background: #1f6fb4; color: #fff; }
+.pp-c.v0 { background: transparent; border: 1.5px dashed var(--ink-3); }
+.pp-c.est { background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.28) 0 3px, transparent 3px 7px); }
+.pp-about { padding-top: 12px; border-top: 1px solid var(--rule); font-size: 14.5px; color: var(--ink-2); line-height: 1.45; display: grid; gap: 8px; }
+.pp-about h4 { font-size: 14px; font-weight: 760; color: var(--ink); } .pp-about ul { padding-left: 18px; display: grid; gap: 4px; }
+@media (prefers-reduced-motion: no-preference) { @keyframes pp-in { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: none; } } .ppan .pp-r .pp-c { animation: pp-in .35s var(--ds-ease) both; } .ppan .pp-a:nth-child(2n) .pp-c { animation-delay: .08s; } .ppan .pp-a:nth-child(3n) .pp-c { animation-delay: .16s; } }
+@media (prefers-reduced-motion: reduce) { .pp-c, .pcx-main { transition: none !important; animation: none !important; } }
