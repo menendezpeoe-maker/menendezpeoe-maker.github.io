@@ -213,8 +213,8 @@
     btn.addEventListener("click", () => { const p = $("#q-prev"); if (p) p.click(); });
     new IntersectionObserver(([e]) => mini.classList.toggle("on", e.intersectionRatio < 0.9), { threshold: [0, 0.9, 1] }).observe(qBar);
   }
-  const FOLD_MQ = matchMedia("(max-width: 760px)");
-  const folds = [["diff-h", ".diff, .two-col > div > p.small"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
+  const FOLD_MQ = matchMedia("all"); // 8 nov: también en ordenador (antes solo ≤ 760 px)
+  const folds = [["how-h", ".hw"], ["diff-h", ".diff, .two-col > div > p.small"], ["temas-h", ".topic-list, :scope > p.small"], ["faq-h", ".faq"], ["areas-h", "#areas-list"]].map(([hid, body]) => {
     const h = document.getElementById(hid), sec = h && h.closest("section"); if (!sec) return null;
     return { h, sec, bodies: $$(body, sec), text: h.textContent };
   }).filter(Boolean);
@@ -232,6 +232,9 @@
   };
   buildFolds();
   FOLD_MQ.addEventListener("change", buildFolds);
+  const openFoldFor = (el) => { const sec = el && el.closest && el.closest(".m-fold"); if (!sec || sec.classList.contains("open")) return; const b = $(".m-fold-btn", sec); if (b) { b.setAttribute("aria-expanded", "true"); sec.classList.add("open"); } };
+  window.openFoldFor = openFoldFor;
+  document.addEventListener("click", (e) => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a || a.getAttribute("href").length < 2) return; const t = document.getElementById(a.getAttribute("href").slice(1)); if (t) openFoldFor(t); }, true);
 })();
 (function () {
   const hw = document.getElementById("hw"); if (!hw) return;
