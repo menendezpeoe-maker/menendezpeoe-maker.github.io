@@ -262,6 +262,7 @@ function initHome() {
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
   initCmpx();
+  const fc = $("#facts-cand"); if (fc) fc.textContent = PIDS.length; // la cifra de candidaturas sale de los datos, no del texto fijo
   $("#start-btn").disabled = false;
   fillSetup();
   // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
