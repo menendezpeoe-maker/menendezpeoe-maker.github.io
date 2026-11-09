@@ -261,10 +261,59 @@ function initHome() {
   $("#foot-version").textContent = `${BANK.questions.length} preguntas · posturas actualizadas el ${fmtDate(BANK.updated)}`;
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
+  initCmpx();
   $("#start-btn").disabled = false;
   fillSetup();
   // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
   requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.add("is-ready")));
+}
+// ── Comparar dos candidaturas desde la portada (8 nov): sin necesidad de hacer el test
+const CMP = { a: "", b: "" };
+function initCmpx() {
+  const box = $("#cmpx-body"); if (!box) return;
+  const ids = PIDS.slice();
+  if (!CMP.a || !ids.includes(CMP.a)) CMP.a = ids[0];
+  if (!CMP.b || !ids.includes(CMP.b) || CMP.b === CMP.a) CMP.b = ids.find((x) => x !== CMP.a);
+  const opts = (sel, other) => ids.map((pid) => `<option value="${pid}"${pid === sel ? " selected" : ""}${pid === other ? " disabled" : ""}>${esc(P[pid].name)}</option>`).join("");
+  box.innerHTML = `<div class="cx-pick">
+      <div class="field"><label class="label" for="cx-a">Candidatura A</label><select id="cx-a">${opts(CMP.a, CMP.b)}</select></div>
+      <button type="button" class="cx-swap" id="cx-swap" aria-label="Intercambiar A y B"><span aria-hidden="true">⇄</span></button>
+      <div class="field"><label class="label" for="cx-b">Candidatura B</label><select id="cx-b">${opts(CMP.b, CMP.a)}</select></div></div>
+    <div class="cx-out" id="cx-out" aria-live="polite"></div>`;
+  const draw = () => { drawCmpx(); $("#cx-a").innerHTML = opts(CMP.a, CMP.b); $("#cx-b").innerHTML = opts(CMP.b, CMP.a); };
+  $("#cx-a").addEventListener("change", (e) => { CMP.a = e.target.value; draw(); });
+  $("#cx-b").addEventListener("change", (e) => { CMP.b = e.target.value; draw(); });
+  $("#cx-swap").addEventListener("click", () => { [CMP.a, CMP.b] = [CMP.b, CMP.a]; draw(); $("#cx-swap").classList.toggle("flip"); });
+  drawCmpx();
+}
+function drawCmpx() {
+  const a = CMP.a, b = CMP.b, pa = P[a], pb = P[b], out = $("#cx-out"); if (!out) return;
+  const both = BANK.questions.filter((q) => q.pos[a] && q.pos[b]);
+  const gap = (q) => Math.abs(q.pos[a] - q.pos[b]);
+  const agree = both.length ? Math.round((both.reduce((t, q) => t + (1 - gap(q) / 4), 0) / both.length) * 100) : null;
+  const same = both.filter((q) => gap(q) <= 1).length, far = both.filter((q) => gap(q) >= 3).length, mid = both.length - same - far;
+  const estp = (q, pid) => (q.est.includes(pid) ? " (est.)" : "");
+  const item = (q) => `<li><b>${esc(q.short || q.text)}</b><span class="cx-pos"><span class="cx-p" style="--pc:${pa.color}"><i></i>${esc(pa.ab)}: ${esc(answerText(q, q.pos[a], true))}${estp(q, a)}</span><span class="cx-p" style="--pc:${pb.color}"><i></i>${esc(pb.ab)}: ${esc(answerText(q, q.pos[b], true))}${estp(q, b)}</span></span></li>`;
+  const rank = (q) => gap(q) * 10 + (q.est.includes(a) ? 1 : 0) + (q.est.includes(b) ? 1 : 0);
+  const close = both.filter((q) => gap(q) === 0).sort((x, y) => rank(x) - rank(y) || x.prio - y.prio).slice(0, 4);
+  const apart = both.filter((q) => gap(q) >= 2).sort((x, y) => gap(y) - gap(x) || rank(x) - rank(y) || x.prio - y.prio).slice(0, 4);
+  const dims = BANK.dims.map((d) => { const va = PARTY_DIM[a] && PARTY_DIM[a][d.id], vb = PARTY_DIM[b] && PARTY_DIM[b][d.id];
+    const mk = (v, pc, n) => v === undefined ? "" : `<i class="cx-m ${n}" style="left:${(v + 100) / 2}%;--pc:${pc}" title="${esc(n === "ma" ? pa.ab : pb.ab)}: ${signed(v)}"></i>`;
+    const txt = `${pa.ab} ${va === undefined ? "sin datos" : signed(va)} · ${pb.ab} ${vb === undefined ? "sin datos" : signed(vb)}`;
+    return `<li><span class="cx-dn">${esc(d.name)}</span><span class="cx-dt" role="img" aria-label="${esc(d.name)}, de ${esc(d.a)} a ${esc(d.b)}: ${esc(txt)}">${mk(va, pa.color, "ma")}${mk(vb, pb.color, "mb")}</span><span class="cx-de"><em>${esc(d.a)}</em><em>${esc(d.b)}</em></span></li>`; }).join("");
+  const head = (pid) => `<div class="cx-card" style="--pc:${P[pid].color}">${logo(pid)}<div><b>${esc(P[pid].name)}</b><span>${esc(P[pid].tag)}</span></div></div>`;
+  out.innerHTML = `<div class="cx-head">${head(a)}<span class="cx-vs" aria-hidden="true">VS</span>${head(b)}</div>
+    ${agree === null ? `<p class="cx-none">No hay preguntas en las que ambas tengan postura conocida.</p>` : `<div class="cx-agree"><div class="cx-big"><b>${agree} %</b><span>de acuerdo medio en las ${both.length} preguntas en las que ambas tienen postura</span></div>
+      <div class="cx-stack" role="img" aria-label="${same} preguntas con posturas cercanas, ${mid} intermedias y ${far} muy distintas"><span class="s1" style="flex:${same || 0.0001}"></span><span class="s2" style="flex:${mid || 0.0001}"></span><span class="s3" style="flex:${far || 0.0001}"></span></div>
+      <ul class="cx-leg"><li><i class="s1"></i><b>${same}</b> cercanas (0 o 1 punto)</li><li><i class="s2"></i><b>${mid}</b> intermedias</li><li><i class="s3"></i><b>${far}</b> muy distintas (3 o 4 puntos)</li></ul></div>`}
+    <section class="cx-sec" aria-labelledby="cx-dh"><h3 id="cx-dh">Las siete dimensiones</h3>
+      <p class="cx-key"><span class="cx-p" style="--pc:${pa.color}"><i></i>${esc(pa.name)}</span><span class="cx-p" style="--pc:${pb.color}"><i></i>${esc(pb.name)}</span></p>
+      <ul class="cx-dims">${dims}</ul></section>
+    <div class="cx-two">
+      <section class="cx-sec" aria-labelledby="cx-ch"><h3 id="cx-ch">Dónde coinciden</h3>${close.length ? `<ul class="cx-list">${close.map(item).join("")}</ul>` : `<p class="cx-none">Sin preguntas con la misma postura.</p>`}</section>
+      <section class="cx-sec" aria-labelledby="cx-xh"><h3 id="cx-xh">Dónde se diferencian</h3>${apart.length ? `<ul class="cx-list">${apart.map(item).join("")}</ul>` : `<p class="cx-none">Sin diferencias de 2 puntos o más.</p>`}</section>
+    </div>
+    <p class="cx-note">Las posturas estimadas se marcan con «est.» y pesan menos. Comparar no cambia tu resultado ni indica cuál es mejor. <button type="button" class="link-btn" data-go="explorer" data-party="${a}" style="padding:0">Ver todas las posturas de ${esc(pa.ab)}</button> · <button type="button" class="link-btn" data-go="explorer" data-party="${b}" style="padding:0">de ${esc(pb.ab)}</button></p>`;
 }
 function fillSetup(s = S) {
   if (s && MODES[s.mode]) $$('input[name=mode]').forEach((i) => { i.checked = i.value === s.mode; });
@@ -745,13 +794,71 @@ const NAV_ICON = {
   least: '<circle cx="10" cy="10" r="7"/><path d="M7.2 7.2l5.6 5.6M12.8 7.2l-5.6 5.6"/>',
   pols: '<circle cx="7" cy="7" r="2.6"/><circle cx="14" cy="8" r="2.1"/><path d="M2.5 16c.6-2.8 2.4-4.2 4.5-4.2s3.9 1.4 4.5 4.2M12 12.4c2.2-.4 4.4.8 5.3 3.6"/>'
 };
+// Secciones del resultado (8 nov): se ven de una en una. Un solo sitio para nombres, grupos y descripciones.
+const RT_GROUPS = ["Sobre ti", "Candidaturas", "Tus respuestas"];
+const RT_META = [
+  { id: "summary", g: 0, label: "Resultado", desc: "Tu mayor coincidencia y lo esencial de tu resultado." },
+  { id: "portrait", g: 0, label: "Tu perfil explicado", desc: "Qué dicen de ti tus respuestas, con sus propias palabras." },
+  { id: "dims", g: 0, label: "Siete dimensiones", desc: "Dónde te sitúas en cada eje y qué respuestas te llevan ahí." },
+  { id: "areas", g: 0, label: "Por áreas", desc: "Tu posición en cada tema: economía, vivienda, sanidad…" },
+  { id: "traits", g: 0, label: "Certezas y dudas", desc: "En qué eres firme, en qué dudas y qué respuestas se contradicen." },
+  { id: "parties", g: 1, label: "Coincidencia por partido", desc: "Cuánto coincides con cada candidatura de tu provincia." },
+  { id: "versus", g: 1, label: "Comparar dos partidos", desc: "Dónde se parecen y dónde se diferencian, respecto a ti." },
+  { id: "map", g: 1, label: "Mapa político", desc: "Tu posición entre las candidaturas, en un mapa." },
+  { id: "how", g: 1, label: "Cómo se calcula", desc: "El método paso a paso, con tus propios datos." },
+  { id: "solid", g: 1, label: "Fiabilidad", desc: "Cuánto fiarte de este resultado y por qué." },
+  { id: "share", g: 2, label: "Compartir", desc: "Una tarjeta para redes, sin tus respuestas." },
+  { id: "review", g: 2, label: "Revisar mis respuestas", desc: "Cambia cualquiera y mira cómo se mueve todo." },
+  { id: "least", g: 2, label: "Con quién menos coincides", desc: "Las candidaturas más lejanas a tus respuestas." },
+  { id: "pols", g: 2, label: "Políticos afines", desc: "Políticos con posturas propias documentadas." }
+];
+const rtList = () => RT_META.filter((m) => !(SHARED && m.id === "share"));
 function navLinks() {
-  const groups = [
-    ["Tu perfil", [["summary", "Resumen"], ["portrait", "Tu perfil"], ["dims", "Dimensiones"], ["areas", "Por temas"], ["traits", "Firmes y dudas"]]],
-    ["Las candidaturas", [["parties", "Partidos"], ["how", "Cómo se calcula"], ["versus", "Comparar"], ["map", "Mapa"], ["solid", "Solidez"]]],
-    ["Tus respuestas", [...(SHARED ? [] : [["share", "Compartir"]]), ["review", "Tus respuestas"], ["least", "Menor coincidencia"], ["pols", "Políticos"]]]
-  ];
-  return groups.map(([t, g]) => `<p class="np-g">${t}</p><ul class="np-list">${g.map(([id, l]) => `<li><a href="#r-${id}" data-sec="r-${id}" data-ico="${id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[id]}</svg></span><span>${l}</span></a></li>`).join("")}</ul>`).join("");
+  return RT_GROUPS.map((t, gi) => `<p class="np-g">${t}</p><ul class="np-list">${rtList().filter((m) => m.g === gi).map((m) => `<li><a href="#r-${m.id}" data-sec="r-${m.id}" data-ico="${m.id}"><span class="np-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><span>${m.label}</span></a></li>`).join("")}</ul>`).join("");
+}
+// Una sección cada vez: la elegida (y las que van con ella) se ven; el resto, no
+let RT_CUR = "summary";
+const rtOn = (id, cur) => id === cur || ((id === "friend" || id === "tiles") && cur === "summary") || (id === "support" && (cur === "summary" || cur === "share"));
+function rtSyncNav() {
+  const nav = $("#v-results .res-nav"); if (!nav) return;
+  const list = rtList(), i = Math.max(0, list.findIndex((m) => m.id === RT_CUR)), pct = Math.round(((i + 1) / list.length) * 100);
+  nav.querySelectorAll("#nav-panel a").forEach((a) => { if (a.dataset.sec === "r-" + RT_CUR) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); });
+  $("#nav-pct").textContent = pct; $("#nav-idx").textContent = i + 1;
+  $("#nav-bar").style.transform = `scaleX(${pct / 100})`; nav.querySelector(".rg-fg").style.strokeDasharray = `${pct} 100`;
+}
+function rtSyncTop() {
+  const t = $("#rt-top"); if (!t) return;
+  const m = rtList().find((x) => x.id === RT_CUR), inSum = RT_CUR === "summary";
+  t.hidden = inSum;
+  if (!inSum) t.innerHTML = `<a href="#r-summary" class="rt-back"><span aria-hidden="true">←</span> Volver al resultado</a><span class="rt-crumb"><small>${esc(RT_GROUPS[m.g])}</small><b>${esc(m.label)}</b></span><a href="#r-summary" class="rt-x" aria-label="Cerrar esta sección y volver al resultado"><span aria-hidden="true">✕</span><span class="rt-xt">Cerrar</span></a>`;
+}
+function rtSyncFoot() {
+  const f = $("#rt-foot"); if (!f) return;
+  const list = rtList(), i = list.findIndex((m) => m.id === RT_CUR), pv = list[i - 1], nx = list[i + 1];
+  f.innerHTML = `${pv ? `<a href="#r-${pv.id}" class="rt-p"><span aria-hidden="true">←</span> ${esc(pv.label)}</a>` : "<span></span>"}${RT_CUR !== "summary" ? `<a href="#r-summary" class="rt-c">Volver al resultado</a>` : ""}${nx ? `<a href="#r-${nx.id}" class="rt-n">${esc(nx.label)} <span aria-hidden="true">→</span></a>` : ""}`;
+}
+function showSection(id, opts = {}) {
+  id = String(id).replace(/^#?r-/, "");
+  if (id === "support") { // las aportaciones acompañan al resumen y a «Compartir»: no tienen pestaña propia
+    if (!rtOn("support", RT_CUR)) showSection("summary", { scroll: false, focus: false });
+    const t = $("#r-support"); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+    return t;
+  }
+  if (!rtList().some((m) => m.id === id)) return null;
+  RT_CUR = id;
+  $$("#v-results .res-sec[id]").forEach((x) => x.classList.toggle("on", rtOn(x.id.replace(/^r-/, ""), id)));
+  rtSyncNav(); rtSyncFoot(); rtSyncTop();
+  const t = $("#r-" + id);
+  if (opts.scroll !== false) { const root = $("#v-results"); window.scrollTo({ top: Math.max(0, root.getBoundingClientRect().top + scrollY), behavior: reduceMotion() ? "auto" : "smooth" }); }
+  if (opts.focus !== false && t) { const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
+  return t;
+}
+// Entrada visual a todas las secciones, bajo el resumen
+function renderTiles() {
+  const box = $("#r-tiles"); if (!box) return;
+  box.innerHTML = `<div class="sec-head"><p class="label">Explora tu resultado</p><h2 id="tiles-h" class="h2">Todo sobre tus respuestas, por secciones</h2>
+    <p class="sub">Toca una sección. También puedes cambiar desde el menú «Secciones», arriba a la derecha.</p></div>
+    <ul class="rt-tiles">${rtList().filter((m) => m.id !== "summary").map((m, k) => `<li style="--k:${k}"><a href="#r-${m.id}" data-sec="r-${m.id}"><span class="rt-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><b>${m.label}</b><span>${m.desc}</span></a></li>`).join("")}</ul>`;
 }
 let NAV_OBS = null, NAV_RAF = 0;
 function bindResNav() {
@@ -763,17 +870,10 @@ function bindResNav() {
   panel.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("[data-nav-close]")) setOpen(false, !!e.target.closest("[data-nav-close]")); });
   panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.stopPropagation(); setOpen(false, true); }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); const i = links.indexOf(document.activeElement); links[(i + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length].focus(); } });
-  const setActive = (id) => { for (const a of links) { if (a.dataset.sec === id) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); } };
-  const progress = () => { NAV_RAF = 0; const root = $("#v-results"); if (!root || !$("#nav-bar")) return; const h = root.offsetHeight - innerHeight, p = Math.min(1, Math.max(0, (scrollY - root.offsetTop) / (h || 1)));
-    $("#nav-bar").style.transform = `scaleX(${p})`; $("#nav-pct").textContent = Math.round(p * 100); nav.querySelector(".rg-fg").style.strokeDasharray = `${(p * 100).toFixed(1)} 100`; };
   if (!bindResNav.bound) { bindResNav.bound = true;
-    addEventListener("scroll", () => { if (!NAV_RAF && CURRENT === "results") NAV_RAF = requestAnimationFrame(progress); }, { passive: true });
     document.addEventListener("click", (e) => { const n = $("#v-results .res-nav.open"); if (n && !n.contains(e.target)) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); n.querySelector("#nav-btn").setAttribute("aria-expanded", "false"); } });
     document.addEventListener("keydown", (e) => { const n = $("#v-results .res-nav.open"); if (e.key === "Escape" && n) { n.querySelector("#nav-panel").hidden = true; n.classList.remove("open"); const b = n.querySelector("#nav-btn"); b.setAttribute("aria-expanded", "false"); b.focus(); } }); }
-  NAV_OBS?.disconnect();
-  NAV_OBS = new IntersectionObserver((ents) => { const vis = ents.filter((x) => x.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]; if (vis) setActive(vis.target.id); }, { rootMargin: "-30% 0px -60% 0px" });
-  for (const a of links) { const sec = document.getElementById(a.dataset.sec); if (sec) NAV_OBS.observe(sec); }
-  setActive("r-summary"); progress();
+  rtSyncNav();
 }
 
 function renderResults() {
@@ -781,7 +881,7 @@ function renderResults() {
   const next = NEXT_MODE[st.mode] || null;
   $("#v-results").innerHTML = `
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
-    <div class="wrap">
+    <div class="wrap rt">
       <nav class="res-nav" aria-label="Secciones del resultado">
         <button type="button" class="nav-btn" id="nav-btn" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true">
           <span class="nav-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle class="rg-bg" cx="18" cy="18" r="16"/><circle class="rg-fg" cx="18" cy="18" r="16" pathLength="100"/></svg><svg class="nav-ico" viewBox="0 0 20 20">${NAV_ICON.summary}</svg></span>
@@ -789,16 +889,17 @@ function renderResults() {
           <svg class="nav-chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 8l4.5 4.5L14.5 8"/></svg>
         </button>
         <div class="nav-panel" id="nav-panel" hidden>
-          <div class="np-head"><div><p class="np-t">Tu resultado</p><p class="np-s"><span id="nav-pct">0</span> % leído</p></div><button type="button" class="np-x" data-nav-close aria-label="Cerrar el menú de secciones"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+          <div class="np-head"><div><p class="np-t">Tu resultado</p><p class="np-s">Sección <span id="nav-idx">1</span> de ${rtList().length}<span id="nav-pct" hidden>0</span></p></div><button type="button" class="np-x" data-nav-close aria-label="Cerrar el menú de secciones"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
           <div class="np-bar" aria-hidden="true"><i id="nav-bar"></i></div>
           ${navLinks()}
         </div>
       </nav>
+      <div class="rt-top" id="rt-top" hidden></div>
       <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
       <section id="r-how" class="res-sec" aria-labelledby="how-h"></section>
-      <div class="unfold-row${PREFS.full ? " is-open" : ""}"><button type="button" class="btn btn-ghost" id="r-unfold" aria-controls="r-full" aria-expanded="${PREFS.full ? "true" : "false"}">${PREFS.full ? "Ocultar el análisis completo" : "Ver el análisis completo"}</button><span class="small muted unfold-note">Tu perfil explicado, todas las candidaturas, temas, mapa y más</span></div>
-      <div id="r-full"${PREFS.full ? "" : " hidden"}>
+      <section id="r-tiles" class="res-sec" aria-labelledby="tiles-h"></section>
+      <div id="r-full">
       <section id="r-portrait" class="res-sec" aria-labelledby="portrait-h"></section>
       <section id="r-dims" class="res-sec" aria-labelledby="dims-h"></section>
       <section id="r-areas" class="res-sec" aria-labelledby="areas-h2"></section>
@@ -813,7 +914,8 @@ function renderResults() {
       <section id="r-pols" class="res-sec" aria-labelledby="pols-h"></section>
       <section id="r-support" class="res-sec" aria-labelledby="support-h"></section>
       </div>
-      <section class="res-sec" aria-label="Siguientes pasos">
+      <div class="rt-foot" id="rt-foot"></div>
+      <section class="res-sec rt-keep" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
           ${!SHARED ? `<a class="btn btn-ghost dup" href="#r-share">Compartir mi resultado</a><button type="button" class="btn btn-ghost dup" data-act="new">Repetir el test</button>` : `<button type="button" class="btn btn-primary" data-act="own-test">Hacer mi propio test</button>`}
@@ -823,7 +925,8 @@ function renderResults() {
       </section>
     </div>`;
   setTimeout(bindResNav, 0);
-  invalidateCards(); renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  invalidateCards(); renderTiles(); renderSummary(); renderFriend(); renderHow(); renderPortrait(); renderDims(); renderMap(); renderAreas(); renderTraits(); renderParties(); renderVersus(); renderSolid(); renderShare(); renderReview(); renderLeast(); renderPoliticians(); renderSupport();
+  showSection("summary", { scroll: false, focus: false });
 }
 
 function rerenderAfterEdit() {
@@ -1580,15 +1683,10 @@ function showExtraCard(pid, scroll = true) {
 // «Ver el análisis completo»: se despliega al pulsarlo o al ir a cualquier sección plegada, y se recuerda
 // Los botones «Ver su ficha» pasan a «Ocultar su ficha» mientras esa ficha está abierta
 function syncCardBtns() { $$("#v-results [data-card]").forEach((x) => { const on = UI.extra === x.dataset.card; x.textContent = on ? "Ocultar su ficha" : "Ver su ficha"; x.setAttribute("aria-expanded", String(on)); }); }
-function setFull(open) {
-  const f = $("#r-full"); if (!f) return;
-  f.hidden = !open; const b = $("#r-unfold");
-  if (b) { b.setAttribute("aria-expanded", String(open)); b.textContent = open ? "Ocultar el análisis completo" : "Ver el análisis completo"; b.closest(".unfold-row").classList.toggle("is-open", open); }
-  PREFS.full = open; savePrefs();
-}
-function unfold() { const f = $("#r-full"); if (f && f.hidden) setFull(true); }
+function setFull() { /* ya no hay un único «análisis completo» plegado: las secciones se ven de una en una */ }
+function unfold(id) { if (id) showSection(id, { scroll: false, focus: false }); }
 function focusCard(pid) {
-  unfold();
+  unfold("parties");
   const c = $(`#card-${pid}`); if (!c) return;
   c.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
   const h = c.querySelector("h3"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
@@ -1860,17 +1958,15 @@ function bindResults() {
   });
   root.addEventListener("click", (e) => {
     const mp = e.target.closest(".map-pt, .map-me"); if (mp) { selectMap(mp.dataset.pid); return; }
-    if (e.target.closest("#r-unfold") && !$("#r-full").hidden) { setFull(false); const r = $("#r-unfold"); r.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" }); r.focus({ preventScroll: true }); return; }
-    if (e.target.closest("#r-unfold")) { unfold(); const t = $("#r-portrait"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } return; }
     if (e.target.closest('[data-act="challenge"]')) { challengeFriend(); return; }
     if (e.target.closest('[data-act="print"]')) { window.print(); return; }
     const u = e.target.closest("[data-useful]"); if (u) { answerUseful(u.dataset.useful); return; }
     const a = e.target.closest('a[href^="#r-"]');
-    if (a) { e.preventDefault(); if (a.getAttribute("href") !== "#r-summary") unfold(); const t = $(a.getAttribute("href")); if (t) { t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } } return; }
+    if (a) { e.preventDefault(); showSection(a.getAttribute("href")); return; }
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.scope) { UI.scope = b.dataset.scope; renderParties(); $(`[data-scope="${UI.scope}"]`).focus(); return; }
     if (b.dataset.card) { if (UI.extra === b.dataset.card) { UI.extra = null; $("#pc-extra").innerHTML = ""; } else showExtraCard(b.dataset.card); syncCardBtns(); return; }
-    if (b.dataset.vs) { unfold(); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
+    if (b.dataset.vs) { unfold("versus"); const top = MODEL.prov[0]?.pid; if (b.dataset.vs === top) { UI.vsA = top; UI.vsB = null; } else { UI.vsA = top; UI.vsB = b.dataset.vs; } renderVersus(); const t = $("#r-versus"); t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const h = t.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); return; }
     if (b.dataset.mapsel) { selectMap(b.dataset.mapsel); return; }
     if (b.dataset.act === "close-card") { const pid = UI.extra; UI.extra = null; $("#pc-extra").innerHTML = ""; syncCardBtns(); const r = $(`#r-parties [data-card="${pid}"]`); if (r) r.focus(); return; }
     if (b.dataset.ctl === "imp" && !SHARED) {
@@ -1954,7 +2050,7 @@ function siteUrl() {
 }
 const siteHost = () => siteUrl().replace(/^https?:\/\//, "").replace(/\/$/, "");
 
-const SH = { fmt: "story", party: true, text: "", edited: false, blobs: {}, urls: {}, gen: 0 };
+const SH = { fmt: "story", theme: "light", party: true, text: "", edited: false, blobs: {}, urls: {}, gen: 0 };
 const FMT = {
   story: { label: "Historia", hint: "9:16 · 1080 × 1920", w: 1080, h: 1920, file: "historia" },
   square: { label: "Cuadrada", hint: "1:1 · 1080 × 1080", w: 1080, h: 1080, file: "cuadrada" },
@@ -2001,6 +2097,9 @@ function renderShare() {
       <figure class="card-prev">
         <div class="fmt-tabs" role="radiogroup" aria-label="Formato de la imagen">
           ${Object.entries(FMT).map(([k, f]) => `<label><input type="radio" name="sh-fmt" value="${k}"${SH.fmt === k ? " checked" : ""}><span><b>${f.label}</b><small>${f.hint}</small></span></label>`).join("")}
+        </div>
+        <div class="theme-tabs" role="radiogroup" aria-label="Estilo de la imagen">
+          ${[["light", "Claro"], ["dark", "Oscuro"]].map(([k, l]) => `<label><input type="radio" name="sh-theme" value="${k}"${SH.theme === k ? " checked" : ""}><span><i class="th-${k}" aria-hidden="true"></i>${l}</span></label>`).join("")}
         </div>
         <div class="card-frame" data-fmt="${SH.fmt}"><img id="sh-img" alt="Vista previa de tu tarjeta de resultado" hidden><p class="card-loading" id="sh-loading">Generando la imagen…</p></div>
         <figcaption class="small muted">La imagen se crea en tu dispositivo con tu resultado. Puedes descargarla o, en el móvil, mantenerla pulsada para guardarla.</figcaption>
@@ -2134,6 +2233,7 @@ function bindShare() {
   });
   root.addEventListener("change", (e) => {
     if (e.target.name === "sh-fmt") { SH.fmt = e.target.value; refreshCard(); }
+    else if (e.target.name === "sh-theme") { SH.theme = e.target.value; invalidateCards(); refreshCard(); }
     else if (e.target.id === "sh-party") {
       SH.party = e.target.checked; SH.edited = false; SH.text = buildShareText();
       $("#sh-text").value = SH.text; updateShareLinks(); invalidateCards(); refreshCard();
@@ -2155,7 +2255,12 @@ function bindShare() {
 }
 
 // ── Dibujo de la tarjeta (canvas)
-const CC = { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F" };
+const CC = { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F", onMark: "#111318" };
+// Estilos de la tarjeta de resultado (8 nov): el oscuro destaca más en las redes. «onMark» = texto sobre el amarillo, siempre oscuro.
+const CARD_THEMES = {
+  light: { paper: "#F2F3EE", sheet: "#FFFFFF", ink: "#111318", ink2: "#434955", ink3: "#676D79", rule: "#D2D5CC", rule2: "#E4E6DF", mark: "#F6DD2F", onMark: "#111318" },
+  dark: { paper: "#07090C", sheet: "#12151B", ink: "#F4F5F0", ink2: "#CBCFD8", ink3: "#9EA4B0", rule: "#343A45", rule2: "#222730", mark: "#F6DD2F", onMark: "#111318" }
+};
 const cf = (w, s, fam = "Archivo") => `${w} ${s}px "${fam}", system-ui, -apple-system, sans-serif`;
 function fontsReady() {
   if (!document.fonts || !document.fonts.load) return Promise.resolve();
@@ -2204,7 +2309,7 @@ function drawDims(g, x, y, w, rowH, M, opts) {
     g.strokeStyle = CC.rule; g.lineWidth = 3; g.beginPath(); g.moveTo(trackX + trackW / 2, cy - opts.bar); g.lineTo(trackX + trackW / 2, cy + opts.bar); g.stroke();
     if (!o) return;
     const px = trackX + (o.v + 100) / 200 * trackW, cx = trackX + trackW / 2, bh = opts.bar * 1.1;
-    if (Math.abs(px - cx) > 1) { g.fillStyle = CC.mark; g.strokeStyle = CC.ink; g.lineWidth = 2.5; rrect(g, Math.min(px, cx), cy - bh / 2, Math.abs(px - cx), bh, bh / 2); g.fill(); g.stroke(); }
+    if (Math.abs(px - cx) > 1) { g.fillStyle = CC.mark; g.strokeStyle = CC.onMark; g.lineWidth = 2.5; rrect(g, Math.min(px, cx), cy - bh / 2, Math.abs(px - cx), bh, bh / 2); g.fill(); g.stroke(); }
     g.fillStyle = CC.ink; g.beginPath(); g.arc(px, cy, opts.bar * 0.95, 0, Math.PI * 2); g.fill();
     g.strokeStyle = CC.sheet; g.lineWidth = 3; g.stroke();
   });
@@ -2212,18 +2317,18 @@ function drawDims(g, x, y, w, rowH, M, opts) {
 }
 function drawParty(g, x, y, w, h, M, st, big) {
   const top = M.prov[0];
-  g.fillStyle = CC.mark; g.strokeStyle = CC.ink; g.lineWidth = 3; rrect(g, x, y, w, h, 14); g.fill(); g.stroke();
+  g.fillStyle = CC.mark; g.strokeStyle = CC.onMark; g.lineWidth = 3; rrect(g, x, y, w, h, 14); g.fill(); g.stroke();
   const pad = big * 0.5;
-  g.fillStyle = CC.ink; g.font = cf(700, big * 0.3); stretch(g, "semi-condensed");
+  g.fillStyle = CC.onMark; g.font = cf(700, big * 0.3); stretch(g, "semi-condensed");
   g.fillText(`MI MAYOR COINCIDENCIA EN ${PROV[st.prov].name.toUpperCase()}`, x + pad, y + pad + big * 0.18); stretch(g, "normal");
   const sw = big * 0.9, sy = y + h - pad - sw;
   g.fillStyle = P[top.pid].color; rrect(g, x + pad, sy, sw, sw, 8); g.fill();
   g.fillStyle = textOn(P[top.pid].color); g.font = cf(900, sw * 0.24); g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(P[top.pid].ab, x + pad + sw / 2, sy + sw / 2); g.textAlign = "left"; g.textBaseline = "alphabetic";
   g.font = cf(900, big * 1.45); const pctTxt = `${top.pct}%`; const pw = g.measureText(pctTxt).width;
-  g.fillStyle = CC.ink; g.fillText(pctTxt, x + w - pad - pw, y + h - pad);
+  g.fillStyle = CC.onMark; g.fillText(pctTxt, x + w - pad - pw, y + h - pad);
   const nameMax = w - pad * 3 - sw - pw;
   const fl = fitLines(g, pName(top.pid, st.prov).toUpperCase(), nameMax, 2, [big * 0.62, big * 0.54, big * 0.46, big * 0.4, big * 0.34], 900);
-  g.font = cf(900, fl.size); g.fillStyle = CC.ink;
+  g.font = cf(900, fl.size); g.fillStyle = CC.onMark;
   fl.lines.forEach((l, i) => g.fillText(l, x + pad * 1.4 + sw, sy + sw / 2 + fl.size * 0.35 + (i - (fl.lines.length - 1) / 2) * fl.size * 1.05));
 }
 // Siguientes coincidencias (tarjetas de los tests por tema): color, nombre, barra y porcentaje
@@ -2246,12 +2351,17 @@ function drawNext(g, x, y, w, rowH, M, st, fs, n) {
 }
 async function drawCard(fmt) {
   await fontsReady();
+  const saved = { ...CC }; Object.assign(CC, CARD_THEMES[SH.theme] || CARD_THEMES.light);
+  try { return drawCardIn(fmt); } finally { Object.assign(CC, saved); }
+}
+function drawCardIn(fmt) {
   const st = S, M = MODEL, f = FMT[fmt], W = f.w, H = f.h;
   const c = document.createElement("canvas"); c.width = W; c.height = H;
   const g = c.getContext("2d");
   g.fillStyle = CC.paper; g.fillRect(0, 0, W, H);
   const m = fmt === "wide" ? 28 : 48;
   g.fillStyle = CC.sheet; g.strokeStyle = CC.ink; g.lineWidth = 4; rrect(g, m, m, W - m * 2, H - m * 2, 18); g.fill(); g.stroke();
+  if (SH.theme === "dark") { g.save(); rrect(g, m, m, W - m * 2, H - m * 2, 18); g.clip(); g.strokeStyle = CC.rule2; g.lineWidth = 1.5; const gs = fmt === "wide" ? 36 : 54; for (let gx = m; gx < W - m; gx += gs) { g.beginPath(); g.moveTo(gx, m); g.lineTo(gx, H - m); g.stroke(); } for (let gy = m; gy < H - m; gy += gs) { g.beginPath(); g.moveTo(m, gy); g.lineTo(W - m, gy); g.stroke(); } g.restore(); }
   const head = profileFirst(M), withParty = SH.party && M.prov[0];
   const L = m + (fmt === "wide" ? 36 : 56), R = W - L, CW = R - L;
   const line = (y) => { g.strokeStyle = CC.ink; g.lineWidth = 4; g.beginPath(); g.moveTo(m, y); g.lineTo(W - m, y); g.stroke(); };
@@ -2267,7 +2377,7 @@ async function drawCard(fmt) {
     g.font = cf(600, s * 0.78); g.fillStyle = CC.ink2; const u = siteHost(); g.fillText(u, R - g.measureText(u).width, y);
   };
   if (fmt === "story") {
-    drawBrand(g, L, m + 104, 54); label(topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · ELECCIONES DEL 29N", L, m + 176, 26); line(m + 214);
+    drawBrand(g, L, m + 104, 54); label(topicOf(st) ? `TEST DE ${topicOf(st).label.toUpperCase()} · 29N` : "TEST POLÍTICO · NO RECOMIENDA VOTO", L, m + 176, 26); line(m + 214);
     let y = m + 300; label("MI RESULTADO", L, y, 28); y += 30;
     const fl = fitLines(g, head, CW, 5, [74, 66, 60, 54, 50]); g.fillStyle = CC.ink;
     fl.lines.forEach((l, i) => { g.font = cf(850, fl.size); g.fillText(l, L, y + fl.size * (i + 1) * 1.06); });
@@ -2275,7 +2385,7 @@ async function drawCard(fmt) {
     if (withParty) { drawParty(g, L, y, CW, 230, M, st, 88); y += 230 + 58; }
     label(td ? "MI POSICIÓN EN ESTE TEMA" : "MIS SIETE DIMENSIONES", L, y, 26); y += 18;
     const sd = td ? { rowH: 110, y } : dimsAt(y, H - m - 170 - y, 110), rowH = sd.rowH;
-    drawDims(g, L, sd.y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 84, dims: dl });
+    drawDims(g, L, sd.y, CW, rowH, M, { nameW: 380, fs: rowH >= 84 ? 32 : 29, bar: 12, poles: rowH >= 58, dims: dl });
     if (td && withParty) { y += rowH * nd + 60; label("OTRAS COINCIDENCIAS EN ESTE TEMA", L, y, 26); drawNext(g, L, y + 24, CW, 110, M, st, 34, 3); }
     footer(H - m - 64, 40);
   } else if (fmt === "square") {
@@ -2291,7 +2401,7 @@ async function drawCard(fmt) {
       drawNext(g, L, ny, CW, Math.min(64, nh), M, st, 24, 3);
     } else {
       const sq = dimsAt(y, H - m - 120 - y, td ? 90 : 62);
-      drawDims(g, L, sq.y, CW, sq.rowH, M, { nameW: 330, fs: 27, bar: 10, poles: !!td, dims: dl });
+      drawDims(g, L, sq.y, CW, sq.rowH, M, { nameW: 330, fs: 27, bar: 10, poles: sq.rowH >= 58, dims: dl });
     }
     footer(H - m - 40, 32);
   } else {
