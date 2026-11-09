@@ -133,3 +133,11 @@ Del martes 10 al **jueves 12 de noviembre a las 9:30 (Madrid)**: el miércoles 1
 ## Fecha de envío adelantada (8 nov, decisión del titular)
 
 El titular quiere adelantarse a otros tests. Se envía el **lunes 9 de noviembre a las 8:00 (Madrid)**: lo más temprano útil (fin de semana las redacciones y universidades están vacías) y antes de que abran las oficinas, para que el correo llegue antes de la bandeja del lunes. Termina hacia las 9:27. Tarea: trig_0197JWodrcTp9J2NvprDXGkX.
+
+
+---
+## Actualización del 9 de noviembre de 2026
+- **El titular canceló el envío automático** (tarea de las 8:00 del 9 nov, desactivada) y los enviará él a mano. Los 87 borradores se mantienen en Gmail (test29n.es@gmail.com), sin enviar.
+- **Texto corregido en los 87 borradores:** «874 posturas con fuente» pasa a **1.146**, «24 candidaturas» a **29**, y la frase «cada postura documentada lleva su fuente enlazada» pasa a decir cuántas llevan fuente (las estimadas se siguen marcando como tales). `plan/correos-7nov.json` refleja el mismo texto de los 77 generales.
+- **Enlaces:** Gmail convierte cualquier enlace del borrador en un redireccionamiento de Google (`google.com/url?q=…&ust=…`) con caducidad de 24 horas desde el último guardado. Se guardaron todos el 9 de noviembre hacia la 1:00 (Madrid): son válidos hasta el 10 de noviembre hacia la 1:00 (Madrid). Si se envían más tarde, hay que volver a guardar cada borrador.
+- **Nombre del remitente:** los borradores salen con el nombre que tenga la cuenta en «Enviar como»; hay que ponerlo como «Dery» en Gmail (Configuración → Cuentas e importación → Enviar como → Editar información).
