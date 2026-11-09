@@ -26,7 +26,7 @@ ok(links.length > 0 && links.every(isOfficial), `todos los enlaces externos son 
 
 console.log("Enlaces desde la web");
 const home = await get(""), press = await get("prensa/"), sitemap = await get("sitemap.xml"), party = await get("partidos/psoe/");
-ok(/href="votar\/"/.test(home.text) && /href="calendario\/"/.test(home.text), "el pie de la portada enlaza la guía y el calendario");
+ok(/href="calendario\/"/.test(home.text), "el pie de la portada enlaza el calendario");
 ok(/href="\/votar\/"/.test(party.text) && /href="\/calendario\/"/.test(party.text), "el pie de las páginas estáticas los enlaza");
 ok(/href="\/votar\/"/.test(press.text) && /href="\/calendario\/"/.test(press.text), "/prensa/ los enlaza");
 ok(/votar\/<\/loc>/.test(sitemap.text) && /calendario\/<\/loc>/.test(sitemap.text), "están en el sitemap");

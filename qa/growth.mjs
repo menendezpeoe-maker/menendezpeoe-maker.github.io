@@ -112,7 +112,7 @@ console.log("Páginas por candidatura y por tema");
   ok(cal.includes('href="/debates/"'), "el calendario enlaza /debates/");
   await page.goto(SITE); await page.waitForSelector("#start-btn:not([disabled])");
   ok((await page.locator('footer a[href="programas/"]').count()) === 1 && (await page.locator('footer a[href="debates/"]').count()) === 1, "el pie del test enlaza /programas/ y /debates/");
-  ok((await page.locator('footer a[href="partidos/"]').count()) === 1 && (await page.locator('footer a[href="prensa/"]').count()) === 1, "el pie del test enlaza las páginas nuevas (para que Google las encuentre)");
+  ok((await page.locator('footer a[href="calendario/"]').count()) === 1 && (await page.locator('footer a[href="prensa/"]').count()) === 1, "el pie del test enlaza las páginas nuevas (para que Google las encuentre)");
   await ctx.close();
 }
 

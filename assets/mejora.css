@@ -917,3 +917,14 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
 .rt-top ~ .res-sec.on:not(#r-summary) { padding-top: 22px; }
 @media print { .rt-top { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .rt-back, .rt-x { transition: none !important; } }
+
+/* 15 · Pie: enlaces a las páginas estáticas, plegados (siguen en el HTML para los buscadores) */
+.foot-more { margin-top: 6px; font-size: 14px; }
+.foot-more summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; font-weight: 700; color: var(--ink-2); list-style: none; }
+.foot-more summary::-webkit-details-marker { display: none; }
+.foot-more summary::after { content: "+"; display: inline-grid; place-items: center; width: 22px; height: 22px; border: 1.5px solid currentColor; border-radius: 50%; font-weight: 900; line-height: 1; }
+.foot-more[open] summary::after { content: "−"; }
+.foot-more summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+.foot-more nav { display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 4px 0 10px; }
+.foot-more nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); }
+@media print { .foot-more { display: none; } }

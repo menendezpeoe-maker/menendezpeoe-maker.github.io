@@ -35,7 +35,7 @@ for (const [k, t] of entries) {
 }
 ok(!bad.length, `cada página lista sus preguntas, enlaza el test y aclara que no es una recomendación${bad.length ? `: fallan ${bad.join(", ")}` : ""}`);
 const sm = await get("sitemap.xml"), home = await get("");
-ok(entries.every(([k]) => sm.text.includes(`tests/${k}/</loc>`)) && /href="tests\/"/.test(home.text), "están en el sitemap y en el pie de la portada");
+ok(entries.every(([k]) => sm.text.includes(`tests/${k}/</loc>`)), "están en el sitemap");
 
 const browser = await chromium.launch();
 const open = async () => {

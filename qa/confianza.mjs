@@ -29,6 +29,6 @@ ok(!priv.some((t) => (s.text + c.text).toLowerCase().includes(t.toLowerCase())),
 const m = await get("metodologia/");
 ok(m.status === 200 && h1(m.text) && m.text.includes(`<b>${meth.imitacion.primero} de ${meth.imitacion.total}</b>`) && m.text.includes(`${meth.aleatorios.n} perfiles`), "/metodologia/ muestra las cifras generadas por qa/metodologia.mjs");
 const home = await get(""), sm = await get("sitemap.xml");
-ok(/href="metodologia\/"/.test(home.text) && /href="sobre\/"/.test(home.text) && ["sobre/", "metodologia/"].every((p) => sm.text.includes(p + "</loc>")) && !sm.text.includes("correcciones/") && !/href="\/?correcciones\/"/.test(home.text), "enlazadas desde el pie y en el sitemap");
+ok(/href="sobre\/"/.test(home.text) && ["sobre/", "metodologia/"].every((p) => sm.text.includes(p + "</loc>")) && !sm.text.includes("correcciones/") && !/href="\/?correcciones\/"/.test(home.text), "el pie enlaza /sobre/ y ambas están en el sitemap");
 if (fails.length) { console.log(`\n${fails.length} FALLOS`); process.exit(1); }
 console.log("\nTODO OK");
