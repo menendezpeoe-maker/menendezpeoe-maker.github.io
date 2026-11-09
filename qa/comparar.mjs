@@ -47,12 +47,13 @@ console.log("Tarjeta de resultado: estilo claro y oscuro");
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), { v: 2, bank: bank.version, prov: "madrid", mode: "completa", seed: 7, order: all, idx: 0, ans, imp: {}, prios: [], stage: "done", t: 1 });
   await page.reload(); await goSection(page, "share");
-  const img = async () => { await page.waitForFunction(() => { const i = document.querySelector("#sh-img"); return i && !i.hidden && i.complete && i.naturalWidth > 0; }); return page.evaluate(async () => { const r = await fetch(document.querySelector("#sh-img").src); return (await r.blob()).size; }); };
+  // La CSP de la web real (connect-src 'self') no permite leer la imagen con fetch: se compara por sus píxeles, dibujándola en un canvas
+  const img = async () => { await page.waitForFunction(() => { const i = document.querySelector("#sh-img"); return i && !i.hidden && i.complete && i.naturalWidth > 0; }); return page.evaluate(() => { const i = document.querySelector("#sh-img"), c = document.createElement("canvas"); c.width = 16; c.height = 16; const g = c.getContext("2d"); g.drawImage(i, 0, 0, 16, 16); const d = g.getImageData(0, 0, 16, 16).data; let t = 0; for (let k = 0; k < d.length; k += 4) t += d[k] + d[k + 1] + d[k + 2]; return { w: i.naturalWidth, t }; }); };
   ok((await page.locator('input[name="sh-theme"]').count()) === 2 && await page.isChecked('input[name="sh-theme"][value="light"]'), "hay selector de estilo, con el claro por defecto");
   const s1 = await img();
   await page.evaluate(() => { const r = document.querySelector('input[name="sh-theme"][value="dark"]'); r.checked = true; r.dispatchEvent(new Event("change", { bubbles: true })); });
   await page.waitForTimeout(1500); const s2 = await img();
-  ok(s1 > 20000 && s2 > 20000 && s1 !== s2, `la imagen se genera en los dos estilos y cambia (${Math.round(s1 / 1024)} kB y ${Math.round(s2 / 1024)} kB)`);
+  ok(s1.w >= 1000 && s2.w >= 1000 && s1.t !== s2.t && s2.t < s1.t, "la imagen se genera en los dos estilos y el oscuro es más oscuro que el claro");
   const px = await page.evaluate(async () => { const i = document.querySelector("#sh-img"), c = document.createElement("canvas"); c.width = 8; c.height = 8; const g = c.getContext("2d"); g.drawImage(i, 0, 0, 8, 8); const d = g.getImageData(1, 1, 1, 1).data; return d[0] + d[1] + d[2]; });
   ok(px < 300, "con el estilo oscuro el fondo es oscuro (el claro suma unos 700)");
   await ctx.close();
