@@ -10,8 +10,12 @@ PEOPLE = {
  "nogueras": "Míriam Nogueras", "alvise": "Alvise Pérez", "esteban": "Aitor Esteban",
  "ponton": "Ana Pontón", "clavijo": "Fernando Clavijo", "monica": "Mónica García Gómez",
  "urtasun": "Ernest Urtasun",
+ "belarra": "Ione Belarra", "mico": "Àgueda Micó",
 }
-UA = {"User-Agent": "Test29N/1.0 (contacto: menendezpeoe@gmail.com)"}
+# Uso: python3 qa/photos.py <carpeta> [id ...]  (con ids, solo se descargan esas fotos y se conservan los créditos de las demás)
+ONLY = sys.argv[2:]
+if ONLY: PEOPLE = {k: v for k, v in PEOPLE.items() if k in ONLY}
+UA = {"User-Agent": "Test29N/1.0 (https://test29n.es)"}
 import time
 def get(url):
     for i in range(6):
@@ -26,7 +30,8 @@ def api(base, **p):
     p.update(format="json", formatversion="2")
     return json.loads(get(base + "?" + urllib.parse.urlencode(p)))
 FREE = re.compile(r"^(CC BY(-SA)? [0-9.]+( es| de)?|CC0|Public domain|Attribution|CC BY [0-9.]+|Dominio público)", re.I)
-credits = {}
+import os
+credits = json.load(open(f"{OUT}/credits.json")) if ONLY and os.path.exists(f"{OUT}/credits.json") else {}
 for pid, title in PEOPLE.items():
     q = api("https://es.wikipedia.org/w/api.php", action="query", titles=title, redirects=1, prop="pageimages|description", piprop="name")
     page = q["query"]["pages"][0]

@@ -126,5 +126,21 @@
   "source": "https://commons.wikimedia.org/wiki/File:1720511531544_20240709_PEREZ_FERNANDEZ_Luis_ES_004.jpg",
   "wiki": "Alvise Pérez",
   "desc": "Retrato oficial como eurodiputado"
+ },
+ "belarra": {
+  "file": "Ione_Belarra_2023.jpg",
+  "author": "Podemos",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ione_Belarra_2023.jpg",
+  "wiki": "Ione Belarra",
+  "desc": "política y psicóloga española"
+ },
+ "mico": {
+  "file": "Àgueda_Micó_(cropped).jpg",
+  "author": "Coalició Compromís",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%C3%80gueda_Mic%C3%B3_%28cropped%29.jpg",
+  "wiki": "Àgueda Micó",
+  "desc": "política española"
  }
 }

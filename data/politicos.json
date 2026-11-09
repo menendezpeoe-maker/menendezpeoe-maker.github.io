@@ -331,6 +331,70 @@
    }
   },
   {
+   "id": "belarra",
+   "name": "Ione Belarra",
+   "full": "Ione Belarra Urteaga",
+   "party": "pod",
+   "partyLabel": "Podemos",
+   "role": "Secretaria general de Podemos y portavoz del partido en el Congreso",
+   "photo": {
+    "src": "assets/politicos/belarra.jpg",
+    "author": "Podemos",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ione_Belarra_2023.jpg"
+   },
+   "pos": {
+    "H06": [
+     1,
+     "En 2025 pidió en el Congreso que el Gobierno saque a España de la OTAN."
+    ],
+    "H01": [
+     1,
+     "En 2025 exigió que España firme en la OTAN un acuerdo sin ningún aumento del gasto en defensa."
+    ],
+    "B01": [
+     5,
+     "En 2025 defendió bajar por ley los precios del alquiler y afirmó que intervenir el mercado de la vivienda es constitucional."
+    ],
+    "F01": [
+     5,
+     "En 2026 defendió la regularización de migrantes acordada con el Gobierno y pidió ampliar el plazo para solicitarla."
+    ]
+   }
+  },
+  {
+   "id": "mico",
+   "name": "Àgueda Micó",
+   "full": "Àgueda Micó",
+   "party": "comp",
+   "partyLabel": "Compromís",
+   "role": "Diputada de Compromís y cabeza de lista de Compromís-Front Valencià por València al 29N",
+   "photo": {
+    "src": "assets/politicos/mico.jpg",
+    "author": "Coalició Compromís",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%80gueda_Mic%C3%B3_%28cropped%29.jpg"
+   },
+   "pos": {
+    "B01": [
+     5,
+     "En 2026 propone regular los alquileres en las zonas tensionadas y reducirlos, no solo frenar sus subidas."
+    ],
+    "B08": [
+     5,
+     "En 2026 pide ampliar de verdad el parque público de vivienda."
+    ],
+    "B05": [
+     4,
+     "En 2026 presentó una iniciativa aprobada en comisión para limitar por ordenanza la concentración de alojamientos turísticos."
+    ],
+    "H04": [
+     5,
+     "En 2025 anunció que votaría a favor de convalidar el decreto del embargo de armas a Israel y pidió ir mucho más allá."
+    ]
+   }
+  },
+  {
    "id": "rufian",
    "name": "Gabriel Rufián",
    "full": "Gabriel Rufián Romero",

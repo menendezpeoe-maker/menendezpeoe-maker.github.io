@@ -4,7 +4,7 @@
 // desde su cargo (propuestas, votaciones que ha liderado, decisiones de su gobierno, declaraciones).
 // No se copia la postura del partido por defecto: si no hay pronunciamiento propio, no se incluye.
 // pos: { códigoPregunta: [postura 1-5, "hecho en el que se basa"] }
-// Cargos verificados a 17 de octubre de 2026.
+// Cargos verificados a 17 de octubre de 2026; los de Ione Belarra y Àgueda Micó, a 9 de noviembre de 2026 (cada postura se contrastó con la página de la noticia).
 
 export const POLITICIANS = [
  { id: "sanchez", name: "Pedro Sánchez", full: "Pedro Sánchez Pérez-Castejón", party: "psoe", partyLabel: "PSOE",
@@ -88,6 +88,22 @@ export const POLITICIANS = [
      H01: [1, "Rechaza el aumento del gasto militar."],
      E03: [5, "Pide derogar la «ley mordaza»."],
      B01: [5, "Propone bajar por ley los alquileres."]
+   } },
+ { id: "belarra", name: "Ione Belarra", full: "Ione Belarra Urteaga", party: "pod", partyLabel: "Podemos",
+   role: "Secretaria general de Podemos y portavoz del partido en el Congreso",
+   pos: {
+     H06: [1, "En 2025 pidió en el Congreso que el Gobierno saque a España de la OTAN."],
+     H01: [1, "En 2025 exigió que España firme en la OTAN un acuerdo sin ningún aumento del gasto en defensa."],
+     B01: [5, "En 2025 defendió bajar por ley los precios del alquiler y afirmó que intervenir el mercado de la vivienda es constitucional."],
+     F01: [5, "En 2026 defendió la regularización de migrantes acordada con el Gobierno y pidió ampliar el plazo para solicitarla."]
+   } },
+ { id: "mico", name: "Àgueda Micó", full: "Àgueda Micó", party: "comp", partyLabel: "Compromís",
+   role: "Diputada de Compromís y cabeza de lista de Compromís-Front Valencià por València al 29N",
+   pos: {
+     B01: [5, "En 2026 propone regular los alquileres en las zonas tensionadas y reducirlos, no solo frenar sus subidas."],
+     B08: [5, "En 2026 pide ampliar de verdad el parque público de vivienda."],
+     B05: [4, "En 2026 presentó una iniciativa aprobada en comisión para limitar por ordenanza la concentración de alojamientos turísticos."],
+     H04: [5, "En 2025 anunció que votaría a favor de convalidar el decreto del embargo de armas a Israel y pidió ir mucho más allá."]
    } },
  { id: "rufian", name: "Gabriel Rufián", full: "Gabriel Rufián Romero", party: "erc", partyLabel: "ERC",
    role: "Portavoz de ERC en el Congreso y candidato por Barcelona",
