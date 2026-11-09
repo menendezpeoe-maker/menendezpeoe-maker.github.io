@@ -37,6 +37,16 @@ for (const w of [390, 1280]) {
   await ctx.close();
 }
 
+console.log("Cifras de la portada");
+{
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } }); const page = await ctx.newPage();
+  await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
+  const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.meta.url)));
+  const n = pd.parties.filter((p) => !p.out).length;
+  ok((await page.textContent("#facts-cand")).trim() === String(n), `la portada dice ${n} candidaturas, las que hay en los datos`);
+  await ctx.close();
+}
+
 console.log("Tarjeta de resultado: estilo claro y oscuro");
 {
   const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
