@@ -10,7 +10,7 @@ const CACERES = ["https://caceresdiario.com/noticias/otros/lasexta-anuncia-dos-d
 const MERCA2 = ["https://www.merca2.es/2026/10/21/lasexta-debate-ana-pastor-2478497/", "Merca2, 21 de octubre de 2026"];
 const EURONEWS = ["https://es.euronews.com/2026/10/22/sanchez-y-feijoo-se-citan-el-16-de-noviembre", "Euronews, 22 de octubre de 2026"];
 export const DEBATES = {
-  revisado: "2026-11-07",
+  revisado: "2026-11-10",
   lista: [
     { id: "lasexta-debate-9nov", formato: "«laSexta Debate: hablamos de lo que importa»: regeneración democrática, inmigración y Estado del bienestar, con público en plató y portavoces de los partidos", organiza: "laSexta (Atresmedia), moderado por Ana Pastor", fecha: "2026-11-09", fechaTexto: "Lunes 9 de noviembre (anunciado por la cadena el 21 de octubre)", hora: "", canal: "laSexta", participantes: "Representantes de PSOE, PP, Vox y Frente Amplio (nombres y hora sin publicar en el anuncio)", estado: "confirmado", fuentes: [CACERES, MERCA2] },
     { id: "lasexta-economia", formato: "Debate sobre economía entre representantes de PSOE, PP, Vox y Frente Amplio", organiza: "laSexta (Atresmedia)", fecha: "2026-11-13", fechaTexto: "Viernes 13 de noviembre", hora: "21:30", canal: "laSexta", participantes: "Carlos Cuerpo (PSOE), Juan Bravo (PP), Pablo Bustinduy (Frente Amplio) y José María Figaredo (Vox)", estado: "confirmado", fuentes: [LASEXTA, CRONISTA] },
