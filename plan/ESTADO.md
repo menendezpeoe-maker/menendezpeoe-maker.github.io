@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 10 nov 2026 · S1b (madrugada): listo en `fuente`, PENDIENTE DE PUBLICAR en `main`
+- **Hecho y verificado:** web real 23/23 baterías; versión nueva en local 23/23; `dist/` sin términos privados. Buscadores: `site:test29n.es` ya indexa portada, provincias, partidos y /debates/; para «test político elecciones 29N» aún no aparece entre los primeros resultados (sitio nuevo; sin trucos).
+- **Cambio:** la imagen para compartir (`og.png`, `qa/assets.mjs`) decía 25 candidaturas; ahora 29 (107 preguntas, 12 áreas). `comprobado` (programas) y `revisado` (debates) → 2026-11-10: sin programas oficiales nuevos ni cambios de debates con fuente oficial (cara a cara Mediaset 16 nov: fecha acordada por las dos partes, hora sin anunciar; debate a cuatro y RTVE sin acordar; no se halló vídeo oficial del debate de laSexta del 9 nov, por eso sigue «confirmado»).
+- **Kit de difusión** (`plan/DIFUSION-CAMPANA.md`): ya completo desde el 4 nov (medios, texto neutral y 11 preguntas del día, 13–23 nov); sin cambios.
+- **Bloqueo:** la publicación en `main` (copiar `dist/` y push) fue denegada por el sistema de seguridad («Production Deploy») al ejecutarse sin el titular delante. `fuente` está al día (commits 91762c2 y 9592fca). Para publicar: copiar `dist/` (generado con `SITE_URL=https://test29n.es/ node publish.mjs`) a la rama `main`, commit y push normal, y luego `node indexnow.mjs`.
+
 ## Nota del 7 nov 2026 (tarde, trabajo manual con el titular): lee esto antes de la próxima tanda
 
 Publicado y verificado en la web real (21/21 baterías): mejora visual del test y la portada («Completo» en el resultado), aviso de privacidad ampliado, aviso de «otras candidaturas» en el ranking, orden de las candidaturas por importancia (`DISPLAY_ORDER` en `src/partidos.src.mjs`; `PARTY_ORDER` no se toca), unas 160 posturas más con fuente o estimadas con base documentada y cinco partidos nuevos.
