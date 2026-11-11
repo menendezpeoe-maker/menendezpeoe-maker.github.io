@@ -5,7 +5,11 @@ import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 // Títulos: Google recorta hacia los 60–70 caracteres; si se pasan, se quita el sufijo de marca (el sitio ya se identifica por el dominio)
-const tt = (s) => (s.length > 70 ? s.replace(/ · Test 29N$/, "") : s);
+const tt = (s) => {
+  if (s.length > 70) s = s.replace(/ · Test 29N$/, "");
+  if (s.length > 72) s = s.replace(/, tema a tema$/, "").replace(/ el 29N$/, "");
+  return s;
+};
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
@@ -469,7 +473,7 @@ rows(prov().parties);
     const lc = t.label.toLowerCase();
     page({
       path: `/tests/${k}/`,
-      title: `Test de ${lc} para el 29N: ¿con qué partido coincides? · Test 29N`,
+      title: tt(`Test de ${lc} para el 29N: ¿con qué partido coincides? · Test 29N`),
       desc: `${qs.length} preguntas sobre ${lc} para comparar tus ideas con las candidaturas del 29N. Gratis, en 2 minutos y sin registro.`,
       crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }, { name: t.label, url: `${SITE}tests/${k}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Test de ${esc(lc)}</h1>
