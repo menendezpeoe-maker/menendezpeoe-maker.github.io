@@ -45,8 +45,8 @@ console.log("Portada: un solo mensaje y «Empezar» sin scroll");
 for (const [w, h, dark] of [[390, 844, false], [390, 844, true], [1280, 800, false]]) {
   const { ctx, page } = await open({ w, h, dark });
   const tag = `${w}×${h}${dark ? " oscuro" : ""}`;
-  ok((await page.locator("#v-home h1").count()) === 1 && /Lo que piensas, tema a tema/.test(await page.textContent("#v-home h1")), `un único titular «Lo que piensas, tema a tema» (${tag})`);
-  ok(await page.locator(".banner #home-h").count() === 1 && /¿Con quién coincides el 29N\?/.test(await page.textContent(".banner")), `el titular va dentro del banner, con su pregunta (${tag})`);
+  ok((await page.locator("#v-home h1").count()) === 1 && /Test político del 29N/.test(await page.textContent("#v-home h1")), `un único titular «Test político del 29N» (${tag})`);
+  ok(await page.locator(".banner #home-h").count() === 1 && /¿Con qué partido coincides\?/.test(await page.textContent(".banner")), `el titular va dentro del banner, con su pregunta (${tag})`);
   ok((await page.locator("#v-home .bn-h").count()) === 1, `sin titulares duplicados (${tag})`);
   const b = await page.locator("#start-btn").boundingBox();
   ok(b && b.y >= 0 && b.y + b.height <= h && await page.isVisible("#start-btn"), `«Empezar el test» visible sin scroll (${tag}: ${b && Math.round(b.y + b.height)} px)`);
