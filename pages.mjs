@@ -120,11 +120,13 @@ ${footer}
       return `<div class="sp-dim"><span><b>${esc(d.name)}</b> <span class="muted">· ${Math.abs(v) < 15 ? "equilibrio" : `${esc(v < 0 ? d.a : d.b)}, ${strength(v)}`} (${signed(v)})</span></span><span class="mini" role="img" aria-label="${esc(d.name)}: ${signed(v)} en una escala de −100 (${esc(d.a)}) a +100 (${esc(d.b)})"><span class="c"></span>${v < 0 ? `<span class="b l" style="left:${x}%;width:${(50 - x).toFixed(2)}%"></span>` : v > 0 ? `<span class="b r" style="left:50%;width:${(x - 50).toFixed(2)}%"></span>` : ""}<span class="d" style="left:${x}%;background:${p.color}"></span></span><span class="poles small muted"><span>${esc(d.a)}</span><span>${esc(d.b)}</span></span></div>`; }).join("");
     const areas = B.areas.map((a) => {
       const qs = B.questions.filter((q) => q.area === a.id);
-      return `<section class="sp-area" aria-labelledby="a-${a.id}"><h3 class="h3" id="a-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h3><ul class="sp-q">${qs.map((q) => {
+      // Solo se detallan las posturas conocidas; las cuestiones sin postura se resumen en una línea (cada una está en su página de pregunta)
+      const unkQ = qs.filter((q) => !q.pos[pid]).length, knownQs = qs.filter((q) => q.pos[pid]);
+      return `<section class="sp-area" aria-labelledby="a-${a.id}"><h3 class="h3" id="a-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h3>${knownQs.length ? `<ul class="sp-q">` : ""}${knownQs.map((q) => {
         const v = q.pos[pid], est = q.est.includes(pid);
         return `<li><span class="q-code">${qCode(q)}</span><div><b>${esc(q.text)}</b>${q.type === "dilema" ? `<span class="small muted">A: ${esc(q.A)} · B: ${esc(q.B)}</span>` : ""}
           <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}</span>${v && whyOf(q, pid) ? `<span class="small">${esc(whyOf(q, pid))}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}${v ? `<span class="small">${errA(q, pid)}</span>` : ""}</div></li>`;
-      }).join("")}</ul></section>`;
+      }).join("")}${knownQs.length ? "</ul>" : ""}${unkQ ? `<p class="small muted sp-unk">${unkQ === qs.length ? "Sin postura conocida en ninguna de las" : "Sin postura conocida en"} ${unkQ} ${unkQ === 1 ? "cuestión" : "cuestiones"}${unkQ === qs.length ? "" : " de esta área"}${unkQ === qs.length ? " de esta área" : ""}. <a href="/temas/${slug(a.name)}/">Ver qué piensan los demás partidos</a>.</p>` : ""}</section>`;
     }).join("");
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
     page({
