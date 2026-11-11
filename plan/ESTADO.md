@@ -1,5 +1,15 @@
 # Estado del plan (lo más reciente arriba)
 
+## 11 nov 2026 (noche) · Sprint SEO de posicionamiento: PUBLICADO (main 1d35029, IndexNow 200 OK, web real 4/4 baterías)
+- **Mismas URLs** (regla crítica del titular). Cambios de title/descripción/H2/contenido:
+  - Portada: sección visible «¿Qué es un test político y para qué sirve?» y 2 preguntas frecuentes nuevas (qué es un test político; cómo conocer mi orientación política): 11 en total, con `FAQPage` generado del HTML.
+  - 33 páginas de partido: title «X: programa y propuestas para el 29N, tema a tema» (consultas «programa electoral X 29n»).
+  - 10 comparaciones: title «A y B: diferencias y coincidencias para el 29N» (consultas «salf vs vox», «diferencias entre…»).
+  - 52 provincias: descripción «Listas y candidatos del 29N en X: …» y H2 «Listas y candidaturas que se presentan en X» (consultas «listas pp/psoe/vox X», «candidatos»).
+  - `/debates/`: «calendario, fechas y cadenas»; `/escanos/`: «Simulador de elecciones 29N» (consultas «calendario debates», «simulador 29n»).
+- **Auditoría técnica:** 238 HTML, 236 en el sitemap (los 2 que faltan, `/correcciones/` y `/insertar/`, son `noindex` a propósito); canonical correcto en todas; ningún title ni descripción duplicados; un H1 por página. Pendiente menor: 225 descripciones y 83 títulos pasan de 160 y 70 caracteres (Google los recorta); prioridad baja salvo las páginas con tráfico.
+- **No se persigue** (neutralidad: no hacemos sondeos): «encuestas/predicciones/estimaciones 29n».
+
 ## 11 nov 2026 · Misión de crecimiento inmediato (SEO técnico y CRO), por encargo del titular
 - **Diagnóstico (sin datos de Search Console más allá de 1.860 clics / 19.100 impresiones / CTR 9,7 % / posición 6,6):**
   1. La portada no tenía enlaces rastreables a sus páginas más valiosas (`/partidos/`, `/preguntas/`, `/temas/`, `/tests/`, `/comparar/`, `/escanos/`, `/votar/`, `/metodologia/`): solo 7 (en «Más información»). Las 234 páginas interiores sí las enlazaban, la portada (la que más autoridad recibe) no. Los «Tests por tema» de la portada enlazaban a `?tema=` (solo JavaScript) y no a `/tests/<tema>/`.
