@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 · Auditoría final de calidad + PUBLICADO (main 59c94c0, IndexNow 200 OK, web real 3/3)
+- **Auditoría:** 236 rutas del sitemap 200 en la web real; 14.653 enlaces internos sin ninguno roto ni ancla perdida; metadatos, canonical, OG y JSON-LD correctos en todas; sin títulos ni descripciones duplicados; 76 páginas × 3 motores (iPhone, Pixel, escritorio) sin errores de consola ni peticiones fallidas ni desbordes; 23/23 baterías. WebKit no está disponible en este entorno (iOS = 44 % de las visitas: revisar a mano en un iPhone). Peso por visita nueva: portada 447 KB comprimidos.
+- **Hallazgo y cambio:** 17 pares de páginas de partidos pequeños con >50 % de texto igual (hasta 0,83) por listar las 107 preguntas con «Sin postura conocida». Ahora solo se detallan las posturas conocidas y cada área resume las que faltan (`sp-unk` en `pages.mjs`); pares >0,5: 17 → 3. `qa/growth.mjs` adaptado. Mismas URLs.
+- **Capacidad:** GitHub Pages: límite blando de 100 GB/mes (~220.000 visitas completas); GoatCounter no publica un tope claro (los eventos de progreso suman ~4 por test).
+
 ## 12 nov 2026 · PUBLICADO (main 2e8b518, IndexNow 200 OK): títulos largos de páginas sin tráfico relevante
 - `tt()` en `pages.mjs` recorta en dos pasos (quita « · Test 29N»; si sigue >72, quita «, tema a tema» o « el 29N»); también en los tests por tema. Títulos >70: de 28 a 10 (quedan provincias con tráfico, 4 preguntas y `/datos/`, `/temas/`, `/tests/`). Mismas URLs. Web real 4/4.
 
