@@ -40,7 +40,7 @@ for (const k of ["og:title", "twitter:title"]) ok(new RegExp(`(property|name)="$
 
 console.log("Preguntas frecuentes");
 const items = [...home.html.matchAll(/<div class="faq-item"><h3 class="h3">([\s\S]*?)<\/h3><p>([\s\S]*?)<\/p><\/div>/g)].map((m) => ({ q: strip(m[1]), a: strip(m[2]), raw: m[2] }));
-ok(items.length === 5, `5 preguntas frecuentes en el HTML estático (${items.length})`);
+ok(items.length === 9, `9 preguntas frecuentes en el HTML estático (${items.length})`);
 const need = [/cuándo son las elecciones/i, /cómo funciona/i, /neutral/i, /a quién votar/i, /guarda mis datos/i];
 ok(need.every((r) => items.some((i) => r.test(i.q))), "cubren fecha, funcionamiento, neutralidad, a quién votar y datos");
 const date = items.find((i) => /cuándo/i.test(i.q));

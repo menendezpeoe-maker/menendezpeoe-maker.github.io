@@ -251,7 +251,7 @@ function initHome() {
     `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("");
   sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
   $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
-  $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="?tema=${k}" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
+  $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="tests/${k}/" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
   $("#topic-list").addEventListener("click", (e) => { const a = e.target.closest("[data-tema]"); if (a) { e.preventDefault(); startTopic(a.dataset.tema); } });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
   $("#areas-list").innerHTML = BANK.areas.map((a) => {

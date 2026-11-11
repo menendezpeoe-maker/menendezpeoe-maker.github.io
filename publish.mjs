@@ -9,7 +9,7 @@ const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "m
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
 const TITLE = "Test político 2026: ¿con qué partido coincides? · Elecciones 29N";
-const DESC = "Test político gratuito para las elecciones generales 2026 (29N). No te dice a quién votar: compara tus ideas con las candidaturas de tu provincia.";
+const DESC = "Test político gratuito para las elecciones generales 2026 (29N): descubre qué partido representa tus ideas. No te dice a quién votar.";
 
 rmSync(OUT, { recursive: true, force: true });
 for (const d of ["", "assets", "assets/politicos", "data"]) mkdirSync(`${OUT}/${d}`, { recursive: true });
@@ -137,7 +137,8 @@ const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slo
 // Newsreader y entonces aparece de una vez: antes el título y los botones se recolocaban dos veces a la vista al cambiar la letra (CLS 0,02 y tirones).
 const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
 const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
-let headIndex = head(TITLE, DESC, social + faqLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
+const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "Test 29N", alternateName: ["Test político 29N", "Test electoral 29N"], url: "https://test29n.es/", inLanguage: "es" })}</script>`;
+let headIndex = head(TITLE, DESC, social + faqLd + siteLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
 if (!headIndex.includes(FONTS_LINK) || !headIndex.includes("script-src 'self'")) throw new Error("No encuentro el enlace de las tipografías o la CSP de la portada");
 headIndex = headIndex.replace(FONTS_LINK, `<script>${NET_JS}</script><noscript>${FONTS_LINK}</noscript>`).replace("script-src 'self'", `script-src 'self' 'sha256-${NET_HASH}'`);
 if (headIndex.includes('as="font"')) throw new Error("La portada no debe precargar la tipografía (ver comentario de PRELOAD)");

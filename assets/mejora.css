@@ -928,3 +928,14 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
 .foot-more nav { display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 4px 0 10px; }
 .foot-more nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); }
 @media print { .foot-more { display: none; } }
+
+/* 16 · PORTADA: enlaces internos en contexto («Para decidir con información») */
+.explora{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.explora a{display:flex;flex-direction:column;gap:3px;height:100%;padding:13px 15px;border:1px solid var(--rule);border-radius:12px;background:var(--sheet);color:var(--ink);text-decoration:none}
+.explora a:hover,.explora a:focus-visible{border-color:var(--ink)}
+.explora b{font-weight:800}
+.explora span{font-size:.92rem;color:var(--ink-2)}
+@media (max-width:620px){.explora{grid-template-columns:repeat(2,1fr);gap:8px}.explora a{padding:11px 12px}.explora span{font-size:.85rem}}
+.explora-more{margin-top:14px;line-height:1.75}
+.explora-more a{color:var(--ink);text-underline-offset:3px}
+@media print{#explora{display:none}}

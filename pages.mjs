@@ -476,10 +476,10 @@ ${cta("¿Prefieres el test completo?")}`
   }
   page({
     path: "/tests/",
-    title: "Tests por tema para el 29N: vivienda, inmigración, impuestos y más · Test 29N",
+    title: "Tests políticos por tema: vivienda, inmigración, impuestos y más · Test 29N",
     desc: "Tests cortos de 6 o 7 preguntas sobre vivienda, inmigración, impuestos y economía, sanidad, energía o territorio para comparar tus ideas con las candidaturas del 29N.",
     crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }],
-    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Tests por tema</h1>
+    body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Tests políticos por tema</h1>
   <p class="lede">¿Solo te interesa un asunto? Responde unas pocas preguntas sobre él y mira con qué candidaturas de tu provincia coincides. Después puedes seguir con el test completo sin perder tus respuestas.</p></header>
 <ul class="sp-cards">${topicEntries.map(([k, t]) => `<li><a href="/tests/${k}/"><span><b>Test de ${esc(t.label.toLowerCase())}</b><span class="small muted">${t.ids.length} preguntas · 2 minutos</span></span></a></li>`).join("")}</ul>
 ${cta("O responde el test completo")}`
