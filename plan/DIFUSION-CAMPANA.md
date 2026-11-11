@@ -90,3 +90,18 @@ Una por día. Cada pregunta es la afirmación tal como aparece en el test, para 
 - No pagues por aparecer en ningún artículo ni ranking.
 - No dejes enlaces en comentarios de noticias ni en perfiles de partidos: parece spam y puede parecer partidista.
 - No respondas a ataques políticos en redes. Si alguien señala un error en una postura, pide la fuente y corrígelo.
+
+## 6. Enlaces con etiqueta por canal (11–12 nov)
+Para saber de dónde llega el tráfico «sin referente» (80 % en GoatCounter), cada canal usa su enlace con `?ref=`. Comprobado en la web real: cada etiqueta aparece en GoatCounter → Referrers y la canónica sigue siendo `https://test29n.es/` (no afecta al SEO). **Úsalos solo fuera de la web** (bios, mensajes, medios); dentro de la web no se enlaza nunca con `?ref=`. La etiqueta admite letras, números, punto, guion y guion bajo (máx. 40).
+
+| Canal | Enlace | Texto sugerido (neutral) |
+|---|---|---|
+| TikTok (biografía) | `https://test29n.es/?ref=tiktok` | Test político gratuito del 29N: ¿con qué partido coincides? 107 preguntas, 29 candidaturas y la fuente de cada postura. Sin registro. |
+| Instagram (biografía y stories) | `https://test29n.es/?ref=instagram` | Test político gratuito del 29N, con la fuente de cada postura. Sin registro. Enlace en la bio. |
+| WhatsApp (mensaje directo o grupos) | `https://test29n.es/?ref=whatsapp` | Te paso este test político sobre los debates reales de España, con contexto en cada pregunta y la fuente de cada postura. Es gratis, sin registro y no recomienda voto: |
+| X | `https://test29n.es/?ref=x` | Test 29N: test político gratuito para el 29N. Responde en unos minutos y compara tus ideas con las candidaturas de tu provincia, con la fuente de cada postura. Sin registro. |
+| Telegram | `https://test29n.es/?ref=telegram` | Igual que WhatsApp. |
+| Medios (correos y formularios) | `https://test29n.es/?ref=prensa` | Usa el texto del apartado 3 y cambia el enlace por este. |
+| Menéame / Reddit | `https://test29n.es/?ref=meneame` · `https://test29n.es/?ref=reddit` | Apartado 2: presentarlo como proyecto personal, sin pedir votos ni usar encuestas. |
+
+Reglas: sin publicar ni promocionar del 24 al 28 de noviembre; nada de encuestas ni recuentos de respuestas; el mensaje no recomienda voto. Los enlaces de compartir que genera la propia web (resultado, reto) no llevan etiqueta.
