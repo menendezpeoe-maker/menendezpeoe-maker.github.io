@@ -251,7 +251,7 @@ function initHome() {
     `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("");
   sel.addEventListener("change", () => { setProv(sel.value); renderProvChips(); });
   $$('input[name=mode]').forEach((i) => i.addEventListener("change", renderStartNote));
-  $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="?tema=${k}" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
+  $("#topic-list").innerHTML = Object.entries(TOPICS).map(([k, t]) => `<li><a class="topic-btn" href="tests/${k}/" data-tema="${k}"><b>${esc(t.label)}</b><span>${t.ids.filter((id) => Q[id]).length} preguntas · 2 min</span></a></li>`).join("");
   $("#topic-list").addEventListener("click", (e) => { const a = e.target.closest("[data-tema]"); if (a) { e.preventDefault(); startTopic(a.dataset.tema); } });
   $$("[data-count]").forEach((el) => { el.textContent = buildOrder(el.dataset.count, 1).length; });
   $("#areas-list").innerHTML = BANK.areas.map((a) => {
@@ -577,7 +577,15 @@ function bindPrios() {
   });
   const finish = (skip) => {
     if (!PROV[S.prov]) { $("#prov-err").textContent = "Elige tu provincia para ver tu coincidencia con las candidaturas que se presentan allí."; $("#f-prov").focus(); return; }
-    if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults();
+    if (skip) S.prios = []; S.stage = "done"; save();
+    // INP: calcular y pintar el resultado es lo más pesado del test (~0,3 s en un móvil medio). Se pinta antes un «Calculando…»
+    // y el cálculo se hace en la tarea siguiente, para que el toque responda al instante.
+    const btn = skip ? $("#prio-skip") : $("#prio-go"), lbl = btn.textContent;
+    btn.disabled = true; btn.textContent = "Calculando…";
+    requestAnimationFrame(() => setTimeout(() => {
+      count("test-terminado", "Test terminado", true); openResults();
+      btn.disabled = false; btn.textContent = lbl;
+    }, 0));
   };
   $("#prio-go").addEventListener("click", () => finish(false));
   $("#prio-skip").addEventListener("click", () => finish(true));
@@ -2039,7 +2047,10 @@ function count(path, title, event = false) {
   COUNTED.add(path);
   try {
     const q = new URLSearchParams({ p: path, t: title, s: `${screen.width},${screen.height},${devicePixelRatio || 1}`, rnd: Math.random().toString(36).slice(2, 8) });
+    // Procedencia: si el enlace lleva ?ref= o ?utm_source= (p. ej. el de la biografía de TikTok), se cuenta esa etiqueta; solo letras, números, punto, guion y guion bajo.
+    const campaign = /[?&](?:ref|utm_source)=([a-z0-9_.-]{1,40})(?:&|$|#)/i.exec(location.search);
     if (event) q.set("e", "true");
+    else if (campaign) q.set("r", campaign[1].toLowerCase());
     else if (document.referrer && !document.referrer.startsWith(location.origin)) q.set("r", document.referrer.split(/[?#]/)[0]);
     const img = new Image(); img.referrerPolicy = "origin"; img.src = `https://${code}.goatcounter.com/count?${q}`;
   } catch { /* el contador nunca debe afectar al test */ }
