@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 · Auditoría de compartir y entrada: PUBLICADO (main c344d1b, IndexNow 200 OK, web real 5/5)
+- **Auditoría (iPhone 12 simulado):** la entrada se entiende (H1 + pregunta + «Empezar» + versión rápida) y las cuatro versiones se explican con su duración; OG/Twitter completos (1200×630, 78 KB); la tarjeta se genera en el móvil a 1080×1920 sin respuestas individuales. Limitación inherente: el enlace compartido lleva el resultado tras `#`, por lo que las vistas previas de WhatsApp/X solo pueden mostrar la imagen general.
+- **Cambios:** botón nativo «Compartir imagen y enlace» (`#sh-native`, solo si el móvil permite compartir archivos); texto por defecto que cabe en X (≤ 280, la línea del perfil entra solo si cabe); en móvil las acciones de compartir van primero (CSS en `mejora.css`, sección 17) y WhatsApp antes que X; eventos de progreso sin respuestas (`progreso-25/50/75`, `paso-final`) para ver el abandono (OJO: sus títulos no pueden contener «%», «provincia», etc.: `qa/stats.mjs` lo vigila).
+- **No se ha tocado:** cálculo, orden de preguntas, URLs.
+
 ## 11 nov 2026 (noche) · PUBLICADO (main 2ffee45, IndexNow 200 OK): «Reta a un amigo» como botón principal y títulos/descripciones más cortos
 - En el resumen del resultado, «Reta a un amigo» (compartir nativo, un toque) pasa a primario y «Compartir» a secundario (mismos selectores para las pruebas).
 - Descripciones de más de 160 caracteres: de 225 a 8; títulos de más de 70: de 83 a 28 (`tt()` en `pages.mjs` quita « · Test 29N» si se pasan). Mismas URLs.
