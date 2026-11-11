@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 · PUBLICADO (main 60019a9): fuera el CTA fijo de las páginas informativas y cabecera más fácil de pulsar (aviso del titular, iPhone)
+- El titular vio, en iPhone/Safari, que «Partidos» y «Temas» de la cabecera de las páginas informativas no respondían y que el botón fijo «Hacer el test · 3 min» molestaba a quien busca información. Se quitó `.sticky-cta` (HTML en `pages.mjs`, CSS en `papeleta.css`, y el seguimiento en `stats.js`).
+- Cabecera de esas páginas (`.sp-nav`): enlaces de 44 px de alto con separación del borde (gesto «atrás» de iOS), `touch-action: manipulation`, sin `:hover` en pantallas táctiles y `z-index` por encima de otras capas. En Chromium con tamaño de iPhone navegaba bien antes y después; **la causa exacta en Safari no se pudo reproducir**: pedir al titular que confirme en su iPhone (y la versión de iOS si sigue fallando).
+- El recuadro «Responde tú y compara» dentro del contenido sigue (se le ha preguntado si quiere quitarlo).
+
 ## 12 nov 2026 · Auditoría final de calidad + PUBLICADO (main 59c94c0, IndexNow 200 OK, web real 3/3)
 - **Auditoría:** 236 rutas del sitemap 200 en la web real; 14.653 enlaces internos sin ninguno roto ni ancla perdida; metadatos, canonical, OG y JSON-LD correctos en todas; sin títulos ni descripciones duplicados; 76 páginas × 3 motores (iPhone, Pixel, escritorio) sin errores de consola ni peticiones fallidas ni desbordes; 23/23 baterías. WebKit no está disponible en este entorno (iOS = 44 % de las visitas: revisar a mano en un iPhone). Peso por visita nueva: portada 447 KB comprimidos.
 - **Hallazgo y cambio:** 17 pares de páginas de partidos pequeños con >50 % de texto igual (hasta 0,83) por listar las 107 preguntas con «Sin postura conocida». Ahora solo se detallan las posturas conocidas y cada área resume las que faltan (`sp-unk` en `pages.mjs`); pares >0,5: 17 → 3. `qa/growth.mjs` adaptado. Mismas URLs.
