@@ -473,6 +473,8 @@ function next() {
   const nxt = S.fill ? (pending(S.idx) >= 0 ? pending(S.idx) : pending(-1)) : S.idx + 1;
   if (nxt < 0 || nxt >= S.order.length) { delete S.fill; finishQuiz(); return; }
   S.idx = nxt; save();
+  // Solo cuenta cuánta gente llega a cada tramo (nunca qué responde): sirve para ver dónde se abandona el test
+  if (!topicOf(S)) { const pc = (S.idx + 1) / S.order.length; for (const m of [25, 50, 75]) if (pc >= m / 100) count(`progreso-${m}`, `Test al ${m} por ciento`, true); }
   renderQuestion(1);
   focusStatement();
   if (isSheet() && PREFS.ctx) $("#ctx-body").scrollTop = 0;
@@ -554,6 +556,7 @@ function renderProvField() {
   renderProvChips();
 }
 function renderPrios() {
+  count("paso-final", "Paso final antes del resultado", true);
   renderProvField();
   const tema = !!topicOf(S);
   for (const sel of [".prio-h", ".prio-lede", "#prio-grid", "#prio-count", "#prio-skip"]) { const el = $(sel); if (el) el.hidden = tema; }
@@ -2074,11 +2077,12 @@ function profileFirst(M) {
 function buildShareText() {
   const st = S, M = MODEL, top = M.prov[0];
   const t = topicOf(st), tk = t && Object.keys(TOPICS).find((k) => TOPICS[k] === t);
-  const lines = [t ? `He hecho el test de ${t.label.toLowerCase()} del Test 29N, para las elecciones generales del 29N.` : "He hecho el Test 29N, un test político para las elecciones generales del 29N."];
+  const lines = [t ? `He hecho el test de ${t.label.toLowerCase()} del Test 29N, para el 29N.` : "He hecho el Test 29N, un test político para el 29N."];
   if (SH.party && top) lines.push(`Mi mayor coincidencia${t ? " en este tema" : ""} en ${PROV[st.prov].name}: ${pName(top.pid, st.prov)} (${top.pct} %).`);
-  if (!t) lines.push(`Mi perfil: ${lcFirst(profileFirst(M))}`);
-  lines.push("", `¿Y tú? Haz el test aquí: ${t ? `${siteUrl().replace(/[^/]*$/, "")}?tema=${tk}` : siteUrl()}`);
-  return lines.join("\n");
+  const foot = ["", `¿Y tú? Haz el test aquí: ${t ? `${siteUrl().replace(/[^/]*$/, "")}?tema=${tk}` : siteUrl()}`];
+  // La línea del perfil solo entra si el mensaje sigue cabiendo en X (280 caracteres); así el texto por defecto se puede publicar tal cual
+  if (!t) { const withProfile = [...lines, `Mi perfil: ${lcFirst(profileFirst(M))}`, ...foot].join("\n"); if (xLength(withProfile) <= 280) return withProfile; }
+  return [...lines, ...foot].join("\n");
 }
 // X cuenta cada enlace como 23 caracteres
 const xLength = (t) => [...t.replace(/https?:\/\/\S+/g, "x".repeat(23))].length;
@@ -2093,6 +2097,7 @@ const SVG = {
   tg: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M21 4L3 11.2l5.6 2L10.8 20l3.1-3.8 4.6 3.4z"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M8.6 13.2L21 4"/></svg>',
   ig: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg>',
   copy: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></svg>',
+  share: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5L12 3l4.5 4.5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   dl: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   link: '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
 };
@@ -2121,8 +2126,9 @@ function renderShare() {
         <div class="field"><label class="label" for="sh-text">Tu mensaje · puedes editarlo</label><textarea id="sh-text" rows="7" spellcheck="true">${esc(SH.text)}</textarea>
           <p class="small muted" id="sh-count"></p></div>
         <div class="share-btns">
-          <a class="sbtn sbtn-x" id="sh-x" href="${xHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.x}<span><b>Publicar en X</b><small>Se abre X con el texto listo</small></span></a>
+          ${canShareFiles() ? `<button type="button" class="sbtn sbtn-native" id="sh-native">${SVG.share}<span><b>Compartir imagen y enlace</b><small>Elige la app y el chat</small></span></button>` : ""}
           <a class="sbtn sbtn-wa" id="sh-wa" href="${waHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.wa}<span><b>Enviar por WhatsApp</b><small>Eliges tú el chat o grupo</small></span></a>
+          <a class="sbtn sbtn-x" id="sh-x" href="${xHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.x}<span><b>Publicar en X</b><small>Se abre X con el texto listo</small></span></a>
           <a class="sbtn sbtn-tg" id="sh-tg" href="${tgHref(SH.text)}" target="_blank" rel="noopener noreferrer">${SVG.tg}<span><b>Enviar por Telegram</b><small>Eliges tú el chat o grupo</small></span></a>
           <button type="button" class="sbtn sbtn-ig" id="sh-ig">${SVG.ig}<span><b>Imagen para Instagram</b><small>Historia vertical para subir tú</small></span></button>
           <button type="button" class="sbtn sbtn-copy" id="sh-copy">${SVG.copy}<span><b>Copiar mensaje</b><small>Al portapapeles</small></span></button>
@@ -2186,6 +2192,22 @@ async function downloadCard(fmt) {
       ? "Si no se ha descargado, mantén pulsada la vista previa (o haz clic derecho) y elige «Guardar imagen»."
       : `Imagen ${FMT[fmt].label.toLowerCase()} descargada (${FMT[fmt].w} × ${FMT[fmt].h}).`, "ok");
   } catch { shareStatus("No se ha podido crear la imagen. Prueba a hacer una captura de pantalla de la vista previa.", "warn"); }
+}
+// ¿Puede este dispositivo compartir un archivo con el menú nativo? (móviles modernos)
+function canShareFiles() {
+  try { return !IN_FRAME && !!navigator.canShare && navigator.canShare({ files: [new File([""], "test-29n.png", { type: "image/png" })] }); } catch { return false; }
+}
+// Imagen vertical + mensaje (con el enlace) en el menú de compartir del móvil: eliges tú la app y el chat
+async function shareNative() {
+  if (!SH.blobs.story) { shareStatus("Preparando la imagen…"); await cardBlob("story"); }
+  const file = new File([SH.blobs.story], "test-29n-resultado.png", { type: "image/png" });
+  try {
+    await navigator.share({ files: [file], text: SH.text, title: "Mi resultado del Test 29N" });
+    shareStatus("Listo. Si la app no incluye el texto, el enlace va en la imagen: test29n.es.", "ok");
+  } catch (e) {
+    if (e.name === "AbortError") shareStatus("Has cerrado el menú de compartir.");
+    else shareStatus("Tu móvil no ha podido abrir el menú de compartir. Usa WhatsApp o «Descargar imagen PNG».", "warn");
+  }
 }
 async function shareInstagram() {
   const blob = SH.blobs.story;
@@ -2253,11 +2275,12 @@ function bindShare() {
     }
   });
   root.addEventListener("click", (e) => {
-    const el = e.target.closest("#sh-x, #sh-wa, #sh-tg, #sh-ig, #sh-copy, #sh-dl, #sh-invite, #sh-full"); if (!el) return;
+    const el = e.target.closest("#sh-native, #sh-x, #sh-wa, #sh-tg, #sh-ig, #sh-copy, #sh-dl, #sh-invite, #sh-full"); if (!el) return;
     count("compartir", "Compartir", true);
     if (el.id === "sh-x") shareStatus("Se ha abierto X en otra pestaña con tu mensaje. Revísalo y publícalo si quieres.", "ok");
     else if (el.id === "sh-wa") shareStatus("Se ha abierto WhatsApp con tu mensaje. Elige el chat o grupo y envíalo.", "ok");
     else if (el.id === "sh-tg") shareStatus("Se ha abierto Telegram con tu mensaje. Elige el chat o grupo y envíalo.", "ok");
+    else if (el.id === "sh-native") shareNative();
     else if (el.id === "sh-ig") shareInstagram();
     else if (el.id === "sh-copy") copyText(SH.text, "Mensaje copiado", $("#sh-text")).then((ok) => ok && shareStatus("Mensaje copiado. Pégalo donde quieras.", "ok"));
     else if (el.id === "sh-dl") downloadCard(SH.fmt);

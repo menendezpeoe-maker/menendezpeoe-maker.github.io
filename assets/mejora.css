@@ -939,3 +939,20 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
 .explora-more{margin-top:14px;line-height:1.75}
 .explora-more a{color:var(--ink);text-underline-offset:3px}
 @media print{#explora{display:none}}
+
+/* 17 · COMPARTIR: la acción principal primero (en móvil) y botón nativo con imagen y enlace */
+.sbtn-native { background: var(--mark); color: var(--mark-ink); border-color: var(--ink); }
+.sbtn-native small { color: var(--mark-ink); opacity: .8; }
+.sbtn-native:hover { background: var(--mark); filter: brightness(.97); }
+@media (max-width: 759px) {
+  #r-share .share-grid { display: flex; flex-direction: column; gap: 18px; }
+  #r-share .share-panel { display: contents; }
+  #r-share .share-btns { order: 1; }
+  #r-share .sh-status { order: 2; margin: 0; }
+  #r-share .card-prev { order: 3; }
+  #r-share .share-panel > .check { order: 4; }
+  #r-share .share-panel > .field { order: 5; }
+  #r-share .share-help { order: 6; }
+  #r-share .share-more { order: 7; }
+  #r-share .share-panel > details.more { order: 8; }
+}
