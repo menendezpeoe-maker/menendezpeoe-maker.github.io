@@ -95,6 +95,7 @@ ${header}
 ${nav}
 ${body}
 </main>
+${["/sobre/", "/prensa/", "/datos/", "/metodologia/", "/correcciones/"].includes(path) ? "" : '<a class="sticky-cta" href="/">Hacer el test · 3 min</a>'}
 ${footer}
 </body>
 </html>

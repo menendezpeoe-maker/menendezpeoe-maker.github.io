@@ -1185,3 +1185,11 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 
 .ex-focus { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 14px; padding: 12px 16px; border: 1.5px solid var(--ink); border-radius: 12px; background: var(--mark-2, var(--sheet)); font-weight: 750; }
 .ex-focus[hidden] { display: none; }
+
+/* CTA fijo en móvil de las páginas estáticas (partidos, provincias, programas, debates…): lleva al test con un toque */
+.sticky-cta { display: none; }
+@media (max-width: 760px) {
+  .sticky-cta { display: flex; position: fixed; left: 14px; right: 14px; bottom: max(12px, env(safe-area-inset-bottom)); z-index: 40; justify-content: center; align-items: center; min-height: 48px; padding: 0 18px; border-radius: 999px; background: var(--mark); color: var(--mark-ink); font-weight: 800; text-decoration: none; border: 1.5px solid var(--ink); box-shadow: var(--shadow); }
+  body:has(.sticky-cta) footer { padding-bottom: 84px; }
+}
+@media print { .sticky-cta { display: none !important; } }

@@ -2047,7 +2047,10 @@ function count(path, title, event = false) {
   COUNTED.add(path);
   try {
     const q = new URLSearchParams({ p: path, t: title, s: `${screen.width},${screen.height},${devicePixelRatio || 1}`, rnd: Math.random().toString(36).slice(2, 8) });
+    // Procedencia: si el enlace lleva ?ref= o ?utm_source= (p. ej. el de la biografía de TikTok), se cuenta esa etiqueta; solo letras, números, punto, guion y guion bajo.
+    const campaign = /[?&](?:ref|utm_source)=([a-z0-9_.-]{1,40})(?:&|$|#)/i.exec(location.search);
     if (event) q.set("e", "true");
+    else if (campaign) q.set("r", campaign[1].toLowerCase());
     else if (document.referrer && !document.referrer.startsWith(location.origin)) q.set("r", document.referrer.split(/[?#]/)[0]);
     const img = new Image(); img.referrerPolicy = "origin"; img.src = `https://${code}.goatcounter.com/count?${q}`;
   } catch { /* el contador nunca debe afectar al test */ }
