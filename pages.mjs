@@ -4,6 +4,8 @@
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
+// Títulos: Google recorta hacia los 60–70 caracteres; si se pasan, se quita el sufijo de marca (el sitio ya se identifica por el dominio)
+const tt = (s) => (s.length > 70 ? s.replace(/ · Test 29N$/, "") : s);
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
@@ -123,8 +125,8 @@ ${footer}
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
     page({
       path: `/partidos/${pid}/`,
-      title: `${p.name}: programa y propuestas para el 29N, tema a tema · Test 29N`,
-      desc: `Las posturas de ${p.name} en ${known.length} cuestiones de las elecciones generales del 29N (vivienda, impuestos, inmigración, sanidad…), con fuentes. Compara con las tuyas en el Test 29N.`,
+      title: tt(`${p.name}: programa y propuestas para el 29N, tema a tema · Test 29N`),
+      desc: `Las posturas de ${p.name} en ${known.length} cuestiones del 29N (vivienda, impuestos, inmigración, sanidad…), con fuentes. Compara con las tuyas en el test.`,
       crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }, { name: p.name, url: `${SITE}partidos/${pid}/` }],
       body: `<header class="sp-head"><div class="phead">${logo(pid)}<div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(p.name)}: qué propone, tema a tema</h1></div></div>
   <p class="lede">${esc(p.desc)}</p>
@@ -159,8 +161,8 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
     const items = qs.map((q) => qBlock(q)).join("");
     page({
       path: `/temas/${slug(a.name)}/`,
-      title: `${a.name}: qué piensa cada partido en las elecciones del 29N · Test 29N`,
-      desc: `${qs.length} cuestiones sobre ${a.name.toLowerCase()} con contexto neutral y la postura de cada candidatura para las elecciones generales del 29N, con fuentes cuando las hay.`,
+      title: tt(`${a.name}: qué piensa cada partido el 29N · Test 29N`),
+      desc: `${qs.length} cuestiones sobre ${a.name.toLowerCase()} con contexto neutral y la postura de cada candidatura el 29N, con fuentes cuando las hay.`,
       crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(a.name)}: qué piensa cada partido</h1>
   <p class="lede">Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p></header>
@@ -179,8 +181,8 @@ ${cta("Descubre con qué candidatura coincides más")}
     const qLink = (x) => `<a href="/preguntas/${x.id.toLowerCase()}/">${esc(x.short)}</a>`;
     page({
       path: `/preguntas/${q.id.toLowerCase()}/`,
-      title: `${q.short}: qué piensa cada partido · Test 29N`,
-      desc: `${q.short}: la postura de ${known.length} candidaturas en las elecciones generales del 29N, con contexto neutral${nSrc ? ` y ${nSrc} ${nSrc === 1 ? "fuente enlazada" : "fuentes enlazadas"}` : ""}. Compara con tu opinión en el Test 29N.`,
+      title: tt(`${q.short}: qué piensa cada partido · Test 29N`),
+      desc: `${q.short}: la postura de ${known.length} candidaturas el 29N, con contexto neutral${nSrc ? ` y ${nSrc} ${nSrc === 1 ? "fuente enlazada" : "fuentes enlazadas"}` : ""}. Compara con tu opinión.`,
       crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }, { name: q.short, url: `${SITE}preguntas/${q.id.toLowerCase()}/` }],
       body: `<header class="sp-head"><p class="label">${esc(a.letter)} · ${esc(a.name)} · Elecciones generales del 29N</p><h1 class="h1">${esc(q.short)}: qué piensa cada partido</h1>
   <p class="lede">La postura de cada candidatura sobre esta cuestión, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo)${q.type === "dilema" ? ", o entre las opciones A y B" : ""}, con el contexto neutral que muestra el test.</p></header>
@@ -221,8 +223,8 @@ ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="p
     const others = PAIRS.filter((x) => x[0] !== a || x[1] !== b).map(([x, y]) => `<a href="${pairPath(x, y)}">${esc(P[x].ab)} y ${esc(P[y].ab)}</a>`).join(" · ");
     page({
       path: pairPath(a, b),
-      title: `${A.ab} y ${Bp.ab}: diferencias y coincidencias para el 29N · Test 29N`,
-      desc: `Comparativa neutral de ${A.name} y ${Bp.name} en ${both.length} cuestiones de las elecciones generales del 29N: dónde coinciden, dónde chocan y su posición en siete dimensiones.`,
+      title: tt(`${A.ab} y ${Bp.ab}: diferencias y coincidencias para el 29N · Test 29N`),
+      desc: `Comparativa neutral de ${A.name} y ${Bp.name} en ${both.length} cuestiones del 29N: dónde coinciden, dónde chocan y su posición en siete dimensiones.`,
       crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }, { name: `${A.ab} y ${Bp.ab}`, url: `${SITE}comparar/${a}-${b}/` }],
       body: `<header class="sp-head"><div class="phead"><span class="pair">${logo(a)}${logo(b)}</span><div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(A.ab)} y ${esc(Bp.ab)}: en qué coinciden y en qué se diferencian</h1></div></div>
   <p class="lede">Con los mismos datos que usa el test: ${both.length} cuestiones en las que conocemos la postura de las dos candidaturas${estN ? ` (en ${estN}, al menos una es estimada)` : ""}. Su grado de coincidencia es del ${agree} %.</p></header>
@@ -468,7 +470,7 @@ rows(prov().parties);
     page({
       path: `/tests/${k}/`,
       title: `Test de ${lc} para el 29N: ¿con qué partido coincides? · Test 29N`,
-      desc: `${qs.length} preguntas sobre ${lc} para comparar tus ideas con las candidaturas de las elecciones generales del 29 de noviembre de 2026. Gratis, en 2 minutos y sin registro.`,
+      desc: `${qs.length} preguntas sobre ${lc} para comparar tus ideas con las candidaturas del 29N. Gratis, en 2 minutos y sin registro.`,
       crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }, { name: t.label, url: `${SITE}tests/${k}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Test de ${esc(lc)}</h1>
   <p class="lede">${qs.length} preguntas sobre ${esc(lc)} para ver con qué candidaturas de tu provincia coincides en este tema. Tardas unos 2 minutos y después puedes seguir con el test completo sin perder tus respuestas.</p>
@@ -535,7 +537,7 @@ ${cta("Haz el test")}`
   page({
     path: "/glosario/",
     title: "Glosario electoral del 29N: términos explicados · Test 29N",
-    desc: "Qué es la ley D'Hondt, la barrera del 3 %, el voto en blanco, la jornada de reflexión o la investidura: los términos de las elecciones generales explicados de forma sencilla y con su base legal.",
+    desc: "Qué es la ley D'Hondt, la barrera del 3 %, el voto en blanco, la jornada de reflexión o la investidura: explicados de forma sencilla y con su base legal.",
     crumbs: [{ name: "Glosario", url: `${SITE}glosario/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Glosario electoral</h1>
   <p class="lede">Los términos que más se oyen en campaña, explicados en pocas palabras y con el artículo de la ley que los regula.</p></header>
@@ -567,7 +569,7 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
   page({
     path: "/debates/",
     title: "Debates electorales del 29N: calendario, fechas y cadenas · Test 29N",
-    desc: `Los debates de la campaña de las elecciones generales del 29 de noviembre de 2026: fecha, cadena, dónde verlos y participantes, con la fuente de cada dato. Revisado el ${dbRev}.`,
+    desc: `Los debates de la campaña del 29N: fecha, cadena, dónde verlos y participantes, con la fuente de cada dato. Revisado el ${dbRev}.`,
     crumbs: [{ name: "Debates electorales", url: `${SITE}debates/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Debates electorales del 29N</h1>
   <p class="lede">Los debates de la campaña, con la fecha, la cadena y los participantes según lo publicado, y la fuente de cada dato. Lo que aún no se ha anunciado aparece como «por confirmar».</p></header>
@@ -587,7 +589,7 @@ ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
   page({
     path: "/programas/",
     title: "Programas electorales del 29N: cuáles se han publicado · Test 29N",
-    desc: `Estado del programa electoral de cada candidatura a las elecciones generales del 29 de noviembre de 2026: ${nPub ? `${nPub} publicados` : "ninguno publicado aún"}, con el enlace oficial y las posturas revisadas con él. Comprobado el ${progChecked}.`,
+    desc: `Estado del programa electoral de cada candidatura del 29N: ${nPub ? `${nPub} publicados` : "ninguno publicado aún"}, con el enlace oficial y las posturas revisadas con él. Comprobado el ${progChecked}.`,
     crumbs: [{ name: "Programas electorales", url: `${SITE}programas/` }],
     ld: { "@context": "https://schema.org", "@type": "ItemList", name: "Programas electorales del 29N", itemListElement: live.map((pid, i) => ({ "@type": "ListItem", position: i + 1, name: `Programa electoral de ${P[pid].name}`, url: PROG[pid]?.url || `${SITE}partidos/${pid}/` })) },
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Programas electorales del 29N</h1>
@@ -615,7 +617,7 @@ ${cta("Responde tú y compara")}
   page({
     path: "/votar/",
     title: "Cómo votar el 29N: documentos, dónde votar y voto por correo · Test 29N",
-    desc: "Guía práctica para votar en las elecciones generales del 29 de noviembre de 2026: quién puede votar, qué llevar, dónde te toca, voto por correo, desde el extranjero y accesible. Con enlaces oficiales.",
+    desc: "Guía práctica para votar el 29N: quién puede votar, qué llevar, dónde te toca, voto por correo, desde el extranjero y accesible. Con enlaces oficiales.",
     crumbs: [{ name: "Cómo votar", url: `${SITE}votar/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Cómo votar el 29N</h1>
   <p class="lede">Lo esencial para votar, explicado de forma sencilla y con el enlace a la fuente oficial de cada dato. Las fechas completas están en el <a href="/calendario/">calendario electoral</a>.</p></header>
@@ -627,7 +629,7 @@ ${cta("¿Aún no sabes con quién coincides?")}`
   page({
     path: "/calendario/",
     title: "Calendario electoral del 29N: fechas oficiales · Test 29N",
-    desc: "Fechas oficiales de las elecciones generales del 29 de noviembre de 2026: voto por correo, candidaturas, campaña, jornada de reflexión, votación y constitución de las Cortes, con su fuente.",
+    desc: "Fechas oficiales del 29N: voto por correo, candidaturas, campaña, jornada de reflexión, votación y constitución de las Cortes, con su fuente.",
     crumbs: [{ name: "Calendario electoral", url: `${SITE}calendario/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Calendario electoral del 29N</h1>
   <p class="lede">Las fechas del proceso, tal y como las fijan el real decreto de convocatoria y la normativa electoral. Cada una enlaza a su fuente oficial.</p></header>
