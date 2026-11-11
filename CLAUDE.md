@@ -10,7 +10,7 @@ Test político gratuito y neutral para las elecciones generales del 29 de noviem
 No vuelvas a analizar lo que ya funciona. Busca con `grep` en vez de leer archivos enteros.
 
 ## Reglas que nunca se rompen
-- URLs: no se cambia ninguna URL que ya funcione solo por meter una palabra clave. Antes de tocar una, comprobar si está indexada o recibe tráfico y si de verdad compensa. Si se cambia: 301 permanente (GitHub Pages no los da: hace falta una alternativa que se pruebe antes), enlaces internos, canonical y sitemap actualizados, antigua → nueva sin cadenas de redirecciones, y comprobarlo en la web real. (Instrucción del titular, 11 nov 2026.)
+- URLs (regla crítica del titular, 11 nov 2026): prohibido modificar, renombrar, eliminar o sustituir una URL existente e indexada sin su autorización expresa. Mejorar el posicionamiento con titles, descripciones, H1, contenido, enlazado interno y datos estructurados, manteniendo las URLs. Antes de proponer una migración, presentar: URL original, URL propuesta, estado de indexación, tráfico orgánico conocido, riesgo SEO y justificación; y no ejecutarla sin su aprobación. (GitHub Pages no da 301 reales.)
 - Neutralidad: nunca recomendar voto; nada que parezca una encuesta, ni publicar o promocionar del 24 al 28 de noviembre.
 - Nada inventado: posturas, fuentes, fechas y cifras, siempre verificadas y enlazadas.
 - Privacidad: sin registro ni cookies; el contador no registra respuestas. Responsable público: «Dery». Ningún dato bancario.
