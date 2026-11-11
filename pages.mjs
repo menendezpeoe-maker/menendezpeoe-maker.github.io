@@ -123,7 +123,7 @@ ${footer}
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
     page({
       path: `/partidos/${pid}/`,
-      title: `${p.name}: qué propone para el 29N, tema a tema · Test 29N`,
+      title: `${p.name}: programa y propuestas para el 29N, tema a tema · Test 29N`,
       desc: `Las posturas de ${p.name} en ${known.length} cuestiones de las elecciones generales del 29N (vivienda, impuestos, inmigración, sanidad…), con fuentes. Compara con las tuyas en el Test 29N.`,
       crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }, { name: p.name, url: `${SITE}partidos/${pid}/` }],
       body: `<header class="sp-head"><div class="phead">${logo(pid)}<div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(p.name)}: qué propone, tema a tema</h1></div></div>
@@ -221,7 +221,7 @@ ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="p
     const others = PAIRS.filter((x) => x[0] !== a || x[1] !== b).map(([x, y]) => `<a href="${pairPath(x, y)}">${esc(P[x].ab)} y ${esc(P[y].ab)}</a>`).join(" · ");
     page({
       path: pairPath(a, b),
-      title: `${A.ab} y ${Bp.ab}: en qué coinciden y en qué se diferencian · Test 29N`,
+      title: `${A.ab} y ${Bp.ab}: diferencias y coincidencias para el 29N · Test 29N`,
       desc: `Comparativa neutral de ${A.name} y ${Bp.name} en ${both.length} cuestiones de las elecciones generales del 29N: dónde coinciden, dónde chocan y su posición en siete dimensiones.`,
       crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }, { name: `${A.ab} y ${Bp.ab}`, url: `${SITE}comparar/${a}-${b}/` }],
       body: `<header class="sp-head"><div class="phead"><span class="pair">${logo(a)}${logo(b)}</span><div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(A.ab)} y ${esc(Bp.ab)}: en qué coinciden y en qué se diferencian</h1></div></div>
@@ -343,13 +343,13 @@ q();
     page({
       path: `/provincias/${pr.id}/`,
       title: `Elecciones 29N en ${pr.name}: candidaturas y mesa electoral · Test 29N`,
-      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29N. Las ${boe.length} candidaturas proclamadas en el BOE con su cabeza de lista, ${cands.length} con sus posturas en el test, el reparto de escaños y qué hacer si te ha tocado mesa electoral.`,
+      desc: `Listas y candidatos del 29N en ${pr.name}: ${boe.length} candidaturas con su cabeza de lista, ${n} ${n === 1 ? "diputado" : "diputados"} y qué hacer si te toca mesa electoral.`,
       crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }, { name: pr.name, url: `${SITE}provincias/${pr.id}/` }],
       body: `<header class="sp-head"><p class="label">${esc(pr.region.name)} · Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Elecciones del 29N en ${esc(inName(pr))}</h1>
   <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas proclamadas</dt><dd><b>${boe.length}</b></dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
   <p class="small muted">Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>.</p></header>
 ${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`)}
-<section aria-labelledby="h-cand"><h2 class="h2" id="h-cand">Candidaturas que se presentan</h2>
+<section aria-labelledby="h-cand"><h2 class="h2" id="h-cand">Listas y candidaturas que se presentan en ${esc(pr.name)}</h2>
 <p class="small muted">Las ${cands.length} que tienen sus posturas en el test, con su cabeza de lista según la ${boeLink}${tbd.length ? `; las marcadas «por confirmar» aún no han confirmado que se presentan` : ""}.</p>
 <ul class="sp-cards">${cands.map((pid) => `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(localName(pid, pr.id))}</b><span class="small muted">${cabOf(pid) ? `Cabeza de lista: ${esc(cabOf(pid))}` : esc(P[pid].tag)}${P[pid].tbd ? " · por confirmar" : ""}</span></span></a></li>`).join("")}</ul></section>
 <section aria-labelledby="h-boe"><h2 class="h2" id="h-boe">Todas las candidaturas proclamadas (${boe.length})</h2>
@@ -435,7 +435,7 @@ rows(prov().parties);
 `);
   page({
     path: "/escanos/",
-    title: "Simulador de escaños del 29N: reparto con la ley D'Hondt · Test 29N",
+    title: "Simulador de elecciones 29N: escaños con la ley D'Hondt · Test 29N",
     desc: "Calcula cómo se reparten los diputados de cada provincia con la ley D'Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones.",
     crumbs: [{ name: "Simulador de escaños", url: `${SITE}escanos/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Simulador de escaños</h1>
@@ -566,7 +566,7 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
   const allProp = DEBATES.lista.every((d) => d.estado === "propuesta");
   page({
     path: "/debates/",
-    title: "Debates electorales del 29N: fechas, cadenas y participantes · Test 29N",
+    title: "Debates electorales del 29N: calendario, fechas y cadenas · Test 29N",
     desc: `Los debates de la campaña de las elecciones generales del 29 de noviembre de 2026: fecha, cadena, dónde verlos y participantes, con la fuente de cada dato. Revisado el ${dbRev}.`,
     crumbs: [{ name: "Debates electorales", url: `${SITE}debates/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Debates electorales del 29N</h1>
