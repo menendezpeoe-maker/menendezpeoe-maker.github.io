@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 11 nov 2026 (noche) · PUBLICADO (main 2ffee45, IndexNow 200 OK): «Reta a un amigo» como botón principal y títulos/descripciones más cortos
+- En el resumen del resultado, «Reta a un amigo» (compartir nativo, un toque) pasa a primario y «Compartir» a secundario (mismos selectores para las pruebas).
+- Descripciones de más de 160 caracteres: de 225 a 8; títulos de más de 70: de 83 a 28 (`tt()` en `pages.mjs` quita « · Test 29N» si se pasan). Mismas URLs.
+- **Congelado de SEO hasta el 13–14 nov:** no tocar más títulos ni descripciones hasta tener datos nuevos de Search Console (recordatorio programado el 13 nov a las 10:00).
+
 ## 11 nov 2026 (noche) · Sprint SEO de posicionamiento: PUBLICADO (main 1d35029, IndexNow 200 OK, web real 4/4 baterías)
 - **Mismas URLs** (regla crítica del titular). Cambios de title/descripción/H2/contenido:
   - Portada: sección visible «¿Qué es un test político y para qué sirve?» y 2 preguntas frecuentes nuevas (qué es un test político; cómo conocer mi orientación política): 11 en total, con `FAQPage` generado del HTML.
