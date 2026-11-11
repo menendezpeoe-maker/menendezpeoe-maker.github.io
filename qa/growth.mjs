@@ -72,6 +72,8 @@ console.log("Páginas por candidatura y por tema");
     // Cada postura de la página coincide con los datos del test
     for (const q of bank.questions) {
       const v = q.pos[pid];
+      // Las cuestiones sin postura conocida ya no se listan una a una (se resumen por área): su fila no debe aparecer
+      if (!v) { if (html.includes(`<span class="q-code">${bank.areas.find((a) => a.id === q.area).letter}·${q.id.slice(1)}</span>`)) { estOk = false; bad.push(`${pid}/${q.id}`); break; } continue; }
       const want = v ? `${(q.type === "dilema" ? (v === 3 ? DIL[2] : `${DIL[v - 1]}: ${v < 3 ? q.A : q.B}`) : LIK[v - 1])} · ${q.est.includes(pid) ? "estimada" : "documentada"}` : "Sin postura conocida";
       const esc = want.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
       const block = html.split(`<span class="q-code">${bank.areas.find((a) => a.id === q.area).letter}·${q.id.slice(1)}</span>`)[1]?.split("</li>")[0] || "";
