@@ -341,8 +341,8 @@ q();
     const boeLink = `<a href="${CANDS.fuente.url}" target="_blank" rel="noopener noreferrer">proclamación de candidaturas del BOE del ${fmtDate(CANDS.fuente.fecha)}</a>`;
     page({
       path: `/provincias/${pr.id}/`,
-      title: `Candidaturas y cabezas de lista en ${pr.name} · 29N · Test 29N`,
-      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29N. Las ${boe.length} candidaturas proclamadas en el BOE con su cabeza de lista, ${cands.length} con sus posturas en el test, y el reparto de escaños.`,
+      title: `Elecciones 29N en ${pr.name}: candidaturas y mesa electoral · Test 29N`,
+      desc: `${pr.name} elige ${n} ${n === 1 ? "diputado" : "diputados"} el 29N. Las ${boe.length} candidaturas proclamadas en el BOE con su cabeza de lista, ${cands.length} con sus posturas en el test, el reparto de escaños y qué hacer si te ha tocado mesa electoral.`,
       crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }, { name: pr.name, url: `${SITE}provincias/${pr.id}/` }],
       body: `<header class="sp-head"><p class="label">${esc(pr.region.name)} · Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Elecciones del 29N en ${esc(inName(pr))}</h1>
   <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas proclamadas</dt><dd><b>${boe.length}</b></dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
@@ -357,6 +357,11 @@ ${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`)}
 <ol class="boe-list">${boe.map((c) => `<li><span>${c.pid ? `<a href="/partidos/${c.pid}/">${esc(c.c)}</a>` : esc(c.c)}</span><span class="small muted">Cabeza de lista: ${esc(c.cab)}</span></li>`).join("")}</ol></section>
 <section aria-labelledby="h-sim"><h2 class="h2" id="h-sim">¿Cómo se reparten sus ${n} ${n === 1 ? "escaño" : "escaños"}?</h2>
 <p>${n === 1 ? `En ${esc(pr.name)} se elige un solo diputado: lo gana la candidatura más votada.` : `Con la ley D'Hondt, entre las candidaturas que superan el 3 % de los votos válidos de ${esc(pr.name)}.`} Puedes probarlo con los votos que tú quieras en el <a href="/escanos/?p=${pr.id}">simulador de escaños</a>. No usa encuestas ni estimaciones.</p></section>
+<section aria-labelledby="h-mesa"><h2 class="h2" id="h-mesa">¿Te ha tocado mesa electoral en ${esc(pr.name)}?</h2>
+<ul class="dots"><li>Cada mesa la forman un presidente y dos vocales, con dos suplentes cada uno, designados por <b>sorteo público</b> entre los electores de esa mesa que sepan leer y escribir y sean menores de 70 años (a partir de los 65 se puede renunciar en siete días). El cargo es obligatorio.</li>
+<li>La designación se notifica en un plazo de tres días. Quien la recibe tiene <b>siete días</b> para alegar ante la Junta Electoral de Zona una causa justificada y documentada que se lo impida; la Junta resuelve en cinco días y su decisión no admite recurso. Si el impedimento aparece después, hay que avisar a la Junta de Zona al menos 72 horas antes o, si surge más tarde, de inmediato y antes de que se constituya la mesa.</li>
+<li>Para saber en qué mesa y local te toca votar, usa la <a href="https://sede.ine.gob.es/ce-mesas/?lang=es_ES" target="_blank" rel="noopener noreferrer">consulta del INE</a>. Más datos prácticos en la <a href="/votar/">guía para votar</a>.</li></ul>
+<p class="small muted">Fuente: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672" target="_blank" rel="noopener noreferrer">Ley Orgánica del Régimen Electoral General, arts. 25 a 27 (BOE)</a>.</p></section>
 <p class="small muted">${pr.region.provs.length > 1 ? `Otras provincias de ${esc(pr.region.name)}: ${pr.region.provs.filter((x) => x.id !== pr.id).map((x) => `<a href="/provincias/${x.id}/">${esc(x.name)}</a>`).join(" · ")} · ` : ""}<a href="/provincias/">Todas las provincias</a></p>`
     });
   }

@@ -577,7 +577,15 @@ function bindPrios() {
   });
   const finish = (skip) => {
     if (!PROV[S.prov]) { $("#prov-err").textContent = "Elige tu provincia para ver tu coincidencia con las candidaturas que se presentan allí."; $("#f-prov").focus(); return; }
-    if (skip) S.prios = []; S.stage = "done"; save(); count("test-terminado", "Test terminado", true); openResults();
+    if (skip) S.prios = []; S.stage = "done"; save();
+    // INP: calcular y pintar el resultado es lo más pesado del test (~0,3 s en un móvil medio). Se pinta antes un «Calculando…»
+    // y el cálculo se hace en la tarea siguiente, para que el toque responda al instante.
+    const btn = skip ? $("#prio-skip") : $("#prio-go"), lbl = btn.textContent;
+    btn.disabled = true; btn.textContent = "Calculando…";
+    requestAnimationFrame(() => setTimeout(() => {
+      count("test-terminado", "Test terminado", true); openResults();
+      btn.disabled = false; btn.textContent = lbl;
+    }, 0));
   };
   $("#prio-go").addEventListener("click", () => finish(false));
   $("#prio-skip").addEventListener("click", () => finish(true));
