@@ -2,7 +2,7 @@
 
 ## 12 nov 2026 (noche) · PUBLICADO: 10 posturas más de PP y ERC por sus programas 2026
 - Aplicadas las interpretativas con encaje literal: PP A06 4→5, F01 2→1, F05 2→1, H09 3→4, I05 4→5, K08 3→2, L07 4→3; ERC A02 4→5, G09 4→5, J01 3→4 (cada una con cita y página del programa).
-- **Siguen sin aplicar (no encajan lo bastante):** PP F02, F06, H07, K04; ERC G08. Quedan como «pendiente de decisión del titular».
+- **Decididos por el titular («decide tú»): no aplicar** PP F02, F06, H07, K04 ni ERC G08: el programa 2026 no respalda esa lectura de forma literal. Se quedan como están, con su fuente anterior.
 - Pruebas: `posturas` + `paginas` 11/11 y `test` en verde.
 
 ## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar en `main`): programas 2026 de PP, ERC y BNG incorporados
