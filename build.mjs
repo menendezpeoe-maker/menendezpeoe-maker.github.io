@@ -4,6 +4,7 @@ import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES, SOURCES, JUSTIF } from "./src/preguntas.src.mjs";
 import { PARTY_ORDER, DISPLAY_ORDER, PARTIES, REGIONS } from "./src/partidos.src.mjs";
 import { POLITICIANS } from "./src/politicos.src.mjs";
+import { PROGRAMAS } from "./src/programas.src.mjs";
 
 const VERSION = "2.0.0";
 const UPDATED = "2026-11-07";
@@ -134,7 +135,7 @@ FAMILIES.forEach((f) => f.forEach((id) => seen.has(id) || err(`Familia con pregu
 if (new Set(FAMILIES.flat()).size !== FAMILIES.flat().length) err("Una pregunta está en dos familias");
 writeFileSync("data/preguntas.json", JSON.stringify({ version: VERSION, updated: UPDATED, dims: DIMS, areas: AREAS, families: FAMILIES, questions }, null, 1));
 writeFileSync("data/partidos.json", JSON.stringify({
-  version: VERSION, updated: UPDATED, order: DISPLAY_ORDER, parties,
+  version: VERSION, updated: UPDATED, order: DISPLAY_ORDER, parties, programas: PROGRAMAS.publicados,
   regions: REGIONS.map(([id, name, provs]) => ({ id, name, provs: provs.map(([pid, pname]) => ({ id: pid, name: pname })) }))
 }, null, 1));
 
