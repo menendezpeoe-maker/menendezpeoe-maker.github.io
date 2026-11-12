@@ -128,15 +128,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "ERC votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
-   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
-   "fuente_titulo": "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-09-11"
+   "justificacion": "Su programa de 2026 reduce por ley la jornada máxima a 37,5 horas semanales sin rebaja salarial, modificando el artículo 34 del Estatuto.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=26",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 26",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A01",
@@ -208,11 +208,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025.",
-   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
-   "fuente_titulo": "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-09-10"
+   "justificacion": "Su programa de 2026 promueve la jornada de 35 horas semanales sin rebaja salarial y avanzar hacia las 32 horas.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=15",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A01",
@@ -474,11 +474,11 @@
    "postura_texto": "Más bien A: Bajar impuestos, aunque haya que reducir gasto público",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-   "fuente_titulo": "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=47",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 47",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A02",
@@ -1059,15 +1059,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone crear impuestos sobre las grandes fortunas.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 hace permanente el impuesto de solidaridad de las grandes fortunas y sube su tipo por encima de 10 millones.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=22",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 22",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1139,11 +1139,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone un impuesto a las grandes fortunas con límites de exención menores, más progresividad y gestión traspasada a Galicia.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=41",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 blinda los impuestos específicos a la banca, las energéticas y las grandes fortunas y aumenta su progresividad.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=44",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 44",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1386,11 +1386,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Rechaza el aumento de la deuda pública y promete medidas para recortar el gasto superfluo.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 promete reducir la deuda con objetivos conformes a las reglas europeas y no aprobar gasto nuevo sin financiación.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -1899,11 +1899,11 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia de 2025 pide rebajar la edad real de jubilación, lo contrario de retrasarla.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 25",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
@@ -1973,13 +1973,13 @@
    "partido": "BNG",
    "postura": 1,
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=19",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
@@ -2351,15 +2351,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: ERC defiende reforzar los derechos laborales y no rebajar obligaciones de las empresas.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=23",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 23",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A06",
@@ -2925,11 +2925,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone subir el salario mínimo a 1.250 euros, no frenarlo.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 propone subir el salario mínimo hasta el 60 % del salario medio bruto.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=20",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 20",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -3001,11 +3001,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG propone seguir subiendo el salario mínimo hasta el 60 % del salario medio.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=16",
-   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 16",
+   "justificacion": "Su programa de 2026 sube el salario mínimo hasta el 60 % del salario medio y prohíbe compensarlo o absorberlo con otros complementos.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=15",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 15",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -3267,11 +3267,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "Su ponencia política de 2025 pide reducir el tamaño del sector empresarial público, sin citar empresas concretas.",
-   "justificacion": "Propone reducir el tamaño del sector empresarial público y critica la influencia del Gobierno en empresas del IBEX 35.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 propone vender las participaciones públicas que no respondan a un interés público o estratégico acreditado.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A09",
@@ -4198,11 +4198,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.newtral.es/pp-propuesta-congreso/20260421/",
-   "fuente_titulo": "Newtral, toma en consideración de la ley de vivienda del PP, 21/04/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-04-21"
+   "justificacion": "Su programa de 2026 deroga la Ley de Vivienda y elimina las zonas tensionadas y el índice de precios del alquiler.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=42",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 42",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -4369,11 +4369,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
-   "fuente_url": "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
-   "fuente_titulo": "Público, votación en el Congreso del 28/04/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-04-28"
+   "justificacion": "Su programa de 2026 propone topar por ley los precios del alquiler.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -4692,11 +4692,11 @@
    "postura_texto": "Claramente A: Construir mucho más, liberando suelo y agilizando licencias",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP apuesta por aumentar la oferta (un millón de viviendas, suelo y licencias rápidas) y rechaza la regulación de precios de la ley de vivienda.",
-   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
-   "fuente_titulo": "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2026-10-22"
+   "justificacion": "Su programa de 2026 prioriza construir un millón de viviendas con más suelo, una nueva Ley del Suelo y licencias en tres meses.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=41",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 41",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -4787,11 +4787,11 @@
    "postura_texto": "Más bien B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -4863,11 +4863,11 @@
    "postura_texto": "Claramente B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor del primer decreto de vivienda, que limitaba las subidas del alquiler y prorrogaba contratos, derogado por el Congreso.",
-   "fuente_url": "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
-   "fuente_titulo": "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-10-02"
+   "justificacion": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -5794,11 +5794,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 propone regular los arrendamientos para evitar desahucios de personas vulnerables sin vivienda alternativa.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B04",
@@ -5868,13 +5868,13 @@
    "partido": "BNG",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B04",
@@ -6706,11 +6706,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia defiende el recargo del IBI a las viviendas desocupadas.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -6780,13 +6780,13 @@
    "partido": "BNG",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=13",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 13",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -7124,11 +7124,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 sube el IVA y el ITP en compras no destinadas a vivienda habitual y acaba con la ley Beckham.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B07",
@@ -7599,11 +7599,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG defiende ampliar el parque público de vivienda, gestionado desde Galicia, con suelo y viviendas estatales.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=15",
-   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 15",
+   "justificacion": "Su programa de 2026 destina el 3 % de los Presupuestos a crear un parque público de alquiler permanente.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 12",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -8397,11 +8397,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://valenciaplaza.com/presidentes-pp-firman-manifiesto-posicion-comun-contra-cupo-catalan",
-   "fuente_titulo": "Valencia Plaza (EFE), manifiesto de los presidentes autonómicos del PP, 26/08/2024",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-08-26"
+   "justificacion": "Su programa de 2026 descarta que ninguna comunidad salga del sistema común y nuevos regímenes singulares negociados bilateralmente.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C01",
@@ -8492,11 +8492,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/",
-   "fuente_titulo": "El Independiente, 03/09/2025",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2025-09-03"
+   "justificacion": "Su programa de 2026 reclama un finançament singular basado en los ingresos y avanzar hacia un concierto económico solidario.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=12",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C01",
@@ -8568,11 +8568,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 propone un modelo de financiación basado en el concierto económico, con una Hacienda Galega.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=8",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C01",
@@ -8927,13 +8927,13 @@
    "partido": "Partido Popular",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone un fondo de nivelación transitorio y un sistema que amplíe los recursos de todas las comunidades autónomas.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C02",
@@ -9328,11 +9328,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 defiende el autogobierno autonómico y propone reforzar la Alta Inspección del Estado y una PAU común.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -9423,11 +9423,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa defiende las competencias educativas autonómicas frente a la recentralización.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 exige las competencias exclusivas en educación y la plena soberanía de Cataluña sobre su sistema educativo.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=11",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 11",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -9499,11 +9499,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide transferir a Galicia todas las competencias en educación para diseñar un modelo educativo propio.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=32",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 pide la transferencia plena de las competencias de enseñanza a Galicia y una ley gallega de educación.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=34",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 34",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -9822,11 +9822,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
-   "fuente_url": "https://www.periodicodeibiza.es/pitiusas/ibiza/2013/11/11/112215/rechazara-propuesta-para-creacion-estado-federal.html",
-   "fuente_titulo": "Periódico de Ibiza (Efe), el PP en el Parlament balear ante una propuesta federal",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2013-11-11"
+   "justificacion": "Su programa de 2026 afirma defender el Estado de las Autonomías y el autogobierno de las comunidades en el marco de la Constitución.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=15",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C04",
@@ -10259,11 +10259,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP sostiene que un referéndum de autodeterminación no cabe en la Constitución y propone tipificar como delito convocarlo.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf",
-   "fuente_titulo": "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2023-07-19"
+   "justificacion": "Su programa de 2026 recupera en el Código Penal los delitos de sedición y de convocatoria de referéndum ilegal.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=15",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C05",
@@ -10354,11 +10354,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa se compromete a negociar un referéndum de autodeterminación.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 propone negociar un referéndum de autodeterminación en Cataluña con acompañamiento internacional.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C05",
@@ -10791,11 +10791,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone potenciar las diputaciones provinciales como herramienta al servicio de los pequeños municipios.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 propone aumentar el apoyo de las diputaciones a los pequeños municipios, en lugar de suprimirlas.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C06",
@@ -10958,15 +10958,15 @@
    "opcion_b": "",
    "partido_id": "bng",
    "partido": "BNG",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 suprime las diputaciones provinciales y traspasa sus funciones a Galicia y a los ayuntamientos.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=42",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 42",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C06",
@@ -11245,13 +11245,13 @@
    "partido": "Partido Popular",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone un Estatuto de los Pequeños Municipios para facilitar que compartan personal y servicios.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C07",
@@ -12577,11 +12577,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=29",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 propone un sistema proporcional puro (cuota Hare), Galicia como circunscripción y suprimir el mínimo del 5 %.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D01",
@@ -13698,11 +13698,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP votó contra la Ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley.",
-   "fuente_url": "https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html",
-   "fuente_titulo": "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2024-05-30"
+   "justificacion": "Su programa de 2026 deroga la Ley de Amnistía y prohíbe usar el derecho de gracia como moneda de cambio para gobernar.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=25",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D04",
@@ -14266,13 +14266,13 @@
    "partido": "BNG",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone regular estrictamente las puertas giratorias y las incompatibilidades.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=41",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 41",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D05",
@@ -14800,11 +14800,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición.",
-   "fuente_url": "https://www.moncloa.com/2022/04/06/feijoo-defiende-monarquia-1351763/",
-   "fuente_titulo": "Moncloa.com, declaraciones de Feijóo, 06/04/2022",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2022-04-06"
+   "justificacion": "Su programa de 2026 sitúa la monarquía parlamentaria entre los pilares de la obra común de la democracia española.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=8",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D07",
@@ -14895,11 +14895,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa apoya convocar un referéndum sobre monarquía o república.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 propone fiscalizar al rey y a la Casa Real y poner fin a una institución contraria al principio democrático.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D07",
@@ -15218,11 +15218,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 reserva el decreto-ley a situaciones extraordinarias y urgentes y limita la urgencia y la lectura única.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=29",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 29",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D08",
@@ -16035,11 +16035,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "Se abstuvo en la ley contra la multirreincidencia (febrero de 2026) y rechaza endurecer las penas «a golpe de Código Penal».",
-   "justificacion": "",
-   "fuente_url": "https://www.diarimes.com/es/actualidad/260212/congreso-aprueba-ley-multirreincidencia-votos-psoe-pp-vox_208972.html",
-   "fuente_titulo": "Diari Més, votación en el Congreso del 12/02/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-02-12"
+   "justificacion": "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=43",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 43",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E01",
@@ -16358,11 +16358,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 amplía la prisión permanente revisable a quien oculte el cadáver y a los depredadores sexuales.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E02",
@@ -16529,11 +16529,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 deroga la prisión permanente revisable.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 30",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E02",
@@ -16776,11 +16776,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP aprobó la ley en 2015, votó contra su reforma y defiende el texto vigente como protección de las fuerzas de seguridad.",
-   "fuente_url": "https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/",
-   "fuente_titulo": "Onda Vasca, enmienda a la totalidad del PP en el Congreso, 12/12/2024",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2024-12-12"
+   "justificacion": "Su programa de 2026 endurece la respuesta a los disturbios violentos y refuerza la actuación policial preventiva.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=16",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -16871,11 +16871,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone derogar la «ley mordaza».",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 deroga la llamada ley mordaza (Ley Orgánica 4/2015 de seguridad ciudadana).",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -16947,11 +16947,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa propone derogar íntegramente la ley mordaza.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 deroga íntegramente la ley mordaza.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 30",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -17213,11 +17213,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se abstuvo ante la ley que rebajaba la edad penal a 12 años y pidió escuchar a expertos antes de reformar.",
-   "fuente_url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF",
-   "fuente_titulo": "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-11-18"
+   "justificacion": "Su programa de 2026 reforma la Ley del Menor para alargar el internamiento en delitos graves con violencia, armas o bandas.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E04",
@@ -17779,15 +17779,15 @@
    "opcion_b": "",
    "partido_id": "bng",
    "partido": "BNG",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 fija límites estrictos al reconocimiento facial y a la vigilancia biométrica masiva en espacios públicos.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=77",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 77",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E05",
@@ -18087,11 +18087,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone despenalizar las injurias a la Corona.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 suprime los delitos de ofensa a los sentimientos religiosos y de injurias a la Corona.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E06",
@@ -18163,11 +18163,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
-   "fuente_url": "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
-   "fuente_titulo": "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2023-12-20"
+   "justificacion": "Su programa de 2026 plantea suprimir delitos de opinión como las injurias a la Corona.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E06",
@@ -18809,11 +18809,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "Su programa de 2023 promete cumplir el Pacto de Estado contra la violencia de género «sin pasos atrás»; algunos acuerdos autonómicos con Vox hablaron de «violencia intrafamiliar», pero no son la línea nacional.",
-   "justificacion": "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás».",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 refuerza VioGen y los medios contra la violencia de género y rinde cuentas del Pacto de Estado.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -18904,11 +18904,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa refuerza la jurisdicción específica de violencia machista.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 reforma la Ley Orgánica 1/2004 para reforzar la respuesta a todas las formas de violencia machista.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=24",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 24",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -19816,11 +19816,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 propone promover la regularización administrativa de los inmigrantes para acabar con su explotación.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=22",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 22",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -20234,11 +20234,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone regularizar a las personas en situación irregular.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 propone acabar con la externalización de las fronteras y garantizar vías legales y seguras para migrar.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F02",
@@ -20652,11 +20652,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "En el Congreso votó contra la «prioridad nacional» que propone Vox, pero sus pactos de gobierno de 2026 con Vox en Extremadura y Aragón dan prioridad en vivienda y ayudas según los años de empadronamiento.",
-   "justificacion": "",
-   "fuente_url": "https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html",
-   "fuente_titulo": "Menorca.info, abril de 2026",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2026-04"
+   "justificacion": "Su programa de 2026 da prioridad en ayudas a quien tiene arraigo real (empadronamiento, cotización), sin basarla solo en la nacionalidad.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F03",
@@ -20747,11 +20747,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
-   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
-   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-06-25"
+   "justificacion": "Su programa de 2026 pide igualdad de trato y oportunidades con independencia del origen en empleo, vivienda y servicios.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F03",
@@ -21146,11 +21146,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos.",
-   "justificacion": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=18",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 propone visados por puntos, cupos anuales y contratación en origen en los sectores donde faltan trabajadores.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -21241,11 +21241,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 propone vías legales y seguras para migrar y una política migratoria centrada en los derechos humanos.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -22187,15 +22187,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone una prestación universal por crianza de hijos.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 21",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F06",
@@ -22457,11 +22457,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP propone una fiscalidad específica y bonificaciones para las zonas rurales despobladas, además de menores costes laborales en Soria, Cuenca y Teruel.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 plantea incentivos económicos en zonas en declive demográfico y bajar impuestos a quien vive o invierte en el medio rural.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F07",
@@ -22780,11 +22780,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal.",
-   "fuente_url": "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=25",
-   "fuente_titulo": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25",
+   "justificacion": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=35",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 35",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -22873,13 +22873,13 @@
    "partido": "Esquerra Republicana",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 exige garantizar la financiación de la Ley de Dependencia, con 2.018 millones extra en 2026 y 7.200 en 2027.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 41",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -23673,11 +23673,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-   "fuente_titulo": "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 elimina el calendario de cierre de las nucleares y tramita ampliar su vida útil con el visto bueno del CSN.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=54",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 54",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G01",
@@ -23768,11 +23768,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
-   "fuente_titulo": "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-11-13"
+   "justificacion": "Su programa de 2026 reclama que el Estado contribuya al Fondo de Transición Nuclear de la Generalitat.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=31",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G01",
@@ -24300,11 +24300,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: ERC apoya las renovables con planificación territorial.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=102",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de energía",
+   "justificacion": "Su programa de 2026 condiciona las líneas de muy alta tensión a un informe favorable en biodiversidad y refuerza las renovables.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=30",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 30",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -24737,11 +24737,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil.",
-   "fuente_url": "https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/",
-   "fuente_titulo": "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-05-24"
+   "justificacion": "Su programa de 2026 dice que frenará calendarios climáticos «imposibles» y retirará obligaciones que perjudiquen a la industria.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G03",
@@ -24832,11 +24832,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa asume la prohibición de vender motores de combustión y pide infraestructura.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 amplía el Programa Auto+ para electrificar el parque de vehículos y facilita los puntos de recarga.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=29",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 29",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G03",
@@ -25345,11 +25345,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El Ara recoge la postura de ERC contra el trasvase del Ebro: su exconsellera afirma «No haremos trasvases».",
-   "fuente_url": "https://es.ara.cat/politica/elecciones-catalunya/sobra-agua-ebro-trasvasar-barcelona_1_5009807.html",
-   "fuente_titulo": "Ara, ¿Sobra agua en el Ebro para trasvasar a Barcelona?, 25/04/2024",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-04-25"
+   "justificacion": "Su programa de 2026 pide modificar el Plan Hidrológico del Ebro para garantizar los caudales ecológicos y proteger el delta.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=31",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G04",
@@ -26105,11 +26105,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": false,
    "nota": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno.",
-   "justificacion": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=33",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=36",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 36",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -26200,11 +26200,11 @@
    "postura_texto": "Claramente B: Mejorar las Cercanías y los trenes regionales",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa critica la alta velocidad a costa de Rodalies y prioriza las cercanías.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 exige financiar el Plan de Rodalies 2026-2030 y completar el traspaso de Rodalies a la Generalitat.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=40",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 40",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -26827,11 +26827,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Feijóo critica las leyes que dificultan el desbroce y reivindica la ganadería extensiva para prevenir incendios.",
-   "fuente_url": "https://www.moncloa.com/2026/07/14/feijoo-plan-nacional-incendios-3399315/",
-   "fuente_titulo": "Moncloa.com, Feijóo anuncia un plan nacional de prevención de incendios, 14/07/2026",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2026-07-14"
+   "justificacion": "Su programa de 2026 reforma la Ley de Montes para facilitar la prevención y la ganadería preventiva y gravar menos a quien cuide el monte.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G08",
@@ -27112,11 +27112,11 @@
    "postura_texto": "Más bien A: Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
-   "fuente_url": "https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf",
-   "fuente_titulo": "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2026-04-27"
+   "justificacion": "Su programa de 2026 apuesta por la neutralidad tecnológica: nuclear, renovables, almacenamiento y respaldo compiten en igualdad.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=54",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 54",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
@@ -27606,11 +27606,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta.",
-   "fuente_url": "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=45",
-   "fuente_titulo": "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 45",
+   "justificacion": "Su programa de 2026 propone una ley de programación y financiación de la defensa y cumplir los compromisos con los aliados.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=21",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 21",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H01",
@@ -27701,11 +27701,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
-   "fuente_titulo": "ElNacional.cat, votación en el Congreso del 20/03/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-03-20"
+   "justificacion": "Su programa de 2026 pide fiscalizar el modelo de defensa y los programas especiales de armamento y evitar el gasto oculto.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H01",
@@ -27777,11 +27777,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 rechaza el aumento del gasto militar y el acatamiento de las directrices de la OTAN y de EE. UU.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=90",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 90",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H01",
@@ -28100,11 +28100,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Considera que reforzar la integración europea fortalece la soberanía y no la reduce.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=35",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 quiere una Unión Europea con más fuerza política, económica y militar y con compras conjuntas de defensa.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H02",
@@ -29031,11 +29031,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
-   "fuente_titulo": "RTVC, votación del 8 de octubre de 2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-10-08"
+   "justificacion": "Su programa de 2026 pide soluciones diplomáticas en Oriente Medio con socios clave, como Israel, y proteger a la población civil de Gaza.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H04",
@@ -29126,11 +29126,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide detener el comercio de armas con Israel, entre otros países.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 promueve un embargo completo de armas a Israel.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 16",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H04",
@@ -29525,11 +29525,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide rectificar el apoyo al plan de autonomía marroquí.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 pide al Gobierno revertir la posición adoptada en 2022 sobre el Sáhara Occidental.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 16",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H05",
@@ -29601,11 +29601,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG pide anular el giro del Gobierno sobre el Sáhara y apoyar un referéndum de autodeterminación.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 67",
+   "justificacion": "Su programa de 2026 pide un referéndum de autodeterminación con garantías para el pueblo saharaui y condena la ocupación marroquí.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=90",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 90",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H05",
@@ -29867,11 +29867,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Considera indispensable el vínculo transatlántico y defiende cumplir los compromisos de inversión en la OTAN.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=36",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 propone reforzar los contingentes españoles de la OTAN y respetar los compromisos con los aliados.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=21",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 21",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H06",
@@ -30038,11 +30038,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG defiende la salida de la OTAN y la disolución de la alianza.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 67",
+   "justificacion": "Su programa de 2026 propone salir de la OTAN y defender la disolución de esa alianza militar.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=89",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 89",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H06",
@@ -30456,11 +30456,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide alcanzar el 0,7 % en ayuda al desarrollo.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 exige cumplir el compromiso del 0,7 % de ayuda oficial al desarrollo.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 16",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H07",
@@ -30798,11 +30798,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Describe a China como socio, competidor y rival sistémico y pide actuar con la UE y los aliados de la OTAN.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=38",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 define a China como socio, competidor y rival sistémico y pide proteger a las empresas de la competencia desleal.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H08",
@@ -31140,11 +31140,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia critica externalizar fronteras con centros en terceros países.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 propone poner fin a la externalización de las fronteras europeas.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H09",
@@ -31482,11 +31482,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-   "fuente_titulo": "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 asegura que no se eliminará ningún concierto con demanda suficiente y alarga los conciertos a seis años.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -31577,11 +31577,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html",
-   "fuente_titulo": "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2023-04-27"
+   "justificacion": "Su programa de 2026 defiende un modelo de escuela pública, laica, gratuita y de calidad, con el catalán como lengua vehicular.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=10",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -31653,11 +31653,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=33",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 defiende una única red de enseñanza, la pública, laica y gratuita.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=34",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 34",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -31938,11 +31938,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: el programa de 2023 apuesta por ampliar las becas universitarias, no por la gratuidad general de la matrícula.",
-   "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-5337",
-   "fuente_titulo": "BOE, Real Decreto-ley 14/2012 de medidas urgentes de racionalización del gasto público en el ámbito educativo (Gobierno del PP, 20 de abril de 2012)",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2012-04-21"
+   "justificacion": "Su programa de 2026 convierte la beca en un derecho por ley y da matrícula gratuita solo en FP de alta demanda de empleo.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=52",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 52",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I02",
@@ -32504,15 +32504,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "Estimación: ERC prioriza la universidad pública.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 endurece los requisitos para crear, reconocer y autorizar universidades.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=46",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I03",
@@ -33021,11 +33021,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "Su programa nacional pide el castellano y la cooficial como lenguas vehiculares «en equilibrio»; algunos gobiernos autonómicos del PP ensayan la libre elección de lengua.",
-   "justificacion": "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 garantiza el derecho a recibir enseñanza en castellano en todas las etapas educativas y en toda España.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I05",
@@ -33116,11 +33116,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa defiende la inmersión con el catalán como lengua vehicular.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 blinda la escuela catalana y la inmersión lingüística, con el catalán como lengua vehicular.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=10",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 10",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I05",
@@ -33382,11 +33382,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas.",
-   "fuente_url": "https://www.periodicodeibiza.es/noticias/nacional/2013/06/25/102341/wert-reconsiderar-nota-del-para-optar-becas-universitarias.html",
-   "fuente_titulo": "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2013-06-25"
+   "justificacion": "Su programa de 2026 hace de la beca un derecho para quien la necesite y apruebe y crea becas de excelencia para los mejores expedientes.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=52",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 52",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I06",
@@ -34104,11 +34104,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Defiende la tauromaquia como expresión cultural con profundas raíces históricas.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=13",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 restituye el Premio Nacional de Tauromaquia y protege las fiestas y tradiciones populares.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=38",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 38",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I08",
@@ -34636,11 +34636,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Considera que la lengua cooficial debe ser un mérito y no un requisito para acceder a la función pública.",
-   "fuente_url": "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
-   "fuente_titulo": "Ponencia política del XXI Congreso del PP (junio de 2025)",
+   "justificacion": "Su programa de 2026 dice que los requisitos lingüísticos respetarán las libertades y que se atenderá en la lengua oficial o la cooficial, a elección.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-06"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I09",
@@ -34807,11 +34807,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El BNG defiende que el personal de las administraciones en Galicia conozca el gallego.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=61",
-   "fuente_titulo": "Programa electoral del BNG para las generales de 2023, p. 61",
+   "justificacion": "Su programa de 2026 pide normalizar el gallego en la Administración central, empezando por su conocimiento entre el funcionariado.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=72",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 72",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I09",
@@ -35643,11 +35643,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia propone dejar de concertar con centros privados con ánimo de lucro.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 propone blindar una sanidad pública universal y frenar la privatización de la sanidad.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 41",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J02",
@@ -36688,11 +36688,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone reformar la ley de evaluación de políticas públicas y reforzar la AIReF como evaluador independiente.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 evaluará cada año programas de gasto con criterios independientes y retirará recursos a los que no cumplan.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J05",
@@ -37543,11 +37543,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 blinda las competencias sanitarias de la Generalitat e impide la recentralización o la injerencia del Estado.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=42",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 42",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J08",
@@ -38014,15 +38014,15 @@
    "opcion_b": "",
    "partido_id": "erc",
    "partido": "Esquerra Republicana",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 pide al Gobierno rechazar la ratificación del acuerdo comercial UE-Mercosur.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=32",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
@@ -38094,11 +38094,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
-   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-   "fuente_titulo": "Programa do BNG para as eleccións xerais de 2023",
+   "justificacion": "Su programa de 2026 rechaza el acuerdo UE-Mercosur por los perjuicios para las explotaciones agrarias gallegas.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=48",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 48",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
@@ -38453,13 +38453,13 @@
    "partido": "Partido Popular",
    "postura": 3,
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K02",
@@ -38550,11 +38550,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone reformar la ley de la cadena para mejorar precios a productores.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria y sus controles para garantizar precios justos que cubran los costes.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 33",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K02",
@@ -38624,13 +38624,13 @@
    "partido": "BNG",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=47",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 47",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K02",
@@ -38968,11 +38968,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 mantiene la financiación de la PAC sin recortes y adelanta ayudas a los jóvenes que se incorporan.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=49",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 49",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K03",
@@ -40336,11 +40336,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE.",
-   "fuente_url": "https://www.pp.es/storage/2024/12/241217-Carmen-Belen-Lopez-pregunta-a-Planas-por-negociacion-UE-pesca-1.pdf",
-   "fuente_titulo": "PP en el Senado, Carmen Belén López pregunta a Planas por la pesca en el Mediterráneo, 17/12/2024",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-12-17"
+   "justificacion": "Su programa de 2026 defiende reformar la política pesquera común y un régimen competitivo para los buques españoles.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K06",
@@ -40621,11 +40621,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural.",
-   "fuente_url": "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31",
-   "fuente_titulo": "Programa electoral del PP de 2023",
+   "justificacion": "Su programa de 2026 defiende la caza y promete reducir las trabas a la caza sostenible.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K07",
@@ -41229,11 +41229,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua.",
-   "justificacion": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua.",
-   "fuente_url": "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-   "fuente_titulo": "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+   "justificacion": "Su programa de 2026 exige financiación estatal para modernizar los regadíos de Cataluña y mejorar la eficiencia hídrica.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 33",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2025-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K08",
@@ -42369,11 +42369,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "Recurrió ante el Tribunal Constitucional los artículos de la Ley trans que permiten el cambio registral desde los 16 años sin informes médicos.",
-   "justificacion": "El PP recurrió ante el Tribunal Constitucional el cambio registral desde los 16 años sin informes médicos que permite la Ley trans.",
-   "fuente_url": "https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/",
-   "fuente_titulo": "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2025-04-27"
+   "justificacion": "Su programa de 2026 elimina la libre autodeterminación registral del sexo de la Ley Trans.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=35",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L03",
@@ -42464,11 +42464,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa defiende la autodeterminación de género sin patologizar.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 reconoce legalmente las identidades no binarias sin requisitos patologizadores.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=24",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 24",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L03",
@@ -42540,11 +42540,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
-   "fuente_url": "https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html",
-   "fuente_titulo": "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2022-12-22"
+   "justificacion": "Su programa de 2026 protege a las personas trans, respeta su autodeterminación de género y reconoce a las personas no binarias.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=29",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 29",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L03",
@@ -43300,11 +43300,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa propone anular los acuerdos de 1979 con la Santa Sede.",
-   "fuente_url": "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-   "fuente_titulo": "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+   "justificacion": "Su programa de 2026 deja sin efecto los acuerdos de 1979 con la Santa Sede y aplica el IBI a los bienes de las confesiones.",
+   "fuente_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+   "fuente_titulo": "Programa electoral de ERC de 2026, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L05",
@@ -43374,13 +43374,13 @@
    "partido": "BNG",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone denunciar y revocar el Concordato y los acuerdos vigentes con la Santa Sede.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 32",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L05",
@@ -44343,13 +44343,13 @@
    "partido": "BNG",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=25",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L08",
@@ -44611,11 +44611,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/",
-   "fuente_titulo": "Orain, febrero de 2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-02"
+   "justificacion": "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos.",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+   "fuente_titulo": "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L09",

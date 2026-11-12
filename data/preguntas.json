@@ -169,7 +169,7 @@
     "pod": 5,
     "salf": 1,
     "d21": 2,
-    "erc": 4,
+    "erc": 5,
     "junts": 1,
     "pnv": 4,
     "bildu": 5,
@@ -226,10 +226,10 @@
      "2025-09-11"
     ],
     "erc": [
-     "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
-     "Periódico de Ibiza (Europa Press), veto a la ley de reducción de jornada, 10/09/2025",
-     "parlamento",
-     "2025-09-11"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=26",
+     "Programa electoral de ERC de 2026, p. 26",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
@@ -256,10 +256,10 @@
      "2025-09-10"
     ],
     "bng": [
-     "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
-     "Periódico de Ibiza, El Congreso tumba la reducción de jornada laboral, 11-09-2025",
-     "parlamento",
-     "2025-09-10"
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=15",
+     "Programa electoral del BNG de 2026, p. 15",
+     "programa",
+     "2026-11"
     ],
     "ccpc": [
      "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
@@ -304,12 +304,12 @@
     "vox": "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
     "fa": "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32 horas.",
     "pod": "Votó contra las enmiendas que tumbaron la ley de 37,5 horas.",
-    "erc": "ERC votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
+    "erc": "Su programa de 2026 reduce por ley la jornada máxima a 37,5 horas semanales sin rebaja salarial, modificando el artículo 34 del Estatuto.",
     "junts": "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     "pnv": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "bildu": "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
     "upn": "Votó a favor de los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
-    "bng": "El BNG votó en contra de los vetos de PP, Vox y Junts que tumbaron la ley de reducción de la jornada laboral el 10 de septiembre de 2025.",
+    "bng": "Su programa de 2026 promueve la jornada de 35 horas semanales sin rebaja salarial y avanzar hacia las 32 horas.",
     "ccpc": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "comp": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial.",
     "upc": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas.",
@@ -378,10 +378,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-     "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=47",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 47",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
@@ -505,7 +505,8 @@
     "pcte": "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos.",
     "ph": "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
     "ie": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
-    "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos."
+    "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
+    "pp": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos."
    }
   },
   {
@@ -527,7 +528,7 @@
     "pod": 5,
     "salf": 1,
     "d21": 1,
-    "erc": 4,
+    "erc": 5,
     "junts": 2,
     "pnv": 2,
     "bildu": 5,
@@ -584,10 +585,10 @@
      "2022-06-05"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=22",
+     "Programa electoral de ERC de 2026, p. 22",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.noticiasdenavarra.com/politica/2022/11/24/pleno-congreso-aprueba-impuestos-banca-6255443.html",
@@ -602,10 +603,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=41",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=44",
+     "Programa electoral del BNG de 2026, p. 44",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "comp": [
      "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=207",
@@ -650,10 +651,10 @@
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
     "pod": "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
-    "erc": "El programa propone crear impuestos sobre las grandes fortunas.",
+    "erc": "Su programa de 2026 hace permanente el impuesto de solidaridad de las grandes fortunas y sube su tipo por encima de 10 millones.",
     "pnv": "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
     "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
-    "bng": "El programa propone un impuesto a las grandes fortunas con límites de exención menores, más progresividad y gestión traspasada a Galicia.",
+    "bng": "Su programa de 2026 blinda los impuestos específicos a la banca, las energéticas y las grandes fortunas y aumenta su progresividad.",
     "comp": "Su programa para las generales propone un impuesto a las grandes fortunas.",
     "salf": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
     "adel": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
@@ -718,10 +719,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=34",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74",
@@ -780,7 +781,7 @@
    },
    "why": {
     "psoe": "Su programa de 2023 defiende la consolidación fiscal, pero con más ingresos y reglas europeas compatibles con la inversión.",
-    "pp": "Rechaza el aumento de la deuda pública y promete medidas para recortar el gasto superfluo.",
+    "pp": "Su programa de 2026 promete reducir la deuda con objetivos conformes a las reglas europeas y no aprobar gasto nuevo sin financiación.",
     "vox": "Vox se fija como objetivo eliminar progresivamente el déficit y la deuda, con presupuestos de base cero.",
     "fa": "Rechaza que los límites de déficit y deuda condicionen la inversión pública y el gasto social.",
     "pod": "Su programa europeo de 2024 pide reformar las reglas fiscales y no fijar límites de déficit iguales para todos.",
@@ -837,7 +838,6 @@
     "pnv",
     "upn",
     "gbai",
-    "bng",
     "drago",
     "existe",
     "mes",
@@ -863,10 +863,10 @@
      "2025-01-22"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25",
+     "Programa electoral de ERC de 2026, p. 25",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=100",
@@ -927,13 +927,19 @@
      "Programa electoral del Partido Humanista de 2023, p. 13",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=19",
+     "Programa electoral del BNG de 2026, p. 19",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "psoe": "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos.",
     "fa": "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones.",
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
-    "erc": "La ponencia de 2025 pide rebajar la edad real de jubilación, lo contrario de retrasarla.",
+    "erc": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
     "pp": "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto.",
@@ -943,7 +949,8 @@
     "cha": "Propone financiar las pensiones públicas con impuestos a la banca y otros actores, y desechar la desindexación y el factor de sostenibilidad.",
     "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
     "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos.",
-    "ph": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación."
+    "ph": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación.",
+    "bng": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza."
    }
   },
   {
@@ -965,7 +972,7 @@
     "pod": 1,
     "salf": 5,
     "d21": 5,
-    "erc": 2,
+    "erc": 3,
     "junts": 4,
     "pnv": 4,
     "bildu": 1,
@@ -981,7 +988,6 @@
     "pod",
     "salf",
     "d21",
-    "erc",
     "junts",
     "pnv",
     "bildu",
@@ -1003,6 +1009,12 @@
      "Programa electoral de Vox de 2023, medida 30",
      "programa",
      "2023-07"
+    ],
+    "erc": [
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=23",
+     "Programa electoral de ERC de 2026, p. 23",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1010,7 +1022,7 @@
     "pp": "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250.",
     "vox": "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas.",
     "pod": "Estimación: contraria a suavizar obligaciones laborales de las empresas, en línea con su defensa de los derechos laborales.",
-    "erc": "Estimación: ERC defiende reforzar los derechos laborales y no rebajar obligaciones de las empresas."
+    "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías."
    }
   },
   {
@@ -1169,10 +1181,10 @@
      "2026-02-18"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=20",
+     "Programa electoral de ERC de 2026, p. 20",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=63",
@@ -1187,10 +1199,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=16",
-     "Programa electoral del BNG para las generales de 2023, p. 16",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=15",
+     "Programa electoral del BNG de 2026, p. 15",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upc": [
      "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=7",
@@ -1217,10 +1229,10 @@
     "vox": "Vox rechaza subir el salario mínimo si encarece a las empresas y prefiere bajar cotizaciones e impuestos.",
     "fa": "Propone seguir subiendo el salario mínimo por encima del IPC, como hizo el Ministerio de Trabajo.",
     "pod": "Belarra exigió en el Congreso subir ya el salario mínimo a 1.800 euros, lejos de frenarlo.",
-    "erc": "El programa propone subir el salario mínimo a 1.250 euros, no frenarlo.",
+    "erc": "Su programa de 2026 propone subir el salario mínimo hasta el 60 % del salario medio bruto.",
     "junts": "Su programa de 2023 considera insuficiente el salario mínimo de 1.080 euros y propone uno catalán más alto.",
     "bildu": "Exige subir el salario mínimo hasta los 1.200 euros.",
-    "bng": "El BNG propone seguir subiendo el salario mínimo hasta el 60 % del salario medio.",
+    "bng": "Su programa de 2026 sube el salario mínimo hasta el 60 % del salario medio y prohíbe compensarlo o absorberlo con otros complementos.",
     "upc": "Se compromete a subir el salario mínimo interprofesional por encima del IPC anual para mantener el poder adquisitivo.",
     "ph": "Estimación: el programa defiende «mantener y aumentar los salarios»; no trata el salario mínimo, por eso la base es indirecta.",
     "fo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo."
@@ -1300,10 +1312,10 @@
      "2023-12-19"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=33",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=12",
@@ -1344,7 +1356,7 @@
    },
    "why": {
     "psoe": "Su Gobierno ordenó a la SEPI comprar hasta el 10 % de Telefónica por considerarla una empresa estratégica.",
-    "pp": "Propone reducir el tamaño del sector empresarial público y critica la influencia del Gobierno en empresas del IBEX 35.",
+    "pp": "Su programa de 2026 propone vender las participaciones públicas que no respondan a un interés público o estratégico acreditado.",
     "fa": "Quiere reforzar el sector público empresarial y convertir la SEPI en una agencia industrial pública.",
     "pod": "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones.",
     "erc": "Estimación: sin postura conocida de ERC sobre vender participaciones públicas.",
@@ -1569,10 +1581,10 @@
      "2026-07-28"
     ],
     "pp": [
-     "https://www.newtral.es/pp-propuesta-congreso/20260421/",
-     "Newtral, toma en consideración de la ley de vivienda del PP, 21/04/2026",
-     "parlamento",
-     "2026-04-21"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=42",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 42",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
@@ -1629,10 +1641,10 @@
      "2026-10-02"
     ],
     "bng": [
-     "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
-     "Público, votación en el Congreso del 28/04/2026",
-     "parlamento",
-     "2026-04-28"
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+     "Programa electoral del BNG de 2026, p. 12",
+     "programa",
+     "2026-11"
     ],
     "ccpc": [
      "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
@@ -1688,7 +1700,7 @@
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
     "upn": "Votó en contra de los dos decretos de vivienda de octubre de 2026, que congelaban o limitaban las subidas del alquiler.",
-    "bng": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
+    "bng": "Su programa de 2026 propone topar por ley los precios del alquiler.",
     "ccpc": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "comp": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
     "adel": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
@@ -1696,7 +1708,8 @@
     "pcte": "Propone una limitación real y efectiva de los alquileres, en detrimento de la ganancia de los propietarios.",
     "falange": "Propone la fijación de un precio máximo de alquiler de viviendas.",
     "ie": "Propone eliminar las políticas de control de alquiler por ineficaces y por haber reducido la oferta.",
-    "ph": "Propone alquiler social con renta máxima del 30% de los ingresos como forma de regular unos alquileres que juzga abusivos."
+    "ph": "Propone alquiler social con renta máxima del 30% de los ingresos como forma de regular unos alquileres que juzga abusivos.",
+    "pp": "Su programa de 2026 deroga la Ley de Vivienda y elimina las zonas tensionadas y el índice de precios del alquiler."
    }
   },
   {
@@ -1763,10 +1776,10 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/26-10-21-UNA-NUEVA-GENERACION-DE-PROPIETARIOS.pdf",
-     "PP, argumentario «Hablemos claro: Una nueva generación de propietarios» (octubre de 2026)",
-     "declaracion",
-     "2026-10-22"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=41",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 41",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40",
@@ -1793,10 +1806,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+     "Programa electoral de ERC de 2026, p. 19",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "junts": [
      "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
@@ -1817,10 +1830,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
-     "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
-     "parlamento",
-     "2026-10-02"
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+     "Programa electoral del BNG de 2026, p. 12",
+     "programa",
+     "2026-11"
     ],
     "ccpc": [
      "https://rtvc.es/cc-apoyara-el-primer-decreto-de-vivienda-y-rechazara-el-segundo-01-octubre-2026/",
@@ -1885,16 +1898,16 @@
    },
    "why": {
     "psoe": "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
-    "pp": "El PP apuesta por aumentar la oferta (un millón de viviendas, suelo y licencias rápidas) y rechaza la regulación de precios de la ley de vivienda.",
+    "pp": "Su programa de 2026 prioriza construir un millón de viviendas con más suelo, una nueva Ley del Suelo y licencias en tres meses.",
     "vox": "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
     "salf": "En su programa para Castilla y León (2026) plantea simplificar licencias y liberar suelo para construir más vivienda en lugar de regular precios.",
-    "erc": "La ponencia prioriza el control de alquileres y el parque protegido, sin descartar más oferta.",
+    "erc": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
     "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
     "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
     "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
-    "bng": "Votó a favor del primer decreto de vivienda, que limitaba las subidas del alquiler y prorrogaba contratos, derogado por el Congreso.",
+    "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
     "ccpc": "Pidió más oferta de vivienda y anunció su rechazo al segundo decreto de vivienda de octubre de 2026 por reducir, según dijo, la oferta de alquiler.",
     "adel": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
     "cha": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
@@ -2133,7 +2146,6 @@
     "pnv",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -2177,10 +2189,10 @@
      "2026-02-02"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+     "Programa electoral de ERC de 2026, p. 19",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "junts": [
      "https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/",
@@ -2223,6 +2235,12 @@
      "Programa de PACMA para las generales de 2023, p. 65",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+     "Programa electoral del BNG de 2026, p. 12",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2230,14 +2248,15 @@
     "vox": "Vox votó contra el decreto que prorrogaba la suspensión de desahucios de familias vulnerables.",
     "fa": "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
     "pod": "Apoyó el decreto que prohibía desahuciar a personas vulnerables y criticó su caída en el Congreso.",
-    "erc": "La ponencia pide mantener la suspensión estatal de desahucios de hogares vulnerables.",
+    "erc": "Su programa de 2026 propone regular los arrendamientos para evitar desahucios de personas vulnerables sin vivienda alternativa.",
     "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
     "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
     "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
     "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
     "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional.",
     "ph": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados.",
-    "pacma": "Estimación: el programa critica ampliar los plazos de suspensión de lanzamientos porque carga sobre propietarios particulares y reduce la oferta de alquiler."
+    "pacma": "Estimación: el programa critica ampliar los plazos de suspensión de lanzamientos porque carga sobre propietarios particulares y reduce la oferta de alquiler.",
+    "bng": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional."
    }
   },
   {
@@ -2440,7 +2459,6 @@
     "pnv",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -2476,16 +2494,22 @@
      "2025-05-28"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+     "Programa electoral de ERC de 2026, p. 19",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "bildu": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion256/20230427/Votacion173/VOT_20230427151734.json",
      "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley por el derecho a la vivienda, 27/04/2023",
      "parlamento",
      "2023-04-27"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=13",
+     "Programa electoral del BNG de 2026, p. 13",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2493,8 +2517,9 @@
     "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
     "fa": "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
-    "erc": "La ponencia defiende el recargo del IBI a las viviendas desocupadas.",
-    "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años."
+    "erc": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
+    "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
+    "bng": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas."
    }
   },
   {
@@ -2582,10 +2607,10 @@
      "2024-06-16"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
+     "Programa electoral de ERC de 2026, p. 19",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "upc": [
      "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40",
@@ -2612,7 +2637,7 @@
     "vox": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda.",
     "fa": "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto.",
     "pod": "Propuso en el Congreso una reforma legal para limitar la compra de viviendas por no residentes.",
-    "erc": "La ponencia propone fiscalidad disuasoria para compras de vivienda por no residentes.",
+    "erc": "Su programa de 2026 sube el IVA y el ITP en compras no destinadas a vivienda habitual y acaba con la ley Beckham.",
     "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
     "drago": "Drago Canarias propone limitar la venta de viviendas a extranjeros, una medida más restrictiva que un impuesto.",
     "mes": "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda."
@@ -2724,10 +2749,10 @@
      "2019-04"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=15",
-     "Programa electoral del BNG para las generales de 2023, p. 15",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+     "Programa electoral del BNG de 2026, p. 12",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "cha": [
      "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=38",
@@ -2804,7 +2829,7 @@
     "pod": "Su programa europeo de 2024 propone consolidar un gran parque público de vivienda y alquiler social.",
     "erc": "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada.",
     "comp": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones.",
-    "bng": "El BNG defiende ampliar el parque público de vivienda, gestionado desde Galicia, con suelo y viviendas estatales.",
+    "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a crear un parque público de alquiler permanente.",
     "cha": "CHA defiende ampliar el parque público de vivienda en alquiler.",
     "adel": "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler.",
     "upc": "El programa de Sumar, socio de UPC, propone crear un parque público de dos millones de viviendas sociales en alquiler.",
@@ -2984,10 +3009,10 @@
      "2024-07"
     ],
     "pp": [
-     "https://valenciaplaza.com/presidentes-pp-firman-manifiesto-posicion-comun-contra-cupo-catalan",
-     "Valencia Plaza (EFE), manifiesto de los presidentes autonómicos del PP, 26/08/2024",
-     "declaracion",
-     "2024-08-26"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
@@ -3002,10 +3027,10 @@
      "2025-07-03"
     ],
     "erc": [
-     "https://www.elindependiente.com/espana/2025/09/03/erc-ultima-el-registro-de-su-propuesta-de-financiacion-para-cataluna-para-presionar-al-gobierno/",
-     "El Independiente, 03/09/2025",
-     "declaracion",
-     "2025-09-03"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=12",
+     "Programa electoral de ERC de 2026, p. 12",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html",
@@ -3014,10 +3039,10 @@
      "2026-01-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=11",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=8",
+     "Programa electoral del BNG de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://www.que.es/2024/08/26/otegi-insta-al-respaldo-gubernamental/",
@@ -3040,10 +3065,12 @@
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
-    "bng": "Su programa pide un concierto económico para que Galicia recaude todos sus impuestos, con bilateralidad con el Estado.",
+    "bng": "Su programa de 2026 propone un modelo de financiación basado en el concierto económico, con una Hacienda Galega.",
     "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación.",
     "fo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones.",
-    "falange": "Defiende la unidad nacional y disolver las autonomías, retirándoles antes todas sus competencias."
+    "falange": "Defiende la unidad nacional y disolver las autonomías, retirándoles antes todas sus competencias.",
+    "pp": "Su programa de 2026 descarta que ninguna comunidad salga del sistema común y nuevos regímenes singulares negociados bilateralmente.",
+    "erc": "Su programa de 2026 reclama un finançament singular basado en los ingresos y avanzar hacia un concierto económico solidario."
    }
   },
   {
@@ -3081,7 +3108,6 @@
     "soria": 2
    },
    "est": [
-    "pp",
     "vox",
     "pod",
     "salf",
@@ -3118,6 +3144,12 @@
      "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 7",
      "programa",
      "2023-05"
+    ],
+    "pp": [
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3126,7 +3158,8 @@
     "fa": "Registró una iniciativa para corregir la infrafinanciación de las comunidades por debajo de la media.",
     "pod": "Estimación: sin postura nacional publicada sobre el reparto de la financiación autonómica.",
     "erc": "Estimación: ERC pide ordinalidad y un modelo singular para Cataluña, no criterios por habitante.",
-    "comp": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde."
+    "comp": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
+    "pp": "Su programa de 2026 propone un fondo de nivelación transitorio y un sistema que amplíe los recursos de todas las comunidades autónomas."
    }
   },
   {
@@ -3188,10 +3221,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=50",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32",
@@ -3206,10 +3239,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=11",
+     "Programa electoral de ERC de 2026, p. 11",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113",
@@ -3230,10 +3263,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=32",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=34",
+     "Programa electoral del BNG de 2026, p. 34",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=11",
@@ -3298,14 +3331,14 @@
    },
    "why": {
     "psoe": "Su programa de 2023 propone llevar a la Constitución la descentralización ya alcanzada, no devolver competencias al Estado.",
-    "pp": "El PP propone reformar la LOMLOE y una EBAU común, pero respetando las competencias educativas de las comunidades.",
+    "pp": "Su programa de 2026 defiende el autogobierno autonómico y propone reforzar la Alta Inspección del Estado y una PAU común.",
     "vox": "Vox propone devolver al Estado las competencias de educación.",
     "fa": "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación.",
-    "erc": "El programa defiende las competencias educativas autonómicas frente a la recentralización.",
+    "erc": "Su programa de 2026 exige las competencias exclusivas en educación y la plena soberanía de Cataluña sobre su sistema educativo.",
     "junts": "El programa defiende el modelo educativo propio de Cataluña y pide traspasar a la Generalitat competencias y fondos en materia educativa.",
     "pnv": "El programa pide respetar el reparto competencial en educación y seguir desarrollando un modelo educativo propio en Euskadi.",
     "bildu": "El programa exige blindar los modelos educativos vascos y rechaza cualquier intromisión o cambio impuesto en ellos.",
-    "bng": "El programa pide transferir a Galicia todas las competencias en educación para diseñar un modelo educativo propio.",
+    "bng": "Su programa de 2026 pide la transferencia plena de las competencias de enseñanza a Galicia y una ley gallega de educación.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
     "comp": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
     "upn": "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales.",
@@ -3402,10 +3435,10 @@
      "2023-06-24"
     ],
     "pp": [
-     "https://www.periodicodeibiza.es/pitiusas/ibiza/2013/11/11/112215/rechazara-propuesta-para-creacion-estado-federal.html",
-     "Periódico de Ibiza (Efe), el PP en el Parlament balear ante una propuesta federal",
-     "parlamento",
-     "2013-11-11"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=15",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 15",
+     "programa",
+     "2026-11"
     ],
     "cha": [
      "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10",
@@ -3432,7 +3465,7 @@
     "fa": "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
     "erc": "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
-    "pp": "Ha rechazado propuestas para reformar la Constitución hacia un Estado federal y critica el modelo plurinacional o confederal.",
+    "pp": "Su programa de 2026 afirma defender el Estado de las Autonomías y el autogobierno de las comunidades en el marco de la Constitución.",
     "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
     "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
     "falange": "Rechaza el régimen autonómico de 1978 y propone disolver las comunidades; no plantea un Estado federal."
@@ -3507,10 +3540,10 @@
      "2023-11-09"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/23.07.19_titulares_feijoo_en_arv.pdf",
-     "PP, titulares de Feijóo en «Al Rojo Vivo» (19/07/2023)",
-     "declaracion",
-     "2023-07-19"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=15",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 15",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16",
@@ -3531,10 +3564,10 @@
      "2023-06-24"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+     "Programa electoral de ERC de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=11",
@@ -3575,10 +3608,10 @@
    },
    "why": {
     "psoe": "Rechaza el referéndum de autodeterminación: frente a la propuesta de Junts, ofrece desarrollar el Estatut de 2006.",
-    "pp": "El PP sostiene que un referéndum de autodeterminación no cabe en la Constitución y propone tipificar como delito convocarlo.",
+    "pp": "Su programa de 2026 recupera en el Código Penal los delitos de sedición y de convocatoria de referéndum ilegal.",
     "vox": "Vox propone reintroducir el delito de referéndum ilegal e ilegalizar a los partidos separatistas.",
     "pod": "Belarra afirma que Podemos siempre ha defendido garantizar el derecho a decidir.",
-    "erc": "El programa se compromete a negociar un referéndum de autodeterminación.",
+    "erc": "Su programa de 2026 propone negociar un referéndum de autodeterminación en Cataluña con acompañamiento internacional.",
     "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
     "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
@@ -3612,7 +3645,7 @@
     "pnv": 1,
     "bildu": 3,
     "upn": 1,
-    "bng": 4,
+    "bng": 5,
     "ccpc": 1,
     "comp": 4,
     "cha": 3,
@@ -3634,7 +3667,6 @@
     "pnv",
     "bildu",
     "upn",
-    "bng",
     "ccpc",
     "comp",
     "cha",
@@ -3646,10 +3678,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
@@ -3692,10 +3724,16 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15",
      "programa",
      "2025-12"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=42",
+     "Programa electoral del BNG de 2026, p. 42",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
-    "pp": "Propone potenciar las diputaciones provinciales como herramienta al servicio de los pequeños municipios.",
+    "pp": "Su programa de 2026 propone aumentar el apoyo de las diputaciones a los pequeños municipios, en lugar de suprimirlas.",
     "vox": "Estimación: no consta una postura de Vox sobre las diputaciones; su programa propone un Estado unitario.",
     "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre suprimir las diputaciones provinciales.",
     "erc": "El programa propone suprimir las diputaciones y traspasar sus recursos.",
@@ -3703,7 +3741,8 @@
     "pod": "Podemos defiende suprimir las diputaciones y traspasar sus competencias a comunidades y ayuntamientos.",
     "existe": "Plantea la elección directa de los representantes en las diputaciones provinciales, lo que implica mantenerlas.",
     "falange": "Defiende conservar la provincia y el municipio como base y disolver las autonomías, no las diputaciones.",
-    "ie": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto."
+    "ie": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto.",
+    "bng": "Su programa de 2026 suprime las diputaciones provinciales y traspasa sus funciones a Galicia y a los ayuntamientos."
    }
   },
   {
@@ -3738,7 +3777,6 @@
     "fo": 4
    },
    "est": [
-    "pp",
     "fa",
     "pod",
     "salf",
@@ -3777,6 +3815,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
+    ],
+    "pp": [
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3785,7 +3829,8 @@
     "pod": "Estimación: contraria a fusiones obligatorias que alejen servicios de la España rural.",
     "erc": "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria.",
     "vox": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales.",
-    "fo": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria."
+    "fo": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria.",
+    "pp": "Su programa de 2026 propone un Estatuto de los Pequeños Municipios para facilitar que compartan personal y servicios."
    }
   },
   {
@@ -4084,10 +4129,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=29",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
+     "Programa electoral del BNG de 2026, p. 32",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=42",
@@ -4130,7 +4175,7 @@
     "psoe": "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
     "pp": "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional.",
     "erc": "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias.",
-    "bng": "El programa propone el método proporcional directo (cuota Hare), Galicia como circunscripción única y eliminar el umbral mínimo del 5 %.",
+    "bng": "Su programa de 2026 propone un sistema proporcional puro (cuota Hare), Galicia como circunscripción y suprimir el mínimo del 5 %.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía un sistema electoral más proporcional.",
     "pod": "Podemos defiende reformar la ley electoral para hacerla más proporcional, sustituyendo D'Hondt por Sainte-Laguë.",
     "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
@@ -4422,10 +4467,10 @@
      "2024-06-11"
     ],
     "pp": [
-     "https://es.ara.cat/politica/congreso-aprueba-amnistia-decada-independentismo_1_5045075.html",
-     "Ara, votación final de la Ley de amnistía en el Congreso del 30/05/2024",
-     "parlamento",
-     "2024-05-30"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=25",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 25",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
@@ -4508,7 +4553,7 @@
    },
    "why": {
     "psoe": "Impulsó la Ley de amnistía de 2024 para la «normalización» en Cataluña y defiende que las Cortes pueden aprobarla.",
-    "pp": "El PP votó contra la Ley de amnistía y la recurrió ante el Tribunal Constitucional; la considera contraria a la igualdad ante la ley.",
+    "pp": "Su programa de 2026 deroga la Ley de Amnistía y prohíbe usar el derecho de gracia como moneda de cambio para gobernar.",
     "vox": "Vox votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso.",
     "fa": "Votó a favor de la ley de amnistía de 2024 aprobada por las Cortes.",
     "pod": "Sus diputados votaron a favor de la ley de amnistía en su aprobación definitiva.",
@@ -4567,7 +4612,6 @@
     "pnv",
     "bildu",
     "upn",
-    "bng",
     "upc",
     "drago",
     "comp",
@@ -4591,13 +4635,20 @@
      "Programa de PACMA para las europeas de 2024, apartado sobre transparencia del BCE y puertas giratorias",
      "programa",
      "2024-05"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=41",
+     "Programa electoral del BNG de 2026, p. 41",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "vox": "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
     "erc": "El programa califica las puertas giratorias de corrupción institucionalizada.",
     "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
-    "pacma": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años."
+    "pacma": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años.",
+    "bng": "Su programa de 2026 propone regular estrictamente las puertas giratorias y las incompatibilidades."
    }
   },
   {
@@ -4732,10 +4783,10 @@
      "2026-08-13"
     ],
     "pp": [
-     "https://www.moncloa.com/2022/04/06/feijoo-defiende-monarquia-1351763/",
-     "Moncloa.com, declaraciones de Feijóo, 06/04/2022",
-     "declaracion",
-     "2022-04-06"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=8",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 8",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.noticiasdenavarra.com/politica/2024/06/16/miles-personas-piden-abolir-monarquia-8365299.html",
@@ -4744,10 +4795,10 @@
      "2024-06-16"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+     "Programa electoral de ERC de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "comp": [
      "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253",
@@ -4794,11 +4845,11 @@
    },
    "why": {
     "psoe": "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
-    "pp": "Feijóo se define como «absoluto defensor» de la monarquía parlamentaria, que considera el gran pacto de la Transición.",
+    "pp": "Su programa de 2026 sitúa la monarquía parlamentaria entre los pilares de la obra común de la democracia española.",
     "vox": "Estimación: Vox defiende la Corona y no se le conoce apoyo a una consulta sobre la forma de Estado.",
     "fa": "Estimación: sus partidos (IU, Comuns) defienden la república, pero no consta una petición reciente de referéndum.",
     "pod": "Belarra encabezó una marcha por la república y dijo que no habrá democracia plena sin ella.",
-    "erc": "El programa apoya convocar un referéndum sobre monarquía o república.",
+    "erc": "Su programa de 2026 propone fiscalizar al rey y a la Casa Real y poner fin a una institución contraria al principio democrático.",
     "pnv": "Estimación: no consta ninguna postura del PNV sobre un referéndum entre monarquía y república, así que se deja en el punto medio.",
     "comp": "Su programa propone una consulta para que la ciudadanía elija entre monarquía y república.",
     "bildu": "EH Bildu ha pedido en el Congreso que se celebre un referéndum sobre la Jefatura del Estado.",
@@ -4854,10 +4905,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=73",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=29",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 29",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127",
@@ -4873,7 +4924,7 @@
     ]
    },
    "why": {
-    "pp": "Se compromete a limitar el uso del real decreto-ley y a justificar siempre su urgencia.",
+    "pp": "Su programa de 2026 reserva el decreto-ley a situaciones extraordinarias y urgentes y limita la urgencia y la lectura única.",
     "vox": "El programa de Vox critica el abuso del real decreto-ley por los últimos gobiernos y promete corregirlo.",
     "fa": "Estimación: como socio de Gobierno ha apoyado decretos-ley y no consta propuesta suya para limitarlos.",
     "pod": "Estimación: sin postura publicada sobre limitar los decretos-ley.",
@@ -5073,10 +5124,10 @@
      "2026-02-12"
     ],
     "erc": [
-     "https://www.diarimes.com/es/actualidad/260212/congreso-aprueba-ley-multirreincidencia-votos-psoe-pp-vox_208972.html",
-     "Diari Més, votación en el Congreso del 12/02/2026",
-     "parlamento",
-     "2026-02-12"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=43",
+     "Programa electoral de ERC de 2026, p. 43",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://es.ara.cat/politica/congreso-aprueba-jueves-ley-multirreincidencia-junts_1_5646210.html",
@@ -5113,7 +5164,8 @@
     "pnv": "Votó a favor de la ley de multirreincidencia de Junts.",
     "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
     "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026.",
-    "falange": "Propone aumentar las penas por delitos comunes e incrementarlas por reincidencia."
+    "falange": "Propone aumentar las penas por delitos comunes e incrementarlas por reincidencia.",
+    "erc": "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas."
    }
   },
   {
@@ -5165,10 +5217,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=81",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
@@ -5213,10 +5265,10 @@
      "2026-03-17"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+     "Programa electoral del BNG de 2026, p. 30",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
@@ -5250,7 +5302,7 @@
     ]
    },
    "why": {
-    "pp": "El PP introdujo la prisión permanente revisable en 2015 y propone ampliarla, no derogarla.",
+    "pp": "Su programa de 2026 amplía la prisión permanente revisable a quien oculte el cadáver y a los depredadores sexuales.",
     "vox": "Vox propone ampliar la prisión permanente a los violadores, no derogarla.",
     "fa": "Estimación: se opone a la prisión permanente revisable; no consta una iniciativa propia reciente para derogarla.",
     "pod": "Unidas Podemos votó contra ampliar la prisión permanente revisable, fiel a su rechazo tradicional a esta pena.",
@@ -5259,7 +5311,7 @@
     "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
     "bildu": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
-    "bng": "El programa propone derogar la prisión permanente revisable por considerarla una forma encubierta de cadena perpetua.",
+    "bng": "Su programa de 2026 deroga la prisión permanente revisable.",
     "ccpc": "Votó a favor de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "comp": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upc": "Incluye en su programa eliminar la prisión permanente revisable.",
@@ -5321,10 +5373,10 @@
      "2024-10-03"
     ],
     "pp": [
-     "https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/",
-     "Onda Vasca, enmienda a la totalidad del PP en el Congreso, 12/12/2024",
-     "parlamento",
-     "2024-12-12"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=16",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 16",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/espana/politica/2024-10-29/reforma-ley-mordaza-congreso/",
@@ -5345,10 +5397,10 @@
      "2024-07-16"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+     "Programa electoral de ERC de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=24",
@@ -5375,10 +5427,10 @@
      "2024-10-29"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=27",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+     "Programa electoral del BNG de 2026, p. 30",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
@@ -5413,16 +5465,16 @@
    },
    "why": {
     "psoe": "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
-    "pp": "El PP aprobó la ley en 2015, votó contra su reforma y defiende el texto vigente como protección de las fuerzas de seguridad.",
+    "pp": "Su programa de 2026 endurece la respuesta a los disturbios violentos y refuerza la actuación policial preventiva.",
     "vox": "Vox votó incluso contra tramitar la reforma de la Ley de Seguridad Ciudadana, que no la derogaba.",
     "fa": "Defiende derogar la «ley mordaza»; su programa promete derogar sus aspectos que limitan reunión y expresión.",
     "pod": "Exige una derogación ambiciosa de la ley mordaza, incluidas las devoluciones en caliente y las pelotas de goma.",
-    "erc": "El programa propone derogar la «ley mordaza».",
+    "erc": "Su programa de 2026 deroga la llamada ley mordaza (Ley Orgánica 4/2015 de seguridad ciudadana).",
     "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
     "pnv": "Se opone a la ley mordaza y promovió su reforma.",
     "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
-    "bng": "Su programa propone derogar íntegramente la ley mordaza.",
+    "bng": "Su programa de 2026 deroga íntegramente la ley mordaza.",
     "ccpc": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
     "comp": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
     "upc": "Propone reformar y derogar aspectos de la ley mordaza y modificarla, pero en otro pasaje habla de derogarla solo parcialmente.",
@@ -5490,10 +5542,10 @@
      "2025-11-18"
     ],
     "pp": [
-     "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-152.PDF",
-     "Diario de Sesiones del Congreso, ley de Vox sobre la edad penal, 18/11/2025",
-     "parlamento",
-     "2025-11-18"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
@@ -5522,7 +5574,7 @@
    },
    "why": {
     "psoe": "El PSOE rechazó en 2025 la proposición de Vox para rebajar la edad penal de 14 a 12 años.",
-    "pp": "Se abstuvo ante la ley que rebajaba la edad penal a 12 años y pidió escuchar a expertos antes de reformar.",
+    "pp": "Su programa de 2026 reforma la Ley del Menor para alargar el internamiento en delitos graves con violencia, armas o bandas.",
     "vox": "El programa de Vox promete bajar la edad penal y endurecer la ley del menor para delitos sexuales graves.",
     "fa": "Estimación: no consta una votación o declaración verificada de Sumar sobre rebajar la edad penal de 14 años.",
     "pod": "Votó en contra de la proposición de Vox para rebajar la edad penal de los menores.",
@@ -5555,7 +5607,7 @@
     "pnv": 4,
     "bildu": 5,
     "upn": 2,
-    "bng": 5,
+    "bng": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -5576,7 +5628,6 @@
     "pnv",
     "bildu",
     "upn",
-    "bng",
     "upc",
     "drago",
     "comp",
@@ -5596,6 +5647,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 26",
      "programa",
      "2025-12"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=77",
+     "Programa electoral del BNG de 2026, p. 77",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5605,7 +5662,8 @@
     "fa": "Estimación: su programa solo limita el reconocimiento facial en el teletrabajo; no consta postura sobre uso policial.",
     "pod": "Estimación: favorable a prohibirlo por su defensa del control democrático de la policía.",
     "erc": "Estimación: ERC prioriza libertades civiles frente a la vigilancia masiva.",
-    "ie": "Rechaza el control social mediante el euro digital, el control biométrico y los reconocimientos faciales."
+    "ie": "Rechaza el control social mediante el euro digital, el control biométrico y los reconocimientos faciales.",
+    "bng": "Su programa de 2026 fija límites estrictos al reconocimiento facial y a la vigilancia biométrica masiva en espacios públicos."
    }
   },
   {
@@ -5687,10 +5745,10 @@
      "2021-06-16"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+     "Programa electoral de ERC de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
@@ -5705,10 +5763,10 @@
      "2022-09-29"
     ],
     "bng": [
-     "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
-     "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
-     "parlamento",
-     "2023-12-20"
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+     "Programa electoral del BNG de 2026, p. 30",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
@@ -5729,10 +5787,10 @@
     "vox": "Vox presentó una enmienda a la totalidad contra la ley de ERC y EH Bildu para despenalizar las injurias a la Corona.",
     "fa": "Acordó con el PSOE reactivar en el Congreso su proposición de ley para eliminar del Código Penal las injurias a la Corona.",
     "pod": "El Congreso admitió a trámite la ley de Unidas Podemos para derogar los delitos de injurias a la Corona.",
-    "erc": "El programa propone despenalizar las injurias a la Corona.",
+    "erc": "Su programa de 2026 suprime los delitos de ofensa a los sentimientos religiosos y de injurias a la Corona.",
     "pnv": "Critica que el Código Penal castigue las opiniones contra la Corona y las instituciones del Estado.",
     "bildu": "Promovió con ERC la proposición de ley para despenalizar las injurias a la Corona.",
-    "bng": "El BNG votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
+    "bng": "Su programa de 2026 plantea suprimir delitos de opinión como las injurias a la Corona.",
     "junts": "Junts votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
     "upn": "UPN votó en contra de tramitar la ley que despenaliza las injurias a la Corona."
    }
@@ -5892,10 +5950,10 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=62",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10",
@@ -5916,10 +5974,10 @@
      "2022-11-02"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=24",
+     "Programa electoral de ERC de 2026, p. 24",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
@@ -5984,11 +6042,11 @@
    },
    "why": {
     "psoe": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
-    "pp": "El PP reivindica el Pacto de Estado contra la violencia de género de 2017 y promete cumplirlo «sin pasos atrás».",
+    "pp": "Su programa de 2026 refuerza VioGen y los medios contra la violencia de género y rinde cuentas del Pacto de Estado.",
     "vox": "Vox propone derogar la Ley Integral de Violencia de Género y aprobar una ley para todas las víctimas de violencia doméstica.",
     "fa": "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos.",
     "pod": "Irene Montero criticó a quienes sostienen que la violencia no tiene género, frente a la ley específica.",
-    "erc": "El programa refuerza la jurisdicción específica de violencia machista.",
+    "erc": "Su programa de 2026 reforma la Ley Orgánica 1/2004 para reforzar la respuesta a todas las formas de violencia machista.",
     "pnv": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
     "bildu": "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
     "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
@@ -6263,10 +6321,10 @@
      "2026-03-18"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=22",
+     "Programa electoral del BNG de 2026, p. 22",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "comp": [
      "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
@@ -6322,7 +6380,7 @@
     "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
     "bildu": "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
     "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
-    "bng": "El programa propone reformas para garantizar los derechos de los migrantes y facilitar los procesos de regularización administrativa.",
+    "bng": "Su programa de 2026 propone promover la regularización administrativa de los inmigrantes para acabar con su explotación.",
     "comp": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España.",
     "upc": "Sumar y Podemos, integrantes de la coalición, apoyaron tramitar la regularización extraordinaria de migrantes.",
     "adel": "Adelante Andalucía pide facilitar la regularización de las personas migrantes en situación irregular.",
@@ -6418,10 +6476,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+     "Programa electoral de ERC de 2026, p. 17",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
@@ -6496,7 +6554,7 @@
     "fa": "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
     "pod": "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
     "salf": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
-    "erc": "El programa propone regularizar a las personas en situación irregular.",
+    "erc": "Su programa de 2026 propone acabar con la externalización de las fronteras y garantizar vías legales y seguras para migrar.",
     "bildu": "El programa exige derogar la Ley de Extranjería y sustituirla por una legislación que garantice los derechos de todas las personas migrantes.",
     "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante.",
     "comp": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España.",
@@ -6570,10 +6628,10 @@
      "2026-05-03"
     ],
     "pp": [
-     "https://www.menorca.info/actualidad/nacional/2026/04/22/2614427/prioridad-nacional-desata-discrepancias-entre-vox-arraigo-espanoles-primero.html",
-     "Menorca.info, abril de 2026",
-     "prensa",
-     "2026-04"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://www.bolsamania.com/noticias/empresas/economia--el-pp-rechaza-en-el-congreso-la-propuesta-de-vox-de-exigir-la-prioridad-nacional-en-ayudas-para-vivienda--22776272.html",
@@ -6654,10 +6712,10 @@
      "2026-05-27"
     ],
     "erc": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
-     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre el principio de prioridad nacional en las prestaciones públicas, 25/06/2026",
-     "parlamento",
-     "2026-06-25"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25",
+     "Programa electoral de ERC de 2026, p. 25",
+     "programa",
+     "2026-11"
     ],
     "fo": [
      "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
@@ -6689,7 +6747,7 @@
     "vox": "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
     "pod": "Votó en contra de la proposición de Vox sobre la prioridad nacional en las prestaciones públicas.",
     "salf": "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
-    "erc": "Estimación: ERC defiende la igualdad de derechos con independencia del origen.",
+    "erc": "Su programa de 2026 pide igualdad de trato y oportunidades con independencia del origen en empleo, vivienda y servicios.",
     "junts": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "pnv": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "bildu": "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
@@ -6703,7 +6761,8 @@
     "fo": "Propone enfocar el acceso a la vivienda pública hacia los españoles autóctonos y cambiar las ayudas, que según el programa priorizan al extranjero.",
     "falange": "Propone que solo los españoles accedan a los servicios del Estado del bienestar: educación, sanidad, ayudas y vivienda.",
     "ph": "Propone el reconocimiento de iguales derechos y oportunidades para todos, también para los inmigrantes.",
-    "pcte": "Estimación: el programa de 2023 pide confrontar los discursos racistas y xenófobos y la unidad obrera sin distinción de origen; no cita ayudas."
+    "pcte": "Estimación: el programa de 2023 pide confrontar los discursos racistas y xenófobos y la unidad obrera sin distinción de origen; no cita ayudas.",
+    "pp": "Su programa de 2026 da prioridad en ayudas a quien tiene arraigo real (empadronamiento, cotización), sin basarla solo en la nacionalidad."
    }
   },
   {
@@ -6776,10 +6835,10 @@
      "2024-11-19"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=18",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://forbes.es/economia/841921/vox-culpa-a-la-inmigracion-del-estancamiento-de-los-salarios-y-pide-cesar-la-llegada-masiva-de-extranjeros/",
@@ -6794,10 +6853,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+     "Programa electoral de ERC de 2026, p. 17",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=30",
@@ -6820,10 +6879,10 @@
    },
    "why": {
     "psoe": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
-    "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos.",
+    "pp": "Su programa de 2026 propone visados por puntos, cupos anuales y contratación en origen en los sectores donde faltan trabajadores.",
     "vox": "Una proposición no de ley de Vox pide frenar la llegada de extranjeros y cubrir los empleos vacantes con trabajadores españoles.",
     "fa": "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
-    "erc": "El programa propone sustituir la ley de extranjería y abrir vías legales y seguras.",
+    "erc": "Su programa de 2026 propone vías legales y seguras para migrar y una política migratoria centrada en los derechos humanos.",
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
     "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes."
@@ -6996,7 +7055,7 @@
     "pod": 5,
     "salf": 3,
     "d21": 2,
-    "erc": 4,
+    "erc": 5,
     "junts": 3,
     "pnv": 3,
     "bildu": 4,
@@ -7052,10 +7111,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
+     "Programa electoral de ERC de 2026, p. 21",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://diariodeavisos.elespanol.com/2019/04/podemos-propone-una-ayuda-de-entre-1-200e-y-2-000e-por-hijo-a-cargo/",
@@ -7075,7 +7134,7 @@
     "pp": "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
     "vox": "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
-    "erc": "El programa propone una prestación universal por crianza de hijos.",
+    "erc": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
     "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza.",
     "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años."
    }
@@ -7123,10 +7182,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=32",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=58",
@@ -7155,7 +7214,7 @@
    },
    "why": {
     "psoe": "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
-    "pp": "El PP propone una fiscalidad específica y bonificaciones para las zonas rurales despobladas, además de menores costes laborales en Soria, Cuenca y Teruel.",
+    "pp": "Su programa de 2026 plantea incentivos económicos en zonas en declive demográfico y bajar impuestos a quien vive o invierte en el medio rural.",
     "fa": "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos.",
     "pod": "Estimación: sin postura nacional reciente sobre una fiscalidad rural diferenciada.",
     "existe": "Teruel Existe propone una fiscalidad más favorable en las zonas despobladas para fijar población.",
@@ -7203,7 +7262,6 @@
     "vox",
     "salf",
     "d21",
-    "erc",
     "junts",
     "pnv",
     "upn",
@@ -7249,10 +7307,10 @@
      "2022-11-23"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=25",
-     "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 25",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=35",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 35",
      "programa",
-     "2025-07"
+     "2026-11"
     ],
     "pcte": [
      "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
@@ -7265,16 +7323,22 @@
      "Programa electoral del Partido Humanista de 2023, p. 17",
      "programa",
      "2023-07"
+    ],
+    "erc": [
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+     "Programa electoral de ERC de 2026, p. 41",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "psoe": "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios.",
     "fa": "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
-    "erc": "Estimación: ERC pide reformar la financiación de la dependencia, sin hablar de impuestos.",
+    "erc": "Su programa de 2026 exige garantizar la financiación de la Ley de Dependencia, con 2.018 millones extra en 2026 y 7.200 en 2027.",
     "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
     "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
-    "pp": "Quiere una dependencia «correctamente financiada», con el 50 % a cargo del Estado y ayuda a domicilio, sin plantearla como servicio universal.",
+    "pp": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
     "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
     "ph": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales."
    }
@@ -7444,10 +7508,10 @@
      "2026-08"
     ],
     "pp": [
-     "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-     "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=54",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 54",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
@@ -7474,10 +7538,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
-     "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025",
-     "parlamento",
-     "2025-11-13"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=31",
+     "Programa electoral de ERC de 2026, p. 31",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
@@ -7564,7 +7628,9 @@
     "cha": "Propone abandonar progresivamente la energía nuclear y cerrar de inmediato las centrales nucleares peligrosas y obsoletas.",
     "fo": "Propone frenar el cierre paulatino de las centrales en plena capacidad y ampliar el parque nuclear, con más inversión.",
     "falange": "Propone anular el plan de cierre de nucleares y potenciar la energía nuclear como fuente principal.",
-    "ie": "Estimación: el contrato incluye «apuesta por la energía nuclear»; no habla de alargar la vida de las centrales actuales."
+    "ie": "Estimación: el contrato incluye «apuesta por la energía nuclear»; no habla de alargar la vida de las centrales actuales.",
+    "pp": "Su programa de 2026 elimina el calendario de cierre de las nucleares y tramita ampliar su vida útil con el visto bueno del CSN.",
+    "erc": "Su programa de 2026 reclama que el Estado contribuya al Fondo de Transición Nuclear de la Generalitat."
    }
   },
   {
@@ -7668,10 +7734,10 @@
      "2024-06-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=102",
-     "Defensa Catalunya! Programa electoral d'ERC a las elecciones generales de 2023, apartado de energía",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=30",
+     "Programa electoral de ERC de 2026, p. 30",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
@@ -7716,7 +7782,7 @@
     "vox": "El programa de Vox propone proteger el suelo agrario y el paisaje frente a los macroproyectos renovables.",
     "fa": "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
     "pod": "Estimación: postura matizada; apoya las renovables con doble uso agrario del suelo, sin frenar la transición.",
-    "erc": "Estimación: ERC apoya las renovables con planificación territorial.",
+    "erc": "Su programa de 2026 condiciona las líneas de muy alta tensión a un informe favorable en biodiversidad y refuerza las renovables.",
     "existe": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
     "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
     "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
@@ -7798,10 +7864,10 @@
      "2025-12-12"
     ],
     "pp": [
-     "https://www.moncloa.com/2024/05/24/montserrat-motores-combustion-2624770/",
-     "Moncloa.com, Dolors Montserrat (cabeza de lista del PP a las europeas), 24/05/2024",
-     "declaracion",
-     "2024-05-24"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50",
@@ -7816,10 +7882,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=29",
+     "Programa electoral de ERC de 2026, p. 29",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24",
@@ -7830,10 +7896,10 @@
    },
    "why": {
     "psoe": "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
-    "pp": "El PP y el PPE piden aplazar o revisar la prohibición de 2035 en nombre de la neutralidad tecnológica y de la industria del automóvil.",
+    "pp": "Su programa de 2026 dice que frenará calendarios climáticos «imposibles» y retirará obligaciones que perjudiquen a la industria.",
     "vox": "Vox pide suspender la prohibición europea de los motores de combustión prevista para 2035.",
     "fa": "Defiende electrificar el parque móvil para que en 2040 no circulen coches de combustión.",
-    "erc": "El programa asume la prohibición de vender motores de combustión y pide infraestructura.",
+    "erc": "Su programa de 2026 amplía el Programa Auto+ para electrificar el parque de vehículos y facilita los puntos de recarga.",
     "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035."
    }
   },
@@ -7943,10 +8009,10 @@
      "2026-04"
     ],
     "erc": [
-     "https://es.ara.cat/politica/elecciones-catalunya/sobra-agua-ebro-trasvasar-barcelona_1_5009807.html",
-     "Ara, ¿Sobra agua en el Ebro para trasvasar a Barcelona?, 25/04/2024",
-     "declaracion",
-     "2024-04-25"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=31",
+     "Programa electoral de ERC de 2026, p. 31",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7954,7 +8020,7 @@
     "pp": "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     "vox": "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
     "fa": "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
-    "erc": "El Ara recoge la postura de ERC contra el trasvase del Ebro: su exconsellera afirma «No haremos trasvases».",
+    "erc": "Su programa de 2026 pide modificar el Plan Hidrológico del Ebro para garantizar los caudales ecológicos y proteger el delta.",
     "upn": "Votó a favor de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "bng": "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "existe": "Teruel Existe rechaza los trasvases, en particular el del Ebro.",
@@ -8168,10 +8234,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=33",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=36",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 36",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120",
@@ -8186,10 +8252,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=40",
+     "Programa electoral de ERC de 2026, p. 40",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=6",
@@ -8218,11 +8284,11 @@
    },
    "why": {
     "psoe": "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
-    "pp": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno.",
+    "pp": "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
     "vox": "El programa de Vox pone el énfasis en la alta velocidad, aunque también menciona las Cercanías.",
     "fa": "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional.",
     "pod": "Estimación: favorable a priorizar Cercanías y trenes regionales.",
-    "erc": "El programa critica la alta velocidad a costa de Rodalies y prioriza las cercanías.",
+    "erc": "Su programa de 2026 exige financiar el Plan de Rodalies 2026-2030 y completar el traspaso de Rodalies a la Generalitat.",
     "bildu": "Pide más inversión en los trenes de Renfe y Feve en Euskadi y el traspaso de Cercanías.",
     "adel": "Propone moratoria a nuevas infraestructuras de AVE, recuperar líneas convencionales e impulsar cercanías y media distancia en localidades de más de 20.000 habitantes.",
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa redirige la inversión ferroviaria de la alta velocidad a Cercanías y al tren convencional."
@@ -8350,10 +8416,10 @@
      "2025-09-02"
     ],
     "pp": [
-     "https://www.moncloa.com/2026/07/14/feijoo-plan-nacional-incendios-3399315/",
-     "Moncloa.com, Feijóo anuncia un plan nacional de prevención de incendios, 14/07/2026",
-     "declaracion",
-     "2026-07-14"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://www.esdiario.com/nacional/260729/194373/fuego-retrata-sanchez-ignoro-medidas-prevencion-vox-llevo-congreso.html",
@@ -8388,7 +8454,7 @@
    },
    "why": {
     "psoe": "Su Gobierno propone impulsar pastoreo, desbroce y aprovechamiento forestal contra los incendios, compatibles con la conservación.",
-    "pp": "Feijóo critica las leyes que dificultan el desbroce y reivindica la ganadería extensiva para prevenir incendios.",
+    "pp": "Su programa de 2026 reforma la Ley de Montes para facilitar la prevención y la ganadería preventiva y gravar menos a quien cuide el monte.",
     "vox": "Una proposición de Vox en el Congreso pide limpieza de montes, desbroce, pastoreo y menos trabas ambientales para prevenir incendios.",
     "fa": "Defiende prevenir incendios reduciendo la biomasa y apoyando la ganadería extensiva, sin plantear rebajar la protección.",
     "pod": "Estimación: contraria a flexibilizar la protección de espacios naturales.",
@@ -8460,10 +8526,10 @@
      "2025-06"
     ],
     "pp": [
-     "https://www.pp.es/storage/2026/04/26.04.27-Discurso-ANF-Jornadas-Apagon.pdf",
-     "Discurso de Feijóo en las jornadas sobre el apagón (PP, 27/04/2026)",
-     "declaracion",
-     "2026-04-27"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=54",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 54",
+     "programa",
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48",
@@ -8546,7 +8612,7 @@
    },
    "why": {
     "psoe": "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
-    "pp": "El PP atribuye el apagón a la falta de generación síncrona y prioriza la nuclear, la hidráulica y el gas, sin renunciar a las renovables.",
+    "pp": "Su programa de 2026 apuesta por la neutralidad tecnológica: nuclear, renovables, almacenamiento y respaldo compiten en igualdad.",
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
     "salf": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
@@ -8623,10 +8689,10 @@
      "2025-06-19"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=45",
-     "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 45",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=21",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 21",
      "programa",
-     "2025-07"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/espana/politica/2025-03-26/abascal-gasto-defensa-ceuta-melilla/",
@@ -8647,10 +8713,10 @@
      "2025-03-20"
     ],
     "erc": [
-     "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
-     "ElNacional.cat, votación en el Congreso del 20/03/2025",
-     "parlamento",
-     "2025-03-20"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+     "Programa electoral de ERC de 2026, p. 16",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.galiciapress.es/articulo/politica/2026-06-11/5915942-congreso-rechaza-mocion-bng-pedia-salir-otan-reducir-gasto-militar-gobierno-dividido",
@@ -8677,10 +8743,10 @@
      "2025-03-26"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=90",
+     "Programa electoral del BNG de 2026, p. 90",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion185/20260611/Votacion026/VOT_20260611145733.json",
@@ -8742,17 +8808,18 @@
     "pnv": "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
     "upn": "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
-    "bng": "El programa defiende salir de la OTAN y critica el aumento del gasto militar.",
+    "bng": "Su programa de 2026 rechaza el aumento del gasto militar y el acatamiento de las directrices de la OTAN y de EE. UU.",
     "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
     "comp": "Votó a favor de la moción que pedía revertir el aumento del gasto militar.",
     "adel": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
     "upc": "Sumar y Podemos, integrantes de UPC, rechazaron el aumento del gasto en defensa planteado por el Gobierno.",
     "cha": "CHA defiende la cultura de la paz, el fin de las misiones militares y retirar fondos públicos a la industria militar.",
     "mes": "MÉS per Mallorca votó a favor de pedir al Gobierno que rechace cualquier aumento del gasto militar.",
-    "pp": "Dice que invertir en defensa es prioridad y que hay que cumplir los compromisos de inversión de la OTAN, sin citar una cifra concreta.",
+    "pp": "Su programa de 2026 propone una ley de programación y financiación de la defensa y cumplir los compromisos con los aliados.",
     "falange": "Propone aumentar el presupuesto de defensa; no fija una cifra concreta sobre el PIB.",
     "ph": "Propone reducir drásticamente el presupuesto militar y el armamentismo, y desarme progresivo y proporcional.",
-    "pcte": "Estimación: el programa de 2023 critica la subida del gasto militar hacia el 2% de la OTAN y pide salir de la OTAN y cerrar las bases extranjeras."
+    "pcte": "Estimación: el programa de 2023 critica la subida del gasto militar hacia el 2% de la OTAN y pide salir de la OTAN y cerrar las bases extranjeras.",
+    "erc": "Su programa de 2026 pide fiscalizar el modelo de defensa y los programas especiales de armamento y evitar el gasto oculto."
    }
   },
   {
@@ -8825,10 +8892,10 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=35",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134",
@@ -8893,7 +8960,7 @@
    },
    "why": {
     "psoe": "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
-    "pp": "Considera que reforzar la integración europea fortalece la soberanía y no la reduce.",
+    "pp": "Su programa de 2026 quiere una Unión Europea con más fuerza política, económica y militar y con compras conjuntas de defensa.",
     "vox": "Vox rechaza cualquier tendencia federalista de la UE y pide devolver protagonismo a los Estados.",
     "fa": "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior.",
     "pod": "Estimación: sin postura reciente publicada sobre ceder más competencias a la UE.",
@@ -9058,10 +9125,10 @@
      "2025-09-24"
     ],
     "pp": [
-     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
-     "RTVC, votación del 8 de octubre de 2025",
-     "parlamento",
-     "2025-10-08"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
@@ -9082,10 +9149,10 @@
      "2025-10-08"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+     "Programa electoral de ERC de 2026, p. 16",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
@@ -9153,7 +9220,7 @@
     "vox": "Vox votó en contra de convalidar el decreto de embargo de armas a Israel.",
     "fa": "Apoyó el embargo de armas a Israel y pidió endurecerlo por considerarlo insuficiente.",
     "pod": "Votó a favor del embargo de armas a Israel, aunque lo calificó de «embargo fake» por quedarse corto.",
-    "erc": "El programa pide detener el comercio de armas con Israel, entre otros países.",
+    "erc": "Su programa de 2026 promueve un embargo completo de armas a Israel.",
     "junts": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "pnv": "Votó a favor del decreto de embargo de armas a Israel.",
     "bildu": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
@@ -9163,7 +9230,8 @@
     "adel": "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS.",
     "upc": "Sumar y Podemos, integrantes de UPC, votaron a favor de convalidar el decreto de embargo de armas a Israel.",
     "comp": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye a la diputada de Compromís.",
-    "cha": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye al diputado de CHA en el grupo Sumar."
+    "cha": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye al diputado de CHA en el grupo Sumar.",
+    "pp": "Su programa de 2026 pide soluciones diplomáticas en Oriente Medio con socios clave, como Israel, y proteger a la población civil de Gaza."
    }
   },
   {
@@ -9239,10 +9307,10 @@
      "2025-11-12"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+     "Programa electoral de ERC de 2026, p. 16",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=11",
@@ -9269,10 +9337,10 @@
      "2019-04"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-     "Programa electoral del BNG para las generales de 2023, p. 67",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=90",
+     "Programa electoral del BNG de 2026, p. 90",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "cha": [
      "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=19",
@@ -9322,12 +9390,12 @@
     "pp": "Impulsó proposiciones que critican el cambio de posición del Gobierno sobre el Sáhara y apoyó otra de Sumar a favor del referéndum.",
     "fa": "Propone revertir el cambio de posición de 2022 sobre el Sáhara Occidental y apoyar la libre determinación.",
     "pod": "Belarra pidió a Sánchez rectificar su apoyo al plan marroquí y defender la autodeterminación saharaui.",
-    "erc": "El programa pide rectificar el apoyo al plan de autonomía marroquí.",
+    "erc": "Su programa de 2026 pide al Gobierno revertir la posición adoptada en 2022 sobre el Sáhara Occidental.",
     "pnv": "Rechaza el giro del Gobierno hacia el plan marroquí y defiende la autodeterminación del pueblo saharaui.",
     "vox": "Rechazó el cambio de postura del Gobierno sobre el Sáhara y anunció que no lo respetaría, aunque se abstuvo en la votación.",
     "ccpc": "En 2024 su presidente, Fernando Clavijo, asumió la posición del Gobierno favorable al plan de autonomía marroquí, que CC había criticado en 2022-2023.",
     "comp": "Su programa defiende la autodeterminación del pueblo saharaui y el fin de la ocupación marroquí.",
-    "bng": "El BNG pide anular el giro del Gobierno sobre el Sáhara y apoyar un referéndum de autodeterminación.",
+    "bng": "Su programa de 2026 pide un referéndum de autodeterminación con garantías para el pueblo saharaui y condena la ocupación marroquí.",
     "cha": "CHA defiende un referéndum de autodeterminación para el pueblo saharaui.",
     "adel": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
     "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
@@ -9398,10 +9466,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=36",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=21",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 21",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=92",
@@ -9440,10 +9508,10 @@
      "2026-04"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-     "Programa electoral del BNG para las generales de 2023, p. 67",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=89",
+     "Programa electoral del BNG de 2026, p. 89",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://orain.eus/es/politica/2026/04/22/el-congreso-rechaza-el-referendum-salir-la-otan-pide-podemos/",
@@ -9496,13 +9564,13 @@
    },
    "why": {
     "psoe": "Su programa de 2023 se compromete a seguir trabajando dentro de la OTAN por la paz y la seguridad.",
-    "pp": "Considera indispensable el vínculo transatlántico y defiende cumplir los compromisos de inversión en la OTAN.",
+    "pp": "Su programa de 2026 propone reforzar los contingentes españoles de la OTAN y respetar los compromisos con los aliados.",
     "vox": "El programa de Vox da por hecha la permanencia en la OTAN y pide que proteja expresamente a Ceuta y Melilla.",
     "fa": "No propone salir de la OTAN, pero sí desplazar progresivamente sus garantías hacia una autonomía estratégica europea.",
     "erc": "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN.",
     "pnv": "Votó contra la moción de Podemos para un referéndum sobre la OTAN y defiende seguir en la Alianza.",
     "bildu": "Considera «un sinsentido» seguir defendiendo la OTAN, aunque no apoyó la moción de Podemos por estar escrita «muy desde Madrid».",
-    "bng": "El BNG defiende la salida de la OTAN y la disolución de la alianza.",
+    "bng": "Su programa de 2026 propone salir de la OTAN y defender la disolución de esa alianza militar.",
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
     "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN.",
@@ -9599,10 +9667,10 @@
      "2022-09-15"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=16",
+     "Programa electoral de ERC de 2026, p. 16",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json",
@@ -9653,7 +9721,7 @@
     "vox": "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
     "fa": "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo.",
     "pod": "Votó en contra de la enmienda de Vox para devolver al Gobierno la ley de cooperación para el desarrollo.",
-    "erc": "El programa pide alcanzar el 0,7 % en ayuda al desarrollo.",
+    "erc": "Su programa de 2026 exige cumplir el compromiso del 0,7 % de ayuda oficial al desarrollo.",
     "bildu": "EH Bildu votó en contra de devolver al Gobierno la ley de cooperación, que fija el objetivo de destinar el 0,7 % de la renta nacional a la ayuda al desarrollo.",
     "comp": "Se compromete a dedicar el 0,7 % de los presupuestos públicos consolidados a cooperación internacional, no a recortarla.",
     "cha": "Exige cumplir la recomendación de destinar el 0,7 % de los presupuestos a cooperación al desarrollo, como primer paso hacia el 1 %.",
@@ -9711,10 +9779,10 @@
      "2026-04-14"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=38",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://www.bolsamania.com/noticias/economia/economia--vox-rechaza-los-aranceles-de-trump-pero-tambien-el-viaje-de-sanchez-a-china-y-la-incoherencia-de-feijoo--19321776.html",
@@ -9731,7 +9799,7 @@
    },
    "why": {
     "psoe": "Sánchez defiende una relación económica más estrecha con China, aunque insiste en corregir el desequilibrio comercial.",
-    "pp": "Describe a China como socio, competidor y rival sistémico y pide actuar con la UE y los aliados de la OTAN.",
+    "pp": "Su programa de 2026 define a China como socio, competidor y rival sistémico y pide proteger a las empresas de la competencia desleal.",
     "vox": "La portavoz Pepa Millán rechazó el viaje de Sánchez a China y pidió cuidar la relación con Estados Unidos.",
     "fa": "Plantea una relación autónoma y crítica con China, evitando la confrontación entre grandes potencias.",
     "pod": "Estimación: sin postura reciente publicada sobre la relación comercial con China.",
@@ -9814,10 +9882,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
+     "Programa electoral de ERC de 2026, p. 17",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "upc": [
      "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
@@ -9885,7 +9953,7 @@
     "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
     "vox": "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
     "fa": "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
-    "erc": "La ponencia critica externalizar fronteras con centros en terceros países.",
+    "erc": "Su programa de 2026 propone poner fin a la externalización de las fronteras europeas.",
     "upc": "El programa de Sumar, socio de UPC, propone acabar con los acuerdos de externalización de fronteras con terceros países.",
     "drago": "Drago Canarias critica el Pacto Europeo de Migración por convertir las fronteras en espacios de procesamiento y contención.",
     "comp": "El programa conjunto con el que concurrió Compromís en 2023 propone acabar con la externalización de fronteras.",
@@ -9956,10 +10024,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://theobjective.com/wp-content/uploads/2023/07/programa-pp-23j.pdf",
-     "Programa electoral del PP para el 23J de 2023 (copia publicada por The Objective)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "vox": [
      "https://elfarodeceuta.es/vox-pregunta-infrafinancion-escuela-concertada/",
@@ -9986,10 +10054,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://www.ultimahora.es/noticias/comunidades/2023/04/27/1925961/cambray-dice-govern-dejara-destinar-millones-concertar-educacion-segregada.html",
-     "Última Hora (Europa Press), conseller de ERC Josep Gonzàlez-Cambray, 27/04/2023",
-     "gobierno",
-     "2023-04-27"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=10",
+     "Programa electoral de ERC de 2026, p. 10",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://naciodigital.cat/politica/pp-vox-i-cs-se-sumen-a-jxcat-en-defensa-de-lescola-concertada.html",
@@ -10004,10 +10072,10 @@
      "2023-11-21"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=33",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=34",
+     "Programa electoral del BNG de 2026, p. 34",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=12",
@@ -10073,7 +10141,7 @@
    "why": {
     "salf": "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
     "bildu": "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
-    "bng": "El programa propone avanzar en la supresión de los conciertos educativos en todos los niveles.",
+    "bng": "Su programa de 2026 defiende una única red de enseñanza, la pública, laica y gratuita.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada.",
     "comp": "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan.",
     "upn": "UPN defiende la enseñanza concertada y eliminar límites a los conciertos educativos.",
@@ -10083,7 +10151,9 @@
     "upc": "Propone revisar los conciertos educativos para que la red concertada sea subsidiaria de la pública y acabar con la cesión de suelo público.",
     "pcte": "Defiende expulsar a todas las empresas privadas de la educación, lo que incluye la escuela concertada.",
     "fo": "Propone eliminar las subvenciones a la escuela privada para fortalecer el sistema público de educación.",
-    "ph": "Estimación: el programa dice que las «cogestiones» ocultan una privatización de la educación y exige educación pública gratuita; no cita la concertada."
+    "ph": "Estimación: el programa dice que las «cogestiones» ocultan una privatización de la educación y exige educación pública gratuita; no cita la concertada.",
+    "pp": "Su programa de 2026 asegura que no se eliminará ningún concierto con demanda suficiente y alarga los conciertos a seis años.",
+    "erc": "Su programa de 2026 defiende un modelo de escuela pública, laica, gratuita y de calidad, con el catalán como lengua vehicular."
    }
   },
   {
@@ -10166,10 +10236,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-5337",
-     "BOE, Real Decreto-ley 14/2012 de medidas urgentes de racionalización del gasto público en el ámbito educativo (Gobierno del PP, 20 de abril de 2012)",
-     "gobierno",
-     "2012-04-21"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=52",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 52",
+     "programa",
+     "2026-11"
     ],
     "comp": [
      "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=35",
@@ -10210,7 +10280,7 @@
    },
    "why": {
     "psoe": "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
-    "pp": "Estimación: el programa de 2023 apuesta por ampliar las becas universitarias, no por la gratuidad general de la matrícula.",
+    "pp": "Su programa de 2026 convierte la beca en un derecho por ley y da matrícula gratuita solo en FP de alta demanda de empleo.",
     "fa": "Propone que la matrícula universitaria avance de forma progresiva hacia la gratuidad.",
     "pod": "Su programa europeo de 2024 defiende una educación pública gratuita desde el nacimiento hasta la universidad.",
     "erc": "El programa propone avanzar hacia la gratuidad universitaria.",
@@ -10241,7 +10311,7 @@
     "pod": 1,
     "salf": 5,
     "d21": 4,
-    "erc": 2,
+    "erc": 1,
     "junts": 4,
     "pnv": 3,
     "bildu": 2,
@@ -10257,7 +10327,6 @@
     "vox",
     "salf",
     "d21",
-    "erc",
     "junts",
     "pnv",
     "bildu",
@@ -10315,13 +10384,19 @@
      "Programa político del Frente Obrero de 2026, p. 22",
      "programa",
      "2026-10"
+    ],
+    "erc": [
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=46",
+     "Programa electoral de ERC de 2026, p. 46",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "psoe": "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
     "fa": "Su portavoz Verónica Barbero defendió la moratoria de 10 años a nuevas universidades privadas que Sumar propuso en 2025.",
     "pod": "Estimación: contraria a facilitar universidades privadas por su defensa de la universidad pública.",
-    "erc": "Estimación: ERC prioriza la universidad pública.",
+    "erc": "Su programa de 2026 endurece los requisitos para crear, reconocer y autorizar universidades.",
     "pp": "Se opuso al decreto del Gobierno que endurece los requisitos para crear nuevas universidades, incluidas las privadas.",
     "adel": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas.",
     "pcte": "Defiende expulsar a todas las empresas privadas de la educación; denuncia el aumento de universidades privadas.",
@@ -10443,10 +10518,10 @@
    },
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=51",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33",
@@ -10455,10 +10530,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=10",
+     "Programa electoral de ERC de 2026, p. 10",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "junts": [
      "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113",
@@ -10528,9 +10603,9 @@
     ]
    },
    "why": {
-    "pp": "Su programa de 2023 pide que el castellano y la lengua cooficial sean vehiculares «en equilibrio», más que la libre elección de lengua.",
+    "pp": "Su programa de 2026 garantiza el derecho a recibir enseñanza en castellano en todas las etapas educativas y en toda España.",
     "vox": "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
-    "erc": "El programa defiende la inmersión con el catalán como lengua vehicular.",
+    "erc": "Su programa de 2026 blinda la escuela catalana y la inmersión lingüística, con el catalán como lengua vehicular.",
     "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
     "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     "bildu": "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
@@ -10599,10 +10674,10 @@
      "2024-12-13"
     ],
     "pp": [
-     "https://www.periodicodeibiza.es/noticias/nacional/2013/06/25/102341/wert-reconsiderar-nota-del-para-optar-becas-universitarias.html",
-     "Periódico de Ibiza (Europa Press), el Gobierno del PP y la nota de 6,5 para las becas",
-     "gobierno",
-     "2013-06-25"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=52",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 52",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.moncloa.com/2020/05/20/nuevas-becas-castells-169951/",
@@ -10622,7 +10697,7 @@
     "vox": "Estimación: Vox vincula las becas al mérito y al esfuerzo, sin concretar exigencias de nota.",
     "fa": "Pidió en una proposición no de ley eliminar los mínimos académicos exigidos para no devolver las becas.",
     "erc": "Estimación: ERC defiende becas ambiciosas sin barreras de acceso.",
-    "pp": "El Gobierno del PP introdujo en 2012-2013 una nota media mínima superior al aprobado para acceder a algunas becas.",
+    "pp": "Su programa de 2026 hace de la beca un derecho para quien la necesite y apruebe y crea becas de excelencia para los mejores expedientes.",
     "pod": "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas.",
     "falange": "Estimación: el programa propone ajustar el incremento de becas al poder adquisitivo y a los méritos académicos, lo que apunta a exigir rendimiento académico."
    }
@@ -10830,10 +10905,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=13",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=38",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 38",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151",
@@ -10933,7 +11008,7 @@
     ]
    },
    "why": {
-    "pp": "Defiende la tauromaquia como expresión cultural con profundas raíces históricas.",
+    "pp": "Su programa de 2026 restituye el Premio Nacional de Tauromaquia y protege las fiestas y tradiciones populares.",
     "vox": "El programa de Vox promete apoyo fiscal y crediticio a la tauromaquia y la protección de los festejos taurinos.",
     "fa": "Propone derogar la ley que protege la tauromaquia como patrimonio y suprimir la financiación pública de corridas con muerte.",
     "pod": "Belarra pidió retirar a la tauromaquia la condición de bien cultural para poder suspender sus subvenciones.",
@@ -10998,10 +11073,10 @@
      "2023-11-29"
     ],
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=12",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57",
@@ -11040,10 +11115,10 @@
      "2019-04"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=61",
-     "Programa electoral del BNG para las generales de 2023, p. 61",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=72",
+     "Programa electoral del BNG de 2026, p. 72",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "gbai": [
      "https://www.noticiasdenavarra.com/politica/2025/05/15/ollo-politica-linguistica-9638968.html",
@@ -11084,14 +11159,14 @@
    },
    "why": {
     "psoe": "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear.",
-    "pp": "Considera que la lengua cooficial debe ser un mérito y no un requisito para acceder a la función pública.",
+    "pp": "Su programa de 2026 dice que los requisitos lingüísticos respetarán las libertades y que se atenderá en la lengua oficial o la cooficial, a elección.",
     "vox": "Vox rechaza exigir la lengua cooficial para acceder al empleo público; el único requisito sería el español.",
     "fa": "Sus diputados recurrieron ante el Constitucional la supresión del requisito del catalán en la sanidad balear.",
     "erc": "El programa exige el catalán al personal de la Administración del Estado en Cataluña.",
     "bildu": "Pide garantizar el euskera en todas las administraciones del Estado y que su personal lo conozca.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público.",
     "comp": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
-    "bng": "El BNG defiende que el personal de las administraciones en Galicia conozca el gallego.",
+    "bng": "Su programa de 2026 pide normalizar el gallego en la Administración central, empezando por su conocimiento entre el funcionariado.",
     "gbai": "Geroa Bai apoya exigir el euskera como requisito en plazas de la Administración foral y ampliar la atención bilingüe.",
     "mes": "MÉS per Mallorca se opuso a suprimir el requisito de catalán para el personal de la sanidad pública balear.",
     "upn": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
@@ -11368,10 +11443,10 @@
      "2024-04-01"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+     "Programa electoral de ERC de 2026, p. 41",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
@@ -11432,7 +11507,7 @@
     "vox": "Vox propone reducir las listas de espera reforzando los conciertos con la sanidad privada.",
     "fa": "Propone blindar la sanidad pública y una ley de listas de espera, no derivar pacientes a la privada.",
     "pod": "Su proposición de ley de 2024 impide renovar los conciertos con hospitales privados vinculados al SNS.",
-    "erc": "La ponencia propone dejar de concertar con centros privados con ánimo de lucro.",
+    "erc": "Su programa de 2026 propone blindar una sanidad pública universal y frenar la privatización de la sanidad.",
     "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
     "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
     "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos.",
@@ -11670,10 +11745,10 @@
      "2022-12-20"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19",
@@ -11696,7 +11771,7 @@
    },
    "why": {
     "psoe": "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas.",
-    "pp": "Propone reformar la ley de evaluación de políticas públicas y reforzar la AIReF como evaluador independiente.",
+    "pp": "Su programa de 2026 evaluará cada año programas de gasto con criterios independientes y retirará recursos a los que no cumplan.",
     "fa": "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
     "pod": "Estimación: sin postura publicada sobre evaluar y suprimir programas.",
     "d21": "Las políticas y programas de gasto se evaluarán y los resultados decidirán su continuidad, cambio o eliminación.",
@@ -11978,10 +12053,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=42",
+     "Programa electoral de ERC de 2026, p. 42",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
@@ -12020,7 +12095,7 @@
     "vox": "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
     "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
     "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
-    "erc": "El programa propone suprimir el Ministerio de Sanidad por ser competencia autonómica.",
+    "erc": "Su programa de 2026 blinda las competencias sanitarias de la Generalitat e impide la recentralización o la injerencia del Estado.",
     "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
     "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
     "falange": "Propone unificar el Sistema Nacional de Salud: uno solo para toda España.",
@@ -12047,7 +12122,7 @@
     "salf": 1,
     "pacma": 1,
     "d21": 5,
-    "erc": 2,
+    "erc": 1,
     "junts": 3,
     "pnv": 4,
     "bildu": 1,
@@ -12127,10 +12202,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=32",
+     "Programa electoral de ERC de 2026, p. 32",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "upn": [
      "https://www.infobae.com/america/agencias/2026/02/18/el-pp-se-abstiene-en-una-propuesta-de-vox-que-incluia-el-rechazo-al-acuerdo-ue-mercosur-y-de-marruecos/",
@@ -12139,10 +12214,10 @@
      "2026-02-17"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=67",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=48",
+     "Programa electoral del BNG de 2026, p. 48",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://rtvc.es/cc-anuncia-una-estrategia-en-las-instituciones-canarias-y-estatales-en-contra-del-acuerdo-de-mercosur-27-enero-2026/",
@@ -12177,9 +12252,9 @@
    },
    "why": {
     "salf": "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
-    "erc": "La ponencia critica el acuerdo UE-Mercosur por competencia desleal agrícola.",
+    "erc": "Su programa de 2026 pide al Gobierno rechazar la ratificación del acuerdo comercial UE-Mercosur.",
     "upn": "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
-    "bng": "El programa propone oponerse a los tratados comerciales internacionales que vulneren la soberanía y los derechos sociales, laborales y ambientales.",
+    "bng": "Su programa de 2026 rechaza el acuerdo UE-Mercosur por los perjuicios para las explotaciones agrarias gallegas.",
     "ccpc": "Anunció en enero de 2026 una estrategia en las instituciones canarias y estatales en contra del acuerdo UE-Mercosur.",
     "pacma": "PACMA se declara en contra de los tratados de libre comercio que debiliten las normas ambientales y sociales.",
     "upc": "Propone renegociar el acuerdo UE-Mercosur para que prevalezcan los derechos humanos y ambientales sobre el poder de las grandes corporaciones.",
@@ -12229,13 +12304,11 @@
     "ie": 2
    },
    "est": [
-    "pp",
     "salf",
     "d21",
     "junts",
     "pnv",
     "upn",
-    "bng",
     "ccpc",
     "drago",
     "comp",
@@ -12267,10 +12340,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
+     "Programa electoral de ERC de 2026, p. 33",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=5",
@@ -12313,6 +12386,18 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 25",
      "programa",
      "2025-12"
+    ],
+    "pp": [
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
+     "programa",
+     "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=47",
+     "Programa electoral del BNG de 2026, p. 47",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12320,13 +12405,15 @@
     "vox": "El programa de Vox promete corregir los desequilibrios de la cadena alimentaria que perjudican al productor.",
     "fa": "Propone controlar la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
     "pod": "Estimación: favorable a intervenir los márgenes de la gran distribución.",
-    "erc": "El programa propone reformar la ley de la cadena para mejorar precios a productores.",
+    "erc": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria y sus controles para garantizar precios justos que cubran los costes.",
     "bildu": "Pide más control sobre la cadena alimentaria para asegurar precios justos a los productores.",
     "cha": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
     "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
     "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
     "falange": "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario.",
-    "ie": "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes."
+    "ie": "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes.",
+    "pp": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
+    "bng": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción."
    }
   },
   {
@@ -12389,10 +12476,10 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=27",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=49",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 49",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=136",
@@ -12439,7 +12526,7 @@
    },
    "why": {
     "psoe": "Quiere priorizar la agricultura familiar y profesional y las pequeñas y medianas explotaciones.",
-    "pp": "El PP defiende ayudas de la PAC para todas las explotaciones, sean del tamaño que sean, y «PAC sin recortes»; no quiere concentrarlas.",
+    "pp": "Su programa de 2026 mantiene la financiación de la PAC sin recortes y adelanta ayudas a los jóvenes que se incorporan.",
     "vox": "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
     "fa": "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
     "pod": "La medida 36 pide que la PAC deje de basarse en derechos históricos y apoye a quienes desempeñan la actividad, con las explotaciones familiares.",
@@ -12788,10 +12875,10 @@
      "2025-12-13"
     ],
     "pp": [
-     "https://www.pp.es/storage/2024/12/241217-Carmen-Belen-Lopez-pregunta-a-Planas-por-negociacion-UE-pesca-1.pdf",
-     "PP en el Senado, Carmen Belén López pregunta a Planas por la pesca en el Mediterráneo, 17/12/2024",
-     "declaracion",
-     "2024-12-17"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/espana/politica/2024-12-10/vox-denuncia-cuotas-pesqueras-mediterraneo/",
@@ -12820,7 +12907,7 @@
    },
    "why": {
     "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión.",
-    "pp": "Reclama más días de pesca para el arrastre en el Mediterráneo y critica los recortes pactados en la UE.",
+    "pp": "Su programa de 2026 defiende reformar la política pesquera común y un régimen competitivo para los buques españoles.",
     "vox": "La portavoz Pepa Millán rechazó en el Congreso el recorte de días de pesca de arrastre propuesto por Bruselas.",
     "fa": "Propone cumplir la política pesquera de la UE para acabar con la sobrepesca, sobre todo en el Mediterráneo.",
     "pod": "Estimación: contraria a relajar las restricciones de pesca.",
@@ -12900,10 +12987,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=31",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=51",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 51",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150",
@@ -12932,7 +13019,7 @@
    },
    "why": {
     "psoe": "Su programa de 2023 vincula la caza a la sostenibilidad del mundo rural, pero no propone protegerla por ley.",
-    "pp": "Apoya la caza como actividad esencial en el medio rural y parte del acervo cultural.",
+    "pp": "Su programa de 2026 defiende la caza y promete reducir las trabas a la caza sostenible.",
     "vox": "El programa de Vox defiende la caza como actividad esencial para el medio rural y propone una licencia única.",
     "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley.",
     "pacma": "PACMA se opone a la caza y niega que sea necesaria para la gestión del medio.",
@@ -13018,10 +13105,10 @@
      "2023-07"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
+     "Programa electoral de ERC de 2026, p. 33",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "pacma": [
      "https://pacma.es/notas-de-prensa/pacma-reclama-un-plan-andaluz-de-lucha-contra-la-desertificacion/",
@@ -13053,7 +13140,7 @@
     "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
     "vox": "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
     "fa": "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
-    "erc": "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua.",
+    "erc": "Su programa de 2026 exige financiación estatal para modernizar los regadíos de Cataluña y mejorar la eficiencia hídrica.",
     "pacma": "PACMA señala la expansión de regadíos en zonas secas como causa del agotamiento de acuíferos y de la desertificación, lo que apoya limitar los nuevos regadíos.",
     "pod": "La secretaria general de Podemos rechaza ampliar regadíos en una zona con el acuífero sobreexplotado, en línea con limitar los nuevos regadíos donde falta agua.",
     "adel": "Propone frenar la creación de nuevos regadíos y reducir su superficie actual para alcanzar equilibrio hídrico.",
@@ -13423,10 +13510,10 @@
      "2023-03-01"
     ],
     "pp": [
-     "https://theobjective.com/espana/tribunales/2025-04-27/tribunal-constitucional-modificara-ley-trans/",
-     "The Objective, el Tribunal Constitucional estudia el recurso del PP contra la Ley trans, 27/04/2025",
-     "prensa",
-     "2025-04-27"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=35",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 35",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173",
@@ -13447,10 +13534,10 @@
      "2023-02-28"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=24",
+     "Programa electoral de ERC de 2026, p. 24",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.noticiasdenavarra.com/sociedad/2023/02/16/congreso-aprueba-definitivamente-ley-trans-6453535.html",
@@ -13459,10 +13546,10 @@
      "2023-02-16"
     ],
     "bng": [
-     "https://www.eldiario.es/sociedad/ley-trans-supera-intentos-veto-pp-vox-psoe-anticipa-cambios-sea-garantista_1_9599168.html",
-     "elDiario.es, La ley trans supera los intentos de veto de PP y Vox, 22-12-2022",
-     "parlamento",
-     "2022-12-22"
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=29",
+     "Programa electoral del BNG de 2026, p. 29",
+     "programa",
+     "2026-11"
     ],
     "upc": [
      "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116",
@@ -13497,13 +13584,13 @@
    },
    "why": {
     "psoe": "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
-    "pp": "El PP recurrió ante el Tribunal Constitucional el cambio registral desde los 16 años sin informes médicos que permite la Ley trans.",
+    "pp": "Su programa de 2026 elimina la libre autodeterminación registral del sexo de la Ley Trans.",
     "vox": "Vox propone derogar la ley trans, que permite el cambio registral sin informes médicos.",
     "fa": "Toma como base la ley trans de 2023, que permite el cambio registral desde los 16 sin informes médicos.",
     "pod": "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
-    "erc": "El programa defiende la autodeterminación de género sin patologizar.",
+    "erc": "Su programa de 2026 reconoce legalmente las identidades no binarias sin requisitos patologizadores.",
     "pnv": "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
-    "bng": "Respaldó en el Pleno la autodeterminación de género y rechazó las enmiendas de PP y Vox contra la ley trans.",
+    "bng": "Su programa de 2026 protege a las personas trans, respeta su autodeterminación de género y reconoce a las personas no binarias.",
     "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
     "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
     "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
@@ -13695,7 +13782,6 @@
     "pnv",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -13728,10 +13814,10 @@
      "2021-10-15"
     ],
     "erc": [
-     "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
-     "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=8",
+     "Programa electoral de ERC de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "vox": [
      "https://www.que.es/2021/03/11/senado-rechaza-revertir-inmatriculaciones-iglesia/",
@@ -13768,6 +13854,12 @@
      "Programa electoral general de FE de las JONS para las generales de 2023, p. 6",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
+     "Programa electoral del BNG de 2026, p. 32",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13776,12 +13868,13 @@
     "vox": "Estimación: no consta una postura reciente de Vox sobre revisar los acuerdos con la Santa Sede.",
     "fa": "Registró una proposición no de ley para actualizar los acuerdos con la Santa Sede y suprimir privilegios de la Iglesia.",
     "pod": "Registró en el Congreso una iniciativa para eliminar los privilegios de la Iglesia y anular el Concordato.",
-    "erc": "El programa propone anular los acuerdos de 1979 con la Santa Sede.",
+    "erc": "Su programa de 2026 deja sin efecto los acuerdos de 1979 con la Santa Sede y aplica el IBI a los bienes de las confesiones.",
     "bildu": "El grupo de ERC y EH Bildu en el Senado presentó y votó una moción que pedía declarar nulos los acuerdos de 1979 con la Santa Sede, lo que va más allá de revisarlos.",
     "comp": "Propone derogar los acuerdos particulares del Estado con la Santa Sede de 1979 y acabar con la financiación de la Iglesia católica con cargo a los presupuestos.",
     "cha": "Propone derogar de inmediato los Concordatos con la Iglesia católica y suprimir sus privilegios, en particular beneficios y exenciones fiscales.",
     "pcte": "Defiende la ruptura del concordato con el Vaticano por los privilegios que da a la Iglesia católica.",
-    "falange": "Defiende un Estado confesional católico y fomentar el culto católico."
+    "falange": "Defiende un Estado confesional católico y fomentar el culto católico.",
+    "bng": "Su programa de 2026 propone denunciar y revocar el Concordato y los acuerdos vigentes con la Santa Sede."
    }
   },
   {
@@ -13987,7 +14080,6 @@
     "pnv",
     "upn",
     "gbai",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -14061,6 +14153,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=25",
+     "Programa electoral del BNG de 2026, p. 25",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14074,7 +14172,8 @@
     "pacma": "PACMA critica la paridad estricta porque le obliga a reducir mujeres en sus listas, pero no pide eliminar las cuotas: propone sustituirlas por un mínimo obligatorio del 50 % de mujeres.",
     "bildu": "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas.",
     "cha": "Propone listas electorales desbloqueadas con un sistema que permita respetar la paridad de sexos, es decir, mantener la paridad.",
-    "fo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos."
+    "fo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos.",
+    "bng": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales."
    }
   },
   {
@@ -14131,10 +14230,10 @@
      "2026-04-14"
     ],
     "pp": [
-     "https://orain.eus/es/politica/2026/02/17/la-posible-prohibicion-del-burka-llega-al-congreso-avalada-el-pp-vox-sin-el-apoyo-junts/",
-     "Orain, febrero de 2026",
-     "parlamento",
-     "2026-02"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html",
@@ -14194,7 +14293,8 @@
     "pnv": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     "bildu": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     "upn": "Votó a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público, que no prosperó.",
-    "pod": "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate."
+    "pod": "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate.",
+    "pp": "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos."
    }
   }
  ]
