@@ -2478,6 +2478,7 @@ function renderMethod() {
   const cover = PIDS.map((pid) => { const x = partyData(pid);
     return `<tr><td><span class="sw" style="background:${P[pid].color}"></span> ${esc(P[pid].name)}${P[pid].tbd ? ' <span class="tbd">Por confirmar</span>' : ""}</td><td class="num">${x.doc}</td><td class="num">${x.est}</td><td class="num">${x.unk}</td><td class="num">${x.src}</td><td><span class="cov" style="width:${x.doc * 1.1}px"></span><span class="cov e" style="width:${x.est * 1.1}px;margin-left:2px"></span></td></tr>`; }).join("");
   const srcAll = qs.flatMap((q) => Object.values(q.src || {}));
+  const srcDir = qs.reduce((n, q) => n + Object.keys(q.src || {}).filter((pid) => !(q.est || []).includes(pid)).length, 0);
   const srcBy = Object.keys(SRC_TYPE).map((t) => [t, srcAll.filter((x) => x[2] === t).length]).filter(([, n]) => n);
   const areaCov = BANK.areas.map((a) => { const l = qs.filter((q) => q.area === a.id), ds = [...new Set(l.filter((q) => q.dim).map((q) => DIM_SHORT[q.dim]))];
     return `<tr><td>${a.letter} · ${esc(a.name)}</td><td class="num">${l.length}</td><td class="num">${l.filter((q) => !q.dim).length}</td><td>${esc(ds.join(", ")) || "—"}</td></tr>`; }).join("");
@@ -2539,7 +2540,7 @@ function renderMethod() {
               <li><b>Estimada</b>: una interpretación nuestra a partir de la línea general del partido o de temas cercanos. Siempre se marca y pesa menos.</li>
               <li><b>Sin postura conocida</b>: no se rellena ni se toma como neutral; esa pregunta no cuenta para ese partido.</li>
             </ul>
-            <p>Hoy hay ${srcAll.length} posturas con fuente enlazada${srcBy.length ? ` (${esc(srcBy.map(([t, n]) => `${n} de ${SRC_TYPE[t]}`).join(", "))})` : ""}. Es una parte pequeña del total: ampliarla es la prioridad de mantenimiento del proyecto, empezando por las preguntas núcleo y los partidos con más apoyo.</p>
+            <p>Hoy hay ${srcAll.length} posturas con fuente enlazada (${srcDir} como evidencia directa y ${srcAll.length - srcDir} estimadas con un enlace solo de referencia)${srcBy.length ? ` (${esc(srcBy.map(([t, n]) => `${n} de ${SRC_TYPE[t]}`).join(", "))})` : ""}. Es una parte pequeña del total: ampliarla es la prioridad de mantenimiento del proyecto, empezando por las preguntas núcleo y los partidos con más apoyo.</p>
             ${pendingTbd.length || outP.length ? `<p><b>Pendiente de verificar.</b> ${pendingTbd.length ? `Candidaturas aún sin confirmar con las listas proclamadas por la Junta Electoral: ${esc(joinY(pendingTbd))}. ` : ""}${outP.length ? `Han anunciado que no se presentan, y por eso no se comparan: ${esc(joinY(outP))}.` : ""} Los programas para el 29N aún no se han publicado completos: cuando salgan, revisaremos las posturas.</p>` : ""}
             ${(() => { const t = PIDS.map(partyData).reduce((a, x) => ({ d: a.d + x.doc, e: a.e + x.est, u: a.u + x.unk }), { d: 0, e: 0, u: 0 }), n = t.d + t.e + t.u, pc = (v) => Math.round((v / n) * 100);
               return `<div class="stack" role="img" aria-label="Del total de casillas: ${pc(t.d)} % documentadas, ${pc(t.e)} % estimadas, ${pc(t.u)} % sin postura conocida"><span class="sk-d" style="--w:${pc(t.d)}%"></span><span class="sk-e" style="--w:${pc(t.e)}%"></span><span class="sk-u" style="--w:${pc(t.u)}%"></span></div>

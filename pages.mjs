@@ -38,6 +38,10 @@ const textOn = (hex) => {
 
 export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const B = JSON.parse(readFileSync("data/preguntas.json", "utf8"));
+  // Posturas con enlace: «directa» (documentada con fuente) o «estimada con enlace de referencia» (inferencia). Mismo corte en prensa, datos, metodología y partidos.
+  const SRCX = { dir: 0, inf: 0 };
+  for (const q of B.questions) for (const pid of Object.keys(q.src || {})) SRCX[q.est.includes(pid) ? "inf" : "dir"]++;
+  const srcSplit = (dir, inf) => `${dir} con fuente directa${inf ? ` y ${inf} ${inf === 1 ? "estimada" : "estimadas"} con un enlace solo de referencia` : ""}`;
   const PD = JSON.parse(readFileSync("data/partidos.json", "utf8"));
   const P = Object.fromEntries(PD.parties.map((p) => [p.id, p]));
   const AREA = Object.fromEntries(B.areas.map((a) => [a.id, a]));
@@ -113,7 +117,7 @@ ${footer}
   // ── Una página por candidatura
   for (const pid of PD.order) {
     const p = P[pid], dims = pdim(pid), known = B.questions.filter((q) => q.pos[pid]);
-    const nEst = known.filter((q) => q.est.includes(pid)).length, nSrc = known.filter((q) => q.src?.[pid]).length;
+    const nEst = known.filter((q) => q.est.includes(pid)).length, nSrc = known.filter((q) => q.src?.[pid]).length, nSrcInf = known.filter((q) => q.src?.[pid] && q.est.includes(pid)).length;
     const dimRows = B.dims.map((d) => { const v = dims[d.id]; if (v === undefined) return `<div class="sig-row"><span>${esc(d.name)}</span><span class="small muted">sin posturas</span></div>`;
       const x = ((v + 100) / 2).toFixed(2);
       return `<div class="sp-dim"><span><b>${esc(d.name)}</b> <span class="muted">· ${Math.abs(v) < 15 ? "equilibrio" : `${esc(v < 0 ? d.a : d.b)}, ${strength(v)}`} (${signed(v)})</span></span><span class="mini" role="img" aria-label="${esc(d.name)}: ${signed(v)} en una escala de −100 (${esc(d.a)}) a +100 (${esc(d.b)})"><span class="c"></span>${v < 0 ? `<span class="b l" style="left:${x}%;width:${(50 - x).toFixed(2)}%"></span>` : v > 0 ? `<span class="b r" style="left:50%;width:${(x - 50).toFixed(2)}%"></span>` : ""}<span class="d" style="left:${x}%;background:${p.color}"></span></span><span class="poles small muted"><span>${esc(d.a)}</span><span>${esc(d.b)}</span></span></div>`; }).join("");
@@ -135,7 +139,7 @@ ${footer}
       crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }, { name: p.name, url: `${SITE}partidos/${pid}/` }],
       body: `<header class="sp-head"><div class="phead">${logo(pid)}<div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(p.name)}: qué propone, tema a tema</h1></div></div>
   <p class="lede">${esc(p.desc)}</p>
-  <dl class="sp-facts"><div><dt>Espacio político</dt><dd>${esc(p.tag)}</dd></div>${p.lead ? `<div><dt>Cabeza de cartel</dt><dd>${esc(p.lead)}</dd></div>` : ""}<div><dt>Dónde se presenta</dt><dd>${esc(scopeText(p))}</dd></div>${p.out ? `<div><dt>Estado</dt><dd>${esc(p.out)}</dd></div>` : p.tbd ? '<div><dt>Estado</dt><dd>Candidatura por confirmar en las listas proclamadas</dd></div>' : ""}<div><dt>Programa del 29N</dt><dd>${progDD(pid)}</dd></div><div><dt>Posturas en el test</dt><dd>${known.length - nEst} documentadas, ${nEst} estimadas y ${B.questions.length - known.length} sin postura conocida${nSrc ? `; ${nSrc} con fuente enlazada` : ""}</dd></div></dl></header>
+  <dl class="sp-facts"><div><dt>Espacio político</dt><dd>${esc(p.tag)}</dd></div>${p.lead ? `<div><dt>Cabeza de cartel</dt><dd>${esc(p.lead)}</dd></div>` : ""}<div><dt>Dónde se presenta</dt><dd>${esc(scopeText(p))}</dd></div>${p.out ? `<div><dt>Estado</dt><dd>${esc(p.out)}</dd></div>` : p.tbd ? '<div><dt>Estado</dt><dd>Candidatura por confirmar en las listas proclamadas</dd></div>' : ""}<div><dt>Programa del 29N</dt><dd>${progDD(pid)}</dd></div><div><dt>Posturas en el test</dt><dd>${known.length - nEst} documentadas, ${nEst} estimadas y ${B.questions.length - known.length} sin postura conocida${nSrc ? `; ${srcSplit(nSrc - nSrcInf, nSrcInf)}` : ""}</dd></div></dl></header>
 ${p.out ? "" : cta(`¿Cuánto coincides con ${esc(p.ab)}?`)}
 <section aria-labelledby="h-props"><h2 class="h2" id="h-props">Propuestas destacadas</h2><ul class="dots">${p.props.map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></section>
 <section aria-labelledby="h-dims"><h2 class="h2" id="h-dims">Su posición en siete dimensiones</h2><p class="small muted">Media de sus posturas en las preguntas de cada dimensión, de −100 a +100. Las estimadas pesan menos.</p><div class="sp-dims">${dimRows}</div></section>
@@ -265,7 +269,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
   mkdirSync(`${OUT}/datos`, { recursive: true });
   writeFileSync(`${OUT}/datos/posturas.csv`, "\ufeff" + [cols.join(","), ...rowsOpen.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\r\n") + "\r\n");
   writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: "Posturas de las candidaturas del Test 29N", licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: "Test 29N (https://test29n.es)", actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
-  const nSrcOpen = rowsOpen.filter((r) => r.fuente_url).length, nEstOpen = rowsOpen.filter((r) => r.estimada).length;
+  const nSrcOpen = rowsOpen.filter((r) => r.fuente_url).length, nSrcInfOpen = rowsOpen.filter((r) => r.fuente_url && r.estimada).length, nEstOpen = rowsOpen.filter((r) => r.estimada).length;
   page({
     path: "/datos/",
     title: "Datos abiertos: posturas de los partidos del 29N en CSV y JSON · Test 29N",
@@ -279,7 +283,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
 <section aria-labelledby="h-cont"><h2 class="h2" id="h-cont">Qué contiene</h2>
 <ul class="dots"><li>Una fila por cada postura conocida: pregunta, área, candidatura y postura de 1 a 5 (en los dilemas, de «claramente A» a «claramente B»).</li>
 <li>Si la postura es <b>estimada</b> (${nEstOpen} de ${rowsOpen.length}) o documentada, y su nota cuando la hay.</li>
-<li>La fuente enlazada, con título, tipo y fecha, cuando existe. Por ahora la tienen ${nSrcOpen} posturas: el resto de las documentadas se basa en programas, votaciones y declaraciones que se irán enlazando una a una.</li>
+<li>La fuente enlazada, con título, tipo y fecha, cuando existe. Por ahora la tienen ${nSrcOpen} posturas: ${srcSplit(nSrcOpen - nSrcInfOpen, nSrcInfOpen)} (la fuente no basta para documentarlas). Para reproducir el recuento: filas con <code>fuente_url</code> y <code>estimada</code> = false, frente a <code>estimada</code> = true. El resto de las documentadas se basa en programas, votaciones y declaraciones que se irán enlazando una a una.</li>
 <li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
 <section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
 <p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (test29n.es)», y no des a entender que el Test 29N respalda tu uso.</p>
@@ -532,7 +536,7 @@ ${cta("O responde el test completo")}`
 <p class="small"><b>Estos porcentajes no son una encuesta ni miden intención de voto:</b> salen de respuestas generadas al azar por un programa.</p>
 <p>Un perfil que responde «ni de acuerdo ni en desacuerdo» a todo coincide sobre todo con ${M.neutral.slice(0, 3).map((x) => `${pN(x.pid)} (${x.pct} %)`).join(", ")}.</p>
 <p><b>Qué significa:</b> las respuestas al azar se compensan y quedan cerca del punto medio de la escala (3), así que tienden a coincidir más con las candidaturas cuyas posturas están más cerca de ese punto medio. No es una preferencia del test: es un efecto habitual de los cálculos por distancias. Por eso mostramos la solidez del resultado y las coincidencias y discrepancias concretas, no solo un porcentaje.</p></section>
-<section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Posturas con fuente, por candidatura</h2><div class="sim-table-wrap"><table class="sim-table"><thead><tr><th>Candidatura</th><th>Conocidas</th><th>Estimadas</th><th>Con fuente enlazada</th></tr></thead><tbody>${M.posturas.map((r) => `<tr><td>${pN(r.pid)}</td><td>${r.conocidas}</td><td>${r.estimadas}</td><td>${r.conFuente}</td></tr>`).join("")}</tbody></table></div></section>
+<section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Posturas con fuente, por candidatura</h2><div class="sim-table-wrap"><table class="sim-table"><thead><tr><th>Candidatura</th><th>Conocidas</th><th>Estimadas</th><th>Con fuente directa</th><th>Estimadas con enlace de referencia</th></tr></thead><tbody>${M.posturas.map((r) => { const inf = B.questions.filter((q) => q.src?.[r.pid] && q.est.includes(r.pid)).length; return `<tr><td>${pN(r.pid)}</td><td>${r.conocidas}</td><td>${r.estimadas}</td><td>${r.conFuente - inf}</td><td>${inf}</td></tr>`; }).join("")}</tbody></table></div><p class="small muted">Evidencia directa: postura documentada con su fuente enlazada. Estimada con enlace de referencia: inferencia apoyada en un documento que no basta para documentarla; pesa como estimada. Sin enlace: documentada sin fuente pregunta a pregunta, o desconocida (no se rellena). Total: ${srcSplit(SRCX.dir, SRCX.inf)}.</p></section>
 <section aria-labelledby="h-lim"><h2 class="h2" id="h-lim">Límites</h2><ul class="dots"><li>Las posturas resumen en una cifra de 1 a 5 posiciones que a veces tienen matices; por eso cada una lleva su justificación y su fuente cuando la hay.</li><li>La mayoría de los partidos aún no ha publicado su programa para el 29N: usamos sus programas de 2023, votaciones, leyes y declaraciones, y los actualizaremos cuando salgan.</li><li>Los partidos pequeños tienen más posturas estimadas.</li><li>«Documentada» sin enlace significa que la postura se basa en programas, votaciones o declaraciones conocidos, pero aún sin una fuente enlazada pregunta a pregunta; seguimos enlazándolas, empezando por los partidos con más votos.</li><li>El test no mide la confianza en los candidatos, la gestión ni el voto útil: solo la coincidencia de ideas.</li></ul>
 <p class="small muted">Las cifras se generan con <code>qa/metodologia.mjs</code>, en el repositorio público del proyecto. Datos abiertos en <a href="/datos/">/datos/</a>.</p></section>
 ${cta("Haz el test")}`
@@ -661,7 +665,7 @@ ${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
   <li><b>${live.length} candidaturas</b> comparadas, con las que se presentan en la provincia de cada persona.</li>
   <li><b>Perfil en siete dimensiones</b> (economía, valores, libertades, modelo territorial, inmigración, Europa y medioambiente), no una sola escala izquierda-derecha.</li>
   <li><b>Explica su resultado</b>: qué respuestas pesan, en qué coincides y discrepas con cada partido y en qué se diferencian dos partidos parecidos.</li>
-  <li><b>Transparente</b>: todas las posturas son públicas, las estimadas se marcan y ${nSrc} enlazan ya su fuente (programas, votaciones, decisiones de gobierno o declaraciones).</li>
+  <li><b>Transparente</b>: todas las posturas son públicas, las estimadas se marcan y ${nSrc} enlazan ya una fuente (programas, votaciones, decisiones de gobierno o declaraciones): ${srcSplit(SRCX.dir, SRCX.inf)}.</li>
   <li><b>Privado</b>: sin registro ni cookies. Las respuestas no salen del navegador de cada persona.</li>
   <li><b>Independiente</b>: sin vínculo con ningún partido ni institución. No es una recomendación de voto.</li>
 </ul></section>

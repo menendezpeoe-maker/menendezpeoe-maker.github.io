@@ -169,8 +169,9 @@ console.log("Metodología y datos");
   await page.click(".head-nav [data-go='method']");
   const t = await page.$eval("#v-method", (e) => e.textContent); // las secciones van en pestañas: textContent incluye las no visibles
   const nsrc = bank.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
+  const ndir = bank.questions.reduce((n, q) => n + Object.keys(q.src || {}).filter((pid) => !q.est.includes(pid)).length, 0);
   const secs = await page.$$eval("#m-datos, #m-expl, #m-glos", (x) => x.length);
-  ok(secs === 3 && t.includes(`Hoy hay ${nsrc} posturas con fuente enlazada`), `estado de los datos, explicaciones y glosario (${nsrc} fuentes)`);
+  ok(secs === 3 && t.includes(`Hoy hay ${nsrc} posturas con fuente enlazada (${ndir} como evidencia directa y ${nsrc - ndir} estimadas`), `estado de los datos, explicaciones y glosario (${nsrc} fuentes)`);
   ok(/Pendiente de verificar/.test(t) && /Cobertura temática/.test(t), "indica qué está pendiente de verificar y qué temas cubre el test");
   await ctx.close();
 }
