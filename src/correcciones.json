@@ -1,5 +1,133 @@
 [
  {
+  "fecha": "2026-11-12",
+  "id": "A01",
+  "partido": "erc",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 reduce por ley la jornada máxima a 37,5 horas semanales sin rebaja salarial, modificando el artículo 34 del Estatuto.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=26",
+   "Programa electoral de ERC de 2026, p. 26",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "A03",
+  "partido": "erc",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 hace permanente el impuesto de solidaridad de las grandes fortunas y sube su tipo por encima de 10 millones.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=22",
+   "Programa electoral de ERC de 2026, p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "A06",
+  "partido": "erc",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=23",
+   "Programa electoral de ERC de 2026, p. 23",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "C06",
+  "partido": "bng",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 suprime las diputaciones provinciales y traspasa sus funciones a Galicia y a los ayuntamientos.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=42",
+   "Programa electoral del BNG de 2026, p. 42",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "E05",
+  "partido": "bng",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 fija límites estrictos al reconocimiento facial y a la vigilancia biométrica masiva en espacios públicos.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=77",
+   "Programa electoral del BNG de 2026, p. 77",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "F06",
+  "partido": "erc",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
+   "Programa electoral de ERC de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "I03",
+  "partido": "erc",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 endurece los requisitos para crear, reconocer y autorizar universidades.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=46",
+   "Programa electoral de ERC de 2026, p. 46",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "K01",
+  "partido": "erc",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 pide al Gobierno rechazar la ratificación del acuerdo comercial UE-Mercosur.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=32",
+   "Programa electoral de ERC de 2026, p. 32",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-07",
   "id": "A01",
   "partido": "pcte",

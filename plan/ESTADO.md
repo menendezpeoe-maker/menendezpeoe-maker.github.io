@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 (noche) · PUBLICADO: 10 posturas más de PP y ERC por sus programas 2026
+- Aplicadas las interpretativas con encaje literal: PP A06 4→5, F01 2→1, F05 2→1, H09 3→4, I05 4→5, K08 3→2, L07 4→3; ERC A02 4→5, G09 4→5, J01 3→4 (cada una con cita y página del programa).
+- **Siguen sin aplicar (no encajan lo bastante):** PP F02, F06, H07, K04; ERC G08. Quedan como «pendiente de decisión del titular».
+- Pruebas: `posturas` + `paginas` 11/11 y `test` en verde.
+
 ## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar en `main`): programas 2026 de PP, ERC y BNG incorporados
 - El titular pasó los tres PDF oficiales (PP «Reconstrucción Nacional», ERC e2026-programa, BNG Xerais 2026) y dio el OK «haz lo más profesional». Propuesta y páginas en `plan/propuesta-programas-12nov.md`.
 - **Aplicado (117 posturas con fuente 2026 y página `#page=N`):** PP 46, ERC 42, BNG 29. Cada una con justificación nueva (`JUSTIF`) basada en el programa.
