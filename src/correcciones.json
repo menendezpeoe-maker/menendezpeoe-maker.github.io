@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-12",
+  "id": "A02",
+  "partido": "erc",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 sube el IRPF a las ganancias de capital y mantiene los impuestos a grandes fortunas, banca y energéticas.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
+   "Programa electoral de ERC de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
   "id": "A03",
   "partido": "erc",
   "de": 4,
@@ -43,6 +59,22 @@
   "fuente": [
    "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=23",
    "Programa electoral de ERC de 2026, p. 23",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "A06",
+  "partido": "pp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 revisará los umbrales que castigan el crecimiento y simplificará las obligaciones de las empresas de hasta 250 trabajadores.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=48",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 48",
    "programa",
    "2026-11"
   ]
@@ -81,6 +113,38 @@
  },
  {
   "fecha": "2026-11-12",
+  "id": "F01",
+  "partido": "pp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 prohíbe por ley las regularizaciones masivas e indiscriminadas y deja el arraigo como reconocimiento individual excepcional.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "F05",
+  "partido": "pp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 sustituye el reparto de menores como respuesta principal por un modelo de protección individualizada con retorno.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=20",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
   "id": "F06",
   "partido": "erc",
   "de": 4,
@@ -91,6 +155,38 @@
   "fuente": [
    "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
    "Programa electoral de ERC de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "G09",
+  "partido": "erc",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone un plan de inversión en redes eléctricas, autoconsumo, almacenamiento y renovables para descarbonizar.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=30",
+   "Programa electoral de ERC de 2026, p. 30",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "H09",
+  "partido": "pp",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=20",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 20",
    "programa",
    "2026-11"
   ]
@@ -113,6 +209,38 @@
  },
  {
   "fecha": "2026-11-12",
+  "id": "I05",
+  "partido": "pp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa nacional pide el castellano y la cooficial como lenguas vehiculares «en equilibrio»; algunos gobiernos autonómicos del PP ensayan la libre elección de lengua.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "J01",
+  "partido": "erc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "En el Parlament votó pedir la retirada de la ley estatal que limita la gestión privada, en defensa del modelo sanitario catalán con hospitales concertados.",
+  "fuente": [
+   "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+   "Programa electoral de ERC de 2026, p. 41",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
   "id": "K01",
   "partido": "erc",
   "de": 2,
@@ -123,6 +251,38 @@
   "fuente": [
    "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=32",
    "Programa electoral de ERC de 2026, p. 32",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "K08",
+  "partido": "pp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "L07",
+  "partido": "pp",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 prohíbe las cuentas en redes sociales a menores de 14 años y exige autorización de los padres hasta los 16.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=45",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 45",
    "programa",
    "2026-11"
   ]

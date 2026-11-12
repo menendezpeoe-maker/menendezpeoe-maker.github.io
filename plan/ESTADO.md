@@ -1,5 +1,12 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar): programa 2026 de Coalición Canaria – Primero Canarias («Defiende Canarias»)
+- Programa oficial: https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf (200, PDF, 9 nov). El titular pasó una copia de 23 páginas; las páginas citadas son las de esa copia.
+- **Aplicado (14 posturas de `ccpc`, con cita y página):** B02 2→3; B07 3~→4 doc.; B08 3~→4 doc.; C02 2~→4 doc.; F07 0→4 doc.; F08 3~→4 doc.; G09 3~→4 doc.; B06, C05, F04 de estimada a documentada con el mismo valor; B05, C03, F03, F05 con fuente 2026 y el mismo valor. `/programas/` lo marca como publicado (9 nov).
+- Pruebas: `posturas`, `paginas` y `test` 21/21. Sin tocar URLs ni cálculo.
+- **No se ha tocado (el programa no dice nada claro):** A01 y B01 (siguen con la fuente parlamentaria), C04, H05, G06, F06 y el resto. El programa es casi todo de agenda canaria.
+- **Falta publicar** (esperar el «publica» del titular).
+
 ## 12 nov 2026 (noche) · PUBLICADO: 10 posturas más de PP y ERC por sus programas 2026
 - Aplicadas las interpretativas con encaje literal: PP A06 4→5, F01 2→1, F05 2→1, H09 3→4, I05 4→5, K08 3→2, L07 4→3; ERC A02 4→5, G09 4→5, J01 3→4 (cada una con cita y página del programa).
 - **Decididos por el titular («decide tú»): no aplicar** PP F02, F06, H07, K04 ni ERC G08: el programa 2026 no respalda esa lectura de forma literal. Se quedan como están, con su fuente anterior.
