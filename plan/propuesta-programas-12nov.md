@@ -144,3 +144,33 @@ L05 | 5~ est → 5 documentada | p32 | «Denunciar e revogar o Concordato… Aco
 L08 | 1~ est → 1 documentada | p25 | modificar Lei de paridade para más mujeres en las listas
 Sin dato nuevo: resto (el programa no trata A02,A04-A07,A09,A10,B03,B05,B09,C02-C05,C07-C09,D02-D04,D06-D09,E01,E04,E07,E09,F02-F08,F09,G01-G09,H02-H03,H04,H07-H09,I01-I08,J*,K03-K08,L01,L02,L04,L06,L07,L09)
 == BNG TERMINADO ==
+
+---
+# Segunda pasada detallada (12 nov): 17 fuentes más para citar
+
+Todas son citas del programa 2026 que respaldan la postura que ya figura (el valor no cambia), salvo A05 del BNG, que pasa de estimada a documentada.
+
+## PP (7)
+C03 | 2[prog2023] → 2, añadir prog2026 | p31-32 | Alta Inspección del Estado; PAU común (sin recentralizar competencias)
+C04 | 1[parl2013] → 1, añadir prog2026 | p8, p15 | «Defendemos el Estado de las Autonomías y el autogobierno… en el marco de la Constitución»
+D07 | 1[decl2022] → 1, añadir prog2026 | p8 | la «monarquía parlamentaria» como parte de la obra común
+E04 | 3[parl2025] → 3, añadir prog2026 | p16-17 | reforma de la Ley del Menor: más tiempo de internamiento en delitos graves (sin tocar la edad)
+H01 | 4[prog2025] → 4, añadir prog2026 | p21 | ley de programación y financiación de la defensa; compromisos con aliados (sin cifra)
+H04 | 1[parl2025] → 1, añadir prog2026 | p57 | soluciones diplomáticas «con socios clave, como Israel»
+H06 | 5[prog2025] → 5, añadir prog2026 | p21 | «reforzaremos los contingentes españoles de la OTAN»
+
+## ERC (7)
+B06 | 5[prog2025] → 5, añadir prog2026 | p19 #59 | más IVA/ITP a viviendas vacías, segundas residencias y alquiler de temporada
+B07 | 5[prog2025] → 5, añadir prog2026 | p19 #59, p22 #84 | gravar usos no habituales; fin de la ley Beckham
+C01 | 5[decl2025] → 5, añadir prog2026 | p11 | modelo de «concert econòmic solidari»
+E01 | 2[parl2026] → 2, añadir prog2026 | p43 #242-243 | más jueces para reincidencia; revisión penal de armas y robo de cable
+G01 | 2[parl2025] → 2, añadir prog2026 | p31 #147 | Fons de Transició Nuclear
+G02 | 2[prog2023] → 2, añadir prog2026 | p30 #135 | condicionar líneas MAT a informe de biodiversidad
+J02 | 2[prog2025] → 2, añadir prog2026 | p41 #233 | «frenar la privatització de la sanitat»
+
+## BNG (3)
+A05 | 1~ est → 1 documentada | p19 | «supresión do veto ao financiamento público de pensións, con cargo aos orzamentos e aos impostos que gravan a riqueza»
+C03 | 1[prog2023] → 1, añadir prog2026 | p34, p85 | «transferencia plena das competencias de ensino á Galiza»
+I01 | 1[prog2023] → 1, añadir prog2026 | p34 (comprobar página) | «única rede de ensino, a pública»
+
+Total acumulado de la propuesta: ~110 posturas con fuente 2026 nueva o mejorada.
