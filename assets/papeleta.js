@@ -1657,6 +1657,16 @@ function partyCard(m, rank) {
     <div class="res-actions"><button type="button" class="btn btn-ghost btn-sm" data-vs="${m.pid}">Comparar con otra candidatura</button></div>
   </article>`;
 }
+// Programas electorales publicados de las candidaturas de la provincia (9 nov): enlaces oficiales, en el orden fijo del test
+// (no por coincidencia) y sin tocar el cálculo. Los datos vienen de data/partidos.json (programas).
+function programsBlock(pr, M) {
+  const progs = (PD && PD.programas) || {};
+  const pub = PD.order.filter((pid) => M.avail.includes(pid) && progs[pid]);
+  const items = pub.map((pid) => `<li>${logo(pid, "sm")}<span><b>${esc(P[pid].ab)}</b> <a href="${esc(progs[pid].url)}" target="_blank" rel="noopener noreferrer">${esc(progs[pid].titulo)}<span class="sr"> (se abre en una pestaña nueva)</span></a></span></li>`).join("");
+  return `<div class="prog-res"><p class="subh">Programas electorales del 29N</p>
+    <p class="small muted">${pub.length ? `Estas candidaturas de ${esc(pr.name)} ya han publicado su programa. Los enlaces van en el orden fijo del test, no por coincidencia.` : `Ninguna candidatura de ${esc(pr.name)} ha publicado todavía su programa.`} <a href="/programas/">Ver el estado de todos los programas</a>.</p>
+    ${pub.length ? `<ul class="prog-res-list">${items}</ul>` : ""}</div>`;
+}
 function renderParties() {
   const st = ST(), M = MODEL, pr = PROV[st.prov];
   const list = (UI.scope === "prov" ? M.prov : M.all).slice(0, 10);
@@ -1677,6 +1687,7 @@ function renderParties() {
     <p class="small muted">${UI.scope === "prov" ? (M.prov.length < 10 ? `En ${esc(pr.name)} se presentan ${M.prov.length} candidaturas. Cambia a «Toda España» para ver tu top 10 con partidos de otros territorios.` : `Las 10 candidaturas de ${esc(pr.name)} con más coincidencia.`) : "Las candidaturas que no se presentan en tu provincia aparecen atenuadas."}</p>
     <p class="small muted">En ${esc(pr.name)} se han proclamado también otras candidaturas que aún no están en el test porque no tenemos sus posturas con fuente. <a href="/provincias/${esc(st.prov)}/#h-boe">Ver todas las candidaturas proclamadas en ${esc(pr.name)}</a>.</p>
     <ol class="rank">${rows}</ol>
+    ${programsBlock(pr, M)}
     <div class="sec-head" style="padding-top:20px"><h3 class="h2" style="font-size:clamp(21px,3vw,27px)">Tu top 3 en ${esc(pr.name)}, en detalle</h3><p class="sub">Por qué coincides, sus propuestas comparadas con tus respuestas y dónde chocáis.</p></div>
     <div class="pcards">${M.prov.slice(0, 3).map((m, i) => partyCard(m, i)).join("")}</div>
     <div id="pc-extra" class="pcards" style="margin-top:22px"></div>`;
