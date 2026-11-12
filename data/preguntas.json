@@ -1742,7 +1742,7 @@
     "upn": 1,
     "gbai": 4,
     "bng": 5,
-    "ccpc": 2,
+    "ccpc": 3,
     "upc": 5,
     "drago": 5,
     "comp": 4,
@@ -1837,10 +1837,10 @@
      "2026-11"
     ],
     "ccpc": [
-     "https://rtvc.es/cc-apoyara-el-primer-decreto-de-vivienda-y-rechazara-el-segundo-01-octubre-2026/",
-     "RTVC, CC apoyará el primer decreto de vivienda y rechazará el segundo, 01/10/2026",
-     "declaracion",
-     "2026-10-01"
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
+     "programa",
+     "2026-11"
     ],
     "adel": [
      "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
@@ -1909,7 +1909,7 @@
     "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
     "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
     "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
-    "ccpc": "Pidió más oferta de vivienda y anunció su rechazo al segundo decreto de vivienda de octubre de 2026 por reducir, según dijo, la oferta de alquiler.",
+    "ccpc": "Su programa de 2026 plantea un fondo estatal de ocho años para vivienda pública y asequible y agilizar la vivienda protegida.",
     "adel": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
     "cha": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
     "upc": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler.",
@@ -2333,10 +2333,10 @@
      "2023-04-24"
     ],
     "ccpc": [
-     "https://rtvc.es/claves-nueva-ley-vivienda-parlamento-canarias-12-noviembre-2025/",
-     "RTVC, aprobación de la ley canaria de vivienda vacacional (Ley 6/2025)",
-     "parlamento",
-     "2025-11-12"
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11",
+     "programa",
+     "2026-11"
     ],
     "adel": [
      "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
@@ -2404,7 +2404,7 @@
     "pod": "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
     "erc": "La ponencia defiende intervenir los usos turísticos de las viviendas.",
     "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
-    "ccpc": "Su Gobierno impulsó y aprobó la ley canaria que congela nuevas viviendas vacacionales hasta que cada ayuntamiento las ordene en su planeamiento.",
+    "ccpc": "Su programa de 2026 pide cobertura jurídica para que Canarias y sus municipios limiten los usos turísticos donde haya presión sobre la vivienda.",
     "adel": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
     "fa": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",
     "upc": "El programa de Nueva Canarias, socio de UPC, propone impedir que crezca el alquiler vacacional en las zonas gentrificadas.",
@@ -2460,7 +2460,6 @@
     "pnv",
     "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -2511,6 +2510,12 @@
      "Programa electoral del BNG de 2026, p. 13",
      "programa",
      "2026-11"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2520,7 +2525,8 @@
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
     "erc": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
     "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
-    "bng": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas."
+    "bng": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas.",
+    "ccpc": "Su programa de 2026 propone incentivos fiscales para que pequeños propietarios incorporen viviendas vacías a programas de alquiler asequible."
    }
   },
   {
@@ -2549,7 +2555,7 @@
     "upn": 2,
     "gbai": 4,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -2566,7 +2572,6 @@
     "upn",
     "gbai",
     "bng",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -2630,6 +2635,12 @@
      "Última Hora: MÉS per Mallorca condiciona su apoyo a las medidas de vivienda del Gobierno (13 ene 2025)",
      "prensa",
      "2025-01-13"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2641,7 +2652,8 @@
     "erc": "Su programa de 2026 sube el IVA y el ITP en compras no destinadas a vivienda habitual y acaba con la ley Beckham.",
     "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
     "drago": "Drago Canarias propone limitar la venta de viviendas a extranjeros, una medida más restrictiva que un impuesto.",
-    "mes": "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda."
+    "mes": "MÉS rechaza gravar a compradores por su nacionalidad y prefiere limitar la compra según el uso de la vivienda.",
+    "ccpc": "Su programa de 2026 propone reformas para limitar la compra de vivienda en Canarias por extranjeros, con un régimen específico para las islas."
    }
   },
   {
@@ -2671,7 +2683,7 @@
     "upn": 2,
     "gbai": 5,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -2695,7 +2707,6 @@
     "pnv",
     "upn",
     "gbai",
-    "ccpc",
     "drago",
     "jmm",
     "upl",
@@ -2820,6 +2831,12 @@
      "Programa de PACMA para las generales de 2023, p. 65",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2841,7 +2858,8 @@
     "falange": "Propone restaurar el Instituto Nacional de Vivienda para crear un parque de vivienda social y construir vivienda pública.",
     "ph": "Estimación: el programa propone que las viviendas vacías de los bancos formen un «parque de vivienda pública en alquiler»; no habla de construir directamente.",
     "pcte": "Estimación: el programa de 2019 propone una bolsa de viviendas públicas en alquiler con precios fijos regulados por el Estado.",
-    "pacma": "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente."
+    "pacma": "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente.",
+    "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos."
    }
   },
   {
@@ -3096,7 +3114,7 @@
     "erc": 2,
     "junts": 2,
     "bng": 2,
-    "ccpc": 2,
+    "ccpc": 4,
     "upc": 2,
     "drago": 2,
     "comp": 5,
@@ -3116,7 +3134,6 @@
     "erc",
     "junts",
     "bng",
-    "ccpc",
     "upc",
     "drago",
     "cha",
@@ -3151,6 +3168,12 @@
      "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
      "programa",
      "2026-11"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=8",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 8",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3160,7 +3183,8 @@
     "pod": "Estimación: sin postura nacional publicada sobre el reparto de la financiación autonómica.",
     "erc": "Estimación: ERC pide ordinalidad y un modelo singular para Cataluña, no criterios por habitante.",
     "comp": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
-    "pp": "Su programa de 2026 propone un fondo de nivelación transitorio y un sistema que amplíe los recursos de todas las comunidades autónomas."
+    "pp": "Su programa de 2026 propone un fondo de nivelación transitorio y un sistema que amplíe los recursos de todas las comunidades autónomas.",
+    "ccpc": "Su programa de 2026 exige una financiación autonómica suficiente que reconozca el coste real de las islas, la población efectiva y la pobreza."
    }
   },
   {
@@ -3288,10 +3312,10 @@
      "2023-07"
     ],
     "ccpc": [
-     "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=2",
-     "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 2",
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=8",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 8",
      "programa",
-     "2019-10"
+     "2026-11"
     ],
     "upc": [
      "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=14",
@@ -3343,7 +3367,7 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
     "comp": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
     "upn": "UPN defiende las competencias forales de Navarra, educación incluida, frente a leyes estatales.",
-    "ccpc": "Coalición Canaria defiende el máximo nivel de autogobierno y competencias para Canarias, no su recentralización.",
+    "ccpc": "Su programa de 2026 se opone a la recentralización y a cualquier retroceso en la capacidad de Canarias para decidir sobre sus asuntos.",
     "upc": "Nueva Canarias, socio de UPC, defiende ampliar el autogobierno con más traspasos, no devolver competencias al Estado.",
     "cha": "CHA reclama el máximo techo competencial para Aragón y más traspasos del Estado, no su recentralización.",
     "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
@@ -3520,7 +3544,6 @@
     "d21",
     "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -3605,6 +3628,12 @@
      "Programa electoral general de FE de las JONS para las generales de 2023, p. 4",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=3",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 3",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3618,7 +3647,8 @@
     "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
     "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación.",
     "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes.",
-    "falange": "Propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España."
+    "falange": "Propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España.",
+    "ccpc": "Su programa de 2026 defiende el derecho de Canarias a decidir su rumbo dentro del Estado español y del marco europeo."
    }
   },
   {
@@ -6684,10 +6714,10 @@
      "2023-07"
     ],
     "ccpc": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
-     "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox sobre prioridad nacional en las prestaciones públicas, 25/06/2026",
-     "parlamento",
-     "2026-06-25"
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=3",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 3",
+     "programa",
+     "2026-11"
     ],
     "comp": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
@@ -6755,7 +6785,7 @@
     "bildu": "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
     "upn": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación.",
-    "ccpc": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
+    "ccpc": "Su programa de 2026 afirma que la canariedad se comparte con quienes nacieron en las islas y con quienes las han hecho su hogar.",
     "comp": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "adel": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
     "fa": "El espacio de Frente Amplio rechaza discriminar por origen y defiende la igualdad de derechos de las personas migrantes.",
@@ -6814,7 +6844,6 @@
     "upn",
     "gbai",
     "bng",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -6877,6 +6906,12 @@
      "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
      "programa",
      "2023-07"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -6887,7 +6922,8 @@
     "erc": "Su programa de 2026 propone vías legales y seguras para migrar y una política migratoria centrada en los derechos humanos.",
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
-    "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes."
+    "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes.",
+    "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada."
    }
   },
   {
@@ -6986,10 +7022,10 @@
      "2025-04-10"
     ],
     "ccpc": [
-     "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
-     "RTVC, convalidación en el Congreso del decreto de reparto de menores migrantes",
-     "parlamento",
-     "2025-04-10"
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19",
+     "programa",
+     "2026-11"
     ],
     "upc": [
      "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89",
@@ -7031,7 +7067,7 @@
     "erc": "Estimación: posición intermedia por la defensa de las competencias autonómicas.",
     "pnv": "Pide una distribución equitativa de los menores migrantes no acompañados entre las comunidades autónomas.",
     "bildu": "Apoyó el decreto para repartir a los menores migrantes entre comunidades.",
-    "ccpc": "Coalición Canaria impulsó la reforma de la ley de extranjería para repartir de forma obligatoria a los menores migrantes.",
+    "ccpc": "Su programa de 2026 exige una solidaridad territorial obligatoria y automática, con traslados sin negociaciones caso a caso.",
     "upc": "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes.",
     "junts": "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería.",
     "ie": "Estimación: el contrato rechaza la «imposición de políticas migratorias contrarias a los intereses nacionales» desde la UE; no cita el reparto entre comunidades.",
@@ -7162,6 +7198,7 @@
     "d21": 3,
     "upn": 3,
     "bng": 3,
+    "ccpc": 4,
     "comp": 3,
     "cha": 4,
     "existe": 5,
@@ -7212,6 +7249,12 @@
      "Ministerio para la Transición Ecológica y el Reto Demográfico, nota de prensa sobre las ayudas al funcionamiento en Soria, Teruel y Cuenca (13 de octubre de 2022)",
      "gobierno",
      "2022-10-13"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=13",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 13",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7220,7 +7263,8 @@
     "fa": "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos.",
     "pod": "Estimación: sin postura nacional reciente sobre una fiscalidad rural diferenciada.",
     "existe": "Teruel Existe propone una fiscalidad más favorable en las zonas despobladas para fijar población.",
-    "soria": "Soria ¡Ya! reclama una fiscalidad diferenciada y más favorable para las provincias escasamente pobladas."
+    "soria": "Soria ¡Ya! reclama una fiscalidad diferenciada y más favorable para las provincias escasamente pobladas.",
+    "ccpc": "Su programa de 2026 defiende mantener la deducción del 60 % del IRPF en La Palma y extenderla a La Gomera y El Hierro para sostener la población."
    }
   },
   {
@@ -7249,7 +7293,7 @@
     "upn": 3,
     "gbai": 4,
     "bng": 5,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -7268,7 +7312,6 @@
     "pnv",
     "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "comp",
@@ -7331,6 +7374,12 @@
      "Programa electoral de ERC de 2026, p. 41",
      "programa",
      "2026-11"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=9",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 9",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7342,7 +7391,8 @@
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
     "pp": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
     "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
-    "ph": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales."
+    "ph": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales.",
+    "ccpc": "Su programa de 2026 exige una aportación estatal suficiente y estable al sistema de dependencia y una estrategia de cuidados de larga duración."
    }
   },
   {
@@ -8494,7 +8544,7 @@
     "upn": 2,
     "gbai": 4,
     "bng": 4,
-    "ccpc": 3,
+    "ccpc": 4,
     "upc": 5,
     "drago": 5,
     "comp": 5,
@@ -8512,7 +8562,6 @@
     "junts",
     "upn",
     "gbai",
-    "ccpc",
     "upc",
     "drago",
     "cha",
@@ -8610,6 +8659,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
      "programa",
      "2025-12"
+    ],
+    "ccpc": [
+     "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15",
+     "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8627,7 +8682,8 @@
     "comp": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo.",
     "fo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión.",
     "falange": "Propone nuclear como fuente principal, ciclo combinado e hidráulica, y frenar la transición energética.",
-    "ie": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables."
+    "ie": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables.",
+    "ccpc": "Su programa de 2026 reduce la generación fósil a medida que avanzan renovables, almacenamiento y redes, sin perder seguridad de suministro."
    }
   },
   {
