@@ -339,7 +339,7 @@
     "pod": 5,
     "salf": 1,
     "d21": 3,
-    "erc": 4,
+    "erc": 5,
     "junts": 2,
     "pnv": 3,
     "bildu": 5,
@@ -408,10 +408,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
-     "The Objective, votación en el Congreso del 26/06/2025",
-     "parlamento",
-     "2025-06-26"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
+     "Programa electoral de ERC de 2026, p. 21",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
@@ -506,7 +506,8 @@
     "ph": "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
     "ie": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
     "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
-    "pp": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos."
+    "pp": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos.",
+    "erc": "Su programa de 2026 sube el IRPF a las ganancias de capital y mantiene los impuestos a grandes fortunas, banca y energéticas."
    }
   },
   {
@@ -966,7 +967,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 4,
+    "pp": 5,
     "vox": 4,
     "fa": 1,
     "pod": 1,
@@ -999,10 +1000,10 @@
    ],
    "src": {
     "pp": [
-     "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31",
-     "Ponencia política del XXI Congreso del PP (junio de 2025)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=48",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 48",
      "programa",
-     "2025-06"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=22",
@@ -1019,7 +1020,7 @@
    },
    "why": {
     "psoe": "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
-    "pp": "Propone eliminar los umbrales por tamaño para que las obligaciones que hoy se activan con 50 trabajadores se apliquen a partir de 250.",
+    "pp": "Su programa de 2026 revisará los umbrales que castigan el crecimiento y simplificará las obligaciones de las empresas de hasta 250 trabajadores.",
     "vox": "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas.",
     "pod": "Estimación: contraria a suavizar obligaciones laborales de las empresas, en línea con su defensa de los derechos laborales.",
     "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías."
@@ -6218,7 +6219,7 @@
    "lr": -1,
    "pos": {
     "psoe": 5,
-    "pp": 2,
+    "pp": 1,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -6261,10 +6262,10 @@
      "2026-01-27"
     ],
     "pp": [
-     "https://theobjective.com/espana/politica/2026-01-29/pp-tribunales-regularizacion-inmigrantes/",
-     "The Objective (con Europa Press), entrevista de Feijóo en Antena 3, 29/01/2026",
-     "declaracion",
-     "2026-01-29"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 19",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
@@ -6388,7 +6389,8 @@
     "fo": "Propone expulsar a quienes estén en situación irregular y vetar la regularización de quienes intentaron entrar de forma ilegal.",
     "falange": "Propone repatriar a los extranjeros que residan en España sin contrato de trabajo y fronteras cerradas.",
     "ie": "Rechaza regularizar: quien entre ilegalmente será expulsado sin derecho a regularización.",
-    "ph": "Estimación: el programa afirma «Ningún ser humano es ilegal» y pide no criminalizar al migrante; no cita la regularización."
+    "ph": "Estimación: el programa afirma «Ningún ser humano es ilegal» y pide no criminalizar al migrante; no cita la regularización.",
+    "pp": "Su programa de 2026 prohíbe por ley las regularizaciones masivas e indiscriminadas y deja el arraigo como reconocimiento individual excepcional."
    }
   },
   {
@@ -6901,7 +6903,7 @@
    "lr": -1,
    "pos": {
     "psoe": 5,
-    "pp": 2,
+    "pp": 1,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -6948,10 +6950,10 @@
      "2025-03-18"
     ],
     "pp": [
-     "https://orain.eus/es/politica/2025/04/10/el-congreso-refrenda-decreto-ley-para-reubicar-a-menores-migrantes-con-voto-en-contra-del-pp/",
-     "Orain (EFE), convalidación del decreto de reubicación de menores migrantes, 10/04/2025",
-     "parlamento",
-     "2025-04-10"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=20",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 20",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
@@ -7022,7 +7024,7 @@
    },
    "why": {
     "psoe": "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
-    "pp": "Votó contra el decreto ley que fija un reparto obligatorio y permanente de menores migrantes entre comunidades.",
+    "pp": "Su programa de 2026 sustituye el reparto de menores como respuesta principal por un modelo de protección individualizada con retorno.",
     "vox": "Vox votó contra el decreto ley que reparte entre comunidades a los menores migrantes no acompañados.",
     "fa": "Registró con PSOE y CC la reforma para repartir menores migrantes no acompañados, convalidada después como decreto-ley.",
     "pod": "Votó en contra de la proposición de Vox que rechazaba el reparto territorial de menores migrantes no acompañados.",
@@ -8485,7 +8487,7 @@
     "salf": 1,
     "pacma": 5,
     "d21": 3,
-    "erc": 4,
+    "erc": 5,
     "junts": 3,
     "pnv": 3,
     "bildu": 4,
@@ -8550,10 +8552,10 @@
      "2026-03"
     ],
     "erc": [
-     "https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf",
-     "Ponència política del 30è Congrés Nacional d'Esquerra Republicana",
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=30",
+     "Programa electoral de ERC de 2026, p. 30",
      "programa",
-     "2025-03"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=20",
@@ -8616,7 +8618,7 @@
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
     "salf": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
-    "erc": "La ponencia apuesta por un sistema energético basado en renovables.",
+    "erc": "Su programa de 2026 propone un plan de inversión en redes eléctricas, autoconsumo, almacenamiento y renovables para descarbonizar.",
     "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
     "bildu": "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
     "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
@@ -9819,7 +9821,7 @@
    "lr": 1,
    "pos": {
     "psoe": 1,
-    "pp": 3,
+    "pp": 4,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -9864,10 +9866,10 @@
      "2024-10-15"
     ],
     "pp": [
-     "https://www.eldiario.es/politica/feijoo-evita-respaldar-centros-deportacion-refugiados-meloni-avalado-partido-popular-europeo_1_11740606.html",
-     "eldiario.es, Feijóo en la cumbre del PPE, 17/10/2024",
-     "declaracion",
-     "2024-10-17"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=20",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 20",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=102",
@@ -9950,7 +9952,7 @@
    },
    "why": {
     "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
-    "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público.",
+    "pp": "Su programa de 2026 usará terceros países seguros y primeros países de asilo e impulsará acuerdos para crear centros de retorno fuera de la UE.",
     "vox": "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
     "fa": "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
     "erc": "Su programa de 2026 propone poner fin a la externalización de las fronteras europeas.",
@@ -10486,7 +10488,7 @@
    "lr": 1,
    "pos": {
     "psoe": 2,
-    "pp": 4,
+    "pp": 5,
     "vox": 5,
     "fa": 1,
     "pod": 1,
@@ -11195,7 +11197,7 @@
     "salf": 2,
     "pacma": 4,
     "d21": 2,
-    "erc": 3,
+    "erc": 4,
     "junts": 2,
     "pnv": 3,
     "bildu": 5,
@@ -11271,10 +11273,10 @@
      "2024-04-01"
     ],
     "erc": [
-     "https://www.redaccionmedica.com/autonomias/cataluna/el-parlament-catalan-pide-la-retirada-de-la-ley-de-gestion-publica-del-sns-3607",
-     "Redacción Médica, votación en el Parlament del 12/03/2026",
-     "parlamento",
-     "2026-03-12"
+     "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
+     "Programa electoral de ERC de 2026, p. 41",
+     "programa",
+     "2026-11"
     ],
     "junts": [
      "https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.amp.html",
@@ -11360,7 +11362,8 @@
     "fo": "Propone acabar con el proceso de externalización y privatización de la sanidad.",
     "falange": "Propone poner fin a las prácticas de externalización y privatización de la sanidad.",
     "ph": "Sostiene que la solución no es la privatización sino mejorar la gestión pública con transparencia; la salud no puede ser negocio.",
-    "pacma": "Estimación: el programa propone reintegrar al sistema sanitario público los servicios privatizados y vincula las privatizaciones a la crisis de la sanidad."
+    "pacma": "Estimación: el programa propone reintegrar al sistema sanitario público los servicios privatizados y vincula las privatizaciones a la crisis de la sanidad.",
+    "erc": "Su programa de 2026 propone blindar una sanidad pública universal y frenar la privatización de la sanidad."
    }
   },
   {
@@ -13040,7 +13043,7 @@
    "lr": -1,
    "pos": {
     "psoe": 3,
-    "pp": 3,
+    "pp": 2,
     "vox": 1,
     "fa": 5,
     "pod": 5,
@@ -13087,10 +13090,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=30",
-     "Programa electoral del PP de 2023",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50",
      "programa",
-     "2023-07-04"
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110",
@@ -13137,7 +13140,7 @@
    },
    "why": {
     "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
-    "pp": "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
+    "pp": "Su programa de 2026 definirá nuevos regadíos y renovará los existentes para reducir su consumo de agua y de energía.",
     "vox": "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
     "fa": "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
     "erc": "Su programa de 2026 exige financiación estatal para modernizar los regadíos de Cataluña y mejorar la eficiencia hídrica.",
@@ -13968,7 +13971,7 @@
    "lr": 0,
    "pos": {
     "psoe": 5,
-    "pp": 4,
+    "pp": 3,
     "vox": 1,
     "fa": 4,
     "pod": 2,
@@ -14004,10 +14007,10 @@
      "2026-02-03"
     ],
     "pp": [
-     "https://www.menorca.info/actualidad/nacional/2025/12/13/2530889/propone-prohibir-acceso-redes-sociales-menores-anos.html",
-     "Menorca (Europa Press), enmiendas del PP a la ley de menores en entornos digitales, 13/12/2025",
-     "parlamento",
-     "2025-12-13"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=45",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 45",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://theobjective.com/espana/politica/2026-02-03/abascal-redes-sociales-menores-censurar/",
@@ -14030,7 +14033,7 @@
    },
    "why": {
     "psoe": "Sánchez anunció en 2026 que España prohibirá el acceso a las redes sociales a los menores de 16 años.",
-    "pp": "Propuso por enmienda prohibir las redes sociales a menores de 16 años, salvo de 14 a 16 con permiso paterno.",
+    "pp": "Su programa de 2026 prohíbe las cuentas en redes sociales a menores de 14 años y exige autorización de los padres hasta los 16.",
     "vox": "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
     "fa": "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia.",
     "pod": "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
