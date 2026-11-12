@@ -1191,5 +1191,6 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .sp-nav a { touch-action: manipulation; -webkit-tap-highlight-color: rgba(246, 221, 47, .35); }
 .sp-nav a:not(.btn) { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 12px; }
 @media (max-width: 560px) { .head-row .sp-nav { margin-inline: 0; gap: 2px 4px; } .head-row .sp-nav a:not(.btn) { padding: 6px 7px; font-size: 14px; } }
+@media (max-width: 340px) { .head-row .sp-nav a[href="/temas/"] { display: none; } }
 @media (max-width: 400px) { .head-row .sp-nav { gap: 0 2px; } .head-row .sp-nav a:not(.btn) { padding: 6px 4px; font-size: 13.5px; } .head-row .sp-nav .btn-sm { padding-inline: 11px; font-size: 13.5px; } }
 @media (hover: none) { .sp-nav a:not(.btn):hover { text-decoration: none; } }
