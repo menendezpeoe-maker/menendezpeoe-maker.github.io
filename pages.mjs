@@ -74,7 +74,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
   <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
-  <nav class="head-nav sp-nav" aria-label="Secciones"><a href="/partidos/">Partidos</a><a href="/temas/">Temas</a><a class="btn btn-primary btn-sm" href="/">Hacer el test</a></nav>
+  <nav class="head-nav sp-nav" aria-label="Secciones"><a href="/partidos/">Partidos</a><a href="/programas/">Programas</a><a href="/temas/">Temas</a><a class="btn btn-primary btn-sm" href="/">Hacer el test</a></nav>
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>

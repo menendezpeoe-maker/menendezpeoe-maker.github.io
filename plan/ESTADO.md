@@ -1,5 +1,9 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar): Programas electorales más visibles
+- Enlace «Programas» en la cabecera de la app y de las páginas informativas (móvil: 4 pestañas iguales); bloque destacado «Programas electorales del 29N» en la portada, justo debajo del test, con el recuento «N de 29» generado al publicar (`<!--PROG_STATS-->` en `publish.mjs`, desde `PROGRAMAS`). CSS en `mejora.css` sección 18. Mismas URLs.
+- Pruebas `paginas`, `test` y `difusion` 22/22. Pendiente: «publica» del titular tras ver las capturas.
+
 ## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar): programa 2026 de Coalición Canaria – Primero Canarias («Defiende Canarias»)
 - Programa oficial: https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf (200, PDF, 9 nov). El titular pasó una copia de 23 páginas; las páginas citadas son las de esa copia.
 - **Aplicado (14 posturas de `ccpc`, con cita y página):** B02 2→3; B07 3~→4 doc.; B08 3~→4 doc.; C02 2~→4 doc.; F07 0→4 doc.; F08 3~→4 doc.; G09 3~→4 doc.; B06, C05, F04 de estimada a documentada con el mismo valor; B05, C03, F03, F05 con fuente 2026 y el mismo valor. `/programas/` lo marca como publicado (9 nov).

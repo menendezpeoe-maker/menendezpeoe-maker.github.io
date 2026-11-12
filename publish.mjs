@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { buildPages } from "./pages.mjs";
+import { PROGRAMAS } from "./src/programas.src.mjs";
 const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]; const [y, m, d] = String(iso).split("-").map(Number); return `${d} de ${M[m - 1]} de ${y}`; };
 
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
@@ -65,6 +66,7 @@ const page = readFileSync("papeleta-29n.html", "utf8");
 const body = page.slice(page.indexOf('<a class="skip"'))
   .replace('<script src="assets/papeleta.js" defer></script>', "")
   .replace('<script src="assets/mejora.js" defer></script>', "")
+  .replace("<!--PROG_STATS-->", (() => { const PD = JSON.parse(readFileSync("data/partidos.json", "utf8")); const live = PD.order.filter((pid) => !PD.parties.find((x) => x.id === pid)?.out); const n = live.filter((pid) => PROGRAMAS.publicados[pid]).length; return `<b>${n} de ${live.length}</b> candidaturas lo han publicado ya.`; })())
   .replace(/<span id="foot-version">[^<]*<\/span>/, `<span id="foot-version">Preguntas y posturas actualizadas el ${fmtDateEs(JSON.parse(readFileSync("data/preguntas.json", "utf8")).updated)}</span>`)
   .replace('</p>\n  </div>\n</footer>', '</p>\n    <details class="foot-more"><summary>Más información</summary><nav aria-label="Más información"><a href="programas/">Programas</a><a href="debates/">Debates</a><a href="calendario/">Calendario</a><a href="provincias/">Provincias</a><a href="glosario/">Glosario</a><a href="sobre/">Sobre el proyecto</a><a href="prensa/">Prensa</a></nav></details>\n  </div>\n</footer>')
   .trim();

@@ -37,12 +37,14 @@
    con una barra inferior (no solo con el color de fondo). WCAG 2.5.8, 1.4.1 (uso del color), 1.4.4. */
 .navlink { display: inline-flex; align-items: center; justify-content: center; min-height: var(--touch-min); padding: 0 14px; font-size: var(--font-small); transition: background-color var(--transition), color var(--transition); }
 .navlink[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--ink); }
+a.navlink { text-decoration: none; color: var(--ink-2); font-weight: 650; border-radius: var(--r2); }
+a.navlink:hover { background: var(--rule-2); color: var(--ink); }
 .navlink:focus-visible, .brand:focus-visible { outline: var(--focus-ring); outline-offset: 2px; box-shadow: var(--focus-halo); }
 /* MEJORA (móvil, ≤ 560 px): las tres secciones se reparten el ancho como pestañas iguales, alcanzables
    con el pulgar y sin saltos de línea. WCAG 2.5.8, 1.4.10 (reflujo). */
 @media (max-width: 560px) {
-  .head-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; margin-inline: 0; }
-  .navlink { padding: 0 6px; text-align: center; line-height: 1.2; }
+  .head-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; margin-inline: 0; }
+  .navlink { padding: 0 2px; text-align: center; line-height: 1.2; font-size: 14px; }
 }
 
 /* ─── 3. Selector de versión ───────────────────────────────────────────────────────────── */
@@ -956,3 +958,13 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
   #r-share .share-more { order: 7; }
   #r-share .share-panel > details.more { order: 8; }
 }
+
+/* 18 · Programas electorales: bloque destacado en la portada */
+.prog-band{padding-block:6px}
+.prog-card{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;padding:18px 20px;border:2px solid var(--ink);border-radius:16px;background:var(--mark-2)}
+.prog-txt{flex:1 1 320px;min-width:0}
+.prog-txt .h2{margin:2px 0 6px}
+.prog-lede{margin:0;color:var(--ink-2);line-height:1.5}
+.prog-lede b{color:var(--ink)}
+.prog-cta{flex:0 0 auto}
+@media (max-width:620px){.prog-card{padding:16px}.prog-cta{width:100%;text-align:center}}
