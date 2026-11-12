@@ -1,5 +1,14 @@
 # Estado del plan (lo más reciente arriba)
 
+## 12 nov 2026 (noche) · GUARDADO EN `fuente` (sin publicar en `main`): programas 2026 de PP, ERC y BNG incorporados
+- El titular pasó los tres PDF oficiales (PP «Reconstrucción Nacional», ERC e2026-programa, BNG Xerais 2026) y dio el OK «haz lo más profesional». Propuesta y páginas en `plan/propuesta-programas-12nov.md`.
+- **Aplicado (117 posturas con fuente 2026 y página `#page=N`):** PP 46, ERC 42, BNG 29. Cada una con justificación nueva (`JUSTIF`) basada en el programa.
+- **Valor/estimación que cambian (19):** ERC A01 4→5, A03 4→5, F06 4→5, K01 2→1; ERC A06 (est. 2→3 doc.), F08 (est.→doc. 4), I03 (est. 2→1 doc.); PP C02, C07, K02 (est.→doc., mismo valor); BNG A05, B04, B06, D05, K02, L05, L08 (est.→doc., mismo valor), C06 (est. 4→5 doc.), E05 (est. 5→4 doc.).
+- **`/programas/`:** PP, ERC y BNG pasan a «publicado» con enlace oficial (`PROGRAMAS.publicados`); `pages.mjs` compara la URL sin el `#page=` para contar «posturas revisadas con él» (46/42/29). `comprobado`: 12 nov.
+- **Pendiente de decisión del titular (regla 8, evidencia discutible; NO aplicado):** PP A06 4→5, F01 2→1, F02 2→3, F05 2→1, F06 3→4, H07 4→3, H09 3→4, I05 4→5 (fuente ya añadida con el valor actual), K04 5→4, K08 3→2, L07 4→3; ERC A02 4→5, G08 0→3~, G09 4→5, J01 3→4. En K04, K08, L07, F01, F02, F05, F06, H07, H09 y A06 del PP no se cambió la fuente para no dejar un valor que el programa 2026 no respalda del todo.
+- **Pruebas:** `posturas` 5/5, `paginas` 7/7, `test` 12/12. Sin tocar URLs, cálculo ni diseño. El enlace del BNG da 403 a `curl` (bloqueo a bots); el PDF se leyó desde la copia que pasó el titular.
+- **Falta publicar** (esperar el «publica» del titular): generar `dist/`, hacer commit de `src/lastmod.json` y publicar en `main`.
+
 ## 12 nov 2026 · PUBLICADO (main 60019a9): fuera el CTA fijo de las páginas informativas y cabecera más fácil de pulsar (aviso del titular, iPhone)
 - El titular vio, en iPhone/Safari, que «Partidos» y «Temas» de la cabecera de las páginas informativas no respondían y que el botón fijo «Hacer el test · 3 min» molestaba a quien busca información. Se quitó `.sticky-cta` (HTML en `pages.mjs`, CSS en `papeleta.css`, y el seguimiento en `stats.js`).
 - Cabecera de esas páginas (`.sp-nav`): enlaces de 44 px de alto con separación del borde (gesto «atrás» de iOS), `touch-action: manipulation`, sin `:hover` en pantallas táctiles y `z-index` por encima de otras capas. En Chromium con tamaño de iPhone navegaba bien antes y después; **la causa exacta en Safari no se pudo reproducir**: pedir al titular que confirme en su iPhone (y la versión de iOS si sigue fallando).

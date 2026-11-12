@@ -69,7 +69,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
   // Programa del 29N de cada candidatura (src/programas.src.mjs): enlace oficial o «aún no publicado»
   const PROG = PROGRAMAS.publicados, progChecked = fmtDate(PROGRAMAS.comprobado);
-  const progReviewed = (pid) => PROG[pid] ? B.questions.filter((q) => q.src?.[pid]?.[0] === PROG[pid].url).length : 0;
+  const progReviewed = (pid) => PROG[pid] ? B.questions.filter((q) => q.src?.[pid]?.[0]?.split("#")[0] === PROG[pid].url).length : 0;
   const progDD = (pid) => PROG[pid] ? `<a href="${esc(PROG[pid].url)}" target="_blank" rel="noopener noreferrer">${esc(PROG[pid].titulo)}</a> (${esc(fmtDate(PROG[pid].fecha))})` : `Aún no publicado (comprobado el ${esc(progChecked)}). <a href="/programas/">Estado de todos los programas</a>`;
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
