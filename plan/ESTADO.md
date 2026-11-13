@@ -2,7 +2,7 @@
 
 ## 13 nov 2026 (S1c) · Revisión de Vox, EAJ-PNV y Adelante Andalucía con sus programas del 29N
 - **Vox (programa de 66 págs., `#page=N`):** 45 posturas con fuente de tipo `programa`, pasaje y alcance en JUSTIF (impuestos, deuda, vivienda, desalojo, educación, CGPJ, sedición, prisión permanente, inmigración, nucleares, Mercosur, caza, toros, burka, vida…). Ningún valor cambia: todas ya coincidían; no se toca su estado publicado.
-- **EAJ-PNV (43 págs.):** sin cambios de postura; casi todo lo que cubre su programa ya estaba fuente `programa`. **Pendiente de decisión (interpretativo, no aplicado):** A08 (salario mínimo propio de Euskadi «siempre por encima del estatal», p. 9; hoy 3~) y B05 (regular alquileres turísticos, p. 8).
+- **EAJ-PNV (43 págs.):** sin cambios de postura; casi todo lo que cubre su programa ya estaba fuente `programa`. **Aplicado tras OK del titular (13 nov):** A08 pasa de 3~ a 2 (salario mínimo propio «siempre por encima del estatal», p. 9) y B05 con fuente `programa` (p. 8), valor 4 sin cambio.
 - **Adelante Andalucía (134 págs.):** 5 posturas con fuente `programa` y sin estimación: E02 (p. 94), E03 (p. 29), L01 (p. 40), G05 (p. 82), J07 (p. 36). Valores sin cambio. Quedan estimadas las demás (sin pasaje literal; p. ej. D07 y E09 solo mencionan cannabis terapéutico).
 - Aviso discreto en la home: «Posturas revisadas con los programas del 29N publicados hasta el 13 de noviembre» (`PROGRAMAS.comprobado`).
 - Siguiente en cola: PSOE cuando publique (revisión diaria); M+J (candidatura 30) lo añade el hilo Codex–Claude.

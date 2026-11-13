@@ -81,6 +81,70 @@
  },
  {
   "fecha": "2026-11-12",
+  "id": "B02",
+  "partido": "ccpc",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 plantea un fondo estatal de ocho años para vivienda pública y asequible y agilizar la vivienda protegida.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "B07",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone reformas para limitar la compra de vivienda en Canarias por extranjeros, con un régimen específico para las islas.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "B08",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "C02",
+  "partido": "ccpc",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 exige una financiación autonómica suficiente que reconozca el coste real de las islas, la población efectiva y la pobreza.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=8",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
   "id": "C06",
   "partido": "bng",
   "de": 4,
@@ -155,6 +219,54 @@
   "fuente": [
    "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
    "Programa electoral de ERC de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "F07",
+  "partido": "ccpc",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 defiende mantener la deducción del 60 % del IRPF en La Palma y extenderla a La Gomera y El Hierro para sostener la población.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=13",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 13",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "F08",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 exige una aportación estatal suficiente y estable al sistema de dependencia y una estrategia de cuidados de larga duración.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=9",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-12",
+  "id": "G09",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 reduce la generación fósil a medida que avanzan renovables, almacenamiento y redes, sin perder seguridad de suministro.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15",
    "programa",
    "2026-11"
   ]

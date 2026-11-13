@@ -1121,7 +1121,7 @@
     "d21": 4,
     "erc": 1,
     "junts": 2,
-    "pnv": 3,
+    "pnv": 2,
     "bildu": 1,
     "upn": 4,
     "gbai": 2,
@@ -1139,7 +1139,6 @@
    "est": [
     "salf",
     "d21",
-    "pnv",
     "upn",
     "gbai",
     "ccpc",
@@ -1223,6 +1222,12 @@
      "Programa político del Frente Obrero de 2026, p. 9",
      "programa",
      "2026-10"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=9",
+     "Programa electoral de EAJ-PNV de 2026, p. 9",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1237,7 +1242,8 @@
     "bng": "Su programa de 2026 sube el salario mínimo hasta el 60 % del salario medio y prohíbe compensarlo o absorberlo con otros complementos.",
     "upc": "Se compromete a subir el salario mínimo interprofesional por encima del IPC anual para mantener el poder adquisitivo.",
     "ph": "Estimación: el programa defiende «mantener y aumentar los salarios»; no trata el salario mínimo, por eso la base es indirecta.",
-    "fo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo."
+    "fo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo.",
+    "pnv": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal."
    }
   },
   {
@@ -2329,10 +2335,10 @@
      "2025-03"
     ],
     "pnv": [
-     "https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/",
-     "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023",
-     "declaracion",
-     "2023-04-24"
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+     "Programa electoral de EAJ-PNV de 2026, p. 8",
+     "programa",
+     "2026-11"
     ],
     "ccpc": [
      "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11",
@@ -2405,7 +2411,7 @@
     "psoe": "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
     "pod": "Llevó al Congreso una moratoria para no conceder ninguna nueva licencia de piso turístico hasta 2028.",
     "erc": "La ponencia defiende intervenir los usos turísticos de las viviendas.",
-    "pnv": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
+    "pnv": "Su programa de 2026 propone regular los alquileres de temporada y turísticos para que no resten viviendas al alquiler residencial.",
     "ccpc": "Su programa de 2026 pide cobertura jurídica para que Canarias y sus municipios limiten los usos turísticos donde haya presión sobre la vivienda.",
     "adel": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
     "fa": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",

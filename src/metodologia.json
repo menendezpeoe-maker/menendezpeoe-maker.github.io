@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-12",
+ "generado": "2026-11-13",
  "datos": "2026-11-07",
  "preguntas": 107,
  "imitacion": {
@@ -286,7 +286,7 @@
    "pid": "vox",
    "conocidas": 107,
    "estimadas": 23,
-   "conFuente": 85
+   "conFuente": 87
   },
   {
    "pid": "fa",
@@ -327,8 +327,8 @@
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 62,
-   "conFuente": 37
+   "estimadas": 61,
+   "conFuente": 38
   },
   {
    "pid": "bng",
@@ -387,8 +387,8 @@
   {
    "pid": "adel",
    "conocidas": 91,
-   "estimadas": 61,
-   "conFuente": 30
+   "estimadas": 56,
+   "conFuente": 35
   },
   {
    "pid": "cha",
