@@ -14,11 +14,12 @@ const fails = [];
 const ok = (cond, msg) => { if (!cond) fails.push(msg); else console.log("  ✓", msg); };
 
 import { withFullAnalysis } from "./_full.mjs";
-// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+// Empieza desde la portada: en el móvil el botón principal empieza la rápida en un toque; las demás, desde «Elegir otra versión»
 async function startHome(page, mode) {
   if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
     mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
-    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+    if (mode === "rapida") await page.click("#start-btn");
+    else { await page.click("#start-alt"); await page.click(`#bn-modes [data-mode="${mode}"]`); }
   } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
 }
 
@@ -74,9 +75,9 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
     await page.waitForTimeout(420);
     if (i === 10) {
       await page.reload();
-      await page.waitForSelector("#resume:not([hidden])");
-      ok((await page.textContent("#resume")).includes("a medias"), "al recargar ofrece continuar");
-      await page.click('#resume [data-act="resume"]');
+      await page.waitForSelector("#start-btn:not([disabled])");
+      ok(/^Continuar test · \d+ de \d+ respondidas$/.test(await page.textContent("#start-btn")) && await page.isHidden("#resume"), "al recargar, el botón principal ofrece continuar (N de M respondidas)");
+      await page.click("#start-btn");
       await page.waitForSelector("#v-quiz:not([hidden])");
       ok((await page.textContent("#q-count")).startsWith("Pregunta 12 de"), "continúa en la misma pregunta");
     }

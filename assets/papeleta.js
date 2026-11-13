@@ -264,7 +264,7 @@ function initHome() {
   initCmpx();
   const fc = $("#facts-cand"); if (fc) fc.textContent = PIDS.length; // la cifra de candidaturas sale de los datos, no del texto fijo
   $("#start-btn").disabled = false;
-  fillSetup();
+  fillSetup(); renderHeroCta();
   // Las animaciones en bucle de la portada empiezan cuando la página ya está pintada y lista (dos fotogramas), no durante la carga
   requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.add("is-ready")));
 }
@@ -325,16 +325,43 @@ const MODE_NOTE = { rapida: "unos 3 minutos", expres: "unos 5 minutos", media: "
 function renderStartNote() {
   const mode = ($('input[name=mode]:checked') || {}).value || "rapida";
   $("#start-note").innerHTML = `<svg class="sn-ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 6v4.3l2.8 1.8"/></svg><span class="sn-txt"><b>Versión ${MODES[mode].label.toLowerCase()}:</b> ${buildOrder(mode, 1).length} preguntas, ${MODE_NOTE[mode]}.</span> <a href="#setup">${mode === "rapida" ? "Otras versiones" : "Cambiar de versión"}</a>`;
+  renderHeroCta();
 }
-// Móvil: «Empezar el test» despliega las versiones dentro del banner (las mismas del formulario) y cada una empieza el test
+// Portada (13 nov, revisión móvil): la acción principal empieza la versión rápida en un toque (o retoma el test a medias:
+// «Continuar test · N de M respondidas»); la secundaria abre las otras versiones (en el móvil, dentro del banner)
 const HERO_MQ = matchMedia("(max-width: 759px)");
+const MODE_CTA = { rapida: "test rápido", expres: "test exprés", media: "versión media", completa: "versión completa" };
+const inProgress = () => !!(S && S.stage !== "done" && S.order && S.order.some((id) => S.ans[id] !== undefined));
+function renderHeroCta() {
+  const btn = $("#start-btn"), alt = $("#start-alt"); if (!btn || btn.disabled) return;
+  const closed = $("#bn-modes").hidden;
+  if (inProgress()) {
+    const done = S.order.filter((id) => S.ans[id] !== undefined).length;
+    btn.textContent = `Continuar test · ${done} de ${S.order.length} respondidas`;
+    if (alt && closed) alt.textContent = "Empezar otro test";
+  } else {
+    const mode = HERO_MQ.matches ? "rapida" : ($('input[name=mode]:checked') || {}).value || "rapida";
+    btn.textContent = `Empezar ${MODE_CTA[mode]} · ${MODE_NOTE[mode].replace("unos ", "").replace(" minutos", " min")}`;
+    if (alt && closed) alt.textContent = "Elegir otra versión";
+  }
+}
+function resumeTest() {
+  if (S.stage === "prios") { renderPrios(); go("prios"); } else { renderQuestion(0); go("quiz", { focus: false }); focusStatement(); }
+}
 function bindHeroModes() {
-  const box = $("#bn-modes"), grid = $("#bn-mode-grid"), btn = $("#start-btn");
+  const box = $("#bn-modes"), grid = $("#bn-mode-grid"), btn = $("#start-btn"), alt = $("#start-alt");
   grid.innerHTML = $$("#f-modes label").map((l) => { const i = l.querySelector("input"); return `<button type="button" class="bn-mode" data-mode="${i.value}"><b>${esc(l.querySelector("b").textContent)}</b><em>${esc(l.querySelector("em").textContent)}</em><small>${esc(l.querySelector("small").textContent)}</small></button>`; }).join("");
-  const setOpen = (open) => { box.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "Ocultar versiones" : "Empezar el test"; $("#v-home .banner").classList.toggle("modes-open", open); };
-  btn.addEventListener("click", (e) => { if (!HERO_MQ.matches) return; e.preventDefault(); setOpen(box.hidden); if (!box.hidden) { const cur = grid.querySelector(`[data-mode="${($('input[name=mode]:checked') || {}).value || "rapida"}"]`); cur?.focus({ preventScroll: true }); box.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "nearest" }); } });
+  const setOpen = (open) => { box.hidden = !open; alt.setAttribute("aria-expanded", String(open)); $("#v-home .banner").classList.toggle("modes-open", open); if (open) alt.textContent = "Ocultar versiones"; else renderHeroCta(); };
+  btn.addEventListener("click", (e) => {
+    if (inProgress()) { e.preventDefault(); resumeTest(); return; }
+    if (HERO_MQ.matches) { const r = $("#f-mode-rapida"); if (r) r.checked = true; }  // en el móvil, siempre la rápida; el envío sigue su curso
+  });
+  alt.addEventListener("click", () => {
+    if (HERO_MQ.matches) { setOpen(box.hidden); if (!box.hidden) { const cur = grid.querySelector(`[data-mode="${($('input[name=mode]:checked') || {}).value || "rapida"}"]`); cur?.focus({ preventScroll: true }); box.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "nearest" }); } return; }
+    $("#setup").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); const r = $('input[name=mode]:checked'); if (r) r.focus({ preventScroll: true });
+  });
   grid.addEventListener("click", (e) => { const b = e.target.closest("[data-mode]"); if (!b) return; const r = $(`#f-mode-${b.dataset.mode}`); if (r) { r.checked = true; renderStartNote(); } setOpen(false); $("#setup").requestSubmit(); });
-  HERO_MQ.addEventListener("change", () => { if (!HERO_MQ.matches) setOpen(false); });
+  HERO_MQ.addEventListener("change", () => { if (!HERO_MQ.matches) setOpen(false); renderHeroCta(); });
 }
 // La provincia se pide al final y se recuerda la última elegida (solo en este navegador)
 function setProv(v) {
@@ -356,10 +383,8 @@ function renderResume() {
   const done = S.order.filter((id) => S.ans[id] !== undefined).length;
   if (S.stage === "done") {
     box.innerHTML = `<p><b>Tienes un resultado guardado.</b> ${topicOf(S) ? esc(modeLabel(S)) : `Versión ${MODES[S.mode].label.toLowerCase()}`}, ${esc(PROV[S.prov].name)}.</p><button type="button" class="btn btn-primary btn-sm" data-act="see-results">Ver mis resultados</button>`;
-  } else if (done > 0) {
-    box.innerHTML = `<p><b>Tienes un test a medias:</b> ${done} de ${S.order.length} respondidas. Si empiezas uno nuevo, se sustituirá.</p><button type="button" class="btn btn-primary btn-sm" data-act="resume">Continuar</button>`;
-  } else { box.hidden = true; return; }
-  box.hidden = false;
+  } else { box.hidden = true; renderHeroCta(); return; }  // el test a medias se retoma con el botón principal de la portada
+  box.hidden = false; renderHeroCta();
 }
 function newTest(topic) {
   const mode = topic && TOPICS[topic] ? "tema" : ($('input[name=mode]:checked') || {}).value || "rapida";
@@ -371,6 +396,7 @@ function newTest(topic) {
 }
 function startTest(e) {
   e.preventDefault();
+  if (inProgress() && !confirm("¿Empezar un test nuevo? Sustituirá el test a medias que tienes guardado en este navegador.")) return;
   newTest();
   save();
   launchQuiz(true);
@@ -2866,7 +2892,7 @@ function bindGlobal() {
     }
     const a = e.target.closest("[data-act]");
     if (!a || a.closest("#v-results")) return;
-    if (a.dataset.act === "resume") { if (S.stage === "prios") { renderPrios(); go("prios"); } else { renderQuestion(0); go("quiz", { focus: false }); focusStatement(); } }
+    if (a.dataset.act === "resume") resumeTest();
     else if (a.dataset.act === "see-results") openResults();
   });
   $("#v-method").addEventListener("click", (e) => {

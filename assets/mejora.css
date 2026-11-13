@@ -496,7 +496,12 @@ html:has(body.in-quiz) { scroll-padding-top: 124px; }
 .bn-link2:hover { border-bottom-color: var(--bn-mark); }
 .bn-link2 span { display: inline-block; transition: transform .25s var(--ds-ease); }
 .bn-link2:hover span { transform: translateY(3px); }
-@media (max-width: 480px) { .bn-link2 { width: 100%; text-align: center; border: 0; padding: 10px; } }
+.bn-alt { background: transparent; color: var(--bn-paper); font: inherit; font-weight: 800; font-size: 17px; padding: 8px 2px; border: 0; border-bottom: 2px solid var(--bn-mark); cursor: pointer; }
+.bn-alt:hover { border-bottom-color: var(--bn-paper); }
+.bn-alt:focus-visible { outline: 3px solid var(--bn-paper); outline-offset: 3px; border-radius: 2px; }
+@media (max-width: 759px) { #v-home .bn-note { display: none; } }
+@media (max-width: 480px) { .bn-cta { justify-content: space-between; } .bn-link2, .bn-alt { flex: 1 1 auto; text-align: center; padding: 10px 4px; font-size: 16px; } .bn-link2 { border: 0; } .bn-alt { border: 0; text-decoration: underline 2px var(--bn-mark); text-underline-offset: 5px; } }
+@media (max-width: 400px) { #v-home .bn-btn { font-size: 16px; padding: 0 16px; } }
 .bn-poly { fill: rgba(246, 221, 47, .32); stroke: #F6DD2F; stroke-width: 2.4; stroke-linejoin: round; }
 .bn-pv-bars i::after { width: 100% !important; transform-origin: left; will-change: transform; }
 .bn-pv-bars .b1::after { transform: scaleX(.72); } .bn-pv-bars .b2::after { transform: scaleX(.56); } .bn-pv-bars .b3::after { transform: scaleX(.40); }

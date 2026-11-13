@@ -32,7 +32,7 @@ console.log("Historial del navegador");
   await page.goBack();
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   for (let i = 0; i < 3; i++) { await page.click(".scale label:nth-child(4)", { force: true }).catch(() => page.keyboard.press("4")); await page.waitForTimeout(450); }
-  await page.goBack(); ok((await view(page)) === "home" && await page.isVisible("#resume"), "Atrás desde el test vuelve al inicio y ofrece continuar");
+  await page.goBack(); ok((await view(page)) === "home" && /^Continuar test/.test(await page.textContent("#start-btn")), "Atrás desde el test vuelve al inicio y ofrece continuar");
   await page.goForward(); ok((await view(page)) === "quiz", "Adelante vuelve al test donde estaba");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id) => [id, 4]))));
   await page.reload(); await page.waitForSelector("#v-results:not([hidden])");
@@ -103,7 +103,7 @@ if (process.env.AXE !== "0") {
     res.home = await run("inicio");
     await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]])), { stage: "quiz", idx: 3 }));
     await page.reload(); await page.waitForSelector("#start-btn:not([disabled])");
-    await page.click("[data-act='resume']"); await page.waitForSelector("#v-quiz:not([hidden])");
+    await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
     res.quiz = await run("pregunta");
     await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id, i) => [id, [1, 2, 4, 5, 3][i % 5]]))));
     await page.reload(); await page.waitForSelector("#v-results:not([hidden])");

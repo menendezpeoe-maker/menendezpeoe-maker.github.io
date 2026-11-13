@@ -1056,7 +1056,6 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
   #v-home .home-grid { gap: 0; }
   #v-home .bn-note a { display: none; }
   #v-home .banner.modes-open .bn-note, #v-home .banner.modes-open .bn-grid { display: none; }
-  #v-home .banner.modes-open .bn-btn { min-height: 46px; background: transparent; color: var(--bn-paper); border-color: var(--bn-line); box-shadow: none; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) { .bn-modes { animation: none; } .bn-mode { transition: none; } }
 
@@ -1194,3 +1193,19 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 @media (max-width: 340px) { .head-row .sp-nav a[href="/temas/"] { display: none; } }
 @media (max-width: 400px) { .head-row .sp-nav { gap: 0 2px; } .head-row .sp-nav a:not(.btn) { padding: 6px 4px; font-size: 13.5px; } .head-row .sp-nav .btn-sm { padding-inline: 11px; font-size: 13.5px; } }
 @media (hover: none) { .sp-nav a:not(.btn):hover { text-decoration: none; } }
+
+/* Resumen «En un minuto» de las páginas de tema (13 nov, revisión móvil): tres filas plegables, sin desbordar en 360 px */
+.sumv { display: grid; gap: 10px; }
+.sumv-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; }
+.sumv-top .btn { white-space: normal; text-align: center; }
+.sumv-row { border: 1.5px solid var(--ink); border-radius: var(--r2); background: var(--sheet); min-width: 0; }
+.sumv-row > summary { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; padding: 12px 14px; cursor: pointer; list-style: none; min-height: 44px; }
+.sumv-row > summary::-webkit-details-marker { display: none; }
+.sumv-row > summary::after { content: "+"; font-weight: 800; margin-left: auto; }
+.sumv-row[open] > summary::after { content: "−"; }
+.sumv-l { display: grid; gap: 2px; min-width: 0; flex: 1 1 14em; }
+.sumv-l span { font-size: 15px; overflow-wrap: anywhere; }
+.sumv-n { font-size: 14.5px; font-weight: 700; font-variant-numeric: tabular-nums; display: grid; }
+.sumv-n small { font-weight: 500; color: var(--ink-2); }
+.sumv-d { margin: 0; padding: 0 14px 4px 32px; display: grid; gap: 6px; font-size: 15px; overflow-wrap: anywhere; }
+.sumv-row > p { padding: 0 14px 12px; }

@@ -12,11 +12,12 @@ const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import
 const fails = [], errors = [];
 const ok = (c, m) => (c ? console.log("  ✓", m) : fails.push(m));
 import { withFullAnalysis } from "./_full.mjs";
-// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+// Empieza desde la portada: en el móvil el botón principal empieza la rápida en un toque; las demás, desde «Elegir otra versión»
 async function startHome(page, mode) {
   if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
     mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
-    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+    if (mode === "rapida") await page.click("#start-btn");
+    else { await page.click("#start-alt"); await page.click(`#bn-modes [data-mode="${mode}"]`); }
   } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
 }
 

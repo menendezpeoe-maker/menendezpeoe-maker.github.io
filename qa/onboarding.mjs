@@ -12,11 +12,12 @@ const errors = [], fails = [];
 const ok = (cond, msg) => { if (!cond) { fails.push(msg); console.log("  ✗", msg); } else console.log("  ✓", msg); };
 const all = bank.questions.map((q) => q.id);
 import { withFullAnalysis } from "./_full.mjs";
-// Empieza desde la portada: en el móvil «Empezar el test» despliega las versiones en el banner y se toca una
+// Empieza desde la portada: en el móvil el botón principal empieza la rápida en un toque; las demás, desde «Elegir otra versión»
 async function startHome(page, mode) {
   if (await page.evaluate(() => matchMedia("(max-width: 759px)").matches)) {
     mode ||= await page.evaluate(() => (document.querySelector("input[name=mode]:checked") || {}).value || "rapida");
-    await page.click("#start-btn"); await page.click(`#bn-modes [data-mode="${mode}"]`);
+    if (mode === "rapida") await page.click("#start-btn");
+    else { await page.click("#start-alt"); await page.click(`#bn-modes [data-mode="${mode}"]`); }
   } else { if (mode) await page.check(`#f-mode-${mode}`, { force: true }); await page.click("#start-btn"); }
 }
 
@@ -75,11 +76,12 @@ console.log("Empezar en un toque");
 {
   const { ctx, page } = await open();
   ok(await page.isHidden("#setup") && await page.isHidden("#bn-modes"), "en el móvil, la elección de versión va dentro del banner (sin bloque aparte)");
-  await page.click("#start-btn"); await page.waitForTimeout(150);
-  ok(await page.isVisible("#bn-modes") && (await page.locator("#bn-modes [data-mode]").count()) === 4 && /Ocultar versiones/.test(await page.textContent("#start-btn")) && view(page).then((v) => v === "home"), "«Empezar el test» despliega las 4 versiones en el banner");
-  await page.click("#start-btn"); await page.waitForTimeout(150);
-  ok(await page.isHidden("#bn-modes") && /Empezar el test/.test(await page.textContent("#start-btn")), "pulsarlo otra vez las oculta");
-  await page.click("#start-btn"); await page.click('#bn-modes [data-mode="media"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+  ok((await page.textContent("#start-btn")) === "Empezar test rápido · 3 min" && (await page.textContent("#start-alt")) === "Elegir otra versión", "acción principal «Empezar test rápido · 3 min» y secundaria «Elegir otra versión»");
+  await page.click("#start-alt"); await page.waitForTimeout(150);
+  ok(await page.isVisible("#bn-modes") && (await page.locator("#bn-modes [data-mode]").count()) === 4 && /Ocultar versiones/.test(await page.textContent("#start-alt")) && view(page).then((v) => v === "home"), "«Elegir otra versión» despliega las 4 versiones en el banner");
+  await page.click("#start-alt"); await page.waitForTimeout(150);
+  ok(await page.isHidden("#bn-modes") && /Elegir otra versión/.test(await page.textContent("#start-alt")), "pulsarlo otra vez las oculta");
+  await page.click("#start-alt"); await page.click('#bn-modes [data-mode="media"]'); await page.waitForSelector("#v-quiz:not([hidden])");
   ok(/de 48$/.test(await page.textContent("#q-count")) && (await saved(page)).mode === "media", "tocar una versión empieza el test con esa versión");
   await ctx.close();
 }
@@ -130,8 +132,8 @@ console.log("Estados guardados antiguos");
 {
   const half = { v: 2, bank: bank.version, prov: "sevilla", sex: "Hombre", age: 33, mode: "expres", seed: 9, order: all.slice(0, 24), idx: 3, ans: { [all[0]]: 4, [all[1]]: 2, [all[2]]: 5 }, imp: {}, prios: [], stage: "quiz", t: 1 };
   const { ctx, page } = await open({ st: half });
-  ok(/a medias/.test(await page.textContent("#resume")), "un test a medias antiguo ofrece continuar");
-  await page.click('#resume [data-act="resume"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+  ok((await page.textContent("#start-btn")) === "Continuar test · 3 de 24 respondidas", "un test a medias antiguo ofrece continuar con el botón principal");
+  await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   ok((await page.textContent("#q-count")).startsWith("Pregunta 4 de"), "y continúa donde estaba");
   await answerAll(page);
   ok((await page.inputValue("#f-prov")) === "sevilla", "la provincia que ya tenía aparece elegida al final");
@@ -142,8 +144,8 @@ console.log("Estados guardados antiguos");
 {
   const noProv = { v: 2, bank: bank.version, mode: "completa", seed: 7, order: all, idx: 0, ans: Object.fromEntries(all.map((id) => [id, 4])), imp: {}, prios: [], stage: "done", t: 1 };
   const { ctx, page } = await open({ st: noProv });
-  ok((await view(page)) === "home" && /a medias/.test(await page.textContent("#resume")), "un resultado sin provincia no se muestra: ofrece continuar");
-  await page.click('#resume [data-act="resume"]'); await page.waitForSelector("#v-prios:not([hidden])");
+  ok((await view(page)) === "home" && /^Continuar test · \d+ de \d+ respondidas$/.test(await page.textContent("#start-btn")), "un resultado sin provincia no se muestra: ofrece continuar");
+  await page.click("#start-btn"); await page.waitForSelector("#v-prios:not([hidden])");
   ok(await page.isVisible("#f-prov"), "y continuar lleva al último paso, que pide la provincia");
   await ctx.close();
 }

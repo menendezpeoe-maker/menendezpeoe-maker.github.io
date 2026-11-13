@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 13 nov 2026 (tarde) · Revisión móvil de Codex (390 × 844): portada, vivienda y progreso
+- Portada: acción principal «Empezar test rápido · 3 min» (en el móvil abre la pregunta 1 en un toque; en escritorio sigue la versión del formulario) y secundaria «Elegir otra versión». Con un test a medias, el principal pasa a «Continuar test · N de M respondidas» y retoma en un toque (también en la etapa de provincia/prioridades); la secundaria es «Empezar otro test». Empezar otro con uno a medias pide confirmación (nuevo en `startTest`). El cuadro `#resume` queda solo para «Ver mis resultados».
+- Vivienda: introducción corta y «En un minuto» con tres filas plegables (alquiler B01, vivienda protegida B08, primera vivienda B09): recuentos de los datos; al abrir, nombres completos con enlace a la ficha y a la fuente, separando documentadas, estimadas y sin postura con el mismo criterio. Botón «Haz el test de vivienda · 7 preguntas, unos 2 min» junto al título del resumen. La introducción larga sigue debajo (SEO).
+- Progreso (mejora.js): el hito usa respuestas dadas, se borra al cambiar de pregunta (antes «Te queda solo un cuarto» podía seguir visible en la 15), «Última pregunta» en la última y «Has respondido las N preguntas» al terminar.
+- Nueva batería `qa/recorrido.mjs` (grupo test y todas): recorrido completo a 390 y 360 px con Bizkaia, prioridad Vivienda, comparar, salida sin prioridades y vivienda, más pasada en escritorio. Local: 23/24 (solo el CLS local conocido).
+
 ## 13 nov 2026 · Tarea 3 del acuerdo con Codex: resumen de vivienda en móvil
 - /temas/vivienda-y-urbanismo/ abre con «En un minuto»: alquiler (B01), vivienda protegida (B08) y primera vivienda (B09). Cuenta solo posturas documentadas (a favor 4–5, en contra 1–2, intermedia 3), indica cuántas son solo estimadas y enlaza cada línea a /preguntas/<id>/ con sus fuentes. Botón a /tests/vivienda/. Sin encuestas ni recomendación de voto.
 - Código: `SUMM`/`summBox` en pages.mjs (ampliable a otros temas). Pruebas locales 22/23 (solo el CLS local conocido de `rendimiento`).
