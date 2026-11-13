@@ -18,6 +18,7 @@
   "pacma",
   "fo",
   "pcte",
+  "mj",
   "falange",
   "d21",
   "comp",
@@ -1367,9 +1368,70 @@
      "q": "B01"
     }
    ]
+  },
+  {
+   "id": "mj",
+   "name": "Por un Mundo Más Justo",
+   "ab": "M+J",
+   "color": "#1F8A9E",
+   "tag": "Justicia social · paz",
+   "scope": {
+    "provinces": [
+     "alava",
+     "albacete",
+     "almeria",
+     "asturias",
+     "avila",
+     "badajoz",
+     "bizkaia",
+     "burgos",
+     "cadiz",
+     "cuenca",
+     "granada",
+     "guadalajara",
+     "huesca",
+     "jaen",
+     "laspalmas",
+     "madrid",
+     "navarra",
+     "ourense",
+     "palencia",
+     "segovia",
+     "sevilla",
+     "soria",
+     "tarragona",
+     "valencia",
+     "valladolid",
+     "zaragoza"
+    ]
+   },
+   "desc": "Partido centrado en la justicia social, la paz y la cooperación internacional. En su programa del 29N propone un gran parque público de vivienda en alquiler, la jornada de 35 horas, un impuesto mínimo a las grandes fortunas y cumplir el 0,7 % para la ayuda al desarrollo.",
+   "props": [
+    {
+     "t": "Gran parque público de vivienda asequible en alquiler.",
+     "q": "B08"
+    },
+    {
+     "t": "Jornada laboral de 35 horas sin reducción salarial.",
+     "q": "A01"
+    },
+    {
+     "t": "Tributación mínima del 3 % para patrimonios de más de 50 millones.",
+     "q": "A03"
+    },
+    {
+     "t": "Cumplir el 0,7 % de la renta nacional para la ayuda al desarrollo.",
+     "q": "H07"
+    }
+   ]
   }
  ],
  "programas": {
+  "mj": {
+   "url": "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf",
+   "titulo": "Programa electoral de Por un Mundo Más Justo para las generales del 29N de 2026",
+   "fecha": "2026-11-07"
+  },
   "pp": {
    "url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf",
    "titulo": "Programa electoral del PP: «Reconstrucción Nacional»",

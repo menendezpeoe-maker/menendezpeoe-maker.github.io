@@ -184,7 +184,8 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -195,6 +196,12 @@
     "mes"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=29",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 29",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html",
      "Periódico de Ibiza (Europa Press), votación de las enmiendas de totalidad a la ley de jornada, 10/09/2025",
@@ -299,6 +306,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone reducir progresivamente la jornada laboral hasta las 35 horas semanales sin reducción salarial.",
     "psoe": "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
     "pp": "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social.",
     "vox": "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
@@ -357,7 +365,8 @@
     "pcte": 5,
     "falange": 2,
     "ie": 2,
-    "ph": 4
+    "ph": 4,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -371,6 +380,12 @@
     "ph"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=26",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 26",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf",
      "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)",
@@ -493,6 +508,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
     "salf": "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     "bildu": "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
@@ -545,7 +561,8 @@
     "mes": 5,
     "adel": 5,
     "fo": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 5
    },
    "est": [
     "d21",
@@ -557,6 +574,12 @@
     "mes"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=27",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 27",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
      "BOE, Real Decreto-ley 8/2023, de 27 de diciembre",
@@ -655,6 +678,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone una tributación mínima del 3 % sobre patrimonios de más de 50 millones, con un gravamen en el Impuesto de Solidaridad sobre las Grandes Fortunas.",
     "psoe": "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
     "pp": "El PP promete suprimir el impuesto estatal de solidaridad sobre las grandes fortunas, que ve como una invasión de la autonomía fiscal.",
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
@@ -840,7 +864,8 @@
     "mes": 1,
     "adel": 1,
     "pcte": 1,
-    "ph": 1
+    "ph": 1,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -854,6 +879,12 @@
     "adel"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=24",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 24",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -946,6 +977,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone profundizar en la cuota de solidaridad y la subida de la base máxima de cotización, eliminando progresivamente el tope, para sostener las pensiones.",
     "psoe": "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos.",
     "fa": "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones.",
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
@@ -1141,7 +1173,8 @@
     "mes": 1,
     "adel": 1,
     "fo": 2,
-    "ph": 2
+    "ph": 2,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -1158,6 +1191,12 @@
     "ph"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=31",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 31",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26",
      "Programa electoral del PSOE de 2023",
@@ -1238,6 +1277,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N fija como meta mantener el salario mínimo en al menos el 60 % del salario medio entre 2026 y 2030.",
     "psoe": "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
     "pp": "Pone el foco en subir el salario medio y la productividad, sin rechazar las subidas del salario mínimo.",
     "vox": "Vox rechaza subir el salario mínimo si encarece a las empresas y prefiere bajar cotizaciones e impuestos.",
@@ -1577,7 +1617,8 @@
     "pcte": 5,
     "falange": 5,
     "ie": 1,
-    "ph": 4
+    "ph": 4,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -1589,6 +1630,12 @@
     "mes"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=8",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 8",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13411162_1124105.html",
      "eldiario.es, rueda de prensa de balance de Pedro Sánchez, 28/07/2026",
@@ -1711,6 +1758,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone regular los alquileres privados con un alquiler de referencia y limitar el precio según las características y la localización de la vivienda.",
     "salf": "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
     "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
@@ -1769,7 +1817,8 @@
     "fo": 4,
     "falange": 5,
     "ie": 2,
-    "ph": 5
+    "ph": 5,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -1785,6 +1834,12 @@
     "ie"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=5",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 5",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -1913,6 +1968,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N prioriza crear un gran parque público de vivienda asequible en alquiler y regular los alquileres privados.",
     "psoe": "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
     "pp": "Su programa de 2026 prioriza construir un millón de viviendas con más suelo, una nueva Ley del Suelo y licencias en tres meses.",
     "vox": "Su programa de 2026 apuesta por construir mucho más: reforma de la Ley del Suelo, trámites ágiles y vivienda protegida con colaboración público-privada.",
@@ -2153,7 +2209,8 @@
     "adel": 1,
     "pcte": 1,
     "fo": 1,
-    "ph": 1
+    "ph": 1,
+    "mj": 2
    },
    "est": [
     "pacma",
@@ -2173,6 +2230,12 @@
     "fa": "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=11",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 11",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-decreto-del-escudo-social-con-cambios-en-la-moratoria-de-desahucios-entrara-en-vigor-manana-2026-02-04/",
      "Legal Today, febrero de 2026",
@@ -2265,6 +2328,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N mantiene la suspensión de desahucios de personas vulnerables y propone compensar a las pequeñas propietarias que dependan de esa renta (p. 9).",
     "pp": "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal.",
     "vox": "Vox votó contra el decreto que prorrogaba la suspensión de desahucios de familias vulnerables.",
     "fa": "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
@@ -2588,7 +2652,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 2,
-    "adel": 5
+    "adel": 5,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -2609,6 +2674,12 @@
     "vox": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=10",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 10",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://theobjective.com/espana/politica/2025-05-23/psoe-impuesto-extranjeros-vivienda/",
      "Proposición de ley del Grupo Socialista sobre alquiler asequible (23 de mayo de 2025)",
@@ -2671,6 +2742,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone un régimen impositivo especial para las personas extranjeras en la compra o el alquiler de viviendas por encima de un precio límite.",
     "psoe": "El Grupo Socialista registró en 2025 un impuesto de hasta el 100 % sobre compras de vivienda de no residentes fuera de la UE.",
     "pp": "El portavoz del PP calificó de intervencionista gravar la compra de vivienda por no residentes de fuera de la UE.",
     "vox": "Su programa de 2026 propone una fiscalidad agravada y disuasoria para los compradores no comunitarios y las operaciones especulativas de fondos.",
@@ -2724,7 +2796,8 @@
     "pcte": 5,
     "fo": 5,
     "falange": 5,
-    "ph": 4
+    "ph": 4,
+    "mj": 5
    },
    "est": [
     "pacma",
@@ -2744,6 +2817,12 @@
     "erc": "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=5",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 5",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222",
      "Programa electoral del PSOE de 2023",
@@ -2872,6 +2951,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone crear un gran parque público de vivienda asequible en alquiler, del 1,1 % al 5 % del parque en 2030.",
     "psoe": "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
     "pp": "Prefiere un fondo público-privado y cerraría la empresa estatal de vivienda en lugar de construir directamente.",
     "vox": "Su programa de 2026 amplía la inversión pública en vivienda por habitante y la vivienda protegida con colaboración público-privada.",
@@ -4402,7 +4482,8 @@
     "adel": 1,
     "fo": 4,
     "falange": 5,
-    "ie": 5
+    "ie": 5,
+    "mj": 5
    },
    "est": [
     "pnv",
@@ -4417,6 +4498,12 @@
     "fo"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=72",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 72",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -4509,6 +4596,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone que 12 de los 20 vocales del CGPJ, los de procedencia judicial, los elijan directamente jueces y magistrados.",
     "psoe": "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
     "pp": "Su programa de 2026 propone que los jueces y magistrados elijan a los doce vocales judiciales del CGPJ.",
     "vox": "Su programa de 2026 propone que los doce vocales judiciales del CGPJ sean elegidos por voto directo y secreto de los propios jueces y magistrados.",
@@ -4710,7 +4798,8 @@
     "upc": 4,
     "drago": 4,
     "comp": 4,
-    "adel": 4
+    "adel": 4,
+    "mj": 4
    },
    "est": [
     "psoe",
@@ -4725,9 +4814,16 @@
     "upc",
     "drago",
     "comp",
-    "adel"
+    "adel",
+    "mj"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=73",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 73",
+     "programa",
+     "2026-11"
+    ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
      "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023",
@@ -4760,6 +4856,7 @@
     ]
    },
    "why": {
+    "mj": "Estimada: su programa del 29N pide medidas que dificulten las «puertas giratorias», sin fijar un plazo de cinco años.",
     "vox": "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
     "erc": "El programa califica las puertas giratorias de corrupción institucionalizada.",
     "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
@@ -4799,7 +4896,8 @@
     "drago": 4,
     "comp": 4,
     "cha": 4,
-    "adel": 4
+    "adel": 4,
+    "mj": 4
    },
    "est": [
     "psoe",
@@ -4819,12 +4917,19 @@
     "drago",
     "comp",
     "cha",
-    "adel"
+    "adel",
+    "mj"
    ],
    "notes": {
     "fa": "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=70",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 70",
+     "programa",
+     "2026-11"
+    ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=117",
      "Programa electoral de Sumar de 2023, p. 117",
@@ -4833,6 +4938,7 @@
     ]
    },
    "why": {
+    "mj": "Estimada: su programa del 29N propone facilitar el acceso a las Iniciativas Legislativas Populares y simplificar sus requisitos, sin concretar una votación obligatoria en plazo.",
     "psoe": "Estimación: el PSOE no ha propuesto fijar un plazo obligatorio para votar las ILP; en 2016 solo planteó rebajar las firmas exigidas.",
     "pp": "Estimación: no consta postura del PP sobre plazos obligatorios para votar las iniciativas legislativas populares.",
     "vox": "Estimación: no consta una postura de Vox sobre votar las ILP en un plazo fijo.",
@@ -5494,7 +5600,8 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
-    "ph": 4
+    "ph": 4,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -5506,6 +5613,12 @@
     "ph"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=74",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 74",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza",
      "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)",
@@ -5610,6 +5723,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone reformar la Ley de Seguridad Ciudadana (meta: reformada en 2027), no derogarla.",
     "psoe": "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
     "pp": "Su programa de 2026 endurece la respuesta a los disturbios violentos y refuerza la actuación policial preventiva.",
     "vox": "Vox votó incluso contra tramitar la reforma de la Ley de Seguridad Ciudadana, que no la derogaba.",
@@ -6082,7 +6196,8 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -6096,6 +6211,12 @@
     "pp": "Su programa de 2023 promete cumplir el Pacto de Estado contra la violencia de género «sin pasos atrás»; algunos acuerdos autonómicos con Vox hablaron de «violencia intrafamiliar», pero no son la línea nacional."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=78",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 78",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -6194,6 +6315,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N defiende la protección frente a la violencia de género y la aplicación de las 461 medidas del Pacto de Estado contra la Violencia de Género.",
     "psoe": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
     "pp": "Su programa de 2026 refuerza VioGen y los medios contra la violencia de género y rinde cuentas del Pacto de Estado.",
     "vox": "Su programa de 2026 propone derogar las leyes de género, a las que acusa de criminalizar a los hombres y de desproteger a las mujeres.",
@@ -6395,7 +6517,8 @@
     "fo": 1,
     "falange": 1,
     "ie": 1,
-    "ph": 4
+    "ph": 4,
+    "mj": 5
    },
    "est": [
     "d21",
@@ -6407,6 +6530,12 @@
     "ph"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.diaridetarragona.com/espana/250726/saiz-sobre-regularizacion-migrantes-conscientes-administracion-dar-respuesta.html",
      "Diari de Tarragona (EFE), declaraciones de la ministra Elma Saiz, 27/01/2026",
@@ -6529,6 +6658,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone vías accesibles y permanentes de regularización de las personas migrantes y prevenir la irregularidad sobrevenida.",
     "salf": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
     "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
     "bildu": "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
@@ -6584,7 +6714,8 @@
     "fo": 5,
     "falange": 5,
     "ie": 5,
-    "ph": 1
+    "ph": 1,
+    "mj": 1
    },
    "est": [
     "d21",
@@ -6597,9 +6728,16 @@
     "cha",
     "existe",
     "mes",
-    "pcte"
+    "pcte",
+    "mj"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx",
      "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria",
@@ -6704,6 +6842,7 @@
     ]
    },
    "why": {
+    "mj": "Estimada: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
     "psoe": "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular.",
     "vox": "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
     "fa": "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
@@ -6957,7 +7096,8 @@
     "jmm": 3,
     "upl": 3,
     "soria": 4,
-    "falange": 1
+    "falange": 1,
+    "mj": 5
    },
    "est": [
     "d21",
@@ -6981,6 +7121,12 @@
     "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=51",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 51",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx",
      "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)",
@@ -7043,6 +7189,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone facilitar vías legales y seguras de migración y ampliar las autorizaciones de residencia y trabajo desde los países de origen.",
     "psoe": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
     "pp": "Su programa de 2026 propone visados por puntos, cupos anuales y contratación en origen en los sectores donde faltan trabajadores.",
     "vox": "Su programa de 2026 propone «Ni uno más»: España no puede acoger a más inmigrantes y se suprime la figura del arraigo.",
@@ -7233,7 +7380,8 @@
     "comp": 4,
     "cha": 4,
     "mes": 4,
-    "adel": 4
+    "adel": 4,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -7253,6 +7401,12 @@
     "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=20",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182",
      "Programa electoral del PSOE de 2023",
@@ -7297,6 +7451,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone una única prestación universal y progresiva para la infancia a la que tengan derecho todos los hogares con crianza.",
     "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
     "pp": "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
     "vox": "Su programa de 2026 extiende los beneficios de las familias numerosas a todas las familias españolas desde el primer hijo, según su número.",
@@ -7335,7 +7490,8 @@
     "jmm": 5,
     "upl": 5,
     "soria": 5,
-    "pav": 5
+    "pav": 5,
+    "mj": 4
    },
    "est": [
     "vox",
@@ -7349,9 +7505,16 @@
     "adel",
     "jmm",
     "upl",
-    "pav"
+    "pav",
+    "mj"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=33",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 33",
+     "programa",
+     "2026-11"
+    ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
      "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 32",
@@ -7396,6 +7559,7 @@
     ]
    },
    "why": {
+    "mj": "Estimada: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
     "psoe": "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
     "pp": "Su programa de 2026 plantea incentivos económicos en zonas en declive demográfico y bajar impuestos a quien vive o invierte en el medio rural.",
     "fa": "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos.",
@@ -8728,7 +8892,8 @@
     "adel": 4,
     "fo": 2,
     "falange": 1,
-    "ie": 1
+    "ie": 1,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -8744,6 +8909,12 @@
     "adel"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857",
      "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico",
@@ -8842,6 +9013,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
     "psoe": "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
     "pp": "Su programa de 2026 apuesta por la neutralidad tecnológica: nuclear, renovables, almacenamiento y respaldo compiten en igualdad.",
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
@@ -8897,7 +9069,8 @@
     "adel": 1,
     "pcte": 1,
     "falange": 4,
-    "ph": 1
+    "ph": 1,
+    "mj": 1
    },
    "est": [
     "vox",
@@ -8913,6 +9086,12 @@
     "junts": "Votó en contra de revertir la subida del gasto militar, pero no se ha pronunciado sobre el objetivo del 3,5 %."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=65",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 65",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html",
      "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025",
@@ -9041,6 +9220,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone no aumentar el gasto militar estatal y europeo y reorientar esas partidas a necesidades básicas.",
     "psoe": "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
     "pnv": "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
@@ -9344,7 +9524,8 @@
     "comp": 5,
     "cha": 5,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "mj": 5
    },
    "est": [
     "salf",
@@ -9356,6 +9537,12 @@
     "mes"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=66",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 66",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831",
      "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)",
@@ -9454,6 +9641,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone prohibir la exportación de armas a países en guerra o que vulneren derechos humanos y suspender el Acuerdo de Asociación UE-Israel.",
     "psoe": "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025.",
     "vox": "Vox votó en contra de convalidar el decreto de embargo de armas a Israel.",
     "fa": "Apoyó el embargo de armas a Israel y pidió endurecerlo por considerarlo insuficiente.",
@@ -9860,7 +10048,8 @@
     "mes": 1,
     "adel": 1,
     "ie": 4,
-    "ph": 2
+    "ph": 2,
+    "mj": 1
    },
    "est": [
     "d21",
@@ -9880,6 +10069,12 @@
     "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=88",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 88",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=261",
      "Programa electoral del PSOE de 2023",
@@ -9960,6 +10155,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone cumplir el compromiso del 0,7 % de la renta nacional bruta para la ayuda oficial al desarrollo.",
     "psoe": "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
     "vox": "Su programa de 2026 propone acabar con la cooperación al desarrollo con países que no colaboren en los flujos migratorios y con ayudas a ciertas ONG.",
@@ -10084,7 +10280,8 @@
     "mes": 1,
     "adel": 1,
     "fo": 4,
-    "ph": 1
+    "ph": 1,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -10101,6 +10298,12 @@
     "pp": "El PPE respaldó los centros fuera de la UE en la cumbre a la que asistió Feijóo, pero él evitó apoyarlos en público."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=51",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 51",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.vozpopuli.com/espana/sanchez-rechaza-propuesta-centros-inmigrantes-ue.html",
      "Vozpópuli, declaraciones de la portavoz Pilar Alegría, 15/10/2024",
@@ -10193,6 +10396,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone poner fin a la externalización de fronteras.",
     "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
     "pp": "Su programa de 2026 usará terceros países seguros y primeros países de asilo e impulsará acuerdos para crear centros de retorno fuera de la UE.",
     "vox": "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
@@ -11475,7 +11679,8 @@
     "pcte": 5,
     "fo": 5,
     "falange": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -11498,6 +11703,12 @@
     "erc": "En el Parlament votó pedir la retirada de la ley estatal que limita la gestión privada, en defensa del modelo sanitario catalán con hospitales concertados."
    },
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf",
      "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)",
@@ -11608,6 +11819,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
     "bildu": "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios.",
     "bng": "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas.",
     "comp": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
@@ -13015,7 +13227,8 @@
     "jmm": 2,
     "upl": 3,
     "soria": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -13038,6 +13251,12 @@
     "upl"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -13094,6 +13313,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N propone acabar con el hacinamiento en las granjas y apoyar a la ganadería extensiva.",
     "psoe": "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
     "fa": "Su grupo registró en el Congreso una iniciativa para una moratoria a nuevas macrogranjas.",
     "pod": "Su programa europeo de 2024 pide una moratoria indefinida a la apertura de nuevas macroexplotaciones.",
@@ -13623,7 +13843,8 @@
     "cha": 1,
     "mes": 1,
     "adel": 1,
-    "falange": 5
+    "falange": 5,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -13637,6 +13858,12 @@
     "adel"
    ],
    "src": {
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=44",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 44",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -13723,6 +13950,7 @@
     ]
    },
    "why": {
+    "mj": "Su programa del 29N pide que quien solicite la eutanasia acceda a cuidados paliativos y apoyos «sin retrasar ni condicionar sus derechos»: no propone derogar la ley.",
     "psoe": "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
     "pp": "El PP votó contra la ley de eutanasia, pero en 2023 promete revisarla, priorizando los cuidados paliativos, no derogarla.",
     "vox": "Su programa de 2026 defiende la vida «hasta la muerte natural», pide acabar con la «cultura de la muerte» y potenciar los cuidados paliativos.",
