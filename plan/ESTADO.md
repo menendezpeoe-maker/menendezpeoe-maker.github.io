@@ -1,5 +1,13 @@
 # Estado del plan (lo más reciente arriba)
 
+## 13 nov 2026 (tarde) · Programas nuevos y barrido de coherencia de toda la web (instrucción del titular)
+- **Instrucción del titular (13 nov, 18:27):** cuando la búsqueda diaria encuentre un programa nuevo del 29N, se publica cuanto antes y con precisión; y se revisa toda la web (cualquier apartado) para añadir, cambiar o quitar lo que la nueva información deje viejo. Un barrido completo lo antes posible y otro cuando estén todos o la mayoría. Procedimiento en **plan/BARRIDO.md**; herramienta `node qa/barrido.mjs`.
+- **Barrido completo n.º 1 (hecho hoy):** /metodologia/ decía «La mayoría de los partidos aún no ha publicado su programa»: ahora sale de los datos («12 de 30 … ver cuáles»). Ficha del Partido Humanista: la descripción citaba su programa de 2023 y pasa a su programa del 29N (OTAN, gasto militar a la mitad, bases, parque público de alquiler social). El resto de textos sobre programas ya sale de los datos. Cola de posturas que aún no citan el programa del 29N, por candidatura: ver `node qa/barrido.mjs` (PNV, Adelante y PH tienen más pendiente).
+- **Barrido completo n.º 2:** el 20 nov en la rutina diaria (antes de S2 y de la revisión final de Codex del 22), o antes si ya han publicado programa candidaturas con la mayoría de escaños de 2023. Una sola vez.
+- **Rutina diaria (14–23 nov, 09:47 Madrid):** su instrucción incluye ahora el barrido ligero de cada programa nuevo y el n.º 2.
+- **Reparto y canal único (titular, 13 nov 18:29):** Codex busca y verifica fuera y revisa la web pública; Claude aplica, prueba y publica sin pedir permiso salvo error grave o emergencia. Hallazgos de Codex → hilo único → `plan/HALLAZGOS.md` (pendiente/aplicado/descartado); la rutina diaria procesa los pendientes.
+- **Para Codex/ChatGPT:** sus revisiones (18 y 22 nov) pueden comprobar en la web pública que cada programa nuevo aparece en /programas/ y en la ficha, y que no quedan textos que digan lo contrario; informe en el hilo único.
+
 ## 13 nov 2026 (tarde) · Tarea 4 del acuerdo con Codex: resultado sin posturas estimadas
 - En «¿Cuánto fiarte de este resultado?» (#r-solid) hay una línea nueva: con el mismo cálculo y sin las posturas estimadas, si la candidatura con más coincidencia sigue siendo la misma o cuál sería, con su porcentaje. Es solo informativa: no cambia el resultado ni el nivel de solidez (se añade tras calcularlo). Código: `matchParty(..., noEst)` y `reliability(..., user)` en papeleta.js.
 - Comprobación móvil a 390 y 360 px en `qa/recorrido.mjs`. Local 23/24 (solo el CLS local conocido).

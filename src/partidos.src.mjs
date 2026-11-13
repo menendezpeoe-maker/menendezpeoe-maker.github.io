@@ -301,7 +301,7 @@ export const PARTIES = [
      ["Suprimir las diputaciones provinciales.","C06"]] },
  { id: "ph", name: "Partido Humanista", ab: "PH", color: "#E07A1F", tag: "Humanista · no violencia",
    scope: { provinces: ["madrid"] },
-   desc: "Partido humanista. En su programa de 2023 propone la salida de la OTAN, reducir el presupuesto militar, educación pública y gratuita en todos los niveles y alquiler social con renta máxima del 30 % de los ingresos.",
+   desc: "Partido humanista. En su programa para el 29N propone la salida de la estructura militar de la OTAN, reducir a la mitad el gasto militar, cerrar las bases militares extranjeras y un parque público de alquiler social de 2,5 millones de viviendas en 10 años.",
    props: [["Salida de España de la OTAN.","H06"],
      ["Reducir drásticamente el presupuesto militar.","H01"],
      ["Educación pública y gratuita en todos los niveles.","I02"],
