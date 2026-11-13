@@ -167,6 +167,24 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
         ${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
   };
 
+  // ── Resumen corto y verificable por tema (móvil primero): solo posturas documentadas, cada línea enlaza a la pregunta con sus fuentes
+  const SUMM = {
+    viv: { test: "vivienda", items: [["Alquiler", "B01", "limitar por ley el precio del alquiler en las zonas con precios disparados"], ["Vivienda protegida", "B08", "que el Estado construya directamente un gran parque de vivienda pública en alquiler"], ["Primera vivienda", "B09", "que el Estado avale parte de la hipoteca de los jóvenes para comprar su primera vivienda"]] },
+  };
+  const summBox = (aid) => {
+    const S = SUMM[aid]; if (!S) return "";
+    const grp = (q, f) => live.filter((pid) => q.pos[pid] && !q.est.includes(pid) && f(q.pos[pid])).map((pid) => esc(P[pid].ab));
+    const li = ([label, qid, what]) => {
+      const q = B.questions.find((x) => x.id === qid); if (!q) return "";
+      const yes = grp(q, (v) => v >= 4), no = grp(q, (v) => v <= 2), mid = grp(q, (v) => v === 3);
+      const nEst = live.filter((pid) => q.pos[pid] && q.est.includes(pid)).length;
+      const part = (n, t, l) => n.length ? `${n.length} ${t} (${n.join(", ")})` : "";
+      const bits = [part(yes, "a favor", yes), part(no, "en contra", no), part(mid, "en una posición intermedia", mid)].filter(Boolean);
+      return `<li><b>${esc(label)}.</b> Sobre ${esc(what)}: de las candidaturas con postura documentada, ${bits.length ? bits.join("; ") : "ninguna tiene postura documentada"}.${nEst ? ` Otras ${nEst} solo tienen postura estimada.` : ""} <a href="/preguntas/${qid.toLowerCase()}/">Ver cada postura con su fuente</a>.</li>`;
+    };
+    return `<section class="cta-box" aria-labelledby="sum-${aid}"><h2 class="h3" id="sum-${aid}">En un minuto</h2><ul class="dots">${S.items.map(li).join("")}</ul><p class="small muted">Solo cuenta posturas documentadas (con programa, votación o declaración). «A favor» = 4 o 5 en la escala; «en contra» = 1 o 2. No es una encuesta ni una recomendación de voto.</p><p><a class="btn btn-primary" href="/tests/${S.test}/">Haz el test de ${esc(TOPICS[S.test].label.toLowerCase())} (${TOPICS[S.test].ids.length} preguntas)</a></p></section>`;
+  };
+
   // ── Una página por tema
   for (const a of B.areas) {
     const qs = B.questions.filter((q) => q.area === a.id);
@@ -178,7 +196,7 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
       crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(a.name)}: qué piensa cada partido</h1>
   <p class="lede">Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p></header>
-${cta("¿Y tú qué piensas?")}
+${summBox(a.id) || cta("¿Y tú qué piensas?")}
 ${method}<p class="small muted">Las etiquetas con borde discontinuo y en cursiva son posturas estimadas. Toca un partido para ver todas sus posturas.</p>
 ${items}
 ${cta("Descubre con qué candidatura coincides más")}

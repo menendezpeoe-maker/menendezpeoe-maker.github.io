@@ -1,5 +1,9 @@
 # Estado del plan (lo más reciente arriba)
 
+## 13 nov 2026 · Tarea 3 del acuerdo con Codex: resumen de vivienda en móvil
+- /temas/vivienda-y-urbanismo/ abre con «En un minuto»: alquiler (B01), vivienda protegida (B08) y primera vivienda (B09). Cuenta solo posturas documentadas (a favor 4–5, en contra 1–2, intermedia 3), indica cuántas son solo estimadas y enlaza cada línea a /preguntas/<id>/ con sus fuentes. Botón a /tests/vivienda/. Sin encuestas ni recomendación de voto.
+- Código: `SUMM`/`summBox` en pages.mjs (ampliable a otros temas). Pruebas locales 22/23 (solo el CLS local conocido de `rendimiento`).
+
 ## 13 nov 2026 (mañana) · M+J (Por un Mundo Más Justo) incorporado como candidatura 30 (decisión del titular)
 - **Proclamación:** BOE del 3 nov (BOE-A-2026-23103), 26 circunscripciones del Congreso: Álava, Albacete, Almería, Asturias, Ávila, Badajoz, Bizkaia, Burgos, Cádiz, Cuenca, Granada, Guadalajara, Huesca, Jaén, Las Palmas, Madrid, Navarra, Ourense, Palencia, Segovia, Sevilla, Soria, Tarragona, Valencia, Valladolid y Zaragoza (`pid: "mj"` en `src/candidaturas.json`). Única corrección de errores posterior (BOE-A-2026-23383, 7 nov): solo nombres de otras candidaturas; no afecta a M+J.
 - **Programa:** https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf (95 págs., 7 nov) en `PROGRAMAS.publicados`. Ficha en `partidos.src.mjs` (último en `PARTY_ORDER`; en `DISPLAY_ORDER` tras PCTE).
