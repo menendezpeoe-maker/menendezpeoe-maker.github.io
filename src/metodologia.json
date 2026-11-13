@@ -201,7 +201,7 @@
    },
    {
     "pid": "fo",
-    "n": 18
+    "n": 19
    },
    {
     "pid": "fa",
@@ -229,7 +229,7 @@
    },
    {
     "pid": "pacma",
-    "n": 2
+    "n": 1
    },
    {
     "pid": "pod",
@@ -257,16 +257,16 @@
    "pct": 68
   },
   {
-   "pid": "salf",
-   "pct": 61
-  },
-  {
    "pid": "fa",
    "pct": 60
   },
   {
    "pid": "vox",
    "pct": 59
+  },
+  {
+   "pid": "salf",
+   "pct": 58
   }
  ],
  "posturas": [
@@ -303,8 +303,8 @@
   {
    "pid": "salf",
    "conocidas": 106,
-   "estimadas": 91,
-   "conFuente": 26
+   "estimadas": 70,
+   "conFuente": 45
   },
   {
    "pid": "erc",

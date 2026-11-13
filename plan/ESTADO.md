@@ -2,7 +2,7 @@
 
 ## 13 nov 2026 (mañana) · Partido Humanista revisado con su programa; enlaces de fuentes comprobados
 - **Partido Humanista (31 págs., `#page=N`):** 5 posturas nuevas con fuente `programa` (antes sin postura): A03=5 (p. 6), D01=5 (p. 15), G02=4 (p. 21), G05=5 (p. 21), K05=5 (p. 21). El resto del programa no responde literalmente a las preguntas del test: no se aplica.
-- **SALF: NO revisado.** Su PDF (https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf) devuelve una comprobación anti-bot, no el documento; no se ha saltado. Pendiente de que el titular aporte el PDF o de la revisión diaria.
+- **SALF (PDF aportado por el titular, 40 págs.):** 23 posturas con fuente `programa` y página; 9 cambian de valor: A07 4~→5, B05 2~→1, B09 3~→5, C06 4~→5, C07 4~→5, D03 5~→4, H01 4~→2, H02 2~→1, H05 3~→5 (y D04/H07 pasan de declaración a programa). El resto sin pasaje literal: no se aplica (A08, A09, B08, C03, D07, F04, F05, F06, G05…).
 - **Enlaces (348 URL de fuentes):** 2 rotos corregidos: Frente Obrero (nuevo https://frenteobrero.es/documentos/programa-frente-obrero.pdf; las páginas citadas coinciden) y PP «Mi contrato con España» (retirado de pp.es): sus 3 citas (A05 p. 34, B03 p. 43, D03 p. 27) apuntan ahora al programa completo del PP, con el pasaje verificado. 45 más dan 403/406 por muros anti-bot (congreso.es, noticiasdenavarra.com, deia.eus…): no están rotos. hacienda.gob.es (nota de la SEPI-Telefónica) no se pudo comprobar desde el sandbox.
 
 ## 13 nov 2026 (S1c) · Revisión de Vox, EAJ-PNV y Adelante Andalucía con sus programas del 29N
