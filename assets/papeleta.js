@@ -648,13 +648,14 @@ function userProfile(st) {
 
 // Coincidencia con un partido: proximidad media ponderada (misma respuesta = 1, 4 puntos de distancia = 0).
 // Método alternativo para la comprobación de solidez: solo cuenta si estáis del mismo lado.
-function matchParty(pid, st, qs, user) {
+function matchParty(pid, st, qs, user, noEst = false) {
   let sw = 0, sa = 0, salt = 0, wAll = 0, nEst = 0;
   const items = [];
   for (const q of qs) {
     const w = weightOf(q, st); wAll += w;
     const v = q.pos[pid]; if (!v) continue;
     const u = st.ans[q.id], est = q.est.includes(pid);
+    if (noEst && est) continue;  // solo para la comprobación «sin posturas estimadas»; el resultado no la usa
     const W = w * (est ? W_ESTIMATED : 1), d = Math.abs(u - v);
     sw += W; sa += W * (1 - d / 4); salt += W * (Math.sign(u - 3) * Math.sign(v - 3) + 1) / 2;
     if (est) nEst++;
@@ -678,10 +679,10 @@ function computeModel(st) {
   const all = PIDS.map((pid) => matchParty(pid, st, qs, user)).sort((a, b) => b.score - a.score || b.n - a.n);
   const avail = partiesIn(st.prov);
   const prov = all.filter((m) => avail.includes(m.pid));
-  return { st, qs, ns, user, all, prov, avail, rel: reliability(st, qs, ns, prov), traits: traits(st, qs, ns) };
+  return { st, qs, ns, user, all, prov, avail, rel: reliability(st, qs, ns, prov, user), traits: traits(st, qs, ns) };
 }
 
-function reliability(st, qs, ns, prov) {
+function reliability(st, qs, ns, prov, user) {
   const nAns = qs.length, neutral = qs.filter((q) => st.ans[q.id] === 3).length;
   const softShare = (neutral + ns.length) / Math.max(1, nAns + ns.length);
   const [a, b] = prov;
@@ -705,6 +706,15 @@ function reliability(st, qs, ns, prov) {
   checks.push({ ok: !sameWay, txt: !sameWay ? (firm.length >= 12 ? "Tus respuestas combinan acuerdos y desacuerdos, como se espera de un cuestionario con afirmaciones en ambos sentidos." : "Hay pocas afirmaciones con opinión para valorar si respondes siempre en el mismo sentido.") : `Has respondido «${agreeShare >= 0.8 ? "de acuerdo" : "en desacuerdo"}» en el ${Math.round((agreeShare >= 0.8 ? agreeShare : 1 - agreeShare) * 100)} % de las afirmaciones en las que tomas partido, aunque el banco las formula en ambos sentidos. Puede ser una tendencia a responder siempre igual: revisa tus respuestas.` });
   const okN = checks.filter((c) => c.ok).length;
   const level = nAns < 12 || softShare >= 0.6 || sameWay || okN <= checks.length - 3 ? "baja" : okN === checks.length ? "alta" : "media";
+  // Tarea 4 del acuerdo con Codex (13 nov): qué pasaría sin las posturas estimadas. Es solo informativa: no cambia el
+  // resultado ni el nivel de fiabilidad (se añade después de calcularlo). Mismo cálculo, quitando las estimadas.
+  if (a && user) {
+    const nd = prov.map((m) => matchParty(m.pid, st, qs, user, true)).sort((x, y) => y.score - x.score || y.n - x.n);
+    const t = nd[0], same = t.pid === a.pid, nE = prov.reduce((k, m) => k + m.nEst, 0);
+    checks.push({ ok: same, info: true, txt: !nE ? "Ninguna de las posturas que se comparan es estimada: todas tienen fuente."
+      : same ? `Sin las posturas estimadas, la candidatura con más coincidencia sigue siendo ${pn(a.pid)} (${t.pct} % en lugar de ${a.pct} %).`
+      : `Sin las posturas estimadas, la candidatura con más coincidencia sería ${pn(t.pid)} (${t.pct} %), en lugar de ${pn(a.pid)} (${a.pct} %).` });
+  }
   return { level, checks, gap, sameTop, altTop, softShare };
 }
 
