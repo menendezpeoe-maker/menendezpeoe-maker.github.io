@@ -2,7 +2,7 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-11-12",
+  comprobado: "2026-11-13",
   // id de partido → { url, titulo, fecha }   (vacío: aún no publicado)
   publicados: {
     pp: { url: "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf", titulo: "Programa electoral del PP: «Reconstrucción Nacional»", fecha: "2026-11" },
