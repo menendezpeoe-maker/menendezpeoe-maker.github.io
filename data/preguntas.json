@@ -2700,7 +2700,7 @@
     "vox": 2,
     "fa": 5,
     "pod": 5,
-    "salf": 2,
+    "salf": 1,
     "pacma": 4,
     "d21": 2,
     "erc": 4,
@@ -2727,7 +2727,6 @@
     "ph": 4
    },
    "est": [
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -2864,6 +2863,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2886,7 +2891,8 @@
     "ph": "Estimación: el programa propone que las viviendas vacías de los bancos formen un «parque de vivienda pública en alquiler»; no habla de construir directamente.",
     "pcte": "Estimación: el programa de 2019 propone una bolsa de viviendas públicas en alquiler con precios fijos regulados por el Estado.",
     "pacma": "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente.",
-    "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos."
+    "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos.",
+    "salf": "Su contrato de 2026 saca el suelo público a concurso para vivienda protegida en propiedad: «el joven que compra es dueño, no inquilino del Ayuntamiento»."
    }
   },
   {
@@ -3238,7 +3244,7 @@
     "vox": 5,
     "fa": 1,
     "pod": 1,
-    "salf": 5,
+    "salf": 4,
     "d21": 4,
     "erc": 1,
     "junts": 1,
@@ -3262,7 +3268,6 @@
    },
    "est": [
     "pod",
-    "salf",
     "d21",
     "drago",
     "existe",
@@ -3385,6 +3390,12 @@
      "Programa electoral del Partido Humanista, elecciones generales 2023, p. 20",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 33",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3406,7 +3417,8 @@
     "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
     "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
     "falange": "Propone una educación unificada para toda España, con currículos y pruebas iguales en todo el territorio.",
-    "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación."
+    "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
+    "salf": "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona."
    }
   },
   {
@@ -6922,7 +6934,7 @@
     "vox": 1,
     "fa": 5,
     "pod": 5,
-    "salf": 1,
+    "salf": 2,
     "d21": 4,
     "erc": 4,
     "junts": 3,
@@ -6945,7 +6957,6 @@
     "falange": 1
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "bildu",
@@ -7020,6 +7031,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=18",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7031,7 +7048,8 @@
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
     "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes.",
-    "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada."
+    "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada.",
+    "salf": "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren."
    }
   },
   {

@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "A07",
+  "partido": "salf",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=15",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "A08",
   "partido": "pnv",
   "de": 3,
@@ -33,6 +49,70 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "B05",
+  "partido": "salf",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones».",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B09",
+  "partido": "salf",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 propone un aval público del 20 % de la entrada para menores de 40 años en su primera vivienda.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "C06",
+  "partido": "salf",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 incluye la supresión de las diputaciones provinciales entre sus fuentes de ahorro, con 1.500 millones al año.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "C07",
+  "partido": "salf",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 prevé gestión mancomunada obligatoria en los municipios de menos de 5.000 habitantes.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "D01",
   "partido": "ph",
   "de": 0,
@@ -43,6 +123,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D03",
+  "partido": "salf",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 propone un CGPJ sin influencia política, con elección por jueces y magistrados, antigüedad y/o sorteo.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
    "programa",
    "2026-11"
   ]
@@ -75,6 +171,70 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H01",
+  "partido": "salf",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H02",
+  "partido": "salf",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 propone un referéndum de renegociación europea y, si Bruselas se niega, un segundo referéndum de salida.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H05",
+  "partido": "salf",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 propone retirar la carta de Sánchez sobre el Sáhara y volver a la posición de la ONU.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "I04",
+  "partido": "salf",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 propone resultados públicos de cada centro educativo y evaluaciones externas al final de cada etapa.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=34",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 34",
    "programa",
    "2026-11"
   ]

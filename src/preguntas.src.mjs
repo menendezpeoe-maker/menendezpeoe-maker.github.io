@@ -146,7 +146,7 @@ export const QUESTIONS = [
   text: "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
   short: "Gran parque público de alquiler",
   ctx: "La vivienda social supone en torno al 2,5 % del total en España, frente a cerca del 9 % de media en la UE. En 2025 el Gobierno creó la empresa pública Casa 47 para promover y gestionar alquiler asequible. Otros partidos prefieren la colaboración público-privada: ceder suelo público a promotores a cambio de precios limitados durante años, para movilizar más inversión con menos gasto público.",
-  pos: "5 2 2 5 5 2~ 4~ 2~ 4 3~ 4~ 5 2~ 5~ 5 4 5 5~ 5 5 4 5 5 4~ 4~ 4~ 0 5~ 5 5 0 4~" },
+  pos: "5 2 2 5 5 1 4~ 2~ 4 3~ 4~ 5 2~ 5~ 5 4 5 5~ 5 5 4 5 5 4~ 4~ 4~ 0 5~ 5 5 0 4~" },
 { id: "B09", area: "viv", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "El Estado debería avalar parte de la hipoteca de los jóvenes para que puedan comprar su primera vivienda.",
   short: "Avales públicos a hipotecas de jóvenes",
@@ -170,7 +170,7 @@ export const QUESTIONS = [
   short: "Recentralizar la educación",
   ctx: "La educación está transferida a todas las comunidades desde el año 2000: el Estado fija las enseñanzas mínimas y los títulos, y las comunidades gestionan centros, profesorado y buena parte del currículo. Quienes piden recentralizarla apuntan a desigualdades entre territorios y a usos políticos del currículo o la lengua; quienes se oponen defienden la gestión cercana y el autogobierno de los estatutos.",
   ley: "Constitución, art. 149.1.30.ª",
-  pos: "1 2 5 1 1~ 5~ 0 4~ 1 1 1 1 1 1 1 1 1 1~ 1 1 2~ 1~ 1~ 0 1~ 0 0 0 5 5 0 2~" },
+  pos: "1 2 5 1 1~ 4 0 4~ 1 1 1 1 1 1 1 1 1 1~ 1 1 2~ 1~ 1~ 0 1~ 0 0 0 5 5 0 2~" },
 { id: "C04", area: "ter", prio: 2, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "España debería reformar la Constitución para convertirse en un Estado federal.",
   short: "Estado federal",
@@ -336,7 +336,7 @@ export const QUESTIONS = [
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
   ctx: "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
-  pos: "5 4 1 5 5 1~ 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0 0 0 1 0 0" },
+  pos: "5 4 1 5 5 2 0 4~ 4 3~ 4 4~ 3~ 4~ 4~ 4 5~ 5~ 5~ 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0 0 0 1 0 0" },
 { id: "F05", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
@@ -1117,6 +1117,7 @@ export const SOURCES = {
     pcte: ["https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7", "Programa electoral del PCTE para las generales de 2019 (10N), p. 7", "programa", "2019-11"],
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=65", "Programa de PACMA para las generales de 2023, p. 65", "programa", "2023-07"],
     ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10", "programa", "2026-11"],
+    salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6", "Contrato electoral simplificado de SALF para las generales de 2026, p. 6", "programa", "2026-11"],
   },
   B09: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1165,6 +1166,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=11", "Programa electoral general de FE de las JONS para las generales de 2023, p. 11", "programa", "2023-07"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=20", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 20", "programa", "2023-07"],
+    salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33", "Contrato electoral simplificado de SALF para las generales de 2026, p. 33", "programa", "2026-11"],
   },
   C04: {
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
@@ -1509,6 +1511,7 @@ export const SOURCES = {
     pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=63", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 63", "programa", "2019-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8", "Programa electoral general de FE de las JONS para las generales de 2023, p. 8", "programa", "2023-07"],
     ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19", "programa", "2026-11"],
+    salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=18", "Contrato electoral simplificado de SALF para las generales de 2026, p. 18", "programa", "2026-11"],
   },
   F05: {
     psoe: ["https://www.boe.es/eli/es/rdl/2025/03/18/2", "Real Decreto-ley 2/2025 sobre menores migrantes (18 de marzo de 2025)", "gobierno", "2025-03-18"],
@@ -2535,6 +2538,7 @@ export const JUSTIF = {
     pcte: "Estimación: el programa de 2019 propone una bolsa de viviendas públicas en alquiler con precios fijos regulados por el Estado.",
     pacma: "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente.",
     ccpc: "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos.",
+    salf: "Su contrato de 2026 saca el suelo público a concurso para vivienda protegida en propiedad: «el joven que compra es dueño, no inquilino del Ayuntamiento».",
   },
   B09: {
     psoe: "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
@@ -2584,6 +2588,7 @@ export const JUSTIF = {
     fo: "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
     falange: "Propone una educación unificada para toda España, con currículos y pruebas iguales en todo el territorio.",
     ph: "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
+    salf: "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona.",
   },
   C04: {
     psoe: "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada.",
@@ -2947,6 +2952,7 @@ export const JUSTIF = {
     pod: "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
     falange: "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes.",
     ccpc: "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada.",
+    salf: "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren.",
   },
   F05: {
     psoe: "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
