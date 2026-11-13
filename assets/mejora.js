@@ -76,14 +76,23 @@
   setAuto(); if (progWrap) progWrap.append(autoNote);
   autoNote.setAttribute("aria-live", "polite");
   {
-    const qc = $("#q-count"); let prev = 0, ht2 = 0;
+    const qc = $("#q-count"), bar = $("#q-prog"); let prev = 0, ht2 = 0, hit = false;
     const HIT = [[.25, "Llevas un cuarto del test"], [.5, "Ya vas por la mitad"], [.75, "Te queda solo un cuarto"]];
+    const show = (txt) => { autoNote.querySelector("span").textContent = txt; hit = true; clearTimeout(ht2); ht2 = setTimeout(() => { hit = false; setAuto(); }, 4000); };
     if (qc) new MutationObserver(() => {
       const m = /(\d+) de (\d+)/.exec(qc.textContent); if (!m) return; const n = +m[1], t = +m[2];
-      const fwd = n === prev + 1; prev = n; if (!fwd || failed || t < 8) return;
-      const h = HIT.find(([f]) => n - 1 === Math.round(t * f)); if (!h) return;
-      autoNote.querySelector("span").textContent = h[1]; clearTimeout(ht2); ht2 = setTimeout(setAuto, 4000);
+      if (n === prev) return;
+      const fwd = n === prev + 1; prev = n;
+      if (hit) { clearTimeout(ht2); hit = false; setAuto(); }
+      if (!fwd || failed || t < 8) return;
+      const done = bar ? +bar.getAttribute("aria-valuenow") || 0 : n - 1, left = t - done;
+      if (n === t && left === 1) { show("Última pregunta"); return; }
+      const h = HIT.find(([f]) => done === Math.round(t * f) && left > 1); if (h) show(h[1]);
     }).observe(qc, { childList: true, characterData: true, subtree: true });
+    if (bar) new MutationObserver(() => {
+      const t = +bar.getAttribute("aria-valuemax") || 0, done = +bar.getAttribute("aria-valuenow") || 0;
+      if (t >= 8 && done === t && !failed) show(`Has respondido las ${t} preguntas`);
+    }).observe(bar, { attributes: true, attributeFilter: ["aria-valuenow"] });
   }
   const warn = document.createElement("p"); warn.className = "save-warn"; warn.setAttribute("role", "alert"); warn.hidden = true; warn.dataset.mejora = "texto-nuevo";
   warn.textContent = T.noGuardaAviso; if (quizView) quizView.prepend(warn);
