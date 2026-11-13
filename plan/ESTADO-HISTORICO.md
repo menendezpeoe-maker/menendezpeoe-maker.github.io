@@ -1,5 +1,12 @@
 # Estado del plan · histórico (entradas movidas desde ESTADO.md, sin cambios; lo más reciente arriba)
 
+## 13 nov 2026 (S1c) · Revisión de Vox, EAJ-PNV y Adelante Andalucía con sus programas del 29N
+- **Vox (programa de 66 págs., `#page=N`):** 45 posturas con fuente de tipo `programa`, pasaje y alcance en JUSTIF (impuestos, deuda, vivienda, desalojo, educación, CGPJ, sedición, prisión permanente, inmigración, nucleares, Mercosur, caza, toros, burka, vida…). Ningún valor cambia: todas ya coincidían; no se toca su estado publicado.
+- **EAJ-PNV (43 págs.):** sin cambios de postura; casi todo lo que cubre su programa ya estaba fuente `programa`. **Aplicado tras OK del titular (13 nov):** A08 pasa de 3~ a 2 (salario mínimo propio «siempre por encima del estatal», p. 9) y B05 con fuente `programa` (p. 8), valor 4 sin cambio.
+- **Adelante Andalucía (134 págs.):** 5 posturas con fuente `programa` y sin estimación: E02 (p. 94), E03 (p. 29), L01 (p. 40), G05 (p. 82), J07 (p. 36). Valores sin cambio. Quedan estimadas las demás (sin pasaje literal; p. ej. D07 y E09 solo mencionan cannabis terapéutico).
+- Aviso discreto en la home: «Posturas revisadas con los programas del 29N publicados hasta el 13 de noviembre» (`PROGRAMAS.comprobado`).
+- Siguiente en cola: PSOE cuando publique (revisión diaria); M+J (candidatura 30) lo añade el hilo Codex–Claude.
+
 ## 13 nov 2026 (00:30) · Programas de EAJ-PNV y Adelante Andalucía publicados (estado); revisión diaria de programas; COLA PARA S1c
 - **Estado «publicado» (sin cambiar posturas):** EAJ-PNV (PDF oficial de 43 págs., https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n ; página https://www.eaj-pnv.eus/es/programa-elecciones-generales-2026/ y presentación en su web, ambas 200) y Adelante Andalucía (PDF de 134 págs., creado el 10 nov, https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf ; incluye un apartado por provincia andaluza). Circunscripciones cruzadas con el BOE del 3 nov (`src/candidaturas.json`): PNV en Álava, Bizkaia y Gipuzkoa; Adelante en las 8 andaluzas. Portada y /programas/: **7 de 29** (PP, ERC, BNG, CC-PC, Vox, PNV, Adelante), cada uno con «0 posturas revisadas con él» hasta revisarlas.
 - **COLA PARA S1c (y después para la revisión diaria): revisar con su programa 29N las posturas de Vox, EAJ-PNV y Adelante Andalucía**, en ese orden, con fuente de tipo `programa`, `#page=N`, pasaje y alcance (regla 8; lo dudoso no se aplica y se anota). Descarga con `curl -sSL -A "Mozilla/5.0"`. No volver a tocar el estado de Vox (ya está).

@@ -871,7 +871,7 @@ export const SOURCES = {
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=15", "Programa electoral de Sumar para el 23J de 2023, p. 15", "programa", "2023-07"],
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 13", "programa", "2023-07"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15", "programa", "2026-11"],
     falange: ["https://falange.es/nuestras-ideas/", "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)", "programa", "2026-11"],
   },
   A03: {
@@ -993,7 +993,7 @@ export const SOURCES = {
     upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40", "programa", "2023-04"],
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14", "programa", "2023-07"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12", "Programa electoral general de FE de las JONS para las generales de 2023, p. 12", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18", "programa", "2026-11"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14", "Programa electoral del Partido Humanista de 2023, p. 14", "programa", "2023-07"],
   },
   B02: {
@@ -1015,7 +1015,7 @@ export const SOURCES = {
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 14", "programa", "2023-07"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=12", "Programa electoral general de FE de las JONS para las generales de 2023, p. 12", "programa", "2023-07"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14", "Programa electoral del Partido Humanista de 2023, p. 14", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18", "programa", "2026-11"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46", "Programa político del Frente Obrero de 2026, p. 46", "programa", "2026-10"],
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=65", "Programa de PACMA para las generales de 2023, p. 65", "programa", "2023-07"],
   },
@@ -1035,7 +1035,7 @@ export const SOURCES = {
     d21: ["https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=8", "Programa de Ciudadanos (integrado en la candidatura de D21) para las generales de noviembre de 2019, p. 8", "programa", "2019-11"],
     fa: ["https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular", "La Marea: el Congreso rechaza la ley antiocupación del PP (votos de Unidas Podemos y Más País, hoy en el Frente Amplio)", "parlamento", "2022-11-29"],
     erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion099/20250318/Votacion001/VOT_20250318201321.json", "Congreso de los Diputados, votación nominal (datos abiertos): toma en consideración de la proposición de ley de Junts de medidas urgentes contra la ocupación ilegal de inmuebles (desalojo en 48 horas), 18/03/2025", "parlamento", "2025-03-18"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 18", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18", "programa", "2026-11"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46", "Programa político del Frente Obrero de 2026, p. 46", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=20", "Programa electoral general de FE de las JONS para las generales de 2023, p. 20", "programa", "2023-07"],
   },
@@ -1201,7 +1201,7 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=75", "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 75", "programa", "2023-07"],
     existe: ["https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=6", "Programa electoral de Teruel Existe para las generales de 2023, p. 6", "programa", "2023-07"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=4", "Programa electoral general de FE de las JONS para las generales de 2023, p. 4", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=42", "Programa electoral del BNG de 2026, p. 42", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16", "Contrato electoral simplificado de SALF para las generales de 2026, p. 16", "programa", "2026-11"],
   },
@@ -1241,13 +1241,13 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=69", "Programa de PACMA para las generales de 2023, p. 69", "programa", "2023-07"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2019/04/maqueta_100_medidas_2019.pdf#page=5", "«100 medidas para la España viva» de Vox (2019), medida 11", "programa", "2019-04"],
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240", "programa", "2019-04"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 9", "programa", "2026-11"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15", "Programa del Partido Humanista para las elecciones generales de 2026, p. 15", "programa", "2026-11"],
   },
   D02: {
     erc: ["https://static.esquerra.cat/arxius/30congresnacional/30CgN_ponencia_politica.pdf", "Ponència política del 30è Congrés Nacional d'Esquerra Republicana", "programa", "2025-03"],
     d21: ["https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=13", "Democracia 21, documento «España Limpia», p. 13", "programa", "2026-10"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 9", "programa", "2026-11"],
   },
   D03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1262,7 +1262,7 @@ export const SOURCES = {
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=131", "Programa electoral de Sumar para el 23J de 2023, p. 131", "programa", "2023-07"],
     erc: ["https://www.que.es/2021/09/21/psoe-podemos-socios-tumban-reforma-cgpj-pp/", "Que.es, reforma del CGPJ del PP rechazada, 21/09/2021", "parlamento", "2021-09-21"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=17", "Programa electoral general de FE de las JONS para las generales de 2023, p. 17", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=10", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 10", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=10", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 10", "programa", "2026-11"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=58", "Programa político del Frente Obrero de 2026, p. 58", "programa", "2026-10"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28", "Contrato electoral simplificado de SALF para las generales de 2026, p. 28", "programa", "2026-11"],
   },
@@ -1381,7 +1381,7 @@ export const SOURCES = {
   },
   E05: {
     psoe: ["https://forbes.es/ultima-hora/313448/el-reconocimiento-facial-y-biometrico-por-los-gobiernos-un-punto-critico-en-la-regulacion-de-la-ia-en-la-ue/", "Declaraciones de Carme Artigas sobre el reglamento europeo de IA (18 de julio de 2023)", "declaracion", "2023-07-18"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 26", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 26", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=77", "Programa electoral del BNG de 2026, p. 77", "programa", "2026-11"],
   },
   E06: {
@@ -1402,7 +1402,7 @@ export const SOURCES = {
     pp: ["https://www.deia.eus/politica/2025/01/10/pp-dice-ley-psoe-limitar-9142368.html", "Deia (Europa Press), el PP sobre la ley del PSOE que limita la acusación popular, 10/01/2025", "declaracion", "2025-01-10"],
     fa: ["https://theobjective.com/espana/politica/2025-01-15/ernest-urtasun-ley-psoe-acusacion-popular/", "Ernest Urtasun critica la ley del PSOE para limitar la acusación popular: «No procede» (The Objective)", "declaracion", "2025-01-15"],
     pod: ["https://elespanol.com/espana/politica/20250110/sumar-opone-ley-sanchez-restringe-accion-popular-justicia-junts-hara-enmienda-totalidad/915409022_0.html", "El Español: Podemos ve «ineficaz» y «cosmética» la ley del PSOE que limita la acusación popular", "prensa", "2025-01-10"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=12", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=12", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 12", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28", "Contrato electoral simplificado de SALF para las generales de 2026, p. 28", "programa", "2026-11"],
   },
   E08: {
@@ -1457,7 +1457,7 @@ export const SOURCES = {
     drago: ["https://www.dragocanarias.com/programa/", "Programa de Drago Canarias (autonómicas 2023), apartado de migraciones y derechos humanos", "programa", "2023-05"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8", "Programa electoral general de FE de las JONS para las generales de 2023, p. 8", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 20", "programa", "2026-11"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 24", "programa", "2023-07"],
   },
   F02: {
@@ -1475,7 +1475,7 @@ export const SOURCES = {
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276", "programa", "2026-04"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53", "programa", "2026-10"],
     falange: ["https://falange.es/nuestras-ideas/", "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)", "programa", "2026-11"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 20", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=20", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 20", "programa", "2026-11"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24", "Programa electoral del Partido Humanista de 2023, p. 24", "programa", "2023-07"],
     pcte: ["https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7", "Programa electoral del PCTE para las generales de 2019 (10N), p. 7", "programa", "2019-11"],
   },
@@ -1525,7 +1525,7 @@ export const SOURCES = {
     upc: ["https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89", "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89", "programa", "2023-04"],
     erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026", "parlamento", "2026-09-16"],
     junts: ["https://theobjective.com/espana/2024-06-27/junts-librarse-reparto-menores-cataluna-inmigracion/", "The Objective, Junts pide librar a Cataluña del reparto de menores, 27/06/2024", "parlamento", "2024-06-27"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8", "Programa electoral general de FE de las JONS para las generales de 2023, p. 8", "programa", "2023-07"],
   },
   F06: {
@@ -1563,7 +1563,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=19", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://theobjective.com/espana/2020-06-10/ingreso-minimo-sale-adelante-congreso-todos-los-grupos-favor-salvo-vox/", "The Objective: el Congreso convalida el Ingreso Mínimo Vital con la abstención de Vox (10 de junio de 2020)", "parlamento", "2020-06-10"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=13", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 13", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 16", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 16", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=32", "Contrato electoral simplificado de SALF para las generales de 2026, p. 32", "programa", "2026-11"],
   },
   G01: {
@@ -1585,7 +1585,7 @@ export const SOURCES = {
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=68", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 68", "programa", "2019-05"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14", "Programa electoral general de FE de las JONS para las generales de 2023, p. 14", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24", "programa", "2026-11"],
   },
   G02: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1600,7 +1600,7 @@ export const SOURCES = {
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6", "Programa electoral de Adelante Andalucía de 2026, p. 6", "programa", "2026-04"],
     salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21", "Programa electoral de SALF para Castilla y León, p. 21 (programa autonómico CyL 2026; mismo asunto)", "programa", "2026-03"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38", "programa", "2026-10"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24", "programa", "2026-11"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
   },
   G03: {
@@ -1609,7 +1609,7 @@ export const SOURCES = {
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=12", "Programa electoral de Vox de 2026 («Es sentido común»), p. 12", "programa", "2026-11"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=11", "Programa electoral de Sumar de 2023, p. 11", "programa", "2023-07"],
     erc: ["https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=29", "Programa electoral de ERC de 2026, p. 29", "programa", "2026-11"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35", "Contrato electoral simplificado de SALF para las generales de 2026, p. 35", "programa", "2026-11"],
   },
   G04: {
@@ -1680,7 +1680,7 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=127", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 127", "programa", "2019-04"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=14", "Programa electoral general de FE de las JONS para las generales de 2023, p. 14", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24", "programa", "2026-11"],
     ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15", "programa", "2026-11"],
   },
   H01: {
@@ -1717,7 +1717,7 @@ export const SOURCES = {
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19", "programa", "2023-07"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=7", "Programa electoral general de FE de las JONS para las generales de 2023, p. 7", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35", "Contrato electoral simplificado de SALF para las generales de 2026, p. 35", "programa", "2026-11"],
   },
   H03: {
@@ -1725,7 +1725,7 @@ export const SOURCES = {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=137", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=146", "Programa electoral de Sumar de 2023, p. 146", "programa", "2023-07"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147", "Programa electoral de Sumar para el 23J de 2023, p. 147", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 13", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
   },
   H04: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831", "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)", "gobierno", "2025-09-24"],
@@ -1781,7 +1781,7 @@ export const SOURCES = {
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 19", "programa", "2023-07"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11", "programa", "2026-10"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=18", "Programa electoral general de FE de las JONS para las generales de 2023, p. 18", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 14", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 14", "programa", "2026-11"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=3", "Programa electoral del Partido Humanista de 2023, p. 3", "programa", "2023-07"],
   },
   H07: {
@@ -1797,7 +1797,7 @@ export const SOURCES = {
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=149", "Programa electoral de Sumar para el 23J de 2023, p. 149", "programa", "2023-07"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=39", "Contrato electoral simplificado de SALF para las generales de 2026, p. 39", "programa", "2026-11"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 24", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 15", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15", "programa", "2026-11"],
   },
   H08: {
     psoe: ["https://www.lamoncloa.gob.es/presidente/intervenciones/Documents/2026/260414-rdp-viaje-a-china.pdf", "Rueda de prensa de Pedro Sánchez en Pekín (14 de abril de 2026)", "declaracion", "2026-04-14"],
@@ -1911,7 +1911,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2020/01/20.01.19_titulares_pablo_casado_en_murcia.pdf#page=2", "Partido Popular, titulares de la intervención de Pablo Casado en Murcia (19 de enero de 2020), p. 2", "declaracion", "2020-01-19"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=115", "Programa electoral de Sumar para el 23J de 2023, p. 115", "programa", "2023-07"],
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 19", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 22", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22", "programa", "2026-11"],
   },
   I08: {
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=38", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 38", "programa", "2026-11"],
@@ -2005,7 +2005,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13", "programa", "2026-11"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"],
     d21: ["https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=11", "Democracia 21, documento «España Limpia», p. 11", "programa", "2026-10"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 16", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 16", "programa", "2026-11"],
   },
   J06: {
     psoe: ["https://www.boe.es/eli/es/rdl/2023/12/19/6", "Real Decreto-ley 6/2023 de función pública (19 de diciembre de 2023)", "gobierno", "2023-12-19"],
@@ -2064,7 +2064,7 @@ export const SOURCES = {
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=62", "Programa electoral de Sumar para el 23J de 2023, p. 62", "programa", "2023-07"],
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=12", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12", "programa", "2023-07"],
     falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13", "Programa electoral general de FE de las JONS para las generales de 2023, p. 13", "programa", "2023-07"],
-    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=25", "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 25", "programa", "2025-12"],
+    ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=25", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 25", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=47", "Programa electoral del BNG de 2026, p. 47", "programa", "2026-11"],
   },

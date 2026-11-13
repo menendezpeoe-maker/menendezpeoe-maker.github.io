@@ -65,6 +65,22 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "B08",
+  "partido": "salf",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 saca el suelo público a concurso para vivienda protegida en propiedad: «el joven que compra es dueño, no inquilino del Ayuntamiento».",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "B09",
   "partido": "salf",
   "de": 3,
@@ -75,6 +91,22 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "C03",
+  "partido": "salf",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 33",
    "programa",
    "2026-11"
   ]
@@ -139,6 +171,22 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F04",
+  "partido": "salf",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=18",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 18",
    "programa",
    "2026-11"
   ]
