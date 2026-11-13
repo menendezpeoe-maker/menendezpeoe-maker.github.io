@@ -1373,12 +1373,12 @@
   "pp": {
    "url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf",
    "titulo": "Programa electoral del PP: «Reconstrucción Nacional»",
-   "fecha": "2026-11"
+   "fecha": "2026-11-10"
   },
   "erc": {
    "url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
    "titulo": "Programa electoral de ERC (Eleccions al Congrés 2026)",
-   "fecha": "2026-11"
+   "fecha": "2026-11-10"
   },
   "ccpc": {
    "url": "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf",
@@ -1409,6 +1409,16 @@
    "url": "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf",
    "titulo": "Programa del Partido Humanista para las elecciones generales de 2026",
    "fecha": "2026-11"
+  },
+  "fo": {
+   "url": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+   "titulo": "Programa político del Frente Obrero (enlazado desde su web como programa de las generales de 2026)",
+   "fecha": "2026-10"
+  },
+  "ie": {
+   "url": "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf",
+   "titulo": "Contrato electoral de Iustitia Europa (sección «Elecciones 29-N» de su web)",
+   "fecha": "2026-11-11"
   },
   "bng": {
    "url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
