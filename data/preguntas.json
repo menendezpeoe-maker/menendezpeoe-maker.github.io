@@ -544,7 +544,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "fo": 5
+    "fo": 5,
+    "ph": 5
    },
    "est": [
     "d21",
@@ -641,10 +642,16 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
      "programa",
      "2026-10"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=6",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 6",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -662,7 +669,8 @@
     "adel": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
     "cha": "Propone recuperar el Impuesto sobre el Patrimonio o sustituirlo por otro que grave la riqueza, además de subir el IRPF a las rentas más altas.",
     "upc": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados.",
-    "fo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado."
+    "fo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado.",
+    "ph": "Su programa de 2026 propone un impuesto a las grandes fortunas y al patrimonio neto superior a 3 millones de euros."
    }
   },
   {
@@ -883,10 +891,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3",
-     "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=34",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 34",
      "programa",
-     "2026-10"
+     "2026-11"
     ],
     "vox": [
      "https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/",
@@ -944,7 +952,7 @@
     "erc": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
-    "pp": "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto.",
+    "pp": "Su programa de 2026 asegura que las pensiones mantengan su poder adquisitivo y suban cada año con el IPC; no opta claramente por subir ingresos ni por recortar gasto.",
     "vox": "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate.",
     "ccpc": "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
     "comp": "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
@@ -1044,7 +1052,7 @@
     "vox": 4,
     "fa": 1,
     "pod": 1,
-    "salf": 4,
+    "salf": 5,
     "d21": 3,
     "erc": 2,
     "junts": 4,
@@ -1058,7 +1066,6 @@
     "pp",
     "fa",
     "pod",
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -1085,10 +1092,10 @@
      "2023-07"
     ],
     "salf": [
-     "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
-     "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
-     "prensa",
-     "2024-06"
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=15",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1097,7 +1104,7 @@
     "vox": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
     "pod": "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
     "erc": "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
-    "salf": "Estimación: Alvise promete estimular el uso del efectivo frente al euro digital; no cita el límite de 1.000 euros, por eso la base es indirecta."
+    "salf": "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar."
    }
   },
   {
@@ -1218,7 +1225,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=9",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=9",
      "Programa político del Frente Obrero de 2026, p. 9",
      "programa",
      "2026-10"
@@ -1356,7 +1363,7 @@
      "2019-11"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=13",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=13",
      "Programa político del Frente Obrero de 2026, p. 13",
      "programa",
      "2026-10"
@@ -1502,7 +1509,7 @@
      "2026-03"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
      "programa",
      "2026-10"
@@ -1893,7 +1900,7 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
@@ -1987,10 +1994,10 @@
      "2025-03-18"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
-     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43",
      "programa",
-     "2026-10-19"
+     "2026-11"
     ],
     "vox": [
      "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=24",
@@ -2077,7 +2084,7 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
@@ -2091,7 +2098,7 @@
    },
    "why": {
     "psoe": "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
-    "pp": "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
+    "pp": "Su programa de 2026 promete una ley para que el propietario recupere la vivienda ocupada en 48 horas desde el primer día, por orden judicial.",
     "vox": "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     "salf": "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
@@ -2149,7 +2156,6 @@
     "ph": 1
    },
    "est": [
-    "salf",
     "pacma",
     "d21",
     "pnv",
@@ -2228,7 +2234,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
@@ -2250,6 +2256,12 @@
      "Programa electoral del BNG de 2026, p. 12",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=5",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 5",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2265,7 +2277,8 @@
     "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional.",
     "ph": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados.",
     "pacma": "Estimación: el programa critica ampliar los plazos de suspensión de lanzamientos porque carga sobre propietarios particulares y reduce la oferta de alquiler.",
-    "bng": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional."
+    "bng": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional.",
+    "salf": "Su contrato de 2026 fija juicio verbal y lanzamiento en 30 días para el inquilino que deja de pagar, sin excusas de vulnerabilidad: a los vulnerables los atiende el Estado."
    }
   },
   {
@@ -2285,7 +2298,7 @@
     "vox": 2,
     "fa": 5,
     "pod": 5,
-    "salf": 2,
+    "salf": 1,
     "d21": 3,
     "erc": 5,
     "junts": 3,
@@ -2305,7 +2318,6 @@
     "fo": 4
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "upn",
@@ -2401,10 +2413,16 @@
      "2025-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2422,7 +2440,8 @@
     "bildu": "EH Bildu propone poner tope a los pisos turísticos como parte de su política de vivienda.",
     "vox": "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos.",
     "pp": "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos.",
-    "fo": "Estimación: el programa propone medidas que detengan el auge de los pisos turísticos y la gentrificación, sin precisar que lo decidan los ayuntamientos."
+    "fo": "Estimación: el programa propone medidas que detengan el auge de los pisos turísticos y la gentrificación, sin precisar que lo decidan los ayuntamientos.",
+    "salf": "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones»."
    }
   },
   {
@@ -2681,7 +2700,7 @@
     "vox": 2,
     "fa": 5,
     "pod": 5,
-    "salf": 2,
+    "salf": 1,
     "pacma": 4,
     "d21": 2,
     "erc": 4,
@@ -2708,7 +2727,6 @@
     "ph": 4
    },
    "est": [
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -2811,7 +2829,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=45",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=45",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
      "programa",
      "2026-10"
@@ -2845,6 +2863,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2867,7 +2891,8 @@
     "ph": "Estimación: el programa propone que las viviendas vacías de los bancos formen un «parque de vivienda pública en alquiler»; no habla de construir directamente.",
     "pcte": "Estimación: el programa de 2019 propone una bolsa de viviendas públicas en alquiler con precios fijos regulados por el Estado.",
     "pacma": "Estimación: el programa dice que se necesita ya una gran dotación de vivienda social, para compra y para alquiler, ante el escaso parque público existente.",
-    "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos."
+    "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos.",
+    "salf": "Su contrato de 2026 saca el suelo público a concurso para vivienda protegida en propiedad: «el joven que compra es dueño, no inquilino del Ayuntamiento»."
    }
   },
   {
@@ -2887,7 +2912,7 @@
     "vox": 4,
     "fa": 2,
     "pod": 1,
-    "salf": 3,
+    "salf": 5,
     "d21": 4,
     "erc": 3,
     "junts": 4,
@@ -2905,7 +2930,6 @@
     "adel": 2
    },
    "est": [
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -2952,6 +2976,12 @@
      "The Objective, declaraciones de Pablo Echenique, 09/05/2023",
      "declaracion",
      "2023-05-09"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=6",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 6",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2960,7 +2990,8 @@
     "vox": "Su programa de 2026 propone avales a la financiación y créditos blandos para vivienda protegida y un 0 % de IVA en la primera vivienda habitual.",
     "fa": "Criticó los avales públicos para la compra de primera vivienda por encarecer los precios.",
     "pod": "Unidas Podemos pidió rectificar el «error» de los avales del ICO al 20 % de la hipoteca de la primera vivienda.",
-    "erc": "Estimación: ERC prioriza el alquiler protegido sobre los avales a la compra."
+    "erc": "Estimación: ERC prioriza el alquiler protegido sobre los avales a la compra.",
+    "salf": "Su contrato de 2026 propone un aval público del 20 % de la entrada para menores de 40 años en su primera vivienda."
    }
   },
   {
@@ -3078,7 +3109,7 @@
      "2024-08-26"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3213,7 +3244,7 @@
     "vox": 5,
     "fa": 1,
     "pod": 1,
-    "salf": 5,
+    "salf": 4,
     "d21": 4,
     "erc": 1,
     "junts": 1,
@@ -3237,7 +3268,6 @@
    },
    "est": [
     "pod",
-    "salf",
     "d21",
     "drago",
     "existe",
@@ -3344,7 +3374,7 @@
      "2013-06-27"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3360,6 +3390,12 @@
      "Programa electoral del Partido Humanista, elecciones generales 2023, p. 20",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 33",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3381,7 +3417,8 @@
     "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
     "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
     "falange": "Propone una educación unificada para toda España, con currículos y pruebas iguales en todo el territorio.",
-    "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación."
+    "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
+    "salf": "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona."
    }
   },
   {
@@ -3626,7 +3663,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3677,7 +3714,7 @@
     "vox": 2,
     "fa": 2,
     "pod": 5,
-    "salf": 4,
+    "salf": 5,
     "d21": 5,
     "erc": 4,
     "junts": 3,
@@ -3700,7 +3737,6 @@
    "est": [
     "psoe",
     "vox",
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -3769,6 +3805,12 @@
      "Programa electoral del BNG de 2026, p. 42",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3781,7 +3823,8 @@
     "existe": "Plantea la elección directa de los representantes en las diputaciones provinciales, lo que implica mantenerlas.",
     "falange": "Defiende conservar la provincia y el municipio como base y disolver las autonomías, no las diputaciones.",
     "ie": "Incluye la supresión de las diputaciones provinciales dentro de su plan de reducción del gasto.",
-    "bng": "Su programa de 2026 suprime las diputaciones provinciales y traspasa sus funciones a Galicia y a los ayuntamientos."
+    "bng": "Su programa de 2026 suprime las diputaciones provinciales y traspasa sus funciones a Galicia y a los ayuntamientos.",
+    "salf": "Su contrato de 2026 incluye la supresión de las diputaciones provinciales entre sus fuentes de ahorro, con 1.500 millones al año."
    }
   },
   {
@@ -3801,7 +3844,7 @@
     "vox": 5,
     "fa": 2,
     "pod": 1,
-    "salf": 4,
+    "salf": 5,
     "d21": 5,
     "erc": 2,
     "junts": 2,
@@ -3818,7 +3861,6 @@
    "est": [
     "fa",
     "pod",
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -3850,7 +3892,7 @@
      "2019-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3858,6 +3900,12 @@
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=33",
      "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 33",
+     "programa",
+     "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
      "programa",
      "2026-11"
     ]
@@ -3869,7 +3917,8 @@
     "erc": "El programa prefiere mancomunar servicios de forma voluntaria, no obligatoria.",
     "vox": "La medida 36 propone fusionar ayuntamientos y reducir representantes locales.",
     "fo": "Propone promover la fusión de ayuntamientos para reducir el volumen de la administración; no la plantea como obligatoria.",
-    "pp": "Su programa de 2026 propone un Estatuto de los Pequeños Municipios para facilitar que compartan personal y servicios."
+    "pp": "Su programa de 2026 propone un Estatuto de los Pequeños Municipios para facilitar que compartan personal y servicios.",
+    "salf": "Su contrato de 2026 prevé gestión mancomunada obligatoria en los municipios de menos de 5.000 habitantes."
    }
   },
   {
@@ -3914,7 +3963,6 @@
    "est": [
     "vox",
     "fa",
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -3966,6 +4014,12 @@
      "Valencia Plaza, Compromís propone una reforma urgente del Senado, 21/04/2019",
      "declaracion",
      "2019-04-21"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=29",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 29",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3974,7 +4028,8 @@
     "fa": "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
     "pod": "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
     "erc": "ERC propone suprimir el Senado en lugar de reconvertirlo.",
-    "comp": "Baldoví y los candidatos de Compromís piden reformar el Senado para convertirlo en una verdadera cámara de representación territorial."
+    "comp": "Baldoví y los candidatos de Compromís piden reformar el Senado para convertirlo en una verdadera cámara de representación territorial.",
+    "salf": "Su contrato de 2026 propone suprimir el Senado, junto con el Consejo de Estado y los consejos económicos y sociales."
    }
   },
   {
@@ -4130,7 +4185,8 @@
     "upl": 1,
     "soria": 1,
     "pav": 1,
-    "ie": 1
+    "ie": 1,
+    "ph": 5
    },
    "est": [
     "psoe",
@@ -4208,6 +4264,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
      "programa",
      "2025-12"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4220,7 +4282,8 @@
     "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
     "vox": "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional.",
     "comp": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto.",
-    "ie": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales."
+    "ie": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales.",
+    "ph": "Su programa de 2026 propone circunscripción única estatal en el Congreso y suprimir las barreras porcentuales para que todos los votos valgan lo mismo."
    }
   },
   {
@@ -4318,7 +4381,7 @@
     "vox": 5,
     "fa": 1,
     "pod": 1,
-    "salf": 5,
+    "salf": 4,
     "d21": 5,
     "erc": 1,
     "junts": 2,
@@ -4339,7 +4402,6 @@
     "ie": 5
    },
    "est": [
-    "salf",
     "pnv",
     "gbai",
     "bng",
@@ -4359,10 +4421,10 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
-     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=27",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 27",
      "programa",
-     "2026-10-19"
+     "2026-11"
     ],
     "vox": [
      "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=55",
@@ -4431,15 +4493,21 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=58",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=58",
      "Programa político del Frente Obrero de 2026, p. 58",
      "programa",
      "2026-10"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "psoe": "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
-    "pp": "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ.",
+    "pp": "Su programa de 2026 propone que los jueces y magistrados elijan a los doce vocales judiciales del CGPJ.",
     "vox": "Su programa de 2026 propone que los doce vocales judiciales del CGPJ sean elegidos por voto directo y secreto de los propios jueces y magistrados.",
     "fa": "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
     "pod": "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
@@ -4451,7 +4519,8 @@
     "upc": "Para el CGPJ propone reforzar el protagonismo del Parlamento y mantiene la elección parlamentaria de los vocales de procedencia judicial.",
     "falange": "Propone que el Consejo General del Poder Judicial sea elegido por los jueces y magistrados.",
     "ie": "Propone que el CGPJ lo elijan por sufragio directo y secreto los propios jueces y magistrados en activo.",
-    "fo": "Estimación: el programa propone priorizar la carrera judicial en los órganos judiciales superiores y suprimir la elección de sus miembros por el Gobierno."
+    "fo": "Estimación: el programa propone priorizar la carrera judicial en los órganos judiciales superiores y suprimir la elección de sus miembros por el Gobierno.",
+    "salf": "Su contrato de 2026 propone un CGPJ sin influencia política, con elección por jueces y magistrados, antigüedad y/o sorteo."
    }
   },
   {
@@ -4584,10 +4653,10 @@
      "2021-03-23"
     ],
     "salf": [
-     "https://www.elmundo.es/espana/2024/06/13/66697b9321efa037638b4582.html",
-     "El Mundo, 13/06/2024, declaraciones de Alvise Pérez y de SALF sobre la ley de amnistía",
-     "declaracion",
-     "2024-06-13"
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=26",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4605,7 +4674,7 @@
     "ccpc": "Votó en contra de la ley de amnistía en su aprobación definitiva en el Congreso, en mayo de 2024.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
     "comp": "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán.",
-    "salf": "SALF y Alvise tachan la ley de amnistía de contraria al marco constitucional y critican al Rey por sancionarla."
+    "salf": "Su contrato de 2026 propone reformar la Constitución para prohibir expresamente las amnistías."
    }
   },
   {
@@ -4645,7 +4714,6 @@
     "pp",
     "vox",
     "fa",
-    "salf",
     "d21",
     "junts",
     "pnv",
@@ -4680,6 +4748,12 @@
      "Programa electoral del BNG de 2026, p. 41",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4687,7 +4761,8 @@
     "erc": "El programa califica las puertas giratorias de corrupción institucionalizada.",
     "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
     "pacma": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años.",
-    "bng": "Su programa de 2026 propone regular estrictamente las puertas giratorias y las incompatibilidades."
+    "bng": "Su programa de 2026 propone regular estrictamente las puertas giratorias y las incompatibilidades.",
+    "salf": "Su contrato de 2026 fija cinco años de incompatibilidad para pasar a empresas reguladas y a órganos de control."
    }
   },
   {
@@ -5122,7 +5197,6 @@
     "falange": 5
    },
    "est": [
-    "salf",
     "d21",
     "gbai",
     "bng",
@@ -5203,6 +5277,12 @@
      "Programa electoral general de FE de las JONS para las generales de 2023, p. 20",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=8",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 8",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5210,7 +5290,8 @@
     "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
     "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026.",
     "falange": "Propone aumentar las penas por delitos comunes e incrementarlas por reincidencia.",
-    "erc": "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas."
+    "erc": "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas.",
+    "salf": "Su contrato de 2026 impone prisión sin suspensión a la tercera condena, juicios rápidos en 72 horas y cumplimiento íntegro para delitos graves."
    }
   },
   {
@@ -5251,7 +5332,6 @@
    },
    "est": [
     "psoe",
-    "salf",
     "d21",
     "gbai",
     "drago",
@@ -5349,6 +5429,12 @@
      "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 94",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=8",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 8",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5366,7 +5452,8 @@
     "comp": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upc": "Incluye en su programa eliminar la prisión permanente revisable.",
     "falange": "Propone introducir la cadena perpetua no revisable para asesinato, violación, pederastia y terrorismo.",
-    "adel": "Su programa de 2026 propone derogar la prisión permanente revisable y que las penas se orienten a la reinserción."
+    "adel": "Su programa de 2026 propone derogar la prisión permanente revisable y que las penas se orienten a la reinserción.",
+    "salf": "Su contrato de 2026 mantiene la prisión permanente revisable y la amplía a la violación de menores o con lesiones graves."
    }
   },
   {
@@ -5890,7 +5977,6 @@
    },
    "est": [
     "vox",
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -5940,6 +6026,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 12",
      "programa",
      "2025-12"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5949,7 +6041,8 @@
     "fa": "Su portavoz Ernest Urtasun rechazó limitar la acusación popular, que considera un instrumento fundamental en democracia.",
     "pod": "Estimación: sin postura publicada sobre limitar la acusación popular.",
     "erc": "Estimación: ERC ha criticado el uso político de la justicia, sin postura localizada sobre esta reforma.",
-    "ie": "Propone blindar en la Constitución la acción popular y prohibir cualquier restricción a su ejercicio."
+    "ie": "Propone blindar en la Constitución la acción popular y prohibir cualquier restricción a su ejercicio.",
+    "salf": "Su contrato de 2026 propone blindar la acción popular en la Constitución, sin que la ley pueda restringirla."
    }
   },
   {
@@ -6408,7 +6501,7 @@
      "2023-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
@@ -6577,7 +6670,7 @@
      "2026-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
@@ -6777,7 +6870,7 @@
      "2026-11"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
@@ -6841,7 +6934,7 @@
     "vox": 1,
     "fa": 5,
     "pod": 5,
-    "salf": 1,
+    "salf": 2,
     "d21": 4,
     "erc": 4,
     "junts": 3,
@@ -6864,7 +6957,6 @@
     "falange": 1
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "bildu",
@@ -6939,6 +7031,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19",
      "programa",
      "2026-11"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=18",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -6950,7 +7048,8 @@
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
     "falange": "Propone fronteras cerradas y controladas, salir de Schengen, implantar visado y rechaza importar inmigrantes.",
-    "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada."
+    "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada.",
+    "salf": "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren."
    }
   },
   {
@@ -7468,7 +7567,6 @@
    "est": [
     "fa",
     "pod",
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -7517,6 +7615,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 16",
      "programa",
      "2025-12"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=32",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 32",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7525,7 +7629,8 @@
     "erc": "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad.",
     "vox": "Vox se abstuvo en la convalidación del Ingreso Mínimo Vital y criticó que no se condicionara a la búsqueda de empleo.",
     "ph": "Estimación: el programa defiende una renta básica universal «incondicional, sin cumplir ningún requisito»; no cita el Ingreso Mínimo Vital.",
-    "ie": "Estimación: el contrato propone transformar los subsidios en incentivos al empleo; no cita el Ingreso Mínimo Vital."
+    "ie": "Estimación: el contrato propone transformar los subsidios en incentivos al empleo; no cita el Ingreso Mínimo Vital.",
+    "salf": "Su contrato de 2026 retira la prestación a quien rechace dos ofertas adecuadas y reduce el Ingreso Mínimo solo 50 céntimos por euro ganado."
    }
   },
   {
@@ -7684,7 +7789,7 @@
      "2019-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
@@ -7759,7 +7864,8 @@
     "soria": 5,
     "pav": 4,
     "fo": 4,
-    "ie": 4
+    "ie": 4,
+    "ph": 4
    },
    "est": [
     "d21",
@@ -7851,7 +7957,7 @@
      "2026-03"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
      "programa",
      "2026-10"
@@ -7861,6 +7967,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
      "programa",
      "2025-12"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7876,7 +7988,8 @@
     "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
     "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
     "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
-    "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones."
+    "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
+    "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares."
    }
   },
   {
@@ -7921,7 +8034,6 @@
    },
    "est": [
     "pod",
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -7979,6 +8091,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
      "programa",
      "2025-12"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7987,7 +8105,8 @@
     "vox": "Su programa de 2026 propone revertir la prohibición de motores de combustión y los impuestos a las emisiones de CO2 inspirados en el Pacto Verde.",
     "fa": "Defiende electrificar el parque móvil para que en 2040 no circulen coches de combustión.",
     "erc": "Su programa de 2026 amplía el Programa Auto+ para electrificar el parque de vehículos y facilita los puntos de recarga.",
-    "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035."
+    "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035.",
+    "salf": "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035."
    }
   },
   {
@@ -8153,7 +8272,8 @@
     "adel": 5,
     "pcte": 5,
     "fo": 4,
-    "falange": 5
+    "falange": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -8233,7 +8353,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=15",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15",
      "Programa político del Frente Obrero de 2026, p. 15",
      "programa",
      "2026-10"
@@ -8241,6 +8361,12 @@
     "adel": [
      "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82",
      "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 82",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
      "programa",
      "2026-11"
     ]
@@ -8258,7 +8384,8 @@
     "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético.",
     "falange": "Propone nacionalizar la producción, transporte y distribución de la energía, acabando con el oligopolio.",
     "fo": "Estimación: el programa califica la energía de sector estratégico, pide un modelo energético planificado y la nacionalización de los sectores estratégicos.",
-    "adel": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo."
+    "adel": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo.",
+    "ph": "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública."
    }
   },
   {
@@ -8684,7 +8811,7 @@
      "2019-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
@@ -8744,7 +8871,7 @@
     "vox": 4,
     "fa": 1,
     "pod": 1,
-    "salf": 4,
+    "salf": 2,
     "pacma": 1,
     "d21": 5,
     "erc": 1,
@@ -8768,7 +8895,6 @@
    },
    "est": [
     "vox",
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -8900,6 +9026,12 @@
      "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 18",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8919,7 +9051,8 @@
     "ph": "Propone reducir drásticamente el presupuesto militar y el armamentismo, y desarme progresivo y proporcional.",
     "pcte": "Estimación: el programa de 2023 critica la subida del gasto militar hacia el 2% de la OTAN y pide salir de la OTAN y cerrar las bases extranjeras.",
     "erc": "Su programa de 2026 pide fiscalizar el modelo de defensa y los programas especiales de armamento y evitar el gasto oculto.",
-    "vox": "Su programa de 2026 propone aumentar la inversión en Defensa, mejorar los sueldos militares y dotar de medios a las Fuerzas Armadas."
+    "vox": "Su programa de 2026 propone aumentar la inversión en Defensa, mejorar los sueldos militares y dotar de medios a las Fuerzas Armadas.",
+    "salf": "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares."
    }
   },
   {
@@ -8939,7 +9072,7 @@
     "vox": 1,
     "fa": 4,
     "pod": 3,
-    "salf": 2,
+    "salf": 1,
     "pacma": 3,
     "d21": 5,
     "erc": 4,
@@ -8964,7 +9097,6 @@
    },
    "est": [
     "pod",
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -9034,7 +9166,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
@@ -9052,10 +9184,10 @@
      "2025-12"
     ],
     "salf": [
-     "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
-     "El Generacional Post, 13/06/2024: las propuestas de Se Acabó La Fiesta",
-     "prensa",
-     "2024-06"
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9071,7 +9203,7 @@
     "fo": "Propone la salida de España de la Unión Europea para recuperar la soberanía nacional.",
     "falange": "Propone una salida escalonada y pactada de la UE, con refundación centrada en la soberanía nacional.",
     "ie": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
-    "salf": "Estimación: según la crónica, Alvise propone un referéndum para salir de la UE si no se renegocian las relaciones con Bruselas."
+    "salf": "Su contrato de 2026 propone un referéndum de renegociación europea y, si Bruselas se niega, un segundo referéndum de salida."
    }
   },
   {
@@ -9351,7 +9483,7 @@
     "vox": 4,
     "fa": 5,
     "pod": 5,
-    "salf": 3,
+    "salf": 5,
     "d21": 3,
     "erc": 5,
     "junts": 3,
@@ -9371,7 +9503,6 @@
     "fo": 4
    },
    "est": [
-    "salf",
     "d21",
     "junts",
     "upn",
@@ -9479,10 +9610,16 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9502,7 +9639,8 @@
     "upc": "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
     "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara.",
     "pcte": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía.",
-    "fo": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación; no cita el plan de autonomía marroquí."
+    "fo": "Propone defender sin reservas el derecho del pueblo saharaui a la autodeterminación; no cita el plan de autonomía marroquí.",
+    "salf": "Su contrato de 2026 propone retirar la carta de Sánchez sobre el Sáhara y volver a la posición de la ONU."
    }
   },
   {
@@ -9638,7 +9776,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
@@ -9797,10 +9935,10 @@
      "2023-07"
     ],
     "salf": [
-     "https://www.elindependiente.com/espana/2025/10/12/alvise-arranca-su-carrera-a-las-generales-apostando-por-deportaciones-masivas-y-un-referendum-de-salida-de-la-ue/",
-     "El Independiente, cobertura del acto de SALF en Vistalegre, 12/10/2025",
-     "declaracion",
-     "2025-10"
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=39",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 39",
+     "programa",
+     "2026-11"
     ],
     "ph": [
      "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
@@ -9826,7 +9964,7 @@
     "comp": "Se compromete a dedicar el 0,7 % de los presupuestos públicos consolidados a cooperación internacional, no a recortarla.",
     "cha": "Exige cumplir la recomendación de destinar el 0,7 % de los presupuestos a cooperación al desarrollo, como primer paso hacia el 1 %.",
     "upc": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura.",
-    "salf": "Propone financiar la deportación masiva con los millones de ayuda en cooperación internacional.",
+    "salf": "Su contrato de 2026 corta la ayuda oficial al desarrollo salvo emergencias humanitarias y programas con retorno para España.",
     "ph": "Estimación: el programa pide cooperación internacional y reparación a los países expoliados por Europa; no cita el presupuesto de ayuda.",
     "ie": "Estimación: el contrato propone eliminar las subvenciones a ONG y critica financiar a otros mientras se desatienden necesidades propias; no cita la ayuda oficial."
    }
@@ -10042,7 +10180,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=54",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=54",
      "Programa político del Frente Obrero de 2026, p. 54",
      "programa",
      "2026-10"
@@ -10226,7 +10364,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -10361,7 +10499,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -10481,7 +10619,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026, p. 22",
      "programa",
      "2026-10"
@@ -10522,7 +10660,7 @@
     "vox": 4,
     "fa": 2,
     "pod": 1,
-    "salf": 4,
+    "salf": 5,
     "d21": 5,
     "erc": 2,
     "junts": 3,
@@ -10535,7 +10673,6 @@
    "est": [
     "vox",
     "pod",
-    "salf",
     "d21",
     "erc",
     "junts",
@@ -10563,6 +10700,12 @@
      "BOE, Ley Orgánica 3/2020 (LOMLOE), aprobada por el Gobierno de coalición PSOE-Unidas Podemos (29 de diciembre de 2020)",
      "gobierno",
      "2020-12-30"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=34",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 34",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10571,7 +10714,8 @@
     "fa": "Estimación: no consta una postura verificada de Sumar sobre publicar los resultados de cada colegio.",
     "pod": "Estimación: contraria a publicar resultados por centro por el riesgo de segregación.",
     "erc": "Estimación: ERC evita la clasificación de centros y prioriza la equidad.",
-    "pp": "La ley educativa del Gobierno del PP obligaba a publicar los resultados de los centros sostenidos con fondos públicos."
+    "pp": "La ley educativa del Gobierno del PP obligaba a publicar los resultados de los centros sostenidos con fondos públicos.",
+    "salf": "Su contrato de 2026 propone resultados públicos de cada centro educativo y evaluaciones externas al final de cada etapa."
    }
   },
   {
@@ -10609,7 +10753,6 @@
    "est": [
     "fa",
     "pod",
-    "salf",
     "d21",
     "gbai",
     "cha"
@@ -10691,7 +10834,7 @@
      "2020-11-19"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -10701,6 +10844,12 @@
      "Programa electoral general de FE de las JONS para las generales de 2023, p. 11",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 33",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10717,7 +10866,8 @@
     "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
     "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular.",
     "fo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales.",
-    "falange": "Propone que las asignaturas básicas se impartan en español, con enseñanza de lenguas regionales aparte."
+    "falange": "Propone que las asignaturas básicas se impartan en español, con enseñanza de lenguas regionales aparte.",
+    "salf": "Su contrato de 2026 garantiza el derecho a la enseñanza en castellano en toda España, exigible por la familia, con Alta Inspección estatal."
    }
   },
   {
@@ -11426,7 +11576,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
@@ -11588,7 +11738,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026, p. 42",
      "programa",
      "2026-10"
@@ -12115,7 +12265,6 @@
     "falange": 5
    },
    "est": [
-    "salf",
     "pacma",
     "d21",
     "junts",
@@ -12180,7 +12329,7 @@
      "2019-10"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
@@ -12196,6 +12345,12 @@
      "Programa de PACMA para las generales de 2023, p. 50",
      "programa",
      "2023-07"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12208,7 +12363,8 @@
     "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
     "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
     "falange": "Propone unificar el Sistema Nacional de Salud: uno solo para toda España.",
-    "pacma": "Estimación: el programa señala que el Estado fija las bases y normas de condiciones mínimas del sistema sanitario, para una igualación básica de los servicios en todo el país."
+    "pacma": "Estimación: el programa señala que el Estado fija las bases y normas de condiciones mínimas del sistema sanitario, para una igualación básica de los servicios en todo el país.",
+    "salf": "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro."
    }
   },
   {
@@ -12347,7 +12503,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026, p. 38",
      "programa",
      "2026-10"
@@ -12788,7 +12944,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026, p. 38",
      "programa",
      "2026-10"
@@ -12850,7 +13006,8 @@
     "adel": 5,
     "jmm": 2,
     "upl": 3,
-    "soria": 5
+    "soria": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -12920,6 +13077,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 168",
      "programa",
      "2026-04"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12931,7 +13094,8 @@
     "vox": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
     "soria": "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León.",
     "pacma": "Bajo el lema «No a las macrogranjas», PACMA propone limitar el tamaño de todas las explotaciones ganaderas.",
-    "adel": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones."
+    "adel": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones.",
+    "ph": "Su programa de 2026 propone una moratoria inmediata a la construcción o ampliación de macrogranjas ganaderas intensivas."
    }
   },
   {
@@ -13121,7 +13285,7 @@
      "2026-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=37",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
      "programa",
      "2026-10"
@@ -13687,7 +13851,7 @@
      "2022-12-22"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
@@ -13821,7 +13985,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
@@ -14266,7 +14430,7 @@
      "2019-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
@@ -14326,7 +14490,6 @@
     "adel": 1
    },
    "est": [
-    "salf",
     "d21",
     "bng",
     "upc",
@@ -14399,6 +14562,12 @@
      "Europa Press (vía Diario Estrategia): el Congreso tumba la ley de Vox para prohibir el burka",
      "parlamento",
      "2026-02-17"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=19",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 19",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14411,7 +14580,8 @@
     "bildu": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     "upn": "Votó a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público, que no prosperó.",
     "pod": "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate.",
-    "pp": "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos."
+    "pp": "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos.",
+    "salf": "Su contrato de 2026 prohíbe el burka y el niqab en el espacio público, como en Francia y otros países europeos."
    }
   }
  ]
