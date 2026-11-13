@@ -172,6 +172,8 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
   // separando con el mismo criterio para todas las candidaturas las posturas documentadas, las estimadas y las desconocidas.
   const SUMM = {
     viv: { test: "vivienda", min: 2, items: [["Alquiler", "B01", "¿Limitar el precio del alquiler en zonas tensionadas?"], ["Vivienda protegida", "B08", "¿Que el Estado construya un gran parque público de alquiler?"], ["Primera vivienda", "B09", "¿Que el Estado avale parte de la hipoteca de los jóvenes?"]] },
+    eco: { test: "economia", min: 2, items: [["Jornada laboral", "A01", "¿Reducir por ley la jornada a 37,5 horas sin rebaja de sueldo?"], ["Grandes fortunas", "A03", "¿Un impuesto estatal a las grandes fortunas en todas las comunidades?"], ["Salario mínimo", "A08", "¿Frenar sus subidas hasta que crezca la productividad?"]] },
+    san: { test: "sanidad", min: 2, items: [["Gestión privada", "J01", "¿Dejar de encargar operaciones y hospitales a empresas privadas?"], ["Listas de espera", "J08", "¿Que Sanidad fije tiempos máximos de espera obligatorios en toda España?"], ["MUFACE", "J07", "¿Que los funcionarios pasen a la sanidad pública, sin elegir la privada?"]] },
   };
   const STANCE = [["a favor", (v) => v >= 4], ["en una posición intermedia", (v) => v === 3], ["en contra", (v) => v <= 2]];
   const summBox = (aid) => {

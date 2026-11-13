@@ -1672,7 +1672,7 @@ function partyCard(m, rank) {
     <div class="metrics">
       <div class="metric"><b>${m.close != null ? Math.round(m.close * 100) + " %" : "–"}</b><span>Cercanía ideológica</span></div>
       <div class="metric"><b>${m.n}/${MODEL.qs.length}</b><span>Preguntas comparadas</span></div>
-      <div class="metric"><b>${m.n ? Math.round(m.nEst / m.n * 100) : 0} %</b><span>Posturas estimadas</span></div>
+      <div class="metric"><b>${m.n - m.nEst}/${m.n}</b><span>Con respaldo documental${m.nEst ? ` · ${m.nEst} estimada${m.nEst === 1 ? "" : "s"}` : ""}</span></div>
       ${m.padded ? `<div class="metric"><b>${m.raw} %</b><span>Coincidencia en sus ${m.n} preguntas con postura</span></div>` : ""}
     </div>
     ${m.padded ? `<p class="small muted">Esta candidatura solo tiene postura conocida en ${m.n} de tus ${MODEL.qs.length} respuestas. Para no exagerar, añadimos un valor neutro del 50 % hasta completar la mitad del peso de tus respuestas.</p>` : ""}
