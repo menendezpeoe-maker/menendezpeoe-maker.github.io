@@ -238,6 +238,7 @@ export const QUESTIONS = [
   ley: "Ley 3/2015, reguladora del ejercicio del alto cargo",
   pos: "3~ 3~ 4~ 5~ 5 5 4 5~ 4 3~ 2~ 4~ 3~ 0 4 0 4~ 4~ 4~ 0 0 0 4~ 0 0 0 0 0 0 0 0 0 4~" },
 { id: "D06", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
+  noscore: "Sin peso en la coincidencia desde el 13 nov 2026. Las fuentes que había no sostienen posturas sobre votar las ILP en un plazo fijo: el programa de Sumar de 2023 (p. 117), usado para Frente Amplio, solo plantea estudiar una revisión de la ILP, y el de M+J de 2026 (p. 70) propone facilitar el acceso a ellas. PSOE, PP y Vox figuran con un 3 estimado, pero sus notas dicen que no consta una postura específica: es falta de postura, no una posición intermedia. La pregunta, tus respuestas y las posturas se mantienen; solo deja de contar en el cálculo.",
   text: "Las iniciativas legislativas populares con suficientes firmas deberían votarse obligatoriamente en el Congreso en un plazo fijo.",
   short: "Votación obligatoria de las iniciativas populares",
   ctx: "Con 500.000 firmas la ciudadanía puede presentar una iniciativa legislativa popular, aunque no sobre impuestos ni leyes orgánicas. Muchas no llegan a debatirse a fondo o quedan bloqueadas años en el Congreso. Obligar a votarlas en plazo reforzaría la participación directa; sus críticos temen que la usen sobre todo grupos muy organizados y prefieren preservar el margen de la democracia representativa.",

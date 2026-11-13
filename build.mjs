@@ -49,6 +49,7 @@ const questions = QUESTIONS.map((q) => {
   if (q.type === "dilema") Object.assign(out, { A: q.A, B: q.B });
   Object.assign(out, { short: q.short, ctx: q.ctx });
   if (q.ley) out.ley = q.ley;
+  if (q.noscore) out.noscore = q.noscore;  // pregunta visible que no cuenta en la coincidencia (13 nov: D06)
   Object.assign(out, { dim: q.dim, dir: q.dim ? q.dir : 0, lr: q.lr, pos, est });
   if (NOTES[q.id]) {
     for (const pid of Object.keys(NOTES[q.id])) if (!pos[pid]) err(`${q.id}: nota para ${pid}, que no tiene postura`);
