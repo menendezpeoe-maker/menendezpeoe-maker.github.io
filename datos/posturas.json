@@ -2978,15 +2978,15 @@
    "opcion_b": "",
    "partido_id": "pnv",
    "partido": "EAJ-PNV",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=9",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 9",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -6326,11 +6326,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PNV pidió reformar la ley de régimen local para que los ayuntamientos puedan fijar límites a los pisos turísticos mediante ordenanzas.",
-   "fuente_url": "https://www.ondavasca.com/el-pnv-no-aceptara-que-se-invadan-competencias-con-los-pisos-turisticos/",
-   "fuente_titulo": "Onda Vasca, El PNV no aceptará que se invadan competencias con los pisos turísticos, 24-04-2023",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2023-04-24"
+   "justificacion": "Su programa de 2026 propone regular los alquileres de temporada y turísticos para que no resten viviendas al alquiler residencial.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B05",
