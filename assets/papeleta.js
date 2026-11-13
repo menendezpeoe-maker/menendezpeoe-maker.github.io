@@ -447,7 +447,7 @@ function renderQuestion(dir) {
   const open = !!PREFS.ctx;
   const main = $("#q-main");
   main.innerHTML = `
-    <p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(a.name)}</span>${q.type === "dilema" ? '<span class="muted">Dilema: elige entre dos opciones</span>' : ""}</p>
+    <p class="q-meta"><span class="q-code">${qCode(q)}</span><span>${esc(a.name)}</span>${q.type === "dilema" ? '<span class="muted">Dilema: elige entre dos opciones</span>' : ""}${q.noscore ? '<span class="muted" title="Se guarda tu respuesta, pero no cuenta en la coincidencia con las candidaturas. Explicación en Metodología.">No puntúa en la coincidencia</span>' : ""}</p>
     ${firstOfArea && !topicOf(S) ? `<p class="q-intro"><b>Área ${areasInOrder.findIndex((x) => x.id === a.id) + 1} de ${areasInOrder.length}.</b> ${esc(a.intro)}</p>` : ""}
     <h2 class="q-stmt" id="q-stmt" tabindex="-1">${esc(q.text)}</h2>
     ${q.type === "dilema" ? `<div class="dil"><p class="dil-o"><b>A</b><span>${esc(q.A)}</span></p><p class="dil-o"><b>B</b><span>${esc(q.B)}</span></p></div>` : ""}
@@ -652,6 +652,7 @@ function matchParty(pid, st, qs, user, noEst = false) {
   let sw = 0, sa = 0, salt = 0, wAll = 0, nEst = 0;
   const items = [];
   for (const q of qs) {
+    if (q.noscore) continue;  // visible, pero sin peso en la coincidencia (ni numerador, ni denominador, ni cobertura)
     const w = weightOf(q, st); wAll += w;
     const v = q.pos[pid]; if (!v) continue;
     const u = st.ans[q.id], est = q.est.includes(pid);
@@ -673,13 +674,13 @@ function matchParty(pid, st, qs, user, noEst = false) {
 }
 
 function computeModel(st) {
-  const qs = answered(st);
+  const qsAll = answered(st), qs = qsAll.filter((q) => !q.noscore);  // qs: respuestas que puntúan; qsAll: todas (se muestran)
   const ns = BANK.questions.filter((q) => st.ans[q.id] === 0);
   const user = userProfile(st);
   const all = PIDS.map((pid) => matchParty(pid, st, qs, user)).sort((a, b) => b.score - a.score || b.n - a.n);
   const avail = partiesIn(st.prov);
   const prov = all.filter((m) => avail.includes(m.pid));
-  return { st, qs, ns, user, all, prov, avail, rel: reliability(st, qs, ns, prov, user), traits: traits(st, qs, ns) };
+  return { st, qs, qsAll, ns, user, all, prov, avail, rel: reliability(st, qs, ns, prov, user), traits: traits(st, qs, ns) };
 }
 
 function reliability(st, qs, ns, prov, user) {
@@ -1097,8 +1098,8 @@ function dimDetail(id) {
 // Detalle de un tema: tus respuestas y las candidaturas que más y menos coinciden contigo en él
 function areaDetail(id) {
   const M = MODEL, st = M.st, a = AREA[id];
-  const qs = M.qs.filter((q) => q.area === id).sort((x, y) => Math.abs(st.ans[y.id] - 3) - Math.abs(st.ans[x.id] - 3)), ns = M.ns.filter((q) => q.area === id);
-  const li = (q) => `<li><b>${esc(q.short)}</b><span>${esc(ucFirst(ansBrief(q, st.ans[q.id])))}${st.imp[q.id] ? " · ★ importante" : ""}</span></li>`;
+  const qs = (M.qsAll || M.qs).filter((q) => q.area === id).sort((x, y) => Math.abs(st.ans[y.id] - 3) - Math.abs(st.ans[x.id] - 3)), ns = M.ns.filter((q) => q.area === id);
+  const li = (q) => `<li><b>${esc(q.short)}</b><span>${esc(ucFirst(ansBrief(q, st.ans[q.id])))}${st.imp[q.id] ? " · ★ importante" : ""}${q.noscore ? " · no puntúa" : ""}</span></li>`;
   const aff = M.prov.map((m) => ({ m, x: areaAff(m).find((y) => y.a.id === id) })).filter((o) => o.x && o.x.n >= 2).sort((p, q) => q.x.v - p.x.v || q.x.n - p.x.n);
   const row = (o) => `<div class="affrow"><span><i class="sw" style="background:${P[o.m.pid].color}"></i> ${esc(pName(o.m.pid, st.prov))} <span class="muted">(${o.x.n})</span></span><span class="bar"><i style="width:${Math.round(o.x.v * 100)}%"></i></span><span class="v">${Math.round(o.x.v * 100)}</span></div>`;
   const parties = aff.length ? `${aff.slice(0, 3).map(row).join("")}${aff.length > 3 ? `<p class="small muted" style="margin:6px 0 0">La que menos:</p>${row(aff[aff.length - 1])}` : ""}` : '<ul class="cmp"><li class="empty">Ninguna candidatura tiene postura conocida en al menos dos de tus respuestas de este tema.</li></ul>';
@@ -1371,6 +1372,7 @@ function renderHow() {
       <ul class="dots small">
         <li>Se compara tu respuesta con la postura del partido en cada pregunta: la misma respuesta suma el 100 %; a cuatro puntos de distancia (por ejemplo, «totalmente de acuerdo» frente a «totalmente en desacuerdo»), el 0 %. La coincidencia es la media ponderada.</li>
         <li>Pesos: las posturas <b>estimadas</b> cuentan ×${String(W_ESTIMATED).replace(".", ",")}; las preguntas que marcas con estrella, ×${W_IMPORTANT}; las de tus áreas prioritarias, ×${String(W_PRIORITY).replace(".", ",")}; las respuestas «ni de acuerdo ni en desacuerdo», ×${String(W_NEUTRAL).replace(".", ",")}. «No lo sé» no cuenta.</li>
+        ${BANK.questions.some((q) => q.noscore) ? `<li>Sin peso por ahora: ${BANK.questions.filter((q) => q.noscore).map((q) => `${esc(qCode(q))} («${esc(q.short)}»)`).join(", ")}. Se pregunta y se guarda tu respuesta, pero no cuenta en la coincidencia: las fuentes disponibles no sostienen posturas suficientes. Detalle en la página de metodología.</li>` : ""}
         <li>Las preguntas casi equivalentes se reparten el peso, para no contar dos veces lo mismo. Si un partido se pronuncia en menos de la mitad de tus respuestas, su coincidencia se acerca al 50 %.</li>
       </ul>
       <h2 class="h3">Cuánto pesa cada dimensión en tu resultado</h2>
@@ -1887,7 +1889,7 @@ function renderLeast() {
 // partido. Pocas posturas por persona: se muestra un nivel cualitativo, no un porcentaje.
 const POL_MIN = 2, POL_SHOW = 5, POL_CUT = 0.62;
 function matchPolitician(x, st) {
-  const items = Object.entries(x.pos).filter(([qid]) => Q[qid] && st.ans[qid] >= 1)
+  const items = Object.entries(x.pos).filter(([qid]) => Q[qid] && !Q[qid].noscore && st.ans[qid] >= 1)
     .map(([qid, [v, basis]]) => { const q = Q[qid], u = st.ans[qid]; return { q, u, v, basis, d: Math.abs(u - v), w: weightOf(q, st) }; });
   const sw = items.reduce((a, i) => a + i.w, 0), sa = items.reduce((a, i) => a + i.w * (1 - i.d / 4), 0);
   const agree = items.filter((i) => sideOf(i.u) && sideOf(i.u) === sideOf(i.v));
@@ -2963,5 +2965,7 @@ async function boot() {
   if (S && S.stage === "done" && answered(S).length) { openResults(); return; }
   go("home", { focus: false });
 }
+// Acceso de solo lectura al cálculo real para las comprobaciones de qa/ (no guarda nada ni cambia la página)
+globalThis.__T29N = Object.freeze({ model: (st) => { const m = computeModel(st); return { prov: m.prov.map((x) => ({ pid: x.pid, pct: x.pct, score: x.score, n: x.n })), rel: m.rel.checks.map((c) => c.txt) }; } });
 boot();
 })();
