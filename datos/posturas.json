@@ -493,11 +493,11 @@
    "postura_texto": "Claramente A: Bajar impuestos, aunque haya que reducir gasto público",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
-   "fuente_titulo": "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 propone una rebaja masiva de impuestos (IRPF, IVA y Sociedades) compensada con control del déficit y recorte del gasto superfluo.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=9",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 9",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A02",
@@ -1405,11 +1405,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox se fija como objetivo eliminar progresivamente el déficit y la deuda, con presupuestos de base cero.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=74",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 146",
+   "justificacion": "Su programa de 2026 propone reducir la deuda pública con control del déficit y sin gasto superfluo, compatibilizándolo con la rebaja de impuestos.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=10",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 10",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -4217,11 +4217,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
-   "fuente_titulo": "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 deroga la Ley de Vivienda e incentiva el alquiler de larga duración con deducciones fiscales.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=24",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 24",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -4711,11 +4711,11 @@
    "postura_texto": "Claramente A: Construir mucho más, liberando suelo y agilizando licencias",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone liberar suelo y agilizar licencias, y acabar con el control de rentas autonómico.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=40",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 65",
+   "justificacion": "Su programa de 2026 apuesta por construir mucho más: reforma de la Ley del Suelo, trámites ágiles y vivienda protegida con colaboración público-privada.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 23",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -5243,11 +5243,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox llevó al Congreso una proposición no de ley con desalojo inmediato en 24 horas de las viviendas ocupadas.",
-   "fuente_url": "https://www.eldebate.com/espana/andalucia/20250129/vox-denuncia-aumento-okupacion-viviendas-granada-pide-gobierno-desalojarlos-24-horas_265387.html",
-   "fuente_titulo": "Vox pide desalojos de «okupas» en 24 horas (29-1-2025)",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2025-01-29"
+   "justificacion": "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=24",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 24",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B03",
@@ -7048,11 +7048,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen.",
-   "justificacion": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda.",
-   "fuente_url": "https://forbes.es/economia/821981/vox-propone-costear-las-ayudas-a-espanoles-para-vivienda-con-mas-impuestos-a-los-compradores-extranjeros/",
-   "fuente_titulo": "PNL de Vox sobre impuestos a compradores extranjeros (3-11-2025)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-11-03"
+   "justificacion": "Su programa de 2026 propone una fiscalidad agravada y disuasoria para los compradores no comunitarios y las operaciones especulativas de fondos.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=25",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B07",
@@ -7447,11 +7447,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox prefiere vivienda social en propiedad o alquiler con opción a compra y la colaboración público-privada.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=41",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 69",
+   "justificacion": "Su programa de 2026 amplía la inversión pública en vivienda por habitante y la vivienda protegida con colaboración público-privada.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 23",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -8017,11 +8017,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone préstamos sin intereses o avales bancarios para parejas jóvenes con hijos.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=162",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 346",
+   "justificacion": "Su programa de 2026 propone avales a la financiación y créditos blandos para vivienda protegida y un 0 % de IVA en la primera vivienda habitual.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 23",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B09",
@@ -9347,11 +9347,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone devolver al Estado las competencias de educación.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=32",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 47",
+   "justificacion": "Su programa de 2026 propone unificar el currículo, las evaluaciones nacionales y la inspección educativa, con una EVAU única y reválidas.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=41",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 41",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -10278,11 +10278,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone reintroducir el delito de referéndum ilegal e ilegalizar a los partidos separatistas.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=16",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 18",
+   "justificacion": "Su programa de 2026 recupera el delito de sedición e ilegaliza los partidos que atenten contra la unidad e integridad territorial de España.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=55",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 55",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C05",
@@ -13261,11 +13261,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone que todos los vocales del CGPJ sean designados o propuestos por los propios jueces.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=127",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 271",
+   "justificacion": "Su programa de 2026 propone que los doce vocales judiciales del CGPJ sean elegidos por voto directo y secreto de los propios jueces y magistrados.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=55",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 55",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D03",
@@ -14819,11 +14819,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "Estimación: Vox defiende la Corona y no se le conoce apoyo a una consulta sobre la forma de Estado.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone dar la máxima protección jurídica a la Corona y a los símbolos de la Nación y agravar las penas por ofensas.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=56",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 56",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D07",
@@ -16377,11 +16377,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone ampliar la prisión permanente a los violadores, no derogarla.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 376",
+   "justificacion": "Su programa de 2026 amplía la prisión permanente revisable: los peores delitos deben tener las máximas condenas.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=45",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 45",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E02",
@@ -16641,13 +16641,13 @@
    "partido": "Adelante Andalucía",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone derogar la prisión permanente revisable y que las penas se orienten a la reinserción.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=94",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 94",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E02",
@@ -17059,13 +17059,13 @@
    "partido": "Adelante Andalucía",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone derogar las leyes mordaza y los delitos de opinión del Código Penal.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=29",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 29",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -17232,11 +17232,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox promete bajar la edad penal y endurecer la ley del menor para delitos sexuales graves.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 propone reducir la edad de responsabilidad penal del menor y plantear eliminar la inimputabilidad en ciertos delitos violentos.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=45",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 45",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E04",
@@ -18011,11 +18011,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox presentó una enmienda a la totalidad contra la ley de ERC y EH Bildu para despenalizar las injurias a la Corona.",
-   "fuente_url": "https://theobjective.com/espana/2022-09-29/el-psoe-apoya-a-erc-y-bildu-para-que-la-despenalizacion-del-delito-de-injurias-a-la-corona-siga-adelante-en-el-congreso/",
-   "fuente_titulo": "El PSOE apoya a ERC y Bildu para que la despenalización del delito de injurias a la Corona siga adelante en el Congreso (The Objective)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2022-09-29"
+   "justificacion": "Su programa de 2026 propone agravar las penas por las ofensas y ultrajes a España y a sus símbolos, entre ellos la Corona.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=56",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 56",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E06",
@@ -18828,11 +18828,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone derogar la Ley Integral de Violencia de Género y aprobar una ley para todas las víctimas de violencia doméstica.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=10",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 10",
+   "justificacion": "Su programa de 2026 propone derogar las leyes de género, a las que acusa de criminalizar a los hombres y de desproteger a las mujeres.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=30",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 30",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -19664,11 +19664,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
-   "fuente_titulo": "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 prohíbe las regularizaciones masivas y propone que quien entre de forma ilegal no pueda regularizar nunca su situación.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 15",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -20158,11 +20158,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone la expulsión de quienes entren ilegalmente y suprimir el arraigo como vía de regularización.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=103",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 218",
+   "justificacion": "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 15",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F02",
@@ -20671,11 +20671,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox pidió en el Congreso dar prioridad a los españoles en vivienda protegida, alquiler social y ayudas.",
-   "fuente_url": "https://www.bolsamania.com/noticias/empresas/economia--el-pp-rechaza-en-el-congreso-la-propuesta-de-vox-de-exigir-la-prioridad-nacional-en-ayudas-para-vivienda--22776272.html",
-   "fuente_titulo": "Moción de Vox sobre «prioridad nacional» en vivienda (18-6-2026)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-06-18"
+   "justificacion": "Su programa de 2026 establece el acceso preferente de los españoles a vivienda pública, guarderías, ayudas, prestaciones y servicios sociales.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=19",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F03",
@@ -21165,11 +21165,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Una proposición no de ley de Vox pide frenar la llegada de extranjeros y cubrir los empleos vacantes con trabajadores españoles.",
-   "fuente_url": "https://forbes.es/economia/841921/vox-culpa-a-la-inmigracion-del-estancamiento-de-los-salarios-y-pide-cesar-la-llegada-masiva-de-extranjeros/",
-   "fuente_titulo": "Vox culpa a la inmigración del estancamiento de los salarios y pide cesar la llegada «masiva» de extranjeros (Forbes)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-12-07"
+   "justificacion": "Su programa de 2026 propone «Ni uno más»: España no puede acoger a más inmigrantes y se suprime la figura del arraigo.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -21659,11 +21659,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox votó contra el decreto ley que reparte entre comunidades a los menores migrantes no acompañados.",
-   "fuente_url": "https://rtvc.es/debate-congreso-ley-extranjeria-10-abril-2025/",
-   "fuente_titulo": "El Congreso convalida el decreto ley para distribuir a menores migrantes sin los apoyos de PP ni Vox (RTVC)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-04-10"
+   "justificacion": "Su programa de 2026 propone devolver a los menores extranjeros no acompañados a sus padres o a las instituciones de tutela de sus países de origen.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=15",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 15",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F05",
@@ -22115,11 +22115,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone ayudas directas progresivas por número de hijos, sin precisar si dependerían de la renta.",
-   "fuente_url": "https://theobjective.com/espana/2022-08-19/vox-propone-ayudas-a-las-familias-numerosas-frente-a-la-caida-de-la-natalidad-en-espana/",
-   "fuente_titulo": "Vox propone ayudas a las familias numerosas frente a la caída de la natalidad en España (The Objective)",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2022-08-19"
+   "justificacion": "Su programa de 2026 extiende los beneficios de las familias numerosas a todas las familias españolas desde el primer hijo, según su número.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=51",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 51",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F06",
@@ -22476,11 +22476,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone una fiscalidad mínima y diferenciada, con bonificaciones y deducciones, en las zonas en riesgo de despoblación.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=10",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F07",
@@ -23711,11 +23711,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
-   "fuente_titulo": "Programa electoral de Vox para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa de 2026 garantiza la supervivencia de las nucleares actuales, deroga el calendario de cierre y estudia nuevas centrales.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 12",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G01",
@@ -24243,11 +24243,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox propone proteger el suelo agrario y el paisaje frente a los macroproyectos renovables.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=111",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 propone impedir la instalación descontrolada de macroplantas solares y eólicas que destruyan la riqueza agrícola y natural.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=34",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 34",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -24775,11 +24775,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox pide suspender la prohibición europea de los motores de combustión prevista para 2035.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=50",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 92",
+   "justificacion": "Su programa de 2026 propone revertir la prohibición de motores de combustión y los impuestos a las emisiones de CO2 inspirados en el Pacto Verde.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 12",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G03",
@@ -25288,11 +25288,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=148",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 312",
+   "justificacion": "Su programa de 2026 propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 61",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G04",
@@ -25970,13 +25970,13 @@
    "partido": "Adelante Andalucía",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 82",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G05",
@@ -26143,11 +26143,11 @@
    "postura_texto": "Más bien A: Completar y mejorar la red de alta velocidad",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox pone el énfasis en la alta velocidad, aunque también menciona las Cercanías.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=120",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 61",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -26865,11 +26865,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Una proposición de Vox en el Congreso pide limpieza de montes, desbroce, pastoreo y menos trabas ambientales para prevenir incendios.",
-   "fuente_url": "https://www.esdiario.com/nacional/260729/194373/fuego-retrata-sanchez-ignoro-medidas-prevencion-vox-llevo-congreso.html",
-   "fuente_titulo": "El fuego retrata a Sánchez: ignoró las medidas de prevención que VOX llevó al Congreso (ESdiario)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-07-29"
+   "justificacion": "Su programa de 2026 propone limpiar y aprovechar los montes y revisar las restricciones ambientales que obstaculizan la prevención de incendios.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=34",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 34",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G08",
@@ -27150,11 +27150,11 @@
    "postura_texto": "Claramente A: Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
    "estimada": false,
    "nota": "",
-   "justificacion": "Tras el apagón llevó al Congreso una moción para frenar la expansión renovable y defiende alargar la vida de las nucleares.",
-   "fuente_url": "https://roams.es/actualidad/energia/que-consecuencias-tendrian-las-propuestas-de-vox-para-frenar-en-seco-las-renovables/",
-   "fuente_titulo": "Roams, sobre la moción de Vox en el Congreso tras el apagón",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2025-10-20"
+   "justificacion": "Su programa de 2026 propone un Plan Nacional de Soberanía Energética, el plan nuclear y el fin de las restricciones a explotar recursos propios.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
@@ -27644,11 +27644,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/espana/politica/2025-03-26/abascal-gasto-defensa-ceuta-melilla/",
-   "fuente_titulo": "The Objective, intervención de Abascal en el Congreso, 26/03/2025",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2025-03-26"
+   "justificacion": "Su programa de 2026 propone aumentar la inversión en Defensa, mejorar los sueldos militares y dotar de medios a las Fuerzas Armadas.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=47",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 47",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H01",
@@ -30399,11 +30399,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox fue el único grupo que votó contra la Ley de Cooperación, que fija como meta destinar el 0,7 % a la ayuda al desarrollo.",
-   "fuente_url": "https://theobjective.com/espana/politica/2023-02-09/congreso-aprueba-ley-cooperacion-ayuda-desarrollo/",
-   "fuente_titulo": "El Congreso aprueba la Ley de Cooperación que busca aumentar la ayuda al desarrollo (The Objective)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2023-02-09"
+   "justificacion": "Su programa de 2026 propone acabar con la cooperación al desarrollo con países que no colaboren en los flujos migratorios y con ayudas a ciertas ONG.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=16",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H07",
@@ -31520,11 +31520,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://elfarodeceuta.es/vox-pregunta-infrafinancion-escuela-concertada/",
-   "fuente_titulo": "El Faro de Ceuta, interpelación de Vox en el Congreso, 02/04/2021",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2021-04-02"
+   "justificacion": "Su programa de 2026 garantiza la libre elección de centro educativo en todos los niveles, sin que lo impida la situación económica de la familia.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=41",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 41",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -33059,11 +33059,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox defiende el derecho a ser educado en español en todo el territorio nacional.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 49",
+   "justificacion": "Su programa de 2026 garantiza la educación en español en todo el territorio nacional y unifica los contenidos curriculares.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=41",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 41",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I05",
@@ -34142,11 +34142,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox promete apoyo fiscal y crediticio a la tauromaquia y la protección de los festejos taurinos.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=151",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 defiende la tauromaquia y promueve la difusión del arte taurino.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=43",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 43",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I08",
@@ -34674,11 +34674,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox rechaza exigir la lengua cooficial para acceder al empleo público; el único requisito sería el español.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=57",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 propone que desconocer las lenguas regionales no impida el acceso por oposición a plazas sanitarias.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=37",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 37",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I09",
@@ -34997,11 +34997,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "Defiende abiertamente la colaboración público-privada en la sanidad pública; su programa de 2023 prometía reforzar los conciertos con la privada.",
-   "justificacion": "",
-   "fuente_url": "https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.html",
-   "fuente_titulo": "Redacción Médica, posición de Vox ante la Ley de Gestión Pública del SNS, 18/03/2026",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2026-03-18"
+   "justificacion": "Su programa de 2026 propone fomentar la colaboración público-privada cuando ayude a reducir demoras, con transparencia y control del gasto.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=37",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 37",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J01",
@@ -37389,13 +37389,13 @@
    "partido": "Adelante Andalucía",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=36",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 36",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J07",
@@ -37486,11 +37486,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone recuperar las competencias sanitarias y, mientras, reforzar el Ministerio con una cartera común.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=56",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 102",
+   "justificacion": "Su programa de 2026 propone una tarjeta sanitaria única con historia clínica compartida y publicar indicadores comparables de listas de espera.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=37",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 37",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J08",
@@ -37961,11 +37961,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.eldebate.com/campo-y-caza/20260121/parlamento-europeo-bloquea-entrada-vigor-trato-mercosur-menos-ano_376697.html",
-   "fuente_titulo": "El Debate, votación en el Parlamento Europeo sobre remitir el acuerdo UE-Mercosur al TJUE, 21/01/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-01-21"
+   "justificacion": "Su programa de 2026 rechaza de forma explícita el acuerdo UE-Mercosur y propone cláusulas espejo y preferencia comunitaria.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=33",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 33",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
@@ -40374,11 +40374,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "La portavoz Pepa Millán rechazó en el Congreso el recorte de días de pesca de arrastre propuesto por Bruselas.",
-   "fuente_url": "https://theobjective.com/espana/politica/2024-12-10/vox-denuncia-cuotas-pesqueras-mediterraneo/",
-   "fuente_titulo": "Vox denuncia la reducción de cuotas pesqueras del Mediterráneo propuesta por Bruselas (The Objective)",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-12-10"
+   "justificacion": "Su programa de 2026 propone revisar la Política Pesquera Común y las cuotas y restricciones que perjudican a los pescadores españoles.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=34",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 34",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K06",
@@ -40659,11 +40659,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox defiende la caza como actividad esencial para el medio rural y propone una licencia única.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=150",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 defiende la caza como actividad esencial para controlar las poblaciones y proteger las explotaciones agrarias.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=35",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 35",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K07",
@@ -41172,11 +41172,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Vox propone extender los regadíos y aumentar la superficie de riego.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=110",
-   "fuente_titulo": "Programa electoral de Vox de 2023",
+   "justificacion": "Su programa de 2026 propone impulsar y modernizar los regadíos dentro del Plan Nacional del Agua.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 61",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K08",
@@ -41552,11 +41552,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.redaccionmedica.com/politica/20260423/pp-vox-vetan-el-blindaje-constitucional-del-aborto-propone-un-fraude/261890_0.html",
-   "fuente_titulo": "Redacción Médica, enmiendas a la totalidad de PP y Vox, 23/04/2026",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2026-04-23"
+   "justificacion": "Su programa de 2026 defiende el derecho a la vida desde la concepción hasta la muerte natural.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=52",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 52",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L01",
@@ -41816,13 +41816,13 @@
    "partido": "Adelante Andalucía",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa de 2026 garantiza el aborto en la sanidad pública y propone blindarlo en la Constitución.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=40",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 40",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L01",
@@ -41970,11 +41970,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox propone derogar la ley de eutanasia.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=172",
-   "fuente_titulo": "Programa electoral de Vox de 2023, medida 369",
+   "justificacion": "Su programa de 2026 defiende la vida «hasta la muerte natural», pide acabar con la «cultura de la muerte» y potenciar los cuidados paliativos.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=52",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 52",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L02",
@@ -44649,11 +44649,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Vox presentó en el Congreso una proposición de ley para prohibir el burka y el niqab en el espacio público.",
-   "fuente_url": "https://www.elespanol.com/espana/politica/20260217/psoe-abre-negociar-junts-prohibicion-burka-tumbar-iniciativa-similar-vox-racista/1003744134409_0.html",
-   "fuente_titulo": "Proposición de ley de Vox contra el burka y el niqab (17-2-2026)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-02-17"
+   "justificacion": "Su programa de 2026 prohíbe el burka y el niqab en todos los espacios públicos y en los lugares donde se presten servicios públicos.",
+   "fuente_url": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=42",
+   "fuente_titulo": "Programa electoral de Vox de 2026 («Es sentido común»), p. 42",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L09",
