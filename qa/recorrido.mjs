@@ -47,6 +47,9 @@ for (const w of [390, 360]) {
   ok(/Bizkaia/i.test(await page.innerText("#v-results")), "resultados de Bizkaia");
   ok(!(await overflow(page)), "resultados sin desplazamiento horizontal");
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/results-${w}.png` });
+  await goSection(page, "solid");
+  ok(/Sin las posturas estimadas, la candidatura con más coincidencia (sigue siendo|sería) .+ \(\d+ %/.test(await page.innerText("#r-solid")) && !(await overflow(page)), "solidez: cómo cambiaría el resultado sin las posturas estimadas, sin desbordar");
+  if (SHOTS) await page.screenshot({ path: `${SHOTS}/solid-${w}.png` });
   await goSection(page, "versus");
   ok((await page.innerText("#r-versus")).length > 200 && !(await overflow(page)), "comparación entre dos candidaturas abierta y sin desbordar");
   // Salida sin prioridades: volver a las prioridades y ver resultados sin ellas

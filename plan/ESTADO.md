@@ -1,5 +1,9 @@
 # Estado del plan (lo más reciente arriba)
 
+## 13 nov 2026 (tarde) · Tarea 4 del acuerdo con Codex: resultado sin posturas estimadas
+- En «¿Cuánto fiarte de este resultado?» (#r-solid) hay una línea nueva: con el mismo cálculo y sin las posturas estimadas, si la candidatura con más coincidencia sigue siendo la misma o cuál sería, con su porcentaje. Es solo informativa: no cambia el resultado ni el nivel de solidez (se añade tras calcularlo). Código: `matchParty(..., noEst)` y `reliability(..., user)` en papeleta.js.
+- Comprobación móvil a 390 y 360 px en `qa/recorrido.mjs`. Local 23/24 (solo el CLS local conocido).
+
 ## 13 nov 2026 (tarde) · Revisión móvil de Codex (390 × 844): portada, vivienda y progreso
 - Portada: acción principal «Empezar test rápido · 3 min» (en el móvil abre la pregunta 1 en un toque; en escritorio sigue la versión del formulario) y secundaria «Elegir otra versión». Con un test a medias, el principal pasa a «Continuar test · N de M respondidas» y retoma en un toque (también en la etapa de provincia/prioridades); la secundaria es «Empezar otro test». Empezar otro con uno a medias pide confirmación (nuevo en `startTest`). El cuadro `#resume` queda solo para «Ver mis resultados».
 - Vivienda: introducción corta y «En un minuto» con tres filas plegables (alquiler B01, vivienda protegida B08, primera vivienda B09): recuentos de los datos; al abrir, nombres completos con enlace a la ficha y a la fuente, separando documentadas, estimadas y sin postura con el mismo criterio. Botón «Haz el test de vivienda · 7 preguntas, unos 2 min» junto al título del resumen. La introducción larga sigue debajo (SEO).
