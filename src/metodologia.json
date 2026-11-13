@@ -172,7 +172,7 @@
     "pid": "ph",
     "prov": "madrid",
     "primero": true,
-    "pct": 81
+    "pct": 88
    },
    {
     "pid": "ie",
@@ -189,7 +189,7 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 107
+    "n": 103
    },
    {
     "pid": "pp",
@@ -201,11 +201,15 @@
    },
    {
     "pid": "fo",
-    "n": 19
+    "n": 18
    },
    {
     "pid": "fa",
-    "n": 17
+    "n": 16
+   },
+   {
+    "pid": "ph",
+    "n": 8
    },
    {
     "pid": "vox",
@@ -218,10 +222,6 @@
    {
     "pid": "salf",
     "n": 5
-   },
-   {
-    "pid": "ph",
-    "n": 2
    },
    {
     "pid": "pcte",
@@ -434,9 +434,9 @@
   },
   {
    "pid": "ph",
-   "conocidas": 27,
+   "conocidas": 32,
    "estimadas": 13,
-   "conFuente": 27
+   "conFuente": 32
   },
   {
    "pid": "ie",

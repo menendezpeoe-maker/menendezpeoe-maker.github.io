@@ -544,7 +544,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "fo": 5
+    "fo": 5,
+    "ph": 5
    },
    "est": [
     "d21",
@@ -641,10 +642,16 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
      "programa",
      "2026-10"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=6",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 6",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -662,7 +669,8 @@
     "adel": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
     "cha": "Propone recuperar el Impuesto sobre el Patrimonio o sustituirlo por otro que grave la riqueza, además de subir el IRPF a las rentas más altas.",
     "upc": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados.",
-    "fo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado."
+    "fo": "Propone centralizar el impuesto de patrimonio y suprimir sus bonificaciones, lo que lo haría uniforme en todo el Estado.",
+    "ph": "Su programa de 2026 propone un impuesto a las grandes fortunas y al patrimonio neto superior a 3 millones de euros."
    }
   },
   {
@@ -883,8 +891,8 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3",
-     "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3",
+     "https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3",
+     "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3, copia archivada",
      "programa",
      "2026-10"
     ],
@@ -1218,7 +1226,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=9",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=9",
      "Programa político del Frente Obrero de 2026, p. 9",
      "programa",
      "2026-10"
@@ -1356,7 +1364,7 @@
      "2019-11"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=13",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=13",
      "Programa político del Frente Obrero de 2026, p. 13",
      "programa",
      "2026-10"
@@ -1502,7 +1510,7 @@
      "2026-03"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=19",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 19",
      "programa",
      "2026-10"
@@ -1893,7 +1901,7 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
@@ -1987,8 +1995,8 @@
      "2025-03-18"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
-     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+     "https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
+     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026), copia archivada",
      "programa",
      "2026-10-19"
     ],
@@ -2077,7 +2085,7 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
@@ -2228,7 +2236,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
@@ -2401,7 +2409,7 @@
      "2025-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026, p. 46",
      "programa",
      "2026-10"
@@ -2811,7 +2819,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=45",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=45",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 45",
      "programa",
      "2026-10"
@@ -3078,7 +3086,7 @@
      "2024-08-26"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3344,7 +3352,7 @@
      "2013-06-27"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3626,7 +3634,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -3850,7 +3858,7 @@
      "2019-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=56",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
      "programa",
      "2026-10"
@@ -4130,7 +4138,8 @@
     "upl": 1,
     "soria": 1,
     "pav": 1,
-    "ie": 1
+    "ie": 1,
+    "ph": 5
    },
    "est": [
     "psoe",
@@ -4208,6 +4217,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 9",
      "programa",
      "2025-12"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4220,7 +4235,8 @@
     "pacma": "PACMA propone una circunscripción única para que todos los votos tengan el mismo valor.",
     "vox": "La medida 11 propone que el voto valga lo mismo para todos y elegir parte de los diputados en distrito único nacional.",
     "comp": "Propone que la circunscripción electoral sea la comunidad autónoma, con diputados proporcionales a su población, igualando el peso del voto.",
-    "ie": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales."
+    "ie": "Propone sustituir el sistema proporcional por uno mayoritario con distritos uninominales.",
+    "ph": "Su programa de 2026 propone circunscripción única estatal en el Congreso y suprimir las barreras porcentuales para que todos los votos valgan lo mismo."
    }
   },
   {
@@ -4359,8 +4375,8 @@
      "2023-07-07"
     ],
     "pp": [
-     "https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
-     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026)",
+     "https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf",
+     "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026), copia archivada",
      "programa",
      "2026-10-19"
     ],
@@ -4431,7 +4447,7 @@
      "2025-12"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=58",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=58",
      "Programa político del Frente Obrero de 2026, p. 58",
      "programa",
      "2026-10"
@@ -6408,7 +6424,7 @@
      "2023-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
@@ -6577,7 +6593,7 @@
      "2026-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=53",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 53",
      "programa",
      "2026-10"
@@ -6777,7 +6793,7 @@
      "2026-11"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=46",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 46",
      "programa",
      "2026-10"
@@ -7684,7 +7700,7 @@
      "2019-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
@@ -7759,7 +7775,8 @@
     "soria": 5,
     "pav": 4,
     "fo": 4,
-    "ie": 4
+    "ie": 4,
+    "ph": 4
    },
    "est": [
     "d21",
@@ -7851,7 +7868,7 @@
      "2026-03"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38",
      "programa",
      "2026-10"
@@ -7861,6 +7878,12 @@
      "Contrato Electoral de Iustitia Europa (documento sin año impreso; PDF creado en dic. 2025), p. 24",
      "programa",
      "2025-12"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7876,7 +7899,8 @@
     "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
     "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
     "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
-    "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones."
+    "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
+    "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares."
    }
   },
   {
@@ -8153,7 +8177,8 @@
     "adel": 5,
     "pcte": 5,
     "fo": 4,
-    "falange": 5
+    "falange": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -8233,7 +8258,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=15",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15",
      "Programa político del Frente Obrero de 2026, p. 15",
      "programa",
      "2026-10"
@@ -8241,6 +8266,12 @@
     "adel": [
      "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82",
      "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 82",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
      "programa",
      "2026-11"
     ]
@@ -8258,7 +8289,8 @@
     "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético.",
     "falange": "Propone nacionalizar la producción, transporte y distribución de la energía, acabando con el oligopolio.",
     "fo": "Estimación: el programa califica la energía de sector estratégico, pide un modelo energético planificado y la nacionalización de los sectores estratégicos.",
-    "adel": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo."
+    "adel": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo.",
+    "ph": "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública."
    }
   },
   {
@@ -8684,7 +8716,7 @@
      "2019-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=16",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
      "programa",
      "2026-10"
@@ -9034,7 +9066,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
@@ -9479,7 +9511,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
@@ -9638,7 +9670,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=11",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 11",
      "programa",
      "2026-10"
@@ -10042,7 +10074,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=54",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=54",
      "Programa político del Frente Obrero de 2026, p. 54",
      "programa",
      "2026-10"
@@ -10226,7 +10258,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -10361,7 +10393,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -10481,7 +10513,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026, p. 22",
      "programa",
      "2026-10"
@@ -10691,7 +10723,7 @@
      "2020-11-19"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=22",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 22",
      "programa",
      "2026-10"
@@ -11426,7 +11458,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
@@ -11588,7 +11620,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026, p. 42",
      "programa",
      "2026-10"
@@ -12180,7 +12212,7 @@
      "2019-10"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=42",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42",
      "programa",
      "2026-10"
@@ -12347,7 +12379,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026, p. 38",
      "programa",
      "2026-10"
@@ -12788,7 +12820,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=38",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
      "Programa político del Frente Obrero de 2026, p. 38",
      "programa",
      "2026-10"
@@ -12850,7 +12882,8 @@
     "adel": 5,
     "jmm": 2,
     "upl": 3,
-    "soria": 5
+    "soria": 5,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -12920,6 +12953,12 @@
      "Programa electoral de Adelante Andalucía de 2026, p. 168",
      "programa",
      "2026-04"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12931,7 +12970,8 @@
     "vox": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
     "soria": "Soria ¡Ya! votó a favor de una moratoria que impidiera instalar nuevas macrogranjas en Castilla y León.",
     "pacma": "Bajo el lema «No a las macrogranjas», PACMA propone limitar el tamaño de todas las explotaciones ganaderas.",
-    "adel": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones."
+    "adel": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones.",
+    "ph": "Su programa de 2026 propone una moratoria inmediata a la construcción o ampliación de macrogranjas ganaderas intensivas."
    }
   },
   {
@@ -13121,7 +13161,7 @@
      "2026-04"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=37",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
      "programa",
      "2026-10"
@@ -13687,7 +13727,7 @@
      "2022-12-22"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
@@ -13821,7 +13861,7 @@
      "2023-07"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"
@@ -14266,7 +14306,7 @@
      "2019-05"
     ],
     "fo": [
-     "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf#page=32",
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32",
      "programa",
      "2026-10"

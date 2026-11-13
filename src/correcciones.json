@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-13",
+  "id": "A08",
+  "partido": "pnv",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=9",
+   "Programa electoral de EAJ-PNV de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-12",
   "id": "A01",
   "partido": "erc",
