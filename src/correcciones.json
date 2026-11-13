@@ -1,6 +1,22 @@
 [
  {
   "fecha": "2026-11-13",
+  "id": "A03",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone un impuesto a las grandes fortunas y al patrimonio neto superior a 3 millones de euros.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=6",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 6",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "A08",
   "partido": "pnv",
   "de": 3,
@@ -11,6 +27,70 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=9",
    "Programa electoral de EAJ-PNV de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D01",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone circunscripción única estatal en el Congreso y suprimir las barreras porcentuales para que todos los votos valgan lo mismo.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "G02",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "G05",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "K05",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa de 2026 propone una moratoria inmediata a la construcción o ampliación de macrogranjas ganaderas intensivas.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
    "programa",
    "2026-11"
   ]

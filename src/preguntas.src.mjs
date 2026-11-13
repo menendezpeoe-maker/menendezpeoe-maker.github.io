@@ -912,7 +912,7 @@ export const SOURCES = {
     erc: ["https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25", "Programa electoral de ERC de 2026, p. 25", "programa", "2026-11"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=100", "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)", "programa", "2023-07"],
     bildu: ["https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=5", "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023", "programa", "2023-07"],
-    pp: ["https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf#page=3", "«Mi contrato con España», compromisos de Alberto Núñez Feijóo para las generales de 2026 (PP, octubre de 2026), p. 3, copia archivada", "programa", "2026-10"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=34", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 34", "programa", "2026-11"],
     vox: ["https://rtvc.es/convalidado-el-decreto-de-reforma-de-pensiones/", "RTVC: el Congreso convalida el decreto de reforma de las pensiones, que eleva las cotizaciones (30 de marzo de 2023)", "parlamento", "2023-03-30"],
     ccpc: ["https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf#page=6", "Acuerdo y programa de la coalición CC-NC para las generales de noviembre de 2019, p. 6", "programa", "2019-10"],
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=247", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 247", "programa", "2019-04"],
@@ -1021,7 +1021,7 @@ export const SOURCES = {
   },
   B03: {
     psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
-    pp: ["https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026), copia archivada", "programa", "2026-10-19"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=24", "Programa electoral de Vox de 2026 («Es sentido común»), p. 24", "programa", "2026-11"],
     pod: ["https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/", "El Independiente, votación de la ley antiokupas del PP, 29/11/2022", "parlamento", "2022-11-29"],
     salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3", "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)", "programa", "2026-03"],
@@ -1243,7 +1243,7 @@ export const SOURCES = {
   },
   D03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
-    pp: ["https://web.archive.org/web/20261102212611/https://www.pp.es/wp-content/uploads/2026/10/CONTRATO-CON-ESPANA-.pdf", "«Mi contrato con España», compromisos de Feijóo para el 29-N (PP, 19/10/2026), copia archivada", "programa", "2026-10-19"],
+    pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=27", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 27", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=55", "Programa electoral de Vox de 2026 («Es sentido común»), p. 55", "programa", "2026-11"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129", "Programa electoral de Sumar de 2023, p. 129", "programa", "2023-07"],
     pod: ["https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/", "El Independiente, reacción al pacto del CGPJ, 25/06/2024", "declaracion", "2024-06-25"],
@@ -2311,7 +2311,7 @@ export const JUSTIF = {
     erc: "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
     junts: "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     bildu: "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
-    pp: "El PP promete mantener la revalorización de las pensiones con el IPC y, en el mismo documento, bajar impuestos; no opta claramente por subir ingresos ni por recortar gasto.",
+    pp: "Su programa de 2026 asegura que las pensiones mantengan su poder adquisitivo y suban cada año con el IPC; no opta claramente por subir ingresos ni por recortar gasto.",
     vox: "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate.",
     ccpc: "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
     comp: "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
@@ -2421,7 +2421,7 @@ export const JUSTIF = {
   },
   B03: {
     psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
-    pp: "El PP promete una ley contra la ocupación ilegal con desalojo en 48 horas para proteger la propiedad.",
+    pp: "Su programa de 2026 promete una ley para que el propietario recupere la vivienda ocupada en 48 horas desde el primer día, por orden judicial.",
     vox: "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
     pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     salf: "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
@@ -2653,7 +2653,7 @@ export const JUSTIF = {
   },
   D03: {
     psoe: "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
-    pp: "El PP promete que «los jueces elegirán a los jueces», es decir, que elijan ellos a los vocales judiciales del CGPJ.",
+    pp: "Su programa de 2026 propone que los jueces y magistrados elijan a los doce vocales judiciales del CGPJ.",
     vox: "Su programa de 2026 propone que los doce vocales judiciales del CGPJ sean elegidos por voto directo y secreto de los propios jueces y magistrados.",
     fa: "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
     pod: "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
