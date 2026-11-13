@@ -146,6 +146,28 @@
  {
   "fecha": "2026-11-13",
   "id": "D01",
+  "partido": "jmm",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D01",
+  "partido": "pav",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D01",
   "partido": "ph",
   "de": 0,
   "a": 5,
@@ -158,6 +180,17 @@
    "programa",
    "2026-11"
   ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D01",
+  "partido": "upl",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-13",
@@ -190,6 +223,39 @@
    "programa",
    "2026-11"
   ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F07",
+  "partido": "jmm",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F07",
+  "partido": "pav",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F07",
+  "partido": "upl",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-13",
@@ -286,6 +352,28 @@
    "programa",
    "2026-11"
   ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "I08",
+  "partido": "pav",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "K04",
+  "partido": "upl",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "",
+  "fuente": null
  },
  {
   "fecha": "2026-11-13",

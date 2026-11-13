@@ -12,13 +12,13 @@
 // props: [propuesta, código de la pregunta relacionada o null].
 // tbd: candidatura aún no confirmada a 17 de octubre de 2026.
 
-export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo","falange","ie","ph"];
+export const PARTY_ORDER = ["psoe","pp","vox","fa","pod","salf","pacma","d21","erc","junts","pnv","bildu","upn","gbai","bng","ccpc","upc","drago","comp","cha","existe","mes","adel","jmm","upl","soria","pav","pcte","fo","falange","ie","ph","mj"];
 // DISPLAY_ORDER: orden en que se muestran las candidaturas y sus posturas (listas, fichas, explorador, desempates).
 // Solo afecta a la presentación: PARTY_ORDER sigue fijando el orden de las posturas en preguntas.src.mjs.
 // Criterio (7 nov 2026): primero las estatales con grupo en el Congreso (PSOE, PP, Vox, Frente Amplio, Podemos), luego SALF;
 // después las territoriales con representación en el Congreso, las estatales sin representación, el resto de territoriales
 // y, al final, las candidaturas con pocas posturas conocidas y las que no se presentan.
-export const DISPLAY_ORDER = ["psoe","pp","vox","fa","pod","salf","erc","junts","bildu","pnv","bng","ccpc","upn","pacma","fo","pcte","falange","d21","comp","adel","cha","existe","upc","drago","mes","gbai","soria","ph","ie","jmm","upl","pav"];
+export const DISPLAY_ORDER = ["psoe","pp","vox","fa","pod","salf","erc","junts","bildu","pnv","bng","ccpc","upn","pacma","fo","pcte","mj","falange","d21","comp","adel","cha","existe","upc","drago","mes","gbai","soria","ph","ie","jmm","upl","pav"];
 if (DISPLAY_ORDER.length !== PARTY_ORDER.length || PARTY_ORDER.some((id) => !DISPLAY_ORDER.includes(id))) throw new Error("DISPLAY_ORDER debe contener exactamente los mismos partidos que PARTY_ORDER");
 
 
@@ -306,6 +306,13 @@ export const PARTIES = [
      ["Reducir drásticamente el presupuesto militar.","H01"],
      ["Educación pública y gratuita en todos los niveles.","I02"],
      ["Alquiler social con renta máxima del 30 % de los ingresos.","B01"]] },
+ { id: "mj", name: "Por un Mundo Más Justo", ab: "M+J", color: "#1F8A9E", tag: "Justicia social · paz",
+   scope: { provinces: ["alava", "albacete", "almeria", "asturias", "avila", "badajoz", "bizkaia", "burgos", "cadiz", "cuenca", "granada", "guadalajara", "huesca", "jaen", "laspalmas", "madrid", "navarra", "ourense", "palencia", "segovia", "sevilla", "soria", "tarragona", "valencia", "valladolid", "zaragoza"] },
+   desc: "Partido centrado en la justicia social, la paz y la cooperación internacional. En su programa del 29N propone un gran parque público de vivienda en alquiler, la jornada de 35 horas, un impuesto mínimo a las grandes fortunas y cumplir el 0,7 % para la ayuda al desarrollo.",
+   props: [["Gran parque público de vivienda asequible en alquiler.","B08"],
+     ["Jornada laboral de 35 horas sin reducción salarial.","A01"],
+     ["Tributación mínima del 3 % para patrimonios de más de 50 millones.","A03"],
+     ["Cumplir el 0,7 % de la renta nacional para la ayuda al desarrollo.","H07"]] },
 ];
 
 export const REGIONS = [

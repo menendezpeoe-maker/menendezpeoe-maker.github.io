@@ -87,7 +87,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.click("#prio-go");
   ok((await page.textContent("#prov-err")).includes("provincia") && !(await page.isHidden("#v-prios")), "sin provincia no muestra resultados y la pide");
   await page.selectOption("#f-prov", "madrid");
-  ok((await page.locator("#prov-chips .chip").count()) === 13, "Madrid muestra 13 candidaturas");
+  ok((await page.locator("#prov-chips .chip").count()) === 14, "Madrid muestra 14 candidaturas");
   await page.screenshot({ path: OUT + "m-prios.png" });
   await page.click("#prio-go");
   await page.waitForSelector("#v-results:not([hidden])");
@@ -191,7 +191,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
 {
   console.log("Perfiles sintéticos (versión completa)");
   const { ctx, page } = await newPage({ w: 1100, tag: "profiles" });
-  const provFor = { psoe: "madrid", pp: "madrid", vox: "madrid", fa: "madrid", pod: "madrid", salf: "madrid", pacma: "madrid", d21: "madrid", erc: "barcelona", junts: "barcelona", pnv: "bizkaia", bildu: "bizkaia", upn: "navarra", gbai: "navarra", bng: "coruna", ccpc: "tenerife", upc: "tenerife", drago: "tenerife", comp: "valencia", cha: "zaragoza", existe: "teruel", mes: "baleares", adel: "sevilla", jmm: "jaen", upl: "leon", soria: "soria", pav: "avila", pcte: "madrid", fo: "madrid", falange: "madrid", ie: "madrid", ph: "madrid" };
+  const provFor = { psoe: "madrid", pp: "madrid", vox: "madrid", fa: "madrid", pod: "madrid", salf: "madrid", pacma: "madrid", d21: "madrid", erc: "barcelona", junts: "barcelona", pnv: "bizkaia", bildu: "bizkaia", upn: "navarra", gbai: "navarra", bng: "coruna", ccpc: "tenerife", upc: "tenerife", drago: "tenerife", comp: "valencia", cha: "zaragoza", existe: "teruel", mes: "baleares", adel: "sevilla", jmm: "jaen", upl: "leon", soria: "soria", pav: "avila", pcte: "madrid", fo: "madrid", falange: "madrid", ie: "madrid", ph: "madrid", mj: "madrid" };
   await page.goto(BASE);
   await page.waitForSelector("#start-btn:not([disabled])");
   const rows = [];

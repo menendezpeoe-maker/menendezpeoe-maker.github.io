@@ -89,7 +89,9 @@ console.log("Coherencia del cálculo");
       const moved = { ...mix, [q.id]: v };
       const after = await load(state(moved));
       const name = { psoe: "PSOE", pp: "Partido Popular", vox: "Vox", fa: "Frente Amplio" }[pid];
-      const p0 = before.rank.find((x) => x[0] === name)[1], p1 = after.rank.find((x) => x[0] === name)[1];
+      const r0 = before.rank.find((x) => x[0] === name), r1 = after.rank.find((x) => x[0] === name);
+      if (!r0 || !r1) continue; // el ranking visible muestra 10 (Madrid tiene 14 candidaturas desde el 13 nov)
+      const p0 = r0[1], p1 = r1[1];
       checked++; if (p1 < p0) broken.push(`${q.id}/${pid} ${p0}→${p1}`);
     }
   }

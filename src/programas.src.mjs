@@ -5,6 +5,7 @@ export const PROGRAMAS = {
   comprobado: "2026-11-13",
   // id de partido → { url, titulo, fecha }   (vacío: aún no publicado)
   publicados: {
+    mj: { url: "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf", titulo: "Programa electoral de Por un Mundo Más Justo para las generales del 29N de 2026", fecha: "2026-11-07" },
     pp: { url: "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf", titulo: "Programa electoral del PP: «Reconstrucción Nacional»", fecha: "2026-11-10" },
     erc: { url: "https://esquerrarepublicana.cat/documents/e2026-programa.pdf", titulo: "Programa electoral de ERC (Eleccions al Congrés 2026)", fecha: "2026-11-10" },
     ccpc: { url: "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf", titulo: "Programa electoral de Coalición Canaria y Primero Canarias: «Defiende Canarias»", fecha: "2026-11-09" },

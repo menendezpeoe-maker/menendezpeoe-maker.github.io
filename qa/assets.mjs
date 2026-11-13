@@ -31,7 +31,7 @@ p{font-family:Newsreader,serif;font-size:27px;line-height:1.35;color:#434955;mar
 <div class="top"><div class="b">${MARK()}Test <span class="e">29N</span></div><div class="k">Test electoral · Generales del 29 de noviembre</div></div>
 <div class="m"><div><h1>Lo que piensas, <span class="hl">tema a tema</span>.</h1><p>Tu perfil en siete dimensiones y tu coincidencia con las candidaturas de tu provincia.</p></div>
 <div class="q"><div class="k" style="font-size:14px">Así es cada pregunta</div><div class="t">El Estado debería poder limitar el precio del alquiler en las zonas tensionadas.</div><div class="sc"><span>1</span><span>2</span><span>3</span><span class="on">4</span><span>5</span></div><div class="c">Con contexto neutral en cada pregunta</div></div></div>
-<div class="f"><span><b>107</b>preguntas</span><span><b>12</b>áreas</span><span><b>29</b>candidaturas</span><span><b>0</b>registros</span></div>
+<div class="f"><span><b>107</b>preguntas</span><span><b>12</b>áreas</span><span><b>30</b>candidaturas</span><span><b>0</b>registros</span></div>
 </div></body></html>`;
 const icon = (size, pad) => `<!doctype html><html><head><style>*{margin:0}body{width:${size}px;height:${size}px;background:#F2F3EE;display:grid;place-items:center}svg{width:${size - pad * 2}px;height:${size - pad * 2}px}</style></head><body>${MARK()}</body></html>`;
 

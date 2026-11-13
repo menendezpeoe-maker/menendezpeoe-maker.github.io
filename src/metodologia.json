@@ -3,8 +3,8 @@
  "datos": "2026-11-13",
  "preguntas": 107,
  "imitacion": {
-  "total": 29,
-  "primero": 29,
+  "total": 30,
+  "primero": 30,
   "detalle": [
    {
     "pid": "psoe",
@@ -101,6 +101,12 @@
     "prov": "almeria",
     "primero": true,
     "pct": 87
+   },
+   {
+    "pid": "mj",
+    "prov": "almeria",
+    "primero": true,
+    "pct": 88
    },
    {
     "pid": "falange",
@@ -201,7 +207,7 @@
    },
    {
     "pid": "fo",
-    "n": 19
+    "n": 18
    },
    {
     "pid": "fa",
@@ -226,6 +232,10 @@
    {
     "pid": "pcte",
     "n": 2
+   },
+   {
+    "pid": "mj",
+    "n": 1
    },
    {
     "pid": "pacma",
@@ -365,6 +375,12 @@
    "conocidas": 29,
    "estimadas": 8,
    "conFuente": 29
+  },
+  {
+   "pid": "mj",
+   "conocidas": 28,
+   "estimadas": 4,
+   "conFuente": 28
   },
   {
    "pid": "falange",
