@@ -1287,7 +1287,7 @@
      "valladolid"
     ]
    },
-   "desc": "Partido falangista. En su programa de 2023 propone disolver las autonomías, nacionalizar la energía, salir de la UE y de la OTAN, un Estado confesional católico y repatriar a los extranjeros sin contrato de trabajo.",
+   "desc": "Partido falangista. En su programa del 29N propone un «plan de remigración» con la expulsión de los inmigrantes ilegales y de los legales con antecedentes penales o en paro, disolver las comunidades autónomas, nacionalizar la energía y la banca, salir del euro y de la OTAN, una salida escalonada y pactada de la UE y que el Estado reconozca la religión católica.",
    "props": [
     {
      "t": "Disolver las comunidades autónomas.",
@@ -1427,6 +1427,26 @@
   }
  ],
  "programas": {
+  "soria": {
+   "url": "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf",
+   "titulo": "Programa de Soria ¡Ya! para las generales del 29N de 2026 (una página)",
+   "fecha": "2026-11-12"
+  },
+  "d21": {
+   "url": "https://mi.democracia21.es/programa",
+   "titulo": "«La España que merecemos», programa electoral de Democracia 21 para el 29N (versión web, sin fecha impresa; detectado el 14 nov)",
+   "fecha": "2026-11"
+  },
+  "pacma": {
+   "url": "https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf",
+   "titulo": "Programa electoral de PACMA para las elecciones generales del 29N de 2026",
+   "fecha": "2026-11-12"
+  },
+  "falange": {
+   "url": "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf",
+   "titulo": "Programa electoral de Falange Española de las JONS para las elecciones generales del 29 de noviembre de 2026",
+   "fecha": "2026-11-13"
+  },
   "mj": {
    "url": "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf",
    "titulo": "Programa electoral de Por un Mundo Más Justo para las generales del 29N de 2026",
