@@ -639,7 +639,7 @@ ${dbPast.length ? `<ul class="db-list">${dbPast.map(dbRow).join("")}</ul>` : `<p
 <li>«Confirmado» quiere decir que la cadena o el organizador han anunciado fecha y medio; «Propuesta», que aún no. La hora solo aparece cuando la ha anunciado la cadena, en hora peninsular.</li>
 <li>«Grabación completa» solo cuando la cadena o el canal la publican entera; «programa emitido» es el programa tal como se emitió, sin afirmar que la entrevista no esté editada.</li>
 <li>El contexto resume de qué se habló según la fuente. No valoramos los debates ni decimos quién gana, y lo que se dice en una entrevista no cambia por sí solo las posturas del test: estas salen de programas, votaciones y declaraciones con fuente (<a href="/metodologia/">metodología</a>).</li>
-<li>Los enlaces llevan a la web de cada medio; no incrustamos vídeos para que la página cargue rápido y no comparta datos con terceros.</li><li>Revisamos esta página a diario hasta el 23 de noviembre. Del 24 al 29 la web no se actualiza; las grabaciones de esos días se añadirán el 30 de noviembre.</li></ul></section>
+<li>Los enlaces llevan a la web de cada medio; no incrustamos vídeos para que la página cargue rápido y no comparta datos con terceros.</li><li>Revisamos esta página a diario hasta el 27 de noviembre. El 28 (jornada de reflexión) y el 29 no se actualiza; lo de esos días se añadirá el 30.</li></ul></section>
 ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
   });
 

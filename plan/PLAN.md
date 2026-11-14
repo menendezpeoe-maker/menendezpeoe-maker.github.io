@@ -310,8 +310,8 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
 - Prepara los textos de «pregunta del día» que falten hasta el 23.
 
 **S2 (sáb 21 nov) · Último cambio antes del 24:**
-- Lo último de programas y fuentes. Después, la web se congela hasta el 30.
-- Comprueba que nada de la web pueda parecer un sondeo del 24 al 28 (regla de neutralidad) y que ninguna tarea programada publique esos días; P1 es el 30.
+- Lo último de programas y fuentes. Después, la web se congela hasta el 30. Excepción autorizada por el titular el 14 nov: del 24 al 27, la revisión diaria puede publicar solo fichas verificadas de /debates/ (plan/DEBATES.md); el 28 y el 29, nada.
+- Comprueba que nada de la web pueda parecer un sondeo del 24 al 28 (regla de neutralidad) y que ninguna tarea programada publique esos días salvo la excepción de /debates/ del 24 al 27 (no la desactives); P1 es el 30.
 - Deja 22 y 23 como margen: si algo falla, el titular puede pedir un arreglo esos días.
 
 ### P1 · Después de las elecciones (lunes 30 de noviembre)

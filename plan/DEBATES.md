@@ -22,8 +22,9 @@ Pedido por el titular el 14 nov 2026: /debates/ se actualiza cada día desde la 
 
 ## Calendario y congelación
 - 14–23 nov: se publica el mismo día.
-- **24–29 nov: no se publica nada** (congelación del plan: «la web se congela hasta el 30» y ninguna tarea programada publica esos días). La revisión diaria sigue buscando y verificando, pero solo anota lo comprobado en la cola de abajo (commit en `fuente` que toca solo este archivo; `dist/` no cambia).
-- **30 nov:** la revisión aplica la cola (grabaciones del 24 al 27, debates celebrados, cambios) y publica. Último día de la tarea.
+- **24–27 nov: excepción mínima a la congelación** (autorizada por el titular el 14 nov): se publican solo fichas verificadas de /debates/ y sus metadatos (`revisado`, `verificado`, `src/lastmod.json`, ESTADO.md y este archivo). Nada de test, programas, posturas, navegación, metodología ni otras páginas. Antes de publicar, en el worktree de main con dist/ copiado: `git status --short` solo puede mostrar `debates/index.html` (y, si acaso, `sitemap.xml`); si cambia otra cosa, no se publica y se anota en la cola. Pruebas: `node qa/debates.mjs`, `node qa/growth.mjs` y `node qa/barrido.mjs`, y después `BASE=https://test29n.es/ node qa/debates.mjs`.
+- **28 y 29 nov: no se publica nada.** El 28 es jornada de reflexión (LOREG art. 53: no hay campaña ese día; el plan dice «ninguna promoción el 28») y el 29 es el día de votación. La revisión verifica y anota en la cola de abajo (commit en `fuente` que toca solo este archivo; `dist/` no cambia).
+- **30 nov:** la revisión aplica la cola y publica. Último día de la tarea.
 
 ## Cola (comprobado, pendiente de aplicar)
 - Encuentros SER Andalucía «¿Qué se juega Andalucía el 29N?»: Antonio Maíllo (Frente Amplio / Por Andalucía), 28 oct, y María Jesús Montero (PSOE-A): su ficha del 3 nov dice jueves 5 nov a las 10:00 y el artículo del 13 nov dice «el pasado 3 de noviembre». Sin grabación localizada aún: no se fechan ni se añaden hasta encontrar la grabación en Radio Sevilla (web o YouTube) con su fecha. El del PP (fecha sin anunciar) también falta.

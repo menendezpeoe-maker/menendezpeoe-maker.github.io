@@ -11,7 +11,7 @@ No vuelvas a analizar lo que ya funciona. Busca con `grep` en vez de leer archiv
 
 ## Reglas que nunca se rompen
 - URLs (regla crítica del titular, 11 nov 2026): prohibido modificar, renombrar, eliminar o sustituir una URL existente e indexada sin su autorización expresa. Mejorar el posicionamiento con titles, descripciones, H1, contenido, enlazado interno y datos estructurados, manteniendo las URLs. Antes de proponer una migración, presentar: URL original, URL propuesta, estado de indexación, tráfico orgánico conocido, riesgo SEO y justificación; y no ejecutarla sin su aprobación. (GitHub Pages no da 301 reales.)
-- Neutralidad: nunca recomendar voto; nada que parezca una encuesta, ni publicar o promocionar del 24 al 28 de noviembre.
+- Neutralidad: nunca recomendar voto; nada que parezca una encuesta, ni publicar o promocionar del 24 al 28 de noviembre. Única excepción (titular, 14 nov): fichas verificadas de /debates/ del 24 al 27, según plan/DEBATES.md.
 - Nada inventado: posturas, fuentes, fechas y cifras, siempre verificadas y enlazadas.
 - Privacidad: sin registro ni cookies; el contador no registra respuestas. Responsable público: «Dery». Ningún dato bancario.
 - Los términos privados se leen de la variable `PRIVATE_TERMS`; nunca se escriben en el repositorio.
