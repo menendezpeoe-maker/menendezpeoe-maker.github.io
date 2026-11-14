@@ -108,8 +108,8 @@ console.log("Páginas por candidatura y por tema");
   ok(pp.includes("<dt>Programa del 29N</dt>") && pp.includes('href="/programas/"'), "cada página de partido indica el estado de su programa y enlaza /programas/");
   // Debates: cada uno con su estado, sus datos («por confirmar» si no se han anunciado), su fuente y el botón al test
   await page.goto(SITE + "debates/");
-  const dbs = await page.locator(".db-item").count(), dbSrc = await page.locator(".db-item .small a[href^='http']").count(), dbBtn = await page.locator('.db-item a.btn[href="/"]').count();
-  ok(dbs >= 1 && dbSrc >= dbs && dbBtn === dbs && !/ganador|ganó|gana el debate/i.test(await page.innerText("main")), `debates: ${dbs} debates, cada uno con fuente y botón al test, sin valoraciones`);
+  const dbs = await page.locator(".db-item").count(), dbSrc = await page.locator(".db-item .small a[href^='http']").count(), dbTest = await page.locator('main a.btn[href="/"]').count();
+  ok(dbs >= 1 && dbSrc >= dbs && dbTest >= 1 && !/ganador|ganó|gana el debate/i.test(await page.innerText("main")), `debates: ${dbs} fichas, cada una con fuente, y botón al test, sin valoraciones (detalle en qa/debates.mjs)`);
   const cal = await (await fetch(SITE + "calendario/")).text();
   ok(cal.includes('href="/debates/"'), "el calendario enlaza /debates/");
   await page.goto(SITE); await page.waitForSelector("#start-btn:not([disabled])");
