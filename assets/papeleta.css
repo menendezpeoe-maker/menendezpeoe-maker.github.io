@@ -1276,3 +1276,20 @@ details.sp-area[open] { border-color: var(--ink); }
 /* Páginas estáticas: ningún bloque ensancha la página (las tablas anchas se desplazan dentro de su caja) */
 .sp > *, .sp section { min-width: 0; }
 .sim-table-wrap { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Identidad visual común de las páginas estáticas: secciones con la marca amarilla de la papeleta e índice «En esta página» */
+.sp section > .h2, .sp > section > h2.h2 { position: relative; padding-bottom: 12px; }
+.sp section > .h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 5px; border-radius: 3px; background: var(--mark); }
+.toc { padding: 12px 14px; border: 1.5px solid var(--rule); border-left: 5px solid var(--mark); border-radius: 12px; background: var(--sheet); }
+.toc ul { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.toc a { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; border: 1.5px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.2; text-decoration: none; }
+.toc a:hover { border-color: var(--ink); }
+.toc a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.sp section[aria-labelledby], .sp section > .h2[id] { scroll-margin-top: 16px; }
+/* Datos clave en fichas (partido, provincia): baldosas compactas en vez de una lista larga */
+.sp-facts { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 8px; }
+@media (min-width: 760px) { .sp-facts { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+.sp-facts > div { padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 10px; background: var(--sheet); min-width: 0; }
+.sp-facts dt { font-size: 12px; letter-spacing: .05em; }
+.sp-facts dd { font-size: 15.5px; overflow-wrap: anywhere; }
+.phead ~ .sp-facts > div:nth-child(n+3) { grid-column: 1 / -1; }
