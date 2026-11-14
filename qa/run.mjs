@@ -3,12 +3,12 @@
 import { spawnSync, execSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
-const TODAS = "confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats comparar resultados recorrido rendimiento".split(" ");
+const TODAS = "confianza temas territorio votar opendata seo growth summary quick onboarding e2e share sections profiles map support audit features explain stats comparar resultados recorrido menu rendimiento".split(" ");
 const GRUPOS = {
   todas: TODAS,
   posturas: "correcciones metodologia quick profiles confianza".split(" "), // tras cambiar posturas (escriben src/*.json)
   paginas: "seo votar territorio temas growth opendata confianza".split(" "),  // páginas estáticas (pages.mjs)
-  test: "onboarding quick e2e summary sections profiles map explain features audit comparar resultados recorrido".split(" "), // flujo y resultado
+  test: "onboarding quick e2e summary sections profiles map explain features audit comparar resultados recorrido menu".split(" "), // flujo y resultado
   difusion: "share stats support".split(" "), // compartir, contador y apoyo (share: solo pasa del todo en el dominio real)
 };
 

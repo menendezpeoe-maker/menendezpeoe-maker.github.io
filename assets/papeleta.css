@@ -1190,7 +1190,6 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .sp-nav a { touch-action: manipulation; -webkit-tap-highlight-color: rgba(246, 221, 47, .35); }
 .sp-nav a:not(.btn) { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 12px; }
 @media (max-width: 560px) { .head-row .sp-nav { margin-inline: 0; gap: 2px 4px; } .head-row .sp-nav a:not(.btn) { padding: 6px 7px; font-size: 14px; } }
-@media (max-width: 340px) { .head-row .sp-nav a[href="/temas/"] { display: none; } }
 @media (max-width: 400px) { .head-row .sp-nav { gap: 0 2px; } .head-row .sp-nav a:not(.btn) { padding: 6px 4px; font-size: 13.5px; } .head-row .sp-nav .btn-sm { padding-inline: 11px; font-size: 13.5px; } }
 @media (hover: none) { .sp-nav a:not(.btn):hover { text-decoration: none; } }
 
@@ -1209,3 +1208,30 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .sumv-n small { font-weight: 500; color: var(--ink-2); }
 .sumv-d { margin: 0; padding: 0 14px 4px 32px; display: grid; gap: 6px; font-size: 15px; overflow-wrap: anywhere; }
 .sumv-row > p { padding: 0 14px 12px; }
+
+/* Menú único (14 nov, acordado con el titular): mismas secciones y mismo orden en la portada y en las páginas interiores.
+   Escritorio: en línea. Móvil (≤ 560 px): rejilla 3 × 2 con «Comparar» y «Mi circunscripción» siempre visibles;
+   «Cómo funciona» sale del menú en móvil (sigue en la portada, el pie y /metodologia/). */
+.head-nav .navlink { text-decoration: none; }
+.sp-nav { gap: 2px; }
+.sp-nav a.navlink { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 6px 10px; font-weight: 650; font-size: 14.5px; color: var(--ink-2); border-radius: var(--r2); }
+.sp-nav a.navlink:hover { background: var(--rule-2); color: var(--ink); text-decoration: none; }
+.sp-nav a.nav-cta { background: var(--ink); color: var(--paper); }
+.sp-nav a.nav-cta:hover { background: var(--ink); color: var(--paper); opacity: .9; }
+@media (max-width: 560px) {
+  .head-nav .navlink.nav-x { display: none; }
+  .head-row .head-nav, .head-row .sp-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; width: 100%; margin-inline: 0; }
+  .head-row .sp-nav a.navlink, .head-nav .navlink { padding: 2px 2px; font-size: 14px; line-height: 1.2; text-align: center; min-height: 40px; }
+}
+
+/* /programas/ (14 nov): búsqueda, filtro por circunscripción, últimas incorporaciones y dos botones separados */
+.pg-new .pg-list > li { border-color: var(--mark); }
+.pg-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.pg-btns .btn-sm { min-height: 44px; }
+.pg-tools { display: grid; gap: 10px; padding: 12px 14px; margin-bottom: 10px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); }
+.pg-tools[hidden], .pg-list > li[hidden] { display: none; }
+.pg-f { display: grid; gap: 4px; font-weight: 650; font-size: 14.5px; min-width: 0; }
+.pg-f input, .pg-f select { min-height: 44px; width: 100%; padding: 0 12px; font: inherit; font-weight: 400; color: var(--ink); background: var(--paper); border: 1px solid var(--ink-3, var(--rule)); border-radius: var(--r1); }
+.pg-n { margin: 0; }
+.pg-n:empty { display: none; }
+@media (min-width: 760px) { .pg-tools { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto; align-items: end; } .pg-n { grid-column: 1 / -1; } }

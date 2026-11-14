@@ -25,7 +25,7 @@ console.log("Historial del navegador");
 {
   const { ctx, page } = await ctxPage({ tag: "hist" });
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
-  await page.click(".head-nav [data-go='method']"); ok((await view(page)) === "method", "ir a «Cómo funciona»");
+  await page.click("[data-go='method']:visible >> nth=0"); ok((await view(page)) === "method", "ir a «Cómo funciona»");
   await page.goBack(); ok((await view(page)) === "home", "Atrás vuelve al inicio (antes salía de la web)");
   await page.goForward(); ok((await view(page)) === "method", "Adelante vuelve a «Cómo funciona»");
   await page.click(".head-nav [data-go='explorer']"); await page.goBack(); ok((await view(page)) === "method", "Atrás desde «Posturas» vuelve a «Cómo funciona»");
@@ -36,7 +36,7 @@ console.log("Historial del navegador");
   await page.goForward(); ok((await view(page)) === "quiz", "Adelante vuelve al test donde estaba");
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), done(Object.fromEntries(all.map((id) => [id, 4]))));
   await page.reload(); await page.waitForSelector("#v-results:not([hidden])");
-  await page.click(".head-nav [data-go='method']"); await page.goBack();
+  await page.click("[data-go='method']:visible >> nth=0"); await page.goBack();
   ok((await view(page)) === "results" && (await page.locator("#r-parties .rank li").count()) > 0, "Atrás desde «Cómo funciona» vuelve a tus resultados, recalculados");
   await ctx.close();
 }
@@ -113,7 +113,7 @@ if (process.env.AXE !== "0") {
     const cmp = await page.evaluate(() => document.querySelectorAll("#cmp-sel option")[1]?.value); if (cmp) await page.selectOption("#cmp-sel", cmp);
     await page.evaluate(() => document.querySelectorAll("#v-results details").forEach((d) => { d.open = true; d.dispatchEvent(new Event("toggle")); }));
     res.full = await run("resultado completo abierto");
-    await page.click(".head-nav [data-go='method']"); res.method = await run("cómo funciona");
+    await page.click("[data-go='method']:visible >> nth=0"); res.method = await run("cómo funciona");
     await page.click(".head-nav [data-go='explorer']"); res.explorer = await run("posturas");
     // Páginas estáticas: solo cuando BASE es la raíz de dist/ o la web real
     if (BASE.endsWith("/")) for (const p of ["calendario/", "partidos/pp/", "debates/", "programas/", "insertar/"]) { await page.goto(BASE + p); res[p] = await run(p); }

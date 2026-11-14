@@ -102,7 +102,7 @@ console.log("Páginas por candidatura y por tema");
   // Programas electorales: una fila por candidatura que se presenta, con su estado, y enlazada desde cada partido
   await page.goto(SITE + "programas/");
   const live = pd.order.filter((pid) => !pd.parties.find((p) => p.id === pid).out);
-  const rows = await page.locator(".pg-list > li").count(), tags = await page.locator(".pg-list .pg-tag").count();
+  const rows = await page.locator("#pg-all > li").count(), tags = await page.locator("#pg-all .pg-tag").count();
   ok(rows === live.length && tags === live.length && /comprobado el \d+ de [a-z]+ de 2026/.test(await page.innerText(".pg-sum")), `programas: ${rows} candidaturas, cada una con su estado y la fecha de comprobación`);
   const pp = await (await fetch(SITE + "partidos/pp/")).text();
   ok(pp.includes("<dt>Programa del 29N</dt>") && pp.includes('href="/programas/"'), "cada página de partido indica el estado de su programa y enlaza /programas/");

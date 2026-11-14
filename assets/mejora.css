@@ -43,7 +43,7 @@ a.navlink:hover { background: var(--rule-2); color: var(--ink); }
 /* MEJORA (móvil, ≤ 560 px): las tres secciones se reparten el ancho como pestañas iguales, alcanzables
    con el pulgar y sin saltos de línea. WCAG 2.5.8, 1.4.10 (reflujo). */
 @media (max-width: 560px) {
-  .head-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; margin-inline: 0; }
+  .head-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; margin-inline: 0; }
   .navlink { padding: 0 2px; text-align: center; line-height: 1.2; font-size: 14px; }
 }
 

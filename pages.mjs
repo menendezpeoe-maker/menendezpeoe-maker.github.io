@@ -81,7 +81,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
   <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
-  <nav class="head-nav sp-nav" aria-label="Secciones"><a href="/partidos/">Partidos</a><a href="/programas/">Programas</a><a href="/temas/">Temas</a><a class="btn btn-primary btn-sm" href="/">Hacer el test</a></nav>
+  <nav class="head-nav sp-nav" aria-label="Secciones"><a class="navlink nav-cta" href="/"><span class="lg">Hacer el test</span><span class="sm">Test</span></a><a class="navlink" href="/partidos/">Partidos</a><a class="navlink" href="/programas/">Programas</a><a class="navlink" href="/temas/">Temas</a><a class="navlink" href="/comparar/"><span class="lg">Comparar propuestas</span><span class="sm">Comparar</span></a><a class="navlink" href="/provincias/">Mi circunscripción</a><a class="navlink nav-x" href="/metodologia/">Cómo funciona</a></nav>
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
@@ -628,10 +628,39 @@ ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
 
   // ── Programas electorales del 29N: estado de cada candidatura, con enlace oficial cuando existe
   const nPub = live.filter((pid) => PROG[pid]).length;
+  // Búsqueda (nombre, sigla, nombres locales y cabeza de lista, sin tildes) y filtro por circunscripción: datos en cada fila,
+  // filtrado en /programas/programas.js. Sin JS se ve la lista completa. Las circunscripciones salen de `scope` (proclamación del BOE).
+  const fold = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const pgKeys = (pid) => fold([P[pid].name, P[pid].ab, P[pid].lead, ...Object.values(P[pid].local || {})].filter(Boolean).join(" · "));
+  const pgProvs = (pid) => provList.filter((x) => runsIn(pid, x.id)).map((x) => x.id).join(" ");
+  const progBtns = (pid, pub) => `<span class="pg-btns"><a class="btn btn-primary btn-sm" href="${esc(pub.url)}" target="_blank" rel="noopener noreferrer">Abrir programa oficial<span class="sr"> de ${esc(P[pid].name)} (se abre en otra pestaña)</span></a><a class="btn btn-ghost btn-sm" href="/partidos/${pid}/#h-pos">Ver posturas revisadas<span class="sr"> de ${esc(P[pid].name)}</span></a></span>`;
   const progRow = (pid) => { const p = P[pid], pub = PROG[pid], noList = PROGRAMAS.sinLista.includes(pid);
-    return `<li><a class="pg-party" href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(scopeText(p))}</span></span></a><div class="pg-st">${pub
-      ? `<span class="pg-tag ok">Publicado</span><span class="small"><a href="${esc(pub.url)}" target="_blank" rel="noopener noreferrer">${esc(pub.titulo)}</a>, ${esc(fmtDate(pub.fecha))}. ${progReviewed(pid)} posturas del test revisadas con él.</span>`
-      : `<span class="pg-tag">Aún no publicado</span>${noList ? `<span class="small">No figura en la proclamación de candidaturas al Congreso (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">${esc(PROGRAMAS.boe.label)}</a>).</span>` : `<span class="small"><a href="/partidos/${pid}/">Ver sus posturas actuales</a></span>`}`}</div></li>`; };
+    return `<li data-q="${esc(pgKeys(pid))}" data-p="${pgProvs(pid)}" data-pub="${pub ? 1 : 0}"><a class="pg-party" href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(p.ab !== p.name ? `${p.ab} · ` : "")}${esc(scopeText(p))}</span></span></a><div class="pg-st">${pub
+      ? `<span class="pg-tag ok">Publicado</span><span class="small">${esc(pub.titulo)}, ${esc(fmtDate(pub.fecha))}. ${progReviewed(pid)} posturas del test revisadas con él.</span>${progBtns(pid, pub)}`
+      : `<span class="pg-tag">Aún no publicado</span>${noList ? `<span class="small">No figura en la proclamación de candidaturas al Congreso (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">${esc(PROGRAMAS.boe.label)}</a>).</span>` : `<span class="small"><a href="/partidos/${pid}/#h-pos">Ver sus posturas actuales</a></span>`}`}</div></li>`; };
+  const pgKey = (pid) => { const d = PROG[pid].alta || PROG[pid].fecha; return d.length === 7 ? `${d}-00` : d; };
+  const latest = live.filter((pid) => PROG[pid]).sort((a, b) => pgKey(b).localeCompare(pgKey(a)) || live.indexOf(a) - live.indexOf(b)).slice(0, 4);
+  mkdirSync(`${OUT}/programas`, { recursive: true });
+  writeFileSync(`${OUT}/programas/programas.js`, `// /programas/: búsqueda por nombre o sigla y filtro por circunscripción. Todo en el navegador; no guarda ni envía nada.
+(() => {
+  const q = document.getElementById("pg-q"), pr = document.getElementById("pg-prov"), out = document.getElementById("pg-n"), none = document.getElementById("pg-none");
+  const box = document.getElementById("pg-tools"), rows = [...document.querySelectorAll("#pg-all > li")];
+  if (!q || !pr || !rows.length) return; box.hidden = false;
+  const fold = (s) => s.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").trim();
+  const run = () => {
+    const t = fold(q.value), p = pr.value, name = p ? pr.options[pr.selectedIndex].text : "";
+    let n = 0, pub = 0;
+    for (const li of rows) { const ok = (!t || li.dataset.q.includes(t)) && (!p || li.dataset.p.split(" ").includes(p)); li.hidden = !ok; if (ok) { n++; pub += +li.dataset.pub; } }
+    none.hidden = n > 0;
+    const c = n === 1 ? "candidatura" : "candidaturas";
+    out.textContent = !t && !p ? "" : p ? \`En \${name}: \${n} \${c}\${t ? " con ese nombre" : ""}, \${pub} con programa publicado.\` : \`\${n} \${c} \${n === 1 ? "coincide" : "coinciden"}, \${pub} con programa publicado.\`;
+  };
+  q.addEventListener("input", run); pr.addEventListener("change", run);
+  document.getElementById("pg-clear").addEventListener("click", () => { q.value = ""; pr.value = ""; run(); q.focus(); });
+  const h = new URLSearchParams(location.search).get("circ"); if (h && [...pr.options].some((o) => o.value === h)) pr.value = h;
+  run();
+})();
+`);
   page({
     path: "/programas/",
     title: "Programas electorales del 29N: cuáles se han publicado · Test 29N",
@@ -640,10 +669,16 @@ ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
     ld: { "@context": "https://schema.org", "@type": "ItemList", name: "Programas electorales del 29N", itemListElement: live.map((pid, i) => ({ "@type": "ListItem", position: i + 1, name: `Programa electoral de ${P[pid].name}`, url: PROG[pid]?.url || `${SITE}partidos/${pid}/` })) },
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Programas electorales del 29N</h1>
   <p class="lede">Qué candidaturas han publicado ya su programa para el 29N, con el enlace oficial. Cuando sale uno, revisamos con él las posturas de ese partido en el test. Hasta entonces, sus posturas salen de sus votaciones, declaraciones y documentos anteriores, con la fuente enlazada cuando la hay.</p></header>
-<p class="pg-sum"><b>${nPub} de ${live.length}</b> candidaturas han publicado su programa · comprobado el ${esc(progChecked)}</p>
-<ul class="pg-list">${[...live.filter((pid) => PROG[pid]), ...live.filter((pid) => !PROG[pid])].map(progRow).join("")}</ul>
+<p class="pg-sum" id="pg-sum"><b>${nPub} de ${live.length}</b> candidaturas han publicado su programa · comprobado el ${esc(progChecked)}</p>
+${latest.length ? `<section aria-labelledby="h-pg-new" class="pg-new"><h2 class="h3" id="h-pg-new">Últimas incorporaciones</h2><ul class="pg-list">${latest.map((pid) => `<li><a class="pg-party" href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(P[pid].name)}</b><span class="small muted">Publicado: ${esc(fmtDate(PROG[pid].fecha))}${PROG[pid].alta ? ` · en esta web desde el ${esc(fmtDate(PROG[pid].alta))}` : ""}</span></span></a><div class="pg-st">${progBtns(pid, PROG[pid])}</div></li>`).join("")}</ul></section>` : ""}
+<section aria-labelledby="h-pg-all"><h2 class="h3" id="h-pg-all">Todas las candidaturas</h2>
+<div class="pg-tools" id="pg-tools" role="search" hidden><label class="pg-f"><span>Buscar por nombre o sigla</span><input type="search" id="pg-q" autocomplete="off" spellcheck="false" placeholder="Ej.: PNV, Bildu, Frente Amplio"></label><label class="pg-f"><span>Circunscripción</span><select id="pg-prov"><option value="">Todas</option>${PD.regions.map((r) => `<optgroup label="${esc(r.name)}">${r.provs.map((x) => `<option value="${x.id}">${esc(x.name)}</option>`).join("")}</optgroup>`).join("")}</select></label><button type="button" class="btn btn-ghost btn-sm" id="pg-clear">Borrar filtros</button><p class="small muted pg-n" id="pg-n" role="status" aria-live="polite"></p></div>
+<ul class="pg-list" id="pg-all">${[...live.filter((pid) => PROG[pid]), ...live.filter((pid) => !PROG[pid])].map(progRow).join("")}</ul>
+<p class="small" id="pg-none" hidden>Ninguna candidatura coincide. Prueba con la sigla (por ejemplo, PSC o PNV) o quita el filtro de circunscripción.</p>
+<p class="small muted">Por circunscripción se muestran las candidaturas que presentan lista allí según la proclamación definitiva (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">${esc(PROGRAMAS.boe.label)}</a>). Para ver los escaños y todas las listas, consulta <a href="/provincias/">Mi circunscripción</a>.</p></section>
 <p class="small muted">Solo enlazamos el programa publicado por el propio partido, en su web o en PDF. Los partidos suelen publicarlo en las semanas previas a la campaña (del 13 al 27 de noviembre). Esta página se revisa varias veces por semana hasta el 21 de noviembre.</p>
-${cta("Compara tus ideas con las de cada candidatura")}`
+${cta("Compara tus ideas con las de cada candidatura")}
+<script src="/programas/programas.js" defer></script>`
   });
   page({
     path: "/temas/",
