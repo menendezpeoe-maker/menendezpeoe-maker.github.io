@@ -105,6 +105,9 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
 <script type="application/ld+json">${JSON.stringify(ld ? [crumbLd, ld] : crumbLd).replace(/</g, "\\u003c")}</script>
 `;
     const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">Test 29N</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
+    // «En esta página»: índice automático de las secciones (h2 con id) en las páginas largas, justo tras la cabecera
+    const secs = [...body.matchAll(/<h2 class="h2[^"]*" id="([^"]+)">([\s\S]*?)<\/h2>/g)].map((m) => [m[1], m[2].replace(/<[^>]+>/g, "").trim()]);
+    if (secs.length >= 4 && body.includes("</header>")) body = body.replace("</header>", `</header>\n<nav class="toc" aria-label="En esta página"><p class="label">En esta página</p><ul>${secs.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join("")}</ul></nav>`);
     const html = `${head(esc(title), esc(desc), extra, "/")}
 <body>
 ${navCur(header, path)}
