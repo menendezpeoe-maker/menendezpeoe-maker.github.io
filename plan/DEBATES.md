@@ -27,4 +27,4 @@ Pedido por el titular el 14 nov 2026: /debates/ se actualiza cada día desde la 
 - **30 nov:** la revisión aplica la cola y publica. Último día de la tarea.
 
 ## Cola (comprobado, pendiente de aplicar)
-- Encuentros SER Andalucía «¿Qué se juega Andalucía el 29N?»: Antonio Maíllo (Frente Amplio / Por Andalucía), 28 oct, y María Jesús Montero (PSOE-A): su ficha del 3 nov dice jueves 5 nov a las 10:00 y el artículo del 13 nov dice «el pasado 3 de noviembre». Sin grabación localizada aún: no se fechan ni se añaden hasta encontrar la grabación en Radio Sevilla (web o YouTube) con su fecha. El del PP (fecha sin anunciar) también falta.
+- (vacía) Falta el encuentro SER Andalucía del PP (fecha sin anunciar a 14 nov).

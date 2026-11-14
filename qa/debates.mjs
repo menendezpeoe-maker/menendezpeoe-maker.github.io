@@ -49,9 +49,10 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const nextOk = info.next.every((id, i, a) => !i || (byId[a[i - 1]].fecha || "9999") <= (byId[id].fecha || "9999"));
   const pastOk = info.past.every((id, i, a) => !i || byId[a[i - 1]].fecha >= byId[id].fecha);
   ok(info.next.length + info.past.length === L.length && info.past.length === em.length && nextOk && pastOk, `${w}: próximos por fecha (${info.next.length}) y emitidos del más reciente al más antiguo (${info.past.length})`);
-  ok(info.btns.length === em.length && info.btns.every((b) => /^(Ver grabación|Escuchar)$/.test(b.t) && b.tg === "_blank" && /noopener/.test(b.rel) && b.h >= 44), `${w}: un botón «Ver grabación»/«Escuchar» por emitido, en otra pestaña y de ≥ 44 px`);
+  ok(info.btns.length === em.length && info.btns.every((b) => /^(Ver grabación|Escuchar|Escuchar extracto|Ver extracto)$/.test(b.t) && b.tg === "_blank" && /noopener/.test(b.rel) && b.h >= 44), `${w}: un botón «Ver grabación»/«Escuchar» por emitido, en otra pestaña y de ≥ 44 px`);
   const audio = L.filter((d) => d.grabacion?.formato === "audio").length;
-  ok(info.btns.filter((b) => b.t === "Escuchar").length === audio, `${w}: «Escuchar» solo en audios (${audio})`);
+  const frag = L.filter((d) => d.grabacion?.alcance === "fragmento").length;
+  ok(info.btns.filter((b) => b.t.startsWith("Escuchar")).length === audio && info.btns.filter((b) => / extracto$/.test(b.t)).length === frag, `${w}: «Escuchar» solo en audios (${audio}) y «extracto» solo en fragmentos (${frag})`);
   ok(!info.ext && !info.iframes && info.hasCsp, `${w}: enlaces externos con noopener, sin vídeos incrustados y con la CSP de siempre`);
   ok(!info.ov, `${w}: sin desplazamiento horizontal`);
   const txt = await page.innerText("main");

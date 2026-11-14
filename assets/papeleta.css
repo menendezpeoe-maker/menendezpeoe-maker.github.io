@@ -1209,19 +1209,18 @@ body.in-quiz .toast { bottom: auto; top: calc(12px + env(safe-area-inset-top, 0p
 .sumv-d { margin: 0; padding: 0 14px 4px 32px; display: grid; gap: 6px; font-size: 15px; overflow-wrap: anywhere; }
 .sumv-row > p { padding: 0 14px 12px; }
 
-/* Menú único (14 nov, acordado con el titular): mismas secciones y mismo orden en la portada y en las páginas interiores.
-   Escritorio: en línea. Móvil (≤ 560 px): rejilla 3 × 2 con «Comparar» y «Mi circunscripción» siempre visibles;
-   «Cómo funciona» sale del menú en móvil (sigue en la portada, el pie y /metodologia/). */
+/* Menú único (14 nov, acordado con el titular): mismas secciones y mismo orden en la portada y en las páginas interiores,
+   con la sección actual marcada (aria-current). Escritorio: en línea. Móvil (≤ 560 px): rejilla de 3 columnas y 3 filas,
+   todo visible: Test · Partidos · Programas / Temas · Debates · Comparar / Mi circunscripción (2 columnas) · Cómo funciona. */
 .head-nav .navlink { text-decoration: none; }
 .sp-nav { gap: 2px; }
 .sp-nav a.navlink { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 6px 10px; font-weight: 650; font-size: 14.5px; color: var(--ink-2); border-radius: var(--r2); }
 .sp-nav a.navlink:hover { background: var(--rule-2); color: var(--ink); text-decoration: none; }
-.sp-nav a.nav-cta { background: var(--ink); color: var(--paper); }
-.sp-nav a.nav-cta:hover { background: var(--ink); color: var(--paper); opacity: .9; }
+.sp-nav a.navlink[aria-current="page"] { color: var(--ink); background: var(--mark-2); box-shadow: inset 0 -3px 0 var(--ink); }
 @media (max-width: 560px) {
-  .head-nav .navlink.nav-x { display: none; }
-  .head-row .head-nav, .head-row .sp-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; width: 100%; margin-inline: 0; }
-  .head-row .sp-nav a.navlink, .head-nav .navlink { padding: 2px 2px; font-size: 14px; line-height: 1.2; text-align: center; min-height: 40px; }
+  .head-row .head-nav, .head-row .sp-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2px; width: 100%; margin-inline: 0; }
+  .head-row .sp-nav a.navlink, .head-nav .navlink { padding: 2px 2px; font-size: 14px; line-height: 1.15; text-align: center; min-height: 34px; }
+  .head-nav .navlink.nav-circ { grid-column: span 2; }
 }
 
 /* /programas/ (14 nov): búsqueda, filtro por circunscripción, últimas incorporaciones y dos botones separados */

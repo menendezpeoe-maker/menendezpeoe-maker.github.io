@@ -81,7 +81,7 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
   <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
-  <nav class="head-nav sp-nav" aria-label="Secciones"><a class="navlink nav-cta" href="/"><span class="lg">Hacer el test</span><span class="sm">Test</span></a><a class="navlink" href="/partidos/">Partidos</a><a class="navlink" href="/programas/">Programas</a><a class="navlink" href="/temas/">Temas</a><a class="navlink" href="/comparar/"><span class="lg">Comparar propuestas</span><span class="sm">Comparar</span></a><a class="navlink" href="/provincias/">Mi circunscripción</a><a class="navlink nav-x" href="/metodologia/">Cómo funciona</a></nav>
+  <nav class="head-nav sp-nav" aria-label="Secciones"><a class="navlink" href="/">Test</a><a class="navlink" href="/partidos/">Partidos</a><a class="navlink" href="/programas/">Programas</a><a class="navlink" href="/temas/">Temas</a><a class="navlink" href="/debates/">Debates</a><a class="navlink" href="/comparar/"><span class="lg">Comparar propuestas</span><span class="sm">Comparar</span></a><a class="navlink nav-circ" href="/provincias/">Mi circunscripción</a><a class="navlink nav-x" href="/metodologia/">Cómo funciona</a></nav>
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
@@ -90,6 +90,9 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
   const cta = (t) => `<aside class="cta-box" aria-label="${t}"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
   const method = `<p class="small muted">Las posturas se asignan de 1 a 5 a partir de programas electorales, votaciones en las Cortes, decisiones de gobierno y declaraciones públicas. <b>Documentada</b>: hay evidencia explícita. <b>Estimada</b>: se deduce de su línea general y se marca siempre. Si no conocemos la postura de un partido, no se le asigna ninguna. Datos actualizados el ${esc(updated)}.</p>`;
+  // Menú: marca la sección actual (aria-current) igual que en la portada; las subpáginas cuentan como su sección
+  const NAV_SEC = { partidos: "/partidos/", programas: "/programas/", temas: "/temas/", tests: "/temas/", comparar: "/comparar/", debates: "/debates/", provincias: "/provincias/", escanos: "/provincias/", metodologia: "/metodologia/" };
+  const navCur = (h, path) => { const sec = NAV_SEC[String(path).split("/")[1]]; return sec ? h.replace(`<a class="navlink" href="${sec}">`, `<a class="navlink" href="${sec}" aria-current="page">`).replace(`<a class="navlink nav-circ" href="${sec}">`, `<a class="navlink nav-circ" href="${sec}" aria-current="page">`).replace(`<a class="navlink nav-x" href="${sec}">`, `<a class="navlink nav-x" href="${sec}" aria-current="page">`) : h; };
   const page = ({ path, title, desc, crumbs, body, ld }) => {
     const url = SITE + path.replace(/^\//, "");
     const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Test 29N", url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
@@ -103,7 +106,7 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`
     const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">Test 29N</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
     const html = `${head(esc(title), esc(desc), extra, "/")}
 <body>
-${header}
+${navCur(header, path)}
 <main id="main" class="wrap sp" tabindex="-1">
 ${nav}
 ${body}
@@ -616,7 +619,7 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
     return `<li class="db-item db-${esc(d.tipo)}" id="${esc(d.id)}"><div class="db-head"><p class="db-tags"><span class="db-kind">${DB_TIPO[d.tipo]}</span><span class="pg-tag${d.estado === "propuesta" ? "" : " ok"}">${late ? "Por comprobar si se celebró" : DB_EST[d.estado]}</span>${g ? `<span class="db-rec">${g.formato === "audio" ? "Audio" : "Vídeo"} · ${DB_GRAB[g.alcance]}</span>` : ""}</p><h3 class="h3">${esc(d.titulo)}</h3></div>
     <dl class="db-facts"><div><dt>Fecha</dt><dd>${esc(dbFecha(d).replace(/^./, (c) => c.toUpperCase()))}${d.hora ? `, ${esc(d.hora)} h (hora peninsular)` : d.estado === "emitido" ? "" : ' <span class="muted">· hora por confirmar</span>'}</dd></div><div><dt>Medio</dt><dd>${esc(d.medio)}</dd></div>${d.organiza ? `<div><dt>Organiza</dt><dd>${esc(d.organiza)}</dd></div>` : ""}<div><dt>Ámbito</dt><dd>${esc(d.ambito)}</dd></div><div class="db-wide"><dt>Participantes</dt><dd>${esc(d.participantes)}</dd></div>${d.estado !== "emitido" ? `<div><dt>Dónde verlo</dt><dd>${pc(d.donde)}</dd></div>` : ""}</dl>
     <p class="db-ctx">${esc(d.contexto)}</p>
-    ${g ? `<p class="db-btns"><a class="btn btn-primary btn-sm" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${g.formato === "audio" ? "Escuchar" : "Ver grabación"}<span class="sr">: ${esc(d.titulo)} (se abre en otra pestaña)</span></a></p>` : ""}
+    ${g ? `<p class="db-btns"><a class="btn btn-primary btn-sm" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">${g.alcance === "fragmento" ? (g.formato === "audio" ? "Escuchar extracto" : "Ver extracto") : g.formato === "audio" ? "Escuchar" : "Ver grabación"}<span class="sr">: ${esc(d.titulo)} (se abre en otra pestaña)</span></a></p>` : ""}
     <p class="small muted">Comprobado el ${esc(fmtDate(d.verificado))} · Fuente: ${d.fuentes.map(([u, l]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(l)}</a>`).join(" · ")}</p></li>`; };
   const dbNext = DEBATES.lista.filter((d) => d.estado !== "emitido").sort((a, b) => (a.fecha || "9999").localeCompare(b.fecha || "9999") || (a.hora || "99").localeCompare(b.hora || "99"));
   const dbPast = DEBATES.lista.filter((d) => d.estado === "emitido").sort((a, b) => b.fecha.localeCompare(a.fecha) || (b.hora || "").localeCompare(a.hora || ""));
@@ -637,7 +640,7 @@ ${dbPast.length ? `<ul class="db-list">${dbPast.map(dbRow).join("")}</ul>` : `<p
 <section aria-labelledby="h-db-crit"><h2 class="h3" id="h-db-crit">Qué recogemos y cómo</h2><ul class="dots">
 <li>Debates de cadenas estatales, autonómicas y locales, y entrevistas a cabezas de lista o portavoces en medios de amplia audiencia. El criterio es el mismo para todas las candidaturas; si falta alguno, escríbenos (<a href="/sobre/">contacto</a>).</li>
 <li>«Confirmado» quiere decir que la cadena o el organizador han anunciado fecha y medio; «Propuesta», que aún no. La hora solo aparece cuando la ha anunciado la cadena, en hora peninsular.</li>
-<li>«Grabación completa» solo cuando la cadena o el canal la publican entera; «programa emitido» es el programa tal como se emitió, sin afirmar que la entrevista no esté editada.</li>
+<li>«Grabación completa» solo cuando la cadena o el canal la publican entera; «programa emitido» es el programa tal como se emitió, sin afirmar que la entrevista no esté editada; «fragmento» es un extracto publicado por el medio, con su crónica.</li>
 <li>El contexto resume de qué se habló según la fuente. No valoramos los debates ni decimos quién gana, y lo que se dice en una entrevista no cambia por sí solo las posturas del test: estas salen de programas, votaciones y declaraciones con fuente (<a href="/metodologia/">metodología</a>).</li>
 <li>Los enlaces llevan a la web de cada medio; no incrustamos vídeos para que la página cargue rápido y no comparta datos con terceros.</li><li>Revisamos esta página a diario hasta el 27 de noviembre. El 28 (jornada de reflexión) y el 29 no se actualiza; lo de esos días se añadirá el 30.</li></ul></section>
 ${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
