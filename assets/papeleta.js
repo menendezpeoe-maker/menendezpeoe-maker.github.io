@@ -10,7 +10,7 @@ const PUBLIC_URL = "https://test29n.es/";
 // Aportaciones voluntarias: solo enlaces públicos de pago. Una opción vacía no se muestra.
 // Nunca van aquí datos bancarios, claves ni credenciales: el cobro y su confirmación ocurren en PayPal y Stripe.
 const DONATE = {
-  paypal: "",     // retirado el 7 nov 2026 (decisión del titular); vacío = no se muestra
+  paypal: "",     // retirado el 7 nov 2026; vacío = no se muestra
   applePay: "https://buy.stripe.com/7sYaEYcq8bwS6lL1Kiew800",   // enlace de pago de Stripe con Apple Pay (y tarjeta, que Apple Pay necesita)
   bank: ""        // enlace de pago de Stripe (https://buy.stripe.com/…) con Bizum activado
 };
@@ -707,7 +707,7 @@ function reliability(st, qs, ns, prov, user) {
   checks.push({ ok: !sameWay, txt: !sameWay ? (firm.length >= 12 ? "Tus respuestas combinan acuerdos y desacuerdos, como se espera de un cuestionario con afirmaciones en ambos sentidos." : "Hay pocas afirmaciones con opinión para valorar si respondes siempre en el mismo sentido.") : `Has respondido «${agreeShare >= 0.8 ? "de acuerdo" : "en desacuerdo"}» en el ${Math.round((agreeShare >= 0.8 ? agreeShare : 1 - agreeShare) * 100)} % de las afirmaciones en las que tomas partido, aunque el banco las formula en ambos sentidos. Puede ser una tendencia a responder siempre igual: revisa tus respuestas.` });
   const okN = checks.filter((c) => c.ok).length;
   const level = nAns < 12 || softShare >= 0.6 || sameWay || okN <= checks.length - 3 ? "baja" : okN === checks.length ? "alta" : "media";
-  // Tarea 4 del acuerdo con Codex (13 nov): qué pasaría sin las posturas estimadas. Es solo informativa: no cambia el
+  // 13 nov: qué pasaría sin las posturas estimadas. Es solo informativa: no cambia el
   // resultado ni el nivel de fiabilidad (se añade después de calcularlo). Mismo cálculo, quitando las estimadas.
   if (a && user) {
     const nd = prov.map((m) => matchParty(m.pid, st, qs, user, true)).sort((x, y) => y.score - x.score || y.n - x.n);
@@ -2088,7 +2088,7 @@ function showCopyFallback(text, el) {
 }
 
 // URL que se comparte: la de la propia web cuando se usa desde su dirección pública;
-// desde la vista previa en Claude o en local, la dirección pública configurada.
+// desde una vista previa o en local, la dirección pública configurada.
 const IN_FRAME = (() => { try { return window.self !== window.top; } catch { return true; } })();
 // Cuenta una visita o un paso del test. Solo se envía el nombre del paso, la web de procedencia y el tamaño
 // de pantalla: nunca respuestas, provincia, resultado ni el enlace compartido (#r2…).
