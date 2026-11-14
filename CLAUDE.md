@@ -16,7 +16,7 @@ No vuelvas a analizar lo que ya funciona. Busca con `grep` en vez de leer archiv
 - Privacidad: sin registro ni cookies; el contador no registra respuestas. Responsable público: «Dery». Ningún dato bancario.
 - Los términos privados se leen de la variable `PRIVATE_TERMS`; nunca se escriben en el repositorio.
 - `fuente` es la única fuente de verdad: primero se sube a `fuente` y después se publica en `main` (que solo contiene `dist/`). Nunca se fuerza un push.
-- Commits con `git -c user.name=menendezpeoe-maker -c user.email=menendezpeoe@gmail.com`, sin identificadores de modelo.
+- Commits con la misma identidad (nombre y correo) que el último commit de `fuente` (`git log -1 --format='%an <%ae>' origin/fuente`), sin identificadores de modelo.
 - Guarda el trabajo en `fuente` al terminar cada bloque: el contenedor es temporal y el límite de uso puede cortar la sesión.
 
 ## Comandos

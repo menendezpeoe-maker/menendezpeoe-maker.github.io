@@ -207,7 +207,7 @@ Nota: las páginas estáticas (T9) se generan desde los datos al publicar, así 
 
 ### T8 · Fase 2: justificaciones visibles y confianza
 - **Muestra la justificación** junto a cada postura: en «Tus respuestas», en el explorador, en las páginas de partido y de tema, y en las fichas.
-- **Botón «¿Ves un error?» en cada postura:** un enlace `mailto:` a menendezpeoe@gmail.com con asunto prellenado (pregunta y partido).
+- **Botón «¿Ves un error?» en cada postura:** un enlace `mailto:` a test29n.es@gmail.com con asunto prellenado (pregunta y partido).
 - **Página /correcciones/:** registro público de cambios de posturas con fecha, generado desde los datos y el historial de notas.
 - **Página /sobre/:**
   - Quién lo hace: seudónimo «Dery», nunca el nombre real.

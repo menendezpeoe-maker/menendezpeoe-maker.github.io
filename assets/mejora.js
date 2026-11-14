@@ -29,7 +29,7 @@
      papeleta.js reescribe #q-main en cada pregunta (innerHTML) y después busca #ctx por su id: por eso, justo
      antes de reescribirlo, el panel vuelve a su sitio original y, justo después, se coloca bajo el botón. */
   const qMain = $("#q-main"), ctxBox = $("#ctx"), qGrid = $("#quiz-grid");
-  /* MEJORA (pedida por el titular): al empezar el test y al pasar de pregunta, papeleta.js lleva la página arriba del
+  /* MEJORA: al empezar el test y al pasar de pregunta, papeleta.js lleva la página arriba del
      todo; con la letra más grande, en el móvil las respuestas quedaban cortadas por abajo. Ahora la pregunta y sus
      respuestas (del enunciado a «No lo sé») quedan centradas en la pantalla; si no caben enteras, el enunciado se coloca
      arriba, bajo la barra de progreso cuando está fija (el código y el área de la pregunta quedan justo encima). Sin animación: el salto es tan inmediato como antes. WCAG 2.4.3, 1.4.10. */
@@ -67,7 +67,7 @@
   }
 
   /* ═══ ITERACIÓN 3 ═══════════════════════════════════════════════════════════════════════
-     Textos nuevos de interfaz: solo se muestran los aprobados por el titular (textos-nuevos-ui.md).
+     Textos nuevos de interfaz: solo se muestran los aprobados.
      Un texto vacío ("") significa «pendiente»: la función que lo necesita no aparece. Los elementos añadidos llevan
      data-mejora="texto-nuevo" para distinguirlos de los textos originales en las pruebas. */
   const PROPUESTA = window.__MEJORA_PROPUESTA === true;   // solo para capturas de la propuesta (pruebas), nunca en la entrega
@@ -117,7 +117,7 @@
      Es una región aria-live="polite" que solo cambia en estos casos. Contra la fatiga en el test largo (107 preguntas). */
   autoNote.setAttribute("aria-live", "polite");
   {
-    /* 13 nov (revisión móvil de Codex): el hito se calcula con las respuestas dadas (no con el número de pregunta) y solo
+    /* 13 nov: el hito se calcula con las respuestas dadas (no con el número de pregunta) y solo
        se muestra mientras se está en la pregunta que lo provoca; al cambiar de pregunta se borra, para que un mensaje
        antiguo («Te queda solo un cuarto») no siga visible en la última. En la última pregunta: «Última pregunta». */
     const qc = $("#q-count"), bar = $("#q-prog"); let prev = 0, ht2 = 0, hit = false;
@@ -142,7 +142,7 @@
   const warn = document.createElement("p"); warn.className = "save-warn"; warn.setAttribute("role", "alert"); warn.hidden = true; warn.dataset.mejora = "texto-nuevo";
   warn.textContent = T.noGuardaAviso; if (quizView) quizView.prepend(warn);
   document.addEventListener("save-failed", () => { if (failed) return; failed = true; setAuto(); warn.hidden = false; });
-  /* 5 nov: se quita el cartel «Respuesta guardada» tras cada respuesta (saturaba, a petición del titular). El guardado sigue
+  /* 5 nov: se quita el cartel «Respuesta guardada» tras cada respuesta (saturaba). El guardado sigue
      igual; se mantienen el indicador discreto, el anuncio invisible para el lector de pantalla y el aviso si falla. */
 
   /* MEJORA: interruptor de avance automático (activado por defecto, como la original). Si se desactiva, ni el
@@ -270,7 +270,7 @@
       target.focus({ preventScroll: true });
     });
   }
-  /* MEJORA (rendimiento, pedido por el titular): «Posturas de los partidos» se abría con 1–2 s de retraso en el móvil
+  /* MEJORA (rendimiento): «Posturas de los partidos» se abría con 1–2 s de retraso en el móvil
      porque papeleta.js vuelve a dibujar las 107 preguntas (≈ 12 000 elementos) cada vez que se entra, aunque nada
      haya cambiado. Si el listado nuevo es idéntico al que ya está en pantalla, no se vuelve a dibujar; si cambia
      (filtro de área, partido o búsqueda), se dibuja como siempre. WCAG 2.2.1 (sin esperas innecesarias). */

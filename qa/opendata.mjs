@@ -18,7 +18,7 @@ const pairs = [...idx.text.matchAll(/href="\/comparar\/([a-z]+)-([a-z]+)\/"/g)].
 ok(idx.status === 200 && pairs.length >= 10, `índice /comparar/ con ${pairs.length} parejas`);
 for (const [a, b] of pairs) {
   const r = await get(`comparar/${a}-${b}/`);
-  const both = bank.questions.filter((q) => q.pos[a] && q.pos[b]);
+  const both = bank.questions.filter((q) => q.pos[a] && q.pos[b] && !q.noscore);
   const opp = both.filter((q) => side(q.pos[a]) && side(q.pos[b]) && side(q.pos[a]) !== side(q.pos[b])).length;
   const same = both.filter((q) => q.pos[a] === q.pos[b]).length;
   const okPage = r.status === 200 && (r.text.match(/<h1[\s>]/g) || []).length === 1 && r.text.includes(`Donde chocan (${opp})`) && r.text.includes(`Donde coinciden del todo (${same})`) && r.text.includes(`${both.length} cuestiones`);

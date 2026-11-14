@@ -89,7 +89,7 @@ Trabaja de forma autónoma: implementa, prueba, publica y verifica. Pregúntame 
 
 **Datos personales del titular**
 - El nombre real del titular no puede aparecer en ningún sitio público.
-- Responsable público: «Dery». Contacto público: menendezpeoe@gmail.com.
+- Responsable público: «Dery». Contacto público: test29n.es@gmail.com.
 - Ningún IBAN ni dato bancario en código, interfaz, repositorio ni registros.
 - Ninguna clave secreta en el frontend.
 
@@ -247,7 +247,7 @@ Criterios: el test se empieza en un toque; el resumen cabe en la primera pantall
 Al final de cada fase:
 - Web publicada y verificada en https://test29n.es.
 - Pruebas nuevas o actualizadas.
-- Rama `fuente` y copia en claude.ai actualizadas.
+- Rama `fuente` y copia de trabajo actualizadas.
 - Un resumen breve con:
   - Qué se ha hecho y qué está probado.
   - Qué queda pendiente y por qué.

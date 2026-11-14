@@ -48,7 +48,7 @@ Revisado el 23 oct 2026 (tras publicar T9, parte 1). Resume y enlaza; no repite 
   - primero `fuente` y después `main`;
   - si algo falla, publicar solo lo verificado;
   - una sola conversación trabaja en la web; las demás sesiones solo informan.
-- **[D]** Commits como `menendezpeoe-maker` con `menendezpeoe@gmail.com`, sin identificadores de modelo.
+- **[D]** Commits con la identidad que indica `CLAUDE.md`, sin identificadores de modelo.
 - **[D]** Los términos privados se leen de la variable `PRIVATE_TERMS`; nunca se escriben en el repositorio.
 
 ## 7. Dependencias y ejecución

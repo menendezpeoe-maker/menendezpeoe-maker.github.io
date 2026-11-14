@@ -134,7 +134,7 @@ ${footer}
       return `<section class="sp-area" aria-labelledby="a-${a.id}"><h3 class="h3" id="a-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h3>${knownQs.length ? `<ul class="sp-q">` : ""}${knownQs.map((q) => {
         const v = q.pos[pid], est = q.est.includes(pid);
         return `<li><span class="q-code">${qCode(q)}</span><div><b>${esc(q.text)}</b>${q.type === "dilema" ? `<span class="small muted">A: ${esc(q.A)} · B: ${esc(q.B)}</span>` : ""}
-          <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}</span>${v && whyOf(q, pid) ? `<span class="small">${esc(whyOf(q, pid))}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}${v ? `<span class="small">${errA(q, pid)}</span>` : ""}</div></li>`;
+          <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}${q.noscore ? " · no puntúa en la coincidencia" : ""}</span>${v && whyOf(q, pid) ? `<span class="small">${esc(whyOf(q, pid))}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}${v ? `<span class="small">${errA(q, pid)}</span>` : ""}</div></li>`;
       }).join("")}${knownQs.length ? "</ul>" : ""}${unkQ ? `<p class="small muted sp-unk">${unkQ === qs.length ? "Sin postura conocida en ninguna de las" : "Sin postura conocida en"} ${unkQ} ${unkQ === 1 ? "cuestión" : "cuestiones"}${unkQ === qs.length ? "" : " de esta área"}${unkQ === qs.length ? " de esta área" : ""}. <a href="/temas/${slug(a.name)}/">Ver qué piensan los demás partidos</a>.</p>` : ""}</section>`;
     }).join("");
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
@@ -171,7 +171,7 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
         ${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
   };
 
-  // ── Resumen corto y verificable por tema (móvil primero, 13 nov tras la revisión móvil de Codex): tres filas plegables.
+  // ── Resumen corto y verificable por tema (móvil primero, 13 nov): tres filas plegables.
   // Cada fila resume con recuentos sacados de los datos; al abrirla, nombres completos con enlace a la ficha y a la fuente,
   // separando con el mismo criterio para todas las candidaturas las posturas documentadas, las estimadas y las desconocidas.
   const SUMM = {
@@ -259,7 +259,7 @@ ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="p
   const pairPath = (a, b) => `/comparar/${a}-${b}/`;
   for (const [a, b] of PAIRS) {
     const A = P[a], Bp = P[b], da = pdim(a), db = pdim(b);
-    const both = B.questions.filter((q) => q.pos[a] && q.pos[b]);
+    const both = B.questions.filter((q) => q.pos[a] && q.pos[b] && !q.noscore);  // sin las preguntas que no puntúan (D06), como el motor
     const agree = Math.round(both.reduce((x, q) => x + 1 - Math.abs(q.pos[a] - q.pos[b]) / 4, 0) / (both.length || 1) * 100);
     const same = both.filter((q) => q.pos[a] === q.pos[b]);
     const opp = both.filter((q) => sideOf(q.pos[a]) && sideOf(q.pos[b]) && sideOf(q.pos[a]) !== sideOf(q.pos[b])).sort((x, y) => Math.abs(y.pos[a] - y.pos[b]) - Math.abs(x.pos[a] - x.pos[b]));
@@ -543,7 +543,7 @@ ${cta("O responde el test completo")}`
   });
 
   // ── Confianza (T8): sobre el proyecto y metodología
-  // /correcciones/ ya no es pública (decisión del titular, 28 oct 2026): aviso sin indexar que lleva a /sobre/
+  // /correcciones/ ya no es pública (28 oct 2026): aviso sin indexar que lleva a /sobre/
   mkdirSync(`${OUT}/correcciones`, { recursive: true });
   writeFileSync(`${OUT}/correcciones/index.html`, `${head("Página trasladada · Test 29N", "Esta página se ha trasladado a «Sobre el proyecto» del Test 29N.", `<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/sobre/">\n`, "/")}<body><main class="wrap"><h1>Página trasladada</h1><p><a href="/sobre/">Ir a «Sobre el proyecto»</a></p></main></body></html>\n`);
   page({
@@ -696,7 +696,7 @@ ${latest.length ? `<section aria-labelledby="h-pg-new" class="pg-new"><h2 class=
 <ul class="pg-list" id="pg-all">${[...live.filter((pid) => PROG[pid]), ...live.filter((pid) => !PROG[pid])].map(progRow).join("")}</ul>
 <p class="small" id="pg-none" hidden>Ninguna candidatura coincide. Prueba con la sigla (por ejemplo, PSC o PNV) o quita el filtro de circunscripción.</p>
 <p class="small muted">Por circunscripción se muestran las candidaturas que presentan lista allí según la proclamación definitiva (<a href="${esc(PROGRAMAS.boe.url)}" target="_blank" rel="noopener noreferrer">${esc(PROGRAMAS.boe.label)}</a>). Para ver los escaños y todas las listas, consulta <a href="/provincias/">Mi circunscripción</a>.</p></section>
-<p class="small muted">Solo enlazamos el programa publicado por el propio partido, en su web o en PDF. Los partidos suelen publicarlo en las semanas previas a la campaña (del 13 al 27 de noviembre). Esta página se revisa varias veces por semana hasta el 21 de noviembre.</p>
+<p class="small muted">Solo enlazamos el programa publicado por el propio partido, en su web o en PDF. Los partidos suelen publicarlo en las semanas previas a la campaña (del 13 al 27 de noviembre). Esta página se revisa a diario hasta el 23 de noviembre.</p>
 ${cta("Compara tus ideas con las de cada candidatura")}
 <script src="/programas/programas.js" defer></script>`
   });

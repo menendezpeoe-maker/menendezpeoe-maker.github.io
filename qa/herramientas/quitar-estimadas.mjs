@@ -1,4 +1,4 @@
-import fs from "fs"; import { PARTY_ORDER } from "/home/user/menendezpeoe-maker.github.io/src/partidos.src.mjs";
+import fs from "fs"; import { PARTY_ORDER } from "../../src/partidos.src.mjs";
 const items = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
 const L = fs.readFileSync("src/preguntas.src.mjs", "utf8").split("\n"); let n = 0;
 for (const it of items) {
