@@ -1,6 +1,54 @@
 [
  {
   "fecha": "2026-11-13",
+  "id": "A01",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone reducir progresivamente la jornada laboral hasta las 35 horas semanales sin reducción salarial.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=29",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 29",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "A02",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=26",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 26",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "A03",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una tributación mínima del 3 % sobre patrimonios de más de 50 millones, con un gravamen en el Impuesto de Solidaridad sobre las Grandes Fortunas.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=27",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "A03",
   "partido": "ph",
   "de": 0,
@@ -11,6 +59,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=6",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 6",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "A05",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone profundizar en la cuota de solidaridad y la subida de la base máxima de cotización, eliminando progresivamente el tope, para sostener las pensiones.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=24",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 24",
    "programa",
    "2026-11"
   ]
@@ -34,6 +98,22 @@
  {
   "fecha": "2026-11-13",
   "id": "A08",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N fija como meta mantener el salario mínimo en al menos el 60 % del salario medio entre 2026 y 2030.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=31",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 31",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "A08",
   "partido": "pnv",
   "de": 3,
   "a": 2,
@@ -43,6 +123,54 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=9",
    "Programa electoral de EAJ-PNV de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B01",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone regular los alquileres privados con un alquiler de referencia y limitar el precio según las características y la localización de la vivienda.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=8",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B02",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N prioriza crear un gran parque público de vivienda asequible en alquiler y regular los alquileres privados.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=5",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 5",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B04",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N mantiene la suspensión de desahucios de personas vulnerables y propone compensar a las pequeñas propietarias que dependan de esa renta (p. 9).",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=11",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 11",
    "programa",
    "2026-11"
   ]
@@ -59,6 +187,38 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B07",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un régimen impositivo especial para las personas extranjeras en la compra o el alquiler de viviendas por encima de un precio límite.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=10",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "B08",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone crear un gran parque público de vivienda asequible en alquiler, del 1,1 % al 5 % del parque en 2030.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=5",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 5",
    "programa",
    "2026-11"
   ]
@@ -195,6 +355,22 @@
  {
   "fecha": "2026-11-13",
   "id": "D03",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone que 12 de los 20 vocales del CGPJ, los de procedencia judicial, los elijan directamente jueces y magistrados.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=72",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 72",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D03",
   "partido": "salf",
   "de": 5,
   "a": 4,
@@ -204,6 +380,118 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D05",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimada: su programa del 29N pide medidas que dificulten las «puertas giratorias», sin fijar un plazo de cinco años.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=73",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 73",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "D06",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimada: su programa del 29N propone facilitar el acceso a las Iniciativas Legislativas Populares y simplificar sus requisitos, sin concretar una votación obligatoria en plazo.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=70",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 70",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "E03",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone reformar la Ley de Seguridad Ciudadana (meta: reformada en 2027), no derogarla.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=74",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 74",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "E08",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N defiende la protección frente a la violencia de género y la aplicación de las 461 medidas del Pacto de Estado contra la Violencia de Género.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=78",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 78",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F01",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone vías accesibles y permanentes de regularización de las personas migrantes y prevenir la irregularidad sobrevenida.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F02",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimada: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F04",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone facilitar vías legales y seguras de migración y ampliar las autorizaciones de residencia y trabajo desde los países de origen.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=51",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 51",
    "programa",
    "2026-11"
   ]
@@ -226,6 +514,22 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "F06",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una única prestación universal y progresiva para la infancia a la que tengan derecho todos los hogares con crianza.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=20",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "F07",
   "partido": "jmm",
   "de": 5,
@@ -234,6 +538,22 @@
   "estimada": true,
   "motivo": "",
   "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "F07",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimada: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=33",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 33",
+   "programa",
+   "2026-11"
+  ]
  },
  {
   "fecha": "2026-11-13",
@@ -291,6 +611,38 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "G09",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H01",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone no aumentar el gasto militar estatal y europeo y reorientar esas partidas a necesidades básicas.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=65",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 65",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "H01",
   "partido": "salf",
   "de": 4,
@@ -323,6 +675,22 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "H04",
+  "partido": "mj",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone prohibir la exportación de armas a países en guerra o que vulneren derechos humanos y suspender el Acuerdo de Asociación UE-Israel.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=66",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 66",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "H05",
   "partido": "salf",
   "de": 3,
@@ -333,6 +701,38 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H07",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone cumplir el compromiso del 0,7 % de la renta nacional bruta para la ayuda oficial al desarrollo.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=88",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 88",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "H09",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone poner fin a la externalización de fronteras.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=51",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 51",
    "programa",
    "2026-11"
   ]
@@ -366,6 +766,22 @@
  },
  {
   "fecha": "2026-11-13",
+  "id": "J01",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
   "id": "K04",
   "partido": "upl",
   "de": 5,
@@ -374,6 +790,22 @@
   "estimada": true,
   "motivo": "",
   "fuente": null
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "K05",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone acabar con el hacinamiento en las granjas y apoyar a la ganadería extensiva.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+   "programa",
+   "2026-11"
+  ]
  },
  {
   "fecha": "2026-11-13",
@@ -387,6 +819,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-13",
+  "id": "L02",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide que quien solicite la eutanasia acceda a cuidados paliativos y apoyos «sin retrasar ni condicionar sus derechos»: no propone derogar la ley.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=44",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 44",
    "programa",
    "2026-11"
   ]

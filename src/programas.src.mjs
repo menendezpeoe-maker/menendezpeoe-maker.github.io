@@ -2,9 +2,13 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-11-13",
+  comprobado: "2026-11-14",
   // id de partido → { url, titulo, fecha }   (vacío: aún no publicado)
   publicados: {
+    soria: { url: "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf", titulo: "Programa de Soria ¡Ya! para las generales del 29N de 2026 (una página)", fecha: "2026-11-12" },
+    d21: { url: "https://mi.democracia21.es/programa", titulo: "«La España que merecemos», programa electoral de Democracia 21 para el 29N (versión web, sin fecha impresa; detectado el 14 nov)", fecha: "2026-11" },
+    pacma: { url: "https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf", titulo: "Programa electoral de PACMA para las elecciones generales del 29N de 2026", fecha: "2026-11-12" },
+    falange: { url: "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf", titulo: "Programa electoral de Falange Española de las JONS para las elecciones generales del 29 de noviembre de 2026", fecha: "2026-11-13" },
     mj: { url: "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf", titulo: "Programa electoral de Por un Mundo Más Justo para las generales del 29N de 2026", fecha: "2026-11-07" },
     pp: { url: "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf", titulo: "Programa electoral del PP: «Reconstrucción Nacional»", fecha: "2026-11-10" },
     erc: { url: "https://esquerrarepublicana.cat/documents/e2026-programa.pdf", titulo: "Programa electoral de ERC (Eleccions al Congrés 2026)", fecha: "2026-11-10" },

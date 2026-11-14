@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13",
+ "generado": "2026-11-14",
  "datos": "2026-11-13",
  "preguntas": 107,
  "imitacion": {
@@ -88,7 +88,7 @@
     "pid": "pacma",
     "prov": "madrid",
     "primero": true,
-    "pct": 85
+    "pct": 86
    },
    {
     "pid": "fo",
@@ -142,7 +142,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 88
+    "pct": 89
    },
    {
     "pid": "upc",
@@ -172,7 +172,7 @@
     "pid": "soria",
     "prov": "soria",
     "primero": true,
-    "pct": 72
+    "pct": 73
    },
    {
     "pid": "ph",
@@ -184,7 +184,7 @@
     "pid": "ie",
     "prov": "madrid",
     "primero": true,
-    "pct": 79
+    "pct": 80
    }
   ]
  },
@@ -199,11 +199,11 @@
    },
    {
     "pid": "pp",
-    "n": 70
+    "n": 66
    },
    {
     "pid": "d21",
-    "n": 61
+    "n": 62
    },
    {
     "pid": "fo",
@@ -215,7 +215,7 @@
    },
    {
     "pid": "ph",
-    "n": 8
+    "n": 9
    },
    {
     "pid": "vox",
@@ -234,19 +234,19 @@
     "n": 2
    },
    {
+    "pid": "pacma",
+    "n": 2
+   },
+   {
+    "pid": "ie",
+    "n": 2
+   },
+   {
     "pid": "mj",
     "n": 1
    },
    {
-    "pid": "pacma",
-    "n": 1
-   },
-   {
     "pid": "pod",
-    "n": 1
-   },
-   {
-    "pid": "ie",
     "n": 1
    }
   ],
@@ -264,7 +264,7 @@
   },
   {
    "pid": "pp",
-   "pct": 68
+   "pct": 67
   },
   {
    "pid": "fa",
@@ -361,8 +361,8 @@
   {
    "pid": "pacma",
    "conocidas": 32,
-   "estimadas": 18,
-   "conFuente": 21
+   "estimadas": 14,
+   "conFuente": 22
   },
   {
    "pid": "fo",
@@ -385,7 +385,7 @@
   {
    "pid": "falange",
    "conocidas": 39,
-   "estimadas": 6,
+   "estimadas": 5,
    "conFuente": 39
   },
   {

@@ -287,7 +287,7 @@ export const PARTIES = [
      ["Centralizar sanidad, educación y emergencias.","C03"]] },
  { id: "falange", name: "Falange Española de las JONS", ab: "FE-JONS", color: "#5A1F1F", tag: "Nacionalista · falangista",
    scope: { provinces: ["castellon", "cordoba", "guadalajara", "madrid", "palencia", "teruel", "toledo", "valencia", "valladolid"] },
-   desc: "Partido falangista. En su programa de 2023 propone disolver las autonomías, nacionalizar la energía, salir de la UE y de la OTAN, un Estado confesional católico y repatriar a los extranjeros sin contrato de trabajo.",
+   desc: "Partido falangista. En su programa del 29N propone un «plan de remigración» con la expulsión de los inmigrantes ilegales y de los legales con antecedentes penales o en paro, disolver las comunidades autónomas, nacionalizar la energía y la banca, salir del euro y de la OTAN, una salida escalonada y pactada de la UE y que el Estado reconozca la religión católica.",
    props: [["Disolver las comunidades autónomas.","C01"],
      ["Nacionalizar la energía.","G05"],
      ["Salida escalonada y pactada de la UE.","H02"],
