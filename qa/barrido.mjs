@@ -1,4 +1,4 @@
-// Barrido de coherencia con los programas del 29N (pedido por el titular el 13 nov 2026).
+// Barrido de coherencia con los programas del 29N (13 nov 2026).
 // Informe, no prueba: lista lo que puede haber quedado viejo cuando entra un programa nuevo, para revisarlo a mano
 // con las reglas de siempre (regla 8: pasaje, página y alcance; lo dudoso no se aplica). Ver plan/BARRIDO.md.
 // Uso: node qa/barrido.mjs [pid…]   (sin argumentos: todas las candidaturas con programa publicado)

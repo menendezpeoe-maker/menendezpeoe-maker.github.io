@@ -1,4 +1,4 @@
-// Recorrido móvil completo (390 y 360 px) y pasada en escritorio, tras la revisión móvil de Codex del 13 nov: portada en un toque,
+// Recorrido móvil completo (390 y 360 px) y pasada en escritorio: portada en un toque,
 // guardar y salir, continuar en un toque, hitos de progreso hasta el final, Bizkaia, prioridad Vivienda, comparar y resumen de vivienda.
 // Uso: NODE_PATH=$(npm root -g) node qa/recorrido.mjs   (servidores :8765 y :8766; BASE y VIV para la web real)
 import { createRequire } from "module";

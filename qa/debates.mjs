@@ -1,4 +1,4 @@
-// /debates/ (14 nov, OK del titular): agenda por fecha y archivo de emitidos en orden inverso, con rótulos Debate/Entrevista,
+// /debates/ (14 nov): agenda por fecha y archivo de emitidos en orden inverso, con rótulos Debate/Entrevista,
 // estado Confirmado/Propuesta/Emitido, etiqueta de grabación y botón «Ver grabación»/«Escuchar», fuente y fecha de comprobación.
 // Datos (sin navegador): fichas completas, ids únicos, sin duplicados (misma fecha y mismo título o URL), hora HH:MM, emitidos con
 // grabación, sin valoraciones. Página (360, 390 y 1280): orden, botones, enlaces externos en otra pestaña, sin desbordar, contraste.

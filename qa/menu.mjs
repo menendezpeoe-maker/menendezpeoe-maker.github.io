@@ -1,4 +1,4 @@
-// Menú único y /programas/ (14 nov, acordado con el titular a partir de la tabla de Codex): mismas secciones en la portada
+// Menú único y /programas/ (14 nov): mismas secciones en la portada
 // y en las interiores, con «Comparar» y «Mi circunscripción» visibles en móvil; en /programas/, búsqueda por nombre o sigla,
 // filtro por circunscripción, «Últimas incorporaciones», dos botones separados y el mismo contador que la portada.
 // Uso: NODE_PATH=$(npm root -g) node qa/menu.mjs   (servidores :8765 y :8766; BASE para la web real)
@@ -65,6 +65,18 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/programas-${w}.png` });
   await page.goto(PROG + "?circ=madrid"); await page.waitForSelector("#pg-tools:not([hidden])");
   ok(await page.inputValue("#pg-prov") === "madrid" && (await vis()).includes("Democracia 21"), "?circ=madrid abre ya filtrado");
+  // «Volver arriba» en una página estática larga: oculto arriba, visible al bajar, sin tapar el menú, y vuelve al principio
+  await page.goto(new URL("partidos/pp/", SP).href); await page.waitForTimeout(150);
+  ok(!(await page.locator("a.to-top.on").count()), "«Volver arriba» oculto al cargar");
+  await page.evaluate(() => scrollTo(0, innerHeight * 3)); await page.waitForTimeout(400);
+  const tt = await page.locator("a.to-top.on").boundingBox();
+  ok(tt && tt.height >= 44 && tt.x + tt.width <= w && tt.y + tt.height <= h, `«Volver arriba» visible al bajar, ≥ 44 px y dentro de la pantalla (${w})`);
+  await page.click("a.to-top.on"); await page.waitForTimeout(900);
+  ok(await page.evaluate(() => scrollY) < 5 && await page.evaluate(() => document.activeElement?.id) === "main", "«Volver arriba» lleva al principio y deja el foco en el contenido");
+  // Ninguna plantilla estática ensancha la página (una tabla ancha se desplaza dentro de su caja)
+  for (const u of ["metodologia/", "partidos/pp/", "temas/vivienda-y-urbanismo/", "preguntas/b08/", "comparar/psoe-pp/", "provincias/bizkaia/", "prensa/", "glosario/", "calendario/", "escanos/", "datos/", "sobre/", "debates/"]) {
+    await page.goto(new URL(u, SP).href); ok(!(await overflow(page)), `sin desborde lateral en /${u} (${w})`);
+  }
   await ctx.close();
 }
 await browser.close();

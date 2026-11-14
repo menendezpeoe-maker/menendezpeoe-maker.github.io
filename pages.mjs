@@ -36,7 +36,7 @@ const textOn = (hex) => {
   return (L + 0.05) / 0.0559 >= 1.05 / (L + 0.05) ? "#111318" : "#FFFFFF";
 };
 
-export function buildPages({ OUT, SITE, head, statsJs, owner }) {
+export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
   const B = JSON.parse(readFileSync("data/preguntas.json", "utf8"));
   // Posturas con enlace: documentadas con su fuente, o estimadas con un enlace solo de referencia (inferencia; no cuentan como evidencia). Mismo corte en prensa, datos, metodología y partidos.
   const SRCX = { dir: 0, inf: 0 };
@@ -87,7 +87,8 @@ export function buildPages({ OUT, SITE, head, statsJs, owner }) {
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
   <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/debates/">Debates</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
-${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}`;
+${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
+<script src="/assets/arriba.js?v=${arribaJs}" defer></script>`;
   const cta = (t) => `<aside class="cta-box" aria-label="${t}"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
   const method = `<p class="small muted">Las posturas se asignan de 1 a 5 a partir de programas electorales, votaciones en las Cortes, decisiones de gobierno y declaraciones públicas. <b>Documentada</b>: hay evidencia explícita. <b>Estimada</b>: se deduce de su línea general y se marca siempre. Si no conocemos la postura de un partido, no se le asigna ninguna. Datos actualizados el ${esc(updated)}.</p>`;
   // Menú: marca la sección actual (aria-current) igual que en la portada; las subpáginas cuentan como su sección
@@ -131,11 +132,12 @@ ${footer}
       const qs = B.questions.filter((q) => q.area === a.id);
       // Solo se detallan las posturas conocidas; las cuestiones sin postura se resumen en una línea (cada una está en su página de pregunta)
       const unkQ = qs.filter((q) => !q.pos[pid]).length, knownQs = qs.filter((q) => q.pos[pid]);
-      return `<section class="sp-area" aria-labelledby="a-${a.id}"><h3 class="h3" id="a-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h3>${knownQs.length ? `<ul class="sp-q">` : ""}${knownQs.map((q) => {
+      const nDoc = knownQs.filter((q) => !q.est.includes(pid)).length;
+      return `<details class="sp-area" id="a-${a.id}"><summary><span class="sp-area-t"><span class="sp-area-l">${esc(a.letter)}</span>${esc(a.name)}</span><span class="sp-area-n">${knownQs.length ? `<span><b>${knownQs.length}</b> ${knownQs.length === 1 ? "postura" : "posturas"}</span><small>${nDoc} documentada${nDoc === 1 ? "" : "s"}</small>` : "sin posturas"}</span></summary><div class="sp-area-b"><p class="small"><a href="/temas/${slug(a.name)}/">Ver qué piensa cada partido sobre ${esc(a.name.toLowerCase())}</a></p>${knownQs.length ? `<ul class="sp-q">` : ""}${knownQs.map((q) => {
         const v = q.pos[pid], est = q.est.includes(pid);
         return `<li><span class="q-code">${qCode(q)}</span><div><b>${esc(q.text)}</b>${q.type === "dilema" ? `<span class="small muted">A: ${esc(q.A)} · B: ${esc(q.B)}</span>` : ""}
           <span class="sp-pos${v ? (est ? " est" : "") : " na"}">${v ? `${esc(posText(q, v))} · ${est ? "estimada" : "documentada"}` : "Sin postura conocida"}${q.noscore ? " · no puntúa en la coincidencia" : ""}</span>${v && whyOf(q, pid) ? `<span class="small">${esc(whyOf(q, pid))}</span>` : ""}${q.src?.[pid] ? `<span class="small">Fuente: ${srcHTML(q, pid)}</span>` : ""}${v ? `<span class="small">${errA(q, pid)}</span>` : ""}</div></li>`;
-      }).join("")}${knownQs.length ? "</ul>" : ""}${unkQ ? `<p class="small muted sp-unk">${unkQ === qs.length ? "Sin postura conocida en ninguna de las" : "Sin postura conocida en"} ${unkQ} ${unkQ === 1 ? "cuestión" : "cuestiones"}${unkQ === qs.length ? "" : " de esta área"}${unkQ === qs.length ? " de esta área" : ""}. <a href="/temas/${slug(a.name)}/">Ver qué piensan los demás partidos</a>.</p>` : ""}</section>`;
+      }).join("")}${knownQs.length ? "</ul>" : ""}${unkQ ? `<p class="small muted sp-unk">${unkQ === qs.length ? "Sin postura conocida en ninguna de las" : "Sin postura conocida en"} ${unkQ} ${unkQ === 1 ? "cuestión" : "cuestiones"}${unkQ === qs.length ? "" : " de esta área"}${unkQ === qs.length ? " de esta área" : ""}. <a href="/temas/${slug(a.name)}/">Ver qué piensan los demás partidos</a>.</p>` : ""}</div></details>`;
     }).join("");
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
     page({
@@ -149,7 +151,7 @@ ${footer}
 ${p.out ? "" : cta(`¿Cuánto coincides con ${esc(p.ab)}?`)}
 <section aria-labelledby="h-props"><h2 class="h2" id="h-props">Propuestas destacadas</h2><ul class="dots">${p.props.map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></section>
 <section aria-labelledby="h-dims"><h2 class="h2" id="h-dims">Su posición en siete dimensiones</h2><p class="small muted">Media de sus posturas en las preguntas de cada dimensión, de −100 a +100. Las estimadas pesan menos.</p><div class="sp-dims">${dimRows}</div></section>
-<section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Sus posturas, pregunta a pregunta</h2>${method}${areas}</section>
+<section aria-labelledby="h-pos"><h2 class="h2" id="h-pos">Sus posturas, pregunta a pregunta</h2>${method}<p class="small muted sp-area-hint">Abre un tema para ver cada postura, por qué y su fuente.</p><div class="sp-areas">${areas}</div></section>
 ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
 <p class="small muted">Otras candidaturas: ${others}</p>`
     });
@@ -167,7 +169,7 @@ ${p.out ? "" : cta(`Compara tus respuestas con las de ${esc(p.ab)}`)}
         ${q.noscore ? `<p class="unk"><b>No puntúa en la coincidencia.</b> ${esc(q.noscore)} <a href="/metodologia/#h-lim">Metodología</a>.</p>` : ""}
         <div class="pos5">${cols}</div>
         ${whyRows.length ? `<details class="why-box"><summary>Por qué piensa así cada partido (${whyRows.length})</summary><ul class="pos-notes">${whyRows.map((pid) => `<li><b>${esc(P[pid].ab)}${q.est.includes(pid) ? " · estimada" : ""}:</b> ${esc(whyOf(q, pid))} <span class="small">${errA(q, pid)}</span></li>`).join("")}</ul></details>` : ""}
-        ${srcs.length ? `<p class="unk">Fuentes: ${srcs.map(([pid]) => `${esc(P[pid].ab)} · ${srcHTML(q, pid)}`).join(" · ")}.</p>` : ""}
+        ${srcs.length ? `<details class="why-box src-box"${link ? "" : " open"}><summary>Fuentes (${srcs.length})</summary><ul class="src-list">${srcs.map(([pid]) => `<li><b>${esc(P[pid].ab)}:</b> ${srcHTML(q, pid)}</li>`).join("")}</ul></details>` : ""}
         ${unk.length ? `<p class="unk">Sin postura conocida: ${unk.map((pid) => esc(P[pid].ab)).join(", ")}.</p>` : ""}</article>`;
   };
 
@@ -216,6 +218,7 @@ ${S.items.map(row).join("")}
 ${summBox(a.id)}
 <p>Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p>` : `<p class="lede">Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p></header>
 ${cta("¿Y tú qué piensas?")}`}
+<nav class="q-index" aria-label="Preguntas de este tema"><p class="label">${qs.length} preguntas en esta página</p><ol>${qs.map((q) => `<li><a href="#${q.id}"><span class="q-code">${qCode(q)}</span>${esc(q.short)}</a></li>`).join("")}</ol></nav>
 ${method}<p class="small muted">Las etiquetas con borde discontinuo y en cursiva son posturas estimadas. Toca un partido para ver todas sus posturas.</p>
 ${items}
 ${cta("Descubre con qué candidatura coincides más")}

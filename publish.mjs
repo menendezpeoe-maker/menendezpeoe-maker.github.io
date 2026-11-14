@@ -34,6 +34,7 @@ if (STATS_CODE && !/^[a-z0-9][a-z0-9-]{1,48}$/.test(STATS_CODE)) throw new Error
 console.log(`Contador de visitas: ${STATS_CODE ? `https://${STATS_CODE}.goatcounter.com` : "desactivado"}`);
 writeFileSync(`${OUT}/assets/papeleta.js`, js);
 copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
+copyFileSync("assets/arriba.js", `${OUT}/assets/arriba.js`);
 // Mejoras de accesibilidad y uso (rama version-mejorada, aprobadas el 31 oct): solo en la página del test
 // Se publican sin los comentarios (cada mejora explica su motivo y su criterio WCAG en el archivo fuente): pesan casi la mitad
 writeFileSync(`${OUT}/assets/mejora.css`, readFileSync("assets/mejora.css", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").replace(/\s*([{};])\s*/g, "$1").trim());
@@ -58,7 +59,7 @@ for (const f of readdirSync("assets/fonts")) copyFileSync(`assets/fonts/${f}`, `
 const FONT_MAIN = readdirSync("assets/fonts").find((f) => f.startsWith("Archivo-normal-latin-") && !f.includes("ext"));
 // Contador para las páginas estáticas (partidos, temas, prensa): mismo criterio que el test, solo la ruta visitada
 if (STATS_CODE) writeFileSync(`${OUT}/assets/stats.js`, `(()=>{try{if(navigator.webdriver||window.self!==window.top||location.hostname!==${JSON.stringify(new URL(SITE).hostname)})return;var send=function(p,t,e,r){var q=new URLSearchParams({p:p,t:t,s:screen.width+","+screen.height+","+(window.devicePixelRatio||1),rnd:Math.random().toString(36).slice(2,8)});if(e)q.set("e","true");else if(r)q.set("r",r);var i=new Image();i.referrerPolicy="origin";i.src="https://${STATS_CODE}.goatcounter.com/count?"+q};var m=/[?&](?:ref|utm_source)=([a-z0-9_.-]{1,40})(?:&|$|#)/i.exec(location.search);var r=m?m[1].toLowerCase():(document.referrer&&document.referrer.indexOf(location.origin)!==0?document.referrer.split(/[?#]/)[0]:"");send(location.pathname,document.title,false,r);document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a.btn-primary[href='/']");if(!a)return;var s=location.pathname.split("/")[1]||"inicio";send("cta-"+s,"Clic en Hacer el test desde /"+s+"/",true)})}catch(e){}})();\n`);
-const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`), stats: STATS_CODE ? hash(`${OUT}/assets/stats.js`) : "", mcss: hash(`${OUT}/assets/mejora.css`), mjs: hash(`${OUT}/assets/mejora.js`) };
+const v = { fonts: hash(`${OUT}/assets/fonts.css`), css: hash(`${OUT}/assets/papeleta.css`), js: hash(`${OUT}/assets/papeleta.js`), stats: STATS_CODE ? hash(`${OUT}/assets/stats.js`) : "", mcss: hash(`${OUT}/assets/mejora.css`), mjs: hash(`${OUT}/assets/mejora.js`), arriba: hash(`${OUT}/assets/arriba.js`) };
 const OWNER_M = /const OWNER = \{ name: "([^"]*)", email: "([^"]*)" \}/.exec(js);
 
 // El cuerpo es el mismo que el del artefacto; se quitan sus etiquetas de cabecera
@@ -171,7 +172,7 @@ writeFileSync(`${OUT}/404.html`, `${head("Página no encontrada · Test 29N", "L
 writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: "Test 29N", short_name: "Test 29N", lang: "es", start_url: SITE, scope: SITE, display: "standalone", background_color: "#F2F3EE", theme_color: "#111318", icons: [{ src: `${SITE}icon-512.png`, sizes: "512x512", type: "image/png" }, { src: `${SITE}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 1));
 writeFileSync(`${OUT}/robots.txt`, `User-agent: *\nAllow: /\nSitemap: ${SITE}sitemap.xml\n`);
 // Páginas estáticas por candidatura, por tema y de prensa (pages.mjs), con los mismos datos que el test
-const pages = buildPages({ OUT, SITE, head, statsJs: v.stats, owner: OWNER_M ? { name: OWNER_M[1], email: OWNER_M[2] } : null });
+const pages = buildPages({ OUT, SITE, head, statsJs: v.stats, arribaJs: v.arriba, owner: OWNER_M ? { name: OWNER_M[1], email: OWNER_M[2] } : null });
 // Fecha de última modificación real de cada página (sitemap): solo cambia cuando cambia su contenido.
 // Se guarda en src/lastmod.json (ruta → [huella, fecha]); hay que hacer commit de ese archivo tras publicar.
 const LM_FILE = "src/lastmod.json", today = new Date().toISOString().slice(0, 10);
