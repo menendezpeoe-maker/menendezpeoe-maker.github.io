@@ -2404,7 +2404,7 @@
     "bildu": 5,
     "upn": 3,
     "gbai": 4,
-    "bng": 5,
+    "bng": 4,
     "ccpc": 4,
     "upc": 5,
     "drago": 5,
@@ -2420,7 +2420,6 @@
     "junts",
     "upn",
     "gbai",
-    "bng",
     "cha",
     "existe",
     "fo"
@@ -2521,6 +2520,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+     "Programa electoral del BNG de 2026, p. 12",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2539,7 +2544,8 @@
     "vox": "Vox propone regular las viviendas de uso turístico y reforzar la inspección, pero no plantea que los ayuntamientos puedan prohibir nuevos pisos turísticos.",
     "pp": "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos.",
     "fo": "Estimación: el programa propone medidas que detengan el auge de los pisos turísticos y la gentrificación, sin precisar que lo decidan los ayuntamientos.",
-    "salf": "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones»."
+    "salf": "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones».",
+    "bng": "Su programa del 29N pide mecanismos eficaces para frenar la salida de vivienda habitual hacia el alquiler de temporada, por habitaciones y turístico."
    }
   },
   {
@@ -8114,7 +8120,7 @@
     "pnv": 2,
     "bildu": 3,
     "upn": 3,
-    "bng": 3,
+    "bng": 4,
     "ccpc": 3,
     "upc": 3,
     "drago": 4,
@@ -8136,7 +8142,6 @@
     "junts",
     "pnv",
     "upn",
-    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -8237,6 +8242,12 @@
      "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55",
+     "Programa electoral del BNG de 2026, p. 55",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8253,7 +8264,8 @@
     "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
     "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
     "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
-    "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares."
+    "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
+    "bng": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio."
    }
   },
   {
@@ -14301,7 +14313,6 @@
     "junts",
     "pnv",
     "upn",
-    "bng",
     "upc",
     "drago",
     "comp",
@@ -14382,6 +14393,12 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 18",
      "programa",
      "2023-07"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=26",
+     "Programa electoral del BNG de 2026, p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14397,7 +14414,8 @@
     "pcte": "Propone prohibir la prostitución y seguir considerando ilegal la gestación subrogada.",
     "fo": "Propone la prohibición y persecución de la gestación subrogada (vientres de alquiler) a nivel nacional e internacional.",
     "cha": "Estimación: su programa propone mantener la situación legal actual de la «maternidad subrogada», es decir, los contratos siguen siendo nulos.",
-    "existe": "Su programa de 2023 expresa «Rechazo a la gestación subrogada»."
+    "existe": "Su programa de 2023 expresa «Rechazo a la gestación subrogada».",
+    "bng": "Su programa del 29N expresa una oposición firme a cualquier intento de legalizar o regular los vientres de alquiler."
    }
   },
   {
