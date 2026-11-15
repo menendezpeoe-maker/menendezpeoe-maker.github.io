@@ -161,6 +161,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "E01",
+  "partido": "bng",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide derogar la prisión permanente revisable y prima la reinserción; no trata la multirreincidencia.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+   "Programa electoral del BNG de 2026, p. 30",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "E08",
   "partido": "fo",
   "de": 0,
@@ -267,6 +283,22 @@
   "fuente": [
    "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61",
    "Programa electoral de Vox de 2026 («Es sentido común»), p. 61",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G08",
+  "partido": "bng",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide incentivos fiscales al uso y aprovechamiento multifuncional del monte; no habla de flexibilizar espacios protegidos.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=69",
+   "Programa electoral del BNG de 2026, p. 69",
    "programa",
    "2026-11"
   ]
