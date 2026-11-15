@@ -23,7 +23,8 @@ for (const w of [390, 1280]) {
   await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), st); await page.reload(); await page.waitForSelector("#r-summary .tm-name");
   const v0 = await visible(page);
   ok(v0.includes("r-summary") && v0.includes("r-tiles") && !v0.includes("r-portrait") && !v0.includes("r-parties"), `al terminar solo se ve el resumen y las tarjetas (${w} px)`);
-  ok((await page.locator("#r-tiles .rt-tiles a").count()) === 13, "hay una tarjeta por cada una de las otras 13 secciones");
+  ok((await page.locator("#r-tiles .rt-tiles a").count()) === 12, "hay una fila por cada sección (menos el resumen y «Compartir», que tiene botón propio)");
+  ok((await page.locator("#r-tiles details.rt-g").count()) === 3 && await page.locator("#r-tiles details.rt-g").first().evaluate((d) => d.open), "tres desplegables, el primero abierto");
   await page.click("#nav-btn");
   const names = await page.$$eval("#nav-panel a span:last-child", (x) => x.map((e) => e.textContent.trim()));
   ok(JSON.stringify(names) === JSON.stringify(NAMES), "el menú usa los nombres nuevos, en este orden");
@@ -37,9 +38,11 @@ for (const w of [390, 1280]) {
   }
   // Abrir una tarjeta desde abajo: la sección se abre desde arriba (no donde estaba la tarjeta) y se puede cerrar
   await page.click('#nav-btn'); await page.click('#nav-panel a[data-sec="r-summary"]'); await page.waitForTimeout(300);
-  await page.locator("#r-tiles .rt-tiles a").last().scrollIntoViewIfNeeded();
+  const pg = page.locator("#r-tiles details.rt-g").nth(1);
+  if (!(await pg.evaluate((d) => d.open))) { await pg.locator("summary").click(); await page.waitForTimeout(200); }
+  await page.locator('#r-tiles a[data-sec="r-pols"]').scrollIntoViewIfNeeded();
   const before = await page.evaluate(() => scrollY);
-  await page.locator("#r-tiles .rt-tiles a").last().click(); await page.waitForTimeout(900);
+  await page.locator('#r-tiles a[data-sec="r-pols"]').click(); await page.waitForTimeout(900);
   const topY = await page.evaluate(() => ({ y: scrollY, h: document.querySelector("#r-pols h2").getBoundingClientRect().top, vh: innerHeight }));
   ok(before > 300 && topY.y < before && topY.h >= 0 && topY.h < topY.vh * 0.6, `al abrir una sección desde las tarjetas se ve desde su principio (${w} px)`);
   ok(await page.isVisible("#rt-top .rt-x") && await page.isVisible("#rt-top .rt-back"), "cada sección tiene «Volver al resultado» y «Cerrar» arriba");

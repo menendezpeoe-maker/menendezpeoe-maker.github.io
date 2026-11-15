@@ -983,3 +983,57 @@ html.rt-all #v-results .rt #r-versus:not([hidden]) { display: grid; }
 .prog-res-list li{display:flex;align-items:center;gap:10px;min-width:0}
 .prog-res-list li>span{min-width:0;overflow-wrap:anywhere}
 .prog-res a{color:var(--ink);text-underline-offset:3px}
+
+/* ═══ Rediseño de resultados (14 nov, maqueta aprobada por el titular) ═══════════════════ */
+/* Lo principal arriba: ranking de 5 junto a la mayor coincidencia también en el móvil, con la solidez al lado del
+   porcentaje. Botones sin repetir (Compartir, Reta a un amigo y Afinar; Repetir, PDF y método como enlaces). En el
+   móvil, Compartir y Afinar van en una barra fija abajo. Las 13 tarjetas pasan a tres desplegables. Mismos datos. */
+.rank5.r5-side { display: grid; }
+.rank5.r5-main { display: none; }
+.sum-body .top-match .rel { justify-self: start; }
+.tm-none { margin: 2px 0 0; }
+.btn-mark { background: var(--mark); color: var(--mark-ink); border-color: var(--mark); }
+.btn-mark:hover { border-color: var(--ink); }
+#v-results .sum-main .res-actions .btn { flex-direction: row; min-height: 50px; padding: 6px 14px; gap: 8px; }
+#v-results .sum-main .res-actions .btn-mark::before { display: none; }
+.sum-main .res-actions [data-act="more"] { grid-column: 1 / -1; }
+.sum-main .res-actions [href="#r-share"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.sum-main .res-actions [data-act="challenge"] { background: var(--sheet); color: var(--ink); border: 2px solid var(--ink); }
+.sum-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 16px; }
+.sum-links .print-btn { padding: 6px 0; }
+.sum-links .link-btn { min-height: 44px; }
+.rt-sticky { display: none; }
+#v-results .rt.at-sum .rt-keep { display: none; }
+@media (max-width: 899px) {
+  .sum-main .res-actions { grid-template-columns: minmax(0, 1fr); max-width: none; }
+  #v-results .sum-main .res-actions [href="#r-share"], #v-results .sum-main .res-actions [data-act="more"] { display: none; }
+  .rt-sticky { position: fixed; z-index: 25; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px;
+    padding: 10px max(12px, env(safe-area-inset-right, 0px)) max(10px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+    background: color-mix(in srgb, var(--paper) 94%, transparent); border-top: 1px solid var(--rule); backdrop-filter: blur(6px); }
+  .rt-sticky .btn { min-height: 48px; padding: 4px 10px; font-size: 15px; line-height: 1.2; text-align: center; white-space: normal; }
+  #v-results:has(.rt-sticky) { padding-bottom: 84px; }
+  #v-results .rt:has(.rt-sticky) .rt-keep { display: none; }
+  body:has(#v-results:not([hidden]) .rt-sticky) .to-top { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+}
+/* Tres desplegables en lugar de tarjetas */
+#r-tiles .rt-h { font-size: clamp(22px, 3vw, 28px); }
+.rt-groups { display: grid; gap: 12px; align-items: start; }
+@media (min-width: 900px) { .rt-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; } }
+.rt-g { border: 1.5px solid var(--rule); border-radius: var(--ds-r-2, 14px); background: var(--sheet); }
+.rt-g > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) 30px; gap: 2px 12px; align-items: center; min-height: var(--touch-min); padding: 14px 16px; border-radius: inherit; }
+.rt-g > summary::-webkit-details-marker { display: none; }
+.rt-g > summary b { font-family: var(--f-disp); font-weight: 800; font-size: 17px; line-height: 1.25; }
+.rt-g > summary span { grid-column: 1; font-size: 13.5px; line-height: 1.35; color: var(--ink-3); }
+.rt-g > summary::after { content: "+"; grid-column: 2; grid-row: 1 / span 2; width: 30px; height: 30px; display: grid; place-items: center; border: 1.5px solid var(--ink); border-radius: 50%; font: 700 18px/1 var(--f-ui); }
+.rt-g[open] > summary::after { content: "–"; }
+.rt-g > summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+#r-tiles .rt-g .rt-tiles { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; padding: 0 16px 8px; }
+#r-tiles .rt-g .rt-tiles li { border-top: 1px solid var(--rule-2); }
+#r-tiles .rt-g .rt-tiles a { display: grid; grid-template-columns: 28px minmax(0, 1fr) 14px; align-items: center; gap: 12px; min-height: 52px; height: auto; padding: 8px 0; border: 0; border-radius: 0; background: none; box-shadow: none; transform: none; color: var(--ink); text-decoration: none; }
+#r-tiles .rt-g .rt-tiles a::after { content: "›"; font-size: 20px; line-height: 1; color: var(--ink-3); }
+#r-tiles .rt-g .rt-tiles a:hover b { text-decoration: underline; text-decoration-color: var(--mark); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+#r-tiles .rt-g .rt-tiles a > span:not(.rt-i) { display: none; }
+#r-tiles .rt-g .rt-i { width: 28px; height: 28px; border-radius: 8px; }
+#r-tiles .rt-g .rt-i svg { width: 17px; height: 17px; }
+#r-tiles .rt-g .rt-tiles b { font-size: 15.5px; font-weight: 700; }
+@media print { .rt-sticky, .sum-links { display: none !important; } }

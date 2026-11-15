@@ -896,18 +896,27 @@ function showSection(id, opts = {}) {
   if (!rtList().some((m) => m.id === id)) return null;
   RT_CUR = id;
   $$("#v-results .res-sec[id]").forEach((x) => x.classList.toggle("on", rtOn(x.id.replace(/^r-/, ""), id)));
+  $("#v-results .rt")?.classList.toggle("at-sum", id === "summary");
   rtSyncNav(); rtSyncFoot(); rtSyncTop();
   const t = $("#r-" + id);
   if (opts.scroll !== false) { const root = $("#v-results"); window.scrollTo({ top: Math.max(0, root.getBoundingClientRect().top + scrollY), behavior: reduceMotion() ? "auto" : "smooth" }); }
   if (opts.focus !== false && t) { const h = t.querySelector("h1, h2"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); } }
   return t;
 }
-// Entrada visual a todas las secciones, bajo el resumen
+// Entrada a las demás secciones, bajo el resumen (rediseño 14 nov, maqueta aprobada por el titular): tres desplegables
+// con filas en lugar de 13 tarjetas. En escritorio salen abiertos; en el móvil, solo el primero. Mismas secciones y enlaces.
+const TILE_GROUPS = [
+  { t: "Entiende tu resultado", ids: ["portrait", "dims", "areas", "traits"] },
+  { t: "Compárate", ids: ["parties", "versus", "map", "least", "pols"] },
+  { t: "Fiabilidad y método", ids: ["solid", "how", "review"] }
+];
 function renderTiles() {
   const box = $("#r-tiles"); if (!box) return;
-  box.innerHTML = `<div class="sec-head"><p class="label">Explora tu resultado</p><h2 id="tiles-h" class="h2">Todo sobre tus respuestas, por secciones</h2>
-    <p class="sub">Toca una sección. También puedes cambiar desde el menú «Secciones», arriba a la derecha.</p></div>
-    <ul class="rt-tiles">${rtList().filter((m) => m.id !== "summary").map((m, k) => `<li style="--k:${k}"><a href="#r-${m.id}" data-sec="r-${m.id}"><span class="rt-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><b>${m.label}</b><span>${m.desc}</span></a></li>`).join("")}</ul>`;
+  const wide = matchMedia("(min-width: 900px)").matches, list = rtList();
+  box.innerHTML = `<div class="sec-head"><p class="label">Explora tu resultado</p><h2 id="tiles-h" class="h2 rt-h">Todo sobre tus respuestas</h2></div>
+    <div class="rt-groups">${TILE_GROUPS.map((g, gi) => { const ms = g.ids.map((id) => list.find((m) => m.id === id)).filter(Boolean);
+      return `<details class="rt-g"${wide || gi === 0 ? " open" : ""}><summary><b>${g.t}</b><span>${ms.map((m) => m.label).join(", ")}</span></summary>
+      <ul class="rt-tiles">${ms.map((m) => `<li><a href="#r-${m.id}" data-sec="r-${m.id}"><span class="rt-i"><svg viewBox="0 0 20 20" aria-hidden="true">${NAV_ICON[m.id]}</svg></span><b>${m.label}</b><span>${m.desc}</span></a></li>`).join("")}</ul></details>`; }).join("")}</div>`;
 }
 let NAV_OBS = null, NAV_RAF = 0;
 function bindResNav() {
@@ -964,6 +973,7 @@ function renderResults() {
       <section id="r-support" class="res-sec" aria-labelledby="support-h"></section>
       </div>
       <div class="rt-foot" id="rt-foot"></div>
+      ${!SHARED ? `<div class="rt-sticky" aria-label="Acciones rápidas"><a class="btn btn-primary" href="#r-share">Compartir</a>${next ? `<button type="button" class="btn btn-mark" data-act="more">Afinar · ${buildOrder(next, st.seed).length} preguntas</button>` : '<button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button>'}</div>` : ""}
       <section class="res-sec rt-keep" aria-label="Siguientes pasos">
         <div class="res-actions">
           ${!SHARED && next ? `<button type="button" class="btn btn-primary" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}
@@ -1234,7 +1244,7 @@ function rank5(M, st, where) {
   return `<div class="rank5 r5-${where}"><p class="subh" id="r5-h-${where}">Coincidencia con cada candidatura</p><ol aria-labelledby="r5-h-${where}">${rows}</ol>${vs}${M.prov.length > 5 ? `<a class="link-btn r5-all" href="#r-parties">Ver las ${M.prov.length} candidaturas de ${esc(PROV[st.prov].name)}</a>` : ""}</div>`;
 }
 function renderSummary() {
-  const st = ST(), M = MODEL, pr = PROV[st.prov], top = M.prov[0];
+  const st = ST(), M = MODEL, pr = PROV[st.prov], top = M.prov[0], next = NEXT_MODE[st.mode] || null;
   const ps = profileSentence(M);
   const sig = BANK.dims.map((d) => {
     const o = M.user.dims[d.id];
@@ -1256,9 +1266,9 @@ function renderSummary() {
           <p class="label">${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}</p>
           ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
           <p class="tm-line"><span class="tm-pct">${top.pct}<small>%</small></span><span class="small muted">de coincidencia, pregunta a pregunta. No es una probabilidad de voto.</span></p>
-          ${top.pct < 60 ? `<p class="small">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}
-          ${rank5(M, st, "side")}` : "<p>No hay candidaturas comparables.</p>"}
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
+          ${rank5(M, st, "side")}
+          ${top.pct < 60 ? `<p class="small muted tm-none">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}` : '<p>No hay candidaturas comparables.</p><p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>'}
         </div>
         <div class="sum-main">
           <p class="who">${SHARED ? "Resultado compartido · " : ""}${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
@@ -1267,9 +1277,9 @@ function renderSummary() {
             <div><p class="subh" style="color:var(--ok)">En qué coincidís</p>${yes.length ? `<ul class="sum-l">${yes.map(li).join("")}</ul>` : '<p class="small muted">Ninguna coincidencia clara.</p>'}</div>
             <div><p class="subh" style="color:var(--ko)">En qué chocáis</p>${no.length ? `<ul class="sum-l">${no.map(li).join("")}</ul>` : '<p class="small muted">No hay discrepancias fuertes.</p>'}</div>
           </div>` : ""}
-          ${!SHARED ? `<div class="res-actions"><button type="button" class="btn btn-primary" data-act="challenge">Reta a un amigo</button><a class="btn btn-ghost" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="new">Repetir el test</button>${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
+          ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button>${next ? `<button type="button" class="btn btn-mark" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
-          <button type="button" class="link-btn print-btn" data-act="print"><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5V3.5h9v4M5.5 14.5h-2v-6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v6h-2M5.5 11.5h9v5h-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Imprimir o guardar en PDF</button>
+          <div class="sum-links">${!SHARED ? '<button type="button" class="link-btn" data-act="new">Repetir el test</button>' : ""}<button type="button" class="link-btn print-btn" data-act="print"><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5V3.5h9v4M5.5 14.5h-2v-6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v6h-2M5.5 11.5h9v5h-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Guardar en PDF</button><button type="button" class="link-btn" data-go="method">Cómo se calcula</button></div>
           ${top ? rank5(M, st, "main") : ""}
           <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
             ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}

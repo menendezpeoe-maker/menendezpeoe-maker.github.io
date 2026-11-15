@@ -34,8 +34,15 @@ for (const [w, h, dark] of [[390, 844, false], [390, 844, true], [1280, 800, fal
   const yes = await page.locator("#r-summary .sum-two > div:first-child .sum-l li").count(), no = await page.locator("#r-summary .sum-two > div:last-child .sum-l li").count();
   ok(yes >= 1 && yes <= 3 && no >= 1 && no <= 3, `hasta 3 coincidencias y 3 choques (${yes} y ${no}) (${tag})`);
   ok(await page.isVisible("#r-summary h1.profile-h") && await page.isVisible("#r-summary .rel"), `perfil en una frase y solidez a la vista (${tag})`);
-  const r = await page.locator('#r-summary [data-act="challenge"]').boundingBox(), c = await page.locator('#r-summary a[href="#r-share"]').boundingBox();
-  ok(r && c && r.y + r.height <= h && c.y + c.height <= h, `«Compartir» y «Reta a un amigo» caben en la primera pantalla (${tag}: ${Math.round(r?.y + r?.height)} px)`);
+  // Rediseño 14 nov (maqueta aprobada): en el móvil, ranking arriba y «Compartir» y «Afinar» en la barra fija de abajo
+  if (w < 900) {
+    const c = await page.locator('.rt-sticky a[href="#r-share"]').boundingBox(), r1 = await page.locator("#r-summary .r5-side li").first().boundingBox();
+    ok(c && r1 && c.y + c.height <= h && r1.y + r1.height <= h - 70, `«Compartir» fijo abajo y la primera del ranking en la primera pantalla (${tag}: ${Math.round(r1?.y + r1?.height)} px)`);
+    ok(await page.isVisible('#r-summary [data-act="challenge"]'), `«Reta a un amigo» en el resumen (${tag})`);
+  } else {
+    const r = await page.locator('#r-summary [data-act="challenge"]').boundingBox(), c = await page.locator('#r-summary a[href="#r-share"]').boundingBox();
+    ok(r && c && r.y + r.height <= h && c.y + c.height <= h, `«Compartir» y «Reta a un amigo» caben en la primera pantalla (${tag}: ${Math.round(r?.y + r?.height)} px)`);
+  }
   ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), `sin scroll horizontal (${tag})`);
   await ctx.close();
 }
