@@ -96,7 +96,7 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
   const page = ({ path, title, desc, crumbs, body, ld }) => {
     title = tt(title);
     const url = SITE + path.replace(/^\//, "");
-    const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Test 29N", url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
+    const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Test político 29N", url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
     const extra = `<link rel="canonical" href="${url}">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Test 29N"><meta property="og:locale" content="es_ES">
 <meta property="og:url" content="${url}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
@@ -104,7 +104,7 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE}og.png">
 <script type="application/ld+json">${JSON.stringify(ld ? [crumbLd, ld] : crumbLd).replace(/</g, "\\u003c")}</script>
 `;
-    const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">Test 29N</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
+    const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">Test político 29N</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
     // «En esta página»: índice automático de las secciones (h2 con id) en las páginas largas, justo tras la cabecera
     const secs = [...body.matchAll(/<h2 class="h2[^"]*" id="([^"]+)">([\s\S]*?)<\/h2>/g)].map((m) => [m[1], m[2].replace(/<[^>]+>/g, "").trim()]);
     if (secs.length >= 4 && body.includes("</header>")) body = body.replace("</header>", `</header>\n<nav class="toc" aria-label="En esta página"><p class="label">En esta página</p><ul>${secs.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join("")}</ul></nav>`);

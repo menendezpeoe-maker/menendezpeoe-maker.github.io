@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 15 nov 2026 (tarde) · «Test político»: análisis de posicionamiento y migas de pan (petición del titular)
+- Portada ya orientada a «test político» (title, H1, descripción, FAQPage, WebApplication, canonical). No hacen falta más cambios en ella.
+- Cambio: la miga raíz de las 236 páginas estáticas pasa de «Test 29N» a «Test político 29N» (texto visible y `BreadcrumbList`), para que el enlazado interno hacia la portada use el término buscado. Sin cambios de URL. Diff con `main`: solo migas, JSON-LD y `lastmod` del sitemap. Sin desbordes a 320, 390 y 1280 px. Pruebas `todas` 25/26: en `rendimiento` fallan el CLS local conocido y la página de pregunta local sin gzip (310 kB > 300; viene de los datos de posturas, no de este cambio: +~20 bytes). En la web real `rendimiento` pasa entero (203 kB, FCP 2,1 s).
+- Competencia en búsquedas genéricas: webs con años de enlaces (Afinidad Política, isidewith, Demócrata, medios). El factor que falta son enlaces externos: mini test insertable (/insertar/), datos abiertos (/datos/) y menciones en medios locales. Medir en Search Console el 22 y el 29 nov.
+
 ## 15 nov 2026 (tarde) · Documentar posturas estimadas, tanda 1: PNV, Adelante, SALF (petición del titular)
 - **Objetivo (titular, 15 nov):** pasar de «estimada» a documentada toda postura que tenga fuente real (pasaje literal, página, alcance; regla 8). Lo que no tenga fuente verificable sigue estimado y marcado. Sin cambiar cálculos ni URLs.
 - **Recuento de partida:** 1.133 documentadas, 1.205 estimadas (101 con enlace de referencia) y 872 sin postura en las 30 candidaturas × 107 preguntas.
