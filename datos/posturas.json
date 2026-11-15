@@ -1633,11 +1633,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide elevar el gasto en protección social, como mínimo, al gasto medio de la UE; no trata la deuda.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=21",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 21",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -16449,15 +16449,15 @@
    "opcion_b": "",
    "partido_id": "bng",
    "partido": "BNG",
-   "postura": 1,
-   "postura_texto": "Totalmente en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide derogar la prisión permanente revisable y prima la reinserción; no trata la multirreincidencia.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E01",
@@ -26827,11 +26827,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide implantar «sin máis demoras» cercanías en las ciudades gallegas y, a la vez, acabar las obras pendientes del AVE (p. 61).",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=60",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -27488,15 +27488,15 @@
    "opcion_b": "",
    "partido_id": "bng",
    "partido": "BNG",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide incentivos fiscales al uso y aprovechamiento multifuncional del monte; no habla de flexibilizar espacios protegidos.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=69",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 69",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G08",
@@ -28879,11 +28879,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N rechaza centralizar en la UE los fondos de cohesión, la PAC y el FEMPA y exige su gestión descentralizada.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=48",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 48",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H02",
@@ -34218,11 +34218,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide un sistema de becas universitarias que garantice el acceso universal a la enseñanza superior; no habla de notas.",
+   "fuente_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=36",
+   "fuente_titulo": "Programa electoral del BNG de 2026, p. 36",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I06",
