@@ -45,9 +45,9 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const sum = await page.evaluate(() => document.getElementById("pg-sum").innerText.match(/(\d+) de (\d+)/).slice(1, 3).join("/"));
   ok(homeCount && sum === homeCount && sum.endsWith(`/${live.length}`), `contador igual que la portada (${sum} y ${homeCount})`);
   const nNew = await page.locator(".pg-new li").count();
-  ok(nNew >= 1 && nNew <= 4 && await page.locator(".pg-new .btn", { hasText: "Abrir programa oficial" }).count() === nNew && await page.locator(".pg-new .btn", { hasText: "Ver posturas revisadas" }).count() === nNew, `«Últimas incorporaciones»: ${nNew} con los dos botones`);
+  ok(nNew >= 1 && nNew <= 4 && await page.locator(".pg-new .btn", { hasText: "Abrir programa oficial" }).count() === nNew && await page.locator(".pg-new .btn", { hasText: /Ver posturas revisadas|Ver sus posturas actuales/ }).count() === nNew, `«Últimas incorporaciones»: ${nNew} con los dos botones`);
   const nPubRows = +sum.split("/")[0];
-  ok(await page.locator("#pg-all a.btn", { hasText: "Abrir programa oficial" }).count() === nPubRows && await page.locator("#pg-all a.btn", { hasText: "Ver posturas revisadas" }).count() === nPubRows, `cada programa publicado tiene «Abrir programa oficial» y «Ver posturas revisadas» (${nPubRows})`);
+  ok(await page.locator("#pg-all a.btn", { hasText: "Abrir programa oficial" }).count() === nPubRows && await page.locator("#pg-all a.btn", { hasText: /Ver posturas revisadas|Ver sus posturas actuales/ }).count() === nPubRows, `cada programa publicado tiene «Abrir programa oficial» y «Ver posturas revisadas» o, si aún no hay ninguna, «Ver sus posturas actuales» (${nPubRows})`);
   const ext = await page.getAttribute("#pg-all a.btn:has-text('Abrir programa oficial') >> nth=0", "target"), rev = await page.getAttribute("#pg-all a.btn:has-text('Ver posturas revisadas') >> nth=0", "href");
   ok(ext === "_blank" && /^\/partidos\/[a-z0-9]+\/#h-pos$/.test(rev), `el programa se abre aparte y las posturas van a la ficha (${rev})`);
   const vis = () => page.evaluate(() => [...document.querySelectorAll("#pg-all > li")].filter((l) => !l.hidden && l.offsetParent).map((l) => l.querySelector("b").textContent));

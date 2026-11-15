@@ -104,6 +104,8 @@ console.log("Páginas por candidatura y por tema");
   const live = pd.order.filter((pid) => !pd.parties.find((p) => p.id === pid).out);
   const rows = await page.locator("#pg-all > li").count(), tags = await page.locator("#pg-all .pg-tag").count();
   ok(rows === live.length && tags === live.length && /comprobado el \d+ de [a-z]+ de 2026/.test(await page.innerText(".pg-sum")), `programas: ${rows} candidaturas, cada una con su estado y la fecha de comprobación`);
+  const pubRows = await page.locator('#pg-all > li[data-pub="1"]').count(), steps = await page.locator("#pg-all .pg-steps").count();
+  ok(pubRows >= 1 && steps === pubRows && (await page.locator("#pg-all .pg-steps li").count()) === 3 * pubRows, `programas: ${pubRows} publicados, cada uno con localizado, completo o avance y posturas revisadas por separado`);
   const pp = await (await fetch(SITE + "partidos/pp/")).text();
   ok(pp.includes("<dt>Programa del 29N</dt>") && pp.includes('href="/programas/"'), "cada página de partido indica el estado de su programa y enlaza /programas/");
   // Debates: cada uno con su estado, sus datos («por confirmar» si no se han anunciado), su fuente y el botón al test
