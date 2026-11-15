@@ -2986,7 +2986,13 @@ async function boot() {
   const shared = decodeShare(location.hash);
   count(shared ? "/compartido" : "/", shared ? "Resultado compartido" : "Inicio");
   if (shared) { SHARED = shared; store.set(FRIEND_KEY, location.hash); openResults(); return; }
-  const tema = new URLSearchParams(location.search).get("tema");
+  // Enlace desde una página de provincia (/?prov=<id>): deja elegida esa provincia para el test (no cambia un test ya empezado)
+  const qs = new URLSearchParams(location.search), provQ = qs.get("prov"), tema = qs.get("tema");
+  if (provQ && PROV[provQ]) {
+    PREFS.prov = provQ; savePrefs();
+    if (S && !PROV[S.prov]) { S.prov = provQ; save(); }
+    if (!tema) try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
+  }
   if (tema && TOPICS[tema]) {
     try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
     if (!hasSaved()) { startTopic(tema, false); return; }

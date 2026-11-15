@@ -89,7 +89,7 @@ export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
 <script src="/assets/arriba.js?v=${arribaJs}" defer></script>`;
-  const cta = (t) => `<aside class="cta-box" aria-label="${t}"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="/">Hacer el test</a></p></aside>`;
+  const cta = (t, href = "/", label = "Hacer el test") => `<aside class="cta-box" aria-label="${t}"><p class="h3">${t}</p><p>Responde el test en 3, 5, 10 o 20 minutos y compara tus respuestas con las candidaturas de tu provincia, pregunta a pregunta. Gratis, sin registro y sin que tus respuestas salgan de tu navegador.</p><p><a class="btn btn-primary" href="${href}">${label}</a></p></aside>`;
   const method = `<p class="small muted">Las posturas se asignan de 1 a 5 a partir de programas electorales, votaciones en las Cortes, decisiones de gobierno y declaraciones públicas. <b>Documentada</b>: hay evidencia explícita. <b>Estimada</b>: se deduce de su línea general y se marca siempre. Si no conocemos la postura de un partido, no se le asigna ninguna. Datos actualizados el ${esc(updated)}.</p>`;
   // Menú: marca la sección actual (aria-current) igual que en la portada; las subpáginas cuentan como su sección
   const NAV_SEC = { partidos: "/partidos/", programas: "/programas/", temas: "/temas/", tests: "/temas/", comparar: "/comparar/", debates: "/debates/", provincias: "/provincias/", escanos: "/provincias/", metodologia: "/metodologia/" };
@@ -399,13 +399,14 @@ q();
     const boeLink = `<a href="${CANDS.fuente.url}" target="_blank" rel="noopener noreferrer">proclamación de candidaturas del BOE del ${fmtDate(CANDS.fuente.fecha)}</a>`;
     page({
       path: `/provincias/${pr.id}/`,
-      title: `Elecciones 29N en ${pr.name}: candidaturas y mesa electoral · Test 29N`,
-      desc: `Listas y candidatos del 29N en ${pr.name}: ${boe.length} candidaturas con su cabeza de lista, ${n} ${n === 1 ? "diputado" : "diputados"} y qué hacer si te toca mesa electoral.`,
+      // Título corto (≤ 62 caracteres, lo que Google muestra entero) con los datos que se buscan: candidatos, listas y escaños
+      title: [`Elecciones 29N ${pr.name}: candidatos, ${boe.length} listas y ${n} ${n === 1 ? "escaño" : "escaños"}`, `Elecciones 29N ${pr.name}: candidatos y ${boe.length} listas`, `Elecciones 29N ${pr.name}: candidatos`].find((t) => t.length <= 62) || `Elecciones 29N ${pr.name}`,
+      desc: `Quién se presenta el 29N en ${inName(pr)}: las ${boe.length} listas del BOE con su cabeza de lista, ${n === 1 ? "quién se lleva su escaño" : `cómo se reparten sus ${n} escaños`} y con cuál coincides más.`,
       crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }, { name: pr.name, url: `${SITE}provincias/${pr.id}/` }],
       body: `<header class="sp-head"><p class="label">${esc(pr.region.name)} · Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Elecciones del 29N en ${esc(inName(pr))}</h1>
   <dl class="sp-facts"><div><dt>Diputados que elige</dt><dd><b>${n}</b> de 350</dd></div><div><dt>Senadores</dt><dd>${esc(SENATE[pr.id] || "4 senadores.")}</dd></div><div><dt>Candidaturas proclamadas</dt><dd><b>${boe.length}</b></dd></div><div><dt>Candidaturas en el test</dt><dd>${cands.length}</dd></div></dl>
   <p class="small muted">Escaños: <a href="${SEATS_SOURCE.url}" target="_blank" rel="noopener noreferrer">${esc(SEATS_SOURCE.label)}</a>.</p></header>
-${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`)}
+${cta(`¿Con qué candidatura de ${esc(pr.name)} coincides más?`, `/?prov=${pr.id}`)}
 <section aria-labelledby="h-cand"><h2 class="h2" id="h-cand">Listas y candidaturas que se presentan en ${esc(pr.name)}</h2>
 <p class="small muted">Las ${cands.length} que tienen sus posturas en el test, con su cabeza de lista según la ${boeLink}${tbd.length ? `; las marcadas «por confirmar» aún no han confirmado que se presentan` : ""}.</p>
 <ul class="sp-cards">${cands.map((pid) => `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(localName(pid, pr.id))}</b><span class="small muted">${cabOf(pid) ? `Cabeza de lista: ${esc(cabOf(pid))}` : esc(P[pid].tag)}${P[pid].tbd ? " · por confirmar" : ""}</span></span></a></li>`).join("")}</ul></section>
@@ -629,11 +630,14 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
     <p class="small muted">Comprobado el ${esc(fmtDate(d.verificado))} · Fuente: ${d.fuentes.map(([u, l]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(l)}</a>`).join(" · ")}</p></li>`; };
   const dbNext = DEBATES.lista.filter((d) => d.estado !== "emitido").sort((a, b) => (a.fecha || "9999").localeCompare(b.fecha || "9999") || (a.hora || "99").localeCompare(b.hora || "99"));
   const dbPast = DEBATES.lista.filter((d) => d.estado === "emitido").sort((a, b) => b.fecha.localeCompare(a.fecha) || (b.hora || "").localeCompare(a.hora || ""));
+  const dbSnip = dbNext.filter((d) => d.tipo === "debate" && d.ambito === "Estatal" && d.fecha && d.fecha >= dbToday).slice(0, 2)
+    .map((d) => `${+d.fecha.slice(8)} ${["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][+d.fecha.slice(5, 7) - 1]}${d.hora ? ` (${d.hora} h)` : ""}, ${d.titulo.replace(/^./, (c) => c.toLowerCase())}`);
   const dbN = (t) => DEBATES.lista.filter((d) => d.tipo === t).length;
   page({
     path: "/debates/",
-    title: "Debates y entrevistas del 29N: agenda, horarios y grabaciones · Test 29N",
-    desc: `Agenda de debates del 29N con fecha, hora, cadena y participantes, y archivo de debates y entrevistas ya emitidos con su grabación y la fuente. Revisado el ${dbRev}.`,
+    title: "Debates electorales 29N: fechas, horarios y dónde verlos",
+    // Lo que se busca va delante: los próximos debates de ámbito estatal con fecha (salen de los datos, en orden de fecha)
+    desc: `${dbSnip.length ? `Próximos debates: ${dbSnip.join("; ")}. ` : ""}Agenda con hora, cadena y participantes, y grabaciones de los ya emitidos con su fuente.`,
     crumbs: [{ name: "Debates y entrevistas", url: `${SITE}debates/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Debates y entrevistas del 29N</h1>
   <p class="lede">La agenda de debates de la campaña y el archivo de debates y entrevistas ya emitidos, con su grabación cuando la cadena la publica. Cada dato lleva su fuente; lo que no se ha anunciado aparece «por confirmar».</p></header>

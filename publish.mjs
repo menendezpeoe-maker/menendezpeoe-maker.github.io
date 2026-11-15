@@ -10,7 +10,7 @@ const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "m
 const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
 const TITLE = "Test político 2026: ¿con qué partido coincides? · Elecciones 29N";
-const DESC = "Test político gratuito para las elecciones generales 2026 (29N): descubre qué partido representa tus ideas. No te dice a quién votar.";
+const DESC = "Test político gratis de las elecciones generales 2026 (29N): compara tus ideas con las candidaturas de tu provincia, con fuentes. No te dice a quién votar.";
 
 rmSync(OUT, { recursive: true, force: true });
 for (const d of ["", "assets", "assets/politicos", "data"]) mkdirSync(`${OUT}/${d}`, { recursive: true });
@@ -170,6 +170,28 @@ writeFileSync(`${OUT}/404.html`, `${head("Página no encontrada · Test 29N", "L
 `);
 
 writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: "Test 29N", short_name: "Test 29N", lang: "es", start_url: SITE, scope: SITE, display: "standalone", background_color: "#F2F3EE", theme_color: "#111318", icons: [{ src: `${SITE}icon-512.png`, sizes: "512x512", type: "image/png" }, { src: `${SITE}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 1));
+// llms.txt: resumen para asistentes de IA que citan la web (qué es, cómo se calcula y dónde están los datos con fuentes)
+writeFileSync(`${OUT}/llms.txt`, `# Test 29N
+
+> Test político independiente y gratuito para las elecciones generales de España del 29 de noviembre de 2026. Compara las respuestas de cada persona con las posturas de las candidaturas de su provincia. No recomienda voto, no es una encuesta y no predice resultados.
+
+Cada postura de partido (escala de 1 a 5) cita su fuente: programa electoral, votaciones en las Cortes, decisiones de gobierno o declaraciones públicas. Las posturas sin evidencia explícita se marcan como «estimadas»; si no se conoce la postura, no se asigna ninguna. Las respuestas del usuario no salen de su navegador.
+
+## Páginas principales
+- [Test](${SITE}): el test (3, 5, 10 o 20 minutos)
+- [Metodología](${SITE}metodologia/): cómo se asignan las posturas y cómo se calcula la coincidencia
+- [Partidos](${SITE}partidos/): ficha de cada candidatura con sus posturas y fuentes
+- [Programas electorales](${SITE}programas/): enlaces a los programas oficiales del 29N
+- [Temas](${SITE}temas/): posturas por área y tests por tema
+- [Comparar](${SITE}comparar/): comparación de dos candidaturas pregunta a pregunta
+- [Provincias](${SITE}provincias/): candidaturas proclamadas (BOE) y escaños de cada circunscripción
+- [Debates](${SITE}debates/): agenda y archivo de debates y entrevistas con su fuente
+- [Cómo votar](${SITE}votar/): guía práctica con enlaces oficiales
+
+## Datos abiertos
+- [Partidos y posturas (JSON)](${SITE}data/partidos.json)
+- [Preguntas (JSON)](${SITE}data/preguntas.json)
+`);
 writeFileSync(`${OUT}/robots.txt`, `User-agent: *\nAllow: /\nSitemap: ${SITE}sitemap.xml\n`);
 // Páginas estáticas por candidatura, por tema y de prensa (pages.mjs), con los mismos datos que el test
 const pages = buildPages({ OUT, SITE, head, statsJs: v.stats, arribaJs: v.arriba, owner: OWNER_M ? { name: OWNER_M[1], email: OWNER_M[2] } : null });
