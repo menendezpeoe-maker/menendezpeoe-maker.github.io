@@ -135,9 +135,11 @@ const PRELOAD = [["preguntas", true], ["partidos", true], ["politicos", false]].
 // papeleta.css). Con 4G, 5G, wifi, navegadores sin esa información (Safari, Firefox) o sin JavaScript, todo igual que antes.
 // El script va en línea y su firma se añade a la CSP de esta página (no se abre «script-src» a nada más).
 const FONTS_HREF = `assets/fonts.css?v=${v.fonts}`;
-const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slow-2g|2g|3g)$/.test(c.effectiveType))){document.documentElement.className+=" red-lenta";return}document.write('<link rel="stylesheet" href="${FONTS_HREF}">');var d=document.documentElement,f=document.fonts;if(!f||!f.load)return;d.classList.add("fx");var ok=function(){d.classList.remove("fx")};setTimeout(ok,2500);document.addEventListener("DOMContentLoaded",function(){Promise.all([f.load("800 1em Archivo"),f.load("400 1em Newsreader")]).then(ok,ok)})})()`;
+const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slow-2g|2g|3g)$/.test(c.effectiveType))){document.documentElement.className+=" red-lenta";return}document.write('<link rel="stylesheet" href="${FONTS_HREF}">');var d=document.documentElement,f=document.fonts;if(!f||!f.load)return;d.classList.add("fx");var ok=function(){d.classList.remove("fx")};setTimeout(ok,2500);var n=0,go=function(){var has=false;f.forEach(function(x){if(/Archivo/.test(x.family))has=true});if(has)Promise.all([f.load("800 1em Archivo"),f.load("400 1em Newsreader")]).then(ok,ok);else if(++n<60)setTimeout(go,40)};go()})()`;
 // 8 nov: entrada sin saltos. Con tipografías propias (4G/wifi) la portada se mantiene oculta, como mucho 2,5 s, hasta que llegan Archivo y
 // Newsreader y entonces aparece de una vez: antes el título y los botones se recolocaban dos veces a la vista al cambiar la letra (CLS 0,02 y tirones).
+// 15 nov: la espera empieza en cuanto fonts.css declara las tipografías (antes, tras DOMContentLoaded, que espera a papeleta.js):
+// en móvil 4G simulado la portada aparece hacia 1 s en lugar de 2,5 s (LCP), con el mismo resultado sin saltos.
 const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
 const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
 const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "Test 29N", alternateName: ["Test político 29N", "Test electoral 29N"], url: "https://test29n.es/", inLanguage: "es" })}</script>`;

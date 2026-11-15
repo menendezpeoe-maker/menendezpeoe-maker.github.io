@@ -12,6 +12,7 @@ Pedido por el titular el 14 nov 2026: /debates/ se actualiza cada día desde la 
 - **Duplicados:** antes de añadir, buscar en el archivo por fecha, medio, participantes y URL (`node qa/debates.mjs` los detecta).
 - **Mismo criterio para todas las candidaturas:** debates de cadenas estatales, autonómicas y locales, y entrevistas a cabezas de lista o portavoces en medios de amplia audiencia. Ciclos de entrevistas: incluir a todos los invitados acreditados, no solo a unos.
 - `revisado` y `verificado` de cada ficha tocada = día de la comprobación.
+- **Partidos (15 nov):** en cada ficha con participantes nombrados y su partido, rellenar `partidos` con los ids del test en el orden de «participantes» (PSC → `psoe`, Comuns/Por Andalucía → `fa`, etc., según `local` en src/partidos.src.mjs). No en «propuesta» ni cuando sean «los cabezas de lista que designen». La página enlaza sus fichas y, si son dos con comparativa, «Comparar».
 
 ## Revisión diaria (tarea programada en la nube, 09:47 Madrid)
 1. Pendientes de `plan/HALLAZGOS.md` y de la cola de abajo.

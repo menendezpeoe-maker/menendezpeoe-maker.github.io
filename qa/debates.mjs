@@ -39,7 +39,9 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
     const sec = (id) => [...document.querySelectorAll(`[aria-labelledby="${id}"] .db-item`)];
     const fecha = (li) => li.id;
     return { next: sec("h-db-next").map(fecha), past: sec("h-db-past").map(fecha), ov: document.documentElement.scrollWidth > innerWidth + 1,
-      btns: [...document.querySelectorAll(".db-btns a")].map((a) => ({ t: a.firstChild.textContent.trim(), tg: a.target, rel: a.rel, h: Math.round(a.getBoundingClientRect().height) })),
+      cmp: [...document.querySelectorAll(".db-btns a.db-cmp")].map((a) => ({ href: a.getAttribute("href"), h: Math.round(a.getBoundingClientRect().height), tg: a.target })),
+      parts: [...document.querySelectorAll(".db-party")].map((a) => ({ href: a.getAttribute("href"), h: Math.round(a.getBoundingClientRect().height) })),
+      btns: [...document.querySelectorAll(".db-btns a:not(.db-cmp)")].map((a) => ({ t: a.firstChild.textContent.trim(), tg: a.target, rel: a.rel, h: Math.round(a.getBoundingClientRect().height) })),
       ext: [...document.querySelectorAll("main a[href^='http']")].filter((a) => a.target !== "_blank" || !/noopener/.test(a.rel)).length,
       iframes: document.querySelectorAll("iframe, video, audio").length,
       hasCsp: !!document.querySelector('meta[http-equiv="Content-Security-Policy"]'),
@@ -50,6 +52,10 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const pastOk = info.past.every((id, i, a) => !i || byId[a[i - 1]].fecha >= byId[id].fecha);
   ok(info.next.length + info.past.length === L.length && info.past.length === em.length && nextOk && pastOk, `${w}: próximos por fecha (${info.next.length}) y emitidos del más reciente al más antiguo (${info.past.length})`);
   ok(info.btns.length === em.length && info.btns.every((b) => /^(Ver grabación|Escuchar|Escuchar extracto|Ver extracto)$/.test(b.t) && b.tg === "_blank" && /noopener/.test(b.rel) && b.h >= 44), `${w}: un botón «Ver grabación»/«Escuchar» por emitido, en otra pestaña y de ≥ 44 px`);
+  // 15 nov: partidos que participan (enlace a su ficha) y «Comparar» cuando son dos con comparativa; enlaces internos, sin pestaña nueva
+  const nParts = L.reduce((a, d) => a + (d.partidos || []).length, 0), nCmp = L.filter((d) => (d.partidos || []).length === 2).length;
+  ok(info.parts.length === nParts && info.parts.every((x) => /^\/partidos\/[a-z0-9]+\/$/.test(x.href) && x.h >= 40), `${w}: ${nParts} enlaces a la ficha de cada partido que participa (≥ 40 px)`);
+  ok(info.cmp.length <= nCmp && info.cmp.length >= 1 && info.cmp.every((x) => /^\/comparar\/[a-z0-9]+-[a-z0-9]+\/$/.test(x.href) && x.h >= 44 && !x.tg), `${w}: «Comparar» (${info.cmp.length}) solo en los cara a cara con comparativa, en la misma pestaña y de ≥ 44 px`);
   const audio = L.filter((d) => d.grabacion?.formato === "audio").length;
   const frag = L.filter((d) => d.grabacion?.alcance === "fragmento").length;
   ok(info.btns.filter((b) => b.t.startsWith("Escuchar")).length === audio && info.btns.filter((b) => / extracto$/.test(b.t)).length === frag, `${w}: «Escuchar» solo en audios (${audio}) y «extracto» solo en fragmentos (${frag})`);
