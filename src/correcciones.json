@@ -16,6 +16,102 @@
   ]
  },
  {
+  "fecha": "2026-11-15",
+  "id": "B04",
+  "partido": "pnv",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+   "Programa electoral de EAJ-PNV de 2026, p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "D06",
+  "partido": "adel",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide votar las iniciativas legislativas populares en un plazo máximo y sin bloqueos.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "F06",
+  "partido": "adel",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una prestación universal por crianza de 100 a 200 euros al mes por hijo hasta los 18 años.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=54",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 54",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "H07",
+  "partido": "pnv",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone reforzar la cooperación internacional para el desarrollo con recursos suficientes.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+   "Programa electoral de EAJ-PNV de 2026, p. 28",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "J08",
+  "partido": "adel",
+  "de": 2,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=37",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 37",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "K02",
+  "partido": "pnv",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide reforzar la Ley de la Cadena Alimentaria para garantizar precios que cubran los costes de producción.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
+   "Programa electoral de EAJ-PNV de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-14",
   "id": "K01",
   "partido": "falange",

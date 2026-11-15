@@ -131,7 +131,7 @@ export const QUESTIONS = [
   text: "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
   short: "Prohibir nuevos pisos turísticos",
   ctx: "España tiene más de 350.000 viviendas de uso turístico. Desde 2025 abrir un piso turístico en un edificio exige el permiso de la comunidad de propietarios, y Barcelona ha anunciado que eliminará todas sus licencias en 2028. Los defensores de prohibirlos buscan devolver viviendas al alquiler residencial; sus críticos alertan de la pérdida de ingresos de pequeños propietarios y de un efecto limitado sobre los precios.",
-  pos: "4 2 2 5 5 1 0 3~ 5 3~ 4 5 3~ 4~ 5~ 4 5 5 5 4~ 3~ 5 5 0 0 0 0 0 4~ 0 0 0 0" },
+  pos: "4 2 2 5 5 1 0 3~ 5 3~ 4 5 3~ 4~ 4 4 5 5 5 4~ 3~ 5 5 0 0 0 0 0 4~ 0 0 0 0" },
 { id: "B06", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
   short: "Recargo fiscal a las viviendas vacías",
@@ -374,7 +374,7 @@ export const QUESTIONS = [
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
   ctx: "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Quienes piden limitarlos buscan proteger el territorio; los defensores de estas plantas recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
-  pos: "2 2 4 3 3 4 4 2~ 2 3~ 2~ 3 3~ 0 3~ 3~ 3~ 4~ 3~ 4~ 5 3~ 4 4~ 4~ 5~ 4~ 0 4 0 4 4 0" },
+  pos: "2 2 4 3 3 4 4 2~ 2 3~ 2~ 3 3~ 0 4 3~ 3~ 4~ 3~ 4~ 5 3~ 4 4~ 4~ 5~ 4~ 0 4 0 4 4 0" },
 { id: "G03", area: "ene", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
@@ -620,7 +620,7 @@ export const QUESTIONS = [
   text: "La gestación subrogada debería legalizarse con garantías para la mujer gestante.",
   short: "Legalizar la gestación subrogada",
   ctx: "En España los contratos de gestación por sustitución son nulos, aunque durante años se inscribieron en el Registro Civil los bebés nacidos así en el extranjero; en 2025 el Gobierno restringió esa inscripción. Sus defensores apelan al derecho a formar una familia y a regularla con garantías; sus críticos, desde el feminismo hasta sectores conservadores, la consideran una explotación del cuerpo de las mujeres.",
-  pos: "1 3 1 1 1 3~ 0 5~ 2~ 3~ 3~ 4 2~ 0 1~ 0 1~ 1~ 1~ 2~ 1 0 1 0 0 0 0 1 1 0 0 0 0" },
+  pos: "1 3 1 1 1 3~ 0 5~ 2~ 3~ 3~ 4 2~ 0 1 0 1~ 1~ 1~ 2~ 1 0 1 0 0 0 0 1 1 0 0 0 0" },
 { id: "L05", area: "der", prio: 3, type: "likert", dim: "soc", dir: -1, lr: -1,
   text: "Los acuerdos de 1979 con la Santa Sede deberían revisarse para reducir las ventajas que reconocen a la Iglesia católica.",
   short: "Revisar los acuerdos con la Santa Sede",
@@ -1088,6 +1088,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/storage/2025/07/POLITICA_PARTIDOPOPULAR_2025.pdf#page=36", "Ponencia política del PP, julio de 2025 (documento de congreso, no programa electoral), p. 36", "programa", "2025-07"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46", "Programa político del Frente Obrero de 2026, p. 46", "programa", "2026-10"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7", "Contrato electoral simplificado de SALF para las generales de 2026, p. 7", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12", "Programa electoral del BNG de 2026, p. 12", "programa", "2026-11"],
   },
   B06: {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203", "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)", "gobierno", "2023-05-24"],
@@ -1639,6 +1640,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 38", "programa", "2026-10"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=24", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24", "programa", "2026-11"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55", "Programa electoral del BNG de 2026, p. 55", "programa", "2026-11"],
   },
   G03: {
     psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
@@ -2251,6 +2253,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 32", "programa", "2026-10"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=29", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 29", "programa", "2019-05"],
     existe: ["https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=18", "Programa electoral de Teruel Existe para las generales de 2023, p. 18", "programa", "2023-07"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=26", "Programa electoral del BNG de 2026, p. 26", "programa", "2026-11"],
   },
   L05: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=254", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -2562,6 +2565,7 @@ export const JUSTIF = {
     pp: "Defiende un turismo «sin necesidad de restringir la actividad turística» y no apoya prohibir nuevos pisos turísticos.",
     fo: "Estimación: el programa propone medidas que detengan el auge de los pisos turísticos y la gentrificación, sin precisar que lo decidan los ayuntamientos.",
     salf: "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones».",
+    bng: "Su programa del 29N pide mecanismos eficaces para frenar la salida de vivienda habitual hacia el alquiler de temporada, por habitaciones y turístico.",
   },
   B06: {
     psoe: "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
@@ -3131,6 +3135,7 @@ export const JUSTIF = {
     fo: "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
     ie: "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
     ph: "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
+    bng: "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
   },
   G03: {
     psoe: "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
@@ -3750,6 +3755,7 @@ export const JUSTIF = {
     fo: "Propone la prohibición y persecución de la gestación subrogada (vientres de alquiler) a nivel nacional e internacional.",
     cha: "Estimación: su programa propone mantener la situación legal actual de la «maternidad subrogada», es decir, los contratos siguen siendo nulos.",
     existe: "Su programa de 2023 expresa «Rechazo a la gestación subrogada».",
+    bng: "Su programa del 29N expresa una oposición firme a cualquier intento de legalizar o regular los vientres de alquiler.",
   },
   L05: {
     psoe: "Su programa busca reducir ventajas de la Iglesia (autofinanciación, fiscalidad) dentro de los acuerdos vigentes, sin revisarlos.",

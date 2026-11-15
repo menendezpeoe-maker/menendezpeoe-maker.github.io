@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 15 nov 2026 (noche) · Documentar posturas, tanda 2: BNG con su programa del 29N (petición del titular)
+- Programa del BNG (91 páginas) revisado entero, con una búsqueda de pasaje literal para cada postura. Solo se aplican los pasajes directos; los indirectos se dejan estimados.
+- **Hecho (3):** B05 4 (p. 12, frenar el paso de vivienda habitual a alquiler de temporada, por habitaciones y turístico), G02 4 (p. 55, revisar los parques eólicos aprobados y paralizar los más lesivos), L04 1 (p. 26, oposición firme a regular los vientres de alquiler).
+- **Revisado sin pasaje directo (siguen estimadas):** A04, C02, C04, C09, D06, E01, F04, G06, G08, H02, I06 y K06 tienen solo pasajes indirectos; el resto no tiene pasaje.
+- Pruebas: `todas` 25/26. `rendimiento` local falla igual sin esta tanda (CLS de la portada y 310 kB en la página de pregunta, sin comprimir); en la web real pasa (294 kB y 203 kB). Queda pendiente revisar ese presupuesto local.
+
 ## 15 nov 2026 (tarde) · «Test político»: análisis de posicionamiento y migas de pan (petición del titular)
 - Portada ya orientada a «test político» (title, H1, descripción, FAQPage, WebApplication, canonical). No hacen falta más cambios en ella.
 - Cambio: la miga raíz de las 236 páginas estáticas pasa de «Test 29N» a «Test político 29N» (texto visible y `BreadcrumbList`), para que el enlazado interno hacia la portada use el término buscado. Sin cambios de URL. Diff con `main`: solo migas, JSON-LD y `lastmod` del sitemap. Sin desbordes a 320, 390 y 1280 px. Pruebas `todas` 25/26: en `rendimiento` fallan el CLS local conocido y la página de pregunta local sin gzip (310 kB > 300; viene de los datos de posturas, no de este cambio: +~20 bytes). En la web real `rendimiento` pasa entero (203 kB, FCP 2,1 s).
