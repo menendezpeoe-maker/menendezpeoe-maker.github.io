@@ -1,0 +1,20 @@
+# Test 29N
+
+> Test político independiente y gratuito para las elecciones generales de España del 29 de noviembre de 2026. Compara las respuestas de cada persona con las posturas de las candidaturas de su provincia. No recomienda voto, no es una encuesta y no predice resultados.
+
+Cada postura de partido (escala de 1 a 5) cita su fuente: programa electoral, votaciones en las Cortes, decisiones de gobierno o declaraciones públicas. Las posturas sin evidencia explícita se marcan como «estimadas»; si no se conoce la postura, no se asigna ninguna. Las respuestas del usuario no salen de su navegador.
+
+## Páginas principales
+- [Test](https://test29n.es/): el test (3, 5, 10 o 20 minutos)
+- [Metodología](https://test29n.es/metodologia/): cómo se asignan las posturas y cómo se calcula la coincidencia
+- [Partidos](https://test29n.es/partidos/): ficha de cada candidatura con sus posturas y fuentes
+- [Programas electorales](https://test29n.es/programas/): enlaces a los programas oficiales del 29N
+- [Temas](https://test29n.es/temas/): posturas por área y tests por tema
+- [Comparar](https://test29n.es/comparar/): comparación de dos candidaturas pregunta a pregunta
+- [Provincias](https://test29n.es/provincias/): candidaturas proclamadas (BOE) y escaños de cada circunscripción
+- [Debates](https://test29n.es/debates/): agenda y archivo de debates y entrevistas con su fuente
+- [Cómo votar](https://test29n.es/votar/): guía práctica con enlaces oficiales
+
+## Datos abiertos
+- [Partidos y posturas (JSON)](https://test29n.es/data/partidos.json)
+- [Preguntas (JSON)](https://test29n.es/data/preguntas.json)
