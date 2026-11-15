@@ -2791,9 +2791,12 @@ function bindPartyCards() {
   $("#pcx-prov").addEventListener("change", (e) => { PCX.prov = e.target.value; drawPartyCards(); });
   $("#ppan").addEventListener("click", (e) => {
     if (e.target.closest("#pp-x")) { const pid = EX.party; EX.party = ""; $("#ex-party").value = ""; drawExplorer(); const bt = document.querySelector(`#pcx-grid .pcx-main[data-pcx-pos="${pid}"]`); if (bt) { bt.scrollIntoView({ block: "center" }); bt.focus({ preventScroll: true }); } return; }
-    const ch = e.target.closest("[data-pa]"); if (ch) { PP.area = ch.dataset.pa; drawPartyPanel(); const k = document.querySelector(`#ppan [data-pa="${PP.area}"]`); if (k) k.focus({ preventScroll: true }); $("#pp-list").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
+    const go = e.target.closest("[data-pp-go]"); if (go) { EX.party = go.dataset.ppGo; $("#ex-party").value = EX.party; drawExplorer(); const b = document.querySelector(`#ppan [data-pp-go="${EX.party}"]`); if (b) b.focus({ preventScroll: true }); $("#ppan").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); }
   });
+  $("#ppan").addEventListener("toggle", (e) => { const d = e.target; if (d.matches && d.matches("details.pa-acc") && !PP.q) { if (d.open) PP.open.add(d.dataset.pa); else PP.open.delete(d.dataset.pa); } }, true);
   $("#ppan").addEventListener("change", (e) => { if (e.target.id === "pp-src") { PP.src = e.target.checked; drawPartyPanel(); $("#pp-src").focus(); } });
+  let ppT = 0;
+  $("#ppan").addEventListener("input", (e) => { if (e.target.id !== "pp-q") return; clearTimeout(ppT); ppT = setTimeout(() => { PP.q = e.target.value.trim(); drawPartyPanel(); const i = $("#pp-q"); if (i) { i.focus(); i.setSelectionRange(i.value.length, i.value.length); } }, 200); });
   $("#pcx-grid").addEventListener("click", (e) => {
     const m = e.target.closest(".pcx-more");
     if (m) { const card = m.closest(".pcx-card"), open = !card.classList.contains("open"); card.classList.toggle("open", open); m.setAttribute("aria-expanded", String(open)); m.firstChild.textContent = open ? "Ver menos " : "Ver más "; return; }
@@ -2805,44 +2808,64 @@ function bindPartyCards() {
     }
   });
 }
-const PP = { pid: "", area: "", src: false };
+// Vista de un partido (rediseño 14 nov, maqueta aprobada por el titular): ficha compacta con una sola barra de datos,
+// las siete dimensiones en un bloque, buscador y «Solo con fuente», y las 12 áreas como desplegables con sus posturas.
+// En escritorio, la lista de candidaturas queda fija a la izquierda. Mismas posturas, fuentes y cálculos.
+const PP = { pid: "", open: new Set(), src: false, q: "" };
 function drawPartyPanel() {
   const box = $("#ppan"), root = $("#v-explorer"); if (!box) return;
   root.classList.toggle("po", !!EX.party);
   if (!EX.party) { box.hidden = true; box.innerHTML = ""; PP.pid = ""; return; }
   const pid = EX.party, p = P[pid], info = pcxInfo(pid), total = BANK.questions.length;
-  if (PP.pid !== pid) { PP.pid = pid; PP.area = BANK.areas[0].id; PP.src = false; }
-  const dpc = Math.round(((info.known - info.est) / total) * 100), epc = Math.round((info.est / total) * 100), upc = 100 - dpc - epc;
+  if (PP.pid !== pid) { PP.pid = pid; PP.open = new Set([BANK.areas[0].id]); PP.src = false; PP.q = ""; }
+  const nDoc = info.known - info.est, nUnk = total - info.known;
+  const dpc = Math.round((nDoc / total) * 100), epc = Math.round((info.est / total) * 100), upc = 100 - dpc - epc;
   const row = (q) => {
     const v = q.pos[pid], est = v && q.est.includes(pid), s = q.src && q.src[pid], why = v ? posWhy(q, pid) : "";
     if (!v) return `<li class="pr none"><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span><span class="pr-b">Sin postura conocida</span></li>`;
     const badge = est ? '<span class="pr-b est">Estimada</span>' : s ? '<span class="pr-b src">Con fuente</span>' : '<span class="pr-b">Documentada</span>';
     return `<li class="pr"><details><summary><span class="pr-q"><span class="q-code">${qCode(q)}</span>${esc(q.short || q.text)}</span>
-      <span class="pr-g" role="img" aria-label="Posición ${v} de 5: ${esc(answerText(q, v, true))}"><span class="pg"><i style="--p:${(v - 1) * 25}%"></i></span><span class="pr-l">${esc(answerText(q, v, true))}</span></span>${badge}</summary>
+      <span class="pr-g" role="img" aria-label="Posición ${v} de 5: ${esc(answerText(q, v, true))}${est ? ", estimada" : ""}"><span class="p5${est ? " e" : ""}">${[1, 2, 3, 4, 5].map((n) => `<i${n === v ? ' class="on"' : ""}></i>`).join("")}</span></span>
+      <span class="pr-m"><span class="pr-l">${esc(answerText(q, v, true))}</span>${badge}</span></summary>
       <div class="pr-x"><p class="pr-t">${esc(q.text)}</p>${q.type === "dilema" ? `<p class="small">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}<p><b>${esc(answerText(q, v))}</b> · ${est ? "estimada" : "documentada"}${srcLink(q, pid)}</p>${why ? `<p class="small muted">${esc(why)}</p>` : ""}</div></details></li>`;
   };
-  const keep = (q) => q.area === PP.area && (!PP.src || (q.pos[pid] && q.src && q.src[pid]));
-  const cur = BANK.areas.find((x) => x.id === PP.area), curQs = BANK.questions.filter(keep);
-  const cards = BANK.areas.map((a) => { const all = BANK.questions.filter((q) => q.area === a.id), k = all.filter((q) => q.pos[pid]).length;
+  const norm = (x) => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const needle = norm(PP.q);
+  const keep = (q) => (!PP.src || (q.pos[pid] && q.src && q.src[pid])) && (!needle || norm(`${qCode(q)} ${q.short} ${q.text}`).includes(needle));
+  let shown = 0;
+  const areas = BANK.areas.map((a) => {
+    const all = BANK.questions.filter((q) => q.area === a.id), qs = all.filter(keep); shown += qs.length;
+    if (needle && !qs.length) return "";
+    const k = all.filter((q) => q.pos[pid]).length, ks = all.filter((q) => q.pos[pid] && !q.est.includes(pid) && q.src && q.src[pid]).length, ke = all.filter((q) => q.pos[pid] && q.est.includes(pid)).length;
     const strip = all.map((q) => `<i class="${!q.pos[pid] ? "u" : q.est.includes(pid) ? "e" : "d"}"></i>`).join("");
-    return `<button type="button" class="pa-card" data-pa="${a.id}" aria-pressed="${PP.area === a.id}"><span class="pa-l">${a.letter}</span><b>${esc(a.name)}</b><span class="pa-n">${k} de ${all.length} con postura</span><span class="pa-s" aria-hidden="true">${strip}</span></button>`; }).join("");
+    const open = needle || PP.open.has(a.id);
+    return `<details class="pa-acc" data-pa="${a.id}"${open ? " open" : ""}><summary><span class="pa-l">${a.letter}</span><span class="pa-t"><b>${esc(a.name)}</b><span class="pa-n">${k} de ${all.length} con postura · ${ks} con fuente${ke ? ` · ${ke} ${ke === 1 ? "estimada" : "estimadas"}` : ""}</span><span class="pa-s" aria-hidden="true">${strip}</span></span></summary>
+      ${qs.length ? `<ul class="pr-l2">${qs.map(row).join("")}</ul>` : '<p class="muted pa-empty">Ninguna postura con ese filtro en esta área.</p>'}</details>`;
+  }).join("");
   const dimRows = BANK.dims.map((d) => { const v = (PARTY_DIM[pid] || {})[d.id];
     return `<li><span class="dp-n">${esc(d.name)}</span>${v === undefined ? '<span class="dp-none">Sin datos suficientes</span>' : `<span class="dp-t" role="img" aria-label="${esc(d.name)}: ${signed(v)} entre ${esc(d.a)} (−100) y ${esc(d.b)} (+100)"><i style="--p:${(v + 100) / 2}%"></i></span>`}<span class="dp-e"><em>${esc(d.a)}</em><em>${esc(d.b)}</em></span></li>`; }).join("");
+  const side = PIDS.map((x) => `<li><button type="button" data-pp-go="${x}"${x === pid ? ' aria-current="true"' : ""}>${logo(x, "xs")}<span>${esc(P[x].name)}</span></button></li>`).join("");
   box.hidden = false;
   box.style.setProperty("--pc", p.color);
-  box.innerHTML = `<section class="ppan" aria-label="Posturas de ${esc(p.name)}">
+  box.innerHTML = `<div class="pp-layout"><nav class="pp-side" aria-label="Candidaturas"><p class="label">Candidaturas</p><ul>${side}</ul></nav>
+    <section class="ppan" aria-label="Posturas de ${esc(p.name)}">
     <button type="button" class="pp-back" id="pp-x"><span aria-hidden="true">←</span> Todas las candidaturas</button>
-    <div class="pp-head">${logo(pid)}<div><h3>${esc(p.name)}</h3><p>${esc(p.tag)}</p><p class="pp-w">${esc(info.where)}</p></div></div>
-    <div class="pp-stats"><div><b>${info.src}</b><span>con fuente enlazada</span></div><div><b>${info.est}</b><span>estimadas</span></div><div><b>${total - info.known}</b><span>sin postura conocida</span></div></div>
-    <div class="stack" role="img" aria-label="${dpc} % documentadas, ${epc} % estimadas, ${upc} % sin postura conocida"><span class="sk-d" style="--w:${dpc}%"></span><span class="sk-e" style="--w:${epc}%"></span><span class="sk-u" style="--w:${upc}%"></span></div>
-    <p class="pp-about">${esc(p.desc)}</p>
-    <section class="pp-sec" aria-labelledby="pp-dh"><h4 id="pp-dh">Su perfil en siete dimensiones</h4><ul class="dprof">${dimRows}</ul><p class="pp-key">Calculado con todas sus posturas del banco; las estimadas pesan menos. Es una lectura del test, no una etiqueta.</p></section>
-    <section class="pp-sec" aria-labelledby="pp-ah"><h4 id="pp-ah">Sus posturas por área</h4><p class="pp-key">Elige un área. Las barras pequeñas muestran qué preguntas tienen postura: <i class="lg d"></i> documentada · <i class="lg e"></i> estimada · <i class="lg u"></i> sin postura.</p><div class="pa-grid" role="group" aria-label="Áreas">${cards}</div></section>
-    <section class="pp-sec pp-list" id="pp-list" aria-labelledby="pp-lh"><div class="pp-lt"><h4 id="pp-lh"><span>${cur.letter}</span>${esc(cur.name)}</h4><label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
-      <p class="pp-key">Posición de 1 (En desacuerdo) a 5 (De acuerdo). Toca una fila para ver el detalle y la fuente.</p>
-      ${curQs.length ? `<ul class="pr-l2">${curQs.map(row).join("")}</ul>` : '<p class="muted">Ninguna postura con ese filtro en esta área.</p>'}</section>
-    ${p.props && p.props.length ? `<div class="pp-props"><h4>Algunas de sus propuestas</h4><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul></div>` : ""}
-    <p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></section>`;
+    <div class="pp-top">
+      <div class="pp-card pp-id">
+        <div class="pp-head">${logo(pid)}<div><h3>${esc(p.name)}</h3><p>${esc(p.tag)}</p><p class="pp-w">${esc(info.where)}</p></div></div>
+        <p class="pp-about">${esc(p.desc)}</p>
+        <p class="pp-k">${total} posturas</p>
+        <div class="stack" role="img" aria-label="${nDoc} documentadas, ${info.est} estimadas y ${nUnk} sin postura conocida, de ${total}"><span class="sk-d" style="--w:${dpc}%"></span><span class="sk-e" style="--w:${epc}%"></span><span class="sk-u" style="--w:${upc}%"></span></div>
+        <ul class="stack-l pp-leg"><li><i class="sk-d"></i><span><b>${nDoc}</b> documentadas${info.src === nDoc ? ", todas con fuente" : ` (${info.src} con fuente enlazada)`}</span></li><li><i class="sk-e"></i><span><b>${info.est}</b> estimadas</span></li><li><i class="sk-u"></i><span><b>${nUnk}</b> sin postura conocida</span></li></ul>
+        ${p.props && p.props.length ? `<details class="pp-props"><summary><b>Algunas de sus propuestas</b><span>${Math.min(4, p.props.length)} propuestas · ficha completa con fuentes</span></summary><ul>${p.props.slice(0, 4).map((x) => `<li>${esc(x.t)}</li>`).join("")}</ul><p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p></details>` : `<p class="pp-link"><a href="https://test29n.es/partidos/${pid}/" target="_blank" rel="noopener noreferrer">Ficha completa con todas las fuentes (se abre en test29n.es)</a></p>`}
+      </div>
+      <section class="pp-card pp-sec" aria-labelledby="pp-dh"><h4 id="pp-dh">Su perfil en siete dimensiones</h4><ul class="dprof">${dimRows}</ul><p class="pp-key">Calculado con todas sus posturas del banco; las estimadas pesan menos. Es una lectura del test, no una etiqueta.</p></section>
+    </div>
+    <section class="pp-sec pp-list" id="pp-list" aria-labelledby="pp-ah"><h4 id="pp-ah">Sus posturas por área</h4>
+      <div class="pp-tools2"><label class="pp-q"><span class="sr">Buscar en sus posturas</span><input id="pp-q" type="search" placeholder="Buscar una postura…" autocomplete="off" value="${esc(PP.q)}"></label><label class="pp-sw"><input type="checkbox" id="pp-src"${PP.src ? " checked" : ""}> Solo con fuente</label></div>
+      <p class="pp-key">Cada postura, de 1 (En desacuerdo) a 5 (De acuerdo). Rayada si es estimada. Toca una fila para ver el detalle y la fuente.${needle ? ` <b>${shown} ${shown === 1 ? "postura" : "posturas"} con «${esc(PP.q)}».</b>` : ""}</p>
+      <div class="pa-list">${areas || '<p class="muted">Ninguna postura coincide con la búsqueda.</p>'}</div></section>
+    </section></div>`;
 }
 function syncPartyFocus() {
   drawPartyPanel();
