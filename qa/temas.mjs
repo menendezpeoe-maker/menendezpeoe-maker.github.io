@@ -66,7 +66,7 @@ console.log("Test por tema desde la portada");
   ok(/Test de vivienda/.test(await page.textContent("#r-summary .ballot-top")), "el resultado indica que es el test de vivienda");
   ok(/versión exprés/.test(await page.textContent('[data-act="more"]')), "«Afinar» propone seguir con la versión exprés");
   const ans1 = (await state(page)).ans;
-  await page.click('[data-act="more"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+  await page.click('[data-act="more"]:visible'); await page.waitForSelector("#v-quiz:not([hidden])");
   const st2 = await state(page);
   ok(st2.mode === "expres" && Object.keys(ans1).every((id) => st2.ans[id] === ans1[id]) && st2.ans[st2.order[st2.idx]] === undefined, "pasa a la exprés conservando las respuestas y empieza por una sin responder");
   await ctx.close();

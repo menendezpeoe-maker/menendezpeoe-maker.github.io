@@ -36,7 +36,7 @@ console.log("Ampliar a una versión más larga");
   const total = Number(/de (\d+)/.exec(await page.textContent("#q-count"))[1]);
   for (let i = 0; i < total; i++) { await page.keyboard.press(String(1 + (i % 5))); await page.waitForTimeout(380); }
   await page.waitForSelector("#v-prios:not([hidden])"); await page.selectOption("#f-prov", "madrid"); await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
-  await page.click('[data-act="more"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+  await page.click('[data-act="more"]:visible'); await page.waitForSelector("#v-quiz:not([hidden])");
   const seen = [];
   for (let i = 0; i < 4; i++) {
     seen.push(await page.evaluate(() => { const s = JSON.parse(localStorage.getItem("papeleta29n.v2")); return s.ans[s.order[s.idx]] === undefined; }));

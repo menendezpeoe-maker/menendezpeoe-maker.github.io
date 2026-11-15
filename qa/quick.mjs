@@ -68,7 +68,7 @@ const anyAns = Object.fromEntries(qs.map((q, i) => [q.id, 1 + (i % 5)]));
 await page.evaluate((s) => localStorage.setItem("papeleta29n.v2", JSON.stringify(s)), { v: 2, bank: bank.version, prov: "madrid", mode: "rapida", seed: 7, order, idx: 0, ans: anyAns, imp: {}, prios: [], stage: "done", t: 1 });
 await page.reload(); await page.waitForSelector("#v-results:not([hidden])");
 ok(/versión exprés/.test(await page.textContent('[data-act="more"]')), "«Afinar» ofrece pasar a la exprés");
-await page.click('[data-act="more"]'); await page.waitForSelector("#v-quiz:not([hidden])");
+await page.click('[data-act="more"]:visible'); await page.waitForSelector("#v-quiz:not([hidden])");
 const st2 = await page.evaluate(() => JSON.parse(localStorage.getItem("papeleta29n.v2")));
 ok(st2.mode === "expres" && qs.every((q) => st2.ans[q.id] === anyAns[q.id]) && st2.ans[st2.order[st2.idx]] === undefined, "pasa a la exprés conservando las respuestas y empieza por una sin responder");
 
