@@ -219,7 +219,7 @@
    },
    {
     "pid": "vox",
-    "n": 7
+    "n": 6
    },
    {
     "pid": "falange",
@@ -227,7 +227,7 @@
    },
    {
     "pid": "salf",
-    "n": 5
+    "n": 6
    },
    {
     "pid": "pcte",
@@ -251,7 +251,7 @@
    }
   ],
   "mediaPrimero": 61,
-  "mediaDistancia": 1.8
+  "mediaDistancia": 1.9
  },
  "neutral": [
   {
@@ -313,7 +313,7 @@
   {
    "pid": "salf",
    "conocidas": 106,
-   "estimadas": 67,
+   "estimadas": 64,
    "conFuente": 48
   },
   {
@@ -337,8 +337,8 @@
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 61,
-   "conFuente": 38
+   "estimadas": 55,
+   "conFuente": 44
   },
   {
    "pid": "bng",
@@ -403,8 +403,8 @@
   {
    "pid": "adel",
    "conocidas": 91,
-   "estimadas": 57,
-   "conFuente": 35
+   "estimadas": 39,
+   "conFuente": 53
   },
   {
    "pid": "cha",
