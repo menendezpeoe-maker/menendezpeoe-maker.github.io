@@ -7483,7 +7483,7 @@
    "lr": 0,
    "pos": {
     "psoe": 4,
-    "pp": 3,
+    "pp": 4,
     "vox": 4,
     "fa": 5,
     "pod": 5,
@@ -7504,6 +7504,7 @@
     "mj": 4
    },
    "est": [
+    "pp",
     "salf",
     "d21",
     "junts",
@@ -7533,10 +7534,10 @@
      "2023-07"
     ],
     "pp": [
-     "https://www.menorca.info/actualidad/nacional/2024/09/27/2249715/feijoo-propone-elevar-hasta-1800-euros-deducciones-por-hijo.html",
-     "Menorca (Europa Press), Feijóo propone elevar las deducciones por hijo, 27/09/2024",
-     "declaracion",
-     "2024-09-27"
+     "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
+     "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43",
+     "programa",
+     "2026-11"
     ],
     "vox": [
      "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=51",
@@ -7578,7 +7579,7 @@
    "why": {
     "mj": "Su programa del 29N propone una única prestación universal y progresiva para la infancia a la que tengan derecho todos los hogares con crianza.",
     "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
-    "pp": "Propone subir a 1.800 euros anuales las deducciones fiscales por hijo, sin plantear una prestación universal.",
+    "pp": "Estimación: su programa del 29N refunde las deducciones familiares en una reembolsable, con abono mensual, que llegue a todas las familias; no dice si dependerá de la renta.",
     "vox": "Su programa de 2026 extiende los beneficios de las familias numerosas a todas las familias españolas desde el primer hijo, según su número.",
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
     "erc": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
@@ -8718,7 +8719,7 @@
    "pos": {
     "psoe": 3,
     "pp": 3,
-    "vox": 2,
+    "vox": 4,
     "fa": 5,
     "pod": 5,
     "salf": 3,
@@ -8832,7 +8833,7 @@
    "why": {
     "psoe": "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
     "pp": "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
-    "vox": "Su programa de 2026 da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales.",
+    "vox": "Su programa del 29N da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales; no cita la alta velocidad.",
     "fa": "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional.",
     "pod": "Estimación: favorable a priorizar Cercanías y trenes regionales.",
     "erc": "Su programa de 2026 exige financiar el Plan de Rodalies 2026-2030 y completar el traspaso de Rodalies a la Generalitat.",

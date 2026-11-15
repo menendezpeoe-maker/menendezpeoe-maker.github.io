@@ -195,15 +195,15 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 104
+    "n": 102
    },
    {
     "pid": "pp",
-    "n": 66
+    "n": 71
    },
    {
     "pid": "d21",
-    "n": 61
+    "n": 60
    },
    {
     "pid": "fo",
@@ -227,7 +227,7 @@
    },
    {
     "pid": "salf",
-    "n": 5
+    "n": 4
    },
    {
     "pid": "pacma",
@@ -242,11 +242,11 @@
     "n": 2
    },
    {
-    "pid": "ie",
-    "n": 2
+    "pid": "pod",
+    "n": 1
    },
    {
-    "pid": "pod",
+    "pid": "ie",
     "n": 1
    }
   ],
@@ -289,7 +289,7 @@
   {
    "pid": "pp",
    "conocidas": 107,
-   "estimadas": 10,
+   "estimadas": 11,
    "conFuente": 97
   },
   {

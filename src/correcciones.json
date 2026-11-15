@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "B01",
+  "partido": "ph",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un tope legal: ningún alquiler podrá superar el 30 % de la renta media disponible de su código postal.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=9",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "B04",
   "partido": "pnv",
   "de": 3,
@@ -49,6 +65,70 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "B08",
+  "partido": "ph",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone incorporar 2,5 millones de viviendas a un parque público de alquiler social en 10 años, con edificación en suelo público.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=8",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "D03",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone que la ciudadanía elija directamente a los vocales del CGPJ entre candidaturas independientes, no los jueces ni los partidos.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "D05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa pide medidas para poner fin a la práctica de las puertas giratorias y a los abusos de los oligopolios de la energía; no fija plazo.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 16",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "D05",
+  "partido": "mj",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone que un alto cargo no pueda ser contratado por una empresa del sector de su responsabilidad en, al menos, 5 años.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=73",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 73",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "D06",
   "partido": "adel",
   "de": 4,
@@ -59,6 +139,54 @@
   "fuente": [
    "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
    "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "D07",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa se declara contrario a la monarquía y partidario de una república; habla del «momento de decidir la nueva forma de Estado», sin citar un referéndum.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "E08",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa niega una violencia estructural contra las mujeres, dice que se da «en ambas direcciones» y pide derogar las leyes de discriminación positiva.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=31",
+   "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 31",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "F01",
+  "partido": "ph",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide la regularización administrativa inmediata de todas las personas migrantes que residen en España.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=19",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 19",
    "programa",
    "2026-11"
   ]
@@ -97,6 +225,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "G06",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N prioriza las inversiones en el tren convencional que cohesiona el medio rural y la gratuidad de Cercanías y Media Distancia.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "H07",
   "partido": "pnv",
   "de": 2,
@@ -107,6 +251,54 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
    "Programa electoral de EAJ-PNV de 2026, p. 28",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "I01",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N apoya la coexistencia de la educación pública y la concertada y reconoce la aportación social de la concertada en contextos precarios.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=45",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "I01",
+  "partido": "ph",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone no renovar los conciertos educativos al expirar y pasar todo ese dinero a la escuela pública.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=13",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 13",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "J02",
+  "partido": "ph",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide derogar todas las fórmulas de colaboración público-privada en la sanidad y blindar su gestión pública directa.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=11",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 11",
    "programa",
    "2026-11"
   ]
@@ -139,6 +331,22 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
    "Programa electoral de EAJ-PNV de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "L04",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide mantener la prohibición de la gestación subrogada en España para proteger a las mujeres de la explotación reproductiva.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=79",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 79",
    "programa",
    "2026-11"
   ]
