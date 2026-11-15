@@ -268,7 +268,7 @@ export const QUESTIONS = [
   text: "Las penas para los delincuentes multirreincidentes deberían endurecerse.",
   short: "Penas más duras a multirreincidentes",
   ctx: "Los hurtos leves se castigaban con multas, lo que permitía a algunas personas acumular decenas de detenciones sin entrar en prisión, una queja frecuente de comercios y vecinos de grandes ciudades. En 2026 las Cortes aprobaron, a propuesta de Junts, una reforma que castiga con prisión a quien acumula varios hurtos. Los partidarios de penas más duras buscan disuadir; sus críticos señalan que el problema es la lentitud de los juicios y que más cárcel no reduce por sí sola la reincidencia.",
-  pos: "4 5 5 1 1 5 0 5~ 2 5 4 1 5 2~ 1~ 4~ 1~ 1~ 2~ 1~ 0 1~ 1~ 0 0 0 0 0 0 5 0 0 0" },
+  pos: "4 5 5 1 1 5 0 5~ 2 5 4 1 5 2~ 2~ 4~ 1~ 1~ 2~ 1~ 0 1~ 1~ 0 0 0 0 0 0 5 0 0 0" },
 { id: "E02", area: "jus", prio: 2, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "La prisión permanente revisable debería derogarse.",
   short: "Derogar la prisión permanente revisable",
@@ -406,7 +406,7 @@ export const QUESTIONS = [
   text: "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
   short: "Más aprovechamiento del monte contra incendios",
   ctx: "En el verano de 2025 ardieron más de 350.000 hectáreas, sobre todo en Galicia, Castilla y León y Extremadura. Los expertos coinciden en que el abandono del campo acumula vegetación que alimenta los fuegos. La discusión es cómo actuar: más pastoreo, desbroces y aprovechamiento, incluso en espacios protegidos, o más medios de extinción y una gestión forestal con criterios de conservación.",
-  pos: "4 4 5 3 2~ 4 2 4~ 0 0 0 0 4~ 0 3~ 0 0 0 0 0 4~ 0 0 0 5~ 4~ 4~ 4~ 0 0 0 0 0" },
+  pos: "4 4 5 3 2~ 4 2 4~ 0 0 0 0 4~ 0 4~ 0 0 0 0 0 4~ 0 0 0 5~ 4~ 4~ 4~ 0 0 0 0 0" },
 { id: "G09", area: "ene", prio: 2, type: "dilema", dim: "amb", dir: -1, lr: -1,
   text: "Tras el apagón de 2025, ¿qué debería priorizar el sistema eléctrico?",
   A: "Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
@@ -908,6 +908,7 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240", "programa", "2019-04"],
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=48", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 48", "programa", "2019-05"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=19", "Programa electoral de Sumar para el 23J de 2023, p. 19", "programa", "2023-07"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=21", "Programa electoral del BNG de 2026, p. 21", "programa", "2026-11"],
   },
   A05: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=24", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 24", "programa", "2026-11"],
@@ -1364,6 +1365,7 @@ export const SOURCES = {
     upn: ["https://www.naiz.eus/en/info/noticia/amp/20260212/el-congreso-aprueba-la-ley-de-multirreincidencia-de-junts-con-apoyo-de-psoe-pp-vox-y-pnv", "Naiz (Europa Press), El Congreso aprueba la ley de multirreincidencia de Junts, 12-02-2026", "parlamento", "2026-02-12"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=39", "Programa de FE de las JONS para las generales del 29N de 2026, p. 39", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=8", "Contrato electoral simplificado de SALF para las generales de 2026, p. 8", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30", "Programa electoral del BNG de 2026, p. 30", "programa", "2026-11"],
   },
   E02: {
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 17", "programa", "2026-11"],
@@ -1696,6 +1698,7 @@ export const SOURCES = {
     mes: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81", "Programa electoral de Sumar de 2023, p. 81; MÉS concurrió en esa coalición", "programa", "2023-07"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
     soria: ["https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf#page=1", "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=60", "Programa electoral del BNG de 2026, p. 60", "programa", "2026-11"],
   },
   G07: {
     psoe: ["https://es.ara.cat/sociedad/vivienda/gobierno-espanol-endurecera-restricciones-zonas-inundables-nuevos-edificios-no-podran-garaje_1_5799917.html", "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)", "gobierno", "2026-07-15"],
@@ -1710,6 +1713,7 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=43", "Programa de PACMA para las generales de 2023, apartado de prevención de incendios y conservación del patrimonio natural", "programa", "2023-07"],
     salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22", "Programa electoral de SALF para Castilla y León, p. 22 (programa autonómico CyL 2026; mismo asunto)", "programa", "2026-03"],
     pcte: ["https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7", "Programa electoral del PCTE para las generales de 2019 (10N), p. 7", "programa", "2019-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=69", "Programa electoral del BNG de 2026, p. 69", "programa", "2026-11"],
   },
   G09: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58", "programa", "2026-11"],
@@ -1768,6 +1772,7 @@ export const SOURCES = {
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19", "Programa de FE de las JONS para las generales del 29N de 2026, p. 19", "programa", "2026-11"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35", "Contrato electoral simplificado de SALF para las generales de 2026, p. 35", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=48", "Programa electoral del BNG de 2026, p. 48", "programa", "2026-11"],
   },
   H03: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
@@ -1952,6 +1957,7 @@ export const SOURCES = {
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=52", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 52", "programa", "2026-11"],
     pod: ["https://www.moncloa.com/2020/05/20/nuevas-becas-castells-169951/", "Moncloa.com: reforma de becas del ministro Castells (cuota de Unidas Podemos), 2020", "prensa", "2020-05-20"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47", "Programa de FE de las JONS para las generales del 29N de 2026, p. 47", "programa", "2026-11"],
+    bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=36", "Programa electoral del BNG de 2026, p. 36", "programa", "2026-11"],
   },
   I07: {
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=33", "Programa electoral de Vox de 2023, medida 51", "programa", "2023-07"],
@@ -2395,6 +2401,7 @@ export const JUSTIF = {
     comp: "Propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
     cha: "Pide derogar el Pacto de estabilidad y revisar los objetivos de déficit y deuda pública, en lugar de priorizar su reducción.",
     upc: "Pide que las reglas fiscales no impongan reducir deuda y déficit a corto plazo y rechaza los límites del 3 % y el 60 %, sin fundamento económico.",
+    bng: "Estimación: su programa del 29N pide elevar el gasto en protección social, como mínimo, al gasto medio de la UE; no trata la deuda.",
   },
   A05: {
     mj: "Su programa del 29N propone profundizar en la cuota de solidaridad y la subida de la base máxima de cotización, eliminando progresivamente el tope, para sostener las pensiones.",
@@ -2868,6 +2875,7 @@ export const JUSTIF = {
     falange: "Su programa del 29N propone incrementar las penas por reincidencia.",
     erc: "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas.",
     salf: "Su contrato de 2026 impone prisión sin suspensión a la tercera condena, juicios rápidos en 72 horas y cumplimiento íntegro para delitos graves.",
+    bng: "Estimación: su programa del 29N pide derogar la prisión permanente revisable y prima la reinserción; no trata la multirreincidencia.",
   },
   E02: {
     pp: "Su programa de 2026 amplía la prisión permanente revisable a quien oculte el cadáver y a los depredadores sexuales.",
@@ -3203,6 +3211,7 @@ export const JUSTIF = {
     mes: "Estimación: MÉS concurrió en Sumar en 2023 y su programa redirige la inversión ferroviaria de la alta velocidad a Cercanías y al tren convencional.",
     ph: "Su programa del 29N prioriza las inversiones en el tren convencional que cohesiona el medio rural y la gratuidad de Cercanías y Media Distancia.",
     soria: "Estimación: su programa del 29N pide a la vez una estación de AVE en el sur de Soria y electrificar, desdoblar y reabrir líneas convencionales.",
+    bng: "Estimación: su programa del 29N pide implantar «sin máis demoras» cercanías en las ciudades gallegas y, a la vez, acabar las obras pendientes del AVE (p. 61).",
   },
   G07: {
     psoe: "Su Gobierno propone prohibir nuevas viviendas en las zonas de flujo preferente y endurecer la construcción en el resto de zonas inundables.",
@@ -3221,6 +3230,7 @@ export const JUSTIF = {
     pacma: "PACMA acepta el desbroce y la selvicultura preventiva y pide prohibir las quemas para obtener pastos, y quiere reforzar, no flexibilizar, la protección de los espacios naturales.",
     salf: "Propone facilitar quemas prescritas y pastoreo en montes, además de planes de control de fauna.",
     pcte: "Estimación: el programa de 2019 propone un uso productivo y sostenible de los montes y una política preventiva de limpieza contra el fuego.",
+    bng: "Estimación: su programa del 29N pide incentivos fiscales al uso y aprovechamiento multifuncional del monte; no habla de flexibilizar espacios protegidos.",
   },
   G09: {
     mj: "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
@@ -3277,6 +3287,7 @@ export const JUSTIF = {
     falange: "Su programa del 29N propone salir del euro y una salida escalonada y pactada de la UE, con una refundación basada en la soberanía de las naciones.",
     ie: "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
     salf: "Su contrato de 2026 propone un referéndum de renegociación europea y, si Bruselas se niega, un segundo referéndum de salida.",
+    bng: "Estimación: su programa del 29N rechaza centralizar en la UE los fondos de cohesión, la PAC y el FEMPA y exige su gestión descentralizada.",
   },
   H03: {
     psoe: "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
@@ -3465,6 +3476,7 @@ export const JUSTIF = {
     pp: "Su programa de 2026 hace de la beca un derecho para quien la necesite y apruebe y crea becas de excelencia para los mejores expedientes.",
     pod: "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas.",
     falange: "Estimación: su programa del 29N propone ajustar las becas al poder adquisitivo y a los méritos académicos, lo que apunta a exigir rendimiento.",
+    bng: "Estimación: su programa del 29N pide un sistema de becas universitarias que garantice el acceso universal a la enseñanza superior; no habla de notas.",
   },
   I07: {
     pp: "Estimación: en 2019 Vox exigió en Murcia el permiso de los padres para estas charlas; la dirección nacional del PP no se ha pronunciado.",

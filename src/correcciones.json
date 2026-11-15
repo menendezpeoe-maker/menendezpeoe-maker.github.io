@@ -209,6 +209,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "F06",
+  "partido": "pp",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N refunde las deducciones familiares en una reembolsable, con abono mensual, que llegue a todas las familias; no dice si dependerá de la renta.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "G02",
   "partido": "bng",
   "de": 3,
@@ -235,6 +251,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G06",
+  "partido": "vox",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales; no cita la alta velocidad.",
+  "fuente": [
+   "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61",
+   "Programa electoral de Vox de 2026 («Es sentido común»), p. 61",
    "programa",
    "2026-11"
   ]
