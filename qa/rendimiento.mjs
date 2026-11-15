@@ -17,7 +17,8 @@ const SITE = (process.env.BASE || "http://127.0.0.1:8766/").replace(/_local\.htm
 // 8 nov: local 22 → 23 s (medido 21,9–22,2 s con el recorrido interactivo y la calculadora de la metodología, +1,4 kB comprimidos); el presupuesto de la web real no cambia.
 // 8 nov (comparar): local 1100 → 1160 kB y 23 → 24 s sin comprimir (medido 1106 kB y ~23 s, el tiempo crece con los bytes); comprimido solo suma unos 8 kB (270 → ~280 kB en la web real, lejos de los 410 kB del presupuesto real, que no cambia).
 // 13 nov (M+J, candidatura 30, y programas del 29N): local 1160 → 1200 kB y 24 → 25 s sin comprimir (medido 1173 kB y 24,3 s); el presupuesto de la web real no cambia.
-const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1200, 25], page: [300, 5] };
+// 15 nov (posturas documentadas, con fuentes y justificaciones nuevas): local 1200 → 1260 kB y 25 → 26 s sin comprimir (medido 1211 kB y 25,1 s); el presupuesto de la web real no cambia.
+const BUDGET = REAL ? { home: [410, 9], page: [220, 3] } : { home: [1260, 26], page: [300, 5] };
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const browser = await chromium.launch();
