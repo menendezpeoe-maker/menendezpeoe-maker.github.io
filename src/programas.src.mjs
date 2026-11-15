@@ -6,6 +6,11 @@ export const PROGRAMAS = {
   // id de partido → { url, titulo, fecha, alta?, tipo?, nota? }   (tipo "avance": documento breve o parcial; si no, programa completo)   (vacío: aún no publicado). `alta`: día en que entró en la web, solo si la
   // fecha del programa no es un día concreto; ordena «Últimas incorporaciones» en /programas/.
   publicados: {
+    psoe: { url: "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf", titulo: "Programa electoral del PSOE para las generales del 29N de 2026: «La fuerza de seguir avanzando»", fecha: "2026-11-14" },
+    comp: { url: "https://frontvalencia.net/programa-compromis-front-valencia.pdf", titulo: "Programa electoral de Compromís-Front Valencià para el 29N (en valenciano)", fecha: "2026-11-13" },
+    gbai: { url: "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf", titulo: "Bases políticas de Geroa Bai para las elecciones generales del 29 de noviembre de 2026", fecha: "2026-11-13", tipo: "avance", nota: "bases políticas de 14 páginas, sin medidas detalladas" },
+    existe: { url: "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf", titulo: "Programa de Teruel Existe para las elecciones generales de 2026", fecha: "2026-11-12", tipo: "avance", nota: "tres páginas con 14 propuestas" },
+    upc: { url: "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf", titulo: "Manifiesto electoral de Unidad del Pueblo Canario para el 29N", fecha: "2026-11", alta: "2026-11-15", tipo: "avance", nota: "manifiesto de seis páginas con 16 ejes" },
     soria: { url: "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf", titulo: "Programa de Soria ¡Ya! para las generales del 29N de 2026 (una página)", fecha: "2026-11-12", tipo: "avance", nota: "una página con sus exigencias" },
     d21: { url: "https://mi.democracia21.es/programa", titulo: "«La España que merecemos», programa electoral de Democracia 21 para el 29N (versión web, sin fecha impresa; detectado el 14 nov)", fecha: "2026-11", alta: "2026-11-14" },
     pacma: { url: "https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf", titulo: "Programa electoral de PACMA para las elecciones generales del 29N de 2026", fecha: "2026-11-12" },

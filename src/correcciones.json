@@ -17,6 +17,38 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "A08",
+  "partido": "d21",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N encarga el SMI a un órgano técnico que pondere la productividad, con la meta de no bajar de 2/3 de la mediana salarial.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-prospera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "B01",
+  "partido": "d21",
+  "de": 1,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una limitación general y temporal de los alquileres en zonas tensionadas, ligada a proteger al pequeño propietario.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "B01",
   "partido": "ph",
   "de": 4,
@@ -59,6 +91,38 @@
   "fuente": [
    "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
    "Programa electoral del BNG de 2026, p. 12",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "B07",
+  "partido": "d21",
+  "de": 1,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un recargo mínimo del 10 % (hasta el 25 % por las comunidades) a la compra de vivienda no habitual por inversores extracomunitarios.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "B08",
+  "partido": "d21",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
    "programa",
    "2026-11"
   ]
@@ -178,6 +242,22 @@
  {
   "fecha": "2026-11-15",
   "id": "E08",
+  "partido": "d21",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N no permitirá que se cuestione la existencia de la violencia de género y bloqueará cualquier intento de desmantelar la protección a sus víctimas.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "E08",
   "partido": "fo",
   "de": 0,
   "a": 4,
@@ -203,6 +283,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=19",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "F04",
+  "partido": "d21",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un visado de búsqueda de empleo de 6 meses con cupo según vacantes y formar trabajadores en origen con contrato antes de viajar.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-prospera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
    "programa",
    "2026-11"
   ]
@@ -289,6 +385,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "G07",
+  "partido": "d21",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone hacer cumplir «sin excepciones» la prohibición de construir viviendas en las zonas inundables de mayor riesgo.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "G08",
   "partido": "bng",
   "de": 3,
@@ -369,6 +481,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "J06",
+  "partido": "d21",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone evaluar el desempeño de los empleados públicos e incentivar económicamente al que rinde; no habla de despido.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "J08",
   "partido": "adel",
   "de": 2,
@@ -395,6 +523,38 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
    "Programa electoral de EAJ-PNV de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "L01",
+  "partido": "d21",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N se opone a derogar o limitar la ley de plazos del aborto y quiere garantizarlo en la sanidad pública; no habla de la Constitución.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "L03",
+  "partido": "d21",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N se opone a recortar los derechos LGTBIQ+, a «patologizar identidades» y a derogar normas de no discriminación trans.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
    "programa",
    "2026-11"
   ]

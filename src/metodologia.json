@@ -195,23 +195,23 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 97
+    "n": 89
    },
    {
     "pid": "pp",
-    "n": 79
+    "n": 80
    },
    {
     "pid": "d21",
-    "n": 57
+    "n": 59
    },
    {
     "pid": "fo",
-    "n": 22
+    "n": 24
    },
    {
     "pid": "fa",
-    "n": 14
+    "n": 17
    },
    {
     "pid": "ph",
@@ -284,7 +284,7 @@
    "pid": "psoe",
    "conocidas": 107,
    "estimadas": 10,
-   "conFuente": 97
+   "conFuente": 100
   },
   {
    "pid": "pp",
@@ -397,8 +397,8 @@
   {
    "pid": "comp",
    "conocidas": 103,
-   "estimadas": 62,
-   "conFuente": 43
+   "estimadas": 48,
+   "conFuente": 60
   },
   {
    "pid": "adel",
@@ -416,13 +416,13 @@
    "pid": "existe",
    "conocidas": 49,
    "estimadas": 43,
-   "conFuente": 6
+   "conFuente": 10
   },
   {
    "pid": "upc",
    "conocidas": 80,
-   "estimadas": 42,
-   "conFuente": 39
+   "estimadas": 41,
+   "conFuente": 42
   },
   {
    "pid": "drago",
@@ -440,7 +440,7 @@
    "pid": "gbai",
    "conocidas": 72,
    "estimadas": 68,
-   "conFuente": 4
+   "conFuente": 5
   },
   {
    "pid": "soria",
