@@ -97,6 +97,38 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "B05",
+  "partido": "existe",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide regulación allí donde haya excesiva presión turística; no dice quién ni cómo.",
+  "fuente": [
+   "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+   "Programa de Teruel Existe para las generales de 2026, p. 3",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "B06",
+  "partido": "comp",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=5",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 5",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "B07",
   "partido": "d21",
   "de": 1,
@@ -139,6 +171,54 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=8",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "C01",
+  "partido": "comp",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide un «concert econòmic responsable» para la Comunitat Valenciana; no habla de Cataluña.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=57",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 57",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "C06",
+  "partido": "comp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone avanzar en la supresión de las diputaciones provinciales y redistribuir sus competencias.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "C08",
+  "partido": "psoe",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone reformar el Senado para convertirlo en una auténtica cámara de representación territorial, con circunscripción autonómica (382).",
+  "fuente": [
+   "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=91",
+   "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 91",
    "programa",
    "2026-11"
   ]
@@ -322,6 +402,22 @@
  {
   "fecha": "2026-11-15",
   "id": "F06",
+  "partido": "comp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una prestación universal por crianza de 200 euros al mes por hijo o hija.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "F06",
   "partido": "pp",
   "de": 3,
   "a": 4,
@@ -331,6 +427,22 @@
   "fuente": [
    "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
    "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G01",
+  "partido": "psoe",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "El Gobierno prorrogó en 2026 la central de Almaraz hasta 2030, pero mantiene el cierre de todo el parque nuclear en 2035.",
+  "fuente": [
+   "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=66",
+   "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 66",
    "programa",
    "2026-11"
   ]
@@ -347,6 +459,38 @@
   "fuente": [
    "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55",
    "Programa electoral del BNG de 2026, p. 55",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G04",
+  "partido": "comp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=24",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 24",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G06",
+  "partido": "existe",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide electrificar la línea convencional y más regionales, y a la vez un corredor de doble vía de altas prestaciones.",
+  "fuente": [
+   "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
+   "Programa de Teruel Existe para las generales de 2026, p. 2",
    "programa",
    "2026-11"
   ]
@@ -417,6 +561,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "H03",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "H07",
   "partido": "pnv",
   "de": 2,
@@ -459,6 +619,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=13",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 13",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "I03",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone limitar la proliferación de universidades privadas y evitar el desvío de recursos públicos hacia ellas.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=17",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 17",
    "programa",
    "2026-11"
   ]
@@ -523,6 +699,22 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
    "Programa electoral de EAJ-PNV de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "K08",
+  "partido": "comp",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone adaptar el regadío a la disponibilidad hídrica con una transición hidrológica justa.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=31",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 31",
    "programa",
    "2026-11"
   ]
