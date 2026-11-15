@@ -1348,11 +1348,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone implementar un impuesto a las grandes fortunas de forma permanente, con tipos de al menos el 4 % para los patrimonios más elevados.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=16",
-   "fuente_titulo": "Programa electoral de Sumar para el 23J de 2023, p. 16",
+   "justificacion": "Su manifiesto del 29N propone reforzar la tributación de las grandes fortunas y de los sectores bancario y energético.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=4",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 4",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1443,11 +1443,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 defiende la consolidación fiscal, pero con más ingresos y reglas europeas compatibles con la inversión.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=24",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N promete una senda decreciente de deuda y déficit, pero también «ingresos nuevos para derechos nuevos» (compromisos 126 y 127).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -3267,11 +3267,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se compromete a subir el salario mínimo interprofesional por encima del IPC anual para mantener el poder adquisitivo.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=7",
-   "fuente_titulo": "Programa electoral de Sumar para el 23J de 2023, p. 7",
+   "justificacion": "Su manifiesto del 29N defiende subir el salario mínimo y rechaza que se elimine el papel del Estado en su actualización.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=4",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 4",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -4692,11 +4692,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Nueva Canarias, socio de UPC, propone limitar los precios del alquiler en las zonas tensionadas.",
-   "fuente_url": "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=40",
-   "fuente_titulo": "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 40",
+   "justificacion": "Su manifiesto del 29N exige regular los precios del alquiler en zonas tensionadas.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -6664,15 +6664,15 @@
    "opcion_b": "",
    "partido_id": "existe",
    "partido": "Coalición Existe",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide regulación allí donde haya excesiva presión turística; no dice quién ni cómo.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 3",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B05",
@@ -6687,11 +6687,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Nueva Canarias, socio de UPC, propone impedir que crezca el alquiler vacacional en las zonas gentrificadas.",
-   "fuente_url": "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=75",
-   "fuente_titulo": "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 75",
+   "justificacion": "Su manifiesto del 29N exige limitar los efectos de la vivienda vacacional y una moratoria de nuevas camas turísticas.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B05",
@@ -7025,15 +7025,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 5,
-   "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=5",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 5",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -7464,13 +7464,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone prohibir temporalmente la compraventa de viviendas a no residentes en zonas tensionadas, más que un impuesto especial.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 4",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B07",
@@ -8017,11 +8017,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone una política de vivienda pública apoyada en parques públicos y potenciar la vivienda pública de alquiler.",
-   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=17",
-   "fuente_titulo": "Programa electoral de Teruel Existe para las generales de 2023, p. 17",
+   "justificacion": "Su programa del 29N propone un parque público de vivienda en todos los municipios y alquiler asequible.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 3",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -8036,11 +8036,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Sumar, socio de UPC, propone crear un parque público de dos millones de viviendas sociales en alquiler.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81",
-   "fuente_titulo": "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 81",
+   "justificacion": "Su manifiesto del 29N exige ampliar el parque público de vivienda con protección permanente.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -8887,15 +8887,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide un «concert econòmic responsable» para la Comunitat Valenciana; no habla de Cataluña.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=57",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 57",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C01",
@@ -9385,11 +9385,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide que la financiación tenga en cuenta el coste de prestar servicios donde vive poca población y dispersa.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 2",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C02",
@@ -10829,11 +10829,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su manifiesto del 29N defiende el «derecho a decidir» y una Canarias con capacidad para decidir su futuro; no habla de referéndum de independencia.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=2",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 2",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C05",
@@ -10981,11 +10981,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N promete financiación suficiente para las diputaciones provinciales, entre otras entidades locales (232); no plantea suprimirlas.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=61",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 61",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C06",
@@ -11262,15 +11262,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone avanzar en la supresión de las diputaciones provinciales y redistribuir sus competencias.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C06",
@@ -11775,15 +11775,15 @@
    "opcion_b": "",
    "partido_id": "psoe",
    "partido": "PSOE",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 defiende reformar el Senado para convertirlo en una cámara de representación territorial.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=232",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N propone reformar el Senado para convertirlo en una auténtica cámara de representación territorial, con circunscripción autonómica (382).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=91",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 91",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C08",
@@ -12577,11 +12577,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Geroa Bai defiende el Convenio Económico navarro y reclama ampliar la capacidad fiscal de Navarra.",
-   "fuente_url": "https://www.noticiasdenavarra.com/politica/2024/09/04/barkos-reclama-navarra-regule-figuras-8651878.html",
-   "fuente_titulo": "Diario de Noticias: Uxue Barkos (Geroa Bai) defiende en el Senado el Convenio Económico",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2024-09-04"
+   "justificacion": "Sus bases del 29N defienden la permanencia del Convenio Económico como herramienta básica del autogobierno frente a «gamazadas encubiertas».",
+   "fuente_url": "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=9",
+   "fuente_titulo": "Bases políticas de Geroa Bai para las generales del 29N, p. 9",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D01",
@@ -14724,11 +14724,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "Estimación: el PSOE no ha propuesto fijar un plazo obligatorio para votar las ILP; en 2016 solo planteó rebajar las firmas exigidas.",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone reducir las firmas necesarias para la iniciativa legislativa popular (371); no fija un plazo para votarlas.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=90",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 90",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D06",
@@ -15009,11 +15009,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone reformar la ley de iniciativa legislativa popular para un funcionamiento ágil; no fija un plazo de votación.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=39",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 39",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D06",
@@ -17819,13 +17819,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N quiere reformar la ley penal del menor porque ya es demasiado punitiva y prioriza la reeducación y la reinserción.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E04",
@@ -19588,11 +19588,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Geroa Bai votó contra sustituir el concepto de violencia sobre la mujer por el de violencia intrafamiliar.",
-   "fuente_url": "https://www.noticiasdenavarra.com/politica/2024/06/27/navarra-aprueba-ley-permitira-cambiar-8413307.html",
-   "fuente_titulo": "Diario de Noticias: el Parlamento de Navarra rechaza la enmienda de Vox para llamar «intrafamiliar» a la violencia sobre la mujer",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2024-06-27"
+   "justificacion": "Sus bases del 29N rechazan el negacionismo de la violencia de género y piden reforzar la protección de las mujeres víctimas de maltrato.",
+   "fuente_url": "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
+   "fuente_titulo": "Bases políticas de Geroa Bai para las generales del 29N, p. 14",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E09",
@@ -22438,11 +22438,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Nueva Canarias, socio de UPC, propone que todas las comunidades autónomas compartan la gestión de los menores migrantes.",
-   "fuente_url": "https://nuevacanarias.org/wp-content/uploads/2023/04/Programa_Electoral_2023.pdf#page=89",
-   "fuente_titulo": "Programa autonómico 2023 de Nueva Canarias (integrante de UPC), p. 89",
+   "justificacion": "Su manifiesto del 29N pide proteger a la infancia migrante no acompañada con una distribución solidaria de la acogida entre territorios.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=4",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 4",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F05",
@@ -22795,15 +22795,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone una prestación universal por crianza de 200 euros al mes por hijo o hija.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F06",
@@ -23179,11 +23179,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Teruel Existe propone una fiscalidad más favorable en las zonas despobladas para fijar población.",
-   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=12",
-   "fuente_titulo": "Programa electoral de Teruel Existe para las generales de 2023, p. 12",
+   "justificacion": "Su programa del 29N propone rebajas del 25 % en el IRPF para quien vive en los pueblos.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 2",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F07",
@@ -23633,13 +23633,13 @@
    "partido": "Unidad del Pueblo Canario",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su manifiesto del 29N exige un sistema público de cuidados y de atención a la dependencia, con una reforma fiscal progresiva.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -24163,15 +24163,15 @@
    "opcion_b": "",
    "partido_id": "psoe",
    "partido": "PSOE",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "El Gobierno prorrogó en 2026 la central de Almaraz hasta 2030, pero mantiene el cierre de todo el parque nuclear en 2035.",
-   "justificacion": "",
-   "fuente_url": "https://es.euronews.com/my-europe/2026/08/14/el-gobierno-de-espana-prorroga-la-central-nuclear-de-almaraz-hasta-2030-y-aplaza-su-cierre",
-   "fuente_titulo": "Euronews, agosto de 2026",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2026-08"
+   "justificacion": "Su programa del 29N se compromete a mantener el calendario de cierre de las centrales nucleares hasta 2035 (compromiso 240).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=66",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 66",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G01",
@@ -25060,11 +25060,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Teruel Existe pide limitar y ordenar los grandes proyectos renovables para proteger el territorio y el paisaje.",
-   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/01/Programa-elecciones-autonomicas-8F-2026.-Teruel-Existe.pdf#page=14",
-   "fuente_titulo": "Programa electoral de Teruel Existe para las autonómicas de Aragón de 2026, p. 14",
+   "justificacion": "Su programa del 29N pide una moratoria en los proyectos de macroparques renovables y líneas de muy alta tensión.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 3",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-01"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -26006,15 +26006,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=24",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 24",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G04",
@@ -26903,11 +26903,11 @@
    "postura_texto": "Más bien B: Mejorar las Cercanías y los trenes regionales",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N quiere «racionalizar» la alta velocidad liberalizada e invertir en mantenimiento, Cercanías y regionales.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=13",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 13",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -26956,15 +26956,15 @@
    "opcion_b": "Mejorar las Cercanías y los trenes regionales",
    "partido_id": "existe",
    "partido": "Coalición Existe",
-   "postura": 2,
-   "postura_texto": "Más bien A: Completar y mejorar la red de alta velocidad",
+   "postura": 3,
+   "postura_texto": "Las dos por igual",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide electrificar la línea convencional y más regionales, y a la vez un corredor de doble vía de altas prestaciones.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 2",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -27357,13 +27357,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone integrar por ley el riesgo de inundación en la ordenación del territorio e impedir construir en zonas inundables.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=35",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G08",
@@ -28081,11 +28081,11 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su manifiesto del 29N apuesta por las energías renovables, la generación distribuida y la soberanía energética.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
@@ -29029,13 +29029,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone reformar los tratados para dar más poder al Parlamento Europeo y un presupuesto de la UE de al menos el 2 % de la RNB.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H02",
@@ -29464,15 +29464,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H03",
@@ -29903,13 +29903,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "El decreto de embargo se convalidó con todos los votos salvo PP, Vox y UPN, lo que incluye a la diputada de Compromís.",
-   "fuente_url": "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
-   "fuente_titulo": "RTVC/EFE: el Congreso convalida el embargo de armas a Israel (8 oct 2025)",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2025-10-08"
+   "justificacion": "Su programa del 29N propone romper relaciones diplomáticas y comerciales con Israel.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H04",
@@ -30399,11 +30399,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Sumar, socio de UPC, promete revertir el cambio de posición de 2022 sobre el Sáhara Occidental.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=143",
-   "fuente_titulo": "Programa de Sumar para el 23J de 2023 (Sumar e IU integran UPC), p. 143",
+   "justificacion": "Su manifiesto del 29N expresa su solidaridad con el pueblo saharaui en su lucha por la autodeterminación y la independencia.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 5",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H05",
@@ -30796,13 +30796,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 2,
    "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone una Unión Europea de la Defensa que pueda sustituir el marco de la OTAN.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=62",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 62",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H06",
@@ -31311,11 +31311,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=149",
-   "fuente_titulo": "Programa electoral de Sumar para el 23J de 2023, p. 149",
+   "justificacion": "Su manifiesto del 29N propone destinar como mínimo el 0,7 % de los Presupuestos Generales del Estado a cooperación y solidaridad internacional.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 5",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H07",
@@ -32033,11 +32033,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa de Sumar, socio de UPC, propone acabar con los acuerdos de externalización de fronteras con terceros países.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
-   "fuente_titulo": "Programa de Sumar para el 23J de 2023 (Sumar, Podemos e IU integran UPC), p. 150",
+   "justificacion": "Su manifiesto del 29N rechaza la externalización de fronteras y defiende vías legales y seguras y la acogida digna.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 5",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H09",
@@ -33359,15 +33359,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone limitar la proliferación de universidades privadas y evitar el desvío de recursos públicos hacia ellas.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=17",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 17",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I03",
@@ -36061,11 +36061,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Podemos, integrante de UPC, pide derogar la ley que permite la gestión privada de la sanidad pública.",
-   "fuente_url": "https://www.ultimahora.es/noticias/nacional/2026/05/31/2640797/podemos-por-agotada-legislatura-este-gobierno-esta-enterrado.html",
-   "fuente_titulo": "Última Hora/Europa Press: Irene Montero (Podemos) pide derogar la Ley 15/97 (31 may 2026)",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2026-05-31"
+   "justificacion": "Su manifiesto del 29N defiende una gestión prioritariamente directa de la sanidad y avanzar en la reversión de privatizaciones y externalizaciones.",
+   "fuente_url": "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+   "fuente_titulo": "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J01",
@@ -36232,11 +36232,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N quiere acabar con las listas de espera reforzando el carácter público del SNS (136); no prevé derivar a la privada.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=49",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 49",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J02",
@@ -39441,13 +39441,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K02",
@@ -39956,11 +39956,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N defiende la agricultura y ganadería familiar, una PAC justa e igualar la PAC entre territorios.",
+   "fuente_url": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
+   "fuente_titulo": "Programa de Teruel Existe para las generales de 2026, p. 2",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K03",
@@ -42118,15 +42118,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone adaptar el regadío a la disponibilidad hídrica con una transición hidrológica justa.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=31",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K08",
@@ -42236,11 +42236,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.diaridetarragona.com/espana/256561/gobierno-aprueba-proyecto-reforma-constitucional-proteger-aborto.html",
-   "fuente_titulo": "Diari de Tarragona (ACN), Consejo de Ministros del 07/04/2026",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2026-04-07"
+   "justificacion": "Su programa del 29N impulsará la reforma del artículo 43 de la Constitución, iniciada en 2026, para reforzar la garantía del derecho al aborto.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=81",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 81",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L01",
@@ -43528,11 +43528,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: sus bases del 29N piden mantener vigentes los derechos civiles conquistados por el colectivo LGTBI; no detallan la ley trans.",
+   "fuente_url": "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
+   "fuente_titulo": "Bases políticas de Geroa Bai para las generales del 29N, p. 14",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L04",
@@ -43849,13 +43849,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone reforzar la prohibición de la gestación subrogada y sancionar a las agencias que la promocionan.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=53",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 53",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L04",
