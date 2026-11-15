@@ -370,7 +370,6 @@
     "mj": 5
    },
    "est": [
-    "salf",
     "gbai",
     "ccpc",
     "drago",
@@ -418,10 +417,10 @@
      "2025-06-26"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
@@ -510,7 +509,7 @@
    },
    "why": {
     "mj": "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
-    "salf": "En su programa para Castilla y León (2026) propone bajar impuestos y reducir el aparato del Estado para dejar el dinero en manos de los contribuyentes.",
+    "salf": "Su contrato del 29N propone una gran rebaja fiscal con la regla de «un euro de rebaja, un euro de ahorro certificado».",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     "bildu": "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
     "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas.",
@@ -871,13 +870,11 @@
    "est": [
     "salf",
     "d21",
-    "pnv",
     "upn",
     "gbai",
     "drago",
     "existe",
-    "mes",
-    "adel"
+    "mes"
    ],
    "src": {
     "mj": [
@@ -975,6 +972,18 @@
      "Programa electoral del BNG de 2026, p. 19",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=31",
+     "Programa electoral de EAJ-PNV de 2026, p. 31",
+     "programa",
+     "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=55",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 55",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -993,7 +1002,9 @@
     "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
     "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos.",
     "ph": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación.",
-    "bng": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza."
+    "bng": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza.",
+    "pnv": "Su programa del 29N pide revalorizar las pensiones con el IPC y reforzar las fuentes de financiación del sistema público.",
+    "adel": "Su programa del 29N propone cotizar sin topes por los ingresos reales y aportar impuestos para sostener pensiones públicas revalorizadas con el IPC."
    }
   },
   {
@@ -1032,7 +1043,6 @@
     "salf",
     "d21",
     "junts",
-    "pnv",
     "bildu",
     "upn",
     "bng",
@@ -1058,6 +1068,12 @@
      "Programa electoral de ERC de 2026, p. 23",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=15",
+     "Programa electoral de EAJ-PNV de 2026, p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1065,7 +1081,8 @@
     "pp": "Su programa de 2026 revisará los umbrales que castigan el crecimiento y simplificará las obligaciones de las empresas de hasta 250 trabajadores.",
     "vox": "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas.",
     "pod": "Estimación: contraria a suavizar obligaciones laborales de las empresas, en línea con su defensa de los derechos laborales.",
-    "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías."
+    "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
+    "pnv": "Su programa del 29N propone eliminar barreras regulatorias al crecimiento de las pymes."
    }
   },
   {
@@ -1187,7 +1204,6 @@
     "comp",
     "cha",
     "mes",
-    "adel",
     "fo",
     "ph"
    ],
@@ -1275,6 +1291,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 9",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=63",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 63",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1291,7 +1313,8 @@
     "upc": "Se compromete a subir el salario mínimo interprofesional por encima del IPC anual para mantener el poder adquisitivo.",
     "ph": "Estimación: el programa defiende «mantener y aumentar los salarios»; no trata el salario mínimo, por eso la base es indirecta.",
     "fo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo.",
-    "pnv": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal."
+    "pnv": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal.",
+    "adel": "Su programa del 29N propone indexar por ley los salarios a la inflación, también el salario mínimo."
    }
   },
   {
@@ -1822,7 +1845,6 @@
     "mj": 5
    },
    "est": [
-    "salf",
     "pacma",
     "d21",
     "upn",
@@ -1872,10 +1894,10 @@
      "2025-01-15"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
@@ -1975,7 +1997,7 @@
     "vox": "Su programa de 2026 apuesta por construir mucho más: reforma de la Ley del Suelo, trámites ágiles y vivienda protegida con colaboración público-privada.",
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
-    "salf": "En su programa para Castilla y León (2026) plantea simplificar licencias y liberar suelo para construir más vivienda en lugar de regular precios.",
+    "salf": "Su contrato del 29N apuesta por construir: licencia automática en 15 días y vivienda industrializada en suelo público.",
     "erc": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
     "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
     "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
@@ -2196,7 +2218,7 @@
     "d21": 5,
     "erc": 1,
     "junts": 4,
-    "pnv": 3,
+    "pnv": 4,
     "bildu": 1,
     "upn": 5,
     "gbai": 2,
@@ -2215,15 +2237,13 @@
    },
    "est": [
     "d21",
-    "pnv",
     "upn",
     "gbai",
     "ccpc",
     "upc",
     "drago",
     "cha",
-    "mes",
-    "adel"
+    "mes"
    ],
    "notes": {
     "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
@@ -2325,6 +2345,18 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 5",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+     "Programa electoral de EAJ-PNV de 2026, p. 8",
+     "programa",
+     "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 49",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2342,7 +2374,9 @@
     "ph": "Pide paralizar los desahucios que violen derechos humanos hasta resolver con urgencia la vivienda de los afectados.",
     "pacma": "Su programa del 29N critica que las prórrogas y la suspensión de lanzamientos carguen sobre los propietarios particulares y dice que no ayudan a bajar el alquiler.",
     "bng": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional.",
-    "salf": "Su contrato de 2026 fija juicio verbal y lanzamiento en 30 días para el inquilino que deja de pagar, sin excusas de vulnerabilidad: a los vulnerables los atiende el Estado."
+    "salf": "Su contrato de 2026 fija juicio verbal y lanzamiento en 30 días para el inquilino que deja de pagar, sin excusas de vulnerabilidad: a los vulnerables los atiende el Estado.",
+    "pnv": "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
+    "adel": "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional."
    }
   },
   {
@@ -2556,8 +2590,7 @@
     "comp",
     "cha",
     "existe",
-    "mes",
-    "adel"
+    "mes"
    ],
    "src": {
     "psoe": [
@@ -2607,6 +2640,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=4",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 4",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2617,7 +2656,8 @@
     "erc": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
     "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
     "bng": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas.",
-    "ccpc": "Su programa de 2026 propone incentivos fiscales para que pequeños propietarios incorporen viviendas vacías a programas de alquiler asequible."
+    "ccpc": "Su programa de 2026 propone incentivos fiscales para que pequeños propietarios incorporen viviendas vacías a programas de alquiler asequible.",
+    "adel": "Su programa del 29N propone un impuesto a la vivienda vacía de los grandes tenedores."
    }
   },
   {
@@ -3257,7 +3297,6 @@
     "cha",
     "existe",
     "mes",
-    "adel",
     "jmm",
     "upl",
     "soria"
@@ -3292,6 +3331,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 8",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=23",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 23",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3302,7 +3347,8 @@
     "erc": "Estimación: ERC pide ordinalidad y un modelo singular para Cataluña, no criterios por habitante.",
     "comp": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
     "pp": "Su programa de 2026 propone un fondo de nivelación transitorio y un sistema que amplíe los recursos de todas las comunidades autónomas.",
-    "ccpc": "Su programa de 2026 exige una financiación autonómica suficiente que reconozca el coste real de las islas, la población efectiva y la pobreza."
+    "ccpc": "Su programa de 2026 exige una financiación autonómica suficiente que reconozca el coste real de las islas, la población efectiva y la pobreza.",
+    "adel": "Su programa del 29N pide un fondo de nivelación inmediato y compensar la deuda que ha dejado la infrafinanciación de Andalucía."
    }
   },
   {
@@ -4493,7 +4539,6 @@
     "comp",
     "cha",
     "mes",
-    "adel",
     "fo"
    ],
    "src": {
@@ -4592,6 +4637,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4610,7 +4661,8 @@
     "falange": "Su programa del 29N propone que el Consejo General del Poder Judicial lo elijan los jueces y magistrados.",
     "ie": "Propone que el CGPJ lo elijan por sufragio directo y secreto los propios jueces y magistrados en activo.",
     "fo": "Estimación: el programa propone priorizar la carrera judicial en los órganos judiciales superiores y suprimir la elección de sus miembros por el Gobierno.",
-    "salf": "Su contrato de 2026 propone un CGPJ sin influencia política, con elección por jueces y magistrados, antigüedad y/o sorteo."
+    "salf": "Su contrato de 2026 propone un CGPJ sin influencia política, con elección por jueces y magistrados, antigüedad y/o sorteo.",
+    "adel": "Su programa del 29N propone que la ciudadanía elija directamente el CGPJ y, mientras tanto, mejorar la elección parlamentaria."
    }
   },
   {
@@ -4813,7 +4865,6 @@
     "upc",
     "drago",
     "comp",
-    "adel",
     "mj"
    ],
    "src": {
@@ -4852,6 +4903,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=91",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 91",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4861,7 +4918,8 @@
     "pod": "Podemos propuso un periodo de carencia de cinco años para que exaltos cargos trabajen en empresas relacionadas con su gestión.",
     "pacma": "PACMA pide restricciones posteriores al cargo para frenar las puertas giratorias entre el sector público y el privado, en línea con la afirmación, aunque no fija un plazo de cinco años.",
     "bng": "Su programa de 2026 propone regular estrictamente las puertas giratorias y las incompatibilidades.",
-    "salf": "Su contrato de 2026 fija cinco años de incompatibilidad para pasar a empresas reguladas y a órganos de control."
+    "salf": "Su contrato de 2026 fija cinco años de incompatibilidad para pasar a empresas reguladas y a órganos de control.",
+    "adel": "Su programa del 29N pide periodos más largos de incompatibilidad al dejar el cargo, sin fijar cuántos años."
    }
   },
   {
@@ -4896,7 +4954,7 @@
     "drago": 4,
     "comp": 4,
     "cha": 4,
-    "adel": 4,
+    "adel": 5,
     "mj": 4
    },
    "est": [
@@ -4916,7 +4974,6 @@
     "drago",
     "comp",
     "cha",
-    "adel",
     "mj"
    ],
    "notes": {
@@ -4940,6 +4997,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 74",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4949,7 +5012,8 @@
     "vox": "Estimación: no consta una postura de Vox sobre votar las ILP en un plazo fijo.",
     "fa": "Su programa solo plantea valorar una revisión de la ILP, sin concretar que deba votarse obligatoriamente en un plazo fijo.",
     "erc": "Estimación: ERC apoya la participación ciudadana y las ILP, sin propuesta concreta de plazo.",
-    "pacma": "Su programa del 29N pide la toma en consideración obligatoria de las ILP por el Congreso, aunque no fija un plazo."
+    "pacma": "Su programa del 29N pide la toma en consideración obligatoria de las ILP por el Congreso, aunque no fija un plazo.",
+    "adel": "Su programa del 29N pide votar las iniciativas legislativas populares en un plazo máximo y sin bloqueos."
    }
   },
   {
@@ -6726,7 +6790,6 @@
    "est": [
     "d21",
     "junts",
-    "pnv",
     "upn",
     "gbai",
     "ccpc",
@@ -6845,6 +6908,12 @@
      "Programa electoral del PCTE para las generales de 2019 (10N), p. 7",
      "programa",
      "2019-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
+     "Programa electoral de EAJ-PNV de 2026, p. 25",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -6865,7 +6934,8 @@
     "falange": "Su programa del 29N propone expulsar a todo inmigrante ilegal, y a los legales con antecedentes penales o en paro, dentro de un plan de «remigración».",
     "ie": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
     "ph": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
-    "pcte": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones."
+    "pcte": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones.",
+    "pnv": "Su programa del 29N defiende avanzar en los procesos de regularización previstos en la ley y las vías legales de migración."
    }
   },
   {
@@ -7386,7 +7456,7 @@
     "comp": 4,
     "cha": 4,
     "mes": 4,
-    "adel": 4,
+    "adel": 5,
     "mj": 4
    },
    "est": [
@@ -7400,8 +7470,7 @@
     "drago",
     "comp",
     "cha",
-    "mes",
-    "adel"
+    "mes"
    ],
    "notes": {
     "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF."
@@ -7454,6 +7523,12 @@
      "Orain, EH Bildu propone una prestación universal de 150 euros por crianza, 13/05/2022",
      "parlamento",
      "2022-05-13"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=54",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 54",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7464,7 +7539,8 @@
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
     "erc": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
     "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza.",
-    "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años."
+    "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años.",
+    "adel": "Su programa del 29N propone una prestación universal por crianza de 100 a 200 euros al mes por hijo hasta los 18 años."
    }
   },
   {
@@ -7626,8 +7702,7 @@
     "comp",
     "cha",
     "existe",
-    "mes",
-    "adel"
+    "mes"
    ],
    "src": {
     "psoe": [
@@ -7689,6 +7764,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 9",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=20",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 20",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7701,7 +7782,8 @@
     "pp": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
     "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
     "ph": "Dice que los cuidados son responsabilidad del conjunto social, con dotación presupuestaria y servicios públicos adecuados y universales.",
-    "ccpc": "Su programa de 2026 exige una aportación estatal suficiente y estable al sistema de dependencia y una estrategia de cuidados de larga duración."
+    "ccpc": "Su programa de 2026 exige una aportación estatal suficiente y estable al sistema de dependencia y una estrategia de cuidados de larga duración.",
+    "adel": "Su programa del 29N propone una ley estatal de cuidados con derecho universal y el Estado pagando la mitad de la dependencia."
    }
   },
   {
@@ -7858,7 +7940,6 @@
     "drago",
     "existe",
     "mes",
-    "adel",
     "upl",
     "pav",
     "ie"
@@ -7981,6 +8062,12 @@
      "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 24",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 82",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7998,7 +8085,8 @@
     "ie": "Estimación: el contrato incluye «apuesta por la energía nuclear»; no habla de alargar la vida de las centrales actuales.",
     "pp": "Su programa de 2026 elimina el calendario de cierre de las nucleares y tramita ampliar su vida útil con el visto bueno del CSN.",
     "erc": "Su programa de 2026 reclama que el Estado contribuya al Fondo de Transición Nuclear de la Generalitat.",
-    "vox": "Su programa de 2026 garantiza la supervivencia de las nucleares actuales, deroga el calendario de cierre y estudia nuevas centrales."
+    "vox": "Su programa de 2026 garantiza la supervivencia de las nucleares actuales, deroga el calendario de cierre y estudia nuevas centrales.",
+    "adel": "Su programa del 29N pide acabar con las subvenciones a la nuclear y sacarla de la taxonomía verde europea."
    }
   },
   {
@@ -8911,8 +8999,7 @@
     "drago",
     "cha",
     "existe",
-    "mes",
-    "adel"
+    "mes"
    ],
    "src": {
     "mj": [
@@ -9016,6 +9103,12 @@
      "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=22",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9035,7 +9128,8 @@
     "fo": "Apuesta por la nuclear como fuente estable y controlable, y por las renovables solo como complemento a ella, apoyándolas con más inversión.",
     "falange": "Su programa del 29N propone un mix con la nuclear como fuente principal, hidráulica y ciclo combinado, y frenar la transición energética.",
     "ie": "Apuesta por nuclear, gas y recursos propios y por acabar con las subvenciones a renovables.",
-    "ccpc": "Su programa de 2026 reduce la generación fósil a medida que avanzan renovables, almacenamiento y redes, sin perder seguridad de suministro."
+    "ccpc": "Su programa de 2026 reduce la generación fósil a medida que avanzan renovables, almacenamiento y redes, sin perder seguridad de suministro.",
+    "adel": "Su programa del 29N apuesta por renovables pequeñas y repartidas por el territorio, con redes renovadas, en lugar de macroplantas."
    }
   },
   {
@@ -10041,7 +10135,7 @@
     "d21": 3,
     "erc": 1,
     "junts": 2,
-    "pnv": 2,
+    "pnv": 1,
     "bildu": 1,
     "upn": 3,
     "gbai": 2,
@@ -10060,14 +10154,12 @@
    "est": [
     "d21",
     "junts",
-    "pnv",
     "upn",
     "gbai",
     "bng",
     "ccpc",
     "drago",
     "mes",
-    "adel",
     "ie",
     "ph"
    ],
@@ -10158,6 +10250,18 @@
      "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+     "Programa electoral de EAJ-PNV de 2026, p. 28",
+     "programa",
+     "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=109",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 109",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10174,7 +10278,9 @@
     "upc": "Promete cumplir el compromiso de dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo, con el 0,55 % al final de la legislatura.",
     "salf": "Su contrato de 2026 corta la ayuda oficial al desarrollo salvo emergencias humanitarias y programas con retorno para España.",
     "ph": "Estimación: el programa pide cooperación internacional y reparación a los países expoliados por Europa; no cita el presupuesto de ayuda.",
-    "ie": "Estimación: el contrato propone eliminar las subvenciones a ONG y critica financiar a otros mientras se desatienden necesidades propias; no cita la ayuda oficial."
+    "ie": "Estimación: el contrato propone eliminar las subvenciones a ONG y critica financiar a otros mientras se desatienden necesidades propias; no cita la ayuda oficial.",
+    "pnv": "Su programa del 29N propone reforzar la cooperación internacional para el desarrollo con recursos suficientes.",
+    "adel": "Su programa del 29N propone llegar a una ayuda oficial al desarrollo del 0,7 % de la renta nacional en la legislatura."
    }
   },
   {
@@ -10459,7 +10565,6 @@
     "ph": 2
    },
    "est": [
-    "salf",
     "d21",
     "gbai",
     "ccpc",
@@ -10502,10 +10607,10 @@
      "2022-04-29"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=17",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=34",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 34",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=10",
@@ -10593,7 +10698,7 @@
     ]
    },
    "why": {
-    "salf": "En su programa para Castilla y León (2026) propone ampliar los conciertos educativos con los centros que lo soliciten.",
+    "salf": "Su contrato del 29N propone un cheque escolar válido en la pública, la concertada y la privada, con el mismo importe por alumno.",
     "bildu": "Criticó la «concertación universal» que PNV y PSE pactaron en la ley vasca de educación de 2023.",
     "bng": "Su programa de 2026 defiende una única red de enseñanza, la pública, laica y gratuita.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía la libertad de elección de centro y la gratuidad de la concertada.",
@@ -11895,7 +12000,6 @@
     "cha",
     "existe",
     "mes",
-    "adel",
     "fo",
     "falange",
     "ph"
@@ -11978,6 +12082,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 56",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=14",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 14",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -11993,7 +12103,8 @@
     "ph": "Estimación: el programa dice que la solución a la sanidad «no es la privatización» y que no puede ser negocio; no cita las listas de espera.",
     "fo": "Estimación: el programa propone acabar con la externalización y privatización de la sanidad, lo que se opone a derivar pacientes a clínicas privadas pagadas con dinero público.",
     "falange": "Estimación: su programa del 29N propone poner fin a la externalización y privatización de la sanidad, lo que se opone a derivar a clínicas privadas.",
-    "pacma": "Estimación: su programa del 29N propone reintegrar los servicios privatizados y planes de mejora de las listas de espera, no derivar pacientes a la privada."
+    "pacma": "Estimación: su programa del 29N propone reintegrar los servicios privatizados y planes de mejora de las listas de espera, no derivar pacientes a la privada.",
+    "adel": "Su programa del 29N pide una sanidad 100 % pública y el fin de los conciertos y las externalizaciones."
    }
   },
   {
@@ -12484,7 +12595,7 @@
     "cha": 2,
     "existe": 3,
     "mes": 2,
-    "adel": 2,
+    "adel": 5,
     "fo": 5,
     "falange": 5
    },
@@ -12502,8 +12613,7 @@
     "comp",
     "cha",
     "existe",
-    "mes",
-    "adel"
+    "mes"
    ],
    "notes": {
     "psoe": "Su programa de 2023 promete fijar por ley tiempos máximos de espera comunes en todo el Sistema Nacional de Salud (120 días para operaciones y 60 para consultas).",
@@ -12575,6 +12685,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=37",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 37",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12588,7 +12704,8 @@
     "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
     "falange": "Su programa del 29N propone unificar el Sistema Nacional de Salud en uno solo para toda España.",
     "pacma": "Estimación: el programa del 29N (pp. 55–56) pide al Estado fijar «requisitos mínimos» de la sanidad y «planes de mejora de las listas de espera», sin tiempos máximos.",
-    "salf": "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro."
+    "salf": "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro.",
+    "adel": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse."
    }
   },
   {
@@ -12773,7 +12890,7 @@
     "d21": 2,
     "erc": 4,
     "junts": 3,
-    "pnv": 3,
+    "pnv": 4,
     "bildu": 5,
     "upn": 3,
     "bng": 5,
@@ -12796,14 +12913,12 @@
     "salf",
     "d21",
     "junts",
-    "pnv",
     "upn",
     "ccpc",
     "drago",
     "comp",
     "existe",
     "mes",
-    "adel",
     "jmm",
     "upl",
     "soria",
@@ -12887,6 +13002,18 @@
      "Programa electoral del BNG de 2026, p. 47",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
+     "Programa electoral de EAJ-PNV de 2026, p. 18",
+     "programa",
+     "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=68",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 68",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12902,7 +13029,9 @@
     "falange": "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario.",
     "ie": "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes.",
     "pp": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
-    "bng": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción."
+    "bng": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción.",
+    "pnv": "Su programa del 29N pide reforzar la Ley de la Cadena Alimentaria para garantizar precios que cubran los costes de producción.",
+    "adel": "Su programa del 29N pide prohibir de forma efectiva la venta a pérdidas, precios justos en origen y vigilar los márgenes."
    }
   },
   {
@@ -12949,7 +13078,6 @@
     "cha",
     "existe",
     "mes",
-    "adel",
     "jmm",
     "upl",
     "soria"
@@ -13011,6 +13139,12 @@
      "Programa electoral de Sumar de 2023, p. 60; MÉS concurrió en esa coalición",
      "programa",
      "2023-07"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=68",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 68",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13022,7 +13156,8 @@
     "erc": "Estimación: ERC defiende a los agricultores profesionales y la agricultura familiar.",
     "bildu": "La parlamentaria de EH Bildu Itxaso Etxebarria defendió reorientar la PAC hacia las explotaciones pequeñas y familiares.",
     "comp": "Quiere centrar las ayudas de la PAC en el profesional agrario, rebajar el mínimo para que más productores las reciban y fijar un máximo de 100.000 euros.",
-    "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa prioriza las explotaciones familiares y elimina derechos históricos de la PAC."
+    "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa prioriza las explotaciones familiares y elimina derechos históricos de la PAC.",
+    "adel": "Su programa del 29N pide ayudas de la PAC ligadas al empleo y a vivir en el territorio, no a las hectáreas."
    }
   },
   {
@@ -13858,8 +13993,7 @@
     "drago",
     "comp",
     "cha",
-    "mes",
-    "adel"
+    "mes"
    ],
    "src": {
     "mj": [
@@ -13951,6 +14085,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
      "programa",
      "2026-11"
+    ],
+    "adel": [
+     "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=38",
+     "Programa electoral de Adelante Andalucía para el 29N, p. 38",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13968,7 +14108,8 @@
     "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     "ccpc": "Votó en contra de la propuesta de Vox para derogar las leyes de eutanasia y aborto, que solo apoyó Vox.",
     "upc": "Reconoce la necesidad de una muerte digna en coherencia con la Ley de Regulación de la Eutanasia, sin proponer derogarla.",
-    "falange": "Su programa del 29N propone ilegalizar las leyes del aborto y de la eutanasia."
+    "falange": "Su programa del 29N propone ilegalizar las leyes del aborto y de la eutanasia.",
+    "adel": "Su programa del 29N pide plazos más ágiles por ley para la eutanasia, sin recurso de familiares o allegados."
    }
   },
   {
