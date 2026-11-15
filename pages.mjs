@@ -4,12 +4,10 @@
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { VOTAR } from "./src/votar.src.mjs";
 import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
-// Títulos: Google recorta hacia los 60–70 caracteres; si se pasan, se quita el sufijo de marca (el sitio ya se identifica por el dominio)
-const tt = (s) => {
-  if (s.length > 70) s = s.replace(/ · Test 29N$/, "");
-  if (s.length > 72) s = s.replace(/, tema a tema$/, "").replace(/ el 29N$/, "");
-  return s;
-};
+// Títulos: Google muestra entero hasta unos 60 caracteres. Si se pasan, se acortan por pasos (de menos a más) sin tocar el principio,
+// que es lo que se busca: primero el sufijo de marca (el sitio ya se identifica por el dominio), luego coletillas.
+const TT_STEPS = [[/ · Test 29N$/, ""], [/, tema a tema$/, ""], [/(cada partido) el 29N$/, "$1"], [/ para el 29N: /, " 29N: "], [/ 29N: ¿con qué partido coincides\?$/, ": ¿con qué partido coincides?"], [/: qué piensa cada partido$/, ": qué dice cada partido", true]];  // true: solo si así cabe
+const tt = (s) => { for (const [re, to, onlyIfFits] of TT_STEPS) { if (s.length <= 60) break; const t = s.replace(re, to); if (!onlyIfFits || t.length <= 60) s = t; } return s; };
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
@@ -95,6 +93,7 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
   const NAV_SEC = { partidos: "/partidos/", programas: "/programas/", temas: "/temas/", tests: "/temas/", comparar: "/comparar/", debates: "/debates/", provincias: "/provincias/", escanos: "/provincias/", metodologia: "/metodologia/" };
   const navCur = (h, path) => { const sec = NAV_SEC[String(path).split("/")[1]]; return sec ? h.replace(`<a class="navlink" href="${sec}">`, `<a class="navlink" href="${sec}" aria-current="page">`).replace(`<a class="navlink nav-circ" href="${sec}">`, `<a class="navlink nav-circ" href="${sec}" aria-current="page">`).replace(`<a class="navlink nav-x" href="${sec}">`, `<a class="navlink nav-x" href="${sec}" aria-current="page">`) : h; };
   const page = ({ path, title, desc, crumbs, body, ld }) => {
+    title = tt(title);
     const url = SITE + path.replace(/^\//, "");
     const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Test 29N", url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
     const extra = `<link rel="canonical" href="${url}">
@@ -555,7 +554,7 @@ ${cta("O responde el test completo")}`
   writeFileSync(`${OUT}/correcciones/index.html`, `${head("Página trasladada · Test 29N", "Esta página se ha trasladado a «Sobre el proyecto» del Test 29N.", `<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/sobre/">\n`, "/")}<body><main class="wrap"><h1>Página trasladada</h1><p><a href="/sobre/">Ir a «Sobre el proyecto»</a></p></main></body></html>\n`);
   page({
     path: "/sobre/",
-    title: "Sobre el Test 29N: quién lo hace, cómo se financia y cómo se corrige",
+    title: "Sobre el Test 29N: quién lo hace, financiación y correcciones",
     desc: "Quién está detrás del Test 29N, por qué existe, cómo se financia, por qué es independiente y cómo se corrigen los errores.",
     crumbs: [{ name: "Sobre el proyecto", url: `${SITE}sobre/` }],
     body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Sobre el proyecto</h1>
@@ -571,7 +570,7 @@ ${cta("O responde el test completo")}`
   const pctN = (a, b) => Math.round((a / b) * 100);
   page({
     path: "/metodologia/",
-    title: "Metodología del Test 29N: cómo se calcula y qué límites tiene",
+    title: "Metodología del Test 29N: cómo se calcula y sus límites",
     desc: "Cómo calcula el Test 29N tu coincidencia con cada candidatura, con pruebas reproducibles: perfiles que imitan a cada partido, perfiles aleatorios, sesgo hacia el centro y posturas con fuente por partido.",
     crumbs: [{ name: "Metodología", url: `${SITE}metodologia/` }],
     body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Metodología</h1>
