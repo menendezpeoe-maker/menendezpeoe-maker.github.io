@@ -2062,7 +2062,7 @@ export const SOURCES = {
     pod: ["https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=94", "Podemos, «Programa de PODEMOS. Las razones siguen intactas», generales del 10 de noviembre de 2019, p. 94", "programa", "2019-10"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 42", "programa", "2026-10"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=50", "Programa de FE de las JONS para las generales del 29N de 2026, p. 50", "programa", "2026-11"],
-    pacma: ["https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf#page=50", "Programa de PACMA para las generales de 2023, p. 50", "programa", "2023-07"],
+    pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=55", "Programa de PACMA para las generales del 29N de 2026, pp. 55–56", "programa", "2026-11"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22", "Contrato electoral simplificado de SALF para las generales de 2026, p. 22", "programa", "2026-11"],
   },
   K01: {
@@ -3542,7 +3542,7 @@ export const JUSTIF = {
     bng: "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
     fo: "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
     falange: "Su programa del 29N propone unificar el Sistema Nacional de Salud en uno solo para toda España.",
-    pacma: "Estimación: el programa señala que el Estado fija las bases y normas de condiciones mínimas del sistema sanitario, para una igualación básica de los servicios en todo el país.",
+    pacma: "Estimación: el programa del 29N (pp. 55–56) pide al Estado fijar «requisitos mínimos» de la sanidad y «planes de mejora de las listas de espera», sin tiempos máximos.",
     salf: "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro.",
   },
   K01: {

@@ -2,7 +2,7 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-11-14",
+  comprobado: "2026-11-15",
   // id de partido → { url, titulo, fecha, alta? }   (vacío: aún no publicado). `alta`: día en que entró en la web, solo si la
   // fecha del programa no es un día concreto; ordena «Últimas incorporaciones» en /programas/.
   publicados: {

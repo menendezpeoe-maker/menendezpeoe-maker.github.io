@@ -59,7 +59,7 @@ export const PARTIES = [
    scope: { all: true },
    desc: "Derecha nacional-conservadora. Su programa gira en torno a la «prioridad nacional», la expulsión de inmigrantes en situación irregular, la recentralización del Estado y el rechazo a la Agenda 2030.",
    props: [["«Prioridad nacional» en ayudas sociales y vivienda pública.","F03"],
-     ["Deportar a los inmigrantes en situación irregular y a los extranjeros que delincan («remigración»).","F02"],
+     ["Repatriar a quienes estén en situación irregular y deportar a quienes cometan delitos graves o reiterados.","F02"],
      ["Devolver al Estado las competencias de educación, sanidad, seguridad y justicia.","C03"],
      ["Sustituir la Ley de Violencia de Género por una ley de violencia intrafamiliar.","E08"],
      ["Bajada general de impuestos y recorte del gasto político.","A02"],
