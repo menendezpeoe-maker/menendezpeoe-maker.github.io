@@ -94,7 +94,7 @@
     "pid": "fo",
     "prov": "madrid",
     "primero": true,
-    "pct": 95
+    "pct": 97
    },
    {
     "pid": "pcte",
@@ -106,7 +106,7 @@
     "pid": "mj",
     "prov": "almeria",
     "primero": true,
-    "pct": 88
+    "pct": 91
    },
    {
     "pid": "falange",
@@ -178,7 +178,7 @@
     "pid": "ph",
     "prov": "madrid",
     "primero": true,
-    "pct": 88
+    "pct": 92
    },
    {
     "pid": "ie",
@@ -195,7 +195,7 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 103
+    "n": 104
    },
    {
     "pid": "pp",
@@ -203,19 +203,19 @@
    },
    {
     "pid": "d21",
-    "n": 62
+    "n": 61
    },
    {
     "pid": "fo",
-    "n": 18
+    "n": 21
    },
    {
     "pid": "fa",
-    "n": 16
+    "n": 15
    },
    {
     "pid": "ph",
-    "n": 9
+    "n": 6
    },
    {
     "pid": "vox",
@@ -227,23 +227,23 @@
    },
    {
     "pid": "salf",
-    "n": 6
+    "n": 5
+   },
+   {
+    "pid": "pacma",
+    "n": 3
    },
    {
     "pid": "pcte",
     "n": 2
    },
    {
-    "pid": "pacma",
+    "pid": "mj",
     "n": 2
    },
    {
     "pid": "ie",
     "n": 2
-   },
-   {
-    "pid": "mj",
-    "n": 1
    },
    {
     "pid": "pod",
@@ -295,8 +295,8 @@
   {
    "pid": "vox",
    "conocidas": 107,
-   "estimadas": 23,
-   "conFuente": 87
+   "estimadas": 22,
+   "conFuente": 88
   },
   {
    "pid": "fa",
@@ -366,9 +366,9 @@
   },
   {
    "pid": "fo",
-   "conocidas": 38,
-   "estimadas": 12,
-   "conFuente": 38
+   "conocidas": 41,
+   "estimadas": 14,
+   "conFuente": 41
   },
   {
    "pid": "pcte",
@@ -378,9 +378,9 @@
   },
   {
    "pid": "mj",
-   "conocidas": 28,
-   "estimadas": 4,
-   "conFuente": 28
+   "conocidas": 30,
+   "estimadas": 3,
+   "conFuente": 30
   },
   {
    "pid": "falange",
@@ -446,13 +446,13 @@
    "pid": "soria",
    "conocidas": 23,
    "estimadas": 21,
-   "conFuente": 2
+   "conFuente": 4
   },
   {
    "pid": "ph",
-   "conocidas": 32,
-   "estimadas": 13,
-   "conFuente": 32
+   "conocidas": 34,
+   "estimadas": 9,
+   "conFuente": 34
   },
   {
    "pid": "ie",

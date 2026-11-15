@@ -33,6 +33,22 @@
  },
  {
   "fecha": "2026-11-15",
+  "id": "B05",
+  "partido": "bng",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide mecanismos eficaces para frenar la salida de vivienda habitual hacia el alquiler de temporada, por habitaciones y turístico.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
+   "Programa electoral del BNG de 2026, p. 12",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
   "id": "D06",
   "partido": "adel",
   "de": 4,
@@ -59,6 +75,22 @@
   "fuente": [
    "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=54",
    "Programa electoral de Adelante Andalucía para el 29N, p. 54",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "id": "G02",
+  "partido": "bng",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55",
+   "Programa electoral del BNG de 2026, p. 55",
    "programa",
    "2026-11"
   ]

@@ -1,5 +1,17 @@
 # Estado del plan (lo más reciente arriba)
 
+## 15 nov 2026 (noche) · Documentar posturas, tanda 3: PP, Vox, Partido Humanista, M+J, Frente Obrero y Soria ¡Ya! (petición del titular)
+- Revisión pregunta a pregunta contra cada programa del 29N (búsqueda por términos y lectura de cada propuesta numerada), citando la página del PDF.
+- **PP:** B09 5 (p. 43, aval público de hasta el 20 % a compradores menores de 40 años; antes citaba un argumentario de octubre). **Vox:** J05 4~→4 (p. 29, auditoría sistemática de gastos no imprescindibles, susceptibles de supresión).
+- **Partido Humanista** (pasa de citar su programa de 2023 al del 29N): A01 5 (p. 7, 30 horas sin rebaja de sueldo), B01 4→5 (p. 9, tope legal del 30 % de la renta media), B04 1 (p. 9), B08 4~→5 (p. 8, 2,5 millones de viviendas públicas en alquiler), D03 sin postura→2 (p. 15, CGPJ elegido por la ciudadanía), F01 4~→5 (p. 19, regularización inmediata), F08 5 (p. 11), F09 2~ (p. 6, sigue estimada), G06 sin postura→5 (p. 21), H01 1 y H06 1 (p. 17), I01 2~→1 (p. 13, no renovar conciertos), I02 5 (p. 13), J01 5 y J02 2~→1 (p. 11, derogar la Ley 15/1997 y toda colaboración público-privada).
+- **M+J:** I01 sin postura→4 (p. 45), L04 sin postura→1 (p. 79), D05 4~→5 (p. 73: «al menos, 5 años»); D03 y H01 sin cambio de valor (pp. 72 y 65).
+- **Frente Obrero:** D05 sin postura→4 (p. 16), D07 sin postura→4~ (p. 56) y E08 sin postura→4~ (pp. 31–32), estas dos estimadas porque el pasaje no habla de referéndum ni de sustituir la ley.
+- **Soria ¡Ya!:** G06 3~ y B08 4~ siguen estimadas, ahora con enlace a su programa (p. 1).
+- **Revisado sin pasaje directo o ya documentado:** ERC (C02 sigue estimada: la ordinalidad no responde a la pregunta por habitante), Iustitia Europa y SALF (sus pasajes ya estaban citados). M+J no propone cambios sobre caza ni tauromaquia (p. 61): siguen sin postura.
+- **Pendiente de decisión del titular (regla 8):** PP F06 (p. 43: deducción familiar única, reembolsable y con abono mensual «que llegue a todas las familias»; no dice si depende de la renta) y PP H07 (p. 57: auditar y redirigir la cooperación al desarrollo, sin decir que sea para gastarlo en España); siguen como estaban. Vox G06 vale 2 aunque su justificación dice que prioriza Cercanías y Media Distancia: revisar.
+- **Recuento:** 1.163 documentadas, 1.175 estimadas y 872 sin postura → 1.174, 1.171 y 865.
+- **Siguiente:** tarea diaria programada del 16 al 21 nov, a las 14:23 (todos los partidos; programas, votaciones nominales, BOE y prensa con cita literal), con una entrada aquí por tanda.
+
 ## 15 nov 2026 (noche) · Documentar posturas, tanda 2: BNG con su programa del 29N (petición del titular)
 - Programa del BNG (91 páginas) revisado entero, con una búsqueda de pasaje literal para cada postura. Solo se aplican los pasajes directos; los indirectos se dejan estimados.
 - **Hecho (3):** B05 4 (p. 12, frenar el paso de vivienda habitual a alquiler de temporada, por habitaciones y turístico), G02 4 (p. 55, revisar los parques eólicos aprobados y paralizar los más lesivos), L04 1 (p. 26, oposición firme a regular los vientres de alquiler).
