@@ -1430,7 +1430,9 @@
   "soria": {
    "url": "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf",
    "titulo": "Programa de Soria ¡Ya! para las generales del 29N de 2026 (una página)",
-   "fecha": "2026-11-12"
+   "fecha": "2026-11-12",
+   "tipo": "avance",
+   "nota": "una página con sus exigencias"
   },
   "d21": {
    "url": "https://mi.democracia21.es/programa",
