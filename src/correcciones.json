@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-14",
+  "id": "K01",
+  "partido": "falange",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone que España abandone el acuerdo UE-Mercosur porque daña la producción nacional.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=33",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 33",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-13",
   "id": "A01",
   "partido": "mj",
