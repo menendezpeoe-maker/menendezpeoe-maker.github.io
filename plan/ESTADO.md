@@ -1,5 +1,13 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 (tarde) · Revisar posturas con el programa del 29N: PSOE, primera mitad (A01–G09)
+- **Fuente:** programa del PSOE del 29N (114 págs.; páginas del PDF, la numeración impresa es +1). psoe.es bloquea la nube; el titular subió el PDF.
+- **Pasan a citar el programa (valor sin cambios):** A01 5 (p. 41, compr. 108), A02 4 (p. 47), A03 5 (p. 47, 127), A05 1 (p. 39, 98), A08 1 (p. 37, 87), B01 5 (p. 30, 62), B02 4 (p. 28, 42 y 62), B06 4 (p. 31, 70), B08 5 (p. 28, 42), C03 1 (p. 91), E03 4 (p. 99, 431), E08 1 (p. 84, 350), F04 5 (p. 92), F06 4 (p. 56, 192), F08 4 (p. 57, 206), G02 2 (p. 65, 234), G06 3 (p. 20, 27), G09 5 (p. 65, 234 y 237).
+- **Revisadas sin pasaje (se quedan como están):** A06 A07 A09 A10 B05 B07 C01 C04 C05 C09 D01 D02 D03 D04 D07 D08 D09 E01 E02 E04 E05 E06 E07 E09 F01 F02 F05 F07 F09 G03 G05. **Solo pasaje indirecto (conservan su fuente, más concreta):** B09 (p. 31, TUCASA: préstamos, no avales), C02 (p. 60, 229), C07 (p. 91, 386), D05 (p. 102, 446), F03 (p. 92, 388), G04 (p. 68, 262: desalación y reutilización, no nombra trasvases), G07 (p. 68, 262), G08 (p. 72, 291).
+- **Pendiente de decisión del titular (regla 8):** B04 está en 4 (Legal Today, feb. 2026), pero el programa (p. 33, compromisos 84 y 85) mantiene la protección frente a desahucios de vulnerables y que el coste no recaiga en el pequeño propietario sino en las administraciones, lo que apunta a 2. B03 está en 3; el programa (p. 101, 438) promete seguir con los juicios rápidos contra la ocupación, lo que apunta a 4.
+- **Secciones tocadas:** propuestas A08 y B08 de la ficha del PSOE (`src/partidos.src.mjs`); /programas/, /comparar/, /temas/, explorador, /metodologia/, /prensa/ y /datos/ se regeneran con los datos; apartado 3 del barrido sin textos fijos desfasados.
+- **Recuento PSOE (`node qa/barrido.mjs psoe`):** con el programa del 29N 7 → 25; con otro programa 33 → 22; justificaciones que citan 2023 18 → 12.
+
 ## 16 nov 2026 · Revisión diaria: sin programas nuevos; /debates/ con COPE
 - **Programas (a):** ninguno nuevo. Junts (solo el boletín MESJUNTS en la biblioteca de noviembre), EH Bildu, UPN, CHA, Ara MÉS y PCTE: sin programa del 29N en su web. Drago: su página /programa/ es «Propuestas canarias para una vida digna», sin mención del 29N ni de las generales (no cuenta). Podemos (403) y Frente Amplio (436) bloquean desde la nube. Recuento sigue en 21 de 30.
 - **Posturas (b):** la cola «Revisar posturas con el programa del 29N» la llevan las pasadas de 14:23 y 21:17; esta revisión no la toca para no chocar.
@@ -21,8 +29,8 @@
 - **Criterio:** hueco = 107 − posturas que ya citan el programa del 29N (`node qa/barrido.mjs`, apartado 2), ponderado por el tamaño del programa (los de 1–14 páginas ya están casi agotados). Dos pasadas al día (14:23 y 21:17, hora de Madrid) del 16 al 21 nov. Cada pasada toma el primer bloque sin «HECHO», lo trabaja hasta 2 horas y lo marca aquí («HECHO» o «a medias: sigue en Qxx»).
 - **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.
 - **Cola (hueco a 16 nov):**
-  1. PSOE, primera mitad (A01–G09): 100 sin citar su programa (114 págs.). **BLOQUEADO (16 nov, 14:23):** psoe.es devuelve la página anti-bots de Incapsula a la nube (curl y WebFetch) y el archivo web no respondió; el PDF no está en los archivos del proyecto. Falta que el titular suba el PDF del PSOE al hilo. Mientras falte, las pasadas siguientes saltan al bloque 3 y vuelven aquí cuando esté.
-  2. PSOE, segunda mitad (H01–L09). Mismo bloqueo que el 1.
+  1. PSOE, primera mitad (A01–G09): **HECHO (16 nov, tarde).** El titular subió el PDF (psoe.es bloquea la nube con Incapsula); copia en los archivos del proyecto: test29n/programas/PSOE_Programa_29N.pdf.
+  2. PSOE, segunda mitad (H01–L09). PDF en test29n/programas/PSOE_Programa_29N.pdf (no descargar de psoe.es).
   3. PNV (99; 43 págs.).
   4. CC-PC (93; 23 págs.).
   5. Compromís-Front Valencià (89; 64 págs., en valenciano).

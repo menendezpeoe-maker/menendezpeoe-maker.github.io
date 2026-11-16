@@ -204,10 +204,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
-     "Congreso, votación nominal del 10/09/2025 de las enmiendas de totalidad al proyecto de ley de jornada (exp. 121/000058)",
-     "parlamento",
-     "2025-09-10"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=41",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 41",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
@@ -308,7 +308,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone reducir progresivamente la jornada laboral hasta las 35 horas semanales sin reducción salarial.",
-    "psoe": "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
+    "psoe": "Su programa del 29N se compromete a completar la reducción de la jornada a 37,5 horas sin perder salario y a incentivar las 35 horas en los convenios (compromiso 108).",
     "pp": "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social.",
     "vox": "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
     "fa": "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32 horas.",
@@ -387,10 +387,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf",
-     "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=47",
@@ -508,6 +508,7 @@
     ]
    },
    "why": {
+    "psoe": "Su programa del 29N defiende más inversión en servicios públicos sostenida por una fiscalidad progresiva, con más impuestos a grandes patrimonios y rentas del capital (127).",
     "mj": "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
     "salf": "Su contrato del 29N propone una gran rebaja fiscal con la regla de «un euro de rebaja, un euro de ahorro certificado».",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
@@ -581,10 +582,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
-     "BOE, Real Decreto-ley 8/2023, de 27 de diciembre",
-     "gobierno",
-     "2023-12"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=23",
@@ -679,7 +680,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone una tributación mínima del 3 % sobre patrimonios de más de 50 millones, con un gravamen en el Impuesto de Solidaridad sobre las Grandes Fortunas.",
-    "psoe": "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
+    "psoe": "Su programa del 29N mantiene la tributación complementaria de los grandes patrimonios para financiar la prestación por crianza (compromiso 127).",
     "pp": "El PP promete suprimir el impuesto estatal de solidaridad sobre las grandes fortunas, que ve como una invasión de la autonomía fiscal.",
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
     "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
@@ -893,10 +894,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-     "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=39",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 39",
      "programa",
-     "2023-07-07"
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
@@ -1003,7 +1004,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone profundizar en la cuota de solidaridad y la subida de la base máxima de cotización, eliminando progresivamente el tope, para sostener las pensiones.",
-    "psoe": "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos.",
+    "psoe": "Su programa del 29N apuesta por reforzar los ingresos de la Seguridad Social con nuevas fuentes de financiación y la cuota de solidaridad (compromiso 98).",
     "fa": "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones.",
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
     "erc": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
@@ -1237,10 +1238,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=37",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 37",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=31",
@@ -1329,7 +1330,7 @@
    },
    "why": {
     "mj": "Su programa del 29N fija como meta mantener el salario mínimo en al menos el 60 % del salario medio entre 2026 y 2030.",
-    "psoe": "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
+    "psoe": "Su programa del 29N propone blindar por ley el salario mínimo por encima del 60 % del salario medio y actualizarlo periódicamente (compromiso 87).",
     "pp": "Pone el foco en subir el salario medio y la productividad, sin rechazar las subidas del salario mínimo.",
     "vox": "Vox rechaza subir el salario mínimo si encarece a las empresas y prefiere bajar cotizaciones e impuestos.",
     "fa": "Propone seguir subiendo el salario mínimo por encima del IPC, como hizo el Ministerio de Trabajo.",
@@ -1689,10 +1690,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13411162_1124105.html",
-     "eldiario.es, rueda de prensa de balance de Pedro Sánchez, 28/07/2026",
-     "declaracion",
-     "2026-07-28"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=30",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 30",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=42",
@@ -1822,6 +1823,7 @@
     ]
    },
    "why": {
+    "psoe": "Su programa del 29N propone congelar temporalmente los alquileres que superen los índices de referencia en los mercados tensionados (compromiso 62).",
     "mj": "Su programa del 29N propone regular los alquileres privados con un alquiler de referencia y limitar el precio según las características y la localización de la vivienda.",
     "salf": "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
@@ -1908,10 +1910,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-     "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=28",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 28",
      "programa",
-     "2023-07-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=41",
@@ -2048,7 +2050,7 @@
    },
    "why": {
     "mj": "Su programa del 29N prioriza crear un gran parque público de vivienda asequible en alquiler y regular los alquileres privados.",
-    "psoe": "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
+    "psoe": "Su programa del 29N prioriza un parque público estatal de 100.000 viviendas y limitar las rentas en zonas tensionadas (compromisos 42 y 62).",
     "pp": "Su programa de 2026 prioriza construir un millón de viviendas con más suelo, una nueva Ley del Suelo y licencias en tres meses.",
     "vox": "Su programa de 2026 apuesta por construir mucho más: reforma de la Ley del Suelo, trámites ágiles y vivienda protegida con colaboración público-privada.",
     "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
@@ -2672,10 +2674,10 @@
    ],
    "src": {
     "psoe": [
-     "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
-     "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)",
-     "gobierno",
-     "2023-05-24"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=31",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 31",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=21",
@@ -2739,7 +2741,7 @@
     ]
    },
    "why": {
-    "psoe": "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
+    "psoe": "Su programa del 29N propone un impuesto progresivo a las viviendas vacías, turísticas o con alquiler abusivo de grandes propietarios y fondos (compromiso 70).",
     "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
     "fa": "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
@@ -2974,10 +2976,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=28",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 28",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.vozpopuli.com/economia/juan-bravo-titular-de-vivienda-del-pp-planeamos-un-fondo-publico-privado-de-15000-millones.html",
@@ -3114,7 +3116,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone crear un gran parque público de vivienda asequible en alquiler, del 1,1 % al 5 % del parque en 2030.",
-    "psoe": "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
+    "psoe": "Su programa del 29N propone un parque público estatal de 100.000 viviendas, construidas o adquiridas, para venta o alquiler asequible (compromiso 42).",
     "pp": "Prefiere un fondo público-privado y cerraría la empresa estatal de vivienda en lugar de construir directamente.",
     "vox": "Su programa de 2026 amplía la inversión pública en vivienda por habitante y la vivienda protegida con colaboración público-privada.",
     "fa": "Propone un parque público de alquiler de dos millones de viviendas con el 1 % del PIB anual.",
@@ -3560,10 +3562,10 @@
    ],
    "src": {
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=231",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=91",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 91",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=32",
@@ -3681,7 +3683,7 @@
     ]
    },
    "why": {
-    "psoe": "Su programa de 2023 propone llevar a la Constitución la descentralización ya alcanzada, no devolver competencias al Estado.",
+    "psoe": "Su programa del 29N sostiene que «el reto no es recentralizar ni fragmentar», sino que el Estado autonómico funcione mejor.",
     "pp": "Su programa de 2026 defiende el autogobierno autonómico y propone reforzar la Alta Inspección del Estado y una PAU común.",
     "vox": "Su programa de 2026 propone unificar el currículo, las evaluaciones nacionales y la inspección educativa, con una EVAU única y reválidas.",
     "fa": "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación.",
@@ -5925,10 +5927,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza",
-     "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)",
-     "prensa",
-     "2024-10-03"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=99",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 99",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=16",
@@ -6029,7 +6031,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone reformar la Ley de Seguridad Ciudadana (meta: reformada en 2027), no derogarla.",
-    "psoe": "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
+    "psoe": "Su programa del 29N propone una nueva Ley de Seguridad Ciudadana que sustituya a la Ley Orgánica 4/2015 (compromiso 431).",
     "pp": "Su programa de 2026 endurece la respuesta a los disturbios violentos y refuerza la actuación policial preventiva.",
     "vox": "Vox votó incluso contra tramitar la reforma de la Ley de Seguridad Ciudadana, que no la derogaba.",
     "fa": "Defiende derogar la «ley mordaza»; su programa promete derogar sus aspectos que limitan reunión y expresión.",
@@ -6532,10 +6534,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-     "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=84",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 84",
      "programa",
-     "2023-07-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=17",
@@ -6648,7 +6650,7 @@
    },
    "why": {
     "mj": "Su programa del 29N defiende la protección frente a la violencia de género y la aplicación de las 461 medidas del Pacto de Estado contra la Violencia de Género.",
-    "psoe": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
+    "psoe": "Su programa del 29N amplía la Ley Integral contra la Violencia de Género a las violencias digitales y propone una ley contra la violencia vicaria (350 y 335).",
     "pp": "Su programa de 2026 refuerza VioGen y los medios contra la violencia de género y rinde cuentas del Pacto de Estado.",
     "vox": "Su programa de 2026 propone derogar las leyes de género, a las que acusa de criminalizar a los hombres y de desproteger a las mujeres.",
     "fa": "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos.",
@@ -7483,10 +7485,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx",
-     "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)",
-     "gobierno",
-     "2024-11-19"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=92",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 92",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=19",
@@ -7551,7 +7553,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone facilitar vías legales y seguras de migración y ampliar las autorizaciones de residencia y trabajo desde los países de origen.",
-    "psoe": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
+    "psoe": "Su programa del 29N propone simplificar trámites, impulsar la contratación en origen y facilitar el acceso al empleo de quienes vienen a trabajar.",
     "pp": "Su programa de 2026 propone visados por puntos, cupos anuales y contratación en origen en los sectores donde faltan trabajadores.",
     "vox": "Su programa de 2026 propone «Ni uno más»: España no puede acoger a más inmigrantes y se suprime la figura del arraigo.",
     "fa": "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
@@ -7768,10 +7770,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=56",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 56",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
@@ -7830,7 +7832,7 @@
    },
    "why": {
     "mj": "Su programa del 29N propone una única prestación universal y progresiva para la infancia a la que tengan derecho todos los hogares con crianza.",
-    "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
+    "psoe": "Su programa del 29N propone una prestación estatal por crianza para todos los hogares con menores, de cuantía progresiva según la renta (compromiso 192).",
     "pp": "Estimación: su programa del 29N refunde las deducciones familiares en una reembolsable, con abono mensual, que llegue a todas las familias; no dice si dependerá de la renta.",
     "vox": "Su programa de 2026 extiende los beneficios de las familias numerosas a todas las familias españolas desde el primer hijo, según su número.",
     "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
@@ -8006,10 +8008,10 @@
    ],
    "src": {
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=176",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=57",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 57",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "fa": [
      "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
@@ -8091,7 +8093,7 @@
     ]
    },
    "why": {
-    "psoe": "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios.",
+    "psoe": "Su programa del 29N quiere consolidar la ayuda a domicilio como servicio público esencial de la dependencia con financiación suficiente y estable (206).",
     "fa": "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
     "erc": "Su programa de 2026 exige garantizar la financiación de la Ley de Dependencia, con 2.018 millones extra en 2026 y 7.200 en 2027.",
     "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
@@ -8476,10 +8478,10 @@
    },
    "src": {
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=65",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 65",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=38",
@@ -8567,7 +8569,7 @@
     ]
    },
    "why": {
-    "psoe": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
+    "psoe": "Su programa del 29N quiere un 81 % de electricidad renovable en 2030, con las plantas preferentemente en Zonas de Aceleración Renovable (compromiso 234).",
     "pp": "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo.",
     "vox": "Su programa de 2026 propone impedir la instalación descontrolada de macroplantas solares y eólicas que destruyan la riqueza agrícola y natural.",
     "fa": "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
@@ -9047,10 +9049,10 @@
    },
    "src": {
     "psoe": [
-     "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=79",
-     "Programa electoral del PSOE de 2023",
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=20",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 20",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=36",
@@ -9138,7 +9140,7 @@
     ]
    },
    "why": {
-    "psoe": "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
+    "psoe": "Su programa del 29N promete modernizar las Cercanías y la Media Distancia y, a la vez, culminar los corredores Mediterráneo y Atlántico (compromiso 27).",
     "pp": "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
     "vox": "Su programa del 29N da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales; no cita la alta velocidad.",
     "fa": "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional.",
@@ -9425,10 +9427,10 @@
      "2026-11"
     ],
     "psoe": [
-     "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857",
-     "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico",
-     "gobierno",
-     "2025-06"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=65",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 65",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=54",
@@ -9541,7 +9543,7 @@
    },
    "why": {
     "mj": "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
-    "psoe": "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
+    "psoe": "Su programa del 29N propone acelerar el almacenamiento energético, la gestión de la demanda y las interconexiones, con un 81 % renovable en 2030 (234 y 237).",
     "pp": "Su programa de 2026 apuesta por la neutralidad tecnológica: nuclear, renovables, almacenamiento y respaldo compiten en igualdad.",
     "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
