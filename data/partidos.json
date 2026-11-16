@@ -461,7 +461,7 @@
   },
   {
    "id": "d21",
-   "name": "Democracia 21",
+   "name": "Democracia para el Siglo 21",
    "ab": "D21",
    "color": "#EE7B1E",
    "tag": "Liberal · centro",
@@ -471,7 +471,7 @@
      "barcelona"
     ]
    },
-   "desc": "Candidatura de Democracia 21, el partido de Miriam González, con Ciudadanos y UCIN, y listas proclamadas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
+   "desc": "Candidatura Democracia para el Siglo 21 (D21), de Democracia 21 (el partido de Miriam González), Ciudadanos y UCIN, con listas proclamadas al Congreso por Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
    "props": [
     {
      "t": "Igualdad territorial: no a la amnistía ni a la financiación singular.",
@@ -956,7 +956,7 @@
   },
   {
    "id": "existe",
-   "name": "Coalición Existe",
+   "name": "Teruel Existe",
    "ab": "EXISTE",
    "color": "#3A8434",
    "tag": "España Vaciada · transversal",
@@ -965,10 +965,7 @@
      "teruel"
     ]
    },
-   "local": {
-    "ara": "Teruel Existe"
-   },
-   "desc": "Coalición de Teruel Existe y Aragón Existe. Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
+   "desc": "Candidatura de Teruel Existe, que el 16 de octubre anunció su coalición con Aragón Existe; en la papeleta del BOE figura solo como «Teruel Existe». Plataforma transversal de la España Vaciada que pide fiscalidad diferenciada, servicios públicos e infraestructuras para el territorio despoblado.",
    "props": [
     {
      "t": "Fiscalidad diferenciada en las zonas despobladas.",
@@ -1188,36 +1185,46 @@
    "tag": "Comunista · izquierda radical",
    "scope": {
     "provinces": [
+     "alava",
      "alicante",
      "almeria",
      "asturias",
      "avila",
      "baleares",
+     "barcelona",
+     "bizkaia",
      "burgos",
      "caceres",
      "cadiz",
      "cantabria",
      "castellon",
      "cordoba",
+     "coruna",
      "cuenca",
+     "gipuzkoa",
+     "girona",
      "granada",
      "guadalajara",
      "huelva",
      "huesca",
      "jaen",
+     "laspalmas",
      "leon",
+     "lleida",
      "madrid",
      "malaga",
      "murcia",
      "navarra",
+     "ourense",
      "palencia",
-     "laspalmas",
+     "pontevedra",
      "rioja",
      "salamanca",
-     "tenerife",
      "segovia",
      "sevilla",
      "soria",
+     "tarragona",
+     "tenerife",
      "teruel",
      "toledo",
      "valencia",
@@ -1226,7 +1233,12 @@
      "zaragoza"
     ]
    },
-   "desc": "Partido comunista. En su programa de lucha 2023-2027 defiende expulsar a las empresas privadas de la sanidad y la educación, poner el sector energético bajo propiedad estatal y salir de la OTAN y de la UE.",
+   "local": {
+    "cat": "PCTC",
+    "pv": "PCTE/ELAK",
+    "gal": "PCTG"
+   },
+   "desc": "Partido comunista. En Cataluña, Euskadi y Galicia se presenta con sus organizaciones territoriales (PCTC, PCTE/ELAK y PCTG), que figuran así en la papeleta. En su programa de lucha 2023-2027 defiende expulsar a las empresas privadas de la sanidad y la educación, poner el sector energético bajo propiedad estatal y salir de la OTAN y de la UE.",
    "props": [
     {
      "t": "Jornada máxima de 35 horas semanales.",
