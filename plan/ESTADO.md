@@ -6,6 +6,8 @@
 - **Teruel Existe (8):** con su programa de 2023 (estimadas): K05 3~→4~ (p. 20), E08 0→1~ (p. 18), K08 0→2~ (p. 11), B02 3~→4~ (p. 17), G08 4~ y F08 4~ con enlace (pp. 10 y 17). Con votaciones de su diputado (prensa): L02 0→3~ (abstención en la ley de eutanasia, 2021), B01 3~→4~ (sí a la ley de vivienda de 2023).
 - **Soria ¡Ya! (3, programa del 29N, p. 1):** B09 0→4~, B02 0→2~, G08 4~ con enlace.
 - **Geroa Bai (2, prensa):** D04 4~→5~ (apoyo a la ley de amnistía en el Senado, RTVC 14 may 2024), F01 5~ con enlace (Barkos defiende la regularización en el Senado, Noticias de Navarra 4 feb 2026).
+- **Secciones afectadas:** ficha de PACMA (`src/partidos.src.mjs`): la descripción ya no dice que «en muchos otros temas no fija postura» y suma la propuesta de vivienda pública (B08); fichas, comparativas, /temas/, /programas/, /prensa/ y /metodologia/ se regeneran solas con los datos. Teruel Existe, Soria ¡Ya! y Geroa Bai: sus fichas no contradicen las nuevas posturas.
+- **Norma permanente (titular, 15 nov):** toda información nueva (programas, posturas, fuentes, debates) obliga a actualizar cada sección afectada de la web y anotarlo aquí; queda en CLAUDE.md («Coherencia en toda la web»), que leen la tarea diaria de programas y debates y la de posturas.
 - **Recuento:** 1.197 documentadas, 1.148 estimadas y 865 sin postura → 1.200, 1.161 y 849 (147 estimadas con enlace).
 
 ## 15 nov 2026 (noche) · Programas nuevos: PSOE, Compromís-Front Valencià, Geroa Bai, Teruel Existe y UPC; tanda 5 de posturas (petición del titular)
