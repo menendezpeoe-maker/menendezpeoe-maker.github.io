@@ -428,7 +428,7 @@
      "melilla"
     ]
    },
-   "desc": "Partido animalista. Centra su programa en el bienestar animal, el fin de la tauromaquia y la caza, el medio ambiente y una ley electoral proporcional; en muchos otros temas no fija postura.",
+   "desc": "Partido animalista. Centra su programa en el bienestar animal, el fin de la tauromaquia y la caza y el medio ambiente; también propone vivienda pública, una sanidad sin privatizaciones y una ley electoral proporcional.",
    "props": [
     {
      "t": "Abolir la tauromaquia y retirar las ayudas públicas a los toros.",
@@ -449,6 +449,10 @@
     {
      "t": "Cerrar las nucleares y apostar por las renovables.",
      "q": "G01"
+    },
+    {
+     "t": "Construir vivienda pública de forma masiva y restringir los pisos turísticos en barrios tensionados.",
+     "q": "B08"
     }
    ]
   },
