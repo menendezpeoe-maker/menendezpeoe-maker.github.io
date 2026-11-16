@@ -18,11 +18,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó contra el veto al proyecto de su Gobierno que bajaba la jornada máxima a 37,5 horas semanales sin merma salarial.",
-   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
-   "fuente_titulo": "Congreso, votación nominal del 10/09/2025 de las enmiendas de totalidad al proyecto de ley de jornada (exp. 121/000058)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-09-10"
+   "justificacion": "Su programa del 29N se compromete a completar la reducción de la jornada a 37,5 horas sin perder salario y a incentivar las 35 horas en los convenios (compromiso 108).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=41",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 41",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A01",
@@ -474,11 +474,11 @@
    "postura_texto": "Más bien B: Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf",
-   "fuente_titulo": "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)",
+   "justificacion": "Su programa del 29N defiende más inversión en servicios públicos sostenida por una fiscalidad progresiva, con más impuestos a grandes patrimonios y rentas del capital (127).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A02",
@@ -987,11 +987,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su Gobierno creó un impuesto estatal a las grandes fortunas que rige en todas las comunidades y lo prorrogó sin fecha de fin.",
-   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
-   "fuente_titulo": "BOE, Real Decreto-ley 8/2023, de 27 de diciembre",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2023-12"
+   "justificacion": "Su programa del 29N mantiene la tributación complementaria de los grandes patrimonios para financiar la prestación por crianza (compromiso 127).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1861,11 +1861,11 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su reforma de pensiones garantiza la revalorización con el IPC y equilibra el sistema por la vía de los ingresos.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "justificacion": "Su programa del 29N apuesta por reforzar los ingresos de la Seguridad Social con nuevas fuentes de financiación y la cuota de solidaridad (compromiso 98).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=39",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 39",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
@@ -2925,11 +2925,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 propone fijar por ley que el salario mínimo se mantenga en el 60 % del salario medio.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=26",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N propone blindar por ley el salario mínimo por encima del 60 % del salario medio y actualizarlo periódicamente (compromiso 87).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=37",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 37",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -4312,11 +4312,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13411162_1124105.html",
-   "fuente_titulo": "eldiario.es, rueda de prensa de balance de Pedro Sánchez, 28/07/2026",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2026-07-28"
+   "justificacion": "Su programa del 29N propone congelar temporalmente los alquileres que superen los índices de referencia en los mercados tensionados (compromiso 62).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=30",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -4825,11 +4825,11 @@
    "postura_texto": "Más bien B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "justificacion": "Apuesta por la Ley de Vivienda, con límites al alquiler y un parque público del 20 %, más que por liberalizar suelo.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "justificacion": "Su programa del 29N prioriza un parque público estatal de 100.000 viviendas y limitar las rentas en zonas tensionadas (compromisos 42 y 62).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=28",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 28",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -6820,11 +6820,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su Ley de Vivienda permite a los ayuntamientos subir el recargo del IBI de las viviendas vacías hasta el 150 %.",
-   "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
-   "fuente_titulo": "Ley 12/2023, por el derecho a la vivienda (24 de mayo de 2023)",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2023-05-24"
+   "justificacion": "Su programa del 29N propone un impuesto progresivo a las viviendas vacías, turísticas o con alquiler abusivo de grandes propietarios y fondos (compromiso 70).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=31",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -7675,11 +7675,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 fija el objetivo del 20 % de vivienda pública en alquiler y 50.000 viviendas promovidas por el Estado.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=222",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N propone un parque público estatal de 100.000 viviendas, construidas o adquiridas, para venta o alquiler asequible (compromiso 42).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=28",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 28",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -9632,11 +9632,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 propone llevar a la Constitución la descentralización ya alcanzada, no devolver competencias al Estado.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=231",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N sostiene que «el reto no es recentralizar ni fragmentar», sino que el Estado autonómico funcione mejor.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=91",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 91",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -17213,11 +17213,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su acuerdo de coalición y su pacto con Bildu prevén sustituir o reformar a fondo la ley de 2015, aunque no la derogan entera.",
-   "fuente_url": "https://maldita.es/malditahemeroteca/20241003/sanchez-2015-derogar-ley-mordaza",
-   "fuente_titulo": "Maldita.es, acuerdo de coalición PSOE-Sumar (24/10/2023) y pacto con EH Bildu (03/10/2024)",
-   "fuente_tipo": "prensa",
-   "fuente_fecha": "2024-10-03"
+   "justificacion": "Su programa del 29N propone una nueva Ley de Seguridad Ciudadana que sustituya a la Ley Orgánica 4/2015 (compromiso 431).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=99",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 99",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -19265,11 +19265,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Defiende la ley integral y el Pacto de Estado contra la violencia de género, y critica a los partidos que niegan esa violencia.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
-   "fuente_titulo": "Programa electoral del PSOE de 2023 (copia en El Independiente)",
+   "justificacion": "Su programa del 29N amplía la Ley Integral contra la Violencia de Género a las violencias digitales y propone una ley contra la violencia vicaria (350 y 335).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=84",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 84",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -21716,11 +21716,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su Gobierno aprobó en 2024 un reglamento que amplía las vías de migración laboral regular.",
-   "fuente_url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2024/191124-rueda-de-prensa-ministros.aspx",
-   "fuente_titulo": "Aprobación del nuevo Reglamento de Extranjería (19 de noviembre de 2024)",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2024-11-19"
+   "justificacion": "Su programa del 29N propone simplificar trámites, impulsar la contratación en origen y facilitar el acceso al empleo de quienes vienen a trabajar.",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=92",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 92",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -22685,11 +22685,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
-   "justificacion": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=182",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N propone una prestación estatal por crianza para todos los hogares con menores, de cuantía progresiva según la renta (compromiso 192).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=56",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 56",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F06",
@@ -23426,11 +23426,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 promete financiación suficiente de la dependencia y reforzar el carácter público de sus servicios.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=176",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N quiere consolidar la ayuda a domicilio como servicio público esencial de la dependencia con financiación suficiente y estable (206).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=57",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 57",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -24870,11 +24870,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
-   "justificacion": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=74",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N quiere un 81 % de electricidad renovable en 2030, con las plantas preferentemente en Zonas de Aceleración Renovable (compromiso 234).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=65",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 65",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -26808,11 +26808,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 promete más inversión en Cercanías y red convencional y, a la vez, seguir extendiendo la alta velocidad.",
-   "fuente_url": "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=79",
-   "fuente_titulo": "Programa electoral del PSOE de 2023",
+   "justificacion": "Su programa del 29N promete modernizar las Cercanías y la Media Distancia y, a la vez, culminar los corredores Mediterráneo y Atlántico (compromiso 27).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=20",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 20",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -27834,11 +27834,11 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": false,
    "nota": "",
-   "justificacion": "Tras el apagón, su Gobierno defendió las renovables y aprobó medidas para reforzar las redes y el almacenamiento.",
-   "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12857",
-   "fuente_titulo": "BOE, Real Decreto-ley 7/2025, de 24 de junio, de refuerzo del sistema eléctrico",
-   "fuente_tipo": "gobierno",
-   "fuente_fecha": "2025-06"
+   "justificacion": "Su programa del 29N propone acelerar el almacenamiento energético, la gestión de la demanda y las interconexiones, con un 81 % renovable en 2030 (234 y 237).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=65",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 65",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
