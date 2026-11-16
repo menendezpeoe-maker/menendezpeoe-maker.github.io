@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 17 nov 2026 (madrugada) · Índices «En esta página» que no se quedan fijos (petición del titular)
+- **Causa:** el índice automático «En esta página» de `pages.mjs` (/votar/, /metodologia/, /prensa/, /sobre/ y las 52 fichas provinciales) usa la clase `.toc`, que compartía con el índice lateral de la metodología del test; la regla `@media (min-width: 980px) { .toc { position: sticky; top: 24px } }` de `assets/papeleta.css` lo dejaba pegado arriba en escritorio, tapando el contenido al bajar. En móvil no pasaba (la variante móvil está en `mejora.css`, que solo carga la portada). La guía de /votar/ (`.sp-toc`) y el índice de preguntas de los 12 temas (`.q-index`) no tenían fijación.
+- **Arreglo:** la regla pegajosa se limita a `.mgrid .toc` (solo la metodología del test, que la conserva). Sin cambios de textos, datos, enlaces, anclas ni navegación.
+- **Prueba nueva `qa/indices.mjs`** (grupo `paginas` y `todas`): en móvil (390×844) y escritorio (1280×900), en /votar/, /metodologia/, /prensa/, /sobre/, /provincias/madrid/ y /temas/vivienda-y-urbanismo/: ni el índice ni sus contenedores son sticky/fixed, sale de pantalla al bajar y el primer y el último enlace dejan su encabezado a la vista (sin cabecera fija; `scroll-margin-top` de 16 px). Sin el arreglo, 17 fallos (todos en escritorio); con él, 0. `node qa/run.mjs paginas`: 8/8.
+- **Comprobación de partida:** `dist/` de `fuente` frente a `main` solo difería en /debates/ («Por comprobar si se celebró» en el debate de TVG del 16 nov), que depende de la fecha de generación, no de código ausente.
+
 ## 16 nov 2026 (noche) · Fecha de «datos actualizados» automática (petición del titular)
 - La web seguía diciendo «actualizados el 13 de noviembre» (400 páginas, pie y test): `UPDATED` estaba fijo en `build.mjs` aunque las posturas cambiaron el 14–16 nov.
 - Ahora `build.mjs` calcula un resumen (hash) de lo publicado (preguntas, posturas, fuentes, partidos, programas y políticos) y lo guarda en `src/datos-fecha.json`: si cambia, la fecha pasa a hoy (hora de Madrid); si no, se conserva. **Haz commit de `src/datos-fecha.json`** con cada cambio de datos. La validación de fechas de fuentes usa ahora «hoy».

@@ -547,7 +547,8 @@ details.more > summary:hover { color: var(--ink); }
 .mgrid { display: grid; gap: 40px; grid-template-columns: 1fr; padding-top: 28px; }
 @media (min-width: 980px) { .mgrid { grid-template-columns: 230px minmax(0, 1fr); gap: 56px; } }
 .toc { display: grid; gap: 2px; align-content: start; }
-@media (min-width: 980px) { .toc { position: sticky; top: 24px; } }
+/* Solo el índice de la metodología del test (dentro de .mgrid) acompaña al bajar; el «En esta página» de las páginas estáticas no se fija */
+@media (min-width: 980px) { .mgrid .toc { position: sticky; top: 24px; } }
 .toc a { font-size: 14.5px; color: var(--ink-2); text-decoration: none; padding: 6px 10px; border-left: 2px solid var(--rule); }
 .toc a:hover { color: var(--ink); border-left-color: var(--ink); }
 .mbody { display: grid; gap: 48px; min-width: 0; }
