@@ -21,8 +21,8 @@
 - **Criterio:** hueco = 107 − posturas que ya citan el programa del 29N (`node qa/barrido.mjs`, apartado 2), ponderado por el tamaño del programa (los de 1–14 páginas ya están casi agotados). Dos pasadas al día (14:23 y 21:17, hora de Madrid) del 16 al 21 nov. Cada pasada toma el primer bloque sin «HECHO», lo trabaja hasta 2 horas y lo marca aquí («HECHO» o «a medias: sigue en Qxx»).
 - **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.
 - **Cola (hueco a 16 nov):**
-  1. PSOE, primera mitad (A01–G09): 100 sin citar su programa (114 págs.).
-  2. PSOE, segunda mitad (H01–L09).
+  1. PSOE, primera mitad (A01–G09): 100 sin citar su programa (114 págs.). **BLOQUEADO (16 nov, 14:23):** psoe.es devuelve la página anti-bots de Incapsula a la nube (curl y WebFetch) y el archivo web no respondió; el PDF no está en los archivos del proyecto. Falta que el titular suba el PDF del PSOE al hilo. Mientras falte, las pasadas siguientes saltan al bloque 3 y vuelven aquí cuando esté.
+  2. PSOE, segunda mitad (H01–L09). Mismo bloqueo que el 1.
   3. PNV (99; 43 págs.).
   4. CC-PC (93; 23 págs.).
   5. Compromís-Front Valencià (89; 64 págs., en valenciano).
