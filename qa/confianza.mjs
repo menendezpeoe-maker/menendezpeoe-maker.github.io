@@ -7,6 +7,8 @@ const meth = JSON.parse(fs.readFileSync(new URL("../src/metodologia.json", impor
 const fails = []; const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
 const get = async (p) => { const r = await fetch(SITE + p); return { status: r.status, text: await r.text() }; };
 const h1 = (t) => (t.match(/<h1[\s>]/g) || []).length === 1;
+const fecha = JSON.parse(fs.readFileSync(new URL("../src/datos-fecha.json", import.meta.url)));
+ok(bank.updated === fecha.fecha && meth.datos === bank.updated, `la fecha de «datos actualizados» sale de src/datos-fecha.json y la metodología usa los mismos datos (${bank.updated})`);
 console.log("Justificaciones y avisos de error");
 const q = bank.questions.find((x) => Object.keys(x.why || {}).length > 3);
 const qp = await get(`preguntas/${q.id.toLowerCase()}/`);

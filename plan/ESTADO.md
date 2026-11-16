@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 (noche) · Fecha de «datos actualizados» automática (petición del titular)
+- La web seguía diciendo «actualizados el 13 de noviembre» (400 páginas, pie y test): `UPDATED` estaba fijo en `build.mjs` aunque las posturas cambiaron el 14–16 nov.
+- Ahora `build.mjs` calcula un resumen (hash) de lo publicado (preguntas, posturas, fuentes, partidos, programas y políticos) y lo guarda en `src/datos-fecha.json`: si cambia, la fecha pasa a hoy (hora de Madrid); si no, se conserva. **Haz commit de `src/datos-fecha.json`** con cada cambio de datos. La validación de fechas de fuentes usa ahora «hoy».
+- `src/metodologia.json` regenerado (mismas cifras, datos del 16 nov). Prueba nueva en `qa/confianza.mjs`.
+- Pendiente aparte: /votar/ y /calendario/ dicen «revisada el 7 de noviembre» (`VOTAR.revisado`); es una fecha real de revisión de la información oficial y solo debe cambiarse tras revisarla.
+
 ## 16 nov 2026 (noche) · Revisar posturas con el programa del 29N: PSOE, segunda mitad (H01–L09)
 - **Fuente:** programa del PSOE del 29N (copia del titular en test29n/programas/PSOE_Programa_29N.pdf; se citan páginas del PDF, la impresa es +1).
 - **Pasan a citar el programa (valor sin cambios):** H01 1 (p. 105: rechaza el 5 % del PIB), H02 5 (p. 109, compr. 472), H03 1 (p. 109, 473), H04 5 (p. 105), H07 1 (p. 107, 459), I02 3 (p. 54, 179: solo el primer curso gratis), I03 1 (p. 55, 184), J01 4 (p. 49, 138), K03 4 (p. 69, 267), K05 2 (p. 70, 271), K08 3 (p. 68, 264), L02 1 (p. 50, 147), L03 4 (p. 97, 412), L04 1 (p. 77), L07 5 (p. 95, 399), L08 1 (p. 86, 364). Nota K08/psoe al día (ya no habla de «nuevos regadíos»).

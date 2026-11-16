@@ -1,13 +1,19 @@
 // Valida las fuentes y genera los datos publicados en data/.
 // Uso: node build.mjs   (sale con código 1 si encuentra errores)
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { DIMS, AREAS, QUESTIONS, FAMILIES, NOTES, SOURCES, JUSTIF } from "./src/preguntas.src.mjs";
 import { PARTY_ORDER, DISPLAY_ORDER, PARTIES, REGIONS } from "./src/partidos.src.mjs";
 import { POLITICIANS } from "./src/politicos.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
 
 const VERSION = "2.0.0";
-const UPDATED = "2026-11-13";
+// Fecha de «datos actualizados»: se calcula sola. Si cambia el contenido publicado (preguntas, posturas,
+// fuentes, partidos, programas o políticos), pasa a ser la fecha de hoy (Madrid); si no, se conserva.
+// Se guarda en src/datos-fecha.json (haz commit de ese archivo).
+const TODAY = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Madrid" }).format(new Date());
+const FECHA_FILE = "src/datos-fecha.json";
+let UPDATED;
 const SRC_TYPES = ["programa", "parlamento", "gobierno", "declaracion", "prensa"];
 const errors = [];
 const warns = [];
@@ -60,7 +66,7 @@ const questions = QUESTIONS.map((q) => {
       if (!pos[pid]) err(`${q.id}: fuente para ${pid}, que no tiene postura`);
       if (!/^https:\/\/[^\s"<>]+$/.test(url) || !label) err(`${q.id}/${pid}: fuente no válida`);
       if (!SRC_TYPES.includes(type)) err(`${q.id}/${pid}: tipo de fuente «${type}» no válido (${SRC_TYPES.join(", ")})`);
-      if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(date || "") || date > UPDATED) err(`${q.id}/${pid}: fecha de la fuente no válida (${date})`);
+      if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(date || "") || date > TODAY) err(`${q.id}/${pid}: fecha de la fuente no válida (${date})`);
       if (est.includes(pid)) warn(`${q.id}/${pid}: tiene fuente pero sigue marcada como estimada`);
     }
     out.src = SOURCES[q.id];
@@ -134,6 +140,12 @@ if (errors.length) {
 
 FAMILIES.forEach((f) => f.forEach((id) => seen.has(id) || err(`Familia con pregunta inexistente ${id}`)));
 if (new Set(FAMILIES.flat()).size !== FAMILIES.flat().length) err("Una pregunta está en dos familias");
+{
+  const hash = createHash("sha256").update(JSON.stringify({ DIMS, AREAS, FAMILIES, questions, DISPLAY_ORDER, parties, programas: PROGRAMAS.publicados, REGIONS, politicians })).digest("hex").slice(0, 16);
+  const prev = existsSync(FECHA_FILE) ? JSON.parse(readFileSync(FECHA_FILE, "utf8")) : {};
+  UPDATED = prev.hash === hash && prev.fecha ? prev.fecha : TODAY;
+  if (prev.hash !== hash || prev.fecha !== UPDATED) writeFileSync(FECHA_FILE, JSON.stringify({ hash, fecha: UPDATED }) + "\n");
+}
 writeFileSync("data/preguntas.json", JSON.stringify({ version: VERSION, updated: UPDATED, dims: DIMS, areas: AREAS, families: FAMILIES, questions }, null, 1));
 writeFileSync("data/partidos.json", JSON.stringify({
   version: VERSION, updated: UPDATED, order: DISPLAY_ORDER, parties, programas: PROGRAMAS.publicados,
