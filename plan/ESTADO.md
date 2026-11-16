@@ -12,6 +12,11 @@
 - Comprobado: el repositorio es público, y el script en GitHub, /datos/ y /metodologia/ responden 200. Sin datos privados.
 - Prueba nueva en `qa/confianza.mjs` (texto llano y ambos enlaces). Revisado a 1280 y 390 px sin desbordes.
 
+## 16 nov 2026 (mañana) · Textos fijos desfasados sobre los programas (revisión externa del 16 nov y norma «Coherencia en toda la web»)
+- **/prensa/** decía «hasta el 13 de noviembre…; los programas para el 29N aún no se han publicado completos»: ahora cuenta los programas publicados (21 de 30) y enlaza /programas/ (`pages.mjs`).
+- **Test, «Cómo funciona» → Posturas** decía «programas electorales de 2023… hasta el 17 de octubre de 2026. Los programas para el 29N aún no se han publicados completos»: ahora dice que se usa el programa del 29N en las candidaturas que ya lo han publicado (cifra automática) y el de 2023 en el resto (`assets/papeleta.js`).
+- **Contadores:** la diferencia 1.258/1.347 que vio la revisión era una lectura antigua; /datos/, /metodologia/ y /prensa/ dan 1.200 + 147 = 1.347. La fecha fija «Datos actualizados el 13 de noviembre» (`UPDATED` en build.mjs) queda para la revisión diaria del 17 (no se toca hoy).
+
 ## 16 nov 2026 · Cola «Revisar posturas con el programa del 29N» (petición del titular: máximo de posturas revisadas en todos los partidos)
 - **Criterio:** hueco = 107 − posturas que ya citan el programa del 29N (`node qa/barrido.mjs`, apartado 2), ponderado por el tamaño del programa (los de 1–14 páginas ya están casi agotados). Dos pasadas al día (14:23 y 21:17, hora de Madrid) del 16 al 21 nov. Cada pasada toma el primer bloque sin «HECHO», lo trabaja hasta 2 horas y lo marca aquí («HECHO» o «a medias: sigue en Qxx»).
 - **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.

@@ -814,7 +814,7 @@ ${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
 <p>O, si prefieres un enlace de texto:</p>
 <pre class="embed" tabindex="0"><code>${esc(embedText)}</code></pre></section>
 <section aria-labelledby="h-met"><h2 class="h2" id="h-met">Metodología y límites</h2>
-<p>La coincidencia mide cuánto se parecen las respuestas de una persona a las posturas de cada partido; no es una probabilidad de voto ni una encuesta, y el test no publica resultados agregados. Las posturas se basan en programas electorales, votaciones y declaraciones hasta el ${esc(updated)}; los programas para el 29N aún no se han publicado completos. La metodología completa está en la sección «Cómo funciona» del test.</p></section>
+<p>La coincidencia mide cuánto se parecen las respuestas de una persona a las posturas de cada partido; no es una probabilidad de voto ni una encuesta, y el test no publica resultados agregados. Las posturas se basan en programas electorales, votaciones y declaraciones; ${nPub} de ${live.length} candidaturas han publicado ya su programa del 29N (<a href="/programas/">ver programas</a>) y sus posturas se revisan con él. La metodología completa está en la sección «Cómo funciona» del test.</p></section>
 ${owner ? `<section aria-labelledby="h-con"><h2 class="h2" id="h-con">Contacto</h2><p>${owner.name ? `Responsable: ${esc(owner.name)}. ` : ""}${owner.email ? `Correo: <a href="mailto:${esc(owner.email)}">${esc(owner.email)}</a>.` : ""}</p></section>` : ""}
 ${cta("Pruébalo")}`
   });
