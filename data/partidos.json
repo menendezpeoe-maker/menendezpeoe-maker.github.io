@@ -318,7 +318,10 @@
      "mel"
     ]
    },
-   "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC y en la Comunitat Valenciana y Canarias se integra en las coaliciones Compromís – Front Valencià y Unidad del Pueblo Canario.",
+   "local": {
+    "ceuta": "Podemos (Paz, Casa y Trabajo)"
+   },
+   "desc": "Izquierda que concurre sola en la mayor parte de España tras no pactar con el Frente Amplio. En Cataluña apoya a ERC y en la Comunitat Valenciana y Canarias se integra en las coaliciones Compromís – Front Valencià y Unidad del Pueblo Canario. No presenta lista en las Illes Balears ni en Melilla, y en Ceuta figura en la papeleta como «Podemos (Paz, Casa y Trabajo)».",
    "props": [
     {
      "t": "Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir.",
@@ -468,7 +471,7 @@
      "barcelona"
     ]
    },
-   "desc": "Candidatura de Democracia 21, el partido de Miriam González, con Ciudadanos y UCIN, y listas previstas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
+   "desc": "Candidatura de Democracia 21, el partido de Miriam González, con Ciudadanos y UCIN, y listas proclamadas en Madrid y Barcelona. Liberalismo de centro, igualdad territorial frente a los nacionalismos y regeneración institucional. Posturas estimadas sobre todo a partir de las de Ciudadanos.",
    "props": [
     {
      "t": "Igualdad territorial: no a la amnistía ni a la financiación singular.",
@@ -641,7 +644,7 @@
    "local": {
     "nav": "EH Bildu-ERC"
    },
-   "desc": "Izquierda abertzale con candidatura propia en Euskadi y Navarra. Defiende el derecho a decidir de Euskal Herria, políticas sociales de izquierda, el euskera y un marco vasco de relaciones laborales.",
+   "desc": "Izquierda abertzale con candidatura propia en Euskadi; en Navarra concurre en coalición con ERC como EH Bildu-ERC. Defiende el derecho a decidir de Euskal Herria, políticas sociales de izquierda, el euskera y un marco vasco de relaciones laborales.",
    "props": [
     {
      "t": "Derecho a decidir para Euskal Herria.",
@@ -999,7 +1002,7 @@
      "bal"
     ]
    },
-   "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En las Illes Balears sustituye a la lista del Frente Amplio; Podemos va por separado.",
+   "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En las Illes Balears sustituye a la lista del Frente Amplio; Podemos no presenta lista allí.",
    "props": [
     {
      "t": "Limitar las plazas turísticas y el alquiler turístico.",
