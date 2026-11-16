@@ -1,5 +1,23 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 · Cola «Revisar posturas con el programa del 29N» (petición del titular: máximo de posturas revisadas en todos los partidos)
+- **Criterio:** hueco = 107 − posturas que ya citan el programa del 29N (`node qa/barrido.mjs`, apartado 2), ponderado por el tamaño del programa (los de 1–14 páginas ya están casi agotados). Dos pasadas al día (14:23 y 21:17, hora de Madrid) del 16 al 21 nov. Cada pasada toma el primer bloque sin «HECHO», lo trabaja hasta 2 horas y lo marca aquí («HECHO» o «a medias: sigue en Qxx»).
+- **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.
+- **Cola (hueco a 16 nov):**
+  1. PSOE, primera mitad (A01–G09): 100 sin citar su programa (114 págs.).
+  2. PSOE, segunda mitad (H01–L09).
+  3. PNV (99; 43 págs.).
+  4. CC-PC (93; 23 págs.).
+  5. Compromís-Front Valencià (89; 64 págs., en valenciano).
+  6. Adelante Andalucía (83; 134 págs.).
+  7. SALF (78; 40 págs.).
+  8. Democracia 21 (90; web por bloques) y M+J (77).
+  9. BNG (69; 91 págs.).
+  10. Falange (71) y Frente Obrero (66).
+  11. ERC (62), Vox (61) y PP (50).
+  12. Repaso: programas nuevos (Drago, Ara Més, Junts, Bildu, Podemos, Frente Amplio, CHA, PCTE, UPN…), partidos con programa corto (Geroa Bai, Soria ¡Ya!, Teruel Existe, UPC, PH, IE) y balance final.
+- **Secciones afectadas en cada bloque:** /programas/ («N de 107 revisadas con él»), fichas y propuestas de `src/partidos.src.mjs`, /comparar/, /temas/, explorador y resultado (se regeneran con los datos), /metodologia/ y /prensa/ (cifras automáticas), /datos/ (CSV). Comprobar los textos fijos con el apartado 3 de `node qa/barrido.mjs`.
+
 ## 15 nov 2026 (noche) · Documentar posturas, tanda 6: partidos con menos posturas documentadas (petición del titular)
 - **Orden:** de menos a más documentadas (Soria ¡Ya! 2, Geroa Bai 4, Teruel Existe 6, Drago 7, Ara Més 8…). Sin programa del 29N todavía (búsqueda web y webs oficiales): Drago, Ara Més, Junts, EH Bildu. La tarea diaria del 16 al 21 nov se ha rehecho para seguir este mismo orden (programa nuevo, documentar estimadas, estimar con enlace las «sin postura»).
 - **PACMA (12, programa del 29N; el repaso del 14 nov se dejó estas):** B05 0→4 y B07 0→4 (p. 70), J05 0→4 (p. 72); estimadas con enlace B09 4~ (p. 70), I01 2~ (p. 61), L05 4~ (p. 60), I07 4~ (p. 61), F03 1~ (p. 81), A05 2~ (p. 80), F08 4~ (p. 79), L03 4~ (p. 80) y G06 4~ (p. 36, antes sin enlace).
