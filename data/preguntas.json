@@ -222,10 +222,10 @@
      "2025-09-10"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7",
-     "Programa electoral de Sumar de 2023, p. 7",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=55",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 55",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
@@ -252,10 +252,10 @@
      "2025-09-10"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=3",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=6",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 6",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
@@ -311,12 +311,12 @@
     "psoe": "Su programa del 29N se compromete a completar la reducción de la jornada a 37,5 horas sin perder salario y a incentivar las 35 horas en los convenios (compromiso 108).",
     "pp": "El PP votó con Vox y Junts la enmienda a la totalidad que tumbó la ley: prefiere que la jornada se pacte en el diálogo social.",
     "vox": "Vox presentó una enmienda a la totalidad y votó por devolver al Gobierno el proyecto de jornada de 37,5 horas.",
-    "fa": "Su programa fija por ley una jornada máxima de 37,5 horas sin reducción de salario y plantea llegar a 32 horas.",
+    "fa": "Su programa del 29N propone implantar de inmediato las 37,5 horas en 2026 y avanzar hacia una jornada máxima de 32 horas sin reducción salarial.",
     "pod": "Votó contra las enmiendas que tumbaron la ley de 37,5 horas.",
     "erc": "Su programa de 2026 reduce por ley la jornada máxima a 37,5 horas semanales sin rebaja salarial, modificando el artículo 34 del Estatuto.",
     "junts": "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
     "pnv": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
-    "bildu": "Su programa de 2023 pide reducir la jornada a 32 horas semanales sin rebaja salarial.",
+    "bildu": "Su programa del 29N propone reducir la jornada a 32 horas o cuatro días sin rebaja salarial, con una transición de hasta tres años para las pymes.",
     "upn": "Votó a favor de los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "bng": "Su programa de 2026 promueve la jornada de 35 horas semanales sin rebaja salarial y avanzar hacia las 32 horas.",
     "ccpc": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
@@ -405,10 +405,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-     "Programa electoral de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=8",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
@@ -441,10 +441,10 @@
      "2025-06-26"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=14",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 14",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
@@ -508,11 +508,12 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N defiende más inversión pública con un nuevo esfuerzo tributario sobre grandes empresas, banca y grandes fortunas, frente a la austeridad.",
     "psoe": "Su programa del 29N defiende más inversión en servicios públicos sostenida por una fiscalidad progresiva, con más impuestos a grandes patrimonios y rentas del capital (127).",
     "mj": "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
     "salf": "Su contrato del 29N propone una gran rebaja fiscal con la regla de «un euro de rebaja, un euro de ahorro certificado».",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
-    "bildu": "El programa propone aumentar la carga impositiva con impuestos permanentes a la banca, las energéticas y las grandes fortunas, y rechaza políticas de austeridad.",
+    "bildu": "Su programa del 29N pide que las grandes empresas aporten más y rechaza cualquier vuelta a la austeridad y a los recortes.",
     "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas.",
     "d21": "Propone aliviar la presión fiscal y, a la vez, recuperar buenos servicios públicos, sin priorizar claramente una opción.",
     "upn": "UPN prioriza reducir impuestos y deflactar el IRPF.",
@@ -600,10 +601,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16",
-     "Programa electoral de Sumar de 2023, p. 16",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=45",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 45",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://valenciaplaza.com/valenciaplaza/unidas-podemos-defiende-en-el-congreso-un-nuevo-impuesto-sobre-fortunas-de-mas-de-10-millones",
@@ -624,10 +625,10 @@
      "2022-11-24"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=14",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 14",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=44",
@@ -683,11 +684,11 @@
     "psoe": "Su programa del 29N mantiene la tributación complementaria de los grandes patrimonios para financiar la prestación por crianza (compromiso 127).",
     "pp": "El PP promete suprimir el impuesto estatal de solidaridad sobre las grandes fortunas, que ve como una invasión de la autonomía fiscal.",
     "vox": "Vox propone suprimir el impuesto sobre el patrimonio en todo el territorio nacional, no crear uno nuevo.",
-    "fa": "Propone hacer permanente el impuesto estatal a las grandes fortunas, con tipos de al menos el 4 %.",
+    "fa": "Su programa del 29N propone reformar el Impuesto de Solidaridad para que los patrimonios de más de un millón paguen como mínimo un 2 %.",
     "pod": "Defendió en el Congreso un impuesto estatal a las fortunas de más de 10 millones que las comunidades no puedan bonificar.",
     "erc": "Su programa de 2026 hace permanente el impuesto de solidaridad de las grandes fortunas y sube su tipo por encima de 10 millones.",
     "pnv": "El PNV se abstuvo en la votación del impuesto a las grandes fortunas y otros gravámenes, alegando que su diseño los aboca a la nulidad.",
-    "bildu": "Su programa pide hacer permanentes los impuestos a la banca, las energéticas y las grandes fortunas, gestionados por las haciendas forales.",
+    "bildu": "Su programa del 29N propone aumentar el peso del impuesto a la banca y a las grandes fortunas.",
     "bng": "Su programa de 2026 blinda los impuestos específicos a la banca, las energéticas y las grandes fortunas y aumenta su progresividad.",
     "comp": "Su programa para las generales propone un impuesto a las grandes fortunas.",
     "salf": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
@@ -766,10 +767,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19",
-     "Programa electoral de Sumar de 2023, p. 19",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=141",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 141",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -778,10 +779,10 @@
      "2024-06-02"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=8",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=14",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 14",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "salf": [
      "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=6",
@@ -824,10 +825,10 @@
     "psoe": "Su programa del 29N promete una senda decreciente de deuda y déficit, pero también «ingresos nuevos para derechos nuevos» (compromisos 126 y 127).",
     "pp": "Su programa de 2026 promete reducir la deuda con objetivos conformes a las reglas europeas y no aprobar gasto nuevo sin financiación.",
     "vox": "Su programa de 2026 propone reducir la deuda pública con control del déficit y sin gasto superfluo, compatibilizándolo con la rebaja de impuestos.",
-    "fa": "Rechaza que los límites de déficit y deuda condicionen la inversión pública y el gasto social.",
+    "fa": "Su programa del 29N propone modificar el artículo 135 de la Constitución, que prioriza el pago de la deuda, y no aplicar las sendas de estabilidad cuando haya riesgo social.",
     "pod": "Su programa europeo de 2024 pide reformar las reglas fiscales y no fijar límites de déficit iguales para todos.",
     "erc": "Estimación: ERC prioriza el gasto social y critica la deuda por gasto militar, no la contención del gasto.",
-    "bildu": "Rechaza las reglas fiscales que frenan la inversión y pide derogar el artículo 135 de la Constitución, que prioriza el pago de la deuda.",
+    "bildu": "Su programa del 29N propone derogar la reforma del artículo 135 que prioriza el pago de la deuda y revertir las reglas fiscales.",
     "salf": "Su programa autonómico de 2026 propone fijar en el Estatuto límites al endeudamiento y a la presión fiscal.",
     "comp": "Propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
     "cha": "Pide derogar el Pacto de estabilidad y revisar los objetivos de déficit y deuda pública, en lugar de priorizar su reducción.",
@@ -900,10 +901,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
-     "Programa electoral de Sumar de 2023, p. 15",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=47",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 47",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elsaltodiario.com/pensiones/gobierno-pp-sacaran-adelante-una-reforma-incentivar-trabajo-72-anos",
@@ -924,10 +925,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=5",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=7",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 7",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=34",
@@ -1005,11 +1006,11 @@
    "why": {
     "mj": "Su programa del 29N propone profundizar en la cuota de solidaridad y la subida de la base máxima de cotización, eliminando progresivamente el tope, para sostener las pensiones.",
     "psoe": "Su programa del 29N apuesta por reforzar los ingresos de la Seguridad Social con nuevas fuentes de financiación y la cuota de solidaridad (compromiso 98).",
-    "fa": "Defiende revalorizar las pensiones con el IPC y reforzar el sistema con más ingresos y cotizaciones.",
+    "fa": "Su programa del 29N blinda la revalorización con el IPC y refuerza los ingresos de la Seguridad Social con el destope de bases y la cotización de solidaridad.",
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
     "erc": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
-    "bildu": "Rechaza cualquier aumento de la edad de jubilación o del periodo de cálculo de la pensión.",
+    "bildu": "Su programa del 29N rechaza recortes y subir la edad de jubilación o el periodo de cómputo, y blinda la revalorización con el IPC.",
     "pp": "Su programa de 2026 asegura que las pensiones mantengan su poder adquisitivo y suban cada año con el IPC; no opta claramente por subir ingresos ni por recortar gasto.",
     "vox": "Vox se abstuvo en la convalidación de la reforma que financia las pensiones subiendo las cotizaciones, aunque la criticó en el debate.",
     "ccpc": "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
@@ -1256,10 +1257,10 @@
      "2022-08-26"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=7",
-     "Programa electoral de Sumar de 2023, p. 7",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=51",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 51",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.bolsamania.com/noticias/economia/economia--podemos-exige-subir-ya-el-salario-minimo-a-1800-euros-al-mes-y-montero-promete-que-seguira-creciendo--21739276.html",
@@ -1280,10 +1281,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=3",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=6",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 6",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=15",
@@ -1333,11 +1334,11 @@
     "psoe": "Su programa del 29N propone blindar por ley el salario mínimo por encima del 60 % del salario medio y actualizarlo periódicamente (compromiso 87).",
     "pp": "Pone el foco en subir el salario medio y la productividad, sin rechazar las subidas del salario mínimo.",
     "vox": "Vox rechaza subir el salario mínimo si encarece a las empresas y prefiere bajar cotizaciones e impuestos.",
-    "fa": "Propone seguir subiendo el salario mínimo por encima del IPC, como hizo el Ministerio de Trabajo.",
+    "fa": "Su programa del 29N fija por ley un suelo del salario mínimo en el 60 % del salario medio neto, con subidas progresivas.",
     "pod": "Belarra exigió en el Congreso subir ya el salario mínimo a 1.800 euros, lejos de frenarlo.",
     "erc": "Su programa de 2026 propone subir el salario mínimo hasta el 60 % del salario medio bruto.",
     "junts": "Su programa de 2023 considera insuficiente el salario mínimo de 1.080 euros y propone uno catalán más alto.",
-    "bildu": "Exige subir el salario mínimo hasta los 1.200 euros.",
+    "bildu": "Su programa del 29N pide un salario mínimo propio de cada comunidad, con el estatal como mínimo, y fijar su suficiencia según la Carta Social Europea.",
     "bng": "Su programa de 2026 sube el salario mínimo hasta el 60 % del salario medio y prohíbe compensarlo o absorberlo con otros complementos.",
     "upc": "Su manifiesto del 29N defiende subir el salario mínimo y rechaza que se elimine el papel del Estado en su actualización.",
     "ph": "Estimación: el programa defiende «mantener y aumentar los salarios»; no trata el salario mínimo, por eso la base es indirecta.",
@@ -1537,10 +1538,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=16",
-     "Programa electoral de Sumar de 2023, p. 16",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=45",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 45",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.que.es/2021/03/23/congreso-rechaza-eliminar-impuesto-sucesiones/",
@@ -1618,7 +1619,7 @@
    "why": {
     "psoe": "La dirección del PSOE plantea fijar un mínimo en sucesiones para frenar las bonificaciones casi totales de algunas comunidades.",
     "vox": "Vox propone suprimir el impuesto de sucesiones y donaciones en todo el territorio nacional.",
-    "fa": "Propone un mínimo estatal en el impuesto de sucesiones que las comunidades no puedan rebajar.",
+    "fa": "Su programa del 29N crea un impuesto estatal sobre las herencias de más de un millón de euros, complementario del de Sucesiones.",
     "pod": "Unidas Podemos votó contra la propuesta de Vox de eliminar el impuesto de sucesiones.",
     "erc": "La ponencia de 2025 propone aumentar la tributación de las herencias.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía bonificar al 100 % sucesiones entre parientes directos.",
@@ -1708,10 +1709,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-     "Programa electoral de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=13",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 13",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
@@ -1744,10 +1745,10 @@
      "2026-04-28"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=2",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 5",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.publico.es/economia/vivienda/factura-tumbar-decretos-vivienda-626-millones-gastos-alquiler-8-4-millones-inquilinos-escudo.html",
@@ -1823,11 +1824,12 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone limitar por ley el alquiler en todas las zonas tensionadas, con un techo del 25 % de la renta media del barrio.",
     "psoe": "Su programa del 29N propone congelar temporalmente los alquileres que superen los índices de referencia en los mercados tensionados (compromiso 62).",
     "mj": "Su programa del 29N propone regular los alquileres privados con un alquiler de referencia y limitar el precio según las características y la localización de la vivienda.",
     "salf": "En su programa para Castilla y León (2026) rechaza los topes de alquiler y propone incentivos y más oferta de vivienda.",
     "pnv": "Se abstuvo en la convalidación del decreto que prorrogaba los contratos de alquiler.",
-    "bildu": "Su programa respalda la Ley de Vivienda, que limita los alquileres en las zonas tensionadas.",
+    "bildu": "Su programa del 29N propone regular los precios del alquiler en zonas tensionadas y limitar al 2 % la subida anual.",
     "upn": "Votó en contra de los dos decretos de vivienda de octubre de 2026, que congelaban o limitaban las subidas del alquiler.",
     "bng": "Su programa de 2026 propone topar por ley los precios del alquiler.",
     "ccpc": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
@@ -1928,10 +1930,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79",
-     "Programa electoral de Sumar de 2023, p. 79",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=10",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 10",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2025/01/15/podemos-arremete-contra-la-ministra-rentista-y-exige-bajar-los-alquileres-para-apoyar-los-presupuestos/",
@@ -1964,10 +1966,10 @@
      "2026-10-02"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=4",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 5",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=12",
@@ -2053,13 +2055,13 @@
     "psoe": "Su programa del 29N prioriza un parque público estatal de 100.000 viviendas y limitar las rentas en zonas tensionadas (compromisos 42 y 62).",
     "pp": "Su programa de 2026 prioriza construir un millón de viviendas con más suelo, una nueva Ley del Suelo y licencias en tres meses.",
     "vox": "Su programa de 2026 apuesta por construir mucho más: reforma de la Ley del Suelo, trámites ágiles y vivienda protegida con colaboración público-privada.",
-    "fa": "Prioriza el control de alquileres en zonas tensionadas y un parque público de dos millones de viviendas.",
+    "fa": "Su programa del 29N apuesta por 1,5 millones de viviendas públicas en 12 años y por topar los alquileres.",
     "pod": "Prioriza regular: exige bajar por ley un 40 % los alquileres y prohibir comprar viviendas que no sean para vivir.",
     "salf": "Su contrato del 29N apuesta por construir: licencia automática en 15 días y vivienda industrializada en suelo público.",
     "erc": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
     "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
     "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
-    "bildu": "El programa respalda la Ley de Vivienda que limita los alquileres y propone recuperar la prórroga automática de contratos y congelar cuotas hipotecarias.",
+    "bildu": "Su programa del 29N propone intervenir el mercado, regular los precios y prohibir la compra especulativa.",
     "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
     "ccpc": "Su programa de 2026 plantea un fondo estatal de ocho años para vivienda pública y asequible y agilizar la vivienda protegida.",
     "adel": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
@@ -2271,7 +2273,7 @@
     "psoe": 4,
     "pp": 5,
     "vox": 5,
-    "fa": 2,
+    "fa": 1,
     "pod": 1,
     "salf": 5,
     "pacma": 4,
@@ -2307,7 +2309,7 @@
    ],
    "notes": {
     "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
-    "fa": "Como socio del Gobierno aprobó el decreto que excluye a los pequeños propietarios, aunque defiende mantener la suspensión con carácter general."
+    "fa": "Como socio del Gobierno aprobó el decreto de 2026 que excluye a los pequeños propietarios; su programa del 29N vuelve a incluirlos, compensándoles el alquiler."
    },
    "src": {
     "mj": [
@@ -2335,10 +2337,10 @@
      "2026-01-30"
     ],
     "fa": [
-     "https://theobjective.com/espana/politica/2026-02-04/sumar-insiste-llevar-escudo-social-congreso/",
-     "The Objective, Lara Hernández sobre la moratoria de desahucios, 04/02/2026",
-     "declaracion",
-     "2026-02-04"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=15",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 15",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.bolsamania.com/noticias_amp/empresas/economia--podemos-exige-al-gobierno-pagar-el-alquiler-de-los-desahuciados-por-la-caida-del-escudo-social--21590323.html",
@@ -2359,10 +2361,10 @@
      "2026-02-26"
     ],
     "bildu": [
-     "https://www.deia.eus/politica/2025/12/22/gobierno-pacta-eh-bildu-prorrogar-10501301.html",
-     "Deia: EH Bildu pacta con el Gobierno prorrogar en 2026 la prohibición de desahucios de familias vulnerables",
-     "prensa",
-     "2025-12-22"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 5",
+     "programa",
+     "2026-11"
     ],
     "comp": [
      "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=102",
@@ -2423,11 +2425,11 @@
     "mj": "Su programa del 29N mantiene la suspensión de desahucios de personas vulnerables y propone compensar a las pequeñas propietarias que dependan de esa renta (p. 9).",
     "pp": "Votó contra prorrogar la suspensión de desahucios de personas vulnerables, por entender que facilita la ocupación ilegal.",
     "vox": "Vox votó contra el decreto que prorrogaba la suspensión de desahucios de familias vulnerables.",
-    "fa": "Aceptó excluir a los pequeños propietarios de la moratoria, aunque prefiere mantenerla con carácter general.",
+    "fa": "Su programa del 29N prohíbe para siempre los desahucios de familias vulnerables sin alternativa; si el dueño es un pequeño propietario, la Administración le paga el alquiler.",
     "pod": "Apoyó el decreto que prohibía desahuciar a personas vulnerables y criticó su caída en el Congreso.",
     "erc": "Su programa de 2026 propone regular los arrendamientos para evitar desahucios de personas vulnerables sin vivienda alternativa.",
     "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
-    "bildu": "EH Bildu acordó con el Gobierno prorrogar la suspensión de desahucios de familias vulnerables durante 2026.",
+    "bildu": "Su programa del 29N pide prohibir de forma estructural y permanente los desahucios de familias vulnerables sin alternativa, con compensación estatal.",
     "comp": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
     "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
     "fo": "Propone paralizar todos los desahucios de familias trabajadoras vulnerables hasta que haya alternativa habitacional.",
@@ -2523,10 +2525,10 @@
      "2026-04"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=45",
-     "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 45",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=12",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 12",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upc": [
      "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
@@ -2608,7 +2610,7 @@
     "pnv": "Su programa de 2026 propone regular los alquileres de temporada y turísticos para que no resten viviendas al alquiler residencial.",
     "ccpc": "Su programa de 2026 pide cobertura jurídica para que Canarias y sus municipios limiten los usos turísticos donde haya presión sobre la vivienda.",
     "adel": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
-    "fa": "El espacio de Frente Amplio defiende limitar y regular las viviendas turísticas en las ciudades.",
+    "fa": "Su programa del 29N propone extinguir en tres años todas las licencias de pisos turísticos en edificios residenciales de las zonas tensionadas.",
     "upc": "Su manifiesto del 29N exige limitar los efectos de la vivienda vacacional y una moratoria de nuevas camas turísticas.",
     "drago": "Drago Canarias propone paralizar las nuevas licencias de vivienda vacacional y fijar cupos por zonas.",
     "comp": "Una iniciativa de Compromís en el Congreso pide que las administraciones locales puedan limitar los pisos turísticos en zonas sensibles.",
@@ -2686,10 +2688,10 @@
      "2025-06"
     ],
     "fa": [
-     "https://www.elsaltodiario.com/vivienda/madrid-propone-un-ibi-progresivo-paguen-empresas-pisos-vacios-menos-familias",
-     "El Salto, propuesta de Más Madrid en el Congreso (grupo Sumar), 21/04/2026",
-     "parlamento",
-     "2026-04-21"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=111",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 111",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.bolsamania.com/noticias/empresas/economia--podemos-tilda-de-regalo-el-paquete-fiscal-de-vivienda-del-psoe-y-rodriguez-defiende-la-regulacion--19828926.html",
@@ -2743,7 +2745,7 @@
    "why": {
     "psoe": "Su programa del 29N propone un impuesto progresivo a las viviendas vacías, turísticas o con alquiler abusivo de grandes propietarios y fondos (compromiso 70).",
     "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
-    "fa": "Propuso en el Congreso recargos en el IBI de hasta el 100 % para pisos vacíos de grandes propietarios.",
+    "fa": "Su programa del 29N propone un IBI progresivo que penalice las viviendas vacías.",
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
     "erc": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
     "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
@@ -2807,6 +2809,12 @@
     "vox": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen."
    },
    "src": {
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 5",
+     "programa",
+     "2026-11"
+    ],
     "mj": [
      "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=10",
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 10",
@@ -2832,10 +2840,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://theobjective.com/espana/politica/2025-04-10/congreso-compra-viviendas-extranjeros-apoyo-psoe/",
-     "The Objective, votación en la Comisión de Vivienda del Congreso, 10/04/2025",
-     "parlamento",
-     "2025-04-10"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=18",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 18",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://forbes.es/economia/479024/podemos-plantea-esta-semana-al-congreso-prohibir-dar-nuevas-licencias-de-pisos-turisticos-hasta-2028-2/",
@@ -2893,11 +2901,12 @@
     ]
    },
    "why": {
+    "bildu": "Estimación: su programa del 29N exige dos años de empadronamiento a los extranjeros multipropietarios para comprar vivienda; no propone un impuesto.",
     "mj": "Su programa del 29N propone un régimen impositivo especial para las personas extranjeras en la compra o el alquiler de viviendas por encima de un precio límite.",
     "psoe": "El Grupo Socialista registró en 2025 un impuesto de hasta el 100 % sobre compras de vivienda de no residentes fuera de la UE.",
     "pp": "El portavoz del PP calificó de intervencionista gravar la compra de vivienda por no residentes de fuera de la UE.",
     "vox": "Su programa de 2026 propone una fiscalidad agravada y disuasoria para los compradores no comunitarios y las operaciones especulativas de fondos.",
-    "fa": "Fue el único grupo que apoyó limitar la compra de vivienda a extranjeros no residentes; va más allá de un impuesto.",
+    "fa": "Su programa del 29N crea un recargo estatal del 100 % sobre las compras de vivienda no habitual, incluidas las de no residentes y extracomunitarios.",
     "pod": "Propuso en el Congreso una reforma legal para limitar la compra de viviendas por no residentes.",
     "erc": "Su programa de 2026 sube el IVA y el ITP en compras no destinadas a vivienda habitual y acaba con la ley Beckham.",
     "upc": "El programa de Nueva Canarias, socio de UPC, propone limitar la compra de vivienda por extranjeros no arraigados, sin concretar un impuesto.",
@@ -2994,10 +3003,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=79",
-     "Programa electoral de Sumar de 2023, p. 79",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=10",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 10",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -3119,7 +3128,7 @@
     "psoe": "Su programa del 29N propone un parque público estatal de 100.000 viviendas, construidas o adquiridas, para venta o alquiler asequible (compromiso 42).",
     "pp": "Prefiere un fondo público-privado y cerraría la empresa estatal de vivienda en lugar de construir directamente.",
     "vox": "Su programa de 2026 amplía la inversión pública en vivienda por habitante y la vivienda protegida con colaboración público-privada.",
-    "fa": "Propone un parque público de alquiler de dos millones de viviendas con el 1 % del PIB anual.",
+    "fa": "Su programa del 29N propone invertir el 1 % del PIB al año en un parque público de 1,5 millones de viviendas, sobre todo en alquiler.",
     "pod": "Su programa europeo de 2024 propone consolidar un gran parque público de vivienda y alquiler social.",
     "erc": "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada.",
     "comp": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones.",
@@ -3461,10 +3470,10 @@
      "2026-01-14"
     ],
     "fa": [
-     "https://www.redaccionmedica.com/politica/20231201/sumar-remodela-la-financiacion-regional-contra-las-desigualdades-en-sanidad/221956_0.html",
-     "Redacción Médica, proposición no de ley de Sumar sobre financiación autonómica, 01/12/2023",
-     "parlamento",
-     "2023-12-01"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=103",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 103",
+     "programa",
+     "2026-11"
     ],
     "comp": [
      "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=7",
@@ -3500,7 +3509,7 @@
    "why": {
     "psoe": "Su Gobierno propuso en 2026 un modelo que da más recursos a las comunidades por debajo de la media por habitante.",
     "vox": "Estimación: Vox propone un Estado unitario y recentralizar competencias, sin postura clara sobre más recursos para las comunidades peor financiadas.",
-    "fa": "Registró una iniciativa para corregir la infrafinanciación de las comunidades por debajo de la media.",
+    "fa": "Su programa del 29N propone un mecanismo para que las comunidades infrafinanciadas presten el mismo nivel de servicios, con 2,3 puntos de PIB más.",
     "pod": "Estimación: sin postura nacional publicada sobre el reparto de la financiación autonómica.",
     "erc": "Estimación: ERC pide ordinalidad y un modelo singular para Cataluña, no criterios por habitante.",
     "comp": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
@@ -3580,10 +3589,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=121",
-     "Programa electoral de Sumar de 2023, p. 121",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=11",
@@ -3604,10 +3613,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=11",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 11",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=34",
@@ -3686,11 +3695,11 @@
     "psoe": "Su programa del 29N sostiene que «el reto no es recentralizar ni fragmentar», sino que el Estado autonómico funcione mejor.",
     "pp": "Su programa de 2026 defiende el autogobierno autonómico y propone reforzar la Alta Inspección del Estado y una PAU común.",
     "vox": "Su programa de 2026 propone unificar el currículo, las evaluaciones nacionales y la inspección educativa, con una EVAU única y reválidas.",
-    "fa": "Defiende el pleno respeto de las competencias autonómicas y no plantea recentralizar la educación.",
+    "fa": "Su programa del 29N rechaza la recentralización y pide el pleno respeto a las competencias autonómicas.",
     "erc": "Su programa de 2026 exige las competencias exclusivas en educación y la plena soberanía de Cataluña sobre su sistema educativo.",
     "junts": "El programa defiende el modelo educativo propio de Cataluña y pide traspasar a la Generalitat competencias y fondos en materia educativa.",
     "pnv": "El programa pide respetar el reparto competencial en educación y seguir desarrollando un modelo educativo propio en Euskadi.",
-    "bildu": "El programa exige blindar los modelos educativos vascos y rechaza cualquier intromisión o cambio impuesto en ellos.",
+    "bildu": "Su programa del 29N defiende un sistema educativo propio para Euskal Herria.",
     "bng": "Su programa de 2026 pide la transferencia plena de las competencias de enseñanza a Galicia y una ley gallega de educación.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
     "comp": "Su programa defiende ampliar el autogobierno y la descentralización del Estado, no recentralizar competencias.",
@@ -3721,7 +3730,7 @@
     "psoe": 4,
     "pp": 1,
     "vox": 1,
-    "fa": 4,
+    "fa": 5,
     "pod": 4,
     "salf": 1,
     "d21": 1,
@@ -3760,7 +3769,6 @@
     "adel"
    ],
    "notes": {
-    "fa": "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal."
    },
    "src": {
@@ -3777,10 +3785,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=120",
-     "Programa electoral de Sumar de 2023, p. 120",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/",
@@ -3816,7 +3824,7 @@
    "why": {
     "psoe": "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada.",
     "vox": "Vox propone un Estado unitario, no federal, y limitar la capacidad legislativa autonómica.",
-    "fa": "Propone un nuevo pacto territorial plurinacional, sin concretar una reforma constitucional federal.",
+    "fa": "Su programa del 29N propone cambiar el modelo territorial de la Constitución en un sentido federal y plurinacional, hacia una República Federal.",
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
     "erc": "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
     "pp": "Su programa de 2026 afirma defender el Estado de las Autonomías y el autogobierno de las comunidades en el marco de la Constitución.",
@@ -3841,7 +3849,7 @@
     "psoe": 1,
     "pp": 1,
     "vox": 1,
-    "fa": 3,
+    "fa": 4,
     "pod": 5,
     "salf": 1,
     "d21": 1,
@@ -3868,7 +3876,6 @@
     "falange": 1
    },
    "est": [
-    "fa",
     "salf",
     "d21",
     "upn",
@@ -3905,10 +3912,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://es.ara.cat/politica/elecciones-generales/programa-sumar-referendum-consulta-mesa-dialogo_1_4754782.html",
-     "Ara, programa de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
      "programa",
-     "2023"
+     "2026-11"
     ],
     "pod": [
      "https://www.ondavasca.com/sumar-y-los-comunes-chocan-por-el-nivel-de-preponderancia-del-derecho-a-decidir/",
@@ -3935,10 +3942,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=14",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=24",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 24",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=28",
@@ -3972,6 +3979,7 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N plantea un Estado federal y plurinacional que incluya el derecho a decidir mediante referéndum para resolver la cuestión territorial.",
     "psoe": "Rechaza el referéndum de autodeterminación: frente a la propuesta de Junts, ofrece desarrollar el Estatut de 2006.",
     "pp": "Su programa de 2026 recupera en el Código Penal los delitos de sedición y de convocatoria de referéndum ilegal.",
     "vox": "Su programa de 2026 recupera el delito de sedición e ilegaliza los partidos que atenten contra la unidad e integridad territorial de España.",
@@ -3979,7 +3987,7 @@
     "erc": "Su programa de 2026 propone negociar un referéndum de autodeterminación en Cataluña con acompañamiento internacional.",
     "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
-    "bildu": "Pide reconocer el derecho a decidir de la ciudadanía vasca como vía para resolver el conflicto político.",
+    "bildu": "Su programa del 29N pide reconocer el derecho a decidir del pueblo vasco como vía democrática.",
     "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación.",
     "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes.",
     "falange": "Su programa del 29N propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España.",
@@ -4241,7 +4249,7 @@
     "psoe": 5,
     "pp": 4,
     "vox": 1,
-    "fa": 4,
+    "fa": 5,
     "pod": 5,
     "salf": 1,
     "d21": 2,
@@ -4266,7 +4274,6 @@
    },
    "est": [
     "vox",
-    "fa",
     "d21",
     "junts",
     "pnv",
@@ -4289,6 +4296,12 @@
     "pp": "Su ponencia política de 2025 pide convertir el Senado en una «verdadera Cámara de representación territorial»."
    },
    "src": {
+    "fa": [
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=91",
      "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 91",
@@ -4329,7 +4342,7 @@
    "why": {
     "psoe": "Su programa del 29N propone reformar el Senado para convertirlo en una auténtica cámara de representación territorial, con circunscripción autonómica (382).",
     "pp": "Propone completar la transformación del Senado en cámara territorial y darle derecho de veto en asuntos autonómicos.",
-    "fa": "Estimación: no consta una propuesta verificada de Sumar para convertir el Senado en cámara territorial.",
+    "fa": "Su programa del 29N afirma que el Senado debe ser una verdadera cámara de representación territorial.",
     "pod": "La medida 282 propone transformar el Senado en una verdadera cámara de representación territorial con más peso de las comunidades.",
     "erc": "ERC propone suprimir el Senado en lugar de reconvertirlo.",
     "comp": "Baldoví y los candidatos de Compromís piden reformar el Senado para convertirlo en una verdadera cámara de representación territorial.",
@@ -4406,10 +4419,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=16",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=24",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 24",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=43",
@@ -4442,7 +4455,7 @@
     "fa": "Sus partidos están divididos: su portavoz económico criticó el cupo vasco, pero esa posición es minoritaria en Movimiento Sumar.",
     "pod": "Estimación: sin postura reciente publicada sobre el concierto y el convenio.",
     "pnv": "Se compromete a defender el Concierto Económico frente a cualquier involución del autogobierno.",
-    "bildu": "Defiende el Concierto y el Convenio y pide negociarlos «de igual a igual» con el Estado.",
+    "bildu": "Su programa del 29N defiende ampliar el Concierto y el Convenio y un nuevo cálculo del Cupo que no perjudique a la sociedad vasca.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
     "pp": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio.",
     "upn": "UPN defiende el Convenio Económico tal como está y considera que Navarra ya aporta de forma solidaria.",
@@ -4465,7 +4478,7 @@
     "psoe": 2,
     "pp": 1,
     "vox": 4,
-    "fa": 4,
+    "fa": 5,
     "pod": 5,
     "salf": 4,
     "pacma": 5,
@@ -4514,9 +4527,6 @@
     "soria",
     "pav"
    ],
-   "notes": {
-    "fa": "Su programa de 2023 solo se compromete a «valorar» actualizar la ley electoral o ampliar el número de diputados."
-   },
    "src": {
     "pp": [
      "https://es.ara.cat/politica/feijoo-plantea-reforma-partido-gane-elecciones-tenga-plus-diputados_1_5783437.html",
@@ -4525,10 +4535,10 @@
      "2026-06-29"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-     "Programa electoral de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=141",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 141",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
@@ -4580,6 +4590,7 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone reformar el sistema electoral para lograr la proporcionalidad directa a nivel nacional.",
     "psoe": "Estimación: el PSOE no propone cambiar la circunscripción provincial y su programa de 2023 no trata la proporcionalidad.",
     "pp": "El PP propone una prima de escaños para el partido ganador, en sentido contrario a un sistema más proporcional.",
     "erc": "Estimación: ERC no ha planteado una circunscripción única que reste peso a las provincias.",
@@ -4747,10 +4758,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=129",
-     "Programa electoral de Sumar de 2023, p. 129",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=148",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 148",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2024/06/25/de-traicion-a-lawfare-podemos-y-vox-cargan-contra-psoe-y-pp-tras-el-pacto-del-cgpj/",
@@ -4836,7 +4847,7 @@
     "psoe": "Defiende que las Cortes elijan a los vocales del CGPJ, frente a que lo hagan los propios jueces.",
     "pp": "Su programa de 2026 propone que los jueces y magistrados elijan a los doce vocales judiciales del CGPJ.",
     "vox": "Su programa de 2026 propone que los doce vocales judiciales del CGPJ sean elegidos por voto directo y secreto de los propios jueces y magistrados.",
-    "fa": "Mantiene que el Parlamento elija a los vocales judiciales del CGPJ y no que los elijan los jueces.",
+    "fa": "Su programa del 29N mantiene que las Cortes elijan a los vocales de origen judicial por tres quintos, con un mecanismo contra el bloqueo.",
     "pod": "Dio a entender que rompería con el PSOE si el pacto dejaba que los jueces eligieran a los jueces.",
     "erc": "ERC anunció su voto en contra de la proposición del PP para que los jueces elijan a los doce vocales de la carrera judicial del CGPJ.",
     "junts": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
@@ -5062,6 +5073,12 @@
     "comp"
    ],
    "src": {
+    "fa": [
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=142",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 142",
+     "programa",
+     "2026-11"
+    ],
     "mj": [
      "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=73",
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 73",
@@ -5118,6 +5135,7 @@
     ]
    },
    "why": {
+    "fa": "Estimación: su programa del 29N pide una regulación más estricta de las incompatibilidades y endurecerlas contra las puertas giratorias, sin fijar un plazo.",
     "mj": "Su programa del 29N propone que un alto cargo no pueda ser contratado por una empresa del sector de su responsabilidad en, al menos, 5 años.",
     "vox": "Estimación: Vox critica las puertas giratorias en las eléctricas, pero no consta una propuesta de plazo de cinco años.",
     "erc": "El programa califica las puertas giratorias de corrupción institucionalizada.",
@@ -5292,6 +5310,12 @@
     "fo"
    ],
    "src": {
+    "fa": [
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://es.ara.cat/politica/relacion-psoe-monarquia_1_5823620.html",
      "Ara, «¿Qué relación tiene el PSOE con la monarquía?», 13/08/2026",
@@ -5375,7 +5399,7 @@
     "psoe": "Asume la monarquía parlamentaria de 1978 y su dirección rechaza reabrir el debate sobre la forma de Estado.",
     "pp": "Su programa de 2026 sitúa la monarquía parlamentaria entre los pilares de la obra común de la democracia española.",
     "vox": "Su programa de 2026 propone dar la máxima protección jurídica a la Corona y a los símbolos de la Nación y agravar las penas por ofensas.",
-    "fa": "Estimación: sus partidos (IU, Comuns) defienden la república, pero no consta una petición reciente de referéndum.",
+    "fa": "Estimación: su programa del 29N aspira a una República Federal en la que también se elija la Jefatura del Estado, sin proponer un referéndum concreto.",
     "pod": "Belarra encabezó una marcha por la república y dijo que no habrá democracia plena sin ella.",
     "erc": "Su programa de 2026 propone fiscalizar al rey y a la Casa Real y poner fin a una institución contraria al principio democrático.",
     "pnv": "Estimación: no consta ninguna postura del PNV sobre un referéndum entre monarquía y república, así que se deja en el punto medio.",
@@ -5945,10 +5969,10 @@
      "2024-10-29"
     ],
     "fa": [
-     "https://www.lamarea.com/2024/07/16/sumar-anuncia-un-acuerdo-para-derogar-la-ley-mordaza",
-     "La Marea, Yolanda Díaz anuncia un acuerdo para derogar la «ley mordaza», 16/07/2024",
-     "declaracion",
-     "2024-07-16"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=142",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 142",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.elsaltodiario.com/leyes-mordaza/diaz-anuncia-un-acuerdo-psoe-derogar-ley-mordaza",
@@ -5975,10 +5999,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=12",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=22",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 22",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.eldiario.es/politica/congreso-da-primer-paso-retomar-reforma-ley-mordaza-unico-rechazo-pp-vox-upn_1_11774916.html",
@@ -6034,12 +6058,12 @@
     "psoe": "Su programa del 29N propone una nueva Ley de Seguridad Ciudadana que sustituya a la Ley Orgánica 4/2015 (compromiso 431).",
     "pp": "Su programa de 2026 endurece la respuesta a los disturbios violentos y refuerza la actuación policial preventiva.",
     "vox": "Vox votó incluso contra tramitar la reforma de la Ley de Seguridad Ciudadana, que no la derogaba.",
-    "fa": "Defiende derogar la «ley mordaza»; su programa promete derogar sus aspectos que limitan reunión y expresión.",
+    "fa": "Su programa del 29N promete derogar por completo la «ley mordaza».",
     "pod": "Exige una derogación ambiciosa de la ley mordaza, incluidas las devoluciones en caliente y las pelotas de goma.",
     "erc": "Su programa de 2026 deroga la llamada ley mordaza (Ley Orgánica 4/2015 de seguridad ciudadana).",
     "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
     "pnv": "Se opone a la ley mordaza y promovió su reforma.",
-    "bildu": "Su programa vuelve a plantear la derogación de la ley mordaza.",
+    "bildu": "Su programa del 29N promete volver a presentar la ley para acabar con la «ley mordaza».",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     "bng": "Su programa de 2026 deroga íntegramente la ley mordaza.",
     "ccpc": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
@@ -6307,10 +6331,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://www.eldiario.es/politica/psoe-sumar-reactivan-despenalizacion-ofensas-sentimientos-religiosos-corona_1_13303774.html",
-     "PSOE y Sumar reactivan la despenalización de las ofensas a los sentimientos religiosos y a la Corona (elDiario.es)",
-     "parlamento",
-     "2026-06-15"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=142",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 142",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.noticiasdenavarra.com/politica/2021/06/16/congreso-da-luz-verde-derogacion-2133997.html",
@@ -6331,10 +6355,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://theobjective.com/espana/2022-09-29/el-psoe-apoya-a-erc-y-bildu-para-que-la-despenalizacion-del-delito-de-injurias-a-la-corona-siga-adelante-en-el-congreso/",
-     "El PSOE apoya a ERC y Bildu para que la despenalización del delito de injurias a la Corona siga adelante en el Congreso (The Objective)",
-     "parlamento",
-     "2022-09-29"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=22",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 22",
+     "programa",
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=30",
@@ -6359,11 +6383,11 @@
     "psoe": "En junio de 2026 pactó con Sumar una reforma del Código Penal que suprime los delitos de injurias y calumnias a la Corona.",
     "pp": "Presentó una enmienda de totalidad contra la ley de Sumar que suprimía las injurias a la Corona.",
     "vox": "Su programa de 2026 propone agravar las penas por las ofensas y ultrajes a España y a sus símbolos, entre ellos la Corona.",
-    "fa": "Acordó con el PSOE reactivar en el Congreso su proposición de ley para eliminar del Código Penal las injurias a la Corona.",
+    "fa": "Su programa del 29N propone suprimir del Código Penal los delitos contra la Corona y las injurias a las instituciones.",
     "pod": "El Congreso admitió a trámite la ley de Unidas Podemos para derogar los delitos de injurias a la Corona.",
     "erc": "Su programa de 2026 suprime los delitos de ofensa a los sentimientos religiosos y de injurias a la Corona.",
     "pnv": "Critica que el Código Penal castigue las opiniones contra la Corona y las instituciones del Estado.",
-    "bildu": "Promovió con ERC la proposición de ley para despenalizar las injurias a la Corona.",
+    "bildu": "Su programa del 29N propone despenalizar las críticas a la Corona y a las instituciones del Estado.",
     "bng": "Su programa de 2026 plantea suprimir delitos de opinión como las injurias a la Corona.",
     "junts": "Junts votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
     "upn": "UPN votó en contra de tramitar la ley que despenaliza las injurias a la Corona."
@@ -6552,10 +6576,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=111",
-     "Programa electoral de Sumar de 2023, p. 111",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=37",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 37",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2022/11/02/tension-entre-vox-e-irene-montero-en-el-congreso-si-una-victima-no-tiene-el-asesino-adecuado-la-ignoran/amp/",
@@ -6576,10 +6600,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=10",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=19",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 19",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21",
@@ -6653,11 +6677,11 @@
     "psoe": "Su programa del 29N amplía la Ley Integral contra la Violencia de Género a las violencias digitales y propone una ley contra la violencia vicaria (350 y 335).",
     "pp": "Su programa de 2026 refuerza VioGen y los medios contra la violencia de género y rinde cuentas del Pacto de Estado.",
     "vox": "Su programa de 2026 propone derogar las leyes de género, a las que acusa de criminalizar a los hombres y de desproteger a las mujeres.",
-    "fa": "Propone blindar el Pacto de Estado contra la Violencia de Género y recuperar juzgados específicos.",
+    "fa": "Su programa del 29N mantiene el enfoque de violencia machista y promete erradicarla con redes de prevención y acogida.",
     "pod": "Irene Montero criticó a quienes sostienen que la violencia no tiene género, frente a la ley específica.",
     "erc": "Su programa de 2026 reforma la Ley Orgánica 1/2004 para reforzar la respuesta a todas las formas de violencia machista.",
     "pnv": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
-    "bildu": "El programa propone reforzar la lucha contra la violencia machista desde todos los ámbitos y defender los avances feministas.",
+    "bildu": "Su programa del 29N mantiene el enfoque de violencia machista y propone reforzar la protección de sus víctimas.",
     "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
     "ccpc": "Firmó con el PSOE el compromiso de reforzar la lucha contra la violencia de género y el Pacto de Estado.",
     "junts": "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
@@ -6891,10 +6915,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-     "Programa electoral de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=126",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 126",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/",
@@ -6927,10 +6951,10 @@
      "2024-04-09"
     ],
     "bildu": [
-     "https://orain.eus/es/politica/2024/04/09/el-congreso-tramitara-iniciativa-de-regularizacion-extraordinaria-de-personas-extranjeras/",
-     "Orain, el Congreso tramitará la iniciativa de regularización extraordinaria, 09-04-2024",
-     "parlamento",
-     "2024-04-09"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 20",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.infobae.com/america/agencias/2026/03/18/el-congreso-insta-al-gobierno-a-renunciar-ya-a-la-regularizacion-de-migrantes-con-apoyo-de-pp-vox-junts-y-upn/",
@@ -7000,10 +7024,11 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone culminar la regularización extraordinaria de 2026 y crear un procedimiento estable de regularización.",
     "mj": "Su programa del 29N propone vías accesibles y permanentes de regularización de las personas migrantes y prevenir la irregularidad sobrevenida.",
     "salf": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
     "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
-    "bildu": "Mostró su apoyo al fondo de la iniciativa legislativa popular para una regularización extraordinaria, en su toma en consideración de abril de 2024.",
+    "bildu": "Su programa del 29N pide una regularización efectiva y estable y una nueva Ley de Extranjería.",
     "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
     "bng": "Su programa de 2026 propone promover la regularización administrativa de los inmigrantes para acabar con su explotación.",
     "comp": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España.",
@@ -7093,10 +7118,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104",
-     "Programa electoral de Sumar de 2023, p. 104",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=126",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 126",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2026/01/26/el-gobierno-pacta-con-podemos-una-regularizacion-extraordinaria-de-migrantes-que-acrediten-cinco-meses-de-residencia/amp/",
@@ -7117,10 +7142,10 @@
      "2026-11"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 20",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20",
@@ -7193,11 +7218,11 @@
     "mj": "Estimada: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
     "psoe": "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular.",
     "vox": "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
-    "fa": "Propone un procedimiento de regularización permanente para los inmigrantes en situación irregular.",
+    "fa": "Su programa del 29N defiende un procedimiento estable de regularización en vez de expulsiones, y rechaza los centros de deportación en terceros países.",
     "pod": "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
     "salf": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
     "erc": "Su programa de 2026 propone acabar con la externalización de las fronteras y garantizar vías legales y seguras para migrar.",
-    "bildu": "El programa exige derogar la Ley de Extranjería y sustituirla por una legislación que garantice los derechos de todas las personas migrantes.",
+    "bildu": "Su programa del 29N defiende la regularización y rechaza las devoluciones sumarias y los CIE.",
     "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante.",
     "comp": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España.",
     "pp": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas.",
@@ -7309,10 +7334,10 @@
      "2026-06-25"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 20",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
@@ -7401,7 +7426,7 @@
     "erc": "Su programa de 2026 pide igualdad de trato y oportunidades con independencia del origen en empleo, vivienda y servicios.",
     "junts": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "pnv": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
-    "bildu": "El programa defiende el acceso de todas las personas migrantes a los servicios públicos básicos y pide una ley integral contra el racismo.",
+    "bildu": "Su programa del 29N pide acceso a vivienda y protección social sin barreras, sea cual sea la situación administrativa.",
     "upn": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación.",
     "ccpc": "Su programa de 2026 afirma que la canariedad se comparte con quienes nacieron en las islas y con quienes las han hecho su hogar.",
@@ -7459,7 +7484,6 @@
    },
    "est": [
     "junts",
-    "bildu",
     "upn",
     "gbai",
     "bng",
@@ -7478,6 +7502,12 @@
     "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
    },
    "src": {
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 20",
+     "programa",
+     "2026-11"
+    ],
     "mj": [
      "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=51",
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 51",
@@ -7503,10 +7533,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=104",
-     "Programa electoral de Sumar de 2023, p. 104",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=126",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 126",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
@@ -7552,11 +7582,12 @@
     ]
    },
    "why": {
+    "bildu": "Su programa del 29N propone facilitar las autorizaciones de residencia y trabajo.",
     "mj": "Su programa del 29N propone facilitar vías legales y seguras de migración y ampliar las autorizaciones de residencia y trabajo desde los países de origen.",
     "psoe": "Su programa del 29N propone simplificar trámites, impulsar la contratación en origen y facilitar el acceso al empleo de quienes vienen a trabajar.",
     "pp": "Su programa de 2026 propone visados por puntos, cupos anuales y contratación en origen en los sectores donde faltan trabajadores.",
     "vox": "Su programa de 2026 propone «Ni uno más»: España no puede acoger a más inmigrantes y se suprime la figura del arraigo.",
-    "fa": "Propone simplificar los procedimientos de residencia e introducir un procedimiento de regularización permanente.",
+    "fa": "Su programa del 29N propone vías legales y seguras para la migración laboral y una reforma integral de la Ley de Extranjería.",
     "erc": "Su programa de 2026 propone vías legales y seguras para migrar y una política migratoria centrada en los derechos humanos.",
     "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
@@ -7788,10 +7819,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=93",
-     "Programa electoral de Sumar de 2023, p. 93",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=21",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 21",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=21",
@@ -7835,7 +7866,7 @@
     "psoe": "Su programa del 29N propone una prestación estatal por crianza para todos los hogares con menores, de cuantía progresiva según la renta (compromiso 192).",
     "pp": "Estimación: su programa del 29N refunde las deducciones familiares en una reembolsable, con abono mensual, que llegue a todas las familias; no dice si dependerá de la renta.",
     "vox": "Su programa de 2026 extiende los beneficios de las familias numerosas a todas las familias españolas desde el primer hijo, según su número.",
-    "fa": "Propone una prestación universal de 200 euros al mes por cada hijo o hija, sin depender de la renta.",
+    "fa": "Su programa del 29N crea una Prestación Universal por Crianza de 200 euros al mes por menor.",
     "erc": "Su programa de 2026 plantea una prestación universal por crianza desde 200 euros por familia, adaptada a cada territorio.",
     "pod": "Podemos propuso en su programa una prestación universal por hijo a cargo, mayor para familias en riesgo de pobreza.",
     "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años.",
@@ -7859,7 +7890,7 @@
     "psoe": 4,
     "pp": 4,
     "vox": 4,
-    "fa": 3,
+    "fa": 4,
     "pod": 3,
     "salf": 3,
     "d21": 3,
@@ -7905,10 +7936,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=58",
-     "Programa electoral de Sumar de 2023, p. 58",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=97",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 97",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "existe": [
      "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=2",
@@ -7945,7 +7976,7 @@
     "mj": "Estimada: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
     "psoe": "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
     "pp": "Su programa de 2026 plantea incentivos económicos en zonas en declive demográfico y bajar impuestos a quien vive o invierte en el medio rural.",
-    "fa": "Para el medio rural prioriza servicios a menos de 30 minutos; solo plantea incentivos fiscales concretos.",
+    "fa": "Su programa del 29N propone una fiscalidad diferenciada y bonificaciones en las cotizaciones en los territorios de baja densidad, como ya en Cuenca, Soria o Teruel.",
     "pod": "Estimación: sin postura nacional reciente sobre una fiscalidad rural diferenciada.",
     "existe": "Su programa del 29N propone rebajas del 25 % en el IRPF para quien vive en los pueblos.",
     "soria": "Su programa del 29N pide medidas excepcionales de fiscalidad para residentes, empresas y autónomos de Soria y una cuota reducida de autónomos en zonas despobladas.",
@@ -8014,10 +8045,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=15",
-     "Programa electoral de Sumar de 2023, p. 15",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=23",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 23",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
@@ -8026,10 +8057,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
-     "Gasteiz Hoy: programa electoral de EH Bildu para las elecciones vascas de 2024",
-     "prensa",
-     "2024-04-07"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=12",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 12",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.menorca.info/actualidad/nacional/2022/11/23/1834329/cualquiera-diga-pueden-garantizar-derechos-sociales-bajando-impuestos-ricos-miente.html",
@@ -8094,10 +8125,10 @@
    },
    "why": {
     "psoe": "Su programa del 29N quiere consolidar la ayuda a domicilio como servicio público esencial de la dependencia con financiación suficiente y estable (206).",
-    "fa": "Propone aumentar la inversión en dependencia y financiar con impuestos los cuidados que ofrece el sistema.",
+    "fa": "Su programa del 29N propone desplegar el sistema público de dependencia, con más inversión y eliminación de copagos.",
     "erc": "Su programa de 2026 exige garantizar la financiación de la Ley de Dependencia, con 2.018 millones extra en 2026 y 7.200 en 2027.",
     "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
-    "bildu": "EH Bildu defiende reconocer los cuidados como un derecho universal garantizado por las instituciones.",
+    "bildu": "Su programa del 29N propone avanzar hacia unos cuidados universales y gratuitos, limitando la privatización.",
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
     "pp": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
     "pcte": "Medida 30: amplia red asistencial gratuita para personas dependientes, con medios humanos y materiales suficientes.",
@@ -8167,6 +8198,18 @@
     "ph"
    ],
    "src": {
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=13",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 13",
+     "programa",
+     "2026-11"
+    ],
+    "fa": [
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=22",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 22",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4972",
      "Real Decreto-ley 6/2022 (29 de marzo de 2022)",
@@ -8205,6 +8248,8 @@
     ]
    },
    "why": {
+    "bildu": "Estimación: su programa del 29N propone ampliar condiciones y requisitos del Ingreso Mínimo Vital para que llegue a más personas; no pide endurecerlo.",
+    "fa": "Estimación: su programa del 29N quiere que el Ingreso Mínimo Vital se conceda de oficio y llegue a más hogares; no propone endurecer requisitos.",
     "psoe": "Su Gobierno suprimió en 2022 la obligación de acreditar la inscripción como demandante de empleo para cobrar el IMV.",
     "pp": "Propone condicionar el Ingreso Mínimo Vital a la participación en itinerarios de inserción laboral.",
     "erc": "Estimación: ERC prioriza el traspaso del IMV y la renta garantizada, sin condicionalidad.",
@@ -8291,10 +8336,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-     "Programa electoral de Sumar de 2023",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=64",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 64",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
@@ -8327,10 +8372,10 @@
      "2025-11-13"
     ],
     "bildu": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
-     "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
-     "parlamento",
-     "2025-02-12"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=15",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 15",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
@@ -8394,9 +8439,10 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N promete cumplir el calendario de cierre nuclear, con Almaraz cerrando en 2027 y 2028.",
     "salf": "En su programa para Castilla y León (2026) pide al Gobierno de España que paralice el calendario de cierre de las centrales nucleares.",
     "pnv": "Votó contra la enmienda del PP para suprimir la fecha de cierre de las centrales nucleares.",
-    "bildu": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
+    "bildu": "Su programa del 29N apuesta por mantener el calendario de cierre nuclear del PNIEC.",
     "upn": "Votó a favor de la enmienda del PP que suprimía la fecha de cierre de las centrales de Almaraz, Ascó I y Cofrentes, que no prosperó.",
     "bng": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
     "ccpc": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
@@ -8496,10 +8542,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=62",
-     "Programa electoral de Sumar de 2023, p. 62",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=61",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 61",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "existe": [
      "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
@@ -8520,10 +8566,10 @@
      "2026-11"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=15",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 15",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pacma": [
      "https://pacma.es/wp-content/uploads/2026/01/PROGRAMA-ELECTORAL-ARAGON-2026.pdf#page=29",
@@ -8572,11 +8618,11 @@
     "psoe": "Su programa del 29N quiere un 81 % de electricidad renovable en 2030, con las plantas preferentemente en Zonas de Aceleración Renovable (compromiso 234).",
     "pp": "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo.",
     "vox": "Su programa de 2026 propone impedir la instalación descontrolada de macroplantas solares y eólicas que destruyan la riqueza agrícola y natural.",
-    "fa": "Propone ordenar el territorio para las grandes renovables protegiendo suelos agrarios y paisaje, sin renunciar a la transición.",
+    "fa": "Su programa del 29N prioriza el autoconsumo, las cubiertas y la repotenciación frente a la ocupación indiscriminada de suelo, y exige respetar usos agrarios y paisaje.",
     "pod": "Estimación: postura matizada; apoya las renovables con doble uso agrario del suelo, sin frenar la transición.",
     "erc": "Su programa de 2026 condiciona las líneas de muy alta tensión a un informe favorable en biodiversidad y refuerza las renovables.",
     "existe": "Su programa del 29N pide una moratoria en los proyectos de macroparques renovables y líneas de muy alta tensión.",
-    "bildu": "El programa refuerza la apuesta renovable y pide una planificación respetuosa con las particularidades de cada territorio; no propone limitar las grandes plantas.",
+    "bildu": "Su programa del 29N pide un despliegue renovable rápido, pero compatible con la soberanía alimentaria y con retorno al territorio.",
     "pacma": "PACMA defiende las renovables, pero pide frenar el despliegue masivo de grandes plantas solares y eólicas que, según el programa, está devastando el territorio.",
     "adel": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
     "salf": "Propone ordenar eólicas y fotovoltaicas para que las macroplantas vayan a zonas degradadas y no arrasen el suelo agrario.",
@@ -8650,6 +8696,12 @@
     "ie"
    ],
    "src": {
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=17",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 17",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html",
      "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025",
@@ -8694,6 +8746,7 @@
     ]
    },
    "why": {
+    "bildu": "Estimación: su programa del 29N apuesta por la electrificación y por ayudas solo al coche eléctrico puro, sin citar el veto de 2035.",
     "psoe": "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
     "pp": "Su programa de 2026 dice que frenará calendarios climáticos «imposibles» y retirará obligaciones que perjudiquen a la industria.",
     "vox": "Su programa de 2026 propone revertir la prohibición de motores de combustión y los impuestos a las emisiones de CO2 inspirados en el Pacto Verde.",
@@ -8760,10 +8813,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49",
-     "Programa electoral de Sumar de 2023, p. 49",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=74",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 74",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.elespanol.com/eldigitalcastillalamancha/region/20250513/psoe-socios-tumban-congreso-propuesta-murcia-blindar-ley-trasvase-tajo-segura/1003743756235_0.html",
@@ -8824,7 +8877,7 @@
     "psoe": "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases.",
     "pp": "Estimación: el programa de 2023 promete garantizar el agua para regadíos con un Pacto Nacional del Agua, sin citar trasvases.",
     "vox": "Su programa de 2026 propone un Plan Nacional del Agua con la interconexión de todas las cuencas.",
-    "fa": "Plantea reducir el consumo de agua, frenar el regadío intensivo y optar por desalación y reutilización.",
+    "fa": "Su programa del 29N rechaza nuevas grandes obras hidráulicas como trasvases o megabalsas que agraven la sobreexplotación.",
     "erc": "Su programa de 2026 pide modificar el Plan Hidrológico del Ebro para garantizar los caudales ecológicos y proteger el delta.",
     "upn": "Votó a favor de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
     "bng": "Votó en contra de la proposición de ley para blindar el trasvase Tajo-Segura, que el Congreso rechazó en mayo de 2025.",
@@ -8911,10 +8964,10 @@
      "2024-09-18"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=13",
-     "Programa electoral de Sumar de 2023, p. 13",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=63",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 63",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://forbes.es/economia/709412/el-psoe-cuestiona-crear-una-empresa-publica-de-energia-porque-no-seria-garantia-de-un-mejor-servicio/",
@@ -8975,7 +9028,7 @@
     "psoe": "En 2025 el PSOE rechazó en el Congreso crear una empresa pública de energía por no considerarla prioritaria ni garantía de mejor servicio.",
     "pp": "Defiende reducir el sector empresarial público y limitar el intervencionismo, contra una empresa pública de energía.",
     "vox": "Vox votó contra la propuesta de Sumar de crear una entidad pública que gestione las centrales hidroeléctricas.",
-    "fa": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas al vencer sus concesiones.",
+    "fa": "Su programa del 29N crea una comercializadora pública de energía y recupera la gestión pública de los saltos de agua.",
     "pod": "Defendió en el Congreso una moción para crear una empresa pública de energía que abarate los precios.",
     "erc": "Estimación: ERC impulsa una energética pública catalana, no estatal.",
     "bildu": "Pide facilitar por ley la creación de empresas públicas de comercialización de electricidad.",
@@ -9067,10 +9120,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=81",
-     "Programa electoral de Sumar de 2023, p. 81",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=65",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 65",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=40",
@@ -9079,10 +9132,10 @@
      "2026-11"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=6",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=17",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 17",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.energias-renovables.com/panorama/este-es-el-programa-electoral-con-el-20240607-que-20240607-concurre-20240607",
@@ -9143,10 +9196,10 @@
     "psoe": "Su programa del 29N promete modernizar las Cercanías y la Media Distancia y, a la vez, culminar los corredores Mediterráneo y Atlántico (compromiso 27).",
     "pp": "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
     "vox": "Su programa del 29N da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales; no cita la alta velocidad.",
-    "fa": "Propone redirigir la inversión ferroviaria de la alta velocidad a Cercanías y a la red convencional.",
+    "fa": "Su programa del 29N prioriza reforzar las Cercanías con más frecuencias y abonos baratos.",
     "pod": "Estimación: favorable a priorizar Cercanías y trenes regionales.",
     "erc": "Su programa de 2026 exige financiar el Plan de Rodalies 2026-2030 y completar el traspaso de Rodalies a la Generalitat.",
-    "bildu": "Pide más inversión en los trenes de Renfe y Feve en Euskadi y el traspaso de Cercanías.",
+    "bildu": "Su programa del 29N prefiere renovar las vías existentes frente a la alta velocidad y reforzar Cercanías y Media Distancia.",
     "adel": "Propone moratoria a nuevas infraestructuras de AVE, recuperar líneas convencionales e impulsar cercanías y media distancia en localidades de más de 20.000 habitantes.",
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa redirige la inversión ferroviaria de la alta velocidad a Cercanías y al tren convencional.",
     "ph": "Su programa del 29N prioriza las inversiones en el tren convencional que cohesiona el medio rural y la gratuidad de Cercanías y Media Distancia.",
@@ -9172,7 +9225,7 @@
     "psoe": 4,
     "pp": 3,
     "vox": 2,
-    "fa": 4,
+    "fa": 5,
     "pod": 5,
     "salf": 2,
     "pacma": 4,
@@ -9205,10 +9258,10 @@
      "2026-07-15"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=43",
-     "Programa electoral de Sumar para las generales de 2023 (espacio que hoy integra Frente Amplio), p. 43",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=16",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 16",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=11",
@@ -9233,7 +9286,7 @@
     "psoe": "Su Gobierno propone prohibir nuevas viviendas en las zonas de flujo preferente y endurecer la construcción en el resto de zonas inundables.",
     "pp": "Estimación: no consta postura nacional del PP sobre prohibir construir en zonas inundables ya clasificadas.",
     "vox": "Estimación: no consta una postura de Vox sobre prohibir construir en zonas inundables.",
-    "fa": "Estimación: no consta una propuesta verificada de Sumar para prohibir construir en suelos inundables ya aprobados.",
+    "fa": "Su programa del 29N propone prohibir por ley edificar en zonas con riesgo significativo de inundación y en los primeros 500 metros del litoral.",
     "pod": "Propone hacer efectiva la prohibición de construir en cauces y zonas inundables y un plan de protección para las familias afectadas.",
     "erc": "Estimación: sin postura conocida de ERC sobre suelos inundables.",
     "d21": "Su programa del 29N propone hacer cumplir «sin excepciones» la prohibición de construir viviendas en las zonas inundables de mayor riesgo.",
@@ -9390,7 +9443,7 @@
     "erc": 5,
     "junts": 3,
     "pnv": 3,
-    "bildu": 4,
+    "bildu": 5,
     "upn": 2,
     "gbai": 4,
     "bng": 4,
@@ -9439,10 +9492,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=48",
-     "Programa electoral de Sumar de 2023, p. 48",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=60",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 60",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -9469,10 +9522,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=9",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=15",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 15",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=50",
@@ -9545,12 +9598,12 @@
     "mj": "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
     "psoe": "Su programa del 29N propone acelerar el almacenamiento energético, la gestión de la demanda y las interconexiones, con un 81 % renovable en 2030 (234 y 237).",
     "pp": "Su programa de 2026 apuesta por la neutralidad tecnológica: nuclear, renovables, almacenamiento y respaldo compiten en igualdad.",
-    "fa": "Apuesta por renovables con almacenamiento y por mantener el calendario de cierre nuclear.",
+    "fa": "Su programa del 29N propone acelerar las renovables coordinadas con redes y almacenamiento.",
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
     "salf": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
     "erc": "Su programa de 2026 propone un plan de inversión en redes eléctricas, autoconsumo, almacenamiento y renovables para descarbonizar.",
     "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
-    "bildu": "El programa propone reforzar la generación renovable con nuevas inversiones y revisar la Ley de Cambio Climático para alcanzar la neutralidad en 2040.",
+    "bildu": "Su programa del 29N pide acelerar las renovables, reforzar redes y almacenamiento y mantener el cierre nuclear.",
     "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
     "vox": "Su programa de 2026 propone un Plan Nacional de Soberanía Energética, el plan nuclear y el fin de las restricciones a explotar recursos propios.",
     "pacma": "Su programa del 29N dice que el apagón demostró que las renovables exigen almacenamiento y control avanzado de la red, y considera insostenible el modelo fósil y nuclear.",
@@ -9643,10 +9696,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
-     "ElNacional.cat, votación en el Congreso del 20/03/2025",
-     "parlamento",
-     "2025-03-20"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=130",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 130",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
@@ -9673,10 +9726,10 @@
      "2025-03-26"
     ],
     "bildu": [
-     "https://www.elnacional.cat/es/politica/politicas-defensa-gasto-militar-divide-gobierno-socios-congreso_1384091_102.html",
-     "ElNacional.cat, votación en el Congreso del 20/03/2025",
-     "parlamento",
-     "2025-03-20"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=28",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 28",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts",
@@ -9752,10 +9805,11 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone reducir el gasto militar y rechazar el objetivo de la OTAN.",
     "mj": "Su programa del 29N pide no aumentar el gasto militar, reorientar esas partidas a necesidades básicas y apoyar reducirlo un 2 % en todos los países.",
     "psoe": "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
     "pnv": "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
-    "bildu": "Apoyó en el Congreso renunciar a cualquier aumento del gasto militar.",
+    "bildu": "Su programa del 29N rechaza el aumento del gasto en defensa que exige la OTAN.",
     "upn": "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     "bng": "Su programa de 2026 rechaza el aumento del gasto militar y el acatamiento de las directrices de la OTAN y de EE. UU.",
     "ccpc": "Votó en contra de la moción que pedía revertir el aumento del gasto militar.",
@@ -10008,10 +10062,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=146",
-     "Programa electoral de Sumar de 2023, p. 146",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=136",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 136",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upc": [
      "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147",
@@ -10036,7 +10090,7 @@
     "psoe": "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
     "pp": "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad.",
     "vox": "El programa de Vox exige recuperar la unanimidad en el Consejo de la UE para proteger la soberanía nacional.",
-    "fa": "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo.",
+    "fa": "Su programa del 29N propone abandonar la unanimidad en política exterior de la UE cuando estén en juego los derechos humanos.",
     "pod": "Estimación: sin postura reciente publicada sobre la unanimidad en la UE.",
     "upc": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
     "ie": "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
@@ -10112,10 +10166,10 @@
      "2025-10-08"
     ],
     "fa": [
-     "https://www.elsaltodiario.com/congreso-de-los-diputados/congreso-convalida-decreto-embargo-armas-votos-podemos-junts",
-     "El Salto, convalidación del decreto de embargo de armas a Israel, 08/10/2025",
-     "parlamento",
-     "2025-10-08"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=131",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 131",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.elsaltodiario.com/congreso-de-los-diputados/podemos-aprobacion-embargo-armas-israel",
@@ -10142,10 +10196,10 @@
      "2025-10-08"
     ],
     "bildu": [
-     "https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/",
-     "RTVC, votación del 8 de octubre de 2025",
-     "parlamento",
-     "2025-10-08"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=29",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 29",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.infobae.com/espana/agencias/2025/10/08/el-congreso-convalida-el-decreto-de-embargo-de-armas-a-israel-con-el-apoyo-decisivo-de-podemos-y-lo-tramitara-como-ley/",
@@ -10194,12 +10248,12 @@
     "mj": "Su programa del 29N propone prohibir la exportación de armas a países en guerra o que vulneren derechos humanos y suspender el Acuerdo de Asociación UE-Israel.",
     "psoe": "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025.",
     "vox": "Vox votó en contra de convalidar el decreto de embargo de armas a Israel.",
-    "fa": "Apoyó el embargo de armas a Israel y pidió endurecerlo por considerarlo insuficiente.",
+    "fa": "Su programa del 29N propone una ley de embargo integral, total y permanente de armas a Israel.",
     "pod": "Votó a favor del embargo de armas a Israel, aunque lo calificó de «embargo fake» por quedarse corto.",
     "erc": "Su programa de 2026 promueve un embargo completo de armas a Israel.",
     "junts": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "pnv": "Votó a favor del decreto de embargo de armas a Israel.",
-    "bildu": "Votó a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
+    "bildu": "Su programa del 29N pide endurecer el embargo de armas a Israel hasta bloquear por completo su venta.",
     "upn": "Se abstuvo en la convalidación del decreto ley de embargo de armas a Israel, aprobado por el Congreso en octubre de 2025.",
     "bng": "Anunció su voto a favor del decreto de embargo de armas a Israel, aunque lo consideró incompleto.",
     "ccpc": "Anunció su apoyo al decreto de embargo de armas a Israel antes de su convalidación en el Congreso.",
@@ -10330,10 +10384,10 @@
      "2026-04"
     ],
     "bildu": [
-     "https://www.elindependiente.com/espana/2025/11/12/sumar-podemos-y-bildu-exigen-a-sanchez-que-rectifique-en-el-sahara-deje-de-estar-plegado-a-la-dictadura-marroqui/amp/",
-     "El Independiente (Efe): Sumar, Podemos y Bildu exigen a Sánchez que rectifique en el Sáhara",
-     "prensa",
-     "2025-11-12"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=29",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 29",
+     "programa",
+     "2026-11"
     ],
     "upc": [
      "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
@@ -10379,7 +10433,7 @@
     "bng": "Su programa de 2026 pide un referéndum de autodeterminación con garantías para el pueblo saharaui y condena la ocupación marroquí.",
     "cha": "CHA defiende un referéndum de autodeterminación para el pueblo saharaui.",
     "adel": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
-    "bildu": "EH Bildu pide retirar el apoyo al plan de autonomía marroquí y volver a defender la autodeterminación saharaui.",
+    "bildu": "Su programa del 29N pide revertir el cambio de posición del Gobierno sobre el Sáhara y apoyar la autodeterminación saharaui.",
     "upc": "Su manifiesto del 29N expresa su solidaridad con el pueblo saharaui en su lucha por la autodeterminación y la independencia.",
     "drago": "Drago Canarias critica la sumisión del Gobierno a Marruecos, evidenciada en el cambio de posición sobre el Sáhara.",
     "pcte": "Denuncia como traición al pueblo saharaui que el Gobierno aceptara el plan marroquí de autonomía.",
@@ -10482,10 +10536,10 @@
      "2026-04"
     ],
     "bildu": [
-     "https://www.eldebate.com/espana/20260422/congreso-rechaza-peticion-podemos-convocar-nuevo-referendum-sobre-otan_409815.html",
-     "El Debate, abril de 2026",
-     "parlamento",
-     "2026-04"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=28",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 28",
+     "programa",
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=89",
@@ -10561,7 +10615,7 @@
     "fa": "No propone salir de la OTAN, pero sí desplazar progresivamente sus garantías hacia una autonomía estratégica europea.",
     "erc": "La ponencia de 2025 es favorable a que los Estados de la UE salgan de la OTAN.",
     "pnv": "Votó contra la moción de Podemos para un referéndum sobre la OTAN y defiende seguir en la Alianza.",
-    "bildu": "Considera «un sinsentido» seguir defendiendo la OTAN, aunque no apoyó la moción de Podemos por estar escrita «muy desde Madrid».",
+    "bildu": "Su programa del 29N rechaza la OTAN y la pertenencia de Euskal Herria a ella.",
     "bng": "Su programa de 2026 propone salir de la OTAN y defender la disolución de esa alianza militar.",
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
@@ -10654,10 +10708,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=148",
-     "Programa electoral de Sumar de 2023, p. 148",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=133",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 133",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion199/20220915/Votacion030/VOT_20230302181057.json",
@@ -10731,7 +10785,7 @@
     "psoe": "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
     "pp": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
     "vox": "Su programa de 2026 propone acabar con la cooperación al desarrollo con países que no colaboren en los flujos migratorios y con ayudas a ciertas ONG.",
-    "fa": "Se compromete a dedicar el 0,7 % del PNB a la ayuda oficial al desarrollo.",
+    "fa": "Su programa del 29N propone subir la ayuda al desarrollo del 0,27 % al 0,7 % de la renta nacional bruta.",
     "pod": "Votó en contra de la enmienda de Vox para devolver al Gobierno la ley de cooperación para el desarrollo.",
     "erc": "Su programa de 2026 exige cumplir el compromiso del 0,7 % de ayuda oficial al desarrollo.",
     "bildu": "EH Bildu votó en contra de devolver al Gobierno la ley de cooperación, que fija el objetivo de destinar el 0,7 % de la renta nacional a la ayuda al desarrollo.",
@@ -10897,10 +10951,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=149",
-     "Programa electoral de Sumar de 2023, p. 149",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=137",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 137",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
@@ -10951,10 +11005,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=11",
-     "Compromiso electoral de EH Bildu para las generales de 2023, p. 11",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 20",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ph": [
      "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
@@ -10974,7 +11028,7 @@
     "psoe": "Su Gobierno rechaza los centros fuera de la UE al estilo Italia-Albania, por dudas sobre los derechos humanos.",
     "pp": "Su programa de 2026 usará terceros países seguros y primeros países de asilo e impulsará acuerdos para crear centros de retorno fuera de la UE.",
     "vox": "Vox pide a la UE plataformas de desembarco fuera de Europa para evaluar las solicitudes de asilo.",
-    "fa": "Rechaza externalizar fronteras y pide reforzar el acceso al asilo y los corredores humanitarios.",
+    "fa": "Su programa del 29N rechaza los centros de deportación en terceros países y propone recurrir el Reglamento de Retornos ante el Tribunal de Justicia de la UE.",
     "erc": "Su programa de 2026 propone poner fin a la externalización de las fronteras europeas.",
     "upc": "Su manifiesto del 29N rechaza la externalización de fronteras y defiende vías legales y seguras y la acogida digna.",
     "drago": "Drago Canarias critica el Pacto Europeo de Migración por convertir las fronteras en espacios de procesamiento y contención.",
@@ -10983,7 +11037,7 @@
     "mes": "El programa conjunto con el que concurrió MÉS en 2023 propone acabar con la externalización de fronteras.",
     "pod": "Podemos rechaza la externalización de la política migratoria y de asilo de la UE a terceros países.",
     "bng": "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo.",
-    "bildu": "EH Bildu pide vías seguras, garantizar el asilo y acabar con las devoluciones en caliente, frente a la externalización.",
+    "bildu": "Su programa del 29N rechaza la externalización de fronteras del Pacto Europeo de Migración y Asilo.",
     "ph": "Rechaza la externalización de fronteras y las «plataformas-prisiones» y propone destinar esos fondos a la acogida.",
     "fo": "Estimación: el programa propone acuerdos con países cercanos para instalar centros de clasificación y deportación desde suelo extranjero y endurecer el asilo."
    }
@@ -11256,10 +11310,10 @@
      "2023-07-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=160",
-     "Programa electoral de Sumar de 2023, p. 160",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=7",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 7",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -11319,7 +11373,7 @@
    "why": {
     "psoe": "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
     "pp": "Su programa de 2026 convierte la beca en un derecho por ley y da matrícula gratuita solo en FP de alta demanda de empleo.",
-    "fa": "Propone que la matrícula universitaria avance de forma progresiva hacia la gratuidad.",
+    "fa": "Su programa del 29N promete gratuidad educativa desde los 0 años hasta la universidad.",
     "pod": "Su programa europeo de 2024 defiende una educación pública gratuita desde el nacimiento hasta la universidad.",
     "erc": "El programa propone avanzar hacia la gratuidad universitaria.",
     "comp": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
@@ -11556,7 +11610,6 @@
     "falange": 5
    },
    "est": [
-    "fa",
     "pod",
     "d21",
     "gbai",
@@ -11597,10 +11650,10 @@
      "2022-06-09"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=11",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 11",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
@@ -11627,10 +11680,10 @@
      "2024-07-05"
     ],
     "fa": [
-     "https://www.eldiario.es/catalunya/justicia-europea-descarta-25-castellano-vulnere-derechos-partidarios-inmersion-catalan_1_13314846.html",
-     "elDiario.es: los Comuns (Frente Amplio) en el pacto del Parlament para mantener el catalán en el aula",
-     "prensa",
-     "2026-06-18"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=32",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 32",
+     "programa",
+     "2026-11"
     ],
     "psoe": [
      "https://www.moncloa.com/2020/11/19/psoe-pp-unen-contra-vox-474432/",
@@ -11663,12 +11716,12 @@
     "erc": "Su programa de 2026 blinda la escuela catalana y la inmersión lingüística, con el catalán como lengua vehicular.",
     "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
     "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
-    "bildu": "El programa exige blindar los modelos educativos vascos y sus características lingüísticas, sin cambios impuestos.",
+    "bildu": "Su programa del 29N defiende un sistema educativo propio y euskaldun.",
     "bng": "El programa propone una escuela pública gallega orientada a la normalización lingüística.",
     "upn": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
     "comp": "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
     "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
-    "fa": "Los Comuns, parte del Frente Amplio, apoyan mantener el catalán como lengua de la escuela en Cataluña.",
+    "fa": "Su programa del 29N garantiza la inmersión lingüística en catalán como lengua vehicular en Cataluña.",
     "psoe": "El PSOE votó en contra de garantizar a las familias una enseñanza íntegramente en castellano, el mismo día en que su ley educativa suprimió el castellano como lengua vehicular.",
     "fo": "Propone garantizar el derecho de todo el mundo a estudiar en castellano o en las lenguas cooficiales.",
     "falange": "Su programa del 29N propone que las asignaturas básicas se impartan en español, con las lenguas regionales como enseñanza aparte.",
@@ -11990,10 +12043,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=56",
-     "Programa electoral de Sumar de 2023, p. 56",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=76",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 76",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2026/07/14/ione-belarra-tauromaquia-uci/",
@@ -12083,7 +12136,7 @@
    "why": {
     "pp": "Su programa de 2026 restituye el Premio Nacional de Tauromaquia y protege las fiestas y tradiciones populares.",
     "vox": "Su programa de 2026 defiende la tauromaquia y promueve la difusión del arte taurino.",
-    "fa": "Propone derogar la ley que protege la tauromaquia como patrimonio y suprimir la financiación pública de corridas con muerte.",
+    "fa": "Su programa del 29N propone derogar la ley que protege la tauromaquia y acabar con su financiación pública.",
     "pod": "Belarra pidió retirar a la tauromaquia la condición de bien cultural para poder suspender sus subvenciones.",
     "erc": "El programa pide derogar la ley de la tauromaquia y no financiarla.",
     "bildu": "EH Bildu votó a favor de retirar a la tauromaquia su protección legal como patrimonio cultural.",
@@ -12170,10 +12223,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=15",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=12",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 12",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://okdiario.com/img/2019/10/31/ciudadanos-programa-electoral-10n.pdf#page=46",
@@ -12236,7 +12289,7 @@
     "vox": "Su programa de 2026 propone que desconocer las lenguas regionales no impida el acceso por oposición a plazas sanitarias.",
     "fa": "Sus diputados recurrieron ante el Constitucional la supresión del requisito del catalán en la sanidad balear.",
     "erc": "El programa exige el catalán al personal de la Administración del Estado en Cataluña.",
-    "bildu": "Pide garantizar el euskera en todas las administraciones del Estado y que su personal lo conozca.",
+    "bildu": "Su programa del 29N pide exigir el euskera en los servicios de la Administración del Estado en Euskadi y Navarra.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía que la lengua cooficial sea mérito y no requisito en el empleo público.",
     "comp": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
     "bng": "Su programa de 2026 pide normalizar el gallego en la Administración central, empezando por su conocimiento entre el funcionariado.",
@@ -12338,10 +12391,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.amp.html",
-     "Redacción Médica, 18/03/2026",
-     "declaracion",
-     "2026-03-18"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=26",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 26",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html",
@@ -12362,10 +12415,10 @@
      "2026-03-18"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=6",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=11",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 11",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
@@ -12429,8 +12482,9 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone la gestión pública directa y derogar la Ley 15/1997, que abrió la puerta a la gestión privada.",
     "mj": "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
-    "bildu": "Pide derogar la Ley 15/1997, que permite externalizar servicios sanitarios.",
+    "bildu": "Su programa del 29N propone derogar la Ley 15/1997, que permite externalizar los servicios sanitarios.",
     "bng": "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas.",
     "comp": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
     "adel": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
@@ -12747,10 +12801,10 @@
    ],
    "src": {
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17",
-     "Programa electoral de Sumar de 2023, p. 17",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=30",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 30",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf",
@@ -12791,7 +12845,7 @@
    },
    "why": {
     "vox": "Estimación: Vox defiende bajar impuestos en general; no consta una postura sobre los impuestos al tabaco, el alcohol o el azúcar.",
-    "fa": "Propone una fiscalidad saludable con un impuesto a las bebidas azucaradas y revisar los impuestos al alcohol y el tabaco.",
+    "fa": "Su programa del 29N crea impuestos específicos a refrescos azucarados, bebidas energéticas, tabaco y ultraprocesados.",
     "pod": "Estimación: probablemente favorable a impuestos saludables, sin postura reciente propia.",
     "erc": "El programa propone una fiscalidad que penalice productos como las bebidas azucaradas.",
     "psoe": "El Gobierno presidido por el PSOE subió el IVA de las bebidas azucaradas al 21 % con el fin declarado de reducir su consumo.",
@@ -13033,10 +13087,10 @@
      "2024-11-20"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92",
-     "Programa electoral de Sumar de 2023, p. 92",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=27",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 27",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.redaccionmedica.com/politica/20240401/podemos-lleva-al-congreso-la-muerte-lenta-de-gestion-indirecta-del-sns/216640_0.amp.html",
@@ -13079,7 +13133,7 @@
     "psoe": "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada.",
     "pp": "Presentó una proposición para consolidar el mutualismo administrativo frente a la integración en la sanidad pública.",
     "vox": "Una proposición no de ley de Vox pide mantener el mutualismo administrativo y asegurar la viabilidad de Muface.",
-    "fa": "Propone integrar de forma paulatina en la sanidad pública a quienes hoy reciben asistencia a través de MUFACE, MUGEJU e ISFAS.",
+    "fa": "Su programa del 29N propone integrar definitivamente MUFACE, MUGEJU e ISFAS en el Sistema Nacional de Salud.",
     "pod": "Registró en el Congreso una proposición de ley para extinguir el modelo de mutualidades como Muface.",
     "erc": "La ponencia propone extinguir las mutualidades de funcionarios pagadas con fondos públicos.",
     "pcte": "Estimación: el programa de 2023 aspira a un sistema sanitario único, público y gratuito; no cita MUFACE.",
@@ -13147,6 +13201,12 @@
     "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país."
    },
    "src": {
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=10",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 10",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf",
      "Programa electoral del PSOE de 2023 (copia en El Independiente)",
@@ -13166,10 +13226,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=89",
-     "Programa electoral de Sumar de 2023, p. 89",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=29",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 29",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=42",
@@ -13221,10 +13281,11 @@
     ]
    },
    "why": {
+    "bildu": "Estimación: su programa del 29N pide asumir las competencias que aún ejerce el Ministerio de Sanidad; no apoya estándares estatales obligatorios.",
     "psoe": "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud.",
     "pp": "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera.",
     "vox": "Su programa de 2026 propone una tarjeta sanitaria única con historia clínica compartida y publicar indicadores comparables de listas de espera.",
-    "fa": "Su programa propone una ley estatal con tiempos máximos de espera para todo el país.",
+    "fa": "Su programa del 29N promete aprobar el real decreto de listas de espera, con tiempos máximos y registros comunes.",
     "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     "erc": "Su programa de 2026 blinda las competencias sanitarias de la Generalitat e impide la recentralización o la injerencia del Estado.",
     "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
@@ -13464,10 +13525,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=61",
-     "Programa electoral de Sumar de 2023, p. 61",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=56",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 56",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
@@ -13476,10 +13537,10 @@
      "2026-11"
     ],
     "bildu": [
-     "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf#page=5",
-     "Compromiso de Euskal Herria Bildu, programa para las elecciones generales de 2023",
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=9",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 9",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://forbes.es/ultima-hora/407159/sumar-y-podemos-apoyan-a-los-agricultores-y-exigen-que-se-eviten-las-ventas-a-perdidas-en-el-sector/",
@@ -13551,10 +13612,10 @@
    "why": {
     "psoe": "Su programa de 2023 promete reforzar el control de la Ley de la Cadena Alimentaria y vigilar costes y márgenes.",
     "vox": "El programa de Vox promete corregir los desequilibrios de la cadena alimentaria que perjudican al productor.",
-    "fa": "Propone controlar la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
+    "fa": "Su programa del 29N exige cumplir y sancionar la prohibición de vender por debajo de costes en origen.",
     "pod": "Estimación: favorable a intervenir los márgenes de la gran distribución.",
     "erc": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria y sus controles para garantizar precios justos que cubran los costes.",
-    "bildu": "Pide más control sobre la cadena alimentaria para asegurar precios justos a los productores.",
+    "bildu": "Su programa del 29N pide controles obligatorios de precios y márgenes de la distribución y hacer cumplir la prohibición de comprar por debajo de costes.",
     "cha": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
     "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
     "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
@@ -13771,10 +13832,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=52",
-     "Programa electoral de Sumar de 2023, p. 52",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=77",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 77",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://forbes.es/economia/672070/la-desproteccion-del-lobo-al-norte-del-duero-sera-efectiva-desde-hoy-lo-que-permitira-su-caza/",
@@ -13853,7 +13914,7 @@
     "psoe": "Votó en 2025 contra sacar al lobo del listado de protección; su ministra lo calificó de decisión «en contra de la ciencia».",
     "pp": "El PP quiere sacar al lobo del LESPRE al norte del Duero y permitir su control para proteger la ganadería.",
     "vox": "Vox propone sacar al lobo del régimen de protección especial y controlar su población.",
-    "fa": "Propone incluir el lobo en el Catálogo de Especies Amenazadas, lo que impide su caza.",
+    "fa": "Su programa del 29N propone devolver al lobo la protección estricta, con prevención de daños e indemnizaciones.",
     "pod": "Votó contra la enmienda que retiró la protección especial al lobo al norte del Duero y permitió su caza.",
     "salf": "En su programa para Castilla y León (2026) propone planes de control de especies como el lobo que causan daños a la ganadería.",
     "erc": "Estimación: posición crítica con la caza del lobo.",
@@ -13943,10 +14004,10 @@
      "2023-07-07"
     ],
     "fa": [
-     "https://www.eldiario.es/aragon/politica/cha-verdes-equo-piden-eliminar-50-macrogranjas-2030-proteger-salud-clima_1_12678029.html",
-     "elDiario.es, PNL de CHA y Verdes Equo en el grupo Sumar, 12/10/2025",
-     "parlamento",
-     "2025-10-12"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=77",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 77",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -14000,7 +14061,7 @@
    "why": {
     "mj": "Su programa del 29N propone acabar con el hacinamiento en las granjas y apoyar a la ganadería extensiva.",
     "psoe": "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
-    "fa": "Su grupo registró en el Congreso una iniciativa para una moratoria a nuevas macrogranjas.",
+    "fa": "Su programa del 29N promete no autorizar nuevas macrogranjas.",
     "pod": "Su programa europeo de 2024 pide una moratoria indefinida a la apertura de nuevas macroexplotaciones.",
     "erc": "Estimación: ERC es crítica con la ganadería intensiva.",
     "pp": "En las Cortes de Castilla y León votó en contra de una moratoria de seis años a nuevas macrogranjas.",
@@ -14289,10 +14350,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=49",
-     "Programa electoral de Sumar de 2023, p. 49",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=74",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 74",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33",
@@ -14341,7 +14402,7 @@
     "psoe": "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
     "pp": "Su programa de 2026 definirá nuevos regadíos y renovará los existentes para reducir su consumo de agua y de energía.",
     "vox": "Su programa de 2026 propone impulsar y modernizar los regadíos dentro del Plan Nacional del Agua.",
-    "fa": "Propone una moratoria del regadío intensivo y reducir el superintensivo, sobre todo en las cuencas más vulnerables.",
+    "fa": "Su programa del 29N promete detener el crecimiento de las demandas de regadío.",
     "erc": "Su programa de 2026 exige financiación estatal para modernizar los regadíos de Cataluña y mejorar la eficiencia hídrica.",
     "pacma": "PACMA señala la expansión de regadíos en zonas secas como causa del agotamiento de acuíferos y de la desertificación, lo que apoya limitar los nuevos regadíos.",
     "pod": "La secretaria general de Podemos rechaza ampliar regadíos en una zona con el acuífero sobreexplotado, en línea con limitar los nuevos regadíos donde falta agua.",
@@ -14419,10 +14480,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://www.publico.es/politica/congreso/sumar-propone-reforma-articulo-43-constitucion-blindar-derecho-aborto.html",
-     "Público, propuesta de reforma constitucional de Sumar, 27/02/2025",
-     "declaracion",
-     "2025-02-27"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.elespanol.com/espana/politica/20251017/carmen-calvo-suma-irene-montero-cuestiona-reforma-constitucion-propone-gobierno-aborto/1003743974273_0.amp.html",
@@ -14504,6 +14565,7 @@
     ]
    },
    "why": {
+    "fa": "Su programa del 29N propone blindar en la Constitución el derecho al aborto.",
     "pnv": "Votó por seguir tramitando la reforma constitucional del aborto, aunque la calificó de oportunista y cuestionó su utilidad porque el aborto ya está regulado.",
     "bildu": "Votó en contra de las enmiendas de totalidad de PP y Vox, lo que permitió tramitar la reforma constitucional del aborto.",
     "upn": "Votó con PP y Vox a favor de devolver al Gobierno la reforma que incluye el aborto en el artículo 43 de la Constitución; la enmienda no prosperó.",
@@ -14594,10 +14656,10 @@
      "2026-11"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=99",
-     "Programa electoral de Sumar de 2023, p. 99",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=150",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 150",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html",
@@ -14624,10 +14686,10 @@
      "2021-03-18"
     ],
     "bildu": [
-     "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
-     "Bolsamanía, El Congreso aprueba con mayoría absoluta la ley de eutanasia, 18-03-2021",
-     "parlamento",
-     "2021-03-18"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=10",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 10",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
@@ -14677,12 +14739,12 @@
     "psoe": "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
     "pp": "El PP votó contra la ley de eutanasia, pero en 2023 promete revisarla, priorizando los cuidados paliativos, no derogarla.",
     "vox": "Su programa de 2026 defiende la vida «hasta la muerte natural», pide acabar con la «cultura de la muerte» y potenciar los cuidados paliativos.",
-    "fa": "Defiende la muerte digna conforme a la ley de eutanasia, que apoya mantener.",
+    "fa": "Su programa del 29N defiende el derecho a la eutanasia y al suicidio asistido.",
     "pod": "Su programa europeo de 2024 defiende el derecho a la eutanasia en toda Europa, no derogarla.",
     "erc": "ERC votó a favor de aprobar la ley de eutanasia en 2021.",
     "junts": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     "pnv": "Apoyó la ley de eutanasia como «la consecución de un derecho y no una obligación».",
-    "bildu": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
+    "bildu": "Su programa del 29N propone reformar la ley de eutanasia para ampliar y blindar el derecho a morir dignamente.",
     "upn": "Votó en contra de la ley orgánica de regulación de la eutanasia en el Congreso y anunció un recurso ante el Tribunal Constitucional.",
     "bng": "Votó a favor de la ley de eutanasia en el Congreso en marzo de 2021.",
     "ccpc": "Votó en contra de la propuesta de Vox para derogar las leyes de eutanasia y aborto, que solo apoyó Vox.",
@@ -14766,10 +14828,10 @@
      "2023-07"
     ],
     "fa": [
-     "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=114",
-     "Programa electoral de Sumar de 2023, p. 114",
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=123",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 123",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366",
@@ -14808,10 +14870,10 @@
      "2023-07"
     ],
     "bildu": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion229/20221222/Votacion371/VOT_20230302133947.json",
-     "Congreso de los Diputados, votación nominal (datos abiertos): dictamen del proyecto de ley para la igualdad real y efectiva de las personas trans (ley trans), 22/12/2022",
-     "parlamento",
-     "2022-12-22"
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=19",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 19",
+     "programa",
+     "2026-11"
     ],
     "fo": [
      "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
@@ -14848,14 +14910,14 @@
     "psoe": "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
     "pp": "Su programa de 2026 elimina la libre autodeterminación registral del sexo de la Ley Trans.",
     "vox": "Vox propone derogar la ley trans, que permite el cambio registral sin informes médicos.",
-    "fa": "Toma como base la ley trans de 2023, que permite el cambio registral desde los 16 sin informes médicos.",
+    "fa": "Su programa del 29N propone desplegar de forma efectiva la Ley Trans.",
     "pod": "La ley trans, impulsada por Irene Montero como ministra de Igualdad, permite el cambio registral desde los 16 años.",
     "erc": "Su programa de 2026 reconoce legalmente las identidades no binarias sin requisitos patologizadores.",
     "pnv": "El diputado del PNV apoyó en el Pleno la ley trans, que permite la libre autodeterminación de género a partir de los 16 años.",
     "bng": "Su programa de 2026 protege a las personas trans, respeta su autodeterminación de género y reconoce a las personas no binarias.",
     "upc": "Sumar, socio de UPC, defiende aplicar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
     "comp": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
-    "bildu": "EH Bildu votó a favor de la ley trans, que permite desde los 16 años la rectificación registral del sexo sin informes médicos ni psicológicos.",
+    "bildu": "Su programa del 29N no acepta retrocesos en los derechos trans, especialmente en su despatologización.",
     "fo": "Propone la derogación de la Ley Trans.",
     "falange": "Su programa del 29N propone prohibir las terapias y cirugías de cambio de sexo y se declara contrario a las corrientes LGTBI.",
     "d21": "Estimación: su programa del 29N se opone a recortar los derechos LGTBIQ+, a «patologizar identidades» y a derogar normas de no discriminación trans.",
@@ -15089,10 +15151,10 @@
      "2023-07-04"
     ],
     "fa": [
-     "https://www.noticiasdenavarra.com/sociedad/2024/07/19/sumar-insta-gobierno-suprimir-privilegios-8502884.html",
-     "Sumar insta al Gobierno a suprimir los «privilegios existentes» para la Iglesia Católica (Noticias de Navarra)",
-     "parlamento",
-     "2024-07-19"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=150",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 150",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://diariodeavisos.elespanol.com/2021/10/podemos-pide-eliminar-los-privilegios-de-la-iglesia/",
@@ -15159,7 +15221,7 @@
     "psoe": "Su programa busca reducir ventajas de la Iglesia (autofinanciación, fiscalidad) dentro de los acuerdos vigentes, sin revisarlos.",
     "pp": "Propone mantener la cooperación con las confesiones mediante los instrumentos jurídicos vigentes.",
     "vox": "Estimación: no consta una postura reciente de Vox sobre revisar los acuerdos con la Santa Sede.",
-    "fa": "Registró una proposición no de ley para actualizar los acuerdos con la Santa Sede y suprimir privilegios de la Iglesia.",
+    "fa": "Su programa del 29N propone revisar los Acuerdos de 1979 con la Santa Sede y la legislación de privilegio derivada.",
     "pod": "Registró en el Congreso una iniciativa para eliminar los privilegios de la Iglesia y anular el Concordato.",
     "erc": "Su programa de 2026 deja sin efecto los acuerdos de 1979 con la Santa Sede y aplica el IBI a los bienes de las confesiones.",
     "bildu": "El grupo de ERC y EH Bildu en el Senado presentó y votó una moción que pedía declarar nulos los acuerdos de 1979 con la Santa Sede, lo que va más allá de revisarlos.",
@@ -15401,10 +15463,10 @@
      "2024-06-27"
     ],
     "fa": [
-     "https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/",
-     "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)",
-     "parlamento",
-     "2024-06-27"
+     "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=37",
+     "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 37",
+     "programa",
+     "2026-11"
     ],
     "pod": [
      "https://www.elindependiente.com/espana/2024/06/27/el-congreso-aprueba-la-ley-de-paridad-que-no-limita-la-presencia-institucional-de-mujeres-y-que-cuela-el-techo-de-gasto/amp/",
@@ -15459,7 +15521,7 @@
     "psoe": "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
     "pp": "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí.",
     "vox": "Vox votó contra la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
-    "fa": "Votó a favor de la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
+    "fa": "Su programa del 29N propone consolidar la paridad en las listas con el formato cremallera como garantía mínima.",
     "pod": "Apoyó la ley de paridad y pactó con el PSOE que las mujeres puedan superar el 60 % en los órganos afectados.",
     "erc": "El programa defiende la paridad en todos los ámbitos de representación.",
     "junts": "Defendió la ley de paridad: «las cuotas nos han traído hasta aquí».",

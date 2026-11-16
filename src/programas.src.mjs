@@ -2,10 +2,12 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-11-15",
+  comprobado: "2026-11-16",
   // id de partido → { url, titulo, fecha, alta?, tipo?, nota? }   (tipo "avance": documento breve o parcial; si no, programa completo)   (vacío: aún no publicado). `alta`: día en que entró en la web, solo si la
   // fecha del programa no es un día concreto; ordena «Últimas incorporaciones» en /programas/.
   publicados: {
+    fa: { url: "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf", titulo: "Programa electoral del Frente Amplio para las elecciones generales del 29N de 2026", fecha: "2026-11-16" },
+    bildu: { url: "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf", titulo: "Programa de EH Bildu para las generales del 29N de 2026: «Posible egin. Garantía y derechos» (versión en castellano)", fecha: "2026-11-16" },
     psoe: { url: "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf", titulo: "Programa electoral del PSOE para las generales del 29N de 2026: «La fuerza de seguir avanzando»", fecha: "2026-11-14" },
     comp: { url: "https://frontvalencia.net/programa-compromis-front-valencia.pdf", titulo: "Programa electoral de Compromís-Front Valencià para el 29N (en valenciano)", fecha: "2026-11-13" },
     gbai: { url: "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf", titulo: "Bases políticas de Geroa Bai para las elecciones generales del 29 de noviembre de 2026", fecha: "2026-11-13", tipo: "avance", nota: "bases políticas de 14 páginas, sin medidas detalladas" },

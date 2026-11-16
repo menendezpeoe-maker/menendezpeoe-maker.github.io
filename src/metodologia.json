@@ -195,7 +195,7 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 84
+    "n": 88
    },
    {
     "pid": "pp",
@@ -210,16 +210,12 @@
     "n": 23
    },
    {
-    "pid": "fa",
-    "n": 15
-   },
-   {
     "pid": "pacma",
     "n": 15
    },
    {
-    "pid": "ph",
-    "n": 6
+    "pid": "fa",
+    "n": 10
    },
    {
     "pid": "vox",
@@ -230,8 +226,16 @@
     "n": 6
    },
    {
+    "pid": "ph",
+    "n": 5
+   },
+   {
     "pid": "salf",
     "n": 4
+   },
+   {
+    "pid": "pod",
+    "n": 3
    },
    {
     "pid": "pcte",
@@ -240,10 +244,6 @@
    {
     "pid": "mj",
     "n": 2
-   },
-   {
-    "pid": "pod",
-    "n": 1
    },
    {
     "pid": "ie",
@@ -267,16 +267,16 @@
    "pct": 67
   },
   {
-   "pid": "fa",
-   "pct": 60
-  },
-  {
    "pid": "pacma",
    "pct": 59
   },
   {
    "pid": "vox",
    "pct": 59
+  },
+  {
+   "pid": "fa",
+   "pct": 58
   }
  ],
  "posturas": [
@@ -301,8 +301,8 @@
   {
    "pid": "fa",
    "conocidas": 107,
-   "estimadas": 17,
-   "conFuente": 92
+   "estimadas": 14,
+   "conFuente": 96
   },
   {
    "pid": "pod",
@@ -331,8 +331,8 @@
   {
    "pid": "bildu",
    "conocidas": 102,
-   "estimadas": 39,
-   "conFuente": 64
+   "estimadas": 38,
+   "conFuente": 69
   },
   {
    "pid": "pnv",
