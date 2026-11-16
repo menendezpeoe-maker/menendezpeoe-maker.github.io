@@ -1,5 +1,12 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 · Revisión diaria: sin programas nuevos; /debates/ con COPE
+- **Programas (a):** ninguno nuevo. Junts (solo el boletín MESJUNTS en la biblioteca de noviembre), EH Bildu, UPN, CHA, Ara MÉS y PCTE: sin programa del 29N en su web. Drago: su página /programa/ es «Propuestas canarias para una vida digna», sin mención del 29N ni de las generales (no cuenta). Podemos (403) y Frente Amplio (436) bloquean desde la nube. Recuento sigue en 21 de 30.
+- **Posturas (b):** la cola «Revisar posturas con el programa del 29N» la llevan las pasadas de 14:23 y 21:17; esta revisión no la toca para no chocar.
+- **Barrido completo n.º 2 (c):** sigue el 20 nov.
+- **Debates (d):** +3 fichas con fuente de COPE: entrevista a Santiago Abascal en Herrera en COPE (10 nov, emitida, audio de 26 min de la cadena, alcance «programa»); debates propuestos por COPE a PSOE, PP, Vox y Frente Amplio el 17 nov (La Linterna, economía, empleo y pensiones) y el 25 nov (Herrera en COPE, vivienda), como «propuesta». Sin fichas pasadas pendientes. Debate a cuatro: sigue «propuesta» (la Academia no ha anunciado fecha). Cola en plan/DEBATES.md.
+- **Secciones afectadas:** solo /debates/ (y sitemap). Fichas de partido, calendario y portada no cambian.
+
 ## 16 nov 2026 (mañana) · /metodologia/: nota de cómo se calculan las cifras, en lenguaje llano (petición del titular)
 - La nota final («Las cifras se generan con `qa/metodologia.mjs`, en el repositorio público…») no estaba oculta; se reformula como «**Cómo calculamos las cifras: método y datos abiertos.**» con dos enlaces aparte: «Ver el programa del cálculo (metodologia.mjs)» (GitHub, rama `fuente`) y «Descargar los datos abiertos» (/datos/). Ancla `#como-calculamos`.
 - Comprobado: el repositorio es público, y el script en GitHub, /datos/ y /metodologia/ responden 200. Sin datos privados.
