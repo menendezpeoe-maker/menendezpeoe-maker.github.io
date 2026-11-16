@@ -121,7 +121,7 @@ export const QUESTIONS = [
   text: "Si alguien ocupa sin permiso una vivienda vacía de un particular, el propietario debería poder recuperarla en 48 horas.",
   short: "Desalojo en 48 horas de viviendas ocupadas",
   ctx: "Entrar en una vivienda que es morada de alguien, incluidas, según la Fiscalía, las segundas residencias, es allanamiento, y la policía puede actuar de inmediato. El debate está en la ocupación de viviendas vacías, que se resuelve por vía judicial como usurpación; desde 2025 estos casos pueden ir por juicio rápido. Quienes piden desalojos en 48 horas priorizan la propiedad; sus críticos advierten del riesgo de errores sin control judicial previo y de situaciones de vulnerabilidad.",
-  pos: "3 5 5 1 1 5 0 5~ 1 5 4 1 5 2~ 1 4 1~ 1~ 2 1~ 3~ 1~ 1~ 0 0 0 0 0 4~ 4~ 5 0 0" },
+  pos: "4 5 5 1 1 5 0 5~ 1 5 4 1 5 2~ 1 4 1~ 1~ 2 1~ 3~ 1~ 1~ 0 0 0 0 0 4~ 4~ 5 0 0" },
 { id: "B04", area: "viv", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
   short: "Fin de la suspensión de desahucios si el dueño es particular",
@@ -1040,7 +1040,7 @@ export const SOURCES = {
     soria: ["https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf#page=1", "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1", "programa", "2026-11"],
   },
   B03: {
-    psoe: ["https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html", "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025", "parlamento", "2025-03-18"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=101", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 101", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=24", "Programa electoral de Vox de 2026 («Es sentido común»), p. 24", "programa", "2026-11"],
     pod: ["https://www.elindependiente.com/espana/2022/11/29/psoe-unidas-podemos-y-sus-socios-rechazan-que-el-congreso-tramite-la-ley-antiokupas-del-pp/", "El Independiente, votación de la ley antiokupas del PP, 29/11/2022", "parlamento", "2022-11-29"],
@@ -2606,7 +2606,7 @@ export const JUSTIF = {
     soria: "Estimación: su programa del 29N prioriza un programa nacional de construcción de viviendas, garantías e incentivos; no pide regular precios.",
   },
   B03: {
-    psoe: "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
+    psoe: "Su programa del 29N promete seguir combatiendo la ocupación ilegal con juicios rápidos por allanamiento y usurpación y más medios en los juzgados de guardia (438).",
     pp: "Su programa de 2026 promete una ley para que el propietario recupere la vivienda ocupada en 48 horas desde el primer día, por orden judicial.",
     vox: "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
     pod: "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
