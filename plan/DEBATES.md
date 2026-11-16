@@ -19,7 +19,8 @@ Pedido por el titular el 14 nov 2026: /debates/ se actualiza cada día desde la 
 2. Fichas con fecha pasada y estado distinto de «emitido» (`node qa/debates.mjs` las avisa): buscar la grabación en la web de la cadena y, si está, pasar a «emitido» con `grabacion`; si no se celebró, anotarlo en el contexto o quitarla con motivo en ESTADO.md.
 3. Próximos: comprobar cambios de fecha, hora, cadena y participantes (Academia de TV, RTVE, Atresmedia, Mediaset, SER, COPE, autonómicas de cada comunidad, cadenas locales).
 4. Nuevos: buscar debates y entrevistas anunciados o emitidos el día anterior.
-5. `node qa/debates.mjs` y la pasada completa; publicar por la regla 5.
+5. Coherencia: si una ficha nueva o cambiada afecta a otras secciones (fichas de partido, calendario, portada, descripción de /debates/), se actualizan también (CLAUDE.md, norma del 15 nov). Del 24 al 27 manda la excepción mínima: solo /debates/.
+6. `node qa/debates.mjs` y la pasada completa; publicar por la regla 5.
 
 ## Calendario y congelación
 - 14–23 nov: se publica el mismo día.

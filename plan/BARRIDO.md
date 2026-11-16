@@ -3,6 +3,7 @@
 Pedido por el titular el 13 nov 2026: cuando entra un programa nuevo, se publica cuanto antes y se revisa toda la web, cualquier apartado, para añadir, cambiar o quitar lo que la nueva información deje viejo. Mismas reglas para todas las candidaturas (regla 8: pasaje, página `#page=N` y alcance; lo dudoso no se aplica y se anota). Nada de encuestas ni recomendación de voto.
 
 ## Cuándo
+- **Siempre (norma permanente del titular, 15 nov):** cualquier información nueva (programa, postura, fuente, debate o dato) se lleva a todas las secciones que afecta, no solo a la principal; en ESTADO.md se anota qué secciones se revisaron y cambiaron.
 - **Barrido ligero, el mismo día en que entra un programa** (rutina diaria 14–23 nov, 09:47 Madrid): solo la candidatura nueva.
 - **Barrido completo n.º 1:** 13 nov (hecho, ver ESTADO.md).
 - **Barrido completo n.º 2:** el 20 nov en la rutina diaria (antes de S2 el 21 y de la revisión final de Codex el 22). Se adelanta al primer día en que hayan publicado programa las candidaturas que suman la mayoría de los escaños de 2023 (PP + PSOE ya bastan). Se hace una sola vez.
