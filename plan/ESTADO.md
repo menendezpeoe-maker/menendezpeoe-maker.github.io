@@ -1,5 +1,13 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 (noche) · Revisar posturas con el programa del 29N: PSOE, segunda mitad (H01–L09)
+- **Fuente:** programa del PSOE del 29N (copia del titular en test29n/programas/PSOE_Programa_29N.pdf; se citan páginas del PDF, la impresa es +1).
+- **Pasan a citar el programa (valor sin cambios):** H01 1 (p. 105: rechaza el 5 % del PIB), H02 5 (p. 109, compr. 472), H03 1 (p. 109, 473), H04 5 (p. 105), H07 1 (p. 107, 459), I02 3 (p. 54, 179: solo el primer curso gratis), I03 1 (p. 55, 184), J01 4 (p. 49, 138), K03 4 (p. 69, 267), K05 2 (p. 70, 271), K08 3 (p. 68, 264), L02 1 (p. 50, 147), L03 4 (p. 97, 412), L04 1 (p. 77), L07 5 (p. 95, 399), L08 1 (p. 86, 364). Nota K08/psoe al día (ya no habla de «nuevos regadíos»).
+- **Revisadas sin pasaje:** H05 I01 I04 I05 I08 J03 J05 J06 J07 K04 K07 L05 L09. **Solo pasaje indirecto (conservan su fuente):** H06 (p. 105 «aliados, no vasallos»; 482 defensa europea; no nombra la OTAN), H08 (p. 109, 469: Asia con reciprocidad; no nombra China), H09 (p. 110, 479), I06 (p. 52 y 54: becas por renta), I07 (p. 51, 156), I09 (p. 91, 385), J04 (p. 51, 154: prevención, no impuestos), J08 (p. 49–50, 136 y 143), K01 (p. 69, 267: reciprocidad; no nombra Mercosur), K02 (p. 38, 92), K06 (p. 70, 273). J02 y L01 ya lo citaban.
+- **Pendiente de decisión del titular (regla 8, no se cambia):** K08 3 → 4? (p. 68: modernizar regadíos «sin aumentar el consumo total de agua» y planificación según el agua disponible, pero no limita expresamente los nuevos). L06 5: el programa (p. 95, 401) propone verificar la edad de forma anónima «sin conocer su identidad», lo que matiza la propuesta de Davos (2025) de vincular cada cuenta a una identidad digital; se mantiene la fuente de Davos.
+- **Secciones:** ficha del PSOE (desc y propuestas H01, H04, L01) sin contradicciones; /programas/, /comparar/, /temas/, explorador, /metodologia/, /prensa/ y /datos/ se regeneran con los datos; apartado 1 del barrido sin textos fijos desfasados. **/correcciones/:** `src/correcciones.json` vuelve a tener el historial completo (579 cambios; las sesiones con clon superficial lo habían recortado a ~109): hay que generarlo siempre en un clon completo.
+- **Recuento PSOE (`node qa/barrido.mjs psoe`):** con el programa del 29N 26 → 42; con otro programa 22 → 12; justificaciones que citan 2023 12 → 8.
+
 ## 16 nov 2026 (tarde) · Revisión de partidos frente al BOE: 4 fichas corregidas (petición del titular)
 - **Revisión (solo lectura) de las 33 candidaturas con ficha frente a la proclamación del BOE (BOE-A-2026-23103, `src/candidaturas.json`):** las 30 activas coinciden provincia a provincia; 0 enlaces internos rotos en /partidos/; ningún 404 externo (≈80 no comprobables desde la nube). Informe: /mnt/project-files/test29n/revision-partidos/informe-16nov.md.
 - **Corregido (titular, decisión del 16 nov, «Sí, las 4 de texto ya»; solo texto, sin tocar posturas):** Ara MÉS: «Podemos va por separado» → «Podemos no presenta lista allí» (no tiene lista en Baleares); Podemos: añade que no se presenta en Baleares ni Melilla y su nombre en Ceuta, con `local: { ceuta: "Podemos (Paz, Casa y Trabajo)" }`; D21: «listas previstas» → «listas proclamadas»; EH Bildu: en Navarra concurre como EH Bildu-ERC.
@@ -43,7 +51,7 @@
 - **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.
 - **Cola (hueco a 16 nov):**
   1. PSOE, primera mitad (A01–G09): **HECHO (16 nov, tarde).** El titular subió el PDF (psoe.es bloquea la nube con Incapsula); copia en los archivos del proyecto: test29n/programas/PSOE_Programa_29N.pdf.
-  2. PSOE, segunda mitad (H01–L09). PDF en test29n/programas/PSOE_Programa_29N.pdf (no descargar de psoe.es).
+  2. PSOE, segunda mitad (H01–L09): **HECHO (16 nov, noche).** PDF en test29n/programas/PSOE_Programa_29N.pdf (no descargar de psoe.es).
   3. PNV (99; 43 págs.).
   4. CC-PC (93; 23 págs.).
   5. Compromís-Front Valencià (89; 64 págs., en valenciano).

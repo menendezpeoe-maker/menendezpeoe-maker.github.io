@@ -798,7 +798,7 @@ export const NOTES = {
     psoe: "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión."
   },
   K08: {
-    psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    psoe: "Su programa del 29N propone modernizar los regadíos sin aumentar el consumo total de agua (264), pero no plantea limitar los nuevos regadíos.",
     pp: "Solo impulsaría nuevos regadíos sostenibles según el agua disponible, sin oponerse a crearlos.",
     erc: "La ponencia defiende el regadío como clave para el territorio pese a la menor disponibilidad de agua."
   },
@@ -1789,7 +1789,7 @@ export const SOURCES = {
   },
   H01: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=65", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 65", "programa", "2026-11"],
-    psoe: ["https://www.diaridetarragona.com/espana/233697/sanchez-comunica-carta-otan-gasto-defensa-ve-razonable-5.html", "Diari de Tarragona (EFE), carta de Sánchez a Rutte, 19/06/2025", "declaracion", "2025-06-19"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=105", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 105", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=21", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 21", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=47", "Programa electoral de Vox de 2026 («Es sentido común»), p. 47", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=130", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 130", "programa", "2026-11"],
@@ -1812,7 +1812,7 @@ export const SOURCES = {
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=38", "Contrato electoral simplificado de SALF para las generales de 2026, p. 38", "programa", "2026-11"],
   },
   H02: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=109", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 109", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55", "programa", "2026-11"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=134", "Programa electoral de Vox de 2023, medida 283", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=145", "Programa electoral de Sumar de 2023, p. 145", "programa", "2023-07"],
@@ -1828,7 +1828,7 @@ export const SOURCES = {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63", "Programa electoral de Compromís-Front Valencià para el 29N, p. 63", "programa", "2026-11"],
   },
   H03: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=260", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=109", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 109", "programa", "2026-11"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=137", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=136", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 136", "programa", "2026-11"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=147", "Programa electoral de Sumar para el 23J de 2023, p. 147", "programa", "2023-07"],
@@ -1837,7 +1837,7 @@ export const SOURCES = {
   },
   H04: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=66", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 66", "programa", "2026-11"],
-    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2025-18831", "BOE, Real Decreto-ley 10/2025, de 23 de septiembre (embargo de armas a Israel)", "gobierno", "2025-09-24"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=105", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 105", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57", "programa", "2026-11"],
     vox: ["https://rtvc.es/congreso-aprueba-embargo-armas-israel-8-octubre-2025/", "Convalidación del embargo de armas a Israel (8-10-2025)", "parlamento", "2025-10-08"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=131", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 131", "programa", "2026-11"],
@@ -1897,7 +1897,7 @@ export const SOURCES = {
   },
   H07: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=88", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 88", "programa", "2026-11"],
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=261", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=107", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 107", "programa", "2026-11"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=39", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=16", "Programa electoral de Vox de 2026 («Es sentido común»), p. 16", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=133", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 133", "programa", "2026-11"],
@@ -1962,7 +1962,7 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=61", "Programa de PACMA para las generales del 29N de 2026, p. 61", "programa", "2026-11"],
   },
   I02: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=54", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 54", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=7", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 7", "programa", "2026-11"],
     pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     erc: ["https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf", "Defensa Catalunya! Programa electoral d'ERC a les eleccions generals de 2023", "programa", "2023-07"],
@@ -1975,7 +1975,7 @@ export const SOURCES = {
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=13", "Programa del Partido Humanista para las elecciones generales de 2026, p. 13", "programa", "2026-11"],
   },
   I03: {
-    psoe: ["https://www.boe.es/eli/es/rd/2025/10/07/905", "Real Decreto 905/2025 sobre creación de universidades (7 de octubre de 2025)", "gobierno", "2025-10-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=55", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 55", "programa", "2026-11"],
     fa: ["https://www.elobservador.com.uy/espana/actualidad/ataque-pedro-sanchez-las-universidades-privadas-nunez-feijoo-defiende-la-libertad-elegir-donde-formarse-n5992295", "Sumar pide frenar las universidades privadas por 10 años (El Observador)", "declaracion", "2025-04-01"],
     pp: ["https://www.eldiario.es/sociedad/pp-rechaza-decreto-anti-chiringuitos-universitarios-apoyan-rectores-sindicatos-estudiantes_1_12295535.html", "elDiario.es, rechazo del PP al decreto que endurece la creación de universidades", "prensa", "2025-05-13"],
     pod: ["https://www.redaccionmedica.com/politica/20260225/podemos-quiere-un-examen-publico-para-validar-titulos-de-medicina-privada/258769_0.html", "Redacción Médica: enmiendas de Podemos para endurecer los requisitos de las universidades privadas", "prensa", "2026-02-25"],
@@ -2071,7 +2071,7 @@ export const SOURCES = {
   },
   J01: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38", "programa", "2026-11"],
-    psoe: ["https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023-1.pdf", "Programa electoral del PSOE para el 23J de 2023 (copia publicada por The Objective)", "programa", "2023-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=49", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 49", "programa", "2026-11"],
     pp: ["https://www.redaccionmedica.com/politica/20260318/la-ley-de-gestion-publica-llegara-herida-al-congreso-por-el-modelo-catalan/260331_0.html", "Redacción Médica, posición del PP ante la Ley de Gestión Pública del SNS, 18/03/2026", "declaracion", "2026-03-18"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=37", "Programa electoral de Vox de 2026 («Es sentido común»), p. 37", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=26", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 26", "programa", "2026-11"],
@@ -2200,7 +2200,7 @@ export const SOURCES = {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23", "Programa electoral de Compromís-Front Valencià para el 29N, p. 23", "programa", "2026-11"],
   },
   K03: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=69", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 69", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=49", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 49", "programa", "2026-11"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=136", "Programa electoral de Vox de 2023, medida 291", "programa", "2023-07"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=60", "Programa electoral de Sumar de 2023, p. 60", "programa", "2023-07"],
@@ -2232,7 +2232,7 @@ export const SOURCES = {
   },
   K05: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61", "programa", "2026-11"],
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=70", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 70", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=77", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 77", "programa", "2026-11"],
     pod: ["https://www.vozpopuli.com/espana/programas-electorales-principales-partidos-espanoles-elecciones-europeas.html", "Vozpópuli, programas de las europeas de 2024 (Podemos), 02/06/2024", "prensa", "2024-06-02"],
     pp: ["https://elespanol.com/castilla-y-leon/economia/el-campo/20250305/cortes-rechazan-moratoria-anos-impida-instalar-macrogranjas-castilla-leon/928907702_0.html", "El Español (ICAL), votación en las Cortes de Castilla y León sobre una moratoria de macrogranjas", "parlamento", "2025-03-05"],
@@ -2260,7 +2260,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37", "programa", "2026-10"],
   },
   K08: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=63", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=68", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 68", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61", "Programa electoral de Vox de 2026 («Es sentido común»), p. 61", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=74", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 74", "programa", "2026-11"],
@@ -2293,7 +2293,7 @@ export const SOURCES = {
   },
   L02: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=44", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 44", "programa", "2026-11"],
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=50", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 50", "programa", "2026-11"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=48", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=52", "Programa electoral de Vox de 2026 («Es sentido común»), p. 52", "programa", "2026-11"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=150", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 150", "programa", "2026-11"],
@@ -2311,7 +2311,7 @@ export const SOURCES = {
     existe: ["https://www.bolsamania.com/noticias/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html", "Bolsamanía: votación final de la ley de eutanasia en el Congreso (18 mar 2021)", "prensa", "2021-03-18"],
   },
   L03: {
-    psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2023-5366", "BOE, Ley 4/2023 (Ley trans), artículos 43 y 44", "gobierno", "2023-03-01"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=97", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 97", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=35", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 35", "programa", "2026-11"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=173", "Programa electoral de Vox de 2023, medida 375", "programa", "2023-07"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=123", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 123", "programa", "2026-11"],
@@ -2329,7 +2329,7 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=80", "Programa de PACMA para las generales del 29N de 2026, p. 80", "programa", "2026-11"],
   },
   L04: {
-    psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=158", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=77", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 77", "programa", "2026-11"],
     pp: ["https://www.publico.es/politica/pp-abre-regular-vientres-alquiler-siempre-haya-tipo-pago.html", "Público, el PP se abre a regular la gestación subrogada altruista, 29/03/2023", "prensa", "2023-03-29"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=174", "Programa electoral de Vox de 2023", "programa", "2023-07"],
     pod: ["https://www.eldebate.com/sociedad/20230329/psoe-podemos-contra-vientres-alquiler-mientras-pp-no-define-posicion_104319.html", "El Debate, declaraciones de Irene Montero, 29/03/2023", "declaracion", "2023-03-29"],
@@ -2367,14 +2367,14 @@ export const SOURCES = {
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=55", "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 55", "programa", "2019-04"],
   },
   L07: {
-    psoe: ["https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/030226-sanchez-cumbre-gobiernos-dubai.aspx", "Anuncio de Pedro Sánchez en Dubái (3 de febrero de 2026)", "declaracion", "2026-02-03"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=95", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 95", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=45", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 45", "programa", "2026-11"],
     vox: ["https://theobjective.com/espana/politica/2026-02-03/abascal-redes-sociales-menores-censurar/", "Abascal rechaza prohibir las redes sociales a menores de 16 años: «Intentan censurar» (The Objective)", "declaracion", "2026-02-03"],
     fa: ["https://alicanteplaza.es/alicanteplaza/espana/la-ley-que-prohibiria-las-redes-sociales-a-menores-de-16-anos-avanza-esta-semana-en-el-congreso", "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)", "parlamento", "2026-09-26"],
     pod: ["https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html", "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»", "prensa", "2026-02-11"],
   },
   L08: {
-    psoe: ["https://www.boe.es/eli/es/lo/2024/08/01/2", "Ley Orgánica 2/2024 de representación paritaria (1 de agosto de 2024)", "gobierno", "2024-08-01"],
+    psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=86", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 86", "programa", "2026-11"],
     pp: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "The Objective, aprobación de la ley de paridad en el Congreso, 27/06/2024", "parlamento", "2024-06-27"],
     vox: ["https://theobjective.com/espana/politica/2024-06-27/congreso-aprueba-paridad-pp-vox/", "El Congreso aprueba la ley de paridad con el voto en contra de PP y Vox (The Objective)", "parlamento", "2024-06-27"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=37", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 37", "programa", "2026-11"],
@@ -3392,7 +3392,7 @@ export const JUSTIF = {
   H01: {
     fa: "Su programa del 29N propone reducir el gasto militar y rechazar el objetivo de la OTAN.",
     mj: "Su programa del 29N pide no aumentar el gasto militar, reorientar esas partidas a necesidades básicas y apoyar reducirlo un 2 % en todos los países.",
-    psoe: "Sánchez rechazó el objetivo de la OTAN y sostiene que un gasto en defensa del 2,1 % del PIB basta para cubrir las capacidades exigidas a España.",
+    psoe: "Su programa del 29N rechaza subir el gasto militar al 5 % del PIB porque pondría en riesgo el Estado del bienestar: «Somos aliados, no vasallos».",
     pnv: "Se abstuvo en la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
     bildu: "Su programa del 29N rechaza el aumento del gasto en defensa que exige la OTAN.",
     upn: "Votó a favor de la moción del PP para subir el gasto en defensa aprovechando la cláusula de escape fiscal de la UE.",
@@ -3412,7 +3412,7 @@ export const JUSTIF = {
     salf: "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares.",
   },
   H02: {
-    psoe: "Se define como europeísta y propone decidir la política exterior común por mayoría cualificada, sin veto nacional.",
+    psoe: "Su programa del 29N quiere hacer de la UE una auténtica unión política y fiscal, no solo un mercado único (compromiso 472).",
     pp: "Su programa de 2026 quiere una Unión Europea con más fuerza política, económica y militar y con compras conjuntas de defensa.",
     vox: "Vox rechaza cualquier tendencia federalista de la UE y pide devolver protagonismo a los Estados.",
     fa: "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior.",
@@ -3429,7 +3429,7 @@ export const JUSTIF = {
     comp: "Su programa del 29N propone reformar los tratados para dar más poder al Parlamento Europeo y un presupuesto de la UE de al menos el 2 % de la RNB.",
   },
   H03: {
-    psoe: "Su programa de 2023 propone pasar a mayoría cualificada las decisiones de política exterior y de seguridad de la UE.",
+    psoe: "Su programa del 29N propone superar los bloqueos de la unanimidad en la UE y reforzar el Parlamento Europeo (compromiso 473).",
     pp: "Estimación: el PP se define europeísta y pide más integración, aunque no se ha pronunciado sobre suprimir la unanimidad.",
     vox: "El programa de Vox exige recuperar la unanimidad en el Consejo de la UE para proteger la soberanía nacional.",
     fa: "Su programa del 29N propone abandonar la unanimidad en política exterior de la UE cuando estén en juego los derechos humanos.",
@@ -3440,7 +3440,7 @@ export const JUSTIF = {
   },
   H04: {
     mj: "Su programa del 29N propone prohibir la exportación de armas a países en guerra o que vulneren derechos humanos y suspender el Acuerdo de Asociación UE-Israel.",
-    psoe: "Su Gobierno aprobó por decreto ley el embargo de armas a Israel, que el Congreso convalidó en octubre de 2025.",
+    psoe: "Su programa del 29N reivindica el embargo de armas a Israel aprobado por su Gobierno y la condena de las violaciones del derecho humanitario en Gaza.",
     vox: "Vox votó en contra de convalidar el decreto de embargo de armas a Israel.",
     fa: "Su programa del 29N propone una ley de embargo integral, total y permanente de armas a Israel.",
     pod: "Votó a favor del embargo de armas a Israel, aunque lo calificó de «embargo fake» por quedarse corto.",
@@ -3499,7 +3499,7 @@ export const JUSTIF = {
   },
   H07: {
     mj: "Su programa del 29N propone cumplir el compromiso del 0,7 % de la renta nacional bruta para la ayuda oficial al desarrollo.",
-    psoe: "Su programa de 2023 promete aumentar la ayuda al desarrollo hasta el 0,7 % de la RNB en 2030.",
+    psoe: "Su programa del 29N se compromete a cerrar la brecha con el 0,7 % de la RNB en Ayuda Oficial al Desarrollo (compromiso 459).",
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
     vox: "Su programa de 2026 propone acabar con la cooperación al desarrollo con países que no colaboren en los flujos migratorios y con ayudas a ciertas ONG.",
     fa: "Su programa del 29N propone subir la ayuda al desarrollo del 0,27 % al 0,7 % de la renta nacional bruta.",
@@ -3562,7 +3562,7 @@ export const JUSTIF = {
     pacma: "Estimación: su programa del 29N pide revisar los criterios de concertación con la enseñanza privada para evitar la segregación.",
   },
   I02: {
-    psoe: "Propone que la universidad sea gratuita solo para quien apruebe las asignaturas a la primera, no para todos los estudiantes.",
+    psoe: "Su programa del 29N propone la matrícula gratuita del primer curso de grado en las universidades públicas, no de toda la carrera (compromiso 179).",
     pp: "Su programa de 2026 convierte la beca en un derecho por ley y da matrícula gratuita solo en FP de alta demanda de empleo.",
     fa: "Su programa del 29N promete gratuidad educativa desde los 0 años hasta la universidad.",
     pod: "Su programa europeo de 2024 defiende una educación pública gratuita desde el nacimiento hasta la universidad.",
@@ -3575,7 +3575,7 @@ export const JUSTIF = {
     ph: "Su programa del 29N propone suprimir todas las tasas de matrícula en las universidades públicas y en la FP de grado medio y superior.",
   },
   I03: {
-    psoe: "Su Gobierno endureció en 2025 los requisitos para crear o reconocer universidades, con informe vinculante de calidad.",
+    psoe: "Su programa del 29N quiere requisitos exigentes para todas las universidades, públicas y privadas, y evitar modelos orientados solo al beneficio (184).",
     fa: "Su portavoz Verónica Barbero defendió la moratoria de 10 años a nuevas universidades privadas que Sumar propuso en 2025.",
     pod: "Estimación: contraria a facilitar universidades privadas por su defensa de la universidad pública.",
     erc: "Su programa de 2026 endurece los requisitos para crear, reconocer y autorizar universidades.",
@@ -3675,6 +3675,7 @@ export const JUSTIF = {
     pod: "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo.",
   },
   J01: {
+    psoe: "Su programa del 29N propone limitar la privatización de la sanidad y fijar la gestión directa como modalidad preferente (compromiso 138).",
     fa: "Su programa del 29N propone la gestión pública directa y derogar la Ley 15/1997, que abrió la puerta a la gestión privada.",
     mj: "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
     bildu: "Su programa del 29N propone derogar la Ley 15/1997, que permite externalizar los servicios sanitarios.",
@@ -3806,7 +3807,7 @@ export const JUSTIF = {
     comp: "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
   },
   K03: {
-    psoe: "Quiere priorizar la agricultura familiar y profesional y las pequeñas y medianas explotaciones.",
+    psoe: "Su programa del 29N defiende una PAC que priorice las explotaciones profesionales, familiares y de pequeña y mediana dimensión (compromiso 267).",
     pp: "Su programa de 2026 mantiene la financiación de la PAC sin recortes y adelanta ayudas a los jóvenes que se incorporan.",
     vox: "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas.",
     fa: "Pide una PAC que priorice las explotaciones familiares y elimine los derechos históricos.",
@@ -3838,7 +3839,7 @@ export const JUSTIF = {
   },
   K05: {
     mj: "Su programa del 29N propone acabar con el hacinamiento en las granjas y apoyar a la ganadería extensiva.",
-    psoe: "Prioriza la ganadería extensiva sin proponer prohibir las granjas intensivas.",
+    psoe: "Su programa del 29N recompensa la ganadería extensiva y la agricultura regenerativa (271), sin proponer prohibir las granjas intensivas.",
     fa: "Su programa del 29N promete no autorizar nuevas macrogranjas.",
     pod: "Su programa europeo de 2024 pide una moratoria indefinida a la apertura de nuevas macroexplotaciones.",
     erc: "Estimación: ERC es crítica con la ganadería intensiva.",
@@ -3870,7 +3871,7 @@ export const JUSTIF = {
     fo: "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales.",
   },
   K08: {
-    psoe: "Su programa de 2023 destaca la inversión en nuevos regadíos, aunque defiende un regadío eficiente y sostenible.",
+    psoe: "Su programa del 29N propone modernizar los regadíos sin aumentar el consumo total de agua (264), pero no plantea limitar los nuevos regadíos.",
     pp: "Su programa de 2026 definirá nuevos regadíos y renovará los existentes para reducir su consumo de agua y de energía.",
     vox: "Su programa de 2026 propone impulsar y modernizar los regadíos dentro del Plan Nacional del Agua.",
     fa: "Su programa del 29N promete detener el crecimiento de las demandas de regadío.",
@@ -3899,7 +3900,7 @@ export const JUSTIF = {
   },
   L02: {
     mj: "Su programa del 29N pide que quien solicite la eutanasia acceda a cuidados paliativos y apoyos «sin retrasar ni condicionar sus derechos»: no propone derogar la ley.",
-    psoe: "Aprobó la Ley de eutanasia de 2021 y la defiende como un nuevo derecho.",
+    psoe: "Su programa del 29N se compromete a garantizar el ejercicio efectivo del derecho a la eutanasia según la ley vigente (compromiso 147).",
     pp: "El PP votó contra la ley de eutanasia, pero en 2023 promete revisarla, priorizando los cuidados paliativos, no derogarla.",
     vox: "Su programa de 2026 defiende la vida «hasta la muerte natural», pide acabar con la «cultura de la muerte» y potenciar los cuidados paliativos.",
     fa: "Su programa del 29N defiende el derecho a la eutanasia y al suicidio asistido.",
@@ -3917,7 +3918,7 @@ export const JUSTIF = {
     existe: "Estimación: su diputado se abstuvo en la votación final de la ley de eutanasia en el Congreso (marzo de 2021).",
   },
   L03: {
-    psoe: "Su Gobierno aprobó la Ley trans de 2023, que permite el cambio registral desde los 16 años sin informes médicos.",
+    psoe: "Su programa del 29N quiere que la Ley 4/2023 (Ley trans) sea el suelo común de derechos LGTBI en toda España (compromiso 412).",
     pp: "Su programa de 2026 elimina la libre autodeterminación registral del sexo de la Ley Trans.",
     vox: "Vox propone derogar la ley trans, que permite el cambio registral sin informes médicos.",
     fa: "Su programa del 29N propone desplegar de forma efectiva la Ley Trans.",
@@ -3935,7 +3936,7 @@ export const JUSTIF = {
     pacma: "Estimación: su programa del 29N suscribe las demandas del colectivo LGTBI+ y el apoyo a las personas trans; no detalla el cambio registral.",
   },
   L04: {
-    psoe: "Su programa de 2023 rechaza los «vientres de alquiler» y niega que ser padre o madre sea un derecho.",
+    psoe: "Su programa del 29N considera la gestación subrogada una forma de violencia reproductiva y defiende haber reforzado las medidas contra ella.",
     pp: "Se abrió a regular la gestación subrogada solo en su forma altruista, sin ningún pago a la gestante.",
     vox: "El programa de Vox rechaza la gestación subrogada.",
     pod: "Irene Montero recordó que la ley reconoce la gestación subrogada como una forma de violencia contra las mujeres.",
@@ -3977,7 +3978,7 @@ export const JUSTIF = {
     comp: "Incluye entre los derechos digitales básicos el derecho al olvido, a la privacidad y al anonimato, lo que contradice poner fin al anonimato.",
   },
   L07: {
-    psoe: "Sánchez anunció en 2026 que España prohibirá el acceso a las redes sociales a los menores de 16 años.",
+    psoe: "Su programa del 29N fija en 16 años la edad mínima para usar redes sociales, con verificación obligatoria de la edad (compromiso 399).",
     pp: "Su programa de 2026 prohíbe las cuentas en redes sociales a menores de 14 años y exige autorización de los padres hasta los 16.",
     vox: "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
     fa: "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia.",
@@ -3985,7 +3986,7 @@ export const JUSTIF = {
     erc: "Estimación: posición intermedia sin propuesta conocida."
   },
   L08: {
-    psoe: "Su Gobierno aprobó en 2024 listas cremallera y un mínimo del 40 % de cada sexo en los consejos de las cotizadas.",
+    psoe: "Su programa del 29N propone reforzar el seguimiento y cumplimiento de la Ley de Paridad (compromiso 364).",
     pp: "Votó contra la ley de paridad por un cambio sobre el veto del Senado, sin rechazar las cuotas en sí.",
     vox: "Vox votó contra la ley de paridad, que fija listas cremallera y un mínimo del 40 % de cada sexo en altos cargos de empresas.",
     fa: "Su programa del 29N propone consolidar la paridad en las listas con el formato cremallera como garantía mínima.",
