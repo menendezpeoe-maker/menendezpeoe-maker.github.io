@@ -2577,7 +2577,7 @@ function renderMethod() {
               <li class="ev-e"><b>Estimada</b><span class="ev-w" aria-hidden="true"><i style="--w:60%"></i></span><span class="ev-p">Pesa 0,6</span><span>Se deduce de la línea general del partido o de su posición en temas cercanos. Se marca siempre como estimada.</span></li>
               <li class="ev-u"><b>Sin postura conocida</b><span class="ev-w" aria-hidden="true"><i style="--w:0%"></i></span><span class="ev-p">No cuenta</span><span>No se inventa. Esa pregunta no cuenta para ese partido.</span></li>
             </ul>
-            <p>Las coaliciones nuevas (Frente Amplio, Democracia 21, Unidad del Pueblo Canario…) heredan las posturas de sus integrantes, por lo que tienen más posturas estimadas. Puedes revisar todas en <button type="button" class="link-btn" data-go="explorer" style="padding:0">Posturas de los partidos</button>.</p>
+            <p>Las coaliciones nuevas (Frente Amplio, Democracia para el Siglo 21, Unidad del Pueblo Canario…) heredan las posturas de sus integrantes, por lo que tienen más posturas estimadas. Puedes revisar todas en <button type="button" class="link-btn" data-go="explorer" style="padding:0">Posturas de los partidos</button>.</p>
             <p>El estado de los datos de cada candidatura está en <a href="#m-datos">Estado de los datos</a>.</p>
           </section>
           <section class="msec" id="m-datos"><h2 class="h2">Estado de los datos</h2>

@@ -196,7 +196,8 @@
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
-    "cab": "Liher Calleja Montero"
+    "cab": "Liher Calleja Montero",
+    "pid": "pcte"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",
@@ -446,7 +447,8 @@
    },
    {
     "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
-    "cab": "Maria Rodríguez-Farge Hijano"
+    "cab": "Maria Rodríguez-Farge Hijano",
+    "pid": "pcte"
    },
    {
     "c": "VOX (VOX)",
@@ -491,7 +493,8 @@
    },
    {
     "c": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
-    "cab": "Sergio Saenz Álvarez"
+    "cab": "Sergio Saenz Álvarez",
+    "pid": "pcte"
    },
    {
     "c": "VOX (VOX)",
@@ -883,7 +886,8 @@
    },
    {
     "c": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
-    "cab": "Daniel López García"
+    "cab": "Daniel López García",
+    "pid": "pcte"
    },
    {
     "c": "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
@@ -1005,7 +1009,8 @@
    },
    {
     "c": "EUSKADIKO LANGILEEN ALDERDI KOMUNISTA/PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI (ELAK/PCTE)",
-    "cab": "Eneko Lanz Llamas"
+    "cab": "Eneko Lanz Llamas",
+    "pid": "pcte"
    },
    {
     "c": "Frente Amplio (FA)",
@@ -1041,7 +1046,8 @@
    },
    {
     "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
-    "cab": "Tomás Ferreira Crubellati"
+    "cab": "Tomás Ferreira Crubellati",
+    "pid": "pcte"
    },
    {
     "c": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
@@ -1424,7 +1430,8 @@
    },
    {
     "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
-    "cab": "Guillem Cruz Lezcano"
+    "cab": "Guillem Cruz Lezcano",
+    "pid": "pcte"
    },
    {
     "c": "VOX (VOX)",
@@ -1741,7 +1748,8 @@
    },
    {
     "c": "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
-    "cab": "Brais Coello Vences"
+    "cab": "Brais Coello Vences",
+    "pid": "pcte"
    },
    {
     "c": "PODEMOS (PODEMOS)",
@@ -1917,7 +1925,8 @@
    },
    {
     "c": "Partido Comunista dos Traballadores da Galiza (PCTG)",
-    "cab": "Miguel Riaño Roa"
+    "cab": "Miguel Riaño Roa",
+    "pid": "pcte"
    },
    {
     "c": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
@@ -2299,7 +2308,8 @@
    },
    {
     "c": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
-    "cab": "Andreu Tomàs Martínez de Villa"
+    "cab": "Andreu Tomàs Martínez de Villa",
+    "pid": "pcte"
    },
    {
     "c": "SE ACABÓ LA FIESTA (SALF)",

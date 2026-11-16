@@ -51,7 +51,7 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const ext = await page.getAttribute("#pg-all a.btn:has-text('Abrir programa oficial') >> nth=0", "target"), rev = await page.getAttribute("#pg-all a.btn:has-text('Ver posturas revisadas') >> nth=0", "href");
   ok(ext === "_blank" && /^\/partidos\/[a-z0-9]+\/#h-pos$/.test(rev), `el programa se abre aparte y las posturas van a la ficha (${rev})`);
   const vis = () => page.evaluate(() => [...document.querySelectorAll("#pg-all > li")].filter((l) => !l.hidden && l.offsetParent).map((l) => l.querySelector("b").textContent));
-  for (const [t, exp] of [["psc", "PSOE"], ["pnv", "EAJ-PNV"], ["bildu", "EH Bildu"], ["teruel existe", "Coalición Existe"], ["Comuns", "Frente Amplio"], ["pp", "Partido Popular"]]) {
+  for (const [t, exp] of [["psc", "PSOE"], ["pnv", "EAJ-PNV"], ["bildu", "EH Bildu"], ["teruel existe", "Teruel Existe"], ["Comuns", "Frente Amplio"], ["pp", "Partido Popular"]]) {
     await page.fill("#pg-q", t); const v = await vis(); ok(v.includes(exp), `buscar «${t}» encuentra ${exp} (${v.length} filas)`);
   }
   await page.fill("#pg-q", "zzzz"); ok((await vis()).length === 0 && await page.isVisible("#pg-none"), "sin coincidencias: aviso visible");
@@ -59,12 +59,12 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   await page.selectOption("#pg-prov", "bizkaia"); const vb = await vis();
   ok(vb.includes("EH Bildu") && vb.includes("EAJ-PNV") && !vb.includes("Esquerra Republicana") && !vb.includes("Se Acabó La Fiesta") && /^En Bizkaia: \d+ candidaturas, \d+ con programa publicado\.$/.test(await page.textContent("#pg-n")), `Bizkaia: ${vb.length} candidaturas («${await page.textContent("#pg-n")}»)`);
   await page.selectOption("#pg-prov", "soria"); const vs = await vis();
-  ok(vs.includes("Soria ¡Ya!") && !vs.includes("Coalición Existe") && !vs.includes("EH Bildu"), `Soria: ${vs.length} candidaturas`);
+  ok(vs.includes("Soria ¡Ya!") && !vs.includes("Teruel Existe") && !vs.includes("EH Bildu"), `Soria: ${vs.length} candidaturas`);
   await page.selectOption("#pg-prov", "navarra"); const vn = await vis();
   ok(vn.includes("UPN – Partido Popular") && !vn.includes("Partido Popular") && vn.includes("Geroa Bai"), "Navarra: UPN-PP y no PP");
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/programas-${w}.png` });
   await page.goto(PROG + "?circ=madrid"); await page.waitForSelector("#pg-tools:not([hidden])");
-  ok(await page.inputValue("#pg-prov") === "madrid" && (await vis()).includes("Democracia 21"), "?circ=madrid abre ya filtrado");
+  ok(await page.inputValue("#pg-prov") === "madrid" && (await vis()).includes("Democracia para el Siglo 21"), "?circ=madrid abre ya filtrado");
   // «Volver arriba» en una página estática larga: oculto arriba, visible al bajar, sin tapar el menú, y vuelve al principio
   await page.goto(new URL("partidos/pp/", SP).href); await page.waitForTimeout(150);
   ok(!(await page.locator("a.to-top.on").count()), "«Volver arriba» oculto al cargar");
