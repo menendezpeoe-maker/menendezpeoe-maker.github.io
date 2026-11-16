@@ -28,6 +28,7 @@ const priv = (process.env.PRIVATE_TERMS || "").split(",").filter(Boolean);
 ok(!priv.some((t) => (s.text + c.text).toLowerCase().includes(t.toLowerCase())), "ningún término privado en /sobre/ ni en /correcciones/");
 const m = await get("metodologia/");
 ok(m.status === 200 && h1(m.text) && m.text.includes(`<b>${meth.imitacion.primero} de ${meth.imitacion.total}</b>`) && m.text.includes(`${meth.aleatorios.n} perfiles`), "/metodologia/ muestra las cifras generadas por qa/metodologia.mjs");
+ok(/id="como-calculamos"><b>Cómo calculamos las cifras/.test(m.text) && m.text.includes('href="https://github.com/menendezpeoe-maker/menendezpeoe-maker.github.io/blob/fuente/qa/metodologia.mjs"') && m.text.includes('href="/datos/">Descargar los datos abiertos') && !/Las cifras se generan con <code>/.test(m.text), "/metodologia/ explica el método en lenguaje llano y enlaza el programa y los datos abiertos");
 const home = await get(""), sm = await get("sitemap.xml");
 ok(/href="sobre\/"/.test(home.text) && ["sobre/", "metodologia/"].every((p) => sm.text.includes(p + "</loc>")) && !sm.text.includes("correcciones/") && !/href="\/?correcciones\/"/.test(home.text), "el pie enlaza /sobre/ y ambas están en el sitemap");
 if (fails.length) { console.log(`\n${fails.length} FALLOS`); process.exit(1); }

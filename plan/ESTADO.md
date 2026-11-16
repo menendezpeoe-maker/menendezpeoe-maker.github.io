@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 16 nov 2026 (mañana) · /metodologia/: nota de cómo se calculan las cifras, en lenguaje llano (petición del titular)
+- La nota final («Las cifras se generan con `qa/metodologia.mjs`, en el repositorio público…») no estaba oculta; se reformula como «**Cómo calculamos las cifras: método y datos abiertos.**» con dos enlaces aparte: «Ver el programa del cálculo (metodologia.mjs)» (GitHub, rama `fuente`) y «Descargar los datos abiertos» (/datos/). Ancla `#como-calculamos`.
+- Comprobado: el repositorio es público, y el script en GitHub, /datos/ y /metodologia/ responden 200. Sin datos privados.
+- Prueba nueva en `qa/confianza.mjs` (texto llano y ambos enlaces). Revisado a 1280 y 390 px sin desbordes.
+
 ## 16 nov 2026 · Cola «Revisar posturas con el programa del 29N» (petición del titular: máximo de posturas revisadas en todos los partidos)
 - **Criterio:** hueco = 107 − posturas que ya citan el programa del 29N (`node qa/barrido.mjs`, apartado 2), ponderado por el tamaño del programa (los de 1–14 páginas ya están casi agotados). Dos pasadas al día (14:23 y 21:17, hora de Madrid) del 16 al 21 nov. Cada pasada toma el primer bloque sin «HECHO», lo trabaja hasta 2 horas y lo marca aquí («HECHO» o «a medias: sigue en Qxx»).
 - **Regla de cita:** si el programa del 29N tiene un pasaje directo sobre la pregunta, la postura pasa a citarlo (fuente preferente, también cuando antes citaba una votación o el BOE); si solo indica la dirección, queda estimada (~) con el enlace; si no dice nada, se deja como está y se anota como «revisada sin pasaje». Regla 8 para los partidos protegidos. Nada inventado.
