@@ -261,14 +261,14 @@
     "huelva": "Frente Amplio Andaluz",
     "sevilla": "Frente Amplio Andaluz"
    },
-   "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, heredera del espacio de Sumar, esta vez sin Podemos. Su programa parte del de Sumar en 2023: vivienda, derechos laborales, fiscalidad progresiva y transición ecológica.",
+   "desc": "Coalición de IU, Movimiento Sumar, Más Madrid, Comuns y otros, heredera del espacio de Sumar, esta vez sin Podemos. Su programa del 29N pone la vivienda en el centro (1,5 millones de viviendas públicas y topes al alquiler) junto a derechos laborales, fiscalidad progresiva y transición ecológica.",
    "props": [
     {
-     "t": "Jornada de 37,5 horas y avanzar hacia la de 32.",
+     "t": "Jornada de 37,5 horas en 2026 y avanzar hacia la de 32.",
      "q": "A01"
     },
     {
-     "t": "Congelar el precio del alquiler y prorrogar tres años los contratos vigentes.",
+     "t": "Limitar por ley el alquiler en las zonas tensionadas, con un techo del 25 % de la renta del barrio.",
      "q": "B01"
     },
     {
@@ -292,8 +292,8 @@
      "q": "H04"
     },
     {
-     "t": "Electrificar el parque móvil para que en 2040 no circulen coches de combustión.",
-     "q": "G03"
+     "t": "Parque público de 1,5 millones de viviendas en 12 años.",
+     "q": "B08"
     },
     {
      "t": "Rechazar el aumento del gasto militar.",
@@ -1431,6 +1431,16 @@
   }
  ],
  "programas": {
+  "fa": {
+   "url": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+   "titulo": "Programa electoral del Frente Amplio para las elecciones generales del 29N de 2026",
+   "fecha": "2026-11-16"
+  },
+  "bildu": {
+   "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+   "titulo": "Programa de EH Bildu para las generales del 29N de 2026: «Posible egin. Garantía y derechos» (versión en castellano)",
+   "fecha": "2026-11-16"
+  },
   "psoe": {
    "url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
    "titulo": "Programa electoral del PSOE para las generales del 29N de 2026: «La fuerza de seguir avanzando»",
