@@ -5391,15 +5391,15 @@
    "opcion_b": "",
    "partido_id": "psoe",
    "partido": "PSOE",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
-   "fuente_url": "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
-   "fuente_titulo": "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-03-18"
+   "justificacion": "Su programa del 29N promete seguir combatiendo la ocupación ilegal con juicios rápidos por allanamiento y usurpación y más medios en los juzgados de guardia (438).",
+   "fuente_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=101",
+   "fuente_titulo": "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 101",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B03",

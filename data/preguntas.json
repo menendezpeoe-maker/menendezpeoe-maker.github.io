@@ -2087,7 +2087,7 @@
    "dir": 1,
    "lr": 1,
    "pos": {
-    "psoe": 3,
+    "psoe": 4,
     "pp": 5,
     "vox": 5,
     "fa": 1,
@@ -2127,10 +2127,10 @@
    ],
    "src": {
     "psoe": [
-     "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
-     "Deia (Europa Press), toma en consideración de la ley de Junts sobre ocupación, 18/03/2025",
-     "parlamento",
-     "2025-03-18"
+     "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=101",
+     "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 101",
+     "programa",
+     "2026-11"
     ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43",
@@ -2236,7 +2236,7 @@
     ]
    },
    "why": {
-    "psoe": "Votó tramitar el desalojo en 48 horas propuesto por Junts, pero sostiene que «los datos no corroboran» la alarma y anunció enmiendas.",
+    "psoe": "Su programa del 29N promete seguir combatiendo la ocupación ilegal con juicios rápidos por allanamiento y usurpación y más medios en los juzgados de guardia (438).",
     "pp": "Su programa de 2026 promete una ley para que el propietario recupere la vivienda ocupada en 48 horas desde el primer día, por orden judicial.",
     "vox": "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
