@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "dims": [
   {
    "id": "eco",
@@ -720,7 +720,7 @@
     "d21": 5,
     "erc": 2,
     "junts": 4,
-    "pnv": 4,
+    "pnv": 2,
     "bildu": 1,
     "upn": 4,
     "gbai": 3,
@@ -819,6 +819,12 @@
      "Programa electoral del BNG de 2026, p. 21",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=21",
+     "Programa electoral de EAJ-PNV de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -833,7 +839,8 @@
     "comp": "Propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
     "cha": "Pide derogar el Pacto de estabilidad y revisar los objetivos de déficit y deuda pública, en lugar de priorizar su reducción.",
     "upc": "Pide que las reglas fiscales no impongan reducir deuda y déficit a corto plazo y rechaza los límites del 3 % y el 60 %, sin fundamento económico.",
-    "bng": "Estimación: su programa del 29N pide elevar el gasto en protección social, como mínimo, al gasto medio de la UE; no trata la deuda."
+    "bng": "Estimación: su programa del 29N pide elevar el gasto en protección social, como mínimo, al gasto medio de la UE; no trata la deuda.",
+    "pnv": "Estimación: su programa del 29N pide revisar la estabilidad presupuestaria para dar más margen de inversión y «reglas de gasto más flexibles»."
    }
   },
   {
@@ -1960,10 +1967,10 @@
      "2026-04-28"
     ],
     "pnv": [
-     "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
-     "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
-     "parlamento",
-     "2026-10-02"
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+     "Programa electoral de EAJ-PNV de 2026, p. 7",
+     "programa",
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
@@ -2060,7 +2067,7 @@
     "salf": "Su contrato del 29N apuesta por construir: licencia automática en 15 días y vivienda industrializada en suelo público.",
     "erc": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
     "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
-    "pnv": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
+    "pnv": "Su programa del 29N combina más oferta (agilizar trámites urbanísticos, movilizar vacías) con regular el alquiler de temporada y turístico: «más oferta y reglas claras».",
     "bildu": "Su programa del 29N propone intervenir el mercado, regular los precios y prohibir la compra especulativa.",
     "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
     "ccpc": "Su programa de 2026 plantea un fondo estatal de ocho años para vivienda pública y asequible y agilizar la vivienda protegida.",
@@ -2740,6 +2747,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 5",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+     "Programa electoral de EAJ-PNV de 2026, p. 7",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2753,7 +2766,8 @@
     "ccpc": "Su programa de 2026 propone incentivos fiscales para que pequeños propietarios incorporen viviendas vacías a programas de alquiler asequible.",
     "adel": "Su programa del 29N propone un impuesto a la vivienda vacía de los grandes tenedores.",
     "d21": "Estimación: su programa del 29N quiere movilizar la vivienda vacía con bonificaciones en IRPF e IBI y garantía de cobro, no con recargos.",
-    "comp": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI."
+    "comp": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
+    "pnv": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos."
    }
   },
   {
@@ -3172,7 +3186,7 @@
     "d21": 4,
     "erc": 3,
     "junts": 4,
-    "pnv": 3,
+    "pnv": 4,
     "bildu": 2,
     "upn": 4,
     "gbai": 3,
@@ -3253,6 +3267,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 70",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+     "Programa electoral de EAJ-PNV de 2026, p. 8",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3264,7 +3284,8 @@
     "erc": "Estimación: ERC prioriza el alquiler protegido sobre los avales a la compra.",
     "salf": "Su contrato de 2026 propone un aval público del 20 % de la entrada para menores de 40 años en su primera vivienda.",
     "soria": "Estimación: su programa del 29N pide «incentivos para adquisición de primera vivienda»; no concreta avales públicos.",
-    "pacma": "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos."
+    "pacma": "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos.",
+    "pnv": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales."
    }
   },
   {
@@ -3607,10 +3628,10 @@
      "2023-07"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=48",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 48",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=10",
+     "Programa electoral de EAJ-PNV de 2026, p. 10",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=11",
@@ -3698,7 +3719,7 @@
     "fa": "Su programa del 29N rechaza la recentralización y pide el pleno respeto a las competencias autonómicas.",
     "erc": "Su programa de 2026 exige las competencias exclusivas en educación y la plena soberanía de Cataluña sobre su sistema educativo.",
     "junts": "El programa defiende el modelo educativo propio de Cataluña y pide traspasar a la Generalitat competencias y fondos en materia educativa.",
-    "pnv": "El programa pide respetar el reparto competencial en educación y seguir desarrollando un modelo educativo propio en Euskadi.",
+    "pnv": "Su programa del 29N defiende preservar las competencias educativas de Euskadi, «evitando interferencias estatales».",
     "bildu": "Su programa del 29N defiende un sistema educativo propio para Euskal Herria.",
     "bng": "Su programa de 2026 pide la transferencia plena de las competencias de enseñanza a Galicia y una ley gallega de educación.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, defendía un sistema educativo común y reforzar la Alta Inspección del Estado.",
@@ -4413,10 +4434,10 @@
      "2024-08-07"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=6",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=38",
+     "Programa electoral de EAJ-PNV de 2026, p. 38",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=24",
@@ -4454,7 +4475,7 @@
     "vox": "Vox votó en el Congreso contra tramitar sin cambios el Concierto, el Convenio navarro y el cálculo del Cupo 2022-2026.",
     "fa": "Sus partidos están divididos: su portavoz económico criticó el cupo vasco, pero esa posición es minoritaria en Movimiento Sumar.",
     "pod": "Estimación: sin postura reciente publicada sobre el concierto y el convenio.",
-    "pnv": "Se compromete a defender el Concierto Económico frente a cualquier involución del autogobierno.",
+    "pnv": "Su programa del 29N defiende el Concierto Económico «frente a cualquier ataque» y pide ampliar las capacidades financiero-fiscales vascas (p. 39).",
     "bildu": "Su programa del 29N defiende ampliar el Concierto y el Convenio y un nuevo cálculo del Cupo que no perjudique a la sociedad vasca.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
     "pp": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio.",
@@ -5688,10 +5709,10 @@
      "2026-02-12"
     ],
     "pnv": [
-     "https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html",
-     "El Debate, votación del 12 de febrero de 2026",
-     "parlamento",
-     "2026-02-12"
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=24",
+     "Programa electoral de EAJ-PNV de 2026, p. 24",
+     "programa",
+     "2026-11"
     ],
     "bildu": [
      "https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html",
@@ -5725,7 +5746,7 @@
     ]
    },
    "why": {
-    "pnv": "Votó a favor de la ley de multirreincidencia de Junts.",
+    "pnv": "Su programa del 29N pide reformas legales para dar una respuesta judicial «ágil, eficaz y proporcionada» a la multirreincidencia.",
     "bildu": "Votó en contra de la ley de multirreincidencia y avisó de que no servirá para frenar los hurtos.",
     "upn": "Votó a favor de la reforma penal contra la multirreincidencia impulsada por Junts, aprobada por el Congreso en febrero de 2026.",
     "falange": "Su programa del 29N propone incrementar las penas por reincidencia.",
@@ -5811,10 +5832,10 @@
      "2023-07"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+     "Programa electoral de EAJ-PNV de 2026, p. 28",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion165/20260317/Votacion002/VOT_20260317205749.json",
@@ -5884,7 +5905,7 @@
     "pod": "Unidas Podemos votó contra ampliar la prisión permanente revisable, fiel a su rechazo tradicional a esta pena.",
     "erc": "El programa propone derogar la prisión permanente revisable.",
     "junts": "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
-    "pnv": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
+    "pnv": "Su programa del 29N rechaza la prisión permanente revisable y defiende un sistema penitenciario orientado a la reinserción.",
     "bildu": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
     "bng": "Su programa de 2026 deroga la prisión permanente revisable.",
@@ -5993,10 +6014,10 @@
      "2023-07"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=7",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=27",
+     "Programa electoral de EAJ-PNV de 2026, p. 27",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=22",
@@ -6062,7 +6083,7 @@
     "pod": "Exige una derogación ambiciosa de la ley mordaza, incluidas las devoluciones en caliente y las pelotas de goma.",
     "erc": "Su programa de 2026 deroga la llamada ley mordaza (Ley Orgánica 4/2015 de seguridad ciudadana).",
     "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
-    "pnv": "Se opone a la ley mordaza y promovió su reforma.",
+    "pnv": "Su programa del 29N propone reformar la «ley mordaza» eliminando sus restricciones desproporcionadas a derechos y libertades, no derogarla entera.",
     "bildu": "Su programa del 29N promete volver a presentar la ley para acabar con la «ley mordaza».",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
     "bng": "Su programa de 2026 deroga íntegramente la ley mordaza.",
@@ -6349,10 +6370,10 @@
      "2026-11"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=27",
+     "Programa electoral de EAJ-PNV de 2026, p. 27",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=22",
@@ -6386,7 +6407,7 @@
     "fa": "Su programa del 29N propone suprimir del Código Penal los delitos contra la Corona y las injurias a las instituciones.",
     "pod": "El Congreso admitió a trámite la ley de Unidas Podemos para derogar los delitos de injurias a la Corona.",
     "erc": "Su programa de 2026 suprime los delitos de ofensa a los sentimientos religiosos y de injurias a la Corona.",
-    "pnv": "Critica que el Código Penal castigue las opiniones contra la Corona y las instituciones del Estado.",
+    "pnv": "Su programa del 29N propone reformar los delitos de opinión sobre la Corona, las instituciones y los símbolos del Estado según los estándares europeos.",
     "bildu": "Su programa del 29N propone despenalizar las críticas a la Corona y a las instituciones del Estado.",
     "bng": "Su programa de 2026 plantea suprimir delitos de opinión como las injurias a la Corona.",
     "junts": "Junts votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
@@ -6594,10 +6615,10 @@
      "2026-11"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 8",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26",
+     "Programa electoral de EAJ-PNV de 2026, p. 26",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=19",
@@ -6680,7 +6701,7 @@
     "fa": "Su programa del 29N mantiene el enfoque de violencia machista y promete erradicarla con redes de prevención y acogida.",
     "pod": "Irene Montero criticó a quienes sostienen que la violencia no tiene género, frente a la ley específica.",
     "erc": "Su programa de 2026 reforma la Ley Orgánica 1/2004 para reforzar la respuesta a todas las formas de violencia machista.",
-    "pnv": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
+    "pnv": "Su programa del 29N exige cumplir íntegramente el Pacto de Estado contra la Violencia de Género renovado en 2025 y reforzar los juzgados de violencia sobre la mujer.",
     "bildu": "Su programa del 29N mantiene el enfoque de violencia machista y propone reforzar la protección de sus víctimas.",
     "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
     "ccpc": "Firmó con el PSOE el compromiso de reforzar la lucha contra la violencia de género y el Pacto de Estado.",
@@ -6945,10 +6966,10 @@
      "2026-04-17"
     ],
     "pnv": [
-     "https://es.ara.cat/sociedad/inmigracion/congreso-debate-regularizacion-500-000-extranjeros-viven-espana-papeles_1_4992457.html",
-     "Ara, El Congreso debate la regularización de 500.000 extranjeros, 09-04-2024",
-     "parlamento",
-     "2024-04-09"
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
+     "Programa electoral de EAJ-PNV de 2026, p. 25",
+     "programa",
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=20",
@@ -7027,7 +7048,7 @@
     "fa": "Su programa del 29N propone culminar la regularización extraordinaria de 2026 y crear un procedimiento estable de regularización.",
     "mj": "Su programa del 29N propone vías accesibles y permanentes de regularización de las personas migrantes y prevenir la irregularidad sobrevenida.",
     "salf": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
-    "pnv": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
+    "pnv": "Su programa del 29N propone avanzar en los procesos de regularización previstos en la ley para quienes cumplen los requisitos.",
     "bildu": "Su programa del 29N pide una regularización efectiva y estable y una nueva Ley de Extranjería.",
     "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
     "bng": "Su programa de 2026 propone promover la regularización administrativa de los inmigrantes para acabar con su explotación.",
@@ -7545,10 +7566,10 @@
      "2026-11"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=30",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
+     "Programa electoral de EAJ-PNV de 2026, p. 25",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=63",
@@ -7589,7 +7610,7 @@
     "vox": "Su programa de 2026 propone «Ni uno más»: España no puede acoger a más inmigrantes y se suprime la figura del arraigo.",
     "fa": "Su programa del 29N propone vías legales y seguras para la migración laboral y una reforma integral de la Ley de Extranjería.",
     "erc": "Su programa de 2026 propone vías legales y seguras para migrar y una política migratoria centrada en los derechos humanos.",
-    "pnv": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
+    "pnv": "Su programa del 29N propone vías legales, seguras y ordenadas de migración y la contratación en origen según las necesidades del mercado laboral.",
     "pod": "La medida 143 propone vías legales de entrada y nuevas modalidades de visado, como el de búsqueda de empleo, y flexibilizar el arraigo.",
     "falange": "Su programa del 29N defiende fronteras cerradas y militarizadas, salir de Schengen e implantar un visado.",
     "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada.",
@@ -8121,6 +8142,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 79",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35",
+     "Programa electoral de EAJ-PNV de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8137,7 +8164,8 @@
     "adel": "Su programa del 29N propone una ley estatal de cuidados con derecho universal y el Estado pagando la mitad de la dependencia.",
     "upc": "Su manifiesto del 29N exige un sistema público de cuidados y de atención a la dependencia, con una reforma fiscal progresiva.",
     "existe": "Estimación: su programa de 2023 promete mejorar los servicios de atención a la dependencia; no habla de subir impuestos.",
-    "pacma": "Estimación: su programa del 29N pide más plazas en residencias públicas para mayores y enfermos crónicos; no habla de subir impuestos."
+    "pacma": "Estimación: su programa del 29N pide más plazas en residencias públicas para mayores y enfermos crónicos; no habla de subir impuestos.",
+    "pnv": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos."
    }
   },
   {
@@ -8654,7 +8682,7 @@
     "d21": 3,
     "erc": 4,
     "junts": 3,
-    "pnv": 3,
+    "pnv": 4,
     "bildu": 4,
     "upn": 2,
     "gbai": 4,
@@ -8743,6 +8771,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=20",
+     "Programa electoral de EAJ-PNV de 2026, p. 20",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8753,7 +8787,8 @@
     "fa": "Defiende electrificar el parque móvil para que en 2040 no circulen coches de combustión.",
     "erc": "Su programa de 2026 amplía el Programa Auto+ para electrificar el parque de vehículos y facilita los puntos de recarga.",
     "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035.",
-    "salf": "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035."
+    "salf": "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035.",
+    "pnv": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035."
    }
   },
   {
@@ -9085,7 +9120,6 @@
     "pacma",
     "d21",
     "junts",
-    "pnv",
     "upn",
     "gbai",
     "bng",
@@ -9190,6 +9224,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 36",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=19",
+     "Programa electoral de EAJ-PNV de 2026, p. 19",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9207,7 +9247,8 @@
     "bng": "Estimación: su programa del 29N pide implantar «sin máis demoras» cercanías en las ciudades gallegas y, a la vez, acabar las obras pendientes del AVE (p. 61).",
     "existe": "Estimación: su programa del 29N pide electrificar la línea convencional y más regionales, y a la vez un corredor de doble vía de altas prestaciones.",
     "comp": "Estimación: su programa del 29N quiere «racionalizar» la alta velocidad liberalizada e invertir en mantenimiento, Cercanías y regionales.",
-    "pacma": "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias»."
+    "pacma": "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias».",
+    "pnv": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi."
    }
   },
   {
@@ -9516,10 +9557,10 @@
      "2026-11"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=20",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 20",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=15",
+     "Programa electoral de EAJ-PNV de 2026, p. 15",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=15",
@@ -9602,7 +9643,7 @@
     "pod": "Su programa europeo de 2024 fija un 100 % de producción renovable en 2040, con inversión en almacenamiento.",
     "salf": "En su programa para Castilla y León (2026) defiende la energía nuclear y ordenar el despliegue de renovables en lugar de acelerarlas.",
     "erc": "Su programa de 2026 propone un plan de inversión en redes eléctricas, autoconsumo, almacenamiento y renovables para descarbonizar.",
-    "pnv": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
+    "pnv": "Su programa del 29N pide acelerar redes y almacenamiento y activar mecanismos de capacidad, y mantener la cogeneración y el gas para la industria (p. 16).",
     "bildu": "Su programa del 29N pide acelerar las renovables, reforzar redes y almacenamiento y mantener el cierre nuclear.",
     "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
     "vox": "Su programa de 2026 propone un Plan Nacional de Soberanía Energética, el plan nuclear y el fin de las restricciones a explotar recursos propios.",
@@ -11021,6 +11062,12 @@
      "Programa político del Frente Obrero de 2026, p. 54",
      "programa",
      "2026-10"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+     "Programa electoral de EAJ-PNV de 2026, p. 28",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -11039,7 +11086,8 @@
     "bng": "El BNG pide cerrar los centros de internamiento y acabar con las deportaciones de migrantes y solicitantes de asilo.",
     "bildu": "Su programa del 29N rechaza la externalización de fronteras del Pacto Europeo de Migración y Asilo.",
     "ph": "Rechaza la externalización de fronteras y las «plataformas-prisiones» y propone destinar esos fondos a la acogida.",
-    "fo": "Estimación: el programa propone acuerdos con países cercanos para instalar centros de clasificación y deportación desde suelo extranjero y endurecer el asilo."
+    "fo": "Estimación: el programa propone acuerdos con países cercanos para instalar centros de clasificación y deportación desde suelo extranjero y endurecer el asilo.",
+    "pnv": "Estimación: su programa del 29N pide reforzar las garantías de los solicitantes de asilo en frontera y alternativas al internamiento."
    }
   },
   {
@@ -11955,6 +12003,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 61",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=10",
+     "Programa electoral de EAJ-PNV de 2026, p. 10",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -11971,7 +12025,8 @@
     "upc": "Plantea la introducción del pin parental como un retroceso en igualdad y propone educación sexual integral en el sistema educativo.",
     "ph": "Estimación: el programa propone educación integral que incluya la sexualidad en todos los niveles; no cita el «pin parental».",
     "ie": "Estimación: el contrato defiende «libertad educativa para los padres» y rechaza el «adoctrinamiento en género»; no cita el pin parental.",
-    "pacma": "Estimación: su programa del 29N pide planes de educación en diversidad sexual y una educación sexual también afectiva; no habla del permiso parental."
+    "pacma": "Estimación: su programa del 29N pide planes de educación en diversidad sexual y una educación sexual también afectiva; no habla del permiso parental.",
+    "pnv": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres."
    }
   },
   {
@@ -13279,6 +13334,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 37",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=31",
+     "Programa electoral de EAJ-PNV de 2026, p. 31",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13294,7 +13355,8 @@
     "falange": "Su programa del 29N propone unificar el Sistema Nacional de Salud en uno solo para toda España.",
     "pacma": "Estimación: el programa del 29N (pp. 55–56) pide al Estado fijar «requisitos mínimos» de la sanidad y «planes de mejora de las listas de espera», sin tiempos máximos.",
     "salf": "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro.",
-    "adel": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse."
+    "adel": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse.",
+    "pnv": "Estimación: su programa del 29N exige al Estado respetar las competencias sanitarias de Euskadi y culminar las transferencias pendientes (p. 32)."
    }
   },
   {
@@ -15383,6 +15445,12 @@
      "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»",
      "prensa",
      "2026-02-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35",
+     "Programa electoral de EAJ-PNV de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15391,7 +15459,8 @@
     "vox": "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir».",
     "fa": "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia.",
     "pod": "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
-    "erc": "Estimación: posición intermedia sin propuesta conocida."
+    "erc": "Estimación: posición intermedia sin propuesta conocida.",
+    "pnv": "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima."
    }
   },
   {
@@ -15516,6 +15585,12 @@
      "Programa electoral del BNG de 2026, p. 25",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26",
+     "Programa electoral de EAJ-PNV de 2026, p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15530,7 +15605,8 @@
     "bildu": "EH Bildu votó a favor de la ley de paridad, que obliga a un mínimo del 40 % de cada sexo en listas electorales y consejos de administración de grandes empresas.",
     "cha": "Propone listas electorales desbloqueadas con un sistema que permita respetar la paridad de sexos, es decir, mantener la paridad.",
     "fo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos.",
-    "bng": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales."
+    "bng": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales.",
+    "pnv": "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas."
    }
   },
   {

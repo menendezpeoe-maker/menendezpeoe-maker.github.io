@@ -2,7 +2,7 @@
  "titulo": "Posturas de las candidaturas del Test 29N",
  "licencia": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)",
  "atribucion": "Test 29N (https://test29n.es)",
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-17",
  "escala": "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B",
  "posturas": [
   {
@@ -1610,15 +1610,15 @@
    "opcion_b": "",
    "partido_id": "pnv",
    "partido": "EAJ-PNV",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide revisar la estabilidad presupuestaria para dar más margen de inversión y «reglas de gasto más flexibles».",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=21",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 21",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -4996,11 +4996,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor del primer decreto de vivienda, con limitación de subidas del alquiler, y en contra del segundo, de renovación automática.",
-   "fuente_url": "https://www.democrata.es/politica/congreso-y-senado/el-congreso-tumba-el-decreto-de-vivienda-con-los-votos-de-pp-vox-junts-y-upn/",
-   "fuente_titulo": "Demócrata (Europa Press), El Congreso tumba el decreto de vivienda con los votos de PP, Vox, Junts y UPN, 02-10-2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-10-02"
+   "justificacion": "Su programa del 29N combina más oferta (agilizar trámites urbanísticos, movilizar vacías) con regular el alquiler de temporada y turístico: «más oferta y reglas claras».",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -6991,11 +6991,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -8431,15 +8431,15 @@
    "opcion_b": "",
    "partido_id": "pnv",
    "partido": "EAJ-PNV",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 8",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B09",
@@ -9803,11 +9803,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide respetar el reparto competencial en educación y seguir desarrollando un modelo educativo propio en Euskadi.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=48",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 48",
+   "justificacion": "Su programa del 29N defiende preservar las competencias educativas de Euskadi, «evitando interferencias estatales».",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=10",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 10",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -12539,11 +12539,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se compromete a defender el Concierto Económico frente a cualquier involución del autogobierno.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=6",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N defiende el Concierto Económico «frente a cualquier ataque» y pide ampliar las capacidades financiero-fiscales vascas (p. 39).",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=38",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 38",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C09",
@@ -16548,11 +16548,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor de la ley de multirreincidencia de Junts.",
-   "fuente_url": "https://www.eldebate.com/espana/20260212/junts-saca-adelante-voto-pp-psoe-vox-ley-combatir-multirreincidencia_384540.html",
-   "fuente_titulo": "El Debate, votación del 12 de febrero de 2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-02-12"
+   "justificacion": "Su programa del 29N pide reformas legales para dar una respuesta judicial «ágil, eficaz y proporcionada» a la multirreincidencia.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=24",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 24",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E01",
@@ -16966,11 +16966,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Rechaza la prisión permanente revisable por suponer de hecho una cadena perpetua.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=10",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N rechaza la prisión permanente revisable y defiende un sistema penitenciario orientado a la reinserción.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 28",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E02",
@@ -17384,11 +17384,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se opone a la ley mordaza y promovió su reforma.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=7",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N propone reformar la «ley mordaza» eliminando sus restricciones desproporcionadas a derechos y libertades, no derogarla entera.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=27",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 27",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -18619,11 +18619,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Critica que el Código Penal castigue las opiniones contra la Corona y las instituciones del Estado.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N propone reformar los delitos de opinión sobre la Corona, las instituciones y los símbolos del Estado según los estándares europeos.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=27",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 27",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E06",
@@ -19436,11 +19436,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa pide cumplir íntegramente el Pacto de Estado contra la Violencia de Género y dotar de recursos para combatir la violencia machista.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=8",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 8",
+   "justificacion": "Su programa del 29N exige cumplir íntegramente el Pacto de Estado contra la Violencia de Género renovado en 2025 y reforzar los juzgados de violencia sobre la mujer.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 26",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -20329,11 +20329,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El PNV votó a favor de admitir a trámite la iniciativa legislativa popular de regularización extraordinaria de inmigrantes, el 9 de abril de 2024.",
-   "fuente_url": "https://es.ara.cat/sociedad/inmigracion/congreso-debate-regularizacion-500-000-extranjeros-viven-espana-papeles_1_4992457.html",
-   "fuente_titulo": "Ara, El Congreso debate la regularización de 500.000 extranjeros, 09-04-2024",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2024-04-09"
+   "justificacion": "Su programa del 29N propone avanzar en los procesos de regularización previstos en la ley para quienes cumplen los requisitos.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -21887,11 +21887,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Pide mejorar la contratación en origen para cubrir las necesidades del mercado laboral.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=30",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N propone vías legales, seguras y ordenadas de migración y la contratación en origen según las necesidades del mercado laboral.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 25",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -23597,11 +23597,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -25588,15 +25588,15 @@
    "opcion_b": "",
    "partido_id": "pnv",
    "partido": "EAJ-PNV",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=20",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 20",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G03",
@@ -26977,13 +26977,13 @@
    "partido": "EAJ-PNV",
    "postura": 3,
    "postura_texto": "Las dos por igual",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=19",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 19",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -28005,11 +28005,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa pide acelerar las renovables dentro de un mix de energías que garantice el suministro; votó contra quitar la fecha de cierre nuclear.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=20",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023, p. 20",
+   "justificacion": "Su programa del 29N pide acelerar redes y almacenamiento y activar mecanismos de capacidad, y mantener la cogeneración y el gas para la industria (p. 16).",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=15",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 15",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
@@ -32014,11 +32014,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide reforzar las garantías de los solicitantes de asilo en frontera y alternativas al internamiento.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 28",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H09",
@@ -34693,11 +34693,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=10",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 10",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I07",
@@ -38531,11 +38531,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N exige al Estado respetar las competencias sanitarias de Euskadi y culminar las transferencias pendientes (p. 32).",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=31",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J08",
@@ -45143,11 +45143,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L07",
@@ -45409,11 +45409,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 26",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L08",
