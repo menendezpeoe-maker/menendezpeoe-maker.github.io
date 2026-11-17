@@ -33,7 +33,8 @@ if (STATS_CODE === undefined) throw new Error("Falta STATS.goatcounter en papele
 if (STATS_CODE && !/^[a-z0-9][a-z0-9-]{1,48}$/.test(STATS_CODE)) throw new Error(`STATS.goatcounter no es un código válido: ${STATS_CODE}`);
 console.log(`Contador de visitas: ${STATS_CODE ? `https://${STATS_CODE}.goatcounter.com` : "desactivado"}`);
 writeFileSync(`${OUT}/assets/papeleta.js`, js);
-copyFileSync("assets/papeleta.css", `${OUT}/assets/papeleta.css`);
+// Mismo recorte (comentarios y espacios) que mejora.css: la fuente en assets/ sigue legible; solo se aligera la copia publicada.
+writeFileSync(`${OUT}/assets/papeleta.css`, readFileSync("assets/papeleta.css", "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s+/g, " ").replace(/\s*([{};])\s*/g, "$1").replace(/([:,]) /g, "$1").replace(/;}/g, "}").trim());
 copyFileSync("assets/arriba.js", `${OUT}/assets/arriba.js`);
 // Mejoras de accesibilidad y uso (rama version-mejorada, aprobadas el 31 oct): solo en la página del test
 // Se publican sin los comentarios (cada mejora explica su motivo y su criterio WCAG en el archivo fuente): pesan casi la mitad
