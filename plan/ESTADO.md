@@ -1,5 +1,12 @@
 # Estado del plan (lo más reciente arriba)
 
+## 17 nov 2026 · Revisión diaria: sin programas nuevos; /debates/ con la CSAG (Galicia)
+- **Programas (a):** ninguno nuevo (S1d lo había mirado a las 9:34 y se repite a las 9:50): Junts (solo el manifiesto de septiembre), UPN, CHA, Ara Més, PCTE y Drago sin programa del 29N en su web; Podemos da 403 a la nube. Sigue 23 de 30.
+- **Hallazgos:** el único pendiente (fecha «datos actualizados») ya estaba resuelto el 16 nov (noche); pasa a «aplicado».
+- **Posturas (b):** la cola «Revisar posturas con el programa del 29N» la llevan las pasadas de 14:23 y 21:17; no se toca. **Barrido completo n.º 2 (c):** sigue el 20 nov.
+- **Debates (d):** +9 fichas con la nota oficial de la CSAG del 12 nov: debate de la Radio Galega (23 nov, 20:00; García Comesaña, Losada, López-López y Da Silva; modera Silvia Pereira), entrevistas de la TVG a las 09:30 (17 Rodil, BNG; 18 López-López, Fronte Ampla; 19 Taboadela, PSdeG; 20 Vázquez, PP) y de «Galicia por Diante» de la Radio Galega a las 08:15 (24 Presas, 25 López-López, 26 Dacosta, 27 F. García). Debate de la TVG del 16 nov: G24 confirma que se celebró, pero la grabación (AGalega, 403 desde la nube) no se ha localizado; sigue «confirmado» y va a la cola de plan/DEBATES.md, igual que el Encuentro SER de José Ignacio García (16 nov; cadenaser.com da 403). Sin cambios en los próximos estatales (cara a cara del 19 sin cambios).
+- **Secciones afectadas:** solo /debates/ (y sitemap). Fichas de partido, calendario y portada no cambian.
+
 ## 17 nov 2026 (S1d) · Mitad de campaña: programas tardíos, enlaces y «pregunta del día»
 - **Programas tardíos:** búsqueda en webs oficiales y en prensa de los que faltan (Podemos, Junts, UPN, CHA, Drago, MES, UPL, Por Ávila, PCTE): **ninguno del 29N verificable**. El PDF de CHA hallado es del programa autonómico de febrero de 2026 (no vale); el de PCTE en su web es de otros años. `comprobado` de /programas/ pasa a 17 nov.
 - **Cambios de postura con fuente primaria:** ninguno nuevo desde la revisión del 16 nov.
