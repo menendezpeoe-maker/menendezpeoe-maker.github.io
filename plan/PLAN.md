@@ -79,7 +79,7 @@ Este plan lo ejecutan, por tandas, conversaciones automáticas programadas. Las 
 13. **Una sola fuente de verdad, para que nunca se pierda nada entre sesiones.**
     - **El único código válido es la rama `fuente` de GitHub.** No existen copias locales «buenas». Cada tanda, y cualquier otra conversación que toque la web, incluida la del titular con Claude, empieza con `git fetch` y trabaja sobre `origin/fuente`.
     - **Comprobación de partida, antes de cambiar nada:**
-      1. Genera `dist/` desde `origin/fuente` sin modificar, con `node build.mjs` y `SITE_URL=https://test29n.es/ node publish.mjs`.
+      1. Genera `dist/` desde `origin/fuente` sin modificar, con `node build.mjs` y `node publish.mjs` (el dominio sale de `sitio.mjs`).
       2. Compáralo con la rama `main` publicada (`diff -r`, sin `.git`).
       3. Si hay cualquier diferencia, PARA. Significa que la web tiene algo que el código no tiene, y publicar lo borraría. No publiques nada: anótalo en `ESTADO.md` y avisa al titular.
     - **Orden al publicar, siempre:** primero commit y push a `fuente`; después copia `dist/` a `main` y push. Nunca se publica en `main` nada cuyo código no esté ya en `origin/fuente`.

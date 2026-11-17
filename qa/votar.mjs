@@ -1,6 +1,7 @@
 // Tanda T3: guía para votar (/votar/) y calendario electoral (/calendario/), solo con fuentes oficiales enlazadas.
 // Uso: node qa/votar.mjs   (lee de :8766 o de SITE/BASE=https://test29n.es/)
 import { VOTAR } from "../src/votar.src.mjs";
+import { HOST } from "../sitio.mjs";
 const SITE = (process.env.SITE || (/^https:/.test(process.env.BASE || "") ? process.env.BASE : "http://127.0.0.1:8766/")).replace(/\/?$/, "/");
 const fails = [];
 const ok = (c, m) => { if (c) console.log("  ✓", m); else { fails.push(m); console.log("  ✗", m); } };
@@ -21,7 +22,7 @@ const v = await get("votar/"), c = await get("calendario/");
 ok(v.status === 200 && (v.text.match(/<h1[\s>]/g) || []).length === 1 && VOTAR.secciones.every((s) => v.text.includes(`id="${s.id}"`)), "/votar/ responde con todas sus secciones");
 ok(c.status === 200 && (c.text.match(/<li[ >]/g) || []).length >= VOTAR.calendario.length && c.text.includes("Jornada de votación"), "/calendario/ responde con todas las fechas");
 ok(/fuentes oficiales, revisada el 7 de noviembre de 2026/.test(v.text) && /no sustituye/.test(c.text), "indican la fecha de revisión y que no sustituyen a la información oficial");
-const links = [...(v.text + c.text).matchAll(/href="(https?:[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")).filter((u) => !u.startsWith(SITE) && !u.includes("test29n.es"));
+const links = [...(v.text + c.text).matchAll(/href="(https?:[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")).filter((u) => !u.startsWith(SITE) && !u.includes(HOST));
 ok(links.length > 0 && links.every(isOfficial), `todos los enlaces externos son oficiales (${links.length})`);
 
 console.log("Enlaces desde la web");

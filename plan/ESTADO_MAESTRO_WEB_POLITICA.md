@@ -53,7 +53,7 @@ Revisado el 23 oct 2026 (tras publicar T9, parte 1). Resume y enlaza; no repite 
 
 ## 7. Dependencias y ejecución
 - Node 22 y Playwright con Chromium. No hay `package.json`: se usa `NODE_PATH=$(npm root -g)`.
-- `node build.mjs` → `SITE_URL=https://test29n.es/ node publish.mjs` → `sh qa/mklocal.sh` → servidores en `:8765` (raíz, `_local.html`) y `:8766` (`dist/`) → `node qa/<batería>.mjs`. En la web real se usa `BASE=https://test29n.es/`. La batería `share` solo pasa del todo en el dominio real.
+- `node build.mjs` → `node publish.mjs` (dominio en `sitio.mjs`) → `sh qa/mklocal.sh` → servidores en `:8765` (raíz, `_local.html`) y `:8766` (`dist/`) → `node qa/<batería>.mjs`. En la web real se usa `BASE=https://test29n.es/`. La batería `share` solo pasa del todo en el dominio real.
 - Publicación: copiar `dist/` a `main` y hacer push; esperar a que aparezca el nuevo `papeleta.js?v=` y ejecutar `node indexnow.mjs`.
 
 ## 8. Tareas programadas (consultadas el 23 oct)

@@ -36,6 +36,7 @@ const textOn = (hex) => {
 };
 
 export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
+  const HOST = new URL(SITE).hostname; // dominio visible en textos; sale de sitio.mjs a través de SITE
   const B = JSON.parse(readFileSync("data/preguntas.json", "utf8"));
   // Posturas con enlace: documentadas con su fuente, o estimadas con un enlace solo de referencia (inferencia; no cuentan como evidencia). Mismo corte en prensa, datos, metodología y partidos.
   const SRCX = { dir: 0, inf: 0 };
@@ -314,7 +315,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
   const cols = Object.keys(rowsOpen[0]);
   mkdirSync(`${OUT}/datos`, { recursive: true });
   writeFileSync(`${OUT}/datos/posturas.csv`, "\ufeff" + [cols.join(","), ...rowsOpen.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\r\n") + "\r\n");
-  writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: "Posturas de las candidaturas del Test 29N", licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: "Test 29N (https://test29n.es)", actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
+  writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: "Posturas de las candidaturas del Test 29N", licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: `Test 29N (${SITE.replace(/\/$/, "")})`, actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
   const nSrcOpen = rowsOpen.filter((r) => r.fuente_url).length, nSrcInfOpen = rowsOpen.filter((r) => r.fuente_url && r.estimada).length, nEstOpen = rowsOpen.filter((r) => r.estimada).length;
   page({
     path: "/datos/",
@@ -332,7 +333,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
 <li>La fuente enlazada, con título, tipo y fecha, cuando existe. Por ahora la tienen ${nSrcOpen} posturas: ${srcSplit(nSrcOpen - nSrcInfOpen, nSrcInfOpen)} (la fuente no basta para documentarlas). Para reproducir el recuento: filas con <code>fuente_url</code> y <code>estimada</code> = false, frente a <code>estimada</code> = true. El resto de las documentadas se basa en programas, votaciones y declaraciones que se irán enlazando una a una.</li>
 <li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
 <section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
-<p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (test29n.es)», y no des a entender que el Test 29N respalda tu uso.</p>
+<p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (${HOST})», y no des a entender que el Test 29N respalda tu uso.</p>
 <p class="small muted">Las posturas son una interpretación documentada de programas, votaciones y declaraciones, no un dato oficial de los partidos. Si ves un error, escribe a <a href="mailto:test29n.es@gmail.com">test29n.es@gmail.com</a>.</p></section>
 ${method}`
   });
@@ -361,7 +362,7 @@ function q() {
 }
 function res() {
   const rows = D.parties.map((p) => { const ids = D.qs.map((x) => x.id).filter((id) => ans[id] > 0 && p.pos[id]); const pct = ids.length ? Math.round(ids.reduce((s, id) => s + 1 - Math.abs(ans[id] - p.pos[id]) / 4, 0) / ids.length * 100) : null; return { p, pct }; }).filter((r) => r.pct !== null).sort((a, b) => b.pct - a.pct || a.p.name.localeCompare(b.p.name, "es"));
-  el.innerHTML = '<h2 class="mini-q" tabindex="-1">Tu coincidencia con las candidaturas de ámbito estatal</h2>' + (rows.length ? '<ol class="mini-res">' + rows.map((r) => '<li><span><i style="background:' + r.p.color + '"></i>' + esc(r.p.name) + '</span><b>' + r.pct + ' %</b></li>').join("") + '</ol>' : '<p>Has respondido «No lo sé» a todo: no hay con qué comparar.</p>') + '<p class="mini-note">Orientativo, con solo 5 preguntas. No es una recomendación de voto. Los empates se ordenan alfabéticamente. El test completo compara tus respuestas con las candidaturas de tu provincia.</p><p><a class="mini-cta" href="' + D.site + '" target="_blank" rel="noopener">Haz el test completo en test29n.es</a> <button type="button" class="mini-again">Volver a empezar</button></p>';
+  el.innerHTML = '<h2 class="mini-q" tabindex="-1">Tu coincidencia con las candidaturas de ámbito estatal</h2>' + (rows.length ? '<ol class="mini-res">' + rows.map((r) => '<li><span><i style="background:' + r.p.color + '"></i>' + esc(r.p.name) + '</span><b>' + r.pct + ' %</b></li>').join("") + '</ol>' : '<p>Has respondido «No lo sé» a todo: no hay con qué comparar.</p>') + '<p class="mini-note">Orientativo, con solo 5 preguntas. No es una recomendación de voto. Los empates se ordenan alfabéticamente. El test completo compara tus respuestas con las candidaturas de tu provincia.</p><p><a class="mini-cta" href="' + D.site + '" target="_blank" rel="noopener">Haz el test completo en ${HOST}</a> <button type="button" class="mini-again">Volver a empezar</button></p>';
   el.querySelector("h2").focus({ preventScroll: true });
 }
 el.addEventListener("click", (e) => {
@@ -377,7 +378,7 @@ q();
   writeFileSync(`${OUT}/insertar/index.html`, `${head("Mini test de 5 preguntas · Test 29N", "Mini test político de 5 preguntas del Test 29N para insertar en otras webs, sin cookies ni rastreo.", '<meta name="robots" content="noindex">\n', "/")}
 <body class="mini-body">
 <main class="mini-wrap"><h1 class="mini-brand"><a href="${SITE}" target="_blank" rel="noopener"><b>Test</b> 29N</a> · Mini test político · Elecciones generales del 29N</h1>
-<div id="mini" aria-live="polite"><noscript><p>El mini test necesita JavaScript. <a href="${SITE}" target="_blank" rel="noopener">Haz el test completo en test29n.es</a>.</p></noscript></div>
+<div id="mini" aria-live="polite"><noscript><p>El mini test necesita JavaScript. <a href="${SITE}" target="_blank" rel="noopener">Haz el test completo en ${HOST}</a>.</p></noscript></div>
 </main>
 <script src="/insertar/mini.js" defer></script>
 </body>

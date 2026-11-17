@@ -6,6 +6,7 @@ import fs from "fs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const BASE = process.env.BASE || "http://127.0.0.1:8765/_local.html";
+import { SITE as PUB } from "../sitio.mjs";
 const SITE = (process.env.SITE || "http://127.0.0.1:8766/").replace(/\/?$/, "/");
 const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import.meta.url)));
 const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.meta.url)));
@@ -68,7 +69,7 @@ console.log("Páginas por candidatura y por tema");
   for (const pid of pd.order) {
     const r = await fetch(`${SITE}partidos/${pid}/`); if (r.status !== 200) { bad.push(pid); continue; }
     const html = await r.text();
-    if (!html.includes(`<link rel="canonical" href="https://test29n.es/partidos/${pid}/">`)) canon = false;
+    if (!html.includes(`<link rel="canonical" href="${PUB}partidos/${pid}/">`)) canon = false;
     // Cada postura de la página coincide con los datos del test
     for (const q of bank.questions) {
       const v = q.pos[pid];
@@ -96,7 +97,7 @@ console.log("Páginas por candidatura y por tema");
   ok(/partidos\/[a-z0-9]+\/$/.test(page.url()), "tocar un partido lleva a su página");
   await page.goto(SITE + "prensa/");
   const t = await page.innerText("main");
-  ok(t.includes('<a href="https://test29n.es/"') && t.includes("boton-test29n.png") && (await (await fetch(SITE + "boton-test29n.png")).status) === 200, "prensa: código para enlazar el test y botón descargable");
+  ok(t.includes(`<a href="${PUB}"`) && t.includes("boton-test29n.png") && (await (await fetch(SITE + "boton-test29n.png")).status) === 200, "prensa: código para enlazar el test y botón descargable");
   const priv = (process.env.PRIVATE_TERMS || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
   ok(!priv.some((x) => t.toLowerCase().includes(x)) && t.includes("test29n.es@gmail.com"), `prensa: contacto público, sin datos privados${priv.length ? "" : " (sin PRIVATE_TERMS: solo se comprueba el contacto)"}`);
   // Programas electorales: una fila por candidatura que se presenta, con su estado, y enlazada desde cada partido

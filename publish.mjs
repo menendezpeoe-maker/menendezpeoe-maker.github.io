@@ -1,13 +1,13 @@
 // Genera dist/: la web pública estática (GitHub Pages, Netlify, Cloudflare Pages…).
-// Uso: SITE_URL=https://usuario.github.io/ node publish.mjs
+// Uso: node publish.mjs   (el dominio sale de sitio.mjs; SITE_URL=… solo para pruebas)
 // Requiere haber ejecutado antes `node build.mjs` (datos) y `node qa/assets.mjs` (imágenes).
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { buildPages } from "./pages.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
+import { SITE, HOST } from "./sitio.mjs";
 const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]; const [y, m, d] = String(iso).split("-").map(Number); return `${d} de ${M[m - 1]} de ${y}`; };
 
-const SITE = (process.env.SITE_URL || "https://test29n.es/").replace(/\/?$/, "/");
 const OUT = "dist";
 const TITLE = "Test político 2026: ¿con qué partido coincides? · Elecciones 29N";
 const DESC = "Test político gratis de las elecciones generales 2026 (29N): compara tus ideas con las candidaturas de tu provincia, con fuentes. No te dice a quién votar.";
@@ -17,7 +17,10 @@ for (const d of ["", "assets", "assets/politicos", "data"]) mkdirSync(`${OUT}/${
 
 const hash = (f) => createHash("sha256").update(readFileSync(f)).digest("hex").slice(0, 10);
 // La aplicación publicada comparte la dirección pública real
-const js = readFileSync("assets/papeleta.js", "utf8").replace(/const PUBLIC_URL = [^;]+;/, `const PUBLIC_URL = ${JSON.stringify(SITE)};`);
+// (los enlaces absolutos y el dominio visible que papeleta.js escribe con su PUBLIC_URL de desarrollo se cambian por los de sitio.mjs;
+// el correo de contacto, «…@gmail.com», no es un enlace a la web y se queda igual)
+const JS_SRC = readFileSync("assets/papeleta.js", "utf8"), JS_URL = JSON.parse(/const PUBLIC_URL = ("[^"]+");/.exec(JS_SRC)[1]), JS_HOST = new URL(JS_URL).hostname;
+const js = JS_SRC.replace(/const PUBLIC_URL = [^;]+;/, `const PUBLIC_URL = ${JSON.stringify(SITE)};`).split(JS_URL).join(SITE).replace(new RegExp(JS_HOST.replace(/\./g, "\\.") + "(?!@)", "g"), HOST);
 if (!js.includes(JSON.stringify(SITE))) throw new Error("No se pudo fijar PUBLIC_URL");
 // Aportaciones: solo enlaces públicos de PayPal.me o de pago de Stripe
 const DONATE_RULES = { paypal: /^https:\/\/(www\.paypal\.com\/donate\/?\?hosted_button_id=[A-Z0-9]+|(www\.)?paypal\.me\/[A-Za-z0-9_.-]+)$/, applePay: /^https:\/\/buy\.stripe\.com\/[A-Za-z0-9_]+$/, bank: /^https:\/\/buy\.stripe\.com\/[A-Za-z0-9_]+$/ };
@@ -143,7 +146,7 @@ const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slo
 // en móvil 4G simulado la portada aparece hacia 1 s en lugar de 2,5 s (LCP), con el mismo resultado sin saltos.
 const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
 const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
-const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "Test 29N", alternateName: ["Test político 29N", "Test electoral 29N"], url: "https://test29n.es/", inLanguage: "es" })}</script>`;
+const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "Test 29N", alternateName: ["Test político 29N", "Test electoral 29N"], url: SITE, inLanguage: "es" })}</script>`;
 let headIndex = head(TITLE, DESC, social + faqLd + siteLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
 if (!headIndex.includes(FONTS_LINK) || !headIndex.includes("script-src 'self'")) throw new Error("No encuentro el enlace de las tipografías o la CSP de la portada");
 headIndex = headIndex.replace(FONTS_LINK, `<script>${NET_JS}</script><noscript>${FONTS_LINK}</noscript>`).replace("script-src 'self'", `script-src 'self' 'sha256-${NET_HASH}'`);
@@ -217,7 +220,6 @@ writeFileSync(`${OUT}/.nojekyll`, "");
 export const INDEXNOW_KEY = "1f3e3806022d0e0bc3462765cf958475";
 writeFileSync(`${OUT}/${INDEXNOW_KEY}.txt`, INDEXNOW_KEY);
 // Dominio propio: GitHub Pages lo lee de CNAME y redirige la dirección github.io a él
-const host = new URL(SITE).hostname;
-if (!host.endsWith(".github.io")) writeFileSync(`${OUT}/CNAME`, `${host}\n`);
+if (!HOST.endsWith(".github.io")) writeFileSync(`${OUT}/CNAME`, `${HOST}\n`);
 writeFileSync(`${OUT}/README.md`, `# Test 29N\n\nTest político sobre los debates reales de España para las elecciones generales del 29 de noviembre de 2026.\n\n- Web pública: ${SITE}\n- Todo se calcula en el navegador: sin servidor, sin base de datos, sin registro y sin cookies. Las respuestas se guardan solo en el almacenamiento local del navegador de cada persona.\n- Preguntas y posturas de los partidos: \`data/preguntas.json\` y \`data/partidos.json\`.\n- Herramienta independiente y orientativa; no es una recomendación de voto.\n`);
 console.log(`dist/ generado para ${SITE} (css ${v.css}, js ${v.js})`);

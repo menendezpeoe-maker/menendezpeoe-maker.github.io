@@ -7,6 +7,7 @@
 import { createRequire } from "module";
 import fs from "fs";
 import { TOPICS } from "../src/temas.src.mjs";
+import { HOST } from "../sitio.mjs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const ROOT = new URL("../", import.meta.url).pathname, OUT = ROOT + "qa/redes/";
@@ -59,7 +60,7 @@ function dailyHtml({ day, q }) {
   const text = q.type === "dilema" ? q.text : q.text;
   return html(`${top(`Pregunta del día<br>${esc(day)}`)}
   <div class="body"><span class="tag">${esc(a.letter)} · ${esc(a.name)}</span><p class="q" style="font-size:${qSize(text)}px">${esc(text)}</p>${answers}</div>
-  <div class="foot"><div class="cta"><p>Mira qué piensa cada partido, con fuentes, en</p><strong>test29n.es/preguntas/${q.id.toLowerCase()}</strong></div>
+  <div class="foot"><div class="cta"><p>Mira qué piensa cada partido, con fuentes, en</p><strong>${HOST}/preguntas/${q.id.toLowerCase()}</strong></div>
   <p class="note">Test 29N · Test político independiente para las elecciones del 29N. No es una encuesta ni una recomendación de voto.</p></div>`);
 }
 function topicHtml(k, t) {
@@ -67,7 +68,7 @@ function topicHtml(k, t) {
   return html(`${top("Test por tema<br>Elecciones 29N")}
   <div class="body"><p class="big" style="font-size:${t.label.length > 12 ? 84 : 104}px">Test de ${esc(t.label.toLowerCase())}</p><p class="meta">${qs.length} preguntas · 2 minutos</p>
   <ul class="list">${qs.map((q) => `<li>${esc(q.short)}</li>`).join("")}</ul></div>
-  <div class="foot"><div class="cta"><p>Compara tus ideas con las candidaturas de tu provincia</p><strong>test29n.es/tests/${k}</strong></div>
+  <div class="foot"><div class="cta"><p>Compara tus ideas con las candidaturas de tu provincia</p><strong>${HOST}/tests/${k}</strong></div>
   <p class="note">Gratis y sin registro: tus respuestas no salen de tu móvil. No te dice a quién votar.</p></div>`);
 }
 

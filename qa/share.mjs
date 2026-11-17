@@ -6,7 +6,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const BASE = process.env.BASE || "http://127.0.0.1:8766/";
 // Los mensajes llevan siempre la dirección pública (PUBLIC_URL de papeleta.js), también al probar en local
-const PUBLIC = "https://test29n.es/";
+import { SITE as PUBLIC } from "../sitio.mjs";
 const OUT = new URL("./shots/", import.meta.url).pathname;
 const bank = JSON.parse(fs.readFileSync(new URL("../data/preguntas.json", import.meta.url)));
 const fails = [], errors = [];

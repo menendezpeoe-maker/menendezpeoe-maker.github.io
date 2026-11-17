@@ -2,6 +2,7 @@
 // Uso: NODE_PATH=$(npm root -g) node qa/opendata.mjs   (sirve dist/ en :8766; SITE o BASE=https://test29n.es/ para la web real)
 import { createRequire } from "module";
 import fs from "fs";
+import { SITE as PUB } from "../sitio.mjs";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const SITE = (process.env.SITE || (/^https:/.test(process.env.BASE || "") ? process.env.BASE : "http://127.0.0.1:8766/")).replace(/\/?$/, "/");
@@ -59,7 +60,7 @@ const res = await f.$$eval("#mini .mini-res li b", (els) => els.map((e) => parse
 ok(res.length >= 5 && res.every((v, i) => i === 0 || res[i - 1] >= v), `muestra la coincidencia ordenada con las candidaturas estatales (${res.join(", ")})`);
 ok(/No es una recomendación de voto/.test(await f.textContent("#mini")), "aclara que no es una recomendación de voto");
 const cta = await f.$eval("#mini .mini-cta", (a) => ({ href: a.href, target: a.target }));
-ok(cta.target === "_blank" && cta.href.startsWith(SITE.replace(/\/$/, "")) || cta.href === "https://test29n.es/", "el enlace al test completo se abre en otra pestaña");
+ok(cta.target === "_blank" && cta.href.startsWith(SITE.replace(/\/$/, "")) || cta.href === PUB, "el enlace al test completo se abre en otra pestaña");
 const stored = await f.evaluate(() => { try { return localStorage.length; } catch { return 0; } });
 ok(stored === 0 && (await ctx.cookies()).length === 0, "no guarda nada ni usa cookies");
 ok(outside.size === 0, `ninguna petición a terceros${outside.size ? `: ${[...outside].join(", ")}` : ""}`);

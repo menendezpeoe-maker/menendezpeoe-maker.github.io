@@ -1,8 +1,8 @@
 // Avisa a Bing y a otros buscadores (protocolo IndexNow) de todas las URL del sitemap publicado.
 // Uso, después de publicar: node indexnow.mjs
 import { readFileSync } from "node:fs";
+import { SITE } from "./sitio.mjs";
 const KEY = /INDEXNOW_KEY = "([0-9a-f]{32})"/.exec(readFileSync("publish.mjs", "utf8"))[1];
-const SITE = "https://test29n.es/";
 const sitemap = await (await fetch(SITE + "sitemap.xml")).text();
 const urlList = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 const keyOk = (await (await fetch(`${SITE}${KEY}.txt`)).text()).trim() === KEY;

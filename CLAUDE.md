@@ -23,7 +23,7 @@ No vuelvas a analizar lo que ya funciona. Busca con `grep` en vez de leer archiv
 ## Comandos
 ```sh
 node build.mjs                                  # valida src/ y genera data/*.json
-SITE_URL=https://test29n.es/ node publish.mjs   # genera dist/ y actualiza src/lastmod.json (haz commit de ese archivo)
+node publish.mjs                                # dominio en sitio.mjs; genera dist/ y actualiza src/lastmod.json (haz commit de ese archivo)
 sh qa/mklocal.sh                                # _local.html para probar
 python3 -m http.server 8765 &                   # raíz (qa con _local.html)
 (cd dist && python3 -m http.server 8766 &)      # dist/
@@ -34,6 +34,7 @@ Baterías (también se pueden lanzar sueltas con `NODE_PATH=$(npm root -g) node 
 
 ## Mapa del código
 - `assets/papeleta.js`: lógica del test y cálculo de afinidad · `assets/papeleta.css`: estilos.
+- `sitio.mjs`: el dominio de la web (único sitio donde se escribe; `qa/dominio.mjs` lo comprueba).
 - `pages.mjs`: páginas estáticas · `src/*.src.mjs` (contenido) → `build.mjs` → `data/*.json` · `publish.mjs` → `dist/`.
 - Ver secciones sin leer el archivo: `grep -n "// ──" assets/papeleta.js pages.mjs` y `grep -n "^/\* " assets/papeleta.css`.
 

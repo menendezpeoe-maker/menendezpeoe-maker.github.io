@@ -1,5 +1,13 @@
 # Estado del plan (lo más reciente arriba)
 
+## 17 nov 2026 (noche) · Preparar el cambio de dominio a miradapolitica.es (sin publicar; nada cambia en test29n.es)
+- **Petición del titular:** dejar todo listo para pasar a miradapolitica.es tras el 29N sin rehacer enlaces, y sin perjudicar en nada a test29n.es hasta el 30 nov.
+- **Hecho:** el dominio vive solo en `sitio.mjs`; `publish.mjs`, `pages.mjs`, `indexnow.mjs` y las pruebas (`share`, `stats`, `growth`, `opendata`, `votar`, `redes`) lo leen de ahí. Comandos de CLAUDE.md, PLAN.md y ESTADO_MAESTRO pasan a `node publish.mjs` (sin `SITE_URL`, que ahora solo es para pruebas: si se dejara, forzaría el dominio viejo).
+- **Sin efecto en la web:** `dist/` generada con test29n.es idéntica byte a byte a la anterior (`diff -r`); src/lastmod.json sin cambios. Las tandas pueden publicar `fuente` con normalidad.
+- **Prueba nueva:** `qa/dominio.mjs` (grupo `paginas` y `todas`): genera la web en una copia con otro dominio; 0 menciones al actual en 262 archivos, 237 URL del sitemap, CNAME, robots, canónicas, og:url y migas nuevas. Detecta un dominio escrito a mano (probado). Pasan también `growth opendata votar stats share`.
+- **Procedimiento del día del cambio** (DNS de GitHub Pages, 301 con Cloudflare porque GitHub Pages no las da, Cambio de dirección en Search Console, Bing, IndexNow) y **pasos del titular ahora**: `plan/CAMBIO-DOMINIO.md`.
+- **Secciones tocadas:** ninguna página publicada.
+
 ## 17 nov 2026 (tarde) · Revisar posturas con el programa del 29N: PNV
 - **Fuente:** programa de EAJ-PNV para las generales de 2026 (43 págs.; https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n, descargado desde la nube). La página impresa coincide con la del PDF.
 - **Pasan a citar el programa (valor sin cambios salvo G06):** B02 3 (p. 7: «más oferta y reglas claras»), C03 1 (p. 10), C09 1 (p. 38), E01 4 (p. 24, multirreincidencia), E02 5 (p. 28), E03 4 (p. 27: reformar la «ley mordaza», no derogarla), E06 4 (p. 27), E08 1 (p. 26, Pacto de Estado contra la Violencia de Género), F01 4 y F04 4 (p. 25), G06 3~→3 (p. 19: Y vasca y Cercanías), G09 3 (p. 15–16: redes, almacenamiento y capacidad, más cogeneración y gas). Sustituyen citas del programa de 2023 (C03 C09 E02 E03 E06 E08 F04 G09) o de votaciones/prensa (B02 E01 F01).
