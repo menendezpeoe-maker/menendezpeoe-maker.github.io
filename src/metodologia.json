@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-16",
- "datos": "2026-11-16",
+ "generado": "2026-11-17",
+ "datos": "2026-11-17",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -337,8 +337,8 @@
   {
    "pid": "pnv",
    "conocidas": 99,
-   "estimadas": 55,
-   "conFuente": 44
+   "estimadas": 54,
+   "conFuente": 55
   },
   {
    "pid": "bng",

@@ -1,5 +1,16 @@
 # Estado del plan (lo más reciente arriba)
 
+## 17 nov 2026 (tarde) · Revisar posturas con el programa del 29N: PNV
+- **Fuente:** programa de EAJ-PNV para las generales de 2026 (43 págs.; https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n, descargado desde la nube). La página impresa coincide con la del PDF.
+- **Pasan a citar el programa (valor sin cambios salvo G06):** B02 3 (p. 7: «más oferta y reglas claras»), C03 1 (p. 10), C09 1 (p. 38), E01 4 (p. 24, multirreincidencia), E02 5 (p. 28), E03 4 (p. 27: reformar la «ley mordaza», no derogarla), E06 4 (p. 27), E08 1 (p. 26, Pacto de Estado contra la Violencia de Género), F01 4 y F04 4 (p. 25), G06 3~→3 (p. 19: Y vasca y Cercanías), G09 3 (p. 15–16: redes, almacenamiento y capacidad, más cogeneración y gas). Sustituyen citas del programa de 2023 (C03 C09 E02 E03 E06 E08 F04 G09) o de votaciones/prensa (B02 E01 F01).
+- **Estimadas con enlace («Estimación:»):** A04 4~→2~ (p. 21: «reglas de gasto más flexibles»), B09 3~→4~ (p. 8: acceso a la primera vivienda también en propiedad), G03 3~→4~ (p. 20: ayudas estables al vehículo electrificado), y con enlace sin cambiar valor B06 3~ (p. 7), F08 3~ (p. 35), H09 2~ (p. 28), I07 4~ (p. 10), J08 1~ (p. 31), L07 4~ (p. 35), L08 2~ (p. 26).
+- **Solo pasaje indirecto (conservan su fuente):** A09 (p. 14), B01 y B08 (p. 8), C05 (p. 39, «voluntad democrática», no habla de referéndum), D03 (p. 39, Consejo Vasco de Justicia), E09 (p. 32, solo cannabis medicinal), F05 (p. 25, reparto europeo), H02 (p. 41), H04 (p. 28), I09 (p. 32), K01 (p. 18, cláusulas espejo; no nombra Mercosur), K06 (p. 18, solo el Atlántico; sigue sin postura), G08 (p. 17–18), L01 (p. 26), L03 (p. 27, desarrollo de la Ley 4/2023), L06 (p. 35).
+- **Revisadas sin pasaje:** A01 A02 A03 A07 A10 B03 B07 C01 C02 C04 C06 C07 C08 D01 D02 D04 D05 D06 D07 D08 D09 E04 E05 E07 F03 F06 F07 F09 G01 G02 G04 G05 G07 H01 H03 H05 H06 H08 I01 I02 I03 I04 I05 I06 I08 J01 J02 J03 J04 J05 J06 J07 K03 K04 K05 K07 K08 L02 L04 L05 L09.
+- **Pendientes del titular:** ninguna (el PNV no es partido de la regla 8).
+- **Secciones:** ficha del PNV (desc y propuestas C03, C09, A06, I09, H02) sin contradicciones; /programas/ («N de 107»), /comparar/, /temas/, explorador, /metodologia/, /prensa/ y /datos/ se regeneran con los datos; apartado 1 del barrido sin textos fijos desfasados.
+- **Recuento PNV (`node qa/barrido.mjs pnv`):** con el programa del 29N 8 → 30; con otro programa 13 → 5; estimadas sin él 55 → 44. Total web: 1.204 documentadas, 1.218 estimadas y 1.109 sin postura → 1.205, 1.217 y 1.109.
+- **Cola:** bloque 3 (PNV) **HECHO**; el siguiente es el 4 (CC-PC).
+
 ## 17 nov 2026 · Revisión diaria: sin programas nuevos; /debates/ con la CSAG (Galicia)
 - **Programas (a):** ninguno nuevo (S1d lo había mirado a las 9:34 y se repite a las 9:50): Junts (solo el manifiesto de septiembre), UPN, CHA, Ara Més, PCTE y Drago sin programa del 29N en su web; Podemos da 403 a la nube. Sigue 23 de 30.
 - **Hallazgos:** el único pendiente (fecha «datos actualizados») ya estaba resuelto el 16 nov (noche); pasa a «aplicado».

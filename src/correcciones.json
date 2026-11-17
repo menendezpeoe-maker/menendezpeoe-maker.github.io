@@ -1,5 +1,53 @@
 [
  {
+  "fecha": "2026-11-17",
+  "id": "A04",
+  "partido": "pnv",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide revisar la estabilidad presupuestaria para dar más margen de inversión y «reglas de gasto más flexibles».",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=21",
+   "Programa electoral de EAJ-PNV de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "B09",
+  "partido": "pnv",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8",
+   "Programa electoral de EAJ-PNV de 2026, p. 8",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "G03",
+  "partido": "pnv",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=20",
+   "Programa electoral de EAJ-PNV de 2026, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-16",
   "id": "B03",
   "partido": "psoe",
