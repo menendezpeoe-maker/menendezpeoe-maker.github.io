@@ -59,7 +59,7 @@ export const QUESTIONS = [
   B: "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
   short: "Bajar impuestos o mantener servicios",
   ctx: "España recauda en impuestos y cotizaciones en torno al 37 % del PIB, algo menos que la media de la zona euro, y mantiene déficit público desde hace años. Bajar impuestos deja más renta a familias y empresas y puede estimular la actividad, pero exige recortar gasto o endeudarse. Mantener la recaudación sostiene sanidad, educación o pensiones con una presión fiscal mayor.",
-  pos: "4 2 1 5 5 1 0 3 5 2 3 5 2 4~ 5 3~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 0 2 2~ 4~ 5" },
+  pos: "4 2 1 5 5 1 0 3 5 2 3 5 2 4~ 5 4~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 0 2 2~ 4~ 5" },
 { id: "A03", area: "eco", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
@@ -69,7 +69,7 @@ export const QUESTIONS = [
   text: "Reducir la deuda pública debería ser prioritario, aunque obligue a contener el gasto durante varios años.",
   short: "Prioridad a reducir la deuda",
   ctx: "La deuda pública española ronda el 100 % del PIB, por encima de la media de la UE, y las reglas fiscales europeas exigen planes de reducción a varios años. Reducirla libera dinero que hoy se paga en intereses y deja margen para futuras crisis. Aplazarlo permite mantener inversión y gasto social, a cambio de pagar más intereses y depender más de los mercados.",
-  pos: "3 4 4 1 1 5 0 5~ 2 4~ 2~ 1 4~ 3~ 1~ 3~ 1 1~ 2 1 2~ 2~ 1~ 0 0 0 0 0 0 0 0 0 0" },
+  pos: "3 4 4 1 1 5 0 5~ 2 4~ 2~ 1 4~ 3~ 1~ 2~ 1 1~ 2 1 2~ 2~ 1~ 0 0 0 0 0 0 0 0 0 0" },
 { id: "A05", area: "eco", prio: 2, type: "dilema", dim: "eco", dir: 1, lr: 1,
   text: "Para garantizar las pensiones del futuro, ¿qué debería pesar más?",
   A: "Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
@@ -379,7 +379,7 @@ export const QUESTIONS = [
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
   ctx: "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico; en diciembre de 2025 la Comisión propuso rebajar la exigencia a un 90 % menos de emisiones. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
-  pos: "5 2 1 5 5~ 1 5~ 3~ 4 3~ 4~ 4~ 2~ 4~ 4~ 3~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0 0 0 0 2~ 0 0" },
+  pos: "5 2 1 5 5~ 1 5~ 3~ 4 3~ 4~ 4~ 2~ 4~ 4~ 4~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0 0 0 0 2~ 0 0" },
 { id: "G04", area: "ene", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
   short: "Ampliar los trasvases de agua",
@@ -396,7 +396,7 @@ export const QUESTIONS = [
   B: "Mejorar las Cercanías y los trenes regionales",
   short: "Alta velocidad o Cercanías",
   ctx: "España tiene la mayor red de alta velocidad de Europa, con más de 4.000 kilómetros, mientras que las Cercanías y los trenes regionales, que usan muchas más personas cada día, acumulan retrasos e incidencias, como las de Rodalies en Cataluña. Priorizar la alta velocidad acerca capitales y vertebra el país; priorizar Cercanías y media distancia mejora la movilidad diaria y la conexión de zonas rurales.",
-  pos: "3 3 4 5 5 3~ 4~ 3~ 5 5~ 3 5 2~ 3~ 3~ 0 0 0 4~ 4~ 3~ 4~ 5 2~ 2~ 3~ 0 0 0 0 0 5 0" },
+  pos: "3 3 4 5 5 3~ 4~ 3~ 5 5~ 3 5 2~ 3~ 3~ 4~ 0 0 4~ 4~ 3~ 4~ 5 2~ 2~ 3~ 0 0 0 0 0 5 0" },
 { id: "G07", area: "ene", prio: 3, type: "likert", dim: "amb", dir: -1, lr: 0,
   text: "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
   short: "Prohibir construir en zonas inundables",
@@ -451,7 +451,7 @@ export const QUESTIONS = [
   short: "Recortar la ayuda al desarrollo",
   ctx: "La ONU fijó hace décadas el objetivo de dedicar el 0,7 % de la renta nacional a la ayuda oficial al desarrollo; España destina en torno al 0,25 %, y la ley de cooperación de 2023 se compromete a llegar al 0,7 % en 2030. Sus defensores la ven como responsabilidad global y una forma de reducir la migración forzada; sus críticos priorizan las necesidades internas o dudan de su eficacia.",
   ley: "Ley 1/2023, de cooperación para el desarrollo sostenible",
-  pos: "1 4 5 1 1 5 0 3~ 1 2~ 1 1 3~ 2~ 2~ 3~ 1 1~ 1 1 0 1~ 1 0 0 0 0 0 0 0 4~ 2~ 1" },
+  pos: "1 4 5 1 1 5 0 3~ 1 2~ 1 1 3~ 2~ 2~ 2~ 1 1~ 1 1 0 1~ 1 0 0 0 0 0 0 0 4~ 2~ 1" },
 { id: "H08", area: "ext", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "España debería estrechar sus relaciones comerciales con China, aunque genere tensiones con Estados Unidos.",
   short: "Más comercio con China",
@@ -537,7 +537,7 @@ export const QUESTIONS = [
   text: "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
   short: "Evaluar y suprimir políticas ineficaces",
   ctx: "En España se evalúa poco qué funciona: la AIReF revisa algunos gastos y en 2022 se creó una agencia estatal de evaluación de políticas públicas, pero sus informes no obligan a nada. Incluir cláusulas de evaluación y caducidad haría el gasto más eficiente; sus críticos advierten de que muchos objetivos sociales son difíciles de medir a corto plazo y de que el cierre podría usarse con fines políticos.",
-  pos: "4 4 4 4 3~ 5~ 4 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4~ 0 0" },
+  pos: "4 4 4 4 3~ 5~ 4 5 0 0 0 0 0 0 0 4~ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4~ 0 0" },
 { id: "J06", area: "san", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El empleo público debería incluir una evaluación del desempeño con consecuencias, incluido el despido por bajo rendimiento.",
   short: "Evaluar a los empleados públicos",
@@ -851,6 +851,7 @@ export const SOURCES = {
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7", "Programa del Partido Humanista para las elecciones generales de 2026, p. 7", "programa", "2026-11"],
   },
   A02: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=12", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 12", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=26", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 26", "programa", "2026-11"],
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=47", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 47", "programa", "2026-11"],
@@ -893,6 +894,7 @@ export const SOURCES = {
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=6", "Programa del Partido Humanista para las elecciones generales de 2026, p. 6", "programa", "2026-11"],
   },
   A04: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=20", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 20", "programa", "2026-11"],
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=47", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 47", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=10", "Programa electoral de Vox de 2026 («Es sentido común»), p. 10", "programa", "2026-11"],
@@ -1155,6 +1157,7 @@ export const SOURCES = {
     d21: ["https://mi.democracia21.es/programa#bloque-resuelve", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»", "programa", "2026-11"],
   },
   B09: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11", "programa", "2026-11"],
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf#page=226", "Programa electoral del PSOE de 2023", "programa", "2023-07"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=43", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 43", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=23", "Programa electoral de Vox de 2026 («Es sentido común»), p. 23", "programa", "2026-11"],
@@ -1210,6 +1213,7 @@ export const SOURCES = {
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33", "Contrato electoral simplificado de SALF para las generales de 2026, p. 33", "programa", "2026-11"],
   },
   C04: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=3", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 3", "programa", "2026-11"],
     psoe: ["https://theobjective.com/espana/politica/2024-11-05/psoe-cambios-constitucion-congreso-federal/", "The Objective, ponencia marco del 41.º Congreso Federal del PSOE, 05/11/2024", "prensa", "2024-11-05"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=8", "Programa electoral de Vox de 2023, medida 1", "programa", "2023-07"],
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=140", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 140", "programa", "2026-11"],
@@ -1480,7 +1484,7 @@ export const SOURCES = {
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26", "Programa electoral de EAJ-PNV de 2026, p. 26", "programa", "2026-11"],
     bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=19", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 19", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21", "Programa do BNG para as eleccións xerais de 2023", "programa", "2023-07"],
-    ccpc: ["https://www.elindependiente.com/wp-content/uploads/2023/11/Acuerdo-PSOE-CC.pdf#page=6", "Acuerdo de legislatura PSOE-Coalición Canaria, compromisos para el conjunto del Estado, nov. 2023", "gobierno", "2023-11"],
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 10", "programa", "2026-11"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=110", "Programa electoral de Junts per Catalunya para las generales de 2023, p. 110", "programa", "2023-07"],
     gbai: ["https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14", "Bases políticas de Geroa Bai para las generales del 29N, p. 14", "programa", "2026-11"],
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=9", "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 9", "programa", "2026-04"],
@@ -1531,6 +1535,7 @@ export const SOURCES = {
     gbai: ["https://www.noticiasdenavarra.com/politica/2026/02/04/barkos-acusa-pp-rechazar-regularizacion-10659603.html", "Noticias de Navarra: Barkos acusa al PP de rechazar la regularización (4 feb 2026)", "prensa", "2026-02-04"],
   },
   F02: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52", "programa", "2026-11"],
     psoe: ["https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/140426-rueda-prensa-ministros.aspx", "La Moncloa, Consejo de Ministros del 14/04/2026: regularización extraordinaria", "gobierno", "2026-04-14"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=15", "Programa electoral de Vox de 2026 («Es sentido común»), p. 15", "programa", "2026-11"],
@@ -1677,6 +1682,7 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82", "Programa electoral de Adelante Andalucía para el 29N, p. 82", "programa", "2026-11"],
   },
   G02: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15", "programa", "2026-11"],
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=65", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 65", "programa", "2026-11"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=38", "Programa electoral del PP de 2023", "programa", "2023-07-04"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=34", "Programa electoral de Vox de 2026 («Es sentido común»), p. 34", "programa", "2026-11"],
@@ -1694,6 +1700,7 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55", "Programa electoral del BNG de 2026, p. 55", "programa", "2026-11"],
   },
   G03: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15", "programa", "2026-11"],
     bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=17", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 17", "programa", "2026-11"],
     psoe: ["https://www.deia.eus/economia/2025/12/12/sanchez-von-der-leyen-motor-combustion-10464731.html", "Deia (EFE), carta de Sánchez a Von der Leyen del 11/12/2025", "declaracion", "2025-12-12"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=55", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 55", "programa", "2026-11"],
@@ -1734,6 +1741,7 @@ export const SOURCES = {
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
   },
   G06: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=18", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 18", "programa", "2026-11"],
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=20", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 20", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=36", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 36", "programa", "2026-11"],
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=61", "Programa electoral de Vox de 2026 («Es sentido común»), p. 61", "programa", "2026-11"],
@@ -1902,6 +1910,7 @@ export const SOURCES = {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=62", "Programa electoral de Compromís-Front Valencià para el 29N, p. 62", "programa", "2026-11"],
   },
   H07: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=88", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 88", "programa", "2026-11"],
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=107", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 107", "programa", "2026-11"],
     pp: ["https://www.pp.es/storage/2025/06/21_Congreso_Ponencia_Politica.pdf#page=39", "Ponencia política del XXI Congreso del PP (junio de 2025)", "programa", "2025-06"],
@@ -2132,6 +2141,7 @@ export const SOURCES = {
     mes: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=17", "Programa electoral de Sumar de 2023, p. 17; MÉS concurrió en esa coalición", "programa", "2023-07"],
   },
   J05: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=4", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 4", "programa", "2026-11"],
     psoe: ["https://www.boe.es/eli/es/l/2022/12/20/27", "Ley 27/2022 de evaluación de políticas públicas (20 de diciembre de 2022)", "gobierno", "2022-12-20"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13", "programa", "2026-11"],
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=19", "Programa electoral de Sumar de 2023, p. 19", "programa", "2023-07"],
@@ -2159,6 +2169,7 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=36", "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 36", "programa", "2026-11"],
   },
   J08: {
+    ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=8", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 8", "programa", "2026-11"],
     bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=10", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 10", "programa", "2026-11"],
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
     pp: ["https://www.redaccionmedica.com/politica/20261023/sanidad-hara-publico-el-decreto-fallido-de-las-listas-espera-queremos-que-los-ciudadanos-puedan-verlo/363279_0.html", "Redacción Médica, Consejo Interterritorial del 23/10/2026", "gobierno", "2026-10-23"],
@@ -2438,6 +2449,7 @@ export const JUSTIF = {
     ph: "Su programa del 29N propone reducir por ley la jornada ordinaria a 30 horas semanales en 4 días, sin reducción del salario.",
   },
   A02: {
+    ccpc: "Estimación: su programa del 29N pide que la riqueza contribuya «de forma justa al sostenimiento de los servicios públicos» y financiación estable para sanidad, educación y dependencia.",
     fa: "Su programa del 29N defiende más inversión pública con un nuevo esfuerzo tributario sobre grandes empresas, banca y grandes fortunas, frente a la austeridad.",
     psoe: "Su programa del 29N defiende más inversión en servicios públicos sostenida por una fiscalidad progresiva, con más impuestos a grandes patrimonios y rentas del capital (127).",
     mj: "Su programa del 29N defiende que «los impuestos son el precio de vivir en una sociedad que cuida de todas las personas» y propone un sistema fiscal más progresivo.",
@@ -2478,6 +2490,7 @@ export const JUSTIF = {
     ph: "Su programa de 2026 propone un impuesto a las grandes fortunas y al patrimonio neto superior a 3 millones de euros.",
   },
   A04: {
+    ccpc: "Estimación: su programa del 29N pide que Canarias, cabildos y ayuntamientos puedan gastar sus remanentes en vivienda, sanidad, educación y bienestar social.",
     psoe: "Su programa del 29N promete una senda decreciente de deuda y déficit, pero también «ingresos nuevos para derechos nuevos» (compromisos 126 y 127).",
     pp: "Su programa de 2026 promete reducir la deuda con objetivos conformes a las reglas europeas y no aprobar gasto nuevo sin financiación.",
     vox: "Su programa de 2026 propone reducir la deuda pública con control del déficit y sin gasto superfluo, compatibilizándolo con la rebaja de impuestos.",
@@ -2742,6 +2755,7 @@ export const JUSTIF = {
     d21: "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo.",
   },
   B09: {
+    ccpc: "Estimación: su programa del 29N reclama incentivos fiscales estatales a la primera vivienda para jóvenes y familias con ingresos medios y bajos; no habla de avales.",
     psoe: "Su programa de 2023 incluye avales públicos del 20 % de la hipoteca para la primera vivienda de los menores de 35 años.",
     pp: "Su programa del 29N amplía el aval público, que cubre hasta el 20 % del valor de la vivienda, a los compradores menores de 40 años, ampliable hasta los 50.",
     vox: "Su programa de 2026 propone avales a la financiación y créditos blandos para vivienda protegida y un 0 % de IVA en la primera vivienda habitual.",
@@ -2798,6 +2812,7 @@ export const JUSTIF = {
     salf: "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona.",
   },
   C04: {
+    ccpc: "Estimación: su programa del 29N aspira al «máximo autogobierno en un Estado que reconozca» su «realidad plurinacional»; no habla de un Estado federal.",
     psoe: "La ponencia de su 41.º Congreso (2024) propone «ahondar en la federalización» del Estado, en la línea de la Declaración de Granada.",
     vox: "Vox propone un Estado unitario, no federal, y limitar la capacidad legislativa autonómica.",
     fa: "Su programa del 29N propone cambiar el modelo territorial de la Constitución en un sentido federal y plurinacional, hacia una República Federal.",
@@ -3091,7 +3106,7 @@ export const JUSTIF = {
     pnv: "Su programa del 29N exige cumplir íntegramente el Pacto de Estado contra la Violencia de Género renovado en 2025 y reforzar los juzgados de violencia sobre la mujer.",
     bildu: "Su programa del 29N mantiene el enfoque de violencia machista y propone reforzar la protección de sus víctimas.",
     bng: "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
-    ccpc: "Firmó con el PSOE el compromiso de reforzar la lucha contra la violencia de género y el Pacto de Estado.",
+    ccpc: "Su programa del 29N reclama financiación estatal para aplicar el Pacto de Estado contra la violencia de género en todas las islas y proteger a las víctimas.",
     junts: "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
     gbai: "Sus bases del 29N rechazan el negacionismo de la violencia de género y piden reforzar la protección de las mujeres víctimas de maltrato.",
     adel: "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
@@ -3138,6 +3153,7 @@ export const JUSTIF = {
     gbai: "Estimación: su senadora Uxue Barkos defendió en el Senado la regularización extraordinaria de inmigrantes frente a la iniciativa del PP.",
   },
   F02: {
+    ccpc: "Estimación: su programa del 29N pide financiar la integración y la convivencia de quienes llegan y combatir los discursos racistas; no habla de expulsiones.",
     mj: "Estimada: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
     psoe: "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular.",
     vox: "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
@@ -3284,6 +3300,7 @@ export const JUSTIF = {
     psoe: "Su programa del 29N se compromete a mantener el calendario de cierre de las centrales nucleares hasta 2035 (compromiso 240).",
   },
   G02: {
+    ccpc: "Estimación: su programa del 29N impulsa la eólica marina, pero exige consenso social e institucional y compatibilidad ambiental y territorial en cada proyecto.",
     psoe: "Su programa del 29N quiere un 81 % de electricidad renovable en 2030, con las plantas preferentemente en Zonas de Aceleración Renovable (compromiso 234).",
     pp: "Propone agilizar los permisos de las instalaciones renovables, sin plantear límites a su implantación en el campo.",
     vox: "Su programa de 2026 propone impedir la instalación descontrolada de macroplantas solares y eólicas que destruyan la riqueza agrícola y natural.",
@@ -3301,6 +3318,7 @@ export const JUSTIF = {
     bng: "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
   },
   G03: {
+    ccpc: "Estimación: su programa del 29N pide programas estables de recarga y ayudas para electrificar taxis y coches de alquiler; no se pronuncia sobre la fecha de 2035.",
     bildu: "Estimación: su programa del 29N apuesta por la electrificación y por ayudas solo al coche eléctrico puro, sin citar el veto de 2035.",
     psoe: "Sánchez pidió por carta a la Comisión Europea mantener la prohibición de vender coches de combustión a partir de 2035.",
     pp: "Su programa de 2026 dice que frenará calendarios climáticos «imposibles» y retirará obligaciones que perjudiquen a la industria.",
@@ -3343,6 +3361,7 @@ export const JUSTIF = {
     ph: "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública.",
   },
   G06: {
+    ccpc: "Estimación: su programa del 29N reclama un convenio de diez años para el Tren de Gran Canaria y los proyectos ferroviarios de Tenerife, como sistemas ferroviarios locales.",
     psoe: "Su programa del 29N promete modernizar las Cercanías y la Media Distancia y, a la vez, culminar los corredores Mediterráneo y Atlántico (compromiso 27).",
     pp: "Su programa de 2026 prevé un plan de infraestructuras de 300.000 millones que incluye la Alta Velocidad y las Cercanías.",
     vox: "Su programa del 29N da prioridad a la seguridad ferroviaria, a Cercanías y Media Distancia y a electrificar las líneas convencionales; no cita la alta velocidad.",
@@ -3515,6 +3534,7 @@ export const JUSTIF = {
     comp: "Su programa del 29N propone una Unión Europea de la Defensa que pueda sustituir el marco de la OTAN.",
   },
   H07: {
+    ccpc: "Estimación: su programa del 29N quiere reforzar la cooperación al desarrollo con Mauritania, Senegal, Marruecos y Cabo Verde; no plantea recortarla.",
     mj: "Su programa del 29N propone cumplir el compromiso del 0,7 % de la renta nacional bruta para la ayuda oficial al desarrollo.",
     psoe: "Su programa del 29N se compromete a cerrar la brecha con el 0,7 % de la RNB en Ayuda Oficial al Desarrollo (compromiso 459).",
     pp: "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
@@ -3749,6 +3769,7 @@ export const JUSTIF = {
     mes: "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco.",
   },
   J05: {
+    ccpc: "Estimación: su programa del 29N pide evaluar los resultados para «corregir lo que no está funcionando», con seguimiento público de cada medida; no habla de suprimirlas.",
     psoe: "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas.",
     pp: "Su programa de 2026 evaluará cada año programas de gasto con criterios independientes y retirará recursos a los que no cumplan.",
     fa: "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
@@ -3781,6 +3802,7 @@ export const JUSTIF = {
     adel: "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades.",
   },
   J08: {
+    ccpc: "Estimación: su programa del 29N se opone a la recentralización y pide financiación sanitaria estable para Canarias; no habla de estándares estatales obligatorios.",
     bildu: "Estimación: su programa del 29N pide asumir las competencias que aún ejerce el Ministerio de Sanidad; no apoya estándares estatales obligatorios.",
     psoe: "Su programa promete fijar por ley tiempos máximos de espera comunes para todo el Sistema Nacional de Salud.",
     pp: "Las consejerías del PP votaron contra la norma del Ministerio que unificaba los criterios de las listas de espera.",

@@ -60,7 +60,7 @@
   1. PSOE, primera mitad (A01–G09): **HECHO (16 nov, tarde).** El titular subió el PDF (psoe.es bloquea la nube con Incapsula); copia en los archivos del proyecto: test29n/programas/PSOE_Programa_29N.pdf.
   2. PSOE, segunda mitad (H01–L09): **HECHO (16 nov, noche).** PDF en test29n/programas/PSOE_Programa_29N.pdf (no descargar de psoe.es).
   3. PNV (99; 43 págs.): **HECHO (17 nov, tarde).** PNV 8 → 30 posturas que citan el programa del 29N.
-  4. CC-PC (93; 23 págs.).
+  4. CC-PC (93; 23 págs.): **HECHO (17 nov, noche).** CC-PC 14 → 26 posturas que citan el programa del 29N.
   5. Compromís-Front Valencià (89; 64 págs., en valenciano).
   6. Adelante Andalucía (83; 134 págs.).
   7. SALF (78; 40 págs.).

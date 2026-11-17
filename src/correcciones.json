@@ -1,6 +1,38 @@
 [
  {
   "fecha": "2026-11-17",
+  "id": "A02",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide que la riqueza contribuya «de forma justa al sostenimiento de los servicios públicos» y financiación estable para sanidad, educación y dependencia.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=12",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 12",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "A04",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide que Canarias, cabildos y ayuntamientos puedan gastar sus remanentes en vivienda, sanidad, educación y bienestar social.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=20",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
   "id": "A04",
   "partido": "pnv",
   "de": 4,
@@ -34,6 +66,22 @@
  {
   "fecha": "2026-11-17",
   "id": "G03",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide programas estables de recarga y ayudas para electrificar taxis y coches de alquiler; no se pronuncia sobre la fecha de 2035.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=15",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "G03",
   "partido": "pnv",
   "de": 3,
   "a": 4,
@@ -43,6 +91,54 @@
   "fuente": [
    "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=20",
    "Programa electoral de EAJ-PNV de 2026, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "G06",
+  "partido": "ccpc",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N reclama un convenio de diez años para el Tren de Gran Canaria y los proyectos ferroviarios de Tenerife, como sistemas ferroviarios locales.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=18",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "H07",
+  "partido": "ccpc",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere reforzar la cooperación al desarrollo con Mauritania, Senegal, Marruecos y Cabo Verde; no plantea recortarla.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=19",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "id": "J05",
+  "partido": "ccpc",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide evaluar los resultados para «corregir lo que no está funcionando», con seguimiento público de cada medida; no habla de suprimirlas.",
+  "fuente": [
+   "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=4",
+   "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 4",
    "programa",
    "2026-11"
   ]
