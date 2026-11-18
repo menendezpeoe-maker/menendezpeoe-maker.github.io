@@ -816,11 +816,11 @@
    "postura_texto": "Claramente B: Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
    "estimada": false,
    "nota": "",
-   "justificacion": "Afirma que es más importante fortalecer los servicios públicos que reducir los ingresos fiscales, y propone aumentar tipos en los impuestos directos.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=148",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 148",
+   "justificacion": "Su programa del 29N pide reformar la senda de estabilidad para que no obligue a recortar servicios públicos y una reforma fiscal progresiva.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 60",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A02",
@@ -1310,11 +1310,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "En su política tributaria estatal propone reformar el impuesto de patrimonio como impuesto sobre la riqueza y las grandes fortunas.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=146",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 146",
+   "justificacion": "Su programa del 29N propone un impuesto estatal sobre la riqueza y la tierra que sustituya a Patrimonio y grave las grandes fortunas.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=58",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 58",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1726,13 +1726,13 @@
    "partido": "Adelante Andalucía",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide reformar la senda de estabilidad: «las reglas de gasto no pueden obligar a recortar la sanidad o la educación».",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -3719,15 +3719,15 @@
    "opcion_b": "",
    "partido_id": "adel",
    "partido": "Adelante Andalucía",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide presencia pública en empresas de energía, farmacia, alimentación y telecomunicaciones.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=61",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 61",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A09",
@@ -4198,11 +4198,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone reformar sucesiones sin reducciones, con un mínimo exento de 500.000 euros, en lugar de eliminarlo para herencias entre padres e hijos.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=146",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 146",
+   "justificacion": "Su programa del 29N propone un suelo común en sucesiones y donaciones, con tributación mínima en todo el Estado.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=58",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 58",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A10",
@@ -4654,11 +4654,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía propone bajar y regular obligatoriamente los alquileres en las zonas tensionadas.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74",
+   "justificacion": "Su programa del 29N pide zonas tensionadas obligatorias y un índice estatal para que ningún alquiler supere el 20 % de la renta media de la zona.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 49",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -5205,11 +5205,11 @@
    "postura_texto": "Claramente B: Regular los precios y ampliar la vivienda pública",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone bajar los alquileres, regulación obligatoria en zonas tensionadas, prohibir nuevos pisos turísticos y ampliar el parque público de alquiler.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 74",
+   "justificacion": "Su programa del 29N pide limitar el alquiler al 20 % del salario y llevar el parque público en alquiler al 9 %.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 49",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -5718,11 +5718,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide paralizar los lanzamientos de hogares vulnerables sin alternativa e ilegalizar las empresas de desokupación; no habla del plazo de 48 horas.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 49",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B03",
@@ -6687,11 +6687,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía propone prohibir nuevas licencias de pisos turísticos en las zonas tensionadas.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=74",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 74",
+   "justificacion": "Su programa del 29N pide una moratoria de pisos turísticos: ninguna licencia nueva en zonas tensionadas y retirada progresiva.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=50",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 50",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B05",
@@ -7561,11 +7561,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N prohíbe la compra de vivienda por fondos y sociedades y «toda compra especulativa»; no menciona a los compradores extranjeros.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=51",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 51",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B07",
@@ -8055,11 +8055,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía defiende ampliar el parque público de vivienda en alquiler.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 7",
+   "justificacion": "Su programa del 29N pide llevar el parque público en alquiler al 9 % de las viviendas, con un gasto del 1,5 % del PIB.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 49",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -9955,11 +9955,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide el máximo nivel de autonomía y competencias para Andalucía, incluida la gestión de las becas estatales.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=73",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 73",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C03",
@@ -10430,11 +10430,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N plantea «un modelo confederal como horizonte» y el máximo autogobierno en cualquier reforma constitucional.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=73",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 73",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C04",
@@ -12193,15 +12193,15 @@
    "opcion_b": "",
    "partido_id": "adel",
    "partido": "Adelante Andalucía",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide «un Senado territorial de verdad»: cámara de las comunidades y nacionalidades.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C08",
@@ -16698,13 +16698,13 @@
    "partido": "Adelante Andalucía",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide derogar el endurecimiento penal de los pequeños hurtos (la reforma de la multirreincidencia) contra el «populismo punitivo».",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=94",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 94",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E01",
@@ -17973,11 +17973,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N rechaza el «populismo punitivo» y pide penas orientadas a la reinserción; no habla de la edad penal.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=94",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 94",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E04",
@@ -18752,11 +18752,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide derogar «los delitos de opinión del Código Penal»; no nombra las injurias a la Corona.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=29",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 29",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E06",
@@ -19626,11 +19626,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía rechaza el enfoque de violencia intrafamiliar y defiende los recursos específicos contra la violencia de género.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=9",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 9",
+   "justificacion": "Su programa del 29N pide ampliar la Ley Integral contra la Violencia de Género y un Pacto de Estado contra la violencia machista con presupuesto.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=98",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 98",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E08",
@@ -20519,11 +20519,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía pide facilitar la regularización de las personas migrantes en situación irregular.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276",
+   "justificacion": "Su programa del 29N pide una regularización extraordinaria en la línea de la ILP «¡Regularización Ya!».",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 106",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -21051,11 +21051,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía rechaza los centros de internamiento y pide facilitar papeles a los migrantes en situación irregular.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=276",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 276",
+   "justificacion": "Su programa del 29N pide derogar la Ley de Extranjería, que ninguna persona quede condenada a la irregularidad y cerrar los CIE.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 106",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F02",
@@ -22058,11 +22058,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 106",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -22550,13 +22550,13 @@
    "partido": "Adelante Andalucía",
    "postura": 4,
    "postura_texto": "De acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide tutela automática y un pacto de Estado con financiación estatal y «reparto solidario entre comunidades» de los menores que llegan solos.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 106",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F05",
@@ -23308,15 +23308,15 @@
    "opcion_b": "",
    "partido_id": "adel",
    "partido": "Adelante Andalucía",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=128",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 128",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F07",
@@ -24205,11 +24205,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone una renta básica universal e incondicional, compatible con otros ingresos; no habla de exigir búsqueda de empleo.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=66",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 66",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F09",
@@ -25212,11 +25212,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Pide control y planificación de la proliferación de macroplantas solares, favoreciendo autoconsumo y plantas pequeñas para proteger el campo.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 6",
+   "justificacion": "Su programa del 29N pide zonas de exclusión vinculantes y una moratoria a las macroplantas en suelo rural hasta tenerlas.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=82",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 82",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -26219,11 +26219,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone oposición a nuevos trasvases y a la expansión descontrolada del regadío por la sobreexplotación de las aguas subterráneas.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 195",
+   "justificacion": "Su programa del 29N propone una ley del ciclo del agua con freno al regadío intensivo y «ni trasvases ni compraventa de derechos de riego».",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=84",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 84",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G04",
@@ -27131,11 +27131,11 @@
    "postura_texto": "Claramente B: Mejorar las Cercanías y los trenes regionales",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone moratoria a nuevas infraestructuras de AVE, recuperar líneas convencionales e impulsar cercanías y media distancia en localidades de más de 20.000 habitantes.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=291",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 291",
+   "justificacion": "Su programa del 29N da prioridad al tren convencional y pasa la mitad de los fondos de nuevas líneas de alta velocidad a Cercanías y media distancia.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=78",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 78",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G06",
@@ -27575,6 +27575,25 @@
    "fuente_fecha": "2026-11"
   },
   {
+   "pregunta_id": "G07",
+   "area": "Energía, medioambiente e infraestructuras",
+   "pregunta": "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
+   "partido_id": "adel",
+   "partido": "Adelante Andalucía",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
+   "nota": "",
+   "justificacion": "Su programa del 29N pide «ni una casa más en zona inundable»: prohibir construir en ellas y planificar el cambio de uso de lo ya construido.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=86",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 86",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
    "pregunta_id": "G08",
    "area": "Energía, medioambiente e infraestructuras",
    "pregunta": "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
@@ -27799,6 +27818,25 @@
    "justificacion": "Estimación: su programa del 29N propone integrar el pastoreo, los mosaicos agrarios y la gestión de biomasa en la prevención; no habla de rebajar la protección.",
    "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23",
    "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
+   "pregunta_id": "G08",
+   "area": "Energía, medioambiente e infraestructuras",
+   "pregunta": "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
+   "partido_id": "adel",
+   "partido": "Adelante Andalucía",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=87",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 87",
    "fuente_tipo": "programa",
    "fuente_fecha": "2026-11"
   },
@@ -28765,11 +28803,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía rechaza aumentar el gasto militar y propone un referéndum para salir de la OTAN.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=281",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 281",
+   "justificacion": "Su programa del 29N rechaza el plan europeo de rearme y el objetivo del 5 % de la OTAN, y pide reducir progresivamente el gasto militar.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=109",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 109",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H01",
@@ -30152,11 +30190,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía defiende prohibir la venta de armas a Israel y apoya el movimiento BDS.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282",
+   "justificacion": "Su programa del 29N pide un embargo total de armas a Israel, también del material de doble uso, y suspender el acuerdo UE-Israel.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=109",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 109",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H04",
@@ -30589,11 +30627,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía rechaza reconocer el Sáhara Occidental como territorio marroquí.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=282",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 282",
+   "justificacion": "Su programa del 29N pide volver a la posición anterior a 2022 sobre el Sáhara y apoya su autodeterminación.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=109",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 109",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H05",
@@ -32242,11 +32280,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide asilo con todas las garantías y sin listas de países seguros que vacíen el derecho; no habla de centros en terceros países.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 106",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H09",
@@ -32736,11 +32774,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía propone no aumentar y eliminar progresivamente los conciertos educativos.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=66",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 66",
+   "justificacion": "Su programa del 29N pide paralizar y revisar los conciertos y eliminar progresivamente la enseñanza privada-concertada.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=42",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 42",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -33211,11 +33249,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone una bajada progresiva de las tasas universitarias hasta su gratuidad en la universidad pública.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=47",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 47",
+   "justificacion": "Su programa del 29N propone la matrícula universitaria gratuita de forma progresiva, empezando por el grado.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=47",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 47",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I02",
@@ -33648,11 +33686,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone una nueva ley de universidades que prohíba la creación de nuevas universidades privadas.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=7",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 7",
+   "justificacion": "Su programa del 29N pide «ninguna universidad privada nueva».",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=47",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 47",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I03",
@@ -34579,11 +34617,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide que las becas no dependan «casi solo de la nota media»; no fija una nota mínima.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=47",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 47",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I07",
@@ -34902,11 +34940,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía defiende la educación afectivo-sexual integral como parte de la educación en los centros.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=48",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 48",
+   "justificacion": "Su programa del 29N hace obligatoria la educación afectivo-sexual en todas las etapas.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=45",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 45",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I07",
@@ -35377,11 +35415,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Rechaza la tauromaquia como acto cultural y propone suprimir toda subvención e institución pública ligada a ella en los dos primeros años.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=253",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 253",
+   "justificacion": "Su programa del 29N pide «ni un euro público para los toros» y derogar la Ley 18/2013 que la regula como patrimonio cultural.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=120",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 120",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I08",
@@ -36289,11 +36327,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Adelante Andalucía propone eliminar los conciertos sanitarios con empresas privadas e internalizar los servicios.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=6",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía para las autonómicas andaluzas de 2026, p. 6",
+   "justificacion": "Su programa del 29N pide derogar la Ley 15/1997 y acabar con los conciertos y las externalizaciones en la sanidad.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=36",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 36",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J01",
@@ -37315,11 +37353,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Quiere aumentar la vigilancia de las incompatibilidades público-privado y obliga a dedicación exclusiva a quien tenga plaza fija a tiempo completo.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=24",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 24",
+   "justificacion": "Su programa del 29N pide dedicación exclusiva para quien tenga plaza fija a tiempo completo en la pública, salvo docencia e investigación.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=36",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 36",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J04",
@@ -39291,11 +39329,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide cláusulas espejo para que las importaciones cumplan las mismas exigencias que el campo propio; no nombra Mercosur.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=69",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 69",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
@@ -40710,6 +40748,25 @@
    "tipo": "afirmacion",
    "opcion_a": "",
    "opcion_b": "",
+   "partido_id": "adel",
+   "partido": "Adelante Andalucía",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
+   "nota": "",
+   "justificacion": "Su programa del 29N pide que el lobo vuelva al Listado de Especies en Régimen de Protección Especial y un plan de recuperación.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=86",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 86",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
+   "pregunta_id": "K04",
+   "area": "Agricultura, pesca y mundo rural",
+   "pregunta": "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
    "partido_id": "cha",
    "partido": "CHA – Frente Amplio Aragón",
    "postura": 1,
@@ -41191,11 +41248,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone reducir progresivamente la ganadería industrial y las macrogranjas con una moratoria de nuevas instalaciones.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=168",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 168",
+   "justificacion": "Su programa del 29N pide «ni una macrogranja»: su prohibición y la transición a la ganadería extensiva.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=85",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 85",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K05",
@@ -42483,11 +42540,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone frenar la creación de nuevos regadíos y reducir su superficie actual para alcanzar equilibrio hídrico.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=195",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 195",
+   "justificacion": "Su programa del 29N pide modernizar los regadíos «sin aumentar la superficie regada» y frenar el regadío intensivo.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=87",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 87",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K08",
@@ -43832,11 +43889,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide el desarrollo completo de las leyes trans y LGTBI y la opción no binaria en el Registro Civil.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=104",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 104",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L03",
@@ -44269,11 +44326,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Mantiene oposición rotunda a la gestación subrogada y trabajará para garantizar su prohibición a nivel estatal.",
-   "fuente_url": "https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=232",
-   "fuente_titulo": "Programa electoral de Adelante Andalucía de 2026, p. 232",
+   "justificacion": "Su programa del 29N pide la prohibición de la gestación subrogada.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=98",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 98",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L04",
@@ -44706,11 +44763,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide que ninguna confesión tenga privilegios fiscales ni simbólicos; no nombra los acuerdos con la Santa Sede.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=96",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 96",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L05",
@@ -45673,13 +45730,13 @@
    "partido": "Adelante Andalucía",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos.",
+   "fuente_url": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=100",
+   "fuente_titulo": "Programa electoral de Adelante Andalucía para el 29N, p. 100",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L08",
