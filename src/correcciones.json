@@ -18,6 +18,22 @@
  {
   "fecha": "2026-11-18",
   "id": "A09",
+  "partido": "adel",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide presencia pública en empresas de energía, farmacia, alimentación y telecomunicaciones.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=61",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 61",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "A09",
   "partido": "comp",
   "de": 2,
   "a": 1,
@@ -66,6 +82,22 @@
  {
   "fecha": "2026-11-18",
   "id": "C08",
+  "partido": "adel",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide «un Senado territorial de verdad»: cámara de las comunidades y nacionalidades.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=92",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 92",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "C08",
   "partido": "comp",
   "de": 4,
   "a": 5,
@@ -75,6 +107,22 @@
   "fuente": [
    "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
    "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "F07",
+  "partido": "adel",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=128",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 128",
    "programa",
    "2026-11"
   ]
@@ -91,6 +139,38 @@
   "fuente": [
    "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=30",
    "Programa electoral de Compromís-Front Valencià para el 29N, p. 30",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "G07",
+  "partido": "adel",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide «ni una casa más en zona inundable»: prohibir construir en ellas y planificar el cambio de uso de lo ya construido.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=86",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 86",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "G08",
+  "partido": "adel",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=87",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 87",
    "programa",
    "2026-11"
   ]
@@ -187,6 +267,22 @@
   "fuente": [
    "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
    "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "K04",
+  "partido": "adel",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide que el lobo vuelva al Listado de Especies en Régimen de Protección Especial y un plan de recuperación.",
+  "fuente": [
+   "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=86",
+   "Programa electoral de Adelante Andalucía para el 29N, p. 86",
    "programa",
    "2026-11"
   ]
