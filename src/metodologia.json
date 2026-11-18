@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-17",
- "datos": "2026-11-17",
+ "generado": "2026-11-18",
+ "datos": "2026-11-18",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -396,9 +396,9 @@
   },
   {
    "pid": "comp",
-   "conocidas": 103,
-   "estimadas": 48,
-   "conFuente": 60
+   "conocidas": 107,
+   "estimadas": 44,
+   "conFuente": 84
   },
   {
    "pid": "adel",

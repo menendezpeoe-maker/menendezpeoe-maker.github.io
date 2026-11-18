@@ -1,5 +1,245 @@
 [
  {
+  "fecha": "2026-11-18",
+  "id": "A04",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=40",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 40",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "A09",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone aumentar la presencia del Estado en sectores estratégicos comprando participaciones en empresas.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=20",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "B02",
+  "partido": "comp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone dedicar el 1 % del PIB anual a vivienda pública o protegida y controlar los alquileres en zonas tensionadas.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 4",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "C07",
+  "partido": "comp",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone reforzar la cooperación y la gestión compartida de servicios entre municipios rurales, respetando su voluntad; no habla de fusiones.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "C08",
+  "partido": "comp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone superar el actual Senado y convertirlo en un espacio efectivo de representación territorial.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "G02",
+  "partido": "comp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone agilizar los permisos de nuevas plantas renovables, priorizando suelos degradados y respetando los espacios protegidos.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=30",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 30",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "G08",
+  "partido": "comp",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone integrar el pastoreo, los mosaicos agrarios y la gestión de biomasa en la prevención; no habla de rebajar la protección.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "H08",
+  "partido": "comp",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere una relación estratégica privilegiada con China, India y América Latina; no habla de Estados Unidos.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=62",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 62",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "I08",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone eliminar las ayudas a espectáculos con sufrimiento animal y derogar la ley que declara la tauromaquia patrimonio cultural.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=45",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 45",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "J05",
+  "partido": "comp",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone mecanismos que evalúen la eficacia de la administración y de los servicios públicos; no habla de suprimir políticas.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=38",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "J08",
+  "partido": "comp",
+  "de": 2,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone fijar por ley básica estatal una financiación mínima, ratios de población y listas de espera máximas en atención primaria.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "K01",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide llevar al TJUE los acuerdos comerciales que desprotegen a los sectores propios; no nombra Mercosur.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "K05",
+  "partido": "comp",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una moratoria inmediata a las nuevas macrogranjas, limitar su tamaño e impulsar su cierre.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "K06",
+  "partido": "comp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide una reconversión del sector pesquero hacia una producción más sostenible, con un reparto justo de los días de pesca.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=25",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 25",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-18",
+  "id": "K07",
+  "partido": "comp",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone prohibir la caza con perros e incluir a los perros de caza en la ley de bienestar animal.",
+  "fuente": [
+   "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-17",
   "id": "A02",
   "partido": "ccpc",
