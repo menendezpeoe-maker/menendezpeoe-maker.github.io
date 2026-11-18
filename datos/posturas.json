@@ -2,7 +2,7 @@
  "titulo": "Posturas de las candidaturas del Test 29N",
  "licencia": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)",
  "atribucion": "Test 29N (https://test29n.es)",
- "actualizado": "2026-11-17",
+ "actualizado": "2026-11-18",
  "escala": "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B",
  "posturas": [
   {
@@ -322,11 +322,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su diputada votó contra los vetos al proyecto de ley que reducía la jornada laboral a 37,5 horas sin rebaja salarial.",
-   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
-   "fuente_titulo": "Congreso, votación nominal del 10/09/2025 de las enmiendas de totalidad al proyecto de ley de jornada (exp. 121/000058)",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-09-10"
+   "justificacion": "Su programa del 29N propone reducir por ley la jornada a cuatro días (32 horas semanales) sin rebaja de sueldo.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=6",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 6",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A01",
@@ -797,11 +797,11 @@
    "postura_texto": "Claramente B: Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N amplía el impuesto a las grandes fortunas, crea otros nuevos y pide más inversión en servicios públicos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=18",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 18",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A02",
@@ -1291,11 +1291,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa para las generales propone un impuesto a las grandes fortunas.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=207",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 207",
+   "justificacion": "Su programa del 29N propone mantener y ampliar el impuesto a las grandes fortunas, en la línea de la tasa Zucman.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=18",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 18",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1705,15 +1705,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=240",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 240",
+   "justificacion": "Su programa del 29N propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=40",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 40",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -2184,11 +2184,11 @@
    "postura_texto": "Claramente A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone derogar el factor de sostenibilidad y actualizar las pensiones al menos con el IPC, en lugar de contener el gasto.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=247",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 247",
+   "justificacion": "Su programa del 29N propone eliminar el tope de la base máxima de cotización y devolver la edad de jubilación a los 65 años.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=8",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 8",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
@@ -3227,13 +3227,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 1,
    "postura_texto": "Totalmente en desacuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone garantizar por ley que el salario mínimo llegue al 60 % del salario medio.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=6",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 6",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A08",
@@ -3700,15 +3700,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone aumentar la presencia del Estado en sectores estratégicos comprando participaciones en empresas.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=20",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 20",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A09",
@@ -4635,11 +4635,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor del decreto que congelaba los alquileres, que el Congreso tumbó en abril de 2026.",
-   "fuente_url": "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
-   "fuente_titulo": "Público, votación en el Congreso del 28/04/2026",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2026-04-28"
+   "justificacion": "Su programa del 29N propone que los ayuntamientos puedan declarar zonas tensionadas para controlar de forma efectiva los alquileres.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 4",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B01",
@@ -5182,15 +5182,15 @@
    "opcion_b": "Regular los precios y ampliar la vivienda pública",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 4,
-   "postura_texto": "Más bien B: Regular los precios y ampliar la vivienda pública",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Claramente B: Regular los precios y ampliar la vivienda pública",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone dedicar el 1 % del PIB anual a vivienda pública o protegida y controlar los alquileres en zonas tensionadas.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 4",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B02",
@@ -6212,11 +6212,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Promete paralizar de urgencia todos los desahucios de primera vivienda de familias sin alternativa habitacional, sin distinguir si el propietario es particular.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=102",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 102",
+   "justificacion": "Su programa del 29N propone prohibir por ley los desahucios sin alternativa habitacional, sobre todo los de grandes tenedores.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=6",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 6",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B04",
@@ -8036,11 +8036,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa propone crear una red de vivienda pública y reservar vivienda protegida en las nuevas promociones.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=273",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 273",
+   "justificacion": "Su programa del 29N propone dedicar el 1 % del PIB anual a vivienda pública y una ley para expropiar a grandes fondos y ampliar el parque público.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 4",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -9442,11 +9442,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 exige cambiar el modelo de financiación para que la Comunitat Valenciana reciba lo que le corresponde.",
-   "fuente_url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=7",
-   "fuente_titulo": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 7",
+   "justificacion": "Su programa del 29N propone un fondo de nivelación que iguale la financiación valenciana a la media mientras se reforma el sistema.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=57",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 57",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-05"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C02",
@@ -11792,6 +11792,25 @@
    "tipo": "afirmacion",
    "opcion_a": "",
    "opcion_b": "",
+   "partido_id": "comp",
+   "partido": "Compromís – Front Valencià",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N propone reforzar la cooperación y la gestión compartida de servicios entre municipios rurales, respetando su voluntad; no habla de fusiones.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
+   "pregunta_id": "C07",
+   "area": "Organización territorial",
+   "pregunta": "Los municipios muy pequeños deberían fusionarse o compartir obligatoriamente sus servicios.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
    "partido_id": "cha",
    "partido": "CHA – Frente Amplio Aragón",
    "postura": 1,
@@ -12155,15 +12174,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Baldoví y los candidatos de Compromís piden reformar el Senado para convertirlo en una verdadera cámara de representación territorial.",
-   "fuente_url": "https://valenciaplaza.com/valenciaplaza/CompromsproponeunareformaurgentedelSenadoparaqueseareceptivoalosproblemasautonmicos",
-   "fuente_titulo": "Valencia Plaza, Compromís propone una reforma urgente del Senado, 21/04/2019",
-   "fuente_tipo": "declaracion",
-   "fuente_fecha": "2019-04-21"
+   "justificacion": "Su programa del 29N propone superar el actual Senado y convertirlo en un espacio efectivo de representación territorial.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=60",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 60",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C08",
@@ -13888,11 +13907,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N quiere un CGPJ elegido por mérito y capacidad «teniendo en cuenta la soberanía del pueblo»; no detalla el sistema.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=42",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 42",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "D03",
@@ -17517,11 +17536,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó a favor de tramitar una reforma, no la derogación, de la Ley de Seguridad Ciudadana.",
-   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion071/20241029/Votacion001/VOT_20241029212331.json",
-   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): proposición de ley de protección de las libertades y seguridad ciudadana (reforma de la ley mordaza), 29/10/2024",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2024-10-29"
+   "justificacion": "Su programa del 29N propone derogar la Ley de Protección de la Seguridad Ciudadana («ley mordaza»).",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=43",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 43",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E03",
@@ -20481,11 +20500,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa propone facilitar la regularización de las personas migrantes que trabajan en España.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+   "justificacion": "Su programa del 29N propone regularizar y dar derechos a quienes viven aquí, con vías de regularización y de autorización de trabajo.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -21013,11 +21032,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa defiende regularizar, y no expulsar, a las personas migrantes que ya trabajan en España.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=303",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 303",
+   "justificacion": "Su programa del 29N propone regularizar a quienes viven aquí, eliminar los CIE y prohibir las devoluciones ilegales.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F02",
@@ -22018,13 +22037,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone reformas que faciliten la documentación y la autorización de trabajo de las personas migrantes.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F04",
@@ -23730,11 +23749,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N reconoce la ayuda a domicilio como servicio público esencial de la dependencia y pide que el Estado pague el 50 % (p. 57).",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=11",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 11",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F08",
@@ -24167,11 +24186,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone ampliar el IMV a nuevas situaciones y mejorar su cobertura; no menciona exigir búsqueda de empleo.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=12",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 12",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F09",
@@ -24661,11 +24680,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Votó en contra de la PNL del PP que pedía revisar el cierre programado de las centrales nucleares.",
-   "fuente_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion091/20250212/Votacion001/VOT_20250212154036.json",
-   "fuente_titulo": "Congreso de los Diputados, votación nominal (datos abiertos): PNL del PP sobre el cierre programado de la generación nuclear, 12/02/2025",
-   "fuente_tipo": "parlamento",
-   "fuente_fecha": "2025-02-12"
+   "justificacion": "Su programa del 29N propone mantener el calendario de cierre de las centrales nucleares sin aceptar ninguna nueva prórroga.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=30",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G01",
@@ -25170,15 +25189,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone agilizar los permisos de nuevas plantas renovables, priorizando suelos degradados y respetando los espacios protegidos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=30",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 30",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G02",
@@ -25706,11 +25725,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone electrificar el transporte y abandonar los combustibles fósiles con horizonte 2040; no cita la fecha de 2035.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=31",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G03",
@@ -26635,13 +26654,13 @@
    "partido": "Compromís – Front Valencià",
    "postura": 5,
    "postura_texto": "Totalmente de acuerdo",
-   "estimada": true,
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone crear una empresa pública de generación, distribución y comercialización de electricidad.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=29",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 29",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G05",
@@ -27771,6 +27790,25 @@
    "tipo": "afirmacion",
    "opcion_a": "",
    "opcion_b": "",
+   "partido_id": "comp",
+   "partido": "Compromís – Front Valencià",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N propone integrar el pastoreo, los mosaicos agrarios y la gestión de biomasa en la prevención; no habla de rebajar la protección.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
+   "pregunta_id": "G08",
+   "area": "Energía, medioambiente e infraestructuras",
+   "pregunta": "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
    "partido_id": "existe",
    "partido": "Teruel Existe",
    "postura": 4,
@@ -28195,11 +28233,11 @@
    "postura_texto": "Claramente B: Acelerar las renovables invirtiendo en redes y almacenamiento",
    "estimada": false,
    "nota": "",
-   "justificacion": "Plantea abandonar los combustibles fósiles y la energía nuclear e implantar un sistema eléctrico renovable y de autoconsumo.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=127",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 127",
+   "justificacion": "Su programa del 29N apuesta por las renovables con contratos a precio fijo y por abandonar los combustibles fósiles en 2040 (p. 31).",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=29",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 29",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "G09",
@@ -30532,11 +30570,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa defiende la autodeterminación del pueblo saharaui y el fin de la ocupación marroquí.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=300",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 300",
+   "justificacion": "Su programa del 29N defiende la libre determinación del Sáhara Occidental y exige celebrar un referéndum.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H05",
@@ -31444,11 +31482,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Se compromete a dedicar el 0,7 % de los presupuestos públicos consolidados a cooperación internacional, no a recortarla.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=295",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 295",
+   "justificacion": "Su programa del 29N propone garantizar el 0,7 % para la cooperación al desarrollo, blindado por ley.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H07",
@@ -31848,6 +31886,25 @@
    "fuente_titulo": "",
    "fuente_tipo": "",
    "fuente_fecha": ""
+  },
+  {
+   "pregunta_id": "H08",
+   "area": "Política exterior y defensa",
+   "pregunta": "España debería estrechar sus relaciones comerciales con China, aunque genere tensiones con Estados Unidos.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
+   "partido_id": "comp",
+   "partido": "Compromís – Front Valencià",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N quiere una relación estratégica privilegiada con China, India y América Latina; no habla de Estados Unidos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=62",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 62",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H09",
@@ -32660,11 +32717,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa propone que la red concertada sea solo subsidiaria de la pública y retirar conciertos a centros que incumplan.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=38",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 38",
+   "justificacion": "Su programa del 29N propone que la red concertada sea realmente subsidiaria de la pública y prohibir ceder suelo público a centros privados.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=10",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 10",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I01",
@@ -33135,11 +33192,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone tasas universitarias progresivas ligadas a los ingresos, con becas, no una universidad pública gratuita para todos.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=35",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 35",
+   "justificacion": "Su programa del 29N propone un nuevo sistema de tasas universitarias en el que pague menos quien menos tiene, no la gratuidad para todos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=17",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I02",
@@ -35297,15 +35354,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone eliminar las ayudas a espectáculos con sufrimiento animal y derogar la ley que declara la tauromaquia patrimonio cultural.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=45",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 45",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I08",
@@ -35776,11 +35833,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa propone exigir competencia lingüística en valenciano en los puestos de la Administración.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=233",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 233",
+   "justificacion": "Su programa del 29N propone implantar el requisito lingüístico en la función pública estatal de los territorios bilingües.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=44",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 44",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I09",
@@ -36213,11 +36270,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa de 2023 propone que todos los hospitales y servicios sanitarios de gestión privada pasen a gestión pública.",
-   "fuente_url": "https://28m.compromis.net/docs/LF_CAS_Final_ResumenProgramaElectoralCompromis.pdf#page=8",
-   "fuente_titulo": "Resumen de lectura fácil del programa de Compromís para las autonómicas valencianas de 2023, p. 8",
+   "justificacion": "Su programa del 29N propone blindar la gestión pública de la sanidad y derogar la Ley 15/1997, que abre la gestión privada.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 9",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-05"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J01",
@@ -36802,11 +36859,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N quiere blindar la gestión pública y fijar listas de espera máximas por ley; no prevé derivar a clínicas privadas.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 9",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J02",
@@ -37543,11 +37600,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone introducir impuestos sobre las bebidas azucaradas para desincentivar su consumo, siguiendo la recomendación de la OMS.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=67",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 67",
+   "justificacion": "Su programa del 29N propone subir el IVA de los productos nocivos para la salud pública.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=19",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J04",
@@ -37757,6 +37814,25 @@
    "fuente_titulo": "Democracia 21, documento «España Limpia», p. 11",
    "fuente_tipo": "programa",
    "fuente_fecha": "2026-10"
+  },
+  {
+   "pregunta_id": "J05",
+   "area": "Sanidad y gestión pública",
+   "pregunta": "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
+   "partido_id": "comp",
+   "partido": "Compromís – Front Valencià",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N propone mecanismos que evalúen la eficacia de la administración y de los servicios públicos; no habla de suprimir políticas.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=38",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 38",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J05",
@@ -38717,15 +38793,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
-   "estimada": true,
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone fijar por ley básica estatal una financiación mínima, ratios de población y listas de espera máximas en atención primaria.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 9",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J08",
@@ -39192,15 +39268,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide llevar al TJUE los acuerdos comerciales que desprotegen a los sectores propios; no nombra Mercosur.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 64",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
@@ -40165,11 +40241,11 @@
    "postura_texto": "De acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Quiere centrar las ayudas de la PAC en el profesional agrario, rebajar el mínimo para que más productores las reciban y fijar un máximo de 100.000 euros.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=158",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 158",
+   "justificacion": "Su programa del 29N propone priorizar en la PAC a los profesionales que asumen el riesgo, con un régimen simplificado hasta 5.000 €.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K03",
@@ -40621,11 +40697,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N defiende la coexistencia entre la fauna silvestre y las actividades económicas; no menciona el lobo.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=28",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 28",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K04",
@@ -41092,15 +41168,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
-   "estimada": true,
+   "postura": 5,
+   "postura_texto": "Totalmente de acuerdo",
+   "estimada": false,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Su programa del 29N propone una moratoria inmediata a las nuevas macrogranjas, limitar su tamaño e impulsar su cierre.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K05",
@@ -41529,15 +41605,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 3,
-   "postura_texto": "Ni de acuerdo ni en desacuerdo",
+   "postura": 2,
+   "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide una reconversión del sector pesquero hacia una producción más sostenible, con un reparto justo de los días de pesca.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=25",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 25",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K06",
@@ -41909,15 +41985,15 @@
    "opcion_b": "",
    "partido_id": "comp",
    "partido": "Compromís – Front Valencià",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone prohibir la caza con perros e incluir a los perros de caza en la ley de bienestar animal.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K07",
@@ -43737,11 +43813,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa conjunto con el que concurrió Compromís en 2023 defiende aplicar la ley trans, que permite el cambio registral sin informes médicos.",
-   "fuente_url": "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=116",
-   "fuente_titulo": "Programa de Sumar para el 23J de 2023, coalición con la que concurrió Compromís, p. 116",
+   "justificacion": "Su programa del 29N propone blindar la ley trans de 2023, que permite el cambio registral sin informes médicos desde los 16 años.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=55",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 55",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L03",
@@ -44611,11 +44687,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone derogar los acuerdos particulares del Estado con la Santa Sede de 1979 y acabar con la financiación de la Iglesia católica con cargo a los presupuestos.",
-   "fuente_url": "https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=253",
-   "fuente_titulo": "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 253",
+   "justificacion": "Su programa del 29N propone eliminar los privilegios de los acuerdos con la Santa Sede de 1979.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=44",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 44",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2019-04"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L05",
@@ -45580,11 +45656,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N defiende una representación equilibrada de mujeres y hombres; no menciona las cuotas en listas ni en consejos.",
+   "fuente_url": "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=40",
+   "fuente_titulo": "Programa electoral de Compromís-Front Valencià para el 29N, p. 40",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L08",
