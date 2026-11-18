@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 18 nov 2026 · Revisión diaria: sin programas nuevos; /debates/ con el debate de COPE y el de Teruel
+- **Programas (a):** ninguno nuevo a las 9:50. Junts (último PDF de programa en su web, de octubre y de otras elecciones; solo el manifiesto de septiembre), UPN (nada posterior a 2024), CHA (programa autonómico de febrero), PCTE (programas de otros años) sin programa del 29N; Podemos da 403 a la nube; Drago y Ara Més no responden desde la nube (502 del proxy). Sigue 23 de 30.
+- **Hallazgos:** ninguno pendiente. **Posturas (b):** la cola la llevan las pasadas de 14:23 y 21:17 (siguiente bloque: 5, Compromís); no se toca. **Barrido completo n.º 2 (c):** sigue el 20 nov.
+- **Debates (d):** debate de COPE en La Linterna (17 nov) pasa a «emitido» con participantes (Garrido, Sayas, Cuartero, Martín; modera Ángel Expósito), crónica de COPE y pódcast de 1 h 3 min (`completa`); vídeo del directo en el canal oficial de COPE en YouTube (oEmbed: «DIRECTO | Debate electoral 29N con Ángel Expósito…»). Debate de Aragón TV por Teruel (17 nov): participantes, moderador y partidos con la nota de CARTV del 16 nov; sin grabación en Aragón Play todavía, sigue «confirmado» y va a la cola. A la cola también: entrevista de la TVG a Olalla Rodil (17 nov; crtvg/AGalega 403) y debate de Radio Valencia (SER) de cabezas de lista por Valencia (crónica de Europa Press del 13 nov sin fecha exacta del debate; cadenaser.com 403). Sin cambios en los próximos estatales.
+- **Secciones afectadas:** solo /debates/ (y sitemap). Fichas de partido, calendario y portada no cambian.
+
 ## 17 nov 2026 (noche) · Revisar posturas con el programa del 29N: CC-PC
 - **Fuente:** programa de Coalición Canaria y Primero Canarias para el 29N, «Defiende Canarias» (23 págs.; https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf, descargado desde la nube). La página impresa no lleva número; se cita la del PDF.
 - **Pasa a citar el programa (pasaje directo):** E08 1 (p. 10: financiación del Pacto de Estado contra la violencia de género; antes, acuerdo PSOE-CC).
