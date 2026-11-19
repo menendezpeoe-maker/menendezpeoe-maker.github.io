@@ -106,7 +106,7 @@
     "pid": "mj",
     "prov": "almeria",
     "primero": true,
-    "pct": 91
+    "pct": 100
    },
    {
     "pid": "falange",
@@ -195,30 +195,38 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 88
+    "n": 73
    },
    {
     "pid": "pp",
-    "n": 79
+    "n": 71
    },
    {
     "pid": "d21",
-    "n": 56
+    "n": 66
+   },
+   {
+    "pid": "mj",
+    "n": 26
    },
    {
     "pid": "fo",
-    "n": 23
+    "n": 22
    },
    {
     "pid": "pacma",
-    "n": 15
+    "n": 8
    },
    {
     "pid": "fa",
-    "n": 10
+    "n": 7
    },
    {
     "pid": "falange",
+    "n": 6
+   },
+   {
+    "pid": "salf",
     "n": 6
    },
    {
@@ -230,19 +238,11 @@
     "n": 5
    },
    {
-    "pid": "salf",
-    "n": 5
-   },
-   {
-    "pid": "pod",
-    "n": 3
-   },
-   {
     "pid": "pcte",
     "n": 2
    },
    {
-    "pid": "mj",
+    "pid": "pod",
     "n": 2
    },
    {
@@ -250,13 +250,13 @@
     "n": 1
    }
   ],
-  "mediaPrimero": 61,
-  "mediaDistancia": 1.7
+  "mediaPrimero": 62,
+  "mediaDistancia": 1.6
  },
  "neutral": [
   {
    "pid": "d21",
-   "pct": 69
+   "pct": 70
   },
   {
    "pid": "psoe",
@@ -267,16 +267,16 @@
    "pct": 67
   },
   {
+   "pid": "mj",
+   "pct": 62
+  },
+  {
    "pid": "pacma",
    "pct": 59
   },
   {
    "pid": "vox",
    "pct": 59
-  },
-  {
-   "pid": "fa",
-   "pct": 58
   }
  ],
  "posturas": [
@@ -378,9 +378,9 @@
   },
   {
    "pid": "mj",
-   "conocidas": 30,
-   "estimadas": 3,
-   "conFuente": 30
+   "conocidas": 55,
+   "estimadas": 23,
+   "conFuente": 55
   },
   {
    "pid": "falange",
@@ -392,7 +392,7 @@
    "pid": "d21",
    "conocidas": 107,
    "estimadas": 94,
-   "conFuente": 32
+   "conFuente": 52
   },
   {
    "pid": "comp",

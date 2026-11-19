@@ -1,6 +1,406 @@
 [
  {
   "fecha": "2026-11-19",
+  "id": "A05",
+  "partido": "d21",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N remite la reforma de las pensiones a una asamblea ciudadana con tres principios (tranquilidad, sostenibilidad y justicia) sin elegir opción.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "A06",
+  "partido": "mj",
+  "de": 0,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone adaptar la normativa al tamaño de las empresas para evitar cargas excesivas a las pequeñas, sin comprometer estándares; no aborda el umbral de 50.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=34",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 34",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "B02",
+  "partido": "d21",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N prioriza construir (Plan Nacional de Barrios, suelo y licencias en 30 días) y añade una limitación temporal de alquileres en zonas tensionadas.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "B05",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone frenar los usos que expulsan vivienda residencial y gravar la acumulación de vivienda, especialmente turística; no menciona a los ayuntamientos.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=10",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "B06",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=9",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "C03",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N plantea su política educativa en coordinación con las comunidades autónomas y respetando sus competencias.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=45",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "E01",
+  "partido": "d21",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone una nueva ley procesal que permita aplicar con rapidez las herramientas contra la multirreincidencia.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "E01",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N orienta las penas a la reeducación y la reinserción y busca prevenir la reincidencia con empleo y medidas alternativas, no con penas más duras.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=86",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 86",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "F03",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone asegurar a las personas migrantes el acceso sin discriminación a la vivienda y los servicios sociales.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "F07",
+  "partido": "d21",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide una estrategia europea para regiones escasamente pobladas, con incentivos fiscales específicos, inspirada en el modelo ártico.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "F08",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N fija como meta dejar a cero la lista de espera de la dependencia en 2030 y defiende un sistema fiscal más progresivo.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=18",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "F09",
+  "partido": "mj",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone que las ayudas del Ingreso Mínimo Vital sean individuales, no condicionadas y compatibles con el empleo.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=76",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 76",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G01",
+  "partido": "d21",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende la neutralidad tecnológica, sin que el Estado decida qué tecnología gana, junto a un «respaldo firme»; no cita la nuclear.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G02",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G03",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone eliminar los combustibles fósiles y descarbonizar el transporte, sin mencionar la prohibición de 2035.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G04",
+  "partido": "d21",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N busca «más agua sin quitársela a nadie» con desalación, reutilización y riego inteligente; no propone nuevos trasvases.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G05",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone un fondo público para que el Estado participe en generación renovable y apoya que intervenga en el precio de la energía (p. 77).",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G06",
+  "partido": "d21",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-prospera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "G08",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=91",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 91",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "H01",
+  "partido": "d21",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N refuerza el pilar europeo de la OTAN y dice que, «si España va a invertir más en defensa», la primera inversión serán sus profesionales; sin cifra.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "H02",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N aboga por normativa armonizada a nivel europeo y por organismos internacionales más fuertes con acuerdos vinculantes (p. 66).",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=35",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 35",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "H03",
+  "partido": "d21",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere «una Europa más ágil en sus decisiones» y avanzar por métodos alternativos si no hay acuerdo; no cita la unanimidad.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "I02",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende una educación pública gratuita, sin concretar la gratuidad de la universidad.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=45",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "I07",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone incorporar la educación afectivo-sexual al currículo, adaptada a cada etapa; no aborda el permiso de los padres.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=47",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 47",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "I08",
+  "partido": "mj",
+  "de": 0,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N declara que sobre la tauromaquia conviven posiciones distintas en el partido y no propone cambios en su regulación.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
   "id": "J01",
   "partido": "salf",
   "de": 2,
@@ -11,6 +411,198 @@
   "fuente": [
    "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
    "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "J02",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone frenar la privatización sanitaria y recuperar los servicios externalizados, priorizando la gestión pública directa.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "J04",
+  "partido": "d21",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone revisar los impuestos especiales, también el del tabaco, para equipararlos a la UE con un calendario anunciado.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-resuelve",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "J05",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N acompaña muchas medidas de indicadores verificables y evaluación, sin proponer suprimir las que fallen.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=20",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "J08",
+  "partido": "d21",
+  "de": 5,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N fija estándares comunes y obligatorios en el SNS (historia clínica, ratios por calendario vinculante, plazos máximos en autismo).",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-cuida",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "J08",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone garantías comunes de acceso sanitario en todo el territorio y tiempos máximos de espera, coordinando con las comunidades.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=37",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 37",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "K02",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "K03",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N prioriza apoyar a los pequeños productores y la ganadería extensiva, sin detallar el reparto de la PAC.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "K06",
+  "partido": "mj",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=55",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 55",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "K07",
+  "partido": "mj",
+  "de": 0,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N declara que sobre la caza deportiva conviven posiciones distintas en el partido y no propone cambios en su regulación.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "L01",
+  "partido": "mj",
+  "de": 0,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N reconoce sensibilidades distintas sobre el aborto en el partido y no propone incluirlo en la Constitución.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=43",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 43",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "L03",
+  "partido": "mj",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone reforzar la aplicación de la legislación LGTBI y la Estrategia para la Inclusión Social de las Personas Trans.",
+  "fuente": [
+   "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=81",
+   "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 81",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "id": "L08",
+  "partido": "d21",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas.",
+  "fuente": [
+   "https://mi.democracia21.es/programa#bloque-lidera",
+   "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
    "programa",
    "2026-11"
   ]
