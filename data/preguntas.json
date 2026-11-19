@@ -465,10 +465,10 @@
      "2023-07"
     ],
     "d21": [
-     "https://www.democrata.es/politica/democracia-21-concurrira-en-madrid-y-barcelona-con-la-abogada-miriam-gonzalez-como-cabeza-de-lista/",
-     "Demócrata, presentación de la candidatura de Democracia 21",
-     "prensa",
-     "2026-10-10"
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
@@ -529,7 +529,7 @@
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     "bildu": "Su programa del 29N pide que las grandes empresas aporten más y rechaza cualquier vuelta a la austeridad y a los recortes.",
     "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas.",
-    "d21": "Propone aliviar la presión fiscal y, a la vez, recuperar buenos servicios públicos, sin priorizar claramente una opción.",
+    "d21": "Su programa del 29N afirma que «no hace falta subir ni bajar impuestos» para mejorar el sistema fiscal: lo quiere progresivo, transparente, neutral y sencillo.",
     "upn": "UPN prioriza reducir impuestos y deflactar el IRPF.",
     "adel": "Su programa del 29N pide reformar la senda de estabilidad para que no obligue a recortar servicios públicos y una reforma fiscal progresiva.",
     "cha": "Propone recuperar la presión fiscal perdida para mantener los ingresos públicos que sostienen las políticas públicas y su función redistributiva.",
@@ -891,7 +891,7 @@
     "pod": 1,
     "salf": 3,
     "pacma": 2,
-    "d21": 4,
+    "d21": 3,
     "erc": 1,
     "junts": 4,
     "pnv": 2,
@@ -1041,6 +1041,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 80",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1063,7 +1069,8 @@
     "bng": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza.",
     "pnv": "Su programa del 29N pide revalorizar las pensiones con el IPC y reforzar las fuentes de financiación del sistema público.",
     "adel": "Su programa del 29N propone cotizar sin topes por los ingresos reales y aportar impuestos para sostener pensiones públicas revalorizadas con el IPC.",
-    "pacma": "Estimación: su programa del 29N pide reformar la Constitución para que el sistema público de pensiones «no pueda recortarse, ni privatizarse»."
+    "pacma": "Estimación: su programa del 29N pide reformar la Constitución para que el sistema público de pensiones «no pueda recortarse, ni privatizarse».",
+    "d21": "Estimación: su programa del 29N remite la reforma de las pensiones a una asamblea ciudadana con tres principios (tranquilidad, sostenibilidad y justicia) sin elegir opción."
    }
   },
   {
@@ -1093,7 +1100,8 @@
     "bng": 1,
     "ccpc": 4,
     "upc": 1,
-    "comp": 2
+    "comp": 2,
+    "mj": 3
    },
    "est": [
     "psoe",
@@ -1106,7 +1114,8 @@
     "bng",
     "ccpc",
     "upc",
-    "comp"
+    "comp",
+    "mj"
    ],
    "src": {
     "salf": [
@@ -1144,6 +1153,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=34",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 34",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1154,7 +1169,8 @@
     "salf": "Estimación: propone derogar dos normas por cada regulación nueva que afecte a empresas; no menciona el umbral de 50 trabajadores.",
     "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
     "pnv": "Su programa del 29N propone eliminar barreras regulatorias al crecimiento de las pymes.",
-    "d21": "Su programa del 29N propone sustituir los saltos regulatorios al superar umbrales de facturación o plantilla por una transición gradual «en rampa»."
+    "d21": "Su programa del 29N propone sustituir los saltos regulatorios al superar umbrales de facturación o plantilla por una transición gradual «en rampa».",
+    "mj": "Estimación: su programa del 29N propone adaptar la normativa al tamaño de las empresas para evitar cargas excesivas a las pequeñas, sin comprometer estándares; no aborda el umbral de 50."
    }
   },
   {
@@ -1933,7 +1949,7 @@
     "pod": 5,
     "salf": 1,
     "pacma": 4,
-    "d21": 1,
+    "d21": 2,
     "erc": 4,
     "junts": 2,
     "pnv": 3,
@@ -2119,6 +2135,12 @@
      "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2146,7 +2168,8 @@
     "fo": "Estimación: el programa propone construir vivienda pública, supervisión estatal del recurso y medidas contra la especulación, más cerca de regular y ampliar vivienda pública.",
     "pacma": "Estimación: su programa del 29N pide la construcción masiva de vivienda pública e incentivos fiscales para alquilar por debajo del precio medio; no habla de liberar suelo.",
     "existe": "Estimación: su programa de 2023 impulsa una política de vivienda pública «apoyada en parques públicos de vivienda».",
-    "soria": "Estimación: su programa del 29N prioriza un programa nacional de construcción de viviendas, garantías e incentivos; no pide regular precios."
+    "soria": "Estimación: su programa del 29N prioriza un programa nacional de construcción de viviendas, garantías e incentivos; no pide regular precios.",
+    "d21": "Estimación: su programa del 29N prioriza construir (Plan Nacional de Barrios, suelo y licencias en 30 días) y añade una limitación temporal de alquileres en zonas tensionadas."
    }
   },
   {
@@ -2498,6 +2521,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 49",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2517,7 +2546,8 @@
     "bng": "Su programa de 2026 prohíbe los desahucios de personas vulnerables y suspende los lanzamientos sin alternativa habitacional.",
     "salf": "Su contrato de 2026 fija juicio verbal y lanzamiento en 30 días para el inquilino que deja de pagar, sin excusas de vulnerabilidad: a los vulnerables los atiende el Estado.",
     "pnv": "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
-    "adel": "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional."
+    "adel": "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional.",
+    "d21": "Estimación: su programa del 29N quiere que sea la Administración, y no el propietario particular, quien asuma el realojo o el alquiler de los inquilinos vulnerables."
    }
   },
   {
@@ -2555,7 +2585,8 @@
     "existe": 4,
     "mes": 5,
     "adel": 5,
-    "fo": 4
+    "fo": 4,
+    "mj": 4
    },
    "est": [
     "d21",
@@ -2564,7 +2595,8 @@
     "gbai",
     "cha",
     "existe",
-    "fo"
+    "fo",
+    "mj"
    ],
    "src": {
     "psoe": [
@@ -2680,6 +2712,18 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 70",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=10",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 10",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2701,7 +2745,9 @@
     "salf": "Su contrato de 2026 plantea un registro único de alquiler turístico con cumplimiento fiscal, «sin prohibiciones».",
     "bng": "Su programa del 29N pide mecanismos eficaces para frenar la salida de vivienda habitual hacia el alquiler de temporada, por habitaciones y turístico.",
     "existe": "Estimación: su programa del 29N pide regulación allí donde haya excesiva presión turística; no dice quién ni cómo.",
-    "pacma": "Su programa del 29N propone «restringir las licencias de pisos turísticos en cascos históricos y barrios tensionados»."
+    "pacma": "Su programa del 29N propone «restringir las licencias de pisos turísticos en cascos históricos y barrios tensionados».",
+    "d21": "Estimación: su programa del 29N frena el paso de viviendas al alquiler turístico con fiscalidad (IVA del 10 %), sin hablar de prohibiciones municipales.",
+    "mj": "Estimación: su programa del 29N propone frenar los usos que expulsan vivienda residencial y gravar la acumulación de vivienda, especialmente turística; no menciona a los ayuntamientos."
    }
   },
   {
@@ -2737,7 +2783,8 @@
     "cha": 5,
     "existe": 2,
     "mes": 5,
-    "adel": 5
+    "adel": 5,
+    "mj": 4
    },
    "est": [
     "vox",
@@ -2831,6 +2878,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 7",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=9",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 9",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2846,7 +2899,8 @@
     "adel": "Su programa del 29N propone un impuesto a la vivienda vacía de los grandes tenedores.",
     "d21": "Estimación: su programa del 29N quiere movilizar la vivienda vacía con bonificaciones en IRPF e IBI y garantía de cobro, no con recargos.",
     "comp": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
-    "pnv": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos."
+    "pnv": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos.",
+    "mj": "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías."
    }
   },
   {
@@ -3365,6 +3419,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 8",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3378,7 +3438,8 @@
     "salf": "Su contrato de 2026 propone un aval público del 20 % de la entrada para menores de 40 años en su primera vivienda.",
     "soria": "Estimación: su programa del 29N pide «incentivos para adquisición de primera vivienda»; no concreta avales públicos.",
     "pacma": "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos.",
-    "pnv": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales."
+    "pnv": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
+    "d21": "Estimación: su programa del 29N facilita la compra de la primera vivienda a los menores de 35 años eliminando IVA, ITP y AJD; no habla de avales hipotecarios."
    }
   },
   {
@@ -3678,7 +3739,8 @@
     "upl": 1,
     "fo": 5,
     "falange": 5,
-    "ph": 2
+    "ph": 2,
+    "mj": 2
    },
    "est": [
     "pod",
@@ -3688,7 +3750,8 @@
     "mes",
     "adel",
     "upl",
-    "ph"
+    "ph",
+    "mj"
    ],
    "src": {
     "psoe": [
@@ -3816,6 +3879,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 73",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=45",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3839,7 +3908,8 @@
     "falange": "Su programa del 29N trata la educación como competencia exclusiva del Estado, sin potestad de decisión de los entes territoriales.",
     "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
     "salf": "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona.",
-    "adel": "Estimación: su programa del 29N pide el máximo nivel de autonomía y competencias para Andalucía, incluida la gestión de las becas estatales."
+    "adel": "Estimación: su programa del 29N pide el máximo nivel de autonomía y competencias para Andalucía, incluida la gestión de las becas estatales.",
+    "mj": "Estimación: su programa del 29N plantea su política educativa en coordinación con las comunidades autónomas y respetando sus competencias."
    }
   },
   {
@@ -4830,10 +4900,10 @@
      "2025-03"
     ],
     "d21": [
-     "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=13",
-     "Democracia 21, documento «España Limpia», p. 13",
+     "https://mi.democracia21.es/programa#bloque-limpia",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
      "programa",
-     "2026-10"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
@@ -4848,7 +4918,7 @@
     "fa": "Estimación: su programa plantea actualizar la LOREG, pero no concreta listas desbloqueadas o abiertas.",
     "pod": "Estimación: sin postura reciente publicada sobre listas desbloqueadas.",
     "erc": "La ponencia contempla listas desbloqueadas para que el votante ordene a los candidatos.",
-    "d21": "Su documento programático propone reformar la ley electoral para introducir listas desbloqueadas y abiertas.",
+    "d21": "Su programa del 29N propone reformar la ley electoral para reducir el peso de las listas cerradas e introducir listas desbloqueadas y abiertas.",
     "ie": "Propone listas abiertas y elección directa de diputados y senadores, sin listas cerradas."
    }
   },
@@ -4959,10 +5029,10 @@
      "2021-09-21"
     ],
     "d21": [
-     "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=8",
-     "Democracia 21, documento «España Limpia», p. 8",
+     "https://mi.democracia21.es/programa#bloque-limpia",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
      "programa",
-     "2026-10"
+     "2026-11"
     ],
     "upn": [
      "https://theobjective.com/espana/2021-09-21/la-mayoria-del-congreso-rechaza-reformar-el-sistema-de-eleccion-del-cgpj/",
@@ -5030,7 +5100,7 @@
     "erc": "ERC anunció su voto en contra de la proposición del PP para que los jueces elijan a los doce vocales de la carrera judicial del CGPJ.",
     "junts": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
     "bildu": "Anunció su voto en contra de la proposición del PP para que los jueces elijan a la mayoría de vocales del Consejo General del Poder Judicial.",
-    "d21": "Su documento programático propone que los vocales judiciales del CGPJ sean elegidos por los propios jueces.",
+    "d21": "Su programa del 29N propone que los vocales judiciales del CGPJ los elijan los jueces, sin intervención de las asociaciones judiciales.",
     "upn": "UPN apoyó la reforma para que los jueces elijan directamente a la mayoría de los vocales del CGPJ.",
     "upc": "Para el CGPJ propone reforzar el protagonismo del Parlamento y mantiene la elección parlamentaria de los vocales de procedencia judicial.",
     "falange": "Su programa del 29N propone que el Consejo General del Poder Judicial lo elijan los jueces y magistrados.",
@@ -5419,10 +5489,16 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 39",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-limpia",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
-    "mj": "Estimada: su programa del 29N propone facilitar el acceso a las Iniciativas Legislativas Populares y simplificar sus requisitos, sin concretar una votación obligatoria en plazo.",
+    "mj": "Estimación: su programa del 29N propone facilitar el acceso a las Iniciativas Legislativas Populares y simplificar sus requisitos, sin concretar una votación obligatoria en plazo.",
     "psoe": "Estimación: su programa del 29N propone reducir las firmas necesarias para la iniciativa legislativa popular (371); no fija un plazo para votarlas.",
     "pp": "Estimación: no consta postura del PP sobre plazos obligatorios para votar las iniciativas legislativas populares.",
     "vox": "Estimación: no consta una postura de Vox sobre votar las ILP en un plazo fijo.",
@@ -5430,7 +5506,8 @@
     "erc": "Estimación: ERC apoya la participación ciudadana y las ILP, sin propuesta concreta de plazo.",
     "pacma": "Su programa del 29N pide la toma en consideración obligatoria de las ILP por el Congreso, aunque no fija un plazo.",
     "adel": "Su programa del 29N pide votar las iniciativas legislativas populares en un plazo máximo y sin bloqueos.",
-    "comp": "Estimación: su programa del 29N propone reformar la ley de iniciativa legislativa popular para un funcionamiento ágil; no fija un plazo de votación."
+    "comp": "Estimación: su programa del 29N propone reformar la ley de iniciativa legislativa popular para un funcionamiento ágil; no fija un plazo de votación.",
+    "d21": "Estimación: su programa del 29N permite a la ciudadanía activar con el 1 % de firmas del censo una asamblea ciudadana cuyas propuestas irían a referéndum consultivo."
    }
   },
   {
@@ -5790,7 +5867,7 @@
     "fa": 1,
     "pod": 1,
     "salf": 5,
-    "d21": 5,
+    "d21": 4,
     "erc": 2,
     "junts": 5,
     "pnv": 4,
@@ -5805,7 +5882,8 @@
     "cha": 1,
     "mes": 1,
     "adel": 1,
-    "falange": 5
+    "falange": 5,
+    "mj": 2
    },
    "est": [
     "d21",
@@ -5816,7 +5894,8 @@
     "drago",
     "comp",
     "cha",
-    "mes"
+    "mes",
+    "mj"
    ],
    "notes": {
     "erc": "Se abstuvo en la ley contra la multirreincidencia (febrero de 2026) y rechaza endurecer las penas «a golpe de Código Penal»."
@@ -5905,6 +5984,18 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 94",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=86",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 86",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5915,7 +6006,9 @@
     "erc": "Su programa de 2026 pide más jueces para agilizar los procesos de reincidencia y revisar la respuesta penal a delitos con armas.",
     "salf": "Su contrato de 2026 impone prisión sin suspensión a la tercera condena, juicios rápidos en 72 horas y cumplimiento íntegro para delitos graves.",
     "bng": "Estimación: su programa del 29N pide derogar la prisión permanente revisable y prima la reinserción; no trata la multirreincidencia.",
-    "adel": "Su programa del 29N pide derogar el endurecimiento penal de los pequeños hurtos (la reforma de la multirreincidencia) contra el «populismo punitivo»."
+    "adel": "Su programa del 29N pide derogar el endurecimiento penal de los pequeños hurtos (la reforma de la multirreincidencia) contra el «populismo punitivo».",
+    "d21": "Estimación: su programa del 29N propone una nueva ley procesal que permita aplicar con rapidez las herramientas contra la multirreincidencia.",
+    "mj": "Estimación: su programa del 29N orienta las penas a la reeducación y la reinserción y busca prevenir la reincidencia con empleo y medidas alternativas, no con penas más duras."
    }
   },
   {
@@ -7219,6 +7312,12 @@
      "Noticias de Navarra: Barkos acusa al PP de rechazar la regularización (4 feb 2026)",
      "prensa",
      "2026-02-04"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-prospera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7239,7 +7338,8 @@
     "ph": "Su programa del 29N pide la regularización administrativa inmediata de todas las personas migrantes que residen en España.",
     "pp": "Su programa de 2026 prohíbe por ley las regularizaciones masivas e indiscriminadas y deja el arraigo como reconocimiento individual excepcional.",
     "vox": "Su programa de 2026 prohíbe las regularizaciones masivas y propone que quien entre de forma ilegal no pueda regularizar nunca su situación.",
-    "gbai": "Estimación: su senadora Uxue Barkos defendió en el Senado la regularización extraordinaria de inmigrantes frente a la iniciativa del PP."
+    "gbai": "Estimación: su senadora Uxue Barkos defendió en el Senado la regularización extraordinaria de inmigrantes frente a la iniciativa del PP.",
+    "d21": "Estimación: su programa del 29N apuesta por vías legales ordinarias que funcionen para que la irregularidad «no se acumule hasta forzar regularizaciones extraordinarias»."
    }
   },
   {
@@ -7416,11 +7516,17 @@
      "Programa electoral de EAJ-PNV de 2026, p. 25",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-prospera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
     "ccpc": "Estimación: su programa del 29N pide financiar la integración y la convivencia de quienes llegan y combatir los discursos racistas; no habla de expulsiones.",
-    "mj": "Estimada: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
+    "mj": "Estimación: su programa del 29N propone vías permanentes de regularización para quienes viven y trabajan en España, lo contrario de expulsarlos.",
     "psoe": "Su Gobierno aprobó en abril de 2026 una regularización extraordinaria de inmigrantes en situación irregular.",
     "vox": "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
     "fa": "Su programa del 29N defiende un procedimiento estable de regularización en vez de expulsiones, y rechaza los centros de deportación en terceros países.",
@@ -7438,7 +7544,8 @@
     "ie": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
     "ph": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
     "pcte": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones.",
-    "pnv": "Su programa del 29N defiende avanzar en los procesos de regularización previstos en la ley y las vías legales de migración."
+    "pnv": "Su programa del 29N defiende avanzar en los procesos de regularización previstos en la ley y las vías legales de migración.",
+    "d21": "Estimación: su programa del 29N quiere ejecutar las órdenes de expulsión dando prioridad a quienes cometen delitos, sobre todo reincidentes, y fomentar el retorno voluntario."
    }
   },
   {
@@ -7479,7 +7586,8 @@
     "pcte": 1,
     "fo": 5,
     "falange": 5,
-    "ph": 1
+    "ph": 1,
+    "mj": 1
    },
    "est": [
     "salf",
@@ -7621,6 +7729,18 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 81",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-prospera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+     "programa",
+     "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=52",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 52",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7644,7 +7764,9 @@
     "ph": "Propone el reconocimiento de iguales derechos y oportunidades para todos, también para los inmigrantes.",
     "pcte": "Estimación: el programa de 2023 pide confrontar los discursos racistas y xenófobos y la unidad obrera sin distinción de origen; no cita ayudas.",
     "pp": "Su programa de 2026 da prioridad en ayudas a quien tiene arraigo real (empadronamiento, cotización), sin basarla solo en la nacionalidad.",
-    "pacma": "Estimación: su programa del 29N pide «acceso unificado a todos los derechos» de las personas migrantes, incluido el alojamiento."
+    "pacma": "Estimación: su programa del 29N pide «acceso unificado a todos los derechos» de las personas migrantes, incluido el alojamiento.",
+    "d21": "Estimación: su programa del 29N rechaza el discurso xenófobo y propone sancionar la discriminación por origen en el alquiler de vivienda y en el empleo.",
+    "mj": "Su programa del 29N propone asegurar a las personas migrantes el acceso sin discriminación a la vivienda y los servicios sociales."
    }
   },
   {
@@ -8117,7 +8239,7 @@
     "fa": 4,
     "pod": 3,
     "salf": 3,
-    "d21": 3,
+    "d21": 4,
     "upn": 3,
     "bng": 3,
     "ccpc": 4,
@@ -8200,10 +8322,16 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 128",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-lidera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
-    "mj": "Estimada: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
+    "mj": "Estimación: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
     "psoe": "Sin postura estatal documentada; algunos gobiernos autonómicos del PSOE, como el de Castilla-La Mancha, aplican deducciones del IRPF en zonas rurales.",
     "pp": "Su programa de 2026 plantea incentivos económicos en zonas en declive demográfico y bajar impuestos a quien vive o invierte en el medio rural.",
     "fa": "Su programa del 29N propone una fiscalidad diferenciada y bonificaciones en las cotizaciones en los territorios de baja densidad, como ya en Cuenca, Soria o Teruel.",
@@ -8212,7 +8340,8 @@
     "soria": "Su programa del 29N pide medidas excepcionales de fiscalidad para residentes, empresas y autónomos de Soria y una cuota reducida de autónomos en zonas despobladas.",
     "ccpc": "Su programa de 2026 defiende mantener la deducción del 60 % del IRPF en La Palma y extenderla a La Gomera y El Hierro para sostener la población.",
     "vox": "Su programa de 2026 propone una fiscalidad mínima y diferenciada, con bonificaciones y deducciones, en las zonas en riesgo de despoblación.",
-    "adel": "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas."
+    "adel": "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas.",
+    "d21": "Estimación: su programa del 29N pide una estrategia europea para regiones escasamente pobladas, con incentivos fiscales específicos, inspirada en el modelo ártico."
    }
   },
   {
@@ -8251,7 +8380,8 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 4
    },
    "est": [
     "vox",
@@ -8266,7 +8396,8 @@
     "comp",
     "cha",
     "existe",
-    "mes"
+    "mes",
+    "mj"
    ],
    "src": {
     "comp": [
@@ -8364,6 +8495,18 @@
      "Programa electoral de EAJ-PNV de 2026, p. 35",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=18",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8382,7 +8525,9 @@
     "upc": "Su manifiesto del 29N exige un sistema público de cuidados y de atención a la dependencia, con una reforma fiscal progresiva.",
     "existe": "Estimación: su programa de 2023 promete mejorar los servicios de atención a la dependencia; no habla de subir impuestos.",
     "pacma": "Estimación: su programa del 29N pide más plazas en residencias públicas para mayores y enfermos crónicos; no habla de subir impuestos.",
-    "pnv": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos."
+    "pnv": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos.",
+    "d21": "Estimación: su programa del 29N propone que el Estado asuma el 50 % de la financiación de la dependencia y, en impuestos, dice que no hace falta subirlos ni bajarlos.",
+    "mj": "Estimación: su programa del 29N fija como meta dejar a cero la lista de espera de la dependencia en 2030 y defiende un sistema fiscal más progresivo."
    }
   },
   {
@@ -8419,7 +8564,8 @@
     "mes": 1,
     "adel": 1,
     "ie": 4,
-    "ph": 2
+    "ph": 2,
+    "mj": 1
    },
    "est": [
     "fa",
@@ -8502,6 +8648,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 66",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=76",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 76",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8515,7 +8667,8 @@
     "ph": "Estimación: su programa del 29N propone una renta básica universal e incondicional de 950 € al mes; no trata los requisitos del IMV.",
     "ie": "Estimación: el contrato propone transformar los subsidios en incentivos al empleo; no cita el Ingreso Mínimo Vital.",
     "salf": "Su contrato de 2026 retira la prestación a quien rechace dos ofertas adecuadas y reduce el Ingreso Mínimo solo 50 céntimos por euro ganado.",
-    "adel": "Estimación: su programa del 29N propone una renta básica universal e incondicional, compatible con otros ingresos; no habla de exigir búsqueda de empleo."
+    "adel": "Estimación: su programa del 29N propone una renta básica universal e incondicional, compatible con otros ingresos; no habla de exigir búsqueda de empleo.",
+    "mj": "Su programa del 29N propone que las ayudas del Ingreso Mínimo Vital sean individuales, no condicionadas y compatibles con el empleo."
    }
   },
   {
@@ -8537,7 +8690,7 @@
     "pod": 1,
     "salf": 5,
     "pacma": 1,
-    "d21": 5,
+    "d21": 4,
     "erc": 2,
     "junts": 3,
     "pnv": 2,
@@ -8695,6 +8848,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 82",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-lidera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8715,7 +8874,8 @@
     "erc": "Su programa de 2026 reclama que el Estado contribuya al Fondo de Transición Nuclear de la Generalitat.",
     "vox": "Su programa de 2026 garantiza la supervivencia de las nucleares actuales, deroga el calendario de cierre y estudia nuevas centrales.",
     "adel": "Su programa del 29N pide acabar con las subvenciones a la nuclear y sacarla de la taxonomía verde europea.",
-    "psoe": "Su programa del 29N se compromete a mantener el calendario de cierre de las centrales nucleares hasta 2035 (compromiso 240)."
+    "psoe": "Su programa del 29N se compromete a mantener el calendario de cierre de las centrales nucleares hasta 2035 (compromiso 240).",
+    "d21": "Estimación: su programa del 29N defiende la neutralidad tecnológica, sin que el Estado decida qué tecnología gana, junto a un «respaldo firme»; no cita la nuclear."
    }
   },
   {
@@ -8758,7 +8918,8 @@
     "pav": 4,
     "fo": 4,
     "ie": 4,
-    "ph": 4
+    "ph": 4,
+    "mj": 2
    },
    "est": [
     "d21",
@@ -8774,7 +8935,8 @@
     "jmm",
     "upl",
     "soria",
-    "pav"
+    "pav",
+    "mj"
    ],
    "notes": {
     "psoe": "Prioriza el despliegue renovable, pero su programa propone una ley de áreas idóneas que ordene dónde se instalan las plantas.",
@@ -8883,6 +9045,12 @@
      "Programa electoral del BNG de 2026, p. 55",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8902,7 +9070,8 @@
     "fo": "Propone prohibir los parques solares en tierras aptas para el cultivo; no plantea limitar la eólica ni la solar en el resto del campo.",
     "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
     "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
-    "bng": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio."
+    "bng": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
+    "mj": "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas."
    }
   },
   {
@@ -8943,7 +9112,8 @@
     "jmm": 2,
     "upl": 2,
     "soria": 2,
-    "ie": 2
+    "ie": 2,
+    "mj": 4
    },
    "est": [
     "pod",
@@ -8966,7 +9136,8 @@
     "jmm",
     "upl",
     "soria",
-    "ie"
+    "ie",
+    "mj"
    ],
    "src": {
     "comp": [
@@ -9034,6 +9205,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 20",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9047,7 +9224,8 @@
     "erc": "Su programa de 2026 amplía el Programa Auto+ para electrificar el parque de vehículos y facilita los puntos de recarga.",
     "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035.",
     "salf": "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035.",
-    "pnv": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035."
+    "pnv": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035.",
+    "mj": "Estimación: su programa del 29N propone eliminar los combustibles fósiles y descarbonizar el transporte, sin mencionar la prohibición de 2035."
    }
   },
   {
@@ -9069,7 +9247,7 @@
     "pod": 1,
     "salf": 4,
     "pacma": 1,
-    "d21": 3,
+    "d21": 2,
     "erc": 1,
     "junts": 1,
     "bildu": 1,
@@ -9165,6 +9343,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 24",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9180,7 +9364,8 @@
     "pod": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura.",
     "bildu": "EH Bildu votó en contra de tramitar una ley para mantener el trasvase Tajo-Segura, rechazada por 171 votos frente a 170; con más motivo se opone a ampliar trasvases.",
     "adel": "Su programa del 29N propone una ley del ciclo del agua con freno al regadío intensivo y «ni trasvases ni compraventa de derechos de riego».",
-    "comp": "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos."
+    "comp": "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos.",
+    "d21": "Estimación: su programa del 29N busca «más agua sin quitársela a nadie» con desalación, reutilización y riego inteligente; no propone nuevos trasvases."
    }
   },
   {
@@ -9220,7 +9405,8 @@
     "pcte": 5,
     "fo": 4,
     "falange": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -9235,7 +9421,8 @@
     "cha",
     "existe",
     "mes",
-    "fo"
+    "fo",
+    "mj"
    ],
    "src": {
     "comp": [
@@ -9321,6 +9508,12 @@
      "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9338,7 +9531,8 @@
     "falange": "Su programa del 29N propone nacionalizar la producción, el transporte y la distribución de la energía.",
     "fo": "Estimación: el programa califica la energía de sector estratégico, pide un modelo energético planificado y la nacionalización de los sectores estratégicos.",
     "adel": "Su programa de 2026 propone una empresa pública de energía renovable que produzca, distribuya y venda electricidad a precio justo.",
-    "ph": "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública."
+    "ph": "Su programa de 2026 propone crear la empresa pública «Energía Humana» para gestionar la energía de forma pública.",
+    "mj": "Estimación: su programa del 29N propone un fondo público para que el Estado participe en generación renovable y apoya que intervenga en el precio de la energía (p. 77)."
    }
   },
   {
@@ -9362,7 +9556,7 @@
     "pod": 5,
     "salf": 3,
     "pacma": 4,
-    "d21": 3,
+    "d21": 4,
     "erc": 5,
     "junts": 5,
     "pnv": 3,
@@ -9503,6 +9697,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 19",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-prospera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9522,7 +9722,8 @@
     "existe": "Estimación: su programa del 29N pide electrificar la línea convencional y más regionales, y a la vez un corredor de doble vía de altas prestaciones.",
     "comp": "Estimación: su programa del 29N quiere «racionalizar» la alta velocidad liberalizada e invertir en mantenimiento, Cercanías y regionales.",
     "pacma": "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias».",
-    "pnv": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi."
+    "pnv": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi.",
+    "d21": "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente."
    }
   },
   {
@@ -9644,7 +9845,8 @@
     "upl": 5,
     "soria": 4,
     "pav": 4,
-    "pcte": 4
+    "pcte": 4,
+    "mj": 4
    },
    "est": [
     "pod",
@@ -9656,7 +9858,8 @@
     "upl",
     "soria",
     "pav",
-    "pcte"
+    "pcte",
+    "mj"
    ],
    "notes": {
     "psoe": "Su Gobierno propone impulsar pastoreo, desbroce y aprovechamiento forestal contra los incendios, compatibles con la conservación.",
@@ -9740,6 +9943,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 87",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=91",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 91",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9756,7 +9965,8 @@
     "d21": "Su programa del 29N propone gestionar un millón de hectáreas al año con ganadería extensiva, cultivos cortafuegos y quemas controladas, y quitar trabas a recuperar fincas.",
     "existe": "Estimación: su programa de 2023 vincula el riesgo de incendios a la pérdida de silvicultura y ganadería extensiva en los montes.",
     "soria": "Estimación: su programa del 29N pide el «aprovechamiento de nuestros recursos forestales» y compensar a los municipios por sus montes.",
-    "adel": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales."
+    "adel": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
+    "mj": "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales."
    }
   },
   {
@@ -9977,7 +10187,7 @@
     "pod": 1,
     "salf": 2,
     "pacma": 1,
-    "d21": 5,
+    "d21": 4,
     "erc": 1,
     "junts": 3,
     "pnv": 3,
@@ -10143,6 +10353,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 38",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10165,7 +10381,8 @@
     "pcte": "Estimación: el programa de 2023 critica la subida del gasto militar hacia el 2% de la OTAN y pide salir de la OTAN y cerrar las bases extranjeras.",
     "erc": "Su programa de 2026 pide fiscalizar el modelo de defensa y los programas especiales de armamento y evitar el gasto oculto.",
     "vox": "Su programa de 2026 propone aumentar la inversión en Defensa, mejorar los sueldos militares y dotar de medios a las Fuerzas Armadas.",
-    "salf": "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares."
+    "salf": "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares.",
+    "d21": "Estimación: su programa del 29N refuerza el pilar europeo de la OTAN y dice que, «si España va a invertir más en defensa», la primera inversión serán sus profesionales; sin cifra."
    }
   },
   {
@@ -10206,7 +10423,8 @@
     "pcte": 1,
     "fo": 1,
     "falange": 1,
-    "ie": 1
+    "ie": 1,
+    "mj": 4
    },
    "est": [
     "pod",
@@ -10223,7 +10441,8 @@
     "cha",
     "existe",
     "mes",
-    "adel"
+    "adel",
+    "mj"
    ],
    "notes": {
     "fa": "Propone una capacidad fiscal europea permanente y abandonar la unanimidad en política fiscal y exterior."
@@ -10312,6 +10531,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=35",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10329,7 +10554,8 @@
     "ie": "Propone más España y menos UE, por pérdida de soberanía, y un referéndum sobre salir de la UE.",
     "salf": "Su contrato de 2026 propone un referéndum de renegociación europea y, si Bruselas se niega, un segundo referéndum de salida.",
     "bng": "Estimación: su programa del 29N rechaza centralizar en la UE los fondos de cohesión, la PAC y el FEMPA y exige su gestión descentralizada.",
-    "comp": "Su programa del 29N propone reformar los tratados para dar más poder al Parlamento Europeo y un presupuesto de la UE de al menos el 2 % de la RNB."
+    "comp": "Su programa del 29N propone reformar los tratados para dar más poder al Parlamento Europeo y un presupuesto de la UE de al menos el 2 % de la RNB.",
+    "mj": "Estimación: su programa del 29N aboga por normativa armonizada a nivel europeo y por organismos internacionales más fuertes con acuerdos vinculantes (p. 66)."
    }
   },
   {
@@ -10350,7 +10576,7 @@
     "fa": 2,
     "pod": 3,
     "salf": 5,
-    "d21": 1,
+    "d21": 2,
     "erc": 2,
     "junts": 3,
     "pnv": 1,
@@ -10431,6 +10657,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 63",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-lidera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10442,7 +10674,8 @@
     "salf": "Estimación: propone que España vete en el Consejo de la UE Mercosur, el recorte de la PAC y el Pacto Verde; no habla de la regla de unanimidad.",
     "upc": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
     "ie": "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
-    "comp": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal."
+    "comp": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal.",
+    "d21": "Estimación: su programa del 29N quiere «una Europa más ágil en sus decisiones» y avanzar por métodos alternativos si no hay acuerdo; no cita la unanimidad."
    }
   },
   {
@@ -11662,7 +11895,8 @@
     "pcte": 5,
     "fo": 2,
     "falange": 5,
-    "ph": 5
+    "ph": 5,
+    "mj": 4
    },
    "est": [
     "vox",
@@ -11678,7 +11912,8 @@
     "upc",
     "drago",
     "cha",
-    "mes"
+    "mes",
+    "mj"
    ],
    "src": {
     "psoe": [
@@ -11746,6 +11981,12 @@
      "Programa del Partido Humanista para las elecciones generales de 2026, p. 13",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=45",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -11759,7 +12000,8 @@
     "pcte": "Aspira a un sistema de enseñanza único, público y gratuito.",
     "fo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas.",
     "falange": "Su programa del 29N propone una educación nacional gratuita desde las primeras etapas hasta los estudios universitarios.",
-    "ph": "Su programa del 29N propone suprimir todas las tasas de matrícula en las universidades públicas y en la FP de grado medio y superior."
+    "ph": "Su programa del 29N propone suprimir todas las tasas de matrícula en las universidades públicas y en la FP de grado medio y superior.",
+    "mj": "Estimación: su programa del 29N defiende una educación pública gratuita, sin concretar la gratuidad de la universidad."
    }
   },
   {
@@ -12245,7 +12487,8 @@
     "mes": 5,
     "adel": 5,
     "ie": 2,
-    "ph": 4
+    "ph": 4,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -12261,7 +12504,8 @@
     "cha",
     "mes",
     "ie",
-    "ph"
+    "ph",
+    "mj"
    ],
    "src": {
     "vox": [
@@ -12353,6 +12597,12 @@
      "Programa electoral de EAJ-PNV de 2026, p. 10",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=47",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 47",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12370,7 +12620,8 @@
     "ph": "Estimación: el programa propone educación integral que incluya la sexualidad en todos los niveles; no cita el «pin parental».",
     "ie": "Estimación: el contrato defiende «libertad educativa para los padres» y rechaza el «adoctrinamiento en género»; no cita el pin parental.",
     "pacma": "Estimación: su programa del 29N pide planes de educación en diversidad sexual y una educación sexual también afectiva; no habla del permiso parental.",
-    "pnv": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres."
+    "pnv": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres.",
+    "mj": "Estimación: su programa del 29N propone incorporar la educación afectivo-sexual al currículo, adaptada a cada etapa; no aborda el permiso de los padres."
    }
   },
   {
@@ -12413,7 +12664,8 @@
     "upl": 5,
     "soria": 4,
     "pav": 5,
-    "falange": 5
+    "falange": 5,
+    "mj": 3
    },
    "est": [
     "d21",
@@ -12535,6 +12787,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 52",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12555,7 +12813,8 @@
     "adel": "Su programa del 29N pide «ni un euro público para los toros» y derogar la Ley 18/2013 que la regula como patrimonio cultural.",
     "cha": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
     "salf": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal».",
-    "falange": "Su programa del 29N propone protección especial y promoción de la tauromaquia, con festejos patrocinados por la Administración."
+    "falange": "Su programa del 29N propone protección especial y promoción de la tauromaquia, con festejos patrocinados por la Administración.",
+    "mj": "Su programa del 29N declara que sobre la tauromaquia conviven posiciones distintas en el partido y no propone cambios en su regulación."
    }
   },
   {
@@ -12950,7 +13209,8 @@
     "pcte": 1,
     "fo": 2,
     "falange": 2,
-    "ph": 1
+    "ph": 1,
+    "mj": 2
    },
    "est": [
     "psoe",
@@ -12968,7 +13228,8 @@
     "existe",
     "mes",
     "fo",
-    "falange"
+    "falange",
+    "mj"
    ],
    "src": {
     "comp": [
@@ -13066,6 +13327,12 @@
      "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 49",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13084,7 +13351,8 @@
     "falange": "Estimación: su programa del 29N propone poner fin a la externalización y privatización de la sanidad, lo que se opone a derivar a clínicas privadas.",
     "pacma": "Estimación: su programa del 29N propone reintegrar los servicios privatizados y planes de mejora de las listas de espera, no derivar pacientes a la privada.",
     "adel": "Su programa del 29N pide una sanidad 100 % pública y el fin de los conciertos y las externalizaciones.",
-    "psoe": "Estimación: su programa del 29N quiere acabar con las listas de espera reforzando el carácter público del SNS (136); no prevé derivar a la privada."
+    "psoe": "Estimación: su programa del 29N quiere acabar con las listas de espera reforzando el carácter público del SNS (136); no prevé derivar a la privada.",
+    "mj": "Estimación: su programa del 29N propone frenar la privatización sanitaria y recuperar los servicios externalizados, priorizando la gestión pública directa."
    }
   },
   {
@@ -13193,7 +13461,7 @@
     "fa": 5,
     "pod": 4,
     "salf": 1,
-    "d21": 2,
+    "d21": 3,
     "erc": 4,
     "junts": 2,
     "pnv": 3,
@@ -13261,6 +13529,12 @@
      "Programa electoral de Sumar de 2023, p. 17; MÉS concurrió en esa coalición",
      "programa",
      "2023-07"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-resuelve",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13271,7 +13545,8 @@
     "psoe": "El Gobierno presidido por el PSOE subió el IVA de las bebidas azucaradas al 21 % con el fin declarado de reducir su consumo.",
     "comp": "Su programa del 29N propone subir el IVA de los productos nocivos para la salud pública.",
     "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco.",
-    "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco."
+    "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone un impuesto a las bebidas azucaradas y revisar los del alcohol y el tabaco.",
+    "d21": "Estimación: su programa del 29N propone revisar los impuestos especiales, también el del tabaco, para equipararlos a la UE con un calendario anunciado."
    }
   },
   {
@@ -13296,14 +13571,16 @@
     "d21": 5,
     "ccpc": 4,
     "comp": 4,
-    "ie": 4
+    "ie": 4,
+    "mj": 4
    },
    "est": [
     "pod",
     "salf",
     "ccpc",
     "comp",
-    "ie"
+    "ie",
+    "mj"
    ],
    "notes": {
     "psoe": "Su Gobierno institucionalizó por ley la evaluación de políticas públicas, aunque para corregirlas, no para suprimirlas.",
@@ -13347,10 +13624,10 @@
      "2023-07"
     ],
     "d21": [
-     "https://democracia21.es/docs/espana-limpia-democracia21.pdf#page=11",
-     "Democracia 21, documento «España Limpia», p. 11",
+     "https://mi.democracia21.es/programa#bloque-limpia",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
      "programa",
-     "2026-10"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=16",
@@ -13369,6 +13646,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 72",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=20",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13379,10 +13662,11 @@
     "fa": "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
     "pod": "Estimación: sin postura publicada sobre evaluar y suprimir programas.",
     "salf": "Estimación: suprime entes y fundaciones públicas «sin función» y no aplica rebajas sin ahorro certificado por la AIReF; no habla de evaluar leyes.",
-    "d21": "Las políticas y programas de gasto se evaluarán y los resultados decidirán su continuidad, cambio o eliminación.",
+    "d21": "Su programa del 29N somete los programas de gasto a evaluación de eficacia, impacto y coste, y usa los resultados para decidir su continuidad o eliminación.",
     "ie": "Estimación: el contrato propone una auditoría independiente del gasto, cerrar empresas públicas con pérdidas y evaluar la calidad de las leyes; no fija suprimir lo ineficaz.",
     "vox": "Su programa del 29N pide una auditoría sistemática de todos los gastos no imprescindibles de las administraciones, susceptibles de supresión, con análisis públicos.",
-    "pacma": "Su programa del 29N propone valorar la eficacia y eficiencia de cada partida de gasto e incorporar sus consecuencias a la gestión pública."
+    "pacma": "Su programa del 29N propone valorar la eficacia y eficiencia de cada partida de gasto e incorporar sus consecuencias a la gestión pública.",
+    "mj": "Estimación: su programa del 29N acompaña muchas medidas de indicadores verificables y evaluación, sin proponer suprimir las que fallen."
    }
   },
   {
@@ -13606,7 +13890,7 @@
     "pod": 4,
     "salf": 5,
     "pacma": 4,
-    "d21": 5,
+    "d21": 4,
     "erc": 1,
     "junts": 1,
     "pnv": 1,
@@ -13623,7 +13907,8 @@
     "mes": 2,
     "adel": 5,
     "fo": 5,
-    "falange": 5
+    "falange": 5,
+    "mj": 4
    },
    "est": [
     "pacma",
@@ -13638,7 +13923,8 @@
     "drago",
     "cha",
     "existe",
-    "mes"
+    "mes",
+    "mj"
    ],
    "notes": {
     "psoe": "Su programa de 2023 promete fijar por ley tiempos máximos de espera comunes en todo el Sistema Nacional de Salud (120 días para operaciones y 60 para consultas).",
@@ -13740,6 +14026,18 @@
      "Programa electoral de EAJ-PNV de 2026, p. 31",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-cuida",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
+     "programa",
+     "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=37",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 37",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13758,7 +14056,9 @@
     "pacma": "Estimación: el programa del 29N (pp. 55–56) pide al Estado fijar «requisitos mínimos» de la sanidad y «planes de mejora de las listas de espera», sin tiempos máximos.",
     "salf": "Su contrato de 2026 fija 60 días para cirugía, 30 para especialista y 7 para pruebas prioritarias; superados, el paciente elige centro.",
     "adel": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse.",
-    "pnv": "Estimación: su programa del 29N exige al Estado respetar las competencias sanitarias de Euskadi y culminar las transferencias pendientes (p. 32)."
+    "pnv": "Estimación: su programa del 29N exige al Estado respetar las competencias sanitarias de Euskadi y culminar las transferencias pendientes (p. 32).",
+    "d21": "Estimación: su programa del 29N fija estándares comunes y obligatorios en el SNS (historia clínica, ratios por calendario vinculante, plazos máximos en autismo).",
+    "mj": "Estimación: su programa del 29N propone garantías comunes de acceso sanitario en todo el territorio y tiempos máximos de espera, coordinando con las comunidades."
    }
   },
   {
@@ -13974,7 +14274,8 @@
     "soria": 5,
     "pcte": 5,
     "falange": 4,
-    "ie": 2
+    "ie": 2,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -13988,7 +14289,8 @@
     "jmm",
     "upl",
     "soria",
-    "ie"
+    "ie",
+    "mj"
    ],
    "src": {
     "psoe": [
@@ -14086,6 +14388,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 23",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14104,7 +14412,8 @@
     "bng": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción.",
     "pnv": "Su programa del 29N pide reforzar la Ley de la Cadena Alimentaria para garantizar precios que cubran los costes de producción.",
     "adel": "Su programa del 29N pide prohibir de forma efectiva la venta a pérdidas, precios justos en origen y vigilar los márgenes.",
-    "comp": "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción."
+    "comp": "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
+    "mj": "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes."
    }
   },
   {
@@ -14139,7 +14448,8 @@
     "adel": 5,
     "jmm": 4,
     "upl": 4,
-    "soria": 4
+    "soria": 4,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -14153,7 +14463,8 @@
     "mes",
     "jmm",
     "upl",
-    "soria"
+    "soria",
+    "mj"
    ],
    "notes": {
     "vox": "Vox propone orientar las ayudas de la PAC a quienes gestionan directamente las explotaciones y viven de ellas."
@@ -14224,6 +14535,12 @@
      "Programa de Teruel Existe para las generales de 2026, p. 2",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14237,7 +14554,8 @@
     "comp": "Su programa del 29N propone priorizar en la PAC a los profesionales que asumen el riesgo, con un régimen simplificado hasta 5.000 €.",
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa prioriza las explotaciones familiares y elimina derechos históricos de la PAC.",
     "adel": "Su programa del 29N pide ayudas de la PAC ligadas al empleo y a vivir en el territorio, no a las hectáreas.",
-    "existe": "Estimación: su programa del 29N defiende la agricultura y ganadería familiar, una PAC justa e igualar la PAC entre territorios."
+    "existe": "Estimación: su programa del 29N defiende la agricultura y ganadería familiar, una PAC justa e igualar la PAC entre territorios.",
+    "mj": "Estimación: su programa del 29N prioriza apoyar a los pequeños productores y la ganadería extensiva, sin detallar el reparto de la PAC."
    }
   },
   {
@@ -14599,7 +14917,8 @@
     "comp": 2,
     "cha": 2,
     "mes": 2,
-    "adel": 3
+    "adel": 3,
+    "mj": 2
    },
    "est": [
     "pod",
@@ -14611,7 +14930,8 @@
     "comp",
     "cha",
     "mes",
-    "adel"
+    "adel",
+    "mj"
    ],
    "notes": {
     "psoe": "Su Gobierno logró en la UE 143 días de pesca en el Mediterráneo frente a los 9,7 que proponía la Comisión."
@@ -14658,6 +14978,12 @@
      "Programa electoral de Sumar de 2023, p. 64; CHA concurrió en esa coalición",
      "programa",
      "2023-07"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=55",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 55",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14669,7 +14995,8 @@
     "pod": "Estimación: contraria a relajar las restricciones de pesca.",
     "erc": "Estimación: posición intermedia entre pesca y sostenibilidad.",
     "pacma": "PACMA pide detener la sobrepesca y en el mismo programa se declara contraria a la pesca, lo que se opone a relajar las restricciones pesqueras.",
-    "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo."
+    "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
+    "mj": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos."
    }
   },
   {
@@ -14710,7 +15037,8 @@
     "upl": 5,
     "soria": 4,
     "pav": 5,
-    "fo": 4
+    "fo": 4,
+    "mj": 3
    },
    "est": [
     "fa",
@@ -14777,6 +15105,12 @@
      "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37",
      "programa",
      "2026-10"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14787,7 +15121,8 @@
     "fa": "Estimación: no consta una postura nacional verificada de Sumar sobre blindar la caza por ley.",
     "pacma": "Su programa del 29N afirma que la caza no es una herramienta necesaria para la gestión del medio y propone prohibirla.",
     "adel": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
-    "fo": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales."
+    "fo": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales.",
+    "mj": "Su programa del 29N declara que sobre la caza deportiva conviven posiciones distintas en el partido y no propone cambios en su regulación."
    }
   },
   {
@@ -14960,7 +15295,8 @@
     "cha": 5,
     "mes": 5,
     "adel": 5,
-    "falange": 1
+    "falange": 1,
+    "mj": 3
    },
    "est": [
     "pacma",
@@ -14968,7 +15304,8 @@
     "gbai",
     "drago",
     "cha",
-    "mes"
+    "mes",
+    "mj"
    ],
    "notes": {
     "erc": "Defiende el derecho al aborto y permitió tramitar la reforma constitucional, pero comparte objeciones jurídicas y no se ha comprometido a votarla.",
@@ -15076,6 +15413,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=43",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 43",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15091,7 +15434,8 @@
     "vox": "Su programa de 2026 defiende el derecho a la vida desde la concepción hasta la muerte natural.",
     "adel": "Su programa de 2026 garantiza el aborto en la sanidad pública y propone blindarlo en la Constitución.",
     "d21": "Estimación: su programa del 29N se opone a derogar o limitar la ley de plazos del aborto y quiere garantizarlo en la sanidad pública; no habla de la Constitución.",
-    "psoe": "Su programa del 29N impulsará la reforma del artículo 43 de la Constitución, iniciada en 2026, para reforzar la garantía del derecho al aborto."
+    "psoe": "Su programa del 29N impulsará la reforma del artículo 43 de la Constitución, iniciada en 2026, para reforzar la garantía del derecho al aborto.",
+    "mj": "Estimación: su programa del 29N reconoce sensibilidades distintas sobre el aborto en el partido y no propone incluirlo en la Constitución."
    }
   },
   {
@@ -15304,7 +15648,8 @@
     "mes": 5,
     "adel": 5,
     "fo": 1,
-    "falange": 1
+    "falange": 1,
+    "mj": 4
    },
    "est": [
     "salf",
@@ -15317,7 +15662,8 @@
     "drago",
     "cha",
     "mes",
-    "adel"
+    "adel",
+    "mj"
    ],
    "notes": {
     "pp": "Recurrió ante el Tribunal Constitucional los artículos de la Ley trans que permiten el cambio registral desde los 16 años sin informes médicos."
@@ -15424,6 +15770,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 104",
      "programa",
      "2026-11"
+    ],
+    "mj": [
+     "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=81",
+     "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 81",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15443,7 +15795,8 @@
     "d21": "Estimación: su programa del 29N se opone a recortar los derechos LGTBIQ+, a «patologizar identidades» y a derogar normas de no discriminación trans.",
     "gbai": "Estimación: sus bases del 29N piden mantener vigentes los derechos civiles conquistados por el colectivo LGTBI; no detallan la ley trans.",
     "pacma": "Estimación: su programa del 29N suscribe las demandas del colectivo LGTBI+ y el apoyo a las personas trans; no detalla el cambio registral.",
-    "adel": "Estimación: su programa del 29N pide el desarrollo completo de las leyes trans y LGTBI y la opción no binaria en el Registro Civil."
+    "adel": "Estimación: su programa del 29N pide el desarrollo completo de las leyes trans y LGTBI y la opción no binaria en el Registro Civil.",
+    "mj": "Estimación: su programa del 29N propone reforzar la aplicación de la legislación LGTBI y la Estrategia para la Inclusión Social de las Personas Trans."
    }
   },
   {
@@ -15948,7 +16301,7 @@
     "pod": 1,
     "salf": 5,
     "pacma": 2,
-    "d21": 4,
+    "d21": 2,
     "erc": 1,
     "junts": 2,
     "pnv": 2,
@@ -16067,6 +16420,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 100",
      "programa",
      "2026-11"
+    ],
+    "d21": [
+     "https://mi.democracia21.es/programa#bloque-lidera",
+     "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16084,7 +16443,8 @@
     "fo": "Propone suprimir los cupos y derogar las leyes basadas en la discriminación positiva; se declara contra todo tipo de cupos.",
     "bng": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales.",
     "pnv": "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas.",
-    "adel": "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos."
+    "adel": "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos.",
+    "d21": "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas."
    }
   },
   {
