@@ -63,7 +63,7 @@
   4. CC-PC (93; 23 págs.): **HECHO (17 nov, noche).** CC-PC 14 → 26 posturas que citan el programa del 29N.
   5. Compromís-Front Valencià (89; 64 págs., en valenciano): **HECHO (18 nov, tarde).** Compromís 18 → 66 posturas que citan el programa del 29N. Su URL oficial da 404 desde la nube el 18 nov: usar el PDF aportado por el titular (uploads, 15 nov).
   6. Adelante Andalucía (83; 134 págs.): **HECHO (18 nov, noche).** Adelante 24 → 73 posturas que citan el programa del 29N.
-  7. SALF (78; 40 págs.).
+  7. SALF (78; 40 págs.): **HECHO (19 nov, tarde).** SALF 29 → 48 posturas que citan el programa del 29N. seacabolafiesta.com da 403 a la nube: usar la copia del titular (test29n/programas/SALF_Contrato_Electoral_29N.pdf).
   8. Democracia 21 (90; web por bloques) y M+J (77).
   9. BNG (69; 91 págs.).
   10. Falange (71) y Frente Obrero (66).

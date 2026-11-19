@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-18",
- "datos": "2026-11-18",
+ "generado": "2026-11-19",
+ "datos": "2026-11-19",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -218,10 +218,6 @@
     "n": 10
    },
    {
-    "pid": "vox",
-    "n": 6
-   },
-   {
     "pid": "falange",
     "n": 6
    },
@@ -230,8 +226,12 @@
     "n": 5
    },
    {
+    "pid": "vox",
+    "n": 5
+   },
+   {
     "pid": "salf",
-    "n": 4
+    "n": 5
    },
    {
     "pid": "pod",
@@ -314,7 +314,7 @@
    "pid": "salf",
    "conocidas": 106,
    "estimadas": 64,
-   "conFuente": 48
+   "conFuente": 58
   },
   {
    "pid": "erc",

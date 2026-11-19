@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-19",
+  "id": "J01",
+  "partido": "salf",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: si se superan los 60 días de espera, el paciente elige centro público o privado y lo paga la sanidad pública; no habla de la gestión.",
+  "fuente": [
+   "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+   "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-18",
   "id": "A04",
   "partido": "comp",
