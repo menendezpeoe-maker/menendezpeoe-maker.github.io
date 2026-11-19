@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "dims": [
   {
    "id": "eco",
@@ -657,10 +657,10 @@
      "2026-11"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-     "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 4",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "adel": [
      "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=58",
@@ -705,7 +705,7 @@
     "bildu": "Su programa del 29N propone aumentar el peso del impuesto a la banca y a las grandes fortunas.",
     "bng": "Su programa de 2026 blinda los impuestos específicos a la banca, las energéticas y las grandes fortunas y aumenta su progresividad.",
     "comp": "Su programa del 29N propone mantener y ampliar el impuesto a las grandes fortunas, en la línea de la tasa Zucman.",
-    "salf": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
+    "salf": "Su contrato del 29N suprime Sucesiones, Donaciones y Patrimonio, y también el impuesto a las grandes fortunas.",
     "adel": "Su programa del 29N propone un impuesto estatal sobre la riqueza y la tierra que sustituya a Patrimonio y grave las grandes fortunas.",
     "cha": "Propone recuperar el Impuesto sobre el Patrimonio o sustituirlo por otro que grave la riqueza, además de subir el IRPF a las rentas más altas.",
     "upc": "Su manifiesto del 29N propone reforzar la tributación de las grandes fortunas y de los sectores bancario y energético.",
@@ -804,10 +804,10 @@
      "2026-11"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=6",
-     "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 6",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://static.esquerra.cat/uploads/20230905/e2023-programa.pdf#page=56",
@@ -861,7 +861,7 @@
     "pod": "Su programa europeo de 2024 pide reformar las reglas fiscales y no fijar límites de déficit iguales para todos.",
     "erc": "Estimación: ERC prioriza el gasto social y critica la deuda por gasto militar, no la contención del gasto.",
     "bildu": "Su programa del 29N propone derogar la reforma del artículo 135 que prioriza el pago de la deuda y revertir las reglas fiscales.",
-    "salf": "Su programa autonómico de 2026 propone fijar en el Estatuto límites al endeudamiento y a la presión fiscal.",
+    "salf": "Su contrato del 29N fija un techo de gasto real y déficit cero en 2030, y ninguna bajada de impuestos sin ahorro certificado por la AIReF.",
     "comp": "Su programa del 29N propone reformar el artículo 135 de la Constitución para suprimir la prioridad absoluta del pago de la deuda pública.",
     "cha": "Pide derogar el Pacto de estabilidad y revisar los objetivos de déficit y deuda pública, en lugar de priorizar su reducción.",
     "upc": "Pide que las reglas fiscales no impongan reducir deuda y déficit a corto plazo y rechaza los límites del 3 % y el 60 %, sin fundamento económico.",
@@ -945,6 +945,12 @@
      "El Salto, votación de la reforma de jubilación flexible, 22/01/2025",
      "parlamento",
      "2025-01-22"
+    ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=20",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 20",
+     "programa",
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=25",
@@ -1042,6 +1048,7 @@
     "psoe": "Su programa del 29N apuesta por reforzar los ingresos de la Seguridad Social con nuevas fuentes de financiación y la cuota de solidaridad (compromiso 98).",
     "fa": "Su programa del 29N blinda la revalorización con el IPC y refuerza los ingresos de la Seguridad Social con el destope de bases y la cotización de solidaridad.",
     "pod": "Votó contra la reforma que incentiva retrasar la jubilación hasta los 72 años por alargarla de forma encubierta.",
+    "salf": "Estimación: blinda la revalorización con el IPC y añade una cuenta individual con el 2 % del salario; no sube cotizaciones ni retrasa la jubilación.",
     "erc": "Su programa de 2026 rechaza recortar o privatizar las pensiones y propone reforzar su financiación y revalorizarlas con el IPC.",
     "junts": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
     "bildu": "Su programa del 29N rechaza recortes y subir la edad de jubilación o el periodo de cómputo, y blinda la revalorización con el IPC.",
@@ -1102,6 +1109,12 @@
     "comp"
    ],
    "src": {
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=31",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 31",
+     "programa",
+     "2026-11"
+    ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=48",
      "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 48",
@@ -1138,6 +1151,7 @@
     "pp": "Su programa de 2026 revisará los umbrales que castigan el crecimiento y simplificará las obligaciones de las empresas de hasta 250 trabajadores.",
     "vox": "Vox propone reducir drásticamente las cargas y la regulación sobre las empresas.",
     "pod": "Estimación: contraria a suavizar obligaciones laborales de las empresas, en línea con su defensa de los derechos laborales.",
+    "salf": "Estimación: propone derogar dos normas por cada regulación nueva que afecte a empresas; no menciona el umbral de 50 trabajadores.",
     "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
     "pnv": "Su programa del 29N propone eliminar barreras regulatorias al crecimiento de las pymes.",
     "d21": "Su programa del 29N propone sustituir los saltos regulatorios al superar umbrales de facturación o plantilla por una transición gradual «en rampa»."
@@ -1650,10 +1664,10 @@
      "2023-07"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-     "Programa electoral de SALF para Castilla y León, p. 4 (programa autonómico CyL 2026; mismo asunto)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "fo": [
      "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
@@ -1681,7 +1695,7 @@
     "adel": "Su programa del 29N propone un suelo común en sucesiones y donaciones, con tributación mínima en todo el Estado.",
     "cha": "Propone mantener el impuesto de sucesiones, con exenciones y bonificaciones para la empresa familiar, en lugar de eliminarlo.",
     "upc": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar.",
-    "salf": "El programa autonómico bonifica al 99 % Sucesiones y Donaciones; solo es autonómico, pero respalda su rechazo a gravar herencias.",
+    "salf": "Su contrato del 29N suprime Sucesiones y Donaciones: «Heredar la casa de tus padres no es un hecho imponible».",
     "fo": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos.",
     "falange": "Estimación: su programa del 29N propone revisar el impuesto de sucesiones con criterios de progresividad según cada contribuyente, no eliminarlo entre padres e hijos."
    }
@@ -2211,10 +2225,10 @@
      "2022-11-29"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=5",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 5",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "junts": [
      "https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html",
@@ -2306,7 +2320,7 @@
     "pp": "Su programa de 2026 promete una ley para que el propietario recupere la vivienda ocupada en 48 horas desde el primer día, por orden judicial.",
     "vox": "Su programa de 2026 propone desalojar la vivienda okupada en menos de 24 horas y devolver la posesión inmediata al propietario.",
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
-    "salf": "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
+    "salf": "Su contrato del 29N propone que, con denuncia y título de propiedad, la Policía desaloje al okupa en 48 horas.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
     "junts": "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
     "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
@@ -2764,6 +2778,12 @@
      "declaracion",
      "2025-05-28"
     ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
+     "programa",
+     "2026-11"
+    ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=19",
      "Programa electoral de ERC de 2026, p. 19",
@@ -2818,6 +2838,7 @@
     "pp": "Propone incentivos, y no recargos, para que las viviendas vacías salgan al alquiler.",
     "fa": "Su programa del 29N propone un IBI progresivo que penalice las viviendas vacías.",
     "pod": "Belarra criticó por insuficiente el recargo del PSOE a la vivienda vacía, «pura calderilla» para los fondos.",
+    "salf": "Estimación: propone eliminar por completo el IBI, sobre el que se aplica el recargo a las viviendas vacías; no lo menciona expresamente.",
     "erc": "Su programa de 2026 sube el IVA y el ITP en la compra de vivienda para usos no habituales, incluidas las viviendas vacías.",
     "bildu": "EH Bildu votó a favor de la ley de vivienda, que negoció con el Gobierno y que permite a los ayuntamientos aplicar un recargo de hasta el 150 % del IBI a las viviendas vacías durante más de dos años.",
     "bng": "Su programa de 2026 plantea medidas fiscales para movilizar viviendas vacías y permite impuestos municipales sobre ellas.",
@@ -3426,6 +3447,12 @@
     "psoe": "El acuerdo PSC-ERC de 2024 prevé que la Agencia Tributaria de Cataluña recaude todos los impuestos, pero la dirección federal del PSOE niega que sea un concierto y Hacienda solo ha concretado la cesión del IRPF."
    },
    "src": {
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=14",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 14",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://maldita.es/malditahemeroteca/20240731/ceder-tributos-cataluna-psoe/",
      "Maldita, julio de 2024",
@@ -3495,6 +3522,7 @@
    },
    "why": {
     "pod": "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
+    "salf": "Estimación: pide una financiación con criterios iguales para todas las comunidades y rechaza los modelos «ad hoc» para los socios separatistas.",
     "bng": "Su programa de 2026 propone un modelo de financiación basado en el concierto económico, con una Hacienda Galega.",
     "bildu": "EH Bildu considera legítima la financiación singular de Cataluña y que merece una mejor financiación.",
     "fo": "Propone que todas las comunidades tengan las mismas competencias y el mismo régimen fiscal, acabando con las diferencias entre regiones.",
@@ -3902,6 +3930,12 @@
      "declaracion",
      "2023-06-24"
     ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+     "programa",
+     "2026-11"
+    ],
     "pp": [
      "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=15",
      "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 15",
@@ -3939,6 +3973,7 @@
     "vox": "Vox propone un Estado unitario, no federal, y limitar la capacidad legislativa autonómica.",
     "fa": "Su programa del 29N propone cambiar el modelo territorial de la Constitución en un sentido federal y plurinacional, hacia una República Federal.",
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal.",
+    "salf": "Estimación: cifra en 57.000 M€ el «sobrecoste autonómico por duplicidades» y quiere recortarlo; no habla de un Estado federal.",
     "erc": "Estimación: ERC busca la independencia por referéndum, no un Estado federal.",
     "pp": "Su programa de 2026 afirma defender el Estado de las Autonomías y el autogobierno de las comunidades en el marco de la Constitución.",
     "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
@@ -4523,6 +4558,12 @@
     "adel"
    ],
    "src": {
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=14",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 14",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.ondavasca.com/el-congreso-apoya-tramitar-el-concierto-y-el-cupo-sin-cambios/",
      "Tramitación en lectura única del Concierto, el Convenio y el Cupo (21 de febrero de 2023)",
@@ -4583,6 +4624,7 @@
     "vox": "Vox votó en el Congreso contra tramitar sin cambios el Concierto, el Convenio navarro y el cálculo del Cupo 2022-2026.",
     "fa": "Sus partidos están divididos: su portavoz económico criticó el cupo vasco, pero esa posición es minoritaria en Movimiento Sumar.",
     "pod": "Estimación: sin postura reciente publicada sobre el concierto y el convenio.",
+    "salf": "Estimación: pide criterios de financiación objetivos e iguales para todas las comunidades; no cita el concierto vasco ni el convenio navarro.",
     "pnv": "Su programa del 29N defiende el Concierto Económico «frente a cualquier ataque» y pide ampliar las capacidades financiero-fiscales vascas (p. 39).",
     "bildu": "Su programa del 29N defiende ampliar el Concierto y el Convenio y un nuevo cálculo del Cupo que no perjudique a la sociedad vasca.",
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
@@ -7083,10 +7125,10 @@
      "2026-01"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=17",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 17",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://www.elsaltodiario.com/migracion/socios-del-gobierno-presionan-desatascar-regularizacion-migrantes",
@@ -7182,7 +7224,7 @@
    "why": {
     "fa": "Su programa del 29N propone culminar la regularización extraordinaria de 2026 y crear un procedimiento estable de regularización.",
     "mj": "Su programa del 29N propone vías accesibles y permanentes de regularización de las personas migrantes y prevenir la irregularidad sobrevenida.",
-    "salf": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
+    "salf": "Su contrato del 29N deroga la regularización de 2026 y propone prohibir por ley orgánica cualquier regularización masiva.",
     "pnv": "Su programa del 29N propone avanzar en los procesos de regularización previstos en la ley para quienes cumplen los requisitos.",
     "bildu": "Su programa del 29N pide una regularización efectiva y estable y una nueva Ley de Extranjería.",
     "upn": "Votó a favor de la moción del PP que pide al Gobierno renunciar a la regularización extraordinaria de inmigrantes en situación irregular.",
@@ -7292,10 +7334,10 @@
      "2026-01-26"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=17",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 17",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=17",
@@ -7383,7 +7425,7 @@
     "vox": "Su programa de 2026 propone repatriar a quienes permanezcan en situación ilegal y deportar a quienes cometan delitos graves.",
     "fa": "Su programa del 29N defiende un procedimiento estable de regularización en vez de expulsiones, y rechaza los centros de deportación en terceros países.",
     "pod": "Pactó con el Gobierno una regularización extraordinaria de migrantes en lugar de su expulsión.",
-    "salf": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
+    "salf": "Su contrato del 29N propone ejecutar el 100 % de las órdenes de expulsión, con salida en 48 horas, y acabar con las regularizaciones.",
     "erc": "Su programa de 2026 propone acabar con la externalización de las fronteras y garantizar vías legales y seguras para migrar.",
     "bildu": "Su programa del 29N defiende la regularización y rechaza las devoluciones sumarias y los CIE.",
     "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante.",
@@ -7479,10 +7521,10 @@
      "2026-06-25"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=19",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 19",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "junts": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion191/20260625/Votacion013/VOT_20260625150802.json",
@@ -7585,7 +7627,7 @@
     "psoe": "Considera ilegal la «prioridad nacional» de PP y Vox porque vulnera la igualdad del artículo 14 y presenta iniciativas en su contra.",
     "vox": "Su programa de 2026 establece el acceso preferente de los españoles a vivienda pública, guarderías, ayudas, prestaciones y servicios sociales.",
     "pod": "Votó en contra de la proposición de Vox sobre la prioridad nacional en las prestaciones públicas.",
-    "salf": "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
+    "salf": "Estimación: exige cinco años de residencia legal y cotización para prestaciones no contributivas, ayuda al alquiler y vivienda pública.",
     "erc": "Su programa de 2026 pide igualdad de trato y oportunidades con independencia del origen en empleo, vivienda y servicios.",
     "junts": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "pnv": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
@@ -10348,6 +10390,12 @@
     "fa": "Propone limitar la unanimidad en el Consejo de la UE y reducir las competencias del Consejo Europeo."
    },
    "src": {
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
+     "programa",
+     "2026-11"
+    ],
     "psoe": [
      "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=109",
      "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 109",
@@ -10391,6 +10439,7 @@
     "vox": "El programa de Vox exige recuperar la unanimidad en el Consejo de la UE para proteger la soberanía nacional.",
     "fa": "Su programa del 29N propone abandonar la unanimidad en política exterior de la UE cuando estén en juego los derechos humanos.",
     "pod": "Estimación: sin postura reciente publicada sobre la unanimidad en la UE.",
+    "salf": "Estimación: propone que España vete en el Consejo de la UE Mercosur, el recorte de la PAC y el Pacto Verde; no habla de la regla de unanimidad.",
     "upc": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
     "ie": "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
     "comp": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal."
@@ -12123,6 +12172,12 @@
      "prensa",
      "2020-05-20"
     ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+     "programa",
+     "2026-11"
+    ],
     "falange": [
      "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47",
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 47",
@@ -12149,6 +12204,7 @@
     "erc": "Estimación: ERC defiende becas ambiciosas sin barreras de acceso.",
     "pp": "Su programa de 2026 hace de la beca un derecho para quien la necesite y apruebe y crea becas de excelencia para los mejores expedientes.",
     "pod": "La reforma de 2020 del ministerio de Unidas Podemos bajó al aprobado (5) la nota exigida para las becas.",
+    "salf": "Estimación: quiere conceder «únicamente por mérito y capacidad» las becas para preparar oposiciones; no menciona las becas de estudios.",
     "falange": "Estimación: su programa del 29N propone ajustar las becas al poder adquisitivo y a los méritos académicos, lo que apunta a exigir rendimiento.",
     "bng": "Estimación: su programa del 29N pide un sistema de becas universitarias que garantice el acceso universal a la enseñanza superior; no habla de notas.",
     "adel": "Estimación: su programa del 29N pide que las becas no dependan «casi solo de la nota media»; no fija una nota mínima."
@@ -12667,7 +12723,7 @@
     "vox": 1,
     "fa": 5,
     "pod": 5,
-    "salf": 2,
+    "salf": 1,
     "pacma": 4,
     "d21": 2,
     "erc": 4,
@@ -12751,6 +12807,12 @@
      "programa",
      "2024-04-01"
     ],
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
+     "programa",
+     "2026-11"
+    ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=41",
      "Programa electoral de ERC de 2026, p. 41",
@@ -12831,6 +12893,7 @@
     ]
    },
    "why": {
+    "salf": "Estimación: si se superan los 60 días de espera, el paciente elige centro público o privado y lo paga la sanidad pública; no habla de la gestión.",
     "psoe": "Su programa del 29N propone limitar la privatización de la sanidad y fijar la gestión directa como modalidad preferente (compromiso 138).",
     "fa": "Su programa del 29N propone la gestión pública directa y derogar la Ley 15/1997, que abrió la puerta a la gestión privada.",
     "mj": "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
@@ -12957,10 +13020,10 @@
      "2023-05"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=18",
-     "Programa electoral de SALF para Castilla y León, p. 18 (programa autonómico CyL 2026; mismo asunto)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "pcte": [
      "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=6",
@@ -13014,7 +13077,7 @@
     "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
     "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
     "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos.",
-    "salf": "Propone concertar con clínicas privadas, sin coste para el paciente, cuando la pública no dé abasto y fija tope de 30 y 90 días.",
+    "salf": "Su contrato del 29N fija 60 días para operarse; superado el plazo, el paciente elige centro, público o privado, y lo paga la sanidad pública.",
     "pcte": "Medida 17: derogar todo tipo de conciertos sanitarios, por un sistema de salud público y único.",
     "ph": "Su programa del 29N pide derogar todas las fórmulas de colaboración público-privada en la sanidad y blindar su gestión pública directa.",
     "fo": "Estimación: el programa propone acabar con la externalización y privatización de la sanidad, lo que se opone a derivar pacientes a clínicas privadas pagadas con dinero público.",
@@ -13247,6 +13310,12 @@
     "fa": "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas."
    },
    "src": {
+    "salf": [
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+     "programa",
+     "2026-11"
+    ],
     "comp": [
      "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=38",
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 38",
@@ -13309,6 +13378,7 @@
     "pp": "Su programa de 2026 evaluará cada año programas de gasto con criterios independientes y retirará recursos a los que no cumplan.",
     "fa": "Propone reforzar la evaluación de políticas públicas e informes obligatorios sobre su eficacia, sin plantear suprimirlas.",
     "pod": "Estimación: sin postura publicada sobre evaluar y suprimir programas.",
+    "salf": "Estimación: suprime entes y fundaciones públicas «sin función» y no aplica rebajas sin ahorro certificado por la AIReF; no habla de evaluar leyes.",
     "d21": "Las políticas y programas de gasto se evaluarán y los resultados decidirán su continuidad, cambio o eliminación.",
     "ie": "Estimación: el contrato propone una auditoría independiente del gasto, cerrar empresas públicas con pérdidas y evaluar la calidad de las leyes; no fija suprimir lo ineficaz.",
     "vox": "Su programa del 29N pide una auditoría sistemática de todos los gastos no imprescindibles de las administraciones, susceptibles de supresión, con análisis públicos.",
@@ -13790,10 +13860,10 @@
      "2026-01-21"
     ],
     "salf": [
-     "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
-     "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+     "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+     "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
      "programa",
-     "2026-03"
+     "2026-11"
     ],
     "erc": [
      "https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=32",
@@ -13852,7 +13922,7 @@
    },
    "why": {
     "comp": "Estimación: su programa del 29N pide llevar al TJUE los acuerdos comerciales que desprotegen a los sectores propios; no nombra Mercosur.",
-    "salf": "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
+    "salf": "Su contrato del 29N propone que España vete en el Consejo de la UE el acuerdo con Mercosur, el recorte de la PAC y el Pacto Verde.",
     "erc": "Su programa de 2026 pide al Gobierno rechazar la ratificación del acuerdo comercial UE-Mercosur.",
     "upn": "Se abstuvo ante la proposición no de ley de Vox que pedía rechazar el acuerdo UE-Mercosur, que el Congreso no aprobó en febrero de 2026.",
     "bng": "Su programa de 2026 rechaza el acuerdo UE-Mercosur por los perjuicios para las explotaciones agrarias gallegas.",

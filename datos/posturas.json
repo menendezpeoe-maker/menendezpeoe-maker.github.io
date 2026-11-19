@@ -2,7 +2,7 @@
  "titulo": "Posturas de las candidaturas del Test 29N",
  "licencia": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)",
  "atribucion": "Test 29N (https://test29n.es)",
- "actualizado": "2026-11-18",
+ "actualizado": "2026-11-19",
  "escala": "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B",
  "posturas": [
   {
@@ -1082,11 +1082,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa autonómico de 2026 propone suprimir el impuesto sobre el patrimonio y bajar impuestos al ahorro.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-   "fuente_titulo": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 4",
+   "justificacion": "Su contrato del 29N suprime Sucesiones, Donaciones y Patrimonio, y también el impuesto a las grandes fortunas.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A03",
@@ -1538,11 +1538,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa autonómico de 2026 propone fijar en el Estatuto límites al endeudamiento y a la presión fiscal.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=6",
-   "fuente_titulo": "Programa electoral de SALF para las autonómicas de Castilla y León de 2026, p. 6",
+   "justificacion": "Su contrato del 29N fija un techo de gasto real y déficit cero en 2030, y ninguna bajada de impuestos sin ahorro certificado por la AIReF.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A04",
@@ -1956,11 +1956,11 @@
    "postura_texto": "Las dos por igual",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: blinda la revalorización con el IPC y añade una cuenta individual con el 2 % del salario; no sube cotizaciones ni retrasa la jubilación.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=20",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 20",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
@@ -2450,11 +2450,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: propone derogar dos normas por cada regulación nueva que afecte a empresas; no menciona el umbral de 50 trabajadores.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=31",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 31",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A06",
@@ -3970,11 +3970,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "El programa autonómico bonifica al 99 % Sucesiones y Donaciones; solo es autonómico, pero respalda su rechazo a gravar herencias.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=4",
-   "fuente_titulo": "Programa electoral de SALF para Castilla y León, p. 4 (programa autonómico CyL 2026; mismo asunto)",
+   "justificacion": "Su contrato del 29N suprime Sucesiones y Donaciones: «Heredar la casa de tus padres no es un hecho imponible».",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=13",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 13",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A10",
@@ -5490,11 +5490,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "En su programa para Castilla y León (2026) propone desalojar las viviendas ocupadas ilegalmente en un plazo aún menor, de 24 horas como máximo.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
-   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "justificacion": "Su contrato del 29N propone que, con denuncia y título de propiedad, la Policía desaloje al okupa en 48 horas.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=5",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 5",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B03",
@@ -6915,11 +6915,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: propone eliminar por completo el IBI, sobre el que se aplica el recargo a las viviendas vacías; no lo menciona expresamente.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=7",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B06",
@@ -8796,11 +8796,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: pide una financiación con criterios iguales para todas las comunidades y rechaza los modelos «ad hoc» para los socios separatistas.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=14",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 14",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C01",
@@ -10221,11 +10221,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: cifra en 57.000 M€ el «sobrecoste autonómico por duplicidades» y quiere recortarlo; no habla de un Estado federal.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C04",
@@ -12482,11 +12482,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: pide criterios de financiación objetivos e iguales para todas las comunidades; no cita el concierto vasco ni el convenio navarro.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=14",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 14",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C09",
@@ -20272,11 +20272,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "En su programa para Castilla y León (2026) propone un plan de deportación de inmigrantes en situación irregular en lugar de regularizarlos.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
-   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "justificacion": "Su contrato del 29N deroga la regularización de 2026 y propone prohibir por ley orgánica cualquier regularización masiva.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=17",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F01",
@@ -20785,11 +20785,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "En su programa para Castilla y León (2026) propone expulsar o repatriar a los inmigrantes en situación irregular.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=7",
-   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "justificacion": "Su contrato del 29N propone ejecutar el 100 % de las órdenes de expulsión, con salida en 48 horas, y acabar con las regularizaciones.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=17",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 17",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F02",
@@ -21317,11 +21317,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "En su programa para Castilla y León (2026) propone que las ayudas sociales autonómicas se concedan prioritariamente a españoles y residentes legales.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=8",
-   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "justificacion": "Estimación: exige cinco años de residencia legal y cotización para prestaciones no contributivas, ayuda al alquiler y vivienda pública.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=19",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 19",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "F03",
@@ -29563,11 +29563,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: propone que España vete en el Consejo de la UE Mercosur, el recorte de la PAC y el Pacto Verde; no habla de la regla de unanimidad.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "H03",
@@ -34446,11 +34446,11 @@
    "postura_texto": "De acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: quiere conceder «únicamente por mérito y capacidad» las becas para preparar oposiciones; no menciona las becas de estudios.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=28",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 28",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "I06",
@@ -36038,15 +36038,15 @@
    "opcion_b": "",
    "partido_id": "salf",
    "partido": "Se Acabó La Fiesta",
-   "postura": 2,
-   "postura_texto": "En desacuerdo",
+   "postura": 1,
+   "postura_texto": "Totalmente en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: si se superan los 60 días de espera, el paciente elige centro público o privado y lo paga la sanidad pública; no habla de la gestión.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J01",
@@ -36650,11 +36650,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Propone concertar con clínicas privadas, sin coste para el paciente, cuando la pública no dé abasto y fija tope de 30 y 90 días.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=18",
-   "fuente_titulo": "Programa electoral de SALF para Castilla y León, p. 18 (programa autonómico CyL 2026; mismo asunto)",
+   "justificacion": "Su contrato del 29N fija 60 días para operarse; superado el plazo, el paciente elige centro, público o privado, y lo paga la sanidad pública.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=22",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 22",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J02",
@@ -37790,11 +37790,11 @@
    "postura_texto": "Totalmente de acuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: suprime entes y fundaciones públicas «sin función» y no aplica rebajas sin ahorro certificado por la AIReF; no habla de evaluar leyes.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=16",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 16",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "J05",
@@ -39082,11 +39082,11 @@
    "postura_texto": "Totalmente en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "En su programa para Castilla y León (2026) se opone al acuerdo UE-Mercosur y pide cláusulas espejo.",
-   "fuente_url": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=22",
-   "fuente_titulo": "Programa electoral de Se Acabó La Fiesta para las elecciones de Castilla y León de 2026 (copia publicada por The Objective)",
+   "justificacion": "Su contrato del 29N propone que España vete en el Consejo de la UE el acuerdo con Mercosur, el recorte de la PAC y el Pacto Verde.",
+   "fuente_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35",
+   "fuente_titulo": "Contrato electoral simplificado de SALF para las generales de 2026, p. 35",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2026-03"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "K01",
