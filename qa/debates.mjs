@@ -1,4 +1,4 @@
-// /debates/ (14 nov): agenda por fecha y archivo de emitidos en orden inverso, con rótulos Debate/Entrevista,
+// /debates/ (14 nov; 19 nov: orden por importancia por defecto, «Por fecha» y buscador): agenda y archivo de emitidos, con rótulos Debate/Entrevista,
 // estado Confirmado/Propuesta/Emitido, etiqueta de grabación y botón «Ver grabación»/«Escuchar», fuente y fecha de comprobación.
 // Datos (sin navegador): fichas completas, ids únicos, sin duplicados (misma fecha y mismo título o URL), hora HH:MM, emitidos con
 // grabación, sin valoraciones. Página (360, 390 y 1280): orden, botones, enlaces externos en otra pestaña, sin desbordar, contraste.
@@ -48,9 +48,29 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
       priv: !!document.querySelector('footer a[href*="metodologia"], footer a[href*="sobre"]') };
   });
   const byId = Object.fromEntries(L.map((d) => [d.id, d]));
-  const nextOk = info.next.every((id, i, a) => !i || (byId[a[i - 1]].fecha || "9999") <= (byId[id].fecha || "9999"));
-  const pastOk = info.past.every((id, i, a) => !i || byId[a[i - 1]].fecha >= byId[id].fecha);
-  ok(info.next.length + info.past.length === L.length && info.past.length === em.length && nextOk && pastOk, `${w}: próximos por fecha (${info.next.length}) y emitidos del más reciente al más antiguo (${info.past.length})`);
+  // 19 nov: por defecto, orden por importancia (estatal > debate > más candidaturas; a igualdad, por fecha); «Por fecha» lo cambia
+  const imp = (d) => [d.ambito === "Estatal" ? 0 : 1, d.tipo === "debate" ? 0 : 1, -(d.partidos || []).length];
+  const cmpK = (x, y) => { for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return x[i] - y[i]; return 0; };
+  const dateOk = (ids, past) => ids.every((id, i, a) => !i || (past ? byId[a[i - 1]].fecha >= byId[id].fecha : (byId[a[i - 1]].fecha || "9999") <= (byId[id].fecha || "9999")));
+  const impOk = (ids, past) => ids.every((id, i, a) => { if (!i) return true; const c = cmpK(imp(byId[a[i - 1]]), imp(byId[id])); return c < 0 || (c === 0 && dateOk([a[i - 1], id], past)); });
+  ok(info.next.length + info.past.length === L.length && info.past.length === em.length && impOk(info.next) && impOk(info.past, true), `${w}: por defecto, por importancia: próximos (${info.next.length}) y emitidos (${info.past.length})`);
+  const tools = await page.evaluate(() => { const b = document.getElementById("db-tools"); return !!b && !b.hidden && !!document.querySelector("#db-orden"); });
+  ok(tools, `${w}: buscador visible y criterio del orden explicado`);
+  await page.selectOption("#db-ord", "fecha");
+  const byDate = await page.evaluate(() => ["h-db-next", "h-db-past"].map((id) => [...document.querySelectorAll(`[aria-labelledby="${id}"] .db-item`)].map((li) => li.id)));
+  ok(dateOk(byDate[0]) && dateOk(byDate[1], true) && byDate[0].length + byDate[1].length === L.length, `${w}: «Por fecha»: próximos del más cercano y emitidos del más reciente`);
+  // Buscador: sin acentos ni mayúsculas, varias palabras; borrar lo deja todo como estaba
+  const probe = L.find((d) => d.partidos?.length) , word = probe.medio.split(/\s+/)[0];
+  await page.fill("#db-q", word.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
+  const s1 = await page.evaluate(() => ({ vis: [...document.querySelectorAll(".db-item")].filter((li) => !li.hidden).map((li) => li.id), n: document.getElementById("db-n").textContent, ov: document.documentElement.scrollWidth > innerWidth + 1 }));
+  const fold = (x) => x.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const exp = L.filter((d) => fold([d.titulo, d.medio, d.organiza, d.ambito, d.participantes, d.contexto].join(" ")).includes(fold(word))).map((d) => d.id);
+  ok(s1.vis.includes(probe.id) && exp.every((id) => s1.vis.includes(id)) && s1.n.startsWith(`${s1.vis.length} `) && !s1.ov, `${w}: buscar «${word}» encuentra ${s1.vis.length} y lo anuncia; sin desborde`);
+  await page.fill("#db-q", "zzqxw"); const s2 = await page.evaluate(() => ({ v: [...document.querySelectorAll(".db-item")].filter((li) => !li.hidden).length, none: !document.getElementById("db-none").hidden }));
+  ok(!s2.v && s2.none, `${w}: sin coincidencias, aviso «Ningún debate…»`);
+  await page.click("#db-clear");
+  const s3 = await page.evaluate(() => ({ v: [...document.querySelectorAll(".db-item")].filter((li) => !li.hidden).length, q: document.getElementById("db-q").value, o: document.getElementById("db-ord").value, f: document.activeElement?.id, h: Math.round(document.getElementById("db-clear").getBoundingClientRect().height) }));
+  ok(s3.v === L.length && !s3.q && s3.o === "imp" && s3.f === "db-q" && s3.h >= 40, `${w}: «Borrar búsqueda» muestra todo, vuelve a importancia y devuelve el foco`);
   ok(info.btns.length === em.length && info.btns.every((b) => /^(Ver grabación|Escuchar|Escuchar extracto|Ver extracto)$/.test(b.t) && b.tg === "_blank" && /noopener/.test(b.rel) && b.h >= 44), `${w}: un botón «Ver grabación»/«Escuchar» por emitido, en otra pestaña y de ≥ 44 px`);
   // 15 nov: partidos que participan (enlace a su ficha) y «Comparar» cuando son dos con comparativa; enlaces internos, sin pestaña nueva
   const nParts = L.reduce((a, d) => a + (d.partidos || []).length, 0), nCmp = L.filter((d) => (d.partidos || []).length === 2).length;

@@ -644,8 +644,11 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
   for (const d of DEBATES.lista) for (const pid of d.partidos || []) if (!P[pid]) throw new Error(`Debate ${d.id}: partido desconocido ${pid}`);
   const dbPair = (d) => { const x = d.partidos || []; if (x.length !== 2) return ""; const f = PAIRS.find(([a, b]) => (a === x[0] && b === x[1]) || (a === x[1] && b === x[0])); return f ? pairPath(f[0], f[1]) : ""; };
   const dbParts = (d) => (d.partidos || []).length ? `<p class="db-parts"><span class="db-parts-l">${d.partidos.length === 1 ? "Sus posturas, con fuente" : "Posturas de cada partido, con fuente"}</span> ${d.partidos.map((pid) => `<a class="db-party" href="/partidos/${pid}/"><i style="background:${P[pid].color}" aria-hidden="true"></i>${esc(P[pid].name)}</a>`).join(" ")}</p>` : "";
-  const dbRow = (d) => { const g = d.grabacion, late = d.estado !== "emitido" && d.fecha && d.fecha < dbToday;
-    return `<li class="db-item db-${esc(d.tipo)}" id="${esc(d.id)}"><div class="db-head"><p class="db-tags"><span class="db-kind">${DB_TIPO[d.tipo]}</span><span class="pg-tag${d.estado === "propuesta" ? "" : " ok"}">${late ? "Por comprobar si se celebró" : DB_EST[d.estado]}</span>${g ? `<span class="db-rec">${g.formato === "audio" ? "Audio" : "Vídeo"} · ${DB_GRAB[g.alcance]}</span>` : ""}</p><h3 class="h3">${esc(d.titulo)}</h3></div>
+  // Buscador (19 nov, petición del titular): texto plano por ficha en data-q (sin acentos) y posición por fecha en data-o
+  const dbFold = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").trim();
+  const dbKeys = (d) => dbFold([DB_TIPO[d.tipo], d.titulo, d.medio, d.organiza, d.ambito, d.participantes, d.contexto, dbFecha(d), ...(d.partidos || []).flatMap((pid) => [P[pid].name, P[pid].ab])].join(" "));
+  const dbRow = (d, o) => { const g = d.grabacion, late = d.estado !== "emitido" && d.fecha && d.fecha < dbToday;
+    return `<li class="db-item db-${esc(d.tipo)}" id="${esc(d.id)}" data-o="${o}" data-q="${esc(dbKeys(d))}"><div class="db-head"><p class="db-tags"><span class="db-kind">${DB_TIPO[d.tipo]}</span><span class="pg-tag${d.estado === "propuesta" ? "" : " ok"}">${late ? "Por comprobar si se celebró" : DB_EST[d.estado]}</span>${g ? `<span class="db-rec">${g.formato === "audio" ? "Audio" : "Vídeo"} · ${DB_GRAB[g.alcance]}</span>` : ""}</p><h3 class="h3">${esc(d.titulo)}</h3></div>
     <dl class="db-facts"><div><dt>Fecha</dt><dd>${esc(dbFecha(d).replace(/^./, (c) => c.toUpperCase()))}${d.hora ? `, ${esc(d.hora)} h (hora peninsular)` : d.estado === "emitido" ? "" : ' <span class="muted">· hora por confirmar</span>'}</dd></div><div><dt>Medio</dt><dd>${esc(d.medio)}</dd></div>${d.organiza ? `<div><dt>Organiza</dt><dd>${esc(d.organiza)}</dd></div>` : ""}<div><dt>Ámbito</dt><dd>${esc(d.ambito)}</dd></div><div class="db-wide"><dt>Participantes</dt><dd>${esc(d.participantes)}</dd></div>${d.estado !== "emitido" ? `<div><dt>Dónde verlo</dt><dd>${pc(d.donde)}</dd></div>` : ""}</dl>
     <p class="db-ctx">${esc(d.contexto)}</p>
     ${dbParts(d)}
@@ -656,6 +659,35 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
   const dbSnip = dbNext.filter((d) => d.tipo === "debate" && d.ambito === "Estatal" && d.fecha && d.fecha >= dbToday).slice(0, 2)
     .map((d) => `${+d.fecha.slice(8)} ${["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][+d.fecha.slice(5, 7) - 1]}${d.hora ? ` (${d.hora} h)` : ""}, ${d.titulo.replace(/^./, (c) => c.toLowerCase())}`);
   const dbN = (t) => DEBATES.lista.filter((d) => d.tipo === t).length;
+  // Orden por importancia (por defecto; 19 nov, petición del titular). Criterio objetivo y igual para todas las candidaturas,
+  // solo con datos de la ficha: 1) ámbito estatal antes que autonómico o de circunscripción; 2) debate antes que entrevista;
+  // 3) más candidaturas que participan (campo «partidos»); a igualdad, por fecha (sort estable sobre el orden por fecha).
+  const dbImp = (a, b) => (b.ambito === "Estatal") - (a.ambito === "Estatal") || (b.tipo === "debate") - (a.tipo === "debate") || (b.partidos || []).length - (a.partidos || []).length;
+  const dbList = (L) => [...L].sort(dbImp).map((d) => dbRow(d, L.indexOf(d))).join("");
+  mkdirSync(`${OUT}/debates`, { recursive: true });
+  writeFileSync(`${OUT}/debates/debates.js`, `// /debates/: buscador y orden (importancia o fecha). Todo en el navegador; no guarda ni envía nada.
+(() => {
+  const q = document.getElementById("db-q"), ord = document.getElementById("db-ord"), out = document.getElementById("db-n"), none = document.getElementById("db-none");
+  const box = document.getElementById("db-tools"), lists = [...document.querySelectorAll(".db-sec .db-list")];
+  if (!q || !ord || !lists.length) return; box.hidden = false;
+  const fold = (s) => s.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/\\s+/g, " ").trim();
+  const imp = lists.map((ul) => [...ul.children]);  // orden por importancia, tal como llega del servidor
+  const run = () => {
+    const t = fold(q.value).split(" ").filter(Boolean); let n = 0;
+    lists.forEach((ul, i) => {
+      const rows = ord.value === "fecha" ? [...imp[i]].sort((a, b) => a.dataset.o - b.dataset.o) : imp[i];
+      let k = 0; for (const li of rows) { const ok = t.every((w) => li.dataset.q.includes(w)); li.hidden = !ok; if (ok) k++; ul.appendChild(li); }
+      ul.closest(".db-sec").hidden = t.length > 0 && !k; n += k;
+    });
+    none.hidden = n > 0;
+    out.textContent = t.length ? \`\${n} \${n === 1 ? "resultado" : "resultados"}.\` : "";
+  };
+  q.addEventListener("input", run); ord.addEventListener("change", run);
+  document.getElementById("db-clear").addEventListener("click", () => { q.value = ""; ord.value = "imp"; run(); q.focus(); });
+  const h = new URLSearchParams(location.search).get("q"); if (h) q.value = h;
+  run();
+})();
+`);
   page({
     path: "/debates/",
     title: "Debates electorales 29N: fechas, horarios y dónde verlos",
@@ -665,18 +697,23 @@ ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Debates y entrevistas del 29N</h1>
   <p class="lede">La agenda de debates de la campaña y el archivo de debates y entrevistas ya emitidos, con su grabación cuando la cadena la publica. Cada dato lleva su fuente; lo que no se ha anunciado aparece «por confirmar».</p></header>
 <p class="pg-sum">Revisado el ${esc(dbRev)} · ${dbN("debate")} debates y ${dbN("entrevista")} entrevistas · <a href="#h-db-next">Próximos (${dbNext.length})</a> · <a href="#h-db-past">Ya emitidos (${dbPast.length})</a></p>
-<style>/* Solo en esta página (así no pesa en la portada) */ .db-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; } .db-item { display: grid; gap: 10px; padding: 16px 18px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); min-width: 0; } .db-head { display: grid; gap: 6px; } .db-head .h3 { margin: 0; } .db-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; align-items: center; } .db-kind { font-size: 12.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); } .db-rec { display: inline-block; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--ink); font-size: 12.5px; font-weight: 700; color: var(--ink); } .db-facts { display: grid; gap: 6px 18px; margin: 0; grid-template-columns: 1fr; } @media (min-width: 640px) { .db-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .db-facts .db-wide { grid-column: 1 / -1; } } .db-facts div { display: grid; gap: 1px; min-width: 0; } .db-facts dt { font-size: 14px; font-weight: 700; color: var(--ink-2); letter-spacing: .02em; } .db-facts dd { margin: 0; overflow-wrap: anywhere; } .db-ctx { margin: 0; } .db-btns { margin: 0; } .db-btns .btn { min-height: 44px; white-space: normal; text-align: center; } .db-sec { display: grid; gap: 12px; margin-top: 8px; } .db-parts { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; margin: 0; } .db-parts-l { font-size: 14px; font-weight: 700; color: var(--ink-2); flex-basis: 100%; } .db-party { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 4px 13px; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink); font-size: 14.5px; font-weight: 600; text-decoration: none; } .db-party:hover, .db-party:focus-visible { border-color: var(--ink); } .db-party i { width: 10px; height: 10px; border-radius: 50%; flex: none; } .db-btns { display: flex; flex-wrap: wrap; gap: 8px; }</style>
+<p class="small muted" id="db-orden">Ordenados por importancia: primero los de ámbito estatal; después, los debates antes que las entrevistas, y los que reúnen más candidaturas. A igualdad, por fecha. El orden no depende de qué partidos participan ni de audiencias. <a href="#h-db-crit">Criterios</a></p>
+<div class="pg-tools" id="db-tools" role="search" hidden><label class="pg-f"><span>Buscar un debate o entrevista</span><input type="search" id="db-q" autocomplete="off" spellcheck="false" placeholder="Ej.: Feijóo, vivienda, Galicia, RTVE"></label><label class="pg-f"><span>Ordenar</span><select id="db-ord"><option value="imp">Por importancia</option><option value="fecha">Por fecha</option></select></label><button type="button" class="btn btn-ghost btn-sm" id="db-clear">Borrar búsqueda</button><p class="small muted pg-n" id="db-n" role="status" aria-live="polite"></p></div>
+<p class="small" id="db-none" hidden>Ningún debate ni entrevista coincide. Prueba con el nombre de un partido, un candidato, una cadena o una comunidad.</p>
+<style>/* Solo en esta página (así no pesa en la portada) */ .db-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; } .db-item { display: grid; gap: 10px; padding: 16px 18px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2); min-width: 0; } .db-head { display: grid; gap: 6px; } .db-head .h3 { margin: 0; } .db-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; align-items: center; } .db-kind { font-size: 12.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); } .db-rec { display: inline-block; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--ink); font-size: 12.5px; font-weight: 700; color: var(--ink); } .db-facts { display: grid; gap: 6px 18px; margin: 0; grid-template-columns: 1fr; } @media (min-width: 640px) { .db-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .db-facts .db-wide { grid-column: 1 / -1; } } .db-facts div { display: grid; gap: 1px; min-width: 0; } .db-facts dt { font-size: 14px; font-weight: 700; color: var(--ink-2); letter-spacing: .02em; } .db-facts dd { margin: 0; overflow-wrap: anywhere; } .db-ctx { margin: 0; } .db-btns { margin: 0; } .db-btns .btn { min-height: 44px; white-space: normal; text-align: center; } .db-sec { display: grid; gap: 12px; margin-top: 8px; } .db-parts { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; margin: 0; } .db-parts-l { font-size: 14px; font-weight: 700; color: var(--ink-2); flex-basis: 100%; } .db-party { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 4px 13px; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink); font-size: 14.5px; font-weight: 600; text-decoration: none; } .db-party:hover, .db-party:focus-visible { border-color: var(--ink); } .db-party i { width: 10px; height: 10px; border-radius: 50%; flex: none; } .db-btns { display: flex; flex-wrap: wrap; gap: 8px; } .db-list > li[hidden], .db-sec[hidden] { display: none; }</style>
 <section class="db-sec" aria-labelledby="h-db-next"><h2 class="h2" id="h-db-next">Próximos y por confirmar</h2>
-${dbNext.length ? `<ul class="db-list">${dbNext.map(dbRow).join("")}</ul>` : `<p>No hay más debates anunciados.</p>`}</section>
+${dbNext.length ? `<ul class="db-list">${dbList(dbNext)}</ul>` : `<p>No hay más debates anunciados.</p>`}</section>
 <section class="db-sec" aria-labelledby="h-db-past"><h2 class="h2" id="h-db-past">Ya emitidos</h2>
-${dbPast.length ? `<ul class="db-list">${dbPast.map(dbRow).join("")}</ul>` : `<p>Aún no se ha emitido ninguno.</p>`}</section>
+${dbPast.length ? `<ul class="db-list">${dbList(dbPast)}</ul>` : `<p>Aún no se ha emitido ninguno.</p>`}</section>
 <section aria-labelledby="h-db-crit"><h2 class="h3" id="h-db-crit">Qué recogemos y cómo</h2><ul class="dots">
 <li>Debates de cadenas estatales, autonómicas y locales, y entrevistas a cabezas de lista o portavoces en medios de amplia audiencia. El criterio es el mismo para todas las candidaturas; si falta alguno, escríbenos (<a href="/sobre/">contacto</a>).</li>
+<li>Orden por importancia (el predeterminado): 1) ámbito estatal antes que autonómico o de circunscripción, porque afecta a todo el electorado; 2) debates antes que entrevistas, porque reúnen a varias candidaturas; 3) más candidaturas participantes antes que menos; a igualdad, por fecha (los próximos, el más cercano primero; los emitidos, el más reciente). Solo usa datos de cada ficha y es igual para todas las candidaturas. El buscador y «Por fecha» funcionan en tu navegador y no guardan nada.</li>
 <li>«Confirmado» quiere decir que la cadena o el organizador han anunciado fecha y medio; «Propuesta», que aún no. La hora solo aparece cuando la ha anunciado la cadena, en hora peninsular.</li>
 <li>«Grabación completa» solo cuando la cadena o el canal la publican entera; «programa emitido» es el programa tal como se emitió, sin afirmar que la entrevista no esté editada; «fragmento» es un extracto publicado por el medio, con su crónica.</li>
 <li>El contexto resume de qué se habló según la fuente. No valoramos los debates ni decimos quién gana, y lo que se dice en una entrevista no cambia por sí solo las posturas del test: estas salen de programas, votaciones y declaraciones con fuente (<a href="/metodologia/">metodología</a>).</li>
 <li>Los enlaces llevan a la web de cada medio; no incrustamos vídeos para que la página cargue rápido y no comparta datos con terceros.</li><li>Revisamos esta página a diario hasta el 27 de noviembre. El 28 (jornada de reflexión) y el 29 no se actualiza; lo de esos días se añadirá el 30.</li></ul></section>
-${cta("Prepara el debate: compara tus ideas con las candidaturas")}`
+${cta("Prepara el debate: compara tus ideas con las candidaturas")}
+<script src="/debates/debates.js" defer></script>`
   });
 
   // ── Programas electorales del 29N: estado de cada candidatura, con enlace oficial cuando existe
