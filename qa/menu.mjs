@@ -62,6 +62,23 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   ok(vs.includes("Soria ¡Ya!") && !vs.includes("Teruel Existe") && !vs.includes("EH Bildu"), `Soria: ${vs.length} candidaturas`);
   await page.selectOption("#pg-prov", "navarra"); const vn = await vis();
   ok(vn.includes("UPN – Partido Popular") && !vn.includes("Partido Popular") && vn.includes("Geroa Bai"), "Navarra: UPN-PP y no PP");
+  // Filtros combinados (circunscripción + nombre o sigla) y reinicio de los dos
+  await page.fill("#pg-q", "upn"); const vc = await vis();
+  ok(vc.length === 1 && vc[0] === "UPN – Partido Popular", `Navarra + «upn»: solo UPN–PP (${vc.join(", ")})`);
+  await page.fill("#pg-q", "vox"); ok((await vis()).length === 1, "Navarra + «vox»: una fila");
+  await page.click("#pg-clear"); ok(await page.inputValue("#pg-q") === "" && await page.inputValue("#pg-prov") === "" && (await vis()).length === live.length && !(await overflow(page)), "«Borrar filtros» vacía la búsqueda y la circunscripción");
+  if (w === 390) { // Cada circunscripción muestra exactamente las candidaturas del test proclamadas allí (BOE)
+    const CANDS = JSON.parse(fs.readFileSync(new URL("../src/candidaturas.json", import.meta.url), "utf8"));
+    const nameOf = Object.fromEntries(pd.parties.map((p) => [p.id, p.name]));
+    const bad = [];
+    for (const [prov, L] of Object.entries(CANDS.provs)) {
+      await page.selectOption("#pg-prov", prov); const v = (await vis()).sort();
+      const exp = [...new Set(L.filter((c) => c.pid && live.includes(c.pid)).map((c) => nameOf[c.pid]))].sort();
+      if (v.join("|") !== exp.join("|")) bad.push(`${prov}: web ${v.length} / BOE ${exp.length}`);
+    }
+    ok(!bad.length, `el filtro de las ${Object.keys(CANDS.provs).length} circunscripciones coincide con el BOE${bad.length ? ` (${bad.slice(0, 4).join("; ")})` : ""}`);
+    await page.click("#pg-clear");
+  }
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/programas-${w}.png` });
   await page.goto(PROG + "?circ=madrid"); await page.waitForSelector("#pg-tools:not([hidden])");
   ok(await page.inputValue("#pg-prov") === "madrid" && (await vis()).includes("Democracia para el Siglo 21"), "?circ=madrid abre ya filtrado");

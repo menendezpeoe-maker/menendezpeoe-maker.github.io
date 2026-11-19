@@ -59,6 +59,11 @@ for (const w of [390, 360]) {
   await page.click("#start-btn"); await page.waitForSelector("#v-prios:not([hidden])");
   await page.click("#prio-skip"); await page.waitForSelector("#v-results:not([hidden])");
   ok(true, "«Ver resultados sin prioridades» lleva a los resultados");
+  // Reinicio íntegro desde resultados: confirma, borra lo guardado y vuelve a la portada sin respuestas
+  const onDlg = page.listeners("dialog"); page.removeAllListeners("dialog"); page.once("dialog", (d) => d.accept());
+  await page.click('[data-act="new"] >> visible=true'); await page.waitForSelector("#v-home:not([hidden])");
+  for (const l of onDlg) page.on("dialog", l);
+  ok(await page.evaluate(() => localStorage.getItem("papeleta29n.v2")) === null && !/^Continuar/.test(await page.textContent("#start-btn")) && !(await overflow(page)), `«Empezar de nuevo» borra las respuestas y vuelve a la portada («${await page.textContent("#start-btn")}»)`);
   // Tema: acceso al test de vivienda y página de vivienda
   await page.goto(VIV);
   const top = await page.evaluate(() => { const r = (s) => { const e = document.querySelector(s); return e ? Math.round(e.getBoundingClientRect().bottom) : 9999; }; return { rows: [...document.querySelectorAll(".sumv-row summary")].map((s) => Math.round(s.getBoundingClientRect().bottom)), btn: r(".sumv-top .btn") }; });
