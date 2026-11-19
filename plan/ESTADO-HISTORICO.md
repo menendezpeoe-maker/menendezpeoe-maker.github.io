@@ -68,7 +68,7 @@
   9. BNG (69; 91 págs.).
   10. Falange (71) y Frente Obrero (66).
   11. ERC (62), Vox (61) y PP (50).
-  12. Repaso: programas nuevos (Drago, Ara Més, Junts, Podemos, CHA, PCTE, UPN…), partidos con programa corto (Geroa Bai, Soria ¡Ya!, Teruel Existe, UPC, PH, IE) y balance final.
+  12. Repaso: programas nuevos (Drago, Ara Més, Junts, Podemos [en /programas/ desde el 19 nov: https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf, 141 págs.; podemos.info da 403], CHA, PCTE, UPN…), partidos con programa corto (Geroa Bai, Soria ¡Ya!, Teruel Existe, UPC, PH, IE) y balance final.
 - **Secciones afectadas en cada bloque:** /programas/ («N de 107 revisadas con él»), fichas y propuestas de `src/partidos.src.mjs`, /comparar/, /temas/, explorador y resultado (se regeneran con los datos), /metodologia/ y /prensa/ (cifras automáticas), /datos/ (CSV). Comprobar los textos fijos con el apartado 3 de `node qa/barrido.mjs`.
 
 ## 15 nov 2026 (noche) · Documentar posturas, tanda 6: partidos con menos posturas documentadas (petición del titular)

@@ -2,10 +2,11 @@
 // Solo se marca «publicado» con el enlace oficial del partido (su web o el PDF) y la fecha de publicación.
 // Cada tanda de campaña lo vuelve a comprobar y actualiza `comprobado`.
 export const PROGRAMAS = {
-  comprobado: "2026-11-17",
+  comprobado: "2026-11-19",
   // id de partido → { url, titulo, fecha, alta?, tipo?, nota? }   (tipo "avance": documento breve o parcial; si no, programa completo)   (vacío: aún no publicado). `alta`: día en que entró en la web, solo si la
   // fecha del programa no es un día concreto; ordena «Últimas incorporaciones» en /programas/.
   publicados: {
+    pod: { url: "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf", titulo: "Programa electoral de Podemos para las generales del 29N de 2026: «Así de básico: Paz, casa y trabajo» (web oficial de campaña)", fecha: "2026-11", alta: "2026-11-19" },
     fa: { url: "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf", titulo: "Programa electoral del Frente Amplio para las elecciones generales del 29N de 2026", fecha: "2026-11-16" },
     bildu: { url: "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf", titulo: "Programa de EH Bildu para las generales del 29N de 2026: «Posible egin. Garantía y derechos» (versión en castellano)", fecha: "2026-11-16" },
     psoe: { url: "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf", titulo: "Programa electoral del PSOE para las generales del 29N de 2026: «La fuerza de seguir avanzando»", fecha: "2026-11-14" },
