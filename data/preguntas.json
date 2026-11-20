@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "dims": [
   {
    "id": "eco",
@@ -459,10 +459,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=44",
+     "Programa electoral del BNG de 2026, p. 44",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "d21": [
      "https://mi.democracia21.es/programa#bloque-resuelve",
@@ -528,7 +528,7 @@
     "salf": "Su contrato del 29N propone una gran rebaja fiscal con la regla de «un euro de rebaja, un euro de ahorro certificado».",
     "pnv": "Se abstuvo en la moción de Junts para bajar impuestos aprobada por el Congreso.",
     "bildu": "Su programa del 29N pide que las grandes empresas aporten más y rechaza cualquier vuelta a la austeridad y a los recortes.",
-    "bng": "El programa defiende servicios públicos universales, fuertes y gratuitos, y propone gravar a la banca, las energéticas y las grandes fortunas.",
+    "bng": "Su programa del 29N quiere blindar los impuestos a la banca, las energéticas y las grandes fortunas y una fiscalidad más progresiva para sostener servicios públicos universales.",
     "d21": "Su programa del 29N afirma que «no hace falta subir ni bajar impuestos» para mejorar el sistema fiscal: lo quiere progresivo, transparente, neutral y sencillo.",
     "upn": "UPN prioriza reducir impuestos y deflactar el IRPF.",
     "adel": "Su programa del 29N pide reformar la senda de estabilidad para que no obligue a recortar servicios públicos y una reforma fiscal progresiva.",
@@ -4167,10 +4167,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=28",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=32",
+     "Programa electoral del BNG de 2026, p. 32",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "fo": [
      "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
@@ -4207,7 +4207,7 @@
     "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
     "bildu": "Su programa del 29N pide reconocer el derecho a decidir del pueblo vasco como vía democrática.",
-    "bng": "El programa apoya los cambios legales que permitan convocar referendos vinculantes, incluido el derecho de autodeterminación.",
+    "bng": "Su programa del 29N promoverá los cambios legales para convocar referendos vinculantes, «incluído o dereito de autodeterminación».",
     "fo": "Defiende la unidad del país y se posiciona contra todos los procesos de independencia existentes.",
     "falange": "Su programa del 29N propone ilegalizar y perseguir con duras penas a los movimientos separatistas que amenacen la unidad de España.",
     "ccpc": "Su programa de 2026 defiende el derecho de Canarias a decidir su rumbo dentro del Estado español y del marco europeo.",
@@ -4687,6 +4687,12 @@
      "Bases políticas de Geroa Bai para las generales del 29N, p. 9",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=8",
+     "Programa electoral del BNG de 2026, p. 8",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4700,7 +4706,8 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía recalcular el cupo vasco para aumentar la contribución a la solidaridad.",
     "pp": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio.",
     "upn": "UPN defiende el Convenio Económico tal como está y considera que Navarra ya aporta de forma solidaria.",
-    "gbai": "Sus bases del 29N defienden la permanencia del Convenio Económico como herramienta básica del autogobierno frente a «gamazadas encubiertas»."
+    "gbai": "Sus bases del 29N defienden la permanencia del Convenio Económico como herramienta básica del autogobierno frente a «gamazadas encubiertas».",
+    "bng": "Estimación: su programa del 29N reclama para Galicia un concierto económico propio y bilateral, el mismo modelo que el vasco; no pide que aporten más."
    }
   },
   {
@@ -6897,10 +6904,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=21",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=24",
+     "Programa electoral del BNG de 2026, p. 24",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=10",
@@ -6973,7 +6980,7 @@
     "erc": "Su programa de 2026 reforma la Ley Orgánica 1/2004 para reforzar la respuesta a todas las formas de violencia machista.",
     "pnv": "Su programa del 29N exige cumplir íntegramente el Pacto de Estado contra la Violencia de Género renovado en 2025 y reforzar los juzgados de violencia sobre la mujer.",
     "bildu": "Su programa del 29N mantiene el enfoque de violencia machista y propone reforzar la protección de sus víctimas.",
-    "bng": "El programa propone reforzar el cumplimiento del Pacto de Estado contra la violencia machista y crear juzgados exclusivos en Galicia.",
+    "bng": "Su programa del 29N pide una reforma integral que cubra todas las violencias contra las mujeres, aplicar el Pacto de Estado contra la violencia machista y tipificar el feminicidio.",
     "ccpc": "Su programa del 29N reclama financiación estatal para aplicar el Pacto de Estado contra la violencia de género en todas las islas y proteger a las víctimas.",
     "junts": "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
     "gbai": "Sus bases del 29N rechazan el negacionismo de la violencia de género y piden reforzar la protección de las mujeres víctimas de maltrato.",
@@ -7452,10 +7459,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=20",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=23",
+     "Programa electoral del BNG de 2026, p. 23",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "comp": [
      "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=64",
@@ -7534,7 +7541,7 @@
     "salf": "Su contrato del 29N propone ejecutar el 100 % de las órdenes de expulsión, con salida en 48 horas, y acabar con las regularizaciones.",
     "erc": "Su programa de 2026 propone acabar con la externalización de las fronteras y garantizar vías legales y seguras para migrar.",
     "bildu": "Su programa del 29N defiende la regularización y rechaza las devoluciones sumarias y los CIE.",
-    "bng": "El programa propone cerrar los CIE y poner fin a las deportaciones, garantizando los derechos humanos de la población migrante.",
+    "bng": "Su programa del 29N pide facilitar la regularización de los inmigrantes, cerrar los CIE y acabar con las devoluciones en caliente.",
     "comp": "Su programa del 29N propone regularizar a quienes viven aquí, eliminar los CIE y prohibir las devoluciones ilegales.",
     "pp": "Votó a favor de tramitar la regularización de migrantes que ya viven en España, aunque con reservas.",
     "upc": "Sumar y Podemos, integrantes de la coalición, defienden regularizar y no expulsar a los migrantes que ya viven aquí.",
@@ -7659,10 +7666,10 @@
      "2026-06-25"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=23",
+     "Programa electoral del BNG de 2026, p. 23",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ccpc": [
      "https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=3",
@@ -7753,7 +7760,7 @@
     "pnv": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "bildu": "Su programa del 29N pide acceso a vivienda y protección social sin barreras, sea cual sea la situación administrativa.",
     "upn": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
-    "bng": "El programa propone garantizar a la población migrante los derechos de vivienda, trabajo, sanidad y educación y erradicar la discriminación.",
+    "bng": "Su programa del 29N pide garantizar por ley los derechos de la población inmigrante (vivienda, trabajo, sanidad, educación) y erradicar toda discriminación en las administraciones.",
     "ccpc": "Su programa de 2026 afirma que la canariedad se comparte con quienes nacieron en las islas y con quienes las han hecho su hogar.",
     "comp": "Votó en contra de la PNL de Vox sobre prioridad nacional en las prestaciones públicas.",
     "adel": "Adelante Andalucía defiende el acceso a las ayudas sociales sin distinguir por nacionalidad ni situación administrativa.",
@@ -7917,6 +7924,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 106",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=22",
+     "Programa electoral del BNG de 2026, p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -7934,7 +7947,8 @@
     "ccpc": "Su programa de 2026 propone cooperación con países de origen y tránsito en desarrollo, seguridad, formación y movilidad ordenada.",
     "salf": "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren.",
     "d21": "Su programa del 29N propone un visado de búsqueda de empleo de 6 meses con cupo según vacantes y formar trabajadores en origen con contrato antes de viajar.",
-    "adel": "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo."
+    "adel": "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo.",
+    "bng": "Estimación: su programa del 29N defiende la regularización como vía contra la explotación y agilizar la homologación de títulos extranjeros; no trata la contratación en origen."
    }
   },
   {
@@ -8419,10 +8433,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=19",
-     "Programa electoral del BNG para las generales de 2023, p. 19",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=40",
+     "Programa electoral del BNG de 2026, p. 40",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=12",
@@ -8514,7 +8528,7 @@
     "psoe": "Su programa del 29N quiere consolidar la ayuda a domicilio como servicio público esencial de la dependencia con financiación suficiente y estable (206).",
     "fa": "Su programa del 29N propone desplegar el sistema público de dependencia, con más inversión y eliminación de copagos.",
     "erc": "Su programa de 2026 exige garantizar la financiación de la Ley de Dependencia, con 2.018 millones extra en 2026 y 7.200 en 2027.",
-    "bng": "El BNG reclama más financiación estatal para una red pública fuerte de atención a la dependencia.",
+    "bng": "Su programa del 29N defiende una red de servicios públicos fuertes para la dependencia y exige al Estado financiar el 50 % del sistema y pagar la deuda con Galicia.",
     "bildu": "Su programa del 29N propone avanzar hacia unos cuidados universales y gratuitos, limitando la privatización.",
     "pod": "Podemos defiende un sistema público de cuidados como pilar del bienestar, financiado sin bajar impuestos a los ricos.",
     "pp": "Su programa de 2026 plantea un Pacto de Estado por la Dependencia con el 50 % del coste a cargo del Estado y deducciones a las familias.",
@@ -9468,10 +9482,10 @@
      "2023-07"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=50",
-     "Programa electoral del BNG para las generales de 2023, p. 50",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55",
+     "Programa electoral del BNG de 2026, p. 55",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upc": [
      "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=13",
@@ -9525,7 +9539,7 @@
     "pod": "Defendió en el Congreso una moción para crear una empresa pública de energía que abarate los precios.",
     "erc": "Estimación: ERC impulsa una energética pública catalana, no estatal.",
     "bildu": "Pide facilitar por ley la creación de empresas públicas de comercialización de electricidad.",
-    "bng": "El BNG propone crear una empresa pública de energía, en su caso gallega, a partir de las concesiones hidroeléctricas.",
+    "bng": "Su programa del 29N propone recuperar las concesiones de los embalses como base de una empresa pública gallega de energía.",
     "upc": "Propone crear una empresa pública de energía que gestione las centrales hidroeléctricas del Estado según venzan las concesiones.",
     "pcte": "Propone poner bajo propiedad estatal y control obrero las empresas del sector energético.",
     "falange": "Su programa del 29N propone nacionalizar la producción, el transporte y la distribución de la energía.",
@@ -10079,10 +10093,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=50",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55",
+     "Programa electoral del BNG de 2026, p. 55",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "vox": [
      "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=12",
@@ -10155,7 +10169,7 @@
     "erc": "Su programa de 2026 propone un plan de inversión en redes eléctricas, autoconsumo, almacenamiento y renovables para descarbonizar.",
     "pnv": "Su programa del 29N pide acelerar redes y almacenamiento y activar mecanismos de capacidad, y mantener la cogeneración y el gas para la industria (p. 16).",
     "bildu": "Su programa del 29N pide acelerar las renovables, reforzar redes y almacenamiento y mantener el cierre nuclear.",
-    "bng": "El programa propone fomentar las renovables y el autoconsumo, reducir el consumo de fósiles y un mix energético diversificado.",
+    "bng": "Su programa del 29N apuesta por las renovables y el autoconsumo, reducir los fósiles y un mix diversificado (eólica, hidráulica, solar…), y por un centro de almacenamiento energético.",
     "vox": "Su programa de 2026 propone un Plan Nacional de Soberanía Energética, el plan nuclear y el fin de las restricciones a explotar recursos propios.",
     "pacma": "Su programa del 29N dice que el apagón demostró que las renovables exigen almacenamiento y control avanzado de la red, y considera insostenible el modelo fósil y nuclear.",
     "comp": "Su programa del 29N apuesta por las renovables con contratos a precio fijo y por abandonar los combustibles fósiles en 2040 (p. 31).",
@@ -11987,6 +12001,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 45",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=36",
+     "Programa electoral del BNG de 2026, p. 36",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12001,7 +12021,8 @@
     "fo": "Propone educación gratuita en todos los niveles, incluidos los superiores, pero para las rentas más bajas.",
     "falange": "Su programa del 29N propone una educación nacional gratuita desde las primeras etapas hasta los estudios universitarios.",
     "ph": "Su programa del 29N propone suprimir todas las tasas de matrícula en las universidades públicas y en la FP de grado medio y superior.",
-    "mj": "Estimación: su programa del 29N defiende una educación pública gratuita, sin concretar la gratuidad de la universidad."
+    "mj": "Estimación: su programa del 29N defiende una educación pública gratuita, sin concretar la gratuidad de la universidad.",
+    "bng": "Estimación: su programa del 29N defiende servicios públicos gratuitos y el «acceso universal á ensinanza superior»; no cita expresamente la matrícula gratuita."
    }
   },
   {
@@ -12028,7 +12049,7 @@
     "pnv": 3,
     "bildu": 2,
     "upn": 5,
-    "bng": 2,
+    "bng": 1,
     "comp": 1,
     "adel": 1,
     "pcte": 1,
@@ -12107,6 +12128,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 17",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=35",
+     "Programa electoral del BNG de 2026, p. 35",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12119,7 +12146,8 @@
     "pcte": "Defiende expulsar a todas las empresas privadas de la educación; denuncia el aumento de universidades privadas.",
     "ph": "Estimación: el programa exige educación pública y gratuita en todos los niveles hasta la universidad y rechaza que sea negocio; no cita las privadas.",
     "fo": "Estimación: el programa propone expulsar a las empresas privadas de la universidad y reforzar el sistema público, lo que va contra facilitar universidades privadas.",
-    "comp": "Su programa del 29N propone limitar la proliferación de universidades privadas y evitar el desvío de recursos públicos hacia ellas."
+    "comp": "Su programa del 29N propone limitar la proliferación de universidades privadas y evitar el desvío de recursos públicos hacia ellas.",
+    "bng": "Estimación: su programa del 29N pide una ley universitaria propia que «evite a privatización» del sistema universitario gallego."
    }
   },
   {
@@ -12276,10 +12304,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=31",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=33",
+     "Programa electoral del BNG de 2026, p. 33",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1",
@@ -12337,7 +12365,7 @@
     "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
     "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     "bildu": "Su programa del 29N defiende un sistema educativo propio y euskaldun.",
-    "bng": "El programa propone una escuela pública gallega orientada a la normalización lingüística.",
+    "bng": "Su programa del 29N quiere una escuela pública gallega orientada a la normalización lingüística del gallego.",
     "upn": "UPN defiende que las familias elijan la lengua de enseñanza y rechaza imponer el euskera.",
     "comp": "Compromís recurrió ante el Constitucional la ley valenciana que deja a las familias elegir la lengua base de la enseñanza.",
     "mes": "MÉS per Mallorca rechaza el plan de libre elección de lengua del Govern, al que llama plan de segregación lingüística.",
@@ -12603,6 +12631,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 47",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=29",
+     "Programa electoral del BNG de 2026, p. 29",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12621,7 +12655,8 @@
     "ie": "Estimación: el contrato defiende «libertad educativa para los padres» y rechaza el «adoctrinamiento en género»; no cita el pin parental.",
     "pacma": "Estimación: su programa del 29N pide planes de educación en diversidad sexual y una educación sexual también afectiva; no habla del permiso parental.",
     "pnv": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres.",
-    "mj": "Estimación: su programa del 29N propone incorporar la educación afectivo-sexual al currículo, adaptada a cada etapa; no aborda el permiso de los padres."
+    "mj": "Estimación: su programa del 29N propone incorporar la educación afectivo-sexual al currículo, adaptada a cada etapa; no aborda el permiso de los padres.",
+    "bng": "Estimación: su programa del 29N incluye contenidos de igualdad y diversidad sexual en la enseñanza obligatoria y un servicio de igualdad en cada centro; no trata el permiso paterno."
    }
   },
   {
@@ -13091,10 +13126,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
+     "Programa electoral del BNG de 2026, p. 37",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "comp": [
      "https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9",
@@ -13157,7 +13192,7 @@
     "fa": "Su programa del 29N propone la gestión pública directa y derogar la Ley 15/1997, que abrió la puerta a la gestión privada.",
     "mj": "Su programa del 29N propone frenar la privatización y recuperar progresivamente los servicios externalizados, priorizando la gestión pública directa.",
     "bildu": "Su programa del 29N propone derogar la Ley 15/1997, que permite externalizar los servicios sanitarios.",
-    "bng": "Su programa propone modificar la Ley 15/1997 para que la gestión y la provisión sanitarias sean exclusivamente públicas.",
+    "bng": "Su programa del 29N propone modificar la Ley 15/97 para que la gestión y la provisión sanitarias se hagan solo con entidades públicas.",
     "comp": "Su programa del 29N propone blindar la gestión pública de la sanidad y derogar la Ley 15/1997, que abre la gestión privada.",
     "adel": "Su programa del 29N pide derogar la Ley 15/1997 y acabar con los conciertos y las externalizaciones en la sanidad.",
     "upc": "Su manifiesto del 29N defiende una gestión prioritariamente directa de la sanidad y avanzar en la reversión de privatizaciones y externalizaciones.",
@@ -13263,10 +13298,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
-     "Programa electoral del BNG para las generales de 2023, p. 35",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
+     "Programa electoral del BNG de 2026, p. 37",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://www.gasteizhoy.com/este-es-el-programa-electoral-de-eh-bildu-para-el-21-de-abril/",
@@ -13341,7 +13376,7 @@
     "fa": "Propone blindar la sanidad pública y una ley de listas de espera, no derivar pacientes a la privada.",
     "pod": "Su proposición de ley de 2024 impide renovar los conciertos con hospitales privados vinculados al SNS.",
     "erc": "Su programa de 2026 propone blindar una sanidad pública universal y frenar la privatización de la sanidad.",
-    "bng": "El BNG rechaza que la sanidad pública derive su actividad a la privada y defiende reforzar la red pública.",
+    "bng": "Su programa del 29N quiere que la provisión de servicios sanitarios sea exclusivamente pública (reforma de la Ley 15/97) y reducir la privatización.",
     "bildu": "EH Bildu propone devolver a gestión pública los servicios sanitarios privatizados, en vez de derivar a la privada.",
     "drago": "Rechaza los conciertos con la sanidad privada y las externalizaciones, y propone revertirlos.",
     "salf": "Su contrato del 29N fija 60 días para operarse; superado el plazo, el paciente elige centro, público o privado, y lo paga la sanidad pública.",
@@ -13897,7 +13932,7 @@
     "bildu": 1,
     "upn": 1,
     "gbai": 1,
-    "bng": 1,
+    "bng": 2,
     "ccpc": 1,
     "upc": 2,
     "drago": 2,
@@ -13918,6 +13953,7 @@
     "bildu",
     "upn",
     "gbai",
+    "bng",
     "ccpc",
     "upc",
     "drago",
@@ -13980,10 +14016,10 @@
      "2026-11"
     ],
     "bng": [
-     "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf#page=35",
-     "Programa do BNG para as eleccións xerais de 2023",
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
+     "Programa electoral del BNG de 2026, p. 37",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf#page=94",
@@ -14050,7 +14086,7 @@
     "fa": "Su programa del 29N promete aprobar el real decreto de listas de espera, con tiempos máximos y registros comunes.",
     "pod": "La medida 219 fija un máximo de un mes en las listas de espera, con garantía estatal dentro de las competencias del Estado.",
     "erc": "Su programa de 2026 blinda las competencias sanitarias de la Generalitat e impide la recentralización o la injerencia del Estado.",
-    "bng": "El programa aspira a que Galicia asuma plena capacidad para regir su sistema sanitario sin interferencias.",
+    "bng": "Estimación: su programa del 29N quiere que Galicia rija su sanidad «sen interferencias», aunque acepta un marco estatal de requisitos mínimos de información sobre listas de espera (p. 38).",
     "fo": "Propone centralizar, unificar y homogeneizar el sistema nacional de salud.",
     "falange": "Su programa del 29N propone unificar el Sistema Nacional de Salud en uno solo para toda España.",
     "pacma": "Estimación: el programa del 29N (pp. 55–56) pide al Estado fijar «requisitos mínimos» de la sanidad y «planes de mejora de las listas de espera», sin tiempos máximos.",
@@ -14913,7 +14949,7 @@
     "d21": 3,
     "erc": 3,
     "junts": 3,
-    "bng": 3,
+    "bng": 4,
     "comp": 2,
     "cha": 2,
     "mes": 2,
@@ -14984,6 +15020,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 55",
      "programa",
      "2026-11"
+    ],
+    "bng": [
+     "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=49",
+     "Programa electoral del BNG de 2026, p. 49",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14996,7 +15038,8 @@
     "erc": "Estimación: posición intermedia entre pesca y sostenibilidad.",
     "pacma": "PACMA pide detener la sobrepesca y en el mismo programa se declara contraria a la pesca, lo que se opone a relajar las restricciones pesqueras.",
     "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
-    "mj": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos."
+    "mj": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
+    "bng": "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo."
    }
   },
   {
