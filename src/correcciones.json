@@ -33,6 +33,38 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "A02",
+  "partido": "ph",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N sube el gasto en sanidad, educación, vivienda y protección social y lo financia con más impuestos a rentas altas, grandes fortunas y finanzas (pp. 29–30).",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=29",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 29",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A04",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato propone un «tijeretazo» con una reducción drástica del gasto político y administrativo y critica la deuda pública (p. 13).",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "A05",
   "partido": "falange",
   "de": 0,
@@ -81,6 +113,38 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "A07",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato rechaza el «control social» a través del euro digital; no habla del límite al efectivo.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 26",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A09",
+  "partido": "ph",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone crear una banca pública a partir de las entidades con participación estatal; no se refiere a Telefónica o Indra.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "B04",
   "partido": "falange",
   "de": 0,
@@ -91,6 +155,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=15",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B04",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato antepone la protección de la propiedad privada; no trata la suspensión de desahucios.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
    "programa",
    "2026-11"
   ]
@@ -113,6 +193,38 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "B06",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato rechaza la regulación y el intervencionismo estatal en vivienda.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B06",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N obliga a los grandes tenedores a ceder al parque público las viviendas vacías más de 12 meses; no propone un recargo fiscal.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=9",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "B07",
   "partido": "falange",
   "de": 0,
@@ -123,6 +235,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B08",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato favorece la propiedad frente al alquiler y rechaza el intervencionismo estatal en vivienda.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
    "programa",
    "2026-11"
   ]
@@ -145,6 +273,38 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "B09",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato propone un plan de acceso a la primera vivienda para jóvenes y familias con incentivos fiscales y sin IVA; no habla de avales.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B09",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone una banca pública con créditos al 0 % para comprar la primera vivienda; no habla de avales.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "C04",
   "partido": "fo",
   "de": 0,
@@ -157,6 +317,22 @@
    "Programa político del Frente Obrero de 2026, p. 56",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "C04",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N defiende «una organización federativa» en la que el poder vuelva a la base social, desde el municipio hacia arriba.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=25",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 25",
+   "programa",
+   "2026-11"
   ]
  },
  {
@@ -209,6 +385,54 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "D05",
+  "partido": "ie",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su contrato propone inhabilitar 5 años a los ex altos cargos para incorporarse a empresas que fueron contratistas del Estado mientras ejercían.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=11",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 11",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "D06",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato propone referéndums vinculantes convocados por iniciativa ciudadana con recogida de firmas; no habla de las iniciativas legislativas.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 9",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "D06",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone consultas ciudadanas vinculantes y un referéndum revocatorio con 500.000 firmas; no habla de las iniciativas legislativas populares.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "E08",
   "partido": "falange",
   "de": 0,
@@ -237,6 +461,22 @@
    "Programa político del Frente Obrero de 2026, p. 52",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F04",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone abrir vías legales, estables y seguras para los flujos migratorios.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=19",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 19",
+   "programa",
+   "2026-11"
   ]
  },
  {
@@ -449,6 +689,38 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "G09",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N financia comunidades solares en tejados y una empresa pública que gestione las hidroeléctricas.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "H01",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato rechaza financiar la defensa de otros países, pide neutralidad y un referéndum sobre la OTAN.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "H03",
   "partido": "falange",
   "de": 0,
@@ -481,6 +753,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "I01",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato pide «libertad educativa para los padres»; no habla de los conciertos.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "I03",
   "partido": "bng",
   "de": 2,
@@ -497,6 +785,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "I06",
+  "partido": "ie",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato pide una educación basada en el esfuerzo y el mérito; no trata las becas.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "I09",
   "partido": "falange",
   "de": 0,
@@ -507,6 +811,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 47",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J01",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato pide un modelo sanitario «basado en la libertad de elección»; no trata la gestión privada.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
    "programa",
    "2026-11"
   ]
@@ -577,6 +897,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "J07",
+  "partido": "ph",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide derogar todas las fórmulas de colaboración público-privada en la sanidad y blindar su gestión pública directa; no nombra a MUFACE.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=11",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 11",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "J08",
   "partido": "bng",
   "de": 1,
@@ -587,6 +923,22 @@
   "fuente": [
    "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
    "Programa electoral del BNG de 2026, p. 37",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J08",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone armonizar el marco legislativo estatal y los recursos de las comunidades en sanidad.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=10",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 10",
    "programa",
    "2026-11"
   ]
@@ -621,6 +973,22 @@
    "Programa político del Frente Obrero de 2026, p. 37",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K03",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone subvenciones directas y preferencia a la agricultura familiar ecológica y de proximidad.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+   "programa",
+   "2026-11"
   ]
  },
  {
@@ -705,6 +1073,102 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "K08",
+  "partido": "gbai",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: sus bases del 29N exigen al Estado cumplir sus compromisos con el regadío navarro (pp. 7 y 12), lo que choca con limitar los nuevos regadíos.",
+  "fuente": [
+   "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=7",
+   "Bases políticas de Geroa Bai para las generales del 29N, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L01",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende el aborto libre, gratuito y en la sanidad pública «con el aval de la ley»; no habla de la Constitución.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L02",
+  "partido": "ph",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N afirma que el ser humano es «libre de disponer absolutamente de su cuerpo»; no nombra la eutanasia.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L04",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N valora la reproducción asistida y la libertad de disponer del propio cuerpo; no nombra la gestación subrogada.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L05",
+  "partido": "ph",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide un Estado laico y laicidad absoluta en la escuela (p. 13); no nombra los acuerdos con la Santa Sede.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L06",
+  "partido": "ie",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su contrato rechaza el control social mediante control biométrico y defiende la libertad de expresión.",
+  "fuente": [
+   "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+   "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 26",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "L07",
   "partido": "falange",
   "de": 0,
@@ -738,6 +1202,22 @@
  {
   "fecha": "2026-11-20",
   "id": "L08",
+  "partido": "existe",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide «ni un paso atrás en los derechos conseguidos» y medidas de igualdad; no habla de las cuotas.",
+  "fuente": [
+   "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+   "Programa de Teruel Existe para las generales de 2026, p. 3",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L08",
   "partido": "falange",
   "de": 0,
   "a": 4,
@@ -747,6 +1227,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L08",
+  "partido": "ph",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N apoya las medidas que reparan discriminaciones históricas; no nombra las cuotas.",
+  "fuente": [
+   "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=17",
+   "Programa del Partido Humanista para las elecciones generales de 2026, p. 17",
    "programa",
    "2026-11"
   ]

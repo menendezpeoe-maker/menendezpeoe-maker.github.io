@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "order": [
   "psoe",
   "pp",
@@ -735,8 +735,8 @@
      "q": "B08"
     },
     {
-     "t": "Transición ecológica y fin de los coches de combustión en 2035.",
-     "q": "G03"
+     "t": "Reforzar las políticas frente al cambio climático.",
+     "q": "G09"
     }
    ]
   },
@@ -828,10 +828,10 @@
    "desc": "Coalición de Podemos, Nueva Canarias-Bloque Canarista, Izquierda Unida y Movimiento Sumar. En Canarias sustituye a las listas de Podemos y del Frente Amplio.",
    "props": [
     {
-     "t": "Ecotasa y límites al crecimiento turístico."
+     "t": "Tasa turística para no residentes y moratoria de nuevas camas."
     },
     {
-     "t": "Impuesto a la compra de vivienda por no residentes.",
+     "t": "Limitar la compra de vivienda por no residentes.",
      "q": "B07"
     },
     {
