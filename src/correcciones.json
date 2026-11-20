@@ -97,6 +97,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "A06",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone «revisar los umbrales legales que penalizan el crecimiento de las pymes».",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=69",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 69",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "A07",
   "partido": "falange",
   "de": 0,
@@ -145,6 +161,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "A10",
+  "partido": "junts",
+  "de": 3,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone eliminar el impuesto de sucesiones y donaciones.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 68",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "B04",
   "partido": "falange",
   "de": 0,
@@ -177,6 +209,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "B04",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide que la Administración pague al pequeño propietario la deuda del inquilino vulnerable y que, si no lo hace en dos meses, siga el desahucio.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "B06",
   "partido": "falange",
   "de": 0,
@@ -203,6 +251,22 @@
   "fuente": [
    "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
    "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B06",
+  "partido": "junts",
+  "de": 2,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende el impuesto catalán sobre viviendas vacías, pero pide que la fiscalidad estatal no lo duplique.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 18",
    "programa",
    "2026-11"
   ]
@@ -257,6 +321,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "B08",
+  "partido": "junts",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide ampliar el parque público de vivienda con fondos del Estado transferidos a la Generalitat; no propone que lo construya el Estado.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "B09",
   "partido": "falange",
   "de": 0,
@@ -283,6 +363,22 @@
   "fuente": [
    "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
    "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B09",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N pide que el aval para pagar la entrada del primer hogar llegue de verdad a los menores de 35 años, gestionado por la Generalitat.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 18",
    "programa",
    "2026-11"
   ]
@@ -433,6 +529,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "E03",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone derogar la Ley de seguridad ciudadana («ley mordaza») y prohibir o limitar las pelotas de goma.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=14",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "E08",
   "partido": "falange",
   "de": 0,
@@ -461,6 +573,22 @@
    "Programa político del Frente Obrero de 2026, p. 52",
    "programa",
    "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F04",
+  "partido": "junts",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone priorizar las vías legales y la contratación en origen según las ocupaciones que necesitan las empresas.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 48",
+   "programa",
+   "2026-11"
   ]
  },
  {
@@ -561,6 +689,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "G01",
+  "partido": "junts",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su grupo de la Ribera d'Ebre pide prorrogar Ascó y Vandellòs, pero en el Congreso se abstuvo en las dos votaciones sobre la prórroga nuclear (febrero y noviembre de 2025).",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=78",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 78",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "G02",
   "partido": "falange",
   "de": 0,
@@ -571,6 +715,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G02",
+  "partido": "junts",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide abrir los nudos de evacuación para facilitar proyectos renovables y repartir la generación por territorios.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=77",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 77",
    "programa",
    "2026-11"
   ]
@@ -689,6 +849,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "G08",
+  "partido": "junts",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide «bosques bien gestionados» y más capacidad para prevenir incendios forestales (p. 23).",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=10",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "G09",
   "partido": "ph",
   "de": 0,
@@ -721,6 +897,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "H02",
+  "partido": "junts",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide una defensa europea más integrada; se define como europeísta exigente (p. 8).",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=28",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 28",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "H03",
   "partido": "falange",
   "de": 0,
@@ -731,6 +923,22 @@
   "fuente": [
    "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19",
    "Programa de FE de las JONS para las generales del 29N de 2026, p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "H06",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N quiere una Cataluña independiente miembro de la UE y de la OTAN.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=26",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 26",
    "programa",
    "2026-11"
   ]
@@ -769,6 +977,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "I01",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone actualizar los módulos de la enseñanza concertada para ajustarlos a sus costes reales.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=54",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 54",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "I03",
   "partido": "bng",
   "de": 2,
@@ -795,6 +1019,22 @@
   "fuente": [
    "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
    "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "I08",
+  "partido": "junts",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone derogar la declaración de la tauromaquia como patrimonio cultural; no trata su financiación.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=42",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 42",
    "programa",
    "2026-11"
   ]
@@ -977,6 +1217,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "K02",
+  "partido": "junts",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N exige aplicar estrictamente la Ley de la cadena alimentaria para que los precios en origen cubran los costes.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=75",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 75",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "K03",
   "partido": "ph",
   "de": 0,
@@ -1089,6 +1345,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "K08",
+  "partido": "junts",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende los regadíos y pide IVA reducido para modernizarlos.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=73",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 73",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "L01",
   "partido": "ph",
   "de": 0,
@@ -1115,6 +1387,22 @@
   "fuente": [
    "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
    "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L03",
+  "partido": "junts",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": true,
+  "estimada": false,
+  "motivo": "Su programa del 29N se opone a cualquier derogación o recorte de la Ley 4/2023 (trans y LGTBI).",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=36",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 36",
    "programa",
    "2026-11"
   ]
