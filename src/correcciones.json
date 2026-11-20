@@ -337,6 +337,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "G02",
+  "partido": "pod",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N exige consulta vecinal para las grandes plantas y solo las admite en tierras fértiles de forma excepcional, pero quiere un 95 % de luz renovable en 2035.",
+  "fuente": [
+   "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf#page=101",
+   "Programa electoral de Podemos para las generales del 29N de 2026 («Así de básico: Paz, casa y trabajo»), p. 101 (medida 333)",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "G03",
   "partido": "falange",
   "de": 0,
@@ -449,6 +465,22 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "H08",
+  "partido": "pod",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone cooperar con China y oponerse a las políticas de bloques que buscan limitar su participación internacional.",
+  "fuente": [
+   "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf#page=31",
+   "Programa electoral de Podemos para las generales del 29N de 2026 («Así de básico: Paz, casa y trabajo»), p. 31 (medida 85)",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "I03",
   "partido": "bng",
   "de": 2,
@@ -555,6 +587,22 @@
   "fuente": [
    "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
    "Programa electoral del BNG de 2026, p. 37",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J08",
+  "partido": "pod",
+  "de": 4,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone una ley que fije mínimos obligatorios en todo el país, incluidos los tiempos máximos de espera, con más competencias para la Alta Inspección.",
+  "fuente": [
+   "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf#page=89",
+   "Programa electoral de Podemos para las generales del 29N de 2026 («Así de básico: Paz, casa y trabajo»), p. 89 (medida 303)",
    "programa",
    "2026-11"
   ]

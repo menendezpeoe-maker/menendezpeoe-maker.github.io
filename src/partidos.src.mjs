@@ -86,7 +86,7 @@ export const PARTIES = [
    props: [["Bajar por ley un 40 % los alquileres y prohibir comprar vivienda que no sea para vivir.","B01"],
      ["Empresa pública de energía y banca pública.","G05"],
      ["Impuestos a las grandes fortunas.","A03"],
-     ["Regularización extraordinaria de inmigrantes.","F01"],
+     ["Regularización permanente de los inmigrantes con arraigo.","F01"],
      ["Ruptura de relaciones con Israel.","H04"],
      ["No al aumento del gasto militar.","H01"],
      ["Derogar la «ley mordaza».","E03"],
