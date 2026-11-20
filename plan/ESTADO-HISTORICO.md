@@ -65,7 +65,7 @@
   6. Adelante Andalucía (83; 134 págs.): **HECHO (18 nov, noche).** Adelante 24 → 73 posturas que citan el programa del 29N.
   7. SALF (78; 40 págs.): **HECHO (19 nov, tarde).** SALF 29 → 48 posturas que citan el programa del 29N. seacabolafiesta.com da 403 a la nube: usar la copia del titular (test29n/programas/SALF_Contrato_Electoral_29N.pdf).
   8. Democracia 21 (90; web por bloques) y M+J (77): **HECHO (19 nov, noche).** D21 17 → 41 y M+J 30 → 55 posturas que citan el programa del 29N.
-  9. BNG (69; 91 págs.).
+  9. BNG (69; 91 págs.): **HECHO (20 nov, tarde).** BNG 38 → 56 posturas que citan el programa del 29N. bng.gal da 403 a la nube: usar la copia del titular (uploads, 15 nov).
   10. Falange (71) y Frente Obrero (66).
   11. ERC (62), Vox (61) y PP (50).
   12. Repaso: programas nuevos (Drago, Ara Més, Junts, Podemos [en /programas/ desde el 19 nov: https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf, 141 págs.; podemos.info da 403], CHA, PCTE, UPN…), partidos con programa corto (Geroa Bai, Soria ¡Ya!, Teruel Existe, UPC, PH, IE) y balance final.

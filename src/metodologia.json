@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-19",
- "datos": "2026-11-19",
+ "generado": "2026-11-20",
+ "datos": "2026-11-20",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -343,8 +343,8 @@
   {
    "pid": "bng",
    "conocidas": 105,
-   "estimadas": 51,
-   "conFuente": 61
+   "estimadas": 52,
+   "conFuente": 67
   },
   {
    "pid": "ccpc",

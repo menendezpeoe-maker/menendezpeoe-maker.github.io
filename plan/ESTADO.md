@@ -1,5 +1,16 @@
 # Estado del plan (lo más reciente arriba)
 
+## 20 nov 2026 (tarde) · Revisar posturas con el programa del 29N: BNG
+- **Fuente:** programa electoral del BNG para las generales del 29N (91 págs., en gallego), URL de `src/programas.src.mjs`. bng.gal da 403 a la nube: se usó la copia que subió el titular (uploads, 15 nov; mismas páginas que las citas ya existentes). Se cita la página del PDF (coincide con la impresa).
+- **Pasan a citar el programa (directo; antes el programa de 2023, mismo valor):** A02 5 (p. 44, blindar impuestos a banca, energéticas y grandes fortunas), C05 5 (p. 32, referendos vinculantes con autodeterminación), E08 1 (p. 24, reforma integral de violencia machista, Pacto de Estado, feminicidio), F02 1 y F03 1 (p. 23, regularización, cierre de CIE, derechos de la población inmigrante), F08 5 (p. 40, red pública de dependencia), G05 5 (p. 55, empresa pública gallega de energía), G09 4 (p. 55, renovables, autoconsumo y mix diversificado), I05 1 (p. 33, normalización lingüística), J01 5 y J02 1 (p. 37, provisión sanitaria exclusivamente pública, Ley 15/97).
+- **Estimadas con enlace («Estimación:»):** J08 1→2~ (p. 37: sanidad gallega «sen interferencias», pero acepta un marco estatal de requisitos mínimos de información sobre listas de espera, p. 38), I03 2~→1~ (p. 35, ley universitaria que «evite a privatización»), K06 3~→4~ (p. 49, pesca artesanal exenta de TAC y cuotas), F04 4~ (p. 22), I02 5~ (p. 36), I07 5~ (p. 29), C09 2~ (p. 8, concierto económico propio).
+- **Solo pasaje indirecto (conserva el programa de 2023):** H09 (p. 91 del 29N: política de asilo respetuosa en la UE; no trata los centros en terceros países).
+- **Revisadas sin pasaje (siguen como estaban):** A06 A07 A09 A10 B07 B09 C02 C04 C07 C08 D02 D03 D06 D07 D08 D09 E04 E07 E09 F05 F06 F07 F09 G03 G07 H03 H07 H08 I04 J03 J04 J05 J06 J07 K03 K05 K07 K08 L06 L07 L09. Las 38 que ya citaban el programa del 29N no se tocan.
+- **Pendientes del titular:** ninguna (el BNG no es partido de la regla 8).
+- **Secciones:** ficha del BNG (`src/partidos.src.mjs`): descripción y propuestas (C05, G05, B01, I09, H06, tarifa eléctrica gallega p. 54, AP-9) sin contradicciones; sin cambios. /programas/ («N de 107»), /comparar/, /temas/, explorador, /correcciones/, /metodologia/, /prensa/ y /datos/ se regeneran con los datos; apartado 1 del barrido sin textos fijos desfasados.
+- **Recuento (`node qa/barrido.mjs`):** BNG con el programa del 29N 38 → 56 (otro programa 13 → 1; estimadas 45 → 39; sin postura 2). Total web: 1.226 documentadas, 1.230 estimadas y 1.075 sin postura → 1.225, 1.231 y 1.075.
+- **Cola:** bloque 9 **HECHO**; el siguiente es el 10 (Falange y Frente Obrero).
+
 ## 20 nov 2026 · Revisión diaria: sin programas nuevos; barrido completo n.º 2; /debates/ con el cara a cara emitido y Huesca el 20
 - **Programas (a):** ninguno nuevo a las 9:50. Junts (en junts.cat solo programas de 2021–2024 en «documents de transparència» y noticias de campaña), UPN (nada del 29N), PCTE (programas de otros años), CHA (noticias de propuestas de CHA-Frente Amplio Aragón, sin documento) sin programa del 29N; Drago y Ara Més no responden desde la nube. Sigue 24 de 30 (`comprobado` 20 nov).
 - **Hallazgos:** ninguno pendiente. **Posturas (b):** la cola la llevan las pasadas de 14:23 y 21:17 (siguiente bloque: 9, BNG); no se toca.

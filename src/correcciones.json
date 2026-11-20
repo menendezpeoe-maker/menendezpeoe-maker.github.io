@@ -1,5 +1,53 @@
 [
  {
+  "fecha": "2026-11-20",
+  "id": "I03",
+  "partido": "bng",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide una ley universitaria propia que «evite a privatización» del sistema universitario gallego.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=35",
+   "Programa electoral del BNG de 2026, p. 35",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J08",
+  "partido": "bng",
+  "de": 1,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere que Galicia rija su sanidad «sen interferencias», aunque acepta un marco estatal de requisitos mínimos de información sobre listas de espera (p. 38).",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=37",
+   "Programa electoral del BNG de 2026, p. 37",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K06",
+  "partido": "bng",
+  "de": 3,
+  "a": 4,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo.",
+  "fuente": [
+   "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=49",
+   "Programa electoral del BNG de 2026, p. 49",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-19",
   "id": "A05",
   "partido": "d21",
