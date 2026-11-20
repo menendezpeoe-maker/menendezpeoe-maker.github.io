@@ -94,7 +94,7 @@
     "pid": "fo",
     "prov": "madrid",
     "primero": true,
-    "pct": 97
+    "pct": 100
    },
    {
     "pid": "pcte",
@@ -112,7 +112,7 @@
     "pid": "falange",
     "prov": "cordoba",
     "primero": true,
-    "pct": 99
+    "pct": 100
    },
    {
     "pid": "d21",
@@ -195,47 +195,43 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 73
-   },
-   {
-    "pid": "pp",
-    "n": 71
+    "n": 70
    },
    {
     "pid": "d21",
-    "n": 66
+    "n": 63
    },
    {
-    "pid": "mj",
-    "n": 26
+    "pid": "pp",
+    "n": 57
    },
    {
     "pid": "fo",
-    "n": 22
-   },
-   {
-    "pid": "pacma",
-    "n": 8
-   },
-   {
-    "pid": "fa",
-    "n": 7
+    "n": 34
    },
    {
     "pid": "falange",
+    "n": 28
+   },
+   {
+    "pid": "mj",
+    "n": 23
+   },
+   {
+    "pid": "pacma",
+    "n": 7
+   },
+   {
+    "pid": "fa",
     "n": 6
    },
    {
     "pid": "salf",
-    "n": 6
+    "n": 4
    },
    {
     "pid": "ph",
-    "n": 5
-   },
-   {
-    "pid": "vox",
-    "n": 5
+    "n": 2
    },
    {
     "pid": "pcte",
@@ -246,12 +242,16 @@
     "n": 2
    },
    {
+    "pid": "vox",
+    "n": 1
+   },
+   {
     "pid": "ie",
     "n": 1
    }
   ],
   "mediaPrimero": 62,
-  "mediaDistancia": 1.6
+  "mediaDistancia": 1.8
  },
  "neutral": [
   {
@@ -271,11 +271,11 @@
    "pct": 62
   },
   {
-   "pid": "pacma",
-   "pct": 59
+   "pid": "fo",
+   "pct": 61
   },
   {
-   "pid": "vox",
+   "pid": "falange",
    "pct": 59
   }
  ],
@@ -366,9 +366,9 @@
   },
   {
    "pid": "fo",
-   "conocidas": 41,
-   "estimadas": 14,
-   "conFuente": 41
+   "conocidas": 56,
+   "estimadas": 26,
+   "conFuente": 56
   },
   {
    "pid": "pcte",
@@ -384,9 +384,9 @@
   },
   {
    "pid": "falange",
-   "conocidas": 39,
-   "estimadas": 5,
-   "conFuente": 39
+   "conocidas": 66,
+   "estimadas": 30,
+   "conFuente": 66
   },
   {
    "pid": "d21",

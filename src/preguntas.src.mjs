@@ -52,14 +52,14 @@ export const QUESTIONS = [
   short: "Jornada de 37,5 horas por ley",
   ctx: "La jornada máxima legal es de 40 horas semanales de promedio anual, aunque muchos convenios ya fijan menos. En 2025 el Congreso rechazó el proyecto del Gobierno para bajarla a 37,5 horas. A favor se citan la conciliación y repartir las ganancias de productividad; en contra, el coste para pymes y sectores con poco margen, y la preferencia por pactarlo en la negociación colectiva.",
   ley: "Estatuto de los Trabajadores, art. 34",
-  pos: "5 2 1 5 5 1~ 0 2~ 5 1 4 5 1 4~ 5 4 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0 5 0 0 0 5 5" },
+  pos: "5 2 1 5 5 1~ 0 2~ 5 1 4 5 1 4~ 5 4 5 5~ 5 5~ 0 5~ 5~ 0 0 0 0 5 0 3~ 0 5 5" },
 { id: "A02", area: "eco", prio: 1, type: "dilema", dim: "eco", dir: -1, lr: -1,
   text: "Si hubiera que elegir, ¿qué debería priorizar el Estado?",
   A: "Bajar impuestos, aunque haya que reducir gasto público",
   B: "Mantener o ampliar los servicios públicos, aunque haya que mantener o subir los impuestos",
   short: "Bajar impuestos o mantener servicios",
   ctx: "España recauda en impuestos y cotizaciones en torno al 37 % del PIB, algo menos que la media de la zona euro, y mantiene déficit público desde hace años. Bajar impuestos deja más renta a familias y empresas y puede estimular la actividad, pero exige recortar gasto o endeudarse. Mantener la recaudación sostiene sanidad, educación o pensiones con una presión fiscal mayor.",
-  pos: "4 2 1 5 5 1 0 3 5 2 3 5 2 4~ 5 4~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 0 2 2~ 4~ 5" },
+  pos: "4 2 1 5 5 1 0 3 5 2 3 5 2 4~ 5 4~ 5 5~ 5~ 5 3~ 5~ 5 0 0 0 0 5 4~ 2 2~ 4~ 5" },
 { id: "A03", area: "eco", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Debería existir un impuesto estatal sobre las grandes fortunas que se pague en todas las comunidades.",
   short: "Impuesto estatal a las grandes fortunas",
@@ -76,7 +76,7 @@ export const QUESTIONS = [
   B: "Contener el gasto: retrasar la jubilación o ligar más la pensión a lo cotizado",
   short: "Cómo sostener las pensiones",
   ctx: "El gasto en pensiones supera el 12 % del PIB y crecerá con la jubilación de la generación del baby boom. Las reformas de 2021 y 2023 garantizaron la revalorización con el IPC y la financiaron con más cotizaciones, como el Mecanismo de Equidad Intergeneracional. Unos economistas lo consideran suficiente; otros, como la AIReF, advierten de tensiones a largo plazo si no se modera el gasto.",
-  pos: "1 3 3 1 1 3~ 2~ 3~ 1 4 2 1 3~ 2~ 1 2 1 1~ 1 1 2~ 1~ 1 0 0 0 0 1 0 0 0 1 1" },
+  pos: "1 3 3 1 1 3~ 2~ 3~ 1 4 2 1 3~ 2~ 1 2 1 1~ 1 1 2~ 1~ 1 0 0 0 0 1 1~ 2~ 0 1 1" },
 { id: "A06", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Habría que suavizar las obligaciones que se activan cuando una empresa supera los 50 trabajadores, para que las pymes crezcan.",
   short: "Menos trabas al crecimiento de las pymes",
@@ -86,7 +86,7 @@ export const QUESTIONS = [
   text: "Habría que eliminar el límite de 1.000 euros para los pagos en efectivo.",
   short: "Eliminar el límite a los pagos en efectivo",
   ctx: "Desde 2021 los pagos en efectivo en los que interviene una empresa o un profesional están limitados a 1.000 euros. Las estimaciones sitúan la economía sumergida entre el 10 % y el 20 % del PIB, según el método. Los defensores del límite sostienen que dificulta cobrar sin factura y facilita perseguir el fraude; sus críticos defienden la privacidad y a quienes dependen del efectivo, como muchas personas mayores, y dudan de su eficacia.",
-  pos: "2 2~ 4 1~ 1~ 5 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0 0 0 0 0 0 0" },
+  pos: "2 2~ 4 1~ 1~ 5 0 3~ 2~ 4~ 3~ 2~ 4~ 0 2~ 0 0 0 2~ 0 0 0 0 0 0 0 0 0 0 4~ 0 0 0" },
 { id: "A08", area: "eco", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "Las subidas del salario mínimo deberían frenarse hasta que crezca la productividad.",
   short: "Frenar las subidas del salario mínimo",
@@ -126,7 +126,7 @@ export const QUESTIONS = [
   text: "Debería levantarse la suspensión de desahucios de familias vulnerables cuando el propietario es un particular.",
   short: "Fin de la suspensión de desahucios si el dueño es particular",
   ctx: "Desde 2020, un «escudo social» prorrogado varias veces permite suspender el desahucio de familias vulnerables sin alternativa de vivienda, con compensaciones al propietario. En 2026 el Congreso rechazó tres decretos que lo prorrogaban, y en octubre el Gobierno lo volvió a aprobar, pendiente de convalidación. Sus defensores lo consideran una protección básica mientras falte vivienda social; sus críticos, que traslada a propietarios particulares una obligación que corresponde a la Administración y que facilita impagos prolongados.",
-  pos: "4 5 5 1 1 5 4 5~ 1 4 4 1 5~ 2~ 1 4~ 1~ 1~ 1 1~ 0 1~ 1 0 0 0 0 1 1 0 0 1 2" },
+  pos: "4 5 5 1 1 5 4 5~ 1 4 4 1 5~ 2~ 1 4~ 1~ 1~ 1 1~ 0 1~ 1 0 0 0 0 1 1 4~ 0 1 2" },
 { id: "B05", area: "viv", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Los ayuntamientos deberían poder prohibir nuevos pisos turísticos en los barrios con problemas de vivienda.",
   short: "Prohibir nuevos pisos turísticos",
@@ -136,12 +136,12 @@ export const QUESTIONS = [
   text: "Las viviendas vacías durante años deberían pagar un recargo fiscal elevado.",
   short: "Recargo fiscal a las viviendas vacías",
   ctx: "El censo de 2021 contó unos 3,8 millones de viviendas vacías, aunque muchas están en zonas rurales o necesitan reformas. La Ley de Vivienda permite a los ayuntamientos subir hasta un 150 % el IBI de los pisos vacíos más de dos años. Los defensores buscan que salgan al mercado; sus críticos recuerdan que muchas no son habitables ni están donde hay demanda, y que el recargo penaliza a pequeños propietarios.",
-  pos: "4 1 1~ 5 5 1~ 0 2~ 5 2~ 3~ 5 1~ 4~ 5 2 5~ 5~ 4 5~ 2~ 5~ 5 0 0 0 0 0 0 0 0 0 4" },
+  pos: "4 1 1~ 5 5 1~ 0 2~ 5 2~ 3~ 5 1~ 4~ 5 2 5~ 5~ 4 5~ 2~ 5~ 5 0 0 0 0 0 0 4~ 0 0 4" },
 { id: "B07", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "La compra de vivienda por extranjeros no residentes de fuera de la UE debería tener un impuesto especial.",
   short: "Impuesto a compradores no residentes",
   ctx: "En 2025 el Gobierno propuso un recargo de hasta el 100 % para estas compras: según sus datos, unas 27.000 viviendas al año, concentradas en la costa, Baleares, Canarias y grandes ciudades. Sus defensores buscan frenar la demanda especulativa en las zonas tensionadas; sus críticos dudan de su eficacia y de su encaje con las normas europeas, y temen perder inversión.",
-  pos: "5 2 4 5 5 2~ 4 5 5 3~ 3~ 5~ 2~ 4~ 5~ 4 5~ 5~ 5 5~ 0 2 5~ 0 0 0 0 0 0 0 0 0 4" },
+  pos: "5 2 4 5 5 2~ 4 5 5 3~ 3~ 5~ 2~ 4~ 5~ 4 5~ 5~ 5 5~ 0 2 5~ 0 0 0 0 0 0 5~ 0 0 4" },
 { id: "B08", area: "viv", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
   short: "Gran parque público de alquiler",
@@ -151,7 +151,7 @@ export const QUESTIONS = [
   text: "El Estado debería avalar parte de la hipoteca de los jóvenes para que puedan comprar su primera vivienda.",
   short: "Avales públicos a hipotecas de jóvenes",
   ctx: "Desde 2023 el ICO avala hasta el 20 % de la hipoteca a menores de 35 años y familias con hijos con ingresos limitados, para cubrir la entrada que los bancos no financian. Facilita el acceso a la propiedad; sus críticos advierten de que, sin más oferta, estas ayudas pueden empujar los precios al alza y de que el riesgo de impago recae en el Estado.",
-  pos: "5 5 4 2 1 5 4~ 4~ 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 2~ 2~ 3~ 2~ 0 2~ 2~ 0 0 4~ 0 0 0 0 0 0 0" },
+  pos: "5 5 4 2 1 5 4~ 4~ 3~ 4~ 4~ 2~ 4~ 3~ 2~ 4~ 2~ 2~ 3~ 2~ 0 2~ 2~ 0 0 4~ 0 0 0 4~ 0 0 0" },
 
 // ───────────── C · Organización territorial
 { id: "C01", area: "ter", prio: 1, type: "likert", dim: "ter", dir: -1, lr: -1,
@@ -176,7 +176,7 @@ export const QUESTIONS = [
   short: "Estado federal",
   ctx: "La Constitución creó un Estado autonómico con amplias competencias para las comunidades, pero sin una cámara que represente realmente a los territorios ni mecanismos estables de cooperación. Un modelo federal fijaría en la Constitución el reparto de competencias y daría voz a las comunidades en las decisiones del Estado. Sus críticos temen que abra la puerta a más diferencias entre territorios; algunos nacionalistas lo consideran insuficiente.",
   ley: "Constitución, título VIII",
-  pos: "4 1 1 5 4 1~ 0 1~ 2~ 2~ 3~ 2~ 1~ 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0 0 0 1 0 0 0" },
+  pos: "4 1 1 5 4 1~ 0 1~ 2~ 2~ 3~ 2~ 1~ 4~ 3~ 3~ 4~ 4~ 5 5 3~ 4~ 4~ 0 0 0 0 0 2~ 1 0 0 0" },
 { id: "C05", area: "ter", prio: 2, type: "likert", dim: "ter", dir: -1, lr: -1,
   text: "Debería poder celebrarse un referéndum de independencia pactado si lo pide una mayoría clara de una comunidad.",
   short: "Referéndum de independencia pactado",
@@ -205,7 +205,7 @@ export const QUESTIONS = [
   short: "Reformar el concierto vasco y el convenio navarro",
   ctx: "Por sus derechos históricos, el País Vasco y Navarra recaudan casi todos sus impuestos y pagan al Estado un cupo o aportación por las competencias que no ejercen. Sus defensores lo ven como un pacto constitucional de autogobierno y responsabilidad fiscal; sus críticos sostienen que el cálculo del cupo es opaco y que ambas comunidades aportan a la solidaridad interterritorial menos de lo que les correspondería por su renta.",
   ley: "Constitución, disp. adicional 1.ª",
-  pos: "1 2 5 3 3~ 5~ 0 5~ 2~ 2~ 1 1 1 1 2~ 2~ 0 0 3~ 0 4~ 0 4~ 0 0 0 0 0 0 0 0 0 0" },
+  pos: "1 2 5 3 3~ 5~ 0 5~ 2~ 2~ 1 1 1 1 2~ 2~ 0 0 3~ 0 4~ 0 4~ 0 0 0 0 0 5 4~ 0 0 0" },
 
 // ───────────── D · Calidad democrática e instituciones
 { id: "D01", area: "ins", prio: 1, type: "likert", dim: null, dir: 0, lr: 0,
@@ -230,7 +230,7 @@ export const QUESTIONS = [
   short: "Amnistías por conflictos políticos",
   ctx: "La Constitución prohíbe los indultos generales, pero no menciona la amnistía. En 2024 las Cortes aprobaron una amnistía para los delitos ligados al proceso independentista catalán, avalada en lo esencial por el Tribunal Constitucional en 2025. Sus defensores la ven como una herramienta para cerrar conflictos y facilitar la convivencia; sus críticos, como una ruptura de la igualdad ante la ley negociada a cambio de apoyos parlamentarios.",
   ley: "Constitución, art. 62.i",
-  pos: "4 1 1 5 4 1 0 1~ 5 5 4 5 1 5~ 4 1 4~ 4~ 5 4~ 0 5~ 4~ 0 0 0 0 0 0 0 0 0 0" },
+  pos: "4 1 1 5 4 1 0 1~ 5 5 4 5 1 5~ 4 1 4~ 4~ 5 4~ 0 5~ 4~ 0 0 0 0 0 0 1~ 0 0 0" },
 { id: "D05", area: "ins", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Los altos cargos deberían esperar al menos cinco años antes de trabajar en empresas del sector que regulaban.",
   short: "Cinco años contra las puertas giratorias",
@@ -310,7 +310,7 @@ export const QUESTIONS = [
   short: "Sustituir la Ley de Violencia de Género",
   ctx: "La Ley Integral de 2004 trata la violencia de hombres contra sus parejas o exparejas mujeres como un fenómeno específico, con juzgados especializados, medidas de protección y penas agravadas; el Constitucional la avaló en 2008. Quienes proponen sustituirla sostienen que vulnera la igualdad ante la ley; quienes la defienden, que la violencia machista tiene causas propias y que la ley ha mejorado la protección de las víctimas.",
   ley: "Ley Orgánica 1/2004, de violencia de género",
-  pos: "1 1 5 1 1 5~ 1 1 1 1 1 1 2~ 1 1 1 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0 0 4~ 0 0 0 1" },
+  pos: "1 1 5 1 1 5~ 1 1 1 1 1 1 2~ 1 1 1 1 1~ 1 1~ 1~ 1~ 1 0 0 0 0 0 4~ 4~ 0 0 1" },
 { id: "E09", area: "jus", prio: 3, type: "likert", dim: "lib", dir: -1, lr: -1,
   text: "Debería legalizarse y regularse la venta de cannabis para uso adulto.",
   short: "Legalizar el cannabis",
@@ -337,27 +337,27 @@ export const QUESTIONS = [
   text: "España debería facilitar la llegada legal de trabajadores extranjeros para ocupar los empleos que quedan sin cubrir.",
   short: "Facilitar la inmigración laboral legal",
   ctx: "Sin inmigración, la población en edad de trabajar se reduciría en las próximas décadas, y sectores como el campo, la hostelería, la construcción o los cuidados tienen dificultades para cubrir puestos. Facilitar la llegada legal, por ejemplo con contratación en origen, cubre vacantes y aporta cotizantes; sus críticos temen presión sobre salarios, vivienda y servicios, y prefieren priorizar el empleo de los parados.",
-  pos: "5 4 1 5 5 2 0 5 4 3~ 4 4 3~ 4~ 4~ 4 5~ 5~ 5 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0 0 0 1 0 0 5" },
+  pos: "5 4 1 5 5 2 0 5 4 3~ 4 4 3~ 4~ 4~ 4 5~ 5~ 5 5~ 4~ 4~ 4~ 3~ 3~ 4~ 0 0 1 1 0 0 5" },
 { id: "F05", area: "dem", prio: 3, type: "likert", dim: "inm", dir: -1, lr: -1,
   text: "Los menores migrantes no acompañados deberían repartirse obligatoriamente entre todas las comunidades autónomas.",
   short: "Reparto obligatorio de menores migrantes",
   ctx: "La tutela de los menores que llegan solos corresponde a la comunidad donde se encuentran, y Canarias llegó a tener más de 5.000 a su cargo. En 2025 una reforma de la Ley de Extranjería estableció un reparto obligatorio cuando una comunidad supera su capacidad. Sus defensores lo ven como solidaridad entre territorios; varias comunidades lo rechazan por falta de recursos o de acuerdo y lo han recurrido ante el Constitucional.",
-  pos: "5 1 1 5 5 1~ 0 3~ 4 2 4 4 2~ 4~ 3~ 5 5 5~ 4~ 4~ 3~ 3~ 4 0 0 0 0 0 0 2~ 2~ 0 0" },
+  pos: "5 1 1 5 5 1~ 0 3~ 4 2 4 4 2~ 4~ 3~ 5 5 5~ 4~ 4~ 3~ 3~ 4 0 0 0 0 0 0 1~ 2~ 0 0" },
 { id: "F06", area: "dem", prio: 3, type: "likert", dim: "eco", dir: -1, lr: 0,
   text: "Todas las familias deberían recibir una ayuda mensual por cada hijo menor, sin depender de sus ingresos.",
   short: "Ayuda universal por hijo",
   ctx: "España tiene una de las natalidades más bajas del mundo, con unos 1,1 hijos por mujer. Hoy las ayudas por hijo dependen sobre todo de la renta, como el complemento de ayuda a la infancia, o de deducciones para madres trabajadoras. Una prestación universal, como las de Alemania o Irlanda, llegaría a todas las familias y sería más sencilla de gestionar; sus críticos alegan su alto coste y que beneficia también a quien no la necesita.",
-  pos: "4 4~ 4 5 5 3~ 0 2 5 3~ 3~ 4 3~ 0 4~ 0 5~ 4~ 5 4~ 0 4~ 5 0 0 0 0 0 0 0 0 0 4" },
+  pos: "4 4~ 4 5 5 3~ 0 2 5 3~ 3~ 4 3~ 0 4~ 0 5~ 4~ 5 4~ 0 4~ 5 0 0 0 0 0 4~ 4~ 0 0 4" },
 { id: "F07", area: "dem", prio: 2, type: "likert", dim: null, dir: 0, lr: 0,
   text: "Las zonas rurales despobladas deberían tener impuestos más bajos que las ciudades.",
   short: "Menos impuestos en zonas despobladas",
   ctx: "Más de la mitad de los municipios españoles pierde población, y provincias como Soria, Teruel o Cuenca tienen densidades muy bajas. Desde 2022 sus empresas tienen rebajas en las cotizaciones sociales, que la UE permite en zonas muy despobladas. Extender la fiscalidad diferenciada atraería población y empleo, según sus defensores; sus críticos dudan de su eficacia frente a la falta de servicios y advierten de agravios con otros territorios.",
-  pos: "4 4 4~ 4 3~ 3~ 0 4~ 0 0 0 0 3~ 0 3~ 4 0 0 3~ 4~ 5 0 4~ 5~ 5~ 5 5~ 0 0 0 0 0 4~" },
+  pos: "4 4 4~ 4 3~ 3~ 0 4~ 0 0 0 0 3~ 0 3~ 4 0 0 3~ 4~ 5 0 4~ 5~ 5~ 5 5~ 0 0 4 0 0 4~" },
 { id: "F08", area: "dem", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "La atención a la dependencia debería ser un servicio público universal, aunque haya que subir impuestos para financiarla.",
   short: "Dependencia como servicio público universal",
   ctx: "Más de 250.000 personas esperan la valoración de su dependencia o la ayuda que ya tienen reconocida, y muchas fallecen antes. El sistema se financia entre el Estado y las comunidades y descansa en gran medida en cuidadoras familiares. Convertirlo en un servicio universal reduciría esperas y profesionalizaría los cuidados, con un fuerte aumento del gasto. La alternativa es combinar ayudas públicas con seguros y servicios privados.",
-  pos: "4 2 2~ 5 5 1~ 4~ 2~ 4 3~ 3~ 5 3~ 4~ 5 4 5 5~ 5~ 5~ 4~ 5~ 5 0 0 0 0 5 0 0 0 5 4~" },
+  pos: "4 2 2~ 5 5 1~ 4~ 2~ 4 3~ 3~ 5 3~ 4~ 5 4 5 5~ 5~ 5~ 4~ 5~ 5 0 0 0 0 5 4~ 0 0 5 4~" },
 { id: "F09", area: "dem", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El Ingreso Mínimo Vital debería exigir búsqueda activa de empleo a quienes pueden trabajar.",
   short: "Más condiciones al Ingreso Mínimo Vital",
@@ -374,17 +374,17 @@ export const QUESTIONS = [
   text: "Las grandes plantas solares y eólicas deberían limitarse en el campo para proteger el paisaje y la agricultura, aunque eso frene la transición energética.",
   short: "Limitar las macroplantas renovables",
   ctx: "Las renovables ya producen más de la mitad de la electricidad en España. Su expansión ha llevado grandes parques solares y eólicos a zonas rurales, con rechazo de parte de los vecinos por el paisaje, la pérdida de suelo agrícola o el poco empleo local. Quienes piden limitarlos buscan proteger el territorio; los defensores de estas plantas recuerdan que generan ingresos a ayuntamientos y propietarios y abaratan la electricidad.",
-  pos: "2 2 4 3 3 4 4 2~ 2 3~ 2~ 3 3~ 0 4 3~ 3~ 4~ 2~ 4~ 5 3~ 4 4~ 4~ 5~ 4~ 0 4 0 4 4 2~" },
+  pos: "2 2 4 3 3 4 4 2~ 2 3~ 2~ 3 3~ 0 4 3~ 3~ 4~ 2~ 4~ 5 3~ 4 4~ 4~ 5~ 4~ 0 4 4~ 4 4 2~" },
 { id: "G03", area: "ene", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "La prohibición europea de vender coches nuevos de gasolina y diésel a partir de 2035 debería mantenerse.",
   short: "Fin de los coches de combustión en 2035",
   ctx: "La UE decidió en 2023 que desde 2035 solo se vendan coches nuevos sin emisiones de CO₂, lo que en la práctica supone el coche eléctrico; en diciembre de 2025 la Comisión propuso rebajar la exigencia a un 90 % menos de emisiones. La medida busca descarbonizar el transporte y dar certidumbre a la industria; sus críticos alegan el precio de los eléctricos, la escasez de puntos de recarga y el impacto en la industria del automóvil, muy relevante en España, y piden flexibilizarla.",
-  pos: "5 2 1 5 5~ 1 5~ 3~ 4 3~ 4~ 4~ 2~ 4~ 4~ 4~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0 0 0 0 2~ 0 4~" },
+  pos: "5 2 1 5 5~ 1 5~ 3~ 4 3~ 4~ 4~ 2~ 4~ 4~ 4~ 5~ 5~ 5~ 4~ 2~ 5~ 4~ 2~ 2~ 2~ 0 0 1~ 1~ 2~ 0 4~" },
 { id: "G04", area: "ene", prio: 2, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "Habría que ampliar los trasvases de agua entre cuencas para garantizar el regadío en las zonas con escasez.",
   short: "Ampliar los trasvases de agua",
   ctx: "El trasvase Tajo-Segura lleva agua desde 1979 al sureste, donde sostiene buena parte de la agricultura de Murcia, Alicante y Almería. La reducción de los envíos para garantizar caudales ecológicos en el Tajo ha enfrentado a comunidades. Los partidarios de más trasvases hablan de solidaridad hídrica; los contrarios defienden los ríos de origen y proponen desalación, reutilización y modernizar regadíos.",
-  pos: "2 4~ 5 1 1 4~ 1~ 2~ 1 1~ 0 1 3 0 1 0 0 0 2 1 1 0 1 3~ 3~ 1~ 0 0 0 0 0 0 0" },
+  pos: "2 4~ 5 1 1 4~ 1~ 2~ 1 1~ 0 1 3 0 1 0 0 0 2 1 1 0 1 3~ 3~ 1~ 0 0 4~ 5 0 0 0" },
 { id: "G05", area: "ene", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "El Estado debería crear una empresa pública de energía para abaratar la factura de la luz.",
   short: "Empresa pública de energía",
@@ -396,7 +396,7 @@ export const QUESTIONS = [
   B: "Mejorar las Cercanías y los trenes regionales",
   short: "Alta velocidad o Cercanías",
   ctx: "España tiene la mayor red de alta velocidad de Europa, con más de 4.000 kilómetros, mientras que las Cercanías y los trenes regionales, que usan muchas más personas cada día, acumulan retrasos e incidencias, como las de Rodalies en Cataluña. Priorizar la alta velocidad acerca capitales y vertebra el país; priorizar Cercanías y media distancia mejora la movilidad diaria y la conexión de zonas rurales.",
-  pos: "3 3 4 5 5 3~ 4~ 4~ 5 5~ 3 5 2~ 3~ 3~ 4~ 0 0 4~ 4~ 3~ 4~ 5 2~ 2~ 3~ 0 0 0 0 0 5 0" },
+  pos: "3 3 4 5 5 3~ 4~ 4~ 5 5~ 3 5 2~ 3~ 3~ 4~ 0 0 4~ 4~ 3~ 4~ 5 2~ 2~ 3~ 0 0 0 4~ 0 5 0" },
 { id: "G07", area: "ene", prio: 3, type: "likert", dim: "amb", dir: -1, lr: 0,
   text: "Debería prohibirse construir en zonas inundables, aunque haya suelos ya aprobados y sus propietarios pierdan dinero.",
   short: "Prohibir construir en zonas inundables",
@@ -406,7 +406,7 @@ export const QUESTIONS = [
   text: "Para prevenir incendios debería permitirse más pastoreo, desbroce y aprovechamiento del monte, aunque se flexibilice la protección de algunos espacios naturales.",
   short: "Más aprovechamiento del monte contra incendios",
   ctx: "En el verano de 2025 ardieron más de 350.000 hectáreas, sobre todo en Galicia, Castilla y León y Extremadura. Los expertos coinciden en que el abandono del campo acumula vegetación que alimenta los fuegos. La discusión es cómo actuar: más pastoreo, desbroces y aprovechamiento, incluso en espacios protegidos, o más medios de extinción y una gestión forestal con criterios de conservación.",
-  pos: "4 4 5 3 2~ 4 2 4 0 0 0 0 4~ 0 4~ 0 0 0 4~ 0 4~ 0 4~ 0 5~ 4~ 4~ 4~ 0 0 0 0 4~" },
+  pos: "4 4 5 3 2~ 4 2 4 0 0 0 0 4~ 0 4~ 0 0 0 4~ 0 4~ 0 4~ 0 5~ 4~ 4~ 4~ 0 4~ 0 0 4~" },
 { id: "G09", area: "ene", prio: 2, type: "dilema", dim: "amb", dir: -1, lr: -1,
   text: "Tras el apagón de 2025, ¿qué debería priorizar el sistema eléctrico?",
   A: "Más centrales que producen a demanda (gas, nuclear, hidráulica), aunque se frenen las renovables",
@@ -430,7 +430,7 @@ export const QUESTIONS = [
   text: "Las decisiones importantes de la UE deberían seguir exigiendo unanimidad, para que cada país conserve su derecho de veto.",
   short: "Mantener el veto de cada país en la UE",
   ctx: "En política exterior, defensa, impuestos o ampliación, la UE decide por unanimidad, de modo que un solo país puede bloquear una decisión, como ha hecho Hungría con la ayuda a Ucrania. Pasar a la mayoría cualificada agilizaría las decisiones; sus críticos temen que los países grandes impongan su criterio y que se pierda soberanía en asuntos sensibles.",
-  pos: "1 2~ 5 2 3~ 5~ 0 2~ 2~ 3~ 1~ 3~ 2~ 2~ 4~ 2~ 2 4~ 1 3~ 0 3~ 4~ 0 0 0 0 0 0 0 4~ 0 0" },
+  pos: "1 2~ 5 2 3~ 5~ 0 2~ 2~ 3~ 1~ 3~ 2~ 2~ 4~ 2~ 2 4~ 1 3~ 0 3~ 4~ 0 0 0 0 0 0 4~ 4~ 0 0" },
 { id: "H04", area: "ext", prio: 2, type: "likert", dim: null, dir: 0, lr: -1,
   text: "España debería mantener el embargo de armas a Israel.",
   short: "Embargo de armas a Israel",
@@ -510,7 +510,7 @@ export const QUESTIONS = [
   text: "Conocer la lengua cooficial debería ser requisito para trabajar en la Administración de esa comunidad.",
   short: "Lengua cooficial como requisito",
   ctx: "En Cataluña, el País Vasco, Galicia, Baleares o la Comunitat Valenciana, las administraciones exigen o valoran el conocimiento de la lengua propia, con distinta intensidad según la comunidad y el gobierno de turno. Sus defensores sostienen que garantiza que la ciudadanía sea atendida en cualquiera de las lenguas oficiales; sus críticos, que limita el acceso al empleo público, por ejemplo de médicos de otras comunidades.",
-  pos: "4 2 1 4 4 1~ 0 1~ 5 5 5 5 1 5 5 0 0 0 5 4~ 0 5 0 0 0 0 0 0 0 0 0 0 0" },
+  pos: "4 2 1 4 4 1~ 0 1~ 5 5 5 5 1 5 5 0 0 0 5 4~ 0 5 0 0 0 0 0 0 0 1~ 0 0 0" },
 
 // ───────────── J · Sanidad y gestión pública
 { id: "J01", area: "san", prio: 1, type: "likert", dim: "eco", dir: -1, lr: -1,
@@ -537,17 +537,17 @@ export const QUESTIONS = [
   text: "Las leyes y programas con un coste importante deberían evaluarse de forma independiente y suprimirse si no cumplen sus objetivos.",
   short: "Evaluar y suprimir políticas ineficaces",
   ctx: "En España se evalúa poco qué funciona: la AIReF revisa algunos gastos y en 2022 se creó una agencia estatal de evaluación de políticas públicas, pero sus informes no obligan a nada. Incluir cláusulas de evaluación y caducidad haría el gasto más eficiente; sus críticos advierten de que muchos objetivos sociales son difíciles de medir a corto plazo y de que el cierre podría usarse con fines políticos.",
-  pos: "4 4 4 4 3~ 5~ 4 5 0 0 0 0 0 0 0 4~ 0 0 4~ 0 0 0 0 0 0 0 0 0 0 0 4~ 0 4~" },
+  pos: "4 4 4 4 3~ 5~ 4 5 0 0 0 0 0 0 0 4~ 0 0 4~ 0 0 0 0 0 0 0 0 0 4~ 0 4~ 0 4~" },
 { id: "J06", area: "san", prio: 3, type: "likert", dim: "eco", dir: 1, lr: 1,
   text: "El empleo público debería incluir una evaluación del desempeño con consecuencias, incluido el despido por bajo rendimiento.",
   short: "Evaluar a los empleados públicos",
   ctx: "España tiene unos 3,5 millones de empleados públicos; la mayoría tiene plaza fija tras aprobar una oposición, una garantía pensada para proteger su imparcialidad frente a los cambios de gobierno. La ley ya prevé evaluar el desempeño, pero apenas se aplica. Sus defensores creen que mejoraría la eficiencia de la Administración; sus críticos temen arbitrariedad y presiones políticas sobre los empleados.",
-  pos: "3 3 4~ 2~ 1~ 5 0 4~ 2~ 3~ 3~ 1~ 3~ 0 1~ 0 0 0 1~ 0 0 0 1~ 0 0 0 0 0 0 0 0 0 0" },
+  pos: "3 3 4~ 2~ 1~ 5 0 4~ 2~ 3~ 3~ 1~ 3~ 0 1~ 0 0 0 1~ 0 0 0 1~ 0 0 0 0 0 0 4~ 0 0 0" },
 { id: "J07", area: "san", prio: 3, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Los funcionarios deberían dejar de poder elegir sanidad privada a través de MUFACE y pasar a la sanidad pública.",
   short: "Integrar MUFACE en la sanidad pública",
   ctx: "Los funcionarios del Estado pueden elegir, a través de MUFACE, ser atendidos por aseguradoras privadas concertadas en lugar de por la sanidad pública, y la mayoría lo hace. En 2024 las aseguradoras se negaron a renovar el concierto por considerarlo deficitario, y el Gobierno acabó subiendo la prima. Integrarlos acabaría con un sistema diferenciado; los defensores de MUFACE destacan que es más barato por persona y descarga los centros públicos.",
-  pos: "2 1 1 5 5 1~ 0 2~ 4 2~ 0 4~ 2~ 0 4~ 0 0 0 4~ 4~ 0 4~ 4 0 0 0 0 4~ 0 0 0 0 0" },
+  pos: "2 1 1 5 5 1~ 0 2~ 4 2~ 0 4~ 2~ 0 4~ 0 0 0 4~ 4~ 0 4~ 4 0 0 0 0 4~ 4~ 4~ 0 0 0" },
 { id: "J08", area: "san", prio: 2, type: "likert", dim: "ter", dir: 1, lr: 0,
   text: "El Ministerio de Sanidad debería poder fijar estándares obligatorios, como tiempos máximos de espera, en todas las comunidades.",
   short: "Estándares sanitarios comunes",
@@ -565,7 +565,7 @@ export const QUESTIONS = [
   short: "Controlar los márgenes de la distribución",
   ctx: "La Ley de la Cadena Alimentaria prohíbe desde 2021 comprar a los productores por debajo de sus costes, pero las organizaciones agrarias denuncian incumplimientos y grandes diferencias entre el precio en origen y el del supermercado. Reforzar el control protegería al eslabón más débil; sus críticos advierten de que intervenir márgenes puede encarecer la cesta de la compra o reducir la competencia.",
   ley: "Ley 12/2013, de la cadena alimentaria",
-  pos: "4 3 4 5 5 3~ 0 2~ 4 3~ 4 5 3~ 0 5 3~ 5 5~ 5 5 5~ 4~ 5 5~ 5~ 5~ 0 5 0 4 2~ 0 4~" },
+  pos: "4 3 4 5 5 3~ 0 2~ 4 3~ 4 5 3~ 0 5 3~ 5 5~ 5 5 5~ 4~ 5 5~ 5~ 5~ 0 5 4~ 4 2~ 0 4~" },
 { id: "K03", area: "rur", prio: 2, type: "likert", dim: "eco", dir: -1, lr: -1,
   text: "Las ayudas de la PAC deberían concentrarse en los agricultores profesionales y las pequeñas explotaciones, en lugar de repartirse según las hectáreas.",
   short: "PAC para profesionales y pequeñas explotaciones",
@@ -575,22 +575,22 @@ export const QUESTIONS = [
   text: "El lobo debería poder cazarse de forma controlada en las zonas donde ataca al ganado.",
   short: "Control del lobo",
   ctx: "El lobo estuvo protegido en toda España entre 2021 y 2025, cuando el Congreso aprobó volver a permitir su control al norte del Duero, después de que la UE rebajara su nivel de protección. Los ganaderos denuncian miles de ataques al año; los conservacionistas sostienen que la especie aún no está en buen estado y que hay alternativas como mastines, vallados e indemnizaciones rápidas.",
-  pos: "2 5 5 1 1 5~ 1 4~ 2 4 4 3 4 0 1 3 1 1~ 1~ 1~ 4~ 1~ 1 0 5~ 4~ 5~ 0 4~ 0 0 0 0" },
+  pos: "2 5 5 1 1 5~ 1 4~ 2 4 4 3 4 0 1 3 1 1~ 1~ 1~ 4~ 1~ 1 0 5~ 4~ 5~ 0 4~ 4~ 0 0 0" },
 { id: "K05", area: "rur", prio: 2, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "Debería prohibirse abrir nuevas macrogranjas.",
   short: "Prohibir nuevas macrogranjas",
   ctx: "Las granjas industriales concentran miles de animales, sobre todo cerdos, y han crecido mucho en Aragón, Cataluña o Castilla-La Mancha. Generan empleo y exportaciones, pero también contaminación de acuíferos por nitratos, olores y la desaparición de ganaderos pequeños; varias comunidades han aprobado moratorias. Sus defensores sostienen que cumplen la normativa y fijan población en el medio rural.",
-  pos: "2 1 1 5 5 1~ 5 2~ 4~ 2~ 2~ 4~ 1~ 3~ 4~ 2~ 4~ 5~ 5 4~ 4~ 4~ 5 2~ 3~ 5 0 0 0 0 0 5 4" },
+  pos: "2 1 1 5 5 1~ 5 2~ 4~ 2~ 2~ 4~ 1~ 3~ 4~ 2~ 4~ 5~ 5 4~ 4~ 4~ 5 2~ 3~ 5 0 0 2~ 0 0 5 4" },
 { id: "K06", area: "rur", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
   short: "Relajar los límites a la pesca en el Mediterráneo",
   ctx: "Para recuperar especies sobreexplotadas, la UE ha recortado con fuerza los días de pesca de arrastre en el Mediterráneo occidental desde 2020, y muchos barcos pasan buena parte del año amarrados. El sector y varias comunidades piden flexibilizar los límites para sobrevivir; los científicos y las organizaciones ecologistas advierten de que, sin esas restricciones, no habrá peces que pescar en el futuro.",
-  pos: "4 4 5 2 2~ 4~ 1 3~ 3~ 3~ 0 0 0 0 4~ 0 0 0 2~ 2~ 0 2~ 3~ 0 0 0 0 0 0 0 0 0 2~" },
+  pos: "4 4 5 2 2~ 4~ 1 3~ 3~ 3~ 0 0 0 0 4~ 0 0 0 2~ 2~ 0 2~ 3~ 0 0 0 0 0 0 4~ 0 0 2~" },
 { id: "K07", area: "rur", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
   short: "Proteger la caza por ley",
   ctx: "En España hay unas 750.000 licencias de caza. Sus defensores la consideran clave para controlar especies como el jabalí o el conejo, que causan daños en cultivos y accidentes de tráfico, y para la economía de muchos pueblos. Sus críticos denuncian el sufrimiento animal y proponen otros métodos de control de fauna; la Ley de Bienestar Animal de 2023 dejó fuera a los perros de caza.",
-  pos: "3 5 5 2~ 1~ 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 1~ 2~ 4~ 1~ 1 4~ 5~ 4~ 5~ 0 4 0 0 0 3" },
+  pos: "3 5 5 2~ 1~ 5~ 1 4~ 2~ 3~ 3~ 2~ 5~ 0 2~ 3~ 1~ 1~ 1~ 2~ 4~ 1~ 1 4~ 5~ 4~ 5~ 0 4 4~ 0 0 3" },
 { id: "K08", area: "rur", prio: 3, type: "likert", dim: "amb", dir: -1, lr: -1,
   text: "Debería limitarse la creación de nuevos regadíos en las zonas con escasez de agua.",
   short: "Limitar los nuevos regadíos",
@@ -636,18 +636,18 @@ export const QUESTIONS = [
   text: "Debería prohibirse el acceso a las redes sociales a los menores de 16 años.",
   short: "Redes sociales solo desde los 16 años",
   ctx: "España tramita una ley de protección de los menores en entornos digitales que eleva a 16 años la edad para consentir el uso de sus datos, y en 2026 el Gobierno anunció que prohibiría las redes por debajo de esa edad, como hace Australia desde diciembre de 2025. Sus defensores citan los efectos en la salud mental y el acoso; sus críticos dudan de que pueda aplicarse sin sistemas de verificación de edad invasivos y prefieren la educación digital y el control parental.",
-  pos: "5 3 1 4 2 1~ 0 3~ 3~ 3~ 4~ 3~ 4~ 0 3~ 0 0 0 4~ 0 0 0 0 0 0 0 0 0 0 0 0 0 0" },
+  pos: "5 3 1 4 2 1~ 0 3~ 3~ 3~ 4~ 3~ 4~ 0 3~ 0 0 0 4~ 0 0 0 0 0 0 0 0 0 4~ 4~ 0 0 0" },
 { id: "L08", area: "der", prio: 3, type: "likert", dim: "soc", dir: 1, lr: 1,
   text: "Las cuotas obligatorias de paridad entre sexos en listas electorales y consejos de administración deberían eliminarse.",
   short: "Eliminar las cuotas de paridad",
   ctx: "La Ley de Paridad de 2024 obliga a que las listas electorales, el Gobierno y los consejos de las grandes empresas cotizadas tengan al menos un 40 % de cada sexo. Quienes piden eliminar las cuotas sostienen que debe primar el mérito individual y que la ley invade decisiones de partidos y empresas; quienes las defienden, que corrigen barreras que frenan a las mujeres en los puestos de poder.",
   ley: "Ley Orgánica 2/2024, de representación paritaria",
-  pos: "1 3 5 1 1 5~ 2 2~ 1 2 2~ 1 4~ 1~ 1 2~ 1~ 1~ 1~ 1 0 1~ 1 0 0 0 0 0 5 0 0 0 0" },
+  pos: "1 3 5 1 1 5~ 2 2~ 1 2 2~ 1 4~ 1~ 1 2~ 1~ 1~ 1~ 1 0 1~ 1 0 0 0 0 0 5 4~ 0 0 0" },
 { id: "L09", area: "der", prio: 2, type: "likert", dim: "inm", dir: 1, lr: 1,
   text: "Debería prohibirse llevar velo integral (burka o niqab) en los espacios públicos.",
   short: "Prohibir el velo integral",
   ctx: "Francia, Bélgica o Dinamarca prohíben cubrirse el rostro en la calle. En España no existe una prohibición general, y el Tribunal Supremo anuló en 2013 una ordenanza municipal que lo vetaba por invadir competencias del Estado. Sus defensores invocan la seguridad y la igualdad de las mujeres; sus críticos, la libertad religiosa y el riesgo de excluir aún más a las pocas mujeres que lo llevan.",
-  pos: "1 5 5 1 1 5 0 4~ 2 5 2 1 4 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0 0 0 0 0 0 0" }
+  pos: "1 5 5 1 1 5 0 4~ 2 5 2 1 4 0 1~ 0 1~ 1~ 1~ 1~ 0 1~ 1~ 0 0 0 0 0 5 4~ 0 0 0" }
 ];
 
 // Familias de preguntas que miden casi la misma opinión. En la coincidencia con los partidos, si
@@ -849,6 +849,7 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=63", "Programa electoral de Adelante Andalucía para el 29N, p. 63 (propuesta 268)", "programa", "2026-11"],
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=6", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 6", "programa", "2023-07"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7", "Programa del Partido Humanista para las elecciones generales de 2026, p. 7", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=22", "Programa de FE de las JONS para las generales del 29N de 2026, p. 22", "programa", "2026-11"],
   },
   A02: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=18", "Programa electoral de Compromís-Front Valencià para el 29N, p. 18", "programa", "2026-11"],
@@ -874,6 +875,7 @@ export const SOURCES = {
     ph: ["https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17", "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17", "programa", "2023-07"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15", "programa", "2026-11"],
     falange: ["https://falange.es/nuestras-ideas/", "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18", "Programa político del Frente Obrero de 2026, p. 18", "programa", "2026-10"],
   },
   A03: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=27", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 27", "programa", "2026-11"],
@@ -933,6 +935,8 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=55", "Programa electoral de Adelante Andalucía para el 29N, p. 55", "programa", "2026-11"],
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=80", "Programa de PACMA para las generales del 29N de 2026, p. 80", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-cuida", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=24", "Programa de FE de las JONS para las generales del 29N de 2026, p. 24", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=48", "Programa político del Frente Obrero de 2026, p. 48", "programa", "2026-10"],
   },
   A06: {
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=31", "Contrato electoral simplificado de SALF para las generales de 2026, p. 31", "programa", "2026-11"],
@@ -947,6 +951,7 @@ export const SOURCES = {
     psoe: ["https://www.boe.es/buscar/act.php?id=BOE-A-2021-11473", "Ley 11/2021 de medidas de prevención y lucha contra el fraude fiscal (9 de julio de 2021)", "gobierno", "2021-07-09"],
     vox: ["https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf#page=85", "Programa electoral de Vox de 2023, medida 178", "programa", "2023-07"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=15", "Contrato electoral simplificado de SALF para las generales de 2026, p. 15", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=18", "Programa de FE de las JONS para las generales del 29N de 2026, p. 18", "programa", "2026-11"],
   },
   A08: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=6", "Programa electoral de Compromís-Front Valencià para el 29N, p. 6", "programa", "2026-11"],
@@ -1090,6 +1095,7 @@ export const SOURCES = {
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8", "Programa electoral de EAJ-PNV de 2026, p. 8", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=49", "Programa electoral de Adelante Andalucía para el 29N, p. 49", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-resuelve", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=15", "Programa de FE de las JONS para las generales del 29N de 2026, p. 15", "programa", "2026-11"],
   },
   B05: {
     psoe: ["https://forbes.es/?p=625995", "Forbes España (Europa Press), declaraciones de la ministra de Vivienda Isabel Rodríguez, 20/02/2025", "declaracion", "2025-02-20"],
@@ -1129,6 +1135,7 @@ export const SOURCES = {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=5", "Programa electoral de Compromís-Front Valencià para el 29N, p. 5", "programa", "2026-11"],
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7", "Programa electoral de EAJ-PNV de 2026, p. 7", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=9", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 9", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14", "Programa de FE de las JONS para las generales del 29N de 2026, p. 14", "programa", "2026-11"],
   },
   B07: {
     bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 5", "programa", "2026-11"],
@@ -1147,6 +1154,7 @@ export const SOURCES = {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=4", "Programa electoral de Compromís-Front Valencià para el 29N, p. 4", "programa", "2026-11"],
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=70", "Programa de PACMA para las generales del 29N de 2026, p. 70", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=51", "Programa electoral de Adelante Andalucía para el 29N, p. 51", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14", "Programa de FE de las JONS para las generales del 29N de 2026, p. 14", "programa", "2026-11"],
   },
   B08: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=5", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 5", "programa", "2026-11"],
@@ -1186,6 +1194,7 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=70", "Programa de PACMA para las generales del 29N de 2026, p. 70", "programa", "2026-11"],
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=8", "Programa electoral de EAJ-PNV de 2026, p. 8", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-resuelve", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14", "Programa de FE de las JONS para las generales del 29N de 2026, p. 14", "programa", "2026-11"],
   },
   C01: {
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=14", "Contrato electoral simplificado de SALF para las generales de 2026, p. 14", "programa", "2026-11"],
@@ -1246,6 +1255,7 @@ export const SOURCES = {
     comp: ["https://www.periodicodeibiza.es/noticias/nacional/2016/04/26/189554/compromis-propone-rey-acuerdo-extremis-para-evitar-elecciones.html", "Periódico de Ibiza/EFE: propuesta de acuerdo de Compromís presentada al Rey (26 abr 2016)", "prensa", "2016-04-26"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19", "Programa de FE de las JONS para las generales del 29N de 2026, p. 19", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=73", "Programa electoral de Adelante Andalucía para el 29N, p. 73", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56", "Programa político del Frente Obrero de 2026, p. 56", "programa", "2026-10"],
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
@@ -1308,6 +1318,8 @@ export const SOURCES = {
     upn: ["https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf#page=1", "Programa electoral de UPN para las generales de 2023, p. 1", "programa", "2023-07"],
     gbai: ["https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=9", "Bases políticas de Geroa Bai para las generales del 29N, p. 9", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=8", "Programa electoral del BNG de 2026, p. 8", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19", "Programa de FE de las JONS para las generales del 29N de 2026, p. 19", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56", "Programa político del Frente Obrero de 2026, p. 56", "programa", "2026-10"],
   },
   D01: {
     pp: ["https://es.ara.cat/politica/feijoo-plantea-reforma-partido-gane-elecciones-tenga-plus-diputados_1_5783437.html", "Ara, entrevista de Feijóo en esRadio, 29/06/2026", "declaracion", "2026-06-29"],
@@ -1364,6 +1376,7 @@ export const SOURCES = {
     comp: ["https://www.que.es/2021/03/23/partidos-independentistas-veto-ley-amnistia/", "Qué!: debate sobre la ley de amnistía en el Congreso (23 mar 2021)", "prensa", "2021-03-23"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=26", "Contrato electoral simplificado de SALF para las generales de 2026, p. 26", "programa", "2026-11"],
     gbai: ["https://rtvc.es/el-senado-veta-la-ley-de-amnistia/", "RTVC: el Senado veta la ley de amnistía (14 may 2024)", "prensa", "2024-05-14"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=20", "Programa de FE de las JONS para las generales del 29N de 2026, p. 20", "programa", "2026-11"],
   },
   D05: {
     fa: ["https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf#page=142", "Programa electoral del Frente Amplio para las generales del 29N de 2026, p. 142", "programa", "2026-11"],
@@ -1529,6 +1542,7 @@ export const SOURCES = {
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=31", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 31", "programa", "2026-10"],
     d21: ["https://mi.democracia21.es/programa#bloque-lidera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»", "programa", "2026-11"],
     existe: ["https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=18", "Programa electoral de Teruel Existe para las generales de 2023, p. 18", "programa", "2023-07"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25", "Programa de FE de las JONS para las generales del 29N de 2026, p. 25", "programa", "2026-11"],
   },
   E09: {
     psoe: ["https://www.publico.es/sociedad/psoe-vota-no-ley-mas-pais-cannabis.html", "Votación de la ley del cannabis de Más País (19 de octubre de 2021)", "parlamento", "2021-10-19"],
@@ -1635,6 +1649,7 @@ export const SOURCES = {
     d21: ["https://mi.democracia21.es/programa#bloque-prospera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106", "Programa electoral de Adelante Andalucía para el 29N, p. 106", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=22", "Programa electoral del BNG de 2026, p. 22", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=52", "Programa político del Frente Obrero de 2026, p. 52", "programa", "2026-10"],
   },
   F05: {
     psoe: ["https://www.boe.es/eli/es/rdl/2025/03/18/2", "Real Decreto-ley 2/2025 sobre menores migrantes (18 de marzo de 2025)", "gobierno", "2025-03-18"],
@@ -1649,7 +1664,7 @@ export const SOURCES = {
     erc: ["https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion198/20260916/Votacion001/VOT_20260916195336.json", "Congreso de los Diputados, votación nominal (datos abiertos): PNL de Vox que pedía rechazar el reparto de menores migrantes no acompañados por el territorio, 16/09/2026", "parlamento", "2026-09-16"],
     junts: ["https://theobjective.com/espana/2024-06-27/junts-librarse-reparto-menores-cataluna-inmigracion/", "The Objective, Junts pide librar a Cataluña del reparto de menores, 27/06/2024", "parlamento", "2024-06-27"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
-    falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8", "Programa electoral general de FE de las JONS para las generales de 2023, p. 8", "programa", "2023-07"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=10", "Programa de FE de las JONS para las generales del 29N de 2026, p. 10", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106", "Programa electoral de Adelante Andalucía para el 29N, p. 106", "programa", "2026-11"],
   },
   F06: {
@@ -1664,6 +1679,8 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=54", "Programa electoral de Adelante Andalucía para el 29N, p. 54", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-cuida", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»", "programa", "2026-11"],
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46", "Programa electoral de Compromís-Front Valencià para el 29N, p. 46", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25", "Programa de FE de las JONS para las generales del 29N de 2026, p. 25", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=34", "Programa político del Frente Obrero de 2026, p. 34", "programa", "2026-10"],
   },
   F07: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=33", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 33", "programa", "2026-11"],
@@ -1676,6 +1693,7 @@ export const SOURCES = {
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=10", "Programa electoral de Vox de 2026 («Es sentido común»), p. 10", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=128", "Programa electoral de Adelante Andalucía para el 29N, p. 128", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-lidera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=26", "Programa de FE de las JONS para las generales del 29N de 2026, p. 26", "programa", "2026-11"],
   },
   F08: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=11", "Programa electoral de Compromís-Front Valencià para el 29N, p. 11", "programa", "2026-11"],
@@ -1696,6 +1714,7 @@ export const SOURCES = {
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35", "Programa electoral de EAJ-PNV de 2026, p. 35", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-cuida", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=18", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 18", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=43", "Programa político del Frente Obrero de 2026, p. 43", "programa", "2026-10"],
   },
   F09: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=12", "Programa electoral de Compromís-Front Valencià para el 29N, p. 12", "programa", "2026-11"],
@@ -1752,6 +1771,7 @@ export const SOURCES = {
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=55", "Programa electoral del BNG de 2026, p. 55", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31", "Programa de FE de las JONS para las generales del 29N de 2026, p. 31", "programa", "2026-11"],
   },
   G03: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=31", "Programa electoral de Compromís-Front Valencià para el 29N, p. 31", "programa", "2026-11"],
@@ -1766,6 +1786,8 @@ export const SOURCES = {
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=35", "Contrato electoral simplificado de SALF para las generales de 2026, p. 35", "programa", "2026-11"],
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=20", "Programa electoral de EAJ-PNV de 2026, p. 20", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31", "Programa de FE de las JONS para las generales del 29N de 2026, p. 31", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15", "Programa político del Frente Obrero de 2026, p. 15", "programa", "2026-10"],
   },
   G04: {
     psoe: ["https://www.elindependiente.com/wp-content/uploads/2023/07/ProgramaElectoral_ElexGenerales_PSOE_2023.pdf", "Programa electoral del PSOE de 2023 (copia en El Independiente)", "programa", "2023-07-07"],
@@ -1781,6 +1803,8 @@ export const SOURCES = {
     erc: ["https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=31", "Programa electoral de ERC de 2026, p. 31", "programa", "2026-11"],
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=24", "Programa electoral de Compromís-Front Valencià para el 29N, p. 24", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-cuida", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31", "Programa de FE de las JONS para las generales del 29N de 2026, p. 31", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38", "Programa político del Frente Obrero de 2026, p. 38", "programa", "2026-10"],
   },
   G05: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=29", "Programa electoral de Compromís-Front Valencià para el 29N, p. 29", "programa", "2026-11"],
@@ -1818,6 +1842,7 @@ export const SOURCES = {
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=36", "Programa de PACMA para las generales del 29N de 2026, p. 36", "programa", "2026-11"],
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=19", "Programa electoral de EAJ-PNV de 2026, p. 19", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-prospera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56", "Programa de FE de las JONS para las generales del 29N de 2026, p. 56", "programa", "2026-11"],
   },
   G07: {
     psoe: ["https://es.ara.cat/sociedad/vivienda/gobierno-espanol-endurecera-restricciones-zonas-inundables-nuevos-edificios-no-podran-garaje_1_5799917.html", "Proyecto de real decreto de riesgos de inundación (15 de julio de 2026)", "gobierno", "2026-07-15"],
@@ -1842,6 +1867,7 @@ export const SOURCES = {
     soria: ["https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf#page=1", "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=87", "Programa electoral de Adelante Andalucía para el 29N, p. 87", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=91", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 91", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56", "Programa de FE de las JONS para las generales del 29N de 2026, p. 56", "programa", "2026-11"],
   },
   G09: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=58", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58", "programa", "2026-11"],
@@ -1916,6 +1942,7 @@ export const SOURCES = {
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 13", "programa", "2026-11"],
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=63", "Programa electoral de Compromís-Front Valencià para el 29N, p. 63", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-lidera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19", "Programa de FE de las JONS para las generales del 29N de 2026, p. 19", "programa", "2026-11"],
   },
   H04: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=66", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 66", "programa", "2026-11"],
@@ -2164,6 +2191,7 @@ export const SOURCES = {
     pnv: ["https://orain.eus/es/politica/2026/04/24/estas-son-las-posiciones-los-partidos-sobre-el-euskera-en-las-ope/", "Orain (EITB): propuestas de los partidos sobre el euskera en las OPE", "prensa", "2026-04-24"],
     junts: ["https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=137", "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137", "programa", "2023-07"],
     pod: ["https://www.redaccionmedica.com/politica/20230926/el-parlamento-balear-aprueba-eliminar-el-requisito-del-catalan-en-sanidad/210249_0.html", "Redacción Médica: el Parlamento balear elimina el requisito de catalán en la sanidad con el voto en contra de Unidas Podemos", "prensa", "2023-09-26"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47", "Programa de FE de las JONS para las generales del 29N de 2026, p. 47", "programa", "2026-11"],
   },
   J01: {
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=38", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 38", "programa", "2026-11"],
@@ -2235,12 +2263,14 @@ export const SOURCES = {
     vox: ["https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf#page=29", "Programa electoral de Vox de 2026 («Es sentido común»), p. 29", "programa", "2026-11"],
     pacma: ["https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=72", "Programa de PACMA para las generales del 29N de 2026, p. 72", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=20", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18", "Programa político del Frente Obrero de 2026, p. 18", "programa", "2026-10"],
   },
   J06: {
     psoe: ["https://www.boe.es/eli/es/rdl/2023/12/19/6", "Real Decreto-ley 6/2023 de función pública (19 de diciembre de 2023)", "gobierno", "2023-12-19"],
     pp: ["https://www.pp.es/storage/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf#page=92", "Programa electoral del PP para las generales de 2023, p. 92", "programa", "2023-07"],
     salf: ["https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=12", "Programa electoral de SALF para Castilla y León, p. 12 (programa autonómico CyL 2026; mismo asunto)", "programa", "2026-03"],
     d21: ["https://mi.democracia21.es/programa#bloque-resuelve", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48", "Programa de FE de las JONS para las generales del 29N de 2026, p. 48", "programa", "2026-11"],
   },
   J07: {
     psoe: ["https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/04/2025-04-30-2/NPConciertoMUFACE.pdf", "Firma del concierto de MUFACE 2025-2027 (30 de abril de 2025)", "gobierno", "2025-04-30"],
@@ -2253,6 +2283,8 @@ export const SOURCES = {
     cha: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92; CHA concurrió en esa coalición", "programa", "2023-07"],
     mes: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92; MÉS concurrió en esa coalición", "programa", "2023-07"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=36", "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 36", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=50", "Programa de FE de las JONS para las generales del 29N de 2026, p. 50", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42", "Programa político del Frente Obrero de 2026, p. 42", "programa", "2026-10"],
   },
   J08: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=9", "Programa electoral de Compromís-Front Valencià para el 29N, p. 9", "programa", "2026-11"],
@@ -2302,7 +2334,7 @@ export const SOURCES = {
     cha: ["https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=57", "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 57", "programa", "2019-05"],
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=62", "Programa electoral de Sumar para el 23J de 2023, p. 62", "programa", "2023-07"],
     pcte: ["https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=12", "Programa de lucha 2023-2027 del PCTE (julio de 2023, no es programa electoral de 2026), p. 12", "programa", "2023-07"],
-    falange: ["https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13", "Programa electoral general de FE de las JONS para las generales de 2023, p. 13", "programa", "2023-07"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=33", "Programa de FE de las JONS para las generales del 29N de 2026, p. 33", "programa", "2026-11"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=25", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 25", "programa", "2026-11"],
     pp: ["https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=50", "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 50", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=47", "Programa electoral del BNG de 2026, p. 47", "programa", "2026-11"],
@@ -2310,6 +2342,7 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=68", "Programa electoral de Adelante Andalucía para el 29N, p. 68", "programa", "2026-11"],
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=23", "Programa electoral de Compromís-Front Valencià para el 29N, p. 23", "programa", "2026-11"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=59", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37", "Programa político del Frente Obrero de 2026, p. 37", "programa", "2026-10"],
   },
   K03: {
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=69", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 69", "programa", "2026-11"],
@@ -2344,6 +2377,7 @@ export const SOURCES = {
     upc: ["https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=52", "Programa electoral de Sumar para el 23J de 2023, p. 52", "programa", "2023-07"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38", "Programa político del Frente Obrero de 2026, p. 38", "programa", "2026-10"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=86", "Programa electoral de Adelante Andalucía para el 29N, p. 86", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34", "Programa de FE de las JONS para las generales del 29N de 2026, p. 34", "programa", "2026-11"],
   },
   K05: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46", "Programa electoral de Compromís-Front Valencià para el 29N, p. 46", "programa", "2026-11"],
@@ -2358,6 +2392,7 @@ export const SOURCES = {
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=85", "Programa electoral de Adelante Andalucía para el 29N, p. 85", "programa", "2026-11"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21", "Programa del Partido Humanista para las elecciones generales de 2026, p. 21", "programa", "2026-11"],
     existe: ["https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=20", "Programa electoral de Teruel Existe para las generales de 2023, p. 20", "programa", "2023-07"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37", "Programa político del Frente Obrero de 2026, p. 37", "programa", "2026-10"],
   },
   K06: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=25", "Programa electoral de Compromís-Front Valencià para el 29N, p. 25", "programa", "2026-11"],
@@ -2369,6 +2404,7 @@ export const SOURCES = {
     cha: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=64", "Programa electoral de Sumar de 2023, p. 64; CHA concurrió en esa coalición", "programa", "2023-07"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=55", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 55", "programa", "2026-11"],
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=49", "Programa electoral del BNG de 2026, p. 49", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34", "Programa de FE de las JONS para las generales del 29N de 2026, p. 34", "programa", "2026-11"],
   },
   K07: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46", "Programa electoral de Compromís-Front Valencià para el 29N, p. 46", "programa", "2026-11"],
@@ -2379,6 +2415,7 @@ export const SOURCES = {
     adel: ["https://adelanteandalucia.org/wp-content/uploads/2026/04/PROGRAMA-AA-2026-DEF.pdf#page=251", "Programa electoral de Adelante Andalucía de 2026, p. 251", "programa", "2026-04"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37", "Programa político del Frente Obrero de 2026 (el propio documento dice que no pretende ser un programa electoral), p. 37", "programa", "2026-10"],
     mj: ["https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf#page=61", "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34", "Programa de FE de las JONS para las generales del 29N de 2026, p. 34", "programa", "2026-11"],
   },
   K08: {
     psoe: ["https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf#page=68", "Programa electoral del PSOE para las generales de 2026 («La fuerza de seguir avanzando»), p. 68", "programa", "2026-11"],
@@ -2498,6 +2535,8 @@ export const SOURCES = {
     fa: ["https://alicanteplaza.es/alicanteplaza/espana/la-ley-que-prohibiria-las-redes-sociales-a-menores-de-16-anos-avanza-esta-semana-en-el-congreso", "La ley que prohibiría las redes sociales a menores de 16 años avanza esta semana en el Congreso (Alicante Plaza)", "parlamento", "2026-09-26"],
     pod: ["https://www.eldebate.com/educacion/20260211/podemos-quiere-crujir-impuestos-redes-sociales-usar-ese-dinero-educacion-sexual-obligatoria_384178.html", "El Debate: Belarra dice que prohibir las redes a menores de 16 años «no va a servir para nada»", "prensa", "2026-02-11"],
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35", "Programa electoral de EAJ-PNV de 2026, p. 35", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48", "Programa de FE de las JONS para las generales del 29N de 2026, p. 48", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=21", "Programa político del Frente Obrero de 2026, p. 21", "programa", "2026-10"],
   },
   L08: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=40", "Programa electoral de Compromís-Front Valencià para el 29N, p. 40", "programa", "2026-11"],
@@ -2516,6 +2555,7 @@ export const SOURCES = {
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=26", "Programa electoral de EAJ-PNV de 2026, p. 26", "programa", "2026-11"],
     adel: ["https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=100", "Programa electoral de Adelante Andalucía para el 29N, p. 100", "programa", "2026-11"],
     d21: ["https://mi.democracia21.es/programa#bloque-lidera", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25", "Programa de FE de las JONS para las generales del 29N de 2026, p. 25", "programa", "2026-11"],
   },
   L09: {
     psoe: ["https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html", "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026", "parlamento", "2026-04-14"],
@@ -2529,6 +2569,8 @@ export const SOURCES = {
     upn: ["https://www.infobae.com/america/agencias/2026/02/17/el-congreso-tumba-la-ley-de-vox-para-prohibir-el-burka-solo-apoyada-por-el-pp-y-upn/", "Infobae, El Congreso tumba la ley de Vox para prohibir el burka, solo apoyada por el PP y UPN, 17-02-2026", "parlamento", "2026-02-17"],
     pod: ["https://www.diarioestrategia.cl/texto-diario/mostrar/5778131/congreso-tumba-ley-vox-prohibir-burka-solo-apoyada-pp-upn", "Europa Press (vía Diario Estrategia): el Congreso tumba la ley de Vox para prohibir el burka", "parlamento", "2026-02-17"],
     salf: ["https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=19", "Contrato electoral simplificado de SALF para las generales de 2026, p. 19", "programa", "2026-11"],
+    falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=38", "Programa de FE de las JONS para las generales del 29N de 2026, p. 38", "programa", "2026-11"],
+    fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53", "Programa político del Frente Obrero de 2026, p. 53", "programa", "2026-10"],
   }
 };
 
@@ -2555,6 +2597,7 @@ export const JUSTIF = {
     adel: "Estimación: su programa del 29N pide la jornada de 32 horas sin rebaja de sueldo (propuesta 268); no se pronuncia sobre el umbral de 37,5.",
     pcte: "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario.",
     ph: "Su programa del 29N propone reducir por ley la jornada ordinaria a 30 horas semanales en 4 días, sin reducción del salario.",
+    falange: "Estimación: su programa del 29N solo plantea estudiar la reducción de horas semanales por sectores una vez estabilizado el nuevo modelo productivo, no aprobarla ya por ley.",
   },
   A02: {
     comp: "Estimación: su programa del 29N amplía el impuesto a las grandes fortunas, crea otros nuevos y pide más inversión en servicios públicos.",
@@ -2578,6 +2621,7 @@ export const JUSTIF = {
     pp: "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos.",
     erc: "Su programa de 2026 sube el IRPF a las ganancias de capital y mantiene los impuestos a grandes fortunas, banca y energéticas.",
     vox: "Su programa de 2026 propone una rebaja masiva de impuestos (IRPF, IVA y Sociedades) compensada con control del déficit y recorte del gasto superfluo.",
+    fo: "Estimación: el programa propone subir el IRPF a las rentas altas y el impuesto de sociedades a las grandes empresas (p. 19) y más gasto en sanidad pública (p. 42).",
   },
   A03: {
     mj: "Su programa del 29N propone una tributación mínima del 3 % sobre patrimonios de más de 50 millones, con un gravamen en el Impuesto de Solidaridad sobre las Grandes Fortunas.",
@@ -2637,6 +2681,8 @@ export const JUSTIF = {
     adel: "Su programa del 29N propone cotizar sin topes por los ingresos reales y aportar impuestos para sostener pensiones públicas revalorizadas con el IPC.",
     pacma: "Estimación: su programa del 29N pide reformar la Constitución para que el sistema público de pensiones «no pueda recortarse, ni privatizarse».",
     d21: "Estimación: su programa del 29N remite la reforma de las pensiones a una asamblea ciudadana con tres principios (tranquilidad, sostenibilidad y justicia) sin elegir opción.",
+    falange: "Estimación: su programa del 29N quiere volver a jubilarse a los 65 y aplicar el MEI a las pensiones altas (p. 29), lo contrario de retrasar la jubilación o recortar.",
+    fo: "Estimación: el programa propone revertir el aumento de la edad de jubilación y subir las pensiones mínimas (p. 49), lo contrario de contener el gasto.",
   },
   A06: {
     psoe: "Estimación: el PSOE no ha propuesto suavizar las obligaciones laborales a partir de 50 trabajadores y defiende la reforma laboral y el diálogo social.",
@@ -2656,6 +2702,7 @@ export const JUSTIF = {
     pod: "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
     erc: "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
     salf: "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar.",
+    falange: "Estimación: su programa del 29N propone proteger el dinero en efectivo como infraestructura de seguridad nacional frente al euro digital.",
   },
   A08: {
     comp: "Su programa del 29N propone garantizar por ley que el salario mínimo llegue al 60 % del salario medio.",
@@ -2796,6 +2843,7 @@ export const JUSTIF = {
     pnv: "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
     adel: "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional.",
     d21: "Estimación: su programa del 29N quiere que sea la Administración, y no el propietario particular, quien asuma el realojo o el alquiler de los inquilinos vulnerables.",
+    falange: "Estimación: su programa del 29N propone agilizar los desahucios, con alternativas habitacionales para quien no pueda pagar la renta.",
   },
   B05: {
     psoe: "Su ministra de Vivienda defiende que los ayuntamientos con problemas puedan prohibir pisos turísticos, como ha anunciado Barcelona.",
@@ -2835,6 +2883,7 @@ export const JUSTIF = {
     comp: "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
     pnv: "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos.",
     mj: "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías.",
+    falange: "Estimación: su programa del 29N propone gravar a los grandes tenedores y expropiar las viviendas vacías de los bancos para sacarlas como protegidas o alquiler social.",
   },
   B07: {
     bildu: "Estimación: su programa del 29N exige dos años de empadronamiento a los extranjeros multipropietarios para comprar vivienda; no propone un impuesto.",
@@ -2853,6 +2902,7 @@ export const JUSTIF = {
     comp: "Su programa del 29N propone prohibir temporalmente la compraventa de viviendas a no residentes en zonas tensionadas, más que un impuesto especial.",
     pacma: "Su programa del 29N propone «recargos fiscales a la compra de viviendas por parte de fondos de inversión y no residentes».",
     adel: "Estimación: su programa del 29N prohíbe la compra de vivienda por fondos y sociedades y «toda compra especulativa»; no menciona a los compradores extranjeros.",
+    falange: "Estimación: su programa del 29N va más allá de un impuesto: propone prohibir a los no nacionales comprar vivienda para residir o alquilar.",
   },
   B08: {
     mj: "Su programa del 29N propone crear un gran parque público de vivienda asequible en alquiler, del 1,1 % al 5 % del parque en 2030.",
@@ -2893,6 +2943,7 @@ export const JUSTIF = {
     pacma: "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos.",
     pnv: "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
     d21: "Estimación: su programa del 29N facilita la compra de la primera vivienda a los menores de 35 años eliminando IVA, ITP y AJD; no habla de avales hipotecarios.",
+    falange: "Estimación: su programa del 29N propone créditos hipotecarios del ICO a interés cercano al 0 % y condonar parte de la deuda de las familias jóvenes por cada hijo.",
   },
   C01: {
     pod: "Estimación: dependería del modelo; Podemos defiende la plurinacionalidad pero no ha concretado un concierto catalán.",
@@ -2954,6 +3005,7 @@ export const JUSTIF = {
     comp: "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
     falange: "Su programa del 29N rechaza el régimen autonómico y propone disolver las comunidades; no plantea un Estado federal.",
     adel: "Estimación: su programa del 29N plantea «un modelo confederal como horizonte» y el máximo autogobierno en cualquier reforma constitucional.",
+    fo: "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal.",
   },
   C05: {
     fa: "Su programa del 29N plantea un Estado federal y plurinacional que incluya el derecho a decidir mediante referéndum para resolver la cuestión territorial.",
@@ -3020,6 +3072,8 @@ export const JUSTIF = {
     upn: "UPN defiende el Convenio Económico tal como está y considera que Navarra ya aporta de forma solidaria.",
     gbai: "Sus bases del 29N defienden la permanencia del Convenio Económico como herramienta básica del autogobierno frente a «gamazadas encubiertas».",
     bng: "Estimación: su programa del 29N reclama para Galicia un concierto económico propio y bilateral, el mismo modelo que el vasco; no pide que aporten más.",
+    falange: "Estimación: su programa del 29N propone retirar todas sus competencias a las autonomías y disolverlas, lo que acabaría con los regímenes forales.",
+    fo: "El programa propone que todas las comunidades autónomas tengan las mismas competencias y el mismo régimen fiscal.",
   },
   D01: {
     fa: "Su programa del 29N propone reformar el sistema electoral para lograr la proporcionalidad directa a nivel nacional.",
@@ -3082,6 +3136,7 @@ export const JUSTIF = {
     comp: "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán.",
     salf: "Su contrato de 2026 propone reformar la Constitución para prohibir expresamente las amnistías.",
     gbai: "Estimación: en el Senado apoyó la ley de amnistía frente al veto del PP (mayo de 2024).",
+    falange: "Estimación: su programa del 29N pide contundencia e inflexibilidad con el separatismo, con ilegalización y duras penas por delitos contra la unidad de España.",
   },
   D05: {
     fa: "Estimación: su programa del 29N pide una regulación más estricta de las incompatibilidades y endurecerlas contra las puertas giratorias, sin fijar un plazo.",
@@ -3259,6 +3314,7 @@ export const JUSTIF = {
     fo: "Estimación: su programa niega una violencia estructural contra las mujeres, dice que se da «en ambas direcciones» y pide derogar las leyes de discriminación positiva.",
     d21: "Su programa del 29N no permitirá que se cuestione la existencia de la violencia de género y bloqueará cualquier intento de desmantelar la protección a sus víctimas.",
     existe: "Estimación: su programa de 2023 pide el «cumplimiento íntegro» del Pacto de Estado contra la violencia de género y la lucha contra ella.",
+    falange: "Estimación: su programa del 29N propone derogar las leyes «de género», incluida la Ley de Violencia de Género; no dice qué ley la sustituiría.",
   },
   E09: {
     psoe: "El PSOE votó en 2021 contra tramitar la regulación integral del cannabis y prefiere estudiar solo su uso medicinal.",
@@ -3361,6 +3417,7 @@ export const JUSTIF = {
     d21: "Su programa del 29N propone un visado de búsqueda de empleo de 6 meses con cupo según vacantes y formar trabajadores en origen con contrato antes de viajar.",
     adel: "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo.",
     bng: "Estimación: su programa del 29N defiende la regularización como vía contra la explotación y agilizar la homologación de títulos extranjeros; no trata la contratación en origen.",
+    fo: "El programa sostiene que la capacidad de acoger inmigrantes está rebosada y propone derogar la contratación colectiva en sectores precarizados (p. 9).",
   },
   F05: {
     psoe: "Su Gobierno aprobó el reparto obligatorio de menores en contingencia migratoria, con exención para comunidades con plazas por encima de la media.",
@@ -3375,7 +3432,7 @@ export const JUSTIF = {
     upc: "Su manifiesto del 29N pide proteger a la infancia migrante no acompañada con una distribución solidaria de la acogida entre territorios.",
     junts: "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería.",
     ie: "Estimación: el contrato rechaza la «imposición de políticas migratorias contrarias a los intereses nacionales» desde la UE; no cita el reparto entre comunidades.",
-    falange: "Estimación: el programa propone no abrir nuevos centros de menores migrantes no acompañados, clausurar los existentes y expulsarlos, lo contrario de repartirlos entre comunidades.",
+    falange: "Estimación: su programa del 29N propone no abrir más centros de menores extranjeros, cerrar los existentes y expulsar a los menores que delincan.",
     adel: "Su programa del 29N pide tutela automática y un pacto de Estado con financiación estatal y «reparto solidario entre comunidades» de los menores que llegan solos.",
   },
   F06: {
@@ -3390,6 +3447,8 @@ export const JUSTIF = {
     adel: "Su programa del 29N propone una prestación universal por crianza de 100 a 200 euros al mes por hijo hasta los 18 años.",
     d21: "Su programa del 29N propone un Bono Crianza progresivo, «y más a quien más lo necesita»: la ayuda por hijo dependería de la situación de la familia.",
     comp: "Su programa del 29N propone una prestación universal por crianza de 200 euros al mes por hijo o hija.",
+    falange: "Estimación: su programa del 29N propone planes de natalidad con ayudas directas e incentivos fiscales a las familias, sobre todo numerosas; no detalla si dependerían de la renta.",
+    fo: "Estimación: el programa propone planes de natalidad con ventajas fiscales y ayudas económicas a las familias, mayores para las numerosas.",
   },
   F07: {
     mj: "Estimación: su programa del 29N amplía la tarifa plana para quien se establezca en pueblos en riesgo de despoblación, sin proponer impuestos más bajos en general.",
@@ -3403,6 +3462,7 @@ export const JUSTIF = {
     vox: "Su programa de 2026 propone una fiscalidad mínima y diferenciada, con bonificaciones y deducciones, en las zonas en riesgo de despoblación.",
     adel: "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas.",
     d21: "Estimación: su programa del 29N pide una estrategia europea para regiones escasamente pobladas, con incentivos fiscales específicos, inspirada en el modelo ártico.",
+    falange: "Su programa del 29N propone exenciones de IRPF los cinco primeros años y rebajas de cotizaciones para los nuevos trabajadores de los sectores primario y secundario en zonas despobladas.",
   },
   F08: {
     comp: "Estimación: su programa del 29N reconoce la ayuda a domicilio como servicio público esencial de la dependencia y pide que el Estado pague el 50 % (p. 57).",
@@ -3423,6 +3483,7 @@ export const JUSTIF = {
     pnv: "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos.",
     d21: "Estimación: su programa del 29N propone que el Estado asuma el 50 % de la financiación de la dependencia y, en impuestos, dice que no hace falta subirlos ni bajarlos.",
     mj: "Estimación: su programa del 29N fija como meta dejar a cero la lista de espera de la dependencia en 2030 y defiende un sistema fiscal más progresivo.",
+    fo: "Estimación: el programa propone asegurar plazas públicas en residencias de mayores y más gasto en el sistema público de salud.",
   },
   F09: {
     comp: "Estimación: su programa del 29N propone ampliar el IMV a nuevas situaciones y mejorar su cobertura; no menciona exigir búsqueda de empleo.",
@@ -3478,6 +3539,7 @@ export const JUSTIF = {
     ph: "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
     bng: "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
     mj: "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas.",
+    falange: "Estimación: su programa del 29N propone frenar la «transición energética», con la nuclear como fuente principal y un canon para los municipios con grandes parques solares y eólicos.",
   },
   G03: {
     comp: "Estimación: su programa del 29N propone electrificar el transporte y abandonar los combustibles fósiles con horizonte 2040; no cita la fecha de 2035.",
@@ -3492,6 +3554,8 @@ export const JUSTIF = {
     salf: "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035.",
     pnv: "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035.",
     mj: "Estimación: su programa del 29N propone eliminar los combustibles fósiles y descarbonizar el transporte, sin mencionar la prohibición de 2035.",
+    falange: "Estimación: su programa del 29N propone frenar todo proyecto de «transición energética» y derogar las zonas de bajas emisiones (p. 55).",
+    fo: "Estimación: el programa propone poner fin a la «transición ecológica» y a las políticas restrictivas de la UE.",
   },
   G04: {
     psoe: "Prioriza desalación, reutilización y caudales ecológicos frente a ampliar los trasvases.",
@@ -3508,6 +3572,8 @@ export const JUSTIF = {
     adel: "Su programa del 29N propone una ley del ciclo del agua con freno al regadío intensivo y «ni trasvases ni compraventa de derechos de riego».",
     comp: "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos.",
     d21: "Estimación: su programa del 29N busca «más agua sin quitársela a nadie» con desalación, reutilización y riego inteligente; no propone nuevos trasvases.",
+    falange: "Su programa del 29N propone un Plan Hidrológico Nacional que interconecte las cuencas.",
+    fo: "Estimación: el programa propone planes hidrográficos para repartir el agua y acabar con la sequía de algunos territorios, y frenar el derribo de presas.",
   },
   G05: {
     comp: "Su programa del 29N propone crear una empresa pública de generación, distribución y comercialización de electricidad.",
@@ -3546,6 +3612,7 @@ export const JUSTIF = {
     pacma: "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias».",
     pnv: "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi.",
     d21: "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente.",
+    falange: "Estimación: su programa del 29N conserva la alta velocidad solo entre puntos estratégicos y fomenta Cercanías y Media Distancia, con prioridad a las zonas rurales.",
   },
   G07: {
     psoe: "Su Gobierno propone prohibir nuevas viviendas en las zonas de flujo preferente y endurecer la construcción en el resto de zonas inundables.",
@@ -3574,6 +3641,7 @@ export const JUSTIF = {
     soria: "Estimación: su programa del 29N pide el «aprovechamiento de nuestros recursos forestales» y compensar a los municipios por sus montes.",
     adel: "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
     mj: "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales.",
+    falange: "Estimación: su programa del 29N propone un plan nacional de conservación y limpieza de montes para reducir los daños de los incendios.",
   },
   G09: {
     mj: "Su programa del 29N apuesta decididamente por las energías renovables y por eliminar los combustibles fósiles, garantizando la estabilidad del sistema eléctrico.",
@@ -3649,6 +3717,7 @@ export const JUSTIF = {
     ie: "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
     comp: "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal.",
     d21: "Estimación: su programa del 29N quiere «una Europa más ágil en sus decisiones» y avanzar por métodos alternativos si no hay acuerdo; no cita la unanimidad.",
+    falange: "Estimación: su programa del 29N defiende salir de la UE de forma pactada y refundarla en torno a la soberanía de cada nación.",
   },
   H04: {
     mj: "Su programa del 29N propone prohibir la exportación de armas a países en guerra o que vulneren derechos humanos y suspender el Acuerdo de Asociación UE-Israel.",
@@ -3899,6 +3968,7 @@ export const JUSTIF = {
     pnv: "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
     junts: "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña.",
     pod: "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo.",
+    falange: "Estimación: su programa del 29N quiere el español como lengua vehicular y limitar las lenguas regionales a sus propias asignaturas.",
   },
   J01: {
     salf: "Estimación: si se superan los 60 días de espera, el paciente elige centro público o privado y lo paga la sanidad pública; no habla de la gestión.",
@@ -3972,6 +4042,7 @@ export const JUSTIF = {
     vox: "Su programa del 29N pide una auditoría sistemática de todos los gastos no imprescindibles de las administraciones, susceptibles de supresión, con análisis públicos.",
     pacma: "Su programa del 29N propone valorar la eficacia y eficiencia de cada partida de gasto e incorporar sus consecuencias a la gestión pública.",
     mj: "Estimación: su programa del 29N acompaña muchas medidas de indicadores verificables y evaluación, sin proponer suprimir las que fallen.",
+    fo: "Estimación: el programa propone una revisión exhaustiva y la supresión de subvenciones ideológicas y de entidades públicas ineficaces.",
   },
   J06: {
     psoe: "Su Gobierno hizo obligatoria la evaluación del desempeño con efectos en carrera, sueldo y continuidad en el puesto, sin despido.",
@@ -3982,6 +4053,7 @@ export const JUSTIF = {
     erc: "Estimación: ERC defiende la función pública y rechazaría despidos por rendimiento.",
     salf: "Propone evaluaciones periódicas de desempeño de funcionarios: quien no cumpla deberá reciclarse o afrontar sanciones.",
     d21: "Estimación: su programa del 29N propone evaluar el desempeño de los empleados públicos e incentivar económicamente al que rinde; no habla de despido.",
+    falange: "Estimación: su programa del 29N propone evaluaciones periódicas del profesorado y acceso a los organismos públicos por méritos acreditados (p. 44).",
   },
   J07: {
     psoe: "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada.",
@@ -3994,6 +4066,8 @@ export const JUSTIF = {
     cha: "Estimación: CHA concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
     mes: "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
     adel: "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades.",
+    falange: "Estimación: su programa del 29N propone un único Sistema Nacional de Salud y acabar con la externalización y privatización de la sanidad.",
+    fo: "Estimación: el programa propone centralizar el sistema nacional de salud y acabar con la externalización y privatización de la sanidad.",
   },
   J08: {
     comp: "Su programa del 29N propone fijar por ley básica estatal una financiación mínima, ratios de población y listas de espera máximas en atención primaria.",
@@ -4039,7 +4113,7 @@ export const JUSTIF = {
     cha: "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
     upc: "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
     pcte: "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
-    falange: "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario.",
+    falange: "Su programa del 29N propone regular y controlar los precios para evitar abusos a los pequeños productores.",
     ie: "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes.",
     pp: "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
     bng: "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción.",
@@ -4047,6 +4121,7 @@ export const JUSTIF = {
     adel: "Su programa del 29N pide prohibir de forma efectiva la venta a pérdidas, precios justos en origen y vigilar los márgenes.",
     comp: "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
     mj: "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes.",
+    fo: "Estimación: el programa culpa de la ruina del campo a los «intermediarios mafiosos y especuladores» y propone cooperativas para dar salida a la producción (p. 38).",
   },
   K03: {
     psoe: "Su programa del 29N defiende una PAC que priorice las explotaciones profesionales, familiares y de pequeña y mediana dimensión (compromiso 267).",
@@ -4081,6 +4156,7 @@ export const JUSTIF = {
     upc: "Propone incluir el lobo ibérico en el Catálogo Español de Especies Amenazadas, lo que choca con su caza controlada.",
     fo: "Estimación: el programa propone el control poblacional de la fauna como competencia del Estado, apoyado en cazadores locales para proteger explotaciones ganaderas.",
     adel: "Su programa del 29N pide que el lobo vuelva al Listado de Especies en Régimen de Protección Especial y un plan de recuperación.",
+    falange: "Estimación: su programa del 29N propone desregular la caza de especies con un crecimiento insostenible que desequilibran la agricultura y la ganadería.",
   },
   K05: {
     comp: "Su programa del 29N propone una moratoria inmediata a las nuevas macrogranjas, limitar su tamaño e impulsar su cierre.",
@@ -4096,6 +4172,7 @@ export const JUSTIF = {
     adel: "Su programa del 29N pide «ni una macrogranja»: su prohibición y la transición a la ganadería extensiva.",
     ph: "Su programa de 2026 propone una moratoria inmediata a la construcción o ampliación de macrogranjas ganaderas intensivas.",
     existe: "Estimación: su programa de 2023 fomenta «la ganadería extensiva frente a las macrogranjas»; no pide prohibir las nuevas.",
+    fo: "Estimación: el programa critica que se desmantelen granjas por presión de lobbies ecologistas para luego importar la carne.",
   },
   K06: {
     comp: "Estimación: su programa del 29N pide una reconversión del sector pesquero hacia una producción más sostenible, con un reparto justo de los días de pesca.",
@@ -4109,6 +4186,7 @@ export const JUSTIF = {
     cha: "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
     mj: "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
     bng: "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo.",
+    falange: "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca.",
   },
   K07: {
     comp: "Estimación: su programa del 29N propone prohibir la caza con perros e incluir a los perros de caza en la ley de bienestar animal.",
@@ -4120,6 +4198,7 @@ export const JUSTIF = {
     adel: "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
     fo: "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales.",
     mj: "Su programa del 29N declara que sobre la caza deportiva conviven posiciones distintas en el partido y no propone cambios en su regulación.",
+    falange: "Estimación: su programa del 29N propone desregular la caza para controlar especies que desequilibran el medio y las actividades agrarias.",
   },
   K08: {
     psoe: "Su programa del 29N propone modernizar los regadíos sin aumentar el consumo total de agua (264), pero no plantea limitar los nuevos regadíos.",
@@ -4240,6 +4319,8 @@ export const JUSTIF = {
     pod: "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
     erc: "Estimación: posición intermedia sin propuesta conocida.",
     pnv: "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima.",
+    falange: "Estimación: su programa del 29N propone prohibir los algoritmos de recomendación para menores e imponer control sobre las plataformas tecnológicas extranjeras.",
+    fo: "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años.",
   },
   L08: {
     comp: "Estimación: su programa del 29N defiende una representación equilibrada de mujeres y hombres; no menciona las cuotas en listas ni en consejos.",
@@ -4258,6 +4339,7 @@ export const JUSTIF = {
     pnv: "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas.",
     adel: "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos.",
     d21: "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas.",
+    falange: "Estimación: su programa del 29N se opone al feminismo y propone derogar las leyes «de género» y suprimir los privilegios concedidos a esos colectivos.",
   },
   L09: {
     psoe: "Votó contra las leyes de Vox y Junts (febrero y abril de 2026) para prohibir el burka, por considerarlas discriminatorias.",
@@ -4271,5 +4353,7 @@ export const JUSTIF = {
     pod: "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate.",
     pp: "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos.",
     salf: "Su contrato de 2026 prohíbe el burka y el niqab en el espacio público, como en Francia y otros países europeos.",
+    falange: "Estimación: su programa del 29N propone limitar la actividad de las confesiones ajenas y no permitir el culto público de creencias contrarias a la cultura española (p. 52).",
+    fo: "El programa propone prohibir el hiyab en lugares y puestos de trabajo públicos y ayudar a las mujeres que quieran dejar la vestimenta islámica.",
   }
 };

@@ -1,6 +1,454 @@
 [
  {
   "fecha": "2026-11-20",
+  "id": "A01",
+  "partido": "falange",
+  "de": 0,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N solo plantea estudiar la reducción de horas semanales por sectores una vez estabilizado el nuevo modelo productivo, no aprobarla ya por ley.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=22",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 22",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A02",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone subir el IRPF a las rentas altas y el impuesto de sociedades a las grandes empresas (p. 19) y más gasto en sanidad pública (p. 42).",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18",
+   "Programa político del Frente Obrero de 2026, p. 18",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A05",
+  "partido": "falange",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere volver a jubilarse a los 65 y aplicar el MEI a las pensiones altas (p. 29), lo contrario de retrasar la jubilación o recortar.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=24",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 24",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A05",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone revertir el aumento de la edad de jubilación y subir las pensiones mínimas (p. 49), lo contrario de contener el gasto.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=48",
+   "Programa político del Frente Obrero de 2026, p. 48",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "A07",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone proteger el dinero en efectivo como infraestructura de seguridad nacional frente al euro digital.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=18",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 18",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B04",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone agilizar los desahucios, con alternativas habitacionales para quien no pueda pagar la renta.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=15",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 15",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone gravar a los grandes tenedores y expropiar las viviendas vacías de los bancos para sacarlas como protegidas o alquiler social.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B07",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N va más allá de un impuesto: propone prohibir a los no nacionales comprar vivienda para residir o alquilar.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "B09",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone créditos hipotecarios del ICO a interés cercano al 0 % y condonar parte de la deuda de las familias jóvenes por cada hijo.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "C04",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+   "Programa político del Frente Obrero de 2026, p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "C09",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone retirar todas sus competencias a las autonomías y disolverlas, lo que acabaría con los regímenes forales.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "C09",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "El programa propone que todas las comunidades autónomas tengan las mismas competencias y el mismo régimen fiscal.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+   "Programa político del Frente Obrero de 2026, p. 56",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "D04",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide contundencia e inflexibilidad con el separatismo, con ilegalización y duras penas por delitos contra la unidad de España.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=20",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 20",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "E08",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone derogar las leyes «de género», incluida la Ley de Violencia de Género; no dice qué ley la sustituiría.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F04",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "El programa sostiene que la capacidad de acoger inmigrantes está rebosada y propone derogar la contratación colectiva en sectores precarizados (p. 9).",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=52",
+   "Programa político del Frente Obrero de 2026, p. 52",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F05",
+  "partido": "falange",
+  "de": 2,
+  "a": 1,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone no abrir más centros de menores extranjeros, cerrar los existentes y expulsar a los menores que delincan.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=10",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 10",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone planes de natalidad con ayudas directas e incentivos fiscales a las familias, sobre todo numerosas; no detalla si dependerían de la renta.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F06",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone planes de natalidad con ventajas fiscales y ayudas económicas a las familias, mayores para las numerosas.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=34",
+   "Programa político del Frente Obrero de 2026, p. 34",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F07",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone exenciones de IRPF los cinco primeros años y rebajas de cotizaciones para los nuevos trabajadores de los sectores primario y secundario en zonas despobladas.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=26",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 26",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "F08",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone asegurar plazas públicas en residencias de mayores y más gasto en el sistema público de salud.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=43",
+   "Programa político del Frente Obrero de 2026, p. 43",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G02",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone frenar la «transición energética», con la nuclear como fuente principal y un canon para los municipios con grandes parques solares y eólicos.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G03",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone frenar todo proyecto de «transición energética» y derogar las zonas de bajas emisiones (p. 55).",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G03",
+  "partido": "fo",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone poner fin a la «transición ecológica» y a las políticas restrictivas de la UE.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15",
+   "Programa político del Frente Obrero de 2026, p. 15",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G04",
+  "partido": "falange",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "Su programa del 29N propone un Plan Hidrológico Nacional que interconecte las cuencas.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G04",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone planes hidrográficos para repartir el agua y acabar con la sequía de algunos territorios, y frenar el derribo de presas.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
+   "Programa político del Frente Obrero de 2026, p. 38",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N conserva la alta velocidad solo entre puntos estratégicos y fomenta Cercanías y Media Distancia, con prioridad a las zonas rurales.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "G08",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone un plan nacional de conservación y limpieza de montes para reducir los daños de los incendios.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "H03",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N defiende salir de la UE de forma pactada y refundarla en torno a la soberanía de cada nación.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 19",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "I03",
   "partido": "bng",
   "de": 2,
@@ -13,6 +461,86 @@
    "Programa electoral del BNG de 2026, p. 35",
    "programa",
    "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "I09",
+  "partido": "falange",
+  "de": 0,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere el español como lengua vehicular y limitar las lenguas regionales a sus propias asignaturas.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 47",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J05",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone una revisión exhaustiva y la supresión de subvenciones ideológicas y de entidades públicas ineficaces.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18",
+   "Programa político del Frente Obrero de 2026, p. 18",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone evaluaciones periódicas del profesorado y acceso a los organismos públicos por méritos acreditados (p. 44).",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 48",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J07",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone un único Sistema Nacional de Salud y acabar con la externalización y privatización de la sanidad.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=50",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 50",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "J07",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa propone centralizar el sistema nacional de salud y acabar con la externalización y privatización de la sanidad.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
+   "Programa político del Frente Obrero de 2026, p. 42",
+   "programa",
+   "2026-10"
   ]
  },
  {
@@ -33,6 +561,54 @@
  },
  {
   "fecha": "2026-11-20",
+  "id": "K02",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa culpa de la ruina del campo a los «intermediarios mafiosos y especuladores» y propone cooperativas para dar salida a la producción (p. 38).",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
+   "Programa político del Frente Obrero de 2026, p. 37",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K04",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone desregular la caza de especies con un crecimiento insostenible que desequilibran la agricultura y la ganadería.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K05",
+  "partido": "fo",
+  "de": 0,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa critica que se desmantelen granjas por presión de lobbies ecologistas para luego importar la carne.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
+   "Programa político del Frente Obrero de 2026, p. 37",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
   "id": "K06",
   "partido": "bng",
   "de": 3,
@@ -45,6 +621,118 @@
    "Programa electoral del BNG de 2026, p. 49",
    "programa",
    "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K06",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "K07",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone desregular la caza para controlar especies que desequilibran el medio y las actividades agrarias.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L07",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone prohibir los algoritmos de recomendación para menores e imponer control sobre las plataformas tecnológicas extranjeras.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 48",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L07",
+  "partido": "fo",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=21",
+   "Programa político del Frente Obrero de 2026, p. 21",
+   "programa",
+   "2026-10"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L08",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N se opone al feminismo y propone derogar las leyes «de género» y suprimir los privilegios concedidos a esos colectivos.",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L09",
+  "partido": "falange",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N propone limitar la actividad de las confesiones ajenas y no permitir el culto público de creencias contrarias a la cultura española (p. 52).",
+  "fuente": [
+   "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=38",
+   "Programa de FE de las JONS para las generales del 29N de 2026, p. 38",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "id": "L09",
+  "partido": "fo",
+  "de": 0,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": false,
+  "motivo": "El programa propone prohibir el hiyab en lugares y puestos de trabajo públicos y ayudar a las mujeres que quieran dejar la vestimenta islámica.",
+  "fuente": [
+   "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
+   "Programa político del Frente Obrero de 2026, p. 53",
+   "programa",
+   "2026-10"
   ]
  },
  {

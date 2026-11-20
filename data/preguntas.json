@@ -184,6 +184,7 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
+    "falange": 3,
     "ph": 5,
     "mj": 5
    },
@@ -194,7 +195,8 @@
     "drago",
     "cha",
     "mes",
-    "adel"
+    "adel",
+    "falange"
    ],
    "src": {
     "mj": [
@@ -304,6 +306,12 @@
      "Programa del Partido Humanista para las elecciones generales de 2026, p. 7",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=22",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -324,7 +332,8 @@
     "upc": "Sumar y Podemos, integrantes de la coalición, votaron contra los vetos a la reducción de la jornada a 37,5 horas.",
     "adel": "Estimación: su programa del 29N pide la jornada de 32 horas sin rebaja de sueldo (propuesta 268); no se pronuncia sobre el umbral de 37,5.",
     "pcte": "Pide una jornada obligatoria que no supere las 35 horas semanales y reducirla en todos los sectores sin merma de salario.",
-    "ph": "Su programa del 29N propone reducir por ley la jornada ordinaria a 30 horas semanales en 4 días, sin reducción del salario."
+    "ph": "Su programa del 29N propone reducir por ley la jornada ordinaria a 30 horas semanales en 4 días, sin reducción del salario.",
+    "falange": "Estimación: su programa del 29N solo plantea estudiar la reducción de horas semanales por sectores una vez estabilizado el nuevo modelo productivo, no aprobarla ya por ley."
    }
   },
   {
@@ -364,6 +373,7 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
+    "fo": 4,
     "falange": 2,
     "ie": 2,
     "ph": 4,
@@ -376,6 +386,7 @@
     "comp",
     "existe",
     "mes",
+    "fo",
     "ie",
     "ph"
    ],
@@ -517,6 +528,12 @@
      "Web oficial de FE de las JONS, «Nuestras ideas» (consultada el 7 nov 2026)",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18",
+     "Programa político del Frente Obrero de 2026, p. 18",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -540,7 +557,8 @@
     "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
     "pp": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos.",
     "erc": "Su programa de 2026 sube el IRPF a las ganancias de capital y mantiene los impuestos a grandes fortunas, banca y energéticas.",
-    "vox": "Su programa de 2026 propone una rebaja masiva de impuestos (IRPF, IVA y Sociedades) compensada con control del déficit y recorte del gasto superfluo."
+    "vox": "Su programa de 2026 propone una rebaja masiva de impuestos (IRPF, IVA y Sociedades) compensada con control del déficit y recorte del gasto superfluo.",
+    "fo": "Estimación: el programa propone subir el IRPF a las rentas altas y el impuesto de sociedades a las grandes empresas (p. 19) y más gasto en sanidad pública (p. 42)."
    }
   },
   {
@@ -908,6 +926,8 @@
     "mes": 1,
     "adel": 1,
     "pcte": 1,
+    "fo": 1,
+    "falange": 2,
     "ph": 1,
     "mj": 1
    },
@@ -919,7 +939,9 @@
     "gbai",
     "drago",
     "existe",
-    "mes"
+    "mes",
+    "fo",
+    "falange"
    ],
    "src": {
     "mj": [
@@ -1047,6 +1069,18 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=24",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 24",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=48",
+     "Programa político del Frente Obrero de 2026, p. 48",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -1070,7 +1104,9 @@
     "pnv": "Su programa del 29N pide revalorizar las pensiones con el IPC y reforzar las fuentes de financiación del sistema público.",
     "adel": "Su programa del 29N propone cotizar sin topes por los ingresos reales y aportar impuestos para sostener pensiones públicas revalorizadas con el IPC.",
     "pacma": "Estimación: su programa del 29N pide reformar la Constitución para que el sistema público de pensiones «no pueda recortarse, ni privatizarse».",
-    "d21": "Estimación: su programa del 29N remite la reforma de las pensiones a una asamblea ciudadana con tres principios (tranquilidad, sostenibilidad y justicia) sin elegir opción."
+    "d21": "Estimación: su programa del 29N remite la reforma de las pensiones a una asamblea ciudadana con tres principios (tranquilidad, sostenibilidad y justicia) sin elegir opción.",
+    "falange": "Estimación: su programa del 29N quiere volver a jubilarse a los 65 y aplicar el MEI a las pensiones altas (p. 29), lo contrario de retrasar la jubilación o recortar.",
+    "fo": "Estimación: el programa propone revertir el aumento de la edad de jubilación y subir las pensiones mínimas (p. 49), lo contrario de contener el gasto."
    }
   },
   {
@@ -1198,7 +1234,8 @@
     "bildu": 2,
     "upn": 4,
     "bng": 2,
-    "comp": 2
+    "comp": 2,
+    "falange": 4
    },
    "est": [
     "pp",
@@ -1211,7 +1248,8 @@
     "bildu",
     "upn",
     "bng",
-    "comp"
+    "comp",
+    "falange"
    ],
    "notes": {
     "vox": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros."
@@ -1234,6 +1272,12 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 15",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=18",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1242,7 +1286,8 @@
     "vox": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros.",
     "pod": "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
     "erc": "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
-    "salf": "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar."
+    "salf": "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar.",
+    "falange": "Estimación: su programa del 29N propone proteger el dinero en efectivo como infraestructura de seguridad nacional frente al euro digital."
    }
   },
   {
@@ -2396,6 +2441,7 @@
     "adel": 1,
     "pcte": 1,
     "fo": 1,
+    "falange": 4,
     "ph": 1,
     "mj": 2
    },
@@ -2407,7 +2453,8 @@
     "upc",
     "drago",
     "cha",
-    "mes"
+    "mes",
+    "falange"
    ],
    "notes": {
     "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
@@ -2527,6 +2574,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=15",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2547,7 +2600,8 @@
     "salf": "Su contrato de 2026 fija juicio verbal y lanzamiento en 30 días para el inquilino que deja de pagar, sin excusas de vulnerabilidad: a los vulnerables los atiende el Estado.",
     "pnv": "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
     "adel": "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional.",
-    "d21": "Estimación: su programa del 29N quiere que sea la Administración, y no el propietario particular, quien asuma el realojo o el alquiler de los inquilinos vulnerables."
+    "d21": "Estimación: su programa del 29N quiere que sea la Administración, y no el propietario particular, quien asuma el realojo o el alquiler de los inquilinos vulnerables.",
+    "falange": "Estimación: su programa del 29N propone agilizar los desahucios, con alternativas habitacionales para quien no pueda pagar la renta."
    }
   },
   {
@@ -2784,6 +2838,7 @@
     "existe": 2,
     "mes": 5,
     "adel": 5,
+    "falange": 4,
     "mj": 4
    },
    "est": [
@@ -2798,7 +2853,8 @@
     "drago",
     "cha",
     "existe",
-    "mes"
+    "mes",
+    "falange"
    ],
    "src": {
     "psoe": [
@@ -2884,6 +2940,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 9",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2900,7 +2962,8 @@
     "d21": "Estimación: su programa del 29N quiere movilizar la vivienda vacía con bonificaciones en IRPF e IBI y garantía de cobro, no con recargos.",
     "comp": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
     "pnv": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos.",
-    "mj": "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías."
+    "mj": "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías.",
+    "falange": "Estimación: su programa del 29N propone gravar a los grandes tenedores y expropiar las viviendas vacías de los bancos para sacarlas como protegidas o alquiler social."
    }
   },
   {
@@ -2937,6 +3000,7 @@
     "cha": 5,
     "mes": 2,
     "adel": 5,
+    "falange": 5,
     "mj": 4
    },
    "est": [
@@ -2950,7 +3014,8 @@
     "upc",
     "drago",
     "cha",
-    "adel"
+    "adel",
+    "falange"
    ],
    "notes": {
     "vox": "Vox pidió en el Congreso gravar con más impuestos a los compradores extranjeros de vivienda; la propuesta no distingue entre residentes y no residentes ni por origen."
@@ -3051,6 +3116,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 51",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3069,7 +3140,8 @@
     "d21": "Su programa del 29N propone un recargo mínimo del 10 % (hasta el 25 % por las comunidades) a la compra de vivienda no habitual por inversores extracomunitarios.",
     "comp": "Su programa del 29N propone prohibir temporalmente la compraventa de viviendas a no residentes en zonas tensionadas, más que un impuesto especial.",
     "pacma": "Su programa del 29N propone «recargos fiscales a la compra de viviendas por parte de fondos de inversión y no residentes».",
-    "adel": "Estimación: su programa del 29N prohíbe la compra de vivienda por fondos y sociedades y «toda compra especulativa»; no menciona a los compradores extranjeros."
+    "adel": "Estimación: su programa del 29N prohíbe la compra de vivienda por fondos y sociedades y «toda compra especulativa»; no menciona a los compradores extranjeros.",
+    "falange": "Estimación: su programa del 29N va más allá de un impuesto: propone prohibir a los no nacionales comprar vivienda para residir o alquilar."
    }
   },
   {
@@ -3338,7 +3410,8 @@
     "cha": 2,
     "mes": 2,
     "adel": 2,
-    "soria": 4
+    "soria": 4,
+    "falange": 4
    },
    "est": [
     "pacma",
@@ -3357,7 +3430,8 @@
     "cha",
     "mes",
     "adel",
-    "soria"
+    "soria",
+    "falange"
    ],
    "src": {
     "ccpc": [
@@ -3425,6 +3499,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=14",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3439,7 +3519,8 @@
     "soria": "Estimación: su programa del 29N pide «incentivos para adquisición de primera vivienda»; no concreta avales públicos.",
     "pacma": "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos.",
     "pnv": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
-    "d21": "Estimación: su programa del 29N facilita la compra de la primera vivienda a los menores de 35 años eliminando IVA, ITP y AJD; no habla de avales hipotecarios."
+    "d21": "Estimación: su programa del 29N facilita la compra de la primera vivienda a los menores de 35 años eliminando IVA, ITP y AJD; no habla de avales hipotecarios.",
+    "falange": "Estimación: su programa del 29N propone créditos hipotecarios del ICO a interés cercano al 0 % y condonar parte de la deuda de las familias jóvenes por cada hijo."
    }
   },
   {
@@ -3947,6 +4028,7 @@
     "existe": 3,
     "mes": 4,
     "adel": 4,
+    "fo": 2,
     "falange": 1
    },
    "est": [
@@ -3964,7 +4046,8 @@
     "drago",
     "existe",
     "mes",
-    "adel"
+    "adel",
+    "fo"
    ],
    "notes": {
     "pod": "Belarra defiende reconocer la plurinacionalidad y el derecho a decidir, sin hablar de un Estado federal."
@@ -4035,6 +4118,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 73",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+     "Programa político del Frente Obrero de 2026, p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -4049,7 +4138,8 @@
     "cha": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
     "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
     "falange": "Su programa del 29N rechaza el régimen autonómico y propone disolver las comunidades; no plantea un Estado federal.",
-    "adel": "Estimación: su programa del 29N plantea «un modelo confederal como horizonte» y el máximo autogobierno en cualquier reforma constitucional."
+    "adel": "Estimación: su programa del 29N plantea «un modelo confederal como horizonte» y el máximo autogobierno en cualquier reforma constitucional.",
+    "fo": "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal."
    }
   },
   {
@@ -4613,7 +4703,9 @@
     "ccpc": 2,
     "comp": 3,
     "existe": 4,
-    "adel": 4
+    "adel": 4,
+    "fo": 5,
+    "falange": 4
    },
    "est": [
     "pod",
@@ -4625,7 +4717,8 @@
     "ccpc",
     "comp",
     "existe",
-    "adel"
+    "adel",
+    "falange"
    ],
    "src": {
     "salf": [
@@ -4693,6 +4786,18 @@
      "Programa electoral del BNG de 2026, p. 8",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 19",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+     "Programa político del Frente Obrero de 2026, p. 56",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -4707,7 +4812,9 @@
     "pp": "El PP vasco defiende el Concierto Económico y el cupo frente a quienes lo consideran un privilegio.",
     "upn": "UPN defiende el Convenio Económico tal como está y considera que Navarra ya aporta de forma solidaria.",
     "gbai": "Sus bases del 29N defienden la permanencia del Convenio Económico como herramienta básica del autogobierno frente a «gamazadas encubiertas».",
-    "bng": "Estimación: su programa del 29N reclama para Galicia un concierto económico propio y bilateral, el mismo modelo que el vasco; no pide que aporten más."
+    "bng": "Estimación: su programa del 29N reclama para Galicia un concierto económico propio y bilateral, el mismo modelo que el vasco; no pide que aporten más.",
+    "falange": "Estimación: su programa del 29N propone retirar todas sus competencias a las autonomías y disolverlas, lo que acabaría con los regímenes forales.",
+    "fo": "El programa propone que todas las comunidades autónomas tengan las mismas competencias y el mismo régimen fiscal."
    }
   },
   {
@@ -5151,7 +5258,8 @@
     "comp": 5,
     "cha": 4,
     "mes": 5,
-    "adel": 4
+    "adel": 4,
+    "falange": 1
    },
    "est": [
     "d21",
@@ -5160,7 +5268,8 @@
     "drago",
     "cha",
     "mes",
-    "adel"
+    "adel",
+    "falange"
    ],
    "src": {
     "psoe": [
@@ -5258,6 +5367,12 @@
      "RTVC: el Senado veta la ley de amnistía (14 may 2024)",
      "prensa",
      "2024-05-14"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=20",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 20",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5276,7 +5391,8 @@
     "d21": "El programa de 2019 de Ciudadanos, socio de D21, proponía prohibir incluso los indultos a políticos condenados por sedición.",
     "comp": "Compromís defendió en el Congreso la amnistía como solución política al conflicto catalán.",
     "salf": "Su contrato de 2026 propone reformar la Constitución para prohibir expresamente las amnistías.",
-    "gbai": "Estimación: en el Senado apoyó la ley de amnistía frente al veto del PP (mayo de 2024)."
+    "gbai": "Estimación: en el Senado apoyó la ley de amnistía frente al veto del PP (mayo de 2024).",
+    "falange": "Estimación: su programa del 29N pide contundencia e inflexibilidad con el separatismo, con ilegalización y duras penas por delitos contra la unidad de España."
    }
   },
   {
@@ -6834,6 +6950,7 @@
     "mes": 1,
     "adel": 1,
     "fo": 4,
+    "falange": 4,
     "mj": 1
    },
    "est": [
@@ -6843,7 +6960,8 @@
     "cha",
     "existe",
     "mes",
-    "fo"
+    "fo",
+    "falange"
    ],
    "notes": {
     "pp": "Su programa de 2023 promete cumplir el Pacto de Estado contra la violencia de género «sin pasos atrás»; algunos acuerdos autonómicos con Vox hablaron de «violencia intrafamiliar», pero no son la línea nacional."
@@ -6968,6 +7086,12 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 18",
      "programa",
      "2023-07"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -6990,7 +7114,8 @@
     "pacma": "El programa del 29N trata la violencia machista como violencia específica contra las mujeres y propone medidas propias, lo que no encaja con una ley intrafamiliar neutra.",
     "fo": "Estimación: su programa niega una violencia estructural contra las mujeres, dice que se da «en ambas direcciones» y pide derogar las leyes de discriminación positiva.",
     "d21": "Su programa del 29N no permitirá que se cuestione la existencia de la violencia de género y bloqueará cualquier intento de desmantelar la protección a sus víctimas.",
-    "existe": "Estimación: su programa de 2023 pide el «cumplimiento íntegro» del Pacto de Estado contra la violencia de género y la lucha contra ella."
+    "existe": "Estimación: su programa de 2023 pide el «cumplimiento íntegro» del Pacto de Estado contra la violencia de género y la lucha contra ella.",
+    "falange": "Estimación: su programa del 29N propone derogar las leyes «de género», incluida la Ley de Violencia de Género; no dice qué ley la sustituiría."
    }
   },
   {
@@ -7813,6 +7938,7 @@
     "jmm": 3,
     "upl": 3,
     "soria": 4,
+    "fo": 1,
     "falange": 1,
     "mj": 5
    },
@@ -7930,6 +8056,12 @@
      "Programa electoral del BNG de 2026, p. 22",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=52",
+     "Programa político del Frente Obrero de 2026, p. 52",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -7948,7 +8080,8 @@
     "salf": "Su contrato de 2026 solo admite visados con contrato previo y cupo anual votado en el Congreso, con moratoria total a países que no colaboren.",
     "d21": "Su programa del 29N propone un visado de búsqueda de empleo de 6 meses con cupo según vacantes y formar trabajadores en origen con contrato antes de viajar.",
     "adel": "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo.",
-    "bng": "Estimación: su programa del 29N defiende la regularización como vía contra la explotación y agilizar la homologación de títulos extranjeros; no trata la contratación en origen."
+    "bng": "Estimación: su programa del 29N defiende la regularización como vía contra la explotación y agilizar la homologación de títulos extranjeros; no trata la contratación en origen.",
+    "fo": "El programa sostiene que la capacidad de acoger inmigrantes está rebosada y propone derogar la contratación colectiva en sectores precarizados (p. 9)."
    }
   },
   {
@@ -7985,7 +8118,7 @@
     "existe": 3,
     "mes": 3,
     "adel": 4,
-    "falange": 2,
+    "falange": 1,
     "ie": 2
    },
    "est": [
@@ -8076,10 +8209,10 @@
      "2026-11"
     ],
     "falange": [
-     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=8",
-     "Programa electoral general de FE de las JONS para las generales de 2023, p. 8",
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=10",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 10",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "adel": [
      "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf#page=106",
@@ -8101,7 +8234,7 @@
     "upc": "Su manifiesto del 29N pide proteger a la infancia migrante no acompañada con una distribución solidaria de la acogida entre territorios.",
     "junts": "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería.",
     "ie": "Estimación: el contrato rechaza la «imposición de políticas migratorias contrarias a los intereses nacionales» desde la UE; no cita el reparto entre comunidades.",
-    "falange": "Estimación: el programa propone no abrir nuevos centros de menores migrantes no acompañados, clausurar los existentes y expulsarlos, lo contrario de repartirlos entre comunidades.",
+    "falange": "Estimación: su programa del 29N propone no abrir más centros de menores extranjeros, cerrar los existentes y expulsar a los menores que delincan.",
     "adel": "Su programa del 29N pide tutela automática y un pacto de Estado con financiación estatal y «reparto solidario entre comunidades» de los menores que llegan solos."
    }
   },
@@ -8136,6 +8269,8 @@
     "cha": 4,
     "mes": 4,
     "adel": 5,
+    "fo": 4,
+    "falange": 4,
     "mj": 4
    },
    "est": [
@@ -8148,7 +8283,9 @@
     "upc",
     "drago",
     "cha",
-    "mes"
+    "mes",
+    "fo",
+    "falange"
    ],
    "notes": {
     "psoe": "Su programa de 2023 propone universalizar la deducción por hijo a cargo, también para familias que hoy no pueden aplicarla en el IRPF."
@@ -8219,6 +8356,18 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 46",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=34",
+     "Programa político del Frente Obrero de 2026, p. 34",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -8232,7 +8381,9 @@
     "bildu": "EH Bildu propuso en el Parlamento Vasco una prestación universal de 150 euros al mes por hijo o hija hasta los 18 años.",
     "adel": "Su programa del 29N propone una prestación universal por crianza de 100 a 200 euros al mes por hijo hasta los 18 años.",
     "d21": "Su programa del 29N propone un Bono Crianza progresivo, «y más a quien más lo necesita»: la ayuda por hijo dependería de la situación de la familia.",
-    "comp": "Su programa del 29N propone una prestación universal por crianza de 200 euros al mes por hijo o hija."
+    "comp": "Su programa del 29N propone una prestación universal por crianza de 200 euros al mes por hijo o hija.",
+    "falange": "Estimación: su programa del 29N propone planes de natalidad con ayudas directas e incentivos fiscales a las familias, sobre todo numerosas; no detalla si dependerían de la renta.",
+    "fo": "Estimación: el programa propone planes de natalidad con ventajas fiscales y ayudas económicas a las familias, mayores para las numerosas."
    }
   },
   {
@@ -8265,6 +8416,7 @@
     "upl": 5,
     "soria": 5,
     "pav": 5,
+    "falange": 4,
     "mj": 4
    },
    "est": [
@@ -8342,6 +8494,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=26",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8355,7 +8513,8 @@
     "ccpc": "Su programa de 2026 defiende mantener la deducción del 60 % del IRPF en La Palma y extenderla a La Gomera y El Hierro para sostener la población.",
     "vox": "Su programa de 2026 propone una fiscalidad mínima y diferenciada, con bonificaciones y deducciones, en las zonas en riesgo de despoblación.",
     "adel": "Estimación: su programa del 29N pide «fiscalidad y servicios básicos garantizados» para los municipios granadinos en riesgo de despoblación; no detalla rebajas.",
-    "d21": "Estimación: su programa del 29N pide una estrategia europea para regiones escasamente pobladas, con incentivos fiscales específicos, inspirada en el modelo ártico."
+    "d21": "Estimación: su programa del 29N pide una estrategia europea para regiones escasamente pobladas, con incentivos fiscales específicos, inspirada en el modelo ártico.",
+    "falange": "Su programa del 29N propone exenciones de IRPF los cinco primeros años y rebajas de cotizaciones para los nuevos trabajadores de los sectores primario y secundario en zonas despobladas."
    }
   },
   {
@@ -8394,6 +8553,7 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
+    "fo": 4,
     "ph": 5,
     "mj": 4
    },
@@ -8411,6 +8571,7 @@
     "cha",
     "existe",
     "mes",
+    "fo",
     "mj"
    ],
    "src": {
@@ -8521,6 +8682,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 18",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=43",
+     "Programa político del Frente Obrero de 2026, p. 43",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -8541,7 +8708,8 @@
     "pacma": "Estimación: su programa del 29N pide más plazas en residencias públicas para mayores y enfermos crónicos; no habla de subir impuestos.",
     "pnv": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos.",
     "d21": "Estimación: su programa del 29N propone que el Estado asuma el 50 % de la financiación de la dependencia y, en impuestos, dice que no hace falta subirlos ni bajarlos.",
-    "mj": "Estimación: su programa del 29N fija como meta dejar a cero la lista de espera de la dependencia en 2030 y defiende un sistema fiscal más progresivo."
+    "mj": "Estimación: su programa del 29N fija como meta dejar a cero la lista de espera de la dependencia en 2030 y defiende un sistema fiscal más progresivo.",
+    "fo": "Estimación: el programa propone asegurar plazas públicas en residencias de mayores y más gasto en el sistema público de salud."
    }
   },
   {
@@ -8931,6 +9099,7 @@
     "soria": 5,
     "pav": 4,
     "fo": 4,
+    "falange": 4,
     "ie": 4,
     "ph": 4,
     "mj": 2
@@ -8950,6 +9119,7 @@
     "upl",
     "soria",
     "pav",
+    "falange",
     "mj"
    ],
    "notes": {
@@ -9065,6 +9235,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 58",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9085,7 +9261,8 @@
     "ie": "Defiende las tierras frente a las estructuras de renovables y pide fin de sus subvenciones.",
     "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
     "bng": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
-    "mj": "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas."
+    "mj": "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas.",
+    "falange": "Estimación: su programa del 29N propone frenar la «transición energética», con la nuclear como fuente principal y un canon para los municipios con grandes parques solares y eólicos."
    }
   },
   {
@@ -9126,6 +9303,8 @@
     "jmm": 2,
     "upl": 2,
     "soria": 2,
+    "fo": 1,
+    "falange": 1,
     "ie": 2,
     "mj": 4
    },
@@ -9150,6 +9329,8 @@
     "jmm",
     "upl",
     "soria",
+    "fo",
+    "falange",
     "ie",
     "mj"
    ],
@@ -9225,6 +9406,18 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15",
+     "Programa político del Frente Obrero de 2026, p. 15",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -9239,7 +9432,9 @@
     "ie": "Estimación: el contrato pide salir del Pacto Verde Europeo y rechaza las zonas de bajas emisiones; no cita la fecha de 2035.",
     "salf": "Su contrato de 2026 propone vetar en el Consejo el Pacto Verde, del que forma parte la prohibición europea de coches de combustión desde 2035.",
     "pnv": "Estimación: su programa del 29N pide ayudas estables a los vehículos electrificados y electrificar la movilidad; no se pronuncia sobre la fecha de 2035.",
-    "mj": "Estimación: su programa del 29N propone eliminar los combustibles fósiles y descarbonizar el transporte, sin mencionar la prohibición de 2035."
+    "mj": "Estimación: su programa del 29N propone eliminar los combustibles fósiles y descarbonizar el transporte, sin mencionar la prohibición de 2035.",
+    "falange": "Estimación: su programa del 29N propone frenar todo proyecto de «transición energética» y derogar las zonas de bajas emisiones (p. 55).",
+    "fo": "Estimación: el programa propone poner fin a la «transición ecológica» y a las políticas restrictivas de la UE."
    }
   },
   {
@@ -9273,7 +9468,9 @@
     "adel": 1,
     "jmm": 3,
     "upl": 3,
-    "soria": 1
+    "soria": 1,
+    "fo": 4,
+    "falange": 5
    },
    "est": [
     "pp",
@@ -9283,7 +9480,8 @@
     "junts",
     "jmm",
     "upl",
-    "soria"
+    "soria",
+    "fo"
    ],
    "src": {
     "psoe": [
@@ -9363,6 +9561,18 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=31",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
+     "Programa político del Frente Obrero de 2026, p. 38",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -9379,7 +9589,9 @@
     "bildu": "EH Bildu votó en contra de tramitar una ley para mantener el trasvase Tajo-Segura, rechazada por 171 votos frente a 170; con más motivo se opone a ampliar trasvases.",
     "adel": "Su programa del 29N propone una ley del ciclo del agua con freno al regadío intensivo y «ni trasvases ni compraventa de derechos de riego».",
     "comp": "Su programa del 29N quiere que los trasvases sean una medida excepcional, con acuerdo entre cuencas y respeto a los caudales ecológicos.",
-    "d21": "Estimación: su programa del 29N busca «más agua sin quitársela a nadie» con desalación, reutilización y riego inteligente; no propone nuevos trasvases."
+    "d21": "Estimación: su programa del 29N busca «más agua sin quitársela a nadie» con desalación, reutilización y riego inteligente; no propone nuevos trasvases.",
+    "falange": "Su programa del 29N propone un Plan Hidrológico Nacional que interconecte las cuencas.",
+    "fo": "Estimación: el programa propone planes hidrográficos para repartir el agua y acabar con la sequía de algunos territorios, y frenar el derribo de presas."
    }
   },
   {
@@ -9587,6 +9799,7 @@
     "jmm": 2,
     "upl": 2,
     "soria": 3,
+    "falange": 4,
     "ph": 5
    },
    "est": [
@@ -9604,7 +9817,8 @@
     "mes",
     "jmm",
     "upl",
-    "soria"
+    "soria",
+    "falange"
    ],
    "notes": {
     "pp": "Combina el impulso de los corredores ferroviarios con un plan de choque para las Cercanías, sin priorizar uno."
@@ -9717,6 +9931,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9737,7 +9957,8 @@
     "comp": "Estimación: su programa del 29N quiere «racionalizar» la alta velocidad liberalizada e invertir en mantenimiento, Cercanías y regionales.",
     "pacma": "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias».",
     "pnv": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi.",
-    "d21": "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente."
+    "d21": "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente.",
+    "falange": "Estimación: su programa del 29N conserva la alta velocidad solo entre puntos estratégicos y fomenta Cercanías y Media Distancia, con prioridad a las zonas rurales."
    }
   },
   {
@@ -9860,6 +10081,7 @@
     "soria": 4,
     "pav": 4,
     "pcte": 4,
+    "falange": 4,
     "mj": 4
    },
    "est": [
@@ -9873,6 +10095,7 @@
     "soria",
     "pav",
     "pcte",
+    "falange",
     "mj"
    ],
    "notes": {
@@ -9963,6 +10186,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 91",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=56",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9980,7 +10209,8 @@
     "existe": "Estimación: su programa de 2023 vincula el riesgo de incendios a la pérdida de silvicultura y ganadería extensiva en los montes.",
     "soria": "Estimación: su programa del 29N pide el «aprovechamiento de nuestros recursos forestales» y compensar a los municipios por sus montes.",
     "adel": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
-    "mj": "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales."
+    "mj": "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales.",
+    "falange": "Estimación: su programa del 29N propone un plan nacional de conservación y limpieza de montes para reducir los daños de los incendios."
    }
   },
   {
@@ -10605,6 +10835,7 @@
     "cha": 3,
     "mes": 3,
     "adel": 4,
+    "falange": 4,
     "ie": 4
    },
    "est": [
@@ -10624,6 +10855,7 @@
     "cha",
     "mes",
     "adel",
+    "falange",
     "ie"
    ],
    "notes": {
@@ -10677,6 +10909,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=19",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 19",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10689,7 +10927,8 @@
     "upc": "Propone abandonar el requisito de unanimidad en la UE en política exterior y de seguridad común y en política fiscal.",
     "ie": "Estimación: el contrato denuncia la pérdida de soberanía en la UE y defiende recuperarla; no cita el voto por unanimidad.",
     "comp": "Su programa del 29N propone superar la unanimidad en el Consejo de la UE en política exterior y fiscal.",
-    "d21": "Estimación: su programa del 29N quiere «una Europa más ágil en sus decisiones» y avanzar por métodos alternativos si no hay acuerdo; no cita la unanimidad."
+    "d21": "Estimación: su programa del 29N quiere «una Europa más ágil en sus decisiones» y avanzar por métodos alternativos si no hay acuerdo; no cita la unanimidad.",
+    "falange": "Estimación: su programa del 29N defiende salir de la UE de forma pactada y refundarla en torno a la soberanía de cada nación."
    }
   },
   {
@@ -12880,12 +13119,14 @@
     "bng": 5,
     "comp": 5,
     "cha": 4,
-    "mes": 5
+    "mes": 5,
+    "falange": 1
    },
    "est": [
     "salf",
     "d21",
-    "cha"
+    "cha",
+    "falange"
    ],
    "notes": {
     "psoe": "Sus diputados recurrieron ante el Constitucional la supresión del requisito de catalán en la sanidad balear."
@@ -12980,6 +13221,12 @@
      "Redacción Médica: el Parlamento balear elimina el requisito de catalán en la sanidad con el voto en contra de Unidas Podemos",
      "prensa",
      "2023-09-26"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=47",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 47",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12997,7 +13244,8 @@
     "upn": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
     "pnv": "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
     "junts": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña.",
-    "pod": "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo."
+    "pod": "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo.",
+    "falange": "Estimación: su programa del 29N quiere el español como lengua vehicular y limitar las lenguas regionales a sus propias asignaturas."
    }
   },
   {
@@ -13606,6 +13854,7 @@
     "d21": 5,
     "ccpc": 4,
     "comp": 4,
+    "fo": 4,
     "ie": 4,
     "mj": 4
    },
@@ -13614,6 +13863,7 @@
     "salf",
     "ccpc",
     "comp",
+    "fo",
     "ie",
     "mj"
    ],
@@ -13687,6 +13937,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 20",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18",
+     "Programa político del Frente Obrero de 2026, p. 18",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -13701,7 +13957,8 @@
     "ie": "Estimación: el contrato propone una auditoría independiente del gasto, cerrar empresas públicas con pérdidas y evaluar la calidad de las leyes; no fija suprimir lo ineficaz.",
     "vox": "Su programa del 29N pide una auditoría sistemática de todos los gastos no imprescindibles de las administraciones, susceptibles de supresión, con análisis públicos.",
     "pacma": "Su programa del 29N propone valorar la eficacia y eficiencia de cada partida de gasto e incorporar sus consecuencias a la gestión pública.",
-    "mj": "Estimación: su programa del 29N acompaña muchas medidas de indicadores verificables y evaluación, sin proponer suprimir las que fallen."
+    "mj": "Estimación: su programa del 29N acompaña muchas medidas de indicadores verificables y evaluación, sin proponer suprimir las que fallen.",
+    "fo": "Estimación: el programa propone una revisión exhaustiva y la supresión de subvenciones ideológicas y de entidades públicas ineficaces."
    }
   },
   {
@@ -13730,7 +13987,8 @@
     "upn": 3,
     "bng": 1,
     "comp": 1,
-    "adel": 1
+    "adel": 1,
+    "falange": 4
    },
    "est": [
     "vox",
@@ -13744,7 +14002,8 @@
     "upn",
     "bng",
     "comp",
-    "adel"
+    "adel",
+    "falange"
    ],
    "notes": {
     "psoe": "Su Gobierno hizo obligatoria la evaluación del desempeño con efectos en carrera, sueldo y continuidad en el puesto, sin despido."
@@ -13773,6 +14032,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 48",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13783,7 +14048,8 @@
     "pod": "Estimación: contraria al despido por bajo rendimiento en el empleo público.",
     "erc": "Estimación: ERC defiende la función pública y rechazaría despidos por rendimiento.",
     "salf": "Propone evaluaciones periódicas de desempeño de funcionarios: quien no cumpla deberá reciclarse o afrontar sanciones.",
-    "d21": "Estimación: su programa del 29N propone evaluar el desempeño de los empleados públicos e incentivar económicamente al que rinde; no habla de despido."
+    "d21": "Estimación: su programa del 29N propone evaluar el desempeño de los empleados públicos e incentivar económicamente al que rinde; no habla de despido.",
+    "falange": "Estimación: su programa del 29N propone evaluaciones periódicas del profesorado y acceso a los organismos públicos por méritos acreditados (p. 44)."
    }
   },
   {
@@ -13814,7 +14080,9 @@
     "cha": 4,
     "mes": 4,
     "adel": 4,
-    "pcte": 4
+    "pcte": 4,
+    "fo": 4,
+    "falange": 4
    },
    "est": [
     "salf",
@@ -13826,7 +14094,9 @@
     "comp",
     "cha",
     "mes",
-    "pcte"
+    "pcte",
+    "fo",
+    "falange"
    ],
    "notes": {
     "psoe": "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada."
@@ -13891,6 +14161,18 @@
      "Programa electoral de Adelante Andalucía de 2026 («Las 29 del 29N»), p. 36",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=50",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 50",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
+     "Programa político del Frente Obrero de 2026, p. 42",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -13903,7 +14185,9 @@
     "pcte": "Estimación: el programa de 2023 aspira a un sistema sanitario único, público y gratuito; no cita MUFACE.",
     "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
-    "adel": "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades."
+    "adel": "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades.",
+    "falange": "Estimación: su programa del 29N propone un único Sistema Nacional de Salud y acabar con la externalización y privatización de la sanidad.",
+    "fo": "Estimación: el programa propone centralizar el sistema nacional de salud y acabar con la externalización y privatización de la sanidad."
    }
   },
   {
@@ -14309,6 +14593,7 @@
     "upl": 5,
     "soria": 5,
     "pcte": 5,
+    "fo": 4,
     "falange": 4,
     "ie": 2,
     "mj": 4
@@ -14325,6 +14610,7 @@
     "jmm",
     "upl",
     "soria",
+    "fo",
     "ie",
     "mj"
    ],
@@ -14384,10 +14670,10 @@
      "2023-07"
     ],
     "falange": [
-     "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf#page=13",
-     "Programa electoral general de FE de las JONS para las generales de 2023, p. 13",
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=33",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 33",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=25",
@@ -14430,6 +14716,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 59",
      "programa",
      "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
+     "Programa político del Frente Obrero de 2026, p. 37",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -14442,14 +14734,15 @@
     "cha": "Pide al Gobierno central una ley de márgenes comerciales para que quienes producen reciban un precio que cubra sus costes de producción.",
     "upc": "Propone un índice de precios agroalimentarios y control de la cadena alimentaria y sus intermediarios para asegurar precios justos a los productores.",
     "pcte": "Propone precios mínimos garantizados a productores y máximos para consumidores, y eliminar los monopolios de distribución.",
-    "falange": "Propone regulación y control de precios para evitar abusos a los pequeños productores del sector primario.",
+    "falange": "Su programa del 29N propone regular y controlar los precios para evitar abusos a los pequeños productores.",
     "ie": "Estimación: el contrato exige derogar la Ley de la Cadena Alimentaria; la pregunta pide reforzar el control de márgenes.",
     "pp": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
     "bng": "Su programa de 2026 reforma la Ley de la Cadena Alimentaria para impedir vender por debajo de los costes de producción.",
     "pnv": "Su programa del 29N pide reforzar la Ley de la Cadena Alimentaria para garantizar precios que cubran los costes de producción.",
     "adel": "Su programa del 29N pide prohibir de forma efectiva la venta a pérdidas, precios justos en origen y vigilar los márgenes.",
     "comp": "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
-    "mj": "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes."
+    "mj": "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes.",
+    "fo": "Estimación: el programa culpa de la ruina del campo a los «intermediarios mafiosos y especuladores» y propone cooperativas para dar salida a la producción (p. 38)."
    }
   },
   {
@@ -14631,7 +14924,8 @@
     "upl": 5,
     "soria": 4,
     "pav": 5,
-    "fo": 4
+    "fo": 4,
+    "falange": 4
    },
    "est": [
     "salf",
@@ -14644,7 +14938,8 @@
     "upl",
     "soria",
     "pav",
-    "fo"
+    "fo",
+    "falange"
    ],
    "src": {
     "comp": [
@@ -14754,6 +15049,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 86",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14774,7 +15075,8 @@
     "pacma": "Su programa del 29N pide que la caza del lobo y del zorro se prohíba expresamente.",
     "upc": "Propone incluir el lobo ibérico en el Catálogo Español de Especies Amenazadas, lo que choca con su caza controlada.",
     "fo": "Estimación: el programa propone el control poblacional de la fauna como competencia del Estado, apoyado en cazadores locales para proteger explotaciones ganaderas.",
-    "adel": "Su programa del 29N pide que el lobo vuelva al Listado de Especies en Régimen de Protección Especial y un plan de recuperación."
+    "adel": "Su programa del 29N pide que el lobo vuelva al Listado de Especies en Régimen de Protección Especial y un plan de recuperación.",
+    "falange": "Estimación: su programa del 29N propone desregular la caza de especies con un crecimiento insostenible que desequilibran la agricultura y la ganadería."
    }
   },
   {
@@ -14815,6 +15117,7 @@
     "jmm": 2,
     "upl": 3,
     "soria": 5,
+    "fo": 2,
     "ph": 5,
     "mj": 4
    },
@@ -14835,7 +15138,8 @@
     "existe",
     "mes",
     "jmm",
-    "upl"
+    "upl",
+    "fo"
    ],
    "src": {
     "comp": [
@@ -14909,6 +15213,12 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 20",
      "programa",
      "2023-07"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=37",
+     "Programa político del Frente Obrero de 2026, p. 37",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -14924,7 +15234,8 @@
     "pacma": "Su programa del 29N pide frenar las autorizaciones de nuevas macrogranjas y la ampliación de las existentes.",
     "adel": "Su programa del 29N pide «ni una macrogranja»: su prohibición y la transición a la ganadería extensiva.",
     "ph": "Su programa de 2026 propone una moratoria inmediata a la construcción o ampliación de macrogranjas ganaderas intensivas.",
-    "existe": "Estimación: su programa de 2023 fomenta «la ganadería extensiva frente a las macrogranjas»; no pide prohibir las nuevas."
+    "existe": "Estimación: su programa de 2023 fomenta «la ganadería extensiva frente a las macrogranjas»; no pide prohibir las nuevas.",
+    "fo": "Estimación: el programa critica que se desmantelen granjas por presión de lobbies ecologistas para luego importar la carne."
    }
   },
   {
@@ -14954,6 +15265,7 @@
     "cha": 2,
     "mes": 2,
     "adel": 3,
+    "falange": 4,
     "mj": 2
    },
    "est": [
@@ -14967,6 +15279,7 @@
     "cha",
     "mes",
     "adel",
+    "falange",
     "mj"
    ],
    "notes": {
@@ -15026,6 +15339,12 @@
      "Programa electoral del BNG de 2026, p. 49",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15039,7 +15358,8 @@
     "pacma": "PACMA pide detener la sobrepesca y en el mismo programa se declara contraria a la pesca, lo que se opone a relajar las restricciones pesqueras.",
     "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
     "mj": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
-    "bng": "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo."
+    "bng": "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo.",
+    "falange": "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca."
    }
   },
   {
@@ -15081,6 +15401,7 @@
     "soria": 4,
     "pav": 5,
     "fo": 4,
+    "falange": 4,
     "mj": 3
    },
    "est": [
@@ -15104,7 +15425,8 @@
     "jmm",
     "upl",
     "soria",
-    "pav"
+    "pav",
+    "falange"
    ],
    "src": {
     "comp": [
@@ -15154,6 +15476,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 34",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15165,7 +15493,8 @@
     "pacma": "Su programa del 29N afirma que la caza no es una herramienta necesaria para la gestión del medio y propone prohibirla.",
     "adel": "Considera la caza uno de los grandes agentes de pérdida de biodiversidad, rechaza que mantenga a la población rural y busca una gestión sin necesidad cinegética.",
     "fo": "Defiende la caza como actividad regulada y esencial para los ecosistemas y propone que sea competencia del Estado, con apoyo de cazadores locales.",
-    "mj": "Su programa del 29N declara que sobre la caza deportiva conviven posiciones distintas en el partido y no propone cambios en su regulación."
+    "mj": "Su programa del 29N declara que sobre la caza deportiva conviven posiciones distintas en el partido y no propone cambios en su regulación.",
+    "falange": "Estimación: su programa del 29N propone desregular la caza para controlar especies que desequilibran el medio y las actividades agrarias."
    }
   },
   {
@@ -16260,7 +16589,9 @@
     "bildu": 3,
     "upn": 4,
     "bng": 3,
-    "comp": 4
+    "comp": 4,
+    "fo": 4,
+    "falange": 4
    },
    "est": [
     "salf",
@@ -16271,7 +16602,9 @@
     "bildu",
     "upn",
     "bng",
-    "comp"
+    "comp",
+    "fo",
+    "falange"
    ],
    "notes": {
     "vox": "Abascal rechazó prohibir las redes a los menores de 16 años: «son los padres los que tienen que decidir»."
@@ -16312,6 +16645,18 @@
      "Programa electoral de EAJ-PNV de 2026, p. 35",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 48",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=21",
+     "Programa político del Frente Obrero de 2026, p. 21",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -16321,7 +16666,9 @@
     "fa": "Pactó con el PSOE enmiendas para prohibir a los menores de 16 años las redes con contenidos dañinos para la infancia.",
     "pod": "Estimación: sin postura publicada sobre prohibir las redes a menores de 16 años.",
     "erc": "Estimación: posición intermedia sin propuesta conocida.",
-    "pnv": "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima."
+    "pnv": "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima.",
+    "falange": "Estimación: su programa del 29N propone prohibir los algoritmos de recomendación para menores e imponer control sobre las plataformas tecnológicas extranjeras.",
+    "fo": "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años."
    }
   },
   {
@@ -16359,7 +16706,8 @@
     "cha": 1,
     "mes": 1,
     "adel": 1,
-    "fo": 5
+    "fo": 5,
+    "falange": 4
    },
    "est": [
     "salf",
@@ -16371,7 +16719,8 @@
     "upc",
     "drago",
     "comp",
-    "mes"
+    "mes",
+    "falange"
    ],
    "src": {
     "comp": [
@@ -16469,6 +16818,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Lidera»",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16487,7 +16842,8 @@
     "bng": "Su programa de 2026 modifica la Ley de paridad para permitir más mujeres en las listas electorales.",
     "pnv": "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas.",
     "adel": "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos.",
-    "d21": "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas."
+    "d21": "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas.",
+    "falange": "Estimación: su programa del 29N se opone al feminismo y propone derogar las leyes «de género» y suprimir los privilegios concedidos a esos colectivos."
    }
   },
   {
@@ -16520,7 +16876,9 @@
     "comp": 1,
     "cha": 1,
     "mes": 1,
-    "adel": 1
+    "adel": 1,
+    "fo": 5,
+    "falange": 4
    },
    "est": [
     "d21",
@@ -16530,7 +16888,8 @@
     "comp",
     "cha",
     "mes",
-    "adel"
+    "adel",
+    "falange"
    ],
    "notes": {
     "psoe": "Votó contra las dos proposiciones de 2026 para prohibir el velo integral (Vox en febrero y Junts en abril) por considerarlas discriminatorias."
@@ -16601,6 +16960,18 @@
      "Contrato electoral simplificado de SALF para las generales de 2026, p. 19",
      "programa",
      "2026-11"
+    ],
+    "falange": [
+     "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=38",
+     "Programa de FE de las JONS para las generales del 29N de 2026, p. 38",
+     "programa",
+     "2026-11"
+    ],
+    "fo": [
+     "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
+     "Programa político del Frente Obrero de 2026, p. 53",
+     "programa",
+     "2026-10"
     ]
    },
    "why": {
@@ -16614,7 +16985,9 @@
     "upn": "Votó a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público, que no prosperó.",
     "pod": "Podemos votó en contra de prohibir el velo integral en los espacios públicos y criticó la iniciativa en el debate.",
     "pp": "Su programa de 2026 prohíbe el burka y el niqab en los espacios públicos.",
-    "salf": "Su contrato de 2026 prohíbe el burka y el niqab en el espacio público, como en Francia y otros países europeos."
+    "salf": "Su contrato de 2026 prohíbe el burka y el niqab en el espacio público, como en Francia y otros países europeos.",
+    "falange": "Estimación: su programa del 29N propone limitar la actividad de las confesiones ajenas y no permitir el culto público de creencias contrarias a la cultura española (p. 52).",
+    "fo": "El programa propone prohibir el hiyab en lugares y puestos de trabajo públicos y ayudar a las mujeres que quieran dejar la vestimenta islámica."
    }
   }
  ]
