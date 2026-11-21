@@ -84,7 +84,7 @@ if (!body.includes('href="prensa/"')) throw new Error("No se pudieron añadir lo
 const csp = [
   "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline'",
   "font-src 'self'", `img-src 'self' data: blob:${STATS_CODE ? ` https://${STATS_CODE}.goatcounter.com` : ""}`, "connect-src 'self'",
-  "base-uri 'self'", "form-action 'none'", "object-src 'none'"
+  "base-uri 'self'", "form-action 'self'", "object-src 'none'"
 ].join("; ");
 // index usa rutas relativas (funciona en cualquier carpeta); el 404 usa la URL completa porque se sirve en rutas arbitrarias
 const head = (title, desc, extra = "", B = "") => `<!doctype html>

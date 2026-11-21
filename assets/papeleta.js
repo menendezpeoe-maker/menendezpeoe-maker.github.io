@@ -3015,6 +3015,14 @@ async function boot() {
     if (S && !PROV[S.prov]) { S.prov = provQ; save(); }
     if (!tema) try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
   }
+  // Rediseño 30N: comparador libre desde /comparar/ (/?cmp_a=<id>&cmp_b=<id>): abre «Compara dos candidaturas» con esa pareja
+  const ca = qs.get("cmp_a"), cb = qs.get("cmp_b");
+  if (ca && cb && P[ca] && P[cb] && ca !== cb && !tema) {
+    try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
+    CMP.a = ca; CMP.b = cb; go("home", { focus: false }); initCmpx();
+    const sec = $("#cmpx"); if (sec) { if (window.openFoldFor) window.openFoldFor(sec.querySelector("h2")); sec.scrollIntoView({ block: "start" }); const h = sec.querySelector("h2"); h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+    return;
+  }
   if (tema && TOPICS[tema]) {
     try { history.replaceState(null, "", location.pathname); } catch { /* sin historial */ }
     if (!hasSaved()) { startTopic(tema, false); return; }

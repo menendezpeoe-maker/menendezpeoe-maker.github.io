@@ -68,6 +68,19 @@ console.log("Tarjeta de resultado: estilo claro y oscuro");
   ok(px < 300, "con el estilo oscuro el fondo es oscuro (el claro suma unos 700)");
   await ctx.close();
 }
+// Rediseño 30N: comparador libre en /comparar/ (formulario sin JavaScript) que abre «Compara dos candidaturas» con la pareja elegida
+{
+  const SP = process.env.BASE ? process.env.BASE : "http://127.0.0.1:8766/";
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }); const page = await ctx.newPage();
+  page.on("pageerror", (e) => errors.push(`libre: ${e}`));
+  await page.goto(new URL("comparar/", SP).href);
+  const n = await page.locator(".cmp-free select[name=cmp_a] option").count();
+  await page.selectOption(".cmp-free select[name=cmp_a]", "erc"); await page.selectOption(".cmp-free select[name=cmp_b]", "vox");
+  await Promise.all([page.waitForNavigation(), page.click(".cmp-free button[type=submit]")]); await page.waitForSelector("#cx-a");
+  const v = await page.evaluate(() => [document.querySelector("#cx-a").value, document.querySelector("#cx-b").value, location.search]);
+  ok(n >= 30 && v[0] === "erc" && v[1] === "vox" && v[2] === "", `/comparar/: comparador libre con ${n} candidaturas abre ERC frente a Vox y limpia la URL`);
+  await ctx.close();
+}
 await browser.close();
 if (errors.length) { console.log("Errores de consola:", errors.slice(0, 5)); fails.push("hay errores de consola"); } else console.log("  Errores de consola: ninguno");
 if (fails.length) { console.log(`\n  FALLOS (${fails.length}):`); fails.forEach((f) => console.log("   -", f)); process.exit(1); }

@@ -316,6 +316,8 @@ ${cta(`¿Estás más cerca de ${esc(A.ab)} o de ${esc(Bp.ab)}?`)}
     crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Comparar partidos, dos a dos</h1>
   <p class="lede">Comparativas neutrales entre candidaturas cercanas o rivales, con las posturas que usa ${MARCA}. En el test puedes comparar cualquier pareja con tus propias respuestas.</p></header>
+<form class="cmp-free" action="/" method="get" aria-labelledby="cmp-free-h"><h2 class="h2" id="cmp-free-h">Compara cualquier pareja</h2><p class="small muted">Elige dos de las ${live.length} candidaturas y verás en qué coinciden y en qué se diferencian, pregunta a pregunta. No depende de tus respuestas.</p><div class="cmp-free-row"><label class="pg-f">Candidatura A<select name="cmp_a">${live.map((pid) => `<option value="${pid}"${pid === "psoe" ? " selected" : ""}>${esc(P[pid].name)}</option>`).join("")}</select></label><label class="pg-f">Candidatura B<select name="cmp_b">${live.map((pid) => `<option value="${pid}"${pid === "pp" ? " selected" : ""}>${esc(P[pid].name)}</option>`).join("")}</select></label><button class="btn btn-primary" type="submit">Comparar</button></div></form>
+<h2 class="h2">Comparativas destacadas</h2>
 <ul class="sp-cards">${PAIRS.map(([a, b]) => `<li><a href="${pairPath(a, b)}">${logo(a)}${logo(b)}<span><b>${esc(P[a].ab)} y ${esc(P[b].ab)}</b><span class="small muted">${esc(P[a].name)} · ${esc(P[b].name)}</span></span></a></li>`).join("")}</ul>
 ${cta("Compárate tú con cualquier candidatura")}`
   });

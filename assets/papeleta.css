@@ -1363,3 +1363,9 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 .ex-cards b { font-size: 16.5px; line-height: 1.2; }
 @media (min-width: 900px) { .ex-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .ex-cards b { font-size: 15.5px; } .ex-ico { width: 30px; height: 30px; padding: 5px; } }
+/* Rediseño 30N · /comparar/: comparador libre (formulario sin JavaScript que abre el comparador de la portada) */
+.cmp-free { display: grid; gap: 10px; padding: 16px 18px; margin: 8px 0 22px; background: var(--sheet); border: 1.5px solid var(--ink); border-radius: 16px; }
+.cmp-free .h2 { margin: 0; }
+.cmp-free-row { display: grid; gap: 10px; }
+.cmp-free .btn { min-height: 48px; }
+@media (min-width: 760px) { .cmp-free-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; } }
