@@ -91,7 +91,7 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
       return [...document.querySelectorAll(".db-kind, .db-rec, .db-item .pg-tag, .db-btns a, .db-item dt, .db-item .small")].map((e) => { const a = lum(getComputedStyle(e).color), b = lum(bg(e)); return { c: e.className, r: (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05) }; }).filter((x) => x.r < 4.5).map((x) => `${x.c} ${x.r.toFixed(2)}`);
     });
     ok(!low.length, `contraste ≥ 4,5:1 en etiquetas, botones y fuentes${low.length ? ": " + [...new Set(low)].join(", ") : ""}`);
-    await page.click(".head-nav a[href='/']"); ok(new URL(page.url()).pathname === "/", "el menú lleva al test");
+    await page.click(".head-nav a.head-cta"); ok(new URL(page.url()).pathname === "/", "el menú lleva al test");
   }
   await ctx.close();
 }

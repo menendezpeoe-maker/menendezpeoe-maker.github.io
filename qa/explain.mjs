@@ -166,7 +166,7 @@ console.log("Mapa interactivo");
 console.log("Metodología y datos");
 {
   const { ctx, page } = await open(state(asParty("psoe")));
-  await page.click(".head-nav [data-go='method']");
+  await (await page.locator(".head-nav [data-go='method']").isVisible() ? page.click(".head-nav [data-go='method']") : page.click(".head-menu > summary").then(() => page.click(".hm-panel [data-go='method']")));
   const t = await page.$eval("#v-method", (e) => e.textContent); // las secciones van en pestañas: textContent incluye las no visibles
   const nsrc = bank.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
   const ndir = bank.questions.reduce((n, q) => n + Object.keys(q.src || {}).filter((pid) => !q.est.includes(pid)).length, 0);

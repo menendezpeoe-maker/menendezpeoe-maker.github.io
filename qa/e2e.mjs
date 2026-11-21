@@ -128,7 +128,7 @@ const posOf = (q, pid) => bank.questions.find((x) => x.id === q).pos[pid];
   await page.waitForSelector("#v-method:not([hidden]) table", { state: "attached" });
   ok(!(await overflow(page)), "metodología sin scroll horizontal");
   await page.screenshot({ path: OUT + "m-method.png", fullPage: true });
-  await page.click('.head-nav [data-go="explorer"]');
+  await (await page.locator(".head-nav [data-go='explorer']").isVisible() ? page.click(".head-nav [data-go='explorer']") : page.click(".head-menu > summary").then(() => page.click(".hm-panel [data-go='explorer']")));
   await page.click("#qf-btn"); // la lista pregunta a pregunta viene plegada
   await page.fill("#ex-q", "lobo");
   await page.waitForTimeout(300);

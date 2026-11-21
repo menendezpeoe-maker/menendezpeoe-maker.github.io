@@ -59,7 +59,7 @@ console.log("Visitas y pasos del test");
   ok(clean(hits), "nunca se envían respuestas, provincia, sexo, partido ni el enlace con respuestas");
   await page.click("#r-support a.btn").catch(() => {}); await page.waitForTimeout(300);
   ok(paths(hits).includes("donar-apple-pay"), "un clic en donar se cuenta, sin datos del test");
-  await page.click(".head-nav [data-go='method']");
+  await (await page.locator(".head-nav [data-go='method']").isVisible() ? page.click(".head-nav [data-go='method']") : page.click(".head-menu > summary").then(() => page.click(".hm-panel [data-go='method']")));
   ok(/GoatCounter/.test(await page.innerText("#m-priv")) && !/Sin cookies, analítica/.test(await page.innerText("#m-priv")), "el aviso de privacidad explica el contador");
   await ctx.close();
 }

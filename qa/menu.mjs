@@ -16,26 +16,36 @@ const pd = JSON.parse(fs.readFileSync(new URL("../data/partidos.json", import.me
 const live = pd.order.filter((pid) => !pd.parties.find((x) => x.id === pid)?.out);
 const browser = await chromium.launch();
 const navOf = (p) => p.evaluate(() => [...document.querySelectorAll(".head-nav .navlink")].filter((e) => e.offsetParent && getComputedStyle(e).display !== "none").map((e) => ({ t: e.innerText.trim(), h: Math.round(e.getBoundingClientRect().height), r: Math.round(e.getBoundingClientRect().right) })));
+const menuOk = async (p, w) => {
+  const cta = await p.locator(".head-cta").first().boundingBox(), sm = await p.locator(".head-menu > summary").boundingBox();
+  if (!cta || !sm || sm.x + sm.width > w || cta.height < 40 || sm.height < 40) return false;
+  await p.click(".head-menu > summary"); const n = await p.locator(".hm-panel a:visible, .hm-panel button:visible").count(), r = await p.locator(".hm-panel").boundingBox();
+  await p.keyboard.press("Escape"); const closed = !(await p.locator(".hm-panel").isVisible());
+  return n >= 14 && r && r.x >= 0 && r.x + r.width <= w && closed;
+};
 const overflow = (p) => p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
 for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   console.log(`${w} × ${h}`);
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, ...(w < 500 ? { hasTouch: true, isMobile: true } : {}) });
   const page = await ctx.newPage();
   page.on("pageerror", (e) => errors.push(`${w}: ${e}`));
-  const want = w < 500 ? ["Test", "Partidos", "Programas", "Temas", "Debates", "Comparar", "Mi circunscripción", "Cómo funciona"] : ["Test", "Partidos", "Programas", "Temas", "Debates", "Comparar propuestas", "Mi circunscripción", "Cómo funciona"];
+  // Rediseño 30N: en el móvil (≤ 900 px) solo «Hacer el test» y «Menú»; en escritorio, las secciones principales
+  const want = w <= 900 ? [] : ["Partidos", "Programas", "Temas", "Comparar", "Mi provincia", "Cómo funciona"];
   await page.goto(BASE); await page.waitForSelector("#start-btn:not([disabled])");
   const a = await navOf(page);
-  ok(want.every((t) => a.some((x) => x.t === t)) && a.every((x) => x.h >= 34 && x.r <= w), `portada: menú con ${a.map((x) => x.t).join(" · ")}`);
+  ok(want.every((t) => a.some((x) => x.t === t)) && a.length === want.length && a.every((x) => x.h >= 34 && x.r <= w), `portada: menú con ${a.map((x) => x.t).join(" · ") || "solo botones"}`);
+  ok(await menuOk(page, w), "portada: «Hacer el test» y «Menú» visibles; el menú agrupado se abre y se cierra");
   const homeCount = (await (await page.request.get(SP)).text()).match(/<b>(\d+) de (\d+)<\/b> candidaturas lo han publicado/)?.slice(1, 3).join("/");  // portada publicada (dist o web real)
   const sb = await page.locator("#start-alt").boundingBox();
   if (w < 500) ok(sb && sb.y + sb.height <= h, `portada: «Elegir otra versión» sigue en la primera pantalla (${Math.round(sb.y + sb.height)} px)`);
   ok(!(await overflow(page)), "portada sin desplazamiento horizontal");
   await page.goto(PART);
   const b = await navOf(page);
-  ok(want.every((t) => b.some((x) => x.t === t)) && b.every((x) => x.h >= 34 && x.r <= w), `interior: mismo menú (${b.map((x) => x.t).join(" · ")})`);
+  ok(want.every((t) => b.some((x) => x.t === t)) && b.length === want.length && b.every((x) => x.h >= 34 && x.r <= w), `interior: mismo menú (${b.map((x) => x.t).join(" · ") || "solo botones"})`);
+  ok(await menuOk(page, w), "interior: «Hacer el test» y «Menú» visibles; el menú agrupado se abre y se cierra");
   ok(JSON.stringify(a.map((x) => x.t)) === JSON.stringify(b.map((x) => x.t)), "portada e interiores: mismas secciones en el mismo orden");
   // Sección actual marcada (aria-current, en amarillo como en la portada) y nada más resaltado (14 nov: «Test» salía en blanco)
-  for (const [u, want] of [["comparar/", "Comparar"], ["partidos/pp/", "Partidos"], ["temas/vivienda-y-urbanismo/", "Temas"], ["tests/vivienda/", "Temas"], ["provincias/bizkaia/", "Mi circunscripción"], ["programas/", "Programas"], ["debates/", "Debates"], ["votar/", null]]) {
+  for (const [u, want] of [["comparar/", "Comparar"], ["partidos/pp/", "Partidos"], ["temas/vivienda-y-urbanismo/", "Temas"], ["tests/vivienda/", "Temas"], ["provincias/bizkaia/", "Mi circunscripción"], ["programas/", "Programas"], ["debates/", null], ["votar/", null]]) {
     await page.goto(new URL(u, SP).href);
     const hi = await page.evaluate(() => [...document.querySelectorAll(".head-nav .navlink")].filter((a) => a.getAttribute("aria-current") || !/rgba\(0, 0, 0, 0\)|transparent/.test(getComputedStyle(a).backgroundColor)).map((a) => [a.innerText.trim(), a.getAttribute("aria-current")]));
     ok(want ? hi.length === 1 && hi[0][1] === "page" && hi[0][0].startsWith(want.split(" ")[0]) : hi.length === 0, `/${u}: resaltado ${hi.length ? hi.map((x) => x[0]).join(", ") : "ninguno"}`);

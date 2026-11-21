@@ -3030,3 +3030,9 @@ async function boot() {
 globalThis.__T29N = Object.freeze({ model: (st) => { const m = computeModel(st); return { prov: m.prov.map((x) => ({ pid: x.pid, pct: x.pct, score: x.score, n: x.n })), rel: m.rel.checks.map((c) => c.txt) }; } });
 boot();
 })();
+// Rediseño 30N: el menú agrupado se cierra al elegir una sección, al pulsar fuera o con Escape
+(() => {
+  const close = (focus) => { const m = document.querySelector(".head-menu[open]"); if (!m) return; m.open = false; if (focus) m.querySelector("summary").focus(); };
+  document.addEventListener("click", (e) => { const m = document.querySelector(".head-menu[open]"); if (m && (!m.contains(e.target) || e.target.closest(".hm-panel a, .hm-panel button"))) close(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(true); });
+})();

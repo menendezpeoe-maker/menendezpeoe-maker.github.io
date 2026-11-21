@@ -28,7 +28,7 @@ console.log("Historial del navegador");
   await page.click("[data-go='method']:visible >> nth=0"); ok((await view(page)) === "method", "ir a «Cómo funciona»");
   await page.goBack(); ok((await view(page)) === "home", "Atrás vuelve al inicio (antes salía de la web)");
   await page.goForward(); ok((await view(page)) === "method", "Adelante vuelve a «Cómo funciona»");
-  await page.click(".head-nav [data-go='explorer']"); await page.goBack(); ok((await view(page)) === "method", "Atrás desde «Posturas» vuelve a «Cómo funciona»");
+  await (await page.locator(".head-nav [data-go='explorer']").isVisible() ? page.click(".head-nav [data-go='explorer']") : page.click(".head-menu > summary").then(() => page.click(".hm-panel [data-go='explorer']"))); await page.goBack(); ok((await view(page)) === "method", "Atrás desde «Posturas» vuelve a «Cómo funciona»");
   await page.goBack();
   await page.click("#start-btn"); await page.waitForSelector("#v-quiz:not([hidden])");
   for (let i = 0; i < 3; i++) { await page.click(".scale label:nth-child(4)", { force: true }).catch(() => page.keyboard.press("4")); await page.waitForTimeout(450); }
@@ -114,7 +114,7 @@ if (process.env.AXE !== "0") {
     await page.evaluate(() => document.querySelectorAll("#v-results details").forEach((d) => { d.open = true; d.dispatchEvent(new Event("toggle")); }));
     res.full = await run("resultado completo abierto");
     await page.click("[data-go='method']:visible >> nth=0"); res.method = await run("cómo funciona");
-    await page.click(".head-nav [data-go='explorer']"); res.explorer = await run("posturas");
+    await (await page.locator(".head-nav [data-go='explorer']").isVisible() ? page.click(".head-nav [data-go='explorer']") : page.click(".head-menu > summary").then(() => page.click(".hm-panel [data-go='explorer']"))); res.explorer = await run("posturas");
     // Páginas estáticas: solo cuando BASE es la raíz de dist/ o la web real
     if (BASE.endsWith("/")) for (const p of ["calendario/", "partidos/pp/", "debates/", "programas/", "insertar/"]) { await page.goto(BASE + p); res[p] = await run(p); }
     const any = Object.values(res).flat();

@@ -16,3 +16,9 @@
   const openHash = () => { const id = decodeURIComponent(location.hash.slice(1)); const t = id && document.getElementById(id); if (!t) return; const d = t.closest("details"); if (d && !d.open) { d.open = true; t.scrollIntoView(); } else if (t.tagName === "DETAILS" && !t.open) { t.open = true; t.scrollIntoView(); } };
   addEventListener("hashchange", openHash); openHash();
 })();
+// Rediseño 30N: el menú agrupado se cierra al elegir una sección, al pulsar fuera o con Escape
+(() => {
+  const close = (focus) => { const m = document.querySelector(".head-menu[open]"); if (!m) return; m.open = false; if (focus) m.querySelector("summary").focus(); };
+  document.addEventListener("click", (e) => { const m = document.querySelector(".head-menu[open]"); if (m && (!m.contains(e.target) || e.target.closest(".hm-panel a, .hm-panel button"))) close(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(true); });
+})();
