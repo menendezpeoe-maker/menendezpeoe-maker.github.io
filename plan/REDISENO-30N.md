@@ -9,6 +9,7 @@ Decisiones del titular (21 nov): aplicar las mejoras de la auditoría (project-f
 - Portada: «Explora la política española» (tira con las 30 candidaturas y 8 accesos con icono) antes de elegir versión del test.
 - /comparar/: comparador libre (formulario GET a `/?cmp_a=&cmp_b=`, abre «Compara dos candidaturas»); CSP `form-action 'self'`. Prueba en `qa/comparar.mjs`.
 - Resultado: radar tú frente a la primera candidatura en «Tu perfil en siete dimensiones» (abierto en escritorio).
+- Fichas de partido: índice de la página (Propuestas · Siete dimensiones · Posturas por tema · ¿Cuánto coincides?) y propuestas a partir de la 7.ª plegadas; sin el recuadro del test de arriba (el test ya está en la cabecera).
 - Sin desborde lateral a 320 px en fichas de partido y comparativas (pista de rejilla `minmax(0, 1fr)`).
 
 ## Cómo publicarlo el 30N
@@ -16,7 +17,5 @@ Decisiones del titular (21 nov): aplicar las mejoras de la auditoría (project-f
 2. `node build.mjs && node publish.mjs`, `node qa/run.mjs todas`, capturas 390/1280 claro y oscuro (regla 9), publicar en `main`.
 
 ## Pendiente (siguiente paso)
-- Textos de la portada y títulos con «29N» tras las elecciones (P1): cabecera del héroe, «Test político del 29N», FAQ.
-- Imágenes de marca (`qa/redes.mjs`, `qa/badge.mjs`, `qa/brand/banner.html`) con «Mirada Política».
-- Fichas de partido más cortas (resumen arriba con radar; propuestas plegables).
-- Resultado en pestañas (Ranking · Tu perfil · Pregunta a pregunta · Método).
+- El 30N, con P1: textos de la portada y títulos con «29N» (héroe «Test político del 29N», FAQ, descripciones) y, a la vez, las imágenes con la marca (`qa/redes.mjs`: `top()` dice «Test 29N»; `qa/badge.mjs`; `qa/brand/banner.html`; og.png), porque sus textos también hablan del 29N.
+- Resultado en pestañas: NO hecho. Cambia la estructura del resultado aprobada por el titular el 14 nov (tarjetas «Explora tu resultado»); regla 5: no revertir sin pedírselo. Proponérselo con maqueta antes.
