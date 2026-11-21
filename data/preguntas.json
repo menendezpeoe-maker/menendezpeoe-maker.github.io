@@ -3247,7 +3247,7 @@
     "d21": 3,
     "erc": 4,
     "junts": 4,
-    "pnv": 4,
+    "pnv": 3,
     "bildu": 5,
     "upn": 2,
     "gbai": 5,
@@ -3442,6 +3442,12 @@
      "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+     "Programa electoral de EAJ-PNV de 2026, p. 7",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3470,7 +3476,8 @@
     "soria": "Estimación: su programa del 29N pide un programa nacional de construcción de viviendas, sobre todo en el medio rural; no dice si serán públicas en alquiler.",
     "d21": "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo.",
     "ie": "Estimación: su contrato favorece la propiedad frente al alquiler y rechaza el intervencionismo estatal en vivienda.",
-    "junts": "Estimación: su programa del 29N pide ampliar el parque público de vivienda con fondos del Estado transferidos a la Generalitat; no propone que lo construya el Estado."
+    "junts": "Estimación: su programa del 29N pide ampliar el parque público de vivienda con fondos del Estado transferidos a la Generalitat; no propone que lo construya el Estado.",
+    "pnv": "Estimación: su programa del 29N quiere más oferta agilizando trámites y movilizando vivienda vacía (p. 7) y que el alquiler protegido no sea la única opción (p. 8); no habla de construir directamente."
    }
   },
   {
@@ -4271,6 +4278,12 @@
      "Programa del Partido Humanista para las elecciones generales de 2026, p. 25",
      "programa",
      "2026-11"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=23",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 23",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4289,7 +4302,8 @@
     "fo": "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal.",
     "gbai": "Estimación: sus bases del 29N reclaman el reconocimiento de la realidad plurinacional del Estado y de Navarra como sujeto político; no proponen expresamente un Estado federal.",
     "upc": "Estimación: su manifiesto del 29N une a la izquierda «nacionalista, soberanista, federal y confederal» y pide reconocer a Canarias como sujeto político; no propone un modelo de Estado concreto.",
-    "ph": "Su programa del 29N defiende «una organización federativa» en la que el poder vuelva a la base social, desde el municipio hacia arriba."
+    "ph": "Su programa del 29N defiende «una organización federativa» en la que el poder vuelva a la base social, desde el municipio hacia arriba.",
+    "bildu": "Estimación: su programa del 29N pide reconocer el carácter plurinacional del Estado y el derecho a decidir del pueblo vasco; no propone un Estado federal."
    }
   },
   {
@@ -7403,10 +7417,10 @@
      "2023-02-22"
     ],
     "pnv": [
-     "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=46",
-     "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=32",
+     "Programa electoral de EAJ-PNV de 2026, p. 32",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "upn": [
      "https://www.redaccionmedica.com/autonomias/20141127/el-parlamento-aprueba-una-ley-para-regular-los-colectivos-de-usuarios-cannabis/333119_0.html",
@@ -7452,7 +7466,7 @@
     "fa": "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial.",
     "pod": "Su programa del 29N propone despenalizar el cannabis y legalizar su uso medicinal y recreativo, con clubes sociales regulados.",
     "erc": "ERC presentó en el Congreso una ley de regulación integral del cannabis, también recreativo.",
-    "pnv": "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
+    "pnv": "Su programa del 29N pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
     "upn": "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
     "bildu": "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
     "comp": "Compromís propone una regulación no penal de todas las drogas, que incluye el cannabis.",
@@ -15714,6 +15728,7 @@
     "d21": 3,
     "erc": 3,
     "junts": 3,
+    "pnv": 4,
     "bng": 4,
     "comp": 2,
     "cha": 2,
@@ -15728,6 +15743,7 @@
     "d21",
     "erc",
     "junts",
+    "pnv",
     "bng",
     "comp",
     "cha",
@@ -15805,6 +15821,12 @@
      "Programa electoral de ERC de 2026, p. 33",
      "programa",
      "2026-11"
+    ],
+    "pnv": [
+     "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
+     "Programa electoral de EAJ-PNV de 2026, p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15819,7 +15841,8 @@
     "cha": "Estimación: CHA concurrió en Sumar en 2023 y su programa se compromete a cumplir la política pesquera comunitaria para acabar con la sobrepesca en el Mediterráneo.",
     "mj": "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
     "bng": "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo.",
-    "falange": "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca."
+    "falange": "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca.",
+    "pnv": "Estimación: su programa del 29N pide revisar las restricciones europeas a la pesca de fondo en el Atlántico con datos científicos actualizados y el conocimiento de los arrantzales."
    }
   },
   {
@@ -17192,6 +17215,12 @@
      "Programa político del Frente Obrero de 2026, p. 21",
      "programa",
      "2026-10"
+    ],
+    "bildu": [
+     "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=21",
+     "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -17203,7 +17232,8 @@
     "erc": "Estimación: posición intermedia sin propuesta conocida.",
     "pnv": "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima.",
     "falange": "Estimación: su programa del 29N propone prohibir los algoritmos de recomendación para menores e imponer control sobre las plataformas tecnológicas extranjeras.",
-    "fo": "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años."
+    "fo": "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años.",
+    "bildu": "Estimación: su programa del 29N propone proteger a los menores en los entornos digitales con diseño ético y sin recomendación algorítmica por defecto; no propone prohibir el acceso."
    }
   },
   {

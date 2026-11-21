@@ -146,7 +146,7 @@ export const QUESTIONS = [
   text: "El Estado debería construir directamente un gran parque de vivienda pública en alquiler.",
   short: "Gran parque público de alquiler",
   ctx: "La vivienda social supone en torno al 2,5 % del total en España, frente a cerca del 9 % de media en la UE. En 2025 el Gobierno creó la empresa pública Casa 47 para promover y gestionar alquiler asequible. Otros partidos prefieren la colaboración público-privada: ceder suelo público a promotores a cambio de precios limitados durante años, para movilizar más inversión con menos gasto público.",
-  pos: "5 2 2 5 5 1 4 3~ 4 4~ 4~ 5 2~ 5~ 5 4 5 5~ 5 5 4 5 5 4~ 4~ 4~ 0 5~ 5 5 2~ 5 5" },
+  pos: "5 2 2 5 5 1 4 3~ 4 4~ 3~ 5 2~ 5~ 5 4 5 5~ 5 5 4 5 5 4~ 4~ 4~ 0 5~ 5 5 2~ 5 5" },
 { id: "B09", area: "viv", prio: 3, type: "likert", dim: null, dir: 0, lr: 0,
   text: "El Estado debería avalar parte de la hipoteca de los jóvenes para que puedan comprar su primera vivienda.",
   short: "Avales públicos a hipotecas de jóvenes",
@@ -585,7 +585,7 @@ export const QUESTIONS = [
   text: "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
   short: "Relajar los límites a la pesca en el Mediterráneo",
   ctx: "Para recuperar especies sobreexplotadas, la UE ha recortado con fuerza los días de pesca de arrastre en el Mediterráneo occidental desde 2020, y muchos barcos pasan buena parte del año amarrados. El sector y varias comunidades piden flexibilizar los límites para sobrevivir; los científicos y las organizaciones ecologistas advierten de que, sin esas restricciones, no habrá peces que pescar en el futuro.",
-  pos: "4 4 5 2 2~ 4~ 1 3~ 3~ 3~ 0 0 0 0 4~ 0 0 0 2~ 2~ 0 2~ 3~ 0 0 0 0 0 0 4~ 0 0 2~" },
+  pos: "4 4 5 2 2~ 4~ 1 3~ 3~ 3~ 4~ 0 0 0 4~ 0 0 0 2~ 2~ 0 2~ 3~ 0 0 0 0 0 0 4~ 0 0 2~" },
 { id: "K07", area: "rur", prio: 3, type: "likert", dim: "amb", dir: 1, lr: 1,
   text: "La caza debería protegerse por ley como una actividad necesaria para la gestión del medio rural.",
   short: "Proteger la caza por ley",
@@ -1193,6 +1193,7 @@ export const SOURCES = {
     d21: ["https://mi.democracia21.es/programa#bloque-resuelve", "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»", "programa", "2026-11"],
     ie: ["https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18", "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18", "programa", "2026-11"],
     junts: ["https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17", "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17", "programa", "2026-11"],
+    pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7", "Programa electoral de EAJ-PNV de 2026, p. 7", "programa", "2026-11"],
   },
   B09: {
     ccpc: ["https://primerocanarias.com/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV-comprimido.pdf#page=11", "Programa electoral de Coalición Canaria y Primero Canarias de 2026 («Defiende Canarias»), p. 11", "programa", "2026-11"],
@@ -1275,6 +1276,7 @@ export const SOURCES = {
     gbai: ["https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14", "Bases políticas de Geroa Bai para las generales del 29N, p. 14", "programa", "2026-11"],
     upc: ["https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=2", "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 2", "programa", "2026-11"],
     ph: ["https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=25", "Programa del Partido Humanista para las elecciones generales de 2026, p. 25", "programa", "2026-11"],
+    bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=23", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 23", "programa", "2026-11"],
   },
   C05: {
     psoe: ["https://theobjective.com/espana/politica/2023-11-09/consulte-aqui-acuerdo-integro-psoe-junts/", "The Objective, acuerdo de investidura PSOE-Junts, 09/11/2023", "prensa", "2023-11-09"],
@@ -1576,7 +1578,7 @@ export const SOURCES = {
     fa: ["https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf#page=92", "Programa electoral de Sumar de 2023, p. 92", "programa", "2023-07"],
     pod: ["https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf#page=133", "Programa electoral de Podemos para las generales del 29N de 2026 («Así de básico: Paz, casa y trabajo»), p. 133 (medida 429)", "programa", "2026-11"],
     erc: ["https://theobjective.com/espana/2023-02-22/psoe-pp-y-vox-vuelven-a-rechazar-la-regulacion-del-cannabis/", "The Objective, votación de la regulación del cannabis, 22/02/2023", "parlamento", "2023-02-22"],
-    pnv: ["https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=46", "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023", "programa", "2023-07"],
+    pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=32", "Programa electoral de EAJ-PNV de 2026, p. 32", "programa", "2026-11"],
     upn: ["https://www.redaccionmedica.com/autonomias/20141127/el-parlamento-aprueba-una-ley-para-regular-los-colectivos-de-usuarios-cannabis/333119_0.html", "Redacción Médica: el Parlamento de Navarra aprueba la ley de colectivos de usuarios de cannabis", "parlamento", "2014-11-27"],
     bildu: ["https://es.ara.cat/sociedad/congreso-rechaza-abrir-debate-regulacion-cultivo-cannabis_1_4154446.html", "Ara: el Congreso rechaza tramitar la ley de Más País para regular el cannabis", "parlamento", "2021-10-19"],
     comp: ["https://imparables.compromis.net/docs/programa_complet_VAL.pdf#page=25", "Programa de Compromís de 2019 (Corts y generales), p. 25", "programa", "2019-04"],
@@ -2464,6 +2466,7 @@ export const SOURCES = {
     bng: ["https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=49", "Programa electoral del BNG de 2026, p. 49", "programa", "2026-11"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=34", "Programa de FE de las JONS para las generales del 29N de 2026, p. 34", "programa", "2026-11"],
     erc: ["https://esquerrarepublicana.cat/documents/e2026-programa.pdf#page=33", "Programa electoral de ERC de 2026, p. 33", "programa", "2026-11"],
+    pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18", "Programa electoral de EAJ-PNV de 2026, p. 18", "programa", "2026-11"],
   },
   K07: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=46", "Programa electoral de Compromís-Front Valencià para el 29N, p. 46", "programa", "2026-11"],
@@ -2605,6 +2608,7 @@ export const SOURCES = {
     pnv: ["https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=35", "Programa electoral de EAJ-PNV de 2026, p. 35", "programa", "2026-11"],
     falange: ["https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=48", "Programa de FE de las JONS para las generales del 29N de 2026, p. 48", "programa", "2026-11"],
     fo: ["https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=21", "Programa político del Frente Obrero de 2026, p. 21", "programa", "2026-10"],
+    bildu: ["https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=21", "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 21", "programa", "2026-11"],
   },
   L08: {
     comp: ["https://frontvalencia.net/programa-compromis-front-valencia.pdf#page=40", "Programa electoral de Compromís-Front Valencià para el 29N, p. 40", "programa", "2026-11"],
@@ -3014,6 +3018,7 @@ export const JUSTIF = {
     d21: "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo.",
     ie: "Estimación: su contrato favorece la propiedad frente al alquiler y rechaza el intervencionismo estatal en vivienda.",
     junts: "Estimación: su programa del 29N pide ampliar el parque público de vivienda con fondos del Estado transferidos a la Generalitat; no propone que lo construya el Estado.",
+    pnv: "Estimación: su programa del 29N quiere más oferta agilizando trámites y movilizando vivienda vacía (p. 7) y que el alquiler protegido no sea la única opción (p. 8); no habla de construir directamente.",
   },
   B09: {
     ccpc: "Estimación: su programa del 29N reclama incentivos fiscales estatales a la primera vivienda para jóvenes y familias con ingresos medios y bajos; no habla de avales.",
@@ -3098,6 +3103,7 @@ export const JUSTIF = {
     gbai: "Estimación: sus bases del 29N reclaman el reconocimiento de la realidad plurinacional del Estado y de Navarra como sujeto político; no proponen expresamente un Estado federal.",
     upc: "Estimación: su manifiesto del 29N une a la izquierda «nacionalista, soberanista, federal y confederal» y pide reconocer a Canarias como sujeto político; no propone un modelo de Estado concreto.",
     ph: "Su programa del 29N defiende «una organización federativa» en la que el poder vuelva a la base social, desde el municipio hacia arriba.",
+    bildu: "Estimación: su programa del 29N pide reconocer el carácter plurinacional del Estado y el derecho a decidir del pueblo vasco; no propone un Estado federal.",
   },
   C05: {
     fa: "Su programa del 29N plantea un Estado federal y plurinacional que incluya el derecho a decidir mediante referéndum para resolver la cuestión territorial.",
@@ -3421,7 +3427,7 @@ export const JUSTIF = {
     fa: "Propone regular íntegramente el cannabis con un modelo de asociaciones de autoconsumo sin ánimo de lucro, no de venta comercial.",
     pod: "Su programa del 29N propone despenalizar el cannabis y legalizar su uso medicinal y recreativo, con clubes sociales regulados.",
     erc: "ERC presentó en el Congreso una ley de regulación integral del cannabis, también recreativo.",
-    pnv: "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
+    pnv: "Su programa del 29N pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
     upn: "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
     bildu: "EH Bildu apoyó tramitar una ley para regular el cultivo, consumo y venta de cannabis.",
     comp: "Compromís propone una regulación no penal de todas las drogas, que incluye el cannabis.",
@@ -4323,6 +4329,7 @@ export const JUSTIF = {
     mj: "Estimación: su programa del 29N propone desarrollar la Ley de Restauración de la Naturaleza para recuperar ecosistemas terrestres y marinos.",
     bng: "Estimación: su programa del 29N pide que la pesca artesanal quede exenta de TAC y cuotas y repartir las cuotas según la capacidad del sector; no trata el Mediterráneo.",
     falange: "Estimación: su programa del 29N critica las directivas de Bruselas sobre la pesca (p. 33) y propone un plan de desregulación de la caza y la pesca.",
+    pnv: "Estimación: su programa del 29N pide revisar las restricciones europeas a la pesca de fondo en el Atlántico con datos científicos actualizados y el conocimiento de los arrantzales.",
   },
   K07: {
     comp: "Estimación: su programa del 29N propone prohibir la caza con perros e incluir a los perros de caza en la ley de bienestar animal.",
@@ -4467,6 +4474,7 @@ export const JUSTIF = {
     pnv: "Estimación: su programa del 29N pide más obligaciones a las plataformas para proteger a la infancia y verificar la edad; no fija una edad mínima.",
     falange: "Estimación: su programa del 29N propone prohibir los algoritmos de recomendación para menores e imponer control sobre las plataformas tecnológicas extranjeras.",
     fo: "Estimación: el programa sostiene que el acceso a determinadas tecnologías debe limitarse a los menores de dieciséis años.",
+    bildu: "Estimación: su programa del 29N propone proteger a los menores en los entornos digitales con diseño ético y sin recomendación algorítmica por defecto; no propone prohibir el acceso.",
   },
   L08: {
     comp: "Estimación: su programa del 29N defiende una representación equilibrada de mujeres y hombres; no menciona las cuotas en listas ni en consejos.",
