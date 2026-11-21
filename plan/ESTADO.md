@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 21 nov 2026 (09:47) · Revisión diaria de programas y debates
+- **Programas (a):** ninguno nuevo; siguen sin programa del 29N UPN, CHA, Drago, Ara Més y PCTE (buscados por S2 esta madrugada; sin novedades).
+- **Posturas (b):** no se toca la cola; los bloques 11 (ERC, Vox, PP) y 13 (Bildu, PNV) son de las pasadas programadas de hoy (14:23 y 21:17), para no chocar con ellas.
+- **Barrido n.º 2 (c):** ya hecho (ESTADO-HISTORICO).
+- **Debates (d):** el debate de Huesca de Aragón TV (20 nov) pasa a «emitido» con el vídeo de Aragón Play (1 h 17 min, `completa`, igual que el de Teruel). Sin cambios comprobables en los próximos (RTVE 23 nov, À Punt 24, Zaragoza 25, Radio Galega). Siguen en la cola (sin grabación accesible desde la nube): TVG, SER Andalucía, SER vivienda y Las Palmas (YouTube pide iniciar sesión para leer la duración). Nuevo en la cola: ciclo de entrevistas de Aragón TV y debate a cuatro del 26 (sigue «propuesta»). Secciones: solo /debates/ y sitemap.
+
 ## 21 nov 2026 (S2, madrugada) · Último cambio antes del 24: publicación del estado completo de `fuente`
 - **Estado de partida:** `main` estaba en «Publicar fuente 4a01d76d» (Podemos); `fuente` llevaba además el bloque 12 (Geroa Bai, Soria ¡Ya!, Teruel Existe, UPC, PH, IE) y Junts (programa del 29N y 40 posturas). Esta tanda los publica tal cual, sin cambios de datos nuevos (secciones afectadas ya barridas por los hilos de revisión; `node qa/barrido.mjs` sin avisos).
 - **Programas tardíos:** búsqueda en prensa y webs de UPN, CHA, Drago, MES y PCTE (los 5 que siguen sin programa del 29N): nada verificable. UPN concurre en coalición con el PP y su programa conjunto aún no consta; el único PDF de CHA es el autonómico de febrero de 2026.
