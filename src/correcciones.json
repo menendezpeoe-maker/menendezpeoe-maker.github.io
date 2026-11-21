@@ -16,6 +16,38 @@
   ]
  },
  {
+  "fecha": "2026-11-21",
+  "id": "H07",
+  "partido": "pp",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Pide priorizar las necesidades de los ciudadanos y auditar, reducir y redirigir la cooperación al desarrollo.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=57",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 57",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-21",
+  "id": "J06",
+  "partido": "pp",
+  "de": 3,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N mantiene las oposiciones como vía única de acceso y promete preservar la estabilidad de los funcionarios; no plantea despidos por rendimiento.",
+  "fuente": [
+   "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
+   "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-20",
   "id": "A01",
   "partido": "falange",

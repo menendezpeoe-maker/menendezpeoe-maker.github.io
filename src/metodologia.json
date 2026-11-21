@@ -199,15 +199,15 @@
    },
    {
     "pid": "d21",
-    "n": 63
+    "n": 65
    },
    {
     "pid": "pp",
-    "n": 55
+    "n": 53
    },
    {
     "pid": "fo",
-    "n": 31
+    "n": 32
    },
    {
     "pid": "falange",
@@ -240,10 +240,6 @@
    {
     "pid": "pcte",
     "n": 2
-   },
-   {
-    "pid": "vox",
-    "n": 1
    },
    {
     "pid": "pod",
@@ -289,7 +285,7 @@
   {
    "pid": "pp",
    "conocidas": 107,
-   "estimadas": 11,
+   "estimadas": 13,
    "conFuente": 99
   },
   {
