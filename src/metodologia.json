@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-20",
- "datos": "2026-11-20",
+ "generado": "2026-11-21",
+ "datos": "2026-11-21",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -142,7 +142,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 90
+    "pct": 91
    },
    {
     "pid": "upc",
@@ -166,7 +166,7 @@
     "pid": "gbai",
     "prov": "navarra",
     "primero": true,
-    "pct": 99
+    "pct": 100
    },
    {
     "pid": "soria",
@@ -178,13 +178,13 @@
     "pid": "ph",
     "prov": "madrid",
     "primero": true,
-    "pct": 92
+    "pct": 100
    },
    {
     "pid": "ie",
     "prov": "madrid",
     "primero": true,
-    "pct": 80
+    "pct": 88
    }
   ]
  },
@@ -203,19 +203,23 @@
    },
    {
     "pid": "pp",
-    "n": 57
+    "n": 55
    },
    {
     "pid": "fo",
-    "n": 34
+    "n": 31
    },
    {
     "pid": "falange",
-    "n": 28
+    "n": 27
    },
    {
     "pid": "mj",
-    "n": 23
+    "n": 21
+   },
+   {
+    "pid": "ph",
+    "n": 9
    },
    {
     "pid": "pacma",
@@ -230,15 +234,11 @@
     "n": 4
    },
    {
-    "pid": "ph",
-    "n": 2
+    "pid": "ie",
+    "n": 3
    },
    {
     "pid": "pcte",
-    "n": 2
-   },
-   {
-    "pid": "pod",
     "n": 2
    },
    {
@@ -246,7 +246,7 @@
     "n": 1
    },
    {
-    "pid": "ie",
+    "pid": "pod",
     "n": 1
    }
   ],
@@ -324,9 +324,9 @@
   },
   {
    "pid": "junts",
-   "conocidas": 104,
-   "estimadas": 69,
-   "conFuente": 36
+   "conocidas": 105,
+   "estimadas": 65,
+   "conFuente": 52
   },
   {
    "pid": "bildu",
@@ -414,15 +414,15 @@
   },
   {
    "pid": "existe",
-   "conocidas": 52,
-   "estimadas": 46,
-   "conFuente": 18
+   "conocidas": 53,
+   "estimadas": 47,
+   "conFuente": 19
   },
   {
    "pid": "upc",
    "conocidas": 80,
    "estimadas": 41,
-   "conFuente": 42
+   "conFuente": 46
   },
   {
    "pid": "drago",
@@ -438,27 +438,27 @@
   },
   {
    "pid": "gbai",
-   "conocidas": 72,
-   "estimadas": 68,
-   "conFuente": 7
+   "conocidas": 73,
+   "estimadas": 69,
+   "conFuente": 13
   },
   {
    "pid": "soria",
    "conocidas": 25,
    "estimadas": 23,
-   "conFuente": 7
+   "conFuente": 9
   },
   {
    "pid": "ph",
-   "conocidas": 34,
-   "estimadas": 9,
-   "conFuente": 34
+   "conocidas": 48,
+   "estimadas": 21,
+   "conFuente": 48
   },
   {
    "pid": "ie",
-   "conocidas": 25,
-   "estimadas": 11,
-   "conFuente": 25
+   "conocidas": 38,
+   "estimadas": 23,
+   "conFuente": 38
   }
  ]
 }
