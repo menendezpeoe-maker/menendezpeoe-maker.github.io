@@ -1,6 +1,6 @@
 {
  "version": "2.0.0",
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "dims": [
   {
    "id": "eco",
@@ -242,10 +242,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
-     "Congreso, votación nominal del 10/09/2025 de las enmiendas de totalidad al proyecto de ley de jornada (exp. 121/000058)",
-     "parlamento",
-     "2025-09-10"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=88",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 88",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion010/VOT_20250910213533.pdf",
@@ -322,7 +322,7 @@
     "fa": "Su programa del 29N propone implantar de inmediato las 37,5 horas en 2026 y avanzar hacia una jornada máxima de 32 horas sin reducción salarial.",
     "pod": "Su programa del 29N propone bajar la jornada a 35 horas y llegar a 30 durante la legislatura, sin reducir los salarios.",
     "erc": "Su programa de 2026 reduce por ley la jornada máxima a 37,5 horas semanales sin rebaja salarial, modificando el artículo 34 del Estatuto.",
-    "junts": "Mantuvo su enmienda a la totalidad, que se aprobó y tumbó la ley de reducción de jornada.",
+    "junts": "Su programa del 29N recoge su «oposición a la imposición de la jornada laboral de 37,5 horas».",
     "pnv": "Votó contra los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
     "bildu": "Su programa del 29N propone reducir la jornada a 32 horas o cuatro días sin rebaja salarial, con una transición de hasta tres años para las pymes.",
     "upn": "Votó a favor de los vetos que tumbaron la ley de reducción de la jornada a 37,5 horas.",
@@ -376,7 +376,7 @@
     "fo": 4,
     "falange": 2,
     "ie": 2,
-    "ph": 4,
+    "ph": 5,
     "mj": 5
    },
    "est": [
@@ -387,8 +387,7 @@
     "existe",
     "mes",
     "fo",
-    "ie",
-    "ph"
+    "ie"
    ],
    "src": {
     "comp": [
@@ -452,10 +451,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
-     "The Objective, votación en el Congreso del 26/06/2025",
-     "parlamento",
-     "2025-06-26"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 68",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://theobjective.com/espana/politica/2025-06-26/pp-vox-junts-bajada-impuestos/",
@@ -500,10 +499,10 @@
      "2019-05"
     ],
     "upc": [
-     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=15",
-     "Programa electoral de Sumar para el 23J de 2023, p. 15",
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=4",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 4",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pcte": [
      "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=13",
@@ -512,10 +511,10 @@
      "2023-07"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
-     "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=29",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 29",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
@@ -534,6 +533,12 @@
      "Programa político del Frente Obrero de 2026, p. 18",
      "programa",
      "2026-10"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=11",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -550,16 +555,18 @@
     "upn": "UPN prioriza reducir impuestos y deflactar el IRPF.",
     "adel": "Su programa del 29N pide reformar la senda de estabilidad para que no obligue a recortar servicios públicos y una reforma fiscal progresiva.",
     "cha": "Propone recuperar la presión fiscal perdida para mantener los ingresos públicos que sostienen las políticas públicas y su función redistributiva.",
-    "upc": "Propone una profunda reforma fiscal para cerrar la brecha de ingresos con la media europea y que contribuyan más grandes empresas, patrimonios y rentas altas.",
+    "upc": "Su manifiesto del 29N defiende servicios públicos con financiación suficiente (p. 3) y una reforma fiscal progresiva en la que paguen más grandes empresas y patrimonios.",
     "pcte": "Propone ampliar plantillas, evitar cierres de servicios y exigir más recursos para sanidad, educación y servicios sociales públicos.",
-    "ph": "Estimación: el programa dice que sanidad y educación no admiten recortes «por ninguna razón» y critica bajar impuestos al capital mientras se rebaja el gasto social.",
+    "ph": "Su programa del 29N sube el gasto en sanidad, educación, vivienda y protección social y lo financia con más impuestos a rentas altas, grandes fortunas y finanzas (pp. 29–30).",
     "ie": "Estimación: el contrato propone un «tijeretazo» con reducción drástica del gasto y critica pagar «impuestos, impuestos y más impuestos»; no plantea ampliar servicios.",
     "falange": "Propone una «drástica rebaja fiscal» optimizando los servicios públicos para evitar gastos injustificados, sin recortarlos.",
     "pp": "Su programa de 2026 propone bajar el IRPF a rentas medias y bajas, familias y jóvenes, y un IVA del 0 % en alimentos básicos.",
     "erc": "Su programa de 2026 sube el IRPF a las ganancias de capital y mantiene los impuestos a grandes fortunas, banca y energéticas.",
     "vox": "Su programa de 2026 propone una rebaja masiva de impuestos (IRPF, IVA y Sociedades) compensada con control del déficit y recorte del gasto superfluo.",
     "fo": "Estimación: el programa propone subir el IRPF a las rentas altas y el impuesto de sociedades a las grandes empresas (p. 19) y más gasto en sanidad pública (p. 42).",
-    "pod": "Su programa del 29N propone subir impuestos a rentas altas, grandes empresas y fortunas y derogar las reglas de austeridad que limitan los servicios públicos (medida 62)."
+    "pod": "Su programa del 29N propone subir impuestos a rentas altas, grandes empresas y fortunas y derogar las reglas de austeridad que limitan los servicios públicos (medida 62).",
+    "gbai": "Estimación: sus bases del 29N se comprometen a defender el Estado del bienestar y los servicios públicos «de los recortes que se avecinan»; no hablan de impuestos.",
+    "junts": "Su programa del 29N propone «reducir la presión fiscal»: deflactar el IRPF, bajar sus primeros tramos y eliminar sucesiones y donaciones."
    }
   },
   {
@@ -765,7 +772,8 @@
     "cha": 1,
     "existe": 2,
     "mes": 2,
-    "adel": 1
+    "adel": 1,
+    "ie": 4
    },
    "est": [
     "d21",
@@ -777,7 +785,8 @@
     "ccpc",
     "drago",
     "existe",
-    "mes"
+    "mes",
+    "ie"
    ],
    "src": {
     "ccpc": [
@@ -869,6 +878,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 60",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=15",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 15",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -886,7 +901,8 @@
     "upc": "Pide que las reglas fiscales no impongan reducir deuda y déficit a corto plazo y rechaza los límites del 3 % y el 60 %, sin fundamento económico.",
     "bng": "Estimación: su programa del 29N pide elevar el gasto en protección social, como mínimo, al gasto medio de la UE; no trata la deuda.",
     "pnv": "Estimación: su programa del 29N pide revisar la estabilidad presupuestaria para dar más margen de inversión y «reglas de gasto más flexibles».",
-    "adel": "Su programa del 29N pide reformar la senda de estabilidad: «las reglas de gasto no pueden obligar a recortar la sanidad o la educación»."
+    "adel": "Su programa del 29N pide reformar la senda de estabilidad: «las reglas de gasto no pueden obligar a recortar la sanidad o la educación».",
+    "ie": "Estimación: su contrato propone un «tijeretazo» con una reducción drástica del gasto político y administrativo y critica la deuda pública (p. 13)."
    }
   },
   {
@@ -1024,10 +1040,10 @@
      "2019-05"
     ],
     "upc": [
-     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=15",
-     "Programa electoral de Sumar para el 23J de 2023, p. 15",
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pcte": [
      "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=11",
@@ -1098,7 +1114,7 @@
     "ccpc": "Defiende la sostenibilidad del sistema de pensiones con financiación vía Presupuestos Generales del Estado y pensiones actualizadas según el coste de la vida.",
     "comp": "Su programa del 29N propone eliminar el tope de la base máxima de cotización y devolver la edad de jubilación a los 65 años.",
     "cha": "Propone financiar las pensiones públicas con impuestos a la banca y otros actores, y desechar la desindexación y el factor de sostenibilidad.",
-    "upc": "Mantiene la actualización de pensiones con el IPC y refuerza el sistema público con más ingresos, cotizantes y bases de cotización.",
+    "upc": "Su manifiesto del 29N defiende pensiones públicas dignas, garantizadas y revalorizadas conforme al coste de la vida, con una reforma fiscal progresiva (p. 4).",
     "pcte": "Se opone firmemente a retrasar la edad de jubilación y defiende adelantarla, con inclusión completa en los Presupuestos.",
     "ph": "Pide ajustar las pensiones al IPC, afirma que el sistema público es viable y critica retrasar la edad de jubilación.",
     "bng": "Su programa de 2026 propone sostener las pensiones con cargo a los presupuestos y a los impuestos que gravan la riqueza.",
@@ -1130,7 +1146,7 @@
     "salf": 5,
     "d21": 5,
     "erc": 3,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 1,
     "upn": 4,
@@ -1145,7 +1161,6 @@
     "fa",
     "pod",
     "salf",
-    "junts",
     "bildu",
     "upn",
     "bng",
@@ -1196,6 +1211,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 34",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=69",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 69",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1207,7 +1228,8 @@
     "erc": "Su programa de 2026 pide una simplificación administrativa real durante el crecimiento de las pymes, sin rebajar garantías.",
     "pnv": "Su programa del 29N propone eliminar barreras regulatorias al crecimiento de las pymes.",
     "d21": "Su programa del 29N propone sustituir los saltos regulatorios al superar umbrales de facturación o plantilla por una transición gradual «en rampa».",
-    "mj": "Estimación: su programa del 29N propone adaptar la normativa al tamaño de las empresas para evitar cargas excesivas a las pequeñas, sin comprometer estándares; no aborda el umbral de 50."
+    "mj": "Estimación: su programa del 29N propone adaptar la normativa al tamaño de las empresas para evitar cargas excesivas a las pequeñas, sin comprometer estándares; no aborda el umbral de 50.",
+    "junts": "Su programa del 29N propone «revisar los umbrales legales que penalizan el crecimiento de las pymes»."
    }
   },
   {
@@ -1236,7 +1258,8 @@
     "upn": 4,
     "bng": 2,
     "comp": 2,
-    "falange": 4
+    "falange": 4,
+    "ie": 4
    },
    "est": [
     "pp",
@@ -1250,7 +1273,8 @@
     "upn",
     "bng",
     "comp",
-    "falange"
+    "falange",
+    "ie"
    ],
    "notes": {
     "vox": "Vox defiende el uso del efectivo, aunque su programa no pide expresamente suprimir el límite de 1.000 euros."
@@ -1279,6 +1303,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 18",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1288,7 +1318,8 @@
     "pod": "Estimación: contraria a eliminar el límite por su prioridad en la lucha contra el fraude fiscal.",
     "erc": "Estimación: ERC, que prioriza la lucha contra el fraude fiscal, no apoyaría eliminar el límite.",
     "salf": "Su contrato de 2026 deroga el tope de 1.000 euros y declara el efectivo derecho constitucional, sin límite de importe para pagar y cobrar.",
-    "falange": "Estimación: su programa del 29N propone proteger el dinero en efectivo como infraestructura de seguridad nacional frente al euro digital."
+    "falange": "Estimación: su programa del 29N propone proteger el dinero en efectivo como infraestructura de seguridad nacional frente al euro digital.",
+    "ie": "Estimación: su contrato rechaza el «control social» a través del euro digital; no habla del límite al efectivo."
    }
   },
   {
@@ -1390,10 +1421,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=63",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=70",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 70",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=6",
@@ -1442,6 +1473,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
      "programa",
      "2026-11"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=11",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1453,7 +1490,7 @@
     "fa": "Su programa del 29N fija por ley un suelo del salario mínimo en el 60 % del salario medio neto, con subidas progresivas.",
     "pod": "Su programa del 29N propone subir el salario mínimo a 1.800 euros en la legislatura y fijar por ley que nunca baje del 75 % del salario mediano.",
     "erc": "Su programa de 2026 propone subir el salario mínimo hasta el 60 % del salario medio bruto.",
-    "junts": "Su programa de 2023 considera insuficiente el salario mínimo de 1.080 euros y propone uno catalán más alto.",
+    "junts": "Su programa del 29N pide un salario mínimo catalán que avance hacia el 60 % del salario medio, con diálogo social y apoyo a las pequeñas empresas.",
     "bildu": "Su programa del 29N pide un salario mínimo propio de cada comunidad, con el estatal como mínimo, y fijar su suficiencia según la Carta Social Europea.",
     "bng": "Su programa de 2026 sube el salario mínimo hasta el 60 % del salario medio y prohíbe compensarlo o absorberlo con otros complementos.",
     "upc": "Su manifiesto del 29N defiende subir el salario mínimo y rechaza que se elimine el papel del Estado en su actualización.",
@@ -1461,7 +1498,8 @@
     "fo": "Estimación: el programa propone un aumento general de los salarios en relación con el coste de la vida, lo que va contra frenar las subidas del salario mínimo.",
     "pnv": "Su programa de 2026 reclama un salario mínimo propio para Euskadi, adaptado al coste de vida y siempre por encima del estatal.",
     "adel": "Su programa del 29N propone indexar por ley los salarios a la inflación, también el salario mínimo.",
-    "d21": "Estimación: su programa del 29N encarga el SMI a un órgano técnico que pondere la productividad, con la meta de no bajar de 2/3 de la mediana salarial."
+    "d21": "Estimación: su programa del 29N encarga el SMI a un órgano técnico que pondere la productividad, con la meta de no bajar de 2/3 de la mediana salarial.",
+    "gbai": "Estimación: sus bases del 29N reconocen como avance importante el aumento del salario mínimo; no proponen nuevas subidas concretas."
    }
   },
   {
@@ -1501,7 +1539,7 @@
     "pcte": 1,
     "fo": 2,
     "falange": 1,
-    "ph": 2
+    "ph": 1
    },
    "est": [
     "vox",
@@ -1566,10 +1604,10 @@
      "2026-11"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=12",
-     "Programa electoral del Partido Humanista, elecciones generales 2023, p. 12",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 7",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pcte": [
      "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=5",
@@ -1598,7 +1636,7 @@
     "pod": "Belarra pidió elevar el control público de Telefónica con un 10 % en manos de la SEPI, no vender participaciones.",
     "erc": "Estimación: sin postura conocida de ERC sobre vender participaciones públicas.",
     "falange": "Su programa del 29N propone nacionalizar o que el Estado participe directamente en todas las industrias declaradas estratégicas; no plantea vender participaciones.",
-    "ph": "Estimación: el programa afirma que la propiedad de los medios de producción «debe ser social» y propone banca pública; no trata las participaciones públicas.",
+    "ph": "Estimación: su programa del 29N propone crear una banca pública a partir de las entidades con participación estatal; no se refiere a Telefónica o Indra.",
     "pcte": "Estimación: el programa de 2019 pide nacionalizar los sectores energético, bancario, de seguros y de transporte; no trata la venta de participaciones públicas.",
     "fo": "Estimación: el programa propone la nacionalización de los sectores estratégicos y critica su privatización, lo que se opone a vender participaciones públicas.",
     "adel": "Su programa del 29N pide presencia pública en empresas de energía, farmacia, alimentación y telecomunicaciones."
@@ -1624,7 +1662,7 @@
     "salf": 5,
     "d21": 5,
     "erc": 1,
-    "junts": 3,
+    "junts": 5,
     "pnv": 2,
     "bildu": 1,
     "upn": 4,
@@ -1642,7 +1680,6 @@
    },
    "est": [
     "d21",
-    "junts",
     "pnv",
     "bildu",
     "upn",
@@ -1742,6 +1779,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 29",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=68",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 68",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -1759,7 +1802,8 @@
     "upc": "Propone recuperar el impuesto de sucesiones en toda España con un mínimo estatal que las comunidades no puedan rebajar.",
     "salf": "Su contrato del 29N suprime Sucesiones y Donaciones: «Heredar la casa de tus padres no es un hecho imponible».",
     "fo": "Propone centralizar sucesiones y suprimir bonificaciones; solo eliminarlo para las rentas bajas, no para todas las herencias entre padres e hijos.",
-    "falange": "Estimación: su programa del 29N propone revisar el impuesto de sucesiones con criterios de progresividad según cada contribuyente, no eliminarlo entre padres e hijos."
+    "falange": "Estimación: su programa del 29N propone revisar el impuesto de sucesiones con criterios de progresividad según cada contribuyente, no eliminarlo entre padres e hijos.",
+    "junts": "Su programa del 29N propone eliminar el impuesto de sucesiones y donaciones."
    }
   },
   {
@@ -2088,10 +2132,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.publico.es/politica/congreso/derechas-tumban-prorroga-alquileres.html",
-     "Público, Las derechas tumban la prórroga de alquileres, 28/04/2026",
-     "parlamento",
-     "2026-04-28"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=16",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 16",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
@@ -2130,10 +2174,10 @@
      "2019-05"
     ],
     "upc": [
-     "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=81",
-     "Programa electoral de Sumar para el 23J de 2023, p. 81",
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=3",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pcte": [
      "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=14",
@@ -2148,10 +2192,10 @@
      "2026-11"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=14",
-     "Programa electoral del Partido Humanista de 2023, p. 14",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=8",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 8",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
@@ -2200,17 +2244,17 @@
     "pod": "Su programa del 29N prioriza regular: bajar por ley un 40 % los alquileres, prohibir comprar casas que no sean para vivir (medida 3) y ampliar el parque público.",
     "salf": "Su contrato del 29N apuesta por construir: licencia automática en 15 días y vivienda industrializada en suelo público.",
     "erc": "Su programa de 2026 reclama competencias de alquiler para la Generalitat, un 1,5 % del PIB para vivienda y los pisos de la Sareb.",
-    "junts": "Votó en contra del decreto de prórroga de alquileres y pidió bonificaciones a los propietarios y más vivienda pública.",
+    "junts": "Su programa del 29N prioriza aumentar la oferta: estimular la obra nueva y la rehabilitación y movilizar suelo, además de ampliar el parque público.",
     "pnv": "Su programa del 29N combina más oferta (agilizar trámites urbanísticos, movilizar vacías) con regular el alquiler de temporada y turístico: «más oferta y reglas claras».",
     "bildu": "Su programa del 29N propone intervenir el mercado, regular los precios y prohibir la compra especulativa.",
     "bng": "Su programa de 2026 destina el 3 % de los Presupuestos a un parque público de alquiler permanente y topa los alquileres.",
     "ccpc": "Su programa de 2026 plantea un fondo estatal de ocho años para vivienda pública y asequible y agilizar la vivienda protegida.",
     "adel": "Su programa del 29N pide limitar el alquiler al 20 % del salario y llevar el parque público en alquiler al 9 %.",
     "cha": "Propone regular el precio máximo de la vivienda por m2 y zona, ampliar la bolsa pública de vivienda y sancionar las viviendas sin función social.",
-    "upc": "Propone un parque público de dos millones de viviendas asequibles en alquiler y regulación efectiva de los precios del alquiler.",
+    "upc": "Su manifiesto del 29N exige ampliar el parque público de vivienda, regular los precios del alquiler en zonas tensionadas e intervenir el mercado.",
     "pcte": "Plantea limitar los alquileres y acceder a vivienda vacía de bancos y fondos; no apuesta por liberar suelo para construir más.",
     "falange": "Su programa del 29N propone refundar el Instituto Nacional de la Vivienda para crear un parque de vivienda social y fijar un precio máximo del alquiler.",
-    "ph": "Propone una bolsa de alquiler con viviendas vacías, parque público en alquiler y alquiler social; no plantea liberar suelo.",
+    "ph": "Su programa del 29N propone un parque público de alquiler social de 2,5 millones de viviendas y un tope legal al alquiler (p. 9).",
     "ie": "Estimación: el contrato dice que la vivienda no se resolverá con más regulación, propone ley del suelo y suprime el control de alquiler; no habla de vivienda pública.",
     "fo": "Estimación: el programa propone construir vivienda pública, supervisión estatal del recurso y medidas contra la especulación, más cerca de regular y ampliar vivienda pública.",
     "pacma": "Estimación: su programa del 29N pide la construcción masiva de vivienda pública e incentivos fiscales para alquilar por debajo del precio medio; no habla de liberar suelo.",
@@ -2301,10 +2345,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.eldebate.com/espana/20250318/nueva-concesion-psoe-junts-acepta-tramitar-congreso-ley-desalojar-okupas-48-horas_280031.html",
-     "El Debate, el PSOE acepta tramitar la ley de Junts para desalojar okupas en 48 horas, 18-03-2025",
-     "parlamento",
-     "2025-03-18"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.deia.eus/politica/2025/03/18/psoe-acepta-tramitar-congreso-ley-9413516.html",
@@ -2392,7 +2436,7 @@
     "pod": "Unidas Podemos votó contra tramitar la ley antiokupas del PP que buscaba desalojos inmediatos.",
     "salf": "Su contrato del 29N propone que, con denuncia y título de propiedad, la Policía desaloje al okupa en 48 horas.",
     "erc": "Estimación: ERC ve la «okupación» como problema complejo pero rechaza los desalojos exprés de la derecha.",
-    "junts": "Presentó una proposición de ley para agilizar el desalojo de viviendas ocupadas en 48 horas, admitida a trámite en el Congreso.",
+    "junts": "Su programa del 29N propone desalojar las ocupaciones ilegales en un máximo de 48 horas mediante un juicio inmediato.",
     "pnv": "Apoyó tramitar la ley de Junts contra la ocupación para mejorar las garantías de los propietarios.",
     "bildu": "Criticó la ley de Junts de desalojo en 48 horas; en 2024 votó una reforma para agilizar desahucios por ocupación, pero dijo después que fue «un error».",
     "upn": "Respaldó en el Congreso la toma en consideración de la ley del PP contra la ocupación, que prevé desalojos en un máximo de 24 horas.",
@@ -2428,7 +2472,7 @@
     "pacma": 4,
     "d21": 5,
     "erc": 1,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 1,
     "upn": 5,
@@ -2444,6 +2488,7 @@
     "pcte": 1,
     "fo": 1,
     "falange": 4,
+    "ie": 4,
     "ph": 1,
     "mj": 2
    },
@@ -2456,7 +2501,8 @@
     "drago",
     "cha",
     "mes",
-    "falange"
+    "falange",
+    "ie"
    ],
    "notes": {
     "psoe": "Su programa de 2023 defendía mantener el escudo social, pero el decreto del Gobierno de febrero de 2026 ya excluía de la suspensión a los propietarios con dos viviendas o menos.",
@@ -2506,10 +2552,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://forbes.es/economia/880531/pp-vox-y-junts-ratifican-su-no-al-escudo-social-y-el-gobierno-y-sus-socios-lo-tachan-de-verguenza/",
-     "Forbes España, votación del decreto del escudo social, 26/02/2026",
-     "parlamento",
-     "2026-02-26"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
+     "programa",
+     "2026-11"
     ],
     "bildu": [
      "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=5",
@@ -2582,6 +2628,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 15",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2591,7 +2643,7 @@
     "fa": "Su programa del 29N prohíbe para siempre los desahucios de familias vulnerables sin alternativa; si el dueño es un pequeño propietario, la Administración le paga el alquiler.",
     "pod": "Su programa del 29N propone prohibir los desahucios de personas vulnerables sin alternativa habitacional, con suspensión indefinida.",
     "erc": "Su programa de 2026 propone regular los arrendamientos para evitar desahucios de personas vulnerables sin vivienda alternativa.",
-    "junts": "Votó contra el decreto del escudo social por incluir la moratoria de desahucios: «escudo social sí, okupas no».",
+    "junts": "Su programa del 29N pide que la Administración pague al pequeño propietario la deuda del inquilino vulnerable y que, si no lo hace en dos meses, siga el desahucio.",
     "bildu": "Su programa del 29N pide prohibir de forma estructural y permanente los desahucios de familias vulnerables sin alternativa, con compensación estatal.",
     "comp": "Su programa del 29N propone prohibir por ley los desahucios sin alternativa habitacional, sobre todo los de grandes tenedores.",
     "pcte": "Quiere prohibir todo tipo de desahucios a familias trabajadoras y cualquier corte de suministros básicos.",
@@ -2603,7 +2655,8 @@
     "pnv": "Su programa del 29N pide alternativas habitacionales para las familias vulnerables sin trasladar toda la responsabilidad a los pequeños propietarios.",
     "adel": "Su programa del 29N pide paralizar los lanzamientos de hogares vulnerables mientras no haya alternativa habitacional.",
     "d21": "Estimación: su programa del 29N quiere que sea la Administración, y no el propietario particular, quien asuma el realojo o el alquiler de los inquilinos vulnerables.",
-    "falange": "Estimación: su programa del 29N propone agilizar los desahucios, con alternativas habitacionales para quien no pueda pagar la renta."
+    "falange": "Estimación: su programa del 29N propone agilizar los desahucios, con alternativas habitacionales para quien no pueda pagar la renta.",
+    "ie": "Estimación: su contrato antepone la protección de la propiedad privada; no trata la suspensión de desahucios."
    }
   },
   {
@@ -2826,7 +2879,7 @@
     "salf": 1,
     "d21": 2,
     "erc": 5,
-    "junts": 2,
+    "junts": 3,
     "pnv": 3,
     "bildu": 5,
     "upn": 1,
@@ -2841,6 +2894,8 @@
     "mes": 5,
     "adel": 5,
     "falange": 4,
+    "ie": 2,
+    "ph": 4,
     "mj": 4
    },
    "est": [
@@ -2856,7 +2911,9 @@
     "cha",
     "existe",
     "mes",
-    "falange"
+    "falange",
+    "ie",
+    "ph"
    ],
    "src": {
     "psoe": [
@@ -2948,6 +3005,24 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=9",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 9",
+     "programa",
+     "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -2965,7 +3040,10 @@
     "comp": "Su programa del 29N propone un censo de vivienda vacía para que los ayuntamientos apliquen recargos del IBI.",
     "pnv": "Estimación: su programa del 29N propone movilizar las viviendas vacías «ofreciendo seguridad a las personas propietarias»; no habla de recargos.",
     "mj": "Su programa del 29N propone penalizar con medidas fiscales proporcionadas a quien no ponga su vivienda vacía en alquiler o venta, junto a incentivos y garantías.",
-    "falange": "Estimación: su programa del 29N propone gravar a los grandes tenedores y expropiar las viviendas vacías de los bancos para sacarlas como protegidas o alquiler social."
+    "falange": "Estimación: su programa del 29N propone gravar a los grandes tenedores y expropiar las viviendas vacías de los bancos para sacarlas como protegidas o alquiler social.",
+    "ph": "Estimación: su programa del 29N obliga a los grandes tenedores a ceder al parque público las viviendas vacías más de 12 meses; no propone un recargo fiscal.",
+    "ie": "Estimación: su contrato rechaza la regulación y el intervencionismo estatal en vivienda.",
+    "junts": "Estimación: su programa del 29N defiende el impuesto catalán sobre viviendas vacías, pero pide que la fiscalidad estatal no lo duplique."
    }
   },
   {
@@ -3167,7 +3245,7 @@
     "pacma": 4,
     "d21": 3,
     "erc": 4,
-    "junts": 3,
+    "junts": 4,
     "pnv": 4,
     "bildu": 5,
     "upn": 2,
@@ -3187,6 +3265,7 @@
     "pcte": 5,
     "fo": 5,
     "falange": 5,
+    "ie": 2,
     "ph": 5,
     "mj": 5
    },
@@ -3200,7 +3279,8 @@
     "jmm",
     "upl",
     "soria",
-    "pcte"
+    "pcte",
+    "ie"
    ],
    "notes": {
     "erc": "ERC apuesta por un parque protegido en alquiler, pero mediante colaboración público-privada."
@@ -3349,6 +3429,18 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Resuelve»",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=17",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 17",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3375,7 +3467,9 @@
     "ccpc": "Su programa de 2026 propone un fondo estatal de ocho años para cofinanciar vivienda pública y asequible y recuperar suelo y edificios públicos.",
     "salf": "Su contrato de 2026 saca el suelo público a concurso para vivienda protegida en propiedad: «el joven que compra es dueño, no inquilino del Ayuntamiento».",
     "soria": "Estimación: su programa del 29N pide un programa nacional de construcción de viviendas, sobre todo en el medio rural; no dice si serán públicas en alquiler.",
-    "d21": "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo."
+    "d21": "Estimación: su programa del 29N crea un fondo público soberano de vivienda protegida y asequible, abierto a la coinversión privada; no habla de alquiler público directo.",
+    "ie": "Estimación: su contrato favorece la propiedad frente al alquiler y rechaza el intervencionismo estatal en vivienda.",
+    "junts": "Estimación: su programa del 29N pide ampliar el parque público de vivienda con fondos del Estado transferidos a la Generalitat; no propone que lo construya el Estado."
    }
   },
   {
@@ -3399,7 +3493,7 @@
     "pacma": 4,
     "d21": 4,
     "erc": 3,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 2,
     "upn": 4,
@@ -3413,13 +3507,14 @@
     "mes": 2,
     "adel": 2,
     "soria": 4,
-    "falange": 4
+    "falange": 4,
+    "ie": 4,
+    "ph": 4
    },
    "est": [
     "pacma",
     "d21",
     "erc",
-    "junts",
     "pnv",
     "bildu",
     "upn",
@@ -3433,7 +3528,9 @@
     "mes",
     "adel",
     "soria",
-    "falange"
+    "falange",
+    "ie",
+    "ph"
    ],
    "src": {
     "ccpc": [
@@ -3507,6 +3604,24 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 14",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=7",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 7",
+     "programa",
+     "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=18",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 18",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=18",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 18",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -3522,7 +3637,10 @@
     "pacma": "Estimación: su programa del 29N propone rebajar el ITP y el IVA a quien compra su primera vivienda; los avales públicos que cita son para impagos.",
     "pnv": "Estimación: su programa del 29N propone medidas específicas para que los jóvenes accedan a su primera vivienda también en propiedad; no concreta avales.",
     "d21": "Estimación: su programa del 29N facilita la compra de la primera vivienda a los menores de 35 años eliminando IVA, ITP y AJD; no habla de avales hipotecarios.",
-    "falange": "Estimación: su programa del 29N propone créditos hipotecarios del ICO a interés cercano al 0 % y condonar parte de la deuda de las familias jóvenes por cada hijo."
+    "falange": "Estimación: su programa del 29N propone créditos hipotecarios del ICO a interés cercano al 0 % y condonar parte de la deuda de las familias jóvenes por cada hijo.",
+    "ph": "Estimación: su programa del 29N propone una banca pública con créditos al 0 % para comprar la primera vivienda; no habla de avales.",
+    "ie": "Estimación: su contrato propone un plan de acceso a la primera vivienda para jóvenes y familias con incentivos fiscales y sin IVA; no habla de avales.",
+    "junts": "Su programa del 29N pide que el aval para pagar la entrada del primer hogar llegue de verdad a los menores de 35 años, gestionado por la Generalitat."
    }
   },
   {
@@ -3628,10 +3746,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.diaridetarragona.com/catalunya/249019/junts-avisa-apoyara-sistema-financiacion-singular-pasa-concierto-economico.html",
-     "Diari de Tarragona (ACN), declaraciones de Míriam Nogueras, 07/01/2026",
-     "declaracion",
-     "2026-01-07"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=10",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 10",
+     "programa",
+     "2026-11"
     ],
     "bng": [
      "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf#page=8",
@@ -3673,7 +3791,8 @@
     "falange": "Su programa del 29N propone retirar todas las competencias a las comunidades autónomas y después disolverlas.",
     "pp": "Su programa de 2026 descarta que ninguna comunidad salga del sistema común y nuevos regímenes singulares negociados bilateralmente.",
     "erc": "Su programa de 2026 reclama un finançament singular basado en los ingresos y avanzar hacia un concierto económico solidario.",
-    "comp": "Estimación: su programa del 29N pide un «concert econòmic responsable» para la Comunitat Valenciana; no habla de Cataluña."
+    "comp": "Estimación: su programa del 29N pide un «concert econòmic responsable» para la Comunitat Valenciana; no habla de Cataluña.",
+    "junts": "Su programa del 29N pide el concierto económico: que la Agencia Tributaria de Cataluña recaude todos los impuestos pagados en Cataluña."
    }
   },
   {
@@ -3868,10 +3987,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=19",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 19",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=10",
@@ -3946,10 +4065,10 @@
      "2026-11"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=20",
-     "Programa electoral del Partido Humanista, elecciones generales 2023, p. 20",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=25",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 25",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "salf": [
      "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf#page=33",
@@ -3976,7 +4095,7 @@
     "vox": "Su programa de 2026 propone unificar el currículo, las evaluaciones nacionales y la inspección educativa, con una EVAU única y reválidas.",
     "fa": "Su programa del 29N rechaza la recentralización y pide el pleno respeto a las competencias autonómicas.",
     "erc": "Su programa de 2026 exige las competencias exclusivas en educación y la plena soberanía de Cataluña sobre su sistema educativo.",
-    "junts": "El programa defiende el modelo educativo propio de Cataluña y pide traspasar a la Generalitat competencias y fondos en materia educativa.",
+    "junts": "Su programa del 29N considera la escuela catalana una «línea roja» y rechaza que leyes o tribunales estatales decidan cómo se enseña en Cataluña.",
     "pnv": "Su programa del 29N defiende preservar las competencias educativas de Euskadi, «evitando interferencias estatales».",
     "bildu": "Su programa del 29N defiende un sistema educativo propio para Euskal Herria.",
     "bng": "Su programa de 2026 pide la transferencia plena de las competencias de enseñanza a Galicia y una ley gallega de educación.",
@@ -3989,7 +4108,7 @@
     "gbai": "Geroa Bai rechaza las leyes educativas estatales que invaden las competencias de Navarra en educación.",
     "fo": "Propone centralizar determinadas competencias, entre ellas sanidad, educación y servicios de emergencia.",
     "falange": "Su programa del 29N trata la educación como competencia exclusiva del Estado, sin potestad de decisión de los entes territoriales.",
-    "ph": "Estimación: el programa defiende la descentralización del poder hasta el municipio y rechaza un Estado centralizado; no trata la educación.",
+    "ph": "Estimación: su programa del 29N defiende descentralizar el poder hasta el municipio; no trata las competencias educativas.",
     "salf": "Su contrato de 2026 impone contenidos mínimos comunes al 100 %, evaluaciones externas, selectividad única y Alta Inspección estatal que sanciona.",
     "adel": "Estimación: su programa del 29N pide el máximo nivel de autonomía y competencias para Andalucía, incluida la gestión de las becas estatales.",
     "mj": "Estimación: su programa del 29N plantea su política educativa en coordinación con las comunidades autónomas y respetando sus competencias."
@@ -4031,7 +4150,8 @@
     "mes": 4,
     "adel": 4,
     "fo": 2,
-    "falange": 1
+    "falange": 1,
+    "ph": 4
    },
    "est": [
     "salf",
@@ -4126,6 +4246,24 @@
      "Programa político del Frente Obrero de 2026, p. 56",
      "programa",
      "2026-10"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 14",
+     "programa",
+     "2026-11"
+    ],
+    "upc": [
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=2",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 2",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=25",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 25",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -4141,7 +4279,10 @@
     "comp": "La propuesta de gobierno que Compromís presentó en 2016 incluía avanzar hacia un modelo federal.",
     "falange": "Su programa del 29N rechaza el régimen autonómico y propone disolver las comunidades; no plantea un Estado federal.",
     "adel": "Estimación: su programa del 29N plantea «un modelo confederal como horizonte» y el máximo autogobierno en cualquier reforma constitucional.",
-    "fo": "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal."
+    "fo": "Estimación: el programa propone comunidades simétricas, reforzar el gobierno central y recentralizar competencias; no plantea un Estado federal.",
+    "gbai": "Estimación: sus bases del 29N reclaman el reconocimiento de la realidad plurinacional del Estado y de Navarra como sujeto político; no proponen expresamente un Estado federal.",
+    "upc": "Estimación: su manifiesto del 29N une a la izquierda «nacionalista, soberanista, federal y confederal» y pide reconocer a Canarias como sujeto político; no propone un modelo de Estado concreto.",
+    "ph": "Su programa del 29N defiende «una organización federativa» en la que el poder vuelva a la base social, desde el municipio hacia arriba."
    }
   },
   {
@@ -4241,10 +4382,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=11",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=12",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 12",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=3",
@@ -4296,7 +4437,7 @@
     "vox": "Su programa de 2026 recupera el delito de sedición e ilegaliza los partidos que atenten contra la unidad e integridad territorial de España.",
     "pod": "Belarra afirma que Podemos siempre ha defendido garantizar el derecho a decidir.",
     "erc": "Su programa de 2026 propone negociar un referéndum de autodeterminación en Cataluña con acompañamiento internacional.",
-    "junts": "Su programa reivindica el derecho de la nación catalana a la autodeterminación.",
+    "junts": "Su programa del 29N defiende el derecho a la autodeterminación y que todo referéndum acordado con el Estado ofrezca la opción de la independencia.",
     "pnv": "Su programa de 2023 defiende el derecho a decidir el futuro de Euskadi.",
     "bildu": "Su programa del 29N pide reconocer el derecho a decidir del pueblo vasco como vía democrática.",
     "bng": "Su programa del 29N promoverá los cambios legales para convocar referendos vinculantes, «incluído o dereito de autodeterminación».",
@@ -5311,10 +5452,10 @@
      "2023-07"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=24",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=12",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 12",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.deia.eus/politica/2024/05/30/congreso-aprueba-forma-definitiva-ley-8297867.html",
@@ -5384,7 +5525,7 @@
     "fa": "Votó a favor de la ley de amnistía de 2024 aprobada por las Cortes.",
     "pod": "Sus diputados votaron a favor de la ley de amnistía en su aprobación definitiva.",
     "erc": "El programa propone una ley de amnistía, que ERC luego apoyó en el Congreso.",
-    "junts": "Su programa exige una ley de amnistía para resolver el conflicto con España.",
+    "junts": "Su programa del 29N defiende la ley de amnistía como cierre de la vulneración de derechos del independentismo y exige su plena aplicación (p. 7).",
     "pnv": "Votó a favor de la ley de amnistía y defendió su encaje en la Constitución.",
     "bildu": "Votó a favor de la ley de amnistía en su aprobación definitiva.",
     "upn": "Votó en contra de la ley de amnistía en la votación del Congreso de marzo de 2024.",
@@ -5429,6 +5570,7 @@
     "comp": 4,
     "adel": 4,
     "fo": 4,
+    "ie": 5,
     "mj": 5
    },
    "est": [
@@ -5505,6 +5647,18 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
      "programa",
      "2026-11"
+    ],
+    "upc": [
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 5",
+     "programa",
+     "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=11",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5518,7 +5672,9 @@
     "salf": "Su contrato de 2026 fija cinco años de incompatibilidad para pasar a empresas reguladas y a órganos de control.",
     "adel": "Su programa del 29N pide periodos más largos de incompatibilidad al dejar el cargo, sin fijar cuántos años.",
     "fo": "Su programa pide medidas para poner fin a la práctica de las puertas giratorias y a los abusos de los oligopolios de la energía; no fija plazo.",
-    "d21": "Estimación: su programa del 29N propone eliminar las excepciones a las normas sobre puertas giratorias y ampliar los conflictos de interés; no fija plazo."
+    "d21": "Estimación: su programa del 29N propone eliminar las excepciones a las normas sobre puertas giratorias y ampliar los conflictos de interés; no fija plazo.",
+    "upc": "Estimación: su manifiesto del 29N pide limitar privilegios y medidas firmes contra la corrupción; no concreta un plazo para las puertas giratorias.",
+    "ie": "Su contrato propone inhabilitar 5 años a los ex altos cargos para incorporarse a empresas que fueron contratistas del Estado mientras ejercían."
    }
   },
   {
@@ -5554,6 +5710,8 @@
     "comp": 4,
     "cha": 4,
     "adel": 5,
+    "ie": 4,
+    "ph": 5,
     "mj": 4
    },
    "est": [
@@ -5573,6 +5731,8 @@
     "drago",
     "comp",
     "cha",
+    "ie",
+    "ph",
     "mj"
    ],
    "notes": {
@@ -5620,6 +5780,24 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Limpia»",
      "programa",
      "2026-11"
+    ],
+    "upc": [
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=5",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 5",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=15",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 15",
+     "programa",
+     "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=9",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 9",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -5632,7 +5810,10 @@
     "pacma": "Su programa del 29N pide la toma en consideración obligatoria de las ILP por el Congreso, aunque no fija un plazo.",
     "adel": "Su programa del 29N pide votar las iniciativas legislativas populares en un plazo máximo y sin bloqueos.",
     "comp": "Estimación: su programa del 29N propone reformar la ley de iniciativa legislativa popular para un funcionamiento ágil; no fija un plazo de votación.",
-    "d21": "Estimación: su programa del 29N permite a la ciudadanía activar con el 1 % de firmas del censo una asamblea ciudadana cuyas propuestas irían a referéndum consultivo."
+    "d21": "Estimación: su programa del 29N permite a la ciudadanía activar con el 1 % de firmas del censo una asamblea ciudadana cuyas propuestas irían a referéndum consultivo.",
+    "upc": "Estimación: su manifiesto del 29N reclama mecanismos de participación directa y una democracia más participativa; no habla de las iniciativas legislativas populares.",
+    "ph": "Estimación: su programa del 29N propone consultas ciudadanas vinculantes y un referéndum revocatorio con 500.000 firmas; no habla de las iniciativas legislativas populares.",
+    "ie": "Estimación: su contrato propone referéndums vinculantes convocados por iniciativa ciudadana con recogida de firmas; no habla de las iniciativas legislativas."
    }
   },
   {
@@ -5751,10 +5932,10 @@
      "2024-07-17"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=21",
-     "Programa electoral del Partido Humanista de 2023, p. 21",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=25",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 25",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "salf": [
      "https://elgeneracionalpost.com/politica/2024/0613/153232/las-propuestas-de-se-acabo-la-fiesta-el-polemico-partido-de-alvise-perez.html",
@@ -5788,7 +5969,7 @@
     "cha": "CHA propone convocar referéndums para avanzar hacia una república federal.",
     "bng": "El BNG critica que la Jefatura del Estado no la elija la ciudadanía y defiende un modelo republicano.",
     "upn": "UPN respalda la monarquía parlamentaria; no consta que apoye una consulta sobre la forma de Estado.",
-    "ph": "Considera la monarquía hereditaria anacrónica y quiere un jefe del Estado elegido por la gente y revocable; no habla de referéndum.",
+    "ph": "Su programa del 29N considera la monarquía hereditaria anacrónica y quiere una Jefatura del Estado elegida por la gente; no habla de referéndum.",
     "salf": "Estimación: según la crónica, Alvise se mostró dispuesto a prescindir de la figura del rey; no cita un referéndum.",
     "fo": "Estimación: su programa se declara contrario a la monarquía y partidario de una república; habla del «momento de decidir la nueva forma de Estado», sin citar un referéndum."
    }
@@ -6063,10 +6244,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://es.ara.cat/politica/congreso-aprueba-jueves-ley-multirreincidencia-junts_1_5646210.html",
-     "Ara, votación en el Congreso del 12/02/2026",
-     "parlamento",
-     "2026-02-12"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=12",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 12",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=24",
@@ -6133,7 +6314,8 @@
     "bng": "Estimación: su programa del 29N pide derogar la prisión permanente revisable y prima la reinserción; no trata la multirreincidencia.",
     "adel": "Su programa del 29N pide derogar el endurecimiento penal de los pequeños hurtos (la reforma de la multirreincidencia) contra el «populismo punitivo».",
     "d21": "Estimación: su programa del 29N propone una nueva ley procesal que permita aplicar con rapidez las herramientas contra la multirreincidencia.",
-    "mj": "Estimación: su programa del 29N orienta las penas a la reeducación y la reinserción y busca prevenir la reincidencia con empleo y medidas alternativas, no con penas más duras."
+    "mj": "Estimación: su programa del 29N orienta las penas a la reeducación y la reinserción y busca prevenir la reincidencia con empleo y medidas alternativas, no con penas más duras.",
+    "junts": "Su programa del 29N pide aplicar de forma efectiva la Ley Orgánica 1/2026 contra la multirreincidencia, que impulsó Junts."
    }
   },
   {
@@ -6207,10 +6389,10 @@
      "2023-07"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=126",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=15",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 15",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=28",
@@ -6285,7 +6467,7 @@
     "fa": "Estimación: se opone a la prisión permanente revisable; no consta una iniciativa propia reciente para derogarla.",
     "pod": "Unidas Podemos votó contra ampliar la prisión permanente revisable, fiel a su rechazo tradicional a esta pena.",
     "erc": "El programa propone derogar la prisión permanente revisable.",
-    "junts": "Su programa considera que la prisión permanente revisable es un sustituto de la cadena perpetua y vulnera la reinserción.",
+    "junts": "Su programa del 29N propone derogar la prisión permanente revisable.",
     "pnv": "Su programa del 29N rechaza la prisión permanente revisable y defiende un sistema penitenciario orientado a la reinserción.",
     "bildu": "Votó en contra de la proposición del PP que ampliaba los supuestos de prisión permanente revisable.",
     "upn": "El diputado de UPN apoyó la proposición del PP para ampliar los supuestos de prisión permanente revisable, que no prosperó en marzo de 2026.",
@@ -6319,7 +6501,7 @@
     "salf": 2,
     "d21": 2,
     "erc": 5,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 5,
     "upn": 1,
@@ -6389,10 +6571,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=24",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=14",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 14",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=27",
@@ -6463,7 +6645,7 @@
     "fa": "Su programa del 29N promete derogar por completo la «ley mordaza».",
     "pod": "Su programa del 29N propone derogar la Ley Mordaza y sustituirla por una regulación garantista que prohíba las pelotas de goma.",
     "erc": "Su programa de 2026 deroga la llamada ley mordaza (Ley Orgánica 4/2015 de seguridad ciudadana).",
-    "junts": "Pide reformar la ley mordaza con líneas rojas como las pelotas de goma y las devoluciones en caliente.",
+    "junts": "Su programa del 29N propone derogar la Ley de seguridad ciudadana («ley mordaza») y prohibir o limitar las pelotas de goma.",
     "pnv": "Su programa del 29N propone reformar la «ley mordaza» eliminando sus restricciones desproporcionadas a derechos y libertades, no derogarla entera.",
     "bildu": "Su programa del 29N promete volver a presentar la ley para acabar con la «ley mordaza».",
     "upn": "Votó en contra de tomar en consideración la reforma de la ley mordaza en el Congreso, junto con PP y Vox, en octubre de 2024.",
@@ -6776,10 +6958,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
-     "Demócrata: el Congreso toma en consideración la ley para despenalizar las injurias a la Corona",
-     "parlamento",
-     "2023-12-20"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=13",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 13",
+     "programa",
+     "2026-11"
     ],
     "upn": [
      "https://www.democrata.es/actualidad/el-congreso-inicia-el-camino-para-una-reforma-que-despenalice-las-injurias-a-la-corona-y-el-enaltecimiento-al-terrorismo/",
@@ -6804,7 +6986,7 @@
     "pnv": "Su programa del 29N propone reformar los delitos de opinión sobre la Corona, las instituciones y los símbolos del Estado según los estándares europeos.",
     "bildu": "Su programa del 29N propone despenalizar las críticas a la Corona y a las instituciones del Estado.",
     "bng": "Su programa de 2026 plantea suprimir delitos de opinión como las injurias a la Corona.",
-    "junts": "Junts votó a favor de tramitar la ley que despenaliza las injurias a la Corona.",
+    "junts": "Su programa del 29N propone suprimir el delito de injurias y reformar los delitos de odio para que no castiguen críticas a instituciones.",
     "upn": "UPN votó en contra de tramitar la ley que despenaliza las injurias a la Corona.",
     "adel": "Estimación: su programa del 29N pide derogar «los delitos de opinión del Código Penal»; no nombra las injurias a la Corona."
    }
@@ -7036,10 +7218,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=110",
-     "Programa electoral de Junts per Catalunya para las generales de 2023, p. 110",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=32",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 32",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "gbai": [
      "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
@@ -7084,10 +7266,10 @@
      "2026-11"
     ],
     "existe": [
-     "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=18",
-     "Programa electoral de Teruel Existe para las generales de 2023, p. 18",
+     "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+     "Programa de Teruel Existe para las generales de 2026, p. 3",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "falange": [
      "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf#page=25",
@@ -7108,7 +7290,7 @@
     "bildu": "Su programa del 29N mantiene el enfoque de violencia machista y propone reforzar la protección de sus víctimas.",
     "bng": "Su programa del 29N pide una reforma integral que cubra todas las violencias contra las mujeres, aplicar el Pacto de Estado contra la violencia machista y tipificar el feminicidio.",
     "ccpc": "Su programa del 29N reclama financiación estatal para aplicar el Pacto de Estado contra la violencia de género en todas las islas y proteger a las víctimas.",
-    "junts": "Junts define la violencia machista como la que sufren las mujeres por el hecho de serlo y pide priorizar su prevención.",
+    "junts": "Su programa del 29N pide reforzar la prevención y la protección ante todas las formas de violencia machista, no sustituir su marco.",
     "gbai": "Sus bases del 29N rechazan el negacionismo de la violencia de género y piden reforzar la protección de las mujeres víctimas de maltrato.",
     "adel": "Su programa del 29N pide ampliar la Ley Integral contra la Violencia de Género y un Pacto de Estado contra la violencia machista con presupuesto.",
     "upc": "El programa de Sumar, socio de UPC, propone reforzar y ampliar el marco específico de violencia de género, no sustituirlo.",
@@ -7116,7 +7298,7 @@
     "pacma": "El programa del 29N trata la violencia machista como violencia específica contra las mujeres y propone medidas propias, lo que no encaja con una ley intrafamiliar neutra.",
     "fo": "Estimación: su programa niega una violencia estructural contra las mujeres, dice que se da «en ambas direcciones» y pide derogar las leyes de discriminación positiva.",
     "d21": "Su programa del 29N no permitirá que se cuestione la existencia de la violencia de género y bloqueará cualquier intento de desmantelar la protección a sus víctimas.",
-    "existe": "Estimación: su programa de 2023 pide el «cumplimiento íntegro» del Pacto de Estado contra la violencia de género y la lucha contra ella.",
+    "existe": "Estimación: su programa del 29N pide «ni un paso atrás en los derechos conseguidos» y protección frente a la violencia de género.",
     "falange": "Estimación: su programa del 29N propone derogar las leyes «de género», incluida la Ley de Violencia de Género; no dice qué ley la sustituiría."
    }
   },
@@ -7364,10 +7546,10 @@
      "2025-02-26"
     ],
     "junts": [
-     "https://en.ara.cat/politics/together-they-will-denounce-in-europe-the-marginalization-of-catalan-in-the-regularization-of-migrants_1_5709974.html",
-     "Ara (edición en inglés), comunicado de Junts, 17/04/2026",
-     "declaracion",
-     "2026-04-17"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 48",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=25",
@@ -7474,7 +7656,8 @@
     "vox": "Su programa de 2026 prohíbe las regularizaciones masivas y propone que quien entre de forma ilegal no pueda regularizar nunca su situación.",
     "gbai": "Estimación: su senadora Uxue Barkos defendió en el Senado la regularización extraordinaria de inmigrantes frente a la iniciativa del PP.",
     "d21": "Estimación: su programa del 29N apuesta por vías legales ordinarias que funcionen para que la irregularidad «no se acumule hasta forzar regularizaciones extraordinarias».",
-    "pod": "Su programa del 29N propone un procedimiento permanente de regularización basado en el arraigo social, familiar y comunitario."
+    "pod": "Su programa del 29N propone un procedimiento permanente de regularización basado en el arraigo social, familiar y comunitario.",
+    "junts": "Su programa del 29N se opone a las regularizaciones masivas por decreto y pide más política migratoria ordinaria."
    }
   },
   {
@@ -7635,10 +7818,10 @@
      "2026-11"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=24",
-     "Programa electoral del Partido Humanista de 2023, p. 24",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=18",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 18",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pcte": [
      "https://s3.eu-west-3.amazonaws.com/cdn.pcte.es/wp-content/uploads/2020/04/30170100/Programa_electoral_PCTE_10N.pdf#page=7",
@@ -7655,6 +7838,18 @@
     "d21": [
      "https://mi.democracia21.es/programa#bloque-prospera",
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Prospera»",
+     "programa",
+     "2026-11"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 14",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=47",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 47",
      "programa",
      "2026-11"
     ]
@@ -7677,10 +7872,12 @@
     "fo": "Propone la expulsión inmediata de quienes estén de forma irregular y ejecutar las órdenes de expulsión sin excepción alguna.",
     "falange": "Su programa del 29N propone expulsar a todo inmigrante ilegal, y a los legales con antecedentes penales o en paro, dentro de un plan de «remigración».",
     "ie": "Propone deportaciones masivas de inmigrantes ilegales y el fin de los papeles para todos.",
-    "ph": "Pide desmantelar los centros de internamiento de extranjeros y rechaza criminalizar al migrante y al refugiado.",
+    "ph": "Su programa del 29N propone derogar la ley de extranjería sancionadora, cerrar los CIE y regularizar a todos los migrantes residentes (p. 19).",
     "pcte": "Estimación: el programa de 2019 pide clausurar los CIE y reformar la Ley de Extranjería; no trata las expulsiones.",
     "pnv": "Su programa del 29N defiende avanzar en los procesos de regularización previstos en la ley y las vías legales de migración.",
-    "d21": "Estimación: su programa del 29N quiere ejecutar las órdenes de expulsión dando prioridad a quienes cometen delitos, sobre todo reincidentes, y fomentar el retorno voluntario."
+    "d21": "Estimación: su programa del 29N quiere ejecutar las órdenes de expulsión dando prioridad a quienes cometen delitos, sobre todo reincidentes, y fomentar el retorno voluntario.",
+    "gbai": "Estimación: sus bases del 29N defienden «seguir siendo tierra de acogida»; no tratan las expulsiones.",
+    "junts": "Estimación: su programa del 29N pide que la Generalitat tramite y ejecute las expulsiones «en los casos previstos por la ley»; no propone expulsiones generales."
    }
   },
   {
@@ -7924,7 +8121,7 @@
     "salf": 2,
     "d21": 5,
     "erc": 4,
-    "junts": 3,
+    "junts": 4,
     "pnv": 4,
     "bildu": 4,
     "upn": 3,
@@ -7943,10 +8140,10 @@
     "soria": 4,
     "fo": 1,
     "falange": 1,
+    "ph": 5,
     "mj": 5
    },
    "est": [
-    "junts",
     "upn",
     "gbai",
     "bng",
@@ -7958,7 +8155,8 @@
     "adel",
     "jmm",
     "upl",
-    "soria"
+    "soria",
+    "ph"
    ],
    "notes": {
     "pp": "Pide vías efectivas de entrada legal para quienes cubren necesidades del mercado laboral, dando prioridad a los culturalmente cercanos."
@@ -8065,6 +8263,30 @@
      "Programa político del Frente Obrero de 2026, p. 52",
      "programa",
      "2026-10"
+    ],
+    "soria": [
+     "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf#page=1",
+     "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1",
+     "programa",
+     "2026-11"
+    ],
+    "upc": [
+     "https://unidadpueblocanario.org/documentos/manifiesto-upc.pdf#page=4",
+     "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 4",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=19",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 19",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 48",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -8084,7 +8306,11 @@
     "d21": "Su programa del 29N propone un visado de búsqueda de empleo de 6 meses con cupo según vacantes y formar trabajadores en origen con contrato antes de viajar.",
     "adel": "Estimación: su programa del 29N pide una nueva ley de extranjería basada en derechos y vías legales y seguras de llegada; no habla de cupos de trabajo.",
     "bng": "Estimación: su programa del 29N defiende la regularización como vía contra la explotación y agilizar la homologación de títulos extranjeros; no trata la contratación en origen.",
-    "fo": "El programa sostiene que la capacidad de acoger inmigrantes está rebosada y propone derogar la contratación colectiva en sectores precarizados (p. 9)."
+    "fo": "El programa sostiene que la capacidad de acoger inmigrantes está rebosada y propone derogar la contratación colectiva en sectores precarizados (p. 9).",
+    "soria": "Estimación: su programa del 29N pide una reforma normativa que amplíe los plazos de autorización de residencia y teletrabajo para atraer profesionales y nómadas digitales a las zonas despobladas.",
+    "upc": "Estimación: su manifiesto del 29N defiende una política migratoria con «vías legales y seguras».",
+    "ph": "Estimación: su programa del 29N propone abrir vías legales, estables y seguras para los flujos migratorios.",
+    "junts": "Su programa del 29N propone priorizar las vías legales y la contratación en origen según las ocupaciones que necesitan las empresas."
    }
   },
   {
@@ -8200,10 +8426,10 @@
      "2026-09-16"
     ],
     "junts": [
-     "https://theobjective.com/espana/2024-06-27/junts-librarse-reparto-menores-cataluna-inmigracion/",
-     "The Objective, Junts pide librar a Cataluña del reparto de menores, 27/06/2024",
-     "parlamento",
-     "2024-06-27"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=49",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 49",
+     "programa",
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=13",
@@ -8235,7 +8461,7 @@
     "bildu": "Apoyó el decreto para repartir a los menores migrantes entre comunidades.",
     "ccpc": "Su programa de 2026 exige una solidaridad territorial obligatoria y automática, con traslados sin negociaciones caso a caso.",
     "upc": "Su manifiesto del 29N pide proteger a la infancia migrante no acompañada con una distribución solidaria de la acogida entre territorios.",
-    "junts": "Junts pidió por escrito excluir a Cataluña del reparto obligatorio de menores migrantes no acompañados en la reforma del artículo 35 de la Ley de Extranjería.",
+    "junts": "Su programa del 29N pide que cualquier reparto de menores migrantes cuente el esfuerzo de acogida ya hecho por Cataluña y su capacidad real.",
     "ie": "Estimación: el contrato rechaza la «imposición de políticas migratorias contrarias a los intereses nacionales» desde la UE; no cita el reparto entre comunidades.",
     "falange": "Estimación: su programa del 29N propone no abrir más centros de menores extranjeros, cerrar los existentes y expulsar a los menores que delincan.",
     "adel": "Su programa del 29N pide tutela automática y un pacto de Estado con financiación estatal y «reparto solidario entre comunidades» de los menores que llegan solos."
@@ -8657,10 +8883,10 @@
      "2026-11"
     ],
     "existe": [
-     "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf#page=17",
-     "Programa electoral de Teruel Existe para las generales de 2023, p. 17",
+     "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+     "Programa de Teruel Existe para las generales de 2026, p. 3",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pacma": [
      "https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf#page=79",
@@ -8707,7 +8933,7 @@
     "ccpc": "Su programa de 2026 exige una aportación estatal suficiente y estable al sistema de dependencia y una estrategia de cuidados de larga duración.",
     "adel": "Su programa del 29N propone una ley estatal de cuidados con derecho universal y el Estado pagando la mitad de la dependencia.",
     "upc": "Su manifiesto del 29N exige un sistema público de cuidados y de atención a la dependencia, con una reforma fiscal progresiva.",
-    "existe": "Estimación: su programa de 2023 promete mejorar los servicios de atención a la dependencia; no habla de subir impuestos.",
+    "existe": "Estimación: su programa del 29N pide servicios sociales públicos y de calidad «vivas donde vivas»; no detalla la dependencia.",
     "pacma": "Estimación: su programa del 29N pide más plazas en residencias públicas para mayores y enfermos crónicos; no habla de subir impuestos.",
     "pnv": "Estimación: su programa del 29N pide financiar de forma suficiente el sistema público de protección social ante la dependencia; no habla de subir impuestos.",
     "d21": "Estimación: su programa del 29N propone que el Estado asuma el 50 % de la financiación de la dependencia y, en impuestos, dice que no hace falta subirlos ni bajarlos.",
@@ -8883,7 +9109,7 @@
     "pacma": 1,
     "d21": 4,
     "erc": 2,
-    "junts": 3,
+    "junts": 4,
     "pnv": 2,
     "bildu": 1,
     "upn": 4,
@@ -8963,10 +9189,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
-     "Noticias de Navarra (Europa Press), votación en el Congreso, 13/11/2025",
-     "parlamento",
-     "2025-11-13"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=78",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 78",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.noticiasdenavarra.com/politica/2025/11/13/junts-salva-prorroga-nucleares-pese-10343862.html",
@@ -9067,7 +9293,8 @@
     "adel": "Su programa del 29N pide acabar con las subvenciones a la nuclear y sacarla de la taxonomía verde europea.",
     "psoe": "Su programa del 29N se compromete a mantener el calendario de cierre de las centrales nucleares hasta 2035 (compromiso 240).",
     "d21": "Estimación: su programa del 29N defiende la neutralidad tecnológica, sin que el Estado decida qué tecnología gana, junto a un «respaldo firme»; no cita la nuclear.",
-    "pod": "Su programa del 29N defiende cumplir el calendario de cierre nuclear, empezando por Almaraz: «ni prórrogas nucleares indefinidas»."
+    "pod": "Su programa del 29N defiende cumplir el calendario de cierre nuclear, empezando por Almaraz: «ni prórrogas nucleares indefinidas».",
+    "junts": "Su programa del 29N propone revisar el calendario de cierre de las nucleares catalanas si las renovables no garantizan el suministro."
    }
   },
   {
@@ -9091,7 +9318,7 @@
     "pacma": 4,
     "d21": 2,
     "erc": 2,
-    "junts": 3,
+    "junts": 2,
     "pnv": 2,
     "bildu": 3,
     "upn": 3,
@@ -9252,6 +9479,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 31",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=77",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 77",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9273,7 +9506,8 @@
     "ph": "Su programa de 2026 propone proteger el suelo agrícola frente a los grandes macroparques fotovoltaicos especulativos y apostar por tejados solares.",
     "bng": "Su programa del 29N critica el «boom eólico» y pide revisar los proyectos ya aprobados para paralizar los más lesivos para el territorio.",
     "mj": "Estimación: su programa del 29N hace una apuesta decidida por las renovables con evaluación de impacto ambiental y respeto al entorno, sin proponer limitarlas.",
-    "falange": "Estimación: su programa del 29N propone frenar la «transición energética», con la nuclear como fuente principal y un canon para los municipios con grandes parques solares y eólicos."
+    "falange": "Estimación: su programa del 29N propone frenar la «transición energética», con la nuclear como fuente principal y un canon para los municipios con grandes parques solares y eólicos.",
+    "junts": "Estimación: su programa del 29N pide abrir los nudos de evacuación para facilitar proyectos renovables y repartir la generación por territorios."
    }
   },
   {
@@ -9955,6 +10189,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=71",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 71",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -9976,7 +10216,8 @@
     "pacma": "Estimación: su programa del 29N apuesta por el ferrocarril electrificado «con un mayor uso de cercanías y medias distancias».",
     "pnv": "Su programa del 29N pide terminar la Y vasca de alta velocidad y, a la vez, recibir y mejorar las Cercanías que discurren por Euskadi.",
     "d21": "Estimación: su programa del 29N antepone conservar a inaugurar, exige planes de fiabilidad en Cercanías y solo aprueba grandes obras si compensan más que mejorar lo existente.",
-    "falange": "Estimación: su programa del 29N conserva la alta velocidad solo entre puntos estratégicos y fomenta Cercanías y Media Distancia, con prioridad a las zonas rurales."
+    "falange": "Estimación: su programa del 29N conserva la alta velocidad solo entre puntos estratégicos y fomenta Cercanías y Media Distancia, con prioridad a las zonas rurales.",
+    "junts": "Estimación: su programa del 29N pone Rodalies como el ejemplo más claro del déficit de inversión y pide su traspaso íntegro (p. 10)."
    }
   },
   {
@@ -10090,6 +10331,7 @@
     "salf": 4,
     "pacma": 2,
     "d21": 4,
+    "junts": 4,
     "upn": 4,
     "bng": 4,
     "comp": 4,
@@ -10104,6 +10346,7 @@
    },
    "est": [
     "pod",
+    "junts",
     "upn",
     "bng",
     "comp",
@@ -10210,6 +10453,12 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 56",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=10",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 10",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10228,7 +10477,8 @@
     "soria": "Estimación: su programa del 29N pide el «aprovechamiento de nuestros recursos forestales» y compensar a los municipios por sus montes.",
     "adel": "Estimación: su programa del 29N propone un programa estatal de pastoreo para limpiar los montes; no habla de flexibilizar la protección de espacios naturales.",
     "mj": "Estimación: su programa del 29N impulsa la ganadería extensiva para reducir la vegetación combustible, sin plantear flexibilizar la protección de espacios naturales.",
-    "falange": "Estimación: su programa del 29N propone un plan nacional de conservación y limpieza de montes para reducir los daños de los incendios."
+    "falange": "Estimación: su programa del 29N propone un plan nacional de conservación y limpieza de montes para reducir los daños de los incendios.",
+    "junts": "Estimación: su programa del 29N pide «bosques bien gestionados» y más capacidad para prevenir incendios forestales (p. 23)."
    }
   },
   {
@@ -10271,6 +10521,7 @@
     "fo": 2,
     "falange": 1,
     "ie": 1,
+    "ph": 4,
     "mj": 5
    },
    "est": [
@@ -10283,7 +10534,8 @@
     "drago",
     "cha",
     "existe",
-    "mes"
+    "mes",
+    "ph"
    ],
    "src": {
     "mj": [
@@ -10405,6 +10657,18 @@
      "Manifiesto electoral de Unidad del Pueblo Canario para el 29N, p. 3",
      "programa",
      "2026-11"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=14",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 14",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10427,7 +10691,9 @@
     "ccpc": "Su programa de 2026 reduce la generación fósil a medida que avanzan renovables, almacenamiento y redes, sin perder seguridad de suministro.",
     "adel": "Su programa del 29N apuesta por renovables pequeñas y repartidas por el territorio, con redes renovadas, en lugar de macroplantas.",
     "d21": "Estimación: su programa del 29N defiende la neutralidad tecnológica entre renovables, almacenamiento y respaldo firme, con apuesta masiva por el almacenamiento.",
-    "upc": "Estimación: su manifiesto del 29N apuesta por las energías renovables, la generación distribuida y la soberanía energética."
+    "upc": "Estimación: su manifiesto del 29N apuesta por las energías renovables, la generación distribuida y la soberanía energética.",
+    "gbai": "Estimación: sus bases del 29N piden reforzar las políticas frente al cambio climático; no concretan el modelo eléctrico.",
+    "ph": "Estimación: su programa del 29N financia comunidades solares en tejados y una empresa pública que gestione las hidroeléctricas."
    }
   },
   {
@@ -10467,6 +10733,7 @@
     "adel": 1,
     "pcte": 1,
     "falange": 4,
+    "ie": 2,
     "ph": 1,
     "mj": 1
    },
@@ -10478,7 +10745,8 @@
     "gbai",
     "drago",
     "existe",
-    "pcte"
+    "pcte",
+    "ie"
    ],
    "notes": {
     "junts": "Votó en contra de revertir la subida del gasto militar, pero no se ha pronunciado sobre el objetivo del 3,5 %."
@@ -10527,10 +10795,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://www.galiciapress.es/articulo/politica/2026-06-11/5915942-congreso-rechaza-mocion-bng-pedia-salir-otan-reducir-gasto-militar-gobierno-dividido",
-     "Galiciapress (Europa Press), votación en el Congreso del 11/06/2026",
-     "parlamento",
-     "2026-06-11"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=28",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 28",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.diariosigloxxi.com/texto-ep/mostrar/20250326200437/congreso-respalda-mocion-pp-subir-gasto-defensa-abstencion-pnv-junts",
@@ -10621,6 +10889,12 @@
      "Programa de Democracia 21 para el 29N («La España que merecemos», versión web), bloque «España Cuida»",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=14",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 14",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10645,7 +10919,9 @@
     "vox": "Su programa de 2026 propone aumentar la inversión en Defensa, mejorar los sueldos militares y dotar de medios a las Fuerzas Armadas.",
     "salf": "Su contrato de 2026 mantiene el gasto en Defensa en el 2 % del PIB, priorizando la industria nacional y mejorando las retribuciones militares.",
     "d21": "Estimación: su programa del 29N refuerza el pilar europeo de la OTAN y dice que, «si España va a invertir más en defensa», la primera inversión serán sus profesionales; sin cifra.",
-    "pod": "Su programa del 29N rechaza el objetivo de gasto militar de la OTAN y propone revertir el rearme (medida 72)."
+    "pod": "Su programa del 29N rechaza el objetivo de gasto militar de la OTAN y propone revertir el rearme (medida 72).",
+    "ie": "Estimación: su contrato rechaza financiar la defensa de otros países, pide neutralidad y un referéndum sobre la OTAN.",
+    "junts": "Estimación: su programa del 29N apoya una defensa europea más integrada, complementaria de la OTAN y con financiación; no fija un porcentaje."
    }
   },
   {
@@ -10669,7 +10945,7 @@
     "pacma": 3,
     "d21": 5,
     "erc": 4,
-    "junts": 3,
+    "junts": 4,
     "pnv": 5,
     "bildu": 3,
     "upn": 4,
@@ -10800,6 +11076,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 35",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=28",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 28",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -10818,7 +11100,8 @@
     "salf": "Su contrato de 2026 propone un referéndum de renegociación europea y, si Bruselas se niega, un segundo referéndum de salida.",
     "bng": "Estimación: su programa del 29N rechaza centralizar en la UE los fondos de cohesión, la PAC y el FEMPA y exige su gestión descentralizada.",
     "comp": "Su programa del 29N propone reformar los tratados para dar más poder al Parlamento Europeo y un presupuesto de la UE de al menos el 2 % de la RNB.",
-    "mj": "Estimación: su programa del 29N aboga por normativa armonizada a nivel europeo y por organismos internacionales más fuertes con acuerdos vinculantes (p. 66)."
+    "mj": "Estimación: su programa del 29N aboga por normativa armonizada a nivel europeo y por organismos internacionales más fuertes con acuerdos vinculantes (p. 66).",
+    "junts": "Estimación: su programa del 29N pide una defensa europea más integrada; se define como europeísta exigente (p. 8)."
    }
   },
   {
@@ -11314,7 +11597,7 @@
     "salf": 5,
     "d21": 5,
     "erc": 2,
-    "junts": 4,
+    "junts": 5,
     "pnv": 5,
     "bildu": 1,
     "upn": 5,
@@ -11413,10 +11696,10 @@
      "2026-04"
     ],
     "junts": [
-     "https://orain.eus/es/politica/2026/04/22/el-congreso-rechaza-el-referendum-salir-la-otan-pide-podemos/",
-     "Orain, el Congreso rechaza el referéndum para salir de la OTAN, 22/04/2026",
-     "parlamento",
-     "2026-04-22"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=26",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 26",
+     "programa",
+     "2026-11"
     ],
     "pcte": [
      "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf#page=19",
@@ -11472,7 +11755,7 @@
     "bng": "Su programa de 2026 propone salir de la OTAN y defender la disolución de esa alianza militar.",
     "upn": "UPN votó en contra de convocar un referéndum para salir de la OTAN.",
     "adel": "Propone impulsar un proceso que desemboque en un referéndum para la salida de España de la OTAN y cerrar las bases de Morón y Rota.",
-    "junts": "Junts votó con PP, PSOE, Vox, PNV y UPN contra la moción de Podemos de referéndum para salir de la OTAN.",
+    "junts": "Su programa del 29N quiere una Cataluña independiente miembro de la UE y de la OTAN.",
     "pcte": "Defiende la salida unilateral de la OTAN y el cierre de las bases militares extranjeras.",
     "fo": "Propone la salida inmediata de España de la OTAN y reforzar el ejército.",
     "falange": "Su programa del 29N propone el abandono de la OTAN por parte del Ejército español.",
@@ -11954,7 +12237,7 @@
     "pacma": 2,
     "d21": 4,
     "erc": 2,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 2,
     "upn": 5,
@@ -11969,6 +12252,7 @@
     "adel": 1,
     "pcte": 1,
     "fo": 1,
+    "ie": 4,
     "ph": 1,
     "mj": 4
    },
@@ -11978,7 +12262,8 @@
     "gbai",
     "ccpc",
     "drago",
-    "mes"
+    "mes",
+    "ie"
    ],
    "notes": {
     "psoe": "Su programa de 2023 no propone recortar los conciertos: plantea actualizar su financiación a cambio de que no segreguen al alumnado."
@@ -12027,10 +12312,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://naciodigital.cat/politica/pp-vox-i-cs-se-sumen-a-jxcat-en-defensa-de-lescola-concertada.html",
-     "NacióDigital, enmienda a la LOMLOE, 18/11/2020",
-     "parlamento",
-     "2020-11-18"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=54",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 54",
+     "programa",
+     "2026-11"
     ],
     "bildu": [
      "https://orain.eus/es/actualidad/sociedad/2023/11/21/eh-bildu-denuncia-que-pnv-acepta-modelos-linguisticos-y-a-cambio-pseee-concertacion-universal/",
@@ -12115,6 +12400,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 61",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12136,7 +12427,9 @@
     "vox": "Su programa de 2026 garantiza la libre elección de centro educativo en todos los niveles, sin que lo impida la situación económica de la familia.",
     "mj": "Su programa del 29N apoya la coexistencia de la educación pública y la concertada y reconoce la aportación social de la concertada en contextos precarios.",
     "pacma": "Estimación: su programa del 29N pide revisar los criterios de concertación con la enseñanza privada para evitar la segregación.",
-    "pod": "Su programa del 29N propone una moratoria indefinida a nuevos conciertos y la reabsorción progresiva de la concertada en la red pública."
+    "pod": "Su programa del 29N propone una moratoria indefinida a nuevos conciertos y la reabsorción progresiva de la concertada en la red pública.",
+    "ie": "Estimación: su contrato pide «libertad educativa para los padres»; no habla de los conciertos.",
+    "junts": "Su programa del 29N propone actualizar los módulos de la enseñanza concertada para ajustarlos a sus costes reales."
    }
   },
   {
@@ -12372,10 +12665,10 @@
      "2023-07"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=17",
-     "Programa electoral del Partido Humanista, elecciones generales 2023, p. 17",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=13",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 13",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "fo": [
      "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
@@ -12410,7 +12703,7 @@
     "pp": "Se opuso al decreto del Gobierno que endurece los requisitos para crear nuevas universidades, incluidas las privadas.",
     "adel": "Su programa del 29N pide «ninguna universidad privada nueva».",
     "pcte": "Defiende expulsar a todas las empresas privadas de la educación; denuncia el aumento de universidades privadas.",
-    "ph": "Estimación: el programa exige educación pública y gratuita en todos los niveles hasta la universidad y rechaza que sea negocio; no cita las privadas.",
+    "ph": "Estimación: su programa del 29N propone una red única pública y suprimir las deducciones fiscales a la enseñanza privada; no trata las universidades privadas.",
     "fo": "Estimación: el programa propone expulsar a las empresas privadas de la universidad y reforzar el sistema público, lo que va contra facilitar universidades privadas.",
     "comp": "Su programa del 29N propone limitar la proliferación de universidades privadas y evitar el desvío de recursos públicos hacia ellas.",
     "bng": "Estimación: su programa del 29N pide una ley universitaria propia que «evite a privatización» del sistema universitario gallego."
@@ -12552,10 +12845,10 @@
      "2026-11"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=113",
-     "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=19",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 19",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pnv": [
      "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion186/20220609/Votacion053/VOT_20230302184525.json",
@@ -12634,7 +12927,7 @@
     "pp": "Su programa de 2026 garantiza el derecho a recibir enseñanza en castellano en todas las etapas educativas y en toda España.",
     "vox": "Su programa de 2026 garantiza la educación en español en todo el territorio nacional y unifica los contenidos curriculares.",
     "erc": "Su programa de 2026 blinda la escuela catalana y la inmersión lingüística, con el catalán como lengua vehicular.",
-    "junts": "Su programa defiende la inmersión lingüística de la escuela catalana.",
+    "junts": "Su programa del 29N defiende la escuela catalana con el catalán como lengua vehicular, «línea roja» frente a cualquier retroceso.",
     "pnv": "Votó en contra de la PNL del PP sobre el castellano como lengua vehicular de la enseñanza en Cataluña.",
     "bildu": "Su programa del 29N defiende un sistema educativo propio y euskaldun.",
     "bng": "Su programa del 29N quiere una escuela pública gallega orientada a la normalización lingüística del gallego.",
@@ -12675,7 +12968,8 @@
     "bng": 1,
     "comp": 1,
     "adel": 1,
-    "falange": 4
+    "falange": 4,
+    "ie": 4
    },
    "est": [
     "vox",
@@ -12688,7 +12982,8 @@
     "bng",
     "comp",
     "adel",
-    "falange"
+    "falange",
+    "ie"
    ],
    "src": {
     "psoe": [
@@ -12738,6 +13033,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 47",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -12750,7 +13051,8 @@
     "salf": "Estimación: quiere conceder «únicamente por mérito y capacidad» las becas para preparar oposiciones; no menciona las becas de estudios.",
     "falange": "Estimación: su programa del 29N propone ajustar las becas al poder adquisitivo y a los méritos académicos, lo que apunta a exigir rendimiento.",
     "bng": "Estimación: su programa del 29N pide un sistema de becas universitarias que garantice el acceso universal a la enseñanza superior; no habla de notas.",
-    "adel": "Estimación: su programa del 29N pide que las becas no dependan «casi solo de la nota media»; no fija una nota mínima."
+    "adel": "Estimación: su programa del 29N pide que las becas no dependan «casi solo de la nota media»; no fija una nota mínima.",
+    "ie": "Estimación: su contrato pide una educación basada en el esfuerzo y el mérito; no trata las becas."
    }
   },
   {
@@ -12876,10 +13178,10 @@
      "2023-07"
     ],
     "ph": [
-     "https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202023.pdf#page=19",
-     "Programa electoral del Partido Humanista, elecciones generales 2023, p. 19",
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "ie": [
      "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
@@ -12924,7 +13226,7 @@
     "adel": "Su programa del 29N hace obligatoria la educación afectivo-sexual en todas las etapas.",
     "fa": "El espacio de Frente Amplio defiende la educación sexual en todas las etapas como parte del currículo escolar.",
     "upc": "Plantea la introducción del pin parental como un retroceso en igualdad y propone educación sexual integral en el sistema educativo.",
-    "ph": "Estimación: el programa propone educación integral que incluya la sexualidad en todos los niveles; no cita el «pin parental».",
+    "ph": "Estimación: su programa del 29N pide garantizar la educación sexual y reproductiva desde la infancia; no habla del permiso de los padres.",
     "ie": "Estimación: el contrato defiende «libertad educativa para los padres» y rechaza el «adoctrinamiento en género»; no cita el pin parental.",
     "pacma": "Estimación: su programa del 29N pide planes de educación en diversidad sexual y una educación sexual también afectiva; no habla del permiso parental.",
     "pnv": "Estimación: su programa del 29N propone reforzar la coeducación y la educación afectivo-sexual en igualdad; no habla del permiso de los padres.",
@@ -12954,7 +13256,7 @@
     "pacma": 1,
     "d21": 4,
     "erc": 1,
-    "junts": 2,
+    "junts": 1,
     "pnv": 3,
     "bildu": 1,
     "upn": 5,
@@ -13101,6 +13403,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=42",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 42",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13122,7 +13430,8 @@
     "cha": "Propone eliminar todas las subvenciones dirigidas a la tauromaquia o a espectáculos con animales.",
     "salf": "Votó contra subvenciones europeas al toro de lidia: «Ni un solo euro público a ninguna actividad de ocio basada en la crueldad animal».",
     "falange": "Su programa del 29N propone protección especial y promoción de la tauromaquia, con festejos patrocinados por la Administración.",
-    "mj": "Su programa del 29N declara que sobre la tauromaquia conviven posiciones distintas en el partido y no propone cambios en su regulación."
+    "mj": "Su programa del 29N declara que sobre la tauromaquia conviven posiciones distintas en el partido y no propone cambios en su regulación.",
+    "junts": "Estimación: su programa del 29N propone derogar la declaración de la tauromaquia como patrimonio cultural; no trata su financiación."
    }
   },
   {
@@ -13245,10 +13554,10 @@
      "2026-04-24"
     ],
     "junts": [
-     "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=137",
-     "Programa electoral de Junts per Catalunya para las generales de 2023, p. 137",
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=13",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 13",
      "programa",
-     "2023-07"
+     "2026-11"
     ],
     "pod": [
      "https://www.redaccionmedica.com/politica/20230926/el-parlamento-balear-aprueba-eliminar-el-requisito-del-catalan-en-sanidad/210249_0.html",
@@ -13277,7 +13586,7 @@
     "mes": "MÉS per Mallorca se opuso a suprimir el requisito de catalán para el personal de la sanidad pública balear.",
     "upn": "UPN recurre ante los tribunales la exigencia de conocer el euskera para acceder a plazas públicas.",
     "pnv": "El PNV propone reformar la Ley Vasca de Empleo Público para blindar los perfiles lingüísticos de euskera.",
-    "junts": "Junts propone exigir el catalán como requisito para trabajar en la Administración de justicia en Cataluña.",
+    "junts": "Su programa del 29N pide poder exigir el conocimiento del catalán como requisito obligatorio para ejercer en la justicia en Cataluña.",
     "pod": "Unidas Podemos votó en el Parlamento balear contra suprimir el requisito de catalán para trabajar en la sanidad pública, es decir, a favor de mantenerlo.",
     "falange": "Estimación: su programa del 29N quiere el español como lengua vehicular y limitar las lenguas regionales a sus propias asignaturas."
    }
@@ -13324,6 +13633,7 @@
     "pcte": 5,
     "fo": 5,
     "falange": 5,
+    "ie": 2,
     "ph": 5,
     "mj": 4
    },
@@ -13340,7 +13650,8 @@
     "jmm",
     "upl",
     "soria",
-    "pav"
+    "pav",
+    "ie"
    ],
    "notes": {
     "vox": "Defiende abiertamente la colaboración público-privada en la sanidad pública; su programa de 2023 prometía reforzar los conciertos con la privada.",
@@ -13466,6 +13777,12 @@
      "Programa de PACMA para las generales del 29N de 2026, p. 56",
      "programa",
      "2026-11"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=22",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 22",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -13486,7 +13803,8 @@
     "pacma": "Su programa del 29N propone reintegrar en el sistema sanitario público los servicios privatizados.",
     "erc": "Su programa de 2026 propone blindar una sanidad pública universal y frenar la privatización de la sanidad.",
     "vox": "Su programa de 2026 propone fomentar la colaboración público-privada cuando ayude a reducir demoras, con transparencia y control del gasto.",
-    "pod": "Su programa del 29N propone prohibir la externalización y privatización de centros y servicios sanitarios."
+    "pod": "Su programa del 29N propone prohibir la externalización y privatización de centros y servicios sanitarios.",
+    "ie": "Estimación: su contrato pide un modelo sanitario «basado en la libertad de elección»; no trata la gestión privada."
    }
   },
   {
@@ -14117,7 +14435,8 @@
     "adel": 4,
     "pcte": 4,
     "fo": 4,
-    "falange": 4
+    "falange": 4,
+    "ph": 5
    },
    "est": [
     "salf",
@@ -14131,7 +14450,8 @@
     "mes",
     "pcte",
     "fo",
-    "falange"
+    "falange",
+    "ph"
    ],
    "notes": {
     "psoe": "Su Gobierno renovó en 2025 el concierto de MUFACE con aseguradoras privadas hasta 2027, manteniendo la elección de sanidad privada."
@@ -14208,6 +14528,12 @@
      "Programa político del Frente Obrero de 2026, p. 42",
      "programa",
      "2026-10"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=11",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 11",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14222,7 +14548,8 @@
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa propone integrar paulatinamente en la sanidad pública a quienes hoy usan MUFACE.",
     "adel": "Su programa de 2026 propone integrar progresivamente MUFACE, ISFAS y MUGEJU en el Sistema Nacional de Salud, sin nuevas altas en las mutualidades.",
     "falange": "Estimación: su programa del 29N propone un único Sistema Nacional de Salud y acabar con la externalización y privatización de la sanidad.",
-    "fo": "Estimación: el programa propone centralizar el sistema nacional de salud y acabar con la externalización y privatización de la sanidad."
+    "fo": "Estimación: el programa propone centralizar el sistema nacional de salud y acabar con la externalización y privatización de la sanidad.",
+    "ph": "Estimación: su programa del 29N pide derogar todas las fórmulas de colaboración público-privada en la sanidad y blindar su gestión pública directa; no nombra a MUFACE."
    }
   },
   {
@@ -14262,6 +14589,7 @@
     "adel": 5,
     "fo": 5,
     "falange": 5,
+    "ph": 4,
     "mj": 4
    },
    "est": [
@@ -14279,6 +14607,7 @@
     "cha",
     "existe",
     "mes",
+    "ph",
     "mj"
    ],
    "notes": {
@@ -14393,6 +14722,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 37",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=10",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 10",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14413,7 +14748,8 @@
     "adel": "Su programa del 29N fija tiempos máximos garantizados en todo el Estado: 30 días para el especialista y 120 para operarse.",
     "pnv": "Estimación: su programa del 29N exige al Estado respetar las competencias sanitarias de Euskadi y culminar las transferencias pendientes (p. 32).",
     "d21": "Estimación: su programa del 29N fija estándares comunes y obligatorios en el SNS (historia clínica, ratios por calendario vinculante, plazos máximos en autismo).",
-    "mj": "Estimación: su programa del 29N propone garantías comunes de acceso sanitario en todo el territorio y tiempos máximos de espera, coordinando con las comunidades."
+    "mj": "Estimación: su programa del 29N propone garantías comunes de acceso sanitario en todo el territorio y tiempos máximos de espera, coordinando con las comunidades.",
+    "ph": "Estimación: su programa del 29N propone armonizar el marco legislativo estatal y los recursos de las comunidades en sanidad."
    }
   },
   {
@@ -14573,6 +14909,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 69",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=73",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 73",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14588,7 +14930,8 @@
     "falange": "Su programa del 29N propone que España abandone el acuerdo UE-Mercosur porque daña la producción nacional.",
     "vox": "Su programa de 2026 rechaza de forma explícita el acuerdo UE-Mercosur y propone cláusulas espejo y preferencia comunitaria.",
     "adel": "Estimación: su programa del 29N pide cláusulas espejo para que las importaciones cumplan las mismas exigencias que el campo propio; no nombra Mercosur.",
-    "pod": "Su programa del 29N rechaza el acuerdo comercial entre la UE y Mercosur."
+    "pod": "Su programa del 29N rechaza el acuerdo comercial entre la UE y Mercosur.",
+    "junts": "Estimación: su programa del 29N exige cláusulas espejo en el acuerdo UE-Mercosur; no dice si lo apoya o lo rechaza."
    }
   },
   {
@@ -14612,7 +14955,7 @@
     "salf": 3,
     "d21": 2,
     "erc": 4,
-    "junts": 3,
+    "junts": 4,
     "pnv": 4,
     "bildu": 5,
     "upn": 3,
@@ -14758,6 +15101,12 @@
      "Programa político del Frente Obrero de 2026, p. 37",
      "programa",
      "2026-10"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=75",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 75",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14778,7 +15127,8 @@
     "adel": "Su programa del 29N pide prohibir de forma efectiva la venta a pérdidas, precios justos en origen y vigilar los márgenes.",
     "comp": "Su programa del 29N propone reforzar la ley de la cadena alimentaria para que los precios cubran los costes efectivos de producción.",
     "mj": "Estimación: su programa del 29N defiende canales de comercialización que garanticen precios justos a agricultores y ganaderos, sin concretar control de márgenes.",
-    "fo": "Estimación: el programa culpa de la ruina del campo a los «intermediarios mafiosos y especuladores» y propone cooperativas para dar salida a la producción (p. 38)."
+    "fo": "Estimación: el programa culpa de la ruina del campo a los «intermediarios mafiosos y especuladores» y propone cooperativas para dar salida a la producción (p. 38).",
+    "junts": "Estimación: su programa del 29N exige aplicar estrictamente la Ley de la cadena alimentaria para que los precios en origen cubran los costes."
    }
   },
   {
@@ -14814,6 +15164,7 @@
     "jmm": 4,
     "upl": 4,
     "soria": 4,
+    "ph": 4,
     "mj": 4
    },
    "est": [
@@ -14829,6 +15180,7 @@
     "jmm",
     "upl",
     "soria",
+    "ph",
     "mj"
    ],
    "notes": {
@@ -14906,6 +15258,18 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 61",
      "programa",
      "2026-11"
+    ],
+    "soria": [
+     "https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf#page=1",
+     "Programa de Soria ¡Ya! para las generales del 29N de 2026, p. 1",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=21",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 21",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -14920,7 +15284,9 @@
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa prioriza las explotaciones familiares y elimina derechos históricos de la PAC.",
     "adel": "Su programa del 29N pide ayudas de la PAC ligadas al empleo y a vivir en el territorio, no a las hectáreas.",
     "existe": "Estimación: su programa del 29N defiende la agricultura y ganadería familiar, una PAC justa e igualar la PAC entre territorios.",
-    "mj": "Estimación: su programa del 29N prioriza apoyar a los pequeños productores y la ganadería extensiva, sin detallar el reparto de la PAC."
+    "mj": "Estimación: su programa del 29N prioriza apoyar a los pequeños productores y la ganadería extensiva, sin detallar el reparto de la PAC.",
+    "soria": "Estimación: su programa del 29N pide ayudas adaptadas al medio rural despoblado, la rentabilidad de las explotaciones y el relevo generacional; no habla del reparto por hectáreas.",
+    "ph": "Estimación: su programa del 29N propone subvenciones directas y preferencia a la agricultura familiar ecológica y de proximidad."
    }
   },
   {
@@ -15561,10 +15927,11 @@
     "pacma": 5,
     "d21": 3,
     "erc": 2,
-    "junts": 3,
+    "junts": 2,
     "pnv": 3,
     "bildu": 4,
     "upn": 2,
+    "gbai": 2,
     "bng": 4,
     "comp": 4,
     "cha": 3,
@@ -15581,6 +15948,7 @@
     "pnv",
     "bildu",
     "upn",
+    "gbai",
     "bng",
     "comp",
     "cha",
@@ -15660,6 +16028,18 @@
      "Programa electoral de Teruel Existe para las generales de 2023, p. 11",
      "programa",
      "2023-07"
+    ],
+    "gbai": [
+     "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf#page=7",
+     "Bases políticas de Geroa Bai para las generales del 29N, p. 7",
+     "programa",
+     "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=73",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 73",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15673,7 +16053,9 @@
     "adel": "Su programa del 29N pide modernizar los regadíos «sin aumentar la superficie regada» y frenar el regadío intensivo.",
     "mes": "Estimación: MÉS concurrió en Sumar en 2023 y su programa plantea una moratoria del regadío intensivo.",
     "comp": "Estimación: su programa del 29N propone adaptar el regadío a la disponibilidad hídrica con una transición hidrológica justa.",
-    "existe": "Estimación: su programa de 2023 defiende construir embalses, canales y «nuevos regadíos» si son sostenibles."
+    "existe": "Estimación: su programa de 2023 defiende construir embalses, canales y «nuevos regadíos» si son sostenibles.",
+    "gbai": "Estimación: sus bases del 29N exigen al Estado cumplir sus compromisos con el regadío navarro (pp. 7 y 12), lo que choca con limitar los nuevos regadíos.",
+    "junts": "Estimación: su programa del 29N defiende los regadíos y pide IVA reducido para modernizarlos."
    }
   },
   {
@@ -15711,6 +16093,7 @@
     "mes": 5,
     "adel": 5,
     "falange": 1,
+    "ph": 4,
     "mj": 3
    },
    "est": [
@@ -15720,6 +16103,7 @@
     "drago",
     "cha",
     "mes",
+    "ph",
     "mj"
    ],
    "notes": {
@@ -15834,6 +16218,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 43",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -15851,7 +16241,8 @@
     "d21": "Estimación: su programa del 29N se opone a derogar o limitar la ley de plazos del aborto y quiere garantizarlo en la sanidad pública; no habla de la Constitución.",
     "psoe": "Su programa del 29N impulsará la reforma del artículo 43 de la Constitución, iniciada en 2026, para reforzar la garantía del derecho al aborto.",
     "mj": "Estimación: su programa del 29N reconoce sensibilidades distintas sobre el aborto en el partido y no propone incluirlo en la Constitución.",
-    "pod": "Su programa del 29N propone incluir el aborto en la Constitución como derecho fundamental, en el artículo 15."
+    "pod": "Su programa del 29N propone incluir el aborto en la Constitución como derecho fundamental, en el artículo 15.",
+    "ph": "Estimación: su programa del 29N defiende el aborto libre, gratuito y en la sanidad pública «con el aval de la ley»; no habla de la Constitución."
    }
   },
   {
@@ -15891,6 +16282,7 @@
     "mes": 1,
     "adel": 1,
     "falange": 5,
+    "ph": 1,
     "mj": 1
    },
    "est": [
@@ -15902,7 +16294,8 @@
     "comp",
     "cha",
     "existe",
-    "mes"
+    "mes",
+    "ph"
    ],
    "src": {
     "mj": [
@@ -16006,6 +16399,12 @@
      "Bolsamanía: votación final de la ley de eutanasia en el Congreso (18 mar 2021)",
      "prensa",
      "2021-03-18"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16025,7 +16424,8 @@
     "upc": "Reconoce la necesidad de una muerte digna en coherencia con la Ley de Regulación de la Eutanasia, sin proponer derogarla.",
     "falange": "Su programa del 29N propone ilegalizar las leyes del aborto y de la eutanasia.",
     "adel": "Su programa del 29N pide plazos más ágiles por ley para la eutanasia, sin recurso de familiares o allegados.",
-    "existe": "Estimación: su diputado se abstuvo en la votación final de la ley de eutanasia en el Congreso (marzo de 2021)."
+    "existe": "Estimación: su diputado se abstuvo en la votación final de la ley de eutanasia en el Congreso (marzo de 2021).",
+    "ph": "Estimación: su programa del 29N afirma que el ser humano es «libre de disponer absolutamente de su cuerpo»; no nombra la eutanasia."
    }
   },
   {
@@ -16050,7 +16450,7 @@
     "pacma": 4,
     "d21": 4,
     "erc": 5,
-    "junts": 4,
+    "junts": 5,
     "pnv": 4,
     "bildu": 5,
     "upn": 1,
@@ -16071,7 +16471,6 @@
     "salf",
     "pacma",
     "d21",
-    "junts",
     "upn",
     "gbai",
     "ccpc",
@@ -16192,6 +16591,12 @@
      "Programa electoral de Por un Mundo Más Justo para el 29N de 2026, p. 81",
      "programa",
      "2026-11"
+    ],
+    "junts": [
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=36",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 36",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16212,7 +16617,8 @@
     "gbai": "Estimación: sus bases del 29N piden mantener vigentes los derechos civiles conquistados por el colectivo LGTBI; no detallan la ley trans.",
     "pacma": "Estimación: su programa del 29N suscribe las demandas del colectivo LGTBI+ y el apoyo a las personas trans; no detalla el cambio registral.",
     "adel": "Estimación: su programa del 29N pide el desarrollo completo de las leyes trans y LGTBI y la opción no binaria en el Registro Civil.",
-    "mj": "Estimación: su programa del 29N propone reforzar la aplicación de la legislación LGTBI y la Estrategia para la Inclusión Social de las Personas Trans."
+    "mj": "Estimación: su programa del 29N propone reforzar la aplicación de la legislación LGTBI y la Estrategia para la Inclusión Social de las Personas Trans.",
+    "junts": "Su programa del 29N se opone a cualquier derogación o recorte de la Ley 4/2023 (trans y LGTBI)."
    }
   },
   {
@@ -16248,6 +16654,7 @@
     "adel": 1,
     "pcte": 1,
     "fo": 1,
+    "ph": 4,
     "mj": 1
    },
    "est": [
@@ -16259,7 +16666,8 @@
     "upn",
     "upc",
     "drago",
-    "cha"
+    "cha",
+    "ph"
    ],
    "notes": {
     "pp": "Se abrió a regular la gestación subrogada solo en su forma altruista, sin ningún pago a la gestante."
@@ -16354,6 +16762,12 @@
      "Programa electoral de Compromís-Front Valencià para el 29N, p. 53",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16372,7 +16786,8 @@
     "existe": "Su programa de 2023 expresa «Rechazo a la gestación subrogada».",
     "bng": "Su programa del 29N expresa una oposición firme a cualquier intento de legalizar o regular los vientres de alquiler.",
     "mj": "Su programa del 29N pide mantener la prohibición de la gestación subrogada en España para proteger a las mujeres de la explotación reproductiva.",
-    "comp": "Su programa del 29N propone reforzar la prohibición de la gestación subrogada y sancionar a las agencias que la promocionan."
+    "comp": "Su programa del 29N propone reforzar la prohibición de la gestación subrogada y sancionar a las agencias que la promocionan.",
+    "ph": "Estimación: su programa del 29N valora la reproducción asistida y la libertad de disponer del propio cuerpo; no nombra la gestación subrogada."
    }
   },
   {
@@ -16411,7 +16826,8 @@
     "mes": 5,
     "adel": 5,
     "pcte": 5,
-    "falange": 1
+    "falange": 1,
+    "ph": 4
    },
    "est": [
     "salf",
@@ -16425,7 +16841,8 @@
     "upc",
     "drago",
     "mes",
-    "adel"
+    "adel",
+    "ph"
    ],
    "src": {
     "psoe": [
@@ -16511,6 +16928,12 @@
      "Programa electoral de Adelante Andalucía para el 29N, p. 96",
      "programa",
      "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=27",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 27",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16527,7 +16950,8 @@
     "falange": "Su programa del 29N propone fomentar el culto y la tradición católica como valor fundamental de la nación.",
     "bng": "Su programa de 2026 propone denunciar y revocar el Concordato y los acuerdos vigentes con la Santa Sede.",
     "pacma": "Estimación: su programa del 29N pide «una escuela pública realmente laica»; no menciona los acuerdos con la Santa Sede.",
-    "adel": "Estimación: su programa del 29N pide que ninguna confesión tenga privilegios fiscales ni simbólicos; no nombra los acuerdos con la Santa Sede."
+    "adel": "Estimación: su programa del 29N pide que ninguna confesión tenga privilegios fiscales ni simbólicos; no nombra los acuerdos con la Santa Sede.",
+    "ph": "Estimación: su programa del 29N pide un Estado laico y laicidad absoluta en la escuela (p. 13); no nombra los acuerdos con la Santa Sede."
    }
   },
   {
@@ -16555,7 +16979,8 @@
     "bildu": 2,
     "upn": 2,
     "bng": 2,
-    "comp": 2
+    "comp": 2,
+    "ie": 2
    },
    "est": [
     "fa",
@@ -16567,7 +16992,8 @@
     "pnv",
     "bildu",
     "upn",
-    "bng"
+    "bng",
+    "ie"
    ],
    "notes": {
     "pp": "Su portavoz adjunto en el Congreso defendió acabar con el anonimato en redes y registrarse con identidad real."
@@ -16596,6 +17022,12 @@
      "Programa de Compromís para las elecciones generales y valencianas de 2019, p. 55",
      "programa",
      "2019-04"
+    ],
+    "ie": [
+     "https://iustitiaeuropa.es/img/bloques/documentos/descarga-aqui-tu-contrato-00030.pdf#page=26",
+     "Contrato Electoral de Iustitia Europa (sección «Elecciones 29-N» de su web; versión del 11 de noviembre de 2026), p. 26",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16605,7 +17037,8 @@
     "fa": "Estimación: no consta una postura verificada de Sumar sobre obligar a verificar la identidad real en redes.",
     "pod": "Estimación: sin postura publicada sobre la verificación de identidad en redes.",
     "erc": "Estimación: posición intermedia sin propuesta conocida.",
-    "comp": "Incluye entre los derechos digitales básicos el derecho al olvido, a la privacidad y al anonimato, lo que contradice poner fin al anonimato."
+    "comp": "Incluye entre los derechos digitales básicos el derecho al olvido, a la privacidad y al anonimato, lo que contradice poner fin al anonimato.",
+    "ie": "Estimación: su contrato rechaza el control social mediante control biométrico y defiende la libertad de expresión."
    }
   },
   {
@@ -16748,10 +17181,12 @@
     "drago": 1,
     "comp": 1,
     "cha": 1,
+    "existe": 2,
     "mes": 1,
     "adel": 1,
     "fo": 5,
-    "falange": 4
+    "falange": 4,
+    "ph": 2
    },
    "est": [
     "salf",
@@ -16763,8 +17198,10 @@
     "upc",
     "drago",
     "comp",
+    "existe",
     "mes",
-    "falange"
+    "falange",
+    "ph"
    ],
    "src": {
     "comp": [
@@ -16868,6 +17305,18 @@
      "Programa de FE de las JONS para las generales del 29N de 2026, p. 25",
      "programa",
      "2026-11"
+    ],
+    "existe": [
+     "https://teruelexiste.info/wp-content/uploads/2026/11/Programa-Elecciones-Generales-2026.pdf#page=3",
+     "Programa de Teruel Existe para las generales de 2026, p. 3",
+     "programa",
+     "2026-11"
+    ],
+    "ph": [
+     "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf#page=17",
+     "Programa del Partido Humanista para las elecciones generales de 2026, p. 17",
+     "programa",
+     "2026-11"
     ]
    },
    "why": {
@@ -16887,7 +17336,9 @@
     "pnv": "Estimación: su programa del 29N pide aplicar de forma efectiva las leyes de igualdad y reforzar los organismos de igualdad; no menciona las cuotas.",
     "adel": "Su programa del 29N pide paridad obligatoria en instituciones, consejos de administración y órganos públicos.",
     "d21": "Estimación: su programa del 29N quiere ir «más allá de la actual ley de paridad» y extender el objetivo del 40 % de mujeres a las presidencias federativas.",
-    "falange": "Estimación: su programa del 29N se opone al feminismo y propone derogar las leyes «de género» y suprimir los privilegios concedidos a esos colectivos."
+    "falange": "Estimación: su programa del 29N se opone al feminismo y propone derogar las leyes «de género» y suprimir los privilegios concedidos a esos colectivos.",
+    "existe": "Estimación: su programa del 29N pide «ni un paso atrás en los derechos conseguidos» y medidas de igualdad; no habla de las cuotas.",
+    "ph": "Estimación: su programa del 29N apoya las medidas que reparan discriminaciones históricas; no nombra las cuotas."
    }
   },
   {
@@ -16970,10 +17421,10 @@
      "2026-02-17"
     ],
     "junts": [
-     "https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html",
-     "Vozpópuli, votación de la ley de Junts contra el burka, 14/04/2026",
-     "parlamento",
-     "2026-04-14"
+     "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=48",
+     "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 48",
+     "programa",
+     "2026-11"
     ],
     "pnv": [
      "https://www.vozpopuli.com/espana/politica/junts-se-queda-solo-y-ningun-partido-respalda-su-ley-contra-el-burka-y-el-niqab.html",
@@ -17023,7 +17474,7 @@
     "vox": "Su programa de 2026 prohíbe el burka y el niqab en todos los espacios públicos y en los lugares donde se presten servicios públicos.",
     "fa": "Votó contra las leyes de Vox y Junts para prohibir el burka por considerarlas discriminatorias.",
     "erc": "ERC rechazó la ley de Vox para prohibir el burka, aunque dijo oponerse a la prenda.",
-    "junts": "Presentó una ley para prohibir el burka y el niqab, que solo apoyó su grupo.",
+    "junts": "Su programa del 29N propone prohibir en el espacio público el niqab y el burka, no el hiyab.",
     "pnv": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     "bildu": "Rechazó la ley de Junts para prohibir el burka y el niqab.",
     "upn": "Votó a favor de tomar en consideración la ley de Vox que prohibía el burka y el niqab en el espacio público, que no prosperó.",
