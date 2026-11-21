@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-21",
+  "id": "A05",
+  "partido": "junts",
+  "de": 4,
+  "a": 2,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide subir las pensiones según el IPC catalán y jubilación anticipada sin penalización con 40 años cotizados (p. 58); no dice cómo financiarlo.",
+  "fuente": [
+   "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=57",
+   "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 57",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
   "fecha": "2026-11-20",
   "id": "A01",
   "partido": "falange",
