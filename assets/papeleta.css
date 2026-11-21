@@ -1381,3 +1381,22 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 .sp-jump a:hover { border-color: var(--ink); }
 .sp-jump .sp-jump-test { background: var(--mark); border-color: var(--ink); color: #111318; }
 .sp-more { margin-top: 6px; }
+
+/* Rediseño 30N · resultado: pestañas con los apartados principales; «Secciones» queda para la lista completa */
+.rt-tabs { margin: 4px 0 10px; border-bottom: 1.5px solid var(--rule); }
+.rt-tabs ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.rt-tabs ul::-webkit-scrollbar { display: none; }
+.rt-tabs a { display: inline-flex; align-items: center; min-height: 46px; padding: 0 14px; white-space: nowrap; font-weight: 700; font-size: 15px; color: var(--ink-2); text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -1.5px; }
+.rt-tabs a:hover { color: var(--ink); background: var(--rule-2); border-radius: 8px 8px 0 0; }
+.rt-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+.rt-tabs a:focus-visible { outline: var(--focus-ring, 3px solid #1a5fff); outline-offset: -3px; }
+@media print { .rt-tabs { display: none; } }
+
+/* Pestañas en la misma franja que el botón flotante «Secciones» (que sigue fijo al bajar) */
+.rt > .res-nav { margin: 6px 0 0; }
+.rt-tabs ul { padding-right: 200px; }
+@media (max-width: 700px) {
+  .rt-tabs ul { padding-right: 64px; }
+  #v-results .res-nav .nav-txt, #v-results .res-nav .nav-chev { display: none; }
+  #v-results .res-nav .nav-btn { padding: 4px; gap: 0; }
+}

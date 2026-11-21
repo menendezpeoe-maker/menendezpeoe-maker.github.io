@@ -868,7 +868,14 @@ function navLinks() {
 // Una sección cada vez: la elegida (y las que van con ella) se ven; el resto, no
 let RT_CUR = "summary";
 const rtOn = (id, cur) => id === cur || ((id === "friend" || id === "tiles") && cur === "summary") || (id === "support" && (cur === "summary" || cur === "share"));
+// Rediseño 30N: pestañas con los apartados principales (el menú «Secciones» sigue con todos)
+const RT_TABS = ["summary", "parties", "dims", "map", "review", "how"];
+const RT_TAB_LBL = { summary: "Resultado", parties: "Por partido", dims: "Tu perfil", map: "Mapa", review: "Tus respuestas", how: "Cómo se calcula" };
+function rtSyncTabs() {
+  $$("#v-results .rt-tabs a").forEach((a) => { if (a.dataset.tab === RT_CUR) { a.setAttribute("aria-current", "page"); const ul = a.closest("ul"); if (ul) ul.scrollLeft = Math.max(0, a.offsetLeft - 16); } else a.removeAttribute("aria-current"); });
+}
 function rtSyncNav() {
+  rtSyncTabs();
   const nav = $("#v-results .res-nav"); if (!nav) return;
   const list = rtList(), i = Math.max(0, list.findIndex((m) => m.id === RT_CUR)), pct = Math.round(((i + 1) / list.length) * 100);
   nav.querySelectorAll("#nav-panel a").forEach((a) => { if (a.dataset.sec === "r-" + RT_CUR) { a.setAttribute("aria-current", "true"); $("#nav-cur").textContent = a.textContent; nav.querySelector(".nav-ico").innerHTML = NAV_ICON[a.dataset.ico]; } else a.removeAttribute("aria-current"); });
@@ -941,7 +948,7 @@ function renderResults() {
     ${SHARED ? `<div class="shared-banner"><div class="wrap"><p><b>Estás viendo un resultado compartido.</b> ${S && answered(S).length >= 5 ? "Debajo ves cuánto coincidís." : "Haz tu propio test y descubre cuánto coincidís."} Verlo no modifica tu test.</p><button type="button" class="btn btn-primary btn-sm" data-act="own-test">Hacer mi propio test</button></div></div>` : ""}
     <div class="wrap rt">
       <nav class="res-nav" aria-label="Secciones del resultado">
-        <button type="button" class="nav-btn" id="nav-btn" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true">
+        <button type="button" class="nav-btn" id="nav-btn" aria-label="Secciones del resultado" aria-expanded="false" aria-controls="nav-panel" aria-haspopup="true">
           <span class="nav-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle class="rg-bg" cx="18" cy="18" r="16"/><circle class="rg-fg" cx="18" cy="18" r="16" pathLength="100"/></svg><svg class="nav-ico" viewBox="0 0 20 20">${NAV_ICON.summary}</svg></span>
           <span class="nav-txt"><small>Secciones</small><b id="nav-cur">Resumen</b></span>
           <svg class="nav-chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 8l4.5 4.5L14.5 8"/></svg>
@@ -952,6 +959,7 @@ function renderResults() {
           ${navLinks()}
         </div>
       </nav>
+      <nav class="rt-tabs" aria-label="Apartados principales del resultado"><ul>${RT_TABS.filter((id) => rtList().some((m) => m.id === id)).map((id) => `<li><a href="#r-${id}" data-tab="${id}">${esc(RT_TAB_LBL[id] || rtList().find((m) => m.id === id).label)}</a></li>`).join("")}</ul></nav>
       <div class="rt-top" id="rt-top" hidden></div>
       <section id="r-summary" class="summary res-sec" style="padding-top:8px"></section>
       <section id="r-friend" class="res-sec" aria-labelledby="friend-h" hidden></section>
