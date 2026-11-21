@@ -1349,3 +1349,17 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 .sp > section { grid-template-columns: minmax(0, 1fr); }
 .sp h1, .sp .h2 { overflow-wrap: break-word; hyphens: auto; }
 .sp-areas { grid-template-columns: minmax(0, 1fr); } .sp-areas > * { min-width: 0; }
+
+/* Rediseño 30N · portada: «Explora la política española» justo después del test */
+.ex-band .ex-lede { margin: 2px 0 12px; color: var(--ink-2); font-size: 16px; }
+.ex-parties { list-style: none; margin: 0 0 14px; padding: 2px 0 8px; display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+.ex-parties li { flex: none; scroll-snap-align: start; }
+.ex-parties a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 4px 12px 4px 5px; border: 1px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); text-decoration: none; font-weight: 650; font-size: 14px; white-space: nowrap; max-width: 260px; }
+.ex-parties a span:last-child { overflow: hidden; text-overflow: ellipsis; }
+.ex-parties a:hover, .ex-parties a:focus-visible { border-color: var(--ink); }
+.ex-cards a { position: relative; padding: 16px 16px 15px; gap: 4px; transition: border-color var(--transition, .15s), transform .15s ease; }
+.ex-cards a:hover { transform: translateY(-2px); }
+.ex-ico { width: 34px; height: 34px; padding: 6px; margin-bottom: 6px; border-radius: 10px; background: var(--mark); color: #111318; }
+.ex-cards b { font-size: 16.5px; line-height: 1.2; }
+@media (min-width: 900px) { .ex-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .ex-cards b { font-size: 15.5px; } .ex-ico { width: 30px; height: 30px; padding: 5px; } }
