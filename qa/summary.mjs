@@ -36,7 +36,7 @@ for (const [w, h, dark] of [[390, 844, false], [390, 844, true], [1280, 800, fal
   ok(await page.isVisible("#r-summary h1.profile-h") && await page.isVisible("#r-summary .rel"), `perfil en una frase y solidez a la vista (${tag})`);
   // Rediseño 14 nov (maqueta aprobada): en el móvil, ranking arriba y «Compartir» y «Afinar» en la barra fija de abajo
   if (w < 900) {
-    const c = await page.locator('.rt-sticky a[href="#r-share"]').boundingBox(), r1 = await page.locator("#r-summary .r5-side li").first().boundingBox();
+    const c = await page.locator('.rt-sticky a[href="#r-share"]').boundingBox(), r1 = await page.locator("#r-summary .tm-group li, #r-summary .r5-side li").first().boundingBox();  // 21 nov: con empate o solidez baja, la cabecera ya muestra las primeras
     ok(c && r1 && c.y + c.height <= h && r1.y + r1.height <= h - 70, `«Compartir» fijo abajo y la primera del ranking en la primera pantalla (${tag}: ${Math.round(r1?.y + r1?.height)} px)`);
     ok(await page.isVisible('#r-summary [data-act="challenge"]'), `«Reta a un amigo» en el resumen (${tag})`);
   } else {

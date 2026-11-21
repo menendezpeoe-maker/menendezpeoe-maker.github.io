@@ -1236,8 +1236,22 @@ function renderVersus() {
 // Mejora 1 (2 nov): las cinco candidaturas más cercanas, con barras en escala real (0–100 %), en lugar de la línea «Siguientes»
 // Se pinta dos veces: en la columna de la derecha (ordenador) y tras los botones (móvil), para que en el móvil
 // «Compartir» y «Reta a un amigo» sigan en la primera pantalla. Solo una de las dos se muestra.
+// 21 nov (neutralidad): empates y resultados poco sólidos no coronan a una sola candidatura
+function rankN(M, m) { return 1 + M.prov.filter((o) => o.pct > m.pct).length; }
+function leadGroup(M) {
+  const top = M.prov[0]; if (!top) return [];
+  const tied = M.prov.filter((m) => m.pct === top.pct);
+  return M.rel.level === "baja" ? M.prov.slice(0, Math.max(3, tied.length)) : tied;
+}
+// 21 nov (revisión ChatGPT): junto al porcentaje, cuántas posturas de la primera tienen fuente y si cambia sin las estimadas
+function sensLine(M, top, st) {
+  const nEst = top.items.filter((i) => i.est).length, nDoc = top.items.length - nEst;
+  const info = (M.rel.checks || []).find((c) => c.info);
+  return `<p class="small muted tm-sens">${esc(P[top.pid].ab)}: ${nDoc} ${nDoc === 1 ? "postura documentada" : "posturas documentadas"} y ${nEst} ${nEst === 1 ? "estimada" : "estimadas"} en tu cálculo.${info && nEst ? ` ${esc(info.txt)}` : ""}</p>`;
+}
 function rank5(M, st, where) {
-  const rows = M.prov.slice(0, 5).map((m, i) => `<li${i ? "" : ' class="is-top"'}><span class="r5-n" aria-hidden="true">${i + 1}</span>${logo(m.pid, "xs")}<span class="r5-name">${esc(pName(m.pid, st.prov))}</span><span class="r5-bar" aria-hidden="true"><i style="width:${m.pct}%"></i></span><b class="r5-pct">${m.pct} %</b></li>`).join("");
+  // 21 nov: misma posición para los porcentajes iguales (sin primero y segundo en un empate)
+  const rows = M.prov.slice(0, 5).map((m, i) => `<li${m.pct === M.prov[0].pct ? ' class="is-top"' : ""}><span class="r5-n" aria-hidden="true">${rankN(M, m)}</span>${logo(m.pid, "xs")}<span class="r5-name">${esc(pName(m.pid, st.prov))}</span><span class="r5-bar" aria-hidden="true"><i style="width:${m.pct}%"></i></span><b class="r5-pct">${m.pct} %</b></li>`).join("");
   // Mejora 4 (2 nov): comparar la primera con cualquiera de las otras cuatro, con el comparador «frente a frente» que ya existía
   const top = M.prov[0], rest = M.prov.slice(1, 5);
   const vs = top && rest.length ? `<div class="r5-vs"><span class="small">Comparar ${esc(pName(top.pid, st.prov))} con:</span>${rest.map((m) => `<button type="button" class="r5-vs-b" data-vs="${m.pid}" >${esc(pName(m.pid, st.prov))}</button>`).join("")}</div>` : "";
@@ -1246,6 +1260,7 @@ function rank5(M, st, where) {
 function renderSummary() {
   const st = ST(), M = MODEL, pr = PROV[st.prov], top = M.prov[0], next = NEXT_MODE[st.mode] || null;
   const ps = profileSentence(M);
+  const lead = leadGroup(M), tie = !!top && lead.filter((m) => m.pct === top.pct).length > 1;
   const sig = BANK.dims.map((d) => {
     const o = M.user.dims[d.id];
     if (!o) return `<div class="sig-row"><span>${esc(d.name)}</span><span class="small muted">sin datos</span></div>`;
@@ -1263,19 +1278,23 @@ function renderSummary() {
       <div class="ballot-top"><span>${SHARED ? "Resultado compartido" : "Tu resultado"} · ${esc(modeLabelM(st))}</span><span>Congreso · ${esc(pr.name)}</span></div>
       <div class="ballot-body sum-body">
         <div class="top-match">
-          <p class="label">${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}</p>
-          ${top ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
-          <p class="tm-line"><span class="tm-pct">${top.pct}<small>%</small></span><span class="small muted">de coincidencia, pregunta a pregunta. No es una probabilidad de voto.</span></p>
+          <p class="label">${lead.length > 1 ? `${SHARED ? "Sus" : "Tus"} mayores coincidencias en ${esc(pr.name)}` : `${SHARED ? "Su" : "Tu"} mayor coincidencia en ${esc(pr.name)}`}</p>
+          ${top && lead.length > 1 ? `<ul class="tm-group">${lead.map((m) => `<li><span class="tm-row">${logo(m.pid, "sm")}<span class="tm-name">${esc(pName(m.pid, st.prov))}</span></span><span class="tm-pct">${m.pct}<small>%</small></span></li>`).join("")}</ul>
+          <p class="small muted tm-why">${tie ? `${esc(lead.filter((m) => m.pct === top.pct).map((m) => P[m.pid].ab).join(", ").replace(/, ([^,]*)$/, " y $1"))} empatan: ninguna queda por delante. ` : ""}${M.rel.level === "baja" ? "Con pocas respuestas, unos puntos de diferencia no son significativos: afina el test para un resultado más sólido. " : ""}Coincidencia pregunta a pregunta; no es una probabilidad de voto.</p>` : ""}
+          ${top && lead.length <= 1 ? `<div class="tm-row">${logo(top.pid)}<span class="tm-name">${esc(pName(top.pid, st.prov))}</span></div>
+          <p class="tm-line"><span class="tm-pct">${top.pct}<small>%</small></span><span class="small muted">de coincidencia, pregunta a pregunta. No es una probabilidad de voto.</span></p>` : ""}
+          ${top ? `
           <p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>
           ${rank5(M, st, "side")}
+          ${sensLine(M, top, st)}
           ${top.pct < 60 ? `<p class="small muted tm-none">Ninguna candidatura encaja de lleno con tus respuestas: es normal en perfiles que combinan ideas de distintos lados.</p>` : ""}` : '<p>No hay candidaturas comparables.</p><p class="rel ${M.rel.level}"><i></i>Solidez del resultado: ${M.rel.level}</p>'}
         </div>
         <div class="sum-main">
           <p class="who">${SHARED ? "Resultado compartido · " : ""}${nAns} respuestas con opinión de ${nTotal}${M.ns.length ? ` · ${M.ns.length} «No lo sé»` : ""}${st.prios.length ? ` · Prioridades: ${st.prios.map((a) => AREA[a].letter).join(", ")}` : ""}</p>
           <h1 id="res-h" class="profile-h">${esc(ps.head)}</h1>
           ${top ? `<div class="sum-two">
-            <div><p class="subh" style="color:var(--ok)">En qué coincidís</p>${yes.length ? `<ul class="sum-l">${yes.map(li).join("")}</ul>` : '<p class="small muted">Ninguna coincidencia clara.</p>'}</div>
-            <div><p class="subh" style="color:var(--ko)">En qué chocáis</p>${no.length ? `<ul class="sum-l">${no.map(li).join("")}</ul>` : '<p class="small muted">No hay discrepancias fuertes.</p>'}</div>
+            <div><p class="subh" style="color:var(--ok)">En qué coincidís${lead.length > 1 ? ` con ${esc(P[top.pid].ab)}` : ""}</p>${yes.length ? `<ul class="sum-l">${yes.map(li).join("")}</ul>` : '<p class="small muted">Ninguna coincidencia clara.</p>'}</div>
+            <div><p class="subh" style="color:var(--ko)">En qué chocáis${lead.length > 1 ? ` con ${esc(P[top.pid].ab)}` : ""}</p>${no.length ? `<ul class="sum-l">${no.map(li).join("")}</ul>` : '<p class="small muted">No hay discrepancias fuertes.</p>'}</div>
           </div>` : ""}
           ${!SHARED ? `<div class="res-actions"><a class="btn btn-primary" href="#r-share">Compartir</a><button type="button" class="btn btn-ghost" data-act="challenge">Reta a un amigo</button>${next ? `<button type="button" class="btn btn-mark" data-act="more">Afinar con la versión ${MODES[next].label.toLowerCase()} (${buildOrder(next, st.seed).length} preguntas)</button>` : ""}${donateOptions().length ? '<a class="btn btn-ghost" href="#r-support">Donar</a>' : ""}</div>
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
@@ -2137,7 +2156,10 @@ function buildShareText() {
   const st = S, M = MODEL, top = M.prov[0];
   const t = topicOf(st), tk = t && Object.keys(TOPICS).find((k) => TOPICS[k] === t);
   const lines = [t ? `He hecho el test de ${t.label.toLowerCase()} del Test 29N, para el 29N.` : "He hecho el Test 29N, un test político para el 29N."];
-  if (SH.party && top) lines.push(`Mi mayor coincidencia${t ? " en este tema" : ""} en ${PROV[st.prov].name}: ${pName(top.pid, st.prov)} (${top.pct} %).`);
+  const tied = top ? M.prov.filter((m) => m.pct === top.pct) : [];
+  if (SH.party && top) lines.push(tied.length > 1
+    ? `Empate en mi mayor coincidencia${t ? " en este tema" : ""} en ${PROV[st.prov].name}: ${tied.map((m) => pName(m.pid, st.prov)).join(", ").replace(/, ([^,]*)$/, " y $1")} (${top.pct} %).`
+    : `Mi mayor coincidencia${t ? " en este tema" : ""} en ${PROV[st.prov].name}: ${pName(top.pid, st.prov)} (${top.pct} %).`);
   const foot = ["", `¿Y tú? Haz el test aquí: ${t ? `${siteUrl().replace(/[^/]*$/, "")}?tema=${tk}` : siteUrl()}`];
   // La línea del perfil solo entra si el mensaje sigue cabiendo en X (280 caracteres); así el texto por defecto se puede publicar tal cual
   if (!t) { const withProfile = [...lines, `Mi perfil: ${lcFirst(profileFirst(M))}`, ...foot].join("\n"); if (xLength(withProfile) <= 280) return withProfile; }

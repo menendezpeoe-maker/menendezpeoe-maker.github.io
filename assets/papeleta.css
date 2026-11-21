@@ -1294,3 +1294,11 @@ details.sp-area[open] { border-color: var(--ink); }
 .sp-facts dt { font-size: 12px; letter-spacing: .05em; }
 .sp-facts dd { font-size: 15.5px; overflow-wrap: anywhere; }
 .phead ~ .sp-facts > div:nth-child(n+3) { grid-column: 1 / -1; }
+
+/* 21 nov · Empate o solidez baja: varias candidaturas al mismo tamaño en la cabecera del resultado */
+.tm-group { list-style: none; margin: 4px 0 8px; padding: 0; display: grid; gap: 8px; }
+.tm-group li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.tm-group li:last-child { border-bottom: 0; }
+.tm-group .tm-name { font-size: clamp(17px, 2.2vw, 21px); }
+.sum-body .tm-group .tm-pct { font-size: clamp(30px, 4vw, 38px); flex: none; }
+.tm-why { margin: 0 0 10px; }
