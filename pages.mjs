@@ -7,8 +7,9 @@ import { SEATS, SEATS_SOURCE, SENATE, LOREG_URL } from "./src/escanos.src.mjs";
 import { RES2023 } from "./src/resultados2023.src.mjs";
 // Títulos: Google muestra entero hasta unos 60 caracteres. Si se pasan, se acortan por pasos (de menos a más) sin tocar el principio,
 // que es lo que se busca: primero el sufijo de marca (el sitio ya se identifica por el dominio), luego coletillas.
-const TT_STEPS = [[/ · Test 29N$/, ""], [/, tema a tema$/, ""], [/(cada partido) el 29N$/, "$1"], [/ para el 29N: /, " 29N: "], [/ 29N: ¿con qué partido coincides\?$/, ": ¿con qué partido coincides?"], [/: qué piensa cada partido$/, ": qué dice cada partido", true]];  // true: solo si así cabe
+const TT_STEPS = [[/ · ${MARCA}$/, ""], [/, tema a tema$/, ""], [/(cada partido) el 29N$/, "$1"], [/ para el 29N: /, " 29N: "], [/ 29N: ¿con qué partido coincides\?$/, ": ¿con qué partido coincides?"], [/: qué piensa cada partido$/, ": qué dice cada partido", true]];  // true: solo si así cabe
 const tt = (s) => { for (const [re, to, onlyIfFits] of TT_STEPS) { if (s.length <= 60) break; const t = s.replace(re, to); if (!onlyIfFits || t.length <= 60) s = t; } return s; };
+import { MARCA } from "./sitio.mjs";
 import { GLOSARIO } from "./src/glosario.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
@@ -79,7 +80,7 @@ export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
     return "—";
   };
   const logo = (pid) => { const p = P[pid]; return `<span class="logo${p.ab.length >= 5 ? " long" : ""}" style="background:${p.color};color:${textOn(p.color)}" aria-hidden="true">${esc(p.ab)}</span>`; };
-  const errA = (q, pid) => `<a class="err-link" href="mailto:test29n.es@gmail.com?subject=${encodeURIComponent(`Test 29N · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
+  const errA = (q, pid) => `<a class="err-link" href="mailto:test29n.es@gmail.com?subject=${encodeURIComponent(`${MARCA} · posible error en ${q.id} · ${P[pid].name}`)}">¿Ves un error?</a>`;
   const whyOf = (q, pid) => { const k = (s) => s.replace(/[.\s]+$/, "").toLowerCase(); const w = q.why?.[pid] || "", n = q.notes?.[pid] || ""; return !n || k(w).includes(k(n)) ? w : !w || k(n).includes(k(w)) ? n : `${w} ${n}`; }; // sin repetir la nota si ya está en la justificación
   const srcHTML = (q, pid) => { const s = q.src?.[pid]; return s ? `<a href="${esc(s[0])}" target="_blank" rel="noopener noreferrer">${esc(s[1])}</a> <span class="src-t">(${esc(SRC_TYPE[s[2]])}, ${esc(fmtDate(s[3]))})</span>` : ""; };
   // Programa del 29N de cada candidatura (src/programas.src.mjs): enlace oficial o «aún no publicado»
@@ -94,8 +95,8 @@ export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
 </div></details>`;
   const header = `<a class="skip" href="#main">Saltar al contenido</a>
 <header class="site-head"><div class="wrap head-row">
-  <a class="brand" href="/" aria-label="Test 29N, ir al test" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Test</span><span class="brand-ed">29N</span></a>
-  <nav class="head-nav sp-nav" aria-label="Secciones"><a class="navlink" href="/partidos/">Partidos</a><a class="navlink" href="/programas/">Programas</a><a class="navlink" href="/temas/">Temas</a><a class="navlink" href="/comparar/">Comparar</a><a class="navlink nav-circ" href="/provincias/">Mi provincia</a><a class="navlink nav-x" href="/metodologia/">Cómo funciona</a><a class="btn btn-sm head-cta" href="/">Hacer el test</a></nav>
+  <a class="brand" href="/" aria-label="${MARCA}, ir a la portada" style="text-decoration:none;color:inherit"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 4h20l7 7v25H7z" style="fill:var(--sheet)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M27 4v7h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="20" width="19" height="7" rx="1.5" style="fill:var(--mark)"/><path d="M12 31h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span class="brand-word">Mirada</span><span class="brand-ed">Política</span></a>
+  <nav class="head-nav sp-nav" aria-label="Secciones"><a class="navlink" href="/partidos/">Partidos</a><a class="navlink" href="/programas/">Programas</a><a class="navlink" href="/temas/">Temas</a><a class="navlink" href="/comparar/">Comparar</a><a class="navlink nav-circ" href="/provincias/">Mi provincia</a><a class="navlink nav-x" href="/metodologia/">Cómo funciona</a><a class="btn btn-sm head-cta" href="/"><span class="cta-l">Hacer el test</span><span class="cta-s">Test</span></a></nav>
   ${MENU}
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
@@ -112,15 +113,15 @@ ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
   const page = ({ path, title, desc, crumbs, body, ld }) => {
     title = tt(title);
     const url = SITE + path.replace(/^\//, "");
-    const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Test político 29N", url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
+    const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: MARCA, url: SITE }, ...crumbs].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) };
     const extra = `<link rel="canonical" href="${url}">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Test 29N"><meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article"><meta property="og:site_name" content="${MARCA}"><meta property="og:locale" content="es_ES">
 <meta property="og:url" content="${url}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${SITE}og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE}og.png">
 <script type="application/ld+json">${JSON.stringify(ld ? [crumbLd, ld] : crumbLd).replace(/</g, "\\u003c")}</script>
 `;
-    const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">Test político 29N</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
+    const nav = `<nav class="crumbs" aria-label="Ruta"><a href="/">${MARCA}</a>${crumbs.map((c, i) => i === crumbs.length - 1 ? ` › <span aria-current="page">${esc(c.name)}</span>` : ` › <a href="${c.url.replace(SITE, "/")}">${esc(c.name)}</a>`).join("")}</nav>`;
     // «En esta página»: índice automático de las secciones (h2 con id) en las páginas largas, justo tras la cabecera
     const secs = [...body.matchAll(/<h2 class="h2[^"]*" id="([^"]+)">([\s\S]*?)<\/h2>/g)].map((m) => [m[1], m[2].replace(/<[^>]+>/g, "").trim()]);
     if (secs.length >= 4 && body.includes("</header>")) body = body.replace("</header>", `</header>\n<nav class="toc" aria-label="En esta página"><p class="label">En esta página</p><ul>${secs.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join("")}</ul></nav>`);
@@ -161,7 +162,7 @@ ${footer}
     const others = live.filter((x) => x !== pid).map((x) => `<a href="/partidos/${x}/">${esc(P[x].ab)}</a>`).join(" · ");
     page({
       path: `/partidos/${pid}/`,
-      title: tt(`${p.name}: programa y propuestas para el 29N, tema a tema · Test 29N`),
+      title: tt(`${p.name}: programa y propuestas para el 29N, tema a tema · ${MARCA}`),
       desc: `Las posturas de ${p.name} en ${known.length} cuestiones del 29N (vivienda, impuestos, inmigración, sanidad…), con fuentes. Compara con las tuyas en el test.`,
       crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }, { name: p.name, url: `${SITE}partidos/${pid}/` }],
       body: `<header class="sp-head"><div class="phead">${logo(pid)}<div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(p.name)}: qué propone, tema a tema</h1></div></div>
@@ -229,13 +230,13 @@ ${S.items.map(row).join("")}
     const items = qs.map((q) => qBlock(q)).join("");
     page({
       path: `/temas/${slug(a.name)}/`,
-      title: tt(`${a.name}: qué piensa cada partido el 29N · Test 29N`),
+      title: tt(`${a.name}: qué piensa cada partido el 29N · ${MARCA}`),
       desc: `${qs.length} cuestiones sobre ${a.name.toLowerCase()} con contexto neutral y la postura de cada candidatura el 29N, con fuentes cuando las hay.`,
       crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(a.name)}: qué piensa cada partido</h1>
   ${SUMM[a.id] ? `<p class="lede">Qué propone cada candidatura sobre ${esc(a.name.toLowerCase())}, con sus fuentes.</p></header>
 ${summBox(a.id)}
-<p>Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p>` : `<p class="lede">Las ${qs.length} preguntas del Test 29N sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p></header>
+<p>Las ${qs.length} preguntas del test de ${MARCA} sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p>` : `<p class="lede">Las ${qs.length} preguntas del test de ${MARCA} sobre ${esc(a.name.toLowerCase())}, con su contexto neutral y la postura de cada candidatura, de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo).</p></header>
 ${cta("¿Y tú qué piensas?")}`}
 <nav class="q-index" aria-label="Preguntas de este tema"><p class="label">${qs.length} preguntas en esta página</p><ol>${qs.map((q) => `<li><a href="#${q.id}"><span class="q-code">${qCode(q)}</span>${esc(q.short)}</a></li>`).join("")}</ol></nav>
 ${method}<p class="small muted">Las etiquetas con borde discontinuo y en cursiva son posturas estimadas. Toca un partido para ver todas sus posturas.</p>
@@ -252,7 +253,7 @@ ${cta("Descubre con qué candidatura coincides más")}
     const qLink = (x) => `<a href="/preguntas/${x.id.toLowerCase()}/">${esc(x.short)}</a>`;
     page({
       path: `/preguntas/${q.id.toLowerCase()}/`,
-      title: tt(`${q.short}: qué piensa cada partido · Test 29N`),
+      title: tt(`${q.short}: qué piensa cada partido · ${MARCA}`),
       desc: `${q.short}: la postura de ${known.length} candidaturas el 29N, con contexto neutral${nSrc ? ` y ${nSrc} ${nSrc === 1 ? "fuente enlazada" : "fuentes enlazadas"}` : ""}. Compara con tu opinión.`,
       crumbs: [{ name: "Temas", url: `${SITE}temas/` }, { name: a.name, url: `${SITE}temas/${slug(a.name)}/` }, { name: q.short, url: `${SITE}preguntas/${q.id.toLowerCase()}/` }],
       body: `<header class="sp-head"><p class="label">${esc(a.letter)} · ${esc(a.name)} · Elecciones generales del 29N</p><h1 class="h1">${esc(q.short)}: qué piensa cada partido</h1>
@@ -266,11 +267,11 @@ ${cta("¿Y tú qué opinas? Responde el test")}
 
   page({
     path: "/preguntas/",
-    title: `Las ${B.questions.length} preguntas del test, partido a partido · Test 29N`,
-    desc: `Todas las cuestiones del Test 29N para las elecciones generales del 29N, cada una con su contexto neutral y la postura de cada candidatura.`,
+    title: `Las ${B.questions.length} preguntas del test, partido a partido · ${MARCA}`,
+    desc: `Todas las cuestiones del test de ${MARCA} para las elecciones generales del 29N, cada una con su contexto neutral y la postura de cada candidatura.`,
     crumbs: [{ name: "Preguntas", url: `${SITE}preguntas/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Qué piensa cada partido, pregunta a pregunta</h1>
-  <p class="lede">Las ${B.questions.length} cuestiones del Test 29N, agrupadas en ${B.areas.length} áreas. Cada una tiene su página con el contexto neutral y la postura de cada candidatura.</p></header>
+  <p class="lede">Las ${B.questions.length} cuestiones del test de ${MARCA}, agrupadas en ${B.areas.length} áreas. Cada una tiene su página con el contexto neutral y la postura de cada candidatura.</p></header>
 ${cta("Responde tú y compara")}
 ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="pa-${a.id}"><a href="/temas/${slug(a.name)}/">${esc(a.letter)} · ${esc(a.name)}</a></h2><ul class="dots">${B.questions.filter((q) => q.area === a.id).map((q) => `<li><a href="/preguntas/${q.id.toLowerCase()}/">${esc(q.short)}</a></li>`).join("")}</ul></section>`).join("")}`
   });
@@ -294,7 +295,7 @@ ${B.areas.map((a) => `<section aria-labelledby="pa-${a.id}"><h2 class="h3" id="p
     const others = PAIRS.filter((x) => x[0] !== a || x[1] !== b).map(([x, y]) => `<a href="${pairPath(x, y)}">${esc(P[x].ab)} y ${esc(P[y].ab)}</a>`).join(" · ");
     page({
       path: pairPath(a, b),
-      title: tt(`${A.ab} y ${Bp.ab}: diferencias y coincidencias para el 29N · Test 29N`),
+      title: tt(`${A.ab} y ${Bp.ab}: diferencias y coincidencias para el 29N · ${MARCA}`),
       desc: `Comparativa neutral de ${A.name} y ${Bp.name} en ${both.length} cuestiones del 29N: dónde coinciden, dónde chocan y su posición en siete dimensiones.`,
       crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }, { name: `${A.ab} y ${Bp.ab}`, url: `${SITE}comparar/${a}-${b}/` }],
       body: `<header class="sp-head"><div class="phead"><span class="pair">${logo(a)}${logo(b)}</span><div style="display:grid;gap:4px;min-width:0"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">${esc(A.ab)} y ${esc(Bp.ab)}: en qué coinciden y en qué se diferencian</h1></div></div>
@@ -310,11 +311,11 @@ ${cta(`¿Estás más cerca de ${esc(A.ab)} o de ${esc(Bp.ab)}?`)}
   }
   page({
     path: "/comparar/",
-    title: "Comparar partidos del 29N, dos a dos · Test 29N",
+    title: `Comparar partidos del 29N, dos a dos · ${MARCA}`,
     desc: "En qué coinciden y en qué se diferencian las principales candidaturas de las elecciones generales del 29N, con los mismos datos y fuentes que el test.",
     crumbs: [{ name: "Comparar", url: `${SITE}comparar/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Comparar partidos, dos a dos</h1>
-  <p class="lede">Comparativas neutrales entre candidaturas cercanas o rivales, con las posturas que usa el Test 29N. En el test puedes comparar cualquier pareja con tus propias respuestas.</p></header>
+  <p class="lede">Comparativas neutrales entre candidaturas cercanas o rivales, con las posturas que usa ${MARCA}. En el test puedes comparar cualquier pareja con tus propias respuestas.</p></header>
 <ul class="sp-cards">${PAIRS.map(([a, b]) => `<li><a href="${pairPath(a, b)}">${logo(a)}${logo(b)}<span><b>${esc(P[a].ab)} y ${esc(P[b].ab)}</b><span class="small muted">${esc(P[a].name)} · ${esc(P[b].name)}</span></span></a></li>`).join("")}</ul>
 ${cta("Compárate tú con cualquier candidatura")}`
   });
@@ -330,15 +331,15 @@ ${cta("Compárate tú con cualquier candidatura")}`
   const cols = Object.keys(rowsOpen[0]);
   mkdirSync(`${OUT}/datos`, { recursive: true });
   writeFileSync(`${OUT}/datos/posturas.csv`, "\ufeff" + [cols.join(","), ...rowsOpen.map((r) => cols.map((c) => csvCell(r[c])).join(","))].join("\r\n") + "\r\n");
-  writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: "Posturas de las candidaturas del Test 29N", licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: `Test 29N (${SITE.replace(/\/$/, "")})`, actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
+  writeFileSync(`${OUT}/datos/posturas.json`, JSON.stringify({ titulo: `Posturas de las candidaturas del test de ${MARCA}`, licencia: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)", atribucion: `${MARCA} (${SITE.replace(/\/$/, "")})`, actualizado: B.updated, escala: "1 = totalmente en desacuerdo … 5 = totalmente de acuerdo; en los dilemas, 1 = claramente A … 5 = claramente B", posturas: rowsOpen }, null, 1));
   const nSrcOpen = rowsOpen.filter((r) => r.fuente_url).length, nSrcInfOpen = rowsOpen.filter((r) => r.fuente_url && r.estimada).length, nEstOpen = rowsOpen.filter((r) => r.estimada).length;
   page({
     path: "/datos/",
-    title: "Datos abiertos: posturas de los partidos del 29N en CSV y JSON · Test 29N",
-    desc: `Descarga gratis las ${rowsOpen.length} posturas de las candidaturas del Test 29N en CSV y JSON, con fuentes y licencia CC BY 4.0, para periodistas, docentes e investigadores.`,
+    title: `Datos abiertos: posturas de los partidos del 29N en CSV y JSON · ${MARCA}`,
+    desc: `Descarga gratis las ${rowsOpen.length} posturas de las candidaturas del test de ${MARCA} en CSV y JSON, con fuentes y licencia CC BY 4.0, para periodistas, docentes e investigadores.`,
     crumbs: [{ name: "Datos abiertos", url: `${SITE}datos/` }],
     body: `<header class="sp-head"><p class="label">Para periodistas, docentes e investigadores</p><h1 class="h1">Datos abiertos</h1>
-  <p class="lede">Todas las posturas que usa el Test 29N, listas para descargar y reutilizar: ${rowsOpen.length} posturas de ${PD.order.length} candidaturas${PD.order.some((pid) => P[pid].out) ? ` (incluidas ${PD.order.filter((pid) => P[pid].out).length} que han anunciado que no se presentan)` : ""} en ${B.questions.length} cuestiones.</p></header>
+  <p class="lede">Todas las posturas que usa ${MARCA}, listas para descargar y reutilizar: ${rowsOpen.length} posturas de ${PD.order.length} candidaturas${PD.order.some((pid) => P[pid].out) ? ` (incluidas ${PD.order.filter((pid) => P[pid].out).length} que han anunciado que no se presentan)` : ""} en ${B.questions.length} cuestiones.</p></header>
 <section aria-labelledby="h-dl"><h2 class="h2" id="h-dl">Descargas</h2>
 <p><a class="btn btn-primary" href="/datos/posturas.csv" download>Descargar CSV</a> <a class="btn btn-ghost" href="/datos/posturas.json" download>Descargar JSON</a></p>
 <p class="small muted">Datos actualizados el ${esc(updated)}. El CSV usa comas como separador y codificación UTF-8, y se abre en Excel, LibreOffice o Google Sheets.</p></section>
@@ -348,7 +349,7 @@ ${cta("Compárate tú con cualquier candidatura")}`
 <li>La fuente enlazada, con título, tipo y fecha, cuando existe. Por ahora la tienen ${nSrcOpen} posturas: ${srcSplit(nSrcOpen - nSrcInfOpen, nSrcInfOpen)} (la fuente no basta para documentarlas). Para reproducir el recuento: filas con <code>fuente_url</code> y <code>estimada</code> = false, frente a <code>estimada</code> = true. El resto de las documentadas se basa en programas, votaciones y declaraciones que se irán enlazando una a una.</li>
 <li>Las posturas desconocidas no aparecen: no se rellenan ni se toman como neutrales.</li></ul></section>
 <section aria-labelledby="h-lic"><h2 class="h2" id="h-lic">Licencia</h2>
-<p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: Test 29N (${HOST})», y no des a entender que el Test 29N respalda tu uso.</p>
+<p>Los datos se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons Atribución 4.0 (CC BY 4.0)</a>: puedes copiarlos, adaptarlos y usarlos, también con fines comerciales, siempre que cites la fuente, por ejemplo «Fuente: ${MARCA} (${HOST})», y no des a entender que el Test 29N respalda tu uso.</p>
 <p class="small muted">Las posturas son una interpretación documentada de programas, votaciones y declaraciones, no un dato oficial de los partidos. Si ves un error, escribe a <a href="mailto:test29n.es@gmail.com">test29n.es@gmail.com</a>.</p></section>
 ${method}`
   });
@@ -362,7 +363,7 @@ ${method}`
   }
   const miniData = { site: SITE, qs: miniQs.map((q) => ({ id: q.id, text: q.text, type: q.type, A: q.A || "", B: q.B || "" })), parties: STATEWIDE.map((pid) => ({ ab: P[pid].ab, name: P[pid].name, color: P[pid].color, pos: Object.fromEntries(miniQs.map((q) => [q.id, q.pos[pid]])) })) };
   mkdirSync(`${OUT}/insertar`, { recursive: true });
-  writeFileSync(`${OUT}/insertar/mini.js`, `// Mini test del Test 29N: todo se calcula aquí, sin cookies, sin guardar nada y sin enviar respuestas.
+  writeFileSync(`${OUT}/insertar/mini.js`, `// Mini test del test de ${MARCA}: todo se calcula aquí, sin cookies, sin guardar nada y sin enviar respuestas.
 (() => {
 const D = ${JSON.stringify(miniData)};
 const LIK = ["Totalmente en desacuerdo", "En desacuerdo", "Ni de acuerdo ni en desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
@@ -390,7 +391,7 @@ el.addEventListener("click", (e) => {
 q();
 })();
 `);
-  writeFileSync(`${OUT}/insertar/index.html`, `${head("Mini test de 5 preguntas · Test 29N", "Mini test político de 5 preguntas del Test 29N para insertar en otras webs, sin cookies ni rastreo.", '<meta name="robots" content="noindex">\n', "/")}
+  writeFileSync(`${OUT}/insertar/index.html`, `${head(`Mini test de 5 preguntas · ${MARCA}`, `Mini test político de 5 preguntas del test de ${MARCA} para insertar en otras webs, sin cookies ni rastreo.`, '<meta name="robots" content="noindex">\n', "/")}
 <body class="mini-body">
 <main class="mini-wrap"><h1 class="mini-brand"><a href="${SITE}" target="_blank" rel="noopener"><b>Test</b> 29N</a> · Mini test político · Elecciones generales del 29N</h1>
 <div id="mini" aria-live="polite"><noscript><p>El mini test necesita JavaScript. <a href="${SITE}" target="_blank" rel="noopener">Haz el test completo en ${HOST}</a>.</p></noscript></div>
@@ -399,7 +400,7 @@ q();
 </body>
 </html>
 `);
-  const iframeCode = `<iframe src="${SITE}insertar/" title="Mini test político del Test 29N" width="100%" height="560" style="border:1px solid #D2D5CC;border-radius:12px;max-width:640px" loading="lazy"></iframe>`;
+  const iframeCode = `<iframe src="${SITE}insertar/" title="Mini test político del test de ${MARCA}" width="100%" height="560" style="border:1px solid #D2D5CC;border-radius:12px;max-width:640px" loading="lazy"></iframe>`;
 
   // ── Provincias: escaños del real decreto y candidaturas que se presentan según los datos del test
   const provRegion = Object.fromEntries(PD.regions.flatMap((r) => r.provs.map((x) => [x.id, r.id])));
@@ -459,7 +460,7 @@ ${r23Css}${res23(pr)}
   }
   page({
     path: "/provincias/",
-    title: "Las 52 circunscripciones del 29N: escaños y candidaturas · Test 29N",
+    title: `Las 52 circunscripciones del 29N: escaños y candidaturas · ${MARCA}`,
     desc: "Cuántos diputados elige cada provincia en las elecciones generales del 29 de noviembre de 2026 y qué candidaturas se presentan en cada una.",
     crumbs: [{ name: "Provincias", url: `${SITE}provincias/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Las 52 circunscripciones</h1>
@@ -526,7 +527,7 @@ rows(prov().parties);
 `);
   page({
     path: "/escanos/",
-    title: "Simulador de elecciones 29N: escaños con la ley D'Hondt · Test 29N",
+    title: `Simulador de elecciones 29N: escaños con la ley D'Hondt · ${MARCA}`,
     desc: "Calcula cómo se reparten los diputados de cada provincia con la ley D'Hondt y la barrera del 3 %, con los votos que tú quieras. Sin encuestas ni estimaciones.",
     crumbs: [{ name: "Simulador de escaños", url: `${SITE}escanos/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Simulador de escaños</h1>
@@ -558,7 +559,7 @@ rows(prov().parties);
     const lc = t.label.toLowerCase();
     page({
       path: `/tests/${k}/`,
-      title: tt(`Test de ${lc} para el 29N: ¿con qué partido coincides? · Test 29N`),
+      title: tt(`Test de ${lc} para el 29N: ¿con qué partido coincides? · ${MARCA}`),
       desc: `${qs.length} preguntas sobre ${lc} para comparar tus ideas con las candidaturas del 29N. Gratis, en 2 minutos y sin registro.`,
       crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }, { name: t.label, url: `${SITE}tests/${k}/` }],
       body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Test de ${esc(lc)}</h1>
@@ -573,7 +574,7 @@ ${cta("¿Prefieres el test completo?")}`
   }
   page({
     path: "/tests/",
-    title: "Tests políticos por tema: vivienda, inmigración, impuestos y más · Test 29N",
+    title: `Tests políticos por tema: vivienda, inmigración, impuestos y más · ${MARCA}`,
     desc: "Tests cortos de 6 o 7 preguntas sobre vivienda, inmigración, impuestos y economía, sanidad, energía o territorio para comparar tus ideas con las candidaturas del 29N.",
     crumbs: [{ name: "Tests por tema", url: `${SITE}tests/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Tests políticos por tema</h1>
@@ -585,11 +586,11 @@ ${cta("O responde el test completo")}`
   // ── Confianza (T8): sobre el proyecto y metodología
   // /correcciones/ ya no es pública (28 oct 2026): aviso sin indexar que lleva a /sobre/
   mkdirSync(`${OUT}/correcciones`, { recursive: true });
-  writeFileSync(`${OUT}/correcciones/index.html`, `${head("Página trasladada · Test 29N", "Esta página se ha trasladado a «Sobre el proyecto» del Test 29N.", `<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/sobre/">\n`, "/")}<body><main class="wrap"><h1>Página trasladada</h1><p><a href="/sobre/">Ir a «Sobre el proyecto»</a></p></main></body></html>\n`);
+  writeFileSync(`${OUT}/correcciones/index.html`, `${head(`Página trasladada · ${MARCA}`, `Esta página se ha trasladado a «Sobre el proyecto» del test de ${MARCA}.`, `<meta name="robots" content="noindex">\n<meta http-equiv="refresh" content="0; url=/sobre/">\n`, "/")}<body><main class="wrap"><h1>Página trasladada</h1><p><a href="/sobre/">Ir a «Sobre el proyecto»</a></p></main></body></html>\n`);
   page({
     path: "/sobre/",
     title: "Sobre el Test 29N: quién lo hace, financiación y correcciones",
-    desc: "Quién está detrás del Test 29N, por qué existe, cómo se financia, por qué es independiente y cómo se corrigen los errores.",
+    desc: `Quién está detrás del test de ${MARCA}, por qué existe, cómo se financia, por qué es independiente y cómo se corrigen los errores.`,
     crumbs: [{ name: "Sobre el proyecto", url: `${SITE}sobre/` }],
     body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Sobre el proyecto</h1>
   <p class="lede">El Test 29N es un test político gratuito para las elecciones generales del 29 de noviembre de 2026. Ayuda a comparar tus ideas con las de las candidaturas de tu provincia, tema a tema. No te dice a quién votar.</p></header>
@@ -604,7 +605,7 @@ ${cta("O responde el test completo")}`
   const pctN = (a, b) => Math.round((a / b) * 100);
   page({
     path: "/metodologia/",
-    title: "Metodología del Test 29N: cómo se calcula y sus límites",
+    title: `Metodología del test de ${MARCA}: cómo se calcula y sus límites`,
     desc: "Cómo calcula el Test 29N tu coincidencia con cada candidatura, con pruebas reproducibles: perfiles que imitan a cada partido, perfiles aleatorios, sesgo hacia el centro y posturas con fuente por partido.",
     crumbs: [{ name: "Metodología", url: `${SITE}metodologia/` }],
     body: `<header class="sp-head"><p class="label">Transparencia</p><h1 class="h1">Metodología</h1>
@@ -625,7 +626,7 @@ ${cta("Haz el test")}`
   // ── Glosario electoral
   page({
     path: "/glosario/",
-    title: "Glosario electoral del 29N: términos explicados · Test 29N",
+    title: `Glosario electoral del 29N: términos explicados · ${MARCA}`,
     desc: "Qué es la ley D'Hondt, la barrera del 3 %, el voto en blanco, la jornada de reflexión o la investidura: explicados de forma sencilla y con su base legal.",
     crumbs: [{ name: "Glosario", url: `${SITE}glosario/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Glosario electoral</h1>
@@ -638,11 +639,11 @@ ${cta("Pon a prueba tus ideas")}`
   // ── Índices
   page({
     path: "/partidos/",
-    title: "Partidos y candidaturas del 29N: sus posturas, tema a tema · Test 29N",
+    title: `Partidos y candidaturas del 29N: sus posturas, tema a tema · ${MARCA}`,
     desc: `Qué proponen las ${live.length} candidaturas de las elecciones generales del 29 de noviembre de 2026 en vivienda, impuestos, inmigración, sanidad y otros temas, con fuentes.`,
     crumbs: [{ name: "Partidos", url: `${SITE}partidos/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Las candidaturas y sus posturas</h1>
-  <p class="lede">Qué piensa cada candidatura sobre las ${B.questions.length} cuestiones del Test 29N, con sus propuestas destacadas y las fuentes de sus posturas. ¿Han publicado ya su programa? Consulta los <a href="/programas/">programas electorales del 29N</a>.</p></header>
+  <p class="lede">Qué piensa cada candidatura sobre las ${B.questions.length} cuestiones del test de ${MARCA}, con sus propuestas destacadas y las fuentes de sus posturas. ¿Han publicado ya su programa? Consulta los <a href="/programas/">programas electorales del 29N</a>.</p></header>
 ${cta("¿Con cuál coincides más?")}
 <ul class="sp-cards">${live.map((pid) => { const p = P[pid]; return `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(p.tag)} · ${esc(scopeText(p))}</span></span></a></li>`; }).join("")}</ul>
 ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que no se presentan: ${PD.order.filter((pid) => P[pid].out).map((pid) => `<a href="/partidos/${pid}/">${esc(P[pid].name)}</a>`).join(", ")}.</p>` : ""}`
@@ -771,7 +772,7 @@ ${cta("Prepara el debate: compara tus ideas con las candidaturas")}
 `);
   page({
     path: "/programas/",
-    title: "Programas electorales del 29N: cuáles se han publicado · Test 29N",
+    title: `Programas electorales del 29N: cuáles se han publicado · ${MARCA}`,
     desc: `Estado del programa electoral de cada candidatura del 29N: ${nPub ? `${nPub} publicados` : "ninguno publicado aún"}, con el enlace oficial y las posturas revisadas con él. Comprobado el ${progChecked}.`,
     crumbs: [{ name: "Programas electorales", url: `${SITE}programas/` }],
     ld: { "@context": "https://schema.org", "@type": "ItemList", name: "Programas electorales del 29N", itemListElement: live.map((pid, i) => ({ "@type": "ListItem", position: i + 1, name: `Programa electoral de ${P[pid].name}`, url: PROG[pid]?.url || `${SITE}partidos/${pid}/` })) },
@@ -792,7 +793,7 @@ ${cta("Compara tus ideas con las de cada candidatura")}
   });
   page({
     path: "/temas/",
-    title: "Los grandes temas de las elecciones del 29N, partido a partido · Test 29N",
+    title: `Los grandes temas de las elecciones del 29N, partido a partido · ${MARCA}`,
     desc: `Vivienda, impuestos, inmigración, sanidad, modelo territorial y más: ${B.questions.length} cuestiones con contexto neutral y la postura de cada partido para el 29N.`,
     crumbs: [{ name: "Temas", url: `${SITE}temas/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Los temas del 29N, partido a partido</h1>
@@ -807,7 +808,7 @@ ${cta("Responde tú y compara")}
   const officialNote = `<p class="small muted">Información de fuentes oficiales, revisada el ${esc(reviewed)}. Ante cualquier duda, prevalece lo que digan la Junta Electoral Central y el Ministerio del Interior. Esta información no sustituye a sus comunicaciones.</p>`;
   page({
     path: "/votar/",
-    title: "Cómo votar el 29N: documentos, dónde votar y voto por correo · Test 29N",
+    title: `Cómo votar el 29N: documentos, dónde votar y voto por correo · ${MARCA}`,
     desc: "Guía práctica para votar el 29N: quién puede votar, qué llevar, dónde te toca, voto por correo, desde el extranjero y accesible. Con enlaces oficiales.",
     crumbs: [{ name: "Cómo votar", url: `${SITE}votar/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Cómo votar el 29N</h1>
@@ -819,7 +820,7 @@ ${cta("¿Aún no sabes con quién coincides?")}`
   });
   page({
     path: "/calendario/",
-    title: "Calendario electoral del 29N: fechas oficiales · Test 29N",
+    title: `Calendario electoral del 29N: fechas oficiales · ${MARCA}`,
     desc: "Fechas oficiales del 29N: voto por correo, candidaturas, campaña, jornada de reflexión, votación y constitución de las Cortes, con su fuente.",
     crumbs: [{ name: "Calendario electoral", url: `${SITE}calendario/` }],
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Calendario electoral del 29N</h1>
@@ -832,11 +833,11 @@ ${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
 
   // ── Prensa y difusión
   const nSrc = B.questions.reduce((n, q) => n + Object.keys(q.src || {}).length, 0);
-  const embed = `<a href="${SITE}" title="Test 29N: test político para las elecciones del 29N"><img src="${SITE}boton-test29n.png" alt="Haz el Test 29N: ¿con qué partido coincides el 29N?" width="320" height="100"></a>`;
+  const embed = `<a href="${SITE}" title="Test 29N: test político para las elecciones del 29N"><img src="${SITE}boton-test29n.png" alt="Haz el test político de ${MARCA}: ¿con qué partido coincides el 29N?" width="320" height="100"></a>`;
   const embedText = `<a href="${SITE}">Test 29N</a>: test político gratuito para las elecciones generales del 29N. Compara tus respuestas con las candidaturas de tu provincia, tema a tema.`;
   page({
     path: "/prensa/",
-    title: "Prensa y difusión · Test 29N",
+    title: `Prensa y difusión · ${MARCA}`,
     desc: "Información sobre el Test 29N para medios, creadores y docentes: qué es, cómo funciona, imágenes y un botón para enlazarlo desde tu web.",
     crumbs: [{ name: "Prensa", url: `${SITE}prensa/` }],
     body: `<header class="sp-head"><p class="label">Para medios, creadores y docentes</p><h1 class="h1">Prensa y difusión</h1>
@@ -858,7 +859,7 @@ ${cta("Prepara tu voto: compara tus ideas con las candidaturas")}`
 <p class="dinfo"><b>Larga:</b> El Test 29N plantea ${B.questions.length} cuestiones de la actualidad política española con contexto neutral y calcula, pregunta a pregunta, cuánto coinciden tus respuestas con las posturas de las candidaturas de tu provincia. Muestra tu perfil en siete dimensiones, explica qué respuestas pesan más y enlaza las fuentes de las posturas. Es gratuito, no pide registro y no guarda las respuestas fuera del navegador.</p></section>
 <section aria-labelledby="h-img"><h2 class="h2" id="h-img">Imágenes</h2>
 <p><a href="/og.png">Imagen de presentación (1200 × 630, PNG)</a> · <a href="/boton-test29n.png">Botón para enlazar (640 × 200, PNG)</a> · <a href="/icon-512.png">Logotipo (512 × 512, PNG)</a></p>
-<p><img src="/boton-test29n.png" alt="Botón del Test 29N" width="320" height="100" loading="lazy"></p></section>
+<p><img src="/boton-test29n.png" alt="Botón del test de ${MARCA}" width="320" height="100" loading="lazy"></p></section>
 <section aria-labelledby="h-embed"><h2 class="h2" id="h-embed">Enlázalo desde tu web o blog</h2>
 <p>Copia este código y pégalo en tu web. Solo es un enlace con imagen: no carga ningún script ni recoge datos de tus lectores.</p>
 <pre class="embed" tabindex="0"><code>${esc(embed)}</code></pre>

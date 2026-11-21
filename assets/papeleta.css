@@ -1339,3 +1339,13 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 @media (max-width: 374px) { .head-menu > summary span:last-child { display: none; } .head-menu > summary { padding: 0 12px; } .head-menu > summary::after { content: ""; } .head-menu > summary { min-width: 44px; justify-content: center; } }
 @media (max-width: 340px) { .site-head .head-row { gap: 6px; } .site-head .head-nav .head-cta { padding: 0 10px; font-size: 13px; } .site-head .brand-word { font-size: 18px; } }
 @media (max-width: 340px) { .site-head .head-row { gap: 4px; } .site-head .brand { gap: 6px; } .head-menu > summary { min-width: 42px; padding: 0 10px; } }
+.head-cta .cta-s { display: none; }
+@media (max-width: 480px) {
+  .head-cta .cta-l { display: none; } .head-cta .cta-s { display: inline; }
+  .head-menu > summary span:last-child { display: none; } .head-menu > summary { min-width: 44px; padding: 0 12px; justify-content: center; }
+  .site-head .brand-ed { font-size: 12px; padding: 2px 5px; }
+}
+/* Rediseño 30N: sin desborde lateral a 320 px en fichas y comparativas (la pista de la rejilla seguía al contenido) */
+.sp > section { grid-template-columns: minmax(0, 1fr); }
+.sp h1, .sp .h2 { overflow-wrap: break-word; hyphens: auto; }
+.sp-areas { grid-template-columns: minmax(0, 1fr); } .sp-areas > * { min-width: 0; }

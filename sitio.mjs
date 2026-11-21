@@ -6,3 +6,6 @@
 export const DOMINIO = "test29n.es";
 export const SITE = (process.env.SITE_URL || `https://${DOMINIO}/`).replace(/\/?$/, "/");
 export const HOST = new URL(SITE).hostname;
+
+// Marca (titular, 21 nov 2026): «Mirada Política» desde el 30N; el test pasa a ser una sección («Test político»).
+export const MARCA = "Mirada Política";

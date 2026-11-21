@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSyn
 import { createHash } from "node:crypto";
 import { buildPages } from "./pages.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
-import { SITE, HOST } from "./sitio.mjs";
+import { SITE, HOST, MARCA } from "./sitio.mjs";
 const fmtDateEs = (iso) => { const M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]; const [y, m, d] = String(iso).split("-").map(Number); return `${d} de ${M[m - 1]} de ${y}`; };
 
 const OUT = "dist";
@@ -121,14 +121,14 @@ const social = `<link rel="canonical" href="${SITE}">
 <meta name="twitter:description" content="${DESC}">
 <meta name="twitter:image" content="${SITE}og.png">
 <meta name="twitter:image:alt" content="Test 29N: Lo que piensas, tema a tema.">
-<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", name: "Test 29N", alternateName: "Test electoral 29N", url: SITE, inLanguage: "es", applicationCategory: "EducationalApplication", operatingSystem: "Web", description: DESC, isAccessibleForFree: true, offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" } })}</script>
+<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", name: `Test político · ${MARCA}`, alternateName: "Test electoral 29N", url: SITE, inLanguage: "es", applicationCategory: "EducationalApplication", operatingSystem: "Web", description: DESC, isAccessibleForFree: true, offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" } })}</script>
 `;
 // Preguntas frecuentes de la portada: los datos estructurados se sacan del HTML visible, para que digan exactamente lo mismo
 const stripTags = (h) => h.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 const FAQ = [...body.matchAll(/<div class="faq-item"><h3 class="h3">([\s\S]*?)<\/h3><p>([\s\S]*?)<\/p><\/div>/g)].map((m) => ({ q: stripTags(m[1]), a: stripTags(m[2]) }));
 if (FAQ.length < 5) throw new Error("No se han encontrado las preguntas frecuentes de la portada");
 const faqLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }).replace(/</g, "\\u003c")}</script>\n`;
-const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><p style="font-size:1.25em;font-weight:700;margin:0 0 .5em">Test 29N necesita JavaScript</p><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
+const noscript = `<noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif"><p style="font-size:1.25em;font-weight:700;margin:0 0 .5em">${MARCA} necesita JavaScript</p><p>El test se calcula entero en tu navegador. Activa JavaScript para usarlo. No enviamos tus respuestas a ningún servidor.</p></div></noscript>`;
 // Velocidad en móvil (1 nov): «Empezar» necesita papeleta.js y los datos, no la tipografía. Los datos se piden a la vez que
 // el programa (antes, después de ejecutarlo) y la portada no precarga la fuente, que compartía la conexión con ellos.
 // El texto se ve desde el principio con la fuente del sistema (font-display: swap), como antes en conexiones lentas.
@@ -146,7 +146,7 @@ const NET_JS = `(function(){var c=navigator.connection;if(c&&(c.saveData||/^(slo
 // en móvil 4G simulado la portada aparece hacia 1 s en lugar de 2,5 s (LCP), con el mismo resultado sin saltos.
 const NET_HASH = createHash("sha256").update(NET_JS).digest("base64");
 const FONTS_LINK = `<link rel="stylesheet" href="${FONTS_HREF}">`;
-const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: "Test 29N", alternateName: ["Test político 29N", "Test electoral 29N"], url: SITE, inLanguage: "es" })}</script>`;
+const siteLd = `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: MARCA, alternateName: ["Test 29N", "Test político 29N", "Test electoral 29N"], url: SITE, inLanguage: "es" })}</script>`;
 let headIndex = head(TITLE, DESC, social + faqLd + siteLd).replace(/<link rel="preload" href="[^"]*assets\/fonts\/[^"]*" as="font"[^>]*>\n?/, "");
 if (!headIndex.includes(FONTS_LINK) || !headIndex.includes("script-src 'self'")) throw new Error("No encuentro el enlace de las tipografías o la CSP de la portada");
 headIndex = headIndex.replace(FONTS_LINK, `<script>${NET_JS}</script><noscript>${FONTS_LINK}</noscript>`).replace("script-src 'self'", `script-src 'self' 'sha256-${NET_HASH}'`);
@@ -162,7 +162,7 @@ ${body}
 `);
 
 // Página 404 con la misma identidad
-writeFileSync(`${OUT}/404.html`, `${head("Página no encontrada · Test 29N", "La página que buscas no existe. Vuelve al test político Test 29N.", '<meta name="robots" content="noindex">\n', SITE)}
+writeFileSync(`${OUT}/404.html`, `${head(`Página no encontrada · ${MARCA}`, "La página que buscas no existe. Vuelve al test político Test 29N.", '<meta name="robots" content="noindex">\n', SITE)}
 <body>
 <header class="site-head"><div class="wrap head-row"><a class="brand" href="${SITE}" style="text-decoration:none;color:inherit"><span class="brand-word">Test</span><span class="brand-ed">29N</span></a></div></header>
 <main class="wrap narrow state-msg" id="main">
@@ -175,7 +175,7 @@ writeFileSync(`${OUT}/404.html`, `${head("Página no encontrada · Test 29N", "L
 </html>
 `);
 
-writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: "Test 29N", short_name: "Test 29N", lang: "es", start_url: SITE, scope: SITE, display: "standalone", background_color: "#F2F3EE", theme_color: "#111318", icons: [{ src: `${SITE}icon-512.png`, sizes: "512x512", type: "image/png" }, { src: `${SITE}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 1));
+writeFileSync(`${OUT}/site.webmanifest`, JSON.stringify({ name: MARCA, short_name: MARCA, lang: "es", start_url: SITE, scope: SITE, display: "standalone", background_color: "#F2F3EE", theme_color: "#111318", icons: [{ src: `${SITE}icon-512.png`, sizes: "512x512", type: "image/png" }, { src: `${SITE}apple-touch-icon.png`, sizes: "180x180", type: "image/png" }] }, null, 1));
 // llms.txt: resumen para asistentes de IA que citan la web (qué es, cómo se calcula y dónde están los datos con fuentes)
 writeFileSync(`${OUT}/llms.txt`, `# Test 29N
 
