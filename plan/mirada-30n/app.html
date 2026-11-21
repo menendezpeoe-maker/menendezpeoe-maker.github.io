@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta Mirada Política</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: herramienta de consulta, sobria y precisa: datos primero, nada de relleno.
+   IDEA: un panel de consulta tipo producto profesional (barra lateral, buscador ⌘K, tablas, matriz de posturas).
+   PICTURE: la matriz partido × tema como pieza central, con los colores de cada partido solo como marca.
+   COLOUR and TYPE: neutros fríos, una escala divergente verde azulado / ocre (sin colores de partido) y el amarillo de la marca; Inter.
+   LAYOUT: barra lateral en PC, barra inferior en el móvil; cada pantalla cabe en uno o dos vistazos. */
+:root{color-scheme:light;--bg:#f6f7f9;--sf:#fff;--ink:#0f1115;--ink2:#4b5160;--ink3:#7a8090;--line:#e4e6eb;--line2:#eef0f3;--mark:#f5d90a;--acc:#1f4fd1;
+--p5:#0f766e;--p4:#62aea4;--p3:#d9dbe0;--p2:#e0a868;--p1:#a8550e}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:#e9ebef;color:var(--ink);font:14px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* barra de la maqueta */
+.mk{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px max(3vw,14px);background:#0f1115;color:#e9ebef;font-size:13px}
+.mk b{font-size:14px}.mk span{color:#a3a9b6;flex:1 1 320px}
+.seg{display:inline-flex;background:#1d2027;border-radius:9px;padding:3px;gap:2px}
+.seg button{border:0;background:none;padding:6px 14px;border-radius:7px;font-weight:600;color:#c9ccd4}
+.seg button[aria-pressed=true]{background:var(--mark);color:#0f1115}
+.stage{padding:18px max(2vw,10px) 40px;display:flex;justify-content:center}
+.app{container-type:inline-size;width:100%;max-width:1360px;height:min(860px,calc(100vh - 110px));min-height:620px;background:var(--bg);border:1px solid #d5d8de;border-radius:14px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(0,0,0,.45);position:relative}
+.app.m{width:390px;height:800px;border-radius:34px;border:8px solid #0f1115}
+.shell{display:grid;grid-template-columns:224px minmax(0,1fr);height:100%}
+/* barra lateral */
+.side{background:var(--sf);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:14px 10px;gap:2px;overflow:auto}
+.logo{display:flex;align-items:center;gap:8px;padding:4px 8px 14px;font-weight:800;font-size:16px;letter-spacing:-.01em;border:0;background:none;text-align:left}
+.logo i{width:26px;height:26px;border-radius:7px;background:#0f1115;display:grid;place-items:center}
+.logo i:after{content:"";width:12px;height:12px;border-radius:50%;background:var(--mark);box-shadow:inset 0 0 0 3px #0f1115,0 0 0 2px var(--mark)}
+.nav-h{font-size:11px;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em;padding:12px 10px 4px}
+.ni{display:flex;align-items:center;gap:10px;width:100%;border:0;background:none;padding:8px 10px;border-radius:8px;font-weight:500;color:var(--ink2);text-align:left}
+.ni svg{width:17px;height:17px;flex:none}
+.ni:hover{background:var(--line2);color:var(--ink)}
+.ni[aria-current=page]{background:#0f1115;color:#fff}
+.ni small{margin-left:auto;font-size:11.5px;color:var(--ink3)}
+.ni[aria-current=page] small{color:#a3a9b6}
+.side .foot{margin-top:auto;padding:12px 10px 2px;font-size:11.5px;color:var(--ink3);line-height:1.45}
+/* zona principal */
+.main{display:flex;flex-direction:column;height:100%;overflow:hidden}
+.top{display:flex;align-items:center;gap:10px;padding:10px 20px;background:var(--sf);border-bottom:1px solid var(--line)}
+.top .logo{display:none;padding:0}
+.k{flex:1;display:flex;align-items:center;gap:8px;max-width:520px;height:38px;padding:0 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink3);text-align:left}
+.k svg{width:16px;height:16px}.k kbd{margin-left:auto;font:600 11px Inter;border:1px solid var(--line);border-radius:5px;padding:1px 6px;background:#fff}
+.cta{margin-left:auto;display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border:1px solid #0f1115;border-radius:9px;background:var(--mark);font-weight:700;white-space:nowrap}
+.scroll{flex:1;overflow:auto;padding:20px 22px 40px}
+.tabbar{display:none}
+/* piezas comunes */
+h1{font-size:22px;line-height:1.2;letter-spacing:-.02em;margin:0}
+h2{font-size:15px;margin:0;letter-spacing:-.01em}
+.sub{color:var(--ink2);margin:4px 0 0;max-width:70ch}
+.ph{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:12px}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line2)}
+.ch a,.lnk{color:var(--acc);font-weight:600;font-size:13px;border:0;background:none;padding:0;text-decoration:none}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g2{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+.kpi{padding:12px 14px}.kpi b{display:block;font-size:22px;letter-spacing:-.02em}.kpi span{color:var(--ink2);font-size:12.5px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--sf);font-weight:500;font-size:13px;white-space:nowrap}
+.chip[aria-pressed=true]{background:#0f1115;border-color:#0f1115;color:#fff}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.dot{width:10px;height:10px;border-radius:3px;flex:none}
+.badge{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:5px;background:var(--line2);color:var(--ink2);font-size:11.5px;font-weight:600;white-space:nowrap}
+.pb{display:inline-grid;place-items:center;min-width:42px;height:24px;padding:0 6px;border-radius:6px;color:#fff;font-weight:800;font-size:11px;letter-spacing:.02em}
+.qa{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.qa :is(button,a){color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:6px;align-items:flex-start;text-align:left;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--sf)}
+.qa :is(button,a):hover{border-color:#0f1115}
+.qa svg{width:20px;height:20px}.qa b{font-size:14px}.qa span{font-size:12.5px;color:var(--ink2)}
+/* tabla */
+.tw{overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{position:sticky;top:0;background:#fafbfc;text-align:left;font-weight:600;color:var(--ink2);font-size:12px;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap;z-index:1}
+td{padding:8px 12px;border-bottom:1px solid var(--line2);vertical-align:middle}
+tbody tr{cursor:pointer}tbody tr:hover td{background:#f8f9fb}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:6px;border-radius:3px;background:var(--line2);overflow:hidden;min-width:60px}.bar i{display:block;height:100%;background:#0f1115}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line2)}
+.in{height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--sf);min-width:0}
+/* escala */
+.sc{display:inline-flex;gap:2px}.sc i{width:14px;height:10px;border-radius:2px;background:var(--line2)}
+.c5{background:var(--p5)!important}.c4{background:var(--p4)!important}.c3{background:var(--p3)!important}.c2{background:var(--p2)!important}.c1{background:var(--p1)!important}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink2);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:5px}.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+/* matriz */
+.mx{border-collapse:separate;border-spacing:2px;width:auto}
+.mx th{background:var(--sf);border:0;padding:0 0 4px;vertical-align:bottom}
+.mx th.pv{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;font-weight:700;color:var(--ink);height:64px;padding:0 0 4px;text-align:left}
+.mx td{padding:0;border:0;width:22px;height:22px;border-radius:4px;background:var(--line2);cursor:pointer;position:relative}
+.mx td.q{position:sticky;left:0;z-index:1;background:var(--sf);width:auto;min-width:220px;max-width:260px;padding-right:10px;font-size:12.5px;color:var(--ink);cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0}
+.mx td:not(.q){min-width:22px;max-width:22px}
+.mx td.e:after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:rgba(255,255,255,.85)}
+.mx tbody tr:hover td{background:revert}.mx tbody tr:hover td.q{background:#f3f4f6}
+.mx td:not(.q):hover{outline:2px solid #0f1115}
+/* reparto de una pregunta */
+.spread{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.spread>div{border-radius:8px;padding:8px;background:var(--bg);min-height:60px}
+.spread h3{margin:0 0 6px;font-size:11.5px;font-weight:700;display:flex;align-items:center;gap:6px}
+.spread .pbs{display:flex;flex-wrap:wrap;gap:4px}
+.spread .pb{min-width:0;height:22px;font-size:10.5px}
+.spread .pb.e{opacity:.55}
+.qrow{border-bottom:1px solid var(--line2)}
+.qrow>button{display:flex;gap:12px;align-items:center;width:100%;border:0;background:none;padding:10px 14px;text-align:left}
+.qrow>button b{font-weight:600}.qrow>button .mini{margin-left:auto}
+.qrow .body{padding:0 14px 14px}
+.mini{display:flex;height:8px;width:120px;border-radius:4px;overflow:hidden;flex:none}
+/* ficha */
+.hero{display:flex;gap:14px;align-items:center;padding:16px;border-radius:12px;color:#fff}
+.hero .pb{min-width:56px;height:56px;font-size:15px;border:2px solid rgba(255,255,255,.5)}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);margin:14px 0;overflow:auto}
+.tabs button{border:0;background:none;padding:9px 12px;font-weight:600;color:var(--ink2);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:#0f1115}
+.prop{display:flex;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line2)}.prop:last-child{border:0}
+.prop b{font-variant-numeric:tabular-nums;color:var(--ink3);width:18px;flex:none}
+/* comparar */
+.vs{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.gauge{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.ar{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) 44px;gap:10px;align-items:center;padding:7px 14px;font-size:13px}
+/* cajón de detalle */
+.dr{position:absolute;inset:0;background:rgba(15,17,21,.35);display:flex;justify-content:flex-end;z-index:20}
+.dr>div{width:min(440px,100%);height:100%;background:var(--sf);overflow:auto;padding:18px;box-shadow:-10px 0 30px rgba(0,0,0,.15)}
+.dr .x{float:right;border:1px solid var(--line);background:var(--sf);border-radius:8px;width:32px;height:32px}
+.src{font-size:12.5px;color:var(--ink2);border-left:3px solid var(--line);padding:2px 0 2px 10px;margin-top:10px}
+.src a{color:var(--acc);word-break:break-word}
+/* paleta ⌘K */
+.pal{position:absolute;inset:0;background:rgba(15,17,21,.4);z-index:30;display:flex;justify-content:center;align-items:flex-start;padding-top:70px}
+.pal>div{width:min(600px,calc(100% - 20px));background:var(--sf);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.pal input{width:100%;border:0;border-bottom:1px solid var(--line);padding:16px;font-size:16px;outline:none}
+.pal ul{list-style:none;margin:0;padding:6px;max-height:380px;overflow:auto}
+.pal li button{display:flex;gap:10px;align-items:center;width:100%;border:0;background:none;padding:9px 10px;border-radius:8px;text-align:left}
+.pal li button:hover,.pal li button.on{background:var(--line2)}
+.pal li small{margin-left:auto;color:var(--ink3)}
+.empty{padding:16px;color:var(--ink3)}
+.note{font-size:12px;color:var(--ink3)}
+.split{display:grid;grid-template-columns:200px minmax(0,1fr);gap:14px;align-items:start}
+.alist{padding:6px}.alist button{display:flex;width:100%;border:0;background:none;text-align:left;padding:7px 10px;border-radius:7px;font-size:13px;color:var(--ink2);gap:8px}
+.alist button[aria-current=true]{background:#0f1115;color:#fff}
+.alist small{margin-left:auto;opacity:.7}
+.asel{display:none}
+/* debajo de la maqueta */
+.doc{max-width:1360px;margin:0 auto;padding:0 max(2vw,10px) 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.doc .card{padding:16px 18px}.doc h3{margin:0 0 8px;font-size:15px}.doc ul{margin:0;padding-left:18px;color:var(--ink2)}.doc li{margin:3px 0}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:0}
+.eyebrow.on-d{color:var(--mark)}
+.hx{position:relative;background:#0f1115;color:#fff;border-radius:16px;overflow:hidden;margin-bottom:14px}
+.hx-in{padding:28px 28px 20px;background:radial-gradient(600px 260px at 85% 0%,rgba(245,217,10,.18),transparent 70%)}
+.hx-t{font-size:clamp(26px,4.2cqi,44px);line-height:1.05;letter-spacing:-.03em;margin:8px 0 18px;color:#fff;font-weight:800}
+.hx-t mark{background:none;color:var(--mark)}
+.hx-s{display:flex;align-items:center;gap:10px;width:min(560px,100%);height:50px;padding:0 16px;border-radius:12px;border:1px solid #2a2e37;background:#181b21;color:#a3a9b6;font-size:15px;text-align:left}
+.hx-s svg{width:18px;height:18px;color:#fff;flex:none}
+.hx-c{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.hx-c button{height:30px;padding:0 12px;border-radius:999px;border:1px solid #2a2e37;background:transparent;color:#e9ebef;font-weight:500;font-size:13px;white-space:nowrap}
+.hx-c button:hover{border-color:var(--mark)}
+.hx-k{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;color:#a3a9b6;font-size:13px}.hx-k b{color:#fff;font-size:15px}
+.hx-strip{display:flex;height:8px}.hx-strip button{flex:1;border:0;padding:0}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px;align-items:start}
+.pmap{width:100%;max-width:520px;margin:0 auto;height:auto;display:block;border-radius:10px}
+.pmap .ax{font:600 9px Inter,sans-serif;fill:#7a8090}
+.pmap .pl{font:700 8.5px Inter,sans-serif;fill:#0f1115;paint-order:stroke;stroke:#fff;stroke-width:3px}
+.pmap .pt{cursor:pointer}.pmap .pt:hover circle{stroke:#0f1115}
+.chip.sm{height:26px;font-size:12px;padding:0 9px}
+.sx{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.sx>*{flex:none;white-space:nowrap}.sx::-webkit-scrollbar{display:none}
+.pager{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink3)}
+.pager button{width:32px;height:32px;border:1px solid var(--line);border-radius:8px;background:var(--sf);font-size:17px;line-height:1}
+.dq{margin:0 0 12px;font-weight:700;font-size:17px;line-height:1.35;letter-spacing:-.01em}
+.stack{display:flex;height:28px;border-radius:8px;overflow:hidden;gap:2px}
+.stack i{display:grid;place-items:center;color:#fff;font:700 12px Inter,sans-serif;font-style:normal}
+.stack i.c3{color:#0f1115}
+.stack-l{display:flex;justify-content:space-between;font-size:12px;color:var(--ink2);margin:6px 0 12px}
+.dgs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dg{border-radius:10px;padding:10px;background:var(--bg)}
+.dg h3{margin:0 0 8px;font-size:12px;display:flex;justify-content:space-between}
+.dg.f h3{color:var(--p5)}.dg.a h3{color:var(--p1)}
+.pbs{display:flex;flex-wrap:wrap;gap:4px}
+.pbb{border:0;background:none;padding:0}
+.pbs .pb{min-width:0;height:22px;font-size:10.5px}
+.pb.e{opacity:.55}
+.sech{display:flex;align-items:baseline;justify-content:space-between;margin:20px 0 10px}
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;padding:14px 12px 12px;border-radius:12px;border:1px solid var(--line);background:var(--sf);min-height:122px;position:relative;overflow:hidden}
+.tile:before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--ac)}
+.tile i{font-style:normal;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:color-mix(in srgb,var(--ac) 14%,#fff);color:var(--ac);font-weight:800;margin-bottom:4px}
+.tile b{font-size:13px;line-height:1.25}.tile span{font-size:12px;color:var(--ink3);margin-top:auto}
+.tile:hover{border-color:var(--ac)}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.duel{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center}
+.duel-p{text-align:center}.duel-p b{display:block;font-size:26px;letter-spacing:-.02em;line-height:1}.duel-p span{font-size:11.5px;color:var(--ink3)}
+.pick{position:relative;display:flex;align-items:center;justify-content:space-between;gap:6px;height:46px;padding:0 12px;border-radius:10px;font-weight:800;cursor:pointer;overflow:hidden}
+.pick select{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
+.pick.lg{flex-direction:column;align-items:flex-start;justify-content:center;height:auto;padding:14px 16px;gap:2px}
+.pick.lg b{font-size:22px}.pick.lg small{opacity:.85;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.pick.lg span{font-size:12px;opacity:.8;font-weight:600}
+.duel.big .duel-p b{font-size:36px}
+.swap{display:block;margin:8px auto 0;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--sf);font-size:16px}
+.tcard{background:#0f1115;color:#fff;border-color:#0f1115;background-image:radial-gradient(300px 140px at 100% 0,rgba(245,217,10,.22),transparent 70%)}
+.tools.bare{padding:0 0 12px;border:0;justify-content:space-between;flex-wrap:nowrap}
+.tools-r{display:flex;gap:8px;margin-left:auto}.tools-r .in:first-child{width:220px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.pcard{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;padding:12px 14px 12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--sf);position:relative;overflow:hidden}
+.pcard:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--pc)}
+.pcard:hover{border-color:var(--pc);box-shadow:0 6px 18px -12px rgba(0,0,0,.4)}
+.pc-top{display:flex;justify-content:space-between;width:100%;align-items:center;margin-bottom:4px}
+.pcard>b{font-size:14.5px;line-height:1.25}.pc-tag{font-size:12.5px;color:var(--ink2)}
+.pc-meta{display:flex;flex-wrap:wrap;gap:2px 10px;font-size:12px;color:var(--ink3)}
+.pc-cov{display:flex;gap:8px;align-items:center;width:100%;margin-top:6px;font-size:11.5px;color:var(--ink3)}.pc-cov .bar{flex:1}
+.hero{background:var(--pc);flex-wrap:wrap}
+.back{width:34px;height:34px;border-radius:9px;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.12);color:inherit;font-size:16px;flex:none}
+.hero-m{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;opacity:.9;margin-top:4px}
+.hero .chip{background:rgba(255,255,255,.92);color:#0f1115;border:0}.hero .chip svg{width:15px;height:15px}
+.tabs.stk{position:sticky;top:-20px;background:var(--bg);z-index:3}
+.ax7{padding:7px 0}.ax7-l{display:flex;justify-content:space-between;font-size:11px;color:var(--ink3);gap:6px}.ax7-l b{color:var(--ink);font-size:12px}
+.ax7-t{position:relative;height:10px;margin-top:5px;border-radius:5px;background:linear-gradient(90deg,var(--line2),#fff 50%,var(--line2));border:1px solid var(--line)}
+.ax7-t i{position:absolute;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.ax7-t em{font-size:10.5px;color:var(--ink3);position:absolute;top:-2px;left:6px;line-height:1}
+details.more summary,details.acc summary{cursor:pointer;list-style:none}
+details.more summary{padding:10px 14px;color:var(--acc);font-weight:600;font-size:13px}
+details.acc{margin-bottom:8px;overflow:hidden}
+details.acc summary{display:flex;align-items:center;gap:12px;padding:12px 14px}
+details.acc summary b{flex:1}
+details.acc[open] summary{border-bottom:1px solid var(--line2)}
+summary::-webkit-details-marker{display:none}
+.progc{display:flex;gap:12px;align-items:center;padding:14px;margin-bottom:12px;text-decoration:none;color:inherit;background:#fffbe0;border-color:#efe18a}
+.srow{text-decoration:none;color:inherit;align-items:center}.srow:hover{background:#f8f9fb}
+.achips{display:flex;gap:6px;margin-bottom:14px}
+.achips .chip[aria-pressed=true]{background:var(--ac);border-color:var(--ac)}.achips .chip[aria-pressed=true] .dot{background:#fff!important}
+.tl{font-style:normal;width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:var(--ac);color:#fff;font-weight:800;font-size:18px;flex:none}
+.seg.lt{background:var(--line2)}.seg.lt button{color:var(--ink)}.seg.lt button[aria-pressed=true]{background:#0f1115;color:#fff}
+.chev{width:22px;text-align:center;color:var(--ink3);font-size:18px}
+.tabs.in-card{margin:0;padding:0 8px}
+.kv{text-align:right}.kv b{display:block;font-size:20px}.kv span{font-size:11.5px;color:var(--ink3)}
+.kmenu{display:none}
+.side-test{margin-top:auto;display:flex;flex-direction:column;gap:2px;text-align:left;padding:12px;border-radius:12px;border:0;background:#0f1115;color:#fff;background-image:radial-gradient(200px 100px at 100% 0,rgba(245,217,10,.25),transparent 70%)}
+.side-test b{font-size:14px}.side-test span:last-child{font-size:12px;color:var(--mark);font-weight:700;margin-top:4px}
+.side .foot{margin-top:8px}
+.sfoot{display:flex;flex-direction:column;gap:4px;margin-top:36px;padding:18px 0 4px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink3)}.sfoot b{color:var(--ink)}
+.sheet{align-items:flex-end;justify-content:stretch}.sheet>div{width:100%;height:auto;max-height:85%;border-radius:18px 18px 0 0}
+.mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mgrid button{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:12px 10px;border:1px solid var(--line);border-radius:12px;background:var(--sf);text-align:left;position:relative}
+.mgrid svg{width:20px;height:20px}.mgrid b{font-size:13px}.mgrid small{position:absolute;top:10px;right:10px;color:var(--ink3);font-size:11px}
+.av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none;background:var(--line2);display:inline-grid;place-items:center}
+.avi{font-weight:800;font-size:12px;color:var(--ink2)}
+.av.xs{width:26px;height:26px;font-size:10px}.av.sm{width:36px;height:36px}.av.lg{width:72px;height:72px;border-radius:16px}.av.xl{width:84px;height:84px;border:3px solid rgba(255,255,255,.7)}
+.faces{display:flex;gap:10px;padding-bottom:4px}
+.faces.wrap{flex-wrap:wrap}
+.face{display:flex;flex-direction:column;align-items:center;gap:5px;width:92px;flex:none;border:0;background:none;padding:0;text-align:center}
+.face .av{width:68px;height:68px;box-shadow:0 0 0 2px #fff,0 0 0 3px var(--line)}
+.face b{font-size:12px;line-height:1.2}.face .pb{height:18px;font-size:9.5px;min-width:0}
+.face.sm{width:76px}.face.sm .av{width:52px;height:52px}
+.face:hover .av{box-shadow:0 0 0 2px #fff,0 0 0 4px #0f1115}
+.polgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.polc{display:flex;gap:14px;align-items:flex-start;text-align:left;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--sf);position:relative;overflow:hidden}
+.polc:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--pc)}
+.polc:hover{border-color:var(--pc)}
+.polc-b{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}.polc-b>b{font-size:15px}
+.polc .pc-meta{align-items:center;margin-top:2px}.polc .pb{height:20px;font-size:10px;min-width:0}
+.prow{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:0;border-bottom:1px solid var(--line2);background:none;padding:10px 14px}
+.prow:last-child{border-bottom:0}.prow:hover{background:#f8f9fb}.prow svg{width:18px;height:18px;flex:none}
+.crow{display:flex;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line2)}.crow:hover{background:#f8f9fb}
+.said{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.pp{padding:12px 14px;border-bottom:1px solid var(--line2);cursor:pointer}.pp:hover{background:#f8f9fb}
+.pp-h{display:flex;gap:8px;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
+.pp-s{display:flex;gap:8px;align-items:center;margin:3px 0}.pp-w{width:70px;font-size:11.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pp p{margin:6px 0 0;font-size:13px;color:var(--ink2)}
+.vs-p{display:flex;gap:12px;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid var(--line2)}
+.badge.bok{background:#e3f3f1;color:var(--p5)}.badge.bko{background:#f8ecdf;color:var(--p1)}.badge.bfut{background:#fff6c2;color:#6b5a00}
+.dlist{display:flex;flex-direction:column}
+.deb-c{display:flex;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line2)}.deb-c:last-child{border-bottom:0}
+.dd{width:48px;flex:none;text-align:center;border-radius:10px;background:var(--line2);padding:6px 0;align-self:flex-start}.dd b{display:block;font-size:18px;line-height:1.1}.dd span{font-size:11px;color:var(--ink3);text-transform:uppercase;font-weight:700}
+.dd.fut{background:var(--mark)}.dd.fut span{color:#0f1115}
+.deb-b{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+.deb-t{display:block;font-size:14px;line-height:1.35}.deb-c.cmp .deb-t{font-size:13px}
+.deb-p{margin:6px 0 0;font-size:13px}.deb-x{margin:4px 0 0;font-size:13px;color:var(--ink2)}
+.deb-f{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.tl-mini{list-style:none;margin:0;padding:6px 14px 12px}.tl-mini li{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid var(--line2);font-size:13px}.tl-mini li:last-child{border:0}.tl-mini b{font-size:12.5px}
+.tline{list-style:none;margin:0;padding:14px 16px}
+.tline li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:0 0 16px 0;position:relative}
+.tline li:before{content:"";position:absolute;left:127px;top:6px;width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--line)}
+.tline li>div{padding-left:22px;border-left:2px solid var(--line2);margin-left:0}
+.tline li.done{opacity:.55}.tline li.done:before{background:var(--ink3);border-color:var(--ink3)}
+.tline li.now:before{background:var(--mark);border-color:#0f1115}.tline li.now b{color:#0f1115}
+.tl-d{font-size:12.5px;font-weight:700;text-align:right;color:var(--ink2)}
+.tline p{margin:2px 0 4px;font-size:13px;color:var(--ink2)}
+.steps{margin:0;padding:12px 14px 12px 34px}.steps li{margin:0 0 8px;color:var(--ink2)}
+.seats{columns:2;column-gap:0}.seats .ar{width:100%;border:0;background:none;text-align:left;break-inside:avoid}
+.glgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.glc{padding:14px}.glc b{font-size:15px}.glc p{margin:6px 0 8px;color:var(--ink2);font-size:13.5px}
+.gl{display:flex;flex-direction:column;gap:6px;padding:14px;text-align:left;font-size:13px;color:var(--ink2)}
+.tband{display:flex;gap:12px;align-items:center;padding:12px 14px;margin-bottom:14px;text-decoration:none;color:inherit;background:#fffbe0;border-color:#efe18a}.tband svg{width:22px;height:22px;flex:none}
+.ch h2{display:flex;gap:8px;align-items:center}.ch h2 svg{width:17px;height:17px}
+.tabs button{flex:none}
+.faces.sx>*{white-space:normal}
+.srow svg{width:16px;height:16px;flex:none}
+.tline .lnk{display:inline-block;margin-top:2px}
+.pv{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;margin-bottom:14px;border-radius:12px;background:#fffbe0;border:1px solid #efe18a;font-size:13.5px;color:var(--ink2)}.pv svg{width:20px;height:20px;flex:none;color:#0f1115}.pv b{color:var(--ink)}
+.hemi{width:100%;max-width:520px;display:block;margin:0 auto}.hm-t{font:800 13px Inter,sans-serif;fill:#0f1115}
+.sl{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;margin-top:10px;font-size:12.5px;color:var(--ink2)}.sl span{display:inline-flex;align-items:center;gap:5px}.sl i{width:10px;height:10px;border-radius:50%}.sl b{color:var(--ink)}
+.pt-r{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;align-items:center;padding:4px 0}.pt-n{font-size:12.5px;font-weight:600}
+.pt-g{display:flex;flex-wrap:wrap;gap:4px}.ptile{width:46px;height:40px;border:0;border-radius:7px;font:800 10.5px Inter,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1}.ptile small{font-weight:600;opacity:.85;font-size:9.5px}
+.steps.big{list-style:none;counter-reset:s;padding:8px 14px}.steps.big li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--line2);margin:0}.steps.big li:last-child{border:0}.steps.big li:before{content:counter(s);grid-row:span 2;width:26px;height:26px;border-radius:50%;background:#0f1115;color:#fff;display:grid;place-items:center;font-weight:800;font-size:12px}.steps.big b{color:var(--ink)}.steps.big span{color:var(--ink2);font-size:13px}
+.instg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.inst{padding:16px;display:flex;flex-direction:column;gap:3px}.inst>svg{width:24px;height:24px;margin-bottom:6px}.inst>b{font-size:15.5px}.inst p{margin:6px 0 10px;color:var(--ink2);font-size:13.5px;flex:1}.inst-f{display:flex;justify-content:space-between;gap:10px}
+.ccg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}.cc{padding:14px 16px}.ch{flex-wrap:wrap}.cc-h{display:flex;justify-content:space-between;align-items:center;gap:8px}.cc-h b{font-size:15px}
+.arch .kpi{text-align:left;cursor:pointer}.arch svg{width:18px;height:18px;color:var(--ink3)}
+.inst-t .tile svg{width:24px;height:24px;margin-bottom:6px}
+/* MÓVIL (container query: vale para el marco de móvil y para pantallas estrechas) */
+@container (max-width:760px){
+  .shell{grid-template-columns:minmax(0,1fr)}
+  .side{display:none}
+  .top{padding:10px 12px}.top .logo{display:flex}
+  .k{height:36px;flex:0 0 36px;padding:0;justify-content:center;margin-left:auto}.k span,.k kbd{display:none}
+  .cta{display:none}
+  .scroll{padding:14px 12px 20px}
+  .tabbar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:var(--sf);border-top:1px solid var(--line);padding:6px 4px 10px}
+  .tabbar button{display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:none;font-size:10.5px;font-weight:600;color:var(--ink3);padding:4px 0}
+  .tabbar svg{width:21px;height:21px}
+  .tabbar button[aria-current=page]{color:var(--ink)}
+  .tabbar button.t{color:#0f1115}.tabbar button.t svg{background:var(--mark);border-radius:7px;padding:2px;box-shadow:0 0 0 1px #0f1115}
+  .g4,.qa{grid-template-columns:repeat(2,minmax(0,1fr))}.g2{grid-template-columns:minmax(0,1fr)}
+  .split{grid-template-columns:minmax(0,1fr)}.alist{display:none}.asel{display:block;width:100%}
+  .spread{grid-template-columns:minmax(0,1fr)}.spread>div{min-height:0;display:flex;gap:8px;align-items:center}.spread h3{margin:0;width:96px;flex:none}
+  .hide-m{display:none}
+  h1{font-size:19px}
+  .kpis{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.kpi{padding:8px}.kpi b{font-size:16px}.kpi span{font-size:10.5px;line-height:1.25;display:block}
+  .qa{gap:8px}.qa :is(button,a){padding:10px;flex-direction:row;align-items:center}.qa :is(button,a) span{display:none}.qa b{font-size:13px}
+  .legend{font-size:11px;gap:4px 10px}
+  .gcard{order:-1}
+  .mx td.q{min-width:150px;max-width:150px}
+  .ar{grid-template-columns:minmax(0,110px) minmax(0,1fr) 40px;padding:7px 10px}
+  .hx-in{padding:22px 16px 16px}.hx-t{font-size:28px}
+  .hgrid,.trio{grid-template-columns:minmax(0,1fr)}
+  .tiles{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:138px}
+  .hx-k{gap:12px}
+  .dgs{grid-template-columns:minmax(0,1fr)}
+  .tools.bare{flex-direction:column;align-items:stretch;flex-wrap:wrap}
+  .tools-r{width:100%;margin:8px 0 0}.tools-r .in:first-child{flex:1;width:auto}
+  .tabs.stk{top:-14px}
+  .ph.thead{flex-direction:column;align-items:stretch}
+  .duel.big .duel-p b{font-size:26px}
+  .pick.lg{padding:12px}.pick.lg b{font-size:18px}
+  .hero{padding:14px;gap:10px}.hero .pb{min-width:46px;height:46px}.hero>div{flex:1 1 100%!important;order:3}.hero .chip{margin-left:auto}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.pcard{padding:10px 10px 10px 13px}.pcard>b{font-size:13.5px}.pc-tag{font-size:11.5px;line-height:1.35}.pc-meta{font-size:11px}.pc-top .badge{display:none}
+  .kmenu{display:flex;margin-left:6px!important}
+  .polgrid,.glgrid{grid-template-columns:minmax(0,1fr)}
+  .seats{columns:1}
+  .tline{padding:14px 14px 4px 18px}.tline li{display:block;padding:0 0 16px 18px;border-left:2px solid var(--line2)}.tline li:before{left:-7px;top:2px}.tl-d{display:block;text-align:left;margin-bottom:2px}.tline li>div{padding:0;border:0}
+  .tl-mini li{grid-template-columns:84px 1fr}
+  .av.xl{width:64px;height:64px}
+  .pt-r{grid-template-columns:minmax(0,1fr);gap:4px;padding:6px 0}.ptile{width:44px}
+  .arch{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pal{padding-top:20px}
+}
+@media (max-width:600px){.app{height:calc(100vh - 120px)}.mk span{display:none}}
+</style>
+</head>
+<body>
+<div class="mk"><b>Propuesta 2 · Mirada Política</b><span>Prototipo navegable con los datos reales de la web (107 temas, 30+ candidaturas, sus fuentes). Pulsa todo: tablas, matriz, comparador, buscador. Nada publicado.</span>
+<div class="seg" role="group" aria-label="Dispositivo"><button type="button" data-dev="pc" aria-pressed="true">PC</button><button type="button" data-dev="m" aria-pressed="false">Móvil</button></div></div>
+<div class="stage"><div class="app" id="app"></div></div>
+<section class="doc">
+  <div class="card"><h3>Estructura</h3><ul><li><b>Explorar</b>: Inicio, Partidos, Políticos, Temas, Comparar.</li><li><b>Elecciones 29N</b>: Elecciones (cómo votar, calendario, escaños), Mi provincia, Debates, Programas.</li><li><b>Aprende</b>: Glosario y Datos y método.</li><li><b>Test político</b>: siempre a mano.</li></ul></div>
+  <div class="card"><h3>Toda la información de la web</h3><ul><li>33 candidaturas, 107 preguntas y 1.598 posturas con fuente.</li><li>18 políticos con foto y posturas públicas, y las 533 cabezas de lista del BOE.</li><li>33 debates y entrevistas, 25 programas, calendario oficial, escaños por provincia, resultados de 2023 y glosario.</li></ul></div>
+  <div class="card"><h3>Neutralidad</h3><ul><li>Escala de posturas en verde azulado/ocre: ningún color de partido.</li><li>Mismo orden de partidos en toda la web.</li><li>Cada dato enlaza a su fuente; las estimadas van marcadas.</li></ul></div>
+</section>
+<script>
+const D = /*DATA*/null;
+{
+const $ = (s, r = document) => r.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const PM = Object.fromEntries(D.parties.map((p) => [p.id, p]));
+const AM = Object.fromEntries(D.areas.map((a) => [a.id, a]));
+const QM = Object.fromEntries(D.qs.map((q) => [q.id, q]));
+const PROVS = D.regions.flatMap((r) => r.provs.map((p) => ({ ...p, r: r.id, rn: r.name })));
+const lum = (h) => { const n = parseInt(h.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * (n >> 8 & 255) + 0.114 * (n & 255)) / 255; };
+const pb = (p, cls = "") => `<span class="pb ${cls}" style="background:${p.color};color:${lum(p.color) > .62 ? "#0f1115" : "#fff"}">${esc(p.ab)}</span>`;
+const cover = (pid) => D.qs.filter((q) => q.pos[pid] != null).length;
+const LBL = { 5: "Muy a favor", 4: "A favor", 3: "Neutral / mixto", 2: "En contra", 1: "Muy en contra" };
+const lbl = (q, v) => q.ty === "dilema" ? (v >= 4 ? "Prioriza B" : v <= 2 ? "Prioriza A" : "Equilibrio") + (v === 5 || v === 1 ? " (claro)" : "") : LBL[v];
+const affin = (a, b, area) => { let n = 0, d = 0; D.qs.forEach((q) => { if (area && q.a !== area) return; const x = q.pos[a], y = q.pos[b]; if (x == null || y == null) return; n++; d += Math.abs(x - y); }); return n ? { pct: Math.round(100 * (1 - d / n / 4)), n } : null; };
+const stands = (p, prov) => { const s = p.scope, r = PROVS.find((x) => x.id === prov)?.r; if (s.all) return !(s.except || []).includes(prov) && !(s.except || []).includes(r); if (s.regions) return s.regions.includes(r); return (s.provinces || []).includes(prov); };
+const I = {
+  home: '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  part: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16.5 14.6c2.6.1 4.5 1.8 5 5.4"/>',
+  tema: '<rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/>',
+  cmp: '<path d="M8 4v16M16 4v16M4 8h8M12 16h8"/>',
+  prov: '<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  elec: '<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M9 9V4h6v5M9 14h6"/>',
+  test: '<path d="M9 11l2.5 2.5L16 9"/><rect x="3.5" y="3.5" width="17" height="17" rx="3"/>',
+  data: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  srch: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
+};
+const ico = (k) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[k]}</svg>`;
+Object.assign(I, {
+  pol: '<circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4.2 4-6.5 8-6.5s7.2 2.3 8 6.5"/>',
+  deb: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/>',
+  prog: '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/>',
+  glos: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6"/>',
+  menu: '<circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/><circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><circle cx="19" cy="19" r="1.6"/>',
+  cal: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+  ext: '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+});
+// ---------- datos derivados ----------
+const TODAY = (() => { const t = new Date().toISOString().slice(0, 10); return t < "2026-11-30" ? "2026-11-30" : t; })(); // versión del 30N
+const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const fd = (iso) => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return `${+d} ${MES[m - 1]}`; };
+const PLM = Object.fromEntries(D.pols.map((x) => [x.id, x]));
+const polsOf = (pid) => D.pols.filter((x) => x.party === pid);
+const CANDS = Object.entries(D.cand.provs).flatMap(([prov, l]) => l.map((c) => ({ ...c, prov })));
+const provN = (id) => PROVS.find((x) => x.id === id)?.name || id;
+const TOTAL_SEATS = Object.values(D.seats).reduce((a, b) => a + b, 0);
+const ini = (n) => n.split(" ").filter(Boolean).slice(0, 2).map((w) => w[0]).join("");
+const av = (x, cls = "") => x.foto ? `<img class="av ${cls}" src="${x.foto}" alt="" loading="lazy">` : `<span class="av ${cls} avi">${esc(ini(x.name))}</span>`;
+const polVsParty = (x) => { let n = 0, same = 0; Object.entries(x.pos).forEach(([qid, [v]]) => { const pv = QM[qid]?.pos[x.party]; if (pv == null) return; n++; if (Math.abs(pv - v) <= 1) same++; }); return { n, same }; };
+const DEB = [...D.debates.lista].sort((a, b) => (a.fecha || "9").localeCompare(b.fecha || "9"));
+const nextDeb = DEB.filter((d) => d.estado !== "emitido" && d.fecha && d.fecha >= TODAY);
+const pastDeb = DEB.filter((d) => d.estado === "emitido").reverse(), otherDeb = DEB.filter((d) => d.estado !== "emitido" && !nextDeb.includes(d));
+const CAL = D.votar.calendario;
+const nextCal = CAL.filter((c) => c.fecha >= TODAY);
+const daysTo = Math.ceil((new Date("2026-11-29") - new Date(TODAY)) / 864e5);
+const nsrc = D.qs.reduce((a, x) => a + Object.keys(x.src).length, 0);
+const nest = D.qs.reduce((a, x) => a + x.est.length, 0), npos = D.qs.reduce((a, x) => a + Object.keys(x.pos).length, 0);
+const TOPIC_AREA = Object.fromEntries(Object.entries(D.topics).map(([k, t]) => { const c = {}; t.ids.forEach((id) => { const a = QM[id]?.a; if (a) c[a] = (c[a] || 0) + 1; }); return [k, Object.entries(c).sort((a, b) => b[1] - a[1])[0]?.[0]]; }));
+
+const NAVG = [
+  ["Explorar", [["inicio", "Inicio", "home"], ["partidos", "Partidos", "part", D.parties.length], ["politicos", "Políticos", "pol", D.pols.length], ["temas", "Temas", "tema", D.areas.length], ["comparar", "Comparar", "cmp"]]],
+  ["Elecciones", [["resultados", "Resultados 29N", "elec"], ["provincia", "Mi provincia", "prov"], ["debates", "Debates de campaña", "deb", D.debates.lista.length], ["programas", "Programas del 29N", "prog", Object.keys(D.programas.pub).length]]],
+  ["Instituciones", [["congreso", "Congreso y Senado", "data"], ["gobierno", "Gobierno", "part"], ["instituciones", "Cómo funciona el Estado", "glos"], ["ccaa", "Comunidades autónomas", "prov", 19]]],
+  ["Aprende", [["guia", "Cómo se vota", "cal"], ["glosario", "Glosario", "glos", D.glos.length], ["metodo", "Datos y método", "data"]]],
+];
+const PARENT = { ficha: "partidos", politico: "politicos" };
+let S = { v: "inicio", pid: "psoe", ptab: "res", area: "viv", tview: "lista", openQ: null, a: "psoe", b: "pp", prov: "madrid", ydim: "soc", qi: 0, ctab: "choq", pf: "all", pq: "", sort: "orden", dr: null, pal: false, palq: "", menu: false, polid: "sanchez", polv: "dest", polp: "all", cq: "", cprov: "madrid", etab: "res", rtab: "cong", gtab: "votar", df: "all", dt: "all", gq: "", r23: "madrid" };
+const app = $("#app");
+const parseS = (s) => Object.fromEntries((s || "").split(";").filter(Boolean).map((kv) => { const [k, v] = kv.split("="); return [k, v === "null" ? null : v]; }));
+const go = (v, extra = {}) => { S = { ...S, v, dr: null, pal: false, menu: false, ...extra }; try { history.pushState({ S }, ""); } catch (_) {} draw(); const sc = $(".scroll", app); if (sc) sc.scrollTop = 0; };
+addEventListener("popstate", (e) => { if (e.state && e.state.S) { S = e.state.S; draw(); } });
+
+function shell(body) {
+  const cur = PARENT[S.v] || S.v;
+  const ni = ([id, t, ic, n]) => `<button class="ni" data-go="${id}" ${cur === id ? 'aria-current="page"' : ""}>${ico(ic)}${t}${n != null ? `<small>${n}</small>` : ""}</button>`;
+  return `<div class="shell"><aside class="side"><button class="logo" data-go="inicio"><i></i>Mirada Política</button>
+    ${NAVG.map(([h, l], i) => `${i ? `<div class="nav-h">${h}</div>` : ""}${l.map(ni).join("")}`).join("")}
+    <button class="side-test" data-go="test"><span class="eyebrow on-d">Test político</span><b>¿Con quién coincides?</b><span>Empezar →</span></button>
+    <div class="foot">Información neutral y con fuentes. Datos del ${fd(D.updated)} de 2026.</div></aside>
+  <div class="main"><header class="top"><button class="logo" data-go="inicio"><i></i>Mirada Política</button>
+    <button class="k" data-pal aria-label="Buscar">${ico("srch")}<span>Buscar partido, político, tema o provincia…</span><kbd>⌘K</kbd></button>
+    <button class="k kmenu" data-menu aria-label="Todas las secciones">${ico("menu")}</button>
+    <button class="cta" data-go="test">Test político →</button></header>
+    <div class="scroll">${body}<footer class="sfoot"><b>Mirada Política</b><span>Información política neutral, con la fuente de cada dato. No recomienda voto.</span><span><button class="lnk" data-go="metodo">Método</button> · <button class="lnk" data-go="glosario">Glosario</button> · <button class="lnk" data-go="programas">Programas</button></span></footer></div>
+    <nav class="tabbar">${[["inicio", "Inicio", "home"], ["partidos", "Partidos", "part"], ["temas", "Temas", "tema"], ["comparar", "Comparar", "cmp"]].map(([id, t, ic]) => `<button data-go="${id}" ${cur === id ? 'aria-current="page"' : ""}>${ico(ic)}${t}</button>`).join("")}<button class="t" data-go="test" ${cur === "test" ? 'aria-current="page"' : ""}>${ico("test")}Test</button></nav>
+  </div></div>${S.dr ? drawer() : ""}${S.pal ? palette() : ""}${S.menu ? menuSheet() : ""}`;
+}
+function menuSheet() {
+  return `<div class="dr sheet" data-close><div role="dialog" aria-label="Secciones"><button class="x" data-close aria-label="Cerrar">✕</button><h2 style="margin:4px 0 14px">Todas las secciones</h2>
+  ${NAVG.map(([h, l]) => `<p class="eyebrow" style="margin:12px 0 8px">${h}</p><div class="mgrid">${l.map(([id, t, ic, n]) => `<button data-go="${id}">${ico(ic)}<b>${t}</b>${n != null ? `<small>${n}</small>` : ""}</button>`).join("")}</div>`).join("")}</div></div>`;
+}
+const miniBar = (q) => { const c = [0, 0, 0, 0, 0, 0]; Object.values(q.pos).forEach((v) => c[v]++); const t = c.reduce((a, b) => a + b, 0) || 1; return `<span class="mini" title="Reparto de posturas">${[5, 4, 3, 2, 1].map((v) => `<i class="c${v}" style="width:${100 * c[v] / t}%"></i>`).join("")}</span>`; };
+const spread = (q) => `<div class="spread">${[5, 4, 3, 2, 1].map((v) => { const ps = D.parties.filter((p) => q.pos[p.id] === v); return `<div><h3><i class="dot c${v}"></i>${lbl(q, v)}</h3><div class="pbs">${ps.map((p) => `<button class="pbb" data-cell="${p.id}|${q.id}" title="${esc(p.name)}${q.est.includes(p.id) ? " (estimada)" : ""}">${pb(p, q.est.includes(p.id) ? "e" : "")}</button>`).join("") || '<span class="note">—</span>'}</div></div>`; }).join("")}</div>`;
+const legend = () => `<div class="legend">${[5, 4, 3, 2, 1].map((v) => `<span><i class="c${v}"></i>${LBL[v]}</span>`).join("")}<span><i style="background:var(--line2)"></i>Sin datos</span><span>● estimada</span></div>`;
+const scale = (v, big) => `<span class="sc">${[1, 2, 3, 4, 5].map((x) => `<i class="${x === v ? "c" + x : ""}"${big ? ' style="width:22px;height:14px"' : ""}></i>`).join("")}</span>`;
+const polSaid = (qid) => D.pols.filter((x) => x.pos[qid]);
+const head = (t, s, right = "") => `<div class="ph"><div><h1>${t}</h1>${s ? `<p class="sub">${s}</p>` : ""}</div>${right}</div>`;
+const tabsB = (key, list) => `<div class="tabs stk" role="tablist">${list.map(([k, t, n]) => `<button role="tab" data-s="${key}=${k}" aria-selected="${S[key] === k}">${t}${n != null ? ` <span class="note">${n}</span>` : ""}</button>`).join("")}</div>`;
+const provSel = (key) => `<select class="in" data-bind="${key}" aria-label="Provincia">${D.regions.map((r) => `<optgroup label="${esc(r.name)}">${r.provs.map((p) => `<option value="${p.id}"${p.id === S[key] ? " selected" : ""}>${esc(p.name)}</option>`).join("")}</optgroup>`).join("")}</select>`;
+const debCard = (d, compact) => { const [y, m, dd] = (d.fecha || "--").split("-"); const fut = d.estado !== "emitido" && d.fecha && d.fecha >= TODAY;
+  return `<article class="deb-c${compact ? " cmp" : ""}"><div class="dd${fut ? " fut" : ""}"><b>${dd ? +dd : "?"}</b><span>${m ? MES[m - 1] : "por fijar"}</span></div><div style="flex:1;min-width:0">
+    <div class="deb-b"><span class="badge">${d.tipo === "debate" ? "Debate" : "Entrevista"}</span><span class="badge ${fut ? "bfut" : ""}">${d.estado === "emitido" ? "Emitido" : fut ? ({ confirmado: "Confirmado", propuesta: "Propuesto" }[d.estado] || d.estado) : d.fecha ? "Programado" : "No llegó a fijarse"}</span>${d.hora ? `<span class="note">${esc(d.hora)}</span>` : ""}</div>
+    <b class="deb-t">${esc(d.titulo)}</b><div class="note">${esc(d.medio)}${d.ambito ? " · " + esc(d.ambito) : ""}</div>
+    ${compact ? "" : `${d.participantes ? `<p class="deb-p">${esc(d.participantes)}</p>` : ""}${d.contexto ? `<p class="deb-x">${esc(d.contexto)}</p>` : ""}
+    <div class="deb-f"><div class="pbs">${(d.partidos || []).filter((x) => PM[x]).map((x) => `<button class="pbb" data-go="ficha" data-s="pid=${x};ptab=res">${pb(PM[x])}</button>`).join("")}</div>
+    <span style="display:flex;gap:10px;flex-wrap:wrap">${d.grabacion?.url ? `<a class="lnk" href="${esc(d.grabacion.url)}" target="_blank" rel="noopener">${d.grabacion.formato === "video" ? "Ver vídeo" : "Escuchar"} ↗</a>` : ""}${(d.fuentes || []).slice(0, 1).map((f) => `<a class="lnk" href="${esc(f[0])}" target="_blank" rel="noopener">Fuente ↗</a>`).join("")}</span></div>`}</div></article>`; };
+
+// ---------- cálculos para Inicio ----------
+const pdim = (pid, dim) => { let s = 0, n = 0; D.qs.forEach((q) => { if (q.dm !== dim || !q.dr) return; const v = q.pos[pid]; if (v == null) return; s += (v - 3) / 2 * q.dr; n++; }); return n >= 3 ? { v: s / n, n } : null; };
+const DIMM = Object.fromEntries(D.dims.map((d) => [d.id, d]));
+const split = (q) => { const c = [0, 0, 0, 0, 0, 0]; Object.values(q.pos).forEach((v) => c[v]++); return c; };
+const DEBATE = D.qs.filter((q) => q.ty === "likert" && Object.keys(q.pos).length >= 20).map((q) => { const c = split(q), f = c[4] + c[5], a = c[1] + c[2]; return { q, k: Math.min(f, a) / Math.max(1, f + a) }; }).sort((x, y) => y.k - x.k).slice(0, 12).map((o) => o.q);
+const AREA_COL = ["#2b59c3", "#0f766e", "#7c3aed", "#b45309", "#be123c", "#0e7490", "#15803d", "#475569", "#a21caf", "#c2410c", "#4d7c0f", "#9f1239"];
+const short = (n) => n.split(/,| y /)[0];
+function polMap() {
+  const W = 340, H = 340, P = 48, yd = S.ydim;
+  const raw = D.parties.map((p) => ({ p, x: pdim(p.id, "eco"), y: pdim(p.id, yd) })).filter((o) => o.x && o.y);
+  const mx = Math.max(.2, ...raw.map((o) => Math.abs(o.x.v))) * 1.08, my = Math.max(.2, ...raw.map((o) => Math.abs(o.y.v))) * 1.08;
+  let pts = raw.map((o) => ({ p: o.p, x: W / 2 + o.x.v / mx * (W / 2 - P), y: H / 2 + o.y.v / my * (H / 2 - P) }));
+  for (let it = 0; it < 200; it++) for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+    const a = pts[i], b = pts[j], dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || .01, m = 27;
+    if (d < m) { const k = (m - d) / 2 / d; a.x -= dx * k; a.y -= dy * k; b.x += dx * k; b.y += dy * k; }
+  }
+  pts.forEach((o) => { o.x = Math.max(12, Math.min(W - 12, o.x)); o.y = Math.max(12, Math.min(H - 12, o.y)); });
+  const d = DIMM[yd], e = DIMM.eco;
+  return `<svg viewBox="0 0 ${W} ${H}" class="pmap" role="img" aria-label="Mapa político: ${esc(e.name)} y ${esc(d.name)}">
+    <rect x="0" y="0" width="${W / 2}" height="${H / 2}" fill="#f3f5f8"/><rect x="${W / 2}" y="${H / 2}" width="${W / 2}" height="${H / 2}" fill="#f3f5f8"/>
+    <line x1="${W / 2}" y1="0" x2="${W / 2}" y2="${H}" stroke="#d5d8de"/><line x1="0" y1="${H / 2}" x2="${W}" y2="${H / 2}" stroke="#d5d8de"/>
+    <text x="6" y="${H / 2 - 6}" class="ax">← ${esc(e.a)}</text><text x="${W - 6}" y="${H / 2 - 6}" class="ax" text-anchor="end">${esc(e.b)} →</text>
+    <text x="${W / 2 + 6}" y="13" class="ax">↑ ${esc(d.a)}</text><text x="${W / 2 + 6}" y="${H - 6}" class="ax">↓ ${esc(d.b)}</text>
+    ${pts.map(({ p, x, y }) => `<g class="pt" data-go="ficha" data-s="pid=${p.id};ptab=res" tabindex="0"><title>${esc(p.name)}</title><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8.5" fill="${p.color}" stroke="#fff" stroke-width="2"/><text x="${x.toFixed(1)}" y="${(y + 18).toFixed(1)}" text-anchor="middle" class="pl">${esc(p.ab)}</text></g>`).join("")}
+  </svg>`;
+}
+function debateCard() {
+  const i = (S.qi % DEBATE.length + DEBATE.length) % DEBATE.length, q = DEBATE[i], c = split(q), t = c.reduce((a, b) => a + b, 0);
+  const grp = (vs, l, cls) => { const ps = D.parties.filter((p) => vs.includes(q.pos[p.id])); return `<div class="dg ${cls}"><h3>${l}<span>${ps.length}</span></h3><div class="pbs">${ps.map((p) => `<button class="pbb" data-cell="${p.id}|${q.id}" title="${esc(p.name)}">${pb(p, q.est.includes(p.id) ? "e" : "")}</button>`).join("") || '<span class="note">Ninguna</span>'}</div></div>`; };
+  const said = polSaid(q.id);
+  return `<div class="card deb"><div class="ch"><h2><span class="eyebrow">Temas que dividen · ${esc(short(AM[q.a].n))}</span></h2><div class="pager"><button data-qi="-1" aria-label="Anterior">‹</button><span>${i + 1}/${DEBATE.length}</span><button data-qi="1" aria-label="Siguiente">›</button></div></div>
+    <div style="padding:14px"><p class="dq">${esc(q.t)}</p>
+    <div class="stack">${[5, 4, 3, 2, 1].map((v) => c[v] ? `<i class="c${v}" style="flex:${c[v]}" title="${LBL[v]}: ${c[v]}">${c[v]}</i>` : "").join("")}</div>
+    <div class="stack-l"><span>A favor ${c[4] + c[5]}</span><span>Neutral ${c[3]}</span><span>En contra ${c[1] + c[2]}</span></div>
+    <div class="dgs">${grp([4, 5], "A favor", "f")}${grp([1, 2], "En contra", "a")}</div>
+    ${said.length ? `<div class="said"><span class="note">Se han pronunciado:</span>${said.map((x) => `<button class="pbb" data-go="politico" data-s="polid=${x.id}" title="${esc(x.name)}">${av(x, "xs")}</button>`).join("")}</div>` : ""}
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"><button class="chip" data-go="temas" data-s="area=${q.a};openQ=${q.id};tview=lista">Contexto y fuentes</button><span class="note" style="align-self:center">${t} candidaturas con postura</span></div></div></div>`;
+}
+// ---------- Resultados (vista previa con 2023 hasta que se carguen los del 29N) ----------
+const CE = "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229", LOREG = "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672", RCD = "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196";
+const G23 = [["pp", "PP", "#1D6FC4", /Partido Popular|\(PP\)/], ["psoe", "PSOE", "#E30613", /PSOE|\(PSC\)/], ["vox", "Vox", "#5BB22F", /^VOX/], ["sumar", "Sumar", "#E51C55", /SUMAR/i], ["erc", "ERC", "#F2A900", /Esquerra Republicana/], ["junts", "Junts", "#20C0B5", /^Junts/], ["bildu", "EH Bildu", "#A2C617", /Bildu/], ["pnv", "PNV", "#008D3F", /PNV/], ["bng", "BNG", "#5EA7DC", /Bloque Nacionalista Galego/], ["cc", "CC", "#F0C419", /Coalición Canaria/], ["upn", "UPN", "#2948A8", /Unión del Pueblo Navarro/]];
+const g23 = (n) => G23.find((g) => g[3].test(n)) || ["otros", "Otros", "#b9bdc6"];
+const R23 = (() => { const t = {}; let el = 0, vt = 0, va = 0, bl = 0, nu = 0; const win = {};
+  Object.entries(D.res23.provs).forEach(([id, p]) => { el += p.electores; vt += p.votantes; va += p.validos; bl += p.blanco; nu += p.nulos;
+    p.cands.forEach(([n, v, e]) => { const g = g23(n); (t[g[0]] ||= { id: g[0], l: g[1], c: g[2], v: 0, e: 0 }); t[g[0]].v += v; t[g[0]].e += e; });
+    const w = [...p.cands].sort((a, b) => b[2] - a[2] || b[1] - a[1])[0]; win[id] = g23(w[0]); });
+  return { parties: Object.values(t).filter((x) => x.e > 0).sort((a, b) => b.e - a.e || b.v - a.v), el, vt, va, bl, nu, win }; })();
+const RES = D.res29 || null; // el 30N se rellena con los datos oficiales del 29N
+const CUR = RES || R23;
+function hemi(parties, small) {
+  const total = parties.reduce((a, p) => a + p.e, 0), rows = small ? 8 : 11, R0 = 0.38, seats = [];
+  const radii = Array.from({ length: rows }, (_, i) => R0 + (1 - R0) * i / (rows - 1)), sum = radii.reduce((a, b) => a + b, 0);
+  let left = total; radii.forEach((r, i) => { const n = i === rows - 1 ? left : Math.round(total * r / sum); left -= n; for (let k = 0; k < n; k++) { const a = Math.PI * (1 - (n === 1 ? .5 : k / (n - 1))); seats.push({ a, r }); } });
+  seats.sort((x, y) => y.a - x.a || x.r - y.r);
+  let i = 0; const col = []; parties.forEach((p) => { for (let k = 0; k < p.e; k++) col.push(p.c); });
+  const W = 200, H = 108, cx = 100, cy = 102, sc = 96, dr = small ? 3.1 : 2.55;
+  return `<svg viewBox="0 0 ${W} ${H}" class="hemi" role="img" aria-label="Hemiciclo de ${total} escaños">${seats.map((s) => `<circle cx="${(cx + Math.cos(s.a) * s.r * sc).toFixed(1)}" cy="${(cy - Math.sin(s.a) * s.r * sc).toFixed(1)}" r="${dr}" fill="${col[i++] || "#ddd"}"/>`).join("")}
+    <line x1="${cx}" y1="4" x2="${cx}" y2="${cy}" stroke="#0f1115" stroke-dasharray="2 2" stroke-width=".6"/><text x="${cx}" y="${cy - 4}" text-anchor="middle" class="hm-t">${total}</text></svg>`;
+}
+const previewBanner = () => RES ? "" : `<div class="pv">${ico("data")}<span><b>Vista previa con los resultados de 2023.</b> El 30 de noviembre se cargan aquí los resultados oficiales del 29N, con el mismo diseño.</span></div>`;
+const seatLegend = (ps) => `<div class="sl">${ps.map((p) => `<span><i style="background:${p.c}"></i>${esc(p.l)} <b>${p.e}</b></span>`).join("")}</div>`;
+const HIST = [["1977", "UCD", 165], ["1979", "UCD", 168], ["1982", "PSOE", 202], ["1986", "PSOE", 184], ["1989", "PSOE", 175], ["1993", "PSOE", 159], ["1996", "PP", 156], ["2000", "PP", 183], ["2004", "PSOE", 164], ["2008", "PSOE", 169], ["2011", "PP", 186], ["2015", "PP", 123], ["2016", "PP", 137], ["abr 2019", "PSOE", 123], ["nov 2019", "PSOE", 120], ["2023", "PP", 137]];
+const HCOL = { UCD: "#2f8f4e", PSOE: "#E30613", PP: "#1D6FC4" };
+function resultados() {
+  const T = CUR, part = 100 * T.vt / T.el;
+  const tabs = [["cong", "Congreso"], ["prov", "Por provincia"], ["part", "Participación"], ["hist", "Desde 1977"]];
+  let body = "";
+  if (S.rtab === "cong") body = `<div class="grid g2"><div class="card" style="padding:16px">${hemi(T.parties)}${seatLegend(T.parties)}<p class="note" style="margin:10px 0 0;text-align:center">Mayoría absoluta: <b style="color:var(--ink)">176</b> escaños</p></div>
+    <div class="card"><div class="tw"><table><thead><tr><th>Candidatura</th><th class="num">Votos</th><th class="num">%</th><th class="num">Escaños</th></tr></thead><tbody>${T.parties.map((p) => `<tr style="cursor:default"><td><span style="display:flex;gap:8px;align-items:center"><i class="dot" style="background:${p.c}"></i><b>${esc(p.l)}</b></span></td><td class="num">${p.v.toLocaleString("es")}</td><td class="num">${(100 * p.v / T.va).toFixed(1).replace(".", ",")}</td><td class="num"><b>${p.e}</b></td></tr>`).join("")}</tbody></table></div><p class="note" style="padding:8px 14px 12px;margin:0">Fuente: <a class="lnk" href="${esc(D.res23.fuente.url)}" target="_blank" rel="noopener">${esc(D.res23.fuente.label)}</a>. PSC sumado a PSOE.</p></div></div>`;
+  if (S.rtab === "prov") body = `<div class="card" style="padding:14px"><p class="note" style="margin:0 0 10px">Color de la candidatura con más escaños en cada provincia. Toca una para ver su papeleta y resultado.</p>${D.regions.map((r) => `<div class="pt-r"><span class="pt-n">${esc(r.name)}</span><div class="pt-g">${r.provs.map((p) => { const w = T.win[p.id]; return `<button class="ptile" data-go="provincia" data-s="prov=${p.id}" style="background:${w[2]};color:${lum(w[2]) > .62 ? "#0f1115" : "#fff"}" title="${esc(p.name)}: ${esc(w[1])}">${esc(p.name.slice(0, 3).toUpperCase())}<small>${D.seats[p.id]}</small></button>`; }).join("")}</div></div>`).join("")}${seatLegend(G23.filter((g) => Object.values(T.win).some((w) => w[0] === g[0])).map((g) => ({ l: g[1], c: g[2], e: Object.values(T.win).filter((w) => w[0] === g[0]).length })))}</div>`;
+  if (S.rtab === "part") body = `<div class="grid g4 kpis">${[[part.toFixed(1).replace(".", ",") + " %", "participación"], [T.el.toLocaleString("es"), "electores"], [T.bl.toLocaleString("es"), "votos en blanco"], [T.nu.toLocaleString("es"), "votos nulos"]].map(([b, s]) => `<div class="card kpi"><b>${b}</b><span>${s}</span></div>`).join("")}</div>
+    <div class="card" style="margin-top:14px"><div class="ch"><h2>Participación por provincia</h2></div><div class="seats">${Object.entries(D.res23.provs).map(([id, p]) => [id, 100 * p.votantes / p.electores]).sort((a, b) => b[1] - a[1]).map(([id, v]) => `<button class="ar" data-go="provincia" data-s="prov=${id}"><span>${esc(provN(id))}</span><span class="bar"><i style="width:${v}%"></i></span><b class="num">${v.toFixed(1).replace(".", ",")} %</b></button>`).join("")}</div></div>`;
+  if (S.rtab === "hist") body = `<div class="card"><div class="ch"><h2>Candidatura más votada en cada elección general</h2></div>${HIST.map(([y, p, e]) => `<div class="ar"><span><b>${y}</b> · ${p}</span><span class="bar"><i style="width:${100 * e / 350}%;background:${HCOL[p]}"></i></span><b class="num">${e}</b></div>`).join("")}<p class="note" style="padding:6px 14px 12px;margin:0">Escaños de la primera fuerza sobre 350. Se cotejará con el histórico oficial del Ministerio del Interior antes de publicar.</p></div>`;
+  return head("Resultados de las elecciones generales", "Congreso de los Diputados: votos, escaños, provincias y participación.") + previewBanner() + tabsB("rtab", tabs) + body;
+}
+// ---------- Congreso y Senado ----------
+function congreso() {
+  return head("Congreso y Senado", "Las Cortes Generales: quién se sienta, qué mayorías hacen falta y qué hace cada cámara.") + previewBanner() + `
+  <div class="grid g2"><div class="card" style="padding:16px"><div class="ch" style="padding:0 0 10px;border:0"><h2>Congreso de los Diputados · XVI Legislatura</h2><span class="badge">Se constituye el 23 dic</span></div>${hemi(CUR.parties)}${seatLegend(CUR.parties)}</div>
+  <div class="grid" style="align-content:start"><div class="grid g4 kpis" style="grid-template-columns:repeat(2,minmax(0,1fr))">${[["176", "mayoría absoluta (investidura en 1.ª votación, moción de censura)"], ["210", "tres quintos (algunos nombramientos)"], ["234", "dos tercios (reforma agravada de la Constitución)"], ["350", "diputados, elegidos por provincia"]].map(([b, s]) => `<div class="card kpi"><b>${b}</b><span>${s}</span></div>`).join("")}</div>
+  <div class="card" style="padding:14px"><b>Grupos parlamentarios</b><p class="note" style="margin:4px 0 0">Se forman en los días siguientes a la constitución de la cámara. Hacen falta 15 diputados, o 5 si la formación alcanza ciertos porcentajes de voto (<a class="lnk" href="${RCD}" target="_blank" rel="noopener">Reglamento del Congreso, art. 23</a>).</p></div></div></div>
+  <div class="grid g2" style="margin-top:14px">${[["Congreso", "Elige al presidente del Gobierno, aprueba las leyes y los Presupuestos, y controla al Gobierno con preguntas, interpelaciones y la moción de censura.", "CE, arts. 66, 68, 99 y 113"], ["Senado", "Cámara de representación territorial. Cuatro senadores por provincia elegidos por los ciudadanos (con reglas propias en las islas, Ceuta y Melilla), más los que designan los parlamentos autonómicos. Puede enmendar o vetar las leyes que aprueba el Congreso.", "CE, arts. 69 y 90"]].map(([t, d, a]) => `<div class="card" style="padding:14px 16px"><b>${t}</b><p style="margin:4px 0 6px;color:var(--ink2)">${d}</p><a class="lnk" href="${CE}" target="_blank" rel="noopener">${a} ↗</a></div>`).join("")}</div>
+  <div class="sech"><h2>Cómo se aprueba una ley</h2></div>
+  <div class="card"><ol class="steps big">${[["Iniciativa", "El Gobierno presenta un proyecto de ley; los grupos, el Senado, los parlamentos autonómicos o 500.000 firmas pueden presentar proposiciones (CE, art. 87)."], ["Congreso", "Debate de totalidad, enmiendas en comisión y votación en el Pleno."], ["Senado", "Tiene dos meses para aprobarla, enmendarla o vetarla (CE, art. 90)."], ["Vuelta al Congreso", "Acepta o rechaza las enmiendas. El veto se levanta por mayoría absoluta, o simple pasados dos meses."], ["Sanción y BOE", "El Rey la sanciona en 15 días y se publica en el Boletín Oficial del Estado (CE, art. 91)."]].map(([t, d]) => `<li><b>${t}</b><span>${d}</span></li>`).join("")}</ol></div>`;
+}
+// ---------- Gobierno ----------
+const PRES = [["Adolfo Suárez", "UCD", "1977–1981"], ["Leopoldo Calvo-Sotelo", "UCD", "1981–1982"], ["Felipe González", "PSOE", "1982–1996"], ["José María Aznar", "PP", "1996–2004"], ["José Luis Rodríguez Zapatero", "PSOE", "2004–2011"], ["Mariano Rajoy", "PP", "2011–2018"], ["Pedro Sánchez", "PSOE", "2018–"]];
+function gobierno() {
+  const steps = [["29 nov", "Elecciones generales", "done"], ["4 dic", "Escrutinio general en las Juntas Electorales Provinciales", ""], ["23 dic", "Constitución del Congreso y del Senado; elección de la Mesa", ""], ["Después", "Ronda de consultas del Rey con los representantes de los grupos y propuesta de candidato (CE, art. 99.1)", ""], ["Investidura", "Debate y votación. En la 1.ª votación hacen falta 176 síes; si no, 48 horas después basta con más síes que noes (CE, art. 99.3)", ""], ["Nombramiento", "El Rey nombra al presidente, que forma su Gobierno y nombra a los ministros (CE, art. 100)", ""]];
+  return head("Gobierno", "Cómo se forma el nuevo Gobierno tras el 29N y quién lo ha presidido desde 1977.") + `
+  <div class="pv">${ico("data")}<span><b>Gobierno en funciones.</b> Tras las elecciones, el Gobierno cesa y sigue en funciones hasta que tome posesión el nuevo (CE, art. 101). Aquí aparecerán el presidente investido y sus ministros, con su nombramiento en el BOE.</span></div>
+  <div class="sech" style="margin-top:4px"><h2>Del 29N a la investidura</h2></div>
+  <div class="card"><ol class="tline">${steps.map(([d, t, st]) => `<li class="${st}"><span class="tl-d">${d}</span><div><b>${t}</b></div></li>`).join("")}</ol><p class="note" style="padding:0 16px 14px;margin:0">Si en dos meses desde la primera votación nadie obtiene la confianza del Congreso, las Cortes se disuelven y se convocan nuevas elecciones (CE, art. 99.5). <a class="lnk" href="${CE}" target="_blank" rel="noopener">Constitución ↗</a></p></div>
+  <div class="grid g2" style="margin-top:14px"><div class="card"><div class="ch"><h2>Presidentes del Gobierno desde 1977</h2></div>${PRES.map(([n, p, y]) => `<div class="crow"><span class="av sm avi" style="background:${HCOL[p]};color:#fff">${esc(ini(n))}</span><span style="flex:1"><b>${esc(n)}</b><span class="note" style="display:block">${p}</span></span><span class="note">${y}</span></div>`).join("")}</div>
+  <div class="grid" style="align-content:start">${[["Qué hace el Gobierno", "Dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado. Ejerce la función ejecutiva y la potestad reglamentaria (CE, art. 97)."], ["Cómo se le controla", "Preguntas e interpelaciones en las Cortes, la cuestión de confianza (art. 112) y la moción de censura, que exige mayoría absoluta y un candidato alternativo (art. 113)."], ["Quién lo forma", "El presidente, los vicepresidentes, en su caso, y los ministros (CE, art. 98)."]].map(([t, d]) => `<div class="card" style="padding:14px 16px"><b>${t}</b><p style="margin:4px 0 0;color:var(--ink2)">${d}</p></div>`).join("")}</div></div>`;
+}
+// ---------- Cómo funciona el Estado ----------
+const INST = [
+  ["Jefatura del Estado", "El Rey", "Símbolo de la unidad del Estado, arbitra y modera el funcionamiento de las instituciones. Propone al candidato a la investidura, sanciona las leyes y convoca elecciones. Sus actos van refrendados por el Gobierno.", "CE, arts. 56–65", "pol"],
+  ["Cortes Generales", "Congreso y Senado", "Representan al pueblo español: ejercen el poder legislativo, aprueban los Presupuestos y controlan al Gobierno.", "CE, arts. 66–96", "elec", "congreso"],
+  ["Gobierno", "Presidente y ministros", "Dirige la política interior y exterior y la Administración. Responde ante el Congreso.", "CE, arts. 97–107", "part", "gobierno"],
+  ["Poder Judicial", "Jueces y tribunales · CGPJ · Tribunal Supremo", "Juzga y hace ejecutar lo juzgado. El Consejo General del Poder Judicial (presidente y 20 vocales) lo gobierna; el Tribunal Supremo es el órgano superior salvo en garantías constitucionales.", "CE, arts. 117–127", "glos"],
+  ["Tribunal Constitucional", "12 magistrados · mandato de 9 años", "Decide si las leyes respetan la Constitución, resuelve los recursos de amparo y los conflictos entre el Estado y las comunidades.", "CE, arts. 159–165", "data"],
+  ["Comunidades autónomas", "17 comunidades y 2 ciudades autónomas", "Tienen parlamento y gobierno propios y las competencias que fija su Estatuto de Autonomía.", "CE, arts. 143–158", "prov", "ccaa"],
+  ["Ayuntamientos", "Alcalde y concejales", "Gobiernan los municipios. Los concejales se eligen cada cuatro años y eligen al alcalde.", "CE, art. 140", "home"],
+  ["Defensor del Pueblo", "Alto comisionado de las Cortes", "Defiende los derechos fundamentales ante la Administración; cualquier persona puede presentarle una queja gratis.", "CE, art. 54", "pol"],
+  ["Tribunal de Cuentas", "Fiscalizador de las cuentas públicas", "Revisa las cuentas del Estado, del sector público y de los partidos políticos.", "CE, art. 136", "prog"],
+];
+function instituciones() {
+  return head("Cómo funciona el Estado", "Las instituciones de España explicadas en una tarjeta, con su artículo de la Constitución.") + `
+  <div class="instg">${INST.map(([t, s, d, a, ic, v]) => `<div class="card inst">${ico(ic)}<b>${t}</b><span class="note">${s}</span><p>${d}</p><span class="inst-f"><a class="lnk" href="${CE}" target="_blank" rel="noopener">${a} ↗</a>${v ? `<button class="lnk" data-go="${v}">Ver más →</button>` : ""}</span></div>`).join("")}</div>
+  <div class="sech"><h2>España en la Unión Europea</h2></div><div class="card" style="padding:14px 16px;color:var(--ink2)">España es miembro desde 1986. Elige 61 diputados al Parlamento Europeo y participa en el Consejo de la UE con el Gobierno.</div>`;
+}
+// ---------- Comunidades autónomas ----------
+const CAP = { and: "Sevilla", ara: "Zaragoza", ast: "Oviedo", bal: "Palma", can: "Las Palmas de G. C. y Santa Cruz de Tenerife", cnt: "Santander", cyl: "Valladolid", clm: "Toledo", cat: "Barcelona", val: "Valencia", ext: "Mérida", gal: "Santiago de Compostela", mad: "Madrid", mur: "Murcia", nav: "Pamplona", pv: "Vitoria-Gasteiz", rio: "Logroño", ceu: "Ceuta", mel: "Melilla" };
+function ccaa() {
+  return head("Comunidades autónomas", "Las 17 comunidades y 2 ciudades autónomas: provincias, diputados que eligen y partidos propios de cada territorio.") + `
+  <div class="ccg">${D.regions.map((r) => { const se = r.provs.reduce((a, p) => a + (D.seats[p.id] || 0), 0), own = D.parties.filter((p) => p.sk !== "est" && PROVS.filter((x) => stands(p, x.id)).every((x) => x.r === r.id) && r.provs.some((x) => stands(p, x.id))); return `<div class="card cc">
+    <div class="cc-h"><b>${esc(r.name)}</b><span class="badge">${se} diputados</span></div>${CAP[r.id] ? `<span class="note">Capital: ${esc(CAP[r.id])}</span>` : ""}
+    <div class="chips" style="margin:10px 0 0">${r.provs.map((p) => `<button class="chip sm" data-go="provincia" data-s="prov=${p.id}">${esc(p.name)} · ${D.seats[p.id]}</button>`).join("")}</div>
+    ${own.length ? `<div class="pbs" style="margin-top:10px">${own.map((p) => `<button class="pbb" data-go="ficha" data-s="pid=${p.id};ptab=res" title="${esc(p.name)}">${pb(p)}</button>`).join("")}</div>` : ""}</div>`; }).join("")}</div>`;
+}
+// ---------- Cómo se vota (guía general) ----------
+function guia() {
+  const tabs = [["votar", "Cómo votar"], ["cal", "Calendario del 29N"], ["esc", "Reparto de escaños"]];
+  let body = "";
+  if (S.gtab === "votar") body = D.votar.secciones.map((s, i) => `<details class="card acc"${i === 0 ? " open" : ""}><summary><b>${esc(s.titulo)}</b><span class="note">${s.pasos.length}</span></summary><ol class="steps">${s.pasos.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>${(s.fuentes || []).length ? `<p class="note" style="padding:0 14px 12px;margin:0">Fuentes: ${s.fuentes.map((f) => `<a class="lnk" href="${esc(f.url || f[0])}" target="_blank" rel="noopener">${esc(f.label || f[1])}</a>`).join(" · ")}</p>` : ""}</details>`).join("");
+  if (S.gtab === "cal") body = `<div class="card"><ol class="tline">${CAL.map((c) => { const st = c.fecha < TODAY ? "done" : c === nextCal[0] ? "now" : ""; return `<li class="${st}"><span class="tl-d">${esc(c.cuando)}</span><div><b>${esc(c.hito)}</b>${c.nota ? `<p>${esc(c.nota)}</p>` : ""}${c.fuente ? `<a class="lnk" href="${esc(c.fuente.url)}" target="_blank" rel="noopener">${esc(c.fuente.label)} ↗</a>` : ""}</div></li>`; }).join("")}</ol></div>`;
+  if (S.gtab === "esc") { const l = Object.entries(D.seats).sort((a, b) => b[1] - a[1]), mx = l[0][1];
+    body = `<div class="card" style="padding:14px 16px;margin-bottom:14px;color:var(--ink2)">Cada provincia elige al menos 2 diputados y el resto se reparte según su población; Ceuta y Melilla eligen 1. Dentro de cada provincia, los escaños se reparten con la ley D'Hondt entre las candidaturas que superan el 3 % de los votos válidos (<a class="lnk" href="${LOREG}" target="_blank" rel="noopener">LOREG, arts. 162 y 163</a>).</div><div class="card"><div class="ch"><h2>Diputados por provincia</h2><a class="lnk" href="${esc(D.seatsSrc.url)}" target="_blank" rel="noopener">BOE ↗</a></div><div class="seats">${l.map(([id, n]) => `<button class="ar" data-go="provincia" data-s="prov=${id}"><span>${esc(provN(id))}</span><span class="bar"><i style="width:${100 * n / mx}%"></i></span><b class="num">${n}</b></button>`).join("")}</div></div>`; }
+  return head("Cómo se vota en España", "Guía práctica, calendario de las últimas generales y cómo se reparten los escaños.") + tabsB("gtab", tabs) + body;
+}
+// ---------- Inicio (después del 29N) ----------
+function inicio() {
+  const A = PM[S.a], B = PM[S.b], r = affin(A.id, B.id), pr = PROVS.find((x) => x.id === S.prov), pps = D.parties.filter((p) => stands(p, pr.id));
+  const selP = (k) => `<label class="pick" style="background:${PM[S[k]].color};color:${lum(PM[S[k]].color) > .62 ? "#0f1115" : "#fff"}"><b>${esc(PM[S[k]].ab)}</b><span>▾</span><select data-bind="${k}" aria-label="Partido ${k === "a" ? "1" : "2"}">${D.parties.map((p) => `<option value="${p.id}"${p.id === S[k] ? " selected" : ""}>${esc(p.name)}</option>`).join("")}</select></label>`;
+  const g = D.glos[new Date().getDate() % D.glos.length];
+  return `<section class="hx">
+    <div class="hx-in"><p class="eyebrow on-d">Información política de España · XVI Legislatura</p>
+    <h1 class="hx-t">Toda la política española,<br><mark>en un vistazo.</mark></h1>
+    <button class="hx-s" data-pal>${ico("srch")}<span>Busca un partido, un político, un tema o tu provincia</span></button>
+    <div class="hx-c sx"><button data-go="resultados">Resultados del 29N</button><button data-go="gobierno">Investidura</button>${["viv", "eco", "dem", "san"].map((id) => `<button data-go="temas" data-s="area=${id};openQ=null">${esc(short(AM[id].n))}</button>`).join("")}<button data-go="instituciones">Instituciones</button></div>
+    <div class="hx-k"><span><b>${D.parties.length}</b> partidos</span><span><b>${CANDS.length}</b> cabezas de lista</span><span><b>${D.qs.length}</b> temas</span><span><b>${nsrc.toLocaleString("es")}</b> posturas con fuente</span></div></div>
+    <div class="hx-strip">${D.parties.map((p) => `<button data-go="ficha" data-s="pid=${p.id};ptab=res" style="background:${p.color}" title="${esc(p.name)}"></button>`).join("")}</div>
+  </section>
+  <div class="hgrid">
+    <div class="card"><div class="ch"><h2>${ico("elec")} El nuevo Congreso</h2><button class="lnk" data-go="resultados">Resultados →</button></div><div style="padding:12px 16px 14px">${RES ? "" : '<p class="note" style="margin:0 0 6px">Vista previa con 2023 · el 30N, resultados del 29N</p>'}${hemi(CUR.parties, true)}${seatLegend(CUR.parties.slice(0, 6))}</div></div>
+    <div class="card"><div class="ch"><h2>${ico("cal")} Qué viene ahora</h2><button class="lnk" data-go="gobierno">Investidura →</button></div><ol class="tl-mini">${[["4 dic", "Escrutinio general"], ["23 dic", "Se constituyen el Congreso y el Senado"], ["Después", "Consultas del Rey y propuesta de candidato"], ["Investidura", "176 síes en 1.ª votación o mayoría simple en la 2.ª"]].map(([d, t]) => `<li><b>${d}</b><span>${t}</span></li>`).join("")}</ol>
+      <div style="padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap"><button class="chip" data-go="congreso">Congreso y Senado</button><button class="chip" data-go="instituciones">Cómo funciona el Estado</button></div></div>
+  </div>
+  <div class="sech"><h2>Quién es quién</h2><button class="lnk" data-go="politicos">Todos los políticos →</button></div>
+  <div class="faces sx">${D.pols.map((x) => `<button class="face" data-go="politico" data-s="polid=${x.id}">${av(x)}<b>${esc(x.name)}</b>${PM[x.party] ? pb(PM[x.party]) : `<span class="badge">${esc(x.pl)}</span>`}</button>`).join("")}</div>
+  <div class="hgrid" style="margin-top:18px">
+    <div class="card mapc"><div class="ch"><div><h2>Mapa político</h2><p class="note" style="margin:2px 0 0">Dónde cae cada partido según sus posturas documentadas. Toca un punto.</p></div></div>
+      <div class="chips sx" style="padding:10px 14px 0"><span class="note" style="align-self:center">Eje vertical</span>${["soc", "ter", "inm", "amb", "eur", "lib"].map((id) => `<button class="chip sm" data-s="ydim=${id}" aria-pressed="${S.ydim === id}">${esc(DIMM[id].name)}</button>`).join("")}</div>
+      <div style="padding:8px 10px 6px">${polMap()}</div><p class="note" style="padding:0 14px 12px;margin:0">Media de sus posturas en las preguntas de cada eje, con la escala ajustada a los extremos. Descriptivo: no ordena ni recomienda.</p></div>
+    ${debateCard()}
+  </div>
+  <div class="sech"><h2>Explora por tema</h2><button class="lnk" data-go="temas">Ver los ${D.areas.length} →</button></div>
+  <div class="tiles sx">${D.areas.map((a, i) => `<button class="tile" data-go="temas" data-s="area=${a.id};openQ=null" style="--ac:${AREA_COL[i % 12]}"><i>${esc(a.letter)}</i><b>${esc(a.n)}</b><span>${D.qs.filter((q) => q.a === a.id).length} preguntas</span></button>`).join("")}</div>
+  <div class="sech"><h2>Entiende la política</h2><button class="lnk" data-go="instituciones">Todas las instituciones →</button></div>
+  <div class="tiles sx inst-t">${INST.slice(0, 6).map(([t, s, , , ic, v]) => `<button class="tile" data-go="${v || "instituciones"}" style="--ac:#0f1115">${ico(ic)}<b>${t}</b><span>${s}</span></button>`).join("")}</div>
+  <div class="trio">
+    <div class="card"><div class="ch"><h2>Cara a cara</h2><button class="lnk" data-go="comparar">Detalle →</button></div><div style="padding:14px">
+      <div class="duel">${selP("a")}<div class="duel-p"><b>${r ? r.pct + " %" : "—"}</b><span>coinciden</span></div>${selP("b")}</div>
+      <div class="bar" style="margin-top:12px;height:8px"><i style="width:${r ? r.pct : 0}%;background:linear-gradient(90deg,${A.color},${B.color})"></i></div>
+      <p class="note" style="margin:8px 0 0">${r ? `Según sus programas del 29N, en ${r.n} preguntas.` : "Sin preguntas en común."}</p></div></div>
+    <div class="card"><div class="ch"><h2>Tu provincia</h2><button class="lnk" data-go="provincia">Detalle →</button></div><div style="padding:14px">
+      ${provSel("prov").replace('class="in"', 'class="in" style="width:100%"')}
+      <p class="note" style="margin:10px 0 6px"><b style="color:var(--ink)">${D.seats[pr.id]} diputados</b> · ${pps.length} partidos analizados</p><div class="pbs">${pps.map((p) => `<button class="pbb" data-go="ficha" data-s="pid=${p.id};ptab=res">${pb(p)}</button>`).join("")}</div></div></div>
+    <div class="grid" style="align-content:start">
+      <div class="card tcard"><div style="padding:16px"><p class="eyebrow on-d">Test político</p><h2 style="font-size:18px;margin:4px 0 6px">¿Con quién coincides?</h2><p style="margin:0 0 12px;color:#c9ccd4">Compara tus ideas con las de ${D.parties.length} partidos. De 3 a 15 minutos.</p><button class="cta" style="margin:0" data-go="test">Empezar →</button></div></div>
+      <button class="card gl" data-go="glosario" data-s="gq=${esc(g.t)}"><span class="eyebrow">Glosario · ${esc(g.t)}</span><span>${esc(g.d.length > 150 ? g.d.slice(0, 147) + "…" : g.d)}</span></button>
+    </div>
+  </div>
+  <div class="sech"><h2>Archivo de la campaña del 29N</h2></div>
+  <div class="grid g4 kpis arch">${[["debates", D.debates.lista.length, "debates y entrevistas", "deb"], ["programas", Object.keys(D.programas.pub).length, "programas electorales", "prog"], ["temas", D.qs.length, "promesas comparadas", "tema"], ["guia", CAL.length, "hitos del calendario", "cal"]].map(([v, n, t, ic]) => `<button class="card kpi" data-go="${v}">${ico(ic)}<b>${n}</b><span>${t}</span></button>`).join("")}</div>`;
+}
+// ---------- Partidos ----------
+function partidos() {
+  let ps = D.parties.filter((p) => S.pf === "all" || p.sk === S.pf).filter((p) => !S.pq || (p.name + p.ab + p.lead + p.tag).toLowerCase().includes(S.pq.toLowerCase()));
+  if (S.sort === "cob") ps = [...ps].sort((a, b) => cover(b.id) - cover(a.id));
+  if (S.sort === "az") ps = [...ps].sort((a, b) => a.name.localeCompare(b.name, "es"));
+  const n = (k) => D.parties.filter((p) => k === "all" || p.sk === k).length;
+  const K = { est: "Estatal", aut: "Autonómico", prov: "Provincial" };
+  return head("Partidos", `${D.parties.length} partidos que concurrieron al 29N: quiénes son, qué proponen y dónde se presentan.`) + `
+  <div class="tools bare"><div class="chips sx">${[["all", "Todas"], ["est", "Estatales"], ["aut", "Autonómicas"], ["prov", "Provinciales"]].map(([k, t]) => `<button class="chip" data-s="pf=${k}" aria-pressed="${S.pf === k}">${t} <span style="opacity:.6">${n(k)}</span></button>`).join("")}</div>
+    <div class="tools-r"><input class="in" data-bind="pq" placeholder="Buscar partido o candidato…" value="${esc(S.pq)}"><select class="in" data-bind="sort" aria-label="Ordenar"><option value="orden"${S.sort === "orden" ? " selected" : ""}>Orden habitual</option><option value="az"${S.sort === "az" ? " selected" : ""}>A–Z</option><option value="cob"${S.sort === "cob" ? " selected" : ""}>Más posturas</option></select></div></div>
+  <div class="pgrid">${ps.map((p) => { const c = cover(p.id), f = polsOf(p.id)[0]; return `<button class="pcard" data-go="ficha" data-s="pid=${p.id};ptab=res" style="--pc:${p.color}">
+    <span class="pc-top">${pb(p)}${f ? av(f, "xs") : `<span class="badge">${K[p.sk]}</span>`}</span>
+    <b>${esc(p.name)}</b><span class="pc-tag">${esc(p.tag)}</span>
+    <span class="pc-meta"><span>${esc(p.lead)}</span><span>${esc(p.sl)}</span>${p.prog ? "<span>✓ Programa</span>" : ""}</span>
+    <span class="pc-cov"><span class="bar"><i style="width:${100 * c / D.qs.length}%"></i></span><span>${c}/${D.qs.length}</span></span></button>`; }).join("") || '<p class="empty">Sin resultados</p>'}</div>`;
+}
+// ---------- Ficha de partido ----------
+function ficha() {
+  const p = PM[S.pid], c = cover(p.id), fg = lum(p.color) > .62 ? "#0f1115" : "#fff", ps = polsOf(p.id), cands = CANDS.filter((x) => x.pid === p.id), debs = DEB.filter((d) => (d.partidos || []).includes(p.id));
+  const tabs = [["res", "Resumen"], ["pos", "Posturas", c], ["af", "Afinidad"], ["cand", "Candidatos", cands.length], ["deb", "Debates", debs.length], ["src", "Fuentes"]];
+  let body = "";
+  if (S.ptab === "res") body = `<div class="grid g2"><div class="grid" style="align-content:start">
+    <div class="card" style="padding:14px"><h2 style="margin-bottom:6px">Quién es</h2><p style="margin:0;color:var(--ink2)">${esc(p.desc)}</p></div>
+    <div class="card"><div class="ch"><h2>Propuestas principales</h2>${p.prog ? `<a class="lnk" href="${esc(p.prog.url)}" target="_blank" rel="noopener">Programa ↗</a>` : ""}</div>${p.props.slice(0, 6).map((t, i) => `<div class="prop"><b>${i + 1}</b><span>${esc(t)}</span></div>`).join("")}${p.props.length > 6 ? `<details class="more"><summary>Ver ${p.props.length - 6} más</summary>${p.props.slice(6).map((t, i) => `<div class="prop"><b>${i + 7}</b><span>${esc(t)}</span></div>`).join("")}</details>` : ""}</div></div>
+    <div class="grid" style="align-content:start">
+    ${ps.length ? `<div class="card"><div class="ch"><h2>Rostros</h2></div>${ps.map((x) => `<button class="prow" data-go="politico" data-s="polid=${x.id}">${av(x, "sm")}<span><b>${esc(x.name)}</b><span class="note" style="display:block">${esc(x.role)}</span></span><span class="note">→</span></button>`).join("")}</div>` : ""}
+    <div class="card"><div class="ch"><h2>Perfil en 7 ejes</h2></div><div style="padding:8px 14px 12px">${D.dims.map((d) => { const x = pdim(p.id, d.id); return `<div class="ax7"><div class="ax7-l"><span>${esc(d.a)}</span><b>${esc(d.name)}</b><span>${esc(d.b)}</span></div><div class="ax7-t">${x ? `<i style="left:${(x.v + 1) * 50}%;background:${p.color}"></i>` : '<em>Sin datos suficientes</em>'}</div></div>`; }).join("")}</div></div>
+    <div class="card"><table><tbody>${[["Candidato/a", p.lead], ["Se presenta en", p.sl], ["Listas proclamadas", `${cands.length} provincias`], ["Posturas documentadas", `${c} de ${D.qs.length}`]].map(([k, v]) => `<tr style="cursor:default"><td style="color:var(--ink2)">${k}</td><td><b>${esc(v)}</b></td></tr>`).join("")}</tbody></table></div></div></div>`;
+  if (S.ptab === "pos") body = `<div class="tools bare">${legend()}</div>${D.areas.map((a, i) => { const qs = D.qs.filter((q) => q.a === a.id && q.pos[p.id] != null); if (!qs.length) return ""; const cnt = [0, 0, 0, 0, 0, 0]; qs.forEach((q) => cnt[q.pos[p.id]]++); return `<details class="card acc"${i === 0 ? " open" : ""}><summary><b>${esc(a.n)}</b><span class="mini">${[5, 4, 3, 2, 1].map((v) => `<i class="c${v}" style="width:${100 * cnt[v] / qs.length}%"></i>`).join("")}</span><span class="note">${qs.length}</span></summary>${qs.map((q) => `<div class="prop" data-cell="${p.id}|${q.id}" style="cursor:pointer;align-items:center"><span style="flex:1">${esc(q.s)}${q.est.includes(p.id) ? ' <span class="badge">estimada</span>' : ""}</span><span class="note hide-m" style="width:110px;text-align:right">${lbl(q, q.pos[p.id])}</span>${scale(q.pos[p.id])}</div>`).join("")}</details>`; }).join("")}`;
+  if (S.ptab === "af") { const rows = D.parties.filter((x) => x.id !== p.id).map((x) => ({ x, r: affin(p.id, x.id) })).filter((o) => o.r && o.r.n >= 15).sort((a, b) => b.r.pct - a.r.pct);
+    body = `<div class="card"><div class="ch"><h2>Coincidencia de ${esc(p.ab)} con el resto</h2><span class="note">mín. 15 preguntas en común</span></div>${rows.map(({ x, r }) => `<div class="ar" style="cursor:pointer" data-go="comparar" data-s="a=${p.id};b=${x.id}"><span style="display:flex;gap:8px;align-items:center">${pb(x)}<span class="hide-m">${esc(x.name)}</span></span><span class="bar"><i style="width:${r.pct}%;background:${x.color}"></i></span><b class="num">${r.pct} %</b></div>`).join("")}<p class="note" style="padding:8px 14px 12px;margin:0">Dato descriptivo de programas; no es una recomendación de voto.</p></div>`; }
+  if (S.ptab === "cand") body = `<div class="card"><div class="ch"><h2>Cabezas de lista al Congreso</h2><a class="lnk" href="${esc(D.cand.fuente.url)}" target="_blank" rel="noopener">BOE ${fd(D.cand.fuente.fecha)} ↗</a></div><div class="tw"><table><thead><tr><th>Provincia</th><th>Cabeza de lista</th><th class="hide-m">Candidatura en la papeleta</th></tr></thead><tbody>${cands.sort((a, b) => provN(a.prov).localeCompare(provN(b.prov), "es")).map((x) => `<tr data-go="provincia" data-s="prov=${x.prov}"><td><b>${esc(provN(x.prov))}</b></td><td>${esc(x.cab)}</td><td class="hide-m note">${esc(x.c)}</td></tr>`).join("") || '<tr><td colspan="3" class="empty">Sin listas en el BOE</td></tr>'}</tbody></table></div></div>`;
+  if (S.ptab === "deb") body = debs.length ? `<div class="dlist card">${debs.map((d) => debCard(d)).join("")}</div>` : '<p class="empty">Sin debates ni entrevistas registrados.</p>';
+  if (S.ptab === "src") { const urls = {}; D.qs.forEach((q) => { const s = q.src[p.id]; if (s) (urls[s[0].split("#")[0]] ||= { t: s[1], n: 0 }).n++; });
+    body = `${p.prog ? `<a class="card progc" href="${esc(p.prog.url)}" target="_blank" rel="noopener"><span class="pb" style="background:#0f1115">PDF</span><span><b>Programa electoral del 29N</b><span class="note" style="display:block">${esc(p.prog.t)}</span></span><span>↗</span></a>` : ""}<div class="card"><div class="ch"><h2>Documentos citados</h2><span class="note">${Object.keys(urls).length}</span></div>${Object.entries(urls).sort((a, b) => b[1].n - a[1].n).map(([u, o]) => `<a class="prop srow" href="${esc(u)}" target="_blank" rel="noopener"><span style="flex:1">${esc(o.t.replace(/, p\. \d+.*$/, ""))}</span><span class="badge">${o.n}</span></a>`).join("")}</div>`; }
+  return `<div class="hero" style="--pc:${p.color};color:${fg}"><button class="back" data-go="partidos" aria-label="Volver a partidos">←</button>${pb(p)}<div style="flex:1"><h1 style="color:inherit">${esc(p.name)}</h1><div style="opacity:.85">${esc(p.tag)}</div><div class="hero-m"><span>${esc(p.lead)}</span><span>${esc(p.sl)}</span><span>${c} posturas</span></div></div>
+  <button class="chip" data-go="comparar" data-s="a=${p.id}">${ico("cmp")}Comparar</button></div>${tabsB("ptab", tabs)}${body}`;
+}
+// ---------- Políticos ----------
+function politicos() {
+  const parts = [...new Set(D.pols.map((x) => x.party))];
+  let body;
+  if (S.polv === "dest") { const l = D.pols.filter((x) => S.polp === "all" || x.party === S.polp);
+    body = `<div class="chips sx" style="margin-bottom:12px"><button class="chip" data-s="polp=all" aria-pressed="${S.polp === "all"}">Todos <span style="opacity:.6">${D.pols.length}</span></button>${parts.map((id) => `<button class="chip" data-s="polp=${id}" aria-pressed="${S.polp === id}">${PM[id] ? `<i class="dot" style="background:${PM[id].color}"></i>${esc(PM[id].ab)}` : esc(id)}</button>`).join("")}</div>
+    <div class="polgrid">${l.map((x) => { const v = polVsParty(x), P = PM[x.party]; return `<button class="polc" data-go="politico" data-s="polid=${x.id}" style="--pc:${P ? P.color : "#888"}">${av(x, "lg")}<span class="polc-b"><b>${esc(x.name)}</b><span class="pc-tag">${esc(x.role)}</span><span class="pc-meta">${P ? pb(P) : `<span class="badge">${esc(x.pl)}</span>`}<span>${Object.keys(x.pos).length} posturas públicas</span></span>${v.n ? `<span class="pc-cov"><span class="bar"><i style="width:${100 * v.same / v.n}%;background:var(--pc)"></i></span><span>${v.same}/${v.n} con su partido</span></span>` : ""}</span></button>`; }).join("")}</div>`; }
+  else { const q = S.cq.trim().toLowerCase(); const l = q ? CANDS.filter((x) => (x.cab + " " + x.c + " " + provN(x.prov)).toLowerCase().includes(q)).slice(0, 120) : CANDS.filter((x) => x.prov === S.cprov);
+    body = `<div class="tools bare"><input class="in" data-bind="cq" placeholder="Busca un nombre, partido o provincia…" value="${esc(S.cq)}" style="flex:1">${q ? "" : provSel("cprov")}</div>
+    <div class="card"><div class="ch"><h2>${q ? `${l.length} resultados` : `${esc(provN(S.cprov))} · ${l.length} candidaturas · ${D.seats[S.cprov]} escaños`}</h2><a class="lnk" href="${esc(D.cand.fuente.url)}" target="_blank" rel="noopener">BOE ↗</a></div>
+    ${l.map((x) => { const P = PM[x.pid]; return `<div class="crow"${P ? ` data-go="ficha" data-s="pid=${P.id};ptab=cand" style="cursor:pointer"` : ""}><span class="av sm avi" style="background:${P ? P.color : "#c9ccd4"};color:${P && lum(P.color) < .62 ? "#fff" : "#0f1115"}">${esc(ini(x.cab))}</span><span style="flex:1;min-width:0"><b>${esc(x.cab)}</b><span class="note" style="display:block">${esc(x.c)}${q ? " · " + esc(provN(x.prov)) : ""}</span></span>${P ? pb(P) : '<span class="badge">sin ficha</span>'}</div>`; }).join("") || '<p class="empty">Sin resultados</p>'}</div>`; }
+  return head("Políticos", "Quién es quién: los rostros de la campaña y todas las cabezas de lista del 29N.", `<div class="seg lt"><button data-s="polv=dest" aria-pressed="${S.polv === "dest"}">Destacados</button><button data-s="polv=cab" aria-pressed="${S.polv === "cab"}">Cabezas de lista · ${CANDS.length}</button></div>`) + body;
+}
+function politico() {
+  const x = PLM[S.polid], P = PM[x.party], v = polVsParty(x), fg = P && lum(P.color) > .62 ? "#0f1115" : "#fff";
+  const areas = [...new Set(Object.keys(x.pos).map((q) => QM[q]?.a).filter(Boolean))].map((a) => short(AM[a].n).toLowerCase());
+  const others = D.pols.filter((y) => y.party === x.party && y.id !== x.id);
+  return `<div class="hero polh" style="--pc:${P ? P.color : "#333"};color:${fg}"><button class="back" data-go="politicos" aria-label="Volver a políticos">←</button>${av(x, "xl")}<div style="flex:1"><h1 style="color:inherit">${esc(x.name)}</h1><div style="opacity:.85">${esc(x.full)}</div><div class="hero-m"><span>${esc(x.pl)}</span><span>${Object.keys(x.pos).length} posturas públicas</span></div></div>
+  ${P ? `<button class="chip" data-go="ficha" data-s="pid=${P.id};ptab=res">Ficha de ${esc(P.ab)}</button>` : ""}</div>
+  <div class="grid g2" style="margin-top:14px"><div class="grid" style="align-content:start">
+    <div class="card" style="padding:14px 16px"><h2 style="margin-bottom:6px">Quién es</h2><p style="margin:0;color:var(--ink2)">${esc(x.role)}. ${P ? `Su partido, ${esc(P.name)} (${esc(P.tag.toLowerCase())}), concurre al 29N en ${esc(P.sl === "Estatal" ? "toda España" : P.sl)}. ` : ""}Se ha pronunciado en público sobre ${areas.length > 1 ? areas.slice(0, -1).join(", ") + " y " + areas.at(-1) : areas[0] || "pocos temas"}.</p>
+    ${v.n ? `<div class="vs-p"><div class="gauge" style="font-size:30px">${v.same}/${v.n}</div><span class="note">de sus posturas coinciden (±1 punto) con las de su partido en el test</span></div>` : ""}</div>
+    <div class="card"><div class="ch"><h2>Sus posturas públicas</h2><span class="note">arriba: ${esc(x.name.split(" ")[0])} · abajo: ${P ? esc(P.ab) : "partido"}</span></div>
+    ${Object.entries(x.pos).map(([qid, [val, why]]) => { const q = QM[qid]; if (!q) return ""; const pv = P ? q.pos[P.id] : null; const same = pv != null && Math.abs(pv - val) <= 1;
+      return `<div class="pp" data-go="temas" data-s="area=${q.a};openQ=${q.id};tview=lista"><div class="pp-h"><b>${esc(q.s)}</b>${pv != null ? `<span class="badge ${same ? "bok" : "bko"}">${same ? "Como su partido" : "Distinta a su partido"}</span>` : ""}</div>
+      <div class="pp-s"><span class="pp-w">${esc(x.name.split(" ").slice(-1)[0])}</span>${scale(val)}<span class="note">${lbl(q, val)}</span></div>${pv != null ? `<div class="pp-s"><span class="pp-w">${esc(P.ab)}</span>${scale(pv)}<span class="note">${lbl(q, pv)}</span></div>` : ""}
+      <p>${esc(why)}</p></div>`; }).join("")}</div></div>
+  <div class="grid" style="align-content:start">
+    ${others.length ? `<div class="card"><div class="ch"><h2>De su mismo partido</h2></div>${others.map((y) => `<button class="prow" data-go="politico" data-s="polid=${y.id}">${av(y, "sm")}<span><b>${esc(y.name)}</b><span class="note" style="display:block">${esc(y.role)}</span></span></button>`).join("")}</div>` : ""}
+    <div class="card"><div class="ch"><h2>Otros rostros</h2><button class="lnk" data-go="politicos">Todos →</button></div><div class="faces wrap" style="padding:10px">${D.pols.filter((y) => y.party !== x.party).slice(0, 9).map((y) => `<button class="face sm" data-go="politico" data-s="polid=${y.id}">${av(y)}<b>${esc(y.name)}</b></button>`).join("")}</div></div>
+    ${x.cred ? `<p class="note" style="margin:0">Foto: ${esc(x.cred[0])} · ${esc(x.cred[1])} · <a class="lnk" href="${esc(x.cred[2])}" target="_blank" rel="noopener">Wikimedia Commons</a></p>` : ""}</div></div>`;
+}
+// ---------- Temas ----------
+function temas() {
+  const a = AM[S.area], qs = D.qs.filter((q) => q.a === a.id), ai = D.areas.indexOf(a), tp = Object.entries(TOPIC_AREA).find(([, ar]) => ar === a.id);
+  const list = `<div class="card">${qs.map((q) => { const c = split(q), said = polSaid(q.id); return `<div class="qrow"><button data-q="${q.id}" aria-expanded="${S.openQ === q.id}"><span style="flex:1"><b>${esc(q.s)}</b><span class="note" style="display:block">${c[4] + c[5]} a favor · ${c[1] + c[2]} en contra${said.length ? ` · ${said.length} políticos` : ""}</span></span>${miniBar(q)}<span class="chev">${S.openQ === q.id ? "−" : "+"}</span></button>${S.openQ === q.id ? `<div class="body"><p style="margin:0 0 6px;font-weight:600">${esc(q.t)}</p>${q.ty === "dilema" ? `<p class="note" style="margin:0 0 8px">A: ${esc(q.A)} · B: ${esc(q.B)}</p>` : ""}<p style="margin:0 0 6px;color:var(--ink2);font-size:13px">${esc(q.ctx)}</p>${q.ley ? `<p class="note" style="margin:0 0 12px">Norma de referencia: ${esc(q.ley)}</p>` : ""}${spread(q)}
+    ${said.length ? `<div class="said" style="margin-top:12px"><span class="note">Lo que han dicho:</span></div>${said.map((x) => `<button class="prow" data-go="politico" data-s="polid=${x.id}">${av(x, "sm")}<span style="flex:1"><b>${esc(x.name)}</b> <span class="note">${lbl(q, x.pos[q.id][0])}</span><span class="note" style="display:block">${esc(x.pos[q.id][1])}</span></span></button>`).join("")}` : ""}</div>` : ""}</div>`; }).join("")}</div>`;
+  const mx = `<div class="card"><div class="tools">${legend()}</div><div class="tw" style="padding:10px"><table class="mx"><thead><tr><th></th>${D.parties.map((p) => `<th class="pv" title="${esc(p.name)}">${esc(p.ab)}</th>`).join("")}</tr></thead><tbody>
+    ${qs.map((q) => `<tr><td class="q" data-s="tview=lista;openQ=${q.id}" title="${esc(q.t)}">${esc(q.s)}</td>${D.parties.map((p) => { const v = q.pos[p.id]; return v == null ? `<td title="${esc(p.ab)}: sin datos" style="cursor:default"></td>` : `<td class="c${v}${q.est.includes(p.id) ? " e" : ""}" data-cell="${p.id}|${q.id}" title="${esc(p.ab)}: ${lbl(q, v)}"></td>`; }).join("")}</tr>`).join("")}</tbody></table></div></div>`;
+  return `<div class="achips sx">${D.areas.map((x, i) => `<button class="chip" data-s="area=${x.id};openQ=null" aria-pressed="${x.id === a.id}" style="--ac:${AREA_COL[i % 12]}"><i class="dot" style="background:var(--ac)"></i>${esc(short(x.n))}</button>`).join("")}</div>
+  <div class="ph thead" style="--ac:${AREA_COL[ai % 12]}"><div style="display:flex;gap:12px;align-items:center"><i class="tl">${esc(a.letter)}</i><div><h1>${esc(a.n)}</h1><p class="sub">${esc(a.i)} · ${qs.length} preguntas</p></div></div>
+    <div class="seg lt"><button data-s="tview=lista" aria-pressed="${S.tview === "lista"}">Lista</button><button data-s="tview=matriz" aria-pressed="${S.tview === "matriz"}">Matriz</button></div></div>
+  ${tp ? `<a class="card tband" href="https://test29n.es/" target="_blank" rel="noopener">${ico("test")}<span style="flex:1"><b>Test de ${esc(D.topics[tp[0]].label.toLowerCase())}</b><span class="note" style="display:block">${D.topics[tp[0]].ids.length} preguntas: compara tu opinión con la de los partidos en este tema.</span></span><span class="lnk">Hacerlo →</span></a>` : ""}
+  ${S.tview === "lista" ? list : mx}`;
+}
+// ---------- Comparar ----------
+function comparar() {
+  const A = PM[S.a], B = PM[S.b], r = affin(A.id, B.id);
+  const selP = (k) => `<label class="pick lg" style="background:${PM[S[k]].color};color:${lum(PM[S[k]].color) > .62 ? "#0f1115" : "#fff"}"><b>${esc(PM[S[k]].ab)}</b><small>${esc(PM[S[k]].lead)}</small><span>Cambiar ▾</span><select data-bind="${k}" aria-label="Partido ${k === "a" ? "1" : "2"}">${D.parties.map((p) => `<option value="${p.id}"${p.id === S[k] ? " selected" : ""}>${esc(p.name)}</option>`).join("")}</select></label>`;
+  const diffs = D.qs.filter((q) => q.pos[A.id] != null && q.pos[B.id] != null).map((q) => ({ q, d: Math.abs(q.pos[A.id] - q.pos[B.id]) }));
+  const row = ({ q }) => `<div class="prop" data-go="temas" data-s="area=${q.a};openQ=${q.id};tview=lista" style="align-items:center;cursor:pointer"><span style="flex:1">${esc(q.s)}</span>${scale(q.pos[A.id])}${scale(q.pos[B.id])}</div>`;
+  const tabs = [["choq", "Donde chocan", diffs.filter((x) => x.d >= 3).sort((a, b) => b.d - a.d)], ["coin", "Donde coinciden", diffs.filter((x) => x.d === 0)], ["todo", "Todas", diffs]];
+  const cur = tabs.find((t) => t[0] === S.ctab) || tabs[0];
+  return head("Comparar", "Elige dos candidaturas y míralas pregunta a pregunta.") + `
+  <div class="duel big">${selP("a")}<div class="duel-p"><b>${r ? r.pct + " %" : "—"}</b><span>${r ? `en ${r.n} preguntas` : "sin datos"}</span><button class="swap" data-swap aria-label="Intercambiar">⇄</button></div>${selP("b")}</div>
+  ${r ? `<div class="grid g2" style="margin-top:14px"><div class="card"><div class="tabs in-card">${tabs.map(([k, t, l]) => `<button role="tab" data-s="ctab=${k}" aria-selected="${cur[0] === k}">${t} <span class="note">${l.length}</span></button>`).join("")}</div>${cur[2].slice(0, 30).map(row).join("") || '<p class="empty">Ninguna</p>'}<p class="note" style="padding:8px 14px 12px;margin:0">Izquierda ${esc(A.ab)} · derecha ${esc(B.ab)}. Toca una fila para ver el tema.</p></div>
+  <div class="card" style="align-self:start"><div class="ch"><h2>Por área</h2></div>${D.areas.map((a) => { const x = affin(A.id, B.id, a.id); return x ? `<div class="ar"><span>${esc(short(a.n))}</span><span class="bar"><i style="width:${x.pct}%"></i></span><b class="num">${x.pct} %</b></div>` : ""; }).join("")}<p class="note" style="padding:6px 14px 12px;margin:0">Descriptivo; no recomienda voto.</p></div></div>` : '<p class="empty">Sin preguntas en común.</p>'}`;
+}
+// ---------- Mi provincia ----------
+function provincia() {
+  const pr = PROVS.find((x) => x.id === S.prov), cl = D.cand.provs[pr.id] || [], r = D.res23.provs[pr.id];
+  const part = r ? Math.round(1000 * r.votantes / r.electores) / 10 : null;
+  return head("Mi provincia", "Quién se presentó, cuántos diputados elige y cómo votó.", provSel("prov")) + `
+  <div class="grid g4 kpis" style="margin-bottom:14px"><div class="card kpi"><b>${D.seats[pr.id]}</b><span>escaños en juego</span></div><div class="card kpi"><b>${cl.length}</b><span>candidaturas proclamadas</span></div><div class="card kpi"><b>${r ? r.electores.toLocaleString("es") : "—"}</b><span>electores (2023)</span></div><div class="card kpi"><b>${part != null ? part.toLocaleString("es") + " %" : "—"}</b><span>participación 2023</span></div></div>
+  <div class="grid g2"><div class="card"><div class="ch"><h2>Candidaturas del 29N en ${esc(pr.name)}</h2><a class="lnk" href="${esc(D.cand.fuente.url)}" target="_blank" rel="noopener">BOE ↗</a></div>
+    ${cl.map((x) => { const P = PM[x.pid]; return `<div class="crow"${P ? ` data-go="ficha" data-s="pid=${P.id};ptab=res" style="cursor:pointer"` : ""}>${P ? pb(P) : '<span class="pb" style="background:#c9ccd4;color:#0f1115">—</span>'}<span style="flex:1;min-width:0"><b>${esc(x.c)}</b><span class="note" style="display:block">Cabeza de lista: ${esc(x.cab)}</span></span>${P ? '<span class="note">→</span>' : ""}</div>`; }).join("")}</div>
+  <div class="grid" style="align-content:start">
+    <div class="card"><div class="ch"><h2>Resultado de 2023</h2><a class="lnk" href="${esc(D.res23.fuente.url)}" target="_blank" rel="noopener">BOE ↗</a></div>${r ? r.cands.slice(0, 7).map(([n, v, e]) => `<div class="ar"><span title="${esc(n)}">${esc(n.replace(/\s*\(.*\)$/, "").slice(0, 28))}</span><span class="bar"><i style="width:${100 * v / r.validos}%"></i></span><b class="num">${e} esc.</b></div>`).join("") : ""}<p class="note" style="padding:6px 14px 12px;margin:0">Barra = % de voto válido. ${r ? r.escanos : ""} escaños en 2023.</p></div>
+    <div class="card" style="padding:14px"><b>Resultado del 29N</b><p class="note" style="margin:4px 0 0">Votos y reparto de los ${D.seats[pr.id]} escaños de la provincia, con los datos oficiales desde el 30N.</p></div>
+    ${D.senate[pr.id] ? `<div class="card" style="padding:14px"><b>Senado</b><p class="note" style="margin:4px 0 0">${esc(D.senate[pr.id])}</p></div>` : ""}</div></div>`;
+}
+// ---------- Debates ----------
+function debates() {
+  let l = S.df === "next" ? nextDeb : S.df === "past" ? pastDeb : S.df === "otros" ? otherDeb : [...nextDeb, ...pastDeb, ...otherDeb];
+  if (S.dt !== "all") l = l.filter((d) => d.tipo === S.dt);
+  return head("Debates de la campaña del 29N", `Hemeroteca de debates y entrevistas, con la cadena, el enlace y la fuente de cada uno.`) + `
+  <div class="tools bare"><div class="chips sx">${[["all", "Todos"], ...(nextDeb.length ? [["next", `Próximos · ${nextDeb.length}`]] : []), ["past", `Emitidos · ${pastDeb.length}`], ["otros", `Sin emisión confirmada · ${otherDeb.length}`]].map(([k, t]) => `<button class="chip" data-s="df=${k}" aria-pressed="${S.df === k}">${t}</button>`).join("")}</div>
+  <div class="chips sx">${[["all", "Todo"], ["debate", "Debates"], ["entrevista", "Entrevistas"]].map(([k, t]) => `<button class="chip" data-s="dt=${k}" aria-pressed="${S.dt === k}">${t}</button>`).join("")}</div></div>
+  <div class="card dlist">${l.map((d) => debCard(d)).join("") || '<p class="empty">Nada con estos filtros.</p>'}</div>`;
+}
+// ---------- Programas ----------
+function programas() {
+  const pub = D.parties.filter((p) => D.programas.pub[p.id]).sort((a, b) => (D.programas.pub[b.id].fecha || "").localeCompare(D.programas.pub[a.id].fecha || "")), sin = D.parties.filter((p) => !D.programas.pub[p.id]);
+  return head("Programas del 29N", `Lo que prometió cada partido, con el enlace oficial a su programa. Base para seguir sus promesas en la legislatura.`) + `
+  <div class="card" style="padding:16px;margin-bottom:14px;display:flex;gap:18px;align-items:center;flex-wrap:wrap"><div class="gauge" style="font-size:40px">${pub.length}<span class="note" style="font-size:15px;font-weight:600"> / ${D.parties.length}</span></div><div style="flex:1;min-width:200px"><b>programas publicados</b><div class="bar" style="height:8px;margin-top:8px"><i style="width:${100 * pub.length / D.parties.length}%"></i></div></div></div>
+  <div class="sech" style="margin-top:0"><h2>Publicados</h2><span class="note">${pub.length}</span></div>
+  <div class="pgrid">${pub.map((p) => { const g = D.programas.pub[p.id]; return `<div class="pcard" style="--pc:${p.color}"><span class="pc-top">${pb(p)}<span class="badge bok">${fd(g.fecha) || "Publicado"}</span></span><b>${esc(p.name)}</b><span class="pc-tag">${esc(g.titulo)}</span><span style="display:flex;gap:12px;margin-top:6px"><a class="lnk" href="${esc(g.url)}" target="_blank" rel="noopener">Abrir programa ↗</a><button class="lnk" data-go="ficha" data-s="pid=${p.id};ptab=res">Ficha</button></span></div>`; }).join("")}</div>
+  ${sin.length ? `<div class="sech"><h2>Sin programa publicado</h2><span class="note">${sin.length}</span></div><div class="pbs">${sin.map((p) => `<button class="pbb" data-go="ficha" data-s="pid=${p.id};ptab=res" title="${esc(p.name)}${D.programas.sin.includes(p.id) ? " · sin lista en el BOE" : ""}">${pb(p)}</button>`).join("")}</div>` : ""}`;
+}
+// ---------- Glosario ----------
+function glosario() {
+  const q = S.gq.trim().toLowerCase(), l = D.glos.filter((g) => !q || (g.t + " " + g.d).toLowerCase().includes(q)).sort((a, b) => a.t.localeCompare(b.t, "es"));
+  return head("Glosario electoral", "Los términos de las elecciones explicados en una frase, cada uno con su base legal.") + `
+  <input class="in" data-bind="gq" placeholder="Busca un término: barrera, D'Hondt, censo…" value="${esc(S.gq)}" style="width:100%;margin-bottom:14px;height:42px">
+  <div class="glgrid">${l.map((g) => `<div class="card glc"><b>${esc(g.t)}</b><p>${esc(g.d)}</p>${g.f ? `<a class="lnk" href="${esc(g.f[0])}" target="_blank" rel="noopener">${esc(g.f[1])} ↗</a>` : ""}</div>`).join("") || '<p class="empty">Sin resultados</p>'}</div>`;
+}
+// ---------- Datos y método ----------
+function metodo() {
+  const ty = {}; D.qs.forEach((q) => Object.values(q.src).forEach((s) => { ty[s[2] || "otro"] = (ty[s[2] || "otro"] || 0) + 1; }));
+  return head("Datos y método", "Cómo se construye cada dato y cómo comprobarlo.") + `
+  <div class="grid g4 kpis" style="margin-bottom:14px">${[[npos.toLocaleString("es"), "posturas de partido"], [(npos - nest).toLocaleString("es"), "documentadas con fuente"], [nest, "estimadas (marcadas)"], [D.qs.length, "preguntas en 12 áreas"]].map(([b, s]) => `<div class="card kpi"><b>${b}</b><span>${s}</span></div>`).join("")}</div>
+  <div class="grid g2"><div class="grid" style="align-content:start">
+    ${[["Escala de posturas", "Cada candidatura tiene una postura de 1 (muy en contra) a 5 (muy a favor) en cada pregunta, sacada de su programa del 29N o de declaraciones y votaciones públicas. Cada una enlaza a su fuente."], ["Posturas estimadas", "Cuando el programa no lo dice de forma literal, se deduce de su contenido y se marca como «estimada». Se ven translúcidas en toda la web."], ["Coincidencia entre partidos", "1 − (diferencia media ÷ 4) en las preguntas que ambos tienen. Es descriptivo: no recomienda voto."], ["Mapa político", "Media de las posturas de cada partido en las preguntas de cada eje, con el sentido de cada pregunta. La escala se ajusta a los extremos para que se lea mejor."], ["Neutralidad", "Mismo orden de partidos en toda la web, colores neutros para las posturas y ninguna valoración. Las correcciones se publican con fecha."]].map(([t, d]) => `<div class="card" style="padding:14px 16px"><b>${t}</b><p style="margin:4px 0 0;color:var(--ink2)">${d}</p></div>`).join("")}</div>
+  <div class="grid" style="align-content:start"><div class="card"><div class="ch"><h2>Fuentes por tipo</h2></div>${Object.entries(ty).sort((a, b) => b[1] - a[1]).map(([k, n]) => `<div class="ar"><span>${esc({ programa: "Programa", parlamento: "Parlamento", prensa: "Prensa", declaracion: "Declaración", gobierno: "Gobierno", web: "Web oficial", otro: "Otros" }[k] || k[0].toUpperCase() + k.slice(1))}</span><span class="bar"><i style="width:${100 * n / nsrc}%"></i></span><b class="num">${n}</b></div>`).join("")}</div>
+  <div class="card"><div class="ch"><h2>Datos oficiales usados</h2></div>${[[D.cand.fuente.url, "Candidaturas proclamadas (BOE, 3 nov 2026)"], [D.seatsSrc.url, D.seatsSrc.label], [D.res23.fuente.url, "Resultados de 2023 (" + D.res23.fuente.label + ")"]].map(([u, t]) => `<a class="prop srow" href="${esc(u)}" target="_blank" rel="noopener"><span style="flex:1">${esc(t)}</span>${ico("ext")}</a>`).join("")}</div>
+  <a class="card tband" href="https://test29n.es/datos/" target="_blank" rel="noopener">${ico("data")}<span style="flex:1"><b>Datos abiertos</b><span class="note" style="display:block">Descarga todas las posturas y fuentes en JSON.</span></span><span class="lnk">Abrir →</span></a></div></div>`;
+}
+// ---------- Test ----------
+function test() {
+  return head("Test político", "Responde y mira con qué candidaturas coincides. Tus respuestas no salen de tu dispositivo.") + `
+  <div class="qa">${[["Rápido", "20 preguntas · 3 min"], ["Completo", "107 preguntas · 15 min"], ["Estándar", "40 preguntas · 7 min"], ["Por provincia", "Solo quien se presenta donde votas"]].map(([t, s]) => `<a href="https://test29n.es/" target="_blank" rel="noopener">${ico("test")}<b>${t}</b><span>${s}</span></a>`).join("")}</div>
+  <div class="sech"><h2>Tests por tema</h2><span class="note">${Object.keys(D.topics).length}</span></div>
+  <div class="tiles">${Object.entries(D.topics).map(([k, t], i) => `<a class="tile" href="https://test29n.es/tests/" target="_blank" rel="noopener" style="--ac:${AREA_COL[(i * 2) % 12]};text-decoration:none;color:inherit"><i>${esc(t.label[0])}</i><b>${esc(t.label)}</b><span>${t.ids.length} preguntas</span></a>`).join("")}</div>
+  <p class="note" style="margin-top:14px">En esta prueba el test se abre en la web actual. Con el rediseño será el mismo test, con las mismas URL.</p>`;
+}
+const VIEWS = { inicio, partidos, ficha, politicos, politico, temas, comparar, provincia, resultados, congreso, gobierno, instituciones, ccaa, guia, debates, programas, glosario, metodo, test };
+function drawer() {
+  const [pid, qid] = S.dr.split("|"), p = PM[pid], q = QM[qid], v = q.pos[pid], s = q.src[pid], said = polSaid(qid);
+  return `<div class="dr" data-close><div role="dialog" aria-label="Postura"><button class="x" data-close aria-label="Cerrar">✕</button>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px">${pb(p)}<span class="badge">${esc(AM[q.a].n)}</span></div>
+  <h2 style="font-size:16px;margin-bottom:8px">${esc(q.t)}</h2>
+  <div style="display:flex;gap:10px;align-items:center;margin:12px 0">${scale(v, 1)}<b>${lbl(q, v)}</b>${q.est.includes(pid) ? '<span class="badge">estimada</span>' : ""}</div>
+  ${q.why[pid] ? `<p style="margin:0;color:var(--ink2)">${esc(q.why[pid])}</p>` : ""}
+  ${s ? `<div class="src">Fuente: <a href="${esc(s[0])}" target="_blank" rel="noopener">${esc(s[1])}</a></div>` : ""}
+  ${said.length ? `<p class="eyebrow" style="margin:18px 0 6px">Lo que han dicho</p>${said.map((x) => `<button class="prow" data-go="politico" data-s="polid=${x.id}">${av(x, "sm")}<span style="flex:1"><b>${esc(x.name)}</b> <span class="note">${lbl(q, x.pos[qid][0])}</span></span></button>`).join("")}` : ""}
+  <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap"><button class="chip" data-go="ficha" data-s="pid=${pid};ptab=pos">Ficha de ${esc(p.ab)}</button><button class="chip" data-go="temas" data-s="area=${q.a};openQ=${q.id};tview=lista">Todo el tema</button></div></div></div>`;
+}
+function palette() {
+  const t = S.palq.trim().toLowerCase(), m = (x) => x.toLowerCase().includes(t);
+  const res = t ? [
+    ...D.parties.filter((p) => m(p.name + " " + p.ab + " " + p.lead)).map((p) => ({ k: "Partido", l: p.name, go: "ficha", s: `pid=${p.id};ptab=res`, pre: pb(p) })),
+    ...D.pols.filter((x) => m(x.name + " " + x.full)).map((x) => ({ k: "Político", l: x.name, go: "politico", s: `polid=${x.id}`, pre: av(x, "xs") })),
+    ...PROVS.filter((p) => m(p.name)).map((p) => ({ k: "Provincia", l: p.name, go: "provincia", s: `prov=${p.id}` })),
+    ...D.areas.filter((a) => m(a.n)).map((a) => ({ k: "Tema", l: a.n, go: "temas", s: `area=${a.id};openQ=null` })),
+    ...D.qs.filter((q) => m(q.s + " " + q.t)).map((q) => ({ k: "Pregunta", l: q.s, go: "temas", s: `area=${q.a};openQ=${q.id};tview=lista` })),
+    ...D.glos.filter((g) => m(g.t)).map((g) => ({ k: "Glosario", l: g.t, go: "glosario", s: `gq=${g.t}` })),
+    ...CANDS.filter((x) => m(x.cab)).slice(0, 5).map((x) => ({ k: "Cabeza de lista · " + provN(x.prov), l: x.cab, go: "politicos", s: `polv=cab;cq=${x.cab}` })),
+  ].slice(0, 14) : NAVG.flatMap(([, l]) => l).map(([go, l]) => ({ k: "Ir a", l, go, s: "" }));
+  return `<div class="pal" data-close><div><input data-bind="palq" placeholder="Busca PSOE, Ayuso, vivienda, Sevilla, D'Hondt…" value="${esc(S.palq)}" aria-label="Buscar"><ul>${res.map((r, i) => `<li><button class="${i === 0 ? "on" : ""}" data-go="${r.go}" data-s="${esc(r.s)}">${r.pre || ""}<span>${esc(r.l)}</span><small>${esc(r.k)}</small></button></li>`).join("") || '<li class="empty">Sin resultados</li>'}</ul></div></div>`;
+}
+function draw() {
+  const f = document.activeElement?.dataset?.bind, pos = document.activeElement?.selectionStart;
+  app.innerHTML = shell(VIEWS[S.v]());
+  if (S.pal) { const i = $(".pal input", app); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }
+  else if (f && ["pq", "cq", "gq"].includes(f)) { const i = $(`[data-bind="${f}"]`, app); if (i) { i.focus(); i.setSelectionRange(pos, pos); } }
+}
+app.addEventListener("click", (e) => {
+  const t = e.target;
+  if (t.matches("[data-close]")) { S.dr = null; S.pal = false; S.menu = false; return draw(); }
+  const el = t.closest("[data-go],[data-s],[data-pal],[data-menu],[data-cell],[data-q],[data-qi],[data-swap]");
+  if (!el) return;
+  const d = el.dataset;
+  if ("pal" in d) { S.pal = true; S.palq = ""; return draw(); }
+  if ("menu" in d) { S.menu = true; return draw(); }
+  if (d.cell && !d.go) { S.dr = d.cell; return draw(); }
+  if (d.q) { S.openQ = S.openQ === d.q ? null : d.q; return draw(); }
+  if (d.qi) { S.qi += +d.qi; return draw(); }
+  if ("swap" in d) { [S.a, S.b] = [S.b, S.a]; return draw(); }
+  const x = parseS(d.s);
+  if (d.go) { if (x.a && x.a === S.b && !x.b) x.b = x.a === "pp" ? "psoe" : "pp"; return go(d.go, x); }
+  S = { ...S, ...x }; draw();
+});
+app.addEventListener("change", (e) => { const k = e.target.dataset.bind; if (!k || e.target.tagName !== "SELECT") return; S[k] = e.target.value; draw(); });
+app.addEventListener("input", (e) => { const k = e.target.dataset.bind; if (!k || e.target.tagName !== "INPUT") return; S[k] = e.target.value; draw(); });
+addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); S.pal = true; S.palq = ""; draw(); }
+  if (e.key === "Escape" && (S.pal || S.dr || S.menu)) { S.pal = false; S.dr = null; S.menu = false; draw(); }
+  if (e.key === "Enter" && S.pal) { const b = $(".pal li button", app); if (b) b.click(); }
+});
+document.querySelector(".seg").addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  document.querySelectorAll(".mk .seg button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+  app.classList.toggle("m", b.dataset.dev === "m");
+});
+try { history.replaceState({ S }, ""); } catch (_) {}
+draw();
+}
+</script>
+</body>
+</html>
