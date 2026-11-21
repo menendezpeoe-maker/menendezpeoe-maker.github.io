@@ -1375,3 +1375,9 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 .sum-radar .radar figcaption { display: none; }
 .sum-radar .legend { display: flex; gap: 14px; justify-content: center; margin: 0; }
 .sum-radar .legend span { display: inline-flex; align-items: center; gap: 6px; }
+/* Rediseño 30N · fichas de partido: índice de la página y propuestas a partir de la 7.ª plegadas */
+.sp-jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+.sp-jump a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink); font-weight: 650; font-size: 14.5px; text-decoration: none; }
+.sp-jump a:hover { border-color: var(--ink); }
+.sp-jump .sp-jump-test { background: var(--mark); border-color: var(--ink); color: #111318; }
+.sp-more { margin-top: 6px; }
