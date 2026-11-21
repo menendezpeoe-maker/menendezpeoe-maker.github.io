@@ -1,5 +1,8 @@
 # Estado del plan (lo más reciente arriba)
 
+## 21 nov 2026 (noche) · Rediseño preparado para el 30N (no publicado)
+- Rama `claude/project-thread-rbz0gu` (sale de fuente c265943): menú agrupado, marca «Mirada Política» (decisión del titular), portada con «Explora la política española», comparador libre en /comparar/, radar en el resultado y arreglo de 320 px. Guía y pendientes en `plan/REDISENO-30N.md` de esa rama. Se fusiona en `fuente` el 30N, después de P1 y con el cambio de dominio; nada antes.
+
 ## 21 nov 2026 (tarde) · Resultado neutral en empates y cifras con denominador (hilo «Auditar la web para ser de las mejores»)
 - **Encargo del titular (21 nov):** auditoría completa de la web (project-files test29n/auditoria/auditoria-21nov.md, 20 mejoras) y «modifica y añade lo que veas más profesional». Antes del 24 solo se publica lo de neutralidad y fiabilidad; el rediseño de estructura y diseño se prepara aparte para salir el 30N con miradapolitica.es (el titular quiere que después del 29N la web sea sobre todo de información de política española, con el test como sección destacada).
 - **Empates (`assets/papeleta.js`, `renderSummary`/`rank5`):** si varias candidaturas tienen el mismo porcentaje, la cabecera dice «Tus mayores coincidencias» y las muestra al mismo tamaño («PSOE y M+J empatan: ninguna queda por delante»). En la lista, mismo número de puesto para el mismo porcentaje. El texto para compartir dice «Empate en mi mayor coincidencia… A y B (56 %)».
