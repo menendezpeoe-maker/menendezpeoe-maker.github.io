@@ -1300,8 +1300,9 @@ function renderSummary() {
           <p class="small muted">«Reta a un amigo» crea un enlace que incluye todas tus respuestas: quien lo abra podrá verlas. Cuando tu amigo haga el test, veréis cuánto coincidís.</p>` : ""}
           <div class="sum-links">${!SHARED ? '<button type="button" class="link-btn" data-act="new">Repetir el test</button>' : ""}<button type="button" class="link-btn print-btn" data-act="print"><svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5V3.5h9v4M5.5 14.5h-2v-6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v6h-2M5.5 11.5h9v5h-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Guardar en PDF</button><button type="button" class="link-btn" data-go="method">Cómo se calcula</button></div>
           ${top ? rank5(M, st, "main") : ""}
-          <details class="more sig-more"><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones</summary>
+          <details class="more sig-more"${!SHARED && matchMedia("(min-width: 900px)").matches ? " open" : ""}><summary>${SHARED ? "Su" : "Tu"} perfil en siete dimensiones${top ? ` frente a ${esc(P[top.pid].ab)}` : ""}</summary>
             ${ps.sub ? `<p class="profile-sub">${esc(ps.sub)}</p>` : ""}
+            ${top ? `<div class="sum-radar">${radarSVG(M, top.pid)}<p class="legend small"><span><i class="lg-me"></i>Tú</span><span><i class="lg-dia" style="background:${P[top.pid].color}"></i>${esc(pName(top.pid, st.prov))}</span></p></div>` : ""}
             <div class="sig" aria-label="Tu firma ideológica en siete dimensiones">${sig}</div>
             <p class="small muted">Cada barra va del primer polo de su dimensión (a la izquierda) al segundo (a la derecha); no es el eje izquierda-derecha. <a href="#r-dims" class="link-btn" style="padding:0">Ver el detalle</a></p>
           </details>

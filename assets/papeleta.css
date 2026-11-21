@@ -1369,3 +1369,9 @@ body.in-quiz .head-menu, body.in-quiz .head-cta { display: none; }
 .cmp-free-row { display: grid; gap: 10px; }
 .cmp-free .btn { min-height: 48px; }
 @media (min-width: 760px) { .cmp-free-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; } }
+/* Rediseño 30N · resultado: radar tú frente a la primera candidatura dentro de «Tu perfil en siete dimensiones» (abierto en escritorio) */
+.sum-radar { display: grid; gap: 4px; margin: 6px 0 10px; }
+.sum-radar .radar svg { max-width: 420px; }
+.sum-radar .radar figcaption { display: none; }
+.sum-radar .legend { display: flex; gap: 14px; justify-content: center; margin: 0; }
+.sum-radar .legend span { display: inline-flex; align-items: center; gap: 6px; }
