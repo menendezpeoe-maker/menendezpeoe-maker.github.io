@@ -160,7 +160,7 @@ tbody tr{cursor:pointer}tbody tr:hover td{background:#f8f9fb}
 .hx-strip{display:flex;height:8px}.hx-strip button{flex:1;border:0;padding:0}
 .hgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px;align-items:start}
 .pmap{width:100%;max-width:520px;margin:0 auto;height:auto;display:block;border-radius:10px}
-.pmap .ax{font:600 9px Inter,sans-serif;fill:#7a8090}
+.pmap .ax{font:600 9px Inter,sans-serif;fill:var(--ink3)}
 .pmap .pl{font:700 8.5px Inter,sans-serif;fill:#0f1115;paint-order:stroke;stroke:#fff;stroke-width:3px}
 .pmap .pt{cursor:pointer}.pmap .pt:hover circle{stroke:#0f1115}
 .chip.sm{height:26px;font-size:12px;padding:0 9px}
@@ -387,6 +387,68 @@ body{font-size:14.5px;line-height:1.55}
   .pal{padding-top:20px}
 }
 @media (max-width:600px){.app{height:calc(100vh - 120px)}.mk span{display:none}}
+/* ===== Revisión 2: sistema visual, accesibilidad, modo oscuro ===== */
+:root{--ink3:#676d7b;--sh:0 1px 2px rgba(15,17,21,.04),0 4px 14px -6px rgba(15,17,21,.08)}
+.app{font-size:14.5px}
+.tile b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+.tile span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card,.tile,.xcard{transition:border-color .15s,box-shadow .15s,transform .15s}
+.tile:hover,.xcard:hover{box-shadow:0 10px 24px -14px rgba(15,17,21,.35);transform:translateY(-1px)}
+.k.kic{flex:none;width:38px;padding:0;justify-content:center;color:var(--ink2)}.k.kic svg{width:18px;height:18px}
+/* explicadores */
+.xgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.xcard{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--sf);min-height:178px;position:relative}
+.xcard svg{width:22px;height:22px;padding:7px;box-sizing:content-box;border-radius:10px;background:var(--mark);color:#0f1115}
+.xcard b{font-size:15.5px;letter-spacing:-.01em;margin-top:4px}.xcard span{color:var(--ink2);font-size:13px;line-height:1.4}
+.xcard em{font-style:normal;font-size:12px;font-weight:600;color:var(--ink);background:var(--line2);border-radius:6px;padding:3px 7px;margin-top:auto}
+.xcard small{position:absolute;top:16px;right:16px;font-size:11.5px;font-weight:700;color:var(--ink3)}
+.xcard:hover{border-color:var(--ink)}.xcard,.xcard *{white-space:normal}
+.xart{max-width:720px}.xart h1{font-size:30px;margin-top:6px}
+.xkey{display:flex;gap:12px;align-items:center;margin:18px 0 6px;padding:14px 16px;border-radius:14px;background:#0f1115;color:#fff;font-size:15px}.xkey svg{width:22px;height:22px;color:var(--mark);flex:none}
+.xsteps{list-style:none;counter-reset:x;padding:0;margin:14px 0 16px;display:grid;gap:10px}
+.xsteps li{counter-increment:x;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--sf);font-size:15px;line-height:1.5}
+.xsteps li:before{content:counter(x);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--mark);color:#0f1115;font-weight:800;font-size:14px}
+.xnav{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+/* legislatura */
+.empty2{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:28px 18px;border:1px dashed var(--line);border-radius:16px;background:var(--sf)}
+.empty2 svg{width:28px;height:28px;padding:10px;box-sizing:content-box;border-radius:50%;background:var(--line2)}.empty2 b{font-size:17px;margin-top:4px}.empty2 span{color:var(--ink2);max-width:58ch}
+.pst{display:grid;grid-template-columns:14px 100px 1fr;gap:10px;align-items:center}.pst i{width:14px;height:14px;border-radius:4px}
+/* boletín */
+.news{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:22px;padding:18px 20px;background:linear-gradient(135deg,var(--sf),color-mix(in srgb,var(--mark) 12%,var(--sf)))}
+.news h2{font-size:18px;margin-top:4px}.news-f{display:flex;gap:8px;flex:1 1 300px;max-width:420px}.news-f .in{flex:1;height:40px}.news-f .cta{height:40px}
+/* ajustes y aviso */
+.uirow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 0;border-top:1px solid var(--line2)}
+.toast{position:absolute;left:50%;bottom:24px;z-index:40;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#0f1115;color:#fff;padding:10px 16px;border-radius:12px;font-size:13.5px;font-weight:500;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);transition:.2s;max-width:90%;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.sfoot .lnk svg{width:15px;height:15px;vertical-align:-3px}
+.app.big .scroll{zoom:1.14}
+@media (prefers-reduced-motion:reduce){.app *{transition:none!important;animation:none!important}}
+/* modo oscuro */
+.app.dark{color-scheme:dark;--bg:#0d0f13;--sf:#16191f;--ink:#eef0f3;--ink2:#b6bcc8;--ink3:#8e95a3;--line:#2a2f38;--line2:#1f232a;--acc:#86a8ff;--p3:#4b505b;--sh:none;color:var(--ink)}
+.app.dark :is(.ni[aria-current=page],.chip[aria-pressed=true],.alist button[aria-current=true],.seg.lt button[aria-pressed=true]){background:#eef0f3;border-color:#eef0f3;color:#0f1115}
+.app.dark :is(tbody tr:hover td,.srow:hover,.prow:hover,.crow:hover,.pp:hover,.mx tbody tr:hover td.q){background:var(--line2)}
+.app.dark th{background:var(--sf)}.app.dark .k kbd{background:var(--sf)}
+.app.dark .bar i{background:var(--ink)}.app.dark .tabs button[aria-selected=true]{border-bottom-color:var(--ink)}
+.app.dark :is(.qa :is(button,a):hover,.xcard:hover){border-color:var(--ink)}.app.dark .mx td:not(.q):hover{outline-color:#fff}
+.app.dark :is(.hx,.tcard,.side-test,.xkey){box-shadow:inset 0 0 0 1px var(--line)}
+.app.dark .logo i,.app.dark .sf-l{box-shadow:inset 0 0 0 3px #0f1115,0 0 0 1px #3a404b}
+.app.dark .pmap .pl{fill:var(--ink);stroke:var(--sf)}.app.dark .pmap .pt:hover circle,.app.dark .hm-t{stroke:none;fill:var(--ink)}
+.app.dark .tile i{background:color-mix(in srgb,var(--ac) 22%,var(--sf));color:color-mix(in srgb,var(--ac) 55%,#fff)}
+.app.dark :is(.pv,.progc,.tband){background:rgba(245,217,10,.08);border-color:rgba(245,217,10,.3)}.app.dark .pv svg{color:var(--mark)}
+.app.dark .face .av{box-shadow:0 0 0 2px var(--sf),0 0 0 3px var(--line)}.app.dark .face:hover .av{box-shadow:0 0 0 2px var(--sf),0 0 0 4px var(--ink)}
+.app.dark .tline li:before{background:var(--sf)}.app.dark .tline li.now b{color:var(--mark)}
+.app.dark .sech h2:before{box-shadow:none}.app.dark .tabbar button.t{color:var(--ink)}
+.app.dark .xcard em{color:var(--ink)}.app.dark .toast{background:#eef0f3;color:#0f1115}
+.app.dark .stack i.c3{color:#eef0f3}.app.dark .dr{background:rgba(0,0,0,.55)}
+@container (max-width:760px){
+  .k.kic{width:36px;height:36px}.k.kic[data-uiopen]{display:none}
+  .xgrid{grid-template-columns:1fr 1fr;gap:10px}.xcard{min-height:0;padding:14px}.xcard span{font-size:12.5px}.xcard small{display:none}
+  .xrow{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 4px}.xrow .xcard{flex:0 0 72%;scroll-snap-align:start}
+  .xart h1{font-size:24px}.xsteps li{font-size:14.5px;padding:12px 14px}
+  .news{padding:16px}.news-f{flex-basis:100%;max-width:none}
+  .pst{grid-template-columns:14px 1fr}.pst .note{grid-column:2}
+  .toast{bottom:84px}
+}
 </style>
 </head>
 <body>
@@ -433,6 +495,8 @@ Object.assign(I, {
   glos: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6"/>',
   menu: '<circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/><circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><circle cx="19" cy="19" r="1.6"/>',
   cal: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+  share: '<path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/>',
+  aa: '<path d="M3 19l5-14 5 14M4.8 14h6.4M15 19l3.2-9 3.3 9M15.9 16.5h4.6"/>',
   ext: '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
 });
 // ---------- datos derivados ----------
@@ -460,15 +524,15 @@ const TOPIC_AREA = Object.fromEntries(Object.entries(D.topics).map(([k, t]) => {
 const NAVG = [
   ["Explorar", [["inicio", "Inicio", "home"], ["partidos", "Partidos", "part", D.parties.length], ["politicos", "Políticos", "pol", D.pols.length], ["temas", "Temas", "tema", D.areas.length], ["comparar", "Comparar", "cmp"]]],
   ["Elecciones", [["resultados", "Resultados 29N", "elec"], ["provincia", "Mi provincia", "prov"], ["debates", "Debates", "deb", D.debates.lista.length], ["programas", "Programas", "prog", Object.keys(D.programas.pub).length]]],
-  ["Instituciones", [["congreso", "Congreso y Senado", "data"], ["gobierno", "Gobierno", "part"], ["instituciones", "El Estado", "glos"], ["ccaa", "Autonomías", "prov", 19]]],
-  ["Aprende", [["guia", "Cómo se vota", "cal"], ["glosario", "Glosario", "glos", D.glos.length], ["metodo", "Datos y método", "data"]]],
+  ["Instituciones", [["legis", "Legislatura", "cal"], ["congreso", "Congreso y Senado", "data"], ["gobierno", "Gobierno", "part"], ["instituciones", "El Estado", "glos"], ["ccaa", "Autonomías", "prov", 19]]],
+  ["Aprende", [["explica", "En 1 minuto", "test", 8], ["guia", "Cómo se vota", "cal"], ["glosario", "Glosario", "glos", D.glos.length], ["metodo", "Datos y método", "data"]]],
 ];
 const PARENT = { ficha: "partidos", politico: "politicos" };
-let S = { v: "inicio", pid: "psoe", ptab: "res", area: "viv", tview: "lista", openQ: null, a: "psoe", b: "pp", prov: "madrid", ydim: "soc", qi: 0, ctab: "choq", pf: "all", pq: "", sort: "orden", dr: null, pal: false, palq: "", menu: false, polid: "sanchez", polv: "dest", polp: "all", cq: "", cprov: "madrid", etab: "res", rtab: "cong", gtab: "votar", df: "all", dt: "all", gq: "", r23: "madrid" };
+let S = { v: "inicio", pid: "psoe", ptab: "res", area: "viv", tview: "lista", openQ: null, a: "psoe", b: "pp", prov: "madrid", ydim: "soc", qi: 0, ctab: "choq", pf: "all", pq: "", sort: "orden", dr: null, pal: false, palq: "", menu: false, polid: "sanchez", polv: "dest", polp: "all", cq: "", cprov: "madrid", etab: "res", rtab: "cong", gtab: "votar", df: "all", dt: "all", gq: "", r23: "madrid", ex: null, ltab: "prom", ui: false };
 const app = $("#app");
 const parseS = (s) => Object.fromEntries((s || "").split(";").filter(Boolean).map((kv) => { const [k, v] = kv.split("="); return [k, v === "null" ? null : v]; }));
 const STACK = [];
-const TABKEYS = ["ptab", "rtab", "gtab", "ctab", "polv", "polp", "tview", "area", "df", "dt", "pf"];
+const TABKEYS = ["ptab", "rtab", "gtab", "ctab", "polv", "polp", "tview", "area", "df", "dt", "pf", "ltab", "ex"];
 const snap = () => { const sc = $(".scroll", app); return JSON.stringify({ ...S, dr: null, pal: false, menu: false, _top: sc ? sc.scrollTop : 0 }); };
 const push = () => { STACK.push(snap()); if (STACK.length > 60) STACK.shift(); try { history.pushState({ n: STACK.length }, ""); } catch (_) {} };
 let POPPED = false;
@@ -480,7 +544,7 @@ const store = (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} };
 try { const p = localStorage.getItem("mp_prov"); if (p && D.seats[p]) { S.prov = p; S.cprov = p; } } catch (_) {}
 
 function pageTitle() {
-  if (S.v === "ficha") return PM[S.pid].name; if (S.v === "politico") return PLM[S.polid].name; if (S.v === "test") return "Test político";
+  if (S.v === "ficha") return PM[S.pid].name; if (S.v === "politico") return PLM[S.polid].name; if (S.v === "test") return "Test político"; if (S.v === "explica" && S.ex) return EXM[S.ex]?.[1] || "En 1 minuto";
   const f = NAVG.flatMap(([, l]) => l).find(([id]) => id === S.v); return f ? f[1] : "Mirada Política";
 }
 function shell(body) {
@@ -492,14 +556,14 @@ function shell(body) {
     <div class="foot">Información neutral y con fuentes. Datos del ${fd(D.updated)} de 2026.</div></aside>
   <div class="main"><header class="top">${S.v !== "inicio" ? `<button class="bk" data-back aria-label="Volver atrás"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><b class="ttl">${esc(pageTitle())}</b>` : ""}<button class="logo${S.v !== "inicio" ? " lg-h" : ""}" data-go="inicio"><i></i>Mirada Política</button>
     <button class="k" data-pal aria-label="Buscar">${ico("srch")}<span>Buscar partido, político, tema o provincia…</span><kbd>⌘K</kbd></button>
-    <button class="k kmenu" data-menu aria-label="Todas las secciones">${ico("menu")}</button>
+    ${S.v !== "inicio" ? `<button class="k kic" data-share aria-label="Compartir esta página" title="Compartir">${ico("share")}</button>` : ""}<button class="k kic" data-uiopen aria-label="Ajustes de lectura" title="Ajustes de lectura">${ico("aa")}</button><button class="k kmenu" data-menu aria-label="Todas las secciones">${ico("menu")}</button>
     <button class="cta" data-go="test">Test político →</button></header>
-    <button class="totop" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><div class="scroll">${body}<footer class="sfoot"><div class="sf-b"><b><i class="sf-l"></i>Mirada Política</b><span>Información política de España, neutral y con la fuente de cada dato. No recomienda voto.</span></div>${NAVG.map(([h, l]) => `<div><span class="eyebrow">${h}</span>${l.map(([id, t]) => `<button class="lnk" data-go="${id}">${t}</button>`).join("")}</div>`).join("")}</footer></div>
+    <button class="totop" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><div class="scroll">${body}<footer class="sfoot"><div class="sf-b"><b><i class="sf-l"></i>Mirada Política</b><span>Información política de España, neutral y con la fuente de cada dato. No recomienda voto.</span><button class="lnk" data-uiopen style="margin-top:8px">${ico("aa")} Ajustes de lectura</button></div>${NAVG.map(([h, l]) => `<div><span class="eyebrow">${h}</span>${l.map(([id, t]) => `<button class="lnk" data-go="${id}">${t}</button>`).join("")}</div>`).join("")}</footer></div>
     <nav class="tabbar">${[["inicio", "Inicio", "home"], ["partidos", "Partidos", "part"], ["temas", "Temas", "tema"], ["comparar", "Comparar", "cmp"]].map(([id, t, ic]) => `<button data-go="${id}" ${cur === id ? 'aria-current="page"' : ""}>${ico(ic)}${t}</button>`).join("")}<button class="t" data-go="test" ${cur === "test" ? 'aria-current="page"' : ""}>${ico("test")}Test</button></nav>
-  </div></div>${S.dr ? drawer() : ""}${S.pal ? palette() : ""}${S.menu ? menuSheet() : ""}`;
+  </div></div>${S.dr ? drawer() : ""}${S.pal ? palette() : ""}${S.menu ? menuSheet() : ""}${S.ui ? uiSheet() : ""}<div class="toast" role="status" aria-live="polite"></div>`;
 }
 function menuSheet() {
-  return `<div class="dr sheet" data-close><div role="dialog" aria-label="Secciones"><button class="x" data-close aria-label="Cerrar">✕</button><h2 style="margin:4px 0 14px">Todas las secciones</h2>
+  return `<div class="dr sheet" data-close><div role="dialog" aria-label="Secciones"><button class="x" data-close aria-label="Cerrar">✕</button><h2 style="margin:4px 0 14px">Todas las secciones</h2><button class="chip" data-uiopen style="margin-bottom:4px">${ico("aa")} Ajustes de lectura: tema oscuro y letra grande</button>
   ${NAVG.map(([h, l]) => `<p class="eyebrow" style="margin:12px 0 8px">${h}</p><div class="mgrid">${l.map(([id, t, ic, n]) => `<button data-go="${id}">${ico(ic)}<b>${t}</b>${n != null ? `<small>${n}</small>` : ""}</button>`).join("")}</div>`).join("")}</div></div>`;
 }
 const miniBar = (q) => { const c = [0, 0, 0, 0, 0, 0]; Object.values(q.pos).forEach((v) => c[v]++); const t = c.reduce((a, b) => a + b, 0) || 1; return `<span class="mini" title="Reparto de posturas">${[5, 4, 3, 2, 1].map((v) => `<i class="c${v}" style="width:${100 * c[v] / t}%"></i>`).join("")}</span>`; };
@@ -537,11 +601,11 @@ function polMap() {
   pts.forEach((o) => { o.x = Math.max(12, Math.min(W - 12, o.x)); o.y = Math.max(12, Math.min(H - 12, o.y)); });
   const d = DIMM[yd], e = DIMM.eco;
   return `<svg viewBox="0 0 ${W} ${H}" class="pmap" role="img" aria-label="Mapa político: ${esc(e.name)} y ${esc(d.name)}">
-    <rect x="0" y="0" width="${W / 2}" height="${H / 2}" fill="#f3f5f8"/><rect x="${W / 2}" y="${H / 2}" width="${W / 2}" height="${H / 2}" fill="#f3f5f8"/>
-    <line x1="${W / 2}" y1="0" x2="${W / 2}" y2="${H}" stroke="#d5d8de"/><line x1="0" y1="${H / 2}" x2="${W}" y2="${H / 2}" stroke="#d5d8de"/>
+    <rect x="0" y="0" width="${W / 2}" height="${H / 2}" style="fill:var(--line2)"/><rect x="${W / 2}" y="${H / 2}" width="${W / 2}" height="${H / 2}" style="fill:var(--line2)"/>
+    <line x1="${W / 2}" y1="0" x2="${W / 2}" y2="${H}" style="stroke:var(--line)"/><line x1="0" y1="${H / 2}" x2="${W}" y2="${H / 2}" style="stroke:var(--line)"/>
     <text x="6" y="${H / 2 - 6}" class="ax">← ${esc(e.a)}</text><text x="${W - 6}" y="${H / 2 - 6}" class="ax" text-anchor="end">${esc(e.b)} →</text>
     <text x="${W / 2 + 6}" y="13" class="ax">↑ ${esc(d.a)}</text><text x="${W / 2 + 6}" y="${H - 6}" class="ax">↓ ${esc(d.b)}</text>
-    ${pts.map(({ p, x, y }) => `<g class="pt" data-go="ficha" data-s="pid=${p.id};ptab=res" tabindex="0"><title>${esc(p.name)}</title><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8.5" fill="${p.color}" stroke="#fff" stroke-width="2"/><text x="${x.toFixed(1)}" y="${(y + 18).toFixed(1)}" text-anchor="middle" class="pl">${esc(p.ab)}</text></g>`).join("")}
+    ${pts.map(({ p, x, y }) => `<g class="pt" data-go="ficha" data-s="pid=${p.id};ptab=res" tabindex="0"><title>${esc(p.name)}</title><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8.5" fill="${p.color}" style="stroke:var(--sf)" stroke-width="2"/><text x="${x.toFixed(1)}" y="${(y + 18).toFixed(1)}" text-anchor="middle" class="pl">${esc(p.ab)}</text></g>`).join("")}
   </svg>`;
 }
 function debateCard() {
@@ -659,14 +723,14 @@ function inicio() {
     <div class="hx-in"><p class="eyebrow on-d">Información política de España · XVI Legislatura</p>
     <h1 class="hx-t">Toda la política española,<br><mark>en un vistazo.</mark></h1>
     <button class="hx-s" data-pal>${ico("srch")}<span>Busca un partido, un político, un tema o tu provincia</span></button>
-    <div class="hx-c sx"><button data-go="resultados">Resultados del 29N</button><button data-go="gobierno">Investidura</button>${["viv", "eco", "dem", "san"].map((id) => `<button data-go="temas" data-s="area=${id};openQ=null">${esc(short(AM[id].n))}</button>`).join("")}<button data-go="instituciones">Instituciones</button></div>
+    <div class="hx-c sx"><button data-go="resultados">Resultados del 29N</button><button data-go="gobierno">Investidura</button>${["viv", "eco", "dem", "san"].map((id) => `<button data-go="temas" data-s="area=${id};openQ=null">${esc(short(AM[id].n))}</button>`).join("")}<button data-go="explica">En 1 minuto</button><button data-go="legis">Legislatura</button></div>
     <div class="hx-k"><span><b>${D.parties.length}</b> partidos</span><span><b>${CANDS.length}</b> cabezas de lista</span><span><b>${D.qs.length}</b> temas</span><span><b>${nsrc.toLocaleString("es")}</b> posturas con fuente</span></div></div>
     <div class="hx-strip">${D.parties.map((p) => `<button data-go="ficha" data-s="pid=${p.id};ptab=res" style="background:${p.color}" title="${esc(p.name)}"></button>`).join("")}</div>
   </section>
   <div class="hgrid">
     <div class="card"><div class="ch"><h2>${ico("elec")} El nuevo Congreso</h2><button class="lnk" data-go="resultados">Resultados →</button></div><div style="padding:12px 16px 14px">${RES ? "" : '<p class="note" style="margin:0 0 6px">Vista previa con 2023 · el 30N, resultados del 29N</p>'}${hemi(CUR.parties, true)}${seatLegend(CUR.parties.slice(0, 6))}</div></div>
     <div class="card"><div class="ch"><h2>${ico("cal")} Qué viene ahora</h2><button class="lnk" data-go="gobierno">Investidura →</button></div><ol class="tl-mini">${[["4 dic", "Escrutinio general"], ["23 dic", "Se constituyen el Congreso y el Senado"], ["Después", "Consultas del Rey y propuesta de candidato"], ["Investidura", "176 síes en 1.ª votación o mayoría simple en la 2.ª"]].map(([d, t]) => `<li><b>${d}</b><span>${t}</span></li>`).join("")}</ol>
-      <div style="padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap"><button class="chip" data-go="congreso">Congreso y Senado</button><button class="chip" data-go="instituciones">Cómo funciona el Estado</button></div></div>
+      <div style="padding:0 14px 14px;display:flex;gap:8px;flex-wrap:wrap"><button class="chip" data-go="legis" data-s="ltab=ag">Seguir la legislatura</button><button class="chip" data-go="instituciones">Cómo funciona el Estado</button></div></div>
   </div>
   <div class="sech"><h2>Quién es quién</h2><button class="lnk" data-go="politicos">Todos los políticos →</button></div>
   <div class="faces sx">${D.pols.map((x) => `<button class="face" data-go="politico" data-s="polid=${x.id}">${av(x)}<b>${esc(x.name)}</b>${PM[x.party] ? pb(PM[x.party]) : `<span class="badge">${esc(x.pl)}</span>`}</button>`).join("")}</div>
@@ -678,8 +742,8 @@ function inicio() {
   </div>
   <div class="sech"><h2>Explora por tema</h2><button class="lnk" data-go="temas">Ver los ${D.areas.length} →</button></div>
   <div class="tiles sx">${D.areas.map((a, i) => `<button class="tile" data-go="temas" data-s="area=${a.id};openQ=null" style="--ac:${AREA_COL[i % 12]}"><i>${esc(a.letter)}</i><b>${esc(a.n)}</b><span>${D.qs.filter((q) => q.a === a.id).length} preguntas</span></button>`).join("")}</div>
-  <div class="sech"><h2>Entiende la política</h2><button class="lnk" data-go="instituciones">Todas las instituciones →</button></div>
-  <div class="tiles sx inst-t">${INST.slice(0, 6).map(([t, s, , , ic, v]) => `<button class="tile" data-go="${v || "instituciones"}" style="--ac:#0f1115">${ico(ic)}<b>${t}</b><span>${s}</span></button>`).join("")}</div>
+  <div class="sech"><h2>Explicado en 1 minuto</h2><button class="lnk" data-go="explica">Los ${EXPL.length} →</button></div>
+  <div class="xgrid sx xrow">${EXPL.slice(0, 4).map(exCard).join("")}</div>
   <div class="trio">
     <div class="card"><div class="ch"><h2>Cara a cara</h2><button class="lnk" data-go="comparar">Detalle →</button></div><div style="padding:14px">
       <div class="duel">${selP("a")}<div class="duel-p"><b>${r ? r.pct + " %" : "—"}</b><span>coinciden</span></div>${selP("b")}</div>
@@ -693,6 +757,7 @@ function inicio() {
       <button class="card gl" data-go="glosario" data-s="gq=${esc(g.t)}"><span class="eyebrow">Glosario · ${esc(g.t)}</span><span>${esc(g.d.length > 150 ? g.d.slice(0, 147) + "…" : g.d)}</span></button>
     </div>
   </div>
+  ${boletin()}
   <div class="arch2"><span class="eyebrow">Archivo de la campaña del 29N</span>${[["debates", `${D.debates.lista.length} debates y entrevistas`, "deb"], ["programas", `${Object.keys(D.programas.pub).length} programas`, "prog"], ["guia", "Calendario y guía para votar", "cal"]].map(([v, t, ic]) => `<button class="chip" data-go="${v}">${ico(ic)}${t}</button>`).join("")}</div>`;
 }
 // ---------- Partidos ----------
@@ -848,7 +913,102 @@ function test() {
   <div class="tiles">${Object.entries(D.topics).map(([k, t], i) => `<a class="tile" href="https://test29n.es/tests/" target="_blank" rel="noopener" style="--ac:${AREA_COL[(i * 2) % 12]};text-decoration:none;color:inherit"><i>${esc(t.label[0])}</i><b>${esc(t.label)}</b><span>${t.ids.length} preguntas</span></a>`).join("")}</div>
   <p class="note" style="margin-top:14px">En esta prueba el test se abre en la web actual. Con el rediseño será el mismo test, con las mismas URL.</p>`;
 }
-const VIEWS = { inicio, partidos, ficha, politicos, politico, temas, comparar, provincia, resultados, congreso, gobierno, instituciones, ccaa, guia, debates, programas, glosario, metodo, test };
+// ---------- Explicado en 1 minuto ----------
+const CEa = (n) => `${CE}#a${n}`;
+const EXPL = [
+  ["investidura", "Investidura", "Cómo se elige al presidente del Gobierno", "elec", [
+    "El Rey consulta a los representantes de los grupos políticos y propone un candidato a través de la presidencia del Congreso.",
+    "El candidato expone su programa ante el Congreso y pide la confianza de la Cámara.",
+    "En la 1.ª votación necesita mayoría absoluta: 176 síes de 350.",
+    "Si no la logra, 48 horas después basta con mayoría simple: más síes que noes.",
+    "Si a los dos meses de la primera votación nadie la ha obtenido, se disuelven las Cortes y se repiten las elecciones."],
+    "176 síes en la 1.ª votación, o más síes que noes en la 2.ª", [["CE, art. 99", CEa(99)]]],
+  ["censura", "Moción de censura", "Cómo el Congreso puede cambiar de presidente", "cmp", [
+    "La presenta al menos una décima parte de los diputados: 35.",
+    "Es «constructiva»: tiene que incluir un candidato a presidente.",
+    "No se puede votar hasta que pasen cinco días desde que se presenta.",
+    "Si logra mayoría absoluta (176 síes), el candidato pasa a ser presidente.",
+    "Si no prospera, quienes la firmaron no pueden presentar otra en el mismo periodo de sesiones."],
+    "176 síes · desde 1978 solo ha prosperado una, en 2018", [["CE, arts. 113 y 114", CEa(113)]]],
+  ["confianza", "Cuestión de confianza", "Cuando el presidente pide el apoyo del Congreso", "test", [
+    "La plantea el presidente, tras deliberarlo con el Consejo de Ministros.",
+    "Es sobre su programa o sobre una declaración de política general.",
+    "La gana con mayoría simple: más síes que noes.",
+    "Si la pierde, el Gobierno dimite y se elige un nuevo presidente por el procedimiento de investidura."],
+    "Basta con mayoría simple", [["CE, arts. 112 y 114", CEa(112)]]],
+  ["dhondt", "Ley D'Hondt", "Cómo se reparten los escaños de cada provincia", "data", [
+    "Solo entran las candidaturas con al menos el 3 % de los votos válidos de la provincia.",
+    "Los votos de cada candidatura se dividen entre 1, 2, 3… hasta el número de escaños en juego.",
+    "Los escaños van a los cocientes más altos, uno a uno.",
+    "Ejemplo con 3 escaños: A 100 votos, B 60 y C 30. Cocientes: A 100 y 50, B 60, C 30 y B 30. Resultado: A 2 escaños, B 1, C 0."],
+    "Barrera del 3 % en cada provincia", [["LOREG, art. 163", LOREG]]],
+  ["ley", "Cómo se hace una ley", "Del proyecto al BOE", "prog", [
+    "La propone el Gobierno (proyecto de ley), los grupos del Congreso o el Senado, un parlamento autonómico o 500.000 ciudadanos con su firma.",
+    "El Congreso la debate, la enmienda y la aprueba.",
+    "El Senado tiene dos meses para aprobarla, enmendarla o vetarla (el veto requiere mayoría absoluta).",
+    "El Congreso puede levantar el veto: con mayoría absoluta enseguida o con mayoría simple pasados dos meses.",
+    "El Rey la sanciona en 15 días y se publica en el BOE. Las leyes orgánicas necesitan mayoría absoluta del Congreso en una votación final."],
+    "Leyes orgánicas: 176 síes en el Congreso", [["CE, arts. 81 y 87–91", CEa(87)]]],
+  ["decreto", "Decreto-ley", "La norma urgente del Gobierno", "glos", [
+    "Lo dicta el Gobierno solo en caso de «extraordinaria y urgente necesidad».",
+    "No puede tocar las instituciones básicas del Estado, los derechos del Título I, el régimen de las comunidades ni el derecho electoral general.",
+    "El Congreso tiene 30 días para convalidarlo o derogarlo.",
+    "Además, puede tramitarlo como proyecto de ley para cambiarlo con enmiendas."],
+    "30 días para que el Congreso lo convalide", [["CE, art. 86", CEa(86)]]],
+  ["presupuestos", "Presupuestos del Estado", "Las cuentas del año", "data", [
+    "El Gobierno los elabora y los presenta al Congreso al menos tres meses antes de que acaben los del año anterior.",
+    "Las Cortes los examinan, los enmiendan y los aprueban.",
+    "Si el 1 de enero no hay presupuestos nuevos, se prorrogan automáticamente los anteriores."],
+    "Sin presupuestos nuevos se prorrogan los anteriores", [["CE, art. 134", CEa(134)]]],
+  ["disolucion", "Adelanto electoral", "Cuándo puede el presidente convocar elecciones", "cal", [
+    "El presidente puede disolver las Cortes, bajo su exclusiva responsabilidad y tras deliberarlo con el Consejo de Ministros.",
+    "No puede hacerlo si hay una moción de censura en trámite.",
+    "Tampoco antes de un año desde la disolución anterior, salvo si fracasa la investidura.",
+    "Las elecciones se celebran entre 30 y 60 días después de la convocatoria."],
+    "Elecciones entre 30 y 60 días después", [["CE, arts. 68 y 115", CEa(115)]]],
+];
+const EXM = Object.fromEntries(EXPL.map((e) => [e[0], e]));
+const exCard = ([id, t, s, ic, , k]) => `<button class="xcard" data-go="explica" data-s="ex=${id}">${ico(ic)}<b>${t}</b><span>${s}</span><em>${esc(k)}</em><small>1 min →</small></button>`;
+function explica() {
+  const e = EXM[S.ex];
+  if (!e) return head("Explicado en 1 minuto", "Cómo funciona la política española, paso a paso y con el artículo de la ley que lo regula.") + `<div class="xgrid">${EXPL.map(exCard).join("")}</div>`;
+  const [id, t, s, ic, steps, k, src] = e, i = EXPL.indexOf(e), nx = EXPL[(i + 1) % EXPL.length];
+  return `<article class="xart"><p class="eyebrow">Explicado en 1 minuto · ${i + 1} de ${EXPL.length}</p><h1>${t}</h1><p class="sub">${s}</p>
+    <div class="xkey">${ico(ic)}<b>${esc(k)}</b></div>
+    <ol class="xsteps">${steps.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>
+    <p class="note">Fuente: ${src.map(([l, u]) => `<a class="lnk" href="${u}" target="_blank" rel="noopener">${l} ↗</a>`).join(" · ")}</p>
+    <div class="xnav"><button class="chip" data-s="ex=null">Todos los explicadores</button><button class="chip" data-s="ex=${nx[0]}">Siguiente: ${nx[1]} →</button></div></article>`;
+}
+// ---------- Legislatura: promesas, votaciones y agenda ----------
+const PST = [["ok", "Cumplida", "#0f766e"], ["mar", "En marcha", "#62aea4"], ["pen", "Pendiente", "#9aa1ad"], ["no", "Incumplida", "#a8550e"]];
+function legis() {
+  const tabs = [["prom", "Promesas del Gobierno"], ["vot", "Así vota el Congreso"], ["ag", "Agenda"]];
+  let body = "";
+  if (S.ltab === "prom") body = `<div class="empty2">${ico("test")}<b>Se activa cuando haya Gobierno</b><span>Tras la investidura, cada compromiso del programa del partido o partidos que gobiernen aparecerá aquí con su estado y la prueba que lo respalda.</span></div>
+    <div class="grid g2" style="margin-top:14px"><div class="card"><div class="ch"><h2>Cómo se mide</h2></div><ol class="steps big">${["Se recogen los compromisos concretos y comprobables del programa del 29N, con su página.", "Cada uno tiene un estado, que solo cambia con una prueba oficial: BOE, Congreso o Consejo de Ministros.", "Cada cambio queda fechado y enlazado, para que cualquiera pueda comprobarlo."].map((p) => `<li><span>${esc(p)}</span></li>`).join("")}</ol></div>
+    <div class="card"><div class="ch"><h2>Estados</h2></div><div style="padding:12px 14px;display:grid;gap:10px">${PST.map(([, l, c], i) => `<div class="pst"><i style="background:${c}"></i><b>${l}</b><span class="note">${["Publicado en el BOE o aplicado", "En tramitación en las Cortes o aprobado en el Consejo de Ministros", "Sin ningún paso oficial todavía", "Descartado oficialmente o contradicho por una norma"][i]}</span></div>`).join("")}</div></div></div>`;
+  if (S.ltab === "vot") body = `<div class="empty2">${ico("data")}<b>Empieza con la primera votación de la XVI Legislatura</b><span>Qué votó cada grupo en las leyes y votaciones importantes, junto a lo que dijo en su programa. Con los datos abiertos del Congreso.</span><a class="lnk" href="https://www.congreso.es/es/opendata/votaciones" target="_blank" rel="noopener">Datos abiertos del Congreso ↗</a></div>
+    <div class="card" style="margin-top:14px"><div class="ch"><h2>Qué verás de cada votación</h2></div>${[["Resultado", "Síes, noes y abstenciones, y si salió adelante."], ["Voto de cada grupo", "Con el color de cada partido y el número de diputados."], ["Coherencia con el programa", "Si el voto choca con lo que el partido prometió, el enlace a la página exacta."], ["Fuente", "La votación oficial y el Diario de Sesiones del Congreso."]].map(([t, d]) => `<div class="prop"><b style="width:auto;color:var(--ink)">${t}</b><span class="note" style="font-size:13px">${d}</span></div>`).join("")}</div>`;
+  if (S.ltab === "ag") body = `<div class="card"><ol class="tline">${[["4 dic", "Escrutinio general", "Las juntas electorales cierran el recuento oficial."], ["23 dic", "Se constituyen el Congreso y el Senado", "Se eligen las Mesas y la presidencia de cada Cámara."], ["Después", "Consultas del Rey", "El Rey consulta a los grupos y propone un candidato."], ["Investidura", "Debate y votación", "176 síes en la 1.ª votación o más síes que noes en la 2.ª."], ["+2 meses", "Plazo máximo", "Si nadie logra la confianza en dos meses desde la 1.ª votación, se repiten las elecciones."]].map(([d, t, n], i) => `<li class="${i === 0 ? "now" : ""}"><span class="tl-d">${d}</span><div><b>${t}</b><p>${n}</p></div></li>`).join("")}</ol></div>
+    <p class="note" style="margin-top:10px">Fuente: <a class="lnk" href="${CEa(99)}" target="_blank" rel="noopener">CE, art. 99 ↗</a> · <a class="lnk" href="${LOREG}" target="_blank" rel="noopener">LOREG ↗</a></p>`;
+  return head("XVI Legislatura", "Lo que pase en el Congreso y en el Gobierno después del 29N, con la prueba oficial de cada dato.") + tabsB("ltab", tabs) + body;
+}
+// ---------- Compartir, ajustes y boletín ----------
+const PATH = { inicio: "", partidos: "partidos/", ficha: () => `partidos/${S.pid}/`, politicos: "politicos/", politico: () => `politicos/${S.polid}/`, temas: () => `temas/${S.area}/`, comparar: () => `comparar/${S.a}-${S.b}/`, provincia: () => `provincia/${S.prov}/`, resultados: "resultados/", explica: () => `explicado/${S.ex || ""}${S.ex ? "/" : ""}` };
+const shareUrl = () => { const p = PATH[S.v]; return "https://miradapolitica.es/" + (typeof p === "function" ? p() : p ?? S.v + "/"); };
+let TT = 0; const toast = (m) => { const t = $(".toast", app); if (!t) return; t.textContent = m; t.classList.add("on"); clearTimeout(TT); TT = setTimeout(() => t.classList.remove("on"), 2600); };
+const share = async () => { const url = shareUrl(), title = pageTitle() + " · Mirada Política"; try { if (navigator.share) { await navigator.share({ title, url }); return; } } catch (_) { return; } try { await navigator.clipboard.writeText(url); toast("Enlace copiado: " + url.replace("https://", "")); } catch (_) { toast(url.replace("https://", "")); } };
+const UI = { th: "light", fs: "n" }; try { UI.th = localStorage.getItem("mp_th") || "light"; UI.fs = localStorage.getItem("mp_fs") || "n"; } catch (_) {}
+const applyUI = () => { const dark = UI.th === "dark" || (UI.th === "auto" && matchMedia("(prefers-color-scheme: dark)").matches); app.classList.toggle("dark", dark); app.classList.toggle("big", UI.fs === "g"); };
+function uiSheet() {
+  const seg = (k, l) => `<div class="seg lt">${l.map(([v, t]) => `<button data-ui="${k}=${v}" aria-pressed="${UI[k] === v}">${t}</button>`).join("")}</div>`;
+  return `<div class="dr sheet" data-close><div role="dialog" aria-label="Ajustes de lectura"><button class="x" data-close aria-label="Cerrar">✕</button><h2 style="margin:4px 0 16px">Ajustes de lectura</h2>
+  <div class="uirow"><b>Tema</b>${seg("th", [["light", "Claro"], ["dark", "Oscuro"], ["auto", "Automático"]])}</div>
+  <div class="uirow"><b>Tamaño de letra</b>${seg("fs", [["n", "Normal"], ["g", "Grande"]])}</div>
+  <p class="note" style="margin:14px 0 0">Se guarda en este dispositivo.</p></div></div>`;
+}
+const boletin = (cls = "") => `<form class="card news ${cls}" data-news><div><p class="eyebrow">Boletín semanal · gratis</p><h2>La semana en política, en 5 minutos</h2><p class="note" style="margin:4px 0 0">Cada lunes: qué se votó, qué se aprobó y qué viene. Neutral, con fuentes y sin opinión.</p></div><div class="news-f"><input class="in" type="email" placeholder="tu@correo.es" aria-label="Correo electrónico" required><button class="cta" style="margin:0">Suscribirme</button></div></form>`;
+const VIEWS = { explica, legis, inicio, partidos, ficha, politicos, politico, temas, comparar, provincia, resultados, congreso, gobierno, instituciones, ccaa, guia, debates, programas, glosario, metodo, test };
 function drawer() {
   const [pid, qid] = S.dr.split("|"), p = PM[pid], q = QM[qid], v = q.pos[pid], s = q.src[pid], said = polSaid(qid);
   return `<div class="dr" data-close><div role="dialog" aria-label="Postura"><button class="x" data-close aria-label="Cerrar">✕</button>
@@ -907,8 +1067,11 @@ app.addEventListener("click", (e) => {
   const t = e.target;
   const tt = t.closest(".totop"); if (tt) { $(".scroll", app).scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); return; }
   if (t.closest("[data-back]")) return goBack();
+  if (t.closest("[data-share]")) return share();
+  if (t.closest("[data-uiopen]")) { S.ui = true; S.menu = false; return draw(); }
+  const u = t.closest("[data-ui]"); if (u) { const [k, v] = u.dataset.ui.split("="); UI[k] = v; store("mp_" + k, v); applyUI(); return draw(); }
   const mo = t.closest("[data-more]"); if (mo) { const k = mo.dataset.more; if (EXP.has(k)) EXP.delete(k); else EXP.add(k); return draw(); }
-  if (t.matches("[data-close]")) { S.dr = null; S.pal = false; S.menu = false; return draw(); }
+  if (t.matches("[data-close]")) { S.dr = null; S.pal = false; S.menu = false; S.ui = false; return draw(); }
   const el = t.closest("[data-go],[data-s],[data-pal],[data-menu],[data-cell],[data-q],[data-qi],[data-swap]");
   if (!el) return;
   const d = el.dataset;
@@ -927,7 +1090,7 @@ app.addEventListener("change", (e) => { const k = e.target.dataset.bind; if (!k 
 app.addEventListener("input", (e) => { const k = e.target.dataset.bind; if (!k || e.target.tagName !== "INPUT") return; S[k] = e.target.value; draw(); });
 addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); S.pal = true; S.palq = ""; draw(); }
-  if (e.key === "Escape" && (S.pal || S.dr || S.menu)) { S.pal = false; S.dr = null; S.menu = false; draw(); }
+  if (e.key === "Escape" && (S.pal || S.dr || S.menu || S.ui)) { S.pal = false; S.dr = null; S.menu = false; S.ui = false; draw(); }
   if (e.altKey && e.key === "ArrowLeft") goBack();
   if (e.key === "Enter" && S.pal) { const b = $(".pal li button", app); if (b) b.click(); }
 });
@@ -937,6 +1100,9 @@ document.querySelector(".seg").addEventListener("click", (e) => {
   app.classList.toggle("m", b.dataset.dev === "m");
 });
 
+app.addEventListener("submit", (e) => { if (!e.target.matches("[data-news]")) return; e.preventDefault(); e.target.reset(); toast("Apuntado. En esta prueba no se envía nada: se activa al publicar."); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { if (UI.th === "auto") applyUI(); });
+applyUI();
 draw();
 }
 </script>
