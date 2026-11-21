@@ -8146,15 +8146,15 @@
    "opcion_b": "",
    "partido_id": "pnv",
    "partido": "EAJ-PNV",
-   "postura": 4,
-   "postura_texto": "De acuerdo",
+   "postura": 3,
+   "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N quiere más oferta agilizando trámites y movilizando vivienda vacía (p. 7) y que el alquiler protegido no sea la única opción (p. 8); no habla de construir directamente.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 7",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "B08",
@@ -10677,11 +10677,11 @@
    "postura_texto": "En desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N pide reconocer el carácter plurinacional del Estado y el derecho a decidir del pueblo vasco; no propone un Estado federal.",
+   "fuente_url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=23",
+   "fuente_titulo": "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 23",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "C04",
@@ -20519,11 +20519,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": false,
    "nota": "",
-   "justificacion": "Su programa pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
-   "fuente_url": "https://eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j#page=46",
-   "fuente_titulo": "Con voz propia, programa electoral de EAJ-PNV para las elecciones generales de 2023",
+   "justificacion": "Su programa del 29N pide regular el uso medicinal del cannabis y no se pronuncia sobre el uso adulto.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=32",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 32",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "E09",
@@ -43085,6 +43085,25 @@
    "tipo": "afirmacion",
    "opcion_a": "",
    "opcion_b": "",
+   "partido_id": "pnv",
+   "partido": "EAJ-PNV",
+   "postura": 4,
+   "postura_texto": "De acuerdo",
+   "estimada": true,
+   "nota": "",
+   "justificacion": "Estimación: su programa del 29N pide revisar las restricciones europeas a la pesca de fondo en el Atlántico con datos científicos actualizados y el conocimiento de los arrantzales.",
+   "fuente_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
+   "fuente_titulo": "Programa electoral de EAJ-PNV de 2026, p. 18",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
+  },
+  {
+   "pregunta_id": "K06",
+   "area": "Agricultura, pesca y mundo rural",
+   "pregunta": "La UE debería relajar las restricciones a la pesca en el Mediterráneo, aunque las poblaciones de peces se recuperen más despacio.",
+   "tipo": "afirmacion",
+   "opcion_a": "",
+   "opcion_b": "",
    "partido_id": "bng",
    "partido": "BNG",
    "postura": 4,
@@ -47005,11 +47024,11 @@
    "postura_texto": "Ni de acuerdo ni en desacuerdo",
    "estimada": true,
    "nota": "",
-   "justificacion": "",
-   "fuente_url": "",
-   "fuente_titulo": "",
-   "fuente_tipo": "",
-   "fuente_fecha": ""
+   "justificacion": "Estimación: su programa del 29N propone proteger a los menores en los entornos digitales con diseño ético y sin recomendación algorítmica por defecto; no propone prohibir el acceso.",
+   "fuente_url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=21",
+   "fuente_titulo": "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 21",
+   "fuente_tipo": "programa",
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "L07",
