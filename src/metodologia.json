@@ -290,13 +290,13 @@
    "pid": "pp",
    "conocidas": 107,
    "estimadas": 11,
-   "conFuente": 97
+   "conFuente": 99
   },
   {
    "pid": "vox",
    "conocidas": 107,
    "estimadas": 22,
-   "conFuente": 88
+   "conFuente": 92
   },
   {
    "pid": "fa",
@@ -320,7 +320,7 @@
    "pid": "erc",
    "conocidas": 104,
    "estimadas": 27,
-   "conFuente": 77
+   "conFuente": 80
   },
   {
    "pid": "junts",
