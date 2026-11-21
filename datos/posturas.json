@@ -2047,15 +2047,15 @@
    "opcion_b": "Contener el gasto: retrasar la jubilación o ligar más la pensión a lo cotizado",
    "partido_id": "junts",
    "partido": "Junts per Catalunya",
-   "postura": 4,
-   "postura_texto": "Más bien B: Contener el gasto: retrasar la jubilación o ligar más la pensión a lo cotizado",
-   "estimada": false,
+   "postura": 2,
+   "postura_texto": "Más bien A: Aumentar cotizaciones e impuestos para mantener la cuantía de las pensiones",
+   "estimada": true,
    "nota": "",
-   "justificacion": "Su programa propone un factor de sostenibilidad que ligue el retraso de la jubilación a la esperanza de vida.",
-   "fuente_url": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf#page=100",
-   "fuente_titulo": "Programa electoral de Junts per Catalunya a les eleccions generals de 2023 (còpia publicada per Betevé)",
+   "justificacion": "Estimación: su programa del 29N pide subir las pensiones según el IPC catalán y jubilación anticipada sin penalización con 40 años cotizados (p. 58); no dice cómo financiarlo.",
+   "fuente_url": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf#page=57",
+   "fuente_titulo": "Programa electoral de Junts per Catalunya per al 29N de 2026 («Catalunya al centre»), p. 57",
    "fuente_tipo": "programa",
-   "fuente_fecha": "2023-07"
+   "fuente_fecha": "2026-11"
   },
   {
    "pregunta_id": "A05",
