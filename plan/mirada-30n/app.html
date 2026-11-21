@@ -311,6 +311,27 @@ summary::-webkit-details-marker{display:none}
 .totop.on{opacity:1;transform:none;pointer-events:auto}.totop svg{width:20px;height:20px}
 .lim-b{display:block;width:100%;border:0;border-top:1px solid var(--line2);background:var(--sf);padding:11px 14px;font-weight:700;font-size:13px;color:var(--acc);text-align:center;cursor:pointer;column-span:all;grid-column:1/-1;border-radius:0 0 12px 12px}
 .glgrid>.lim-b,.pgrid>.lim-b{border:1px solid var(--line);border-radius:12px}
+/* Pulido visual: más aire, superficies suaves y jerarquía clara */
+:root{--bg:#f4f5f7;--line:#e5e7eb;--line2:#eff1f4;--ink2:#4a5261}
+body{font-size:14.5px;line-height:1.55}
+.card{border-radius:14px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.ch{padding:13px 16px}.ch h2{font-size:15px}
+.ph{margin-bottom:18px}.ph h1,h1{font-size:25px;letter-spacing:-.025em}.sub{font-size:14.5px}
+.sech{margin:28px 0 12px}.sech h2{font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}.sech h2:before{content:"";width:4px;height:18px;border-radius:2px;background:var(--mark);box-shadow:0 0 0 1px #0f1115}
+.scroll{padding:24px 28px 40px}
+.grid,.hgrid,.trio{gap:16px}
+.chip{height:32px;padding:0 12px}
+.badge{border-radius:6px}
+.bk{display:none;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--sf);place-items:center;flex:none}.bk svg{width:20px;height:20px}
+.ttl{display:none;font-size:16px;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.top .bk{display:grid}
+.dgd summary{cursor:pointer;list-style:none;font-weight:600;font-size:13px;color:var(--acc);padding:4px 0}.dgd summary::-webkit-details-marker{display:none}.dgd[open] summary{margin-bottom:10px}
+.arch2{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:28px;padding:14px 16px;border:1px dashed var(--line);border-radius:14px}.arch2 .eyebrow{margin-right:6px}.arch2 svg{width:15px;height:15px}
+.sfoot{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:18px;margin-top:44px;padding:24px 0 8px;font-size:13px}
+.sfoot>div{display:flex;flex-direction:column;gap:6px;align-items:flex-start}.sfoot .lnk{font-weight:500;color:var(--ink2)}.sfoot .lnk:hover{color:var(--acc)}
+.sf-b b{display:flex;align-items:center;gap:8px;font-size:15px}.sf-l{width:18px;height:18px;border-radius:5px;background:#0f1115;box-shadow:inset 0 0 0 5px #0f1115;background-image:radial-gradient(circle,var(--mark) 0 3.5px,transparent 4px)}
+.sf-b span{color:var(--ink3);max-width:30ch}
+.hgrid .hemi{max-width:400px}
 /* MÓVIL (container query: vale para el marco de móvil y para pantallas estrechas) */
 @container (max-width:760px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -357,6 +378,12 @@ summary::-webkit-details-marker{display:none}
   .pt-r{grid-template-columns:minmax(0,1fr);gap:4px;padding:6px 0}.ptile{width:44px}
   .arch{grid-template-columns:repeat(2,minmax(0,1fr))}
   .totop{bottom:84px;right:14px}
+  .scroll{padding:16px 14px 24px}
+  .top .lg-h{display:none}.ttl{display:block;flex:1}
+  .ph h1,h1{font-size:21px}
+  .chip{height:34px}
+  .hx-k span:nth-child(n+3){display:none}
+  .sfoot{grid-template-columns:repeat(2,minmax(0,1fr))}.sf-b{grid-column:1/-1}
   .pal{padding-top:20px}
 }
 @media (max-width:600px){.app{height:calc(100vh - 120px)}.mk span{display:none}}
@@ -432,17 +459,30 @@ const TOPIC_AREA = Object.fromEntries(Object.entries(D.topics).map(([k, t]) => {
 
 const NAVG = [
   ["Explorar", [["inicio", "Inicio", "home"], ["partidos", "Partidos", "part", D.parties.length], ["politicos", "Políticos", "pol", D.pols.length], ["temas", "Temas", "tema", D.areas.length], ["comparar", "Comparar", "cmp"]]],
-  ["Elecciones", [["resultados", "Resultados 29N", "elec"], ["provincia", "Mi provincia", "prov"], ["debates", "Debates de campaña", "deb", D.debates.lista.length], ["programas", "Programas del 29N", "prog", Object.keys(D.programas.pub).length]]],
-  ["Instituciones", [["congreso", "Congreso y Senado", "data"], ["gobierno", "Gobierno", "part"], ["instituciones", "Cómo funciona el Estado", "glos"], ["ccaa", "Comunidades autónomas", "prov", 19]]],
+  ["Elecciones", [["resultados", "Resultados 29N", "elec"], ["provincia", "Mi provincia", "prov"], ["debates", "Debates", "deb", D.debates.lista.length], ["programas", "Programas", "prog", Object.keys(D.programas.pub).length]]],
+  ["Instituciones", [["congreso", "Congreso y Senado", "data"], ["gobierno", "Gobierno", "part"], ["instituciones", "El Estado", "glos"], ["ccaa", "Autonomías", "prov", 19]]],
   ["Aprende", [["guia", "Cómo se vota", "cal"], ["glosario", "Glosario", "glos", D.glos.length], ["metodo", "Datos y método", "data"]]],
 ];
 const PARENT = { ficha: "partidos", politico: "politicos" };
 let S = { v: "inicio", pid: "psoe", ptab: "res", area: "viv", tview: "lista", openQ: null, a: "psoe", b: "pp", prov: "madrid", ydim: "soc", qi: 0, ctab: "choq", pf: "all", pq: "", sort: "orden", dr: null, pal: false, palq: "", menu: false, polid: "sanchez", polv: "dest", polp: "all", cq: "", cprov: "madrid", etab: "res", rtab: "cong", gtab: "votar", df: "all", dt: "all", gq: "", r23: "madrid" };
 const app = $("#app");
 const parseS = (s) => Object.fromEntries((s || "").split(";").filter(Boolean).map((kv) => { const [k, v] = kv.split("="); return [k, v === "null" ? null : v]; }));
-const go = (v, extra = {}) => { NAV = true; EXP.clear(); S = { ...S, v, dr: null, pal: false, menu: false, ...extra }; try { history.pushState({ S }, ""); } catch (_) {} draw(); const sc = $(".scroll", app); if (sc) sc.scrollTop = 0; };
-addEventListener("popstate", (e) => { if (e.state && e.state.S) { NAV = true; EXP.clear(); S = e.state.S; draw(); } });
+const STACK = [];
+const TABKEYS = ["ptab", "rtab", "gtab", "ctab", "polv", "polp", "tview", "area", "df", "dt", "pf"];
+const snap = () => { const sc = $(".scroll", app); return JSON.stringify({ ...S, dr: null, pal: false, menu: false, _top: sc ? sc.scrollTop : 0 }); };
+const push = () => { STACK.push(snap()); if (STACK.length > 60) STACK.shift(); try { history.pushState({ n: STACK.length }, ""); } catch (_) {} };
+let POPPED = false;
+const back = () => { if (!STACK.length) return go("inicio"); const prev = JSON.parse(STACK.pop()), top = prev._top || 0; delete prev._top; NAV = true; EXP.clear(); S = prev; draw(); const sc = $(".scroll", app); if (sc) sc.scrollTop = top; };
+const goBack = () => { POPPED = false; try { history.back(); } catch (_) {} setTimeout(() => { if (!POPPED) back(); }, 180); };
+const go = (v, extra = {}) => { push(); NAV = true; EXP.clear(); S = { ...S, v, dr: null, pal: false, menu: false, ...extra }; if (S.prov) store("mp_prov", S.prov); draw(); const sc = $(".scroll", app); if (sc) sc.scrollTop = 0; };
+addEventListener("popstate", () => { POPPED = true; back(); });
+const store = (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} };
+try { const p = localStorage.getItem("mp_prov"); if (p && D.seats[p]) { S.prov = p; S.cprov = p; } } catch (_) {}
 
+function pageTitle() {
+  if (S.v === "ficha") return PM[S.pid].name; if (S.v === "politico") return PLM[S.polid].name; if (S.v === "test") return "Test político";
+  const f = NAVG.flatMap(([, l]) => l).find(([id]) => id === S.v); return f ? f[1] : "Mirada Política";
+}
 function shell(body) {
   const cur = PARENT[S.v] || S.v;
   const ni = ([id, t, ic, n]) => `<button class="ni" data-go="${id}" ${cur === id ? 'aria-current="page"' : ""}>${ico(ic)}${t}${n != null ? `<small>${n}</small>` : ""}</button>`;
@@ -450,11 +490,11 @@ function shell(body) {
     ${NAVG.map(([h, l], i) => `${i ? `<div class="nav-h">${h}</div>` : ""}${l.map(ni).join("")}`).join("")}
     <button class="side-test" data-go="test"><span class="eyebrow on-d">Test político</span><b>¿Con quién coincides?</b><span>Empezar →</span></button>
     <div class="foot">Información neutral y con fuentes. Datos del ${fd(D.updated)} de 2026.</div></aside>
-  <div class="main"><header class="top"><button class="logo" data-go="inicio"><i></i>Mirada Política</button>
+  <div class="main"><header class="top">${S.v !== "inicio" ? `<button class="bk" data-back aria-label="Volver atrás"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><b class="ttl">${esc(pageTitle())}</b>` : ""}<button class="logo${S.v !== "inicio" ? " lg-h" : ""}" data-go="inicio"><i></i>Mirada Política</button>
     <button class="k" data-pal aria-label="Buscar">${ico("srch")}<span>Buscar partido, político, tema o provincia…</span><kbd>⌘K</kbd></button>
     <button class="k kmenu" data-menu aria-label="Todas las secciones">${ico("menu")}</button>
     <button class="cta" data-go="test">Test político →</button></header>
-    <button class="totop" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><div class="scroll">${body}<footer class="sfoot"><b>Mirada Política</b><span>Información política neutral, con la fuente de cada dato. No recomienda voto.</span><span><button class="lnk" data-go="metodo">Método</button> · <button class="lnk" data-go="glosario">Glosario</button> · <button class="lnk" data-go="programas">Programas</button></span></footer></div>
+    <button class="totop" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><div class="scroll">${body}<footer class="sfoot"><div class="sf-b"><b><i class="sf-l"></i>Mirada Política</b><span>Información política de España, neutral y con la fuente de cada dato. No recomienda voto.</span></div>${NAVG.map(([h, l]) => `<div><span class="eyebrow">${h}</span>${l.map(([id, t]) => `<button class="lnk" data-go="${id}">${t}</button>`).join("")}</div>`).join("")}</footer></div>
     <nav class="tabbar">${[["inicio", "Inicio", "home"], ["partidos", "Partidos", "part"], ["temas", "Temas", "tema"], ["comparar", "Comparar", "cmp"]].map(([id, t, ic]) => `<button data-go="${id}" ${cur === id ? 'aria-current="page"' : ""}>${ico(ic)}${t}</button>`).join("")}<button class="t" data-go="test" ${cur === "test" ? 'aria-current="page"' : ""}>${ico("test")}Test</button></nav>
   </div></div>${S.dr ? drawer() : ""}${S.pal ? palette() : ""}${S.menu ? menuSheet() : ""}`;
 }
@@ -512,7 +552,7 @@ function debateCard() {
     <div style="padding:14px"><p class="dq">${esc(q.t)}</p>
     <div class="stack">${[5, 4, 3, 2, 1].map((v) => c[v] ? `<i class="c${v}" style="flex:${c[v]}" title="${LBL[v]}: ${c[v]}">${c[v]}</i>` : "").join("")}</div>
     <div class="stack-l"><span>A favor ${c[4] + c[5]}</span><span>Neutral ${c[3]}</span><span>En contra ${c[1] + c[2]}</span></div>
-    <div class="dgs">${grp([4, 5], "A favor", "f")}${grp([1, 2], "En contra", "a")}</div>
+    <details class="dgd"${matchMedia("(min-width: 900px)").matches ? " open" : ""}><summary>Ver qué partidos están a favor y en contra</summary><div class="dgs">${grp([4, 5], "A favor", "f")}${grp([1, 2], "En contra", "a")}</div></details>
     ${said.length ? `<div class="said"><span class="note">Se han pronunciado:</span>${said.map((x) => `<button class="pbb" data-go="politico" data-s="polid=${x.id}" title="${esc(x.name)}">${av(x, "xs")}</button>`).join("")}</div>` : ""}
     <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"><button class="chip" data-go="temas" data-s="area=${q.a};openQ=${q.id};tview=lista">Contexto y fuentes</button><span class="note" style="align-self:center">${t} candidaturas con postura</span></div></div></div>`;
 }
@@ -653,8 +693,7 @@ function inicio() {
       <button class="card gl" data-go="glosario" data-s="gq=${esc(g.t)}"><span class="eyebrow">Glosario · ${esc(g.t)}</span><span>${esc(g.d.length > 150 ? g.d.slice(0, 147) + "…" : g.d)}</span></button>
     </div>
   </div>
-  <div class="sech"><h2>Archivo de la campaña del 29N</h2></div>
-  <div class="grid g4 kpis arch">${[["debates", D.debates.lista.length, "debates y entrevistas", "deb"], ["programas", Object.keys(D.programas.pub).length, "programas electorales", "prog"], ["temas", D.qs.length, "promesas comparadas", "tema"], ["guia", CAL.length, "hitos del calendario", "cal"]].map(([v, n, t, ic]) => `<button class="card kpi" data-go="${v}">${ico(ic)}<b>${n}</b><span>${t}</span></button>`).join("")}</div>`;
+  <div class="arch2"><span class="eyebrow">Archivo de la campaña del 29N</span>${[["debates", `${D.debates.lista.length} debates y entrevistas`, "deb"], ["programas", `${Object.keys(D.programas.pub).length} programas`, "prog"], ["guia", "Calendario y guía para votar", "cal"]].map(([v, t, ic]) => `<button class="chip" data-go="${v}">${ico(ic)}${t}</button>`).join("")}</div>`;
 }
 // ---------- Partidos ----------
 function partidos() {
@@ -691,7 +730,7 @@ function ficha() {
   if (S.ptab === "deb") body = debs.length ? `<div class="dlist card">${debs.map((d) => debCard(d)).join("")}</div>` : '<p class="empty">Sin debates ni entrevistas registrados.</p>';
   if (S.ptab === "src") { const urls = {}; D.qs.forEach((q) => { const s = q.src[p.id]; if (s) (urls[s[0].split("#")[0]] ||= { t: s[1], n: 0 }).n++; });
     body = `${p.prog ? `<a class="card progc" href="${esc(p.prog.url)}" target="_blank" rel="noopener"><span class="pb" style="background:#0f1115">PDF</span><span><b>Programa electoral del 29N</b><span class="note" style="display:block">${esc(p.prog.t)}</span></span><span>↗</span></a>` : ""}<div class="card"><div class="ch"><h2>Documentos citados</h2><span class="note">${Object.keys(urls).length}</span></div>${Object.entries(urls).sort((a, b) => b[1].n - a[1].n).map(([u, o]) => `<a class="prop srow" href="${esc(u)}" target="_blank" rel="noopener"><span style="flex:1">${esc(o.t.replace(/, p\. \d+.*$/, ""))}</span><span class="badge">${o.n}</span></a>`).join("")}</div>`; }
-  return `<div class="hero" style="--pc:${p.color};color:${fg}"><button class="back" data-go="partidos" aria-label="Volver a partidos">←</button>${pb(p)}<div style="flex:1"><h1 style="color:inherit">${esc(p.name)}</h1><div style="opacity:.85">${esc(p.tag)}</div><div class="hero-m"><span>${esc(p.lead)}</span><span>${esc(p.sl)}</span><span>${c} posturas</span></div></div>
+  return `<div class="hero" style="--pc:${p.color};color:${fg}">${pb(p)}<div style="flex:1"><h1 style="color:inherit">${esc(p.name)}</h1><div style="opacity:.85">${esc(p.tag)}</div><div class="hero-m"><span>${esc(p.lead)}</span><span>${esc(p.sl)}</span><span>${c} posturas</span></div></div>
   <button class="chip" data-go="comparar" data-s="a=${p.id}">${ico("cmp")}Comparar</button></div>${tabsB("ptab", tabs)}${body}`;
 }
 // ---------- Políticos ----------
@@ -711,7 +750,7 @@ function politico() {
   const x = PLM[S.polid], P = PM[x.party], v = polVsParty(x), fg = P && lum(P.color) > .62 ? "#0f1115" : "#fff";
   const areas = [...new Set(Object.keys(x.pos).map((q) => QM[q]?.a).filter(Boolean))].map((a) => short(AM[a].n).toLowerCase());
   const others = D.pols.filter((y) => y.party === x.party && y.id !== x.id);
-  return `<div class="hero polh" style="--pc:${P ? P.color : "#333"};color:${fg}"><button class="back" data-go="politicos" aria-label="Volver a políticos">←</button>${av(x, "xl")}<div style="flex:1"><h1 style="color:inherit">${esc(x.name)}</h1><div style="opacity:.85">${esc(x.full)}</div><div class="hero-m"><span>${esc(x.pl)}</span><span>${Object.keys(x.pos).length} posturas públicas</span></div></div>
+  return `<div class="hero polh" style="--pc:${P ? P.color : "#333"};color:${fg}">${av(x, "xl")}<div style="flex:1"><h1 style="color:inherit">${esc(x.name)}</h1><div style="opacity:.85">${esc(x.full)}</div><div class="hero-m"><span>${esc(x.pl)}</span><span>${Object.keys(x.pos).length} posturas públicas</span></div></div>
   ${P ? `<button class="chip" data-go="ficha" data-s="pid=${P.id};ptab=res">Ficha de ${esc(P.ab)}</button>` : ""}</div>
   <div class="grid g2" style="margin-top:14px"><div class="grid" style="align-content:start">
     <div class="card" style="padding:14px 16px"><h2 style="margin-bottom:6px">Quién es</h2><p style="margin:0;color:var(--ink2)">${esc(x.role)}. ${P ? `Su partido, ${esc(P.name)} (${esc(P.tag.toLowerCase())}), concurre al 29N en ${esc(P.sl === "Estatal" ? "toda España" : P.sl)}. ` : ""}Se ha pronunciado en público sobre ${areas.length > 1 ? areas.slice(0, -1).join(", ") + " y " + areas.at(-1) : areas[0] || "pocos temas"}.</p>
@@ -867,6 +906,7 @@ function toTopState() { const sc = $(".scroll", app), b = $(".totop", app); if (
 app.addEventListener("click", (e) => {
   const t = e.target;
   const tt = t.closest(".totop"); if (tt) { $(".scroll", app).scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); return; }
+  if (t.closest("[data-back]")) return goBack();
   const mo = t.closest("[data-more]"); if (mo) { const k = mo.dataset.more; if (EXP.has(k)) EXP.delete(k); else EXP.add(k); return draw(); }
   if (t.matches("[data-close]")) { S.dr = null; S.pal = false; S.menu = false; return draw(); }
   const el = t.closest("[data-go],[data-s],[data-pal],[data-menu],[data-cell],[data-q],[data-qi],[data-swap]");
@@ -880,6 +920,7 @@ app.addEventListener("click", (e) => {
   if ("swap" in d) { [S.a, S.b] = [S.b, S.a]; return draw(); }
   const x = parseS(d.s);
   if (d.go) { if (x.a && x.a === S.b && !x.b) x.b = x.a === "pp" ? "psoe" : "pp"; return go(d.go, x); }
+  if (TABKEYS.some((k) => k in x && x[k] !== S[k])) push();
   S = { ...S, ...x }; draw();
 });
 app.addEventListener("change", (e) => { const k = e.target.dataset.bind; if (!k || e.target.tagName !== "SELECT") return; S[k] = e.target.value; draw(); });
@@ -887,6 +928,7 @@ app.addEventListener("input", (e) => { const k = e.target.dataset.bind; if (!k |
 addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); S.pal = true; S.palq = ""; draw(); }
   if (e.key === "Escape" && (S.pal || S.dr || S.menu)) { S.pal = false; S.dr = null; S.menu = false; draw(); }
+  if (e.altKey && e.key === "ArrowLeft") goBack();
   if (e.key === "Enter" && S.pal) { const b = $(".pal li button", app); if (b) b.click(); }
 });
 document.querySelector(".seg").addEventListener("click", (e) => {
@@ -894,7 +936,7 @@ document.querySelector(".seg").addEventListener("click", (e) => {
   document.querySelectorAll(".mk .seg button").forEach((x) => x.setAttribute("aria-pressed", x === b));
   app.classList.toggle("m", b.dataset.dev === "m");
 });
-try { history.replaceState({ S }, ""); } catch (_) {}
+
 draw();
 }
 </script>
