@@ -262,6 +262,7 @@ function initHome() {
   $("#setup").addEventListener("submit", startTest);
   bindHeroModes();
   initCmpx();
+  { const v = $("#vota29"); if (v && new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid" }).format(new Date()) > "2026-11-29") v.hidden = true; } // «Vota el 29N» solo hasta el día de la votación
   const fc = $("#facts-cand"); if (fc) fc.textContent = PIDS.length; // la cifra de candidaturas sale de los datos, no del texto fijo
   $("#start-btn").disabled = false;
   fillSetup(); renderHeroCta();
