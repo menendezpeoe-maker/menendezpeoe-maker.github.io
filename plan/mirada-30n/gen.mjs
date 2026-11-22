@@ -12,6 +12,7 @@ const { RES2023 } = await import(SRC + "resultados2023.src.mjs");
 const { SEATS, SEATS_SOURCE, SENATE } = await import(SRC + "escanos.src.mjs");
 const { GLOSARIO } = await import(SRC + "glosario.src.mjs");
 const { TOPICS } = await import(SRC + "temas.src.mjs");
+let EXPL = null; try { ({ EXPLICADORES: EXPL } = await import(SRC + "explicadores.src.mjs")); } catch (_) {} // web real: src/explicadores.src.mjs (22 nov)
 const FOTOS = JSON.parse(readFileSync("/home/user/propuesta-mirada/fotos.json", "utf8"));
 const regName = {}, provName = {};
 P.regions.forEach((r) => { regName[r.id] = r.name; r.provs.forEach((p) => { provName[p.id] = p.name; }); });
@@ -26,7 +27,7 @@ const pols = POL.politicians.map((x) => ({ id: x.id, name: x.name, full: x.full,
 const DATA = {
   parties, areas: Q.areas.map((a) => ({ id: a.id, letter: a.letter, n: a.name, i: a.intro })), dims: Q.dims, qs, regions: P.regions, updated: Q.updated,
   pols, cand: CAND, debates: DEBATES, votar: VOTAR, programas: { pub: PROGRAMAS.publicados, sin: PROGRAMAS.sinLista, chk: PROGRAMAS.comprobado },
-  res23: RES2023, seats: SEATS, seatsSrc: SEATS_SOURCE, senate: SENATE, glos: GLOSARIO, topics: TOPICS,
+  res23: RES2023, seats: SEATS, seatsSrc: SEATS_SOURCE, senate: SENATE, glos: GLOSARIO, topics: TOPICS, ...(EXPL ? { expl: EXPL } : {}),
 };
 const tpl = readFileSync("/home/user/propuesta-mirada/app.html", "utf8");
 const out = tpl.replace("/*DATA*/null", JSON.stringify(DATA).replace(/</g, "\\u003c"));
