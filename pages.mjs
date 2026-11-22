@@ -10,6 +10,7 @@ import { RES2023 } from "./src/resultados2023.src.mjs";
 const TT_STEPS = [[/ · Test 29N$/, ""], [/, tema a tema$/, ""], [/(cada partido) el 29N$/, "$1"], [/ para el 29N: /, " 29N: "], [/ 29N: ¿con qué partido coincides\?$/, ": ¿con qué partido coincides?"], [/: qué piensa cada partido$/, ": qué dice cada partido", true]];  // true: solo si así cabe
 const tt = (s) => { for (const [re, to, onlyIfFits] of TT_STEPS) { if (s.length <= 60) break; const t = s.replace(re, to); if (!onlyIfFits || t.length <= 60) s = t; } return s; };
 import { GLOSARIO } from "./src/glosario.src.mjs";
+import { EXPLICADORES } from "./src/explicadores.src.mjs";
 import { TOPICS } from "./src/temas.src.mjs";
 import { PROGRAMAS } from "./src/programas.src.mjs";
 import { DEBATES } from "./src/debates.src.mjs";
@@ -93,7 +94,7 @@ export function buildPages({ OUT, SITE, head, statsJs, arribaJs, owner }) {
 </div></header>`;
   const footer = `<footer class="site-foot"><div class="wrap foot-row">
   <p><b>Test 29N</b> · Herramienta independiente y orientativa, sin vínculo con ningún partido. No es una recomendación de voto.</p>
-  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/debates/">Debates</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
+  <p class="muted"><a href="/partidos/">Partidos</a> · <a href="/programas/">Programas</a> · <a href="/debates/">Debates</a> · <a href="/comparar/">Comparar</a> · <a href="/temas/">Temas</a> · <a href="/tests/">Tests por tema</a> · <a href="/preguntas/">Preguntas</a> · <a href="/votar/">Cómo votar</a> · <a href="/calendario/">Calendario</a> · <a href="/provincias/">Provincias</a> · <a href="/escanos/">Escaños</a> · <a href="/glosario/">Glosario</a> · <a href="/explicado/">Explicado en 1 minuto</a> · <a href="/metodologia/">Metodología</a> · <a href="/sobre/">Sobre el proyecto</a> · <a href="/prensa/">Prensa</a> · Datos actualizados el ${esc(updated)}</p>
 </div></footer>
 ${statsJs ? `<script src="/assets/stats.js?v=${statsJs}" defer></script>` : ""}
 <script src="/assets/arriba.js?v=${arribaJs}" defer></script>`;
@@ -624,8 +625,39 @@ ${cta("Haz el test")}`
     body: `<header class="sp-head"><p class="label">Elecciones generales del 29 de noviembre de 2026</p><h1 class="h1">Glosario electoral</h1>
   <p class="lede">Los términos que más se oyen en campaña, explicados en pocas palabras y con el artículo de la ley que los regula.</p></header>
 <dl class="gloss">${GLOSARIO.map((g) => `<div id="${slug(g.t)}"><dt>${esc(g.t)}</dt><dd>${esc(g.d)} <span class="small muted">(<a href="${g.f[0]}" target="_blank" rel="noopener noreferrer">${esc(g.f[1])}</a>)</span></dd></div>`).join("")}</dl>
-<p class="small muted">Más información práctica en <a href="/votar/">Cómo votar el 29N</a>, el <a href="/calendario/">calendario electoral</a> y el <a href="/escanos/">simulador de escaños</a>.</p>
+<p class="small muted">Más información práctica en <a href="/votar/">Cómo votar el 29N</a>, el <a href="/calendario/">calendario electoral</a> y el <a href="/escanos/">simulador de escaños</a>. Y cómo funcionan la investidura, la moción de censura o las leyes en <a href="/explicado/">Explicado en 1 minuto</a>.</p>
 ${cta("Pon a prueba tus ideas")}`
+  });
+
+  // ── Explicado en 1 minuto: cómo funcionan las instituciones, paso a paso y con el artículo que lo regula (src/explicadores.src.mjs)
+  const exSrc = (src) => src.map(([l, u]) => `<a href="${u}" target="_blank" rel="noopener noreferrer">${esc(l)}</a>`).join(" · ");
+  page({
+    path: "/explicado/",
+    title: "Explicado en 1 minuto: investidura, moción de censura, D'Hondt… · Test 29N",
+    desc: "Cómo funcionan la investidura, la moción de censura, la cuestión de confianza, la ley D'Hondt, las leyes, los decretos-ley y los presupuestos, paso a paso y con su artículo.",
+    crumbs: [{ name: "Explicado en 1 minuto", url: `${SITE}explicado/` }],
+    body: `<header class="sp-head"><p class="label">Política española, sin tecnicismos</p><h1 class="h1">Explicado en 1 minuto</h1>
+  <p class="lede">Lo que pasa después de votar: cómo se elige al presidente, cómo se hace una ley o cuándo puede haber elecciones anticipadas. Paso a paso y con el artículo de la ley que lo regula.</p></header>
+<ul class="sp-cards ex-cards">${EXPLICADORES.map(([id, t, sub, , , k]) => `<li><a href="/explicado/${id}/"><span><b>${esc(t)}</b><span class="small muted">${esc(sub)} · ${esc(k)}</span></span></a></li>`).join("")}</ul>
+<p class="small muted">Más términos en el <a href="/glosario/">glosario electoral</a>.</p>
+${cta("Pon a prueba tus ideas")}`
+  });
+  EXPLICADORES.forEach(([id, t, sub, , steps, k, src], i) => {
+    const nx = EXPLICADORES[(i + 1) % EXPLICADORES.length];
+    page({
+      path: `/explicado/${id}/`,
+      title: /^Cómo/.test(t) ? `${t}, explicado en 1 minuto · Test 29N` : `${t}: cómo funciona, explicado en 1 minuto · Test 29N`,
+      desc: `${sub}: ${steps[0]}`.slice(0, 158),
+      crumbs: [{ name: "Explicado en 1 minuto", url: `${SITE}explicado/` }, { name: t, url: `${SITE}explicado/${id}/` }],
+      ld: { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: /^Cómo/.test(t) ? `¿${t}?` : `${t}: ¿cómo funciona?`, acceptedAnswer: { "@type": "Answer", text: steps.join(" ") } }] },
+      body: `<header class="sp-head"><p class="label"><a href="/explicado/">Explicado en 1 minuto</a> · ${i + 1} de ${EXPLICADORES.length}</p><h1 class="h1">${esc(t)}</h1>
+  <p class="lede">${esc(sub)}.</p></header>
+<p class="ex-key"><b>${esc(k)}</b></p>
+<ol class="ex-steps">${steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>
+<p class="small muted">Fuente: ${exSrc(src)}.${id === "ley-dhondt" ? ' Pruébalo con el <a href="/escanos/">simulador de escaños</a>.' : ""}</p>
+<p><a class="btn" href="/explicado/${nx[0]}/">Siguiente: ${esc(nx[1])} →</a></p>
+${cta("Pon a prueba tus ideas")}`
+    });
   });
 
   // ── Índices
@@ -638,6 +670,16 @@ ${cta("Pon a prueba tus ideas")}`
   <p class="lede">Qué piensa cada candidatura sobre las ${B.questions.length} cuestiones del Test 29N, con sus propuestas destacadas y las fuentes de sus posturas. ¿Han publicado ya su programa? Consulta los <a href="/programas/">programas electorales del 29N</a>.</p></header>
 ${cta("¿Con cuál coincides más?")}
 <ul class="sp-cards">${live.map((pid) => { const p = P[pid]; return `<li><a href="/partidos/${pid}/">${logo(pid)}<span><b>${esc(p.name)}</b><span class="small muted">${esc(p.tag)} · ${esc(scopeText(p))}</span></span></a></li>`; }).join("")}</ul>
+${(() => { // Candidaturas proclamadas en el BOE que no están en el test (sin posturas verificadas): agrupadas por siglas
+  const key = (c) => (c.match(/\(([^()]+)\)\s*$/)?.[1] || c).normalize("NFD").replace(/[\u0300-\u036f.]/g, "").toUpperCase().trim();
+  const g = new Map(); Object.entries(CANDS.provs).forEach(([prov, l]) => l.filter((c) => !c.pid).forEach((c) => { const k = key(c.c); if (!g.has(k)) g.set(k, { n: c.c, l: [] }); g.get(k).l.push({ prov, cab: c.cab }); }));
+  const o = [...g.values()].sort((a, b) => b.l.length - a.l.length || a.n.localeCompare(b.n, "es"));
+  if (!o.length) return "";
+  const nm = (n) => n.replace(/\s*\([^()]+\)\s*$/, "").toLowerCase().replace(/(^|[\s-])(\p{L})/gu, (m, a, b) => a + b.toUpperCase()).replace(/\b(De|Del|La|Las|Los|El|Y|Para|En|Al|Con)\b/g, (w) => w.toLowerCase());
+  const sig = (n) => n.match(/\(([^()]+)\)\s*$/)?.[1] || "";
+  return `<section class="sp-sec" aria-labelledby="otras-h"><h2 class="h2" id="otras-h">Otras ${o.length} candidaturas proclamadas</h2>
+<p class="small muted">También se presentan en alguna provincia, según la ${`<a href="${CANDS.fuente.url}" target="_blank" rel="noopener noreferrer">proclamación del BOE del ${fmtDate(CANDS.fuente.fecha)}</a>`}, pero no están en el test porque no hay posturas suyas verificables en las 107 preguntas. Se listan con su cabeza de lista para que puedas conocerlas igual.</p>
+<ul class="otras">${o.map((x) => `<li><b>${esc(nm(x.n))}</b>${sig(x.n) && sig(x.n).toLowerCase() !== nm(x.n).toLowerCase() ? ` <span class="small muted">(${esc(sig(x.n))})</span>` : ""}<span class="small">${x.l.length === 1 ? "1 provincia" : `${x.l.length} provincias`}: ${x.l.map((y) => `<a href="/provincias/${y.prov}/">${esc(provName[y.prov])}</a> <span class="muted">· ${esc(y.cab)}</span>`).join("; ")}</span></li>`).join("")}</ul></section>`; })()}
 ${PD.order.some((pid) => P[pid].out) ? `<p class="small muted">Han anunciado que no se presentan: ${PD.order.filter((pid) => P[pid].out).map((pid) => `<a href="/partidos/${pid}/">${esc(P[pid].name)}</a>`).join(", ")}.</p>` : ""}`
   });
   // ── Debates y entrevistas del 29N: agenda (por fecha) y archivo de emitidos (el más reciente primero), con fuente (src/debates.src.mjs)

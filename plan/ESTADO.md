@@ -1,5 +1,13 @@
 # Estado del plan (lo más reciente arriba)
 
+## 22 nov · Revisión final antes de la congelación (titular: «hazlo tú sin mi permiso»)
+- **Portada:** bloque «Vota el domingo 29: lo esencial» (horario 9–20 h, LOREG art. 84; documento con foto, vale caducado según la JEC; consulta de mesa del INE y 900 343 232; voto por correo hasta el 25 nov y sin voto en persona si se pidió). Solo frases ya verificadas de src/votar.src.mjs. Se oculta solo desde el 30 (assets/papeleta.js).
+- **/partidos/:** nueva sección «Otras 19 candidaturas proclamadas» (las listas del BOE sin `pid`, agrupadas por siglas, con provincias y cabeza de lista). No entran en el test: no hay posturas verificables suyas.
+- **/explicado/** + 8 páginas (investidura, moción de censura, cuestión de confianza, ley D'Hondt, cómo se hace una ley, decreto-ley, presupuestos, adelanto electoral), con pasos, dato clave y artículo de la CE o de la LOREG (src/explicadores.src.mjs). FAQPage en datos estructurados. Enlazadas desde el pie, la portada («Para decidir con información») y /glosario/. qa/growth: sitemap +9.
+- **Posturas:** revisado el hueco. Los partidos con escaños tienen 0–7 «sin postura» (CC-PC 26); el grueso de las 1.002 está en candidaturas pequeñas cuyo programa no trata esos temas (IE 69, PACMA 64, PH 59, Soria 82…). Ya se revisaron con su programa del 29N («revisadas sin pasaje»): no se rellenan sin fuente.
+- **P1 (plan/PLAN.md):** añadidos resultados por provincia, «Qué viene ahora», quitar el bloque de votar y formato para el rediseño; aviso de no desactivar las tareas del cambio de dominio.
+- Secciones tocadas: portada, /partidos/, /glosario/, pie, sitemap, /explicado/.
+
 ## 21 nov 2026 (21:17) · Revisar posturas con el programa del 29N: bloque 13 (segunda pasada de EH Bildu y PNV)
 - **Programas:** los dos PDF oficiales se descargan desde la nube (Bildu «Posible egin», 30 págs.; PNV 43 págs.); página citada = página del PDF. Recorridas las 34 estimadas y 5 «sin postura» de Bildu y las 44 estimadas, 8 «sin postura» y 5 con otro programa del PNV, por palabras clave y leyendo el pasaje entero. Ninguno está en la regla 8.
 - **EH Bildu (39 → 41):** estimadas con enlace C04 2~ (p. 23, carácter plurinacional del Estado y derecho a decidir, no un Estado federal) y L07 3~ (p. 21, proteger a los menores en entornos digitales con diseño ético, sin prohibir el acceso). Sin cambios de valor.

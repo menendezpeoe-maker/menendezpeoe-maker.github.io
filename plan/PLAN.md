@@ -325,4 +325,9 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
   4. Todo el año: test general al día y un «modo aula» para profesores.
   5. Decisión pendiente del titular: un dominio más general con redirección desde test29n.es.
   Nunca convertir la web en un medio de noticias u opinión.
-- Desactiva cualquier tarea programada de este plan que siga activa.
+- **Añadido el 22 nov (titular: «completa todo lo que falte»):**
+  - Resultados del 29N por provincia, con el mismo formato que `src/resultados2023.src.mjs` (nuevo `src/resultados2029.src.mjs`, solo datos oficiales del Ministerio del Interior, con su enlace y la fecha del dato; el escrutinio general es del 4 al 7 de diciembre: indica que son provisionales). En cada /provincias/<id>/, los escaños del 29N junto a los de 2023.
+  - Bloque «Qué viene ahora» en la portada y en /calendario/: escrutinio general (4–7 dic), constitución de las Cortes (23 dic, 10:00, Real Decreto 806/2026) e investidura (CE art. 99), enlazando /explicado/investidura/.
+  - El bloque «Vota el domingo 29» de la portada se oculta solo desde el 30 (assets/papeleta.js); cuando haya resultados, quítalo del HTML.
+  - Deja los resultados también en un formato que pueda leer el rediseño de Mirada Política (`plan/mirada-30n/gen.mjs` los carga como `D.res29`: { parties: [{ k, l, c, e, v }] } por siglas, escaños y votos).
+- Desactiva cualquier tarea programada de este plan que siga activa. **No desactives** «Aviso previo cambio de dominio» ni «Cambio de dominio a miradapolitica.es» (30 nov, 20:00 y 22:00): no son de este plan y están autorizadas por el titular.

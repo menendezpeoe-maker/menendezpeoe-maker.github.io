@@ -1302,3 +1302,28 @@ details.sp-area[open] { border-color: var(--ink); }
 .tm-group .tm-name { font-size: clamp(17px, 2.2vw, 21px); }
 .sum-body .tm-group .tm-pct { font-size: clamp(30px, 4vw, 38px); flex: none; }
 .tm-why { margin: 0 0 10px; }
+
+/* Vota el 29N: lo esencial (se oculta solo a partir del 30 de noviembre) */
+.vota-card { background: var(--sheet); border: 1px solid var(--rule); border-left: 6px solid var(--mark); border-radius: var(--r3, 16px); padding: 20px 22px; display: grid; gap: 16px; }
+.vota-head { display: flex; gap: 16px; align-items: center; }
+.vota-head .h2 { margin: 0 0 4px; }
+.vota-head p { margin: 0; }
+.vota-date { flex: none; width: 64px; height: 64px; border-radius: 14px; background: #111318; color: #FFFFFF; box-shadow: inset 0 0 0 1px var(--rule); display: grid; place-items: center; align-content: center; line-height: 1; margin: 0; }
+.vota-date b { font-size: 28px; }
+.vota-date span { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #F6DD2F; margin-top: 2px; }
+.vota-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.vota-list li { display: grid; gap: 4px; align-content: start; padding: 12px 14px; border-radius: 12px; background: var(--sheet-2); font-size: 14px; line-height: 1.45; }
+.vota-list b { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
+@media (max-width: 900px) { .vota-list { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .vota-list { grid-template-columns: 1fr; } .vota-card { padding: 16px; } .vota-date { width: 54px; height: 54px; } .vota-date b { font-size: 24px; } }
+/* /partidos/: candidaturas proclamadas que no están en el test */
+.otras { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.otras li { display: grid; gap: 3px; padding: 10px 14px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2, 10px); }
+.otras li > .small { color: var(--ink-2); line-height: 1.5; }
+/* Explicado en 1 minuto */
+.ex-key { margin: 0 0 14px; padding: 14px 16px; border-radius: 12px; background: #111318; color: #FFFFFF; box-shadow: inset 0 0 0 1px var(--rule); font-size: 16px; }
+.ex-key b { color: #F6DD2F; }
+.ex-steps { list-style: none; counter-reset: ex; margin: 0 0 16px; padding: 0; display: grid; gap: 10px; }
+.ex-steps li { counter-increment: ex; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; padding: 14px 16px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--r2, 10px); font-size: 16px; line-height: 1.55; }
+.ex-steps li::before { content: counter(ex); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--mark); color: var(--mark-ink, #111318); font-weight: 800; font-size: 14px; }
+.vota-card a, .otras a { color: var(--ink); text-decoration-thickness: 2px; text-decoration-color: var(--mark); text-underline-offset: 3px; }
