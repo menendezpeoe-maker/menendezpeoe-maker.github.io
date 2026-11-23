@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 23 nov 2026 (09:47) · Revisión diaria de programas y debates
+- **Programas (a):** ninguno nuevo; siguen sin programa del 29N UPN (concurre con el PP), CHA (solo el autonómico de febrero), Drago, MES y PCTE (webs sin enlaces nuevos o inaccesibles desde la nube; sin resultados en prensa).
+- **Posturas (b) y barrido n.º 2 (c):** cola terminada el 21 nov; barrido ya hecho.
+- **Debates (d):** nueva ronda de entrevistas de Informativos Telecinco (Carlos Franganillo), con el mismo criterio para todos sus invitados: Pedro Sánchez (16 nov) e Irene Montero (18 nov) pasan como «emitido» con la entrevista completa en telecinco.es; Alberto Núñez Feijóo, «confirmado» hoy a las 21:00 (nota de la cadena del 21 nov). Sin cambios comprobables en el resto (Academia 26 nov sigue sin anuncio, Santa Cruz de Tenerife sin nota de RTVC, Las Palmas sin duración legible). Cola en plan/DEBATES.md.
+- **Secciones:** solo /debates/ (y sitemap). Último día de publicación general: del 24 al 27 solo fichas de /debates/.
+
 ## 22 nov · Revisión final antes de la congelación (titular: «hazlo tú sin mi permiso»)
 - **Portada:** bloque «Vota el domingo 29: lo esencial» (horario 9–20 h, LOREG art. 84; documento con foto, vale caducado según la JEC; consulta de mesa del INE y 900 343 232; voto por correo hasta el 25 nov y sin voto en persona si se pidió). Solo frases ya verificadas de src/votar.src.mjs. Se oculta solo desde el 30 (assets/papeleta.js).
 - **/partidos/:** nueva sección «Otras 19 candidaturas proclamadas» (las listas del BOE sin `pid`, agrupadas por siglas, con provincias y cabeza de lista). No entran en el test: no hay posturas verificables suyas.
