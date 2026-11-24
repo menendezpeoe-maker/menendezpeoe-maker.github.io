@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 24 nov 2026 (12:30) · Revisión de contenido desfasado (titular: «si hay algo antiguo actualízalo»)
+- **Publicado (solo /debates/, excepción de la congelación):** las 11 fichas con fecha pasada que no son «emitido» (sin grabación localizada) dejan de salir en «Próximos» y pasan a un bloque propio «Fecha pasada, sin grabación todavía», entre «Próximos» y «Ya emitidos» (pages.mjs; qa/debates.mjs lo comprueba). El «laSexta Debate» del 9 nov pasa a tener fecha (2026-11-09) para caer en ese bloque. Ningún estado cambia a «emitido»: las grabaciones siguen sin localizarse (cadenaser.com, AGalega y YouTube desde la nube), tarea de la revisión diaria.
+- **Resto de la web (no publicable hasta el 30N):** revisado el texto de las 245 páginas; sin errores graves de datos. Lo desfasado queda anotado en PLAN.md › P1 («Añadido el 24 nov»): plazos vencidos de /calendario/ y /votar/, línea del voto por correo en portada, programas «Aún no publicado» de CHA, Drago, JMM, MÉS y PAV, y textos en futuro sobre el 29N.
+- **Pruebas:** `debates` OK; `todas` 27/28, solo `rendimiento` local (conocido, igual que la versión publicada). dist/ solo difiere de main en /debates/.
+
 ## 24 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
 - **Debates (d):** el debate a ocho de RTVE (23 nov) pasa a «emitido» con el vídeo completo de RTVE Play (1 h 34 min) y los temas según la crónica de RTVE; la entrevista de Feijóo en Informativos Telecinco (23 nov) pasa a «emitido» con la entrevista completa de Mediaset Infinity (36 min) y los temas según la cadena. Nueva ficha «confirmado»: debate RTVC–RTVE de Santa Cruz de Tenerife (hoy 24), con participantes y bloques de las notas de RTVC (23 y 24 nov); sin hora, porque RTVC da «21:00» sin decir si es hora canaria (anotado en la cola).
 - **Sin cambios comprobables:** Radio Galega (23 nov), TVG y SER Andalucía (webs con 403 a la nube), Las Palmas (YouTube 429, duración ilegible), Academia 26 nov (sigue «propuesta»).

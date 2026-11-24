@@ -38,7 +38,7 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const info = await page.evaluate(() => {
     const sec = (id) => [...document.querySelectorAll(`[aria-labelledby="${id}"] .db-item`)];
     const fecha = (li) => li.id;
-    return { next: sec("h-db-next").map(fecha), past: sec("h-db-past").map(fecha), ov: document.documentElement.scrollWidth > innerWidth + 1,
+    return { next: sec("h-db-next").map(fecha), held: sec("h-db-held").map(fecha), past: sec("h-db-past").map(fecha), ov: document.documentElement.scrollWidth > innerWidth + 1,
       cmp: [...document.querySelectorAll(".db-btns a.db-cmp")].map((a) => ({ href: a.getAttribute("href"), h: Math.round(a.getBoundingClientRect().height), tg: a.target })),
       parts: [...document.querySelectorAll(".db-party")].map((a) => ({ href: a.getAttribute("href"), h: Math.round(a.getBoundingClientRect().height) })),
       btns: [...document.querySelectorAll(".db-btns a:not(.db-cmp)")].map((a) => ({ t: a.firstChild.textContent.trim(), tg: a.target, rel: a.rel, h: Math.round(a.getBoundingClientRect().height) })),
@@ -53,12 +53,12 @@ for (const [w, h] of [[360, 780], [390, 844], [1280, 900]]) {
   const cmpK = (x, y) => { for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return x[i] - y[i]; return 0; };
   const dateOk = (ids, past) => ids.every((id, i, a) => !i || (past ? byId[a[i - 1]].fecha >= byId[id].fecha : (byId[a[i - 1]].fecha || "9999") <= (byId[id].fecha || "9999")));
   const impOk = (ids, past) => ids.every((id, i, a) => { if (!i) return true; const c = cmpK(imp(byId[a[i - 1]]), imp(byId[id])); return c < 0 || (c === 0 && dateOk([a[i - 1], id], past)); });
-  ok(info.next.length + info.past.length === L.length && info.past.length === em.length && impOk(info.next) && impOk(info.past, true), `${w}: por defecto, por importancia: próximos (${info.next.length}) y emitidos (${info.past.length})`);
+  ok(info.next.length + info.held.length + info.past.length === L.length && info.past.length === em.length && impOk(info.next) && impOk(info.held, true) && impOk(info.past, true) && info.held.every((id) => byId[id].fecha < today) && info.next.every((id) => !byId[id].fecha || byId[id].fecha >= today), `${w}: por defecto, por importancia: próximos (${info.next.length}), celebrados sin grabación (${info.held.length}) y emitidos (${info.past.length})`);
   const tools = await page.evaluate(() => { const b = document.getElementById("db-tools"); return !!b && !b.hidden && !!document.querySelector("#db-orden"); });
   ok(tools, `${w}: buscador visible y criterio del orden explicado`);
   await page.selectOption("#db-ord", "fecha");
-  const byDate = await page.evaluate(() => ["h-db-next", "h-db-past"].map((id) => [...document.querySelectorAll(`[aria-labelledby="${id}"] .db-item`)].map((li) => li.id)));
-  ok(dateOk(byDate[0]) && dateOk(byDate[1], true) && byDate[0].length + byDate[1].length === L.length, `${w}: «Por fecha»: próximos del más cercano y emitidos del más reciente`);
+  const byDate = await page.evaluate(() => ["h-db-next", "h-db-held", "h-db-past"].map((id) => [...document.querySelectorAll(`[aria-labelledby="${id}"] .db-item`)].map((li) => li.id)));
+  ok(dateOk(byDate[0]) && dateOk(byDate[1], true) && dateOk(byDate[2], true) && byDate[0].length + byDate[1].length + byDate[2].length === L.length, `${w}: «Por fecha»: próximos del más cercano y emitidos del más reciente`);
   // Buscador: sin acentos ni mayúsculas, varias palabras; borrar lo deja todo como estaba
   const probe = L.find((d) => d.partidos?.length) , word = probe.medio.split(/\s+/)[0];
   await page.fill("#db-q", word.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""));

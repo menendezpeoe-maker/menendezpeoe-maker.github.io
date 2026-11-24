@@ -330,4 +330,9 @@ Objetivo del titular: que Test 29N sea la web más completa y la primera en esta
   - Bloque «Qué viene ahora» en la portada y en /calendario/: escrutinio general (4–7 dic), constitución de las Cortes (23 dic, 10:00, Real Decreto 806/2026) e investidura (CE art. 99), enlazando /explicado/investidura/.
   - El bloque «Vota el domingo 29» de la portada se oculta solo desde el 30 (assets/papeleta.js); cuando haya resultados, quítalo del HTML.
   - Deja los resultados también en un formato que pueda leer el rediseño de Mirada Política (`plan/mirada-30n/gen.mjs` los carga como `D.res29`: { parties: [{ k, l, c, e, v }] } por siglas, escaños y votos).
+- **Añadido el 24 nov (revisión de contenido desfasado; no se pudo publicar por la congelación):**
+  - /calendario/ y /votar/: los plazos ya vencidos (voto por correo hasta el 19 nov y entrega hasta el 25, CERA, braille, tarjeta censal 2–10 nov…) siguen redactados como instrucciones; márcalos como pasados o reescríbelos en pasado, y sustituye el bloque por «Qué viene ahora».
+  - Portada: la línea «Entrégalo en Correos como muy tarde el 25 de noviembre» del bloque de voto por correo queda vencida desde el 26 (ya se oculta el 30 con «Vota el domingo 29»; quítala del HTML).
+  - /programas/ y fichas de CHA, Drago, JMM, MÉS y PAV: «Aún no publicado (comprobado el 21 de noviembre de 2026)». Comprueba una última vez si publicaron programa; si no, cambia el texto a «No publicó programa para el 29N (comprobado el …)».
+  - Textos de portada, /calendario/, /prensa/ y /sobre/ que hablan del 29N en futuro («Las convoca…», «La campaña va del 13 al 27»): pásalos a pasado con los resultados.
 - Desactiva cualquier tarea programada de este plan que siga activa. **No desactives** «Aviso previo cambio de dominio» ni «Cambio de dominio a miradapolitica.es» (30 nov, 20:00 y 22:00): no son de este plan y están autorizadas por el titular.
