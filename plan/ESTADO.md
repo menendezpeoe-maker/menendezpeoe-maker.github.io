@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 24 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
+- **Debates (d):** el debate a ocho de RTVE (23 nov) pasa a «emitido» con el vídeo completo de RTVE Play (1 h 34 min) y los temas según la crónica de RTVE; la entrevista de Feijóo en Informativos Telecinco (23 nov) pasa a «emitido» con la entrevista completa de Mediaset Infinity (36 min) y los temas según la cadena. Nueva ficha «confirmado»: debate RTVC–RTVE de Santa Cruz de Tenerife (hoy 24), con participantes y bloques de las notas de RTVC (23 y 24 nov); sin hora, porque RTVC da «21:00» sin decir si es hora canaria (anotado en la cola).
+- **Sin cambios comprobables:** Radio Galega (23 nov), TVG y SER Andalucía (webs con 403 a la nube), Las Palmas (YouTube 429, duración ilegible), Academia 26 nov (sigue «propuesta»).
+- **Secciones:** solo /debates/ y sitemap (git status en main: debates/index.html y sitemap.xml). Pruebas: qa/debates, qa/growth y qa/barrido con código 0; sin términos privados en dist/.
+
 ## 23 nov 2026 (09:47) · Revisión diaria de programas y debates
 - **Programas (a):** ninguno nuevo; siguen sin programa del 29N UPN (concurre con el PP), CHA (solo el autonómico de febrero), Drago, MES y PCTE (webs sin enlaces nuevos o inaccesibles desde la nube; sin resultados en prensa).
 - **Posturas (b) y barrido n.º 2 (c):** cola terminada el 21 nov; barrido ya hecho.
