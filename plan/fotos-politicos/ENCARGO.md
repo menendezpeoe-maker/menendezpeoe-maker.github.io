@@ -6,8 +6,8 @@
 
 «Quién es quién» de Mirada Política recoge 60 destacados y las 533 cabezas de lista al Congreso del 29N (BOE-A-2026-23103). Los destacados son el Gobierno completo, los 19 presidentes autonómicos y los líderes y candidatos.
 
-- **Ya tienen foto:** los 60 destacados y 107 cabezas de lista. Todas vienen de Wikimedia Commons con licencia libre, y he comprobado el autor y la licencia de cada una.
-- **Faltan:** 426 cabezas de lista. Están en `faltan-fotos.csv`, ordenadas por partido: primero los que tienen grupo en el Congreso y después el resto.
+- **Ya tienen foto:** los 60 destacados y 108 cabezas de lista. Todas vienen de Wikimedia Commons con licencia libre, y he comprobado el autor y la licencia de cada una.
+- **Faltan:** 425 cabezas de lista. Están en `faltan-fotos.csv`, ordenadas por partido: primero los que tienen grupo en el Congreso y después el resto.
 - **Mejorar (`mejorar-fotos.csv`):** 4 cabezas de lista tienen una foto válida pero floja (de grupo, con mascarilla o muy lejana). Si encuentras un retrato mejor, sustitúyela.
 
 ## Por qué te toca a ti
