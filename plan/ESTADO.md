@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 26 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
+- **Debates (d):** el debate de COPE sobre vivienda (25 nov) pasa a «emitido» con participantes, crónica y pódcast completo de la cadena (45 min). El debate a cuatro de la Academia (Sánchez, Feijóo, Abascal y Colau) pasa a «confirmado» para hoy, 26 nov, a las 22:00, con cadenas, lugar, bloques y moderadora según la rueda de prensa de la Academia (25 nov).
+- **Sin cambios comprobables:** Las Palmas y Tenerife (YouTube 429), SER y TVG (403), entrevistas de Herrera en COPE (criterio común pendiente). Sin debates nuevos localizados del 25 nov.
+- **Secciones:** solo /debates/ (y sitemap). Pruebas: qa/debates, qa/growth y qa/barrido con código 0; sin términos privados en dist/.
+
 ## 25 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
 - **Debates (d):** el «Debate 24N» de À Punt pasa a «emitido» con el especial completo de la cadena (1 h 47 min; debate de 90 min), participantes reales según la crónica (Hoyo, Muñoz, Gil Lázaro e Ibáñez, por Valencia) y temas; título corregido (no fueron todos cabezas de lista). Santa Cruz de Tenerife: RTVC confirma que se celebró (unos 100 min); sigue sin «emitido» porque no se puede leer la duración del vídeo de YouTube desde la nube (cola).
 - **Sin cambios comprobables:** Academia 26 nov (sin anuncio), COPE 25 nov (sin participantes), Las Palmas (YouTube 429), SER y TVG (403). Entrevistas de Herrera en COPE (Sémper, Cuerpo, Bustinduy, Ayuso) a la cola: criterio común antes de añadirlas.
