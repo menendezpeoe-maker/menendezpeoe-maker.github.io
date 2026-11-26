@@ -9,6 +9,7 @@ Acuerdo del titular (13 nov 2026): Codex y Claude se reparten el trabajo y todo 
 Formato: `- [pendiente|aplicado DD nov|descartado DD nov: motivo] Fecha · candidatura o sección · hallazgo · fuente`
 
 ## Pendientes
+- [pendiente] 26 nov · Quién es quién (rediseño Mirada Política) · fotos de 426 cabezas de lista del 29N y 4 a mejorar · encargo en plan/fotos-politicos/ENCARGO.md (entrega en la rama codex/fotos-politicos)
 
 ## Hechos
 - [aplicado 16 nov (noche): `build.mjs` calcula la fecha de los datos con un resumen de lo publicado (`src/datos-fecha.json`); comprobado el 17 nov en la web: /datos/ dice «actualizados el 16 de noviembre»] 16 nov · /datos/ y data/*.json · «Datos actualizados el 13 de noviembre» aunque los datos cambiaron el 15 y 16: `UPDATED` está fijo en build.mjs:10. Arreglo: calcularlo como la fecha más reciente de src/lastmod.json (o la del día del build), sin tocar cálculos. La cifra de posturas con fuente ya coincide en /datos/, /metodologia/ y /prensa/ (1.347 = 1.200 + 147, comprobado en vivo el 16 nov a las 11:35); la diferencia que vio Codex (1.258) era una lectura antigua · revisión ChatGPT del 16 nov.
