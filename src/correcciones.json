@@ -17,6 +17,22 @@
  },
  {
   "fecha": "2026-11-21",
+  "id": "B08",
+  "partido": "pnv",
+  "de": 4,
+  "a": 3,
+  "estimadaAntes": true,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N quiere más oferta agilizando trámites y movilizando vivienda vacía (p. 7) y que el alquiler protegido no sea la única opción (p. 8); no habla de construir directamente.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=7",
+   "Programa electoral de EAJ-PNV de 2026, p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-21",
   "id": "H07",
   "partido": "pp",
   "de": 4,
@@ -43,6 +59,22 @@
   "fuente": [
    "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf#page=13",
    "Programa electoral del PP de 2026 («Reconstrucción Nacional»), p. 13",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-21",
+  "id": "K06",
+  "partido": "pnv",
+  "de": 0,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Estimación: su programa del 29N pide revisar las restricciones europeas a la pesca de fondo en el Atlántico con datos científicos actualizados y el conocimiento de los arrantzales.",
+  "fuente": [
+   "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n#page=18",
+   "Programa electoral de EAJ-PNV de 2026, p. 18",
    "programa",
    "2026-11"
   ]

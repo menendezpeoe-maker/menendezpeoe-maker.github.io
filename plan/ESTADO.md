@@ -1,5 +1,12 @@
 # Estado del plan (lo más reciente arriba)
 
+## 27 nov 2026 (23:10) · Revisión de fuentes de todas las candidaturas (titular, hilo «Auditar y rediseñar el test»), guardada en `fuente` SIN publicar
+- **Enlaces:** ninguno roto; los que fallan desde la nube son bloqueos ya comprobados el 21 nov desde el Chrome del titular.
+- **Correcciones (src/preguntas.src.mjs):** 94 anclas de página corregidas (sobre todo Compromís y Frente Amplio); 5 posturas pasan a citar el programa del 29N (FA I01, F05, H05; Podemos B03; UPC L03 estimada); 29 posturas que citaban fuentes antiguas o de otra formación pasan a «estimada». Ningún valor cambia. Registro en src/correcciones.json.
+- **Totales (30 candidaturas × 107 preguntas):** 1.227 documentadas, 375 estimadas con fuente, 866 estimadas sin fuente, 742 sin postura.
+- **No publicado:** congelación del 28–29 nov; sale a la web real con P1 el 30N. El test nuevo (15/40/8 temáticos, solo posturas con fuente, logos) está en la prueba de Mirada Política y sale con el rediseño («sube el rediseño»).
+- **Secciones afectadas al publicar:** preguntas y temas, fichas de partido, comparativas, metodología y correcciones, contadores de portada. Pruebas: grupo `posturas` 5/5.
+
 ## 27 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
 - **Debates (d):** el debate a cuatro de la Academia (26 nov; Sánchez, Feijóo, Abascal y Colau) pasa a «emitido» con el vídeo completo de RTVE Play (1 h 57 min) y la crónica de RTVE (temas tratados).
 - **Sin cambios comprobables:** Las Palmas y Tenerife (oEmbed confirma título y canal, pero la nube no lee la duración), SER y TVG/Radio Galega sin grabación localizada, entrevistas de Herrera en COPE (criterio común pendiente). Colas al día en plan/DEBATES.md.

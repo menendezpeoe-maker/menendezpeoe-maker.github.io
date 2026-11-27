@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-21",
- "datos": "2026-11-21",
+ "generado": "2026-11-27",
+ "datos": "2026-11-27",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -195,15 +195,15 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 70
+    "n": 67
    },
    {
     "pid": "d21",
-    "n": 65
+    "n": 67
    },
    {
     "pid": "pp",
-    "n": 53
+    "n": 54
    },
    {
     "pid": "fo",
@@ -285,7 +285,7 @@
   {
    "pid": "pp",
    "conocidas": 107,
-   "estimadas": 13,
+   "estimadas": 14,
    "conFuente": 99
   },
   {
@@ -303,7 +303,7 @@
   {
    "pid": "pod",
    "conocidas": 107,
-   "estimadas": 26,
+   "estimadas": 28,
    "conFuente": 86
   },
   {
@@ -327,7 +327,7 @@
   {
    "pid": "bildu",
    "conocidas": 102,
-   "estimadas": 38,
+   "estimadas": 39,
    "conFuente": 71
   },
   {
@@ -351,7 +351,7 @@
   {
    "pid": "upn",
    "conocidas": 104,
-   "estimadas": 75,
+   "estimadas": 76,
    "conFuente": 30
   },
   {
@@ -405,7 +405,7 @@
   {
    "pid": "cha",
    "conocidas": 90,
-   "estimadas": 69,
+   "estimadas": 71,
    "conFuente": 26
   },
   {
@@ -429,7 +429,7 @@
   {
    "pid": "mes",
    "conocidas": 84,
-   "estimadas": 76,
+   "estimadas": 77,
    "conFuente": 13
   },
   {
