@@ -1,5 +1,10 @@
 # Estado del plan (lo más reciente arriba)
 
+## 27 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
+- **Debates (d):** el debate a cuatro de la Academia (26 nov; Sánchez, Feijóo, Abascal y Colau) pasa a «emitido» con el vídeo completo de RTVE Play (1 h 57 min) y la crónica de RTVE (temas tratados).
+- **Sin cambios comprobables:** Las Palmas y Tenerife (oEmbed confirma título y canal, pero la nube no lee la duración), SER y TVG/Radio Galega sin grabación localizada, entrevistas de Herrera en COPE (criterio común pendiente). Colas al día en plan/DEBATES.md.
+- **Secciones:** solo /debates/ (y sitemap). Pruebas: qa/debates, qa/growth y qa/barrido con código 0; sin términos privados en dist/.
+
 ## 26 nov 2026 (09:47) · Revisión diaria (solo /debates/, excepción mínima a la congelación)
 - **Debates (d):** el debate de COPE sobre vivienda (25 nov) pasa a «emitido» con participantes, crónica y pódcast completo de la cadena (45 min). El debate a cuatro de la Academia (Sánchez, Feijóo, Abascal y Colau) pasa a «confirmado» para hoy, 26 nov, a las 22:00, con cadenas, lugar, bloques y moderadora según la rueda de prensa de la Academia (25 nov).
 - **Sin cambios comprobables:** Las Palmas y Tenerife (YouTube 429), SER y TVG (403), entrevistas de Herrera en COPE (criterio común pendiente). Sin debates nuevos localizados del 25 nov.
