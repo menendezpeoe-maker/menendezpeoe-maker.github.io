@@ -1,5 +1,11 @@
 # Estado del plan (lo más reciente arriba)
 
+## 28 nov 2026 (00:50) · Corrección de la revisión de fuentes del 27 (sin publicar)
+- **Fallo corregido:** el guion del 27 nov marcó como «estimada» la casilla de otra candidatura (usaba un orden de partidos distinto del de PARTY_ORDER). Se restauran las 26 líneas `pos` afectadas y se marcan las casillas correctas (37 de la lista del 27 + B03, F05 y K04 de ERC y L03 de UPC, cuyo texto ya decía «Estimación»). Las anclas, fuentes y textos del 27 no se veían afectados.
+- **Revisión de posturas del test (regla 8, con el programa del 29N):** E01 ERC 2→3~ (pide más jueces y endurecer penas por armas; no se opone a endurecer las de multirreincidencia), H01 ERC 1→2~ (pide fiscalizar el gasto en defensa, no recortarlo), H04 PP 1→2~ (no menciona el embargo; llama a Israel «socio clave»), L03 UPC 5~→4~ (inferencia, no explícito).
+- **Cálculo del test comprobado:** cada candidatura contra sí misma da 100 % y sale primera (30/30); 12.000 cálculos al azar coinciden con un cálculo independiente; acercar una respuesta nunca baja la coincidencia.
+- **Totales:** 1.191 documentadas, 411 estimadas con fuente, 866 estimadas sin fuente, 742 sin postura. Pruebas: grupo `posturas` 5/5. Sale con P1 el 30N.
+
 ## 27 nov 2026 (23:10) · Revisión de fuentes de todas las candidaturas (titular, hilo «Auditar y rediseñar el test»), guardada en `fuente` SIN publicar
 - **Enlaces:** ninguno roto; los que fallan desde la nube son bloqueos ya comprobados el 21 nov desde el Chrome del titular.
 - **Correcciones (src/preguntas.src.mjs):** 94 anclas de página corregidas (sobre todo Compromís y Frente Amplio); 5 posturas pasan a citar el programa del 29N (FA I01, F05, H05; Podemos B03; UPC L03 estimada); 29 posturas que citaban fuentes antiguas o de otra formación pasan a «estimada». Ningún valor cambia. Registro en src/correcciones.json.

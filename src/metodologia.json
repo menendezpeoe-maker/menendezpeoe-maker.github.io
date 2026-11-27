@@ -1,6 +1,6 @@
 {
  "generado": "2026-11-27",
- "datos": "2026-11-27",
+ "datos": "2026-11-28",
  "preguntas": 107,
  "imitacion": {
   "total": 30,
@@ -166,7 +166,7 @@
     "pid": "gbai",
     "prov": "navarra",
     "primero": true,
-    "pct": 100
+    "pct": 99
    },
    {
     "pid": "soria",
@@ -195,15 +195,15 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 67
+    "n": 68
    },
    {
     "pid": "d21",
-    "n": 67
+    "n": 65
    },
    {
     "pid": "pp",
-    "n": 54
+    "n": 55
    },
    {
     "pid": "fo",
@@ -285,7 +285,7 @@
   {
    "pid": "pp",
    "conocidas": 107,
-   "estimadas": 14,
+   "estimadas": 15,
    "conFuente": 99
   },
   {
@@ -315,7 +315,7 @@
   {
    "pid": "erc",
    "conocidas": 104,
-   "estimadas": 27,
+   "estimadas": 32,
    "conFuente": 80
   },
   {
@@ -345,7 +345,7 @@
   {
    "pid": "ccpc",
    "conocidas": 81,
-   "estimadas": 50,
+   "estimadas": 51,
    "conFuente": 42
   },
   {
@@ -393,7 +393,7 @@
   {
    "pid": "comp",
    "conocidas": 107,
-   "estimadas": 44,
+   "estimadas": 47,
    "conFuente": 84
   },
   {
@@ -405,7 +405,7 @@
   {
    "pid": "cha",
    "conocidas": 90,
-   "estimadas": 71,
+   "estimadas": 70,
    "conFuente": 26
   },
   {
@@ -417,25 +417,25 @@
   {
    "pid": "upc",
    "conocidas": 80,
-   "estimadas": 41,
+   "estimadas": 63,
    "conFuente": 46
   },
   {
    "pid": "drago",
    "conocidas": 78,
-   "estimadas": 71,
+   "estimadas": 72,
    "conFuente": 8
   },
   {
    "pid": "mes",
    "conocidas": 84,
-   "estimadas": 77,
+   "estimadas": 80,
    "conFuente": 13
   },
   {
    "pid": "gbai",
    "conocidas": 73,
-   "estimadas": 69,
+   "estimadas": 70,
    "conFuente": 13
   },
   {

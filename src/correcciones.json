@@ -1,5 +1,133 @@
 [
  {
+  "fecha": "2026-11-27",
+  "id": "A05",
+  "partido": "bildu",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Su programa del 29N rechaza recortes y subir la edad de jubilación o el periodo de cómputo, y blinda la revalorización con el IPC.",
+  "fuente": [
+   "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf#page=7",
+   "Programa de EH Bildu para las generales del 29N de 2026 («Posible egin»), p. 7",
+   "programa",
+   "2026-11"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "C04",
+  "partido": "cha",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "CHA defiende reformar la Constitución hacia un modelo republicano y federal.",
+  "fuente": [
+   "https://www.chunta.org/workspace/uploads/programa-electoral-autonomicas-2019.pdf#page=10",
+   "Programa electoral de CHA para las autonómicas de Aragón de 2019, p. 10",
+   "programa",
+   "2019-05"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "C06",
+  "partido": "pod",
+  "de": 5,
+  "a": 5,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Podemos defiende suprimir las diputaciones y traspasar sus competencias a comunidades y ayuntamientos.",
+  "fuente": [
+   "https://valenciaplaza.com/valenciaplaza/AseslaleyqueplanteaPodemosparavaciaralasdiputacionesdecompetencias",
+   "Valencia Plaza: así es la ley que plantea Podemos para vaciar a las diputaciones de competencias",
+   "prensa",
+   "2018-09-19"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "E09",
+  "partido": "upn",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "UPN votó en contra de regular los clubes de usuarios de cannabis en Navarra.",
+  "fuente": [
+   "https://www.redaccionmedica.com/autonomias/20141127/el-parlamento-aprueba-una-ley-para-regular-los-colectivos-de-usuarios-cannabis/333119_0.html",
+   "Redacción Médica: el Parlamento de Navarra aprueba la ley de colectivos de usuarios de cannabis",
+   "parlamento",
+   "2014-11-27"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "G04",
+  "partido": "pod",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "Podemos rechaza los trasvases y pide fijar una fecha de cierre para el Tajo-Segura.",
+  "fuente": [
+   "https://www.eldiario.es/castilla-la-mancha/castilla-la-mancha-trasvase-tajo-segura-millones_1_1901844.html",
+   "elDiario.es: Podemos Castilla-La Mancha pide el fin de los trasvases",
+   "prensa",
+   "2018-10-09"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "H09",
+  "partido": "cha",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa conjunto con el que concurrió CHA en 2023 propone acabar con la externalización de fronteras.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+   "Programa de Sumar para el 23J de 2023, coalición con la que concurrió CHA, p. 150",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "H09",
+  "partido": "mes",
+  "de": 1,
+  "a": 1,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "El programa conjunto con el que concurrió MÉS en 2023 propone acabar con la externalización de fronteras.",
+  "fuente": [
+   "https://verdesequo.es/wp-content/uploads/2023/07/Un-programa-para-ti.pdf#page=150",
+   "Programa de Sumar para el 23J de 2023, coalición (Sumar Més) con la que concurrió MÉS, p. 150",
+   "programa",
+   "2023-07"
+  ]
+ },
+ {
+  "fecha": "2026-11-27",
+  "id": "I04",
+  "partido": "pp",
+  "de": 4,
+  "a": 4,
+  "estimadaAntes": false,
+  "estimada": true,
+  "motivo": "La ley educativa del Gobierno del PP obligaba a publicar los resultados de los centros sostenidos con fondos públicos.",
+  "fuente": [
+   "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12886",
+   "BOE, Ley Orgánica 8/2013 para la mejora de la calidad educativa (LOMCE), aprobada por el Gobierno del PP (9 de diciembre de 2013)",
+   "gobierno",
+   "2013-12-10"
+  ]
+ },
+ {
   "fecha": "2026-11-21",
   "id": "A05",
   "partido": "junts",
