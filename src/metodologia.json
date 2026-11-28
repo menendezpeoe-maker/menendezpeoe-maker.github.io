@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27",
+ "generado": "2026-11-28",
  "datos": "2026-11-28",
  "preguntas": 107,
  "imitacion": {
@@ -88,7 +88,7 @@
     "pid": "pacma",
     "prov": "madrid",
     "primero": true,
-    "pct": 94
+    "pct": 92
    },
    {
     "pid": "fo",
@@ -100,7 +100,7 @@
     "pid": "pcte",
     "prov": "almeria",
     "primero": true,
-    "pct": 87
+    "pct": 82
    },
    {
     "pid": "mj",
@@ -142,7 +142,7 @@
     "pid": "existe",
     "prov": "teruel",
     "primero": true,
-    "pct": 91
+    "pct": 87
    },
    {
     "pid": "upc",
@@ -166,25 +166,25 @@
     "pid": "gbai",
     "prov": "navarra",
     "primero": true,
-    "pct": 99
+    "pct": 97
    },
    {
     "pid": "soria",
     "prov": "soria",
     "primero": true,
-    "pct": 74
+    "pct": 72
    },
    {
     "pid": "ph",
     "prov": "madrid",
     "primero": true,
-    "pct": 100
+    "pct": 92
    },
    {
     "pid": "ie",
     "prov": "madrid",
     "primero": true,
-    "pct": 88
+    "pct": 78
    }
   ]
  },
@@ -195,64 +195,64 @@
   "ganadores": [
    {
     "pid": "psoe",
-    "n": 68
+    "n": 76
    },
    {
     "pid": "d21",
-    "n": 65
+    "n": 64
    },
    {
     "pid": "pp",
-    "n": 55
+    "n": 57
    },
    {
     "pid": "fo",
-    "n": 32
+    "n": 40
    },
    {
     "pid": "falange",
-    "n": 27
+    "n": 28
    },
    {
     "pid": "mj",
-    "n": 21
-   },
-   {
-    "pid": "ph",
-    "n": 9
-   },
-   {
-    "pid": "pacma",
-    "n": 7
-   },
-   {
-    "pid": "fa",
-    "n": 6
+    "n": 13
    },
    {
     "pid": "salf",
-    "n": 4
+    "n": 6
    },
    {
-    "pid": "ie",
-    "n": 3
+    "pid": "pacma",
+    "n": 5
    },
    {
-    "pid": "pcte",
-    "n": 2
+    "pid": "fa",
+    "n": 5
    },
    {
     "pid": "pod",
+    "n": 3
+   },
+   {
+    "pid": "vox",
+    "n": 1
+   },
+   {
+    "pid": "pcte",
+    "n": 1
+   },
+   {
+    "pid": "ph",
     "n": 1
    }
   ],
   "mediaPrimero": 62,
-  "mediaDistancia": 1.8
+  "mediaDistancia": 1.9
  },
  "neutral": [
   {
    "pid": "d21",
-   "pct": 70
+   "pct": 69
   },
   {
    "pid": "psoe",
@@ -261,200 +261,200 @@
   {
    "pid": "pp",
    "pct": 67
-  },
-  {
-   "pid": "mj",
-   "pct": 62
   },
   {
    "pid": "fo",
    "pct": 61
   },
   {
+   "pid": "mj",
+   "pct": 61
+  },
+  {
    "pid": "falange",
-   "pct": 59
+   "pct": 60
   }
  ],
  "posturas": [
   {
    "pid": "psoe",
-   "conocidas": 107,
-   "estimadas": 10,
-   "conFuente": 100
-  },
-  {
-   "pid": "pp",
-   "conocidas": 107,
-   "estimadas": 15,
+   "conocidas": 106,
+   "estimadas": 9,
    "conFuente": 99
   },
   {
+   "pid": "pp",
+   "conocidas": 103,
+   "estimadas": 11,
+   "conFuente": 95
+  },
+  {
    "pid": "vox",
-   "conocidas": 107,
-   "estimadas": 22,
-   "conFuente": 92
+   "conocidas": 106,
+   "estimadas": 20,
+   "conFuente": 91
   },
   {
    "pid": "fa",
-   "conocidas": 107,
-   "estimadas": 14,
-   "conFuente": 96
+   "conocidas": 106,
+   "estimadas": 13,
+   "conFuente": 95
   },
   {
    "pid": "pod",
-   "conocidas": 107,
-   "estimadas": 28,
-   "conFuente": 86
+   "conocidas": 102,
+   "estimadas": 21,
+   "conFuente": 81
   },
   {
    "pid": "salf",
-   "conocidas": 106,
-   "estimadas": 64,
-   "conFuente": 58
+   "conocidas": 97,
+   "estimadas": 51,
+   "conFuente": 49
   },
   {
    "pid": "erc",
-   "conocidas": 104,
-   "estimadas": 32,
-   "conFuente": 80
+   "conocidas": 102,
+   "estimadas": 29,
+   "conFuente": 78
   },
   {
    "pid": "junts",
-   "conocidas": 105,
-   "estimadas": 66,
-   "conFuente": 52
+   "conocidas": 102,
+   "estimadas": 61,
+   "conFuente": 49
   },
   {
    "pid": "bildu",
-   "conocidas": 102,
-   "estimadas": 39,
-   "conFuente": 71
-  },
-  {
-   "pid": "pnv",
-   "conocidas": 100,
-   "estimadas": 55,
-   "conFuente": 57
-  },
-  {
-   "pid": "bng",
-   "conocidas": 105,
-   "estimadas": 52,
-   "conFuente": 67
-  },
-  {
-   "pid": "ccpc",
-   "conocidas": 81,
-   "estimadas": 51,
-   "conFuente": 42
-  },
-  {
-   "pid": "upn",
-   "conocidas": 104,
-   "estimadas": 76,
-   "conFuente": 30
-  },
-  {
-   "pid": "pacma",
-   "conocidas": 43,
-   "estimadas": 22,
-   "conFuente": 34
-  },
-  {
-   "pid": "fo",
-   "conocidas": 56,
-   "estimadas": 26,
-   "conFuente": 56
-  },
-  {
-   "pid": "pcte",
-   "conocidas": 29,
-   "estimadas": 8,
-   "conFuente": 29
-  },
-  {
-   "pid": "mj",
-   "conocidas": 55,
-   "estimadas": 23,
-   "conFuente": 55
-  },
-  {
-   "pid": "falange",
-   "conocidas": 66,
-   "estimadas": 30,
+   "conocidas": 97,
+   "estimadas": 34,
    "conFuente": 66
   },
   {
+   "pid": "pnv",
+   "conocidas": 92,
+   "estimadas": 46,
+   "conFuente": 49
+  },
+  {
+   "pid": "bng",
+   "conocidas": 96,
+   "estimadas": 41,
+   "conFuente": 58
+  },
+  {
+   "pid": "ccpc",
+   "conocidas": 72,
+   "estimadas": 42,
+   "conFuente": 33
+  },
+  {
+   "pid": "upn",
+   "conocidas": 103,
+   "estimadas": 75,
+   "conFuente": 29
+  },
+  {
+   "pid": "pacma",
+   "conocidas": 37,
+   "estimadas": 14,
+   "conFuente": 28
+  },
+  {
+   "pid": "fo",
+   "conocidas": 54,
+   "estimadas": 18,
+   "conFuente": 54
+  },
+  {
+   "pid": "pcte",
+   "conocidas": 21,
+   "estimadas": 0,
+   "conFuente": 21
+  },
+  {
+   "pid": "mj",
+   "conocidas": 51,
+   "estimadas": 17,
+   "conFuente": 51
+  },
+  {
+   "pid": "falange",
+   "conocidas": 60,
+   "estimadas": 16,
+   "conFuente": 60
+  },
+  {
    "pid": "d21",
-   "conocidas": 107,
-   "estimadas": 94,
-   "conFuente": 52
+   "conocidas": 98,
+   "estimadas": 79,
+   "conFuente": 43
   },
   {
    "pid": "comp",
-   "conocidas": 107,
-   "estimadas": 47,
-   "conFuente": 84
+   "conocidas": 95,
+   "estimadas": 32,
+   "conFuente": 72
   },
   {
    "pid": "adel",
-   "conocidas": 94,
-   "estimadas": 34,
-   "conFuente": 76
+   "conocidas": 82,
+   "estimadas": 20,
+   "conFuente": 64
   },
   {
    "pid": "cha",
-   "conocidas": 90,
-   "estimadas": 70,
-   "conFuente": 26
+   "conocidas": 89,
+   "estimadas": 69,
+   "conFuente": 25
   },
   {
    "pid": "existe",
-   "conocidas": 53,
-   "estimadas": 47,
-   "conFuente": 19
+   "conocidas": 44,
+   "estimadas": 37,
+   "conFuente": 10
   },
   {
    "pid": "upc",
-   "conocidas": 80,
-   "estimadas": 63,
-   "conFuente": 46
+   "conocidas": 75,
+   "estimadas": 58,
+   "conFuente": 41
   },
   {
    "pid": "drago",
-   "conocidas": 78,
-   "estimadas": 72,
-   "conFuente": 8
+   "conocidas": 77,
+   "estimadas": 71,
+   "conFuente": 7
   },
   {
    "pid": "mes",
-   "conocidas": 84,
-   "estimadas": 80,
-   "conFuente": 13
+   "conocidas": 82,
+   "estimadas": 78,
+   "conFuente": 11
   },
   {
    "pid": "gbai",
-   "conocidas": 73,
-   "estimadas": 70,
-   "conFuente": 13
+   "conocidas": 66,
+   "estimadas": 62,
+   "conFuente": 6
   },
   {
    "pid": "soria",
-   "conocidas": 25,
-   "estimadas": 23,
-   "conFuente": 9
+   "conocidas": 22,
+   "estimadas": 18,
+   "conFuente": 6
   },
   {
    "pid": "ph",
-   "conocidas": 48,
-   "estimadas": 21,
-   "conFuente": 48
+   "conocidas": 31,
+   "estimadas": 4,
+   "conFuente": 31
   },
   {
    "pid": "ie",
-   "conocidas": 38,
-   "estimadas": 23,
-   "conFuente": 38
+   "conocidas": 19,
+   "estimadas": 2,
+   "conFuente": 19
   }
  ]
 }

@@ -723,8 +723,7 @@
    "desc": "Coalición navarra de centroizquierda y vasquista, con el PNV entre sus socios. Defiende el autogobierno foral, el euskera y políticas sociales.",
    "props": [
     {
-     "t": "Desarrollar el autogobierno navarro, sin recentralizar competencias.",
-     "q": "C03"
+     "t": "Desarrollar el autogobierno navarro, sin recentralizar competencias."
     },
     {
      "t": "Impulsar el euskera en la administración.",
@@ -735,8 +734,7 @@
      "q": "B08"
     },
     {
-     "t": "Reforzar las políticas frente al cambio climático.",
-     "q": "G09"
+     "t": "Reforzar las políticas frente al cambio climático."
     }
    ]
   },
@@ -863,8 +861,7 @@
    "desc": "Partido ecosocialista canario de Alberto Rodríguez, con lista propia. Defiende frenar la especulación turística e inmobiliaria y la soberanía energética y alimentaria de Canarias.",
    "props": [
     {
-     "t": "Impuesto a la compra de vivienda por no residentes.",
-     "q": "B07"
+     "t": "Impuesto a la compra de vivienda por no residentes."
     },
     {
      "t": "Ecotasa y moratoria turística."
@@ -1002,8 +999,7 @@
    "desc": "Coalición de Ara MÉS (MÉS per Mallorca, Més per Menorca y Ara Eivissa) con Movimiento Sumar e IU. En las Illes Balears sustituye a la lista del Frente Amplio; Podemos no presenta lista allí.",
    "props": [
     {
-     "t": "Limitar las plazas turísticas y el alquiler turístico.",
-     "q": "B05"
+     "t": "Limitar las plazas turísticas y el alquiler turístico."
     },
     {
      "t": "Impuesto a la compra de vivienda por no residentes.",
